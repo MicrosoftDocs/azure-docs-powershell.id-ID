@@ -1,0 +1,93 @@
+{
+  "build_entry_point": "docs",
+  "docsets_to_publish": [
+    {
+      "docset_name": "azureps",
+      "build_source_folder": ".",
+      "build_output_subfolder": "azureps",
+      "locale": "id-ID",
+      "monikers": [],
+      "xref_query_tags": [
+        "/dotnet"
+      ],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "PowershellModule": "Content",
+        "PowershellCmdlet": "Content",
+        "Tutorial": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "monikerPath": [
+        "mapping/monikerMapping.json"
+      ],
+      "version": 0,
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/MAML2Yaml/tools/Run.ps1"
+        ]
+      }
+    }
+  ],
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [
+    "live-sxs",
+    "main-sxs"
+  ],
+  "continue_with_document_error": true,
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.id-ID",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "dotnet-xref",
+      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
+      "branch": "live",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/azure-docs-powershell",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "main": "main"
+      }
+    }
+  ],
+  "branch_target_mapping": {
+    "live": [
+      "Publish"
+    ]
+  },
+  "need_generate_pdf_url_template": false,
+  "targets": {},
+  "error_log_codes": [
+    "DuplicateOutputFiles"
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  },
+  "enable_incremental_build": false,
+  "need_generate_intellisense": false,
+  "dependent_packages": [
+    {
+      "id": "Microsoft.DocAsCode.MAML2Yaml",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/MAML2Yaml",
+      "target_framework": "net45",
+      "version": "latest"
+    }
+  ],
+  "dest": "_site"
+}
