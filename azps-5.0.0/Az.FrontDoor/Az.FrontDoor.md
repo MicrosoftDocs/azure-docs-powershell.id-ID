@@ -1,0 +1,122 @@
+---
+Module Name: Az.FrontDoor
+Module Guid: 91832aaa-dc11-4583-8239-adb7df531604
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/az.frontdoor
+Help Version: 0.1.0
+Locale: en-US
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/FrontDoor/FrontDoor/help/Az.FrontDoor.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/FrontDoor/FrontDoor/help/Az.FrontDoor.md
+ms.openlocfilehash: 5039a5684dfc24a05f2d79e49397b8d064bc6a3a
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132407987"
+---
+# Az.FrontDoor Module
+## Deskripsi
+Topik di bagian ini mendokumentasikan Azure PowerShell cmdlet untuk Azure Front Door Service dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.FrontDoor.
+
+## Cmdlet Az.FrontDoor
+### [Disable-AzFrontDoorCustomDomainHttps](Disable-AzFrontDoorCustomDomainHttps.md)
+Menonaktifkan HTTPS untuk domain kustom
+
+### [Enable-AzFrontDoorCustomDomainHttps](Enable-AzFrontDoorCustomDomainHttps.md)
+Mengaktifkan HTTPS untuk domain kustom menggunakan sertifikat terkelola Front Pintu atau menggunakan sertifikat sendiri dari Azure Key Vault.
+
+### [Get-AzFrontDoor](Get-AzFrontDoor.md)
+Dapatkan penyeimbang muat Pintu Depan
+
+### [Get-AzFrontDoorFrontendEndpoint](Get-AzFrontDoorFrontendEndpoint.md)
+Dapatkan titik akhir frontend pintu depan.
+
+### [Get-AzFrontDoorRulesEngine](Get-AzFrontDoorRulesEngine.md)
+Dapatkan konfigurasi Rules Engine.
+
+### [Get-AzFrontDoorWafManagedRuleSetDefinition](Get-AzFrontDoorWafManagedRuleSetDefinition.md)
+Mendapatkan definisi kumpulan aturan terkelola WAF
+
+### [Get-AzFrontDoorWafPolicy](Get-AzFrontDoorWafPolicy.md)
+Dapatkan kebijakan WAF
+
+### [New-AzFrontDoor](New-AzFrontDoor.md)
+Membuat penyeimbang muat Pintu Depan Azure baru
+
+### [New-AzFrontDoorBackendObject](New-AzFrontDoorBackendObject.md)
+Membuat objek PSBackend
+
+### [New-AzFrontDoorBackendPoolObject](New-AzFrontDoorBackendPoolObject.md)
+Membuat objek PSBackendPool untuk pembuatan Pintu Depan
+
+### [New-AzFrontDoorBackendPoolsSettingObject](New-AzFrontDoorBackendPoolsSettingObject.md)
+Buat objek PSBackendPoolsSetting untuk pembuatan Pintu Depan.
+
+### [New-AzFrontDoorFrontendEndpointObject](New-AzFrontDoorFrontendEndpointObject.md)
+Membuat Objek PSFrontendEndpoint untuk pembuatan Pintu Depan
+
+### [New-AzFrontDoorHeaderActionObject](New-AzFrontDoorHeaderActionObject.md)
+Membuat objek PSHeaderAction.
+
+### [New-AzFrontDoorHealthProbeSettingObject](New-AzFrontDoorHealthProbeSettingObject.md)
+Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
+
+### [New-AzFrontDoorLoadBalancingSettingObject](New-AzFrontDoorLoadBalancingSettingObject.md)
+Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+
+### [New-AzFrontDoorRoutingRuleObject](New-AzFrontDoorRoutingRuleObject.md)
+Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+
+### [New-AzFrontDoorRulesEngine](New-AzFrontDoorRulesEngine.md)
+Membuat konfigurasi mesin aturan baru untuk pintu depan yang ditentukan. 
+
+### [New-AzFrontDoorRulesEngineActionObject](New-AzFrontDoorRulesEngineActionObject.md)
+Buat objek PSRulesEngineAction untuk membuat aturan mesin aturan.
+
+### [New-AzFrontDoorRulesEngineMatchConditionObject](New-AzFrontDoorRulesEngineMatchConditionObject.md)
+Membuat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
+
+### [New-AzFrontDoorRulesEngineRuleObject](New-AzFrontDoorRulesEngineRuleObject.md)
+Membuat objek PSRulesEngineRule untuk pembuatan Rules Engine.
+
+### [New-AzFrontDoorWafCustomRuleObject](New-AzFrontDoorWafCustomRuleObject.md)
+Membuat Objek CustomRule untuk pembuatan kebijakan WAF
+
+### [New-AzFrontDoorWafManagedRuleExclusionObject](New-AzFrontDoorWafManagedRuleExclusionObject.md)
+Membuat objek pengecualian aturan terkelola untuk kumpulan aturan terkelola WAF, grup, atau aturan.
+
+### [New-AzFrontDoorWafManagedRuleObject](New-AzFrontDoorWafManagedRuleObject.md)
+Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
+
+### [New-AzFrontDoorWafManagedRuleOverrideObject](New-AzFrontDoorWafManagedRuleOverrideObject.md)
+Membuat objek penggantian aturan terkelola
+
+### [New-AzFrontDoorWafMatchConditionObject](New-AzFrontDoorWafMatchConditionObject.md)
+Membuat Objek MatchCondition untuk pembuatan kebijakan WAF
+
+### [New-AzFrontDoorWafPolicy](New-AzFrontDoorWafPolicy.md)
+Membuat kebijakan WAF
+
+### [New-AzFrontDoorWafRuleGroupOverrideObject](New-AzFrontDoorWafRuleGroupOverrideObject.md)
+Membuat Objek RuleGroupOverride untuk pembuatan kebijakan WAF
+
+### [Remove-azFrontDoor](Remove-AzFrontDoor.md)
+Hapus Penyeimbang muat Pintu Depan
+
+### [Remove-azFrontDoorContent](Remove-AzFrontDoorContent.md)
+Menghapus konten di Pintu Depan
+
+### [Remove-AzFrontDoorRulesEngine](Remove-AzFrontDoorRulesEngine.md)
+Hapus Mesin Aturan dari Pintu Depan
+
+### [Remove-AzFrontDoorWafPolicy](Remove-AzFrontDoorWafPolicy.md)
+Menghapus kebijakan WAF
+
+### [Set-AzFrontDoor](Set-AzFrontDoor.md)
+Memperbarui penyeimbang muat Pintu Depan
+
+### [Set-AzFrontDoorRulesEngine](Set-AzFrontDoorRulesEngine.md)
+Memperbarui Rules Engine.
+
+### [Update-AzFrontDoorWafPolicy](Update-AzFrontDoorWafPolicy.md)
+Perbarui kebijakan WAF
+
