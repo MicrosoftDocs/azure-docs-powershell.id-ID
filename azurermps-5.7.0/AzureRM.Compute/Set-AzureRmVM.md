@@ -1,0 +1,187 @@
+---
+external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
+Module Name: AzureRM.Compute
+ms.assetid: 939320CB-2595-4150-AFDD-500CEA78559C
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/set-azurermvm
+schema: 2.0.0
+ms.openlocfilehash: d17d01295d118c3927c127a367747cfde428ccfd
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132421402"
+---
+# Set-AzureRmVM
+
+## SYNOPSIS
+Menandai mesin virtual sebagai di generalisasi.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### GeneralizeResourceGroupNameParameterSetName (Default)
+```
+Set-AzureRmVM [-ResourceGroupName] <String> [-Name] <String> [-Generalized] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### RedeployResourceGroupNameParameterSetName
+```
+Set-AzureRmVM [-ResourceGroupName] <String> [-Name] <String> [-Redeploy] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### GeneralizeIdParameterSetName
+```
+Set-AzureRmVM [-Id] <String> [-Name] <String> [-Generalized] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### RedeployIdParameterSetName
+```
+Set-AzureRmVM [-Id] <String> [-Name] <String> [-Redeploy] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Set-AzureRmVM** menandai komputer virtual sebagai umum.
+Sebelum Menjalankan cmdlet ini, masuk ke komputer virtual dan gunakan Sysprep untuk menyiapkan hard disk.
+
+## EXAMPLES
+
+### Contoh 1: Tandai mesin virtual sebagai generalisasi
+```
+PS C:\> Set-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized
+```
+
+Perintah ini menandai mesin virtual bernama VirtualMachine07 sebagai umum.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Generalized
+Menunjukkan bahwa cmdlet ini menandai mesin virtual sebagai generalisasi.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: GeneralizeResourceGroupNameParameterSetName, GeneralizeIdParameterSetName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+Menentukan ID Sumber Daya komputer virtual.
+
+```yaml
+Type: String
+Parameter Sets: GeneralizeIdParameterSetName, RedeployIdParameterSetName
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama mesin virtual tempat cmdlet ini beroperasi.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Redeploy
+Cmdlet ini menunjukkan bahwa cmdlet ini secara manual akan memindahkan komputer virtual ke host Azure lain untuk memperbaiki masalah apa pun.
+
+Jika Anda memindahkan kembali mesin virtual, mesin virtual akan dimulai ulang, yang mengakibatkan hilangnya data drive ephemeral.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: RedeployResourceGroupNameParameterSetName, RedeployIdParameterSetName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya komputer virtual.
+
+```yaml
+Type: String
+Parameter Sets: GeneralizeResourceGroupNameParameterSetName, RedeployResourceGroupNameParameterSetName
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Tidak ada
+Cmdlet ini tidak menerima input apa pun.
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Compute.Models.PSComputeLongRunningOperation
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureRmVM](./Get-AzureRmVM.md)
+
+

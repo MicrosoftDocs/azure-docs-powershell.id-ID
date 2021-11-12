@@ -1,0 +1,148 @@
+---
+external help file: Microsoft.WindowsAzure.Commands.HDInsight.dll-Help.xml
+ms.assetid: E11AAB11-0CBF-4746-91D7-4D5E64801C29
+online version: ''
+schema: 2.0.0
+ms.openlocfilehash: 643007930ed4b250e092a4727d691006f58f1c9c
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132419909"
+---
+# New-AzureHDInsightSqoopJobDefinition
+
+## SYNOPSIS
+Menentukan pekerjaan Sqoop baru.
+
+[!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
+
+## SYNTAX
+
+```
+New-AzureHDInsightSqoopJobDefinition [-Command <String>] [-File <String>] [-Files <String[]>]
+ [-StatusFolder <String>] [-Profile <AzureSMProfile>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Versi Azure PowerShell HDInsight ini sudah tidak berlaku.
+Cmdlets ini akan dihapus pada 1 Januari 2017.
+Silakan gunakan versi yang lebih baru Azure PowerShell HDInsight.
+
+Untuk informasi tentang cara menggunakan HDInsight yang baru untuk membuat kluster, lihat Membuat kluster berbasis Linux di [HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) .
+Untuk informasi tentang cara mengirimkan pekerjaan menggunakan Azure PowerShell dan pendekatan lain, lihat Mengirimkan pekerjaan Hadoop di [HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) .
+Untuk informasi referensi tentang Azure PowerShell HDInsight, [lihat Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
+
+Cmdlet **New-AzureHDInsightSqoopJobDefinition** membuat pekerjaan Sqoop untuk dijalankan di kluster Azure HDInsight.
+
+Sqoop adalah alat untuk mentransfer data antara kluster Hadoop dan database relasional.
+Anda dapat menggunakan Sqoop untuk mengimpor data dari database SQL Server ke Hadoop Distributed File System (HDFS), mentransformasi data dengan Hadoop MapReduce, lalu mengekspor data dari HDFS kembali ke database SQL Server.
+
+## EXAMPLES
+
+### Contoh 1: Mengimpor data
+```
+PS C:\>$SqoopJobDef = New-AzureHDInsightSqoopJobDefinition -Command "import --connect jdbc:sqlserver://<SQLDatabaseServerName>.database.windows.net:1433;username=<SQLDatabasUsername>@<SQLDatabaseServerName>; password=<SQLDatabasePassword>; database=<SQLDatabaseDatabaseName> --table <TableName> --target-dir wasb://<ContainerName>@<WindowsAzureStorageAccountName>.blob.core.windows.net/<Path>"
+```
+
+Perintah ini menentukan pekerjaan Sqoop yang mengimpor semua baris dalam tabel dari database AzureSQL Server ke kluster HDInsight, lalu menyimpan definisi pekerjaan di $SqoopJobDef lokal.
+
+## PARAMETERS
+
+### -Command
+Menentukan perintah Sqoop dan argumennya.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -File
+Menentukan jalur ke file skrip yang berisi perintah untuk dijalankan.
+File skrip harus berada di WASB.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: QueryFile
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -File
+Menentukan kumpulan file WASB yang diperlukan untuk sebuah pekerjaan.
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Profil
+Menentukan profil Azure yang akan dibaca cmdlet ini.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+
+```yaml
+Type: AzureSMProfile
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StatusFolder
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan, termasuk kode keluar dan log tugas.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+## OUTPUTS
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzureHDInsightHiveJobDefinition](./New-AzureHDInsightHiveJobDefinition.md)
+
+[New-AzureHDInsightMapReduceJobDefinition](./New-AzureHDInsightMapReduceJobDefinition.md)
+
+[New-AzureHDInsightPigJobDefinition](./New-AzureHDInsightPigJobDefinition.md)
+
+[New-AzureHDInsightStreamingMapReduceJobDefinition](./New-AzureHDInsightStreamingMapReduceJobDefinition.md)
+
+

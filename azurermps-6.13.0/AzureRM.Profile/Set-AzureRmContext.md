@@ -1,0 +1,299 @@
+---
+external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
+Module Name: AzureRM.Profile
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.profile/set-azurermcontext
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Set-AzureRmContext.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Set-AzureRmContext.md
+ms.openlocfilehash: c5c4ca97fdb93c5b66c52e70e7777ccbdfb30e29da011cbdcc1681e37b395499
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "132417430"
+---
+# Set-AzureRmContext
+
+## SYNOPSIS
+Mengatur penyewa, langganan, dan lingkungan untuk cmdlet yang akan digunakan dalam sesi saat ini.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### Konteks (Default)
+```
+Set-AzureRmContext [-Context] <PSAzureContext>
+ [-ExtendedProperty <System.Collections.Generic.IDictionary`2[System.String,System.String]>] [-Name <String>]
+ [-Force] [-Scope <ContextModificationScope>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### TenantObject
+```
+Set-AzureRmContext [-TenantObject] <PSAzureTenant>
+ [-ExtendedProperty <System.Collections.Generic.IDictionary`2[System.String,System.String]>] [-Name <String>]
+ [-Force] [-Scope <ContextModificationScope>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### SubscriptionObject
+```
+Set-AzureRmContext [-SubscriptionObject] <PSAzureSubscription>
+ [-ExtendedProperty <System.Collections.Generic.IDictionary`2[System.String,System.String]>] [-Name <String>]
+ [-Force] [-Scope <ContextModificationScope>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Langganan
+```
+Set-AzureRmContext [-Tenant <String>] [-Subscription] <String>
+ [-ExtendedProperty <System.Collections.Generic.IDictionary`2[System.String,System.String]>] [-Name <String>]
+ [-Force] [-Scope <ContextModificationScope>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### TenantNameOnly
+```
+Set-AzureRmContext -Tenant <String>
+ [-ExtendedProperty <System.Collections.Generic.IDictionary`2[System.String,System.String]>] [-Name <String>]
+ [-Force] [-Scope <ContextModificationScope>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet Set-AzureRmContext menetapkan informasi autentikasi untuk cmdlet yang Anda jalankan di sesi saat ini.
+Konteksnya mencakup penyewa, langganan, dan informasi lingkungan.
+
+## EXAMPLES
+
+### Contoh 1: Atur konteks langganan
+```
+PS C:\>Set-AzureRmContext -SubscriptionId "xxxx-xxxx-xxxx-xxxx"
+
+Name    Account             SubscriptionName    Environment         TenantId
+----    -------             ----------------    -----------         --------
+Work    test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
+```
+
+Perintah ini mengatur konteks untuk menggunakan langganan yang ditentukan.
+
+## PARAMETERS
+
+### -Konteks
+Menentukan konteks untuk sesi saat ini.
+
+```yaml
+Type: Microsoft.Azure.Commands.Profile.Models.PSAzureContext
+Parameter Sets: Context
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExtendedProperty
+Properti konteks tambahan
+
+```yaml
+Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Timpa konteks yang sudah ada dengan nama yang sama, jika ada.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama konteks
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Lingkup
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+
+```yaml
+Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
+Parameter Sets: (All)
+Aliases:
+Accepted values: Process, CurrentUser
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Langganan
+Nama atau id langganan yang akan diatur konteksnya. Parameter ini memiliki alias untuk -SubscriptionName dan -SubscriptionId, sehingga, agar lebih jelas, salah satu dari keduanya dapat digunakan sebagai ganti -Langganan ketika menentukan nama dan id.
+
+```yaml
+Type: System.String
+Parameter Sets: Subscription
+Aliases: SubscriptionId, SubscriptionName
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionObject
+Objek langganan
+
+```yaml
+Type: Microsoft.Azure.Commands.Profile.Models.PSAzureSubscription
+Parameter Sets: SubscriptionObject
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Penyewa
+Nama penyewa atau ID
+
+```yaml
+Type: System.String
+Parameter Sets: Subscription
+Aliases: Domain, TenantId
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: TenantNameOnly
+Aliases: Domain, TenantId
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantObject
+Objek Penyewa
+
+```yaml
+Type: Microsoft.Azure.Commands.Profile.Models.PSAzureTenant
+Parameter Sets: TenantObject
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Profile.Models.PSAzureContext
+Parameter: Konteks (ByValue)
+
+### Microsoft.Azure.Commands.Profile.Models.PSAzureTenant
+Parameter: TenantObject (ByValue)
+
+### Microsoft.Azure.Commands.Profile.Models.PSAzureSubscription
+Parameter: SubscriptionObject (ByValue)
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Profile.Models.PSAzureContext
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureRMContext](./Get-AzureRMContext.md)
+

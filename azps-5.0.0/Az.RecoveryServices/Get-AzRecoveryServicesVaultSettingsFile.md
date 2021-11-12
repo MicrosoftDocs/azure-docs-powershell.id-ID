@@ -1,0 +1,218 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.dll-Help.xml
+Module Name: Az.RecoveryServices
+ms.assetid: 56074606-28A6-4F91-A56C-4C8A9A31543F
+online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultsettingsfile
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
+ms.openlocfilehash: 0d074c18ad9b5f9ea34a465acd4a91a88d4b69ac
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132409036"
+---
+# Get-AzRecoveryServicesVaultSettingsFile
+
+## SYNOPSIS
+Dapatkan file pengaturan vault Pemulihan Situs Azure.
+
+## SINTAKS
+
+### ForSiteWithCertificate
+```
+Get-AzRecoveryServicesVaultSettingsFile [-Vault] <ARSVault> [[-Path] <String>] -SiteIdentifier <String>
+ -Certificate <String> -SiteFriendlyName <String> [-SiteRecovery] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+### ByDefaultWithCertificate
+```
+Get-AzRecoveryServicesVaultSettingsFile [-Vault] <ARSVault> [[-Path] <String>] -Certificate <String>
+ [-SiteRecovery] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ForBackupVaultTypeWithCertificate
+```
+Get-AzRecoveryServicesVaultSettingsFile [-Vault] <ARSVault> [[-Path] <String>] -Certificate <String> [-Backup]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESKRIPSI
+Cmdlet **Get-AzRecoveryServicesVaultSettingsFile** mendapatkan file pengaturan untuk vault Pemulihan Situs Azure.
+
+## CONTOH
+
+### Contoh 1: Mendaftarkan Windows Server atau DPM machine untuk Azure Backup
+```powershell
+PS C:\> $Vault01 = Get-AzRecoveryServicesVault -Name "TestVault"
+PS C:\> $CredsPath = "C:\Downloads"
+PS C:\> $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -Backup -Vault $Vault01 -Path $CredsPath
+```
+
+Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam $Vault 01.
+Perintah kedua mengatur $CredsPath ke C:\Downloads.
+Perintah terakhir mendapatkan file kredensial penyimpanan untuk $Vault 01 menggunakan kredensial dalam $CredsPath untuk Azure Backup.
+
+### Contoh 2
+```powershell
+PS C:\> $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
+```
+
+Perintah tersebut mendapatkan file kredensial vault untuk $Vault 01 file tipe vault Pemulihan.
+
+### Contoh 3: Daftarkan Windows Server atau DPM machine untuk Azure Backup
+```powershell
+PS C:\> $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
+```
+
+Perintah mendapatkan file kredensial vault untuk $Vault 01.
+
+## PARAMETERS
+
+### -Backup
+Menunjukkan bahwa file kredensial vault dapat digunakan untuk Azure Backup.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ForBackupVaultTypeWithCertificate
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Certificate
+{{Fill Certificate Description}}
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+Menentukan jalur ke file pengaturan vault Pemulihan Situs Azure.
+Anda dapat mengunduh file ini dari portal vault Pemulihan Situs Azure dan menyimpannya secara lokal.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteFriendlyName
+Menentukan nama yang mudah digunakan.
+Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
+
+```yaml
+Type: System.String
+Parameter Sets: ForSiteWithCertificate
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteIdentifier
+Menentukan pengidentifikasi situs.
+Gunakan parameter ini jika Anda mengunduh kredensial vault untuk situs Hyper-V.
+
+```yaml
+Type: System.String
+Parameter Sets: ForSiteWithCertificate
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteRecovery
+Menunjukkan bahwa file kredensial vault dapat digunakan untuk Pemulihan Situs Azure.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ForSiteWithCertificate, ByDefaultWithCertificate
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Vault
+Menentukan objek vault Pemulihan Situs Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUT
+
+### Microsoft.Azure.Commands.RecoveryServices.VAULT
+
+## OUTPUT
+
+### Microsoft.Azure.Commands.RecoveryServices.VaultSettingsFilePath
+
+## CATATAN
+
+## LINK TERKAIT
+
+[Get-AzRecoveryServicesVault](./Get-AzRecoveryServicesVault.md)
+
+[New-AzRecoveryServicesVault](./New-AzRecoveryServicesVault.md)
+
+[Remove-AzRecoveryServicesVault](./Remove-AzRecoveryServicesVault.md)
+
+

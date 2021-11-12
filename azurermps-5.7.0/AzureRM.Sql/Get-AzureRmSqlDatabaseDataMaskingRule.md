@@ -1,0 +1,251 @@
+---
+external help file: Microsoft.Azure.Commands.Sql.dll-Help.xml
+Module Name: AzureRM.Sql
+ms.assetid: 848A6972-AB29-46FB-8E03-FF2ADB113A0E
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/get-azurermsqldatabasedatamaskingrule
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseDataMaskingRule.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseDataMaskingRule.md
+ms.openlocfilehash: 0c04697f36558c7eb4c296e2837595541381a3d5
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132424247"
+---
+# Get-AzureRmSqlDatabaseDataMaskingRule
+
+## SYNOPSIS
+Mendapatkan aturan masker data dari database.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+```
+Get-AzureRmSqlDatabaseDataMaskingRule [-SchemaName <String>] [-TableName <String>] [-ColumnName <String>]
+ [-ServerName] <String> [-DatabaseName] <String> [-ResourceGroupName] <String>
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRmSqlDatabaseDataMaskingRule** mendapatkan aturan masker data tertentu atau semua aturan masker data untuk database SQL Azure.
+Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName,* *ServerName,* dan *DatabaseName* untuk mengidentifikasi database, dan parameter *RuleId* untuk menentukan aturan mana yang dikembalikan cmdlet ini.
+Jika Anda tidak menyediakan *RuleId,* semua aturan masker data untuk database Azure SQL akan dikembalikan.
+
+Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan semua aturan masker data dari database
+```
+PS C:\>Get-AzureRmSqlDatabaseDataMaskingRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
+DatabaseName      : database01
+ResourceGroupName : resourcegroup01
+ServerName        : server01
+SchemaName        : dbo
+TableName         : table1
+ColumnName        : column1
+MaskingFunction   : Default
+PrefixSize        :
+SuffixSize        :
+ReplacementString :
+NumberFrom        :
+NumberTo          :
+
+DatabaseName      : database01
+ResourceGroupName : resourcegroup01
+ServerName        : server01
+SchemaName        : dbo
+TableName         : table2
+ColumnName        : column2
+MaskingFunction   : Default
+PrefixSize        :
+SuffixSize        :
+ReplacementString :
+NumberFrom        :
+NumberTo          :
+```
+
+### Contoh 2: Dapatkan aturan masker data yang ditentukan di skema "dbo", tabel "tabel1" dan kolom "kolom1".
+```
+PS C:\>Get-AzureRmSqlDatabaseDataMaskingRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -SchemaName "dbo" -TableName  "table1" -ColumnName "column1"
+DatabaseName      : database01
+ResourceGroupName : resourcegroup01
+ServerName        : server01
+SchemaName        : dbo
+TableName         : table1
+ColumnName        : column1
+MaskingFunction   : Default
+PrefixSize        :
+SuffixSize        :
+ReplacementString :
+NumberFrom        :
+NumberTo          :
+```
+
+## PARAMETERS
+
+### -ColumnName
+Menentukan nama kolom yang ditargetkan oleh aturan masker.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DatabaseName
+Menentukan nama database.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya tempat database ditetapkan.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SchemaName
+Menentukan nama skema.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ServerName
+Menentukan nama server.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -TableName
+Menentukan nama tabel SQL Azure.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+###  
+Tidak ada.
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Sql.Security.Model.DatabaseDataMaskingRuleModel
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureRmSqlDatabaseDataMaskingPolicy](./Get-AzureRmSqlDatabaseDataMaskingPolicy.md)
+
+[New-AzureRmSqlDatabaseDataMaskingRule](./New-AzureRmSqlDatabaseDataMaskingRule.md)
+
+[Remove-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
+
+[Set-AzureRmSqlDatabaseDataMaskingPolicy](./Set-AzureRmSqlDatabaseDataMaskingPolicy.md)
+
+[Set-AzureRmSqlDatabaseDataMaskingRule](./Set-AzureRmSqlDatabaseDataMaskingRule.md)
+
+
