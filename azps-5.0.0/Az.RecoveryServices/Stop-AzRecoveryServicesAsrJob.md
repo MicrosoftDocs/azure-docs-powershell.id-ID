@@ -1,0 +1,143 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.SiteRecovery.dll-Help.xml
+Module Name: Az.RecoveryServices
+online version: https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/stop-azrecoveryservicesasrjob
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesAsrJob.md
+ms.openlocfilehash: a86e58fe3c933ffaa9a382dc1e5140d3b42a34cb
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132407404"
+---
+# Stop-AzRecoveryServicesAsrJob
+
+## SYNOPSIS
+Menghentikan pekerjaan Pemulihan Situs Azure.
+
+## SINTAKS
+
+### ByObject (Default)
+```
+Stop-AzRecoveryServicesAsrJob -InputObject <ASRJob> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### ByName
+```
+Stop-AzRecoveryServicesAsrJob -Name <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESKRIPSI
+Cmdlet **Stop-AzRecoveryServicesAsrJob** menghentikan pekerjaan Pemulihan Situs Azure tertentu.
+
+## CONTOH
+
+### Contoh 1
+```
+PS C:\> $currentJob = Stop-AzRecoveryServicesAsrJob -Job $Job
+```
+
+Mencoba menghentikan pekerjaan tertentu dan mengembalikan objek pekerjaan ASR yang diperbarui.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek Input: Menentukan objek pekerjaan ASR yang terkait dengan pekerjaan ASR yang akan dihentikan
+
+```yaml
+Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
+Parameter Sets: ByObject
+Aliases: Job
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Tentukan Pekerjaan ASR untuk dihentikan dengan nama pekerjaan ASR.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUT
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
+
+## OUTPUT
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob
+
+## CATATAN
+
+## LINK TERKAIT
+
+[Get-AzRecoveryServicesAsrJob](./Get-AzRecoveryServicesAsrJob.md)
+
+[Restart-AzRecoveryServicesAsrJob](./Restart-AzRecoveryServicesAsrJob.md)
+
+[Resume-AzRecoveryServicesAsrJob](./Resume-AzRecoveryServicesAsrJob.md)
