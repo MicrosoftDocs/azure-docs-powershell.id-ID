@@ -1,0 +1,317 @@
+---
+external help file: Microsoft.Azure.Commands.DataLakeAnalytics.dll-Help.xml
+Module Name: AzureRM.DataLakeAnalytics
+ms.assetid: A0293D80-5935-4D2C-AF11-2837FEC95760
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datalakeanalytics/get-azurermdatalakeanalyticsjob
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJob.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsJob.md
+ms.openlocfilehash: ca480d266f4ab7706841fb901fa714dbe632ec2d
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132426032"
+---
+# Get-AzureRmDataLakeAnalyticsJob
+
+## SYNOPSIS
+Mendapatkan pekerjaan Analitik Danau Data.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### GetAllInResourceGroupAndAccount (Default)
+```
+Get-AzureRmDataLakeAnalyticsJob [-Account] <String> [[-Name] <String>] [[-Submitter] <String>]
+ [[-SubmittedAfter] <DateTimeOffset>] [[-SubmittedBefore] <DateTimeOffset>] [[-State] <JobState[]>]
+ [[-Result] <JobResult[]>] [-Top <Int32>] [-PipelineId <Guid>] [-RecurrenceId <Guid>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### GetBySpecificJobInformation
+```
+Get-AzureRmDataLakeAnalyticsJob [-Account] <String> [-JobId] <Guid> [[-Include] <ExtendedJobData>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRmDataLakeAnalyticsJob** mendapatkan pekerjaan Azure Data Lake Analytics.
+Jika Anda tidak menentukan pekerjaan, cmdlet ini mendapatkan semua pekerjaan.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan pekerjaan tertentu
+```
+PS C:\>Get-AzureRmDataLakeAnalyticsJob -Account "contosoadla" -JobId $JobID01
+```
+
+Perintah ini akan mendapatkan pekerjaan dengan ID yang ditentukan.
+
+### Contoh 2: Mendapatkan pekerjaan yang dikirimkan dalam minggu lalu
+```
+PS C:\>Get-AzureRmDataLakeAnalyticsJob -Account "contosoadla" -SubmittedAfter (Get-Date).AddDays(-7)
+```
+
+Perintah ini mendapatkan pekerjaan yang dikirimkan dalam seminggu terakhir.
+
+## PARAMETERS
+
+### -Akun
+Menentukan nama akun Analitik Danau Data.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: AccountName
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sertakan
+Menentukan opsi yang menunjukkan tipe informasi tambahan untuk diambil tentang pekerjaan itu.
+Nilai yang dapat diterima untuk parameter ini adalah:
+
+- Tidak ada
+- DebugInfo
+- Statistik
+- Semua
+
+```yaml
+Type: ExtendedJobData
+Parameter Sets: GetBySpecificJobInformation
+Aliases: 
+Accepted values: None, All, DebugInfo, Statistics
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -JobId
+Menentukan ID pekerjaan untuk mendapatkan.
+
+```yaml
+Type: Guid
+Parameter Sets: GetBySpecificJobInformation
+Aliases: 
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama yang akan digunakan untuk memfilter hasil daftar pekerjaan.
+Nilai yang dapat diterima untuk parameter ini adalah:
+
+- Tidak ada
+- DebugInfo
+- Statistik
+- Semua
+
+```yaml
+Type: String
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -PipelineId
+ID opsional yang menunjukkan hanya pekerjaan, bagian dari pipeline yang ditentukan yang akan dikembalikan.
+
+```yaml
+Type: Guid
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RecurrenceId
+ID opsional yang menunjukkan hanya pekerjaan, bagian dari pengulangan yang ditentukan harus dikembalikan.
+
+```yaml
+Type: Guid
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Hasil
+Menentukan filter hasil untuk hasil pekerjaan.
+Nilai yang dapat diterima untuk parameter ini adalah:
+
+- Tidak ada
+- Dibatalkan
+- Gagal
+- Berhasil
+
+```yaml
+Type: JobResult[]
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+Accepted values: None, Succeeded, Cancelled, Failed
+
+Required: False
+Position: 6
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Negara Bagian
+Menentukan filter status untuk hasil pekerjaan.
+Nilai yang dapat diterima untuk parameter ini adalah:
+
+- Diterima
+- Baru
+- Mengumpulkan
+- Penjadwalan
+- Diantrekan
+- Memulai
+- Dijeda
+- Berjalan
+- Diakhiri
+
+```yaml
+Type: JobState[]
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+Accepted values: Accepted, Compiling, Ended, New, Queued, Running, Scheduling, Starting, Paused, WaitingForCapacity
+
+Required: False
+Position: 5
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SubmittedAfter
+Menentukan filter tanggal.
+Use this parameter to filter the job list result to jobs submitted after the specified date.
+
+```yaml
+Type: DateTimeOffset
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: 3
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SubmittedBefore
+Menentukan filter tanggal.
+Gunakan parameter ini untuk memfilter hasil daftar pekerjaan untuk pekerjaan yang dikirimkan sebelum tanggal yang ditentukan.
+
+```yaml
+Type: DateTimeOffset
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: 4
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Submitter
+Menentukan alamat email pengguna.
+Gunakan parameter ini untuk memfilter hasil daftar pekerjaan untuk pekerjaan yang dikirimkan oleh pengguna tertentu.
+
+```yaml
+Type: String
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Top
+Nilai opsional yang menunjukkan jumlah pekerjaan untuk dikembalikan. Nilai default adalah 500
+
+```yaml
+Type: Int32
+Parameter Sets: GetAllInResourceGroupAndAccount
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Guid
+Parameter 'JobId' menerima nilai tipe 'Guid' dari saluran
+
+## OUTPUTS
+
+### JobInformation
+Detail informasi pekerjaan yang ditentukan
+
+### Daftar<PSJobInformationBasic>
+Daftar pekerjaan dalam akun Data Lake Analytics yang ditentukan.
+
+## CATATAN
+
+## RELATED LINKS
+
+[Stop-AzureRmDataLakeAnalyticsJob](./Stop-AzureRmDataLakeAnalyticsJob.md)
+
+[Submit-AzureRmDataLakeAnalyticsJob](./Submit-AzureRmDataLakeAnalyticsJob.md)
+
+[Wait-AzureRmDataLakeAnalyticsJob](./Wait-AzureRmDataLakeAnalyticsJob.md)
+
+

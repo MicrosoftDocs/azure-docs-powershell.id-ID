@@ -1,0 +1,215 @@
+---
+external help file: Microsoft.Azure.Commands.RedisCache.dll-Help.xml
+Module Name: AzureRM.RedisCache
+ms.assetid: B447E492-D87E-4DA3-A8B0-0BAF603CCC26
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.rediscache/export-azurermrediscache
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/Export-AzureRmRedisCache.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/Export-AzureRmRedisCache.md
+ms.openlocfilehash: cd19fe8052ae95f547971452f4364f279f365cac
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132425969"
+---
+# Export-AzureRmRedisCache
+
+## SYNOPSIS
+Mengekspor data dari Cache Azure Redis ke wadah.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+```
+Export-AzureRmRedisCache [-ResourceGroupName <String>] -Name <String> -Prefix <String> -Container <String>
+ [-Format <String>] [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Export-AzureRmRedisCache** mengekspor data dari Singgahan Azure Redis menjadi wadah.
+
+## EXAMPLES
+
+### Contoh 1: Mengekspor data
+```
+PS C:\>Export-AzureRmRedisCache -ResourceGroupName "ResourceGroup13" -Name "RedisCache06" -Prefix "blobprefix" -Container "https://mystorageaccount.blob.core.windows.net/container18?sv=2015-04-05&sr=c&sig=HezZtBZ3DURmEGDduauE7pvETY4kqlPI8JCNa8ATmaw%3D&st=2016-05-27T00%3A00%3A00Z&se=2016-05-28T00%3A00%3A00Z&sp=rwdl"
+```
+
+Perintah ini mengekspor data dari contoh Cache Azure Redis ke wadah yang ditentukan oleh URL SAS.
+
+## PARAMETERS
+
+### -Container
+Menentukan URL Service SAS dari wadah tempat cmdlet ini mengekspor data. Anda dapat menghasilkan URL Service SAS menggunakan perintah PowerShell berikut:
+
+$storageAccountContext = New-AzureStorageContext -StorageAccountName "storageName" -StorageAccountKey "key"
+
+$sasKeyForContainer = New-AzureStorageContainerSASToken -Name "containername" -Permission "rwdl" -StartTime ([System.DateTime]::Now). AddMinutes(-15) -ExpiryTime ([System.DateTime]::Now). AddHours(5) -Context $storageAccountContext -FullUri 
+
+Export-AzureRmRedisCache -ResourceGroupName "ResourceGroupName" -Name "cacheName" -Prefix "blobprefix" -Container ($sasKeyForContainer)
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Format
+Menentukan format untuk blob.
+Saat ini rdb adalah satu-satunya format yang didukung.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama singgahan.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Mengindikasikan bahwa cmdlet ini mengembalikan Boolean yang mengindikasikan apakah operasi berhasil.
+Secara default, cmdlet ini tidak menghasilkan output apa pun.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Prefix
+Menentukan prefiks yang akan digunakan untuk nama blob.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya yang berisi cache.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Tidak ada
+Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menurut nilai.
+
+## OUTPUTS
+
+### Tidak ada
+
+## CATATAN
+* Kata kunci: azure, azurerm, arm, resource, management, manager, redis, cache, web, webapp, website
+
+## RELATED LINKS
+
+[Import-AzureRmRedisCache](./Import-AzureRmRedisCache.md)
+
+[New-AzureRmRedisCache](./New-AzureRmRedisCache.md)
+
+[Remove-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
+
+[Reset-AzureRmRedisCache](./Reset-AzureRmRedisCache.md)
+
+[Set-AzureRmRedisCache](./Set-AzureRmRedisCache.md)
+
+
