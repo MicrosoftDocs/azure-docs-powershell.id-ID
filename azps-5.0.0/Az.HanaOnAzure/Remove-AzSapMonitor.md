@@ -1,0 +1,243 @@
+---
+external help file: ''
+Module Name: Az.HanaOnAzure
+online version: https://docs.microsoft.com/en-us/powershell/module/az.hanaonazure/remove-azsapmonitor
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/HanaOnAzure/help/Remove-AzSapMonitor.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/HanaOnAzure/help/Remove-AzSapMonitor.md
+ms.openlocfilehash: bcba06d87bce2f9ccc8016afc9f08dff75e29b1c
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132405896"
+---
+# Remove-AzSapMonitor
+
+## SYNOPSIS
+Menghapus monitor SAP dengan langganan, grup sumber daya, dan nama monitor yang ditentukan.
+
+## SINTAKS
+
+### Hapus (Default)
+```
+Remove-AzSapMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-AzSapMonitor -InputObject <IHanaOnAzureIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+## DESKRIPSI
+Menghapus monitor SAP dengan langganan, grup sumber daya, dan nama monitor yang ditentukan.
+
+## CONTOH
+
+### Contoh 1: Menghapus monitor SAP menurut nama
+```powershell
+PS C:\> Remove-AzSapMonitor -ResourceGroupName nancyc-hn1 -Name ps-sapmonitor-t02
+
+```
+
+Perintah ini akan menghapus monitor SAP menurut nama.
+
+### Contoh 2: Menghapus monitor SAP menurut objek
+```powershell
+PS C:\> $sap = Get-AzSapMonitor -ResourceGroupName nancyc-hn1 -Name ps-sapmonitor-t01
+PS C:\> Remove-AzSapMonitor -InputObject $sap
+
+```
+
+Perintah ini menghapus monitor SAP menurut objek.
+
+## PARAMETERS
+
+### -AsJob
+Menjalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.IHanaOnAzureIdentity
+Parameter Sets: DeleteViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama sumber daya monitor SAP.
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases: SapMonitorName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Menjalankan perintah secara asinkron
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Mengembalikan true saat perintah berhasil
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUT
+
+### Microsoft.Azure.PowerShell.Cmdlets.HanaOnAzure.Models.IHanaOnAzureIdentity
+
+## OUTPUT
+
+### System.Boolean
+
+## CATATAN
+
+ALIAS
+
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IHanaOnAzureIdentity> : Parameter Identitas
+  - `[Id <String>]`: Jalur identitas sumber daya
+  - `[Location <String>]`: Lokasi vault yang dihapus.
+  - `[OperationKind <AccessPolicyUpdateKind?>]`: Nama operasi
+  - `[ProviderInstanceName <String>]`: Nama instans penyedia.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya.
+  - `[ResourceName <String>]`: Nama sumber daya identitas.
+  - `[SapMonitorName <String>]`: Nama sumber daya monitor SAP.
+  - `[Scope <String>]`: Lingkup penyedia sumber daya sumber daya. Sumber daya induk sedang diperluas oleh Identitas yang Dikelola.
+  - `[SubscriptionId <String>]`: ID langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[VaultName <String>]`: Nama vault
+
+## LINK TERKAIT
+

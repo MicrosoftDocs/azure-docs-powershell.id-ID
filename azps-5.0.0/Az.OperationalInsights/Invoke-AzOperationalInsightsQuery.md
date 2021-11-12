@@ -1,0 +1,234 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.OperationalInsights.dll-Help.xml
+Module Name: Az.OperationalInsights
+online version: https://docs.microsoft.com/en-us/powershell/module/az.operationalinsights/invoke-azoperationalinsightsquery
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
+ms.openlocfilehash: 528588ac4a85303809b6e287f3e99b06db9f2a6d
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132412199"
+---
+# Invoke-AzOperationalInsightsQuery
+
+## SYNOPSIS
+Mengembalikan hasil pencarian berdasarkan parameter yang ditentukan.
+
+## SINTAKS
+
+### ByWorkspaceId (Default)
+```
+Invoke-AzOperationalInsightsQuery -WorkspaceId <String> -Query <String> [-Timespan <TimeSpan>] [-Wait <Int32>]
+ [-IncludeRender] [-IncludeStatistics] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByWorkspaceObject
+```
+Invoke-AzOperationalInsightsQuery -Workspace <PSWorkspace> -Query <String> [-Timespan <TimeSpan>]
+ [-Wait <Int32>] [-IncludeRender] [-IncludeStatistics] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESKRIPSI
+Cmdlet **Invoke-AzOperationalInsightsQuery** mengembalikan hasil pencarian berdasarkan parameter yang ditentukan.
+Anda dapat mengakses status pencarian dalam properti Metadata dari objek yang dikembalikan.
+Jika status tertunda, pencarian belum selesai, dan hasilnya akan berasal dari arsip.
+Anda dapat mengambil hasil pencarian dari properti Nilai dari objek yang dikembalikan.
+
+## CONTOH
+
+### Contoh 1: Mendapatkan hasil pencarian menggunakan kueri
+```
+PS C:\> $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10"
+PS C:\> $queryResults.Results
+...
+```
+
+Setelah diminta, $queryResults.Hasil akan berisi semua baris yang dihasilkan dari kueri Anda.
+
+### Contoh 2: Konversi $results. IEnumerable Hasil ke satu array
+```
+PS C:\> $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10"
+PS C:\> $resultsArray = [System.Linq.Enumerable]::ToArray($queryResults.Results)
+...
+```
+
+Beberapa kueri dapat menghasilkan kumpulan data yang sangat besar yang dikembalikan. Oleh karena itu, perilaku default cmdlet adalah mengembalikan IEnumerable untuk mengurangi biaya memori. Jika lebih memilih untuk mendapatkan hasil larik, Anda dapat menggunakan metode ekstensi LINQ Enumerable.ToArray() untuk mengonversi IEnumerable menjadi larik.
+
+### Contoh 3: Dapatkan hasil pencarian menggunakan kueri dalam jangka waktu tertentu
+```
+PS C:\> $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -Timespan (New-TimeSpan -Hours 24)
+PS C:\> $queryResults.Results
+...
+```
+
+Hasil dari kueri ini akan dibatasi hingga 24 jam terakhir.
+
+### Contoh 4: Sertakan & kueri dalam hasil kueri
+```
+PS C:\> $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -IncludeRender -IncludeStatistics
+PS C:\> $queryResults.Results
+...
+PS C:\> $queryResults.Render
+...
+PS C:\> $queryResults.Statistics
+...
+```
+
+Lihat [https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions](https://dev.loganalytics.io/documentation/Using-the-API/RequestOptions) detail tentang info menyajikan dan statistik.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeRender
+Jika ditentukan, informasi penyajian untuk kueri metrik akan disertakan dalam respons.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeStatistics
+Jika ditentukan, statistik kueri akan disertakan dalam respons.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Query
+Kueri untuk dijalankan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Timespan
+Rentang waktu untuk terikat dengan kueri.
+
+```yaml
+Type: System.Nullable`1[System.TimeSpan]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tunggu
+Memasukkan batas atas pada jumlah waktu yang dihabiskan server untuk memproses kueri.
+Lihat: https://dev.loganalytics.io/documentation/Using-the-API/Timeouts
+
+```yaml
+Type: System.Nullable`1[System.Int32]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Ruang Kerja
+Ruang kerja
+
+```yaml
+Type: Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
+Parameter Sets: ByWorkspaceObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -WorkspaceId
+ID ruang kerja.
+
+```yaml
+Type: System.String
+Parameter Sets: ByWorkspaceId
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUT
+
+### Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace
+
+## OUTPUT
+
+### Microsoft.Azure.Commands.OperationalInsights.Models.PSQueryResponse
+
+## CATATAN
+
+## LINK TERKAIT

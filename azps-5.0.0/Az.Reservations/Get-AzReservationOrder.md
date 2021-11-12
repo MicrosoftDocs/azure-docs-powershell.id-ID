@@ -1,0 +1,93 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Reservations.dll-Help.xml
+Module Name: Az.Reservations
+online version: https://docs.microsoft.com/en-us/powershell/module/az.reservations/get-azreservationorder
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Reservations/Reservations/help/Get-AzReservationOrder.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Reservations/Reservations/help/Get-AzReservationOrder.md
+ms.openlocfilehash: 15faf94ae7e0afac7200423dcd36d8edf2964c21
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132412946"
+---
+# Get-AzReservationOrder
+
+## SYNOPSIS
+Dapatkan `ReservationOrder`
+
+## SINTAKS
+
+```
+Get-AzReservationOrder [-ReservationOrderId <Guid>] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESKRIPSI
+Daftar semua `ReservationOrder` s yang dapat diakses pengguna dalam penyewa saat ini. Jika parameter ReservationOrderId sudah diatur, dapatkan ReservationOrder spesifik.
+
+## CONTOH
+
+### Contoh 1
+```
+PS C:\> Get-AzReservationOrder
+```
+
+Mencantumkan semua `ReservationOrder` yang dapat diakses pengguna dalam penyewa saat ini
+
+### Contoh 2
+```
+PS C:\> Get-AzReservationOrder -ReservationOrderId "00000000-ffff-ffff-0000-00000fffff"
+```
+
+Menggunakan `ReservationOrder` ReservationOrderId yang ditentukan
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReservationOrderId
+Id ReservationOrder tertentu yang ingin dilihat pengguna
+
+```yaml
+Type: System.Guid
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUT
+
+### Tidak ada
+
+## OUTPUT
+
+### Microsoft.Azure.Commands.Reservations.Models.PSReservationOrderPage
+
+### Microsoft.Azure.Commands.Reservations.Models.PSReservationOrder
+
+## CATATAN
+
+## LINK TERKAIT
