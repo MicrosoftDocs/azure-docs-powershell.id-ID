@@ -1,0 +1,7 @@
+- name: Azure PowerShell for Azure Stack
+  href: overview.md
+  items:
+    - name: Instal
+      href: /azure/azure-stack/azure-stack-powershell-install?toc=%2fpowershell%2fazure%2fazure-stack%2ftoc.json
+    - name: Konfigurasikan
+      href: /azure/azure-stack/azure-stack-powershell-configure-admin

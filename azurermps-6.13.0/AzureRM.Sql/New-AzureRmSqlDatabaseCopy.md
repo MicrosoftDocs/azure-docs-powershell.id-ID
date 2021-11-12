@@ -1,0 +1,309 @@
+---
+external help file: Microsoft.Azure.Commands.Sql.dll-Help.xml
+Module Name: AzureRM.Sql
+ms.assetid: CED38886-2DC9-450E-91FF-8209602C76CD
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/new-azurermsqldatabasecopy
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseCopy.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseCopy.md
+ms.openlocfilehash: 9b9487521918339e17a5ff5fa5e42c98af36ab8fe3af0fcec5bf9c084a6071b2
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "132415239"
+---
+# New-AzureRmSqlDatabaseCopy
+
+## SYNOPSIS
+Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### DtuBasedDatabase (Default)
+```
+New-AzureRmSqlDatabaseCopy [-DatabaseName] <String> [-ServiceObjectiveName <String>]
+ [-ElasticPoolName <String>] [-Tags <Hashtable>] [-CopyResourceGroupName <String>] [-CopyServerName <String>]
+ -CopyDatabaseName <String> [-AsJob] [-LicenseType <String>] [-ServerName] <String>
+ [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### VcoreBasedDatabase
+```
+New-AzureRmSqlDatabaseCopy [-DatabaseName] <String> [-Tags <Hashtable>] [-CopyResourceGroupName <String>]
+ [-CopyServerName <String>] -CopyDatabaseName <String> [-AsJob] -ComputeGeneration <String> -VCore <Int32>
+ [-LicenseType <String>] [-ServerName] <String> [-ResourceGroupName] <String>
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzureRmSqlDatabaseCopy** membuat salinan salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzureSqlDatabaseCopy cmdlet baru untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
+Catatan: Gunakan cmdlet New-AzureRmSqlDatabaseSecondary cmdlet untuk mengonfigurasi geo-replication untuk database.
+Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
+
+## EXAMPLES
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ComputeGeneration
+Pembuatan perhitungan untuk ditetapkan ke salinan baru.
+
+```yaml
+Type: System.String
+Parameter Sets: VcoreBasedDatabase
+Aliases: Family
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CopyDatabaseName
+Menentukan nama SQL Database salin.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CopyResourceGroupName
+Menentukan nama Grup Sumber Daya Azure untuk menetapkan salinan tersebut.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CopyServerName
+Menentukan nama grup yang SQL Server menjadi host salinan tersebut.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DatabaseName
+Menentukan nama dokumen SQL Database disalin.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ElastisPoolName
+Menentukan nama pool elastis di mana untuk menetapkan salinan.
+
+```yaml
+Type: System.String
+Parameter Sets: DtuBasedDatabase
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LicenseType
+Tipe lisensi untuk database Azure Sql.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama Grup Sumber Daya yang berisi database untuk disalin.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ServerName
+Menentukan nama SQL Server yang berisi database untuk disalin.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ServiceObjectiveName
+Menentukan nama layanan yang ditetapkan untuk salinan tersebut.
+
+```yaml
+Type: System.String
+Parameter Sets: DtuBasedDatabase
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+Menentukan pasangan Nilai kunci dalam bentuk tabel hash untuk dikaitkan dengan Azure SQL Database nilai. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases: Tag
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VCore
+Angka Vcore dari salinan Database Azure Sql.
+
+```yaml
+Type: System.Int32
+Parameter Sets: VcoreBasedDatabase
+Aliases: Capacity
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Sql.Replication.Model.AzureSqlDatabaseCopyModel
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzureRmSqlDatabaseSecbasery](./New-AzureRmSqlDatabaseSecondary.md)
+
+[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)

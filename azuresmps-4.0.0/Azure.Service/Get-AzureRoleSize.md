@@ -1,0 +1,172 @@
+---
+external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.xml
+ms.assetid: 2CBF8DEF-954C-4D9F-B495-C2F76550BC79
+online version: ''
+schema: 2.0.0
+ms.openlocfilehash: 72ac2646edaf8d85124d32680b3ae1ab99ce3cedea6e1b70681723afaedd296c
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "132415222"
+---
+# Get-AzureRoleSize
+
+## SYNOPSIS
+Mendapatkan informasi ukuran peran untuk langganan saat ini.
+
+[!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
+
+## SYNTAX
+
+```
+Get-AzureRoleSize [[-InstanceSize] <String>] [-Profile <AzureSMProfile>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRoleSize** mendapatkan informasi ukuran peran untuk langganan saat ini.
+
+## EXAMPLES
+
+### Contoh 1: Dapatkan informasi ukuran peran
+```
+PS C:\> Get-AzureRoleSize
+
+          InstanceSize               : A6
+          RoleSizeLabel              :
+          Cores                      : 4
+          MemoryInMb                 : 28672
+          SupportedByWebWorkerRoles  : True
+          SupportedByVirtualMachines : True
+          OperationDescription       : Get-AzureRoleSize
+          OperationId                : c5ed7b3a-03b3-548d-876b-6688c5b29cce
+          OperationStatus            : Succeeded
+
+          InstanceSize               : A7
+          RoleSizeLabel              :
+          Cores                      : 8
+          MemoryInMb                 : 57344
+          SupportedByWebWorkerRoles  : True
+          SupportedByVirtualMachines : True
+          OperationDescription       : Get-AzureRoleSize
+          OperationId                : c5ed7b3a-03b3-548d-876b-6688c5b29cce
+          OperationStatus            : Succeeded
+```
+
+Perintah ini mendapatkan informasi ukuran peran untuk langganan saat ini.
+
+### Contoh 2: Dapatkan informasi ukuran peran dan tentukan nama ukuran peran
+```
+PS C:\> Get-AzureRoleSize -InstanceSize A7
+
+          InstanceSize               : A7
+          RoleSizeLabel              :
+          Cores                      : 8
+          MemoryInMb                 : 57344
+          SupportedByWebWorkerRoles  : True
+          SupportedByVirtualMachines : True
+          OperationDescription       : Get-AzureRoleSize
+          OperationId                : c5ed7b3a-03b3-548d-876b-6688c5b29cce
+          OperationStatus            : Succeeded
+```
+
+Perintah ini mendapatkan informasi ukuran peran untuk ukuran peran tertentu.
+
+### Contoh 3: Mendapatkan informasi ukuran peran untuk semua mesin virtual di semua layanan Azure
+```
+PS C:\> Get-AzureService | Get-AzureVM | Get-AzureRoleSize
+```
+
+Perintah ini mendapatkan informasi ukuran peran untuk semua komputer virtual di semua layanan Azure.
+
+## PARAMETERS
+
+### -InformationAction
+Menentukan bagaimana cmdlet merespons kejadian informasi.
+
+Nilai yang dapat diterima untuk parameter ini adalah:
+
+- Lanjutkan
+- Abaikan
+- Pemeriksaan
+- SilentlyContinue
+- Stop
+- Tangguhkan
+
+```yaml
+Type: ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Menentukan variabel informasi.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InstanceSize
+Menentukan nama ukuran peran, misalnya: ExtraSmall, Small, Large, ExtraLarge, A5, A6, A7.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Profil
+Menentukan profil Azure yang akan dibaca cmdlet ini.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+
+```yaml
+Type: AzureSMProfile
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+## OUTPUTS
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureRole](./Get-AzureRole.md)
+
+[Get-AzureService](./Get-AzureService.md)
+
+[Get-AzureVM](./Get-AzureVM.md)
+
+

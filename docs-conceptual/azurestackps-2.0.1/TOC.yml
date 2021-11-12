@@ -1,0 +1,9 @@
+- name: Azure Stack PowerShell
+  href: overview.md
+  items:
+    - name: Instal
+      href: /azure/azure-stack/azure-stack-powershell-install?toc=%2fpowershell%2fazure%2fazure-stack%2ftoc.json
+    - name: Koneksi - Operator Cloud
+      href: /azure/azure-stack/azure-stack-powershell-configure-admin
+    - name: Koneksi - Pengguna
+      href: /azure/azure-stack/user/azure-stack-powershell-configure-user

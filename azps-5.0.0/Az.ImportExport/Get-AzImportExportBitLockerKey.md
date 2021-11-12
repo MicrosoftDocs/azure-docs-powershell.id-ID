@@ -1,0 +1,133 @@
+---
+external help file: ''
+Module Name: Az.ImportExport
+online version: https://docs.microsoft.com/en-us/powershell/module/az.importexport/get-azimportexportbitlockerkey
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/ImportExport/help/Get-AzImportExportBitLockerKey.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/ImportExport/help/Get-AzImportExportBitLockerKey.md
+ms.openlocfilehash: 5f7a1fe5e8b80f6847bc3b3ca063d7166bf3ea95
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132410842"
+---
+# Get-AzImportExportBitLockerKey
+
+## SYNOPSIS
+Mengembalikan BitLocker Keys untuk semua drive dalam pekerjaan tertentu.
+
+## SINTAKS
+
+```
+Get-AzImportExportBitLockerKey -JobName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+ [-AcceptLanguage <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+```
+
+## DESKRIPSI
+Mengembalikan BitLocker Keys untuk semua drive dalam pekerjaan tertentu.
+
+## CONTOH
+
+### Contoh 1: Daftar semua Kunci BitLocker dalam pekerjaan ImportExport tertentu
+```powershell
+PS C:\> Get-AzImportExportBitLockerKey -JobName test-job -ResourceGroupName ImportTestRG 
+BitLockerKey                                            DriveId
+------------                                            -------
+238810-662376-448998-450120-652806-203390-606320-483076 9CA995BA
+```
+
+Cmdlet ini mencantumkan semua Kunci BitLocker dalam pekerjaan ImportExport tertentu.
+
+## PARAMETERS
+
+### -AcceptLanguage
+Menentukan bahasa pilihan untuk respons tersebut.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -JobName
+Nama pekerjaan impor/ekspor.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya mengidentifikasi grup sumber daya dalam langganan pengguna secara unik.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID langganan untuk pengguna Azure.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUT
+
+## OUTPUT
+
+### Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.Api20161101.IDriveBitLockerKey
+
+## CATATAN
+
+ALIAS
+
+## LINK TERKAIT
+

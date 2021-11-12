@@ -1,0 +1,230 @@
+---
+external help file: Microsoft.Azure.Commands.DataLakeStore.dll-Help.xml
+Module Name: AzureRM.DataLakeStore
+ms.assetid: 33E7607E-C2BC-4F46-9038-91AC92041F00
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datalakestore/remove-azurermdatalakestoreitemaclentry
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Remove-AzureRmDataLakeStoreItemAclEntry.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Remove-AzureRmDataLakeStoreItemAclEntry.md
+ms.openlocfilehash: 41c1324c3762d0b6e04c0c532976c62c0a16067e
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132423016"
+---
+# Remove-AzureRmDataLakeStoreItemAclEntry
+
+## SYNOPSIS
+Menghapus entri dari ACL file atau folder di Data Lake Store.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### RemoveByACLObject (Default)
+```
+Remove-AzureRmDataLakeStoreItemAclEntry [-Account] <String> [-Path] <DataLakeStorePathInstance>
+ [-Acl] <DataLakeStoreItemAce[]> [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### RemoveSpecificACE
+```
+Remove-AzureRmDataLakeStoreItemAclEntry [-Account] <String> [-Path] <DataLakeStorePathInstance>
+ [-AceType] <AceType> [[-Id] <Guid>] [-Default] [-PassThru] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Remove-AzureRmDataLakeStoreItemAclEntry** menghapus entri (ACE) dari daftar kontrol akses (ACL, Access Control List) file atau folder di Data Lake Store.
+
+## EXAMPLES
+
+### Contoh 1: Menghapus entri pengguna
+```
+PS C:\>Remove-AzureRmDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -AceType User -Id (Get-AzureRmADUser -Mail "PattiFuller@contoso.com").ObjectId
+```
+
+Perintah ini akan menghapus user ACE untuk Patti Fuller dari akun ContosoADL.
+
+## PARAMETERS
+
+### -Akun
+Menentukan nama akun Data Lake Store.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: AccountName
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -AceType
+Menentukan tipe ACE yang akan dihapus.
+Nilai yang dapat diterima untuk parameter ini adalah:
+
+- Pengguna
+- Grup
+- Masker
+- Lainnya
+
+```yaml
+Type: AceType
+Parameter Sets: RemoveSpecificACE
+Aliases: 
+Accepted values: User, Group, Mask, Other
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Acl
+Menentukan objek ACL yang berisi entri yang akan dihapus.
+
+```yaml
+Type: DataLakeStoreItemAce[]
+Parameter Sets: RemoveByACLObject
+Aliases: 
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Default
+Menunjukkan bahwa operasi ini menghapus ACE default dari ACL yang ditentukan.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: RemoveSpecificACE
+Aliases: 
+
+Required: False
+Position: 4
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+Menentukan ID objek pengguna, grup, atau prinsipal layanan AzureActive Directory yang akan dihapus ACE.
+
+```yaml
+Type: Guid
+Parameter Sets: RemoveSpecificACE
+Aliases: 
+
+Required: False
+Position: 3
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Menunjukkan respons boolean harus dikembalikan, mengindikasikan hasil operasi penghapusan.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Path
+Menentukan jalur Data Lake Store dari item untuk menghapus ACE, dimulai dengan direktori akar (/).
+
+```yaml
+Type: DataLakeStorePathInstance
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### DataLakeStoreItemAce[]
+Parameter 'Acl' menerima nilai tipe 'DataLakeStoreItemAce[]' dari saluran
+
+## OUTPUTS
+
+### bool
+Jika PassThru ditentukan, mengembalikan true setelah penyelesaian berhasil.
+
+## CATATAN
+
+## RELATED LINKS
+
+[Set-AzureRmDataLakeStoreItemAclEntry](./Set-AzureRmDataLakeStoreItemAclEntry.md)
+
+

@@ -1,0 +1,64 @@
+- name: Azure PowerShell
+  href: overview.md
+- name: Instal
+  items:
+    - name: Instal dengan PowerShellGet
+      href: install-azurerm-ps.md
+    - name: Instal dengan MSI
+      href: other-install.md
+- name: Hapus instalasi
+  href: uninstall-azurerm-ps.md
+- name: Mulai
+  href: get-started-azureps.md
+- name: Cloud Shell
+  href: /azure/cloud-shell/overview
+- name: Masuk
+  items:
+    - name: Metode autentikasi
+      href: authenticate-azureps.md
+    - name: Buat perwakilan layanan
+      href: create-azure-service-principal-azureps.md
+    - name: Kredensial persisten
+      href: context-persistence.md
+- name: Kueri
+  href: queries-azureps.md
+- name: Format output
+  href: formatting-output.md
+- name: Kelola langganan
+  href: manage-subscriptions-azureps.md
+- name: Sebarkan
+  items:
+    - name: Menerapkan templat Pengelola Sumber Daya
+      href: /azure/azure-resource-manager/resource-group-template-deploy
+    - name: Mengekspor templat Pengelola Sumber Daya
+      href: /azure/azure-resource-manager/resource-manager-export-template-powershell
+    - name: Menerapkan templat Pengelola Sumber Daya pribadi
+      href: /azure/azure-resource-manager/resource-manager-powershell-sas-token
+- name: Konsep
+  items:
+    - name: Modul eksperimental
+      href: using-experimental-modules.md
+    - name: Pekerjaan PowerShell
+      href: using-psjobs.md
+- name: Tutorial
+  items:
+    - name: Membuat Komputer Virtual
+      href: azureps-vm-tutorial.yml
+- name: Contoh Skrip
+  items:
+    - name: Linux Virtual Machines
+      href: /azure/virtual-machines/linux/powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json
+    - name: Windows Virtual Machines
+      href: /azure/virtual-machines/windows/powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json
+    - name: Aplikasi Web
+      href: /azure/app-service-web/app-service-powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json
+    - name: SQL Database
+      href: /azure/sql-database/sql-database-powershell-samples?toc=%2fpowershell%2fmodule%2ftoc.json
+    - name: Cosmos DB
+      href: /azure/cosmos-db/powershell-samples?toc=%2fpowershell%2fmodules%2ftoc.json
+- name: Catatan rilis
+  href: release-notes-azureps.md
+- name: Melanggar perubahan untuk Azure PowerShell 6.x
+  href: migration-guide.6.0.0.md
+- name: Pertanyaan Umum
+  href: faq.md

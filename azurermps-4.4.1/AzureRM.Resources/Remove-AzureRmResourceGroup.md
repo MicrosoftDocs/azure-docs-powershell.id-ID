@@ -1,0 +1,213 @@
+---
+external help file: Microsoft.Azure.Commands.ResourceManager.Cmdlets.dll-Help.xml
+Module Name: AzureRM.Resources
+ms.assetid: 880D321E-30F2-4CAE-B14A-5F6DD8E1DB99
+online version: ''
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Remove-AzureRmResourceGroup.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Remove-AzureRmResourceGroup.md
+ms.openlocfilehash: 6938cf80f3fa6fb20252e1e4a212133ecd1c62a9
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132426814"
+---
+# Remove-AzureRmResourceGroup
+
+## SYNOPSIS
+Menghapus grup sumber daya.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### Mencantumkan grup sumber daya berdasarkan namanya. (Default)
+```
+Remove-AzureRmResourceGroup [-Name] <String> [-Force] [-ApiVersion <String>] [-Pre]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Mencantumkan grup sumber daya berdasarkan Id.
+```
+Remove-AzureRmResourceGroup [-Id] <String> [-Force] [-ApiVersion <String>] [-Pre]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Remove-AzureRmResourceGroup** menghapus grup sumber daya Azure dan sumber dayanya dari langganan saat ini.
+Untuk menghapus sumber daya, tetapi meninggalkan grup sumber daya, gunakan cmdlet Remove-AzureRmResource cmdlet.
+
+## EXAMPLES
+
+### Contoh 1: Menghapus grup sumber daya
+```
+PS C:\>Remove-AzureRmResourceGroup -Name "ContosoRG01"
+```
+
+Perintah ini akan menghapus grup sumber daya ContosoRG01 dari langganan.
+Cmdlet meminta konfirmasi Anda dan tidak mengembalikan output.
+
+### Contoh 2: Hapus grup sumber daya tanpa konfirmasi
+```
+PS C:\>Get-AzureRmResourceGroup -Name "ContosoRG01" | Remove-AzureRmResourceGroup -Verbose -Force
+```
+
+Perintah ini menggunakan cmdlet Get-AzureRmResourceGroup cmdlet untuk mendapatkan grup sumber daya ContosoRG01, lalu meneruskannya ke **Remove-AzureRmResourceGroup** menggunakan operator pipeline.
+Parameter *umum Verbose* mendapatkan informasi status tentang operasi, dan parameter *Paksa* menyembunyikan perintah konfirmasi.
+
+### Contoh 3: Hapus semua grup sumber daya
+```
+PS C:\>Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup
+```
+
+Perintah ini menggunakan cmdlet **Get-AzureRmResourceGroup** untuk mendapatkan semua grup sumber daya, lalu meneruskannya ke **Remove-AzureRmResourceGroup** menggunakan operator pipeline.
+
+## PARAMETERS
+
+### -ApiVersion
+Menentukan versi API yang didukung oleh Penyedia sumber daya.
+Anda bisa menentukan versi yang berbeda dari versi default.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+Menentukan ID grup sumber daya untuk dihapus.
+Karakter wildcard tidak diizinkan.
+
+```yaml
+Type: System.String
+Parameter Sets: Lists the resource group based in the Id.
+Aliases: ResourceGroupId, ResourceId
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama grup sumber daya yang akan dihapus.
+Karakter wildcard tidak diizinkan.
+
+```yaml
+Type: System.String
+Parameter Sets: Lists the resource group based in the name.
+Aliases: ResourceGroupName
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Pra
+Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Tidak ada
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureRmResourceGroup](./Get-AzureRmResourceGroup.md)
+
+[New-AzureRmResourceGroup](./New-AzureRmResourceGroup.md)
+
+[Set-AzureRmResourceGroup](./Set-AzureRmResourceGroup.md)
+
+
