@@ -1,0 +1,316 @@
+---
+external help file: Microsoft.Azure.Commands.ResourceManager.Cmdlets.dll-Help.xml
+Module Name: AzureRM.Resources
+ms.assetid: 6396AEC3-DFE6-45DA-BCF4-69C55C5D051B
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermpolicydefinition
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmPolicyDefinition.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmPolicyDefinition.md
+ms.openlocfilehash: 30e113ca85c24b46d4594658f1d91abb6b14bd3e
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132428162"
+---
+# Get-AzureRmPolicyDefinition
+
+## SYNOPSIS
+Mendapatkan definisi kebijakan.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### NameParameterSet (Default)
+```
+Get-AzureRmPolicyDefinition [-Name <String>] [-ApiVersion <String>] [-Pre]
+ [-DefaultProfile <IAzureContextContainer>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### ManagementGroupNameParameterSet
+```
+Get-AzureRmPolicyDefinition [-Name <String>] -ManagementGroupName <String> [-ApiVersion <String>] [-Pre]
+ [-DefaultProfile <IAzureContextContainer>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### SubscriptionIdParameterSet
+```
+Get-AzureRmPolicyDefinition [-Name <String>] -SubscriptionId <Guid> [-ApiVersion <String>] [-Pre]
+ [-DefaultProfile <IAzureContextContainer>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### IdParameterSet
+```
+Get-AzureRmPolicyDefinition -Id <String> [-ApiVersion <String>] [-Pre]
+ [-DefaultProfile <IAzureContextContainer>] [-InformationAction <ActionPreference>]
+ [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### BuiltinFilterParameterSet
+```
+Get-AzureRmPolicyDefinition [-ManagementGroupName <String>] [-SubscriptionId <Guid>] [-Builtin]
+ [-ApiVersion <String>] [-Pre] [-DefaultProfile <IAzureContextContainer>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+```
+
+### CustomFilterParameterSet
+```
+Get-AzureRmPolicyDefinition [-ManagementGroupName <String>] [-SubscriptionId <Guid>] [-Custom]
+ [-ApiVersion <String>] [-Pre] [-DefaultProfile <IAzureContextContainer>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRmPolicyDefinition** mendapatkan kumpulan definisi kebijakan atau definisi kebijakan tertentu yang diidentifikasi menurut nama atau ID.
+
+## EXAMPLES
+
+### Contoh 1: Dapatkan semua definisi kebijakan
+```
+PS C:\> Get-AzureRmPolicyDefinition
+```
+
+Perintah ini akan mendapatkan semua definisi kebijakan.
+
+### Contoh 2: Dapatkan definisi kebijakan dari langganan saat ini menurut nama
+```
+PS C:\> Get-AzureRmPolicyDefinition -Name 'VMPolicyDefinition'
+```
+
+Perintah ini mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dari langganan default saat ini.
+
+### Contoh 3: Dapatkan definisi kebijakan dari grup manajemen menurut nama
+```
+PS C:\> Get-AzureRmPolicyDefinition -Name 'VMPolicyDefinition' -ManagementGroupName 'Dept42'
+```
+
+Perintah ini mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dari grup manajemen yang bernama Dept42.
+
+### Contoh 4: Dapatkan semua definisi kebijakan bawaan dari langganan
+```
+PS C:\> Get-AzureRmPolicyDefinition -SubscriptionId '3bf44b72-c631-427a-b8c8-53e2595398ca' -Builtin
+```
+
+Perintah ini mendapatkan semua definisi kebijakan bawaan dari langganan dengan ID 3bf44b72-c631-427a-b8c8-53e2595398ca.
+
+## PARAMETERS
+
+### -ApiVersion
+Menentukan versi API penyedia sumber daya untuk digunakan.
+Jika Anda tidak menentukan versi, cmdlet ini menggunakan versi terbaru yang tersedia.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Builtin
+Daftar batas hasil hanya untuk definisi kebijakan bawaan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: BuiltinFilterParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Kustom
+Daftar hasil batasan untuk definisi kebijakan kustom saja.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CustomFilterParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk definisi kebijakan yang akan dapatkan cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: IdParameterSet
+Aliases: ResourceId
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InformationAction
+Menentukan bagaimana cmdlet merespons kejadian informasi.
+Nilai yang dapat diterima untuk parameter ini adalah:
+- Lanjutkan
+- Abaikan
+- Pemeriksaan
+- SilentlyContinue
+- Stop
+- Tangguhkan
+
+```yaml
+Type: System.Management.Automation.ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Menentukan variabel informasi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagementGroupName
+Nama grup manajemen definisi kebijakan yang akan mendapatkan.
+
+```yaml
+Type: System.String
+Parameter Sets: ManagementGroupNameParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: BuiltinFilterParameterSet, CustomFilterParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama definisi kebijakan yang akan dapatkan cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: NameParameterSet, ManagementGroupNameParameterSet, SubscriptionIdParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Pra
+Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID langganan definisi kebijakan untuk mendapatkan.
+
+```yaml
+Type: System.Nullable`1[System.Guid]
+Parameter Sets: SubscriptionIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.Nullable`1[System.Guid]
+Parameter Sets: BuiltinFilterParameterSet, CustomFilterParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+## OUTPUTS
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzureRmPolicyDefinition](./New-AzureRmPolicyDefinition.md)
+
+[Remove-AzureRmPolicyDefinition](./Remove-AzureRmPolicyDefinition.md)
+
+[Set-AzureRmPolicyDefinition](./Set-AzureRmPolicyDefinition.md)
+
+

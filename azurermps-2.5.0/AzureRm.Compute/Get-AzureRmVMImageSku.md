@@ -1,0 +1,126 @@
+---
+external help file: Microsoft.Azure.Commands.Compute.dll-Help.xml
+Module Name: AzureRM.Compute
+ms.assetid: D2BBAC5B-A7B9-44DA-BE37-24D89E03BAB3
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmimagesku
+schema: 2.0.0
+ms.openlocfilehash: 8d2253e20e87a0e6a5d97f2dd0e405412f5a9282
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132428724"
+---
+# Get-AzureRmVMImageSku
+
+## SYNOPSIS
+Mendapatkan VMImage SKU.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+```
+Get-AzureRmVMImageSku -Location <String> -PublisherName <String> -Offer <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRmVMImageSku** mendapatkan VMImage SKU.
+
+## EXAMPLES
+
+### Contoh 1: Get VMImage SKUs
+```
+PS C:\> Get-AzureRmVMImageSku -Location "Central US" -PublisherName "Fabrikam" -Offer "LinuxServer"
+```
+
+Perintah ini mendapatkan SKU untuk penerbit dan penawaran tertentu.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Lokasi
+Menentukan lokasi VMImage.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Offer
+Menentukan tipe penawaran VMImage.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -PublisherName
+Menentukan penerbit VMImage.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Tidak ada
+Cmdlet ini tidak menerima input apa pun.
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Compute.Models.PSVirtualMachineImageSku
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureRmVMImage](./Get-AzureRmVMImage.md)
+
+[Get-AzureRmVMImageOffer](./Get-AzureRmVMImageOffer.md)
+
+[Get-AzureRmVMImagePublisher](./Get-AzureRmVMImagePublisher.md)
+
+[Save-AzureRmVMImage](./Save-AzureRmVMImage.md)
+
+

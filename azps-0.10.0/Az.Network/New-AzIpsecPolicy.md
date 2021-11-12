@@ -1,0 +1,198 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+online version: https://docs.microsoft.com/en-us/powershell/module/az.network/new-azipsecpolicy
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzIpsecPolicy.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzIpsecPolicy.md
+ms.openlocfilehash: 6840c3f53f40a542026a661e76a57f1b2b92ad223a04aac1121dbe2f88f5c0ee
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "132414564"
+---
+# New-AzIpsecPolicy
+
+## SYNOPSIS
+Membuat Kebijakan IPSec.
+
+## SYNTAX
+
+```
+New-AzIpsecPolicy [-SALifeTimeSeconds <Int32>] [-SADataSizeKilobytes <Int32>] -IpsecEncryption <String>
+ -IpsecIntegrity <String> -IkeEncryption <String> -IkeIntegrity <String> -DhGroup <String> -PfsGroup <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet New-AzIpsecPolicy membuat proposal kebijakan IPSec untuk digunakan dalam koneksi gateway jaringan virtual.
+
+## EXAMPLES
+
+### Contoh 1
+```
+PS C:\> $ipsecPolicy = New-AzIpsecPolicy -SALifeTimeSeconds 1000 -SADataSizeKilobytes 2000 -IpsecEncryption "GCMAES256" -IpsecIntegrity "GCMAES256" -IkeEncryption "AES256" -IkeIntegrity "SHA256" -DhGroup "DHGroup14" -PfsGroup "PFS2048"
+PS C:\> New-AzVirtualNetworkGatewayConnection -ResourceGroupName $rgname -name $vnetConnectionName -location $location -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localnetGateway -ConnectionType IPsec -RoutingWeight 3 -SharedKey $sharedKey -UsePolicyBasedTrafficSelectors $true -IpsecPolicies $ipsecPolicy
+```
+
+Membuat kebijakan IPSec untuk digunakan untuk koneksi gateway jaringan virtual baru.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DhGroup
+Grup DH digunakan di IKE Phase 1 untuk awal SA
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+Accepted values: None, DHGroup1, DHGroup14, DHGroup2, DHGroup2048, DHGroup24, ECP256, ECP384
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IkeEncryption
+Algoritma enkripsi IKE (Fase 2 IKE)
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+Accepted values: DES, DES3, AES128, AES192, AES256
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IkeIntegrity
+Algoritma integritas IKE (Fase 2 IKE)
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+Accepted values: MD5, SHA1, SHA256, SHA384
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IpsecEncryption
+Algoritma enkripsi IPSec (IKE Phase 1)
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+Accepted values: None, DES, DES3, AES128, AES192, AES256, GCMAES128, GCMAES192, GCMAES256
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IpsecIntegrity
+Algoritma integritas IPSec (Fase 1 IKE)
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+Accepted values: MD5, SHA1, SHA256, GCMAES128, GCMAES192, GCMAES256
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PfsGroup
+Grup DH digunakan di IKE Fase 2 untuk anak baru SA
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+Accepted values: None, PFS1, PFS2, PFS2048, PFS24, ECP256, ECP384
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SADataSizeKilobytes
+Ukuran muat IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SALifeTimeSeconds
+Asosiasi Keamanan IPSec (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam detik
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy
+
+## CATATAN
+
+## RELATED LINKS
+

@@ -1,0 +1,183 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataFactories.dll-Help.xml
+Module Name: Az.DataFactory
+ms.assetid: 3D2E9FAE-FE34-457A-BE95-BC61D025B07A
+online version: https://docs.microsoft.com/en-us/powershell/module/az.datafactory/remove-azdatafactory
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactory.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactory.md
+ms.openlocfilehash: 36c22a432d4e281600a1b718c1ac58a851fb7069
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132411558"
+---
+# Remove-AzDataFactory
+
+## SYNOPSIS
+Menghapus pabrik data.
+
+## SINTAKS
+
+### ByFactoryName (Default)
+```
+Remove-AzDataFactory [-Name] <String> [-Force] [-ResourceGroupName] <String>
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByFactoryObject
+```
+Remove-AzDataFactory [-DataFactory] <PSDataFactory> [-Force] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESKRIPSI
+Cmdlet **Remove-AzDataFactory** menghapus pabrik data.
+
+## CONTOH
+
+### Contoh 1: Menghapus pabrik data
+```
+PS C:\>Remove-AzDataFactory -Name "WikiADF" -ResourceGroupName "ADF"
+Confirm
+Are you sure you want to remove data factory 'WikiADF' in resource group 'ADF'? 
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
+True
+```
+
+Perintah ini menghapus pabrik data yang bernama WikiADF dari grup sumber daya yang bernama ADF.
+Perintah ini mengembalikan nilai dari $True.
+
+## PARAMETERS
+
+### -DataFactory
+Menentukan objek **PSDataFactory** untuk dihapus.
+
+```yaml
+Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
+Parameter Sets: ByFactoryObject
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Mengindikasikan bahwa cmdlet ini menghapus pabrik data tanpa meminta konfirmasi.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama pabrik data yang akan dihapus.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName
+Aliases: DataFactoryName
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya Azure.
+Cmdlet ini menghapus pabrik data dari grup yang ditentukan parameter ini.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFactoryName
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUT
+
+### System.String
+
+### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
+
+## OUTPUT
+
+### System.Void
+
+## CATATAN
+* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+
+## LINK TERKAIT
+
+[Get-AzDataFactory](./Get-AzDataFactory.md)
+
+[New-AzDataFactory](./New-AzDataFactory.md)
+
+

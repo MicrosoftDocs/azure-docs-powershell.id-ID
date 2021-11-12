@@ -1,0 +1,204 @@
+---
+external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
+ms.assetid: 75320133-E7B1-40D4-B16D-567686D5AE99
+online version: ''
+schema: 2.0.0
+ms.openlocfilehash: 31c04545c1a1f960dff637129d85827053292000
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132428063"
+---
+# New-AzureSBAuthorizationRule
+
+## SYNOPSIS
+Membuat aturan Bus Layanan otorisasi baru.
+
+[!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
+
+## SYNTAX
+
+### EntitySAS
+```
+New-AzureSBAuthorizationRule -Name <String> [-Permission <AccessRights[]>] -Namespace <String>
+ -EntityName <String> -EntityType <ServiceBusEntityType> [-PrimaryKey <String>] [-SecondaryKey <String>]
+ [-Profile <AzureSMProfile>] [<CommonParameters>]
+```
+
+### Kumpulan nama
+```
+New-AzureSBAuthorizationRule -Name <String> [-Permission <AccessRights[]>] -Namespace <String>
+ [-PrimaryKey <String>] [-SecondaryKey <String>] [-Profile <AzureSMProfile>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzureSBAuthorizationRule** membuat Bus Layanan otorisasi bisnis.
+
+[!INCLUDE [sb-deprecation.md](../include/sb-deprecation.md)]
+
+## EXAMPLES
+
+### Contoh 1: Buat aturan otorisasi dengan kunci primer yang dihasilkan
+```
+PS C:\> New-AzureSBAuthorizationRule -Name MyRule -Namespace MyNamespace -Permission $("Send")
+```
+
+Membuat aturan otorisasi baru pada tingkat ruang nama dengan izin Kirim.
+
+### Contoh 2: Membuat aturan otorisasi dengan menyediakan kunci utama
+```
+PS C:\> New-AzureSBAuthorizationRule -Name MyRule -Namespace MyNamespace -Permission $("Manage", "Listen", "Send") -EntityName MyEntity -EntityType Queue -PrimaryKey P+lL/Mnd2Z9sj5hwMrRyAxQDdX8RHfbdqU2eIAqs1rc=
+```
+
+Membuat aturan otorisasi baru pada tingkat Antrean MyEntity dengan semua izin.
+
+## PARAMETERS
+
+### -EntityName
+Menentukan nama entitas untuk diterapkan aturan di.
+
+```yaml
+Type: String
+Parameter Sets: EntitySAS
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EntityType
+Menentukan tipe entitas.
+Nilai valid adalah:
+  
+- Antrean
+- Topik
+- Relay
+- NotificationHub
+
+```yaml
+Type: ServiceBusEntityType
+Parameter Sets: EntitySAS
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama aturan otorisasi unik.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Namespace
+Menentukan nama ruang nama untuk menerapkan aturan otorisasi.
+Jika tidak *ada EntityName* yang menyediakan aturan akan berada di tingkat ruang nama.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Permission
+Izin otorisasi (Kirim, Kelola, Dengarkan).
+
+```yaml
+Type: AccessRights[]
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrimaryKey
+Menentukan kunci utama Tanda Tangan Akses Bersama.
+Akan dihasilkan jika tidak disediakan.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Profil
+Menentukan profil Azure yang akan dibaca cmdlet ini.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+
+```yaml
+Type: AzureSMProfile
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SecondaryKey
+Menentukan tombol sekunder Tanda Tangan Akses Bersama.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+## OUTPUTS
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureSBAuthorizationRule](./Get-AzureSBAuthorizationRule.md)
+
+[Remove-AzureSBAuthorizationRule](./Remove-AzureSBAuthorizationRule.md)
+
+[Set-AzureSBAuthorizationRule](./Set-AzureSBAuthorizationRule.md)
+
+
