@@ -1,0 +1,102 @@
+---
+external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
+ms.assetid: 78DE0AD2-6210-4604-89A8-41915D58BD68
+online version: ''
+schema: 2.0.0
+ms.openlocfilehash: eaaa1ac19a44cc26d20d301a5f75e552120410b7
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "132421571"
+---
+# Get-AzureSiteRecoveryStorage
+
+## SYNOPSIS
+Dapatkan Penyimpanan Pemulihan Situs untuk penyimpanan.
+
+[!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
+
+## SYNTAX
+
+```
+Get-AzureSiteRecoveryStorage -Server <ASRServer> [-Profile <AzureSMProfile>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureSiteRecoveryStorage** mendapatkan Penyimpanan Pemulihan Situs Azure untuk vault Pemulihan Situs Azure saat ini.
+
+## EXAMPLES
+
+### Contoh 1: Dapatkan penyimpanan pemulihan situs
+```
+PS C:\> $Servers = Get-AzureSiteRecoveryServer
+PS C:\> Get-AzureSiteRecoveryStorage -Server $Servers[0]
+Name           : phase2PrimaryStorageClassification
+ID             : 1c1d0c0b-0c50-4675-af1a-1fdac70dbb6d
+FabricObjectID : 1c1d0c0b-0c50-4675-af1a-1fdac70dbb6d
+ServerId       : 774859b0-1966-48cc-9df7-759c441b7a8c
+Type           : Classification
+FabricType     : VMM
+
+Name           : phase2RecoveryStorageClassification
+ID             : 20cf8d92-fd5d-4872-985a-0f4562b8a0bf
+FabricObjectID : 20cf8d92-fd5d-4872-985a-0f4562b8a0bf
+ServerId       : 774859b0-1966-48cc-9df7-759c441b7a8c
+Type           : Classification
+FabricType     : VMM
+```
+
+Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer.**
+Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+
+Perintah kedua mendapatkan penyimpanan pemulihan situs untuk server pertama dalam $Servers array.
+
+## PARAMETERS
+
+### -Profil
+Menentukan profil Azure yang akan dibaca cmdlet ini.
+Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+
+```yaml
+Type: AzureSMProfile
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Server
+Menentukan server untuk dukungan Pemulihan Situs Azure Storage.
+Untuk mendapatkan objek **ASRServer,** gunakan cmdlet **Get-AzureSiteRecoveryServer.**
+
+```yaml
+Type: ASRServer
+Parameter Sets: (All)
+Aliases: 
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+## OUTPUTS
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzureSiteRecoveryServer](./Get-AzureSiteRecoveryServer.md)
+
+

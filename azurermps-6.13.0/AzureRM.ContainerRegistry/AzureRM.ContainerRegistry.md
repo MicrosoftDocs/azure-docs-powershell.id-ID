@@ -1,0 +1,68 @@
+---
+Module Name: AzureRM.ContainerRegistry
+Module Guid: b3ca459c-feb9-41cc-a954-46222505acb3
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azurerm.containerregistry
+Help Version: 1.0.0.0
+Locale: en-US
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/AzureRM.ContainerRegistry.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/AzureRM.ContainerRegistry.md
+ms.openlocfilehash: d273e56f7e93292a694d2b7ec8f7255df27f8d605ddecb1feb575e5f63c9a785
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "132413979"
+---
+# AzureRM.ContainerRegistry Module
+## Deskripsi
+Topik ini menampilkan topik bantuan untuk Cmdlet Manajemen Registri Azure Container.
+
+## Cmdlet AzureRM.ContainerRegistry
+### [Get-AzureRmContainerRegistry](Get-AzureRmContainerRegistry.md)
+Mendapatkan registri wadah.
+
+### [Get-AzureRmContainerRegistryCredential](Get-AzureRmContainerRegistryCredential.md)
+Mendapatkan kredensial masuk untuk registri wadah.
+
+### [Get-AzureRmContainerRegistryReplication](Get-AzureRmContainerRegistryReplication.md)
+Mendapatkan replikasi registri wadah.
+
+### [Get-AzureRmContainerRegistryWebhook](Get-AzureRmContainerRegistryWebhook.md)
+Mendapatkan container registry webhook.
+
+### [Get-AzureRmContainerRegistryWebhookEvent](Get-AzureRmContainerRegistryWebhookEvent.md)
+Mendapatkan acara penampung webhook registri.
+
+### [New-AzureRmContainerRegistry](New-AzureRmContainerRegistry.md)
+Membuat registri wadah.
+
+### [New-AzureRmContainerRegistryReplication](New-AzureRmContainerRegistryReplication.md)
+Membuat replikasi registri wadah.
+
+### [New-AzureRmContainerRegistryWebhook](New-AzureRmContainerRegistryWebhook.md)
+Membuat wadah webhook registri.
+
+### [Remove-AzureRmContainerRegistry](Remove-AzureRmContainerRegistry.md)
+Menghapus registri wadah.
+
+### [Remove-AzureRmContainerRegistryReplication](Remove-AzureRmContainerRegistryReplication.md)
+Menghapus replikasi registri wadah.
+
+### [Remove-AzureRmContainerRegistryWebhook](Remove-AzureRmContainerRegistryWebhook.md)
+Menghapus wadah web registri.
+
+### [Test-AzureRmContainerRegistryNameAvailability](Test-AzureRmContainerRegistryNameAvailability.md)
+Memeriksa ketersediaan nama registri wadah.
+
+### [Test-AzureRmContainerRegistryWebhook](Test-AzureRmContainerRegistryWebhook.md)
+Memicu kejadian ping webhook.
+
+### [Update-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
+Memperbarui registri wadah.
+
+### [Update-AzureRmContainerRegistryCredential](Update-AzureRmContainerRegistryCredential.md)
+Meregenerasi kredensial masuk untuk registri wadah.
+
+### [Update-AzureRmContainerRegistryWebhook](Update-AzureRmContainerRegistryWebhook.md)
+Memperbarui container registry webhook.
+

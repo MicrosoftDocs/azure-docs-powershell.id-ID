@@ -1,0 +1,50 @@
+---
+Module Name: Az.DevTestLabs
+Module Guid: be2ca175-bfb9-4601-b01c-4de13eb2105c
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/az.devtestlabs
+Help Version: 4.0.4.0
+Locale: en-US
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/DevTestLabs/DevTestLabs/help/Az.DevTestLabs.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/DevTestLabs/DevTestLabs/help/Az.DevTestLabs.md
+ms.openlocfilehash: 8310675771399b17374552267cdfe9d34988de4c
+ms.sourcegitcommit: b4a38bcb0501a9016a4998efd377aa75d3ef9ce8
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "132406112"
+---
+# Az.DevTestLabs Module
+## Deskripsi
+Topik ini menampilkan topik bantuan untuk fitur Lab DevTest dalam cmdlet Layanan Aplikasi Azure.
+
+## Cmdlet Az.DevTestLabs
+### [Get-AzDtlAllowedVMSizesPolicy](Get-AzDtlAllowedVMSizesPolicy.md)
+Dapatkan kebijakan ukuran mesin virtual yang diperbolehkan dari sebuah lab di DevTest Labs.
+
+### [Get-AzdtlAutoShutdownPolicy](Get-AzDtlAutoShutdownPolicy.md)
+Mendapatkan kebijakan penutupan otomatis sebuah lab di Lab DevTest.
+
+### [Get-azdtlautoStartPolicy](Get-AzDtlAutoStartPolicy.md)
+Dapatkan kebijakan mulai otomatis sebuah lab di DevTest Labs.
+
+### [Get-azdtlvMsPerLabPolicy](Get-AzDtlVMsPerLabPolicy.md)
+Dapatkan mesin virtual per kebijakan lab sebuah lab di DevTest Labs.
+
+### [Get-azdtlvMsPerUserPolicy](Get-AzDtlVMsPerUserPolicy.md)
+Dapatkan mesin virtual per kebijakan pengguna sebuah lab di DevTest Labs.
+
+### [Set-AzDtlAllowedVMSizesPolicy](Set-AzDtlAllowedVMSizesPolicy.md)
+Mengatur kebijakan ukuran mesin virtual yang diperbolehkan dari sebuah lab di DevTest Labs.
+
+### [Set-azdtlautoshutdownPolicy](Set-AzDtlAutoShutdownPolicy.md)
+Mengatur kebijakan penutupan otomatis lab DevTest Labs.
+
+### [Set-azdtlautoStartPolicy](Set-AzDtlAutoStartPolicy.md)
+Mengatur kebijakan mulai otomatis sebuah lab di Lab DevTest.
+
+### [Set-azdtlvMsPerLabPolicy](Set-AzDtlVMsPerLabPolicy.md)
+Mengatur kebijakan mesin virtual per lab sebuah lab di Lab DevTest.
+
+### [Set-azdtlvMsPerUserPolicy](Set-AzDtlVMsPerUserPolicy.md)
+Mengatur kebijakan mesin virtual per pengguna lab di DevTest Labs.
+
