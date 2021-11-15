@@ -42,7 +42,7 @@ PS C:\> $diskupdateconfig = Set-AzDiskUpdateKeyEncryptionKey -DiskUpdate $diskup
 PS C:\> Update-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -DiskUpdate $diskupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan disk kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan.  Perangkat ini juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
+Perintah pertama membuat objek pembaruan disk kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
 Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan disk.
 Perintah terakhir mengambil objek pembaruan disk dan memperbarui disk yang sudah ada dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 
