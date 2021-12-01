@@ -4,15 +4,15 @@ description: Pelajari cara melakukan migrasi skrip PowerShell secara otomatis da
 author: mikefrobbins
 ms.service: azure-powershell
 ms.topic: quickstart
-ms.custom: devx-track-azurepowershell
+ms.custom: devx-track-azurepowershell, mode-api
 ms.author: mirobb
 ms.date: 09/27/2021
-ms.openlocfilehash: da70aefb4b01f1da558e19107b81c35b09a62c77
-ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
+ms.openlocfilehash: 8ffdd7c5954f571d12517c2dcf36c135add95f75
+ms.sourcegitcommit: 5f14deeca80a6a709f1df434e14e768d63b7f4e6
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "132429300"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "133384220"
 ---
 # <a name="quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module"></a>Mulai cepat: Melakukan migrasi skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell
 
@@ -168,4 +168,4 @@ Laporkan umpan balik dan masalah tentang modul PowerShell Az.Tools.Migration [me
 
 ## <a name="next-steps"></a>Langkah berikutnya
 
-Untuk mempelajari selengkapnya tentang modul PowerShell Az, lihat [Azure PowerShell teknis](/powershell/azure/)
+Untuk mempelajari selengkapnya tentang modul PowerShell Az, lihat [Azure PowerShell lengkap](/powershell/azure/)
