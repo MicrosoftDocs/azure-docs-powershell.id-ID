@@ -1,22 +1,22 @@
 ---
 title: Perubahan migrasi Azure AD Graph Microsoft di Azure PowerShell
-description: Panduan migrasi ini berisi daftar perubahan Azure PowerShell perubahan dalam Azure AD ke Microsoft Graph di Az.Resources 5.0.0-preview.
+description: Panduan migrasi ini berisi daftar perubahan Azure PowerShell azure AD ke Microsoft Graph di Az.Resources 5.1.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 942407e1bd98093afdf721ebc06accc36016d685
-ms.sourcegitcommit: 7c1fb6a9e05ca1cd6f3d53dbe6c6c7fc16c0b6a8
+ms.openlocfilehash: 0fce0289a68fc254ff9d4a06b4897bedb1ea2c54
+ms.sourcegitcommit: aa47b3f5413d868257168b57db928d4a11aabbec
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "132429574"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "133777715"
 ---
 # <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi Azure AD Graph Microsoft di Azure PowerShell
 
-Modul `Az.Resources` PowerShell versi 5.0.0-preview Azure PowerShell memperkenalkan perubahan pada cmdlet yang terkait dengan identitas. Cmdlet yang mengandalkan Azure AD Graph akan beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang lancar ketika pengumuman pensiun [Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
-Untuk informasi selengkapnya, lihat [Azure AD ke Microsoft Graph migrasi untuk alat baris perintah Azure.](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666)
+Modul `Az.Resources` PowerShell versi 5.1.0 dari Azure PowerShell memperkenalkan perubahan pada cmdlet yang terkait dengan identitas. Cmdlet yang mengandalkan Azure AD Graph akan beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang lancar ketika pengumuman pensiun [Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
+Untuk informasi selengkapnya, lihat [Migrasi Azure AD ke Microsoft Graph untuk alat baris perintah Azure.](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666)
 
 Contoh berikut ini menginstal versi pratinjau terbaru modul `Az.Resources` Azure PowerShell terbaru.
 
@@ -92,6 +92,14 @@ Lihat informasi berikut ini untuk daftar perubahan.
 
 - Tipe input parameter `ApplicationObject` telah diubah `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
+### <a name="changes-to-app-credential-object"></a>Perubahan pada objek Kredensial Aplikasi
+
+#### <a name="password-credential"></a>Kredensial Kata Sandi
+- `Password` telah diganti dengan `SecretText`
+
+#### <a name="key-credential"></a>Kredensial Kunci
+- `CertValue` telah Dihapus
+
 ## <a name="serviceprincipal"></a>ServicePrincipal
 
 ### <a name="get-azadserviceprincipal"></a>Get-AzAdServicePrincipal
@@ -107,6 +115,8 @@ Lihat informasi berikut ini untuk daftar perubahan.
 - Kumpulan parameter `ApplicationWithoutCredentialParameterSet` , , telah dihapus karena kumpulan parameter asli tersebut tidak `ApplicationWithPasswordPlainParameterSet` `DisplayNameWithoutCredentialParameterSet` `DisplayNameWithPasswordPlainParameterSet` berfungsi.
 
 - Peran `contributor` tidak ditetapkan sebagai default ketika parameter tidak diberikan karena pertimbangan `-Role` keamanan.
+
+- Parameter `SkipAssignment` telah dihapus.
 
 ### <a name="remove-azadserviceprincipal"></a>Remove-AzAdServicePrincipal
 
@@ -146,6 +156,14 @@ Lihat informasi berikut ini untuk daftar perubahan.
 
 - Tipe input parameter `ServicePrincipalObject` telah diubah `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
+### <a name="changes-to-serviceprincipal-credential-object"></a>Perubahan pada objek ServicePrincipal Credential
+
+#### <a name="password-credential"></a>Kredensial Kata Sandi
+- `Password` telah diganti dengan `SecretText`
+
+#### <a name="key-credential"></a>Kredensial Kunci
+- `CertValue` telah Dihapus
+
 ## <a name="user"></a>Pengguna
 
 ### <a name="get-azaduser"></a>Get-AzAdUser
@@ -157,8 +175,6 @@ Lihat informasi berikut ini untuk daftar perubahan.
 ### <a name="new-azaduser"></a>New-AzAdUser
 
 - Tipe output telah diubah `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` dari ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
-
-- Parameter `ImmutableId` ini tidak didukung dan telah dihapus (Parameter ini adalah bug dalam versi pratinjau saat ini. Ini harus ditambahkan dan sama dengan `OnPremisesImmutableId` )
 
 ### <a name="remove-azaduser"></a>Remove-AzAdUser
 
