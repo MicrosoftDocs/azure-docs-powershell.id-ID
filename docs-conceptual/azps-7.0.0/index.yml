@@ -1,0 +1,99 @@
+###YamlMime:Landing
+title: Dokumentasi Azure PowerShell
+summary: |
+  Azure PowerShell adalah satu set cmdlet untuk mengelola sumber daya Azure langsung dari baris perintah PowerShell. Azure PowerShell dirancang untuk membuatnya mudah dipelajari dan memulai, tetapi menyediakan fitur yang kuat untuk otomatisasi. Ditulis dalam .NET Standard, Azure PowerShell bekerja dengan PowerShell 5.1 pada Windows, PowerShell 7.0.6 LTS dan PowerShell 7.1.3 atau lebih tinggi di semua platform.
+metadata:
+  title: Sekilas Azure PowerShell
+  description: Mulailah dengan Azure PowerShell dengan menginstal dan belajar tentang fitur dan kemampuannya.
+  ms.topic: landing-page
+  author: mikefrobbins
+  ms.author: mirobb
+  ms.date: 11/02/2021
+  ms.prod: azure-powershell
+landingContent:
+  - title: Mulai menggunakan Azure PowerShell
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Memasang Azure PowerShell
+            url: install-az-ps.md
+          - text: Instal PowerShell
+            url: /powershell/scripting/install/installing-powershell
+          - text: Run in Azure Cloud Shell
+            url: 'https://shell.azure.com'
+      - linkListType: get-started
+        links:
+          - text: Mulai
+            url: get-started-azureps.md
+          - text: Pelajari tentang konsep PowerShell
+            url: /powershell/scripting/overview
+      - linkListType: how-to-guide
+        links:
+          - text: Mengautentikasi dengan Azure PowerShell
+            url: authenticate-azureps.md
+          - text: Buat perwakilan layanan
+            url: create-azure-service-principal-azureps.md
+          - text: Memfilter hasil cmdlet
+            url: queries-azureps.md
+          - text: Format output cmdlet
+            url: formatting-output.md
+  - title: Mengelola sumber daya Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Contoh skrip untuk mesin virtual
+            url: /azure/virtual-machines/linux/powershell-samples?toc=/powershell/azure/toc.json
+          - text: Contoh skrip untuk Azure App Service
+            url: /azure/app-service-web/app-service-powershell-samples?toc=/powershell/azure/toc.json
+          - text: Contoh skrip untuk database SQL
+            url: /azure/sql-database/sql-database-powershell-samples?toc=/powershell/azure/toc.json
+      - linkListType: tutorial
+        links:
+          - text: Membuat mesin virtual pada subnet yang sama
+            url: azureps-vm-tutorial.yml
+      - linkListType: learn
+        links:
+          - text: Mengotomatiskan tugas Azure dari PowerShell
+            url: /learn/modules/automate-azure-tasks-with-powershell/
+  - title: Migrate dari AzureRM
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tentang modul 'Az' Azure PowerShell
+            url: new-azureps-module-az.md
+      - linkListType: concept
+        links:
+          - text: Bermigrasi dari AzureRM ke Az
+            url: migrate-from-azurerm-to-az.md
+      - linkListType: reference
+        links:
+          - text: Melanggar perubahan antara AzureRM dan Az
+            url: migrate-az-1.0.0.md
+  - title: Referensi Azure PowerShell
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Referensi Cmdlet
+            url: /powershell/module/?view=azps-6.6.0
+          - text: Catatan rilis
+            url: release-notes-azureps.md
+          - text: Melanggar perubahan di Az 2.0.0
+            url: migrate-az-2.0.0.md
+          - text: Melanggar perubahan di Az 3.0.0
+            url: migrate-az-3.0.0.md
+          - text: Melanggar perubahan di Az 4.1.0
+            url: migrate-az-4.1.0.md
+          - text: Melanggar perubahan di Az 5.0.0
+            url: migrate-az-5.0.0.md
+          - text: Melanggar perubahan di Az 6.0.0
+            url: migrate-az-6.0.0.md
+  - title: Modul Azure PowerShell lainnya
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Azure Active Directory untuk PowerShell
+            url: /powershell/module/azuread/
+          - text: Azure Service Fabric for PowerShell
+            url: /powershell/module/servicefabric/
+          - text: Azure SQL Database Cmdlets
+            url: /powershell/module/az.sql/
