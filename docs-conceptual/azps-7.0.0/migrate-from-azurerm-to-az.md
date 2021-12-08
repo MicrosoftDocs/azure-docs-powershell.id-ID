@@ -4,14 +4,14 @@ description: Pelajari langkah-langkah dan alat untuk melakukan migrasi Azure Pow
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell, contperf-fy21q2
-ms.openlocfilehash: 4cdbc83e71aa140007917d77c3b985db081bedd2
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 851e14b01881c9c908b99625b3789374327d000c
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026021"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110703"
 ---
 # <a name="migrate-azure-powershell-from-azurerm-to-az"></a>Melakukan Azure PowerShell dari AzureRM ke Az
 

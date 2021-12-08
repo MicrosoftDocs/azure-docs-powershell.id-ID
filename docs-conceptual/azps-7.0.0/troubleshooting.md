@@ -3,15 +3,15 @@ title: Memecahkan masalah modul PowerShell Azure Az
 description: Memecahkan masalah modul PowerShell Azure Az.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: d05fa1fa702a8b09fc4139850e37a9654abf3155
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: a20cad0be7566c6cfc62a36eae22ff24dcfb85f7
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133988766"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111007"
 ---
 # <a name="troubleshooting-the-azure-az-powershell-module"></a>Memecahkan masalah modul PowerShell Azure Az
 
@@ -30,6 +30,14 @@ Untuk mengaktifkan pembuatan log debug untuk seluruh sesi PowerShell, Anda menga
 ```azurepowershell-interactive
 $DebugPreference = 'Continue'
 ```
+
+## <a name="permission-issues-with-azad-cmdlets"></a>Masalah izin dengan cmdlet AzAD
+
+[Referensi izin Graph Microsoft Graph](/graph/permissions-reference)
+
+## <a name="microsoft-graph-query-parameters"></a>Parameter kueri Graph Microsoft
+
+Cmdlet AzAd di bawah Az.Resources kini mendukung [parameter kueri](/graph/query-parameters) dan [parameter kueri pencarian](/graph/search-query-parameter). Untuk detail tentang sintaks, lihat link yang sebelumnya direferensikan.
 
 ## <a name="command-found-but-could-not-be-loaded"></a>Perintah ditemukan tetapi tidak dapat dimuat
 

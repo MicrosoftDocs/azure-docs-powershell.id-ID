@@ -4,14 +4,14 @@ description: Pelajari cara membuat dan menggunakan prinsipal layanan dengan Azur
 ms.devlang: powershell
 ms.topic: conceptual
 ms.service: azure-powershell
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 8f2a2f546086f2b475835b46017083271a990c5b
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 59bf42f4036801cac5d46c541c2a529c46e3606b
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026024"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110667"
 ---
 # <a name="create-an-azure-service-principal-with-azure-powershell"></a>Membuat prinsipal layanan Azure dengan Azure PowerShell
 
@@ -23,12 +23,13 @@ Artikel ini memperlihatkan langkah-langkah untuk membuat, mendapatkan informasi 
 
 > [!WARNING]
 > Ketika Anda membuat prinsipal layanan menggunakan [perintah New-AzADServicePrincipal,](/powershell/module/Az.Resources/New-AzADServicePrincipal) output menyertakan kredensial yang harus Anda proteksi. Sebagai alternatif, pertimbangkan [menggunakan identitas terkelola](/azure/active-directory/managed-identities-azure-resources/overview) untuk menghindari perlu menggunakan kredensial.
->
-> Secara default, [New-AzADServicePrincipal](/powershell/module/Az.Resources/New-AzADServicePrincipal) menetapkan peran [Kontributor](/azure/role-based-access-control/built-in-roles#contributor) pada prinsipal layanan pada lingkup langganan. Untuk mengurangi risiko prinsipal layanan yang dibobol, tetapkan peran yang lebih spesifik dan persempit lingkupnya pada grup sumber daya atau sumber daya. Lihat [Langkah-langkah untuk menambahkan penetapan peran](/azure/role-based-access-control/role-assignments-steps) untuk informasi selengkapnya.
 
 ## <a name="create-a-service-principal"></a>Membuat prinsipal layanan
 
 Buat prinsipal layanan dengan cmdlet [New-AzADServicePrincipal.](/powershell/module/Az.Resources/New-AzADServicePrincipal) Saat membuat prinsipal layanan, Anda memilih tipe autentikasi masuk yang digunakannya.
+
+> [!IMPORTANT]
+> Mulai dari Az PowerShell versi 7.x, [New-AzADServicePrincipal](/powershell/module/Az.Resources/New-AzADServicePrincipal) tidak lagi menetapkan peran [Kontributor](/azure/role-based-access-control/built-in-roles#contributor) pada prinsipal layanan secara default. Untuk menetapkan peran tertentu pada prinsipal layanan, lihat [Langkah-langkah untuk menambahkan penugasan peran](/azure/role-based-access-control/role-assignments-steps).
 
 > [!NOTE]
 > Jika akun Anda tidak memiliki izin untuk membuat prinsipal layanan, akan mengembalikan pesan kesalahan yang berisi "Hak istimewa `New-AzADServicePrincipal` yang kurang untuk menyelesaikan operasi".
@@ -192,7 +193,7 @@ Remove-AzAdServicePrincipal -DisplayName ServicePrincipalName
 
 Kesalahan ini juga dapat terjadi ketika Anda sebelumnya telah membuat prinsipal layanan untuk Azure Active Directory ini. Jika Anda menghapus prinsipal layanan, aplikasi masih tersedia. Aplikasi ini mencegah Anda membuat prinsipal layanan lain dengan nama yang sama.
 
-Anda bisa menggunakan contoh berikut untuk memverifikasi bahwa Azure Active Directory aplikasi dengan nama yang sama tidak ada:
+Anda bisa menggunakan contoh berikut untuk memverifikasi Azure Active Directory aplikasi dengan nama yang sama tidak ada:
 
 ```azurepowershell-interactive
 Get-AzADApplication -DisplayName ServicePrincipalName

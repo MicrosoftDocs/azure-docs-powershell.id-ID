@@ -1,17 +1,17 @@
 ---
 title: Panduan migrasi untuk Az 3.0.0
-description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat untuk Azure PowerShell rilis Az versi 3.0.
+description: Panduan migrasi ini berisi daftar perubahan yang telah dibuat untuk Azure PowerShell di rilis Az versi 3.0.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: e149748d12143e40231743305a24cc955034b4dd
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 2a0d8c64b4c3551923c3e359848ca89fa66ba262
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026009"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110559"
 ---
 # <a name="migration-guide-for-az-300"></a>Panduan Migrasi untuk Az 3.0.0
 
@@ -220,7 +220,7 @@ Get-AzHDInsightProperty -Location "East US 2"
 ```
 
 ### `Grant-AzHDInsightRdpServicesAccess`
-Menghapus `Grant-AzHDInsightRdpServicesAccess` `Revoke-AzHDInsightRdpServicesAccess` cmdlet. Hal ini tidak lagi diperlukan karena kluster Windows tipe OS tidak didukung. Silakan buat kluster menggunakan tipe Linux OS sebagai gantinya.
+Menghapus `Grant-AzHDInsightRdpServicesAccess` `Revoke-AzHDInsightRdpServicesAccess` cmdlet. Hal ini tidak perlu lagi dilakukan karena kluster Windows tipe OS tidak didukung. Silakan buat kluster menggunakan tipe Linux OS sebagai gantinya.
 
 ### `Remove-AzHDInsightCluster`
 Tipe output berubah `Remove-AzHDInsightCluster` dari `Microsoft.Azure.Management.HDInsight.Models.ClusterGetResponse` menjadi `bool` .
@@ -366,7 +366,7 @@ Add-AzVmssSecret -VirtualMachineScaleSet $VMSS -SourceVaultId $Vault.ResourceId 
 ## <a name="sql"></a>Sql
 
 ### `Get-AzSqlDatabaseSecureConnectionPolicy`
-Perhatikan bahwa koneksi aman sudah tidak berlaku dan maka perintah dihapus. Gunakan SQL database di portal Azure untuk menampilkan string koneksi
+Perhatikan bahwa koneksi aman sudah tidak berlaku dan maka perintah dihapus. Gunakan SQL database blade di portal Azure untuk menampilkan string koneksi
 
 ### `Get-AzSqlDatabaseIndexRecommendations`
 `Get-AzSqlDatabaseIndexRecommendations` alias dihapus. Gunakan `Get-AzSqlDatabaseIndexRecommendation` sebagai gantinya.

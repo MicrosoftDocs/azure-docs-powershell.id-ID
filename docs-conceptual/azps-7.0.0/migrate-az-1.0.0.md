@@ -3,15 +3,15 @@ title: Semua perubahan dari AzureRM ke Azure PowerShell Az 1.0.0
 description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell rilis Az versi 1.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 658e21f940f71c1aba9bd313062ba1e41435d437
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 762cb0c5a68130bf1ec0b4f20e68e5e0c2d10945
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026079"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110649"
 ---
 # <a name="breaking-changes-for-az-100"></a>Memutus perubahan untuk Az 1.0.0
 

@@ -3,15 +3,15 @@ title: Panduan migrasi untuk Az 6.0.0
 description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell rilis Az versi 6.0.0.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: cc4691094f0889e4a42b8cce7afd345bb100397b
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 8b7d9dbfa2da1f152946680c98678df199115d54
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026000"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110993"
 ---
 # <a name="migration-guide-for-az-600"></a>Panduan Migrasi untuk Az 6.0.0
 

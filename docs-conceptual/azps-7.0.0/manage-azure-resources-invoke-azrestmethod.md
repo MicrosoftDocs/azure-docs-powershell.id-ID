@@ -1,21 +1,21 @@
 ---
 title: Mengelola sumber daya Azure Invoke-AzRestMethod
-description: Cara menggunakan cmdlet Azure PowerShell mengelola sumber daya dengan cmdlet Invoke-AzRestMethod cmdlet.
+description: Cara menggunakan Azure PowerShell mengelola sumber daya dengan cmdlet Invoke-AzRestMethod cmdlet.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 4ba6940e0fc5ac49b3f11860cd1ba24adb6995f2
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 6c6bb50cbf6ec012c4e9c845ffa93707d6147f7f
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133988778"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110577"
 ---
 # <a name="manage-azure-resources-with-invoke-azrestmethod"></a>Mengelola sumber daya Azure Invoke-AzRestMethod
 
-[Invoke-AzConfigMethod](/powershell/module/az.accounts/invoke-azrestmethod) adalah cmdlet Azure PowerShell cmdlet yang diperkenalkan di Az PowerShell versi modul 4.4.0. Ini memungkinkan Anda untuk membuat permintaan HTTP kustom ke titik akhir Manajemen Sumber Daya Azure (ARM) menggunakan konteks Az.
+[Invoke-AzConfigMethod](/powershell/module/az.accounts/invoke-azrestmethod) adalah cmdlet Azure PowerShell cmdlet yang diperkenalkan di Az PowerShell versi 4.4.0. Ini memungkinkan Anda untuk membuat permintaan HTTP kustom ke titik akhir Manajemen Sumber Daya Azure (ARM) menggunakan konteks Az.
 
 Cmdlet ini berguna saat Anda ingin mengelola layanan Azure untuk fitur yang belum tersedia dalam modul Az PowerShell.
 

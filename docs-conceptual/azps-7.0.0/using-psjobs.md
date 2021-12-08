@@ -3,21 +3,21 @@ title: Menjalankan Azure PowerShell cmdlet dalam Pekerjaan PowerShell
 description: Pelajari cara menjalankan cmdlet Azure PowerShell tugas paralel atau sebagai latar belakang, menggunakan -AsJob dan Start-Job.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 840b29fe9b1a66c7cce71a8eed0289e961905d24
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 276aaaf76949fe9ed50de7dab25a7358b0f1182a
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026036"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111495"
 ---
 # <a name="run-azure-powershell-cmdlets-in-powershell-jobs"></a>Menjalankan Azure PowerShell cmdlet dalam Pekerjaan PowerShell
 
 Azure PowerShell bergantung pada sambungan ke awan Azure dan menunggu respons, jadi sebagian besar cmdlet ini memblokir sesi PowerShell Anda hingga mereka mendapatkan respons dari awan. PowerShell Jobs memungkinkan Anda menjalankan cmdlet di latar belakang atau melakukan beberapa tugas di Azure sekaligus, dari dalam satu sesi PowerShell.
 
-Artikel ini adalah gambaran umum singkat tentang cara menjalankan cmdlet Azure PowerShell cmdlet sebagai PowerShell Jobs dan memeriksa penyelesaian. Menjalankan perintah Azure PowerShell memerlukan penggunaan Azure PowerShell konteks, yang dibahas secara detail dalam konteks Azure dan [kredensial masuk.](context-persistence.md) Untuk mempelajari selengkapnya tentang Pekerjaan PowerShell, lihat [Tentang Pekerjaan PowerShell](/powershell/module/microsoft.powershell.core/about/about_jobs).
+Artikel ini adalah gambaran umum singkat tentang cara menjalankan cmdlet Azure PowerShell cmdlet sebagai Pekerjaan PowerShell dan memeriksa penyelesaian. Menjalankan perintah Azure PowerShell memerlukan penggunaan Azure PowerShell konteks, yang dibahas secara detail dalam konteks Azure dan [kredensial masuk.](context-persistence.md) Untuk mempelajari selengkapnya tentang Pekerjaan PowerShell, lihat [Tentang Pekerjaan PowerShell](/powershell/module/microsoft.powershell.core/about/about_jobs).
 
 ## <a name="azure-contexts-with-powershell-jobs"></a>Konteks Azure dengan pekerjaan PowerShell
 
@@ -31,7 +31,7 @@ PowerShell Jobs dijalankan sebagai proses terpisah tanpa sesi PowerShell yang di
   $job = Start-Job { param($vmadmin) New-AzVM -Name MyVm -Credential $vmadmin } -ArgumentList $creds
   ```
 
-* Gunakan `-AzContext` parameter dengan cmdlet Azure PowerShell cmdlet untuk menyediakan objek konteks Azure:
+* Gunakan `-AzContext` parameter dengan cmdlet Azure PowerShell apa pun untuk menyediakan objek konteks Azure:
 
   ```azurepowershell-interactive
   $context = Get-AzContext -Name 'mycontext' # Get an Azure context object

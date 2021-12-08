@@ -3,15 +3,15 @@ title: Mulai menggunakan Azure PowerShell
 description: Mulai menggunakan Azure PowerShell
 ms.devlang: powershell
 ms.topic: get-started-article
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 1ea06c563566b449af626fe16fb27295031da679
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 6cc7e92cdc8956605eb2368c78090dd52ef5eed2
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026060"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111423"
 ---
 # <a name="get-started-with-azure-powershell"></a>Mulai menggunakan Azure PowerShell
 
@@ -51,7 +51,7 @@ Setelah masuk, gunakan cmdlet Azure PowerShell cmdlet untuk mengakses dan mengel
 
 Azure PowerShell cmdlet mengikuti konvensi penamaan standar untuk PowerShell, `Verb-Noun` . Kata kerja menjelaskan tindakan (contohnya antara lain , , , ) dan kata benda yang menguraikan tipe sumber daya `New` `Get` `Set` `Remove` (contohnya antara `AzVM` lain , , , `AzKeyVaultCertificate` `AzFirewall` `AzVirtualNetworkGateway` ). Kata benda Azure PowerShell selalu diawali dengan prefiks `Az` . Untuk daftar lengkap kata kerja standar, lihat [Kata kerja yang disetujui untuk Perintah PowerShell](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands).
 
-Mengetahui kata benda, kata kerja, dan Azure PowerShell modul yang tersedia akan membantu Anda menemukan perintah dengan cmdlet [Get-Command.](/powershell/module/microsoft.powershell.core/get-command) Misalnya, untuk menemukan semua perintah vm terkait yang menggunakan kata `Get` kerja:
+Mengetahui kata benda, kata kerja, dan Azure PowerShell modul yang tersedia akan membantu Anda menemukan perintah menggunakan cmdlet [Get-Command.](/powershell/module/microsoft.powershell.core/get-command) Misalnya, untuk menemukan semua perintah vm terkait yang menggunakan kata `Get` kerja:
 
 ```powershell-interactive
 Get-Command -Verb Get -Noun AzVM* -Module Az.Compute

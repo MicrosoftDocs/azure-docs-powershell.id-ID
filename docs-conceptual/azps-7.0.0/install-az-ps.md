@@ -3,15 +3,15 @@ title: Menginstal modul PowerShell Azure Az
 description: Cara menginstal PowerShell Azure Az dengan PowerShellGet
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: b73a51b3fec11484b1083558284cb78dde633039
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: ff5f92bedddc6871119df2109a573e54eb40603b
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133988783"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110739"
 ---
 # <a name="install-the-azure-az-powershell-module"></a>Menginstal modul PowerShell Azure Az
 
@@ -37,7 +37,7 @@ $PSVersionTable.PSVersion
 ```
 
 Kebijakan eksekusi skrip PowerShell harus diatur ke bertanda tangan jarak jauh atau yang kurang terbatas.
-`Get-ExecutionPolicy -List` dapat digunakan untuk menentukan kebijakan eksekusi saat ini. Untuk informasi selengkapnya, lihat [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+`Get-ExecutionPolicy -List` dapat digunakan untuk menentukan kebijakan eksekusi saat ini. Untuk informasi selengkapnya, [lihat about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

@@ -3,25 +3,25 @@ title: Menggunakan Azure PowerShell di Docker
 description: Cara menggunakan Azure PowerShell yang telah diinstal sebelumnya dalam gambar Docker.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: ef5f9c2007f6475b4c53a6e3c8510e6222102a6f
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: edc58030335dd22388e3028c0f378dcd4037867a
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026012"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111387"
 ---
 # <a name="using-azure-powershell-in-docker"></a>Menggunakan Azure PowerShell di Docker
 
-Kami menerbitkan gambar Docker dengan Azure PowerShell yang telah diinstal sebelumnya. Artikel ini memperlihatkan kepada Anda cara mulai menggunakan Azure PowerShell dalam wadah Docker.
+Kami menerbitkan gambar Docker dengan Azure PowerShell yang telah diinstal sebelumnya. Artikel ini memperlihatkan pada Anda cara mulai menggunakan Azure PowerShell dalam wadah Docker.
 
 ## <a name="finding-available-images"></a>Menemukan gambar yang tersedia
 
 Gambar yang dirilis memerlukan Docker 17.05 atau yang lebih baru. Diharapkan pula bahwa Anda bisa menjalankan Docker tanpa atau `sudo` hak administratif lokal. Ikuti instruksi resmi Docker [untuk menginstal][install] dengan `docker` benar.
 
-Gambar wadah terbaru berisi versi terbaru PowerShell dan modul Azure PowerShell terbaru yang didukung dengan modul Az.
+Gambar wadah terbaru berisi versi terbaru PowerShell dan modul Azure PowerShell terbaru didukung dengan modul Az.
 
 Untuk setiap rilis baru modul Az, kami akan merilis gambar untuk sistem operasi berikut ini:
 
@@ -47,7 +47,7 @@ Langkah-langkah berikut ini memperlihatkan perintah Docker yang diperlukan untuk
    docker run -it mcr.microsoft.com/azure-powershell pwsh
    ```
 
-Untuk Windows docker baru, Anda harus mengaktifkan berbagi file Docker agar drive lokal Windows dapat dibagikan dengan wadah Linux. Untuk informasi selengkapnya, [lihat Mulai menggunakan Docker untuk Windows][file-sharing].
+Untuk Windows docker baru, Anda harus mengaktifkan berbagi file Docker untuk mengizinkan drive lokal Windows dibagikan dengan wadah Linux. Untuk informasi selengkapnya, [lihat Mulai menggunakan Docker untuk Windows][file-sharing].
 
 ### <a name="run-the-azure-powershell-container-interactively-using-host-authentication"></a>Jalankan wadah azure-powershell secara interaktif menggunakan autentikasi host
 
@@ -69,7 +69,7 @@ docker rmi mcr.microsoft.com/azure-powershell
 
 ## <a name="next-steps"></a>Langkah berikutnya
 
-Untuk mempelajari selengkapnya tentang modul Azure PowerShell dan fiturnya, lihat [Mulai dengan Azure PowerShell](get-started-azureps.md).
+Untuk mempelajari selengkapnya tentang modul Azure PowerShell fiturnya, lihat [Mulai dengan Azure PowerShell](get-started-azureps.md).
 
 <!-- link references -->
 [install]: https://docs.docker.com/engine/installation/

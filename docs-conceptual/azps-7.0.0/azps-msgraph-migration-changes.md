@@ -1,24 +1,24 @@
 ---
-title: Perubahan migrasi di Azure AD Graph Microsoft di Azure PowerShell
+title: Perubahan migrasi Azure AD Graph Microsoft di Azure PowerShell
 description: Panduan migrasi ini berisi daftar perubahan Azure PowerShell azure AD ke Microsoft Graph di Az.Resources 5.1.0.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 0fce0289a68fc254ff9d4a06b4897bedb1ea2c54
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 50012a9deda148d8245f89abdba670bc9487ab4d
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026083"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111333"
 ---
-# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi di Azure AD Graph Microsoft di Azure PowerShell
+# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi Azure AD Graph Microsoft di Azure PowerShell
 
 Modul `Az.Resources` PowerShell versi 5.1.0 dari Azure PowerShell memperkenalkan perubahan pada cmdlet yang terkait dengan identitas. Cmdlet yang mengandalkan Azure AD Graph akan beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang lancar ketika pengumuman pensiun [Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
 Untuk informasi selengkapnya, lihat [Migrasi Azure AD ke Microsoft Graph untuk alat baris perintah Azure.](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666)
 
-Contoh berikut ini menginstal versi pratinjau terbaru modul `Az.Resources` Azure PowerShell terbaru.
+Contoh berikut menginstal versi pratinjau terbaru modul `Az.Resources` Azure PowerShell terbaru.
 
 ```azurepowershell
 Install-Module -Name Az.Resources -Repository PSGallery -Scope CurrentUser -AllowPrerelease

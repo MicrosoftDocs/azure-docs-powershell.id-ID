@@ -3,15 +3,15 @@ title: Panduan migrasi untuk Az 4.1.0
 description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell az versi 4.1.0.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 0b81875974deaf96c07e343b7c2ec0f1cdfdd11a
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 7577a5372943e16723f6d28ff1bd2e83e89eb531
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026076"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111459"
 ---
 # <a name="migration-guide-for-az-410"></a>Panduan Migrasi untuk Az 4.1.0
 

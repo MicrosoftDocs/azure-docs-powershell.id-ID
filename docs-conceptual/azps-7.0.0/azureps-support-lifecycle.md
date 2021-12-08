@@ -3,15 +3,15 @@ title: Azure PowerShell hidup dukungan
 description: Detail tentang siklus hidup dukungan modul Azure PowerShell baru
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 6131322140a686b26bf8780dc5835145cf58939d
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 09ec096b8c110749c4b90a3510dd76d793ac2833
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026063"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134110684"
 ---
 # <a name="azure-powershell-support-lifecycle"></a>Siklus Azure PowerShell Dukungan
 
@@ -33,8 +33,8 @@ Tabel berikut ini mengidentifikasi platform yang didukung untuk Az, AzureRM, Azu
 
 |        Az        | PowerShell <br/> 7.1.3 | PowerShell <br/> >= 7,0,6 | PowerShell <br/> <= 7,0,5 | Windows PowerShell <br/> 5.1 |
 | :--------------: | :--------------------: | :-----------------------: | :-----------------------: | :--------------------------: |
+|      Az 7.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
 |      Az 6.x      |       Didukung        |         Didukung         |       Tidak didukung       |          Didukung           |
-|      Az 5.9      |       Didukung        |         Didukung         |         Didukung         |          Didukung           |
 | AzureRM (6.13.2) |     Tidak Didukung      |       Tidak Didukung       |       Tidak Didukung       |          Didukung           |
 |  Azure (5.3.1)   |     Tidak Didukung      |       Tidak Didukung       |       Tidak Didukung       |          Didukung           |
 

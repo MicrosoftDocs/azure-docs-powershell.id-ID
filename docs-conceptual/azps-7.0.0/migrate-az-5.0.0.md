@@ -3,15 +3,15 @@ title: Panduan migrasi untuk Az 5.0.0
 description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell az versi 5.0.0.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 220871cd4537838cd84eeec966ea9fbf3dbdb6dc
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 8e733f414f0cf9b0cfcd0119078769b7cd355023
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134025973"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111297"
 ---
 # <a name="migration-guide-for-az-500"></a>Panduan Migrasi untuk Az 5.0.0
 
@@ -145,7 +145,7 @@ Fungsionalitas ini rusak dalam versi cmdlet sebelumnya. Namun, masalah ini telah
 
 - Diperbaiki `-DisableApplicationInsights` agar tidak ada proyek wawasan aplikasi yang dibuat saat opsi ini `New-AzFunctionApp` ditentukan.
 - Menghapus dukungan untuk membuat aplikasi fungsi PowerShell 6.2 karena PowerShell 6.2 adalah EOL. Panduan terbaru bagi pelanggan adalah membuat aplikasi fungsi PowerShell 7.0 sebagai gantinya.
-- Mengubah versi runtime default dalam Fungsi versi 3 di Windows untuk aplikasi fungsi PowerShell dari 6.2 menjadi 7.0 saat `RuntimeVersion` parameter tidak ditentukan.
+- Mengubah versi runtime default dalam Functions versi 3 di Windows untuk aplikasi fungsi PowerShell dari 6.2 menjadi 7.0 saat `RuntimeVersion` parameter tidak ditentukan.
 - Mengubah versi runtime default dalam Functions versi 3 di Windows dan Linux untuk aplikasi fungsi Node dari 10 sampai 12 ketika `RuntimeVersion` parameter tidak ditentukan. Namun, pengguna masih dapat membuat aplikasi fungsi Node 10 dengan `-Runtime Node` menentukan dan `-RuntimeVersion 10` . Mengubah versi runtime default dalam Fungsi versi 3 di aplikasi fungsi Python dari 3.7 ke 3.8 ketika `RuntimeVersion` parameter tidak ditentukan. Namun, pengguna masih dapat membuat aplikasi fungsi Python 3.7 dengan `-Runtime Python` menentukan dan `-RuntimeVersion 3.7` .
 
 #### <a name="before"></a>Sebelum

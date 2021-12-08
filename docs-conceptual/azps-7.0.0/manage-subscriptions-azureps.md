@@ -3,15 +3,15 @@ title: Kelola langganan Azure dengan Azure PowerShell
 description: Kelola langganan Azure dengan Azure PowerShell
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 54d42785bcedd1a29453996b5ec042a93ceb1263
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: c73afafe931535fa08dc3c34ef56dbebd4bba9e1
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "134026042"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111315"
 ---
 # <a name="use-multiple-azure-subscriptions"></a>Menggunakan beberapa langganan Azure
 

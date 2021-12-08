@@ -7,7 +7,7 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: azurepowershell
-  ms.date: 11/02/2021
+  ms.date: 12/07/2021
   ms.author: mirobb
   author: mikefrobbins
   manager: barbkess
@@ -16,12 +16,12 @@ metadata:
   ms.technology: azure-powershell
   ms.topic: tutorial
   clicktale: true
-  ms.openlocfilehash: 163a7fd144fd73d1fdb5b1cb4c7cc95fae9dad2b
-  ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+  ms.openlocfilehash: b7a3f0371be0cb6ec44429d67c6e8cc3f25aefdd
+  ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
   ms.translationtype: MT
   ms.contentlocale: id-ID
-  ms.lasthandoff: 12/07/2021
-  ms.locfileid: "134025982"
+  ms.lasthandoff: 12/08/2021
+  ms.locfileid: "134111044"
 items:
 - durationInMinutes: 1
   content: >-
@@ -107,7 +107,7 @@ items:
     Mesin virtual di Azure memiliki dependensi dalam jumlah besar. Sumber Azure PowerShell sumber daya ini untuk Anda berdasarkan argumen baris perintah yang ditentukan. Untuk keterbacaan, [kami menggunakanplatting PowerShell](/powershell/module/microsoft.powershell.core/about/about_splatting) untuk memasukkan parameter ke cmdlet Azure PowerShell cmdlet.
 
 
-    Membuat mesin virtual baru yang menjalankan Windows.
+    Buat mesin virtual baru yang menjalankan Windows.
 
 
     ```powershell-interactive
@@ -204,7 +204,7 @@ items:
     ```
 
 
-    Kita bisa menggunakan perintah Azure PowerShell lain untuk mendapatkan informasi tertentu tentang konfigurasi jaringan.
+    Kami bisa menggunakan perintah Azure PowerShell lain untuk mendapatkan informasi tertentu tentang konfigurasi jaringan.
 
 
     ```powershell-interactive

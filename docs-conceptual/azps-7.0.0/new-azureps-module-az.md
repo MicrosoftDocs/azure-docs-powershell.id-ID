@@ -1,17 +1,17 @@
 ---
 title: Memperkenalkan modul PowerShell Azure Az
 description: Memperkenalkan modul Az PowerShell, disarankan untuk berinteraksi dengan Azure, dan pengganti modul PowerShell AzureRM.
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.devlang: powershell
 ms.topic: conceptual
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: d9a9f9031ce7b49729a2b464ffb45bbe37d29676
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 390c1e0de51373438a39f88d0cdae98750099067
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133988771"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111279"
 ---
 # <a name="introducing-the-azure-az-powershell-module"></a>Memperkenalkan modul PowerShell Azure Az
 
@@ -77,7 +77,7 @@ Jika skrip Anda masih didasarkan pada modul AzureRM, kami memiliki beberapa sumb
 
 ## <a name="supportability"></a>Dukungan
 
-Az adalah modul PowerShell terbaru untuk Azure. Masalah atau permintaan fitur dapat masuk secara langsung [ke GitHub penyimpanan](https://github.com/Azure/azure-powershell), atau melalui dukungan Microsoft jika Anda memiliki kontrak dukungan. Permintaan fitur akan diterapkan dalam versi terbaru Az. Masalah kritis akan diterapkan pada dua versi terakhir Az.
+Az adalah modul PowerShell terbaru untuk Azure. Masalah atau permintaan fitur dapat masuk secara langsung [ke GitHub penyimpanan,](https://github.com/Azure/azure-powershell)atau melalui dukungan Microsoft jika Anda memiliki kontrak dukungan. Permintaan fitur akan diterapkan dalam versi terbaru Az. Masalah kritis akan diterapkan pada dua versi terakhir Az.
 
 Karena modul PowerShell Az kini memiliki semua kapabilitas modul PowerShell AzureRM dan lainnya, kami akan menghentikan modul PowerShell AzureRM pada 29 Februari 2024.
 
@@ -85,7 +85,7 @@ Untuk menghindari gangguan [layanan,](https://aka.ms/azpsmigrate) perbarui skrip
 
 ## <a name="data-collection"></a>Pengumpulan data
 
-Azure PowerShell mengumpulkan data telemetri secara default. Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan untuk mengidentifikasi masalah-masalah umum dan untuk meningkatkan Azure PowerShell.
+Azure PowerShell mengumpulkan data telemetri secara default. Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan untuk mengidentifikasi masalah umum dan untuk meningkatkan pengalaman Azure PowerShell.
 Microsoft Azure PowerShell tidak mengumpulkan data pribadi atau pribadi apa pun. Misalnya, data penggunaan membantu mengidentifikasi masalah seperti cmdlet dengan keberhasilan rendah dan membantu memprioritaskan pekerjaan kami.
 
 Meskipun kami menghargai wawasan yang menyediakan data ini, kami juga memahami bahwa tidak semua orang ingin mengirim data penggunaan. Anda dapat menonaktifkan pengumpulan data dengan [`Disable-AzDataCollection`](/powershell/module/az.accounts/disable-azdatacollection) cmdlet. Anda juga dapat membaca pernyataan [privasi kami](https://privacy.microsoft.com/privacystatement) untuk mempelajari selengkapnya.

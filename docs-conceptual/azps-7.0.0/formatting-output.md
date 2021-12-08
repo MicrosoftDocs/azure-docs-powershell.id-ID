@@ -3,15 +3,15 @@ title: Output cmdlet format Azure PowerShell
 description: Cara memformat output cmdlet untuk Azure PowerShell.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: d502cae0043d2ef729f61871643bf3005bfb3d31
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: f8ca57ae8075b499462ec3bb2936c18a1cd7b3ba
+ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "133988755"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "134111369"
 ---
 # <a name="format-azure-powershell-cmdlet-output"></a>Output cmdlet format Azure PowerShell
 
@@ -232,7 +232,7 @@ class PSVirtualMachineList
 
 ## <a name="conversion-to-other-data-formats"></a>Konversi ke format data lainnya
 
-Keluarga `ConvertTo-*` cmdlet memungkinkan untuk mengonversi hasil cmdlets Azure PowerShell format yang dapat dibaca mesin. Untuk mendapatkan hanya beberapa properti dari Azure PowerShell pencarian, pipe ke `Select-Object` cmdlet sebelum melakukan konversi. Contoh berikut menunjukkan jenis output berbeda yang dihasilkan setiap konversi.
+Keluarga `ConvertTo-*` cmdlet memungkinkan untuk mengonversi hasil cmdlets Azure PowerShell format yang dapat dibaca mesin. Untuk mendapatkan hanya beberapa properti dari Azure PowerShell pencarian, pipet `Select-Object` ke cmdlet sebelum melakukan konversi. Contoh berikut menunjukkan jenis output berbeda yang dihasilkan setiap konversi.
 
 ### <a name="conversion-to-csv"></a>Konversi ke CSV
 

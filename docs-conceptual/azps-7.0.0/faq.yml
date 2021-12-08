@@ -4,15 +4,15 @@ metadata:
   description: Tanya Jawab Umum tentang Azure PowerShell.
   ms.devlang: powershell
   ms.topic: conceptual
-  ms.date: 11/02/2021
+  ms.date: 12/07/2021
   ms.custom: devx-track-azurepowershell
   ms.service: azure-powershell
-  ms.openlocfilehash: 2cc185d5255bcdabcdbc81f63bf9217eabbbdd61
-  ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+  ms.openlocfilehash: da4f356ddec1cef3e09453dd61f1eab8d7e99438
+  ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
   ms.translationtype: MT
   ms.contentlocale: id-ID
-  ms.lasthandoff: 12/07/2021
-  ms.locfileid: "134025979"
+  ms.lasthandoff: 12/08/2021
+  ms.locfileid: "134111513"
 title: Tanya jawab umum tentang Azure PowerShell
 summary: ''
 sections:
