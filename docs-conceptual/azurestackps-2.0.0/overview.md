@@ -1,19 +1,19 @@
 ---
-title: Gambaran umum PowerShell Admin Azure Stack Hub | Microsoft Docs
+title: Gambaran umum Tentang PowerShell Admin Hub Tumpukan Azure | Microsoft Docs
 description: Gambaran umum PowerShell Admin Azure Stack Hub dengan instruksi untuk penginstalan dan konfigurasi.
-author: sijuman
-ms.author: sijuman
-manager: knithinc
+author: mattbriggs
+ms.author: mabrigg
+manager: femila
 ms.devlang: powershell
 ms.topic: conceptual
-ms.manager: knithinc
-ms.date: 04/16/2020
-ms.openlocfilehash: 166c5339c95507b8a9ef1a32d46f589b8d792794
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.manager: femila
+ms.date: 09/23/2021
+ms.openlocfilehash: 255037976441d3cbcbbf70076a6ebb6ce5d23a90
+ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427983"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "134505058"
 ---
 # <a name="azure-stack-hub-module-200"></a>Azure Stack Hub Module 2.0.0
 
@@ -45,4 +45,4 @@ Install-Module -Name AzureStack -RequiredVersion 2.0.0-preview -AllowPrerelease
 
 * Didukung dengan pembaruan 2002.  
 
-  Azure Stack Hub 2.0.0 adalah perubahan yang sedang dilakukan. Modul ini menggunakan modul Az, bukan modul AzureRM. Anda bisa menemukan panduan migrasi dan daftar perubahan yang putus dalam Melakukan migrasi dari [AzureRM ke Azure PowerShell Az di Azure Stack Hub](/azure-stack/operator/azure-stack-powershell-install).
+  Azure Stack Hub 2.0.0 adalah perubahan yang sedang dilakukan. Modul ini menggunakan modul Az, bukan modul AzureRM. Anda dapat menemukan panduan migrasi dan daftar perubahan yang putus dalam Melakukan migrasi dari [AzureRM ke Azure PowerShell Az di Azure Stack Hub.](/azure-stack/operator/azure-stack-powershell-install)

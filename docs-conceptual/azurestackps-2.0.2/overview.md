@@ -1,19 +1,19 @@
 ---
-title: Gambaran umum PowerShell Admin Tumpukan Azure | Microsoft Docs
+title: Gambaran umum Admin Tumpukan Azure PowerShell 2.0.2 | Microsoft Docs
 description: Gambaran umum PowerShell Admin Azure Stack Hub dengan instruksi untuk penginstalan dan konfigurasi.
-author: sijuman
-ms.author: sijuman
-manager: knithinc
+author: mattbriggs
+ms.author: mabrigg
+manager: femila
 ms.devlang: powershell
 ms.topic: conceptual
-ms.manager: knithinc
-ms.date: 08/06/2020
-ms.openlocfilehash: ec4591e4f44fa56b7482d2dec3f525cb02dbd94b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.manager: femila
+ms.date: 09/23/2021
+ms.openlocfilehash: c8e2f8d8cf7e17edeeb13c01c48a2d5eab8c0421
+ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423159"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "134505238"
 ---
 # <a name="azure-stack-hub-module-202"></a>Azure Stack Hub Module 2.0.2
 

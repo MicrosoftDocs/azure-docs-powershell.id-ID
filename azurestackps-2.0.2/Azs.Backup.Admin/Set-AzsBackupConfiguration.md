@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Backup.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.backup.admin/set-azsbackupconfiguration
 schema: 2.0.0
-ms.openlocfilehash: d2710b6781cf5d6e09a3e9fc83f20194e881ee63d8aad49c177395ce8e1c3381
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9bc0add8cbd5433fcebdfc7a7f7bee94e97e6b5b
+ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416760"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "134505302"
 ---
 # Set-AzsBackupConfiguration
 
@@ -61,7 +61,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -Backup
@@ -78,7 +77,6 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-
 ```
 
 ### -BackupFrequencyInHours
@@ -94,7 +92,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -BackupRetentionPeriodInDays
@@ -110,7 +107,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -DefaultProfile
@@ -126,7 +122,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -EncryptionCertPath
@@ -142,7 +137,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -IsBackupSchedulerEnabled
@@ -158,7 +152,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -Lokasi
@@ -174,7 +167,6 @@ Position: Named
 Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -NoWait
@@ -190,7 +182,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -Password
@@ -206,7 +197,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -Path
@@ -222,7 +212,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -ResourceGroupName
@@ -238,11 +227,10 @@ Position: Named
 Default value: "system.$((Get-AzLocation)[0].Location)"
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -255,7 +243,6 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -Tag
@@ -271,7 +258,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -UserName
@@ -287,7 +273,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -Konfirmasi
@@ -303,7 +288,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### -WhatIf
@@ -320,11 +304,10 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -334,18 +317,21 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackupLocation
 
-
-
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+ALIAS
 
-PENCADANGAN <IBackupLocation> : Informasi tentang lokasi pencadangan.
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+PENCADANGAN \<IBackupLocation> : Informasi tentang lokasi pencadangan.
   - `[Location <String>]`: Lokasi sumber daya.
   - `[Tag <IResourceTags>]`: Daftar pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[BackupFrequencyInHours <Int32?>]`: Interval, dalam jam, untuk frekuensi yang digunakan penjadwal untuk cadangan.
-  - `[BackupRetentionPeriodInDays <Int32?>]`: Periode penyimpanan, dalam beberapa hari, untuk mundur di lokasi penyimpanan.
+  - `[BackupRetentionPeriodInDays <Int32?>]`: Periode penyimpanan, dalam beberapa hari, untuk cadangan di lokasi penyimpanan.
   - `[EncryptionCertBase64 <String>]`: Data mentah base64 untuk sertifikat enkripsi cadangan.
   - `[IsBackupSchedulerEnabled <Boolean?>]`: True jika penjadwal cadangan diaktifkan.
   - `[Password <String>]`: Kata sandi untuk mengakses lokasi.
