@@ -1,17 +1,17 @@
 ---
 title: Panduan migrasi untuk Az 7.0.0
-description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat untuk Azure PowerShell rilis Az versi 7.0.0.
+description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell rilis Az versi 7.0.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 12/07/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 1903974ae678bc5e05609ce993a441ab0908087c
-ms.sourcegitcommit: 2a404a7aac28f6568e0e17912814e4403ea5d0d9
+ms.openlocfilehash: 777791c6854e9320ef4b748a5ae187bab7d5ff77
+ms.sourcegitcommit: 167a959fbb45f819467b7d71a62b20ccb10f39c0
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "134156790"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "134683757"
 ---
 # <a name="migration-guide-for-az-700"></a>Panduan Migrasi untuk Az 7.0.0
 
@@ -414,7 +414,7 @@ Get-AzRecoveryServicesBackupJob -BackupManagementType MAB -VaultId $vault.ID
 ## <a name="azresources"></a>Az.Resources
 
 ### `AzAD cmdlets`
-Silakan lihat (placeholder) untuk panduan migrasi cmdlet Active Directory.
+Silakan lihat [panduan migrasi](/powershell/azure/azps-msgraph-migration-changes) cmdlet Active Directory.
 
 ### `PolicyAssignment cmdlets`
 Tipe 'Identitas' properti dari tipe 'Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment' telah berubah dari 'System.Management.Automation.PSObject' menjadi 'Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyIdentity'.
