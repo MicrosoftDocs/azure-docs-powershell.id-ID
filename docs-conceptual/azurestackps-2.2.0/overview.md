@@ -1,5 +1,5 @@
 ---
-title: Gambaran Umum Admin Azure Stack Hub PowerShell 2.2.0 | Microsoft Docs
+title: Gambaran umum Admin Hub Tumpukan Azure PowerShell 2.2.0 | Microsoft Docs
 description: Gambaran umum PowerShell Admin Azure Stack Hub dengan instruksi untuk penginstalan dan konfigurasi.
 author: mattbriggs
 ms.author: mabrigg
@@ -8,12 +8,12 @@ ms.devlang: powershell
 ms.topic: conceptual
 ms.manager: femila
 ms.date: 12/7/2021
-ms.openlocfilehash: e1cae96f1bd801d0654f7d009990cfc20411734f
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.openlocfilehash: 7822673db0b2a009006a784d79e683ccef144f0e
+ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "134505401"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "135955069"
 ---
 # <a name="azure-stack-hub-module-220"></a>Azure Stack Hub Module 2.2.0
 
@@ -25,7 +25,7 @@ Catatan: Untuk versi Lama Azure Stack, centang Instal [Powershell Tumpukan Azure
 
 ## <a name="install"></a>Instal
 
-Jalankan cmdlet berikut dari permintaan sesi PowerShell yang ditingkatkan:
+Untuk instruksi penginstalan mendetail, lihat [Menginstal Powershell Azure Stack](/azure/azure-stack/azure-stack-powershell-install#install-azure-stack-powershell) Menjalankan cmdlet berikut dari permintaan sesi PowerShell yang ditingkatkan:
 
 ```powershell  
 # Remove previous versions of AzureStack and AzureRM modules
@@ -55,5 +55,4 @@ Install-Module -Name AzureStack -RequiredVersion 2.2.0 -AllowPrerelease
 ## <a name="release-notes"></a>Catatan Rilis
 
 * Didukung dengan pembaruan 2108.  
-
-  Azure Stack Hub 2.2.0 adalah perubahan yang sedang dilakukan. Modul ini menggunakan modul Az, bukan modul AzureRM. Anda dapat menemukan panduan migrasi dan daftar perubahan yang putus dalam Melakukan migrasi dari [AzureRM ke Azure PowerShell Az di Azure Stack Hub.](/azure-stack/operator/azure-stack-powershell-install)
+* Rilis 2.2.0 ini memperbarui kapabilitas dalam modul Azs.Compute.Admin. Hal ini juga menambahkan modul baru untuk bekerja dengan Azure Container Registry di Azure Stack Hub: Azs.ContainerRegistry.Admin dan Azs.ContainerService.Admin. Modul Admin sekarang memiliki dependensi pada modul Az.Resources versi 0.12.0. Untuk detail tentang perubahan dalam pembaruan ini, lihat log perubahan [modul](https://github.com/Azure/azurestack-powershell/blob/release-2108/src/changelog.md) AzureStack

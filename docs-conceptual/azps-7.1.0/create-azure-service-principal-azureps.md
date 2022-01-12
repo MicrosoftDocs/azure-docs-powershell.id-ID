@@ -11,7 +11,7 @@ ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "135955219"
+ms.locfileid: "135958517"
 ---
 # <a name="create-an-azure-service-principal-with-azure-powershell"></a>Membuat prinsipal layanan Azure dengan Azure PowerShell
 
@@ -136,7 +136,7 @@ $credentials = Get-Credential
 Connect-AzAccount -ServicePrincipal -Credential $credentials -Tenant <tenant ID>
 ```
 
-Autentikasi berbasis sertifikat mengharuskan Azure PowerShell mengambil informasi dari penyimpanan sertifikat lokal berdasarkan pada cetakan sertifikat.
+Autentikasi berbasis sertifikat mengharuskan Azure PowerShell mengambil informasi dari penyimpanan sertifikat lokal berdasarkan pada thumbprint sertifikat.
 
 ```azurepowershell-interactive
 Connect-AzAccount -ServicePrincipal -Tenant <TenantId> -CertificateThumbprint <Thumbprint> -ApplicationId <ApplicationId>

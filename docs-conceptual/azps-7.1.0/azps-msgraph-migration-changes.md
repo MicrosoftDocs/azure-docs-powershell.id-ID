@@ -1,6 +1,6 @@
 ---
-title: Perubahan migrasi di Azure AD Graph Microsoft di Azure PowerShell
-description: Panduan migrasi ini berisi daftar Azure PowerShell baru untuk Azure AD ke Microsoft Graph di Az.Resources 5.1.0.
+title: Perubahan migrasi Azure AD ke Microsoft Graph di Azure PowerShell
+description: Panduan migrasi ini berisi daftar perubahan Azure PowerShell Azure AD ke Microsoft Graph di Az.Resources 5.1.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 01/06/2022
@@ -11,9 +11,9 @@ ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "135955105"
+ms.locfileid: "135958390"
 ---
-# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi di Azure AD Graph Microsoft di Azure PowerShell
+# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi Azure AD ke Microsoft Graph di Azure PowerShell
 
 Modul `Az.Resources` PowerShell versi 5.1.0 dari Azure PowerShell memperkenalkan perubahan pada cmdlet yang terkait dengan identitas. Cmdlet yang mengandalkan Azure AD Graph akan beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang lancar ketika pengumuman pensiun [Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
 Untuk informasi selengkapnya, lihat [Azure AD ke Microsoft Graph migrasi untuk alat baris perintah Azure.](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666)

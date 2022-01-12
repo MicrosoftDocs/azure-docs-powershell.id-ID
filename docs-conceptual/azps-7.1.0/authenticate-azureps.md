@@ -11,7 +11,7 @@ ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 01/12/2022
-ms.locfileid: "135955145"
+ms.locfileid: "135958518"
 ---
 # <a name="sign-in-with-azure-powershell"></a>Masuk dengan Azure PowerShell
 
@@ -80,7 +80,7 @@ Pastikan Anda menggunakan praktik penyimpanan kata sandi yang bagus ketika mengo
 
 ### <a name="certificate-based-authentication"></a>Autentikasi berbasis sertifikat
 
-Autentikasi berbasis sertifikat mengharuskan Azure PowerShell mengambil informasi dari penyimpanan sertifikat lokal berdasarkan pada cetakan sertifikat.
+Autentikasi berbasis sertifikat mengharuskan Azure PowerShell mengambil informasi dari penyimpanan sertifikat lokal berdasarkan pada thumbprint sertifikat.
 
 ```azurepowershell-interactive
 Connect-AzAccount -ApplicationId $appId -Tenant $tenantId -CertificateThumbprint <thumbprint>

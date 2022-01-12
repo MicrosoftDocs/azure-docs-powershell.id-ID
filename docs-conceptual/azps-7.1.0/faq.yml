@@ -1,0 +1,59 @@
+### YamlMime:FAQ
+metadata:
+  title: Tanya Jawab Umum (Faq)
+  description: Tanya Jawab Umum tentang Azure PowerShell.
+  ms.devlang: powershell
+  ms.topic: conceptual
+  ms.date: 01/04/2022
+  ms.custom: devx-track-azurepowershell
+  ms.service: azure-powershell
+  ms.openlocfilehash: eba95dafa204a66c75d81043ee0486bf49ed1ade
+  ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
+  ms.translationtype: MT
+  ms.contentlocale: id-ID
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "135958510"
+title: Tanya jawab umum tentang Azure PowerShell
+summary: ''
+sections:
+- name: Diabaikan
+  questions:
+  - question: >
+      Apa itu Azure PowerShell?
+    answer: >
+      Azure PowerShell adalah kumpulan cmdlet yang memungkinkan Anda mengelola sumber daya Azure secara langsung dengan PowerShell. Pada bulan Desember 2018, modul Az PowerShell tersedia secara umum. Kini modul PowerShell yang disarankan untuk berinteraksi dengan Azure. Untuk mempelajari selengkapnya tentang modul Az PowerShell, lihat [Memperkenalkan modul az Azure PowerShell az yang baru.](/powershell/azure/new-azureps-module-az)
+  - question: >
+      Bagaimana cara menonaktifkan pemecahan pesan peringatan perubahan di Azure PowerShell?
+    answer: >
+      Untuk menyembunyikan pesan peringatan perubahan yang sudah Azure PowerShell, Anda harus mengatur variabel lingkungan `SuppressAzurePowerShellBreakingChangeWarnings` ke `true` .
+
+
+      ```azurepowershell
+
+      Set-Item -Path Env:\SuppressAzurePowerShellBreakingChangeWarnings -Value $true
+
+      ```
+  - question: >
+      Bagaimana cara menonaktifkan pesan peringatan pensiun AzureRM di Azure PowerShell?
+    answer: >-
+      Untuk menyembunyikan pesan peringatan pensiun AzureRM Azure PowerShell, Anda harus mengatur variabel lingkungan `SuppressAzureRmModulesRetiringWarning` ke `true` .
+
+
+      ```azurepowershell-interactive
+
+      Set-Item -Path Env:\SuppressAzureRmModulesRetiringWarning -Value $true
+
+      ```
+
+
+      Salah satu kelemahan contoh sebelumnya adalah Anda perlu menjalankan perintah untuk setiap sesi PowerShell baru kecuali jika menambahkannya ke profil PowerShell.
+
+
+      Untuk mengatur variabel lingkungan secara permanen, Anda juga dapat menggunakan contoh berikut.
+
+
+      ```azurepowershell-interactive
+
+      [System.Environment]::SetEnvironmentVariable('SuppressAzureRmModulesRetiringWarning', 'true', [System.EnvironmentVariableTarget]::User)
+
+      ```
