@@ -1,0 +1,234 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
+Module Name: Az.Storage
+online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/remove-azdatalakegen2item
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Storage/Storage.Management/help/Remove-AzDataLakeGen2Item.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Storage/Storage.Management/help/Remove-AzDataLakeGen2Item.md
+ms.openlocfilehash: 06bb30dd98c491267675893192f61d4eb61529bf
+ms.sourcegitcommit: d81c3b0f0f7289104be03869eb675128b61db7d3
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "136013653"
+---
+# Remove-AzDataLakeGen2Item
+
+## SYNOPSIS
+Menghapus file atau direktori.
+
+## SINTAKS
+
+### ReceiveManual (Default)
+```
+Remove-AzDataLakeGen2Item [-FileSystem] <String> [-Path] <String> [-Force] [-AsJob] [-PassThru]
+ [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### ItemPipeline
+```
+Remove-AzDataLakeGen2Item -InputObject <AzureDataLakeGen2Item> [-Force] [-AsJob] [-PassThru]
+ [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESKRIPSI
+Cmdlet **Remove-AzDataLakeGen2Item** menghapus file atau direktori dari akun Storage.
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+
+## CONTOH
+
+### Contoh 1: Menghapus direktori
+```
+PS C:\>Remove-AzDataLakeGen2tem -FileSystem "filesystem1" -Path "dir1/"
+```
+
+Perintah ini menghapus direktori dari Filesystem.
+
+### Contoh 2: Menghapus file tanpa perintah
+```
+PS C:\>Remove-AzDataLakeGen2tem -FileSystem "filesystem1" -Path "dir1/file1" -Force
+```
+
+Perintah ini akan menghapus direktori dari Filesystem, tanpa perintah.
+
+### Contoh 3: Menghapus semua item dalam Filesystem dengan pipeline
+```
+PS C:\>Get-AzDataLakeGen2ChildItem -FileSystem "filesystem1" | Remove-AzDataLakeGen2Item -Force
+```
+
+Perintah ini menghapus semua item dalam Filesystem dengan pipeline.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konteks
+Azure Storage Konteks
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FileSystem
+Nama FileSystem
+
+```yaml
+Type: System.String
+Parameter Sets: ReceiveManual
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Force
+Paksa untuk menghapus Filesystem dan semua konten di dalamnya
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek Item Azure Datalake Gen2 yang akan dihapus.
+
+```yaml
+Type: Microsoft.WindowsAzure.Commands.Common.Storage.ResourceModel.AzureDataLakeGen2Item
+Parameter Sets: ItemPipeline
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Mengembalikan apakah Filesystem tertentu berhasil dihapus
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+Jalur dalam Filesystem tertentu yang akan dihapus.
+Bisa merupakan file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
+
+```yaml
+Type: System.String
+Parameter Sets: ReceiveManual
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUT
+
+### System.String
+
+### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureDataLakeGen2Item
+
+### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
+
+## OUTPUT
+
+### System.Boolean
+
+## CATATAN
+
+## LINK TERKAIT
