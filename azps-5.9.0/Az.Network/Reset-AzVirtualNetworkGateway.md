@@ -1,0 +1,124 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+ms.assetid: 443F6492-EFA7-4417-943A-3A8D47F8C83C
+online version: https://docs.microsoft.com/powershell/module/az.network/reset-azvirtualnetworkgateway
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Network/Network/help/Reset-AzVirtualNetworkGateway.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/Network/Network/help/Reset-AzVirtualNetworkGateway.md
+ms.openlocfilehash: de9d7d23a60d24fca6c383ab3db1208a5eae6864
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "136154704"
+---
+# Reset-AzVirtualNetworkGateway
+
+## SYNOPSIS
+Mereset Gateway Jaringan Virtual
+
+## SYNTAX
+
+```
+Reset-AzVirtualNetworkGateway -VirtualNetworkGateway <PSVirtualNetworkGateway> [-GatewayVip <String>] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Mereset Gateway Jaringan Virtual
+
+## EXAMPLES
+
+### Contoh 1:
+```
+$Gateway = Get-AzVirtualNetworkGateway -Name "ContosoVirtualGateway"
+Reset-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway
+```
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GatewayVip
+Gateway vip untuk mengatur ulang contoh gateway tertentu (misalnya untuk contoh gateway yang Active-Active diaktifkan oleh fitur.) Secara default, gateway primary instance akan diatur ulang jika tidak ada nilai yang diteruskan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -VirtualNetworkGateway
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzVirtualNetworkGateway](./Get-AzVirtualNetworkGateway.md)
+
+[New-AzVirtualNetworkGateway](./New-AzVirtualNetworkGateway.md)
+
+[Remove-AzVirtualNetworkGateway](./Remove-AzVirtualNetworkGateway.md)
+
+[Resize-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)
+
+[Set-AzVirtualNetworkGateway](./Set-AzVirtualNetworkGateway.md)
