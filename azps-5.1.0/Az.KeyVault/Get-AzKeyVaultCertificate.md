@@ -1,0 +1,418 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.KeyVault.dll-Help.xml
+Module Name: Az.KeyVault
+ms.assetid: 363FA51E-D075-4800-A4BE-BFF63FD25C90
+online version: https://docs.microsoft.com/en-us/powershell/module/az.keyvault/get-azkeyvaultcertificate
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificate.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificate.md
+ms.openlocfilehash: ede0598162fdecc760f33646c86171501ec46db4
+ms.sourcegitcommit: d81c3b0f0f7289104be03869eb675128b61db7d3
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "136017262"
+---
+# Get-AzKeyVaultCertificate
+
+## SYNOPSIS
+Mendapatkan sertifikat dari kunci vault.
+
+## SINTAKS
+
+### ByName (Default)
+```
+Get-AzKeyVaultCertificate [-VaultName] <String> [[-Name] <String>] [-InRemovedState] [-IncludePending]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByCertificateNameAndVersion
+```
+Get-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String> [-Version] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByCertificateAllVersions
+```
+Get-AzKeyVaultCertificate [-VaultName] <String> [-Name] <String> [-IncludeVersions]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByNameInputObject
+```
+Get-AzKeyVaultCertificate [-InputObject] <PSKeyVault> [[-Name] <String>] [-InRemovedState] [-IncludePending]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByCertificateNameAndVersionInputObject
+```
+Get-AzKeyVaultCertificate [-InputObject] <PSKeyVault> [-Name] <String> [-Version] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByCertificateAllVersionsInputObject
+```
+Get-AzKeyVaultCertificate [-InputObject] <PSKeyVault> [-Name] <String> [-IncludeVersions]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByNameResourceId
+```
+Get-AzKeyVaultCertificate [-ResourceId] <String> [[-Name] <String>] [-InRemovedState] [-IncludePending]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByCertificateNameAndVersionResourceId
+```
+Get-AzKeyVaultCertificate [-ResourceId] <String> [-Name] <String> [-Version] <String>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByCertificateAllVersionsResourceId
+```
+Get-AzKeyVaultCertificate [-ResourceId] <String> [-Name] <String> [-IncludeVersions]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESKRIPSI
+Cmdlet **Get-AzKeyVaultCertificate** mendapatkan sertifikat tertentu atau versi sertifikat dari kunci vault di Azure Key Vault.
+
+## CONTOH
+
+### Contoh 1: Mendapatkan sertifikat
+```powershell
+PS C:\> Get-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01"
+Name        : testCert01
+Certificate : [Subject] 
+                CN=contoso.com
+
+              [Issuer] 
+                CN=contoso.com
+
+              [Serial Number] 
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+              [Not Before] 
+                2/8/2016 3:11:45 PM
+
+              [Not After] 
+                8/8/2016 4:21:45 PM
+
+              [Thumbprint] 
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+KeyId       : https://contoso.vault.azure.net:443/keys/TestCert01/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+SecretId    : https://contoso.vault.azure.net:443/secrets/TestCert01/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Thumbprint  : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Tags        : 
+Enabled     : True
+Created     : 2/8/2016 11:21:45 PM
+Updated     : 2/8/2016 11:21:45 PM
+```
+
+### Contoh 2: Dapatkan sertifikat dan simpan sebagai pfx
+Perintah ini mendapatkan sertifikat yang bernama TestCert01 dari kunci vault bernama Contoso AZURE01. Untuk mengunduh sertifikat sebagai file pfx, jalankan perintah berikut. Perintah ini mengakses SecretId lalu menyimpan konten sebagai file pfx.
+
+```powershell
+$cert = Get-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "TestCert01"
+$secret = Get-AzKeyVaultSecret -VaultName $vaultName -Name $cert.Name
+$secretValueText = '';
+$ssPtr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($secret.SecretValue)
+try {
+    $secretValueText = [System.Runtime.InteropServices.Marshal]::PtrToStringBSTR($ssPtr)
+} finally {
+    [System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ssPtr)
+}
+$secretByte = [Convert]::FromBase64String($secretValueText)
+$x509Cert = new-object System.Security.Cryptography.X509Certificates.X509Certificate2
+$x509Cert.Import($secretByte, "", "Exportable,PersistKeySet")
+$type = [System.Security.Cryptography.X509Certificates.X509ContentType]::Pfx
+$pfxFileByte = $x509Cert.Export($type, $password)
+
+# Write to a file
+[System.IO.File]::WriteAllBytes("KeyVault.pfx", $pfxFileByte)
+```
+
+### Contoh 3: Mendapatkan semua sertifikat yang telah dihapus tetapi tidak di pembersihan untuk vault kunci ini.
+```powershell
+PS C:\> Get-AzKeyVaultCertificate -VaultName 'contoso' -InRemovedState
+
+DeletedDate        : 5/24/2018 6:08:32 PM
+Enabled            : True
+Expires            : 11/24/2018 6:08:13 PM
+NotBefore          : 5/24/2018 5:58:13 PM
+Created            : 5/24/2018 6:08:13 PM
+Updated            : 5/24/2018 6:08:13 PM
+Tags               :
+VaultName          : contoso
+Name               : test1
+Version            :
+Id                 : https://contoso.vault.azure.net:443/certificates/test1
+
+ScheduledPurgeDate : 8/22/2018 6:10:47 PM
+DeletedDate        : 5/24/2018 6:10:47 PM
+Enabled            : True
+Expires            : 11/24/2018 6:09:44 PM
+NotBefore          : 5/24/2018 5:59:44 PM
+Created            : 5/24/2018 6:09:44 PM
+Updated            : 5/24/2018 6:09:44 PM
+Tags               :
+VaultName          : contoso
+Name               : test2
+Version            :
+Id                 : https://contoso.vault.azure.net:443/certificates/test2
+```
+
+Perintah ini mendapatkan semua sertifikat yang telah dihapus sebelumnya, namun tidak di pembersihan, di kunci vault bernama Contoso.
+
+### Contoh 4: Mendapatkan sertifikat MyCert yang telah dihapus tetapi tidak di pembersihan untuk vault kunci ini.
+```powershell
+PS C:\> Get-AzKeyVaultCertificate -VaultName 'contoso' -Name 'test1' -InRemovedState
+
+Certificate        : [Subject]
+                       CN=contoso.com
+
+                     [Issuer]
+                       CN=contoso.com
+
+                     [Serial Number]
+                       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                     [Not Before]
+                       5/24/2018 10:58:13 AM
+
+                     [Not After]
+                       11/24/2018 10:08:13 AM
+
+                     [Thumbprint]
+                       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+KeyId              : https://contoso.vault.azure.net:443/keys/test1/7fe415d5518240c1a6fce89986b8d334
+SecretId           : https://contoso.vault.azure.net:443/secrets/test1/7fe415d5518240c1a6fce89986b8d334
+Thumbprint         : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+RecoveryLevel      : Recoverable+Purgeable
+ScheduledPurgeDate : 8/22/2018 6:08:32 PM
+DeletedDate        : 5/24/2018 6:08:32 PM
+Enabled            : True
+Expires            : 11/24/2018 6:08:13 PM
+NotBefore          : 5/24/2018 5:58:13 PM
+Created            : 5/24/2018 6:08:13 PM
+Updated            : 5/24/2018 6:08:13 PM
+Tags               :
+VaultName          : contoso
+Name               : test1
+Version            : 7fe415d5518240c1a6fce89986b8d334
+Id                 : https://contoso.vault.azure.net:443/certificates/test1/7fe415d5518240c1a6fce89986b8d334
+```
+
+Perintah ini mendapatkan sertifikat yang bernama 'MyCert' yang telah dihapus sebelumnya, tetapi tidak dihapus, di kunci vault bernama Contoso.
+Perintah ini akan mengembalikan metadata seperti tanggal penghapusan, dan tanggal pembersihan terjadwal dari sertifikat yang dihapus ini.
+
+### Contoh 5: Daftar sertifikat menggunakan pemfilteran
+```powershell
+PS C:\> Get-AzKeyVaultCertificate -VaultName "ContosoKV01" -Name "test*"
+
+Enabled   : True
+Expires   : 8/5/2019 2:39:25 AM
+NotBefore : 2/5/2019 2:29:25 AM
+Created   : 2/5/2019 2:39:25 AM
+Updated   : 2/5/2019 2:39:25 AM
+Tags      :
+VaultName : ContosoKV01
+Name      : test1
+Version   :
+Id        : https://ContosoKV01.vault.azure.net:443/certificates/test1
+
+Enabled   : True
+Expires   : 8/5/2019 2:39:25 AM
+NotBefore : 2/5/2019 2:29:25 AM
+Created   : 2/5/2019 2:39:25 AM
+Updated   : 2/5/2019 2:39:25 AM
+Tags      :
+VaultName : ContosoKV01
+Name      : test2
+Version   :
+Id        : https://ContosoKV01.vault.azure.net:443/certificates/test2
+
+This command gets all certificates starting with "test" from the key vault named ContosoKV01.
+```
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludePending
+Menentukan apakah akan menyertakan sertifikat tertunda dalam output
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ByName, ByNameInputObject, ByNameResourceId
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeVersions
+Menunjukkan bahwa operasi ini mendapatkan semua versi sertifikat.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ByCertificateAllVersions, ByCertificateAllVersionsInputObject, ByCertificateAllVersionsResourceId
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+objek KeyVault.
+
+```yaml
+Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
+Parameter Sets: ByNameInputObject, ByCertificateNameAndVersionInputObject, ByCertificateAllVersionsInputObject
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -InRemovedState
+Menentukan apakah akan menyertakan sertifikat yang dihapus sebelumnya dalam output
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ByName, ByNameInputObject, ByNameResourceId
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama sertifikat untuk mendapatkan.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName, ByNameInputObject, ByNameResourceId
+Aliases: CertificateName
+
+Required: False
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ByCertificateNameAndVersion, ByCertificateAllVersions, ByCertificateNameAndVersionInputObject, ByCertificateAllVersionsInputObject, ByCertificateNameAndVersionResourceId, ByCertificateAllVersionsResourceId
+Aliases: CertificateName
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceId
+KeyVault Resource Id.
+
+```yaml
+Type: System.String
+Parameter Sets: ByNameResourceId, ByCertificateNameAndVersionResourceId, ByCertificateAllVersionsResourceId
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -VaultName
+Menentukan nama kunci vault.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName, ByCertificateNameAndVersion, ByCertificateAllVersions
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Versi
+Menentukan versi sertifikat.
+
+```yaml
+Type: System.String
+Parameter Sets: ByCertificateNameAndVersion, ByCertificateNameAndVersionInputObject, ByCertificateNameAndVersionResourceId
+Aliases: CertificateVersion
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUT
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
+
+### System.String
+
+## OUTPUT
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificateIdentityItem
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificate
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultCertificate
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSDeletedKeyVaultCertificateIdentityItem
+
+## CATATAN
+
+## LINK TERKAIT
+
+[Add-AzKeyVaultCertificate](./Add-AzKeyVaultCertificate.md)
+
+[Import-AzKeyVaultCertificate](./Import-AzKeyVaultCertificate.md)
+
+[Remove-AzKeyVaultCertificate](./Remove-AzKeyVaultCertificate.md)
+
+[Undo-AzKeyVaultSecretCertificate](./Undo-AzKeyVaultSecretCertificate.md)
