@@ -1,0 +1,233 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Synapse.dll-Help.xml
+Module Name: Az.Synapse
+online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-azsynapseworkspace
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspace.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseWorkspace.md
+ms.openlocfilehash: 7e0865d814f17a311153d472c44b598586b675dc
+ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "136181022"
+---
+# Remove-AzSynapseWorkspace
+
+## SYNOPSIS
+Menghapus ruang kerja Analitik Synapse.
+
+## SYNTAX
+
+### DeleteByNameParameterSet (Default)
+```
+Remove-AzSynapseWorkspace [-ResourceGroupName <String>] -Name <String> [-PassThru] [-AsJob] [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteByInputObjectParameterSet
+```
+Remove-AzSynapseWorkspace -InputObject <PSSynapseWorkspace> [-PassThru] [-AsJob] [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteByResourceIdParameterSet
+```
+Remove-AzSynapseWorkspace -ResourceId <String> [-PassThru] [-AsJob] [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Remove-AzSynapseWorkspace** menghapus ruang kerja Azure Synapse Analytics secara permanen.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+PS C:\> Remove-AzSynapseWorkspace -Name ContosoWorkspace
+```
+
+Perintah ini menghapus ruang kerja Analitik Azure Synapse.
+
+### Contoh 2
+```powershell
+PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
+PS C:\> $ws | Remove-AzSynapseWorkspace
+```
+
+Perintah ini menghapus ruang kerja Analitik Azure Synapse melalui saluran.
+
+### Contoh 3
+```powershell
+PS C:\> Remove-AzSynapseWorkspace -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace
+```
+
+Perintah ini menghapus ruang kerja Analitik Azure Synapse melalui saluran dengan ID sumber daya yang ditentukan.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Jangan minta konfirmasi.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+objek input ruang kerja, biasanya melewati saluran.
+
+```yaml
+Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
+Parameter Sets: DeleteByInputObjectParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama ruang kerja Synapse.
+
+```yaml
+Type: System.String
+Parameter Sets: DeleteByNameParameterSet
+Aliases: WorkspaceName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: DeleteByNameParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceId
+Pengidentifikasi sumber daya ruang kerja Synapse.
+
+```yaml
+Type: System.String
+Parameter Sets: DeleteByResourceIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
+
+## OUTPUTS
+
+### System.Boolean
+
+## CATATAN
+
+## RELATED LINKS
