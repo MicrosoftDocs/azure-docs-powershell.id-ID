@@ -1,0 +1,162 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.KeyVault.dll-Help.xml
+Module Name: Az.KeyVault
+online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvaultmanagedhsm
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedHsm.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/master/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedHsm.md
+ms.openlocfilehash: b65fed5670f34072504c736283ba12e51086d3d9
+ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "136153178"
+---
+# Get-AzKeyVaultManagedHsm
+
+## SYNOPSIS
+Mendapatkan HSM yang dikelola.
+
+## SYNTAX
+
+```
+Get-AzKeyVaultManagedHsm [[-Name] <String>] [[-ResourceGroupName] <String>] [-Tag <Hashtable>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzKeyVaultManagedHsm** mendapatkan informasi tentang HSMS yang dikelola dalam langganan. Anda bisa menampilkan semua instans HSMS yang dikelola dalam langganan, atau memfilter hasil Anda menurut grup sumber daya atau HSM terkelola tertentu.
+Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini ketika Anda mendapatkan HSM terkelola tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan semua VM yang dikelola dalam langganan Anda saat ini
+```powershell
+PS C:\> Get-AzKeyVaultManagedHsm
+
+Name  Resource Group Name Location    SKU
+----  ------------------- --------    ---
+myhsm myrg1               eastus2euap StandardB1
+```
+
+Perintah ini mendapatkan semua VM yang dikelola dalam langganan Anda saat ini.
+
+### Contoh 2: Mendapatkan HSM terkelola tertentu
+```powershell
+PS C:\> Get-AzKeyVaultManagedHsm -Name 'myhsm'
+
+Name  Resource Group Name Location    SKU
+----  ------------------- --------    ---
+myhsm myrg1               eastus2euap StandardB1
+```
+
+Perintah ini mendapatkan HSM terkelola yang bernama myhsm dalam langganan Anda saat ini.
+
+### Contoh 3: Get managed HSMs in a resource group
+```powershell
+PS C:\> Get-AzKeyVaultManagedHsm -ResourceGroupName 'myrg1'
+
+Name  Resource Group Name Location    SKU
+----  ------------------- --------    ---
+myhsm myrg1               eastus2euap StandardB1
+```
+
+Perintah ini mendapatkan semua VM yang dikelola dalam grup sumber daya yang bernama myrg1.
+
+### Contoh 4: Mendapatkan VM yang dikelola menggunakan pemfilteran
+```powershell
+PS C:\> Get-AzKeyVaultManagedHsm -Name 'myhsm*'
+
+Name  Resource Group Name Location    SKU
+----  ------------------- --------    ---
+myhsm myrg1               eastus2euap StandardB1
+```
+
+Perintah ini mendapatkan semua IM yang dikelola dalam langganan yang dimulai dengan "myhsm".
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama HSM. Cmdlet menyusun FQDN dari HSM berdasarkan nama dan lingkungan yang saat ini dipilih.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: HsmName
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: True
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya yang terkait dengan HSM yang dikelola yang akan ditanya.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: True
+```
+
+### -Tag
+Menentukan nilai kunci dan opsional dari tag yang ditentukan untuk memfilter daftar HSMs yang dikelola oleh.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### System.Collections.Hashtable
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSManagedHsm
+
+### Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultIdentityItem
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzKeyVaultManagedHsm](./New-AzKeyVaultManagedHsm.md)
+
+[Remove-AzKeyVaultManagedHsm](./Remove-AzKeyVaultManagedHsm.md)
+
+[Update-AzKeyVaultManagedHsm](./Update-AzKeyVaultManagedHsm.md)
