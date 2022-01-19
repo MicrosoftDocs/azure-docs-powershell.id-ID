@@ -1,0 +1,206 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Batch.dll-Help.xml
+Module Name: Az.Batch
+online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatchpoolnodecount
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolNodeCount.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPoolNodeCount.md
+ms.openlocfilehash: e96c1b92ccf2d4241e7b897a5fdc5571a8a360bd
+ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "136176990"
+---
+# Get-AzBatchPoolNodeCount
+
+## SYNOPSIS
+Mendapatkan hitungan node Kumpulan per status node yang dikelompokkan menurut id kumpulan.
+
+## SYNTAX
+
+### AzureBatchPoolNodeCounts (Default)
+```
+Get-AzBatchPoolNodeCount -BatchContext <BatchAccountContext> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+### PoolId
+```
+Get-AzBatchPoolNodeCount [-PoolId <String>] -BatchContext <BatchAccountContext>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ParentObject
+```
+Get-AzBatchPoolNodeCount [-Pool <PSCloudPool>] -BatchContext <BatchAccountContext>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ODataFilter
+```
+Get-AzBatchPoolNodeCount [-MaxCount <Int32>] -BatchContext <BatchAccountContext>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet Get-AzBatchPoolNodeCount memungkinkan pelanggan untuk mendapatkan kembali jumlah node per negara bagian node yang dikelompokkan menurut kumpulan. Kemungkinan status node adalah membuat, diam, meninggalkanPool, offline, disediakan, memulai ulang, menghidupkan ulang, menjalankan, memulai, startTask Gagal, tidak diketahui, tidak dapat digunakan dan menungguForStartTask. Cmdlet memerlukan parameter PoolId atau Pool untuk memfilter hanya pool dengan id pool yang ditentukan. 
+
+## EXAMPLES
+
+### Contoh 1
+```
+PS C:\> $batchContext = Get-AzBatchAccountKey -AccountName "contosobatch"
+PS C:\> Get-AzBatchPoolNodeCount -BatchContext $batchContext
+
+PoolId                         Dedicated                                                    LowPriority
+------                         ---------                                                    -----------
+contosopool1                   Creating: 1, Idle: 1, Rebooting: 1, Running: 5, Total: 8     Total: 0
+contosopool2                   Idle: 1, Rebooting: 1, Total: 2                              Total: 0
+```
+
+Jumlah node daftar per status node untuk kolam renang di bawah konteks akun kumpulan saat ini.
+
+### Contoh 2
+
+```powershell
+PS C:\> Get-AzBatchPoolNodeCount -BatchContext $batchContext -PoolId "contosopool1"
+
+PoolId                         Dedicated                                                    LowPriority
+------                         ---------                                                    -----------
+contosopool1                   Creating: 1, Idle: 1, Rebooting: 1, Running: 5, Total: 8     Total: 0
+
+PS C:\> $poolnodecounts = Get-AzBatchPoolNodeCount -BatchContext $batchContext -PoolId "contosopool1"
+PS C:\> $poolnodecounts.Dedicated
+
+Creating            : 1
+Idle                : 1
+LeavingPool         : 0
+Offline             : 0
+Preempted           : 0
+Rebooting           : 1
+Reimaging           : 0
+Running             : 5
+Starting            : 0
+StartTaskFailed     : 0
+Total               : 8
+Unknown             : 0
+Unusable            : 0
+WaitingForStartTask : 0
+
+PS C:\> Get-AzBatchPool -Id "contosopool1" -BatchContext $batchContext | Get-AzBatchPoolNodeCount -BatchContext $batchContext
+
+PoolId                         Dedicated                                                    LowPriority
+------                         ---------                                                    -----------
+contosopool1                   Creating: 1, Idle: 1, Rebooting: 1, Running: 5, Total: 8     Total: 0
+```
+
+Perlihatkan jumlah node per status node untuk id pool tertentu.
+
+## PARAMETERS
+
+### -BatchContext
+Contoh BatchAccountContext untuk digunakan ketika berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch.
+Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi.
+Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default.
+Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+
+```yaml
+Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MaxCount
+Menentukan jumlah maksimal kolam renang untuk dikembalikan.
+Nilai default adalah 10.
+
+```yaml
+Type: System.Int32
+Parameter Sets: ODataFilter
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Pool
+Menentukan **PSCloudPool** untuk mendapatkan hitungan node.
+
+```yaml
+Type: Microsoft.Azure.Commands.Batch.Models.PSCloudPool
+Parameter Sets: ParentObject
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PoolId
+Id dari pool yang akan digunakan untuk mendapatkan jumlah simpul.
+
+```yaml
+Type: System.String
+Parameter Sets: PoolId
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.Batch.Models.PSCloudPool
+
+### Microsoft.Azure.Commands.Batch.BatchAccountContext
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Batch.Models.PSPoolNodeCounts
+
+## CATATAN
+
+## RELATED LINKS
+
+[Get-AzBatchAccountKey]()
+
+[Get-AzBatchJob]()
+
+[Cmdlet Kumpulan Azure]()
+
