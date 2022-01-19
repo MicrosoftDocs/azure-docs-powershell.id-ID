@@ -1,0 +1,142 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.RecoveryServices.SiteRecovery.dll-Help.xml
+Module Name: Az.RecoveryServices
+online version: https://docs.microsoft.com/powershell/module/az.recoveryservices/get-azrecoveryservicesasrfabric
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrFabric.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrFabric.md
+ms.openlocfilehash: 072c1491791bac37a7f540ccac65db2af86f1df5
+ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "136158795"
+---
+# Get-AzRecoveryServicesAsrFabric
+
+## SYNOPSIS
+Get the details of an Azure Site Recovery Fabric.
+
+## SYNTAX
+
+### Default (Default)
+```
+Get-AzRecoveryServicesAsrFabric [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByName
+```
+Get-AzRecoveryServicesAsrFabric -Name <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByFriendlyName
+```
+Get-AzRecoveryServicesAsrFabric -FriendlyName <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+The **Get-AzRecoveryServicesAsrFabric** cmdlet gets the properties of a specified Azure Site Recovery Fabric or all Azure Site Recovery Fabrics in a Recovery Service vault.
+
+## EXAMPLES
+
+### Contoh 1
+```
+PS C:\> $fabrics = Get-AzRecoveryServicesAsrFabric
+```
+
+Mengembalikan semua kain Pemulihan Situs Azure di vault.
+
+### Contoh 2
+```
+PS C:\> $fabric = Get-AzRecoveryServicesAsrFabric -Name xxxx
+
+Name                  : xxxx
+FriendlyName          : XXXXXXXXXX
+ID                    : /Subscriptions/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/resourceGroups/canaryexproute/providers/Microsoft.RecoveryServices/vaults/XXXXXXXXXXXXX/replicationFabrics/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FabricType            : VMware
+SiteIdentifier        : XXXXXXXXxxxxxxxxxxx
+FabricSpecificDetails : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVMWareSpecificDetails
+```
+
+Return azure site recovery fabric with name xxxx.
+
+### Contoh 3
+```
+PS C:\> $fabric = Get-AzRecoveryServicesAsrFabric -FriendlyName XXXXXXXXXX
+
+Name                  : xxxx
+FriendlyName          : XXXXXXXXXX
+ID                    : /Subscriptions/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/resourceGroups/canaryexproute/providers/Microsoft.RecoveryServices/vaults/XXXXXXXXXXXXX/replicationFabrics/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FabricType            : VMware
+SiteIdentifier        : XXXXXXXXxxxxxxxxxxx
+FabricSpecificDetails : Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRVMWareSpecificDetails
+```
+
+Return azure site recovery fabric with friendly name xxxx.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FriendlyName
+Search for the ASR fabric by the friendly name of the fabric.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFriendlyName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Search for the ASR fabric by the name of the fabric.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzRecoveryServicesAsrFabric](./New-AzRecoveryServicesAsrFabric.md)
+
+[Remove-AzRecoveryServicesAsrFabric](./Remove-AzRecoveryServicesAsrFabric.md)

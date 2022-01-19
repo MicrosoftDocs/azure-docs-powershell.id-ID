@@ -1,0 +1,186 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
+Module Name: Az.Sql
+online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlelasticjob
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJob.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJob.md
+ms.openlocfilehash: f00a7aa27db4f846c85d491848e1b54266d74f4c
+ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "136192033"
+---
+# Get-AzSqlElasticJob
+
+## SYNOPSIS
+Mendapatkan satu pekerjaan atau lebih
+
+## SYNTAX
+
+### DefaultSet (Default)
+```
+Get-AzSqlElasticJob [-ResourceGroupName] <String> [-ServerName] <String> [-AgentName] <String> [-Name <String>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ObjectSet
+```
+Get-AzSqlElasticJob [-ParentObject] <AzureSqlElasticJobAgentModel> [-Name <String>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ResourceIdSet
+```
+Get-AzSqlElasticJob [-ParentResourceId] <String> [-Name <String>] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet Get-AzSqlElasticJob mendapatkan satu pekerjaan atau lebih
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan pekerjaan
+```powershell
+PS C:\> $agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent
+$agent | Get-AzSqlElasticJob -Name job1
+
+JobName Version Description StartTime           EndTime                ScheduleType Interval Enabled
+------- ------- ----------- ---------           -------                ------------ -------- -------
+job1    0                   6/1/2018 9:46:29 PM 12/31/9999 11:59:59 AM Once                  False
+```
+
+Mendapatkan pekerjaan
+
+### Contoh 2
+
+Mendapatkan satu pekerjaan atau lebih. (otomatisgenerated)
+
+```powershell
+<!-- Aladdin Generated Example --> 
+Get-AzSqlElasticJob -AgentName agent -Name job1 -ResourceGroupName rg -ServerName elasticjobserver
+```
+
+## PARAMETERS
+
+### -AgentName
+Nama agen
+
+```yaml
+Type: System.String
+Parameter Sets: DefaultSet
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama pekerjaan
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: JobName
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ParentObject
+Objek input agen
+
+```yaml
+Type: Microsoft.Azure.Commands.Sql.ElasticJobs.Model.AzureSqlElasticJobAgentModel
+Parameter Sets: ObjectSet
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ParentResourceId
+Id sumber daya agen
+
+```yaml
+Type: System.String
+Parameter Sets: ResourceIdSet
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya
+
+```yaml
+Type: System.String
+Parameter Sets: DefaultSet
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServerName
+Nama server
+
+```yaml
+Type: System.String
+Parameter Sets: DefaultSet
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobAgentModel
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Sql.ElastisJobs.Model.AzureSqlElasticJobModel
+
+## CATATAN
+
+## RELATED LINKS
