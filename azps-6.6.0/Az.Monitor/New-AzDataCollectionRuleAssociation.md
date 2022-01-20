@@ -1,0 +1,228 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
+Module Name: Az.Monitor
+online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azdatacollectionruleassociation
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRuleAssociation.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRuleAssociation.md
+ms.openlocfilehash: 72c853b55d1f74e4c38c24cd169efd5032fcf196
+ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "136335925"
+---
+# New-AzDataCollectionRuleAssociation
+
+## SYNOPSIS
+Membuat asosiasi aturan pengumpulan data.
+
+## SYNTAX
+
+### ByDataCollectionRuleId (Default)
+```
+New-AzDataCollectionRuleAssociation
+   -TargetResourceId <string>
+   -AssociationName <string>
+   -RuleId <string>
+   [-Description <string>]
+   [-DefaultProfile <IAzureContextContainer>]
+   [-WhatIf]
+   [-Confirm]
+   [<CommonParameters>]
+```
+
+### ByInputObject
+```
+New-AzDataCollectionRuleAssociation
+   -TargetResourceId <string>
+   -AssociationName <string>
+   -InputObject <PSDataCollectionRuleResource>
+   [-Description <string>]
+   [-DefaultProfile <IAzureContextContainer>]
+   [-WhatIf]
+   [-Confirm]
+   [<CommonParameters>]
+```
+
+
+## DESCRIPTION
+Cmdlet **New-AzDataCollectionRuleAssociation** membuat asosiasi aturan pengumpulan data (DCRA).
+
+Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki kaitan ke beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan kumpulan DCR, setiap persyaratan tertentu yang cocok, dan menerapkannya hanya pada mesin virtual di mana ketentuan berlaku. Berikut adalah artikel ["Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
+
+## EXAMPLES
+
+### Contoh 1: Membuat asosiasi aturan pengumpulan data
+```
+PS C:\>$dcr = Get-AzDataCollectionRule -ResourceGroupName $rg -RuleName $dcrName
+PS C:\>$vmId = '/subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/virtualMachines/{vmName}'
+PS C:\>New-AzDataCollectionRuleAssociation -TargetResourceId $vmId -AssociationName "dcrAssoc" -RuleId $dcr.Id
+
+Description          :
+DataCollectionRuleId : /subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Insights/dataCollectionRules/{dcrName}
+ProvisioningState    :
+Etag                 : "{etag}"
+Id                   : /subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/virtualMachines/{vmName}/providers/Microsoft.Insights/dataCollectionRuleAssociations/dcrAssoc
+Name                 : dcrAssoc
+Type                 : Microsoft.Insights/dataCollectionRuleAssociations
+```
+
+Perintah ini membuat asosiasi aturan pengumpulan data untuk ATURAN dan ID sumber daya target yang diberikan.
+
+### Contoh 2: Membuat asosiasi aturan pengumpulan data dari objek DCR
+```
+PS C:\>$dcr = Get-AzDataCollectionRule -ResourceGroupName $rg -RuleName $dcrName
+PS C:\>$vmId = '/subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/virtualMachines/{vmName}'
+PS C:\>$dcr | New-AzDataCollectionRuleAssociation -TargetResourceId $vmId -AssociationName "dcrAssocInput"
+
+Description          :
+DataCollectionRuleId : /subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Insights/dataCollectionRules/{dcrName}
+ProvisioningState    :
+Etag                 : "{etag}"
+Id                   : /subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/virtualMachines/{vmName}/providers/Microsoft.Insights/dataCollectionRuleAssociations/dcrAssocInput
+Name                 : dcrAssocInput
+Type                 : Microsoft.Insights/dataCollectionRuleAssociations
+```
+
+Perintah ini membuat asosiasi aturan pengumpulan data untuk ATURAN dan ID sumber daya target yang diberikan.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TargetResourceId
+ID sumber daya untuk dikaitkan
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: ResourceUri
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssociationName
+Nama sumber daya
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: Name
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RuleId
+ID aturan pengumpulan data
+
+```yaml
+Type: System.String
+Parameter Sets: ByDataCollectionRuleId
+Aliases: DataCollectionRuleId
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+PSDataCollectionRuleResource Object
+
+```yaml
+Type: System.String
+Parameter Sets: ByInputObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True
+Accept wildcard characters: False
+```
+
+### -Deskripsi
+Deskripsi sumber daya
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands. Insights. OutputClasses.PSDataCollectionRuleAssociationProxyOnlyResource
+
+## CATATAN
+
+## RELATED LINKS
+
+[Remove-AzDataCollectionRuleAssociation](./Remove-AzDataCollectionRuleAssociation.md) 
+ [Get-AzDataCollectionRuleAssociation](./Get-AzDataCollectionRuleAssociation.md)
