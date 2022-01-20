@@ -1,0 +1,277 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataShare.dll-Help.xml
+Module Name: Az.DataShare
+online version: https://docs.microsoft.com/powershell/module/az.datashare/new-azdatasharedatasetmapping
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSetMapping.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSetMapping.md
+ms.openlocfilehash: 99a970498fa7b7d2d5d75b4ba18abced840cfa8b
+ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "136333122"
+---
+# New-AzDataShareDataSetMapping
+
+## SYNOPSIS
+Membuat pemetaan kumpulan data untuk berbagi langganan.
+
+## SYNTAX
+
+### ByFieldsParameterSet (Default)
+```
+New-AzDataShareDataSetMapping [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### ByBlobDataSetParamaterSet
+```
+New-AzDataShareDataSetMapping -ResourceGroupName <String> -AccountName <String> -ShareSubscriptionName <String>
+ -Name <String> -StorageAccountResourceId <String> -DataSetId <String> -Container <String> [-FilePath <String>]
+ [-FolderPath <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByAdlsGen2DataSetParameterSet
+```
+New-AzDataShareDataSetMapping -ResourceGroupName <String> -AccountName <String> -ShareSubscriptionName <String>
+ -Name <String> -StorageAccountResourceId <String> -DataSetId <String> -FileSystem <String>
+ [-FilePath <String>] [-FolderPath <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzDataShareDataSetMapping** membuat pemetaan kumpulan data antara kumpulan data sumber dan akun penyimpanan sink dalam langganan bersama.
+
+## EXAMPLES
+
+### Contoh 1
+```
+New-AzDataShareDataSetMapping -ResourceGroupName "ADS" -AccountName "WikiAdsAccount" -ShareSubscriptionName "AdsShareSubscription" -Name "AdsDataSetMapping" -StorageAccountResourceId "/subscriptions/271cc6ec-e5fe-4813-83bd-8f3b04973e38/resourceGroups/ADS/providers/Microsoft.Storage/storageAccounts/AdsStorage" -Container "AdsContainer"
+```
+```powershell
+ContainerName        : AdsContainer
+DataSetId            : 372899d4-5e67-4c85-bc60-21168b484424
+ResourceGroup        : ADS
+SubscriptionId       : 4834da9b-787a-44f6-ae81-60707ab8c957
+StorageAccount       : AdsStorage
+DataSetMappingStatus : Ok
+Id                   : /subscriptions/4834da9b-787a-44f6-ae81-60707ab8c957/resourceGroups/ADS/providers/Microsoft.DataShare/accounts/WikiAdsAccount/shareSubscriptions/AdsShareSubscription/dataSetMappings/AdsDataSetMapping
+Name                 : AdsDataSetMapping
+Type                 : Microsoft.DataShare/DataSetMappings
+```
+
+Perintah ini membuat pemetaan kumpulan data AdsDataSetMapping ke akun penyimpanan AdsStorage untuk berbagi langganan AdsShareSubscription dalam akun berbagi data WikiAdsAccount.
+
+## PARAMETERS
+
+### -Nama Akun
+Nama akun berbagi data Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Container
+Nama wadah akun penyimpanan Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DataSetId
+Id kumpulan data konsumen
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FilePath
+Jalur file penyimpanan Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FileSystem
+Nama sistem file Azure ADLS gen2
+
+```yaml
+Type: System.String
+Parameter Sets: ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FolderPath
+Jalur folder penyimpanan Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama pemetaan kumpulan data Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya akun berbagi data Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShareSubscriptionName
+Nama langganan berbagi data Azure
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StorageAccountResourceId
+Azure Storage ResourceId Akun
+
+```yaml
+Type: System.String
+Parameter Sets: ByBlobDataSetParamaterSet, ByAdlsGen2DataSetParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareDataSetMapping
+
+## CATATAN
+
+## RELATED LINKS
