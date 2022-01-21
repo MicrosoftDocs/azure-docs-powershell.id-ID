@@ -1,0 +1,151 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+online version: https://docs.microsoft.com/powershell/module/az.network/get-azrouteserverpeerlearnedroute
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerLearnedRoute.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerLearnedRoute.md
+ms.openlocfilehash: 9b33a81c2b3db23b4f0dac097d3b7e94bf3e4224
+ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "136541093"
+---
+# Get-AzRouteServerPeerLearnedRoute
+
+## SYNOPSIS
+Daftar rute yang dipelajari oleh rekan server rute tertentu
+
+## SYNTAX
+
+### RouteServerPeerNameParameterSet (Default)
+```
+Get-AzRouteServerPeerLearnedRoute -ResourceGroupName <String> -RouteServerName <String> -PeerName <String>
+ [-AsJob] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### RouteServerPeerObjectParameterSet
+```
+Get-AzRouteServerPeerLearnedRoute -InputObject <PSRouteServerPeer> [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Menghitung rute yang dipelajari oleh rekan server rute dari sumber lain.
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+Get-AzRouteServerPeerLearnedRouter -ResourceGroupName $resourceGroupName -RouteServerName $routeServerName -PeerName $peerName
+```
+
+### Contoh 2
+```powershell
+$routerServerPeer = Get-AzRouteServerPeer -ResourceGroupName $resourceGroupName -RouteServerName $routeServerName -PeerName $peerName
+Get-AzRouteServerPeerLearnedRouter -InputObject $routerServerPeer
+```
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek input peer server rute.
+
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSRouteServerPeer
+Parameter Sets: RouteServerPeerObjectParameterSet
+Aliases:
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PeerName
+Merutekan nama rekan server
+
+```yaml
+Type: System.String
+Parameter Sets: RouteServerPeerNameParameterSet
+Aliases: ResourceName
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Merutekan nama grup sumber daya peer server
+
+```yaml
+Type: System.String
+Parameter Sets: RouteServerPeerNameParameterSet
+Aliases:
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RouteServerName
+Nama server rute
+
+```yaml
+Type: System.String
+Parameter Sets: RouteServerPeerNameParameterSet
+Aliases:
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.Network.Models.PSRouteServerPeer
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSPeerRoute
+
+## CATATAN
+
+## RELATED LINKS
