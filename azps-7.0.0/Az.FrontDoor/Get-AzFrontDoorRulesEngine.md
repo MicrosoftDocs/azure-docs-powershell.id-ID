@@ -1,0 +1,146 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.FrontDoor.dll-Help.xml
+Module Name: Az.FrontDoor
+online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-azfrontdoorrulesengine
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorRulesEngine.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorRulesEngine.md
+ms.openlocfilehash: 8f25e3263078896d7adff24bfbd88e30a9395cf5
+ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "136560322"
+---
+# Get-AzFrontDoorRulesEngine
+
+## SYNOPSIS
+Dapatkan konfigurasi Rules Engine.
+
+## SYNTAX
+
+```
+Get-AzFrontDoorRulesEngine -ResourceGroupName <String> -FrontDoorName <String> [-Name <String>]
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzFrontDoorRulesEngine** mendapatkan konfigurasi mesin aturan tertentu atau mendapatkan semua konfigurasi mesin aturan yang terkait dengan Pintu Depan. 
+
+## EXAMPLES
+
+### Contoh 1
+```powershell
+PS C:\> Get-AzFrontDoorRulesEngine -ResourceGroupName $resourceGroupName -FrontDoorName $frontDoorName -Name rulesengine3
+
+Name         RulesEngineRules
+----         ----------------
+rulesEngine3 {rules1}
+```
+
+Mendapatkan konfigurasi mesin aturan tertentu.
+
+### Contoh 2
+
+```powershell
+PS C:\> Get-AzFrontDoorRulesEngine -ResourceGroupName $resourceGroupName -FrontDoorName $frontDoorName
+
+Name         RulesEngineRules
+----         ----------------
+rulesEngine1 {Rule1}
+rulesEngine2 {Rule1}
+rulesEngine3 {rules1}
+```
+
+Dapatkan semua konfigurasi mesin aturan di pintu depan.
+
+### Contoh 3
+
+```powershell
+PS C:\> Get-AzFrontDoorRulesEngine -ResourceGroupName $resourceGroupName -FrontDoorName $frontDoorName -Name nonexistent
+Get-AzFrontDoorRulesEngine : Rules Engine with name 'nonexistent' in Front Door 'frontDoorName' is not found.
+At line:1 char:1
++ Get-AzFrontDoorRulesEngine -ResourceGroupName $resourceGroupName -FrontD ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ CategoryInfo          : CloseError: (:) [Get-AzFrontDoorRulesEngine], PSArgumentException
++ FullyQualifiedErrorId : Microsoft.Azure.Commands.FrontDoor.Cmdlets.GetFrontDoorRulesEngine
+```
+
+Output yang diharapkan saat mendapatkan mesin aturan yang tidak konsisten. 
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FrontDoorName
+Nama Pintu Depan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama mesin aturan.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya tempat Pintu Depan akan dibuat.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngine
+
+## CATATAN
+
+## RELATED LINKS
