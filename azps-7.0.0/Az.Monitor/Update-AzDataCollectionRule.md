@@ -1,0 +1,264 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml
+Module Name: Az.Monitor
+online version: https://docs.microsoft.com/powershell/module/az.monitor/update-azdatacollectionrule
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzDataCollectionRule.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzDataCollectionRule.md
+ms.openlocfilehash: eef05d555f1cc37c0d1f8873e84dc70db6665185
+ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "136560011"
+---
+# Update-AzDataCollectionRule
+
+## SYNOPSIS
+Memperbarui properti tag aturan pengumpulan data.
+
+## SYNTAX
+
+### ByName (Default)
+```
+Update-AzDataCollectionRule 
+      -ResourceGroupName <string> 
+      -RuleName <string> 
+      [-Tag <hashtable>] 
+      [-DefaultProfile <IAzureContextContainer>] 
+      [-WhatIf] 
+      [-Confirm]
+      [<CommonParameters>]
+```
+
+### ByResourceId
+```
+Update-AzDataCollectionRule 
+      -RuleId <string> 
+      [-Tag <hashtable>] 
+      [-DefaultProfile <IAzureContextContainer>] 
+      [-WhatIf] 
+      [-Confirm]
+      [<CommonParameters>]
+```
+
+### ByInputObject
+```
+Update-AzDataCollectionRule 
+      -InputObject <PSDataCollectionRuleResource> 
+      [-Tag <hashtable>] 
+      [-DefaultProfile <IAzureContextContainer>]
+      [-WhatIf]
+      [-Confirm]
+      [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Update-AzDataCollectionRule** memperbarui aturan pengumpulan data properti Tag.
+
+Aturan Pengumpulan Data (DCR, Data Collection Rules) menentukan data yang akan masuk ke Azure Monitor dan menentukan tempat data harus dikirimkan atau disimpan. Berikut adalah artikel gambaran [umum DCR lengkap.](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview)
+
+## EXAMPLES
+
+### Contoh 1: Memperbarui tag aturan pengumpulan data
+```
+PS C:\>Update-AzDataCollectionRule -RuleName 'newDcr'
+                                   -ResourceGroupName 'testdcr'
+                                   -Tag @{"tag1"="value1"; "tag2"="value2"}
+
+Description       : 
+DataSources       : Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleDataSources
+Destinations      : Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleDestinations
+DataFlows         : {Microsoft.Azure.Commands.Insights.OutputClasses.PSDataFlow}
+ProvisioningState : Succeeded
+Etag              : "{etag}"
+Id                : /subscriptions/{subId}/resourceGroups/testdcr/providers/Microsoft.Insights/dataCollectionRules/newDcr
+Name              : newDcr
+Type              : Microsoft.Insights/dataCollectionRules
+Location          : East US 2 EUAP
+Tags              : {[tag2, value2], [tag1, value1]}
+```
+
+Perintah ini memperbarui properti tag untuk aturan pengumpulan data yang diberikan.
+
+### Contoh 2: Memperbarui tag aturan pengumpulan data
+```
+PS C:\>Update-AzDataCollectionRule -RuleId '/subscriptions/{subId}/resourceGroups/testdcr/providers/Microsoft.Insights/dataCollectionRules/newDcr'
+                                   -Tag @{"tag1"="value1"; "tag2"="value2"}
+
+Description       : 
+DataSources       : Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleDataSources
+Destinations      : Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleDestinations
+DataFlows         : {Microsoft.Azure.Commands.Insights.OutputClasses.PSDataFlow}
+ProvisioningState : Succeeded
+Etag              : "{etag}"
+Id                : /subscriptions/{subId}/resourceGroups/testdcr/providers/Microsoft.Insights/dataCollectionRules/newDcr
+Name              : newDcr
+Type              : Microsoft.Insights/dataCollectionRules
+Location          : East US 2 EUAP
+Tags              : {[tag2, value2], [tag1, value1]}
+```
+
+Perintah ini memperbarui properti tag untuk aturan pengumpulan data yang diberikan.
+
+### Contoh 3: Memperbarui tag aturan pengumpulan data
+```
+PS C:\>$dcr = Get-AzDataCollectionRule -ResourceGroupName "testdcr" -Name "newDcr"
+PS C:\>$dcr | Update-AzDataCollectionRule -Tag @{"tag1"="value1"; "tag2"="value2"}
+
+Description       : 
+DataSources       : Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleDataSources
+Destinations      : Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleDestinations
+DataFlows         : {Microsoft.Azure.Commands.Insights.OutputClasses.PSDataFlow}
+ProvisioningState : {provState}
+Etag              : "{etag}"
+Id                : /subscriptions/{subId}/resourceGroups/testdcr/providers/Microsoft.Insights/dataCollectionRules/newDcr
+Name              : newDcr
+Type              : Microsoft.Insights/dataCollectionRules
+Location          : East US 2 EUAP
+Tags              : {[tag2, value2], [tag1, value1]}
+```
+
+Perintah ini memperbarui properti tag untuk aturan pengumpulan data yang diberikan.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RuleName
+Nama sumber daya
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
+Aliases: Name
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RuleId
+ID sumber daya aturan pengumpulan data
+
+```yaml
+Type: System.String
+Parameter Sets: ByResourceId
+Aliases: ResourceId
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True
+Accept wildcard characters: False
+```
+
+### -InputObject
+PSDataCollectionRuleResource Object
+
+```yaml
+Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSDataCollectionRuleResource
+Parameter Sets: ByInputObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True
+Accept wildcard characters: False
+```
+
+### -Tag
+Properti tag aturan pengumpulan data
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: Falose
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands. Insights. OutputClasses.PSDataCollectionRuleResource
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzDataCollectionRule](./New-AzDataCollectionRule.md) 
+ [Remove-AzDataCollectionRule](./Remove-AzDataCollectionRule.md) 
+ [Get-AzDataCollectionRule](./Get-AzDataCollectionRule.md) 
+ [Set-AzDataCollectionRule](./Set-AzDataCollectionRule.md)
