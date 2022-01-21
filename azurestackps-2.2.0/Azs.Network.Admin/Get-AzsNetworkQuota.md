@@ -1,0 +1,199 @@
+---
+external help file: ''
+Module Name: Azs.Network.Admin
+online version: https://docs.microsoft.com/powershell/module/azs.network.admin/get-azsnetworkquota
+schema: 2.0.0
+ms.openlocfilehash: 85451648af02a1fc8d2454a915026d16c67122a3
+ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "136578757"
+---
+# Get-AzsNetworkQuota
+
+## SYNOPSIS
+Dapatkan kuota menurut nama.
+
+## SYNTAX
+
+### Daftar (Default)
+```
+Get-AzsNetworkQuota [-Location <String>] [-SubscriptionId <String[]>] [-Filter <String>]
+ [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
+```
+
+### Dapatkan
+```
+Get-AzsNetworkQuota -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
+ [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-AzsNetworkQuota -INPUTOBJECT \<INetworkAdminIdentity> [-DefaultProfile <PSObject>] [-PassThru]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Daftar semua kuota.
+Batasi daftar dengan memberikan nama atau filter.
+
+## EXAMPLES
+
+### -------------------------- CONTOH 1 --------------------------
+```
+Get-AzsNetworkQuota
+```
+
+Mencantumkan semua kuota jaringan.
+
+### -------------------------- CONTOH 2 --------------------------
+```
+Get-AzsNetworkQuota -Name NetworkQuota1
+```
+
+Mendapatkan kuota jaringan yang ditentukan.
+
+
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+
+```
+
+### -Filter
+Parameter filter OData.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+
+```
+
+### -InputObject
+Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.INetworkAdminIdentity
+Parameter Sets: GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+
+```
+
+### -Lokasi
+Lokasi sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: Get, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzLocation)[0].Name
+Accept pipeline input: False
+Accept wildcard characters: False
+
+```
+
+### -Nama
+Nama sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+
+```
+
+### -PassThru
+Mengembalikan true saat perintah berhasil
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+
+```
+
+### -SubscriptionId
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+
+```yaml
+Type: System.String[]
+Parameter Sets: Get, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.INetworkAdminIdentity
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.IQuota
+
+
+
+## CATATAN
+
+PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+INPUTOBJECT \<INetworkAdminIdentity> : Parameter Identitas
+  - `[Id <String>]`: Jalur identitas sumber daya
+  - `[Location <String>]`: Lokasi sumber daya.
+  - `[ResourceName <String>]`: Nama sumber daya.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+
+## RELATED LINKS
+

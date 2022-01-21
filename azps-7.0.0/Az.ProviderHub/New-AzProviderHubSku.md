@@ -1,0 +1,242 @@
+---
+external help file: ''
+Module Name: Az.ProviderHub
+online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-azproviderhubsku
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubSku.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubSku.md
+ms.openlocfilehash: 98e21b85013a55e5cc8674a84e258f612c8cd02f
+ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "136558891"
+---
+# New-AzProviderHubSku
+
+## SYNOPSIS
+Membuat atau memperbarui sku tipe sumber daya dalam tipe sumber daya yang diberikan.
+
+## SYNTAX
+
+```
+New-AzProviderHubSku -ProviderNamespace <String> -ResourceType <String> -Sku <String>
+ -SkuSetting <ISkuSetting[]> [-SubscriptionId <String>] [-ProvisioningState <ProvisioningState>]
+ [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Membuat atau memperbarui sku tipe sumber daya dalam tipe sumber daya yang diberikan.
+
+## EXAMPLES
+
+### Contoh 1: Buat/Perbarui definisi SKU sumber daya.
+```powershell
+PS C:\> New-AzProviderHubSku -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType" -Sku "default" -SkuSetting @{Name = "freeSku"; Tier = "Tier1"; Kind = "Standard"}
+
+Name      Type
+----      ----
+default   Microsoft.ProviderHub/providerRegistrations/skus
+```
+
+Buat/Perbarui definisi SKU sumber daya.
+
+### Contoh 2: Buat/Perbarui definisi SKU tipe sumber daya bertumpuk.
+```powershell
+PS C:\> New-AzProviderHubSku -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType/nestedResourceType" -Sku "default" -SkuSetting @{Name = "freeSku"; Tier = "Tier1"; Kind = "Standard"}
+
+Name      Type
+----      ----
+default   Microsoft.ProviderHub/providerRegistrations/skus
+```
+
+Buat/Perbarui definisi SKU tipe sumber daya bertumpuk.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProviderNamespace
+Nama penyedia sumber daya yang dihosting dalam ProviderHub.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProvisioningState
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.ProvisioningState
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceType
+Tipe sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sku
+SKU tersebut.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SkuSetting
+.
+Untuk membuat, lihat bagian CATATAN untuk properti SKUSETTING dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISkuSetting[]
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID langganan target.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISkuResource
+
+## CATATAN
+
+ALIAS
+
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+SKUSETTING <ISkuSetting[]>: .
+  - `Name <String>`: 
+  - `[Capability <ISkuCapability[]>]`: 
+    - `Name <String>`: 
+    - `Value <String>`: 
+  - `[CapacityDefault <Int32?>]`: 
+  - `[CapacityMaximum <Int32?>]`: 
+  - `[CapacityMinimum <Int32?>]`: 
+  - `[CapacityScaleType <SkuScaleType?>]`: 
+  - `[Cost <ISkuCost[]>]`: 
+    - `MeterId <String>`: 
+    - `[ExtendedUnit <String>]`: 
+    - `[Quantity <Int32?>]`: 
+  - `[Family <String>]`: 
+  - `[Kind <String>]`: 
+  - `[Location <String[]>]`: 
+  - `[LocationInfo <ISkuLocationInfo[]>]`: 
+    - `Location <String>`: 
+    - `[ExtendedLocation <String[]>]`: 
+    - `[Type <String>]`: 
+    - `[Zone <String[]>]`: 
+    - `[ZoneDetail <ISkuZoneDetail[]>]`: 
+      - `[Capability <ISkuCapability[]>]`: 
+      - `[Name <String[]>]`: 
+  - `[RequiredFeature <String[]>]`: 
+  - `[RequiredQuotaId <String[]>]`: 
+  - `[Size <String>]`: 
+  - `[Tier <String>]`: 
+
+## RELATED LINKS
+
