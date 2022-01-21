@@ -1,0 +1,305 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
+Module Name: Az.Storage
+ms.assetid: 3CFA6E31-E243-4B22-AE8F-1942DD324639
+online version: https://docs.microsoft.com/powershell/module/az.storage/new-azstoragetablesastoken
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageTableSASToken.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageTableSASToken.md
+ms.openlocfilehash: 593721716a9d9185e61289f2b6f92e25debe7ac0
+ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "136557869"
+---
+# New-AzStorageTableSASToken
+
+## SYNOPSIS
+Menghasilkan token SAS untuk Azure Storage tabel.
+
+## SYNTAX
+
+### SasPolicy
+```
+New-AzStorageTableSASToken [-Name] <String> -Policy <String> [-Protocol <SharedAccessProtocol>]
+ [-IPAddressOrRange <String>] [-StartTime <DateTime>] [-ExpiryTime <DateTime>] [-FullUri]
+ [-StartPartitionKey <String>] [-StartRowKey <String>] [-EndPartitionKey <String>] [-EndRowKey <String>]
+ [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### SasPermission
+```
+New-AzStorageTableSASToken [-Name] <String> [-Permission <String>] [-Protocol <SharedAccessProtocol>]
+ [-IPAddressOrRange <String>] [-StartTime <DateTime>] [-ExpiryTime <DateTime>] [-FullUri]
+ [-StartPartitionKey <String>] [-StartRowKey <String>] [-EndPartitionKey <String>] [-EndRowKey <String>]
+ [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzStorageTableSASToken** menghasilkan token Shared Access Signature (SAS) untuk Azure Storage tabel.
+
+## EXAMPLES
+
+### Contoh 1: Buat token SAS yang memiliki izin penuh untuk tabel
+```
+C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Permission "raud"
+```
+
+Perintah ini menghasilkan token SAS dengan izin penuh untuk tabel bernama ContosoResources.
+Token tersebut untuk izin membaca, menambahkan, memperbarui, dan menghapus.
+
+### Contoh 2: Menghasilkan token SAS untuk rentang partisi
+```
+C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Permission "raud" -StartPartitionKey "a" -EndPartitionKey "b"
+```
+
+Perintah ini menghasilkan dan token SAS dengan izin penuh untuk tabel bernama ContosoResources.
+The command limits the token to the range that the *StartPartitionKey* and *EndPartitionKey* specify.
+
+### Contoh 3: Buat token SAS yang memiliki kebijakan akses tersimpan untuk tabel
+```
+C:\PS>New-AzStorageTableSASToken -Name "ContosoResources" -Policy "ClientPolicy01"
+```
+
+Perintah ini menghasilkan token SAS untuk tabel bernama ContosoResources.
+Perintah menentukan kebijakan akses tersimpan bernama ClientPolicy01.
+
+## PARAMETERS
+
+### -Konteks
+Menentukan konteks penyimpanan Azure.
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndPartitionKey
+Menentukan kunci partisi dari akhir rentang untuk token yang dibuat cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: endpk
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndRowKey
+Menentukan kunci baris untuk akhir rentang untuk token yang dibuat cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: endrk
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpiryTime
+Menentukan kapan token SAS kedaluwarsa.
+
+```yaml
+Type: System.Nullable`1[System.DateTime]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FullUri
+Menunjukkan bahwa cmdlet ini mengembalikan URI antrean penuh dengan token SAS.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IPAddressOrRange
+Menentukan alamat IP atau rentang alamat IP untuk menerima permintaan, seperti 168.1.5.65 atau 168.1.5.60-168.1.5.70.
+Rentang bersifat inklusif.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama tabel Azure Storage.
+Cmdlet ini membuat token SAS untuk tabel yang ditentukan parameter ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: N, Table
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -Permission
+Menentukan izin untuk Azure Storage tabel.
+Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+
+```yaml
+Type: System.String
+Parameter Sets: SasPermission
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Kebijakan
+Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token SAS ini.
+
+```yaml
+Type: System.String
+Parameter Sets: SasPolicy
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Protocol
+Menentukan protokol yang diizinkan untuk permintaan.
+Nilai yang dapat diterima untuk parameter ini adalah:
+* HttpsOnly
+* HttpsOrHttp Nilai default adalah HttpsOrHttp.
+
+```yaml
+Type: System.Nullable`1[Microsoft.Azure.Cosmos.Table.SharedAccessProtocol]
+Parameter Sets: (All)
+Aliases:
+Accepted values: HttpsOnly, HttpsOrHttp
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartPartitionKey
+Menentukan kunci partisi dari awal rentang untuk token yang dibuat cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: startpk
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartRowKey
+Menentukan kunci baris untuk awal rentang untuk token yang dibuat cmdlet ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: startrk
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartTime
+Menentukan kapan token SAS menjadi valid.
+
+```yaml
+Type: System.Nullable`1[System.DateTime]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
+
+## OUTPUTS
+
+### System.String
+
+## CATATAN
+
+## RELATED LINKS
+
+[New-AzStorageContext](./New-AzStorageContext.md)
