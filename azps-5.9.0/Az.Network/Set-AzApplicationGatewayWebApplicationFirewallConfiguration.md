@@ -40,7 +40,7 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> Set-AzApplicationGatewayWebApplicationFirewallConfiguration -ApplicationGateway $AppGw -Enabled $True -FirewallMode "Detection" -RuleSetType "OWASP" -RuleSetVersion "3.0"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01, lalu menyimpannya dalam $AppGw baru.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01, lalu menyimpannya dalam $AppGw variabel.
 Perintah kedua mengaktifkan konfigurasi firewall untuk gateway aplikasi yang disimpan di $AppGw dan mengatur mode firewall ke "Deteksi", RuleSetType ke "OWASP" dan RuleSetVersion ke "3.0".
 
 ## PARAMETERS

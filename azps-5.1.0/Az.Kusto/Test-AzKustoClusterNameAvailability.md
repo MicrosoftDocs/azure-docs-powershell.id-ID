@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUT
 
