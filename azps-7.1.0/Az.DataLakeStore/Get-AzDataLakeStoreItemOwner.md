@@ -1,0 +1,125 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataLakeStore.dll-Help.xml
+Module Name: Az.DataLakeStore
+ms.assetid: 335588D4-4D2C-4DBD-B6B2-B1227C4AF9A9
+online version: https://docs.microsoft.com/powershell/module/az.datalakestore/get-azdatalakestoreitemowner
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemOwner.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemOwner.md
+ms.openlocfilehash: 0e378765e16a9b31dd4e6d80365ed2a6362844df
+ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "136706375"
+---
+# Get-AzDataLakeStoreItemOwner
+
+## SYNOPSIS
+Dapatkan pemilik file atau folder di Data Lake Store.
+
+## SYNTAX
+
+```
+Get-AzDataLakeStoreItemOwner [-Account] <String> [-Path] <DataLakeStorePathInstance> [-Type] <Owner>
+ [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzDataLakeStoreItemOwner** mendapatkan pemilik file atau folder di Data Lake Store.
+
+## EXAMPLES
+
+### Contoh 1: Dapatkan pemilik untuk direktori
+```
+PS C:\>Get-AzDataLakeStoreItemOwner -AccountName "ContosoADL" -Path / -Type User
+```
+
+Perintah ini mendapatkan pemilik pengguna untuk direktori akar akun ContosoADL.
+
+## PARAMETERS
+
+### -Akun
+Menentukan nama akun Data Lake Store.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: AccountName
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+Menentukan jalur Data Lake Store dari sebuah item, dimulai dengan direktori akar (/).
+
+```yaml
+Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Tipe
+Menentukan tipe pemilik yang akan dapatkan.
+Nilai yang dapat diterima untuk parameter ini adalah: Pengguna dan Grup.
+
+```yaml
+Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreEnums+Owner
+Parameter Sets: (All)
+Aliases:
+Accepted values: User, Group
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
+
+### Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreEnums+Owner
+
+## OUTPUTS
+
+### System.String
+
+## CATATAN
+
+## RELATED LINKS
+
+[Set-AzDataLakeStoreItemOwner](./Set-AzDataLakeStoreItemOwner.md)
+
+
