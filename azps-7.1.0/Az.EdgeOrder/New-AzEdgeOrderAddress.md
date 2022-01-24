@@ -1,0 +1,290 @@
+---
+external help file: ''
+Module Name: Az.EdgeOrder
+online version: https://docs.microsoft.com/powershell/module/az.edgeorder/new-azedgeorderaddress
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderAddress.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderAddress.md
+ms.openlocfilehash: 3061373d6972f1e10547b75ed6fa252240cb4f94
+ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "136705884"
+---
+# New-AzEdgeOrderAddress
+
+## SYNOPSIS
+Membuat alamat baru dengan parameter yang ditentukan.
+Alamat yang sudah ada dapat diperbarui dengan API ini
+
+## SYNTAX
+
+```
+New-AzEdgeOrderAddress -Name <String> -ResourceGroupName <String> -ContactDetail <IContactDetails>
+ -Location <String> [-SubscriptionId <String>] [-ShippingAddress <IShippingAddress>] [-Tag <Hashtable>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Membuat alamat baru dengan parameter yang ditentukan.
+Alamat yang sudah ada dapat diperbarui dengan API ini
+
+## EXAMPLES
+
+### Contoh 1: Membuat alamat baru
+```powershell
+PS C:\> $contactDetail = New-AzEdgeOrderContactDetailsObject -ContactName ContactName -EmailList @("emailId") -Phone Phone
+PS C:\> $ShippingDetails = New-AzEdgeOrderShippingAddressObject -StreetAddress1 "101 TOWNSEND ST" -StateOrProvince "CA" -Country "US" -City "San Francisco" -PostalCode "94107" -AddressType "Commercial"
+PS C:\> $DebugPreference = "Continue"
+# You can use `$DebugPreference = "Continue"`, with any example/usecase to get exact details of error in below format when creation command fails.
+# {
+#   "Error": {
+#     "Code": "StaticValidationGenericCountryCodeHasInvalidLength",
+#     "Message": "The attribute country code does not meet length constraints.\r\nEnter a value with 2 characters for country code.",
+#     "Details": [
+#       null
+#     ],
+#     "Target": null
+#   }
+# } 
+PS C:\> $address = New-AzEdgeOrderAddress -Name "TestPwAddress" -ResourceGroupName "resourceGroupName" -ContactDetail $contactDetail -SubscriptionId SubscriptionId -ShippingAddress $ShippingDetails -Location "eastus"
+PS C:\> $address | fl
+
+AddressValidationStatus      : Valid
+ContactDetail                : Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.ContactDetails
+Id                           : /subscriptions/SubscriptionId/resourceGroups/resourceGroupName/providers/Microsoft.EdgeOrder/addresses/TestPwAddress
+Location                     : eastus
+Name                         : TestPwAddress
+ShippingAddress              : Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.ShippingAddress
+SystemData                     : Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20.SystemData
+Tag                          : Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20.TrackedResourceTags
+Type                         : Microsoft.EdgeOrder/addresses
+```
+
+Membuat alamat baru.
+
+## PARAMETERS
+
+### -AsJob
+Menjalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContactDetail
+Detail kontak untuk alamat Konstruksi, lihat bagian CATATAN untuk properti CONTACTDETAIL dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IContactDetails
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Lokasi
+Lokasi geo-location di mana sumber daya berada
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama Sumber Daya alamat dalam grup sumber daya yang ditentukan.
+nama alamat harus panjang antara 3 dan 24 karakter dan gunakan alfanumerik dan garis bawah saja
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: AddressName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Menjalankan perintah secara asinkron
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+Namanya peka huruf besar/huruf.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShippingAddress
+Detail pengiriman untuk alamat Konstruksi, lihat bagian CATATAN untuk properti SHIPPINGADDRESS dan buat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IShippingAddress
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID langganan target.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+Tag sumber daya.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IAddressResource
+
+## CATATAN
+
+ALIAS
+
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+CONTACTDETAIL <IContactDetails> : Detail kontak alamat
+  - `ContactName <String>`: Nama kontak orang tersebut.
+  - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
+  - `Phone <String>`: Telepon nomor kontak.
+  - `[Mobile <String>]`: Nomor ponsel orang yang dapat dihubungi.
+  - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang kontak.
+
+ALAMAT PENGIRIMAN <IShippingAddress> : Detail pengiriman untuk alamat
+  - `Country <String>`: Nama Negara.
+  - `StreetAddress1 <String>`: Alamat Jalan baris 1.
+  - `[AddressType <AddressType?>]`: Tipe alamat.
+  - `[City <String>]`: Nama Kota.
+  - `[CompanyName <String>]`: Nama perusahaan.
+  - `[PostalCode <String>]`: Kode pos.
+  - `[StateOrProvince <String>]`: Nama Negara Bagian atau Provinsi.
+  - `[StreetAddress2 <String>]`: Alamat Jalan baris 2.
+  - `[StreetAddress3 <String>]`: Baris Alamat Jalan 3.
+  - `[ZipExtendedCode <String>]`: Kode pos diperluas.
+
+## RELATED LINKS
+
