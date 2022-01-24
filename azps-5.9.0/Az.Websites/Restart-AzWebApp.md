@@ -33,7 +33,7 @@ Restart-AzWebApp [-WebApp] <PSSite> [-DefaultProfile <IAzureContextContainer>] [
 
 ## DESCRIPTION
 Cmdlet **Mulai Ulang-AzWebApp** berhenti dan memulai Azure Web App.
-Jika Web App dalam status berhenti, gunakan cmdlet Start-AzWebApp.
+Jika Web App dalam keadaan berhenti, gunakan cmdlet Start-AzWebApp.
 
 ## EXAMPLES
 

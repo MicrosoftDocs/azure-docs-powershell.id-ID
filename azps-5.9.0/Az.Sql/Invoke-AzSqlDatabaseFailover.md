@@ -26,7 +26,7 @@ Invoke-AzSqlDatabaseFailover [-DatabaseName] <String> [-ReadableSecondary] [-AsJ
 ```
 
 ## DESCRIPTION
-Cmdlet Invoke-AzSqlDatabaseFailover failovers Azure SQL database. Jika database berada dalam pool elastis, perintah ini akan membuat database tertentu tanpa mempengaruhi database lain dalam pool elastis yang sama.
+Cmdlet Invoke-AzSqlDatabaseFailover cmdlet failovers Azure SQL database. Jika database berada dalam pool elastis, perintah ini akan membuat database tertentu tanpa mempengaruhi database lain dalam pool elastis yang sama.
 
 ## EXAMPLES
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
