@@ -1,19 +1,19 @@
 ---
-title: Perubahan migrasi di Azure AD Graph Microsoft di Azure PowerShell
-description: Panduan migrasi ini berisi daftar Azure PowerShell baru untuk Azure AD ke Microsoft Graph di Az.Resources 5.1.0.
+title: Perubahan migrasi Azure AD ke Microsoft Graph di Azure PowerShell
+description: Panduan migrasi ini berisi daftar perubahan Azure PowerShell azure AD ke Microsoft Graph di Az.Resources 5.1.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 01/06/2022
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: 3c1c64586f923b724596771ff87dca19c9a9b730
-ms.sourcegitcommit: e109cc5320478db6aa8a52d49996b133007a65b9
+ms.openlocfilehash: bdf942543539bcf00cd01d8274cb0ada7b90aa70
+ms.sourcegitcommit: 252df434c4b7548774bb34704472619a16171deb
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "135955105"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "137778540"
 ---
-# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi di Azure AD Graph Microsoft di Azure PowerShell
+# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Perubahan migrasi Azure AD ke Microsoft Graph di Azure PowerShell
 
 Modul `Az.Resources` PowerShell versi 5.1.0 dari Azure PowerShell memperkenalkan perubahan pada cmdlet yang terkait dengan identitas. Cmdlet yang mengandalkan Azure AD Graph akan beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang lancar ketika pengumuman pensiun [Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
 Untuk informasi selengkapnya, lihat [Azure AD ke Microsoft Graph migrasi untuk alat baris perintah Azure.](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666)
@@ -221,6 +221,8 @@ Lihat informasi berikut ini untuk daftar perubahan.
 - Parameter `IncludeTotalCount` telah dihapus
 
 - Tipe input parameter `GroupObject` telah diubah `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+
+[!INCLUDE [get-azadgroupmember-no-serviceprincipal-banner](../../includes/get-azadgroupmember-no-serviceprincipal-banner.md)]
 
 ### <a name="add-azadgroupmember"></a>Add-AzAdGroupMember
 
