@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
-ms.openlocfilehash: a34612de0340636e3d5e9af3e28749a639022f76
+ms.openlocfilehash: 968ac13bd089d975eaecbd9a22216556a9b76c7a
 ms.sourcegitcommit: 2b90f2e68e4992e43f16a51f69e5581db189440b
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 01/26/2022
-ms.locfileid: "137778658"
+ms.locfileid: "137778999"
 ---
 # New-AzRedisCache
 
@@ -24,9 +24,8 @@ Membuat Cache Redis.
 New-AzRedisCache -ResourceGroupName <String> -Name <String> -Location <String> [-Size <String>] [-Sku <String>]
  [-RedisConfiguration <Hashtable>] [-EnableNonSslPort <Boolean>] [-TenantSettings <Hashtable>]
  [-ShardCount <Int32>] [-MinimumTlsVersion <String>] [-SubnetId <String>] [-StaticIP <String>]
- [-Tag <Hashtable>] [-Zone <String[]>] [-RedisVersion <String>] [-IdentityType <String>]
- [-UserAssignedIdentity <String[]>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Tag <Hashtable>] [-Zone <String[]>] [-RedisVersion <String>] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -111,7 +110,6 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
           Tag                : {}
           Zone               : {1, 2}
 ```
-
 Perintah ini membuat cache Azure untuk instans Redis dalam beberapa zona.
 
 ### Contoh 4: Buat Jaringan Virtual aktifkan Cache
@@ -166,8 +164,6 @@ Untuk mengaktifkan cadangan RDB
 -  rdb-backup-enabled (Set true atau false)
 -  rdb-storage-connection-string (Beri string koneksi dalam format di atas.)
 -  rdb-backup-frequency (Mengatur interval pencadangan dalam menit. Anda hanya dapat memilih dari - 15, 30, 60, 360, 720 dan 1440 menit.)
-
-
 
 ```
 PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "Central US" -Size P1 -Sku "Premium" -RedisConfiguration @{"rdb-backup-enabled" = "true"; "rdb-storage-connection-string" = "DefaultEndpointsProtocol=https;AccountName=mystorageaccount;AccountKey=pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=;EndpointSuffix=core.windows.net"; "rdb-backup-frequency" = "30"}
@@ -247,21 +243,6 @@ Nilai default dinonaktifkan $False (port non-SSL dinonaktifkan).
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -IdentityType
-Menentukan tipe identitas yang digunakan untuk Azure Cache untuk Redis. Nilai yang valid: "SystemAssigned" atau "UserAssigned" atau "SystemAssignedUserAssigned" atau "None"
-
-```yaml
-Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -418,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScountCount
-Menentukan jumlah s node untuk dibuat pada singgahan kluster Premium baru.
+Menentukan jumlah s node untuk dibuat pada cache kluster Premium baru.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - 1
 - 2
@@ -550,21 +531,6 @@ Parameter ini sudah tidak berlaku lagi.
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -UserAssignedIdentity
-Menentukan satu atau beberapa identitas pengguna yang di seperasi yang akan dikaitkan dengan Cache Azure untuk Redis. Referensi identitas pengguna akan menjadi ID sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/identities/{identityName}'
-
-```yaml
-Type: System.String[]
 Parameter Sets: (All)
 Aliases:
 

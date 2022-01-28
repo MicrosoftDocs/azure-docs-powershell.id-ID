@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
-ms.openlocfilehash: bcfef76a59d60598dc3a96c15a3f132e1b61fee6
-ms.sourcegitcommit: 579224f3f35e223624deb694bceb0033c84a5856
+ms.openlocfilehash: 968ac13bd089d975eaecbd9a22216556a9b76c7a
+ms.sourcegitcommit: 2b90f2e68e4992e43f16a51f69e5581db189440b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "136536893"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "137778604"
 ---
 # New-AzRedisCache
 
@@ -44,7 +44,7 @@ PS C:\>New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "
           Location           : North Central US
           Name               : MyCache
           Type               : Microsoft.Cache/Redis
-          HostName           : mycache.redis.cache.windows.net 
+          HostName           : mycache.redis.cache.windows.net
           Port               : 6379
           ProvisioningState  : creating
           SslPort            : 6380
@@ -74,7 +74,7 @@ PS C:\>New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "
           Port               : 6379
           ProvisioningState  : creating
           SslPort            : 6380
-          RedisConfiguration : {[maxmemory-policy, allkeys-random]} 
+          RedisConfiguration : {[maxmemory-policy, allkeys-random]}
           EnableNonSslPort   : False
           RedisVersion       : 2.8
           Size               : 250MB
@@ -85,7 +85,7 @@ PS C:\>New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "
 
 Cmdlet ini membuat cache menggunakan Cache Azure untuk Redis.
 
-### Contoh 3: Membuat Cache Tak Perlu Zona 
+### Contoh 3: Membuat Cache Tak Perlu Zona
 
 ```
 PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "Central US" -Size P1 -Sku "Premium" -Zone @("1","2")
@@ -102,7 +102,7 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
           ProvisioningState  : creating
           SslPort            : 6380
           RedisConfiguration : {[maxmemory-policy, allkeys-random], [maxclients, 7500], [maxmemory-reserved, 200],
-                                [maxfragmentationmemory-reserved, 300]...} 
+                                [maxfragmentationmemory-reserved, 300]...}
           EnableNonSslPort   : False
           RedisVersion       : 4.0.14
           Size               : 6GB
@@ -115,7 +115,7 @@ Perintah ini membuat cache Azure untuk instans Redis dalam beberapa zona.
 ### Contoh 4: Buat Jaringan Virtual aktifkan Cache
 
 Persyaratan untuk membuat Jaringan Virtual mengaktifkan cache.
-1. Buat jaringan virtual dalam grup sumber daya yang sama tempat Anda ingin membuat cache redis. Anda bisa membuat jaringan virtual dari [perintah powershell New-AzVirtualNetwork.](./../../../Network/Network/help/New-AzVirtualNetwork.md)
+1. Buat jaringan virtual dalam grup sumber daya yang sama tempat Anda ingin membuat cache redis. Anda bisa membuat jaringan virtual dari [perintah powershell New-AzVirtualNetwork.](/powershell/module/az.network/new-azvirtualnetwork)
 1. Anda akan memerlukan SubnetID untuk VNET yang mengaktifkan cache. Sintaks SubnetID diberikan di bawah ini.
 
 Format SubnetID: /subscriptions/{subid}/resourceGroups/{resourceGroupName}/providers/Microsoft.ClassicNetwork/VirtualNetworks/{vnetName}/subnets/{subnetName}
@@ -135,18 +135,18 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
           ProvisioningState  : creating
           SslPort            : 6380
           RedisConfiguration : {[maxmemory-policy, allkeys-random], [maxclients, 7500], [maxmemory-reserved, 200],
-                                [maxfragmentationmemory-reserved, 300]...} 
+                                [maxfragmentationmemory-reserved, 300]...}
           EnableNonSslPort   : False
           RedisVersion       : 4.0.14
           Size               : 6GB
           Sku                : Premium
           SubnetId           : /subscriptions/a559b6fd-3a84-40bb-a450-b0db5ed37dfe/resourceGroups/mygroup/providers/Microsoft.Network/virtualNetworks/MyNet/subnets/MySubnet
-          StaticIP           : 10.0.0.4  
+          StaticIP           : 10.0.0.4
           Tag                : {}
           Zone               : []
 ```
 
-### Contoh 5: Mengonfigurasi persistensi data untuk suatu Premium Cache Azure untuk Redis
+### Contoh 5: Mengonfigurasi persistensi data untuk suatu Premium Azure untuk Redis
 
 Persistensi menulis Redis data ke akun Azure Storage yang Anda miliki dan kelola. Jadi sebelum mengonfigurasi persistensi data Anda harus memiliki akun [penyimpanan di](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-powershell) grup sumber daya yang sama. Pilih akun penyimpanan di kawasan dan langganan yang sama dengan cache, lalu akun Premium Storage direkomendasikan karena penyimpanan premium memiliki throughput yang lebih tinggi.
 
@@ -158,13 +158,13 @@ Setelah membuat akun penyimpanan, dapatkan string koneksi akun penyimpanan mengg
 
 Format String Koneksi :- "DefaultEndpointsProtocol=https; AccountName={storageAccountName}; AccountKey={storageAccountKey}; Endpoint Vefix=core.windows.net"</br>
 
-Anda harus memiliki pengaturan konfigurasi Redis tertentu untuk mengaktifkan persistensi data.  
+Anda harus memiliki pengaturan konfigurasi Redis tertentu untuk mengaktifkan persistensi data.
 
 Untuk mengaktifkan cadangan RDB
 -  rdb-backup-enabled (Set true atau false)
--  rdb-storage-connection-string (Beri string koneksi dalam format di atas.)    
--  rdb-backup-frequency (Mengatur interval pencadangan dalam menit. Anda hanya dapat memilih dari - 15, 30, 60, 360, 720 dan 1440 menit.)  
-    
+-  rdb-storage-connection-string (Beri string koneksi dalam format di atas.)
+-  rdb-backup-frequency (Mengatur interval pencadangan dalam menit. Anda hanya dapat memilih dari - 15, 30, 60, 360, 720 dan 1440 menit.)
+
 ```
 PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "Central US" -Size P1 -Sku "Premium" -RedisConfiguration @{"rdb-backup-enabled" = "true"; "rdb-storage-connection-string" = "DefaultEndpointsProtocol=https;AccountName=mystorageaccount;AccountKey=pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=;EndpointSuffix=core.windows.net"; "rdb-backup-frequency" = "30"}
 
@@ -180,7 +180,7 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
           ProvisioningState  : creating
           SslPort            : 6380
           RedisConfiguration : {[maxmemory-policy, allkeys-random], [maxclients, 7500], [maxmemory-reserved, 200],
-                                [maxfragmentationmemory-reserved, 300], [rdb-backup-enabled, true]....} 
+                                [maxfragmentationmemory-reserved, 300], [rdb-backup-enabled, true]....}
           EnableNonSslPort   : False
           RedisVersion       : 4.0.14
           Size               : 6GB
@@ -194,7 +194,7 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
 Untuk cadangan AOF yang diaktifkan.
 -  aof-backup-enabled (Set true or false),
 -  aof-storage-connection-string-0 (Berikan string koneksi dalam format di atas.)
--  aof-storage-connection-string-1 (Secara opsional Anda bisa mengonfigurasi akun penyimpanan lain. Jika akun penyimpanan kedua dikonfigurasi, tulisan di ke singgahan replika ditulis ke akun penyimpanan kedua.) 
+-  aof-storage-connection-string-1 (Secara opsional Anda bisa mengonfigurasi akun penyimpanan lain. Jika akun penyimpanan kedua dikonfigurasi, tulisan di ke singgahan replika ditulis ke akun penyimpanan kedua.)
 
 ```
 PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "Central US" -Size P1 -Sku "Premium" -RedisConfiguration @{"aof-backup-enabled" = "true"; "aof-storage-connection-string-0" = "DefaultEndpointsProtocol=https;AccountName=mystorageaccount;AccountKey=pJ+jruGKPHDKsEC8kmoybobH3TZx2njBR3ipEsquZFo=;EndpointSuffix=core.windows.net"}
@@ -211,7 +211,7 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
           ProvisioningState  : creating
           SslPort            : 6380
           RedisConfiguration : {[maxmemory-policy, allkeys-random], [maxclients, 7500], [maxmemory-reserved, 200],
-                                [maxfragmentationmemory-reserved, 300], [aof-backup-enabled, true]...} 
+                                [maxfragmentationmemory-reserved, 300], [aof-backup-enabled, true]...}
           EnableNonSslPort   : False
           RedisVersion       : 4.0.14
           Size               : 6GB
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi untuk membuat Cache Redis.
-Nilai valid adalah: 
+Nilai valid adalah:
 - As Tengah Utara
 - As Tengah Selatan
 - AS Tengah
@@ -325,31 +325,31 @@ Menentukan string koneksi ke akun Storage untuk Persistensi data Redis.
 Premium tier saja.
 - rdb-backup-frequency.
 Menentukan frekuensi pencadangan untuk persistensi data Redis.
-Premium tier saja. 
+Premium tier saja.
 - max reserved.
 Mengonfigurasi memori yang dicadangkan untuk proses non-cache.
-Standar dan Premium tingkat. 
+Standar dan Premium tingkat.
 - max cookie-policy.
 Mengonfigurasi kebijakan pembatalan untuk cache.
-Semua tingkatan harga. 
+Semua tingkatan harga.
 - notify-keyspace-events.
 Mengonfigurasi pemberitahuan keyspace.
-Tingkatan standar dan premium. 
+Tingkatan standar dan premium.
 - hash-max-ziplist-entries.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Standar dan Premium tingkat.
 - hash-max-ziplist-value.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Standar dan Premium tingkat.
 - set-max-intset-entries.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Standar dan Premium tingkat.
 - zset-max-ziplist-entries.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Standar dan Premium tingkat.
 - zset-max-ziplist-value.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Standar dan Premium tingkat.
 - database anda.
 Mengonfigurasi jumlah database.
 Properti ini hanya dapat dikonfigurasi di pembuatan singgahan.
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScountCount
-Menentukan jumlah s node untuk dibuat pada cache kluster Premium baru.
+Menentukan jumlah s node untuk dibuat pada singgahan kluster Premium baru.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - 1
 - 2
@@ -409,7 +409,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - 6
 - 7
 - 8
-- 9 
+- 9
 - 10
 
 ```yaml
@@ -426,7 +426,7 @@ Accept wildcard characters: False
 
 ### -Size
 Menentukan ukuran Cache Redis.
-Nilai valid adalah: 
+Nilai valid adalah:
 - P1
 - P2
 - P3
@@ -461,7 +461,7 @@ Accept wildcard characters: False
 
 ### -Sku
 Menentukan SKU Cache Redis untuk dibuat.
-Nilai valid adalah: 
+Nilai valid adalah:
 - Dasar
 - Standar
 - Premium Nilai defaultnya adalah Standar.
