@@ -1,0 +1,151 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+online version: https://docs.microsoft.com/powershell/module/az.network/set-aznetworkinterfacetapconfig
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterfaceTapConfig.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterfaceTapConfig.md
+ms.openlocfilehash: ff595a7fc449d6d2ad42ce3a7388d8fa89906ae7
+ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138269980"
+---
+# Set-AzNetworkInterfaceTapConfig
+
+## SYNOPSIS
+Memperbarui konfigurasi ketuk untuk antarmuka jaringan.
+
+## SYNTAX
+
+```
+Set-AzNetworkInterfaceTapConfig -NetworkInterfaceTapConfig <PSNetworkInterfaceTapConfiguration> [-AsJob]
+ [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+**Set-AzNetworkInterfaceTapConfig** memperbarui konfigurasi ketuk untuk antarmuka jaringan.
+
+## EXAMPLES
+
+### Contoh 1: Setel TapConfiguration dengan nama TapConfig yang diperbarui
+```
+PS C:\>$tapConfig = Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -NetworkInterface "sourceNicName" -Name "tapconfigName"
+PS C:\>$tapConfig.Name = "NewTapName"
+PS C:\>Set-AzNetworkInterfaceTapConfig -NetworkInterfaceTapConfig $tapConfig
+```
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+Jangan minta konfirmasi.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NetworkInterfaceTapConfig
+Konfigurasi Ketuk NetworkInterface
+
+```yaml
+Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceTapConfiguration
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceTapConfiguration
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
+
+## CATATAN
+
+## RELATED LINKS
+
+[Add-AzNetworkInterfaceTapConfig](./Add-AzNetworkInterfaceTapConfig.md)
+
+[Get-AzNetworkInterfaceTapConfig](./Get-AzNetworkInterfaceTapConfig.md)
+
+[Remove-AzNetworkInterfaceTapConfig](./Remove-AzNetworkInterfaceTapConfig.md)

@@ -1,0 +1,220 @@
+---
+external help file: ''
+Module Name: Az.StreamAnalytics
+online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/get-azstreamanalyticsfunction
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsFunction.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsFunction.md
+ms.openlocfilehash: daee27f5c646ef475f47dbad39d93896ff2fffb2
+ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138290556"
+---
+# Get-AzStreamAnalyticsFunction
+
+## SYNOPSIS
+Mendapatkan detail tentang fungsi tertentu.
+
+## SYNTAX
+
+### Daftar (Default)
+```
+Get-AzStreamAnalyticsFunction -JobName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+ [-Select <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+```
+
+### Dapatkan
+```
+Get-AzStreamAnalyticsFunction -JobName <String> -Name <String> -ResourceGroupName <String>
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-AzStreamAnalyticsFunction -InputObject <IStreamAnalyticsIdentity> [-DefaultProfile <PSObject>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Mendapatkan detail tentang fungsi tertentu.
+
+## EXAMPLES
+
+### Contoh 1: Mendapatkan semua fungsi Analitik Streaming
+```powershell
+PS C:\> Get-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh
+
+Name        Type                                              ETag
+----        ----                                              ----
+function-01 Microsoft.StreamAnalytics/streamingjobs/functions
+```
+
+Perintah ini menetapkan fungsi yang ada pada pekerjaan.
+
+### Contoh 2: Mendapatkan fungsi Analitik Streaming tertentu
+```powershell
+PS C:\> Get-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name function-01
+
+Name        Type                                              ETag
+----        ----                                              ----
+function-01 Microsoft.StreamAnalytics/streamingjobs/functions e35beaf1-8c6c-4b26-bafe-733835510f49
+```
+
+Perintah ini mendapatkan informasi tentang fungsi yang ditentukan pada pekerjaan.
+
+### Contoh 3: Mendapatkan fungsi Analitik Streaming tertentu menurut saluran
+```powershell
+PS C:\> New-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-portal -Name function-05 -File .\test\template-json\Function_JavascriptUdf.json | Get-AzStreamAnalyticsFunction
+
+Name        Type                                              ETag
+----        ----                                              ----
+function-05 Microsoft.StreamAnalytics/streamingjobs/functions e35beaf1-8c6c-4b26-bafe-733835510f49
+```
+
+Perintah ini mendapatkan informasi tentang fungsi yang ditentukan pada pekerjaan.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
+Parameter Sets: GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -JobName
+Nama pekerjaan streaming.
+
+```yaml
+Type: System.String
+Parameter Sets: Get, List
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama fungsi.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases: FunctionName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+Namanya peka huruf besar/huruf.
+
+```yaml
+Type: System.String
+Parameter Sets: Get, List
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Pilih
+Parameter $select kueri OData.
+Daftar ini merupakan daftar properti struktural yang dipisahkan tanda koma untuk disertakan dalam respons, atau "*" untuk menyertakan semua properti. Secara default, semua properti akan dikembalikan kecuali diagnostik. Saat ini hanya menerima '*' sebagai nilai yang valid.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID langganan target.
+
+```yaml
+Type: System.String[]
+Parameter Sets: Get, List
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.Api20170401Preview.IFunction
+
+## CATATAN
+
+ALIAS
+
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
+  - `[ClusterName <String>]`: Nama kluster.
+  - `[FunctionName <String>]`: Nama fungsi.
+  - `[Id <String>]`: Jalur identitas sumber daya
+  - `[InputName <String>]`: Nama input.
+  - `[JobName <String>]`: Nama pekerjaan streaming.
+  - `[Location <String>]`: Kawasan untuk mengambil informasi kuota langganan. Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[OutputName <String>]`: Nama output.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[SubscriptionId <String>]`: ID langganan target.
+  - `[TransformationName <String>]`: Nama transformasi tersebut.
+
+## RELATED LINKS
+
