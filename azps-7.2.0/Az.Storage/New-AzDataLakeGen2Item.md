@@ -1,0 +1,321 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
+Module Name: Az.Storage
+online version: https://docs.microsoft.com/powershell/module/az.storage/new-azdatalakegen2item
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
+ms.openlocfilehash: 1a779391596a0b09c35d59abe6d78e4a0e19dc3a
+ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "138166245"
+---
+# New-AzDataLakeGen2Item
+
+## SYNOPSIS
+Membuat file atau direktori dalam filesystem.
+
+## SYNTAX
+
+### File (Default)
+```
+New-AzDataLakeGen2Item [-FileSystem] <String> [-Path] <String> -Source <String> [-Umask <String>]
+ [-Permission <String>] [-Property <Hashtable>] [-Metadata <Hashtable>] [-Force] [-AsJob]
+ [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Direktori
+```
+New-AzDataLakeGen2Item [-FileSystem] <String> [-Path] <String> [-Directory] [-Umask <String>]
+ [-Permission <String>] [-Property <Hashtable>] [-Metadata <Hashtable>] [-Force] [-AsJob]
+ [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **New-AzDataLakeGen2Item** membuat file atau direktori di Filesystem dalam akun penyimpanan Azure.
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage baru. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+
+## EXAMPLES
+
+### Contoh 1: Membuat direktori dengan izin tertentu, Umask, properti, dan metadata
+```
+PS C:\>New-AzDataLakeGen2Item -FileSystem "testfilesystem" -Path "dir1/dir2/" -Directory -Permission rwxrwxrwx -Umask ---rw---- -Property @{"CacheControl" = "READ"; "ContentDisposition" = "True"} -Metadata  @{"tag1" = "value1"; "tag2" = "value2" }
+
+   FileSystem Name: filesystem1
+
+Path                 IsDirectory  Length          LastModified         Permissions  Owner                Group               
+----                 -----------  ------          ------------         -----------  -----                -----               
+dir1/dir2            True                         2020-03-23 09:15:56Z rwx---rwx    $superuser           $superuser
+```
+
+Perintah ini membuat direktori dengan Izin, Umask, properti, dan metadata tertentu
+
+### Contoh 2: Buat(unggah) file data danau dari file sumber lokal, dan cmdlet berjalan di latar belakang
+```
+PS C:\> $task = New-AzDataLakeGen2Item  -FileSystem "testfilesystem" -Path "dir1/dir2/file1" -Source "c:\sourcefile.txt" -Force -asjob
+PS C:\> $task | Wait-Job
+PS C:\> $task.Output
+
+   FileSystem Name: filesystem1
+
+Path                 IsDirectory  Length          LastModified         Permissions  Owner                Group                
+----                 -----------  ------          ------------         -----------  -----                -----               
+dir1/dir2/file1      False        14400000        2020-03-23 09:19:13Z rw-r-----    $superuser           $superuser
+```
+
+Perintah ini akan membuat(mengunggah) file data danau dari file sumber lokal, dan cmdlet berjalan di latar belakang.
+
+## PARAMETERS
+
+### -AsJob
+Jalankan cmdlet di latar belakang
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConcurrentTaskCount
+Jumlah total tugas bersama. Nilai default adalah 10.
+
+```yaml
+Type: System.Nullable`1[System.Int32]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konteks
+Azure Storage Konteks
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Direktori
+Menunjukkan bahwa item baru ini merupakan direktori dan bukan file.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: Directory
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FileSystem
+Nama FileSystem
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Force
+Jika lolos, item baru akan dibuat tanpa perintah
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Metadata
+Menentukan metadata untuk direktori atau file yang dibuat.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+Jalur dalam Filesystem tertentu yang harus dibuat.
+Bisa merupakan file atau direktori Dalam format 'directory/file.txt' atau 'directory1/directory2/'
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Permission
+Mengatur izin akses POSIX untuk pemilik file, grup pemilik file, dan lainnya.
+Setiap kelas dapat diberi izin membaca, menulis, atau menjalankan.
+Symbolic (rwxrw-rw-) didukung.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Properti
+Menentukan properti untuk direktori atau file yang dibuat. Properti yang didukung untuk file adalah: CacheControl, ContentDisposition, ContentEncoding, ContentLanguage, ContentMD5, ContentType.
+Properti yang didukung untuk direktori adalah: CacheControl, ContentDisposition, ContentEncoding, ContentLanguage.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Source
+Tentukan jalur file sumber lokal yang akan diunggah ke file Datalake Gen2.
+
+```yaml
+Type: System.String
+Parameter Sets: File
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Umask
+Saat membuat Item Baru dan direktori induk tidak memiliki ACL default, umask membatasi izin file atau direktori untuk dibuat.
+Izin yang dihasilkan diberikan oleh p & ^u, di mana p adalah izin dan Anda adalah umask.
+Symbolic (rwxrw-rw-) didukung.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
+
+## OUTPUTS
+
+### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureDataLakeGen2Item
+
+## CATATAN
+
+## RELATED LINKS
