@@ -1,17 +1,17 @@
 ---
-title: Azure PowerShell versi modul dan irama rilis
 description: Artikel ini berisi Azure PowerShell versi dan rilis informasi irama untuk modul Az PowerShell.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/31/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 72397b3ed28426b99ff1ef300ed58c9a501f4494
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Azure PowerShell versi modul dan irama rilis
+ms.openlocfilehash: 5f8da4947a76cda776a6df0457bbc46e8976e43f
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335041"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855243"
 ---
 # <a name="azure-powershell-module-versioning-and-release-cadence"></a>Azure PowerShell versi modul dan irama rilis
 

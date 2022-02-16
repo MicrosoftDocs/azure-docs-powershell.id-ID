@@ -1,18 +1,18 @@
 ---
-title: Migrasi skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell
-description: Pelajari cara memigrasikan skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell.
 author: mikefrobbins
+description: Pelajari cara memigrasikan skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell.
+ms.author: mirobb
+ms.custom: devx-track-azurepowershell, mode-api
+ms.date: 02/08/2022
 ms.service: azure-powershell
 ms.topic: quickstart
-ms.custom: devx-track-azurepowershell, mode-api
-ms.author: mirobb
-ms.date: 01/04/2022
-ms.openlocfilehash: 195d97f594da6c6dee0d3fcfd64231ef25d6a370
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+title: Migrasi skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell
+ms.openlocfilehash: ef226fb0d199fc387738f18e4109200c3a5c4788
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335109"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855351"
 ---
 # <a name="quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module"></a>Mulai cepat: Secara otomatis memigrasikan skrip PowerShell dari AzureRM ke modul Az PowerShell
 

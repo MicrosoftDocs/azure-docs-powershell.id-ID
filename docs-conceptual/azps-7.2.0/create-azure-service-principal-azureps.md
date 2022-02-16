@@ -1,17 +1,17 @@
 ---
-title: Menggunakan prinsipal layanan Azure dengan Azure PowerShell
 description: Pelajari cara membuat dan menggunakan prinsipal layanan dengan Azure PowerShell.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.service: azure-powershell
-ms.date: 01/06/2022
 ms.custom: devx-track-azurepowershell
-ms.openlocfilehash: 8bee19b6626d5f9db547f756336fe8e91ec23a52
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.date: 02/08/2022
+ms.devlang: powershell
+ms.service: azure-powershell
+ms.topic: conceptual
+title: Menggunakan prinsipal layanan Azure dengan Azure PowerShell
+ms.openlocfilehash: 87c6052d328ed83d5f27bd1bd895937d2f096580
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335115"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138854991"
 ---
 # <a name="create-an-azure-service-principal-with-azure-powershell"></a>Membuat prinsipal layanan Azure dengan Microsoft Azure PowerShell
 

@@ -1,17 +1,17 @@
 ---
-title: Menginstal modul Azure Az PowerShell
 description: Cara menginstal Azure Az PowerShell dengan PowerShellGet
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: b3aa3141712c4877168ac5401f81fc6721434c78
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Menginstal modul Azure Az PowerShell
+ms.openlocfilehash: 739b5354de708b23abe274b8ba397e50b9194d4c
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335112"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855747"
 ---
 # <a name="install-the-azure-az-powershell-module"></a>Menginstal modul Azure Az PowerShell
 

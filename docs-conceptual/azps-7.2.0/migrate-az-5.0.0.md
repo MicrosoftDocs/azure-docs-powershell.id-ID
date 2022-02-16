@@ -1,17 +1,17 @@
 ---
-title: Panduan migrasi untuk Az 5.0.0
 description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 5.0.0.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: c1f2527a4041ef668757550af88dbfb0137b3a8e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Panduan migrasi untuk Az 5.0.0
+ms.openlocfilehash: 7ba78378f8563549bb5e53c1d80e6204d340e904
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335082"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855261"
 ---
 # <a name="migration-guide-for-az-500"></a>Panduan Migrasi untuk Az 5.0.0
 
@@ -42,7 +42,7 @@ Dokumen ini menjelaskan perubahan antara Az versi 4.0.0 dan 5.0.0.
     - [Get-AzDeploymentOperation](#get-azdeploymentoperation)
     - [Get-AzDeploymentApaIfResult](#get-azdeploymentwhatifresult)
     - [Get-AzTenantDeployment](#get-aztenantdeployment)
-    - [Get-AzTenantDeploymentOperasi](#get-aztenantdeploymentoperation)
+    - [Get-AzTenantDeploymentOperation](#get-aztenantdeploymentoperation)
     - [New-AzManagementGroupDeployment](#new-azmanagementgroupdeployment)
     - [New-AzDeployment](#new-azdeployment)
     - [New-AzTenantDeployment](#new-aztenantdeployment)

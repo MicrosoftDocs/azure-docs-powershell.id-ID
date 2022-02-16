@@ -1,17 +1,17 @@
 ---
-title: Memformat Azure PowerShell output cmdlet
 description: Cara memformat output cmdlet untuk Azure PowerShell.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 28c2818dd65f19058c0b88b694b475f2fa0777f9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Memformat Azure PowerShell output cmdlet
+ms.openlocfilehash: 9f63d4cf7645ae3566067fff2209130d1976b503
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335387"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855657"
 ---
 # <a name="format-azure-powershell-cmdlet-output"></a>Memformat Azure PowerShell output cmdlet
 

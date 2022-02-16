@@ -1,17 +1,17 @@
 ---
-title: Menggunakan modul Az PowerShell di belakang proxy
 description: Cara menggunakan modul Azure Az PowerShell di belakang server proxy
-ms.date: 01/04/2022
-ms.devlang: powershell
-ms.topic: conceptual
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 60428ed9014ad301f3608222e66b3f8cffb619f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Menggunakan modul Az PowerShell di belakang proxy
+ms.openlocfilehash: bc9bf6583ab484dcfe99f7811ac74cd1d18dc272
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335130"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138854937"
 ---
 # <a name="use-the-az-powershell-module-behind-a-proxy"></a>Menggunakan modul Az PowerShell di belakang proxy
 

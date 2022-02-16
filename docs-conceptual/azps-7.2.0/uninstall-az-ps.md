@@ -1,17 +1,17 @@
 ---
-title: Hapus Azure PowerShell
 description: Cara melakukan uninstall lengkap Azure PowerShell
-ms.date: 01/04/2022
-ms.devlang: powershell
-ms.topic: conceptual
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 6f87b49634dbbf0f00f2e9828840f1b669258237
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Hapus Azure PowerShell
+ms.openlocfilehash: 706fdd3855244ec424b28d0e6a76d6cd7668459e
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335386"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138854973"
 ---
 # <a name="how-to-uninstall-azure-powershell-modules"></a>Cara menghapus modul Azure PowerShell
 

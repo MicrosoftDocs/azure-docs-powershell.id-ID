@@ -1,17 +1,17 @@
 ---
-title: Mulai menggunakan Azure PowerShell
 description: Mulai menggunakan Azure PowerShell
-ms.devlang: powershell
-ms.topic: get-started-article
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: f6ada12faa1e82492824710103361792f8651fb8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: get-started-article
+title: Mulai menggunakan Azure PowerShell
+ms.openlocfilehash: e188bcf4ef5f2e0f7ba0e7b4eadbd0c34356cdc0
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335065"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138854919"
 ---
 # <a name="get-started-with-azure-powershell"></a>Mulai menggunakan Azure PowerShell
 
@@ -62,7 +62,7 @@ Untuk membantu Anda menemukan perintah umum, tabel ini mencantumkan jenis sumber
 |                              Jenis Sumber Daya                              |                   Modul Azure PowerShell                    |    Awalan kata benda     |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------ | ------------------ |
 | [Grup sumber daya](/azure/azure-resource-manager/resource-group-overview) | [Az.Resources](/powershell/module/az.resources#resources)    | `AzResourceGroup`  |
-| [Komputer virtual](/azure/virtual-machines)                             | [Az.Compute](/powershell/module/az.compute#virtual_machines) | `AzVM`             |
+| [Mesin virtual](/azure/virtual-machines)                             | [Az.Compute](/powershell/module/az.compute#virtual_machines) | `AzVM`             |
 | [Akun penyimpanan](/azure/storage/common/storage-introduction)          | [Az.Storage](/powershell/module/az.storage/)                 | `AzStorageAccount` |
 | [Key Vault](/azure/key-vault/key-vault-whatis)                          | [Az.KeyVault](/powershell/module/az.keyvault)                | `AzKeyVault`       |
 | [Aplikasi web](/azure/app-service)                                  | [Az.Websites](/powershell/module/az.websites)                | `AzWebApp`         |

@@ -1,17 +1,17 @@
 ---
-title: Azure PowerShell mendukung siklus hidup
 description: Detail tentang siklus hidup dukungan modul Azure PowerShell
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: d68081b063d8a0a97133bec71dae3c9a1ae3c326
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Azure PowerShell mendukung siklus hidup
+ms.openlocfilehash: 79b27197c5906532dadfe9bd0a21ffef7644cc01
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335038"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855675"
 ---
 # <a name="azure-powershell-support-lifecycle"></a>Siklus Hidup Dukungan Azure PowerShell
 

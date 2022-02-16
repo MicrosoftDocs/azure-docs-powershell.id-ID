@@ -1,17 +1,17 @@
 ---
-title: Masuk dengan Azure PowerShell
 description: Cara masuk dengan Azure PowerShell sebagai pengguna, prinsipal layanan, atau dengan identitas terkelola untuk sumber daya Azure.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/06/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: afb64db4a009b325bb71828683a2a79c0e9bef49
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Masuk dengan Azure PowerShell
+ms.openlocfilehash: ea18e9f30a44162429a92cf7cb485494a7ec19d9
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335127"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855603"
 ---
 # <a name="sign-in-with-azure-powershell"></a>Masuk dengan Azure PowerShell
 

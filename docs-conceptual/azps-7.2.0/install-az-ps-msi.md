@@ -1,17 +1,17 @@
 ---
-title: Instal Azure PowerShell dengan MSI
 description: Cara menginstal Azure PowerShell tanpa PowerShellGet menggunakan MSI
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 931bc58a0b6da886d5f0e65aa48f09848abcb4de
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Instal Azure PowerShell dengan MSI
+ms.openlocfilehash: 1eb6e959fa92065ca590eeb9a06d4a7729b5670a
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335103"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855309"
 ---
 # <a name="install-azure-powershell-on-windows-with-msi"></a>Instal Azure PowerShell di Windows dengan MSI
 

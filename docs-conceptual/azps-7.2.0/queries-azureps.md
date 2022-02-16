@@ -1,17 +1,17 @@
 ---
-title: Output kueri cmdlet Azure PowerShell
 description: Cara mengkueri sumber daya di Azure dan memformat hasilnya.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 5dfe0cbf8f924f337939d8d75b6508c7e601bdec
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Output kueri cmdlet Azure PowerShell
+ms.openlocfilehash: 0cc5845f7a1f00e8b544ff1c8520f0ce987f6b3d
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138184329"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855225"
 ---
 # <a name="query-output-of-azure-powershell"></a>Output kueri Azure PowerShell
 

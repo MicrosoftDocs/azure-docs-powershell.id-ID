@@ -1,17 +1,17 @@
 ---
-title: Panduan migrasi untuk Az 3.0.0
 description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 3.0.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 5844ce80a9aee33af6d1bca3f54a646bfea96793
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Panduan migrasi untuk Az 3.0.0
+ms.openlocfilehash: 9bae55c0fb0d438bd03e58b0d8cd0e0e10816d0e
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138184339"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855873"
 ---
 # <a name="migration-guide-for-az-300"></a>Panduan Migrasi untuk Az 3.0.0
 

@@ -1,17 +1,17 @@
 ---
-title: Memigrasikan skrip Azure PowerShell dari AzureRM ke Az
 description: Pelajari langkah dan alat untuk memigrasikan skrip Azure PowerShell dari AzureRM ke modul Az PowerShell baru.
+ms.custom: devx-track-azurepowershell, contperf-fy21q2
+ms.date: 02/08/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
-ms.date: 01/04/2022
-ms.custom: devx-track-azurepowershell, contperf-fy21q2
-ms.openlocfilehash: 3353ed967a21a7ff177d5282effdbe68c415dd24
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+title: Memigrasikan skrip Azure PowerShell dari AzureRM ke Az
+ms.openlocfilehash: 5dc0b9568532e45fc4900f5eeadf77fe308ed89e
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335069"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855837"
 ---
 # <a name="migrate-azure-powershell-from-azurerm-to-az"></a>Migrasikan Azure PowerShell dari AzureRM ke Az
 

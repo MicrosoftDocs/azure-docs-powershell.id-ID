@@ -1,17 +1,17 @@
 ---
-title: Konteks Azure dan kredensial masuk
 description: Pelajari cara menggunakan kembali kredensial Azure dan informasi lainnya di beberapa sesi PowerShell.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 540207a0124fbfd1f5a06f656ac909aeba093e0c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Konteks Azure dan kredensial masuk
+ms.openlocfilehash: e9dd4c160b5dc7764a62e46c6b604c1b10c7df12
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335058"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855387"
 ---
 # <a name="azure-powershell-context-objects"></a>objek konteks Azure PowerShell
 

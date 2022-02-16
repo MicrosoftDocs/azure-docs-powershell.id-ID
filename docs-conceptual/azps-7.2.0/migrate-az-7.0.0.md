@@ -1,17 +1,17 @@
 ---
-title: Panduan migrasi untuk Az 7.0.0
 description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 7.0.0.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/06/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: ad4a7a67cbf178e4197ea6f587de16f7cae838fe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Panduan migrasi untuk Az 7.0.0
+ms.openlocfilehash: cc8eed1c20ae81942f5e35fd15af4b360a34e521
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138184335"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855639"
 ---
 # <a name="migration-guide-for-az-700"></a>Panduan Migrasi untuk Az 7.0.0
 

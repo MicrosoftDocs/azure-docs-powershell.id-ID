@@ -1,17 +1,17 @@
 ---
-title: Memperkenalkan modul Azure Az PowerShell
 description: Memperkenalkan modul Az PowerShell, yang direkomendasikan untuk berinteraksi dengan Azure, dan penggantian modul AzureRM PowerShell.
-ms.date: 01/04/2022
-ms.devlang: powershell
-ms.topic: conceptual
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 31a0957337129d3b9bfd6c6355f83de596dedf5f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Memperkenalkan modul Azure Az PowerShell
+ms.openlocfilehash: b5a73d44cff5c6b32604d30ff86aa5f0147205e6
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335033"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855009"
 ---
 # <a name="introducing-the-azure-az-powershell-module"></a>Memperkenalkan modul Azure Az PowerShell
 

@@ -1,17 +1,17 @@
 ---
-title: Panduan migrasi untuk Az 2.0.0
 description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 2.0.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: c65baca268542d6dc2c3e2e4e987ac7ec9d2dea0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: Panduan migrasi untuk Az 2.0.0
+ms.openlocfilehash: ddf03ec39efb93170da393a39caa944174bcdd3b
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138184355"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855891"
 ---
 # <a name="migration-guide-for-az-200"></a>Panduan Migrasi untuk Az 2.0.0
 

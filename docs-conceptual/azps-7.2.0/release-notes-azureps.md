@@ -1,17 +1,17 @@
 ---
-title: catatan rilis Azure PowerShell
 description: Pelajari tentang semua pembaruan terbaru untuk modul Azure PowerShell.
-ms.devlang: powershell
-ms.topic: conceptual
-ms.date: 01/04/2022
 ms.custom: devx-track-azurepowershell
+ms.date: 02/08/2022
+ms.devlang: powershell
 ms.service: azure-powershell
-ms.openlocfilehash: 6f29371eeb3a25307c7cdc8910184806893f3cc7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.topic: conceptual
+title: catatan rilis Azure PowerShell
+ms.openlocfilehash: e9dfd6b4bba37cd8e725ff8e387472b99850d54f
+ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138335079"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138855405"
 ---
 # <a name="azure-powershell-release-notes"></a>catatan rilis Azure PowerShell
 ## <a name="720---february-2022"></a>7.2.0 - Februari 2022
