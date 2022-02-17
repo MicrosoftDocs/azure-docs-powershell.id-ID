@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADGroupMember.md
-ms.openlocfilehash: b26931cd5b96f9e54e9175e47280aad05e5bc2b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a4ce2a2810020a0b184f2e6160e0b29e61be1033
+ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259515"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138875593"
 ---
 # Remove-AzADGroupMember
 
@@ -19,6 +19,8 @@ Menghapus anggota dari grup Pengguna, kontak, dan grup yang merupakan anggota da
 Metode HTTP: GET (didukung untuk semua grup), POST (didukung untuk grup keamanan dan grup keamanan berkemampuan email), DELETE (hanya didukung untuk grup keamanan) Baca-saja.
 Nullable.
 Mendukung $expand.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -258,11 +260,11 @@ GROUPOBJECT <MicrosoftGraphGroup>: Objek grup target, dapat digunakan sebagai in
     - `[DisplayName <String>]`: Nama ditampilkan dalam direktori
   - `[Description <String>]`: Deskripsi opsional untuk grup. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, startsWith) dan $search.
   - `[GroupType <String[]>]`: Menentukan tipe grup dan keanggotaannya.  Jika kumpulan berisi Terpadu, grup merupakan Microsoft 365 grup; jika tidak, itu adalah grup keamanan atau grup distribusi. Untuk detailnya, lihat gambaran umum grup. Jika koleksi menyertakan DynamicMembership, grup memiliki keanggotaan dinamis; jika tidak, keanggotaan statis.  Dikembalikan secara default. Mendukung $filter (eq, NOT).
-  - `[HasMembersWithLicenseError <Boolean?>]`: Menunjukkan apakah ada anggota dalam grup ini yang memiliki kesalahan lisensi dari penetapan lisensi berbasis grup tersebut. Properti ini tidak akan pernah dikembalikan pada operasi GET. Anda dapat menggunakannya sebagai argumen $filter untuk mendapatkan grup yang memiliki anggota dengan kesalahan lisensi (filter untuk properti ini benar).  Mendukung $filter (eq).
+  - `[HasMembersWithLicenseError <Boolean?>]`: Menunjukkan apakah ada anggota dalam grup ini yang memiliki kesalahan lisensi dari penetapan lisensi berbasis grup tersebut. Properti ini tidak akan pernah dikembalikan pada operasi GET. Anda dapat menggunakannya sebagai argumen $filter untuk mendapatkan grup yang memiliki anggota dengan kesalahan lisensi (dengan kata lain, filter untuk properti ini benar).  Mendukung $filter (eq).
   - `[IsArchived <Boolean?>]`: 
-  - `[IsAssignableToRole <Boolean?>]`: Menunjukkan apakah grup ini dapat ditetapkan untuk Azure Active Directory ini. Properti ini hanya dapat diatur saat membuat grup dan dapat terus dilakukan. Jika diatur ke true, properti securityEnabled juga harus diatur ke true dan grup tidak dapat menjadi grup dinamis (groupTypes tidak dapat memuat DynamicMembership). Hanya penelepon dalam peran Administrator global dan Administrator peran istimewa yang dapat mengatur properti ini. Penelepon juga harus diberi izin Directory.AccessAsUser.All untuk mengatur properti ini. Untuk selengkapnya, lihat Menggunakan grup untuk mengelola penetapan peran Azure ADReturned secara default. Mendukung $filter (eq, ne, NOT).
+  - `[IsAssignableToRole <Boolean?>]`: Menunjukkan apakah grup ini dapat ditetapkan untuk Azure Active Directory peran. Properti ini hanya dapat diatur saat membuat grup dan dapat terus dilakukan. Jika diatur ke true, properti securityEnabled juga harus diatur ke true dan grup tidak dapat menjadi grup dinamis (groupTypes tidak dapat memuat DynamicMembership). Hanya penelepon dalam peran Administrator global dan Administrator peran istimewa yang dapat mengatur properti ini. Penelepon juga harus diberi izin Directory.AccessAsUser.All untuk mengatur properti ini. Untuk selengkapnya, lihat Menggunakan grup untuk mengelola penetapan peran Azure ADReturned secara default. Mendukung $filter (eq, ne, NOT).
   - `[MailEnabled <Boolean?>]`: Menentukan apakah grup diaktifkan email. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT).
-  - `[MailNickname <String>]`: Alias email untuk grup, unik dalam organisasi. Properti ini harus ditentukan saat grup dibuat. Karakter ini tidak dapat digunakan dalam mailNickName: @()/[]';:.<>,SPASI. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[MailNickname <String>]`: Alias email untuk grup, unik dalam organisasi. Properti ini harus ditentukan saat grup dibuat. Karakter ini tidak dapat digunakan dalam mailNickName: @()/[]';:.<>,SPACE. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[MembershipRule <String>]`: Aturan yang menentukan anggota untuk grup ini jika grup adalah grup dinamis (groupTypes berisi DynamicMembership). Untuk informasi selengkapnya tentang sintaks aturan keanggotaan, lihat sintaks Aturan Keanggotaan. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, startsWith).
   - `[MembershipRuleProcessingState <String>]`: Menunjukkan apakah pemrosesan keanggotaan dinamis aktif atau jeda. Kemungkinan nilai Di tempat atau Dijeda. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, in).
   - `[PermissionGrant <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: Izin yang telah diberikan untuk grup ke aplikasi tertentu. Mendukung $expand.
@@ -274,9 +276,9 @@ GROUPOBJECT <MicrosoftGraphGroup>: Objek grup target, dapat digunakan sebagai in
     - `[PermissionType <String>]`: Tipe izin. Nilai yang mungkin adalah: Aplikasi, Didelegasikan. Baca-saja.
     - `[ResourceAppId <String>]`: ID aplikasi Azure AD yang menjadi hosting sumber daya. Baca-saja.
   - `[PreferredDataLocation <String>]`: Lokasi data pilihan untuk grup. Untuk informasi selengkapnya, lihat OneDrive Online Multi-Geo. Dikembalikan secara default.
-  - `[PreferredLanguage <String>]`: Bahasa pilihan untuk Microsoft 365 grup. Harus mengikuti Kode ISO 639-1; misalnya 'en-US'. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[PreferredLanguage <String>]`: Bahasa pilihan untuk grup Microsoft 365 tersebut. Harus mengikuti Kode ISO 639-1; misalnya 'en-US'. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[SecurityEnabled <Boolean?>]`: Menentukan apakah grup adalah grup keamanan. Dikembalikan secara default. Mendukung $filter (eq, ne, NOT, in).
-  - `[SecurityIdentifier <String>]`: Pengidentifikasi keamanan grup, digunakan dalam Windows kata kunci. Dikembalikan secara default.
+  - `[SecurityIdentifier <String>]`: Pengidentifikasi keamanan grup, digunakan di Windows lainnya. Dikembalikan secara default.
   - `[Theme <String>]`: Menentukan Microsoft 365 warna grup. Nilai yang mungkin adalah Teal, Ungu, Hijau, Biru, Merah Muda, Oranye atau Merah. Dikembalikan secara default.
   - `[Visibility <String>]`: Menentukan kebijakan bergabung dalam grup dan visibilitas konten grup untuk grup. Nilai yang mungkin adalah: Pribadi, Publik, atau Tersembunyi. Fitur tersembunyi hanya dapat diatur untuk anggota Microsoft 365 baru, ketika grup tersebut dibuat. Pembaruan tidak dapat diperbarui nanti. Nilai visibilitas lainnya dapat diperbarui setelah pembuatan grup. Jika nilai visibilitas tidak ditentukan selama pembuatan grup di Microsoft Graph, grup keamanan dibuat sebagai Pribadi secara default dan grup Microsoft 365 diatur menjadi Publik. Lihat opsi visibilitas grup untuk mempelajari selengkapnya. Dikembalikan secara default.
   - `[DeletedDateTime <DateTime?>]`: 

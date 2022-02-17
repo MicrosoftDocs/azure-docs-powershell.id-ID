@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADApplication.md
-ms.openlocfilehash: 1fb2e8b3b09fb8e98feef151e4dbdfe324bc1448
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f7ed70d81993a33e3462031378a78a4f8862a6e
+ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268619"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138875647"
 ---
 # Remove-AzADApplication
 
 ## SYNOPSIS
 Menghapus entitas dari aplikasi
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

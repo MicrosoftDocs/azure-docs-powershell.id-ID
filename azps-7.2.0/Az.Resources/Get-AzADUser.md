@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
-ms.openlocfilehash: d4534307f943d191ac0d6960ff1756f49c217a22
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d112d5f97fb9bef8cde9fc29e2be0d9d3fa69ec0
+ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256363"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138875323"
 ---
 # Get-AzADUser
 
 ## SYNOPSIS
 Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menurut kunci
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

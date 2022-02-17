@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
-ms.openlocfilehash: a5936279945eb1572ef42c0e607993883445bba8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ce6d278a48fb3f5c4b5d0807cb7260c73ad83c2f
+ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312124"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138874947"
 ---
 # New-AzADUser
 
 ## SYNOPSIS
 Menambahkan entitas baru ke pengguna
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -403,7 +405,7 @@ Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 86
 Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z.
 Hanya dikembalikan pada $select.
 Catatan: Properti ini khusus untuk SharePoint Online.
-Kami menyarankan agar menggunakan properti native employeeOpeDate untuk mengatur dan memperbarui nilai tanggal karyawan menggunakan API Microsoft Graph.
+Kami menyarankan agar menggunakan properti native employee Salah SatuDate untuk mengatur dan memperbarui nilai tanggal karyawan menggunakan API Graph Microsoft.
 
 ```yaml
 Type: System.DateTime
@@ -720,7 +722,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowInAddressList
-true jika Outlook alamat global anda harus berisi pengguna ini, jika tidak salah.
+true jika daftar Outlook global harus berisi pengguna ini, jika tidak salah.
 Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar.
 Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false.
 Mendukung $filter (eq, ne, NOT, in).

@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADUser.md
-ms.openlocfilehash: a1a28ebf1a6f4e6f813162c683c70cc2ca8de376
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c072c7f3f9d251284dcf4387ac836daacd4e3b78
+ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306460"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138875665"
 ---
 # Remove-AzADUser
 
 ## SYNOPSIS
 Menghapus entitas dari pengguna.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -271,11 +273,11 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[PhysicalId <String[]>]`: Hanya untuk penggunaan internal. Not nullable. Mendukung $filter (eq, not, ge, le, startsWith).
   - `[PostalCode <String>]`: Kode pos untuk alamat pos pengguna. Kode pos khusus untuk negara/kawasan pengguna. Di Amerika Serikat, atribut ini berisi kode pos. Panjang maksimum adalah 40 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[PreferredLanguage <String>]`: Bahasa pilihan untuk pengguna. Harus mengikuti Kode ISO 639-1; misalnya en-US. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[ShowInAddressList <Boolean?>]`: true jika Outlook alamat global harus berisi pengguna ini, jika tidak maka false. Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar. Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false. Mendukung $filter (eq, ne, NOT, in).
+  - `[ShowInAddressList <Boolean?>]`: true jika Outlook alamat global harus berisi pengguna ini, jika tidak salah. Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar. Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false. Mendukung $filter (eq, ne, NOT, in).
   - `[State <String>]`: Negara bagian atau provinsi di alamat pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[StreetAddress <String>]`: Alamat jalan tempat bisnis pengguna. Panjang maksimum adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[Surname <String>]`: Nama keluarga pengguna (nama keluarga atau nama belakang). Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[TrustType <String>]`: Tipe kepercayaan untuk perangkat yang tergabung. Baca-saja. Nilai yang mungkin: Tempat kerja (menunjukkan membawa perangkat pribadi Anda sendiri), AzureAd (Perangkat yang bergabung hanya di awan), ServerAd (perangkat bersama domain lokal yang tergabung dalam Azure AD). Untuk detail selengkapnya, lihat Pengenalan manajemen perangkat di Azure Active Directory
+  - `[TrustType <String>]`: Tipe kepercayaan untuk perangkat yang tergabung. Baca-saja. Nilai yang mungkin: Tempat kerja (menunjukkan membawa perangkat pribadi Anda sendiri), AzureAd (Perangkat yang bergabung hanya di awan), ServerAd (perangkat bersama domain lokal yang tergabung dalam Azure AD). Untuk detail selengkapnya, lihat Pengenalan pada manajemen perangkat di Azure Active Directory
   - `[UsageLocation <String>]`: Kode negara dua huruf (standar ISO 3166). Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara-negara.  Contohnya antara lain: US, JP, dan GB. Not nullable. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[UserPrincipalName <String>]`: Nama prinsipal pengguna (UPN) pengguna. UPN adalah nama masuk gaya internet untuk pengguna berdasarkan RFC 822 standar internet. Menurut konvensi, ini harus di petakan ke nama email pengguna. Format umumnya alias@domainadalah, di mana domain harus ada dalam kumpulan penyewa domain terverifikasi. Properti ini diperlukan saat pengguna dibuat. Domain terverifikasi untuk penyewa bisa diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
   - `[UserType <String>]`: Nilai string yang dapat digunakan untuk mengklasifikasikan tipe pengguna dalam direktori Anda, seperti Anggota dan Tamu. Mendukung $filter (eq, ne, NOT, in,).

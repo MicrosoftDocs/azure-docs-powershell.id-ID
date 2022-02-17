@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
-ms.openlocfilehash: 5ff03a729e6c609f65c362360c0cbcfcc1b2aab4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 90e89e16a55e888732a2056dcf25bb126f2a1be8
+ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315547"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "138874971"
 ---
 # Update-AzADUser
 
 ## SYNOPSIS
 Memperbarui entitas dalam pengguna
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
@@ -676,7 +678,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowInAddressList
-true jika Outlook alamat global anda harus berisi pengguna ini, jika tidak salah.
+true jika daftar Outlook global seharusnya berisi pengguna ini, jika tidak salah.
 Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar.
 Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false.
 Mendukung $filter (eq, ne, NOT, in).
@@ -896,7 +898,7 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[GivenName <String>]`: Nama depan (nama depan) pengguna. Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[Identity <IMicrosoftGraphObjectIdentity[]>]`: Mewakili identitas yang bisa digunakan untuk masuk ke akun pengguna ini. Identitas bisa disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terikat ke akun pengguna. Mungkin berisi beberapa item dengan nilai signInType yang sama. Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
     - `[Issuer <String>]`: Menentukan penerbit identitas, misalnya facebook.com.Untuk akun lokal (di mana signInType tidak federasi), properti ini adalah nama domain penyewa B2C lokal, misalnya contoso.onmicrosoft.com.Untuk pengguna eksternal dari organisasi Azure AD lain, ini akan menjadi domain organisasi gabungan, misalnya contoso.com.Mendukung $filter. Batas 512 karakter.
-    - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan kepada pengguna oleh penerbit. Kombinasi dari penerbit dan penerbitAssignedId harus unik di dalam organisasi. Mewakili nama masuk untuk pengguna, ketika signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus merupakan namapengguna alamat email yang valid, issuerAssignedId harus merupakan bagian lokal yang valid dari alamat emailSupport $filter. Batas 100 karakter.
+    - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan kepada pengguna oleh penerbit. Kombinasi dari penerbit dan penerbitAssignedId harus unik di dalam organisasi. Mewakili nama masuk untuk pengguna, ketika signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus merupakan namapengguna alamat email yang valid, issuerAssignedId harus merupakan bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
     - `[SignInType <String>]`: Menentukan tipe masuk pengguna di direktori Anda, seperti emailAddress, userName atau gabungan. Di sini, gabungan mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang bisa berada dalam format apa pun yang dipilih oleh penerbit. Validasi tambahan diterapkan pada issuerAssignedId ketika tipe masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
   - `[IsResourceAccount <Boolean?>]`: Jangan gunakan - dicadangkan untuk penggunaan di masa mendatang.
   - `[JobTitle <String>]`: Jabatan pekerjaan pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
@@ -918,7 +920,7 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[PhysicalId <String[]>]`: Hanya untuk penggunaan internal. Not nullable. Mendukung $filter (eq, not, ge, le, startsWith).
   - `[PostalCode <String>]`: Kode pos untuk alamat pos pengguna. Kode pos khusus untuk negara/kawasan pengguna. Di Amerika Serikat, atribut ini berisi kode pos. Panjang maksimum adalah 40 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[PreferredLanguage <String>]`: Bahasa pilihan untuk pengguna. Harus mengikuti Kode ISO 639-1; misalnya en-US. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[ShowInAddressList <Boolean?>]`: true jika Outlook alamat global anda harus berisi pengguna ini, jika tidak salah. Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar. Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false. Mendukung $filter (eq, ne, NOT, in).
+  - `[ShowInAddressList <Boolean?>]`: true jika Outlook alamat global harus berisi pengguna ini, jika tidak salah. Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar. Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false. Mendukung $filter (eq, ne, NOT, in).
   - `[State <String>]`: Negara bagian atau provinsi di alamat pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[StreetAddress <String>]`: Alamat jalan tempat bisnis pengguna. Panjang maksimum adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[Surname <String>]`: Nama keluarga pengguna (nama keluarga atau nama belakang). Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
