@@ -30,16 +30,6 @@
       href: release-notes-azureps.md
     - name: Az 7.0.0 melanggar perubahan
       href: migrate-az-7.0.0.md
-    - name: Az 6.0.0 melanggar perubahan
-      href: migrate-az-6.0.0.md
-    - name: Az 5.0.0 melanggar perubahan
-      href: migrate-az-5.0.0.md
-    - name: Az 4.1.0 melanggar perubahan
-      href: migrate-az-4.1.0.md
-    - name: Az 3.0.0 melanggar perubahan
-      href: migrate-az-3.0.0.md
-    - name: Az 2.0.0 melanggar perubahan
-      href: migrate-az-2.0.0.md
 - name: Panduan cara kerja
   items:
     - name: Konfigurasi
@@ -89,6 +79,18 @@
   items:
     - name: Azure AD ke Panduan Migrasi microsoft Graph
       href: azps-msgraph-migration-changes.md
+    - name: Bermigrasi dari versi Az sebelumnya
+      items:
+        - name: Az 6.0.0 melanggar perubahan
+          href: migrate-az-6.0.0.md
+        - name: Az 5.0.0 melanggar perubahan
+          href: migrate-az-5.0.0.md
+        - name: Az 4.1.0 melanggar perubahan
+          href: migrate-az-4.1.0.md
+        - name: Az 3.0.0 melanggar perubahan
+          href: migrate-az-3.0.0.md
+        - name: Az 2.0.0 melanggar perubahan
+          href: migrate-az-2.0.0.md
     - name: Bermigrasi dari AzureRM
       items:
         - name: Perubahan antara AzureRM dan Az
