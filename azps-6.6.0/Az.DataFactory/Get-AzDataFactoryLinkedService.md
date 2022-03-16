@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 1bf02d4ce96489a5c2fc14fce10ebcad2bc76cc7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 39b046c6944768db654a88ee05c36f56aaca0b62
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377927"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140108441"
 ---
 # Get-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan tertaut di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactorylinkedservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,9 +47,9 @@ Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua 
 PS C:\>Get-AzDataFactoryLinkedService -ResourceGroupName "ADF" -DataFactoryName "WikiADF" | Format-List
 ```
 
-Perintah ini mendapatkan informasi tentang semua layanan yang ditautkan di pabrik data yang bernama WikiADF, lalu meneruskan layanan tertaut ke cmdlet Format-List dengan menggunakan operator pipeline.
+Perintah ini mendapatkan informasi tentang semua layanan yang ditautkan di pabrik data bernama WikiADF, lalu meneruskan layanan tertaut ke cmdlet Format-List dengan menggunakan operator pipeline.
 Cmdlet tersebut memformat hasilnya.
-Untuk informasi selengkapnya, ketik `Get-Help Format-List` .
+Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 
 ### Contoh 2: Mendapatkan informasi tentang layanan tertaut tertentu
 ```
@@ -71,7 +74,7 @@ Perintah kedua mendapatkan informasi tentang layanan yang ditautkan untuk pabrik
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini mendapatkan layanan tertaut yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

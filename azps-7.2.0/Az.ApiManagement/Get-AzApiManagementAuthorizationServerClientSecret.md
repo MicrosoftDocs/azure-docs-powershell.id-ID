@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServerClientSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServerClientSecret.md
-ms.openlocfilehash: 304d22b1cc69012e807d5f42818a30e25be585f1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 58455ae860175606821df5c0d8555a693ef03c8b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127429"
 ---
 # Get-AzApiManagementAuthorizationServerClientSecret
 
 ## SYNOPSIS
 Mendapatkan rahasia klien otorisasi Manajemen API server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementauthorizationserverclientsecret) untuk informasi terkini.
 
 ## SYNTAX
 

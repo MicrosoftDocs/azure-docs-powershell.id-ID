@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
-ms.openlocfilehash: 57f675cb5a07bdf679eacd367e74a915be74e372
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ff9f4cc89b92fce999bc3703645084b29de98bec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306236"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127915"
 ---
 # Invoke-AzRestMethod
 
 ## SYNOPSIS
 Membangun dan menjalankan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/invoke-azrestmethod) untuk informasi terkini.
 
 ## SYNTAX
 

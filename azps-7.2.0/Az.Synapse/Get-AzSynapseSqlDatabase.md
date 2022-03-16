@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlDatabase.md
-ms.openlocfilehash: 736f268ee59f139db6cb84f78c11a24c1804019f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4cbd32b4759f27acb171d5bb47243542c559d4ed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263180"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113659"
 ---
 # Get-AzSynapseSqlDatabase
 
 ## SYNOPSIS
 Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu. Mendapatkan database Analitik Synapse SQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Perintah ini akan mendapatkan semua SQL database di bawah ruang kerja melalui sa
 PS C:\> Get-AzSynapseSqlDatabase -ResourceId "/subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlDatabases/ContosoSqlDatabase"
 ```
 
-Perintah ini mendapatkan database SQL dengan ID sumber daya yang ditentukan.
+Perintah ini akan mendapatkan database SQL dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 

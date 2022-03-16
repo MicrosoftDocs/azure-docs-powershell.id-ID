@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: bc96185504824cb886aca3fa8850ec5cfbf6d688
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1600336f3ba5b7b29ba1a012d4e1d34d17a838c3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382561"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104049"
 ---
 # New-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP front-end untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzApplicationGatewayFrontendIPConfig -Name <String> [-PrivateIPAddress <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApplicationGatewayFrontendIPConfig** membuat konfigurasi IP front-end untuk gateway aplikasi Azure.
+Cmdlet **New-AzApplicationGatewayFrontendIPConfig membuat konfigurasi IP front-end** untuk gateway aplikasi Azure.
 Gateway aplikasi mendukung dua tipe konfigurasi IP ujung-depan: 
 - Alamat IP publik , alamat IP privat menggunakan penyeimbangan muat internal (ILB, Internal Load Balancing).
  Gateway aplikasi bisa memiliki paling banyak satu alamat IP publik dan satu alamat IP privat.
@@ -51,7 +54,7 @@ PS C:\> $FrontEnd = New-AzApplicationGatewayFrontendIPConfig -Name "FrontEndIP01
 ```
 
 Perintah pertama membuat objek sumber daya IP publik dan menyimpannya di $PublicIP publik.
-Perintah kedua menggunakan $PublicIP untuk membuat konfigurasi IP ujung-depan baru bernama FrontEndIP01 dan menyimpannya dalam $FrontEnd variabel.
+Perintah kedua menggunakan $PublicIP untuk membuat konfigurasi IP ujung-depan baru bernama FrontEndIP01 dan menyimpannya dalam variabel $FrontEnd baru.
 
 ### Contoh 2: Membuat IP privat statis sebagai alamat IP ujung-depan
 ```
@@ -61,7 +64,7 @@ PS C:\> $FrontEnd = New-AzApplicationGatewayFrontendIPConfig -Name "FrontendIP02
 ```
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $VNet sumber daya.
-Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam $Subnet tertentu.
+Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam $Subnet baru.
 Perintah ketiga membuat konfigurasi IP ujung-depan bernama FrontEndIP02 menggunakan $Subnet dari perintah kedua dan alamat IP privat 10.0.1.1, lalu menyimpannya dalam variabel $FrontEnd.
 
 ### Contoh 3: Buat IP privat dinamis sebagai alamat IP front-end
@@ -72,8 +75,8 @@ PS C:\> $FrontEnd = New-AzApplicationGatewayFrontendIPConfig -Name "FrontendIP03
 ```
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $VNet sumber daya.
-Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam $Subnet tertentu.
-Perintah ketiga membuat konfigurasi IP ujung-depan bernama FrontEndIP03 menggunakan $Subnet dari perintah kedua, dan menyimpannya dalam variabel $FrontEnd tertentu.
+Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam $Subnet baru.
+Perintah ketiga membuat konfigurasi IP ujung-depan bernama FrontEndIP03 menggunakan $Subnet dari perintah kedua, dan menyimpannya dalam variabel $FrontEnd baru.
 
 ## PARAMETERS
 
@@ -204,8 +207,8 @@ Accept wildcard characters: False
 
 ### -SubnetId
 Menentukan ID subnet yang terkait dengan konfigurasi IP front-end gateway aplikasi.
-Jika Anda menentukan parameter *Subnet,* maka gateway menggunakan alamat IP privat.
-Jika parameter *PrivateIPAddress* ditentukan, parameter seharusnya termasuk ke subnet yang ditentukan oleh *Subnet*.
+Jika Anda menentukan parameter *Subnet* , maka gateway menggunakan alamat IP privat.
+Jika parameter *PrivateIPAddress* ditentukan, parameter tersebut harus termasuk ke subnet yang ditentukan oleh *Subnet*.
 Jika *PrivateIPAddress* tidak ditentukan, salah satu alamat IP dari subnet ini dipilih secara dinamis sebagai alamat IP ujung-depan gateway aplikasi.
 
 ```yaml
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

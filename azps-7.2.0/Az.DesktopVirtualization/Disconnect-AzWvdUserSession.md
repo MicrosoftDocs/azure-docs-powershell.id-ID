@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Disconnect-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Disconnect-AzWvdUserSession.md
-ms.openlocfilehash: 7182e552c2404d32aa4f0362a1b56ebc3db30e90
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 00d23b97541bb6d4e1b140434887ae6cf662dd77
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295708"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124405"
 ---
 # Disconnect-AzWvdUserSession
 
 ## SYNOPSIS
 Memutuskan koneksi userSession.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/disconnect-azwvdusersession) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Memutuskan koneksi userSession.
 PS C:\> Disconnect-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName -SessionHostName SessionHostName -Id 2
 ```
 
-Perintah ini memutuskan koneksi Windows UserSession Desktop Virtual dalam Session Host.
+Perintah ini memutuskan koneksi Windows UserSession Desktop Virtual di Session Host.
 
 ## PARAMETERS
 

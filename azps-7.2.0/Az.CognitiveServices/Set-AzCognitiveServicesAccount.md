@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Set-AzCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Set-AzCognitiveServicesAccount.md
-ms.openlocfilehash: d0e38aa52aef99aa1edf2250a249ffedb22f7b04
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c4b31e52dcb4bb7da9eafd7e09a7a0995557f2d1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280092"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126205"
 ---
 # Set-AzCognitiveServicesAccount
 
 ## SYNOPSIS
 Mengubah akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/set-azcognitiveservicesaccount) untuk informasi terkini.
 
 ## SYNTAX
 

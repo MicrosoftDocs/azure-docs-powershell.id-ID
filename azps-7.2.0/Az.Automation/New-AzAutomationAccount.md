@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationAccount.md
-ms.openlocfilehash: ec9343c4c73bdd7b35055ffebdd7aaa03df9379d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 12b551c9ab1c39e9179f29c2b170c3721e5d3a55
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296076"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061689"
 ---
 # New-AzAutomationAccount
 
 ## SYNOPSIS
 Membuat akun Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationaccount) untuk informasi terkini.
 
 ## SYNTAX
 

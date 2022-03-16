@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainTopic.md
-ms.openlocfilehash: 91666630d9516d27af372a71bf131fe9db948382
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d3c67c51baa15b7c70badff09a65808b77e8d8ac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370112"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976505"
 ---
 # New-AzEventGridDomainTopic
 
 ## SYNOPSIS
 Membuat Topik Domain Kisi Acara Azure yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomaintopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Membuat Topik Domain Kisi Acara Azure yang baru.
 
 ### Contoh 1
 
-Membuat Topik Domain Kisi Kejadian \` Topic1 \` di Domain \` Domain1 di bawah grup sumber daya \` \` MyResourceGroupName \` .
+Membuat Topik Domain Kisi Kejadian Topic1 \`di\` Domain \`Domain1\` di bawah grup sumber daya \`MyResourceGroupName\`.
 
 ```powershell
 PS C:\> New-AzEventGridDomainTopic -ResourceGroupName MyResourceGroupName -DomainName Domain1 -Name Topic1
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

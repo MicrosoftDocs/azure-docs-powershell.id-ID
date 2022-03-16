@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementResourceLocationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementResourceLocationObject.md
-ms.openlocfilehash: 3927a283e31a9f212df59f1f8be71996d08c493c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 525f10674fd9d942a230746f9eec399bfbdc9bc5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127267"
 ---
 # New-AzApiManagementResourceLocationObject
 
 ## SYNOPSIS
 Membuat kontrak lokasi sumber daya baru (digunakan di Gateway).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementresourcelocationobject) untuk informasi terkini.
 
 ## SYNTAX
 

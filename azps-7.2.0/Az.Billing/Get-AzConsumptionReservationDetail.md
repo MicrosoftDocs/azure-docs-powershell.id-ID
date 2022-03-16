@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzConsumptionReservationDetail.md
-ms.openlocfilehash: a93358296322760c115fd348b35c9d612ba4e6f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c5f5d7ec323eed81e955fd36c34ff887bf56f9db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061059"
 ---
 # Get-AzConsumptionReservationDetail
 
 ## SYNOPSIS
 Dapatkan detail pemesanan untuk rentang tanggal yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azconsumptionreservationdetail) untuk informasi terkini.
 
 ## SYNTAX
 

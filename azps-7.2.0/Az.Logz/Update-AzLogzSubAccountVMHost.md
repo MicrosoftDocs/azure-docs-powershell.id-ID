@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccountVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccountVMHost.md
-ms.openlocfilehash: 8ce172107035e149a55c24d93a0e0dda42294a1d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e50b9223df1c18373b39eeed02afc2379533f028
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957029"
 ---
 # Update-AzLogzSubAccountVMHost
 
 ## SYNOPSIS
-Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io pelanggan telah diinstal pada VM untuk monitor tertentu.
+Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/update-azlogzsubaccountvmhost) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzLogzSubAccountVMHost -MonitorName <String> -Name <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io pelanggan telah diinstal pada VM untuk monitor tertentu.
+Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor tertentu.
 
 ## EXAMPLES
 

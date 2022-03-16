@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Measure-AzAlertStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Measure-AzAlertStatistic.md
-ms.openlocfilehash: 5e474a4eb1b162bf6b11a034db7aaaaf205bf225
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 63bf81990de0e47acdac7fe99d50b8e550163aa0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127807"
 ---
 # Measure-AzAlertStatistic
 
 ## SYNOPSIS
 Mendapatkan Informasi Ringkasan Pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/measure-azalertstatistic) untuk informasi terkini.
 
 ## SYNTAX
 

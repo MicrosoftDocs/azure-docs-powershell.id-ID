@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/expor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Export-AzAutomationRunbook.md
-ms.openlocfilehash: 260273b47113e2020ff69f9abbff86342a9335e2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 91bed1a7cc8ed5afad58da8a22b97438e1974bcc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126835"
 ---
 # Export-AzAutomationRunbook
 
 ## SYNOPSIS
 Mengekspor buku jalankan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/export-azautomationrunbook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Export-AzAutomationRunbook [-Name] <String> [-Slot <String>] [-OutputFolder <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzAutomationRunbook** mengekspor runbook Azure Automation ke file skrip wps_2 (.ps1), untuk runbooks alur kerja wps_2 atau wps_2, atau ke file grafis runbook (.graphrunbook), untuk runbooks grafis.
+Cmdlet **Export-AzAutomationRunbook** mengekspor runbook Azure Automation ke file skrip wps_2 (.ps1 ), untuk runbooks alur kerja wps_2 atau wps_2, atau ke file runbook grafis (.graphrunbook), untuk runbooks grafis.
 Nama runbook menjadi nama file yang diekspor.
 
 ## EXAMPLES

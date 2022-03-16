@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightStreamingMapReduceJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightStreamingMapReduceJobDefinition.md
-ms.openlocfilehash: c5daa41db9ae49cb23e93d63c53395f88b99fcdc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 84e05e5c7514f359c36ff05da923fbc0736d551c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282235"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958973"
 ---
 # New-AzHDInsightStreamingMapReduceJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Streaming MapReduce.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightstreamingmapreducejobdefinition) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchResourceFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchResourceFile.md
-ms.openlocfilehash: 5f1126386c48138ffa5a279de735bd666a6a6ce4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 53bcd51ac960143dc8a3ecba0e6a5aed4cae9199
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305051"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126403"
 ---
 # New-AzBatchResourceFile
 
 ## SYNOPSIS
 Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchresourcefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ PS C:\> $file = New-AzBatchResourceFile -AutoStorageContainerName "mycontainer" 
 PS C:\> New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ResourceFiles $file -BatchContext $Context
 ```
 
-Membuat referensi `PSResourceFile` nama wadah Storage otomatis. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
+Membuat referensi `PSResourceFile` untuk nama wadah Storage Otomatis. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
 
 ## PARAMETERS
 

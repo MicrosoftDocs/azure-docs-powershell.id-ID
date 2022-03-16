@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Backup-AzApiManagement.md
-ms.openlocfilehash: 9485df3eae8d94b55b4ba20ce92a35395fdf4d26
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fd621c73133ef220dc5ed23b634b49ef8cb7f667
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136348329"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140144996"
 ---
 # Backup-AzApiManagement
 
 ## SYNOPSIS
 Mencadangkan layanan Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/backup-azapimanagement) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ PS C:\>$storageContext = New-AzStorageContext -StorageAccountName "ContosoStorag
 PS C:\>Backup-AzApiManagement -ResourceGroupName "ContosoGroup02" -Name "ContosoApi" -StorageContext $StorageContext -TargetContainerName "ContosoBackups" -TargetBlobName "ContosoBackup.apimbackup"
 ```
 
-Perintah ini mencadangkan layanan Manajemen API ke Storage blob.
+Perintah ini mencadangkan layanan Manajemen API ke penyedia Storage blob.
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan objek **PsApiManagement yang dicadangkan,** jika operasi berhasil.
+Mengindikasikan bahwa cmdlet ini mengembalikan objek **PsApiManagement yang dicadangkan** , jika operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

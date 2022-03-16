@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/connect
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Connect-AzAccount.md
-ms.openlocfilehash: f952035be89f78106014cb4c2d2fc231bf0ead37
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 12865bc837352de64f85d9c529533fe77d899e39
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140145375"
 ---
 # Connect-AzAccount
 
 ## SYNOPSIS
 Koneksi ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/connect-azaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -88,8 +91,8 @@ Connect-AzAccount [-Environment <String>] [-Tenant <String>] [-AccountId <String
 
 ## DESCRIPTION
 
-Cmdlet `Connect-AzAccount` menghubungkan ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell. Anda dapat menggunakan akun terautentikasi ini hanya dengan permintaan Azure Resource Manager. Untuk menambahkan akun terautentikasi untuk digunakan dengan Manajemen Layanan, gunakan `Add-AzureAccount` cmdlet dari Azure PowerShell layanan. Jika tidak ada konteks untuk pengguna saat ini, daftar konteks pengguna akan diisi dengan konteks untuk setiap 25 langganan pertama mereka.
-Daftar konteks yang dibuat untuk pengguna bisa ditemukan dengan menjalankan `Get-AzContext -ListAvailable` . Untuk melewati populasi konteks ini, tentukan parameter **sakelar SkipContextPopulation.** Setelah menjalankan cmdlet ini, Anda dapat memutuskan sambungan dari akun Azure menggunakan `Disconnect-AzAccount` .
+Cmdlet `Connect-AzAccount` menghubungkan ke Azure dengan akun terautentikasi untuk digunakan dengan cmdlet dari modul Az PowerShell. Anda dapat menggunakan akun terautentikasi ini hanya dengan permintaan Azure Resource Manager. Untuk menambahkan akun terautentikasi untuk digunakan dengan Manajemen Layanan, gunakan `Add-AzureAccount` cmdlet dari Azure PowerShell modul. Jika tidak ada konteks untuk pengguna saat ini, daftar konteks pengguna akan diisi dengan konteks untuk setiap 25 langganan pertama mereka.
+Daftar konteks yang dibuat untuk pengguna bisa ditemukan dengan menjalankan `Get-AzContext -ListAvailable`. Untuk melewati populasi konteks ini, tentukan parameter **sakelar SkipContextPopulation** . Setelah menjalankan cmdlet ini, Anda dapat memutuskan sambungan dari akun Azure menggunakan `Disconnect-AzAccount`.
 
 ## EXAMPLES
 
@@ -109,7 +112,7 @@ azureuser@contoso.com  Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 
 ### Contoh 2: Koneksi ke Azure menggunakan kredensial ID organisasi
 
-Skenario ini hanya berfungsi jika pengguna tidak mengaktifkan multi-factor auth. Perintah pertama meminta kredensial pengguna dan menyimpannya dalam `$Credential` variabel. Perintah kedua tersambung ke akun Azure menggunakan kredensial yang disimpan di `$Credential` . Akun ini mengautentikasi dengan Azure menggunakan kredensial ID organisasi.
+Skenario ini hanya berfungsi jika pengguna tidak mengaktifkan multi-factor auth. Perintah pertama meminta kredensial pengguna dan menyimpannya dalam `$Credential` variabel. Perintah kedua tersambung ke akun Azure menggunakan kredensial yang disimpan di `$Credential`. Akun ini mengautentikasi dengan Azure menggunakan kredensial ID organisasi.
 
 ```powershell
 $Credential = Get-Credential
@@ -165,7 +168,7 @@ Account                SubscriptionName TenantId                Environment
 MSI@50342              Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
-### Contoh 6: Koneksi menggunakan Login Identitas Layanan Terkelola dan ClientId
+### Contoh 6: Koneksi menggunakan login Managed Service Identity dan ClientId
 
 Contoh ini tersambung menggunakan Managed Service Identity of **myUserAssignedIdentity**. Tambahkan identitas yang ditetapkan pengguna ke komputer virtual, lalu tersambung menggunakan ClientId identitas yang ditetapkan pengguna. Untuk informasi selengkapnya, [lihat Mengonfigurasi identitas terkelola untuk sumber daya Azure pada Azure VM](/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm).
 
@@ -184,7 +187,7 @@ yyyy-yyyy-yyyy-yyyy    Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ### Contoh 7: Koneksi menggunakan sertifikat
 
 Contoh ini tersambung ke akun Azure menggunakan autentikasi prinsipal layanan berbasis sertifikat.
-Prinsipal layanan yang digunakan untuk autentikasi harus dibuat dengan sertifikat yang ditentukan. Untuk informasi selengkapnya tentang membuat sertifikat yang ditandatangani sendiri dan menetapkannya izin, lihat Menggunakan Azure PowerShell untuk [membuat prinsipal layanan dengan sertifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+Prinsipal layanan yang digunakan untuk autentikasi harus dibuat dengan sertifikat yang ditentukan. Untuk informasi selengkapnya tentang membuat sertifikat yang ditandatangani sendiri dan menetapkannya izin, lihat [Menggunakan Azure PowerShell untuk membuat prinsipal layanan dengan sertifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 ```powershell
 $Thumbprint = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
@@ -207,7 +210,7 @@ Environment      : AzureCloud
 
 ### Contoh 8: Koneksi dengan AuthScope
 AuthScope digunakan untuk mendukung skenario bahwa sumber daya bidang data memiliki autentikasi yang disempurnakan daripada sumber daya ARM, misalnya penyimpanan memerlukan MFA tetapi ARM tidak.
-Setelah AuthScope ditentukan, misalnya Storage, Connect-AzAccount masuk terlebih dahulu dengan lingkup penyimpanan , lalu secara diam-diam memerlukan `https://storage.azure.com/` token untuk ARM.
+Setelah AuthScope ditentukan, misalnya Storage, `https://storage.azure.com/`Connect-AzAccount masuk terlebih dahulu dengan lingkup penyimpanan , lalu secara diam-diam memerlukan token untuk ARM.
 
 ```powershell
 Connect-AzAccount -AuthScope Storage
@@ -222,7 +225,7 @@ yyyy-yyyy-yyyy-yyyy    Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ### Contoh 9: Koneksi menggunakan file sertifikat
 
 Contoh ini tersambung ke akun Azure menggunakan autentikasi prinsipal layanan berbasis sertifikat.
-File sertifikat, yang ditentukan oleh `CertficatePath` , harus berisi sertifikat dan kunci privat sebagai input.
+File sertifikat, yang ditentukan oleh `CertficatePath`, harus berisi sertifikat dan kunci privat sebagai input.
 
 ```powershell
 $securePassword = $plainPassword | ConvertTo-SecureString -AsPlainText -Force
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 
 ### -AccountId
 
-ID Akun untuk token akses di kumpulan parameter **AccessToken.** ID Akun untuk layanan terkelola dalam kumpulan parameter **ManagedService.** Can be a managed service resource ID, or the associated client ID.
+ID Akun untuk token akses di **kumpulan parameter AccessToken** . ID Akun untuk layanan terkelola dalam **kumpulan parameter ManagedService** . Can be a managed service resource ID, or the associated client ID.
 Untuk menggunakan identitas yang ditetapkan sistem, biarkan bidang ini kosong.
 
 ```yaml
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthScope
-Lingkup OAuth opsional untuk masuk, nilai yang didukung sebelumnya: AadGraph, AnalysisServices, Attestation, Batch, DataLake, KeyVault, OperationalInsights, Storage, Synapse. Id sumber daya juga mendukung id sumber daya seperti `https://storage.azure.com/` .
+Lingkup OAuth opsional untuk masuk, nilai yang didukung sebelumnya: AadGraph, AnalysisServices, Attestation, Batch, DataLake, KeyVault, OperationalInsights, Storage, Synapse. Id sumber daya juga mendukung id sumber daya seperti `https://storage.azure.com/`.
 
 ```yaml
 Type: System.String
@@ -366,7 +369,7 @@ Accept wildcard characters: False
 
 ### -ContextName
 
-Nama konteks default Azure untuk masuk ini. Untuk informasi selengkapnya tentang konteks Azure, lihat [Azure PowerShell objek konteks](/powershell/azure/context-persistence).
+Nama konteks default Azure untuk masuk ini. Untuk informasi selengkapnya tentang konteks Azure, lihat [Azure PowerShell konteks objek](/powershell/azure/context-persistence).
 
 ```yaml
 Type: System.String
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 
 ### -Credential
 
-Menentukan objek **PSCredential.** Untuk informasi selengkapnya tentang **objek PSCredential,** ketik `Get-Help Get-Credential` . Objek **PSCredential** menyediakan ID pengguna dan kata sandi untuk kredensial ID organisasi, atau ID aplikasi dan rahasia untuk kredensial prinsipal layanan.
+Menentukan objek **PSCredential** . Untuk informasi selengkapnya tentang **objek PSCredential** , ketik `Get-Help Get-Credential`. Objek **PSCredential** menyediakan ID pengguna dan kata sandi untuk kredensial ID organisasi, atau ID aplikasi dan rahasia untuk kredensial prinsipal layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -714,7 +717,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

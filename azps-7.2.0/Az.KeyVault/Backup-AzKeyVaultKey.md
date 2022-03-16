@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
-ms.openlocfilehash: dfff0e118f9714c49066aebedcd03919b712107e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5567207f44a44b9d19f26edf075875ceeb97c36f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958703"
 ---
 # Backup-AzKeyVaultKey
 
 ## SYNOPSIS
 Mencadangkan kunci di vault kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Alasan umum untuk menggunakan cmdlet ini adalah:
 - Anda ingin escrow salinan kunci Anda, sehingga Anda memiliki salinan offline jika Anda secara tidak sengaja menghapus kunci di vault kunci Anda.
  
 - Anda membuat kunci menggunakan Key Vault dan sekarang ingin kloning kunci ke kawasan Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang didistribusikan.
-Gunakan cmdlet **Backup-AzKeyVaultKey** untuk mengambil kunci dalam format terenkripsi lalu gunakan cmdlet Restore-AzKeyVaultKey dan tentukan kunci vault di kawasan kedua.
+Gunakan cmdlet **Backup-AzKeyVaultKey** untuk mengambil kunci dalam format terenkripsi lalu gunakan cmdlet Restore-AzKeyVaultKey dan menentukan kunci vault di kawasan kedua.
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ PS C:\> Backup-AzKeyVaultKey -Key $key -OutputFile 'C:\Backup.blob' -Force
 C:\Backup.blob
 ```
 
-Perintah ini akan membuat cadangan kunci bernama $key. Nama di vault bernama $key. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
+Perintah ini membuat cadangan kunci bernama $key. Nama di vault bernama $key. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
 
 ## PARAMETERS
 

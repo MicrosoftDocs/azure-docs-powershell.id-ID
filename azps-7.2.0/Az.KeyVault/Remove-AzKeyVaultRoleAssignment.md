@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 3f3586826ce9081d2b15ac3a590a3881aa7c7ce8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3c26c3a2adf4c69e65eeff8550742a1cb8351333
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958397"
 ---
 # Remove-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
 Menghapus penetapan peran ke pokok tertentu yang ditetapkan pada peran tertentu di lingkup tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplaceorder
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Set-AzMarketplaceTerms.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Set-AzMarketplaceTerms.md
-ms.openlocfilehash: 2082eb53623fd805a1edd05c665a07aa795f4910
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 96cac2b73e72bee8cdb7a12693eaad11f51c46de
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168589"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956129"
 ---
 # Set-AzMarketplaceTerms
 
 ## SYNOPSIS
 Terima atau tolak persyaratan untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Silakan gunakan Get-AzMarketplaceTerms untuk mendapatkan ketentuan perjanjian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplaceordering/set-azmarketplaceterms) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher string pengidentifikasi gambar yang sedang digunakan.
+Publisher pengidentifikasi string gambar yang sedang digunakan.
 
 ```yaml
 Type: System.String

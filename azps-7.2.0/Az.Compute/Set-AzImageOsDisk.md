@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzImageOsDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzImageOsDisk.md
-ms.openlocfilehash: e9ad2de9c72f709875548abc36982f8ede574bfa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 42a343b9ff77a80ff428718f8676642cb58e8d07
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312892"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125683"
 ---
 # Set-AzImageOsDisk
 
 ## SYNOPSIS
 Mengatur properti disk sistem operasi pada objek gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azimageosdisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe Akun Storage dari Disk Gambar OS
+Tipe akun Storage dari Disk Gambar OS
 
 ```yaml
 Type: System.String

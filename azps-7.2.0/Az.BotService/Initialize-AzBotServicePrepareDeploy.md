@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.botservice/initi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Initialize-AzBotServicePrepareDeploy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/BotService/help/Initialize-AzBotServicePrepareDeploy.md
-ms.openlocfilehash: 663f9b330c3c70e7495205e4e0259c2b3e5da14b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 65e908b81812874cd6eed8abb44217fe0c1f857a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318316"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060825"
 ---
 # Initialize-AzBotServicePrepareDeploy
 
 ## SYNOPSIS
 Mengembalikan BotService yang ditentukan oleh parameter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.botservice/initialize-azbotservicepreparedeploy) untuk informasi terkini.
 
 ## SYNTAX
 

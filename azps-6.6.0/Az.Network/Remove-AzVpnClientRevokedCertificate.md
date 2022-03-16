@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVpnClientRevokedCertificate.md
-ms.openlocfilehash: 2e783768fe418ddc05a7df8f955363a54b02fa7c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9133f03a5e9fa83cbedee2647ab78005bfc0a67f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332383"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139971843"
 ---
 # Remove-AzVpnClientRevokedCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat pembatalan klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azvpnclientrevokedcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 
 ### -Thumbprint
 Menentukan pengidentifikasi unik sertifikat yang dihapus.
-Anda dapat mengembalikan informasi yang dapat dicetak dengan jempol untuk sertifikat menggunakan Windows PowerShell seperti ini:`Get-ChildItem -Path "Cert:\LocalMachine\Root"`
+Anda dapat mengembalikan informasi yang dapat dicetak dengan jempol pada sertifikat menggunakan Windows PowerShell seperti ini:`Get-ChildItem -Path "Cert:\LocalMachine\Root"`
 Perintah sebelumnya mengembalikan informasi untuk semua sertifikat Komputer Lokal yang ditemukan di penyimpanan sertifikat Akar.
 
 ```yaml
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkSecurityGroup.md
-ms.openlocfilehash: 36f74417eed05056367305b7ffe1a7dfc02ed2e4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4a600774777997c7339a6e866a325b65e369be53
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382197"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139972077"
 ---
 # Remove-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Menghapus grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-aznetworksecuritygroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Remove-AzNetworkSecurityGroup** menghapus grup keamanan jaringan Azure.
 PS C:\>Remove-AzNetworkSecurityGroup -Name "NSG-FrontEnd" -ResourceGroupName "TestRG"
 ```
 
-Perintah ini akan menghapus grup keamanan yang bernama NSG-FrontEnd dalam grup sumber daya yang bernama TestRG.
+Perintah ini menghapus grup keamanan yang bernama NSG-FrontEnd dalam grup sumber daya yang bernama TestRG.
 
 ## PARAMETERS
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

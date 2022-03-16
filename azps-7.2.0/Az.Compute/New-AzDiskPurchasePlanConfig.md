@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
-ms.openlocfilehash: 70b4b79422ea6dc7aa322d59685a3ac48f1e38db
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 29ac9ecedb20a44e79cfa0944f2b0f55ac14aaf6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125891"
 ---
 # New-AzDiskPurchasePlanConfig
 
 ## SYNOPSIS
 Membuat Objek PurchasePlan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azdiskpurchaseplanconfig) untuk informasi terkini.
 
 ## SYNTAX
 

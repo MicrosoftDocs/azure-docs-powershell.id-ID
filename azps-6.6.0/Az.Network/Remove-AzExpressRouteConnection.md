@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteConnection.md
-ms.openlocfilehash: c3c4bcaea4c2c25ad3a3add8319f4b162aa24365
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f35af53089fe69add833f2efee9e384b2b49f4c3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382306"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139972275"
 ---
 # Remove-AzExpressRouteConnection
 
 ## SYNOPSIS
 Menghapus ExpressRouteConnection.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azexpressrouteconnection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ PS C:\> Remove-AzExpressRouteConnection -ResourceGroupName $ExpressRouteGateway.
 
 Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway tersambung ke Situs ExpressRoute menggunakan perintah New-AzExpressRouteConnection.
+Setelah gateway dibuat, gateway itu tersambung ke Situs ExpressRoute menggunakan New-AzExpressRouteConnection waktu.
 
 Lalu menghapus koneksi menggunakan nama koneksi.
 
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

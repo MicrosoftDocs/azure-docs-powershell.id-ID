@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJob.md
-ms.openlocfilehash: b30e4abf47811ac0597670be24ec01130b3c9bb3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3a784201bf49ea1583099d32fc2fe68bf3431a35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256075"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061887"
 ---
 # Get-AzAutomationDscCompilationJob
 
 ## SYNOPSIS
 Mendapatkan pekerjaan kompilasi DSC dalam Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationdsccompilationjob) untuk informasi terkini.
 
 ## SYNTAX
 

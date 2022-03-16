@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDataDisk.md
-ms.openlocfilehash: 7e7cf9f102e3a7da1d86c7f621576374e34561a7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e870fc9318a34d2b9ff83632cbe7447bf566ecdd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165998"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125575"
 ---
 # Set-AzVMDataDisk
 
 ## SYNOPSIS
 Mengubah properti disk data mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmdatadisk) untuk informasi terkini.
 
 ## SYNTAX
 

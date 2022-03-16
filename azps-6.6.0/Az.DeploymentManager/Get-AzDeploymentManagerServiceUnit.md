@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerServiceUnit.md
-ms.openlocfilehash: e1ea90ba7835559ffc0ff4950d7a1421b8c7a625
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9883206258f973e1cae450eebda11da672e65017
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353306"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140107181"
 ---
 # Get-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
 Dapatkan unit layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerserviceunit) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah la
 PS C:\> Get-AzDeploymentManagerServiceUnit -InputObject $serviceUnitObject
 ```
 
-Perintah ini mendapatkan unit layanan yang namanya, nama layanan, nama topologi layanan, dan ResourceGroup cocok dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
+Perintah ini akan mendapatkan unit layanan yang namanya, nama layanan, nama topologi layanan, dan ResourceGroup cocok dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
 
 ## PARAMETERS
 
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

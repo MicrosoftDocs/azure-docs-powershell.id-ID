@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridSubscription.md
-ms.openlocfilehash: 13d0e0d8b70137164c18f38df184277a6d6c1d41
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cc2316bc86308cc64d99bdd35c20b9c546be6469
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278316"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959891"
 ---
 # Remove-AzEventGridSubscription
 
 ## SYNOPSIS
 Menghapus langganan acara Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/remove-azeventgridsubscription) untuk informasi terkini.
 
 ## SYNTAX
 

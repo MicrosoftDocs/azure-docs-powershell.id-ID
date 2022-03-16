@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/test-azn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzNetworkWatcherConnectivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Test-AzNetworkWatcherConnectivity.md
-ms.openlocfilehash: cfc2b1851002f051698325caabb7a733f2a7df51
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bdf82fff7c2785d219052974eb18ec9bce1cc5ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345329"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140101205"
 ---
 # Test-AzNetworkWatcherConnectivity
 
 ## SYNOPSIS
 Mengembalikan informasi konektivitas untuk VM sumber yang ditentukan dan tujuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/test-aznetworkwatcherconnectivity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -294,34 +297,34 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 ## RELATED LINKS
 
-[New-AzNetworkWatcher](./New-AzNetworkWatcher.md) 
- [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md) 
+[New-AzNetworkWatcher](./New-AzNetworkWatcher.md)
+ [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
  [Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
-[Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md) 
- [Get-AzNetworkWatcherSecurityGroupView](./Get-AzNetworkWatcherSecurityGroupView.md) 
- [Get-AzNetworkWatcherTopology](./Get-AzNetworkWatcherTopology.md) 
+[Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
+ [Get-AzNetworkWatcherSecurityGroupView](./Get-AzNetworkWatcherSecurityGroupView.md)
+ [Get-AzNetworkWatcherTopology](./Get-AzNetworkWatcherTopology.md)
  [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md) 
- [New-AzPacketCaptureFilterConfig](./New-AzPacketCaptureFilterConfig.md) 
- [Get-AzNetworkWatcherPacketCapture](./Get-AzNetworkWatcherPacketCapture.md) 
- [Remove-AzNetworkWatcherPacketCapture](./Remove-AzNetworkWatcherPacketCapture.md) 
+[New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md)
+ [New-AzPacketCaptureFilterConfig](./New-AzPacketCaptureFilterConfig.md)
+ [Get-AzNetworkWatcherPacketCapture](./Get-AzNetworkWatcherPacketCapture.md)
+ [Remove-AzNetworkWatcherPacketCapture](./Remove-AzNetworkWatcherPacketCapture.md)
  [Stop-AzNetworkWatcherPacketCapture](./Stop-AzNetworkWatcherPacketCapture.md)
 
 
-[Start-AzNetworkWatcherResourceTroubleshooting](./Start-AzNetworkWatcherResourceTroubleshooting.md) 
- [New-AzNetworkWatcherProtocolConfiguration](./New-AzNetworkWatcherProtocolConfiguration.md) 
- [Test-AzNetworkWatcherIPFlow](./Test-AzNetworkWatcherIPFlow.md) 
- [Test-AzNetworkWatcherConnectivity](./Test-AzNetworkWatcherConnectivity.md) 
- [Stop-AzNetworkWatcherConnectionMonitor](./Stop-AzNetworkWatcherConnectionMonitor.md) 
- [Start-AzNetworkWatcherConnectionMonitor](./Start-AzNetworkWatcherConnectionMonitor.md) 
- [Set-AzNetworkWatcherConnectionMonitor](./Set-AzNetworkWatcherConnectionMonitor.md) 
- [Set-AzNetworkWatcherConfigFlowLog](./Set-AzNetworkWatcherConfigFlowLog.md) 
- [Remove-AzNetworkWatcherConnectionMonitor](./Remove-AzNetworkWatcherConnectionMonitor.md) 
- [New-AzNetworkWatcherConnectionMonitor](./New-AzNetworkWatcherConnectionMonitor.md) 
- [Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md) 
- [Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md) 
- [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md) 
- [Get-AzNetworkWatcherConnectionMonitorReport](./Get-AzNetworkWatcherConnectionMonitorReport.md) 
+[Start-AzNetworkWatcherResourceTroubleshooting](./Start-AzNetworkWatcherResourceTroubleshooting.md)
+ [New-AzNetworkWatcherProtocolConfiguration](./New-AzNetworkWatcherProtocolConfiguration.md)
+ [Test-AzNetworkWatcherIPFlow](./Test-AzNetworkWatcherIPFlow.md)
+ [Test-AzNetworkWatcherConnectivity](./Test-AzNetworkWatcherConnectivity.md)
+ [Stop-AzNetworkWatcherConnectionMonitor](./Stop-AzNetworkWatcherConnectionMonitor.md)
+ [Start-AzNetworkWatcherConnectionMonitor](./Start-AzNetworkWatcherConnectionMonitor.md)
+ [Set-AzNetworkWatcherConnectionMonitor](./Set-AzNetworkWatcherConnectionMonitor.md)
+ [Set-AzNetworkWatcherConfigFlowLog](./Set-AzNetworkWatcherConfigFlowLog.md)
+ [Remove-AzNetworkWatcherConnectionMonitor](./Remove-AzNetworkWatcherConnectionMonitor.md)
+ [New-AzNetworkWatcherConnectionMonitor](./New-AzNetworkWatcherConnectionMonitor.md)
+ [Get-AzNetworkWatcherReachabilityReport](./Get-AzNetworkWatcherReachabilityReport.md)
+ [Get-AzNetworkWatcherReachabilityProvidersList](./Get-AzNetworkWatcherReachabilityProvidersList.md)
+ [Get-AzNetworkWatcherFlowLogStatus](./Get-AzNetworkWatcherFlowLogStatus.md)
+ [Get-AzNetworkWatcherConnectionMonitorReport](./Get-AzNetworkWatcherConnectionMonitorReport.md)
  [Get-AzNetworkWatcherConnectionMonitor](./Get-AzNetworkWatcherConnectionMonitor.md)

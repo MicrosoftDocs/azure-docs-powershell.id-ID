@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbCollectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbCollectionSetting.md
-ms.openlocfilehash: f0160929d76977e7c85190aeb281cc9a55372381
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1979a079b37b96735661720bc4c2107fd6cc964d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124639"
 ---
 # New-AzDataMigrationMongoDbCollectionSetting
 
 ## SYNOPSIS
 Membuat pengaturan kumpulan untuk migrasi sesuai dengan migrasi dbdb
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbcollectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Skey
-Daftar tombol sah yang dipisahkan koma. Untuk target hashoDb, Anda dapat menentukan urutan kunci s hash "S hashKeyName:Order", dengan urutan 1, -1 atau kosong untuk disederhan, misalnya "_id,email:-1".
+Daftar tombol sah yang dipisahkan koma. Untuk target hashoDb, Anda dapat menentukan urutan kunci s key "S altkeyName:Order", dengan urutan 1, -1 atau kosong untuk disederhan, misalnya "_id,email:-1".
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/sy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Sync-AzApiManagementKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Sync-AzApiManagementKeyVaultSecret.md
-ms.openlocfilehash: 6d821121c769197a0c6a80a18cffb21e3e07f757
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2318bac8fcc00d4632b8c7e1a7a1b2db2b839f79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284892"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062517"
 ---
 # Sync-AzApiManagementKeyVaultSecret
 
 ## SYNOPSIS
 Refresh BernamaValue atau Sertifikat yang dibuat oleh KeyVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/sync-azapimanagementkeyvaultsecret) untuk informasi terkini.
 
 ## SYNTAX
 

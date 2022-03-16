@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseDataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseDataFlowDebugSession.md
-ms.openlocfilehash: 317b2ae84ba18da2830a71862bdbd6278ba44474
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0af1419de1cd0354c17f6062958f680872b08d99
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113263"
 ---
 # Stop-AzSynapseDataFlowDebugSession
 
 ## SYNOPSIS
 Menghentikan sesi debug aliran data di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/stop-azsynapsedataflowdebugsession) untuk informasi terkini.
 
 ## SYNTAX
 

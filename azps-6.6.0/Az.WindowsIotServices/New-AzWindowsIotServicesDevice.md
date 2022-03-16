@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/New-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/New-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: c24c40ed7a443d8db4db85359e6dcee3a596aa9f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f08e59667bedb4c931effa7b6ccaacdf53b981e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344321"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128167"
 ---
 # New-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
-Buat atau perbarui metadata layanan Windows IoT Device.
-Pola biasa untuk mengubah properti adalah mengambil metadata Windows IoT Device Service dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+Membuat atau memperbarui metadata layanan Windows IoT Device.
+Pola biasa untuk mengubah properti adalah mengambil Windows metadata Layanan Perangkat IoT dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.windowsiotservices/new-azwindowsiotservicesdevice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ New-AzWindowsIotServicesDevice -Name <String> -ResourceGroupName <String> [-Subs
 ```
 
 ## DESCRIPTION
-Buat atau perbarui metadata layanan Windows IoT Device.
-Pola biasa untuk mengubah properti adalah mengambil metadata Windows IoT Device Service dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+Membuat atau memperbarui metadata layanan Windows IoT Device.
+Pola biasa untuk mengubah properti adalah mengambil Windows metadata Layanan Perangkat IoT dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Perintah ini akan membuat Windows IoT baru.
 ## PARAMETERS
 
 ### -AdminDomainName
-Windows domain AAD OEM IoT Device Service
+Windows domain OEM AAD IoT Device Service
 
 ```yaml
 Type: System.String
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingDomainName
-Windows domain odm layanan perangkat IoT AAD
+Windows domain layanan perangkat IoT ODM AAD
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag layanan Windows IoT Device.
-Jangan tentukan untuk membuat data baru Windows IoT Device.
+Jangan tentukan untuk membuat fitur baru Windows IoT Device.
 Diperlukan untuk memperbarui data yang Windows IoT Device Service.
 
 ```yaml
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

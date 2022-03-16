@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseSparkPool.md
-ms.openlocfilehash: 403b95e2be70e40b9df8409967effff1478063aa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f0cd441405a85e9364ad94abc4774aa071e3ba96
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113533"
 ---
 # New-AzSynapseSparkPool
 
 ## SYNOPSIS
 Membuat pool Grafik Api Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsesparkpool) untuk informasi terkini.
 
 ## SYNTAX
 

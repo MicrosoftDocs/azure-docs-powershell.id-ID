@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Remove-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Remove-AzConsumptionBudget.md
-ms.openlocfilehash: 4c392c8b735336a6fad75df43b6d791e60154aad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2800ece9f7955ea16d9b995cfb7fd1e54b2709c0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061005"
 ---
 # Remove-AzConsumptionBudget
 
 ## SYNOPSIS
 Hapus anggaran dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/remove-azconsumptionbudget) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObje
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzConsumptionBudget menghapus anggaran dalam langganan atau grup sumber daya.
+Cmdlet Remove-AzConsumptionBudget cmdlet menghapus anggaran baik dalam langganan maupun grup sumber daya.
 
 ## EXAMPLES
 

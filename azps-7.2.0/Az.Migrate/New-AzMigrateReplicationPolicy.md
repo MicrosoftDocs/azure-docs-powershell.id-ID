@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationPolicy.md
-ms.openlocfilehash: 59c2a5151a20ab66314fb9188b189c0fb8bda556
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7b4ad38c2f61fe63eccfd7bc87ab7de75a00f24c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288779"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955931"
 ---
 # New-AzMigrateReplicationPolicy
 
 ## SYNOPSIS
 Operasi untuk membuat kebijakan replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

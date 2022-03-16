@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOrigin.md
-ms.openlocfilehash: 7cabca877bf29bc9c6336a4ed249598e657cc208
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0c3aad2a10d0a6a1af416a211b7b738be9171a8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060609"
 ---
 # New-AzCdnOrigin
 
 ## SYNOPSIS
 Membuat origin CDN baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnorigin) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Azure CDN origin tersebut.
+Azure CDN origin.
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Azure CDN origin.
+Azure CDN origin baru.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Azure CDN sumber daya link privat origin.
+Azure CDN sumber daya tautan privat origin.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya Azure CDN profil.
+Grup sumber daya profil Azure CDN sumber daya.
 
 ```yaml
 Type: System.String
