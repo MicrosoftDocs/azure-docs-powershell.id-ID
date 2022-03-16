@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkGatewayIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkGatewayIpConfig.md
-ms.openlocfilehash: 9cc600cbec795bd91935cf86b7db429fa2cbe245
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a0103bd8cc27e8d27c7879976311bd3cb6a058a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345422"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140075861"
 ---
 # Add-AzVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP ke gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvirtualnetworkgatewayipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **PSSubnet.**
+Menentukan objek **PSSubnet** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -200,9 +203,9 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGateway
-Menentukan objek **PSVirtualNetworkGateway.**
+Menentukan objek **PSVirtualNetworkGateway** .
 Cmdlet ini memodifikasi objek **PSVirtualNetworkGateway** yang Anda tentukan.
-Anda bisa menggunakan cmdlet Get-AzVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway.**
+Anda bisa menggunakan cmdlet Get-AzVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

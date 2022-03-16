@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCrossConnectionPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCrossConnectionPeering.md
-ms.openlocfilehash: 4a146c240c85d661b4562f4597cd7fad2fccea5d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b1230d161de66c1bf60a7d2b12da73cef3d8181e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345482"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140075933"
 ---
 # Add-AzExpressRouteCrossConnectionPeering
 
 ## SYNOPSIS
 Menambahkan konfigurasi peering ke koneksi silang ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azexpressroutecrossconnectionpeering) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Add-AzExpressRouteCrossConnectionPeering -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzExpressRouteCrossConnectionPeering** menambahkan konfigurasi peering ke koneksi silang ExpressRoute. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCrossConnectionPeering,** Anda harus memanggil cmdlet Set-AzExpressRouteCrossConnection tersebut untuk mengaktifkan konfigurasi.
+Cmdlet **Add-AzExpressRouteCrossConnectionPeering** menambahkan konfigurasi peering ke koneksi silang ExpressRoute. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCrossConnectionPeering**, Anda harus memanggil cmdlet Set-AzExpressRouteCrossConnection untuk mengaktifkan konfigurasi.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCrossConnection
-Koneksi silang ExpressRoute sedang diubah. Ini adalah objek Azure yang dikembalikan oleh cmdlet **Get-AzExpressRouteCrossConnection.**
+Koneksi silang ExpressRoute sedang diubah. Ini adalah objek Azure yang dikembalikan oleh cmdlet **Get-AzExpressRouteCrossConnection** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCrossConnection
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringType
-Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering` , `AzurePublicPeering` , dan `MicrosoftPeering`
+Nilai yang dapat diterima untuk parameter ini adalah: `AzurePrivatePeering`, `AzurePublicPeering`, dan `MicrosoftPeering`
 
 ```yaml
 Type: System.String
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

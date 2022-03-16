@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnEndpoint.md
-ms.openlocfilehash: 0d6a1d1c5f2612486ae2bce0af197254f07b3c6d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 51f5ae6c8315c723d92d3502693bca41508e0318
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060555"
 ---
 # New-AzFrontDoorCdnEndpoint
 
 ## SYNOPSIS
 Membuat titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

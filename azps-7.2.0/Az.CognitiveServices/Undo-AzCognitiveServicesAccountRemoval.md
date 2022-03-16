@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Undo-AzCognitiveServicesAccountRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Undo-AzCognitiveServicesAccountRemoval.md
-ms.openlocfilehash: 98cae6000e7a5539a87671933f39dc1cf8fe190c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 74bdd82caee742a45a6b317349f01a546e571bdb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297948"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126169"
 ---
 # Undo-AzCognitiveServicesAccountRemoval
 
 ## SYNOPSIS
 Memulihkan akun yang telah dihapus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/undo-azcognitiveservicesaccountremoval) untuk informasi terkini.
 
 ## SYNTAX
 

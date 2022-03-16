@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/set-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsZone.md
-ms.openlocfilehash: 08804f4b1a06c98297654afdc7849cc26ebe63c1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9d7bdd0908aa34a71181389f5853d8a00cf36da1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267947"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124099"
 ---
 # Set-AzDnsZone
 
 ## SYNOPSIS
 Memperbarui properti zona DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/set-azdnszone) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Set-AzDnsZone -Zone <DnsZone> [-Overwrite] [-DefaultProfile <IAzureContextContai
 Cmdlet **Set-AzDnsZone** memperbarui zona DNS tertentu di layanan DNS Azure.
 Cmdlet ini tidak memperbarui kumpulan data dalam zona.
 Anda dapat melewati **objek DnsZone** sebagai parameter atau dengan menggunakan operator saluran, atau Anda juga dapat menentukan parameter *ZoneName* *dan ResourceGroupName* .
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan serentak.
 
 ## EXAMPLES
@@ -67,7 +70,7 @@ Perintah akhir akan melakukan perubahan.
 PS C:\>Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myzone.com" -Tag @(@{"Name"="Dept"; "Value"="Electrical"})
 ```
 
-Perintah ini memperbarui tag untuk zona bernama myzone.com tanpa terlebih dahulu mendapatkan zona secara eksplisit.
+Perintah ini memperbarui tag untuk zona bernama myzone.com tanpa terlebih dahulu mendapatkan zona tersebut secara eksplisit.
 
 ### Contoh 3: Mengaitkan zona privat dengan jaringan virtual dengan menentukan ID-nya
 ```
@@ -83,7 +86,7 @@ PS C:\>$vnet = Get-AzVirtualNetwork -ResourceGroupName "MyResourceGroup" -Name "
 PS C:\>Set-AzDNSZone -ResourceGroupName "MyResourceGroup" -Name "myprivatezone.com" -RegistrationVirtualNetwork @($vnet)
 ```
 
-Perintah ini menghubungkan zona DNS myprivatezone.com dengan myvnet jaringan virtual sebagai jaringan pendaftaran dengan memberikan objek jaringan virtual yang diwakili oleh $vnet variabel ke cmdlet Set-AzDnsZone.
+Perintah ini menghubungkan zona DNS privat myprivatezone.com dengan myvnet jaringan virtual sebagai jaringan pendaftaran dengan memberikan objek jaringan virtual yang diwakili oleh $vnet variabel ke cmdlet Set-AzDnsZone.
 
 ## PARAMETERS
 
@@ -291,7 +294,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet meminta konfirmasi Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
+Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
 Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
 

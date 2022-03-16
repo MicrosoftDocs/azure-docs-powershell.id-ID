@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBTable.md
-ms.openlocfilehash: 963b5befbd6854271fb2d032f605d82335a72aaf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2b3977e90eed0ac90e0c089c5df4eb4ac2581d37
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266172"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124999"
 ---
 # New-AzCosmosDBTable
 
 ## SYNOPSIS
 Membuat Tabel CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbtable) untuk informasi terkini.
 
 ## SYNTAX
 

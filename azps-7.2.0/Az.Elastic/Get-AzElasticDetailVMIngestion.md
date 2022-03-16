@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDetailVMIngestion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDetailVMIngestion.md
-ms.openlocfilehash: 1fe744735028a646ea064001126b2935d8056af9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 39d4a8672aca53edbcdec26e3732c286b077a153
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309131"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123973"
 ---
 # Get-AzElasticDetailVMIngestion
 
 ## SYNOPSIS
 Daftar detail vm ingestion yang akan dipantau oleh sumber daya monitor Elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/get-azelasticdetailvmingestion) untuk informasi terkini.
 
 ## SYNTAX
 

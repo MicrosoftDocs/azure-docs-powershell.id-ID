@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssRollingUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssRollingUpgrade.md
-ms.openlocfilehash: 5eb3d6dfd391b705e085a66edcc8548cd02d17ba
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 82025d47b8d1cd7999f1bc489ebc8482e53912dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126079"
 ---
 # Get-AzVmssRollingUpgrade
 
 ## SYNOPSIS
 Memperlihatkan status kumpulan skala mesin virtual terbaru pemutakhiran berputar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmssrollingupgrade) untuk informasi terkini.
 
 ## SYNTAX
 

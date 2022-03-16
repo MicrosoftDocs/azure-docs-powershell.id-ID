@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicy.md
-ms.openlocfilehash: 059a84ef48bda6749def6b775627c943017cc426
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 08b235727e2199f43de2cc48d198d1887b8ba4cd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272476"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086229"
 ---
 # New-AzApplicationGatewayFirewallPolicy
 
 ## SYNOPSIS
 Membuat kebijakan firewall gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **New-AzApplicationGatewayFirewallPolicy** membuat kebijakan firewall gat
 PS C:\> $firewallPolicy = New-AzApplicationGatewayFirewallPolicy -Name wafResource1 -ResourceGroupName "rg1"  -Location  "westus" -CustomRule $customRule
 ```
 
-Perintah ini membuat kebijakan firewall gateway aplikasi Azure baru bernama "wafResource1" di grup sumber daya "rg1" di lokasi "westus" dengan aturan kustom yang ditetapkan di variabel $customRule
+Perintah ini membuat kebijakan firewall gateway aplikasi Azure baru bernama "wafResource1" di grup sumber daya "rg1" di lokasi "westus" dengan aturan kustom yang ditentukan di variabel $customRule ini
 
 ### Contoh 2
 

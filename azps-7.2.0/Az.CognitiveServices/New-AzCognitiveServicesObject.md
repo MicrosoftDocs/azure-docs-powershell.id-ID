@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesObject.md
-ms.openlocfilehash: 33d095e5ab7c8125cd1305cd3a97057fdc84a4b6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 72b12ee6b817720a548a2e2110eac920ad5bb5bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274267"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059835"
 ---
 # New-AzCognitiveServicesObject
 
 ## SYNOPSIS
 Membuat Objek Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesobject) untuk informasi terkini.
 
 ## SYNTAX
 

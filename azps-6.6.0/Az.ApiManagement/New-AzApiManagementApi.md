@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApi.md
-ms.openlocfilehash: 669c1bed28f5dec95014b74e69aac5571ec203d4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ba032e1f0e0437bfff91e232cbc3358cdc93b739
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370745"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140110673"
 ---
 # New-AzApiManagementApi
 
 ## SYNOPSIS
 Membuat API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementapi) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ ResourceGroupName             : Api-Default-West-US
 ServiceName                   : contoso
 ```
 
-Perintah ini membuat API `echoapiv3` di ApiVersionSet `xmsVersionSet` dan menyalin semua operasi, Tag dan Kebijakan dari Api `echo-api` sumber. Langganan menimpa SubscriptionRequired, ServiceUrl, Path, Protocols
+Perintah ini membuat API di `echoapiv3` ApiVersionSet `xmsVersionSet` dan menyalin semua operasi, Tag dan Kebijakan dari Api sumber `echo-api`. Langganan menimpa SubscriptionRequired, ServiceUrl, Path, Protocols
 
 ### Contoh 3
 
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4 . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVM.md
-ms.openlocfilehash: 01ba673f3bb5ea74894a0fc0a579afa83accf0cd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cb2e3c9229f20da32485aa758fe055299b7dc72b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309451"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126061"
 ---
 # Get-AzVmssVM
 
 ## SYNOPSIS
 Mendapatkan properti mesin virtual VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmssvm) untuk informasi terkini.
 
 ## SYNTAX
 

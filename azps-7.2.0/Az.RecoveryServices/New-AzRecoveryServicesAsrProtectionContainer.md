@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainer.md
-ms.openlocfilehash: 8617f43b12585c5fa6b37c15b5b4ab80ca8ca07d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9b081fb9e933acd9a39445aba12484fb4ccd2dc5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084411"
 ---
 # New-AzRecoveryServicesAsrProtectionContainer
 
 ## SYNOPSIS
 Creates an Azure Site Recovery Protection Container within the specified fabric.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrprotectioncontainer) untuk informasi terkini.
 
 ## SYNTAX
 

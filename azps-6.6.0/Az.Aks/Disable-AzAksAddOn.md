@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/disable-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
-ms.openlocfilehash: 88870f64b1e8eac562ad4f3a9cd1c65ee2fcce6c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 48a65f8321b09a3fc3779fe9bb956511d79a4fe6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341813"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140145195"
 ---
 # Disable-AzAksAddOn
 
 ## SYNOPSIS
 Nonaktifkan add-on untuk aks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/disable-azaksaddon) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Nonaktifkan add-on untuk aks.
 PS C:\> Get-AzAks -ResourceGroupName group -Name myCluster | Disable-AzAksAddon -Name HttpApplicationRouting,Monitoring,AzurePolicy,VirtualNode,KubeDashboard
 ```
 
-Menonaktifkan add-on `HttpApplicationRouting` , , , dan untuk `Monitoring` `AzurePolicy` `VirtualNode` `KubeDashboard` tinta.
+Menonaktifkan add-on `HttpApplicationRouting`, `Monitoring`, `AzurePolicy`, `VirtualNode` dan `KubeDashboard` untuk tinta.
 
 ## PARAMETERS
 
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

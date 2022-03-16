@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppUpgradedDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppUpgradedDefinition.md
-ms.openlocfilehash: ba1aac5dc9db7a025d5686ccb4d9d2c405ace90a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7256bcaacb9f16b6f6d2545b331853d12acb74d4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957407"
 ---
 # Get-AzLogicAppUpgradedDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi yang ditingkatkan untuk aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azlogicappupgradeddefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -184,7 +187,7 @@ $UpgradedDefinition.ToString()
 ```
 
 Perintah pertama mendapatkan definisi dari aplikasi logika yang dimutakhirkan ke versi skema target yang ditentukan.
-Perintah menyimpan definisi dalam $UpgradedDefinition baru.
+Perintah menyimpan definisi dalam $UpgradedDefinition variabel.
 Perintah kedua menampilkan konten $UpgradedDefinition sebagai string.
 
 ## PARAMETERS

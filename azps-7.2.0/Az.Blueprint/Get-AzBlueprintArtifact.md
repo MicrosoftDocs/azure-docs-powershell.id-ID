@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintArtifact.md
-ms.openlocfilehash: 38bd87fa2db91a4a27d98e33f44686ca425f6e4b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e05965ea5e2b9de0c2a4593fa4479756e2616e9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060969"
 ---
 # Get-AzBlueprintArtifact
 
 ## SYNOPSIS
 Ambil artifak dari definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/get-azblueprintartifact) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerOutboundRuleConfig.md
-ms.openlocfilehash: 0b87a6bea869e74a8b31262bc804fd1210a06116
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a615932b3b6d1aa4696fb71c83038220cf932dc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277963"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086085"
 ---
 # New-AzLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
 Membuat konfigurasi aturan keluar untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalanceroutboundruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,10 +51,10 @@ PS C:\>$backend = New-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddre
 PS C:\>New-AzLoadBalancerOutboundRuleConfig -Name "MyOutboundRule" -Protocol "Tcp" -FrontendIPConfiguration $frontend -BackendAddressPool $backend
 ```
 
-Perintah pertama membuat alamat IP publik yang bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip sumber daya.
+Perintah pertama membuat alamat IP publik bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip lokal.
 Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip, lalu menyimpannya dalam variabel $frontend.
-Perintah ketiga membuat konfigurasi pool alamat ujung-belakang yang bernama BackendAddressPool01, lalu menyimpannya dalam $backend akhir.
-Perintah keempat membuat konfigurasi aturan keluar bernama MyOutboundRule menggunakan objek front-end dan back-end dalam $frontend dan $backend.
+Perintah ketiga membuat konfigurasi pool alamat ujung-belakang yang bernama BackendAddressPool01, lalu menyimpannya dalam $backend lokal.
+Perintah keempat membuat konfigurasi aturan keluar bernama MyOutboundRule menggunakan objek front-end dan back-end $frontend $backend.
 Parameter *Protocol*, *FrontendIPConfiguration*, *dan BackendAddressPool* semuanya diperlukan untuk membuat konfigurasi aturan keluar.
 
 ### Contoh 2

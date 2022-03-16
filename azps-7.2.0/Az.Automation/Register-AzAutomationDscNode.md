@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/regis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationDscNode.md
-ms.openlocfilehash: 9d3ecc29c2228176d60eb4a587956828d7890127
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2949c0a8d41fdfbff176c10de70af8f82f41b741
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277292"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061563"
 ---
 # Register-AzAutomationDscNode
 
 ## SYNOPSIS
 Mendaftarkan mesin virtual Azure yang Windows OS sebagai node DSC untuk akun Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/register-azautomationdscnode) untuk informasi terkini.
 
 ## SYNTAX
 

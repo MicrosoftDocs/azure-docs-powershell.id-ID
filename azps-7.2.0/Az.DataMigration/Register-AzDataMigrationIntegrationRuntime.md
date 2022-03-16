@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Register-AzDataMigrationIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Register-AzDataMigrationIntegrationRuntime.md
-ms.openlocfilehash: 47ba8731284ffa706f8a860e35d3af28f2c280ba
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a1947a0e047b3b1b38bd4204020ea7c6642959c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304859"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124585"
 ---
 # Register-AzDataMigrationIntegrationRuntime
 
 ## SYNOPSIS
 Mendaftarkan Layanan Migrasi Sql pada Integration Runtime
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/register-azdatamigrationintegrationruntime) untuk informasi terkini.
 
 ## SYNTAX
 

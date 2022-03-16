@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesUser.md
-ms.openlocfilehash: 977d4de3236022c695a917512ae5da2339008192
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4801bb96480efd9af87a634d11735924d00dfb4a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262683"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957479"
 ---
 # Update-AzLabServicesUser
 
 ## SYNOPSIS
 Operasi untuk memperbarui pengguna lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/update-azlabservicesuser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -287,7 +290,7 @@ LAB <Lab>:
   - `[NonAdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.
   - `[NonAdminUserUsername <String>]`: Nama pengguna yang digunakan saat masuk ke LAB VM.
   - `[PlanId <String>]`: ID rencana lab. Digunakan selama pembuatan sumber daya untuk menyediakan default dan bertindak sebagai wadah izin saat membuat lab melalui labs.azure.com. Mengatur labPlanId di lab yang sudah ada menyediakan organisasi..
-  - `[RosterProfileActiveDirectoryGroupId <String>]`: AAD pertama ID tempat daftar lab terisi. Setelah kumpulan ini mengaktifkan AAD mode sinkronisasi.
+  - `[RosterProfileActiveDirectoryGroupId <String>]`: AAD pertama ID grup tempat daftar lab terisi. Setelah kumpulan ini mengaktifkan AAD mode sinkronisasi.
   - `[RosterProfileLmsInstance <String>]`: URI dasar yang mengidentifikasi contoh lms.
   - `[RosterProfileLtiClientId <String>]`: Id unik alat layanan lab azure dalam lms.
   - `[RosterProfileLtiContextId <String>]`: Pengidentifikasi konteks unik untuk lab dalam lms.

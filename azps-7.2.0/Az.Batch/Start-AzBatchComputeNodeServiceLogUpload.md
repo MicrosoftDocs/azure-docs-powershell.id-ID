@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/Start-AzBa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchComputeNodeServiceLogUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchComputeNodeServiceLogUpload.md
-ms.openlocfilehash: d96aa0e701c0e471d171a311884c2e56aed8db0c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50268e3a176069326cb9d9ef4275855ad1ee54b5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061149"
 ---
 # Start-AzBatchComputeNodeServiceLogUpload
 
 ## SYNOPSIS
-Upload menghitung file log layanan node ke Azure Storage lokal.
+Upload layanan node menghitung file log ke Azure Storage layanan node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/start-azbatchcomputenodeservicelogupload) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ NumberOfFilesUploaded VirtualDirectoryName
                     2 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload menghitung log layanan node yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari node perhitungan, id pool tertentu dari pool tempat node perhitungan berada, dan menghitung id node.
+Upload log layanan node hitung ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari node perhitungan, id pool yang diberikan dari pool tempat node perhitungan berada, dan menghitung id node.
 
 ### Contoh 3
 ```
@@ -88,7 +91,7 @@ NumberOfFilesUploaded VirtualDirectoryName
                     2 contosobatch-22F48D278AD60CC2/contosopool/tvm-1612030122_1-20180405t234700z/bc3dd583-19a5-4665-aa83-87e4e1237d35
 ```
 
-Upload log layanan node ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari objek node hitung.
+Upload layanan node hitung yang ditulis pada atau setelah 1 Januari 2018 tengah malam dan sebelum 10 Januari 2018 tengah malam, yang diperoleh dari objek node perhitungan.
 
 ## PARAMETERS
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerUrl
-Url wadah untuk Azure Storage.
+Url kontainer ke Azure Storage.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdncus
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnCustomDomain.md
-ms.openlocfilehash: 93f97e32454d248cbcf2fb2deb02284079cf4a8d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: af97edfafd44bd0729824a15f2d87864fe99e4bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273100"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060663"
 ---
 # New-AzCdnCustomDomain
 
 ## SYNOPSIS
 Membuat domain kustom untuk titik akhir CDN akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ ProvisioningState               : Succeeded
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan CDN titik akhir yang ditambahkan domain kustom.
+Menentukan CDN titik akhir tempat domain kustom ditambahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint

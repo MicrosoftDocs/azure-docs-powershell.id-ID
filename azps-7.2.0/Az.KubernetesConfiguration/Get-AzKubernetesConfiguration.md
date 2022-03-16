@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Get-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Get-AzKubernetesConfiguration.md
-ms.openlocfilehash: 7972be48b6ae2bf526d024733b3d030c7fcfdc3e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2e5e0450d8a0bb48ea292840e94215c681a03be
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167315"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958119"
 ---
 # Get-AzKubernetesConfiguration
 
 ## SYNOPSIS
 Mendapatkan detail Konfigurasi Kontrol Sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kubernetesconfiguration/get-azkubernetesconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

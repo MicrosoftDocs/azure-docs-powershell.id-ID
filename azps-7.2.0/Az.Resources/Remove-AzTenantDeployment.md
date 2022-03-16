@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTenantDeployment.md
-ms.openlocfilehash: 6a8398619c2e9354d573c150552c2b40570b55f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d42f9288b1c140f98accf7a91517a09b92f85e6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083817"
 ---
 # Remove-AzTenantDeployment
 
 ## SYNOPSIS
 Menghapus penyebaran dalam lingkup penyewa dan setiap operasi terkait
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-aztenantdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzMonitorVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzMonitorVMHost.md
-ms.openlocfilehash: 67d08e0b8b91311ce12092022d8cc7f6ba249930
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 506e3b17cf33771b4e287b3b0cfc67ff26c75554
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269163"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957065"
 ---
 # Update-AzLogzMonitorVMHost
 
 ## SYNOPSIS
 Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/update-azlogzmonitorvmhost) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ AgentVersion Id
 1.0          /SUBSCRIPTIONS/CE37D538-DFA3-49C3-B3CD-149B4B7DB48A/RESOURCEGROUPS/KOYTEST/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/TEST-VM-1
 ```
 
-Perintah ini mengirimkan permintaan untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor tertentu.
+Perintah ini mengirimkan permintaan untuk memperbarui koleksi ketika Logz.io pelanggan telah diinstal pada VM untuk monitor tertentu.
 
 ## PARAMETERS
 

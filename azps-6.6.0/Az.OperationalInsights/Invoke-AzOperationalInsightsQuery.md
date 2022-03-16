@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Invoke-AzOperationalInsightsQuery.md
-ms.openlocfilehash: 8faa33966655d648489eec3e4993adc3f18f7633
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7819d9b259bc2f7a40522e59d052f30e6c7cf500
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335362"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139971231"
 ---
 # Invoke-AzOperationalInsightsQuery
 
 ## SYNOPSIS
 Mengembalikan hasil pencarian berdasarkan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/invoke-azoperationalinsightsquery) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Invoke-AzOperationalInsightsQuery** mengembalikan hasil pencarian berda
 Anda dapat mengakses status pencarian dalam properti Metadata dari objek yang dikembalikan.
 Jika status tertunda, pencarian belum selesai, dan hasilnya akan berasal dari arsip.
 Anda dapat mengambil hasil pencarian dari properti Nilai dari objek yang dikembalikan.
-Silakan periksa detail batas kueri umum di sini: https://docs.microsoft.com/azure/azure-monitor/service-limits#log-queries-and-language .
+Silakan periksa detail batas kueri umum di sini: https://docs.microsoft.com/azure/azure-monitor/service-limits#log-queries-and-language.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ PS C:\> $queryResults.Results
 
 Hasil dari kueri ini akan dibatasi hingga 24 jam terakhir.
 
-### Contoh 4: Sertakan & render dalam hasil kueri
+### Contoh 4: Sertakan & kueri dalam hasil kueri
 ```
 PS C:\> $queryResults = Invoke-AzOperationalInsightsQuery -WorkspaceId "63613592-b6f7-4c3d-a390-22ba13102111" -Query "union * | take 10" -IncludeRender -IncludeStatistics
 PS C:\> $queryResults.Results
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

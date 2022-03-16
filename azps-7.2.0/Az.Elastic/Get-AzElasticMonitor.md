@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticMonitor.md
-ms.openlocfilehash: 11a47adbf26b050dc8b09593b14bc59ac5dab0fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 936a5c0de13dbec0838c26d71d6831c115a65dd2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288011"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123937"
 ---
 # Get-AzElasticMonitor
 
 ## SYNOPSIS
 Dapatkan properti sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/get-azelasticmonitor) untuk informasi terkini.
 
 ## SYNTAX
 

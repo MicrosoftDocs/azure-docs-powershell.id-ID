@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchJob.md
-ms.openlocfilehash: 7fe480f68149afac258b339ce3d1fbfbe26602a1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 133e33178643de4ad2a36ba1c035fa4b6d362474
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391129"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139979961"
 ---
 # Remove-AzBatchJob
 
 ## SYNOPSIS
 Menghapus pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzBatchJob [-Id] <String> [-Force] -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchJob** menghapus pekerjaan Azure Batch.
-Cmdlet ini akan meminta konfirmasi Anda sebelum menghapus pekerjaan, kecuali jika Anda menentukan *parameter Paksa.*
+Cmdlet ini akan meminta konfirmasi Anda sebelum menghapus pekerjaan, kecuali jika Anda menentukan *parameter Paksa* .
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ PS C:\>Remove-AzBatchJob -Id "Job-000001" -BatchContext $Context
 
 Perintah ini menghapus pekerjaan yang memiliki ID Job-000001.
 Perintah meminta konfirmasi Anda sebelum menghapus pekerjaan.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Menghapus pekerjaan kumpulan tanpa konfirmasi dengan menggunakan pipeline
 ```
@@ -48,7 +51,7 @@ PS C:\>Get-AzBatchJob -Id "Job-000002" -BatchContext $Context | Remove-AzBatchJo
 Perintah ini mendapatkan pekerjaan yang memiliki ID Job-000002 dengan menggunakan cmdlet Get-AzBatchJob cmdlet.
 Perintah itu melewati pekerjaan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Perintah menghapus pekerjaan tersebut.
-Karena perintah menyertakan parameter *Paksa,* perintah tidak akan meminta konfirmasi Anda.
+Karena perintah menyertakan parameter *Paksa* , perintah tidak akan meminta konfirmasi Anda.
 
 ## PARAMETERS
 
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

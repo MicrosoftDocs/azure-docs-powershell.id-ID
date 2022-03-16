@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationService.md
-ms.openlocfilehash: 9b8e2311106fffeb9cbf12cd180041278fba4652
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 58539135e53d5561843922a68d6a3070cf8c94ff
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166025"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126115"
 ---
 # New-AzCommunicationService
 
 ## SYNOPSIS
 Membuat CommunicationService baru atau memperbarui CommunicationService yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/new-azcommunicationservice) untuk informasi terkini.
 
 ## SYNTAX
 

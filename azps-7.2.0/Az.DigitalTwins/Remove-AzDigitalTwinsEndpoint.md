@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: b352e057edc90294ddbeaf4f57d21d1d4af80a35
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ad1abaad4f878b0f9ad86896ec0873686f887ff4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124189"
 ---
 # Remove-AzDigitalTwinsEndpoint
 
 ## SYNOPSIS
 Hapus titik akhir DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/remove-azdigitaltwinsendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

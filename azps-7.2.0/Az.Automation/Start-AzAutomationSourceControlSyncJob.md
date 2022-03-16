@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationSourceControlSyncJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Start-AzAutomationSourceControlSyncJob.md
-ms.openlocfilehash: fa8e6ddd319c50c5e6ffd03b62ac101fce46c253
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 544b744e9eafffbcc6a7fa19cea92a75979a2ede
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061455"
 ---
 # Start-AzAutomationSourceControlSyncJob
 
 ## SYNOPSIS
 Memulai pekerjaan sinkronisasi kontrol sumber Otomatisasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/start-azautomationsourcecontrolsyncjob) untuk informasi terkini.
 
 ## SYNTAX
 

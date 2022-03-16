@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscNodeConfiguration.md
-ms.openlocfilehash: 4cce413c4e251a1af45d73cfed3564969e0b7c2d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5ff8e6d21e040c3eb2e3dd6df83694dcd5520ea0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264236"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061707"
 ---
 # Import-AzAutomationDscNodeConfiguration
 
 ## SYNOPSIS
 Mengimpor dokumen MOF sebagai konfigurasi node DSC dalam Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/import-azautomationdscnodeconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

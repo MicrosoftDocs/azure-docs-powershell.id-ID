@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
-ms.openlocfilehash: 6ba926a12045a43ff6c5c76fce4e88099cf643a7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f0fcb132b0c56f5d564f06dd69cff7893e043eed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168205"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062175"
 ---
 # Update-AzApplicationInsightsWebTestTag
 
 ## SYNOPSIS
-Membuat atau memperbarui definisi Insights uji web Aplikasi.
+Membuat atau memperbarui definisi Insights uji web Application.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsightswebtesttag) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Update-AzApplicationInsightsWebTestTag -InputObject <IApplicationInsightsIdentit
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui definisi Insights uji web Aplikasi.
+Membuat atau memperbarui definisi Insights uji web Application.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Location Name                       WebTestKind   ResourceGroupName     Enabled
 westus2  webtest01-lucasappinsights standard      azpwsh-rg-test        True
 ```
 
-Perintah ini memperbarui link Insights Aplikasi dari uji Web menurut saluran.
+Perintah ini memperbarui tautan Insights Aplikasi dari uji Web menurut saluran.
 
 ## PARAMETERS
 

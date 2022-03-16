@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJobSchedule.md
-ms.openlocfilehash: 7e2872ad7d26c9f1438cca8916a92b6db6e9eb03
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ea46e7e6093b450253e217ebf8429d6ce0f311f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277276"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061203"
 ---
 # Set-AzBatchJobSchedule
 
 ## SYNOPSIS
 Mengatur jadwal pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchjobschedule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> $JobSchedule.Schedule.RecurrenceInterval = New-TimeSpan -Days 2
 PS C:\> Set-AzBatchJobSchedule -JobSchedule $Job -BatchContext $Context
 ```
 
-Perintah pertama mendapatkan pekerjaan menggunakan **Get-AzBatchJobSchedule**, lalu menyimpannya dalam $JobSchedule variabel.
+Perintah pertama mendapatkan pekerjaan menggunakan **Get-AzBatchJobSchedule**, lalu menyimpannya dalam $JobSchedule baru.
 Perintah kedua mengubah interval pengulangan pada `$JobSchedule.Schedule` objek.
 Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $JobSchedule.
 

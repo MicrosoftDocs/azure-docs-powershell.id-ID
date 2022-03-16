@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnEndpoint.md
-ms.openlocfilehash: c3d8cd67ffb814a061c3241dcf5b697301354fa1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b330ca28d87819f5eedbfe58c7f7d3d815fbae14
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060231"
 ---
 # Set-AzFrontDoorCdnEndpoint
 
 ## SYNOPSIS
 Memperbarui titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

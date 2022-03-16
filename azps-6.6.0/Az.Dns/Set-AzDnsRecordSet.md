@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/set-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Set-AzDnsRecordSet.md
-ms.openlocfilehash: 9f785de2b91b5f72b7f784e3af7fd1420f12abcf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 079197c5ad0aaab661cc1227f9481851a6fb57e8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387867"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976757"
 ---
 # Set-AzDnsRecordSet
 
 ## SYNOPSIS
 Memperbarui kumpulan catatan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/set-azdnsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Anda bisa melewati **objek RecordSet** sebagai parameter atau dengan menggunakan
 Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 Kumpulan catatan tidak diperbarui jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
 Ini menyediakan perlindungan untuk perubahan serentak.
-Anda dapat menyembunyikan perilaku ini menggunakan parameter *Timpa,* yang memperbarui kumpulan rekaman terlepas dari perubahan serentak.
+Anda dapat menyembunyikan perilaku ini menggunakan parameter *Timpa* , yang memperbarui kumpulan rekaman terlepas dari perubahan serentak.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ PS C:\> Set-AzDnsRecordSet -RecordSet $RecordSet
 PS C:\> Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A | Add-AzDnsRecordConfig -Ipv4Address 172.16.0.0 | Add-AzDnsRecordConfig -Ipv4Address 172.31.255.255 | Set-AzDnsRecordSet
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzDnsRecordSet cmdlet untuk mendapatkan kumpulan data tertentu, lalu menyimpannya dalam variabel $RecordSet tertentu.
+Perintah pertama menggunakan cmdlet Get-AzDnsRecordSet cmdlet untuk mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet variabel.
 Perintah kedua dan ketiga adalah operasi yang tidak berjaga-sebentar untuk menambahkan dua data A ke kumpulan data.
 Perintah final menggunakan cmdlet **Set-AzDnsRecordSet** untuk melakukan pembaruan.
 
@@ -60,7 +63,7 @@ PS C:\> Set-AzDnsRecordSet -RecordSet $RecordSet
 
 Perintah pertama menggunakan cmdlet **Get-AzDnsRecordset** untuk mendapatkan kumpulan data yang ditentukan, lalu menyimpannya dalam $RecordSet data.
 Perintah kedua memperbarui data SOA tertentu di $RecordSet.
-Perintah terakhir menggunakan cmdlet **Set-AzDnsRecordSet** untuk menyebarkan pembaruan di $RecordSet.
+Perintah final menggunakan cmdlet **Set-AzDnsRecordSet** untuk menyebarkan pembaruan di $RecordSet.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 Menunjukkan untuk memperbarui kumpulan catatan terlepas dari perubahan serentak.
 Kumpulan catatan tidak akan diperbarui jika telah diubah di Azure DNS sejak objek **RecordSet** lokal diambil.
 Ini menyediakan perlindungan untuk perubahan serentak.
-Untuk menyembunyikan perilaku ini, Anda dapat menggunakan parameter *Overwrite,* yang menghasilkan kumpulan rekaman yang diperbarui terlepas dari perubahan serentak.
+Untuk menyembunyikan perilaku ini, Anda dapat menggunakan parameter *Overwrite* , yang menghasilkan kumpulan rekaman yang diperbarui terlepas dari perubahan serentak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -155,8 +158,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
-Secara default, cmdlet meminta konfirmasi Anda jika variabel $ConfirmPreference Windows PowerShell memiliki nilai Sedang atau lebih rendah.
-Jika Anda menetapkan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
+Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda. 
 
 ## RELATED LINKS

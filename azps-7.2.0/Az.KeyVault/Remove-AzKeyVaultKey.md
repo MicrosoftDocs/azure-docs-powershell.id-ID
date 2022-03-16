@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultKey.md
-ms.openlocfilehash: 00df906b2e15f0e6da9c0c9fe03744f7aef50c8d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5e4687a8be061336d8cc9b9f6ccb192f309b78ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297627"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055191"
 ---
 # Remove-AzKeyVaultKey
 
 ## SYNOPSIS
 Menghapus kunci di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [-Force] [-PassT
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzKeyVaultKey akan menghapus kunci dalam kunci vault.
+Cmdlet Remove-AzKeyVaultKey menghapus kunci di kunci vault.
 Jika kunci tidak sengaja terhapus, kunci dapat dipulihkan menggunakan Undo-AzKeyVaultKeyRemoval oleh pengguna dengan izin 'pulihkan' khusus.
 Cmdlet ini memiliki nilai yang tinggi untuk **properti ConfirmImpact** .
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/new-azaksnod
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksNodePool.md
-ms.openlocfilehash: 72feae5c15d9fdeaf53c76e46cabf31c4f75c8ef
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 808635c6022c1f452eb60ac93023614d3a21e8e2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363554"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140145123"
 ---
 # New-AzAksNodePool
 
 ## SYNOPSIS
 Membuat kelompok node baru di kluster tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/new-azaksnodepool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Membuat kelompok node baru di kluster tertentu.
 PS C:\> New-AzAksNodePool -ResourceGroupName myResouceGroup -ClusterName myCluster -Name mydefault
 ```
 
-### Membuat Windows Server di AKS
+### Membuat Windows Server Di AKS
 ```powershell
 PS C:\> $cred = ConvertTo-SecureString -AsPlainText "Password!!123" -Force
 PS C:\> New-AzAks -ResourceGroupName myResourceGroup -Name myCluster -WindowsProfileAdminUserName azureuser -WindowsProfileAdminUserPassword $cred -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

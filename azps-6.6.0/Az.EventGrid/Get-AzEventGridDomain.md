@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomain.md
-ms.openlocfilehash: 13707ec7bfedba88542da7955b3bb3a1681616fc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7c548d5e7502783585db3ba1c1ad17045f29cc9e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387766"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976613"
 ---
 # Get-AzEventGridDomain
 
 ## SYNOPSIS
 Mendapatkan detail domain Kisi Acara, atau mendapatkan daftar semua domain Kisi Acara di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomain) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Akhirnya, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil
 
 ### Contoh 1
 
-Mendapatkan detail Domain Kisi \` Kejadian1 di grup \` sumber daya \` MyResourceGroupName \` .
+Mendapatkan detail Domain Kisi Kejadian1 \`di grup\` sumber daya \`MyResourceGroupName\`.
 
 ```powershell
 PS C:\> Get-AzEventGridDomain -ResourceGroup MyResourceGroupName -Name Domain1
@@ -70,7 +73,7 @@ Tags              : {[Tag1, Value1], [Tag2, Value2]}
 
 ### Contoh 2
 
-Mendapatkan detail Domain Kisi \` Kejadian1 di grup \` sumber daya \` MyResourceGroupName \` menggunakan opsi ResourceId.
+Mendapatkan detail Domain Kisi Kejadian1 \`di grup\` sumber daya \`MyResourceGroupName\` menggunakan opsi ResourceId.
 
 ```powershell
 PS C:\> Get-AzEventGridDomain -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1"
@@ -87,7 +90,7 @@ Tags              : {[Tag1, Value1], [Tag2, Value2]}
 
 ### Contoh 3
 
-Daftar semua domain Kisi Kejadian di grup sumber daya \` MyResourceGroupName \` tanpa penomoran halaman (semua domain dikembalikan dalam satu foto)
+Daftar semua domain Kisi Kejadian di grup sumber daya \`MyResourceGroupName\` tanpa penomoran halaman (semua domain dikembalikan dalam satu foto)
 
 ```powershell
 PS C:\> $result=Get-AzEventGridDomain -ResourceGroup MyResourceGroupName
@@ -132,7 +135,7 @@ Tags              :
 
 ### Contoh 4
 
-List the Event Grid domains (if any) in resource group \` MyResourceGroupName \` that satisfies the $odataFilter query 10 domains at a time. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman domain berikutnya, pengguna diharapkan untuk menghubungi kembali domain dan menggunakan Get-AzEventGridDomain hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the Event Grid domains (if any) in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query 10 domains at a time. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman domain berikutnya, pengguna diharapkan untuk menghubungi kembali domain dan menggunakan Get-AzEventGridDomain hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ```powershell
 PS C:\> $total = 0
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 5f6bdc8a1ddd9197c135abba51cb3a9a154da1a8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 060948750a1b010a2f1c3f607bcb1506aa34e84f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355505"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139972023"
 ---
 # Remove-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Menghapus Gateway Jaringan Virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azvirtualnetworkgateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **Get-AzVirtualNetworkGateway** mengembalikan objek gateway Anda di Azure
 Remove-AzVirtualNetworkGateway -Name myGateway -ResourceGroupName myRG
 ```
 
-Menghapus objek Gateway Jaringan Virtual dengan nama "myGateway" di dalam grup sumber daya "myRG" Catatan: Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Jaringan Virtual menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection.**
+Menghapus objek Gateway Jaringan Virtual dengan nama "myGateway" di dalam grup sumber daya "myRG" Catatan: Anda harus terlebih dahulu menghapus semua koneksi ke Gateway Jaringan Virtual menggunakan cmdlet **Remove-AzVirtualNetworkGatewayConnection** .
 
 ## PARAMETERS
 
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

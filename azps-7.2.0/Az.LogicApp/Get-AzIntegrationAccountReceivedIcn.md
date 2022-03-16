@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountReceivedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountReceivedIcn.md
-ms.openlocfilehash: 17fd2712443a0f29c10aacb5705d041625150ff3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 28ec311304b1635b765b29c59bef2ad8458ace36
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163798"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957497"
 ---
 # Get-AzIntegrationAccountReceivedIcn
 
 ## SYNOPSIS
 Cmdlet ini mengambil nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountreceivedicn) untuk informasi terkini.
 
 ## SYNTAX
 

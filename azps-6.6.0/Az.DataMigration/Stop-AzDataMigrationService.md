@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationService.md
-ms.openlocfilehash: a6ab9e3db10f0e12390cb5425913c2ebb84c9f7d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 287aa9f84ee5e9968df2a78842102f46af73ab97
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345854"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140107811"
 ---
 # Stop-AzDataMigrationService
 
 ## SYNOPSIS
 Menghentikan contoh Layanan Migrasi Database Azure yang berada dalam status berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzDataMigrationService menghentikan instans Layanan Migrasi Database Azure yang dalam status berjalan.
+Cmdlet Stop-AzDataMigrationService menghentikan contoh Layanan Migrasi Database Azure yang dalam status berjalan.
 
 ## EXAMPLES
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

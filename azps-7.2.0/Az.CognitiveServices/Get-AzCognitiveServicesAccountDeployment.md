@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountDeployment.md
-ms.openlocfilehash: 64315a7e5854ea43a5f8f7f05da881d8cea724d1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 099d7fa7addb452561e7a64f1bbe0bf8a354b7b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059925"
 ---
 # Get-AzCognitiveServicesAccountDeployment
 
 ## SYNOPSIS
 Mendapatkan Penyebaran akun Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

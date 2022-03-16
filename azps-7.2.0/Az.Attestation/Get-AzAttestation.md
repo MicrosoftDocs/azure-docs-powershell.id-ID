@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestation.md
-ms.openlocfilehash: 97a3442e7363bb4d3786b2a1a5f6c9a7a544f72d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e1a10801cfb755d75bfe9851152a789f9033d377
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267340"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062121"
 ---
 # Get-AzAttestation
 
 ## SYNOPSIS
 Mendapatkan aplikasi secara langsung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/get-azattestation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzAttestation [[-Location] <String>] [-DefaultProvider] [-DefaultProfile <IA
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAttestation mendapatkan informasi tentang aktif dalam langganan.
+Cmdlet Get-AzAttestation mendapatkan informasi tentang attestation dalam langganan.
 
 ## EXAMPLES
 

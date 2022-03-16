@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryImageDefinition.md
-ms.openlocfilehash: 7e0aceabdc6075761f72e9b05903d9a2b222ae35
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a50eb2e1ab1cb2699483ece3f5a3eb231d098aeb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168773"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125845"
 ---
 # New-AzGalleryImageDefinition
 
 ## SYNOPSIS
 
 Buat definisi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azgalleryimagedefinition) untuk informasi terkini.
 
 ## SYNTAX
 

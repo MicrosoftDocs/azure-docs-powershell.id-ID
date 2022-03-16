@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADUser.md
-ms.openlocfilehash: ce6d278a48fb3f5c4b5d0807cb7260c73ad83c2f
-ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
+ms.openlocfilehash: 46123d970a5272ab60a2a34df572aac1f60d6de1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "138874947"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084033"
 ---
 # New-AzADUser
 
@@ -18,6 +18,9 @@ ms.locfileid: "138874947"
 Menambahkan entitas baru ke pengguna
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azaduser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Buat pengguna
 
 ### -AboutMe
 Bidang entri teks bentuk bebas bagi pengguna untuk menjelaskan diri mereka sendiri.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ### -Birthday
 Ulang tahun pengguna.
 Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
-Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z Yang hanya dikembalikan pada $select.
+Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z yang hanya dikembalikan pada $select.
 
 ```yaml
 Type: System.DateTime
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 Tanggal mulai karyawan pengguna.
 Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC.
 Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 Catatan: Properti ini khusus untuk SharePoint Online.
 Kami menyarankan agar menggunakan properti native employee Salah SatuDate untuk mengatur dan memperbarui nilai tanggal karyawan menggunakan API Graph Microsoft.
 
@@ -423,7 +426,7 @@ Accept wildcard characters: False
 Properti ini digunakan untuk mengaitkan akun pengguna Direktori Aktif lokal ke objek pengguna Azure AD mereka.
 Properti ini harus ditentukan saat membuat akun pengguna baru di Graph jika Anda menggunakan domain gabungan untuk properti userPrincipalName (UPN).
 CATATAN: Karakter $ dan _ tidak dapat digunakan saat menentukan properti ini.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 Mendukung $filter (eq, ne, NOT, ge, le, in)..
 
 ```yaml
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 
 ### -Interest
 Daftar bagi pengguna untuk menjelaskan minat mereka.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String[]
@@ -541,7 +544,7 @@ Accept wildcard characters: False
 
 ### -Situs Saya
 URL untuk situs pribadi pengguna.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String
@@ -675,7 +678,7 @@ Accept wildcard characters: False
 
 ### -PreferredName
 Nama pilihan untuk pengguna.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String
@@ -691,7 +694,7 @@ Accept wildcard characters: False
 
 ### -Tanggung Jawab
 Sebuah daftar agar pengguna menghitung tanggung jawab mereka.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String[]
@@ -707,7 +710,7 @@ Accept wildcard characters: False
 
 ### -Sekolah
 Daftar bagi pengguna untuk menghitung sekolah yang telah mereka hadiri.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String[]
@@ -741,7 +744,7 @@ Accept wildcard characters: False
 
 ### -Skill
 Daftar bagi pengguna untuk menghitung keahlian mereka.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 
 ```yaml
 Type: System.String[]

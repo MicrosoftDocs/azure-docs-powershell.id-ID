@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.guestconfigurati
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatus.md
-ms.openlocfilehash: 95d3d581119d7306ddcc617e3517e00d6de79e82
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c7968f24dccbda99c808b4e9525af9e68ac54f72
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294444"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959297"
 ---
 # Get-AzVMGuestPolicyStatus
 
 ## SYNOPSIS
 Mendapatkan status kebijakan konfigurasi tamu (mendetail) untuk inisiatif tipe "Konfigurasi Tamu" yang ditetapkan pada VM.
 Inisiatif adalah kebijakan tipe definisi "Inisiatif".
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.guestconfiguration/get-azvmguestpolicystatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ PS C:\> Get-AzVMGuestPolicyStatus -ReportId "/subscriptions/4e6c6ed2-0bf6-41d7-9
 ```
 
 Dapatkan status kebijakan konfigurasi tamu menurut ReportId.
-ReportId adalah properti ReportId yang dapat ditemukan dalam hasil analisisGet-AzVMGuestPolicyStatus berdasarkan inisiatifId atau Nama inisiatif (silakan rujuk contoh lainnya)
+ReportId adalah properti ReportId yang dapat ditemukan dalam hasil analisis Get-AzVMGuestPolicyStatus berdasarkan inisiatifId atau nama Inisiatif (silakan rujuk contoh lainnya)
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 32688550414f72b72cda6eb92a7b7d3cb1441739
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3d5ee43e39aa2d77b24ee693b2810deca018c3a4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293339"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959675"
 ---
 # Remove-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Menghapus grup konsumen Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzEventHubConsumerGroup [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubConsumerGroup Menghapus dan menghapus grup konsumen tertentu dari Hub Acara tertentu.
+Cmdlet Remove-AzEventHubConsumerGroup menghapus grup konsumen tertentu dari Hub Acara tertentu.
 
 ## EXAMPLES
 

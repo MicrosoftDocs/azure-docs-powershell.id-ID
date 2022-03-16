@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridSubscription.md
-ms.openlocfilehash: 9b84cc5127dff229b0521b5ee8488fbb2c180387
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7e0232a834845b28553178f00728d8ca0c762ab0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347129"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976433"
 ---
 # New-AzEventGridSubscription
 
 ## SYNOPSIS
 Membuat Langganan Acara Kisi Acara Azure baru pada topik, sumber daya Azure, langganan Azure, atau Grup Sumber Daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgridsubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -127,21 +130,21 @@ Untuk membuat langganan kejadian ke sumber daya Azure yang didukung, tentukan ID
 PS C:\> New-AzEventGridSubscription -ResourceGroup MyResourceGroup -TopicName Topic1 -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan acara baru EventSubscription1 ke topik Kisi Acara Azure Topic1 di grup sumber daya \` \` \` \` \` MyResourceGroupName \` dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1` . Langganan acara ini menggunakan filter default.
+Membuat langganan acara baru \`EventSubscription1\` ke topik Kisi Acara Azure \`Topic1 \`\` di grup sumber daya MyResourceGroupName\` dengan titik akhir tujuan `https://requestb.in/19qlscd1`webhook . Langganan acara ini menggunakan filter default.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzEventGridSubscription -ResourceGroup MyResourceGroupName -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan kejadian baru \` EventSubscription1 ke \` grup sumber daya \` MyResourceGroupName \` dengan titik akhir tujuan webhook. `https://requestb.in/19qlscd1` Langganan acara ini menggunakan filter default.
+Membuat langganan kejadian baru \`EventSubscription1\` ke grup sumber daya \`MyResourceGroupName\` dengan titik akhir tujuan `https://requestb.in/19qlscd1`webhook. Langganan acara ini menggunakan filter default.
 
 ### Contoh 3
 ```powershell
 PS C:\> New-AzEventGridSubscription -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan acara \` baruSubscription1 untuk langganan Azure yang saat \` ini dipilih dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1` . Langganan acara ini menggunakan filter default.
+Membuat langganan acara baruSubscription1 \`untuk\` langganan Azure yang saat ini dipilih dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1`. Langganan acara ini menggunakan filter default.
 
 ### Contoh 4
 ```powershell
@@ -150,21 +153,21 @@ PS C:\> $labels = "Finance", "HR"
 PS C:\> New-AzEventGridSubscription -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1 -SubjectBeginsWith "TestPrefix" -SubjectEndsWith "TestSuffix" -IncludedEventType $includedEventTypes -Label $labels
 ```
 
-Membuat langganan acara \` baruSubscription1 untuk langganan Azure yang saat \` ini dipilih dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1` . Langganan acara ini menentukan filter tambahan untuk tipe dan subjek acara, dan hanya acara yang cocok dengan filter tersebut yang akan dikirimkan ke titik akhir tujuan.
+Membuat langganan acara baruSubscription1 \`untuk\` langganan Azure yang saat ini dipilih dengan titik akhir tujuan webhook `https://requestb.in/19qlscd1`. Langganan acara ini menentukan filter tambahan untuk tipe dan subjek acara, dan hanya acara yang cocok dengan filter tersebut yang akan dikirimkan ke titik akhir tujuan.
 
 ### Contoh 5
 ```powershell
 PS C:\> New-AzEventGridSubscription -EventSubscriptionName EventSubscription1 -EndpointType "eventhub" -Endpoint "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace/eventhubs/EH1"
 ```
 
-Membuat langganan acara baruSubscription1 untuk langganan Azure yang saat ini \` dipilih dengan hub acara yang ditentukan sebagai tujuan \` acara. Langganan acara ini menggunakan filter default.
+Membuat langganan acara baruSubscription1 \`\` untuk langganan Azure yang saat ini dipilih dengan hub acara yang ditentukan sebagai tujuan acara. Langganan acara ini menggunakan filter default.
 
 ### Contoh 6
 ```powershell
 PS C:\> New-AzEventGridSubscription -ResourceId "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace" -Endpoint https://requestb.in/19qlscd1 -EventSubscriptionName EventSubscription1
 ```
 
-Membuat langganan acara baru \` EventSubscription1 \` ke ruang nama EventHub dengan titik akhir tujuan webhook yang `https://requestb.in/19qlscd1` ditentukan. Langganan acara ini menggunakan filter default.
+Membuat langganan acara baru \`EventSubscription1\` ke ruang nama EventHub dengan titik akhir tujuan webhook yang ditentukan `https://requestb.in/19qlscd1`. Langganan acara ini menggunakan filter default.
 
 ## PARAMETERS
 
@@ -807,7 +810,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

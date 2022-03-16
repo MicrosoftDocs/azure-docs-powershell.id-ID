@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
-ms.openlocfilehash: b3cd5b22e3e2aa6327c9698ef1f7c339d03ecd7f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1c920300ade3a0610e46da8474a9dba644496fae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279835"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124387"
 ---
 # Expand-AzWvdMsixImage
 
 ## SYNOPSIS
 Memperluas dan Mencantumkan paket MSIX dalam Gambar, diberi Jalur Gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/expand-azwvdmsiximage) untuk informasi terkini.
 
 ## SYNTAX
 
