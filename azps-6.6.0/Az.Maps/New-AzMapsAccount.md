@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/new-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccount.md
-ms.openlocfilehash: 977804fe90de08d3ff22bb18225523032c63090e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6b5a78741feaeb08f5a3b3c588a42e7fe1c2b8e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387447"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937690"
 ---
 # New-AzMapsAccount
 
 ## SYNOPSIS
 Buat atau perbarui Akun Peta Anda.
-Akun Peta Menyimpan kunci yang mengizinkan akses ke rest Peta REST.
+Akun Peta menyimpan kunci yang mengizinkan akses ke rest Peta REST.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/new-azmapsaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzMapsAccount -Name <String> -ResourceGroupName <String> -Location <String> 
 
 ## DESCRIPTION
 Buat atau perbarui Akun Peta Anda.
-Akun Peta Menyimpan kunci yang mengizinkan akses ke rest Peta REST.
+Akun Peta menyimpan kunci yang mengizinkan akses ke rest Peta REST.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Peta Anda.
+### Contoh 1: Buat Peta Baru.
 ```powershell
 PS C:\> New-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -SkuName S0 -Location eastus
 
@@ -41,7 +44,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini membuat Peta Akun.A Peta Akun akun menahan tombol yang memungkinkan akses ke Peta REST API.
+Perintah ini akan membuat Peta Akun.A Peta akun menahan tombol yang memungkinkan akses ke Peta REST API.
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun Peta.
+Nama akun Peta Anda.
 
 ```yaml
 Type: System.String
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

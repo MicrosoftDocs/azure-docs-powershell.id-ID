@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Clear-AzSqlS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Clear-AzSqlServerAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Clear-AzSqlServerAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: 80c0b3eed2dd6e99ca8d6fc84ad7fccb58d275e3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 403665ed2cc3d18eea36fe068e5411894c0f784e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169697"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949973"
 ---
 # Clear-AzSqlServerAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Menghapus pengaturan perlindungan ancaman tingkat lanjut dari server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/clear-azsqlserveradvancedthreatprotectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 

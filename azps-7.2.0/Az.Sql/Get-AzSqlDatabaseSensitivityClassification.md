@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseSensitivityClassification.md
-ms.openlocfilehash: fec7bbf63527c6ff2b0890fbf45fbb1d1ab846b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6d122b4587602c618f8d54939d0303bf39edcce7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311980"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949706"
 ---
 # Get-AzSqlDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Dapatkan tipe informasi saat ini dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasesensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 4: Dapatkan tipe informasi saat ini dan label sensitivitas kolom tertentu dari suatu Azure SQL Database menggunakan Piping.
+### Contoh 4: Dapatkan tipe informasi saat ini dan label sensitivitas kolom tertentu dari Azure SQL Database gunakan Piping.
 ```powershell
 PS C:\> Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Get-AzSqlDatabaseSensitivityClassification -SchemaName dbo -TableName EMailLog -ColumnName BounceEmailSubject
 

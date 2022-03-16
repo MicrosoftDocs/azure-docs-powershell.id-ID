@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeReport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeReport.md
-ms.openlocfilehash: 256f3d2b161d8fb987924dde799ce7dce49f04cf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e01e43b9d5e0bb3bb9f7b53e451405822ca9351c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929121"
 ---
 # Get-AzAutomationDscNodeReport
 
 ## SYNOPSIS
 Mendapatkan laporan yang dikirim dari simpul DSC ke Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationdscnodereport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PS C:\> Get-AzAutomationDscNodeReport -ResourceGroupName "ResourceGroup03" -Auto
 Perintah pertama mendapatkan node DSC untuk komputer yang bernama Computer14 dalam akun Otomatisasi yang bernama Contoso17.
 Perintah menyimpan objek ini dalam $Node variabel.
 Perintah kedua mendapatkan metadata untuk semua laporan yang dikirim dari node DSC bernama Computer14 ke akun Otomatisasi yang bernama Contoso17.
-Perintah menentukan simpul dengan menggunakan properti **Id** objek $Node.
+Perintah menentukan simpul dengan menggunakan properti **Id** dari $Node objek.
 
 ### Contoh 2: Mendapatkan laporan untuk simpul DSC berdasarkan ID laporan
 ```

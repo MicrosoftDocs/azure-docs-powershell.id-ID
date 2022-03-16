@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Remove-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Remove-AzDedicatedHsm.md
-ms.openlocfilehash: abbb40632d9df5a7a556d80692c1477f7f97ce3b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e450c1135c1fb489abafcb4ebaa1b394c4a1f571
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057567"
 ---
 # Remove-AzDedicatedHsm
 
 ## SYNOPSIS
 Menghapus HSM Khusus Azure tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dedicatedhsm/remove-azdedicatedhsm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -231,7 +234,7 @@ INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya tersebut berada.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

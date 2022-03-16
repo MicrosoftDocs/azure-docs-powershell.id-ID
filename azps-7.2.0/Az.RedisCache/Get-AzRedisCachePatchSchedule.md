@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCachePatchSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCachePatchSchedule.md
-ms.openlocfilehash: cdf816947414ba58491b7503b57ffc0911bfdef8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0dff00c19753c4cfc9ff1543b18a21913e3a7a7d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275804"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950459"
 ---
 # Get-AzRedisCachePatchSchedule
 
 ## SYNOPSIS
 Mendapatkan jadwal patch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/get-azrediscachepatchschedule) untuk informasi terkini.
 
 ## SYNTAX
 

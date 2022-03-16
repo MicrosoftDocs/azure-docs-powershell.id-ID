@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlCommitmentPlan.md
-ms.openlocfilehash: 7fa67f4093cb493ba263825a26bcbac2fdc549a4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 09a227c47c7f45f56fa7611f528b9b05eb4ce46e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349685"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937833"
 ---
 # Update-AzMlCommitmentPlan
 
 ## SYNOPSIS
 Pembaruan properti dari sumber daya rencana komitmen yang ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/update-azmlcommitmentplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk rencana komitmen ML Azure.
+Nama grup sumber daya untuk Rencana ML Azure.
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU yang akan digunakan ketika memperbarui paket ML Azure.
+Nama SKU yang akan digunakan ketika memperbarui Paket ML Azure.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan SKU yang akan digunakan ketika memperbarui azure ML komitmen.
+Tingkatan SKU yang akan digunakan ketika memperbarui Azure ML rencana komitmen.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

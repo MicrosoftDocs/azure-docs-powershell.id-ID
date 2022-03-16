@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
-ms.openlocfilehash: 33d4154ffe6eddefbb83468f96a225835703d336
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 60f35dcd16cc4bab88c10fba8c06aa3e50a87473
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313916"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961061"
 ---
 # Start-AzDataProtectionBackupInstanceRestore
 
 ## SYNOPSIS
 Memicu pemulihan untuk BackupInstance
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/start-azdataprotectionbackupinstancerestore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ PS C:\> while($jobstatus -ne "Completed")
 ```
 
 Perintah pertama, kedua mengambil contoh dan titik pemulihan untuk instans tersebut.
-Perintah ketiga memulai proses $targetResourceId dengan Id database postgre target (targetDbName harus nama database baru).
+Perintah ketiga memulai $targetResourceId dengan Id database postgre target (targetDbName harus nama database baru).
 Perintah keempat memulai URI rahasia.
 Perintah kelima dan keenam memulai dan memicu permintaan pemulihan untuk AzureDatabaseForPostgreSQL dengan penyimpanan rahasia.
 Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan hingga selesai.
@@ -95,7 +98,7 @@ PS C:\> while($jobstatus -ne "Completed")
 ```
 
 Perintah pertama, kedua mengambil contoh dan titik pemulihan untuk instans tersebut.
-Perintah ketiga memulai $targetContainerURI dengan Id wadah akun penyimpanan target.
+Perintah ketiga memulai proses $targetContainerURI dengan Id wadah akun penyimpanan target.
 Perintah keempat memulai prefiks nama file untuk pemulihan.
 Perintah kelima dan keenam memulai dan memicu permintaan pemulihan untuk AzureDatabaseForPostgreSQL dengan penyimpanan rahasia.
 Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan hingga selesai.

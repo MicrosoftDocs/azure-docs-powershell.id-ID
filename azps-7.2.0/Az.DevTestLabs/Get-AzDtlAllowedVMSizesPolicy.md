@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAllowedVMSizesPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAllowedVMSizesPolicy.md
-ms.openlocfilehash: 0f1a57018a3f598a98a41960d869da505b62b288
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ad967701c84cb44efa1351698c815829aae62560
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057261"
 ---
 # Get-AzDtlAllowedVMSizesPolicy
 
 ## SYNOPSIS
 Dapatkan kebijakan ukuran mesin virtual yang diperbolehkan dari sebuah lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.devtestlabs/get-azdtlallowedvmsizespolicy) untuk informasi terkini.
 
 ## SYNTAX
 

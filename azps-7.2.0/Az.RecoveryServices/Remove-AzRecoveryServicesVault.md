@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesVault.md
-ms.openlocfilehash: 975398f58a50e78e8d058a7ff4a5fcc79de6ead7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3b383b4374f7322d3fcaa06d2a866b209a2b057a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302027"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950747"
 ---
 # Remove-AzRecoveryServicesVault
 
 ## SYNOPSIS
 Menghapus vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesvault) untuk informasi terkini.
 
 ## SYNTAX
 

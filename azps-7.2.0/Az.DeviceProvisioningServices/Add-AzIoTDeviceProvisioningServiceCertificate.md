@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceCertificate.md
-ms.openlocfilehash: a7f85090701b5f1bff2173418835597ae17c31bc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d6c331fc485ac17b88e17ee17d1329b84cf22507
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304812"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960251"
 ---
 # Add-AzIoTDeviceProvisioningServiceCertificate
 
 ## SYNOPSIS
 Membuat/memperbarui sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningservicecertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpGcA=
 ```
 
-Upload file SERTIFIKAT CA cer ke layanan penyediaan perangkat Azure IoT Hub.
+Upload file SERTIFIKAT CA CER ke layanan penyediaan perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceAuthKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceAuthKey.md
-ms.openlocfilehash: dbc477bf3cffb2acbccb5e7737be94ae29cb71d4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c66614f96d90d12ce65765ce33866bfffb4cbf1e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309291"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058233"
 ---
 # Get-AzDataMigrationSqlServiceAuthKey
 
 ## SYNOPSIS
 Ambil Daftar Tombol Autentikasi untuk Runtime Integrasi Yang Dihosting Sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationsqlserviceauthkey) untuk informasi terkini.
 
 ## SYNTAX
 

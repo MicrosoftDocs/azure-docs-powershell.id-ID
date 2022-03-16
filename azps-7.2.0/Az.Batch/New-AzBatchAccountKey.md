@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchAccountKey.md
-ms.openlocfilehash: c3de6e87b9804e91871fc0b39bb5c5c1219b9292
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 25ce70ad9063e3b6cf36c1a6c140a306be5b5c6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307164"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928815"
 ---
 # New-AzBatchAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci akun Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 

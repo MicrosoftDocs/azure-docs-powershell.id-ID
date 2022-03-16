@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseDataMaskingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseDataMaskingPolicy.md
-ms.openlocfilehash: edd3921bcf20e821c54254f506d6058a4373062a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cf21139c1a8c5af7c6494c024890d786e0a49558
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949847"
 ---
 # Get-AzSqlDatabaseDataMaskingPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan masker data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasedatamaskingpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlDatabaseDataMaskingPolicy [-ServerName] <String> [-DatabaseName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseDataMaskingPolicy** mendapatkan kebijakan masker data database Azure SQL.
+Cmdlet **Get-AzSqlDatabaseDataMaskingPolicy** mendapatkan kebijakan masker data dari database Azure SQL Anda.
 Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName*, *ServerName*, *dan DatabaseName* untuk mengidentifikasi database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 

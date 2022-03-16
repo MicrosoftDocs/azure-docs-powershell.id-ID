@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerKeyVaultKey.md
-ms.openlocfilehash: 085e2fa8d4c21b6bfae936bdb84f3d8ddf8486ea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0154e8bc33a910b6fb97ccd96ae0b6c1f7524c2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257292"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950045"
 ---
 # Add-AzSqlServerKeyVaultKey
 
 ## SYNOPSIS
 Menambahkan tombol Key Vault ke server SQL lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlserverkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Add-AzSqlServerKeyVaultKey [-KeyId] <String> [-AsJob] [-ServerName] <String> [-R
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzSqlServerKeyVaultKey menambahkan tombol Key Vault ke server SQL yang disediakan.
+Cmdlet Add-AzSqlServerKeyVaultKey menambahkan kunci Vault Tombol ke server SQL yang disediakan.
 Server harus memiliki izin 'get, wrapKey, unwrapKey' ke vault.
 
 ## EXAMPLES

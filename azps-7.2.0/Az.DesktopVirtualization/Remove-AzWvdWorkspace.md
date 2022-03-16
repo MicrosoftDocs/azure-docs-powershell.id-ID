@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdWorkspace.md
-ms.openlocfilehash: 0243c7025098d8cc3a7ea15d744055fd7ce9187f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7d465e22116221f7c1900ce58aa2123116b6c968
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272811"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960485"
 ---
 # Remove-AzWvdWorkspace
 
 ## SYNOPSIS
 Menghapus ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Menghapus ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Windows Ruang Kerja Desktop Virtual berdasarkan nama
+### Contoh 1: Hapus Windows Kerja Desktop Virtual menurut nama
 ```powershell
 PS C:\> Remove-AzWvdWorkspace -ResourceGroupName ResourceGroupName -Name WorkspaceName
 ```

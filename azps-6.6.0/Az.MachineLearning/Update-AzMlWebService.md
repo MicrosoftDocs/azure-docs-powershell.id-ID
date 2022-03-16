@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/Update-AzMlWebService.md
-ms.openlocfilehash: e64e3a8367676508af1f262521100be7be576a64
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 311dadeb73e893cae4448efbe04647de0e097a51
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136379520"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937779"
 ---
 # Update-AzMlWebService
 
 ## SYNOPSIS
 Memperbarui properti layanan web yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/update-azmlwebservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Kumpulan nilai parameter global yang ditentukan untuk layanan web, yang diberikan sebagai nama parameter global - \> kumpulan nilai default.
+Kumpulan nilai parameter global yang ditentukan untuk layanan web, yang diberikan sebagai nama parameter global - kumpulan\> nilai default.
 Jika tidak ada nilai default yang ditentukan, parameter dianggap diperlukan.
 
 ```yaml
@@ -352,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewall.md
-ms.openlocfilehash: 6c5a58c8ece2e15d672e376651ea85235a7eae87
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bfad744ba6a70163e5955362ed744e2dbe3057d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384717"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139973031"
 ---
 # New-AzFirewall
 
 ## SYNOPSIS
 Membuat Firewall baru dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewall) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -157,7 +160,7 @@ $ruleCollection = New-AzFirewallApplicationRuleCollection -Name RC1 -Priority 10
 New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -VirtualNetwork $vnet -PublicIpAddress $pip -ApplicationRuleCollection $ruleCollection -ThreatIntelMode Deny
 ```
 
-Contoh ini membuat Firewall yang memungkinkan lalu lintas MSSQL pada port 1433 standar ke SQL database sql1.database.windows.net.
+Contoh ini membuat Firewall yang memungkinkan lalu lintas MSSQL pada port 1433 standar SQL database sql1.database.windows.net.
 
 ### Contoh 9: Membuat Firewall yang dilampirkan ke hub virtual
 ```powershell
@@ -715,7 +718,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

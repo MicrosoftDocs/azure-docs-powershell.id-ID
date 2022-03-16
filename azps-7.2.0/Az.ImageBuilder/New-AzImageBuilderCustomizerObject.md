@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderCustomizerObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderCustomizerObject.md
-ms.openlocfilehash: c63f7227380753f032d1a6ec83079b1d1b306019
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ae5e71b86309b43bd07bf1b63759e2e606e79d07
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303900"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055911"
 ---
 # New-AzImageBuilderCustomizerObject
 
 ## SYNOPSIS
 Menjelaskan satuan kustomisasi gambar
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildercustomizerobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -417,7 +420,7 @@ Accept wildcard characters: False
 
 ### -WindowsUpdateCustomizer
 Menginstal Windows Otomatis.
-Sesuai dengan Packer Windows Update Provisioner (https://github.com/rgl/packer-provisioner-windows-update).
+Berkaitan dengan Packer Windows Update Provisioner (https://github.com/rgl/packer-provisioner-windows-update).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

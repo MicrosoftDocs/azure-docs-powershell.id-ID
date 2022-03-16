@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTriggerClientObject.md
-ms.openlocfilehash: 30be15cfa45c36ad4c3c1d4f81c5c1a2029a45c2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 256ea5a4fd42639a9c3d7db2d9f372149a99220f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306972"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058143"
 ---
 # Edit-AzDataProtectionPolicyTriggerClientObject
 
 ## SYNOPSIS
 Pembaruan Jadwal pencadangan kebijakan pencadangan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicytriggerclientobject) untuk informasi terkini.
 
 ## SYNTAX
 

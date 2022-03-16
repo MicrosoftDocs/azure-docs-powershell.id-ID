@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiSchema.md
-ms.openlocfilehash: c34df75e971e0e3f41d3ef0a43516557f6c964e5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 92296ee90624adcd41ed62f40b28f50d774c0731
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289307"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929679"
 ---
 # New-AzApiManagementApiSchema
 
 ## SYNOPSIS
 Membuat Skema API baru dalam layanan ApiManagement
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementapischema) untuk informasi terkini.
 
 ## SYNTAX
 

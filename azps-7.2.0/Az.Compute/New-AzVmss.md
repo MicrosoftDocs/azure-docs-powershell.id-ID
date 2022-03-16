@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
-ms.openlocfilehash: fb9f87aebdc80e3d2cc6813864af652695fe863f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 078931cb319111edadb188963c93adca8e506f22
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278588"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927915"
 ---
 # New-AzVmss
 
 ## SYNOPSIS
 Membuat VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -176,7 +179,7 @@ $vmss = Get-AzVmss -ResourceGroupName $ResourceGroupName -VMScaleSetName $vmssNa
 Contoh kompleks di atas membuat VMSS, berikut penjelasan tentang apa yang terjadi:
 * Perintah pertama membuat grup sumber daya dengan nama dan lokasi yang ditentukan.
 * Perintah kedua menggunakan cmdlet **New-AzStorageAccount** untuk membuat akun penyimpanan.
-* Perintah ketiga lalu menggunakan cmdlet **Get-AzStorageAccount** untuk membuat akun penyimpanan di perintah kedua dan menyimpan hasilnya dalam $STOAccount penyimpanan.
+* Perintah ketiga lalu menggunakan cmdlet **Get-AzStorageAccount** untuk membuat akun penyimpanan di perintah kedua dan menyimpan hasilnya di $STOAccount penyimpanan tersebut.
 * Perintah kelima menggunakan cmdlet **New-AzVirtualNetworkSubnetConfig** untuk membuat subnet dan menyimpan hasilnya di variabel yang bernama $SubNet.
 * Perintah keenam menggunakan cmdlet **New-AzVirtualNetwork** untuk membuat jaringan virtual dan menyimpan hasilnya di variabel yang bernama $VNet.
 * Perintah ketujuh menggunakan **Get-AzVirtualNetwork** untuk mendapatkan informasi tentang jaringan virtual yang dibuat di perintah keenam dan menyimpan informasi di variabel yang bernama $VNet.
@@ -184,7 +187,7 @@ Contoh kompleks di atas membuat VMSS, berikut penjelasan tentang apa yang terjad
 * Perintah menyimpan informasi dalam variabel yang bernama $PubIP.
 * Perintah kesepuluh menggunakan cmdlet **New- AzureRmLoadBalancerFrontendIpConfig** untuk membuat frontend load balancer dan menyimpan hasilnya di variabel yang bernama $Frontend.
 * Perintah sebelas menggunakan **New-AzLoadBalancerBackendAddressPoolConfig** untuk membuat konfigurasi pool alamat backend dan menyimpan hasilnya di variabel yang bernama $BackendAddressPool.
-* Perintah kedua belas menggunakan **New-AzLoadBalancerProbeConfig** untuk membuat jaringan dan menyimpan informasi umum di variabel bernama $Probe.
+* Perintah kedua belas menggunakan **New-AzLoadBalancerProbeConfig** untuk membuat barangka dan menyimpan informasi umum di variabel yang bernama $Probe.
 * Perintah ketiga belas menggunakan cmdlet **New-AzLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi pool Inbound Network Address Translation (NAT) penyeimbang.
 * Perintah empat belas menggunakan **New-AzLoadBalancerRuleConfig** untuk membuat konfigurasi aturan penyeimbang muat dan menyimpan hasilnya dalam variabel yang bernama $LBRule.
 * Perintah ke-lima belas menggunakan cmdlet **New-AzLoadBalancer** untuk membuat penyeimbang muat dan menyimpan hasilnya dalam variabel yang bernama $ActualLb.

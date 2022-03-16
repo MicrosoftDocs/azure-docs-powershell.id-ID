@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
-ms.openlocfilehash: 6a75201616a088da32238d9d9f41c9e6b4b3240a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c66e5de35ba93aaac56c4df92b91259500937da2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314188"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927861"
 ---
 # Remove-AzCommunicationService
 
 ## SYNOPSIS
 Operasi untuk menghapus CommunicationService.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/remove-azcommunicationservice) untuk informasi terkini.
 
 ## SYNTAX
 

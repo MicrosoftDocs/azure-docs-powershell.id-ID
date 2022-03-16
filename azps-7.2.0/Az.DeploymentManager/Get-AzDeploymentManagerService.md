@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerService.md
-ms.openlocfilehash: 2aca0bcfd4bc8d8379dbcca961f3ccf2acaec8f4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c3c825a4f9f77f2445dc72a148b36f29baefa504
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283531"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960719"
 ---
 # Get-AzDeploymentManagerService
 
 ## SYNOPSIS
 Mendapatkan layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Get-AzDeploymentManagerService [-InputObject] <PSServiceResource> [-DefaultProfi
 Cmdlet **Get-AzDeploymentManagerService** mendapatkan layanan di bawah topologi layanan, dan mengembalikan objek yang mewakili layanan itu.
 Tentukan layanan berdasarkan namanya, topologi layanan yang ada di dalamnya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek Layanan atau ResourceId.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzDeploymentManagerService.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzDeploymentManagerService cmdlet.
 
 ## EXAMPLES
 

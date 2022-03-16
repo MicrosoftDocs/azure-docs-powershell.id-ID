@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
-ms.openlocfilehash: a1cc6d975aad5c04f0f00cc32e1352b372ab1442
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fdecae938bbde9a4177517906edb863f77d717a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335911"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937329"
 ---
 # New-AzDiagnosticDetailSetting
 
 ## SYNOPSIS
 Buat Objek PSDiagnosticDetailSetting, tipe bisa metrik atau log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azdiagnosticdetailsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzDiagnosticDetailSetting -Metric [-RetentionInDays <Int32>] [-RetentionEnab
 ```
 
 ## DESCRIPTION
-Membuat objek PSMetricSettings atau PSLogSettings. Anda bisa mendapatkan kategori dengan menggunakan `Get-AzDiagnosticSettingCategory` .
+Membuat objek PSMetricSettings atau PSLogSettings. Anda bisa mendapatkan kategori dengan menggunakan `Get-AzDiagnosticSettingCategory`.
 
 ## EXAMPLES
 
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Get-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Get-AzImageBuilderTemplate.md
-ms.openlocfilehash: 2b34a033f0a89e4403e44f2cf3a7eb109bf17881
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bb343fa7e76fbf6f3e499cbb738ff79bb0d78500
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167365"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055929"
 ---
 # Get-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Dapatkan informasi tentang templat gambar mesin virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/get-azimagebuildertemplate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -205,7 +208,7 @@ INPUTOBJECT <IImageBuilderIdentity>: Parameter Identitas
   - `[ImageTemplateName <String>]`: Nama Templat gambar
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[RunOutputName <String>]`: Nama output jalankan
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

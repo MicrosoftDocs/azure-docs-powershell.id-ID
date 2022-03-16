@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Remove-AzSpringCloudApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Remove-AzSpringCloudApp.md
-ms.openlocfilehash: 028f0b2fe821f64605742819499b308d9b72a7f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ad75c4a8e5f08d5853ae6492ec61ec066ec0834a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279036"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950063"
 ---
 # Remove-AzSpringCloudApp
 
 ## SYNOPSIS
 Operasi untuk menghapus Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.springcloud/remove-azspringcloudapp) untuk informasi terkini.
 
 ## SYNTAX
 

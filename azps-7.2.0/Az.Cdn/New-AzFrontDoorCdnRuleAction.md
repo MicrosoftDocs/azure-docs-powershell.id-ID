@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRuleAction.md
-ms.openlocfilehash: 8f5dd1d36ee4215dd0fddb4b5547ba1ba8c03e4a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 57251e4b99a8449acb18b0f5782954477b9690a6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164045"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928348"
 ---
 # New-AzFrontDoorCdnRuleAction
 
 ## SYNOPSIS
 Membuat tindakan aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
 Pengaturan nilai ini akan mengganti setiap string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
 String kueri harus dalam \<key\>=\<value\> format.
-? dan & akan ditambahkan secara otomatis, jadi jangan menyertakannya.
+? dan & akan ditambahkan secara otomatis, jadi jangan sertakan mereka.
 
 ```yaml
 Type: String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 22928dd539832ab10622e90b97ec867be2eef181
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0eeb15d17f319e5e59fb7932af0ea8909d7290eb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929805"
 ---
 # Get-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
-Mendapatkan OpenID Koneksi lain.
+Mendapatkan layanan OpenID Koneksi lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementopenidconnectprovider) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>Get-AzApiManagementOpenIdConnectProvider -Context $apimContext
 ```
 
-Perintah ini mendapatkan semua penyedia OpenID Koneksi untuk konteks yang ditentukan.
+Perintah ini akan mendapatkan semua OpenID Koneksi lain untuk konteks yang ditentukan.
 
 ### Contoh 2: Dapatkan penyedia menggunakan ID
 ```

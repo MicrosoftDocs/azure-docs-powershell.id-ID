@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerService.md
-ms.openlocfilehash: 24b9092fc892b6c724a863549f34b8256da6ae9d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 35e9871474ac3cd31a8941c6aa81883bc88e0c67
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960629"
 ---
 # Remove-AzDeploymentManagerService
 
 ## SYNOPSIS
 Menghapus layanan. Semua unit layanan yang dibuat di bawah layanan harus dihapus sebelum menghapus layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Perintah ini menghapus layanan yang bernama ContosoService1 dalam topologi layan
 PS C:\> Remove-AzDeploymentManagerService -InputObject $serviceObject
 ```
 
-Perintah ini akan menghapus layanan dengan nama, nama topologi layanan, dan ResourceGroup sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName dari $serviceObject, masing-masing.
+Perintah ini menghapus layanan yang namanya, nama topologi layanan, dan ResourceGroup sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName dari $serviceObject, secara berurutan.
 
 ## PARAMETERS
 

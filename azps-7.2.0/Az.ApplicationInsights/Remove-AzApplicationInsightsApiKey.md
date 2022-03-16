@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: bd6edc892a2c12cfee9b79b73324e1868d14a438
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2391e852bd51310454a788a7c976f73ca93c34d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929193"
 ---
 # Remove-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
 Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightsapikey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Application Insights Component Name.
+Aplikasi Insights Komponen.
 
 ```yaml
 Type: System.String

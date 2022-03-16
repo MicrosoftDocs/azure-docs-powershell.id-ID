@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/stop-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Stop-AzDiskPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Stop-AzDiskPool.md
-ms.openlocfilehash: 1805421b6819ad3f08bfd88e7e27c6370ea7f274
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 18cb97d0b03eec1a975c539294d9e92622d3999b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960144"
 ---
 # Stop-AzDiskPool
 
@@ -19,6 +19,9 @@ Mematikan Disk Pool dan merilis sumber daya perhitungan.
 Anda tidak ditagih untuk menghitung sumber daya yang digunakan Oleh Disk Pool ini.
 Operasi ini dapat memakan waktu 10 menit untuk selesai.
 Perilaku ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.diskpool/stop-azdiskpool) untuk informasi terkini.
 
 ## SYNTAX
 

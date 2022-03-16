@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightHost.md
-ms.openlocfilehash: 3d927b86ab17f3beb709a98ee0d649f55a42c23f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4968deeee39cbf2c6b676ffffb485498ccc4aba8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260012"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056379"
 ---
 # Get-AzHDInsightHost
 
 ## SYNOPSIS
 Mencantumkan host kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/get-azhdinsighthost) untuk informasi terkini.
 
 ## SYNTAX
 

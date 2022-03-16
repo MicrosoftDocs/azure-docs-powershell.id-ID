@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesServer.md
-ms.openlocfilehash: 9f368c3084cfba1c8741983b0b2f97a2855ce44f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6c2af3316573b7c5d6764fe832349a29aa780474
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929877"
 ---
 # New-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Membuat server Analysis Services baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/new-azanalysisservicesserver) untuk informasi terkini.
 
 ## SYNTAX
 

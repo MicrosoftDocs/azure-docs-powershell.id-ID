@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareAccount.md
-ms.openlocfilehash: d056f289a37b8f16385371c3a516d2fbf1cbe5cf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f8a2a316b0423949eb06b6018628bcd5fde2523d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960899"
 ---
 # Remove-AzDataShareAccount
 
 ## SYNOPSIS
 Menghapus akun berbagi data
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/remove-azdatashareaccount) untuk informasi terkini.
 
 ## SYNTAX
 

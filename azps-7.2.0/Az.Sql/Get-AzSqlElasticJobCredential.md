@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobCredential.md
-ms.openlocfilehash: 4ccea76f0364fb5b0f973e0524781cbe505ccde0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a2d20fd06b7a9eb3774e6e1b2ed32f98f9d1278
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273468"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949651"
 ---
 # Get-AzSqlElasticJobCredential
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa kredensial
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobcredential) untuk informasi terkini.
 
 ## SYNTAX
 

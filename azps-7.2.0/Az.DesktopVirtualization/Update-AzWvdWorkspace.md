@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdWorkspace.md
-ms.openlocfilehash: 0fe25e25976f70e539ebc82ea66b29d74f016039
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4fe5a4b9ca21c6241f883ae10717137bc2826b9b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960395"
 ---
 # Update-AzWvdWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Memperbarui ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Windows Kerja Desktop Virtual menurut nama
+### Contoh 1: Perbarui Windows Kerja Desktop Virtual menurut nama
 ```powershell
 PS C:\> Update-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -51,7 +54,7 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini memperbarui Windows Ruang Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini memperbarui Windows Kerja Desktop Virtual dalam Grup Sumber Daya.
 
 ## PARAMETERS
 

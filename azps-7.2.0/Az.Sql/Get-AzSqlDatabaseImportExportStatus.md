@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseImportExportStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseImportExportStatus.md
-ms.openlocfilehash: dea9fbc990cd4c541a80b0bbd79db3dd72cd2be4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9042333591ce8219a78e081f9e3ddcedf1764223
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272091"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949775"
 ---
 # Get-AzSqlDatabaseImportExportStatus
 
 ## SYNOPSIS
 Mendapatkan detail impor atau ekspor data Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseimportexportstatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlDatabaseImportExportStatus [-OperationStatusLink] <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseImportExportStatus** mendapatkan detail tentang impor file bacpac dari akun penyimpanan ke akun Azure SQL Database atau mengekspor Azure SQL Database sebagai file bacpac ke akun penyimpanan.
+Cmdlet **Get-AzSqlDatabaseImportExportStatus** mendapatkan detail tentang impor file bacpac dari akun penyimpanan ke Azure SQL Database atau ekspor Azure SQL Database sebagai file bacpac ke akun penyimpanan.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationStatusLink
-Menentukan link status yang dikembalikan dari cmdlet New-AzSqlDatabaseExport atau New-AzSqlDatabaseImport baru.
+Menentukan link status yang dikembalikan dari cmdlet New-AzSqlDatabaseExport atau New-AzSqlDatabaseImport.
 
 ```yaml
 Type: System.String

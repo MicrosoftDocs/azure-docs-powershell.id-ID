@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateDnsZoneGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateDnsZoneGroup.md
-ms.openlocfilehash: b7253e55739fd03c25d9c5794d7d4504daf13b0d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7f030df5c27f9d0e0c3ca8b599312659939132d2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351737"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139972671"
 ---
 # New-AzPrivateDnsZoneGroup
 
 ## SYNOPSIS
 Membuat grup zona DNS privat di titik akhir privat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azprivatednszonegroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ PrivateDnsZoneConfigs : [
                         ]
 ```
 
-Setelah titik akhir `test-pr-endpoint` privat dibuat, di atas contoh membuat grup zona DNS di bawah titik akhir privat tersebut.
+Setelah titik akhir privat `test-pr-endpoint` dibuat, di atas contoh membuat grup zona DNS di bawah titik akhir privat tersebut.
 
 ## PARAMETERS
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/Get-AzDatadogMonitor.md
-ms.openlocfilehash: 275c3dfbf9e99030f415e50214d889bd2d2311d0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: accee01053f3fb96935ebba5bff3642f38944c61
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288972"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057621"
 ---
 # Get-AzDatadogMonitor
 
 ## SYNOPSIS
 Dapatkan properti sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datadog/get-azdatadogmonitor) untuk informasi terkini.
 
 ## SYNTAX
 

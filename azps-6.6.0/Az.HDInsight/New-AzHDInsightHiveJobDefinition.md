@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightHiveJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightHiveJobDefinition.md
-ms.openlocfilehash: d0c91eb2910cb8311f1518e43875fc8513339335
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1312bdb637f739615fde2f9adc2955f4e07e60c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332912"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139938950"
 ---
 # New-AzHDInsightHiveJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Hive.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/new-azhdinsighthivejobdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ### -File
 Menentukan jalur ke file yang berisi kueri untuk dijalankan.
 File harus tersedia pada akun penyimpanan yang terkait dengan kluster.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query.*
+Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

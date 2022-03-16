@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchPool.md
-ms.openlocfilehash: 82b52a1e96902c99bf6ff5828af9bc53e3398e73
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8c918610b4c944976c06aca838db84fb79354b62
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928761"
 ---
 # New-AzBatchPool
 
 ## SYNOPSIS
 Membuat kumpulan dalam layanan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -102,7 +105,7 @@ PS C:\>New-AzBatchPool -Id "MyPool" -VirtualMachineSize "STANDARD_D1_V2" -Virtua
 
 Perintah ini membuat kumpulan baru dengan ID MyPool menggunakan kumpulan parameter TargetDedicated.
 Alokasi target adalah tiga node perhitungan.
-The pool is configured to use STANDARD_D1_V2 virtual machines with the Windows-2016-Datacenter operating system image.
+Pool dikonfigurasikan untuk menggunakan STANDARD_D1_V2 virtual dengan gambar sistem operasi Windows-2016-Datacenter.
 
 ### Contoh 3: Buat kumpulan baru menggunakan kumpulan parameter Skala Otomatis
 ```
@@ -112,7 +115,7 @@ PS C:\>New-AzBatchPool -Id "AutoScalePool" -VirtualMachineSize "STANDARD_D1_V2" 
 ```
 
 Perintah ini membuat kumpulan baru dengan ID AutoScalePool menggunakan kumpulan parameter Skala Otomatis.
-The pool is configured to use STANDARD_D1_V2 virtual machines with the Windows-2016-Datacenter operating system image, and the target number of compute node are determined by the Autoscale formula.
+Pool dikonfigurasi agar menggunakan STANDARD_D1_V2 virtual dengan gambar sistem operasi Windows-2016-Datacenter, dan jumlah target node hitung ditentukan oleh rumus Skala Otomatis.
 
 ### Contoh 4: Buat pool dengan node dalam subnet
 ```
@@ -469,7 +472,7 @@ Accept wildcard characters: False
 
 ### -VirtualMachineSize
 Menentukan ukuran mesin virtual dalam pool.
-Untuk informasi selengkapnya tentang ukuran mesin virtual, [lihat Ukuran untuk mesin virtual](/azure/virtual-machines/sizes) di situs Microsoft Azure Anda.
+Untuk informasi selengkapnya tentang ukuran mesin virtual, [lihat Ukuran untuk mesin virtual](/azure/virtual-machines/sizes) di Microsoft Azure Anda.
 
 ```yaml
 Type: System.String

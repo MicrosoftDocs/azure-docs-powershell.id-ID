@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGroup.md
-ms.openlocfilehash: 559b8cdac8bf5f8fb6b6a13ae9ccd756d21e96a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 33fb873d18ab32b6ae54ba525366477e224fffce
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300588"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929499"
 ---
 # Remove-AzApiManagementGroup
 
 ## SYNOPSIS
 Menghapus grup manajemen API yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementgroup) untuk informasi terkini.
 
 ## SYNTAX
 

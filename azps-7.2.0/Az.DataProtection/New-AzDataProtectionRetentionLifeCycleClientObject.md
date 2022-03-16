@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionRetentionLifeCycleClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionRetentionLifeCycleClientObject.md
-ms.openlocfilehash: e2c57a5d8140f7f7659c8d7fe501bb37d48137a3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 01951d22c613a6c2292a7d57188ad5b643489ee8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265051"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961151"
 ---
 # New-AzDataProtectionRetentionLifeCycleClientObject
 
 ## SYNOPSIS
 Membuat objek Siklus Hidup baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionretentionlifecycleclientobject) untuk informasi terkini.
 
 ## SYNTAX
 

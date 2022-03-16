@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchJob.md
-ms.openlocfilehash: 3dcdb1daf6171adc4a3ad331f3d89deb9d62aec4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d18e5ee8575dc8e450ae033fa4ec95115fdb0cf5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165365"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928977"
 ---
 # Enable-AzBatchJob
 
 ## SYNOPSIS
 Mengaktifkan pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/enable-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\>Enable-AzBatchJob -Id "Job-000001" -BatchContext $Context
 ```
 
 Perintah ini memungkinkan pekerjaan yang memiliki ID Job-000001.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ## PARAMETERS
 

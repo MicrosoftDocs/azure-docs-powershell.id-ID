@@ -1,4 +1,4 @@
-- name: Azure PowerShell for Azure Stack
+- name: Azure PowerShell untuk Azure Stack
   href: overview.md
   items:
     - name: Instal

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementProduct.md
-ms.openlocfilehash: 0baf762a4e0a10aa5020100e60bf1cc8089dc17e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 60f5bfd840ff1418ad6ad41afd9f3c025637fcb1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292603"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929392"
 ---
 # Set-AzApiManagementProduct
 
 ## SYNOPSIS
 Mengatur detail produk Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementproduct) untuk informasi terkini.
 
 ## SYNTAX
 

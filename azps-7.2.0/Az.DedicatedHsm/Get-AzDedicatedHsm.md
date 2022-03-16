@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
-ms.openlocfilehash: b68819fd0ac330489c63005f5458df906420181f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6beb089d247043bb90497c4b6f2103d80da825ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960755"
 ---
 # Get-AzDedicatedHsm
 
 ## SYNOPSIS
 Mendapatkan HSM khusus Azure khusus tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dedicatedhsm/get-azdedicatedhsm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -210,7 +213,7 @@ INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
   - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya tersebut berada.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

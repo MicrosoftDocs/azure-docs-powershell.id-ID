@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Remove-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Remove-AzHealthcareApisService.md
-ms.openlocfilehash: a4f42387dcd3b201fb262028dd9a84ee120a0003
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 279264ca5f736d7878c8a053ab15294714500970
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373013"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139938553"
 ---
 # Remove-AzHealthcareApisService
 
 ## SYNOPSIS
 Menghapus instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.healthcareapis/remove-azhealthcareapisservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdApplicationGroup.md
-ms.openlocfilehash: e0f97481de7a95385a141bc0c577f7dfae0af322
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 41b0ebabf636671894598e1ea26444038e37cc57
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309228"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960647"
 ---
 # Remove-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Menghapus aplikasiGrup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdapplicationgroup) untuk informasi terkini.
 
 ## SYNTAX
 

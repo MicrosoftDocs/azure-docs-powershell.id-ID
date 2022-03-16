@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceNetworkInterfaces.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceNetworkInterfaces.md
-ms.openlocfilehash: 5254696d257c3f612dbc102b2dee584ef4e2ee0f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6e4a4f38b2824b85a61a5a16d2225ce28b7b0984
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257867"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928240"
 ---
 # Get-AzCloudServiceNetworkInterfaces
 
 ## SYNOPSIS
 Dapatkan antarmuka jaringan dari layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/get-azcloudservicenetworkinterfaces) untuk informasi terkini.
 
 ## SYNTAX
 

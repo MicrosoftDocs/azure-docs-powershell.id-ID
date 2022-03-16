@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/start-azcdne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Start-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Start-AzCdnEndpoint.md
-ms.openlocfilehash: 3c56e693d9f84d64bb3c0833f588d5c5a578f5e3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 594bc40ff280e12eaff1d1e9d654b9b5e3e8d392
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928221"
 ---
 # Start-AzCdnEndpoint
 
 ## SYNOPSIS
-Memulai titik CDN akhir.
+Memulai CDN akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/start-azcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

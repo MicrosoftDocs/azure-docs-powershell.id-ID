@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCancelFailoverJob.md
-ms.openlocfilehash: 60c287de2a13df639c613c766bdc9777b8e5f490
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 73dd33e5e592fabf390525780396c517d987aa5f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163678"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950657"
 ---
 # Start-AzRecoveryServicesAsrCancelFailoverJob
 
 ## SYNOPSIS
 Memulai tindakan membatalkan failover untuk objek Pemulihan Situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrcancelfailoverjob) untuk informasi terkini.
 
 ## SYNTAX
 

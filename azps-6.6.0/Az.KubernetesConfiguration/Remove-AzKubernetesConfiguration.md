@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesConfiguration.md
-ms.openlocfilehash: 9f4eaf29a158200dbd6dd9388aecebf11b275d91
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b6883a0967f4b331a436c04ec5aebeb9cc9b5474
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356933"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139938445"
 ---
 # Remove-AzKubernetesConfiguration
 
 ## SYNOPSIS
 Langkah ini akan menghapus file YAML yang digunakan untuk menyiapkan konfigurasi Kontrol sumber, sehingga akan menghentikan sinkronisasi mendatang dari sumber ulang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kubernetesconfiguration/remove-azkubernetesconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -259,7 +262,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKubernetesConfigurationIdentity> : Parameter Identitas
+INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster kjadwal.
   - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
   - `[ClusterRp <String>]`: Kluster Kmicrosoft RP - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kmicrosoft (untuk kluster OnPrem K8S).

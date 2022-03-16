@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Get-AzCommunicationServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Get-AzCommunicationServiceKey.md
-ms.openlocfilehash: 94b5b4c270d4961d69bb7a9d00a6d5b20e5cbe02
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b3fb552aeafe6146c32c201e4070e2dbc15d140b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927879"
 ---
 # Get-AzCommunicationServiceKey
 
 ## SYNOPSIS
 Dapatkan kunci akses dari sumber daya CommunicationService.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/get-azcommunicationservicekey) untuk informasi terkini.
 
 ## SYNTAX
 

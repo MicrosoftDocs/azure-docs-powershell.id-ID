@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleObject.md
-ms.openlocfilehash: 37fdd88c44bbc9540c0b908296c66309fa5cb202
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dc303543ab49af782f24208a2597033f40b8e703
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167378"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056703"
 ---
 # New-AzFrontDoorWafManagedRuleObject
 
 ## SYNOPSIS
 Membuat Objek ManagedRule untuk pembuatan kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleobject) untuk informasi terkini.
 
 ## SYNTAX
 

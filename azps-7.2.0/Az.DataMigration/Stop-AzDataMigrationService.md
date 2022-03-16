@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Stop-AzDataMigrationService.md
-ms.openlocfilehash: a6ab9e3db10f0e12390cb5425913c2ebb84c9f7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 287aa9f84ee5e9968df2a78842102f46af73ab97
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164778"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961223"
 ---
 # Stop-AzDataMigrationService
 
 ## SYNOPSIS
 Menghentikan contoh Layanan Migrasi Database Azure yang berada dalam status berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/stop-azdatamigrationservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzDataMigrationService menghentikan instans Layanan Migrasi Database Azure yang berada dalam status berjalan.
+Cmdlet Stop-AzDataMigrationService menghentikan contoh Layanan Migrasi Database Azure yang dalam status berjalan.
 
 ## EXAMPLES
 

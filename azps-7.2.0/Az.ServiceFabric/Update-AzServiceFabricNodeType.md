@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricNodeType.md
-ms.openlocfilehash: 615caf42b9dd099ee21d016cde8bf44d3d7831be
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a104ed581ef2495d082b0fdf914382553e5c1d33
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270908"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950189"
 ---
 # Update-AzServiceFabricNodeType
 
 ## SYNOPSIS
 Memperbarui tipe node dalam kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricnodetype) untuk informasi terkini.
 
 ## SYNTAX
 

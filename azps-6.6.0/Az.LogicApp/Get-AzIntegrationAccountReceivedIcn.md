@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountReceivedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountReceivedIcn.md
-ms.openlocfilehash: 17fd2712443a0f29c10aacb5705d041625150ff3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 28ec311304b1635b765b29c59bef2ad8458ace36
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342866"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937995"
 ---
 # Get-AzIntegrationAccountReceivedIcn
 
 ## SYNOPSIS
 Cmdlet ini mengambil nomor kontrol pertukaran tertentu yang diterima per perjanjian dan nilai nomor kontrol.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountreceivedicn) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
-ms.openlocfilehash: 882a32f2b88deed111d05a59a056c7ce4a852682
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5fb6b8d34d1e059ea2cca2324fc0a92276fdb7f7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335897"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937113"
 ---
 # Set-AzDiagnosticSetting
 
 ## SYNOPSIS
 Mengatur pengaturan log dan metrik untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/set-azdiagnosticsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -Enabled
 Menunjukkan apakah akan mengaktifkan diagnostik.
-Tentukan $True untuk mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
+Tentukan $True mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
 
 ```yaml
 Type: System.Boolean
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengaturan diagnostik. Nilai defaultnya adalah **layanan.**
+Nama pengaturan diagnostik. Nilai defaultnya adalah **layanan**.
 
 ```yaml
 Type: System.String
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceBusRuleId
-Aturan Bus Layanan Aturan.
+Aturan Bus Layanan id.
 
 ```yaml
 Type: System.String
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### -Timegrain
-Menentukan grains waktu untuk diaktifkan atau dinonaktifkan untuk metrik, menurut nilai *Enabled*.
+Menentukan grains waktu untuk mengaktifkan atau menonaktifkan metrik, menurut nilai *Enabled*.
 Jika Anda tidak menentukan tinggi waktu, perintah ini beroperasi pada grain-grain waktu yang tersedia.
 
 ```yaml
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -479,5 +482,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzDiagnosticSetting](./Get-AzDiagnosticSetting.md) 
+[Get-AzDiagnosticSetting](./Get-AzDiagnosticSetting.md)
  [Remove-AzDiagnosticSetting](./Remove-AzDiagnosticSetting.md)

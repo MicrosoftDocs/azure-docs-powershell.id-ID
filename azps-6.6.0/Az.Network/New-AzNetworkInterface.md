@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterface.md
-ms.openlocfilehash: 8ff9ca33000a3d81c259c1a5e5839b578e56be76
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2b80c060729a74a4732a5b3f236dae0524840f05
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136390202"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139972779"
 ---
 # New-AzNetworkInterface
 
 ## SYNOPSIS
 Membuat antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkinterface) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ New-AzNetworkInterface -Location 'West US' -Name 'NetworkInterface1' -PrivateIpA
 ## PARAMETERS
 
 ### -ApplicationGatewayBackendAddressPool
-Menentukan objek **ApplicationGatewayBackendAddressPool.**
+Menentukan objek **ApplicationGatewayBackendAddressPool** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool[]
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationGatewayBackendAddressPoolId
-Menentukan ID objek **ApplicationGatewayBackendAddressPool.**
+Menentukan ID objek **ApplicationGatewayBackendAddressPool** .
 
 ```yaml
 Type: System.String[]
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerBackendAddressPool
-Menentukan objek **BackendAddressPool.**
+Menentukan objek **BackendAddressPool** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool[]
@@ -324,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerBackendAddressPoolId
-Menentukan ID objek **BackendAddressPool.**
+Menentukan ID objek **BackendAddressPool** .
 
 ```yaml
 Type: System.String[]
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
+Menentukan objek **NetworkSecurityGroup** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
@@ -489,7 +492,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **Subnet.**
+Menentukan objek **Subnet** .
 Cmdlet ini membuat antarmuka jaringan untuk subnet yang ditentukan oleh parameter ini.
 
 ```yaml
@@ -566,7 +569,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

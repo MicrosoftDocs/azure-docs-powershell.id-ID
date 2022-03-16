@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/te
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Test-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Test-AzDataLakeStoreItem.md
-ms.openlocfilehash: f73f3254cd0233ece30120fb6a9e8be67364c1f6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 07e0ee138523920f83141352dc6db65b975f99ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058323"
 ---
 # Test-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Menguji keberadaan file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/test-azdatalakestoreitem) untuk informasi terkini.
 
 ## SYNTAX
 

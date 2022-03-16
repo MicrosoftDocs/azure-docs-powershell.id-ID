@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/reset
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Reset-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Reset-AzRedisCache.md
-ms.openlocfilehash: 9dadd055e94f7f026f9c170eccefd946beba18b9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e198a91d3760d464d3fd13ee8dfd1dfa42672081
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300907"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950423"
 ---
 # Reset-AzRedisCache
 
 ## SYNOPSIS
 Memulai ulang node cache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/reset-azrediscache) untuk informasi terkini.
 
 ## SYNTAX
 

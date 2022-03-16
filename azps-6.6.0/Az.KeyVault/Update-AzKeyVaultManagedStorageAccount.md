@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: e3c55344f0058ba625c198760a828498e254a188
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1d91b199e4fd0b1cddc9ff03adfdc026d7396831
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356957"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139938427"
 ---
 # Update-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Memperbarui atribut Key Vault yang dapat diedit yang dikelola Azure Storage Anda.
+Memperbarui atribut yang dapat diedit dari Key Vault yang Azure Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Update-AzKeyVaultManagedStorageAccount [-InputObject] <PSKeyVaultManagedStorageA
 ```
 
 ## DESCRIPTION
-Perbarui atribut yang dapat diedit dari Key Vault yang dikelola Azure Storage Anda.
+Perbarui atribut yang dapat diedit dari Kunci Vault yang Azure Storage Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui kunci aktif ke 'key2' di Key Vault yang dikelola Azure Storage Anda.
+### Contoh 1: Perbarui kunci aktif menjadi 'key2' di Key Vault yang dikelola Azure Storage Anda.
 ```powershell
 PS C:\> Update-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -ActiveKeyName 'key2'
 
@@ -57,11 +60,11 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Memperbarui kunci vault yang dikelola Azure Storage Aktif akun menjadi 'key2'. 'key2' akan digunakan untuk menghasilkan token SAS setelah pembaruan ini.
+Memperbarui kunci vault yang Azure Storage Aktif pada Akun menjadi 'key2'. 'key2' akan digunakan untuk menghasilkan token SAS setelah pembaruan ini.
 
 ### Contoh 2
 
-Memperbarui atribut Key Vault yang dapat diedit yang dikelola Azure Storage Anda. (otomatisgenerated)
+Memperbarui atribut yang dapat diedit dari Key Vault yang Azure Storage Anda. (otomatisgenerated)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

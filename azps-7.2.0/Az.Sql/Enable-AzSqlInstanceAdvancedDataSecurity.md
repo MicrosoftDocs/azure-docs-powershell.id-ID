@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceAdvancedDataSecurity.md
-ms.openlocfilehash: b5f8f657ab5276cd3d2e4daa4443bf69bcb8f148
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9ca5fe8cd124c560406ddc4c4f1479e77d29dbf4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300779"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949955"
 ---
 # Enable-AzSqlInstanceAdvancedDataSecurity
 
 ## SYNOPSIS
 Mengaktifkan Keamanan Data Tingkat Lanjut pada instans terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/enable-azsqlinstanceadvanceddatasecurity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-SQL Database instans terkelola.
+SQL Database instans terkelola Anda.
 
 ```yaml
 Type: System.String

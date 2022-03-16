@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPoolIscsiTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Update-AzDiskPoolIscsiTarget.md
-ms.openlocfilehash: 7d006133f22413b05202feeefd539774eeda480e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6ac6a886178ab3ac8b22e9a44473201340dc5a8c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288924"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056973"
 ---
 # Update-AzDiskPoolIscsiTarget
 
 ## SYNOPSIS
 Memperbarui Target iSCSI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.diskpool/update-azdiskpooliscsitarget) untuk informasi terkini.
 
 ## SYNTAX
 

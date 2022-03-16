@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdScalingPlan.md
-ms.openlocfilehash: 0461e1f8ec8184b1dd6d26f9e08182c01480eabd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5714745e33fef15eaee00384aba08b61796c0c72
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169307"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960557"
 ---
 # Remove-AzWvdScalingPlan
 
 ## SYNOPSIS
 Menghapus rencana penskalaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdscalingplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Menghapus rencana penskalaan.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Windows Skala Desktop Virtual menurut nama
+### Contoh 1: Hapus Windows Desktop Virtual Skala menurut nama
 ```powershell
 PS C:\> Remove-AzWvdScalingPlan -ResourceGroupName ResourceGroupName -Name scalingPlan1
 ```

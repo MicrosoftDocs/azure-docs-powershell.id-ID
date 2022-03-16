@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/New-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/New-AzHealthcareApisService.md
-ms.openlocfilehash: dafd659f54a41799e743229fdbad7b21ae3448c9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6a1582a2461b82fec6b0818ad100215840ba507e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056037"
 ---
 # New-AzHealthcareApisService
 
 ## SYNOPSIS
 Membuat metadata instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.healthcareapis/new-azhealthcareapisservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ ResourceType            : Microsoft.HealthcareApis/services
 SmartProxyEnabled       : False
 ```
 
-### Contoh 2: Membuat layanan fapis Azure healthcareapis baru bernama MyService dalam grup sumber daya MyResourceGroup di lokasi westus2 dengan throughput penawaran cosmosdb = 400 dan kunci vault kunci uri "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
+### Contoh 2 : Membuat layanan fapis Azure healthcareapis baru bernama MyService dalam grup sumber daya MyResourceGroup di lokasi westus2 dengan throughput penawaran cosmosdb = 400 dan kunci vault kunci uri "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
 ```powershell
 PS C:\> New-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup -Location MyLocation -Kind fhir-R4 -CosmosOfferThroughput 400 -CosmosKeyVaultKeyUri "https://<my-keyvault>.vault.azure.net/keys/<my-key>"
 

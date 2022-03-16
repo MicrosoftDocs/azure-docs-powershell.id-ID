@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemAcl.md
-ms.openlocfilehash: 6db0189c78de5e5bc4e345f2e2e82d0a7bea7949
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 55f9af786884c7af3030ae5596d31b8c96c8a436
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281308"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058413"
 ---
 # Set-AzDataLakeStoreItemAcl
 
 ## SYNOPSIS
 Mengubah ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemacl) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\>$ACL = Get-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path /
 PS C:\> Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/MyFiles/Test.txt" -Acl $ACL
 ```
 
-Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya di $ACL akar.
+Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya di variabel $ACL tersebut.
 Perintah kedua mengatur ACL untuk file Test.txt ke ACL dalam $ACL.
 
 ### Contoh 2: Mengatur ACL untuk folder secara berulang

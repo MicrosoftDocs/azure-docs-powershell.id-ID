@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrTestFailoverJob.md
-ms.openlocfilehash: 84fcea015a0d325760480144ada61433cdedaf42
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 10705abfa07d9f08c08a4afbd95fd758fff146db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950621"
 ---
 # Start-AzRecoveryServicesAsrTestFailoverJob
 
 ## SYNOPSIS
 Memulai operasi uji failover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrtestfailoverjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Start-AzRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem <ASRReplica
 
 ## DESCRIPTION
 Cmdlet **Start-AzRecoveryServicesAsrTestFailoverJob** memulai uji failover dari item terproteksi replikasi Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzRecoveryServicesAsrJob.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob cmdlet.
 
 ## EXAMPLES
 

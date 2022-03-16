@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
-ms.openlocfilehash: 0f09ce4f164c8ea220222bf7470b6d6a0f62e651
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a17cc61c2b4691ea7c298312aec1e4d2d0eef07
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950171"
 ---
 # New-AzWebPubSubHub
 
 ## SYNOPSIS
 Buat atau perbarui pengaturan hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/new-azwebpubsubhub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -234,7 +237,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EVENTHANDLER <dengan IEventHandler[]>: Penanganan acara sebuah hub.
+EVENTHANDLER <IEventHandler[]>: Penanganan kejadian sebuah hub.
   - `UrlTemplate <String>`: Mendapatkan atau mengatur templat URL EventHandler. Anda bisa menggunakan parameter {hub} dan {event} yang sudah ditentukan sebelumnya di dalam templat, nilai URL EventHandler dihitung secara dinamis saat permintaan klien masuk.         Misalnya, UrlTemplate dapat adalah `http://example.com/api/{hub}/{event}`. Bagian host tidak bisa berisi parameter.
   - `[AuthType <UpstreamAuthType?>]`: Mendapatkan atau mengatur tipe auth. Tidak ada atau Identitas Terkelola kini didukung.
   - `[ManagedIdentityResource <String>]`: Sumber daya yang menunjukkan URI ID Aplikasi dari sumber daya target.         Itu juga muncul dalam klaim aud (audiens) untuk token yang dikeluarkan.

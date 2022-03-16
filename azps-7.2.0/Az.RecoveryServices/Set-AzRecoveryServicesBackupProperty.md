@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProperty.md
-ms.openlocfilehash: dcfa66ada61d4d81753638ae8b6c0d04823eaec1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fd83564c62ba54c399a0f070a9fb72342a6c56f6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281820"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950711"
 ---
 # Set-AzRecoveryServicesBackupProperty
 
 ## SYNOPSIS
 Mengatur properti untuk manajemen pencadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesbackupproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> Set-AzRecoveryServicesBackupProperty -Vault $Vault01 -BackupStorageRedun
 ```
 
 Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
-Perintah kedua mengatur kelebihan penyimpanan cadangan untuk $Vault 01 menjadi GeoRedundant.
+Perintah kedua mengatur kelebihan penyimpanan cadangan untuk $Vault 01 ke GeoRedundant.
 
 ## PARAMETERS
 

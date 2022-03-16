@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolAdvisor.md
-ms.openlocfilehash: 0cea42567ddaf69bd8acef205bd8ed598ab8704d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 12440124fd9075cb45d603a333646af2f8bac696
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949633"
 ---
 # Get-AzSqlElasticPoolAdvisor
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa Penasihat untuk Azure SQL Elastis Pool.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpooladvisor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlElasticPoolAdvisor [-AdvisorName <String>] [-ExpandRecommendedActions] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPoolAdvisor** mendapatkan satu atau lebih Azure SQL Elastis Pool Elastis untuk Pool Elastis Azure SQL Elastis.
+Cmdlet **Get-AzSqlElasticPoolAdvisor** mendapatkan satu atau beberapa Azure SQL Elastis Pool Advisor untuk Pool Elastis Azure SQL Elastis.
 
 ## EXAMPLES
 

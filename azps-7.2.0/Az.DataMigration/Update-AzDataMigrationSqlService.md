@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Update-AzDataMigrationSqlService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Update-AzDataMigrationSqlService.md
-ms.openlocfilehash: 6d997e294855dc64e1fe2985ddcb300092551b38
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7277519d1d892016f4ad959f1b9fcc11a9acd713
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058179"
 ---
 # Update-AzDataMigrationSqlService
 
 ## SYNOPSIS
 Perbarui Layanan Migrasi Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/update-azdatamigrationsqlservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Location  Name    Type                                         ProvisioningState
 eastus2   MySqlMS Microsoft.DataMigration/sqlMigrationServices Succeeded         Online
 ```
 
-Perintah ini memperbarui tag SQL Migration Service.
+Perintah ini memperbarui tag SQL Migrasi Baru.
 
 ### Contoh 2: Perbarui tag SQL Layanan Migrasi menggunakan InputObject
 ```powershell

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Stop-AzDataShareSubscriptionSynchronization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Stop-AzDataShareSubscriptionSynchronization.md
-ms.openlocfilehash: 5de66e86d674732b2217b43fa72b1728281f58a7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8b52754ad1fe6c06cdfe05f5cee1ecb1c0980c4c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301340"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960845"
 ---
 # Stop-AzDataShareSubscriptionSynchronization
 
 ## SYNOPSIS
 Menghentikan sinkronisasi berkelanjutan untuk langganan bersama. Langganan bersama dapat ditentukan melalui id sumber daya atau namanya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/stop-azdatasharesubscriptionsynchronization) untuk informasi terkini.
 
 ## SYNTAX
 

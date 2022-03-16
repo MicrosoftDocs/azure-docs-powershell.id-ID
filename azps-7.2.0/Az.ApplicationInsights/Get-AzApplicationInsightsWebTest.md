@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 3750c3ff4a0d17bcdc8e716cb5c18497bb8fc609
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b0f7f746759f32873f53ae4b38087181bca706c1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259003"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929283"
 ---
 # Get-AzApplicationInsightsWebTest
 
 ## SYNOPSIS
-Dapatkan definisi uji Insights web tertentu.
+Dapatkan definisi uji Insights web aplikasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightswebtest) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzApplicationInsightsWebTest -AppInsightsName <String> -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Dapatkan definisi uji Insights web tertentu.
+Dapatkan definisi uji Insights web aplikasi tertentu.
 
 ## EXAMPLES
 
@@ -97,7 +100,7 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test      Tr
 standard-pwsh01                      westus2  standard    azpwsh-rg-test      True
 ```
 
-Perintah ini mencantumkan semua tes Insights web aplikasi di bawah aplikasi Insights.
+Perintah ini mencantumkan semua uji Insights web di bawah aplikasi Insights.
 
 ### Contoh 4: Dapatkan definisi uji Insights web tertentu
 ```powershell
@@ -108,7 +111,7 @@ Name            Location WebTestKind ResourceGroupName  Enabled
 standard-pwsh01 westus2  standard    azpwsh-rg-test     True
 ```
 
-Perintah ini mendapatkan definisi uji Aplikasi Insights web tertentu.
+Perintah ini mendapatkan definisi uji Insights web tertentu.
 
 ### Contoh 5: Get a specific Application Insights web test definition by pipeline
 ```powershell
@@ -126,12 +129,12 @@ Name                    Location WebTestKind ResourceGroupName  Enabled
 standardwebtestpwsh03   westus2  standard    azpwsh-rg-test     True
 ```
 
-Perintah ini mendapatkan definisi uji web Insights tertentu menurut saluran.
+Perintah ini mendapatkan definisi uji Insights web tertentu menurut saluran.
 
 ## PARAMETERS
 
 ### -AppInsightsName
-Nama sumber daya komponen Insights Aplikasi.
+Nama Sumber daya komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String

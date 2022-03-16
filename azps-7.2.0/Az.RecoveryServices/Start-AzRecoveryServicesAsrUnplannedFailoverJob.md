@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrUnplannedFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrUnplannedFailoverJob.md
-ms.openlocfilehash: 8896b41ed3b40e82f253ffbc325887bfa538017f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 16259ed9cf3a42fb5722c95d9f301b8efaefc75d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163648"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950585"
 ---
 # Start-AzRecoveryServicesAsrUnplannedFailoverJob
 
 ## SYNOPSIS
 Memulai operasi failover yang tidak terencana.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrunplannedfailoverjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Start-AzRecoveryServicesAsrUnplannedFailoverJob -ReplicationProtectedItem <ASRRe
 
 ## DESCRIPTION
 Cmdlet **Start-AzRecoveryServicesAsrUnplannedFailoverJob** memulai failover yang tidak terencana dari item terproteksi replikasi Situs Azure atau paket pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil dengan menggunakan cmdlet Get-AzRecoveryServicesAsrJob cmdlet.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet Get-AzRecoveryServicesAsrJob cmdlet.
 
 ## EXAMPLES
 

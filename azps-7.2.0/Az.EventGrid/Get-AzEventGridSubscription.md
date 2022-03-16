@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridSubscription.md
-ms.openlocfilehash: 205353ac4d7dad0f97cd0afabd107efa666f5252
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 24b8e9318984860a0a0c11474482d79b7aa95b1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056739"
 ---
 # Get-AzEventGridSubscription
 
 ## SYNOPSIS
 Mendapatkan detail langganan acara, atau mendapatkan daftar semua langganan acara dalam langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgridsubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Get-AzEventGridSubscription [-NextLink <String>] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventGridSubscription mendapatkan detail langganan Kisi Kejadian yang ditentukan, atau daftar semua langganan Kisi Kejadian di langganan Azure saat ini atau grup sumber daya.
+Cmdlet Get-AzEventGridSubscription mendapatkan detail langganan Kisi Kejadian yang ditentukan, atau daftar semua langganan Kisi Acara di grup sumber daya atau langganan Azure saat ini.
 Jika nama langganan acara disediakan, detail dari satu langganan Kisi Acara akan dikembalikan.
 Jika nama langganan acara tidak tersedia, daftar semua langganan acara akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Top. Jika nilai Teratas tidak ditentukan atau $null, daftar akan berisi semua item langganan acara. Jika tidak, Atas akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
 Jika masih ada langganan yang lebih banyak, nilai di NextLink harus digunakan di panggilan berikutnya untuk mendapatkan halaman langganan acara berikutnya.
@@ -107,7 +110,7 @@ PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Topi
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first 10 event subscriptions (if any) created for topic \`Topic1\` in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the first 10 event subscriptions (if any) created for topic \`Topic1\` in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ### Contoh 5
 ```powershell
@@ -137,7 +140,7 @@ PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Top 
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first event subscriptions (if any) created under resource group \`MyResourceGroupName\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the first event subscriptions (if any) created under resource group \`MyResourceGroupName\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ### Contoh 9
 ```powershell
@@ -153,7 +156,7 @@ PS C:\> Get-AzEventGridSubscription -Top 15 -ODataQuery $odataFilter
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first global event subscriptions (if any) created under the currently selected Azure subscription that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the first global event subscriptions (if any) created under the currently selected Azure subscription that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ### Contoh 11
 ```powershell
@@ -169,7 +172,7 @@ PS C:\> Get-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -Loca
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first regional event subscriptions (if any) created under resource group \`MyResourceGroupName\` in the specified location \`westus2\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the first regional event subscriptions (if any) created under resource group \`MyResourceGroupName\` in the specified location \`westus2\` that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ### Contoh 13
 ```powershell
@@ -185,7 +188,7 @@ PS C:\> Get-AzEventGridSubscription -ResourceId "/subscriptions/$subscriptionId/
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-Membuat daftar 25 langganan acara pertama (jika ada) yang dibuat untuk kumpulan nama EventHub yang ditentukan yang memenuhi $odataFilter kueri. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+Daftar 25 langganan acara pertama (jika ada) yang dibuat untuk kumpulan nama EventHub yang ditentukan yang memenuhi $odataFilter kueri. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ### Contoh 15
 ```powershell
@@ -201,7 +204,7 @@ PS C:\> Get-AzEventGridSubscription -TopicTypeName "Microsoft.EventHub.Namespace
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-Daftar 15 langganan acara pertama (jika ada) yang dibuat untuk tipe topik yang ditentukan (ruang nama EventHub) di lokasi yang ditentukan yang memenuhi $odataFilter kueri. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the first 15 event subscriptions (if any) created for the specified topic type (EventHub namespaces) in the specified location that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ### Contoh 17
 ```powershell
@@ -217,7 +220,7 @@ PS C:\> Get-AzEventGridSubscription -TopicTypeName "Microsoft.Resources.Resource
 PS C:\> Get-AzEventGridSubscription $result.NextLink
 ```
 
-List the first 100 event subscriptions (if any) created for the specific resource group that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the first 100 event subscriptions (if any) created for the specific resource group that satisfies the $odataFilter query. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman langganan acara berikutnya, pengguna diharapkan untuk melakukan panggilan ulang dan Get-AzEventGridSubscription hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ## PARAMETERS
 

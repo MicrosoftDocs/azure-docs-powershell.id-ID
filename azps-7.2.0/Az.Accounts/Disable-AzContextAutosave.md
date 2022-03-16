@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disable-AzContextAutosave.md
-ms.openlocfilehash: 768df672afd57dc2c9befdb21c02a7675b4f0dea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4e8a4f1097c80f2acfd1994785ca16162d143445
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258076"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139930021"
 ---
 # Disable-AzContextAutosave
 
 ## SYNOPSIS
 Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan lupa saat berikutnya Anda membuka jendela PowerShell
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/disable-azcontextautosave) untuk informasi terkini.
 
 ## SYNTAX
 

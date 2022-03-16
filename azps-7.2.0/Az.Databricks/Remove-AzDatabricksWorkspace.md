@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Remove-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Remove-AzDatabricksWorkspace.md
-ms.openlocfilehash: be4f5720128a679eee497b108c69b77e73b8b3b3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f7c055cebc7d26d4df4b5bf5ea41e046c0c07c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278427"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960827"
 ---
 # Remove-AzDatabricksWorkspace
 
 ## SYNOPSIS
 Menghapus ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databricks/remove-azdatabricksworkspace) untuk informasi terkini.
 
 ## SYNTAX
 

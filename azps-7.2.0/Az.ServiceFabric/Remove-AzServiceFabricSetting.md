@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricSetting.md
-ms.openlocfilehash: b2ede15f859f97f12ddb29dbb71459a848620230
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d99c61e6ed39e0e65d22f0ffa72c1e8d604b4e21
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950225"
 ---
 # Remove-AzServiceFabricSetting
 
 ## SYNOPSIS
 Menghapus satu atau Service Fabric kluster dari kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzServiceFabricSetting** untuk Service Fabric baru dari kluster.
+Gunakan **Remove-AzServiceFabricSetting** untuk Service Fabric pengaturan dari kluster.
 
 ## EXAMPLES
 

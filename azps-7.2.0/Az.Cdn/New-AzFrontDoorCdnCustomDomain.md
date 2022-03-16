@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnCustomDomain.md
-ms.openlocfilehash: b57d86c22bab5c1375a5b52e9bcbf780b0af8eed
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5e8d6a10a52ba960b7aca6566ed333c77e97d7f2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305003"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928363"
 ---
 # New-AzFrontDoorCdnCustomDomain
 
 ## SYNOPSIS
 Membuat domain kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

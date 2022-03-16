@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementCache.md
-ms.openlocfilehash: 7c1ed42224cd915c78e0432db4e3b373b39aa05a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dbf93db606ac8396d9b0afa69fcfb63988f5f5ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163425"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929355"
 ---
 # Update-AzApiManagementCache
 
 ## SYNOPSIS
 memperbarui singgahan di layanan Manajemen Api.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementcache) untuk informasi terkini.
 
 ## SYNTAX
 
