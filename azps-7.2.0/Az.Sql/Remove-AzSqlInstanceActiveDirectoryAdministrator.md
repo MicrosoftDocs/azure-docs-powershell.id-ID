@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceActiveDirectoryAdministrator.md
-ms.openlocfilehash: 84ba1c02e6dc4860d3bdfe356b34535edc2892fe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6854596ac31d3c7fd4b9a5f8fb88c491896fb2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255179"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114595"
 ---
 # Remove-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menghapus administrator Azure AD untuk SQL Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlinstanceactivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 

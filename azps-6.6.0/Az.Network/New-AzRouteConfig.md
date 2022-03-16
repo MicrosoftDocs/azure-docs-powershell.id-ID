@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteConfig.md
-ms.openlocfilehash: a959948a22d5bd0025a463eeaf43f00c5ba93bea
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 93901fe4fd742134b3a9a3bdc76df2dcad15513c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356105"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140102555"
 ---
 # New-AzRouteConfig
 
 ## SYNOPSIS
 Membuat rute untuk tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azrouteconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah pertama membuat rute bernama Route07, lalu menyimpannya dalam $Route variabel.
+Perintah pertama membuat rute yang bernama Route07, lalu menyimpannya dalam $Route variabel.
 Rute ini meneruskan paket ke jaringan virtual lokal.
 Perintah kedua menampilkan properti rute.
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ### -NextHopIpAddress
 Menentukan alamat IP alat virtual yang Anda tambahkan ke jaringan Azurevirtual Anda.
 Ini merutekan paket ke alamat itu.
-Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType.*
+Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType* .
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

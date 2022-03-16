@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: e1a5a5d693cbfd667e52cc3905f9fdd103d77bd6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 08cc7ffc7bf20fb777e9e1b0dbb609179ade291b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113641"
 ---
 # Get-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
 Mengambil titik pemulihan berbeda di mana synapse Analytics SQL lain bisa dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolrestorepoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSynapseSqlPoolRestorePoint -ResourceId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPoolRestorePoint** mengambil titik pemulihan berbeda yang dapat dipulihkan oleh kelompok SQL Azure Synapse.
+Cmdlet **Get-AzSynapseSqlPoolRestorePoint** mengambil titik pemulihan berbeda yang dapat dipulihkan oleh SQL Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

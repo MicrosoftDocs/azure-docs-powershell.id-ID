@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: 19ea06dae83e026d78a4fc2b84f9d4cbe6668c7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e6640cfb3533b627ee608a9f6d6076528e8da77b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293227"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958469"
 ---
 # New-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Membuat HSM yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultmanagedhsm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini membuat HSM terkelola bernama myhsm dalam lokasi eastus2euap. Perintah tersebut menambahkan HSM yang dikelola ke grup sumber daya yang bernama myrg1. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah membuat nilai Standard_B1 HSM yang dikelola.
+Perintah ini membuat HSM terkelola bernama myhsm dalam lokasi eastus2euap. Perintah tersebut menambahkan HSM yang dikelola ke grup sumber daya yang bernama myrg1. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah membuat Standard_B1 HSM yang dikelola.
 
 ### Contoh 2: Membuat HSM yang dikelola Oleh CustomB32
 ```powershell

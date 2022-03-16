@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsPurgeWorkspaceStatus.md
-ms.openlocfilehash: 0d910157f5b051825f6c70aebcce4ef901a1f76f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f441da88640df2305933e75adb532dc0eae4bffd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085563"
 ---
 # Get-AzOperationalInsightsPurgeWorkspaceStatus
 
 ## SYNOPSIS
 Mendapatkan status operasi pembersihan yang sedang berlangsung.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightspurgeworkspacestatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Mendapatkan status operasi pembersihan yang sedang berlangsung.
 PS C:\> Get-AzOperationalInsightsPurgeWorkspaceStatus -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -PurgeId "cd944bc7-ba11-447e-910c-c6393ac020a9"
 ```
 
-Perintah ini mendapatkan status operasi pembersihan yang sedang berlangsung dengan nama grup sumber daya, nama ruang kerja, dan id pembersihan yang dikembalikan New-AzOperationalInsightsPurgeWorkspace grup.
+Perintah ini mendapatkan status operasi pembersihan yang sedang berlangsung dengan nama grup sumber daya, nama ruang kerja, dan id pembersihan yang dikembalikan dari New-AzOperationalInsightsPurgeWorkspace grup.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccount.md
-ms.openlocfilehash: 78073a87d8eaafa075f5f77918c478d7a364a121
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3cf18ff4d14f7fdfad72dff4598bb7ed1a06588a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165228"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955805"
 ---
 # New-AzSpatialAnchorsAccount
 
 ## SYNOPSIS
 Buat Akun Jangkar Spasial
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccount) untuk informasi terkini.
 
 ## SYNTAX
 

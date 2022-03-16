@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzNetworkWatcherResourceTroubleshooting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzNetworkWatcherResourceTroubleshooting.md
-ms.openlocfilehash: 1409ddda11c660a0d701ac52becdbd3bdc14096c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f27b4ce3400c3050fa520bbf4eaee513da381264
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335463"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140101349"
 ---
 # Start-AzNetworkWatcherResourceTroubleshooting
 
 ## SYNOPSIS
 Memulai pemecahan masalah pada sumber daya Jaringan di Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/start-aznetworkwatcherresourcetroubleshooting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Start-AzNetworkWatcherResourceTroubleshooting -Location <String> -TargetResource
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzNetworkWatcherResourceTroubleshooting mulai pemecahan masalah untuk sumber daya Jaringan di Azure dan mengembalikan informasi tentang masalah potensial dan mitigasi. Saat ini Gateway dan Koneksi Jaringan Virtual didukung.
+Cmdlet Start-AzNetworkWatcherResourceTroubleshooting memulai pemecahan masalah untuk sumber daya Jaringan di Azure dan mengembalikan informasi tentang masalah potensial dan mitigasi. Saat ini Gateway dan Koneksi Jaringan Virtual didukung.
 
 ## EXAMPLES
 
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

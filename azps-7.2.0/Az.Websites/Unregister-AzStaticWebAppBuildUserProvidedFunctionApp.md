@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/unregis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Unregister-AzStaticWebAppBuildUserProvidedFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Unregister-AzStaticWebAppBuildUserProvidedFunctionApp.md
-ms.openlocfilehash: 18c3d28f70f2746339ca1e94647954aabf27eedd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: afdc386c90a4256ac5e4f7ff1ed3942a65086768
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946583"
 ---
 # Unregister-AzStaticWebAppBuildUserProvidedFunctionApp
 
 ## SYNOPSIS
 Deskripsi untuk Melepaskan aplikasi fungsi yang disediakan pengguna dari build situs statis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/unregister-azstaticwebappbuilduserprovidedfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 

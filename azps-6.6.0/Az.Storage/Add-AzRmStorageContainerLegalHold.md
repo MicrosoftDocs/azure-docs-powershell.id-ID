@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/add-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: 90c4fd378c959d1e4a5e77f6c4d371458a2df96e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dd96a2db2b576d790e1203944113fd3c02bf3eae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346661"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140066015"
 ---
 # Add-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
 Menambahkan tag penyimpanan hukum ke Storage wadah blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/add-azrmstoragecontainerlegalhold) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,22 +53,22 @@ Cmdlet **Add-AzRmStorageContainerLegalHold** menambahkan tag penyimpanan hukum k
 PS C:\>Add-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1,tag2 -AllowProtectedAppendWriteAll $true
 ```
 
-Perintah ini menambahkan tag perlindungan hukum ke wadah blob Storage dengan nama akun dan nama wadah Storage, lalu mengatur AllowProtectedAppendWriteSemua untuk mengizinkan penambahan blok baru ke penambahan atau blok blob.
+Perintah ini menambahkan tag perlindungan hukum ke wadah blob Storage dengan nama akun Storage dan nama wadah, lalu mengatur AllowProtectedAppendWriteSemua untuk mengizinkan penambahan blok baru ke penambahan atau blok blob.
 
-### Contoh 2: Menambahkan tag perlindungan hukum ke wadah blob Storage dengan nama Storage dan wadah akun
+### Contoh 2: Menambahkan tag perlindungan hukum ke wadah Storage blob dengan Storage objek akun dan nama wadah
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Add-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1
 ```
 
-Perintah ini menambahkan tag perlindungan hukum ke wadah blob Storage dengan nama Storage dan wadah akun.
+Perintah ini menambahkan tag perlindungan hukum ke wadah Storage blob dengan Storage objek akun dan nama wadah.
 
 ### Contoh 3: Add legal hold tags to all Storage blob containers in a Storage account with pipeline
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Add-AzRmStorageContainerLegalHold -Tag  tag1,tag2,tag3
 ```
 
-Perintah ini menambahkan tag perlindungan hukum ke Storage wadah blob dalam akun Storage dengan saluran.
+Perintah ini menambahkan tag perlindungan hukum ke Storage blob dalam akun Storage dengan saluran.
 
 ## PARAMETERS
 
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

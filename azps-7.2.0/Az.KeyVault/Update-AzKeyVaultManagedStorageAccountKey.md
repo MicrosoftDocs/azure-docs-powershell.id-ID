@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedStorageAccountKey.md
-ms.openlocfilehash: c01ceb475d79d6c79207533b44dcc6d16387eea6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 07231ff889fbc72a26098412e2ca2747fac56396
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276156"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958153"
 ---
 # Update-AzKeyVaultManagedStorageAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci tertentu Kunci Vault Azure Storage Tersebut.
+Meregenerasi kunci tertentu dari Key Vault Azure Storage Baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedstorageaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzKeyVaultManagedStorageAccountKey [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci tertentu dari Key Vault Azure Storage Lalu mengatur kunci tersebut sebagai kunci aktif. Key Vault proksi panggilan ke Azure Resource Manager untuk meregenerasi kunci. Penelepon harus memiliki izin untuk meregenerasi kunci pada akun Azure Storage tertentu.
+Meregenerasi kunci tertentu dari Key Vault Azure Storage Akun dan mengatur kunci tersebut sebagai kunci aktif. Key Vault proksi panggilan ke Azure Resource Manager untuk meregenerasi kunci. Penelepon harus memiliki izin untuk meregenerasi kunci pada akun Azure Storage tertentu.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Meregenerasi 'key1' akun 'mystorageaccount' dan mengatur 'key1' sebagai aktif Key Vault yang dikelola Azure Storage Account.
+Meregenerasi 'key1' akun 'mystorageaccount' dan mengatur 'key1' sebagai aktif Key Vault yang Azure Storage Account.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedVirtualNetworkConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedVirtualNetworkConfig.md
-ms.openlocfilehash: 502abb01a3b4595f576bd731ca0b8a3c28e25813
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b58e89a467b748590f6465e829c33f055ee46c23
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259147"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113551"
 ---
 # New-AzSynapseManagedVirtualNetworkConfig
 
 ## SYNOPSIS
 Membuat konfigurasi jaringan virtual yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsemanagedvirtualnetworkconfig) untuk informasi terkini.
 
 ## SYNTAX
 

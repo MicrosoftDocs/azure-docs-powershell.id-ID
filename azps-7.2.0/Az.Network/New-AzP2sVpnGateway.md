@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azp2
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzP2sVpnGateway.md
-ms.openlocfilehash: c8ba6ce9fb1cd11e8590e9229a776e43770b41b4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 83a3c96ee030f19f89e1d5ca9f498abd40e47060
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303612"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954527"
 ---
 # New-AzP2sVpnGateway
 
 ## SYNOPSIS
 Buat P2SVpnGateway baru di bawah VirtualHub untuk mengarahkan ke konektivitas situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azp2svpngateway) untuk informasi terkini.
 
 ## SYNTAX
 

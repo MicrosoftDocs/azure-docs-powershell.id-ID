@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetwork.md
-ms.openlocfilehash: d8b77d43a47be6ad34f1dfbc2a5a6cbad6f4cecc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2bcd1bf802e2148f30b97e3a244df676e0efbb27
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167208"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953375"
 ---
 # Set-AzVirtualNetwork
 
 ## SYNOPSIS
 Memperbarui jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetwork) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Remove-AzVirtualNetworkSubnetConfig -Name backendSubnet -VirtualNetwork $virtual
 $virtualNetwork | Set-AzVirtualNetwork ## Remove subnet from virtual network
 ```
 
-Contoh ini membuat jaringan virtual yang disebut TestResourceGroup dengan dua subnet: frontendSubnet dan backendSubnet. Lalu, backendSubnet menghapus subnet backendSubnet dari representasi dalam memori jaringan virtual. Cmdlet Set-AzVirtualNetwork lalu digunakan untuk menulis status jaringan virtual yang diubah pada sisi layanan. Saat cmdlet Set-AzVirtualNetwork dijalankan, backendSubnet dihapus.
+Contoh ini membuat jaringan virtual yang disebut TestResourceGroup dengan dua subnet: frontendSubnet dan backendSubnet. Lalu, backendSubnet menghapus subnet backendSubnet dari representasi dalam memori jaringan virtual. Cmdlet Set-AzVirtualNetwork lalu digunakan untuk menulis status jaringan virtual yang diubah di sisi layanan. Saat cmdlet Set-AzVirtualNetwork dijalankan, backendSubnet dihapus.
 
 ## PARAMETERS
 

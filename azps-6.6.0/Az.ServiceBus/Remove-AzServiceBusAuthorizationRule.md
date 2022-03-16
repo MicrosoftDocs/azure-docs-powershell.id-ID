@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: c8a82fd285d1fc358d3d36eb2854a317feef9d30
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4c1d136b5e65234c946a72bc05b9cbe3abd94f8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140066239"
 ---
 # Remove-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
-Menghapus aturan otorisasi ruang nama atau Bus Layanan atau topik dari grup sumber daya yang ditentukan.
+Menghapus aturan otorisasi ruang nama Bus Layanan atau antrean atau topik dari grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebusauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceAuthorizationRule** menghapus aturan otorisasi ruang nama Bus Layanan atau antrean atau topik untuk grup sumber daya yang ditentukan.
+Cmdlet **Remove-AzServiceBusAuthorizationRule** menghapus aturan otorisasi ruang nama Bus Layanan atau antrean atau topik untuk grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,21 +53,21 @@ Cmdlet **Remove-AzServiceAuthorizationRule** menghapus aturan otorisasi ruang na
 PS C:\> Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi ruang `SBAuthoRule1` nama dari grup sumber daya yang `SB-Example1` ditentukan.
+Menghapus aturan otorisasi ruang nama `SBAuthoRule1` dari `SB-Example1` grup sumber daya yang ditentukan.
 
 ### Contoh 2
 ```
 PS C:\> Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi antrean `SBAuthoRule1` dari grup sumber daya yang `SBQueue` ditentukan.
+Menghapus aturan otorisasi antrean `SBAuthoRule1` dari grup `SBQueue` sumber daya yang ditentukan.
 
 ### Contoh 3
 ```
 PS C:\> Remove-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi topik `SBAuthoRule1` dari grup sumber daya `SBTopic` tertentu.
+Menghapus aturan otorisasi topik `SBAuthoRule1` dari grup `SBTopic` sumber daya tertentu.
 
 ## PARAMETERS
 
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

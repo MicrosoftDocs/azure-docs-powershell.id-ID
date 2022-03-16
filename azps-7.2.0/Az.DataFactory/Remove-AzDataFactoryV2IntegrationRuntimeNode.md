@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2IntegrationRuntimeNode.md
-ms.openlocfilehash: 34d3474d1a14f71316b2e30c5c4165e94029fbd7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: de4c991eed3f23fcc911d2ec7d74bbacb88bb8b0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308012"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058791"
 ---
 # Remove-AzDataFactoryV2IntegrationRuntimeNode
 
 ## SYNOPSIS
 Hapus simpul dengan nama tertentu pada runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/remove-azdatafactoryv2integrationruntimenode) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzDataFactoryV2IntegrationRuntimeNode -NodeName <String> [-Force] [-Input
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzDataFactoryV2IntegrationRuntimeNode menghapus simpul dalam runtime integrasi.
+Cmdlet Remove-AzDataFactoryV2IntegrationRuntimeNode akan menghapus simpul dalam runtime integrasi.
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterfaceTapConfig.md
-ms.openlocfilehash: ff595a7fc449d6d2ad42ce3a7388d8fa89906ae7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9b3551100dcbce50368622ea51aa8c38368ae307
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269980"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953537"
 ---
 # Set-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi ketuk untuk antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkinterfacetapconfig) untuk informasi terkini.
 
 ## SYNTAX
 

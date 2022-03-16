@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/start-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Start-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Start-AzWebAppSlot.md
-ms.openlocfilehash: 8a2eb20a652c612027422b8fcb7d50b73879ea8c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f22b972d6b2cad4402cb453f3047829e3fb341bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278780"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140111573"
 ---
 # Start-AzWebAppSlot
 
 ## SYNOPSIS
 Memulai slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/start-azwebappslot) untuk informasi terkini.
 
 ## SYNTAX
 

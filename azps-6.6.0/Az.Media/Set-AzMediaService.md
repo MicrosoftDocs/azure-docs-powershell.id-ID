@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
-ms.openlocfilehash: 716be769480a631b8948aa6237673e25ab8bfa2d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 34e526b2ed76bb3a71464ebad10d8eddd21e2177
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369989"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139974435"
 ---
 # Set-AzMediaService
 
 ## SYNOPSIS
 Mengubah properti tertentu dari layanan media yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/set-azmediaservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\>$Tags = @{"tag1" = "value1"; "tag2" = "value2"}
 Set-AzMediaService -ResourceGroupName "ResourceGroup123" -AccountName "MediaService001" -Tag $Tags -StorageAccounts $StorageAccounts
 ```
 
-Perintah pertama membuat serangkaian tag dan menyimpan tag tersebut dalam variabel yang bernama $Tags.
+Perintah pertama membuat serangkaian tag dan menyimpan tag tersebut di variabel yang bernama $Tags.
 Perintah kedua ini memperbarui layanan media bernama MediaService001 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup123 dengan tag yang disimpan $Tags variabel.
 Perintah juga menggunakan array objek konfigurasi penyimpanan yang disimpan dalam $StorageAccounts penyimpanan.
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

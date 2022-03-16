@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
-ms.openlocfilehash: d9a1e609e95e14f655f5242194593111fc4c733c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 88568e3c9572a9655ea55a1aa318782e19d7547b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084051"
 ---
 # Invoke-AzResourceAction
 
 ## SYNOPSIS
 Menjalankan tindakan pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/invoke-azresourceaction) untuk informasi terkini.
 
 ## SYNTAX
 

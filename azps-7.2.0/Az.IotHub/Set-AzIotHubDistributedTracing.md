@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDistributedTracing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDistributedTracing.md
-ms.openlocfilehash: 287b9fb1fcca20424c806a3264a27addcacbbaa1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d5813341d565b2bc142f9f27b6fa11e2aaca9af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298907"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958865"
 ---
 # Set-AzIotHubDistributedTracing
 
 ## SYNOPSIS
 Perbarui opsi penelusuran yang didistribusikan untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/set-aziothubdistributedtracing) untuk informasi terkini.
 
 ## SYNTAX
 

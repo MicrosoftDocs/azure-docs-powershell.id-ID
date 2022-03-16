@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: 1948e7ad05370459b07a4031468e01c5ff996853
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 28924c544cbb853f7c59e7bc56953172fe91d517
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355970"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140102429"
 ---
 # New-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
 Cmdlet New-AzVirtualHubVnetConnection membuat sumber daya HubVirtualNetworkConnection yang menghubungkan Jaringan Virtual ke Azure Virtual Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualhubvnetconnection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -155,7 +158,7 @@ VnetRoutes            : {
                         }
 PS C:\> New-AzVirtualHubVnetConnection -ResourceGroupName $rgName -VirtualHubName $virtualHubName -Name "testvnetconnection" -RemoteVirtualNetwork $remoteVirtualNetwork -RoutingConfiguration $routingconfig
 ```
-The above will create a new routing configuration and create static routes in the routing config with the next hop as a specified IP address. Konfigurasi perutean ini selanjutnya bisa disampaikan ke New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
+The above will create a new routing configuration and create static routes in the routing config with the next hop as a specified IP address. Konfigurasi perutean ini kemudian bisa disampaikan ke New-AzVirtualHubVnetConnection sebagai parameter -RoutingConfiguration.
 
 ## PARAMETERS
 
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

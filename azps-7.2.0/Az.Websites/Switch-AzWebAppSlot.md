@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/switch-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Switch-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Switch-AzWebAppSlot.md
-ms.openlocfilehash: a0d950c1f2746b36f9c5bb55e9d402400525a760
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 05d48c74fda39acb3dd8cdcd5456d4d274f6df70
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946645"
 ---
 # Switch-AzWebAppSlot
 
 ## SYNOPSIS
 Menukar dua slot di dalam Web App
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/switch-azwebappslot) untuk informasi terkini.
 
 ## SYNTAX
 

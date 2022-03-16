@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: edd669b3cea8283e6bde2cbf391016c0ac4018d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 85a483a5edf316a95114738812b173ec54788f08
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267724"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952979"
 ---
 # Get-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan otorisasi yang terkait dengan hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 

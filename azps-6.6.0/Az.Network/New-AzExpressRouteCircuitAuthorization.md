@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuitAuthorization.md
-ms.openlocfilehash: 1516f253d077073c690d2e8db54ff4cc84efe2cf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 20719ff7aaf79654489b3075d1c0548d755ad5c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358841"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140102969"
 ---
 # New-AzExpressRouteCircuitAuthorization
 
 ## SYNOPSIS
 Membuat otorisasi sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azexpressroutecircuitauthorization) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ $Authorization = New-AzExpressRouteCircuitAuthorization -Name "ContosoCircuitAut
 ```
 
 Perintah ini membuat otorisasi sirkuit baru bernama ContosoCircuitAuthorization lalu menyimpan objek tersebut dalam variabel yang bernama $Authorization. Menyimpan objek ke variabel penting: meskipun **New-AzExpressRouteCircuitAuthorization** bisa membuat otorisasi sirkuit yang tidak bisa menambahkan otorisasi itu ke rute sirkuit. Sebaliknya, variabel $Authorization digunakan New-AzExpressRouteCircuit saat membuat sirkuit ExpressRoute yang benar-benar baru.
-Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzExpressRouteCircuit baru.
+Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzExpressRouteCircuit lanjut.
 
 ## PARAMETERS
 
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

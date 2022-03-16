@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseGitRepositoryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseGitRepositoryConfig.md
-ms.openlocfilehash: a45bfec4b819dfa91eff69468de75e01958adea7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d42f7390ef4ea570a1ae0aaa418afb64ed418c30
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168897"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113587"
 ---
 # New-AzSynapseGitRepositoryConfig
 
 ## SYNOPSIS
 Membuat konfigurasi repositori Git.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsegitrepositoryconfig) untuk informasi terkini.
 
 ## SYNTAX
 

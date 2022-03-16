@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: 8e12cd734dab4d830c188efae756b147e70a963d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d667a15317ff2dc82ee7f6f841a9defcc09e78f1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366671"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140064665"
 ---
 # Remove-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
-Menghapus tipe informasi dan label sensitivitas kolom di dalam SQL sama.
+Menghapus tipe informasi dan label sensitivitas kolom dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolsensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,21 +43,21 @@ Remove-AzSynapseSqlPoolSensitivityClassification -SqlPoolObject <PSSynapseSqlPoo
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus tipe informasi dan label sensitivitas kolom dalam SQL kolom.
+Cmdlet Remove-AzSynapseSqlPoolSensitivityClassification menghapus tipe informasi dan label sensitivitas kolom dalam SQL sama.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus tipe informasi dan label sensitivitas kolom di SQL Azure Synapse.
+### Contoh 1: Hapus tipe informasi dan label sensitivitas kolom di kotak masuk Azure Synapse SQL sama.
 ```powershell
 PS C:\> Remove-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Hapus tipe informasi saat ini dan label sensitivitas kolom di azure Synapse SQL menggunakan Pemipaan.
+### Contoh 2: Hapus tipe informasi saat ini dan label sensitivitas kolom di azure Synapse SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification
 ```
 
-### Contoh 3: Hapus tipe informasi dan label sensitivitas kolom di azure Synapse SQL menggunakan Piping.
+### Contoh 3: Hapus tipe informasi dan label sensitivitas kolom dalam SQL Azure Synapse menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Remove-AzSynapseSqlPoolSensitivityClassification -SchemaName schema -TableName table -ColumnName column
 ```
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationObject
-Objek yang mewakili klasifikasi SQL Klasifikasi Sensitivitas Kolam Renang.
+Objek yang mewakili Klasifikasi Sensitivitas SQL Kolam Renang.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.DataClassification.SqlPoolSensitivityClassificationModel
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

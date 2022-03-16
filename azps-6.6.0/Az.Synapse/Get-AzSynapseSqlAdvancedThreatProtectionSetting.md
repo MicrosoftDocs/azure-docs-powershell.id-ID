@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: cfce70813327f94d33f3169bd99d6476a0f5775c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f7b3672effdc01586f9fe760d972616abb77bd0c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363677"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140129859"
 ---
 # Get-AzSynapseSqlAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan perlindungan ancaman tingkat lanjut untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqladvancedthreatprotectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 

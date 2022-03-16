@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVpnClientIpsecParameter.md
-ms.openlocfilehash: 125d11b025bb605c55061d2f2814e50e934a8d5c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0c5d1509bf55f539d39c8210cb2ea694df1fe2bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265867"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953249"
 ---
 # Set-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
 Mengatur parameter ipsec vpn untuk gateway jaringan virtual yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvpnclientipsecparameter) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PS C:\> $setvpnIpsecParams = Set-AzVpnClientIpsecParameter -VirtualNetworkGatewa
 ```
 
 Contoh ini mengatur kebijakan ipsec vpn kustom ke gateway jaringan virtual yang sudah ada yang bernama ContosoVirtualGateway dari grup Sumber Daya yang bernama ContosoResourceGroup.
-New-AzVpnClientIpsecParameter cmdlet digunakan untuk membuat objek parameter ipsec vpn objek menggunakan nilai yang lolos satu atau semua parameter yang bisa diatur oleh pengguna untuk semua gateway jaringan Virtual yang sudah ada di ResourceGroup.
+New-AzVpnClientIpsecParameter cmdlet digunakan untuk membuat objek parameter ipsec vpn objek menggunakan satu atau semua nilai parameter yang telah diberikan yang bisa diatur oleh pengguna untuk semua gateway jaringan Virtual yang sudah ada di ResourceGroup.
 Objek VpnClientIPsecParameters yang dibuat ini disimpan ke Set-AzVpnClientIpsecParameter untuk menetapkan kebijakan kustom ipsec Vpn tertentu di gateway jaringan Virtual seperti yang diperlihatkan di contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang memperlihatkan parameter set.
 
 ## PARAMETERS

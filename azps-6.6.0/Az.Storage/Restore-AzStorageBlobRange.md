@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageBlobRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Restore-AzStorageBlobRange.md
-ms.openlocfilehash: 0de6c661077356f9bf7bce2f77b8cb5ff493723c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ed914d79f90b1c51491055815fda32e45451e73f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349454"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140065709"
 ---
 # Restore-AzStorageBlobRange
 
 ## SYNOPSIS
 Memulihkan akun Storage untuk rentang blob tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/restore-azstorageblobrange) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Status   RestoreId                            FailureReason Parameters.TimeToRes
 Complete 6ca55a8b-fca0-461a-8e4c-13927a9707e6               2020-02-10T13:58:44.6841810Z ["container1/blob1" -> "container2/blob2",...]
 ```
 
-Perintah ini membuat 2 rentang blob terlebih dahulu, lalu mulai memulihkan blob dalam akun Storage dengan 2 rentang blob dari 1 hari yang lalu. Pengguna dapat menggunakan Get-AzStorageAccount untuk melacak status pemulihan nanti.
+Perintah ini membuat 2 rentang blob terlebih dahulu, lalu memulai memulihkan blob dalam akun Storage dengan 2 rentang blob dari 1 hari yang lalu. Pengguna dapat menggunakan Get-AzStorageAccount untuk melacak status pemulihan nanti.
 
 ### Contoh 2: Memulihkan semua blob dalam akun Storage yang ada dalam ujung belakang
 ```powershell
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

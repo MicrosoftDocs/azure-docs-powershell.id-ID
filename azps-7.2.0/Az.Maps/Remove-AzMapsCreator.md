@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/remove-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Remove-AzMapsCreator.md
-ms.openlocfilehash: c739b7ac875dbe835ccf61d098bc6d935c394bbd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5f3cf624d49e80f083e1d72d4d2f0f2e28fcfaae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956489"
 ---
 # Remove-AzMapsCreator
 
 ## SYNOPSIS
-Menghapus sumber Peta Creator.
+Menghapus sumber Peta Creator Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/remove-azmapscreator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,19 +35,19 @@ Remove-AzMapsCreator -InputObject <IMapsIdentity> [-DefaultProfile <PSObject>] [
 ```
 
 ## DESCRIPTION
-Menghapus sumber Peta Creator.
+Menghapus sumber Peta Creator Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus sumber Peta Creator
+### Contoh 1: Menghapus sumber daya Peta Creator
 ```powershell
 PS C:\> Remove-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount03 -Name creator-01
 
 ```
 
-Perintah ini akan menghapus sumber Peta Creator.
+Perintah ini menghapus sumber daya Peta Creator.
 
-### Contoh 2: Hapus sumber Peta Creator menurut saluran
+### Contoh 2: Menghapus sumber Peta Creator menurut saluran
 ```powershell
 PS C:\> Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01 | Remove-AzMapsCreator
 
@@ -213,7 +216,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

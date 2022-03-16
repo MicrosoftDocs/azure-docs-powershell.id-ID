@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/install-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Install-AzAksKubectl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Install-AzAksKubectl.md
-ms.openlocfilehash: ad898a6f0f35a8d005868bd9b09540b2a0109c6c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 39d9b8e9e896095e5783db8207333189e401e2fa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337759"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140110979"
 ---
 # Install-AzAksKubectl
 
 ## SYNOPSIS
 Unduh dan instal kubectl, alat baris perintah K install.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/install-azakskubectl) untuk informasi terkini.
 
 ## SYNTAX
 

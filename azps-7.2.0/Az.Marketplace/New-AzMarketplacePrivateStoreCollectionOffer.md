@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/New-AzMarketplacePrivateStoreCollectionOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/New-AzMarketplacePrivateStoreCollectionOffer.md
-ms.openlocfilehash: 11a00122067d3145aaf5c225a9ab6dc506346e2e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 290cd2a9b8f1e4bd058f88db7daa9ecce1ea5f8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956273"
 ---
 # New-AzMarketplacePrivateStoreCollectionOffer
 
 ## SYNOPSIS
 Perbarui atau tambahkan penawaran ke koleksi tertentu bursa pribadi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplace/new-azmarketplaceprivatestorecollectionoffer) untuk informasi terkini.
 
 ## SYNTAX
 

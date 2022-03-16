@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementRegion.md
-ms.openlocfilehash: f84727b91c8eaab0aeb0490ee328b82f29ff17b8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dbdca2c4db27cda8fce5c4da2458748926398237
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347990"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140110511"
 ---
 # Remove-AzApiManagementRegion
 
 ## SYNOPSIS
 Menghapus kawasan penyebaran yang ada dari contoh PsApiManagement.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementregion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,9 +29,9 @@ Remove-AzApiManagementRegion -ApiManagement <PsApiManagement> -Location <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementRegion** menghapus instans tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dari kumpulan **AdditionalRegions** yang disediakan contoh tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
-Cmdlet ini tidak memodifikasi penyebaran dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement.**
-Untuk memperbarui penyebaran Manajemen API, ubah **PsApiManagementInstance menjadi** **Set-AzApiManagement.**
+Cmdlet **Remove-AzApiManagementRegion** menghapus instans tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dari kumpulan **AdditionalRegions** yang disediakan instans tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
+Cmdlet ini tidak memodifikasi penyebaran dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement** .
+Untuk memperbarui penyebaran Manajemen API, ubah **PsApiManagementInstance menjadi** **Set-AzApiManagement**.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Untuk memperbarui penyebaran Manajemen API, ubah **PsApiManagementInstance menja
 PS C:\>Remove-AzApiManagementRegion -ApiManagement $ApiManagement -Location "East US"
 ```
 
-Perintah ini menghapus kawasan AS Timur dari contoh **PsApiManagement.**
+Perintah ini menghapus kawasan AS Timur dari contoh **PsApiManagement** .
 
 ### Contoh 2: Menghapus kawasan dari contoh PsApiManagement menggunakan serangkaian perintah
 ```
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

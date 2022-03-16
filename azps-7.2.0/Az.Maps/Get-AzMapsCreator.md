@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsCreator.md
-ms.openlocfilehash: f014741b21a15b9e8df6b3361d61bb141961298c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e7007388eff74f496e36f836a67563b8664734d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276092"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956525"
 ---
 # Get-AzMapsCreator
 
 ## SYNOPSIS
 Dapatkan sumber daya Peta Creator.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/get-azmapscreator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mencantumkan Peta Creator di bawah Peta Anda.
+Perintah ini mencantumkan Peta creator di bawah Peta Anda.
 
 ### Contoh 2: Dapatkan sumber Peta Creator
 ```powershell
@@ -61,7 +64,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mendapatkan sumber Peta Creator.
+Perintah ini akan mendapatkan sumber Peta Creator.
 
 ### Contoh 3: Get a Peta Creator resource by pipeline
 ```powershell

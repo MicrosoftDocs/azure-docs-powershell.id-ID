@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseDataMaskingRule.md
-ms.openlocfilehash: 84abe67f07580f18bbc03db3a5cc85e2a578bdeb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: de275a43aeac226e700c347dcff8961bceb5bd71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300747"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114649"
 ---
 # Remove-AzSqlDatabaseDataMaskingRule
 
 ## SYNOPSIS
 Menghapus aturan masker data dari database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabasedatamaskingrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzSqlDatabaseDataMaskingRule [-PassThru] [-Force] -SchemaName <String> -T
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlDatabaseDataMaskingRule** menghapus aturan masker data tertentu dari database azure SQL.
+Cmdlet **Remove-AzSqlDatabaseDataMaskingRule** menghapus aturan masker data tertentu dari database SQL Azure.
 Anda bisa menghapus aturan masker data dengan menggunakan parameter *ResourceGroupName*, *ServerName*, *DatabaseName*, dan *RuleId* untuk mengidentifikasi aturan yang dihapus cmdlet ini.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableName
-Menentukan nama tabel azure SQL.
+Menentukan nama tabel SQL Azure.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: 83a2a85bfd1626c656d825e799ccbbd67717f2ec
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 892d4a637cb55b61cd32fb67bb53daa93a8df7d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114397"
 ---
 # Set-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
 Mengubah konfigurasi grup Azure SQL Database Failover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabasefailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover grup Azure SQL Database Failover.
+Kebijakan failover dari Azure SQL Database Failover Group.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.FailoverGroup.Model.FailoverPolicy
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database dari Grup Failover.
+Nama server utama Azure SQL Database Dari Grup Failover.
 
 ```yaml
 Type: System.String

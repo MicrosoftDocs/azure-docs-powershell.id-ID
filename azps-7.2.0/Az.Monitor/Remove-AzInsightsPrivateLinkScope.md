@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: 8a1b84f9195ad1750584e4a1532e867600fbb521
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a055c9ed253eb4169725c4215261b2829e77963d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955337"
 ---
 # Remove-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
 hapus lingkup tautan pribadi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azinsightsprivatelinkscope) untuk informasi terkini.
 
 ## SYNTAX
 

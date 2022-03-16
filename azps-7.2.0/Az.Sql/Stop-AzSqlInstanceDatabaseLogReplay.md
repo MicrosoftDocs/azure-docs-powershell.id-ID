@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Stop-AzSqlIn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: 229dcb8c96271f2e16f6cb1e6789411e6a2c4a61
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2e65379f8ccfdd761fb2815b15148f8d8cc122e8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166275"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114001"
 ---
 # Stop-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
 Membatalkan layanan Pemutaran Ulang Log dengan menjatuhkan database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/stop-azsqlinstancedatabaselogreplay) untuk informasi terkini.
 
 ## SYNTAX
 
