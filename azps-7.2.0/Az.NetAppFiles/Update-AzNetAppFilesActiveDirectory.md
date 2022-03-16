@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: f879f5c96d3651c531f5299e1eaae5a642b9f67b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dde4de9fec4128a212c8a0719e863ffef249e8da
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261068"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119923"
 ---
 # Update-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Memperbarui konfigurasi direktori aktif Azure NetApp Files (ANF) ke pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesactivedirectory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityOperator
-Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk berbagi SMB yang tersedia secara terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
+Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk BERBAGI SMB yang tersedia secara terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
 
 ```yaml
 Type: System.String[]

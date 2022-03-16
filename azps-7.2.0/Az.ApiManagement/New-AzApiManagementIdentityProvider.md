@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: b9753f1186fb64e55b6a7c7c970e51b10ef7b032
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ddfdc582b6ba1e4b262da904184e3da98d98ba06
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162655"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063147"
 ---
 # New-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Membuat konfigurasi Penyedia Identitas baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementidentityprovider) untuk informasi terkini.
 
 ## SYNTAX
 

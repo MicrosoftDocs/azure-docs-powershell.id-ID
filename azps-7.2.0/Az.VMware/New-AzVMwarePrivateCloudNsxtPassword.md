@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloudNsxtPassword.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloudNsxtPassword.md
-ms.openlocfilehash: a1a2f231f1a2c83a562b78ca9b9cc0042055518e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dda98782304434977d2c398030912690c321f77b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298075"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113029"
 ---
 # New-AzVMwarePrivateCloudNsxtPassword
 
 ## SYNOPSIS
 Memutar kata sandi Manajer NSX-T
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/new-azvmwareprivatecloudnsxtpassword) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
-ms.openlocfilehash: 57db35e54d3a50adece6fa42dfd4f289610469c5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2ede4639ceeb3022e43547044153ef7835b05869
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127726"
 ---
 # Add-AzAnalysisServicesAccount
 
 ## SYNOPSIS
 Menambahkan akun terautentikasi untuk digunakan dalam permintaan cmdlet server Azure Analysis Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/add-azanalysisservicesaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Add-AzAnalysisServicesAccount [-RolloutEnvironment] <String> [-ServicePrincipal]
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzAnalysisServicesAccount digunakan untuk masuk ke contoh server Azure Analysis Services
+Cmdlet Add-AzAnalysisServicesAccount digunakan untuk masuk ke suatu instans server Azure Analysis Services
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ Perintah kedua menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh 
 PS C:\>Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -ApplicationId "yyyy-yyyy-yyyy-yyyy" -CertificateThumbprint 'zzzzzzzzzzzzzzzz' -TenantId "xxxx-xxxx-xxxx-xxxx"
 ```
 
-Contoh ini akan menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh lingkungan ApplicationId, TenantId dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+Contoh ini akan menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh ApplicationId, TenantId, dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
 
 ## PARAMETERS
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -RolloutEnvironment
-Nama lingkungan Azure Analysis Services yang menjadi tempat masuk. Jika diberi nama lengkap server misalnya, asazure://westcentralus.asazure.windows.net/testserver , nilai yang benar untuk variabel ini akan westcentralus.asazure.windows.net
+Nama lingkungan Azure Analysis Services yang menjadi tempat masuk. Diberikan nama lengkap server misalnya untuk asazure://westcentralus.asazure.windows.net/testserver , nilai yang benar untuk variabel ini akan westcentralus.asazure.windows.net
 
 ```yaml
 Type: System.String

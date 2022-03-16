@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/start-Azsqle
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlElasticJob.md
-ms.openlocfilehash: f8b53f2d9a94ac202b93aaa92317774f4d08f956
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 940b5e7596575d7faafe9d29527fa5dacc4a4091
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114163"
 ---
 # Start-AzSqlElasticJob
 
 ## SYNOPSIS
 Memulai pekerjaan, mengembalikan id eksekusi pekerjaan yang bisa di polling untuk melihat statusnya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/start-azsqlelasticjob) untuk informasi terkini.
 
 ## SYNTAX
 

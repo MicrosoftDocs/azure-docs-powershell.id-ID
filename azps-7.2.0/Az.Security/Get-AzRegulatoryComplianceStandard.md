@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
-ms.openlocfilehash: c16ec9192cf720bc5239dfb9163678dea8bed6cb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2f4ce70a9e543c581c8c8bfccd51272999ddcf62
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116755"
 ---
 # Get-AzRegulatoryComplianceStandard
 
 ## SYNOPSIS
 Mendapatkan standar kepatuhan peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azregulatorycompliancestandard) untuk informasi terkini.
 
 ## SYNTAX
 

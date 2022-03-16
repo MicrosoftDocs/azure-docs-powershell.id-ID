@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSSLBinding.md
-ms.openlocfilehash: 42ef3b1403bcfd10e8bf92dcbf1d0d27c7f4e88a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0197ad85cb825994d6d6131beb48e3f30e5a7579
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334357"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140064107"
 ---
 # Remove-AzWebAppSSLBinding
 
 ## SYNOPSIS
 Menghapus pengikatan SSL dari sertifikat yang diunggah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azwebappsslbinding) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -87,9 +90,9 @@ Accept wildcard characters: False
 ### -DeleteCertificate
 Menentukan tindakan untuk dilakukan jika pengikatan SSL yang dihapus adalah satu-satunya pengikatan yang digunakan oleh sertifikat.
 Jika *DeleteCertificate* disetel ke $False, sertifikat tidak akan dihapus saat pengikatan dihapus.
-Jika *DeleteCertificate* disetel ke $True atau tidak disertakan dalam perintah, sertifikat akan dihapus bersama dengan penjilidan SSL.
+Jika *DeleteCertificate* diatur ke $True atau tidak disertakan dalam perintah, sertifikat akan dihapus bersama dengan pengikat SSL.
 Sertifikat hanya akan dihapus jika pengikatan SSL yang dihapus adalah satu-satunya pengikatan yang digunakan oleh sertifikat.
-Jika sertifikat memiliki lebih dari satu pengikatan, sertifikat tidak akan dihapus terlepas dari nilai parameter *DeleteCertificate.*
+Jika sertifikat memiliki lebih dari satu pengikatan, sertifikat tidak akan dihapus terlepas dari nilai parameter *DeleteCertificate* .
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WebApp
 Menentukan Aplikasi Web.
-Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp baru.
+Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp.
 Anda tidak bisa menggunakan parameter *WebApp* di perintah yang sama seperti parameter *ResourceGroupName* dan/atau *WebAppName*.
 
 ```yaml
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

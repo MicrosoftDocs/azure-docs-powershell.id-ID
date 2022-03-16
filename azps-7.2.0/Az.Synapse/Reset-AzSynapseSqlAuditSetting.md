@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: d9a9217f0b8d7da957d07fa02ec0d5b2f3361fad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 888611dcfa943758ee5cf05007df113fd5fbbebe
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168278"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113317"
 ---
 # Reset-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
 Menghapus pengaturan audit ruang kerja Analitik Azure Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqlauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 

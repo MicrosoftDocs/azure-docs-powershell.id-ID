@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkStatement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkStatement.md
-ms.openlocfilehash: fb50db9a227acd2eff2d7a6833471f3632afbdbe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9a7172250c79cdb1fcb7cda90284ab00a0fc0663
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138252940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113227"
 ---
 # Stop-AzSynapseSparkStatement
 
 ## SYNOPSIS
 Membatalkan pernyataan Grafik Apik Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/stop-azsynapsesparkstatement) untuk informasi terkini.
 
 ## SYNTAX
 

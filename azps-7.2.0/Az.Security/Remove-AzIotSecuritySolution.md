@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzIotSecuritySolution.md
-ms.openlocfilehash: c38cb6eaa279d12f3065df2e9daa048666b9cc5e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8f4bb202bcd3b66ad20098fbd2eb533b1c31da13
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300860"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116575"
 ---
 # Remove-AzIotSecuritySolution
 
 ## SYNOPSIS
 Hapus solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/remove-aziotsecuritysolution) untuk informasi terkini.
 
 ## SYNTAX
 

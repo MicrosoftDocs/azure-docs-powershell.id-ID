@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Remove-AzCognitiveServicesAccountNetworkRule.md
-ms.openlocfilehash: d7e5c60bbb6748480840c564c368227dfc3207d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8c578e2e7847223dfbcbf719859b59333d951e45
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059817"
 ---
 # Remove-AzCognitiveServicesAccountNetworkRule
 
 ## SYNOPSIS
 Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule dari akun Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/remove-azcognitiveservicesaccountnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/appr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Approve-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Approve-AzNetAppFilesReplication.md
-ms.openlocfilehash: 69b3f7d7ff26baf02813e1c7800792e5ac98981b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 56b25620c973cba9193a58ded1ec2e4087d3191b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263691"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120157"
 ---
 # Approve-AzNetAppFilesReplication
 
 ## SYNOPSIS
 Menyetujui/Mengizinkan replikasi koneksi pada volume sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/approve-aznetappfilesreplication) untuk informasi terkini.
 
 ## SYNTAX
 

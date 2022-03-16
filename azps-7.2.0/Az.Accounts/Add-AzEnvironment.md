@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Add-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Add-AzEnvironment.md
-ms.openlocfilehash: 83e06daec3eb3cdd5c765a24eb9fc9dbbc51227a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 585721aa5881b424380b53402a00824bd65a6b5d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128059"
 ---
 # Add-AzEnvironment
 
 ## SYNOPSIS
 Menambahkan titik akhir dan metadata untuk contoh Manajer Sumber Daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/add-azenvironment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -170,7 +173,7 @@ Dalam contoh ini, kami menemukan lingkungan Azure baru dari `https://configuredm
 ## PARAMETERS
 
 ### -ActiveDirectoryEndpoint
-Menentukan otoritas dasar untuk autentikasi Azure Active Directory baru.
+Menentukan otoritas dasar untuk Azure Active Directory autentikasi.
 
 ```yaml
 Type: System.String
@@ -515,7 +518,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAudience
-Audiens untuk token yang mengotentikasi dengan TITIK akhir AD Graph.
+Audiens untuk token yang mengotentikasi dengan AD Graph Titik Akhir.
 
 ```yaml
 Type: System.String

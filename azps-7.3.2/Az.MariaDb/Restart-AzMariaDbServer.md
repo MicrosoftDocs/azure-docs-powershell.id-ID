@@ -1,60 +1,56 @@
 ---
 external help file: ''
-Module Name: Az.Websites
-online version: https://docs.microsoft.com/powershell/module/az.websites/remove-azstaticwebappbuild
+Module Name: Az.MariaDb
+online version: https://docs.microsoft.com/powershell/module/az.mariadb/restart-azmariadbserver
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebAppBuild.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebAppBuild.md
-ms.openlocfilehash: c3ea12f96a4853461b7d9a854ca40911f0ba71bf
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restart-AzMariaDbServer.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Restart-AzMariaDbServer.md
+ms.openlocfilehash: 65649cfd9479aced152c280b7e79498a2e2cc1c9
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140128257"
+ms.locfileid: "140198854"
 ---
-# Remove-AzStaticWebAppBuild
+# Restart-AzMariaDbServer
 
 ## SYNOPSIS
-Deskripsi untuk Menghapus build situs statis.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azstaticwebappbuild) untuk informasi terkini.
+Memulai ulang server.
 
 ## SYNTAX
 
-### Hapus (Default)
+### ServerName (Default)
 ```
-Remove-AzStaticWebAppBuild -EnvironmentName <String> -Name <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Restart-AzMariaDbServer -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### ServerObject
 ```
-Remove-AzStaticWebAppBuild -InputObject <IWebsitesIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+Restart-AzMariaDbServer -InputObject <IMariaDbIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Menghapus build situs statis.
+Memulai ulang server.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus build situs statis
+### Contoh 1: Restart a MariaDB
 ```powershell
-PS C:\> Remove-AzStaticWebAppBuild -ResourceGroupName azure-rg-test -Name staticweb-portal01 -EnvironmentName '2'
+PS C:\> Restart-AzMariaDbServer -Name mariadb-test-9pebvn -ResourceGroupName mariadb-test-qu5ov0
 
 ```
 
-Perintah ini akan menghapus build situs statis.
+Perintah ini memulai ulang MariaDB.
 
-### Contoh 2: Menghapus build situs statis menurut saluran
+### Contoh 2: Restart a MariaDB
 ```powershell
-PS C:\> Get-AzStaticWebAppBuild -ResourceGroupName azure-rg-test -Name staticweb-portal01 -EnvironmentName '3' | Remove-AzStaticWebAppBuild
+PS C:\> Get-AzMariaDbServer -Name mariadb-test-9pebvn -ResourceGroupName mariadb-test-qu5ov0 | Restart-AzMariaDbServer
 
 ```
 
-Perintah ini menghapus situs statis yang dibuat menurut saluran.
+Perintah ini memulai ulang MariaDB.
 
 ## PARAMETERS
 
@@ -88,27 +84,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnvironmentName
-Pengidentifikasi situs tahapan.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
-Parameter Sets: DeleteViaIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
+Parameter Sets: ServerObject
 Aliases:
 
 Required: True
@@ -119,12 +100,12 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama situs statis.
+Nama server.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
-Aliases:
+Parameter Sets: ServerName
+Aliases: ServerName
 
 Required: True
 Position: Named
@@ -164,11 +145,12 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya yang berisi sumber daya tersebut.
+Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: ServerName
 Aliases:
 
 Required: True
@@ -179,12 +161,11 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID langganan Azure Anda.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
+ID langganan yang mengidentifikasi langganan Azure.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: ServerName
 Aliases:
 
 Required: False
@@ -230,7 +211,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.I CmdletDbIdentity
 
 ## OUTPUTS
 
@@ -245,18 +226,17 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia layanan auth untuk pengguna.
-  - `[DomainName <String>]`: Nama domain kustom.
-  - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
-  - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
+INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
+  - `[ConfigurationName <String>]`: Nama konfigurasi server.
+  - `[DatabaseName <String>]`: Nama database.
+  - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
-  - `[Name <String>]`: Nama situs statis.
-  - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya tersebut berada.
-  - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
-  - `[Userid <String>]`: Id pengguna pengguna.
+  - `[LocationName <String>]`: Nama lokasi.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+  - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
+  - `[ServerName <String>]`: Nama server.
+  - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.
+  - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
 ## RELATED LINKS
 

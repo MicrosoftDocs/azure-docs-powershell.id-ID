@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebApp.md
-ms.openlocfilehash: 890b2fdab875fcdcaa734eac918f94a50a4debbc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3691282927c9bb53d7ce7f41b7c20a67cc2d173a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140112779"
 ---
 # Get-AzWebApp
 
 ## SYNOPSIS
 Mendapatkan Azure Web Apps dalam grup sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azwebapp) untuk informasi terkini.
 
 ## SYNTAX
 

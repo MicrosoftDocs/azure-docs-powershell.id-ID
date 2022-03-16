@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
-ms.openlocfilehash: cacac05921c02cbaafcae75f2c4b7b1c88c90197
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ba4428ac1ef0d312c4b453a3a9a2fbcccc45d7c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062661"
 ---
 # Set-AzApiManagementLogger
 
 ## SYNOPSIS
 Mengubah Logger Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementlogger) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstrumentationKey
-Kunci Instrumen aplikasi untuk Insights. Parameter ini bersifat opsional.
+Kunci Instrumentasi aplikasi Insights. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
