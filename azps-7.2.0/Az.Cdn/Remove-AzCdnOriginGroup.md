@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOriginGroup.md
-ms.openlocfilehash: 0f3287f54b1c881247fe35eafbe8b42a5b9a1822
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 51c5b9c0d5215ef160c82e7874531b0a799e41e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273051"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963221"
 ---
 # Remove-AzCdnOriginGroup
 
 ## SYNOPSIS
 Menghapus grup CDN origin
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azcdnorigingroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzCdnOriginGroup [-PassThru] -CdnOriginGroup <PSOriginGroup> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Remove-AzCdnOriginGroup akan menghapus grup CDN origin dari titik akhir yang ditentukan. 
+Remove-AzCdnOriginGroup akan menghapus CDN origin tersebut dari titik akhir yang ditentukan. 
 
 ## EXAMPLES
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya Azure CDN profil.
+Grup sumber daya profil Azure CDN sumber daya.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya grup Azure CDN origin.
+Id sumber daya grup Azure CDN origin baru.
 
 ```yaml
 Type: System.String

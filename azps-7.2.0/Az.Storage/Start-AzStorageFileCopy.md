@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
-ms.openlocfilehash: 2fa7c68031a7fdd8bc39b1cc4287d3b4b7516fd6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dd8ef26cc612f02626eaa949e83ef46679678285
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082179"
 ---
 # Start-AzStorageFileCopy
 
 ## SYNOPSIS
 Mulai menyalin file sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/start-azstoragefilecopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 
 ### -SrcContainer
 Menentukan objek wadah blob awan.
-Anda dapat membuat objek wadah blob awan atau menggunakan Get-AzStorageContainer cmdlet.
+Anda dapat membuat objek wadah blob awan atau menggunakan cmdlet Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer

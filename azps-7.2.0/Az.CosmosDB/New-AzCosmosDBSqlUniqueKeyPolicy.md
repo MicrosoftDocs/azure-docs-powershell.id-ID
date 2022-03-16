@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlUniqueKeyPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlUniqueKeyPolicy.md
-ms.openlocfilehash: 0437a6b348a970ded304f0f53e82e3f9874a196b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bd0658f05dfcef9bdd98a0a6604bdb9e88e5ecb1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292459"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962519"
 ---
 # New-AzCosmosDBSqlUniqueKeyPolicy
 
 ## SYNOPSIS
 Membuat objek CosmosDB SqlUniqueKeyPolicy baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqluniquekeypolicy) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 0308760a8b77ebff11496bca385cfb7aa0677807
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ea92b6e2a887aa68e2ae487f4f0fef97ba19d82c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163415"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963905"
 ---
 # Remove-AzAutomationDscConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi DSC dari Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/remove-azautomationdscconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

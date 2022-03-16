@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservation.md
-ms.openlocfilehash: 7b0b7cc60f04ca2469575931a36db26b7401e310
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b9b7d422d8538e1b6b22e990180211c9973b449a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378557"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067383"
 ---
 # Get-AzReservation
 
 ## SYNOPSIS
-Dapatkan `Reservation` reservasi pesanan tertentu
+Dapatkan `Reservation`reservasi pesanan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.reservations/get-azreservation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzReservation [-ReservationOrderPage <PSReservationOrderPage>] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Daftar `Reservation` dalam satu `ReservationOrder` .
+Daftar `Reservation`dalam satu `ReservationOrder`.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Daftar `Reservation` dalam satu `ReservationOrder` .
 PS C:\> Get-AzReservation -ReservationOrderId "1111aaaa-b1b2-c0c2-d0d2-00000fffff"
 ```
 
-Daftar `Reservation` di dalam yang ditentukan `ReservationOrder` .
+Daftar `Reservation`di dalam yang ditentukan `ReservationOrder`.
 
 ### Contoh 2
 ```
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Id `Reservation` untuk dilihat
+`Reservation` Id untuk dilihat
 
 ```yaml
 Type: System.Guid
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-Id `ReservationOrder` yang berisi `Reservation` . Diperlukan.
+Id yang `ReservationOrder` berisi `Reservation`. Diperlukan.
 
 ```yaml
 Type: System.Guid

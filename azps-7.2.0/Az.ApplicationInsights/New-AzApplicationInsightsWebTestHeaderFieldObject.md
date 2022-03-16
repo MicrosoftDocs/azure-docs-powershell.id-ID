@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ApplicationInsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestHeaderFieldObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/New-AzApplicationInsightsWebTestHeaderFieldObject.md
-ms.openlocfilehash: a62b3c3d85a850fa5ef2af9184583349a2c66baf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f1cb43706f2c5c6f2ae4c002dbbfcb9be654d4d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271867"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964373"
 ---
 # New-AzApplicationInsightsWebTestHeaderFieldObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk HeaderField
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/new-azapplicationinsightswebtestheaderfieldobject) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMUefi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMUefi.md
-ms.openlocfilehash: 533366c1dc6ced54946b6e6c4049a3c3f08c5b89
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f6027d761cfb1bd6bb7dfa1f9af106553b13146b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353546"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078903"
 ---
 # Set-AzVMUefi
 
 ## SYNOPSIS
 Mengubah properti UEFI mesin virtual gen 2
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmuefi) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ PS C:\> Set-AzVMUefi -VM $VM -EnableVtpm $true -EnableSecureBoot $true
 
 Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVM**.
 Perintah menyimpannya di $VM variabel.
-Perintah kedua mengubah pengaturan UEFI untuk mengaktifkan SecureBoot dan vTPM pada komputer virtual dalam $VM.
-Perintah melewati hasil ke cmdlet Update-AzVM, yang menerapkan perubahan Anda.
+Perintah kedua mengubah pengaturan UEFI untuk mengaktifkan SecureBoot dan vTPM pada komputer virtual di $VM.
+Perintah melewati hasil ke cmdlet Update-AzVM, yang mengimplementasikan perubahan Anda.
 Perubahan pada mode kas menyebabkan mesin virtual memulai ulang.
 
 ## PARAMETERS
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

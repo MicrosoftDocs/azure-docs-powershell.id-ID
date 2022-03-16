@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationModule.md
-ms.openlocfilehash: b5042fedc412314f9cdfd2012b52f9f175c03c08
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b3c16544454edfa569d037e945ae39ec19fcce31
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964103"
 ---
 # New-AzAutomationModule
 
 ## SYNOPSIS
 Mengimpor modul ke dalam Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationmodule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ File berisi folder yang menyertakan file yang merupakan salah satu tipe berikut 
 - Windows PowerShell ini, yang memiliki ekstensi nama file .psm1 .dll 
 - Windows PowerShell manifes modul, yang memiliki ekstensi nama file .psd1 Nama file .zip, nama folder, dan nama file dalam folder harus sama.
 Tentukan file .zip sebagai URL yang bisa diakses oleh layanan Otomatisasi.
-Jika Anda mengimpor modul Windows PowerShell ke Otomatisasi dengan menggunakan cmdlet ini atau cmdlet Set-AzAutomationModule, operasinya adalah asinkron.
+Jika Anda mengimpor modul Windows PowerShell ke otomatisasi dengan menggunakan cmdlet ini atau cmdlet Set-AzAutomationModule, operasinya adalah asinkron.
 Perintah menyelesaikan apakah impor berhasil atau gagal.
 Untuk memeriksa apakah properti berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name `ModuleName Periksa properti **ProvisioningState** untuk nilai Berhasil.
 

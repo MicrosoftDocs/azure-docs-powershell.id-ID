@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryApplicationVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryApplicationVersion.md
-ms.openlocfilehash: 7d7435ade67e6c316189e6fe562476bae8b1f3c3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5fbb420420344886778b445d2b08e67cdb2f9a2d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290380"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962951"
 ---
 # Remove-AzGalleryApplicationVersion
 
 ## SYNOPSIS
 Hapus galeri Versi Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azgalleryapplicationversion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -261,7 +264,7 @@ INPUTOBJECT <IComputeIdentity>: Parameter Identitas
   - `[Location <String>]`: Lokasi tempat menjalankan kueri perintah.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[RunCommandName <String>]`: Nama perintah mesin virtual yang dijalankan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
   - `[VMName <String>]`: Nama mesin virtual tempat perintah jalankan harus dibuat atau diperbarui.
   - `[VMScaleSetName <String>]`: Nama kumpulan skala VM.
 

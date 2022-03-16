@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendCredential.md
-ms.openlocfilehash: 358ecbc1f8d65aeabf27d208a28f723537aced1d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a349aff8551ac0ef97be8cc874894be0e1ce8f3b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276411"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964751"
 ---
 # New-AzApiManagementBackendCredential
 
 ## SYNOPSIS
 Membuat kontrak Backend Credential baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendcredential) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Membuat kontrak Backend Credential baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Kredensial Backend In-Memory Objek
+### Contoh 1: Membuat Kredensial Backend In-Memory Belakang
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$credential = New-AzApiManagementBackendCredential -AuthorizationHeaderScheme basic -AuthorizationHeaderParameter opensesame -Query @{"sv" = @('xx', 'bb'); "sr" = @('cc')} -Header @{"x-my-1" = @('val1', 'val2')}

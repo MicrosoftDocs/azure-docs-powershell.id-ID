@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 4c87d165fe217bed378bed41b5a5ea1bb9a83090
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ecc02e830a6cd5237d94a5ffad398953026f0c16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952691"
 ---
 # Get-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
 Mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightssavedsearch) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -124,6 +127,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 

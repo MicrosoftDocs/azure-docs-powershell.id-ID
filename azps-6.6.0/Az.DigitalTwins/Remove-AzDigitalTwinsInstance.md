@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Remove-AzDigitalTwinsInstance.md
-ms.openlocfilehash: 211d5c6a252c1b54726db08d43b1fec8bbe1908b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4e47bcf8858eae95097b4725f805c72f0961d7f2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136336762"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976883"
 ---
 # Remove-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Hapus DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/remove-azdigitaltwinsinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,7 +231,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDigitalTwinsIdentity> : Parameter Identitas
+INPUTOBJECT <IDigitalTwinsIdentity>: Parameter Identitas
   - `[EndpointName <String>]`: Nama Sumber Daya Titik Akhir.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi DigitalTwinsInstance.

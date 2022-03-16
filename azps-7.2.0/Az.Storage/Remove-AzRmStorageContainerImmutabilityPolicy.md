@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 7daa3da604f39938e6d5c6169e7a4bd4052504d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50ff5a435b21fdc4bbe92043f92a700a411bffb4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290604"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082323"
 ---
 # Remove-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Menghapus ImmutabilityPolicy wadah blob Storage dengan kebijakan yang tidak terkunci
+Menghapus ImmutabilityPolicy grup Storage wadah blob dengan kebijakan tak terkunci
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzRmStorageContainerImmutabilityPolicy [-InputObject] <PSImmutabilityPoli
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityPolicy wadah blob Storage dengan kebijakan yang tidak terkunci.
+Cmdlet **Remove-AzRmStorageContainerImmutabilityPolicy** menghapus ImmutabilityPolicy wadah Storage blob dengan kebijakan yang tidak terkunci.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "
 PS C:\>Remove-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy wadah Storage yang tidak terkunci dengan Storage akun dan nama wadah.
+Perintah ini menghapus ImmutabilityPolicy tidak terkunci dari wadah blob Storage dengan Storage dan nama wadah akun.
 
 ### Contoh 2: Remove unlocked ImmutabilityPolicy of a Storage blob container, with Storage account object
 ```
@@ -73,19 +76,19 @@ PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -Container $containe
 PS C:\>Remove-AzRmStorageContainerImmutabilityPolicy -Container $containerObject -Etag $policy.Etag
 ```
 
-Perintah ini menghapus ImmutabilityPolicy tidak terkunci dari wadah Storage blob dengan Storage wadah.
+Perintah ini menghapus ImmutabilityPolicy tidak terkunci dari wadah Storage blob dengan Storage wadah objek.
 
 ### Contoh 4: Remove unlocked ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
 ```
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Remove-AzRmStorageContainerImmutabilityPolicy
 ```
 
-Perintah ini menghapus immutabilityPolicy yang tidak terkunci dari wadah blob Storage, dengan objek ImmutabilityPolicy.
+Perintah ini menghapus immutabilityPolicy yang tidak terkunci dari wadah Storage blob, dengan objek ImmutabilityPolicy.
 
 ## PARAMETERS
 
 ### -Container
-Storage objek wadah
+Storage wadah objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer

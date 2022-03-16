@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteLoginSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteLoginSetting.md
-ms.openlocfilehash: bdb949a66ad268f69069af357679ac9c1d69d728
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0315a1fb1e406c39f737eb7f331cc608a0b178d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291484"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963707"
 ---
 # Get-AzBatchRemoteLoginSetting
 
 ## SYNOPSIS
 Dapatkan pengaturan masuk jarak jauh untuk simpul perhitungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchremoteloginsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ IPAddress       Port
 10.214.75.221   50000
 ```
 
-Perintah pertama mendapatkan konteks akun kumpulan yang berisi kunci akses untuk langganan Anda, lalu menyimpannya dalam $Context terbatas.
+Perintah pertama mendapatkan konteks akun kumpulan yang berisi kunci akses untuk langganan Anda, lalu menyimpannya di $Context tertentu.
 Perintah kedua mendapatkan pengaturan masuk jarak jauh untuk node perhitungan yang memiliki ID tertentu di pool yang memiliki ID ContosoPool.
 
 ## PARAMETERS
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -ComputeNode
 Menentukan node perhitungan, sebagai objek **PSComputeNode** , di mana cmdlet ini mendapatkan pengaturan masuk jarak jauh.
-Untuk mendapatkan objek node perhitungan, gunakan cmdlet Get-AzBatchComputeNode.
+Untuk mendapatkan objek node perhitungan, gunakan Get-AzBatchComputeNode cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode

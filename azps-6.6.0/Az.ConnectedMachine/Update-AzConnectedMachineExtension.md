@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedMachineExtension.md
-ms.openlocfilehash: 6903a7ea70df3227f6ee3bc7b17385010c7823b9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: deb3f3baeb5435edf6058304877223fc804e923b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383496"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078525"
 ---
 # Update-AzConnectedMachineExtension
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui ekstensi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedmachineextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ customScript eastus   Succeeded
 ```
 
 Memperbarui ekstensi tertentu yang diberikan melalui saluran.
-Di sini kami menggunakan ekstensi yang akan digunakan melalui saluran untuk membantu kami mengidentifikasi ekstensi yang akan beroperasi dan menentukan apa yang ingin kami ubah melalui parameter normal (seperti `-Settings` )
+Di sini kami menggunakan ekstensi yang akan digunakan melalui saluran untuk membantu kami mengidentifikasi ekstensi yang akan beroperasi dan menentukan apa yang ingin kami ubah melalui parameter normal (seperti `-Settings`)
 
 ### Contoh 3: Memperbarui ekstensi dengan parameter ekstensi yang ditentukan melalui saluran
 ```powershell
@@ -420,7 +423,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -441,7 +444,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EXTENSIONPARAMETER <IMachineExtensionUpdate> : Menjelaskan Pembaruan Ekstensi Mesin.
+EXTENSIONPARAMETER <IMachineExtensionUpdate>: Menjelaskan Pembaruan Ekstensi Mesin.
   - `[Tag <IUpdateResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[AutoUpgradeMinorVersion <Boolean?>]`: Menunjukkan apakah ekstensi harus menggunakan versi minor yang lebih baru jika tersedia pada saat penggunaan. Namun, setelah digunakan, ekstensi tidak akan memutakhirkan versi minor kecuali redeployed, bahkan dengan properti yang diatur ke true.
@@ -452,7 +455,7 @@ EXTENSIONPARAMETER <IMachineExtensionUpdate> : Menjelaskan Pembaruan Ekstensi Me
   - `[Type <String>]`: Menentukan tipe ekstensi; contohnya adalah "CustomScriptExtension".
   - `[TypeHandlerVersion <String>]`: Menentukan versi penanganan skrip.
 
-INPUTOBJECT <IConnectedMachineIdentity> : Parameter Identitas
+INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
   - `[ExtensionName <String>]`: Nama ekstensi komputer.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama mesin hibrid.

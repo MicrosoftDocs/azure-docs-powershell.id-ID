@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerConnectionString.md
-ms.openlocfilehash: 899c94af454ab06d6079587ca7279f118e7dcf55
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6e6e57b91992a016cc75810be1ca16b437a91f6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303483"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952007"
 ---
 # Get-AzPostgreSqlFlexibleServerConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi menurut penyedia koneksi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverconnectionstring) untuk informasi terkini.
 
 ## SYNTAX
 

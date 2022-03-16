@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccount.md
-ms.openlocfilehash: 91bdc7ed8bd6cdbde8b2b3c0c04d3177481b3437
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: adc490d81decce782d0747f0aef2f93925a580f0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963779"
 ---
 # Get-AzBatchAccount
 
 ## SYNOPSIS
 Mendapatkan akun Kumpulan dalam langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchaccount) untuk informasi terkini.
 
 ## SYNTAX
 

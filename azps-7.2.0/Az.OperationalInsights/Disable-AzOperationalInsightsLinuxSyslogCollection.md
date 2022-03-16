@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxSyslogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsLinuxSyslogCollection.md
-ms.openlocfilehash: 2431ff2ae3a5dd17ab8ac0e3fa103a68724c41ac
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 279ce75b437f31e2082dc79ec9cecb7191732d65
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952871"
 ---
 # Disable-AzOperationalInsightsLinuxSyslogCollection
 
 ## SYNOPSIS
 Berhenti pengumpulan data syslog dari komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/disable-azoperationalinsightslinuxsyslogcollection) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: 8de7bfdc5ca5a26ba59535b79885a74b29de22b2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e0556177d946c9c89b5ddb882d14c7e7541724fd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340145"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139932109"
 ---
 # Enable-AzSqlDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
 Memungkinkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/enable-azsqldatabasesensitivityrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,12 +48,12 @@ Cmdlet Enable-AzSqlDatabaseSensitivityRecommendation memungkinkan rekomendasi se
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam suatu Azure SQL Database.
+### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam Azure SQL Database.
 ```powershell
 PS C:\> Enable-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Aktifkan rekomendasi sensitivitas pada kolom tertentu Azure SQL menggunakan Piping.
+### Contoh 2: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu Azure SQL database menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Enable-AzSqlDatabaseSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek yang mewakili klasifikasi SQL Database Sensitivitas.
+Objek yang mewakili SQL Database Klasifikasi Sensitivitas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

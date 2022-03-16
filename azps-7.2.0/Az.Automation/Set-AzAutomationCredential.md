@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCredential.md
-ms.openlocfilehash: 8af37b2f98b549afdf1e5046e0300c20669e9823
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f009a46ef660ff300cc4ee182facde7878a2cdfc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284891"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963851"
 ---
 # Set-AzAutomationCredential
 
 ## SYNOPSIS
 Mengubah kredensial Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationcredential) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,10 +42,10 @@ PS C:\> $Credential = New-Object -TypeName System.Management.Automation.PSCreden
 PS C:\> Set-AzAutomationCredential -AutomationAccountName "Contoso17" -Name "ContosoCredential" -ResourceGroupName "ResourceGroup01" -Value $Credential
 ```
 
-Perintah pertama menetapkan nama pengguna ke $User variabel.
+Perintah pertama menetapkan nama pengguna ke $User pengguna.
 Perintah kedua mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
 Perintah menyimpan objek tersebut dalam $Password variabel.
-Perintah ketiga membuat kredensial berdasarkan $User dan $Password, lalu menyimpannya di $Credential variabel.
+Perintah ketiga membuat kredensial berdasarkan $User dan $Password, lalu menyimpannya di $Credential lain.
 Perintah terakhir mengubah kredensial Otomatisasi bernama ContosoCredential untuk menggunakan kredensial dalam $Credential.
 
 ## PARAMETERS

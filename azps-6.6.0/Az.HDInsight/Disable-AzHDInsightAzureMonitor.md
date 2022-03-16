@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/disabl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightAzureMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Disable-AzHDInsightAzureMonitor.md
-ms.openlocfilehash: a202bd4ec87c023da5283a502ae113c1cfd1a8fa
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7576e7c66c9d73cad2438edf80100a073c3c71de
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362918"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140105867"
 ---
 # Disable-AzHDInsightAzureMonitor
 
 ## SYNOPSIS
 Menonaktifkan Azure Monitor dalam kluster HDInsight yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/disable-azhdinsightazuremonitor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -187,5 +190,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Enable-AzHDInsightAzureMonitor](./Enable-AzHDInsightAzureMonitor.md) 
+[Enable-AzHDInsightAzureMonitor](./Enable-AzHDInsightAzureMonitor.md)
  [Get-AzHDInsightAzureMonitor](./Get-AzHDInsightAzureMonitor.md)

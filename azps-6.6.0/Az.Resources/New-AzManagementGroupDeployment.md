@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupDeployment.md
-ms.openlocfilehash: 02cf5fe8cfd02b16f5a6ab99847922f4c9ac6467
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2787e888aaa864b8e2df9b04d888416e44571291
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344774"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140066987"
 ---
 # New-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Membuat penyebaran di grup manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azmanagementgroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -170,9 +173,9 @@ Untuk menambahkan penyebaran di grup manajemen, tentukan grup manajemen, lokasi 
 Lokasi memberi tahu Azure Resource Manager tentang tempat untuk menyimpan data penyebaran. Templat tersebut adalah string JSON yang berisi sumber daya individu yang akan digunakan.
 Templat ini menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
 
-Untuk menggunakan templat kustom untuk penggunaan, tentukan parameter *TemplateFile* atau parameter *TemplateUri.*
+Untuk menggunakan templat kustom untuk penggunaan, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
-Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject.*
+Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject* .
 Alternatifnya, Anda bisa menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
 Untuk menggunakan parameter dinamis, ketik parameter dinamis di prompt perintah, atau ketik tanda minus (-) untuk mengindikasikan parameter dan gunakan tombol Tab untuk melihat parameter yang tersedia.
 Nilai parameter templat yang Anda masukkan di prompt perintah lebih diprioritaskan ke prioritas dalam objek parameter templat atau file.
@@ -197,7 +200,7 @@ PS C:\> New-AzManagementGroupDeployment -ManagementGroupId "myMG" -Location "Wes
 ```
 
 Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak publik dan membutuhkan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
-Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo` .
+Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo`.
 Ini dapat digunakan jika Anda ingin menggunakan templat di akun penyimpanan dengan menyediakan token SAS sebagai String Kueri
 
 ### Contoh 3: Menggunakan objek templat kustom dan file parameter untuk membuat penyebaran
@@ -486,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If proyek. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If perubahan. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]
@@ -501,7 +504,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfResultFormat
-Hasil What-If. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Hasil What-If format. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.WhatIfResultFormat
@@ -548,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Update-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Update-AzReservation.md
-ms.openlocfilehash: b2bf745839473128ce309c4a0cde1413f84bfe4e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e57c479269c4d0c6aa8d749d7d30204c8da10ce0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381480"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067293"
 ---
 # Update-AzReservation
 
 ## SYNOPSIS
-Memperbarui `Reservation` .
+`Reservation`Memperbarui .
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.reservations/update-azreservation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Update-AzReservation -AppliedScopeType <String> [-AppliedScope <String>] [-Insta
 ```
 
 ## DESCRIPTION
-Memperbarui lingkup . `Reservation`
+Memperbarui lingkup .`Reservation`
 
 ## EXAMPLES
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceFlexibility
-Jika ada, memperbarui nilai InstanceFlexibility dari `Reservation` . Jika tidak ditentukan, nilai yang sudah ada tetap tidak berubah.
+Jika ada, memperbarui nilai InstanceFlexibility dari `Reservation`. Jika tidak ditentukan, nilai yang sudah ada tetap tidak berubah.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-Id `Reservation` pembaruan
+`Reservation` Id pembaruan
 
 ```yaml
 Type: System.Guid
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationOrderId
-Id `ReservationOrder` pembaruan
+`ReservationOrder` Id pembaruan
 
 ```yaml
 Type: System.Guid
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

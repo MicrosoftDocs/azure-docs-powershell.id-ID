@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryImageVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGalleryImageVersion.md
-ms.openlocfilehash: 0fac9ec303a8f13bf0c910efd52d16ec6a9a4ae7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 848d2999e18dc67d81a279846f6467f69622f740
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349205"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078705"
 ---
 # Update-AzGalleryImageVersion
 
 ## SYNOPSIS
 Perbarui versi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/update-azgalleryimageversion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ $versionName = "1.0.0"
 Update-AzGalleryImageVersion -ResourceGroupName $rgname -GalleryName $galleryName -GalleryImageDefinitionName $imageName -Name $versionName -PublishingProfileExcludeFromLatest:$false
 ```
 
-Perbarui versi gambar galeri yang dikecualikan dari status terbaru. Untuk menyertakan versi gambar yang dipertimbangkan untuk terbaru, gunakan `-PublishingProfileExcludeFromLatest:$false` . Untuk mengecualikan versi gambar dari pertimbangan untuk yang terbaru, gunakan `-PublishingProfileExcludeFromLatest` .
+Perbarui versi gambar galeri yang dikecualikan dari status terbaru. Untuk menyertakan versi gambar yang dipertimbangkan untuk terbaru, gunakan `-PublishingProfileExcludeFromLatest:$false`. Untuk mengecualikan versi gambar dari pertimbangan untuk yang terbaru, gunakan `-PublishingProfileExcludeFromLatest`.
 
 ### Contoh 3: Mengubah tanggal berakhirnya masa pakai untuk versi gambar.
 
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

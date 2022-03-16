@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: c5229e952770ae476e36876528dd9949ded2f5b7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 865418b8110c4a3e8bf5a04f0fe805b653fc0a9f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297324"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952439"
 ---
 # Get-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
 Mendapatkan ASN yang terdaftar untuk peering tipe server rute pertukaran internet.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeeringregisteredasn) untuk informasi terkini.
 
 ## SYNTAX
 

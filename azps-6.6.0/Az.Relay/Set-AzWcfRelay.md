@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/set-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
-ms.openlocfilehash: e0f4d53dc6d7c717ba46bc1939733f99c0a2ba25
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4faca22d9e221256e240aaa0b39de79859a03d2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378540"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067401"
 ---
 # Set-AzWcfRelay
 
 ## SYNOPSIS
 Memperbarui deskripsi dari Wcf Smtp dalam ruang nama Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/set-azwcfrelay) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzWcfRelay memperbarui deskripsi untuk WcfIguy dalam ruang nama Relay yang ditentukan.
+Cmdlet Set-AzWcfRelay memperbarui deskripsi untuk Wcf Cmdlety dalam ruang nama Relay yang ditentukan.
 
 ## EXAMPLES
 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Remove-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Remove-AzConsumptionBudget.md
-ms.openlocfilehash: 3067f70e2c93d4d5b50f2a268d9b08eb6f2af7a8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 32f831316db61e68ca80453bcfa8eff3bcd1ccfe
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350681"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139979673"
 ---
 # Remove-AzConsumptionBudget
 
 ## SYNOPSIS
 Hapus anggaran dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/remove-azconsumptionbudget) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObje
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzConsumptionBudget cmdlet menghapus anggaran dalam langganan atau grup sumber daya.
+Cmdlet Remove-AzConsumptionBudget cmdlet menghapus anggaran baik dalam langganan maupun grup sumber daya.
 
 ## EXAMPLES
 
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

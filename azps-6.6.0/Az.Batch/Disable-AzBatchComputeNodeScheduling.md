@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/disable-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchComputeNodeScheduling.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Disable-AzBatchComputeNodeScheduling.md
-ms.openlocfilehash: f566fbece728eb6695332e501abfde1d80c18d6f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 087b613fb1ab39914d857185b95bf09b3c49ab9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337434"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139980195"
 ---
 # Disable-AzBatchComputeNodeScheduling
 
 ## SYNOPSIS
 Menonaktifkan penjadwalan tugas pada node perhitungan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/disable-azbatchcomputenodescheduling) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 
 ### -PoolId
 Menentukan ID kumpulan kumpulan yang berisi node perhitungan tempat penjadwalan tugas dinonaktifkan.
-Jika Anda menggunakan parameter *PoolId,* jangan gunakan parameter *ComputeNode* di perintah yang sama.
+Jika Anda menggunakan parameter *PoolId* , jangan gunakan parameter *ComputeNode* di perintah yang sama.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

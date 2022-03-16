@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderOperation.md
-ms.openlocfilehash: 85127a29b151ba41f9a0077b0b815d69a9b5f0b2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e37b50b03f525dcc30e911a2f7ba601514083462
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344858"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067095"
 ---
 # Get-AzProviderOperation
 
 ## SYNOPSIS
 Dapatkan operasi untuk penyedia sumber daya Azure yang dapat mengamankan menggunakan Azure RBAC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azprovideroperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzProviderOperation [[-OperationSearchString] <String>] [-DefaultProfile <IA
 ## DESCRIPTION
 Sumber Get-AzProviderOperation operasi yang diekspos oleh penyedia sumber daya Azure.
 Operasi bisa dibuat untuk membuat peran kustom di Azure RBAC.
-Perintah akan mengambil string pencarian operasi (dengan kemungkinan wildcard( ) karakter yang menentukan *detail operasi untuk ditampilkan. Gunakan Get-AzProviderOperation * untuk mendapatkan semua operasi bagi semua penyedia sumber daya Azure. Gunakan Get-AzProviderOperation Microsoft.Compute/* untuk mendapatkan semua operasi penyedia sumber daya Microsoft.Compute.
+Perintah akan mengambil sebagai input string pencarian operasi (dengan karakter wildcard(-karakter) yang menentukan *detail operasi untuk ditampilkan. Gunakan Get-AzProviderOperation * untuk mendapatkan semua operasi bagi semua penyedia sumber daya Azure. Gunakan Get-AzProviderOperation Microsoft.Compute/* untuk mendapatkan semua operasi penyedia sumber daya Microsoft.Compute.
 
 ## EXAMPLES
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

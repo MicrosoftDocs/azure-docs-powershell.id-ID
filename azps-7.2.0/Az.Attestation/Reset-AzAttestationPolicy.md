@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
-ms.openlocfilehash: 6280e845296362495e909147a3835822d771b6df
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1e07d85e878d1ad858b0f0287628aef082763c79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165388"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964283"
 ---
 # Reset-AzAttestationPolicy
 
 ## SYNOPSIS
 Mengatur ulang kebijakan dari penyewa di Azure Attestationn.}
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/reset-azattestationpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Reset-AzAttestationPolicy [-ResourceId] <String> -Tee <String> [-Policy <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Reset-AzAttestationPolicy mereset pengguna yang ditentukan kebijakan attestation dari penyewa di Azure Attestation.
+Cmdlet Reset-AzAttestationPolicy mengatur ulang pengguna yang ditentukan kebijakan attestation dari penyewa di Azure Attestation.
 
 ## EXAMPLES
 

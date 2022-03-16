@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlContainer.md
-ms.openlocfilehash: b224b05b977ec97e2774908049ffde8d00130e8a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 311d740a7592f29de5228e10f8395f0810809543
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165958"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962555"
 ---
 # New-AzCosmosDBSqlContainer
 
 ## SYNOPSIS
 Membuat CosmosDB Sql Container baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlcontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticalStorageTtl
-TTL untuk kontrol Storage (dalam Detik).
+TTL untuk analytical Storage (dalam Detik).
 
 ```yaml
 Type: System.Nullable`1[System.Int32]

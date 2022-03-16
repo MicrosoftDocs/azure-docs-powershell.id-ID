@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
-ms.openlocfilehash: b098ee6bf910ad54d01a3e503c5c60f9526473a8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3a322a3a63a61c9d4de5a7b0d18b0edf214d597f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259339"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082881"
 ---
 # Set-AzSqlElasticPool
 
 ## SYNOPSIS
-Mengubah properti pool database elastis di Azure SQL Database.
+Mengubah properti database elastis dalam Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Perintah ini mengubah properti untuk kolam elastis bernama elastispool01. Perint
 
 ### Contoh 3
 
-Mengubah properti pool database elastis di Azure SQL Database. (otomatisgenerated)
+Mengubah properti database elastis dalam Azure SQL Database. (otomatisgenerated)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceConfigurationId
-Id konfigurasi Pemeliharaan untuk Pool Elastis SQL Baru.
+Id konfigurasi Pemeliharaan untuk Kolam Elastis SQL Elastis.
 
 ```yaml
 Type: System.String

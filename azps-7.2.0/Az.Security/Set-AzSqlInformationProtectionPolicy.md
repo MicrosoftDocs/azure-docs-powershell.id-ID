@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSqlInformationProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSqlInformationProtectionPolicy.md
-ms.openlocfilehash: 14e0d8cc7f433b03669abb36ea899852b0a42c0f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d965e7e9a2a5adf29933e44d0353b484e75e2529
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167813"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083205"
 ---
 # Set-AzSqlInformationProtectionPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan perlindungan informasi SQL penyewa yang efektif.
 
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-azsqlinformationprotectionpolicy) untuk informasi terkini.
+
 ## SYNTAX
 
-### SQL Informasi Informasi (Default)
+### SQL Informasi Kebijakan Proteksi (Default)
 ```
 Set-AzSqlInformationProtectionPolicy -Policy <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-Menentukan jalur file .json yang berisi SQL Kebijakan Perlindungan Informasi.
+Menentukan jalur file .json yang berisi SQL definisi Kebijakan Perlindungan Informasi.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan definisi kebijakan SQL informasi. Anda dapat menentukan jalur file .json atau string format JSON yang menentukan kebijakan.
+Menentukan definisi SQL kebijakan perlindungan informasi. Anda dapat menentukan jalur file .json atau string format JSON yang menentukan kebijakan.
 
 ```yaml
 Type: System.String

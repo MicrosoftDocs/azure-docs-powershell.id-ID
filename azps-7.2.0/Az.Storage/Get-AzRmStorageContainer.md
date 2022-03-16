@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
-ms.openlocfilehash: b38f046655fbc0f2714ac25ca0dc94c87cf09a6a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6625511ad1ed64b709ffba6239de61fe5402e832
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164208"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082557"
 ---
 # Get-AzRmStorageContainer
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Storage wadah blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRmStorageContainer -StorageAccount <PSStorageAccount> [-Name <String>] [-I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRmStorageContainer** mendapatkan atau mencantumkan Storage blob terpisah
+Cmdlet **Get-AzRmStorageContainer** gets or lists Storage blob containers
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>Get-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah yang berbeda.
+Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah.
 
 ### Contoh 4: Wadah blob Storage daftar akun Storage, termasuk wadah yang dihapus.
 ```
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

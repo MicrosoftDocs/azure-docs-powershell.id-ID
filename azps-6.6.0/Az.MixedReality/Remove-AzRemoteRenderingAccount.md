@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Remove-AzRemoteRenderingAccount.md
-ms.openlocfilehash: 616b827f62a52cb50e733b18b9170fc59720001b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e3768b74ac1274f8d859bbe92d6428bfb52a5b2f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382757"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140105147"
 ---
 # Remove-AzRemoteRenderingAccount
 
 ## SYNOPSIS
 Hapus Akun Penyajian Jarak Jauh
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/remove-azremoterenderingaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

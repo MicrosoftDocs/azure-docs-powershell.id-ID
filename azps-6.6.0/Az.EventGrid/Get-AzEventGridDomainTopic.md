@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainTopic.md
-ms.openlocfilehash: 9b988a5d3893498da5c07f3506e0889c60970e84
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f77230fd2aa3ea6779de2a3bb1ed6d20c124d062
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387755"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976559"
 ---
 # Get-AzEventGridDomainTopic
 
 ## SYNOPSIS
 Dapatkan detail topik domain Kisi Acara, atau dapatkan daftar semua topik domain Kisi Acara di bawah domain Kisi Acara tertentu dalam langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomaintopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzEventGridDomainTopic [-NextLink <String>] [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventGridDomainTopic ini mendapatkan detail topik domain Kisi Acara yang ditentukan, atau daftar semua topik domain Kisi Acara di bawah domain tertentu dalam langganan Azure saat ini.
+Cmdlet Get-AzEventGridDomainTopic mendapatkan detail topik domain Kisi Kejadian yang ditentukan, atau daftar semua topik domain Kisi Acara di bawah domain tertentu dalam langganan Azure saat ini.
 Jika nama topik domain disediakan, detail tentang topik domain Kisi Acara dikembalikan.
 Jika nama topik domain tidak tersedia, daftar topik domain di bawah nama domain tertentu akan dikembalikan. Jumlah elemen yang dikembalikan dalam daftar ini dikontrol oleh parameter Top. Jika nilai Teratas tidak ditentukan atau $null, daftar akan berisi semua item topik domain. Jika tidak, Atas akan menunjukkan jumlah maksimum elemen yang akan dikembalikan dalam daftar.
 Jika masih ada topik domain lainnya, nilai di NextLink harus digunakan di panggilan berikutnya untuk mendapatkan halaman berikutnya tentang topik domain.
@@ -47,7 +50,7 @@ Akhirnya, parameter ODataQuery digunakan untuk melakukan pemfilteran untuk hasil
 
 ### Contoh 1
 
-Mendapatkan detail topik domain Kisi Kejadian DomainTopic1 di bawah Domain Kisi Kejadian \` \` \` Domain1 \` di grup sumber daya \` MyResourceGroupName \` .
+Mendapatkan detail topik domain Kisi Kejadian DomainTopic1 \`\` di bawah Domain Kisi \`Kejadian1\` di grup sumber daya \`MyResourceGroupName\`.
 
 ```powershell
 PS C:\> Get-AzEventGridDomainTopic -ResourceGroup MyResourceGroupName -DomainName Domain1 -DomainTopicName DomainTopic1
@@ -62,7 +65,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 2
 
-Mendapatkan detail topik domain Kisi Kejadian DomainTopic1 di bawah Domain Kisi Kejadian Domain1 di grup sumber daya \` \` \` \` \` MyResourceGroupName \` menggunakan opsi ResourceId.
+Mendapatkan detail topik domain \`Kisi Kejadian DomainTopic1\` di bawah Domain Kisi Kejadian Domain1 \`\`\` di grup sumber daya MyResourceGroupName\` menggunakan opsi ResourceId.
 
 ```powershell
 PS C:\> Get-AzEventGridDomainTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/DomainTopic1"
@@ -77,7 +80,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 3
 
-List all the Event Grid domain topics under Event Grid domain \` Domain1 \` in resource group \` MyResourceGroupName \` without pagination (all results are returned in one shot).
+List all the Event Grid domain topics under Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\` without pagination (all results are returned in one shot).
 
 ```powershell
 PS C:\> $result=Get-AzEventGridDomainTopic -ResourceGroup MyResourceGroupName -DomainName Domain1
@@ -110,7 +113,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 4
 
-List all the Event Grid domain topics under Event Grid \` domain1 \` in resource group \` MyResourceGroupName \` without pagination (all results are returned in one shot) using ResourceId option
+List all the Event Grid domain topics under Event Grid domain1 \`\` in resource group \`MyResourceGroupName\` without pagination (all results are returned in one shot) using ResourceId option
 
 ```powershell
 PS C:\> $result=Get-AzEventGridDomainTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1"
@@ -143,7 +146,7 @@ ProvisioningState : Succeeded
 
 ### Contoh 5
 
-List the Event Grid domain topics (if any) under domain \` Domain1 \` in resource group \` MyResourceGroupName \` that satisfies the $odataFilter query 10 domain topics at a time. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman berikutnya tentang topik domain, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridDomainTopic menggunakan hasilnya. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
+List the Event Grid domain topics (if any) under domain \`Domain1\` in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query 10 domain topics at a time. Jika hasil lainnya tersedia, $result. NextLink tidak akan $null. Untuk mendapatkan halaman berikutnya tentang topik domain, pengguna diharapkan untuk menghubungi kembali Get-AzEventGridDomainTopic menggunakan hasil. NextLink diperoleh dari panggilan sebelumnya. Penelepon harus berhenti saat hasil. NextLink menjadi $null.
 
 ```powershell
 PS C:\> $total = 0
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

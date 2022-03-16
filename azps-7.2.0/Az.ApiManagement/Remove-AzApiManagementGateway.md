@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGateway.md
-ms.openlocfilehash: 33895ce6736876659a6e86aa7db9c306e3cce5cf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 178b90e5133ba78cd76aaca0c1fa12849e8cbf84
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263116"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964625"
 ---
 # Remove-AzApiManagementGateway
 
 ## SYNOPSIS
 Melepaskan API dari Gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementgateway) untuk informasi terkini.
 
 ## SYNTAX
 

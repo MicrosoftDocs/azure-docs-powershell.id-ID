@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotDiskEncryptionKey.md
-ms.openlocfilehash: f27703a5bc7f2c774f6331621fd72c0461fa7a3a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d8851771d863bcc31dfa0260dffe3df4100a743b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361814"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078993"
 ---
 # Set-AzSnapshotDiskEncryptionKey
 
 ## SYNOPSIS
 Mengatur properti kunci enkripsi disk pada objek snapshot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azsnapshotdiskencryptionkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ PS C:\> $snapshotconfig = Set-AzSnapshotKeyEncryptionKey -Snapshot $snapshotconf
 PS C:\> New-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -Snapshot $snapshotconfig;
 ```
 
-Perintah pertama membuat objek snapshot kosong lokal dengan ukuran 5GB di Standard_LRS akun penyimpanan.  Sistem ini juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
+Perintah pertama membuat objek snapshot kosong lokal dengan ukuran 5GB di Standard_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
 Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek snapshot.
 Perintah terakhir mengambil objek snapshot dan membuat snapshot dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

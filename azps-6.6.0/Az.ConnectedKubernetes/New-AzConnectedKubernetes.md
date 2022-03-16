@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
-ms.openlocfilehash: 0ee05e202b145b951656d6e7d074a4bddc5c0520
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2d5f31cf8e958e645e36389daac969c17c58e2b8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361529"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078615"
 ---
 # New-AzConnectedKubernetes
 
 ## SYNOPSIS
 API untuk mendaftarkan kluster K8 baru dan dengan demikian membuat sumber daya terlacak di ARM
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedkubernetes/new-azconnectedkubernetes) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

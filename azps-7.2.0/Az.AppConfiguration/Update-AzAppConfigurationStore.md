@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Update-AzAppConfigurationStore.md
-ms.openlocfilehash: 6b6ad9a4583cc43b2e8db5b6819618f4ecffddc4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 89743c36f4bd55fdfdff174b69d30e8312be0d84
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964445"
 ---
 # Update-AzAppConfigurationStore
 
 ## SYNOPSIS
 Memperbarui penyimpanan konfigurasi dengan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/update-azappconfigurationstore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Microsoft Azure langganan Anda.
+ID Microsoft Azure langganan.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/stop-azbat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchJobSchedule.md
-ms.openlocfilehash: 0624c0b5bc21ebfbe6fa3b5ad12535efb75047a0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d0ac3cbb782102dc9b318864e8100d2b17eeed54
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166058"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963545"
 ---
 # Stop-AzBatchJobSchedule
 
 ## SYNOPSIS
 Menghentikan jadwal pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/stop-azbatchjobschedule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ PS C:\>Stop-AzBatchJobSchedule -Id "JobSchedule17" -BatchContext $Context
 ```
 
 Perintah ini menghentikan jadwal pekerjaan yang memiliki ID JobSchedule17.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ## PARAMETERS
 

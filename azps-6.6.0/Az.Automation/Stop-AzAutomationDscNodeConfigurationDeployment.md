@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/stop-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Stop-AzAutomationDscNodeConfigurationDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Stop-AzAutomationDscNodeConfigurationDeployment.md
-ms.openlocfilehash: 7b7229e46bc14ec0ea0a25c193a3da45c4cfeba7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 85cc9ee618df61d9e56642801aac30263a9d581c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343949"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139980321"
 ---
 # Stop-AzAutomationDscNodeConfigurationDeployment
 
 ## SYNOPSIS
 Menghentikan penyebaran konfigurasi Node DSC dalam Otomatisasi. Cara ini hanya menghentikan pekerjaan penyebaran saat ini tetapi tidak menetapkan konfigurasi simpul yang sudah ditetapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/stop-azautomationdscnodeconfigurationdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

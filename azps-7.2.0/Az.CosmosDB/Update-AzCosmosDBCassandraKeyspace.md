@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraKeyspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBCassandraKeyspace.md
-ms.openlocfilehash: 7428c26921c952e77a0aa46973be0528dfc61691
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8c79f75add081993f59625bfbd7eca93b081237c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318157"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962303"
 ---
 # Update-AzCosmosDBCassandraKeyspace
 
 ## SYNOPSIS
 Updates the CosmosDB DeletesDB Keyspace. Menjalankan operasi patch sisi klien dengan membaca Keyspace yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbcassandrakeyspace) untuk informasi terkini.
 
 ## SYNTAX
 

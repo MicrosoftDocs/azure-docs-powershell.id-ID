@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentOperation.md
-ms.openlocfilehash: 4a44d6dce585edb8b54b41c7029626713e82e75b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c2fa3ff508d25bc6cc9c40a24cdbc0a8599fcd16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334998"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067132"
 ---
 # Get-AzDeploymentOperation
 
 ## SYNOPSIS
 Operasi Dapatkan penggunaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdeploymentoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal
 
 Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan saat mengirimkan penyebaran melalui **New-AzDeployment**.
 Ini bisa berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **ListKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
-Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzDeployment dan Debug penyebaran templat ARM
+Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzDeployment Dan Debug penyebaran templat ARM
 
 ## EXAMPLES
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnCustomDomain.md
-ms.openlocfilehash: ad1c09a92769e6134258fd62400d032753139dc7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5f71febdbbaf379ce8dc4632dcdd4415655f5e18
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169457"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963311"
 ---
 # Remove-AzCdnCustomDomain
 
 ## SYNOPSIS
 Menghapus domain kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

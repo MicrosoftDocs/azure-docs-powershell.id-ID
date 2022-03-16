@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsOperation.md
-ms.openlocfilehash: 0e5cb9746012a59ec1d65585f7c418701b899a16
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8ec1b07fcd0e0de02bad5783d1cd2ce9b1a78c43
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274700"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952727"
 ---
 # Get-AzOperationalInsightsOperation
 
 ## SYNOPSIS
 Mencantumkan semua operasi API Rest OperationalInsights yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\> Get-AzOperationalInsightsOperation
 
 Nama : microsoft.operationalinsights/workspaces/features/{resource_name0}/read Provider : MicrosoftOperationalInsights Resource : {resource_name0} Operation : Deskripsi : 
 
-Nama : microsoft.operationalinsights/workspaces/features/{resource_name0}/read Provider : MicrosoftOperationalInsights Resource : {resource_name1} Operation : Deskripsi : 
+Nama: microsoft.operationalinsights/workspaces/features/{resource_name0}/read Provider : MicrosoftOperationalInsights Resource : {resource_name1} Operation : Deskripsi : 
 
 Perintah ini memperoleh semua operasi API Rest OperationalInsights yang tersedia menurut penyewa.
 

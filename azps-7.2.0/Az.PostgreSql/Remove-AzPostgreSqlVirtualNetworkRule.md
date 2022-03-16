@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlVirtualNetworkRule.md
-ms.openlocfilehash: 53ea0dcf72a039a33ee37cf50ce7b714f4be4485
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4472aa670e68b35e56ed933f3631dd275852e574
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313500"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951899"
 ---
 # Remove-AzPostgreSqlVirtualNetworkRule
 
 ## SYNOPSIS
 Menghapus aturan jaringan virtual dengan nama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/remove-azpostgresqlvirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

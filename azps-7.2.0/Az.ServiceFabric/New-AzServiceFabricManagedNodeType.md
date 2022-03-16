@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 7bc1f1c516ec6d75df691a688e35b5d3bc5cc2e6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6a2077267c69ace61e8027c82a6aea9c2f73228b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083025"
 ---
 # New-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
 Buat sumber daya tipe node baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagednodetype) untuk informasi terkini.
 
 ## SYNTAX
 

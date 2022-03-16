@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiagnosticsExtension.md
-ms.openlocfilehash: fc41ebeec6f084df095f3b50d7cab356a8379462
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7a9fddac96bb702ec5b1801a606074e0a07be3bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361649"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078921"
 ---
 # Set-AzVMDiagnosticsExtension
 
 ## SYNOPSIS
 Mengonfigurasi ekstensi diagnostik Azure di komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmdiagnosticsextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ PS C:\> Set-AzVMDiagnosticsExtension -ResourceGroupName "ResourceGroup1" -VMName
 ```
 
 Perintah ini menggunakan nama akun penyimpanan untuk mengaktifkan diagnostik.
-Jika konfigurasi diagnostik tidak menentukan nama akun penyimpanan atau jika Anda ingin mengesampingkan nama akun penyimpanan diagnostik yang ditentukan di file konfigurasi, gunakan parameter *StorageAccountName.*
+Jika konfigurasi diagnostik tidak menentukan nama akun penyimpanan atau jika Anda ingin mengesampingkan nama akun penyimpanan diagnostik yang ditentukan di file konfigurasi, gunakan parameter *StorageAccountName* .
 Akun penyimpanan diagnostik harus berada di langganan yang sama dengan komputer virtual.
 
 ### Contoh 3: Aktifkan diagnostik menggunakan nama dan kunci akun penyimpanan
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -TypeHandlerVersion
 Menentukan versi ekstensi untuk digunakan untuk komputer virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Type.*
+Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Type* .
 
 ```yaml
 Type: System.String
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSourceControl.md
-ms.openlocfilehash: 4e1ec8fd03bec5f562d4132ac9aa028008cebbfd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c018bee831581a6761d034fa553cb626bb83f540
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964031"
 ---
 # New-AzAutomationSourceControl
 
 ## SYNOPSIS
 Membuat kontrol sumber Otomatisasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationsourcecontrol) untuk informasi terkini.
 
 ## SYNTAX
 
