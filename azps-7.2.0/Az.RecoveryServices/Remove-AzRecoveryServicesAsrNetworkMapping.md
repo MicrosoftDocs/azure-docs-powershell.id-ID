@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrNetworkMapping.md
-ms.openlocfilehash: bf19b9f928fe240b0718bbf2946850eb73ba7fc6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 08711934d5e744763aa86436508887876cb55d9e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307500"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265359"
 ---
 # Remove-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
 Menghapus pemetaan jaringan ASR tertentu dari vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrnetworkmapping) untuk informasi terkini.
 
 ## SYNTAX
 

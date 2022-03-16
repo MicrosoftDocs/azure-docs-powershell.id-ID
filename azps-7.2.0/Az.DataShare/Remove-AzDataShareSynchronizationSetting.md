@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSynchronizationSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSynchronizationSetting.md
-ms.openlocfilehash: 5b204e39afaf75b4eb9739fe2f7f86f71c19f4d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ce649f6701c50871ee8158403751fe5f591aa2a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275211"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238265"
 ---
 # Remove-AzDataShareSynchronizationSetting
 
 ## SYNOPSIS
 menghapus pengaturan sinkronisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/remove-azdatasharesynchronizationsetting) untuk informasi terkini.
 
 ## SYNTAX
 

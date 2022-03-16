@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Set-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: e0f68b7b3ab08ffde1f9c6d82d207b1c95774f9c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7c7fc74b44bf2628323d12685e7da2a5d6c330cb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169910"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087039"
 ---
 # Set-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
 Membuat atau memperbarui koleksi bursa pribadi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplace/set-azmarketplaceprivatestorecollection) untuk informasi terkini.
 
 ## SYNTAX
 

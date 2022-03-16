@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryDataset.md
-ms.openlocfilehash: f70fb8a5c276b532bcccf4d0f5367fcdae9a8ae0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4becdedaf9db853dae73ac449e77ff8f47ad243f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140140209"
 ---
 # New-AzDataFactoryDataset
 
 ## SYNOPSIS
 Membuat set data di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/new-azdatafactorydataset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzDataFactoryDataset [-DataFactory] <PSDataFactory> [[-Name] <String>] [-Fil
 ## DESCRIPTION
 Cmdlet **New-AzDataFactoryDataset** membuat set data di Azure Data Factory.
 Jika Anda menentukan nama untuk set data yang sudah ada, cmdlet ini akan meminta konfirmasi Anda sebelum menggantikan set data.
-Jika Anda menentukan parameter *Force,* cmdlet menggantikan set data yang sudah ada tanpa konfirmasi.
+Jika Anda menentukan parameter *Force* , cmdlet menggantikan set data yang sudah ada tanpa konfirmasi.
 Jalankan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
 - Membuat layanan tertaut. 
@@ -73,7 +76,7 @@ Offset         :
 WaitOnExternal : Microsoft.DataFactories.WaitOnExternal
 ```
 
-Perintah pertama membuat set data yang DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset baru.
+Perintah pertama membuat set data yang bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset tertentu.
 Perintah kedua menggunakan notasi titik standar untuk menampilkan detail tentang properti Ketersediaan dari set data.
 
 ### Contoh 3: Menampilkan lokasi untuk set data baru
@@ -87,7 +90,7 @@ LinkedServiceName : LinkedServiceWikipediaClickEvents
 PartitionBy       : {}
 ```
 
-Perintah pertama membuat set data yang DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset baru.
+Perintah pertama membuat set data yang bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset tertentu.
 Perintah kedua menampilkan detail tentang properti Lokasi dari set data.
 
 ### Contoh 4: Menampilkan aturan validasi untuk set data baru
@@ -104,15 +107,15 @@ MinimumRows   :
 MinimumSizeMB : 1
 ```
 
-Perintah pertama membuat set data yang DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset baru.
+Perintah pertama membuat set data yang bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset tertentu.
 Perintah kedua mendapatkan detail tentang aturan validasi untuk set data, lalu meneruskannya ke cmdlet Format-List dengan menggunakan operator pipeline.
 Hal Windows PowerShell cmdlet akan memformat hasil.
-Untuk informasi selengkapnya, ketik `Get-Help Format-List` .
+Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini membuat sebuah set data dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

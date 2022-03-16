@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksVNetPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksVNetPeering.md
-ms.openlocfilehash: 3cedc4c1bb3b0dd42b13aee5a1cb5691c80d437c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: aebc9a6a4e218157b86d81c38e2766547283c8d4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238193"
 ---
 # Update-AzDatabricksVNetPeering
 
 ## SYNOPSIS
 Perbarui vNet Peering untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databricks/update-azdatabricksvnetpeering) untuk informasi terkini.
 
 ## SYNTAX
 

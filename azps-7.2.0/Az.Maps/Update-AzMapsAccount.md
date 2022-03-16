@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
-ms.openlocfilehash: 3722be5cc541a41aad3b0a3cc0a808f54d2c7842
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 743cd33fe2e76f880e106221fc5e8098012794e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278155"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087165"
 ---
 # Update-AzMapsAccount
 
 ## SYNOPSIS
 Memperbarui Akun Peta Anda.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/update-azmapsaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 Perintah ini memperbarui akun Peta Anda.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
-### Contoh 2: Memperbarui Peta Saluran per saluran
+### Contoh 2: Memperbarui Peta saluran
 ```powershell
 PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount03 | Update-AzMapsAccount -Tag @{'key1'='value1'; 'key2'='value2'}
 
@@ -60,7 +63,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini memperbarui akun Peta melalui saluran.
+Perintah ini memperbarui Peta tersebut menurut saluran.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 ## PARAMETERS
@@ -258,7 +261,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

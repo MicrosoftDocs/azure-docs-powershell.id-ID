@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Stop-AzSpringCloudAppDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Stop-AzSpringCloudAppDeployment.md
-ms.openlocfilehash: bed47ea678eb1bf4560fdc2fc6fa7c11353c3105
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ef5b69dc00a50da906827efdad68d9d16bc1e1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314508"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226277"
 ---
 # Stop-AzSpringCloudAppDeployment
 
 ## SYNOPSIS
 Menghentikan penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.springcloud/stop-azspringcloudappdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

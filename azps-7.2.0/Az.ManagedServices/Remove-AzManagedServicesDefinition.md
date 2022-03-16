@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesDefinition.md
-ms.openlocfilehash: b35f84976b374ffc104ba7708f1157580528bf9c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 64f718b792542673e451f816058bb2cfc8e50f3d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310236"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087183"
 ---
 # Remove-AzManagedServicesDefinition
 
 ## SYNOPSIS
 Menghapus definisi registrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/remove-azmanagedservicesdefinition) untuk informasi terkini.
 
 ## SYNTAX
 

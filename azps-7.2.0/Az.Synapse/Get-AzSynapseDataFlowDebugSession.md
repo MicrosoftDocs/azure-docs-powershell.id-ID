@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDataFlowDebugSession.md
-ms.openlocfilehash: 1d9ec125da1ea1358acca0da062cf19f072f2871
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cdaf9793da06f86d29c2c6c22ff804332f208882
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166928"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081783"
 ---
 # Get-AzSynapseDataFlowDebugSession
 
 ## SYNOPSIS
 Dapatkan semua sesi debug aliran data aktif di ruang kerja Synapse yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsedataflowdebugsession) untuk informasi terkini.
 
 ## SYNTAX
 

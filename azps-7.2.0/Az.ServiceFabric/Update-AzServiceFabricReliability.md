@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricReliability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricReliability.md
-ms.openlocfilehash: 7a993fdf6989e655ce02a9c3896845b012691d0c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f38a6e32ec6caffe838274289d081a4e2e2e9f85
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290636"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226523"
 ---
 # Update-AzServiceFabricReliability
 
 ## SYNOPSIS
 Perbarui tingkat keandalan tipe node utama dalam kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricreliability) untuk informasi terkini.
 
 ## SYNTAX
 

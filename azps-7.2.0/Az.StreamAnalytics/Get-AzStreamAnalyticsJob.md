@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 796b4390468ba72915c18ad83f37b1cc9b2c9a60
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5115365374cc41ad4e064ee2abef85905ea6fc5e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081927"
 ---
 # Get-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Dapatkan detail tentang pekerjaan streaming tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsjob) untuk informasi terkini.
 
 ## SYNTAX
 

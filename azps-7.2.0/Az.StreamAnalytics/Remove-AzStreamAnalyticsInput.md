@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Remove-AzStreamAnalyticsInput.md
-ms.openlocfilehash: f463c6f74248f0c3151af953c8cb6777e049a2fb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c2a169c180bf3343c4dfac7d4177efd3834d2a6a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081873"
 ---
 # Remove-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Menghapus input dari pekerjaan streaming.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/remove-azstreamanalyticsinput) untuk informasi terkini.
 
 ## SYNTAX
 

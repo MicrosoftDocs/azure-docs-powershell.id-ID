@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerProfile.md
-ms.openlocfilehash: 040bf8d98538b4726fee0803beb678723433cbb7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8ed9ebee67a4852a7227c44977748a03e430453f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168887"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225431"
 ---
 # Set-AzTrafficManagerProfile
 
 ## SYNOPSIS
-Memperbarui profil Traffic Manager Anda.
+Memperbarui profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/set-aztrafficmanagerprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzTrafficManagerProfile** memperbarui profil Azure Traffic Manager Anda.
+Cmdlet **Set-AzTrafficManagerProfile** memperbarui Azure Traffic Manager profil.
 Cmdlet ini memperbarui pengaturan profil dari objek profil lokal.
 Anda bisa menentukan objek profil baik dengan menggunakan parameter *TrafficManagerProfile* atau dengan menggunakan saluran.
 
@@ -43,7 +46,7 @@ PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfil
 ```
 
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet Get-AzTrafficManagerProfile cmdlet.
-Perintah menyimpan profil secara lokal di $TrafficManagerProfile lokal.
+Perintah menyimpan profil secara lokal di $TrafficManagerProfile baru.
 
 Perintah kedua mengubah profil secara lokal.
 Perintah ini akan menonaktifkan profil.
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
-Cmdlet ini memperbarui Traffic Manager agar sesuai dengan objek lokal ini.
+Cmdlet ini memperbarui Traffic Manager cocok dengan objek lokal ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile

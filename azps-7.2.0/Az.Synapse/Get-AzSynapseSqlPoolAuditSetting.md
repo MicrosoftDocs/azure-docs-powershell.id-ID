@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolAuditSetting.md
-ms.openlocfilehash: 4eb11734a49cb06d222dbef436710715a8c2d76d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2e89185c1774617cf99a3d1748e4275fc82c35d1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313196"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226205"
 ---
 # Get-AzSynapseSqlPoolAuditSetting
 
 ## SYNOPSIS
-Mendapatkan pengaturan pengauditan analitik Azure Synapse SQL sama.
+Mendapatkan pengaturan pengauditan dari azure Synapse Analytics SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,14 +56,14 @@ Cmdlet **Get-AzSynapseSqlPoolAuditSetting** mendapatkan pengaturan audit dari az
 PS C:\> Get-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini mendapatkan pengaturan pengauditan dari kolam SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace.
+Perintah ini mendapatkan pengaturan pengauditan dari SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Get-AzSynapseSqlPoolAuditSetting
 ```
 
-Perintah ini mendapatkan pengaturan pengauditan dari sebuah SQL jaringan yang disebut ContosoSqlPool di ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini mendapatkan pengaturan pengauditan dari sebuah SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

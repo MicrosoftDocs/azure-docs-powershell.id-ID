@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: f79f9b939f5c627705fa3a937e68ba7e173f2434
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 54dc7fe92707ca2a03739f1bd553a5b528b3bd0b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317387"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225539"
 ---
 # Update-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
 Memperbarui database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsekustopooldatabase) untuk informasi terkini.
 
 ## SYNTAX
 

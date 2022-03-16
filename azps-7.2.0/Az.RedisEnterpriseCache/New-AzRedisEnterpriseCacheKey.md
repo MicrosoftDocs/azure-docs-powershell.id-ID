@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCacheKey.md
-ms.openlocfilehash: 765b98d7ecb7554007b7d81e4ae7b42a3ecdebbd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9bc3f79a8873561018e63ab72da8ada8bacfaa99
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265125"
 ---
 # New-AzRedisEnterpriseCacheKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses untuk database Redis Enterprise.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.redisenterprisecache/new-azredisenterprisecachekey) untuk informasi terkini.
 
 ## SYNTAX
 

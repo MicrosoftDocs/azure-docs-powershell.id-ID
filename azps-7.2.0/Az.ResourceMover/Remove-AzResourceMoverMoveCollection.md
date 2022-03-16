@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Remove-AzResourceMoverMoveCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Remove-AzResourceMoverMoveCollection.md
-ms.openlocfilehash: 87996ad56f862be500c49b4711cda186cfb3854b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 617e52aaf70567c19b0b1e316222310a3c769042
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269852"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264909"
 ---
 # Remove-AzResourceMoverMoveCollection
 
 ## SYNOPSIS
 Menghapus kumpulan pindahkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/remove-azresourcemovermovecollection) untuk informasi terkini.
 
 ## SYNTAX
 

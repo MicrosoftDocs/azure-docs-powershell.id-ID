@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareGlobalReachConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareGlobalReachConnection.md
-ms.openlocfilehash: 668bec241736e84f7a02efcc51e8744ef74f457e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dbf652731f01cc10a840493e393cfed8e5cf3508
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278796"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225359"
 ---
 # New-AzVMwareGlobalReachConnection
 
 ## SYNOPSIS
 Membuat atau memperbarui koneksi jangkauan global di awan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/new-azvmwareglobalreachconnection) untuk informasi terkini.
 
 ## SYNTAX
 

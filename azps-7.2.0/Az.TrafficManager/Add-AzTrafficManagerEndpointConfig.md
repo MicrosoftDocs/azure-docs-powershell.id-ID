@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerEndpointConfig.md
-ms.openlocfilehash: 5d81baaa2576c28504c933c94e6f9908d0e700b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 53f7ee04ee9c750ed066cc94ee7c4f482ca950c2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285996"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225458"
 ---
 # Add-AzTrafficManagerEndpointConfig
 
 ## SYNOPSIS
 Menambahkan titik akhir ke objek Traffic Manager profil lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagerendpointconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Add-AzTrafficManagerEndpointConfig -EndpointName <String> -TrafficManagerProfile
 
 ## DESCRIPTION
 Cmdlet **Add-AzTrafficManagerEndpointConfig** menambahkan titik akhir ke objek Azure Traffic Manager profil lokal.
-Anda dapat menggunakan cmdlet New-AzTrafficManagerProfile Get-AzTrafficManagerProfile.
+Anda dapat memperoleh profil menggunakan cmdlet New-AzTrafficManagerProfile Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
 Lakukan perubahan ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile cmdlet.
@@ -48,7 +51,7 @@ PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfil
 ```
 
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
-Perintah menyimpan profil lokal di $TrafficManagerProfile variabel.
+Perintah menyimpan profil lokal di $TrafficManagerProfile lokal.
 
 Perintah kedua menambahkan titik akhir yang bernama contoso ke profil yang disimpan di $TrafficManagerProfile.
 Perintah tersebut menyertakan data konfigurasi untuk titik akhir.
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoMapping
-Daftar kawasan yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Bacalah Traffic Manager ini untuk daftar [lengkap nilai yang diterima](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-geographic-regions).
+Daftar kawasan yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Bacalah Traffic Manager dokumentasi lengkap tentang [nilai yang diterima](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-geographic-regions).
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -191,7 +194,7 @@ Nilai valid adalah bilangan bulat dari 1 sampai 1000.
 Nilai yang lebih rendah menunjukkan prioritas yang lebih tinggi.
 
 Jika menentukan prioritas, Anda harus menentukan prioritas di semua titik akhir dalam profil, dan tidak ada dua titik akhir yang dapat berbagi nilai prioritas yang sama.
-Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil mencantumkan titik akhir.
+Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil akan mencantumkan titik akhir.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile cmdlet.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 Menentukan bobot yang Traffic Manager tetapkan ke titik akhir.
 Nilai valid adalah bilangan bulat dari 1 sampai 1000.
 Nilai defaultnya adalah satu (1).
-Parameter ini hanya digunakan jika profil Traffic Manager dikonfigurasi dengan metode Perutean lalu lintas tertimbang.
+Parameter ini hanya digunakan jika profil Traffic Manager dikonfigurasi dengan metode perutean lalu lintas tertimbang.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]

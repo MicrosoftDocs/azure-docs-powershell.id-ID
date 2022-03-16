@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicySetDefinition.md
-ms.openlocfilehash: 8d4bc60007bb91bee91f501ca01a35c20b16acf2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2c498166cb531d2eb613fb0437192da557fa57d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286251"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264549"
 ---
 # New-AzPolicySetDefinition
 
 ## SYNOPSIS
 Membuat definisi kumpulan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azpolicysetdefinition) untuk informasi terkini.
 
 ## SYNTAX
 

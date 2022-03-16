@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Get-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Get-AzHealthcareApisService.md
-ms.openlocfilehash: 3eddccd75017054c0328d46106d808564c7e9f50
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dddd4d7e7912a0e532c98818bdb5674b571f673c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373041"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140254159"
 ---
 # Get-AzHealthcareApisService
 
 ## SYNOPSIS
 Dapatkan metadata instans layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.healthcareapis/get-azhealthcareapisservice) untuk informasi terkini.
 
 ## SYNTAX
 

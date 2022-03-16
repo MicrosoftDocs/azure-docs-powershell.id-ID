@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devspaces/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevSpaces/DevSpaces/help/New-AzDevSpacesController.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevSpaces/DevSpaces/help/New-AzDevSpacesController.md
-ms.openlocfilehash: 3db1be41d7997d801979223a14c703a4fa290696
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 10dd0919cf4b9f5acb070efa219e7f5f4e5633a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318018"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237811"
 ---
 # New-AzDevSpacesController
 
 ## SYNOPSIS
 Buat pengontrol Azure DevSpaces baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.devspaces/new-azdevspacescontroller) untuk informasi terkini.
 
 ## SYNTAX
 

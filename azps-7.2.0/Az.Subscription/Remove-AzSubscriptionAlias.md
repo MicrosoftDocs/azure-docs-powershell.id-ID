@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.subscription/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Remove-AzSubscriptionAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Subscription/Subscription/help/Remove-AzSubscriptionAlias.md
-ms.openlocfilehash: 02a633dfe2dcaf73c381e41623150664e70a7ce2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ef5014a9a60054779f6662ecff8a9be7c794670b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294907"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081891"
 ---
 # Remove-AzSubscriptionAlias
 
 ## SYNOPSIS
 Menghapus alias langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.subscription/remove-azsubscriptionalias) untuk informasi terkini.
 
 ## SYNTAX
 

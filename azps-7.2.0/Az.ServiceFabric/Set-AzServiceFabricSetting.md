@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricSetting.md
-ms.openlocfilehash: 8b9c80c53b04949165fa79afbdc281448592d00a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8d4dfaa993ce6b2cd8b4c2db2e5f2a910aa34a9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226601"
 ---
 # Set-AzServiceFabricSetting
 
 ## SYNOPSIS
-Tambahkan atau perbarui satu atau beberapa Service Fabric yang sama ke kluster.
+Tambahkan atau perbarui satu atau Service Fabric yang sama ke kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricsetting) untuk informasi terkini.
 
 ## SYNTAX
 

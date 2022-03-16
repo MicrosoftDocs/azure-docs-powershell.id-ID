@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubKey.md
-ms.openlocfilehash: f5cc6fba906233071018fb32440cf4029c16e9a1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f6654f84369cb001ba8ae4211f2d89f401bcab76
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163595"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226439"
 ---
 # New-AzWebPubSubKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses untuk sumber daya.
 PrimaryKey dan SecondaryKey tidak bisa digenerasi pada waktu yang sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/new-azwebpubsubkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

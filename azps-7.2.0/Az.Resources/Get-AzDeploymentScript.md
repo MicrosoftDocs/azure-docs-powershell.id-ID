@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
-ms.openlocfilehash: c70596346aaa31df8c9f7b13d7f9d250ea55d092
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cc973726f6af875712996f88132d3e318624694c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267691"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264819"
 ---
 # Get-AzDeploymentScript
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan skrip penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdeploymentscript) untuk informasi terkini.
 
 ## SYNTAX
 

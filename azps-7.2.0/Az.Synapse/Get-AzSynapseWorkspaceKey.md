@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseWorkspaceKey.md
-ms.openlocfilehash: a457a139e1c202e2dd0dec234d2aa7aeda9c9290
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 157b5d76af8b889ad96121cffa348393f5156823
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304204"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081657"
 ---
 # Get-AzSynapseWorkspaceKey
 
 ## SYNOPSIS
 Mendapatkan kunci ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseworkspacekey) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrPolicy.md
-ms.openlocfilehash: 10a7533590ea9180798297b4fdc29320f12af771
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b883e9f58870218efce2f6cf5af14ad331b175b5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312187"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265341"
 ---
 # Remove-AzRecoveryServicesAsrPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan replikasi ASR yang ditentukan dari vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

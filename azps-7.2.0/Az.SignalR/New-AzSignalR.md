@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzSignalR.md
-ms.openlocfilehash: 74f30f8f9572820e2d1ed2a7ab193ed328b8109d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 738c9cca1677482673824fdfb17974617b4f36de
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288459"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226421"
 ---
 # New-AzSignalR
 
 ## SYNOPSIS
 Membuat layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/new-azsignalr) untuk informasi terkini.
 
 ## SYNTAX
 

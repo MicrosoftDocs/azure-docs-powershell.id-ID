@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/resume-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Resume-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Resume-AzSynapseSqlPool.md
-ms.openlocfilehash: 2b016701bd33ef2c276e8b8a8dfab1685a3d8aca
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e995402073b5fd97818f35889955e86ee583283c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225899"
 ---
 # Resume-AzSynapseSqlPool
 
 ## SYNOPSIS
-Melanjutkan Analitik Synapse dalam SQL baru.
+Melanjutkan Analitik Synapse dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/resume-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Resume-AzSynapseSqlPool -ResourceId <String> [-PassThru] [-AsJob] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Cmdlet **Resume-AzSynapseSqlPool** melanjutkan cmdlet Azure Synapse Analytics SQL baru.
+Cmdlet **Resume-AzSynapseSqlPool** melanjutkan azure Synapse Analytics SQL pool.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Resume-AzSynapseSqlPool** melanjutkan cmdlet Azure Synapse Analytics SQ
 PS C:\> Resume-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini melanjutkan penangguhan analitik Azure Synapse Analytics SQL sama.
+Perintah ini melanjutkan penangguhan Analitik Azure Synapse SQL baru.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

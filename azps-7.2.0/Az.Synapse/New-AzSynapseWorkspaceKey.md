@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspaceKey.md
-ms.openlocfilehash: 58c6913d0ada4a5a1ce71b77edd7957fc277ee0c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5bfff740088e170b4cbb65f81150013af6ed72a8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226007"
 ---
 # New-AzSynapseWorkspaceKey
 
 ## SYNOPSIS
 Membuat kunci ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapseworkspacekey) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationAssessment.md
-ms.openlocfilehash: aade402d810ed24c1c820cec805e94fbbed0d4e7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 02a23a78f053ac147144ad581f01f0363778c8d7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290236"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238589"
 ---
 # Get-AzDataMigrationAssessment
 
 ## SYNOPSIS
-Mulai penilaian SQL Server contoh
+Mulai penilaian SQL Server instans
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationassessment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,11 +34,11 @@ Get-AzDataMigrationAssessment -ConfigFilePath <String> [-PassThru] [<CommonParam
 ```
 
 ## DESCRIPTION
-Mulai penilaian SQL Server contoh
+Mulai penilaian SQL Server instans
 
 ## EXAMPLES
 
-### Contoh 1: Jalankan SQL Penilaian penggunaan SQL Server menggunakan string koneksi
+### Contoh 1: Jalankan SQL Penilaian tentang penggunaan SQL Server menggunakan string koneksi
 ```powershell
 PS C:\> Get-AzDataMigrationAssessment -ConnectionString "Data Source=LabServer.database.net;Initial Catalog=master;Integrated Security=False;User Id=User;Password=password" -OutputFolder "C:\AssessmentOutput" -Overwrite
 
@@ -61,7 +64,7 @@ Assessment report saved to C:\Users\user\AppData\Local\Microsoft\SqlAssessment\S
 Event and Error Logs Folder Path: C:\Users\user\AppData\Local\Microsoft\SqlAssessment\Logs
 ```
 
-Perintah ini menjalankan SQL Assessment on given SQL Server using assessment config file.
+Perintah ini menjalankan SQL Assessment pada aplikasi SQL Server menggunakan file assessment config.
 
 ## PARAMETERS
 

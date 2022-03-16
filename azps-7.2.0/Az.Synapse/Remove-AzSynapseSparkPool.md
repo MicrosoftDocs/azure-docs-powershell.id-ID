@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkPool.md
-ms.openlocfilehash: ab7a06a3096089b2f7bc3770ec227ea3481f2763
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a3af7189543f01ea1580dffdb403ddea7d9ed0a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313132"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226025"
 ---
 # Remove-AzSynapseSparkPool
 
 ## SYNOPSIS
 Menghapus pool Apache Spark dalam Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkpool) untuk informasi terkini.
 
 ## SYNTAX
 

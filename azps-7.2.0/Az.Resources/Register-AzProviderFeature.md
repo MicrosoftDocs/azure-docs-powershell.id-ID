@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/regist
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzProviderFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzProviderFeature.md
-ms.openlocfilehash: c044d421b510b424c9e245a2956025344660786d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f76a55cbd892fc9a3c8d29ad28a0fe02d2c522d7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264459"
 ---
 # Register-AzProviderFeature
 
 ## SYNOPSIS
 Mendaftarkan fitur penyedia Azure di akun Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/register-azproviderfeature) untuk informasi terkini.
 
 ## SYNTAX
 

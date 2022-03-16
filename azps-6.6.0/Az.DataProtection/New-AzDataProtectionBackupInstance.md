@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 8f2ff951e93ebd4541c220cc1292c02e1766273d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 83c06117ab2eeeeaa1fbcfea3f37304f33976676
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337070"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140139219"
 ---
 # New-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
 Mengonfigurasi Pencadangan untuk sumber daya Azure yang didukung
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Perintah ketiga memulai rahasiaURI untuk autentikasi penyimpanan rahasia.
 
 Perintah kelima mendapatkan kebijakan untuk database mana yang akan dilindungi.
 Perintah keenam memulai objek permintaan instans cadangan.
-Perintah terakhir mengonfigurasi cadangan perangkat yang $dataSourceId pencadangan di vault cadangan.
+Perintah terakhir mengonfigurasi cadangan perangkat yang $dataSourceId di vault cadangan.
 
 ## PARAMETERS
 
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -225,7 +228,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-BACKUPINSTANCE <IBackupInstanceResource> : Backup instance request object which will be used to configure backup
+BACKUPINSTANCE <IBackupInstanceResource>: Backup instance request object which will be used to configure backup
   - `[Property <IBackupInstance>]`: Properti BackupInstanceResource
     - `DataSourceInfo <IDatasource>`: Mendapatkan atau mengatur informasi sumber data.
       - `ResourceId <String>`: ID ARM penuh dari sumber daya. Untuk sumber daya Azure, ini adalah ID ARM. For non azure resources, this will be the ID created by backup service via Fabric/Vault.

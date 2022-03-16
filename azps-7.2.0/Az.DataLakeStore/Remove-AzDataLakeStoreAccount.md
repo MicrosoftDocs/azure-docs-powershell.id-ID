@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreAccount.md
-ms.openlocfilehash: 831a96659211a3b6474caf286282e7e8d933553e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7b269d98dba91fe36f0b4d56b8d769d924f2b2c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302620"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238769"
 ---
 # Remove-AzDataLakeStoreAccount
 
 ## SYNOPSIS
 Menghapus akun Data Lake Store secara permanen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoreaccount) untuk informasi terkini.
 
 ## SYNTAX
 

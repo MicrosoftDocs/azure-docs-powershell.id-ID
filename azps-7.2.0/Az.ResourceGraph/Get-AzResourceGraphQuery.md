@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Get-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Get-AzResourceGraphQuery.md
-ms.openlocfilehash: a1630fb888d64dfc75b229405f43ff60cf76bb65
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c9f7d71f81d91c875bb47119d5dbf0ba51dcbacd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285211"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264954"
 ---
 # Get-AzResourceGraphQuery
 
 ## SYNOPSIS
 Dapatkan satu kueri grafik oleh resourceName-nya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcegraph/get-azresourcegraphquery) untuk informasi terkini.
 
 ## SYNTAX
 

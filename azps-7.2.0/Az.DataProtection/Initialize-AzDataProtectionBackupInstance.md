@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 6d9efc75a6ab3ce5cc00f06e39137ce5a3475cea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fbbac2466a27da3aa93cf16fb7e35aaf1ed39dc6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165908"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238445"
 ---
 # Initialize-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
 Memulai objek Permintaan instans Cadangan untuk mengonfigurasi cadangan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/initialize-azdataprotectionbackupinstance) untuk informasi terkini.
 
 ## SYNTAX
 

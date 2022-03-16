@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceTopology.md
-ms.openlocfilehash: 59e366f4bfd9ab388d135767177d1b461e548a2f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e10c4d69e46831cfd88288557c0bfa9e9c6764e0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281275"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238139"
 ---
 # Remove-AzDeploymentManagerServiceTopology
 
 ## SYNOPSIS
 Menghapus topologi layanan. Semua layanan yang dibuat di bawah topologi layanan harus dihapus sebelum menghapus topologi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerservicetopology) untuk informasi terkini.
 
 ## SYNTAX
 

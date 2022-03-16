@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAddonVrPropertiesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareAddonVrPropertiesObject.md
-ms.openlocfilehash: c37a8afa1dd8f8e8785045ccb76fa16bbbb8dcd2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bb51db30b38b2d0d48fa5a8c3b04defca6f7c5e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225413"
 ---
 # New-AzVMwareAddonVrPropertiesObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk AddonVrProperties
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/new-azvmwareaddonvrpropertiesobject) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemExpiry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemExpiry.md
-ms.openlocfilehash: 91f34614eac6388073478953a0b99d0e43328389
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ca6b13760fc4b9cc0ebff9f2c09defa5df1156e2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282364"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238661"
 ---
 # Set-AzDataLakeStoreItemExpiry
 
 ## SYNOPSIS
 Mengatur atau menghapus waktu kedaluwarsa untuk file di akun Azure Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemexpiry) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Cmdlet **Set-AzDataLakeStoreItemExpiry** atau menghapus waktu kedaluwarsa untuk 
 PS C:\> Set-AzDataLakeStoreItemExpiry -AccountName "ContosoADL" -Path /myfile.txt -Expiration [DateTimeOffset]::Now.AddHours(2)
 ```
 
-Menetapkan kedaluwarsa pada file myfile.txt akun ContosoADL menjadi dua jam dari sekarang.
+Menetapkan kedaluwarsa pada file myfile.txt di akun ContosoADL menjadi dua jam dari sekarang.
 Hal ini akan menyebabkan file kedaluwarsa (ditandai untuk dihapus) dalam dua jam.
 
 ### Contoh 2: Menghapus kedaluwarsa pada file
@@ -60,8 +63,8 @@ PS C:\> Set-AdlStoreItemExpiry -Account "ContosoADL" -path /myfile.txt -Relative
 PS C:\> Set-AdlStoreItemExpiry -Account "ContosoADL" -path /myfile.txt -RelativeFileExpiryOption RelativeToCreationDate -RelativeTime 240000
 ```
 
-Perintah pertama mengatur waktu kedaluwarsa file /2 myfile.txt 40 detik dibandingkan waktu saat ini di server.
-Perintah kedua mengatur waktu kedaluwarsa file /2 myfile.txt 40 detik dibandingkan waktu pembuatan di server.
+Perintah pertama mengatur waktu kedaluwarsa file myfile.txt /240 detik dibandingkan waktu saat ini di server.
+Perintah kedua mengatur waktu kedaluwarsa file myfile.txt /240 detik dibandingkan waktu pembuatan di server.
 
 ## PARAMETERS
 

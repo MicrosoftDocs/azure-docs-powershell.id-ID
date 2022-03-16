@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemOwner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemOwner.md
-ms.openlocfilehash: 0e378765e16a9b31dd4e6d80365ed2a6362844df
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 190f40bca91e7df9a3d2c1b138ce9f76b6ef3a90
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299179"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238787"
 ---
 # Get-AzDataLakeStoreItemOwner
 
 ## SYNOPSIS
 Dapatkan pemilik file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemowner) untuk informasi terkini.
 
 ## SYNTAX
 

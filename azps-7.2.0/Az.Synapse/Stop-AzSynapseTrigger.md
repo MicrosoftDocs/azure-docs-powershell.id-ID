@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseTrigger.md
-ms.openlocfilehash: 0ac1d8188149c61c6acf7dd533dfda9a91a19fcb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 602d263fc84bf4240adb459c51a3d2895ea809b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164985"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225665"
 ---
 # Stop-AzSynapseTrigger
 
 ## SYNOPSIS
 Menghentikan pemicu di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/stop-azsynapsetrigger) untuk informasi terkini.
 
 ## SYNTAX
 

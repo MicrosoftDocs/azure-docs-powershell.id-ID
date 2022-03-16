@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Remove-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Remove-AzMaintenanceConfiguration.md
-ms.openlocfilehash: e1b2f84344671db9ed6cb710ef6418695ec17a56
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 797e069c446ef4290cc676581ee6813d80cd7d71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284316"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087255"
 ---
 # Remove-AzMaintenanceConfiguration
 
 ## SYNOPSIS
 Menghapus rekaman Konfigurasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/remove-azmaintenanceconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

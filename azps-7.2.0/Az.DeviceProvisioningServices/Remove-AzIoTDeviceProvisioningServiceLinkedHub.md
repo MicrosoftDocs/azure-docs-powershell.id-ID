@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Remove-AzIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: f9e0088587b132c5dbdf62a39a5f635b9c99cb16
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d8c8065a90bdc563f9bb4d1c706d1ad8d0e75ecd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170030"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237689"
 ---
 # Remove-AzIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
 Menghapus hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/remove-aziotdeviceprovisioningservicelinkedhub) untuk informasi terkini.
 
 ## SYNTAX
 

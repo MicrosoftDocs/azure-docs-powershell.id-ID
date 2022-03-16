@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroup.md
-ms.openlocfilehash: b91d5170812d10f7512787c4d258555ee996c334
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b367d486040bf7d823900b86b91ad7dcad12cf7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136157675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140141325"
 ---
 # New-AzContainerGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui grup wadah dengan konfigurasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -561,7 +564,7 @@ Accept wildcard characters: False
 
 ### -RestartPolicy
 Mulai ulang kebijakan untuk semua wadah dalam grup wadah.
-- `Always` Selalu mulai ulang- `OnFailure` Mulai ulang saat kegagalan- Jangan pernah mulai `Never` ulang
+- `Always` Selalu mulai ulang- `OnFailure` Mulai ulang saat kegagalan- Jangan `Never` pernah mulai ulang
 
 ```yaml
 Type: System.String
@@ -669,7 +672,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

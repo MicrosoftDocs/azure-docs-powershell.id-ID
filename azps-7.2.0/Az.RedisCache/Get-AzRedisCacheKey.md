@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCacheKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCacheKey.md
-ms.openlocfilehash: bb78d13ec62fcacc4a25355158a4add72e4a0783
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c4608ca08a52c2e81b6db118eecd4d25bbab445f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165648"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265179"
 ---
 # Get-AzRedisCacheKey
 
 ## SYNOPSIS
 Mendapatkan kunci akses untuk Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/get-azrediscachekey) untuk informasi terkini.
 
 ## SYNTAX
 

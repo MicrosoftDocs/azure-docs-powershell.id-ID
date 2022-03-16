@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/add-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
-ms.openlocfilehash: 61fc7a7c4de623ddad4eb942ab3417010dc71d20
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 926a9e4057debbc053d401ecfca4a994896694e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264444"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081819"
 ---
 # Add-AzSynapseTriggerSubscription
 
 ## SYNOPSIS
 Berlangganan pemicu kejadian pada kejadian layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/add-azsynapsetriggersubscription) untuk informasi terkini.
 
 ## SYNTAX
 

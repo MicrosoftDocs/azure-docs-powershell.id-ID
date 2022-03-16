@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseManagedPrivateEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseManagedPrivateEndpoint.md
-ms.openlocfilehash: 0354db6d70e8549f8d8edd441edd0ddfa08d2ee5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4ec07f3b659de6026e35ccf7e0d1df6b8bc7889c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289436"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081423"
 ---
 # Remove-AzSynapseManagedPrivateEndpoint
 
 ## SYNOPSIS
 Menghapus titik akhir privat terkelola dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsemanagedprivateendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

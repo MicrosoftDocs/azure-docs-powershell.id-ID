@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricUpgradeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricUpgradeType.md
-ms.openlocfilehash: 019bf7d602c3413d612e066b6c2fde6a0da75e27
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d6a5be79c8a26be7e5458d9828250d49e374666
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168977"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226515"
 ---
 # Set-AzServiceFabricUpgradeType
 
 ## SYNOPSIS
 Ubah Service Fabric pemutakhiran kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricupgradetype) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Set-AzServiceFabricUpgradeType [-ResourceGroupName] <String> [-Name] <String> -U
 ```
 
 ## DESCRIPTION
-Gunakan **Set-AzServiceFabricUpgradeType** untuk mengatur tipe pemutakhiran ke otomatis atau manual dengan versi Service Fabric spesifik.
+Gunakan **Set-AzServiceFabricUpgradeType** untuk mengatur tipe pemutakhiran ke otomatis atau manual dengan versi Service Fabric kode spesifik.
 
 ## EXAMPLES
 

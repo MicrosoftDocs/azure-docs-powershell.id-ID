@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentOperation.md
-ms.openlocfilehash: 650eaa1ad0641783058a4ceea29289866a327328
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ebb3dbe19de4d10a10a78b2a61079e41f5d504d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164418"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264675"
 ---
 # Get-AzTenantDeploymentOperation
 
 ## SYNOPSIS
 Mendapatkan operasi penggunaan untuk penggunaan di lingkup penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-aztenantdeploymentoperation) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloudVcenterPassword.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloudVcenterPassword.md
-ms.openlocfilehash: 55184c66741c10a2a92b18ac4d44f8bde09c0110
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 76ab410001e4b8b44f22efc2183d5dd772837d13
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169530"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225341"
 ---
 # New-AzVMwarePrivateCloudVcenterPassword
 
 ## SYNOPSIS
 Memutar kata sandi vCenter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/new-azvmwareprivatecloudvcenterpassword) untuk informasi terkini.
 
 ## SYNTAX
 

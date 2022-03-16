@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSqlService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSqlService.md
-ms.openlocfilehash: 776f9809ef0d936b35c06c9d67aed0dcee1979bd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 674b84595a3c4747219f7c095b3b8ce556e70bb0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293372"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238517"
 ---
 # New-AzDataMigrationSqlService
 
 ## SYNOPSIS
 Membuat atau Memperbarui Layanan Migrasi Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationsqlservice) untuk informasi terkini.
 
 ## SYNTAX
 

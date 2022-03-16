@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Export-AzSynapseKqlScript.md
-ms.openlocfilehash: 477e684ba647f74f322e804a975d7441cf18d875
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 17f1596dbf2a91426e36fe9c8d6b0141038b6203
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166235"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081765"
 ---
 # Export-AzSynapseKqlScript
 
 ## SYNOPSIS
 Mengekspor skrip KQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/export-azsynapsekqlscript) untuk informasi terkini.
 
 ## SYNTAX
 

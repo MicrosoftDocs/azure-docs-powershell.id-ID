@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration.md
-ms.openlocfilehash: 777921a5664c90e28a504e1dba64b6dff0aef2d6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6b6244f74d9084e24e2905734fb7b8ab9bfaa4a1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270763"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081459"
 ---
 # Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi database lampiran dengan nama yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopoolattacheddatabaseconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

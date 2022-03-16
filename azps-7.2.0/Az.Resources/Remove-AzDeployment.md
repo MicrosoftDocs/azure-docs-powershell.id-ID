@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzDeployment.md
-ms.openlocfilehash: d0efad6066616d9ce42cccb6fb8b740d4a6b1052
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 25f08822b024d561750697644846ed9787161cc2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303259"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140264315"
 ---
 # Remove-AzDeployment
 
 ## SYNOPSIS
 Menghapus penyebaran dan setiap operasi terkait
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

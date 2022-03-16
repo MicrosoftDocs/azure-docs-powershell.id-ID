@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareAccount.md
-ms.openlocfilehash: d7c5139cbce6be702acbde2e6797a22eee7834ea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f0e89b656666d2abead8a540a827afc850e56fc3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269307"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238319"
 ---
 # New-AzDataShareAccount
 
 ## SYNOPSIS
 Membuat akun berbagi data baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/new-azdatashareaccount) untuk informasi terkini.
 
 ## SYNTAX
 

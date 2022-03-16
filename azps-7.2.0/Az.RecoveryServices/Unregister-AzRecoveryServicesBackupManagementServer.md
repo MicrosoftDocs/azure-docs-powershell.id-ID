@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Unregister-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: ce1ac4c2efc37b085164cd81b2c175f1f9ea18bc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e004463fe6e59d701102a6fdb5ddf64e233e3d22
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265233"
 ---
 # Unregister-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
 Pisahkan pendaftaran server SCDPM atau Server cadangan dari vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/unregister-azrecoveryservicesbackupmanagementserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ PS C:\>$BMS = Get-AzRecoveryServicesBackupManagementServer -Name "dpmserver01.co
 PS C:\> Unregister-AzRecoveryServicesBackupManagementServer -AzBackupManagementServer $BMS
 ```
 
-Perintah pertama mendapatkan server manajemen Pencadangan bernama dpmserver01.contoso.com, lalu menyimpannya dalam variabel $BMS tersebut.
+Perintah pertama mendapatkan server manajemen Pencadangan bernama dpmserver01.contoso.com, lalu menyimpannya dalam $BMS sumber.
 Perintah kedua membatalkan pendaftaran server SCDPM dari vault.
 
 ### Contoh 2

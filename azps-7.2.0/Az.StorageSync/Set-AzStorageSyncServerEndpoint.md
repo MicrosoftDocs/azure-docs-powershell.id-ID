@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Set-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: 129b206ffa5c6be56bd4b0bfe0fb64849c43a6ee
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 572e35fdfb503fa1011e513b54774710a41d19ff
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164188"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081999"
 ---
 # Set-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini memungkinkan perubahan pada parameter titik akhir server yang dapat disesuaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/set-azstoragesyncserverendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseKustoPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseKustoPool.md
-ms.openlocfilehash: d1eee4dbc536281da1773c1007e489e9f32bcae3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 676794993a08939ab9164b6aff9e728be07e7788
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164165"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225647"
 ---
 # Stop-AzSynapseKustoPool
 
 ## SYNOPSIS
 Menghentikan kolam kusto.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/stop-azsynapsekustopool) untuk informasi terkini.
 
 ## SYNTAX
 

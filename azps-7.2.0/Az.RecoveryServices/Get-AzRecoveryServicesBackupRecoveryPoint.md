@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryPoint.md
-ms.openlocfilehash: aa0d9c000064b894a6065a30a191fd5a517facfb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 658dc09d58b74fab4988047f9f154963f85ad396
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265467"
 ---
 # Get-AzRecoveryServicesBackupRecoveryPoint
 
 ## SYNOPSIS
 
 Dapatkan poin pemulihan untuk item yang dicadangkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverypoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate $startDate -E
 Perintah pertama mendapatkan objek vault berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $startDate variabel.
 Perintah ketiga mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $endDate.
 Perintah keempat mendapatkan item cadangan berdasarkan backupManagementType dan workloadType, vaultId lalu menyimpannya di $item baru.
-Perintah terakhir mendapatkan array poin pemulihan untuk item di $backupItem yang siap dipindahkan ke tingkatan VaultArchive lalu menyimpannya dalam variabel $rp baru.
+Perintah terakhir mendapatkan array poin pemulihan untuk item dalam $backupItem yang siap untuk dipindahkan ke tingkatan VaultArchive lalu menyimpannya dalam $rp baru.
 
 ### Contoh 3: Dapatkan poin pemulihan di tier tertentu
 
@@ -97,7 +100,7 @@ PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate $startDate -E
 Perintah pertama mendapatkan objek vault berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $startDate variabel.
 Perintah ketiga mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $endDate.
 Perintah keempat mendapatkan item cadangan berdasarkan backupManagementType dan workloadType, vaultId lalu menyimpannya di $item baru.
-Perintah terakhir mendapatkan array poin pemulihan untuk item di $backupItem yang siap dipindahkan ke tingkatan VaultArchive lalu menyimpannya dalam variabel $rp baru. 
+Perintah terakhir mendapatkan array poin pemulihan untuk item dalam $backupItem yang siap untuk dipindahkan ke tingkatan VaultArchive lalu menyimpannya dalam $rp baru. 
 
 ## PARAMETERS
 

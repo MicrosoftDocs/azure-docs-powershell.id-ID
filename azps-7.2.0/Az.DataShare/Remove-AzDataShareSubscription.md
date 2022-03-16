@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSubscription.md
-ms.openlocfilehash: ca98b92578625e0fcf7ab3830c666757b5f68b08
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f6b06bc2bc8fb38f2907ccae471a535bf510b107
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163238"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238283"
 ---
 # Remove-AzDataShareSubscription
 
 ## SYNOPSIS
 menghapus langganan bersama
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/remove-azdatasharesubscription) untuk informasi terkini.
 
 ## SYNTAX
 

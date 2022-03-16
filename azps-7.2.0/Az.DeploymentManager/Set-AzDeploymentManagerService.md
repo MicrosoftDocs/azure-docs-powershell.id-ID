@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Set-AzDeploymentManagerService.md
-ms.openlocfilehash: 38cb860c54b9682c750e68fcbee8db33338ef0c8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6420d5eab0b1e6049127d0174a7af5d424bf32ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265036"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238085"
 ---
 # Set-AzDeploymentManagerService
 
 ## SYNOPSIS
 Memperbarui layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/set-azdeploymentmanagerservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet mengembalikan objek layanan yang diperbarui.
 PS C:\> Set-AzDeploymentManagerService -InputObject $serviceObject
 ```
 
-Perintah ini memperbarui layanan dengan nama, nama topologi layanan, dan ResourceGroup sesuai dengan nama, properti ServiceTopologyName dan ResourceGroupName dari $serviceObject, masing-masing.
+Perintah ini memperbarui layanan dengan nama, nama topologi layanan, dan ResourceGroup sesuai dengan properti Nama, ServiceTopologyName dan ResourceGroupName $serviceObject, secara berurutan.
 Layanan akan diperbarui menjadi properti yang diatur dalam $serviceObject.
 
 ## PARAMETERS

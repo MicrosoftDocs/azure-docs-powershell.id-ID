@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: a39a784f179a394440b37a5cd74436cf66940473
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 95d4ccd643418036c714f941f182e2104b93ca44
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282779"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226187"
 ---
 # Get-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
 Dapatkan tipe informasi saat ini dan label sensitivitas kolom dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolsensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Cmdlet Get-AzSynapseSqlPoolSensitivityClassification akan mengembalikan tipe inf
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tipe informasi terkini dan label sensitivitas layanan Azure Synapse SQL sama.
+### Contoh 1: Dapatkan tipe informasi terkini dan label sensitivitas data Azure Synapse SQL sama.
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool
 
@@ -78,7 +81,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan tipe informasi terkini dan label sensitivitas data Azure Synapse SQL dengan Piping.
+### Contoh 2: Dapatkan tipe informasi saat ini dan label sensitivitas dari SQL Azure Synapse dengan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Get-AzSynapseSqlPoolSensitivityClassification
 
@@ -106,7 +109,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 3: Dapatkan label sensitivitas dan tipe informasi saat ini dari kolom tertentu dari grup SQL Azure Synapse.
+### Contoh 3: Dapatkan label sensitivitas dan tipe informasi saat ini dari kolom tertentu dari SQL Azure Synapse.
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName dbo -TableName EMailLog -ColumnName BounceEmailSubject
 
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
