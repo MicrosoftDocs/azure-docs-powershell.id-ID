@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
-ms.openlocfilehash: fb545007e77487b32bc634ab9d47d9a3a11b0d75
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 83af5117ecdf695c51164df76431b5df14625851
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082971"
 ---
 # Set-AzSqlDatabase
 
 ## SYNOPSIS
 Mengatur properti untuk database, atau memindahkan database yang sudah ada ke dalam kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 
 ### -LicenseType
 Tipe lisensi untuk database Azure Sql. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi sudah ada diterapkan. Harga database akan didiskon untuk pemilik SQL Server yang sudah ada.
+- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga database akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
 - LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga database akan menyertakan biaya SQL Server baru.
 
 ```yaml
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadScale
-Jika diaktifkan, koneksi yang memiliki maksud aplikasi yang diatur ke baca saja dalam string koneksinya mungkin dirutekan ke replika sekunder saja. Properti ini hanya dapat diatur untuk database Premium Dan Kritis Bisnis.
+Jika diaktifkan, koneksi yang memiliki maksud aplikasi yang diatur ke baca saja dalam string koneksinya mungkin dirutekan ke replika sekunder saja. Properti ini hanya dapat diatur untuk database Premium dan Kritis Bisnis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.DatabaseReadScale

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
-ms.openlocfilehash: 22535f52409d98c054d4ea4b5bd2f222c75352ca
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d6ded7ea37c24b47fd033dad6506d1e1db9c6b81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139974255"
 ---
 # New-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memulai replikasi untuk server yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/new-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ New-AzMigrateServerReplication -DiskToInclude <IVMwareCbtDiskInput[]> -InputObje
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzMigrateServerReplication memulai replikasi untuk server ditemukan tertentu di proyek Azure Migrate.
+Cmdlet New-AzMigrateServerReplication memulai replikasi untuk server tertentu yang ditemukan dalam proyek Azure Migrate.
 
 ## EXAMPLES
 
@@ -506,7 +509,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -523,7 +526,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DISKTAG <IVMwareCbtEnableMigrationInputTargetDiskTags> : Menentukan tag yang akan digunakan untuk pembuatan disk.
+DISKTAG <IVMwareCbtEnableMigrationInputTargetDiskTags>: Menentukan tag yang akan digunakan untuk pembuatan disk.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 DISKTOINCLUDE <IVMwareCbtDiskInput[]>: Menentukan disk pada server sumber yang akan disertakan untuk replikasi.
@@ -534,13 +537,13 @@ DISKTOINCLUDE <IVMwareCbtDiskInput[]>: Menentukan disk pada server sumber yang a
   - `[DiskEncryptionSetId <String>]`: DiskEncryptionSet ARM Id.
   - `[DiskType <DiskAccountType?>]`: Tipe disk.
 
-INPUTOBJECT <IVMwareMachine> : Menentukan server yang ditemukan untuk dimigrasi. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
+INPUTOBJECT <IVMwareMachine>: Menentukan server yang ditemukan untuk dimigrasi. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServer.
   - `[GuestOSDetailOstype <String>]`: Tipe sistem operasi.
 
-NICTAG <IVMwareCbtEnableMigrationInputTargetNicTags> : Menentukan tag yang akan digunakan untuk pembuatan NIC.
+NICTAG <IVMwareCbtEnableMigrationInputTargetNicTags>: Menentukan tag yang akan digunakan untuk pembuatan NIC.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-VMTAG <IVMwareCbtEnableMigrationInputTargetVmtags> : Menentukan tag yang akan digunakan untuk pembuatan VM.
+VMTAG <IVMwareCbtEnableMigrationInputTargetVmtags>: Menentukan tag yang akan digunakan untuk pembuatan VM.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 ## RELATED LINKS

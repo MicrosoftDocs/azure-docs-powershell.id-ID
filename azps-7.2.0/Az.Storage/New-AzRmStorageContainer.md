@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
-ms.openlocfilehash: dd1dd7aca9682842c77be025cc0208021c02beca
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 704a513a7a8fdd940f45e2060f3ff9843ad0caac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165518"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948625"
 ---
 # New-AzRmStorageContainer
 
 ## SYNOPSIS
 Membuat wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azrmstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ New-AzRmStorageContainer -StorageAccount <PSStorageAccount> -Name <String> -Defa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageContainer** membuat wadah Storage blob
+Cmdlet **New-AzRmStorageContainer** membuat Storage wadah blob
 
 ## EXAMPLES
 
@@ -59,7 +62,7 @@ Cmdlet **New-AzRmStorageContainer** membuat wadah Storage blob
 PS C:\>New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Metadata @{tag0="value0";tag1="value1";tag2="value2"}
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage penampung dan nama wadah akun, dengan metadata.
+Perintah ini akan membuat Storage blob dengan Storage wadah dan nama akun, dengan metadata.
 
 ### Contoh 2: Membuat wadah Storage blob dengan Storage wadah dan objek akun, dengan akses publik sebagai Blob
 ```
@@ -67,7 +70,7 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>New-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess Blob
 ```
 
-Perintah ini akan membuat wadah Storage blob dengan Storage wadah dan objek akun, dengan akses publik sebagai Blob.
+Perintah ini akan membuat Storage blob dengan Storage objek akun dan nama wadah pengguna, dengan akses publik sebagai Blob.
 
 ### Contoh 3: Membuat wadah penyimpanan dengan pengaturan EnkripsiScope
 ```
@@ -117,7 +120,7 @@ Name          PublicAccess LastModified         HasLegalHold HasImmutabilityPoli
 testcontainer None         2021-07-19 08:26:19Z False        False                 False             True
 ```
 
-Perintah ini akan membuat wadah penyimpanan dan mengaktifkan fitur yang dapat Storage dengan versioning.
+Perintah ini akan membuat wadah penyimpanan dan mengaktifkan fitur yang dapat Storage dengan versi.
 Perintah hanya berfungsi ketika akun Storage telah mengaktifkan versi blob.
 
 ## PARAMETERS
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableImmutableStorageWithVersioning
-Mengaktifkan pengaturan Storage dengan versi pada tingkat wadah.
+Aktifkan fitur tetap Storage dengan versioning pada tingkat wadah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

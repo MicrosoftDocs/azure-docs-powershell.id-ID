@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVault.md
-ms.openlocfilehash: d97099d6ba4ea94c7c1515dcce1b5c3950c422c7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b10b9e429bafdafe6c50262a80321af5eff4d1b2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385400"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139975119"
 ---
 # New-AzKeyVault
 
 ## SYNOPSIS
 Membuat kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvault) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah ini membuat kunci vault bernama Contoso03Vault, di kawasan Azure AS Timur. Perintah menambahkan kunci vault ke grup sumber daya bernama Group14. Karena tidak menentukan nilai untuk parameter *SKU,* perintah akan membuat kunci vault Standar.
+Perintah ini membuat kunci vault bernama Contoso03Vault, di kawasan Azure AS Timur. Perintah menambahkan kunci vault ke grup sumber daya bernama Group14. Karena tidak menentukan nilai untuk parameter *SKU* , perintah akan membuat kunci vault Standar.
 
 ### Contoh 2: Buat Premium key vault
 ```powershell
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-Menentukan kumpulan aturan jaringan vault. Sistem tersebut mengatur aksesibilitas vault kunci dari lokasi jaringan tertentu. Dibuat oleh `New-AzKeyVaultNetworkRuleSetObject` .
+Menentukan kumpulan aturan jaringan vault. Sistem tersebut mengatur aksesibilitas vault kunci dari lokasi jaringan tertentu. Dibuat oleh `New-AzKeyVaultNetworkRuleSetObject`.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultNetworkRuleSet
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan SKU dari key vault instance. Untuk informasi tentang fitur yang tersedia untuk setiap SKU, lihat situs web Harga Azure Key Vault ( https://go.microsoft.com/fwlink/?linkid=512521) .
+Menentukan SKU dari key vault instance. Untuk informasi tentang fitur yang tersedia untuk setiap SKU, lihat situs web Harga Azure Key Vault (https://go.microsoft.com/fwlink/?linkid=512521).
 
 ```yaml
 Type: System.String
@@ -363,7 +366,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRule.md
-ms.openlocfilehash: 1677b1ff67d0e128b190892309c4aa636703f563
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 45954cecbdb0c03efb91defa7e09ac3b886ffa20
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282924"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049125"
 ---
 # Remove-AzSentinelAlertRule
 
 ## SYNOPSIS
 Menghapus Aturan Analitik (AlertRule)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelalertrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzSentinelAlertRule -InputObject <PSSentinelAlertRule> [-PassThru]
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelAlertRule** secara permanen menghapus Aturan Pemberitahuan dari ruang kerja tertentu.
 Anda dapat melewati **objek AlertRule** menggunakan operator pipeline, atau menentukan parameter yang diperlukan.
-Anda dapat menggunakan variabel $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 

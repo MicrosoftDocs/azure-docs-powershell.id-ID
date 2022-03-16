@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageFileContent.md
-ms.openlocfilehash: 7e314cd504275d1cd65363bfe28ae018fcd634f1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9c13f60f8602648684ed07245d91c6e1b03a6bf2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277580"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948157"
 ---
 # Set-AzStorageFileContent
 
 ## SYNOPSIS
 Mengunggah konten file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragefilecontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Cmdlet **Set-AzStorageFileContent** mengunggah konten file ke file pada berbagi 
 
 ## EXAMPLES
 
-### Contoh 1: Upload file dalam folder saat ini
+### Contoh 1: Upload melihat file dalam folder saat ini
 ```
 PS C:\>Set-AzStorageFileContent -ShareName "ContosoShare06" -Source "DataFile37" -Path "ContosoWorkingFolder/CurrentDataFile"
 ```
@@ -67,7 +70,7 @@ PS C:\> Get-ChildItem -Recurse | Where-Object { $_.GetType().Name -eq "FileInfo"
 ```
 
 Contoh ini menggunakan beberapa cmdlet Windows PowerShell umum dan cmdlet saat ini untuk mengunggah semua file dari folder saat ini ke folder akar wadah ContosoShare06.
-Perintah pertama mendapatkan nama folder saat ini dan menyimpannya di variabel $CurrentFolder baru.
+Perintah pertama mendapatkan nama folder saat ini dan menyimpannya di $CurrentFolder variabel.
 Perintah kedua menggunakan cmdlet **Get-AzStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu menyimpannya dalam $Container jaringan.
 Perintah terakhir mendapatkan konten folder saat ini dan meneruskannya ke cmdlet Where-Object dengan menggunakan operator pipeline.
 Cmdlet tersebut memfilter objek yang bukan file, lalu meneruskan file ke cmdlet ForEach-Object cmdlet.
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini mengunggah file ke folder yang ditentukan parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory cmdlet.
-Anda juga dapat menggunakan cmdlet Get-AzStorageFile cmdlet untuk mendapatkan direktori.
+Anda juga dapat menggunakan cmdlet Get-AzStorageFile untuk mendapatkan direktori.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileDirectory
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
 Cmdlet ini mengunggah ke file dalam berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare baru.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 

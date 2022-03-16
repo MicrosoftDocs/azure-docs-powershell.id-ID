@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageAccount.md
-ms.openlocfilehash: 34b2d710ad160f790fc1afca2d79876ab748f683
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0ef55c2cbf539bb9ba34b250ce31df91aae49915
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082305"
 ---
 # Remove-AzStorageAccount
 
 ## SYNOPSIS
-Menghapus akun Storage dari Azure.
+Menghapus akun Storage anda dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Remove-AzStorageAccount** menghapus akun Storage dari Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Storage anda
+### Contoh 1: Hapus Storage Anda
 ```
 PS C:\>Remove-AzStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```

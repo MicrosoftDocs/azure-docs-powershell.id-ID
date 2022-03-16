@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: 75976f49c1a07cb5f540752637f36c332b11f9f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8bd72daa85be42848230d1294988291bd3b56b2b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167685"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914181"
 ---
 # Set-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapseintegrationruntime) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: 267820c5ed391bf2b3b4d35bc6c0921c4e763dd1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e1f432f25bac08ca1c087a68f9d5485ce593779c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286043"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914541"
 ---
 # Get-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan pengauditan ruang kerja Analitik Azure Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 

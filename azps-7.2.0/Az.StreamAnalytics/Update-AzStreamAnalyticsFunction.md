@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: 2dc2cf07c56251f168909ca152d063584bd6f9d1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 270326d56b9294ca6eb1ef4c036f6abc2063d756
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914937"
 ---
 # Update-AzStreamAnalyticsFunction
 
@@ -18,6 +18,9 @@ ms.locfileid: "138300667"
 Memperbarui fungsi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
 Ini dapat digunakan untuk memperbarui sebagian (mis.
 perbarui satu atau dua properti) fungsi tanpa memengaruhi definisi pekerjaan atau fungsi lainnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticsfunction) untuk informasi terkini.
 
 ## SYNTAX
 

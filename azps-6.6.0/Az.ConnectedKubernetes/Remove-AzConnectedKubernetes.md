@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Remove-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/Remove-AzConnectedKubernetes.md
-ms.openlocfilehash: fe01595153ad87e973372b00f6a6bbafe17c9530
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 222ae060468f11932bce664906f946b1b305f5dc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136375533"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078597"
 ---
 # Remove-AzConnectedKubernetes
 
 ## SYNOPSIS
 Hapus kluster tersambung, hapus sumber daya terlacak di Azure Resource Manager (ARM).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedkubernetes/remove-azconnectedkubernetes) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -259,7 +262,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IConnectedKubernetesIdentity> : Parameter Identitas
+INPUTOBJECT <IConnectedKubernetesIdentity>: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster Kluster Kedaering yang disebut dengan get.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.

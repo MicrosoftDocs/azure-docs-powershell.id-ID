@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/sync-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Sync-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Sync-AzVirtualNetworkPeering.md
-ms.openlocfilehash: c5cce64697769eed562e269e34df027495c8f44c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b6291a7f2bad90336624623ef4a9ae7a35647659
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274747"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918393"
 ---
 # Sync-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Perintah untuk menyinkronkan ruang alamat pada link peering jika jaringan virtual jarak jauh memiliki ruang alamat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/sync-azvirtualnetworkpeering) untuk informasi terkini.
 
 ## SYNTAX
 

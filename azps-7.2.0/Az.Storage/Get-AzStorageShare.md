@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageShare.md
-ms.openlocfilehash: 8768af00a811ce694a263f23ff89a69b1f945043
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: becc69797f69c90f357672186332da70fa8fedc2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948589"
 ---
 # Get-AzStorageShare
 
 ## SYNOPSIS
 Mendapatkan daftar file yang akan bagikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ PS C:\>$Context = New-AzStorageContext -Local
 PS C:\> Get-AzStorageShare -Context $Context
 ```
 
-Perintah pertama menggunakan cmdlet **New-AzStorageContext** untuk membuat konteks menggunakan parameter *Local* , lalu menyimpan objek konteks tersebut dalam $Context variabel.
+Perintah pertama menggunakan cmdlet **New-AzStorageContext** untuk membuat konteks menggunakan parameter *Local* , lalu menyimpan objek konteks tersebut dalam $Context lain.
 Perintah kedua akan membagikan file untuk objek konteks yang disimpan di $Context.
 
 ### Contoh 4: Mendapatkan file berbagi snapshot dengan nama berbagi tertentu dan SnapshotTime

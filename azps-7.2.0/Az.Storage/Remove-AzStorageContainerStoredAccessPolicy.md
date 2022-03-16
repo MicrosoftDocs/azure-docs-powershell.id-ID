@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageContainerStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageContainerStoredAccessPolicy.md
-ms.openlocfilehash: 6f4f524689f4964041765513c02bed2167de6a8c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4c64d12fee39927ef75a0761df756580f4f74fb1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259227"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915513"
 ---
 # Remove-AzStorageContainerStoredAccessPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan akses tersimpan dari tempat penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstoragecontainerstoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 

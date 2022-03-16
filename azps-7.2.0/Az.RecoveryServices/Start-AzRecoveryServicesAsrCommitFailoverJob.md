@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrCommitFailoverJob.md
-ms.openlocfilehash: 6119609d86ba9a5d63b059dc28df6e6cf299dbfd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2c77bc256cabecb1b6ce08d9f2ade2e94f14c134
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168421"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050619"
 ---
 # Start-AzRecoveryServicesAsrCommitFailoverJob
 
 ## SYNOPSIS
 Memulai tindakan lakukan failover untuk objek Pemulihan Situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrcommitfailoverjob) untuk informasi terkini.
 
 ## SYNTAX
 

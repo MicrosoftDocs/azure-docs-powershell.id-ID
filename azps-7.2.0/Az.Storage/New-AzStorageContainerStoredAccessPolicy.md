@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerStoredAccessPolicy.md
-ms.openlocfilehash: ae111b86d08ff61818df7fae968481dedcc27be9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b3048a380e4d526245c54fbb1e2bd413715aaea4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915549"
 ---
 # New-AzStorageContainerStoredAccessPolicy
 
 ## SYNOPSIS
 Membuat kebijakan akses tersimpan untuk tempat penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragecontainerstoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 

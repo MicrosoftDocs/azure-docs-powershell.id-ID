@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesVault.md
-ms.openlocfilehash: d5f005f2a024a0892195309ac576a4cd29d7db78
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0e139ba3ce8741f52d0461c0fcdc285ff5a1f13d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273611"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917925"
 ---
 # Update-AzRecoveryServicesVault
 
 ## SYNOPSIS
 Memperbarui MSIdentity ke vault layanan pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesvault) untuk informasi terkini.
 
 ## SYNTAX
 

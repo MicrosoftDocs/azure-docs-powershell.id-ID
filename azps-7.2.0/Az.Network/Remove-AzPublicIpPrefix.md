@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPublicIpPrefix.md
-ms.openlocfilehash: 4e1c904b8b4c6cff35d11f185c352cc8c147dc53
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5ef27a910e86022a866397ab3266ffaa5a7c7894
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259628"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920157"
 ---
 # Remove-AzPublicIpPrefix
 
 ## SYNOPSIS
 Menghapus prefiks IP publik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azpublicipprefix) untuk informasi terkini.
 
 ## SYNTAX
 

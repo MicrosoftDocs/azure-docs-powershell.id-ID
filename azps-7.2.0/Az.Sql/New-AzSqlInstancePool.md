@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstancePool.md
-ms.openlocfilehash: 0b32cfe0cbc16be0cea82c524d06e05538f06638
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: be019c304423d3a75d578bccaa98b188179c3695
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316411"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048009"
 ---
 # New-AzSqlInstancePool
 
 ## SYNOPSIS
 Membuat pool Azure SQL Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlinstancepool) untuk informasi terkini.
 
 ## SYNTAX
 

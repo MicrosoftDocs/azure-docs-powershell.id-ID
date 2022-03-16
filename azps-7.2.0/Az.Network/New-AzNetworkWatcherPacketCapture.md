@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: fceeaa0ca58b83edabe1a8230f889b6fdff4ed3f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: da3ffadac553f2615f33d0726c17d3629f75cb3c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297420"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920733"
 ---
 # New-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Membuat sumber daya penangkapan paket baru dan memulai sesi penangkapan paket pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatcherpacketcapture) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ New-AzNetworkWatcherPacketCapture -Location <String> -PacketCaptureName <String>
 ## DESCRIPTION
 Cmdlet New-AzNetworkWatcherPacketCapture membuat sumber daya penangkapan paket yang baru dan memulai sesi pengambilan paket pada VM.
 Panjang sesi Pengambilan Paket dapat dikonfigurasi melalui batasan waktu atau batasan ukuran. Jumlah data yang diambil untuk setiap paket juga dapat dikonfigurasi.
-Filter bisa diterapkan ke sesi pengambilan paket tertentu, yang memungkinkan Anda untuk mengkustomisasi tipe paket yang diambil. Filter bisa membatasi paket pada alamat IP lokal dan jarak jauh & rentang alamat, port lokal dan & dari rentang port, dan protokol tingkat sesi yang akan diambil. Filter dapat dibuat, dan beberapa filter dapat diterapkan agar Anda dapat menggunakan granularitas tangkapan.
+Filter bisa diterapkan ke sesi pengambilan paket tertentu, yang memungkinkan Anda untuk mengkustomisasi tipe paket yang diambil. Filter dapat membatasi paket pada alamat IP lokal dan jarak jauh & rentang alamat, port lokal dan jarak jauh &, dan protokol tingkat sesi yang akan diambil. Filter dapat dibuat, dan beberapa filter dapat diterapkan agar Anda dapat menggunakan granularitas tangkapan.
 
 ## EXAMPLES
 
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -StoragePath
-Storage baru.
+Storage jalur baru.
 
 ```yaml
 Type: System.String

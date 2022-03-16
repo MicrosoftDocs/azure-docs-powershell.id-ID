@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
-ms.openlocfilehash: d06be42139a05efec5da8bd6ffc419922e01d008
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a79dfdd742e4051505fec09699169af8c428de9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082863"
 ---
 # Set-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Memperbarui langkah kerja
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticjobstep) untuk informasi terkini.
 
 ## SYNTAX
 

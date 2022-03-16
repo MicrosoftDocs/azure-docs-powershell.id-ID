@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteTable.md
-ms.openlocfilehash: 5823679a1069a4b408fe74d4bc052996d3b154aa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b2d88b60bde3ad23400c7a8f1edfe0a29bf8fb08
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920643"
 ---
 # New-AzRouteTable
 
 ## SYNOPSIS
 Membuat tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azroutetable) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,8 +61,8 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah pertama membuat rute yang bernama Route07 menggunakan cmdlet New-AzRouteConfig, lalu menyimpannya dalam $Route variabel. Rute ini meneruskan paket ke jaringan virtual lokal.
-Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan dalam $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel dimiliki dan lokasi untuk tabel.
+Perintah pertama membuat rute bernama Route07 menggunakan cmdlet New-AzRouteConfig, lalu menyimpannya dalam variabel $Route nya. Rute ini meneruskan paket ke jaringan virtual lokal.
+Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan di $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel dimiliki dan lokasi untuk tabel.
 
 ## PARAMETERS
 

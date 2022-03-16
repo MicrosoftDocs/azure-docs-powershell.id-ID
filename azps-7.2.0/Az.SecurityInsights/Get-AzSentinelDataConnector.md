@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelDataConnector.md
-ms.openlocfilehash: 79797644bdff8fe442319340fb6a4b0633776d6c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 47bade6928cb0854f71ece956c991a0d30dc3d74
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262251"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049162"
 ---
 # Get-AzSentinelDataConnector
 
@@ -25,6 +25,9 @@ Harap diperhatikan bahwa dukungan otomatisasi hanya tersedia untuk konektor data
 * MDATPDataConnector
 * OfficeDataConnector
 * TIDataConnector
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentineldataconnector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,14 +62,14 @@ Anda dapat menggunakan **objek DataConnector** untuk memperbarui Konektor Data, 
 PS C:\> $DataConnectors = Get-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua DataConnectors di ruang kerja yang ditentukan, lalu menyimpannya di $DataConnectors baru.
+Contoh ini mendapatkan semua DataConnectors di ruang kerja yang ditentukan, lalu menyimpannya di $DataConnectors lain.
 
 ### Contoh 2
 ```powershell
 PS C:\> $DataConnector = Get-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -DataConnectorId "MyDataConnectorId"
 ```
 
-Contoh ini mendapatkan DataConnector di ruang kerja yang ditentukan, lalu menyimpannya di $DataConnector lain.
+Contoh ini mendapatkan DataConnector di ruang kerja tertentu, lalu menyimpannya dalam $DataConnector koneksi.
 
 ### Contoh 3
 ```powershell

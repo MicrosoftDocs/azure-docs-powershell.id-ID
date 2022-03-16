@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusMigration.md
-ms.openlocfilehash: e4bc9fcd2f3f52f003b46b3524c2a2292a8d480a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b4794e553d0ac8a123d137addd7460541fdb7c3e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255228"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916467"
 ---
 # Remove-AzServiceBusMigration
 
 ## SYNOPSIS
 Cmdlet menghapus konfigurasi Migrasi untuk Standar ke Premium nama pengguna
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebusmigration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzServiceBusMigration [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusMigration** menghapus konfigurasi Migrasi untuk Standar ke Premium nama
+Cmdlet **Remove-AzServiceBusMigration** menghapus konfigurasi Migrasi untuk Standar ke Premium namanya
 
 ## EXAMPLES
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Sumber Daya Kumpulan Nama Standar Migrasi
+Bus Layanan Migrasi Id Sumber Daya Ruang Nama Standar
 
 ```yaml
 Type: System.String

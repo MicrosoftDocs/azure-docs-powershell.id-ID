@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileContent.md
-ms.openlocfilehash: 917e8e67c28e9b2ba4206f87482a47c6451f76bb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b3bcff3c4222ecc14d968f980963f0e20881397f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162135"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082539"
 ---
 # Get-AzStorageFileContent
 
 ## SYNOPSIS
 Mengunduh konten file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragefilecontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan Azure Storage konteks. Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Menentukan Azure Storage konteks. Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -194,8 +197,8 @@ Accept wildcard characters: False
 ### -Direktori
 Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini mendapatkan konten untuk file dalam folder yang ditentukan parameter ini.
-Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory.
-Anda juga dapat menggunakan cmdlet Get-AzStorageFile cmdlet untuk mendapatkan direktori.
+Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory cmdlet.
+Anda juga dapat menggunakan cmdlet Get-AzStorageFile untuk mendapatkan direktori.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileDirectory
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
 Cmdlet ini mengunduh konten file dalam fitur bagikan parameter ini.
-Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare baru.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 

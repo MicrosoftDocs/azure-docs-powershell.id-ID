@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBootDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBootDiagnostic.md
-ms.openlocfilehash: 8e72c156f437195fc222a7549f23531b3634d17e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 79aa24aaf2b26f284720d35d14ab60fca0a97553
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361682"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078939"
 ---
 # Set-AzVMBootDiagnostic
 
 ## SYNOPSIS
 Mengubah properti diagnostik komputer virtual untuk boot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmbootdiagnostic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan mesin virtual di mana cmdlet ini mengubah diagnostik boot.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM cmdlet.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

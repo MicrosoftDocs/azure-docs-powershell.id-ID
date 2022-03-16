@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: 06a36900d176dec6c6878a0878f27e3cea0ae789
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d9709370d915af485b36389fb9e1855e9423ac14
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267563"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048513"
 ---
 # Disable-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
 Menonaktifkan autentikasi Azure AD saja untuk program SQL Terkelola tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/disable-azsqlinstanceactivedirectoryonlyauthentication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans Terkelola Azure SQL tempat Azure Active Directory autentikasi berada.
+Nama Instans SQL Terkelola Azure tempat Azure Active Directory autentikasi berada.
 
 ```yaml
 Type: System.String

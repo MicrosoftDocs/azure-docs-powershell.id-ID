@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: 6e805ed44c5b549bfd13f80f46c16d6ed7319cb5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5baec42b8d1b2b1ce2cff568a3225ef3ba43eae0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373181"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077732"
 ---
 # Set-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2integrationruntime) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -112,7 +115,7 @@ PS C:\> Set-AzDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-dfv2' 
     Description       : New description
 ```
 
-Cmdlet menambahkan ADF untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` `-Type` parameter, parameter juga harus disertakan. Perhatikan bahwa pabrik data harus diberi izin untuk menggunakan runtime integrasi sebelum menjalankan cmdlet.
+Cmdlet menambahkan ADF untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` parameter, `-Type` parameter juga harus disertakan. Perhatikan bahwa pabrik data harus diberi izin untuk menggunakan runtime integrasi sebelum menjalankan cmdlet.
 
 ### Contoh 3: Konfigurasi Self-Hosted IR sebagai proksi untuk Azure-SSIS IR di ADF.
 ```
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataProxyStagingPath
-Jalur dalam penyimpanan data yang akan digunakan saat memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtimes, wadah default akan digunakan jika tidak ditentukan
+Jalur dalam penyimpanan data yang akan digunakan ketika memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtimes, wadah default akan digunakan jika tidak ditentukan
 
 ```yaml
 Type: System.String
@@ -700,7 +703,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

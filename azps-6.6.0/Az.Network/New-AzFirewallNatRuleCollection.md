@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRuleCollection.md
-ms.openlocfilehash: 1954e59f64d8681eb6b8747f669a1e1b20646004
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b02ca8a8239bdfe3acbe664ee33ad9a806a25b95
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358829"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139934863"
 ---
 # New-AzFirewallNatRuleCollection
 
 ## SYNOPSIS
 Membuat kumpulan aturan NAT Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallnatrulecollection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ $rule1 = New-AzFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddress "*
 New-AzFirewallNatRuleCollection -Name "MyNatRuleCollection" -Priority 1000 -Rule $rule1
 ```
 
-Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang cocok dengan kondisi yang diidentifikasi $rule 1 akan menjadi PORTAT'ed untuk alamat dan port yang diterjemahkan.
+Contoh ini membuat koleksi dengan satu aturan. Semua lalu lintas yang cocok dengan kondisi yang diidentifikasi $rule 1 akan menjadi APOST'ed untuk alamat dan port yang diterjemahkan.
 
 ### Contoh 2: Menambahkan aturan ke kumpulan aturan
 ```powershell
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

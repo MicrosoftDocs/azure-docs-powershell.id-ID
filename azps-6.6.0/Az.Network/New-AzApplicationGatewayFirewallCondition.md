@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallCondition.md
-ms.openlocfilehash: eb807a082225f4befc7cc0847b0fe2f1b8ddca1b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ad258427f3c2d51d54b2734d368af5092258dedb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342614"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139935241"
 ---
 # New-AzApplicationGatewayFirewallCondition
 
 ## SYNOPSIS
 Membuat kondisi kecocokan untuk aturan kustom
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallcondition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzApplicationGatewayFirewallCondition -MatchVariable <PSApplicationGatewayFi
 PS C:\> $condition = New-AzApplicationGatewayFirewallCondition -MatchVariable $variable -Operator Contains -NegationCondition false -Transforms Lowercase, Trim -MatchValue abc, cde
 ```
 
-Perintah membuat kondisi kecocokan baru menggunakan variabel kecocokan yang ditentukan dalam $variable, operatornya adalah Berisi dan kondisi negasi false, Transfrom termasuk huruf kecil dan trim, nilai yang cocok adalah abc dan cde. Kondisi kecocokan baru disimpan di $condition.
+Perintah akan membuat kondisi kecocokan baru menggunakan variabel kecocokan yang ditentukan dalam $variable, operatornya adalah Berisi dan kondisi negasi false, Transfrom termasuk huruf kecil dan trim, nilai yang cocok adalah abc dan cde. Kondisi kecocokan baru disimpan di $condition.
 
 ## PARAMETERS
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

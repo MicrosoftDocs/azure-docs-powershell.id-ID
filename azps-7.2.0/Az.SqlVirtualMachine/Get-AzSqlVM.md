@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVM.md
-ms.openlocfilehash: c52fd42075c73a630b04d7cc28acb71222d9f21b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2723d9eb026acad16a5fb50feb628544b72fbcff
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307339"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949219"
 ---
 # Get-AzSqlVM
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa mesin virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azsqlvm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Name ResourceGroupName  LicenseType Sku       Offer          SqlManagementType
 vm   ResourceGroup01    PAYG        Developer SQL2017-WS2016 Full
 ```
 
-Perintah ini mendapatkan informasi tentang semua azure SQL virtual di langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua SQL virtual Azure di langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ### Contoh 3
 ```powershell

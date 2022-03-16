@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeployment.md
-ms.openlocfilehash: 35cd2ee2bf79f382a482346a1738cae274781437
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 69018c715cfc1183f811fd4e41b94f77c2cf6b78
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310044"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917025"
 ---
 # Get-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Mendapatkan penyebaran di grup manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCache.md
-ms.openlocfilehash: 06c713ee72ca7383fd7655ce00fd3e00638832cf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 02c2bfc8cfe9e2d03e0dd74458204e993bc51068
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280779"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050223"
 ---
 # Remove-AzRedisCache
 
 ## SYNOPSIS
 Menghapus Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/remove-azrediscache) untuk informasi terkini.
 
 ## SYNTAX
 

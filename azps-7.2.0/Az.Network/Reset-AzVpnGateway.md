@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVpnGateway.md
-ms.openlocfilehash: 008bffea2a3ee378b56e1966d40894c4b976d556
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 278a5ad5107c05e0eb3f63a2fcc70e16a00abab6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302171"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139919203"
 ---
 # Reset-AzVpnGateway
 
 ## SYNOPSIS
 Mereset gateway VPN yang dapat disesuaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/reset-azvpngateway) untuk informasi terkini.
 
 ## SYNTAX
 

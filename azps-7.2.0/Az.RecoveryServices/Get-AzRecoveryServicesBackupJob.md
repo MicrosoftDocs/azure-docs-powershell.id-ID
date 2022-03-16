@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: 80288a04409d5cba981b066746825e428be8d17c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ecf7e9948b213f8f14e127f9080d6630695d8758
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050979"
 ---
 # Get-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 
 Mendapatkan pekerjaan Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupjob) untuk informasi terkini.
 
 ## SYNTAX
 

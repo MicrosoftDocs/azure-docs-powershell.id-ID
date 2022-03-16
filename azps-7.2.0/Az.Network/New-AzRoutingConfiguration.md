@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRoutingConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRoutingConfiguration.md
-ms.openlocfilehash: 2a81e02ff36b84fd33535bc3ee7c3f6d9f2e06fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a3f761833b73d08b4d39fccd6cc1c12bb3ed35bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307627"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920670"
 ---
 # New-AzRoutingConfiguration
 
 ## SYNOPSIS
 Membuat objek RoutingConfiguration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azroutingconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

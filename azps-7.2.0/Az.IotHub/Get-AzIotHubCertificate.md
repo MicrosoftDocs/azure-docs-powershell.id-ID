@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificate.md
-ms.openlocfilehash: 3008fb886138300b47c1c08e707b0398a54c8cd3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9d1de947d1ddd1202a17b3af5d6264015411fb09
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318003"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055785"
 ---
 # Get-AzIotHubCertificate
 
 ## SYNOPSIS
 Mencantumkan semua sertifikat atau sertifikat tertentu yang dimuat dalam Azure IoT Hub. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

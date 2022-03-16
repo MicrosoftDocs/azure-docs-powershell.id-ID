@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagedApplicationDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagedApplicationDefinition.md
-ms.openlocfilehash: 61745d2fe63c22c9f84913627c3d8baa3bdb05b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1b6f49f03938e32baf0d3f4d7722ca5d7eefde1c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049863"
 ---
 # New-AzManagedApplicationDefinition
 
 ## SYNOPSIS
 Membuat definisi aplikasi terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azmanagedapplicationdefinition) untuk informasi terkini.
 
 ## SYNTAX
 

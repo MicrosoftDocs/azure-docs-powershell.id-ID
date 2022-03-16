@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubCertificate.md
-ms.openlocfilehash: e2a4b22e358ad40200ed759d077e79a2a275f358
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a97eb56539208d18c14c932570306e5905852dde
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309068"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055839"
 ---
 # Add-AzIotHubCertificate
 
 ## SYNOPSIS
 Membuat/memperbarui sertifikat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/add-aziothubcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

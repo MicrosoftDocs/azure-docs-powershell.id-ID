@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRoutePort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRoutePort.md
-ms.openlocfilehash: a7ffaac47668bd549a9550dc89148f8ce25fa6c1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f331e9f6d2ad2df6a6f66fc2227757283d2b0b93
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253387"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920445"
 ---
 # Remove-AzExpressRoutePort
 
 ## SYNOPSIS
 Menghapus ExpressRoutePort.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azexpressrouteport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzExpressRoutePort** menghapus ExpressRoutePort.
 PS C:\> Remove-AzExpressRoutePort -Name $PortName -ResourceGroupName $rg
 ```
 
-Menghapus $PortName sumber daya ExpressRoutePort $rg grup sumber daya di langganan Anda.
+Menghapus $PortName sumber daya ExpressRoutePort $rg grup sumber daya dalam langganan Anda.
 
 ### Contoh 2
 ```powershell

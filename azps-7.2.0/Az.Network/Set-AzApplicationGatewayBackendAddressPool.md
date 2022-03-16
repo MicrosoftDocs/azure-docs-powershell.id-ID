@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: 4a50e4edb5ab0509499cae38923713ba7bad5581
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0886665d129b1f32e2c03a448dd72f21dccda881
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255436"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139919113"
 ---
 # Set-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
 Memperbarui sebuah gabungan alamat ujung-belakang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaybackendaddresspool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> $AppGw = Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -Name "Pool02" -BackendFqdns "contoso1.com", "contoso2.com"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw lokal.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
 Perintah kedua memperbarui gabungan alamat ujung-belakang gateway aplikasi di $AppGw dengan menggunakan FQDN.
 
 ### Contoh 2: Mengatur pool alamat ujung-belakang dengan menggunakan alamat IP backend server
@@ -47,7 +50,7 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> $AppGw = Set-AzApplicationGatewayBackendAddressPool -ApplicationGateway $AppGw -Name "Pool02" -BackendIPAddresses "10.10.10.10", "10.10.10.11"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw lokal.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
 Perintah kedua memperbarui pool alamat ujung-belakang gateway aplikasi di $AppGw dengan menggunakan alamat IP.
 
 ## PARAMETERS

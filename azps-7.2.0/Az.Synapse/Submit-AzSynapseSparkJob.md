@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/submit-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Submit-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Submit-AzSynapseSparkJob.md
-ms.openlocfilehash: 610eff97bbe835e0f3abf9c9dc525d5e5ca3dc20
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5ba12b6ff612f930affb7529951ac58986c61630
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304188"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947383"
 ---
 # Submit-AzSynapseSparkJob
 
 ## SYNOPSIS
 Mengirimkan pekerjaan Grafik Apik Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/submit-azsynapsesparkjob) untuk informasi terkini.
 
 ## SYNTAX
 

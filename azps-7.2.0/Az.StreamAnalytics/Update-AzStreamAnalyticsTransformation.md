@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsTransformation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsTransformation.md
-ms.openlocfilehash: edc84291444a9e2b8cdeeb869aecb280ebf15f0c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 17e3edc296360e35dc5775048b09eba2f2cdb8d2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258171"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914901"
 ---
 # Update-AzStreamAnalyticsTransformation
 
@@ -18,6 +18,9 @@ ms.locfileid: "138258171"
 Memperbarui transformasi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
 Ini dapat digunakan untuk memperbarui sebagian (mis.
 perbarui satu atau dua properti) transformasi tanpa mempengaruhi definisi pekerjaan atau transformasi lainnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticstransformation) untuk informasi terkini.
 
 ## SYNTAX
 

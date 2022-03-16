@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Start-AzServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Start-AzServiceBusMigration.md
-ms.openlocfilehash: 4b200af3349c2bfaa0b2e8159cd5e066e0fd26a7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bfd15b46fa5205746a2ba1b5a57f5d99b8075af2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166335"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048765"
 ---
 # Start-AzServiceBusMigration
 
 ## SYNOPSIS
-Membuat konfigurasi Migrasi baru dan memulai migrasi entitas dari Standar ke Premium nama pengguna
+Membuat konfigurasi Migrasi baru dan memulai migrasi entitas dari Standar ke Premium nama
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/start-azservicebusmigration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Start-AzServiceBusMigration [-ResourceGroupName] <String> [-Name] <String> [-Tar
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzServiceMigration** membuat konfigurasi Migrasi baru dan memulai migrasi entitas dari Standar ke Premium nama pengguna
+Cmdlet **Start-AzServiceBusMigration** membuat konfigurasi Migrasi baru dan mulai melakukan migrasi entitas dari Standar ke Premium namanya
 
 ## EXAMPLES
 

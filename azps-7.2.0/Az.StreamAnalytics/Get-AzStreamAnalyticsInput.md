@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsInput.md
-ms.openlocfilehash: e17dc086b1c2ac9498db9dbc41f72fd3eb18b570
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f3d4499d1d42ea6e9ccca9afafd8a50289fce1bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255115"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947887"
 ---
 # Get-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Mendapatkan detail tentang input tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsinput) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Parameter $select kueri OData.
+Parameter $select OData.
 Daftar ini merupakan daftar properti struktural yang dipisahkan tanda koma untuk disertakan dalam respons, atau "*" untuk menyertakan semua properti. Secara default, semua properti akan dikembalikan kecuali diagnostik. Saat ini hanya menerima '*' sebagai nilai yang valid.
 
 ```yaml

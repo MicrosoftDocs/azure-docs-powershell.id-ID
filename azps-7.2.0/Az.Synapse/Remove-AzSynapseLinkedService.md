@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseLinkedService.md
-ms.openlocfilehash: d216301ac7a0a235be5dc5d620122d6645df4c09
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dd0d3fc6d08c742519fc8ce34b8a17509e71d747
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271916"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047487"
 ---
 # Remove-AzSynapseLinkedService
 
 ## SYNOPSIS
 Menghapus layanan tertaut dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapselinkedservice) untuk informasi terkini.
 
 ## SYNTAX
 

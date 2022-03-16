@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Undo-AzRecoveryServicesBackupItemDeletion.md
-ms.openlocfilehash: f8682ff07961f96b8eb65cbd1e87a5cf26eb4509
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5e2a8c703220b6c2b05d420654c85933611c661f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918123"
 ---
 # Undo-AzRecoveryServicesBackupItemDeletion
 
 ## SYNOPSIS
 Jika item cadangan dihapus dan disajikan dalam status dihapus sementara, perintah ini mengembalikan item ke status di mana data dipertahankan selamanya 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ PS C:\> $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType
 PS C:\> Undo-AzRecoveryServicesBackupItemDeletion -Item $PI[0]
 ```
 
-Perintah pertama mendapatkan array wadah cadangan, lalu menyimpannya dalam $Cont array.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan item wadah pertama, lalu menyimpannya dalam $PI item.
+Perintah pertama berisi array wadah cadangan, lalu menyimpannya dalam larik $Cont larik.
+Perintah kedua mendapatkan item Cadangan yang terkait dengan item wadah pertama, lalu menyimpannya dalam $PI variabel.
 Perintah ketiga menonaktifkan Proteksi cadangan untuk item dalam $PI\[ 0\] dan meletakkan item dalam keadaan softdeleted.
 Perintah keempat mendapatkan item dalam keadaan softdeleted.
 Perintah terakhir menghadirkan VM lunak ke negara bagian tempat proteksi dihentikan, tetapi data dipertahankan selamanya.

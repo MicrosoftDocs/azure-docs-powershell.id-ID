@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Remove-AzStorageSyncService.md
-ms.openlocfilehash: 5e0eb879521061e41a1417c6a55a1e1266d2cfee
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b71ea2c13a58f32b5ee5734fcb073dd0b1b28807
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267436"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948013"
 ---
 # Remove-AzStorageSyncService
 
 ## SYNOPSIS
 Perintah ini akan menghapus layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/remove-azstoragesyncservice) untuk informasi terkini.
 
 ## SYNTAX
 

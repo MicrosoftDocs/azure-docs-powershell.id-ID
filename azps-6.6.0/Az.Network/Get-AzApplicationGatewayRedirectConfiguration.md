@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: 741966b11d8c5635158bee262aa8feab73a72f55
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 321a1bd508c150dce41ec74db312061e40cdcd1c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384801"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139936250"
 ---
 # Get-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi pengalihan yang sudah ada dari Gateway Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayredirectconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\>$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $RedirectConfig = Get-AzApplicationGatewayRedirectConfiguration -Name "Redirect01" -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
 Perintah kedua mendapatkan konfigurasi pengalihan yang bernama Redirect01 dari Gateway Aplikasi yang disimpan di variabel yang bernama $AppGW.
 
 ## PARAMETERS
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

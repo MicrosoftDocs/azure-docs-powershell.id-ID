@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: 0538c4442196325f4dadd0dd3d31a59835f7dbfb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eb5a8edba24dee60dba354094cbbc17c80791298
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920283"
 ---
 # Remove-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi aturan NAT masuk dari penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azloadbalancerinboundnatruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ $loadbalancer = Get-AzLoadBalancer -Name mylb -ResourceGroupName myrg
  Remove-AzLoadBalancerInboundNatRuleConfig -Name "myinboundnatrule" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama memuat penyeimbang muat yang sudah ada yang disebut "mylb" dan menyimpannya di $load penyeimbang variabel. Perintah kedua menghapus aturan NAT masuk yang terkait dengan penyeimbang muat ini.
+Perintah pertama memuat penyeimbang muat yang sudah ada yang disebut "mylb" dan menyimpannya di $load penyeimbang. Perintah kedua menghapus aturan NAT masuk yang terkait dengan penyeimbang muat ini.
 
 ## PARAMETERS
 

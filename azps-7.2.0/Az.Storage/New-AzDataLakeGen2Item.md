@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzDataLakeGen2Item.md
-ms.openlocfilehash: 1a779391596a0b09c35d59abe6d78e4a0e19dc3a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2d73ff1efa5e27c9a682e27d609942bf2dbfe1da
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166245"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082359"
 ---
 # New-AzDataLakeGen2Item
 
 ## SYNOPSIS
 Membuat file atau direktori dalam filesystem.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azdatalakegen2item) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzDataLakeGen2Item [-FileSystem] <String> [-Path] <String> [-Directory] [-Um
 
 ## DESCRIPTION
 Cmdlet **New-AzDataLakeGen2Item** membuat file atau direktori di Filesystem dalam akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage baru. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 

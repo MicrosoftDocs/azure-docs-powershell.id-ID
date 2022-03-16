@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/remove-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Remove-AzMySqlFlexibleServerDatabase.md
-ms.openlocfilehash: 077fe521a674b91aeb51450cf2abc2e754a3f5ec
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c86bcef4bb431d729603822b2241be034d1bb3af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345557"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139973949"
 ---
 # Remove-AzMySqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Menghapus database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/remove-azmysqlflexibleserverdatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,7 +245,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity> : Parameter Identitas
+INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.

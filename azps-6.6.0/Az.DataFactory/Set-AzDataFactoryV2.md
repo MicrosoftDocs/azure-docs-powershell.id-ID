@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
-ms.openlocfilehash: 22a8d0a5001a3b6dcef3fd93a59e172d22544f7a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 22c6e0d0450b6d4c3bce2b9ab1227c770923a725
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136157084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077716"
 ---
 # Set-AzDataFactoryV2
 
 ## SYNOPSIS
 Membuat pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -177,7 +180,7 @@ PS C:\> New-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location '
     RepoConfiguration : Microsoft.Azure.Management.DataFactory.Models.FactoryGitHubConfiguration
 ```
 
-Perintah ini membuat pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF di lokasi EastUS GitHub dengan konfigurasi kontrol sumber..
+Perintah ini membuat pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF di lokasi EastUS dengan GitHub konfigurasi kontrol sumber..
 
 ## PARAMETERS
 
@@ -643,7 +646,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMADDomainExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMADDomainExtension.md
-ms.openlocfilehash: 65a17a739683d19560f7797c0741b50e83a8e7bc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: afa4f8e7710dda16c8d8a1a9819e00a981b5bb8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361733"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078975"
 ---
 # Set-AzVMADDomainExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi domain AD ke mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmaddomainextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,9 +39,9 @@ Ekstensi ini memungkinkan mesin virtual Anda bergabung dalam sebuah domain.
 ## PARAMETERS
 
 ### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
+Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

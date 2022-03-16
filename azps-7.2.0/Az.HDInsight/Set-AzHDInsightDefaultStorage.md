@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
-ms.openlocfilehash: 0073196206fd78edcdff061231fca954b1ed0d1a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cedf7160a3dfa05f35a32132963fb3171a3df52f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294428"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056325"
 ---
 # Set-AzHDInsightDefaultStorage
 
 ## SYNOPSIS
 Mengatur pengaturan akun Storage default dalam objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightdefaultstorage) untuk informasi terkini.
 
 ## SYNTAX
 

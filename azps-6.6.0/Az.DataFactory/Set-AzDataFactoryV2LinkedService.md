@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2LinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2LinkedService.md
-ms.openlocfilehash: 2fc21de1d8f61f7ed68b3b9cae60ad25615c0e84
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 53e2eee3629894aa2f43f5805498c74a022e89ce
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343574"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077697"
 ---
 # Set-AzDataFactoryV2LinkedService
 
 ## SYNOPSIS
 Menautkan penyimpanan data atau layanan awan ke Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2linkedservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Perintah ini membuat layanan tertaut bernama LinkedServiceCuratedWikiData dalam 
 Layanan tertaut ini menautkan penyimpanan blob Azure yang ditentukan dalam file ke pabrik data bernama WikiADF.
 Perintah itu menyampaikan hasilnya ke Format-List cmdlet dengan menggunakan operator pipeline.
 Hal Windows PowerShell cmdlet akan memformat hasil.
-Untuk informasi selengkapnya, Get-Help Format-List.
+Untuk informasi selengkapnya, ketik Get-Help Format-List.
 
 ## PARAMETERS
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

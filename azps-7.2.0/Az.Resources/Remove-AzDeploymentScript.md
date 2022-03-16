@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzDeploymentScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzDeploymentScript.md
-ms.openlocfilehash: 94ca30a2d263ce16e4e2a42d4bc3251153010fac
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 040cd9664aab7ade74686dece965cbffff94472f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313372"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049727"
 ---
 # Remove-AzDeploymentScript
 
 ## SYNOPSIS
 Menghapus skrip penyebaran dan sumber daya terkaitnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azdeploymentscript) untuk informasi terkini.
 
 ## SYNTAX
 

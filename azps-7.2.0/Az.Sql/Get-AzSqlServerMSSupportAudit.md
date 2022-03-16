@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
-ms.openlocfilehash: 24f2ab28c7d07aa93a28cef71dc6485d20ee7de2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e3b92ca42d642741980a72991d5b0bc2c3a79726
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166315"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048207"
 ---
 # Get-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
 Mendapatkan pengaturan pengauditan operasi dukungan Microsoft dari server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlservermssupportaudit) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 2: Dapatkan, melalui pipeline, pengaturan audit operasi dukungan Microsoft untuk server SQL Azure
+### Contoh 2: Get, through pipeline, the Microsoft support operations auditing settings of an Azure SQL server
 ```
 PS C:\> Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Get-AzSqlServerMSSupportAudit
 ServerName                          : server01

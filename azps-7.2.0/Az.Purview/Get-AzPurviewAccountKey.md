@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccountKey.md
-ms.openlocfilehash: 402124ff21e50e2b346353f017d318ed747632e7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 34044149402db25cf2f1f456647be0699cfd9e29
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162935"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918285"
 ---
 # Get-AzPurviewAccountKey
 
 ## SYNOPSIS
 List the authorization keys associated with this account.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/get-azpurviewaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 

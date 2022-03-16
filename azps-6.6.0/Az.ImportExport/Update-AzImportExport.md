@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Update-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Update-AzImportExport.md
-ms.openlocfilehash: 08f6590082765a253d8e0e296df62a5fd07c84d5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c0c4522b3651403ccbf184dcdcf1ec84c750e8f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361298"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139975785"
 ---
 # Update-AzImportExport
 
 ## SYNOPSIS
 Memperbarui properti pekerjaan tertentu.
-Anda dapat melakukan operasi ini untuk memberi tahu Import/Export layanan bahwa hard drive yang terdiri dari pekerjaan impor atau ekspor telah dikirim ke pusat data Microsoft.
+Anda dapat melakukan operasi ini untuk memberi tahu Import/Export perusahaan yang terdiri dari pekerjaan impor atau ekspor telah dikirim ke pusat data Microsoft.
 Ini juga bisa digunakan untuk membatalkan pekerjaan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/update-azimportexport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Update-AzImportExport -InputObject <IImportExportIdentity> [-AcceptLanguage <Str
 
 ## DESCRIPTION
 Memperbarui properti pekerjaan tertentu.
-Anda dapat melakukan operasi ini untuk memberi tahu Import/Export layanan bahwa hard drive yang terdiri dari pekerjaan impor atau ekspor telah dikirim ke pusat data Microsoft.
+Anda dapat melakukan operasi ini untuk memberi tahu Import/Export perusahaan yang terdiri dari pekerjaan impor atau ekspor telah dikirim ke pusat data Microsoft.
 Ini juga bisa digunakan untuk membatalkan pekerjaan yang sudah ada.
 
 ## EXAMPLES
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negara Bagian
-Jika ditentukan, nilai harus Pengiriman, yang memberi tahu Import/Export tersebut bahwa paket untuk pekerjaan telah dikirim.
+Jika ditentukan, nilai harus Pengiriman, yang memberi tahu Import/Export layanan pengiriman paket untuk pekerjaan tersebut.
 Properti ReturnAddress dan DeliveryPackage harus sudah diatur di permintaan ini atau permintaan sebelumnya, jika tidak permintaan akan gagal.
 
 ```yaml
@@ -517,7 +520,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -536,7 +539,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DRIVELIST <dengan IDriveStatus[]>: Daftar drive yang terdiri dari pekerjaan.
+DRIVELIST <IDriveStatus[]>: Daftar drive yang terdiri dari pekerjaan.
   - `[BitLockerKey <String>]`: Kunci BitLocker digunakan untuk mengenkripsi drive.
   - `[BytesSucceeded <Int64?>]`: Byte berhasil ditransfer untuk drive.
   - `[CopyStatus <String>]`: Status detail tentang proses transfer data. Bidang ini tidak dikembalikan dalam respons hingga drive berada dalam status Transfer.
@@ -550,7 +553,7 @@ DRIVELIST <dengan IDriveStatus[]>: Daftar drive yang terdiri dari pekerjaan.
   - `[State <DriveState?>]`: Status drive saat ini. 
   - `[VerboseLogUri <String>]`: URI yang menunjuk ke blob yang berisi log verbose untuk operasi transfer data. 
 
-INPUTOBJECT <IImportExportIdentity> : Parameter Identitas
+INPUTOBJECT <IImportExportIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobName <String>]`: Nama pekerjaan impor/ekspor.
   - `[LocationName <String>]`: Nama lokasi. Misalnya, AS Barat atau westus.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrStorageClassificationMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrStorageClassificationMapping.md
-ms.openlocfilehash: e097f35f4d125082de3ae90ef275600aa2fafafb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 793b8562e435f1cdb435e5784a7205b32c17fd23
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294108"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050933"
 ---
 # New-AzRecoveryServicesAsrStorageClassificationMapping
 
 ## SYNOPSIS
 Membuat pemetaan klasifikasi penyimpanan ASR di vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrstorageclassificationmapping) untuk informasi terkini.
 
 ## SYNTAX
 

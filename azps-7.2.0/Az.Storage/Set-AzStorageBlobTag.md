@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobTag.md
-ms.openlocfilehash: 46be83ac24490f73fc37063fa3c365e314a99875
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 709fa45a8b7bfdb7a3ccc3475146ff1da12a212c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166958"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915315"
 ---
 # Set-AzStorageBlobTag
 
 ## SYNOPSIS
 Mengatur tag blob tertentu blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageblobtag) untuk informasi terkini.
 
 ## SYNTAX
 

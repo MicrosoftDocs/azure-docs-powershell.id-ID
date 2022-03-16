@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheScheduleEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheScheduleEntry.md
-ms.openlocfilehash: b10cbe2839e23ad7ee5c8f229b9c337dcf0c997d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 621466ff49365a190b091dcc3b93cd46a23f6c28
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917817"
 ---
 # New-AzRedisCacheScheduleEntry
 
 ## SYNOPSIS
 Membuat entri jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/new-azrediscachescheduleentry) untuk informasi terkini.
 
 ## SYNTAX
 

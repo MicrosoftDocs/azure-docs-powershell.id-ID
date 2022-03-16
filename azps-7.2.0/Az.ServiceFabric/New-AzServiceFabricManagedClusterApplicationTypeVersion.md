@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: ffb8acc9e5a10d1acad567a3d3bcec277222b07f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e2a08996fe61ea233ba85f45bbd8ad8efe2cec4b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293931"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083061"
 ---
 # New-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
 Buat versi tipe aplikasi terkelola baru di bawah grup dan kluster sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terkini.
 
 ## SYNTAX
 

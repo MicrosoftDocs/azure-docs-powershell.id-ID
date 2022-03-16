@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedInstanceDatabaseBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDeletedInstanceDatabaseBackup.md
-ms.openlocfilehash: d154f38f0da889381ab7bfc3d3083e8c97c53645
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d69eeeab78cddfb38232267f9e173f706ea2cc12
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269804"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048387"
 ---
 # Get-AzSqlDeletedInstanceDatabaseBackup
 
 ## SYNOPSIS
 Mendapatkan database terhapus yang bisa Anda pulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldeletedinstancedatabasebackup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzSqlDeletedInstanceDatabaseBackup [-ResourceGroupName] <String> [-InstanceN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDeletedInstanceDatabaseBackup** mendapatkan cadangan database Instance SQL terhapus yang ditentukan yang bisa Anda pulihkan, atau semua cadangan terhapus yang bisa Anda pulihkan.
+Cmdlet **Get-AzSqlDeletedInstanceDatabaseBackup** mendapatkan cadangan database instance SQL terhapus tertentu yang bisa Anda pulihkan, atau semua cadangan terhapus yang bisa Anda pulihkan.
 Cmdlet ini juga didukung oleh layanan SQL Instance Stretch Database di Azure.
 
 ## EXAMPLES

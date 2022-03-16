@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageTable.md
-ms.openlocfilehash: d2a10da8aab33dca5d9c3adcae219925d14c4eb3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8f39ff39918b45c88299e2212d1c17f3876dae18
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082431"
 ---
 # Get-AzStorageTable
 
 ## SYNOPSIS
 Mencantumkan tabel penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragetable) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzStorageTable** mencantumkan tabel penyimpanan yang terkait dengan
 PS C:\>Get-AzStorageTable
 ```
 
-Perintah ini akan mendapatkan semua tabel penyimpanan untuk Storage anda.
+Perintah ini akan mendapatkan semua tabel penyimpanan untuk Storage Anda.
 
 ### Contoh 2: Daftar Azure Storage tabel menggunakan karakter wildcard
 ```
@@ -51,7 +54,7 @@ PS C:\>Get-AzStorageTable -Name table*
 
 Perintah ini menggunakan karakter wildcard untuk mendapatkan tabel penyimpanan yang namanya dimulai dengan tabel.
 
-### Contoh 3: Daftar Azure Storage tabel menggunakan prefiks nama tabel
+### Contoh 3: Tabel Azure Storage menggunakan prefiks nama tabel
 ```
 PS C:\>Get-AzStorageTable -Prefix "table"
 ```
@@ -62,7 +65,7 @@ Perintah ini menggunakan parameter *Prefix* untuk mendapatkan tabel penyimpanan 
 
 ### -Konteks
 Menentukan konteks penyimpanan.
-Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzStorageContext cmdlet.
+Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzStorageContext baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext

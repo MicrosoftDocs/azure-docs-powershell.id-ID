@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIRemoteSupport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIRemoteSupport.md
-ms.openlocfilehash: ba8ac0ecb268402ab577d5c0a8bed66c1fd366a8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d28a80d33d9fbc1e0a88db6e94876e5d10035129
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275659"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915909"
 ---
 # Disable-AzStackHCIRemoteSupport
 
 ## SYNOPSIS
 Menonaktifkan Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/disable-azstackhciremotesupport) untuk informasi terkini.
 
 ## SYNTAX
 

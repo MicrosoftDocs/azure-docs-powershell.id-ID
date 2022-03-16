@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: 19ea06dae83e026d78a4fc2b84f9d4cbe6668c7d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e6640cfb3533b627ee608a9f6d6076528e8da77b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136336300"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139975011"
 ---
 # New-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Membuat HSM yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultmanagedhsm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzKeyVaultManagedHsm [-Name] <String> [-ResourceGroupName] <String> [-Locati
 Cmdlet **New-AzKeyVaultManagedHsm** membuat HSM terkelola dalam grup sumber daya yang ditentukan. Untuk menambahkan, menghapus, atau mencantumkan tombol di HSM yang dikelola, pengguna harus: 
 1. berikan izin dengan menambahkan ID pengguna ke Administrator;
 2. tambahkan penetapan peran untuk pengguna seperti "Dikelola Pengguna Crypto HSM" dan lain-lain;
-3. mencadangkan data domain keamanan dari HSM terkelola menggunakan `Export-AzKeyVaultSecurityDomain` .
+3. mencadangkan data domain keamanan dari HSM terkelola menggunakan `Export-AzKeyVaultSecurityDomain`.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini membuat HSM terkelola bernama myhsm dalam lokasi eastus2euap. Perintah tersebut menambahkan HSM yang dikelola ke grup sumber daya yang bernama myrg1. Karena perintah tidak menentukan nilai untuk parameter *SKU,* perintah membuat Standard_B1 HSM yang dikelola.
+Perintah ini membuat HSM terkelola bernama myhsm dalam lokasi eastus2euap. Perintah tersebut menambahkan HSM yang dikelola ke grup sumber daya yang bernama myrg1. Karena perintah tidak menentukan nilai untuk parameter *SKU* , perintah membuat Standard_B1 HSM yang dikelola.
 
 ### Contoh 2: Membuat HSM yang dikelola Oleh CustomB32
 ```powershell
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

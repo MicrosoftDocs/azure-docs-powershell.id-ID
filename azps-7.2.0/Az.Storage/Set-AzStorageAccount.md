@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccount.md
-ms.openlocfilehash: 2834d357392f4dc5beb3b89db5ee101a10c56225
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 74c5a012ba250ef216b9a59e724447728ad6227b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315388"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915423"
 ---
 # Set-AzStorageAccount
 
 ## SYNOPSIS
 Mengubah akun Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,24 +73,24 @@ Set-AzStorageAccount [-ResourceGroupName] <String> [-Name] <String> [-Force] [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageAccount** mengubah akun Azure Storage Anda.
-Anda dapat menggunakan cmdlet ini untuk mengubah tipe akun, memperbarui domain pelanggan, atau mengatur tag di Storage Anda.
+Cmdlet **Set-AzStorageAccount** mengubah akun Azure Storage tersebut.
+Anda dapat menggunakan cmdlet ini untuk mengubah tipe akun, memperbarui domain pelanggan, atau mengatur tag di akun Storage Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur Storage tipe akun
+### Contoh 1: Setel Storage tipe akun
 ```
 PS C:\>Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Type "Standard_RAGRS"
 ```
 
-Perintah ini mengatur tipe Storage ke Standard_RAGRS.
+Perintah ini mengatur tipe Storage ini ke Standard_RAGRS.
 
 ### Contoh 2: Mengatur domain kustom untuk akun Storage Anda
 ```
 PS C:\>Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -CustomDomainName "www.contoso.com" -UseSubDomain $True
 ```
 
-Perintah ini mengatur domain kustom untuk akun Storage tersebut.
+Perintah ini mengatur domain kustom untuk suatu Storage kustom.
 
 ### Contoh 3: Mengatur nilai tingkat akses
 ```
@@ -129,7 +132,7 @@ PS C:\>Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "m
 
 Perintah ini mengatur Encryption KeySource ke "Microsoft. Storage"
 
-### Contoh 7: Mengatur properti NetworkRuleSet dari Storage dengan JSON
+### Contoh 7: Mengatur properti NetworkRuleSet dari Storage anda dengan JSON
 ```
 PS C:\>Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -NetworkRuleSet (@{bypass="Logging,Metrics";
     ipRules=(@{IPAddressOrRange="20.11.0.0/16";Action="allow"},
@@ -156,7 +159,7 @@ PS C:\> Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "
 
 Perintah memutakhirkan akun Storage dengan Jenis "Storage" atau "BlobStorage" ke akun Storage "StorageV2".
 
-### Contoh 10: Perbarui akun Storage dengan mengaktifkan Autentikasi Azure Files AAD DS dan mengatur DefaultSharePermission.
+### Contoh 10: Perbarui akun Storage dengan mengaktifkan Azure Files AAD DS Authentication dan mengatur DefaultSharePermission.
 ```
 PS C:\> $account = Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -EnableAzureActiveDirectoryDomainServicesForFile $true -DefaultSharePermission StorageFileDataSmbShareOwner
 
@@ -278,7 +281,7 @@ LastKeyRotationTimestamp      : 4/12/2021 8:17:57 AM
 
 Perintah ini terlebih dahulu membuat keyvault dan identitas yang ditetapkan pengguna, lalu memperbarui akun penyimpanan dengan enkripsi keyvault, access keyvault penyimpanan dengan identitas yang ditetapkan pengguna.
 
-### Contoh 16: Perbarui akun Storage terenkripsi Keyvault, dari akses Keyvault dengan identitas yang ditetapkan pengguna, untuk mengakses Keyvault dengan identitas ditetapkan sistem
+### Contoh 16: Perbarui akun Storage terenkripsi Keyvault, dari akses Keyvault dengan identitas yang ditetapkan pengguna, untuk mengakses Keyvault dengan identitas yang ditetapkan sistem
 ```powershell
 # Assign System identity to the account, and give the system assigned identity acces to the keyvault
 PS C:\> $account = Set-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName  -IdentityType SystemAssignedUserAssigned
@@ -495,7 +498,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowSharedKeyAccess
-Menunjukkan apakah akun penyimpanan mengizinkan permintaan untuk diotorisasi dengan kunci akses akun melalui Kunci Bersama. Jika salah, maka semua permintaan, termasuk tanda tangan akses bersama, harus diotorisasi dengan Azure Active Directory (Azure AD). Nilai default adalah null, yang setara dengan true.
+Menunjukkan apakah akun penyimpanan mengizinkan permintaan untuk diotorisasi dengan kunci akses akun melalui Kunci Bersama. Jika salah, semua permintaan, termasuk tanda tangan akses bersama, harus diotorisasi dengan Azure Active Directory (Azure AD). Nilai default adalah null, yang setara dengan true.
 
 ```yaml
 Type: System.Boolean
@@ -646,7 +649,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Memaksakan perubahan untuk dituliskan ke Storage tersebut.
+Memaksa perubahan untuk dituliskan ke Storage tersebut.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -888,7 +891,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk mengubah Storage tersebut.
+Menentukan nama grup sumber daya untuk memodifikasi akun Storage tersebut.
 
 ```yaml
 Type: System.String
@@ -940,11 +943,11 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Standard_ZRS - Penyimpanan berlebihan zona.
 - Standard_GRS - Penyimpanan geo berlebihan.
 - Standard_RAGRS - Membaca akses yang tidak ada lagi penyimpanan geo.
-- Premium_LRS - Premium lokal yang berlebihan.
-- Standard_GZRS - Penyimpanan tak ada zona berlebihan geo.
+- Premium_LRS - Premium yang berlebihan secara lokal.
+- Standard_GZRS - Penyimpanan yang tidak berlebihan zona berulang geo.
 - Standard_RAGZRS - Membaca akses yang tidak berlebihan dalam zona penyimpanan yang berlebihan.
 Anda tidak bisa Standard_ZRS tipe Premium_LRS ke tipe akun lain.
-Anda tidak bisa mengubah tipe akun lain Standard_ZRS atau Premium_LRS.
+Anda tidak dapat mengubah tipe akun lain Standard_ZRS atau Premium_LRS.
 
 ```yaml
 Type: System.String
@@ -960,7 +963,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageEncryption
-Menunjukkan apakah menyetel atau tidak mengatur Storage enkripsi akun untuk menggunakan kunci yang dikelola Microsoft.
+Menunjukkan apakah menyetel atau tidak Storage enkripsi akun untuk menggunakan kunci yang dikelola Microsoft.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -990,7 +993,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeToStoragev2
-Mutakhirkan Storage Saya dari Storage atau BlobStorage ke StorageV2.
+Mutakhirkan Storage akun Anda dari Storage atau BlobStorage ke StorageV2.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

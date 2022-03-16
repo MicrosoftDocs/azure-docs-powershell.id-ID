@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Update-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: c407fcc893930accc332d5239e196d793bdf030f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e97f36d09e532d22e54fa5b9e838117e82b547a3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266444"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947761"
 ---
 # Update-AzStreamAnalyticsCluster
 
@@ -18,6 +18,9 @@ ms.locfileid: "138266444"
 Memperbarui kluster yang ada.
 Ini dapat digunakan untuk memperbarui sebagian (mis.
 perbarui satu atau dua properti) kluster tanpa memengaruhi definisi kluster selebihnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/update-azstreamanalyticscluster) untuk informasi terkini.
 
 ## SYNTAX
 

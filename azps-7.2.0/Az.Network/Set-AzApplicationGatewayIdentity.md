@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayIdentity.md
-ms.openlocfilehash: 1ecf46dca73ecc8408930eba3d6f2eadf2c3fe69
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 667761c0bf3d122ae88657f9dcdea8f61f1a4579
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139919077"
 ---
 # Set-AzApplicationGatewayIdentity
 
 ## SYNOPSIS
 Memperbarui identitas yang ditetapkan ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewayidentity) untuk informasi terkini.
 
 ## SYNTAX
 

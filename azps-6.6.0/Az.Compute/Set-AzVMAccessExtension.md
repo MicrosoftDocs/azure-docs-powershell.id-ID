@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMAccessExtension.md
-ms.openlocfilehash: 365e4e643434ae394fa2ec5deef460aac47dd245
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d48e15b2c4f9d67ab1d6dc4cb9e62b4b7e535b2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361706"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078957"
 ---
 # Set-AzVMAccessExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi VMAccess ke mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmaccessextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,10 +54,10 @@ Set-AzVMAccessExtension -Credential <PSCredential> -Location 'Central US' -Name 
 ## PARAMETERS
 
 ### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
+Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
 Jika mengetik nama yang berbeda dengan akun administrator lokal saat ini pada VM, ekstensi VMAccess akan menambahkan akun administrator lokal dengan nama tersebut, dan menetapkan kata sandi yang ditentukan untuk akun tersebut. Jika akun administrator lokal pada VM Anda ada, vm akan mengatur ulang kata sandi dan jika akun dinonaktifkan, ekstensi VMAccess akan mengaktifkannya.
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 
 ### -TypeHandlerVersion
 Menentukan versi ekstensi untuk digunakan untuk komputer virtual ini.
-Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Type.* typeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 sudah tidak berlaku.
+Untuk mendapatkan versi, jalankan cmdlet Get-AzVMExtensionImage dengan nilai Microsoft.Compute untuk parameter *PublisherName* dan VMAccessAgent untuk parameter *Type* . typeHandlerVersion harus 2.0 atau lebih besar, karena versi 1 sudah tidak berlaku.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: 673894edfb10eca5b438b7183ba955ce7e9f1fc4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a4a932e8f5afd3f60b049a61ae75c221cf25b426
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372646"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139935853"
 ---
 # Get-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi IP front-end di penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzLoadBalancerFrontendIpConfig -LoadBalancer <PSLoadBalancer> [-Name <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerFrontendIpConfig** mendapatkan konfigurasi IP front-end atau daftar konfigurasi IP ujung-depan dalam penyeimbang muat.
+Cmdlet **Get-AzLoadBalancerFrontendIpConfig mendapatkan konfigurasi IP front-end** atau daftar konfigurasi IP ujung-depan dalam penyeimbang muat.
 
 ## EXAMPLES
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

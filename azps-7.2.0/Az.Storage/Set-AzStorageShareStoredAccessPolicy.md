@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
-ms.openlocfilehash: c9605a7d56eb47b00cbaf35edeb96ccd570ea0ec
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e16f7c2a9ebfe7d7f0c438f1bf54d95bd868e795
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165508"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082215"
 ---
 # Set-AzStorageShareStoredAccessPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan akses yang disimpan pada Storage bersama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragesharestoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Set-AzStorageShareStoredAccessPolicy [-ShareName] <String> [-Policy] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageShareStoredAccessPolicy memperbarui** kebijakan akses yang disimpan pada Azure Storage bersama.
+Cmdlet **Set-AzStorageShareStoredAccessPolicy memperbarui** kebijakan akses tersimpan pada Azure Storage bersama.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kebijakan akses yang disimpan Storage bersama
+### Contoh 1: Memperbarui kebijakan akses tersimpan dalam Storage bersama
 ```
 PS C:\>Set-AzStorageShareStoredAccessPolicy -ShareName "ContosoShare" -Policy "GeneralPolicy" -Permission "rwdl"
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRoutePortIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRoutePortIdentity.md
-ms.openlocfilehash: 1f03636e4c95c5396e65ca3af6fcf4a89c164e91
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 90ad23a90845973787c27b6ba38e273dda74d9a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918897"
 ---
 # Set-AzExpressRoutePortIdentity
 
 ## SYNOPSIS
 Memperbarui identitas yang ditetapkan ke ExpressRoutePort.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azexpressrouteportidentity) untuk informasi terkini.
 
 ## SYNTAX
 

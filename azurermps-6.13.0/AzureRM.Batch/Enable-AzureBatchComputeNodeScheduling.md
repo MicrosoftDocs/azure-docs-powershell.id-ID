@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.batch
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Enable-AzureBatchComputeNodeScheduling.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/Enable-AzureBatchComputeNodeScheduling.md
-ms.openlocfilehash: 5a1eb4fcd9a7d555b7767d30c5da40dd3b0e84cbeb5ffa654587c6526edbe8a5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e00a1a923afdd8a851416e872028a30ce1e04a55
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414448"
 ---
 # Enable-AzureBatchComputeNodeScheduling
@@ -51,7 +51,7 @@ Untuk melakukannya, perintah pertama dalam contoh membuat referensi objek yang b
 Referensi objek ini disimpan dalam variabel yang bernama $context.
 Perintah kedua lalu menggunakan referensi objek ini dan cmdlet **Enable-AzureBatchComputeNodeScheduling** untuk menyambungkan ke myPool pool dan mengaktifkan penjadwalan tugas di tvm-1783593343_34-20151117t222514z.
 
-### Contoh 2: Mengaktifkan penjadwalan tugas pada node perhitungan dalam sebuah pool
+### Contoh 2: Mengaktifkan penjadwalan tugas pada node perhitungan dalam satu pool
 ```
 PS C:\>$Context = Get-AzureRmBatchAccountKeys -AccountName "contosobatchaccount"
 PS C:\> Get-AzureBatchComputeNode -PoolId "Pool06"  -BatchContext $Context | Enable-AzureBatchComputeNodeScheduling  -BatchContext $Context
@@ -61,7 +61,7 @@ Perintah ini mengaktifkan penjadwalan tugas di semua node perhitungan yang ditem
 Untuk menjalankan tugas ini, perintah pertama dalam contoh membuat referensi objek yang berisi tombol akun untuk akun batch contosobatchaccount.
 Referensi objek ini disimpan dalam variabel yang bernama $context.
 Perintah kedua dalam contoh lalu menggunakan referensi objek ini dan **Get-AzureBatchComputeNode** untuk mengembalikan kumpulan semua node hitung yang ditemukan di Pool06.
-Kumpulan tersebut lalu disambungkan ke cmdlet **Enable-AzureBatchComputeNodeScheduling,** yang memungkinkan penjadwalan tugas pada setiap node perhitungan dalam koleksi.
+Kumpulan tersebut lalu disambungkan ke cmdlet **Enable-AzureBatchComputeNodeScheduling** , yang memungkinkan penjadwalan tugas pada setiap node perhitungan dalam koleksi.
 
 ## PARAMETERS
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

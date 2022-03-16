@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceProperty.md
-ms.openlocfilehash: ff6a375b064b28917eb7baad029ec947c3c45b7f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2103bcc0ba6aa5dd8679d78858b63711147dbea2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166978"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915657"
 ---
 # Get-AzStorageServiceProperty
 
 ## SYNOPSIS
 Mendapatkan properti untuk Azure Storage baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageserviceproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzStorageServiceProperty [-ServiceType] <StorageServiceType> [-Context <ISto
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageServiceProperty** mendapatkan properti untuk layanan Azure Storage baru.
+Cmdlet **Get-AzStorageServiceProperty** mendapatkan properti untuk Azure Storage services.
 
 ## EXAMPLES
 

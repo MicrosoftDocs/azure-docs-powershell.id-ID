@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnServerConfiguration.md
-ms.openlocfilehash: bad81d545f61aa81565363be4effe69d9732ec0f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d84a609a896d2eb113027a888fada575f6dbd1a5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165725"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920571"
 ---
 # New-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Buat VpnServerConfiguration baru untuk mengarahkan ke konektivitas situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvpnserverconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ New-AzVpnServerConfiguration -AadAudience <String> -AadIssuer <String> -AadTenan
 ## PARAMETERS
 
 ### -AadAudience
-AAD audiens untuk autentikasi AAD P2S.
+AAD audiens untuk P2S AAD autentikasi.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageDirectory.md
-ms.openlocfilehash: 21e5f3b8d9df7312448e68713f21cb8a5c518e43
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1b9532f6e3a0936f7f6cfc27e4458ef0f70a4812
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915531"
 ---
 # New-AzStorageDirectory
 
 ## SYNOPSIS
 Membuat direktori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragedirectory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini membuat folder di lokasi yang ditentukan parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory cmdlet.
-Anda juga dapat menggunakan cmdlet Get-AzStorageFile cmdlet untuk mendapatkan direktori.
+Anda juga dapat menggunakan cmdlet Get-AzStorageFile untuk mendapatkan direktori.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileDirectory
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
 Cmdlet ini membuat folder dalam berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare baru.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 

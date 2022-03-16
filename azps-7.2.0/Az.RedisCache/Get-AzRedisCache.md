@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
-ms.openlocfilehash: 149481737f8000b527c018b864044dbdde2dff2d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5009ae2c1ffdb5ad57503d6b91c6c68fc537d71b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266603"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050331"
 ---
 # Get-AzRedisCache
 
 ## SYNOPSIS
 Mendapatkan Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/get-azrediscache) untuk informasi terkini.
 
 ## SYNTAX
 

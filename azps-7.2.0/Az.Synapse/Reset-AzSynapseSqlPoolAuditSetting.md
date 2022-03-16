@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAuditSetting.md
-ms.openlocfilehash: 4601b003eafc763ee0a602b5e68323eb71fc6acb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8badae2c3a0a1f0c5113810bf06e31d7c24f9e7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168890"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914163"
 ---
 # Reset-AzSynapseSqlPoolAuditSetting
 
 ## SYNOPSIS
 Menghapus pengaturan pengauditan analitik Azure Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqlpoolauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Reset-AzSynapseSqlPoolAuditSetting -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzSynapseSqlPoolAuditSetting** menghapus pengaturan audit azure Synapse Analytics SQL sama.
+Cmdlet **Reset-AzSynapseSqlPoolAuditSetting** menghapus pengaturan audit azure Synapse Analytics SQL pool.
 
 ## EXAMPLES
 
@@ -53,7 +56,7 @@ Cmdlet **Reset-AzSynapseSqlPoolAuditSetting** menghapus pengaturan audit azure S
 PS C:\> Reset-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini menghapus pengaturan pengauditan grup SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace.
+Perintah ini menghapus pengaturan pengauditan pool SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

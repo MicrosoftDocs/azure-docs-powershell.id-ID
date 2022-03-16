@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/New-AzRedisEnterpriseCache.md
-ms.openlocfilehash: e303cc43d82bdd89e9d0dd53df7d8a944453efe5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5295104fd69ce536d8dac283f680d788dd85063e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917565"
 ---
 # New-AzRedisEnterpriseCache
 
 ## SYNOPSIS
 Membuat cache Redis Enterprise.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.redisenterprisecache/new-azredisenterprisecache) untuk informasi terkini.
 
 ## SYNTAX
 

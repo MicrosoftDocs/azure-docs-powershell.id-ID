@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheKey.md
-ms.openlocfilehash: 88efffec3dcf9126760e6ec417c2170172a395bd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 334ce4518e2c277b3eb7d313237cf926d854b08d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917799"
 ---
 # New-AzRedisCacheKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/new-azrediscachekey) untuk informasi terkini.
 
 ## SYNTAX
 

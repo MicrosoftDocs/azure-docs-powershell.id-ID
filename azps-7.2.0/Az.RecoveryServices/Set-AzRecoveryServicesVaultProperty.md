@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
-ms.openlocfilehash: 2692302dae195a89c1b49350513376ba693c0d22
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dcb4cddbeb15c3109ac435cd42551189999b10d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918213"
 ---
 # Set-AzRecoveryServicesVaultProperty
 
 ## SYNOPSIS
 Memperbarui properti Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "
 PS C:\> $props = Set-AzRecoveryServicesVaultProperty -VaultId $vault.Id -SoftDeleteFeatureState Enable
 ```
 
-Perintah pertama akan mendapatkan objek Vault, lalu menyimpannya dalam $vault variabel.
+Perintah pertama akan mendapatkan objek Vault, lalu menyimpannya dalam $vault baru.
 Perintah kedua Memperbarui properti SoftDeleteFeatureState dari vault ke status "Diaktifkan".
 
 ### Contoh 2: Perbarui enkripsi CMK dari vault untuk menggunakan SystemAssigned MSIdentity

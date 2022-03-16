@@ -6,11 +6,11 @@ Help Version: 4.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Az.KeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Az.KeyVault.md
-ms.openlocfilehash: 1648e8263867f43fb84b7ac4e6e467b554e1966d74a69a7aac8d84752cbcc066
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 794146752c63a4423b8ec477fa8ea97e5112378a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413629"
 ---
 # Az.KeyVault Module
@@ -58,7 +58,7 @@ Mendapatkan kunci Kunci Vault.
 Mendapatkan kunci Vault yang Azure Storage Akun.
 
 ### [Get-AzKeyVaultManagedStorageSasDefinition](Get-AzKeyVaultManagedStorageSasDefinition.md)
-Mendapatkan Key Vault yang dikelola Storage SAS Definitions.
+Mendapatkan Key Vault yang Storage Sas Definitions.
 
 ### [Get-AzKeyVaultSecret](Get-AzKeyVaultSecret.md)
 Rahasianya ada di kunci vault.
@@ -100,7 +100,7 @@ Menghapus kunci di kunci vault.
 Menghapus kunci vault yang dikelola Azure Storage Dan semua definisi SAS terkait.
 
 ### [Remove-AzKeyVaultManagedStorageSasDefinition](Remove-AzKeyVaultManagedStorageSasDefinition.md)
-Menghapus definisi kunci vault Azure Storage SAS.
+Menghapus kunci Vault yang dikelola Azure Storage SAS.
 
 ### [Remove-AzKeyVaultSecret](Remove-AzKeyVaultSecret.md)
 Menghapus rahasia di kunci vault.
@@ -160,5 +160,5 @@ Memulihkan kunci vault yang dihapus ke keadaan aktif.
 Memperbarui atribut yang dapat diedit dari Key Vault yang Azure Storage Anda.
 
 ### [Update-AzKeyVaultManagedStorageAccountKey](Update-AzKeyVaultManagedStorageAccountKey.md)
-Meregenerasi kunci tertentu Dari Key Vault Azure Storage Baru.
+Meregenerasi kunci tertentu dari Key Vault Azure Storage Baru.
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzRouteConfig.md
-ms.openlocfilehash: 4bfaa542dee8b44e5d5900fe67f115ccbd09002e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b0002e63a11a47fd683573fc7bf6f3782dd836f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345446"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139973913"
 ---
 # Add-AzRouteConfig
 
 ## SYNOPSIS
 Menambahkan rute ke tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azrouteconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Subnets           : []
 
 Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan **Get-AzRouteTable**.
 Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menambahkan rute bernama Route02, lalu meneruskan hasilnya ke cmdlet **Set-AzRouteTable,** yang memperbarui tabel agar mencerminkan perubahan Anda.
+Cmdlet saat ini menambahkan rute bernama Route02, lalu meneruskan hasilnya ke cmdlet **Set-AzRouteTable** , yang memperbarui tabel agar mencerminkan perubahan Anda.
 
 ### Contoh 3: Menambahkan rute dengan Tag Layanan ke tabel rute (Pratinjau Publik)
 ```powershell
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ### -NextHopIpAddress
 Menentukan alamat IP dari alat virtual yang Anda tambahkan ke jaringan virtual Azure Anda.
 Ini merutekan paket ke alamat itu.
-Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType.*
+Tentukan parameter ini hanya jika Anda menentukan nilai VirtualAppliance untuk parameter *NextHopType* .
 
 ```yaml
 Type: System.String
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

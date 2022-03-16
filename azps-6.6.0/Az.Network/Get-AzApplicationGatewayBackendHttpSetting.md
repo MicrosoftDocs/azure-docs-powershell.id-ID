@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: f6737270d16af74501909a8ecc86dfd697cc58b0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 67054babe6592b68338344d5cdf5248f8405c41a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136379254"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139973697"
 ---
 # Get-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan HTTP ujung belakang dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewaybackendhttpsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $Settings  = Get-AzApplicationGatewayBackendHttpSetting -Name "Settings01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw sumber daya. Perintah kedua mendapatkan pengaturan HTTP bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan pengaturan HTTP bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan .
 
 ### Contoh 2: Mendapatkan kumpulan pengaturan HTTP ujung-belakang
 ```
@@ -43,7 +46,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $SettingsList  = Get-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw lokal. Perintah kedua mendapatkan kumpulan pengaturan HTTP untuk $AppGw dan menyimpan pengaturan di $SettingsList baru.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan kumpulan pengaturan HTTP untuk $AppGw dan menyimpan pengaturan di $SettingsList baru.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

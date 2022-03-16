@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncGroup.md
-ms.openlocfilehash: b85967a880eb88d1b4e8afa1699c65ef8580bbbe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 777148c9f8033876fded26ee9ca531e21fa5cb44
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169597"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082125"
 ---
 # Get-AzStorageSyncGroup
 
 ## SYNOPSIS
 Perintah ini mencantumkan semua grup sinkronisasi dalam layanan sinkronisasi penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncgroup) untuk informasi terkini.
 
 ## SYNTAX
 

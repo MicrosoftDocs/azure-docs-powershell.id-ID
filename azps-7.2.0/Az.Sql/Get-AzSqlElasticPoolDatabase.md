@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolDatabase.md
-ms.openlocfilehash: b9ebba5e64f66b6a34d7b79b11ea3965fa9cf949
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b96e01cc98d4e93234a4c4217d2dae41bad4c73e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162858"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048369"
 ---
 # Get-AzSqlElasticPoolDatabase
 
 ## SYNOPSIS
 Mendapatkan database elastis dalam kolam elastis dan nilai propertinya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpooldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzSqlElasticPoolDatabase [-ElasticPoolName] <String> [-DatabaseName <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlElasticPoolDatabase** mendapatkan database elastis dalam kolam elastis dan nilai propertinya.
-Anda dapat menentukan nama database elastis dalam Azure SQL Database untuk melihat nilai properti hanya untuk database itu.
+Anda dapat menentukan nama database elastis di Azure SQL Database untuk melihat nilai properti hanya untuk database itu.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ Perintah ini mendapatkan semua database dalam kolam elastis bernama ElastisPool0
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama perusahaan SQL Database yang akan dapatkan cmdlet ini.
+Menentukan nama perusahaan yang SQL Database cmdlet ini dapatkan.
 
 ```yaml
 Type: System.String

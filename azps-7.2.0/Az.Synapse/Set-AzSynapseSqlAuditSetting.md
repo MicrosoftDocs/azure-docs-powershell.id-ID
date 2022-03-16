@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: 90ff283337dccf2e27cd3510857293ed4d4b74ff
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: aa521ea180b4b2a5bca44f38b92d4d18c0a38b3e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168277"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914091"
 ---
 # Set-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
 Mengubah pengaturan audit Ruang Kerja Analitik Azure Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -161,7 +164,7 @@ Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut 
 "FAILED_DATABASE_AUTHENTICATION_GROUP"
 
 Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default.
-Grup ini mencakup SQL pernyataan bisnis dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Grup ini mencakup SQL pernyataan privasi dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 

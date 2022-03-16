@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWanVpnServerConfigurationVpnProfile.md
-ms.openlocfilehash: fe70db72005c8fb265e200d605eaa8b8cf374e79
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c805c56fb38f680793e3fd6d8af8f84e14dbe9d6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362234"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139935385"
 ---
 # Get-AzVirtualWanVpnServerConfigurationVpnProfile
 
 ## SYNOPSIS
-Menghasilkan dan mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat demi Arahkan ke penyiapan klien situs.
+Menghasilkan dan mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat untuk Arahkan ke penyiapan klien situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualwanvpnserverconfigurationvpnprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ ProfileUrl : https://nfvprodsuppby.blob.core.windows.net/vpnprofileimmutable/aa3
              qsEAbWAcYiKfUHFxZzh2hwvtb49dfVtUDA%3D&st=2019-10-25T19%3A52%3A36Z&se=2019-10-25T20%3A52%3A36Z&sp=r&fileExtension=.zip
 ```
 
-Perintah di atas akan menghasilkan dan mengembalikan Url SAS pelanggan untuk mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat untuk penyiapan klien situs Point to.
+Perintah di atas akan menghasilkan dan mengembalikan URL SAS pelanggan untuk mengunduh profil Vpn VirtualWan-VpnServerConfiguration tingkat untuk penyiapan klien situs Poin ke.
 
 ## PARAMETERS
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

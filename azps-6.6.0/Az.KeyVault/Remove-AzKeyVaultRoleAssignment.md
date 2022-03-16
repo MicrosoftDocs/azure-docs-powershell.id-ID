@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 15231ee32ff5e7dd7383af8e1206d05998f15f5b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bdba0f6805ec15d04e07113a046ff089aac7e078
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352514"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139974849"
 ---
 # Remove-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
 Menghapus penetapan peran ke pokok tertentu yang ditetapkan pada peran tertentu di lingkup tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Remove-AzKeyVaultRoleAssignment [-Scope <String>] [-PassThru] -InputObject <PSKe
 ```
 
 ## DESCRIPTION
-Gunakan `Remove-AzKeyVaultRoleAssignment` cmdlet untuk mencabut akses ke pokok apa pun dalam lingkup dan peran tertentu. Objek penetapan i.e. pokok HARUS ditentukan. Pokoknya dapat adalah pengguna (menggunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (menggunakan parameter ObjectId untuk mengidentifikasi grup) atau prinsipal layanan (menggunakan parameter ApplicationId atau ObjectId untuk mengidentifikasi ServicePrincipal. Peran yang ditetapkan untuk POKOK HARUS ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
+`Remove-AzKeyVaultRoleAssignment` Gunakan cmdlet untuk mencabut akses ke pokok apa pun dalam lingkup dan peran tertentu. Objek penetapan i.e. pokok HARUS ditentukan. Pokoknya dapat adalah pengguna (menggunakan parameter SignInName atau ObjectId untuk mengidentifikasi pengguna), grup keamanan (menggunakan parameter ObjectId untuk mengidentifikasi grup) atau prinsipal layanan (menggunakan parameter ApplicationId atau ObjectId untuk mengidentifikasi ServicePrincipal. Peran yang ditetapkan untuk POKOK HARUS ditentukan menggunakan parameter RoleDefinitionName atau RoleDefinitionId.
 
 ## EXAMPLES
 
@@ -83,14 +86,14 @@ Gunakan `Remove-AzKeyVaultRoleAssignment` cmdlet untuk mencabut akses ke pokok a
 PS C:\> Remove-AzKeyVaultRoleAssignment -HsmName myHsm -RoleDefinitionName "Managed HSM Policy Administrator" -SignInName user1@microsoft.com -Scope "/keys"
 ```
 
-Contoh ini mencabut peran "Administrator Kebijakan HSM Terkelola" dari user1@microsoft.com " " pada lingkup "/kunci".
+Contoh ini mencabut peran "Administrator Kebijakan HSM Terkelola" dalam lingkup "user1@microsoft.com/keys".
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzKeyVaultRoleAssignment -HsmName myHsm -SignInName user1@microsoft.com | Remove-AzKeyVaultRoleAssignment
 ```
 
-Contoh ini mencabut semua peran " user1@microsoft.com " dalam semua lingkup.
+Contoh ini mencabut semua peran "user1@microsoft.com" dalam semua lingkup.
 
 ## PARAMETERS
 
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobImmutabilityPolicy.md
-ms.openlocfilehash: 80a79acc1dd2d6c3e58d6364df13a6991826dfc5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: de7d9a9345ec0c77cbe9cc3d8f3b89fe0908be03
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166968"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915369"
 ---
 # Set-AzStorageBlobImmutabilityPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui ImmutabilityPolicy atau Storage blob.
+Membuat atau memperbarui ImmutabilityPolicy suatu Storage blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageblobimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Set-AzStorageBlobImmutabilityPolicy** membuat atau memperbarui Immutabi
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui kebijakan ketermukaan data Storage blob.
+### Contoh 1: Membuat atau memperbarui kebijakan keterbacaan data Storage blob.
 ```
 PS C:\> $blob = Set-AzStorageBlobImmutabilityPolicy -Container $containerName -Blob $blobname  -ExpiresOn (Get-Date).AddDays(100) -PolicyMode Unlocked
 
@@ -61,8 +64,8 @@ ExpiresOn                    PolicyMode
 10/27/2021 8:56:32 AM +00:00   Unlocked
 ```
 
-Perintah ini membuat atau memperbarui ImmutabilityPolicy Storage blob, lalu memperlihatkan blob dan ImmutabilityPolicy-nya.
-Perintah hanya berfungsi ketika penampung blob telah mengaktifkan fitur yang tidak Storage dengan versioning.
+Perintah ini membuat atau memperbarui ImmutabilityPolicy suatu Storage blob, lalu memperlihatkan blob dan ImmutabilityPolicy-nya.
+Perintah hanya berfungsi ketika wadah blob telah mengaktifkan fitur yang dapat dimut coba Storage dengan versioning.
 
 ## PARAMETERS
 

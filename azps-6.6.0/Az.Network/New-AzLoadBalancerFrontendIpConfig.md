@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: 2e748d70811a2de9c25639c37e7ce1e480137bdc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e4d08a7dff855cdcf47c66ad4e2bd8e451b61de6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356246"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139934665"
 ---
 # New-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP front-end untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalancerfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ New-AzLoadBalancerFrontendIpConfig -Name <String> [-Zone <String[]>] -PublicIpAd
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzLoadBalancerFrontendIpConfig** membuat konfigurasi IP front-end untuk penyeimbang muat Azure.
+Cmdlet **New-AzLoadBalancerFrontendIpConfig membuat konfigurasi IP front-end** untuk penyeimbang muat Azure.
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ PS C:\> New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpA
 ```
 
 Perintah pertama membuat alamat IP publik dinamis bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip lokal.
-Perintah kedua membuat konfigurasi IP ujung-depan bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip.
 
 ### Contoh 2: Membuat konfigurasi IP front-end untuk penyeimbang muat menggunakan prefiks ip
 ```
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -PrivateIpAddress
 Menentukan alamat IP privat penyeimbang muat.
-Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet.*
+Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet* .
 
 ```yaml
 Type: System.String
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,16 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSlot.md
-ms.openlocfilehash: 6953ca66acb376ef53381145d73d97d1def2fdab
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2b0c91f05f1f26cfa3da4d071ac6b675bd2b984
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165465"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139913713"
 ---
 # Remove-AzWebAppSlot
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azwebappslot) untuk informasi terkini.
 
 ## SYNTAX
 

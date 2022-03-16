@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteGateway.md
-ms.openlocfilehash: 31dee151cfed96285f18eef7fa145cfcabb27ab3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ec870d5d3c82bdd68c223bcc8259b22b19145e81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269996"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918933"
 ---
 # Set-AzExpressRouteGateway
 
 ## SYNOPSIS
 Memperbarui Gateway ExpressRoute yang Dapat Disesuaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azexpressroutegateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxScaleUnits
-Jumlah maksimum unit skala untuk ExpressRouteGateway ini. Rentang yang > 2
+Jumlah maksimum unit skala untuk ExpressRouteGateway ini. Rentang yang valid > 2
 
 ```yaml
 Type: System.UInt32
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinScaleUnits
-Jumlah minimum unit skala untuk ExpressRouteGateway ini. Rentang yang > 2
+Jumlah minimum unit skala untuk ExpressRouteGateway ini. Rentang yang valid > 2
 
 ```yaml
 Type: System.UInt32

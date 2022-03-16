@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
-ms.openlocfilehash: 0073196206fd78edcdff061231fca954b1ed0d1a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cedf7160a3dfa05f35a32132963fb3171a3df52f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139975929"
 ---
 # Set-AzHDInsightDefaultStorage
 
 ## SYNOPSIS
 Mengatur pengaturan akun Storage default dalam objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightdefaultstorage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Perintah ini mengatur akun Storage default untuk objek konfigurasi kluster.
 
 ### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
-Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig.**
+Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

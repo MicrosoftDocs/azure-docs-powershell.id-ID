@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileCopyState.md
-ms.openlocfilehash: 7e921acb0df996571fadf28a040f6819da2a9dbf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2caba9b98abad12d0c150f1a23253bc06d34c40f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082467"
 ---
 # Get-AzStorageFileCopyState
 
 ## SYNOPSIS
 Mendapatkan status operasi penyalinan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragefilecopystate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan objek **CloudFile** .
-Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile.
+Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -FilePath
-Menentukan jalur file relatif terhadap file yang Azure Storage bersama.
+Menentukan jalur file relatif terhadap file Azure Storage bersama.
 
 ```yaml
 Type: System.String

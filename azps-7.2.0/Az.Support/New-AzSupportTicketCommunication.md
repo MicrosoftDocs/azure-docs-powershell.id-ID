@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/new-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportTicketCommunication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportTicketCommunication.md
-ms.openlocfilehash: 7c4171a7eafbf70e4df87f0eeb7d4e755630f0d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2fec656a55b3b38cf969314b259d6f08aa833705
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260539"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914816"
 ---
 # New-AzSupportTicketCommunication
 
 ## SYNOPSIS
 Membuat komunikasi tiket dukungan baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/new-azsupportticketcommunication) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolSensitivityClassification.md
-ms.openlocfilehash: b49b7a0f31b89cf735ae59dda3e14ecbc3425f7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 93ac7cf49f998d3bcfcedd88b1bab5d47f211367
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914073"
 ---
 # Set-AzSynapseSqlPoolSensitivityClassification
 
 ## SYNOPSIS
 Mengatur tipe informasi dan label sensitivitas kolom dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpoolsensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,12 +53,12 @@ Cmdlet Set-AzSynapseSqlPoolSensitivityClassification mengatur tipe informasi dan
 PS C:\> Set-AzSynapseSqlPoolSensitivityClassification -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
 
-### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom di Azure Synapse SQL sama.
+### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam kumpulan SQL Azure Synapse.
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Set-AzSynapseSqlPoolSensitivityClassification
 ```
 
-### Contoh 3: Atur tipe informasi dan label sensitivitas kolom dalam kumpulan SQL Azure Synapse menggunakan pemipaan.
+### Contoh 3: Atur tipe informasi dan label sensitivitas kolom dalam kumpulan SQL Azure Synapse, menggunakan pemipaan.
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Set-AzSynapseSqlPoolSensitivityClassification  -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteGateway.md
-ms.openlocfilehash: 27bacf6abdc7686224adb8bbe885dc31c56fd337
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 478d04430da3bee3e44edd5af96ba31a8356315d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169807"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920355"
 ---
 # Remove-AzExpressRouteGateway
 
 ## SYNOPSIS
 Cmdlet Remove-AzExpressRouteGateway menghapus gateway Azure ExpressRoute. Ini adalah gateway khusus untuk perangkat lunak Azure Virtual WAN konektivitas yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azexpressroutegateway) untuk informasi terkini.
 
 ## SYNTAX
 

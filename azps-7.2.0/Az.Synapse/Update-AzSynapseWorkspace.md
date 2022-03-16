@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseWorkspace.md
-ms.openlocfilehash: 0357baf9815befd8776b2f380e205ed837afab67
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3406733e5284da9783de955cbd7146f8174b38fa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162738"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914001"
 ---
 # Update-AzSynapseWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapseworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorLoginPassword
-Kata sandi SQL administrator baru untuk ruang kerja.
+Administrator kata sandi SQL baru untuk ruang kerja.
 
 ```yaml
 Type: System.Security.SecureString

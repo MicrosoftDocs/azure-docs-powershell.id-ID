@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 596a61841dbe92085bf223e860d781440f8bb2f8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8bd831ed3f6cf6db15fb7e427fa2d602dddc3782
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354473"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139936501"
 ---
 # Add-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP antarmuka jaringan ke antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-aznetworkinterfaceipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan objek **NetworkInterface.**
+Menentukan objek **NetworkInterface** .
 Cmdlet ini menambahkan konfigurasi IP antarmuka jaringan ke objek yang ditentukan parameter ini.
 
 ```yaml
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIPAddress.**
+Menentukan objek **PublicIPAddress** .
 Cmdlet ini membuat referensi ke Alamat IP publik untuk dikaitkan dengan konfigurasi IP antarmuka jaringan ini.
 
 ```yaml
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **Subnet.**
+Menentukan objek **Subnet** .
 Cmdlet ini membuat referensi ke subnet di mana konfigurasi IP antarmuka jaringan ini dibuat.
 
 ```yaml
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

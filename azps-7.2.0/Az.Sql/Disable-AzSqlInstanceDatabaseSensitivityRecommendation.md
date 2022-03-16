@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlInstanceDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlInstanceDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: c3820a8d811a289504066a13347d6ffc7bb31805
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8b00a32561954f40794d608c97f277fc46c1d961
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259467"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048495"
 ---
 # Disable-AzSqlInstanceDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
 Menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom di database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/disable-azsqlinstancedatabasesensitivityrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ PS C:\> Disable-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupNam
 PS C:\> Get-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database | Disable-AzSqlInstanceDatabaseSensitivityRecommendation
 ```
 
-### Contoh 3: Nonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance dengan Piping.
+### Contoh 3: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance dengan Piping.
 ```powershell
 PS C:\> Get-AzSqlInstanceDatabase -ResourceGroupName resourceGroup -InstanceName managedInstance -Name database | Disable-AzSqlInstanceDatabaseSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek mewakili Klasifikasi Sensitivitas Database SQL Terkelola.
+Objek mewakili klasifikasi SQL Sensitivitas Database Terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel

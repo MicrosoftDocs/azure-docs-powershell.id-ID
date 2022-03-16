@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: 67df569126d96a70d312a938543cc5b6b7a14c0a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ea61620476d2cf0e6e1af45f9c0f6a4e364737a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374917"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139936303"
 ---
 # Get-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
 Mendapatkan port ujung-depan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> $FrontEndPort = Get-AzApplicationGatewayFrontendPort -Name "FrontEndPort
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan port ujung-depan bernama FrontEndPort01 dari $AppGw dan menyimpannya dalam $FrontEndPort variabel.
+Perintah kedua mendapatkan port ujung-depan bernama FrontEndPort01 dari $AppGw dan menyimpannya dalam $FrontEndPort akhir.
 
 ### Contoh 2: Mendapatkan daftar port ujung-depan
 ```
@@ -46,7 +49,7 @@ PS C:\> $FrontEndPorts = Get-AzApplicationGatewayFrontendPort  -ApplicationGatew
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan daftar port ujung-depan dari $AppGw dan menyimpannya dalam variabel $FrontEndPorts.
+Perintah kedua mendapatkan daftar port ujung-depan dari $AppGw dan menyimpannya di $FrontEndPorts variabel.
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

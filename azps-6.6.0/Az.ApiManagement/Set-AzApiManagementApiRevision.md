@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiRevision.md
-ms.openlocfilehash: 0979190d5d584983bf9baa35d6699da6c95e7125
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e7f0defc7d9f807f518aa9b19b4d98f97138517a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337605"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139980789"
 ---
 # Set-AzApiManagementApiRevision
 
 ## SYNOPSIS
 Memodifikasi Revisi API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapirevision) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Defa
 PS C:\>Set-AzApiManagementApiRevision -Context $ApiMgmtContext -ApiId "echo-api" -ApiRevision "2" -Name "EchoApi" -ServiceUrl "https://contoso.com/apis/echo" -Protocols @('https') -Description "Responds with what was sent" -Path "echo"
 ```
 
-Cmdlet memperbarui `2` revisi API dengan `echo-api` deskripsi, protokol, dan jalur baru.
+Cmdlet memperbarui revisi `2` API dengan deskripsi `echo-api` , protokol, dan jalur baru.
 
 ## PARAMETERS
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. Lihat https://datatracker.ietf.org/doc/html/rfc6749#section-4 . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -382,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

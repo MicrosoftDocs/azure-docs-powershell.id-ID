@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Update.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.update.admin/resume-azsupdaterun
 schema: 2.0.0
-ms.openlocfilehash: 12174bc4c60e7ee48e05c0f0e19949b507cc41345ac4cd1a756b374786636251
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 65d2b3a045d38435cdd709d47c0be88f7fc98af0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414386"
 ---
 # Resume-AzsUpdateRun
@@ -224,7 +224,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUpdateAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IUpdateAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[RunName <String>]`: Perbarui jalankan pengidentifikasi.

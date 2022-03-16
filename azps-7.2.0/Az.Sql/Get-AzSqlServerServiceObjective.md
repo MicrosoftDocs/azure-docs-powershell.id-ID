@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerServiceObjective.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerServiceObjective.md
-ms.openlocfilehash: 894445df4d3cfa775aada50c5f63acc2daf9b016
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 700a33e88f7139bbb538c00d7fc0cc09f4b2aea2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264555"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048153"
 ---
 # Get-AzSqlServerServiceObjective
 
 ## SYNOPSIS
-Dapatkan tujuan layanan untuk Azure SQL Database server baru.
+Dapatkan tujuan layanan untuk Azure SQL Database server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserverserviceobjective) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama tujuan layanan untuk server Azure SQL Database.
+Menentukan nama tujuan layanan untuk suatu Azure SQL Database server.
 Nilai yang dapat diterima untuk parameter ini adalah: Basic, S0, S1, S2, P1, P2, dan P3.
 
 ```yaml

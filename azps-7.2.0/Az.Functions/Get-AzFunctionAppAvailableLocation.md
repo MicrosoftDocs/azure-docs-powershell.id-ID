@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppAvailableLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionAppAvailableLocation.md
-ms.openlocfilehash: 78837677cdf1a2d6f1ca72ff5fa5cd143c35fcd9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0a82dc95bc9515c1da8078e23c70ccdbb0b9db21
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056613"
 ---
 # Get-AzFunctionAppAvailableLocation
 
 ## SYNOPSIS
 Mendapatkan lokasi di mana aplikasi fungsi untuk os dan tipe paket tertentu tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/get-azfunctionappavailablelocation) untuk informasi terkini.
 
 ## SYNTAX
 

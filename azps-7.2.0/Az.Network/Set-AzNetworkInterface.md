@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
-ms.openlocfilehash: 71bfb8f37bf8440b05516b953c6c578c68d5dc64
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 29bcf2d84c514b5997084b559744f349d92d9404
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299884"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918789"
 ---
 # Set-AzNetworkInterface
 
 ## SYNOPSIS
 Memperbarui antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkinterface) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ $nic.EnableIPForwarding = 1
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic variabel. Perintah kedua akan mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, namun pastikan untuk mengubah perintah kedua ke "$nic. EnableIPForwarding = 0".
+Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic baru. Perintah kedua akan mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, namun pastikan untuk mengubah perintah kedua ke "$nic. EnableIPForwarding = 0".
 
 ### Contoh 4: Mengubah subnet antarmuka jaringan
 ```
@@ -87,7 +90,7 @@ $nic.NetworkSecurityGroup = $nsg
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic variabel. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya di $nsg baru. Perintah ketiga menetapkan $nsg ke $nic. Terakhir, perintah keempat menerapkan perubahan pada antarmuka Jaringan. Untukssociate grup keamanan jaringan dari antarmuka jaringan, cukup ganti $nsg perintah ketiga dengan $null.
+Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic baru. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya di $nsg jaringan. Perintah ketiga menetapkan $nsg ke $nic. Terakhir, perintah keempat menerapkan perubahan pada antarmuka Jaringan. Untukssociate grup keamanan jaringan dari antarmuka jaringan, cukup ganti $nsg di perintah ketiga dengan $null.
 
 ## PARAMETERS
 
