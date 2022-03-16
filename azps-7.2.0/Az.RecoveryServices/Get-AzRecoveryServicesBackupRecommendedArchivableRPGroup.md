@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecommendedArchivableRPGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecommendedArchivableRPGroup.md
-ms.openlocfilehash: baa816b0e2b4f15a5ab9cd8fca6704c184a06c7f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6afe7a1aead4a85c98e569ddeb032c2f1ade32b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254316"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117727"
 ---
 # Get-AzRecoveryServicesBackupRecommendedArchivableRPGroup
 
 ## SYNOPSIS
 Dapatkan poin pemulihan yang direkomendasikan untuk dipindahkan bersama-sama ke tingkatan VaultArchive.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecommendedarchivablerpgroup) untuk informasi terkini.
 
 ## SYNTAX
 

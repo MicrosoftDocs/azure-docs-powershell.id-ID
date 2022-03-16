@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentWhatIfResult.md
-ms.openlocfilehash: 067027c89e34dbfef62781fd38938cbd76100e7c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f82fc7ec845b84fc0cec8174a45598341f32e76d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384521"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140132001"
 ---
 # Get-AzResourceGroupDeploymentWhatIfResult
 
 ## SYNOPSIS
 Mendapatkan templat dan What-If untuk penggunaan di lingkup grup sumber daya. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeploymentwhatifresult) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,11 +147,11 @@ Get-AzResourceGroupDeploymentWhatIfResult [-Name <String>] -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzResourceGroupDeploymentWhatIfResult** cmdlet gets the ARM template What-If result for a template deployment at the specified resource group scope. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat.*
+Cmdlet **Get-AzResourceGroupDeploymentWhatIfResult** cmdlet gets the ARM template What-If result for a template deployment at the specified resource group scope. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan What-If di lingkup grup sumber daya
+### Contoh 1: Dapatkan hasil What-If di lingkup grup sumber daya
 ```powershell
 PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -DeploymentName "deploy-01" `
@@ -158,13 +161,13 @@ PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -ResultFormat "FullResourcePayloads"
 ```
 
-Perintah ini mendapatkan What-If di lingkup grup sumber daya tertentu dengan menggunakan file templat kustom dan file parameter di disk.
+Perintah ini mendapatkan What-If grup sumber daya yang ditentukan dengan menggunakan file templat kustom dan file parameter di disk.
 Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan disebarkan.
 Perintah tersebut menggunakan parameter *TemplateFile* untuk menentukan file templat.
 Perintah ini menggunakan *parameter TemplateParameterFile* untuk menentukan file parameter templat.
 Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If menyertakan payload sumber daya penuh.
 
-### Contoh 2: Mendapatkan hasil What-If pada lingkup grup sumber daya dengan ResourceIdOnly
+### Contoh 2: Mendapatkan hasil What-If di lingkup grup sumber daya dengan ResourceIdOnly
 ```powershell
 PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -DeploymentName "deploy-01" `
@@ -174,7 +177,7 @@ PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -ResultFormat "ResourceIdOnly"
 ```
 
-Perintah ini mendapatkan What-If di lingkup grup sumber daya tertentu dengan menggunakan file templat kustom dan file parameter di disk.
+Perintah ini mendapatkan What-If grup sumber daya yang ditentukan dengan menggunakan file templat kustom dan file parameter di disk.
 Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan disebarkan.
 Perintah tersebut menggunakan parameter *TemplateFile* untuk menentukan file templat.
 Perintah ini menggunakan *parameter TemplateParameterFile* untuk menentukan file parameter templat.
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

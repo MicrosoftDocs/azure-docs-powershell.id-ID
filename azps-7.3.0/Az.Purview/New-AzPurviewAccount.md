@@ -5,20 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/New-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/New-AzPurviewAccount.md
-ms.openlocfilehash: 4e4e8cc827d1b2f95ebee71beb9bd1687aab47e5
+ms.openlocfilehash: 15cc482dd732ce3c0d9d8ab2af062563a0d0a976
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068517"
+ms.locfileid: "140190170"
 ---
 # New-AzPurviewAccount
 
 ## SYNOPSIS
 Membuat atau memperbarui akun
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/new-azpurviewaccount) untuk informasi terkini.
 
 ## SYNTAX
 

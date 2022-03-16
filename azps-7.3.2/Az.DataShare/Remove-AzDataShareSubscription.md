@@ -1,61 +1,75 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.Peering.dll-Help.xml
-Module Name: Az.Peering
-online version: https://docs.microsoft.com/powershell/module/az.peering/remove-azpeering
+external help file: Microsoft.Azure.PowerShell.Cmdlets.DataShare.dll-Help.xml
+Module Name: Az.DataShare
+online version: https://docs.microsoft.com/powershell/module/az.datashare/remove-azdatasharesubscription
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeering.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeering.md
-ms.openlocfilehash: 52c707db6f214df7cad82396ca98e57bbc8889f8
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSubscription.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Remove-AzDataShareSubscription.md
+ms.openlocfilehash: ca98b92578625e0fcf7ab3830c666757b5f68b08
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068987"
+ms.locfileid: "140200742"
 ---
-# Remove-AzPeering
+# Remove-AzDataShareSubscription
 
 ## SYNOPSIS
-Menghapus atau menghapus peering. Ini akan menghapus semua sumber daya anak atau memberitahukan sumber daya tersebut.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/remove-azpeering) untuk informasi terkini.
+menghapus langganan bersama
 
 ## SYNTAX
 
-### ByName (Default)
+### ByFieldsParameterSet (Default)
 ```
-Remove-AzPeering [-ResourceGroupName] <String> [-Name] <String> [-Force] [-PassThru] [-AsJob]
+Remove-AzDataShareSubscription -ResourceGroupName <String> -AccountName <String> -Name <String> [-PassThru]
+ [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ByResourceIdParameterSet
+```
+Remove-AzDataShareSubscription -ResourceId <String> [-PassThru] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### InputObject
+### ByObjectParameterSet
 ```
-Remove-AzPeering [-InputObject] <PSPeering> [-Force] [-PassThru] [-AsJob]
+Remove-AzDataShareSubscription -InputObject <PSDataShareSubscription> [-PassThru] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ByResourceId
-```
-Remove-AzPeering -ResourceId <String> [-Force] [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Menghapus sumber daya peering secara permint waktu.
+Cmdlet **Remove-AzDataShareSubscription** menghapus langganan berbagi
 
 ## EXAMPLES
 
 ### Contoh 1
-```powershell
-PS C:\> Remove-AzPeering -ResourceId $resourceId
+```
+PS C:\> Remove-AzDataShareSubscription -ResourceGroupName "ADS" -AccountName "WikiAds" -Name "AdsShareSubscription"
+Are you sure you want to remove sharesubscription "AdsShareSubscription"? 
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 ```
 
-Menghapus peering menurut id sumber daya.
+Perintah ini menghapus subskripsi bernama AdsShareSubscription dari akun WikiAds. 
 
 ## PARAMETERS
 
+### -Nama Akun
+Nama akun berbagi data Azure.
+
+```yaml
+Type: System.String
+Parameter Sets: ByFieldsParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AsJob
-Jalankan di latar belakang.
+{{Fill AsJob Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,53 +98,39 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa operasi untuk selesai
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
-Gunakan Get-AzPeering untuk mengambil objek ini.
+Objek langganan berbagi data Azure
+
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeering
-Parameter Sets: InputObject
+Type: Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareSubscription
+Parameter Sets: ByObjectParameterSet
 Aliases:
 
 Required: True
-Position: 0
+Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama unik PSPeering.
+Nama langganan berbagi data Azure
 
 ```yaml
 Type: System.String
-Parameter Sets: ByName
+Parameter Sets: ByFieldsParameterSet
 Aliases:
 
 Required: True
-Position: 1
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true jika selesai
+Objek yang dikembalikan (jika ditentukan).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,26 +145,26 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Buat atau gunakan nama grup sumber daya yang sudah ada.
+Nama grup sumber daya akun berbagi data Azure
 
 ```yaml
 Type: System.String
-Parameter Sets: ByName
+Parameter Sets: ByFieldsParameterSet
 Aliases:
 
 Required: True
-Position: 0
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Nama string id sumber daya.
+Id sumber daya langganan berbagi data Azure
 
 ```yaml
 Type: System.String
-Parameter Sets: ByResourceId
+Parameter Sets: ByResourceIdParameterSet
 Aliases:
 
 Required: True
@@ -210,9 +210,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeering
-
 ### System.String
+
+### Microsoft.Azure.PowerShell.Cmdlets.DataShare.Models.PSDataShareSubscription
 
 ## OUTPUTS
 

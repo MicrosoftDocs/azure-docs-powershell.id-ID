@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollectionAccessKey.md
-ms.openlocfilehash: 13f990e64991302ac7a31764d12560d01d01fad7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 568afc1b0e344b35bd603f28c1795a83738073c1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345173"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140068751"
 ---
 # Get-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
-Mendapatkan kunci akses saat ini yang terkait dengan Power BI kerja baru.
+Dapatkan kunci akses saat ini yang terkait dengan kumpulan Power BI kerja Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspacecollectionaccesskey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzPowerBIWorkspaceCollectionAccessKey [-ResourceGroupName] <String> [-Worksp
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan kunci akses saat ini yang terkait dengan Power BI ruang kerja Anda.
+Cmdlet **Get-AzPowerBIWorkspaceCollectionAccessKey** mendapatkan kunci akses saat ini yang terkait dengan Power BI ruang kerja.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
