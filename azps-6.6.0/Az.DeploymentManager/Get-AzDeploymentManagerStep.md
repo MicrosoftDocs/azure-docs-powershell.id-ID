@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerStep.md
-ms.openlocfilehash: 66e7fd3e3943ba2ff9df8f115d768a894a943915
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1e18b38ca02ec6b82b559ce57addc688015a509d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353297"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139940623"
 ---
 # Get-AzDeploymentManagerStep
 
 ## SYNOPSIS
 Dapatkan langkahnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerstep) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Get-AzDeploymentManagerStep [-InputObject] <PSStepResource> [-DefaultProfile <IA
 Cmdlet **Get-AzDeploymentManagerStep** mendapatkan langkah, dan mengembalikan objek yang mewakili langkah tersebut.
 Tentukan langkah berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Langkah atau ResourceId.
 
-Anda bisa memodifikasi objek ini secara lokal, lalu menerapkan perubahan ke sumber artifak dengan menggunakan cmdlet Set-AzDeploymentManagerStep.
+Anda bisa mengubah objek ini secara lokal, lalu menerapkan perubahan ke sumber artifak dengan menggunakan cmdlet Set-AzDeploymentManagerStep.
 
 ## EXAMPLES
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

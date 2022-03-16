@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: 26d6f17d1366b3b7f11b6a608b5a538f3cdf1807
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4f2e777b54d84d4ed16c5007892679482a5987be
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363149"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139939723"
 ---
 # Remove-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi Hub Acara tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhubauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzEventHubAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <S
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubAuthorizationRule menghapus dan menghapus aturan otorisasi yang ditentukan dari Hub Kejadian tertentu.
+Cmdlet Remove-AzEventHubAuthorizationRule menghapus dan menghapus aturan otorisasi yang ditentukan dari Hub Acara tertentu.
 
 ## EXAMPLES
 
@@ -42,14 +45,14 @@ Cmdlet Remove-AzEventHubAuthorizationRule menghapus dan menghapus aturan otorisa
 PS C:\> Remove-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyAuthRuleName
 ```
 
-Menghapus aturan otorisasi \` MyAuthRuleName \` dari Namespace \` MyNamespaceName \` .
+Menghapus aturan otorisasi \`MyAuthRuleName\` dari Namespace \`MyNamespaceName\`.
 
 ### Contoh 2
 ```
 PS C:\> Remove-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyAuthRuleName
 ```
 
-Menghapus aturan otorisasi \` MyAuthRuleName \` dari Hub Kejadian \` MyEventHubName \` .
+Menghapus aturan otorisasi \`MyAuthRuleName dari\` Hub Kejadian \`MyEventHubName\`.
 
 ## PARAMETERS
 
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

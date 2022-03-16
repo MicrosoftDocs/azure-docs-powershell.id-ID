@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementSubscription.md
-ms.openlocfilehash: 1dbe978bcef4c29b7d89802a7642dab8ecdbc59c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: df3f2554f3af9a78013123e3b6fd10b396685789
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309644"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929481"
 ---
 # Remove-AzApiManagementSubscription
 
 ## SYNOPSIS
 Menghapus langganan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementsubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai nilai yang $false, jika tidak.
+Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai nilai $false, jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

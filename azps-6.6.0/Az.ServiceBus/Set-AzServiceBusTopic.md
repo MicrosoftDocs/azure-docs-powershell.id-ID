@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusTopic.md
-ms.openlocfilehash: 9b3c0236b446a06d85a7dc323c4c7616823cfd5d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e5f601bdb7f29bf5664a00e4d18d50033f2f140e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355130"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139968891"
 ---
 # Set-AzServiceBusTopic
 
 ## SYNOPSIS
-Memperbarui deskripsi dari topik Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+Memperbarui deskripsi topik Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/set-azservicebustopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ SupportOrdering                     : False
 UpdatedAt                           : 10/12/2018 12:01:29 AM
 ```
 
-Memperbarui topik tertentu dengan deskripsi baru di ruang nama yang ditentukan. Contoh ini memperbarui **properti EnableExpress** ke **true.** 
+Memperbarui topik tertentu dengan deskripsi baru di ruang nama yang ditentukan. Contoh ini memperbarui **properti EnableExpress** ke **true**. 
 
 ## PARAMETERS
 
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

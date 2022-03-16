@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterface.md
-ms.openlocfilehash: b882b051f07dde9b16a5ef7e15da2d786e7a9748
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f5aaf4c0143b7f1aa3b11792f9d9a91665f8b888
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169120"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954077"
 ---
 # Remove-AzNetworkInterface
 
 ## SYNOPSIS
 Menghapus antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-aznetworkinterface) untuk informasi terkini.
 
 ## SYNTAX
 

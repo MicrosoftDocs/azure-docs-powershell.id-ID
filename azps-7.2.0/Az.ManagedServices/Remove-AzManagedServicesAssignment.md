@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Remove-AzManagedServicesAssignment.md
-ms.openlocfilehash: 4c677006488e141105cf720bde718f12991e8b03
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8b4d780aa509c8715e9c731cc29e129196e8c36d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300187"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956614"
 ---
 # Remove-AzManagedServicesAssignment
 
 ## SYNOPSIS
 Menghapus penetapan pendaftaran tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/remove-azmanagedservicesassignment) untuk informasi terkini.
 
 ## SYNTAX
 

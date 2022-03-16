@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightClusterConfig.md
-ms.openlocfilehash: 2e7735a589926ba76854bc5472b135c95c212f83
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a3ff39335c7f76d53709190f4dd614a80c0a8ed0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342998"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139938931"
 ---
 # New-AzHDInsightClusterConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi kluster yang tidak tetap yang menjelaskan konfigurasi kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightclusterconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeNodeSize
-Menentukan ukuran mesin virtual untuk simpul tepi. Gunakan Get-AzVMSize vm yang dapat diterima, dan lihat halaman harga HDInsight. Parameter ini hanya valid untuk kluster RServer.
+Menentukan ukuran mesin virtual untuk simpul tepi. Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight. Parameter ini hanya valid untuk kluster RServer.
 
 ```yaml
 Type: System.String
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 
 ### -HeadNodeSize
 Menentukan ukuran mesin virtual untuk Simpul kepala.
-Gunakan Get-AzVMSize vm yang dapat diterima, dan lihat halaman harga HDInsight.
+Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
 Type: System.String
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 
 ### -OozieMetastore
 Menentukan metastore untuk menyimpan metadata Oozie.
-Anda juga dapat menggunakan cmdlet **Add-AzHDInsightMetastore.**
+Anda juga dapat menggunakan cmdlet **Add-AzHDInsightMetastore** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightMetastore
@@ -462,7 +465,7 @@ Accept wildcard characters: False
 
 ### -WorkerNodeSize
 Menentukan ukuran mesin virtual untuk node Pekerja.
-Gunakan Get-AzVMSize vm yang dapat diterima, dan lihat halaman harga HDInsight.
+Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
 Type: System.String
@@ -478,7 +481,7 @@ Accept wildcard characters: False
 
 ### -Penjaga Kebun BinatangNodeSize
 Menentukan ukuran mesin virtual untuk simpul Penjaga Binatang.
-Gunakan Get-AzVMSize vm yang dapat diterima, dan lihat halaman harga HDInsight.
+Gunakan Get-AzVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 Parameter ini hanya valid untuk kluster HBase atau Storm.
 
 ```yaml
@@ -494,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

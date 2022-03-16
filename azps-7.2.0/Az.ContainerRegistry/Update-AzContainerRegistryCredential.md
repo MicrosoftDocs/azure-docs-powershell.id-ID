@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryCredential.md
-ms.openlocfilehash: a54bf49e18bf9c7a978ce5f155c8e8ba00d93c50
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ad46a68be9018ce3d21d862079863266bf1dedaf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170110"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927177"
 ---
 # Update-AzContainerRegistryCredential
 
 ## SYNOPSIS
 Meregenerasi kredensial masuk untuk registri wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrycredential) untuk informasi terkini.
 
 ## SYNTAX
 

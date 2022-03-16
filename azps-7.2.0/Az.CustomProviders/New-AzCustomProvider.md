@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProvider.md
-ms.openlocfilehash: 7450a7cb3cbbea40117552975531f7d20418d5b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a81fb45060c89d7d786d205fd522a9c0756ff105
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926565"
 ---
 # New-AzCustomProvider
 
 ## SYNOPSIS
 Membuat atau memperbarui penyedia sumber daya kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.customproviders/new-azcustomprovider) untuk informasi terkini.
 
 ## SYNTAX
 

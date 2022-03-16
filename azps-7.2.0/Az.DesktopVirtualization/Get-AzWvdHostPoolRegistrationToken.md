@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdHostPoolRegistrationToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdHostPoolRegistrationToken.md
-ms.openlocfilehash: 3bdf5e721c125b527cc8cea4ef274520611b7699
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ad784f4104c33c6e83d346b3bf8c4aea6213183a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057423"
 ---
 # Get-AzWvdHostPoolRegistrationToken
 
 ## SYNOPSIS
 Token pendaftaran host pool.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdhostpoolregistrationtoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Token pendaftaran host pool.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Windows informasi token pendaftaran Desktop Virtual oleh HostPoolName
+### Contoh 1: Dapatkan Windows token pendaftaran Desktop Virtual oleh HostPoolName
 ```powershell
 PS C:\> Get-AzWvdHostPoolRegistrationToken -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName
 
@@ -45,7 +48,7 @@ ExpirationTime       RegistrationTokenOperation Token
 4/1/2020 10:19:33 PM None                       eyJhbGciOiJSUzI1NiIsImtpZCI6IkMyRjU1RUYxNzg0MEFCNzkzMDk2RUYzRjdEMkNBRDk0NThGNDhEOTQiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjU5NGJjZWUwLTk5MjQtNDg3ZC1iOW...
 ```
 
-Perintah ini mendapatkan Windows token pendaftaran Desktop Virtual dari HostPool.
+Perintah ini Windows informasi token pendaftaran Desktop Virtual dari HostPool.
 
 ## PARAMETERS
 

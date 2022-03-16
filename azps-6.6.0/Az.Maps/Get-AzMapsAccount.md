@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
-ms.openlocfilehash: a2a9be89d99aa9d9018d8d3d3167ede13eab5abe
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 428db389d34e23688f9e7fa0ba4a476e40a73302
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387472"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937743"
 ---
 # Get-AzMapsAccount
 
 ## SYNOPSIS
-Dapatkan akun Peta.
+Dapatkan akun Peta Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/get-azmapsaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ Get-AzMapsAccount -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Def
 ```
 
 ## DESCRIPTION
-Dapatkan akun Peta.
+Dapatkan akun Peta Anda.
 
 ## EXAMPLES
 
-### Contoh 1: List all Peta Accounts under a subscription
+### Contoh 1:  List all Peta Accounts under a subscription
 ```powershell
 PS C:\> Get-AzMapsAccount
 
@@ -57,7 +60,7 @@ eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 
 Perintah ini mencantumkan semua Peta Akun di bawah langganan.
 
-### Contoh 2: List all Peta Accounts under a resource group
+### Contoh 2:  List all Peta Accounts under a resource group
 ```powershell
 PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test
 
@@ -68,7 +71,7 @@ eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 
 Perintah ini mencantumkan semua Peta Akun di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan Peta Baru
+### Contoh 3: Mendapatkan Peta Baru
 ```powershell
 PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01
 
@@ -77,7 +80,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini akan mendapatkan Peta Akun.
+Perintah ini akan mendapatkan Peta Baru.
 
 ### Contoh 4: Get a Peta Account by pipeline
 ```powershell
@@ -88,7 +91,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini memiliki saluran Peta saluran.
+Perintah ini memiliki Peta saluran.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun Peta.
+Nama akun Peta Anda.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,9 +191,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity> : Parameter Identitas
+INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

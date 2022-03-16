@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesDefinition.md
-ms.openlocfilehash: ff501ae011145dee02c773286c1122750f08920d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0f1e1b2633b8d825accb804ca5eaf54c100635a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956651"
 ---
 # New-AzManagedServicesDefinition
 
 ## SYNOPSIS
 Membuat atau memperbarui definisi registrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -EligibleAuthorization
-Kumpulan objek otorisasi yang memenuhi syarat yang menjelaskan akses langsung Azure Active Directory utama dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
+Kumpulan objek otorisasi yang memenuhi syarat yang menjelaskan akses langsung Azure Active Directory lokal dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
 Untuk membuat, lihat bagian CATATAN untuk propertiAUTHORISASI YANG MEMENUHI SYARAT dan membuat tabel hash.
 
 ```yaml

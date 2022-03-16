@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdWorkspace.md
-ms.openlocfilehash: cf919eec9c8ea89a465bd05596a160f4db81d9c9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 22f14baa3fab95dd3ebeb00ba77b368539393b81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353078"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139940324"
 ---
 # New-AzWvdWorkspace
 
 ## SYNOPSIS
 Membuat atau memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Membuat atau memperbarui ruang kerja.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sebuah Windows Ruang Kerja Desktop Virtual menurut nama
+### Contoh 1: Buat sebuah Windows Ruang Kerja Desktop Virtual menurut nama
 ```powershell
 PS C:\> New-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -48,9 +51,9 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini akan membuat Windows Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini akan membuat Windows Desktop Virtual dalam Grup Sumber Daya.
 
-### Contoh 2: Buat sebuah Windows Ruang Kerja Desktop Virtual menurut nama
+### Contoh 2: Membuat sebuah Windows Ruang Kerja Desktop Virtual menurut nama
 ```powershell
 PS C:\> New-AzWvdWorkspace -ResourceGroupName ResourceGroupName `
                         -Name WorkspaceName `
@@ -64,7 +67,7 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini akan membuat Windows Kerja Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini akan membuat Windows Desktop Virtual dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
@@ -443,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

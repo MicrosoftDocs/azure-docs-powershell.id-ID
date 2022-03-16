@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
-ms.openlocfilehash: 20b24d15ea95449e69523d05b7792e12136dd4a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7e4d36e5a6e966760953d1130f2077522810fc9b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259051"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139930111"
 ---
 # Update-AzADDomainService
 
 ## SYNOPSIS
 Operasi Perbarui Layanan Domain bisa digunakan untuk memperbarui penyebaran yang sudah ada.
 Panggilan pembaruan hanya mendukung properti yang tercantum dalam badan PATCH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.addomainservices/update-azaddomainservice) untuk informasi terkini.
 
 ## SYNTAX
 

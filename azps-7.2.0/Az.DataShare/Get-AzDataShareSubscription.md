@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSubscription.md
-ms.openlocfilehash: 1d842b0f6d566bcc6430b78f6f2d01871287159d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e6079d23339446c7d19efccd1d6142fd38d71867
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164768"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057819"
 ---
 # Get-AzDataShareSubscription
 
 ## SYNOPSIS
 Mendapatkan informasi tentang berbagi langganan di akun berbagi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/get-azdatasharesubscription) untuk informasi terkini.
 
 ## SYNTAX
 

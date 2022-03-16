@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusQueue.md
-ms.openlocfilehash: 012f4451e2b246bba08fcd41700cfae50c915fd8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3d972b243439c302c737db128bafbf0ceee2ad80
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355166"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139968909"
 ---
 # Set-AzServiceBusQueue
 
 ## SYNOPSIS
-Memperbarui deskripsi antrean Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+Memperbarui deskripsi antrean yang Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/set-azservicebusqueue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzServiceBusQueue [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusQueue** memperbarui deskripsi untuk Bus Layanan dalam ruang nama Bus Layanan tertentu.
+Cmdlet **Set-AzServiceBusQueue** memperbarui deskripsi untuk antrean Bus Layanan dalam ruang nama Bus Layanan tertentu.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ ForwardDeadLetteredMessagesTo       :
 EnableBatchedOperations             : False
 ```
 
-Memperbarui antrean tertentu dengan deskripsi baru dalam ruang nama yang ditentukan. Contoh ini memperbarui properti **DeadLetteringOnMessageExpiration** ke **true dan** **SupportOrdering** ke **true.**
+Memperbarui antrean tertentu dengan deskripsi baru dalam ruang nama yang ditentukan. Contoh ini memperbarui properti **DeadLetteringOnMessageExpiration** ke **true dan** **SupportOrdering** ke **true**.
 
 ## PARAMETERS
 
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

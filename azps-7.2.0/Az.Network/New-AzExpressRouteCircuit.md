@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteCircuit.md
-ms.openlocfilehash: 8f52038d4b98ce83ef976befd5392dabe6e2450d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d6ae99360a23fc4dd07d5ee78e760679e02f061
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164568"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920895"
 ---
 # New-AzExpressRouteCircuit
 
 ## SYNOPSIS
 Membuat sirkuit rute ekspres Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azexpressroutecircuit) untuk informasi terkini.
 
 ## SYNTAX
 

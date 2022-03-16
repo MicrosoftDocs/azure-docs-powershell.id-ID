@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlertObjectHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzAlertObjectHistory.md
-ms.openlocfilehash: 02b7fc24e7f512ae0f10b6748ee925b8a16bfa69
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6d3961d5408d5f915f66dedde5730f8ea39fbc96
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309708"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965021"
 ---
 # Get-AzAlertObjectHistory
 
 ## SYNOPSIS
 Mendapatkan informasi Riwayat Pemberitahuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/get-azalertobjecthistory) untuk informasi terkini.
 
 ## SYNTAX
 

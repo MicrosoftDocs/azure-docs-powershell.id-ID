@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightMetastore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightMetastore.md
-ms.openlocfilehash: c5d33973cb5f182375f87cc9fa7cc38e15474498
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d70694bad629b51829f9ebadc0aba47c6a61ff1e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357065"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139939165"
 ---
 # Add-AzHDInsightMetastore
 
 ## SYNOPSIS
-Menambahkan objek SQL Database berfungsi sebagai metastore Hive atau Oozie ke objek konfigurasi kluster.
+Menambahkan SQL Database berfungsi sebagai metastore Hive atau Oozie ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightmetastore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Add-AzHDInsightMetastore [-Config] <AzureHDInsightConfig> [-MetastoreType] <Azur
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzHDInsightMetastore** menambahkan meta Hive atau Oozie ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig cmdlet.
-Metastore adalah sebuah SQL Database yang bisa digunakan untuk menyimpan metadata untuk Hive, Oozie, atau keduanya.
+Cmdlet **Add-AzHDInsightMetastore** menambahkan metaStore Hive atau Oozie ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig cmdlet.
+Metastore adalah sebuah SQL Database yang dapat digunakan untuk menyimpan metadata untuk Hive, Oozie, atau keduanya.
 
 ## EXAMPLES
 
@@ -140,7 +143,7 @@ Perintah ini menambahkan database Ambari kustom ke kluster yang bernama your-had
 
 ### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
-Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig.**
+Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

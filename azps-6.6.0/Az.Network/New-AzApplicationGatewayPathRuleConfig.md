@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
-ms.openlocfilehash: 22f2f0a50075543f819ac85f57c2555cf7c5ccee
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 75a8b6d1397740aef3115d4922fda5161c137ec0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356546"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139935187"
 ---
 # New-AzApplicationGatewayPathRuleConfig
 
 ## SYNOPSIS
 Membuat aturan jalur gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewaypathruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -72,10 +75,10 @@ Perintah ini membuat aturan jalur dengan Nama sebagai "basis", Jalur sebagai "/b
 
 ### -BackendAddressPool
 Menentukan referensi objek untuk kumpulan pengaturan kumpulan alamat backend yang akan ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
-Anda dapat membuat referensi objek ini menggunakan cmdlet New-AzApplicationGatewayBackendAddressPool dan sintaks yang mirip dengan ini: `$AddressPool = New-AzApplicationGatewayBackendAddressPool -Name "ContosoAddressPool" -BackendIPAddresses "192.168.1.1", "192.168.1.2"`
+Anda dapat membuat referensi objek ini menggunakan cmdlet New-AzApplicationGatewayBackendAddressPool sintaks yang mirip dengan ini: `$AddressPool = New-AzApplicationGatewayBackendAddressPool -Name "ContosoAddressPool" -BackendIPAddresses "192.168.1.1", "192.168.1.2"`
 Perintah sebelumnya menambahkan dua alamat IP (192.16.1.1 dan 192.168.1.2) ke pool alamat.
 Perhatikan bahwa alamat IP dimasukkan di dalam tanda petik dan dipisahkan dengan menggunakan koma.
-Variabel yang dihasilkan, $AddressPool, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool.*
+Variabel yang dihasilkan, $AddressPool, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool* .
 The backend address pool represents the IP addresses on the backend servers.
 Alamat IP ini harus termasuk dalam subnet jaringan virtual atau harus merupakan alamat IP publik.
 Jika Anda menggunakan parameter ini Anda tidak bisa menggunakan *parameter DefaultBackendAddressPoolId* di perintah yang sama.
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ### -BackendAddressPoolId
 Menentukan ID sebuah pool alamat backend yang sudah ada yang bisa ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
 ADDRESS pool IDs can be returned by using the Get-AzApplicationGatewayBackendAddressPool cmdlet.
-Setelah Mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendAddressPoolId* dan bukan parameter *DefaultBackendAddressPool.*
+Setelah Mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendAddressPoolId* dan bukan parameter *DefaultBackendAddressPool* .
 Misalnya: -DefaultBackendAddressPoolId "/subscriptions/39c54063-01d3-4abf-8f4c-234777bc1f10/resourceGroups/appgw-rg/providers/Microsoft.Network/applicationGateway/appgwtest/backendAddressPools/ContosoAddressPool" The backend address pool represents the IP addresses on the backend servers.
 Alamat IP ini harus termasuk dalam subnet jaringan virtual atau harus merupakan alamat IP publik.
 
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 
 ### -BackendHttpSettings
 Menentukan referensi objek ke kumpulan pengaturan HTTP backend untuk ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
-Anda dapat membuat referensi objek ini menggunakan cmdlet dan sintaks New-AzApplicationGatewayBackendHttpSettings yang mirip dengan: $HttpSettings = New-AzApplicationGatewayBackendHttpSettings -Name "ContosoHttpSettings" -Port 80 -Protocol "Http" -CookieBasedAffinity "Disabled" Variabel yang dihasilkan, $HttpSettings, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool:* -DefaultBackendHttpSettings $HttpSettings Pengaturan HTTP backend mengonfigurasi properti seperti port, protokol, dan affinity berbasis cookie untuk pool backend.
+Anda dapat membuat referensi objek ini menggunakan cmdlet dan sintaks New-AzApplicationGatewayBackendHttpSettings yang mirip dengan: $HttpSettings = New-AzApplicationGatewayBackendHttpSettings -Name "ContosoHttpSettings" -Port 80 -Protocol "Http" -CookieBasedAffinity "Disabled" Variabel yang dihasilkan, $HttpSettings, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool* : -DefaultBackendHttpSettings $HttpSettings Pengaturan HTTP backend mengonfigurasi properti seperti port, protokol, dan afiliasi berbasis cookie untuk pool backend.
 Jika menggunakan parameter ini, Anda tidak dapat menggunakan *parameter DefaultBackendHttpSettingsId* dalam perintah yang sama.
 
 ```yaml
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ### -BackendHttpSettingsId
 Menentukan ID kumpulan pengaturan backend HTTP yang sudah ada yang bisa ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
 ID pengaturan HTTP bisa dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayBackendHttpSettings.
-Setelah mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendHttpSettingsId* dan bukan parameter *DefaultBackendHttpSettings.*
+Setelah mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendHttpSettingsId* dan bukan parameter *DefaultBackendHttpSettings* .
 Misalnya: -DefaultBackendSettings Id "/subscriptions/39c54063-01d3-4abf-8f4c-234777bc1f10/resourceGroups/appgw-rg/providers/Microsoft.Network/applicationGateway/appgwtest/backendHttpSettingsCollection/ContosoHttpSettings" Pengaturan HTTP backend mengonfigurasi properti seperti port, protokol, dan afiliasi berbasis cookie untuk pool backend.
 Jika Menggunakan parameter ini, Anda tidak dapat menggunakan parameter *DefaultBackendHttpSettings* dalam perintah yang sama.
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -FirewallPolicy
 Menentukan referensi objek ke kebijakan firewall tingkat atas. Referensi objek dapat dibuat dengan menggunakan cmdlet New-AzApplicationGatewayWebApplicationFirewallPolicy.
-$firewallPolicy = New-AzApplicationGatewayFirewallPolicy -Name "wafPolicy1" -ResourceGroup "rgName" Kebijakan firewall yang dibuat menggunakan commandlet di atas bisa dirujuk di tingkat aturan jalur. He above command would create a default policy settings and managed rules.
+$firewallPolicy = New-AzApplicationGatewayFirewallPolicy -Name "wafPolicy1" -ResourceGroup "rgName" Kebijakan firewall yang dibuat menggunakan commandlet di atas bisa dirujuk pada tingkat aturan jalur. He above command would create a default policy settings and managed rules.
 Alih-alih nilai default, pengguna bisa menentukan PolicySettings, ManagedRules dengan menggunakan New-AzApplicationGatewayFirewallPolicySettings New-AzApplicationGatewayFirewallPolicyManagedRules secara berurutan.
 
 ```yaml
@@ -165,8 +168,8 @@ Accept wildcard characters: False
 
 ### -FirewallPolicyId
 Menentukan ID sumber daya firewall aplikasi web tingkat atas yang sudah ada.
-FIREWALL policy IDs can be returned by using the Get-AzApplicationGatewayWebApplicationFirewallPolicy cmdlet. Setelah kami memiliki ID Anda bisa menggunakan *parameter FirewallPolicyId* dan bukan parameter *FirewallPolicy.*
-Sebagai contoh: -FirewallPolicyId "/subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/ <firewallPolicyName> "
+FIREWALL policy IDs can be returned by using the Get-AzApplicationGatewayWebApplicationFirewallPolicy cmdlet. Setelah kami memiliki ID Anda bisa menggunakan *parameter FirewallPolicyId* dan bukan parameter *FirewallPolicy* .
+Sebagai contoh: -FirewallPolicyId "/subscriptions/<subscription-id>/resourceGroups/<resource-group-id>/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/<firewallPolicyName>"
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayWebApplicationFirewallPolicy
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

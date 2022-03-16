@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: c813798a7a86f069c5af05ba83cdb9318ebf84c2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ffb7d33e534d0d37a74cbe9a39ceb6140d93ca1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136390639"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078057"
 ---
 # Remove-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
-Menghapus akun Storage Edge untuk suatu perangkat.
+Menghapus Storage Edge untuk suatu perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/remove-azdataboxedgestorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzDataBoxEdgeStorageAccount [-InputObject] <PSDataBoxEdgeStorageAccount> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataBoxEdgeStorageAccount** menghapus akun Storage Edge terkait untuk perangkat Microsoft Edge Kotak Data. Anda dapat menentukan nama Akun edge Storage yang akan dihapus sebagai parameter dalam cmdlet.
+Cmdlet **Remove-AzDataBoxEdgeStorageAccount** menghapus akun Storage Edge terkait untuk perangkat Kotak Data Edge. Anda dapat menentukan nama Akun Storage Edge untuk dihapus sebagai parameter dalam cmdlet.
 
 ## EXAMPLES
 
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesAsrReplicationProtectedItem.md
-ms.openlocfilehash: 9911d99f84b46c523bec52575b5add245fc223e7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c3d25342405047436a60907593f4d147972e5b41
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381774"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139970367"
 ---
 # Set-AzRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
 Mengatur properti pemulihan seperti jaringan target dan ukuran mesin virtual untuk item dilindungi replikasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -475,7 +478,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryNicTag
-Tentukan tag untuk NICs target VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
+Tentukan tag untuk  NICs target VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -581,7 +584,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerLicenseType
-Tentukan SQL Server jenis lisensi VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
+Tentukan SQL Server lisensi VM. Ini berlaku untuk Vmware ke Azure dan HyperV ke penyedia Azure.
 
 ```yaml
 Type: System.String
@@ -718,7 +721,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

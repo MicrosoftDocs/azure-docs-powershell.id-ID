@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile.md
-ms.openlocfilehash: d84212575732e5a3f38d287205a58abcacf8fe77
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 02ad7405d0cfb3a92fead811e4517b3ff685f127
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356198"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139934467"
 ---
 # New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile
 
 ## SYNOPSIS
 Membuat objek profil diagnostik konfigurasi jaringan baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik menggunakan kriteria yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatchernetworkconfigurationdiagnosticprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile -Direction <String> -P
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile membuat objek profil diagnostik baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik konfigurasi jaringan menggunakan kriteria yang ditentukan.
+Cmdlet New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile akan membuat objek profil diagnostik baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik konfigurasi jaringan menggunakan kriteria yang ditentukan.
 
 ## EXAMPLES
 
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/save
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Save-AzDataFactoryLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Save-AzDataFactoryLog.md
-ms.openlocfilehash: f9843e505e93659438c44a6efd8970fb5569c10a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3d6f746bc55cfa9cd12d3eae6ffc4ff06cf85b44
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341270"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077787"
 ---
 # Save-AzDataFactoryLog
 
 ## SYNOPSIS
 Mengunduh file log dari pemrosesan Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/save-azdatafactorylog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,8 +38,8 @@ Save-AzDataFactoryLog [-DataFactory] <PSDataFactory> [-Id] <String> [-DownloadLo
 ## DESCRIPTION
 Cmdlet **Save-AzDataFactoryLog** mengunduh file log yang terkait dengan pemrosesan Azure HDInsight proyek Pig atau Hive atau untuk aktivitas kustom ke hard drive lokal Anda.
 Jalankan cmdlet Get-AzDataFactoryRun terlebih dahulu untuk mendapatkan ID bagi aktivitas yang dijalankan untuk potongan data, lalu gunakan ID tersebut untuk mengambil file log dari penyimpanan objek besar biner (BLOB) yang terkait dengan kluster HDInsight.
-Jika Anda tidak menentukan parameter *DownloadLogs,* cmdlet cukup mengembalikan lokasi file log.
-Jika Anda menentukan *DownloadLogs* tanpa menentukan direktori output (*Parameter output),* file log diunduh ke folder Dokumen default.
+Jika Anda tidak menentukan parameter *DownloadLogs* , cmdlet cukup mengembalikan lokasi file log.
+Jika Anda menentukan *DownloadLogs* tanpa menentukan direktori output (*Parameter output* ), file log diunduh ke folder Dokumen default.
 Jika Anda menentukan *DownloadLogs* bersama dengan folder output (*Output*), file log diunduh ke folder yang ditentukan.
 
 ## EXAMPLES
@@ -67,7 +70,7 @@ Perhatikan bahwa *DownloadLogs* tidak ditentukan.
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restore-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Restore-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: e988c1ee3548a36cbf580acb5bb7702411ff2526
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6b753823de16969cc64f774c9264a724ea471155
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312156"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050601"
 ---
 # Restore-AzRecoveryServicesBackupItem
 
@@ -19,6 +19,9 @@ ms.locfileid: "138312156"
 
 Memulihkan data dan konfigurasi untuk item Cadangan ke titik pemulihan yang ditentukan. Parameter yang diperlukan bervariasi dengan tipe item cadangan.
 Perintah yang sama digunakan untuk memulihkan mesin Azure Virtual, database yang berjalan dalam komputer Azure Virtual dan berbagi file Azure juga.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/restore-azrecoveryservicesbackupitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Anda bisa memulihkan seluruh file yang dibagikan atau file/beberapa file/folder 
 
 **Untuk Beban Kerja Azure**
 
-Anda bisa memulihkan SQL DB dalam VM Azure
+Anda bisa SQL KEMBALI dalam VM Azure
 
 ## EXAMPLES
 
@@ -129,8 +132,8 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault variabel.
-Perintah kedua mendapatkan item Cadangan tipe AzureVM, dari nama "V2VM", dan menyimpannya di $BackupItem cadangan.
+Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault baru.
+Perintah kedua mendapatkan item Cadangan tipe AzureVM, nama "V2VM", dan menyimpannya di $BackupItem variabel.
 Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
 Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
 Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
@@ -151,13 +154,13 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     V2VM            Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault variabel.
-Perintah kedua mendapatkan item Cadangan tipe AzureVM, dari nama "V2VM", dan menyimpannya di $BackupItem cadangan.
+Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault baru.
+Perintah kedua mendapatkan item Cadangan tipe AzureVM, nama "V2VM", dan menyimpannya di $BackupItem variabel.
 Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
 Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
 Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
 Perintah keenam menyimpan daftar disk yang akan dipulihkan dalam variabel restoreDiskLUN.
-Perintah terakhir memulihkan disk tertentu, dari LUN yang ditentukan, ke grup Sumber Daya target Target_RG, lalu menyediakan informasi konfigurasi VM dan templat penyebaran dalam Akun penyimpanan DestAccount di grup sumber daya DestRG.
+Perintah terakhir memulihkan disk tertentu, dari LUN yang ditentukan, ke grup Sumber Daya target Target_RG, lalu menyediakan informasi konfigurasi VM dan templat penyebaran dalam DestAccount akun penyimpanan di grup sumber daya DestRG.
 
 ### Contoh 3: Memulihkan disk dari VM yang dikelola sebagai Disk tak terkelola
 
@@ -174,7 +177,7 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
 ```
 
 Perintah pertama mendapatkan vault RecoveryServices dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam $BackupItem baru.
+Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam variabel $BackupItem Cadangkan.
 Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
 Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
 Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
@@ -195,7 +198,7 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
 ```
 
 Perintah pertama mendapatkan vault RecoveryServices dan menyimpannya dalam $vault baru.
-Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam $BackupItem baru.
+Perintah kedua mendapatkan item Cadangan lalu menyimpannya dalam variabel $BackupItem Cadangkan.
 Perintah ketiga mendapatkan tanggal dari tujuh hari sebelumnya, lalu menyimpannya dalam $StartDate variabel.
 Perintah keempat mendapatkan tanggal saat ini, lalu menyimpannya dalam variabel $EndDate baru.
 Perintah kelima mendapatkan daftar poin pemulihan untuk item cadangan tertentu yang difilter oleh tim $StartDate dan $EndDate.
@@ -214,13 +217,13 @@ PS C:\> $RestoreJob = Restore-AzRecoveryServicesBackupItem -RecoveryPoint $RP[0]
     fileshareitem   Restore         InProgress      26-Apr-16 1:14:01 PM   01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault variabel.
-Perintah kedua mendapatkan item Cadangan bernama fileshareitem lalu menyimpannya di $BackupItem pengguna.
+Perintah pertama mendapatkan vault Layanan Pemulihan dan menyimpannya dalam $vault baru.
+Perintah kedua mendapatkan item Cadangan bernama fileshareitem lalu menyimpannya di $BackupItem waktu.
 Perintah ketiga mendapatkan daftar poin pemulihan untuk item cadangan tertentu.
 Perintah keempat menentukan file mana yang akan dipulihkan dan disimpan dalam $files variabel.
 Perintah terakhir memulihkan file tertentu ke lokasi aslinya.
 
-### Contoh 6: Pulihkan SQL DB dalam Azure VM ke target VM lainnya untuk titik pemulihan penuh yang berbeda
+### Contoh 6: Pulihkan SQL DB dalam Azure VM ke vm target lainnya untuk poin pemulihan penuh yang berbeda
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -513,7 +516,7 @@ Accept wildcard characters: False
 
 ### -StorageAccountResourceGroupName
 
-Menentukan nama grup sumber daya yang berisi akun Storage target di langganan Anda.
+Menentukan nama grup sumber daya yang berisi target Storage tersebut di langganan Anda.
 Sebagai bagian dari proses pemulihan, cmdlet ini menyimpan disk dan informasi konfigurasi di akun Storage Anda.
 
 ```yaml

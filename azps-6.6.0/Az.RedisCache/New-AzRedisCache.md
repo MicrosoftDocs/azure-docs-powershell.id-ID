@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCache.md
-ms.openlocfilehash: 968ac13bd089d975eaecbd9a22216556a9b76c7a
-ms.sourcegitcommit: 2b90f2e68e4992e43f16a51f69e5581db189440b
+ms.openlocfilehash: 0ffab93ef127cbd809801df4878df2f66c287015
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "137778999"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969989"
 ---
 # New-AzRedisCache
 
 ## SYNOPSIS
 Membuat Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/new-azrediscache) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -115,7 +118,7 @@ Perintah ini membuat cache Azure untuk instans Redis dalam beberapa zona.
 ### Contoh 4: Buat Jaringan Virtual aktifkan Cache
 
 Persyaratan untuk membuat Jaringan Virtual mengaktifkan cache.
-1. Buat jaringan virtual dalam grup sumber daya yang sama tempat Anda ingin membuat cache redis. Anda bisa membuat jaringan virtual dari [perintah powershell New-AzVirtualNetwork.](/powershell/module/az.network/new-azvirtualnetwork)
+1. Buat jaringan virtual dalam grup sumber daya yang sama tempat Anda ingin membuat cache redis. Anda bisa membuat jaringan virtual dari [perintah powershell New-AzVirtualNetwork](/powershell/module/az.network/new-azvirtualnetwork) .
 1. Anda akan memerlukan SubnetID untuk VNET yang mengaktifkan cache. Sintaks SubnetID diberikan di bawah ini.
 
 Format SubnetID: /subscriptions/{subid}/resourceGroups/{resourceGroupName}/providers/Microsoft.ClassicNetwork/VirtualNetworks/{vnetName}/subnets/{subnetName}
@@ -146,9 +149,9 @@ PS C:\> New-AzRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location 
           Zone               : []
 ```
 
-### Contoh 5: Mengonfigurasi persistensi data untuk suatu Premium Cache Azure untuk Redis
+### Contoh 5: Mengonfigurasi persistensi data untuk suatu Premium Azure untuk Redis
 
-Persistensi menulis Redis data ke dalam Azure Storage yang Anda miliki dan kelola. Jadi sebelum mengonfigurasi persistensi data Anda harus memiliki akun [penyimpanan di](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-powershell) grup sumber daya yang sama. Pilih akun penyimpanan di kawasan dan langganan yang sama dengan cache, lalu akun Premium Storage direkomendasikan karena penyimpanan premium memiliki throughput yang lebih tinggi.
+Persistensi menulis Redis data ke Azure Storage lain yang Anda miliki dan kelola. Jadi sebelum mengonfigurasi persistensi data Anda harus memiliki akun [penyimpanan di](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-powershell) grup sumber daya yang sama. Pilih akun penyimpanan di kawasan dan langganan yang sama dengan cache, lalu akun Premium Storage direkomendasikan karena penyimpanan premium memiliki throughput yang lebih tinggi.
 
 Setelah membuat akun penyimpanan, dapatkan string koneksi akun penyimpanan menggunakan prosedur ini.
 
@@ -321,7 +324,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 Menentukan bahwa Redis data persistensi diaktifkan.
 Premium tier saja.
 - rdb-storage-connection-string.
-Menentukan string koneksi ke akun Storage untuk Persistensi data Redis.
+Menentukan string koneksi ke akun Storage untuk Redis persistensi data.
 Premium tier saja.
 - rdb-backup-frequency.
 Menentukan frekuensi pencadangan untuk persistensi data Redis.
@@ -354,7 +357,7 @@ Standar dan Premium tingkat.
 Mengonfigurasi jumlah database.
 Properti ini hanya dapat dikonfigurasi di pembuatan singgahan.
 Standar dan Premium tingkat.
-Untuk informasi selengkapnya, lihat Mengelola Cache Azure Redis dengan Azure PowerShell http://go.microsoft.com/fwlink/?LinkId=800051 ( http://go.microsoft.com/fwlink/?LinkId=800051) .
+Untuk informasi selengkapnya, lihat Mengelola Cache Azure Redis dengan Azure PowerShellhttp://go.microsoft.com/fwlink/?LinkId=800051 (http://go.microsoft.com/fwlink/?LinkId=800051).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -542,7 +545,7 @@ Accept wildcard characters: False
 ```
 
 ### -Zone
-Daftar kawasan Azure [dengan zona Ketersediaan.](https://docs.microsoft.com/en-us/azure/availability-zones/az-region#azure-services-supporting-availability-zones)
+Daftar kawasan Azure [dengan zona Ketersediaan](https://docs.microsoft.com/en-us/azure/availability-zones/az-region#azure-services-supporting-availability-zones).
 
 ```yaml
 Type: System.String[]

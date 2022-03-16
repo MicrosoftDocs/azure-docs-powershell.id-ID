@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorTagRule.md
-ms.openlocfilehash: e84dc746092b9555ef09c02c5522e442d1ff30eb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b23ee0fa7ea1b6b7d6d6eeae9ed88999d2c7bfe6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255580"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957083"
 ---
 # Get-AzLogzMonitorTagRule
 
 ## SYNOPSIS
 Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/get-azlogzmonitortagrule) untuk informasi terkini.
 
 ## SYNTAX
 

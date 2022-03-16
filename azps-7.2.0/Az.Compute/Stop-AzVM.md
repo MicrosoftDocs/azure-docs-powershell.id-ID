@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Stop-AzVM.md
-ms.openlocfilehash: f5c5bc991f074615952a42f8766522a66a1b418c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0280f68f9d78261ca2a347d1e4c24f1241346bf9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927555"
 ---
 # Stop-AzVM
 
 ## SYNOPSIS
 Menghentikan mesin virtual Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/stop-azvm) untuk informasi terkini.
 
 ## SYNTAX
 

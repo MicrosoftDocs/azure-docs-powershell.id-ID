@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/New-AzMaintenanceConfiguration.md
-ms.openlocfilehash: af8c6e34253b86bc833bd0cf62ff39ebe9f2278f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6c2eb8aaff33650e61940bbd4e08500e19481f95
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286588"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956741"
 ---
 # New-AzMaintenanceConfiguration
 
 ## SYNOPSIS
 Membuat atau Memperbarui catatan konfigurasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/new-azmaintenanceconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

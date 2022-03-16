@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzSpatialAnchorsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzSpatialAnchorsAccountKey.md
-ms.openlocfilehash: b9bebc3e6efb8ac68c5e37b0b8f55086eea59b1a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f2675e6625c76316a526c5bd325c610a655d8aba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272556"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955859"
 ---
 # Get-AzSpatialAnchorsAccountKey
 
 ## SYNOPSIS
 Dapatkan kunci Akun Jangkar Spasial
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/get-azspatialanchorsaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 

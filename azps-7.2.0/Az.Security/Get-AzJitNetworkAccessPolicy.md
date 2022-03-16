@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzJ
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzJitNetworkAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzJitNetworkAccessPolicy.md
-ms.openlocfilehash: 138277c76bf91826319ea450b9a452a5e354dd8f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6a3b0ce8c9444a27017ae228b7d35d23585ae6f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916989"
 ---
 # Get-AzJitNetworkAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan akses jaringan JIT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azjitnetworkaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 

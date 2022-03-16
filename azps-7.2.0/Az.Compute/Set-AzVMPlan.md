@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
-ms.openlocfilehash: 15ef2e289e3d4ecf031ef8f43e9db9948b171742
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dba9e4f49084f181d9c4ec6efda07fe0780d982d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927664"
 ---
 # Set-AzVMPlan
 
 ## SYNOPSIS
 Mengatur informasi paket Marketplace di mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan nama gambar dari Marketplace.
 Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzVMImageSku.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam Microsoft Azure ter documentation.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam Microsoft Azure ter dokumentasi.
 
 ```yaml
 Type: System.String

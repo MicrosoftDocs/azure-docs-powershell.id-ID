@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/new-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/New-AzAksCluster.md
-ms.openlocfilehash: e38d5788ec34651a35a7a2799249021b51822d06
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c31ee25118f98d3778a7de8e900288893feaf969
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374004"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139981347"
 ---
 # New-AzAksCluster
 
 ## SYNOPSIS
 Membuat kluster Grup Terkelola baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/new-azakscluster) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ PS C:\> New-AzAksCluster -ResourceGroupName myResourceGroup -Name myCluster
 ```
 
 ### Membuat Windows Server di AKS.
-Untuk membuat Windows Server di AKS, Anda harus menentukan setidaknya empat parameter berikut saat membuat AKS, serta nilai untuk harus dan `NetworkPlugin` `NodeVmSetType` `azure` `VirtualMachineScaleSets` masing-masing.
+Untuk membuat Windows Server di AKS, Anda harus menentukan setidaknya empat parameter berikut saat membuat AKS, `NetworkPlugin` `NodeVmSetType` `azure` serta nilai untuk harus dan masing-masing.`VirtualMachineScaleSets`
 `-WindowsProfileAdminUserName *** -WindowsProfileAdminUserPassword *** -NetworkPlugin azure -NodeVmSetType VirtualMachineScaleSets`
 
 ```powershell
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRbac
-Apakah akan mengaktifkan File Role-Based Access
+Apakah untuk mengaktifkan File Role-Based Access
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -GenerateSshKey
-Buat file kunci jpg ke {HOME}/.svg/id_rsa.
+Buat file kunci jpg ke {HOME}/.txt/id_rsa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -680,7 +683,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsProfileAdminUserPassword
-Kata sandi administrator untuk digunakan Windows VM, panjangnya harus setidaknya 12, yang berisi setidaknya satu karakter huruf kecil, yaitu , satu dan `[a-z]` `[A-Z]` satu karakter khusus `[!@#$%^&*()]` .
+Kata sandi administrator untuk digunakan Windows VM, panjangnya harus setidaknya 12, yang berisi setidaknya satu karakter huruf kecil, `[a-z]`yaitu , `[A-Z]` satu dan satu karakter khusus `[!@#$%^&*()]`.
 
 ```yaml
 Type: System.Security.SecureString
@@ -741,7 +744,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

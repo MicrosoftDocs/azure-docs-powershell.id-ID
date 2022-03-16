@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Update-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/Update-AzCustomProvider.md
-ms.openlocfilehash: 628d47d897a81caf729ce4c07e8f930bbed0376c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a9158402355023a31817b142a44e59adcf5a4b19
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169370"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926493"
 ---
 # Update-AzCustomProvider
 
 ## SYNOPSIS
 Memperbarui penyedia sumber daya kustom yang sudah ada.
 Satu-satunya nilai yang dapat diperbarui melalui PATCH saat ini adalah tag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.customproviders/update-azcustomprovider) untuk informasi terkini.
 
 ## SYNTAX
 

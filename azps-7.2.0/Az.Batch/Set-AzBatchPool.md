@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchPool.md
-ms.openlocfilehash: 5adc398369d838ffc4afa1478fd419f03de06572
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a928d783f8472fd1014aa942fb783aeb16fdc24c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162645"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928707"
 ---
 # Set-AzBatchPool
 
 ## SYNOPSIS
 Memperbarui properti kolam renang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\> Set-AzBatchPool -Pool $Pool -BatchContext $Context
 ```
 
 Perintah pertama mendapatkan kolam renang dengan menggunakan **Get-AzBatchPool**, lalu menyimpannya di $Pool berbeda.
-Tiga perintah berikutnya memodifikasi spesifikasi mulai tugas pada $Pool berikutnya.
+Tiga perintah berikutnya memodifikasi spesifikasi mulai tugas pada $Pool baru.
 Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $Pool.
 
 ## PARAMETERS

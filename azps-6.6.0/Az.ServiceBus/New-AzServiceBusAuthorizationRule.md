@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 8bca4b9afeed1cec0d100324a4d656980cd5fa7f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7648ff88565ff5d7f430cae8a52a8df4596146ee
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334693"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969071"
 ---
 # New-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
-Membuat aturan otorisasi baru untuk ruang yang ditentukan Bus Layanan Diberi Ruang nama atau Antrean atau Topik.
+Membuat aturan otorisasi baru untuk ruang yang ditentukan Bus Layanan Nama atau Antrean atau Topik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebusauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,21 +52,21 @@ Cmdlet **New-AzServiceBusAuthorizationRule** membuat aturan otorisasi baru untuk
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk ruang nama `SB-Example1` .
+Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk ruang nama `SB-Example1`.
 
 ### Contoh 2
 ```
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk `SBQueue` antrean.
+Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk antrean `SBQueue`.
 
 ### Contoh 3
 ```
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk topik `SBTopic` ini.
+Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk topik ini `SBTopic`.
 
 ## PARAMETERS
 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

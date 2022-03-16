@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageShare.md
-ms.openlocfilehash: 04b46eb7fa565402a984a719c3c7c6fc3ee200f8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 18980956b01edd7508c317f4147296579b68b36e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339821"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139930903"
 ---
 # New-AzRmStorageShare
 
 ## SYNOPSIS
 Membuat file Storage bersama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azrmstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ New-AzRmStorageShare -StorageAccount <PSStorageAccount> -Name <String> [-QuotaGi
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageShare** membuat Storage file bersama.
+Cmdlet **New-AzRmStorageShare** membuat Storage file baru.
 
 ## EXAMPLES
 
-### Contoh 1: Buat file Storage berbagi file dengan nama akun Storage dan nama berbagi, dengan metadata dan kuota berbagi sebagai 100 GiB.
+### Contoh 1: Buat Storage berbagi file dengan nama akun Storage dan nama berbagi, dengan metadata dan kuota berbagi sebagai 100 GiB.
 ```
 PS C:\>New-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -QuotaGiB 100 -Metadata @{"tag1" = "value1"; "tag2" = "value2" } 
 
@@ -49,9 +52,9 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 myshare
 ```
 
-Perintah ini membuat Storage berbagi file dengan metadata dan berbagi kuota sebagai 100 GiB.
+Perintah ini membuat Storage berbagi file dengan metadata dan membagikan kuota sebagai 100 GiB.
 
-### Contoh 2: Membuat file Storage Anda bagikan Storage objek akun
+### Contoh 2: Buat file Storage anda bagikan dengan Storage objek akun
 ```
 Get-AzStorageAccount -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" | New-AzRmStorageShare -Name "myshare"
 
@@ -62,7 +65,7 @@ Name     QuotaGiB EnabledProtocol AccessTier Deleted Version ShareUsageBytes
 myshare
 ```
 
-Perintah ini akan membuat Storage file baru dengan Storage objek akun dan nama berbagi.
+Perintah ini membuat file Storage anda bagikan dengan Storage objek dan nama berbagi mereka.
 
 ### Contoh 3: Create a Storage file share with accesstier as Hot
 ```
@@ -88,7 +91,7 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes sn
 myshare                                                                       2021-05-10T08:04:08
 ```
 
-Perintah ini membuat Storage berbagi file dari berbagi file dasar yang sudah ada.
+Perintah ini akan membuat Storage file baru dari berbagi file dasar yang sudah ada.
 
 ### Contoh 5: Buat file Storage berbagi dengan EnabledProtocol proeprty sebagai NFS, dan properti RootSquash sebagai NoRootSquash
 ```
@@ -106,7 +109,7 @@ PS C:\> $share.RootSquash
 NoRootSquash
 ```
 
-Perintah ini membuat file Storage anda bagikan dengan EnabledProtocol proeprty sebagai NFS, dan RootSquash proeprty sebagai NoRootSquash.
+Perintah ini membuat file Storage berbagi dengan EnabledProtocol proeprty sebagai NFS, dan RootSquash proeprty sebagai NoRootSquash.
 
 ## PARAMETERS
 
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

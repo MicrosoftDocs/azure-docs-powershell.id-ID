@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagedApplication.md
-ms.openlocfilehash: cb39e9a7f50c2b8b85cfeb5420f5fdc779f79d74
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f8b7c8534c74168a74947fbe2e8a2e2539d7aa24
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316523"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049665"
 ---
 # Remove-AzManagedApplication
 
 ## SYNOPSIS
 Menghapus aplikasi yang dikelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azmanagedapplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\>$Application = Get-AzManagedApplication -Name "myApp" -ResourceGroupName 
 PS C:\>Remove-AzManagedApplication -Id $Application.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan aplikasi terkelola yang bernama myApp dengan menggunakan cmdlet Get-AzManagedApplication baru.
+Perintah pertama mendapatkan aplikasi terkelola bernama myApp dengan menggunakan cmdlet Get-AzManagedApplication baru.
 Perintah menyimpannya di $Application variabel.
 Perintah kedua menghapus aplikasi terkelola yang diidentifikasi oleh properti **ResourceId** $Application.
 

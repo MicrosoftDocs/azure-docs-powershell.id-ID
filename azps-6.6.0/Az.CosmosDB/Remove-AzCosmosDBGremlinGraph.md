@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: 2642c4f30da5f65f22d691dd5b05919c3e03d12c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ef026a422d87d0bbbad9a33d991702930849fd81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136157269"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078183"
 ---
 # Remove-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
-Menghapus kontak CosmosDBAmpmlin Graph.
+Menghapuss a CosmosDBAmpmlin Graph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbgremlingraph) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzCosmosDBGremlinGraph -InputObject <PSGremlinGraphGetResults> [-PassThru
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCosmosDBGremlinGraph menghapus cmdlet Remove-AzCosmosDB** Foldermlin Graph.
+Cmdlet **Remove-AzCosmosDBGremlinGraph** menghapus cmdlet CosmosDB Database Database Graph.
 
 ## EXAMPLES
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Dll. Graph objek.
+Dll. Graph tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetResults
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Jackmlin Graph Name.
+Jackmlin Graph Nama.
 
 ```yaml
 Type: System.String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

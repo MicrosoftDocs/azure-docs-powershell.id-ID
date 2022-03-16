@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: 83d2648dc4fc3043fa4eb01081d34d4762b1bac2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0e9679364ca07591974e94439455b55aeb5924e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313131"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947401"
 ---
 # Remove-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
 Menghapus database dengan nama tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopooldatabase) untuk informasi terkini.
 
 ## SYNTAX
 

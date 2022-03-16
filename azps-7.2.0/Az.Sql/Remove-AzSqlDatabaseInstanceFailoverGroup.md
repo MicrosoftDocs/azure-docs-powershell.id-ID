@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 8a00b83ab49a4c21771c147ee79275ee56c34474
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bbc9376976d42cc879e912ba2789f78850256390
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308476"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047855"
 ---
 # Remove-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Menghapus Grup Failover Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabaseinstancefailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 

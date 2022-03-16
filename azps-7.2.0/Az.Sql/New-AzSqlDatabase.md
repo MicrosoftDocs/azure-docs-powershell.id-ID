@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabase.md
-ms.openlocfilehash: 8cd37ec4bc84e2f69225d920015902e4c2ba570e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5cbfba9b7d95d80a12f609ab2efc630f1de5738f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298380"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048027"
 ---
 # New-AzSqlDatabase
 
 ## SYNOPSIS
 Membuat database atau database elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogCollation
-Menentukan nama katalog database SQL kami.
+Menentukan nama katalog SQL database kami.
 
 ```yaml
 Type: System.String

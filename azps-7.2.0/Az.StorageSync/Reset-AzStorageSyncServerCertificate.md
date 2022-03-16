@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Reset-AzStorageSyncServerCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Reset-AzStorageSyncServerCertificate.md
-ms.openlocfilehash: dcca0505aa7b9595a4ade7789958f4a516b54266
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dbced77a46fa783390c00a65805b95722a5b5077
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947995"
 ---
 # Reset-AzStorageSyncServerCertificate
 
 ## SYNOPSIS
 Gunakan untuk pemecahan masalah saja. Perintah ini akan meluncurkan sertifikat server sinkronisasi penyimpanan yang digunakan untuk menjelaskan identitas server ke layanan sinkronisasi penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/reset-azstoragesyncservercertificate) untuk informasi terkini.
 
 ## SYNTAX
 

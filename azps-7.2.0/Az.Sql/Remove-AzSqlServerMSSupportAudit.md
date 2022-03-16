@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Remove-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerMSSupportAudit.md
-ms.openlocfilehash: 6f2cdd0051cbc0954425adc8c773e1e8c1cb26bf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7e1feacc8810f01465307c1e4bc22233705b967e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949237"
 ---
 # Remove-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
 Menghapus pengaturan audit operasi dukungan Microsoft untuk server azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlservermssupportaudit) untuk informasi terkini.
 
 ## SYNTAX
 

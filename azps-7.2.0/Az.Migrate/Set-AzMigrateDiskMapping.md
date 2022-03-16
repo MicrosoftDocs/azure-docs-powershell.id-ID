@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/set-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateDiskMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateDiskMapping.md
-ms.openlocfilehash: 0d8ea2a7063cf43869530bb5006738065b67749c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7b13454ec1a806b23d910fbfde0505d6f8df16fe
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305707"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955913"
 ---
 # Set-AzMigrateDiskMapping
 
 ## SYNOPSIS
 Memperbarui pemetaan disk
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/set-azmigratediskmapping) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Set-AzMigrateDiskMapping -DiskID <String> -DiskName <String> [<CommonParameters>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzMigrateDiskMapping pembaruan pemetaan disk sumber yang terhubung ke server untuk dimigrasi
+Cmdlet Set-AzMigrateDiskMapping memperbarui pemetaan disk sumber yang terhubung ke server untuk dimigrasi
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ DiskId                               TargetDiskName
 6000C294-1217-dec3-bc18-81f117220424 ContosoDisk_1
 ```
 
-Dapatkan objek disk untuk menyediakan input bagi Set-AzMigrateServerReplication
+Mendapatkan objek disk untuk menyediakan input bagi Set-AzMigrateServerReplication
 
 ## PARAMETERS
 

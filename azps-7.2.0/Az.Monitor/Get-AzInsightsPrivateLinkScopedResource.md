@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScopedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzInsightsPrivateLinkScopedResource.md
-ms.openlocfilehash: 4a3693d5770edee99a20f86059749bdc30142e97
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fafd1883de9c7b53949b1f80486c3bb11e2e1ac2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955571"
 ---
 # Get-AzInsightsPrivateLinkScopedResource
 
 ## SYNOPSIS
 Dapatkan sumber daya yang lingkup link privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azinsightsprivatelinkscopedresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Sumber daya lingkup daftar di bawah lingkup link privat "scope_name"
 Get-AzInsightsPrivateLinkScopedResource -ResourceGroupName "rg_name" -ScopeName "scope_name" -Name "scoped_resource_name"
 ```
 
-Dapatkan sumber daya ruang lingkup di bawah lingkup tautan privat "scope_name" dengan nama "scoped_resource_name"
+Dapatkan sumber daya lingkup di bawah lingkup link privat "scope_name" dengan nama "scoped_resource_name"
 
 ## PARAMETERS
 

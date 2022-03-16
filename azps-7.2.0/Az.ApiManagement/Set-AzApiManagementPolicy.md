@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementPolicy.md
-ms.openlocfilehash: 9f74a7becc748a3fd6b5298eec335a2278ea1a62
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d6b9655aa332365de0dd6237a328c8da5a3b055c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275468"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929445"
 ---
 # Set-AzApiManagementPolicy
 
 ## SYNOPSIS
 Menetapkan kebijakan lingkup tertentu untuk Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

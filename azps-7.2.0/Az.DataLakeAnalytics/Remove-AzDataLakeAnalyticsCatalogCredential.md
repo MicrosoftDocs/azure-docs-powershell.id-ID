@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Remove-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: 87c1cff84282cd698ab2c3511a37bf63adb6873b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1fc2690bd9e2fad467ae21e7f484c6a0e8bd6f28
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284539"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926062"
 ---
 # Remove-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
 Menghapus kredensial Azure Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/remove-azdatalakeanalyticscatalogcredential) untuk informasi terkini.
 
 ## SYNTAX
 

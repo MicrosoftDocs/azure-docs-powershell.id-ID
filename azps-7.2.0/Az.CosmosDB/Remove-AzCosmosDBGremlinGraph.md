@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: 2642c4f30da5f65f22d691dd5b05919c3e03d12c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ef026a422d87d0bbbad9a33d991702930849fd81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254811"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926799"
 ---
 # Remove-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
-Menghapus kontak CosmosDBAmpmlin Graph.
+Menghapuss a CosmosDBAmpmlin Graph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbgremlingraph) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Dll. Graph objek.
+Dll. Graph tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetResults

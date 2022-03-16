@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
-ms.openlocfilehash: 5568ef8b44ee82256b03a1fd0dc4cdcbf2ded9d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 766ba29217a5eb3875dddb24caeb5507107a4d86
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916305"
 ---
 # Add-AzServiceFabricNodeType
 
 ## SYNOPSIS
 Tambahkan tipe node baru ke kluster yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricnodetype) untuk informasi terkini.
 
 ## SYNTAX
 

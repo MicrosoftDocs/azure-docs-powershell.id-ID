@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobContent.md
-ms.openlocfilehash: 752e049860f0db18b58fd5f1a8fa11a17ceffacb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 647a9eea556d682408c13482c9bfcd96d83717c0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351017"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139930706"
 ---
 # Set-AzStorageBlobContent
 
 ## SYNOPSIS
 Mengunggah file lokal ke Azure Storage blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageblobcontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Perintah ini mengunggah file yang dinamai PlanningData ke blob bernama Perencana
 PS C:\>Get-ChildItem -File -Recurse | Set-AzStorageBlobContent -Container "ContosoUploads"
 ```
 
-Perintah ini menggunakan cmdlet Windows PowerShell Get-ChildItem cmdlet untuk mendapatkan semua file dalam folder saat ini dan dalam subfolder, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
+Perintah ini menggunakan cmdlet Windows PowerShell core Get-ChildItem untuk mendapatkan semua file dalam folder saat ini dan dalam subfolder, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
 Cmdlet **Set-AzStorageBlobContent** mengunggah file ke wadah bernama ContosoUploads.
 
 ### Contoh 3: Menimpa blob yang sudah ada
@@ -77,16 +80,16 @@ PS C:\>Get-AzStorageBlob -Container "ContosoUploads" -Blob "Planning2015" | Set-
 
 Perintah ini mendapatkan blob bernama Planning2015 dalam wadah ContosoUploads menggunakan cmdlet Get-AzStorageBlob, lalu meneruskan blob tersebut ke cmdlet saat ini.
 Perintah mengunggah file yang bernama ContosoPlanning sebagai Perencanaan2015.
-Perintah ini tidak menentukan parameter *Paksa.*
+Perintah ini tidak menentukan parameter *Paksa* .
 Perintah akan meminta konfirmasi Anda.
 Jika anda mengonfirmasi perintah, cmdlet akan menimpa blob yang sudah ada.
 
-### Contoh 4: Upload membuat file menjadi wadah dengan menggunakan saluran
+### Contoh 4: Upload file ke wadah dengan menggunakan saluran
 ```
 PS C:\>Get-AzStorageContainer -Container "ContosoUpload*" | Set-AzStorageBlobContent -File "ContosoPlanning" -Blob "Planning2015"
 ```
 
-Perintah ini mendapatkan wadah yang dimulai dengan string ContosoUpload dengan menggunakan cmdlet **Get-AzStorageContainer,** lalu meneruskan blob tersebut ke cmdlet saat ini.
+Perintah ini mendapatkan wadah yang dimulai dengan string ContosoUpload dengan menggunakan cmdlet **Get-AzStorageContainer** , lalu meneruskan blob tersebut ke cmdlet saat ini.
 Perintah mengunggah file yang bernama ContosoPlanning sebagai Perencanaan2015.
 
 ### Contoh 5: Upload file ke halaman blob dengan metadata dan PremiumPageBlobTier sebagai P10
@@ -95,11 +98,11 @@ PS C:\>$Metadata = @{"key" = "value"; "name" = "test"}
 PS C:\> Set-AzStorageBlobContent -File "ContosoPlanning" -Container "ContosoUploads" -Metadata $Metadata -BlobType Page -PremiumPageBlobTier P10
 ```
 
-Perintah pertama membuat tabel hash yang berisi metadata untuk blob, dan menyimpan tabel hash tersebut dalam $Metadata hash.
+Perintah pertama akan membuat tabel hash yang berisi metadata untuk blob, dan menyimpan tabel hash tersebut dalam $Metadata variabel.
 Perintah kedua mengunggah file yang bernama ContosoPlanning ke wadah yang bernama ContosoUploads.
-Blob menyertakan metadata yang disimpan di $Metadata, dan memiliki PremiumPageBlobTier sebagai P10.
+blob menyertakan metadata yang disimpan di $Metadata, dan memiliki PremiumPageBlobTier sebagai P10.
 
-### Contoh 6: Upload file to blob with specified blob properties, and set StandardBlobTier as Cool
+### Contoh 6: Upload file ke blob dengan properti blob yang ditentukan, dan mengatur StandardBlobTier as Cool
 ```
 PS C:\> $filepath = "c:\temp\index.html"
 PS C:\> Set-AzStorageBlobContent -File $filepath -Container "contosouploads" -Properties @{"ContentType" = [System.Web.MimeMapping]::GetMimeMapping($filepath); "ContentMD5" = "i727sP7HigloQDsqadNLHw=="} -StandardBlobTier Cool
@@ -195,8 +198,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob.**
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzStorageBlob.
+Menentukan objek **CloudBlob** .
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ### -CloudBlobContainer
 Menentukan objek **CloudBlobContainer** dari Azure Storage Client.
 Cmdlet ini mengunggah konten ke blob dalam wadah yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudBlobContainer,** gunakan cmdlet Get-AzStorageContainer cmdlet.
+Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -447,7 +450,7 @@ Accept wildcard characters: False
 
 ### -TagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kecocokan kondisi. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations .
+Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -493,7 +496,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

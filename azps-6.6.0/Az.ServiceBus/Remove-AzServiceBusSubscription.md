@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusSubscription.md
-ms.openlocfilehash: 26cb02fda2180a0c9228e5774ebe20e41174f06c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ba2c797e846116c7cb034771d15d38649b81787f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355169"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969035"
 ---
 # Remove-AzServiceBusSubscription
 
 ## SYNOPSIS
-Menghapus langganan ke sebuah topik dari ruang nama Bus Layanan nama yang ditentukan.
+Menghapus langganan ke topik dari ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebussubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzServiceBusSubscription [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan ke topik dari ruang nama Bus Layanan yang ditentukan.
+Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan ke topik dari kumpulan nama Bus Layanan tertentu.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan ke topik dari rua
 PS C:\> Remove-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -SubscriptionName SB-TopicSubscription-Example1
 ```
 
-Menghapus langganan ke `SB-TopicSubscription-Example1` topik dalam ruang nama Bus Layanan tertentu `SB-Topic_exampl1` `SB-Example1` .
+Menghapus langganan ke `SB-TopicSubscription-Example1` topik dalam ruang `SB-Topic_exampl1` nama Bus Layanan tertentu `SB-Example1`.
 
 ### Contoh 2: InputObject - Menggunakan Variabel:
 ```powershell
@@ -72,7 +75,7 @@ PS C:\> Remove-AzServiceBusSubscription -ResourceId $resourceid.Id
 PS C:\> Remove-AzServiceBusSubscription -ResourceId "/subscriptions/Subscriptionid/resourceGroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/NamespaceName/topics/TopicName/subscriptions/SubscriptionName"
 ```
 
-Menghapus langganan yang disediakan melalui ARM Id di $resourceid/string untuk parameter -ResourceId 
+Menghapus langganan yang disediakan melalui ID ARM di $resourceid/string untuk parameter -ResourceId 
 
 ## PARAMETERS
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Sumber Daya Langganan
+id sumber daya Bus Layanan langganan
 
 ```yaml
 Type: System.String
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

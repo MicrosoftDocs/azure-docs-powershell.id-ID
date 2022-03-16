@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/res
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Restart-AzCloudService.md
-ms.openlocfilehash: 435b894204eb672f79a8e733a5b2512aaa482624
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 498e21c8d71fec4faeb652ee378ef538308b9cd7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928041"
 ---
 # Restart-AzCloudService
 
 ## SYNOPSIS
 Memulai ulang satu atau beberapa contoh peran di layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/restart-azcloudservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\> $roleInstances = @("ContosoFrontEnd_IN_0", "ContosoBackEnd_IN_1")
 PS C:\> Restart-AzCloudService -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstance $roleInstances
 ```
 
-Perintah ini memulai ulang 2 kejadian peran ContosoFrontEnd_IN_0 dan ContosoBackEnd_IN_1 awan bernama ContosoCS yang dimiliki grup sumber daya bernama ContosOrg.
+Perintah ini memulai ulang 2 instans peran ContosoFrontEnd_IN_0 dan ContosoBackEnd_IN_1 awan bernama ContosoCS yang dimiliki oleh grup sumber daya bernama ContosOrg.
 
 ### Contoh 2: Mulai ulang semua peran layanan cloud
 ```powershell
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderTemplate.md
-ms.openlocfilehash: 5c5c0ee83cfe36d8abeed183da79f41299cf4a0e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c7361cb046509e4fbef69967647a52bd3dbadc99
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385725"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139938571"
 ---
 # New-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Membuat templat gambar mesin virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildertemplate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -354,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -375,13 +378,13 @@ MENGUSTOMISASI <IImageTemplateCustomizer[]>: Menentukan properti yang digunakan 
   - `Type <String>`: Tipe alat kustomisasi yang ingin Anda gunakan di Gambar. Misalnya, "Shell" dapat menjadi mengustomisasi shell
   - `[Name <String>]`: Nama yang Mudah Digunakan untuk memberikan konteks tentang fungsi langkah kustomisasi ini
 
-DISTRIBUTE <IImageTemplateDistributor[]>: Distribusi target tempat output gambar harus masuk.
+DISTRIBUTE <IImageTemplateDistributor[]>: Distribusi target tempat output gambar perlu masuk.
   - `RunOutputName <String>`: Nama yang akan digunakan untuk RunOutput terkait.
   - `Type <String>`: Tipe distribusi.
   - `[ArtifactTag <IImageTemplateDistributorArtifactTags>]`: Tag yang akan diterapkan pada artifak setelah sudah dibuat/diperbarui oleh distributor.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-SUMBER <IImageTemplateSource> : Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi dan mendistribusikan.
+SUMBER <IImageTemplateSource>: Menjelaskan sumber gambar mesin virtual untuk membangun, mengkustomisasi dan mendistribusikan.
   - `Type <String>`: Menentukan tipe gambar sumber yang Anda inginkan untuk dimulai.
 
 ## RELATED LINKS

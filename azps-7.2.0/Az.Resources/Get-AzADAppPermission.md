@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppPermission.md
-ms.openlocfilehash: 72345bb517af1c10b79f45de5623a95c26ab8c60
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2bc17bcbe92e55d7904a0c7c2080769454965a8d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917204"
 ---
 # Get-AzADAppPermission
 
 ## SYNOPSIS
 Mencantumkan izin API yang telah diminta aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azadapppermission) untuk informasi terkini.
 
 ## SYNTAX
 

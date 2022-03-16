@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionApp.md
-ms.openlocfilehash: c9880cc62a04cba8feb8fcd32b337d91429895d9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a326222041c02b45381a3dae61ec9cfe6847f381
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285563"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056523"
 ---
 # Update-AzFunctionApp
 
 ## SYNOPSIS
 Memperbarui aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/update-azfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Perintah ini mengatur identitas terkelola SystemAssigned untuk aplikasi fungsi.
 PS C:\> Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResourceGroupName -ApplicationInsightsName ApplicationInsightsProjectName -Force
 ```
 
-Perintah ini memperbarui aplikasi fungsi Application Insights.
+Perintah ini memperbarui aplikasi fungsi Aplikasi Insights.
 
 ### Contoh 3: Hapus identitas terkelola dari aplikasi fungsi.
 ```powershell
@@ -353,7 +356,7 @@ INPUTOBJECT <ISite>:
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
   - `[CloningInfoSourceWebAppId <String>]`: ARM resource ID dari aplikasi sumber. ID sumber daya aplikasi merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slot/{slotName} untuk slot lainnya.
   - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber, mis: As Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil yang digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil untuk digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
   - `[CloningInfoTrafficManagerProfileName <String>]`: Nama Traffic Manager profil untuk dibuat. Hal ini hanya diperlukan Traffic Manager profil pengguna belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
     - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum melakukan tindakan
@@ -383,7 +386,7 @@ INPUTOBJECT <ISite>:
       - `[ActionHostName <String>]`: Nama host slot yang akan dialihkan lalu lintas jika ditentukan. Misalnya myapp-stage.azurewebsites.net.
       - `[ChangeDecisionCallbackUrl <String>]`: Custom decision algorithm can be provided in TiPCallback site extension which URL can be specified. See TiPCallback site extension for the scaffold and contracts.         https://www.siteextensions.net/packages/TiPCallback/
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
-      - `[ChangeStep <Double?>]`: Dalam skenario naik secara otomatis ini adalah langkah untuk menambahkan/menghapus <code>ReroutePercentage</code> dari sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Site metrics are checked every N minutes specified in <code>ChangeIntervalInMinutes</code>.\nCustom decision algorithm can be provided in TiPCallback site extension which URL can be specified in <code>ChangeDecisionCallbackUrl</code>.
+      - `[ChangeStep <Double?>]`: Dalam skenario naik secara otomatis ini adalah langkah untuk menambahkan/menghapus <code>ReroutePercentage</code> dari sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs dicentang setiap N menit yang ditentukan <code>ChangeIntervalInMinutes</code>dalam .\nCustom decision algorithm can be provided in TiPCallback site extension which URL can be specified in <code>ChangeDecisionCallbackUrl</code>.
       - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah di mana Perekanan Ulang akan tetap ada.
       - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas di mana Perekanan Ulang akan tetap ada.
       - `[Name <String>]`: Nama aturan perutean. Nama yang disarankan harus mengarah ke slot yang akan menerima lalu lintas dalam eksperimen.
