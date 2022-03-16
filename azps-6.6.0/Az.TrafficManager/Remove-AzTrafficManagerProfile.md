@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerProfile.md
-ms.openlocfilehash: 0256e426151b45902dab82b6d91688b19d43fa04
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b2de39da97ef7543955b7f9f14726abdb94893ba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128815"
 ---
 # Remove-AzTrafficManagerProfile
 
 ## SYNOPSIS
 Menghapus profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,8 +37,8 @@ Remove-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile> [-
 
 ## DESCRIPTION
 Cmdlet **Remove-AzTrafficManagerProfile** menghapus profil Azure Traffic Manager Anda.
-Tentukan profil untuk dihapus dengan menggunakan parameter *Nama* dan *ResourceGroupName.*
-Alternatifnya, Anda bisa menentukan **objek TrafficManagerProfile** menggunakan parameter *TrafficManagerProfile,* atau Anda bisa menggunakan saluran.
+Tentukan profil untuk dihapus dengan menggunakan parameter *Nama* dan *ResourceGroupName* .
+Alternatifnya, Anda bisa menentukan **objek TrafficManagerProfile** menggunakan parameter *TrafficManagerProfile* , atau Anda bisa menggunakan saluran.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ PS C:\>Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "Re
 Perintah ini mendapatkan profil bernama ContosoProfile dalam ResourceGroup11.
 Perintah itu lalu meneruskan profil itu ke cmdlet **Remove-AzTrafficManagerProfile** dengan menggunakan operator pipeline.
 Cmdlet tersebut akan menghapus profil tersebut.
-Perintah menentukan parameter *Paksa.*
+Perintah menentukan parameter *Paksa* .
 Oleh karena itu, kami tidak meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** yang akan dihapus.
-Untuk mendapatkan objek **TrafficManagerProfile,** gunakan cmdlet Get-AzTrafficManagerProfile baru.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

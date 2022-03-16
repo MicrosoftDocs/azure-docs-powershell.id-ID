@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscOnboardingMetaconfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscOnboardingMetaconfig.md
-ms.openlocfilehash: e79eb332596bd587742a1270b706840d61ebba3b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a775f8899c6202dd5d5a06cb5080fe6bdd7a682d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343958"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945249"
 ---
 # Get-AzAutomationDscOnboardingMetaconfig
 
 ## SYNOPSIS
 Membuat file .mof konfigurasi meta.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationdsconboardingmetaconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzAutomationDscOnboardingMetaconfig [-OutputFolder <String>] [-ComputerName 
 Cmdlet **Get-AzAutomationDscOnboardingMetaconfig** membuat file APS Desired State Configuration (DSC) meta-configuration Managed Object Format (MOF).
 Cmdlet ini akan membuat file .mof untuk setiap nama komputer yang Anda tentukan.
 Cmdlet akan membuat folder untuk file .mof.
-Anda dapat menjalankan cmdlet Set-DscLocalConfigurationManager cmdlet agar folder ini dapat onboard komputer ini ke akun Otomatisasi Azure sebagai node DSC.
+Anda dapat menjalankan cmdlet Set-DscLocalConfigurationManager cmdlet agar folder ini onboard komputer ini ke akun Otomatisasi Azure sebagai node DSC.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Perintah kedua menggunakan cmdlet **Set-DscLocalConfigurationManager** untuk men
 
 ### -AutomationAccountName
 Menentukan nama akun Otomatisasi.
-Anda dapat melakukan onboard pada komputer yang ditentukan parameter *ComputerName* pada akun yang ditentukan oleh parameter ini.
+Anda dapat melakukan onboard pada komputer *yang ditentukan parameter ComputerName* pada akun yang ditentukan oleh parameter ini.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

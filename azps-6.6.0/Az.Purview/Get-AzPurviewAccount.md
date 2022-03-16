@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccount.md
-ms.openlocfilehash: ff749c8aa3854ef388ede3c44fa49b7569554de0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: af6ca957a3314ffb0194e3b7c13fde4fb414624d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345134"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099441"
 ---
 # Get-AzPurviewAccount
 
 ## SYNOPSIS
 Mendapatkan akun
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/get-azpurviewaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Mendapatkan akun
 
 ## EXAMPLES
 
-### Contoh 1: List All Purview Accounts
+### Contoh 1:  List All Purview Accounts
 ```powershell
 PS C:\> Get-AzPurviewAccount
 
@@ -71,7 +74,7 @@ xxxxxxxx-7956-4978-87e8-9ddd82cfe2b7 xxxxxxxx-38d6-4fb2-bad9-b7b93a3e9c5a System
 
 Dapatkan uji-rg nama akun purview dalam uji-pa grup sumber daya
 
-### Contoh 3: Purview Accounts in a Specified Resource Group 
+### Contoh 3:  Purview Accounts in a Specified Resource Group 
 ```powershell
 PS C:\> Get-AzPurviewAccount -ResourceGroupName test-rg
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -207,7 +210,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IPurviewIdentity> : Parameter Identitas
+INPUTOBJECT <IPurviewIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun.
   - `[GroupId <String>]`: Pengidentifikasi grup.
   - `[Id <String>]`: Jalur identitas sumber daya

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/im
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Import-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Import-AzApiManagementApi.md
-ms.openlocfilehash: 2088f1f1ae3ec48987ff4ea8b291fadfbffbc1de
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f127642d3ece9fa1ad2ba2678db4672a65bb4a02
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163445"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063291"
 ---
 # Import-AzApiManagementApi
 
 ## SYNOPSIS
 Mengimpor API dari file atau URL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/import-azapimanagementapi) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -WsdlEndpointName
-Nama lokal Titik Akhir (port) WSDL yang akan diimpor. Harus memiliki panjang 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl. Nilai default $null.
+Nama lokal Titik Akhir (port) WSDL yang akan diimpor. Harus memiliki panjang 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl. Nilai default adalah $null.
 
 ```yaml
 Type: System.String
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -WsdlServiceName
-Nama lokal Layanan WSDL yang akan diimpor. Harus memiliki panjang 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl . Nilai default $null.
+Nama lokal Layanan WSDL yang akan diimpor. Harus memiliki panjang 1 hingga 400 karakter. Parameter ini bersifat opsional dan hanya diperlukan untuk mengimpor Wsdl . Nilai default adalah $null.
 
 ```yaml
 Type: System.String

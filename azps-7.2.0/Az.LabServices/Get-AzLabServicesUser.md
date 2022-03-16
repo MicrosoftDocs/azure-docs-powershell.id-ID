@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesUser.md
-ms.openlocfilehash: 5e2a39a7392f59ed454a546de12f708d98b2f3ba
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ab00684b1fe9b3234f1cad049dba7cf7d677ab19
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271404"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957713"
 ---
 # Get-AzLabServicesUser
 
 ## SYNOPSIS
 Mengembalikan properti lab pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/get-azlabservicesuser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -242,7 +245,7 @@ LAB <Lab>:
   - `[NonAdminUserPassword <String>]`: Kata sandi untuk pengguna. Ini diperlukan untuk TemplateVM createOption.
   - `[NonAdminUserUsername <String>]`: Nama pengguna yang digunakan saat masuk ke LAB VM.
   - `[PlanId <String>]`: ID rencana lab. Digunakan selama pembuatan sumber daya untuk menyediakan default dan bertindak sebagai wadah izin saat membuat lab melalui labs.azure.com. Mengatur labPlanId di lab yang sudah ada menyediakan organisasi..
-  - `[RosterProfileActiveDirectoryGroupId <String>]`: AAD pertama ID tempat daftar lab terisi. Setelah kumpulan ini mengaktifkan AAD mode sinkronisasi.
+  - `[RosterProfileActiveDirectoryGroupId <String>]`: AAD pertama ID grup tempat daftar lab terisi. Setelah kumpulan ini mengaktifkan AAD mode sinkronisasi.
   - `[RosterProfileLmsInstance <String>]`: URI dasar yang mengidentifikasi contoh lms.
   - `[RosterProfileLtiClientId <String>]`: Id unik alat layanan lab azure dalam lms.
   - `[RosterProfileLtiContextId <String>]`: Pengidentifikasi konteks unik untuk lab dalam lms.

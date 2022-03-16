@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementNamedValue.md
-ms.openlocfilehash: 6623156c61df117a09244358d224ceaf8e3d9422
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ad0a27a7749dc11cd9e8d94de4a4efd3faebfb5a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391353"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140110637"
 ---
 # New-AzApiManagementNamedValue
 
 ## SYNOPSIS
 Membuat Nilai Bernama yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementnamedvalue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApiManagementNamedValue -Context <PsApiManagementContext> [-NamedValueId <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementNamedValue** membuat Nilai Bernama **Manajemen** API Azure.
+Cmdlet **New-AzApiManagementNamedValue** membuat Nilai **Bernama Manajemen API** Azure.
 
 ## EXAMPLES
 
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

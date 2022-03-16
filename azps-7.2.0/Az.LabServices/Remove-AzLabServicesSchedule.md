@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Remove-AzLabServicesSchedule.md
-ms.openlocfilehash: 7d3aeaf2776f6d42575c9f85877441226ddcd286
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 43a96b6281819ab20dfd7c2a08bdb7b5394dd285
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255595"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957659"
 ---
 # Remove-AzLabServicesSchedule
 
 ## SYNOPSIS
 Operasi untuk menghapus sumber daya jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/remove-azlabservicesschedule) untuk informasi terkini.
 
 ## SYNTAX
 

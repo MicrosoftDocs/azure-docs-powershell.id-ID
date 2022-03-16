@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConnectionMonitor.md
-ms.openlocfilehash: 8cf36d9b56eac8dd7ddb1f8ea496505fa50a42ad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 95655ca635c7c1c9e3cddb804628e1f285d68e8d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295275"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953393"
 ---
 # Set-AzNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
 Memperbarui sumber daya monitor koneksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconnectionmonitor) untuk informasi terkini.
 
 ## SYNTAX
 

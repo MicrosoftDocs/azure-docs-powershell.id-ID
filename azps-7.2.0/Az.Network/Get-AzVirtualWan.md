@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualWan.md
-ms.openlocfilehash: 9e2cc6a5a29dd2a5bec7dd564860bab17ec4c7e9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7c46d3120ec99fb93c69d5201a807d00dd4b7cac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954887"
 ---
 # Get-AzVirtualWan
 
 ## SYNOPSIS
 Mendapatkan Virtual WAN atau semua WAN Virtual dalam grup sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualwan) untuk informasi terkini.
 
 ## SYNTAX
 

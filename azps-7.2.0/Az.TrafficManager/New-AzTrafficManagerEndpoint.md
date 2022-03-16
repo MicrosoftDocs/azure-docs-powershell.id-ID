@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: c934d7017d90627fa9953bc12677bf421d9df701
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5936f5181cb98fe3850cabccf2d6dc75feb9c4f6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047127"
 ---
 # New-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Membuat titik akhir di Traffic Manager profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/new-aztrafficmanagerendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzTrafficManagerEndpoint -Name <String> -ProfileName <String> -ResourceGroup
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzTrafficManagerEndpoint** membuat titik akhir di Azure Traffic Manager profil.
+Cmdlet **New-AzTrafficManagerEndpoint** membuat titik akhir di profil Azure Traffic Manager.
 
 Cmdlet ini akan melakukan setiap titik akhir baru ke Traffic Manager baru.
 Untuk menambahkan beberapa titik akhir ke objek Traffic Manager profil lokal dan melakukan perubahan dalam satu operasi, gunakan cmdlet Add-AzTrafficManagerEndpointConfig cmdlet.
@@ -189,7 +192,7 @@ Nilai valid adalah bilangan bulat dari 1 sampai 1000.
 Nilai yang lebih rendah menunjukkan prioritas yang lebih tinggi.
 
 Jika menentukan prioritas, Anda harus menentukan prioritas di semua titik akhir dalam profil, dan tidak ada dua titik akhir yang dapat berbagi nilai prioritas yang sama.
-Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil mencantumkan titik akhir.
+Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil akan mencantumkan titik akhir.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]

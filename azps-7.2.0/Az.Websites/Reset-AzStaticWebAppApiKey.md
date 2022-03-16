@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/reset-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzStaticWebAppApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Reset-AzStaticWebAppApiKey.md
-ms.openlocfilehash: da41a0ad4d3fafd3c59710224d6a3c6290793eb4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dcb3e5c39c58116c14b90a84d9c1b39509f9aa65
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140111699"
 ---
 # Reset-AzStaticWebAppApiKey
 
 ## SYNOPSIS
 Deskripsi untuk Mereset kunci api untuk situs statis yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/reset-azstaticwebappapikey) untuk informasi terkini.
 
 ## SYNTAX
 

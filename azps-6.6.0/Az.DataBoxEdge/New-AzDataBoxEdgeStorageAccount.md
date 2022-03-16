@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: ad1e2ee26c66bd179ca790c16e1630548d88f3ee
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c63cf837c4170765c0ea326ad8a091a8054f7533
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136390804"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139941721"
 ---
 # New-AzDataBoxEdgeStorageAccount
 
 ## SYNOPSIS
 Membuat akun Storage Edge baru di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgestorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxEdgeStorageAccount [-ResourceGroupName] <String> [-DeviceName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Edge Kotak Data. Untuk satu perangkat, satu akun Edge Storage dapat dipetakan paling banyak hanya ke satu akun Storage Cloud.
+Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Microsoft Edge Kotak Data. Untuk satu perangkat, satu akun Storage Edge dapat dipetakan paling banyak hanya ke satu akun Storage Cloud.
 
 ## EXAMPLES
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

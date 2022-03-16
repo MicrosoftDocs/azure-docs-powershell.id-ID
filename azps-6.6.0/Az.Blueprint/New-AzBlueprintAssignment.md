@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprintAssignment.md
-ms.openlocfilehash: 2261d43c34cd68de9a2d44b0275263d2d039a956
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 772bc1d1a22cc20aff84770a0cb03097d55f7f40
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359450"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944349"
 ---
 # New-AzBlueprintAssignment
 
 ## SYNOPSIS
 Tetapkan definisi cetak biru ke langganan atau grup manajemen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/new-azblueprintassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -65,14 +68,14 @@ Buat penetapan cetak biru baru definisi cetak biru dalam `$blueprintObject` lang
 PS C:\> New-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"} -Lock AllResourcesReadOnly
 ```
 
-Buat penetapan cetak biru baru definisi cetak biru dalam langganan tertentu menggunakan parameter yang ditentukan dan kamus grup sumber daya serta konfigurasi penguncian sumber daya ke `$blueprintObject` **AllResources**. Default untuk menggunakan identitas yang ditetapkan sistem.  Lokasi menentukan kawasan untuk membuat identitas terkelola.
+Buat penetapan cetak biru baru definisi cetak biru `$blueprintObject` dalam langganan tertentu menggunakan parameter yang ditentukan dan kamus grup sumber daya serta konfigurasi penguncian sumber daya ke **SemuaResources**. Default untuk menggunakan identitas yang ditetapkan sistem.  Lokasi menentukan kawasan untuk membuat identitas terkelola.
 
 ### Contoh 3
 ```powershell
 PS C:\> New-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"} -UserAssignedIdentity "/subscriptions/00000000-1111-0000-1111-000000000000/resourceGroups/my-resource-group/providers/Microsoft.ManagedIdentity/userAssignedIdentities/my-user-defined-identity"
 ```
 
-Buat penetapan cetak biru baru definisi cetak biru dalam langganan tertentu menggunakan parameter yang ditentukan dan kamus grup sumber daya menggunakan `$blueprintObject` id identitas yang ditetapkan pengguna yang ditentukan.
+Buat penetapan cetak biru baru definisi cetak biru `$blueprintObject` dalam langganan tertentu menggunakan parameter yang ditentukan dan kamus grup sumber daya menggunakan id identitas yang ditetapkan pengguna yang ditentukan.
 
 ### Contoh 4
 ```powershell
@@ -97,7 +100,7 @@ PS C:\> $blueprintObject =  Get-AzBlueprint -SubscriptionId "myManagementGroup" 
 PS C:\> New-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -ManagementGroupId "myManagementGroup" -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"}
 ```
 
-Buat penetapan cetak biru baru definisi cetak biru `$blueprintObject` yang menargetkan langganan tertentu dalam grup manajemen tertentu menggunakan parameter yang ditentukan.
+Buat penetapan cetak biru baru definisi cetak biru yang `$blueprintObject` menargetkan langganan tertentu dalam grup manajemen tertentu menggunakan parameter yang ditentukan.
 
 ## PARAMETERS
 
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

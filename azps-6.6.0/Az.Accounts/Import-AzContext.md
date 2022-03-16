@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/import-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Import-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Import-AzContext.md
-ms.openlocfilehash: a751d76adfc66c84e7b7e7d51fbb4231b5033a31
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 24920e83f0d53ba38976e6fbb3988f3d3b1a7429
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384182"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946311"
 ---
 # Import-AzContext
 
 ## SYNOPSIS
 Memuat informasi autentikasi Azure dari file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/import-azcontext) untuk informasi terkini.
 
 ## SYNTAX
 

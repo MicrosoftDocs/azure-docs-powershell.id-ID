@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchComputeNodeUser.md
-ms.openlocfilehash: 581fe6b51697d5d5d28ede40d144225f5fb0d13d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e11ed0e54ed3e34a60b78bbfb9f5599626b01f93
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376401"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944421"
 ---
 # New-AzBatchComputeNodeUser
 
 ## SYNOPSIS
 Membuat akun pengguna pada node perhitungan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchcomputenodeuser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Nama pengguna adalah PenggunaUji, kata sandinya adalah Kata Sandi, akun kedaluwa
 PS C:\>Get-AzBatchComputeNode "MyPool01" -ComputeNodeId "ComputeNode01" -BatchContext $Context | New-AzBatchComputeNodeUser -Name "TestUser" -Password "Password" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan node hitung bernama ComputeNode01 dengan menggunakan cmdlet **Get-AzBatchComputeNode.**
+Perintah ini mendapatkan node hitung bernama ComputeNode01 dengan menggunakan cmdlet **Get-AzBatchComputeNode** .
 Node tersebut berada di pool yang memiliki ID MyPool01.
 Perintah itu melewati node perhitungan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Perintah akan membuat akun pengguna dengan nama pengguna TestUser dan kata sandi Kata Sandi.
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan node perhitungan, sebagai objek **PSComputeNode,** di mana cmdlet ini membuat akun pengguna.
+Menentukan node perhitungan, sebagai objek **PSComputeNode** , di mana cmdlet ini membuat akun pengguna.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

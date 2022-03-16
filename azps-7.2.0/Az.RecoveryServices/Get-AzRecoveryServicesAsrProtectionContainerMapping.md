@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainerMapping.md
-ms.openlocfilehash: 9e6d69d3e5328532f0b62b5b16f8eab63565e088
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 25bcd659dc7214fb86854f5872ee1bd72e32b605
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266635"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084591"
 ---
 # Get-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
 Mendapatkan pemetaan Wadah Perlindungan Pemulihan Situs Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terkini.
 
 ## SYNTAX
 

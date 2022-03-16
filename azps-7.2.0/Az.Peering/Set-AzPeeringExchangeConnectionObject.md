@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringExchangeConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringExchangeConnectionObject.md
-ms.openlocfilehash: 69e032f564f0060a6ca44fd7ebc1a642d44de956
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0403bb732bd70de5bfd0ba0f330d3b8f85a6f3bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273644"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952133"
 ---
 # Set-AzPeeringExchangeConnectionObject
 
 ## SYNOPSIS
-Mengatur atau memperbarui informasi Exchange Koneksi Baru. 
+Mengatur atau memperbarui informasi Exchange Koneksi. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/set-azpeeringexchangeconnectionobject) untuk informasi terkini.
 
 ## SYNTAX
 

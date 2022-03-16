@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVirtualNetworkGatewayConnectionPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzVirtualNetworkGatewayConnectionPacketCapture.md
-ms.openlocfilehash: c3cb6122b0fb54619f3e014ca50f49acf1379c67
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 054853d7c059ab34c0978e92a248188163161c38
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280844"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085743"
 ---
 # Start-AzVirtualNetworkGatewayConnectionPacketCapture
 
 ## SYNOPSIS
 Memulai Operasi Penangkapan Paket pada Koneksi Gateway Jaringan Virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/start-azvirtualnetworkgatewayconnectionpacketcapture) untuk informasi terkini.
 
 ## SYNTAX
 

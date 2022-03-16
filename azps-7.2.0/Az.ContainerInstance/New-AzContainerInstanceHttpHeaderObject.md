@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceHttpHeaderObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceHttpHeaderObject.md
-ms.openlocfilehash: 8d70ae92ab0614c0415090d0d895f5925979c909
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f79fe9ecbf0ce3fd40fcc7b098918c1b2ad2b8a8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962843"
 ---
 # New-AzContainerInstanceHttpHeaderObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk HttpHeader
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstancehttpheaderobject) untuk informasi terkini.
 
 ## SYNTAX
 

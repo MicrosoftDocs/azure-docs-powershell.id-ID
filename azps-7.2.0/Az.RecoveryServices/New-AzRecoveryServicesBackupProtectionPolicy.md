@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: 825e36f6723e9d89f4c8efc4431e8fb51e56909a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b383fc16da1956e72756e711a4034f792013b5dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084357"
 ---
 # New-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
 Membuat kebijakan perlindungan Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesbackupprotectionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** membuat kebijakan protek
 Kebijakan proteksi berkaitan dengan setidaknya satu kebijakan penyimpanan.
 Kebijakan penyimpanan menentukan berapa lama titik pemulihan akan disimpan dengan Azure Backup.
 Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject cmdlet untuk mendapatkan kebijakan penyimpanan default.
-Dan Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject cmdlet untuk mendapatkan kebijakan jadwal default.
+Dan Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan kebijakan jadwal default.
 Objek **SchedulePolicy** **dan RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** .
 Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
@@ -49,10 +52,10 @@ PS C:\> $RetPol.DailySchedule.DurationCountInDays = 365
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan **schedulePolicyObject** dasar, lalu menyimpannya dalam $SchPol variabel.
+Perintah pertama mendapatkan dasar **SchedulePolicyObject**, lalu menyimpannya dalam $SchPol variabel.
 Perintah kedua menghapus semua waktu jalankan terjadwal dari kebijakan jadwal di $SchPol.
 Perintah ketiga menggunakan cmdlet Get-Date cmdlet untuk mendapatkan tanggal dan waktu saat ini.
-Perintah keempat menambahkan tanggal dan waktu saat ini $Dt waktu sebagaimana waktu berjalan yang dijadwalkan ke kebijakan jadwal.
+Perintah keempat menambahkan tanggal dan waktu saat ini $Dt waktu berjalan sebagai waktu berjalan yang dijadwalkan ke kebijakan jadwal.
 Perintah kelima mendapatkan objek **RetentionPolicy** basis, lalu menyimpannya dalam $RetPol penyimpanan.
 Perintah keenam mengatur kebijakan durasi penyimpanan ke 365 hari.
 Perintah terakhir membuat objek **BackupProtectionPolicy** berdasarkan kebijakan jadwal dan penyimpanan yang dibuat oleh perintah sebelumnya.
@@ -71,8 +74,8 @@ PS C:\> $retentionPolicy.DailySchedule.DurationCountInDays = 10
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $retentionPolicy -SchedulePolicy $schedulePolicy
 ```
 
-Perintah pertama mendapatkan **schedulePolicyObject basis jam**, lalu menyimpannya dalam $schedulePolicy variabel.
-Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu dalam $schedulePolicy.
+Perintah pertama mendapatkan **SchedulePolicyObject basis jam**, lalu menyimpannya dalam $schedulePolicy per jam.
+Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu pada $schedulePolicy.
 Perintah keempat dan kelima memulai waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap diperhatikan bahwa waktu mulai harus dalam UTC meskipun zona waktu tidak UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan dibuat ulang di hari yang sama, durasi (dalam jam) di mana jadwal akan dijalankan.
 Perintah kedelapan mendapatkan objek **RetentionPolicy** basis per jam, lalu menyimpannya dalam $retentionPolicy per jam.
 Perintah kesembilan mengatur kebijakan durasi penyimpanan ke 10 hari.
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -RetentionPolicy
 Menentukan objek **RetentionPolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan **objek RetentionPolicy** .
+Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan objek **RetentionPolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase

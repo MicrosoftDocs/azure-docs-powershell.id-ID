@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Start-AzApplicationGateway.md
-ms.openlocfilehash: a96510b7f7a1ed80c5d6ad2b7f7298c22e121dd7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 26b8a981068888477fc80065684c8cb9b48dd75a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285243"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953267"
 ---
 # Start-AzApplicationGateway
 
 ## SYNOPSIS
 Memulai gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/start-azapplicationgateway) untuk informasi terkini.
 
 ## SYNTAX
 

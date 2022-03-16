@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleEmail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAlertRuleEmail.md
-ms.openlocfilehash: fde7c6676b50fd35a58fb1bb0583906429181e5c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0be9621c0b4d7f7583879b1b95eba7496120bed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286571"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955445"
 ---
 # New-AzAlertRuleEmail
 
 ## SYNOPSIS
 Membuat tindakan email untuk aturan pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azalertruleemail) untuk informasi terkini.
 
 ## SYNTAX
 

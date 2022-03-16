@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseDataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseDataFlow.md
-ms.openlocfilehash: 157fee719bdca6e18ac2ad0e43234eab7c075561
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 21fe95e9219b5e83c2010eef8253fcbf9d564a8d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314444"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113299"
 ---
 # Set-AzSynapseDataFlow
 
 ## SYNOPSIS
 Membuat atau memperbarui alur data di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsedataflow) untuk informasi terkini.
 
 ## SYNTAX
 

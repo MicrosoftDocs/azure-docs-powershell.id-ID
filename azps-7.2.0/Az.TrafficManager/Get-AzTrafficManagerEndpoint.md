@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 3eba1813b5c3daca55b6b5a0a01af59985fedd26
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 959a805a9e8ed280d6036b66eaa8ce3dc3c7b2ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113137"
 ---
 # Get-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Mendapatkan titik akhir untuk Traffic Manager profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/get-aztrafficmanagerendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Get-AzTrafficManagerEndpoint** mendapatkan titik akhir untuk Azure Traf
 
 Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke profil menggunakan cmdlet Set-AzTrafficManagerEndpoint cmdlet.
 Tentukan titik akhir dengan menggunakan *parameter Nama* *dan* Tipe.
-Anda bisa menentukan profil Traffic Manager dengan menggunakan parameter *ProfileName* dan *ResourceGroupName*, atau dengan menentukan objek **TrafficManagerProfile**.
+Anda bisa menentukan profil Traffic Manager anda dengan menggunakan parameter *ProfileName* dan *ResourceGroupName*, atau dengan menentukan objek **TrafficManagerProfile**.
 Alternatifnya, Anda bisa melewati nilai itu dengan menggunakan saluran.
 
 ## EXAMPLES

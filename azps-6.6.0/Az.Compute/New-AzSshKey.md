@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azss
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSshKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSshKey.md
-ms.openlocfilehash: c8861e11c96f970ca38e8aa8aacfb5b9df6440f1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6b5a822a1f158eb2ba8c0e878d15530b058f451b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383737"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139942513"
 ---
 # New-AzSshKey
 
 ## SYNOPSIS
 Membuat sumber daya Kunci Publik LINUX.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azsshkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Membuat sumber daya Kunci LINUX dengan kunci publik yang disediakan.
 PS C:\> New-AzSshKey -ResourceGroupName "testRG" -Name "sshkey1" 
 ```
 
-Membuat sumber daya Kunci LINUX tanpa menyediakan kunci publik. Pasangan kunci akan dihasilkan dan disimpan dalam ~~ dan disimpan dalam \. ~ . Kunci publik juga akan disimpan dalam sumber daya KunciBUNGA.
+Membuat sumber daya Kunci LINUX tanpa menyediakan kunci publik. Pasangan kunci akan dihasilkan dan disimpan dalam ~\.linux. Kunci publik juga akan disimpan dalam sumber daya KunciBUNGA.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

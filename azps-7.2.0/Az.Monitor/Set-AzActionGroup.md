@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActionGroup.md
-ms.openlocfilehash: a76d55b72688b4800706519ad7a87c427bf10d69
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c45c64be3da61d99cdc5d6558af3d1496a7cb2c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257563"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955229"
 ---
 # Set-AzActionGroup
 
 ## SYNOPSIS
 Membuat grup tindakan baru atau memperbarui grup tindakan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/set-azactiongroup) untuk informasi terkini.
 
 ## SYNTAX
 

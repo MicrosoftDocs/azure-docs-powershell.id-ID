@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ADDomainServices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceForestTrust.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/New-AzADDomainServiceForestTrust.md
-ms.openlocfilehash: 7ee4e92d6640dcc696eca5b5435e9f42c36510b3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c431cf8065803bc2c2997b7155bf1a1bbd84da3d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304123"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965183"
 ---
 # New-AzADDomainServiceForestTrust
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ForestTrust
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.addomainservices/new-azaddomainserviceforesttrust) untuk informasi terkini.
 
 ## SYNTAX
 

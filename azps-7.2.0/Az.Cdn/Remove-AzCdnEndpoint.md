@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnEndpoint.md
-ms.openlocfilehash: a48e6e8e47afe887f3f04fb6fdbb4e2da6c5ec20
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 076d8a9a6947a1901c1bb5f5b482eb550336f413
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963293"
 ---
 # Remove-AzCdnEndpoint
 
 ## SYNOPSIS
-Menghapus titik akhir CDN akhir.
+Menghapus titik CDN akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

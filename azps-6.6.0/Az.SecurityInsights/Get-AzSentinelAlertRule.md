@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRule.md
-ms.openlocfilehash: 32a868553cf43e57d5f1d7da8de1b86e4a3e0217
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 81d3e38902831a2361f439fb3664176f6d43c1c8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360053"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969323"
 ---
 # Get-AzSentinelAlertRule
 
 ## SYNOPSIS
 Mendapatkan aturan analitik tertentu atau semua (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Get-AzSentinelAlertRule -ResourceId <String> [-DefaultProfile <IAzureContextCont
 ## DESCRIPTION
 Cmdlet **Get-AzSentinelAlertRule** mendapatkan satu atau beberapa Aturan Analitik (Aturan Pemberitahuan) dari ruang kerja yang ditentukan.
 Jika parameter *AlertRuleId* ditentukan, satu objek AlertRule akan dikembalikan.
-Jika Anda tidak menentukan parameter *AlertRuleId,* array yang berisi semua Aturan Pemberitahuan dalam ruang kerja tertentu akan dikembalikan.
+Jika Anda tidak menentukan parameter *AlertRuleId* , array yang berisi semua Aturan Pemberitahuan dalam ruang kerja tertentu akan dikembalikan.
 Anda dapat menggunakan objek AlertRule untuk memperbarui AlertRule. Misalnya, Anda dapat mengaktifkan atau menonaktifkan AlertRule. <br/>
 
 *Catatan: AlertRuleId dapat menjadi string apa pun, selama berada unik di dalam ruang kerja Anda dan dapat ditemukan dalam tampilan Analitik Azure Sentinel di bawah panel detail aturan di sisi kanan bidang "Id"*
@@ -51,14 +54,14 @@ Anda dapat menggunakan objek AlertRule untuk memperbarui AlertRule. Misalnya, An
 PS C:\> $AlertRules = Get-AzSentinelAlertRule -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua Aturan Pemberitahuan dalam ruang kerja yang ditentukan, lalu menyimpannya dalam $AlertRules proyek.
+Contoh ini mendapatkan semua Aturan Pemberitahuan dalam ruang kerja yang ditentukan, lalu menyimpannya dalam $AlertRules perusahaan.
 
 ### Contoh 2
 ```powershell
 PS C:\> $AlertRule = Get-AzSentinelAlertRule -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName" -AlertRuleId "myAlertRuleId"
 ```
 
-Contoh ini mendapatkan AlertRule di ruang kerja tertentu, lalu menyimpannya dalam $AlertRule variabel.<br/>
+Contoh ini mendapatkan AlertRule di ruang kerja tertentu, lalu menyimpannya dalam $AlertRule perusahaan.<br/>
 *Harap diperhatikan bahwa **AlertRuleId** berada dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
 
 ### Contoh 3
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

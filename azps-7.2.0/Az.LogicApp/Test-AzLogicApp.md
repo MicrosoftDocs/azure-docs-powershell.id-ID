@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Test-AzLogicApp.md
-ms.openlocfilehash: 9934bb17c33c303e5f7989226dac47e3e4258771
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 384061b5a20cd916d95bc4a193e0187ec9257e74
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163775"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957137"
 ---
 # Test-AzLogicApp
 
 ## SYNOPSIS
 Memvalidasi definisi aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/test-azlogicapp) untuk informasi terkini.
 
 ## SYNTAX
 

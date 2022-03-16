@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsights.md
-ms.openlocfilehash: a86a611b5d4b44c1083ea5050c040e474a47ca41
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5b771ace1f27ea6e6a4d4130eaaede7e9f2aa4e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164905"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964391"
 ---
 # Remove-AzApplicationInsights
 
 ## SYNOPSIS
 Menghapus sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsights) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Application Insights Component Name.
+Aplikasi Insights Komponen.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchJobSchedule.md
-ms.openlocfilehash: 521a0c03e465f15c5fc61d2f6c0ae7af508f4f2c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 279520f6933d42a923cb3dc1e6726ae59df66eb0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963563"
 ---
 # Remove-AzBatchJobSchedule
 
 ## SYNOPSIS
 Menghapus jadwal pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchjobschedule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\>Remove-AzBatchJobSchedule -Id "MyJobSchedule" -BatchContext $Context
 
 Perintah ini menghapus jadwal kerja yang memiliki ID MyJobSchedule.
 Perintah meminta konfirmasi Anda sebelum menghapus pekerjaan.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Menghapus pekerjaan kumpulan tanpa konfirmasi dengan menggunakan pipeline
 ```

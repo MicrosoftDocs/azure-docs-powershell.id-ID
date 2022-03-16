@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzNetworkVirtualAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzNetworkVirtualAppliance.md
-ms.openlocfilehash: 1d20a5829a2a7fd0ed93e707b448e6f5a405ae26
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8cdf56f6d899d7369d518ad3038daee068425219
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952997"
 ---
 # Update-AzNetworkVirtualAppliance
 
 ## SYNOPSIS
 Memperbarui atau Mengubah sumber daya Alat Virtual Jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-aznetworkvirtualappliance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzNetworkVirtualAppliance -Name <String> -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-The Update-AzNetworkVirtualAppliance modifies a Network Virtual Appliance resource.
+Sumber Update-AzNetworkVirtualAppliance memodifikasi sumber daya Alat Virtual Jaringan.
 
 ## EXAMPLES
 

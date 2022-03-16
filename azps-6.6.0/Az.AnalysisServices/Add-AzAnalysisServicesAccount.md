@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Add-AzAnalysisServicesAccount.md
-ms.openlocfilehash: 57db35e54d3a50adece6fa42dfd4f289610469c5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2ede4639ceeb3022e43547044153ef7835b05869
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350849"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946131"
 ---
 # Add-AzAnalysisServicesAccount
 
 ## SYNOPSIS
 Menambahkan akun terautentikasi untuk digunakan dalam permintaan cmdlet server Azure Analysis Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/add-azanalysisservicesaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ PS C:\>$ApplicationCredential = Get-Credential
 PS C:\>Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -Credential $ApplicationCredential -TenantId "xxxx-xxxx-xxxx-xxxx"
 ```
 
-Perintah pertama mendapatkan kredensial prinsipal layanan aplikasi, lalu menyimpannya dalam $ApplicationCredential variabel.
+Perintah pertama mendapatkan kredensial prinsipal layanan aplikasi, lalu menyimpannya dalam $ApplicationCredential layanan.
 Perintah kedua menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh variabel $ApplicationCredential dan TenantId ke lingkungan westcentralus.asazure.windows.net Analysis Services.
 
 ### Contoh 3
@@ -65,7 +68,7 @@ Perintah kedua menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh 
 PS C:\>Add-AzAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -ApplicationId "yyyy-yyyy-yyyy-yyyy" -CertificateThumbprint 'zzzzzzzzzzzzzzzz' -TenantId "xxxx-xxxx-xxxx-xxxx"
 ```
 
-Contoh ini akan menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh lingkungan ApplicationId, TenantId dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+Contoh ini akan menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh ApplicationId, TenantId, dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
 
 ## PARAMETERS
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

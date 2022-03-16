@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsApplicationInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsApplicationInsightsDataSource.md
-ms.openlocfilehash: 61964b399ff56be726d330ce40465e9dc229d9fe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 851d572db4b4a98ca464a63743dbe89884b2aa6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085527"
 ---
 # New-AzOperationalInsightsApplicationInsightsDataSource
 
 ## SYNOPSIS
 Kumpulkan log dari aplikasi Application-Insights tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsapplicationinsightsdatasource) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFirewallRule.md
-ms.openlocfilehash: 544019e7ec377c6b73cdd810a2e77a267fb54057
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ce03e124527525d056aa2dde4045aba7bb002758
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951881"
 ---
 # Remove-AzPostgreSqlFirewallRule
 
 ## SYNOPSIS
 Menghapus aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/remove-azpostgresqlfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

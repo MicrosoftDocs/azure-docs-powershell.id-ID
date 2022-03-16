@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md
-ms.openlocfilehash: 11591608ef90ee487008a506808c5ca9e003e8c5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 00760b93185b64e4beff1dd2ba751131b7d99ff0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058881"
 ---
 # Invoke-AzDataFactoryV2DataFlowDebugSessionCommand
 
 ## SYNOPSIS
 Menjalankan tindakan debug dalam sesi debug aliran data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2dataflowdebugsessioncommand) untuk informasi terkini.
 
 ## SYNTAX
 

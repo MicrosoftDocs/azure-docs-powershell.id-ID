@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTask.md
-ms.openlocfilehash: 067149c0bccf5f65248e18befaa3781a0238cb0a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 378a940d253b57dbe0c0cf6218b921d19f265703
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376482"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944529"
 ---
 # Get-AzBatchTask
 
 ## SYNOPSIS
 Mendapatkan tugas Kumpulan untuk sebuah pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchtask) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,8 +44,8 @@ Get-AzBatchTask [[-Job] <PSCloudJob>] [-Filter <String>] [-MaxCount <Int32>] [-S
 
 ## DESCRIPTION
 Cmdlet **Get-AzBatchTask** mendapatkan tugas Azure Batch untuk pekerjaan Kumpulan.
-Tentukan pekerjaan dengan parameter *JobId* atau *parameter Job.*
-Untuk mendapatkan tugas tunggal, tentukan parameter *Id.*
+Tentukan pekerjaan dengan parameter *JobId* atau *parameter Job* .
+Untuk mendapatkan tugas tunggal, tentukan parameter *Id* .
 Anda bisa menentukan *parameter Filter* untuk mendapatkan tugas yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
@@ -72,7 +75,7 @@ Url                         : https://pfuller.westus.batch.azure.com/jobs/Job01/
 ```
 
 Perintah ini mendapatkan tugas dengan ID Task03 di bawah pekerjaan Job01.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Mendapatkan semua tugas yang sudah selesai dari pekerjaan tertentu
 ```
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan berisi tugas yang akan didaurkan cmdlet ini.
-Untuk mendapatkan objek **PSCloudJob,** gunakan Get-AzBatchJob cmdlet.
+Untuk mendapatkan objek **PSCloudJob** , gunakan Get-AzBatchJob cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJob
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
