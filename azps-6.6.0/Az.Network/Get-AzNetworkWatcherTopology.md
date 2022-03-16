@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTopology.md
-ms.openlocfilehash: 91bf062a5420f054d25790f55f087aa626c692d8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e9fb8c2fa683fc1ae44a556b0d3fa28e1d66db82
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382726"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104283"
 ---
 # Get-AzNetworkWatcherTopology
 
 ## SYNOPSIS
 Mendapatkan tampilan tingkat jaringan sumber daya dan hubungannya di grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkwatchertopology) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetworkWatcherTopology -Location <String> -TargetResourceGroupName <String
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherTopology cmdlet tingkat jaringan sumber daya dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada dalam grup sumber daya, hanya sumber daya di kawasan yang sama dengan Pengawas Jaringan yang akan disertakan dalam output JSON.
+Cmdlet Get-AzNetworkWatcherTopology cmdlet tingkat jaringan dan hubungannya dalam grup sumber daya. Catatan: Jika sumber daya dari beberapa kawasan berada dalam grup sumber daya, hanya sumber daya di kawasan yang sama dengan Pengawas Jaringan yang akan disertakan dalam output JSON.
 
 ## EXAMPLES
 
@@ -140,7 +143,7 @@ TopologyResources : [
                     ]
 ```
 
-Dalam contoh ini, kami menjalankan cmdlet Get-AzNetworkWatcherTopology pada grup sumber daya yang berisi VM, Nic, NSG, dan IP publik.
+Dalam contoh ini, kami Get-AzNetworkWatcherTopology cmdlet pada grup sumber daya yang berisi VM, Nic, NSG, dan IP publik.
 
 ## PARAMETERS
 
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnSecret.md
-ms.openlocfilehash: 82c2dc17ac6ec3aedb9cec848a28fa966f338779
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e9d731a7e959b5abb22ac5a7d3ec8f2f980b3723
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093267"
 ---
 # New-AzFrontDoorCdnSecret
 
 ## SYNOPSIS
 Rahasianya dibuat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnsecret) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnCustomDomain.md
-ms.openlocfilehash: 5c9b095759a3bffaddedcd59e1aec3dfb03cb0fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5e99fc9f72070f461085e8c01e3549677dd01617
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277260"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093429"
 ---
 # Get-AzFrontDoorCdnCustomDomain
 
 ## SYNOPSIS
 Mendapatkan domain kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

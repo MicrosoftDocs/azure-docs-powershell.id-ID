@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: 7eccfd83bd1291afa1e5097373d6e2ec5aeca870
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 831126a1754fc8cdf7566e6a95f4143bfcc2ee1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358997"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140103995"
 ---
 # New-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Membuat aturan perutean permintaan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrequestroutingrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzApplicationGatewayRequestRoutingRule -Name <String> -RuleType <String> [-P
 ```
 
 ## DESCRIPTION
-**Cmdlet Add-AzApplicationGatewayRequestRoutingRule** membuat aturan perutean permintaan untuk gateway aplikasi Azure.
+**Cmdlet Add-AzApplicationGatewayRequestRoutingRule membuat aturan perutean** permintaan untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -292,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

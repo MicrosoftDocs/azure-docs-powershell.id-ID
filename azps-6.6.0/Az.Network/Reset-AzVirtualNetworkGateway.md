@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Reset-AzVirtualNetworkGateway.md
-ms.openlocfilehash: cda01f2843a858708059fd3e8bf27c97520d836e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c3d7012feae659ee8ea32cceb53b95ee360e5c9c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389950"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140101619"
 ---
 # Reset-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Mereset Gateway Jaringan Virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/reset-azvirtualnetworkgateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayVip
-Gateway vip untuk mereset contoh gateway tertentu (misalnya untuk gateway yang diaktifkan Active-Active.) Secara default, gateway primary instance akan diatur ulang jika tidak ada nilai yang diteruskan.
+Gateway vip untuk mengatur ulang gateway tertentu (misalnya untuk contoh gateway yang diaktifkan Active-Active diaktifkan.) Secara default, gateway primary instance akan diatur ulang jika tidak ada nilai yang diteruskan.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

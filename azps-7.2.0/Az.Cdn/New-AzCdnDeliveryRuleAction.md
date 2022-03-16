@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
-ms.openlocfilehash: 39705760b4e2c1fe6032db7cfe381b9eb9e1aa25
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6aa480e156d864205a8f38d054b8bd2d09731db3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166055"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093339"
 ---
 # New-AzCdnDeliveryRuleAction
 
 ## SYNOPSIS
 Membuat tindakan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
 Pengaturan nilai ini akan mengganti setiap string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
 String kueri harus dalam \<key\>=\<value\> format.
-? dan & akan ditambahkan secara otomatis, jadi jangan menyertakannya.
+? dan & akan ditambahkan secara otomatis, jadi jangan sertakan mereka.
 
 ```yaml
 Type: System.String
