@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsCatalogCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/New-AzDataLakeAnalyticsCatalogCredential.md
-ms.openlocfilehash: 46e0ccd86e17528a5bc660752b04869708faa4c6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dfc83bbe54be0c359f9cb75b3254c8e1a10d078f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961583"
 ---
 # New-AzDataLakeAnalyticsCatalogCredential
 
 ## SYNOPSIS
 Membuat kredensial katalog Azure Data Lake Analytics baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/new-azdatalakeanalyticscatalogcredential) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzDataLakeAnalyticsCatalogCredential [-Account] <String> [-DatabaseName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataLakeAnalyticsCatalogCredential membuat kredensial baru untuk digunakan dalam katalog Azure Data Lake Analytics untuk menyambungkan ke sumber data eksternal.
+Cmdlet New-AzDataLakeAnalyticsCatalogCredential membuat kredensial baru untuk digunakan dalam katalog Azure Data Lake Analytics untuk tersambung ke sumber data eksternal.
 
 ## EXAMPLES
 

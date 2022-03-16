@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerCustomHeaderToEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerCustomHeaderToEndpoint.md
-ms.openlocfilehash: 15a398c13d9617ae8c3fbcd1bcddab163414bd7c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4929b5633bf13ced4e090830bbf20b66388e1c63
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138252939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947131"
 ---
 # Add-AzTrafficManagerCustomHeaderToEndpoint
 
 ## SYNOPSIS
 Menambahkan informasi header kustom ke objek titik Traffic Manager titik akhir lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagercustomheadertoendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Add-AzTrafficManagerCustomHeaderToEndpoint -Name <String> -Value <String>
 
 ## DESCRIPTION
 Cmdlet **Add-AzTrafficManagerCustomHeaderToEndpoint** menambahkan informasi header kustom ke objek titik akhir Azure Traffic Manager lokal.
-Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzTrafficManagerEndpoint Get-AzTrafficManagerEndpoint baru.
+Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzTrafficManagerEndpoint Get-AzTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
 Lakukan perubahan anda ke titik akhir Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint cmdlet.
@@ -43,9 +46,9 @@ PS C:\> Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndp
 ```
 
 Perintah pertama membuat titik akhir Azure Traffic Manager dengan menggunakan cmdlet **New-AzTrafficManagerEndpoint**.
-Perintah menyimpan titik akhir lokal di $TrafficManagerEndpoint variabel.
-Perintah kedua menambahkan informasi header kustom ke titik akhir yang disimpan $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir di Traffic Manager sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah menyimpan titik akhir lokal dalam $TrafficManagerEndpoint variabel.
+Perintah kedua menambahkan informasi header kustom ke titik akhir yang disimpan di $TrafficManagerEndpoint.
+Perintah terakhir memperbarui titik akhir pada Traffic Manager cocok dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint atau New-AzTrafficManagerEndpoint cmdlet.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint New-AzTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 067c781a18a64f2bbd8710f23bb162c075a30bcb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 59ef1bfb36d5ab8e890ed5bf793dfec2fcd5836b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372775"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104661"
 ---
 # Add-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat SSL ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewaysslcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ PS C:\> $secretId = $secret.SecretId.Replace($secret.Version, "") # https://<key
 PS C:\> $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Dapatkan rahasia dan referensikan di dalam `Add-AzApplicationGatewaySslCertificate` untuk menambahkannya ke Gateway Aplikasi dengan nama `Cert01` .
+Dapatkan rahasia dan referensikan di dalam untuk `Add-AzApplicationGatewaySslCertificate` menambahkannya ke Gateway Aplikasi dengan nama `Cert01`.
 Catatan: Saat secretId versi tidak tersedia di sini, Gateway Aplikasi akan menyinkronkan sertifikat dalam interval reguler dengan KeyVault.
 
 ### Contoh 3: Tambahkan sertifikat SSL menggunakan KeyVault Secret (versioned secretId) ke gateway aplikasi.
@@ -59,7 +62,7 @@ PS C:\> $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/
 PS C:\> $AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Dapatkan rahasia dan referensikan di dalam `Add-AzApplicationGatewaySslCertificate` untuk menambahkannya ke Gateway Aplikasi dengan nama `Cert01` .
+Dapatkan rahasia dan referensikan di dalam untuk `Add-AzApplicationGatewaySslCertificate` menambahkannya ke Gateway Aplikasi dengan nama `Cert01`.
 Catatan: Jika diperlukan agar Gateway Aplikasi menyinkronkan sertifikat dengan KeyVault, harap sediakanid rahasia versinya.
 
 ## PARAMETERS
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

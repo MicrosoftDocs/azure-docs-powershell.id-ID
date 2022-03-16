@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: 9db6eda309f3c043749fd32a1eb2bc34ce175f16
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f0afddc6108245883fd4f5a0e026653843230d05
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294555"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961907"
 ---
 # Get-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
-Dapatkan wadah untuk akun Microsoft Edge Storage anda pada perangkat.
+Dapatkan wadah untuk akun Edge Storage Anda pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 

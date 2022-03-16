@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespaceAuthorizationRule.md
-ms.openlocfilehash: c8281d6c84a9652bc4dbf05101f309322a836607
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 491a2a6110e35a85f8c433aa41b945742466a433
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354221"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139933999"
 ---
 # New-AzNotificationHubsNamespaceAuthorizationRule
 
 ## SYNOPSIS
 Membuat aturan otorisasi dan menetapkan aturan itu ke ruang nama hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubsnamespaceauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,10 +40,10 @@ New-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-Nam
 Cmdlet **New-AzNotificationHubsNamespaceAuthorizationRule** membuat aturan otorisasi Tanda Tangan Akses Bersama (SAS, Shared Access Signature) dan menetapkannya ke ruang nama hub pemberitahuan.
 Aturan otorisasi mengelola hak pengguna ke ruang nama dan ke hub pemberitahuan yang dimuat dengan ruang nama itu.
 Cmdlet ini menyediakan dua cara untuk membuat aturan otorisasi baru dan menetapkannya ke ruang nama.
-Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes,** lalu mengonfigurasi objek tersebut dengan nilai properti yang ingin dimiliki aturan baru.
+Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes** , lalu mengonfigurasi objek tersebut dengan nilai properti yang ingin dimiliki aturan baru.
 Ini bisa dilakukan menggunakan .NET Framework.
-Kemudian, Anda dapat menyalin nilai properti tersebut ke aturan baru menggunakan parameter *SASRule.*
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut menggunakan parameter *InputFile.*
+Kemudian, Anda dapat menyalin nilai properti tersebut ke aturan baru menggunakan parameter *SASRule* .
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut menggunakan parameter *InputFile* .
 File JSON adalah file teks yang menggunakan sintaks yang sama seperti berikut: {  
     "Nama": "ContosoAuthorizationRule",  
     "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29IkalUnnpUk01Y=",  
@@ -48,8 +51,8 @@ File JSON adalah file teks yang menggunakan sintaks yang sama seperti berikut: {
         "Dengarkan",  
         "Kirim"  
     \]  
-} Ketika digunakan bersama dengan cmdlet **New-AzNotificationHubsNamespaceAuthorizationRule,** sampel JSON sebelumnya membuat aturan otorisasi bernama ContosoAuthorizationRule yang memberi pengguna hak Dengarkan dan Kirim ke ruang nama.
-*PrimaryKey yang* digunakan untuk autentikasi, dapat dihasilkan secara acak menggunakan perintah Windows PowerShell berikut: \[ Konversi \] ::ToBase64String((1,32 |% { \[ byte/](Get-Random -Minimum 0 -Maksimum 255) }))
+} Ketika digunakan bersama dengan cmdlet **New-AzNotificationHubsNamespaceAuthorizationRule** , sampel JSON sebelumnya membuat aturan otorisasi bernama ContosoAuthorizationRule yang memberi pengguna hak Dengarkan dan Kirim ke ruang nama.
+*PrimaryKey yang* digunakan untuk autentikasi, dapat dihasilkan secara acak menggunakan perintah Windows PowerShell berikut: \[Convert\]::ToBase64String((1,32 |% { \[byte/](Get-Random -Minimum 0 -Maximum 255) }))
 
 ## EXAMPLES
 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

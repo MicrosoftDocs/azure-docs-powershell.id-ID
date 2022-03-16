@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/en
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Enable-AzDataLakeStoreKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Enable-AzDataLakeStoreKeyVault.md
-ms.openlocfilehash: 34cf10fbd06c83eb757e25305d8949ee589e3d92
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 038d54c74775c8df854dad5120836f58a69becd8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288044"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961547"
 ---
 # Enable-AzDataLakeStoreKeyVault
 
 ## SYNOPSIS
 Berusaha mengaktifkan Key Vault yang dikelola pengguna untuk enkripsi akun Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/enable-azdatalakestorekeyvault) untuk informasi terkini.
 
 ## SYNTAX
 

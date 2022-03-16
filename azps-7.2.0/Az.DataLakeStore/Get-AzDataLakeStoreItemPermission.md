@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemPermission.md
-ms.openlocfilehash: ccdac5c6fedb43b77a5d08793a423a6ce5d4e959
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c33d323c063741119ab54d5ad702c4c6d0d23ed5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255772"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961493"
 ---
 # Get-AzDataLakeStoreItemPermission
 
 ## SYNOPSIS
 Mendapatkan izin oktal dari file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitempermission) untuk informasi terkini.
 
 ## SYNTAX
 

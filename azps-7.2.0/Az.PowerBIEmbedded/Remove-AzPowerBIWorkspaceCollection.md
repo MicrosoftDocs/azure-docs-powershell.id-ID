@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Remove-AzPowerBIWorkspaceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Remove-AzPowerBIWorkspaceCollection.md
-ms.openlocfilehash: 0a2ad010b92a29a452d3a23886463f18e4d38b21
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b2d667082999273581b1cd9ab029c1c273f7a83b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262364"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951755"
 ---
 # Remove-AzPowerBIWorkspaceCollection
 
 ## SYNOPSIS
 Menghapus kumpulan Power BI kerja Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/remove-azpowerbiworkspacecollection) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
-ms.openlocfilehash: cb1e23c4d6ef87599b626b7a2c7129389c3a0ee7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: df2d5dcd32ebc4ded27d4a0d1d44c9c455198e6f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338767"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139931731"
 ---
 # New-AzSqlServerFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall untuk server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlserverfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,8 +66,8 @@ Karena parameter *AllowAllAzureIPs* digunakan, aturan firewall mengizinkan semua
 
 ### -AllowAllAzureIPs
 Menunjukkan bahwa aturan firewall ini mengizinkan semua alamat IP Azure untuk mengakses server.
-Anda tidak dapat menggunakan parameter ini jika ingin menggunakan *parameter FirewallRuleName,* *StartIpAddress,* *dan EndIpAddress.*
-Jika Anda ingin memperbolehkan IP Azure mengakses server, parameter ini harus digunakan dalam panggilan cmdlet terpisah yang tidak menggunakan parameter *FirewallRuleName,* *StartIpAddress,* dan *EndIpAddress.*
+Anda tidak dapat menggunakan parameter ini jika ingin menggunakan *parameter FirewallRuleName*, *StartIpAddress*, *dan EndIpAddress* .
+Jika Anda ingin memperbolehkan IP Azure mengakses server, parameter ini harus digunakan dalam panggilan cmdlet terpisah yang tidak menggunakan parameter *FirewallRuleName*, *StartIpAddress*, *dan EndIpAddress* .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

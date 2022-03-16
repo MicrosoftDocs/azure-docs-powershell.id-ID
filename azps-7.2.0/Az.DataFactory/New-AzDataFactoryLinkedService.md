@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 4edc3efafe7b5eefefe0e665ebea652b097369e0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 82c6016666f528395d906a2190a7c253b3025026
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166665"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961781"
 ---
 # New-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Menautkan penyimpanan data atau layanan awan ke Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/new-azdatafactorylinkedservice) untuk informasi terkini.
 
 ## SYNTAX
 

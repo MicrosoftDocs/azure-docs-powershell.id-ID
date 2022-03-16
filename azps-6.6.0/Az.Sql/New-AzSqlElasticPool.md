@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticPool.md
-ms.openlocfilehash: 5738050364610f54ff416f43e8bfa4c01d050549
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a57e49597c34aba4cf73fadc3cdb6cd1db5ddf9e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368418"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139931857"
 ---
 # New-AzSqlElasticPool
 
 ## SYNOPSIS
-Membuat pool database elastis untuk SQL Database.
+Membuat pool database elastis untuk suatu SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlelasticpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzSqlElasticPool [-ElasticPoolName] <String> -Edition <String> [-StorageMB <
 
 ## DESCRIPTION
 Cmdlet **New-AzSqlElasticPool** membuat pool database elastis untuk Azure SQL Database.
-Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang ditetapkan adalah dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
+Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang ditetapkan berasal dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
 ## EXAMPLES
 
@@ -94,7 +97,7 @@ Perintah ini membuat kolam elastis di tingkat layanan GengeralPurpose bernama El
 
 ### Contoh 3
 
-Membuat pool database elastis untuk SQL Database. (otomatisgenerated)
+Membuat pool database elastis untuk suatu SQL Database. (otomatisgenerated)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -Edition
-Menentukan edisi produk produk yang Azure SQL Database untuk elastis pool.
+Menentukan edisi produk produk yang Azure SQL Database untuk kolam elastis.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak ada
 - Dasar
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceConfigurationId
-Id konfigurasi Pemeliharaan untuk Kolam Elastis SQL Tinggi.
+Id konfigurasi Pemeliharaan untuk Kolam Elastis SQL Elastis.
 
 ```yaml
 Type: System.String
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageMB
-Menentukan batas penyimpanan, dalam megabyte, untuk pool elastis. Jika Anda tidak menentukan parameter ini, cmdlet ini menghitung nilai yang bergantung pada nilai parameter *Dtu.*
+Menentukan batas penyimpanan, dalam megabyte, untuk pool elastis. Jika Anda tidak menentukan parameter ini, cmdlet ini menghitung nilai yang bergantung pada nilai parameter *Dtu* .
 Lihat [eDTU dan batas penyimpanan untuk](/azure/sql-database/sql-database-elastic-pool#edtu-and-storage-limits-for-elastic-pools) nilai yang mungkin.
 
 ```yaml
@@ -441,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

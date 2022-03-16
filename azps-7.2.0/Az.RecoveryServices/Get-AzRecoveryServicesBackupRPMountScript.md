@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: 5d4eb78e942d01d14ab29fd82ade1b74f84d9f4d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b8d91dbf983dedef3419d64016f41256e7b2b3be
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260763"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951035"
 ---
 # Get-AzRecoveryServicesBackupRPMountScript
 
 ## SYNOPSIS
 Mengunduh skrip untuk memasang semua file titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprpmountscript) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzRecoveryServicesBackupRPMountScript [-RecoveryPoint] <RecoveryPointBase> [
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzRecoveryServicesBackupRPMountScript mengunduh skrip yang terpasang volume titik pemulihan di komputer tempat skrip dijalankan.
+Cmdlet Get-AzRecoveryServicesBackupRPMountScript mengunduh skrip yang terpasang pada volume titik pemulihan di komputer tempat skrip dijalankan.
 
 ## EXAMPLES
 

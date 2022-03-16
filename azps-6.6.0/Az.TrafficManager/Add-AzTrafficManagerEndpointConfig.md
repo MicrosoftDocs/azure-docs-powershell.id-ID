@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerEndpointConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerEndpointConfig.md
-ms.openlocfilehash: fa6de2b49366639c0717aef8399faf42df473d72
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e12b44c860363914c419c99982aefa7678c8e852
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374147"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139930436"
 ---
 # Add-AzTrafficManagerEndpointConfig
 
 ## SYNOPSIS
 Menambahkan titik akhir ke objek Traffic Manager profil lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagerendpointconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **Add-AzTrafficManagerEndpointConfig** menambahkan titik akhir ke objek A
 Anda dapat memperoleh profil menggunakan cmdlet New-AzTrafficManagerProfile Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
-Lakukan perubahan ke profil untuk Traffic Manager dengan cmdlet Set-AzTrafficManagerProfile cmdlet.
+Lakukan perubahan ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile cmdlet.
 Untuk membuat titik akhir dan melakukan perubahan dalam satu operasi, gunakan cmdlet New-AzTrafficManagerEndpoint cmdlet.
 
 ## EXAMPLES
@@ -47,7 +50,7 @@ PS C:\> Add-AzTrafficManagerEndpointConfig -EndpointName "contoso" -EndpointStat
 PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 ```
 
-Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile.**
+Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
 Perintah menyimpan profil lokal di $TrafficManagerProfile lokal.
 
 Perintah kedua menambahkan titik akhir yang bernama contoso ke profil yang disimpan di $TrafficManagerProfile.
@@ -94,7 +97,7 @@ Parameter ini hanya berlaku untuk titik akhir tipe ExternalEndpoints atau Nested
 Anda harus menentukan parameter ini ketika metode Perutean lalu lintas kinerja digunakan.
 
 Tentukan nama kawasan Azure.
-Untuk daftar lengkap kawasan Azure, lihat Azure Regions http://azure.microsoft.com/regions/ ( http://azure.microsoft.com/regions/) .
+Untuk daftar lengkap kawasan Azure, lihat Azure Regionshttp://azure.microsoft.com/regions/ (http://azure.microsoft.com/regions/).
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -GeoMapping
-Daftar kawasan yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Bacalah Traffic Manager ini untuk daftar [lengkap nilai yang diterima.](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-geographic-regions)
+Daftar kawasan yang dipetakan ke titik akhir ini saat menggunakan metode perutean lalu lintas 'Geografis'. Bacalah Traffic Manager dokumentasi lengkap tentang [nilai yang diterima](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-geographic-regions).
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -183,7 +186,7 @@ Nilai valid adalah bilangan bulat dari 1 sampai 1000.
 Nilai yang lebih rendah menunjukkan prioritas yang lebih tinggi.
 
 Jika menentukan prioritas, Anda harus menentukan prioritas di semua titik akhir dalam profil, dan tidak ada dua titik akhir yang dapat berbagi nilai prioritas yang sama.
-Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil mencantumkan titik akhir.
+Jika Anda tidak menentukan prioritas, Traffic Manager menetapkan nilai prioritas default ke titik akhir, dimulai dengan satu (1), dalam urutan profil akan mencantumkan titik akhir.
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerProfile,** gunakan cmdlet Get-AzTrafficManagerProfile baru.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

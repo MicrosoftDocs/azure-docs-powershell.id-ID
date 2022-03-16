@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Get-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Get-AzCostManagementExport.md
-ms.openlocfilehash: 7d7dffb86e04b78457726364acf3668cb7d01559
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0f347cd6581000e5936a61b2b3a7251ef7d22bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254795"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962159"
 ---
 # Get-AzCostManagementExport
 
 ## SYNOPSIS
 Operasi untuk mendapatkan ekspor untuk lingkup yang ditentukan menurut nama ekspor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.costmanagement/get-azcostmanagementexport) untuk informasi terkini.
 
 ## SYNTAX
 

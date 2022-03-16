@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 7af8105d16b281896d737eb0a823e83ab447aa49
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 54837d6c36806a6477f9a5fa26042b3277dc5fc1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354425"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104589"
 ---
 # Add-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat akar klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvpnclientrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ PS C:\> Add-AzVpnClientRootCertificate -PublicCertData $CertificateText -Resourc
 ```
 
 Contoh ini menambahkan sertifikat akar klien ke gateway virtual bernama ContosoVirtualGateway.
-Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks akar yang diekspor sebelumnya dan menyimpan data teks tersebut ke variabel bernama $Text.
+Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks yang diekspor sebelumnya dari sertifikat akar dan menyimpan data teks tersebut ke variabel bernama $Text.
 Lalu perintah kedua menggunakan pengulangan untuk mengekstrak semua teks kecuali untuk baris pertama dan baris terakhir.
 Teks yang diekstrak disimpan dalam variabel yang bernama $CertificateText.
 Perintah ketiga lalu menggunakan teks yang disimpan di $CertificateText dengan cmdlet **Add-AzVpnClientRootCertificate** untuk menambahkan sertifikat akar ke gateway.
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

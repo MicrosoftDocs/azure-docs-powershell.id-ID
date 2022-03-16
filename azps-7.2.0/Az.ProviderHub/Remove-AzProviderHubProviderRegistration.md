@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubProviderRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubProviderRegistration.md
-ms.openlocfilehash: 590f2f94d37c8410079e7e35838a6b822fbdbd6e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 10b143872ca6b776b6b5f85b4760c3a643f5b4f3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274619"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951431"
 ---
 # Remove-AzProviderHubProviderRegistration
 
 ## SYNOPSIS
 Menghapus pendaftaran penyedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/remove-azproviderhubproviderregistration) untuk informasi terkini.
 
 ## SYNTAX
 

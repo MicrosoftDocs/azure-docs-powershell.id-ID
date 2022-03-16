@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsIISLogCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Disable-AzOperationalInsightsIISLogCollection.md
-ms.openlocfilehash: 38dd0a46e1d72c97911eae9a68df98dd71ada56a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bfdb335620b57a219c2200f4b132ddcb5ff492ce
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358754"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139933891"
 ---
 # Disable-AzOperationalInsightsIISLogCollection
 
 ## SYNOPSIS
 Menghentikan kumpulan log IIS dari komputer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/disable-azoperationalinsightsiislogcollection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Disable-AzOperationalInsightsIISLogCollection [-Workspace] <PSWorkspace>
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzOperationalInsightsIISLogCollection** menghentikan kumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung di dalam ruang kerja.
+Cmdlet **Disable-AzOperationalInsightsIISLogCollection** menghentikan kumpulan log Layanan Informasi Internet (IIS) dari komputer yang tersambung dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

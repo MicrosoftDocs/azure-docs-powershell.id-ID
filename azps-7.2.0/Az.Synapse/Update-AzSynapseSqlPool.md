@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
-ms.openlocfilehash: 78f94d96b146512f1973bf2b5f4c3ca1e1a3d2ef
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 889765743089081a3ee7fda6c1b8c7235d9ebd23
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162735"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947293"
 ---
 # Update-AzSynapseSqlPool
 
 ## SYNOPSIS
-Memperbarui Laporan Analitik Synapse SQL pool.
+Memperbarui Alat Analitik Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Update-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-Tag <Hashtable
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSqlPool** memperbarui azure Synapse Analytics SQL sama.
+Cmdlet **Update-AzSynapseSqlPool** memperbarui azure Synapse Analytics SQL pool.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Cmdlet **Update-AzSynapseSqlPool** memperbarui azure Synapse Analytics SQL sama.
 PS C:\> Update-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -Tag @{'key'='value'} -PerformanceLevel DW300c
 ```
 
-Perintah ini memperbarui SQL Analitik Azure Synapse.
+Perintah ini memperbarui azure Synapse Analytics SQL sama.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Update-AzSynapseSqlPool -Name ContosoSqlPool -Tag @{'key'='value1'}
 ```
 
-Perintah ini memperbarui Analitik Azure Synapse SQL saluran melalui pipeline.
+Perintah ini memperbarui Analitik Azure Synapse SQL saluran melalui saluran.
 
 ### Contoh 3
 ```powershell
@@ -72,7 +75,7 @@ PS C:\> $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name Conto
 PS C:\> $pool | Update-AzSynapseSqlPool -Tag @{'key'='value2'}
 ```
 
-Perintah ini memperbarui Analitik Azure Synapse SQL saluran melalui pipeline.
+Perintah ini memperbarui Analitik Azure Synapse SQL saluran melalui saluran.
 
 ### Contoh 4
 ```powershell
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformanceLevel
-Tingkat SQL Layanan dan tingkat kinerja untuk ditetapkan ke SQL baru.
+Tingkat SQL Layanan tingkat dan tingkat kinerja untuk ditetapkan ke SQL baru.
 Misalnya, DW2000c.
 
 ```yaml

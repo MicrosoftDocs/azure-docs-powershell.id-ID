@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Update-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Update-AzIotSecuritySolution.md
-ms.openlocfilehash: 5fa015f46e007eecd09cd65a9d87792fda21f205
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c374985afab616bb285f500fa228e4c731a40afd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360113"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139932541"
 ---
 # Update-AzIotSecuritySolution
 
 ## SYNOPSIS
 Perbarui satu atau beberapa properti berikut ini dalam solusi keamanan IoT: tag, konfigurasi rekomendasi, sumber daya yang ditentukan pengguna
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/update-aziotsecuritysolution) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Update-AzIotSecuritySolution -InputObject <PSIotSecuritySolution> [-Tag <Hashtab
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzIotSecuritySolution satu atau beberapa properti berikut dalam solusi keamanan IoT tertentu: tag, konfigurasi rekomendasi, sumber daya yang ditentukan pengguna.
+Cmdlet Update-AzIotSecuritySolution hari ini menghasilkan satu atau beberapa properti berikut dalam solusi keamanan IoT tertentu: tag, konfigurasi rekomendasi, sumber daya yang ditentukan pengguna.
 Hanya properti tertentu yang akan diperbarui di dalam solusi keamanan iot.
 Solusi keamanan IoT mengumpulkan data dan kejadian keamanan dari perangkat iot dan hub iot untuk membantu mencegah dan mendeteksi ancaman.
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendationsConfiguration
-Rekomendasi konfigurasi.
+Rekomendasi lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Security.Models.IotSecuritySolutions.PSRecommendationConfiguration[]
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

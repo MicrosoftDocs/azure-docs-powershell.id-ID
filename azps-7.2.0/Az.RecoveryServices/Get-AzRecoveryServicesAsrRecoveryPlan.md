@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPlan.md
-ms.openlocfilehash: e8878190eacfb9401453c7bc8bbdcf021d01ece8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f253af1a19f7d53b1d93868347f2252b79f760ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273627"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951179"
 ---
 # Get-AzRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
 Mendapatkan paket pemulihan atau semua paket pemulihan di vault Layanan Pemulihan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrrecoveryplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Path
-Menentukan jalur file tempat cmdlet ini menyimpan definisi json rencana pemulihan. Definisi json dapat diedit untuk mengubah rencana pemulihan dan digunakan untuk memperbarui paket pemulihan melalui cmdlet Update-AzRecoveryServicesASRRecoveryPlan pemulihan
+Menentukan jalur file tempat cmdlet ini menyimpan definisi json rencana pemulihan. Definisi json dapat diedit untuk mengubah rencana pemulihan dan digunakan untuk memperbarui paket pemulihan melalui cmdlet Update-AzRecoveryServicesASRRecoveryPlan
 
 ```yaml
 Type: System.String

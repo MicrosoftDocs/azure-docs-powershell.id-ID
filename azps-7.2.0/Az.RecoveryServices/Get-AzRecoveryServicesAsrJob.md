@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrJob.md
-ms.openlocfilehash: df31e4c856a521fc0681e8b5f2fe502fec31d4de
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 440293c2e4c15b94981fdfa16c2bd104972b0de9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951287"
 ---
 # Get-AzRecoveryServicesAsrJob
 
 ## SYNOPSIS
 Mendapatkan detail pekerjaan ASR yang ditentukan atau daftar pekerjaan ASR terbaru di vault Layanan Pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ### -EndTime
 Menentukan waktu akhir untuk pekerjaan.
 Cmdlet ini mendapatkan semua pekerjaan yang dimulai sebelum waktu yang ditentukan.
-Untuk mendapatkan objek **DateTime** bagi parameter ini, gunakan cmdlet Get-Date cmdlet.
+Untuk mendapatkan objek **DateTime** bagi parameter ini, gunakan Get-Date cmdlet.
 Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
 
 ```yaml

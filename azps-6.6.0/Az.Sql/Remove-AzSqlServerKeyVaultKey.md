@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerKeyVaultKey.md
-ms.openlocfilehash: 65d4adce6435eb82a42a4f2e2c23be98eab44723
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: afdf3526e94c1934a3822ae4aca5e9c9f5274ec2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377045"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139931659"
 ---
 # Remove-AzSqlServerKeyVaultKey
 
 ## SYNOPSIS
 Menghapus tombol Key Vault dari server SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlserverkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzSqlServerKeyVaultKey [-KeyId] <String> [-AsJob] [-ServerName] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSqlServerKeyVaultKey akan menghapus tombol Key Vault dari server SQL tertentu.
+Cmdlet Remove-AzSqlServerKeyVaultKey akan menghapus kunci Key Vault dari server SQL tertentu.
 Perhatikan SQL izin server ke vault kunci tidak diubah.
 Untuk mengubah izin, gunakan Set-AzKeyVaultAccessPolicy.
 Perlu diketahui bahwa cmdlet ini tidak melakukan perubahan pada Key Vault.
@@ -38,8 +41,8 @@ Untuk menghapus kunci dari Key Vault, gunakan Remove-AzKeyVaultKey.
 PS C:\> Remove-AzSqlServerKeyVaultKey -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' -ServerName 'ContosoServer' -ResourceGroupName 'ContosoResourceGroup'
 ```
 
-Perintah ini akan menghapus kunci Key Vault dengan Id https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 ' dari server yang ditentukan.
-ResourceGroupName : ContosoResourceGroup ServerName : ContosoServer ServerKeyName : Tipe contoso_contosokey_01234567890123456789012345678901 : AzureKeyVault Uri https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 : Thumbprint : 1122334455667788990011223344556677889900 CreationDate : 1/1/2017 12:00:00 AM
+Perintah ini akan menghapus kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' dari server yang ditentukan.
+ResourceGroupName : ContosoResourceGroup ServerName : ContosoServer ServerKeyName : Tipe contoso_contosokey_01234567890123456789012345678901 : AzureKeyVault Uri : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 Thumbprint : 1122334455667788990011223344556677889900 CreationDate : 1/1/2017 12:00:00 AM
 
 ## PARAMETERS
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

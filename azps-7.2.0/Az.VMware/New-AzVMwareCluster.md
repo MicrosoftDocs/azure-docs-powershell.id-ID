@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/new-azvmw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareCluster.md
-ms.openlocfilehash: cd3fd8d6b14fa36d53944de85eb523a426a9c8fd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a34e518fe31c593ce2b20154df4e80bdb05fde89
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947023"
 ---
 # New-AzVMwareCluster
 
 ## SYNOPSIS
 Membuat atau memperbarui kluster di awan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/new-azvmwarecluster) untuk informasi terkini.
 
 ## SYNTAX
 

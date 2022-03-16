@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProviderAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProviderAssociation.md
-ms.openlocfilehash: 53fdcde9204a367ffef2f7828a04e826a13da837
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 19c9164bb31183308a44eb01fb48faa420cc0a32
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264092"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962101"
 ---
 # New-AzCustomProviderAssociation
 
 ## SYNOPSIS
 Membuat atau memperbarui asosiasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.customproviders/new-azcustomproviderassociation) untuk informasi terkini.
 
 ## SYNTAX
 

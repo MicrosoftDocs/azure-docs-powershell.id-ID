@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 51d8f4a7f7e76ce055e1b4835fdf99666b6e4319
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f00d5260925f324e5f8df3d1ce3f3eb92909f386
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349550"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104733"
 ---
 # Add-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewaybackendhttpsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Add-AzApplicationGatewayBackendHttpSetting -ApplicationGateway <PSApplicationGat
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzApplicationGatewayBackendHttpSetting menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi.
+Cmdlet Add-AzApplicationGatewayBackendHttpSetting menambahkan pengaturan HTTP ujung belakang ke gateway aplikasi.
 Pengaturan HTTP ujung-belakang diterapkan ke semua server ujung-belakang dalam pool.
 
 ## EXAMPLES
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

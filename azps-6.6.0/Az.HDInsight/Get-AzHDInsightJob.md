@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightJob.md
-ms.openlocfilehash: 24e30a8414deb7579a77a13b8d0ec057a2eb4991
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c04fdf5e61685d5075b30ab076be35f3b5019e1d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357062"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139975972"
 ---
 # Get-AzHDInsightJob
 
 ## SYNOPSIS
 Mendapatkan daftar pekerjaan dari kluster dan mencantumkannya dalam urutan kronologis terbalik, atau mengambil pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzHDInsightJob [-ClusterName] <String> [-HttpCredential] <PSCredential> [[-J
 
 ## DESCRIPTION
 Cmdlet **Get-AzHDInsightJob** mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight tertentu dalam urutan kronologis terbalik, dengan pekerjaan terbaru di bagian atas daftar.
-Dapatkan pekerjaan khusus dengan menyediakan parameter *JobId.*
+Dapatkan pekerjaan khusus dengan menyediakan parameter *JobId* .
 
 ## EXAMPLES
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

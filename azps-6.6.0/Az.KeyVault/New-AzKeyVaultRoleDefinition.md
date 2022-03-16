@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: 9d103a221d4c8d2287f79e7865986d3eb25a4a55
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6ebab8bd07d570a5d55d95e48d7b71017396148e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385358"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139974993"
 ---
 # New-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
 Membuat definisi peran kustom di HSM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroledefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] [-InputFile] 
 Cmdlet `New-AzKeyVaultRoleDefinition` membuat peran kustom dalam Azure Role-Based Access Control dari HSM yang dikelola Azure KeyVault.
 
 Sediakan file definisi peran JSON atau objek `PSKeyVaultRoleDefinition` sebagai input.
-Pertama, gunakan `Get-AzKeyVaultRoleDefinition` perintah untuk menghasilkan objek definisi peran garis dasar.
+Pertama, gunakan perintah `Get-AzKeyVaultRoleDefinition` untuk menghasilkan objek definisi peran garis dasar.
 Lalu, modifikasi propertinya sebagaimana diperlukan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
 
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

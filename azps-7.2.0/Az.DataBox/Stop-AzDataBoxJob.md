@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/stop-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Stop-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Stop-AzDataBoxJob.md
-ms.openlocfilehash: bea191fb3871fc0668669d9c1c8233bf37a77728
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 88ea54657dfc9780d5cb0935ecc9edc38daf002e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306043"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962015"
 ---
 # Stop-AzDataBoxJob
 
 ## SYNOPSIS
 CancelJob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/stop-azdataboxjob) untuk informasi terkini.
 
 ## SYNTAX
 

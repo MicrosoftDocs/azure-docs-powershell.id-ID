@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwarePrivateCloud.md
-ms.openlocfilehash: e4730ae18d17ac49707ac4bd0e542c923bfd2200
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8366af7832ba9e7cc54c9c357060a8c011077793
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306252"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946987"
 ---
 # Remove-AzVMwarePrivateCloud
 
 ## SYNOPSIS
 Menghapus awan pribadi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/remove-azvmwareprivatecloud) untuk informasi terkini.
 
 ## SYNTAX
 

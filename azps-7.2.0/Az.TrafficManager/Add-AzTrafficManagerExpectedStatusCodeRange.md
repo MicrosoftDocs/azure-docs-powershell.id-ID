@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerExpectedStatusCodeRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerExpectedStatusCodeRange.md
-ms.openlocfilehash: 5f3e4cd87a1d37235a28b831e8a9273d27dac3fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ebfa86377e3d8a79ee5a94bd20b0dc28b44abe2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167658"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947113"
 ---
 # Add-AzTrafficManagerExpectedStatusCodeRange
 
 ## SYNOPSIS
 Menambahkan rentang kode status yang diharapkan ke objek Traffic Manager profil lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagerexpectedstatuscoderange) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfil
 ```
 
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
-Perintah menyimpan profil lokal di $TrafficManagerProfile variabel.
+Perintah menyimpan profil lokal di $TrafficManagerProfile lokal.
 Perintah kedua menambahkan rentang kode status yang diharapkan ke profil yang disimpan di $TrafficManagerProfile.
 Perintah terakhir memperbarui profil di Traffic Manager cocok dengan nilai lokal di $TrafficManagerProfile.
 

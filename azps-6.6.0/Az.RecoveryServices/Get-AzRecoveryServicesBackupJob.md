@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: 80288a04409d5cba981b066746825e428be8d17c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ecf7e9948b213f8f14e127f9080d6630695d8758
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365066"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139933081"
 ---
 # Get-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 
 Mendapatkan pekerjaan Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ WorkloadName     Operation            Status               StartTime            
 V2VM             Backup               InProgress           4/23/2016 5:00:30 PM      1/1/2001 12:00:00
 ```
 
-Perintah pertama mendapatkan status pekerjaan dalam proses sebagai array, lalu menyimpannya dalam $Joblist baru.
+Perintah pertama mendapatkan status pekerjaan dalam proses sebagai array, lalu menyimpannya dalam $Joblist kolom.
 Perintah kedua menampilkan item pertama dalam $Joblist array.
 
 ### Contoh 2: Mendapatkan semua pekerjaan yang gagal dalam 7 hari terakhir
@@ -58,7 +61,7 @@ PS C:\> Get-AzRecoveryServicesBackupJob -From (Get-Date).AddDays(-7).ToUniversal
 
 Perintah ini gagal dari minggu lalu dalam penyimpanan.
 Parameter *Dari* menentukan waktu tujuh hari sebelumnya yang ditentukan dalam UTC.
-Perintah tidak menentukan nilai untuk parameter *To.*
+Perintah tidak menentukan nilai untuk parameter *To* .
 Oleh karena itu, menggunakan nilai default waktu saat ini.
 
 ### Contoh 3: Mendapatkan pekerjaan dalam proses dan menunggu penyelesaian
@@ -91,7 +94,7 @@ $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "v
 $Jobs = Get-AzRecoveryServicesBackupJob  -VaultId $vault.ID  -Status Completed -From (Get-Date).AddDays(-2).ToUniversalTime() -BackupManagementType AzureVM
 ```
 
-Cmdlet pertama mengambil objek vault. Cmdlet kedua menyimpan semua pekerjaan AzureVM di vault tertentu yang selesai dalam 2 hari $jobs. Ubah nilai parameter BackupManagementType menjadi MAB untuk mengambil pekerjaan agen MAB.
+Cmdlet pertama mengambil objek vault. Cmdlet kedua menyimpan semua pekerjaan AzureVM di vault tertentu yang selesai dalam 2 hari terakhir $jobs. Ubah nilai parameter BackupManagementType menjadi MAB untuk mengambil pekerjaan agen MAB.
 
 ## PARAMETERS
 
@@ -130,9 +133,9 @@ Accept wildcard characters: False
 
 ### -Dari
 
-Menentukan mulai, sebagai objek **DateTime,** rentang waktu untuk pekerjaan yang cmdlet ini dapatkan.
-Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.**
-Untuk informasi selengkapnya tentang **objek DateTime,** ketik `Get-Help Get-Date` .
+Menentukan mulai, sebagai objek **DateTime** , rentang waktu untuk pekerjaan yang cmdlet ini dapatkan.
+Untuk mendapatkan **objek DateTime** , gunakan cmdlet **Get-Date** .
+Untuk informasi selengkapnya tentang **objek DateTime** , ketik `Get-Help Get-Date`.
 Gunakan format UTC untuk tanggal.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ### -JobId
 
 Menentukan ID pekerjaan yang akan dapatkan cmdlet ini.
-ID adalah properti JobId dari objek **Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase.**
+ID adalah properti JobId dari objek **Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase** .
 
 ```yaml
 Type: System.String
@@ -232,9 +235,9 @@ Accept wildcard characters: False
 
 ### -Ke
 
-Menentukan akhir, sebagai objek **DateTime,** rentang waktu untuk pekerjaan yang cmdlet ini dapatkan.
+Menentukan akhir, sebagai objek **DateTime** , rentang waktu untuk pekerjaan yang cmdlet ini dapatkan.
 Nilai default adalah waktu sistem saat ini.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan parameter **-From.**
+Jika Anda menentukan parameter ini, Anda juga harus menentukan parameter **-From** .
 Gunakan format UTC untuk tanggal.
 
 ```yaml
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubNotificationRegistration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubNotificationRegistration.md
-ms.openlocfilehash: 4968140f7c8b31b610fa161c9a6b33f98d74afa9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f43bf1977767b41f8964a2606daff659d5ab3e1d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305579"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951449"
 ---
 # Remove-AzProviderHubNotificationRegistration
 
 ## SYNOPSIS
 Menghapus pendaftaran pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/remove-azproviderhubnotificationregistration) untuk informasi terkini.
 
 ## SYNTAX
 

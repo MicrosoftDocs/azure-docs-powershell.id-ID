@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: db8f9a8cbc05a986c3a995d030c1e674e98e9872
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50c5c5fee74d78513336069bb85a875a7ce8b149
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259564"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951665"
 ---
 # Get-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Mendapatkan link jaringan virtual yang terkait dengan zona DNS Privat yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/get-azprivatednsvirtualnetworklink) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Contoh ini mendapatkan link jaringan virtual mylink yang terkait dengan zona DNS Privat bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya di $Link jaringan.
+Contoh ini mendapatkan link jaringan virtual mylink yang terkait dengan zona DNS Privat bernama myzone.com dari grup sumber daya yang ditentukan, lalu menyimpannya di $Link tertentu.
 
 ### Contoh 2: Dapatkan semua link yang terkait dengan zona dalam grup sumber daya.
 ```
@@ -89,7 +92,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Contoh ini mendapatkan semua link jaringan virtual yang terkait dengan "myzone.com" zona DNS Privat dalam grup sumber daya yang ditentukan, lalu menyimpannya di variabel $Links tertentu.
+Contoh ini mendapatkan semua link jaringan virtual yang terkait dengan "myzone.com" zona DNS Privat dalam grup sumber daya yang ditentukan, lalu menyimpannya di $Links terbatas.
 
 ## PARAMETERS
 

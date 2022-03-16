@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: 4b5e8299e645f23b1b3d2dfdf4fb3aceb335709a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c4e23d0cd16b4ef442fe312d2eb4d8211a4084b9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167168"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951089"
 ---
 # Get-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
 Mendapatkan server manajemen SCDPM dan Azure Backup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupmanagementserver) untuk informasi terkini.
 
 ## SYNTAX
 

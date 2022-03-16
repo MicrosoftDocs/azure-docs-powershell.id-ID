@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 0cc4e72dc85804601af10bb18947a795d340d280
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 61a6328dacb6e135e97f3f584941c3affe2b8fef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951521"
 ---
 # Set-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Pembaruan/Mengatur tautan jaringan virtual yang terkait dengan zona privat dan grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/set-azprivatednsvirtualnetworklink) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Set-AzPrivateDnsVirtualNetworkLink -ResourceId <String> [-IsRegistrationEnabled 
 ## DESCRIPTION
 Cmdlet **Set-AzPrivateDnsVirtualNetworkLink** memperbarui link yang terkait dengan zona dari grup sumber daya yang ditentukan.
 Anda bisa melewati **objek PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau dengan menggunakan operator pipeline, atau Anda juga bisa menentukan parameter *Name ZoneName* dan  *ResourceGroupName*.
-Anda dapat menggunakan variabel $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link* ), link tersebut tidak diperbarui jika telah diubah di DNS Azure karena objek **PSPrivateDnsVirtualNetworkLink** lokal diambil. Ini menyediakan perlindungan untuk perubahan link bersamaan. Hal ini dapat menyembunyikan penggunaan parameter *Timpa* , yang memperbarui tautan terlepas dari perubahan serentak.
 
 ## EXAMPLES

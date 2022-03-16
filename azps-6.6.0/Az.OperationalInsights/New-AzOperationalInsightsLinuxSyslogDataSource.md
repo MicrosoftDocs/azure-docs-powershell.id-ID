@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
-ms.openlocfilehash: 2c1a64fac18232afe965d3dac7ac56e207704e3d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fb015cbf8e0c55e2ccf7d94ca116114e47eb3c64
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381928"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139933675"
 ---
 # New-AzOperationalInsightsLinuxSyslogDataSource
 
 ## SYNOPSIS
 Menambahkan sumber data ke komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightslinuxsyslogdatasource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzOperationalInsightsLinuxSyslogDataSource [-Workspace] <PSWorkspace> [-Name
 
 ## DESCRIPTION
 Cmdlet **New-AzOperationalInsightsLinuxSyslogDataSource** menambahkan sumber data syslog ke komputer Linux yang tersambung di dalam ruang kerja.
-Azure Operational Insights bisa mengumpulkan data syslog.
+Azure Operational Insights dapat mengumpulkan data syslog.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ Get-AzOperationalInsightsDataSource `
 ## PARAMETERS
 
 ### -CollectAlert
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan peringatan.
+Menunjukkan bahwa operasi Insights mengumpulkan pesan peringatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectDe malware
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan debug.
+Menunjukkan bahwa operasi Insights mengumpulkan pesan debug.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectInformational
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan informasi.
+Menunjukkan bahwa operasi Insights mengumpulkan pesan informasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

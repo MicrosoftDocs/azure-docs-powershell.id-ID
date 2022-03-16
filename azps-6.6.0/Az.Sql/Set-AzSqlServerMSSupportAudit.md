@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Set-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerMSSupportAudit.md
-ms.openlocfilehash: 8563703bf54f86ad13e19397d2ad08f77f133d55
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9c1a69f478d992897075d89a51e434fea7a93f9c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351425"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139931587"
 ---
 # Set-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
-Mengubah pengaturan pengauditan operasi dukungan Microsoft untuk server Azure SQL.
+Mengubah pengaturan pengauditan operasi dukungan Microsoft untuk server azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlservermssupportaudit) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzSqlServerMSSupportAudit [-BlobStorageTargetState <String>] [-StorageAccoun
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlServerMSSupportAudit** mengubah pengaturan pengauditan operasi dukungan Microsoft dari server SQL Azure.
+Cmdlet **Set-AzSqlServerMSSupportAudit** mengubah pengaturan audit operasi dukungan Microsoft dari server SQL Azure.
 Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi server.
 Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit.
 
@@ -65,12 +68,12 @@ PS C:\>Set-AzSqlServerMSSupportAudit -ResourceGroupName "ResourceGroup01" -Serve
 PS C:\>Set-AzSqlServerMSSupportAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -EventHubTargetState Disabled
 ```
 
-### Contoh 5: Mengaktifkan analitik log yang mendukung operasi pengauditan kebijakan pengauditan oleh Microsoft SQL server
+### Contoh 5: Mengaktifkan analitik log Microsoft mendukung kebijakan pengauditan operasi untuk server SQL Azure
 ```powershell
 PS C:\>Set-AzSqlServerMSSupportAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 6: Menonaktifkan analitik log yang mendukung operasi pengauditan kebijakan pengauditan oleh Microsoft SQL server
+### Contoh 6: Menonaktifkan analitik log Yang mendukung operasi pengauditan kebijakan pengauditan oleh Microsoft SQL server
 ```powershell
 PS C:\>Set-AzSqlServerMSSupportAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -LogAnalyticsTargetState Disabled
 ```
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

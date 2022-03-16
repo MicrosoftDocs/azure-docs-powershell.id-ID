@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 0f0a56784cec62068a678baf478f0c70a23a0e74
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a7611df5907564d68475b3fdea069d3ad238883e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279291"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951557"
 ---
 # Remove-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Menghapus link jaringan virtual dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsvirtualnetworklink) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzPrivateDnsVirtualNetworkLink -ResourceId <String> [-PassThru]
 ## DESCRIPTION
 Cmdlet **Remove-AzPrivateDnsVirtualNetworkLink secara** permanen menghapus link Privat Domain Name System (DNS) dari grup sumber daya yang ditentukan.
 Anda bisa melewati **objek PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau dengan menggunakan operator pipeline, atau Anda juga bisa menentukan parameter *Name ZoneName* dan  *ResourceGroupName*.
-Anda dapat menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 Saat menentukan link menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link* ), link tersebut tidak dihapus jika telah diubah dalam DNS Privat Azure sejak **objek PSPrivateDnsVirtualNetworkLink** lokal diambil. Hal ini menyediakan perlindungan untuk perubahan zona serentak. Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang menghapus zona terlepas dari perubahan konklarasi.
 
 ## EXAMPLES

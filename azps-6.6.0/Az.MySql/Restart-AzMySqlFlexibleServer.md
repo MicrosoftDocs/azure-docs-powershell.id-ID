@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/restart-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restart-AzMySqlFlexibleServer.md
-ms.openlocfilehash: fa2a717b4d647e068cd1c33337301b7d03ccaf37
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dc9fa67f95defc4e940c2cf638b20400b849fb58
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136371893"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104913"
 ---
 # Restart-AzMySqlFlexibleServer
 
 ## SYNOPSIS
 Memulai ulang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/restart-azmysqlflexibleserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -295,7 +298,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMySqlIdentity> : Parameter Identitas
+INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[BackupName <String>]`: Nama cadangan.
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
@@ -308,7 +311,7 @@ INPUTOBJECT <IMySqlIdentity> : Parameter Identitas
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[VirtualNetworkRuleName <String>]`: Nama aturan jaringan virtual.
 
-PARAMETER <IServerRestartParameter> : Parameter mulai ulang server.
+PARAMETER <IServerRestartParameter>: Parameter mulai ulang server.
   - `[MaxFailoverSecond <Int32?>]`: Waktu maksimum failover yang diperbolehkan dalam detik.
   - `[RestartWithFailover <EnableStatusEnum?>]`: Apakah failover ke server siaga atau tidak ketika memulai ulang server dengan ketersediaan tinggi diaktifkan.
 

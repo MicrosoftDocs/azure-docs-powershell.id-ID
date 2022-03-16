@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 908fa4569448bad6331dda7510343d1008226ef1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7b31261d8420fa43e332cba0a4ed3979a4b91202
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139931839"
 ---
 # New-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Perintah ini akan membuat Grup Azure SQL Database Failover Instance baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabaseinstancefailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzSqlDatabaseInstanceFailoverGroup [-Name] <String> [-PartnerResourceGroupNa
 ```
 
 ## DESCRIPTION
-Membuat grup Azure SQL Database Failover Instance baru di antara kawasan tertentu dengan pasangan Instans Terkelola yang noted.
+Membuat grup Azure SQL Database Contoh Failover baru di antara kawasan tertentu dengan pasangan Instans Terkelola yang tidak bernama.
 
 Dua Azure SQL Database titik akhir TDS dibuat di Name.SqlDatabaseDns Queryfix (misalnya, Name.database.windows.net) dan Name.secondary.SqlDatabaseDnsFixfix. Titik akhir ini mungkin digunakan untuk terhubung ke wilayah utama dan sekunder dari Grup Failover. Jika kawasan utama terpengaruh oleh pemadaman, failover otomatis titik akhir dan database akan dipicu oleh pendiktean oleh kebijakan failover dan masa tenggang Instance Failover Group.
 
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

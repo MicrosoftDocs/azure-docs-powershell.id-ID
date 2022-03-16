@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Reset-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Reset-AzPowerBIWorkspaceCollectionAccessKey.md
-ms.openlocfilehash: d814896f6eb2454123a0c0e7d6ab0c8b8016207a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f350bcc73d99b5ed9ffb28be89ac6081dc1f8b6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951719"
 ---
 # Reset-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
 Mereset kunci akses tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/reset-azpowerbiworkspacecollectionaccesskey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang Power BI kerja tempat cmdlet ini beroperasi.
+Menentukan nama kumpulan ruang Power BI tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String

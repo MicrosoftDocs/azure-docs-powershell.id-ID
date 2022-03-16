@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeShare.md
-ms.openlocfilehash: 645b4dfa1a8fcc66198c2bcd4e5d8088b7f21e94
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 253f6ddf931efb1e71d95718f2ec335d6b0eeb52
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265163"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139961871"
 ---
 # New-AzDataBoxEdgeShare
 
 ## SYNOPSIS
 Membuat berbagi baru pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/new-azdataboxedgeshare) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 822ed0aa887beda183c938bab85fb766897be1b9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 07f5848861342b5ba73a64dbbff49d9c89d573cc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951539"
 ---
 # Set-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Pembaruan/Mengatur kumpulan catatan dalam zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/set-azprivatednsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzPrivateDnsRecordSet -RecordSet <PSPrivateDnsRecordSet> [-Overwrite]
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzPrivateDnsRecordSet memperbarui kumpulan catatan di layanan DNS Pribadi Azure dari objek RecordSet lokal. Anda bisa melewati objek RecordSet sebagai parameter atau dengan menggunakan operator saluran. Anda dapat menggunakan variabel $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda. Kumpulan data tidak diperbarui jika telah diubah dalam DNS Pribadi Azure sejak objek RecordSet lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini menggunakan parameter Timpa, yang memperbarui kumpulan rekaman terlepas dari perubahan serentak.
+Cmdlet Set-AzPrivateDnsRecordSet memperbarui kumpulan catatan di layanan DNS Pribadi Azure dari objek RecordSet lokal. Anda bisa melewati objek RecordSet sebagai parameter atau dengan menggunakan operator saluran. Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda. Kumpulan data tidak diperbarui jika telah diubah dalam DNS Pribadi Azure sejak objek RecordSet lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini menggunakan parameter Timpa, yang memperbarui kumpulan rekaman terlepas dari perubahan serentak.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet cmdlet untuk mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet variabel. Perintah kedua memperbarui rekaman SOA tertentu di $RecordSet. Perintah final menggunakan cmdlet Set-AzPrivateDnsRecordSet cmdlet untuk menyebarkan pembaruan di $RecordSet.
+Perintah pertama menggunakan cmdlet Get-AzPrivateDnsRecordSet cmdlet untuk mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet variabel. Perintah kedua memperbarui data SOA tertentu di $RecordSet. Perintah final menggunakan cmdlet Set-AzPrivateDnsRecordSet untuk menyebarkan pembaruan di $RecordSet.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubSku.md
-ms.openlocfilehash: 98e21b85013a55e5cc8674a84e258f612c8cd02f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a32dec7d6b0bc02bf0223ed2a125e892835d3760
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302043"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951467"
 ---
 # New-AzProviderHubSku
 
 ## SYNOPSIS
 Membuat atau memperbarui sku tipe sumber daya dalam tipe sumber daya yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/new-azproviderhubsku) untuk informasi terkini.
 
 ## SYNTAX
 

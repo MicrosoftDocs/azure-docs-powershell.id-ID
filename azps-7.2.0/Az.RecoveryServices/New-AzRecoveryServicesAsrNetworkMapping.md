@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrNetworkMapping.md
-ms.openlocfilehash: 9c2f75f060484b2762aa140f63560fc6d22e43bc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a020003297e75d332742896f9d49be4bbe6a4453
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164468"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139950909"
 ---
 # New-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
 Membuat pemetaan jaringan ASR di antara dua jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrnetworkmapping) untuk informasi terkini.
 
 ## SYNTAX
 
