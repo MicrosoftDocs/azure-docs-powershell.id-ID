@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/disabl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Disable-AzFrontDoorCustomDomainHttps.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Disable-AzFrontDoorCustomDomainHttps.md
-ms.openlocfilehash: 5771e002d94895e79aa57635f974e60174720a59
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 84877bfbbb9446fc55115677abb68bab21d04673
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165265"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123667"
 ---
 # Disable-AzFrontDoorCustomDomainHttps
 
 ## SYNOPSIS
 Menonaktifkan HTTPS untuk domain kustom
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/disable-azfrontdoorcustomdomainhttps) untuk informasi terkini.
 
 ## SYNTAX
 

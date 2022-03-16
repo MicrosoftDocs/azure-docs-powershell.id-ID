@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportBitLockerKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExportBitLockerKey.md
-ms.openlocfilehash: 3292ee3df0bebce36677516f6ae8bbb9585537e4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bc857c7e05aa90c8a7d38e9413a2f3944ae2437f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256699"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236430"
 ---
 # Get-AzImportExportBitLockerKey
 
 ## SYNOPSIS
 Mengembalikan BitLocker Keys untuk semua drive dalam pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/get-azimportexportbitlockerkey) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
-ms.openlocfilehash: bff6e4d9802257ffb5e7c11a13ed5c08cfa731c4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 45d738e33c578380e98360e06df3e06d8a2fc300
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373615"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142297"
 ---
 # Get-AzContainerGroup
 
 ## SYNOPSIS
 Mendapatkan properti grup wadah yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi mengembalikan properti setiap grup wadah termasuk wadah, kredensial registri gambar, kebijakan mulai ulang, tipe alamat IP, tipe OS, status, dan volume.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/get-azcontainergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Operasi mengembalikan properti setiap grup wadah termasuk wadah, kredensial regi
 
 ## EXAMPLES
 
-### Contoh 1: List all container groups in the current subscription
+### Contoh 1:  List all container groups in the current subscription
 ```powershell
 PS C:\> Get-AzContainerGroup
 
@@ -127,7 +130,7 @@ eastus   bez-cg1         Microsoft.ContainerInstance/containerGroups
 eastus   bez-cg2        Microsoft.ContainerInstance/containerGroups
 ```
 
-Perintah tersebut mendapatkan grup wadah dalam grup sumber `test-rg` daya.
+Perintah tersebut mendapatkan grup wadah dalam grup sumber daya `test-rg`.
 
 ### Contoh 4: Dapatkan grup wadah dengan pemipaan
 ```powershell
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -238,7 +241,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IContainerInstanceIdentity> : Parameter Identitas
+INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup wadah.
   - `[ContainerName <String>]`: Contoh nama wadah.
   - `[Id <String>]`: Jalur identitas sumber daya

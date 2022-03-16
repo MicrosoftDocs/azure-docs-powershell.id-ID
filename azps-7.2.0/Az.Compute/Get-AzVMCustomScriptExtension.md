@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMCustomScriptExtension.md
-ms.openlocfilehash: b123bc4069786bed1e924aa2e08f648215b1f81b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8097c4ed1f65e718b5dfe10ec90f47746802249d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092655"
 ---
 # Get-AzVMCustomScriptExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi skrip kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmcustomscriptextension) untuk informasi terkini.
 
 ## SYNTAX
 

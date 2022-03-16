@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultNetworkRule.md
-ms.openlocfilehash: 3d315e721221368c556c1969b492275293bcaee7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9d748244fe54d287d404a70c6348cbb2c215c4bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122479"
 ---
 # Remove-AzKeyVaultNetworkRule
 
 ## SYNOPSIS
 Menghapus aturan jaringan dari kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbVirtualNetworkRule.md
-ms.openlocfilehash: 562e6014d4b618407e3cb797d7015967f685301b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 559ff0a47e4b341f7755f5a658a210bafd1f729a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266043"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234161"
 ---
 # Get-AzMariaDbVirtualNetworkRule
 
 ## SYNOPSIS
 Mendapatkan aturan jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbvirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

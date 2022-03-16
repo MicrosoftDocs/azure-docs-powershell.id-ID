@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesReplication.md
-ms.openlocfilehash: 538b1d019d007ba261133f49c893866ca3e5d29b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b141229836d22aaa76748bbc99ca515990b1153b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232487"
 ---
 # Remove-AzNetAppFilesReplication
 
 ## SYNOPSIS
 Hapus/Hapus koneksi replikasi pada volume tujuan, dan kirim rilis ke replikasi sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/remove-aznetappfilesreplication) untuk informasi terkini.
 
 ## SYNTAX
 

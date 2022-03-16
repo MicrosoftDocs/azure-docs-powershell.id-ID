@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
-ms.openlocfilehash: 472f3b8f8c521495e186855729f542d92d804353
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0a4cc5c052722a740ed8bcbb1faa58d016311fe3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366472"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094815"
 ---
 # Restore-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memulihkan Analitik Synapse dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/restore-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Restore-AzSynapseSqlPool [-FromDroppedSqlPool] -WorkspaceObject <PSSynapseWorksp
 
 ## DESCRIPTION
 Cmdlet **Restore-AzSynapseSqlPool** memulihkan grup SQL Analitik Azure Synapse dari cadangan geo berlebihan, cadangan pool SQL yang dihapus atau titik pemulihan dari setiap SQL lokal.
-Pusat data SQL yang dipulihkan dibuat sebagai sebuah SQL baru.
+Pool SQL yang dipulihkan dibuat sebagai sebuah SQL baru.
 
 ## EXAMPLES
 
@@ -83,7 +86,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromRestorePoint -RestorePoint $restorePoint.RestorePointCreationDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId -PerformanceLevel DW200c
 ```
 
-Perintah ini membuat azure Synapse Analytics SQL baru dengan memaksimalkan titik pemulihan dari semua SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
+Perintah ini membuat azure Synapse Analytics SQL pool dengan memaksimalkan titik pemulihan dari semua SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
 
 ### Contoh 2
 ```powershell
@@ -110,7 +113,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromDroppedSqlPool -DeletionDate $pool.DeletionDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $poolId
 ```
 
-Perintah ini membuat grup Analitik Azure Synapse SQL yang dipulihkan dari pencadangan SQL otomatis yang dihapus.
+Perintah ini membuat analitik Azure Synapse SQL baru yang dipulihkan dari pencadangan SQL otomatis yang dihapus.
 
 ## PARAMETERS
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeletionDate
-Tanggal penghapusan azure Synaspe SQL Database untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
+Tanggal penghapusan program Azure Synaspe SQL Database mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
 Type: System.DateTime
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromIdrppedSqlPool
-Menunjukkan untuk memanfaatkan poin pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
+Menunjukkan untuk memanfaatkan titik pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromRestorePoint
-Menunjukkan untuk memanfaatkan poin pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
+Menunjukkan untuk memanfaatkan titik pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

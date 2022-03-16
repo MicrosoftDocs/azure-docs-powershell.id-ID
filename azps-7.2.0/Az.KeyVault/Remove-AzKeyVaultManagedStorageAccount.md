@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: fc17e8174159570c0f8f2d469cdb4cc289356d90
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 18e7ad120b31c128a08e511e524f7edea8690250
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281163"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122497"
 ---
 # Remove-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Menghapus kunci vault yang dikelola Azure Storage Dan semua definisi SAS terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Remove-AzKeyVaultManagedStorageAccount [-InputObject] <PSKeyVaultManagedStorageA
 ```
 
 ## DESCRIPTION
-Memisahkan akun Azure Storage dari Key Vault. Hal ini tidak Azure Storage Akun Pengguna, tetapi menghapus kunci akun agar tidak dikelola oleh Azure Key Vault. Semua definisi Kunci Vault Storage SAS yang terkait juga dihapus.
+Memisahkan akun Azure Storage dari Key Vault. Ini tidak akan menghapus Azure Storage Anda, tetapi menghapus kunci akun agar tidak dikelola oleh Azure Key Vault. Semua kunci vault yang terkait Storage definisi SAS juga dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Kunci Vault Azure Storage akun dan semua definisi SAS terkait.
+### Contoh 1: Hapus Kunci Vault yang Azure Storage akun dan semua definisi SAS terkait.
 ```powershell
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -PassThru
 
@@ -52,7 +55,7 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua kunci Vault yang Storage definisi SAS yang terkait dengan akun ini akan dihapus.
+Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua definisi Key Vault Storage SAS yang terkait dengan akun ini akan dihapus.
 
 ### Contoh 2: Hapus Kunci Vault yang Azure Storage akun dan semua definisi SAS terkait tanpa konfirmasi pengguna.
 ```powershell
@@ -69,9 +72,9 @@ Updated             : 4/25/2018 1:50:32 AM
 Tags                :
 ```
 
-Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua kunci Vault yang Storage definisi SAS yang terkait dengan akun ini akan dihapus.
+Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua definisi Key Vault Storage SAS yang terkait dengan akun ini akan dihapus.
 
-### Contoh 3: Menghapus (membersihkan) Key Vault secara permanen dan Azure Storage Akun Azure Storage dan semua definisi SAS yang terkait dari vault yang mendukung penghapusan sementara.
+### Contoh 3: Hapus (pembersihan) permanen Key Vault yang dikelola Azure Storage Akun Azure Storage dan semua definisi SAS yang terkait dari vault dengan dukungan penghapusan sementara.
 ```powershell
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount'
 PS C:\> Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -InRemovedState
@@ -79,7 +82,7 @@ PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName
 ```
 
 Contoh mengasumsikan bahwa penghapusan sementara diaktifkan untuk vault ini. Verifikasi apakah itu kasusnya dengan memeriksa properti vault, atau atribut RecoveryLevel dari entitas di vault.
-Cmdlet pertama memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua kunci Vault yang Storage definisi SAS yang terkait dengan akun ini akan dihapus.
+Cmdlet pertama memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua definisi Key Vault Storage SAS yang terkait dengan akun ini akan dihapus.
 Cmdlet kedua memverifikasi bahwa akun penyimpanan berada dalam status dihapus, tetapi dapat dipulihkan. Mencapai status ini mungkin memerlukan waktu, harap izinkan ~30 sebelum mencoba.
 Cmdlet ketiga secara permanen menghapus akun penyimpanan - pemulihan tidak lagi mungkin dilakukan.
 

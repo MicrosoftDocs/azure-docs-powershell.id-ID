@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationCertificate.md
-ms.openlocfilehash: 10499f38d1ea191efd3f21ffbf8780b9095e038c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 05a544efbbca4d64e2dbc8235d393721ea292710
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317324"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093771"
 ---
 # Set-AzAutomationCertificate
 
 ## SYNOPSIS
 Mengubah konfigurasi sertifikat Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

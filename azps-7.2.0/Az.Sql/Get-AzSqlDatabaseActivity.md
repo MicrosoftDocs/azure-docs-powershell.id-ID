@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseActivity.md
-ms.openlocfilehash: b7e2c20c5cc1d38bbbfb9e57d56a5fdbb9649ce5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d8515549b93e9760d5dd96e933bc087b946e7b6d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254188"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115171"
 ---
 # Get-AzSqlDatabaseActivity
 
 ## SYNOPSIS
 Mendapatkan status operasi database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseactivity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,16 +30,16 @@ Get-AzSqlDatabaseActivity [-ServerName] <String> [-ElasticPoolName <String>] -Da
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseActivity** mendapatkan status operasi database Azure SQL Database.
+Cmdlet **Get-AzSqlDatabaseActivity** mendapatkan status operasi database di Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status untuk SQL Database semua instans
+### Contoh 1: Dapatkan status untuk SQL Database anda
 ```
 PS C:\>Get-AzSqlDatabaseActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah ini mengembalikan status operasi semua contoh SQL Database dalam pool elastis yang bernama ElastisPool01.
+Perintah ini mengembalikan status operasi semua instans SQL Database dalam pool elastis yang bernama ElastisPool01.
 
 ### Contoh 2: Dapatkan status untuk semua SQL Database operasi
 ```
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama database Microsoft SQL Server menjadi host database.
+Menentukan nama database Microsoft SQL Server meng host database.
 
 ```yaml
 Type: System.String

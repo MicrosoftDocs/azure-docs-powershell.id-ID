@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Update-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Update-AzEventGridSubscription.md
-ms.openlocfilehash: 08996bbdd47ff1086ff4ccc39883c14c4abd778d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e8c73a673ac690794072a5504d90746a3fb8236e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347045"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137563"
 ---
 # Update-AzEventGridSubscription
 
 ## SYNOPSIS
 Perbarui properti langganan acara Kisi Acara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/update-azeventgridsubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -95,21 +98,21 @@ Perbarui properti langganan acara Kisi Acara. Ini dapat digunakan untuk memperba
 PS C:\> Update-AzEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -ResourceGroup MyResourceGroupName -Endpoint https://requestb.in/1kxxoui1
 ```
 
-Memperbarui titik akhir langganan acara \` ES1 untuk \` topik \` Topic1 \` di grup sumber daya \` MyResourceGroupName \` untuk \`https://requestb.in/1kxxoui1\`
+Memperbarui titik akhir langganan acara \`ES1 untuk topik Topic1 \`\` di grup\` sumber daya \`MyResourceGroupName\` untuk\`https://requestb.in/1kxxoui1\`
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzEventGridSubscription -EventSubscriptionName ES1 -TopicName Topic1 -ResourceGroup MyResourceGroupName | Update-AzEventGridSubscription -Endpoint https://requestb.in/1kxxoui1
 ```
 
-Memperbarui titik akhir langganan acara \` ES1 untuk \` topik \` Topic1 \` di grup sumber daya \` MyResourceGroupName \` untuk \`https://requestb.in/1kxxoui1\`
+Memperbarui titik akhir langganan acara \`ES1 untuk topik Topic1 \`\` di grup\` sumber daya \`MyResourceGroupName\` untuk\`https://requestb.in/1kxxoui1\`
 
 ### Contoh 3
 ```powershell
 PS C:\> Update-AzEventGridSubscription -EventSubscriptionName ES1 -ResourceId "/subscriptions/55f3dcd4-cac7-43b4-990b-a139d62a1eb2/resourceGroups/TestRG/providers/Microsoft.EventHub/namespaces/ContosoNamespace" -Endpoint https://requestb.in/1kxxoui1 -SubjectEndsWith "jpg"
 ```
 
-Memperbarui properti langganan acara ES1 untuk ruang nama EventHub ContosoNamespace dengan titik akhir baru sebagai ' dan \` \` filter \` https://requestb.in/1kxxoui1\ SubjectEndsWith baru sebagai \` jpg\`
+Memperbarui properti langganan acara ES1\` untuk ruang nama EventHub ContosoNamespace \`https://requestb.in/1kxxoui1\dengan titik akhir baru sebagai ' dan filter SubjectEndsWith baru sebagai \`jpg \`\`
 
 ### Contoh 4
 ```powershell
@@ -117,7 +120,7 @@ PS C:\> $labels = "Finance", "HR"
 PS C:\> Update-AzEventGridSubscription -EventSubscriptionName ES1 -ResourceGroup MyResourceGroupName -Label $labels
 ```
 
-Memperbarui properti ES1 langganan kejadian \` untuk grup sumber daya \` \` MyResourceGroupName \` dengan label baru yang $labels.
+Memperbarui properti ES1\` langganan kejadian \`untuk grup sumber daya \`MyResourceGroupName\` dengan label baru $labels.
 
 ## PARAMETERS
 
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeadLetterEndpoint
-Titik akhir yang digunakan untuk menyimpan acara yang tidak terkirim. Tentukan ID sumber daya Azure dari wadah Storage blob. Misalnya: /subscriptions/[SubscriptionId]/resourceGroups/[ResourceGroupName]/providers/Microsoft. Storage/storageAccounts/[StorageAccountName]/blobServices/default/containers/[ContainerName].
+Titik akhir yang digunakan untuk menyimpan acara yang tidak terkirim. Tentukan ID sumber daya Azure dari wadah blob Storage. Misalnya: /subscriptions/[SubscriptionId]/resourceGroups/[ResourceGroupName]/providers/Microsoft. Storage/storageAccounts/[StorageAccountName]/blobServices/default/containers/[ContainerName].
 
 ```yaml
 Type: System.String
@@ -515,7 +518,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

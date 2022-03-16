@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 6e06a7b62b1fc1f5c41edf8a041fc0d8b335d10f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 83b0dad75c3dbf7ac45b848e0fad343bc89fa7d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136333458"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140140281"
 ---
 # Get-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
 Mendapatkan informasi tentang saluran di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2pipeline) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -77,9 +80,9 @@ PS C:\> Get-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -Name "DPWikisample
 ```
 
 Perintah ini mendapatkan informasi tentang pipeline yang bernama DPWikisample di pabrik data yang bernama WikiADF.
-Perintah itu meneruskan informasi itu ke Format-List cmdlet dengan menggunakan operator pipeline.
+Perintah itu menyampaikan informasi itu ke Format-List cmdlet dengan menggunakan operator pipeline.
 Hal Windows PowerShell cmdlet akan memformat hasil.
-Untuk informasi selengkapnya, Get-Help Format-List.
+Untuk informasi selengkapnya, ketik Get-Help Format-List.
 
 ### Contoh 3: Mendapatkan properti untuk saluran tertentu
 ```powershell
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

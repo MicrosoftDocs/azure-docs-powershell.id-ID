@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpointNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnEndpointNameAvailability.md
-ms.openlocfilehash: 1365b2da52ddec2ba5e55eecfa0c93d3b1f0f34a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2f6a1470f6e7f86c3c77938fae24f6b97b0802dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093501"
 ---
 # Get-AzCdnEndpointNameAvailability
 
 ## SYNOPSIS
-Mendapatkan status ketersediaan CDN akhir.
+Mendapatkan status ketersediaan CDN titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnendpointnameavailability) untuk informasi terkini.
 
 ## SYNTAX
 

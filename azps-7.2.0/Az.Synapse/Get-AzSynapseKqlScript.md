@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKqlScript.md
-ms.openlocfilehash: 7e9fd3c3baccca6c744c1fd49f26d732fccbe3ae
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e49c30296e1f077de72855a0efa8f4602df80bb5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260551"
 ---
 # Get-AzSynapseKqlScript
 
 ## SYNOPSIS
 Mendapatkan informasi tentang skrip KQL di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsekqlscript) untuk informasi terkini.
 
 ## SYNTAX
 

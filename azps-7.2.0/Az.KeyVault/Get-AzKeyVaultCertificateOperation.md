@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultCertificateOperation.md
-ms.openlocfilehash: 260e885438961127e83d46a57457ab09c820338c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: be946875e0f225a18a4f0b3b76a062f2357adfaf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291131"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236105"
 ---
 # Get-AzKeyVaultCertificateOperation
 
 ## SYNOPSIS
 Mendapatkan status operasi sertifikat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultcertificateoperation) untuk informasi terkini.
 
 ## SYNTAX
 

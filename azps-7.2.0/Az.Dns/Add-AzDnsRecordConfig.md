@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/add-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Add-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Add-AzDnsRecordConfig.md
-ms.openlocfilehash: ac53d3b380ae3e5bb97443b38b1560a3da90f460
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d2259059c0e18bdb816b32d9ee7bfdf115b2aed8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270299"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140299255"
 ---
 # Add-AzDnsRecordConfig
 
 ## SYNOPSIS
 Menambahkan catatan DNS ke objek set catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/add-azdnsrecordconfig) untuk informasi terkini.
 
 ## SYNTAX
 
