@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: ba9323b796ae6bad5dca5be0a7ec6052db77490a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 27e71080570a459a82a39d08b7bb6b02eb99ed8b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340754"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139971681"
 ---
 # Set-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Mengubah pendengar HTTP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewayhttplistener) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ PS C:\> $AppGw = Set-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal.
-Perintah kedua mengatur pendengar HTTP gateway agar menggunakan konfigurasi front-end yang disimpan di $FIP 01 dengan protokol HTTP pada port 80.
+Perintah kedua mengatur pendengar HTTP gateway agar menggunakan konfigurasi ujung-depan yang disimpan di $FIP 01 dengan protokol HTTP pada port 80.
 
 ### Contoh 2: Tambahkan pendengar HTTPS dengan SSL dan HostNames
 ```
@@ -62,7 +65,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $AppGw = Set-AzApplicationGatewayHttpListener -ApplicationGateway $AppGw -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIP01 -FrontendPort $FP01 -SslCertificate $SSLCert01 -HostNames "*.contoso.com,www.microsoft.com"
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw baru.
+Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel.
 Perintah kedua menambahkan pendengar, yang menggunakan protokol HTTPS, dengan Sertifikat SSL dan Nama Host, ke gateway aplikasi.
 
 ## PARAMETERS
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

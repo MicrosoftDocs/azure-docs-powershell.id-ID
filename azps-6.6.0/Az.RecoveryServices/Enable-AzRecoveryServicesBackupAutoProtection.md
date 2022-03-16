@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
-ms.openlocfilehash: 0302c57480db3956c32be576b7105585aa811f06
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: acaebd16ddc395a6f7be94537f107b6b946cafec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345053"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099459"
 ---
 # Enable-AzRecoveryServicesBackupAutoProtection
 
 ## SYNOPSIS
 Cmdlet **Enable-AzRecoveryServicesBackupAutoProtection** mengatur proteksi otomatis atas DB saat ini dan masa SQL mendatang dalam instans tertentu dengan kebijakan yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupautoprotection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> $SQLInstance = Get-AzRecoveryServicesBackupProtectableItem -workloadType
 PS C:\> Enable-AzRecoveryServicesBackupAutoProtection -InputItem $SQLInstance -BackupManagementType AzureWorkload -WorkloadType MSSQL -Policy $Pol -VaultId $targetvault.ID 
 ```
 
-Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam $Pol variabel.
+Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya di $Pol variabel.
 Cmdlet kedua mengambil SQLInstance yang relevan, yaitu item yang dapat diproteksi. Perintah ketiga lalu mengatur proteksi otomatis untuk contoh ini menggunakan kebijakan di $Pol.
 
 ### Contoh 2
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

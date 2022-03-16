@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 8ffb4410d37f18aac7a101c65f80c6e84ba2cde8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1dd26a39f2c5684495fc59127485fa3cdff592d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357449"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140110115"
 ---
 # Import-AzAutomationDscConfiguration
 
 ## SYNOPSIS
 Mengimpor konfigurasi DSC ke otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/import-azautomationdscconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Tentukan jalur skrip APS yang berisi konfigurasi DSC tunggal.
 PS C:\>Import-AzAutomationDscConfiguration -AutomationAccountName "Contoso17" -ResourceGroupName "ResourceGroup01" -SourcePath "C:\DSC\client.ps1" -Force
 ```
 
-Perintah ini mengimpor konfigurasi DSC dalam file yang bernama client.ps1 ke akun Otomatisasi yang bernama Contoso17. Perintah menentukan parameter *Paksa.* Jika ada konfigurasi DSC yang sudah ada, perintah ini akan menggantikannya.
+Perintah ini mengimpor konfigurasi DSC dalam file yang bernama client.ps1 ke akun Otomatisasi yang bernama Contoso17. Perintah menentukan parameter *Paksa* . Jika ada konfigurasi DSC yang sudah ada, perintah ini akan menggantikannya.
 
 ### Contoh 2
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai yang $True mengaktifkan atau mengaktifkan pembuatan log verbose $False untuk menonaktifkannya.
+Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai dari $True mengaktifkan atau mengaktifkan pembuatan log verbose $False untuk menonaktifkannya.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

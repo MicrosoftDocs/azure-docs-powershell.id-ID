@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restart
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebAppSlot.md
-ms.openlocfilehash: 51f1f444d50bd7a03915c8f9362f8c7ce733edf2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 33386b99e0eb766ca59dbfd17fc58a6161187bf3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166858"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946663"
 ---
 # Restart-AzWebAppSlot
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/restart-azwebappslot) untuk informasi terkini.
 
 ## SYNTAX
 

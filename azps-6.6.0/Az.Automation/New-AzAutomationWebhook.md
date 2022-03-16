@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationWebhook.md
-ms.openlocfilehash: d4ffbee93164167ebb9b3975e1df24ac43ac1a8f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d3c28c9cbdb8f6b410ba93c941d11eb1f73667ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363434"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945069"
 ---
 # New-AzAutomationWebhook
 
 ## SYNOPSIS
 Membuat webhook untuk buku kerja Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationwebhook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ PS C:\>$Webhook = New-AzAutomationWebhook -Name "Webhook06" -IsEnabled $True -Ex
 ```
 
 Perintah ini membuat webhook yang bernama Webhook06 untuk runbook yang bernama ContosoRunbook dalam akun Otomatisasi yang bernama AutomationAccount01.
-Perintah menyimpan webhook di $Webhook baru.
+Perintah menyimpan webhook dalam $Webhook baru.
 Webhook diaktifkan.
 Webhook kedaluwarsa pada waktu yang ditentukan.
 Perintah ini tidak menyediakan nilai apa pun untuk parameter webhook.
-Perintah ini menentukan parameter *Force.*
+Perintah ini menentukan parameter *Force* .
 Oleh karena itu, kami tidak meminta konfirmasi Anda.
 
 ### Contoh 2: Membuat webhook dengan parameter
@@ -52,9 +55,9 @@ PS C:\>$Params = @{"StringParam"="Hello World";"IntegerParam"=32}
 PS C:\> $Webhook = New-AzAutomationWebhook -Name "Webhook11" -Parameters $Params -IsEnabled $True -ExpiryTime "10/2/2016" -RunbookName "ContosoRunbook" -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01" -Force
 ```
 
-Perintah pertama membuat kamus parameter, dan menyimpannya dalam variabel $Params.
+Perintah pertama membuat kamus parameter, dan menyimpannya dalam $Params nilai.
 Perintah kedua membuat webhook yang bernama Webhook11 untuk runbook yang bernama ContosoRunbook dalam akun Otomatisasi yang bernama AutomationAccount01.
-Perintah menetapkan parameter di $Params ke webhook.
+Perintah ini menetapkan parameter dalam $Params ke webhook.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu kedaluwarsa untuk webhook sebagai objek **DateTimeOffset.**
+Menentukan waktu kedaluwarsa untuk webhook sebagai objek **DateTimeOffset** .
 Anda bisa menentukan string atau **DateTime** yang bisa dikonversi menjadi **DateTimeOffset** yang valid.
 
 ```yaml
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyAssignment.md
-ms.openlocfilehash: 6467c43ed5dfb6b8dc31b89b22b2b6421d85eae8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b0edafe0d8fff7f314af5a1bffd5046442cc893c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285164"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083835"
 ---
 # Remove-AzPolicyAssignment
 
 ## SYNOPSIS
 Menghapus penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azpolicyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -61,8 +64,8 @@ PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'PolicyAssignment07' -S
 PS C:\> Remove-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -Confirm
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan penetapan kebijakan di tingkat grup sumber daya, lalu menyimpannya di $PolicyAssignment sumber daya.
+Perintah pertama mendapatkan grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $ResourceGroup sumber daya.
+Perintah kedua mendapatkan penetapan kebijakan di tingkat grup sumber daya, lalu menyimpannya dalam $PolicyAssignment sumber daya.
 Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
 Perintah terakhir menghapus penetapan kebijakan yang diidentifikasi **oleh properti ResourceId** $PolicyAssignment mengidentifikasi.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/disable-azak
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Disable-AzAksAddOn.md
-ms.openlocfilehash: 88870f64b1e8eac562ad4f3a9cd1c65ee2fcce6c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 48a65f8321b09a3fc3779fe9bb956511d79a4fe6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314364"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965075"
 ---
 # Disable-AzAksAddOn
 
 ## SYNOPSIS
 Nonaktifkan add-on untuk aks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/disable-azaksaddon) untuk informasi terkini.
 
 ## SYNTAX
 

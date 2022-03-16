@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: 8c73636ade97f84112bc631c71ebad834bad4d6c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 54f4160d60216058cc1bb75d36ea1a7b1dda2c3e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281323"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058683"
 ---
 # Get-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
 Mendapatkan informasi tentang akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsaccount) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Backup-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: 657db445e1d20d441db2bb9a08b1c2209f25f14d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cbbd4c532bec378b7733f51cc4ee70c4482aa14d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297308"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117871"
 ---
 # Backup-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
 Memulai pencadangan untuk item Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/backup-azrecoveryservicesbackupitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ pstestv2vm1      Backup               InProgress           4/23/2016 5:00:30 PM 
 ```
 
 Perintah pertama mendapatkan wadah Cadangan tipe AzureVM bernama pstestv2vm1, lalu menyimpannya dalam $NamedContainer baru.
-Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah di $NamedContainer, lalu menyimpannya dalam $Item di tempat.
+Perintah kedua mendapatkan item Cadangan yang terkait dengan wadah di $NamedContainer, lalu menyimpannya dalam variabel $Item diinginkan.
 Perintah terakhir memicu pekerjaan pencadangan untuk item Cadangan dalam $Item.
 
 ### Contoh 2
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 
 ### -ExpiryDateTimeUTC
 
-Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang memberinya nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk tipe Salin-hanya-penuh cadangan), item cadangan AFS.
+Menentukan waktu kedaluwarsa untuk titik Pemulihan sebagai objek DateTime, jika tidak ada yang memberinya nilai default 30 hari. Berlaku untuk VM, SQL (hanya untuk tipe salin-saja-penuh cadangan), item cadangan AFS.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

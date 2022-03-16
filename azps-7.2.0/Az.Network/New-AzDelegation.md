@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDelegation.md
-ms.openlocfilehash: 89ee12144d684a3be2d051ee66c9eb1f5ac0e127
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a811444a15e805d1249631d80f4c7825527d6fba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163018"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118573"
 ---
 # New-AzDelegation
 
 ## SYNOPSIS
 Membuat delegasi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azdelegation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> $subnet.Delegations.Add($delegation)
 PS C:\> Set-AzVirtualNetwork $vnet
 ```
 
-Cmdlet pertama membuat delegasi yang bisa ditambahkan ke subnet, dan menyimpannya di variabel $delegation. Cmdlet kedua dan ketiga mengambil subnet untuk didelegasikan. Cmdlet keempat menambahkan delegasi yang dibuat ke subnet yang menarik, dan cmdlet terakhir mengirim konfigurasi yang diperbarui ke server.
+Cmdlet pertama membuat delegasi yang bisa ditambahkan ke subnet, dan menyimpannya dalam variabel $delegation. Cmdlet kedua dan ketiga mengambil subnet untuk didelegasikan. Cmdlet keempat menambahkan delegasi yang dibuat ke subnet yang menarik, dan cmdlet terakhir mengirim konfigurasi yang diperbarui ke server.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiRelease.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiRelease.md
-ms.openlocfilehash: 5f563be8e7b4a6c767e0e4c5eea80fdba27ea6eb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ccb75cf80b1fdc8ecd4e27d26d4b8f0012f1147b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344222"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945897"
 ---
 # Get-AzApiManagementApiRelease
 
 ## SYNOPSIS
 Dapatkan Rilis API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapirelease) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini akan mendapatkan semua rilis `echo-api` API untuk konteks yang ditentukan.
+Perintah ini akan mendapatkan semua rilis API untuk `echo-api` konteks yang ditentukan.
 
 ### Contoh 2: Mendapatkan informasi rilis RILIS API tertentu
 ```powershell
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

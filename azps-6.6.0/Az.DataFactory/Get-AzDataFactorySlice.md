@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactorySlice.md
-ms.openlocfilehash: 49de35283d65aa17f465e12dfbf4109f368cd015
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f1952f348983373daf3fadde3d5e5f12a9e78869
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377882"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139941541"
 ---
 # Get-AzDataFactorySlice
 
 ## SYNOPSIS
 Mendapatkan potongan data untuk set data di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryslice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Potongan data menunggu validasi sebelum diproses.
 Data Factoryretries the validation of the slice. 
 - Validasi Gagal.
 Validasi potongan gagal.
-Untuk setiap potongan, Anda dapat melihat informasi selengkapnya tentang proses yang menghasilkan potongan menggunakan cmdlet Get-AzDataFactoryRun.
+Untuk setiap irisan, Anda bisa melihat informasi selengkapnya tentang proses yang menghasilkan potongan dengan menggunakan cmdlet Get-AzDataFactoryRun.
 
 ## EXAMPLES
 
@@ -120,7 +123,7 @@ Get-AzDataFactorySlice -DataFactoryName 'WikiADF' -DatasetName 'DAWikiAggregated
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini mendapatkan potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -182,10 +185,10 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-Menentukan akhir periode waktu sebagai objek **DateTime.**
+Menentukan akhir periode waktu sebagai objek **DateTime** .
 Cmdlet ini akan menghasilkan potongan sebelum waktu yang ditentukan parameter ini.
-Untuk informasi selengkapnya tentang **objek DateTime,** ketik `Get-Help Get-Date` .
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01- 01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
+Untuk informasi selengkapnya tentang **objek DateTime** , ketik `Get-Help Get-Date`.
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-Menentukan awal periode waktu sebagai objek **DateTime.**
+Menentukan awal periode waktu sebagai objek **DateTime** .
 Cmdlet ini akan menghasilkan potongan setelah waktu yang ditentukan parameter ini.
 
 ```yaml
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

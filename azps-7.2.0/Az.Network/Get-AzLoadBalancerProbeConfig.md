@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 572537f7f13a5b3a494d7e52fd898b5b66bc3df4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8d047f8b25f6cea6cebf7b078b00732dad4537ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301116"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086517"
 ---
 # Get-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi configuration configuration for a load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 

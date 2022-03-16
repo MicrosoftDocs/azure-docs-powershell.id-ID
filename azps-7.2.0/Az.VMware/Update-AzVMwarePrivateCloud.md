@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
-ms.openlocfilehash: 84f46e98e8214c963eefb3d9d63c1229f211a7ea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4c6a3ed55aa40e20d60e6f2bf8b1b8b152873acf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167615"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946969"
 ---
 # Update-AzVMwarePrivateCloud
 
 ## SYNOPSIS
 Memperbarui awan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/update-azvmwareprivatecloud) untuk informasi terkini.
 
 ## SYNTAX
 

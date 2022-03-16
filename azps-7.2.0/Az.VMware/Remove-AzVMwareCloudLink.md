@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCloudLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Remove-AzVMwareCloudLink.md
-ms.openlocfilehash: 399d3760ff4d40630162d8778ae8ddcf5aa1e2ff
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6673aa52dbfa9ac9a5c9637709c3154d4452b8d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281627"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140046947"
 ---
 # Remove-AzVMwareCloudLink
 
 ## SYNOPSIS
 Menghapus link awan di awan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/remove-azvmwarecloudlink) untuk informasi terkini.
 
 ## SYNTAX
 

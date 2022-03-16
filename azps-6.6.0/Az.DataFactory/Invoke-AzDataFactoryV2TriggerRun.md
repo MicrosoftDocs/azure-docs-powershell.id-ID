@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: c56f51df024f069923d6fde2a1151084f8b917cd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c7305e03159ea17c0a3464430e27bab93dac8b96
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377759"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139941487"
 ---
 # Invoke-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
  Menjalankan contoh pemicu lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2triggerrun) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

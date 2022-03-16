@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Remove-AzDataLakeStoreTrustedIdProvider.md
-ms.openlocfilehash: de4f6bd99ee49aa286afd5f32bafa9eda2cce9a2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 964ec59cb962509e82795cb1816cdd5011dd9e65
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278443"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058458"
 ---
 # Remove-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
 Menghapus penyedia identitas tepercaya yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/remove-azdatalakestoretrustedidprovider) untuk informasi terkini.
 
 ## SYNTAX
 

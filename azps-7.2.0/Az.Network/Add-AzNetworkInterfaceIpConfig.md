@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 596a61841dbe92085bf223e860d781440f8bb2f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8bd831ed3f6cf6db15fb7e427fa2d602dddc3782
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290011"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086769"
 ---
 # Add-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP antarmuka jaringan ke antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-aznetworkinterfaceipconfig) untuk informasi terkini.
 
 ## SYNTAX
 

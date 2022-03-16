@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
-ms.openlocfilehash: 769837ffff363abf1a7b4c462a1d36e2dd42c7e3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bf2bb576a70ffd31380b177db8323f99353e262d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343742"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140110007"
 ---
 # New-AzCloudServiceExtensionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceextensionobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

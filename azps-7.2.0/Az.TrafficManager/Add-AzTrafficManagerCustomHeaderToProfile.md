@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerCustomHeaderToProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerCustomHeaderToProfile.md
-ms.openlocfilehash: 3459486a6c262cdd190acf29316069056d0ea9bc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a4ec610c5153c440b6f2052dfc9fb1cbc59f6f33
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275548"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047199"
 ---
 # Add-AzTrafficManagerCustomHeaderToProfile
 
 ## SYNOPSIS
 Menambahkan informasi header kustom ke objek Traffic Manager profil kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanagercustomheadertoprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Add-AzTrafficManagerCustomHeaderToProfile -Name <String> -Value <String>
 
 ## DESCRIPTION
 Cmdlet **Add-AzTrafficManagerCustomHeaderToProfile** menambahkan informasi header kustom ke objek Azure Traffic Manager profil lokal.
-Anda dapat menggunakan cmdlet New-AzTrafficManagerProfile Get-AzTrafficManagerProfile.
+Anda dapat memperoleh profil menggunakan cmdlet New-AzTrafficManagerProfile Get-AzTrafficManagerProfile.
 
 Cmdlet ini beroperasi pada objek profil lokal.
 Lakukan perubahan ke profil untuk Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerProfile cmdlet.

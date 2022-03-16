@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSupportedOptimizationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSupportedOptimizationType.md
-ms.openlocfilehash: 263b3ce1154c7113617aa0b1710f19c00036cc24
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f9ddece05e90d8cc7cca4e5ef7c2d527f6955029
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380458"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944277"
 ---
 # Get-AzCdnProfileSupportedOptimizationType
 
 ## SYNOPSIS
 Mendapatkan tipe optimisasi yang didukung untuk CDN bisnis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnprofilesupportedoptimizationtype) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

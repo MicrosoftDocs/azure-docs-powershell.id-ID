@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: 573453368ce8e5568f1cb1baf4e074be0a291be7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a5f84cf47a1ef4ea16bdf03f744bf1b011fa367a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307211"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063381"
 ---
 # Get-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Dapatkan detail konfigurasi penyedia identitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementidentityprovider) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ ResourceGroupName        : Api-Default-West-US
 ServiceName              : contoso
 ```
 
-Mendapatkan Konfigurasi Penyedia Identitas dari Azure Active Directory.
+Mendapatkan Identitas Konfigurasi Penyedia Azure Active Directory.
 
 ### Contoh 3: Dapatkan AAD Penyedia Identitas Tipe B2C
 ```powershell
@@ -90,7 +93,7 @@ ResourceGroupName        : Api-Default-West-US
 ServiceName              : contoso
 ```
 
-Mendapatkan Konfigurasi Penyedia Identitas dari Azure Active Directory.
+Mendapatkan Identitas Konfigurasi Penyedia Azure Active Directory.
 
 ## PARAMETERS
 

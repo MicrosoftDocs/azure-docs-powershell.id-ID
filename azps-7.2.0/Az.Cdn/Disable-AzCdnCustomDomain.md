@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/disable-azcd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Disable-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Disable-AzCdnCustomDomain.md
-ms.openlocfilehash: 5b1f2024536e2d17cbbbcbc814b8278be6384ffd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 44b53e7672ad0f64503514bc4d8cacb4563b694c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269499"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963401"
 ---
 # Disable-AzCdnCustomDomain
 
 ## SYNOPSIS
 Menonaktifkan Domain Kustom HTTPS (Ditolak).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/disable-azcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

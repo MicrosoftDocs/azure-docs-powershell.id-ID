@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeUser.md
-ms.openlocfilehash: ceb5a1538620270cd7c12c6b56a0daf705a8d2bf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8846687ebe0007fdb684d42aec119f4715cf37bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346022"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139941793"
 ---
 # Get-AzDataBoxEdgeUser
 
 ## SYNOPSIS
 Mendapatkan pengguna yang dikonfigurasi untuk satu perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgeuser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

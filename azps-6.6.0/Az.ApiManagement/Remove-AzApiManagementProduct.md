@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementProduct.md
-ms.openlocfilehash: a24968c2a9175d230a8292df56c9907314a40b19
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 75b129f9f292b78a62e4031348554046175dacf4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370689"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945429"
 ---
 # Remove-AzApiManagementProduct
 
 ## SYNOPSIS
 Menghapus produk Manajemen API yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementproduct) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Perintah ini akan menghapus semua langganan dan produk yang sudah ada.
 ## PARAMETERS
 
 ### -Konteks
-Menentukan contoh objek **PsApiManagementContext.**
+Menentukan contoh objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai $False, jika gagal.
+Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True berhasil, jika berhasil, atau nilai $False, jika gagal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

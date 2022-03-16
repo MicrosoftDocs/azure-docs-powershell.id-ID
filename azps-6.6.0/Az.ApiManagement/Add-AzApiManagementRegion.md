@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementRegion.md
-ms.openlocfilehash: 3c9cd08c21f96928fa50317418173c86a7a90660
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6b1fa0713e70b8236ac81fba68cc6d35e6270fef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136348353"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945987"
 ---
 # Add-AzApiManagementRegion
 
 ## SYNOPSIS
 Menambahkan kawasan penyebaran baru ke contoh PsApiManagement.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementregion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Add-AzApiManagementRegion -ApiManagement <PsApiManagement> -Location <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApiManagementRegion** menambahkan contoh baru tipe **PsApiManagementRegion** ke kumpulan Wilayah Tambahan dari tipe tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**. 
-Cmdlet ini tidak menyebarkan apa pun dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement.**
+Cmdlet **Add-AzApiManagementRegion** menambahkan instans baru tipe **PsApiManagementRegion** ke kumpulan Wilayah Tambahan dari tipe  tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
+Cmdlet ini tidak menyebarkan apa pun dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement** .
 Untuk memperbarui penyebaran Manajemen API, ubah Instans **PsApiManagement menjadi** Set-AzApiManagement.
 
 ## EXAMPLES
@@ -38,7 +41,7 @@ Untuk memperbarui penyebaran Manajemen API, ubah Instans **PsApiManagement menja
 PS C:\>Add-AzApiManagementRegion -ApiManagement $ApiManagement -Location "East US" -Sku "Premium" -Capacity 2
 ```
 
-Perintah ini menambahkan dua unit SKU premium dan kawasan yang bernama AS Timur ke instans **PsApiManagement.**
+Perintah ini menambahkan dua unit SKU premium dan kawasan yang bernama AS Timur ke instans **PsApiManagement** .
 
 ### Contoh 2: Tambahkan kawasan penyebaran baru ke contoh PsApiManagement lalu perbarui penyebaran
 ```powershell
@@ -47,7 +50,7 @@ PS C:\>$service = Add-AzApiManagementRegion -ApiManagement $service -Location $s
 PS C:\>$service = Set-AzApiManagement -InputObject $service -PassThru
 ```
 
-Perintah ini mendapatkan objek **PsApiManagement,** menambahkan dua unit SKU premium untuk kawasan yang bernama AS Timur, lalu memperbarui penyebaran.
+Perintah ini mendapatkan objek **PsApiManagement** , menambahkan dua unit SKU premium untuk kawasan yang bernama AS Timur, lalu memperbarui penyebaran.
 
 ## PARAMETERS
 
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

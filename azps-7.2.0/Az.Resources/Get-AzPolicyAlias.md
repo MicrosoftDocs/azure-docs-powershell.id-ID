@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAlias.md
-ms.openlocfilehash: 232e4140a83b73270b730f489ca25dfce5296d0a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 25aee20141b5ed12ca8bf4337cff477950226800
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308747"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117367"
 ---
 # Get-AzPolicyAlias
 
 ## SYNOPSIS
-Get-AzPolicyAlias dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditetapkan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
+Get-AzPolicyAlias dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
 Sakelar -ListAvailable mengubah perilaku ini dengan mencantumkan semua tipe sumber daya yang cocok termasuk yang tanpa alias.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azpolicyalias) untuk informasi terkini.
 
 ## SYNTAX
 

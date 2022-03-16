@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerLocationBasedCapability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerLocationBasedCapability.md
-ms.openlocfilehash: 48b98dfead852ab73ff39db90c75f7708171be42
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fd1a7d021bc0ba0da709cb0129bf4978fef7e8c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291948"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951917"
 ---
 # Get-AzPostgreSqlFlexibleServerLocationBasedCapability
 
 ## SYNOPSIS
 Mendapatkan informasi SKU yang tersedia untuk lokasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverlocationbasedcapability) untuk informasi terkini.
 
 ## SYNTAX
 

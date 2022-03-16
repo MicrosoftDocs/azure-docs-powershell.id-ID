@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzTag.md
-ms.openlocfilehash: 0c1affa452a6e58312a90a8a1e92d7c9bc41f9ba
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6296f3ae16c62b6196809e08033d229968a6154f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255291"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083673"
 ---
 # Update-AzTag
 
 ## SYNOPSIS
 
 Memperbarui kumpulan tag secara selektif pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-aztag) untuk informasi terkini.
 
 ## SYNTAX
 

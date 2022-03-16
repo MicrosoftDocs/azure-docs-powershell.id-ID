@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyExemption.md
-ms.openlocfilehash: 7ec6d46eb851351f3468eac2fdc8dec5464a0b25
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f149cfb24811c187f6f5ce11b38e170d333c3c1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297275"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117104"
 ---
 # New-AzPolicyExemption
 
 ## SYNOPSIS
 Membuat pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azpolicyexemption) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ PS C:\> $Assignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignme
 PS C:\> New-AzPolicyExemption -Name 'VirtualMachinePolicyExemption' -PolicyAssignment $Assignment -Scope "/subscriptions/$($Subscription.Id)" -ExemptionCategory Waiver
 ```
 
-Perintah pertama mendapatkan langganan bernama Subscription01 menggunakan cmdlet Get-AzSubscription dan menyimpannya dalam $Subscription variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam variabel $Assignment baru.
+Perintah pertama mendapatkan langganan bernama Subscription01 menggunakan cmdlet Get-AzSubscription dan menyimpannya di $Subscription variabel.
+Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya di variabel $Assignment baru.
 Perintah terakhir mengecualikan penetapan kebijakan di $Assignment pada tingkat langganan yang diidentifikasi oleh string lingkup langganan.
 
 ### Contoh 2: Pengecualian kebijakan pada tingkat grup sumber daya
@@ -51,7 +54,7 @@ PS C:\> New-AzPolicyExemption -Name 'VirtualMachinePolicyAssignment' -PolicyAssi
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam variabel $Assignment baru.
+Perintah kedua mendapatkan penetapan kebijakan bernama VirtualMachinePolicyAssignment menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya di variabel $Assignment baru.
 Perintah terakhir mengecualikan penetapan kebijakan dalam $Assignment tingkat grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup.
 
 ## PARAMETERS

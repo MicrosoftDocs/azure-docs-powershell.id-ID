@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTemplateSpec.md
-ms.openlocfilehash: cd07877554df6910671133feffac4a5a8c8b0824
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: efa2c16683c0e90ac1fcb8be833b028f33c4f7b5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340586"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969665"
 ---
 # New-AzTemplateSpec
 
 ## SYNOPSIS
 Membuat Spesifikasi Templat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-aztemplatespec) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzTemplateSpec [-ResourceGroupName] <String> [-Name] <String> -Version <Stri
 ```
 
 ## DESCRIPTION
-Membuat versi Spesifikasi Templat baru dengan konten Templat ARM yang ditentukan. Konten bisa berasal dari string JSON mentah (menggunakan kumpulan parameter **FromJsonStringParameterSet)** atau dari file JSON/Bicep yang ditentukan (menggunakan kumpulan parameter **FromJsonFileParameterSet).**  
+Membuat versi Spesifikasi Templat baru dengan konten Templat ARM yang ditentukan. Konten bisa berasal dari string JSON mentah (menggunakan kumpulan parameter **FromJsonStringParameterSet** ) atau dari file JSON/Bicep yang ditentukan (menggunakan kumpulan parameter **FromJsonFileParameterSet** ).  
 
 Jika Spesifikasi Templat akar belum ada, spesifikasi akan dibuat bersama dengan versi Spesifikasi Templat. Jika Spesifikasi Templat sudah ada dengan nama yang diberikan, dan versi yang ditentukan akan diperbarui (versi lain yang sudah ada akan dipertahankan).
 
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

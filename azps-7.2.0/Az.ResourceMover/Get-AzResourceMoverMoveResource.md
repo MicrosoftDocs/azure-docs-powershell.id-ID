@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverMoveResource.md
-ms.openlocfilehash: 778c5de01a86a6aecd1aaa13db30a84cb2cdd4cb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1d3507cef541699e63e5acb09a39b37945d46105
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290699"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084087"
 ---
 # Get-AzResourceMoverMoveResource
 
 ## SYNOPSIS
 Mendapatkan Pindahkan Sumber Daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/get-azresourcemovermoveresource) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualRouter.md
-ms.openlocfilehash: 569ca17df778f74b2078a6d2d7745e80fd032937
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5693b01497c49ff678495b83fe766a0552c9d697
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118159"
 ---
 # Update-AzVirtualRouter
 
 ## SYNOPSIS
 Memperbarui Router Virtual. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvirtualrouter) untuk informasi terkini.
 
 ## SYNTAX
 

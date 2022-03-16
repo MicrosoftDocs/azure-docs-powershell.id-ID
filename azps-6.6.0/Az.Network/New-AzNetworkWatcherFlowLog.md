@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: 2d19c7ed50fb582fbf454479c513a4a68b24585d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a5ea3d5f563a0cc76101b85c71f360f3f0a64ce6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351782"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139934503"
 ---
 # New-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatcherflowlog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ New-AzNetworkWatcherFlowLog -Location <String> -Name <String> -TargetResourceId 
 ```
 
 ## DESCRIPTION
-New-AzNetworkWatcherFlowLog membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan yang ditentukan.
+New-AzNetworkWatcherFlowLog anda membuat atau memperbarui sumber daya log alur untuk grup keamanan jaringan yang ditentukan.
 
 ## EXAMPLES
 
@@ -396,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

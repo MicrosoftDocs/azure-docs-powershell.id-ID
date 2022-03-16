@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/regist
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzResourceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzResourceProvider.md
-ms.openlocfilehash: e23f4426b1bfdf4fc1c859002802b992e35bbdae
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5c1b78485eab593f71fd35a7a5ad87dae1cc771c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083979"
 ---
 # Register-AzResourceProvider
 
 ## SYNOPSIS
 Mendaftarkan penyedia sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/register-azresourceprovider) untuk informasi terkini.
 
 ## SYNTAX
 

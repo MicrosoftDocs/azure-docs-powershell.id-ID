@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: 712134c88da98659de3e86af5328d3d020dfbcf6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8cb0d13f0dd1baa65b350f86bd731eaec003c920
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058485"
 ---
 # Test-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
 Memeriksa keberadaan akun Analitik Danau Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/test-azdatalakeanalyticsaccount) untuk informasi terkini.
 
 ## SYNTAX
 

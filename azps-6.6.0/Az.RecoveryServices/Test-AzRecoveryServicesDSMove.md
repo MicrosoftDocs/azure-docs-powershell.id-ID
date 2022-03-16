@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Test-AzRecoveryServicesDSMove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Test-AzRecoveryServicesDSMove.md
-ms.openlocfilehash: ede0e2ac8d3136d9aafea1add26ef3a871175eb1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c3c3099d102c6a185d0e23ff40af6c2e49369f30
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332296"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139970187"
 ---
 # Test-AzRecoveryServicesDSMove
 
 ## SYNOPSIS
 Cmdlet ini menjalankan validasi yang diperlukan untuk Pemindahan DS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/test-azrecoveryservicesdsmove) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ PS C:\> if($validated) {
 
 Cmdlet pertama mengatur konteks langganan target. Cmdlet kedua memicu beberapa validasi wajib pada penyimpanan target.
 Cmdlet ketiga mengatur konteks langganan sumber.
-Lalu berdasarkan negara Test-AzRecoveryServicesDSMove cmdlet, kami mengambil CorrelationId menggunakan Initialize-AzRecoveryServicesDSMove cmdlet. $corr dapat diinput ke cmdlet Salin.
+Lalu berdasarkan Test-AzRecoveryServicesDSMove cmdlet, kami mengambil CorrelationId menggunakan Initialize-AzRecoveryServicesDSMove cmdlet. $corr dapat diinput ke cmdlet Salin.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

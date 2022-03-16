@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsFirewallRule.md
-ms.openlocfilehash: c10c78d3b176a9c163601f283595b205173f2918
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a74fe0ec8202d2955d09613f46734d03891b89f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166658"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058611"
 ---
 # Get-AzDataLakeAnalyticsFirewallRule
 
 ## SYNOPSIS
 Mengambil aturan firewall atau daftar aturan firewall dari akun Analitik Danau Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticsfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnServerConfiguration.md
-ms.openlocfilehash: 15f51188f7a6ad13c55728b255fceddf6bf49342
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bf155b69fa0817992339e4cc70921d77a4527924
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165078"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952943"
 ---
 # Update-AzVpnServerConfiguration
 
 ## SYNOPSIS
 Memperbarui VpnServerConfiguration yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvpnserverconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ Perintah di atas akan memperbarui VpnServerConfiguration yang sudah ada dengan V
 ## PARAMETERS
 
 ### -AadAudience
-AAD audiens untuk autentikasi AAD P2S.
+AAD audiens untuk P2S AAD autentikasi.
 
 ```yaml
 Type: System.String

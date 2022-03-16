@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCircuit.md
-ms.openlocfilehash: a7a16fe5c9171ec21732aab31fdfdf6049503b58
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f45612f5ffa536d66f84e5596c20b44d44abbeff
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283148"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085761"
 ---
 # Set-AzExpressRouteCircuit
 
 ## SYNOPSIS
 Mengubah sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azexpressroutecircuit) untuk informasi terkini.
 
 ## SYNTAX
 
