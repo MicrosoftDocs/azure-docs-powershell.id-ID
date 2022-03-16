@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignment.md
-ms.openlocfilehash: d3372bd54169683222d462208ae5482f068b0553
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 68e76b5e87f8b9eb2fa95efef5b429d6c52bdb9e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165025"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228329"
 ---
 # Get-AzRoleAssignment
 
@@ -27,6 +27,9 @@ Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter inpu
 - GET /groups/{id}
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 

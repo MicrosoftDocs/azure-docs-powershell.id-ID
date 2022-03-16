@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 8aeecb675abe1f4250ad84916f47d70fe6e291a0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 385b2f3573f191290e99356f79509dd61ac75e68
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228797"
 ---
 # Enable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
 Mengaktifkan pencadangan untuk item dengan kebijakan Proteksi pencadangan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <Item
 ## DESCRIPTION
 Cmdlet **Enable-AzRecoveryServicesBackupProtection** mengaktifkan cadangan dengan mengaitkan kebijakan proteksi dengan item tersebut.
 Jika ID kebijakan tidak ada atau item cadangan tidak terkait dengan kebijakan apa pun, maka perintah ini akan mengharapkan IDkebkaan kebijakan.
-Atur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 Menentukan kebijakan proteksi bahwa cmdlet ini terkait dengan item.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy cmdlet.
+Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
-ms.openlocfilehash: 9f605eff2afe8f1887d990076a1d3b7d895b3f62
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9cbfa326650fc899482182354fb239d78d95abad
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228401"
 ---
 # Get-AzPolicyAssignment
 
 ## SYNOPSIS
 Mendapatkan penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azpolicyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ PS C:\> Get-AzPolicyAssignment -Name 'PolicyAssignment07' -Scope $ResourceGroup.
 ```
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment07 untuk lingkup properti **ResourceId** yang akan $ResourceGroup identifikasi.
+Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment07 untuk lingkup yang diidentifikasi oleh properti **ResourceId** $ResourceGroup identifikasi.
 
 ### Contoh 3: Menetapkan semua penetapan kebijakan ke grup manajemen
 ```

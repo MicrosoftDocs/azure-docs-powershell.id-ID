@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrReplicationProtectedItem.md
-ms.openlocfilehash: 911d87a69f70d20801ccc4b3bd0d7065871fabbe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eb6be4303f9d2301c44e6580fa87647bc2600d03
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167178"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228725"
 ---
 # Get-AzRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
 Mendapatkan properti Item Terproteksi Replikasi Situs Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terkini.
 
 ## SYNTAX
 

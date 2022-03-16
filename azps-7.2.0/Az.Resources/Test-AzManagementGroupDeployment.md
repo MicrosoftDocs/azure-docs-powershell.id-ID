@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/test-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Test-AzManagementGroupDeployment.md
-ms.openlocfilehash: 7dbfa15c34323b7ffd38d781f02fdf1996a720af
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7b75a50c5e6a93a9c3a77962c612ef5df5b7c554
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227789"
 ---
 # Test-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Memvalidasi penempatan di grup manajemen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/test-azmanagementgroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

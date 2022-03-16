@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: 3745fa5577796fb0041b5cddbd1d92eb9049db0e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 05e7f36ada22ae55e47943ba36deaad57e7e4fde
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292891"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227357"
 ---
 # New-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
 Menambahkan Respons Otomatis ke Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelalertruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzSentinelAlertRuleAction -ResourceGroupName <String> -WorkspaceName <String
 ## DESCRIPTION
 Cmdlet **New-AzSentinelAlertRuleAction** membuat Respons Otomatis untuk Aturan Pemberitahuan dalam ruang kerja yang ditentukan.
 Anda harus menyediakan ResourceId Aplikasi Logika dan Uri Pemicu yang dapat ditemukan menggunakan [Azure Logic Apps PowerShell tersebut](https://docs.microsoft.com/en-us/powershell/module/az.logicapp/get-azlogicapp?view=azps-5.6.0).
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -39,8 +42,8 @@ $LogicAppTriggerUri = Get-AzLogicAppTriggerCallbackUrl -ResourceGroupName "MyRes
 $AlertRuleAction = New-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -LogicAppResourceId ($LogicAppResourceId.Id) -TriggerUri ($LogicAppTriggerUri.Value)
 ```
 
-Contoh ini membuat fungsi AlertRuleAction untuk Aturan Pemberitahuan yang ditentukan menggunakan properti Aplikasi Logika, lalu menyimpannya dalam $AlertRuleAction variabel.<br/>
-Kemudian, kami New-AzSentinelAlertRuleAction cmdlet untuk menambahkan Aplikasi Logika sebagai tindakan ke AlertRule spesifikasifc.
+Contoh ini membuat fungsi AlertRuleAction untuk Aturan Pemberitahuan yang ditentukan menggunakan properti Aplikasi Logika, lalu menyimpannya di $AlertRuleAction logika.<br/>
+Lalu kami menggunakan cmdlet New-AzSentinelAlertRuleAction untuk menambahkan Aplikasi Logika sebagai tindakan ke AlertRule spesifikasifc.
 
 ### Contoh 2
 ```powershell

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzTenantDeployment.md
-ms.openlocfilehash: 78c99a78b2a0a0a9a93bcfc3d8ed0a9835cf328e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: aad6766b0273a8372c41c6257a0e94bfc0c4e541
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293996"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227915"
 ---
 # Stop-AzTenantDeployment
 
 ## SYNOPSIS
 Membatalkan penggunaan yang berjalan pada lingkup penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/stop-aztenantdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

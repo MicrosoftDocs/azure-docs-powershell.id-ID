@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelIncident.md
-ms.openlocfilehash: 758917f4d635ecccf72c64340314ea9af332006a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bc62b2525ed694386a98ab11945ddb5d635a6639
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168990"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227429"
 ---
 # Get-AzSentinelIncident
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa Insiden Azure Sentinel.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentinelincident) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Contoh ini mendapatkan semua Insiden di ruang kerja yang ditentukan, lalu menyim
 PS C:\> $Incident = Get-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName" -IncidentId "myIncidentId"
 ```
 
-Contoh ini mendapatkan Insiden tertentu di ruang kerja tertentu, lalu menyimpannya di $Incident baru.<br/>
+Contoh ini mendapatkan Insiden tertentu di ruang kerja tertentu, lalu menyimpannya di $Incident mereka.<br/>
 *Harap diperhatikan bahwa IncidentId berada dalam format ini: 168d330b-219b-4191-a5b1-742c211adb05*
 
 ### Contoh 4

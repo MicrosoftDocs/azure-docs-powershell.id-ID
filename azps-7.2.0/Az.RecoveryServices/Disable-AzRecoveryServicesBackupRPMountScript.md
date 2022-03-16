@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupRPMountScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupRPMountScript.md
-ms.openlocfilehash: 01ef5f5a76bac4ab836f2b06b6f9ccafeedacfb1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7576b5be295a4e07bda93cb04579bb1d29ef78ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303420"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228833"
 ---
 # Disable-AzRecoveryServicesBackupRPMountScript
 
 ## SYNOPSIS
 Jumlah semua file titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackuprpmountscript) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Disable-AzRecoveryServicesBackupRPMountScript [-RecoveryPoint] <RecoveryPointBas
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzRecoveryServicesBackupRPMountScript akan menunjukkan jumlah file titik pemulihan yang terpasang lebih awal menggunakan cmdlet Get-AzRecoveryServicesBackupRPMountScript.
+Cmdlet Disable-AzRecoveryServicesBackupRPMountScript akan menunjukkan jumlah file titik pemulihan yang terpasang sebelumnya menggunakan cmdlet Get-AzRecoveryServicesBackupRPMountScript.
 
 ## EXAMPLES
 

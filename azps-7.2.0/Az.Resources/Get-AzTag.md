@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTag.md
-ms.openlocfilehash: 319080ce01ef535f3718ffa20adaf0d2faa1f879
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 71b712b10b8659dfcea782c34ce4dd2e21b529de
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228275"
 ---
 # Get-AzTag
 
 ## SYNOPSIS
-Mendapatkan daftar tag Azure yang sudah | Dapatkan seluruh kumpulan tag pada sumber daya atau langganan.
+Mendapatkan tag Azure yang sudah ditentukan | Dapatkan seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-aztag) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,9 +41,9 @@ Semua objek output menyertakan properti Hitung yang mewakili jumlah sumber daya 
 Modul Tag Azure yang merupakan **bagian dari Get-AzTag** merupakan bagian darinya yang bisa membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
 Tag Azure adalah pasangan nilai nama yang dapat digunakan untuk mengategorikan sumber daya dan grup sumber daya Azure, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
 Anda bisa menetapkan dan menerapkan tag dalam satu langkah, tapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan yang bisa diprediksi untuk tag di langganan Anda.
-Untuk membuat tag yang sudah ditentukan sebelumnya, gunakan cmdlet New-AzTag.
+Untuk membuat tag yang sudah ditentukan sebelumnya, gunakan cmdlet New-AzTag cmdlet.
 Untuk menerapkan tag yang sudah ditentukan sebelumnya ke grup sumber daya, gunakan parameter *Tag* cmdlet New-AzTag cmdlet.
-Untuk mencari grup sumber daya untuk nama atau nama atau nilai tag tertentu, gunakan parameter *Tag* Get-AzResourceGroup cmdlet.
+Untuk mencari grup sumber daya untuk nama atau nama dan nilai tag tertentu, gunakan parameter *Tag* Get-AzResourceGroup cmdlet.
 
 **GetByResourceIdParameterSet**: Cmdlet **Get-AzTag** dengan **ResourceId** mendapatkan seluruh kumpulan tag pada sumber daya atau langganan.
 

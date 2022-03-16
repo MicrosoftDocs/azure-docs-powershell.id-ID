@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/regist
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzProviderPreviewFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Register-AzProviderPreviewFeature.md
-ms.openlocfilehash: 0a4efa7ea1ccdbd525fe2f2ef676d8442ff37a6a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4daac234e6b58c77c53c33a24c9953efb388a75c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167095"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228113"
 ---
 # Register-AzProviderPreviewFeature
 
 ## SYNOPSIS
 Membuat pendaftaran fitur di akun Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/register-azproviderpreviewfeature) untuk informasi terkini.
 
 ## SYNTAX
 

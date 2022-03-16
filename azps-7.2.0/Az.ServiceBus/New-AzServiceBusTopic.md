@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusTopic.md
-ms.openlocfilehash: 8ffdf70a65f518da0394cc54dad043d53fbacc6f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e8f1fb14baffe3f0870263c0e7d08723788efae9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268572"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227059"
 ---
 # New-AzServiceBusTopic
 
 ## SYNOPSIS
-Membuat topik baru Bus Layanan dalam ruang nama Bus Layanan nama yang ditentukan.
+Membuat topik baru Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebustopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzServiceBusTopic [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusTopic** membuat topik baru Bus Layanan nama dalam ruang nama Bus Layanan tertentu.
+Cmdlet **New-AzServiceBusTopic** membuat topik baru Bus Layanan di ruang nama Bus Layanan nama yang ditentukan.
 
 ## EXAMPLES
 
@@ -58,11 +61,11 @@ SupportOrdering                     : True
 UpdatedAt                           : 10/11/2018 11:51:24 PM
 ```
 
-Membuat topik baru Bus Layanan dalam `SB-Topic_exampl1` ruang nama Bus Layanan nama yang ditentukan`SB-Example1`.
+Membuat topik baru Bus Layanan di `SB-Topic_exampl1` ruang nama Bus Layanan nama yang ditentukan`SB-Example1`.
 
 ### Contoh 2
 
-Membuat topik baru Bus Layanan dalam ruang nama Bus Layanan nama yang ditentukan. (otomatisgenerated)
+Membuat topik baru Bus Layanan dalam ruang nama Bus Layanan ditentukan. (otomatisgenerated)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzServiceBusTopic -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Name SB-Topic_exampl1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMessageTimeToLive
-Menentukan durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirim ke Bus Layanan.
+Menentukan durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirimkan ke Bus Layanan.
 
 ```yaml
 Type: System.String

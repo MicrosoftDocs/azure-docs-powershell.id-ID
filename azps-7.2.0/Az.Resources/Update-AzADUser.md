@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
-ms.openlocfilehash: 90e89e16a55e888732a2056dcf25bb126f2a1be8
-ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
+ms.openlocfilehash: 4922b47c3a2ebd1f800200b51fef32818f57ec31
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "138874971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227807"
 ---
 # Update-AzADUser
 
@@ -18,6 +18,9 @@ ms.locfileid: "138874971"
 Memperbarui entitas dalam pengguna
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-azaduser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -546,7 +549,7 @@ Accept wildcard characters: False
 Properti ini digunakan untuk mengaitkan akun pengguna Direktori Aktif lokal ke objek pengguna Azure AD mereka.
 Properti ini harus ditentukan saat membuat akun pengguna baru di Graph jika Anda menggunakan domain gabungan untuk properti userPrincipalName (UPN).
 CATATAN: Karakter $ dan _ tidak dapat digunakan saat menentukan properti ini.
-Hanya dikembalikan pada $select.
+Dikembalikan hanya pada $select.
 Mendukung $filter (eq, ne, NOT, ge, le, in)..
 
 ```yaml
@@ -678,7 +681,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowInAddressList
-true jika daftar Outlook global seharusnya berisi pengguna ini, jika tidak salah.
+true jika daftar Outlook global harus berisi pengguna ini, jika tidak salah.
 Jika tidak diatur, maka hal ini akan diperlakukan sebagai benar.
 Untuk pengguna yang diundang melalui pengelola undangan, properti ini akan diatur ke false.
 Mendukung $filter (eq, ne, NOT, in).
@@ -898,14 +901,14 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[GivenName <String>]`: Nama depan (nama depan) pengguna. Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[Identity <IMicrosoftGraphObjectIdentity[]>]`: Mewakili identitas yang bisa digunakan untuk masuk ke akun pengguna ini. Identitas bisa disediakan oleh Microsoft (juga dikenal sebagai akun lokal), oleh organisasi, atau oleh penyedia identitas sosial seperti Facebook, Google, dan Microsoft, dan terikat ke akun pengguna. Mungkin berisi beberapa item dengan nilai signInType yang sama. Mendukung $filter (eq) hanya di mana signInType bukan userPrincipalName.
     - `[Issuer <String>]`: Menentukan penerbit identitas, misalnya facebook.com.Untuk akun lokal (di mana signInType tidak federasi), properti ini adalah nama domain penyewa B2C lokal, misalnya contoso.onmicrosoft.com.Untuk pengguna eksternal dari organisasi Azure AD lain, ini akan menjadi domain organisasi gabungan, misalnya contoso.com.Mendukung $filter. Batas 512 karakter.
-    - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan kepada pengguna oleh penerbit. Kombinasi dari penerbit dan penerbitAssignedId harus unik di dalam organisasi. Mewakili nama masuk untuk pengguna, ketika signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus merupakan namapengguna alamat email yang valid, issuerAssignedId harus merupakan bagian lokal yang valid dari alamat emailSupports $filter. Batas 100 karakter.
+    - `[IssuerAssignedId <String>]`: Menentukan pengidentifikasi unik yang ditetapkan kepada pengguna oleh penerbit. Kombinasi dari penerbit dan penerbitAssignedId harus unik di dalam organisasi. Mewakili nama masuk untuk pengguna, ketika signInType diatur ke emailAddress atau userName (juga dikenal sebagai akun lokal). Ketika signInType diatur ke: emailAddress, (atau string kustom yang dimulai dengan emailAddress seperti emailAddress1) issuerAssignedId harus merupakan namapengguna alamat email yang valid, issuerAssignedId harus merupakan bagian lokal yang valid dari alamat emailSupport $filter. Batas 100 karakter.
     - `[SignInType <String>]`: Menentukan tipe masuk pengguna di direktori Anda, seperti emailAddress, userName atau gabungan. Di sini, gabungan mewakili pengidentifikasi unik untuk pengguna dari penerbit, yang bisa berada dalam format apa pun yang dipilih oleh penerbit. Validasi tambahan diterapkan pada issuerAssignedId ketika tipe masuk diatur ke emailAddress atau userName. Properti ini juga dapat diatur ke string kustom apa pun.
   - `[IsResourceAccount <Boolean?>]`: Jangan gunakan - dicadangkan untuk penggunaan di masa mendatang.
   - `[JobTitle <String>]`: Jabatan pekerjaan pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT , ge, le, in, startsWith).
   - `[Mail <String>]`: Alamat SMTP untuk pengguna, misalnya, admin@contoso.com. Perubahan pada properti ini juga akan memperbarui kumpulan proxyAddresses pengguna agar menyertakan nilai sebagai alamat SMTP. Meskipun properti ini dapat berisi karakter aksen, menggunakannya dapat menyebabkan masalah akses dengan aplikasi Microsoft lainnya untuk pengguna tersebut. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
   - `[MailNickname <String>]`: Alias email untuk pengguna. Properti ini harus ditentukan saat pengguna dibuat. Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[OfficeLocation <String>]`: Lokasi kantor di tempat bisnis pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[OnPremisesImmutableId <String>]`: Properti ini digunakan untuk mengaitkan akun pengguna Direktori Aktif lokal ke objek pengguna Azure AD miliknya. Properti ini harus ditentukan saat membuat akun pengguna baru di Graph jika Anda menggunakan domain gabungan untuk properti userPrincipalName (UPN). CATATAN: Karakter $ dan _ tidak dapat digunakan saat menentukan properti ini. Hanya dikembalikan pada $select. Mendukung $filter (eq, ne, NOT, ge, le, in)..
+  - `[OnPremisesImmutableId <String>]`: Properti ini digunakan untuk mengaitkan akun pengguna Direktori Aktif lokal ke objek pengguna Azure AD miliknya. Properti ini harus ditentukan saat membuat akun pengguna baru di Graph jika Anda menggunakan domain gabungan untuk properti userPrincipalName (UPN). CATATAN: Karakter $ dan _ tidak dapat digunakan saat menentukan properti ini. Dikembalikan hanya pada $select. Mendukung $filter (eq, ne, NOT, ge, le, in)..
   - `[OnPremisesLastSyncDateTime <DateTime?>]`: Terakhir kali objek disinkronkan dengan direktori lokal. Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z Baca-saja. Mendukung $filter (eq, ne, not, ge, le, in).
   - `[OnPremisesSyncEnabled <Boolean?>]`: true jika objek ini disinkronkan dari direktori lokal; false jika objek ini aslinya disinkronkan dari direktori lokal tetapi tidak lagi disinkronkan; null jika objek ini belum pernah disinkronkan dari direktori lokal (default). Baca-saja. Mendukung $filter (eq, ne, not, in, dan eq pada nilai null).
   - `[OperatingSystem <String>]`: Sistem operasi perangkat. Windows, iOS, dll. Properti ini merupakan baca-saja.
@@ -924,7 +927,7 @@ INPUTOBJECT <IMicrosoftGraphUser>: objek input pengguna
   - `[State <String>]`: Negara bagian atau provinsi di alamat pengguna. Panjang maksimum adalah 128 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[StreetAddress <String>]`: Alamat jalan tempat bisnis pengguna. Panjang maksimum adalah 1024 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[Surname <String>]`: Nama keluarga pengguna (nama keluarga atau nama belakang). Panjang maksimum adalah 64 karakter. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[TrustType <String>]`: Tipe kepercayaan untuk perangkat yang tergabung. Baca-saja. Nilai yang mungkin: Tempat kerja (menunjukkan membawa perangkat pribadi Anda sendiri), AzureAd (Perangkat yang bergabung hanya di awan), ServerAd (perangkat bersama domain lokal yang tergabung dalam Azure AD). Untuk detail selengkapnya, lihat Pengenalan pada manajemen perangkat di Azure Active Directory
+  - `[TrustType <String>]`: Tipe kepercayaan untuk perangkat yang tergabung. Baca-saja. Nilai yang mungkin: Tempat kerja (menunjukkan membawa perangkat pribadi Anda sendiri), AzureAd (Perangkat yang bergabung hanya di awan), ServerAd (perangkat bersama domain lokal yang tergabung dalam Azure AD). Untuk detail selengkapnya, lihat Pengenalan manajemen perangkat di Azure Active Directory
   - `[UsageLocation <String>]`: Kode negara dua huruf (standar ISO 3166). Diperlukan untuk pengguna yang akan diberi lisensi karena persyaratan hukum untuk memeriksa ketersediaan layanan di negara-negara.  Contohnya antara lain: US, JP, dan GB. Not nullable. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith).
   - `[UserPrincipalName <String>]`: Nama prinsipal pengguna (UPN) pengguna. UPN adalah nama masuk gaya internet untuk pengguna berdasarkan RFC 822 standar internet. Menurut konvensi, ini harus di petakan ke nama email pengguna. Format umumnya alias@domainadalah, di mana domain harus ada dalam kumpulan penyewa domain terverifikasi. Properti ini diperlukan saat pengguna dibuat. Domain terverifikasi untuk penyewa bisa diakses dari properti verifiedDomains organisasi. CATATAN: Meskipun dapat berisi karakter aksen, properti ini dapat menyebabkan masalah akses ke aplikasi pihak pertama untuk pengguna. Mendukung $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) dan $orderBy.
   - `[UserType <String>]`: Nilai string yang dapat digunakan untuk mengklasifikasikan tipe pengguna dalam direktori Anda, seperti Anggota dan Tamu. Mendukung $filter (eq, ne, NOT, in,).

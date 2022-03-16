@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
-ms.openlocfilehash: ce67928bd119ccfe73aebb8cdf41a6de2b6cff46
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0e7c615a1c5dc67f859bd62b5ebc84cdeb38a351
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253147"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227339"
 ---
 # New-AzSentinelDataConnector
 
 ## SYNOPSIS
 Membuat Konektor Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentineldataconnector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ New-AzSentinelDataConnector -ResourceGroupName <String> -WorkspaceName <String> 
 ## DESCRIPTION
 Cmdlet **New-AzSentinelDataConnector** mengonfigurasi dan mengaktifkan konektor data di ruang kerja yang ditentukan.
 Anda harus menentukan salah satu parameter, misalnya -AzureActiveDirectory, untuk menentukan jenis Aturan pemberitahuan yang akan dibuat.  Setiap Kind memiliki parameter yang diperlukan berbeda.<br/><br/>
-Perlu diingat bahwa hanya konektor data berikut yang memiliki dukungan otomatisasi melalui PowerShell atau *Security.Insights* API:
+Harap diperhatikan bahwa hanya konektor data berikut ini yang memiliki dukungan otomatisasi melalui PowerShell atau *Security.Insights* API:
 * **AADDataConnector** - Mewakili AAD konektor data (Azure Active Directory Identity Protection)
 * **AATPDataConnector** - Mewakili konektor data AATP (Azure Advanced Threat Protection)
 * **ASCDataConnector** - Mewakili konektor data ASC (Azure Security Center)
@@ -95,7 +98,7 @@ Perlu diingat bahwa hanya konektor data berikut yang memiliki dukungan otomatisa
 PS C:\> $DataConnector = New-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AzureSecurityCenter -Alerts Enabled -SubscriptionId ((Get-AzContext).Subscription.Id)
 ```
 
-Contoh ini membuat **DataConnector untuk** *Pusat Keamanan Azure* di ruang kerja tertentu, lalu menyimpannya di $DataConnector lain.
+Contoh ini membuat **DataConnector** untuk *Pusat Keamanan Azure* di ruang kerja tertentu, lalu menyimpannya di $DataConnector lain.
 
 ### Contoh 2
 ```powershell
@@ -113,7 +116,7 @@ $SentinelConnection = @{
 New-AzSentinelDataConnector @SentinelConnection -Office365 -Exchange Enabled -SharePoint Enabled -Teams Enabled
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mengonfigurasi konektor *data Office 365* untuk mengumpulkan Exchange, SharePoint dan Teams log.
+Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mengonfigurasi konektor *data Office 365* untuk mengumpulkan Exchange, SharePoint, Teams log.
 
 ## PARAMETERS
 

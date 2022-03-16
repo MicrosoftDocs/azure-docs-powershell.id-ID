@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: 8f96c0fa945b9c9b1efd5ce65757324a6072e472
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5dc56481de92987d717fb7824358cc8b4e9278c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291787"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226853"
 ---
 # Get-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
 Dapatkan Service Fabric aplikasi yang dikelola. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplication) untuk informasi terkini.
 
 ## SYNTAX
 

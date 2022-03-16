@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupItem.md
-ms.openlocfilehash: e5fc3690be4531145cf265ea9b74196eb7294565
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8bf003b39affef8e282971280143b227ae57eb86
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294123"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228689"
 ---
 # Get-AzRecoveryServicesBackupItem
 
 ## SYNOPSIS
 
 Mendapatkan item dari wadah dalam Cadangkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ PS C:\> $BackupItem = Get-AzRecoveryServicesBackupItem -Container $Container -Wo
 ```
 
 Perintah pertama mendapatkan wadah tipe AzureVM, lalu menyimpannya dalam $Container variabel.
-Perintah kedua mendapatkan item Cadangan bernama V2VM di $Container, lalu menyimpannya di $BackupItem cadangan.
+Perintah kedua mendapatkan item Cadangan bernama V2VM dalam $Container, lalu menyimpannya di $BackupItem cadangan.
 
 ### Contoh 2: Mendapatkan Item Berbagi File Azure dari FriendlyName
 
@@ -74,8 +77,8 @@ PS C:\> $BackupItem = Get-AzRecoveryServicesBackupItem -Container $Container -Wo
 ```
 
 Perintah pertama mendapatkan wadah tipe AzureStorage, lalu menyimpannya dalam $Container tertentu.
-Perintah kedua mendapatkan item Cadangan yang friendlyName-nya cocok dengan nilai yang lewat di FriendlyName Parameter, lalu menyimpannya di $BackupItem tersebut.
-Menggunakan parameter FriendlyName dapat menghasilkan pengembalian lebih dari satu File Azure Bersama. Dalam kasus tersebut, jalankan cmdlet dengan memberikan nilai untuk -Name parameter sebagai properti Name yang dikembalikan dalam kumpulan hasil dari $BackupItem.
+Perintah kedua mendapatkan item Cadangan dengan friendlyName sesuai dengan nilai yang diberikan dalam Parameter FriendlyName, lalu menyimpannya di $BackupItem ini.
+Menggunakan parameter FriendlyName dapat menghasilkan pengembalian lebih dari satu File Azure Bersama. Dalam kasus tersebut, jalankan cmdlet dengan memberikan nilai untuk parameter -Name sebagai properti Name yang dikembalikan dalam kumpulan hasil dari $BackupItem.
 
 ## PARAMETERS
 

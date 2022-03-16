@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncidentComment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncidentComment.md
-ms.openlocfilehash: 5933a1b1cfb025fd4187969b02c05cd685b57dc4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 95468430c285d918dbc91012b76d967e89e2d5f1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292876"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227231"
 ---
 # New-AzSentinelIncidentComment
 
 ## SYNOPSIS
 Menambahkan Komentar ke Insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincidentcomment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzSentinelIncidentComment -ResourceGroupName <String> -WorkspaceName <String
 
 ## DESCRIPTION
 Cmdlet **New-AzSentinelIncidentComment** membuat Komentar Insiden.
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ PS C:\> $Incident = Get-AzSentinelIncident -ResourceGroupName "MyResourceGroup" 
 PS C:\> $IncidentComment = New-AzSentinelIncidentComment -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -IncidentId ($Incident.Name) -Message "Still needs investigation"
 ```
 
-Contoh ini membuat IncidentComment dalam ruang kerja tertentu, lalu menyimpannya dalam $IncidentComment baru.
+Contoh ini membuat IncidentComment dalam ruang kerja yang ditentukan, lalu menyimpannya dalam $IncidentComment kolom.
 
 ## PARAMETERS
 

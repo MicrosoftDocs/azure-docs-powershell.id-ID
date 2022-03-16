@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
-ms.openlocfilehash: 7dfe33b4cc9c09b3003182cd461897177c4964be
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 33d659df0e0aa23e1734bad191d3c18b79573b45
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167778"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227060"
 ---
 # New-AzServiceBusSubscription
 
 ## SYNOPSIS
 Membuat langganan ke topik Bus Layanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebussubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Status                                    : Active
 UpdatedAt                                 : 1/20/2017 3:18:54 AM
 ```
 
-Membuat langganan untuk `SB-TopicSubscription-Example1` topik Bus Layanan tertentu`SB-Topic_exampl1`.
+Membuat langganan untuk `SB-TopicSubscription-Example1` topik Bus Layanan tertentu `SB-Topic_exampl1`.
 
 ## PARAMETERS
 

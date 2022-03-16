@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentWhatIfResult.md
-ms.openlocfilehash: 9db4c5cbc9740472b0698803597bf7552539f27e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ce0f603e5dacddb4ca4ea12c52356ebccb59a4bb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268683"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228419"
 ---
 # Get-AzManagementGroupDeploymentWhatIfResult
 
 ## SYNOPSIS
-Mendapatkan templat What-If hasil untuk penyebaran di lingkup grup manajemen. 
+Mendapatkan templat What-If tertentu untuk penyebaran di lingkup grup manajemen. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeploymentwhatifresult) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,11 +147,11 @@ Get-AzManagementGroupDeploymentWhatIfResult [-Name <String>] -ManagementGroupId 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzManagementGroupDeploymentWhatIfResult** cmdlet gets the ARM template What-If result for a template deployment at the specified management group scope. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
+Cmdlet **Get-AzManagementGroupDeploymentWhatIfResult** cmdlet mendapatkan hasil What-If templat ARM untuk penggunaan templat di lingkup grup manajemen yang ditentukan. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 
-### Contoh 1: Get a What-If result at management group scope
+### Contoh 1: Mendapatkan What-If di lingkup grup manajemen
 ```powershell
 PS C:\> Get-AzManagementGroupDeploymentWhatIfResult `
     -DeploymentName "deploy-01" `
@@ -159,7 +162,7 @@ PS C:\> Get-AzManagementGroupDeploymentWhatIfResult `
     -ResultFormat "FullResourcePayloads"
 ```
 
-Perintah ini mendapatkan What-If grup manajemen dengan menggunakan file templat kustom dan file parameter di disk.
+Perintah ini mendapatkan What-If di lingkup grup manajemen dengan menggunakan file templat kustom dan file parameter di disk.
 Perintah menggunakan parameter *Lokasi* untuk menentukan tempat menyimpan data penyebaran.
 Perintah menggunakan parameter *ManagementGroupId* untuk menentukan grup manajemen tempat templat akan disebarkan.
 Perintah tersebut menggunakan parameter *TemplateFile* untuk menentukan file templat.
@@ -177,7 +180,7 @@ PS C:\> Get-AzManagementGroupDeploymentWhatIfResult `
     -ResultFormat "ResourceIdOnly"
 ```
 
-Perintah ini mendapatkan What-If grup manajemen dengan menggunakan file templat kustom dan file parameter di disk.
+Perintah ini mendapatkan What-If di lingkup grup manajemen dengan menggunakan file templat kustom dan file parameter di disk.
 Perintah menggunakan parameter *Lokasi* untuk menentukan tempat menyimpan data penyebaran.
 Perintah menggunakan parameter *ManagementGroupId* untuk menentukan grup manajemen tempat templat akan disebarkan.
 Perintah tersebut menggunakan parameter *TemplateFile* untuk menentukan file templat.

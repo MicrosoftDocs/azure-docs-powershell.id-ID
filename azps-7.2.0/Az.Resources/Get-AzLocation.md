@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzLocation.md
-ms.openlocfilehash: 0e71bc182c9926637ede8a4470ca94714ad395b9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d426037b5af2153e802206dd81be4e2b5722baaf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228481"
 ---
 # Get-AzLocation
 
 ## SYNOPSIS
 Mendapatkan semua lokasi dan penyedia sumber daya yang didukung untuk setiap lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azlocation) untuk informasi terkini.
 
 ## SYNTAX
 

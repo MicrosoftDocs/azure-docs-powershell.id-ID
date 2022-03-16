@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupStatus.md
-ms.openlocfilehash: b3de131f21f72981fd6f8cccba1f6e0defdd56c8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4d3c8eb90b2ca4ea0af5821eb20dad50dc2c7763
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316587"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228671"
 ---
 # Get-AzRecoveryServicesBackupStatus
 
 ## SYNOPSIS
 Memeriksa apakah sumber daya ARM Anda dicadangkan atau tidak.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupstatus) untuk informasi terkini.
 
 ## SYNTAX
 

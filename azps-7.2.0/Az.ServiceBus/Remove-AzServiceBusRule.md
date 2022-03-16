@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusRule.md
-ms.openlocfilehash: 7742ca6992f4f209e8d81c6bdf5a31496e6761d8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e5e52ce4de407fbc8f244621efeb8f454b15719a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226979"
 ---
 # Remove-AzServiceBusRule
 
 ## SYNOPSIS
 Menghapus aturan tertentu dari langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebusrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Sumber Daya Aturan Baru
+id sumber daya Bus Layanan aturan
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderPreviewFeature.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzProviderPreviewFeature.md
-ms.openlocfilehash: 6a7a191635b05c8feb7f68bf1b69f15d4dd36b2c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f4ccab13a7930b86cc37fd25c3b1da12c80e3562
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228383"
 ---
 # Get-AzProviderPreviewFeature
 
 ## SYNOPSIS
 Dapatkan pendaftaran fitur di akun Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azproviderpreviewfeature) untuk informasi terkini.
 
 ## SYNTAX
 
