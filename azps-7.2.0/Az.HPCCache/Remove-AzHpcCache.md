@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Remove-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Remove-AzHpcCache.md
-ms.openlocfilehash: 5eca70aa3c730f336eca8e7f4deb89f3f2b48c9a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7c6e6a9933b6e24965db7333c3da68b5057fe929
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923235"
 ---
 # Remove-AzHpcCache
 
 ## SYNOPSIS
 Menghapus Cache HPC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/remove-azhpccache) untuk informasi terkini.
 
 ## SYNTAX
 

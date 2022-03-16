@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeShare.md
-ms.openlocfilehash: cb4650aeedc144f4be33597db2b44e33dd7a9f70b40da565783d236ed72f84a3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 19dd22f15400e99f95947d97fe8c46077911de61
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414320"
 ---
 # New-AzDataBoxEdgeShare
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAccessRight
-sediakan akses langsung beserta nama pengguna yang sudah ada untuk mengakses tipe Berbagi SMB, Misalnya: @(@{"Namapengguna"="nama-pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Custom"})
+sediakan akses langsung beserta nama pengguna yang sudah ada untuk mengakses tipe Berbagi SMB, Untuk misalnya: @(@{"Namapengguna"="nama-pengguna-1";" AccessRight"="Read"}, @{"Username"="user-name-2";" AccessRight"="Read"}, @{"Username"="user-name-3";" AccessRight"="Custom"})
 
 ```yaml
 Type: System.Collections.Hashtable[]

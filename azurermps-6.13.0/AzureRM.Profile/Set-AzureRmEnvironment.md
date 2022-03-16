@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.profi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Set-AzureRmEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Set-AzureRmEnvironment.md
-ms.openlocfilehash: 5d38596b6e44b56750425a1f21661c71e4f9e1b892a6007d1379c40e90b5b4a9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 073126f3f750f2decf7189c53733c5fcaaabee31
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414431"
 ---
 # Set-AzureRmEnvironment
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureOperationalInsightsEndpoint
-Menentukan titik akhir untuk akses kueri Insights operasional. 
+Menentukan titik akhir untuk akses Insights operasi. 
 
 ```yaml
 Type: System.String
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataLakeAudience
-Audiens untuk token yang mengotentikan dengan Titik Akhir layanan AD Data Lake.
+Audiens untuk token yang mengotentikan dengan Titik Akhir layanan Ad Data Lake.
 
 ```yaml
 Type: System.String
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAudience
-Audiens untuk token yang mengotentikasi dengan TITIK akhir AD Graph.
+Audiens untuk token yang mengotentikasi dengan AD Graph Titik Akhir.
 
 ```yaml
 Type: System.String
@@ -460,7 +460,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlDatabaseDnsFix
-Menentukan akhiran nama domain untuk Azure SQL Database lain.
+Menentukan akhiran nama domain untuk Azure SQL Database baru.
 
 ```yaml
 Type: System.String
@@ -535,7 +535,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

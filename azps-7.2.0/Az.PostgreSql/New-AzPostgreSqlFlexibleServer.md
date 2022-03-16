@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 7a366efeb546909fdbc496c3dae130851c99e961
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e287ad15639d7543ec83203520cfc10485643c9f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229157"
 ---
 # New-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
 Membuat server baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlflexibleserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Cmdlet ini membuat server fleksibel PostgreSql dengan nilai parameter default da
 Nilai default lokasi adalah US Timur 2, Sku adalah Standard_D2s_v3, Sku tier adalah GeneralPurpose, dan ukuran penyimpanan adalah 128GiB.
 
 
-Jika Anda ingin menemukan kata sandi yang dibuat secara otomatis untuk server, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
+Jika Anda ingin menemukan kata sandi yang dibuat secara otomatis untuk server Anda, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
 (Misalnya $server. SecuredPassword | ConvertFrom-SecureString -AsPlainText)
 
 ### Contoh 3: Membuat server fleksibel PostgreSql baru dengan Subnet yang sudah ada

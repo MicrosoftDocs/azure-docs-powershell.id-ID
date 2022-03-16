@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzImageOsDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzImageOsDisk.md
-ms.openlocfilehash: 8349e2414529a1e25c2f6909813f96e5bf03e70f214e7c6b7ce4111f66b992e0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5bc92ea5aa49cb97be457fd937c7b9deb492bb0e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414104"
 ---
 # Set-AzImageOsDisk
@@ -48,8 +48,8 @@ Perintah pertama akan membuat objek gambar, lalu menyimpannya dalam $imageConfig
 Tiga perintah berikutnya menetapkan jalur dari disk os dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, $dataDiskVhdUri 2.
 Pendekatan ini hanya untuk keterbacaan perintah berikut.
 
-Tiga perintah berikutnya masing-masing menambahkan satu disk os dan dua disk data ke gambar yang disimpan $imageConfig.
-URI setiap disk disimpan di $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
+Tiga perintah berikutnya masing-masing menambahkan satu disk os dan dua disk data ke gambar yang disimpan di $imageConfig.
+URI setiap disk disimpan di sumber $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
 
 Perintah terakhir membuat gambar bernama 'ImageName01' dalam grup sumber daya 'ResourceGroup01'.
 
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe Akun Storage dari Disk Gambar OS
+Tipe akun Storage dari Disk Gambar OS
 
 ```yaml
 Type: StorageAccountTypes
@@ -240,14 +240,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Management.Compute.Models.Image
-System.Nullable `1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
-System.Nullable` 1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemStateTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]] System.String System.Nullable `1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
-System.Nullable` 1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable1`1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+System.Nullable`[[Microsoft.Azure.Management.Compute.Models.OperatingSystemStateTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]] System.String System.Nullable1`1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

@@ -6,11 +6,11 @@ Help Version: 4.1.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/AzureRM.RecoveryServices.Backup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/AzureRM.RecoveryServices.Backup.md
-ms.openlocfilehash: 3572271b09a04259e485da871fb567686f4a4cbce680cb8477c4f47d7c21c0ad
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 379f69c102aefb7cd77820fc80b2391e772c51e5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414430"
 ---
 # AzureRM.RecoveryServices.Backup Module

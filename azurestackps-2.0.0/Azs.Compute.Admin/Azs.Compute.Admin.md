@@ -4,11 +4,11 @@ Module Guid: ef24d091-a5a0-428f-b80c-25140b0f1045
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.compute.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 3f5b1863f6e63ccc7acb24f73756c0cf2c2f1b196ca024950e7f26d6298024e1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a16b2189fc8204d3be298857516db6978ebd5a66
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414208"
 ---
 # Azs.Compute.Admin Module

@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.billing/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Billing/Billing/help/Get-UsageAggregates.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Billing/Billing/help/Get-UsageAggregates.md
-ms.openlocfilehash: f2aab2a7202a360251ab251226e1886e9e7ce844ce69e9cb2689a416678a5d6e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 510d0ee001e4c291dad3cc024f593d1f29c7ddca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413860"
 ---
 # Get-UsageAggregates
@@ -32,7 +32,7 @@ Cmdlet **Get-UsageAggregates** mendapatkan agregat data penggunaan langganan Azu
 - Presisi agregasi, baik harian atau per jam.
 - Detail tingkat contoh untuk beberapa contoh dari sumber daya yang sama.
 Untuk hasil yang konsisten, data yang dikembalikan didasarkan pada waktu detail penggunaan dilaporkan oleh sumber daya Azure.
-Untuk informasi selengkapnya, lihat Referensi API REST Tagihan Azure https://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c ( di pustaka Jaringan Pengembang https://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c) Microsoft.
+Untuk informasi selengkapnya, lihat Referensi API REST Tagihanhttps://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c Azure (https://msdn.microsoft.com/library/azure/1ea5b323-54bb-423d-916f-190de96c6a3c) di pustaka Jaringan Pengembang Microsoft.
 
 ## EXAMPLES
 
@@ -131,7 +131,7 @@ Menunjukkan apakah cmdlet ini mengembalikan detail tingkat instans dengan data p
 Nilai defaultnya adalah $True.
 Jika $False, layanan menggabungkan hasil di sisi server, dan oleh karena itu mengembalikan lebih sedikit grup agregat.
 Misalnya, jika Anda menjalankan tiga situs web, secara default Anda akan mendapatkan tiga item baris untuk penggunaan situs web.
-Namun, ketika nilai diciut $False kan, semua data untuk **langgananId**, **meterId**, **usageStartTime**, dan **usageEndTime** diciutkan menjadi satu baris item.
+Namun, ketika nilai diciutkan ke dalam $False, semua data untuk **subscriptionId**, **meterId**, **usageStartTime**, dan **usageEndTime** diciutkan menjadi satu baris item.
 
 ```yaml
 Type: System.Boolean
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Add-AzEventHubIPRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Add-AzEventHubIPRule.md
-ms.openlocfilehash: d8e03f4cdb5df58961d7f6fce30ef0c96e45a1f573b8388d2f55fc21c1af4721
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 60074271c37097e266e0c8e2ca1e4ee2a35e577d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414032"
 ---
 # Add-AzEventHubIPRule
@@ -41,7 +41,7 @@ Menambahkan satu aturan IP ke NetworkRuleSet dari Ruang Nama yang diberikan
 ```powershell
 PS C:\> Add-AzEventHubIPRule -ResourceGroupName v-ajnavtest -Namespace Eventhub-Namespace1-2389 -IpMask "11.22.33.44" -Action Allow
 ```
-Nama: default DefaultAction : Perbolehkan Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.Eventhub/namespaces/Eventhub-Namespace-2389/networkRuleSets/default Type : Microsoft.Eventhub/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Allow} VirtualNetworkRules : 
+Nama : default DefaultAction : Perbolehkan Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.Eventhub/namespaces/Eventhub-Namespace-2389/networkRuleSets/default Type : Microsoft.Eventhub/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Allow} VirtualNetworkRules : 
 
 tambahkan IPRule dengan IpMask "11.22.33.44" dan Perbolehkan Tindakan untuk ruang nama tertentu.
 
@@ -49,7 +49,7 @@ tambahkan IPRule dengan IpMask "11.22.33.44" dan Perbolehkan Tindakan untuk ruan
 ```powershell
 PS C:\> Add-AzEventHubIPRule -ResourceGroupName v-ajnavtest -Namespace Eventhub-Namespace1-2389 -IpRuleObject $ipruleobject
 ```
-Nama: default DefaultAction : Perbolehkan Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.Eventhub/namespaces/Eventhub-Namespace-2389/networkRuleSets/default Type : Microsoft.Eventhub/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Allow} VirtualNetworkRules : 
+Nama : default DefaultAction : Perbolehkan Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.Eventhub/namespaces/Eventhub-Namespace-2389/networkRuleSets/default Type : Microsoft.Eventhub/Namespaces/NetworkRuleSet IpRules : {11.22.33.44, Allow} VirtualNetworkRules : 
 
 tambahkan IPRule dengan IpMask "11.22.33.44" dan Perbolehkan Tindakan untuk ruang nama tertentu.
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

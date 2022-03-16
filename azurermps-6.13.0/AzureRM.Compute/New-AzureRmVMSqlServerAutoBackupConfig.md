@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVMSqlServerAutoBackupConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVMSqlServerAutoBackupConfig.md
-ms.openlocfilehash: 355ad36c019bb27f4c495377d4414a13d617ddee05c9bbaa7dd9c41b88658371
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3ae1c0207747f46ae90275286a11b940144fa13e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413773"
 ---
 # New-AzureRmVMSqlServerAutoBackupConfig
@@ -68,9 +68,9 @@ EnableEncryption      : False
 RetentionPeriodInDays : 10
 ```
 
-Perintah pertama akan membuat konteks penyimpanan, lalu menyimpannya dalam $StorageContext variabel.
+Perintah pertama akan membuat konteks penyimpanan, lalu menyimpannya dalam $StorageContext penyimpanan.
 Untuk informasi selengkapnya, lihat New-AzureStorageContext.
-Perintah kedua membuat objek konfigurasi pencadangan otomatis dengan menentukan konteks penyimpanan dalam $StorageContext.
+Perintah kedua membuat objek konfigurasi pencadangan otomatis dengan menentukan konteks penyimpanan di $StorageContext.
 Pencadangan otomatis diaktifkan dan pencadangan otomatis disimpan selama 10 hari.
 
 ### Contoh 3: Membuat konfigurasi pencadangan otomatis menggunakan konteks penyimpanan dengan enkripsi dan kata sandi
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 
 ### -StorageContext
 Menentukan akun penyimpanan yang akan digunakan untuk menyimpan cadangan.
-Untuk mendapatkan objek **AzureStorageContext,** gunakan cmdlet New-AzureStorageContext cmdlet.
+Untuk mendapatkan objek **AzureStorageContext** , gunakan cmdlet New-AzureStorageContext cmdlet.
 Defaultnya adalah akun penyimpanan yang terkait dengan SQL Server virtual.
 
 ```yaml
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

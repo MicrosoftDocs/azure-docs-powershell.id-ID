@@ -6,11 +6,11 @@ Help Version: 0.2.5.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/AzureRM.ContainerInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerInstance/Commands.ContainerInstance/help/AzureRM.ContainerInstance.md
-ms.openlocfilehash: 1869bb5a058e6bb93215e331f3938d1ea1b528d16f34249e6ca2efbe835e84e6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 92bec953c29a79524e523a9bee267cc4afb8e49b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413980"
 ---
 # AzureRM.ContainerInstance Module

@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/get-azscomputequota
 schema: 2.0.0
-ms.openlocfilehash: c270da45ad3bd53c75573edcf6742199b3cf4eb525b38744ea609dd53ae79008
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 81a7a64f1880e2ed9acb2fedd3f90df614f1619d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414369"
 ---
 # Get-AzsComputeQuota
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -177,7 +177,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
   - `[DiskId <String>]`: Disk guid sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.

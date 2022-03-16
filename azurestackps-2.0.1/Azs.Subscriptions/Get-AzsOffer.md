@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions
 online version: https://docs.microsoft.com/powershell/module/azs.subscriptions/get-azsoffer
 schema: 2.0.0
-ms.openlocfilehash: 33aeb82087a99f8d6acc4f8ee4e651f43cd03aadbc73390c4bd765299392a1a5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7b2fcb224486915e78bdd90a84941ac0207a45c3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414398"
 ---
 # Get-AzsOffer

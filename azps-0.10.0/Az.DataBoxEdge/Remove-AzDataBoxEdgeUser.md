@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeUser.md
-ms.openlocfilehash: a4042b48cafd7e805d60ff24f20405e9c9e49de485db93e0e6ed2a9f4c9c530d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1d6c99a44e2163f2d441dcacc87cf202f334f330
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414040"
 ---
 # Remove-AzDataBoxEdgeUser

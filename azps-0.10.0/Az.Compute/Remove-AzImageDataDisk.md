@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzImageDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Remove-AzImageDataDisk.md
-ms.openlocfilehash: 3d27a0864eca4bf205e26061f60d3eca4f7ba7046a3c3a1b6e009c8201fdf3a2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3c7399e3eec760e8d4a40d58a8ea9a56e744cfd4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414135"
 ---
 # Remove-AzImageDataDisk
@@ -34,7 +34,7 @@ Cmdlet **Remove-AzImageDataDisk** menghapus disk data dari objek gambar.
 PS C:\> Get-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01' | Remove-AzImageDataDisk -Lun 1 | Update-AzImage;
 ```
 
-Perintah ini menghapus disk data unit logika nomor 1 dari gambar 'Gambar01' yang sudah ada dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini menghapus disk data unit logika nomor 1 dari gambar 'Image01' yang sudah ada dalam grup sumber daya 'ResourceGroup01'.
 
 ## PARAMETERS
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

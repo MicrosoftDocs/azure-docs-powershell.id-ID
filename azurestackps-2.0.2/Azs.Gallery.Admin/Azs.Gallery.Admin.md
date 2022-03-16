@@ -4,11 +4,11 @@ Module Guid: 33e0c641-80fc-493b-b065-25280c018e90
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.gallery.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 1f7cb22eb7e2c9802bb01f53d2c8d1dabac6eafe1bacea488b94c2914729ddad
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 128b4d22cab16c867bfba04ae0c82cbabab30dc8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414204"
 ---
 # Azs.Gallery.Admin Module

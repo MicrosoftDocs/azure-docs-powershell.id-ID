@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsPurgeWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsPurgeWorkspace.md
-ms.openlocfilehash: 19bc32b0627ecec3e26ef7fc91b60d6887cc67be
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f4563c432630164e50df1325dd5ed8e9aefacc2b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162255"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229527"
 ---
 # New-AzOperationalInsightsPurgeWorkspace
 
 ## SYNOPSIS
 Membersihkan data di ruang kerja Analitik Log dengan serangkaian filter yang ditentukan pengguna
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightspurgeworkspace) untuk informasi terkini.
 
 ## SYNTAX
 

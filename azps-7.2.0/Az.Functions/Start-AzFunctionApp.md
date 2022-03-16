@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/start-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Start-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Start-AzFunctionApp.md
-ms.openlocfilehash: ae0368d83e601fdeef03ffe8b3d0725a2290c4d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1f72479874ac6d4bd92ede52ce0ae4e59f625e03
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271435"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923595"
 ---
 # Start-AzFunctionApp
 
 ## SYNOPSIS
 Memulai aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/start-azfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -211,7 +214,7 @@ INPUTOBJECT <ISite>:
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
   - `[CloningInfoSourceWebAppId <String>]`: ARM resource ID dari aplikasi sumber. ID sumber daya aplikasi merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slot/{slotName} untuk slot lainnya.
   - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber, mis: As Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil yang digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil untuk digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
   - `[CloningInfoTrafficManagerProfileName <String>]`: Nama Traffic Manager profil untuk dibuat. Hal ini hanya diperlukan Traffic Manager profil pengguna belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
     - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum melakukan tindakan

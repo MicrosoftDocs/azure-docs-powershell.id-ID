@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Get-AzFunctionApp.md
-ms.openlocfilehash: d01fb92c074ab544bbaeef63fbbf3939654f301a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 681c6628585f80809e357393d1ba65536709e73f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275148"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923631"
 ---
 # Get-AzFunctionApp
 
 ## SYNOPSIS
 Mendapatkan aplikasi fungsi dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/get-azfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 

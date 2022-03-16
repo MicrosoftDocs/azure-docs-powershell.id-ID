@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/set-azsplan
 schema: 2.0.0
-ms.openlocfilehash: b32a5c91acaea5aa49051b8ed23d59961a7ead50fd03810920549bf7b657d0fc
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2e78b28705b625836d9020c5ddf1652f4bdc7a7d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414403"
 ---
 # Set-AzsPlan
@@ -321,7 +321,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-PLANDEFINITION <IPlan> : Paket mewakili paket kuota dan kapabilitas yang ditawarkan penyewa. Penyewa bisa memperoleh paket ini melalui penawaran untuk memutakhirkan aksesnya ke layanan awan yang mendasarinya.
+PLANDEFINITION <IPlan>: Paket mewakili paket kuota dan kapabilitas yang ditawarkan penyewa. Penyewa bisa memperoleh paket ini melalui penawaran untuk memutakhirkan aksesnya ke layanan awan yang mendasarinya.
   - `[Location <String>]`: Lokasi sumber daya
   - `[Description <String>]`: Deskripsi rencana.
   - `[DisplayName <String>]`: Nama tampilan.

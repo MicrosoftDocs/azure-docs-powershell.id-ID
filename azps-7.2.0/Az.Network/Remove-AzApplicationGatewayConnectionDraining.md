@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: fd13920703ff19808cfc1f26208ca6f8d162860a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2b9237fbc6173434743d141150aac867dddd826f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281996"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230327"
 ---
 # Remove-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
 Menghapus konfigurasi koneksi dari objek pengaturan HTTP ujung belakang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayconnectiondraining) untuk informasi terkini.
 
 ## SYNTAX
 

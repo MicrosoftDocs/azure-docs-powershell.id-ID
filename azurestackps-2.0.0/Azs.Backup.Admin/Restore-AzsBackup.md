@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Backup.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.backup.admin/restore-azsbackup
 schema: 2.0.0
-ms.openlocfilehash: 90ee1bb41cab47dbedd4cbd10b96f5d7303ca293bf7da6368d1f2659bd6a0b4b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d441c74817ccaf1b32b7caf6fe811f6a5a4789da
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414224"
 ---
 # Restore-AzsBackup
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -RestoreOption
 Properti untuk opsi pemulihan.
-Untuk membuat, lihat bagian CATATAN untuk properti RESTOREOPTION dan membuat tabel hash.
+Untuk membuat, lihat bagian CATATAN untuk properti RESTOREOPTION dan buat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IRestoreOptions
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -337,14 +337,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IBackupAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IBackupAdminIdentity>: Parameter Identitas
   - `[Backup <String>]`: Nama cadangan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi cadangan.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-RESTOREOPTION <IRestoreOptions> : Properti untuk opsi pemulihan.
+RESTOREOPTION <IRestoreOptions>: Properti untuk opsi pemulihan.
   - `[DecryptionCertBase64 <String>]`: Data mentah file sertifikat dalam string Base64. Ini harus merupakan file .pfx dengan kunci privat.
   - `[DecryptionCertPassword <String>]`: Kata sandi untuk sertifikat dekripsi.
   - `[RoleName <String>]`: Nama peran Azure Stack untuk dipulihkan, atur agar kosong untuk semua peran infrastruktur

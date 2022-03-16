@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 48d120fbb9374d0f015ff7a0df9f644ba994634f88a4b3d4bc3ce110e75ab7d8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c55fb1af95b1c0f85e2b36732f6235ad0c6c78d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413838"
 ---
 # Get-AzVpnClientRootCertificate
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRootCertificateName
-Menentukan nama sertifikat akar klien yang akan didaurkan cmdlet ini.
+Menentukan nama sertifikat akar klien yang didaurkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -115,14 +115,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ###  
-**Get-AzVpnClientRootCertificate** mendapatkan contoh objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate.**
+**Get-AzVpnClientRootCertificate** mendapatkan contoh objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate** .
 
 ## CATATAN
 

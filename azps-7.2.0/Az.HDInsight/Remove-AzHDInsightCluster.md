@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Remove-AzHDInsightCluster.md
-ms.openlocfilehash: 08a6bd2406d411e1800a40e35da1ec8b2b852b1f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3083b6bbd510b387e9a8e405243e4387a8d2ec3b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297739"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923397"
 ---
 # Remove-AzHDInsightCluster
 
 ## SYNOPSIS
 Menghapus kluster HDInsight tertentu dari langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/remove-azhdinsightcluster) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Remove-AzHDInsightCluster [-ClusterName] <String> [-ResourceGroupName <String>] 
 ## DESCRIPTION
 Cmdlet **Remove-AzHDInsightCluster** menghapus kluster layanan HDInsight tertentu dari langganan.
 Operasi ini juga menghapus semua data yang disimpan di Hadoop Distributed File System (HDFS) di kluster.
-Data yang disimpan di Azure Storage terkait tidak dihapus.
+Data yang disimpan di akun Azure Storage terkait tidak dihapus.
 Data yang disimpan di metastore eksternal tidak dihapus.
 
 ## EXAMPLES

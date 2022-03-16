@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Update-AzContainerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Update-AzContainerService.md
-ms.openlocfilehash: 00873a3f6d82cc1fc2ec56dcc9ecbe61c31ea87ccf2691f2c0d07aa0a20533e2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1a15486b3e24dec3af66cb98391bd8322c28d2e6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414344"
 ---
 # Update-AzContainerService
@@ -36,7 +36,7 @@ Cmdlet **Update-AzContainerService** memperbarui status layanan kontainer agar s
 PS C:\> Get-AzContainerService -ResourceGroupName "ResourceGroup17" -Name "CSResourceGroup17" | Remove-AzContainerServiceAgentPoolProfile -Name "AgentPool01" | Add-AzContainerServiceAgentPoolProfile -Name "AgentPool01" -VmSize "Standard_A1" -DnsPrefix "APResourceGroup17" -Count 2 | Update-AzContainerService -ResourceGroupName "ResourceGroup17" -Name "CSResourceGroup17"
 ```
 
-Perintah ini mendapatkan layanan wadah bernama CSResourceGroup17 dengan menggunakan cmdlet Get-AzContainerService cmdlet.
+Perintah ini mendapatkan layanan kontainer bernama CSResourceGroup17 menggunakan cmdlet Get-AzContainerService cmdlet.
 Perintah melewati objek itu ke Remove-AzContainerServiceAgentPoolProfile cmdlet dengan menggunakan operator pipeline.
 
 **Remove-AzContainerServiceAgentPoolProfile** menghapus profil yang bernama AgentPool01.
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

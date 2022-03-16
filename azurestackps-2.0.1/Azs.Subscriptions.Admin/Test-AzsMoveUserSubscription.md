@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/test-azsmoveusersubscription
 schema: 2.0.0
-ms.openlocfilehash: c8b14e14e729259c35ddadf8a7c37404f7f1fdf18b56644e89703022602e145e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c0e80b7d0f17bf505c0b3bb8d22539afffea851a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414402"
 ---
 # Test-AzsMoveUserSubscription
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
+INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -286,7 +286,7 @@ INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 
-MOVESUBSCRIPTIONSDEFINITION <IMoveSubscriptionsDefinition> : Pemindahan definisi tindakan langganan
+MOVESUBSCRIPTIONSDEFINITION <IMoveSubscriptionsDefinition>: Pemindahan definisi tindakan langganan
   - `Resources <String[]>`: Kumpulan langganan untuk dipindahkan ke penawaran penyedia yang didelegasikan target.
   - `[TargetDelegatedProviderOffer <String>]`: Penyedia pengidentifikasi penawaran yang didelegasikan (dari konteks Admin) tempat langganan akan dipindahkan.
 

@@ -6,11 +6,11 @@ Help Version: 0.5.3.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/AzureRM.DataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/AzureRM.DataFactoryV2.md
-ms.openlocfilehash: ca87cfa1e4e45260e4c17993d125bd49b4fd8568f8cf5d9d78930419c41b8b84
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c49383e0ed139384902a6d57c75222842ad01451
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413772"
 ---
 # AzureRM.DataFactoryV2 Module

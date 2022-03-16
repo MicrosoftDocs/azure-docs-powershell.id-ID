@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: 65f141f62da5f7fc58856fb2e6b466b71c3e7b6131c7268475b35e321f8136d7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: dff83dbb7183c4f9eaf46e883a92a8e615f9cacc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414306"
 ---
 # Remove-AzDataBoxEdgeStorageAccountCredential

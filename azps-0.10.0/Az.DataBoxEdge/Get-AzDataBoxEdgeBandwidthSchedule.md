@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeBandwidthSchedule.md
-ms.openlocfilehash: bd38e2ee2ca1e5cf1a23cbd8d354842aff8883ba44be47517bfb3ca300082d2f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0a94460105f680efffff36af54bec9936dd0813c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414339"
 ---
 # Get-AzDataBoxEdgeBandwidthSchedule

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeviceMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubDeviceMethod.md
-ms.openlocfilehash: 5ab1240f3582c6c45cb5fdbee2bd1a7e2523f4b2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 74793db447c90fca9b56f92f1d6a9e5435102774
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139922785"
 ---
 # Invoke-AzIotHubDeviceMethod
 
 ## SYNOPSIS
 Menggunakan metode langsung pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/invoke-aziothubdevicemethod) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzSnapshotUpdateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/New-AzSnapshotUpdateConfig.md
-ms.openlocfilehash: 2203a4776c9bf9c1a4c27c4b5c9301ce2dc155049dfd49f5d1b998a635752a5e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c2c17fe3329170d65d61e5439e614717a8119f26
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414145"
 ---
 # New-AzSnapshotUpdateConfig
@@ -43,7 +43,7 @@ PS C:\> $snapshotupdateconfig = Set-AzSnapshotUpdateKeyEncryptionKey -SnapshotUp
 PS C:\> Update-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -SnapshotUpdate $snapshotupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan snapshot kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan. Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan snapshot. Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek pembaruan snapshot kosong lokal dengan ukuran 10GB di Premium_LRS akun penyimpanan. Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan snapshot. Perintah terakhir mengambil objek pembaruan snapshot dan memperbarui snapshot yang sudah ada dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

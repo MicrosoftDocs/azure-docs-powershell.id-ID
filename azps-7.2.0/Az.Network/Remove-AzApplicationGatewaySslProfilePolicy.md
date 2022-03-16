@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslProfilePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslProfilePolicy.md
-ms.openlocfilehash: efae4229eb6fc7c49a5bd0dde392a70792360b99
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bc509f9b85838d6cb25b45edf967f0ed7a7ed613
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313579"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230129"
 ---
 # Remove-AzApplicationGatewaySslProfilePolicy
 
 ## SYNOPSIS
 Menghapus kebijakan SSL dari profil SSL gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaysslprofilepolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ PS C:\> $profile  = Get-AzApplicationGatewaySslProfile -Name "Profile01" -Applic
 PS C:\> $profile = Remove-AzApplicationGatewaySslProfilePolicy -SslProfile $profile
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan profil SSL bernama Profile01 untuk $AppGw dan menyimpannya dalam $profile tertentu. Perintah terakhir menghapus kebijakan ssl dari profil ssl yang disimpan di $profile.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan profil SSL bernama Profile01 untuk $AppGw dan menyimpannya di variabel $profile baru. Perintah terakhir menghapus kebijakan ssl dari profil ssl yang disimpan di $profile.
 
 ## PARAMETERS
 

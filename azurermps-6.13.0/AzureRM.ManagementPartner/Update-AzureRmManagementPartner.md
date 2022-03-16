@@ -5,17 +5,17 @@ online version: https://go.microsoft.com/fwlink/?LinkID=393054
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/Update-AzureRmManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/Update-AzureRmManagementPartner.md
-ms.openlocfilehash: c38326a7b80ba312b3bc0db9824da286cdeefef57b84526453a03577ee8ea21d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 420353d7a8af1046456138918092ca56d5c6ed96
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413945"
 ---
 # Update-AzureRmManagementPartner
 
 ## SYNOPSIS
-Memperbarui ID Jaringan Mitra Microsoft (MPN) prinsipal layanan atau pengguna yang diautentikasi saat ini.
+Memperbarui ID Jaringan Mitra Microsoft (MPN) dari prinsipal layanan atau pengguna yang diautentikasi saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Update-AzureRmManagementPartner [-PartnerId] <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Memperbarui ID Jaringan Mitra Microsoft (MPN) prinsipal layanan atau pengguna yang diautentikasi saat ini.
+Memperbarui ID Jaringan Mitra Microsoft (MPN) dari prinsipal layanan atau pengguna yang diautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: bf7e2d0e0a9aa183740a1c7d8c751d04696969426f8bc35e058fde04da6c5b38
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4d69d14d1129deb1bff580a0e0edfdb922b1544d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414042"
 ---
 # Remove-AzDataBoxEdgeStorageAccount
@@ -38,7 +38,7 @@ Remove-AzDataBoxEdgeStorageAccount [-InputObject] <PSDataBoxEdgeStorageAccount> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataBoxEdgeStorageAccount** menghapus akun Storage Edge terkait untuk perangkat Data Box Edge. Anda dapat menentukan nama Akun microsoft Edge Storage yang akan dihapus sebagai parameter dalam cmdlet.
+Cmdlet **Remove-AzDataBoxEdgeStorageAccount** menghapus akun Storage Edge terkait untuk perangkat Kotak Data Edge. Anda dapat menentukan nama Akun Storage Edge untuk dihapus sebagai parameter dalam cmdlet.
 
 ## EXAMPLES
 

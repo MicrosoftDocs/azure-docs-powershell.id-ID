@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesVMReimage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesVMReimage.md
-ms.openlocfilehash: 5fbf6321c9e12c66a5b49fd04c8bfd2a9c495c05
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f82d2e890c2db17b46dead36453065929abe5cb1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300235"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139922497"
 ---
 # Update-AzLabServicesVMReimage
 
 ## SYNOPSIS
 Re-image a lab virtual machine.
 Mesin virtual akan dihapus dan dibuat ulang menggunakan snapshot terbaru yang diterbitkan tentang lingkungan referensi lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/update-azlabservicesvmreimage) untuk informasi terkini.
 
 ## SYNTAX
 

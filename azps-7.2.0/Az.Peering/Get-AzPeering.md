@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeering.md
-ms.openlocfilehash: a97bbfc60f0e1b15ce4853e1d77b4ab6c4b3de2c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4f2d7007923a69b751e33c9349d6a3feea3a7fd9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295228"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229409"
 ---
 # Get-AzPeering
 
 ## SYNOPSIS
 Mendapatkan Sumber Daya Peering untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeering) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Type              : Microsoft.Peering/peerings
 Tags              : {}
 ```
 
-Mendapatkan nama Exchange peering`myExchangePeering1`
+Mendapatkan Exchange peering bernama`myExchangePeering1`
 
 ### Contoh 2
 ```powershell
@@ -108,7 +111,7 @@ Type              : Microsoft.Peering/peerings
 Tags              : {}
 ```
 
-Dapatkan peering Exchange peering `myExchangePeering1` yang dinamai berdasarkan id sumber daya.
+Dapatkan peering Exchange peering `myExchangePeering1` berdasarkan id sumber daya.
 
 ## PARAMETERS
 

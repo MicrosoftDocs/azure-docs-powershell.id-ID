@@ -6,11 +6,11 @@ Help Version: 4.6.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Az.Accounts.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Az.Accounts.md
-ms.openlocfilehash: bef6b0e2fbb54c8f3d54ea688c8ac146feb8f800c5857cee79f1cb321e829f94
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c0f8ea29a795b7b88a6e79134d52c3dd00ad5f42
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414196"
 ---
 # Az.Accounts Module
@@ -28,7 +28,7 @@ Hapus semua kredensial, akun, dan informasi langganan Azure.
 Menghapus pengaturan default yang ditetapkan oleh pengguna dalam konteks saat ini.
 
 ### [Koneksi-AzAccount](Connect-AzAccount.md)
-Koneksi azure dengan akun terautentikasi untuk digunakan dengan permintaan cmdlet Azure Resource Manager.
+Koneksi ke Azure dengan akun terautentikasi untuk digunakan dengan permintaan cmdlet Azure Resource Manager.
 
 ### [Disable-AzContextAutosave](Disable-AzContextAutosave.md)
 Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan lupa saat berikutnya Anda membuka jendela PowerShell
@@ -96,7 +96,7 @@ Tampilkan informasi mendetail tentang kesalahan PowerShell, dengan detail yang d
 Menyimpan informasi autentikasi saat ini untuk digunakan di sesi PowerShell lainnya.
 
 ### [Select-AzContext](Select-AzContext.md)
-Pilih langganan dan akun untuk ditargetkan Azure PowerShell cmdlet
+Pilih langganan dan akun untuk ditargetkan Azure PowerShell cmdlets
 
 ### [Select-AzProfile](Select-AzProfile.md)
 Untuk modul yang mendukung beberapa profil layanan, muat cmdlet yang sesuai dengan profil layanan tertentu.

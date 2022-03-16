@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.keyvault/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: a6ee2d42fc04c7da666c8f0a4959dc4a18268a81c2074abe481772e5615c8e70
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6a115d8cdf9e8cc90a14d9ee79b4c42aa1145469
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413621"
 ---
 # Get-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Mendapatkan Key Vault yang dikelola Storage SAS Definitions.
+Mendapatkan Key Vault yang Storage Sas Definitions.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-AzKeyVaultManagedStorageSasDefinition [-VaultName] <String> [-AccountName] <
 ```
 
 ## DESCRIPTION
-Mendapatkan Kunci Vault yang Storage di Definisi SAS jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, semua definisi SAS yang terkait dengan Key Vault tertentu dikelola Storage Akun di vault akan dicantumkan.
+Mendapatkan Kunci Vault yang Storage sas Definition jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault tertentu dikelola Storage Akun di vault dicantumkan.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Mendapatkan Kunci Vault yang Storage di Definisi SAS jika nama definisi ditentuk
 PS C:\> Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount'
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Kunci Vault yang Storage Akun 'mystorageaccount' yang dikelola oleh vault 'myvault'
+Mencantumkan semua definisi SAS yang terkait dengan Kunci Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh vault 'myvault'
 
 ### Contoh 2: Get a Key Vault managed Storage Account
 ```
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

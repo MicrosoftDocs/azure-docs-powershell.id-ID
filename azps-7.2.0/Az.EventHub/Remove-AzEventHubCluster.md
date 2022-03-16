@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubCluster.md
-ms.openlocfilehash: d0449f856e74a3480cf951a60e32fa32a274a62f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 25c2e9f782216f57bd798b90c9c35ba63d587ebc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265035"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923919"
 ---
 # Remove-AzEventHubCluster
 
 ## SYNOPSIS
 Menghapus Kluster Eventhub Khusus tertentu dari ResourceGroup
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhubcluster) untuk informasi terkini.
 
 ## SYNTAX
 

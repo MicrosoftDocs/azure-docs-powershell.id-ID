@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Update-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Update-AzHpcCache.md
-ms.openlocfilehash: b02c68095a47a1bcc411a88ebc047ce43e250c03
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 627273047b876cd8beb3f4b1bcdccf1519a934ab
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166528"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923182"
 ---
 # Update-AzHpcCache
 
 ## SYNOPSIS
 Memperbarui Cache HPC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/update-azhpccache) untuk informasi terkini.
 
 ## SYNTAX
 

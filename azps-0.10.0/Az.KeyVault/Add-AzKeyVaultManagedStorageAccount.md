@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.keyvault/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: 63e3e6c1a68e604c8da5a72aefeff751e0fd22d2b38cd6866f9a847929524c16
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 85a0bc0f552688d036dc76ebbc6d15c608ade433
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413630"
 ---
 # Add-AzKeyVaultManagedStorageAccount
@@ -27,12 +27,12 @@ Add-AzKeyVaultManagedStorageAccount [-VaultName] <String> [-AccountName] <String
 ```
 
 ## DESCRIPTION
-Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault Storage kunci Akun agar dikelola oleh Key Vault. Akun Storage harus sudah ada. Tombol Storage tidak pernah diekspos ke penelepon.
+Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault Storage kunci Akun yang akan dikelola oleh Key Vault. Akun Storage harus sudah ada. Tombol Storage tidak pernah diekspos ke penelepon.
 Kunci Vault otomatis meregenerasi dan beralih kunci aktif berdasarkan periode regenerasi.
 
 ## EXAMPLES
 
-### Contoh 1: Atur akun Azure Storage dengan Key Vault untuk mengelola kuncinya
+### Contoh 1: Mengatur Azure Storage Akun dengan Key Vault untuk mengelola kuncinya
 ```
 PS C:\> $regenerationPeriod = [System.Timespan]::FromDays(90)
 PS C:\> Add-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -ResourceId '/subscriptions/<subscription id>/resourceGroups/myresourcegroup/providers/Microsoft.Storage/storageAccounts/mystorageaccount' -ActiveKeyName 'key1' -RegenerationPeriod $regenerationPeriod
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

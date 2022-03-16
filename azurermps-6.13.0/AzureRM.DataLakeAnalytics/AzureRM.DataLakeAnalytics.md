@@ -6,11 +6,11 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/AzureRM.DataLakeAnalytics.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/AzureRM.DataLakeAnalytics.md
-ms.openlocfilehash: dd8bca8012ae2472c8607f81b514777c2f9aa4ee441a8f7d4e82fce49c70fe22
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0974ae0f3129facfde0dc927e55d426ff8428540
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413769"
 ---
 # AzureRM.DataLakeAnalytics Module

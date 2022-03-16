@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Set-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Set-AzContext.md
-ms.openlocfilehash: 31aa6c94f077046540ab777fe9cd15091c1b6b40fef619e16ba04e7ddcacbb5c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5dcb1636dc4ecc4556bea14f8b3cd52bec7c0927
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413865"
 ---
 # Set-AzContext
@@ -60,7 +60,7 @@ Set-AzContext -Tenant <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzContext menetapkan informasi autentikasi untuk cmdlet yang Anda jalankan di sesi saat ini.
+Cmdlet Set-AzContext menetapkan informasi autentikasi untuk cmdlet yang Anda jalankan dalam sesi saat ini.
 Konteksnya mencakup penyewa, langganan, dan informasi lingkungan.
 
 ## EXAMPLES

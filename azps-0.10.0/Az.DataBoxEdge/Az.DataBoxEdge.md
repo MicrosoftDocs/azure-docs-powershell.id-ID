@@ -6,11 +6,11 @@ Help Version: ''
 Locale: ''
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Az.DataBoxEdge.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Az.DataBoxEdge.md
-ms.openlocfilehash: d6ab57a0cdddcb2f101b41fdd3789e103b92765bddd21dd9a058ca7d16697fdb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8f4014bc208073202a6bc71024b687d95644faca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414072"
 ---
 # Az.DataBoxEdge Module
@@ -43,7 +43,7 @@ Dapatkan akun Storage Edge pada perangkat.
 Dapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan pada perangkat.
 
 ### [Get-AzDataBoxEdgeStorageContainer](Get-AzDataBoxEdgeStorageContainer.md)
-Dapatkan wadah untuk akun Storage Edge pada perangkat.
+Dapatkan wadah untuk akun Edge Storage Anda pada perangkat.
 
 ### [Get-AzDataBoxEdgeTrigger](Get-AzDataBoxEdgeTrigger.md)
 Konfigurasikan Pemicu di perangkat
@@ -113,7 +113,7 @@ Menghapus Storage Edge untuk suatu perangkat.
 Menghapus kredensial akun penyimpanan untuk perangkat.
 
 ### [Remove-AzDataBoxEdgeStorageContainer](Remove-AzDataBoxEdgeStorageContainer.md)
-Menghapus tempat penyimpanan untuk akun Storage Edge di perangkat.
+Menghapus tempat penyimpanan untuk akun Microsoft Edge Storage di perangkat.
 
 ### [Remove-AzDataBoxEdgeTrigger](Remove-AzDataBoxEdgeTrigger.md)
 Menghapus pemicu yang ada pada perangkat.

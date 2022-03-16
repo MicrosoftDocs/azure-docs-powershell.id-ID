@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/sa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Save-AzVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Save-AzVhd.md
-ms.openlocfilehash: c409596f0e1f7736f7d84bfe25beffb19a6f856fcff83935316871c51c35ce1f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f178b6aca1cf3747bc53807290585c01b91f3c2e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414112"
 ---
 # Save-AzVhd
@@ -36,7 +36,7 @@ Save-AzVhd [-StorageKey] <String> [-SourceUri] <Uri> [-LocalFilePath] <FileInfo>
 
 ## DESCRIPTION
 Cmdlet **Save-AzVhd** menyimpan gambar .vhd dari blob tempat gambar disimpan ke file.
-Anda dapat menentukan jumlah alur topik yang digunakan oleh proses dan apakah akan mengganti file yang sudah ada.
+Anda dapat menentukan jumlah utas topik yang digunakan oleh proses dan apakah akan mengganti file yang sudah ada.
 
 Cmdlet ini mengunduh konten apa pun.
 Ini tidak menerapkan konversi format Hard Disk Virtual (VHD).
@@ -56,7 +56,7 @@ PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdst
 ```
 
 Perintah ini akan mengunduh file .vhd, lalu menyimpannya dalam jalur lokal.
-Perintah menyertakan parameter *Overwrite.*
+Perintah menyertakan parameter *Overwrite* .
 Oleh karena itu, jika C:\vhd\Win7Image.vhd sudah ada, perintah ini akan menggantikannya.
 
 ### Contoh 3: Mengunduh gambar menggunakan jumlah utas yang ditentukan
@@ -65,7 +65,7 @@ PS C:\> Save-AzVhd -SourceUri "http://contosoaccount.blob.core.windows.net/vhdst
 ```
 
 Perintah ini akan mengunduh file .vhd, lalu menyimpannya dalam jalur lokal.
-Perintah menentukan nilai 32 untuk parameter *NumberOfThreads.*
+Perintah menentukan nilai 32 untuk parameter *NumberOfThreads* .
 Oleh karena itu, cmdlet menggunakan 32 utas untuk tindakan ini.
 
 ### Contoh 4: Unduh gambar dan tentukan kunci penyimpanan
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceUri
-Menentukan Uniform Resource Identifier (URI) dari blob di `Azure` .
+Menentukan Uniform Resource Identifier (URI) dari blob di `Azure`.
 
 ```yaml
 Type: Uri
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

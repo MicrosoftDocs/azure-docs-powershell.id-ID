@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/New-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 631edc8dbac85330cb31c95daba5d9e31a843d38
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f809e22528621cdbfce7dd9ffdf8a1f67d3385a5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169050"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229013"
 ---
 # New-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Membuat Kapasitas Tersemat PowerBI baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/new-azpowerbiembeddedcapacity) untuk informasi terkini.
 
 ## SYNTAX
 

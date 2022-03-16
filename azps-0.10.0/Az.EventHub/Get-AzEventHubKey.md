@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Get-AzEventHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Get-AzEventHubKey.md
-ms.openlocfilehash: b4a948b752d6a108e0282311c37f8dc78dce1384df4f838014b46d56cb993b03
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 27be06fb85cc4bd1dc38dd7a123205d3ba7ff4d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414289"
 ---
 # Get-AzEventHubKey
@@ -52,14 +52,14 @@ PS C:\> Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName 
 PS C:\> Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName
 ```
 
-Mendapatkan detail string dan tombol koneksi Utama dan Sekunder untuk aturan otorisasi \` MyAuthRuleName \` .
+Dapatkan detail string dan tombol koneksi Utama dan Sekunder untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ### Contoh 3 - Alias (Konfigurasi GeoRecovery)
 ```
 PS C:\> Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AliasName MyAliasName -Name MyAuthRuleName
 ```
 
-Mendapatkan detail string dan kunci koneksi Utama, Sekunder, AliasPrimary dan AliasSecstringry untuk aturan otorisasi \` MyAuthRuleName \` .
+Mendapatkan detail string dan tombol koneksi Utama, Sekunder, AliasPrimary dan AliasSecstringry untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ## PARAMETERS
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

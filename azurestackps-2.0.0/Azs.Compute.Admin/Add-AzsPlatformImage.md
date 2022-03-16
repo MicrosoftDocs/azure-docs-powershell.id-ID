@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/add-azsplatformimage
 schema: 2.0.0
-ms.openlocfilehash: fcf7198f2714ef8f3dcd215fa47f19c460b1653d708d334df0a19f0d7409333a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 127cbe1efb710fff04420590985e97ee72a196a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414210"
 ---
 # Add-AzsPlatformImage
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -384,7 +384,7 @@ DATADISKS <menggunakan IDataDisk[]>: Disk data yang digunakan oleh gambar platfo
   - `[Lun <Int32?>]`: Nomor unit logika.
   - `[Uri <String>]`: Lokasi templat disk.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
   - `[DiskId <String>]`: Disk guid sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
@@ -397,7 +397,7 @@ INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
   - `[Type <String>]`: Tipe ekstensi.
   - `[Version <String>]`: Versi sumber daya.
 
-NEWIMAGE <IPlatformImageParameters> : Parameter yang digunakan untuk membuat gambar platform baru.
+NEWIMAGE <IPlatformImageParameters>: Parameter yang digunakan untuk membuat gambar platform baru.
   - `[DataDisk <IDataDisk[]>]`: Disk data yang digunakan oleh gambar platform.
     - `[Lun <Int32?>]`: Nomor unit logika.
     - `[Uri <String>]`: Lokasi templat disk.

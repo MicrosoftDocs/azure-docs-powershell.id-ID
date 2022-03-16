@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorFrontendEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoorFrontendEndpoint.md
-ms.openlocfilehash: d060adb9bfb755e4dfb2aecfd466c389f1fb8c13
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6946b9a4404a3bf0b2bf1493c4145a99c4c3c36d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166558"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923757"
 ---
 # Get-AzFrontDoorFrontendEndpoint
 
 ## SYNOPSIS
 Dapatkan titik akhir frontend pintu depan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoorfrontendendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

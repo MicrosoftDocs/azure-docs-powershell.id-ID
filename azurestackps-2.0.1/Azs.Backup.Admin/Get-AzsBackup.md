@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Backup.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.backup.admin/get-azsbackup
 schema: 2.0.0
-ms.openlocfilehash: edbd5aeae86ffcf2e9d365837021202273d807e401b1b01c9385701a40321306
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2c2d517da3be62ff407ca17577edefcf7322ad55
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413663"
 ---
 # Get-AzsBackup
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -203,7 +203,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IBackupAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IBackupAdminIdentity>: Parameter Identitas
   - `[Backup <String>]`: Nama cadangan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi cadangan.

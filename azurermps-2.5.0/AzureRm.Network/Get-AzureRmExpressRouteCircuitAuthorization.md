@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 ms.assetid: 3D80F94B-AF9D-40C2-BE7E-2F32E5E926D2
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermexpressroutecircuitauthorization
 schema: 2.0.0
-ms.openlocfilehash: 54eb821c2f641c914d576fb7641912512431472ac8161900006397d8f4d9df5e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ec11ab37bc3fcb787de2b97f46941f23ede1b45a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413589"
 ---
 # Get-AzureRmExpressRouteCircuitAuthorization
@@ -44,7 +44,7 @@ $Circuit = Get-AzureRmExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupN
  Get-AzureRmExpressRouteCircuitAuthorization -Circuit $Circuit | Where-Object {$_.AuthorizationUseStatus -eq "Available"}
 ```
 
-Perintah ini menunjukkan variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam kasus ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan di perintah 2 dan pipa ke cmdlet **Where-Object.**
+Perintah ini menunjukkan variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam kasus ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan di perintah 2 dan pipa ke cmdlet **Where-Object** .
 **Jika kemudian Objek** hanya memilih otorisasi dengan properti *AuthorizationUseStatus* yang diatur ke Tersedia. Untuk mencantumkan izin yang tidak tersedia saja, gunakan sintaks ini untuk klausul Where:
 
 `{$_.AuthorizationUseStatus -ne "Available"}`
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ### PSExpressRouteCircuitAuthorization
-**Get-AzureRmExpressRouteCircuitAuthorization** mengembalikan contoh objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization.**
+**Get-AzureRmExpressRouteCircuitAuthorization** mengembalikan instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization** .
 
 ## CATATAN
 

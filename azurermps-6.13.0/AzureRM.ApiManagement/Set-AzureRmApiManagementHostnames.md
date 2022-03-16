@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementHostnames.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementHostnames.md
-ms.openlocfilehash: 13c650088bdaf85cbb0137ed484c07b4b37363c13eafa2b2c7f53708f0aafed5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7093b51ffee3f0ad635da7a6c0b63d26e93e5f2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414453"
 ---
 # Set-AzureRmApiManagementHostnames
@@ -63,7 +63,7 @@ Anda harus mengimpor sertifikat terkait lalu menerapkan nama host kustom.
 ## PARAMETERS
 
 ### -ApiManagement
-Menentukan instans **PsApiManagement** bahwa cmdlet ini mendapatkan parameter *PortalHostnameConfiguration* dan *ProxyHostnameConfiguration.*
+Menentukan instans **PsApiManagement** bahwa cmdlet ini mendapatkan parameter *PortalHostnameConfiguration* dan *ProxyHostnameConfiguration* .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -PortalHostnameConfiguration
 Menentukan konfigurasi nama host portal kustom.
-Meneruskan $null cmdlet mengatur nama host default.
+Meneruskan $null ke cmdlet mengatur nama host default.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementHostnameConfiguration
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ProxyHostnameConfiguration
 Menentukan konfigurasi nama host proksi kustom.
-Memberikan $null akan mengatur nama host default.
+Memberikan $null mengatur nama host default.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementHostnameConfiguration
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

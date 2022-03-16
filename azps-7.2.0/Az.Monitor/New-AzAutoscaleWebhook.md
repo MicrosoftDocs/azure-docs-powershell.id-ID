@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleWebhook.md
-ms.openlocfilehash: 6f84cc96f99442b1ab0a7e3aa8bf702804d156f0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 936700b715343e283ae76826c48b610b1b753633
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265980"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921878"
 ---
 # New-AzAutoscaleWebhook
 
 ## SYNOPSIS
 Membuat webhook SkalaOtomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azautoscalewebhook) untuk informasi terkini.
 
 ## SYNTAX
 

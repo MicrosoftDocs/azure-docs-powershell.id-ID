@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/Remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceTapConfig.md
-ms.openlocfilehash: 07b1479f3910e5aa698ee33c268f23b1a54f3e33
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6a51fdc7db05e25c51d3d6cdac45f50e672d3d63
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258460"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229859"
 ---
 # Remove-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi ketuk dari antarmuka jaringan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-aznetworkinterfacetapconfig) untuk informasi terkini.
 
 ## SYNTAX
 

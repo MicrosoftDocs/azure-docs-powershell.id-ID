@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsDataSource.md
-ms.openlocfilehash: 1aee8d502603167201b51bb18d6666aa60e79456
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 48e652e309dc6214b37dd4b768766c2579e54488
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289804"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229607"
 ---
 # Get-AzOperationalInsightsDataSource
 
 ## SYNOPSIS
 Dapatkan sumber data di bawah ruang kerja Analitik Log Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsdatasource) untuk informasi terkini.
 
 ## SYNTAX
 

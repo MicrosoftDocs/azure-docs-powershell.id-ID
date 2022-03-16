@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Commerce.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.commerce.admin/get-azssubscriberusage
 schema: 2.0.0
-ms.openlocfilehash: fe680be75100caf9e73e6d7794c71f77fe5a2c4deaab1f5e27acee8517a777e5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e3254ab018abaf191b45327f8b8efa6d5b063f9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414371"
 ---
 # Get-AzsSubscriberUsage
@@ -33,7 +33,7 @@ Mendapatkan kumpulan SubscriberUsageAggregates, yaitu UsageAggregates dari pengg
 Get-AzsSubscriberUsage -ReportedStartTime "2019/12/30" -ReportedEndTime "2019-12-31" -AggregationGranularity Daily
 ```
 
-Dapatkan data penggunaan untuk seluruh hari ke-30 Des 2019 (dalam UTC) untuk semua penyewa di bawah penyedia yang diagregatkan menurut hari. Menentukan tanggal menggunakan format `mm/dd/yyyy` .  
+Dapatkan data penggunaan untuk seluruh hari ke-30 Des 2019 (dalam UTC) untuk semua penyewa di bawah penyedia yang diagregatkan menurut hari. Menentukan tanggal menggunakan format `mm/dd/yyyy`.  
 Jika dipanggil sebagai administrator layanan, ini secara efektif memperlihatkan semua data penggunaan untuk setiap penyewa.
 
 ### Contoh 2: Dapatkan data penggunaan diagregasi menurut jam
@@ -41,7 +41,7 @@ Jika dipanggil sebagai administrator layanan, ini secara efektif memperlihatkan 
 Get-AzsSubscriberUsage -ReportedStartTime "12/30/2019 15:00" -ReportedEndTime "12/30/2019 16:00" -AggregationGranularity Hourly
 ```
 
-Dapatkan data penggunaan antara pukul 15.00 - 04.00 pada tanggal 30 Des 2019 (dalam UTC) diagregatkan menurut jam. Menentukan tanggal dan waktu menggunakan format `mm/dd/yyyy HH:MM` .  
+Dapatkan data penggunaan antara pukul 15.00 - 04.00 pada tanggal 30 Des 2019 (dalam UTC) yang diagregatkan menurut jam. Menentukan tanggal dan waktu menggunakan format `mm/dd/yyyy HH:MM`.  
 Demikian pula, jika dipanggil sebagai administrator layanan, ini secara efektif memperlihatkan semua data penggunaan untuk setiap penyewa.
 
 ## PARAMETERS

@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzRouteConfig.md
-ms.openlocfilehash: e863b0f70a4bfa269316878770e381f95169f9b8de009043e9adef9868c777f6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a5b80a15711314d5acc4f0288c1fd0304da772fc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413615"
 ---
 # Get-AzRouteConfig
@@ -43,7 +43,7 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable.**
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable** .
 Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Cmdlet saat ini mendapatkan rute yang bernama Route07 dalam tabel rute yang bernama RouteTable01.
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

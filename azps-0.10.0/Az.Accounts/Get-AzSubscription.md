@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Get-AzSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Get-AzSubscription.md
-ms.openlocfilehash: 5466d7e0de9ed937fea34d20cea51a51b0ae923eb2b19741d261688fbeffcc50
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ac699d3a52271652682f22a8f4c94961e4a921d2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413889"
 ---
 # Get-AzSubscription
@@ -47,7 +47,7 @@ Subscription2                      xxxx-xxxx-xxxx-xxxx     aaaa-aaaa-aaaa-aaaa  
 Subscription3                      zzzz-zzzz-zzzz-zzzz     bbbb-bbbb-bbbb-bbbb             Enabled
 ```
 
-Perintah ini akan mendapatkan semua langganan di semua penyewa yang diizinkan untuk akun saat ini.
+Perintah ini mendapatkan semua langganan di semua penyewa yang diizinkan untuk akun saat ini.
 
 ### Contoh 2: Mendapatkan semua langganan untuk penyewa tertentu
 ```

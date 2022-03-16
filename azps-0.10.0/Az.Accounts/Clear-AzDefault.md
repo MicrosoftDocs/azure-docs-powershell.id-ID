@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/c
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Clear-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Clear-AzDefault.md
-ms.openlocfilehash: f32970a918244d30e732b4bbadde826868ea942bbc1fbd5f722e9c508ae33670
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 76271fc9b6ef8546f8f02b64ac32cc65cf4abb3f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414193"
 ---
 # Clear-AzDefault

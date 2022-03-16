@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.dns/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Set-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Set-AzDnsZone.md
-ms.openlocfilehash: cca058b7879d7f9b0c809ca7dea9541917ae4dc326948ac55e86408386a878d5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9b6d84f9007a872db0e41efa78d8e16d7269eb02
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414294"
 ---
 # Set-AzDnsZone
@@ -35,11 +35,11 @@ Set-AzDnsZone -Zone <DnsZone> [-Overwrite] [-WhatIf] [-Confirm] [<CommonParamete
 Cmdlet **Set-AzDnsZone** memperbarui zona DNS tertentu di layanan DNS Azure.
 Cmdlet ini tidak memperbarui kumpulan data dalam zona.
 
-Anda dapat melewati **objek DnsZone** sebagai parameter atau dengan menggunakan operator saluran, atau Anda juga dapat menentukan parameter *ZoneName* *dan ResourceGroupName.*
+Anda dapat melewati **objek DnsZone** sebagai parameter atau dengan menggunakan operator saluran, atau Anda juga dapat menentukan parameter *ZoneName* *dan ResourceGroupName* .
 
 Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
-Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa,* yang memperbarui zona terlepas dari perubahan serentak.
+Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan serentak.
 
 ## EXAMPLES
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Overwrite
-Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa,* yang memperbarui zona terlepas dari perubahan serentak.
+Ketika memberikan zona DNS sebagai objek (menggunakan objek Zona atau melalui saluran), catatan itu tidak diperbarui jika telah diubah di Azure DNS sejak objek DnsZone lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan perilaku ini dengan parameter *Timpa* , yang memperbarui zona terlepas dari perubahan serentak.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ### -Zone
 Menentukan zona DNS yang akan diperbarui.
 
-Alternatifnya, Anda bisa menentukan zona menggunakan parameter *ZoneName* *dan ResourceGroupName.*
+Alternatifnya, Anda bisa menentukan zona menggunakan parameter *ZoneName* *dan ResourceGroupName* .
 
 ```yaml
 Type: DnsZone
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,7 +194,7 @@ Cmdlet ini mengembalikan objek DnsZone yang mewakili zona DNS yang diperbarui de
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
 
-Jika Anda menetapkan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
 
 ## RELATED LINKS

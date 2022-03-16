@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationJobOutputRecord.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationJobOutputRecord.md
-ms.openlocfilehash: 03209e1bb211f4fc038a9c11d2afd55108f2a97a08757fbfa54f956be4263693
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 63227ad14eb16c5a43e37095f7cfa80ccd8b9cce
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413576"
 ---
 # Get-AzureRmAutomationJobOutputRecord
@@ -32,7 +32,7 @@ Cmdlet **Get-AzureRmAutomationJobOutputRecord** mendapatkan output penuh dari ca
 Meskipun cmdlet **Get-AzureRmAutomationJobOutput** mencantumkan satu atau beberapa rekaman output pekerjaan, cmdlet ini hanya mengembalikan ringkasan, sebagai string, dari nilai rekaman output apa pun.
 Data ini tidak mengembalikan nilai penuh dari nilai output rekaman output dalam tipe aslinya.
 Selain itu, ringkasan memiliki panjang maksimum, yang nilai penuh output cmdlet ini mungkin melebihi.
-Tidak **seperti Get-AzureRmAutomationJobOutput,** cmdlet ini mengembalikan nilai penuh dalam tipe output pada awalnya, untuk nilai output rekaman output apa pun.
+Tidak **seperti Get-AzureRmAutomationJobOutput**, cmdlet ini mengembalikan nilai penuh dalam tipe output awalnya, untuk semua nilai output rekaman output.
 
 ## EXAMPLES
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmRouteTable.md
-ms.openlocfilehash: e764235146ac9be7ac7ac2bbedfd175737a9ce4b473d255f3783b5c425fe0b7a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fff89f2b6d37dc75923527fdb07a71d79dee80a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413932"
 ---
 # New-AzureRmRouteTable
@@ -62,7 +62,7 @@ Subnets           : []
 ```
 
 Perintah pertama membuat rute bernama Route07 menggunakan cmdlet New-AzureRmRouteConfig, lalu menyimpannya dalam variabel $Route nya. Rute ini meneruskan paket ke jaringan virtual lokal.
-Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan dalam $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel dimiliki dan lokasi untuk tabel.
+Perintah kedua membuat tabel rute bernama RouteTable01, dan menambahkan rute yang disimpan di $Route ke tabel baru. Perintah menentukan grup sumber daya tempat tabel dimiliki dan lokasi untuk tabel.
 
 ## PARAMETERS
 
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -242,7 +242,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Collections.Generic.List \` 1[[Microsoft.Azure.Commands.Network.Models.PSRoute, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List1\`[[Microsoft.Azure.Commands.Network.Models.PSRoute, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
 
 ## OUTPUTS
 

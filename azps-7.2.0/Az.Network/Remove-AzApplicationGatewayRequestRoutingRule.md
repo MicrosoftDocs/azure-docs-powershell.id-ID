@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: 925b75def69a6357c451eb2ba7215c0a2960476e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b41bbae7bbc7aa92b4d1f26b1d729a7554790578
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162285"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230219"
 ---
 # Remove-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Menghapus aturan perutean permintaan dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayrequestroutingrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ PS C:\> Remove-AzApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw
 PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $AppGw baru.
-Perintah kedua menghapus aturan perutean permintaan bernama Rule02 dari gateway aplikasi yang disimpan di $AppGw.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel.
+Perintah kedua menghapus aturan perutean permintaan yang bernama Rule02 dari gateway aplikasi yang disimpan di $AppGw.
 Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS

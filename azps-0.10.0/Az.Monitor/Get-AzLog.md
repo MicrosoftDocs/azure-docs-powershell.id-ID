@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Get-AzLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Get-AzLog.md
-ms.openlocfilehash: fa7523e7dfadf33fdcbe7a9209763d66a97cb4ff65e97ceeb1f79481e535cff6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f6000574313942c774c9243d9a4d4a42caa28820
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413617"
 ---
 # Get-AzLog
@@ -164,7 +164,7 @@ Perintah ini mencantumkan paling banyak 100 kejadian yang terkait dengan ID sumb
 PS C:\>Get-AzLog -ResourceId "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/ResourceGroups/Contoso-Web-CentralUS/providers/Microsoft.Web/ServerFarms/Contoso1" -StartTime 2017-05-22T04:30
 ```
 
-Perintah ini mencantumkan paling banyak 1000 kejadian yang terkait dengan ID sumber daya tertentu yang terjadi pada atau setelah 05-05-22T04:30:00 waktu lokal 2017-05-2017 jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
+Perintah ini mencantumkan paling banyak kejadian 1000 yang terkait dengan ID sumber daya tertentu yang terjadi pada atau setelah 05-05-22T04:30:00 waktu lokal 2017-05-2017 jika waktu mulai tidak lebih dari 90 hari dari tanggal/waktu saat ini.
 
 ### Contoh 16: Mendapatkan log kejadian menurut ID sumber daya dengan waktu mulai dan waktu berakhir
 ```
@@ -268,8 +268,8 @@ Accept wildcard characters: False
 ### -EndTime
 Menentukan waktu akhir kueri dalam waktu lokal.
 Nilai default adalah waktu saat ini.
-Nilai harus setelah *StartTime.*
-Anda dapat menggunakan cmdlet Get-Date untuk mendapatkan **objek DateTime.**
+Nilai harus setelah *StartTime*.
+Anda dapat menggunakan cmdlet Get-Date untuk mendapatkan **objek DateTime** .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ### -StartTime
 Menentukan waktu mulai kueri dalam waktu lokal.
 Nilai defaultnya adalah *WaktuAkhir* dikurangi tujuh hari.
-Anda dapat menggunakan cmdlet Get-Date untuk mendapatkan **objek DateTime.**
+Anda dapat menggunakan cmdlet Get-Date untuk mendapatkan **objek DateTime** .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]

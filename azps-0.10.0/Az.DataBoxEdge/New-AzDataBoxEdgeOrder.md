@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeOrder.md
-ms.openlocfilehash: d947a8f1781ed23ae7cef892ccf2fcdcc1af6738591012dd04926cb1362ae51f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6e9aa41b30b9a2012e4208971ceddff8f08e980a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414321"
 ---
 # New-AzDataBoxEdgeOrder
@@ -27,7 +27,7 @@ New-AzDataBoxEdgeOrder [-ResourceGroupName] <String> [-DeviceName] <String> -Con
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeOrder** membuat urutan baru untuk perangkat Data Box Edge. Sumber daya perangkat Box Edge Data perlu dibuat terlebih dahulu sebelum membuat pesanan. Anda dapat menentukan detail seperti orang kontak, nama perusahaan, email, alamat, dll. sebagai parameter untuk membuat pesanan.
+Cmdlet **New-AzDataBoxEdgeOrder** membuat urutan baru untuk perangkat Data Box Edge. Sumber daya perangkat Box Edge Data perlu dibuat terlebih dahulu sebelum membuat pesanan. Anda bisa menentukan detail seperti orang kontak, nama perusahaan, email, alamat dll. sebagai parameter untuk membuat pesanan.
 
 ## EXAMPLES
 

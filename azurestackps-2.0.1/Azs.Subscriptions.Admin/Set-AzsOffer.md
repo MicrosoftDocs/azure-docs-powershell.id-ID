@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/set-azsoffer
 schema: 2.0.0
-ms.openlocfilehash: 2d48a60645f71f6336c94dda96a11e1e45fd24dec7e64f6d834d103e33f665e5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 82be26ae402278d8cdc24195fd62ed09b67bdc14
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414405"
 ---
 # Set-AzsOffer
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -359,7 +359,7 @@ ADDONPLANDEFINITION <IAddonPlanDefinition[]>: Referensi ke paket add-on yang dap
   - `[MaxAcquisitionCount <Int32?>]`: Jumlah maksimum instans yang dapat diperoleh oleh satu langganan. Jika tidak ditentukan, nilai yang diasumsikan adalah 1.
   - `[PlanId <String>]`: Merencanakan pengidentifikasi.
 
-OFFERDEFINITION <IOffer> : Represents an offering of services against which a subscription can be created.
+OFFERDEFINITION <IOffer>: Represents an offering of services against which a subscription can be created.
   - `[Location <String>]`: Lokasi sumber daya
   - `[AddonPlans <IAddonPlanDefinition[]>]`: Referensi ke paket add-on yang bisa didapatkan penyewa secara opsional sebagai bagian dari penawaran.
     - `[MaxAcquisitionCount <Int32?>]`: Jumlah maksimum instans yang dapat diperoleh oleh satu langganan. Jika tidak ditentukan, nilai yang diasumsikan adalah 1.

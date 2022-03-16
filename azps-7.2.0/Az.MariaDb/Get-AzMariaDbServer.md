@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbServer.md
-ms.openlocfilehash: 8cc091301a7a4f23477a46067cedacd33e0ac86b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2ec9787473212a85953a38818a5dc0b5d8b8b998
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139922281"
 ---
 # Get-AzMariaDbServer
 
 ## SYNOPSIS
 Mendapatkan informasi tentang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbserver) untuk informasi terkini.
 
 ## SYNTAX
 

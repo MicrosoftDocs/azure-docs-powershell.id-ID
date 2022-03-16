@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Send-Feedback.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Send-Feedback.md
-ms.openlocfilehash: 57376eda5c4889cd43edfdfd48fb70385afd66b706edd80748412198cbe8d578
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2541b4fb50decd83f2130a2d960fc4ecde007c57
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413866"
 ---
 # Send-Feedback
@@ -24,7 +24,7 @@ Send-Feedback [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Send-Feedback mengirimkan umpan balik ke Azure PowerShell tim.
+Cmdlet Send-Feedback mengirimkan umpan balik ke Azure PowerShell baru.
 
 ## EXAMPLES
 

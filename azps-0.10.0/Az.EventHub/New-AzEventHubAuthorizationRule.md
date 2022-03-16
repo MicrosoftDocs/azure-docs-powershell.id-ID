@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/New-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/New-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: dd69be5a8e487a9e8eba893565a53a18fcf73a9f14c4b9fa797bb06472228384
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c59a58e458ceed2c183978a8839de1cd864ffaa7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414283"
 ---
 # New-AzEventHubAuthorizationRule
@@ -42,14 +42,14 @@ Cmdlet New-AzEventHubAuthorizationRule membuat aturan otorisasi Hub Acara yang b
 PS C:\> New-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -AuthorizationRuleName MyAuthRuleName -Rights @("Listen","Send")
 ```
 
-Membuat aturan otorisasi MyAuthRuleName memberikan hak Dengarkan dan Kirim ke ruang nama \` \` \` MyNamespaceName , dengan \` grup sumber daya \` MyResourceGroupName \` .
+Membuat aturan otorisasi MyAuthRuleName \`\` memberikan hak Dengarkan dan Kirim ke ruang \`nama MyNamespaceName\`, dengan grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> New-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName -Rights @("Listen","Send")
 ```
 
-Membuat aturan otorisasi MyAuthRuleName memberikan hak Dengarkan dan Kirim ke Hub Kejadian MyEventHubName dalam kumpulan nama MyNamespaceName , dengan grup sumber daya \` \` \` \` \` \` \` MyResourceGroupName \` .
+Membuat aturan otorisasi \`MyAuthRuleName\` memberikan hak Dengarkan dan Kirim ke Hub \`Kejadian MyEventHubName\` dalam kumpulan \`nama MyNamespaceName\`, dengan \`grup sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ Help Version: 4.6.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/AzureRM.Profile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/AzureRM.Profile.md
-ms.openlocfilehash: 402f329f2aa97c3c6e22096b12aa4175b850bef8cbd78a45d7f901e62bad3bce
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b9aa5f188d2c4c0167068d304487a0a7d4c7ea2d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413928"
 ---
 # AzureRM.Profile Module
@@ -28,7 +28,7 @@ Hapus semua kredensial, akun, dan informasi langganan Azure.
 Menghapus pengaturan default yang ditetapkan oleh pengguna dalam konteks saat ini.
 
 ### [Koneksi-AzureRmAccount](Connect-AzureRmAccount.md)
-Koneksi azure dengan akun terautentikasi untuk digunakan dengan permintaan cmdlet Azure Resource Manager.
+Koneksi ke Azure dengan akun terautentikasi untuk digunakan dengan permintaan cmdlet Azure Resource Manager.
 
 ### [Disable-AzureRmContextAutosave](Disable-AzureRmContextAutosave.md)
 Nonaktifkan penyimpanan otomatis kredensial Azure.  Informasi masuk Anda akan lupa saat berikutnya Anda membuka jendela PowerShell
@@ -78,13 +78,13 @@ Menghapus titik akhir dan metadata untuk terhubung ke instans Azure tertentu.
 Ganti nama konteks Azure.  Secara default konteks diberi nama berdasarkan akun pengguna dan langganan.
 
 ### [Resolve-AzureRmError](Resolve-AzureRmError.md)
-Tampilkan informasi mendetail tentang kesalahan PowerShell, dengan detail yang diperluas untuk Azure PowerShell kesalahan tersebut.
+Tampilkan informasi mendetail tentang kesalahan PowerShell, dengan detail yang diperluas untuk Azure PowerShell kesalahan.
 
 ### [Save-AzureRmContext](Save-AzureRmContext.md)
 Menyimpan informasi autentikasi saat ini untuk digunakan di sesi PowerShell lainnya.
 
 ### [Select-AzureRmContext](Select-AzureRmContext.md)
-Pilih langganan dan akun untuk ditargetkan dalam Azure PowerShell cmdlet
+Pilih langganan dan akun untuk ditargetkan Azure PowerShell cmdlets
 
 ### [Kirim-Umpan Balik](Send-Feedback.md)
 Mengirimkan umpan balik Azure PowerShell tim melalui kumpulan perintah yang dipandu.

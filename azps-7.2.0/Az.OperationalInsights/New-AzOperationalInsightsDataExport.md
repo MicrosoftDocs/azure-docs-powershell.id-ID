@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsDataExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsDataExport.md
-ms.openlocfilehash: 587e4f0375b97add5fbe58b5ec1ffa7936d544f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d5dce80412dd730761a6337d5414caaa404263ed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229589"
 ---
 # New-AzOperationalInsightsDataExport
 
 ## SYNOPSIS
 Membuat ekspor data untuk ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsdataexport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ### -EventHubName
 Opsional.
 Memungkinkan untuk menentukan nama Hub Acara.
-Tidak berlaku saat tujuan adalah Storage Anda.
+Tidak berlaku saat tujuan adalah Storage Tersebut.
 
 ```yaml
 Type: System.String

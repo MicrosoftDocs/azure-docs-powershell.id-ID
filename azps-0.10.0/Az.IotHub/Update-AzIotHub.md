@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.iothub/upd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Update-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Update-AzIotHub.md
-ms.openlocfilehash: 8e2b2cc151023c7ccd9f055921812a177fc33d2c591de65f938fc9c768fa50a3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d1b6c8be02ee246053e5930e37186f2a7480325b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413633"
 ---
 # Update-AzIotHub
@@ -43,7 +43,7 @@ Properties     : Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubPrope
 Sku            : Microsoft.Azure.Commands.Management.IotHub.Models.PSIotHubSkuInfo
 ```
 
-Tambahkan " @tags " ke Tag Hub Azure IoT "myiotdps".
+Tambahkan "@tags" ke Tag "myiotdps" Azure IoT Hub".
 
 ## PARAMETERS
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

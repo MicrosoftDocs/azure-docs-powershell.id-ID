@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupJobDetails.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupJobDetails.md
-ms.openlocfilehash: d4819bd6e17a0747189c458ba3b57161e84ee2938d651089206c808d49e7e516
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7d39ce49a76d8519f2eacf0649c52051290274f0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414429"
 ---
 # Get-AzureRmRecoveryServicesBackupJobDetails
@@ -36,7 +36,7 @@ Get-AzureRmRecoveryServicesBackupJobDetails [-JobId] <String> [-VaultId <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmRecoveryServicesBackupJobDetails** mendapatkan detail pekerjaan Azure Backup untuk pekerjaan tertentu.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ PS C:\> $JobDetails.ErrorDetails
 ```
 
 Perintah pertama mendapatkan larik pekerjaan yang gagal dalam vault, lalu menyimpannya di $Jobs larik.
-Perintah kedua mendapatkan detail pekerjaan untuk pekerjaan yang gagal dalam $Jobs, lalu menyimpannya di $JobDetails lain.
+Perintah kedua mendapatkan detail pekerjaan untuk pekerjaan yang gagal dalam $Jobs, lalu menyimpannya dalam variabel $JobDetails tersebut.
 Perintah terakhir menampilkan detail kesalahan untuk pekerjaan yang gagal.
 
 ## PARAMETERS
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan yang akan didaekan.
-Untuk mendapatkan objek **BackupJob,** gunakan cmdlet Get-AzureRmRecoveryServicesBackupJob.
+Untuk mendapatkan objek **BackupJob** , gunakan cmdlet Get-AzureRmRecoveryServicesBackupJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 
 ### -JobId
 Menentukan ID pekerjaan Pencadangan.
-ID adalah properti InstanceId dari objek **BackupJob.**
+ID adalah properti InstanceId dari objek **BackupJob** .
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

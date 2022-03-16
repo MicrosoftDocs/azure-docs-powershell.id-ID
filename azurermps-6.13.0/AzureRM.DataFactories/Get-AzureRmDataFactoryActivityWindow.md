@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.dataf
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Get-AzureRmDataFactoryActivityWindow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/Get-AzureRmDataFactoryActivityWindow.md
-ms.openlocfilehash: de2a01e5f09621e14973e1b7a526716a8904768c85f1e0c97be59d531549e4d2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 79ac0191f7fe381be4985d53ed719fdeff9d0b88
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413971"
 ---
 # Get-AzureRmDataFactoryActivityWindow
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -Filter
 Menentukan jendela aktivitas yang dinyatakan dengan menggunakan tata bahasa filter Pencarian Azure.
-Untuk informasi tentang tata bahasa, lihat Sintaks Ekspresi OData untuk Pencarian Azure https://msdn.microsoft.com/en-us/library/azure/dn798921.aspx ( https://msdn.microsoft.com/en-us/library/azure/dn798921.aspx) di MSDN.
+Untuk informasi tentang tata bahasa, lihat Sintaks Ekspresi OData untuk Pencarian Azurehttps://msdn.microsoft.com/en-us/library/azure/dn798921.aspx (https://msdn.microsoft.com/en-us/library/azure/dn798921.aspx) di MSDN.
 Daftar jendela aktivitas difilter oleh string pencarian yang ditentukan oleh parameter ini.
 
 ```yaml
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 
 ### -RunEnd
 Menentukan waktu akhir berjalannya jendela aktivitas.
-Cmdlet ini mendapatkan jendela aktivitas yang waktu jalankannya jatuh di *antara waktu RunStart* *dan RunEnd.*
+Cmdlet ini mendapatkan jendela aktivitas yang waktu jalankannya jatuh di *antara waktu RunStart* *dan RunEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 
 ### -RunStart
 Menentukan waktu mulai dari jendela aktivitas yang dijalankan.
-Cmdlet ini mendapatkan jendela aktivitas yang waktu jalankannya jatuh di *antara waktu RunStart* *dan RunEnd.*
+Cmdlet ini mendapatkan jendela aktivitas yang waktu jalankannya jatuh di *antara waktu RunStart* *dan RunEnd* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -377,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

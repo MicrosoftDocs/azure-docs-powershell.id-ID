@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: c1cf98ebc41e37194464e56e52520f30aa7981fa2a4c12798a3cb74e6aca01f5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 399c4030f9cd3efd04ec41ce3ab3475f0a660f4f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414319"
 ---
 # New-AzDataBoxEdgeStorageAccountCredential
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Kemungkinan Storage Access GeneralPurposeStorage, BlockStorage
+Kemungkinan Storage Access generalPurposeStorage, BlockStorage
 
 ```yaml
 Type: System.String

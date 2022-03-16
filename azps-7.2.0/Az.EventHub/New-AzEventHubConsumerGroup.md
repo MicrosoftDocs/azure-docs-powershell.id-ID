@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubConsumerGroup.md
-ms.openlocfilehash: c6cf52f93a3791da02d87e6404116e2c227bd5c8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eb9e81cd2c8e572fb011e93c82d6d0503ed21ffc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313820"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924009"
 ---
 # New-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Membuat grup konsumen baru untuk Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/new-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 

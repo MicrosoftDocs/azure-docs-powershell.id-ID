@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Select-AzProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Select-AzProfile.md
-ms.openlocfilehash: 4d6ea831f85b2620626018e4425bb595fabd8327512163eb01340244c890147f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 04b98f15def219c269bf18f21fb371822cc97f6d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413873"
 ---
 # Select-AzProfile

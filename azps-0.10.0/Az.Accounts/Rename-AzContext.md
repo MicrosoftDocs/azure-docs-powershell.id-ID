@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Rename-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Rename-AzContext.md
-ms.openlocfilehash: 3a0ce37e61d7504d507557ad6ec03f3c00417e952333bd96e926e465dafb681d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 00f9b84c1e3e8a5bb9a506952cce9ab45e55b9e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413879"
 ---
 # Rename-AzContext
@@ -42,14 +42,14 @@ Ganti nama konteks Azure.  Secara default konteks diberi nama berdasarkan akun p
 PS C:\> Rename-AzContext -SourceName "[user1@contoso.org; 12345-6789-2345-3567890]" -TargetName "Work"
 ```
 
-Ganti nama konteks untuk ' dengan langganan user1@contoso.org '12345-6789-2345-3567890' ke 'Kerja'.  Setelah perintah ini, Anda akan bisa menargetkan konteks menggunakan 'Select-AzContext Work'.  Perhatikan bahwa Anda dapat tab melalui nilai untuk 'SourceName' menggunakan penyelesaian tab.
+Ganti nama konteks untuk 'user1@contoso.org' dengan langganan '12345-6789-2345-3567890' menjadi 'Kerja'.  Setelah perintah ini, Anda akan bisa menargetkan konteks menggunakan 'Select-AzContext Work'.  Perhatikan bahwa Anda dapat tab melalui nilai untuk 'SourceName' menggunakan penyelesaian tab.
 
 ### Mengganti nama konteks menggunakan parameter posisi
 ```
 PS C:\> Rename-AzContext "My context" "Work"
 ```
 
-Ganti nama konteks bernama "Konteks saya" menjadi "Kerja".  Setelah perintah ini, Anda akan bisa menargetkan konteks menggunakan Select-AzContext Bekerja
+Ganti nama konteks bernama "Konteks saya" menjadi "Kerja".  Setelah perintah ini, Anda akan dapat menargetkan konteks menggunakan Select-AzContext Bekerja
 
 ## PARAMETERS
 

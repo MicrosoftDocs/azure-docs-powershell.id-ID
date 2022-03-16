@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
-ms.openlocfilehash: 8d4b6b6035a443f52fc1c21e4993132c7d91e67c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 06350833b40490c6f1c616e4473cb58eaee1fb8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258604"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139922407"
 ---
 # Get-AzLogzMonitoredResource
 
 ## SYNOPSIS
 List the resources currently being monitored by the Logz monitor resource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/get-azlogzmonitoredresource) untuk informasi terkini.
 
 ## SYNTAX
 

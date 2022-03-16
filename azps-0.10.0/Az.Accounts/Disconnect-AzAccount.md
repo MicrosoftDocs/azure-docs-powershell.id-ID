@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/d
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Disconnect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Disconnect-AzAccount.md
-ms.openlocfilehash: 44d3d4a50cc1a5d7efada5cd75e806d0ac21394c1d72b68d0639ceab997b2d97
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bc266e7bf0df9897b24b8bd44575bb860cf8736a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414184"
 ---
 # Disconnect-AzAccount
@@ -50,7 +50,7 @@ Disconnect-AzAccount [-AzureContext] <PSAzureContext> [-Scope <ContextModificati
 ```
 
 ## DESCRIPTION
-Cmdlet Disconnect-AzAccount cmdlet memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks (informasi langganan dan penyewa) yang terkait dengan akun tersebut.
+Cmdlet Disconnect-AzAccount jaringan memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks (informasi langganan dan penyewa) yang terkait dengan akun tersebut.
 Setelah menjalankan cmdlet ini, Anda perlu masuk lagi menggunakan Koneksi-AzAccount.
 
 ## EXAMPLES
@@ -74,7 +74,7 @@ Mengeluarkan akun yang terkait dengan konteks yang diberikan (bernama 'Pekerjaan
 PS C:\> Disconnect-AzAccount -Username 'user1@contoso.org'
 ```
 
-Mengeluarkan pengguna user1@contoso.org ' ' - semua kredensial dan semua konteks yang terkait dengan pengguna ini akan dihapus.
+Mengeluarkan pengguna 'user1@contoso.org', semua kredensial dan semua konteks yang terkait dengan pengguna ini akan dihapus.
 
 ## PARAMETERS
 
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama pengguna
-Nama pengguna formulir user@contoso.org ' '
+Nama pengguna formulir 'user@contoso.org'
 
 ```yaml
 Type: System.String

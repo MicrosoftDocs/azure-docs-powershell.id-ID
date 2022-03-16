@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Network.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.network.admin/get-azsnetworkadminoverview
 schema: 2.0.0
-ms.openlocfilehash: 6ec40a30ed6be291b24caac5a918828f194b01edea31d95c08c24478a33fc053
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8559b8cdde324c3927ac835f49291441a4e58847
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413898"
 ---
 # Get-AzsNetworkAdminOverview
@@ -109,7 +109,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <INetworkAdminIdentity> : Parameter Identitas
+INPUTOBJECT <INetworkAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya.

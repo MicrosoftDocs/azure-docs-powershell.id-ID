@@ -6,11 +6,11 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/AzureRM.ContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/AzureRM.ContainerRegistry.md
-ms.openlocfilehash: d273e56f7e93292a694d2b7ec8f7255df27f8d605ddecb1feb575e5f63c9a785
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 145f231abc6689d9cde58bdb5204138f9a579cbc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413979"
 ---
 # AzureRM.ContainerRegistry Module

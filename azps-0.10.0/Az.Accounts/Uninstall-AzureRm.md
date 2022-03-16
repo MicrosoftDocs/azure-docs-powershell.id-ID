@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Uninstall-AzureRm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Uninstall-AzureRm.md
-ms.openlocfilehash: 4e5b73aa767f08bb7f4c39713a2abf079b2af40836f6595c4ce1c0dcc541dfb8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: da9fa6503e76d9af8efbdff84ebbcdd501d8232d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413862"
 ---
 # Uninstall-AzureRm
@@ -34,7 +34,7 @@ Menghapus semua modul AzureRm dari komputer.
 PS C:\> Uninstall-AzureRm
 ```
 
-Menjalankan perintah ini akan menghapus semua modul AzureRm dari komputer untuk versi PowerShell tempat cmdlet dijalankan.
+Menjalankan perintah ini akan menghapus semua modul AzureRm dari komputer untuk versi PowerShell yang menjalankan cmdlet.
 
 ## PARAMETERS
 

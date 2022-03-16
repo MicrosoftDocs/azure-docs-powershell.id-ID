@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMDataDisk.md
-ms.openlocfilehash: 6e75a3fcee001bcb4b42980851c5533dce4473c581e3f6fd1e257ac893dd4c45
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b927e9b61e4d76795e35f2356b900b959a94e082
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414092"
 ---
 # Set-AzVMDataDisk
@@ -49,7 +49,7 @@ Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunaka
 Perintah menyimpannya di $VM variabel.
 
 Perintah kedua memodifikasi mode cache untuk disk data yang bernama DataDisk01 di komputer virtual dalam $VM.
-Perintah meneruskan hasil ke cmdlet Update-AzVM, yang menerapkan perubahan Anda.
+Perintah melewati hasil ke cmdlet Update-AzVM, yang mengimplementasikan perubahan Anda.
 Perubahan pada mode kas menyebabkan mesin virtual memulai ulang.
 
 ## PARAMETERS
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan mesin virtual yang digunakan cmdlet ini untuk memodifikasi disk data.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
 
 ```yaml
 Type: PSVirtualMachine
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

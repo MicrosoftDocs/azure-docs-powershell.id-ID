@@ -6,11 +6,11 @@ Help Version: 4.1.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Az.DNS.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Dns/Dns/help/Az.DNS.md
-ms.openlocfilehash: 48938b6b08a0cb840f3401a0cc2513b370f7907cf325c06acfc11ddfcf8e8de6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e2727340bcd4dcb2a8e29ec9a4e72600cde61f2b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414301"
 ---
 # Az.DNS Module

@@ -4,11 +4,11 @@ Module Guid: 36c9368d-435f-401d-92e3-a02d918fa4e0
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.infrastructureinsights.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: c195d787005bf3e5f1ce68410233ee3bae5afd3b7fbb83b2f3723f34912313d9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c45925d775df745b2b505b26c013df15646a6a07
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414202"
 ---
 # Azs.InfrastructureInsights.Admin Module

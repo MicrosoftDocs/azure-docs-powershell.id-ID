@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.accounts/c
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Connect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Connect-AzAccount.md
-ms.openlocfilehash: d6f209f571b2bb134d9e6c52a4364ab70d0fb8ae36b2b252b9bf83330a399231
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 87e8615e7862e8b3314c9dace4849621a8ed4c78
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414191"
 ---
 # Connect-AzAccount
@@ -70,7 +70,7 @@ Connect-AzAccount [-Environment <String>] [-Tenant <String>] [-AccountId <String
 ## DESCRIPTION
 Cmdlet Connect-AzAccount tersambung ke Azure dengan akun terautentikasi untuk digunakan dengan permintaan cmdlet Azure Resource Manager.
 Anda dapat menggunakan akun terautentikasi ini hanya dengan cmdlet Azure Resource Manager.
-Untuk menambahkan akun terautentikasi untuk digunakan dengan cmdlet Manajemen Layanan, gunakan Add-AzAccount atau cmdlet Import-AzPublishSettingsFile cmdlet.
+Untuk menambahkan akun terautentikasi untuk digunakan dengan cmdlet Manajemen Layanan, gunakan Add-AzAccount atau Import-AzPublishSettingsFile cmdlet.
 Jika tidak ada konteks yang ditemukan untuk pengguna saat ini, perintah ini akan mengisi daftar konteks pengguna dengan konteks untuk setiap langganan (25 pertama). Daftar konteks yang dibuat untuk pengguna dapat ditemukan dengan menjalankan "Get-AzContext -ListAvailable". Untuk melewati populasi konteks ini, Anda bisa menjalankan perintah ini dengan parameter sakelar "-SkipContextPopulation".
 Setelah menjalankan cmdlet ini, Anda dapat memutuskan sambungan dari akun Azure menggunakan Disconnect-AzAccount.
 
@@ -152,7 +152,7 @@ yyyy-yyyy-yyyy-yyyy    Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
 Perintah ini tersambung menggunakan identitas layanan terkelola dari "myUserAssignedIdentity" dengan menambahkan Identitas Ditetapkan Pengguna ke Komputer Virtual, lalu menyambungkan menggunakan ClientId dari Identitas yang Ditetapkan Pengguna.
-Informasi selengkapnya tentang mengonfigurasi Identitas yang Dikelola bisa ditemukan di sini: https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm .
+Informasi selengkapnya tentang mengonfigurasi Identitas yang Dikelola bisa ditemukan di sini: https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm.
 
 ### Contoh 7: Tambahkan Akun Menggunakan Login dan ClientId Identitas Layanan Terkelola
 ```powershell
@@ -166,7 +166,7 @@ yyyy-yyyy-yyyy-yyyy    Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
 ```
 
 Perintah ini tersambung menggunakan identitas layanan terkelola dari "myUserAssignedIdentity" dengan menambahkan Identitas Ditetapkan Pengguna ke Komputer Virtual, lalu menyambungkan menggunakan Id Identitas yang Ditetapkan Pengguna.
-Informasi selengkapnya tentang mengonfigurasi Identitas yang Dikelola bisa ditemukan di sini: https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm .
+Informasi selengkapnya tentang mengonfigurasi Identitas yang Dikelola bisa ditemukan di sini: https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm.
 
 ### Contoh 8: Menambahkan akun menggunakan sertifikat
 ```powershell

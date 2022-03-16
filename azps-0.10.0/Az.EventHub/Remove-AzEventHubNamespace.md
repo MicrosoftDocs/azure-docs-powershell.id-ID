@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
-ms.openlocfilehash: cafbf4b0672a2b74ff112dab74ef7ee977369bd4ed6eee834b48911e79d96d8d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 38a727c2e632173befe6b5b08756d558a9c9f177
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414013"
 ---
 # Remove-AzEventHubNamespace
@@ -38,7 +38,7 @@ Remove-AzEventHubNamespace [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubNamespace menghapus ruang nama Hub Kejadian yang ditentukan.
+Cmdlet Remove-AzEventHubNamespace menghapus dan menghapus ruang nama Hub Kejadian yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Cmdlet Remove-AzEventHubNamespace menghapus ruang nama Hub Kejadian yang ditentu
 PS C:\> Remove-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -Name MyNamespaceName
 ```
 
-Menghapus ruang nama Hub Kejadian \` MyNamespaceName dalam \` grup sumber daya \` MyResourceGroupName \` .
+Menghapus ruang nama Hub Kejadian \`MyNamespaceName dalam\` grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2.1 - InputObject - Menggunakan Variabel:
 ```
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

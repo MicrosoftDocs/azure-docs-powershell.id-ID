@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.policyinsights/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Remove-AzPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PolicyInsights/PolicyInsights/help/Remove-AzPolicyRemediation.md
-ms.openlocfilehash: 82f8cc53023cb14bc656044b2406318342d89dd5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e8acc8d07f0ccd92016804480d78ce1a05e4b919
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272300"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229301"
 ---
 # Remove-AzPolicyRemediation
 
 ## SYNOPSIS
 Menghapus perbaikan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.policyinsights/remove-azpolicyremediation) untuk informasi terkini.
 
 ## SYNTAX
 

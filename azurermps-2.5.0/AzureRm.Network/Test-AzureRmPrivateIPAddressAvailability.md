@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 ms.assetid: 0780CB09-9C3B-468A-A718-3A646FE3D152
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/test-azurermprivateipaddressavailability
 schema: 2.0.0
-ms.openlocfilehash: b4538530328561e436915594c0d1f2fbd345c7edcd25788a266278163e5b744d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 73924c1d1308a4cf457033e27e49ad7f9e19392e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414458"
 ---
 # Test-AzureRmPrivateIPAddressAvailability
@@ -43,7 +43,7 @@ Cmdlet ini mengembalikan daftar alamat IP privat yang tersedia jika alamat IP pr
 PS C:\>Get-AzureRmVirtualNetwork -Name $vnetName -ResourceGroupName $rgname | Test-AzureRmPrivateIPAddressAvailability -IPAddress "10.0.1.10"
 ```
 
-Perintah ini mendapatkan jaringan virtual dan menggunakan operator pipeline untuk meneruskannya ke **Test-AzureRmPrivateIPAddressAvailability**, yang menguji apakah alamat IP privat tertentu tersedia.
+Perintah ini akan mendapatkan jaringan virtual dan menggunakan operator pipeline untuk meneruskannya ke **Test-AzureRmPrivateIPAddressAvailability**, yang menguji apakah alamat IP privat tertentu tersedia.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek **PSVirtualNetwork.**
+Menentukan objek **PSVirtualNetwork** .
 
 ```yaml
 Type: PSVirtualNetwork
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

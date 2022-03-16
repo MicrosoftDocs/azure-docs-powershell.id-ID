@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoutingEndpoint.md
-ms.openlocfilehash: 086255b7e3a66464ceb96c6bd732d02815c79ca8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 96f27b272cc176fef0484bfe4a3cafa7dcd9c92e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294364"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139922875"
 ---
 # Get-AzIotHubRoutingEndpoint
 
 ## SYNOPSIS
 Dapatkan informasi tentang semua titik akhir untuk IoT Hub Anda
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubroutingendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

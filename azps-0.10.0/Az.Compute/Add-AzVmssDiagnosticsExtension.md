@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzVmssDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzVmssDiagnosticsExtension.md
-ms.openlocfilehash: 5c3cad76741bf3bfb1bdfc2d884f7f093f2e1b46dd0f90bd9894f870957e088b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f84d9f823d97872d8ad2491a2ab45ef3bb5a22a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413855"
 ---
 # Add-AzVmssDiagnosticsExtension
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -TypeHandlerVersion
 Menentukan versi ekstensi yang akan digunakan untuk VMSS ini.
-Untuk mendapatkan versi, jalankan cmdlet [Get-AzVMExtensionImage](./Get-AzVMExtensionImage.md) dengan nilai Microsoft.Azure.Diagnostics untuk parameter *PublisherName* dan IaaSDiagnostics untuk parameter *Type.*
+Untuk mendapatkan versi, jalankan cmdlet [Get-AzVMExtensionImage](./Get-AzVMExtensionImage.md) dengan nilai Microsoft.Azure.Diagnostics untuk parameter *PublisherName* dan IaaSDiagnostics untuk parameter *Type* .
 
 ```yaml
 Type: String
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

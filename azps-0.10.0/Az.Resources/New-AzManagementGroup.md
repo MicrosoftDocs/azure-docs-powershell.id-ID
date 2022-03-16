@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.resources/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzManagementGroup.md
-ms.openlocfilehash: 7a737d3a014931ec35f30cb9f78ed31c19b8a918aeb2ca581d8fc3b2f5450bf9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fc16d7ba4600e29c449469202046639a2f805fc2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413811"
 ---
 # New-AzManagementGroup
@@ -53,7 +53,7 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Pembuatan grup baru dengan `DisplayName` dan `ParentId` mengatur ke `null` . `DisplayName`The will be same as the and the parent of the group will be the `GroupName` tenant.  
+Pembuatan grup baru dengan dan `DisplayName` mengatur `ParentId` ke `null`. The `DisplayName` will be same as the `GroupName` and the parent of the group will be the tenant.  
 
 ### Contoh 2: Membuat Grup Manajemen dengan nama tampilan
 ```
@@ -71,7 +71,7 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Dalam kasus ini, induk grup akan menjadi penyewa dan `DisplayName` akan diatur ke nilai yang diberikan.
+Dalam kasus ini, induk grup akan menjadi penyewa dan akan `DisplayName` diatur ke nilai yang diberikan.
 
 ### Contoh 3: Buat Grup Manajemen dengan induk dan nama tampilan
 ```
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

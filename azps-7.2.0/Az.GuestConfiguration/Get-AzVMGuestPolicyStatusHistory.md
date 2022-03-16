@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.guestconfigurati
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
-ms.openlocfilehash: 15a0b856b1e5f5176c0746185375f289f2d15651
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 02a4d57be32edb1128f5c528125f53b4e563ce69
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294443"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923505"
 ---
 # Get-AzVMGuestPolicyStatusHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu atas inisiatif tipe "Konfigurasi Tamu" yang ditetapkan pada VM.
 Inisiatif adalah kebijakan tipe definisi "Inisiatif".
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.guestconfiguration/get-azvmguestpolicystatushistory) untuk informasi terkini.
 
 ## SYNTAX
 

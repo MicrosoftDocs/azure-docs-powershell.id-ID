@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/st
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Stop-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Stop-AzStorageFileCopy.md
-ms.openlocfilehash: 48ad8953869f4cbdb66c4c92e636b355c719cf6f827daf5341a10598b6ff498f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ce00ee3fa67477bfdced040fb8c990ff11dc4504
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413798"
 ---
 # Stop-AzStorageFileCopy
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan objek **CloudFile.**
+Menentukan objek **CloudFile** .
 Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
 
 ```yaml

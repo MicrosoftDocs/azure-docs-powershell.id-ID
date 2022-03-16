@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleHistory.md
-ms.openlocfilehash: ce3a1a2a72922c5fb7867064ddf7d7bc5577113d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 68ebfd29cbcf80e6ee22c5b578e3c24f17e2da71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164608"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921993"
 ---
 # Get-AzAutoscaleHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azautoscalehistory) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Remove-AzPurviewDefaultAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Remove-AzPurviewDefaultAccount.md
-ms.openlocfilehash: 6ffd0813ff96334e5a59b4ead7d6e179fbd6b4ff
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 721387906f9447efd5e6f98056d4a5a552388953
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298556"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228887"
 ---
 # Remove-AzPurviewDefaultAccount
 
 ## SYNOPSIS
 Menghapus akun default dari lingkup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/remove-azpurviewdefaultaccount) untuk informasi terkini.
 
 ## SYNTAX
 

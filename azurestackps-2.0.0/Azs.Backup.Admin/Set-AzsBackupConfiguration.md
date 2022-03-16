@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Backup.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.backup.admin/set-azsbackupconfiguration
 schema: 2.0.0
-ms.openlocfilehash: d2710b6781cf5d6e09a3e9fc83f20194e881ee63d8aad49c177395ce8e1c3381
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c99e2c549cc865a5f7f9ad0d7c3252cbf6651e98
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414223"
 ---
 # Set-AzsBackupConfiguration
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -340,12 +340,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-PENCADANGAN <IBackupLocation> : Informasi tentang lokasi pencadangan.
+PENCADANGAN <IBackupLocation>: Informasi tentang lokasi pencadangan.
   - `[Location <String>]`: Lokasi sumber daya.
   - `[Tag <IResourceTags>]`: Daftar pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[BackupFrequencyInHours <Int32?>]`: Interval, dalam jam, untuk frekuensi yang digunakan penjadwal untuk cadangan.
-  - `[BackupRetentionPeriodInDays <Int32?>]`: Periode penyimpanan, dalam beberapa hari, untuk mundur di lokasi penyimpanan.
+  - `[BackupRetentionPeriodInDays <Int32?>]`: Periode penyimpanan, dalam beberapa hari, untuk cadangan di lokasi penyimpanan.
   - `[EncryptionCertBase64 <String>]`: Data mentah base64 untuk sertifikat enkripsi cadangan.
   - `[IsBackupSchedulerEnabled <Boolean?>]`: True jika penjadwal cadangan diaktifkan.
   - `[Password <String>]`: Kata sandi untuk mengakses lokasi.

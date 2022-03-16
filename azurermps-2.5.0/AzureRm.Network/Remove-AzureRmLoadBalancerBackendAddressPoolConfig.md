@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 ms.assetid: F965A9DE-645C-471B-84E8-58D648B1CA57
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermloadbalancerbackendaddresspoolconfig
 schema: 2.0.0
-ms.openlocfilehash: 8e8f2202be2ede12d109b4583c9e7fd8fb4eba86c16f13135e3d2ee6a37c36db
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9bbfa0aec2da00ada25fc4bb8a5334f67e80e41a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413581"
 ---
 # Remove-AzureRmLoadBalancerBackendAddressPoolConfig
@@ -35,7 +35,7 @@ Cmdlet **Remove-AzureRmLoadBalancerBackendAddressPoolConfig** menghapus pool ala
 PS C:\>Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup" | Remove-AzureRmLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzureRmLoadBalancer
 ```
 
-Perintah ini mendapatkan penyeimbang muat bernama MyLoadBalancer dan mengirimnya ke **Remove-AzureRmLoadBalancerBackendAddressPoolConfig,** yang menghapus konfigurasi BackendAddressPool02 dari MyLoadBalancer.
+Perintah ini mendapatkan penyeimbang muat bernama MyLoadBalancer dan mengirimnya ke **Remove-AzureRmLoadBalancerBackendAddressPoolConfig**, yang menghapus konfigurasi BackendAddressPool02 dari MyLoadBalancer.
 Terakhir, cmdlet Set-AzureRmLoadBalancer cmdlet MyLoadBalancer.
 Perhatikan bahwa konfigurasi pool alamat backend harus ada sebelum Anda bisa menghapusnya.
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

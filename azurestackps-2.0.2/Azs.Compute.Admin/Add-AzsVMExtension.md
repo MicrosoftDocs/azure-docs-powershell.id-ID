@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/add-azsvmextension
 schema: 2.0.0
-ms.openlocfilehash: a9e9b95aa59ad33ab99996f7740bc327b9f1be590fdce80f863bf8b8674e9068
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a9c5a207d478fe40181150206990cb47ad4e45d5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414370"
 ---
 # Add-AzsVMExtension
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -387,7 +387,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-EKSTENSI <IVMExtensionParameters> : Parameter yang digunakan untuk membuat Gambar Ekstensi Mesin Virtual baru.
+EKSTENSI <IVMExtensionParameters>: Parameter yang digunakan untuk membuat Gambar Ekstensi Mesin Virtual baru.
   - `[ComputeRole <String>]`: Peran perhitungan
   - `[IsSystemExtension <Boolean?>]`: Menunjukkan jika ekstensi tersebut untuk sistem.
   - `[ProvisioningState <ProvisioningState?>]`: Status provisi ekstensi.
@@ -397,7 +397,7 @@ EKSTENSI <IVMExtensionParameters> : Parameter yang digunakan untuk membuat Gamba
   - `[VMScaleSetEnabled <Boolean?>]`: Nilai yang menunjukkan apakah ekstensi diaktifkan untuk dukungan kumpulan skala mesin virtual.
   - `[VmosType <OSType?>]`: Targetkan tipe sistem operasi mesin virtual yang diperlukan untuk menggunakan penanganan ekstensi.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
   - `[DiskId <String>]`: Disk guid sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.

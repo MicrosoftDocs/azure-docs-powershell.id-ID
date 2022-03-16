@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsWorkspace.md
-ms.openlocfilehash: 6b18c83f6b5a4a648e9009d1682c1b22e6cc5378
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4c891282c96b0f44735087365b0583462328323a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316619"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229553"
 ---
 # New-AzOperationalInsightsWorkspace
 
 ## SYNOPSIS
 Membuat ruang kerja, atau memulihkan ruang kerja yang dihapus sementara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ PS C:\>$OILinkTargets = Get-AzOperationalInsightsLinkTargets
 PS C:\>$OILinkTargets[0] | New-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsLinkTargets cmdlet untuk mendapatkan target link akun operasi Insights, lalu menyimpannya dalam variabel $OILinkTargets lain.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsLinkTargets cmdlet untuk mendapatkan target link akun operasi Insights, lalu menyimpannya dalam variabel $OILinkTargets operasi.
 Perintah kedua melewati target link akun pertama di $OILinkTargets ke cmdlet **New-AzOperationalInsightsWorkspace** dengan menggunakan operator pipeline.
 Perintah ini membuat ruang kerja SKU standar bernama MyWorkspace yang ditautkan ke akun Insights Operasional pertama di $OILinkTargets.
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-Izinkan untuk menolak autentikasi lokal dan memastikan bahwa pelanggan hanya dapat menggunakan MSI dan AAD untuk autentikasi eksklusif
+Izinkan untuk tidak menggunakan autentikasi lokal dan memastikan bahwa pelanggan hanya dapat menggunakan MSI AAD untuk autentikasi eksklusif
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -301,4 +304,4 @@ Model harga baru telah dirilis. Jika Merupakan CSP, Anda harus menggunakan "mand
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)

@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzVpnClientRevokedCertificate.md
-ms.openlocfilehash: 1729b7910ecffaddbf61a8ea870f56b158fd16defe9d08eb77a4c69067c13fd8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3ea5a6ba20b02fd7289e597683d97c1513aa9873
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414002"
 ---
 # Remove-AzVpnClientRevokedCertificate
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ### -Thumbprint
 Menentukan pengidentifikasi unik sertifikat yang dihapus.
 
-Anda bisa mengembalikan informasi yang dapat dicetak dengan jempol untuk sertifikat Anda dengan menggunakan Windows PowerShell seperti ini:
+Anda dapat mengembalikan informasi yang dapat dicetak dengan jempol pada sertifikat menggunakan Windows PowerShell seperti ini:
 
 `Get-ChildItem -Path "Cert:\LocalMachine\Root"`
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Commerce.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.commerce.admin/get-azssubscriberusage
 schema: 2.0.0
-ms.openlocfilehash: 596815ffdb3f5a241259b1011bc67d4311c882b9489c374a72efa284323122eb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9eed3f6f2a4d07bd48136c50ec173f801b30c928
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414212"
 ---
 # Get-AzsSubscriberUsage

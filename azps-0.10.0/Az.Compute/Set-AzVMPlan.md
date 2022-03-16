@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMPlan.md
-ms.openlocfilehash: da15845a14393004632c31493bea54485ec1d3b0675ce22844506c017aa016eb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1354d70217dda39d5fb58b62eb60a844c90d3757
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414355"
 ---
 # Set-AzVMPlan
@@ -51,8 +51,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama gambar dari Marketplace.
-Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzVMImageSku cmdlet.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam Microsoft Azure ter documentation.
+Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzVMImageSku.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam Microsoft Azure ter dokumentasi.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

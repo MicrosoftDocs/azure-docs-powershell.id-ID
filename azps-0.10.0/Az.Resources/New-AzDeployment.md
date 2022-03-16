@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.resources/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/New-AzDeployment.md
-ms.openlocfilehash: ea469fc2bf74ac86a3dcff88f17954f644b1974d3c4ea1c10368b0d61dba2469
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 97d6b11a4993ced62b84de24c501a2c438173141
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413815"
 ---
 # New-AzDeployment
@@ -81,18 +81,18 @@ Ini termasuk sumber daya yang diperlukan penyebaran.
 
 Sumber daya Azure adalah entitas Azure yang dikelola pengguna. Sumber daya bisa berada di grup sumber daya, seperti server database, database, situs web, mesin virtual, Storage Anda. Atau, ini bisa menjadi sumber daya tingkat langganan, seperti definisi peran, definisi kebijakan, dll.
 
-Untuk menambahkan sumber daya ke grup sumber daya, gunakan Grup Sumber Daya **Baru-AzDeployment** yang membuat penyebaran di grup sumber daya.
+Untuk menambahkan sumber daya ke grup sumber daya, **gunakan Grup Sumber Daya Baru-AzDeployment** yang membuat penyebaran di grup sumber daya.
 Cmdlet **New-AzDeployment** membuat penyebaran di lingkup langganan saat ini, yang menggunakan sumber daya tingkat langganan. 
 
 Untuk menambahkan penyebaran di langganan, tentukan lokasi dan templat.
 Lokasi memberi tahu Azure Resource Manager tentang tempat untuk menyimpan data penyebaran. Templat tersebut adalah string JSON yang berisi sumber daya individu yang akan digunakan.
 Templat ini menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
 
-Untuk menggunakan templat kustom untuk penggunaan, tentukan parameter *TemplateFile* atau parameter *TemplateUri.*
+Untuk menggunakan templat kustom untuk penggunaan, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
-Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject.*
+Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject* .
 Alternatifnya, Anda bisa menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
-Untuk menggunakan parameter dinamis, ketikkan parameter dinamis di prompt perintah, atau ketik tanda minus (-) untuk menunjukkan parameter dan gunakan tombol Tab untuk melihat parameter yang tersedia.
+Untuk menggunakan parameter dinamis, ketik parameter dinamis di prompt perintah, atau ketik tanda minus (-) untuk mengindikasikan parameter dan gunakan tombol Tab untuk melihat parameter yang tersedia.
 Nilai parameter templat yang Anda masukkan di prompt perintah lebih diprioritaskan ke prioritas dalam objek parameter templat atau file.
 
 ## EXAMPLES
@@ -104,7 +104,7 @@ PS C:\>New-AzDeployment -Location "West US" -TemplateFile "D:\Azure\Templates\En
 
 Perintah ini membuat penyebaran baru di lingkup langganan saat ini dengan menggunakan templat kustom dan file templat di disk.
 Perintah menggunakan parameter *TemplateFile* untuk menentukan templat dan parameter *TemplateParameterFile* untuk menentukan file yang berisi parameter dan nilai parameter.
-Templat ini menggunakan parameter *TemplateVersion* untuk menentukan versi template.
+Templat ini *menggunakan parameter TemplateVersion* untuk menentukan versi template.
 
 ## PARAMETERS
 
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

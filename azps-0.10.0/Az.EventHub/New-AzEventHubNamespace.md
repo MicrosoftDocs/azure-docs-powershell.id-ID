@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
-ms.openlocfilehash: 82f86a9e563deb9b57cfd7876cd5da9acaf78d7fe42808499b621a9a9d2719c4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 592af2c1ecd26e3e744845ae24e8f9c71cf0b0f3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414017"
 ---
 # New-AzEventHubNamespace
@@ -59,7 +59,7 @@ IsAutoInflateEnabled   : False
 MaximumThroughputUnits : 0
 ```
 
-Membuat ruang nama Hub Kejadian \` MyNamespaceName \` di lokasi geografis tertentu \` MyLocation , di grup sumber daya \` \` MyResourceGroupName \` .
+Membuat ruang nama Hub Kejadian \`MyNamespaceName di\` lokasi geografis \`tertentu MyLocation\`, di grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```
@@ -81,7 +81,7 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 10
 ```
 
-Membuat ruang nama Hub Kejadian MyNamespaceName di lokasi geografis tertentu MyLocation , dalam grup sumber daya \` \` \` \` \` MyResourceGroupName \` dan AutoInservere diaktifkan dengan MaximumThroughputUnits 10.
+Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` dan AutoInsourcee diaktifkan dengan MaximumThroughputUnits 10.
 
 ### Contoh 3 - Ruang nama yang diaktifkan Junii
 ```
@@ -103,7 +103,7 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 12
 ```
 
-Membuat ruang nama Hub Kejadian MyNamespaceName di lokasi geografis tertentu MyLocation , di grup sumber daya \` \` \` \` \` MyResourceGroupName \` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
 
 ## PARAMETERS
 
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

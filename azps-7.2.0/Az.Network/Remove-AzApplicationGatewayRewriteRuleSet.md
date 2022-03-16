@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayRewriteRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayRewriteRuleSet.md
-ms.openlocfilehash: e21735a14a370591c229588e0eaac33b03fe4ed5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fe69d12777f9e287cb4f05f029564a753f4cf9e3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276812"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230237"
 ---
 # Remove-AzApplicationGatewayRewriteRuleSet
 
 ## SYNOPSIS
 Menghapus kumpulan aturan penulisan ulang dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayrewriteruleset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ PS C:\> Remove-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGw -Na
 PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $AppGw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel.
 Perintah kedua menghapus kumpulan aturan tulis ulang yang bernama RuleSet02 dari gateway aplikasi yang disimpan di $AppGw.
 Perintah terakhir memperbarui gateway aplikasi.
 

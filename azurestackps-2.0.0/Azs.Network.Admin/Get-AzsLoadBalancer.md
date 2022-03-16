@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Network.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.network.admin/get-azsloadbalancer
 schema: 2.0.0
-ms.openlocfilehash: 02bc1ae5acaa6953019da83a05e89901d0e5970082a952c692a08b459c789458
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1450a35252a3bd5e749a8ebdb60fda0e8ad35f88
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414480"
 ---
 # Get-AzsLoadBalancer

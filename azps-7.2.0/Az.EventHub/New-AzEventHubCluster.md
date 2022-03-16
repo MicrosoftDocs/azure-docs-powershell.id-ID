@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubCluster.md
-ms.openlocfilehash: 272a996716dedd51f8381128c1a363f36e220bf4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 818d110a0642f709d7a95fc2f75363a2ca296e4d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296891"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924027"
 ---
 # New-AzEventHubCluster
 
 ## SYNOPSIS
 Membuat kluster eventhub khusus baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/new-azeventhubcluster) untuk informasi terkini.
 
 ## SYNTAX
 

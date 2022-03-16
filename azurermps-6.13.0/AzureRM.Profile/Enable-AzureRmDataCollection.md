@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.profi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Enable-AzureRmDataCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Enable-AzureRmDataCollection.md
-ms.openlocfilehash: ee29a4b3d04299f81a6bffb445f69b23b79b3f23ca4ae6b2c4b64c0bd454a945
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 83c7bda6c7b41f857bac9b63afcca07baa6ecd93
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413926"
 ---
 # Enable-AzureRmDataCollection
@@ -29,11 +29,11 @@ Enable-AzureRmDataCollection [-DefaultProfile <IAzureContextContainer>] [-WhatIf
 ```
 
 ## DESCRIPTION
-Anda dapat meningkatkan pengalaman menggunakan Microsoft Cloud dan Azure PowerShell dengan memilih ikut serta dalam pengumpulan data.
+Anda dapat meningkatkan pengalaman menggunakan Microsoft Cloud dan Azure PowerShell dengan ikut serta dalam pengumpulan data.
 Azure PowerShell tidak mengumpulkan data tanpa persetujuan Anda - Anda harus secara eksplisit memilih dengan menjalankan Enable-AzureRmDataCollection, atau dengan menjawab ya ketika Azure PowerShell meminta Anda tentang mengumpulkan data saat pertama kali Anda menjalankan cmdlet.
-Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, guna mengidentifikasi masalah-masalah umum dan untuk meningkatkan pengalaman penggunaan Azure PowerShell.
+Microsoft menggabungkan data yang dikumpulkan untuk mengidentifikasi pola penggunaan, guna mengidentifikasi masalah umum dan untuk meningkatkan pengalaman penggunaan Azure PowerShell.
 Microsoft Azure PowerShell tidak mengumpulkan data pribadi apa pun, atau informasi pengenal pribadi apa pun.
-Jalankan cmdlet Enable-AzureRMDataCollection mengaktifkan pengumpulan data untuk pengguna saat ini di komputer saat ini.
+Jalankan cmdlet Enable-AzureRMDataCollection cmdlet untuk mengaktifkan pengumpulan data bagi pengguna saat ini di komputer saat ini.
 Tindakan ini akan mencegah pengguna saat ini ditanya tentang pengumpulan data saat cmdlet pertama kali dijalankan.
 Untuk menonaktifkan pengumpulan data bagi pengguna saat ini, jalankan cmdlet Disable-AzureRmDataCollection.
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

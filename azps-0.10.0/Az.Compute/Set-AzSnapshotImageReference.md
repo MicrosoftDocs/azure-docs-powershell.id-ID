@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzSnapshotImageReference.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzSnapshotImageReference.md
-ms.openlocfilehash: 44b41adae6fc3e7b5ca56e87f31828b0cabc1941f4a83813e1c333dc637a5b9d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 87786196e027597dc532bcaab2adfec4aa8c3892
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414101"
 ---
 # Set-AzSnapshotImageReference
@@ -37,7 +37,7 @@ PS C:\> $snapshotconfig = Set-AzSnapshotImageReference -Snapshot $snapshotconfig
 PS C:\> New-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -Snapshot $snapshotconfig;
 ```
 
-Perintah pertama membuat objek snapshot lokal dengan ukuran 10GB di Premium_LRS akun penyimpanan.  Sistem ini juga Windows OS.
+Perintah pertama membuat objek snapshot lokal dengan ukuran 10GB di Premium_LRS akun penyimpanan.  Sistem juga mengatur Windows OS.
 Perintah kedua mengatur ID gambar dan nomor unit logika 0 untuk snapshot jelas.
 Perintah terakhir mengambil objek snapshot dan membuat snapshot dengan nama 'Snapshot01' di grup sumber daya 'ResourceGroup01'.
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

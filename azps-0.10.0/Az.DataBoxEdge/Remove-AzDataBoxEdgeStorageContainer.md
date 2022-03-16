@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/Remove-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: cbc5b70f2f4f16d18441ae2a8569217fef02ec00f2d82315eaf28031252a0f51
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3cf8532871ce2f011eb7174118d80a7aee11a583
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414041"
 ---
 # Remove-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
-Menghapus tempat penyimpanan untuk Akun Storage Edge di perangkat.
+Menghapus tempat penyimpanan untuk akun Microsoft Edge Storage di perangkat.
 
 ## SYNTAX
 

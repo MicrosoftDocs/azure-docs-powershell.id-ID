@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Update.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.update.admin/get-azsupdaterun
 schema: 2.0.0
-ms.openlocfilehash: f768793c0f16264c2ea0ec3e5205d5f284abe3ad9f29a0a62a5fd5f1bb5fe09a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1a5cfb9f9bc7edb436d37847fc117565c3b71221
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414479"
 ---
 # Get-AzsUpdateRun
@@ -53,7 +53,7 @@ northwest/Microsoft1.1907.0.10/45aaeb... Failed          7/11/2019 3:07:10 PM   
 northwest/Microsoft1.1907.0.10/51e878... Succeeded       7/11/2019 3:07:10 PM      7/12/2019 6:47:37 AM
 ```
 
-Jika nilai UpdateName tidak ditentukan, Get-UpdateRun akan selalu meminta input.
+Jika nilai NamaUpdate tidak ditentukan, Get-UpdateRun akan selalu meminta input.
 Begitu disediakan, itu akan membuat output semua instans UpdateRun yang Gagal atau Berhasil
 
 ### Contoh 2: Get-AzsUpdateRun Menurut NamaMutakhir
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUpdateAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IUpdateAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[RunName <String>]`: Perbarui jalankan pengidentifikasi.

@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Set-AzVMSqlServerExtension.md
-ms.openlocfilehash: 59c0b061d34b60409e140db0ea3ef87e8f6b10a7756b5c30f424b749f0969add
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1795216cbc18da2d503a1e0056d614337cd12785
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414354"
 ---
 # Set-AzVMSqlServerExtension
@@ -38,14 +38,14 @@ PS C:\> $AutoPatchingConfig = New-AzureVMSqlServerAutoPatchingConfig -Enable -Da
 PS C:\> Get-AzVM -ServiceName "Service02" -Name "VirtualMachine11" | Set-AzVMSqlServerExtension -AutoPatchingSettings $AutoPatchingConfig | Update-AzVM
 ```
 
-Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoPatchingConfig.**
-Perintah menyimpan konfigurasi di $AutoPatchingConfig lain.
+Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoPatchingConfig** .
+Perintah menyimpan konfigurasi di $AutoPatchingConfig baru.
 
-Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 di layanan yang bernama Service02 menggunakan cmdlet Get-AzVM baru.
+Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 di layanan yang bernama Service02 dengan menggunakan cmdlet Get-AzVM baru.
 Perintah melewati objek itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 
 Cmdlet saat ini mengatur pengaturan patching otomatis $AutoPatchingConfig untuk mesin virtual.
-Perintah tersebut akan melewati mesin virtual ke Update-AzVM cmdlet.
+Perintah melewati mesin virtual ke Update-AzVM cmdlet.
 
 ### Contoh 2: Mengatur pengaturan pencadangan otomatis di komputer virtual
 ```
@@ -53,13 +53,13 @@ PS C:\> $AutoBackupConfig = New-AzureVMSqlServerAutoBackupConfig -Enable -Retent
 PS C:\> Get-AzVM -ServiceName "Service02" -Name "VirtualMachine11" | Set-AzVMSqlServerExtension -AutoBackupSettings $AutoBackupConfig | Update-AzVM
 ```
 
-Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoBackupConfig.**
+Perintah pertama membuat objek konfigurasi menggunakan cmdlet **New-AzureVMSqlServerAutoBackupConfig** .
 Perintah menyimpan konfigurasi di $AutoBackupConfig baru.
 
 Perintah kedua mendapatkan mesin virtual bernama VirtualMachine11 di layanan yang bernama Service02, lalu meneruskannya ke cmdlet saat ini.
 
 Cmdlet saat ini mengatur pengaturan pencadangan otomatis di $AutoBackupConfig untuk mesin virtual.
-Perintah tersebut akan melewati mesin virtual ke Update-AzVM cmdlet.
+Perintah melewati mesin virtual ke Update-AzVM cmdlet.
 
 ### Contoh 3: Menonaktifkan SQL Server ekstensi pada komputer virtual
 ```
@@ -81,7 +81,7 @@ Perintah akan menghapus instalan SQL Server ekstensi mesin virtual tersebut di k
 
 ### -AutoBackupSettings
 Menentukan pengaturan pencadangan SQL Server otomatis.
-Untuk membuat objek **AutoBackupSettings,** gunakan cmdlet New-AzureVMSqlServerAutoBackupConfig cmdlet.
+Untuk membuat objek **AutoBackupSettings** , gunakan cmdlet New-AzureVMSqlServerAutoBackupConfig cmdlet.
 
 ```yaml
 Type: AutoBackupSettings
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -AutoPatchingSettings
 Menentukan pengaturan patch SQL Server otomatis.
-Untuk membuat objek **AutoPatchingSettings,** gunakan cmdlet New-AzureVMSqlServerAutoPatchingConfig cmdlet.
+Untuk membuat objek **AutoPatchingSettings** , gunakan cmdlet New-AzureVMSqlServerAutoPatchingConfig cmdlet.
 
 ```yaml
 Type: AutoPatchingSettings
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

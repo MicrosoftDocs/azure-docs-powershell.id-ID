@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.databoxedg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/DataBoxEdge/DataBoxEdge/help/New-AzDataBoxEdgeStorageAccount.md
-ms.openlocfilehash: c5d93b389fa0e7df2df15045db67ed7ea10dc8a677a049e8db8416a2777b9e23
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 12f77d1c2b9590ef500e1df66d36929cd359a989
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414052"
 ---
 # New-AzDataBoxEdgeStorageAccount
@@ -26,7 +26,7 @@ New-AzDataBoxEdgeStorageAccount [-ResourceGroupName] <String> [-DeviceName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Data Box Edge. Untuk satu perangkat, satu akun Storage Edge dapat dipetakan paling banyak hanya ke satu akun Storage Cloud.
+Cmdlet **New-AzDataBoxEdgeStorageAccount** membuat akun Storage Edge baru di perangkat Microsoft Edge Kotak Data. Untuk satu perangkat, satu akun Storage Edge dapat dipetakan paling banyak hanya ke satu akun Storage Cloud.
 
 ## EXAMPLES
 

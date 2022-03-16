@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 0604d1a97c6b56adf1b379c33adb0babe79ab841
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1069ea9469cc4b90d3ca83757a259ddbbebcb6d8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266684"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140229427"
 ---
 # Set-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Memperbarui Storage Insight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsstorageinsight) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,21 +44,21 @@ Cmdlet **Set-AzOperationalInsightsStorageInsight** mengubah konfigurasi layanan 
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi Storage Insight menurut nama
+### Contoh 1: Modify a Storage Insight by name
 ```
 PS C:\>Set-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight" -Tables @("WADWindowsEventLogsTable")
 ```
 
-Perintah ini mengubah tabel yang darinya wawasan Storage bernama MyStorageInsight dibaca.
+Perintah ini mengubah tabel yang dibaca oleh Storage bernama MyStorageInsight.
 
-### Contoh 2: Memodifikasi Storage Insight dengan menggunakan objek ruang kerja
+### Contoh 2: Mengubah Storage Insight dengan menggunakan objek ruang kerja
 ```
 PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
 PS C:\>Set-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -Containers @("wad-iis-logfiles")
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace terbatas.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace variabel.
 Perintah kedua mengubah wadah yang darinya wawasan Storage bernama MyStorageInsight dibaca.
 
 ## PARAMETERS
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Storage Wawasan
+Tag wawasan Storage
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -274,7 +277,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 [Get-AzOperationalInsightsWorkspace](./Get-AzOperationalInsightsWorkspace.md)
 

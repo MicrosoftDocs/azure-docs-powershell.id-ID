@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Get-AzDiagnosticSetting.md
-ms.openlocfilehash: 3933a579c0ddbc9f7ea73c8b82d0cb16a0cc04426bea6083f06ae98b0e4794d6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5353009c2001d043511e7e6af23fb7d4ccf84763
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413848"
 ---
 # Get-AzDiagnosticSetting
@@ -43,7 +43,7 @@ Enabled  : True
 Category : AuditEvent
 ```
 
-Perintah ini mendapatkan kategori dan time grains yang dicatat untuk Key Vault Azure dengan *ResourceId* of /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
+Perintah ini mendapatkan kategori dan time grains yang dicatat untuk Azure Key Vault dengan *ResourceId* of /subscriptions/1a66ce04-b633-4a0b-b2bc-a912ec8986a6/ResourceGroups/ContosoRG/providers/microsoft.keyvault/KeyVaults/ContosoKeyVault.
 
 ## PARAMETERS
 
@@ -107,5 +107,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-AzDiagnosticSetting](./Set-AzDiagnosticSetting.md) 
+[Set-AzDiagnosticSetting](./Set-AzDiagnosticSetting.md)
  [Remove-AzDiagnosticSetting](./Remove-AzDiagnosticSetting.md)
