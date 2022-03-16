@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Get-AzFrontDoor.md
-ms.openlocfilehash: 0c237729f4106a702065142c0fbe9464c336ed0f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ab7a578e0ee9e6ce3842a30c57305c1cde61f8ac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291164"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237077"
 ---
 # Get-AzFrontDoor
 
 ## SYNOPSIS
 Dapatkan penyeimbang muat Pintu Depan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/get-azfrontdoor) untuk informasi terkini.
 
 ## SYNTAX
 

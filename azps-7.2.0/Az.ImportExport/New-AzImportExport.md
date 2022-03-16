@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/New-AzImportExport.md
-ms.openlocfilehash: 5c3d9c44b2722d134df5cc4d9417c0a1cfa5d7ad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d05f1a68dabe57b4cb8a1b69d53b5ed8fcd22b62
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236451"
 ---
 # New-AzImportExport
 
 ## SYNOPSIS
 Membuat pekerjaan baru atau memperbarui pekerjaan yang sudah ada di langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/new-azimportexport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -849,7 +852,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DRIVELIST <dengan IDriveStatus[]>: Daftar hingga sepuluh drive yang terdiri dari pekerjaan. Daftar drive merupakan elemen yang diperlukan untuk pekerjaan impor; tidak ditentukan untuk pekerjaan ekspor.
+DRIVELIST <IDriveStatus[]>: Daftar hingga sepuluh drive yang terdiri dari pekerjaan. Daftar drive merupakan elemen yang diperlukan untuk pekerjaan impor; tidak ditentukan untuk pekerjaan ekspor.
   - `[BitLockerKey <String>]`: Kunci BitLocker digunakan untuk mengenkripsi drive.
   - `[BytesSucceeded <Int64?>]`: Byte berhasil ditransfer untuk drive.
   - `[CopyStatus <String>]`: Status detail tentang proses transfer data. Bidang ini tidak dikembalikan dalam respons hingga drive berada dalam status Transfer.

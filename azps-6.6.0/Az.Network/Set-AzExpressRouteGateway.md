@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteGateway.md
-ms.openlocfilehash: 31dee151cfed96285f18eef7fa145cfcabb27ab3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ec870d5d3c82bdd68c223bcc8259b22b19145e81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376079"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140280517"
 ---
 # Set-AzExpressRouteGateway
 
 ## SYNOPSIS
 Memperbarui Gateway ExpressRoute yang Dapat Disesuaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azexpressroutegateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxScaleUnits
-Jumlah maksimum unit skala untuk ExpressRouteGateway ini. Rentang yang > 2
+Jumlah maksimum unit skala untuk ExpressRouteGateway ini. Rentang yang valid > 2
 
 ```yaml
 Type: System.UInt32
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinScaleUnits
-Jumlah minimum unit skala untuk ExpressRouteGateway ini. Rentang yang > 2
+Jumlah minimum unit skala untuk ExpressRouteGateway ini. Rentang yang valid > 2
 
 ```yaml
 Type: System.UInt32
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

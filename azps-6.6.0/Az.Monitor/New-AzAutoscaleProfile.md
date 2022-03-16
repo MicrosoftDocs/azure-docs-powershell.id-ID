@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleProfile.md
-ms.openlocfilehash: bccdad61ee1bc48704c57ea07cf731abb5276d61
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f3e32dafad3bd8b2f1615479ca457c78395dc9c1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369877"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140252575"
 ---
 # New-AzAutoscaleProfile
 
 ## SYNOPSIS
 Membuat profil Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azautoscaleprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule simpan.
+Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule variabel.
 Perintah kedua membuat profil bernama Profile01 dengan tanggal tetap menggunakan aturan di $Rule.
 
 ### Contoh 2: Buat profil dengan jadwal
@@ -82,7 +85,7 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule simpan.
+Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule variabel.
 Perintah kedua membuat profil bernama SecondProfileName dengan jadwal berulang menggunakan aturan di $Rule.
 
 ### Contoh 3: Membuat profil dengan dua aturan
@@ -108,9 +111,9 @@ Rules      : {Microsoft.Azure.Management.Insights.Models.ScaleRule,
              Microsoft.Azure.Management.Insights.Models.ScaleRule}
 ```
 
-Dua perintah pertama membuat aturan, dan menyimpannya dalam variabel $Rule 1 dan $Rule 2.
+Dua perintah pertama membuat aturan, lalu menyimpannya dalam variabel $Rule 1 dan $Rule 2.
 Perintah ketiga membuat profil bernama ProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya di $Profile 1.
-Perintah terakhir membuat profil bernama SecondProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya di $Profile 2 tersebut.
+Perintah terakhir membuat profil bernama SecondProfileName menggunakan aturan di Rule1 dan Rule2, lalu menyimpannya di $Profile 2 tertentu.
 
 ### Contoh 4: Membuat profil tanpa jadwal atau tanggal tetap
 ```
@@ -119,7 +122,7 @@ PS C:\>$Rule = New-AzAutoscaleRule -MetricName "Requests" -MetricResourceId "/su
 PS C:\> $Profile = New-AzAutoscaleProfile -DefaultCapacity "1" -MaximumCapacity "10" -MinimumCapacity "1" -Rule $Rule -Name "ProfileName"
 ```
 
-Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule simpan.
+Perintah pertama membuat aturan Skala Otomatis bernama Permintaan, lalu menyimpannya dalam $Rule variabel.
 Perintah kedua membuat profil tanpa jadwal atau tanggal tetap, lalu menyimpannya di $Profile variabel.
 
 ## PARAMETERS
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -357,7 +360,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Generic.List'1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
-### System.Collections.generic.List `1[[System.Nullable` 1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.List1`1[[System.Nullable`[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Generic.List'1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVpnGateway.md
-ms.openlocfilehash: 8ed20e9ed9cd7d5a5cca0bed486227306065ac39
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d4582ae81e9051e18837980c3f5600c83b088cb2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389740"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140280193"
 ---
 # Update-AzVpnGateway
 
 ## SYNOPSIS
 Memperbarui gateway VPN yang dapat disesuaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvpngateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Update-AzVpnGateway -ResourceId <String> [-VpnConnection <PSVpnConnection[]>]
 
 ## DESCRIPTION
 Cmdlet **Update-AzVpnGateway** memperbarui gateway VPN yang dapat disesuaikan.  
-Gateway Azure VPN adalah perangkat lunak yang ditetapkan konektivitas untuk situs ke koneksi situs di dalam VirtualHub. Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan oleh pengguna. Koneksi dapat disiapkan dari cabang/situs yang dikenal sebagai situs VPN ke gateway yang dapat disesuaikan. Setiap koneksi terdiri dari 2 Active-Active penerima
+Gateway Azure VPN adalah perangkat lunak yang ditetapkan konektivitas untuk situs ke koneksi situs di dalam VirtualHub. Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan oleh pengguna. Koneksi dapat disiapkan dari cabang/situs yang dikenal sebagai situs VPN ke gateway yang dapat disesuaikan. Setiap koneksi terdiri dari 2 Active-Active sambungan
 
 ## EXAMPLES
 
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

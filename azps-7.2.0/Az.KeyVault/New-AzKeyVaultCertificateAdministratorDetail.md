@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificateAdministratorDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificateAdministratorDetail.md
-ms.openlocfilehash: 292f19b38b12e4787cd80f2e567621af6a7fdbe3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0637d3d0702aa696f98d5cec5c42a30ca79cac3f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236033"
 ---
 # New-AzKeyVaultCertificateAdministratorDetail
 
 ## SYNOPSIS
 Membuat objek detail administrator sertifikat dalam memori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultcertificateadministratordetail) untuk informasi terkini.
 
 ## SYNTAX
 

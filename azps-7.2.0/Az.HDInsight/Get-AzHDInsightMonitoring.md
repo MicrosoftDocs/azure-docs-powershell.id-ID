@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightMonitoring.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightMonitoring.md
-ms.openlocfilehash: 6ff3e044d4964cd5f01f027a88bd9ca6426bc3b2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b3ba78255bd013fb4548ea4fbf36dd9b0a375830
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169280"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236897"
 ---
 # Get-AzHDInsightMonitoring
 
 ## SYNOPSIS
 Mendapatkan status integrasi log Azure Monitor Klasik di kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightmonitoring) untuk informasi terkini.
 
 ## SYNTAX
 

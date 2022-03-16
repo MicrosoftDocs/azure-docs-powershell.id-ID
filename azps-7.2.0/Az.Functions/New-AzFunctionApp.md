@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionApp.md
-ms.openlocfilehash: 31d56b34255083732aa2cce80ed3bfe670425cd6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 958a1600234b94e4403311a92bbcb6799bee3cdc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261340"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236914"
 ---
 # New-AzFunctionApp
 
 ## SYNOPSIS
 Membuat aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/new-azfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ Perintah ini akan membuat aplikasi fungsi menggunakan gambar ACR pribadi.
 ## PARAMETERS
 
 ### -ApplicationInsightsKey
-Kunci instrumentasi Aplikasi Insights ditambahkan.
+Kunci instrumen Aplikasi Insights ditambahkan.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitorProviderInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitorProviderInstance.md
-ms.openlocfilehash: e7f4d50d9cb94f5803b7f9cf06c07869024d8b09
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dfb190607e63db7dc78f5ec619311f5e1cadac8f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302571"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236555"
 ---
 # Get-AzSapMonitorProviderInstance
 
 ## SYNOPSIS
 Mendapatkan properti instans penyedia untuk langganan, grup sumber daya, Nama SapMonitor, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hanaonazure/get-azsapmonitorproviderinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

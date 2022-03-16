@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubEventHubConsumerGroup.md
-ms.openlocfilehash: 4a7d687fca902baefe200e12a8333da02c3f14f4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d94d7aab70d5197782e74cf3d00b9d33fa9e00c0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258683"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236393"
 ---
 # Add-AzIotHubEventHubConsumerGroup
 
 ## SYNOPSIS
 Membuat grup konsumen eventhub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/add-aziothubeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 

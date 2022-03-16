@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 4faa8553e6e5f8b16f509ed4f832a4e474808698
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 97cfbc98a1445392e6d90ba7829f378947993a5d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384577"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140280445"
 ---
 # Set-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi konfigurasi configuration configuration untuk load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azloadbalancerprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ PS C:\> $slb | Set-AzLoadBalancerProbeConfig -Name "NewProbe" -Port 80 -Interval
 ```
 
 Perintah pertama mendapatkan loadbalancer bernama MyLoadBalancer, lalu menyimpannya dalam $slb variabel.
-Perintah kedua menggunakan operator pipeline untuk menyampaikan penyeimbang muat di $slb ke Add-AzLoadBalancerProbeConfig, yang menambahkan konfigurasi baru ke dalamnya.
+Perintah kedua menggunakan operator pipeline untuk memasukkan penyeimbang muat di $slb ke Add-AzLoadBalancerProbeConfig, yang menambahkan konfigurasi baru ke dalamnya.
 Perintah ketiga melewati penyeimbang muat ke **Set-AzLoadBalancerProbeConfig**, yang mengatur konfigurasi baru.
 Perlu menentukan beberapa parameter yang sama yang ditentukan dalam perintah sebelumnya karena parameter tersebut diperlukan oleh cmdlet saat ini.
 
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

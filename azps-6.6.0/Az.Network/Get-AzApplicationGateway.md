@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGateway.md
-ms.openlocfilehash: d9db87de4f2f581d13835269e9eb5c2a80e66660
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ccd021f0899c6a5cc9cbb7caca0b100881e73811
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140252179"
 ---
 # Get-AzApplicationGateway
 
 ## SYNOPSIS
 Mendapatkan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini mendapatkan daftar semua gateway aplikasi di grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGwList sumber daya.
+Perintah ini mendapatkan daftar semua gateway aplikasi di grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGwList lokal.
 
 ### Contoh 3: Dapatkan daftar gateway aplikasi dalam langganan
 ```
@@ -310,7 +313,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultKeyRotationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultKeyRotationPolicy.md
-ms.openlocfilehash: 6298b29959ac59ff482c29bbd3d5933dbc4793d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9ecdf2a3915a5cf2c985c99ee158b39265908211
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313740"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140235745"
 ---
 # Set-AzKeyVaultKeyRotationPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan rotasi tombol untuk tombol tertentu di Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultkeyrotationpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

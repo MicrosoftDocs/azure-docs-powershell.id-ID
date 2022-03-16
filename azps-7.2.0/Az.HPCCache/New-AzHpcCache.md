@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/new-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/New-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/New-AzHpcCache.md
-ms.openlocfilehash: db69fd68d9460245aa1533d72b934475062dc79d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 75bd234f234d9d6ac6305033ec2d211d6f70d5cb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236645"
 ---
 # New-AzHpcCache
 
 ## SYNOPSIS
 Membuat Cache HPC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/new-azhpccache) untuk informasi terkini.
 
 ## SYNTAX
 

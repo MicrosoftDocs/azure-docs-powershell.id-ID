@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerAdvertisedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteServerPeerAdvertisedRoute.md
-ms.openlocfilehash: 3c50ff2b459544203c8f80437134630f2822864d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 145dc03177062cc520aaf4cb8a589b4da44f1ed2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352202"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140251478"
 ---
 # Get-AzRouteServerPeerAdvertisedRoute
 
 ## SYNOPSIS
 Daftar rute yang disampaikan oleh rekan server rute tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azrouteserverpeeradvertisedroute) untuk informasi terkini.
 
 ## SYNTAX
 

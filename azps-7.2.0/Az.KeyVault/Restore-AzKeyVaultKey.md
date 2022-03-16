@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultKey.md
-ms.openlocfilehash: 5ec4b91058834b799881483f73aa83d9abec2a9a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d193aeb13504156b5cae9f4f3d1791347f344d76
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140235817"
 ---
 # Restore-AzKeyVaultKey
 
 ## SYNOPSIS
 Membuat kunci di kunci vault dari tombol yang sudah dicadangkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Jika kunci vault telah memiliki kunci dengan nama yang sama, cmdlet ini akan gag
 Jika cadangan berisi beberapa versi kunci, semua versi akan dipulihkan.
 Kunci vault tempat Anda memulihkan kunci mungkin berbeda dari key vault yang Anda cadangkan kuncinya.
 Namun, kunci vault harus menggunakan langganan yang sama dan berada di kawasan Azure di geografi yang sama (misalnya, Amerika Utara).
-Lihat Microsoft Azure Pusathttps://azure.microsoft.com/support/trust-center/) Kepercayaan ( untuk pemetaan wilayah Azure ke geografi.
+Lihat Microsoft Azure Kepercayaan Lokal (https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
 
 ## EXAMPLES
 

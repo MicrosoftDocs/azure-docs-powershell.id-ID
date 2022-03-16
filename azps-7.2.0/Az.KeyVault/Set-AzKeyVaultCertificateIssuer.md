@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificateIssuer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultCertificateIssuer.md
-ms.openlocfilehash: 176ec14619f465ed8ff4107faa1f4f070e90eef3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 80d7c67e3598f0be641a45a5faf43b9f3d172863
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300251"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140235799"
 ---
 # Set-AzKeyVaultCertificateIssuer
 
 ## SYNOPSIS
 Mengatur penerbit sertifikat dalam kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultcertificateissuer) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubKey.md
-ms.openlocfilehash: b267c2ac0afafbf8f2736ec44d9940c956b711b2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 04de0f385bdc4b8a0d79ba3a34d0403d5a80859b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236321"
 ---
 # Add-AzIotHubKey
 
 ## SYNOPSIS
 Membuat Kunci IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/add-aziothubkey) untuk informasi terkini.
 
 ## SYNTAX
 

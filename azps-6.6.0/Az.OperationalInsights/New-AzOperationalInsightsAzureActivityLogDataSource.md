@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsAzureActivityLogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsAzureActivityLogDataSource.md
-ms.openlocfilehash: 600b82547d4e198d4c4ac058f1d263bc118b5f2f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9c1a2b3279ba2210f899fa35836176c4740e85fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358733"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140279941"
 ---
 # New-AzOperationalInsightsAzureActivityLogDataSource
 
 ## SYNOPSIS
 Kumpulkan log Aktivitas Azure dari langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsazureactivitylogdatasource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzOperationalInsightsAzureActivityLogDataSource [-Workspace] <PSWorkspace> [
 ```
 
 ## DESCRIPTION
-Fitur New-AzOperationalInsightsAzureActivityLogDataSource Analitik Log untuk mengumpulkan log aktivitas Azure dari langganan tertentu.
+Fitur New-AzOperationalInsightsAzureActivityLogDataSource analitik log untuk mengumpulkan log aktivitas Azure dari langganan tertentu.
 
 ## EXAMPLES
 
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Remove-AzSapMonitor.md
-ms.openlocfilehash: 793e1c0e480115df548a52333fab5bb5b7c082a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f17c0dbf4a78eddcfbb8ad5ffa95819175718c70
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167375"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236537"
 ---
 # Remove-AzSapMonitor
 
 ## SYNOPSIS
 Menghapus monitor SAP dengan langganan, grup sumber daya, dan nama monitor yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hanaonazure/remove-azsapmonitor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

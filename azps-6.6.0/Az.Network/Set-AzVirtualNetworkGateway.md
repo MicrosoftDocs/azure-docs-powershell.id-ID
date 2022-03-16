@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGateway.md
-ms.openlocfilehash: 97e383c03b7d8029831241f12783e04bb835c25e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: afbcd027f3408105a8b73c614870cb565affe26c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335477"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140280355"
 ---
 # Set-AzVirtualNetworkGateway
 
 ## SYNOPSIS
 Memperbarui gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ PS C:\>$Gateway = Get-AzVirtualNetworkGateway -ResourceGroupName "ResourceGroup0
 PS C:\> Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -Asn 1337
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual yang disimpan di variabel $Gateway.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua memperbarui gateway jaringan virtual yang disimpan dalam variabel $Gateway.
 Perintah juga mengatur ASN ke 1337.
 
 ### Contoh 2: Menambahkan kebijakan IPsec ke gateway jaringan virtual
@@ -201,7 +204,7 @@ BgpSettings            : {
 PS C:\>Set-AzVirtualNetworkGateway -VirtualNetworkGateway $Gateway -VpnClientRootCertificates $rootCert -RemoveAadAuthentication
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua memperbarui Gateway gateway jaringan virtual01 dengan konfigurasi autentikasi AAD params:aadTenantUri, aadAudienceId, aadIssuerUri untuk VpnClient.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua memperbarui Gateway01 gateway jaringan virtual dengan konfigurasi autentikasi AAD params:aadTenantUri, aadAudienceId, aadIssuerUri untuk VpnClient.
 Perintah ketiga menghapus konfigurasi AAD autentikasi dari VpnClient gateway jaringan virtual.
 
 ### Contoh 5: Tambahkan/Perbarui IpConfigurationBgpPeeringAddresses ke gateway jaringan virtual yang sudah ada
@@ -266,7 +269,7 @@ BgpSettings            : {
                          }
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua menetapkan nilai gateway jaringan virtual Gateway01 Id IpConfiguration ke id konfigurasi ip variabelId1.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua menetapkan nilai gateway jaringan virtual Gateway01 Id IpConfiguration ke variabel ipconfigurationId1.
 Perintah ketiga menetapkan daftar alamat ke daftar alamat1.
 Perintah keempat membuat objek PSIpConfigurationBgpPeeringAddress.
 Perintah kelima mengatur PSIpConfigurationBgpPeeringAddress baru ini menjadi IpConfigurationBgpPeeringAddresses dan memperbarui gateway.
@@ -354,7 +357,7 @@ NatRules                        : [
 EnableBgpRouteTranslationForNat : True
 ```
 
-Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua menetapkan natrules yang sudah ada ke dalam variabel vngNatRules.
+Perintah pertama mendapatkan gateway jaringan virtual bernama Gateway01 yang dimiliki oleh grup sumber daya ResourceGroup001 dan menyimpannya ke variabel yang bernama $Gateway Perintah kedua menetapkan natrules yang sudah ada ke dalam vngNatRules variabel.
 Perintah ketiga menetapkan nilai yang baru dibuat dengan objek PSVirtualNetworkGatewayNatRule ke variabel natRule.
 Perintah keempat menambahkan objek PSVirtualNetworkGatewayNatRule ini ke daftar vngNatRules.
 Perintah kelima mengatur PSVirtualNetworkGatewayNatRule yang baru ini ke gateway NatRules dan memperbarui gateway.
@@ -395,7 +398,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadIssuerUri
-Opsi autentikasi AAD P2S:AadIssuerUri.
+P2S AAD autentikasi:AadIssuerUri.
 
 ```yaml
 Type: System.String
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -AadTenantUri
-P2S AAD autentikasi:AadTenantUri.
+Opsi autentikasi AAD P2S:AadTenantUri.
 
 ```yaml
 Type: System.String
@@ -698,7 +701,7 @@ Accept wildcard characters: False
 
 ### -VirtualNetworkGateway
 Objek gateway jaringan virtual untuk membuat modifikasi dasar.
-Hal ini bisa diambil menggunakan Get-AzVirtualNetworkGateway
+Hal ini dapat diambil menggunakan Get-AzVirtualNetworkGateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
@@ -839,7 +842,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

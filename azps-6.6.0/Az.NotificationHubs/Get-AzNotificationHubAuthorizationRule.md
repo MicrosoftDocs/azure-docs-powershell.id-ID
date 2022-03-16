@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: edd669b3cea8283e6bde2cbf391016c0ac4018d3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 85a483a5edf316a95114738812b173ec54788f08
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354305"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140280157"
 ---
 # Get-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan otorisasi yang terkait dengan hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhubauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Get-AzNotificationHubAuthorizationRule [-ResourceGroup] <String> [-Namespace] <S
 
 ## DESCRIPTION
 Cmdlet **Get-AzNotificationHubAuthorizationRule** mendapatkan informasi tentang aturan otorisasi Shared Access Signature (SAS) yang terkait dengan hub pemberitahuan.
-Cmdlet mengembalikan informasi tentang semua aturan yang terkait dengan hub atau, dengan menyertakan parameter *AuthorizationRule,* mendapatkan informasi tentang aturan tertentu.
+Cmdlet mengembalikan informasi tentang semua aturan yang terkait dengan hub atau, dengan menyertakan parameter *AuthorizationRule* , mendapatkan informasi tentang aturan tertentu.
 Aturan otorisasi mengelola akses ke hub pemberitahuan Anda.
 Aturan otorisasi akan membuat link, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

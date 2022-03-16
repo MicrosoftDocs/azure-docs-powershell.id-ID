@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: d4594e79c6b91bf650fba59cb8c43a7f6b4fb857
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3e1cb5f562c000dabef14904d89e83eb524fea80
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358721"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140279851"
 ---
 # Remove-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Menghapus Storage Insight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsstorageinsight) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\>Remove-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoRes
 ```
 
 Perintah ini menghapus wawasan Storage bernama MyStorageInsight dari ruang kerja yang bernama MyWorkspace dalam grup sumber daya yang ditentukan.
-Perintah tidak menentukan parameter *Paksa,* sehingga akan meminta konfirmasi Anda sebelum menghapus Storage Insight.
+Perintah tidak menentukan parameter *Paksa*, sehingga akan meminta konfirmasi Anda sebelum menghapus Storage Insight.
 
 ### Contoh 2: Hapus Storage Insight tanpa konfirmasi
 ```
@@ -52,7 +55,7 @@ PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "Conto
 PS C:\>Remove-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -Force
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya di $Workspace terbatas. Perintah kedua menghapus wawasan penyimpanan yang bernama MyStorageInsight dari $Workspace tanpa meminta konfirmasi Anda.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace variabel. Perintah kedua menghapus wawasan penyimpanan yang bernama MyStorageInsight $Workspace tanpa meminta konfirmasi Anda.
 
 ## PARAMETERS
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -194,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 [Get-AzOperationalInsightsWorkspace](./Get-AzOperationalInsightsWorkspace.md)
 

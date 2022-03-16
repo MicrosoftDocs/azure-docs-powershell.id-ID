@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightPigJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightPigJobDefinition.md
-ms.openlocfilehash: 31c7d76384dbc9e2e81a3c9b21a9e2e2eb84abb9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d6660a2549333d35c9b374865ec92d57acde95f1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305867"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236789"
 ---
 # New-AzHDInsightPigJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Pig.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightpigjobdefinition) untuk informasi terkini.
 
 ## SYNTAX
 

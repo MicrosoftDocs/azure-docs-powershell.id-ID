@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceTwin.md
-ms.openlocfilehash: 0f734e7e22b86223f96cbbbed5931b676b1789d0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 65f20d52eac2f229bc82fdd5ce216f5b76c891b0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297628"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140236303"
 ---
 # Get-AzIotHubDeviceTwin
 
 ## SYNOPSIS
 Mendapatkan perangkat dari perangkat lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubdevicetwin) untuk informasi terkini.
 
 ## SYNTAX
 

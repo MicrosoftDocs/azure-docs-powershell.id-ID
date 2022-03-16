@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubsNamespaceAuthorizationRule.md
-ms.openlocfilehash: 7f83d63a7e7a29f59fa1d72d86f82df694cc6f75
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3f474f6a98fb25bd2b3b3e6e73ff520da1c9625f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382001"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140280067"
 ---
 # Set-AzNotificationHubsNamespaceAuthorizationRule
 
 ## SYNOPSIS
 Mengatur aturan otorisasi untuk ruang nama hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhubsnamespaceauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,10 +41,10 @@ Set-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-Nam
 Cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** mengubah aturan otorisasi Tanda Tangan Akses Bersama (SAS, Shared Access Signature) yang ditetapkan ke ruang nama hub pemberitahuan.
 Aturan otorisasi mengelola hak pengguna ke ruang nama dan ke hub pemberitahuan yang terdapat dalam ruang nama itu.
 Cmdlet ini menyediakan dua cara untuk mengubah aturan otorisasi yang ditetapkan ke ruang nama.
-Sebagai contoh, Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes,** lalu mengonfigurasi objek tersebut dengan nilai properti yang ingin dimiliki aturan.
+Sebagai contoh, Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes** , lalu mengonfigurasi objek tersebut dengan nilai properti yang ingin dimiliki aturan.
 Anda bisa menggunakan .NET Framework untuk menyelesaikan ini.
-Anda kemudian dapat menyalin nilai properti tersebut ke aturan melalui parameter *SASRule.*
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut melalui parameter *InputFile.*
+Anda kemudian dapat menyalin nilai properti tersebut ke aturan melalui parameter *SASRule* .
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut *melalui parameter InputFile* .
 File JSON adalah file teks yang menggunakan sintaks yang mirip dengan ini: {  
     "Nama": "ContosoAuthorizationRule",  
     "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29IkalUnnpUk01Y=",  
@@ -49,7 +52,7 @@ File JSON adalah file teks yang menggunakan sintaks yang mirip dengan ini: {
         "Dengarkan",  
         "Kirim"  
     \]  
-} Ketika digunakan bersama dengan cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule,** sampel JSON sebelumnya mengubah aturan otorisasi bernama ContosoAuthorizationRule untuk memberi pengguna hak Dengarkan dan Kirim ke ruang nama.
+} Ketika digunakan bersama dengan cmdlet **Set-AzNotificationHubsNamespaceAuthorizationRule** , sampel JSON sebelumnya mengubah aturan otorisasi bernama ContosoAuthorizationRule untuk memberi pengguna hak Dengarkan dan Kirim ke ruang nama.
 
 ## EXAMPLES
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

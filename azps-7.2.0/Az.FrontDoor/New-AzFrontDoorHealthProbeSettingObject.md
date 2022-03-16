@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHealthProbeSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorHealthProbeSettingObject.md
-ms.openlocfilehash: 688885e5123b3009e409c11f2f2c16e3b9f6e877
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0fb7438505c94ad2a3a9f307544a7cadef0ed1f2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287980"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237022"
 ---
 # New-AzFrontDoorHealthProbeSettingObject
 
 ## SYNOPSIS
 Membuat objek PSHealthProbeSetting untuk pembuatan Pintu Depan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorhealthprobesettingobject) untuk informasi terkini.
 
 ## SYNTAX
 
