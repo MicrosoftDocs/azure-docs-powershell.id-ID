@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMInstallPatch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMInstallPatch.md
-ms.openlocfilehash: ffd47f72a2c6ecfcb0aa3860633fd4f43e298275
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 566ba34a8ee0a4d8188649678bf5002aabf8549a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350594"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140109917"
 ---
 # Invoke-AzVMInstallPatch
 
 ## SYNOPSIS
 Menginstal patch pada VM
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/invoke-azvminstallpatch) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 
 ### -ClassificationToIncludeForLinux
 Pembaruan klasifikasi untuk dipilih ketika menginstal patch.
-Nilai yang mungkin berbeda Windows dan Linux.
+Nilai yang mungkin berbeda untuk Windows dan Linux.
 
 ```yaml
 Type: System.String[]
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -ClassificationToIncludeForWindows
 Pembaruan klasifikasi untuk dipilih ketika menginstal patch.
-Nilai yang mungkin berbeda Windows dan Linux.
+Nilai yang mungkin berbeda untuk Windows dan Linux.
 
 ```yaml
 Type: System.String[]
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

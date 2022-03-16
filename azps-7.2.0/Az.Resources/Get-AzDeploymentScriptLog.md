@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScriptLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScriptLog.md
-ms.openlocfilehash: 7b0a2365f53c28e006dbed8a89e348241fd85ab0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 077910604369be91a0d538b3c4334485936fc814
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117349"
 ---
 # Get-AzDeploymentScriptLog
 
 ## SYNOPSIS
 Mendapatkan log eksekusi skrip penyebaran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdeploymentscriptlog) untuk informasi terkini.
 
 ## SYNTAX
 

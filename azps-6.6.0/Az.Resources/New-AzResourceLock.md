@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceLock.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceLock.md
-ms.openlocfilehash: 5d01fee5b2a2256475853db816081764b0108b31
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1efd1e60db74a7782118bfd6eaf02dc5d31c9f92
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386509"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140066897"
 ---
 # New-AzResourceLock
 
 ## SYNOPSIS
 Membuat kunci sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcelock) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 Menentukan lingkup berlakunya kunci.
-Misalnya, untuk menentukan database, gunakan format berikut ini: nama server nama server nama grup sumber daya ID langganan Untuk menentukan grup sumber daya, gunakan format berikut `/subscriptions/` `/resourceGroups/` `/providers/Microsoft.Sql/servers/` `/databases/` ini: `/subscriptions/` nama `/resourceGroups/` grup sumber daya ID langganan
+Misalnya, untuk menentukan database, gunakan format berikut ini: `/subscriptions/`nama server nama grup IDresource`/resourceGroups/``/databases/``/providers/Microsoft.Sql/servers/` langganan namadatabase Untuk menentukan grup sumber daya, gunakan format berikut ini: `/subscriptions/`nama grup IDresource langganan`/resourceGroups/`
 
 ```yaml
 Type: System.String
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

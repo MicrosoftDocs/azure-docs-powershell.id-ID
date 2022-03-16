@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Resolve-AzResourceMoverMoveCollectionDependency.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Resolve-AzResourceMoverMoveCollectionDependency.md
-ms.openlocfilehash: aa7aa43823c411a7b76c5312cd64ea512fbe30b5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 426f2a30a1f39046f4fb0a62aa0e7c359f2c5f4c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297276"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117511"
 ---
 # Resolve-AzResourceMoverMoveCollectionDependency
 
 ## SYNOPSIS
 Menghitung, menyelesaikan, dan memvalidasi dependensi moveResources di kumpulan pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/resolve-azresourcemovermovecollectiondependency) untuk informasi terkini.
 
 ## SYNTAX
 

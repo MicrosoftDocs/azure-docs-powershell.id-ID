@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/remove-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Remove-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Remove-AzAksNodePool.md
-ms.openlocfilehash: 0e1090a58a8771faa6114379dcb1d34c70177741
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 088e8a38b30fe27f08281db83e44e100799ee966
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294779"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127879"
 ---
 # Remove-AzAksNodePool
 
 ## SYNOPSIS
 Hapus node pool dari kluster yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/remove-azaksnodepool) untuk informasi terkini.
 
 ## SYNTAX
 

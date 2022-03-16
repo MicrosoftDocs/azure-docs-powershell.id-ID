@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobTargetExecution.md
-ms.openlocfilehash: ef3d0940fef5cf9e2999eae255b3406a03df379e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 086f314cefd1a9b71257ac2577afdb2933a413bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313259"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114991"
 ---
 # Get-AzSqlElasticJobTargetExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi target pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobtargetexecution) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Get-AzSqlElasticJobTargetExecution [-ParentResourceId] <String> -Count <Int32> [
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlElasticJobTargetExecution mendapatkan satu atau beberapa eksekusi target pekerjaan dari sebuah eksekusi pekerjaan
+Cmdlet Get-AzSqlElasticJobTargetExecution mendapatkan satu atau beberapa eksekusi target pekerjaan dari eksekusi pekerjaan
 
 ## EXAMPLES
 

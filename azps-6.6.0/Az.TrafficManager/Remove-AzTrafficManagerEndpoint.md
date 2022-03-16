@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 201712fc3cb26bd8cfd94b6cc16addd4c3357bf0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 47c0941983fc7d6191cf402a5d2e93af1611120d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349442"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128833"
 ---
 # Remove-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Menghapus titik akhir dari Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,11 +39,11 @@ Remove-AzTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint>
 Cmdlet **Remove-AzTrafficManagerEndpoint** menghapus titik akhir dari Azure Traffic Manager.
 
 Cmdlet ini commits each change to the Traffic Manager service.
-Untuk menghapus beberapa titik akhir dari Traffic Manager profil klien lokal dan melakukan perubahan dalam satu operasi, gunakan Remove-AzTrafficManagerEndpointConfig cmdlet.
+Untuk menghapus beberapa titik akhir dari objek Traffic Manager profil lokal dan melakukan perubahan dalam satu operasi, gunakan cmdlet Remove-AzTrafficManagerEndpointConfig cmdlet.
 
-Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa menentukan objek **TrafficManagerEndpoint** dengan menggunakan parameter *TrafficManagerEndpoint.*
+Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa menentukan objek **TrafficManagerEndpoint** dengan menggunakan parameter *TrafficManagerEndpoint* .
 
-Alternatifnya, Anda bisa menentukan nama titik  akhir dan mengetik dengan menggunakan parameter Nama dan *Tipe,* bersama dengan parameter *ProfileName* *dan ResourceGroupName.*
+Alternatifnya, Anda bisa menentukan nama titik akhir dan mengetik dengan menggunakan parameter  Nama dan *Tipe*, bersama dengan parameter *ProfileName dan ResourceGroupName*.
 
 ## EXAMPLES
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini menghapus titik Traffic Manager titik akhir dari Traffic Manager pengguna dalam grup yang ditentukan parameter ini.
+Cmdlet ini menghapus Traffic Manager titik akhir dari Traffic Manager pengguna dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerEndpoint
 Menentukan titik Traffic Manager titik akhir yang dihapus cmdlet ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint,** gunakan cmdlet Get-AzTrafficManagerEndpoint.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

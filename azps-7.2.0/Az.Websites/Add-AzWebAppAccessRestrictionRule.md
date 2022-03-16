@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Add-AzWebAppAccessRestrictionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Add-AzWebAppAccessRestrictionRule.md
-ms.openlocfilehash: 397ef88c7838a1299b4b48106a5341bcde0fd246
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5f6354107cbcf677d4d1a717a4c96512fefb8726
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166888"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140112941"
 ---
 # Add-AzWebAppAccessRestrictionRule
 
 ## SYNOPSIS
 Menambahkan aturan Restiction Access ke Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/add-azwebappaccessrestrictionrule) untuk informasi terkini.
 
 ## SYNTAX
 
