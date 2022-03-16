@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlServerActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlServerActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: abaef337b8096573c1cffa72dcbd28ba8e712a20
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 94d6a1991f581da177756d5b6bf36f1e8f7884fc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115261"
 ---
 # Disable-AzSqlServerActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Menonaktifkan autentikasi Azure AD hanya untuk akun SQL Server.
+Menonaktifkan autentikasi Azure AD hanya untuk perangkat SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/disable-azsqlserveractivedirectoryonlyauthentication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzSqlServerActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzSqlServerActiveDirectoryOnlyAuthentication** menonaktifkan persyaratan autentikasi Azure Active Directory (Azure AD) hanya untuk AzureSQL Server di langganan saat ini.
+Cmdlet **Disable-AzSqlServerActiveDirectoryOnlyAuthentication** menonaktifkan persyaratan autentikasi Azure Active Directory (Azure AD) saja untuk AzureSQL Server di langganan saat ini.
 
 ## EXAMPLES
 

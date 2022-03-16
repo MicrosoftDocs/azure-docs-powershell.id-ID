@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/inv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceReimage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceReimage.md
-ms.openlocfilehash: 8c4568610b6782860c70ef8627b000c39b17f24e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bab01f1b2f84a3c9c0be8d38fcb093cb42543c4b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309548"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093011"
 ---
 # Invoke-AzCloudServiceReimage
 
 ## SYNOPSIS
 Operasi asinkron ulang menginstal ulang sistem operasi pada contoh peran web atau peran pekerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/invoke-azcloudservicereimage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\> $roleInstances = @("ContosoFrontEnd_IN_0", "ContosoBackEnd_IN_1")
 PS C:\> Invoke-AzCloudServiceReimage -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstance $roleInstances
 ```
 
-Perintah ini mengulangi 2 kejadian peran ContosoFrontEnd_IN_0 dan ContosoBackEnd_IN_1 awan bernama ContosoCS yang dimiliki oleh grup sumber daya bernama ContosOrg.
+Perintah ini penggantian 2 contoh peran ContosoFrontEnd_IN_0 dan ContosoBackEnd_IN_1 awan bernama ContosoCS yang dimiliki oleh grup sumber daya bernama ContosOrg.
 
 ### Contoh 2: Mengganti semua peran layanan cloud
 ```powershell
@@ -251,7 +254,7 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[ResourceGroupName <String>]`: 
   - `[RoleInstanceName <String>]`: Nama contoh peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
   - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Update domains are identified with a zero-based index: the first update domain has an ID of 0, the second has an ID of 1, and so on.
 
 ## RELATED LINKS

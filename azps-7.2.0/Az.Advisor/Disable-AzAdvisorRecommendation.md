@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
-ms.openlocfilehash: 892f36a14cced86f2a9b26d97e7a5f38faabc3be
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 725a3e82d22973d139373d44a9f09a309e22ca75
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094437"
 ---
 # Disable-AzAdvisorRecommendation
 
 ## SYNOPSIS
 Nonaktifkan rekomendasi Penasihat Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.advisor/disable-azadvisorrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 

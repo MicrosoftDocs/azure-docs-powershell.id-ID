@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/add-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Add-AzServiceBusVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Add-AzServiceBusVirtualNetworkRule.md
-ms.openlocfilehash: 445eab56ddceb433c4e0c5a4979fe11ba562a05c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bad6444d1ecd056aac6b5eb808a1d8b211aca2ee
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307372"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227159"
 ---
 # Add-AzServiceBusVirtualNetworkRule
 
 ## SYNOPSIS
 Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Ruang Nama yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/add-azservicebusvirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ PS C:\> Add-AzServiceBusVirtualNetworkRule -ResourceGroupName v-ajnavtest -Names
 ```
 Nama: default DefaultAction : Perbolehkan Id: /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-1122/networkRuleSets/default Type : Microsoft.ServiceBus/Namespaces/NetworkRuleSet IpRules : VirtualNetworkRules : {/subscriptions/SubscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehv adapterst1/subnets/default, False}
 
-Menambahkan nama $virtualruleset 1 ke NetworkRuleSet untuk Ruang Nama tertentu
+Menambahkan nama $virtualruleset 1 ke NetworkRuleSet untuk Kumpulan Nama
 
 ## PARAMETERS
 

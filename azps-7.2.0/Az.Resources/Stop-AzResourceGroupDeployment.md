@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzResourceGroupDeployment.md
-ms.openlocfilehash: ff1998b29f795108d081563f90182b691bc81ef0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dd1bcb0c757b420eed4dda3d3d86f7f2e90d2a5b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265788"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227951"
 ---
 # Stop-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Membatalkan penyebaran grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/stop-azresourcegroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Stop-AzResourceGroupDeployment** membatalkan penyebaran grup sumber day
 Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status selesai, seperti Diprovisikan atau Gagal.
 Sumber daya Azure adalah entitas yang dikelola pengguna, seperti situs web, database, atau server database.
 Grup sumber daya adalah kumpulan sumber daya yang digunakan sebagai unit.
-Untuk menyebarkan grup sumber daya, gunakan cmdlet New-AzResourceGroupDeployment cmdlet.
+Untuk menyebarkan grup sumber daya, gunakan New-AzResourceGroupDeployment cmdlet.
 Cmdlet New-AzResource membuat sumber daya baru, tetapi tidak memicu operasi penyebaran grup sumber daya yang dapat dihentikan cmdlet ini.
 Cmdlet ini hanya berhenti satu kali menjalankan penyebaran.
 Gunakan parameter *Name* untuk menghentikan penyebaran tertentu.

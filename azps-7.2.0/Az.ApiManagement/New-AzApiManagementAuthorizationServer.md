@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: b9d82c401030a59c514fb9fe9d73af3466fbaf91
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9d11b0826148097cebe7e701de5ff3e1176df073
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094095"
 ---
 # New-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Membuat server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementauthorizationserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ New-AzApiManagementAuthorizationServer -AccessTokenSendingMethods AuthorizationH
 
 ### -AccessTokenSendingMethods
 Menentukan array metode untuk mengirim token akses.
-psdx_paramvalues KepalaOtorisasi dan Kueri.
+psdx_paramvalues KepalaOtor dan Kueri.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessTokenSendingMethod[]

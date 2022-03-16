@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzTemplateSpec.md
-ms.openlocfilehash: 6fbc158ec051ed0527826bee721fed3302722080
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a02f460bfbcd115c6191ab07426f1a6f8ee0e50
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312092"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227987"
 ---
 # Set-AzTemplateSpec
 
 ## SYNOPSIS
 Mengubah Spesifikasi Templat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-aztemplatespec) untuk informasi terkini.
 
 ## SYNTAX
 

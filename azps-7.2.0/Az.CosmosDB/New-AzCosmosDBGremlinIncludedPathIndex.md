@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPathIndex.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinIncludedPathIndex.md
-ms.openlocfilehash: 1c918550c69063e716c8fdcea7510edf0716b680
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5cea99400c8511cb12d5ee5e8788f4b1b2c864a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286923"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090945"
 ---
 # New-AzCosmosDBGremlinIncludedPathIndex
 
 ## SYNOPSIS
 Membuat objek baru tipe PSIndexes. Data ini bisa disampaikan sebagai nilai parameter untuk Set-AzCosmosDBGremlinIncludedPath.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlinincludedpathindex) untuk informasi terkini.
 
 ## SYNTAX
 

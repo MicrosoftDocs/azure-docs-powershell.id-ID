@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/New-AzFunctionAppPlan.md
-ms.openlocfilehash: 06067ff863e200dd9e7076855c1b8a4adc55a4ab
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 788e428f8a2992db26e4c9af81bdd06263eb6e82
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123415"
 ---
 # New-AzFunctionAppPlan
 
 ## SYNOPSIS
 Membuat paket layanan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/new-azfunctionappplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\> New-AzFunctionAppPlan -ResourceGroupName MyResourceGroupName `
 
 ```
 
-Perintah ini membuat Windows aplikasi premium di Eropa Barat dengan semburat kapabilitas hingga 10 contoh.
+Perintah ini membuat Windows aplikasi premium di Eropa Barat dengan semburan kapabilitas hingga 10 contoh.
 
 ## PARAMETERS
 

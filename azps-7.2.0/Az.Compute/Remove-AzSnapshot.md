@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzSnapshot.md
-ms.openlocfilehash: 494a919150f5ba49e992874651021a15f6eadc5c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6ee8146d84ec2d1ade54fe57bea68503cc313c93
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092151"
 ---
 # Remove-AzSnapshot
 
 ## SYNOPSIS
 Menghapus snapshot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azsnapshot) untuk informasi terkini.
 
 ## SYNTAX
 

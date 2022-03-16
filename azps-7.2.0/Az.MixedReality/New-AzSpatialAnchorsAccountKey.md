@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzSpatialAnchorsAccountKey.md
-ms.openlocfilehash: 7346268692ab1cc2cdc48099d78a5a3067ab33fe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 40c8d961c93cf9b99afc770cbf122203367902b2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121057"
 ---
 # New-AzSpatialAnchorsAccountKey
 
 ## SYNOPSIS
 Kunci regenerasi Akun Jangkar Spasial
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/new-azspatialanchorsaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 

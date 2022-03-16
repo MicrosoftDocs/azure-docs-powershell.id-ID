@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Remove-AzActionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Remove-AzActionRule.md
-ms.openlocfilehash: aa9cc9b7e89b84d3db3667f8b9f36b0aba862c9e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7797a760e4b88cd9c058bcff207a35b04444c3d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284956"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094221"
 ---
 # Remove-AzActionRule
 
 ## SYNOPSIS
 Menghapus aturan tindakan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/remove-azactionrule) untuk informasi terkini.
 
 ## SYNTAX
 

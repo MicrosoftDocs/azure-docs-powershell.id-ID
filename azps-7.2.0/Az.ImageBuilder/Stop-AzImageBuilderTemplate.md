@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/sto
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/Stop-AzImageBuilderTemplate.md
-ms.openlocfilehash: db727e7e26c0e3bc46f6c763d00b97d4fd76e8f5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8ad1c13b3abea04950c964483660287327fd51de
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297724"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122929"
 ---
 # Stop-AzImageBuilderTemplate
 
 ## SYNOPSIS
 Membatalkan build gambar yang berjalan lama berdasarkan templat gambar
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/stop-azimagebuildertemplate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 Id langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

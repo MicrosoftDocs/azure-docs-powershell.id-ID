@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managementpartne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Remove-AzManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Remove-AzManagementPartner.md
-ms.openlocfilehash: 47ad28eaa127fe2874ef483256b0bdb84fa0a7e7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a12f634543c5f7d31291824f6ea1d21447469640
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163098"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121651"
 ---
 # Remove-AzManagementPartner
 
 ## SYNOPSIS
 Hapus ID Jaringan Mitra Microsoft (MPN) dari prinsipal layanan atau pengguna yang diautentikasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managementpartner/remove-azmanagementpartner) untuk informasi terkini.
 
 ## SYNTAX
 

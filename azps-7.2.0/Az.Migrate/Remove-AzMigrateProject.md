@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateProject.md
-ms.openlocfilehash: 563f3e3f5d07e4d6c98946c8f92ee629e2bbaaa3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b58c4352e6d46aa265897f5e971d321684dbd980
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265996"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121273"
 ---
 # Remove-AzMigrateProject
 
 ## SYNOPSIS
 Hapus proyek migrasi.
 Menghapus proyek yang tidak ada adalah tanpa operasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/remove-azmigrateproject) untuk informasi terkini.
 
 ## SYNTAX
 

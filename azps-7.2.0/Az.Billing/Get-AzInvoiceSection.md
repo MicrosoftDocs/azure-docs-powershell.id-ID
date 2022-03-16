@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzInvoiceSection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzInvoiceSection.md
-ms.openlocfilehash: b9c41a7eb5ddefce4b92f2067b6d7d10d4ef1311
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eaa98289b337630095b5e8499d0ca51dcd33ac4d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240533"
 ---
 # Get-AzInvoiceSection
 
 ## SYNOPSIS
 Dapatkan bagian faktur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azinvoicesection) untuk informasi terkini.
 
 ## SYNTAX
 

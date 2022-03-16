@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricService.md
-ms.openlocfilehash: 7e0a0c788d49c67bbd0fec330bacee5674923f5c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50ef3e3bd38c24258ee37330ec25b22d915b2300
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140226781"
 ---
 # Get-AzServiceFabricService
 
 ## SYNOPSIS
-Dapatkan Service Fabric layanan dalam aplikasi dan kluster yang ditentukan. Hanya mendukung layanan ARM yang disebarkan.
+Dapatkan Service Fabric layanan berdasarkan aplikasi dan kluster yang ditentukan. Hanya mendukung layanan ARM yang disebarkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricservice) untuk informasi terkini.
 
 ## SYNTAX
 

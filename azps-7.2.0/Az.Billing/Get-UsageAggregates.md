@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-usag
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-UsageAggregates.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-UsageAggregates.md
-ms.openlocfilehash: 795f45f90670e585893b1a96494d94eb0458d0b9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ceb83d688dcbefbaecbb1f0519ea6d5b9eb5ba3f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315132"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093573"
 ---
 # Get-UsageAggregates
 
 ## SYNOPSIS
 Dapatkan detail penggunaan langganan Azure yang dilaporkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-usageaggregates) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -136,7 +139,7 @@ Menunjukkan apakah cmdlet ini mengembalikan detail tingkat instans dengan data p
 Nilai defaultnya adalah $True.
 Jika $False, layanan menggabungkan hasil di sisi server, dan oleh karena itu mengembalikan lebih sedikit grup agregat.
 Misalnya, jika Anda menjalankan tiga situs web, secara default Anda akan mendapatkan tiga item baris untuk penggunaan situs web.
-Namun, ketika nilai diciut $False kan, semua data untuk **subscriptionId**, **meterId**, **usageStartTime**, dan **usageEndTime** diciutkan menjadi satu baris item.
+Namun, ketika nilai diciutkan ke dalam $False, semua data untuk **subscriptionId**, **meterId**, **usageStartTime**, dan **usageEndTime** diciutkan menjadi satu baris item.
 
 ```yaml
 Type: System.Boolean

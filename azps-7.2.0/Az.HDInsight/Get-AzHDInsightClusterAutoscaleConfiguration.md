@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightClusterAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightClusterAutoscaleConfiguration.md
-ms.openlocfilehash: 6f4ab0944da90ab2f65190b35341951d6689fde2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 01760b6935b3b3dd26feaff5b07e044ad26fdc6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290091"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123253"
 ---
 # Get-AzHDInsightClusterAutoscaleConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi skala otomatis dari kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightclusterautoscaleconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

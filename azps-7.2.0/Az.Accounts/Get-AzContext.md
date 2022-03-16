@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
-ms.openlocfilehash: 1454d5bfd611f51dfd375321d45b4dc7d6f3ffe2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 66c9a2903a46c4a6932153b2351170366f472797
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127987"
 ---
 # Get-AzContext
 
 ## SYNOPSIS
 Dapatkan metadata yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/get-azcontext) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
-ms.openlocfilehash: 52664390f42f04f4df7d6141d59bc92330b8e960
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b53d7fccda4537234aedd36b997927cf9402f071
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265659"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115549"
 ---
 # Update-AzWebPubSub
 
 ## SYNOPSIS
 Operasi untuk memperbarui sumber daya keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/update-azwebpubsub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKU.
-Nilai yang diperbolehkan:Standard_S1, Free_F1
+Nilai yang diizinkan: Standard_S1, Free_F1
 
 ```yaml
 Type: System.String
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

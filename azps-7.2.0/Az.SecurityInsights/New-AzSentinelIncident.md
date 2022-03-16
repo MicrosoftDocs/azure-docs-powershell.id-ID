@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncident.md
-ms.openlocfilehash: 683244ec3af6f0c85cbe5f163012d734a642752b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b79cb455ce96e592e165aead8d6e7e400fb85694
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255275"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227303"
 ---
 # New-AzSentinelIncident
 
 ## SYNOPSIS
 Membuat Insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincident) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzSentinelIncident -ResourceGroupName <String> -WorkspaceName <String> [-Inc
 
 ## DESCRIPTION
 Cmdlet **New-AzSentinelIncident membuat** Insiden di ruang kerja yang ditentukan.
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirma
 PS C:\> $Incident = New-AzSentinelIncident -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Title "NewIncident" -Description "My Description" -Severity Low -Status New
 ```
 
-Contoh ini membuat **Insiden di** ruang kerja tertentu, lalu menyimpannya di $Incident berbeda.<br/><br/>
+Contoh ini membuat **Insiden di** ruang kerja tertentu, lalu menyimpannya di $Incident otomatis.<br/><br/>
 
 *Harap diingat bahwa saat ini Anda tidak dapat menambahkan entitas ke insiden baru yang dibuat melalui otomatisasi. Artinya, Anda tidak dapat menggunakan fitur investigasi untuk insiden baru yang dibuat melalui otomatisasi. <br/> Fitur untuk menambahkan entitas ke insiden telah direncanakan dan akan ditambahkan di masa mendatang.*
 

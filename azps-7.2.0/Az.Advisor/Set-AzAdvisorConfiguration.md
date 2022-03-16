@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/set-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Set-AzAdvisorConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Set-AzAdvisorConfiguration.md
-ms.openlocfilehash: d45fbc0ebd9e8305658e29a7b9936a1a406ac18c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 693db0c72e3bffa6b28077bec9a7363d39cf79a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257131"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094455"
 ---
 # Set-AzAdvisorConfiguration
 
 ## SYNOPSIS
 Memperbarui atau membuat Konfigurasi Penasihat Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.advisor/set-azadvisorconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

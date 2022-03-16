@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelBookmark.md
-ms.openlocfilehash: bd683574e704c197bc33a98ef566d08bf1e3e0fa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f0f3b0daa1b0688b4bb06d9e5821480e779dc37b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227249"
 ---
 # Update-AzSentinelBookmark
 
 ## SYNOPSIS
 Memperbarui Bookmark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentinelbookmark) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Update-AzSentinelBookmark -ResourceId <String> [-DisplayName <String>]
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelBookmark** memperbarui bookmark di ruang kerja yang ditentukan.
 Anda bisa melewati **objek Bookmark** sebagai parameter atau dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter *BookmarkId yang* diperlukan.
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ PS C:\> $Bookmark = Get-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" 
 PS C:\> $Bookmark | Set-AzSentinelBookmark -Notes "Found something interesting"
 ```
 
-Perintah pertama mendapatkan Bookmark dengan *BookmarkId dari* ruang kerja yang ditentukan, lalu menyimpannya dalam $Bookmark kolom.
+Perintah pertama mendapatkan Bookmark dengan *BookmarkId dari ruang* kerja yang ditentukan, lalu menyimpannya dalam $Bookmark simpan.
 Perintah kedua memperbarui properti Notes. Semua properti lainnya tetap sama.
 
 ## PARAMETERS

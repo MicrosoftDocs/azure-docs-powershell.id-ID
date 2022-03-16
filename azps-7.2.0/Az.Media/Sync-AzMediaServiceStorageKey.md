@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/sync-azmed
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Sync-AzMediaServiceStorageKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Sync-AzMediaServiceStorageKey.md
-ms.openlocfilehash: 3cc5a061ac44cb784c9181d5c6fbda8891ba5458
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 341d2e458c4e76dc237843c0e99ceb943d57f77e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121471"
 ---
 # Sync-AzMediaServiceStorageKey
 
 ## SYNOPSIS
 Menyinkronkan kunci akun penyimpanan untuk akun penyimpanan yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/sync-azmediaservicestoragekey) untuk informasi terkini.
 
 ## SYNTAX
 

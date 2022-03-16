@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
-ms.openlocfilehash: a403228a594828bc1a6b0c9e9fb39b4d9a025165
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3a3700e3016206a845cfe74a30d25f0b2912f45c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093753"
 ---
 # Set-AzAutomationConnectionFieldValue
 
 ## SYNOPSIS
 Mengubah nilai bidang dalam koneksi Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationconnectionfieldvalue) untuk informasi terkini.
 
 ## SYNTAX
 

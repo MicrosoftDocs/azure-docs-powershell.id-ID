@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnszon
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsZone.md
-ms.openlocfilehash: ec8b13b74ae4218ec099883494a8924fd6677e94
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4847e4696f3720794c66364e165d51195a7b5b55
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387892"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137817"
 ---
 # New-AzDnsZone
 
 ## SYNOPSIS
 Membuat zona DNS baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/new-azdnszone) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ New-AzDnsZone -Name <String> -ResourceGroupName <String> [-ZoneType <ZoneType>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDnsZone** membuat zona Sistem Nama Domain (DNS) baru di grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS unik *untuk* parameter Nama atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzDnsRecordSet untuk membuat kumpulan catatan dalam zona.
+Cmdlet **New-AzDnsZone** membuat zona Sistem Nama Domain (DNS) baru di grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS *unik untuk parameter* Nama atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzDnsRecordSet untuk membuat kumpulan catatan dalam zona.
 Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
@@ -54,7 +57,7 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\>$Zone = New-AzDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini membuat zona DNS baru yang bernama myzone.com grup sumber daya yang ditentukan, lalu menyimpannya di $Zone sumber daya tersebut.
+Perintah ini membuat zona DNS baru yang bernama myzone.com dalam grup sumber daya yang ditentukan, lalu menyimpannya di $Zone lain.
 
 ### Contoh 2: Membuat zona DNS privat dengan menentukan ID jaringan virtual
 ```
@@ -77,16 +80,16 @@ Perintah ini akan membuat zona DNS Privat baru bernama myprivatezone.com dalam g
 PS C:\>$Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGroup" -ParentZoneName "zone.com"
 ```
 
-Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya tertentu dalam $Zone sumber daya tersebut.
-Ini juga menambahkan delegasi dalam zona DNS induk yang bernama zone.com yang berada di langganan yang sama dan grup sumber daya sebagai zona anak.
+Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya yang ditentukan $Zone sumber daya.
+Ini juga menambahkan delegasi dalam zona DNS induk yang bernama zone.com yang berada di langganan dan grup sumber daya yang sama sebagai zona anak.
 
 ### Contoh 5: Buat zona DNS dengan delegasi dengan menentukan id zona induk
 ```
 PS C:\>$Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGroup" -ParentZoneId "/subscriptions/**67e2/resourceGroups/other-rg/providers/Microsoft.Network/dnszones/zone.com"
 ```
 
-Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya tertentu dalam $Zone sumber daya tersebut.
-Delegasi juga menambahkan delegasi dalam zona DNS induk yang bernama zone.com dalam grup sumber daya lainnya yang disediakan untuk langganan yang sama dengan zona anak yang dibuat.
+Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya yang ditentukan $Zone sumber daya.
+Ini juga menambahkan delegasi di zona DNS induk yang bernama zone.com dalam grup sumber daya yang disediakan rg lain sama seperti yang dibuat zona anak.
 
 ### Contoh 6: Membuat zona DNS dengan delegasi dengan menentukan objek zona induk
 ```
@@ -94,7 +97,7 @@ PS C:\>$PZone = New-AzDnsZone -Name "zone.com" -ResourceGroupName "MyResourceGro
 PS C:\>$Zone = New-AzDnsZone -Name "mychild.zone.com" -ResourceGroupName "MyResourceGroup" -ParentZone @($PZone)
 ```
 
-Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya tertentu dalam $Zone sumber daya tersebut.
+Perintah ini membuat zona DNS anak baru yang bernama mychild.zone.com dalam grup dan toko sumber daya yang ditentukan $Zone sumber daya.
 Delegasi juga menambahkan delegasi dalam zona DNS induk yang bernama zone.com yang disampaikan dalam objek ParentZone
 
 ## PARAMETERS
@@ -311,7 +314,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -332,7 +335,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
 
 ## RELATED LINKS

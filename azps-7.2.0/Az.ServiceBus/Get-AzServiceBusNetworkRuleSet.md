@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: 2b207d9c29ec120de43497885da69e45780a8d2b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4afa8cadeca438154f2105b51e81273fba045544
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298411"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227141"
 ---
 # Get-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
 Mendapatkan detail kumpulan nama NetworkruleSet Hub Acara di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusnetworkruleset) untuk informasi terkini.
 
 ## SYNTAX
 
