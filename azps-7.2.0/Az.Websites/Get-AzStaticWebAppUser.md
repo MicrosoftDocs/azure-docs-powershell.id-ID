@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppUser.md
-ms.openlocfilehash: d3923c2b72dfd4ffaecff5a44fa295f314869509
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b9d100722d824eb41c7deb7aa02a2ea96bde81d2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257180"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225055"
 ---
 # Get-AzStaticWebAppUser
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan daftar pengguna situs statis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azstaticwebappuser) untuk informasi terkini.
 
 ## SYNTAX
 

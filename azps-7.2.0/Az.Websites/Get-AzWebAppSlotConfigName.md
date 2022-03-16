@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSlotConfigName.md
-ms.openlocfilehash: 81341085b6f1c9674c00843bb0a6974b1f0025fb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 607b4f488f4ed139609d3e699f40704abfec17ee
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225019"
 ---
 # Get-AzWebAppSlotConfigName
 
 ## SYNOPSIS
 Mendapatkan daftar nama Konfigurasi Slot Web App
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azwebappslotconfigname) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet **Get-AzWebAppSlotConfigName** mengambil daftar nama Pengaturan Aplikasi 
 PS C:\>Get-AzWebAppSlotConfigName -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini mendapatkan string Pengaturan App dan Koneksi yang terkait dengan Web App bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini memungkinkan App Pengaturan string koneksi terkait dengan Web App bernama ContosoSite yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 

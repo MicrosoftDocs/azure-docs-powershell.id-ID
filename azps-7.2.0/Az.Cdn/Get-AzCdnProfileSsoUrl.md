@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSsoUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSsoUrl.md
-ms.openlocfilehash: 7a8b22cf991e59fc8e89d0eae5da62c38c4693e1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8e10eedd971a0cb78738b03fe76c3839ee5ecc2b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257068"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240425"
 ---
 # Get-AzCdnProfileSsoUrl
 
 ## SYNOPSIS
 Dapatkan URL masuk tunggal profil CDN masuk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnprofilessourl) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzCdnProfileSsoUrl -CdnProfile <PSProfile> [-DefaultProfile <IAzureContextCo
 
 ## DESCRIPTION
 Cmdlet **Get-AzCdnProfileSsoUrl** mendapatkan URL masuk tunggal dari profil Azure Content Delivery Network (CDN).
-URL ini memungkinkan pengguna tersambung ke portal tambahan dan menggunakan fitur tambahan CDN.
+URL ini memungkinkan pengguna menyambungkan ke portal tambahan dan menggunakan fitur tambahan CDN.
 
 ## EXAMPLES
 

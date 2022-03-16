@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Test-AzPostgreSqlFlexibleServerConnect.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Test-AzPostgreSqlFlexibleServerConnect.md
-ms.openlocfilehash: 6e5b79ee8ae9bdcc2b098ecc276068cb32b2a4ba
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 19e43b237a59bc1ed230d3f85a270697484b8b19
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263484"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265881"
 ---
 # Test-AzPostgreSqlFlexibleServerConnect
 
 ## SYNOPSIS
 Uji koneksi ke server database
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/test-azpostgresqlflexibleserverconnect) untuk informasi terkini.
 
 ## SYNTAX
 

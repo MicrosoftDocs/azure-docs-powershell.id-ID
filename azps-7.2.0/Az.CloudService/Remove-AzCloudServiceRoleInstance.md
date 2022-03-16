@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Remove-AzCloudServiceRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Remove-AzCloudServiceRoleInstance.md
-ms.openlocfilehash: d30026075e99e48dd67cdfa63d1979e2d6dbdb62
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3588d333f36bd6df0dc2e3ca32ced699a4812a50
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316204"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240026"
 ---
 # Remove-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
 Menghapus contoh peran di layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/remove-azcloudserviceroleinstance) untuk informasi terkini.
 
 ## SYNTAX
 

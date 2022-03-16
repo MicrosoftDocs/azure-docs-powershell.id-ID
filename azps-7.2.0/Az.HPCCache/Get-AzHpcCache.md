@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/get-azh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Get-AzHpcCache.md
-ms.openlocfilehash: 777ffe2b9a8017d764f7a66ca81863d58deef68c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c04cfc90465b02ecf637825f788931fb49e4facc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307947"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088731"
 ---
 # Get-AzHpcCache
 
 ## SYNOPSIS
 Mendapatkan singgahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/get-azhpccache) untuk informasi terkini.
 
 ## SYNTAX
 

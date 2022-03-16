@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryPipeline.md
-ms.openlocfilehash: f0e8263a6a52bbd410b9d972ecf138cddaf6e1d1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1c451cc974a25c3db9045e27b1056a09b97ce4dc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163898"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239021"
 ---
 # Get-AzDataFactoryPipeline
 
 ## SYNOPSIS
 Mendapatkan informasi tentang saluran di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactorypipeline) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Properties        : Microsoft.DataFactories.PipelineProperties
 ```
 
 Perintah ini mendapatkan informasi tentang pipeline yang bernama DPWikisample di pabrik data yang bernama WikiADF.
-Perintah itu meneruskan informasi itu ke Format-List cmdlet dengan menggunakan operator pipeline.
+Perintah itu menyampaikan informasi itu ke Format-List cmdlet dengan menggunakan operator pipeline.
 Cmdlet tersebut memformat hasilnya.
 Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 

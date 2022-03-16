@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2.md
-ms.openlocfilehash: 22a8d0a5001a3b6dcef3fd93a59e172d22544f7a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 22c6e0d0450b6d4c3bce2b9ab1227c770923a725
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168046"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238931"
 ---
 # Set-AzDataFactoryV2
 
 ## SYNOPSIS
 Membuat pabrik data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -163,7 +166,7 @@ PS C:\> Get-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" | Set-AzDat
 
 Perintah ini membuat pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF di lokasi EastUS dengan Azure DevOps kontrol sumber.
 
-### Contoh 3: Membuat pabrik data dengan GitHub detail konfigurasi ulang menggunakan objek pabrik baru.
+### Contoh 3: Membuat pabrik data dengan GitHub detail konfigurasi repo menggunakan objek pabrik baru.
 ```
 PS C:\> New-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location 'EastUS' -HostName 'https://github.com' -AccountName msdata -RepositoryName ADFRepo -CollaborationBranch master -RootFolder /
 
@@ -177,7 +180,7 @@ PS C:\> New-AzDataFactoryV2 -ResourceGroupName "ADF" -Name "WikiADF" -Location '
     RepoConfiguration : Microsoft.Azure.Management.DataFactory.Models.FactoryGitHubConfiguration
 ```
 
-Perintah ini membuat pabrik data yang bernama WikiADF dalam grup sumber daya yang bernama ADF di lokasi EastUS GitHub dengan konfigurasi kontrol sumber..
+Perintah ini membuat pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF di lokasi EastUS dengan GitHub konfigurasi kontrol sumber..
 
 ## PARAMETERS
 

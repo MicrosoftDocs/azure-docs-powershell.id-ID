@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Update-AzFunctionAppPlan.md
-ms.openlocfilehash: f69fa9561429b1b3c3426e7b0e84eeb07918dc89
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d43749ffdc7dc17a7dec3ee5c3afa0d6d25cfff2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136336499"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140254681"
 ---
 # Update-AzFunctionAppPlan
 
 ## SYNOPSIS
 Memperbarui paket layanan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/update-azfunctionappplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -268,7 +271,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppServicePlan> : 
+INPUTOBJECT <IAppServicePlan>: 
   - `Location <String>`: Lokasi Sumber Daya.
   - `[Kind <String>]`: Jenis sumber daya.
   - `[Tag <IResourceTags>]`: Tag sumber daya.
@@ -276,12 +279,12 @@ INPUTOBJECT <IAppServicePlan> :
   - `[Capacity <Int32?>]`: Jumlah contoh saat ini yang ditetapkan ke sumber daya.
   - `[FreeOfferExpirationTime <DateTime?>]`: Waktu saat penawaran farm gratis server kedaluwarsa.
   - `[HostingEnvironmentProfileId <String>]`: ID Sumber Daya Dari Lingkungan Layanan Aplikasi.
-  - `[HyperV <Boolean?>]`: Jika paket layanan aplikasi kontainer Hyper-V, <code>true</code> <code>false</code> jika tidak.
-  - `[IsSpot <Boolean?>]`: Jika <code>true</code> , Paket Layanan Aplikasi ini memiliki instans titik.
-  - `[IsXenon <Boolean?>]`: Usang: Jika paket layanan aplikasi wadah Hyper-V, <code>true</code> <code>false</code> jika tidak.
+  - `[HyperV <Boolean?>]`: Jika paket layanan aplikasi kontainer Hyper-V, <code>true</code><code>false</code> jika tidak.
+  - `[IsSpot <Boolean?>]`: Jika <code>true</code>, Paket Layanan Aplikasi ini memiliki instans titik.
+  - `[IsXenon <Boolean?>]`: Usang: Jika paket layanan aplikasi wadah Hyper-V, <code>true</code><code>false</code> jika tidak.
   - `[MaximumElasticWorkerCount <Int32?>]`: Jumlah maksimum pekerja total yang diperbolehkan untuk Paket Layanan Aplikasi ElastisScaleEnabled ini
-  - `[PerSiteScaling <Boolean?>]`: Jika <code>true</code> , aplikasi yang ditetapkan untuk paket App Service ini dapat diskalakan secara terpisah.         Jika <code>false</code> , aplikasi yang ditetapkan untuk paket Layanan Aplikasi ini akan menyesuaikan dengan semua contoh paket.
-  - `[Reserved <Boolean?>]`: Jika paket layanan aplikasi <code>true</code> Linux, <code>false</code> jika tidak.
+  - `[PerSiteScaling <Boolean?>]`: Jika <code>true</code>, aplikasi yang ditetapkan untuk paket App Service ini dapat diskalakan secara terpisah.         Jika <code>false</code>, aplikasi yang ditetapkan untuk paket Layanan Aplikasi ini akan menyesuaikan dengan semua contoh paket.
+  - `[Reserved <Boolean?>]`: Jika paket layanan aplikasi <code>true</code>Linux, <code>false</code> jika tidak.
   - `[SkuCapability <ICapability[]>]`: Kemampuan SKU, misalnya, apakah manajer lalu lintas diaktifkan?
     - `[Name <String>]`: Nama kapabilitas SKU.
     - `[Reason <String>]`: Alasan kapabilitas SKU.

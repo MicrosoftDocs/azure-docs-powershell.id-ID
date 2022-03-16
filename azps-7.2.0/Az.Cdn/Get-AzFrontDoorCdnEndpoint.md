@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnEndpoint.md
-ms.openlocfilehash: ce07cd0f38dcc97beb7e9416aacdca886b4874b9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: acfd2bd66cf1e006d144f1f0076a2fb36885ae9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287036"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240407"
 ---
 # Get-AzFrontDoorCdnEndpoint
 
 ## SYNOPSIS
 Mendapatkan titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

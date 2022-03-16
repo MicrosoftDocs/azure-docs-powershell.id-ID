@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnProfile.md
-ms.openlocfilehash: 746a63836d0a6273754fdbb5bf83c56699895a9b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: aad74aa15e93a9a89440d03d3ff60f043e2fb2e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240353"
 ---
 # New-AzCdnProfile
 
 ## SYNOPSIS
-Membuat profil CDN.
+Membuat profil CDN anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet **New-AzCdnProfile** membuat profil Azure Content Delivery Network (CDN).
 
 ### Contoh 1
 
-Membuat profil CDN. (otomatisgenerated)
+Membuat profil CDN anda. (otomatisgenerated)
 
 <!-- Aladdin Generated Example -->
 

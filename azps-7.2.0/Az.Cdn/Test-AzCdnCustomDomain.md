@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/test-azcdncu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Test-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Test-AzCdnCustomDomain.md
-ms.openlocfilehash: ac3b64a8d179325eb2328aa2fa2a6107f5b09f70
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 63b8d858f1182a13550176aabd4598a2049528bb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138318299"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240281"
 ---
 # Test-AzCdnCustomDomain
 
 ## SYNOPSIS
 Memeriksa apakah domain kustom dapat ditambahkan ke titik akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/test-azcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/stop-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Stop-AzHpcCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Stop-AzHpcCache.md
-ms.openlocfilehash: acc10e1bee6c2b7977add53ccbeca24f72a829f5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9a92501e1402ef25f3c038380f6b900dcc763585
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088713"
 ---
 # Stop-AzHpcCache
 
 ## SYNOPSIS
 Menghentikan cache HPC.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/stop-azhpccache) untuk informasi terkini.
 
 ## SYNTAX
 

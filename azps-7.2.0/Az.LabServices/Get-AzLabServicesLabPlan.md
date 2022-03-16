@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLabPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLabPlan.md
-ms.openlocfilehash: 8df6c3a7144c5a7130e6a99d641a82534a506b3f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b6c5dce4aafaa38a15b7d8bfb449cdaef989993a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305787"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087975"
 ---
 # Get-AzLabServicesLabPlan
 
 ## SYNOPSIS
 Mengambil properti Rencana Lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/get-azlabserviceslabplan) untuk informasi terkini.
 
 ## SYNTAX
 

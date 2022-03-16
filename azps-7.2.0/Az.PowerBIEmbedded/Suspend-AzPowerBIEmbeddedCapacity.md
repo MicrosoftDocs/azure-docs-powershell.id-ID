@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Suspend-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Suspend-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 1fe74f5605f257fdaa7f9e89984a2782a2307661
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5b536e84cd6b837c9ec655bef0b6d10584e86643
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164495"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265737"
 ---
 # Suspend-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Menangguhkan instans Kapasitas yang Disematkan PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/suspend-azpowerbiembeddedcapacity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Suspend-AzPowerBIEmbeddedCapacity [-InputObject] <PSPowerBIEmbeddedCapacity> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet Suspend-AzPowerBIEmbeddedCapacity menangguhkan instans Kapasitas Yang Disematkan PowerBI
+Cmdlet Suspend-AzPowerBIEmbeddedCapacity menangguhkan instans Kapasitas Tersemat PowerBI
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
-ms.openlocfilehash: 126e89eeaf798917715dbab6d207e3775e39821b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5b612c5c7193a4495e486cbcc49dab61b2b42efb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167974"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088497"
 ---
 # Get-AzIotHubDeviceChildren
 
 ## SYNOPSIS
 Cetak daftar perangkat anak yang ditetapkan yang dipisahkan koma.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubdevicechildren) untuk informasi terkini.
 
 ## SYNTAX
 

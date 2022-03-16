@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceRemoteDesktopExtensionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceRemoteDesktopExtensionObject.md
-ms.openlocfilehash: 48f728c3012a3b835667deea970d41fa9db858b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e5304dbebb405f5bf26c0de6e94558d01fa5b5a1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169437"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240083"
 ---
 # New-AzCloudServiceRemoteDesktopExtensionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi Desktop Jarak Jauh
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceremotedesktopextensionobject) untuk informasi terkini.
 
 ## SYNTAX
 

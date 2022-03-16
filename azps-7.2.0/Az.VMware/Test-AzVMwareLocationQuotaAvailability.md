@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/test-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationQuotaAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Test-AzVMwareLocationQuotaAvailability.md
-ms.openlocfilehash: d52a8ad1d67f04f5120aa63aa9fa5d30a64197f3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dc730d2f9b5a53b0f151a952133f60b610b8467b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166895"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140225197"
 ---
 # Test-AzVMwareLocationQuotaAvailability
 
 ## SYNOPSIS
 Kembalikan kuota untuk langganan menurut wilayah
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/test-azvmwarelocationquotaavailability) untuk informasi terkini.
 
 ## SYNTAX
 

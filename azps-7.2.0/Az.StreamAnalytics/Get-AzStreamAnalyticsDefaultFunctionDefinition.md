@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsDefaultFunctionDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsDefaultFunctionDefinition.md
-ms.openlocfilehash: fec7aa64a4616148bf905dca02f69113a8a14845
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b079d84dfde885475f4cb8b0503832db3ccdc9d5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314460"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081981"
 ---
 # Get-AzStreamAnalyticsDefaultFunctionDefinition
 
 ## SYNOPSIS
 Mengambil definisi default fungsi berdasarkan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsdefaultfunctiondefinition) untuk informasi terkini.
 
 ## SYNTAX
 

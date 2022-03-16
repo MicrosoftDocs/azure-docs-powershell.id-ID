@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMChefExtension.md
-ms.openlocfilehash: 809be451e28c14fe95bd1fa9708df26e8cd825b0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 53f47afa25fc327f3527771b88d4341b2bb32f3a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290396"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239741"
 ---
 # Get-AzVMChefExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi Chef.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmchefextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Menunjukkan bahwa cmdlet ini adalah untuk komputer virtual Windows komputer virtual.
+Mengindikasikan bahwa cmdlet ini adalah untuk komputer virtual Windows komputer virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

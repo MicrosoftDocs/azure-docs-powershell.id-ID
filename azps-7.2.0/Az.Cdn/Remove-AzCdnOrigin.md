@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnOrigin.md
-ms.openlocfilehash: cd02b0e03432c4d21fa916c1588376fe359fade1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9ad42e61635b993afc8cb1a13eafa2cecd2cc51d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168805"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240299"
 ---
 # Remove-AzCdnOrigin
 
 ## SYNOPSIS
 Menghapus negara CDN origin
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azcdnorigin) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Azure CDN origin tersebut.
+Azure CDN origin.
 
 ```yaml
 Type: System.String

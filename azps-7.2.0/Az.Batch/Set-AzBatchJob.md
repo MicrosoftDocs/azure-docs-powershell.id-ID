@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJob.md
-ms.openlocfilehash: dd8ec2f33d298cdfe30ec8b8a724421ae5ec1ed9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 01d7129f67a88956a00ce9fc481f533ef66cb5ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261772"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240641"
 ---
 # Set-AzBatchJob
 
 ## SYNOPSIS
 Memperbarui pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ PS C:\> Set-AzBatchJob -Job $Job -BatchContext $Context
 ```
 
 Perintah pertama mendapatkan pekerjaan menggunakan **Get-AzBatchJob**, lalu menyimpannya di $Job variabel.
-Perintah kedua mengubah spesifikasi prioritas pada objek $Job.
+Perintah kedua mengubah spesifikasi prioritas pada objek $Job baru.
 Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $Job.
 
 ## PARAMETERS

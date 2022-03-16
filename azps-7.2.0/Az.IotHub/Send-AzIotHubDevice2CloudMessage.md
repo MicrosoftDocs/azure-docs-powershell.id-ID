@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/send-azio
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Send-AzIotHubDevice2CloudMessage.md
-ms.openlocfilehash: 64e0f03d1f48f5b7146347881648a125ba3267d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3b255271474e8ae359cf0d00dae78ed2b5d08dda
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088407"
 ---
 # Send-AzIotHubDevice2CloudMessage
 
 ## SYNOPSIS
 Mengirim pesan perangkat ke awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/send-aziothubdevice2cloudmessage) untuk informasi terkini.
 
 ## SYNTAX
 

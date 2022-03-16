@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.changeanalysis/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ChangeAnalysis/help/Get-AzChangeAnalysis.md
-ms.openlocfilehash: 9756b39f8c44698e56f4d4eb185e7a9a0bae02aa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4e29440a852ba19c0150c7a9a0d26702f9f8e2c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240209"
 ---
 # Get-AzChangeAnalysis
 
 ## SYNOPSIS
 Data pelanggan selalu disingkat jika kueri di tingkat langganan atau grup sumber daya.
 Untuk kueri pada sumber daya tunggal, data pelanggan disingginggkan jika pengguna tidak memiliki akses.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.changeanalysis/get-azchangeanalysis) untuk informasi terkini.
 
 ## SYNTAX
 

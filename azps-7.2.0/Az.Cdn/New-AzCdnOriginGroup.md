@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnOriginGroup.md
-ms.openlocfilehash: 6679ac4d8e4084082cd3d97f9ae3c91372db98f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 380f9fd71d72c78fdd800f507f6c341cdbde790c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291467"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240371"
 ---
 # New-AzCdnOriginGroup
 
 ## SYNOPSIS
 Membuat grup origin CDN baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnorigingroup) untuk informasi terkini.
 
 ## SYNTAX
 

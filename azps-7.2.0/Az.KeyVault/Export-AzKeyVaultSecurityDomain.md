@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/export-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Export-AzKeyVaultSecurityDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Export-AzKeyVaultSecurityDomain.md
-ms.openlocfilehash: a8d8eaab90499473f62357c86a5688f1b27a7295
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 17626a077a94d82cab42df40f00cf04393922d7d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167965"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088299"
 ---
 # Export-AzKeyVaultSecurityDomain
 
 ## SYNOPSIS
 Mengekspor data domain keamanan HSM terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/export-azkeyvaultsecuritydomain) untuk informasi terkini.
 
 ## SYNTAX
 

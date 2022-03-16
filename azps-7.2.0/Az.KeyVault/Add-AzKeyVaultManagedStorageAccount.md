@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: aeb13d3b4fec2f7899876b675e16e8290f29b129
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c46deb560cca376dad2003428891c77868ec407d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088371"
 ---
 # Add-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Menambahkan Akun Azure Storage yang sudah ada ke key vault tertentu agar kunci-kuncinya dikelola oleh layanan Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,12 +29,12 @@ Add-AzKeyVaultManagedStorageAccount [-VaultName] <String> [-AccountName] <String
 ```
 
 ## DESCRIPTION
-Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault Storage kunci Akun agar dikelola oleh Key Vault. Akun Storage harus sudah ada. Tombol Storage tidak pernah diekspos ke penelepon.
+Menyiapkan Akun Azure Storage yang sudah ada dengan Key Vault Storage kunci Akun yang akan dikelola oleh Key Vault. Akun Storage harus sudah ada. Tombol Storage tidak pernah diekspos ke penelepon.
 Kunci Vault otomatis meregenerasi dan beralih kunci aktif berdasarkan periode regenerasi. Lihat [Akun penyimpanan terkelola Azure Key Vault - PowerShell](https://docs.microsoft.com/azure/key-vault/key-vault-overview-storage-keys-powershell) untuk mendapatkan gambaran umum tentang fitur ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur Azure Storage Anda dengan Key Vault untuk mengelola kuncinya
+### Contoh 1: Mengatur Azure Storage Akun dengan Key Vault untuk mengelola kuncinya
 ```powershell
 PS C:\> $storage = Get-AzStorageAccount -ResourceGroupName "mystorageResourceGroup" -StorageAccountName "mystorage"
 PS C:\> $servicePrincipal = Get-AzADServicePrincipal -ServicePrincipalName cfa8b339-82a2-471a-a3c9-0fc0be7a4093
@@ -55,7 +58,7 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Mengatur Akun Storage dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jeda 90 hari.
+Mengatur akun Storage Anda dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jeda 90 hari.
 
 ### Contoh 2: Mengatur Akun Azure Storage Klasik dengan Key Vault untuk mengelola tombolnya
 ```powershell

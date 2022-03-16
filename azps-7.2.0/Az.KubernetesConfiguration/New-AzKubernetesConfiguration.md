@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesConfiguration.md
-ms.openlocfilehash: 5902de22d657a9f018ce044b4ed17554b81c2d3c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6cf1860a5ef224a0d1ed255d6c21e26bee37fed0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261227"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088065"
 ---
 # New-AzKubernetesConfiguration
 
 ## SYNOPSIS
 Membuat K configurations Source Control Configuration baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

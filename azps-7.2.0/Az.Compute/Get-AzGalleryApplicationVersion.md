@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryApplicationVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzGalleryApplicationVersion.md
-ms.openlocfilehash: c350ac56154adde37cf9d148bce0eaa517d918f6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 52f343c2f33b9cab756c7b75061344794d340782
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170147"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239831"
 ---
 # Get-AzGalleryApplicationVersion
 
 ## SYNOPSIS
 Mengambil informasi tentang galeri Versi Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azgalleryapplicationversion) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Get-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: b2b00f9f3e47d988356b929a1d27bdd316f1b318
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5a64f01a4aba359d2c2fe8a9a3a271206ff6260d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082107"
 ---
 # Get-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini mencantumkan semua titik akhir server dalam grup sinkronisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/get-azstoragesyncserverendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

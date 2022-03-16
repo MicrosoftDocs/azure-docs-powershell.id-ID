@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlRoleAssignment.md
-ms.openlocfilehash: cd98b08205c7d9a99b17defad9d3965b5605eb28
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 622e05d11aa73214e3f1136c44b7813e9f34b67b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239417"
 ---
 # Remove-AzCosmosDBSqlRoleAssignment
 
 ## SYNOPSIS
 Menghapus Penetapan Peran CosmosDB Sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbsqlroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzCosmosDBSqlRoleAssignment -InputObject <PSSqlRoleAssignmentGetResults> 
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzCosmosDBSqlRoleAssignment menghapus Penetapan Peran CosmosDB Sql yang terkait dengan ResourceGroupName, AccountName, dan Id yang diberikan. Id dapat sepenuhnya memenuhi syarat atau hanya guid.
+Cmdlet Remove-AzCosmosDBSqlRoleAssignment ini menghapus Tugas Peran CosmosDB Sql yang terkait dengan ResourceGroupName, AccountName, dan Id yang diberikan. Id dapat sepenuhnya memenuhi syarat atau hanya guid.
 
 ## EXAMPLES
 

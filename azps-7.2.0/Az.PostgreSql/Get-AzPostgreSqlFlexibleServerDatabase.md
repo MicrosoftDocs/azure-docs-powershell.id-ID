@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Get-AzPostgreSqlFlexibleServerDatabase.md
-ms.openlocfilehash: 427ec32417494a1f4e2ebf124f119f290e1c9c7c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f7eeb9692e59764c1b521e49b22cb1a3225482e2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304427"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140266061"
 ---
 # Get-AzPostgreSqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Mendapatkan informasi tentang database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/get-azpostgresqlflexibleserverdatabase) untuk informasi terkini.
 
 ## SYNTAX
 

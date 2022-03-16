@@ -4,17 +4,20 @@ Module Name: Az.Websites
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppAccessRestrictionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Update-AzWebAppAccessRestrictionConfig.md
-ms.openlocfilehash: 38a1fd9d56628436bb31d6a3872c779499bfd5f4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e7b51aae6f71759a5280b87467a0ebe65ff79af6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264315"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140224767"
 ---
 # Update-AzWebAppAccessRestrictionConfig
 
 ## SYNOPSIS
 Memperbarui pewarisan konfigurasi Restiction Akses situs utama ke Situs SCM untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/update-azwebappaccessrestrictionconfig) untuk informasi terkini.
 
 ## SYNTAX
 

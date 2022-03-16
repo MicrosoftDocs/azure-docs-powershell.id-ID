@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultSecret.md
-ms.openlocfilehash: 0d7432668f5498f75619e64fc11164ee5a7bc7c2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ba814479cbe7f90709b2ff95c18eee666d24523
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088137"
 ---
 # Set-AzKeyVaultSecret
 
 ## SYNOPSIS
 Membuat atau memperbarui rahasia di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultsecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Content Type :
 Tags         :
 ```
 
-Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string itu dalam $Secret variabel. Untuk informasi selengkapnya, ketik `Get-Help
+Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string itu di $Secret variabel. Untuk informasi selengkapnya, ketik `Get-Help
 ConvertTo-SecureString`.
 Perintah kedua mengubah nilai rahasia bernama ITSecret dalam kunci vault bernama Contoso. Nilai rahasia menjadi nilai yang disimpan di $Secret.
 
@@ -85,7 +88,7 @@ Tags         : Name      Value
                IT        true
 ```
 
-Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string itu dalam $Secret variabel. Untuk informasi selengkapnya, ketik `Get-Help
+Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string itu di $Secret variabel. Untuk informasi selengkapnya, ketik `Get-Help
 ConvertTo-SecureString`.
 Perintah berikutnya menentukan atribut kustom untuk tanggal kedaluwarsa, tag, dan tipe konteks, dan menyimpan atribut dalam variabel.
 Perintah terakhir mengubah nilai rahasia bernama ITSecret di kunci vault bernama Contoso, dengan menggunakan nilai yang ditentukan sebelumnya sebagai variabel.

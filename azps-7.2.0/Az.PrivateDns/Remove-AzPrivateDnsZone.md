@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsZone.md
-ms.openlocfilehash: 7a7c5f3c90c76bc980b532c4855e4dfde175085c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8d4caac0151e6120d90b4096629124ab0cf443f5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295211"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140265671"
 ---
 # Remove-AzPrivateDnsZone
 
 ## SYNOPSIS
 Menghapus zona DNS privat dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/remove-azprivatednszone) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzPrivateDnsZone -ResourceId <String> [-PassThru] [-DefaultProfile <IAzur
 Cmdlet **Remove-AzPrivateDnsZone** secara permanen menghapus zona Domain Name System (DNS) pribadi dari grup sumber daya yang ditentukan.
 Semua kumpulan catatan yang dimuat dalam zona juga dihapus.
 Anda dapat melewati **objek PrivateDnsZone** menggunakan parameter *PrivateZone* atau menggunakan operator pipeline, atau menentukan parameter *Name* dan *ResourceGroupName* .
-Anda dapat menggunakan variabel $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 Ketika menentukan zona menggunakan objek **PrivateDnsZone** (disampaikan *melalui saluran atau* parameter Zona), zona tidak akan dihapus jika telah diubah dalam DNS Azure karena objek **PrivateDnsZone** lokal diambil (hanya operasi yang langsung tersedia pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan digunakan).
 Hal ini menyediakan perlindungan untuk perubahan zona serentak.
 Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang menghapus zona terlepas dari perubahan konklarasi.

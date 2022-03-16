@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtension.md
-ms.openlocfilehash: 29f8dcfcb27decb716b2ad87b1c338d217fa2bfe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e6c2f99262e358dd1cfa7f72e6118d63ef13e22c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297051"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239687"
 ---
 # Get-AzVMDscExtension
 
 ## SYNOPSIS
 Dapatkan pengaturan ekstensi DSC di komputer virtual tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmdscextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi.
-Cmdlet Set-AzVMDscExtension mengatur nama ini ke Microsoft.Powershell.DSC, yang merupakan nilai yang sama yang digunakan oleh **Get-AzVMDscExtension**.
+Cmdlet Set-AzVMDscExtension mengatur nama ini menjadi Microsoft.Powershell.DSC, yang merupakan nilai yang sama untuk digunakan oleh **Get-AzVMDscExtension**.
 Tentukan parameter ini hanya jika Anda mengubah nama default dalam cmdlet **Set-AzVMDscExtension** atau menggunakan nama sumber daya lain di templat Manajer Sumber Daya.
 
 ```yaml

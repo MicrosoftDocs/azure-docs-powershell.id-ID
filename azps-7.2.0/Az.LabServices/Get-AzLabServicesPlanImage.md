@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesPlanImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesPlanImage.md
-ms.openlocfilehash: c67f34974c144078d5464b36bb8097100025c76b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5fb2b2a2bfed87b9aa34a75e17876961d7a9fc51
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087957"
 ---
 # Get-AzLabServicesPlanImage
 
 ## SYNOPSIS
 Mendapatkan sumber daya gambar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/get-azlabservicesplanimage) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssDataDisk.md
-ms.openlocfilehash: 8d825762774e13472b48f192b7684f33fd72c795
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0d07cc1f1c105c54228e06e04443666f285d529
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282540"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239957"
 ---
 # Add-AzVmssDataDisk
 
 ## SYNOPSIS
 Menambahkan disk data ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmssdatadisk) untuk informasi terkini.
 
 ## SYNTAX
 
