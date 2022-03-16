@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: 77ea69f27fcbb07c1fad01af5f30947f53279d93
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d690517cacaee6c13961be5250509ea9f773ab48
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366517"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140129355"
 ---
 # Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Menghapus pengaturan perlindungan ancaman tingkat lanjut dari SQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting -ResourceId <String> [-Pas
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari grup SQL Azure Synapse.
+Cmdlet **Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menghapus pengaturan perlindungan ancaman tingkat lanjut dari grup SQL Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Cmdlet **Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menghapus penga
 PS C:\> Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini menghapus pengaturan perlindungan ancaman tingkat lanjut dari sebuah SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
+Perintah ini menghapus pengaturan perlindungan ancaman tingkat lanjut dari kolam SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

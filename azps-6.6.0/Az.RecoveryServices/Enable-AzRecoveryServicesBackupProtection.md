@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 8aeecb675abe1f4250ad84916f47d70fe6e291a0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 385b2f3573f191290e99356f79509dd61ac75e68
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360281"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140068481"
 ---
 # Enable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
 Mengaktifkan pencadangan untuk item dengan kebijakan Proteksi pencadangan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupprotection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Enable-AzRecoveryServicesBackupProtection [[-Policy] <PolicyBase>] [-Item] <Item
 ## DESCRIPTION
 Cmdlet **Enable-AzRecoveryServicesBackupProtection** mengaktifkan cadangan dengan mengaitkan kebijakan proteksi dengan item tersebut.
 Jika ID kebijakan tidak ada atau item cadangan tidak terkait dengan kebijakan apa pun, maka perintah ini akan mengharapkan IDkebkaan kebijakan.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ co03-vm         ConfigureBackup  Completed       11-Apr-16 12:19:49 PM      11-A
 
 Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya di $Pol variabel.
 Cmdlet kedua menentukan LUN disk yang akan dicadangkan dan menyimpannya di $inclusionDiskLUNS variabel.
-Cmdlet ketiga mengatur Kebijakan proteksi cadangan untuk komputer virtual ARM yang bernama V2VM menggunakan kebijakan di $Pol.
+Cmdlet ketiga mengatur kebijakan Proteksi cadangan untuk komputer virtual ARM bernama V2VM menggunakan kebijakan dalam $Pol.
 
 ### Contoh 2
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -Item
 Menentukan item Cadangan yang memungkinkan proteksi oleh cmdlet ini.
-Untuk mendapatkan **AzureRmRecoveryServicesBackupItem,** gunakan cmdlet Get-AzRecoveryServicesBackupItem cmdlet.
+Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 Menentukan kebijakan proteksi bahwa cmdlet ini terkait dengan item.
-Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy,** gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy baru.
+Untuk mendapatkan objek **AzureRmRecoveryServicesBackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

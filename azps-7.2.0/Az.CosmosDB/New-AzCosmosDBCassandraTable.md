@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: 70fd0d0b08ebd4a018ac1d74d0e4cfdabaa089f3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b0fd521130e7b179de0a03a895e07af24a978636
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256891"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059637"
 ---
 # New-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
 Membuat Tabel CosmosDB CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbcassandratable) untuk informasi terkini.
 
 ## SYNTAX
 

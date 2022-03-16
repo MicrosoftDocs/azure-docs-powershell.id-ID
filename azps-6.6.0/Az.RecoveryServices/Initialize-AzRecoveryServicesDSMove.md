@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesDSMove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesDSMove.md
-ms.openlocfilehash: 815efad6555b840512446ad34b6d08bbce2b5b70
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1e7c83834c39fe59a086f593d1f6cb395dd0f484
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369611"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140068157"
 ---
 # Initialize-AzRecoveryServicesDSMove
 
 ## SYNOPSIS
 Memulai pemindahan DS untuk Copy-AzRecoveryServicesVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/initialize-azrecoveryservicesdsmove) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Initialize-AzRecoveryServicesDSMove [-DefaultProfile <IAzureContextContainer>] [
 ```
 
 ## DESCRIPTION
-Memulai pemindahan DS untuk Copy-AzRecoveryServicesVault. Menjalankan cmdlet Test-AzRecoveryServicesDSMove cmdlet ini wajib dilakukan. Cmdlet ini menghasilkan ID Korelasi yang dapat digunakan sebagai Input untuk Copy-AzRecoveryServicesVault cmdlet. Cmdlet ini sangat berguna untuk skenario pemindahan DS lintas penyewa. 
+Memulai pemindahan DS untuk Copy-AzRecoveryServicesVault. Menjalankan cmdlet wajib Test-AzRecoveryServicesDSMove cmdlet ini. Cmdlet ini menghasilkan ID Korelasi yang dapat digunakan sebagai Input untuk Copy-AzRecoveryServicesVault cmdlet. Cmdlet ini sangat berguna untuk skenario pemindahan DS lintas penyewa. 
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ PS C:\> if($validated) {
 
 Cmdlet pertama mengatur konteks langganan target. Cmdlet kedua memicu beberapa validasi wajib pada penyimpanan target.
 Cmdlet ketiga mengatur konteks langganan sumber.
-Lalu berdasarkan negara Test-AzRecoveryServicesDSMove cmdlet, kami mengambil CorrelationId menggunakan Initialize-AzRecoveryServicesDSMove cmdlet. $corr dapat diinput ke cmdlet Salin.
+Lalu berdasarkan Test-AzRecoveryServicesDSMove cmdlet, kami mengambil CorrelationId menggunakan Initialize-AzRecoveryServicesDSMove cmdlet. $corr dapat diinput ke cmdlet Salin.
 
 ## PARAMETERS
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

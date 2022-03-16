@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiFromGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementApiFromGateway.md
-ms.openlocfilehash: 4eaa7c728c70f2c9efe86da4949e455bf8a496a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50a07e002ae02201f7877fb58e4d018641a19da1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062967"
 ---
 # Remove-AzApiManagementApiFromGateway
 
 ## SYNOPSIS
 Melampirkan API ke gateway.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementapifromgateway) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ChildItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ChildItem.md
-ms.openlocfilehash: 65e0a1179f4c915efbe9cae0e354b37d63c91f7f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fc7c2106d6c6d7c8d4c6760b8860bf081f1ba365
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342065"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130957"
 ---
 # Get-AzDataLakeGen2ChildItem
 
 ## SYNOPSIS
 Mencantumkan sub direktori dan file dari direktori atau akar filesystem.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azdatalakegen2childitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ Contoh ini menggunakan parameter *MaxCount* dan *ContinuationToken* untuk mencan
 *MaxCount kecil* dapat membatasi jumlah item yang dikembalikan dari satu kali berurutan, dapat membantu jika waktu operasi habis dan membatasi penggunaan memori Powershell.
 Empat perintah pertama menetapkan nilai ke variabel untuk digunakan dalam contoh.
 Perintah kelima menentukan pernyataan **Do-While yang** menggunakan cmdlet **Get-AzDataLakeGen2ChildItem** untuk mencantumkan item.
-Pernyataan menyertakan token lanjutan yang disimpan dalam variabel $Token.
+Pernyataan menyertakan token kelanjutan yang disimpan dalam variabel $Token disimpan.
 $Token perubahan saat pengulangan berjalan.
 Perintah final menggunakan perintah **Echo** untuk menampilkan total.
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputUserPrincipalName
-Jika parameter ini ditentukan, nilai identitas pengguna yang dikembalikan di bidang pemilik dan grup dari setiap entri daftar akan diubah dari Azure Active Directory ID Objek menjadi Nama Prinsipal Pengguna. Jika tidak spesifik parameter ini, nilai akan dikembalikan sebagai Azure Active Directory OBJECT IDs. Perhatikan bahwa ID Objek grup dan aplikasi tidak diterjemahkan karena tidak memiliki nama yang mudah diingat.
+Jika parameter ini ditentukan, nilai identitas pengguna yang dikembalikan di bidang pemilik dan grup dari setiap entri daftar akan diubah dari id Azure Active Directory Objek menjadi Nama Prinsipal Pengguna. Jika tidak spesifik parameter ini, nilai akan dikembalikan sebagai Azure Active Directory OBJECT IDs. Perhatikan bahwa ID Objek grup dan aplikasi tidak diterjemahkan karena tidak memiliki nama yang mudah diingat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

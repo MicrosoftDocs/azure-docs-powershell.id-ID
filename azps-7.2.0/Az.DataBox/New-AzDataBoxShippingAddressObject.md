@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxShippingAddressObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxShippingAddressObject.md
-ms.openlocfilehash: 2f9ee3ba75670d958ae0c82468e0a75b45f5902f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e1d759a941bff4a43e2b02abfe6031d0b624de75
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264076"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059259"
 ---
 # New-AzDataBoxShippingAddressObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk ShippingAddress.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/new-azdataboxshippingaddressobject) untuk informasi terkini.
 
 ## SYNTAX
 

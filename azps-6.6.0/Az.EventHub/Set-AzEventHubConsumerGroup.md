@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 589e64112afb5e97c528e478c1c02c3efd599cf7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 015d8a124a7390ccc1e3af6b3ccac74e3469f628
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363038"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976343"
 ---
 # Set-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Memperbarui grup konsumen Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/set-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet Set-AzEventHubConsumerGroup memperbarui grup konsumen Hub Kejadian yang d
 PS C:\> Set-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName -UserMetadata "Testing"
 ```
 
-Mengatur metadata pengguna grup konsumen \` MyConsumerGroupName \` menjadi "Pengujian."
+Mengatur metadata pengguna grup konsumen \`MyConsumerGroupName menjadi\` "Pengujian."
 
 ## PARAMETERS
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

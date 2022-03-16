@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchTask.md
-ms.openlocfilehash: 12a9ef01a78c7184b35e71f7e4acedf85803f0ba
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b8115c47b5a2ec5a56fccbee3fefed66a87374dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334158"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139979871"
 ---
 # Set-AzBatchTask
 
 ## SYNOPSIS
 Memperbarui properti tugas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchtask) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzBatchTask [-Task] <PSCloudTask> -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Set-AzBatchTask** memperbarui properti tugas dalam layanan Kumpulan Azure.
-Gunakan cmdlet Get-AzBatchTask untuk mendapatkan objek **PSCloudTask.**
+Gunakan cmdlet Get-AzBatchTask untuk mendapatkan objek **PSCloudTask** .
 Modifikasi properti objek itu, lalu gunakan cmdlet saat ini untuk melakukan perubahan Anda ke layanan Batch.
 
 ## EXAMPLES
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

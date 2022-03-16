@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstance.md
-ms.openlocfilehash: aa36302bf47ab004eabb9b527ba44c9bbddd0be9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b7c8014c4b93e1e970bc7543980f42c94c5acce6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268219"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060141"
 ---
 # Get-AzCloudServiceRoleInstance
 
 ## SYNOPSIS
 Mendapatkan peran contoh dari layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ ContosoFrontEnd_IN_0    eastus2euap Standard_D1_v2 Standard
 
 ```
 
-Perintah ini mendapatkan properti contoh peran yang dinamai ContosoFrontEnd_IN_0 cloud bernama ContosoCS yang dimiliki grup sumber daya bernama ContosOrg.
+Perintah ini mendapatkan properti contoh peran yang bernama ContosoFrontEnd_IN_0 awan bernama ContosoCS yang dimiliki grup sumber daya bernama ContosOrg.
 
 ## PARAMETERS
 
@@ -207,7 +210,7 @@ INPUTOBJECT <ICloudServiceIdentity>: Parameter Identitas
   - `[ResourceGroupName <String>]`: 
   - `[RoleInstanceName <String>]`: Nama contoh peran.
   - `[RoleName <String>]`: Nama peran.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
   - `[UpdateDomain <Int32?>]`: Menentukan nilai bilangan bulat yang mengidentifikasi domain pembaruan. Update domains are identified with a zero-based index: the first update domain has an ID of 0, the second has an ID of 1, and so on.
 
 ## RELATED LINKS

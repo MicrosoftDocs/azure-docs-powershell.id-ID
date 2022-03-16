@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTroubleshootingResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherTroubleshootingResult.md
-ms.openlocfilehash: 3e8bb185cb3e8f0731fb282229482fccf3977612
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fe8eb4ee1a518f4c0f40e5eed88349faed61b952
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387181"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140104301"
 ---
 # Get-AzNetworkWatcherTroubleshootingResult
 
 ## SYNOPSIS
 Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang sebelumnya sedang berjalan atau yang sedang berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkwatchertroubleshootingresult) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzNetworkWatcherTroubleshootingResult -Location <String> -TargetResourceId <
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherTroubleshootingResult mendapatkan hasil pemecahan masalah dari operasi yang dijalankan sebelumnya atau Start-AzNetworkWatcherResourceTroubleshooting ini. Jika operasi pemecahan masalah sedang berlangsung, maka operasi ini mungkin membutuhkan waktu beberapa menit hingga selesai. Saat ini Gateway dan Koneksi Jaringan Virtual didukung.
+Cmdlet Get-AzNetworkWatcherTroubleshootingResult mendapatkan hasil pemecahan masalah dari operasi yang dijalankan sebelumnya atau saat Start-AzNetworkWatcherResourceTroubleshooting ini. Jika operasi pemecahan masalah sedang berlangsung, maka operasi ini mungkin membutuhkan waktu beberapa menit hingga selesai. Saat ini Gateway dan Koneksi Jaringan Virtual didukung.
 
 ## EXAMPLES
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

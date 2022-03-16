@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnProfile.md
-ms.openlocfilehash: 3f3892eb8a48b601be33065bbefed8d643ef9124
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e51978d24c59ae14496935cc65a6ce1ea2adb940
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060393"
 ---
 # Remove-AzFrontDoorCdnProfile
 
 ## SYNOPSIS
 Menghapus profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azfrontdoorcdnprofile) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/stop-azbat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchJob.md
-ms.openlocfilehash: 305c0548727e123fb2e66c323dfc1479de3c3ab9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 65433656686115cf3c8d1a8f58e6d3563f6872ea
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061131"
 ---
 # Stop-AzBatchJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/stop-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\>Stop-AzBatchJob -Id "Job-000001" -TerminateReason "No more tasks to run" 
 
 Perintah ini menghentikan pekerjaan yang memiliki ID Job-000001.
 Perintah tersebut menentukan alasan yang Anda pilih untuk menghentikan pekerjaan.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ## PARAMETERS
 

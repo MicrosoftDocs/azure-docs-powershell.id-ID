@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncAgent.md
-ms.openlocfilehash: e9dadf9be5d940d41d7f722a7770d6aad01eae68
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 57110a5829a7efbde3d33f05ba4526017b1f0313
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162165"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114865"
 ---
 # Get-AzSqlSyncAgent
 
 ## SYNOPSIS
 Mengembalikan informasi tentang Azure SQL Agen Sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlsyncagent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server agen sinkronisasi berada.
+Nama azure SQL Server agen sinkronisasi sudah masuk.
 
 ```yaml
 Type: System.String

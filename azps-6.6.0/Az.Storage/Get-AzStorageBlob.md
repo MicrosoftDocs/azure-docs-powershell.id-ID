@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlob.md
-ms.openlocfilehash: fd838aec011beb110ec70adaface4d821ac0fce3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a6d79fed6ab7abeb613de397e61e4cde952f7f35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368295"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130867"
 ---
 # Get-AzStorageBlob
 
 ## SYNOPSIS
 Mencantumkan blob dalam wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageblob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -104,12 +107,12 @@ PS C:\> do
 PS C:\> Echo "Total $Total blobs in container $ContainerName"
 ```
 
-Contoh ini menggunakan *parameter MaxCount* *dan ContinuationToken* untuk Azure Storage blob dalam beberapa kumpulan.
+Contoh ini menggunakan *parameter MaxCount* dan *ContinuationToken* untuk Azure Storage blob dalam beberapa kumpulan.
 Empat perintah pertama menetapkan nilai ke variabel untuk digunakan dalam contoh.
 Perintah kelima menentukan pernyataan **Do-While** yang menggunakan cmdlet **Get-AzStorageBlob** untuk mendapatkan blob.
-Pernyataan menyertakan token lanjutan yang disimpan dalam variabel $Token jaringan.
+Pernyataan menyertakan token kelanjutan yang disimpan dalam variabel $Token disimpan.
 $Token perubahan saat pengulangan berjalan.
-Untuk informasi selengkapnya, ketik `Get-Help About_Do` .
+Untuk informasi selengkapnya, ketik `Get-Help About_Do`.
 Perintah final menggunakan perintah **Echo** untuk menampilkan total.
 
 ### Contoh 5: Get all blobs in a container include blob version
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan akun penyimpanan Azure yang ingin Anda dapatkan daftar blobnya.
-Anda dapat menggunakan cmdlet New-AzStorageContext cmdlet untuk membuat konteks penyimpanan.
+Anda dapat menggunakan cmdlet New-AzStorageContext tersebut untuk membuat konteks penyimpanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 
 ### -TagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kecocokan kondisi. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations .
+Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

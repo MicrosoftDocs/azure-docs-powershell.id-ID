@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: e5a054802dbe7966050082da668ab5fc010077bb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bb29b7f1cb4a4a4bd704fa640eea40ade7266f5c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364781"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140068010"
 ---
 # New-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
 Membuat kebijakan perlindungan Cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesbackupprotectionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** membuat kebijakan protek
 Kebijakan proteksi berkaitan dengan setidaknya satu kebijakan penyimpanan.
 Kebijakan penyimpanan menentukan berapa lama titik pemulihan akan disimpan dengan Azure Backup.
 Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject cmdlet untuk mendapatkan kebijakan penyimpanan default.
-Dan Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject cmdlet untuk mendapatkan kebijakan jadwal default.
-Objek **SchedulePolicy** **dan RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzRecoveryServicesBackupProtectionPolicy.**
+Dan Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan kebijakan jadwal default.
+Objek **SchedulePolicy** **dan RetentionPolicy** digunakan sebagai input ke cmdlet **New-AzRecoveryServicesBackupProtectionPolicy** .
 Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
@@ -49,7 +52,7 @@ PS C:\> $RetPol.DailySchedule.DurationCountInDays = 365
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan dasar **SchedulePolicyObject**, lalu menyimpannya di $SchPol variabel.
+Perintah pertama mendapatkan dasar **SchedulePolicyObject**, lalu menyimpannya dalam $SchPol variabel.
 Perintah kedua menghapus semua waktu jalankan terjadwal dari kebijakan jadwal di $SchPol.
 Perintah ketiga menggunakan cmdlet Get-Date cmdlet untuk mendapatkan tanggal dan waktu saat ini.
 Perintah keempat menambahkan tanggal dan waktu saat ini $Dt waktu berjalan sebagai waktu berjalan yang dijadwalkan ke kebijakan jadwal.
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 
 ### -RetentionPolicy
 Menentukan objek **RetentionPolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan objek **RetentionPolicy.**
+Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject untuk mendapatkan objek **RetentionPolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -SchedulePolicy
 Menentukan objek **schedulePolicy** dasar.
-Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan **objek SchedulePolicy.**
+Anda bisa menggunakan cmdlet Get-AzRecoveryServicesBackupSchedulePolicyObject untuk mendapatkan objek **SchedulePolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.SchedulePolicyBase
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

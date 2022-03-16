@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: af73e0ce8bb6b09622978199f8ad1e1ead776d12
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c7d628b8683af0fa143449cb881a63e04b9da3dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358193"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067905"
 ---
 # Remove-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan proteksi Cadangan dari vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesbackupprotectionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Remove-AzRecoveryServicesBackupProtectionPolicy** menghapus kebijakan p
 Sebelum Anda bisa menghapus kebijakan Proteksi cadangan, kebijakan tersebut tidak boleh memiliki item Pencadangan yang terkait.
 Sebelum Anda menghapus kebijakan, pastikan bahwa setiap item terkait dikaitkan dengan beberapa kebijakan lain.
 Untuk mengaitkan kebijakan lain dengan item Cadangan, gunakan cmdlet Enable-AzRecoveryServicesBackupProtection lanjut.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ PS C:\>$Pol= Get-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy"
 PS C:\> Remove-AzRecoveryServicesBackupProtectionPolicy -Policy $Pol
 ```
 
-Perintah pertama mendapatkan kebijakan Proteksi cadangan bernama NewPolicy, lalu menyimpannya dalam $Pol kawasan.
+Perintah pertama mendapatkan Kebijakan proteksi cadangan bernama NewPolicy, lalu menyimpannya dalam $Pol pengguna.
 Perintah kedua menghapus objek kebijakan di $Pol.
 
 ### Contoh 2
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 Menentukan kebijakan Proteksi cadangan untuk dihapus.
-Untuk mendapatkan objek **BackupPolicy,** gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy.
+Untuk mendapatkan objek **BackupPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

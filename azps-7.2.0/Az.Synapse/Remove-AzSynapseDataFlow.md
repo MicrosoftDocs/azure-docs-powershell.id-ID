@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseDataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseDataFlow.md
-ms.openlocfilehash: f46af91357df0d796b61477dcebed1c3df7715f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0956a1166014300a67f754b39de991f88b45c49e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113461"
 ---
 # Remove-AzSynapseDataFlow
 
 ## SYNOPSIS
 Menghapus alur data dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsedataflow) untuk informasi terkini.
 
 ## SYNTAX
 

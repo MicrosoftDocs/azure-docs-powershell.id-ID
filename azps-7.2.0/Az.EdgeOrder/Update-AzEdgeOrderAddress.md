@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Update-AzEdgeOrderAddress.md
-ms.openlocfilehash: 81d11929ba9c35627a8c7f37ade2d05a7bf75b2e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 69cd911406ba802f4e79749e9addbe890ff8a18a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124027"
 ---
 # Update-AzEdgeOrderAddress
 
 ## SYNOPSIS
 Memperbarui properti alamat yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.edgeorder/update-azedgeorderaddress) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -271,7 +274,7 @@ CONTACTDETAIL <IContactDetails>: Detail kontak alamat
   - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel orang yang dapat dihubungi.
-  - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang yang menghubungi Anda.
+  - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang kontak.
 
 INPUTOBJECT <IEdgeOrderIdentity>: Parameter Identitas
   - `[AddressName <String>]`: Nama Sumber Daya alamat dalam grup sumber daya yang ditentukan. nama alamat harus panjang antara 3 dan 24 karakter dan gunakan alfanumerik dan garis bawah saja

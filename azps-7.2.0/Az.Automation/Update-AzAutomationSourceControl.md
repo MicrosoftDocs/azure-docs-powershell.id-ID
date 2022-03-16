@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
-ms.openlocfilehash: f8a85cd8be6f6ddb2d54bd145f3978fc1a7c41ab
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: da20ff37a8097167c3a5224c298c4d3fc5ce4fcb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164898"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241199"
 ---
 # Update-AzAutomationSourceControl
 
 ## SYNOPSIS
 Memperbarui kontrol sumber Otomatisasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/update-azautomationsourcecontrol) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzAutomationSourceControl -Name <String> [-AccessToken <SecureString>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzAutomationSourceControl akan memodifikasi nilai bidang dalam kontrol sumber dalam Azure Automation.
+Cmdlet Update-AzAutomationSourceControl cmdlet mengubah nilai bidang dalam kontrol sumber dalam Azure Automation.
 
 ## EXAMPLES
 

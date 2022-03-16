@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementProduct.md
-ms.openlocfilehash: 93529c21bd338585f006e041b060dbd3b0f63e01
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a5683b8688bccc7932715280f987ee3fe0d87b4a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391294"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140144492"
 ---
 # New-AzApiManagementProduct
 
 ## SYNOPSIS
 Membuat produk Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementproduct) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Durasi langganan diatur ke satu tahun.
 
 ### -ApprovalRequired
 Menunjukkan apakah langganan untuk produk tersebut memerlukan persetujuan atau tidak.
-Secara default, parameter **ini**$False .
+Secara default, parameter ini **$False**.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan contoh objek **PsApiManagementContext.**
+Menentukan contoh objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

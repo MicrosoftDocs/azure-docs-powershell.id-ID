@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJobOutputRecord.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationJobOutputRecord.md
-ms.openlocfilehash: ce55e163208cfd88007341672750a33bcf0f997e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cc4be181d9c44e0f6db0836d3445c4ee3a944299
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254972"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126673"
 ---
 # Get-AzAutomationJobOutputRecord
 
 ## SYNOPSIS
 Mendapatkan output penuh dari catatan output pekerjaan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationjoboutputrecord) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: ef31034ddacc7de857441a3ae81e210059e8fe04
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f4e0b03e436b0f7ec194600834a5d2cae25a2691
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376664"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128941"
 ---
 # New-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
 Membuat titik akhir di Traffic Manager profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/new-aztrafficmanagerendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzTrafficManagerEndpoint -Name <String> -ProfileName <String> -ResourceGroup
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzTrafficManagerEndpoint** membuat titik akhir di Azure Traffic Manager profil.
+Cmdlet **New-AzTrafficManagerEndpoint** membuat titik akhir di profil Azure Traffic Manager.
 
 Cmdlet ini akan melakukan setiap titik akhir baru ke Traffic Manager baru.
 Untuk menambahkan beberapa titik akhir ke objek Traffic Manager profil lokal dan melakukan perubahan dalam satu operasi, gunakan cmdlet Add-AzTrafficManagerEndpointConfig cmdlet.
@@ -92,7 +95,7 @@ Parameter ini hanya berlaku untuk titik akhir tipe ExternalEndpoints atau Nested
 Anda harus menentukan parameter ini ketika metode Perutean lalu lintas kinerja digunakan.
 
 Tentukan nama kawasan Azure.
-Untuk daftar lengkap kawasan Azure, lihat Azure Regions http://azure.microsoft.com/regions/ ( http://azure.microsoft.com/regions/) .
+Untuk daftar lengkap kawasan Azure, lihat Azure Regionshttp://azure.microsoft.com/regions/ (http://azure.microsoft.com/regions/).
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -MinChildEndpoints
 Tentukan nama kawasan Azure.
-Untuk daftar lengkap kawasan Azure, lihat Azure Regions http://azure.microsoft.com/regions/ ( http://azure.microsoft.com/regions/) .
+Untuk daftar lengkap kawasan Azure, lihat Azure Regionshttp://azure.microsoft.com/regions/ (http://azure.microsoft.com/regions/).
 
 ```yaml
 Type: System.Nullable`1[System.UInt32]
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

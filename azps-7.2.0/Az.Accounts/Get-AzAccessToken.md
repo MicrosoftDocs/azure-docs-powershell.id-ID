@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-aza
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzAccessToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzAccessToken.md
-ms.openlocfilehash: 29aa325f103fb9e910109f127243536146431b7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 346d37a05f2942b29ad64033a5d4abc61b9f97d7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128041"
 ---
 # Get-AzAccessToken
 
 ## SYNOPSIS
 Dapatkan token akses mentah. Ketika menggunakan -ResourceUrl, pastikan nilai cocok dengan lingkungan Azure saat ini. Anda mungkin merujuk ke nilai `(Get-AzContext).Environment`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/get-azaccesstoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,14 +46,14 @@ Get-AzAccessToken
 
 Dapatkan token akses akun saat ini untuk titik akhir ResourceManager
 
-### Contoh 2 Dapatkan token akses untuk titik akhir Microsoft Graph akhir
+### Contoh 2 Dapatkan token akses untuk Microsoft Graph titik akhir
 ```powershell
 Get-AzAccessToken -ResourceTypeName MSGraph
 ```
 
 Dapatkan token akses titik akhir Microsoft Graph akhir untuk akun saat ini
 
-### Contoh 3 Dapatkan token akses untuk Microsoft Graph titik akhir
+### Contoh 3 Dapatkan token akses untuk titik akhir Microsoft Graph akhir
 ```powershell
 Get-AzAccessToken -ResourceUrl "https://graph.microsoft.com/"
 ```

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationVariable.md
-ms.openlocfilehash: 07c6be5cab5dd8e36ae2c4c907f8af2520875b66
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c7c8ffa6b258851922d465d4c81cc94b9860c721
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287067"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241361"
 ---
 # New-AzAutomationVariable
 
 ## SYNOPSIS
 Membuat variabel Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationvariable) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ PS C:\> New-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "Compl
 Perintah pertama mendapatkan mesin virtual menggunakan cmdlet Get-AzVM baru.
 Perintah menyimpannya di $VirtualMachine variabel.
 Perintah kedua membuat variabel bernama ComplexVariable01 dalam akun Otomatisasi yang bernama Contoso17.
-Perintah ini menggunakan objek kompleks untuk nilainya, dalam hal ini, mesin virtual di $VirtualMachine.
+Perintah ini menggunakan objek kompleks untuk nilainya, dalam hal ini, mesin virtual dalam $VirtualMachine.
 
 ## PARAMETERS
 

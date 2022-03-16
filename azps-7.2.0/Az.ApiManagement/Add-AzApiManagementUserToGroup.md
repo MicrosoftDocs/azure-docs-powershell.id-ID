@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementUserToGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementUserToGroup.md
-ms.openlocfilehash: 84c07998e895e37caeb9e41b4bdfe6866dbc5c4a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 13456267b63a0762d4bf2b3442fab7437e7722dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293660"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127555"
 ---
 # Add-AzApiManagementUserToGroup
 
 ## SYNOPSIS
 Menambahkan pengguna ke grup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementusertogroup) untuk informasi terkini.
 
 ## SYNTAX
 

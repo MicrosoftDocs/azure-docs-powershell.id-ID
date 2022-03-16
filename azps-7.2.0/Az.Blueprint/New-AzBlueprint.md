@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/New-AzBlueprint.md
-ms.openlocfilehash: 1e3c5809b7784de8c74dc09e5940e64f38d61e8a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e75c9a01c32908dc475af0daffbb859367ea8162
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261755"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060915"
 ---
 # New-AzBlueprint
 
 ## SYNOPSIS
 Buat definisi cetak biru baru dan simpan dalam grup manajemen atau langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/new-azblueprint) untuk informasi terkini.
 
 ## SYNTAX
 

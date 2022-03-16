@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringService.md
-ms.openlocfilehash: d2e4ed331fa84de4427e5dcaf5502c2519dac5ff
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ba0a41fb4d05cd49d893561fa0fca3ee96be43c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358613"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140069000"
 ---
 # New-AzPeeringService
 
 ## SYNOPSIS
 Membuat layanan peering baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/new-azpeeringservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -PeeringLocation
-Lokasi Fisik Berbeda dari Azure Region. Gunakan Get-AzPeeringServiceLocation [-Negara <country> ]
+Lokasi Fisik Berbeda dari Azure Region. Gunakan Get-AzPeeringServiceLocation [-Negara <country>]
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

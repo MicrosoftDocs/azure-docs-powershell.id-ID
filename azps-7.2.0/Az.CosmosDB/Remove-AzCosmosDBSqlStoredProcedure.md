@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlStoredProcedure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlStoredProcedure.md
-ms.openlocfilehash: cea930bda10b9e35b4f30e49ec4cec289c2457e7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fda0eb70d3a431d449852824c5cb2641b4541a71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166695"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124801"
 ---
 # Remove-AzCosmosDBSqlStoredProcedure
 
 ## SYNOPSIS
 Menghapus CosmosDB Sql StoredProcedure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbsqlstoredprocedure) untuk informasi terkini.
 
 ## SYNTAX
 

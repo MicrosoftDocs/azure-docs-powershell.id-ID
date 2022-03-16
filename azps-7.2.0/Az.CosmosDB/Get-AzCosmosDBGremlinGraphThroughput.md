@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraphThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraphThroughput.md
-ms.openlocfilehash: 3693bb328e4511f9a6cdd172931b8a480bb2e779
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cd0780dfa3ea9d5cb891c96f9a50511f628b987a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262844"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125377"
 ---
 # Get-AzCosmosDBGremlinGraphThroughput
 
 ## SYNOPSIS
 Mendapatkan throughput dari CosmosDB Throughputmlin Graph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbgremlingraphthroughput) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sasaranmlin Graph objek.
+Dll. Graph tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetResults
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Jackmlin Graph Name.
+Jackmlin Graph Nama.
 
 ```yaml
 Type: System.String

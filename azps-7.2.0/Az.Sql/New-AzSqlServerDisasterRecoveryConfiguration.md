@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerDisasterRecoveryConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerDisasterRecoveryConfiguration.md
-ms.openlocfilehash: 2cad00a2da7b101c6493b6e14ff1016783e1cefc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0fcedcaff6e71983c93e95cf903ef720a9ecc660
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114685"
 ---
 # New-AzSqlServerDisasterRecoveryConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi pemulihan sistem server database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlserverdisasterrecoveryconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

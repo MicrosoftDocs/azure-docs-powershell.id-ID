@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobSASToken.md
-ms.openlocfilehash: 1d8bd4c6b032fbd07f64472e4d687d500a3afccb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b4daea6cb50b836d6d83f95bba9610100c5529c2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351290"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130705"
 ---
 # New-AzStorageBlobSASToken
 
 ## SYNOPSIS
 Menghasilkan token SAS untuk blob penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageblobsastoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -116,8 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Menentukan objek **CloudBlob.**
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet [Get-AzStorageBlob.](./Get-AzStorageBlob.md)
+Menentukan objek **CloudBlob** .
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet [Get-AzStorageBlob](./Get-AzStorageBlob.md) .
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Permission
-Menentukan izin untuk blob penyimpanan. Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus). 
+Menentukan izin untuk blob penyimpanan. Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus). 
 
 ```yaml
 Type: System.String
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

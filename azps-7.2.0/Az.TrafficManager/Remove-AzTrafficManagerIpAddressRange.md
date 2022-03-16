@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerIpAddressRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerIpAddressRange.md
-ms.openlocfilehash: ad02976fdfa2f40432113976d0a9da5f5f153822
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0ce64cdb764a47dc333adb4d92d63e33c839878e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314411"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113119"
 ---
 # Remove-AzTrafficManagerIpAddressRange
 
 ## SYNOPSIS
 Menghapus rentang alamat atau subnet dari objek titik akhir Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanageripaddressrange) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzTrafficManagerIpAddressRange -First <String> -TrafficManagerEndpoint <T
 
 ## DESCRIPTION
 Cmdlet **Remove-AzTrafficManagerIpAddressRange** menghapus rentang alamat IP dari objek titik akhir Azure Traffic Manager lokal.
-Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzTrafficManagerEndpoint Get-AzTrafficManagerEndpoint baru.
+Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzTrafficManagerEndpoint Get-AzTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
 Lakukan perubahan anda ke titik akhir Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint cmdlet.
@@ -41,9 +44,9 @@ PS C:\> Remove-AzTrafficManagerIpAddressRange -TrafficManagerEndpoint $TrafficMa
 PS C:\> Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama mendapatkan titik akhir Azure yang bernama contoso dari profil yang bernama ContosoProfile dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $TrafficManagerEndpoint lokal.
-Perintah kedua menghapus rentang alamat IP dari titik akhir yang disimpan di $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir di Traffic Manager sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah pertama mendapatkan titik akhir Azure yang bernama contoso dari profil yang bernama ContosoProfile dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut dalam $TrafficManagerEndpoint sumber daya.
+Perintah kedua menghapus rentang alamat IP dari titik akhir yang disimpan dalam $TrafficManagerEndpoint.
+Perintah terakhir memperbarui titik akhir pada Traffic Manager cocok dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint atau New-AzTrafficManagerEndpoint cmdlet.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint New-AzTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint

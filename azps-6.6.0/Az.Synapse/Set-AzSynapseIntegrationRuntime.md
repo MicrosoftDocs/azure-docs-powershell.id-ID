@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: 75976f49c1a07cb5f540752637f36c332b11f9f7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8bd72daa85be42848230d1294988291bd3b56b2b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140064557"
 ---
 # Set-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapseintegrationruntime) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ PS C:\> Set-AzSynapseIntegrationRuntime -WorkspaceName ContosoWorkspace -Name 't
                                         -SharedIntegrationRuntimeResourceId '/subscriptions/b3ee3a7f-7614-4644-ad07-afa832620b4b/resourceGroups/rg-test-dfv2/providers/Microsoft.DataFactory/factories/test-df-eu2/integrationruntimes/test-selfhost-ir' -Type "SelfHosted"
 ```
 
-Cmdlet menambahkan ruang kerja untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` `-Type` parameter, parameter juga harus disertakan. Perhatikan bahwa ruang kerja harus diberi izin untuk menggunakan runtime integrasi sebelum menjalankan cmdlet.
+Cmdlet menambahkan ruang kerja untuk menggunakan runtime integrasi bersama. Saat menggunakan `-SharedIntegrationRuntimeResourceId` parameter, `-Type` parameter juga harus disertakan. Perhatikan bahwa ruang kerja harus diberi izin untuk menggunakan runtime integrasi sebelum menjalankan cmdlet.
 
 ## PARAMETERS
 
@@ -639,7 +642,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

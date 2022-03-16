@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlTrigger.md
-ms.openlocfilehash: cf8a744b0135b3f20b52f4bf2448c69f9701f769
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3bd389a224defa4516f22fce2266923d6b11bff1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125143"
 ---
 # Get-AzCosmosDBSqlTrigger
 
 ## SYNOPSIS
 Dapatkan CosmosDB Sql Trigger.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqltrigger) untuk informasi terkini.
 
 ## SYNTAX
 

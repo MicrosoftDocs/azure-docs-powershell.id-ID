@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Update-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Update-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: 4d4c1afba40070fdcf8872c3f1f80f71eae32a0e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e062aaa969e3c8d8550996a9b64ca55299a2ece0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334329"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140128077"
 ---
 # Update-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
 Memperbarui metadata layanan Windows IoT Device.
-Pola biasa untuk mengubah properti adalah mengambil metadata Windows IoT Device Service dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+Pola biasa untuk mengubah properti adalah mengambil Windows metadata Layanan Perangkat IoT dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.windowsiotservices/update-azwindowsiotservicesdevice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Update-AzWindowsIotServicesDevice -InputObject <IWindowsIotServicesIdentity> [-I
 
 ## DESCRIPTION
 Memperbarui metadata layanan Windows IoT Device.
-Pola biasa untuk mengubah properti adalah mengambil metadata Windows IoT Device Service dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
+Pola biasa untuk mengubah properti adalah mengambil Windows metadata Layanan Perangkat IoT dan metadata keamanan, lalu menggabungkannya dengan nilai yang dimodifikasi dalam badan baru untuk memperbarui Windows IoT Device Service.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5d005f5f-0000-0700-0000-5faa46ae0000"
 ```
 
-Perintah ini memperbarui Windows IoT menurut saluran.
+Perintah ini memperbarui Windows IoT berdasarkan pipeline.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -BillingDomainName
-Windows domain ODM Layanan Perangkat IoT AAD
+Windows domain layanan perangkat IoT ODM AAD
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ### -IfMatch
 ETag layanan Windows IoT Device.
 Jangan tentukan untuk membuat informasi baru Windows IoT Device.
-Diperlukan untuk memperbarui data yang Windows IoT Device.
+Diperlukan untuk memperbarui data yang Windows IoT Device Service.
 
 ```yaml
 Type: System.String
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -315,7 +318,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWindowsIotServicesIdentity> : Parameter Identitas
+INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
   - `[DeviceName <String>]`: Nama layanan Windows IoT Device.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi data Windows IoT Device.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Resume-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Resume-AzAnalysisServicesServer.md
-ms.openlocfilehash: 0ccc8c7b6e368e4b316dabb5fb0ba5af66dabb12
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 98d52db73dcd94f31f32b9a603af21911fad83d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302924"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127627"
 ---
 # Resume-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Melanjutkan contoh server Analysis Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/resume-azanalysisservicesserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Resume-AzAnalysisServicesServer [[-ResourceGroupName] <String>] [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Resume-AzAnalysisServicesServer akan melanjutkan contoh server Analysis Services
+Cmdlet Resume-AzAnalysisServicesServer cmdlet melanjutkan contoh server Analysis Services
 
 ## EXAMPLES
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Restart-AzAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Restart-AzAnalysisServicesInstance.md
-ms.openlocfilehash: ff4cc762d0c8f01567562ab84eb3b0f0873c4016
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fc759064fc6c07835054fc193d781e8c39f0f38c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282620"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241631"
 ---
 # Restart-AzAnalysisServicesInstance
 
 ## SYNOPSIS
-Memulai ulang contoh server Analysis Services di Lingkungan yang saat ini dicatat seperti yang ditentukan Add-AzAnalysisServicesAccount manajemen
+Memulai ulang contoh server Analysis Services di Lingkungan yang saat ini dicatat seperti yang ditentukan Add-AzAnalysisServicesAccount perintah
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/restart-azanalysisservicesinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ PS C:\>Restart-AzAnalysisServicesInstance
 Instance: testserver
 ```
 
-Perintah ini akan memulai ulang 'testserver' server di lingkungan yang ditentukan Add-AzAnalysisServicesAccount perintah
+Perintah ini akan memulai ulang 'testserver' server di lingkungan yang ditentukan dalam Add-AzAnalysisServicesAccount perintah
 
 ## PARAMETERS
 

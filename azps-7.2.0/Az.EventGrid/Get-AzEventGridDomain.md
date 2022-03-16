@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomain.md
-ms.openlocfilehash: 0e044fa036af4af1de721131ea1c301607a323c9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1370746927558a0022712819978ddbb871cfe9aa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301291"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959981"
 ---
 # Get-AzEventGridDomain
 
 ## SYNOPSIS
 Mendapatkan detail domain Kisi Acara, atau mendapatkan daftar semua domain Kisi Acara di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomain) untuk informasi terkini.
 
 ## SYNTAX
 

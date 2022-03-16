@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Get-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: 96cf21ef9555d85f2972839bec41f3eb2f592dde
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a1f4140cc2dd009f4dcccead2fd35c7973b0ed7b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114901"
 ---
 # Get-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Mendapatkan SQL Kunci Vault terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancekeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlInstanceKeyVaultKey [[-KeyId] <String>] [-InstanceResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlInstanceKeyVaultKey mendapatkan informasi tentang tombol Key Vault pada SQL terkelola. You can view all keys on a managed instance or view a specific key by providing the KeyId.
+Cmdlet Get-AzSqlInstanceKeyVaultKey ini mendapatkan informasi tentang tombol Key Vault pada SQL terkelola. You can view all keys on a managed instance or view a specific key by providing the KeyId.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini akan memasukkan semua tombol Key Vault pada SQL terkelola.
+Perintah ini memasukkan semua tombol Key Vault pada SQL terkelola.
 
 ### Contoh 2: Dapatkan kunci Key Vault tertentu
 ```powershell

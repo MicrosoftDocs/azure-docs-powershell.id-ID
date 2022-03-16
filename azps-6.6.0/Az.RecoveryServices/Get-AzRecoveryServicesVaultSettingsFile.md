@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesVaultSettingsFile.md
-ms.openlocfilehash: c2ba4a8a5c36b7eb1d05f16c8608901c39d76408
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 895186a40ba44ddca8fe67b0a14d89a546db22ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140068193"
 ---
 # Get-AzRecoveryServicesVaultSettingsFile
 
 ## SYNOPSIS
 Dapatkan file pengaturan vault Pemulihan Situs Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesvaultsettingsfile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,9 +54,9 @@ PS C:\> $CredsPath = "C:\Downloads"
 PS C:\> $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -Backup -Vault $Vault01 -Path $CredsPath
 ```
 
-Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam $Vault 01.
-Perintah kedua mengatur $CredsPath ke C:\Downloads.
-Perintah terakhir mendapatkan file kredensial penyimpanan untuk $Vault 01 menggunakan kredensial dalam $CredsPath untuk Azure Backup.
+Perintah pertama mendapatkan vault bernama TestVault, lalu menyimpannya dalam variabel $Vault 01.
+Perintah kedua mengatur variabel $CredsPath C:\Downloads.
+Perintah terakhir mendapatkan file kredensial vault untuk $Vault 01 menggunakan kredensial dalam $CredsPath Azure Backup.
 
 ### Contoh 2
 ```powershell
@@ -67,7 +70,7 @@ Perintah tersebut mendapatkan file kredensial vault untuk $Vault 01 file tipe va
 PS C:\> $Credsfilename = Get-AzRecoveryServicesVaultSettingsFile -SiteIdentifier -Vault $Vault01
 ```
 
-Perintah mendapatkan file kredensial vault untuk $Vault 01.
+Perintah tersebut mendapatkan file kredensial vault untuk $Vault 01.
 
 ## PARAMETERS
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

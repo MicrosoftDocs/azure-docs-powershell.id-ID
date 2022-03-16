@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
-ms.openlocfilehash: cff3afc9bca584d6a928018eb5a8b65ef2a4cbaf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8b1783090f396ebcd371db41e2598d37a412bfd7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113911"
 ---
 # Remove-AzStorageFile
 
 ## SYNOPSIS
 Menghapus file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstoragefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ### -Bagikan
 Menentukan objek **CloudFileShare** .
 Cmdlet ini menghapus file dalam fitur bagikan parameter ini.
-Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare baru.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
 Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
