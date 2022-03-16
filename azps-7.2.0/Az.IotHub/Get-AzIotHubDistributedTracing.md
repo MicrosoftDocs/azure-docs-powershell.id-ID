@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDistributedTracing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDistributedTracing.md
-ms.openlocfilehash: 40a53db2e49552e1446e2b55d883c82c2ff840f3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eacf10469b74f185ca709f80577a3367c146e02d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317990"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122857"
 ---
 # Get-AzIotHubDistributedTracing
 
 ## SYNOPSIS
 Dapatkan pengaturan penelusuran terdistribusi untuk suatu perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubdistributedtracing) untuk informasi terkini.
 
 ## SYNTAX
 
