@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpAllocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpAllocation.md
-ms.openlocfilehash: abb42cf82dac018de686d76e7767641d5b9f6ecc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ab45944b564abebeca50eacda2623120e4a8e117
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297435"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118375"
 ---
 # New-AzIpAllocation
 
 ## SYNOPSIS
 Membuat lokasi IpAllocation Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azipallocation) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: e1afe72f2c57a195fa8820982d882364b365030f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2b943170a3a8e67ef85bb19cf9621233a38118a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272460"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118771"
 ---
 # New-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi pengalihan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayredirectconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ New-AzApplicationGatewayRedirectConfiguration -Name <String> -RedirectType <Stri
 PS C:\>$RedirectConfig = New-AzApplicationGatewayRedirectConfiguration -Name "Redirect01" -RedirectType Permanent -TargetListener $listener01
 ```
 
-Perintah ini akan membuat konfigurasi pengalihan yang bernama Redirect01 dan menyimpan hasilnya dalam variabel yang bernama $RedirectConfig.
+Perintah ini membuat konfigurasi pengalihan yang bernama Redirect01 dan menyimpan hasilnya dalam variabel yang bernama $RedirectConfig.
 
 ### Contoh 2
 

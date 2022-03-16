@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: b57222fc81f364e4d8d56cf9ac22e6e5d97158f8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cdbbcbc143d755204cad9543437efdee3c975ffa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378918"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099909"
 ---
 # New-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Membuat kumpulan catatan dalam zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/new-azprivatednsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzPrivateDnsRecordSet -ParentResourceId <String> -Name <String> -RecordType 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzPrivateDnsRecordSet membuat kumpulan catatan Private Domain Name System (DNS) baru dengan nama yang ditentukan dan mengetik di zona privat yang ditentukan. Objek RecordSet adalah kumpulan catatan DNS Pribadi dengan nama dan tipe yang sama. Perhatikan bahwa nama relatif terhadap zona privat dan bukan nama yang sepenuhnya memenuhi syarat. Parameter PrivateDnsRecord menentukan data dalam kumpulan data. Parameter ini mengambil array catatan DNS Privat, yang dibangun menggunakan New-AzPrivateDnsRecordConfig. Anda dapat menggunakan operator pipeline untuk menyampaikan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat melewati objek PSPrivateDnsZone sebagai parameter Zona, atau Anda dapat menentukan zona menurut ResourceIdnya, atau alternatifnya Anda dapat menentukan zona berdasarkan nama. Anda dapat menggunakan perintah Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda. Jika RecordSet yang cocok sudah ada (nama dan tipe catatan yang sama), Anda harus menentukan parameter Timpa, jika tidak cmdlet tidak akan membuat RecordSet baru.
+Cmdlet New-AzPrivateDnsRecordSet membuat kumpulan catatan Private Domain Name System (DNS) baru dengan nama yang ditentukan dan mengetik di zona privat yang ditentukan. Objek RecordSet adalah kumpulan catatan DNS Pribadi dengan nama dan tipe yang sama. Perhatikan bahwa nama relatif terhadap zona privat dan bukan nama yang sepenuhnya memenuhi syarat. Parameter PrivateDnsRecord menentukan data dalam kumpulan data. Parameter ini mengambil array catatan DNS Privat, yang dibangun menggunakan New-AzPrivateDnsRecordConfig. Anda dapat menggunakan operator pipeline untuk menyampaikan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat melewati objek PSPrivateDnsZone sebagai parameter Zona, atau Anda dapat menentukan zona menurut ResourceIdnya, atau alternatifnya Anda dapat menentukan zona berdasarkan nama. Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda. Jika RecordSet yang cocok sudah ada (nama dan tipe catatan yang sama), Anda harus menentukan parameter Timpa, jika tidak cmdlet tidak akan membuat RecordSet baru.
 
 ## EXAMPLES
 
@@ -173,7 +176,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama 4 dalam zona privat 3.2.1.in-addr.arpa. Kumpulan catatan merupakan tipe PTR dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini akan membuat RecordSet bernama 4 dalam zona 3.2.1.in-addr.arpa. Kumpulan catatan merupakan tipe PTR dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 6: Membuat RecordSet tipe SRV
 ```powershell
@@ -194,7 +197,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama _sip._tcp dalam zona privat myzone.com. Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat, yang mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama _sip._tcp dalam zona myzone.com. Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat, yang mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 7: Buat RecordSet tipe TXT
 ```powershell
@@ -286,7 +289,7 @@ Perintah ini akan membuat RecordSet bernama * dalam zona myzone.com. Kumpulan ca
 PS C:\>$RecordSet = New-AzPrivateDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -PrivateDnsRecords (New-AzDnsRecordConfig -Ipv4Address 1.2.3.4) -Confirm:$False -Overwrite
 ```
 
-Perintah ini akan membuat RecordSet. Parameter Overwrite memastikan bahwa kumpulan data ini menimpa kumpulan data apa pun yang sudah ada sebelumnya dengan nama dan tipe yang sama (catatan yang sudah ada dalam kumpulan catatan tersebut akan hilang). Parameter Konfirmasi dengan nilai yang $False menyembunyikan perintah konfirmasi.
+Perintah ini akan membuat RecordSet. Parameter Overwrite memastikan bahwa kumpulan data ini menimpa kumpulan data apa pun yang sudah ada sebelumnya dengan nama dan tipe yang sama (catatan yang sudah ada dalam kumpulan catatan tersebut akan hilang). Parameter Konfirmasi dengan nilai $False menyembunyikan perintah konfirmasi.
 
 ## PARAMETERS
 
@@ -488,7 +491,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

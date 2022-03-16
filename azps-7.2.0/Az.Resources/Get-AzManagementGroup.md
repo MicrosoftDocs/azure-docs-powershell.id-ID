@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
-ms.openlocfilehash: 95a56b3d29d02c8c495ff349a110b80cdb9555a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a896bf1c1dd0bc97972f5bdef0b30575023eed4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164455"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117331"
 ---
 # Get-AzManagementGroup
 
 ## SYNOPSIS
 Gets Management Group(s)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azmanagementgroup) untuk informasi terkini.
 
 ## SYNTAX
 

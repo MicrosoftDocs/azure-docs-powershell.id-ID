@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/test-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Test-AzSynapseSqlPool.md
-ms.openlocfilehash: 2fe00cf2d9bee1da01b451dea68afb95c20fabf0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2178dca910c79a8731dded135bae907fb7d1104a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376762"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140064395"
 ---
 # Test-AzSynapseSqlPool
 
 ## SYNOPSIS
-Memeriksa keberadaan Analitik Synapse dalam SQL tim.
+Memeriksa keberadaan Analitik Synapse dalam SQL pool.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/test-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Test-AzSynapseSqlPool -Name <String> [-Version <Int32>] -WorkspaceObject <PSSyna
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzSynapseSqlPool** memeriksa keberadaan Synapse Analytics SQL pool.
+Cmdlet **Test-AzSynapseSqlPool** memeriksa keberadaan synapse Analytics SQL pool.
 
 ## EXAMPLES
 

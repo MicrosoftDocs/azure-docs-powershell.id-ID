@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridTopicType.md
-ms.openlocfilehash: 4021d36b3829458f30dd525b00a860dfc9c7a101
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d21686a7facb5d99d3e79c4bda876e13ea46ba32
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959927"
 ---
 # Get-AzEventGridTopicType
 
 ## SYNOPSIS
 Mendapatkan detail tentang tipe topik yang didukung oleh Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgridtopictype) untuk informasi terkini.
 
 ## SYNTAX
 

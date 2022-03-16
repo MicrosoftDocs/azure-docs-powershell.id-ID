@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/approve-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Approve-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Approve-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 33ebe9bb06eb288a6c6418f58d8f8ddc96cf1bfc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6ba96c5bb06d743c8934d292befa730b03be83e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086787"
 ---
 # Approve-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 Menyetujui koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/approve-azprivateendpointconnection) untuk informasi terkini.
 
 ## SYNTAX
 

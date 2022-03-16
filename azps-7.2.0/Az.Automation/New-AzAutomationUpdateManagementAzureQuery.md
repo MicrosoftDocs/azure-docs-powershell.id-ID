@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationUpdateManagementAzureQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationUpdateManagementAzureQuery.md
-ms.openlocfilehash: 8d9d91a6b701cb4c3052f945afab0f65db2320a8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2b3cdc4dac539bcf7c20b938e1132a7b49e83f0d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963977"
 ---
 # New-AzAutomationUpdateManagementAzureQuery
 
 ## SYNOPSIS
 Membuat objek kueri azure automation software update configuration.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery) untuk informasi terkini.
 
 ## SYNTAX
 

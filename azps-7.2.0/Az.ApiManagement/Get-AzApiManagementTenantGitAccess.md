@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementTenantGitAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementTenantGitAccess.md
-ms.openlocfilehash: f35ba265d87a7feafdef5e98eece92b17d8de56e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a4a89315bc720399e878dbc02a7414c06768d29
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964787"
 ---
 # Get-AzApiManagementTenantGitAccess
 
 ## SYNOPSIS
 Mendapatkan konfigurasi akses Git untuk penyewa.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementtenantgitaccess) untuk informasi terkini.
 
 ## SYNTAX
 

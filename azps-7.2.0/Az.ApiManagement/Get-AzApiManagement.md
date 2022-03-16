@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagement.md
-ms.openlocfilehash: 9f9fe7714f4d77d691267fc29cefd71c40062e6a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f3eaf9252734daf3764b70fb9cf3b32158b4f63c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296219"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063417"
 ---
 # Get-AzApiManagement
 
 ## SYNOPSIS
 Mendapatkan daftar atau deskripsi Layanan Manajemen API tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagement) untuk informasi terkini.
 
 ## SYNTAX
 

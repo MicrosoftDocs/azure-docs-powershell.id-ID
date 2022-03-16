@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNode.md
-ms.openlocfilehash: 63a6650721939203179e6e9f90527c82d13b15cb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 68cf60631e8807a2e2329adf4f1532945b901d1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263003"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963653"
 ---
 # Remove-AzBatchComputeNode
 
 ## SYNOPSIS
 Menghapus node perhitungan dari kolam renang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchcomputenode) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Waktu yang diubah adalah 10 menit.
 PS C:\>Get-AzBatchComputeNode -PoolId "Pool07" -Id "tvm-2316545714_1-20150725t213220z" -BatchContext $Context | Remove-AzBatchComputeNode -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan node hitung yang memiliki ID tertentu dari pool yang memiliki ID Pool07 dengan menggunakan cmdlet Get-AzBatchComputeNode.
+Perintah ini mendapatkan node hitung yang memiliki ID tertentu dari pool yang memiliki ID Pool07 dengan menggunakan cmdlet Get-AzBatchComputeNode cmdlet.
 Perintah melewati simpul itu ke cmdlet saat ini dengan menggunakan saluran.
 Cmdlet saat ini menghapus node perhitungan.
 Perintah menentukan parameter *Paksa* .

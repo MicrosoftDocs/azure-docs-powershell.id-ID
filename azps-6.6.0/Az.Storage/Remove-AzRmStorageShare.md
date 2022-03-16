@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageShare.md
-ms.openlocfilehash: dfed88ff61d3dbd34e5b72d80fb9e8daea92af93
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 190daf49c810358e35249053c900f170fcad7dbc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351053"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140065763"
 ---
 # Remove-AzRmStorageShare
 
 ## SYNOPSIS
 Menghapus file Storage bersama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azrmstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,12 +65,12 @@ Cmdlet **New-AzRmStorageShare** menghapus Storage file baru.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Storage file gratis dengan Storage dan nama berbagi
+### Contoh 1: Hapus Storage berbagi file dengan Storage nama akun dan nama berbagi Anda
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare"
 ```
 
-Perintah ini akan menghapus Storage berbagi file dengan Storage akun dan nama berbagi.
+Perintah ini akan menghapus Storage file gratis dengan Storage akun dan nama berbagi.
 
 ### Contoh 2: Hapus Storage file bersama dengan Storage objek akun dan nama berbagi
 ```
@@ -75,9 +78,9 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>Remove-AzRmStorageShare -StorageAccount $accountObject -Name "myshare"
 ```
 
-Perintah ini menghapus file Storage file yang dibagikan dengan Storage objek akun dan nama bersama.
+Perintah ini menghapus file Storage file yang dibagikan dengan Storage objek akun dan nama berbagi Anda.
 
-### Contoh 3: Hapus Storage file dalam akun Storage dengan pipeline
+### Contoh 3: Hapus semua Storage file yang ada dalam Storage dengan pipeline
 ```
 PS C:\>Get-AzStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" | Remove-AzRmStorageShare -Force
 ```
@@ -89,21 +92,21 @@ Perintah ini menghapus semua Storage file yang ada dalam Storage dengan saluran.
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -SnapshotTime "2021-05-10T08:04:08Z"
 ```
 
-Perintah ini menghapus satu Storage file berbagi snapshot dengan nama berbagi dan waktu jepretan layar tertentu
+Perintah ini menghapus satu Storage file berbagi jepretan layar dengan nama dan waktu jepretan layar tertentu
 
 ### Contoh 5: Hapus Storage berbagi file dan snapshotnya
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -Include Snapshots
 ```
 
-Perintah ini menghapus file Storage berbagi file dan merupakan snapshot Secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-sertakan".
+Perintah ini menghapus file Storage berbagi file dan snapshotnya secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-sertakan".
 
-### Contoh 6: Hapus Storage berbagi file dan semua snapshotnya (termasuk snapshot yang disewa)
+### Contoh 6: Hapus Storage berbagi file dan semua snapshotnya (termasuk snapshot yang disewakan)
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -Include Leased-Snapshots
 ```
 
-Perintah ini menghapus Storage berbagi file dan semua snapshotnya, termasuk snapshot yang disewakan dan bukan yang disewakan.
+Perintah ini menghapus Storage file yang dibagikan dan semua snapshotnya, termasuk snapshot yang disewakan dan bukan sewa.
 Secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-sertakan".
 
 ## PARAMETERS
@@ -309,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: 0f0a56784cec62068a678baf478f0c70a23a0e74
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a7611df5907564d68475b3fdea069d3ad238883e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378834"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099819"
 ---
 # Remove-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Menghapus link jaringan virtual dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsvirtualnetworklink) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,9 +43,9 @@ Remove-AzPrivateDnsVirtualNetworkLink -ResourceId <String> [-PassThru]
 
 ## DESCRIPTION
 Cmdlet **Remove-AzPrivateDnsVirtualNetworkLink secara** permanen menghapus link Privat Domain Name System (DNS) dari grup sumber daya yang ditentukan.
-Anda bisa melewati **objek PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau dengan menggunakan operator  pipeline, atau Anda juga bisa menentukan parameter *Name ZoneName* dan *ResourceGroupName.*
-Anda dapat menggunakan perintah Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
-Saat menentukan link menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link),* link tersebut tidak dihapus jika telah diubah dalam DNS Privat Azure sejak **objek PSPrivateDnsVirtualNetworkLink** lokal diambil. Hal ini menyediakan perlindungan untuk perubahan zona serentak. Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang menghapus zona terlepas dari perubahan konklarasi.
+Anda bisa melewati **objek PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau dengan menggunakan operator pipeline, atau Anda juga bisa menentukan parameter *Name ZoneName* dan  *ResourceGroupName*.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
+Saat menentukan link menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link* ), link tersebut tidak dihapus jika telah diubah dalam DNS Privat Azure sejak **objek PSPrivateDnsVirtualNetworkLink** lokal diambil. Hal ini menyediakan perlindungan untuk perubahan zona serentak. Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang menghapus zona terlepas dari perubahan konklarasi.
 
 ## EXAMPLES
 
@@ -87,8 +90,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama link yang akan dihapus.
-Anda juga harus menentukan parameter *ResourceGroupName* *dan ZoneName.*
-Alternatifnya, Anda dapat menentukan tautan menggunakan parameter *Link.*
+Anda juga harus menentukan parameter *ResourceGroupName* *dan ZoneName* .
+Alternatifnya, Anda dapat menentukan tautan menggunakan parameter *Link* .
 
 ```yaml
 Type: System.String
@@ -103,9 +106,9 @@ Accept wildcard characters: False
 ```
 
 ### -Overwrite
-Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link),* zona tidak dihapus jika telah diubah di DNS Azure karena objek **PSPrivateDnsVirtualNetworkLink** lokal diambil.
+Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link* ), zona tidak dihapus jika telah diubah di DNS Azure karena objek **PSPrivateDnsVirtualNetworkLink** lokal diambil.
 Hal ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang menghapus zona terlepas dari perubahan konklarasi.
+Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang menghapus zona terlepas dari perubahan konklarasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,8 +139,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi tautan untuk dihapus.
-Anda juga harus menentukan parameter *ZoneName* *dan Name.*
-Alternatifnya, Anda bisa menentukan zona DNS menggunakan objek **PSPrivateDnsVirtualNetworkLink,** yang dikirim melalui saluran atau parameter *Link.*
+Anda juga harus menentukan parameter *ZoneName* *dan Name* .
+Alternatifnya, Anda bisa menentukan zona DNS menggunakan objek **PSPrivateDnsVirtualNetworkLink** , yang dikirim melalui saluran atau parameter *Link* .
 
 ```yaml
 Type: System.String
@@ -168,8 +171,8 @@ Accept wildcard characters: False
 
 ### -ZoneName
 Menentukan nama zona DNS privat yang terkait dengan tautan.
-Anda juga harus menentukan parameter *ResourceGroupName* *dan Name.*
-Alternatifnya, Anda dapat menentukan tautan menggunakan parameter *Link.*
+Anda juga harus menentukan parameter *ResourceGroupName* *dan Name* .
+Alternatifnya, Anda dapat menentukan tautan menggunakan parameter *Link* .
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

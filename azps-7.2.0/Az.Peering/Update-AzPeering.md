@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Update-AzPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Update-AzPeering.md
-ms.openlocfilehash: 52288a0430b044c985b4523ce233496ea216575e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bcf54135ebf4179d636b3037c43cea9af439f3dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117997"
 ---
 # Update-AzPeering
 
 ## SYNOPSIS
 Mengatur Peering. Gunakan Perintah ini dalam hubungannya dengan `Set-AzDirectPeeringConnectionObject` atau `Set-AzExchangePeeringConnectionObject`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/update-azpeering) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectConnection
-Buat koneksi Langsung baru menggunakan New-AzDirectPeeringConnectionObject dan  pipet ke perintah ini.
+Membuat koneksi Langsung yang baru menggunakan New-AzDirectPeeringConnectionObject dan  pipet ke perintah ini.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSDirectConnection[]

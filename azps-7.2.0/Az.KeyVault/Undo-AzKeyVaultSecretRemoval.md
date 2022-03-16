@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/undo-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultSecretRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultSecretRemoval.md
-ms.openlocfilehash: e9d38b839373cee28a29308a36f740a043e79499
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f1d06ad87fd2e2c92f93126fcc2a6a2a4c272c41
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958253"
 ---
 # Undo-AzKeyVaultSecretRemoval
 
 ## SYNOPSIS
 Memulihkan rahasia yang telah dihapus di kunci vault ke keadaan aktif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultsecretremoval) untuk informasi terkini.
 
 ## SYNTAX
 

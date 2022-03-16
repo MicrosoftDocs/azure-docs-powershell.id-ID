@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailableServiceAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailableServiceAlias.md
-ms.openlocfilehash: bda8a31fd9ba2fdaa8667cf516c6ace60dc7c1f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 197868bcc239f4821431718af10a05255ae90703
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119203"
 ---
 # Get-AzAvailableServiceAlias
 
 ## SYNOPSIS
 Dapatkan alias layanan yang tersedia pada kawasan ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azavailableservicealias) untuk informasi terkini.
 
 ## SYNTAX
 

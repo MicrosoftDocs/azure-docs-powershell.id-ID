@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafPolicy.md
-ms.openlocfilehash: b8ddbd9e6371667d729473fbd43d26cb125f616a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eee907eb6a23ec67bc2eab768206a4572a1a92af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282252"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959405"
 ---
 # New-AzFrontDoorWafPolicy
 
 ## SYNOPSIS
 Membuat kebijakan WAF
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Sets Sku. Nilai yang mungkin meliputi: 'Classic_AzureFrontDoor', 'Standard_AzureFrontDoor', 'Premium_AzureFrontDoor'
+Sets Sku. Nilai yang mungkin termasuk: 'Classic_AzureFrontDoor', 'Standard_AzureFrontDoor', 'Premium_AzureFrontDoor'
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
-ms.openlocfilehash: 696196a4a22a8e1024e8868e620ec4d1339c5839
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7d89e5b9b822952065f535ca5510c7f4af3ac910
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170010"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959441"
 ---
 # New-AzFrontDoorRulesEngineMatchConditionObject
 
 ## SYNOPSIS
 Membuat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesenginematchconditionobject) untuk informasi terkini.
 
 ## SYNTAX
 

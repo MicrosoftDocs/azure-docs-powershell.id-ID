@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
-ms.openlocfilehash: 5705ed39a03c2467ad1ce27ad9f955d021678eca
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d95666a406827e1f4721f5e5c9473f81c9ef101c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367578"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139974327"
 ---
 # Get-AzMigrateServerReplication
 
 ## SYNOPSIS
 Mengambil detail server yang replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzMigrateServerReplication -ProjectID <String> -ResourceGroupID <String> [-S
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzMigrateServerReplication mengambil objek untuk server yang replikasi.
+Cmdlet Get-AzMigrateServerReplication mengambil objek untuk server replikasi.
 
 ## EXAMPLES
 
@@ -94,7 +97,7 @@ Type                        : Microsoft.RecoveryServices/vaults/replicationFabri
 
 Dapatkan dengan id.
 
-### Contoh 2: List all in project by id.
+### Contoh 2:  List all in project by id.
 ```powershell
 PS C:\> Get-AzMigrateServerReplication -ResourceGroupID /Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020 -ProjectID "/subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.Migrate/MigrateProjects/AzMigrateTestProjectPWSH"
 
@@ -155,7 +158,7 @@ Type                        : Microsoft.RecoveryServices/vaults/replicationFabri
 
 Daftar semua.
 
-### Contoh 2: List all in project by name.
+### Contoh 2:  List all in project by name.
 ```powershell
 PS C:\> Get-AzMigrateServerReplication -ResourceGroupName azmigratepwshtestasr13072020 -ProjectName AzMigrateTestProjectPWSH
 
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupID
-Menentukan Grup Sumber Daya migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan Grup Sumber Daya migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -417,7 +420,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem> : Menentukan objek mesin dari server yang replikasi.
+INPUTOBJECT <IMigrationItem>: Menentukan objek mesin dari server yang replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

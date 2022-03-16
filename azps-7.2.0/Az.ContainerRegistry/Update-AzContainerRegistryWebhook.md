@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryWebhook.md
-ms.openlocfilehash: 010a65f7b118005ac49cea6facb0469ce564cf78
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 613b1e56e13596836f707c20a0a698deb53aa224
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168109"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962735"
 ---
 # Update-AzContainerRegistryWebhook
 
 ## SYNOPSIS
 Memperbarui container registry webhook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrywebhook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzContainerRegistryWebhook [-Uri <Uri>] [-Action <String[]>] -Webhook <PS
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzContainerRegistryWebhook memperbarui web registri wadah.
+Cmdlet Update-AzContainerRegistryWebhook memperbarui container registry webhook.
 
 ## EXAMPLES
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationModule.md
-ms.openlocfilehash: 765389f6f9ba0ad72577f781a36aae14094633a8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ba8a71582aca4ff82c7c53dd7ed11350ebf49192
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334186"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139980357"
 ---
 # Set-AzAutomationModule
 
 ## SYNOPSIS
 Memperbarui modul dalam Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationmodule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Set-AzAutomationModule [-Name] <String> [-ContentLinkUri <Uri>] [-ContentLinkVer
 Cmdlet **Set-AzAutomationModule** memperbarui modul di Azure Automation.
 Perintah ini menerima file terkompresi yang memiliki .zip nama file.
 File berisi folder yang menyertakan file yang merupakan salah satu tipe berikut ini: 
-- wps_2 baru, yang memiliki ekstensi nama file .psm1 .dll 
+- wps_2 baru, yang memiliki ekstensi nama file .psm1 .dll atau yang lebih baru 
 - wps_2 manifes modul, yang memiliki ekstensi nama file .psd1 Nama file .zip, nama folder, dan nama file dalam folder harus sama.
 Tentukan file .zip sebagai URL yang bisa diakses oleh layanan Otomatisasi.
 Jika Anda mengimpor modul wps_2 ke otomatisasi dengan menggunakan cmdlet ini atau cmdlet New-AzAutomationModule, operasinya adalah asinkron.
 Perintah menyelesaikan apakah impor berhasil atau gagal.
-Untuk memeriksa apakah properti berhasil, jalankan perintah berikut: ModuleName Periksa properti `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name ` **ProvisioningState** untuk nilai Berhasil.
+Untuk memeriksa apakah properti berhasil, jalankan perintah berikut: `PS C:\\\> $ModuleInstance = Get-AzAutomationModule -Name `ModuleName Periksa properti **ProvisioningState** untuk nilai Berhasil.
 
 ## EXAMPLES
 
@@ -64,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentLinkUri
-Menentukan URL file .zip yang berisi versi baru modul yang diimpor cmdlet ini.
+Menentukan URL file .zip yang berisi versi modul baru yang diimpor cmdlet ini.
 
 ```yaml
 Type: System.Uri
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

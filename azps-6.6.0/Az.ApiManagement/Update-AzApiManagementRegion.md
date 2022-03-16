@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementRegion.md
-ms.openlocfilehash: c7627c93aca9e6b6c8151b39b0faead266446f4c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ea5ac1fe061203d914ab0eff9aa8ac8b9552bace
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359750"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139980675"
 ---
 # Update-AzApiManagementRegion
 
 ## SYNOPSIS
 Memperbarui kawasan penyebaran yang sudah ada dalam contoh PsApiManagement.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementregion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Update-AzApiManagementRegion -ApiManagement <PsApiManagement> -Location <String>
 
 ## DESCRIPTION
 Cmdlet **Update-AzApiManagementRegion** memperbarui instans tipe yang sudah ada **dari tipe Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementRegion** dalam kumpulan objek **AdditionalRegions** yang disediakan tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
-Cmdlet ini tidak menyebarkan apa pun selain memperbarui contoh **in-memory PsApiManagement.**
+Cmdlet ini tidak menyebarkan apa pun selain memperbarui contoh **in-memory PsApiManagement** .
 Untuk memperbarui penyebaran Manajemen API, gunakan **PsApiManagementInstance yang dimodifikasi** ke cmdlet Set-AzApiManagement cmdlet.
 
 ## EXAMPLES
@@ -40,7 +43,7 @@ PS C:\>$apimService = Update-AzApiManagementRegion -ApiManagement $apimService -
 PS C:\>$apimService = Set-AzApiManagement -InputObject $apimService -PassThru
 ```
 
-Perintah ini mendapatkan layanan Manajemen API Premium SKU, memiliki kawasan di AS Pusat Selatan dan AS Pusat Utara. Kemudian meningkatkan Kapasitas kawasan As Tengah Utara ke 2 menggunakan **Set-AzApiManagement**. Cmdlet **berikutnya, Set-AzApiManagement** menerapkan perubahan konfigurasi ke layanan Manajemen Api.
+Perintah ini mendapatkan layanan Manajemen API Premium SKU, memiliki kawasan di AS Pusat Selatan dan AS Pusat Utara. Kemudian meningkatkan Kapasitas kawasan As Tengah Utara ke 2 menggunakan **Set-AzApiManagement**. Cmdlet berikutnya **, Set-AzApiManagement** menerapkan perubahan konfigurasi ke layanan Manajemen Api.
 
 ### Contoh 2
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

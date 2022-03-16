@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/set-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringDirectConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Set-AzPeeringDirectConnectionObject.md
-ms.openlocfilehash: 81ebe36ecb922c3059d6f684ca4c0dc0c767e0e9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bdf6bf4103d80a721f9359ddad50c4d4d0cab819
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358517"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140100593"
 ---
 # Set-AzPeeringDirectConnectionObject
 
 ## SYNOPSIS
 Mengatur atau memperbarui informasi Koneksi Langsung. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/set-azpeeringdirectconnectionobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Set-AzPeeringDirectConnectionObject -InputObject <PSDirectConnection> -UseForPee
 ```
 
 ## DESCRIPTION
-Digunakan dalam hubungannya dengan Update-AzPeering, ini adalah operasi memori dan hanya akan berlanjut dengan `Update-AzPeering` . 
+Digunakan dalam hubungannya dengan Update-AzPeering, ini adalah operasi memori dan hanya akan berlanjut dengan `Update-AzPeering`. 
 
 ## EXAMPLES
 
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

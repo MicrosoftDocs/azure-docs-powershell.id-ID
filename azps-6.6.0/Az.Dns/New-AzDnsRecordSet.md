@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordSet.md
-ms.openlocfilehash: 4b4125ec4a3cd2dae8d2fc51d3e521c4d0c064d9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1303e540d047f6f4e4479e01dfa0f32b87240922
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370269"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976793"
 ---
 # New-AzDnsRecordSet
 
 ## SYNOPSIS
 Membuat kumpulan catatan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/new-azdnsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,9 +57,9 @@ Objek **RecordSet** adalah kumpulan catatan DNS dengan nama dan tipe yang sama.
 Perhatikan bahwa nama relatif terhadap zona dan bukan nama yang sepenuhnya memenuhi syarat.
 Parameter *DnsRecords* menentukan data dalam kumpulan data.
 Parameter ini mengambil array catatan DNS, yang dibangun menggunakan New-AzDnsRecordConfig.
-Anda dapat menggunakan operator pipeline untuk menyampaikan objek **DnsZone** ke cmdlet ini, atau Anda dapat melewati objek **DnsZone** sebagai *parameter* Zona, atau menentukan zona menurut nama.
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
-Jika **RecordSet yang** cocok sudah ada (nama dan tipe catatan yang sama), Anda harus menentukan parameter *Timpa,* jika tidak cmdlet tidak akan membuat **RecordSet baru.**
+Anda dapat menggunakan operator pipeline untuk menyampaikan objek **DnsZone** ke cmdlet ini, atau Anda dapat melewati objek **DnsZone** *sebagai parameter Zona* , atau menentukan zona menurut nama.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Jika **RecordSet yang** cocok sudah ada (nama dan tipe catatan yang sama), Anda harus menentukan parameter *Timpa* , jika tidak cmdlet tidak akan membuat **RecordSet baru** .
 
 ## EXAMPLES
 
@@ -114,7 +117,7 @@ PS C:\> $Records += New-AzDnsRecordConfig -Exchange "mail.microsoft.com" -Prefer
 PS C:\> $RecordSet = New-AzDnsRecordSet -Name "mail" -RecordType MX -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini akan membuat **RecordSet** bernama www dalam zona myzone.com.
+Perintah ini membuat **RecordSet** bernama www dalam zona myzone.com.
 Kumpulan catatan berjenis MX dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
 Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
@@ -126,7 +129,7 @@ PS C:\> $Records += New-AzDnsRecordConfig -Nsdname ns1-01.azure-dns.com
 PS C:\> $RecordSet = New-AzDnsRecordSet -Name "ns1" -RecordType NS -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet bernama** ns1 dalam zona myzone.com.
+Perintah ini akan membuat **RecordSet** bernama ns1 dalam zona myzone.com.
 Kumpulan rekaman berjenis NS dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
 Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
@@ -197,7 +200,7 @@ Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_sh
 PS C:\>$RecordSet = New-AzDnsRecordSet -Name "www" -RecordType A -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords @()
 ```
 
-Perintah ini akan membuat **RecordSet** bernama www dalam zona myzone.com.
+Perintah ini membuat **RecordSet** bernama www dalam zona myzone.com.
 Kumpulan catatan berjenis A dan memiliki TTL 1 jam (3600 detik).
 Ini adalah kumpulan catatan kosong, yang bertindak sebagai tempat penampung untuk kemudian bisa Anda tambahkan catatan.
 
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ### -ResourceGroupName
 Menentukan grup sumber daya yang berisi zona DNS.
 Anda juga harus menentukan parameter *ZoneName* untuk menentukan nama zona.
-Alternatifnya, Anda dapat menentukan grup zona dan sumber daya dengan memberikan objek Zona DNS menggunakan *parameter Zona.*
+Alternatifnya, Anda dapat menentukan grup zona dan sumber daya dengan memberikan objek Zona DNS menggunakan *parameter Zona* .
 
 ```yaml
 Type: System.String
@@ -376,7 +379,7 @@ Accept wildcard characters: False
 
 ### -Zone
 Menentukan Zona Dns untuk membuat **RecordSet**.
-Alternatifnya, Anda bisa menentukan zona menggunakan parameter *ZoneName* *dan ResourceGroupName.*
+Alternatifnya, Anda bisa menentukan zona menggunakan parameter *ZoneName* *dan ResourceGroupName* .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Dns.DnsZone
@@ -392,8 +395,8 @@ Accept wildcard characters: False
 
 ### -ZoneName
 Menentukan nama zona untuk membuat **RecordSet**.
-Anda juga harus menentukan grup sumber daya yang berisi zona menggunakan parameter *ResourceGroupName.*
-Alternatifnya, Anda dapat menentukan grup zona dan sumber daya dengan memberikan objek Zona DNS menggunakan *parameter Zona.*
+Anda juga harus menentukan grup sumber daya yang berisi zona menggunakan parameter *ResourceGroupName* .
+Alternatifnya, Anda dapat menentukan grup zona dan sumber daya dengan memberikan objek Zona DNS menggunakan *parameter Zona* .
 
 ```yaml
 Type: System.String
@@ -439,7 +442,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -462,7 +465,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## CATATAN
 Anda dapat menggunakan parameter *Konfirmasi* untuk mengontrol apakah cmdlet ini meminta konfirmasi.
 Secara default, cmdlet akan meminta konfirmasi Anda jika $ConfirmPreference Windows PowerShell variabel memiliki nilai Sedang atau lebih rendah.
-Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
+Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True* lanjut, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
 Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda.
 
 ## RELATED LINKS

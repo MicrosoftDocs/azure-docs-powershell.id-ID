@@ -5,16 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayVpnClientConnectionHealth.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayVpnClientConnectionHealth.md
-ms.openlocfilehash: 2d5bf0406021d65fcc1a7a113e7004850375369b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 659838640824a6f034af94735724416c909b51bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086319"
 ---
 # Get-AzVirtualNetworkGatewayVpnClientConnectionHealth
 
 ## SYNOPSIS Dapatkan daftar kesehatan koneksi klien vpn gateway jaringan virtual Azure untuk per koneksi klien vpn
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewayvpnclientconnectionhealth) untuk informasi terkini.
 
 ## SYNTAX
 

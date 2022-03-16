@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
-ms.openlocfilehash: fa21a8ca2b22d74ea3fd6e79744dcd0baeee7f7a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 58068693edfc62d48a282b4f62e064adb7254f50
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964211"
 ---
 # Import-AzAutomationRunbook
 
 ## SYNOPSIS
 Mengimpor buku jalankan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/import-azautomationrunbook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Import-AzAutomationRunbook [-Path] <String> [-Description <String>] [-Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzAutomationRunbook** mengimpor runbook Azure Automation. Tentukan jalur ke file skrip wps_2 (.ps1) untuk diimpor ke runbooks wps_2 dan alur kerja wps_2, file (.graphrunbook) untuk runbooks grafis, atau file (.py) untuk python 2 runbooks. Untuk wps_2 runbooks Alur Kerja, skrip harus berisi satu wps_2 definisi Alur Kerja yang cocok dengan nama file.
+Cmdlet **Import-AzAutomationRunbook** mengimpor runbook Azure Automation. Tentukan jalur ke file skrip wps_2 (.ps1) untuk diimpor ke runbooks wps_2 dan Alur Kerja wps_2, file (.graphrunbook) untuk runbooks grafis, atau file (.py) untuk python 2 runbooks. Untuk wps_2 runbooks Alur Kerja, skrip harus berisi satu wps_2 definisi Alur Kerja yang cocok dengan nama file.
 
 ## EXAMPLES
 

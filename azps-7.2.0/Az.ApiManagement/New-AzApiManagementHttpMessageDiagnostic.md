@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementHttpMessageDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementHttpMessageDiagnostic.md
-ms.openlocfilehash: 42e29c89859f9c9a1ad8b671941f976ede65dae2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 70103fbed213b9ca13b32c8f1ba45d80437f108f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164938"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964661"
 ---
 # New-AzApiManagementHttpMessageDiagnostic
 
 ## SYNOPSIS
 Membuat contoh **PsApiManagementHttpMessageDiagnostic** yang merupakan pengaturan diagnostik Pesan Http diagnostik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementhttpmessagediagnostic) untuk informasi terkini.
 
 ## SYNTAX
 

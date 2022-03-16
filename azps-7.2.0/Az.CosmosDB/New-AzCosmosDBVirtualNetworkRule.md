@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBVirtualNetworkRule.md
-ms.openlocfilehash: 39b4ba307cf6af5b08fd9cdb39ebe0d16304e258
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2b02067f994f201fabb6d06cc70eb7adf7778e4b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292443"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962537"
 ---
 # New-AzCosmosDBVirtualNetworkRule
 
 ## SYNOPSIS
 Buat CosmosDB VirtualNetworkRule Object(PSVirtualNetworkRule) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbvirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

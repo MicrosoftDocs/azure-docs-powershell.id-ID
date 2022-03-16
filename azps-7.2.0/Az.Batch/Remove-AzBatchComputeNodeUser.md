@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNodeUser.md
-ms.openlocfilehash: 1d9cad6ff6968504874a556d6c861be3c9849121
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e5ec2f46b1a141a918f1299ba0f4dc09d14cda30
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963581"
 ---
 # Remove-AzBatchComputeNodeUser
 
 ## SYNOPSIS
 Menghapus akun pengguna dari node perhitungan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchcomputenodeuser) untuk informasi terkini.
 
 ## SYNTAX
 

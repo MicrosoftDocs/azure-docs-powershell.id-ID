@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzDefault.md
-ms.openlocfilehash: a9e6c5702246d27e3799e234dbf3c777e773137f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fdc97d6225af37406ab8f0ba9bd9c17178661fde
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165458"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965165"
 ---
 # Get-AzDefault
 
 ## SYNOPSIS
 Atur pengaturan default oleh pengguna dalam konteks saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/get-azdefault) untuk informasi terkini.
 
 ## SYNTAX
 

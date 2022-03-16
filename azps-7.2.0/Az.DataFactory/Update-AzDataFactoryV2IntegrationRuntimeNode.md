@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Update-AzDataFactoryV2IntegrationRuntimeNode.md
-ms.openlocfilehash: af408b28c8a0a597327c2790aa2364fbbb44d477
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 04e6794b304ba4c93cdc23d1a284ccd59c4a3dbf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058737"
 ---
 # Update-AzDataFactoryV2IntegrationRuntimeNode
 
 ## SYNOPSIS
 Memperbarui node runtime integrasi yang dihosting sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/update-azdatafactoryv2integrationruntimenode) untuk informasi terkini.
 
 ## SYNTAX
 

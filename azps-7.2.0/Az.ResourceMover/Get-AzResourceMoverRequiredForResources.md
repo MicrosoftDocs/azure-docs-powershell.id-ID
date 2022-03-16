@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverRequiredForResources.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Get-AzResourceMoverRequiredForResources.md
-ms.openlocfilehash: e46426ada72c78e98ee5a7013da3181e37ac080c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2e316ef9aeff571f7ddda3c06debe94e28ddb86e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273595"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117619"
 ---
 # Get-AzResourceMoverRequiredForResources
 
 ## SYNOPSIS
 Daftar sumber daya pemindahan yang diperlukan oleh sebuah sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/get-azresourcemoverrequiredforresources) untuk informasi terkini.
 
 ## SYNTAX
 

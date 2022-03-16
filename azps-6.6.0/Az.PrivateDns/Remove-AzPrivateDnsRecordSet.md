@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: 43829808f264971de787ece986b6662437d65e73
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f18efbf60e3e112e5e8ebd3536f038996a0d759c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378876"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099837"
 ---
 # Remove-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Menghapus kumpulan catatan dari zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzPrivateDnsRecordSet -ResourceId <String> [-PassThru] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan data tertentu dari zona yang ditentukan. Anda tidak dapat menghapus rekaman SOA yang secara otomatis dibuat di zona privat apex. Anda dapat menyampaikan objek RecordSet ke cmdlet ini menggunakan operator pipeline atau sebagai parameter atau sebagai ResourceId. Untuk mengidentifikasi kumpulan catatan berdasarkan nama dan tipe tanpa menggunakan objek RecordSet, Anda harus melewati zona sebagai objek PSPrivateDnsZone ke cmdlet ini menggunakan operator pipeline atau sebagai parameter, atau alternatifnya Anda dapat menentukan parameter ZoneName dan ResourceGroupName. Anda dapat menggunakan perintah Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda. Saat menentukan kumpulan data menggunakan objek RecordSet, kumpulan data tidak dihapus jika telah diubah dalam DNS Azure Private sejak objek RecordSet lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan hal ini menggunakan parameter Timpa, yang menghapus kumpulan rekaman terlepas dari perubahan serentak.
+Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan data tertentu dari zona yang ditentukan. Anda tidak dapat menghapus rekaman SOA yang secara otomatis dibuat di zona privat apex. Anda dapat menyampaikan objek RecordSet ke cmdlet ini menggunakan operator pipeline atau sebagai parameter atau sebagai ResourceId. Untuk mengidentifikasi kumpulan catatan berdasarkan nama dan tipe tanpa menggunakan objek RecordSet, Anda harus melewati zona sebagai objek PSPrivateDnsZone ke cmdlet ini menggunakan operator pipeline atau sebagai parameter, atau alternatifnya Anda dapat menentukan parameter ZoneName dan ResourceGroupName. Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda. Saat menentukan kumpulan data menggunakan objek RecordSet, kumpulan data tidak dihapus jika telah diubah dalam DNS Azure Private sejak objek RecordSet lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan hal ini menggunakan parameter Timpa, yang menghapus kumpulan rekaman terlepas dari perubahan serentak.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ PS C:\> $RecordSet = Get-AzPrivateDnsRecordSet -Name "www" -ResourceGroupName "M
 PS C:\> Remove-AzPrivateDnsRecordSet -RecordSet $RecordSet
 ```
 
-Perintah pertama mendapatkan kumpulan data tertentu, lalu menyimpannya dalam variabel $RecordSet tertentu. Perintah kedua menghapus kumpulan rekaman di $RecordSet.
+Perintah pertama mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet tertentu. Perintah kedua menghapus kumpulan rekaman di $RecordSet.
 
 ### Contoh 2: Menghapus kumpulan data dan menyembunyikan semua konfirmasi
 ```powershell
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

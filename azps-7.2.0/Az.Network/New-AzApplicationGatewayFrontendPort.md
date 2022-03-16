@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: ca44372687df4f1b12cde33aaa73b64cebd7aa9b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cd39913ee56bab75e03a2114494de4970136efe0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086175"
 ---
 # New-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
 Membuat port ujung-depan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfrontendport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Cmdlet **New-AzApplicationGatewayFrontendPort** membuat port ujung-depan untuk g
 PS C:\>$FrontEndPort = New-AzApplicationGatewayFrontendPort -Name "FrontEndPort01" -Port 80
 ```
 
-Perintah ini membuat port ujung-depan yang bernama FrontEndPort01 pada port 80 dan menyimpan hasilnya dalam variabel yang bernama $FrontEndPort.
+Perintah ini membuat port ujung-depan bernama FrontEndPort01 di port 80 dan menyimpan hasilnya dalam variabel yang bernama $FrontEndPort.
 
 ## PARAMETERS
 

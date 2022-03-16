@@ -5,17 +5,20 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubSchemaGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubSchemaGroup.md
-ms.openlocfilehash: a151738a53b4e7ca42b7930ed8aae0194bf8f8f3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6c67bdafd1a2b3b60bd99d0b2cd4ce4de5f57114
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263948"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959765"
 ---
 # New-AzEventHubSchemaGroup
 
 ## SYNOPSIS
 Membuat grup skema dalam ruang nama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/new-azeventhubschemagroup) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubDevice.md
-ms.openlocfilehash: 9b70256eb87e902c55da5ed60036befaa4b27847
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c253fced2c7d7cd8822257bc913cd723b2fc30be
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282171"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958901"
 ---
 # Set-AzIotHubDevice
 
 ## SYNOPSIS
 Memperbarui perangkat IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/set-aziothubdevice) untuk informasi terkini.
 
 ## SYNTAX
 

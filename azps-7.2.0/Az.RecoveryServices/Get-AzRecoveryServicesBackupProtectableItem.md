@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectableItem.md
-ms.openlocfilehash: a1bb4063f1d5cc4372d59aa053654759da364e4a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0b6c2b9617799f772cc39e935b6c2a111a913dd8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169037"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117781"
 ---
 # Get-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
 Perintah ini akan mengambil semua item yang dapat diproteksi dalam wadah tertentu atau di seluruh wadah terdaftar. Daftar ini akan terdiri dari semua elemen hierarki aplikasi. Mengembalikan DB dan entitas tingkat atas seperti Instance, AvailabilityGroup, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectableitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PS C:\> $Item = Get-AzRecoveryServicesBackupProtectableItem -Container $Containe
 ```
 
 Perintah pertama mendapatkan wadah tipe MSSQL, lalu menyimpannya di $Container variabel.
-Perintah kedua mendapatkan item yang dapat diproteksi Cadangan $Container Cadangkan, lalu menyimpannya di $Item diproteksi.
+Perintah kedua mendapatkan item yang dapat diproteksi Cadangan $Container Cadangkan, lalu menyimpannya dalam $Item baru.
 
 ## PARAMETERS
 

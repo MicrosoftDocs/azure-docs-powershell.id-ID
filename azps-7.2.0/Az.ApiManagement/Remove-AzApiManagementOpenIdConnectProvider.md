@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: eb880b7aa10bf6726ca7bbe3c48be7f8f3792b48
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f58f07e4be20800b41ec1a08546d7d28477f7fe5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274380"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964571"
 ---
 # Remove-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
 Menghapus penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementopenidconnectprovider) untuk informasi terkini.
 
 ## SYNTAX
 

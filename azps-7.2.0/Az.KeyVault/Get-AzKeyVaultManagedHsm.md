@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: fedb769c1ac8378dc43060feb0adcc9eb6f188db
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 04ab081f44d03d4e7a9a3a02c7e1d7f03bfa8e49
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288843"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958613"
 ---
 # Get-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Mendapatkan HSM yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedhsm) untuk informasi terkini.
 
 ## SYNTAX
 

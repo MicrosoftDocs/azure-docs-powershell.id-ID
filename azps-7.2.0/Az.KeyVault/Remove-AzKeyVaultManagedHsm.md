@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: d8ad231655a3f30263cc0e1bc4ee1eb952b04268
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 14bbe4b8099230b5ef4eb1cb92d2a2576b7328c8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255611"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958487"
 ---
 # Remove-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Menghapus HSM yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedhsm) untuk informasi terkini.
 
 ## SYNTAX
 

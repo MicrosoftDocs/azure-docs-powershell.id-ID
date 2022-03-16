@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallHubPublicIpAddress.md
-ms.openlocfilehash: c195a6d75c59409e708a6db01be88259408f7330
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d13c6bc4e9351a40b2c76533491dad84ffc9aceb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306651"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086103"
 ---
 # New-AzFirewallHubPublicIpAddress
 
 ## SYNOPSIS
 Ip publik yang terkait dengan firewall di hub virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallhubpublicipaddress) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\> $publicIp2 = New-AzFirewallPublicIpAddress -Address 20.56.37.46
 PS C:\> New-AzFirewallHubPublicIpAddress -Count 3 -Addresses $publicIp1, $publicIp2
 ```
 
-Ini akan membuat 1 ip publik baru pada firewall dengan mempertahankan $publicIp 1, $publicIp 2 yang sudah ada pada firewall.
+Ini akan membuat 1 ip publik baru pada firewall dengan mempertahankan $publicIp 1, $publicIp 2 yang sudah ada di firewall.
 
 ## PARAMETERS
 

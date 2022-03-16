@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
-ms.openlocfilehash: 084787b87e89d05a4330a74a3e1295bf6972a58d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5d28177e15574db788e601f50eb899f5e47202b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353789"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139980123"
 ---
 # Get-AzBatchPool
 
 ## SYNOPSIS
 Dapatkan kolam renang Batch di bawah akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzBatchPool [[-Id] <String>] [-Select <String>] [-Expand <String>] -BatchCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchPool** mendapatkan kolam renang Azure Batch di bawah akun Batch yang ditentukan dengan parameter *BatchContext.*
+Cmdlet **Get-AzBatchPool** mendapatkan kolam renang Azure Batch di bawah akun Batch yang ditentukan dengan parameter *BatchContext* .
 Anda dapat menggunakan parameter *Id* untuk mendapatkan kolam renang tunggal, atau menggunakan parameter *Filter* untuk mendapatkan kolam renang yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
@@ -106,7 +109,7 @@ Url                                  : https://cmdletexample.westus.batch.azure.
 VirtualMachineSize                   : standard_d1_v2
 ```
 
-Perintah ini akan mendapatkan kolam renang dengan IDENTITAS yang dimulai dengan Saya menggunakan *parameter Filter.*
+Perintah ini akan mendapatkan kolam renang dengan IDENTITAS yang dimulai dengan Saya menggunakan *parameter Filter* .
 
 ## PARAMETERS
 
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

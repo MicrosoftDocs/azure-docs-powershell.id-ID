@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Stop-AzFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Stop-AzFunctionApp.md
-ms.openlocfilehash: a132c7cccaff267fb50fa349df681e199b163e71
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: adfe94fe8d975515d85707b7c66e3f435462e15a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959355"
 ---
 # Stop-AzFunctionApp
 
 ## SYNOPSIS
 Menghentikan aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/stop-azfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -256,7 +259,7 @@ INPUTOBJECT <ISite>:
       - `[ActionHostName <String>]`: Nama host slot yang akan dialihkan lalu lintas jika ditentukan. Misalnya myapp-stage.azurewebsites.net.
       - `[ChangeDecisionCallbackUrl <String>]`: Custom decision algorithm can be provided in TiPCallback site extension which URL can be specified. See TiPCallback site extension for the scaffold and contracts.         https://www.siteextensions.net/packages/TiPCallback/
       - `[ChangeIntervalInMinute <Int32?>]`: Menentukan interval dalam menit untuk mengevaluasi ulang ReroutePercentage.
-      - `[ChangeStep <Double?>]`: Dalam skenario naik secara otomatis ini adalah langkah untuk menambahkan/menghapus <code>ReroutePercentage</code> dari sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Site metrics are checked every N minutes specified in <code>ChangeIntervalInMinutes</code>.\nCustom decision algorithm can be provided in TiPCallback site extension which URL can be specified in <code>ChangeDecisionCallbackUrl</code>.
+      - `[ChangeStep <Double?>]`: Dalam skenario naik secara otomatis ini adalah langkah untuk menambahkan/menghapus <code>ReroutePercentage</code> dari sampai mencapai \n<code>MinReroutePercentage</code> atau         <code>MaxReroutePercentage</code>. Metrik situs dicentang setiap N menit yang ditentukan <code>ChangeIntervalInMinutes</code>dalam .\nCustom decision algorithm can be provided in TiPCallback site extension which URL can be specified in <code>ChangeDecisionCallbackUrl</code>.
       - `[MaxReroutePercentage <Double?>]`: Menentukan batas atas di bawah di mana Perekanan Ulang akan tetap ada.
       - `[MinReroutePercentage <Double?>]`: Menentukan batas bawah di atas di mana Perekanan Ulang akan tetap ada.
       - `[Name <String>]`: Nama aturan perutean. Nama yang disarankan harus mengarah ke slot yang akan menerima lalu lintas dalam eksperimen.
@@ -298,7 +301,7 @@ INPUTOBJECT <ISite>:
     - `[ManagedPipelineMode <ManagedPipelineMode?>]`: Mode saluran terkelola.
     - `[ManagedServiceIdentityId <Int32?>]`: ID Identitas Layanan Terkelola
     - `[MinTlsVersion <SupportedTlsVersions?>]`: MinTlsVersion: mengonfigurasi versi minimum TLS yang diperlukan untuk permintaan SSL
-    - `[NetFrameworkVersion <String>]`: .NET Framework baru.
+    - `[NetFrameworkVersion <String>]`: .NET Framework ini.
     - `[NodeVersion <String>]`: Versi Node.js.
     - `[NumberOfWorker <Int32?>]`: Jumlah pekerja.
     - `[PhpVersion <String>]`: Versi PHP.
