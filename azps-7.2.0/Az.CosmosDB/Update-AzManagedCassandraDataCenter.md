@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: c0b348589c040cfbe808702f3a4afdd08b4d7bcd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 405bdfbd3f8fe01504ceee9a7efd533196f10f83
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308123"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239327"
 ---
 # Update-AzManagedCassandraDataCenter
 
 ## SYNOPSIS
 Perbarui Azure Managed Instances yang sudah ada untuk Apache Apache Apache data center.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azmanagedcassandradatacenter) untuk informasi terkini.
 
 ## SYNTAX
 

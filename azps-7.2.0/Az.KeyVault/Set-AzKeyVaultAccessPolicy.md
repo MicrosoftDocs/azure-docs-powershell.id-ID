@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
-ms.openlocfilehash: 69fbdc69d19d338abf10b77aaa09a49c489bfac2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 58b15fbaafec93698af0cb1946cac4a0a7f7b754
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314843"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122461"
 ---
 # Set-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
 Memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau prinsipal layanan dalam Azure Active Directory untuk memberikan izin.
+Menentukan ID objek pengguna atau prinsipal layanan dalam Azure Active Directory yang akan diberi izin.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseExpanded.md
-ms.openlocfilehash: b37334d3619308c0fdf488374084b13c0ca69697
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 020a4ff84eefa32ffddf1242943acd93154d4709
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115117"
 ---
 # Get-AzSqlDatabaseExpanded
 
 ## SYNOPSIS
 Mendapatkan database dan nilai propertinya yang diperluas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseexpanded) untuk informasi terkini.
 
 ## SYNTAX
 

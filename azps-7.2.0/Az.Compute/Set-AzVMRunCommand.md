@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMRunCommand.md
-ms.openlocfilehash: d9a351f75ecdc036100becd1ae2073fad4ed4b43
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: beec2354a7ea88f4b5f1e77ceea4d74b6fa0c945
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269467"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091755"
 ---
 # Set-AzVMRunCommand
 
 ## SYNOPSIS
 Operasi untuk membuat atau memperbarui perintah jalankan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmruncommand) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Location Name             Type
 eastus   firstruncommand2 Microsoft.Compute/virtualMachines/runCommands
 ```
 
-Perintah Set-AzVMRunCommand cmdlet memperbarui properti untuk perintah jalankan yang sudah ada atau menambahkan perintah jalankan baru ke mesin virtual.
+Perintah pembaruan cmdlet Set-AzVMRunCommand untuk perintah jalankan yang sudah ada atau menambahkan perintah jalankan baru ke mesin virtual.
 
 ## PARAMETERS
 

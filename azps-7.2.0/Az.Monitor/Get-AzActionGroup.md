@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActionGroup.md
-ms.openlocfilehash: 9fdd83ad7d79403302a3b863d707c73299508713
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a3e776364c6f618ce1f2d896df00bf896ec94c93
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258571"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121003"
 ---
 # Get-AzActionGroup
 
 ## SYNOPSIS
 Mendapatkan grup tindakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azactiongroup) untuk informasi terkini.
 
 ## SYNTAX
 

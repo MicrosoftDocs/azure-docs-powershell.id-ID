@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 4edc3efafe7b5eefefe0e665ebea652b097369e0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 82c6016666f528395d906a2190a7c253b3025026
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383160"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140140191"
 ---
 # New-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Menautkan penyimpanan data atau layanan awan ke Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/new-azdatafactorylinkedservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzDataFactoryLinkedService [-DataFactory] <PSDataFactory> [[-Name] <String>]
 ## DESCRIPTION
 Cmdlet **New-AzDataFactoryLinkedService** menautkan penyimpanan data atau layanan awan ke Azure Data Factory.
 Jika Anda menentukan nama untuk layanan tertaut yang sudah ada, cmdlet ini akan meminta konfirmasi Anda sebelum menggantikan layanan tertaut.
-Jika Anda menentukan parameter *Paksa,* cmdlet menggantikan layanan tertaut yang sudah ada tanpa konfirmasi.
+Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan layanan tertaut yang sudah ada tanpa konfirmasi.
 Jalankan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
 - Membuat layanan tertaut. 
@@ -58,12 +61,12 @@ Perintah ini membuat layanan tertaut bernama LinkedServiceCuratedWikiData dalam 
 Layanan tertaut ini menautkan penyimpanan blob Azure yang ditentukan dalam file ke pabrik data bernama WikiADF.
 Perintah itu menyampaikan hasilnya ke Format-List cmdlet dengan menggunakan operator pipeline.
 Hal Windows PowerShell cmdlet akan memformat hasil.
-Untuk informasi selengkapnya, ketik `Get-Help Format-List` .
+Untuk informasi selengkapnya, ketik `Get-Help Format-List`.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini membuat layanan tertaut untuk pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

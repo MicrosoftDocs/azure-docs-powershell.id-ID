@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: 6e805ed44c5b549bfd13f80f46c16d6ed7319cb5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5baec42b8d1b2b1ce2cff568a3225ef3ba43eae0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238913"
 ---
 # Set-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryv2integrationruntime) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataProxyStagingPath
-Jalur dalam penyimpanan data yang akan digunakan saat memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtimes, wadah default akan digunakan jika tidak ditentukan
+Jalur dalam penyimpanan data yang akan digunakan ketika memindahkan data antara Self-Hosted dan Azure-SSIS Integration Runtimes, wadah default akan digunakan jika tidak ditentukan
 
 ```yaml
 Type: System.String

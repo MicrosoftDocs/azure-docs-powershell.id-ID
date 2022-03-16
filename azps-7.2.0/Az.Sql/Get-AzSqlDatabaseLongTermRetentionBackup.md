@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 6597191d427a9ed87b74625fdf2a8edf563445d8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0ab98480d33ba4cc209e492426dc931ac213357f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115099"
 ---
 # Get-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa cadangan penyimpanan jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaselongtermretentionbackup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -210,7 +213,7 @@ Accept wildcard characters: True
 ```
 
 ### -DatabaseName
-Nama akun Azure SQL Database asal pencadangan.
+Nama akun Azure SQL Database dari cadangan berasal.
 
 ```yaml
 Type: System.String

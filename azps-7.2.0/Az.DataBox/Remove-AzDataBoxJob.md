@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Remove-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Remove-AzDataBoxJob.md
-ms.openlocfilehash: cfd8ca68b21de6de94a49277512e2b75ce22b2d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a26af7168785984ec3e20659ac1554c6a7967a2c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262812"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239297"
 ---
 # Remove-AzDataBoxJob
 
 ## SYNOPSIS
 Menghapus pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/remove-azdataboxjob) untuk informasi terkini.
 
 ## SYNTAX
 

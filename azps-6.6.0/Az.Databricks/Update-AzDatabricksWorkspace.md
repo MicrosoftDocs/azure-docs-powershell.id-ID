@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databricks/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Databricks/help/Update-AzDatabricksWorkspace.md
-ms.openlocfilehash: b378e5b35a0de05a1f29aa3c51462548727c4814
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0f418369266fe5a248f934e9bba6f9badde0c7b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359174"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140138985"
 ---
 # Update-AzDatabricksWorkspace
 
 ## SYNOPSIS
 Memperbarui ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databricks/update-azdatabricksworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ Perbarui kembali ruang kerja untuk mengisi informasi tentang kunci enkripsi:
 PS C:\> Update-AzDatabricksWorkspace -ResourceGroupName databricks-rg-952d47 -Name workspaceypae6l -EncryptionKeySource 'Default'
 ```
 
-Untuk menonaktifkan enkripsi, cukup `-EncryptionKeySource` atur ke `'Default'` .
+Untuk menonaktifkan enkripsi, cukup atur `-EncryptionKeySource` ke `'Default'`.
 
 ## PARAMETERS
 
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -334,7 +337,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatabricksIdentity> : Parameter identitas.
+INPUTOBJECT <IDatabricksIdentity>: Parameter identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PeeringName <String>]`: Nama ruang kerja vNet peering.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.

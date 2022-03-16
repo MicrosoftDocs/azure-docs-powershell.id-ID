@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
-ms.openlocfilehash: 68feb936ba0c76bf1cbbe4012f4654fbb205116b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9f77afd67a2923fd23215818b6b8043d32c29f6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341258"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140139237"
 ---
 # New-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya BackupVault milik grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvault) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSetting
-Storage Pengaturan vault.
+Storage Pengaturan bawahannya.
 Gunakan New-AzDataProtectionBackupVaultStorageSetting Cmdlet untuk Membuat.
 Untuk membuat, lihat bagian CATATAN untuk properti STORAGESETTING dan membuat tabel hash.
 
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

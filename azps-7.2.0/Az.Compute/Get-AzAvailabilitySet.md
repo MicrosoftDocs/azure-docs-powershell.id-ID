@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azav
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzAvailabilitySet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzAvailabilitySet.md
-ms.openlocfilehash: 6b17b4f723ff4cfd216c68c3f910c2dbff193c9e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a1e787335cd7676c031e5a64e2d5d733ec1f8c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297068"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239849"
 ---
 # Get-AzAvailabilitySet
 
 ## SYNOPSIS
 Mendapatkan kumpulan ketersediaan Azure dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azavailabilityset) untuk informasi terkini.
 
 ## SYNTAX
 

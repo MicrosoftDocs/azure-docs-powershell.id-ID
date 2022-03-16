@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmss.md
-ms.openlocfilehash: bda80abf60a216181aee2437da5212b8d6fc78de
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fefaa3db9550b9d88100b56deea309f884d631f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091395"
 ---
 # Start-AzVmss
 
 ## SYNOPSIS
 Memulai VMSS atau kumpulan komputer virtual dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/start-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 

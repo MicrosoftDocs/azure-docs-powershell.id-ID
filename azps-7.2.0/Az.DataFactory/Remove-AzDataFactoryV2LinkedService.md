@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2LinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2LinkedService.md
-ms.openlocfilehash: 468d01f04a6513c1e57916682666dd00de244468
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d31048797f4c33786fd2cf86563a5fcb03769d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255868"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140238949"
 ---
 # Remove-AzDataFactoryV2LinkedService
 
 ## SYNOPSIS
 Menghapus layanan tertaut dari Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/remove-azdatafactoryv2linkedservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ PS C:\> Remove-AzDataFactoryV2LinkedService -ResourceGroupName "ADF" -DataFactor
 ```
 
 Perintah ini menghapus layanan tertaut yang bernama LinkedServiceTest dari pabrik data bernama WikiADF.
-Perintah ini mengembalikan nilai $True.
+Perintah ini mengembalikan nilai dari $True.
 
 ## PARAMETERS
 

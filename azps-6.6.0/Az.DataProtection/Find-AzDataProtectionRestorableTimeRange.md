@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/f
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Find-AzDataProtectionRestorableTimeRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Find-AzDataProtectionRestorableTimeRange.md
-ms.openlocfilehash: 8acbcd7f18bdcb78f35a9bdbf506aba536682688
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 75623281c56af3f498db26a5f421847674de9211
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136333192"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140139435"
 ---
 # Find-AzDataProtectionRestorableTimeRange
 
 ## SYNOPSIS
 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/find-azdataprotectionrestorabletimerange) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ StartTime  : 2021-03-25T14:27:31.0000000Z
 
 Atur $startTime dan $endTime.
 Ambil contoh cadangan.
-Ambil rentang waktu yang valid untuk Contoh $instance[0].
+Ambil rentang waktu yang valid untuk Contoh Cadangan $instance[0].
 Dispaly RestorableTimeRange, perhatikan bahwa ini bisa beberapa rentang dicrete.
 
 ## PARAMETERS
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

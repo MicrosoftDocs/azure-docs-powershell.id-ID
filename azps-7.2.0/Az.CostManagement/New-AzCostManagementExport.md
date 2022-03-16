@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/New-AzCostManagementExport.md
-ms.openlocfilehash: 5726e9e0827fff3ed2a894072176c76f5d66f0f2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e04569a35df9c6c640542f27335080c01a3f1299
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170100"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239273"
 ---
 # New-AzCostManagementExport
 
@@ -19,6 +19,9 @@ Operasi untuk membuat atau memperbarui ekspor.
 Operasi pembaruan memerlukan eTag terbaru untuk diatur di permintaan.
 Anda mungkin mendapatkan eTag terbaru dengan melakukan operasi dapatkan.
 Operasi membuat tidak memerlukan eTag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.costmanagement/new-azcostmanagementexport) untuk informasi terkini.
 
 ## SYNTAX
 

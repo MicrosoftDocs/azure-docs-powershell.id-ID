@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotUpdateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzSnapshotUpdateConfig.md
-ms.openlocfilehash: 09337bb24a297da9ae2d60cc8f0c4c160576538e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 31e198a6993f149ddeb24caf0a87492a6db5542b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269483"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239525"
 ---
 # New-AzSnapshotUpdateConfig
 
 ## SYNOPSIS
 Membuat objek pembaruan snapshot yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azsnapshotupdateconfig) untuk informasi terkini.
 
 ## SYNTAX
 

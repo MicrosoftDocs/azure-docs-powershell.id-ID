@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticThrottledRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticThrottledRequest.md
-ms.openlocfilehash: 92863d91ebfdcdae64352a047ad6cde3a9eaecda
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 473ebc69a9b387d9b1b656df874915e0e1d8fcc5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239903"
 ---
 # Export-AzLogAnalyticThrottledRequest
 
 ## SYNOPSIS
 Ekspor log yang memperlihatkan permintaan Api total yang dilindungi untuk langganan ini dalam jendela waktu tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/export-azloganalyticthrottledrequest) untuk informasi terkini.
 
 ## SYNTAX
 

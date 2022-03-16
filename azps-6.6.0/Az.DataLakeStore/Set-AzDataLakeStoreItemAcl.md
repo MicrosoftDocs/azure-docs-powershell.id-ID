@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemAcl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreItemAcl.md
-ms.openlocfilehash: 6db0189c78de5e5bc4e345f2e2e82d0a7bea7949
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 55f9af786884c7af3030ae5596d31b8c96c8a436
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343166"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140139525"
 ---
 # Set-AzDataLakeStoreItemAcl
 
 ## SYNOPSIS
 Mengubah ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoreitemacl) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ PS C:\>$ACL = Get-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path /
 PS C:\> Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/MyFiles/Test.txt" -Acl $ACL
 ```
 
-Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya di variabel $ACL jaringan.
-Perintah kedua mengatur ACL untuk file Test.txt ke ACL di $ACL.
+Perintah pertama mendapatkan ACL untuk direktori akar akun ContosoADL, lalu menyimpannya di variabel $ACL tersebut.
+Perintah kedua mengatur ACL untuk file Test.txt ke ACL dalam $ACL.
 
 ### Contoh 2: Mengatur ACL untuk folder secara berulang
 ```
@@ -47,7 +50,7 @@ PS C:\> Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/Folder2" -A
 ```
 
 Perintah pertama mendapatkan ACL untuk direktori Folder1 dari akun ContosoADL, lalu menyimpannya di $ACL lain.
-Perintah kedua mengatur ACL secara rekursif ke Folder2 dan sub direktori dan filenya ke direktori di $ACL.
+Perintah kedua mengatur ACL secara rekursif ke Folder2 dan sub direktori dan file ke direktori di $ACL.
 
 ## PARAMETERS
 
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

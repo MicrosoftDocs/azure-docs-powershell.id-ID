@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
-ms.openlocfilehash: bdaa24e93fd3efe18138f02ee4de7b372668abd5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bec83442fe48b2434a9272d6dd1974921c221a17
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286876"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140239129"
 ---
 # Get-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
 Dapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestorageaccountcredential) untuk informasi terkini.
 
 ## SYNTAX
 

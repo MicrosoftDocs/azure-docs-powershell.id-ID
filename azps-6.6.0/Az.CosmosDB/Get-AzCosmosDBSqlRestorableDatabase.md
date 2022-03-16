@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRestorableDatabase.md
-ms.openlocfilehash: 100dc219b9d5bca344564a2f3ef9532f9abdd89e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b0301e4350bc67a3d12882132b510b798a900963
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378218"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140141127"
 ---
 # Get-AzCosmosDBSqlRestorableDatabase
 
 ## SYNOPSIS
 Dapatkan daftar semua database Azure Cosmos DB Sql yang dapat dikembalikan yang tersedia di bawah akun yang dapat dikembalikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlrestorabledatabase) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelDataConnector.md
-ms.openlocfilehash: 47156046e7f123308fe832a8d422f93e05dd7ecb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5f9d9115335114f67a505b62611036e58b5ed59c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314603"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140227177"
 ---
 # Update-AzSentinelDataConnector
 
 ## SYNOPSIS
 Memperbarui Konektor Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentineldataconnector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Update-AzSentinelDataConnector -ResourceId <String> [-Alerts <String>] [-Subscri
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelDataConnector** memperbarui Konektor Data di ruang kerja yang ditentukan.
 Anda bisa meneruskan objek **DataConnector** sebagai parameter atau dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan *variabel* $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
