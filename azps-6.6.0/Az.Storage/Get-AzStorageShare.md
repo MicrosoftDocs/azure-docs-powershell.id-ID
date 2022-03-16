@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageShare.md
-ms.openlocfilehash: 8768af00a811ce694a263f23ff89a69b1f945043
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: becc69797f69c90f357672186332da70fa8fedc2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338319"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139966245"
 ---
 # Get-AzStorageShare
 
 ## SYNOPSIS
 Mendapatkan daftar file yang akan bagikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ PS C:\>$Context = New-AzStorageContext -Local
 PS C:\> Get-AzStorageShare -Context $Context
 ```
 
-Perintah pertama menggunakan cmdlet **New-AzStorageContext** untuk membuat konteks menggunakan parameter *Local,* lalu menyimpan objek konteks tersebut dalam $Context lain.
+Perintah pertama menggunakan cmdlet **New-AzStorageContext** untuk membuat konteks menggunakan parameter *Local* , lalu menyimpan objek konteks tersebut dalam $Context lain.
 Perintah kedua akan membagikan file untuk objek konteks yang disimpan di $Context.
 
 ### Contoh 4: Mendapatkan file berbagi snapshot dengan nama berbagi tertentu dan SnapshotTime
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

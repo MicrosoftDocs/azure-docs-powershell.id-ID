@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualHubRouteTable.md
-ms.openlocfilehash: 89790792c0f35275e6999c02620fe7b6e1bf060e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 43dbee66d748bc1a8e9dfb7309432ebfc7bd210c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921327"
 ---
 # Add-AzVirtualHubRouteTable
 
 ## SYNOPSIS
 Membuat sumber daya Tabel Rute Virtual Hub yang merupakan anak dari VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvirtualhubroutetable) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: de61b3382d17fe32f13f09444f1e748d214d9604
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dd32e0bc700f16a02958dccd9fbc7cf432c8e51e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954221"
 ---
 # Remove-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Menghapus properti kesehatan dari gateway aplikasi yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzApplicationGatewayProbeConfig -Name <String> -ApplicationGateway <PSApp
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzApplicationGatewayProbeConfig menghapus heath cmdlet dari gateway aplikasi yang sudah ada.
+Cmdlet Remove-AzApplicationGatewayProbeConfig menghapus cmdlet heath cloud dari gateway aplikasi yang sudah ada.
 
 ## EXAMPLES
 

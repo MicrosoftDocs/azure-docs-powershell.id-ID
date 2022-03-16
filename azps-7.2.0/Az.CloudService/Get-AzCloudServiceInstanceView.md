@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceInstanceView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceInstanceView.md
-ms.openlocfilehash: 251d125d14d3db118e29f1b7a31d7cd2143e51df
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 23623c039056217df59ca29cac32d2dbf6a12043
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164005"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928275"
 ---
 # Get-AzCloudServiceInstanceView
 
 ## SYNOPSIS
 Mendapatkan status layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceinstanceview) untuk informasi terkini.
 
 ## SYNTAX
 

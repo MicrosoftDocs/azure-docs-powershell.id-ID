@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionRecoveryPoint.md
-ms.openlocfilehash: 5aa1608fe2524b426177b85a5c06dcf2a12752fa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6e83c6511948cffb1d8eb1df7b9a5b252f2f35d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140058053"
 ---
 # Get-AzDataProtectionRecoveryPoint
 
 ## SYNOPSIS
 Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk sumber data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionrecoverypoint) untuk informasi terkini.
 
 ## SYNTAX
 

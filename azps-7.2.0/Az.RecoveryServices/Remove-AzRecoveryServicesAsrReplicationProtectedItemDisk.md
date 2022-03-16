@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk.md
-ms.openlocfilehash: 01bc3884384c466b2cea77558746938773fc0fda
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d3a7970035bec6eca51b8c8b5066c4ad45f1d5f5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050637"
 ---
 # Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk
 
 ## SYNOPSIS
 Menghapus disk untuk replikasi item yang diproteksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrreplicationprotecteditemdisk) untuk informasi terkini.
 
 ## SYNTAX
 

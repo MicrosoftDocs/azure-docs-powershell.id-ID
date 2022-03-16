@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateDnsZoneGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateDnsZoneGroup.md
-ms.openlocfilehash: 9bf9f3d5de15bb3273f8fb8839917220063fac77
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d9b476dc10b6cb9ee27c0b1ed9e24aeabc89988a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119095"
 ---
 # Get-AzPrivateDnsZoneGroup
 
 ## SYNOPSIS
 Mendapatkan grup zona DNS privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azprivatednszonegroup) untuk informasi terkini.
 
 ## SYNTAX
 

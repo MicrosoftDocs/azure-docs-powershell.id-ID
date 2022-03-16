@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerSubscriptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2TriggerSubscriptionStatus.md
-ms.openlocfilehash: 89ecaa8275ba733008f06ee935169b67105f9ae3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b4f2dd82ef2001b410e3ec1c43a11d573405047e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926241"
 ---
 # Get-AzDataFactoryV2TriggerSubscriptionStatus
 
 ## SYNOPSIS
 Dapatkan status langganan untuk pemicu kejadian ke kejadian layanan eksternal tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2triggersubscriptionstatus) untuk informasi terkini.
 
 ## SYNTAX
 

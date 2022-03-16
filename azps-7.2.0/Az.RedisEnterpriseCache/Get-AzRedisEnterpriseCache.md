@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.redisenterprisec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisEnterpriseCache/help/Get-AzRedisEnterpriseCache.md
-ms.openlocfilehash: 36db94183e8fdc18c79862c3396c496b8f0760dc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 45eee43a09bd1e75baf4886a1749282ef815aebc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257388"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917674"
 ---
 # Get-AzRedisEnterpriseCache
 
 ## SYNOPSIS
 Mendapatkan informasi tentang kluster Redis Enterprise dan database terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.redisenterprisecache/get-azredisenterprisecache) untuk informasi terkini.
 
 ## SYNTAX
 

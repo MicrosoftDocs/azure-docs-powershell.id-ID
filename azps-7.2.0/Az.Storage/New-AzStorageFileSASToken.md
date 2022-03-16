@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageFileSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageFileSASToken.md
-ms.openlocfilehash: 4a856ec99c4365686f6c1a69f8e1d387a1011413
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7dd0c3b4756883a479d93cfee49452b0e443dd5e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948373"
 ---
 # New-AzStorageFileSASToken
 
 ## SYNOPSIS
 Menghasilkan token tanda tangan akses bersama untuk file Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragefilesastoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ New-AzStorageFileSASToken -File <CloudFile> -Policy <String> [-Protocol <SharedA
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageFileSASToken** menghasilkan token tanda tangan akses bersama untuk file Azure Storage.
+Cmdlet **New-AzStorageFileSASToken** menghasilkan token tanda tangan akses bersama untuk file Azure Storage mereka.
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ PS C:\> New-AzStorageFileSASToken -ShareName "ContosoShare" -Path "FilePath" -Pe
 
 Perintah pertama membuat objek **DateTime** menggunakan cmdlet Get-Date.
 Perintah menyimpan waktu saat ini dalam variabel $StartTime baru.
-Perintah kedua menambahkan dua jam ke objek $StartTime, lalu menyimpan hasilnya di $EndTime variabel.
+Perintah kedua menambahkan dua jam ke objek $StartTime, lalu menyimpan hasilnya dalam $EndTime variabel.
 Objek ini adalah waktu dua jam di masa mendatang.
 Perintah ketiga menghasilkan token tanda tangan akses bersama yang memiliki izin tertentu.
 Token ini berlaku pada saat ini.
@@ -81,7 +84,7 @@ Token tetap berlaku hingga waktu yang disimpan di $EndTime.
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Path
-Menentukan jalur file relatif terhadap file yang Storage bersama.
+Menentukan jalur file relatif terhadap file Storage bersama.
 
 ```yaml
 Type: System.String
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama Storage bersama.
+Menentukan nama dokumen Storage bersama.
 
 ```yaml
 Type: System.String

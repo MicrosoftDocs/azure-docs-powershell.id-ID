@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
-ms.openlocfilehash: 151be9e3fac4baaedc34d3261f5ec9b04ebbe293
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1705c67bcc8dc1cb736dd3ca0b430d44b4868ba0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049809"
 ---
 # New-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Menambahkan penyebaran Azure ke grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcegroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -180,7 +183,7 @@ New-AzResourceGroupDeployment [-Name <String>] -ResourceGroupName <String> [-Mod
 ## DESCRIPTION
 Cmdlet **New-AzResourceGroupDeployment** menambahkan penyebaran ke grup sumber daya yang sudah ada.
 Ini termasuk sumber daya yang diperlukan penyebaran.
-Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, situs web, mesin virtual, atau Storage anda.
+Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, situs web, mesin virtual, atau Storage pengguna.
 Grup sumber daya Azure adalah kumpulan sumber daya Azure yang digunakan sebagai unit, seperti situs web, server database, dan database yang diperlukan untuk sebuah situs web keuangan.
 Penyebaran grup sumber daya menggunakan templat untuk menambahkan sumber daya ke grup sumber daya dan menerbitkannya sehingga tersedia di Azure.
 Untuk menambahkan sumber daya ke grup sumber daya tanpa menggunakan templat, gunakan cmdlet New-AzResource cmdlet.
@@ -507,7 +510,7 @@ Accept wildcard characters: False
 
 ### -TemplateParameterObject
 Menentukan tabel hash nama dan nilai parameter templat.
-Untuk bantuan terkait tabel hash Windows PowerShell, ketikkan `Get-Help about_Hash_Tables`.
+Untuk bantuan terkait tabel hash dalam Windows PowerShell, ketikkan `Get-Help about_Hash_Tables`.
 Jika templat memiliki parameter, Anda harus menentukan nilai parameter.
 Parameter templat ditambahkan secara dinamis ke perintah ketika Anda menentukan templat.
 
@@ -569,7 +572,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If proyek. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If perubahan. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]

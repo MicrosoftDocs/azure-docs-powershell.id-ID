@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintArtifact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintArtifact.md
-ms.openlocfilehash: d9c696140c80120a9697ef77db77002518f610a5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bea56133ec5a1a9497820de30a3d2e1c542ffba9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164895"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928624"
 ---
 # Set-AzBlueprintArtifact
 
 ## SYNOPSIS
 Perbarui artifak dalam definisi cetak biru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/set-azblueprintartifact) untuk informasi terkini.
 
 ## SYNTAX
 

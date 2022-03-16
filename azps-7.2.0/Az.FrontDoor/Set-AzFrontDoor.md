@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Set-AzFrontDoor.md
-ms.openlocfilehash: 36cc60525d09628e35f07e94d7d0eac1631db79b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4466caa23a284e7490050b8299e711715ba3a50b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170007"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056667"
 ---
 # Set-AzFrontDoor
 
 ## SYNOPSIS
 Memperbarui penyeimbang muat Pintu Depan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/set-azfrontdoor) untuk informasi terkini.
 
 ## SYNTAX
 

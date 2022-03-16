@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseFromFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseFromFailoverGroup.md
-ms.openlocfilehash: 1ed16c5720ff243c74f6493609c7b2f8f0e019a5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1ad2061d4f80674a5f1cd2284d31e90087125e1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166288"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949309"
 ---
 # Remove-AzSqlDatabaseFromFailoverGroup
 
 ## SYNOPSIS
 Menghapus satu atau beberapa database dari Azure SQL Database Failover Group.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabasefromfailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzSqlDatabaseFromFailoverGroup [-ServerName] <String> [-FailoverGroupName
 ```
 
 ## DESCRIPTION
-Menghapus satu atau beberapa database dari grup Azure SQL Database Failover Group yang ditentukan. Database dan hubungan replikasi akan tetap utuh, tetapi tidak akan dapat diakses lagi melalui titik akhir Failover Group.
+Menghapus satu atau beberapa database dari grup Azure SQL Database Failover Yang ditentukan. Database dan hubungan replikasi akan tetap utuh, tetapi tidak akan dapat diakses lagi melalui titik akhir Failover Group.
 Untuk mendapatkan objek database yang akan digunakan untuk mengisi parameter '-Database', gunakan (misalnya) Get-AzSqlDatabase cmdlet.
 Server utama Grup Failover harus digunakan untuk menjalankan perintah.
 
@@ -60,7 +63,7 @@ Perintah ini menghapus semua database dalam Kelompok Elastis dari Grup Failover.
 ## PARAMETERS
 
 ### -Database
-Satu atau beberapa Database SQL Azure di server utama Grup Failover akan dihapus dari Grup Failover.
+Satu atau beberapa database SQL Database Azure di server utama Grup Failover akan dihapus dari Grup Failover.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database dari Grup Failover.
+Nama server utama Azure SQL Database Dari Grup Failover.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: 07c395a10a56b2d9416ec1e32787a0ca4af96f6f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b931a4d6dc8c9fff50763a5336cb44fdd5c3894d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280460"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949561"
 ---
 # Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan penyimpanan jangka panjang database terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasebackuplongtermretentionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

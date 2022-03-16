@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplaceorder
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Get-AzMarketplaceTerms.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MarketplaceOrdering/MarketplaceOrdering/help/Get-AzMarketplaceTerms.md
-ms.openlocfilehash: bae65638a98923e4ee830aa7b4a3a381c3078840
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b426417428df446e6447ef9ae799faf979dccb54
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276059"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956183"
 ---
 # Get-AzMarketplaceTerms
 
 ## SYNOPSIS
-Dapatkan persyaratan perjanjian untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Objek istilah yang dikembalikan oleh perintah ini harus disampaikan ke Set-AzMarketplaceTerms syarat hukum.
+Dapatkan persyaratan perjanjian untuk publisher id(Publisher), offer id(Product) dan plan id(Name) yang diberikan. Objek istilah yang dikembalikan oleh perintah ini harus disampaikan ke Set-AzMarketplaceTerms menerima persyaratan hukum.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplaceordering/get-azmarketplaceterms) untuk informasi terkini.
 
 ## SYNTAX
 

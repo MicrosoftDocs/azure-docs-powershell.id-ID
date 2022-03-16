@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationCertificate.md
-ms.openlocfilehash: ccb349d2a39d9c634dc5e3210017e97f108127a2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d728864b2e5a69f2c68c1344da647b90ab64edbf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168198"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929086"
 ---
 # Remove-AzAutomationCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/remove-azautomationcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

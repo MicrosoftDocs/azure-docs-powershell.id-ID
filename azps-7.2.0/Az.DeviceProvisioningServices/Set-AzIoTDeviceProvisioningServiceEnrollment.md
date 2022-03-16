@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceEnrollment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceEnrollment.md
-ms.openlocfilehash: 7f8eb4cdd08459aa72b6e56860f0a50488c52fce
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 889f8a55235d868d1259262765df7b17c57717d2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166595"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057080"
 ---
 # Set-AzIoTDeviceProvisioningServiceEnrollment
 
 ## SYNOPSIS
 Memperbarui catatan pendaftaran perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/set-aziotdeviceprovisioningserviceenrollment) untuk informasi terkini.
 
 ## SYNTAX
 

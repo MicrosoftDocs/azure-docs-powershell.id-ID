@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: a39aabe35a49577d52affa10ef8cd03f385d2e7c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9e748bb3f9adebe7db5d2039c7925da1b913674e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290923"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954653"
 ---
 # New-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
 Membuat konfigurasi aturan NAT masuk untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalancerinboundnatruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,9 +51,9 @@ PS C:\> $frontend = New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01
 PS C:\> New-AzLoadBalancerInboundNatRuleConfig -Name "MyInboundNatRule" -FrontendIPConfiguration $frontend -Protocol "Tcp" -FrontendPort 3389 -BackendPort 3389
 ```
 
-Perintah pertama membuat alamat IP publik yang bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip sumber daya.
+Perintah pertama membuat alamat IP publik bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip lokal.
 Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip, lalu menyimpannya dalam variabel $frontend.
-Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek front-end di $frontend.
+Perintah ketiga membuat konfigurasi aturan NAT masuk bernama MyInboundNatRule menggunakan objek front-end dalam $frontend.
 Protokol TCP ditentukan dan port ujung-depan adalah 3389, sama dengan port backend dalam kasus ini.
 Parameter *FrontendIpConfiguration*, *Protocol*, *FrontendPort*, dan *BackendPort* semuanya diperlukan untuk membuat konfigurasi aturan NAT masuk.
 

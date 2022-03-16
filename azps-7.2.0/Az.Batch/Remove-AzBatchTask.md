@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
-ms.openlocfilehash: fd454bd0a781416dda4f0b50585b2b07e46e1aa4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 249ff907719c038214bbfb37081735f74f9e556c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267292"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928743"
 ---
 # Remove-AzBatchTask
 
 ## SYNOPSIS
 Menghapus tugas Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchtask) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Menentukan tugas yang dihapus cmdlet ini.
-Untuk mendapatkan objek **PSCloudTask** , gunakan cmdlet Get-AzBatchTask.
+Untuk mendapatkan objek **PSCloudTask** , gunakan Get-AzBatchTask cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudTask

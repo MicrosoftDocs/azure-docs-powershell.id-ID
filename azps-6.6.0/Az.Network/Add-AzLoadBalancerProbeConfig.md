@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 9ba28031ea8b826cf924260cd419feb3afd3e704
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c07d365dc7a91c66ec453942557be23205545723
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354482"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139936573"
 ---
 # Add-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi configuration configuration to a load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azloadbalancerprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan objek **LoadBalancer.**
+Menentukan objek **LoadBalancer** .
 Cmdlet ini menambahkan konfigurasi konfigurasi ke penyeimbang muat yang ditentukan parameter ini.
 
 ```yaml
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

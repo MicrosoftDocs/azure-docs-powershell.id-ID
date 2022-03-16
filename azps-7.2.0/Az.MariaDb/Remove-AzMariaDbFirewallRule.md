@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbFirewallRule.md
-ms.openlocfilehash: ca328ad22bbac7a20fd994dc4323ff70b32ab668
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2bbb0f8ca7ac5fd6c9278cb03acbb79eb92f4df
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956381"
 ---
 # Remove-AzMariaDbFirewallRule
 
 ## SYNOPSIS
 Menghapus aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/remove-azmariadbfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

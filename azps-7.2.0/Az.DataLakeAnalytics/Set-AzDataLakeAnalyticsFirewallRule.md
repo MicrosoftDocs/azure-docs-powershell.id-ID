@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsFirewallRule.md
-ms.openlocfilehash: fd324c45ab1fa385c5eec4db4cfa91d9668cbd71
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 33d443657193553a742e7e6292d94ba2cf358b0e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926080"
 ---
 # Set-AzDataLakeAnalyticsFirewallRule
 
 ## SYNOPSIS
 Memperbarui aturan firewall di akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticsfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

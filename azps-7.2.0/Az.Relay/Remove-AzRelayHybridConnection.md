@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayHybridConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayHybridConnection.md
-ms.openlocfilehash: 6688d14b95b30af13e0556104b1b75a73a594111
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c54c6a509336d3e1c9bd6e62d928776227769e5e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316555"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917439"
 ---
 # Remove-AzRelayHybridConnection
 
 ## SYNOPSIS
 Menghapus HybridConnection dari ruang nama HybridConnection yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/remove-azrelayhybridconnection) untuk informasi terkini.
 
 ## SYNTAX
 

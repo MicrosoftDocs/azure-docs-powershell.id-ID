@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusSubscription.md
-ms.openlocfilehash: 2d43bb42bc2753e3530d7630574140f9fe52cd14
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a6e78a695bf84b72b12d86d81d1016596d89e541
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167078"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048801"
 ---
 # Set-AzServiceBusSubscription
 
 ## SYNOPSIS
 Memperbarui deskripsi langganan untuk topik Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/set-azservicebussubscription) untuk informasi terkini.
 
 ## SYNTAX
 

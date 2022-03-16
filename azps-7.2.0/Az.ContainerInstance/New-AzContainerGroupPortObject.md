@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupPortObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupPortObject.md
-ms.openlocfilehash: 619227a3a4c657557e722ac4b4328fa76ad0b4a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 74f5d393481a4973571c8185e7bb518134d832ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297916"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927411"
 ---
 # New-AzContainerGroupPortObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Port
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroupportobject) untuk informasi terkini.
 
 ## SYNTAX
 

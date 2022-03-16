@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStore.md
-ms.openlocfilehash: 8abb92a9439aee870c6aa1768bad9e97614ccc0a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fa7e0a2ba30147ee5881c58eb5040398d4cb3459
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260412"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139929319"
 ---
 # New-AzAppConfigurationStore
 
 ## SYNOPSIS
 Membuat penyimpanan konfigurasi dengan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Microsoft Azure langganan.
+ID Microsoft Azure langganan.
 
 ```yaml
 Type: System.String

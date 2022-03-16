@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupVault.md
-ms.openlocfilehash: 68feb936ba0c76bf1cbbe4012f4654fbb205116b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9f77afd67a2923fd23215818b6b8043d32c29f6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260123"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057981"
 ---
 # New-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya BackupVault milik grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupvault) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -262,7 +265,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-STORAGESETTING <IStorageSetting[]>: Storage Pengaturan penyimpanan. Gunakan New-AzDataProtectionBackupVaultStorageSetting Cmdlet untuk Membuat.
+STORAGESETTING <IStorageSetting[]>: Storage Pengaturan tutup vault. Gunakan New-AzDataProtectionBackupVaultStorageSetting Cmdlet untuk Membuat.
   - `[DatastoreType <StorageSettingStoreTypes?>]`: Mendapatkan atau mengatur tipe datastore.
   - `[Type <StorageSettingTypes?>]`: Mendapatkan atau mengatur tipenya.
 

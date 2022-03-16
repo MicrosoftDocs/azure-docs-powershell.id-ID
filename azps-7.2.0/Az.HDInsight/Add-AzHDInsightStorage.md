@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightStorage.md
-ms.openlocfilehash: cdaa76ee7aa6909b3192bf82f1a6e0074ece5107
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 473755436609f388a38730e6667d5261d4e7d64a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056433"
 ---
 # Add-AzHDInsightStorage
 
 ## SYNOPSIS
 Menambahkan kunci Azure Storage ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightstorage) untuk informasi terkini.
 
 ## SYNTAX
 

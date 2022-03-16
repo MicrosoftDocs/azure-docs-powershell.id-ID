@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/close-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Close-AzStorageFileHandle.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Close-AzStorageFileHandle.md
-ms.openlocfilehash: 3953308f12185de8b309ad8dbd03f812ed9906b7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 78afeafad76f6cc3d1fe9cd1db658ab90bde9e68
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342098"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139966677"
 ---
 # Close-AzStorageFileHandle
 
 ## SYNOPSIS
 Menutup gagang file untuk berbagi file, direktori file atau file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/close-azstoragefilehandle) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -72,12 +75,12 @@ Cmdlet **Close-AzStorageFileHandle** menutup gagang file berbagi file, atau dire
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua berbagi file dari Storage saat ini, dan tutup semua gagang file dari file yang bagikan secara berulang.
+### Contoh 1: Mencantumkan semua berbagi file Storage saat ini, lalu tutup semua gagang file yang akan bagikan secara berulang.
 ```
 PS C:\>Get-AzStorageShare | Close-AzStorageFileHandle -CloseAll -Recursive
 ```
 
-Perintah ini mencantumkan semua berbagi file dari Storage saat ini, dan menutup semua gagang file yang menangani file yang akan bagikan secara berulang.
+Perintah ini mencantumkan semua berbagi file dari Storage saat ini, dan menutup semua gagang file yang menangani file yang akan bagikan secara berulang..
 
 ### Contoh 2: Tutup semua gagang file pada direktori file secara berulang dan tampilkan jumlah gagang file tertutup
 ```
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

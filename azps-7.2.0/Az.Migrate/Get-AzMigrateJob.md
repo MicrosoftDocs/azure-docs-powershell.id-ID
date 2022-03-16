@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
-ms.openlocfilehash: 05bab56847933bc3105857afef5fb477d7844c54
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 42178774f99befb2c65d1a1d8e6d4321008df0e5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956075"
 ---
 # Get-AzMigrateJob
 
 ## SYNOPSIS
 Mengambil status pekerjaan Azure Migrate.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigratejob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupID
-Menentukan Grup Sumber Daya grup Migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -334,7 +337,7 @@ INPUTOBJECT <IJob>: Menentukan objek pekerjaan dari server yang replikasi.
   - `[StartTime <DateTime?>]`: Waktu mulai.
   - `[State <String>]`: Status Pekerjaan. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended atau Other.
   - `[StateDescription <String>]`: Deskripsi status Pekerjaan. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, PartiallySucceed, CompletedWithInformation atau Skipped.
-  - `[TargetInstanceType <String>]`: Tipe objek yang terpengaruh yang merupakan pengguna Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType kelas.
+  - `[TargetInstanceType <String>]`: Tipe objek yang terpengaruh yang merupakan pengguna Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType.
   - `[TargetObjectId <String>]`: Id Objek yang terpengaruh.
   - `[TargetObjectName <String>]`: Nama objek yang terpengaruh.
   - `[Task <IAsrTask[]>]`: Tugas.

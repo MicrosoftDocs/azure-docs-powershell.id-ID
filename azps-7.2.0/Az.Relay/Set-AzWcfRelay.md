@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/set-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Set-AzWcfRelay.md
-ms.openlocfilehash: e0f4d53dc6d7c717ba46bc1939733f99c0a2ba25
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4faca22d9e221256e240aaa0b39de79859a03d2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294059"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917313"
 ---
 # Set-AzWcfRelay
 
 ## SYNOPSIS
 Memperbarui deskripsi dari Wcf Smtp dalam ruang nama Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/set-azwcfrelay) untuk informasi terkini.
 
 ## SYNTAX
 

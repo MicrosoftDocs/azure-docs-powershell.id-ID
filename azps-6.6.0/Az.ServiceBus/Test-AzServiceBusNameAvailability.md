@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/test-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Test-AzServiceBusNameAvailability.md
-ms.openlocfilehash: 1199fb47394a145a171fa82b8c7d7c7ee7950fda
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: de3c236f265e03e3e61e8fff86542d2517787744
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355082"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139968837"
 ---
 # Test-AzServiceBusNameAvailability
 
 ## SYNOPSIS
 Memeriksa Ketersediaan Antrean atau Nama topik yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/test-azservicebusnameavailability) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Test-AzServiceBusNameAvailability -ResourceGroupName $resourceGroupName -Namespa
 True
 ```
 
-Mengembalikan True jika nama $nameQueue Yang Disediakan adalah Kesederuan atau mengembalikan False jika $nameQueue nama tidak tersedia
+Mengembalikan True jika nama $nameQueue Provided tersedia atau mengembalikan False jika Nama $nameQueue tidak tersedia
 
 ### Contoh 2
 ```powershell
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

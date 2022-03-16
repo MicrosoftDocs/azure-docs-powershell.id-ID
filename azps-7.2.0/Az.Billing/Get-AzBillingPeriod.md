@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingPeriod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingPeriod.md
-ms.openlocfilehash: 2a3281aa971a889cebe44ac0a1cc9b47b6bafe10
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 68fae988d552d5ad7ecc679b90b1c32a1fd6bdc3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304059"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928689"
 ---
 # Get-AzBillingPeriod
 
 ## SYNOPSIS
 Dapatkan periode tagihan langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azbillingperiod) untuk informasi terkini.
 
 ## SYNTAX
 

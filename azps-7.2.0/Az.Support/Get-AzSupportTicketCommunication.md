@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/get-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicketCommunication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Get-AzSupportTicketCommunication.md
-ms.openlocfilehash: 21c823a6d2bca2e7b6bf0077fac7fa81afa12721
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 563bf48f3df0a74e1f5c8580246363cec87586b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914847"
 ---
 # Get-AzSupportTicketCommunication
 
 ## SYNOPSIS
 Dapatkan komunikasi tiket dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/get-azsupportticketcommunication) untuk informasi terkini.
 
 ## SYNTAX
 

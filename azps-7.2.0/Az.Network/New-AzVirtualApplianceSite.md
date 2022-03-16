@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSite.md
-ms.openlocfilehash: f1812aeed8da0165402c0fe379ba3bcb68de4af5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0d175780030aa9ef990cb7a617cb95797097d05
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317836"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954365"
 ---
 # New-AzVirtualApplianceSite
 
 ## SYNOPSIS
 Membuat situs yang tersambung ke Alat Virtual Jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualappliancesite) untuk informasi terkini.
 
 ## SYNTAX
 

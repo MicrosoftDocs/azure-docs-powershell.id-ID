@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolDatabase.md
-ms.openlocfilehash: 94523042d14f8ccf1175604465ab80214289a43a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c1889d279a6a157f2df9aacb5844d066c1f0ad91
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277531"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914631"
 ---
 # Get-AzSynapseKustoPoolDatabase
 
 ## SYNOPSIS
 Mengembalikan sebuah database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopooldatabase) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBMongoDBIndex.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBMongoDBIndex.md
-ms.openlocfilehash: 2890efa9a8b5fe12e019ff0b3b90a636ab445123
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 527c9ab5956b992467389ef6fedb956d71ef14d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926997"
 ---
 # New-AzCosmosDBMongoDBIndex
 
 ## SYNOPSIS
 Membuat Index CosmosDBDb baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbmongodbindex) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Update-AzCognitiveServicesAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Update-AzCognitiveServicesAccountNetworkRuleSet.md
-ms.openlocfilehash: ba5dc61ac01c618359fa9ee000b99d783877b932
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b45f930628718aa15f72ce6fa0e973319496d5f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927897"
 ---
 # Update-AzCognitiveServicesAccountNetworkRuleSet
 
 ## SYNOPSIS
 Memperbarui properti NetworkRule dari akun Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/update-azcognitiveservicesaccountnetworkruleset) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/invoke-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
-ms.openlocfilehash: 163843a9d90ddb479c6b2ccf86c57be96a289c36
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 81d3e1e8c8d3a25e2b9416ffe3988df8bcf7f784
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362105"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139966263"
 ---
 # Invoke-AzStorageAccountFailover
 
 ## SYNOPSIS
 Menggunakan failover akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/invoke-azstorageaccountfailover) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Invoke-AzStorageAccountFailover -InputObject <PSStorageAccount> [-Force] [-AsJob
 ## DESCRIPTION
 Menggunakan failover akun Storage. Permintaan failover dapat dipicu untuk akun penyimpanan jika terjadi masalah ketersediaan.
 Failover terjadi dari kluster utama akun penyimpanan ke kluster sekunder untuk akun RA-GRS. Kluster sekunder akan menjadi utama setelah failover.
-Harap pahami dampak berikut ini pada akun penyimpanan sebelum Anda memulai failover: 1.1. Silakan periksa Waktu Sinkronisasi Terakhir menggunakan GET Blob Service Stats ( https://docs.microsoft.com/rest/api/storageservices/get-blob-service-stats) , GET Table Service Stats ( dan GET Queue Service Stats ( untuk akun https://docs.microsoft.com/rest/api/storageservices/get-table-service-stats) https://docs.microsoft.com/rest/api/storageservices/get-queue-service-stats) Anda. Data ini mungkin akan hilang jika Anda memulai failover.
+Harap pahami dampak berikut ini pada akun penyimpanan sebelum Anda memulai failover: 1.1. Silakan periksa Waktu Sinkronisasi Terakhir menggunakan GET Blob Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-blob-service-stats), GET Table Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-table-service-stats) dan GET Queue Service Stats (https://docs.microsoft.com/rest/api/storageservices/get-queue-service-stats) untuk akun Anda. Data ini mungkin akan hilang jika Anda memulai failover.
 2.Setelah failover, tipe akun penyimpanan Anda akan dikonversi menjadi penyimpanan berulang secara lokal(LRS). Anda dapat mengonversi akun Anda untuk menggunakan penyimpanan geo-redundant storage(GRS).
 3.Setelah Anda mengaktifkan kembali GRS untuk akun penyimpanan Anda, Microsoft akan mereplikasi data ke kawasan sekunder yang baru. Waktu replikasi bergantung pada jumlah data yang direplikasi. Harap perhatikan bahwa ada biaya bandwidth untuk bootstrap. https://azure.microsoft.com/en-us/pricing/details/bandwidth/
 
@@ -53,7 +56,7 @@ PS C:\>$job = Invoke-AzStorageAccountFailover -ResourceGroupName "MyResourceGrou
 PS C:\>$job | Wait-Job
 ```
 
-Perintah ini memeriksa waktu sinkronisasi terakhir akun Storage lalu meminta failover, kluster sekunder akan menjadi utama setelah failover. Karena failover memakan waktu lama, sarankan untuk menjalankannya dalam backend dengan parameter -Asjob, lalu tunggu hingga pekerjaan selesai.
+Perintah ini memeriksa waktu sinkronisasi terakhir akun Storage meminta failover, kluster sekunder akan menjadi utama setelah failover. Karena failover memakan waktu lama, sarankan untuk menjalankannya dalam backend dengan parameter -Asjob, lalu tunggu hingga pekerjaan selesai.
 
 ## PARAMETERS
 
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

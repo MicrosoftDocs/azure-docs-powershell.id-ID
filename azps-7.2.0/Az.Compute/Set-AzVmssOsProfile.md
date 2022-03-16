@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
-ms.openlocfilehash: c19cacfbd6fa9cf5ee3627f5638345e5cba5f659
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a5531b4ca1e55fe987cbb0aa9ca6133664df3f71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927628"
 ---
 # Set-AzVmssOsProfile
 
 ## SYNOPSIS
 Mengatur properti profil sistem operasi VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssosprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\> $vmss = New-AzVmssConfig -Location $Loc -SkuCapacity 2 -SkuName "Standar
 PS C:\> Set-AzVmssOSProfile -VirtualMachineScaleSet $vmss -ComputerNamePrefix "Test" -AdminUsername $AdminUsername -AdminPassword $AdminPassword
 ```
 
-Perintah ini mengatur properti profil sistem operasi untuk $vmss objek.
+Perintah ini mengatur properti profil sistem operasi untuk $vmss operasi.
 Perintah mengatur prefiks nama komputer untuk semua instans mesin virtual dalam VMSS untuk Menguji dan menyediakan nama pengguna dan kata sandi administrator.
 
 ### Contoh 2: Mengatur properti profil sistem operasi untuk Vmss dalam mode Fleksibel dengan Hotpatching yang diaktifkan.
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 
 ### -AdminUsername
 Menentukan nama akun administrator yang akan digunakan untuk semua instans mesin virtual dalam VMSS. <br>
-**Windows saja: Tidak** dapat diakhiri dengan \".\" <br>
+**Windows-saja: Tidak** dapat diakhiri dengan \".\" <br>
 **Nilai yang tidak diizinkan:** \" administrator\", \"admin\", \"pengguna\", \"user1\", \"test\", \"user2\", \"test1\", \"user3\", \"admin1\", \"1\", \"123\", \"a\", \"actuser\", \"adm\", \"admin2\", \"aspnet\", \"backup, console\", \"\"\"david, guest\"\", \"\"john\", \"owner\", \"root\", \"server\", \"sql\", support \" \", \"support_388945a0\", \"sys\", \"test2\", \"test3\", \"user4\", \"user5\". <br>
 **Panjang-minimum (Linux):** 1 karakter <br>
 **Panjang-maks (Linux):** 64 karakter <br>
@@ -361,8 +364,8 @@ Accept wildcard characters: False
 
 ### -Listener
 Menentukan Windows Manajemen Jarak Jauh (WinRM, Remote Management).
-Ini memungkinkan pengguna Windows PowerShell.
-Anda dapat menggunakan cmdlet Add-AzVmssWinRMListener cmdlet untuk membuat pendengar.
+Ini memungkinkan pengguna jarak Windows PowerShell.
+Anda dapat menggunakan cmdlet Add-AzVmssWinRMListener tersebut untuk membuat pendengar.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.WinRMListener[]
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 
 ### -Zona Waktu
 Menentukan zona waktu mesin virtual. misalnya Waktu Standar \"Pasifik\". <br>
-Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
+Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [Zona WaktuInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
 
 ```yaml
 Type: System.String

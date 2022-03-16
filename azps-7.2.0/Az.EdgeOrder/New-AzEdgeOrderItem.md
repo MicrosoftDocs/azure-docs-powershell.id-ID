@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderItem.md
-ms.openlocfilehash: 70a38c618d325973afba0df8fa3f582e76c0b588
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f879fee321c071ee9a52de14ebfb968935929b85
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258763"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056829"
 ---
 # New-AzEdgeOrderItem
 
 ## SYNOPSIS
 Membuat item pesanan.
 Item pesanan yang sudah ada tidak bisa diperbarui dengan api ini dan sebaiknya diperbarui dengan API item Pesanan pembaruan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -331,7 +334,7 @@ FORWARDADDRESSCONTACTDETAIL <IContactDetails>: Detail kontak untuk alamat
   - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
   - `[Mobile <String>]`: Nomor ponsel orang yang dapat dihubungi.
-  - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang yang menghubungi Anda.
+  - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang kontak.
 
 FORWARDSHIPPINGADDRESS <IShippingAddress>: Detail pengiriman alamat
   - `Country <String>`: Nama Negara.

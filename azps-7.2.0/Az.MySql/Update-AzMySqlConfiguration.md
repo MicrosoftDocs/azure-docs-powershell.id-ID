@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlConfiguration.md
-ms.openlocfilehash: 64976aa1e4e0e741adfecbb26fb67822e468e492
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d805f3b534a24e69002b6f6c1b60b1c00efee3cd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312412"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120265"
 ---
 # Update-AzMySqlConfiguration
 
 ## SYNOPSIS
 Memperbarui konfigurasi server.
 Gunakan Update-AzMySqlServer jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/update-azmysqlconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

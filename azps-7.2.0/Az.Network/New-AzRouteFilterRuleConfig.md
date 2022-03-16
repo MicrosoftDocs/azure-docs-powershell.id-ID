@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteFilterRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteFilterRuleConfig.md
-ms.openlocfilehash: 58f8dcfcabf78f3f1b64eb5d4388cd0ba8b9d799
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50345961eb04ffa628b06bf99ff7b6892c16ea81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162985"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954491"
 ---
 # New-AzRouteFilterRuleConfig
 
 ## SYNOPSIS
 Membuat aturan filter rute untuk filter rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azroutefilterruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 

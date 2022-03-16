@@ -5,20 +5,23 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: d9ea9748cafbce576d8e8f55d6b19f0798f3ae40
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c12128bad16b11b9f7c6416ad5746ec3a569fbe7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360050"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969274"
 ---
 # Get-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
-Mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) untuk Aturan Analitik, seperti Azure Logic Apps Putar.<br/>
+Mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) untuk Aturan Analitik, seperti Azure Logic Apps Playbook.<br/>
 Aturan Otomatisasi Azure Sentinel akan didukung di masa mendatang.
 
 *Catatan: Hal ini memerlukan nilai parameter "AlertRuleId"*
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ Get-AzSentinelAlertRuleAction -ResourceGroupName <String> -WorkspaceName <String
 
 ## DESCRIPTION
 Cmdlet **Get-AzSentinelAlertRuleAction** mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) dari ruang kerja tertentu.
-Jika Anda menentukan *parameter ActionId* *dan AlertRuleId,* satu objek **AlertRuleAction** dikembalikan.<br/>
-Jika Anda tidak menentukan parameter *ActionId,* array yang berisi semua Tindakan untuk Aturan Pemberitahuan spesifik dalam ruang kerja tertentu akan dikembalikan.
+Jika Anda menentukan *parameter ActionId* *dan AlertRuleId* , satu objek **AlertRuleAction** dikembalikan.<br/>
+Jika Anda tidak menentukan parameter *ActionId* , array yang berisi semua Tindakan untuk Aturan Pemberitahuan spesifik dalam ruang kerja tertentu akan dikembalikan.
 Anda bisa menggunakan **objek** Tindakan untuk memperbarui Tindakan, misalnya Anda bisa mengubah **Tindakan untuk** Aturan Pemberitahuan.
 
 ## EXAMPLES
@@ -47,7 +50,7 @@ Anda bisa menggunakan **objek** Tindakan untuk memperbarui Tindakan, misalnya An
 PS C:\> $AlertRuleActions = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "29d2523f-84ce-42d3-b5f1-9e63c85aaed1"
 ```
 
-Contoh ini mendapatkan semua Tindakan **untuk** Aturan Pemberitahuan yang ditentukan dalam ruang kerja tertentu, lalu menyimpannya di $AlertRuleActions lain.<br/><br/>
+Contoh ini mendapatkan semua Tindakan **untuk** Aturan Pemberitahuan yang ditentukan dalam ruang kerja tertentu, lalu menyimpannya di $AlertRuleActions kolom.<br/><br/>
 
 *Catatan: bidang **LogicAppResourceID** berisi ID lengkap Azure Resource Manager (ARM), yang berisi nama Playbook Azure Logic Apps aktif.*
 
@@ -56,7 +59,7 @@ Contoh ini mendapatkan semua Tindakan **untuk** Aturan Pemberitahuan yang ditent
 PS C:\> $AlertRuleAction = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -ActionId "MyActionId"
 ```
 
-Contoh ini mendapatkan **AlertRuleAction untuk** Aturan Pemberitahuan yang ditentukan di ruang kerja tertentu, lalu menyimpannya di $AlertRuleAction perusahaan.
+Contoh ini mendapatkan **AlertRuleAction untuk** Aturan Pemberitahuan yang ditentukan dalam ruang kerja tertentu, lalu menyimpannya di $AlertRuleAction perusahaan.
 
 ## PARAMETERS
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

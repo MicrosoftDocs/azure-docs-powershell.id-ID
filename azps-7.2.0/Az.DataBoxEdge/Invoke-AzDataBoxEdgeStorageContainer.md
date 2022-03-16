@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: a218f24ad04c5c38db90bf3e46c9a3801bfb3e5b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b06fb20090072dd4e5cd8bbaa19ba59dfa082320
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926475"
 ---
 # Invoke-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
 Menjalankan tindakan tertentu pada wadah penyimpanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgestoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 

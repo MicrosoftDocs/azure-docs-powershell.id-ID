@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCacheDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCacheDiagnostic.md
-ms.openlocfilehash: 7355686caedf02443f33ddbbba3894ee5f435801
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f76a8c5257ecfaf5af50426f1b000f8c55c89eb8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303355"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050061"
 ---
 # Set-AzRedisCacheDiagnostic
 
 ## SYNOPSIS
 Mengaktifkan diagnostik di Singgahan Azure Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/set-azrediscachediagnostic) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseLinkedServiceEncryptedCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseLinkedServiceEncryptedCredential.md
-ms.openlocfilehash: 8de58838d722949d3d75fde9ba49ae9c07d13876
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f081074220500e1016ca935160c996d484be896
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947491"
 ---
 # New-AzSynapseLinkedServiceEncryptedCredential
 
 ## SYNOPSIS
 Enkripsi kredensial dalam layanan tertaut dengan runtime integrasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapselinkedserviceencryptedcredential) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | New-AzSynapseLinkedServiceEncryptedCredential -IntegrationRuntimeName "IR-LSEncryptedCredential" -DefinitionFile "D:\sqlLinkService.json" > "D:\SynapseEncryptedSQLServerLinkedService.json"
 ```
 
-Perintah ini mengenkripsi kredensial di file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi yang IR-LSEncryptedCredential melalui saluran.
+Perintah ini mengenkripsi kredensial di file D:\SynapseEncryptedSQLServerLinkedService.json dengan runtime integrasi IR-LSEncryptedCredential melalui saluran.
 
 ## PARAMETERS
 

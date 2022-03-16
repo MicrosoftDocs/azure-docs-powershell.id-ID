@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceActiveDirectoryAdministrator.md
-ms.openlocfilehash: 43aca4f46c7d6e355e5c1f1d0b175fb45fb6c3cf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ca1a6101d674b31c88f94242a425ba435c705cfc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346742"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139967451"
 ---
 # Set-AzSqlInstanceActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menyediakan administrator Azure AD untuk SQL Instans Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlinstanceactivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ Set-AzSqlInstanceActiveDirectoryAdministrator [-DisplayName] <String> [-ObjectId
 ## DESCRIPTION
 Cmdlet **Set-AzSqlInstanceActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL dalam langganan saat ini.
 Anda hanya bisa menyediakan satu administrator dalam satu waktu.
-Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator Instans SQL Terkelola:
+Anggota Azure AD berikut dapat ditetapkan sebagai administrator Instans SQL Terkelola:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
 - Grup Azure AD yang dibuat sebagai grup keamanan Anggota yang diimpor dari Azure AD lain tidak didukung sebagai administrator.
-Akun Microsoft, seperti yang ada di Outlook.com, Hotmail.com, atau Live.com publik, tidak didukung sebagai administrator.
+Akun Microsoft, seperti yang ada di Outlook.com, Hotmail.com, atau Live.com lokal, tidak didukung sebagai administrator.
 Akun tamu lain, seperti yang ada di Gmail.com atau Yahoo.com tamu, tidak didukung sebagai administrator.
 Kami menyarankan Anda menyediakan grup Khusus Azure AD sebagai administrator.
 
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

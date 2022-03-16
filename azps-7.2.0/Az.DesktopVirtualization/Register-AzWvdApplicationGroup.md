@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
-ms.openlocfilehash: 62ce47e2249a9867f1e4c498c9fc7d9531739e42
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 91fb0250c64128b86ac97d3e1516968ffd13cb7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313868"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057297"
 ---
 # Register-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Daftarkan Windows aplikasi desktop virtual Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/register-azwvdapplicationgroup) untuk informasi terkini.
 
 ## SYNTAX
 

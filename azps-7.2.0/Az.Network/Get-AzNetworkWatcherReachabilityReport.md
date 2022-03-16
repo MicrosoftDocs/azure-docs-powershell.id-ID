@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityReport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherReachabilityReport.md
-ms.openlocfilehash: 2597fe923a635f2c469f910e5526726c526caf97
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 55aee89412b98fd5a2c5abea0b29309dd19cbf1a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279451"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921111"
 ---
 # Get-AzNetworkWatcherReachabilityReport
 
 ## SYNOPSIS
 Mendapatkan skor latensi relatif untuk penyedia layanan internet dari lokasi tertentu ke kawasan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkwatcherreachabilityreport) untuk informasi terkini.
 
 ## SYNTAX
 

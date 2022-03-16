@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzMetricAlertRuleV2.md
-ms.openlocfilehash: b4bd4bacb686de79228ebacad042101ed2cc6565
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e52101bfb68075b5dab7852d1a85d57ef41071c4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955319"
 ---
 # Remove-AzMetricAlertRuleV2
 
 ## SYNOPSIS
 Menghapus aturan peringatan metrik V2 (non-klasik).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azmetricalertrulev2) untuk informasi terkini.
 
 ## SYNTAX
 

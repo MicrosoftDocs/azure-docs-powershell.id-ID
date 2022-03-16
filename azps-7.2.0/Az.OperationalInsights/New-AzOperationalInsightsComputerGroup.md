@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsComputerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsComputerGroup.md
-ms.openlocfilehash: cae7aaa656a5de2da3338cd58e800acf839a993b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f9682a80e97a933bad9466de3f01e074c967dd81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167877"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918375"
 ---
 # New-AzOperationalInsightsComputerGroup
 
 ## SYNOPSIS
 Membuat grup komputer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightscomputergroup) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRetentionPolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRetentionPolicyObject.md
-ms.openlocfilehash: 17c147c7834993e43352edf9ef9adb7a183ef4e8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a36c76d5a13c453b7f00bd220ee87613a047c5e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279196"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050961"
 ---
 # Get-AzRecoveryServicesBackupRetentionPolicyObject
 
 ## SYNOPSIS
 Mendapatkan objek kebijakan penyimpanan dasar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupretentionpolicyobject) untuk informasi terkini.
 
 ## SYNTAX
 

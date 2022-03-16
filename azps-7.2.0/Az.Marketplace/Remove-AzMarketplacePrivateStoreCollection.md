@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Remove-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: 6f50eb4332733ff8980cc2420131f88d218d6351
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 290c59bd10f7a0c384a6ee839d5ec75d066255bb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282092"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956255"
 ---
 # Remove-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
 Hapus koleksi dari bursa pribadi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplace/remove-azmarketplaceprivatestorecollection) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: 6e2ef53f63f8a59b9f95ba3de814422d219490f1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b1fee7bf994ddf09282fd243ad7b8e8878e363ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955193"
 ---
 # Get-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi IP front-end gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $FrontEndIPs= Get-AzApplicationGatewayFrontendIPConfig  -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan daftar konfigurasi IP ujung-depan dari pengguna $AppGw menyimpannya dalam $FrontEndIPs variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan daftar konfigurasi IP front-end dari pengguna $AppGw menyimpannya dalam $FrontEndIPs bidang.
 
 ## PARAMETERS
 

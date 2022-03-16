@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnOrigin.md
-ms.openlocfilehash: 06316c32deeb087e68c114bcd2c06507af965a42
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 876e41565a08e43abd93724170d37eafbb693557
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166808"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928509"
 ---
 # Get-AzCdnOrigin
 
 ## SYNOPSIS
 Mendapatkan server CDN origin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnorigin) untuk informasi terkini.
 
 ## SYNTAX
 

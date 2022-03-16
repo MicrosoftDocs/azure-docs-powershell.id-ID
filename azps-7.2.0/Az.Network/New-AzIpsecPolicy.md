@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azip
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzIpsecPolicy.md
-ms.openlocfilehash: fd726df568280df65c3166b660ced054b0786b05
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 47983730da2fe75d369604158fbabdb6f8c8cbee
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954635"
 ---
 # New-AzIpsecPolicy
 
 ## SYNOPSIS
 Membuat Kebijakan IPSec.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azipsecpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageCORSRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageCORSRule.md
-ms.openlocfilehash: d89e24d175742d0a3712c0119e5d731842b111c9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b1d2f6384816219e0ac27159a07b65ced3bd3916
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293819"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948193"
 ---
 # Remove-AzStorageCORSRule
 
 ## SYNOPSIS
 Menghapus CORS untuk layanan Storage baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstoragecorsrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Remove-AzStorageCORSRule [-ServiceType] <StorageServiceType> [-Context <IStorage
 
 ## DESCRIPTION
 Cmdlet **Remove-AzStorageCORSRule** menghapus Berbagi Sumber Daya Lintas Asal (CORS) untuk layanan Azure Storage.
-Cmdlet ini menghapus semua aturan CORS dalam suatu Storage layanan.
+Cmdlet ini menghapus semua aturan CORS dalam suatu Storage layanan baru.
 Tipe layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
 
 ## EXAMPLES
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, cmdlet New-AzStorageContext baru.
+Untuk mendapatkan konteks penyimpanan, New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceType
-Menentukan jenis Azure Storage layanan yang telah dihapus cmdlet ini.
+Menentukan jenis Azure Storage layanan baru yang aturannya dihapus cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Blob 
 - Tabel 

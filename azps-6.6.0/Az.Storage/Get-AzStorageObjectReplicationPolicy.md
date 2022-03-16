@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageObjectReplicationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageObjectReplicationPolicy.md
-ms.openlocfilehash: 292fc184d4179b3ab6a508098a095192bd1d29b7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6d4a115d792d282fca17ddebc6100b82cadf1d4f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342026"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139966299"
 ---
 # Get-AzStorageObjectReplicationPolicy
 
 ## SYNOPSIS
-Mendapatkan atau mencantumkan kebijakan replikasi objek akun Storage tersebut.
+Mendapatkan atau mencantumkan kebijakan replikasi objek akun Storage anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageobjectreplicationpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzStorageObjectReplicationPolicy -StorageAccount <PSStorageAccount> [-Policy
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageObjectReplicationPolicy** mendapatkan atau mencantumkan kebijakan replikasi objek Storage Anda.
+Cmdlet **Get-AzStorageObjectReplicationPolicy** mendapatkan atau mencantumkan kebijakan replikasi objek Storage penerima.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ myresourcegroup   mydestaccount      56bfa11c-81ef-4f8d-b307-5e5386e16fba       
 myresourcegroup   mydestaccount      68434c7a-20d0-4282-b75c-43b5a243435e             mysrcaccount2   mydestaccount      [d3d39a01-8d92-40e5-849f-e56209ae5cf5,...]
 ```
 
-Perintah ini mencantumkan kebijakan replikasi objek dari Storage objek.
+Perintah ini mencantumkan kebijakan replikasi objek dari Storage tersebut.
 
 ## PARAMETERS
 
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

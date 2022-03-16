@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNatRule.md
-ms.openlocfilehash: c11dc948f980f97f9ab41b0ea4ade13d45fcfbfc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0d63e947b04ab21e30ab3fccf7f3bc5751d1aea9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306620"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118483"
 ---
 # New-AzFirewallNatRule
 
 ## SYNOPSIS
 Membuat Aturan NAT Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallnatrule) untuk informasi terkini.
 
 ## SYNTAX
 

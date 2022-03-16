@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicy.md
-ms.openlocfilehash: 596e50d8ad4586b8fdc9ec7ba6d86d273a35d441
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f260d5677bd9a1d357716816930ffe9dea0d1ec5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302187"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954167"
 ---
 # Remove-AzFirewallPolicy
 
 ## SYNOPSIS
 Menghapus Kebijakan Azure Firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azfirewallpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

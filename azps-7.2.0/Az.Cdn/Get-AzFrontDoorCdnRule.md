@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnRule.md
-ms.openlocfilehash: 8e8916685e16a302aa853fe89bee6a905918d57b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3193a6ee10dda741f38929c92edd0306777bc4c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274299"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928383"
 ---
 # Get-AzFrontDoorCdnRule
 
 ## SYNOPSIS
 Mendapatkan aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnrule) untuk informasi terkini.
 
 ## SYNTAX
 

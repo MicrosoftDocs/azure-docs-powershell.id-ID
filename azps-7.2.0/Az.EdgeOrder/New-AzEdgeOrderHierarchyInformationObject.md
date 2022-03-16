@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderHierarchyInformationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderHierarchyInformationObject.md
-ms.openlocfilehash: c148066457e34a67bd8841eddc8f2aed2cab6426
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cb7d8c4d479e1348e435125adb94d39d1e3dfcab
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140056919"
 ---
 # New-AzEdgeOrderHierarchyInformationObject
 
 ## SYNOPSIS
 Membuat objek di memori untuk HierarchyInformation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderhierarchyinformationobject) untuk informasi terkini.
 
 ## SYNTAX
 

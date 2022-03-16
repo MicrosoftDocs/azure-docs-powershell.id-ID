@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/unregis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
-ms.openlocfilehash: 5d793f1ab3efdae1255507844a10f53d57b119fd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2209526ea37aae88fd4b5529bccbefc1966b6582
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294972"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948913"
 ---
 # Unregister-AzStackHCI
 
 ## SYNOPSIS
 Unregister-AzStackHCI menghapus sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
 Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/unregister-azstackhci) untuk informasi terkini.
 
 ## SYNTAX
 

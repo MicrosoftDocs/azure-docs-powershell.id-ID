@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/restore-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Restore-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Restore-AzSqlDatabase.md
-ms.openlocfilehash: 4fde01885a32abf2ea98b767ead2484bb231ba67
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4d3b8d9ca4aff60211af0cfd6ec320f1ffcef344
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136375883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139967487"
 ---
 # Restore-AzSqlDatabase
 
 ## SYNOPSIS
 Memulihkan database SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/restore-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -100,7 +103,7 @@ PS C:\>$Database = Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -Serve
 PS C:\> Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName "S2"
 ```
 
-Perintah pertama mendapatkan database SQL database bernama Database01, lalu menyimpannya dalam $Database variabel.
+Perintah pertama akan mendapatkan SQL database bernama Database01, lalu menyimpannya di $Database baru.
 Perintah kedua memulihkan database di $Database dari pencadangan titik waktu yang ditentukan ke database bernama RestoredDatabase.
 
 ### Contoh 2: Memulihkan database dari titik waktu ke kolam elastis
@@ -109,8 +112,8 @@ PS C:\>$Database = Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -Serve
 PS C:\> Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah pertama mendapatkan database SQL database bernama Database01, lalu menyimpannya dalam $Database variabel.
-Perintah kedua memulihkan database di $Database dari pencadangan titik waktu yang ditentukan ke database SQL bernama RestoredDatabase di kolam elastis bernama elastispool01.
+Perintah pertama akan mendapatkan SQL database bernama Database01, lalu menyimpannya di $Database baru.
+Perintah kedua memulihkan database di $Database dari pencadangan titik waktu yang ditentukan ke database SQL bernama RestoredDatabase di kolam elastis yang disebut elastispool01.
 
 ### Contoh 3: Memulihkan database yang dihapus
 ```
@@ -119,7 +122,7 @@ PS C:\> Restore-AzSqlDatabase -FromDeletedDatabaseBackup -DeletionDate $DeletedD
 ```
 
 Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzSqlDeletedDatabaseBackup](./Get-AzSqlDeletedDatabaseBackup.md).
-Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan cmdlet [Restore-AzSqlDatabase.](./Restore-AzSqlDatabase.md) Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
+Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan cmdlet [Restore-AzSqlDatabase](./Restore-AzSqlDatabase.md) . Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
 
 ### Contoh 4: Memulihkan database yang dihapus ke dalam pool elastis
 ```
@@ -136,8 +139,8 @@ PS C:\>$GeoBackup = Get-AzSqlDatabaseGeoBackup -ResourceGroupName "ResourceGroup
 PS C:\> Restore-AzSqlDatabase -FromGeoBackup -ResourceGroupName "TargetResourceGroup" -ServerName "TargetServer" -TargetDatabaseName "RestoredDatabase" -ResourceId $GeoBackup.ResourceID -Edition "Standard" -ServiceObjectiveName "S2"
 ```
 
-Perintah pertama mendapatkan cadangan geo berlebihan untuk database yang bernama Database01, lalu menyimpannya dalam variabel $GeoBackup nya.
-Perintah kedua memulihkan cadangan di $GeoBackup ke database SQL bernama RestoredDatabase.
+Perintah pertama mendapatkan cadangan geo-berlebihan untuk database bernama Database01, lalu menyimpannya dalam $GeoBackup nya.
+Perintah kedua memulihkan cadangan secara otomatis $GeoBackup database SQL bernama RestoredDatabase.
 
 ## PARAMETERS
 
@@ -203,8 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeletionDate
-Menentukan tanggal penghapusan sebagai objek **DateTime.**
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
+Menentukan tanggal penghapusan sebagai objek **DateTime** .
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
 ```yaml
 Type: System.DateTime
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElastisPoolName
-Menentukan nama elastis pool untuk meletakkan database SQL.
+Menentukan nama pool elastis di mana untuk meletakkan database SQL.
 
 ```yaml
 Type: System.String
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 
 ### -FromDeletedDatabaseBackup
 Mengindikasikan bahwa cmdlet ini memulihkan database dari cadangan database SQL dihapus.
-Anda dapat menggunakan cmdlet Get-AzSqlDeletedDatabaseBackup cmdlet untuk mendapatkan cadangan database SQL dihapus.
+Anda dapat menggunakan cmdlet Get-AzSqlDeletedDatabaseBackup tersebut untuk mendapatkan cadangan database SQL dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 
 ### -FromGeoBackup
 Mengindikasikan bahwa cmdlet ini memulihkan SQL database dari cadangan geo berlebihan.
-Anda bisa menggunakan cmdlet Get-AzSqlDatabaseGeoBackup untuk mendapatkan cadangan geo-redundan.
+Anda dapat menggunakan cmdlet Get-AzSqlDatabaseGeoBackup untuk mendapatkan cadangan geo-redundan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromLongTermRetentionBackup
-Menunjukkan bahwa cmdlet ini memulihkan SQL database dari pencadangan penyimpanan jangka panjang.
+Menunjukkan bahwa cmdlet ini memulihkan database SQL dari pencadangan penyimpanan jangka panjang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -348,9 +351,9 @@ Accept wildcard characters: False
 ```
 
 ### -PointInTime
-Menentukan titik dalam waktu, sebagai objek **DateTime,** tempat Anda ingin memulihkan database SQL.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet **Get-Date.**
-Gunakan parameter ini bersama dengan parameter *FromPointInTimeBackup.*
+Menentukan titik dalam waktu, sebagai objek **DateTime**, tempat Anda ingin memulihkan database SQL.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
+Gunakan parameter ini bersama dengan parameter *FromPointInTimeBackup* .
 
 ```yaml
 Type: System.DateTime
@@ -497,7 +500,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

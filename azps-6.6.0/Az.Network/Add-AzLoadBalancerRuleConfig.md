@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: fcab2dbce79b2c2bc77cc6395e3d835ce3b231b3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9dc848bb16ca4bbc7b2d90e22c29d2b5e1b3d6af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345470"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139936519"
 ---
 # Add-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi aturan ke penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azloadbalancerruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,8 +53,8 @@ PS C:\> $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfigura
 PS C:\>$slb | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua menggunakan operator pipeline untuk memindahkan penyeimbang muat di $slb ke **Add-AzLoadBalancerRuleConfig,** yang menambahkan konfigurasi aturan bernama NewRule.
+Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
+Perintah kedua menggunakan operator pipeline untuk menyampaikan penyeimbang muat di $slb **ke Add-AzLoadBalancerRuleConfig**, yang menambahkan konfigurasi aturan bernama NewRule.
 Perintah ketiga akan memperbarui penyeimbang muat di Azure dengan Konfigurasi Aturan Penyeimbang Muat baru.
 
 ### Contoh 2: Menambahkan konfigurasi aturan dengan dua alamat backend yang beralamat ke penyeimbang muat
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan objek **LoadBalancer.**
+Menentukan objek **LoadBalancer** .
 Cmdlet ini menambahkan konfigurasi aturan ke penyeimbang muat yang ditentukan parameter ini.
 
 ```yaml
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

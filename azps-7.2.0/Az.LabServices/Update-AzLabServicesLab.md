@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLab.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesLab.md
-ms.openlocfilehash: 479818abac019256fe5a492415ce7dedb512a153
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 37e2cd79abd3840f711876dbbc4d1e8f8d0de1db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957587"
 ---
 # Update-AzLabServicesLab
 
 ## SYNOPSIS
 Operasi untuk memperbarui sumber daya lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/update-azlabserviceslab) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -471,7 +474,7 @@ Accept wildcard characters: False
 ```
 
 ### -RosterProfileActiveDirectoryGroupId
-ID AAD baru tempat daftar lab terisi.
+Hasil AAD id grup tempat daftar lab terisi.
 Setelah kumpulan ini mengaktifkan AAD mode sinkronisasi.
 
 ```yaml

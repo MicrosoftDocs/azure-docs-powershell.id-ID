@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccount.md
-ms.openlocfilehash: a2a9be89d99aa9d9018d8d3d3167ede13eab5abe
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 428db389d34e23688f9e7fa0ba4a476e40a73302
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301212"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956598"
 ---
 # Get-AzMapsAccount
 
 ## SYNOPSIS
-Dapatkan akun Peta.
+Dapatkan akun Peta Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/get-azmapsaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Get-AzMapsAccount -ResourceGroupName <String> [-SubscriptionId <String[]>] [-Def
 ```
 
 ## DESCRIPTION
-Dapatkan akun Peta.
+Dapatkan akun Peta Anda.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 
 Perintah ini mencantumkan semua Peta Akun di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan Peta Anda
+### Contoh 3: Mendapatkan Peta Baru
 ```powershell
 PS C:\> Get-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01
 
@@ -77,7 +80,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini akan mendapatkan Peta Akun.
+Perintah ini akan mendapatkan Peta Baru.
 
 ### Contoh 4: Get a Peta Account by pipeline
 ```powershell
@@ -88,7 +91,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini akan Peta Akun dengan saluran.
+Perintah ini memiliki Peta saluran.
 
 ## PARAMETERS
 
@@ -190,7 +193,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

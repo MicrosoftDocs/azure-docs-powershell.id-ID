@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storagesync/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncServerEndpoint.md
-ms.openlocfilehash: ad38d1261359c5b09386b648bce8ee1a2f4e3ebd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bde445f0dbb0e3dba795958c51358c84345c6def
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273435"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948070"
 ---
 # New-AzStorageSyncServerEndpoint
 
 ## SYNOPSIS
 Perintah ini membuat titik akhir server baru pada server yang terdaftar. Proses ini mengaktifkan jalur tertentu di server untuk mulai menyinkronkan file dengan titik akhir lain dalam grup sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/new-azstoragesyncserverendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

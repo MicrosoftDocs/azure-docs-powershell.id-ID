@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2Criteria.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2Criteria.md
-ms.openlocfilehash: 72096f7cad4849d5a6f02623d13bb15522889c43
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c4b7785a51f0a6d1b15b844c23da8f1fb5dfa82f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156583"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139937253"
 ---
 # New-AzMetricAlertRuleV2Criteria
 
 ## SYNOPSIS
 Membuat objek kriteria lokal yang bisa digunakan untuk membuat pemberitahuan metrik baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azmetricalertrulev2criteria) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### -WebTestId
-Application Insights web test Id.
+Id uji Insights web Application.
 
 ```yaml
 Type: System.String
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/grant-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Grant-AzDataShareSubscriptionAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Grant-AzDataShareSubscriptionAccess.md
-ms.openlocfilehash: b8ad6fc727d835a43f9cf31697b9ee0b8db3c014
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 40c3f75c1248bac9f4bbdf2f5876a2d701e4beed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168685"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140057783"
 ---
 # Grant-AzDataShareSubscriptionAccess
 
 ## SYNOPSIS
 Memberikan akses berbagi langganan yang dicabut ke berbagi sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/grant-azdatasharesubscriptionaccess) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: 1de3b1a3e25902966f98bf26e877f90a2752c53b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e86f3d20437b1e9761f12c9c4982d256917bfc8a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339401"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139969215"
 ---
 # Remove-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
 Menghapus Respons Otomatis dari Aturan Analitik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelalertruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Remove-AzSentinelAlertRuleAction -InputObject <PSSentinelActionResponse> [-PassT
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelAlertRuleAction** secara permanen menghapus Respons Otomatis dari Aturan Pemberitahuan di ruang kerja yang ditentukan.
 Anda dapat melewati **objek AlertRuleAction** menggunakan operator pipeline, atau dengan cara lain Anda dapat menentukan parameter yang diperlukan.
-Anda dapat menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ $AlertRuleAction = Get-AzSentinelAlertRuleAction @SentinelConnection -AlertRuleI
 Remove-AzSentinelAlertRuleAction @SentinelConnection -AlertRuleId $AlertRule.Name -ActionId $AlertRuleAction.Name
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati *resourceGroupName* dan *workspaceName*. Pertama mendapatkan *AlertRule* dengan *DisplayName* khusus, lalu mendapatkan *tindakan AlertRuleAction* dan akhirnya menghapusnya dari AlertRule.
+Contoh ini menggunakan objek koneksi untuk melewati *resourceGroupName* dan *workspaceName*. Pertama mendapatkan *AlertRule* dengan *DisplayName* tertentu, lalu mendapatkan *tindakan AlertRuleAction* dan akhirnya menghapusnya dari AlertRule.
 
 ## PARAMETERS
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

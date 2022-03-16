@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: b1078bd7b554e1ae4ce05561cbf71c01453622c3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: da5980711f6264574a7428aa638f3abe2ed11409
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344417"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965867"
 ---
 # New-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
 Membuat fungsi atau mengganti fungsi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsfunction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions 7bbd6ccd-c7a4-4910
 
 Perintah ini akan membuat fungsi dari file Function_JavascriptUdf.json.
 
-(di bawah ini adalah contoh untuk "Function_JavascriptUdf.json") { "properti": { "type": "Skalar", "properti": { "inputs": [ { "dataType": "any" }, { "dataType": "any" } ], "output": { "dataType": "any" }, "binding": { "type": "Microsoft.StreamAnalytics/JavascriptUdf", "properties": { "script": "// Sample UDF yang mengembalikan jumlah dari dua nilai.\nfunction main(null3,dal4) {\n returnmicrosoft1 +amp2;\n}" } } } }
+(di bawah ini adalah contoh untuk "Function_JavascriptUdf.json") { "properti": { "type": "Skalar", "properti": { "inputs": [ { "dataType": "any" }, { "tipedata": "any" } ], "output": { "dataType": "any" }, "binding": { "type": "Microsoft.StreamAnalytics/JavascriptUdf", "properties": { "script": "// Sample UDF yang mengembalikan jumlah dari dua nilai.\nfunction main(teri3,harga4) {\n return null1 + script2;\n}" } } } }
 
 ### Contoh 2: Membuat fungsi Analitik Streaming
 ```powershell
@@ -55,7 +58,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions 7bbd6ccd-c7a4-4910
 
 Perintah ini membuat fungsi dari file MachineLearningServices.json.
 
-(di bawah ini adalah contoh untuk "MachineLearningServices.json") { "properti": { "type": "Skalar", "properti": { "inputs": [ { "dataType": "record" } ], "output": { "dataType": "bigint" }, "binding": { "type": "Microsoft.MachineLearningServices", "properties": { "endpoint": " http://xxxxxxxxxxxxxxxxxxx.eastus.azurecontainer.io/score ", ", "input": [ { "name": "data", "dataType": "object", "mapTo": 0 } ], "outputs": [ { "name": "output", "dataType": "int64", "mapTo": 0 } ], "batchSize": 10000, "numberOfParallelRequests": 1 } } }
+(di bawah ini adalah contoh untuk "MachineLearningServices.json") { "properti": { "type": "Skalar", "properti": { "inputs": [ { "dataType": "record" } ], "output": { "dataType": "bigint" }, "binding": { "type": "Microsoft.MachineLearningServices", "properties": { "endpoint": "http://xxxxxxxxxxxxxxxxxxx.eastus.azurecontainer.io/score", "input": [ { "name": "data", "dataType": "object", "mapTo": 0 } ], "outputs": [ { "name": "output", "dataType": "int64", "mapTo": 0 } ], "batchSize": 10000, "numberOfParallelRequests": 1 } } }
 
 ## PARAMETERS
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

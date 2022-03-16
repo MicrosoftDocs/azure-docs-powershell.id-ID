@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountBatchConfiguration.md
-ms.openlocfilehash: 14edd6bf23eda89dbf799cc7d42fbdfe2afeb54f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f44529bfafcd67b9d4d353551845e72205460747
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264924"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957371"
 ---
 # New-AzIntegrationAccountBatchConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi kumpulan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountbatchconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Tags       :
 
 ```
 
-Membuat konfigurasi kumpulan baru menggunakan file lokal yang berada di jalur file yang dimuat dalam "$batchConfigurationFilePath".
+Membuat konfigurasi kumpulan baru menggunakan file lokal yang berada di jalur file yang terdapat dalam "$batchConfigurationFilePath".
 
 ### Contoh 2: Buat konfigurasi kumpulan baru menggunakan string JSON
 ```powershell
@@ -118,7 +121,7 @@ Tags       :
 
 ```
 
-Membuat konfigurasi kumpulan baru menggunakan string JSON yang terdapat dalam "$batchConfigurationContent".
+Membuat konfigurasi kumpulan baru menggunakan string JSON yang dimuat dalam "$batchConfigurationContent".
 
 ### Contoh 3: Buat konfigurasi kumpulan baru menggunakan parameter
 ```powershell

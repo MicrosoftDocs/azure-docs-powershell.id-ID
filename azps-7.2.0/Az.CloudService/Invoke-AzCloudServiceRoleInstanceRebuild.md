@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/inv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceRebuild.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Invoke-AzCloudServiceRoleInstanceRebuild.md
-ms.openlocfilehash: 2c8cc2480bf0359a8c2611b2910775a32cf9c369
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ba71c5f1fc5dbeb8e4162edc0860c7040d258ce5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284796"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139928150"
 ---
 # Invoke-AzCloudServiceRoleInstanceRebuild
 
 ## SYNOPSIS
 Operasi asinkron Kejadian Peran Menyusun Ulang menginstal ulang sistem operasi pada contoh peran web atau peran pekerja dan memulai sumber daya penyimpanan yang digunakan oleh peran web atau pekerja.
 Jika Anda tidak ingin memulai sumber daya penyimpanan, Anda bisa menggunakan Contoh Peran Mengganti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/invoke-azcloudserviceroleinstancerebuild) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Jika Anda tidak ingin memulai sumber daya penyimpanan, Anda bisa menggunakan Con
 PS C:\> Invoke-AzCloudServiceRoleInstanceRebuild -ResourceGroupName "ContosOrg" -CloudServiceName "ContosoCS" -RoleInstanceName "ContosoFrontEnd_IN_0"
 ```
 
-Perintah ini mengulangi contoh peran yang bernama ContosoFrontEnd_IN_0 awan bernama ContosoCS yang dimiliki oleh grup sumber daya yang bernama ContosOrg.
+Perintah ini mengulangi contoh peran yang ContosoFrontEnd_IN_0 dari layanan awan bernama ContosoCS yang dimiliki oleh grup sumber daya yang bernama ContosOrg.
 
 ## PARAMETERS
 

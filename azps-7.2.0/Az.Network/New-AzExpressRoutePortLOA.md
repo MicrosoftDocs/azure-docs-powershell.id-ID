@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRoutePortLOA.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRoutePortLOA.md
-ms.openlocfilehash: 007f04b6614f80911c3da94e94e65c9c30fd9ef3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1cfd910051eecfa6333d1395848f86007679e2bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303643"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118501"
 ---
 # New-AzExpressRoutePortLOA
 
 ## SYNOPSIS
 Unduh surat otorisasi dokumen untuk port rute ekspres.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azexpressrouteportloa) untuk informasi terkini.
 
 ## SYNTAX
 

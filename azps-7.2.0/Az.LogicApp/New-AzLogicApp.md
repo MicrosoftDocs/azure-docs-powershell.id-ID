@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzLogicApp.md
-ms.openlocfilehash: 325972a16b5054e68d0ca151cdd581e7a4dd06d8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1c06d3173ded03767ccf7eb8f354cb5a7201e4af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957335"
 ---
 # New-AzLogicApp
 
 ## SYNOPSIS
 Membuat aplikasi logika dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azlogicapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -127,7 +130,7 @@ PlanId                       : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a
 Version                      : 08587489107859952120
 ```
 
-Perintah ini mendapatkan grup sumber daya yang bernama ResourceGroup11 dengan Get-AzResourceGroup cmdlet.
+Perintah ini mendapatkan grup sumber daya bernama ResourceGroup11 menggunakan cmdlet Get-AzResourceGroup cmdlet.
 Perintah itu meneruskan grup sumber daya itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Cmdlet saat ini membuat aplikasi logika dalam grup sumber daya tersebut.
 Aplikasi logika menyertakan definisi dan parameter yang ditentukan oleh jalur file.
@@ -157,7 +160,7 @@ PlanId                       : /subscriptions/57b7034d-72d4-433d-ace2-a7460aed6a
 Version                      : 08587489107859952120
 ```
 
-Perintah pertama mendapatkan aplikasi logika bernama LogicApp03 menggunakan cmdlet Get-AzLogicApp baru.
+Perintah pertama mendapatkan aplikasi logika bernama LogicApp03 menggunakan cmdlet Get-AzLogicApp.
 Perintah menyimpan aplikasi logika dalam $Workflow logika.
 Perintah kedua membuat aplikasi logika baru yang menggunakan definisi dan parameter aplikasi logika yang disimpan di $Workflow.
 

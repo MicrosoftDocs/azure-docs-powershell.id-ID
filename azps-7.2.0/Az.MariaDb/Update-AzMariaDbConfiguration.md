@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbConfiguration.md
-ms.openlocfilehash: edb26d486c9dcfaa00463cfbae8c95681aa2fabd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9c4488821e501728c24e65b6666f7287be56a420
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165815"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956345"
 ---
 # Update-AzMariaDbConfiguration
 
 ## SYNOPSIS
 Memperbarui konfigurasi server.
 Gunakan Update-AzMariaDbServer jika Anda ingin memperbarui AdministratorLoginPassword, sku, dll.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/update-azmariadbconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Update-AzDataLakeAnalyticsComputePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Update-AzDataLakeAnalyticsComputePolicy.md
-ms.openlocfilehash: 8d86dbbec19ddae2d88b3bd9000989ef8ce74aa0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e873fab814c4119d4f7b84d10294769dbddfd612
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262795"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925935"
 ---
 # Update-AzDataLakeAnalyticsComputePolicy
 
 ## SYNOPSIS
 Memperbarui aturan kebijakan perhitungan Analitik Danau Data untuk entitas AAD tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/update-azdatalakeanalyticscomputepolicy) untuk informasi terkini.
 
 ## SYNTAX
 

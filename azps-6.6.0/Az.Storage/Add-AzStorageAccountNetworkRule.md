@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/add-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountNetworkRule.md
-ms.openlocfilehash: 5f971d17061eaa39f16f16c3fc97e3a7d9161151
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a7ee91e74071b254b9b8280f7bb8568f7f3be128
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354950"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139966731"
 ---
 # Add-AzStorageAccountNetworkRule
 
 ## SYNOPSIS
  Menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule dari akun Storage
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/add-azstorageaccountnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceAccessRule
-Storage Account NetworkRule ResourceAccessRules.
+Storage Akun NetworkRule ResourceAccessRules.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSResourceAccessRule[]
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

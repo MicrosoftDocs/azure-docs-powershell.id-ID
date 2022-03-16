@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesAccount.md
-ms.openlocfilehash: 98c0a7bf426b3f08af27489fc21e57aedf70eb11
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 43c65052f3a7ef3a1c86c79e0a27bb6d0e0b3c2f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256555"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120031"
 ---
 # New-AzNetAppFilesAccount
 
 ## SYNOPSIS
 Membuat akun Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesaccount) untuk informasi terkini.
 
 ## SYNTAX
 

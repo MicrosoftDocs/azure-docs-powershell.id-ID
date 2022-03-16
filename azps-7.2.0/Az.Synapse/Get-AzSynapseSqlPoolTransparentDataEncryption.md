@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolTransparentDataEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolTransparentDataEncryption.md
-ms.openlocfilehash: 267dd7b063ff43d2e271c1d36833100d02d51496
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 420d1f145647e5728e50179233456281bf3a7bfd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298156"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947563"
 ---
 # Get-AzSynapseSqlPoolTransparentDataEncryption
 
 ## SYNOPSIS
-Dapatkan status TDE untuk suatu SQL tde.
+Dapatkan status TDE untuk sebuah SQL tde.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpooltransparentdataencryption) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzSynapseSqlPoolTransparentDataEncryption -ResourceId <String> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPoolTransparentDataEncryption** mendapatkan status Enkripsi Data Transparan (TDE) untuk pusat SQL Azure Synapse.
+Cmdlet **Get-AzSynapseSqlPoolTransparentDataEncryption** mendapatkan status Enkripsi Data Transparan (TDE) untuk azure Synapse Analytics SQL pool.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

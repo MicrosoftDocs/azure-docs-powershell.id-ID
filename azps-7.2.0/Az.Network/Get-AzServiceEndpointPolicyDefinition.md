@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzServiceEndpointPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzServiceEndpointPolicyDefinition.md
-ms.openlocfilehash: 12acaf7022509fa5f08f843347e3c32b2e8da6da
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: de75a5b4eb2ac2b16c0306afd13f4b82a0942f58
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316796"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954995"
 ---
 # Get-AzServiceEndpointPolicyDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi kebijakan titik akhir layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azserviceendpointpolicydefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet **Get-AzServiceEndpointPolicyDefinition** mendapatkan definisi kebijakan 
 $policydef= Get-AzServiceEndpointPolicyDefinition -Name "ServiceEndpointPolicyDefinition1" -ServiceEndpointPolicy $Policy
 ```
 
-Perintah ini mendapatkan definisi kebijakan titik akhir layanan bernama ServiceEndpointPolicyDefinition1 dalam ServiceEndpointPolicy $Policy menyimpannya dalam $policydef layanan.
+Perintah ini mendapatkan definisi kebijakan titik akhir layanan bernama ServiceEndpointPolicyDefinition1 dalam layananEndpointPolicy $Policy menyimpannya dalam $policydef akhir.
 
 ## PARAMETERS
 

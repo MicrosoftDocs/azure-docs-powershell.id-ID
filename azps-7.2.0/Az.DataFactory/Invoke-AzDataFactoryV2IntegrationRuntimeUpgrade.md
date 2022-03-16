@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2IntegrationRuntimeUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Invoke-AzDataFactoryV2IntegrationRuntimeUpgrade.md
-ms.openlocfilehash: 00cc8e6680b4f09ea49934d353c2ef89d9c7a691
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a1eb81186aec46b9b8224a60af78ba7fc06aaa75
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274124"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926169"
 ---
 # Invoke-AzDataFactoryV2IntegrationRuntimeUpgrade
 
 ## SYNOPSIS
 Memutakhirkan runtime integrasi yang dihosting sendiri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/invoke-azdatafactoryv2integrationruntimeupgrade) untuk informasi terkini.
 
 ## SYNTAX
 
