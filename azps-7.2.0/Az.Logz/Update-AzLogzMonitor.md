@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzMonitor.md
-ms.openlocfilehash: 30c525b52dac31d2812065f4095f80c9b7b93cd7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f39715f6eda34f63fd0547fbc8c3ad2f91614bb0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263820"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234601"
 ---
 # Update-AzLogzMonitor
 
 ## SYNOPSIS
 Memperbarui sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/update-azlogzmonitor) untuk informasi terkini.
 
 ## SYNTAX
 

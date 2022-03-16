@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
-ms.openlocfilehash: 00354550560daef8d0f1dd937d21a33c3e470404
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 311517cd32fb07d78f0cfe848abe2c77626eda22
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263835"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234755"
 ---
 # Invoke-AzLogzHostMonitor
 
 ## SYNOPSIS
-Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io pada VM.
+Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io agen pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/invoke-azlogzhostmonitor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Invoke-AzLogzHostMonitor -InputObject <ILogzIdentity> [-DefaultProfile <PSObject
 ```
 
 ## DESCRIPTION
-Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io pada VM.
+Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io agen pada VM.
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io pada VM
+### Contoh 1: Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM
 ```powershell
 PS C:\> Invoke-AzLogzHostMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04
 
@@ -47,7 +50,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 
 Perintah ini mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io pada VM.
 
-### Contoh 2: Mengembalikan muatan yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM dengan pipeline
+### Contoh 2: Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM dengan pipeline
 ```powershell
 PS C:\> Get-AzLogzMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Invoke-AzLogzHostMonitor
 

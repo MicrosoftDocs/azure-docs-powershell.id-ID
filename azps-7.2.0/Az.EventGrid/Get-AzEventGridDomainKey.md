@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Get-AzEventGridDomainKey.md
-ms.openlocfilehash: 5de6412c6539416b07d1130bd08340574c07b3ff
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5943db1a9e686c49fd72f8c4b4dc3a244d5345bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089397"
 ---
 # Get-AzEventGridDomainKey
 
 ## SYNOPSIS
 Mendapatkan kunci akses bersama yang digunakan untuk menerbitkan acara ke domain Kisi Acara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/get-azeventgriddomainkey) untuk informasi terkini.
 
 ## SYNTAX
 

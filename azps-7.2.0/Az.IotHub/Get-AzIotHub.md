@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHub.md
-ms.openlocfilehash: debf3006b530db585c7acc33fdf26fdfc6c81863
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3330090cd8743b87770cc591e0d53a66bcef7524
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293292"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088515"
 ---
 # Get-AzIotHub
 
 ## SYNOPSIS
 Mendapatkan informasi tentang IotHubs dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothub) untuk informasi terkini.
 
 ## SYNTAX
 

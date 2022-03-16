@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountBatchConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountBatchConfiguration.md
-ms.openlocfilehash: 43e9dbf69752f5b0b375045cbcdee70533199279
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2c26290fb7a9026fc3405bff0822c8059d48e46d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087687"
 ---
 # Remove-AzIntegrationAccountBatchConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi kumpulan akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountbatchconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostSubAccount.md
-ms.openlocfilehash: 19a9ae3a4ab80ed4bcb4497088c888599f7e748d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f6e8e15e7d65a5a299d22a8ee979e93b8bb28aa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234773"
 ---
 # Invoke-AzLogzHostSubAccount
 
 ## SYNOPSIS
 Mengembalikan payload yang perlu disampaikan sebagai permintaan untuk penginstalan agen Logz.io pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/invoke-azlogzhostsubaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Mengembalikan payload yang perlu disampaikan sebagai permintaan untuk penginstal
 
 ## EXAMPLES
 
-### Contoh 1: Mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io pada VM
+### Contoh 1: Mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM
 ```powershell
 PS C:\> Invoke-AzLogzHostSubAccount -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01
 
@@ -45,7 +48,7 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io pada VM.
+Perintah ini mengembalikan muatan akun sub logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io pada VM.
 
 ### Contoh 2: Mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io dalam VM dengan pipeline
 ```powershell
@@ -56,7 +59,7 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io dalam VM dengan saluran.
+Perintah ini mengembalikan muatan akun sub logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io dalam VM dengan saluran.
 
 ## PARAMETERS
 

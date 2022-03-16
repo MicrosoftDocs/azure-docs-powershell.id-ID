@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
-ms.openlocfilehash: 84771450bd7c7bbf3840e11a30adc2aaec335197
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 48d2f91e767ce10c49f467272be18bffb9202990
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089325"
 ---
 # New-AzEventGridTopic
 
 ## SYNOPSIS
 Membuat Topik Kisi Acara Azure yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgridtopic) untuk informasi terkini.
 
 ## SYNTAX
 

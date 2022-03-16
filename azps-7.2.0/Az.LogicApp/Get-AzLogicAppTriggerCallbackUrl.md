@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerCallbackUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerCallbackUrl.md
-ms.openlocfilehash: e766c00762aec7fefb7d07834033828aecd960e4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cb5de9e6d293478cc8f8c43195f6fe58c8d17590
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317947"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140235025"
 ---
 # Get-AzLogicAppTriggerCallbackUrl
 
 ## SYNOPSIS
 Mendapatkan URL pemicu Aplikasi Logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azlogicapptriggercallbackurl) untuk informasi terkini.
 
 ## SYNTAX
 

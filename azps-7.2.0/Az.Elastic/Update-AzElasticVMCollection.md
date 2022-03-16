@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Update-AzElasticVMCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Update-AzElasticVMCollection.md
-ms.openlocfilehash: 3cfe1d4947abcfc364167a911aebab2b1993ae3f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ef4ef712dd37b8c933706a5491e559543bf721cc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166568"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089415"
 ---
 # Update-AzElasticVMCollection
 
 ## SYNOPSIS
 Perbarui detail vm yang akan dipantau oleh sumber daya monitor Elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/update-azelasticvmcollection) untuk informasi terkini.
 
 ## SYNTAX
 

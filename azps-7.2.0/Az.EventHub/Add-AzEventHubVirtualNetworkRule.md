@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/add-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Add-AzEventHubVirtualNetworkRule.md
-ms.openlocfilehash: 0845d9ceb217b0f074bf3b6f05bc42ac189d2f50
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e55c05bb0f135a28efbd953602e77bb8f425e749
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089199"
 ---
 # Add-AzEventHubVirtualNetworkRule
 
 ## SYNOPSIS
 Menambahkan satu VirtualNetworkRule ke NetworkRuleSet untuk Ruang Nama yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/add-azeventhubvirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ PS C:\> Add-AzEventHubVirtualNetworkRule -ResourceGroupName v-ajnavtest -Namespa
 
 Nama: default DefaultAction : Perbolehkan Id : /subscriptions/SubscriptionId/resourceGroups/RSG-TestAzEventhub/providers/Microsoft.Eventhub/namespaces/Eventhub-Namespace-1122/networkRuleSets/default Type : Microsoft.Eventhub/Namespaces/NetworkRuleSet IpRules : VirtualNetworkRules : {/subscriptions/SubscriptionId/resourcegroups/v-ajnavtest/providers/Microsoft.Network/virtualNetworks/sbehvoidst1/subnets/default, False}
 
-Menambahkan nama $virtualruleset 1 ke NetworkRuleSet untuk Ruang Nama tertentu
+Menambahkan nama $virtualruleset 1 ke NetworkRuleSet untuk Kumpulan Nama
 
 ## PARAMETERS
 

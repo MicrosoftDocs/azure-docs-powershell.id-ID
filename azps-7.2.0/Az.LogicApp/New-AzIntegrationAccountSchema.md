@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountSchema.md
-ms.openlocfilehash: af5847eb7112ba281f012368f2f8a4ec57cf7291
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 47fa8f0c573be43fab0a66687009aa24634fb4f0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168590"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234935"
 ---
 # New-AzIntegrationAccountSchema
 
 ## SYNOPSIS
 Membuat skema akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountschema) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Get-AzImportExport.md
-ms.openlocfilehash: 30cf91b9f286e7bb60a4a4129248d29a1b19ee46
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 781bacd6854b282c9c07a54fe313507d259f7811
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275099"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088569"
 ---
 # Get-AzImportExport
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pekerjaan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/get-azimportexport) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccountTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzSubAccountTagRule.md
-ms.openlocfilehash: f6b9825c1c095496e16eb754b159973aaccbb32b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 95e254f3dd792c6394e969b54ea4317fbbef5f6d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305739"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234827"
 ---
 # Get-AzLogzSubAccountTagRule
 
 ## SYNOPSIS
 Mendapatkan kumpulan aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/get-azlogzsubaccounttagrule) untuk informasi terkini.
 
 ## SYNTAX
 

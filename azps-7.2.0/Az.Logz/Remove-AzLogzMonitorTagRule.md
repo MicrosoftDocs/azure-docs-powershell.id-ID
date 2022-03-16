@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/remove-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzMonitorTagRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Remove-AzLogzMonitorTagRule.md
-ms.openlocfilehash: 4d07d9593d19a70f42845df4150c977b4380f33e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d4f6f4013f9732a2ddcb3b3072185c8133536bd7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234565"
 ---
 # Remove-AzLogzMonitorTagRule
 
 ## SYNOPSIS
 Menghapus kumpulan aturan tag untuk sumber daya monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/remove-azlogzmonitortagrule) untuk informasi terkini.
 
 ## SYNTAX
 

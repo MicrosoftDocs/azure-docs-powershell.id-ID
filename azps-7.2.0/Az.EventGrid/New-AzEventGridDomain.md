@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomain.md
-ms.openlocfilehash: 8f54208918872921ba25020b358407ff423deb70
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: aec7aa2cf559dfbe678c6cd72153e07659dc156f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303916"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089361"
 ---
 # New-AzEventGridDomain
 
 ## SYNOPSIS
 Membuat Domain Kisi Acara Azure yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomain) untuk informasi terkini.
 
 ## SYNTAX
 

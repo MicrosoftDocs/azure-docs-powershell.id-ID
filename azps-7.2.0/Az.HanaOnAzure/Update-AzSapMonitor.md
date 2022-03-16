@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Update-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Update-AzSapMonitor.md
-ms.openlocfilehash: 1669285747c29c5b4103f515fbd4c59ac4624ad6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 20292520f8fc86d73dbd4f91142c6e919fd63544
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088659"
 ---
 # Update-AzSapMonitor
 
 ## SYNOPSIS
 Patch bidang Tag monitor SAP untuk langganan, grup sumber daya, dan nama monitor yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hanaonazure/update-azsapmonitor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
