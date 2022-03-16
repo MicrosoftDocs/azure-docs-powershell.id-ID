@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzDataLakeGen2Item.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzDataLakeGen2Item.md
-ms.openlocfilehash: 3f8fddf133a4763c623f3f3b73d6ceee1d26b7cb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fa311b0716631164855488d561b55860d3095a49
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310763"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140290237"
 ---
 # Update-AzDataLakeGen2Item
 
 ## SYNOPSIS
 Memperbarui file atau direktori pada properti, metadata, izin, ACL, dan pemilik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azdatalakegen2item) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Update-AzDataLakeGen2Item -InputObject <AzureDataLakeGen2Item> [-Permission <Str
 
 ## DESCRIPTION
 Cmdlet **Update-AzDataLakeGen2Item** memperbarui file atau direktori di properti, metadata, izin, ACL, dan pemilik.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage baru. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 

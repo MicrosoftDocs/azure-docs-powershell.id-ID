@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: 9f9f58c38462f274a031028164b4298bcaaf8a77
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5949dc0daf7b46138ca3c6b19993c19ee36f7c38
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163045"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295637"
 ---
 # Add-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP front-end ke penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azloadbalancerfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ PS C:\> $PublicIp = Get-AzPublicIpAddress -ResourceGroupName "myRG" -Name "MyPub
 PS C:\> Get-AzLoadBalancer -Name "MyLB" -ResourceGroupName "NrpTest" | Add-AzLoadBalancerFrontendIpConfig -Name "FrontendName" -PublicIpAddress $PublicIp | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan alamat IP publik Azure bernama MyPub dan menyimpan hasilnya di variabel yang bernama $PublicIp.
+Perintah pertama mendapatkan alamat IP publik Azure yang bernama MyPub dan menyimpan hasilnya di variabel yang bernama $PublicIp.
 Perintah kedua mendapatkan penyeimbang muat bernama MyLB dan menyampaikan hasilnya ke cmdlet **Add-AzLoadBalancerFrontendIpConfig** yang menambahkan konfigurasi IP ujung-depan ke penyeimbang muat dengan alamat IP publik yang disimpan di variabel yang bernama $PublicIp.
 
 ### Contoh 4 Menambahkan konfigurasi IP ujung-depan dengan prefiks IP publik

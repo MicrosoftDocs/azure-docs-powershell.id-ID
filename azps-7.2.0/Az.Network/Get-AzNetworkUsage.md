@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkUsage.md
-ms.openlocfilehash: f328eec2aa36b8e69f697253c8d67f3b6862cf69
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7d5ffcdd86fc18e36bf90deb77d11b5836d1f0b9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167918"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295349"
 ---
 # Get-AzNetworkUsage
 
 ## SYNOPSIS
 Mencantumkan penggunaan jaringan untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkusage) untuk informasi terkini.
 
 ## SYNTAX
 

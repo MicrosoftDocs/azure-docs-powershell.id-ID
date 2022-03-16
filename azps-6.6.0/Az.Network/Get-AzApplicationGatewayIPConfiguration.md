@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIPConfiguration.md
-ms.openlocfilehash: 642f5c03e3a9ad0e52e48d06cc96146405af14b9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 329e01161c41f56b41a5bc1e9190d191e14ee9a6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342713"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140331809"
 ---
 # Get-AzApplicationGatewayIPConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi IP gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayipconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $GatewaySubnet = Get-AzApplicationGatewayIPConfiguration -Name "GatewaySubnet01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $AppGw baru. Perintah kedua mendapatkan konfigurasi IP bernama GateSubnet01 dari gateway yang disimpan di $AppGw.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel. Perintah kedua mendapatkan konfigurasi IP bernama GateSubnet01 dari gateway yang disimpan di $AppGw.
 
 ### Contoh 2: Mendapatkan daftar konfigurasi IP
 ```
@@ -45,7 +48,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $GatewaySubnets = Get-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $AppGw baru. Perintah kedua mendapatkan daftar semua konfigurasi IP.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel. Perintah kedua mendapatkan daftar semua konfigurasi IP.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzRoleAssignment.md
-ms.openlocfilehash: d5e707687101ed0c94eff2d1a3c434cacf6a6297
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3e4a4ce39eea17de32fd7d10f9d227dc5bab6f08
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284012"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140293711"
 ---
 # Set-AzRoleAssignment
 
@@ -24,6 +24,9 @@ Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter inpu
 - GET /groups/{id}
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 

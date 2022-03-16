@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceMetricsProperty.md
-ms.openlocfilehash: 0850661f8aa125ca8921c9621c74d310dcafb458
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6d019da032bd3995ad986b0ff0beaf70fe60afe3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253019"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140315717"
 ---
 # Set-AzStorageServiceMetricsProperty
 
 ## SYNOPSIS
 Mengubah properti metrik untuk layanan Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageservicemetricsproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzStorageServiceMetricsProperty [-ServiceType] <StorageServiceType> [-Metric
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageServiceMetricsProperty** mengubah properti metrik untuk layanan Azure Storage.
+Cmdlet **Set-AzStorageServiceMetricsProperty** memodifikasi properti metrik untuk layanan Azure Storage.
 
 ## EXAMPLES
 

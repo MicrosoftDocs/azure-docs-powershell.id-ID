@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobStep.md
-ms.openlocfilehash: 74cb87c91ac9afe385999e254f0792c1bb34fe80
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dae32c9a2a260b8ef1476ce6726229ad6e201e2c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304316"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318579"
 ---
 # Add-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Menambahkan langkah pekerjaan ke pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlelasticjobstep) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -109,7 +112,7 @@ Add-AzSqlElasticJobStep [-ParentResourceId] <String> -TargetGroupName <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzSqlElasticJobStep cmdlet menambahkan langkah pekerjaan ke pekerjaan
+Cmdlet Add-AzSqlElasticJobStep menambahkan langkah pekerjaan ke pekerjaan
 
 ## EXAMPLES
 

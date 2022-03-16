@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 7fbac45523ae83d8282f3c8c10d4adb33e0f63d6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 782f3a9a2bc7cf8a33e6fc8b0abbe4327149722b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294989"
 ---
 # New-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi link privat untuk gateway aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprivatelinkconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Satu konfigurasi link privat paling ujungnya bisa dikaitkan ke satu frontend ip 
 PS C:\> $PrivateLinkConfiguration = New-AzApplicationGatewayPrivateLinkConfiguration -Name "privateLinkConfig01" -IpConfiguration $privateLinkIpConfiguration1
 ```
 
-Perintah ini akan membuat konfigurasi PrivateLink bernama 'privateLinkConfig01' dan menyimpan hasilnya dalam variabel yang bernama $PrivateLinkConfiguration.
+Perintah ini akan membuat konfigurasi PrivateLink bernama 'privateLinkConfig01' dan menyimpan hasilnya di variabel yang bernama $PrivateLinkConfiguration.
 
 ### Contoh 2: Buat Konfigurasi Tautan Privat dengan beberapa Konfigurasi Ip
 ```powershell

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementOperation.md
-ms.openlocfilehash: 941a1f76780a9b816468b216a657f88e773e7c72
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ae289db3f5ee82aa6ceceb52c5e82baa673b717b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337616"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140259631"
 ---
 # Remove-AzApiManagementOperation
 
 ## SYNOPSIS
 Menghapus operasi yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True berhasil jika berhasil, atau nilai nilai $False, jika tidak.
+Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True berhasil, atau nilai nilai yang $False, jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

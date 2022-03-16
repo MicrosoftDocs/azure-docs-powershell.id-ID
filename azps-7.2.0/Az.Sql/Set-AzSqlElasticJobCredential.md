@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobCredential.md
-ms.openlocfilehash: 0c989c817b2b0ed0f9d2ea2d2af25787668e889c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 418488af72e0ffa6bd95a3f524df9a3cb39bed1d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168358"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261893"
 ---
 # Set-AzSqlElasticJobCredential
 
 ## SYNOPSIS
 Memperbarui kredensial pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticjobcredential) untuk informasi terkini.
 
 ## SYNTAX
 

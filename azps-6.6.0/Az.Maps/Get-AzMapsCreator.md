@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsCreator.md
-ms.openlocfilehash: f014741b21a15b9e8df6b3361d61bb141961298c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e7007388eff74f496e36f836a67563b8664734d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387461"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140309227"
 ---
 # Get-AzMapsCreator
 
 ## SYNOPSIS
 Dapatkan sumber daya Peta Creator.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/get-azmapscreator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Dapatkan sumber daya Peta Creator.
 
 ## EXAMPLES
 
-### Contoh 1: List all Peta Creator resources under a Peta Account
+### Contoh 1:  List all Peta Creator resources under a Peta Account
 ```powershell
 PS C:\> Get-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01
 
@@ -50,7 +53,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mencantumkan Peta Creator di bawah Peta Anda.
+Perintah ini mencantumkan Peta creator di bawah Peta Anda.
 
 ### Contoh 2: Dapatkan sumber Peta Creator
 ```powershell
@@ -61,7 +64,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini mendapatkan sumber daya Peta Creator.
+Perintah ini akan mendapatkan sumber Peta Creator.
 
 ### Contoh 3: Get a Peta Creator resource by pipeline
 ```powershell
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -187,9 +190,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity> : Parameter Identitas
-  - `[AccountName <String>]`: Nama Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+INPUTOBJECT <IMapsIdentity>: Parameter Identitas
+  - `[AccountName <String>]`: Nama akun Peta Anda.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

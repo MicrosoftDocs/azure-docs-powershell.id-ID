@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlElasticJobTarget.md
-ms.openlocfilehash: 0f821437e2d9c9fea7d6b4a5fb497b280f78e6e1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ed1a413a37c1a136e2908ec8986f43458469668
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318561"
 ---
 # Add-AzSqlElasticJobTarget
 
 ## SYNOPSIS
 Menambahkan target ke grup target
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlelasticjobtarget) untuk informasi terkini.
 
 ## SYNTAX
 

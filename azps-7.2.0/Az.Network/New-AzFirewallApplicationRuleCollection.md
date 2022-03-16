@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRuleCollection.md
-ms.openlocfilehash: 551cee0e4494cfd42847c2dc030841ad203d48d4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ef3136b92e8e1ff77a48c0bd55fc8a0f30d8e31
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306699"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140320019"
 ---
 # New-AzFirewallApplicationRuleCollection
 
 ## SYNOPSIS
 Membuat kumpulan aturan aplikasi Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallapplicationrulecollection) untuk informasi terkini.
 
 ## SYNTAX
 

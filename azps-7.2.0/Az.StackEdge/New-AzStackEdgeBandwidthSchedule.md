@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeBandwidthSchedule.md
-ms.openlocfilehash: 3316353bc645c63641f575f3dbf4440c4c017e06
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 260f4a28f03f2a042a34f431c08a718fdc2b4a15
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293835"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316851"
 ---
 # New-AzStackEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Membuat jadwal Bandwidth baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/new-azstackedgebandwidthschedule) untuk informasi terkini.
 
 ## SYNTAX
 

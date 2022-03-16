@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricManagedNodeType.md
-ms.openlocfilehash: 7bc1f1c516ec6d75df691a688e35b5d3bc5cc2e6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6a2077267c69ace61e8027c82a6aea9c2f73228b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374441"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140304097"
 ---
 # New-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
 Buat sumber daya tipe node baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricmanagednodetype) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskType
-Tipe disk data yang dikelola. IOPS dan throughput diberikan oleh ukuran disk, untuk melihat informasi selengkapnya, masuk ke https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types . Pengaturan StandardSSD_LRS
+Tipe disk data yang dikelola. IOPS dan throughput diberikan oleh ukuran disk, untuk melihat informasi selengkapnya, masuk ke https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types. Pengaturan StandardSSD_LRS
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceFabric.Models.PSDiskType
@@ -467,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: 395948d854699f8b96bf0c37d538cec94db6ca82
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b6abb73645045861ca18d73bf9d133781f01ad65
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337591"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140259595"
 ---
 # Set-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Mengubah server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementauthorizationserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Set-AzApiManagementAuthorizationServer -AccessTokenSendingMethods AuthorizationH
 
 ### -AccessTokenSendingMethods
 Menentukan array metode untuk mengirim token akses.
-psdx_paramvalues KepalaOtorisasi dan Kueri.
+psdx_paramvalues KepalaOtor dan Kueri.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessTokenSendingMethod[]
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 
 ### -ResourceOwnerPassword
 Menentukan kata sandi pemilik sumber daya.
-Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes.*
+Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes* .
 
 ```yaml
 Type: System.String
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 
 ### -ResourceOwnerUsername
 Menentukan nama pengguna pemilik sumber daya.
-Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes.*
+Anda harus menentukan parameter ini jika ResourceOwnerPassword ditentukan oleh parameter *GrantTypes* .
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportState
-Menunjukkan apakah akan mendukung parameter *State.*
+Menunjukkan apakah akan mendukung parameter *State* .
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -372,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

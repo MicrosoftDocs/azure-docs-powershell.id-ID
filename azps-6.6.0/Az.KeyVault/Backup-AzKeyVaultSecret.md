@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultSecret.md
-ms.openlocfilehash: affb094b8d8a06beaf9abee3d97e87e3abbae41a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b63031b5d39838072654b3b69d2c9562f5f98431
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136336328"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140310055"
 ---
 # Backup-AzKeyVaultSecret
 
 ## SYNOPSIS
 Mencadangkan rahasia di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultsecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Karena dienkripsi, konten yang diunduh tidak dapat digunakan di luar Azure Key V
 Anda dapat memulihkan rahasia cadangan ke penyimpanan kunci apa pun di langganan tempat penyimpanan tersebut dicadangkan.
 Alasan umum untuk menggunakan cmdlet ini adalah:
 - Anda ingin escrow salinan rahasia Anda, sehingga Anda memiliki salinan offline kalau-kalau Anda secara tidak sengaja menghapus rahasia Anda di key vault.
-- Anda menambahkan rahasia ke kunci vault dan sekarang ingin kloning rahasia ke wilayah Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang anda distribusikan. Gunakan cmdlet Backup-AzKeyVaultSecret untuk rahasia dalam format terenkripsi lalu gunakan cmdlet Restore-AzKeyVaultSecret dan tentukan kunci vault di kawasan kedua. (Perhatikan bahwa kawasan tersebut harus termasuk dalam geografi yang sama.)
+- Anda menambahkan rahasia ke kunci vault dan sekarang ingin kloning rahasia ke wilayah Azure yang berbeda, sehingga Anda dapat menggunakannya dari semua contoh aplikasi yang anda distribusikan. Gunakan cmdlet Backup-AzKeyVaultSecret untuk rahasia dalam format terenkripsi, lalu gunakan cmdlet Restore-AzKeyVaultSecret dan tentukan kunci vault di kawasan kedua. (Perhatikan bahwa kawasan tersebut harus termasuk dalam geografi yang sama.)
 
 ## EXAMPLES
 
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

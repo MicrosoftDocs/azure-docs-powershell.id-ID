@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
-ms.openlocfilehash: 5f66b60715e4433a696be969165343301ba34615
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 83feba2f6508a1e1d0ffa9c6d80fe04e52a1ebca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281771"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140319605"
 ---
 # Remove-AzResource
 
 ## SYNOPSIS
 Menghapus sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azresource) untuk informasi terkini.
 
 ## SYNTAX
 

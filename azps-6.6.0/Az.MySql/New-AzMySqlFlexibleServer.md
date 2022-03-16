@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServer.md
-ms.openlocfilehash: b9c4576e48088c5a18eceb1986a5fc0353985340
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0466d1d7e738d5868fc05ba3a017a75b8b6a9ac1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136348869"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140308309"
 ---
 # New-AzMySqlFlexibleServer
 
 ## SYNOPSIS
 Membuat server fleksibel MySQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/new-azmysqlflexibleserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Cmdlet ini membuat server fleksibel MySql dengan nilai parameter default dan men
 Nilai default lokasi adalah West US 2, Sku adalah Standard_B1ms, Sku tier adalah Rentetan, dan ukuran penyimpanan adalah 10GiB.
 
 
-Jika Anda ingin menemukan kata sandi yang dibuat secara otomatis untuk server, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
+Jika Anda ingin menemukan kata sandi yang dibuat secara otomatis untuk server Anda, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
 
 (Misalnya $server. SecuredPassword | ConvertFrom-SecureString -AsPlainText)
 
@@ -612,7 +615,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

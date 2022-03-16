@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Set-AzStackEdgeShare.md
-ms.openlocfilehash: 64747011ae5d629a0786128339ff0e21941817d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9672200a465239e4288f793b1f14fc04586c633c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275675"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140290939"
 ---
 # Set-AzStackEdgeShare
 
 ## SYNOPSIS
 Memperbarui berbagi untuk perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/set-azstackedgeshare) untuk informasi terkini.
 
 ## SYNTAX
 

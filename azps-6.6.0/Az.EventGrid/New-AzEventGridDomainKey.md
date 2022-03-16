@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainKey.md
-ms.openlocfilehash: 981fc1bc7c8e8f3b0b378eb34f75deea1d38d195
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7cc6bf8ae637c9e7b804e0e2ca2fdae0a2245c16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387727"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140255347"
 ---
 # New-AzEventGridDomainKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses bersama untuk Domain Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomainkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Meregenerasi kunci akses bersama untuk Domain Kisi Acara Azure.
 
 ### Contoh 1
 
-Meregenerasi kunci yang terkait dengan \' kunci1'\ dari domain Kisi Acara \` Domain1 \` dalam grup sumber daya \` MyResourceGroupName \` .
+Meregenerasi kunci yang terkait dengan kunci1\''\ domain Kisi Acara Domain1\` \`dalam grup sumber daya \`MyResourceGroupName\`.
 
 ```powershell
 PS C:\> New-AzEventGridDomainKey -ResourceGroup MyResourceGroupName -DomainName Domain1 -Name key1
@@ -56,7 +59,7 @@ Key1                                         Key2
 
 ### Contoh 2
 
-Meregenerasi kunci yang terkait dengan \' kunci1'\ dari domain Kisi Acara \` Domain1 \` dalam grup sumber daya \` MyResourceGroupName \` .
+Meregenerasi kunci yang terkait dengan kunci1\''\ domain Kisi Acara Domain1\` \`dalam grup sumber daya \`MyResourceGroupName\`.
 
 ```powershell
 PS C:\> Get-AzEventGridDomain -ResourceGroup MyResourceGroupName -Name Domain1 | New-AzEventGridTopicKey -KeyName "key1"
@@ -68,7 +71,7 @@ Key1                                         Key2
 
 ### Contoh 3
 
-Meregenerasi kunci yang terkait dengan kunci2'\ domain Kisi Acara Domain1 dalam grup sumber daya \' \` \` \` MyResourceGroupName \` menggunakan Id sumber daya penuhnya.
+Meregenerasi kunci yang terkait \'dengan kunci2'\ domain Kisi Acara Domain1 \`\`\` dalam grup sumber daya MyResourceGroupName\` menggunakan Id sumber daya penuhnya.
 
 ```powershell
 PS C:\> New-AzEventGridDomainKey -ResourceId /subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1 -KeyName Key2
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

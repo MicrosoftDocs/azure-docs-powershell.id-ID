@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
-ms.openlocfilehash: 6358ad6af9e5ba4ca145889c03a7433412fa824a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e518225c88c170d591eb31e533e338aa468e1b99
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272172"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140319479"
 ---
 # Set-AzResource
 
 ## SYNOPSIS
 Mengubah sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,8 +70,8 @@ PS C:\> $Resource.Properties.Enabled = "False"
 PS C:\> $Resource | Set-AzResource -Force
 ```
 
-Perintah pertama mendapatkan sumber daya bernama ContosoSite menggunakan cmdlet Get-AzResource, lalu menyimpannya di variabel $Resource jaringan.
-Perintah kedua mengubah properti properti $Resource.
+Perintah pertama mendapatkan sumber daya bernama ContosoSite menggunakan cmdlet Get-AzResource, lalu menyimpannya di $Resource nya.
+Perintah kedua mengubah properti properti dari $Resource.
 Perintah terakhir memperbarui sumber daya agar sesuai dengan $Resource.
 
 ### Contoh 2: Mengubah semua sumber daya dalam grup sumber daya tertentu

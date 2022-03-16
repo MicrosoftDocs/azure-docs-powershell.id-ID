@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusQueue.md
-ms.openlocfilehash: 2742f3cfab8459bc4ea5089113d8b45d6d267562
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 719ae817b4d4cdc806bfbdebeb88d9fd8377a2db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355193"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140304367"
 ---
 # Remove-AzServiceBusQueue
 
 ## SYNOPSIS
 Menghapus antrean dari ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebusqueue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Remove-AzServiceBusQueue** menghapus antrean dari ruang nama Bus Layana
 PS C:\> Remove-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -QueueName SB-Queue_exampl1
 ```
 
-Menghapus Bus Layanan dari ruang `SB-Queue_exampl1` nama `SB-Example1` .
+Menghapus Bus Layanan dari `SB-Queue_exampl1` ruang nama `SB-Example1`.
 
 ### Contoh 2: InputObject - Menggunakan variabel:
 ```powershell
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Id Sumber Daya Antrean
+id sumber daya antrean Bus Layanan baru
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

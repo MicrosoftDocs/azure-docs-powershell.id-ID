@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/Remove-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/Remove-AzUserAssignedIdentity.md
-ms.openlocfilehash: 638d1563ffbd169ce2146b957e3df75775176952
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 78fd3072f9777b60db0e0e6a5672a01163d23a84
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285484"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140297077"
 ---
 # Remove-AzUserAssignedIdentity
 
 ## SYNOPSIS
 Menghapus Identitas yang Ditetapkan Pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedserviceidentity/remove-azuserassignedidentity) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 60b42f9416e2f07c315dd10b3cabdb9bd663105a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 62e1c98f26429b271ed9d425ea5cbb102959cc9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288620"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294305"
 ---
 # New-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkinterfaceipconfig) untuk informasi terkini.
 
 ## SYNTAX
 

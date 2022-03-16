@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Get-AzRedisCache.md
-ms.openlocfilehash: a22ceb8a9d23ae53a9f3ed7873c08525e1c5a345
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a460c6de36e534a99597fbba4a2262a029a21d35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378655"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140278933"
 ---
 # Get-AzRedisCache
 
 ## SYNOPSIS
 Mendapatkan Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/get-azrediscache) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama Cache Redis yang akan dapatkan.
-Gunakan dengan parameter *ResourceGroupName.*
+Gunakan dengan parameter *ResourceGroupName* .
 
 ```yaml
 Type: System.String
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi Cache Redis untuk dapatkan.
-Jika Anda hanya menentukan parameter *ResourceGroupName,* operasi ini akan mendapatkan setiap Redis Cache dalam grup sumber daya yang ditentukan.
+Jika Anda hanya menentukan parameter *ResourceGroupName* , operasi ini akan mendapatkan setiap Redis Cache dalam grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

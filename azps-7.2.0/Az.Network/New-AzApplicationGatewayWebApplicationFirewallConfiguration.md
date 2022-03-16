@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayWebApplicationFirewallConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayWebApplicationFirewallConfiguration.md
-ms.openlocfilehash: 1d2d398d95dc1799e42b9f447fab5d641bd9ad48
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1360e8df6cab64bb2fc64998b3760e0e26e44887
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285339"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294863"
 ---
 # New-AzApplicationGatewayWebApplicationFirewallConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi WAF untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewaywebapplicationfirewallconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ PS C:\> $firewallConfig = New-AzApplicationGatewayWebApplicationFirewallConfigur
 
 Perintah pertama membuat konfigurasi grup aturan baru yang dinonaktifkan untuk grup aturan bernama "REQUEST-942-APPLICATION-ATTACK-SQLI" dengan aturan 942130 dan aturan 942140 yang dinonaktifkan.
 Perintah kedua membuat konfigurasi grup aturan dinonaktifkan lainnya untuk grup aturan bernama "REQUEST-921-PROTOCOL-ATTACK". Tidak ada aturan yang secara khusus disampaikan dan dengan demikian semua aturan grup aturan akan dinonaktifkan.
-Perintah terakhir lalu membuat konfigurasi WAF dengan aturan firewall yang dinonaktifkan seperti yang dikonfigurasi dalam $disabledRuleGroup 1 dan $disabledRuleGroup 2. Konfigurasi WAF baru disimpan di $firewallConfig baru.
+Perintah terakhir lalu membuat konfigurasi WAF dengan aturan firewall yang dinonaktifkan seperti yang dikonfigurasi $disabledRuleGroup 1 dan $disabledRuleGroup 2. Konfigurasi WAF baru disimpan di $firewallConfig baru.
 
 ## PARAMETERS
 

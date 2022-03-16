@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkSecurityGroup.md
-ms.openlocfilehash: 57edd81ccf6b673299842162299afe0ce7be5c3d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 264d4ffb7c12effc562eeaddd5c3ea92af7554eb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307628"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140319929"
 ---
 # New-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworksecuritygroup) untuk informasi terkini.
 
 ## SYNTAX
 

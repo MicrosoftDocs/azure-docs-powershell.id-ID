@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/edit-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
-ms.openlocfilehash: 21f1dc8a86b69c307f2945b1ab13c49d9347cbf1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ceedc65cbe998e9a8bccebe5e201bbd868cd4384
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260209"
 ---
 # Edit-AzWebAppBackupConfiguration
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/edit-azwebappbackupconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Edit-AzWebAppBackupConfiguration** mengedit cadangan konfigurasi saat i
 
 ### Contoh 1
 
-Cmdlet Edit-AzWebAppBackupConfiguration mengedit cadangan konfigurasi saat ini untuk Azure Web App. (otomatisgenerated)
+Cmdlet Edit-AzWebAppBackupConfiguration baru mengedit cadangan konfigurasi saat ini untuk Azure Web App. (otomatisgenerated)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Edit-AzWebAppBackupConfiguration -FrequencyInterval <Int32> -FrequencyUnit <String> -KeepAtLeastOneBackup -Name IpRule -ResourceGroupName MyResourceGroup -RetentionPeriodInDays <Int32> -StartTime 2016-11-30T22:00:00Z -StorageAccountUrl 'https://storageaccount.file.core.windows.net'

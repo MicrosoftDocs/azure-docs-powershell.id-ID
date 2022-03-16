@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientPackage.md
-ms.openlocfilehash: a1729d48a7c17c3b70bdd9eb1cb4dce4d1809d97
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 008092214b6f32441a504b25278bfa21e86a53d1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285355"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295097"
 ---
 # Get-AzVpnClientPackage
 
 ## SYNOPSIS
 Mendapatkan informasi tentang paket klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvpnclientpackage) untuk informasi terkini.
 
 ## SYNTAX
 

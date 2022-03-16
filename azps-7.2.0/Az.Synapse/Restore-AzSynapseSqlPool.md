@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/restore-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Restore-AzSynapseSqlPool.md
-ms.openlocfilehash: 0048c0c113423fb3c4f2ba1b4b23bac542853ed0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e2cea0190665c1911a35621175ad2e818bcaf920
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260299"
 ---
 # Restore-AzSynapseSqlPool
 
 ## SYNOPSIS
 Memulihkan Analitik Synapse dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/restore-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Restore-AzSynapseSqlPool [-FromDroppedSqlPool] -WorkspaceObject <PSSynapseWorksp
 
 ## DESCRIPTION
 Cmdlet **Restore-AzSynapseSqlPool** memulihkan grup SQL Analitik Azure Synapse dari cadangan geo berlebihan, cadangan pool SQL yang dihapus atau titik pemulihan dari setiap SQL lokal.
-Jumlah SQL yang dipulihkan dibuat sebagai SQL baru.
+Pool SQL yang dipulihkan dibuat sebagai sebuah SQL baru.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromRestorePoint -RestorePoint $restorePoint.RestorePointCreationDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId -PerformanceLevel DW200c
 ```
 
-Perintah ini membuat azure Synapse Analytics SQL lokal dengan memaksimalkan titik pemulihan dari semua SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
+Perintah ini membuat azure Synapse Analytics SQL pool dengan memaksimalkan titik pemulihan dari semua SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
 
 ### Contoh 2
 ```powershell
@@ -99,7 +102,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromBackup -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId
 ```
 
-Perintah ini membuat Azure Synapse Analytics SQL lokal yang dipulihkan dari SQL cadangan pool.
+Perintah ini membuat analitik Azure Synapse SQL lokal yang dipulihkan dari SQL cadangan pool.
 
 ### Contoh 3
 ```powershell
@@ -112,7 +115,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromDroppedSqlPool -DeletionDate $pool.DeletionDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $poolId
 ```
 
-Perintah ini membuat grup Analitik Azure Synapse SQL yang memulihkan dari pencadangan SQL otomatis yang dihapus.
+Perintah ini membuat analitik Azure Synapse SQL baru yang dipulihkan dari pencadangan SQL otomatis yang dihapus.
 
 ### Contoh 4
 ```powershell
@@ -130,7 +133,7 @@ PS C:\> # Restore to same workspace with source SQL pool
 PS C:\> $restoredPool = Restore-AzSynapseSqlPool -FromRestorePoint -RestorePoint $restorePoint.RestorePointCreationDate -TargetSqlPoolName ContosoRestoredSqlPool -ResourceGroupName $pool.ResourceGroupName -WorkspaceName $pool.WorkspaceName -ResourceId $databaseId -PerformanceLevel DW200c -Tag @{"tagName" = "tagValue"} -StorageAccountType LRS
 ```
 
-Perintah ini membuat penyimpanan SQL Analitik Azure Synapse dengan tipe akun penyimpanan dan tag tertentu dengan memaksimalkan titik pemulihan dari setiap SQL yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
+Perintah ini membuat penyimpanan SQL Analitik Azure Synapse dengan tipe akun penyimpanan dan tag tertentu dengan memaksimalkan titik pemulihan dari setiap SQL lokal yang sudah ada untuk memulihkan atau menyalin dari status sebelumnya.
 
 ## PARAMETERS
 
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeletionDate
-Tanggal penghapusan azure Synaspe SQL Database untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
+Tanggal penghapusan program Azure Synaspe SQL Database mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
 Type: System.DateTime
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromBackup
-Menunjukkan untuk memulihkan dari cadangan terbaru semua pengguna SQL dalam langganan ini.
+Menunjukkan untuk memulihkan dari cadangan terbaru semua pengguna SQL anda dalam langganan ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromIdrppedSqlPool
-Menunjukkan untuk memanfaatkan poin pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
+Menunjukkan untuk memanfaatkan titik pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromRestorePoint
-Menunjukkan untuk memanfaatkan poin pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
+Menunjukkan untuk memanfaatkan titik pemulihan dari setiap SQL lokal dalam langganan ini untuk memulihkan atau menyalin dari status sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -PerformanceLevel
-Tingkat SQL Layanan dan tingkat kinerja untuk ditetapkan ke SQL baru.
+Tingkat SQL Layanan tingkat dan tingkat kinerja untuk ditetapkan ke SQL baru.
 Misalnya, DW2000c.
 
 ```yaml

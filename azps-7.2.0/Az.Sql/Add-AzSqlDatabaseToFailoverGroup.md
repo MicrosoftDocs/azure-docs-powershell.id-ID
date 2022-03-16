@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
-ms.openlocfilehash: 27192a55561b6c6744d45f3eccb57717c05b8d8a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2d35a6251f1bbc87c5ce082f0668909e550612d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295068"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318543"
 ---
 # Add-AzSqlDatabaseToFailoverGroup
 
 ## SYNOPSIS
 Menambahkan satu atau beberapa database ke Azure SQL Database Failover Group.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqldatabasetofailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Perintah ini menambahkan semua database dalam Kelompok Elastis ke Grup Failover.
 ## PARAMETERS
 
 ### -Database
-Satu atau beberapa database SQL Database Azure di server utama Grup Failover untuk ditambahkan ke Grup Failover.
+Satu atau beberapa Database SQL Azure di server utama Grup Failover untuk ditambahkan ke Grup Failover.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel]
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database dari Grup Failover.
+Nama server utama Azure SQL Database Dari Grup Failover.
 
 ```yaml
 Type: System.String

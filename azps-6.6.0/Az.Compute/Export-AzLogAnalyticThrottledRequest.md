@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticThrottledRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticThrottledRequest.md
-ms.openlocfilehash: 92863d91ebfdcdae64352a047ad6cde3a9eaecda
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 473ebc69a9b387d9b1b656df874915e0e1d8fcc5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139978449"
 ---
 # Export-AzLogAnalyticThrottledRequest
 
 ## SYNOPSIS
 Ekspor log yang memperlihatkan permintaan Api total yang dilindungi untuk langganan ini dalam jendela waktu tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/export-azloganalyticthrottledrequest) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Ini akan mengekspor jumlah total panggilan MICROSOFT.Compute API yang dilindungi
 Log bisa diagregatkan lebih lanjut dengan lima opsi: GroupByOperationName, GroupByThrottlePolicy, GroupByResourceName, GroupByUserAgent, atau GroupByApplicationId.
 Perhatikan bahwa cmdlet ini hanya mengumpulkan log CRP.
 
-Untuk gambaran umum pembatasan API Penyedia Sumber Daya Perhitungan, lihat https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-request-limits . 
+Untuk gambaran umum pembatasan API Penyedia Sumber Daya Perhitungan, lihat https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-request-limits. 
 
 ## EXAMPLES
 
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

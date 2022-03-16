@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsRecordConfig.md
-ms.openlocfilehash: ec2c1a34e70e358267b289ac88511fdbb4e84357
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c91228a67a50a18329d30c64463d8a190273af6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317755"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140228995"
 ---
 # New-AzPrivateDnsRecordConfig
 
 ## SYNOPSIS
 Membuat objek lokal catatan DNS Privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/new-azprivatednsrecordconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -212,7 +215,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini membuat RecordSet bernama _sip._tcp dalam zona privat myzone.com. Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat, yang mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini membuat RecordSet bernama _sip._tcp dalam zona myzone.com. Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat, yang mengarah ke alamat IP 2001.2.3.4. Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 7: Buat RecordSet tipe TXT
 ```powershell
@@ -233,7 +236,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini akan membuat teks bernama RecordSet dalam zona pribadi myzone.com. Kumpulan catatan merupakan tipe TXT dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Perintah ini akan membuat teks bernama RecordSet dalam zona myzone.com. Kumpulan catatan merupakan tipe TXT dan memiliki TTL 1 jam (3600 detik). Daftar ini berisi satu catatan DNS Privat. Untuk membuat Kumpulan Rekaman menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ## PARAMETERS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 86acea2eb1d28fd813802717a9ef7c1fc787644b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fa0a6d696422e0a0bdbab9a0cfdc388952b08752
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295583"
 ---
 # Add-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi subnet ke jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvirtualnetworksubnetconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Fungsi Add-AzVirtualNetworkSubnetConfig kemudian digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
+  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Fungsi Add-AzVirtualNetworkSubnetConfig digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
 
 ### Contoh 2: Menambahkan delegasi ke subnet yang ditambahkan ke jaringan virtual yang sudah ada
 ```powershell

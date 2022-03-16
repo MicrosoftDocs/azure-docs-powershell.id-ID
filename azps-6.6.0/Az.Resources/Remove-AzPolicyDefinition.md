@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyDefinition.md
-ms.openlocfilehash: a9d98567665ba1dddc5319cece3b8d8c75168cb0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7a4dabf604025a2b7bf39a6186d444781aa5411a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358130"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140278177"
 ---
 # Remove-AzPolicyDefinition
 
 ## SYNOPSIS
 Menghapus definisi kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azpolicydefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ PS C:\> $PolicyDefinition = Get-AzPolicyDefinition -Name 'VMPolicyDefinition'
 PS C:\> Remove-AzPolicyDefinition -Id $PolicyDefinition.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dengan menggunakan Get-AzPolicyDefinition cmdlet.
+Perintah pertama mendapatkan definisi kebijakan yang bernama VMPolicyDefinition dengan menggunakan cmdlet Get-AzPolicyDefinition cmdlet.
 Perintah menyimpannya di $PolicyDefinition variabel.
 Perintah kedua menghapus definisi kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicyDefinition.
 
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

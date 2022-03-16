@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesMarketplaceDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesMarketplaceDefinition.md
-ms.openlocfilehash: 5669dabe493aa93f6a0f3a723fbeb8c80bf9f5c4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: de6ccfe908998efaf1c105f6883efab5c2c405b5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295548"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140297005"
 ---
 # Get-AzManagedServicesMarketplaceDefinition
 
 ## SYNOPSIS
 Dapatkan definisi registrasi marketplace untuk pengidentifikasi marketplace.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesmarketplacedefinition) untuk informasi terkini.
 
 ## SYNTAX
 

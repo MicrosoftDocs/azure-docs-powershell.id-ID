@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzPolicyExemption.md
-ms.openlocfilehash: 010c701f3c71185366a6a73ffe7be5c61bcd3051
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b439d0adaca12fbe66ee3251f4754468edd1171c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269820"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140319659"
 ---
 # Remove-AzPolicyExemption
 
 ## SYNOPSIS
 Menghapus pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azpolicyexemption) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ PS C:\> $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07' -Scop
 PS C:\> Remove-AzPolicyExemption -Id $PolicyExemption.ResourceId -Confirm
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut di $ResourceGroup sumber daya.
+Perintah pertama mendapatkan grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $ResourceGroup sumber daya.
 Perintah kedua mendapatkan pengecualian kebijakan di tingkat grup sumber daya, lalu menyimpannya dalam variabel $PolicyExemption terbatas.
 Properti **ResourceId** dari $ResourceGroup mengidentifikasi grup sumber daya.
 Perintah terakhir menghapus pengecualian kebijakan yang mengidentifikasi **properti ResourceId** $PolicyExemption.

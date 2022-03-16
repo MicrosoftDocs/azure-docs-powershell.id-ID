@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Remove-AzSql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: af7d1b1679a15c0dc6f8faf1dd0e0105d19e86f5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5b58e1e6463734ac298d9c1bc16448e27543ec06
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140262181"
 ---
 # Remove-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Menghapus kunci Key Vault dari SQL terkelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlinstancekeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzSqlInstanceKeyVaultKey [-InstanceResourceId] <String> [-KeyId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSqlInstanceKeyVaultKey menghapus tombol Key Vault dari Instans Terkelola yang ditentukan. Perhatikan SQL penyimpanan kunci tersebut tidak diubah oleh instans terkelola. Untuk mengubah izin, gunakan Set-AzKeyVaultAccessPolicy. Perlu diketahui bahwa cmdlet ini tidak melakukan perubahan pada Key Vault. Untuk menghapus kunci dari Key Vault, gunakan Remove-AzureKeyVaultKey.
+Cmdlet Remove-AzSqlInstanceKeyVaultKey akan menghapus kunci Key Vault dari Instans Terkelola yang ditentukan. Perhatikan SQL penyimpanan instans terkelola ke vault kunci tidak diubah. Untuk mengubah izin, gunakan Set-AzKeyVaultAccessPolicy. Perlu diketahui bahwa cmdlet ini tidak melakukan perubahan pada Key Vault. Untuk menghapus kunci dari Key Vault, gunakan Remove-AzureKeyVaultKey.
 
 ## EXAMPLES
 

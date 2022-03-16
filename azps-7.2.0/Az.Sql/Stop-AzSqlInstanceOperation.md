@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlInstanceOperation.md
-ms.openlocfilehash: 5e0e70ace9c1d1486210ba7d75dfb7bf2b4d5fa0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 93db7371b1a5786471ddfb12630607d8ade8942b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165568"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291389"
 ---
 # Stop-AzSqlInstanceOperation
 
 ## SYNOPSIS
 Menghentikan SQL operasi instans terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/stop-azsqlinstanceoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzSqlInstanceOperation [-InputObject] <AzureSqlManagedInstanceOperationMode
 ```
 
 ## DESCRIPTION
-Cmdlet Stop-AzSqlInstanceOperation menghentikan operasi dengan nama operasi yang disediakan pada SQL terkelola.
+Cmdlet Stop-AzSqlInstanceOperation menghentikan operasi dengan nama operasi yang disediakan pada SQL yang dikelola.
 
 ## EXAMPLES
 

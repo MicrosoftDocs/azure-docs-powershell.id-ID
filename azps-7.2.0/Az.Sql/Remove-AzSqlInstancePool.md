@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstancePool.md
-ms.openlocfilehash: ec75a77c1ea1aa58e58efd65a456c59ded00c4f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d01b013af4b5701e8e2b02d5d454a71860a9efb4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315404"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140262163"
 ---
 # Remove-AzSqlInstancePool
 
 ## SYNOPSIS
 Menghapus azure SQL Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlinstancepool) untuk informasi terkini.
 
 ## SYNTAX
 

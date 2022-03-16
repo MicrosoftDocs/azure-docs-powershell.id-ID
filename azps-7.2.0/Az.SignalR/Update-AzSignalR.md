@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalR.md
-ms.openlocfilehash: 328406271dfbb831a6601a865379707e2d0825d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c81db72d2d5815869c44263da044ac504d07f82e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318651"
 ---
 # Update-AzSignalR
 
 ## SYNOPSIS
 Memperbarui layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/update-azsignalr) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Start-AzSqlI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: 713c637dc933e15ac8a09b5bc8988d002a827b67
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6d09981e4f7cee568fa1ae43904afa43295ddcb6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303100"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140317175"
 ---
 # Start-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
 Memulai layanan Pemutaran Ulang Log dengan parameter tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/start-azsqlinstancedatabaselogreplay) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ PS C:\> Start-AzSqlInstanceDatabaseLogReplay -ResourceGroupName "ResourceGroup01
     -StorageContainerSasToken "sv=2019-02-02&ss=b&srt=sco&sp=rl&se=2023-12-02T00:09:14Z&st=2019-11-25T16:09:14Z&spr=https&sig=92kAe4QYmXaht%2Fgjocqwerqwer41s%3D"
 ```
 
-Perintah ini akan membuat database terkelola baru dan akan mulai memulihkan cadangan dari wadah tertentu sampai Complete-AzSqlInstanceDatabaseLogReplay dipanggil dengan pencadangan terakhir yang diinginkan.
+Perintah ini akan membuat database terkelola baru dan akan mulai memulihkan cadangan dari wadah tertentu hingga Complete-AzSqlInstanceDatabaseLogReplay disebut dengan pencadangan terakhir.
 
 ### Contoh 3
 

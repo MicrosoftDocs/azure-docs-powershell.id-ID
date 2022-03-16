@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseTransparentDataEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseTransparentDataEncryption.md
-ms.openlocfilehash: b75e937467c0674bc452f870b78c9aad792fdfa4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0df296e9f5b15c27eed5b4caeae690ecae843994
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369443"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140276825"
 ---
 # Get-AzSqlDatabaseTransparentDataEncryption
 
 ## SYNOPSIS
 Mendapatkan status TDE untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasetransparentdataencryption) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,9 +31,9 @@ Get-AzSqlDatabaseTransparentDataEncryption [-ServerName] <String> [-DatabaseName
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlDatabaseTransparentDataEncryption** mendapatkan status Enkripsi Data Transparan (TDE, Transparent Data Encryption) untuk database SQL Azure.
-Untuk informasi selengkapnya, lihat Enkripsi Data Transparan dengan Azure SQL Database https://msdn.microsoft.com/library/dn948096 ( di Pustaka Jaringan Pengembang https://msdn.microsoft.com/library/dn948096) Microsoft.
+Untuk informasi selengkapnya, lihat Enkripsi Data Transparan dengan Azure SQL Databasehttps://msdn.microsoft.com/library/dn948096 (https://msdn.microsoft.com/library/dn948096) di Pustaka Jaringan Pengembang Microsoft.
 Cmdlet ini mendapatkan status TDE saat ini, tetapi enkripsi dan dekripsi dapat menjadi operasi yang berjalan lama.
-Untuk melihat kemajuan pemindaian enkripsi, jalankan cmdlet Get-AzSqlDatabaseTransparentDataEncryptionActivity.
+Untuk melihat kemajuan pemindaian enkripsi, jalankan cmdlet Get-AzSqlDatabaseTransparentDataEncryptionActivity enkripsi.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeUser.md
-ms.openlocfilehash: e9022f6d88a70f94381c888403810285d4f2b4a4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3e53769a937beda6da688a381544fa4896bb288b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296396"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316869"
 ---
 # Get-AzStackEdgeUser
 
 ## SYNOPSIS
 Mendapatkan pengguna yang dikonfigurasi untuk satu perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/get-azstackedgeuser) untuk informasi terkini.
 
 ## SYNTAX
 

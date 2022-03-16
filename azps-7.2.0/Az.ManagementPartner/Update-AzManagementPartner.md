@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managementpartne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Update-AzManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagementPartner/ManagementPartner/help/Update-AzManagementPartner.md
-ms.openlocfilehash: b3a94a8a4bc56a0c3844418739ab839209dff82d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f87fb543ccc7232c5f202b497fc9fbf34e8094b7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253563"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296879"
 ---
 # Update-AzManagementPartner
 
 ## SYNOPSIS
 Memperbarui ID Jaringan Mitra Microsoft (MPN) dari prinsipal layanan atau pengguna yang diautentikasi saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managementpartner/update-azmanagementpartner) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesBackupProtectionPolicy.md
-ms.openlocfilehash: 1c32f42ce0741501df9582b1e8cf9a2cd0b96752
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 95366012b8ddf2aba46e97332730834d89ec952d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332285"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140279005"
 ---
 # Set-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
 Mengubah kebijakan Proteksi cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesbackupprotectionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Set-AzRecoveryServicesBackupProtectionPolicy [-Policy] <PolicyBase> [-FixForInco
 Cmdlet **Set-AzRecoveryServicesBackupProtectionPolicy** mengubah kebijakan perlindungan Azure Backup yang sudah ada.
 Anda bisa memodifikasi komponen kebijakan penyimpanan dan jadwal cadangan.
 Setiap perubahan yang Anda buat mempengaruhi pencadangan dan penyimpanan item yang terkait dengan kebijakan tersebut.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 
 ### -Kebijakan
 Menentukan kebijakan Proteksi cadangan yang ditentukan cmdlet ini.
-Untuk mendapatkan objek **BackupProtectionPolicy,** gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy.
+Untuk mendapatkan objek **BackupProtectionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupProtectionPolicy baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -RetentionPolicy
 Menentukan kebijakan penyimpanan dasar.
-Untuk mendapatkan objek **RetentionPolicy,** gunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject.
+Untuk mendapatkan objek **RetentionPolicy** , gunakan cmdlet Get-AzRecoveryServicesBackupRetentionPolicyObject.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RetentionPolicyBase
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 
 ### -SchedulePolicy
 Menentukan objek kebijakan jadwal dasar.
-Untuk mendapatkan objek SchedulePolicy, gunakan Get-AzRecoveryServicesBackupSchedulePolicyObject **SchedulePolicy.**
+Untuk mendapatkan objek **SchedulePolicy** , gunakan Get-AzRecoveryServicesBackupSchedulePolicyObject Anda.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.SchedulePolicyBase
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

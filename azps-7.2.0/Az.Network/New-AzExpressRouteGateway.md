@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzExpressRouteGateway.md
-ms.openlocfilehash: 86ae1fac2ed79fa66e2de32acdb4d794bf991f8c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5dd949300b07e16c1049a5e3b434af65f10fdb7c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316748"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294755"
 ---
 # New-AzExpressRouteGateway
 
 ## SYNOPSIS
 Membuat Gateway ExpressRoute yang Dapat Disesuaikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azexpressroutegateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,9 +45,9 @@ New-AzExpressRouteGateway -ResourceGroupName <String> -Name <String> -MinScaleUn
 
 ## DESCRIPTION
 
-New-AzExpressRouteGateway membuat Gateway ExpressRoute yang dapat disesuaikan. This is software defined connectivity for on premise to Azure inside the VirtualHub. 
+New-AzExpressRouteGateway gateway ExpressRoute yang dapat disesuaikan. This is software defined connectivity for on premise to Azure inside the VirtualHub. 
 
-Gateway ini dapat diskalakan berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzExpressRouteGateway ini. 
+Gateway ini dapat diskalakan berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzExpressRouteGateway cmdlet. 
 
 Koneksi disetel dari sirkuit ExpressRoute lokal ke gateway yang dapat disesuaikan.
 

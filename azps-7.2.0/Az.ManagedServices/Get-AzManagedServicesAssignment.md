@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/Get-AzManagedServicesAssignment.md
-ms.openlocfilehash: 071221525234b4ee3c2fd52a9e9d69a544f47596
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4e51067eb0c6aa92ccefa97bcc1ec2d4decdbda7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140297022"
 ---
 # Get-AzManagedServicesAssignment
 
 ## SYNOPSIS
 Mendapatkan detail penetapan pendaftaran yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/get-azmanagedservicesassignment) untuk informasi terkini.
 
 ## SYNTAX
 

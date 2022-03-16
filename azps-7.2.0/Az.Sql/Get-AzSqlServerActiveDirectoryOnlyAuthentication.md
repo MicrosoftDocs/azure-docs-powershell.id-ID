@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerActiveDirectoryOnlyAuthentication.md
-ms.openlocfilehash: 1ed82d31f0411b57326bd13d7164e1ccfdc66706
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 71c5580efc4761e87cf24c7f1e3a3ff32136769e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274444"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140262613"
 ---
 # Get-AzSqlServerActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Mendapatkan autentikasi Azure AD hanya untuk kategori SQL Server.
+Mendapatkan autentikasi Azure AD hanya untuk klien SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserveractivedirectoryonlyauthentication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlServerActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerActiveDirectoryOnlyAuthentication** mendapatkan Azure Active Directory (Azure AD) hanya autentikasi untuk AzureSQL Server di langganan saat ini.
+Cmdlet **Get-AzSqlServerActiveDirectoryOnlyAuthentication** hanya mendapatkan Azure Active Directory (Azure AD) untuk AzureSQL Server di langganan saat ini.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ ResourceGroupName ServerName AzureADOnlyAuthentication
 ResourceGroup01   Server01   True
 ```
 
-Perintah ini hanya Azure Active Directory autentikasi bagi server AzureSQL bernama Server01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
+Perintah ini hanya Azure Active Directory (Azure AD) untuk server AzureSQL bernama Server01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 

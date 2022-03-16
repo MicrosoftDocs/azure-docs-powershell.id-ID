@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 46abb4b9e10e47694445afd0139b36ee357ee3cc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7b1f434dc178d685665eadae613d8c2b6e035ebf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293131"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295547"
 ---
 # Get-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
 Mendapatkan konfigurasi tautan privat dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprivatelinkconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

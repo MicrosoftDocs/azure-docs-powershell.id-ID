@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ManagedServices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAuthorizationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesAuthorizationObject.md
-ms.openlocfilehash: 3dbc06c571f0228aaa1ce45e247dd7cd42962fd8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b7f00c96aa36a75835b8b39d56a7080c4cb6d337
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302411"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296969"
 ---
 # New-AzManagedServicesAuthorizationObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk Otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesauthorizationobject) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: c9fd30db3665ed2f51da4958c9bc65fcf0d1635e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bbc6638c2473aed4863f3641e19e1eee3fbf3b7b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162075"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140290363"
 ---
 # Set-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Membuat atau memperbarui ImmutabilityPolicy wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azrmstoragecontainerimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Cmdlet **Set-AzRmStorageContainerImmutabilityPolicy** membuat atau memperbarui I
 PS C:\>Set-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -ImmutabilityPeriod 10
 ```
 
-Perintah ini membuat atau memperbarui ImmutabilityPolicy wadah Storage blob dengan Storage wadah dan nama wadah akun.
+Perintah ini akan membuat atau memperbarui ImmutabilityPolicy suatu Storage blob dengan Storage penampung dan nama wadah akun.
 
 ### Contoh 2: Extend ImmutabilityPolicy of a Storage blob container, with Storage account object
 ```
@@ -93,7 +96,7 @@ PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $acc
 PS C:\>Set-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -ImmutabilityPeriod 20 -Etag $policy.Etag -ExtendPolicy
 ```
 
-Perintah ini memperluas ImmutabilityPolicy wadah Storage blob, dengan Storage akun. Extend ImmutabilityPolicy can only run after ImmutabilityPolicy is locked.
+Perintah ini memperluas ImmutabilityPolicy wadah Storage blob, dengan Storage objek akun. Extend ImmutabilityPolicy can only run after ImmutabilityPolicy is locked.
 
 ### Contoh 3: Update ImmutabilityPolicy of a Storage blob container
 ```
@@ -104,14 +107,14 @@ PS C:\>$policy = Set-AzRmStorageContainerImmutabilityPolicy -Container $containe
 PS C:\>$policy = Set-AzRmStorageContainerImmutabilityPolicy -Container $containerObject -AllowProtectedAppendWrite $false -AllowProtectedAppendWriteAll $true
 ```
 
-Perintah ini memperbarui ImmutabilityPolicy wadah blob Storage dengan objek wadah Storage 3 kali: Pertama ke ImmutabilityPeriod 12 hari tanpa etag, lalu ke ImmutabilityPeriod 9 hari dengan etag, lalu mengaktifkan AllowProtectedAppendWrite, terakhir diaktifkan AllowProtectedAppendWriteAll.
+Perintah ini memperbarui ImmutabilityPolicy pada wadah blob Storage dengan objek wadah Storage 3 kali: Pertama ke ImmutabilityPeriod 12 hari tanpa etag, lalu ke ImmutabilityPeriod 9 hari dengan etag, lalu mengaktifkan AllowProtectedAppendWrite, terakhir diaktifkan AllowProtectedAppendWriteAll.
 
 ### Contoh 4: Extend ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
 ```
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Set-AzRmStorageContainerImmutabilityPolicy -ImmutabilityPeriod 15 -ExtendPolicy
 ```
 
-Perintah ini memperluas ImmutabilityPolicy pada wadah blob Storage, dengan objek ImmutabilityPolicy. Extend ImmutabilityPolicy can only run after ImmutabilityPolicy is locked.
+Perintah ini memperluas ImmutabilityPolicy pada wadah Storage blob, dengan objek ImmutabilityPolicy. Extend ImmutabilityPolicy can only run after ImmutabilityPolicy is locked.
 
 ## PARAMETERS
 
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

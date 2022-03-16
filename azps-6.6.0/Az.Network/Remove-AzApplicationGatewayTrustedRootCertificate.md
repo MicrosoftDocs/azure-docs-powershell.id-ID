@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 6a3c416beb85f89ea40a4ec0143aecee1e562025
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c2f6768266924daa6a48e9f902a72112d4b76210
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355697"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140281147"
 ---
 # Remove-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Menghapus Sertifikat Akar Tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaytrustedrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ PS C:\> $gw = Remove-AzApplicationGatewayTrustedRootCertificate -ApplicationGate
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $gw lain.
-Perintah kedua menghapus sertifikat akar tepercaya yang bernama myRootCA dari gateway aplikasi yang disimpan di $gw.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
+Perintah kedua menghapus sertifikat akar tepercaya bernama myRootCA dari gateway aplikasi yang disimpan di $gw.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
 ## PARAMETERS
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

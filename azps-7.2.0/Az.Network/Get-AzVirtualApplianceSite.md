@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualApplianceSite.md
-ms.openlocfilehash: d614098dcbe8308581d3bf5c5a93c02d670d38fd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d99f71f735160d8617e0215b3e5fc9f779517b0d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295259"
 ---
 # Get-AzVirtualApplianceSite
 
 ## SYNOPSIS
 Dapatkan atau  List situs tersambung ke sumber daya Alat Virtual Jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualappliancesite) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzVirtualApplianceSite -ResourceId <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Sumber Get-AzVirtualApplianceSite atau mencantumkan situs yang tersambung ke satu atau lebih sumber daya Peralatan Virtual Jaringan.
+Sumber Get-AzVirtualApplianceSite menghubungkan atau mencantumkan situs yang tersambung ke satu atau beberapa sumber daya Alat Virtual Jaringan.
 
 ## EXAMPLES
 

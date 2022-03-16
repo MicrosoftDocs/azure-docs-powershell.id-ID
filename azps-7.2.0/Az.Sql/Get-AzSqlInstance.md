@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstance.md
-ms.openlocfilehash: 8973f02e594cc00a3419da5cc0a84db904f19368
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2dc75f4a15dd92269e3568b39ed94346d3d0873e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169680"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140317985"
 ---
 # Get-AzSqlInstance
 
 ## SYNOPSIS
 Mengembalikan informasi tentang Azure SQL Contoh Database Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -474,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-SQL contoh.
+SQL nama contoh.
 
 ```yaml
 Type: System.String

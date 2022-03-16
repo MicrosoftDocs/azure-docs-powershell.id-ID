@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseDataMaskingRule.md
-ms.openlocfilehash: d927883d7700074690c46d3fbd77bfda405fd816
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d316de5e68a39f94017680fe0d3573b75f9bc32
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285115"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318201"
 ---
 # Get-AzSqlDatabaseDataMaskingRule
 
 ## SYNOPSIS
 Mendapatkan aturan masker data dari database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasedatamaskingrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableName
-Menentukan nama tabel azure SQL.
+Menentukan nama tabel SQL Azure.
 
 ```yaml
 Type: System.String

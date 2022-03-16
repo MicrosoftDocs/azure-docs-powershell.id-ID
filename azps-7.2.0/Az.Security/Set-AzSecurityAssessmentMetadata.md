@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAssessmentMetadata.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityAssessmentMetadata.md
-ms.openlocfilehash: bab05e420961cd5453ac3fcc71fb73d0537c39b2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b79c9fe5ae1948f19a0e30b8688aea53d9f2fc39
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280651"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140319272"
 ---
 # Set-AzSecurityAssessmentMetadata
 
 ## SYNOPSIS
 Membuat atau memperbarui tipe penilaian keamanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-azsecurityassessmentmetadata) untuk informasi terkini.
 
 ## SYNTAX
 

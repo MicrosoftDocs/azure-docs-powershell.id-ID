@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayUrlPathMapConfig.md
-ms.openlocfilehash: be4270ec360aedd14ade6f767135de4fcfd703ad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b22aab725dcddff0b9449887b88a4e4856164be6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162328"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294881"
 ---
 # New-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
 Membuat array pemetaan jalur URL ke pool server backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayurlpathmapconfig) untuk informasi terkini.
 
 ## SYNTAX
 

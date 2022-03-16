@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/test-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Test-AzWebPubSubNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Test-AzWebPubSubNameAvailability.md
-ms.openlocfilehash: b2e29c76228754f9caa0ead6ec2a70a663cac2c1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2a264bdfa83a2691932674441c94c9bdcbdc9862
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277772"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318723"
 ---
 # Test-AzWebPubSubNameAvailability
 
 ## SYNOPSIS
 Memeriksa bahwa nama sumber daya valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/test-azwebpubsubnameavailability) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

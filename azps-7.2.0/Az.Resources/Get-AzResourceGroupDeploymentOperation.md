@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentOperation.md
-ms.openlocfilehash: 093f26dc6b06e6e629ba163fa8f0118b857d9566
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e7c79a7e6688e74a5b691016d38a1a4821de303f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294071"
 ---
 # Get-AzResourceGroupDeploymentOperation
 
 ## SYNOPSIS
 Mendapatkan operasi penggunaan grup sumber daya
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeploymentoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Konten juga dapat memperlihatkan respons dan permintaan konten untuk setiap oper
 Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal.
 Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan ketika mengirimkan penyebaran melalui **New-AzResourceGroupDeployment**.
 Ini bisa berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **ListKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
-Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzResourceGroupDeployment dan Debug penyebaran templat ARM
+Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzResourceGroupDeployment Dan Debug penyebaran templat ARM
 
 ## EXAMPLES
 

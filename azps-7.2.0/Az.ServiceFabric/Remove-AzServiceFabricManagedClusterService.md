@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricManagedClusterService.md
-ms.openlocfilehash: 4be95f9e97f11a05de61e040ef63d913ebbc57e9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d1865b446edf3f83877ac743d39ca6be4fef73bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262204"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318885"
 ---
 # Remove-AzServiceFabricManagedClusterService
 
 ## SYNOPSIS
 Menghapus layanan terkelola dari kluster. Hanya mendukung layanan ARM yang disebarkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricmanagedclusterservice) untuk informasi terkini.
 
 ## SYNTAX
 

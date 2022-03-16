@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseRecommendedActionState.md
-ms.openlocfilehash: 73253170b0e41da172697666e54fec7b0d10bfc4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a90ff3020103ecb8f9770b4f3899f6d49e12f196
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260604"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261983"
 ---
 # Set-AzSqlDatabaseRecommendedActionState
 
 ## SYNOPSIS
 Memperbarui status tindakan yang Azure SQL Database disarankan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabaserecommendedactionstate) untuk informasi terkini.
 
 ## SYNTAX
 

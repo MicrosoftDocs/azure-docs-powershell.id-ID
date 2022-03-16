@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabase.md
-ms.openlocfilehash: a26f61fdd92523f958e42e26482296975f9ea3b0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1d59754522e465a905bf13f68f5723d7a6ecba74
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140318309"
 ---
 # Get-AzSqlDatabase
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlDatabase [[-DatabaseName] <String>] [-ServerName] <String> [-ResourceGr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabase** mendapatkan satu atau lebih database Azure SQL dari Azure SQL Database Server.
+Cmdlet **Get-AzSqlDatabase** mendapatkan satu atau beberapa database Azure SQL dari Azure SQL Database Server.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES

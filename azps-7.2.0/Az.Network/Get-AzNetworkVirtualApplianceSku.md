@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualApplianceSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualApplianceSku.md
-ms.openlocfilehash: 4168fd69b13bd02df1182b80f677a72672375a50
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 46d9590306f3d8f313197b4551a04e1b98aeafd8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254491"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295277"
 ---
 # Get-AzNetworkVirtualApplianceSku
 
 ## SYNOPSIS
 Dapatkan atau  List available Network Virtual Appliance Skus dalam inventaris.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkvirtualappliancesku) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzNetworkVirtualApplianceSku [-SkuName <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Ruang Get-AzNetworkVirtualApplianceSku menyediakan atau mencantumkan Sku Perlengkapan Virtual Jaringan dalam Microsoft Azure inventaris.
+Daftar Get-AzNetworkVirtualApplianceSku menyediakan Sku Perlengkapan Virtual Jaringan dalam Microsoft Azure inventaris.
 
 ## EXAMPLES
 

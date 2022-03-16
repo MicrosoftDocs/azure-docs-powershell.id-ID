@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTenantDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzTenantDeployment.md
-ms.openlocfilehash: d173332ba15d71edb3d8083283c4e31828af4932
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7e4c207e6f9c4ad82ef21b52885d71a02359c80f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270955"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140293837"
 ---
 # New-AzTenantDeployment
 
 ## SYNOPSIS
 Membuat penggunaan pada lingkup penyewa
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-aztenantdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -459,7 +462,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If proyek. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If perubahan. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]

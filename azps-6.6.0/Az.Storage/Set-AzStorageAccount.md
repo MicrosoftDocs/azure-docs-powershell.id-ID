@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccount.md
-ms.openlocfilehash: 5c9ab0522e1752f69d140314234144f91b920e64
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 881b3c513c9a716b7b62ece4043de24bc4264397
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370941"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303269"
 ---
 # Set-AzStorageAccount
 
 ## SYNOPSIS
 Mengubah akun Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,12 +70,12 @@ Set-AzStorageAccount [-ResourceGroupName] <String> [-Name] <String> [-Force] [-S
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageAccount** mengubah akun Azure Storage Anda.
-Anda dapat menggunakan cmdlet ini untuk mengubah tipe akun, memperbarui domain pelanggan, atau mengatur tag di Storage Anda.
+Cmdlet **Set-AzStorageAccount** mengubah akun Azure Storage tersebut.
+Anda dapat menggunakan cmdlet ini untuk mengubah tipe akun, memperbarui domain pelanggan, atau mengatur tag di akun Storage Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Atur tipe akun Storage Anda
+### Contoh 1: Setel Storage tipe akun
 ```
 PS C:\>Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Type "Standard_RAGRS"
 ```
@@ -84,7 +87,7 @@ Perintah ini mengatur tipe Storage ini ke Standard_RAGRS.
 PS C:\>Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -CustomDomainName "www.contoso.com" -UseSubDomain $True
 ```
 
-Perintah ini mengatur domain kustom untuk akun Storage tersebut.
+Perintah ini mengatur domain kustom untuk suatu Storage kustom.
 
 ### Contoh 3: Mengatur nilai tingkat akses
 ```
@@ -144,9 +147,9 @@ PS C:\> $networkRuleSet = (Get-AzStorageAccount -ResourceGroupName "MyResourceGr
 PS C:\> Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount2" -NetworkRuleSet $networkRuleSet
 ```
 
-Perintah pertama ini mendapatkan properti NetworkRuleSet dari Storage pengguna, dan perintah kedua mengaturnya ke akun Storage lain 
+Perintah pertama ini mendapatkan properti NetworkRuleSet dari Storage, dan perintah kedua mengaturnya ke akun Storage lain 
 
-### Contoh 9: Memutakhirkan akun Storage dengan Jenis "Storage" atau "BlobStorage" menjadi jenis akun Storage "StorageV2"
+### Contoh 9: Memutakhirkan akun Storage dengan Jenis "Storage" atau "BlobStorage" ke jenis "StorageV2" Storage lain
 ```
 PS C:\> Set-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -UpgradeToStorageV2
 ```
@@ -164,7 +167,7 @@ DirectoryServiceOptions ActiveDirectoryProperties                               
 AADDS                   Microsoft.Azure.Commands.Management.Storage.Models.PSActiveDirectoryProperties StorageFileDataSmbShareOwner
 ```
 
-Perintah memperbarui akun Storage dengan mengaktifkan Autentikasi DS Azure files AAD.
+Perintah memperbarui akun Storage dengan mengaktifkan Autentikasi Azure Files AAD DS.
 
 ### Contoh 11: Perbarui Storage dengan mengaktifkan Autentikasi Layanan Domain Direktori Aktif File, lalu perlihatkan pengaturan autentikasi Berbasis Identitas File
 ```
@@ -232,7 +235,7 @@ InternetEndpoints  : {"Blob":"https://mystorageaccount-internetrouting.blob.core
 
 Perintah ini memperbarui akun Storage dengan pengaturan RoutingPreference: PublishMicrosoftEndpoint sebagai false, PublishInternetEndpoint sebagai true, dan RoutingChoice sebagai MicrosoftRouting.
 
-### Contoh 14: Perbarui akun Storage dengan KeyExpirationPeriod dan SasExpirationPeriod
+### Contoh 14: Perbarui Storage dengan KeyExpirationPeriod dan SasExpirationPeriod
 ```powershell
 PS C:\> $account = Set-AzStorageAccount -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -KeyExpirationPeriodInDay 5 -SasExpirationPeriod "1.12:05:06" -EnableHttpsTrafficOnly $true
 
@@ -275,7 +278,7 @@ LastKeyRotationTimestamp      : 4/12/2021 8:17:57 AM
 
 Perintah ini terlebih dahulu membuat keyvault dan identitas yang ditetapkan pengguna, lalu memperbarui akun penyimpanan dengan enkripsi keyvault, access keyvault penyimpanan dengan identitas yang ditetapkan pengguna.
 
-### Contoh 16: Perbarui akun Storage terenkripsi Keyvault, dari akses Keyvault dengan identitas yang ditetapkan pengguna, untuk mengakses Keyvault dengan identitas ditetapkan sistem
+### Contoh 16: Perbarui akun Storage terenkripsi Keyvault, dari akses Keyvault dengan identitas yang ditetapkan pengguna, untuk mengakses Keyvault dengan identitas yang ditetapkan sistem
 ```powershell
 # Assign System identity to the account, and give the system assigned identity acces to the keyvault
 PS C:\> $account = Set-AzStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName  -IdentityType SystemAssignedUserAssigned
@@ -336,10 +339,10 @@ Perintah ini memperbarui akun Storage dengan menyetel PublicNetworkAccess sebaga
 ## PARAMETERS
 
 ### -AccessTier
-Menentukan tingkatan akses akun Storage yang ditentukan cmdlet ini.
+Menentukan tingkat akses akun Storage yang ditentukan cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Hot dan Cool.
 Jika Anda mengubah tingkat akses, hal itu mungkin akan mengakibatkan biaya tambahan. Untuk informasi selengkapnya, [lihat Azure Blob Storage: Tingkatan penyimpanan hot dan cool](http://go.microsoft.com/fwlink/?LinkId=786482).
-Jika akun Storage memiliki Kind as StorageV2 atau BlobStorage, Anda dapat menentukan parameter *AccessTier.* Jika akun Storage memiliki Jenis sebagai Storage, jangan tentukan parameter *AccessTier.*
+Jika akun Storage memiliki Kind as StorageV2 atau BlobStorage, Anda dapat menentukan parameter *AccessTier*. Jika akun Storage memiliki Jenis sebagai Storage, jangan tentukan parameter *AccessTier*.
 
 ```yaml
 Type: System.String
@@ -596,7 +599,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHttpsTrafficOnly
-Menunjukkan apakah akun Storage mengaktifkan lalu lintas HTTPS saja.
+Menunjukkan apakah akun Storage hanya mengaktifkan lalu lintas HTTPS.
 
 ```yaml
 Type: System.Boolean
@@ -626,7 +629,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Memaksakan perubahan untuk ditulis ke Storage tersebut.
+Memaksa perubahan untuk dituliskan ke Storage tersebut.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -838,7 +841,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk memodifikasi Storage tersebut.
+Menentukan nama grup sumber daya untuk memodifikasi akun Storage tersebut.
 
 ```yaml
 Type: System.String
@@ -890,11 +893,11 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Standard_ZRS - Penyimpanan berlebihan zona.
 - Standard_GRS - Penyimpanan geo berlebihan.
 - Standard_RAGRS - Membaca akses yang tidak ada lagi penyimpanan geo.
-- Premium_LRS - Premium lokal yang berlebihan.
+- Premium_LRS - Premium yang berlebihan secara lokal.
 - Standard_GZRS - Penyimpanan yang tidak berlebihan zona berulang geo.
 - Standard_RAGZRS - Membaca akses yang tidak berlebihan dalam zona penyimpanan yang berlebihan.
 Anda tidak bisa Standard_ZRS tipe Premium_LRS ke tipe akun lain.
-Anda tidak bisa mengubah tipe akun lain Standard_ZRS atau Premium_LRS.
+Anda tidak dapat mengubah tipe akun lain Standard_ZRS atau Premium_LRS.
 
 ```yaml
 Type: System.String
@@ -1016,7 +1019,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

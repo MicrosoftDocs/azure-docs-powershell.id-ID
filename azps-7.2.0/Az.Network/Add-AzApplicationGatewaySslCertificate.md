@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 067c781a18a64f2bbd8710f23bb162c075a30bcb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 59ef1bfb36d5ab8e890ed5bf793dfec2fcd5836b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295817"
 ---
 # Add-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat SSL ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewaysslcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

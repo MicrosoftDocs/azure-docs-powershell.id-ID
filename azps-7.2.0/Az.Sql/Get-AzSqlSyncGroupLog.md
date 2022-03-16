@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroupLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroupLog.md
-ms.openlocfilehash: 483c44a1f1631c3bf653700e44b4ce0dd0bf8ab7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: be78c8e55bd2114012c90e7bbf70a04f77593843
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277724"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140262505"
 ---
 # Get-AzSqlSyncGroupLog
 
 ## SYNOPSIS
 Mengembalikan log grup Azure SQL Database Disinkronkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlsyncgrouplog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ TimeStamp            LogLevel Details                                   Source
 6/13/2017 7:11:59 AM Success  Schema information obtained successfully. fangltest2.database.windows.net/fangltest
 ```
 
-Perintah ini mendapatkan log Grup Sinkronisasi Azure SQL Baru.
+Perintah ini mendapatkan log Grup Sinkronisasi Azure SQL otomatis.
 
 ## PARAMETERS
 
