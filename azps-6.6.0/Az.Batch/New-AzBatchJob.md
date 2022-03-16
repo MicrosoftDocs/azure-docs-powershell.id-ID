@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJob.md
-ms.openlocfilehash: fcd92633abfe5f06f3754f493462bc01af96e55c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f5fa767b96f910de7b078ff8f69184f9849c5039
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353765"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944439"
 ---
 # New-AzBatchJob
 
 ## SYNOPSIS
 Membuat pekerjaan di layanan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ New-AzBatchJob [-Id] <String> [-CommonEnvironmentSettings <IDictionary>] [-Displ
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchJob** membuat pekerjaan dalam layanan Kumpulan Azure di akun yang ditentukan oleh parameter *BatchAccountContext.*
+Cmdlet **New-AzBatchJob** membuat pekerjaan dalam layanan Kumpulan Azure di akun yang ditentukan oleh parameter *BatchAccountContext* .
 
 ## EXAMPLES
 
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

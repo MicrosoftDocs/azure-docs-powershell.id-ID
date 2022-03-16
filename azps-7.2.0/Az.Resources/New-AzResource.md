@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResource.md
-ms.openlocfilehash: 55e46aea46fa78647eee5baf2f0213aa207f8c24
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bbd223ee528d5f8706e453789bed33038b5012a3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169010"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117025"
 ---
 # New-AzResource
 
 ## SYNOPSIS
 Membuat sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresource) untuk informasi terkini.
 
 ## SYNTAX
 

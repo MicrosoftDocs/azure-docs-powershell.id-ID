@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResourceGroup.md
-ms.openlocfilehash: ec759ec27554c68789daa74113f30fadb29c411a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f33094398c1f5754eaad21dfa4028973c5358598
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301931"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083781"
 ---
 # Set-AzResourceGroup
 
 ## SYNOPSIS
 Mengubah grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azresourcegroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,9 +60,9 @@ PS C:> (Get-AzResourceGroup -Name "ContosoRG").Tags
 ```
 
 Contoh ini menambahkan tag Status dengan nilai Disetujui dan tag FY2016 ke grup sumber daya yang memiliki tag yang sudah ada. Karena tag yang ditentukan akan menggantikan tag yang sudah ada, Anda harus menyertakan tag yang sudah ada dalam kumpulan tag baru atau kehilangan tag tersebut.
-Perintah pertama mendapatkan grup sumber daya ContosoRG dan menggunakan metode titik untuk mendapatkan nilai properti Tag. Perintah menyimpan tag di $Tags variabel.
+Perintah pertama mendapatkan grup sumber daya ContosoRG dan menggunakan metode titik untuk mendapatkan nilai properti Tag. Perintah menyimpan tag dalam $Tags variabel.
 Perintah kedua mendapatkan tag di $Tags variabel.
-Perintah ketiga menggunakan operator penetapan += untuk menambahkan tag Status dan FY2016 ke larik tag dalam $Tags variabel.
+Perintah ketiga menggunakan operator penetapan += untuk menambahkan tag Status dan FY2016 ke larik tag di $Tags penerima.
 Perintah keempat menggunakan parameter *Tag* **Set-AzResourceGroup** untuk menerapkan tag di variabel $Tags ke grup sumber daya ContosoRG.
 Perintah kelima adalah semua tag yang diterapkan ke grup sumber daya ContosoRG. Output memperlihatkan bahwa grup sumber daya memiliki tag Departemen dan dua tag baru, Status dan FY2015.
 

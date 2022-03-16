@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualHubVnetConnection.md
-ms.openlocfilehash: 868e46defeef775f461db313d73cf04f653d3f13
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 798882d3962292f50d86aef09a08190e885f2dbc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300924"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085635"
 ---
 # Update-AzVirtualHubVnetConnection
 
 ## SYNOPSIS
 Memperbarui HubVirtualNetworkConnection yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azvirtualhubvnetconnection) untuk informasi terkini.
 
 ## SYNTAX
 

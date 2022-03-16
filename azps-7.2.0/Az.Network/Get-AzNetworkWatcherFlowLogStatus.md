@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLogStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherFlowLogStatus.md
-ms.openlocfilehash: c5abda935844e0fcfa76343c4898c9fad2dc29b8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: be2876a7ffbcade629667346cc0b972cdb6bac04
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300075"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119077"
 ---
 # Get-AzNetworkWatcherFlowLogStatus
 
 ## SYNOPSIS
 Mendapatkan status pembuatan log aliran pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkwatcherflowlogstatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet Get-AzNetworkWatcherFlowLogStatus Mendapatkan status pembuatan log alur d
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan Flow Pembuatan Log untuk NSG tertentu
+### Contoh 1: Mendapatkan status Flow Pembuatan Log untuk NSG tertentu
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG

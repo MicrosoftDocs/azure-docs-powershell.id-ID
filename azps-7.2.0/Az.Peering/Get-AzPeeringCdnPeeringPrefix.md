@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringCdnPeeringPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringCdnPeeringPrefix.md
-ms.openlocfilehash: 3d43858c0b938ebad1490bc121c15ca8cd1653ac
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: adb2ca697075ecd5584cdb6ed3024bbdbcdde0dd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269963"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085257"
 ---
 # Get-AzPeeringCdnPeeringPrefix
 
 ## SYNOPSIS
 Mencantumkan semua prefiks yang diiklankan untuk cdn di lokasi peering tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeeringcdnpeeringprefix) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 
 ### -PeeringLocation
 Lokasi Fisik Berbeda dari Azure Region.
-Gunakan Get-AzPeeringLocation -Jenis \<kind\> gunakan Nama Kota sebagai kunci untuk memeriksa apakah lokasi peering sudah ada atau Gunakan Get-AzPeeringLocation -Kind \<kind\> untuk mendapatkan semua lokasi peering untuk dipilih.
+Gunakan Get-AzPeeringLocation -Jenis \<kind\> gunakan Nama Kota sebagai kunci untuk memeriksa apakah lokasi peering ada atau Gunakan Get-AzPeeringLocation -Kind \<kind\> untuk mendapatkan semua lokasi peering untuk dipilih.
 
 ```yaml
 Type: System.String

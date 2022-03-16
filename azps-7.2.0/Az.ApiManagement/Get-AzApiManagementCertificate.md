@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementCertificate.md
-ms.openlocfilehash: 2873e858020daa8bd27c3aaa881832050d11cd48
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e7688a234a2914c282d30e8bc8752fa0c9e904c5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964895"
 ---
 # Get-AzApiManagementCertificate
 
 ## SYNOPSIS
 Mendapatkan sertifikat Manajemen API yang dikonfigurasi untuk Autentikasi Bersama dengan Backend dalam layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

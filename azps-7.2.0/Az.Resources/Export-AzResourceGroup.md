@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/export
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
-ms.openlocfilehash: 9f78bc9fc55a0341a797b46c07eca33f04ce800b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bd899fd257836292dcfe8b33e5c57008345f4346
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117475"
 ---
 # Export-AzResourceGroup
 
 ## SYNOPSIS
 Merekam grup sumber daya sebagai templat dan menyimpannya ke file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/export-azresourcegroup) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchCertificate.md
-ms.openlocfilehash: b730ffa1e5d58e8f9bfc3ba469592b74dbe26ae9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d5939adfe589de8b61ffe7597a3e455831499cfa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343829"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944583"
 ---
 # Get-AzBatchCertificate
 
 ## SYNOPSIS
 Dapatkan sertifikat dalam akun Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Get-AzBatchCertificate [-ThumbprintAlgorithm] <String> [-Thumbprint] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchCertificate** mendapatkan sertifikat dalam akun Kumpulan Azure yang ditentukan oleh parameter *BatchContext.*
-Untuk mendapatkan sertifikat tertentu, tentukan *parameter ThumbprintAlgorithm* *dan Thumbprint.*
+Cmdlet **Get-AzBatchCertificate** mendapatkan sertifikat dalam akun Kumpulan Azure yang ditentukan oleh parameter *BatchContext* .
+Untuk mendapatkan sertifikat tertentu, tentukan *parameter ThumbprintAlgorithm* *dan Thumbprint* .
 Tentukan parameter *Filter* untuk mendapatkan sertifikat yang cocok dengan filter Open Data Protocol (OData).
 
 ## EXAMPLES
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint.*
+Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint* .
 Saat ini, satu-satunya nilai valid adalah bayangan1.
 
 ```yaml
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

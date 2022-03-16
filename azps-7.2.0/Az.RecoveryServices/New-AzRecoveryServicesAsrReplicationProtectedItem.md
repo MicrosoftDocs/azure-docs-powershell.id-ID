@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrReplicationProtectedItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrReplicationProtectedItem.md
-ms.openlocfilehash: 592d8612921f3d04abac24e83f545bcd8539213c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4ecb3c452dc826bdec2455683ffb27d7c1f40757
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253212"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084339"
 ---
 # New-AzRecoveryServicesAsrReplicationProtectedItem
 
 ## SYNOPSIS
 Memungkinkan replikasi untuk item ASR yang dapat diproteksi dengan membuat item replikasi yang diproteksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrreplicationprotecteditem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -928,7 +931,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServerLicenseType
-Tentukan tipe SQL Server lisensi VM.
+Tentukan SQL Server lisensi VM.
 
 ```yaml
 Type: System.String

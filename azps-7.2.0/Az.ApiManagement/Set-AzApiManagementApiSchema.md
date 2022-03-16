@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApiSchema.md
-ms.openlocfilehash: 39baf3afc839107ef5fcb888e10877b9cc894992
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2905089a29ee0da40662bcf450f2245f23ff5db5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268300"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964553"
 ---
 # Set-AzApiManagementApiSchema
 
 ## SYNOPSIS
 Mengubah Skema API
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapischema) untuk informasi terkini.
 
 ## SYNTAX
 

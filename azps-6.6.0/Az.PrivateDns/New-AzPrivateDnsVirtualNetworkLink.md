@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/New-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsVirtualNetworkLink.md
-ms.openlocfilehash: d65018acd46c280c48e995fa8c144979ed55dc63
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 534b74af828dcc5a46a4dee1e9511c247c634d42
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156482"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139970745"
 ---
 # New-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
 Membuat link jaringan virtual DNS privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/new-azprivatednsvirtualnetworklink) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ New-AzPrivateDnsVirtualNetworkLink -ResourceGroupName <String> -ZoneName <String
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateDnsVirtualNetworkLink** membuat link jaringan virtual Sistem Nama Domain (DNS) privat baru di grup sumber daya dan zona privat yang ditentukan. Anda harus menentukan nama link unik *untuk* parameter Nama atau cmdlet akan mengembalikan kesalahan. Anda dapat menggunakan *parameter Konfirmasi* dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **New-AzPrivateDnsVirtualNetworkLink** membuat link jaringan virtual Sistem Nama Domain (DNS) privat baru di grup sumber daya dan zona privat yang ditentukan. Anda harus menentukan nama link *unik untuk parameter* Nama atau cmdlet akan mengembalikan kesalahan. Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -65,7 +68,7 @@ VirtualNetworkLinkState : Completed
 ProvisioningState       : Succeeded
 ```
 
-Perintah ini membuat link jaringan virtual baru yang terkait dengan zona DNS privat bernama myzone.com dan jaringan virtual "myvirtualnetwork" (yang sudah dibuat di grup sumber daya) di grup sumber daya yang ditentukan, lalu menyimpannya di variabel $Link.
+Perintah ini membuat link jaringan virtual baru yang terkait dengan zona DNS privat bernama myzone.com dan jaringan virtual "myvirtualnetwork" (yang sudah dibuat dalam grup sumber daya) di grup sumber daya yang ditentukan, lalu menyimpannya di variabel $Link.
 
 ## PARAMETERS
 
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

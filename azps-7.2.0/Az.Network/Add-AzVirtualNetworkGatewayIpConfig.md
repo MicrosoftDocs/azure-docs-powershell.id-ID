@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkGatewayIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkGatewayIpConfig.md
-ms.openlocfilehash: 9cc600cbec795bd91935cf86b7db429fa2cbe245
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0103bd8cc27e8d27c7879976311bd3cb6a058a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119509"
 ---
 # Add-AzVirtualNetworkGatewayIpConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP ke gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvirtualnetworkgatewayipconfig) untuk informasi terkini.
 
 ## SYNTAX
 

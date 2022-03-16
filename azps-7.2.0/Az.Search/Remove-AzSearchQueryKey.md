@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchQueryKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchQueryKey.md
-ms.openlocfilehash: e68b97097c312929ccc7686c2513a5816b4eccd6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0e6eaeb101d193c77cd3307927e2924a57e10df6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165608"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116845"
 ---
 # Remove-AzSearchQueryKey
 
 ## SYNOPSIS
 Hapus kunci kueri dari layanan Pencarian Kognitif Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/remove-azsearchquerykey) untuk informasi terkini.
 
 ## SYNTAX
 

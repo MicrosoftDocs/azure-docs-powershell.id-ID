@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Remove-AzPostgreSqlFlexibleServerDatabase.md
-ms.openlocfilehash: f9ccc107af86dd4a14ef0407813b810637d349f6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f949c00b06d31c2e76317897a5af3969a86c144
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283099"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085005"
 ---
 # Remove-AzPostgreSqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Menghapus database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/remove-azpostgresqlflexibleserverdatabase) untuk informasi terkini.
 
 ## SYNTAX
 

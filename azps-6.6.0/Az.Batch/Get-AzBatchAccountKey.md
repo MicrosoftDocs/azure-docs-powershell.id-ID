@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchAccountKey.md
-ms.openlocfilehash: fb06d3bf2f33586c48d01452fad409b1881d3606
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b212750278917a89f69608bc5697c11a7ec8e977
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343877"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944637"
 ---
 # Get-AzBatchAccountKey
 
 ## SYNOPSIS
 Dapatkan kunci akun Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Cmdlet **Get-AzBatchAccountKey** mendapatkan kunci akun Azure Batch di langganan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kunci akun kumpulan dan simpan di variabel $Context untuk digunakan nanti
+### Contoh 1: Dapatkan kunci akun kumpulan dan simpan di $Context baru untuk digunakan nanti
 ```
 PS C:\>$Context = Get-AzBatchAccountKey -AccountName myaccount
 ```
 
-Perintah ini akan mendapatkan detail akun dan menyimpannya dalam `$Context` objek untuk digunakan nanti.
+Perintah ini akan mendapatkan detail akun dan menyimpannya dalam objek `$Context` untuk digunakan nanti.
 
 ### Contoh 2: Dapatkan kunci akun kumpulan dan tampilkan kunci
 ```
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

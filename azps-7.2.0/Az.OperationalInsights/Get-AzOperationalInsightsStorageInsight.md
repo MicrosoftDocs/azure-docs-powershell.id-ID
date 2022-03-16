@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 474cb44232d5b3611c51b109ca6c8db98192045a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2801f657b7ccc13868222514228afab2de1d4cc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272315"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118123"
 ---
 # Get-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Storage Insight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightsstorageinsight) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "Conto
 PS C:\>Get-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight"
 ```
 
-Perintah pertama menggunakan cmdlet **Get-AzOperationalInsightsWorkspace** untuk mendapatkan ruang kerja Insights Operasional, lalu menyimpannya dalam variabel $Workspace.
+Perintah pertama menggunakan cmdlet **Get-AzOperationalInsightsWorkspace** untuk mendapatkan ruang kerja Insights Operasional, lalu menyimpannya dalam variabel $Workspace tertentu.
 Perintah kedua mendapatkan wawasan penyimpanan bernama MyStorageInsight untuk ruang kerja di $Workspace.
 
 ## PARAMETERS
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceName
-Menentukan nama ruang kerja yang berisi Storage Insights.
+Menentukan nama ruang kerja yang berisi karakter Storage Insights.
 
 ```yaml
 Type: System.String
@@ -149,6 +152,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 

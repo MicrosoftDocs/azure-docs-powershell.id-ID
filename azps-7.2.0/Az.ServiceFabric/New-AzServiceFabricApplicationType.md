@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricApplicationType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricApplicationType.md
-ms.openlocfilehash: a2e1b157e592a84d5a8404559fe23b7f8b1da5a5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 43f6df3c5e3f6ac6fea326310627eeb329203a64
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317643"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116143"
 ---
 # New-AzServiceFabricApplicationType
 
 ## SYNOPSIS
 Create new service fabric application type under the specified resource group and cluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricapplicationtype) untuk informasi terkini.
 
 ## SYNTAX
 

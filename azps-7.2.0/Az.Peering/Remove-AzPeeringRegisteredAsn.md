@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredAsn.md
-ms.openlocfilehash: 3ac935e9d41bc9a01f1da4ec8942b27111e6dcb5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c3197852335c699027d6b31cbfce09e568f6549e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293035"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085204"
 ---
 # Remove-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
 Hapus atau hapus ASN terdaftar dari sumber daya peering induk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/remove-azpeeringregisteredasn) untuk informasi terkini.
 
 ## SYNTAX
 

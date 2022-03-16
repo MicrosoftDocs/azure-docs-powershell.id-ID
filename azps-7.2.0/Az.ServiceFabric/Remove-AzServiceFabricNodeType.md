@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricNodeType.md
-ms.openlocfilehash: 572bd8aea5b10d86e7f3389db4c64071feed21c7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 22a0b8ef61c73804d91b3006e755d2506b947fed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272123"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115963"
 ---
 # Remove-AzServiceFabricNodeType
 
 ## SYNOPSIS
 Menghapus tipe node lengkap dari kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricnodetype) untuk informasi terkini.
 
 ## SYNTAX
 

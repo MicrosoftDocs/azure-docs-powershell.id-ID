@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchComputeNode.md
-ms.openlocfilehash: aee17277c69b603fd6cc9e698575a430e69842bb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f9c715667cffc2155e7d133d523504ef9ec74947
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343817"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139944565"
 ---
 # Get-AzBatchComputeNode
 
 ## SYNOPSIS
 Dapatkan Kumpulan menghitung node dari kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchcomputenode) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Get-AzBatchComputeNode [[-Pool] <PSCloudPool>] [-Filter <String>] [-MaxCount <In
 
 ## DESCRIPTION
 Cmdlet **Get-AzBatchComputeNode** mendapatkan node perhitungan Azure Batch dari kumpulan.
-Tentukan parameter *PoolID* *atau Pool.*
+Tentukan parameter *PoolID* *atau Pool* .
 Tentukan parameter *Id* untuk mendapatkan node perhitungan tunggal.
 Tentukan parameter *Filter* untuk mendapatkan node perhitungan yang cocok dengan filter Open Data Protocol (OData).
 
@@ -67,7 +70,7 @@ Errors                :
 ```
 
 Perintah ini mendapatkan node hitung yang memiliki ID tvm-2316545714_1-20150725t213220z dari pool yang memiliki ID Pool06.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan semua node perhitungan diam dari kolam
 ```
@@ -106,7 +109,7 @@ Errors                :
 ```
 
 Perintah ini akan mendapatkan semua node hitung diam yang terdapat dalam pool yang memiliki ID Pool06.
-Perintah menentukan status diam dengan menggunakan *parameter Filter.*
+Perintah menentukan status diam dengan menggunakan *parameter Filter* .
 
 ### Contoh 3: Dapatkan semua node perhitungan dalam pool yang ditentukan
 ```
@@ -234,8 +237,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pool
-Menentukan kolam renang, sebagai objek **PSCloudPool,** yang berisi node perhitungan.
-Untuk mendapatkan objek **PSCloudPool,** gunakan cmdlet Get-AzBatchPool.
+Menentukan kolam renang, sebagai objek **PSCloudPool** , yang berisi node perhitungan.
+Untuk mendapatkan objek **PSCloudPool** , gunakan cmdlet Get-AzBatchPool.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudPool
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

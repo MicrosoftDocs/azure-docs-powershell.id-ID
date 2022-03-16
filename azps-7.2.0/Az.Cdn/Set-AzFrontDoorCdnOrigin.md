@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: 4ced7ad3c0efb4879cc8b2dba3fb385d0da3fb06
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1be8e95e87bb5d0d9b0b9fa85d114231cbd0152b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297115"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963095"
 ---
 # Set-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
 Memperbarui origin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnorigin) untuk informasi terkini.
 
 ## SYNTAX
 

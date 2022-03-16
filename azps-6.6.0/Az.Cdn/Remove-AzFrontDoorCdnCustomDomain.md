@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azfro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzFrontDoorCdnCustomDomain.md
-ms.openlocfilehash: 2b788aae7633f3f6779d2ba896d4c83f306a7080
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 349866552e351c38728ed98357a81b58f37bd326
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376387"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139943935"
 ---
 # Remove-AzFrontDoorCdnCustomDomain
 
 ## SYNOPSIS
 Menghapus domain kustom. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azfrontdoorcdncustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

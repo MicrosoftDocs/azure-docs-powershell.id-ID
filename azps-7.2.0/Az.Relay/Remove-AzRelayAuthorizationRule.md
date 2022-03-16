@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
-ms.openlocfilehash: d7ba3359c0818d8d63d13556c5bd255110548952
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 384267326da8f25b0f45d9ef8ba259321e391f14
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286299"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084159"
 ---
 # Remove-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi HybridConnection dari entitas Relay yang diberikan (Namespace/WcfIguy/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/remove-azrelayauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 

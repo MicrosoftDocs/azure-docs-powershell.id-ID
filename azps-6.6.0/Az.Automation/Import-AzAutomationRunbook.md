@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationRunbook.md
-ms.openlocfilehash: fa21a8ca2b22d74ea3fd6e79744dcd0baeee7f7a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 58068693edfc62d48a282b4f62e064adb7254f50
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385946"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945105"
 ---
 # Import-AzAutomationRunbook
 
 ## SYNOPSIS
 Mengimpor buku jalankan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/import-azautomationrunbook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Import-AzAutomationRunbook [-Path] <String> [-Description <String>] [-Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzAutomationRunbook** mengimpor runbook Azure Automation. Tentukan jalur ke file skrip wps_2 (.ps1) untuk diimpor ke wps_2 dan runbooks Alur Kerja wps_2, file (.graphrunbook) untuk runbooks grafis, atau file (.py) untuk python 2 runbooks. Untuk wps_2 runbooks Alur Kerja, skrip harus berisi satu wps_2 alur kerja yang cocok dengan nama file.
+Cmdlet **Import-AzAutomationRunbook** mengimpor runbook Azure Automation. Tentukan jalur ke file skrip wps_2 (.ps1) untuk diimpor ke runbooks wps_2 dan Alur Kerja wps_2, file (.graphrunbook) untuk runbooks grafis, atau file (.py) untuk python 2 runbooks. Untuk wps_2 runbooks Alur Kerja, skrip harus berisi satu wps_2 definisi Alur Kerja yang cocok dengan nama file.
 
 ## EXAMPLES
 
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Path
-Menentukan jalur file .ps1 atau .graphrunbook yang diimpor cmdlet ini.
+Menentukan jalur file .ps1 .graphrunbook yang diimpor cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Nilai valid adalah:
 - PowerShellWorkflow
 - GraphicalPowerShellWorkflow
 - Graph
-- Python2 Nilai Graph sudah tidak tnilai.
+- Python2 Nilai Graph sudah tidak t fungsi.
 Ini sama dengan GraphicalPowerShellWorkflow.
 
 ```yaml
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

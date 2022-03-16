@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Set-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Set-AzAnalysisServicesServer.md
-ms.openlocfilehash: 5cfa37dbaa3144c1b5d86da5a1a53c02afb0e2b5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e8e7cfab2b4c6b4f7dc7f6b71439cd1d88ca1b3d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315227"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964967"
 ---
 # Set-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Mengubah contoh server Analysis Services
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/set-azanalysisservicesserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Set-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>] [[
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzAnalysisServicesServer cmdlet mengubah contoh server Analysis Services
+Cmdlet Set-AzAnalysisServicesServer cmdlet mengubah instans server Analysis Services
 
 ## EXAMPLES
 

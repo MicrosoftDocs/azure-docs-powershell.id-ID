@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
-ms.openlocfilehash: 9563dd87ab97c4a6500e6662e2e030feee9c8b33
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d10fc4d0b543ac39913ee2aa851f0fd890a84bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083997"
 ---
 # New-AzResourceGroup
 
 ## SYNOPSIS
 Membuat grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcegroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzResourceGroup [-Name] <String> [-Location] <String> [-Tag <Hashtable>] [-F
 ## DESCRIPTION
 Cmdlet **New-AzResourceGroup** membuat grup sumber daya Azure.
 Anda bisa membuat grup sumber daya hanya dengan menggunakan nama dan lokasi, lalu menggunakan cmdlet New-AzResource untuk membuat sumber daya untuk ditambahkan ke grup sumber daya.
-Untuk menambahkan penyebaran ke grup sumber daya yang ada, gunakan cmdlet New-AzResourceGroupDeployment cmdlet. Untuk menambahkan sumber daya ke grup sumber daya yang sudah ada, gunakan cmdlet **New-AzResource** . Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web. Grup sumber daya Azure adalah kumpulan sumber daya Azure yang digunakan sebagai unit.
+Untuk menambahkan penyebaran ke grup sumber daya yang sudah ada, gunakan cmdlet New-AzResourceGroupDeployment cmdlet. Untuk menambahkan sumber daya ke grup sumber daya yang sudah ada, gunakan cmdlet **New-AzResource** . Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web. Grup sumber daya Azure adalah kumpulan sumber daya Azure yang digunakan sebagai unit.
 
 ## EXAMPLES
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"} Untuk menambahkan atau mengubah tag, Anda harus mengganti kumpulan tag untuk grup sumber daya tersebut.
-Setelah menetapkan tag untuk sumber daya dan grup, Anda bisa menggunakan parameter *Tag* dari Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup dengan nama tag atau menurut nama dan nilai. Anda bisa menggunakan tag untuk mengkategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya tersebut.
+Setelah menetapkan tag ke sumber daya dan grup, Anda bisa menggunakan parameter *Tag* dari Get-AzResource dan Get-AzResourceGroup untuk mencari sumber daya dan grup dengan nama tag atau menurut nama dan nilai. Anda bisa menggunakan tag untuk mengkategorikan sumber daya Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya tersebut.
 Untuk mendapatkan tag yang sudah ditentukan sebelumnya, gunakan cmdlet Get-AzTag baru.
 
 ```yaml

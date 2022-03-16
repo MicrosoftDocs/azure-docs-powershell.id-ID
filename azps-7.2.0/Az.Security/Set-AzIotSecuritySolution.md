@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
-ms.openlocfilehash: 2e6543ca204439e828ac390db40d79c3b3773654
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6ac4468a98a490c01029527d0c5f0f303ea84d2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116557"
 ---
 # Set-AzIotSecuritySolution
 
 ## SYNOPSIS
 Membuat atau memperbarui solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-aziotsecuritysolution) untuk informasi terkini.
 
 ## SYNTAX
 

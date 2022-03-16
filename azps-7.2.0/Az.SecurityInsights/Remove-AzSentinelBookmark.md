@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelBookmark.md
-ms.openlocfilehash: 8e5e270d7323e8bca0a754730c2c48acb2f9b6fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a9a0517b489085f0f4e58da4dc617ba3086f3bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288491"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116503"
 ---
 # Remove-AzSentinelBookmark
 
 ## SYNOPSIS
 Menghapus Bookmark.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelbookmark) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzSentinelBookmark -InputObject <PSSentinelBookmark> [-PassThru]
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelBookmark** menghapus Bookmark secara permanen dari ruang kerja tertentu.
 Anda bisa melewati objek Bookmark dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan variabel $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 

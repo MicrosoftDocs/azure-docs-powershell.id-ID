@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPublicIpPrefix.md
-ms.openlocfilehash: 76a8b6dc4157edd921136505961be1929f940f99
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e128694d3e698181ed0228cf36febec9bbb835e0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276027"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118861"
 ---
 # Get-AzPublicIpPrefix
 
 ## SYNOPSIS
 Mendapatkan prefiks IP publik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azpublicipprefix) untuk informasi terkini.
 
 ## SYNTAX
 

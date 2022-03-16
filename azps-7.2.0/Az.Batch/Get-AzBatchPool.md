@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchPool.md
-ms.openlocfilehash: 084787b87e89d05a4330a74a3e1295bf6972a58d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d28177e15574db788e601f50eb899f5e47202b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280156"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963761"
 ---
 # Get-AzBatchPool
 
 ## SYNOPSIS
 Dapatkan kolam renang Batch di bawah akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchpool) untuk informasi terkini.
 
 ## SYNTAX
 

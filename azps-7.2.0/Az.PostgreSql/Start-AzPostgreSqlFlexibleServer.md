@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/start
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Start-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Start-AzPostgreSqlFlexibleServer.md
-ms.openlocfilehash: 95bc722b53d7a59540878dca08c7ce1110ae9a61
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5c1329315299fb614d58b5cb99b80fa5c83d70a6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139951818"
 ---
 # Start-AzPostgreSqlFlexibleServer
 
 ## SYNOPSIS
 Memulai server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/start-azpostgresqlflexibleserver) untuk informasi terkini.
 
 ## SYNTAX
 

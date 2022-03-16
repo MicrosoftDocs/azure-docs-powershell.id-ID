@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubDefaultRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Remove-AzProviderHubDefaultRollout.md
-ms.openlocfilehash: ecacbcd14c617b76abd3c8be5f624c46b0e49d3d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1cc5a54238bee9a39f071694719a8dcf836eca48
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084663"
 ---
 # Remove-AzProviderHubDefaultRollout
 
 ## SYNOPSIS
 Menghapus sumber daya peluncuran.
 Peluncuran harus dalam keadaan terminal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.providerhub/remove-azproviderhubdefaultrollout) untuk informasi terkini.
 
 ## SYNTAX
 

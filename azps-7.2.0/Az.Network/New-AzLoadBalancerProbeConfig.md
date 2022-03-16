@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: a006a14f6c5d003d7cd42baf02d5616212c99d0d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 65f4289e97aa9acf7f9fb36ba2b6248fac443da2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085977"
 ---
 # New-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
 Membuat konfigurasi configuration configuration for a load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalancerprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 

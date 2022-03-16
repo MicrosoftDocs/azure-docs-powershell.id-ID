@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricVmImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricVmImage.md
-ms.openlocfilehash: 6743329d9f77c8f197c0c3448f899742d018dab1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: deada1ac27ee19eeb31ac0437396a63df5ce73b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115855"
 ---
 # Update-AzServiceFabricVmImage
 
 ## SYNOPSIS
 
 Perbarui pengaturan vmImage sumber daya kluster yang memetakan paket runtime yang sesuai untuk dikirimkan berdasarkan sistem operasi target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricvmimage) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceLock.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceLock.md
-ms.openlocfilehash: 5d01fee5b2a2256475853db816081764b0108b31
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1efd1e60db74a7782118bfd6eaf02dc5d31c9f92
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301964"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117007"
 ---
 # New-AzResourceLock
 
 ## SYNOPSIS
 Membuat kunci sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcelock) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: c5057f7ec0d0017ed9af5a4f87c6f038e5c30351
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2dcd16432db10cd48c134175857e784b66e8bf38
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115927"
 ---
 # Set-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
 Update a service fabric managed application type version. Ini memungkinkan Anda untuk memperbarui url tag dan paket. Hanya mendukung versi tipe aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terkini.
 
 ## SYNTAX
 

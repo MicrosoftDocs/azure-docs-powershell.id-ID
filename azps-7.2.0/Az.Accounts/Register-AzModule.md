@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Register-AzModule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Register-AzModule.md
-ms.openlocfilehash: dd897f0f2f0577f173b2f3783dc093d8765e0ad2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e47a5c584a73d12ffcfbd92b252d574c4b6887fd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276476"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965093"
 ---
 # Register-AzModule
 
 ## SYNOPSIS
 UNTUK INTERNAL USE ONLY - Sediakan Dukungan Runtime untuk cmdlet Auto Runtime Generated
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/register-azmodule) untuk informasi terkini.
 
 ## SYNTAX
 

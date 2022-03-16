@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraCluster.md
-ms.openlocfilehash: e0733c87bbd6ec888d8e2698db9ac12e8f6a2e38
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 842b08f9e8e3f668ff8b49e21a58ede090623917
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266171"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962375"
 ---
 # Remove-AzManagedCassandraCluster
 
 ## SYNOPSIS
 Menghapus Azure Managed Instances untuk kluster Apache Apache Apache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandracluster) untuk informasi terkini.
 
 ## SYNTAX
 

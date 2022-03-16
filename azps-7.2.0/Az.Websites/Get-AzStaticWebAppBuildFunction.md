@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuildFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuildFunction.md
-ms.openlocfilehash: 5b6a1b3d4bcbdd65ecf8c2618ca900c3429fb254
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5cf6aa142c2971df27d52c19f272b975a4454c9a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168261"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139946915"
 ---
 # Get-AzStaticWebAppBuildFunction
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan fungsi dari build situs statis tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azstaticwebappbuildfunction) untuk informasi terkini.
 
 ## SYNTAX
 

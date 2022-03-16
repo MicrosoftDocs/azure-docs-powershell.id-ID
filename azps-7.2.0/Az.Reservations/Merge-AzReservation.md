@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/mer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Merge-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Merge-AzReservation.md
-ms.openlocfilehash: ca6e00351c4b2c98b71a84dfa94904e6fe876faf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a04d64147ea560ce89fdac78948935100ae3f21b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084141"
 ---
 # Merge-AzReservation
 
 ## SYNOPSIS
 Menggabungkan dua `Reservation`s.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.reservations/merge-azreservation) untuk informasi terkini.
 
 ## SYNTAX
 

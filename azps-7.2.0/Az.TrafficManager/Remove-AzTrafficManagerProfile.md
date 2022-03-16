@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerProfile.md
-ms.openlocfilehash: 0256e426151b45902dab82b6d91688b19d43fa04
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b2de39da97ef7543955b7f9f14726abdb94893ba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275532"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047073"
 ---
 # Remove-AzTrafficManagerProfile
 
 ## SYNOPSIS
 Menghapus profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzTrafficManagerProfile** menghapus Azure Traffic Manager profil.
+Cmdlet **Remove-AzTrafficManagerProfile** menghapus profil Azure Traffic Manager Anda.
 Tentukan profil untuk dihapus dengan menggunakan parameter *Nama* dan *ResourceGroupName* .
 Alternatifnya, Anda bisa menentukan **objek TrafficManagerProfile** menggunakan parameter *TrafficManagerProfile* , atau Anda bisa menggunakan saluran.
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** yang akan dihapus.
-Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile cmdlet.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile

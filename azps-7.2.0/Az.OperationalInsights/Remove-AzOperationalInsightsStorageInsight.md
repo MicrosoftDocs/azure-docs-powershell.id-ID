@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: a22f9eba27cc293e037e96156b5b2a59ff0c4664
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2c7f9cd02847596c48d13b06251934bdae9f9f3b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295259"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140085293"
 ---
 # Remove-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Menghapus Storage Insight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/remove-azoperationalinsightsstorageinsight) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet **Remove-AzOperationalInsightsStorageInsight** menghapus Storage Insight 
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Storage Insight menurut nama
+### Contoh 1: Menghapus Storage Insight menurut nama
 ```
 PS C:\>Remove-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight"
 ```
@@ -45,14 +48,14 @@ PS C:\>Remove-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoRes
 Perintah ini menghapus wawasan Storage bernama MyStorageInsight dari ruang kerja yang bernama MyWorkspace dalam grup sumber daya yang ditentukan.
 Perintah tidak menentukan parameter *Paksa*, sehingga akan meminta konfirmasi Anda sebelum menghapus Storage Insight.
 
-### Contoh 2: Menghapus Storage Insight tanpa konfirmasi
+### Contoh 2: Hapus Storage Insight tanpa konfirmasi
 ```
 PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
 PS C:\>Remove-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -Force
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace cmdlet untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya di $Workspace variabel. Perintah kedua menghapus wawasan penyimpanan yang bernama MyStorageInsight $Workspace tanpa meminta konfirmasi Anda.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace variabel. Perintah kedua menghapus wawasan penyimpanan yang bernama MyStorageInsight $Workspace tanpa meminta konfirmasi Anda.
 
 ## PARAMETERS
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceName
-Menentukan nama ruang kerja yang berisi wawasan Storage Wawasan.
+Menentukan nama ruang kerja yang berisi wawasan Storage.
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 [Get-AzOperationalInsightsWorkspace](./Get-AzOperationalInsightsWorkspace.md)
 

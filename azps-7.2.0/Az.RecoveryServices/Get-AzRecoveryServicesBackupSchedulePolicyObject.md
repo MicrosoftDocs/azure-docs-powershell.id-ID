@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupSchedulePolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupSchedulePolicyObject.md
-ms.openlocfilehash: eff9eafd5dbd073aab40cfe065597e54fe98dfa9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: db1a69b65b1c831d3d9674d011aa928e083fd18e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165655"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140084465"
 ---
 # Get-AzRecoveryServicesBackupSchedulePolicyObject
 
 ## SYNOPSIS
 Mendapatkan objek kebijakan jadwal dasar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupschedulepolicyobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,8 +76,8 @@ PS C:\> $schedulePolicy.ScheduleInterval = 6
 PS C:\> $schedulePolicy.ScheduleWindowDuration = 14
 ```
 
-Perintah pertama mendapatkan **schedulePolicyObject basis jam**, lalu menyimpannya dalam $schedulePolicy variabel.
-Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu dalam $schedulePolicy.
+Perintah pertama mendapatkan **SchedulePolicyObject basis jam**, lalu menyimpannya dalam $schedulePolicy per jam.
+Perintah kedua dan ketiga mengambil zona waktu dan memperbarui zona waktu pada $schedulePolicy.
 Perintah keempat dan kelima memulai waktu mulai jendela jadwal dan memperbarui $schedulePolicy. Harap diperhatikan bahwa waktu mulai harus dalam UTC meskipun zona waktu tidak UTC. Perintah keenam dan ketujuh memperbarui interval (dalam jam) setelah itu cadangan akan dibuat ulang di hari yang sama, durasi (dalam jam) di mana jadwal akan dijalankan.
 
 ## PARAMETERS

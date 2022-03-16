@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementSubscription.md
-ms.openlocfilehash: c635722e63d909fc53ba85dce4fc5dd5fdc5e892
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bd187c38d894484c05bc9c0b76607e76a923b45c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166138"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964499"
 ---
 # Set-AzApiManagementSubscription
 
 ## SYNOPSIS
 Mengatur detail langganan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementsubscription) untuk informasi terkini.
 
 ## SYNTAX
 

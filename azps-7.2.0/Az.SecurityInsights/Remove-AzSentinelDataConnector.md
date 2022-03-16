@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelDataConnector.md
-ms.openlocfilehash: 083b741c932efbd97c2021e2d26ce6ce809a17f1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ece64bf2cca0dbbb1a024f18529f991899e3267
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288476"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116467"
 ---
 # Remove-AzSentinelDataConnector
 
 ## SYNOPSIS
 Menghapus Konektor Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/remove-azsentineldataconnector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzSentinelDataConnector -InputObject <PSSentinelDataConnector> [-PassThru
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelDataConnector** secara permanen menghapus Konektor Data dari ruang kerja tertentu.
 Anda bisa meneruskan objek **DataConnector** dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan variabel $ConfirmPreference Windows PowerShell konfirmasi dan parameter Konfirmasi untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 

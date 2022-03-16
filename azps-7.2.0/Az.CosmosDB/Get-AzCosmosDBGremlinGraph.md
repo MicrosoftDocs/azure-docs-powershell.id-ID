@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraph.md
-ms.openlocfilehash: b18e902a406da29989ae8f6bea02eb192e7d61fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 85c2838956004d5d04d5cf662a48aea92b4b319b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260251"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962661"
 ---
 # Get-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
 Dapatkan Graph CosmosDB Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbgremlingraph) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Add-AzIoTDeviceProvisioningServiceCertificate.md
-ms.openlocfilehash: a7f85090701b5f1bff2173418835597ae17c31bc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d6c331fc485ac17b88e17ee17d1329b84cf22507
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376219"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139940137"
 ---
 # Add-AzIoTDeviceProvisioningServiceCertificate
 
 ## SYNOPSIS
 Membuat/memperbarui sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/add-aziotdeviceprovisioningservicecertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Add-AzIoTDeviceProvisioningServiceCertificate [-ResourceId] <String> [-Certifica
 
 ## DESCRIPTION
 Mengunggah sertifikat baru atau mengganti sertifikat yang sudah ada dengan nama yang sama.
-Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates .
+Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpGcA=
 ```
 
-Upload file CER sertifikat CA ke layanan penyediaan perangkat Azure IoT Hub.
+Upload file SERTIFIKAT CA CER ke layanan penyediaan perangkat Azure IoT Hub.
 
 ### Contoh 2
 ```
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

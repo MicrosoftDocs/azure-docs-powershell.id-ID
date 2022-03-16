@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADSpCredential.md
-ms.openlocfilehash: 775f4079a5edc6388cba9f380a1d5549f1bd23ac
-ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
+ms.openlocfilehash: 0169400ad7b1f090b2c14bb7fb434082c3e9a941
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "138875683"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083889"
 ---
 # Remove-AzADSpCredential
 
@@ -18,6 +18,9 @@ ms.locfileid: "138875683"
 Menghapus kredensial kunci atau kredensial kata sandi untuk prinsipal layanan.
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azadspcredential) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -230,7 +233,7 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek prinsipal layana
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama ditampilkan dalam direktori
   - `[AccountEnabled <Boolean?>]`: true jika akun prinsipal layanan diaktifkan; jika tidak, false. Mendukung $filter (eq, ne, NOT, in).
-  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan oleh layanan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat menyajikan streaming file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'. Ini akan memungkinkan layanan Microsoft 365 panggilan aplikasi dalam konteks dokumen yang sedang digunakan pengguna.
+  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan oleh layanan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat menyajikan streaming file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'. Ini akan memungkinkan layanan Microsoft 365 anda panggil aplikasi dalam konteks dokumen yang sedang digunakan pengguna.
     - `[Id <String>]`: 
     - `[Property <IMicrosoftGraphKeyValue[]>]`: 
       - `[Key <String>]`: Kunci.
@@ -298,7 +301,7 @@ SERVICEPRINCIPALOBJECT <IMicrosoftGraphServicePrincipal>: Objek prinsipal layana
     - `[StartDateTime <DateTime?>]`: Tanggal dan waktu saat kredensial menjadi valid. Tipe Timestamp menunjukkan informasi tanggal dan waktu menggunakan format ISO 8601 dan selalu dalam waktu UTC. Misalnya, midnight UTC pada 1 Jan 2014 adalah 2014-01-01T00:00:00Z
     - `[Type <String>]`: Tipe kredensial kunci; misalnya, 'Simetri'.
     - `[Usage <String>]`: String yang menjelaskan tujuan untuk menggunakan kunci; misalnya, 'Verifikasi'.
-  - `[LoginUrl <String>]`: Menentukan URL tempat penyedia layanan mengalihkan pengguna ke Azure AD untuk mengautentikasi. Azure AD menggunakan URL untuk meluncurkan aplikasi dari Microsoft 365 atau Aplikasi Azure AD Saya. Ketika kosong, Azure AD melakukan masuk yang dimulai IdP untuk aplikasi yang dikonfigurasi dengan akses masuk tunggal berbasis SAML. Pengguna meluncurkan aplikasi tersebut dari Microsoft 365, Azure AD My Apps, atau URL SSO Azure AD.
+  - `[LoginUrl <String>]`: Menentukan URL tempat penyedia layanan mengalihkan pengguna ke Azure AD untuk mengautentikasi. Azure AD menggunakan URL untuk meluncurkan aplikasi dari Microsoft 365 atau Aplikasi Azure AD Saya. Ketika kosong, Azure AD melakukan masuk yang dimulai IdP untuk aplikasi yang dikonfigurasi dengan akses masuk tunggal berbasis SAML. Pengguna meluncurkan aplikasi tersebut dari Microsoft 365, URL Aplikasi Saya Azure AD, atau URL SSO Azure AD.
   - `[LogoutUrl <String>]`: Menentukan URL yang akan digunakan oleh layanan otorisasi Microsoft untuk membuat logo pengguna menggunakan protokol OpenId Koneksi saluran depan, saluran belakang, atau logout SAML.
   - `[Note <String>]`: Bidang teks gratis untuk merekam informasi tentang prinsipal layanan, biasanya digunakan untuk tujuan operasional. Ukuran maksimal yang diperbolehkan adalah 1024 karakter.
   - `[NotificationEmailAddress <String[]>]`: Menentukan daftar alamat email di mana Azure AD mengirimkan pemberitahuan ketika sertifikat aktif mendekati tanggal kedaluwarsa. Ini hanya untuk sertifikat yang digunakan untuk menandatangani token SAML yang dikeluarkan untuk aplikasi Galeri Azure AD.

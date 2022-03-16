@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssVaultCertificateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmssVaultCertificateConfig.md
-ms.openlocfilehash: 49747b83f4fc5b55a48b85fe6d42dedde08a7427
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fa505198346b896edb7a8c3e203d2cb7d55a36e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346253"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139942477"
 ---
 # New-AzVmssVaultCertificateConfig
 
 ## SYNOPSIS
 Membuat konfigurasi sertifikat Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmssvaultcertificateconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 
 ### -CertificateUrl
 Menentukan URI sertifikat yang disimpan di Key Vault.
-Pengodean ini adalah pengodean base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: { "data \<Base64-encoded-certificate\> comments" ", "dataType http", "password unicode \<pfx-file-password\> " }
+Pengodean ini adalah pengodean base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: { "data":"\<Base64-encoded-certificate\>", "dataType http=pfx", "password http"\<pfx-file-password\>.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

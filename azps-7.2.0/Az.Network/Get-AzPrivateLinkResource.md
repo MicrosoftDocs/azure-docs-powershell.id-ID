@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzPrivateLinkResource.md
-ms.openlocfilehash: 937a0bb63920491549a0be8c83d06f55813b29a2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2f30318214fafefb88bcd335cc9b2782b5871158
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118933"
 ---
 # Get-AzPrivateLinkResource
 
 ## SYNOPSIS
 Mendapatkan sumber daya tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azprivatelinkresource) untuk informasi terkini.
 
 ## SYNTAX
 

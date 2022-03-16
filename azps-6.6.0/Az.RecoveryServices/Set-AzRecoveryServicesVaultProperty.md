@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Set-AzRecoveryServicesVaultProperty.md
-ms.openlocfilehash: 2692302dae195a89c1b49350513376ba693c0d22
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dcb4cddbeb15c3109ac435cd42551189999b10d3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381707"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139970349"
 ---
 # Set-AzRecoveryServicesVaultProperty
 
 ## SYNOPSIS
 Memperbarui properti Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/set-azrecoveryservicesvaultproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName" -Name "
 PS C:\> $props = Set-AzRecoveryServicesVaultProperty -VaultId $vault.Id -SoftDeleteFeatureState Enable
 ```
 
-Perintah pertama akan mendapatkan objek Vault, lalu menyimpannya dalam $vault variabel.
+Perintah pertama akan mendapatkan objek Vault, lalu menyimpannya dalam $vault baru.
 Perintah kedua Memperbarui properti SoftDeleteFeatureState dari vault ke status "Diaktifkan".
 
 ### Contoh 2: Perbarui enkripsi CMK dari vault untuk menggunakan SystemAssigned MSIdentity
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

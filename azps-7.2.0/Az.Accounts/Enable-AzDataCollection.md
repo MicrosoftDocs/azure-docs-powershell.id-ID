@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzDataCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Enable-AzDataCollection.md
-ms.openlocfilehash: dec05e96149fea4e405eb13af0ed48988b17b29b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2750e32988f0813ceb0d6fbfe179be0b7acd1e43
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258059"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965201"
 ---
 # Enable-AzDataCollection
 
 ## SYNOPSIS
 Memungkinkan Azure PowerShell mengumpulkan data untuk meningkatkan pengalaman pengguna dengan cmdlet Azure PowerShell cmdlet. Menjalankan cmdlet ini memungkinkan pengumpulan data untuk pengguna saat ini di komputer saat ini. Data akan dikumpulkan secara default kecuali Anda secara eksplisit memilih untuk tidak mengikuti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/enable-azdatacollection) untuk informasi terkini.
 
 ## SYNTAX
 

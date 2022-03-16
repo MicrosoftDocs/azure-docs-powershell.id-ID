@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVmss.md
-ms.openlocfilehash: ac9605c4843b98e94a8d03568d9e74c776f5c923
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 13be190bf727fb30029b9353e41cf7e07398a54b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275292"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962969"
 ---
 # Update-AzVmss
 
 ## SYNOPSIS
 Memperbarui status VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/update-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -653,7 +656,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProvisionVMAgent
-Menunjukkan apakah agen mesin virtual harus disediakan pada Windows virtual yang ada dalam VMSS.
+Menunjukkan apakah agen mesin virtual harus disediakan pada Windows virtual dalam VMSS.
 
 ```yaml
 Type: System.Boolean
@@ -837,7 +840,7 @@ Accept wildcard characters: False
 
 ### -Zona Waktu
 Menentukan zona waktu untuk Windows OS. misalnya Waktu Standar \"Pasifik\". <br>
-Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
+Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [Zona WaktuInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
 
 ```yaml
 Type: System.String
