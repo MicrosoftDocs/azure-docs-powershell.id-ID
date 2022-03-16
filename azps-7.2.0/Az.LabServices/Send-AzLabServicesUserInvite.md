@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/send
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Send-AzLabServicesUserInvite.md
-ms.openlocfilehash: 10893c4e3f69b9e1dd4a1ef8201dc424126fda38
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1b1382beb097e4049cd1977f6fc1b9d283fe6ac9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276140"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140235259"
 ---
 # Send-AzLabServicesUserInvite
 
 ## SYNOPSIS
 Operasi untuk mengundang pengguna ke lab.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/send-azlabservicesuserinvite) untuk informasi terkini.
 
 ## SYNTAX
 

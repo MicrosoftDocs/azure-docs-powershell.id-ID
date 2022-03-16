@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 1d245785dce93194d41dc58777f9267a2cfd6191
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 75a9cbaf5d13fad7f9457d5048f1cdd555695a89
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254603"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122551"
 ---
 # New-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
 Menetapkan peran RBAC tertentu untuk pokok tertentu, pada lingkup yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 

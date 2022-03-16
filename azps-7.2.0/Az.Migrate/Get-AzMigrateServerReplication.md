@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateServerReplication.md
-ms.openlocfilehash: 5705ed39a03c2467ad1ce27ad9f955d021678eca
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d95666a406827e1f4721f5e5c9473f81c9ef101c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233819"
 ---
 # Get-AzMigrateServerReplication
 
 ## SYNOPSIS
 Mengambil detail server yang replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzMigrateServerReplication -ProjectID <String> -ResourceGroupID <String> [-S
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzMigrateServerReplication mengambil objek untuk server replika.
+Cmdlet Get-AzMigrateServerReplication mengambil objek untuk server replikasi.
 
 ## EXAMPLES
 
@@ -325,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupID
-Menentukan Grup Sumber Daya Grup Migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -340,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan Grup Sumber Daya Grup Migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
 
 ```yaml
 Type: System.String

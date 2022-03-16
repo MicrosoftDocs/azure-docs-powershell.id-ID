@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTrigger.md
-ms.openlocfilehash: 4935c2b0c7b0f173cfaaf7b2aa3433377c1d10b5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6a871d8d968ce204e0d10166d2319db6f367b3fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317962"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140235043"
 ---
 # Get-AzLogicAppTrigger
 
 ## SYNOPSIS
 Mendapatkan pemicu aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azlogicapptrigger) untuk informasi terkini.
 
 ## SYNTAX
 

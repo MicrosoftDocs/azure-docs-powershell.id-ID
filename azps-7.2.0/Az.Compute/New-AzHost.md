@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHost.md
-ms.openlocfilehash: eb57d36247a86620c82718447e3d125a912d4e65
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 576af7b5d8a23f85f40a13b2d022639664b3c4e3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272972"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092421"
 ---
 # New-AzHost
 
 ## SYNOPSIS
 Membuat host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azhost) untuk informasi terkini.
 
 ## SYNTAX
 

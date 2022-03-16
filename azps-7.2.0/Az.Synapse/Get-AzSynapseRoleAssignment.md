@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleAssignment.md
-ms.openlocfilehash: 000af35e2fd9b66cba262cd5496c7ce632cd4a25
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a6496f4a5a14a082116e4ce7253b1e84e7f4e1b0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168325"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260461"
 ---
 # Get-AzSynapseRoleAssignment
 
 ## SYNOPSIS
 Mendapatkan penetapan peran Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 

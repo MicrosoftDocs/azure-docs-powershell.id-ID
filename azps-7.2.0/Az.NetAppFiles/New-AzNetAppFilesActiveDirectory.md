@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: 3033eb02991ead0cc6e4268b06b89f7a54b00bb7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1b0685d07c68552e1a7601121eb64a37964490a6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312364"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232685"
 ---
 # New-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Membuat konfigurasi direktori aktif Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesactivedirectory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationalUnit
-Unit Organisasi (OU) di dalam Windows Direktori Aktif
+Unit Organisasi (OU) di dalam Windows Aktif
 
 ```yaml
 Type: System.String
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityOperator
-Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk berbagi SMB yang tersedia secara terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
+Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk BERBAGI SMB yang tersedia secara terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
 
 ```yaml
 Type: System.String[]

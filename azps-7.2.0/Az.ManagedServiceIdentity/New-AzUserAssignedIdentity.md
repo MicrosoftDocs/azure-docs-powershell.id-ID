@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedserviceid
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
-ms.openlocfilehash: 1ba6a4b2501afb99b172f66df4303a5b7eab3ab9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9f1c753f5d50c721c159ccb6a047ee8229fab31b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307819"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234395"
 ---
 # New-AzUserAssignedIdentity
 
 ## SYNOPSIS
 Membuat Identitas Ditetapkan Pengguna baru atau memperbarui Identitas yang Ditetapkan Pengguna yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedserviceidentity/new-azuserassignedidentity) untuk informasi terkini.
 
 ## SYNTAX
 

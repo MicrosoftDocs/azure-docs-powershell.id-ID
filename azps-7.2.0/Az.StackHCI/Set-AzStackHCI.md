@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/set-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Set-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Set-AzStackHCI.md
-ms.openlocfilehash: 57265ba0811fa46e9f585994d5f7ead65232f8f1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cbb7a07fc140e5ae7097f6d8916b4dbbbee342a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261101"
 ---
 # Set-AzStackHCI
 
 ## SYNOPSIS
 Set-AzStackHCI memodifikasi properti sumber daya dari sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal untuk mengaktifkan atau menonaktifkan fitur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/set-azstackhci) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableWSSubscription
-Menentukan apakah Windows Langganan Server harus diaktifkan atau dinonaktifkan.
+Menentukan apakah Windows Server Langganan harus diaktifkan atau dinonaktifkan.
 Mengaktifkan fitur ini akan memulai tagihan melalui langganan Azure untuk Windows lisensi tamu Server.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAccessToken
-Menentukan Graph akses token.
+Menentukan token Graph akses.
 Menentukan hal ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml

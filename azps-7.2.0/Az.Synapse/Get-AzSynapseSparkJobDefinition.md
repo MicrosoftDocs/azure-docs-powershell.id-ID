@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkJobDefinition.md
-ms.openlocfilehash: 06a42ccc1c32bcf0d30fadaa52e7557d23c2104d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4e5f879f7e7703f3556d9491ef461d0667f8ce67
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301772"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260443"
 ---
 # Get-AzSynapseSparkJobDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi pekerjaan Grafik Spark di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesparkjobdefinition) untuk informasi terkini.
 
 ## SYNTAX
 

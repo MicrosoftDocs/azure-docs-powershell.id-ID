@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/save-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Save-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Save-AzContext.md
-ms.openlocfilehash: b5e9f716241e34d16a9610bb5daa2256b2407350
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 99d4a9c9641985a2b0cef94ca732b82b287c4569
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270651"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094509"
 ---
 # Save-AzContext
 
 ## SYNOPSIS
 Menyimpan informasi autentikasi saat ini untuk digunakan di sesi PowerShell lainnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/save-azcontext) untuk informasi terkini.
 
 ## SYNTAX
 

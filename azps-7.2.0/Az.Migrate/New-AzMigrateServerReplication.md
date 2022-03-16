@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateServerReplication.md
-ms.openlocfilehash: 22535f52409d98c054d4ea4b5bd2f222c75352ca
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d6ded7ea37c24b47fd033dad6506d1e1db9c6b81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233801"
 ---
 # New-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memulai replikasi untuk server yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/new-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 

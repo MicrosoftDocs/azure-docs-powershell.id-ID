@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
-ms.openlocfilehash: f5399749ff0f7b0c64b010ac773ffc35f54cf11d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f5d99500d786b5c704f2684e971e23c6c639cbcf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164205"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260885"
 ---
 # Get-AzStorageBlobCopyState
 
 ## SYNOPSIS
 Mendapatkan status salinan suatu Azure Storage blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageblobcopystate) untuk informasi terkini.
 
 ## SYNTAX
 

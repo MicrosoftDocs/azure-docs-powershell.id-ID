@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: 8847a230433b182910c8dbcb93838c1029406b85
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e94bf639432d5aa6c7dd29726a8def38925cc92e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384574"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140249335"
 ---
 # Set-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi aturan untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azloadbalancerruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ PS C:\>$slb | Set-AzLoadBalancer
 ```
 
 Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di $slb variabel.
-Perintah kedua menggunakan operator pipeline untuk memasukkan penyeimbang muat di $slb ke Add-AzLoadBalancerRuleConfig, yang menambahkan aturan bernama NewRule ke dalamnya.
+Perintah kedua menggunakan operator pipeline untuk menyampaikan penyeimbang muat di $slb ke Add-AzLoadBalancerRuleConfig, yang menambahkan aturan bernama NewRule ke dalamnya.
 Perintah ketiga melewati penyeimbang muat ke **Set-AzLoadBalancerRuleConfig**, yang mengatur konfigurasi aturan baru.
 Perhatikan bahwa konfigurasi tidak mengaktifkan alamat IP terapung, yang telah diaktifkan oleh perintah sebelumnya.
 
@@ -356,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

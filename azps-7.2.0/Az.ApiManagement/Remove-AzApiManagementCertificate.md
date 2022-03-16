@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementCertificate.md
-ms.openlocfilehash: 7685c3571c33c663f26734fc4de09f48085d0df0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e2d9bc2380977005cc477feaa56c26afe9e45a52
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094059"
 ---
 # Remove-AzApiManagementCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

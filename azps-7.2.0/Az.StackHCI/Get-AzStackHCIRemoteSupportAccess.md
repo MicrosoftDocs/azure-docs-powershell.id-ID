@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Get-AzStackHCIRemoteSupportAccess.md
-ms.openlocfilehash: 3f02c9f588f1a6feedcb80719965e89aa05005ac
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b38214b03215aecf556fc125c1df6d25dd943f07
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163525"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261173"
 ---
 # Get-AzStackHCIRemoteSupportAccess
 
 ## SYNOPSIS
 Mendapatkan Akses Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/get-azstackhciremotesupportaccess) untuk informasi terkini.
 
 ## SYNTAX
 

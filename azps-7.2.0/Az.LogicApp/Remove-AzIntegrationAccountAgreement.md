@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Remove-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: 1b9d7bf56729465ba2d9bda7746a44074dec54f2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8a9dfdc9083cdfa8360eccd2c9a3ccc9da9672a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121975"
 ---
 # Remove-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Menghapus perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/remove-azintegrationaccountagreement) untuk informasi terkini.
 
 ## SYNTAX
 

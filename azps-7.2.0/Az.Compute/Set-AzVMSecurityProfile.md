@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMSecurityProfile.md
-ms.openlocfilehash: 112ea9a75e6d76c858e474375c5a8c81c1aee2ea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f8493219cba264ac816c3004665d162fe61cc918
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306076"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091701"
 ---
 # Set-AzVMSecurityProfile
 
 ## SYNOPSIS
 Mengatur enum SecurityType untuk Mesin Virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmsecurityprofile) untuk informasi terkini.
 
 ## SYNTAX
 

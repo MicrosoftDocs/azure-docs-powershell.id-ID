@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleSource.md
-ms.openlocfilehash: c15bb57f52d9038b006c0b583e25d66e250237cb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6d6f78b33f75d5c563f92a69b6791f458a95faaa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267868"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233513"
 ---
 # New-AzScheduledQueryRuleSource
 
 ## SYNOPSIS
 Membuat objek tipe Sumber
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulesource) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
-ms.openlocfilehash: 616ad0ed28ea6c99cb0e6a1257607852b6bc75d6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 26e8a75f7940786c47b51c348c876d696270415f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254155"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261047"
 ---
 # Get-AzStorageAccount
 
 ## SYNOPSIS
 Mendapatkan akun Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,16 +58,16 @@ Perintah ini mendapatkan akun Storage tertentu.
 PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01"
 ```
 
-Perintah ini mendapatkan semua akun Storage masuk dalam grup sumber daya.
+Perintah ini mendapatkan semua akun Storage sumber daya dalam grup sumber daya.
 
-### Contoh 3: Mendapatkan Storage baru dalam langganan
+### Contoh 3: Dapatkan Storage baru dalam langganan
 ```
 PS C:\>Get-AzStorageAccount
 ```
 
-Perintah ini akan mendapatkan semua Storage langganan tersebut.
+Perintah ini akan mendapatkan semua Storage baru dalam langganan.
 
-### Contoh 4: Mendapatkan Storage dengan status pemulihan blob
+### Contoh 4: Dapatkan akun Storage dengan status pemulihan blobnya
 ```
 PS C:\> $account = Get-AzStorageAccount -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount" -IncludeBlobRestoreStatus
 

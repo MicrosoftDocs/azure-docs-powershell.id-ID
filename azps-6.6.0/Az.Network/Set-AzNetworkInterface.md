@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterface.md
-ms.openlocfilehash: 71bfb8f37bf8440b05516b953c6c578c68d5dc64
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 29bcf2d84c514b5997084b559744f349d92d9404
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355373"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140249281"
 ---
 # Set-AzNetworkInterface
 
 ## SYNOPSIS
 Memperbarui antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkinterface) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ $nic.EnableIPForwarding = 1
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya di $nic variabel. Perintah kedua akan mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, namun pastikan untuk mengubah perintah kedua ke "$nic. EnableIPForwarding = 0".
+Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic baru. Perintah kedua akan mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, namun pastikan untuk mengubah perintah kedua ke "$nic. EnableIPForwarding = 0".
 
 ### Contoh 4: Mengubah subnet antarmuka jaringan
 ```
@@ -73,7 +76,7 @@ $nic.IpConfigurations[0].Subnet.Id = $subnet2.Id
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan NetworkInterface1 dan menyimpannya di $nic lain. Perintah kedua mendapatkan jaringan virtual yang terkait dengan subnet yang akan dikaitkan dengan antarmuka jaringan. Perintah kedua akan mendapatkan subnet dan menyimpannya dalam $subnet 2. Perintah ketiga terkait alamat IP privat utama antarmuka jaringan dengan subnet baru. Akhirnya perintah terakhir menerapkan perubahan ini pada antarmuka jaringan.
+Perintah pertama mendapatkan antarmuka jaringan NetworkInterface1 dan menyimpannya di $nic variabel. Perintah kedua mendapatkan jaringan virtual yang terkait dengan subnet yang akan dikaitkan dengan antarmuka jaringan. Perintah kedua akan mendapatkan subnet dan menyimpannya dalam $subnet 2. Perintah ketiga terkait alamat IP privat utama antarmuka jaringan dengan subnet baru. Akhirnya perintah terakhir menerapkan perubahan ini pada antarmuka jaringan.
 >[!NOTE] 
 >Konfigurasi IP harus dinamis sebelum Anda dapat mengubah subnet. Jika Anda memiliki konfigurasi IP statis, ubah lalu menjadi dinamis sebelum melanjutkan. 
 >[!NOTE]
@@ -87,7 +90,7 @@ $nic.NetworkSecurityGroup = $nsg
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya di $nic variabel. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya di $nsg baru. Perintah ketiga menetapkan $nsg ke $nic. Terakhir, perintah keempat menerapkan perubahan pada antarmuka Jaringan. Untukssociate grup keamanan jaringan dari antarmuka jaringan, cukup ganti $nsg perintah ketiga dengan $null.
+Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic baru. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya di $nsg jaringan. Perintah ketiga menetapkan $nsg ke $nic. Terakhir, perintah keempat menerapkan perubahan pada antarmuka Jaringan. Untukssociate grup keamanan jaringan dari antarmuka jaringan, cukup ganti $nsg di perintah ketiga dengan $null.
 
 ## PARAMETERS
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

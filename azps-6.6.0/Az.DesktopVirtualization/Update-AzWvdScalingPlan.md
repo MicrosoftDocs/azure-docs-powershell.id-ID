@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
-ms.openlocfilehash: 2190fd3faccb8688b8d259516fd799be5ce358a0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0342b4c6ba8bd7f9040b178c84ba2e9d21733c1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341237"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140138427"
 ---
 # Update-AzWvdScalingPlan
 
 ## SYNOPSIS
 Memperbarui rencana penskalaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdscalingplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Memperbarui rencana penskalaan.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Windows Desktop Virtual Skala menurut nama
+### Contoh 1: Perbarui Windows Skala Desktop Virtual menurut nama
 ```powershell
 PS C:\> Update-AzWvdScalingPlan `
             -ResourceGroupName ResourceGroupName `
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -346,7 +349,7 @@ HOSTPOOLREFERENCE <IScalingHostPoolReference[]>: Daftar definisi ScalingHostPool
   - `[HostPoolArmPath <String>]`: Jalur arm dari hostpool yang dirujuk.
   - `[ScalingPlanEnabled <Boolean?>]`: Adalah rencana skala yang diaktifkan untuk hostpool ini.
 
-INPUTOBJECT <IDesktopVirtualizationIdentity> : Parameter Identitas
+INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi di dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan

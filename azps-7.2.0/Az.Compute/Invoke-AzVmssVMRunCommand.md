@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVmssVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVmssVMRunCommand.md
-ms.openlocfilehash: a32e0216f4f72b380669b60fee32b9b7ee19c3c0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d52ab127677b0db0f85069438cdfbc47a4778e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255948"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092637"
 ---
 # Invoke-AzVmssVMRunCommand
 
 ## SYNOPSIS
 Jalankan perintah pada Vm Skala Mesin Virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/invoke-azvmssvmruncommand) untuk informasi terkini.
 
 ## SYNTAX
 

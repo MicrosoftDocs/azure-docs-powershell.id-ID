@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: e8e0ef353dc0c044cee68f3db234cc2264d25e56
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c2631066d12e2074ba4b26b14d99db5785599542
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275691"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115189"
 ---
 # Get-AzSqlDatabaseAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Dapatkan pengaturan perlindungan ancaman tingkat lanjut untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseadvancedthreatprotectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -157,4 +160,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Azure SQL Database cmdlets](/powershell/module/az.sql/)
+[cmdlet Azure SQL Database baru](/powershell/module/az.sql/)

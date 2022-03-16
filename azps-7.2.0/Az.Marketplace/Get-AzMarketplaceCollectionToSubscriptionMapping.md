@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
-ms.openlocfilehash: 2da30d57fdd111d6cbd669cd233909cc094d7205
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 46972172983deb6697192c7715cd4fde52c43e58
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234064"
 ---
 # Get-AzMarketplaceCollectionToSubscriptionMapping
 
 ## SYNOPSIS
 Untuk daftar langganan tertentu, API akan mengembalikan peta kumpulan dan langganan terkait dari daftar yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplace/get-azmarketplacecollectiontosubscriptionmapping) untuk informasi terkini.
 
 ## SYNTAX
 

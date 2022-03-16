@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstanceView.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudServiceRoleInstanceView.md
-ms.openlocfilehash: 59643f194cf2329ec7c26c55308d52857b440c87
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8ca434c7fa08c10472c95e22a570a345be49807b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170190"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093032"
 ---
 # Get-AzCloudServiceRoleInstanceView
 
 ## SYNOPSIS
 Mengambil informasi tentang status run-time sebuah contoh peran di layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/get-azcloudserviceroleinstanceview) untuk informasi terkini.
 
 ## SYNTAX
 

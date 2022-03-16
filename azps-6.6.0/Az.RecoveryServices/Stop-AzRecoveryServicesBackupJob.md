@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Stop-AzRecoveryServicesBackupJob.md
-ms.openlocfilehash: 03c7383127a14f44207e85712a4544ba97303e8f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: eb7ecfef5dac4af101dfb07b2c387894cba91f3b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381623"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140247643"
 ---
 # Stop-AzRecoveryServicesBackupJob
 
 ## SYNOPSIS
 Membatalkan pekerjaan yang sedang berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/stop-azrecoveryservicesbackupjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Stop-AzRecoveryServicesBackupJob [-JobId] <String> [-VaultId <String>]
 Cmdlet **Stop-AzRecoveryServicesBackupJob** membatalkan pekerjaan Azure Backup yang sudah ada.
 Gunakan cmdlet ini untuk menghentikan pekerjaan yang membutuhkan waktu terlalu lama dan memblokir aktivitas lain.
 Anda hanya bisa membatalkan tipe pekerjaan Cadangkan dan Pulihkan.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan yang dibatalkan cmdlet ini.
-Untuk mendapatkan objek **BackupJob,** gunakan cmdlet Get-AzRecoveryServicesBackupJob.
+Untuk mendapatkan objek **BackupJob** , gunakan cmdlet Get-AzRecoveryServicesBackupJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.JobBase
@@ -84,8 +87,8 @@ Accept wildcard characters: False
 
 ### -JobId
 Menentukan ID pekerjaan yang akan dibatalkan.
-ID adalah properti InstanceId dari objek **BackupJob.**
-Untuk mendapatkan objek **BackupJob,** gunakan Get-AzRecoveryServicesBackupJob.
+ID adalah properti InstanceId dari objek **BackupJob** .
+Untuk mendapatkan objek **BackupJob** , gunakan Get-AzRecoveryServicesBackupJob.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

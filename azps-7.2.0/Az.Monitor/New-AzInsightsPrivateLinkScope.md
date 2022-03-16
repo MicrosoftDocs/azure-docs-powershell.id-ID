@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzInsightsPrivateLinkScope.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzInsightsPrivateLinkScope.md
-ms.openlocfilehash: d7708549ee3054307f1fe8aabf237d73059fe186
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e6efa8fd1620c5b2a79e319e5095ec2627571092
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233621"
 ---
 # New-AzInsightsPrivateLinkScope
 
 ## SYNOPSIS
 lingkup buat tautan pribadi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azinsightsprivatelinkscope) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/set-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksCluster.md
-ms.openlocfilehash: 40e9a4e8a04c47c2db66fd496b61bc2e731fcdc4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 01ca3859dea814f240afcafb95f558f05cf001b7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289324"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094364"
 ---
 # Set-AzAksCluster
 
 ## SYNOPSIS
 Memperbarui atau membuat kluster Grup Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/set-azakscluster) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspacePackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseWorkspacePackage.md
-ms.openlocfilehash: 05ddbfb5bfddbdb86c01e76d4442ae22dfbc7665
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 09831edca27163cdd24200becd0057234ff646c5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260407"
 ---
 # New-AzSynapseWorkspacePackage
 
 ## SYNOPSIS
 Mengunggah file paket ruang kerja lokal ke ruang kerja Azure Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapseworkspacepackage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Perintah ini mengunggah paket ruang kerja yang lokasinya adalah ".\ContosoPackag
 PS C:\> Get-ChildItem -File | New-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini menggunakan cmdlet Windows PowerShell cmdlet Get-ChildItem untuk mendapatkan semua paket ruang kerja di folder saat ini dan dalam subfolder, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline. Cmdlet New-AzSynapseWorkspacePackage mengunggah file paket ruang kerja ke ruang kerja Azure Synapse bernama ContosoWorkspace.
+Perintah ini menggunakan cmdlet Windows PowerShell cmdlet Get-ChildItem untuk mendapatkan semua paket ruang kerja di folder saat ini dan dalam subfolder, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline. Cmdlet New-AzSynapseWorkspacePackage mengunggah file paket ruang kerja ke ruang kerja Azure Synapse yang bernama ContosoWorkspace.
 
 ### Contoh 3: Upload a named workspace package and add it to Apache Spark pool
 ```powershell

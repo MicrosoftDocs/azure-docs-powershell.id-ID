@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.maintenance/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzConfigurationAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzConfigurationAssignment.md
-ms.openlocfilehash: 4eab921969d9c102b9486a85bf46bf6b38743ce9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dc279f9d9fbc6664a3d05886ecd6a4b808cd9565
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270236"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234467"
 ---
 # Get-AzConfigurationAssignment
 
 ## SYNOPSIS
 List configurationAssignments for resource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/get-azconfigurationassignment) untuk informasi terkini.
 
 ## SYNTAX
 

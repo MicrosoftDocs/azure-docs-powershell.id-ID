@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/new-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccount.md
-ms.openlocfilehash: 977804fe90de08d3ff22bb18225523032c63090e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6b5a78741feaeb08f5a3b3c588a42e7fe1c2b8e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303820"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234287"
 ---
 # New-AzMapsAccount
 
 ## SYNOPSIS
 Buat atau perbarui Akun Peta Anda.
 Akun Peta menyimpan kunci yang mengizinkan akses ke rest Peta REST.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/new-azmapsaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Akun Peta menyimpan kunci yang mengizinkan akses ke rest Peta REST.
 
 ## EXAMPLES
 
-### Contoh 1: Buat Peta Anda.
+### Contoh 1: Buat Peta Baru.
 ```powershell
 PS C:\> New-AzMapsAccount -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -SkuName S0 -Location eastus
 
@@ -41,7 +44,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount01 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini membuat Peta Akun.A Peta Akun akun menahan tombol yang memungkinkan akses ke Peta REST API.
+Perintah ini akan membuat Peta Akun.A Peta akun menahan tombol yang memungkinkan akses ke Peta REST API.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/disable-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlServerAdvancedDataSecurity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Disable-AzSqlServerAdvancedDataSecurity.md
-ms.openlocfilehash: 2ac886f941e300ed72c3ce7391779c801cd8aa31
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b66e473c15ab4117dcdb946353a72b60ce5ddf46
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260635"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115243"
 ---
 # Disable-AzSqlServerAdvancedDataSecurity
 
 ## SYNOPSIS
 Menonaktifkan Keamanan Data Tingkat Lanjut pada server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/disable-azsqlserveradvanceddatasecurity) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleLogMetricTrigger.md
-ms.openlocfilehash: 129562d96e25f7d015553658e7cef9273867d744
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 980032e97891455c54de6eb1d05f2653c52e6839
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233531"
 ---
 # New-AzScheduledQueryRuleLogMetricTrigger
 
 ## SYNOPSIS
 Membuat objek tipe Pemicu Metrik Log.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrulelogmetrictrigger) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 
 ### -MetricColumn
 Kolom di mana nilai metrik sedang diagregatkan.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule nantinya.
+Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 
 ### -MetricTriggerType
 Tipe pemicu metrik.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule nantinya.
+Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -Ambang Batas
 Nilai ambang batas metrik: Berurutan, Total.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule nantinya.
+Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
 
 ```yaml
 Type: System.Double
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -ThresholdOperator
 Operator ambang batas metrik : GreaterTerterka, LessTer pada, Sama dengan.
-Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule nantinya.
+Input tidak divalidasi. File akan divalidasi terlebih dahulu New-AzScheduledQueryRule kemudian disebut.
 
 ```yaml
 Type: System.String
