@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementGroup.md
-ms.openlocfilehash: e0c3bd7723a407cbeed6fddbd5bab559f3a7491c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d5b4da52cb82725c20f6fc21678e8e432ed72730
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062679"
 ---
 # Set-AzApiManagementGroup
 
 ## SYNOPSIS
 Mengonfigurasi grup manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementgroup) untuk informasi terkini.
 
 ## SYNTAX
 

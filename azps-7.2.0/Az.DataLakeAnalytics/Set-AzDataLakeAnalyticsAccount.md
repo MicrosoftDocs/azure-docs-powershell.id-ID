@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsAccount.md
-ms.openlocfilehash: 1f1b5717021eb5aeae29e763df9aba0f8967f242
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4bc5fc13e9f0cd8075a3378d53192463cc4c7c72
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090711"
 ---
 # Set-AzDataLakeAnalyticsAccount
 
 ## SYNOPSIS
 Mengubah akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticsaccount) untuk informasi terkini.
 
 ## SYNTAX
 

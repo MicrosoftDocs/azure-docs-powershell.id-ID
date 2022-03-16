@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubModuleTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Update-AzIotHubModuleTwin.md
-ms.openlocfilehash: 040e5feeeff514a8720b1e88b28c550ea04db30d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3e7892e9ee1aac5d6b08ff4610d2ee8fa9d50cf8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267900"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958811"
 ---
 # Update-AzIotHubModuleTwin
 
 ## SYNOPSIS
 Memperbarui tag dan properti properti modul perangkat IoT yang diinginkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/update-aziothubmoduletwin) untuk informasi terkini.
 
 ## SYNTAX
 

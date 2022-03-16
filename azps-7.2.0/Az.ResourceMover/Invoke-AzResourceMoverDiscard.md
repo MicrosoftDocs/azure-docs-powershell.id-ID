@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverDiscard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverDiscard.md
-ms.openlocfilehash: e4b9bc7bc451cbc64ccd4d220f671bf45829edab
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0d8dee26dbe4932c2dc6bbebdd4136ce8899e715
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257372"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117601"
 ---
 # Invoke-AzResourceMoverDiscard
 
@@ -18,6 +18,9 @@ ms.locfileid: "138257372"
 Membuang kumpulan sumber daya yang disertakan dalam badan permintaan.
 Operasi buang dipicu pada moveResources di moveState 'CommitPending' atau 'DiscardFailed', setelah berhasil menyelesaikan moveResource moveState melakukan transisi ke MovePending.
 Untuk membantu pengguna agar prasyarat operasi klien bisa memanggil operasi dengan properti validateOnly yang diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverdiscard) untuk informasi terkini.
 
 ## SYNTAX
 

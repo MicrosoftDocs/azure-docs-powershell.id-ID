@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubSku.md
-ms.openlocfilehash: 9cb734803be43ef26a635a07087ba52c74610c19
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b86da37bfcf31ffae262d510fc3c1714e18a9de7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273484"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115729"
 ---
 # Get-AzWebPubSubSku
 
 ## SYNOPSIS
 Mencantumkan semua sku sumber daya yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azwebpubsubsku) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

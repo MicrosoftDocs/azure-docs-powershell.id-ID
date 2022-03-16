@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupSubscription.md
-ms.openlocfilehash: 298c893d9008c995b2f53be2bb859558fc96fcd9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5a4ed08492e9d0094808cc4257bf421f01437252
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303260"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117107"
 ---
 # New-AzManagementGroupSubscription
 
 ## SYNOPSIS
 Menambahkan Langganan ke Grup Manajemen.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azmanagementgroupsubscription) untuk informasi terkini.
 
 ## SYNTAX
 

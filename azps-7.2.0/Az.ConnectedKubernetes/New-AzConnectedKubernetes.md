@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedkuberne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedKubernetes/help/New-AzConnectedKubernetes.md
-ms.openlocfilehash: baddabd1355f2af92c9328ccfb53fea9827d28f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a1a6851cf4b7b26acc262f80be3417bdb4ba0d88
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091179"
 ---
 # New-AzConnectedKubernetes
 
 ## SYNOPSIS
 API untuk mendaftarkan kluster Kluster baru dan membuat sumber daya terlacak di Azure Resource Manager (ARM).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedkubernetes/new-azconnectedkubernetes) untuk informasi terkini.
 
 ## SYNTAX
 

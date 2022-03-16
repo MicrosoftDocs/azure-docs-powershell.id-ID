@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: 1264422ae4ebfd83b2d0078746d0384d4114ce2e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 24dc3c51234fafe16b02badb6d31e27b708fdaf9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294300"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120535"
 ---
 # Remove-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
 Menghapus asosiasi aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azdatacollectionruleassociation) untuk informasi terkini.
 
 ## SYNTAX
 

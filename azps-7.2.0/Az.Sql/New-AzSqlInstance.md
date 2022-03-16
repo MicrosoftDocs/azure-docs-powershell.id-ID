@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstance.md
-ms.openlocfilehash: 16e132fb5d9234f8bfd874209573283b04da6c5e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 979b1f5ddb9c18c1bd3971146f35d533b1a36b79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164308"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114793"
 ---
 # New-AzSqlInstance
 
 ## SYNOPSIS
 Membuat Instans Azure SQL Database Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ New-AzSqlInstance [-Name] <String> [-ResourceGroupName] <String> [-Administrator
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstance** membuat proyek Azure SQL Database Terkelola.
+Cmdlet **New-AzSqlInstance** membuat Azure SQL Database Yang Dikelola.
 
 ## EXAMPLES
 
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Azure Active Directory Identity untuk instans Terkelola ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk instans Terkelola ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -572,8 +575,8 @@ Accept wildcard characters: False
 
 ### -LicenseType
 Menentukan Tipe Lisensi mana yang digunakan. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
-- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga layanan Instans Terkelola akan menyertakan biaya SQL Server baru.
+- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
+- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga layanan Instans Terkelola akan menyertakan biaya SQL Server lisensi baru.
 
 ```yaml
 Type: System.String

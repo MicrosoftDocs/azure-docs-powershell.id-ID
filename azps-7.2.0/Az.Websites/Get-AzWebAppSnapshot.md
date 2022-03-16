@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSnapshot.md
-ms.openlocfilehash: 68110b2a60d895d9c6c00a6edf1319a783bc5785
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6beb8e8142fa2f9590ab97287cde29b8b257f916
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301707"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140112833"
 ---
 # Get-AzWebAppSnapshot
 
 ## SYNOPSIS
 Dapatkan snapshot yang tersedia untuk aplikasi web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azwebappsnapshot) untuk informasi terkini.
 
 ## SYNTAX
 

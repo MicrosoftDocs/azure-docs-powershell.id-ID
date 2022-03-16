@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/clear-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Clear-AzDefault.md
-ms.openlocfilehash: 20b9fa30de91b7f12e4f54c74b1ecb843ba2ab5a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ac37999f09cfd379a395ccf9c1d447a6949a02a4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282651"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063756"
 ---
 # Clear-AzDefault
 
 ## SYNOPSIS
 Menghapus pengaturan default yang ditetapkan oleh pengguna dalam konteks saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/clear-azdefault) untuk informasi terkini.
 
 ## SYNTAX
 

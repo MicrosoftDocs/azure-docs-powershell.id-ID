@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRunbook.md
-ms.openlocfilehash: 81a80af1a4d0da9b29c1e9eb2728f3dd25b32b9a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 826f3b37bc9fba3e57add080d67393b207950ed3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061815"
 ---
 # Get-AzAutomationRunbook
 
 ## SYNOPSIS
 Mendapatkan buku runbook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationrunbook) untuk informasi terkini.
 
 ## SYNTAX
 

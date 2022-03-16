@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
-ms.openlocfilehash: 9739e39f54528fb7aaf291426b91fedf95be881b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9b5b052e146b62c4e3c25697c244dcef42b87ccf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302780"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060627"
 ---
 # New-AzCdnEndpoint
 
 ## SYNOPSIS
 Membuat titik CDN akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Azure CDN origin.
+Azure CDN origin baru.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -499,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Azure CDN sumber daya link privat origin.
+Azure CDN sumber daya tautan privat origin.
 
 ```yaml
 Type: System.String
@@ -544,7 +547,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryStringCachingBestringior
-Menentukan perilaku titik akhir CDN saat string kueri ada di URL permintaan.
+Menentukan perilaku titik akhir CDN ketika string kueri ada dalam URL permintaan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSQueryStringCachingBehavior]

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: fcab2dbce79b2c2bc77cc6395e3d835ce3b231b3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9dc848bb16ca4bbc7b2d90e22c29d2b5e1b3d6af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119635"
 ---
 # Add-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi aturan ke penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azloadbalancerruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ PS C:\>$slb | Set-AzLoadBalancer
 ```
 
 Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
-Perintah kedua menggunakan operator pipeline untuk memasukkan penyeimbang muat di $slb **ke Add-AzLoadBalancerRuleConfig**, yang menambahkan konfigurasi aturan bernama NewRule.
+Perintah kedua menggunakan operator pipeline untuk menyampaikan penyeimbang muat di $slb **ke Add-AzLoadBalancerRuleConfig**, yang menambahkan konfigurasi aturan bernama NewRule.
 Perintah ketiga akan memperbarui penyeimbang muat di Azure dengan Konfigurasi Aturan Penyeimbang Muat baru.
 
 ### Contoh 2: Menambahkan konfigurasi aturan dengan dua alamat backend yang beralamat ke penyeimbang muat
@@ -62,7 +65,7 @@ PS C:\> $MyBackendPool2 = Get-AzLoadBalancerBackendAddressPool -ResourceGroupNam
 PS C:\> $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol All -FrontendPort 0 -BackendPort 0 -BackendAddressPool $MyBackendPool1, $MyBackendPool2
 PS C:\>$slb | Set-AzLoadBalancer
 ```
-Ini memungkinkan Gateway Load Balancer untuk memiliki beberapa kolam renang backend Perintah pertama akan mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya dalam daftar $slb.
+Ini memungkinkan Gateway Load Balancer untuk memiliki beberapa kolam renang backend Perintah pertama akan mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di daftar $slb.
 Perintah kedua dan kedua akan mendapatkan alamat backend yang ingin ditambahkan aturan Perintah kemudian akan menambahkan aturan baru dengan perintah backend yang dikonfigurasi, perintah kelima akan memperbarui penyeimbang muat di azure dengan Konfigurasi Aturan Penyeimbang Muat baru.
 
 ## PARAMETERS

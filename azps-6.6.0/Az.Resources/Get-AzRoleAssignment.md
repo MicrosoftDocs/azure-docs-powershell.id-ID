@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleAssignment.md
-ms.openlocfilehash: 45088f90c016a288e0cd0fb65447dc9001c02274
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1f8527451065abc85991eb17bd9b177b081e8d65
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334956"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140131965"
 ---
 # Get-AzRoleAssignment
 
@@ -19,6 +19,9 @@ ms.locfileid: "136334956"
 Mencantumkan penetapan peran Azure RBAC pada lingkup yang ditentukan.
 Secara default, daftar tersebut mencantumkan semua penetapan peran dalam langganan Azure yang dipilih.
 Gunakan parameter terkait untuk mencantumkan penetapan ke pengguna tertentu, atau untuk mencantumkan penetapan pada grup atau sumber daya sumber daya tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ Dan untuk menentukan aplikasi Azure AD, gunakan parameter ServicePrincipalName a
 Peran yang akan ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName.
 Lingkup di mana akses sedang diberikan mungkin ditentukan.
 Pengaturan defaultnya adalah langganan yang dipilih. Lingkup penetapan dapat ditentukan menggunakan salah satu kombinasi parameter berikut ini.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/ \<subscriptionId\> .
+Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/\<subscriptionId\>.
 Ini akan memfilter penetapan yang efektif pada lingkup tertentu itu misalnya, semua penugasan dalam lingkup tersebut dan yang lebih tinggi.
 b.
 ResourceGroupName - Nama grup sumber daya apa pun di bawah langganan.
@@ -163,7 +166,7 @@ List all role assignments in the subscription
 PS C:\> Get-AzRoleAssignment -ResourceGroupName testRG -SignInName john.doe@contoso.com
 ```
 
-Mendapatkan semua penetapan peran yang dilakukan pada pengguna, dan grup di john.doe@contoso.com mana ia menjadi anggota, pada lingkup TESTRG atau di atasnya.
+Mendapatkan semua penetapan peran yang dilakukan pada pengguna john.doe@contoso.com, dan grup di mana ia menjadi anggota, pada lingkup TESTRG atau di atasnya.
 
 ### Contoh 3
 ```
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

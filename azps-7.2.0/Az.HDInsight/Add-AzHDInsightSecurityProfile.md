@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightSecurityProfile.md
-ms.openlocfilehash: 0a1edd613bc9a253d525f6d807a63bca9b6fcb09
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 51a3733e824855f471f8914fbf6e1ffda766821d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302556"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959225"
 ---
 # Add-AzHDInsightSecurityProfile
 
 ## SYNOPSIS
 Menambahkan profil keamanan ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightsecurityprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
-Objek ini dibuat oleh New-AzHDInsightClusterConfig cmdlet.
+Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig

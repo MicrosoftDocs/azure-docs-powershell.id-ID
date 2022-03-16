@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: 0c709f709c2b77e86dcb3c7908b2f4d115672d7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ca2601a90073e175cf030a6250d0a5b48d9fad0d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114235"
 ---
 # Set-AzSqlServerAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
 Memperbarui status jalankan otomatis Azure SQL Server Penasihat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlserveradvisorautoexecutestatus) untuk informasi terkini.
 
 ## SYNTAX
 

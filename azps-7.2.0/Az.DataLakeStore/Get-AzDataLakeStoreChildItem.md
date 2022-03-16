@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreChildItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreChildItem.md
-ms.openlocfilehash: 2e1afa3789d7cebb5a745cf7b645d236545275f1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6bf3f13c2f6220cf8c6359964dca3f073cc73368
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279899"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090675"
 ---
 # Get-AzDataLakeStoreChildItem
 
 ## SYNOPSIS
 Mendapatkan daftar item dalam folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestorechilditem) untuk informasi terkini.
 
 ## SYNTAX
 

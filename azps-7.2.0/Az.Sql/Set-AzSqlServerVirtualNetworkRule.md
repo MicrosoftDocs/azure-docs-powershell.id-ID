@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: 54bd0ffd0fb2aa64c08384cb1a37b451b9b94063
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5fe688a774cb4603792a648b1d4ca6bd17fdb4ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162815"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114217"
 ---
 # Set-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
 Mengubah konfigurasi Aturan Jaringan Virtual Azure SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlservervirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedClusterClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedClusterClientCertificate.md
-ms.openlocfilehash: 91acb9bc78296169f8ff91bd6ee8783b96e24502
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1314d8242a4b6d3696363938356d3bfd2810c8a5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116233"
 ---
 # Add-AzServiceFabricManagedClusterClientCertificate
 
 ## SYNOPSIS
 Tambahkan sertifikat nama umum atau thumbprint ke kluster. Langkah ini akan mendaftarkan kembali sertifikat kluster untuk tujuan autentikasi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagedclusterclientcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/export
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzTemplateSpec.md
-ms.openlocfilehash: 607aef23c66527fbb3c7a3cf336c5dcd30596462
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5db0a2f7d90f3f047bc7f2baf75b8cdfe044d4d8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364514"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140067257"
 ---
 # Export-AzTemplateSpec
 
 ## SYNOPSIS
 Mengekspor Spesifikasi Templat ke filesystem lokal
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/export-aztemplatespec) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Mengekspor versi 'v1.0' Spesifikasi Templat bernama 'MyTemplateSpec' di dalam gr
 PS C:\> Export-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/MyTemplateSpec' -Version 'v1.0' -OutputFolder 'v1'
 ```
 
-Mengekspor versi 'v1.0' spesifikasi Templat bernama 'MyTemplateSpec' di dalam grup sumber daya 'myRG' dari subId langganan ke folder output lokal \{ \} "v1".
+Mengekspor versi 'v1.0' spesifikasi Templat bernama 'MyTemplateSpec' di dalam grup sumber daya 'myRG' \{dari subId\} langganan ke folder output lokal "v1".
 
 ## PARAMETERS
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

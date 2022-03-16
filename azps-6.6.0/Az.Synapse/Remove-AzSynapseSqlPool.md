@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPool.md
-ms.openlocfilehash: c9eb621416bf4985b77933ef6d86350352f6b921
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ecfd11189726e3d215684546ae95571f435d3229
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366699"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140129391"
 ---
 # Remove-AzSynapseSqlPool
 
 ## SYNOPSIS
-Menghapus Analitik Synapse dalam SQL sama.
+Menghapus konten Analitik Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-PassThru] [-As
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSqlPool** secara permanen menghapus grup SQL Azure Synapse.
+Cmdlet **Remove-AzSynapseSqlPool** secara permanen menghapus grup SQL Analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbDatabaseSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationMongoDbDatabaseSetting.md
-ms.openlocfilehash: 092d3655849b1b94cd59cbaf687236cb3b1d1783
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 394fc70797d0e336093dca96ff244b073cb606b0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090549"
 ---
 # New-AzDataMigrationMongoDbDatabaseSetting
 
 ## SYNOPSIS
 Membuat pengaturan database untuk migrasi untuk migrasi azureoDb
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationmongodbdatabasesetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Koleksi
-Array objek pengaturan kumpulan SkoroDb dikembalikan oleh New-AzureRmDmsMongoDbDatabaseSetting panggilan.
+Larik objek pengaturan kumpulan SkoroDb dikembalikan oleh New-AzureRmDmsMongoDbDatabaseSetting panggilan.
 
 ```yaml
 Type: System.Collections.Generic.KeyValuePair<string, MongoDbCollectionSettings>[]

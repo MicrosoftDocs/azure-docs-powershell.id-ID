@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheScheduleEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheScheduleEntry.md
-ms.openlocfilehash: 8e9cad4a42602cac801330726389aee68750b29a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: def389f83a92d2cda42977397caa9327ced0b73b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372523"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140132289"
 ---
 # New-AzRedisCacheScheduleEntry
 
 ## SYNOPSIS
 Membuat entri jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/new-azrediscachescheduleentry) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ New-AzRedisCacheScheduleEntry -DayOfWeek <String> -StartHourUtc <Int32> [-Mainte
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRedisCacheScheduleEntry** membuat objek **PSScheduleEntry.**
-Cmdlet jadwal patch Azure Redis Cache, seperti cmdlet New-AzRedisCachePatchSchedule, memerlukan objek entri jadwal.
+Cmdlet **New-AzRedisCacheScheduleEntry** membuat objek **PSScheduleEntry** .
+Cmdlet jadwal patch Cache Azure Redis, seperti cmdlet New-AzRedisCachePatchSchedule, memerlukan objek entri jadwal.
 
 ## EXAMPLES
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

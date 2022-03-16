@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroupDeployment.md
-ms.openlocfilehash: 02cf5fe8cfd02b16f5a6ab99847922f4c9ac6467
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2787e888aaa864b8e2df9b04d888416e44571291
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162225"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117151"
 ---
 # New-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Membuat penyebaran di grup manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azmanagementgroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -486,7 +489,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIfExcludeChangeType
-Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If proyek. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
+Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If perubahan. Berlaku ketika sakelar -WhatIf atau -Confirm diatur.
 
 ```yaml
 Type: System.String[]

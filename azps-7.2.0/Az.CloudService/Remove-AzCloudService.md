@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Remove-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Remove-AzCloudService.md
-ms.openlocfilehash: c5b7c6fd44172cb3dc76e684ca4def2924f33fa0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 93610b122cb649f0354d0ccace6bb181417d2579
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308172"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060033"
 ---
 # Remove-AzCloudService
 
 ## SYNOPSIS
 Menghapus layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/remove-azcloudservice) untuk informasi terkini.
 
 ## SYNTAX
 

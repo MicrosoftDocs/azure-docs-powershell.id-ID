@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: c90172cd40abf98153caa2d6d015f3388d6ddf8e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bc49a4fec037e1899c3e7a17352d21fea9a3717b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382194"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140069921"
 ---
 # Remove-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Menghapus sumber daya pengambilan paket.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-aznetworkwatcherpacketcapture) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzNetworkWatcherPacketCapture -Location <String> -PacketCaptureName <Stri
 ```
 
 ## DESCRIPTION
-Sumber Remove-AzNetworkWatcherPacketCapture menghapus sumber daya penangkapan paket. Sebaiknya hubungi mereka Stop-AzNetworkWatcherPacketCapture menghapus-AzNetworkWatcherPacketCapture. Jika sesi pengambilan paket berjalan saat Remove-AzNetworkWatcherPacketCapture paket disebut pengambilan paket mungkin tidak disimpan. Jika sesi dihentikan sebelum penghapusan file .cap yang berisi data tangkapan tidak dihapus. 
+Sumber Remove-AzNetworkWatcherPacketCapture menghapus sumber daya penangkapan paket. Disarankan untuk menghubungi Stop-AzNetworkWatcherPacketCapture menghapus-AzNetworkWatcherPacketCapture. Jika sesi pengambilan paket berjalan saat Remove-AzNetworkWatcherPacketCapture yang disebut pengambilan paket mungkin tidak disimpan. Jika sesi dihentikan sebelum penghapusan file .cap yang berisi data tangkapan tidak dihapus. 
 
 ## EXAMPLES
 
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

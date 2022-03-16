@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebAppCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebAppCustomDomain.md
-ms.openlocfilehash: 36f3751968d35d82c788250425377ba00547bc6b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f9b1ba395d19d0d63f21713d5a6f3fb209473879
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166865"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140111771"
 ---
 # Remove-AzStaticWebAppCustomDomain
 
 ## SYNOPSIS
 Deskripsi untuk Menghapus domain kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azstaticwebappcustomdomain) untuk informasi terkini.
 
 ## SYNTAX
 

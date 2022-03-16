@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Set-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseAudit.md
-ms.openlocfilehash: 790f8ae3f432d8dc5165aa0c8e3b068b4b825325
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2f3271658423ab1c6ed7389bbd592d680bea8932
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162835"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114433"
 ---
 # Set-AzSqlDatabaseAudit
 
 ## SYNOPSIS
-Mengubah pengaturan pengauditan untuk suatu Azure SQL Database.
+Mengubah pengaturan audit untuk suatu Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabaseaudit) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ PS C:\>Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "
 PS C:\>Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -BlobStorageTargetState Disabled
 ```
 
-### Contoh 3: Mengaktifkan kebijakan pengauditan penyimpanan blob dari suatu Azure SQL Database dengan pemfilteran menggunakan predikat SQL T
+### Contoh 3: Mengaktifkan kebijakan pengauditan penyimpanan blob Azure SQL Database dengan pemfilteran menggunakan predikat SQL T
 ```powershell
 PS C:\>Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -PredicateExpression "schema_name <> 'sys''" -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/7fe3301d-31d3-4668-af5e-211a890ba6e3/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage"
 ```
@@ -87,12 +90,12 @@ PS C:\>Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "
 PS C:\>Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 9: Disable, through pipeline, the log analytics auditing policy of an Azure SQL Database
+### Contoh 9: Menonaktifkan, melalui saluran, kebijakan pengauditan analitik log suatu Azure SQL Database
 ```powershell
 PS C:\>Get-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" | Set-AzSqlDatabaseAudit -LogAnalyticsTargetState Disabled
 ```
 
-### Contoh 10: Menonaktifkan pengiriman catatan audit suatu Azure SQL Database ke penyimpanan blob, dan memungkinkan pengirimannya untuk membuat log analitik.
+### Contoh 10: Menonaktifkan pengiriman catatan audit suatu Azure SQL Database ke penyimpanan blob, dan memungkinkan pengirimannya untuk analitik log.
 ```powershell
 PS C:\>Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2" -BlobStorageTargetState Disabled
 ```
@@ -139,7 +142,7 @@ Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut 
 "BATCH_COMPLETED_GROUP",  
 "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP",  
 "FAILED_DATABASE_AUTHENTICATION_GROUP"  
-Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default. Grup ini mencakup SQL pernyataan bisnis dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default. Grup ini mencakup SQL pernyataan privasi dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
 ```yaml

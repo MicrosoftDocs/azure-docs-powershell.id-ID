@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzActivityLogAlert.md
-ms.openlocfilehash: dfdaa08dfb2709aea9a45c79e39f89f768ff854e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e2e65071d0e0e1ddbf571c49cb7d430ba1b9cedb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302299"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120625"
 ---
 # Remove-AzActivityLogAlert
 
 ## SYNOPSIS
 Menghapus pemberitahuan log aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azactivitylogalert) untuk informasi terkini.
 
 ## SYNTAX
 

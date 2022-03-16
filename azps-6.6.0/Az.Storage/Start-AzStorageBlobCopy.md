@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobCopy.md
-ms.openlocfilehash: 28d8aeaf092c487a27bc7ccef93856d016d1a934
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 50f20a9e30e6dbfc2a8a504cc0acccbc22bcfbc0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357893"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130381"
 ---
 # Start-AzStorageBlobCopy
 
 ## SYNOPSIS
 Memulai menyalin blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/start-azstorageblobcopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -140,7 +143,7 @@ Perintah ini memulai operasi penyalinan blob yang bernama ContosoPlanning2015 da
 C:\PS>Get-AzStorageContainer -Name "ContosoUploads" | Start-AzStorageBlobCopy -SrcBlob "ContosoPlanning2015" -DestContainer "ContosoArchives"
 ```
 
-Perintah ini mendapatkan wadah bernama ContosoUploads, menggunakan cmdlet **Get-AzStorageContainer,** lalu meneruskan wadah ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan wadah bernama ContosoUploads, menggunakan cmdlet **Get-AzStorageContainer** , lalu meneruskan wadah ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet tersebut memulai operasi penyalinan blob bernama ContosoPlanning2015.
 Cmdlet sebelumnya menyediakan wadah sumber.
 Parameter *DestContainer* menentukan ContosoArchives sebagai wadah tujuan.
@@ -150,7 +153,7 @@ Parameter *DestContainer* menentukan ContosoArchives sebagai wadah tujuan.
 C:\PS>Get-AzStorageBlob -Container "ContosoUploads" | Start-AzStorageBlobCopy -DestContainer "ContosoArchives"
 ```
 
-Perintah ini menghasilkan blob dalam wadah yang bernama ContosoUploads, menggunakan cmdlet **Get-AzStorageBlob,** lalu memberikan hasilnya ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini menghasilkan blob dalam wadah yang bernama ContosoUploads, menggunakan cmdlet **Get-AzStorageBlob** , lalu memberikan hasilnya ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet tersebut memulai operasi penyalinan blob ke wadah yang bernama ContosoArchives.
 
 ### Contoh 4: Menyalin blob yang ditentukan sebagai objek
@@ -175,7 +178,7 @@ C:\PS> Start-AzStorageBlobCopy -AbsoluteUri "http://www.contosointernal.com/plan
 
 Perintah ini akan membuat konteks untuk akun bernama ContosoGeneral yang menggunakan kunci tertentu, lalu menyimpan kunci tersebut dalam variabel $Context tertentu.
 Perintah kedua menyalin file dari URI tertentu ke blob bernama ContosoPlanning dalam wadah yang bernama ContosoArchive.
-Perintah tersebut memulai operasi penyalinan ke konteks tujuan yang disimpan di $Context.
+Perintah tersebut memulai operasi penyalinan ke konteks tujuan yang disimpan dalam $Context.
 Tidak ada konteks penyimpanan sumber, jadi Uri sumber harus memiliki akses ke objek sumber. Misalnya: jika sumbernya tidak ada Azure blob publik, Uri harus berisi token SAS yang memiliki akses baca ke blob.
 
 ### Contoh 6: Menyalin blok blob ke wadah tujuan dengan nama blob baru, dan mengatur Standar blob tujuanBlobTier sebagai Hot, RehydratePriority sebagai Tinggi
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 
 ### -CloudBlob
 Menentukan objek **CloudBlob** dari Azure Storage Client.
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzStorageBlob.
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ### -CloudBlobContainer
 Menentukan objek **CloudBlobContainer** dari Azure Storage Client.
 Cmdlet ini menyalin blob dari wadah yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudBlobContainer,** gunakan cmdlet Get-AzStorageContainer cmdlet.
+Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -412,7 +415,7 @@ Accept wildcard characters: False
 
 ### -DestContext
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 
 ### -DestTagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan pada Blob tujuan. Permintaan blob akan gagal ketika tag blob tujuan tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations .
+Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -583,7 +586,7 @@ Accept wildcard characters: False
 
 ### -SrcShare
 Menentukan objek **CloudFileShare** dari Azure Storage Client.
-Anda dapat membuatnya atau Get-AzStorageShare cmdlet.
+Anda dapat membuatnya atau menggunakan Get-AzStorageShare cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileShare
@@ -646,7 +649,7 @@ Accept wildcard characters: False
 
 ### -TagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kondisi kecocokan di blob sumber. Permintaan blob akan gagal ketika tag blob sumber tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations .
+Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -692,7 +695,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

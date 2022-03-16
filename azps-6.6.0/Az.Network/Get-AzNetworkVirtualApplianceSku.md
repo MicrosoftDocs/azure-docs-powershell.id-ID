@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualApplianceSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkVirtualApplianceSku.md
-ms.openlocfilehash: 4168fd69b13bd02df1182b80f677a72672375a50
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 46d9590306f3d8f313197b4551a04e1b98aeafd8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136371666"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140075879"
 ---
 # Get-AzNetworkVirtualApplianceSku
 
 ## SYNOPSIS
-Dapatkan atau List available Network Virtual Appliance Skus dalam inventaris.
+Dapatkan atau  List available Network Virtual Appliance Skus dalam inventaris.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkvirtualappliancesku) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzNetworkVirtualApplianceSku [-SkuName <String>] [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Peralatan Get-AzNetworkVirtualApplianceSku menyediakan atau mencantumkan Sku Perlengkapan Virtual Jaringan yang tersedia dalam Microsoft Azure inventaris.
+Daftar Get-AzNetworkVirtualApplianceSku menyediakan Sku Perlengkapan Virtual Jaringan dalam Microsoft Azure inventaris.
 
 ## EXAMPLES
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

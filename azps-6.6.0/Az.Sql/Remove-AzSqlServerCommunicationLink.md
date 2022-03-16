@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerCommunicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlServerCommunicationLink.md
-ms.openlocfilehash: 9e8273dadcc26ff1f25af0e8de083f0b4c2f3987
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 895a4a746b6762a53862f95214936b31d6a2d6cb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377112"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140131335"
 ---
 # Remove-AzSqlServerCommunicationLink
 
 ## SYNOPSIS
 Menghapus link komunikasi untuk transaksi database elastis antara dua server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlservercommunicationlink) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditentukan oleh server yang ditentukan oleh parameter *ServerName.*
+Menentukan nama grup sumber daya yang ditentukan oleh server yang ditentukan oleh parameter *ServerName* .
 
 ```yaml
 Type: System.String

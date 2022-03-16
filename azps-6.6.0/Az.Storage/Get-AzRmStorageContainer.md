@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainer.md
-ms.openlocfilehash: b38f046655fbc0f2714ac25ca0dc94c87cf09a6a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6625511ad1ed64b709ffba6239de61fe5402e832
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342062"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130939"
 ---
 # Get-AzRmStorageContainer
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Storage wadah blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzRmStorageContainer** gets or lists Storage blob containers
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan Storage blob dengan Storage penampung dan nama wadah akun.
+Perintah ini akan mendapatkan Storage blob dengan Storage penampung dan nama wadah akun.
 
 ### Contoh 2: Daftar Storage wadah blob dari akun Storage
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 ```
 
-Perintah ini mencantumkan Storage blob semuanya dari akun Storage dengan Storage akun.
+Perintah ini mencantumkan Storage wadah blob dari akun Storage dengan Storage akun.
 
 ### Contoh 3: Get a Storage blob container with Storage account object and container name.
 ```
@@ -56,9 +59,9 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>Get-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah yang sama.
+Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah.
 
-### Contoh 4: Storage wadah blob dari akun Storage, termasuk wadah yang dihapus.
+### Contoh 4: Wadah blob Storage daftar akun Storage, termasuk wadah yang dihapus.
 ```
 PS C:\>Get-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -IncludeDeleted
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

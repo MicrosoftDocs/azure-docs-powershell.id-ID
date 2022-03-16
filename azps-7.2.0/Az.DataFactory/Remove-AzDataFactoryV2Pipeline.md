@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2Pipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryV2Pipeline.md
-ms.openlocfilehash: 3f9159ee88400149130d8d42f7e7e0e8982112a5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 78471f367fb6efc2828268c891b702df1f346e0a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090765"
 ---
 # Remove-AzDataFactoryV2Pipeline
 
 ## SYNOPSIS
 Menghapus saluran dari Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/remove-azdatafactoryv2pipeline) untuk informasi terkini.
 
 ## SYNTAX
 

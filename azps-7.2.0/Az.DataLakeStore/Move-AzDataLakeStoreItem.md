@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/mo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Move-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Move-AzDataLakeStoreItem.md
-ms.openlocfilehash: 0e71a47bf0a2b71a1529ee8bf211c6cb00d313c4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 35996417b966d0a627b61571254a51cf5832863e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269308"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090585"
 ---
 # Move-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Memindahkan atau mengganti nama file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/move-azdatalakestoreitem) untuk informasi terkini.
 
 ## SYNTAX
 

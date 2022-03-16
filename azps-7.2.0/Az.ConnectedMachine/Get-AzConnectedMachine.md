@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachine.md
-ms.openlocfilehash: 25cc98d68c4a017026476be15d5084ba44124762
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6a392e05a238d40d39c6e3da6c53d4ac363dd00
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306075"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091053"
 ---
 # Get-AzConnectedMachine
 
 ## SYNOPSIS
 Mengambil informasi tentang tampilan model atau tampilan contoh mesin hibrid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedmachine/get-azconnectedmachine) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ winwestus2_3   westus2  windows  Connected  Succeeded
 ```
 
 Mencantumkan semua komputer yang tersambung dalam langganan.
-Jika langganan tidak ditentukan, langganan akan menggunakan langganan dari konteks Azure PowerShell saat ini.
+Jika langganan tidak ditentukan, langganan akan digunakan dari paket anda saat Azure PowerShell konteks.
 
 ### Contoh 2: Hubungkan semua komputer yang tersambung dalam grup sumber daya
 ```powershell

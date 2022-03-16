@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssDiagnosticsExtension.md
-ms.openlocfilehash: a0d7c18e407c7fa9d64a500d73a92ef0a2dd349b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6aedf44a2ba547f946bca25bdfab6e83b67115db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312923"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092025"
 ---
 # Remove-AzVmssDiagnosticsExtension
 
 ## SYNOPSIS
 Menghapus ekstensi diagnostik dari VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvmssdiagnosticsextension) untuk informasi terkini.
 
 ## SYNTAX
 

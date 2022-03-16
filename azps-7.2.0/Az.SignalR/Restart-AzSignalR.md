@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzSignalR.md
-ms.openlocfilehash: 1adec9978aedb078cc7c7485f37e6c031df32981
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 825966f3e4e85703387a602688ba4e98a07b1d6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268555"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115639"
 ---
 # Restart-AzSignalR
 
 ## SYNOPSIS
 Mulai ulang layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/restart-azsignalr) untuk informasi terkini.
 
 ## SYNTAX
 

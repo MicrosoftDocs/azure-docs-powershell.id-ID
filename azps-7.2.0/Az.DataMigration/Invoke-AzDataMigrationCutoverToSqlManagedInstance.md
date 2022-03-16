@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCutoverToSqlManagedInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Invoke-AzDataMigrationCutoverToSqlManagedInstance.md
-ms.openlocfilehash: 2706e30dc731f51b25f49201f9ffee58740e576d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8bdd922f07a362cf4117e011ab3127a5f24316f5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271596"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090567"
 ---
 # Invoke-AzDataMigrationCutoverToSqlManagedInstance
 
 ## SYNOPSIS
-Memulai langsung migrasi database online yang sedang berlangsung ke SQL Yang Dikelola.
+Memulai langsung migrasi database online yang sedang berlangsung SQL Contoh Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/invoke-azdatamigrationcutovertosqlmanagedinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Invoke-AzDataMigrationCutoverToSqlManagedInstance -ManagedInstanceName <String> 
 ```
 
 ## DESCRIPTION
-Memulai langsung migrasi database online yang sedang berlangsung ke SQL Yang Dikelola.
+Memulai langsung migrasi database online yang sedang berlangsung SQL Contoh Terkelola.
 
 ## EXAMPLES
 

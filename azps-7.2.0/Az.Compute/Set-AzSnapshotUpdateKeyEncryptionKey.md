@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateKeyEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzSnapshotUpdateKeyEncryptionKey.md
-ms.openlocfilehash: 6f24f99a5a5f8045b9f39cd525cbeee2d239d4d0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0d7a5d2489ff8828266dc303254bfa3d72874f1d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297019"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091935"
 ---
 # Set-AzSnapshotUpdateKeyEncryptionKey
 
 ## SYNOPSIS
 Mengatur properti kunci enkripsi kunci pada objek pembaruan snapshot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azsnapshotupdatekeyencryptionkey) untuk informasi terkini.
 
 ## SYNTAX
 

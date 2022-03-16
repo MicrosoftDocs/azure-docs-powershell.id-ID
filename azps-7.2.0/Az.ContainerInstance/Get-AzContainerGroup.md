@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerGroup.md
-ms.openlocfilehash: 578ce5d51928921d0eca28823d373af1c1997e4f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4c75d29b635986b1b08bab3792494e39e410a33a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264123"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090963"
 ---
 # Get-AzContainerGroup
 
 ## SYNOPSIS
 Mendapatkan properti grup wadah yang ditentukan dalam langganan dan grup sumber daya yang ditentukan.
 Operasi mengembalikan properti setiap grup wadah termasuk wadah, kredensial registri gambar, kebijakan mulai ulang, tipe alamat IP, tipe OS, status, dan volume.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/get-azcontainergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -245,7 +248,7 @@ INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Pengidentifikasi untuk lokasi azure fisik.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

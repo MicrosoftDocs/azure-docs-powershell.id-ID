@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/Get-AzConfluentOrganization.md
-ms.openlocfilehash: 6b9001c2344270e7b5048f71c5f01b5b37b80085
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 06dc0e9c1412e4b319e1a0afe1fe0c1e48b4cf80
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291307"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091197"
 ---
 # Get-AzConfluentOrganization
 
 ## SYNOPSIS
 Dapatkan properti sumber daya Organisasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.confluent/get-azconfluentorganization) untuk informasi terkini.
 
 ## SYNTAX
 

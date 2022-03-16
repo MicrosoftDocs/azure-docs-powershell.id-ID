@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
-ms.openlocfilehash: 7bed7c7cd3e9cd82c63f4c211bfb6a0f0a1a049c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0c0fa49c272991a9b9d09cb22780b8300ba0e5c5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063579"
 ---
 # Sync-AzAnalysisServicesInstance
 
 ## SYNOPSIS
 
-Menyinkronkan database tertentu pada contoh server Analysis Services yang ditentukan ke semua contoh skala kueri di Lingkungan yang saat ini dicatat seperti yang ditentukan Add-AzAnalysisServicesAccount pencarian
+Menyinkronkan database tertentu pada contoh server Analysis Services yang ditentukan ke semua contoh skala kueri di Lingkungan yang saat ini dicatat seperti yang ditentukan dalam Add-AzAnalysisServicesAccount pencarian
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/sync-azanalysisservicesinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Cmdlet Sync-AzAnalysisServicesInstance menyinkronkan database yang ditentukan pa
 PS C:\>Sync-AzAnalysisServicesInstance -Instance asazure://westus.asazure.windows.net/contoso -Database SalesOrders
 ```
 
-Perintah ini akan menyinkronkan database bernama SalesOrders di server yang bernama 'contoso' dalam lingkungan westus.asazure.windows.net jika pengguna telah masuk ke lingkungan ini menggunakan Add-AzAnalysisServicesAccount perintah.
+Perintah ini akan menyinkronkan database bernama SalesOrders di server yang bernama 'contoso' dalam lingkungan westus.asazure.windows.net asalkan pengguna telah masuk ke lingkungan ini menggunakan Add-AzAnalysisServicesAccount perintah.
 
 ## PARAMETERS
 

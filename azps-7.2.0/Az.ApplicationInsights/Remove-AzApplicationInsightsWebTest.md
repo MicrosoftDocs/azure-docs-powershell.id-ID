@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 534b2c0e8850d93b6c8715be4cfbfe395e278580
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b54cd13a8848b3bad9fea51dd02822cdd9b2345b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257980"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062319"
 ---
 # Remove-AzApplicationInsightsWebTest
 
 ## SYNOPSIS
 Menghapus uji web Insights aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightswebtest) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,21 +39,21 @@ Menghapus uji web Insights aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus uji Insights web
+### Contoh 1: Menghapus uji web Insights aplikasi
 ```powershell
 PS C:\> Remove-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -Name standardwebtest01-lucasappinsights
 
 ```
 
-Perintah ini menghapus uji Insights web Aplikasi.
+Perintah ini menghapus uji Insights web Application.
 
-### Contoh 2: Menghapus aplikasi Insights web uji menurut saluran
+### Contoh 2: Menghapus alur Insights web dengan saluran
 ```powershell
 PS C:\> Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -Name webtest01-lucasappinsights | Remove-AzApplicationInsightsWebTest
 
 ```
 
-Perintah ini menghapus alur Insights web uji menurut saluran.
+Perintah ini menghapus alur Insights web dengan saluran.
 
 ## PARAMETERS
 

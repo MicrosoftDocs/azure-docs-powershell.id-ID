@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolPrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseKustoPoolPrincipalAssignment.md
-ms.openlocfilehash: e6bfc4d42a571bafbb57d8f841fef4766356e3a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2118939bc4837dc31df44ce4ac457b2b7353041e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314459"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113695"
 ---
 # Get-AzSynapseKustoPoolPrincipalAssignment
 
 ## SYNOPSIS
 Mendapatkan prinsipal kusto poolAssignment.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsekustopoolprincipalassignment) untuk informasi terkini.
 
 ## SYNTAX
 

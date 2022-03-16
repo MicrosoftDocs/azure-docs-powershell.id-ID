@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/set
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Set-AzCloudServiceUpdateDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Set-AzCloudServiceUpdateDomain.md
-ms.openlocfilehash: b47a9dd72a03d7ab896ae1acd5c5a07f746d22a9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7b601d8cb84fc7a69f1b5c14366d81efb1ab7178
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275387"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060015"
 ---
 # Set-AzCloudServiceUpdateDomain
 
 ## SYNOPSIS
 Memperbarui contoh peran dalam pembaruan domain yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/set-azcloudserviceupdatedomain) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationProject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationProject.md
-ms.openlocfilehash: 72bc5deb99daa746fc31e4f2b964dca48be0458b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0717bda623a3f01709cf35a1a3ce1d17cae8ffae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275228"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090441"
 ---
 # Remove-AzDataMigrationProject
 
 ## SYNOPSIS
 Menghapus proyek Layanan Migrasi Database Azure dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationproject) untuk informasi terkini.
 
 ## SYNTAX
 

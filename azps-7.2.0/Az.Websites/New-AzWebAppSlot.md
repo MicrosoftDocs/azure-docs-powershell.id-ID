@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSlot.md
-ms.openlocfilehash: fc24ae4a079dfb2f3b0fb320623aba2caa4c7506
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b42c65160ca012959bfb9987ee4c624eeab38acb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281611"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140112851"
 ---
 # New-AzWebAppSlot
 
 ## SYNOPSIS
 Membuat slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebappslot) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettingsOverrides
-Opsi Pengaturan Hashtable
+Aplikasi Pengaturan Hashtable
 
 ```yaml
 Type: System.Collections.Hashtable

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverPrepare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverPrepare.md
-ms.openlocfilehash: af29692ea8099c829b346926f8499f5d509c5b5b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d05556eb100e8191ac51bc96839934fc33d16c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263355"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117583"
 ---
 # Invoke-AzResourceMoverPrepare
 
@@ -18,6 +18,9 @@ ms.locfileid: "138263355"
 Memulai persiapan untuk kumpulan sumber daya yang disertakan dalam badan permintaan.
 Operasi persiapan berada pada moveResources yang berada di moveState 'PreparePending' atau 'PrepareFailed', setelah selesai, moveResource moveState melakukan transisi ke MovePending.
 Untuk membantu pengguna agar prasyarat operasi klien bisa memanggil operasi dengan properti validateOnly yang diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverprepare) untuk informasi terkini.
 
 ## SYNTAX
 

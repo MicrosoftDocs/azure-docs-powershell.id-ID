@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: 0739113b1c00d892af07ff40a8395c577b8ed2b6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7cce77e9029438964ac2e63ef085d5d682addc8a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259019"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062445"
 ---
 # Get-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
 Dapatkan tombol api wawasan aplikasi untuk sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightsapikey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Application Insights Component Name.
+Aplikasi Insights Komponen.
 
 ```yaml
 Type: System.String

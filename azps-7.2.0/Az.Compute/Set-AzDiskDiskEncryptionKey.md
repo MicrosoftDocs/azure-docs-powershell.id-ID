@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskDiskEncryptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskDiskEncryptionKey.md
-ms.openlocfilehash: c1baec7a6c99b8066e836ac72a3a45cb47f4699d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 99300bc07c8f595f4223df6c32a5e0c67e4ef9c2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164868"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091971"
 ---
 # Set-AzDiskDiskEncryptionKey
 
 ## SYNOPSIS
 Mengatur properti kunci enkripsi disk pada objek disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azdiskdiskencryptionkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\> $diskConfig.EncryptionSettingsCollection.EncryptionSettingsVersion = '1.
 PS C:\> New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskconfig;
 ```
 
-Perintah pertama membuat objek disk kosong lokal dengan ukuran 5GB di Standard_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
+Perintah pertama membuat objek disk kosong lokal dengan ukuran 5GB dalam Standard_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
 Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek disk.
 Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOrchestrationServiceState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOrchestrationServiceState.md
-ms.openlocfilehash: 26c1f7da536e40b97e9d95b7bfb90643728ca0e8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4e9d239067265608b6eace4e3f700c232f175a24
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170130"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091521"
 ---
 # Set-AzVmssOrchestrationServiceState
 
 ## SYNOPSIS
 Mengatur status layanan ringkasan untuk VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssorchestrationservicestate) untuk informasi terkini.
 
 ## SYNTAX
 

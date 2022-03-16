@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeeringRegisteredPrefix.md
-ms.openlocfilehash: 7bb77d1487d77d0af4115a9a968259dd68a8dd9f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9ce6cd42b5594696e527cc2faa7865c6202b9545
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169070"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118105"
 ---
 # Get-AzPeeringRegisteredPrefix
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan prefiks terdaftar untuk peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeeringregisteredprefix) untuk informasi terkini.
 
 ## SYNTAX
 

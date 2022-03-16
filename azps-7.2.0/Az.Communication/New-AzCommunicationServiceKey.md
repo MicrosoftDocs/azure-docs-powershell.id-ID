@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
-ms.openlocfilehash: 64e2911168d822fa59e6737e502c152a6bf186e8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d1139f2d0d428c3cc004b8afbe308c380eeb95a1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168173"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059763"
 ---
 # New-AzCommunicationServiceKey
 
 ## SYNOPSIS
 Regenerasi Kunci akses CommunicationService.
 PrimaryKey dan SecondaryKey tidak bisa digenerasi pada waktu yang sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/new-azcommunicationservicekey) untuk informasi terkini.
 
 ## SYNTAX
 

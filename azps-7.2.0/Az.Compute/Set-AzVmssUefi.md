@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssUefi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssUefi.md
-ms.openlocfilehash: d0eaac4c4b001784e515ac3e006f96874e4cf64d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 55f8c9958f848fa32bbb49a2226c0e590d39b2f6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091485"
 ---
 # Set-AzVmssUefi
 
 ## SYNOPSIS
 Mengubah properti UEFI mesin virtual gen 2 yang merupakan bagian dari set skala mesin virtual
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssuefi) untuk informasi terkini.
 
 ## SYNTAX
 

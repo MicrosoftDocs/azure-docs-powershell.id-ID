@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementRegion.md
-ms.openlocfilehash: c7627c93aca9e6b6c8151b39b0faead266446f4c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ea5ac1fe061203d914ab0eff9aa8ac8b9552bace
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306156"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062553"
 ---
 # Update-AzApiManagementRegion
 
 ## SYNOPSIS
 Memperbarui kawasan penyebaran yang sudah ada dalam contoh PsApiManagement.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementregion) untuk informasi terkini.
 
 ## SYNTAX
 

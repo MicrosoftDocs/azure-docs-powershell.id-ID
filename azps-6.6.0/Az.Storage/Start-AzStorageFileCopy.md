@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageFileCopy.md
-ms.openlocfilehash: d4740ef1d9e09ee485654c16701b7c14f7d51a7d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e3c2259724fa731bb509ea5024cf55d75d084495
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357869"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130345"
 ---
 # Start-AzStorageFileCopy
 
 ## SYNOPSIS
 Mulai menyalin file sumber.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/start-azstoragefilecopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -DestFile
-Menentukan objek **CloudFile.**
+Menentukan objek **CloudFile** .
 Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
 
 ```yaml
@@ -298,8 +301,8 @@ Accept wildcard characters: False
 ```
 
 ### -SrcBlob
-Menentukan objek **CloudBlob.**
-Anda dapat membuat blob awan atau mendapatkannya menggunakan cmdlet Get-AzStorageBlob.
+Menentukan objek **CloudBlob** .
+Anda dapat membuat blob awan atau mendapatkannya menggunakan cmdlet Get-AzStorageBlob cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 
 ### -SrcContainer
 Menentukan objek wadah blob awan.
-Anda dapat membuat objek wadah blob awan atau menggunakan Get-AzStorageContainer cmdlet.
+Anda dapat membuat objek wadah blob awan atau menggunakan cmdlet Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -SrcFile
-Menentukan objek **CloudFile.**
+Menentukan objek **CloudFile** .
 Anda dapat membuat file awan atau mendapatkannya menggunakan **Get-AzStorageFile**.
 
 ```yaml
@@ -453,7 +456,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

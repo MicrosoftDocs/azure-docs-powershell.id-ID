@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/New-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/New-AzConfluentOrganization.md
-ms.openlocfilehash: 5bd082b45d936ee14ee89dd627bab37d684f6727
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 61a82d683b975a88ae22db0e6a0ba8a53ccc3fe3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091161"
 ---
 # New-AzConfluentOrganization
 
 ## SYNOPSIS
 Buat Sumber daya organisasi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.confluent/new-azconfluentorganization) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDetailPublisherId
-Id Publisher
+id Publisher
 
 ```yaml
 Type: System.String

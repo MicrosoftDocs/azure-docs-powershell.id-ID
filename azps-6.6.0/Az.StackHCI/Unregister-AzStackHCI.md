@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/unregis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
-ms.openlocfilehash: 5d793f1ab3efdae1255507844a10f53d57b119fd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2209526ea37aae88fd4b5529bccbefc1966b6582
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136371092"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140131083"
 ---
 # Unregister-AzStackHCI
 
 ## SYNOPSIS
 Unregister-AzStackHCI menghapus sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
 Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/unregister-azstackhci) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOnlyAzureArcServer
-Menentukan parameter ini $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan pendaftaran HCI Azure Stack tidak akan diubah.
+Menentukan parameter ini $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan pendaftaran Azure Stack HCI tidak akan diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama Grup Sumber Daya Azure.
-Jika tidak ditentukan \<LocalClusterName\> ,rg akan digunakan sebagai nama grup sumber daya.
+Jika tidak ditentukan \<LocalClusterName\>,rg akan digunakan sebagai nama grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

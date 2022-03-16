@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Get-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: cd99c42d69441a06dbbbd6c1241349648fa3b3a4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ec343deffcd198ab8c9fee4ab0ceec37b876aae9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140129013"
 ---
 # Get-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Mendapatkan kumpulan data referensi dengan nama yang ditentukan dalam lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.timeseriesinsights/get-aztimeseriesinsightsreferencedataset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu Insights terkait dengan grup sumber daya yang ditentukan.
+Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,10 +192,10 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ITimeSeriesInsightsIdentity> : Parameter Identitas
+INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama rangkaian waktu yang Insights acara yang terkait dengan lingkungan tertentu.
+  - `[EventSourceName <String>]`: Nama Sumber waktu yang Insights terkait dengan lingkungan tertentu.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzScheduledQueryRule.md
-ms.openlocfilehash: cef3a500d697d67c56d6bd0308aa929665119da5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eb8c7a84156b5d34c4495aea73aa2d1d271ce51b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300091"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120481"
 ---
 # Remove-AzScheduledQueryRule
 
 ## SYNOPSIS
 Menghapus Aturan Pemberitahuan Log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azscheduledqueryrule) untuk informasi terkini.
 
 ## SYNTAX
 

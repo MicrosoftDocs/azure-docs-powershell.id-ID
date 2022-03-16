@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPoolSensitivityRecommendation.md
-ms.openlocfilehash: 16296187e8638bf8e5beb08a339756aad2090514
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 61542ece1e7cd3e557f58fcb1597181e3a8567f0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346466"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140065007"
 ---
 # Get-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
-Dapatkan tipe informasi yang direkomendasikan dan label kolom sensitivitas dalam SQL sama.
+Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas kolom dalam SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpoolsensitivityrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ SensitivityLabels : {{
                     }}
 ```
 
-### Contoh 2: Dapatkan informasi yang direkomendasikan dan label sensitivitas dari SQL Azure Synapse menggunakan Piping.
+### Contoh 2: Dapatkan tipe informasi yang direkomendasikan dan label sensitivitas dari SQL Azure Synapse menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Get-AzSynapseSqlPoolSensitivityRecommendation
 
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

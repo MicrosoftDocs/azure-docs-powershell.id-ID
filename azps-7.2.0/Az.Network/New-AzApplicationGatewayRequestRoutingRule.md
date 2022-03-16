@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRequestRoutingRule.md
-ms.openlocfilehash: 7eccfd83bd1291afa1e5097373d6e2ec5aeca870
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 831126a1754fc8cdf7566e6a95f4143bfcc2ee1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287707"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118717"
 ---
 # New-AzApplicationGatewayRequestRoutingRule
 
 ## SYNOPSIS
 Membuat aturan perutean permintaan untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrequestroutingrule) untuk informasi terkini.
 
 ## SYNTAX
 
