@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxHeavyJobDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxHeavyJobDetailsObject.md
-ms.openlocfilehash: b44871824390e6f0964062d092085b5d90be0847
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2950cff9c28a8f7f29784e7c5752025194318124
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378134"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140257273"
 ---
 # New-AzDataBoxHeavyJobDetailsObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk DataBoxHeavyJobDetails
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/new-azdataboxheavyjobdetailsobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -95,7 +98,7 @@ Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri.
 Ini tidak akan dikembalikan di Dapatkan Panggilan.
 Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter.
 Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus.
-Password tidak bisa memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini: @# \- $%^!+=;:_()]+.
+Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -205,7 +208,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTACTDETAIL <IContactDetails> : Detail kontak untuk pemberitahuan dan pengiriman.
+CONTACTDETAIL <IContactDetails>: Detail kontak untuk pemberitahuan dan pengiriman.
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
@@ -234,14 +237,14 @@ DATAEXPORTDETAIL <IDataExportDetails[]>: Detail data yang akan diekspor dari azu
       - `[IncludeFilterFileDetail <IFilterFileDetails[]>]`: Detail file filter yang akan digunakan untuk transfer data.
         - `FilterFilePath <String>`: Jalur file yang berisi detail semua item yang akan ditransfer.
         - `FilterFileType <FilterFileType>`: Tipe file filter.
-  - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini: @# \- $%^!+=;:_()]+
+  - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
   - `[LogCollectionLevel <LogCollectionLevel?>]`: Tingkat log yang akan dikumpulkan.
 
 DATAIMPORTDETAIL <IDataImportDetails[]>: Detail data yang akan diimpor ke Azure.
   - `AccountDetailDataAccountType <DataAccountType>`: Tipe Akun data yang akan ditransfer.
-  - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini: @# \- $%^!+=;:_()]+
+  - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
 
-KEYENCRYPTIONKEY <IKeyEncryptionKey> : Detail tentang tipe enkripsi kunci mana yang sedang digunakan.
+KEYENCRYPTIONKEY <IKeyEncryptionKey>: Detail tentang tipe enkripsi kunci mana yang sedang digunakan.
   - `KekType <KekType>`: Tipe kunci enkripsi yang digunakan untuk enkripsi kunci.
   - `[IdentityProperty <IIdentityProperties>]`: Properti identitas terkelola digunakan untuk enkripsi kunci.
     - `[Type <String>]`: Tipe identitas layanan terkelola.
@@ -249,12 +252,12 @@ KEYENCRYPTIONKEY <IKeyEncryptionKey> : Detail tentang tipe enkripsi kunci mana y
   - `[KekUrl <String>]`: Kunci enkripsi kunci. It is required in case of Customer managed KekType.
   - `[KekVaultResourceId <String>]`: Id sumber daya penyimpanan kek. It is required in case of Customer managed KekType.
 
-PREFERENSI <IPreferences> : Preferensi untuk pesanan.
+PREFERENSI <IPreferences>: Preferensi untuk pesanan.
   - `[EncryptionPreferenceDoubleEncryption <DoubleEncryption?>]`: Menentukan lapisan sekunder terkait enkripsi berbasis perangkat lunak.
   - `[PreferredDataCenterRegion <String[]>]`: Kawasan pusat data pilihan.
   - `[TransportPreferencePreferredShipmentType <TransportShipmentTypes?>]`: Menunjukkan tipe Logistik Pengiriman yang lebih disukai pelanggan.
 
-ALAMAT <IShippingAddress> PENGIRIMAN : Alamat pengiriman pelanggan.
+ALAMAT PENGIRIMAN <IShippingAddress>: Alamat pengiriman pelanggan.
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Tipe alamat.

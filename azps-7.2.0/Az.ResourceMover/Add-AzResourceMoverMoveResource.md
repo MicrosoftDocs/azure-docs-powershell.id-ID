@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Add-AzResourceMoverMoveResource.md
-ms.openlocfilehash: aceecf674b0bd5b5b2cc73b38f8859b3aa765632
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ae9ffb9d1694a95a2bc537ffcad421e1bf7ea850
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312140"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140117655"
 ---
 # Add-AzResourceMoverMoveResource
 
 ## SYNOPSIS
 Membuat atau memperbarui Sumber Daya Pemindahan dalam kumpulan pemindahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/add-azresourcemovermoveresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -375,7 +378,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DEPENDSONOVERRIDE <IMoveResourceDependencyOverride[]>: Gets atau set the move resource depends overrides.
+DEPENDSONOVERRIDE <IMoveResourceDependencyOverride[]>: Gets atau mengatur penggantian dependensi sumber daya pindahkan.
   - `[Id <String>]`: Mendapatkan atau mengatur ID ARM dari sumber daya dependen.
   - `[TargetId <String>]`: Mendapatkan atau mengatur id sumber daya ARM baik dari MoveResource maupun ID sumber daya ARM dari sumber daya dependen.
 

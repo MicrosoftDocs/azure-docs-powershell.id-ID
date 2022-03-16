@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: 779317e1188f02e5721826885f1a1f57b001f35b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 44bc0294bf09aefd437f9b50599056ce0c52e7b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357185"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140256589"
 ---
 # Set-AzDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
 Mengubah detail sumber data akun Analitik Danau Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticsdatasource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Perintah ini akan mengubah kunci akses yang disimpan untuk sumber data Storage A
 ## PARAMETERS
 
 ### -AccessKey
-Menentukan kunci akses baru sumber data Azure Blob Storage baru.
+Menentukan kunci akses baru sumber data Azure Blob Storage.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

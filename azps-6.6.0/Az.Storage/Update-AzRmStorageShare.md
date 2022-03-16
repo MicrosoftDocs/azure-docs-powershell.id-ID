@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageShare.md
-ms.openlocfilehash: 7fc6bc25d806abd1b80995ada4fb9f6a1299697a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 178bc98c5301e98bacfe0362835a490292f06f6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344513"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243539"
 ---
 # Update-AzRmStorageShare
 
 ## SYNOPSIS
-Mengubah Storage file.
+Mengubah file Storage file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azrmstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Update-AzRmStorageShare -InputObject <PSShare> [-QuotaGiB <Int32>] [-Metadata <H
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageShare** mengubah Storage file bersama.
+Cmdlet **New-AzRmStorageShare** mengubah Storage file baru.
 
 ## EXAMPLES
 
@@ -74,13 +77,13 @@ tag1 value1
 
 Perintah ini mengubah metadata Storage berbagi file dan berbagi kuota dengan nama akun Storage dan nama berbagi, dan memperlihatkan hasil modifikasi dengan objek berbagi file yang dikembalikan.
 
-### Contoh 2: Mengubah metadata pada file Storage berbagi dengan objek Storage dan nama berbagi
+### Contoh 2: Mengubah metadata pada file Storage berbagi file dengan Storage objek akun dan nama berbagi
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount"
 PS C:\>$share = Update-AzRmStorageShare -StorageAccount $accountObject -Name "myshare" -Metadata @{tag0="value0";tag1="value1"}
 ```
 
-Perintah ini mengubah metadata pada file Storage dibagikan dengan Storage objek akun dan nama berbagi.
+Perintah ini mengubah metadata pada file Storage dibagikan dengan Storage akun dan nama berbagi.
 
 ### Contoh 3: Mengubah kuota berbagi untuk semua Storage file yang dibagikan dalam Storage dengan saluran
 ```
@@ -94,7 +97,7 @@ share1   5000
 share2   5000
 ```
 
-Perintah ini mengubah kuota berbagi sebagai 5000 GiB untuk semua Storage file dalam saluran Storage dengan saluran.
+Perintah ini mengubah kuota berbagi sebagai 5000 GiB untuk semua Storage file yang dibagikan dalam Storage dengan saluran.
 
 ### Contoh 4: Modify a Storage file share with accesstier as Cool
 ```
@@ -328,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

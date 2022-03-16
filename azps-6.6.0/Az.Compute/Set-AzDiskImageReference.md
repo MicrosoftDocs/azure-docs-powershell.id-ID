@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskImageReference.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzDiskImageReference.md
-ms.openlocfilehash: 4f05383bb35e86e4aade405e1125bbc63e474bf5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4dc90e0442eeaabfc2b58b3c91e4e13df7009322
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347414"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142350"
 ---
 # Set-AzDiskImageReference
 
 ## SYNOPSIS
 Mengatur properti referensi gambar pada objek disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azdiskimagereference) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> $diskconfig = Set-AzDiskImageReference -Disk $diskconfig -Id $image -Lun
 PS C:\> New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskconfig;
 ```
 
-Perintah pertama membuat objek disk lokal berukuran 10GB di Premium_LRS akun penyimpanan.  Sistem tersebut juga Windows OS.
+Perintah pertama membuat objek disk lokal dengan ukuran 10GB di Premium_LRS akun penyimpanan.  Sistem juga mengatur Windows OS.
 Perintah kedua mengatur id gambar dan nomor unit logika 0 untuk objek disk.
 Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

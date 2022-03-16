@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileCopyState.md
-ms.openlocfilehash: 7e921acb0df996571fadf28a040f6819da2a9dbf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2caba9b98abad12d0c150f1a23253bc06d34c40f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342050"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130828"
 ---
 # Get-AzStorageFileCopyState
 
 ## SYNOPSIS
 Mendapatkan status operasi penyalinan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragefilecopystate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan objek **CloudFile.**
+Menentukan objek **CloudFile** .
 Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
 
 ```yaml
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 757129ec7ed813506e054146b582b729fd1f8857
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 036f0ef0b9c8c600b0bf45e2c96e2a87fc956b8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258956"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241433"
 ---
 # Get-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
 Mendapatkan runbooks Otomatisasi dan jadwal terkait.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationscheduledrunbook) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: c2b97bf6811c3c5c19c445fd7910f9aa721ed42c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 64a5fed555150c49672d67be5bacdf9b4498c823
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341870"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140242207"
 ---
 # Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
 Mengatur pengaturan perlindungan ancaman tingkat lanjut di SQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting -ResourceId <String>
 
 ## DESCRIPTION
 Cmdlet **Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting** mengatur pengaturan perlindungan ancaman tingkat lanjut pada kumpulan SQL Azure Synapse.
-Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada suatu SQL, pengaturan pengauditan harus diaktifkan pada SQL tim tersebut.
+Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada SQL, pengaturan pengauditan harus diaktifkan pada SQL pool tersebut.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Untuk mengaktifkan perlindungan ancaman tingkat lanjut pada suatu SQL, pengatura
 PS C:\> Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -NotificationRecipientsEmails "admin01@contoso.com;secadmin@contoso.com" -EmailAdmins $False -ExcludedDetectionType "Sql_Injection_Vulnerability", "SQL_Injection" -StorageAccountName "mystorageAccount"
 ```
 
-Perintah ini mengatur pengaturan proteksi ancaman tingkat lanjut untuk kumpulan SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
+Perintah ini mengatur pengaturan perlindungan ancaman tingkat lanjut untuk kumpulan SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzPolicyAssignment.md
-ms.openlocfilehash: 779fa1ddac947c2c945912d630384637cd0ef64b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f43ae519b63b8ed95e715e2d22bba33e15d4545c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344753"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140131893"
 ---
 # New-AzPolicyAssignment
 
 ## SYNOPSIS
 Membuat penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azpolicyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ PS C:\> New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDef
 
 Perintah pertama mendapatkan langganan bernama Subscription01 menggunakan cmdlet Get-AzSubscription dan menyimpannya di $Subscription variabel.
 Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyDefinition dan menyimpannya dalam $Policy variabel.
-Perintah terakhir menetapkan kebijakan dalam $Policy tingkat langganan yang diidentifikasi oleh string lingkup langganan.
+Perintah terakhir menetapkan kebijakan di $Policy di tingkat langganan yang diidentifikasi oleh string lingkup langganan.
 
 ### Contoh 2: Penetapan kebijakan di tingkat grup sumber daya
 ```
@@ -157,7 +160,7 @@ PS C:\> New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicyDef
 
 Perintah pertama mendapatkan langganan bernama Subscription01 menggunakan cmdlet Get-AzSubscription dan menyimpannya di $Subscription variabel.
 Perintah kedua mendapatkan definisi kebijakan bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyDefinition dan menyimpannya dalam $Policy variabel.
-Perintah terakhir menetapkan kebijakan dalam $Policy tingkat langganan yang diidentifikasi oleh string lingkup langganan. Penetapan ditetapkan dengan nilai EnforcementMode dari _DoNotEnforce_ i.e. efek kebijakan tidak diberlakukan selama pembuatan atau pembaruan sumber daya.
+Perintah terakhir menetapkan kebijakan di $Policy di tingkat langganan yang diidentifikasi oleh string lingkup langganan. Penetapan ditetapkan dengan nilai EnforcementMode dari _DoNotEnforce_ i.e. efek kebijakan tidak diberlakukan selama pembuatan atau pembaruan sumber daya.
 
 ### Contoh 7: Penetapan kebijakan dengan pesan tidak sesuai
 ```
@@ -166,7 +169,7 @@ PS C:\> $NonComplianceMessages = @(@{Message="Only DsV2 SKUs are allowed."; Poli
 PS C:\> New-AzPolicyAssignment -Name 'VirtualMachinePolicyAssignment' -PolicySetDefinition $PolicySet -NonComplianceMessage $NonComplianceMessages
 ```
 
-Perintah pertama mendapatkan definisi kumpulan kebijakan bernama VirtualMachinePolicySet menggunakan cmdlet Get-AzPolicySetDefinition dan menyimpannya dalam $PolicySet variabel.
+Perintah pertama mendapatkan definisi kumpulan kebijakan bernama VirtualMachinePolicySet menggunakan cmdlet Get-AzPolicySetDefinition dan menyimpannya dalam $PolicySet kolom.
 Perintah kedua membuat array pesan tidak memenuhi persyaratan. Satu pesan tujuan umum untuk seluruh penetapan dan satu pesan khusus untuk kebijakan pembatasan SKU di dalam definisi kumpulan kebijakan yang ditetapkan.
 Perintah terakhir menetapkan definisi kumpulan kebijakan $PolicySet langganan dengan dua pesan tidak memenuhi syarat yang akan diperlihatkan jika sumber daya ditolak oleh kebijakan.
 
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists' dan 'modifikasi'. Lokasi diperlukan saat menetapkan identitas. Izin harus diberikan ke identitas menggunakan New-AzRoleAssignment setelah identitas dibuat.
+Buat dan tetapkan Identitas Azure Active Directory untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists' dan 'modifikasi'. Lokasi diperlukan saat menetapkan identitas. Izin harus diberikan ke identitas menggunakan New-AzRoleAssignment setelah identitas dibuat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -464,7 +467,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 Menentukan lingkup penetapan kebijakan.
-Misalnya, untuk menetapkan kebijakan ke grup sumber daya, tentukan hal berikut ini: `/subscriptions/` nama grup sumber daya ID `/resourcegroups/` langganan
+Misalnya, untuk menetapkan kebijakan ke grup sumber daya, tentukan hal berikut ini: `/subscriptions/`nama grup IDresource`/resourcegroups/` langganan
 
 ```yaml
 Type: System.String
@@ -479,7 +482,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

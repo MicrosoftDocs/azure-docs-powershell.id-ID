@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareStoredAccessPolicy.md
-ms.openlocfilehash: c9605a7d56eb47b00cbaf35edeb96ccd570ea0ec
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e16f7c2a9ebfe7d7f0c438f1bf54d95bd868e795
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357914"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130435"
 ---
 # Set-AzStorageShareStoredAccessPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan akses yang disimpan pada Storage bersama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragesharestoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,11 +32,11 @@ Set-AzStorageShareStoredAccessPolicy [-ShareName] <String> [-Policy] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageShareStoredAccessPolicy memperbarui** kebijakan akses yang disimpan pada Azure Storage bersama.
+Cmdlet **Set-AzStorageShareStoredAccessPolicy memperbarui** kebijakan akses tersimpan pada Azure Storage bersama.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui kebijakan akses yang disimpan Storage bersama
+### Contoh 1: Memperbarui kebijakan akses tersimpan dalam Storage bersama
 ```
 PS C:\>Set-AzStorageShareStoredAccessPolicy -ShareName "ContosoShare" -Policy "GeneralPolicy" -Permission "rwdl"
 ```
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -Permission
 Menentukan izin dalam kebijakan akses yang disimpan untuk mengakses berbagi atau file di bawahnya.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainer.md
-ms.openlocfilehash: dad7f1b5ef26c98ba50e9dff84aae2bfd3e41c26
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e451ff636f40438529f304fe825a69db7c16e82d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351065"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140130615"
 ---
 # Remove-AzRmStorageContainer
 
 ## SYNOPSIS
 Menghapus wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,27 +45,27 @@ Cmdlet **Remove-AzRmStorageContainer** menghapus wadah Storage blob
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Storage blob dengan Storage wadah dan nama wadah akun
+### Contoh 1: Remove a Storage blob container with Storage account name and container name
 ```
 PS C:\>Remove-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini akan menghapus Storage blob dengan Storage penampung dan nama wadah akun.
+Perintah ini akan menghapus Storage blob penampung dengan Storage penampung dan nama wadah akun.
 
-### Contoh 2: Menghapus Storage blob dengan Storage wadah dan nama wadah akun
+### Contoh 2: Menghapus Storage blob dengan nama Storage dan wadah akun
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini akan menghapus Storage blob dengan wadah Storage dan nama wadah akun.
+Perintah ini menghapus wadah Storage blob dengan Storage objek akun dan nama wadah.
 
 ### Contoh 3: Hapus Storage wadah blob dalam akun Storage dengan pipeline
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Remove-AzRmStorageContainer -Force
 ```
 
-Perintah ini akan menghapus Storage wadah blob dalam akun Storage dengan pipeline.
+Perintah ini akan menghapus Storage wadah blob dalam akun Storage dengan saluran.
 
 ## PARAMETERS
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage objek wadah
+Storage wadah objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

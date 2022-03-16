@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxJob.md
-ms.openlocfilehash: 9da284c711c7523510d7c245fc7cece55ecf1816
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f59cd17ca6e4802a7aec7c035f00031087b6cbd7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383303"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140257255"
 ---
 # New-AzDataBoxJob
 
 ## SYNOPSIS
 Membuat pekerjaan baru dengan parameter tertentu.
 Pekerjaan yang sudah ada tidak bisa diperbarui dengan API ini dan sebaiknya diperbarui dengan API pekerjaan Perbarui.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/new-azdataboxjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -496,7 +499,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -513,7 +516,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DETAIL <IJobDetails> : Detail pekerjaan yang dijalankan. Bidang ini hanya akan dikirim untuk filter perluas detail.
+DETAIL <IJobDetails>: Detail pekerjaan yang dijalankan. Bidang ini hanya akan dikirim untuk filter perluas detail.
   - `ContactDetail <IContactDetails>`: Detail kontak untuk pemberitahuan dan pengiriman.
     - `ContactName <String>`: Nama kontak orang tersebut.
     - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
@@ -543,11 +546,11 @@ DETAIL <IJobDetails> : Detail pekerjaan yang dijalankan. Bidang ini hanya akan d
         - `[IncludeFilterFileDetail <IFilterFileDetails[]>]`: Detail file filter yang akan digunakan untuk transfer data.
           - `FilterFilePath <String>`: Jalur file yang berisi detail semua item yang akan ditransfer.
           - `FilterFileType <FilterFileType>`: Tipe file filter.
-    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini: @# \- $%^!+=;:_()]+
+    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
     - `[LogCollectionLevel <LogCollectionLevel?>]`: Tingkat log yang akan dikumpulkan.
   - `[DataImportDetail <IDataImportDetails[]>]`: Detail data yang akan diimpor ke Azure.
     - `AccountDetailDataAccountType <DataAccountType>`: Tipe Akun data yang akan ditransfer.
-    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini: @# \- $%^!+=;:_()]+
+    - `[AccountDetailSharePassword <String>]`: Kata sandi untuk semua berbagi dibuat pada perangkat. Tidak dapat dialihkan untuk pekerjaan TransferType:ExportFromAzure. Jika ini tidak lolos, layanan akan membuat kata sandi itu sendiri. Ini tidak akan dikembalikan di Dapatkan Panggilan. Persyaratan Kata Sandi : Kata sandi harus minimal 12 dan maksimal 64 karakter. Kata sandi harus memiliki setidaknya satu alfabet huruf besar, satu nomor dan satu karakter khusus. Password tidak dapat memiliki karakter berikut: IilLoO0 Password hanya bisa memiliki alfabet, angka dan karakter ini : @#\-$%^!+=;:_()]+
   - `[ExpectedDataSizeInTeraByte <Int32?>]`: Ukuran data yang diharapkan, yang perlu ditransfer dalam pekerjaan ini, dalam terabyte.
   - `[KeyEncryptionKey <IKeyEncryptionKey>]`: Detail tentang tipe enkripsi kunci yang digunakan.
     - `KekType <KekType>`: Tipe kunci enkripsi yang digunakan untuk enkripsi kunci.

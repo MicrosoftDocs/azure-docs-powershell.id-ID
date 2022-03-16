@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleAssignment.md
-ms.openlocfilehash: 31d8de78bcd8647e704839df56c8a20e1c7bd60e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8e38f09d0e2787ac718bdfef7963d12d4f1d68bb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386506"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140131911"
 ---
 # New-AzRoleAssignment
 
 ## SYNOPSIS
 Menetapkan peran RBAC tertentu untuk pokok tertentu, pada lingkup yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Dan untuk menentukan aplikasi Azure AD, gunakan parameter ApplicationId atau Obj
 Peran yang akan ditetapkan harus ditentukan menggunakan parameter RoleDefinitionName.
 Lingkup di mana akses sedang diberikan mungkin ditentukan.
 Pengaturan defaultnya adalah langganan yang dipilih. Lingkup penetapan dapat ditentukan menggunakan salah satu kombinasi parameter berikut ini.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/ \<subscriptionId\> b.
+Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/\<subscriptionId\> b.
 ResourceGroupName - untuk memberi akses ke grup sumber daya yang ditentukan.
 c.
 ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - untuk menentukan sumber daya tertentu di dalam grup sumber daya untuk memberikan akses ke.
@@ -441,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueueStoredAccessPolicy.md
-ms.openlocfilehash: 25921228876d8f6851416192b269a39ba791efba
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1a6cc5d2b664d38ae45002116c9ac90b4ae360ac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338277"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243899"
 ---
 # New-AzStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
 Membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragequeuestoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 
 ### -Permission
 Menentukan izin dalam kebijakan akses tersimpan untuk mengakses antrean penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

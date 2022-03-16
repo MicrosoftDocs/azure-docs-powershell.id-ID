@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSchedule.md
-ms.openlocfilehash: 9aef49607cb2da70acbcc81096b0634988424fd4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b56a3b717009d664120940694a55207c35b73d4f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282588"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241397"
 ---
 # New-AzAutomationSchedule
 
 ## SYNOPSIS
 Membuat jadwal Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationschedule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ PS C:\> $EndTime = $StartTime.AddYears(1)
 PS C:\> New-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule02" -StartTime $StartTime -ExpiryTime $EndTime -DayInterval 1 -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam $StartDate variabel.
+Perintah pertama membuat objek tanggal dengan menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam $StartDate variabel.
 Tentukan waktu yang setidaknya lima menit di masa mendatang.
 Perintah kedua membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam $EndDate variabel.
 Perintah menentukan waktu yang akan datang.
@@ -110,7 +113,7 @@ PS C:\> [System.DayOfWeek[]]$WeekDays = @([System.DayOfWeek]::Monday..[System.Da
 PS C:\> New-AzAutomationSchedule -AutomationAccountName "Contoso17" -Name "Schedule03" -StartTime $StartTime -WeekInterval 1 -DaysOfWeek $WeekDays -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama membuat objek tanggal menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam $StartDate variabel.
+Perintah pertama membuat objek tanggal dengan menggunakan cmdlet **Get-Date** , lalu menyimpan objek dalam $StartDate variabel.
 Perintah kedua membuat array hari dalam seminggu yang berisi Senin, Selasa, Rabu, Kamis, dan Jumat.
 Perintah terakhir membuat jadwal harian bernama Schedule03 yang akan berjalan Senin hingga Jumat setiap minggu pada pukul 13:00. Jadwal tidak akan pernah kedaluwarsa.
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsJob.md
-ms.openlocfilehash: 45a337db2c65b481af20879a62c19526c7c82d5c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 02c316758513255cda70e1803e68faa9082b55c8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344414"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243305"
 ---
 # New-AzStreamAnalyticsJob
 
 ## SYNOPSIS
 Membuat pekerjaan streaming atau mengganti pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -DataLocale
 Lokal data pekerjaan analitik streaming.
-Nilai harus merupakan nama .NET Culture yang didukung dari kumpulan https://msdn.microsoft.com/en-us/library/system.globalization.culturetypes(v=vs.110).aspx tersebut.
+Nilai harus merupakan nama .NET Culture yang didukung dari kumpulan tersebut https://msdn.microsoft.com/en-us/library/system.globalization.culturetypes(v=vs.110).aspx.
 Default ke 'en-US' jika tidak ada yang ditentukan.
 
 ```yaml
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDroppedSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseDroppedSqlPool.md
-ms.openlocfilehash: 94d0fd34f99997873e54bf7a59c36f69c8a479ee
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 95ad959ac367ada9bd130593b2e325df701c53bb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243071"
 ---
 # Get-AzSynapseDroppedSqlPool
 
 ## SYNOPSIS
 Mendapatkan cadangan pool Sql dari Synapse Sql Pool.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsedroppedsqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeletionDate
-Tanggal penghapusan azure Synaspe SQL Database untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
+Tanggal penghapusan program Azure Synaspe SQL Database mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

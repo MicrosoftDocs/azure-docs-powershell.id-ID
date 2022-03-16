@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssSecurityProfile.md
-ms.openlocfilehash: 54973b0916094ca293117460cd7c522a2152a41f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 930cf28f780445eaacf180ec6556bbf1c9e97203
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380038"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142441"
 ---
 # Set-AzVmssSecurityProfile
 
 ## SYNOPSIS
 Cmdlet ini memungkinkan pengguna untuk mengatur enum SecurityType untuk kumpulan skala Komputer Virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmsssecurityprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\> $VMSS = Get-AzVmss -ResourceGroupName "ResourceGroup11" -VMScaleSetName 
 PS C:\> $VMSS = Set-AzVmssSecurityProfile -VirtualMachineScaleSet $VMSS -SecurityType "TrustedLaunch"
 ```
 
-Perintah pertama mendapatkan skala mesin virtual yang diatur bernama ContosoVM07 dengan **menggunakan Get-AzVmss**.
+Perintah pertama mendapatkan skala mesin virtual yang diatur bernama ContosoVM07 dengan **menggunakan Get-AzVms.**
 Perintah menyimpannya di $VMSS variabel.
 Perintah kedua mengatur enum SecurityType menjadi "TrustedLaunch"
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

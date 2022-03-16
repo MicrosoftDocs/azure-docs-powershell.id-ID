@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
-ms.openlocfilehash: d4a518ea34466120c2a5b6f10a925fd217d856dd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 22990ff03b3fd07c98b9a48f49853c556a8a8000
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270604"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241487"
 ---
 # Get-AzAttestationPolicySigners
 
 ## SYNOPSIS
 Mendapatkan penanda tangan kebijakan tepercaya dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/get-azattestationpolicysigners) untuk informasi terkini.
 
 ## SYNTAX
 

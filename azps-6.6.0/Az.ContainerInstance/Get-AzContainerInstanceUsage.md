@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceUsage.md
-ms.openlocfilehash: 10ad23b48aa9a059e9119228cb2529721284b1b6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 714e574f046ac1c38241d83ac7ad300da039dcfb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383468"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142423"
 ---
 # Get-AzContainerInstanceUsage
 
 ## SYNOPSIS
 Dapatkan penggunaan untuk langganan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstanceusage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ CurrentValue Limit Unit
 0            3000  Count
 ```
 
-Dapatkan penggunaan untuk langganan saat ini di kawasan `eastus` .
+Dapatkan penggunaan untuk langganan saat ini di kawasan `eastus`.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

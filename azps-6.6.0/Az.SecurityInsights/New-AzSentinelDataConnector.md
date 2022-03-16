@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelDataConnector.md
-ms.openlocfilehash: 93c4ca2e6e61b569e1550c32f3172b88876ff2eb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3d8e3239314179cefa349b80d2cdac1fd7739f9a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360002"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246671"
 ---
 # New-AzSentinelDataConnector
 
 ## SYNOPSIS
 Membuat Konektor Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentineldataconnector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -79,12 +82,12 @@ New-AzSentinelDataConnector -ResourceGroupName <String> -WorkspaceName <String> 
 Cmdlet **New-AzSentinelDataConnector** mengonfigurasi dan mengaktifkan konektor data di ruang kerja yang ditentukan.
 Anda harus menentukan salah satu parameter, misalnya -AzureActiveDirectory, untuk menentukan jenis Aturan pemberitahuan yang akan dibuat.  Setiap Kind memiliki parameter yang diperlukan berbeda.<br/><br/>
 Harap diperhatikan bahwa hanya konektor data berikut ini yang memiliki dukungan otomatisasi melalui PowerShell atau *Security.Insights* API:
-* **AADDataConnector** - Mewakili AAD data (Azure Active Directory Identity Protection)
+* **AADDataConnector** - Mewakili AAD konektor data (Azure Active Directory Identity Protection)
 * **AATPDataConnector** - Mewakili konektor data AATP (Azure Advanced Threat Protection)
 * **ASCDataConnector** - Mewakili konektor data ASC (Azure Security Center)
 * **AwsCloudTrailDataConnector** - Mewakili konektor data Amazon Web Services CloudTrail
 * **MCASDataConnector** - Mewakili konektor data MCAS (Microsoft Cloud App Security)
-* Konektor data **MDATPDataConnector** - Represents MDATP (Microsoft Defender Advanced Threat Protection)
+* **Konektor data MDATPDataConnector** - Represents MDATP (Microsoft Defender Advanced Threat Protection)
 * **OfficeDataConnector** - Mewakili konektor data Office
 * **TIDataConnector** - Mewakili konektor data kecerdasan ancaman
 
@@ -95,7 +98,7 @@ Harap diperhatikan bahwa hanya konektor data berikut ini yang memiliki dukungan 
 PS C:\> $DataConnector = New-AzSentinelDataConnector -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AzureSecurityCenter -Alerts Enabled -SubscriptionId ((Get-AzContext).Subscription.Id)
 ```
 
-Contoh ini membuat **DataConnector untuk** *Azure Security Center* di ruang kerja tertentu, lalu menyimpannya di $DataConnector lain.
+Contoh ini membuat **DataConnector** untuk *Pusat Keamanan Azure* di ruang kerja tertentu, lalu menyimpannya di $DataConnector lain.
 
 ### Contoh 2
 ```powershell
@@ -113,7 +116,7 @@ $SentinelConnection = @{
 New-AzSentinelDataConnector @SentinelConnection -Office365 -Exchange Enabled -SharePoint Enabled -Teams Enabled
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mengonfigurasi konektor *data Office 365* data untuk mengumpulkan Exchange, SharePoint Teams log.
+Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName. Lalu mengonfigurasi konektor *data Office 365* untuk mengumpulkan Exchange, SharePoint, Teams log.
 
 ## PARAMETERS
 
@@ -470,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

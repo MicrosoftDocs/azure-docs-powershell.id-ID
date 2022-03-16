@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: 945df6a31b99995471cde51f87fc0afd13000d82
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2e4d0bcce51a3ccb8881522e757ed97fd491caa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277308"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241549"
 ---
 # Get-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Mendapatkan server otorisasi Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementauthorizationserver) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
-ms.openlocfilehash: 8ed911181a82ba4164aa4c77c971fb28bb93cbe6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5c11a287be7dde2a3ef7c9611cdfb1db97dd6352
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357881"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243597"
 ---
 # Start-AzStorageBlobIncrementalCopy
 
 ## SYNOPSIS
 Memulai operasi penyalinan Bertahap dari snapshot blob Halaman ke blob tujuan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/start-azstorageblobincrementalcopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Start-AzStorageBlobIncrementalCopy -AbsoluteUri <String> -DestContainer <String>
 
 ## DESCRIPTION
 Memulai operasi penyalinan Bertahap dari snapshot blob Halaman ke blob tujuan tertentu.
-Lihat detail selengkapnya tentang fitur ini di https://docs.microsoft.com/rest/api/storageservices/fileservices/incremental-copy-blob .
+Lihat detail selengkapnya tentang fitur ini di https://docs.microsoft.com/rest/api/storageservices/fileservices/incremental-copy-blob.
 
 ## EXAMPLES
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlob
-Objek CloudBlob dari Azure Storage Client. Anda dapat membuatnya atau Get-AzStorageBlob cmdlet.
+Objek CloudBlob dari Azure Storage Client. Anda dapat membuatnya atau menggunakan Get-AzStorageBlob cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudPageBlob
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloudBlobContainer
-Objek CloudBlobContainer dari Azure Storage Client. Anda dapat membuatnya atau Get-AzStorageContainer cmdlet.
+Objek CloudBlobContainer dari Azure Storage Client. Anda dapat membuatnya atau menggunakan Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

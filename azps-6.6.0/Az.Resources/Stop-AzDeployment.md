@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/stop-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Stop-AzDeployment.md
-ms.openlocfilehash: 3b9adeaa888fc8e4b30fe889f79db08f185c901b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 981971dc49fec0aef3bb469f7c7b15a223cca9c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334830"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140131695"
 ---
 # Stop-AzDeployment
 
 ## SYNOPSIS
 Membatalkan penyebaran yang berjalan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/stop-azdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Stop-AzDeployment -InputObject <PSDeployment> [-PassThru] [-Pre] [-DefaultProfil
 Cmdlet **Stop-AzDeployment** membatalkan penyebaran pada lingkup langganan yang telah dimulai tapi belum selesai.
 Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status selesai, seperti Diprovisikan atau Gagal.
 
-Untuk membuat penyebaran di lingkup langganan, gunakan cmdlet New-AzDeployment.
+Untuk membuat penyebaran pada lingkup langganan, gunakan cmdlet New-AzDeployment cmdlet.
 
 Cmdlet ini hanya berhenti satu kali menjalankan penyebaran. Gunakan parameter *Name* untuk menghentikan penyebaran tertentu.
 
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
