@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Set-AzEnvironment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Set-AzEnvironment.md
-ms.openlocfilehash: d47de9862b9caf0609d927d14338318d2bd5f2ae
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2bb03ef57e6a151a9597773308d74f1659977f2e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094491"
 ---
 # Set-AzEnvironment
 
 ## SYNOPSIS
 Mengatur properti untuk lingkungan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/set-azenvironment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -107,7 +110,7 @@ Dalam contoh ini, kami membuat lingkungan Azure baru dengan contoh titik akhir m
 ## PARAMETERS
 
 ### -ActiveDirectoryEndpoint
-Menentukan otoritas dasar untuk autentikasi Azure Active Directory.
+Menentukan otoritas dasar untuk Azure Active Directory autentikasi.
 
 ```yaml
 Type: System.String
@@ -437,7 +440,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAudience
-Audiens untuk token yang mengotentikasi dengan TITIK akhir AD Graph.
+Audiens untuk token yang mengotentikasi dengan AD Graph Titik Akhir.
 
 ```yaml
 Type: System.String

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaServiceKey.md
-ms.openlocfilehash: e32148504c044297ce48f7720c64cbb652287e64
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 900aeec5f764e5afaf1c7db24bd3b69c610bcecb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233837"
 ---
 # Set-AzMediaServiceKey
 
 ## SYNOPSIS
 Meregenerasi kunci yang digunakan untuk mengakses titik akhir REST yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/set-azmediaservicekey) untuk informasi terkini.
 
 ## SYNTAX
 

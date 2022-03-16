@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesPool.md
-ms.openlocfilehash: 3dc23b02926f16ded4c4dc8093e788fe77ce7fca
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5a2d54dfc81c3f59db07ced78d62e459ffa062a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169177"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232613"
 ---
 # Remove-AzNetAppFilesPool
 
 ## SYNOPSIS
 Menghapus grup File Azure NetApp (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/remove-aznetappfilespool) untuk informasi terkini.
 
 ## SYNTAX
 

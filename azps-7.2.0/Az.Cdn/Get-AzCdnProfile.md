@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfile.md
-ms.openlocfilehash: 361dcc9f2bc22a231b4fcfaa7caf575fcf523767
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 17534c500263030dffd876ae03a5f842d8dabdb8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093519"
 ---
 # Get-AzCdnProfile
 
 ## SYNOPSIS
 Mendapatkan profil CDN Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azcdnprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzCdnProfile** mendapatkan profil Azure Content Delivery Network (C
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua CDN profil di grup sumber daya
+### Contoh 1: Mendapatkan semua CDN profil di grup sumber daya
 ```powershell
 Get-AzCdnProfile -ResourceGroupName myresourcegroup
 ```

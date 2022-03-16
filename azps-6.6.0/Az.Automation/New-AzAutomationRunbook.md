@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationRunbook.md
-ms.openlocfilehash: 404a3205654261d86d4b79383a6c9f20a84ef4a9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 36cf4964a9c0f3c9fbc96c829c7c689675bc30a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380545"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143179"
 ---
 # New-AzAutomationRunbook
 
 ## SYNOPSIS
 Membuat buku jalankan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationrunbook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -180,7 +183,7 @@ Nilai valid adalah:
 - PowerShellWorkflow
 - GraphicalPowerShellWorkflow
 - Graph
-- Python2 Nilai Graph sudah tidak tnilai.
+- Python2 Nilai Graph sudah tidak t fungsi.
 Ini sama dengan GraphicalPowerShellWorkflow.
 
 ```yaml
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

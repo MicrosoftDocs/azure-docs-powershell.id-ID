@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzWebtestAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzWebtestAlertRule.md
-ms.openlocfilehash: 34442ba08ec8c0c9ba8b75c09427c9c0e62c7894
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: df0688675f2386cb06a9010347f670beb8377d79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307788"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121039"
 ---
 # Add-AzWebtestAlertRule
 
 ## SYNOPSIS
 Menambahkan atau memperbarui aturan pemberitahuan webtest.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/add-azwebtestalertrule) untuk informasi terkini.
 
 ## SYNTAX
 

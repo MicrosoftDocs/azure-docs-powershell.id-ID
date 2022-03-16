@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupManagementServer.md
-ms.openlocfilehash: 4b5e8299e645f23b1b3d2dfdf4fb3aceb335709a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c4e23d0cd16b4ef442fe312d2eb4d8211a4084b9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369748"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140248021"
 ---
 # Get-AzRecoveryServicesBackupManagementServer
 
 ## SYNOPSIS
 Mendapatkan server manajemen SCDPM dan Azure Backup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupmanagementserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,8 +31,8 @@ Get-AzRecoveryServicesBackupManagementServer [[-Name] <String>] [-VaultId <Strin
 ## DESCRIPTION
 Cmdlet **Get-AzRecoveryServicesBackupManagementServer** mendapatkan daftar Server manajemen cadangan yang terdaftar di vault.
 Ada dua tipe server manajemen Pencadangan: Server manajemen Pencadangan Pusat Sistem (SCDPM) dan Azure Backup.
-Server manajemen cadangan diinstal secara terpisah untuk mengelola Backup orchestration.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Server manajemen cadangan diinstal secara terpisah untuk mengelola  Backup orchestration.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

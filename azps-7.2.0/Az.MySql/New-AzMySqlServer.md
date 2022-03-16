@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlServer.md
-ms.openlocfilehash: 8cef23fae3b1354b45483551e2bc9a42d69214ef
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ac240169392ef73db902ff2374d1865c324dec8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259788"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120391"
 ---
 # New-AzMySqlServer
 
 ## SYNOPSIS
 Membuat server baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/new-azmysqlserver) untuk informasi terkini.
 
 ## SYNTAX
 

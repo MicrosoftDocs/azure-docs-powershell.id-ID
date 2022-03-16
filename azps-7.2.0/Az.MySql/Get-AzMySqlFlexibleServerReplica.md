@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerReplica.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerReplica.md
-ms.openlocfilehash: 459dc0b06cb0ec82fc5be84428cbb2f14b0c9c32
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5e7416c0a3dedd7f3dfa1ba847c8a8725f6eae08
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315787"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120409"
 ---
 # Get-AzMySqlFlexibleServerReplica
 
 ## SYNOPSIS
 Daftar semua replika untuk server tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverreplica) untuk informasi terkini.
 
 ## SYNTAX
 

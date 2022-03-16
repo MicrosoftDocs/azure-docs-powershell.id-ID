@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
-ms.openlocfilehash: 98ba5e691c263bad0d558d1e64f6bca0c4596522
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 382a2991989ef3cd178bb12205faeed0b5b06587
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123037"
 ---
 # New-AzImageBuilderSourceObject
 
 ## SYNOPSIS
 Menjelaskan sumber gambar mesin virtual untuk membuat, mengkustomisasi, dan mendistribusikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terkini.
 
 ## SYNTAX
 

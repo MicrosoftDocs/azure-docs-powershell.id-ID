@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRuleTriggerCondition.md
-ms.openlocfilehash: de1b30fc14cf7cbd6f8202129d2332a590141ebf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2009edeae4e81f3c9c485e7639812cd7ff9a6c1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233495"
 ---
 # New-AzScheduledQueryRuleTriggerCondition
 
 ## SYNOPSIS
 Membuat objek dari tipe Kondisi Pemicu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryruletriggercondition) untuk informasi terkini.
 
 ## SYNTAX
 

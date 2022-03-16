@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/Get-AzCloudService.md
-ms.openlocfilehash: fe63e85e8bd286c5b2e05e32234f6ecd9d5c8524
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 04f9e5c2b878d4b54fa4d2c5e17cdf5d52ea7b55
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287035"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093000"
 ---
 # Get-AzCloudService
 
 ## SYNOPSIS
 Menampilkan informasi tentang layanan awan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/get-azcloudservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

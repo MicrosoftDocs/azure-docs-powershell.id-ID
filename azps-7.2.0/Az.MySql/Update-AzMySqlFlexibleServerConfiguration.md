@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerConfiguration.md
-ms.openlocfilehash: b7f92685f12cf3030864ff1b778ede3916696c71
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fbd0bc018e25d319251d9baf44cded25e9f06df6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253531"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232775"
 ---
 # Update-AzMySqlFlexibleServerConfiguration
 
 ## SYNOPSIS
 Memperbarui informasi tentang konfigurasi server fleksibel MySQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserverconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Remove-AzMariaDbServer.md
-ms.openlocfilehash: 80077b38409c319f195946c668b3852e0752a239
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f9f94687c3340588c4a814cfc701444a711c692a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234107"
 ---
 # Remove-AzMariaDbServer
 
 ## SYNOPSIS
 Menghapus server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/remove-azmariadbserver) untuk informasi terkini.
 
 ## SYNTAX
 

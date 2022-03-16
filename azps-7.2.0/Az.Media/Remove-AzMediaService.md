@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/remove-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Remove-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Remove-AzMediaService.md
-ms.openlocfilehash: 801a92a7cc7b947f5d4cb1e67305b6c0f828ce0b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dc9bc9aebe873e3c5e6581e1f7d47c3596a21b6f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169210"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233873"
 ---
 # Remove-AzMediaService
 
 ## SYNOPSIS
 Menghapus layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/remove-azmediaservice) untuk informasi terkini.
 
 ## SYNTAX
 

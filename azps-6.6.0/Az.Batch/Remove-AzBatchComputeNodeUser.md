@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchComputeNodeUser.md
-ms.openlocfilehash: 1d9cad6ff6968504874a556d6c861be3c9849121
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e5ec2f46b1a141a918f1299ba0f4dc09d14cda30
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346298"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142999"
 ---
 # Remove-AzBatchComputeNodeUser
 
 ## SYNOPSIS
 Menghapus akun pengguna dari node perhitungan Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchcomputenodeuser) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\>Remove-AzBatchComputeNodeUser -PoolId "Pool01" -ComputeNodeId "ComputeNod
 
 Perintah ini menghapus pengguna yang bernama User14 dari node hitung bernama ComputeNode01.
 Node perhitungan berada di pool bernama Pool01.
-Perintah ini menentukan parameter *Force.*
+Perintah ini menentukan parameter *Force* .
 Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

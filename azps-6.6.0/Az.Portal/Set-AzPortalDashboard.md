@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.portal/set-azpor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Set-AzPortalDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Portal/help/Set-AzPortalDashboard.md
-ms.openlocfilehash: 6dcf7f8012a30e37cb8d2e32670f1b09320b582c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f065b431c9846528550643950112f8225b045e31
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335166"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140248346"
 ---
 # Set-AzPortalDashboard
 
 ## SYNOPSIS
 Membuat atau memperbarui Dasbor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.portal/set-azportaldashboard) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

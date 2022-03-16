@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceRoleProfilePropertiesObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceRoleProfilePropertiesObject.md
-ms.openlocfilehash: b766f86051b519f314983d04cf5a6784fd5f1f34
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 28aec5f0e074086db24663ee9df7ff77b4db2bd1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273003"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092907"
 ---
 # New-AzCloudServiceRoleProfilePropertiesObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk CloudServiceRoleProfileProperties
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceroleprofilepropertiesobject) untuk informasi terkini.
 
 ## SYNTAX
 

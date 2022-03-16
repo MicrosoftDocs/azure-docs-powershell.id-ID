@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/test-azmys
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Test-AzMySqlFlexibleServerConnect.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Test-AzMySqlFlexibleServerConnect.md
-ms.openlocfilehash: c107f273289e3b8a15652fa6834160b8cd5f7d4a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d1b882ac2767de10d70c80b99673020c0341014c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308923"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120319"
 ---
 # Test-AzMySqlFlexibleServerConnect
 
 ## SYNOPSIS
 Uji koneksi ke server database
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/test-azmysqlflexibleserverconnect) untuk informasi terkini.
 
 ## SYNTAX
 

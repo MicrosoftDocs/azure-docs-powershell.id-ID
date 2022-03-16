@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: ef6009143d310b3dbaa1f9804c8d29fda5e596db
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 675c058013fdb125e24d62b2bd92348aab1a0f11
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166705"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125251"
 ---
 # Get-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
 Mendapatkan Definisi Peran CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlroledefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlRoleDefinition [-Id <String>] -ParentObject <PSDatabaseAccountG
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzCosmosDBSqlRoleDefinition mendapatkan daftar semua Definisi Peran CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName yang tersedia dan mendapatkan satu Database CosmosDB Sql untuk ResourceGroupName, AccountName, dan Id tertentu. Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
+Cmdlet Get-AzCosmosDBSqlRoleDefinition ini mendapatkan daftar semua Definisi Peran CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName, dan mendapatkan satu Database CosmosDB Sql untuk ResourceGroupName, AccountName, dan Id tertentu. Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
 

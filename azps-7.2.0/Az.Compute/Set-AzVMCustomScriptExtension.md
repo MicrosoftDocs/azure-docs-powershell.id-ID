@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMCustomScriptExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMCustomScriptExtension.md
-ms.openlocfilehash: 4bfd5271a38288ac424a61e7bceac17aaf191848
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 63a927b22f28a6ff4a08c7d5838849f04720fea2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301532"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091809"
 ---
 # Set-AzVMCustomScriptExtension
 
 ## SYNOPSIS
 Menambahkan ekstensi skrip kustom ke mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmcustomscriptextension) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConnectionString.md
-ms.openlocfilehash: 84809c76a141b0450d2870e9e42637feebe1e564
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9de36f7b79027451642513b16da41c5723473ccb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261132"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234215"
 ---
 # Get-AzMariaDbConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi MariaDB di bawah kerangka kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbconnectionstring) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -173,7 +176,7 @@ INPUTOBJECT <IServer>: Parameter Identitas
   - `[AdministratorLogin <String>]`: Nama masuk administrator server. Hanya dapat ditentukan saat server sedang dibuat (dan diperlukan untuk pembuatan).
   - `[EarliestRestoreDate <DateTime?>]`: Waktu pembuatan titik pemulihan paling awal (format ISO8601)
   - `[FullyQualifiedDomainName <String>]`: Nama domain yang sepenuhnya memenuhi syarat dari server.
-  - `[IdentityType <IdentityType?>]`: Tipe identitas. Setel ini ke 'SystemAssigned' agar secara otomatis membuat dan menetapkan Azure Active Directory utama bagi sumber daya tersebut.
+  - `[IdentityType <IdentityType?>]`: Tipe identitas. Setel ini ke 'SystemAssigned' agar secara otomatis membuat dan menetapkan Azure Active Directory utama untuk sumber daya.
   - `[MasterServerId <String>]`: Id server master dari server replika.
   - `[ReplicaCapacity <Int32?>]`: Jumlah maksimum replika yang bisa ada di server master.
   - `[ReplicationRole <String>]`: Replikasi peran server.
@@ -185,7 +188,7 @@ INPUTOBJECT <IServer>: Parameter Identitas
   - `[SslEnforcement <SslEnforcementEnum?>]`: Mengaktifkan penerapan ssl atau tidak saat tersambung ke server.
   - `[StorageProfileBackupRetentionDay <Int32?>]`: Waktu penyimpanan cadangan untuk server.
   - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Mengaktifkan geo-redundan atau tidak untuk pencadangan server.
-  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Mengaktifkan Storage Grow Otomatis.
+  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Mengaktifkan Storage Auto Grow.
   - `[StorageProfileStorageMb <Int32?>]`: Maksimum penyimpanan yang diperbolehkan untuk server.
   - `[UserVisibleState <ServerState?>]`: Status server yang terlihat oleh pengguna.
   - `[Version <ServerVersion?>]`: Versi server.

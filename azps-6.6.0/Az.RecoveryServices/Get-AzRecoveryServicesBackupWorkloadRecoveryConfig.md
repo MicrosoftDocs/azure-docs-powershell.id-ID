@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupWorkloadRecoveryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupWorkloadRecoveryConfig.md
-ms.openlocfilehash: 2da83781c5b897ccdc76a76d5ea5f972aea69997
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 669175a19816b3a4a3d9e69d2572cc4f469b36bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364985"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140132739"
 ---
 # Get-AzRecoveryServicesBackupWorkloadRecoveryConfig
 
 ## SYNOPSIS
 Perintah ini membangun konfigurasi pemulihan dari item yang dicadangkan seperti yang SQL DB. Objek konfigurasi menyimpan semua detail seperti mode pemulihan, tujuan target untuk pemulihan dan parameter aplikasi tertentu seperti jalur fisik target untuk SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupworkloadrecoveryconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetItem
-Menentukan target pemulihan DB. For SQL restores, it needs to be of protectable item type SQLInstance only.
+Menentukan target pemulihan DB. Untuk SQL, tipe item yang dapat diproteksi hanya SQLInstance.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogSingleSignOnConfiguration.md
-ms.openlocfilehash: 1274c9086b2bd933fe46e4a83db05598cc2a140b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 142252e282e8af3bdd72e49b603c483e174e4467
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136336933"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140107343"
 ---
 # New-AzDatadogSingleSignOnConfiguration
 
 ## SYNOPSIS
 Mengonfigurasi akses masuk tunggal untuk sumber daya ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datadog/new-azdatadogsinglesignonconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -264,7 +267,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDatadogIdentity> : Parameter Identitas
+INPUTOBJECT <IDatadogIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

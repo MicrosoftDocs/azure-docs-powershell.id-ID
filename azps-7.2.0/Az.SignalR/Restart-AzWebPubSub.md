@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzWebPubSub.md
-ms.openlocfilehash: 0fbeb494840396b44bb347bec49d577b71df8b5f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a3082c8862da0dd4a92d1647857e46e83ff073b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115603"
 ---
 # Restart-AzWebPubSub
 
 ## SYNOPSIS
 Operasi untuk memulai ulang sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/restart-azwebpubsub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

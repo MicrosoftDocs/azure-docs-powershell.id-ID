@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUserSsoUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementUserSsoUrl.md
-ms.openlocfilehash: 16be32c1ca2868490a915f63295164befd986e13
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cbd778327e4c6a722b0a4a2ac3916fcfad62ecc1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292620"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094167"
 ---
 # Get-AzApiManagementUserSsoUrl
 
 ## SYNOPSIS
 Menghasilkan URL SSO untuk pengguna.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementuserssourl) untuk informasi terkini.
 
 ## SYNTAX
 

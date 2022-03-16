@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/set-azaksclu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksClusterCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Set-AzAksClusterCredential.md
-ms.openlocfilehash: e4295b5b3c5db9d03fd8dc6908a6f7661f108796
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 464efb46d310df8f1a2ff43915e215eeca846e33
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291611"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094347"
 ---
 # Set-AzAksClusterCredential
 
 ## SYNOPSIS
 Reset ServicePrincipal dari kluster AKS yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/set-azaksclustercredential) untuk informasi terkini.
 
 ## SYNTAX
 

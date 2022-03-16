@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchTask.md
-ms.openlocfilehash: 6187c69f56aaca043226fef802dc5ead2aabd9e3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e7743aba718744d023281707ce3a4a7431c2dbb3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334161"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143071"
 ---
 # New-AzBatchTask
 
 ## SYNOPSIS
 Membuat tugas Kumpulan di bawah pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchtask) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ New-AzBatchTask [-Job <PSCloudJob>] -Id <String> [-DisplayName <String>] -Comman
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchTask** membuat tugas Kumpulan Azure di bawah pekerjaan yang ditentukan oleh parameter *JobId* atau *parameter Job.*
+Cmdlet **New-AzBatchTask** membuat tugas Kumpulan Azure di bawah pekerjaan yang ditentukan oleh parameter *JobId* atau *parameter Job* .
 
 ## EXAMPLES
 
@@ -77,7 +80,7 @@ PS C:\> $userIdentity = New-Object Microsoft.Azure.Commands.Batch.Models.PSUserI
 PS C:\>Get-AzBatchJob -Id "Job-000001" -BatchContext $Context | New-AzBatchTask -Id "Task26" -CommandLine "cmd /c echo hello > newFile.txt" -UserIdentity $userIdentity -BatchContext $Context
 ```
 
-Perintah ini mendapatkan pekerjaan Kumpulan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchJob.**
+Perintah ini mendapatkan pekerjaan Kumpulan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchJob** .
 Perintah itu melewati pekerjaan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Perintah akan membuat tugas dengan ID Task26 di bawah pekerjaan tersebut.
 Tugas menjalankan perintah yang ditentukan dengan menggunakan izin yang ditingkatkan.
@@ -91,7 +94,7 @@ PS C:\> Get-AzBatchJob -Id "Job-000001" -BatchContext $Context | New-AzBatchTask
 ```
 
 Perintah pertama membuat referensi objek ke tombol akun untuk akun kumpulan bernama ContosoBatchAccount dengan menggunakan **Get-AzBatchAccountKey**.
-Perintah menyimpan referensi objek ini dalam $Context variabel.
+Perintah menyimpan referensi objek ini di $Context variabel.
 Dua perintah berikutnya membuat **objek PSCloudTask** dengan menggunakan cmdlet New-Object cmdlet.
 Perintah menyimpan tugas di $Task 01 dan $Task 02.
 Perintah terakhir mendapatkan pekerjaan Kumpulan yang memiliki ID Job-000001 dengan menggunakan **Get-AzBatchJob**.
@@ -108,7 +111,7 @@ PS C:\> New-AzBatchTask -JobId "Job-000001" -Tasks @($Task01, $Task02) -BatchCon
 ```
 
 Perintah pertama membuat referensi objek ke tombol akun untuk akun kumpulan bernama ContosoBatchAccount dengan menggunakan **Get-AzBatchAccountKey**.
-Perintah menyimpan referensi objek ini dalam $Context variabel.
+Perintah menyimpan referensi objek ini di $Context variabel.
 Dua perintah berikutnya membuat **objek PSCloudTask** dengan menggunakan cmdlet New-Object cmdlet.
 Perintah menyimpan tugas di $Task 01 dan $Task 02.
 Perintah terakhir menambahkan tugas yang disimpan di $Task 01 dan $Task 02 di bawah pekerjaan yang memiliki ID Job-000001.
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 
 ### -ContainerSettings
 Pengaturan untuk wadah tempat tugas dijalankan.
-Jika kumpulan yang akan menjalankan tugas ini memiliki containerConfiguration set, ini harus disetel juga. Jika kumpulan yang akan menjalankan tugas ini tidak memiliki containerConfiguration yang diatur, ini tidak boleh disetel. Saat ini ditentukan, semua direktori secara rekursif di bawah AZ_BATCH_NODE_ROOT_DIR (akar direktori Azure Batch di node) dipetakan ke wadah, semua variabel lingkungan tugas dipetakan ke wadah, dan baris perintah tugas dijalankan dalam wadah.
+Jika kumpulan yang akan menjalankan tugas ini memiliki containerConfiguration set, ini harus disetel juga. Jika kumpulan yang akan menjalankan tugas ini tidak memiliki containerConfiguration yang diatur, ini tidak boleh disetel. Bila ini ditentukan, semua direktori secara rekursif di bawah AZ_BATCH_NODE_ROOT_DIR (akar direktori Azure Batch di node) dipetakan ke wadah, semua variabel lingkungan tugas dipetakan ke wadah, dan baris perintah tugas dijalankan dalam wadah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSTaskContainerSettings
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan cmdlet ini yang membuat tugas.
-Untuk mendapatkan objek **PSCloudJob,** gunakan cmdlet Get-AzBatchJob baru.
+Untuk mendapatkan objek **PSCloudJob** , gunakan Get-AzBatchJob cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJob
@@ -446,7 +449,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

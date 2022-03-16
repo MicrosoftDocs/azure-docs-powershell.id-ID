@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Get-AzNetAppFilesAccount.md
-ms.openlocfilehash: c1e474ae58b80e0a7f55be29506d77de204cb289
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5486d7d6af019d7a774dd6f84fc5e4561d58b273
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232757"
 ---
 # Get-AzNetAppFilesAccount
 
 ## SYNOPSIS
 Dapatkan detail akun File Azure NetApp (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/get-aznetappfilesaccount) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/set-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Set-AzMediaService.md
-ms.openlocfilehash: 716be769480a631b8948aa6237673e25ab8bfa2d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 34e526b2ed76bb3a71464ebad10d8eddd21e2177
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284315"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121543"
 ---
 # Set-AzMediaService
 
 ## SYNOPSIS
 Mengubah properti tertentu dari layanan media yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/set-azmediaservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzMediaService -ResourceGroupName "ResourceGroup123" -AccountName "MediaServ
 
 Perintah pertama membuat serangkaian tag dan menyimpan tag tersebut di variabel yang bernama $Tags.
 Perintah kedua ini memperbarui layanan media bernama MediaService001 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup123 dengan tag yang disimpan $Tags variabel.
-Perintah juga menggunakan array objek konfigurasi penyimpanan yang disimpan $StorageAccounts variabel.
+Perintah juga menggunakan array objek konfigurasi penyimpanan yang disimpan dalam $StorageAccounts penyimpanan.
 
 ## PARAMETERS
 

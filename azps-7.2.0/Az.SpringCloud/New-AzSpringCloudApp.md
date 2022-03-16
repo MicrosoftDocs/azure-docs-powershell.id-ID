@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/New-AzSpringCloudApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/New-AzSpringCloudApp.md
-ms.openlocfilehash: 9f85460a8bfbb29eedf9ee0cb7e589ed4d88296d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 592f682e83f9e96f6db994bc3140d6e2acb575b9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281708"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115441"
 ---
 # New-AzSpringCloudApp
 
 ## SYNOPSIS
 Buat Aplikasi baru atau perbarui aplikasi yang keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.springcloud/new-azspringcloudapp) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlInstanceKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlInstanceKeyVaultKey.md
-ms.openlocfilehash: 5b88719dc5c1ac0e093f05b3c748e01c43832908
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 645444537f7ed1e447ef11e250d931bc11fe0682
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168957"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115359"
 ---
 # Add-AzSqlInstanceKeyVaultKey
 
 ## SYNOPSIS
 Menambahkan kunci vault ke Instans Terkelola yang disediakan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlinstancekeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
 
 ### Contoh 2: Menggunakan objek instans terkelola
 ```powershell
@@ -72,7 +75,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
 
 ### Contoh 3: Menggunakan id sumber daya instans terkelola
 ```powershell
@@ -88,7 +91,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
 
 ### Contoh 4: Menggunakan piping
 ```powershell
@@ -104,7 +107,7 @@ Thumbprint             : 6AB10000F99E1B6A22222F39E3F11CB5DC5A55A1
 Type                   : AzureKeyVault
 ```
 
-Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
+Perintah ini menambahkan kunci Key Vault dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' ke instans SQL terkelola bernama 'ContosoManagedInstanceName' dalam grup sumber daya 'ContosoResourceGroup'. 
 
 ## PARAMETERS
 

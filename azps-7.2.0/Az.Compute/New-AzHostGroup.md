@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzHostGroup.md
-ms.openlocfilehash: 5e81bc01b27daaaae97a50421029a39613caa8c4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a2863ed38e8d0ab0cb19e468e527be36c53e219
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165318"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125827"
 ---
 # New-AzHostGroup
 
 ## SYNOPSIS
 Membuat grup host.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azhostgroup) untuk informasi terkini.
 
 ## SYNTAX
 

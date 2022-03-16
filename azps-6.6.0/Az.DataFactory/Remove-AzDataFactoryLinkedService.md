@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryLinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryLinkedService.md
-ms.openlocfilehash: 4a4b0dc8254a00adc3c7059e7c959505c3d8f840
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 750a0633892d0dfc1131cd839eed65a03bd04dd0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377703"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140108225"
 ---
 # Remove-AzDataFactoryLinkedService
 
 ## SYNOPSIS
 Menghapus layanan tertaut dari Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/remove-azdatafactorylinkedservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,12 +51,12 @@ True
 ```
 
 Perintah ini menghapus layanan tertaut yang bernama LinkedServiceTest dari pabrik data bernama WikiADF.
-Perintah ini mengembalikan nilai $True.
+Perintah ini mengembalikan nilai dari $True.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini menghapus layanan yang ditautkan dari pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

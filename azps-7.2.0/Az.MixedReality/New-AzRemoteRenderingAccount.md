@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccount.md
-ms.openlocfilehash: efdfe964c930748c7d55c1c5039d7ee71390e40f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fb829ece77211aa609b78872ad42107f714e0baa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284284"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233729"
 ---
 # New-AzRemoteRenderingAccount
 
 ## SYNOPSIS
 Membuat akun penyajian jarak jauh
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/new-azremoterenderingaccount) untuk informasi terkini.
 
 ## SYNTAX
 

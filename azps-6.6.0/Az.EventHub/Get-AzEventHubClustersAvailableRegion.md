@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubClustersAvailableRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubClustersAvailableRegion.md
-ms.openlocfilehash: ee43435a98cbe3da15ad05587b0f8b2e9c4fe7f5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b406f621c1ad0626a6a4833939830ff9e561ac9c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352889"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137455"
 ---
 # Get-AzEventHubClustersAvailableRegion
 
 ## SYNOPSIS
 Mendapatkan detail kluster Eventhub tunggal atau daftar kluster dalam Grup Sumber Daya yang diberikan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubclustersavailableregion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Get-AzEventHubClustersAvailableRegion [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Daftar Get-AzEventHubClustersAvailableRegion cmdlet kawasan khusus untuk dibuat.
+Daftar cmdlet Get-AzEventHubClustersAvailableRegion cmdlet kawasan tempat khusus tersedia untuk dibuat.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

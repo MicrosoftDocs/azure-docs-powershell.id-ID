@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Copy-AzRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Copy-AzRecoveryServicesVault.md
-ms.openlocfilehash: 694ab8b21aba180560a21318efb566cbc1559c2d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 310096f4f54a293382869d3f2efeade8326edbdc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345086"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140132793"
 ---
 # Copy-AzRecoveryServicesVault
 
 ## SYNOPSIS
 Menyalin data dari vault di satu wilayah ke vault di kawasan lain.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/copy-azrecoveryservicesvault) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ PS C:\> $targetVault = Get-AzRecoveryServicesVault -ResourceGroupName "rgName2" 
 PS C:\> Copy-AzRecoveryServicesVault -SourceVault $sourceVault -TargetVault $targetVault
 ```
 
-Dua cmdlet pertama masing-masing mengambil Vault Layanan Pemulihan - vault1 dan vault2. Perintah kedua memicu pemindahan data lengkap dari vault1 ke vault2. $sourceVault dan $targetVault juga termasuk dalam langganan yang sama tanent, dapat diambil dengan mengatur konteks langganan yang berbeda.
+Dua cmdlet pertama masing-masing mengambil Vault Layanan Pemulihan - vault1 dan vault2. Perintah kedua memicu pemindahan data lengkap dari vault1 ke vault2. $sourceVault dan $targetVault juga termasuk dalam langganan yang sama tanen, dapat diambil dengan mengatur konteks langganan yang berbeda.
 
 ### Contoh 2: Menyalin data dari vault1 ke vault2 dengan item yang gagal saja
 
@@ -57,7 +60,7 @@ PS C:\> Copy-AzRecoveryServicesVault -SourceVault $sourceVault -TargetVault $tar
 
 Dua cmdlet pertama masing-masing mengambil Vault Layanan Pemulihan - vault1 dan vault2.
 Perintah kedua memicu pemindahan data parsial dari vault1 ke vault2 hanya dengan item yang gagal dalam operasi pemindahan sebelumnya.
-$sourceVault dan $targetVault juga termasuk dalam langganan yang sama tanent, dapat diambil dengan mengatur konteks langganan yang berbeda.
+$sourceVault dan $targetVault juga termasuk dalam langganan yang sama tanen, dapat diambil dengan mengatur konteks langganan yang berbeda.
 
 ## PARAMETERS
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

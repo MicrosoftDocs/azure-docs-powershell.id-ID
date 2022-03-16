@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzDiagnosticSetting.md
-ms.openlocfilehash: 882a32f2b88deed111d05a59a056c7ce4a852682
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5fb6b8d34d1e059ea2cca2324fc0a92276fdb7f7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163058"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120463"
 ---
 # Set-AzDiagnosticSetting
 
 ## SYNOPSIS
 Mengatur pengaturan log dan metrik untuk sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/set-azdiagnosticsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -Enabled
 Menunjukkan apakah akan mengaktifkan diagnostik.
-Tentukan $True untuk mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
+Tentukan $True mengaktifkan diagnostik, atau $False untuk menonaktifkan diagnostik.
 
 ```yaml
 Type: System.Boolean
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceBusRuleId
-The Bus Layanan Rule id.
+Aturan Bus Layanan id.
 
 ```yaml
 Type: System.String

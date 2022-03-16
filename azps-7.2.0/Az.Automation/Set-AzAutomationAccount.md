@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationAccount.md
-ms.openlocfilehash: e29ac7bb7a2b01f4517c44f720eff08ffff26292
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d8fee083e7beef98293d9fba400cda2e2bf3d792
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317355"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093808"
 ---
 # Set-AzAutomationAccount
 
 ## SYNOPSIS
 Memodifikasi akun Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/set-azautomationaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Set-AzAutomationAccount [-ResourceGroupName] <String> [-Name] <String> [-Plan <S
 
 ## DESCRIPTION
 Cmdlet **Set-AzAutomationAccount** mengubah akun Otomatisasi Azure.
-Untuk informasi selengkapnya tentang akun Otomatisasi, lihat cmdlet New-AzAutomationAccount waktu.
+Untuk informasi selengkapnya tentang akun Otomatisasi, lihat New-AzAutomationAccount cmdlet.
 
 ## EXAMPLES
 

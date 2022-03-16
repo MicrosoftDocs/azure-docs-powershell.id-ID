@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/new-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/New-AzMariaDbServer.md
-ms.openlocfilehash: 890f88f44b286d879830e6110539f333dd5cab14
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 302d78d1040c52fe3baeeaf87b43c8bc1137be64
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266027"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234125"
 ---
 # New-AzMariaDbServer
 
 ## SYNOPSIS
 Membuat MariaDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/new-azmariadbserver) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
-ms.openlocfilehash: 9fd290a0884a3cb7d3cb85a3e51ed9d315c26d30
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7a56f0746ea827d2d7bfa368dd701fa697124866
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300124"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121201"
 ---
 # Remove-AzMigrateServerReplication
 
 ## SYNOPSIS
 Menghentikan replikasi untuk server yang dimigrasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/remove-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 

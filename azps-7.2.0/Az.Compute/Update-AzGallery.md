@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGallery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzGallery.md
-ms.openlocfilehash: e114a0fde9ff61b4702544479b0d58715d12fc2b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b6c566a35f355d882bda6e2902555ee169805e03
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284700"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140091287"
 ---
 # Update-AzGallery
 
 ## SYNOPSIS
 Memperbarui galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/update-azgallery) untuk informasi terkini.
 
 ## SYNTAX
 

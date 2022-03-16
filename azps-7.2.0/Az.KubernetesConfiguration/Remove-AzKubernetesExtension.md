@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Remove-AzKubernetesExtension.md
-ms.openlocfilehash: 5b42bb8d2b331c592ab49bbbe9806f238e43af97
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9a133e7424b259529ed7ba198c300ebf95724002
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122371"
 ---
 # Remove-AzKubernetesExtension
 
 ## SYNOPSIS
 Menghapus Ekstensi Kluster Kjadwal.
 Hal ini akan mengakibatkan Agen menghapus instalan ekstensi dari kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kubernetesconfiguration/remove-azkubernetesextension) untuk informasi terkini.
 
 ## SYNTAX
 

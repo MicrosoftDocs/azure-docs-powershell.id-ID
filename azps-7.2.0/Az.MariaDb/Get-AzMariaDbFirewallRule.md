@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbFirewallRule.md
-ms.openlocfilehash: 76adf8d6a5f2046249739ac481aacff8f0e15539
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0debbe452b8ebd489b6a083dcacb4062f0bf3472
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164648"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140234197"
 ---
 # Get-AzMariaDbFirewallRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

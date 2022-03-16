@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActionGroup.md
-ms.openlocfilehash: 1e81f1bd447b6e2f0fe029f0b1f5e2bff400c115
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ce42cda10efc05b1296f48a7498e204769fcf98a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288763"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120823"
 ---
 # New-AzActionGroup
 
 ## SYNOPSIS
 Membuat objek referensi ActionGroup di memori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azactiongroup) untuk informasi terkini.
 
 ## SYNTAX
 

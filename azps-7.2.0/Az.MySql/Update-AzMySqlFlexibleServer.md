@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServer.md
-ms.openlocfilehash: 4171aa3f4226944e9cf456409e42eef47a6de3d2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 80356b65dcc830fe47e68e2bc5d81623493452d5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253532"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232811"
 ---
 # Update-AzMySqlFlexibleServer
 
@@ -18,6 +18,9 @@ ms.locfileid: "138253532"
 Memperbarui server fleksibel MySQL yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
 Gunakan Update-AzMySqlFlexibleServerConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserver) untuk informasi terkini.
 
 ## SYNTAX
 

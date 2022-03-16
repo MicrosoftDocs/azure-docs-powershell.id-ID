@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseManagedIdentitySqlControlSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseManagedIdentitySqlControlSetting.md
-ms.openlocfilehash: c316419445b610fd4fe064a9762c85d0b6930483
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ee6efdec0cfc022a356c21d475b68e8e56de7d57
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140094833"
 ---
 # Set-AzSynapseManagedIdentitySqlControlSetting
 
 ## SYNOPSIS
 Memperbarui identitas terkelola SQL kontrol ke ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsemanagedidentitysqlcontrolsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,14 +50,14 @@ Set-AzSynapseManagedIdentitySqlControlSetting -ResourceId <String> -Enabled <Boo
 PS C:\> Set-AzSynapseManagedIdentitySqlControlSetting -WorkspaceName ContosoWorkspace -Enabled $true
 ```
 
-Perintah ini memungkinkan identitas terkelola SQL kontrol ke ruang kerja untuk ruang kerja ContosoWorkspace.
+Perintah ini memungkinkan identitas terkelola SQL pengaturan kontrol ke ruang kerja untuk ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzSynapseManagedIdentitySqlControlSetting -WorkspaceName ContosoWorkspace -Enabled $false
 ```
 
-Perintah ini menonaktifkan identitas terkelola atau SQL kontrol ke ruang kerja untuk ruang kerja ContosoWorkspace.
+Perintah ini menonaktifkan pengaturan kontrol identitas SQL terkelola ke ruang kerja untuk ruang kerja ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -69,7 +72,7 @@ Perintah ini memungkinkan identitas terkelola SQL kontrol ke ruang kerja untuk r
 PS C:\> Set-AzSynapseManagedIdentitySqlControlSetting -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd3/resourcegroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace -Enabled $true
 ```
 
-Perintah ini memungkinkan pengelolaan identitas SQL pengaturan kontrol ke ruang kerja untuk ruang kerja ContosoWorkspace melalui ID sumber daya ruang kerja.
+Perintah ini memungkinkan pengelolaan identitas SQL pengaturan kontrol ruang kerja untuk ruang kerja ContosoWorkspace melalui ID sumber daya ruang kerja.
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -Enabled
 Menunjukkan apakah akan mengaktifkan identitas terkelola SQL pengaturan kontrol.
-Tentukan $True untuk mengaktifkan identitas SQL terkelola, atau $False menonaktifkan identitas terkelola SQL pengaturan kontrol.
+Tentukan $True untuk mengaktifkan identitas SQL terkelola, atau $False untuk menonaktifkan identitas terkelola SQL pengaturan kontrol.
 
 ```yaml
 Type: System.Boolean
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

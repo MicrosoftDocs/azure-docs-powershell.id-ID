@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleExclusionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleExclusionObject.md
-ms.openlocfilehash: 8cea97c20d4c600daa32eac5d4e8eefee0ac83f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: abd2f98853b63b6be38445cb7a278b0ded2efba3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283436"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123595"
 ---
 # New-AzFrontDoorWafManagedRuleExclusionObject
 
 ## SYNOPSIS
 Membuat objek pengecualian aturan terkelola untuk kumpulan aturan terkelola WAF, grup, atau aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleexclusionobject) untuk informasi terkini.
 
 ## SYNTAX
 

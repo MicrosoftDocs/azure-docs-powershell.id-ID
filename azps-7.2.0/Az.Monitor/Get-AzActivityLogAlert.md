@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
-ms.openlocfilehash: d7a1e544d9dbf0ad3f879b4ff31f15308de99c0f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0da5c85c16195065283aa7c44f3b8716b29b6bd4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256571"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120931"
 ---
 # Get-AzActivityLogAlert
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azactivitylogalert) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/add-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Add-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Add-AzDnsRecordConfig.md
-ms.openlocfilehash: ac53d3b380ae3e5bb97443b38b1560a3da90f460
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d2259059c0e18bdb816b32d9ee7bfdf115b2aed8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387906"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137829"
 ---
 # Add-AzDnsRecordConfig
 
 ## SYNOPSIS
 Menambahkan catatan DNS ke objek set catatan lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/add-azdnsrecordconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Add-AzDnsRecordConfig -RecordSet <DnsRecordSet> -CaaFlags <Byte> -CaaTag <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzDnsRecordConfig** menambahkan catatan Domain Name System (DNS) ke objek **RecordSet.**
+Cmdlet **Add-AzDnsRecordConfig** menambahkan catatan Domain Name System (DNS) ke objek **RecordSet** .
 Objek **RecordSet** merupakan objek offline, dan perubahan pada objek tersebut tidak mengubah respons DNS hingga Anda menjalankan cmdlet Set-AzDnsRecordSet untuk tetap menyimpan perubahan ke Microsoft Azure DNS.
 Catatan SOA dibuat saat zona DNS dibuat, dan dihapus saat zona DNS dihapus.
 Anda tidak bisa menambahkan atau menghapus catatan SOA, tapi Anda bisa mengeditnya.
@@ -447,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

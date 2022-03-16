@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesVolume.md
-ms.openlocfilehash: d54168816e766089a1c9477125844a4032adac4c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ca9a321507122373ac29be4e97123ea42e10037
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297564"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232631"
 ---
 # New-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Membuat volume File Azure NetApp (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesvolume) untuk informasi terkini.
 
 ## SYNTAX
 

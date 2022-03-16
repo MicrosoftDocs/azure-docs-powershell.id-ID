@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
-ms.openlocfilehash: 175ff90fce8d522a74510db7d6bbb871a154c9d5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e4d7fb2ee1e05b3e9d2cfc6205482389660b90bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302812"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093663"
 ---
 # Get-AzBatchLocationQuota
 
 ## SYNOPSIS
 Mendapatkan kuota layanan Kumpulan untuk langganan Anda pada lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchlocationquota) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/init
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Initialize-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Initialize-AzNetAppFilesReplication.md
-ms.openlocfilehash: abf45d3d18157d8d2de622c362a0828ff8a0f7d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b4e37f2073d15d013e98f2ef2aa5d5b416c365ff
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308908"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232703"
 ---
 # Initialize-AzNetAppFilesReplication
 
 ## SYNOPSIS
 Re-Initializes koneksi replikasi pada volume tujuan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/initialize-aznetappfilesreplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Re-Initializes koneksi pada volume tujuan
 PS C:\> Initialize-AnfReplication -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -PoolName "MyAnfPool" -VolumeName "MyDestinationAnfVolume"
 ```
 
-Perintah ini Re-Initializes koneksi Replikasi ANF pada volume "MyDestinationAnfVolume".
+Perintah ini Re-Initializes dengan koneksi Replikasi ANF pada volume "MyDestinationAnfVolume".
 
 ## PARAMETERS
 

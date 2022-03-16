@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreV1.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreV1.md
-ms.openlocfilehash: 5ffa48b6f8bb986c2c0958cdd51e6f90861df583
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8e3076e89c6dd570d8210cf745d716c8107b9bde
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278124"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140233981"
 ---
 # Get-AzMarketplacePrivateStoreV1
 
 ## SYNOPSIS
 Dapatkan informasi tentang bursa pribadi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestorev1) untuk informasi terkini.
 
 ## SYNTAX
 

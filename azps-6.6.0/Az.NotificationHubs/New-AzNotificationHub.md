@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHub.md
-ms.openlocfilehash: 97d82cf32a969fc06acf8cd245570718c1387b60
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f38548adc2594ca3a5a373150786b546a0bf0152
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354233"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140248741"
 ---
 # New-AzNotificationHub
 
 ## SYNOPSIS
 Membuat hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,10 +41,10 @@ Cmdlet **New-AzNotificationHub** membuat hub pemberitahuan.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
 Hub pemberitahuan kurang lebih sama dengan aplikasi individu: setiap aplikasi biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet **New-AzNotificationHub** menyediakan dua cara untuk membuat hub pemberitahuan baru.
-Anda dapat membuat contoh objek **NotificationHubAttributes,** lalu mengonfigurasi objek tersebut.
-Anda kemudian dapat menyalin nilai properti tersebut ke hub baru melalui parameter *NotificationHubObj.*
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut menggunakan parameter *InputFile.*
-Ketika digunakan bersama dengan cmdlet **New-AzNotificationHub,** sampel JSON sebelumnya akan membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data Barat AS.
+Anda dapat membuat contoh objek **NotificationHubAttributes** , lalu mengonfigurasi objek tersebut.
+Anda kemudian dapat menyalin nilai properti tersebut ke hub baru melalui parameter *NotificationHubObj* .
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut menggunakan parameter *InputFile* .
+Ketika digunakan bersama dengan cmdlet **New-AzNotificationHub** , sampel JSON sebelumnya akan membuat hub pemberitahuan bernama ContosoNotificationHub yang terletak di pusat data Barat AS.
 
 ## EXAMPLES
 
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

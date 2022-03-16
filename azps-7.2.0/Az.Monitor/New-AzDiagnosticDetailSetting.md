@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDiagnosticDetailSetting.md
-ms.openlocfilehash: a1cc6d975aad5c04f0f00cc32e1352b372ab1442
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fdecae938bbde9a4177517906edb863f77d717a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297579"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120643"
 ---
 # New-AzDiagnosticDetailSetting
 
 ## SYNOPSIS
 Buat Objek PSDiagnosticDetailSetting, tipe bisa metrik atau log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azdiagnosticdetailsetting) untuk informasi terkini.
 
 ## SYNTAX
 

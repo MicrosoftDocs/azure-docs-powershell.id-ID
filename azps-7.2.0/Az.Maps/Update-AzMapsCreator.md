@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsCreator.md
-ms.openlocfilehash: 6c854abac9cbe922cd14b4490453ec3245a1457c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c07945ca9ab75ed2dfc03f0c0d2612f2c3df5466
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169920"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121687"
 ---
 # Update-AzMapsCreator
 
 ## SYNOPSIS
-Memperbarui sumber Peta Creator.
+Memperbarui sumber Peta Creator Anda.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/update-azmapscreator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Update-AzMapsCreator -InputObject <IMapsIdentity> [-StorageUnit <Int32>] [-Tag <
 ```
 
 ## DESCRIPTION
-Memperbarui sumber Peta Creator.
+Memperbarui sumber Peta Creator Anda.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
 
 ## EXAMPLES
@@ -48,7 +51,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini memperbarui sumber Peta Creator.
+Perintah ini memperbarui sumber daya Peta Creator.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
 
 ### Contoh 2: Memperbarui sumber Peta Creator menurut saluran
@@ -60,7 +63,7 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini memperbarui sumber Peta Creator menurut saluran.
+Perintah ini memperbarui sumber daya Peta Creator menurut saluran.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Tag.
 
 ## PARAMETERS
@@ -243,7 +246,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

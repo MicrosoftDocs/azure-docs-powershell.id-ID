@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azga
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplicationVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzGalleryApplicationVersion.md
-ms.openlocfilehash: 108430731ee2082a540653928a6fb6b60622e51b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 14d9c6f3114eae198ba85976117cb2c5e27d643c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311691"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092511"
 ---
 # New-AzGalleryApplicationVersion
 
 ## SYNOPSIS
 Buat atau perbarui galeri Versi Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azgalleryapplicationversion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

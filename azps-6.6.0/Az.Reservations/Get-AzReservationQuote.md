@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationQuote.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationQuote.md
-ms.openlocfilehash: e470f12a3863921d53edfeeaabb992cf9289debf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b282fd0da4a60858117ed93be846ba1d6c1e67f2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340658"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140247481"
 ---
 # Get-AzReservationQuote
 
 ## SYNOPSIS
-Dapatkan penawaran untuk reservasi. Ini akan diteruskan `New-AzReservation` ke pembelian.
+Dapatkan penawaran untuk reservasi. Ini akan diteruskan ke `New-AzReservation` pembelian.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.reservations/get-azreservationquote) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
