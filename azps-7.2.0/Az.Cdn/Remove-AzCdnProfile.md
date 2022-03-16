@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/remove-azcdn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Remove-AzCdnProfile.md
-ms.openlocfilehash: 9b7ec0c0d05702ab859d96edcb9b104a1a0402c5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2fe476db16a0e18ee751b97a4f33c1bc53fb6103
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166045"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140093195"
 ---
 # Remove-AzCdnProfile
 
 ## SYNOPSIS
-Menghapus profil CDN.
+Menghapus profil CDN Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/remove-azcdnprofile) untuk informasi terkini.
 
 ## SYNTAX
 
