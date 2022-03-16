@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultKey.md
-ms.openlocfilehash: dfff0e118f9714c49066aebedcd03919b712107e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5567207f44a44b9d19f26edf075875ceeb97c36f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362822"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140285053"
 ---
 # Backup-AzKeyVaultKey
 
 ## SYNOPSIS
 Mencadangkan kunci di vault kunci.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Gunakan cmdlet **Backup-AzKeyVaultKey** untuk mengambil kunci dalam format teren
 
 ## EXAMPLES
 
-### Contoh 1: Mencadangkan kunci dengan nama file yang dihasilkan secara otomatis
+### Contoh 1:  Mencadangkan kunci dengan nama file yang dihasilkan secara otomatis
 ```powershell
 PS C:\Users\username\> Backup-AzKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyKey'
 
@@ -69,7 +72,7 @@ C:\Backup.blob
 
 Perintah ini mengambil kunci yang bernama MyKey dari kunci vaultnamed MyKeyVault dan menyimpan cadangan kunci itu ke file bernama Backup.blob.
 
-### Contoh 3: Mencadangkan kunci yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa memberikan perintah.
+### Contoh 3:  Mencadangkan kunci yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa memberikan perintah.
 ```powershell
 PS C:\> $key = Get-AzKeyVaultKey -VaultName 'MyKeyVault' -Name 'MyKey'
 PS C:\> Backup-AzKeyVaultKey -Key $key -OutputFile 'C:\Backup.blob' -Force
@@ -77,7 +80,7 @@ PS C:\> Backup-AzKeyVaultKey -Key $key -OutputFile 'C:\Backup.blob' -Force
 C:\Backup.blob
 ```
 
-Perintah ini akan membuat cadangan kunci bernama $key. Nama di vault bernama $key. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
+Perintah ini membuat cadangan kunci bernama $key. Nama di vault bernama $key. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
 
 ## PARAMETERS
 
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

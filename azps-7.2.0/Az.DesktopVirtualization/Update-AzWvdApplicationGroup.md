@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdApplicationGroup.md
-ms.openlocfilehash: 111b22127a99aa4104e4255f4efa32ebed178ad4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 92488d1d1ec857cf78b49854bb67fb3242ae0e77
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167388"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089757"
 ---
 # Update-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Memperbarui aplikasiGrup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdapplicationgroup) untuk informasi terkini.
 
 ## SYNTAX
 

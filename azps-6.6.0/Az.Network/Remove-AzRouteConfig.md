@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzRouteConfig.md
-ms.openlocfilehash: 295b9f532d55af40159f7ef07d46636ff8521ffe
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b255a68d82fc061787222adbab0533662cecafc8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382141"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140250073"
 ---
 # Remove-AzRouteConfig
 
 ## SYNOPSIS
 Menghapus rute dari tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azrouteconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,9 +59,9 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable.**
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable** .
 Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menghapus rute yang bernama Route02, dan meneruskan hasilnya ke cmdlet **Set-AzRouteTable,** yang memperbarui tabel agar mencerminkan perubahan Anda.
+Cmdlet saat ini menghapus rute yang bernama Route02, dan meneruskan hasilnya ke cmdlet **Set-AzRouteTable** , yang memperbarui tabel agar mencerminkan perubahan Anda.
 Tabel tidak lagi berisi rute yang bernama Route02.
 
 ## PARAMETERS
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

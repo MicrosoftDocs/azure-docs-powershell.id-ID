@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificate.md
-ms.openlocfilehash: f17a91ae2e3d5c70dee4e51aeef6f3c723b4785d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 82a02d23bdfbc6be90a3564b8d3fa329412ce30f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385512"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140285089"
 ---
 # Add-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat ke kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -90,12 +93,12 @@ Updated     : 2/8/2016 11:21:45 PM
 Perintah pertama menggunakan cmdlet New-AzKeyVaultCertificatePolicy cmdlet untuk membuat kebijakan sertifikat, lalu menyimpannya di $Policy variabel.
 Perintah kedua menggunakan **Add-AzKeyVaultCertificate** untuk memulai proses untuk membuat sertifikat.
 Perintah ketiga menggunakan cmdlet Get-AzKeyVaultCertificateOperation cmdlet untuk melakukan polling pada operasi untuk memverifikasi bahwa proses telah selesai.
-Perintah final menggunakan cmdlet Get-AzKeyVaultCertificate untuk mendapatkan sertifikat.
+Perintah final menggunakan cmdlet Get-AzKeyVaultCertificate cmdlet untuk mendapatkan sertifikat.
 
 ## PARAMETERS
 
 ### -CertificatePolicy
-Menentukan objek **KeyVaultCertificatePolicy.**
+Menentukan objek **KeyVaultCertificatePolicy** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultCertificatePolicy
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

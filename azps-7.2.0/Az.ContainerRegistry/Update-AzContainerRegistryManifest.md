@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryManifest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryManifest.md
-ms.openlocfilehash: 7d76e5a6b1a06e057b02757ac4b6e7e98db7c868
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a44c799eec3083fb14683e7d8c4df2268e7a6858
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272397"
 ---
 # Update-AzContainerRegistryManifest
 
 ## SYNOPSIS
 Perbarui manifes ACR. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrymanifest) untuk informasi terkini.
 
 ## SYNTAX
 

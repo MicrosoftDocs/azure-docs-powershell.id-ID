@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBCassandraTableThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBCassandraTableThroughputMigration.md
-ms.openlocfilehash: 7173d65ffa3af4f1fe89fe6dbea2bb34cbd4781b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b4e10bfca870988a426147a870de913482f388ff
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272307"
 ---
 # Invoke-AzCosmosDBCassandraTableThroughputMigration
 
 ## SYNOPSIS
 Gunakan opsi ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbcassandratablethroughputmigration) untuk informasi terkini.
 
 ## SYNTAX
 

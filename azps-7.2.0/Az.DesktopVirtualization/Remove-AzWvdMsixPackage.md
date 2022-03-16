@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdMsixPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdMsixPackage.md
-ms.openlocfilehash: 9cae3e77b635c544cba99f228d9592f8d1af021a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ea4b4c93fc865f80e6a1083074c1a92e98ff8986
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089883"
 ---
 # Remove-AzWvdMsixPackage
 
 ## SYNOPSIS
 Hapus Paket MSIX.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdmsixpackage) untuk informasi terkini.
 
 ## SYNTAX
 

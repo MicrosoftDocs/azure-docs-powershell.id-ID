@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/new-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/New-AzElasticMonitor.md
-ms.openlocfilehash: 9d724d34a5785e1767c379107100d962b398cfc8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1ad4fba6ccf2fac840804a000af4aac8d00e89c1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269211"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237329"
 ---
 # New-AzElasticMonitor
 
 ## SYNOPSIS
 Membuat sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/new-azelasticmonitor) untuk informasi terkini.
 
 ## SYNTAX
 

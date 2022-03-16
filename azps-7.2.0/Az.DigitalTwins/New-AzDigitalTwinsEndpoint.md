@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsEndpoint.md
-ms.openlocfilehash: 304467c26ac50dd5af3c9f0959411299eec85249
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d77b795fa5b6cb34a960be6121ce2378544aa79c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284444"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237599"
 ---
 # New-AzDigitalTwinsEndpoint
 
 ## SYNOPSIS
 Buat atau perbarui titik akhir DigitalTwinsInstance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinsendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

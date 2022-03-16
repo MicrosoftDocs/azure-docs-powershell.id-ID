@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 589e64112afb5e97c528e478c1c02c3efd599cf7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 015d8a124a7390ccc1e3af6b3ccac74e3469f628
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253660"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237203"
 ---
 # Set-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Memperbarui grup konsumen Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/set-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 

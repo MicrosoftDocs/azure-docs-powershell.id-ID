@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Remove-AzWvdUserSession.md
-ms.openlocfilehash: e335d692234cb52eae0ff1d9e37d7a9cc5434258
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f898f03e6694e34b38d3f929f3129767064eb175
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254683"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089842"
 ---
 # Remove-AzWvdUserSession
 
 ## SYNOPSIS
 Menghapus userSession.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/remove-azwvdusersession) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Menghapus userSession.
 PS C:\> Remove-AzWvdUserSession -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName -SessionHostName SessionHostName -Id 2
 ```
 
-Perintah ini menghapus Windows UserSession Desktop Virtual di Session Host.
+Perintah ini menghapus Windows UserSession Desktop Virtual dalam Session Host.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionRestoreRequest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionRestoreRequest.md
-ms.openlocfilehash: e9fb8de7d81171e18c35725dbc9e8241e42b209c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ab9bc57311a65d0a0e7c22db90542b51aa9558c8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337087"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140256337"
 ---
 # Initialize-AzDataProtectionRestoreRequest
 
 ## SYNOPSIS
 Memulai pemulihan objek Permintaan untuk memicu pemulihan pada instans cadangan yang diproteksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/initialize-azdataprotectionrestorerequest) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -411,7 +414,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -428,7 +431,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-BACKUPINSTANCE <BackupInstanceResource> : Objek Instans Cadangan untuk memicu pemulihan lokal asli.
+BACKUPINSTANCE <BackupInstanceResource>: Objek Instans Cadangan untuk memicu pemulihan lokal asli.
   - `[Property <IBackupInstance>]`: Properti BackupInstanceResource
     - `DataSourceInfo <IDatasource>`: Mendapatkan atau mengatur informasi sumber data.
       - `ResourceId <String>`: ID ARM penuh dari sumber daya. Untuk sumber daya Azure, ini adalah ID ARM. For non azure resources, this will be the ID created by backup service via Fabric/Vault.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Update-AzIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: 21ea022600c47d64443f2e5478cf71b98e99614e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7e718248889155c493e600c12ebe417ede022bfb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347150"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140255527"
 ---
 # Update-AzIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
 Memperbarui hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/update-aziotdeviceprovisioningservicelinkedhub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzIoTDeviceProvisioningServiceLinkedHub [-ResourceId] <String> [-LinkedHu
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps .
+Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ ApplyAllocationPolicy : True
 Location              : eastus
 ```
 
-Perbarui "myiothub.azure-devices.net" hub IoT Terkait dalam layanan penyediaan perangkat Azure IoT Hub.
+Perbarui "myiothub.azure-devices.net" hub IoT Tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
 
 ## PARAMETERS
 
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

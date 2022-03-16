@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceTopology.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerServiceTopology.md
-ms.openlocfilehash: 1230106cb9eed408521a299b45c199a63cb2f74c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9a77158cf9b1eab4ae633856370ed49f29cc183d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353225"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140255869"
 ---
 # New-AzDeploymentManagerServiceTopology
 
 ## SYNOPSIS
 Membuat topologi layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerservicetopology) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzDeploymentManagerServiceTopology -ResourceGroupName <String> -Name <String
 ## DESCRIPTION
 Cmdlet **New-AzDeploymentManagerServiceTopology** membuat topologi layanan.
 
-Anda dapat mengubah objek ServiceTopology yang dikembalikan secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzDeploymentManagerServiceTopology.
+Anda dapat mengubah objek ServiceTopology yang dikembalikan secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzDeploymentManagerServiceTopology cmdlet.
 Objek yang dikembalikan 
 
 Objek yang dikembalikan memiliki bidang ResourceId yang dapat direferensikan dalam sumber daya peluncuran untuk menunjukkan bahwa layanan yang dideklarasikan dalam topologi layanan ini akan disebarkan dalam peluncuran.
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

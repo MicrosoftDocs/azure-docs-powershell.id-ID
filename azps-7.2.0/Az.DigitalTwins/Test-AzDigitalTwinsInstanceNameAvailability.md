@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/tes
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Test-AzDigitalTwinsInstanceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Test-AzDigitalTwinsInstanceNameAvailability.md
-ms.openlocfilehash: 834c36f6f92ee6f739849f50b098a87bd14690e1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 91bfbf5afd6a98d6e00b6db6900c53328ae64f17
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089667"
 ---
 # Test-AzDigitalTwinsInstanceNameAvailability
 
 ## SYNOPSIS
 Periksa apakah nama DigitalTwinsInstance tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/test-azdigitaltwinsinstancenameavailability) untuk informasi terkini.
 
 ## SYNTAX
 

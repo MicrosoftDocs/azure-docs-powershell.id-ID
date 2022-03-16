@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: c3b449c09d556d6aec28c7ab493f48de170cad03
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c95429f96e7a8c7d496f005b1e2904d760e0925b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384619"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140249425"
 ---
 # Set-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi IP front-end untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azloadbalancerfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -82,9 +85,9 @@ PS C:\> $slb | Add-AzLoadBalancerFrontendIpConfig -Name "NewFrontend" -Subnet $S
 PS C:\> $slb | Set-AzLoadBalancerFrontendIpConfig -Name "NewFrontend" -Subnet $Subnet
 PS C:\> $slb | Set-AzLoadBalancer
 ```
-Perintah pertama mendapatkan subnet virtual bernama Subnet, lalu menyimpannya di $Subnet tertentu.
-Perintah kedua mendapatkan penyeimbang muat terkait bernama MyLoadBalancer, lalu menyimpannya di $slb lain.
-Perintah ketiga menggunakan operator pipeline untuk mengirim penyeimbang muat di $slb ke Add-AzLoadBalancerFrontendIpConfig, yang membuat konfigurasi IP ujung-depan yang bernama NewFrontend untuk $slb.
+Perintah pertama mendapatkan subnet virtual bernama Subnet, lalu menyimpannya dalam $Subnet tertentu.
+Perintah kedua mendapatkan penyeimbang muat terkait bernama MyLoadBalancer, lalu menyimpannya di $slb variabel.
+Perintah ketiga menggunakan operator pipeline untuk mengirim penyeimbang muat dalam $slb ke Add-AzLoadBalancerFrontendIpConfig, yang membuat konfigurasi IP ujung-depan yang bernama NewFrontend untuk $slb.
 Perintah keempat mengirim penyeimbang muat di $slb **ke Set-AzLoadBalancerFrontendIpConfig**, yang menyimpan dan memperbarui konfigurasi IP ujung-depan.
 
 ### Contoh 2: Mengubah konfigurasi IP front-end dari penyeimbang muat dengan Gateway Load Balancer
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -PrivateIpAddress
 Menentukan alamat IP privat dari penyeimbang muat yang terkait dengan konfigurasi IP front-end untuk diatur.
-Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet.*
+Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet* .
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

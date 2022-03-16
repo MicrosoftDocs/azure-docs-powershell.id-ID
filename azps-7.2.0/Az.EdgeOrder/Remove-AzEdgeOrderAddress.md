@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Remove-AzEdgeOrderAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Remove-AzEdgeOrderAddress.md
-ms.openlocfilehash: 76bca0897931d8b7750c777220b14c9b6af4312c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bf85ce9358f38b9b09850d1a901838d012fb9a83
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311531"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237365"
 ---
 # Remove-AzEdgeOrderAddress
 
 ## SYNOPSIS
 Menghapus alamat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.edgeorder/remove-azedgeorderaddress) untuk informasi terkini.
 
 ## SYNTAX
 

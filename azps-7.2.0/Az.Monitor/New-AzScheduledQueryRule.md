@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzScheduledQueryRule.md
-ms.openlocfilehash: e96a354fd4eb068e8bd469d3ae60e08b0200aa78
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 986528161a0c60de9372e2572f6eb62884881215
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282044"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296447"
 ---
 # New-AzScheduledQueryRule
 
 ## SYNOPSIS
 Membuat Aturan Pemberitahuan Log (tipe Aturan Kueri Terjadwal)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azscheduledqueryrule) untuk informasi terkini.
 
 ## SYNTAX
 

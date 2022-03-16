@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: 7b1ebf136de07fcfa99850c5681c56fc9274c606
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f12bc8748108f6de8939768298c9231b8f51ae98
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263964"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089685"
 ---
 # Get-AzIoTDeviceProvisioningServiceLinkedHub
 
 ## SYNOPSIS
 Menampilkan semua atau memperlihatkan detail hub IoT tertaut dalam layanan penyediaan perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningservicelinkedhub) untuk informasi terkini.
 
 ## SYNTAX
 

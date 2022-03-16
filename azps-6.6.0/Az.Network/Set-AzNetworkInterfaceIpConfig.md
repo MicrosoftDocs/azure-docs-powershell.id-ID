@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 801f834f8f5141661018f42f5d9ff9eb520f9d8e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 52db3af3e5ef308bfdab1eaa66b4157f81ffa1c5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355370"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140249245"
 ---
 # Set-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi IP untuk antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkinterfaceipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -85,7 +88,7 @@ $nic | Set-AzNetworkInterface
 ```
 
 Dalam contoh ini, variabel $asg berisi referensi ke grup keamanan aplikasi.
-Perintah keempat mendapatkan nic1 antarmuka jaringan yang terkait dengan konfigurasi IP yang perlu diperbarui. Kumpulan Set-AzNetworkInterfaceIpConfig mengatur alamat IP privat dari konfigurasi IP utama ipconfig1 menjadi 10.0.0.11 dan membuat keterkaitan dengan grup keamanan aplikasi yang diambil.
+Perintah keempat mendapatkan nic1 antarmuka jaringan yang terkait dengan konfigurasi IP yang perlu diperbarui. The Set-AzNetworkInterfaceIpConfig sets the private IP address of the primary IP configuration ipconfig1 to 10.0.0.11 and creates an association with the retrieved application security group.
 Terakhir, perintah terakhir memperbarui antarmuka jaringan yang memastikan bahwa perubahan telah berhasil dilakukan.
 
 ## PARAMETERS
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan objek **NetworkInterface.**
+Menentukan objek **NetworkInterface** .
 Cmdlet ini menambahkan konfigurasi IP antarmuka jaringan ke objek yang ditentukan parameter ini.
 
 ```yaml
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIPAddress.**
+Menentukan objek **PublicIPAddress** .
 Cmdlet ini membuat referensi ke Alamat IP publik untuk dikaitkan dengan konfigurasi IP antarmuka jaringan ini.
 
 ```yaml
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **Subnet.**
+Menentukan objek **Subnet** .
 Cmdlet ini membuat referensi ke subnet di mana konfigurasi IP antarmuka jaringan ini dibuat.
 
 ```yaml
@@ -381,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

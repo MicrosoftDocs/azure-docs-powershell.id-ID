@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDiskEncryptionExtension.md
-ms.openlocfilehash: 65ed3421659dd051d76ea2a92bc3c04762d2ec6d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6e7ce2bbfe845a5cf5598d92205bb9e3cd2dd597
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268156"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272775"
 ---
 # Remove-AzVMDiskEncryptionExtension
 
 ## SYNOPSIS
 Menghapus ekstensi enkripsi disk dari komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvmdiskencryptionextension) untuk informasi terkini.
 
 ## SYNTAX
 

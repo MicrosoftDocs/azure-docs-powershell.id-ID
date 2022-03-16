@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryReplication.md
-ms.openlocfilehash: 471080b3a68ba4b13235b85f6d47fe531b6195c7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fa5d25356476f3f52b3232417321a906006fcf75
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285819"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272505"
 ---
 # Get-AzContainerRegistryReplication
 
 ## SYNOPSIS
 Mendapatkan replikasi registri wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistryreplication) untuk informasi terkini.
 
 ## SYNTAX
 

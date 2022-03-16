@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/new-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFlexibleServerDatabase.md
-ms.openlocfilehash: 07da53331ca9b183ae44a274b63bef7551c2a9ac
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b6d47d34eaed0666fceec4044ff528dc68907e9d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296321"
 ---
 # New-AzMySqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Membuat database baru atau memperbarui database yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/new-azmysqlflexibleserverdatabase) untuk informasi terkini.
 
 ## SYNTAX
 

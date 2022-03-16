@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Invoke-AzHDInsightHiveJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Invoke-AzHDInsightHiveJob.md
-ms.openlocfilehash: 791a5534cdd414432d2fb05466dc94e144e8db3f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 433dab74993ef900766568989ff39acfd5447a7f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282236"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140088911"
 ---
 # Invoke-AzHDInsightHiveJob
 
 ## SYNOPSIS
 Mengirimkan kueri Hive ke kluster HDInsight dan mengambil hasil kueri dalam satu operasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/invoke-azhdinsighthivejob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultContainer
-Menentukan nama wadah default di akun Azure Storage yang digunakan kluster HDInsight.
+Menentukan nama wadah default di akun Azure Storage default yang digunakan kluster HDInsight.
 
 ```yaml
 Type: System.String

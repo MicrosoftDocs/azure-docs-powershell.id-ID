@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistry.md
-ms.openlocfilehash: 4f0857dcc85e97f2188789a0646390432ecfb518
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a33d548dcd4f634ec6d4a213d9a602c4bb152142
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314076"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272415"
 ---
 # New-AzContainerRegistry
 
 ## SYNOPSIS
 Membuat registri wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistry) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMRunCommand.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Invoke-AzVMRunCommand.md
-ms.openlocfilehash: b39951c2e6b56c06f72c21ba8398df9f7dfb0a6b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 58b7cd5020586aa3bd188ee271430bef33f48303
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168134"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140273081"
 ---
 # Invoke-AzVMRunCommand
 
 ## SYNOPSIS
 Jalankan perintah pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/invoke-azvmruncommand) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Menjalankan perintah pada VM.
 
 ## EXAMPLES
 
-### Contoh 1: Menjalankan perintah di Windows
+### Contoh 1: Menggunakan perintah di Windows
 ```powershell
 PS C:\> Invoke-AzVMRunCommand -ResourceGroupName 'rgname' -VMName 'vmname' -CommandId 'RunPowerShellScript' -ScriptPath 'sample.ps1' -Parameter @{param1 = "var1"; param2 = "var2"}
 ```

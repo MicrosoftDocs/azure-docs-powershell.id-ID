@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azho
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHostGroup.md
-ms.openlocfilehash: dd6e7de3fa19a2cca4a3eb014cca05e526b49837
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cad89f854d04f5c894bd0b7f463cdf4acfdf39ce
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253916"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140273189"
 ---
 # Get-AzHostGroup
 
 ## SYNOPSIS
 Dapatkan atau  list hosts.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azhostgroup) untuk informasi terkini.
 
 ## SYNTAX
 

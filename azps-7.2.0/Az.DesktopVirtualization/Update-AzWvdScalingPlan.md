@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdScalingPlan.md
-ms.openlocfilehash: 2190fd3faccb8688b8d259516fd799be5ce358a0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0342b4c6ba8bd7f9040b178c84ba2e9d21733c1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263979"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089739"
 ---
 # Update-AzWvdScalingPlan
 
 ## SYNOPSIS
 Memperbarui rencana penskalaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdscalingplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Memperbarui rencana penskalaan.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Windows Desktop Virtual Berdasarkan nama
+### Contoh 1: Perbarui Windows Skala Desktop Virtual menurut nama
 ```powershell
 PS C:\> Update-AzWvdScalingPlan `
             -ResourceGroupName ResourceGroupName `

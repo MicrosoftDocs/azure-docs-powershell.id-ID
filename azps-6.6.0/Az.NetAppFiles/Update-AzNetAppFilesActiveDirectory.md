@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesActiveDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesActiveDirectory.md
-ms.openlocfilehash: 9678125bd1b278164a482285a52b0411d3931150
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6e7ae4aad4a012714e9e36a30cc0892b0823675d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352253"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140307463"
 ---
 # Update-AzNetAppFilesActiveDirectory
 
 ## SYNOPSIS
 Memperbarui konfigurasi direktori aktif Azure NetApp Files (ANF) ke pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesactivedirectory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationalUnit
-Unit Organisasi (OU) di dalam Windows Direktori Aktif
+Unit Organisasi (OU) di dalam Windows Aktif
 
 ```yaml
 Type: System.String
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityOperator
-Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk berbagi smb yang tersedia secara terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
+Pengguna Domain di direktori Aktif akan diberi Hak Istimewa Keamanan (Diperlukan untuk BERBAGI SMB yang tersedia secara terus-menerus untuk SQL). Daftar nama pengguna unik tanpa penentu domain
 
 ```yaml
 Type: System.String[]
@@ -429,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

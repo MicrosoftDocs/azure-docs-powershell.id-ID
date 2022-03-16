@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
-ms.openlocfilehash: cdd70cdd77c09e06e074c8afaf9bf3cacef90a7a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 62c8c98a5a161e6716792aa0c3f2b852162c6e4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269468"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272667"
 ---
 # Set-AzVMOSDisk
 
 ## SYNOPSIS
 Mengatur properti disk sistem operasi pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmosdisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -83,10 +86,10 @@ PS C:\> $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name "osDisk.vhd" 
 PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
+Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
 Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari ketersediaan yang telah diatur untuk $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
 
 ### Contoh 2: Mengatur properti pada mesin virtual dari gambar pengguna umum
@@ -99,9 +102,9 @@ PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
 Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11 dan menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual dan menyimpannya di $VirtualMachine variabel.
+Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine baru.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari ketersediaan yang telah diatur untuk $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
 
 ### Contoh 3: Mengatur properti pada mesin virtual dari gambar pengguna khusus
@@ -113,9 +116,9 @@ PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
 Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11 dan menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual dan menyimpannya di $VirtualMachine variabel.
+Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine baru.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut merupakan bagian dari ketersediaan yang telah diatur untuk $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
 
 ### Contoh 4: Mengatur pengaturan enkripsi disk pada disk sistem operasi mesin virtual
@@ -157,11 +160,11 @@ Nilai valid adalah:
 Tentukan opsi ini untuk membuat mesin virtual dari disk khusus.
 Ketika Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
 Sebagai gantinya, Set-AzVMSourceImage cmdlet.
-Anda juga harus menggunakan parameter *Windows* *atau Linux* untuk memberi tahu tipe sistem operasi di VHD platform Azure.
+Anda juga harus menggunakan parameter *Windows* *atau Linux* agar memberi tahu tipe sistem operasi pada VHD platform Azure.
 Parameter *VhdUri* cukup memberi tahu platform Azure mengenai lokasi disk untuk melampirkannya. 
 - FromImage.
 Tentukan opsi ini untuk membuat mesin virtual dari gambar platform atau gambar pengguna umum.
-Dalam kasus gambar pengguna yang di generalisasi, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu lokasi platform Azure dan tipe disk sistem operasi VHD **alih-alih menggunakan cmdlet Set-AzVMSourceImage**.
+Dalam kasus gambar pengguna yang di generalisasi, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu lokasi platform Azure dan tipe disk sistem operasi VHD daripada menggunakan cmdlet **Set-AzVMSourceImage**.
 Dalam kasus gambar platform, parameter *VhdUri* sudah memadai. 
 - Kosong.
 

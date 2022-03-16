@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/restore-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restore-AzMySqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Restore-AzMySqlFlexibleServer.md
-ms.openlocfilehash: 7462f58069c292955f41aa4af89c1c84a13bacb9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 25542e34a45e51576d0f24963147410f06936efc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169907"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296231"
 ---
 # Restore-AzMySqlFlexibleServer
 
 ## SYNOPSIS
 Memulihkan server dari cadangan yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/restore-azmysqlflexibleserver) untuk informasi terkini.
 
 ## SYNTAX
 

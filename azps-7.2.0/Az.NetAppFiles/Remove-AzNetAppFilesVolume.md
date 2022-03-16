@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesVolume.md
-ms.openlocfilehash: ad69519eb49b8872c109239191e48d553b6c2345
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 88ec9e6f79384e7ac86bf541f74062b44ce6560e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262571"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296105"
 ---
 # Remove-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Menghapus volume File Azure NetApp (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/remove-aznetappfilesvolume) untuk informasi terkini.
 
 ## SYNTAX
 

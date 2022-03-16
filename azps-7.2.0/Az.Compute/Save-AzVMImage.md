@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/save-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVMImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Save-AzVMImage.md
-ms.openlocfilehash: 713bcec60fd3fe00dbcf3126e33255440496a047
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e440bbe38b2db041ffff3b460b5f6cfc5d034c33
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166738"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272649"
 ---
 # Save-AzVMImage
 
 ## SYNOPSIS
 Menyimpan mesin virtual sebagai VMImage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/save-azvmimage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Save-AzVMImage [-DestinationContainerName] <String> [-VHDNamePrefix] <String> [-
 
 ## DESCRIPTION
 Cmdlet **Save-AzVMImage** menyimpan mesin virtual sebagai VMImage.
-Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu menandainya sebagai generalisasi dengan menggunakan cmdlet Set-AzVM baru.
+Sebelum Anda membuat gambar mesin virtual, sysprep mesin virtual, lalu menandainya sebagai umum menggunakan cmdlet Set-AzVM.
 Output cmdlet ini adalah templat JavaScript Object Notation (JSON).
 Anda dapat menggunakan mesin virtual dari gambar yang diambil.
 
@@ -97,7 +100,7 @@ Menentukan nama wadah di dalam wadah "sistem" yang ingin Anda tahan gambar Anda.
 Jika wadah tidak ada, wadah dibuat untuk Anda.
 Hard disk virtual (VHD) yang merupakan VMImage berada dalam wadah yang ditentukan oleh parameter ini.
 Jika VHD tersebar di beberapa akun penyimpanan, cmdlet ini membuat satu wadah yang memiliki nama ini di setiap akun penyimpanan.
-URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx.vhd.
+URL gambar yang disimpan mirip dengan: https://\<storageAccountName\>.blob.core.windows.net/system/Microsoft.Compute/Images/\<imagesContainer\>/\<vhdPrefix-osDisk\>.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.vhd.
 
 ```yaml
 Type: System.String

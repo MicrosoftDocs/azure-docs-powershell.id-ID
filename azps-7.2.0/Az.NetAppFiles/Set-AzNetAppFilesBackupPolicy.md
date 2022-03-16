@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Set-AzNetAppFilesBackupPolicy.md
-ms.openlocfilehash: 5a5de7582666be75fffa92e0f97969db11e6ef08
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4cb0ffda63e8325995eb3f0e6738df9227b4210a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164605"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296051"
 ---
 # Set-AzNetAppFilesBackupPolicy
 
 ## SYNOPSIS
 Memperbarui Kebijakan Pencadangan File Azure NetApp (ANF) dengan kumpulan data baru. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/set-aznetappfilesbackuppolicy) untuk informasi terkini.
 
 ## SYNTAX
 

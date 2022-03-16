@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryImageDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzGalleryImageDefinition.md
-ms.openlocfilehash: a8e756eeaf4d4abc89076910aa08f53190b18713
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 30393b3dad3eb0560109b25fd260ecd9b64ef5ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278587"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272901"
 ---
 # Remove-AzGalleryImageDefinition
 
 ## SYNOPSIS
 Hapus definisi gambar galeri.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azgalleryimagedefinition) untuk informasi terkini.
 
 ## SYNTAX
 

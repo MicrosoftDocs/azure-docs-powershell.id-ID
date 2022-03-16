@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVhd.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVhd.md
-ms.openlocfilehash: 7499cc8689bbd3b921944a377ea15910a04e9995
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b31d25e22a1e50c871849eba7d9a5ce8580d8c39
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140273333"
 ---
 # Add-AzVhd
 
 ## SYNOPSIS
 Mengunggah hard disk virtual dari komputer lokal ke Azure (disk terkelola atau blob).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvhd) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Hard disk virtual yang sedang diunggah haruslah file .vhd dan ukurannya N * Mib 
 Untuk kumpulan Parameter Default (unggah ke blob), yang juga didukung adalah kemampuan untuk mengunggah versi patch file .vhd lokal.
 Saat hard disk virtual dasar telah diunggah, Anda bisa mengunggah disk berbeda yang menggunakan gambar dasar sebagai induk.
 URI akses bersama (Sas) juga didukung. <br/>
-Untuk mengatur Upload Parameter Disk terkelola, parameter: ResourceGroupName, DiskName, Lokasi, DiskSku, dan Zona akan digunakan untuk membuat disk baru, kemudian hard disk virtual akan diunggah ke dalamnya.
+Untuk mengatur Upload Parameter Disk Terkelola, parameter: ResourceGroupName, DiskName, Lokasi, DiskSku, dan Zona akan digunakan untuk membuat disk baru, kemudian hard disk virtual akan diunggah ke dalamnya.
 
 ## EXAMPLES
 

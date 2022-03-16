@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationSoftwareUpdateRun.md
-ms.openlocfilehash: fad38a94440f6c8598d5321af332f11af7cc7d15
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fce8c8bbcca328e071154db1fdd3b4df72452dcd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300556"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140273369"
 ---
 # Get-AzAutomationSoftwareUpdateRun
 
 ## SYNOPSIS
 Mendapatkan daftar pembaruan perangkat lunak otomatisasi Azure yang berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationsoftwareupdaterun) untuk informasi terkini.
 
 ## SYNTAX
 

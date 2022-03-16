@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultRoleDefinition.md
-ms.openlocfilehash: ff21ddcfec7bbef0be4314f308fee6c00eab2a3a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dd48bf401328b08bc5e5b620717920c9ae3c403b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341102"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140284837"
 ---
 # Remove-AzKeyVaultRoleDefinition
 
 ## SYNOPSIS
 Menghapus definisi peran kustom dari HSM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultroledefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Remove-AzKeyVaultRoleDefinition [-HsmName] <String> [-Scope <String>] -InputObje
 ```
 
 ## DESCRIPTION
-Cmdlet `Remove-AzKeyVaultRoleDefinition` menghapus peran kustom dalam Azure Role-Based Access Control azure KeyVault yang dikelola HSM.
-Menyediakan `-RoleName` parameter dari peran kustom atau objek peran yang sudah ada untuk menghapus peran kustom itu.
+Cmdlet `Remove-AzKeyVaultRoleDefinition` menghapus peran kustom dalam Azure Role-Based Access Access dari Azure KeyVault yang dikelola HSM.
+`-RoleName` Menyediakan parameter dari peran kustom atau objek peran yang sudah ada untuk menghapus peran kustom itu.
 Secara default, `Remove-AzKeyVaultRoleDefinition` meminta konfirmasi Anda.
 Untuk menyembunyikan perintah, gunakan `-Force` parameter.
 
@@ -54,7 +57,7 @@ $role = Get-AzKeyVaultRoleDefinition -HsmName myHsm -RoleName "my role"
 $role | Remove-AzKeyVaultRoleDefinition -HsmName myHsm -Force
 ```
 
-Contoh ini menghapus peran kustom yang bernama "peran saya" dengan pemipaan objek peran. Perintah juga menyembunyikan perintah oleh `-Force` .
+Contoh ini menghapus peran kustom yang bernama "peran saya" dengan pemipaan objek peran. Perintah juga menyembunyikan perintah oleh `-Force`.
 
 ## PARAMETERS
 
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.functions/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionAppSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Functions/help/Remove-AzFunctionAppSetting.md
-ms.openlocfilehash: a54d56721f9b26c442c99f48269f7af0ec6c07e3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 10d7392746d6290cd16dd0e889425e54e44e2ef4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089001"
 ---
 # Remove-AzFunctionAppSetting
 
 ## SYNOPSIS
 Menghapus pengaturan aplikasi dari aplikasi fungsi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.functions/remove-azfunctionappsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -219,7 +222,7 @@ INPUTOBJECT <ISite>:
   - `[CloningInfoOverwrite <Boolean?>]`: <code>true</code> untuk menimpa aplikasi tujuan; jika tidak, <code>false</code>.
   - `[CloningInfoSourceWebAppId <String>]`: ARM resource ID dari aplikasi sumber. ID sumber daya aplikasi merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName} untuk slot produksi dan /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slot/{slotName} untuk slot lainnya.
   - `[CloningInfoSourceWebAppLocation <String>]`: Lokasi aplikasi sumber, mis: As Barat atau Eropa Utara
-  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil yang digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
+  - `[CloningInfoTrafficManagerProfileId <String>]`: ARM resource ID dari Traffic Manager profil untuk digunakan, jika ada. Traffic Manager ID sumber daya merupakan formulir /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
   - `[CloningInfoTrafficManagerProfileName <String>]`: Nama Traffic Manager profil untuk dibuat. Hal ini hanya diperlukan Traffic Manager profil pengguna belum ada.
   - `[Config <ISiteConfig>]`: Konfigurasi aplikasi.
     - `[ActionMinProcessExecutionTime <String>]`: Waktu minimum proses harus dijalankan sebelum melakukan tindakan

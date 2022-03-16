@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: c86d2161311357521d6082a5c846a843bd3ecc38
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 262a3e2154d55d3065496f49dad41953fbd35c9c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359153"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140284963"
 ---
 # Get-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Mendapatkan kunci Vault yang Azure Storage Akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Mendapatkan kunci vault yang Azure Storage akun tersebut jika nama akun ditentuk
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua Kunci Vault Storage Akun
+### Contoh 1: Daftar semua Kunci Vault Storage Baru
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault'
 
@@ -79,7 +82,7 @@ Tags                :
 
 Mendapatkan detail tentang Key Vault yang Storage Akun 'mystorageaccount' jika kuncinya dikelola oleh vault 'myvault'
 
-### Contoh 3: Daftar semua Kunci Vault Storage Akun menggunakan pemfilteran
+### Contoh 3: Membuat daftar semua Kunci Vault Storage akun dengan pemfilteran
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -Name "test*"
 
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

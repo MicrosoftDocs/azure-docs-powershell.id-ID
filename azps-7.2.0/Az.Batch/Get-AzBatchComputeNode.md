@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchComputeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchComputeNode.md
-ms.openlocfilehash: aee17277c69b603fd6cc9e698575a430e69842bb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f9c715667cffc2155e7d133d523504ef9ec74947
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163398"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241001"
 ---
 # Get-AzBatchComputeNode
 
 ## SYNOPSIS
 Dapatkan Kumpulan menghitung node dari kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchcomputenode) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ Errors                :
 ```
 
 Perintah ini mendapatkan node hitung yang memiliki ID tvm-2316545714_1-20150725t213220z dari pool yang memiliki ID Pool06.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan semua node perhitungan diam dari kolam
 ```

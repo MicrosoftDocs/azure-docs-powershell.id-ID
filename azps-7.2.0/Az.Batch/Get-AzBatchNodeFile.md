@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
-ms.openlocfilehash: a3499ea6bf95d627bd44026a04258b76b6ff2121
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cbe846d2b77a04a80947458c0961f81a5d89818f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138252908"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240965"
 ---
 # Get-AzBatchNodeFile
 
 ## SYNOPSIS
 Mendapatkan properti file node Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchnodefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ False       StdOut.txt    Microsoft.Azure.Commands.Batch.Models.PSFile... https:
 ```
 
 Perintah ini mendapatkan properti file node StdOut.txt terkait dengan tugas yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan properti file node yang terkait dengan tugas menggunakan filter
 ```
@@ -107,7 +110,7 @@ False       wd\newFile.txt   Microsoft.Azure.Commands.Batch.Models.PSFile... htt
 
 Perintah ini mendapatkan properti semua file yang terkait dengan tugas yang memiliki ID Task31 dalam pekerjaan Pekerjaan-00003.
 Perintah ini menentukan parameter *Rekursif* .
-Oleh karena itu, cmdlet akan melakukan pencarian file berulang, dan mengembalikan file wd\newFile.txt node tersebut.
+Oleh karena itu, cmdlet akan melakukan pencarian file berulang, dan mengembalikan file wd\newFile.txt node.
 
 ### Contoh 4: Dapatkan satu file dari simpul perhitungan
 ```
@@ -117,7 +120,7 @@ IsDirectory Name                    Properties                                  
 False       startup\stdout.txt      Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan file yang dinamai Startup\StdOut.txt dari node hitung yang memiliki ID ComputeNode01 dalam pool yang memiliki ID Pool22.
+Perintah ini mendapatkan file yang dinamai Startup\StdOut.txt dari node perhitungan yang memiliki ID ComputeNode01 dalam pool yang memiliki ID Pool22.
 
 ### Contoh 5: Mendapatkan semua file dalam folder dari node perhitungan
 ```

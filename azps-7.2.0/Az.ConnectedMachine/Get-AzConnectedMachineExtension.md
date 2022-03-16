@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachineExtension.md
-ms.openlocfilehash: 4cd26874f1231a1115188b0c81861484ec4e815f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0aa8e41c483ae960b483b4a5d95c3d2903b64b6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300492"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272487"
 ---
 # Get-AzConnectedMachineExtension
 
 ## SYNOPSIS
 Operasi untuk mendapatkan ekstensi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedmachine/get-azconnectedmachineextension) untuk informasi terkini.
 
 ## SYNTAX
 

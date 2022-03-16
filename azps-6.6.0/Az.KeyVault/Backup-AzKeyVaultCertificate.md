@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultCertificate.md
-ms.openlocfilehash: 89b79221eaa36f486e75a375083f01a27072ad2d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3ebd51a90e40b4dbe2850cd50324b48970c4fae2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354674"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140285071"
 ---
 # Backup-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Mencadangkan sertifikat di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ C:\Backup.blob
 
 Perintah ini mengambil sertifikat yang bernama MyCert dari penyimpanan kunci bernama MyKeyVault dan menyimpan cadangan sertifikat itu ke file bernama Backup.blob.
 
-### Contoh 3: Mencadangkan sertifikat yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
+### Contoh 3:  Mencadangkan sertifikat yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
 ```powershell
 PS C:\> $cert = Get-AzKeyVaultCertificate -VaultName 'MyKeyVault' -Name 'MyCert'
 PS C:\> Backup-AzKeyVaultCertificate -Certificate $cert -OutputFile 'C:\Backup.blob' -Force
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

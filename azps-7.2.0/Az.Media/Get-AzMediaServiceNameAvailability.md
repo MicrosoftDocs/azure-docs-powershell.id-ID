@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.media/get-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Get-AzMediaServiceNameAvailability.md
-ms.openlocfilehash: 36de4f5c3f7ae5cad67e2e9728c5add153b44d7f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ddb871c77f55ea901394f5884102c8fc91b24f0b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311340"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296663"
 ---
 # Get-AzMediaServiceNameAvailability
 
 ## SYNOPSIS
 Memeriksa apakah nama layanan media tersedia.
 Nama layanan media ber unik secara global.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/get-azmediaservicenameavailability) untuk informasi terkini.
 
 ## SYNTAX
 

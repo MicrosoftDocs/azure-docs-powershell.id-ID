@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultAccessPolicy.md
-ms.openlocfilehash: f20cfa503b8965be50b260f1c004e07b0be04413
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5ebc55efd668f6ef27dba031ebc4c600c0e00cc5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376121"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140284945"
 ---
 # Remove-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
 Menghapus semua izin untuk pengguna atau aplikasi dari kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -178,7 +181,7 @@ PS C:\> Remove-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ServicePrinci
 ```
 
 Perintah ini akan menghapus semua izin yang ada pada kunci vault bernama Contoso03Vault.
-Contoh ini mengidentifikasi aplikasi dengan menggunakan nama prinsipal layanan yang terdaftar dalam Azure Active Directory, `http://payroll.contoso.com` .
+Contoh ini mengidentifikasi aplikasi dengan menggunakan nama prinsipal layanan yang terdaftar dalam Azure Active Directory, `http://payroll.contoso.com`.
 
 ### Contoh 3: Hapus izin untuk aplikasi menggunakan ID objeknya
 ```powershell
@@ -460,7 +463,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

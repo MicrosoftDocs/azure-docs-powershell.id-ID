@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFirewallRule.md
-ms.openlocfilehash: 91dd0298cd19c42a4f44aacd504f6f60837c1cc2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a4efe599181fdb2243577faae1d1a17f76e823e2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140296339"
 ---
 # Get-AzMySqlFirewallRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/get-azmysqlfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssSecret.md
-ms.openlocfilehash: 2cc2fcd5c836af99f8df90424eda208eb39ac0f8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a1a868a33b954f58a86190d51b7aa058d8628a79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140273261"
 ---
 # Add-AzVmssSecret
 
 ## SYNOPSIS
 Menambahkan rahasia pada VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmsssecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,8 +70,8 @@ PS C:\> Add-AzVmssSecret -VirtualMachineScaleSet $VMSS -SourceVaultId $Vault.Res
 ```
 
 Contoh ini menambahkan rahasia VMSS.
-Perintah pertama menggunakan cmdlet Get-AzKeyVault untuk rahasia penyimpanan dari vault bernama ContosoVault dan menyimpan hasilnya dalam variabel bernama $Vault.
-Perintah kedua menggunakan cmdlet **New-AzVmssVaultCertificateConfig** untuk membuat konfigurasi sertifikat Key Vault menggunakan URL sertifikat yang ditentukan dari penyimpanan sertifikat yang bernama Sertifikat dan menyimpan hasilnya dalam variabel yang bernama $CertConfig.
+Perintah pertama menggunakan cmdlet Get-AzKeyVault untuk rahasia penyimpanan dari vault bernama ContosoVault dan menyimpan hasilnya dalam variabel yang bernama $Vault.
+Perintah kedua menggunakan cmdlet **New-AzVmssVaultCertificateConfig** untuk membuat konfigurasi sertifikat Key Vault menggunakan URL sertifikat yang ditentukan dari penyimpanan sertifikat bernama Sertifikat dan menyimpan hasilnya dalam variabel yang bernama $CertConfig.
 Perintah ketiga menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel yang bernama $VMSS.
 Perintah keempat menambahkan rahasia VMSS menggunakan rahasia vault menggunakan ID sumber daya kunci dan sertifikat vault yang disimpan di variabel $Vault $CertConfig besar.
 

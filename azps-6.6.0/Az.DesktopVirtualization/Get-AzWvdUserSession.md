@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdUserSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdUserSession.md
-ms.openlocfilehash: 0cc036677cbdf46fbfde731a87a89358f4b169d2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4ac3a6591b7ed56c4c9f6c368af59423236ebb20
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367861"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140255743"
 ---
 # Get-AzWvdUserSession
 
 ## SYNOPSIS
 Dapatkan userSession.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdusersession) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ HostPoolName/SessionHostName/2 Microsoft.DesktopVirtualization/hostpools/session
 HostPoolName/SessionHostName/3 Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions
 ```
 
-Perintah ini mencantumkan Windows UserSessions Desktop Virtual dalam Session Host dalam host pool.
+Perintah ini mencantumkan Windows UserSessions Desktop Virtual dalam Session Host dalam pool tuan rumah.
 
 ## PARAMETERS
 
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -227,7 +230,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDesktopVirtualizationIdentity> : Parameter Identitas
+INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi di dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan

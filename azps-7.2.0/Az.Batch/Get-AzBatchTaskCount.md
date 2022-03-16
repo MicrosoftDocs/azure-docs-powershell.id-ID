@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTaskCount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTaskCount.md
-ms.openlocfilehash: 94f52954b64937f1fea6732e997a1ce56b14d1c3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cd1722a205e7f0e17b1e73ade266b4af86d2a1fd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140240803"
 ---
 # Get-AzBatchTaskCount
 
 ## SYNOPSIS
 Mendapatkan hitungan tugas untuk pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchtaskcount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ ValidationStatus    : Validated
 ```
 
 Perintah ini menghitung jumlah tugas untuk pekerjaan Job01.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ## PARAMETERS
 

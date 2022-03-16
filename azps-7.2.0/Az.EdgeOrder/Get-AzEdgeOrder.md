@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrder.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrder.md
-ms.openlocfilehash: ac507b555cdaa5b74a91151927d66c6e6f00659a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 396f8d8065655c3b8bcaf7c7f700e60b29234dc8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314891"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237473"
 ---
 # Get-AzEdgeOrder
 
 ## SYNOPSIS
 Mendapatkan pesanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.edgeorder/get-azedgeorder) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: b3c081b112eae30cdd1c187c15a2ffa5ba938a0d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c1725c7cdc516bd263597f9748669f5352751da9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140295961"
 ---
 # Add-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Menambahkan pendengar HTTP ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewayhttplistener) untuk informasi terkini.
 
 ## SYNTAX
 

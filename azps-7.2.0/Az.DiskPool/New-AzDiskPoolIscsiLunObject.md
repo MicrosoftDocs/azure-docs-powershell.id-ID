@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DiskPool/new-AzD
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolIscsiLunObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/New-AzDiskPoolIscsiLunObject.md
-ms.openlocfilehash: 08798f89e2b06dde79cbd49cf1d5bccdca853f16
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 440b011480fb1db58efc1f9afdd5c7dfef4569ab
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261372"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140237545"
 ---
 # New-AzDiskPoolIscsiLunObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk IscsiLun
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.diskpool/new-azdiskpooliscsilunobject) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultKey.md
-ms.openlocfilehash: 00df906b2e15f0e6da9c0c9fe03744f7aef50c8d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5e4687a8be061336d8cc9b9f6ccb192f309b78ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341114"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140284873"
 ---
 # Remove-AzKeyVaultKey
 
 ## SYNOPSIS
 Menghapus kunci di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [-Force] [-PassT
 ## DESCRIPTION
 Cmdlet Remove-AzKeyVaultKey menghapus kunci di kunci vault.
 Jika kunci tidak sengaja terhapus, kunci dapat dipulihkan menggunakan Undo-AzKeyVaultKeyRemoval oleh pengguna dengan izin 'pulihkan' khusus.
-Cmdlet ini memiliki nilai yang tinggi untuk **properti ConfirmImpact.**
+Cmdlet ini memiliki nilai yang tinggi untuk **properti ConfirmImpact** .
 
 ## EXAMPLES
 
@@ -71,7 +74,7 @@ PS C:\> Remove-AzKeyVaultKey -VaultName 'Contoso' -Name 'ITSoftware' -Force
 ```
 
 Perintah ini akan menghapus kunci yang bernama ITSoftware dari kunci vault bernama Contoso.
-Perintah menentukan parameter *Paksa,* dan oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
+Perintah menentukan parameter *Paksa* , dan oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
 
 ### Contoh 3: Membersihkan kunci yang dihapus dari key vault secara permanen
 ```powershell
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan objek **Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKey.**
+Menunjukkan bahwa cmdlet ini mengembalikan objek **Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKey** .
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

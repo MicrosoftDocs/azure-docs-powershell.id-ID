@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
-ms.openlocfilehash: d8a8c5ce7642a53d4299a1a092092679c0eb8180
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 755b554c1af26020afb8ea743c6d8b2076d28782
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357026"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140284621"
 ---
 # Update-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Mengubah atribut sertifikat yang dapat diedit.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Updated     : 8/1/2016 5:37:48 PM
 ```
 
 Perintah pertama menetapkan pasangan kunci/nilai array ke $Tags nilai.
-Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang akan $Tags.
+Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang $Tags.
 
 ### Contoh 2
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

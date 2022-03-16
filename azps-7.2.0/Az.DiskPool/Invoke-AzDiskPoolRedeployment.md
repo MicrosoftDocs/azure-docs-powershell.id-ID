@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.diskpool/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Invoke-AzDiskPoolRedeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DiskPool/help/Invoke-AzDiskPoolRedeployment.md
-ms.openlocfilehash: 86a067baf09e80f80f706f21307926bf49041008
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7517ffa2736ec046c1434c6e4a22179c7b938228
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279787"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140089577"
 ---
 # Invoke-AzDiskPoolRedeployment
 
@@ -18,6 +18,9 @@ ms.locfileid: "138279787"
 Pemutakhiran menggantikan host mesin virtual yang mendasarinya satu per satu.
 Operasi ini dapat memakan waktu 10-15 menit untuk selesai.
 Perilaku ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.diskpool/invoke-azdiskpoolredeployment) untuk informasi terkini.
 
 ## SYNTAX
 

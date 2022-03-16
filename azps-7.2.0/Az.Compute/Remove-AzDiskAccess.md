@@ -4,17 +4,20 @@ Module Name: Az.Compute
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzDiskAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzDiskAccess.md
-ms.openlocfilehash: 6480d0c3758985c6b4bd13e021efe9ad64a8f037
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d4884c95966e6f3fddbfac11ca536de0f4611760
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261707"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140272937"
 ---
 # Remove-AzDiskAccess
 
 ## SYNOPSIS
 Menghapus sumber daya akses disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azdiskaccess) untuk informasi terkini.
 
 ## SYNTAX
 
