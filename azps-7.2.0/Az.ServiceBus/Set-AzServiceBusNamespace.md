@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusNamespace.md
-ms.openlocfilehash: 92951c61f7f0c83b4421bfca51d24636de844868
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e5e99a33dd6347fe416de6bb2f548d66b04bd3f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272140"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048908"
 ---
 # Set-AzServiceBusNamespace
 
 ## SYNOPSIS
-Memperbarui deskripsi ruang nama yang sudah Bus Layanan nama.
+Memperbarui deskripsi ruang nama yang sudah Bus Layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/set-azservicebusnamespace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Bus Layanan nama ruang nama.
+Lokasi Bus Layanan nama.
 
 ```yaml
 Type: System.String

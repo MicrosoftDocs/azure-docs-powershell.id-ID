@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
-ms.openlocfilehash: dd2c3b762f3244e963371de5417f55b4b3b46a97
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4b34003c537952175c07556e5f3e7fe4a409db4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299755"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049053"
 ---
 # Update-AzSentinelIncident
 
 ## SYNOPSIS
 Memperbarui Insiden
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentinelincident) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Update-AzSentinelIncident -ResourceId <String> [-Classification <String>] [-Clas
 ## DESCRIPTION
 Cmdlet **Update-AzSentinelIncident** memperbarui Insiden di ruang kerja yang ditentukan.
 Anda bisa melewati **objek Insiden** sebagai parameter atau dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan *parameter Konfirmasi* dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "m
 
 Contoh ini membuat "objek *pemilik*" terlebih dahulu yang berisi informasi pemilik, lalu cmdlet **Update-AzSentinelIncident** digunakan untuk melewati ownerObject untuk memperbarui insiden. <br/><br/>
 
-*Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika Anda ingin mengotomatisasi pengambilan ObjectId melalui scripting, Anda bisa memanfaatkan modul PowerShell Azure Active Directory, seperti ini: Get-AzureADUser -ObjectId "johndoe@contoso.com".*
+*Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika Anda ingin mengotomatisasi pengambilan ObjectId melalui scripting, Anda bisa memanfaatkan modul Azure Active Directory PowerShell, seperti ini: Get-AzureADUser -ObjectId "johndoe@contoso.com".*
 
 ### Contoh 3
 ```powershell

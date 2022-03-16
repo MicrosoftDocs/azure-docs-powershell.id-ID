@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplication.md
-ms.openlocfilehash: d0b943e3b04458a548f5c7078211ca9f73992fd6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ec492ace233d0a15452a032ed5bb19958f6f168a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168413"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049413"
 ---
 # Set-AzManagedApplication
 
 ## SYNOPSIS
 Memperbarui aplikasi yang dikelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azmanagedapplication) untuk informasi terkini.
 
 ## SYNTAX
 

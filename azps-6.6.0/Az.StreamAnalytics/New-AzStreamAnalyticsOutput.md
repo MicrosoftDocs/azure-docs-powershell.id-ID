@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsOutput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsOutput.md
-ms.openlocfilehash: 5c1532032bd825bfc957c48ea03e5d320e040390
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 40adf62edfe8f268280b895324b76d5c6de71356
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357677"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139965777"
 ---
 # New-AzStreamAnalyticsOutput
 
 ## SYNOPSIS
 Membuat output atau mengganti output yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsoutput) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ output-01 Microsoft.StreamAnalytics/streamingjobs/outputs 3819fb65-07f5-4dc3-83e
 
 Perintah ini akan membuat output baru dalam pekerjaan analitik streaming.
 
-(di bawah ini adalah contoh untuk "Account.json") { "properti": { "serialisasi": { "type": "Json", "properties": { "encoding": "UTF8", "format": "LineSeparated" } }, "datasource": { "type": "Microsoft.Storage /Blob", "properti": { "storageAccounts": [ { "accountName": "xxxxxxxxxxxxxxx", "accountKey": "xxxxxxxxxxxxxxxx" } ], "container": "xxxxxxxxxxxxxxxxx", "pathPattern": "cluster1/{client_id}", "dateFormat": "yyyy/MM/dd", "timeFormat": "HH", "authenticationMode": "ConnectionString" } } }
+(di bawah ini adalah contoh untuk "Account.json") { "properti": { "serialisasi": { "type": "Json", "properti": { "encoding": "UTF8", "format": "LineSeparated" } }, "datasource": { "type": "Microsoft.Storage /Blob", "properti": { "storageAccounts": [ { "accountName": "xxxxxxxxxxxxxxx", "accountKey": "xxxxxxxxxxxxxxxx" } ], "container": "xxxxxxxxxxxxxxxxx", "pathPattern": "cluster1/{client_id}", "dateFormat": "yyyy/MM/dd", "timeFormat": "HH", "authenticationMode": "ConnectionString" } } }
 
 ## PARAMETERS
 
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

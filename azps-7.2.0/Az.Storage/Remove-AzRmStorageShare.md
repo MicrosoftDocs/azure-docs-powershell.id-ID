@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageShare.md
-ms.openlocfilehash: 602ed6ce4092ed0c9c7e94ebc04ed683775b95b6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5948aa59c4c2135b12869c27dee875df1a3ceb7c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948265"
 ---
 # Remove-AzRmStorageShare
 
 ## SYNOPSIS
 Menghapus file Storage bersama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azrmstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,22 +65,22 @@ Cmdlet **New-AzRmStorageShare** menghapus Storage file baru.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Storage berbagi file dengan Storage akun dan nama berbagi
+### Contoh 1: Hapus Storage berbagi file dengan Storage nama akun dan nama berbagi Anda
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare"
 ```
 
-Perintah ini akan menghapus Storage file baru dengan Storage akun dan nama berbagi.
+Perintah ini akan menghapus Storage file gratis dengan Storage akun dan nama berbagi.
 
-### Contoh 2: Hapus Storage file bersama dengan Storage objek akun dan bagikan namanya
+### Contoh 2: Hapus Storage file bersama dengan Storage objek akun dan nama berbagi
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageShare -StorageAccount $accountObject -Name "myshare"
 ```
 
-Perintah ini menghapus file Storage file dengan Storage objek akun dan nama berbagi Anda.
+Perintah ini menghapus file Storage file yang dibagikan dengan Storage objek akun dan nama berbagi Anda.
 
-### Contoh 3: Hapus Storage file dalam akun Storage dengan pipeline
+### Contoh 3: Hapus semua Storage file yang ada dalam Storage dengan pipeline
 ```
 PS C:\>Get-AzStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" | Remove-AzRmStorageShare -Force
 ```
@@ -89,7 +92,7 @@ Perintah ini menghapus semua Storage file yang ada dalam Storage dengan saluran.
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -SnapshotTime "2021-05-10T08:04:08Z"
 ```
 
-Perintah ini menghapus satu Storage berbagi file dengan nama dan waktu jepretan layar tertentu
+Perintah ini menghapus satu Storage file berbagi jepretan layar dengan nama dan waktu jepretan layar tertentu
 
 ### Contoh 5: Hapus Storage berbagi file dan snapshotnya
 ```
@@ -98,12 +101,12 @@ PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAcco
 
 Perintah ini menghapus file Storage berbagi file dan snapshotnya secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-sertakan".
 
-### Contoh 6: Hapus Storage berbagi file dan semua snapshotnya (termasuk snapshot yang disewa)
+### Contoh 6: Hapus Storage berbagi file dan semua snapshotnya (termasuk snapshot yang disewakan)
 ```
 PS C:\>Remove-AzRmStorageShare -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount" -Name "myshare" -Include Leased-Snapshots
 ```
 
-Perintah ini menghapus Storage berbagi file dan semua snapshotnya, termasuk snapshot yang disewakan dan bukan disewakan.
+Perintah ini menghapus Storage file yang dibagikan dan semua snapshotnya, termasuk snapshot yang disewakan dan bukan sewa.
 Secara default, cmdlet akan gagal jika berbagi file memiliki snapshot tanpa parameter "-sertakan".
 
 ## PARAMETERS
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

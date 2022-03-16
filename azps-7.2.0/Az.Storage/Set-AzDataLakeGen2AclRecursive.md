@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzDataLakeGen2AclRecursive.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzDataLakeGen2AclRecursive.md
-ms.openlocfilehash: f557e0607c98353be3cec519251aff5772e80de8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 52ce3f3d406e2a4b60e0396ead27795a4f6dac4b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138267452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948175"
 ---
 # Set-AzDataLakeGen2AclRecursive
 
 ## SYNOPSIS
 Atur ACL secara rekursif pada jalur yang ditentukan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azdatalakegen2aclrecursive) untuk informasi terkini.
 
 ## SYNTAX
 

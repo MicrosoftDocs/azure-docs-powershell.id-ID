@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/start-azsqld
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlDatabaseExecuteIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlDatabaseExecuteIndexRecommendation.md
-ms.openlocfilehash: ff566cb8fff5d33aed0e145254d958c30d590bb0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3649ee17ab79c586a529edd21564a4813ebdfd02
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255148"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916071"
 ---
 # Start-AzSqlDatabaseExecuteIndexRecommendation
 
 ## SYNOPSIS
 Memulai alur kerja yang menjalankan operasi indeks yang direkomendasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/start-azsqldatabaseexecuteindexrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 

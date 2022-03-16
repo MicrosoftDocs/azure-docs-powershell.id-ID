@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/suspend-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Suspend-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Suspend-AzSqlDatabase.md
-ms.openlocfilehash: f7dd43e028191c2a288422d6ff32ac47bac5347a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 143516e6f4667bc52c912d229a6edbd43ba6c6c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362174"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139967235"
 ---
 # Suspend-AzSqlDatabase
 
 ## SYNOPSIS
-Menangguhkan sebuah SQL database Gudang Data.
+Menangguhkan sebuah SQL Database Gudang Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/suspend-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Suspend-AzSqlDatabase** menangguhkan database Azure SQL Gudang Data.
 
 ## EXAMPLES
 
-### Contoh 1: Menangguhkan database Gudang Data SQL Azure
+### Contoh 1: Menangguhkan database Gudang SQL Azure
 ```
 PS C:\>Suspend-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
 ## CATATAN
-* Cmdlet **Suspend-AzSqlDatabase** hanya berfungsi di Azure SQL database Gudang Data. Operasi ini tidak didukung di Azure SQL Database edisi Azure SQL Database Basic, Standard Premium 2013.
+* Cmdlet **Suspend-AzSqlDatabase** hanya berfungsi di Azure SQL database Gudang Data. Operasi ini tidak didukung di Azure SQL Database Basic, Standard dan Premium edition.
 
 ## RELATED LINKS
 

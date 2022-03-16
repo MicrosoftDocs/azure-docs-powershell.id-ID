@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModuleTwin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubModuleTwin.md
-ms.openlocfilehash: 765f23ea75382cdbb9e372031018811d17b3a048
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4f98743392865ac36debf0cfe7064fa4cc793883
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306891"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055637"
 ---
 # Get-AzIotHubModuleTwin
 
 ## SYNOPSIS
 Mendapatkan modul perangkat IoT yang dapat digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubmoduletwin) untuk informasi terkini.
 
 ## SYNTAX
 

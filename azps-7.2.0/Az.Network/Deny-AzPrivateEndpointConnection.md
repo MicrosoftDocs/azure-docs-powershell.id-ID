@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/deny-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Deny-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Deny-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 7ff41efc7d2c5a9e0df60369d4ebc0241fb1b058
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 09cbcaf14c79b42751f7bea429622ddca651d93f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279516"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921291"
 ---
 # Deny-AzPrivateEndpointConnection
 
 ## SYNOPSIS
 menyangkal koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/deny-azprivateendpointconnection) untuk informasi terkini.
 
 ## SYNTAX
 

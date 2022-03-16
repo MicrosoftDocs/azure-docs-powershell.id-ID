@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionContainerMapping.md
-ms.openlocfilehash: 9ab7396a0cccfdc0b532facfa5f2cd997ab42fad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a771687b90f733d31df360f9425e7a7c075897f4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284043"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918033"
 ---
 # Update-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
 Perbarui pemetaan wadah proteksi pemulihan situs Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terkini.
 
 ## SYNTAX
 

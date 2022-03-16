@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: b1078bd7b554e1ae4ce05561cbf71c01453622c3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: da5980711f6264574a7428aa638f3abe2ed11409
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266460"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915118"
 ---
 # New-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
 Membuat fungsi atau mengganti fungsi yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsfunction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions 7bbd6ccd-c7a4-4910
 
 Perintah ini akan membuat fungsi dari file Function_JavascriptUdf.json.
 
-(di bawah ini adalah contoh untuk "Function_JavascriptUdf.json") { "properti": { "type": "Skalar", "properti": { "inputs": [ { "dataType": "any" }, { "dataType": "any" } ], "output": { "dataType": "any" }, "binding": { "type": "Microsoft.StreamAnalytics/JavascriptUdf", "properties": { "script": "// Sample UDF yang mengembalikan jumlah dua nilai.\nfunction main(null3,jumlah4) {\n returnmicrosoft1 +amp2;\n}" } } } }
+(di bawah ini adalah contoh untuk "Function_JavascriptUdf.json") { "properti": { "type": "Skalar", "properti": { "inputs": [ { "dataType": "any" }, { "tipedata": "any" } ], "output": { "dataType": "any" }, "binding": { "type": "Microsoft.StreamAnalytics/JavascriptUdf", "properties": { "script": "// Sample UDF yang mengembalikan jumlah dari dua nilai.\nfunction main(teri3,harga4) {\n return null1 + script2;\n}" } } } }
 
 ### Contoh 2: Membuat fungsi Analitik Streaming
 ```powershell

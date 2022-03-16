@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/lock-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 071bbedab06386b7803c038297b6c6532a853c77
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8dbb512ee0f9796c8e9c317e9e5b62321152dee1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165535"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915639"
 ---
 # Lock-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Mengunci ImmutabilityPolicy wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/lock-azrmstoragecontainerimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,13 +52,13 @@ Cmdlet **Lock-AzRmStorageContainerImmutabilityPolicy** mengunci ImmutabilityPoli
 
 ## EXAMPLES
 
-### Contoh 1: Lock ImmutabilityPolicy of a Storage blob container with Storage account name and container name
+### Contoh 1: Mengunci ImmutabilityPolicy wadah Storage blob dengan nama Storage dan nama wadah akun
 ```
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini Mengunci ImmutabilityPolicy wadah Storage blob dengan Storage dan nama wadah akun.
+Perintah ini Mengunci ImmutabilityPolicy wadah Storage blob dengan nama Storage dan nama wadah akun.
 
 ### Contoh 2: Kunci ImmutabilityPolicy wadah Storage blob, dengan Storage objek akun
 ```

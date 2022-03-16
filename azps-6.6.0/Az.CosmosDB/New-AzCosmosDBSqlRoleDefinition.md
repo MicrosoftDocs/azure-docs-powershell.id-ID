@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: f27e3c47df99280994eb101cd827cdbbd4614948
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dabbf1f2b4a6469f60c44ff7391de5b5604613b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353453"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078219"
 ---
 # New-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
 Membuat Definisi Peran CosmosDB Sql baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlroledefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ New-AzCosmosDBSqlRoleDefinition [-Id <String>] -RoleName <String> [-Type <String
 ## DESCRIPTION
 Membuat Definisi Peran CosmosDB Sql baru.
 Lingkup yang Dapat Ditetapkan bisa sepenuhnya memenuhi syarat (yaitu /subscriptions/subId/resourceGroups/resourceGroupName/providers/Microsoft.DocumentDB/databaseAccounts/accountName/dbs/dbName) atau mulai dengan nama database (yaitu. /dbs/dbName).
-Untuk menentukan Izin Definisi Peran, gunakan parameter DataAction dan pass dalam daftar string yang akan diubah menjadi objek Izin tunggal, atau gunakan cmdlet New-AzCosmosDBPermission untuk membuat objek PSPermission yang melewati parameter Izin.
+Untuk menentukan Izin Definisi Peran, gunakan parameter DataAction dan berikan daftar string yang akan diubah menjadi satu objek Izin, atau gunakan cmdlet New-AzCosmosDBPermission untuk membuat objek PSPermission yang akan melewati parameter Izin.
 
 ## EXAMPLES
 
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

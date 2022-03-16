@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConfiguration.md
-ms.openlocfilehash: 23aa73c9259d37ce9c2015f390e5a610d07270d1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e828b0b78c83b4e3ad13e71296f06ad070833029
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256619"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055731"
 ---
 # Get-AzIotHubConfiguration
 
 ## SYNOPSIS
 Mencantumkan semua atau konfigurasi manajemen perangkat otomatis IoT tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

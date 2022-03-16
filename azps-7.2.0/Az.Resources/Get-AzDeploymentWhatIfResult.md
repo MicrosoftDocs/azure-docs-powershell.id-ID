@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentWhatIfResult.md
-ms.openlocfilehash: 957f2cd98a56a87ac169fc6ad862041f8bba82ce
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: feb20b92c1dda96a82e7b4917e5eb6bbea27ae4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298491"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917061"
 ---
 # Get-AzDeploymentWhatIfResult
 
 ## SYNOPSIS
-Mendapatkan templat What-If hasil untuk penggunaan di lingkup langganan. 
+Mendapatkan templat What-If hasil untuk penyebaran di lingkup langganan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdeploymentwhatifresult) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Get-AzDeploymentWhatIfResult [-Name <String>] -Location <String> [-ResultFormat 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentWhatIfResult** mendapatkan hasil What-If ARM untuk penyebaran templat di lingkup langganan saat ini. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
+Cmdlet **Get-AzDeploymentWhatIfResult** mendapatkan hasil What-If arm untuk penggunaan templat di lingkup langganan saat ini. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 

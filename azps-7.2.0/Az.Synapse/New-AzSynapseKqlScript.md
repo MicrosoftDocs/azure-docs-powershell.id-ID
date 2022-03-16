@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseKqlScript.md
-ms.openlocfilehash: 388e2bdbe2a57f09ae8316c020ad9ff273846c83
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 87bf41221d7d8924ae2bcc5cd186d51dce9fe8b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256139"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947581"
 ---
 # New-AzSynapseKqlScript
 
 ## SYNOPSIS
 Membuat atau memperbarui skrip KQL di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/new-azsynapsekqlscript) untuk informasi terkini.
 
 ## SYNTAX
 

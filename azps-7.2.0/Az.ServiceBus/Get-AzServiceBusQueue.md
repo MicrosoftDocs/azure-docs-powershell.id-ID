@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusQueue.md
-ms.openlocfilehash: 6240c31f8cf54c796b907039b977d70c30e011c0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a426ce93bd61f9b0566369d5dedfe2f2d2502c58
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311996"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049034"
 ---
 # Get-AzServiceBusQueue
 
 ## SYNOPSIS
-Mengembalikan deskripsi untuk kolom yang Bus Layanan antrean.
+Mengembalikan deskripsi untuk rentang yang Bus Layanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusqueue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzServiceBusQueue [-ResourceGroupName] <String> [-Namespace] <String> [[-Nam
 ```
 
 ## DESCRIPTION
-Mengembalikan deskripsi untuk kolom yang Bus Layanan antrean.
+Mengembalikan deskripsi untuk rentang yang Bus Layanan tertentu.
 
 ## EXAMPLES
 

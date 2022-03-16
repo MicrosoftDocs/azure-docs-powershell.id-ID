@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: a4109e8d6050925e5750f0fae25f775330a9aa4c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 10d67628f23f3b692bf3120682b82db0f47038e6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921237"
 ---
 # Get-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
 Dapatkan koneksi dengan menghabiskan konfigurasi objek pengaturan HTTP ujung belakang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayconnectiondraining) untuk informasi terkini.
 
 ## SYNTAX
 

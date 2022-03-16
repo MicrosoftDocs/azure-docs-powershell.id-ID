@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppPermission.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppPermission.md
-ms.openlocfilehash: a81e61a6061f8ae44c0b658825615c0a8feee6ea
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8c41befbeebaaf50346e718d3df9428e511170e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277804"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049728"
 ---
 # Remove-AzADAppPermission
 
 ## SYNOPSIS
 Menghapus izin API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azadapppermission) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Menghapus izin API.
 PS C:\> Remove-AzADAppPermission -ObjectId 9cc74d5e-1162-4b90-8696-65f3d6a3f7d0 -PermissionId 5f8c59db-677d-491f-a6b8-5f174b11ec1d
 ```
 
-Menghapus izin yang didelegasikan "Group.Read.All" dari API Microsoft Graph dari Aplikasi AD (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
+Menghapus izin yang didelegasikan "Group.Read.All" dari Microsoft Graph API dari Aplikasi AD (9cc74d5e-1162-4b90-8696-65f3d6a3f7d0)
 
 ## PARAMETERS
 

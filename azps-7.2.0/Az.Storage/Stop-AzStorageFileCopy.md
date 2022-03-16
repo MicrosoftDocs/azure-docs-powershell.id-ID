@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageFileCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Stop-AzStorageFileCopy.md
-ms.openlocfilehash: cb48c5c096405f1ecc2b28cd529e220082b56bdc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3cfc50294b7901932edbc1255b77a4058436a65d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304220"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948081"
 ---
 # Stop-AzStorageFileCopy
 
 ## SYNOPSIS
 Menghentikan operasi penyalinan ke file tujuan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/stop-azstoragefilecopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan objek **CloudFile** .
-Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile.
+Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlDat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseAudit.md
-ms.openlocfilehash: 527639deae88b1d05890598e8b0d377d60e1ddaa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 12977f081634f9328d4591ed771f439c575acae3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309948"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048423"
 ---
 # Get-AzSqlDatabaseAudit
 
 ## SYNOPSIS
 Mendapatkan pengaturan audit database Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseaudit) untuk informasi terkini.
 
 ## SYNTAX
 

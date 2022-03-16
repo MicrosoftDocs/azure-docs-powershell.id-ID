@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/set-azscomputequota
 schema: 2.0.0
-ms.openlocfilehash: 358e869b0c78341bae538fce38b0b9890b81cdd834cd7d526d2733ea92eccdc5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3229a6383d7159b31bf542add7374326d0de4ac4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414367"
 ---
 # Set-AzsComputeQuota
@@ -165,7 +165,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-NEWQUOTA <IQuota> : 
+NEWQUOTA <IQuota>: 
   - `[Location <String>]`: Lokasi sumber daya.
   - `[AvailabilitySetCount <Int32?>]`: Jumlah maksimum kumpulan ketersediaan yang diperbolehkan.
   - `[CoresLimit <Int32?>]`: Jumlah maksimum inti yang diperbolehkan.

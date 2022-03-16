@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteTable.md
-ms.openlocfilehash: 3991181f4784a1e17644ef155a667566b50c025b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a5843523f0fff1dcd6779d356a8064d234f53cee
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287643"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918609"
 ---
 # Set-AzRouteTable
 
 ## SYNOPSIS
 Memperbarui tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azroutetable) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Perintah pertama mendapatkan tabel rute bernama rtName dan menyimpannya dalam $r
 Perintah kedua menampilkan nilai DisableBgpRoutePropagation.
 Perintah ketiga memperbarui nilai DisableBgpRoutePropagation.
 Perintah keempat memperbarui tabel rute di server.
-Perintah kelima mendapatkan pembaruan tabel rute dan menyimpannya dalam $rt baru.
+Perintah kelima mendapatkan tabel rute yang diperbarui dan menyimpannya dalam $rt baru.
 Perintah keenam menampilkan nilai DisableBgpRoutePropagation.
 
 ## PARAMETERS

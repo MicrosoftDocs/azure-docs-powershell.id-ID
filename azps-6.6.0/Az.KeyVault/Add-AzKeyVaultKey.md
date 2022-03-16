@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultKey.md
-ms.openlocfilehash: 4c9054282f073c18265f3f516d937db81af11199
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 97ca3b32c5a26b637d3853a999418b441f73efd9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352574"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077013"
 ---
 # Add-AzKeyVaultKey
 
 ## SYNOPSIS
 Membuat kunci di kunci vault atau mengimpor kunci ke kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -121,7 +124,7 @@ Gunakan cmdlet ini untuk menambahkan tombol menggunakan salah satu metode beriku
 Untuk setiap operasi ini, Anda dapat menyediakan atribut kunci atau menerima pengaturan default.
 Jika Anda membuat atau mengimpor kunci yang memiliki nama yang sama dengan kunci yang sudah ada di kunci vault, kunci asli diperbarui dengan nilai yang Anda tentukan untuk kunci baru. Anda bisa mengakses nilai sebelumnya dengan menggunakan URI khusus versi untuk versi kunci tersebut. Untuk mempelajari tentang versi kunci dan struktur URI, lihat [Tentang Kunci dan Rahasia](http://go.microsoft.com/fwlink/?linkid=518560) dalam dokumentasi API REST Vault Kunci.
 Catatan: Untuk mengimpor kunci dari modul keamanan perangkat keras milik sendiri, Anda harus membuat paket BYOK terlebih dahulu (file dengan ekstensi nama file .byok) menggunakan perangkat keras Azure Key Vault BYOK. Untuk informasi selengkapnya, [lihat Cara Membuat dan Mentransfer HSM-Protected Kunci untuk Azure Key Vault](http://go.microsoft.com/fwlink/?LinkId=522252).
-Sebagai praktik terbaik, cadangankan kunci Anda setelah dibuat atau diperbarui, dengan menggunakan cmdlet Backup-AzKeyVaultKey. Tidak ada fungsionalitas yang dibatalkan, jadi jika Anda secara tidak sengaja menghapus kunci atau menghapusnya lalu berubah pikiran, kunci tersebut tidak dapat dipulihkan kecuali Anda memiliki cadangannya yang bisa dipulihkan.
+Sebagai praktik terbaik,  cadangankan kunci Anda setelah dibuat atau diperbarui, dengan menggunakan cmdlet Backup-AzKeyVaultKey. Tidak ada fungsionalitas yang dibatalkan, jadi jika Anda secara tidak sengaja menghapus kunci atau menghapusnya lalu berubah pikiran, kunci tersebut tidak dapat dipulihkan kecuali Anda memiliki cadangannya yang bisa dipulihkan.
 
 ## EXAMPLES
 
@@ -214,10 +217,10 @@ Tags           : Name        Value
 ```
 
 Perintah pertama menyimpan nilai yang didekripsi dan diverifikasi dalam $KeyOperations nilai.
-Perintah kedua membuat objek **DateTime,** yang ditentukan dalam UTC, dengan menggunakan cmdlet **Get-Date.**
-Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam variabel $Expires baru. Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
-Perintah ketiga membuat objek **DateTime** menggunakan cmdlet **Get-Date.** Objek tersebut menentukan waktu UTC saat ini. Perintah menyimpan tanggal itu dalam $NotBefore variabel.
-Perintah terakhir membuat kunci bernama ITHsmNonDefault yang merupakan kunci yang dilindungi HSM. Perintah menentukan nilai untuk operasi tombol diperbolehkan yang disimpan $KeyOperations. Perintah menentukan waktu untuk  parameter Kedaluwarsa dan *NotBefore* yang dibuat di perintah sebelumnya, dan tag untuk tingkat keparahan tinggi dan IT. Kunci baru dinonaktifkan. Anda dapat mengaktifkannya menggunakan cmdlet **Set-AzKeyVaultKey.**
+Perintah kedua membuat objek **DateTime** , yang ditentukan dalam UTC, dengan menggunakan cmdlet **Get-Date** .
+Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam $Expires variabel. Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
+Perintah ketiga membuat objek **DateTime** menggunakan cmdlet **Get-Date** . Objek tersebut menentukan waktu UTC saat ini. Perintah menyimpan tanggal itu dalam variabel $NotBefore baru.
+Perintah terakhir membuat kunci bernama ITHsmNonDefault yang merupakan kunci yang dilindungi HSM. Perintah menentukan nilai untuk operasi tombol diperbolehkan yang disimpan $KeyOperations. Perintah menentukan waktu untuk parameter Kedaluwarsa dan  *NotBefore* yang dibuat di perintah sebelumnya, dan tag untuk tingkat keparahan tinggi dan IT. Kunci baru dinonaktifkan. Anda dapat mengaktifkannya menggunakan cmdlet **Set-AzKeyVaultKey** .
 
 ### Contoh 5: Mengimpor kunci yang diproteksi HSM
 ```powershell
@@ -236,7 +239,7 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini mengimpor kunci bernama ITByok dari lokasi yang ditentukan oleh parameter *KeyFilePath.* Kunci yang diimpor adalah kunci yang diproteksi HSM.
+Perintah ini mengimpor kunci bernama ITByok dari lokasi yang ditentukan oleh parameter *KeyFilePath* . Kunci yang diimpor adalah kunci yang diproteksi HSM.
 Untuk mengimpor kunci dari modul keamanan perangkat keras milik sendiri, Anda harus terlebih dahulu membuat paket BYOK (file dengan ekstensi nama file .byok) menggunakan peralatan BYOK Azure Key Vault.
 Untuk informasi selengkapnya, [lihat Cara Membuat dan Mentransfer HSM-Protected Kunci untuk Azure Key Vault](http://go.microsoft.com/fwlink/?LinkId=522252).
 
@@ -258,8 +261,8 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString,** lalu menyimpan string itu dalam $Password variabel. Untuk informasi selengkapnya, ketik `Get-Help
-ConvertTo-SecureString` .
+Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string itu di $Password variabel. Untuk informasi selengkapnya, ketik `Get-Help
+ConvertTo-SecureString`.
 Perintah kedua membuat kata sandi perangkat lunak dalam kunci vault Contoso. Perintah menentukan lokasi untuk kunci dan kata sandi yang disimpan di $Password.
 
 ### Contoh 7: Mengimpor kunci dan menetapkan atribut
@@ -284,10 +287,10 @@ Tags           : Name        Value
                  Accounting  true
 ```
 
-Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString,** lalu menyimpan string itu dalam $Password variabel.
-Perintah kedua membuat objek **DateTime** menggunakan cmdlet **Get-Date,** lalu menyimpan objek tersebut dalam $Expires variabel.
+Perintah pertama mengonversi string menjadi string yang aman dengan menggunakan cmdlet **ConvertTo-SecureString** , lalu menyimpan string itu di $Password variabel.
+Perintah kedua membuat objek **DateTime** menggunakan cmdlet **Get-Date** , lalu menyimpan objek tersebut dalam $Expires variabel.
 Perintah ketiga membuat $tags variabel untuk mengatur tag tingkat keparahan tinggi dan TI.
-Perintah terakhir mengimpor kunci sebagai tombol HSM dari lokasi tertentu. Perintah menentukan waktu kedaluwarsa yang disimpan di $Expires kata sandi yang disimpan di $Password, dan menerapkan tag yang disimpan di $tags.
+Perintah terakhir mengimpor kunci sebagai tombol HSM dari lokasi tertentu. Perintah menentukan waktu kedaluwarsa yang disimpan di $Expires dan kata sandi yang disimpan di $Password, dan menerapkan tag yang disimpan di $tags.
 
 ### Contoh 8: Menghasilkan Tombol Exchange (KEK) untuk fitur "bawa kunci Anda sendiri" (BYOK)
 
@@ -295,7 +298,7 @@ Perintah terakhir mengimpor kunci sebagai tombol HSM dari lokasi tertentu. Perin
 PS C:\> $key = Add-AzKeyVaultKey -VaultName $vaultName -Name $keyName -Destination HSM -Size 2048 -KeyOps "import"
 ```
 
-Menghasilkan kunci (disebut sebagai Tombol yang Exchange Utama (KEK)). KEK harus merupakan kunci RSA-HSM yang hanya memiliki operasi kunci impor. Hanya Kunci Vault Premium SKU yang mendukung tombol RSA-HSM.
+Menghasilkan kunci (disebut sebagai Tombol utama Exchange (KEK)). KEK harus merupakan kunci RSA-HSM yang hanya memiliki operasi kunci impor. Hanya Key Vault Premium SKU yang mendukung tombol RSA-HSM.
 Untuk detail selengkapnya, silakan lihat https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys
 
 ## PARAMETERS
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 Menentukan apakah akan menambahkan kunci sebagai kunci yang diproteksi perangkat lunak atau kunci yang diproteksi HSM di layanan Key Vault.
 Nilai valid adalah: HSM dan Perangkat Lunak.
 Catatan: Untuk menggunakan HSM sebagai tujuan, Anda harus memiliki kunci vault yang mendukung HSM. Untuk informasi selengkapnya tentang tingkat layanan dan kemampuan Key Vault Azure, lihat situs web [Harga Azure Key Vault](http://go.microsoft.com/fwlink/?linkid=512521).
-Parameter ini diperlukan ketika Anda membuat kunci baru. Jika Anda mengimpor kunci menggunakan parameter *KeyFilePath,* parameter ini bersifat opsional:
+Parameter ini diperlukan ketika Anda membuat kunci baru. Jika Anda mengimpor kunci menggunakan parameter *KeyFilePath* , parameter ini bersifat opsional:
 - Jika Anda tidak menentukan parameter ini, dan cmdlet ini mengimpor kunci yang memiliki ekstensi nama file .byok, cmdlet tersebut akan mengimpor kunci tersebut sebagai tombol yang diproteksi HSM. Cmdlet tidak dapat mengimpor kunci tersebut sebagai kunci yang dilindungi perangkat lunak.
 - Jika Anda tidak menentukan parameter ini, dan cmdlet ini mengimpor kunci yang memiliki ekstensi nama file .pfx, cmdlet akan mengimpor kunci tersebut sebagai kunci yang diproteksi perangkat lunak.
 
@@ -380,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Menentukan waktu kedaluwarsa, sebagai objek **DateTime,** untuk kunci yang tambahkan cmdlet ini. Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.** Untuk informasi selengkapnya, ketik `Get-Help Get-Date` . Jika Anda tidak menentukan parameter ini, kunci tidak kedaluwarsa.
+Menentukan waktu kedaluwarsa, sebagai objek **DateTime** , untuk kunci yang tambahkan cmdlet ini. Parameter ini menggunakan Waktu Universal Terkoordinasi (UTC). Untuk mendapatkan **objek DateTime** , gunakan cmdlet **Get-Date** . Untuk informasi selengkapnya, ketik `Get-Help Get-Date`. Jika Anda tidak menentukan parameter ini, kunci tidak kedaluwarsa.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyFilePassword
-Menentukan kata sandi untuk file yang diimpor sebagai objek **SecureString.** Untuk mendapatkan objek **SecureString,** gunakan cmdlet **ConvertTo-SecureString.** Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` . Anda harus menentukan kata sandi ini untuk mengimpor file dengan ekstensi nama file .pfx.
+Menentukan kata sandi untuk file yang diimpor sebagai objek **SecureString** . Untuk mendapatkan objek **SecureString** , gunakan cmdlet **ConvertTo-SecureString** . Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`. Anda harus menentukan kata sandi ini untuk mengimpor file dengan ekstensi nama file .pfx.
 
 ```yaml
 Type: System.Security.SecureString
@@ -555,7 +558,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotBefore
-Menentukan waktu, sebagai objek **DateTime,** sebelum tombol tidak dapat digunakan. Parameter ini menggunakan UTC. Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.** Jika Anda tidak menentukan parameter ini, kunci dapat langsung digunakan.
+Menentukan waktu, sebagai objek **DateTime** , sebelum tombol tidak dapat digunakan. Parameter ini menggunakan UTC. Untuk mendapatkan **objek DateTime** , gunakan cmdlet **Get-Date** . Jika Anda tidak menentukan parameter ini, kunci dapat langsung digunakan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -661,7 +664,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

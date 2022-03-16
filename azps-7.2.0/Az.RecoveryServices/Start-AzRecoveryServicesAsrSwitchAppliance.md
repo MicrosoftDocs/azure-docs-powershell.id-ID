@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrSwitchAppliance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrSwitchAppliance.md
-ms.openlocfilehash: c13381e8ab8258d0ac57070440642a936c6b8e83
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8e38542b61aed088aa969ac9b4b6753a451f8287
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280796"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918159"
 ---
 # Start-AzRecoveryServicesAsrSwitchAppliance
 
 ## SYNOPSIS
 Memulai tindakan beralih untuk objek Pemulihan Situs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrswitchappliance) untuk informasi terkini.
 
 ## SYNTAX
 

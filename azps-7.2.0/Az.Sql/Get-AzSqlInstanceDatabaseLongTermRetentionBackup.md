@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 72c58d8bac1af44e500d80dc6c72fa4fea9bb164
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4799dee1c8acc66b4a79801a6d4576a5b40766b2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165585"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048315"
 ---
 # Get-AzSqlInstanceDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
 Mendapatkan pencadangan penyimpanan jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabaselongtermretentionbackup) untuk informasi terkini.
 
 ## SYNTAX
 

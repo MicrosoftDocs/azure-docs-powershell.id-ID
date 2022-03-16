@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: a17d493a933de9b76705cdea871d4aab44ea9fcd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f0dc4d6875a707f725d8ca79a2867ff99b454194
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280379"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915873"
 ---
 # Get-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Mendapatkan ImmutabilityPolicy wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainerimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet **Get-AzRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPo
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy suatu Storage blob dengan Storage dan nama wadah akun.
+Perintah ini mendapatkan ImmutabilityPolicy dari wadah Storage blob dengan Storage dan nama wadah akun.
 
 ### Contoh 2: Get ImmutabilityPolicy of a Storage blob container with Storage account object and container name
 ```
@@ -55,7 +58,7 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage objek akun dan wadah penampung.
+Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage objek akun dan nama wadah.
 
 ### Contoh 3: Get ImmutabilityPolicy of a Storage blob container with Storage container object
 ```
@@ -68,7 +71,7 @@ Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Stora
 ## PARAMETERS
 
 ### -Container
-Storage objek wadah
+Storage wadah objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer

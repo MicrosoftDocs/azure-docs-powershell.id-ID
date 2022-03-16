@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagementGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagementGroupDeployment.md
-ms.openlocfilehash: 7ed2ef6db841665c5d91bfd1cbebbe75b118108a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2d2ba621049955f8d748c7f9a4281c3ff6f1d385
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282956"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049629"
 ---
 # Remove-AzManagementGroupDeployment
 
 ## SYNOPSIS
 Menghapus penyebaran pada grup manajemen dan setiap operasi terkait
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azmanagementgroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

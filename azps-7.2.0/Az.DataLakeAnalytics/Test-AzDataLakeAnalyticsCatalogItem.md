@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Test-AzDataLakeAnalyticsCatalogItem.md
-ms.openlocfilehash: b09a034c7da2d7a1b585bcae5f11339027a9188f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cbebb2a21169ebce92001928e1503cd55a7b5e80
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169330"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926007"
 ---
 # Test-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
 Memeriksa keberadaan item katalog.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/test-azdatalakeanalyticscatalogitem) untuk informasi terkini.
 
 ## SYNTAX
 

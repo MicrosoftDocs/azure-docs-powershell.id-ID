@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentOperation.md
-ms.openlocfilehash: 4a44d6dce585edb8b54b41c7029626713e82e75b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c2fa3ff508d25bc6cc9c40a24cdbc0a8599fcd16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255292"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917097"
 ---
 # Get-AzDeploymentOperation
 
 ## SYNOPSIS
 Operasi Dapatkan penggunaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdeploymentoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal
 
 Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan saat mengirimkan penyebaran melalui **New-AzDeployment**.
 Ini bisa berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **ListKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
-Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzDeployment dan Debug penyebaran templat ARM
+Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzDeployment Dan Debug penyebaran templat ARM
 
 ## EXAMPLES
 

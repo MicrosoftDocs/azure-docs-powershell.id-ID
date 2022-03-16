@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseIntegrationRuntimeNode.md
-ms.openlocfilehash: 4251964a09e151d35c3c99bd6900563ba89fe115
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 77be2fb29f6832719308fb015c405f0aa130e235
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278828"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947725"
 ---
 # Get-AzSynapseIntegrationRuntimeNode
 
 ## SYNOPSIS
 Mendapatkan informasi node runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseintegrationruntimenode) untuk informasi terkini.
 
 ## SYNTAX
 

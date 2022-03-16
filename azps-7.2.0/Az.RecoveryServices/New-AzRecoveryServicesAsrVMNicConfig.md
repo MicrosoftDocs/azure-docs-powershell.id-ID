@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrVMNicConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrVMNicConfig.md
-ms.openlocfilehash: 659a049180e63c0ae66a4781fa15e238bd28626a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ea99c4c852ffa1702dace827e7c34c90cdad8a27
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138305515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050691"
 ---
 # New-AzRecoveryServicesAsrVMNicConfig
 
 ## SYNOPSIS
 Membuat konfigurasi NIC ASR yang berisi detail konfigurasi terkait failover dan test failover.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvmnicconfig) untuk informasi terkini.
 
 ## SYNTAX
 

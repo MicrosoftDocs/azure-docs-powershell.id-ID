@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: 5415f8c7e2bcfb65eccc39a56f3fdef43fb909ed
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 773e577d9fcaefe670153fc9c59ddb04a9f1e358
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274427"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047856"
 ---
 # Remove-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
 Menghapus cadangan penyimpanan jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabaselongtermretentionbackup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama akun Azure SQL Database asal pencadangan.
+Nama akun Azure SQL Database dari cadangan berasal.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceOperation.md
-ms.openlocfilehash: 1776ef81536f06097266668f4a7f9bb383e5d4d0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5ed83a465149769d5dce941e3febd942c532ab4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269803"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139949471"
 ---
 # Get-AzSqlInstanceOperation
 
 ## SYNOPSIS
 Mendapatkan SQL operasi instans terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstanceoperation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSqlInstanceOperation -ManagedInstanceName <String> -ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlInstanceOperation mendapatkan informasi tentang operasi pada SQL terkelola bersama. Anda dapat menampilkan semua operasi pada instans terkelola atau menampilkan operasi tertentu dengan menyediakan nama operasi.
+Cmdlet Get-AzSqlInstanceOperation mendapatkan informasi tentang operasi pada SQL terkelola bisnis. Anda dapat menampilkan semua operasi pada instans terkelola atau menampilkan operasi tertentu dengan menyediakan nama operasi.
 
 ## EXAMPLES
 
@@ -111,7 +114,7 @@ OperationParameters     : Microsoft.Azure.Management.Sql.Models.ManagedInstanceO
 OperationSteps          : Microsoft.Azure.Management.Sql.Models.ManagedInstanceOperationSteps
 ```
 
-Perintah ini mendapatkan operasi dengan nama '5870c6d8-6703-4b27-8ae4-687b4ca7caea' pada instans SQL terkelola.
+Perintah ini mendapatkan operasi dengan nama '5870c6d8-6703-4b27-8ae4-687b4ca7caea' pada SQL terkelola.
 
 ### Contoh 3: Menggunakan id sumber daya operasi
 ```powershell

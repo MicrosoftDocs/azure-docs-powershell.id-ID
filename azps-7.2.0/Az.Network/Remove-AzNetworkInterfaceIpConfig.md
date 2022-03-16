@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzNetworkInterfaceIpConfig.md
-ms.openlocfilehash: 14cf127a239f0c953f51c2743144e2960257e87d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b7acf57b12e6c1842f43f903fc37c98d1c510767
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271212"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920139"
 ---
 # Remove-AzNetworkInterfaceIpConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi IP antarmuka jaringan dari antarmuka jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-aznetworkinterfaceipconfig) untuk informasi terkini.
 
 ## SYNTAX
 

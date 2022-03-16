@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/test-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Test-AzStackHCIConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Test-AzStackHCIConnection.md
-ms.openlocfilehash: d599d37da26c733b9085a4d8dafdaa061057c628
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 689a7114a8fd301036037c1f8dd691846d57cbe2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164995"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948931"
 ---
 # Test-AzStackHCIConnection
 
 ## SYNOPSIS
 Test-AzStackHCIConnection memverifikasi konektivitas dari node ter kluster lokal ke layanan Azure yang diperlukan oleh Azure Stack HCI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/test-azstackhciconnection) untuk informasi terkini.
 
 ## SYNTAX
 

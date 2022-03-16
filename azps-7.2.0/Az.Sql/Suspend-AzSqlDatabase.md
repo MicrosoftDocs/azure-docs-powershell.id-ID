@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/suspend-azsq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Suspend-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Suspend-AzSqlDatabase.md
-ms.openlocfilehash: f7dd43e028191c2a288422d6ff32ac47bac5347a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 143516e6f4667bc52c912d229a6edbd43ba6c6c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265644"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916016"
 ---
 # Suspend-AzSqlDatabase
 
 ## SYNOPSIS
-Menangguhkan sebuah SQL database Gudang Data.
+Menangguhkan sebuah SQL Database Gudang Data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/suspend-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,12 +33,12 @@ Cmdlet **Suspend-AzSqlDatabase** menangguhkan database Azure SQL Gudang Data.
 
 ## EXAMPLES
 
-### Contoh 1: Menangguhkan database Gudang Data SQL Azure
+### Contoh 1: Menangguhkan database Gudang SQL Azure
 ```
 PS C:\>Suspend-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini menangguhkan database gudang data Azure SQL aktif.
+Perintah ini menangguhkan database Gudang Data Azure SQL aktif.
 
 ## PARAMETERS
 
@@ -157,7 +160,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
 ## CATATAN
-* Cmdlet **Suspend-AzSqlDatabase** hanya berfungsi di Azure SQL database Gudang Data. Operasi ini tidak didukung di Azure SQL Database dasar, Standar dan Premium terbatas.
+* Cmdlet **Suspend-AzSqlDatabase** hanya berfungsi di Azure SQL database Gudang Data. Operasi ini tidak didukung di Azure SQL Database Basic, Standard dan Premium edition.
 
 ## RELATED LINKS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: ca6ddf13f256bb330863923d61d491421748fa6f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0583eef8709758716418e02e922dfb2aa6bc2a3c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138262492"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139919347"
 ---
 # Remove-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi subnet dari jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azvirtualnetworksubnetconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Remove-AzVirtualNetworkSubnetConfig -Name backendSubnet -VirtualNetwork
     $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dan jaringan virtual dengan dua subnet. Lalu menggunakan perintah Remove-AzVirtualNetworkSubnetConfig untuk menghapus subnet backend dari representasi dalam memori jaringan virtual. Set-AzVirtualNetwork lalu disebut untuk memodifikasi jaringan virtual di sisi server.
+Contoh ini membuat grup sumber daya dan jaringan virtual dengan dua subnet. Lalu menggunakan Remove-AzVirtualNetworkSubnetConfig perintah untuk menghapus subnet backend dari representasi dalam memori jaringan virtual. Set-AzVirtualNetwork lalu disebut untuk memodifikasi jaringan virtual di sisi server.
 
 ## PARAMETERS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIndexingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIndexingPolicy.md
-ms.openlocfilehash: 079bb64a73d295abf744bd01dc5a34df8346459b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c387f6b739da05a296d12e7b2a024758c9d1660e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275259"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926889"
 ---
 # New-AzCosmosDBSqlIndexingPolicy
 
 ## SYNOPSIS
 Membuat objek CosmosDB Sql IndexingPolicy baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlindexingpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

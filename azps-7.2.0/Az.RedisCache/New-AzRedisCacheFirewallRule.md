@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/New-AzRedisCacheFirewallRule.md
-ms.openlocfilehash: 1dc11e53e0b2a8ad9cd7711b3fb9d8663a6b1433
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cb8b615250a251a4770f403fccc11afa93ce2183
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296523"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917853"
 ---
 # New-AzRedisCacheFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall di Cache Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/new-azrediscachefirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

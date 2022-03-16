@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseSensitivityClassification.md
-ms.openlocfilehash: 0c81883ff28141e497c9dfd59be2ce318c0aa9ca
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 57fff70b5c832ef3b8f5b931c4cfa939593a96de
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136348701"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139967757"
 ---
 # Remove-AzSqlDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Menghapus tipe informasi dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabasesensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Remove-AzSqlDatabaseSensitivityClassification -DatabaseObject <AzureSqlDatabaseM
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzSqlDatabaseSensitivityClassification Menghapus tipe informasi dan label sensitivitas kolom dalam database.
+Cmdlet Remove-AzSqlDatabaseSensitivityClassification menghapus tipe informasi dan label sensitivitas kolom dalam database.
 
 ## EXAMPLES
 
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

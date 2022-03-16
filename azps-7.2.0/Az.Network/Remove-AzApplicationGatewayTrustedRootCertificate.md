@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 6a3c416beb85f89ea40a4ec0143aecee1e562025
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c2f6768266924daa6a48e9f902a72112d4b76210
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263628"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920391"
 ---
 # Remove-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Menghapus Sertifikat Akar Tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaytrustedrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ PS C:\> $gw = Remove-AzApplicationGatewayTrustedRootCertificate -ApplicationGate
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $gw baru.
-Perintah kedua menghapus sertifikat akar tepercaya yang bernama myRootCA dari gateway aplikasi yang disimpan di $gw.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
+Perintah kedua menghapus sertifikat akar tepercaya bernama myRootCA dari gateway aplikasi yang disimpan di $gw.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
 ## PARAMETERS

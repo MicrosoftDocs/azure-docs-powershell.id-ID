@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Get-AzureKeyVaultKey.md
-ms.openlocfilehash: 751d19470e2a293f2550d976c70cb03a432ab96a2fefcadf19470d813d2079ff
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d42cad3f07fb674394d14d38f50c6b95cf2bb9c4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132413751"
 ---
 # Get-AzureKeyVaultKey
@@ -78,7 +78,7 @@ Get-AzureKeyVaultKey [-ResourceId] <String> [-Name] <String> [-IncludeVersions]
 
 ## DESCRIPTION
 Cmdlet **Get-AzureKeyVaultKey** mendapatkan tombol Azure Key Vault.
-Cmdlet ini mendapatkan **Microsoft.Azure.Commands.KeyVault.Models.KeyBundle** tertentu atau daftar semua objek **KeyBundle** di kunci vault atau versinya.
+Cmdlet ini mendapatkan **Microsoft.Azure.Commands.KeyVault.Models.KeyBundle** tertentu atau daftar semua objek **KeyBundle** di vault kunci atau versinya.
 
 ## EXAMPLES
 
@@ -181,7 +181,7 @@ Tags           :
 ```
 
 Perintah ini menggunakan versi tertentu dari kunci yang bernama test1 dalam kunci vault bernama Contoso.
-Setelah menjalankan perintah ini, Periksa berbagai properti kunci dengan menavigasi objek $Key.
+Setelah menjalankan perintah ini, periksa berbagai properti kunci dengan menavigasi objek $Key.
 
 ### Contoh 5: Get all the keys that have been deleted but not purged for this key vault.
 ```powershell
@@ -244,8 +244,8 @@ Accept wildcard characters: False
 ### -IncludeVersions
 Mengindikasikan bahwa cmdlet ini mendapatkan semua versi kunci.
 Versi kunci saat ini adalah yang pertama dalam daftar.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName.*
-Jika Anda tidak menentukan parameter *IncludeVersions,* cmdlet akan mendapatkan versi kunci saat ini dengan Nama yang *ditentukan.*
+Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet akan mendapatkan versi kunci saat ini dengan Nama yang *ditentukan*.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

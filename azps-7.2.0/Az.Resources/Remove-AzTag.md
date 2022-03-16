@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
-ms.openlocfilehash: 56b2c0ff8c5dacc15e17ed8bc618e1a4ce4c1ace
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 75bc715dc92bb1976660b06dc5083294396d4c49
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049521"
 ---
 # Remove-AzTag
 
 ## SYNOPSIS
 Menghapus tag atau nilai Azure yang sudah ditentukan | Menghapus seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-aztag) untuk informasi terkini.
 
 ## SYNTAX
 

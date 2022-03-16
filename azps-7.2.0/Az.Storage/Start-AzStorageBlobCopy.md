@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Start-AzStorageBlobCopy.md
-ms.openlocfilehash: 28d8aeaf092c487a27bc7ccef93856d016d1a934
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 50f20a9e30e6dbfc2a8a504cc0acccbc22bcfbc0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290587"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047649"
 ---
 # Start-AzStorageBlobCopy
 
 ## SYNOPSIS
 Memulai menyalin blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/start-azstorageblobcopy) untuk informasi terkini.
 
 ## SYNTAX
 

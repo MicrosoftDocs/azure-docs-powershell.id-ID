@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightClusterIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightClusterIdentity.md
-ms.openlocfilehash: bda5af34dcb5db81979526a2f6a3ecb38b22b1be
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4f25a4cd273957a4aece34908569f4a82499a905
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362930"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077391"
 ---
 # Add-AzHDInsightClusterIdentity
 
 ## SYNOPSIS
 Menambahkan identitas kluster ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightclusteridentity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Add-AzHDInsightClusterIdentity [-Config] <AzureHDInsightConfig> [-ObjectId] <Gui
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzHDInsightClusterIdentity** menambahkan identitas kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig lanjut.
+Cmdlet **Add-AzHDInsightClusterIdentity** menambahkan identitas kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh New-AzHDInsightClusterConfig cmdlet.
 
 ## EXAMPLES
 
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 
 ### -Config
 Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
-Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig.
+Objek ini dibuat oleh cmdlet New-AzHDInsightClusterConfig baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

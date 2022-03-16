@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVpnClientRootCertificate.md
-ms.openlocfilehash: 7af8105d16b281896d737eb0a823e83ab447aa49
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 54837d6c36806a6477f9a5fa26042b3277dc5fc1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162365"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921273"
 ---
 # Add-AzVpnClientRootCertificate
 
 ## SYNOPSIS
 Menambahkan sertifikat akar klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvpnclientrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ### -PublicCertData
 Menentukan representasi teks dari sertifikat akar yang akan ditambahkan.
 Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Ketika melakukan hal tersebut, Anda akan melihat output seperti berikut (perhatikan bahwa output aktual akan berisi lebih banyak baris teks dari sampel yang disingkat diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Ketika melakukan hal tersebut, Anda akan melihat output seperti berikut (perhatikan bahwa output aktual akan berisi lebih banyak baris teks dari sampel yang disingkat yang diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
 Anda dapat mengambil data ini menggunakan Windows PowerShell seperti ini:`$Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertificate.cer"`
 `$CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}`
 

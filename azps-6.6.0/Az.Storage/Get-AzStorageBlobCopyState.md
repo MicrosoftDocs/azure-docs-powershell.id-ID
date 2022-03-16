@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobCopyState.md
-ms.openlocfilehash: f5399749ff0f7b0c64b010ac773ffc35f54cf11d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f5d99500d786b5c704f2684e971e23c6c639cbcf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364202"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139966523"
 ---
 # Get-AzStorageBlobCopyState
 
 ## SYNOPSIS
 Mendapatkan status salinan suatu Azure Storage blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageblobcopystate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Perintah ini mendapatkan status salinan blob bernama ContosoPlanning2015 dalam w
 C:\PS>Get-AzStorageBlob -Blob "ContosoPlanning2015" -Container "ContosoUploads" | Get-AzStorageBlobCopyState
 ```
 
-Perintah ini mendapatkan blob bernama ContosoPlanning2015 dalam wadah yang bernama ContosoUploads dengan menggunakan cmdlet **Get-AzStorageBlob,** lalu memberikan hasilnya ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan blob bernama ContosoPlanning2015 dalam wadah yang bernama ContosoUploads dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu memberikan hasilnya ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet **Get-AzStorageBlobCopyState** mendapatkan status salinan untuk blob tersebut.
 
 ### Contoh 3: Get the copy status for a blob in a container by using the pipeline
@@ -67,7 +70,7 @@ Cmdlet **Get-AzStorageBlobCopyState** mendapatkan status salinan untuk blob ters
 C:\PS>Get-AzStorageContainer -Name "ContosoUploads" | Get-AzStorageBlobCopyState -Blob "ContosoPlanning2015"
 ```
 
-Perintah ini mendapatkan wadah bernama dengan menggunakan cmdlet **Get-AzStorageBlob,** lalu meneruskan hasilnya ke cmdlet saat ini.
+Perintah ini mendapatkan wadah bernama dengan menggunakan cmdlet **Get-AzStorageBlob** , lalu meneruskan hasilnya ke cmdlet saat ini.
 Cmdlet **Get-AzStorageContainer** mendapatkan status salinan untuk blob bernama ContosoPlanning2015 dalam wadah tersebut.
 
 ### Contoh 4: Mulai Salin dan pipeline untuk mendapatkan status penyalinan
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -CloudBlob
 Menentukan objek **CloudBlob** dari Azure Storage Client.
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzStorageBlob.
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ### -CloudBlobContainer
 Menentukan objek **CloudBlobContainer** dari Azure Storage Client.
 Cmdlet ini mendapatkan status salinan blob dalam wadah yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudBlobContainer,** gunakan cmdlet Get-AzStorageContainer cmdlet.
+Untuk mendapatkan objek **CloudBlobContainer** , gunakan cmdlet Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

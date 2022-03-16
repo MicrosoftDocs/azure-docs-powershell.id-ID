@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePool.md
-ms.openlocfilehash: 5ae2074f5b9c4925252a454e70d27970e3336d6e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1e8510a88e5151f32d3703c5725083bcdfc8745f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269788"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048297"
 ---
 # Get-AzSqlInstancePool
 
 ## SYNOPSIS
 Mengembalikan informasi tentang azure SQL Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancepool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzSqlInstancePool [-ResourceId] <String> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstancePool** mengembalikan informasi tentang satu atau beberapa Azure SQL Instance.
+Cmdlet **Get-AzSqlInstancePool** mengembalikan informasi tentang satu atau lebih Azure SQL Instance.
 Tentukan nama sebuah instance pool untuk melihat informasi hanya untuk pool instance itu.
 
 ## EXAMPLES

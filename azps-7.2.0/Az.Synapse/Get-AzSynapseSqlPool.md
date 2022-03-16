@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSqlPool.md
-ms.openlocfilehash: fa0d6b00600c0c471b5d1b5578bb947ebcb7f255
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5a84dc7d7ccfde6ad285c2f8c5d62f79667065a6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281659"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914487"
 ---
 # Get-AzSynapseSqlPool
 
 ## SYNOPSIS
-Mendapatkan Fitur Analitik Synapse SQL sama.
+Mendapatkan fitur Analitik Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang Azure Synapse Analytics SQL pool.
+Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang azure Synapse Analytics SQL sama.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Get-AzSynapseSqlPool** mendapatkan informasi tentang Azure Synapse Anal
 PS C:\> Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini akan membuat SQL kolam renang di bawah ruang kerja.
+Perintah ini akan mendapatkan SQL kolam renang di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

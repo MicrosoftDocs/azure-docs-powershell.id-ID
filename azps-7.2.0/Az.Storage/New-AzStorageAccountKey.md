@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountKey.md
-ms.openlocfilehash: 60a28a9d1993710c678ce1a6591676ec1a84d5d2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: df9c14cbd5e162e0d1232fa1b9fc6dbe7b40eafe
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948499"
 ---
 # New-AzStorageAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci penyimpanan untuk Azure Storage tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage di mana untuk meregenerasi kunci penyimpanan.
+Menentukan nama akun Storage untuk meregenerasi kunci penyimpanan.
 
 ```yaml
 Type: System.String

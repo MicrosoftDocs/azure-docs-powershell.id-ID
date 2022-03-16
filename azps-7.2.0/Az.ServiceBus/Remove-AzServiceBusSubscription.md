@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusSubscription.md
-ms.openlocfilehash: 26cb02fda2180a0c9228e5774ebe20e41174f06c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ba2c797e846116c7cb034771d15d38649b81787f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277788"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140048892"
 ---
 # Remove-AzServiceBusSubscription
 
 ## SYNOPSIS
-Menghapus langganan ke topik dari ruang nama Bus Layanan nama yang ditentukan.
+Menghapus langganan ke topik dari ruang nama Bus Layanan ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/remove-azservicebussubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Cmdlet **Remove-AzServiceBusSubscription** menghapus langganan ke topik dari kum
 PS C:\> Remove-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -SubscriptionName SB-TopicSubscription-Example1
 ```
 
-Menghapus langganan ke topik `SB-TopicSubscription-Example1` dalam ruang `SB-Topic_exampl1` nama Bus Layanan nama yang ditentukan`SB-Example1`.
+Menghapus langganan ke `SB-TopicSubscription-Example1` topik dalam ruang `SB-Topic_exampl1` nama Bus Layanan tertentu `SB-Example1`.
 
 ### Contoh 2: InputObject - Menggunakan Variabel:
 ```powershell
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Objek Langganan
+Bus Layanan Berlangganan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes

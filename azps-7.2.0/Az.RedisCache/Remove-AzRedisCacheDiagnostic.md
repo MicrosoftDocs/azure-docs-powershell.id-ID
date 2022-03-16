@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Remove-AzRedisCacheDiagnostic.md
-ms.openlocfilehash: 9347044d4a2412bc7c3cd5fd17ce14ca076c1924
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c5061b3bd4b6a7b3117fb466e22cd72153c80dee
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303356"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050187"
 ---
 # Remove-AzRedisCacheDiagnostic
 
 ## SYNOPSIS
 Menonaktifkan diagnostik di Singgahan Azure Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/remove-azrediscachediagnostic) untuk informasi terkini.
 
 ## SYNTAX
 

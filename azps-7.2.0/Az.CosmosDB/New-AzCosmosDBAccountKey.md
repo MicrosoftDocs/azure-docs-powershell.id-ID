@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccountKey.md
-ms.openlocfilehash: 9460ff33394587f1839869147f073e75bebd8640
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e148c010fafa3b6648ff190d627ddc3e87a454bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277147"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927070"
 ---
 # New-AzCosmosDBAccountKey
 
 ## SYNOPSIS
 Meregenerasi Kunci Akun CosmosDB tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobQueryConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobQueryConfig.md
-ms.openlocfilehash: 28d3a10a26328745387a5e0be3b2df82abb8534e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 24822e3a46377593dd9198ccca81eca6d41a78cf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253036"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948463"
 ---
 # New-AzStorageBlobQueryConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi kueri blob, yang dapat digunakan di Get-AzStorageBlobQueryResult.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageblobqueryconfig) untuk informasi terkini.
 
 ## SYNTAX
 

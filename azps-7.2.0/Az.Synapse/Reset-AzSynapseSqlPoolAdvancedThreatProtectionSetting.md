@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting.md
-ms.openlocfilehash: 77ea69f27fcbb07c1fad01af5f30947f53279d93
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d690517cacaee6c13961be5250509ea9f773ab48
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165488"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914199"
 ---
 # Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting
 
 ## SYNOPSIS
-Menghapus pengaturan perlindungan ancaman tingkat lanjut dari SQL tim.
+Menghapus pengaturan perlindungan ancaman tingkat lanjut dari SQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqlpooladvancedthreatprotectionsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Cmdlet **Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting** menghapus penga
 PS C:\> Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini menghapus pengaturan perlindungan ancaman tingkat lanjut dari sebuah SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
+Perintah ini menghapus pengaturan perlindungan ancaman tingkat lanjut dari kolam SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

@@ -5,20 +5,23 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelAlertRuleAction.md
-ms.openlocfilehash: d9ea9748cafbce576d8e8f55d6b19f0798f3ae40
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c12128bad16b11b9f7c6416ad5746ec3a569fbe7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163605"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049269"
 ---
 # Get-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
-Mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) untuk Aturan Analitik, seperti Azure Logic Apps Putar.<br/>
+Mendapatkan Respons Otomatis (Tindakan Aturan Pemberitahuan) untuk Aturan Analitik, seperti Azure Logic Apps Playbook.<br/>
 Aturan Otomatisasi Azure Sentinel akan didukung di masa mendatang.
 
 *Catatan: Hal ini memerlukan nilai parameter "AlertRuleId"*
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentinelalertruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,16 +50,16 @@ Anda bisa menggunakan **objek** Tindakan untuk memperbarui Tindakan, misalnya An
 PS C:\> $AlertRuleActions = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "29d2523f-84ce-42d3-b5f1-9e63c85aaed1"
 ```
 
-Contoh ini mendapatkan semua Tindakan **untuk** Aturan Pemberitahuan yang ditentukan dalam ruang kerja tertentu, lalu menyimpannya di $AlertRuleActions tertentu.<br/><br/>
+Contoh ini mendapatkan semua Tindakan **untuk** Aturan Pemberitahuan yang ditentukan dalam ruang kerja tertentu, lalu menyimpannya di $AlertRuleActions kolom.<br/><br/>
 
-*Catatan: bidang **LogicAppResourceID** berisi ID lengkap Azure Resource Manager (ARM), yang berisi nama Playbook Azure Logic Apps baru.*
+*Catatan: bidang **LogicAppResourceID** berisi ID lengkap Azure Resource Manager (ARM), yang berisi nama Playbook Azure Logic Apps aktif.*
 
 ### Contoh 2
 ```powershell
 PS C:\> $AlertRuleAction = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -ActionId "MyActionId"
 ```
 
-Contoh ini mendapatkan **AlertRuleAction untuk** Aturan Pemberitahuan yang ditentukan di ruang kerja tertentu, lalu menyimpannya di $AlertRuleAction perusahaan.
+Contoh ini mendapatkan **AlertRuleAction untuk** Aturan Pemberitahuan yang ditentukan dalam ruang kerja tertentu, lalu menyimpannya di $AlertRuleAction perusahaan.
 
 ## PARAMETERS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
-ms.openlocfilehash: 64bed4e8e471e133a65fb438887143ad0f17f119
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8e774e6a2a5d78cf249191c73b7ae8bcef99f35e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289724"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139917133"
 ---
 # Get-AzDenyAssignment
 
@@ -23,6 +23,9 @@ Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter inpu
 
 - GET /directoryObjects/{id}
 - POST /directoryObjects/getByIds
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdenyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -135,7 +138,7 @@ Get-AzDenyAssignment [-Scope <String>] -DenyAssignmentName <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Gunakan perintah Get-AzDenyAssignment daftar untuk mencantumkan semua penugasan yang efektif pada lingkup.
+Gunakan perintah Get-AzDenyAssignment untuk mencantumkan semua penugasan yang efektif pada lingkup.
 Tanpa parameter apa pun, perintah ini mengembalikan semua penetapan penolakan yang dibuat di bawah langganan.
 Daftar ini bisa difilter menggunakan parameter pemfilteran untuk pokoknya, menolak nama dan lingkup penetapan.
 Untuk menentukan pengguna, gunakan parameter SignInName atau Azure AD ObjectId.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/new-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportContactProfileObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportContactProfileObject.md
-ms.openlocfilehash: 9c56b91c35a5724fcc5b6cf4a298f775a68f0f48
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: da94750cb48230278da7a95f28ae6932c59db26b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258155"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914821"
 ---
 # New-AzSupportContactProfileObject
 
 ## SYNOPSIS
 Membuat objek profil kontak dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/new-azsupportcontactprofileobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 
 ### -PreferredTimeZone
 Zona waktu pilihan pelanggan.
-Nilai ini harus merupakan nilai System.TimeZoneInfo.Id valid.
+Nilai ini harus bernilai System.TimeZoneInfo.Id valid.
 
 ```yaml
 Type: System.String

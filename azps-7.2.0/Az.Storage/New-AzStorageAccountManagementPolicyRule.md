@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/new-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyRule.md
-ms.openlocfilehash: 5b0761dbe0c87ebed992718a4cac08cfbedc90c9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 48ff435e502ba897e90fdcb9aa50c00499771593
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298235"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915603"
 ---
 # New-AzStorageAccountManagementPolicyRule
 
 ## SYNOPSIS
 Membuat objek aturan ManagementPolicy, yang bisa digunakan dalam Set-AzStorageAccountManagementPolicy.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageaccountmanagementpolicyrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **New-AzStorageAccountManagementPolicyRule** membuat objek aturan Managem
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek aturan ManagementPolicy, lalu mengatur ke Storage Manajemen
+### Contoh 1: Membuat objek aturan ManagementPolicy, lalu mengatur ke Storage Anda
 ```
 PS C:\>$action = Add-AzStorageAccountManagementPolicyAction -BaseBlobAction Delete -daysAfterModificationGreaterThan 100
 PS C:\>$action = Add-AzStorageAccountManagementPolicyAction -BaseBlobAction TierToArchive -daysAfterModificationGreaterThan 50  -InputObject $action
@@ -76,7 +79,7 @@ Definition : {
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah ini membuat objek aturan ManagementPolicy, dengan objek grup tindakan ManagementPolicy berisi 4 tindakan, objek filter aturan ManagementPolicy, lalu menetapkan aturan ke akun Storage Anda.
+Perintah ini membuat objek aturan ManagementPolicy, dengan objek grup tindakan ManagementPolicy berisi 4 tindakan, objek filter aturan ManagementPolicy, lalu menetapkan aturan menjadi Akun Storage.
 
 ## PARAMETERS
 

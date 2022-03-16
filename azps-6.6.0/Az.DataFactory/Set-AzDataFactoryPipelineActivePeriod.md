@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryPipelineActivePeriod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryPipelineActivePeriod.md
-ms.openlocfilehash: c503adba9627950fb06a29987e374e58c06ed8b6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 99d724da7eb923e67a73582784926bd72f6bb37d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365885"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077769"
 ---
 # Set-AzDataFactoryPipelineActivePeriod
 
 ## SYNOPSIS
 Mengonfigurasi periode aktif untuk potongan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactorypipelineactiveperiod) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzDataFactoryPipelineActivePeriod [-PipelineName] <String> [-DataFactory] <P
 Cmdlet **Set-AzDataFactoryPipelineActivePeriod** mengonfigurasi periode aktif untuk potongan data yang diproses oleh saluran di Azure Data Factory.
 Jika Anda menggunakan cmdlet Set-AzDataFactorySliceStatus untuk mengubah status potongan untuk set data, pastikan bahwa waktu mulai dan waktu berakhir untuk potongan berada dalam periode aktif saluran.
 Setelah Anda membuat pipeline, Anda bisa menentukan periode di mana pemrosesan data terjadi.
-Menentukan periode aktif untuk saluran menentukan durasi waktu di mana potongan data diproses  berdasarkan properti Ketersediaan yang ditentukan untuk setiap set data Pabrik Data.
+Menentukan periode aktif untuk saluran menentukan durasi waktu di mana potongan data diproses berdasarkan properti Ketersediaan yang ditentukan untuk setiap set data Pabrik Data.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini mengubah periode aktif untuk saluran yang milik pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -122,10 +125,10 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-Menentukan akhir periode waktu sebagai objek **DateTime.**
+Menentukan akhir periode waktu sebagai objek **DateTime** .
 Pemrosesan data terjadi atau potongan data diproses dalam periode ini.
-Untuk informasi selengkapnya tentang **objek DateTime,** ketik `Get-Help Get-Date` .
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01- 01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
+Untuk informasi selengkapnya tentang **objek DateTime** , ketik `Get-Help Get-Date`.
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-Menentukan awal periode waktu sebagai objek **DateTime.**
+Menentukan awal periode waktu sebagai objek **DateTime** .
 Pemrosesan data terjadi atau potongan data diproses dalam periode ini.
 *StartDateTime* harus ditentukan dalam format ISO8601.
 
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

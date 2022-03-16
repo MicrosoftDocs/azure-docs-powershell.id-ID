@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile.md
-ms.openlocfilehash: d84212575732e5a3f38d287205a58abcacf8fe77
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 02ad7405d0cfb3a92fead811e4517b3ff685f127
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295372"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920751"
 ---
 # New-AzNetworkWatcherNetworkConfigurationDiagnosticProfile
 
 ## SYNOPSIS
 Membuat objek profil diagnostik konfigurasi jaringan baru. Objek ini digunakan untuk membatasi konfigurasi jaringan selama sesi diagnostik menggunakan kriteria yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatchernetworkconfigurationdiagnosticprofile) untuk informasi terkini.
 
 ## SYNTAX
 

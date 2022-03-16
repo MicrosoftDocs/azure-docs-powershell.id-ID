@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactorySliceStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactorySliceStatus.md
-ms.openlocfilehash: 80787ccf8bfdd61b7d85eb165c1c50ce0f713b62
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bec326fecd33e758e9e95b3aa885a1d6e73e1138
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357194"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077751"
 ---
 # Set-AzDataFactorySliceStatus
 
 ## SYNOPSIS
 Mengatur status potongan untuk kumpulan data di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/set-azdatafactoryslicestatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,12 +51,12 @@ True
 Perintah ini mengatur status semua potongan untuk kumpulan data yang bernama DAWikiAggregatedData menjadi Menunggu di pabrik data bernama WikiADF.
 Parameter *UpdateType* memiliki nilai UpstreamInPipeline, sehingga perintah mengatur status setiap potongan untuk kumpulan data dan semua kumpulan data dependen.
 Set data dependen digunakan sebagai set data input untuk aktivitas dalam saluran.
-Perintah ini mengembalikan nilai $True.
+Perintah ini mengembalikan nilai dari $True.
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini mengubah status potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -115,10 +118,10 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-Menentukan akhir periode waktu sebagai objek **DateTime.**
+Menentukan akhir periode waktu sebagai objek **DateTime** .
 Kali ini adalah akhir dari potongan data.
-Untuk informasi selengkapnya tentang **objek DateTime,** ketik `Get-Help Get-Date` .
-*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01- 01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
+Untuk informasi selengkapnya tentang **objek DateTime** , ketik `Get-Help Get-Date`.
+*EndDateTime* harus ditentukan dalam format ISO8601 seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-Menentukan awal periode waktu sebagai objek **DateTime.**
+Menentukan awal periode waktu sebagai objek **DateTime** .
 Kali ini adalah awal dari potongan data.
 
 ```yaml
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

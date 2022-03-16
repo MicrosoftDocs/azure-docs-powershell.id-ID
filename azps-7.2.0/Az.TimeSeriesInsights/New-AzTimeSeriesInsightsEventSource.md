@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsEventSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsEventSource.md
-ms.openlocfilehash: d634c16482d0237c8aa32a6ce4b2b464ddc189a2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1836be4b98adf579a463646e5cd5dc739fba21a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139913965"
 ---
 # New-AzTimeSeriesInsightsEventSource
 
 ## SYNOPSIS
 Membuat sumber acara di bawah lingkungan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightseventsource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu yang Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci SAS yang memberikan layanan rangkaian waktu Insights akses ke hub acara/iot.
+Nama kunci SAS yang memberikan layanan Rangkaian Waktu Insights ke hub acara/iot.
 
 ```yaml
 Type: System.String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedAccessKey
-Nilai kunci akses bersama yang memberikan layanan baca Insights Rangkaian Waktu ke hub acara/iot.
+Nilai kunci akses bersama yang memberikan layanan baca Insights Time Series ke hub acara/iot.
 
 ```yaml
 Type: System.Security.SecureString

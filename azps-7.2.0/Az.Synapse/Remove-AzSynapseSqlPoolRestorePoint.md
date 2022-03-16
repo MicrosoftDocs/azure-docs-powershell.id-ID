@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPoolRestorePoint.md
-ms.openlocfilehash: cf21e1f3f565744614fa07f36400f226358275a6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 17e720bffb7e42fb20b4702db19f857c0ef61f64
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285004"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139914325"
 ---
 # Remove-AzSynapseSqlPoolRestorePoint
 
 ## SYNOPSIS
 Menghapus Analitik Synapse SQL titik pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpoolrestorepoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Remove-AzSynapseSqlPoolRestorePoint -ResourceId <String> [-PassThru] [-AsJob] [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** secara permanen menghapus analitik Azure Synapse SQL titik pemulihan kolam.
+Cmdlet **Remove-AzSynapseSqlPoolRestorePoint** secara permanen menghapus titik pemulihan SQL Azure Synapse.
 
 ## EXAMPLES
 
@@ -78,7 +81,7 @@ Perintah ini menghapus Analitik Azure Synapse SQL titik pemulihan dalam saluran.
 PS C:\> Remove-AzSynapseSqlPoolRestorePoint -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlPools/ContosoSqlPool/SqlPoolRestorePoints/RestorePointCreationDate
 ```
 
-Perintah ini menghapus Analitik Azure Synapse SQL pool dengan ID sumber daya yang ditentukan.
+Perintah ini menghapus Analitik Azure Synapse yang SQL pool dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlUserDefinedFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlUserDefinedFunction.md
-ms.openlocfilehash: 626a461d10dde44ebe67c8f8a75d42bd3431e9d7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: aa2cebff1cc5c53f39094044aa5c49bd4ca5dcb4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169400"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139926835"
 ---
 # New-AzCosmosDBSqlUserDefinedFunction
 
 ## SYNOPSIS
 Membuat Fungsi CosmosDB Sql UserDefined baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqluserdefinedfunction) untuk informasi terkini.
 
 ## SYNTAX
 

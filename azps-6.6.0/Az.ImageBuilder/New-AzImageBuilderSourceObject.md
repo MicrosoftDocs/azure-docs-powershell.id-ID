@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.imagebuilder/New
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImageBuilder/help/New-AzImageBuilderSourceObject.md
-ms.openlocfilehash: 98ba5e691c263bad0d558d1e64f6bca0c4596522
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 382a2991989ef3cd178bb12205faeed0b5b06587
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372926"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140077229"
 ---
 # New-AzImageBuilderSourceObject
 
 ## SYNOPSIS
 Menjelaskan sumber gambar mesin virtual untuk membuat, mengkustomisasi, dan mendistribusikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.imagebuilder/new-azimagebuildersourceobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Offer
-Penawaran gambar dari [Gambar Galeri Azure.](https://docs.microsoft.com/rest/api/compute/virtualmachineimages)
+Penawaran gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Gambar Publisher gambar [di Gambar Galeri Azure.](https://docs.microsoft.com/rest/api/compute/virtualmachineimages)
+Gambar Publisher gambar [di Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceTypePlatformImage
-Menjelaskan sumber gambar dari [Gambar Galeri Azure.](https://docs.microsoft.com/rest/api/compute/virtualmachineimages)
+Menjelaskan sumber gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi gambar dari [Gambar Galeri Azure.](https://docs.microsoft.com/rest/api/compute/virtualmachineimages)
+Versi gambar dari [Gambar Galeri Azure](https://docs.microsoft.com/rest/api/compute/virtualmachineimages).
 
 ```yaml
 Type: System.String
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

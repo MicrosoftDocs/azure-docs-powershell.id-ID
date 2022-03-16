@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceLoggingProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageServiceLoggingProperty.md
-ms.openlocfilehash: adb9f737efa1eaa972446eb0df92b57677097e96
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7078c6878e1013a7f6e46822a141b9af3833c112
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162765"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948103"
 ---
 # Set-AzStorageServiceLoggingProperty
 
 ## SYNOPSIS
 Memodifikasi pembuatan log untuk Azure Storage baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageserviceloggingproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoggingOperations
-Menentukan array operasi Azure Storage layanan.
-Azure Storage ini mencatat operasi yang ditentukan oleh parameter ini.
+Menentukan larik Azure Storage operasi layanan.
+Azure Storage ini mencatat operasi yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak ada
 - Baca

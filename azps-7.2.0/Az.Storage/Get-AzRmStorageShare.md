@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageShare.md
-ms.openlocfilehash: 6fc3560b270d689522a8b709ccb54d9f301eb11d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7017b7fece2ef7682a194c5f59887cc3f1770dac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306396"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915837"
 ---
 # Get-AzRmStorageShare
 
 ## SYNOPSIS
 Gets or lists Storage file shares.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azrmstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzRmStorageShare [-ResourceId] <String> [-GetShareUsage] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRmStorageShare** mendapatkan atau mencantumkan Storage file tersebut.
+Cmdlet **Get-AzRmStorageShare** mendapatkan atau Storage file bersama.
 
 ## EXAMPLES
 
@@ -65,9 +68,9 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare  5120
 ```
 
-Perintah ini akan Storage file dengan nama Storage dan nama berbagi.
+Perintah ini berisi informasi Storage file dengan Storage dan nama berbagi.
 
-### Contoh 2: Mencantumkan Storage berbagi file dari Storage anda
+### Contoh 2: Daftar semua Storage berbagi file dari Storage tersebut
 ```
 PS C:\>Get-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount"
 
@@ -92,7 +95,7 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare  5120
 ```
 
-Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah yang berbeda.
+Perintah ini akan mendapatkan Storage blob dengan Storage objek akun dan nama wadah.
 
 ### Contoh 4: Dapatkan Storage berbagi file dengan penggunaan berbagi dalam byte
 ```
@@ -105,7 +108,7 @@ Name     QuotaGiB EnabledProtocols AccessTier Deleted Version ShareUsageBytes
 myshare  5120                                                2097152
 ```
 
-Perintah ini berisi Storage file gratis dengan Storage nama akun dan nama berbagi, serta menyertakan penggunaan berbagi dalam byte.
+Perintah ini berisi Storage file yang dibagikan Storage nama akun dan nama berbagi, serta menyertakan penggunaan berbagi dalam byte.
 
 ### Contoh 5: Mencantumkan Storage berbagi file dari akun Storage, termasuk berbagi yang dihapus, termasuk snapshot berbagi
 ```
@@ -270,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: c9a7e94feaca5f797ffa9eccc281286ee4e08912
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: caaeedd043fd7c24f8ad73f27c0694ca74290c01
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356477"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139935169"
 ---
 # New-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Membuat health healthkese.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzApplicationGatewayProbeConfig -Name <String> -Protocol <String> [-HostName
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzApplicationGatewayProbeConfig membuat cmdlet health cmdlet
+Cmdlet New-AzApplicationGatewayProbeConfig membuat cmdlet kesehatan cmdlet.
 
 ## EXAMPLES
 
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ### -Path
 Menentukan jalur relatif of path.
 Jalur yang valid dimulai dengan karakter garis miring (/).
-Thebes dikirim ke \<Protocol\> :// \<host\> : \<port\> \<path\> .
+Thebes dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
 ```yaml
 Type: System.String

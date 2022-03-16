@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject.md
-ms.openlocfilehash: 2d7f232efff33f26802dcb512dd180b943338a74
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 90ff2730234b43874f07dbfd8a1ee3843948d439
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169137"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920787"
 ---
 # New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject
 
 ## SYNOPSIS
 Buat konfigurasi protokol yang digunakan untuk melakukan evaluasi uji melalui TCP, HTTP, atau ICMP.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznetworkwatcherconnectionmonitorprotocolconfigurationobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject [-IcmpProtocol]
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject membuat konfigurasi protokol yang digunakan untuk melakukan evaluasi uji melalui TCP, HTTP, atau ICMP.
+Cmdlet New-AzNetworkWatcherConnectionMonitorProtocolConfigurationObject membuat konfigurasi protokol yang digunakan untuk melakukan evaluasi uji melalui TCP, HTTP atau ICMP.
 
 ## EXAMPLES
 

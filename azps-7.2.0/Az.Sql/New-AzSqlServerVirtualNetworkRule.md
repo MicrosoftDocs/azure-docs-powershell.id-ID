@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: f64a51dab53442e498249609a7b2a70dc36f28bd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f30c44c57aec821b8dadc974f9a7fff960cb9821
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264508"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047955"
 ---
 # New-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
 Membuat Aturan Jaringan Virtual Azure SQL Server. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlservervirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 

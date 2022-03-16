@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageCORSRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageCORSRule.md
-ms.openlocfilehash: 271ec9f96a446988d8544a8b0ce068404178784c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c58c7dbaba77a7c4bbae6e70c945fc2003e2b6a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263307"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915297"
 ---
 # Set-AzStorageCORSRule
 
 ## SYNOPSIS
 Menetapkan aturan CORS untuk tipe Storage baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragecorsrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Set-AzStorageCORSRule [-ServiceType] <StorageServiceType> -CorsRules <PSCorsRule
 Cmdlet **Set-AzStorageCORSRule** mengatur aturan Berbagi Sumber Daya Lintas Asal (CORS, Cross-Origin Resource Sharing) untuk suatu tipe Azure Storage eksternal.
 Tipe layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
 Cmdlet ini menimpa aturan yang sudah ada.
-Untuk melihat aturan saat ini, gunakan cmdlet Get-AzStorageCORSRule.
+Untuk melihat aturan saat ini, gunakan cmdlet Get-AzStorageCORSRule cmdlet.
 
 ## EXAMPLES
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -CorsRules
 Menentukan larik aturan CORS.
-Anda dapat mengambil aturan yang sudah ada menggunakan cmdlet Get-AzStorageCORSRule cmdlet.
+Anda dapat mengambil aturan yang sudah ada menggunakan Get-AzStorageCORSRule cmdlet.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Commands.Storage.Model.ResourceModel.PSCorsRule[]

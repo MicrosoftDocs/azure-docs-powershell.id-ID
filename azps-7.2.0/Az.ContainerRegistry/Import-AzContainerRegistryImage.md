@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
-ms.openlocfilehash: 1631d8f83bbca105098ddd0a72f9c64f4511bde4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4be10e490fea936973f36c467be2c7acb28a690f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139927267"
 ---
 # Import-AzContainerRegistryImage
 
 ## SYNOPSIS
 Impor gambar dari registri publik/azure ke registri azure wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/import-azcontainerregistryimage) untuk informasi terkini.
 
 ## SYNTAX
 

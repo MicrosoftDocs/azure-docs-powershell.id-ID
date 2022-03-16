@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerExpectedStatusCodeRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerExpectedStatusCodeRange.md
-ms.openlocfilehash: 6bb46614febd755d0ac8b8478949ffb0a68bccfd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 734c10b2587449438702e477acf8f360b20b8f7f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162078"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139913947"
 ---
 # Remove-AzTrafficManagerExpectedStatusCodeRange
 
 ## SYNOPSIS
 Menghapus rentang kode status yang diharapkan dari objek profil Traffic Manager lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagerexpectedstatuscoderange) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfil
 ```
 
 Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
-Perintah kedua menghapus rentang kode status yang diharapkan dari profil yang disimpan di $TrafficManagerProfile.
+Perintah kedua menghapus rentang kode status yang diharapkan dari profil yang disimpan dalam $TrafficManagerProfile.
 Perintah terakhir memperbarui profil di Traffic Manager cocok dengan nilai lokal di $TrafficManagerProfile.
 
 ## PARAMETERS

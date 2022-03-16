@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutoProvisioningSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutoProvisioningSetting.md
-ms.openlocfilehash: a8fbc07803cac1717779970b51a375ec24e31609
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2e1d7e487c065dd6c1659f4c42594c91886f4002
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259483"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916935"
 ---
 # Get-AzSecurityAutoProvisioningSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan penyediaan otomatis keamanan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecurityautoprovisioningsetting) untuk informasi terkini.
 
 ## SYNTAX
 

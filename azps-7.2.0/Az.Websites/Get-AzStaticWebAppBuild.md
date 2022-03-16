@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuild.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzStaticWebAppBuild.md
-ms.openlocfilehash: 65d40f1a66e32bb97ba21b718eb3c94b71c7c66f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f970944f2f24be79fede4960064a9f094d205b94
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304171"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139913731"
 ---
 # Get-AzStaticWebAppBuild
 
 ## SYNOPSIS
 Deskripsi untuk Mendapatkan detail build situs statis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azstaticwebappbuild) untuk informasi terkini.
 
 ## SYNTAX
 

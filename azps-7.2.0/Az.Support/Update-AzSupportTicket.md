@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/Update-AzSupportTicket.md
-ms.openlocfilehash: 06e4beacc013e792ec0cd028a9d665b2b7f8748a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 01d5e9378910b99a6c5da932cfbebb99cd8d1aa9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162748"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139947779"
 ---
 # Update-AzSupportTicket
 
 ## SYNOPSIS
 Update support ticket.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/update-azsupportticket) untuk informasi terkini.
 
 ## SYNTAX
 

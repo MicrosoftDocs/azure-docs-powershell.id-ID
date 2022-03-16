@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPublicIpAddress.md
-ms.openlocfilehash: 6d906158b1fbe11075b2fe96f4a3bdc83a164b53
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 522e51cbf5a605674da12bd5d92ceba16f302b68
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311132"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139918663"
 ---
 # Set-AzPublicIpAddress
 
 ## SYNOPSIS
 Memperbarui alamat IP publik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azpublicipaddress) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ PS C:\> $publicIp = Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName
 
 Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam grup sumber daya $rgName.
 Perintah kedua mengatur properti DomainNameLabel ke prefiks dns yang diperlukan.
-Set-AzPublicIPAddress opsi memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
+Set-AzPublicIPAddress ip publik memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
     
 ### 3: Mengubah label domain DNS alamat IP publik
 ```
@@ -73,7 +76,7 @@ PS C:\> $publicIp = Get-AzPublicIpAddress -Name $publicIpName -ResourceGroupName
 
 Perintah pertama mendapatkan sumber daya alamat IP publik dengan nama $publicIPName dalam grup sumber daya $rgName.
 Perintah kedua mengatur properti DomainNameLabel ke prefiks dns yang diperlukan.
-Set-AzPublicIPAddress opsi memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
+Set-AzPublicIPAddress ip publik memperbarui sumber daya alamat IP publik dengan objek yang diperbarui. DomainNameLabel & Fqdn dimodifikasi seperti yang diharapkan.
 
 ## PARAMETERS
 

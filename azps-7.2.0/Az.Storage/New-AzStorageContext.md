@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContext.md
-ms.openlocfilehash: e23110f5f1a43227775dae2e60d9938c140bad9c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ede979e126f2895a8b2e13dd9ff7f434557a716c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287227"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948391"
 ---
 # New-AzStorageContext
 
 ## SYNOPSIS
 Membuat Azure Storage konteks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragecontext) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -121,7 +124,7 @@ PS C:\>New-AzStorageContext -Local | Get-AzStorageContainer
 ```
 
 Perintah ini membuat konteks dengan menggunakan akun penyimpanan pengembangan lokal, lalu meneruskan konteks baru ke cmdlet **Get-AzStorageContainer** menggunakan operator pipeline.
-Perintah tersebut mendapatkan Azure Storage khusus untuk akun penyimpanan pengembang lokal.
+Perintah akan mendapatkan Azure Storage khusus untuk akun penyimpanan pengembang lokal.
 
 ### Contoh 6: Dapatkan beberapa wadah
 ```
@@ -159,7 +162,7 @@ PS C:\> $Context | Get-AzStorageBlob -Container "ContosoMain"
 
 Perintah pertama menghasilkan token SAS menggunakan cmdlet **New-AzStorageContainerSASToken** untuk wadah bernama ContosoMain, lalu menyimpan token tersebut di $SasToken pelanggan.
 Token tersebut untuk izin membaca, menambahkan, memperbarui, dan menghapus.
-Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan token SAS yang disimpan di $SasToken, lalu menyimpan konteks tersebut di variabel $Context mereka.
+Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan token SAS yang disimpan di $SasToken, lalu menyimpan konteks tersebut di variabel $Context bervariasi.
 Perintah akhir mencantumkan semua blob yang terkait dengan wadah bernama ContosoMain dengan menggunakan konteks yang disimpan dalam $Context.
 
 ### Contoh 10: Membuat konteks menggunakan Autentikasi OAuth

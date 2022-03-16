@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultCertificate.md
-ms.openlocfilehash: fceafa1ff6c135691fc011a86360d433aa37f0e2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 89ab42de082ee71cc8d9761155110d4c61c09fa6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341138"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076941"
 ---
 # Remove-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat dari kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Id                 : https://contosokv01.vault.azure.net:443/certificates/selfsi
 ```
 
 Perintah ini menghapus sertifikat yang bernama SelfSigned01 dari penyimpanan kunci yang bernama Contoso CONTOSO CONTOSO01.
-Perintah ini menentukan parameter *Force.*
+Perintah ini menentukan parameter *Force* .
 Oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
 
 ### Contoh 2: Membersihkan sertifikat yang dihapus dari kunci vault secara permanen
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

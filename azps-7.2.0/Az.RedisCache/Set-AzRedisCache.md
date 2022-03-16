@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.rediscache/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RedisCache/RedisCache/help/Set-AzRedisCache.md
-ms.openlocfilehash: b1e0b9d8f362c193decbf8e408a5bd4d8c754dd1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ddaabf1faa30b3e4ad4a2bb9d8e744b4baf9408
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271019"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050097"
 ---
 # Set-AzRedisCache
 
 ## SYNOPSIS
 Mengubah Cache Azure untuk Redis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.rediscache/set-azrediscache) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -371,7 +374,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 Menentukan bahwa Redis data persistensi diaktifkan.
 Premium tier saja.
 - rdb-storage-connection-string.
-Menentukan string koneksi ke akun Storage untuk Persistensi data Redis.
+Menentukan string koneksi ke akun Storage untuk Redis persistensi data.
 Premium tier saja.
 - rdb-backup-frequency.
 Menentukan frekuensi pencadangan untuk persistensi data Redis.

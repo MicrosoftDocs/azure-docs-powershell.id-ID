@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Gallery.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.gallery.admin/remove-azsgalleryitem
 schema: 2.0.0
-ms.openlocfilehash: c0a74880b44e5f71f7c393336c787a3b871da440cf2a17fca21d12ca83075831
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c39a6cd64f48a7d8d6657499357daa1dd70fc091
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/15/2022
 ms.locfileid: "132414474"
 ---
 # Remove-AzsGalleryItem
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -184,7 +184,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IGalleryIdentity> : Parameter Identitas
+INPUTOBJECT <IGalleryIdentity>: Parameter Identitas
   - `[GalleryItemName <String>]`: Identitas item galeri. Menyertakan nama penerbit, nama item, dan mungkin menyertakan versi yang dipisahkan oleh karakter periode.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.

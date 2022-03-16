@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitConnectionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzExpressRouteCircuitConnectionConfig.md
-ms.openlocfilehash: 0c6e5847855c9d0aefa2beefdecff6090745c586
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 663565d3fd9db2e98bba7f9dcfb40f3c166e6f25
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317835"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920481"
 ---
 # Remove-AzExpressRouteCircuitConnectionConfig
 
 ## SYNOPSIS
 Menghapus konfigurasi koneksi sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azexpressroutecircuitconnectionconfig) untuk informasi terkini.
 
 ## SYNTAX
 

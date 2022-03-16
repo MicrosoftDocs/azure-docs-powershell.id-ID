@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ItemContent.md
-ms.openlocfilehash: 7c1074342dce67bcbb5f1c80412039ddadb5c389
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e129fcaedfaabd8fc0aac791cbd5c0d5842eb2e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265564"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047703"
 ---
 # Get-AzDataLakeGen2ItemContent
 
 ## SYNOPSIS
 Unduh file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azdatalakegen2itemcontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Get-AzDataLakeGen2ItemContent -InputObject <AzureDataLakeGen2Item> [-Destination
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataLakeGen2ItemContent** mengunduh file di Filesystem dalam akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage baru. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 

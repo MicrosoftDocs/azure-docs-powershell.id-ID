@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 4601999c315c0c87ff7c2941ec2a09583ccdc7d0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f6360a4720331ed74da4d2abe36aaa20b966b7c4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139920967"
 ---
 # New-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Membuat Sertifikat Akar Tepercaya untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewaytrustedrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\> $certFilePath = ".\rootCA.cer"
 PS C:\> $trc = New-AzApplicationGatewayTrustedRootCertificate -Name "trc1" -CertificateFile $certFilePath
 ```
 
-Perintah ini membuat Sertifikat Akar Tepercaya bernama Daftar "trc1" dan menyimpan hasilnya dalam variabel yang bernama $trc.
+Perintah ini membuat Sertifikat Akar Tepercaya bernama Daftar "trc1" dan menyimpan hasilnya dalam variabel yang disebut $trc.
 
 ## PARAMETERS
 

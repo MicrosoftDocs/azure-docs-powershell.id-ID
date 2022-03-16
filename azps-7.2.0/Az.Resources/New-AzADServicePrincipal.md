@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADServicePrincipal.md
-ms.openlocfilehash: a9978231033ecf69cd5b125d57e6495e89eb5522
-ms.sourcegitcommit: fb65696d7789509fab3898dcaa774e17720aa0bd
+ms.openlocfilehash: 8f9120c934639d74f24b9aff114f9d32d0078254
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "138875053"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140049953"
 ---
 # New-AzADServicePrincipal
 
@@ -18,6 +18,9 @@ ms.locfileid: "138875053"
 Menambahkan entitas baru ke servicePrincipals
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azadserviceprincipal) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ### -AddIn
 Menentukan perilaku kustom yang dapat digunakan oleh layanan untuk memanggil aplikasi dalam konteks tertentu.
 Misalnya, aplikasi yang dapat menyajikan streaming file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'.
-Ini akan memungkinkan layanan Microsoft 365 panggilan aplikasi dalam konteks dokumen yang sedang digunakan pengguna.
+Ini akan memungkinkan layanan Microsoft 365 anda panggil aplikasi dalam konteks dokumen yang sedang digunakan pengguna.
 Untuk membuat, lihat bagian CATATAN untuk properti ADDIN dan membuat tabel hash.
 
 ```yaml
@@ -747,7 +750,7 @@ Accept wildcard characters: False
 Menentukan URL tempat penyedia layanan mengalihkan pengguna ke Azure AD untuk mengautentikasi.
 Azure AD menggunakan URL untuk meluncurkan aplikasi dari Microsoft 365 atau Aplikasi Azure AD Saya.
 Ketika kosong, Azure AD melakukan masuk yang dimulai IdP untuk aplikasi yang dikonfigurasi dengan akses masuk tunggal berbasis SAML.
-Pengguna meluncurkan aplikasi tersebut dari Microsoft 365, Azure AD My Apps, atau URL SSO Azure AD.
+Pengguna meluncurkan aplikasi tersebut dari Microsoft 365, URL Aplikasi Saya Azure AD, atau URL SSO Azure AD.
 
 ```yaml
 Type: System.String
@@ -1138,7 +1141,7 @@ APPLICATIONOBJECT <IMicrosoftGraphApplication>: Objek aplikasi, bisa digunakan s
   - `[(Any) <Object>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama ditampilkan dalam direktori
-  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan oleh layanan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat menyajikan streaming file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'. Ini akan memungkinkan layanan Office 365 anda panggil aplikasi dalam konteks dokumen yang sedang digunakan pengguna.
+  - `[AddIn <IMicrosoftGraphAddIn[]>]`: Menentukan perilaku kustom yang dapat digunakan oleh layanan untuk memanggil aplikasi dalam konteks tertentu. Misalnya, aplikasi yang dapat menyajikan streaming file dapat mengatur properti addIns untuk fungsionalitas 'FileHandler'. Ini akan memungkinkan layanan Office 365 panggilan aplikasi dalam konteks dokumen yang sedang digunakan pengguna.
     - `[Id <String>]`: 
     - `[Property <IMicrosoftGraphKeyValue[]>]`: 
       - `[Key <String>]`: Kunci.
@@ -1301,11 +1304,11 @@ DELEGATEDPERMISSIONCLASSIFICATION <IMicrosoftGraphDelegatedPermissionClassificat
   - `[PermissionId <String>]`: Pengidentifikasi unik (id) untuk izin yang didelegasikan tercantum dalam kumpulan servicePrincipal yang diterbitkanPermissionScopes. Diperlukan pada saat membuat. Tidak mendukung $filter.
   - `[PermissionName <String>]`: Nilai klaim (nilai) untuk izin yang didelegasikan tercantum dalam kumpulan servicePrincipal yang diterbitkanPermissionScopes. Tidak mendukung $filter.
 
-ENDPOINT <IMicrosoftGraphEndpoint[]>: Titik akhir yang tersedia untuk penemuan. Layanan seperti Sharepoint akan mengisi properti ini dengan titik akhir SharePoint penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
+TITIK AKHIR <IMicrosoftGraphEndpoint[]>: Titik akhir yang tersedia untuk penemuan. Layanan seperti Sharepoint akan mengisi properti ini dengan titik akhir SharePoint penyewa yang dapat ditemukan dan digunakan aplikasi lain dalam pengalaman mereka.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: Nama ditampilkan dalam direktori
 
-HOMEREALMDISCOVERYPOLICY <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>: The homeRealmDiscoveryPolicies ditetapkan untuk prinsipal layanan ini. Mendukung $expand.
+HOMEREALMDISCOVERYPOLICY <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>: The homeRealmDiscoveryPolicies yang ditetapkan pada prinsipal layanan ini. Mendukung $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: Nama ditampilkan dalam direktori

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageStaticWebsite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Disable-AzStorageStaticWebsite.md
-ms.openlocfilehash: eaa671feab41a9a58066c44c48d9856055fc03ad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bf71840dcaed754b03d5412c422ffe4782cfd2ad
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283867"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139948751"
 ---
 # Disable-AzStorageStaticWebsite
 
 ## SYNOPSIS
-Menonaktifkan situs web statis untuk akun Azure Storage baru.
+Menonaktifkan situs web statis untuk akun Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/disable-azstoragestaticwebsite) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Disable-AzStorageStaticWebsite [-PassThru] [-Context <IStorageContext>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzStorageStaticWebsite** menonaktifkan situs web statis untuk Azure Storage tersebut.
+Cmdlet **Disable-AzStorageStaticWebsite** menonaktifkan situs web statis untuk Azure Storage anda.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Cmdlet **Disable-AzStorageStaticWebsite** menonaktifkan situs web statis untuk A
 C:\PS>Disable-AzStorageStaticWebsite
 ```
 
-Perintah ini menonaktifkan situs web statis untuk Azure Storage baru.
+Perintah ini menonaktifkan situs web statis untuk Azure Storage statis.
 
 ## PARAMETERS
 

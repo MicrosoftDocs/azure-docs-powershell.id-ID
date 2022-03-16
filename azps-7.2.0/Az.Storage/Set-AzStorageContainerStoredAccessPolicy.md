@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageContainerStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageContainerStoredAccessPolicy.md
-ms.openlocfilehash: 72f887938fced2d3d0fede7af6db8e45a91c200a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9e0a9e67c38847b87e375c2dd5b2bc1c8e6ace49
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290588"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139915243"
 ---
 # Set-AzStorageContainerStoredAccessPolicy
 
 ## SYNOPSIS
 Menetapkan kebijakan akses tersimpan untuk tempat penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragecontainerstoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoStartTime
-Mengatur waktu mulai yang akan $Null.
+Mengatur waktu mulai untuk waktu $Null.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
