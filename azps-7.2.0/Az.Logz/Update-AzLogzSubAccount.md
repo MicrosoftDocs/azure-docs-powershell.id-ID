@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccount.md
-ms.openlocfilehash: a92f73e62b49f03473005858412b7d41b1b4182d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4e681d18633bf309bfef32e4f228d719273f29ad
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261180"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121813"
 ---
 # Update-AzLogzSubAccount
 
 ## SYNOPSIS
 Memperbarui sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/update-azlogzsubaccount) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementHttpMessageDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementHttpMessageDiagnostic.md
-ms.openlocfilehash: 42e29c89859f9c9a1ad8b671941f976ede65dae2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 70103fbed213b9ca13b32c8f1ba45d80437f108f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341714"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140144565"
 ---
 # New-AzApiManagementHttpMessageDiagnostic
 
 ## SYNOPSIS
 Membuat contoh **PsApiManagementHttpMessageDiagnostic** yang merupakan pengaturan diagnostik Pesan Http diagnostik
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementhttpmessagediagnostic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Headers                   Body
 {Content-Type, UserAgent} Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementBodyDiagnosticSetting
 ```
 
-Buat pengaturan diagnostik pesan http untuk membuat log `Content-Type` dan header disertai dengan `User-Agent` 100 byte dari `body`
+Buat pengaturan diagnostik pesan http untuk membuat log `Content-Type` dan `User-Agent` header disertai dengan 100 byte dari `body`
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

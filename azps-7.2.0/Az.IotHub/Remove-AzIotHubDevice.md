@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/remove-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Remove-AzIotHubDevice.md
-ms.openlocfilehash: 73554025f2997d8d1fbf784cdbf8eff28b550b82
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: be4a5a1ad1ccf7ed2435f90873efeb7fd4b03c35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265003"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122785"
 ---
 # Remove-AzIotHubDevice
 
 ## SYNOPSIS
 Hapus perangkat IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/remove-aziothubdevice) untuk informasi terkini.
 
 ## SYNTAX
 

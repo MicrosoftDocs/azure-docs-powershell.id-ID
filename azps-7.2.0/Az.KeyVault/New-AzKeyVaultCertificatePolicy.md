@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultCertificatePolicy.md
-ms.openlocfilehash: 01fd4faf5b41f0310054386516b66484c0827ec6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c714f094a69c1987ad00b25de2bb2423ebf88051
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122569"
 ---
 # New-AzKeyVaultCertificatePolicy
 
 ## SYNOPSIS
 Membuat objek kebijakan sertifikat dalam memori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultcertificatepolicy) untuk informasi terkini.
 
 ## SYNTAX
 

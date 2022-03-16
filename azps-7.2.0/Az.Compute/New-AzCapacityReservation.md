@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azca
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservation.md
-ms.openlocfilehash: 01e6e42e8d60ccbba4684b76335eea71e3cc8dbd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 48302d02047ba6d965eb2b0544ab6d56a458ca6f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092493"
 ---
 # New-AzCapacityReservation
 
 ## SYNOPSIS
 Membuat sumber daya Reservasi Kapasitas dalam Grup Reservasi Kapasitas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azcapacityreservation) untuk informasi terkini.
 
 ## SYNTAX
 

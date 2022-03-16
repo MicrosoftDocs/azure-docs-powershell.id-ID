@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorSSOConfiguration.md
-ms.openlocfilehash: dc11c4d879822212f1b7da2953e6bea7c8e32d14
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f19b1a67505bab119a077bf7c2c9f41c139239bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169950"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140121903"
 ---
 # Get-AzLogzMonitorSSOConfiguration
 
 ## SYNOPSIS
 Dapatkan sumber daya masuk tunggal Logz untuk Monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/get-azlogzmonitorssoconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

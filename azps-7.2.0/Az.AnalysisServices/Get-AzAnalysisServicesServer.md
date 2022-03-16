@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Get-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Get-AzAnalysisServicesServer.md
-ms.openlocfilehash: f958d891e30a64cdeed1aa54c81bcfa5eef5a6ad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0a72ba722b6a952b0d92fa7d9a530b09feb1ff3e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138316251"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127753"
 ---
 # Get-AzAnalysisServicesServer
 
 ## SYNOPSIS
 Mendapatkan detail dari server Analysis Services.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/get-azanalysisservicesserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzAnalysisServicesServer [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzAnalysisServicesServer mendapatkan detail server Analysis Services.
+Cmdlet Get-AzAnalysisServicesServer baru mendapatkan detail server Analysis Services.
 
 ## EXAMPLES
 

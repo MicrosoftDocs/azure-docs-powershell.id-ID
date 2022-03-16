@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKey.md
-ms.openlocfilehash: 3edd211fcad3c0ff1215cbda0960801774c0e8b6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2f017f4df5537881f46ae861873726be5be510fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138279644"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122605"
 ---
 # Get-AzKeyVaultKey
 
 ## SYNOPSIS
 Mendapatkan kunci Kunci Vault. Harap catat bahwa informasi mendetail tentang kunci, seperti tipe kunci atau ukuran kunci, hanya tersedia ketika membuat kueri versi kunci tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 

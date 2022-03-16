@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/set-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Set-AzIotHubRoute.md
-ms.openlocfilehash: 76404b542177a51f3e37da378276a146d4c4892e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bc14d0bd06e4db3dfacb6834973839ebe4e55e00
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270283"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140122695"
 ---
 # Set-AzIotHubRoute
 
 ## SYNOPSIS
 Memperbarui rute dalam IoT Hub
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/set-aziothubroute) untuk informasi terkini.
 
 ## SYNTAX
 

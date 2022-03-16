@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJob.md
-ms.openlocfilehash: a970f5e7a0baed9e5e25d875e2a74d6cac8d4703
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ca96cd5f9b70a23fdff06326e6b5948c276b3fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311660"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090855"
 ---
 # Get-AzDataBoxJob
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/get-azdataboxjob) untuk informasi terkini.
 
 ## SYNTAX
 

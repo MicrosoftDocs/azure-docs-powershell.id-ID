@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVM.md
-ms.openlocfilehash: 8672d6d2bcd074590fa4a9c62e71ba92033184b2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 12a0568f989a51beb80b17bca96ba23e9432aab8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257004"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140092097"
 ---
 # Remove-AzVM
 
 ## SYNOPSIS
 Menghapus mesin virtual dari Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvm) untuk informasi terkini.
 
 ## SYNTAX
 

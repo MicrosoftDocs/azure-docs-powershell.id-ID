@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 6aa313413d8895d6e7361c4cc12e34dd700ecb60
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5994a8bf03ff2d984fe1e76b8b082b2e73084eaa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140069237"
 ---
 # New-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
 Membuat pencarian baru yang disimpan dengan parameter tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightssavedsearch) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionParameter
-Parameter fungsi opsional jika kueri bertindak sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh dan sintaks yang tepat selengkapnya, silakan merujuk ke https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions .
+Parameter fungsi opsional jika kueri bertindak sebagai fungsi. Nilai harus dalam format berikut: 'param-name1:type1 = default_value1, param-name2:type2 = default_value2'. Untuk contoh dan sintaks yang tepat selengkapnya, silakan merujuk ke https://docs.microsoft.com/azure/kusto/query/functions/user-defined-functions.
 
 ```yaml
 Type: System.String
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -271,6 +274,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./Az.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./Az.OperationalInsights.md)
 
 

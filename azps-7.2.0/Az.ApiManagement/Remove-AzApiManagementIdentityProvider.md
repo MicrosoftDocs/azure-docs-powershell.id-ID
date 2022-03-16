@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementIdentityProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementIdentityProvider.md
-ms.openlocfilehash: b3c0f4dda7fae09dbf250ce3dedb983962f00d05
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 13bda7040b761002c16eeb1641cd4ca1019f8e4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140127105"
 ---
 # Remove-AzApiManagementIdentityProvider
 
 ## SYNOPSIS
 Menghapus Konfigurasi Penyedia Identitas yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementidentityprovider) untuk informasi terkini.
 
 ## SYNTAX
 
