@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
-ms.openlocfilehash: b8398234415f1fa05a90d4ef1b8346fbbfdcc728
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6d57d4f39e74d29c0a395a09de5e400aba2d1288
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283291"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955751"
 ---
 # Get-AzAutoscaleSetting
 
 ## SYNOPSIS
 Mendapatkan pengaturan Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azautoscalesetting) untuk informasi terkini.
 
 ## SYNTAX
 

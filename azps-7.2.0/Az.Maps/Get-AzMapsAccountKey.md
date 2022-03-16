@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/get-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsAccountKey.md
-ms.openlocfilehash: 045821011e7047adc77e2cf555dd437e2b8dca62
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3ebfb508810113878ccbf39b9975f183178d50e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274011"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139956507"
 ---
 # Get-AzMapsAccountKey
 
@@ -18,6 +18,9 @@ ms.locfileid: "138274011"
 Dapatkan kunci untuk digunakan dengan Peta API.
 Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke Peta REST API.
 Hanya satu kunci yang diperlukan dalam satu waktu; dua di antaranya diberikan untuk menyediakan regenerasi kunci yang mulus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/get-azmapsaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PrimaryKey                                  PrimaryKeyLastUpdated        Seconda
 AZPcJC8OCNCpqRsnj1NB3Ngl-qQncBP5IT21jts_2b0 2021-05-20T05:59:16.2028276Z 3l_cups4uVp7LB90G861PB_ddEFJFOdt0beX1U8ROO4 2021-05-20T05:59:16.2028276Z
 ```
 
-Perintah ini agar tombol dapat digunakan dengan Peta API.
+Perintah ini membuat tombol dapat digunakan dengan Peta API.
 Kunci digunakan untuk mengautentikasi dan mengotorisasi akses ke Peta REST API.
 Hanya satu kunci yang diperlukan dalam satu waktu; dua di antaranya diberikan untuk menyediakan regenerasi kunci yang mulus.
 

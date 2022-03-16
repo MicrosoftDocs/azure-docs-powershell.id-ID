@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubNamespace.md
-ms.openlocfilehash: acab2b2147115465688589f9069693d03ff902f2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b23a7548171a13fb7ed75fc897dac05f6b9ba8b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123721"
 ---
 # Remove-AzEventHubNamespace
 
 ## SYNOPSIS
 Menghapus ruang nama Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhubnamespace) untuk informasi terkini.
 
 ## SYNTAX
 

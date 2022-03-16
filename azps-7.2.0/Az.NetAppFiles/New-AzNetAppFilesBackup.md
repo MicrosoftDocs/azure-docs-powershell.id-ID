@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesBackup.md
-ms.openlocfilehash: 598359c155646cc2ee9a8777492a8829b593e557
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 18a5bfa1cdb0978e29eb0d2ac08f7d5cb41a1354
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281067"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140120013"
 ---
 # New-AzNetAppFilesBackup
 
 ## SYNOPSIS
 Membuat cadangan Baru Azure NetApp Files (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilesbackup) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobPreparationAndReleaseTaskStatus.md
-ms.openlocfilehash: ce3f97e474bf119c654e3811443ad5144e866e90
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cfbd9155f02a9d1e2c1b28535ec7b5985817b08a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165358"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061383"
 ---
 # Get-AzBatchJobPreparationAndReleaseTaskStatus
 
 ## SYNOPSIS
 Dapatkan persiapan pekerjaan Kumpulan dan lepaskan status tugas.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchjobpreparationandreleasetaskstatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ PoolId                                 : test
 ```
 
 Perintah ini mendapatkan status persiapan pekerjaan dan rilis tugas untuk "Tes" pekerjaan.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan status persiapan pekerjaan dan rilis pekerjaan dengan Filter dan Pilih yang ditentukan
 ```
@@ -70,7 +73,7 @@ Perintah ini mendapatkan status tugas persiapan dan rilis pekerjaan untuk "Tes" 
 
 ### -BatchContext
 Contoh BatchAccountContext untuk digunakan ketika berinteraksi dengan layanan Batch.
-Gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses diisi.
+Gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext

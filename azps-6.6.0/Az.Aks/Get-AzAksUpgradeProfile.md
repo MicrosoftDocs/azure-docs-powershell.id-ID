@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksupg
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksUpgradeProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksUpgradeProfile.md
-ms.openlocfilehash: bef9734f6cfdc8b8a17901511a3903274b0e804e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2438f4dcdd6f90b06a12aee231e96785bec6ed50
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374018"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140145213"
 ---
 # Get-AzAksUpgradeProfile
 
 ## SYNOPSIS
 Mendapatkan detail profil pemutakhiran untuk kluster terkelola dengan grup dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/get-azaksupgradeprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -146,7 +149,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAksIdentity> : Parameter Identitas
+INPUTOBJECT <IAksIdentity>: Parameter Identitas
   - `[AgentPoolName <String>]`: Nama agen kolam renang.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.

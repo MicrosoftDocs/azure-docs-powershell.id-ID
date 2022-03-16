@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCircuitConnectionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCircuitConnectionConfig.md
-ms.openlocfilehash: 7820e3ecf02a39a9699ea6489936b413aed763b0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 103392800bb9b02ceeaa76b0b275152b2dbe6d69
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136390370"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140075969"
 ---
 # Add-AzExpressRouteCircuitConnectionConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi koneksi sirkuit ke Peering Privat dari Sirkuit Rute Ekspres. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azexpressroutecircuitconnectionconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Add-AzExpressRouteCircuitConnectionConfig [-Name] <String> [-ExpressRouteCircuit
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzExpressRouteCircuitConnectionConfig** menambahkan konfigurasi koneksi sirkuit ke peering privat untuk sirkuit ExpressRoute. Hal ini memungkinkan peering dua Sirkuit Rute Ekspres di seluruh kawasan atau langganan. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCircuitConnectionConfig,** Anda harus memanggil cmdlet Set-AzExpressRouteCircuit untuk mengaktifkan konfigurasi.
+Cmdlet **Add-AzExpressRouteCircuitConnectionConfig** menambahkan konfigurasi koneksi sirkuit ke peering privat untuk sirkuit ExpressRoute. Hal ini memungkinkan peering dua Sirkuit Rute Ekspres di seluruh kawasan atau langganan. Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCircuitConnectionConfig**, Anda harus memanggil cmdlet Set-AzExpressRouteCircuit untuk mengaktifkan konfigurasi.
 
 ## EXAMPLES
 
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuit
-Sirkuit ExpressRoute sedang diubah. Ini adalah objek Azure yang dikembalikan oleh cmdlet **Get-AzExpressRouteCircuit.**
+Sirkuit ExpressRoute sedang diubah. Ini adalah objek Azure yang dikembalikan oleh cmdlet **Get-AzExpressRouteCircuit** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

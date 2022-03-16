@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApi.md
-ms.openlocfilehash: a641abe3e9083e1e6e9992953901c38cf1d64f7c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1ea4abae19fa780e87c9b25281f94aa019e28ced
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297227"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140062751"
 ---
 # Set-AzApiManagementApi
 
 ## SYNOPSIS
 Mengubah API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapi) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default $null.
+Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdProviderId
-Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai default $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
+Pengidentifikasi server otorisasi OpenId. Parameter ini bersifat opsional. Nilai default adalah $null. Harus ditentukan jika BearerTokenSendingMethods ditentukan.
 
 ```yaml
 Type: System.String

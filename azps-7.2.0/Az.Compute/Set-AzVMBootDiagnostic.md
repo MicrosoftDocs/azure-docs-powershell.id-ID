@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBootDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMBootDiagnostic.md
-ms.openlocfilehash: 8e72c156f437195fc222a7549f23531b3634d17e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 79aa24aaf2b26f284720d35d14ab60fca0a97553
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125557"
 ---
 # Set-AzVMBootDiagnostic
 
 ## SYNOPSIS
 Mengubah properti diagnostik komputer virtual untuk boot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmbootdiagnostic) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobStatistic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobStatistic.md
-ms.openlocfilehash: be2ff1903764473a304a3d6143b1a11fcbbf1c90
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ad642e034dc9ee73a08a82c7445b9c2aab23e402
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138294716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061365"
 ---
 # Get-AzBatchJobStatistic
 
 ## SYNOPSIS
 Mendapatkan statistik ringkasan pekerjaan untuk akun Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchjobstatistic) untuk informasi terkini.
 
 ## SYNTAX
 

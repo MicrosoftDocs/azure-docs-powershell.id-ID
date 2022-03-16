@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementBackendServiceFabric.md
-ms.openlocfilehash: 020cf45db517afc05f7cbfda265712e94ef82b43
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d57128f7fae4d4d7b60467d7c22c1566fdb8035f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350762"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140144601"
 ---
 # New-AzApiManagementBackendServiceFabric
 
 ## SYNOPSIS
 Membuat objek dari `PsApiManagementServiceFabric`
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementbackendservicefabric) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzApiManagementBackendServiceFabric -ManagementEndpoint <String[]> [-ClientC
 
 ## DESCRIPTION
 
-Cmdlet **New-AzApiManagementBackendServiceFabric** membuat objek untuk digunakan dalam `PsApiManagementServiceFabric` cmdlet **New-AzApiManagementBackend** **dan Set-AzApiManagementBackend.**
+Cmdlet **New-AzApiManagementBackendServiceFabric** `PsApiManagementServiceFabric` membuat objek untuk digunakan dalam cmdlet **New-AzApiManagementBackend** **dan Set-AzApiManagementBackend**.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Backend Service Fabric In-Memory Objek
+### Contoh 1: Membuat backend Service Fabric In-Memory Objek
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$ManagementEndpoints = 'https://sfbackend-01.net:443', 'https://sfbackend-02.net:443'
@@ -41,7 +44,7 @@ PS C:\>$serviceFabric = New-AzApiManagementBackendServiceFabric -ManagementEndpo
 PS C:\>$backend = New-AzApiManagementBackend -Context  $apimContext -BackendId 123 -Url 'https://contoso.com/awesomeapi' -Protocol http -ServiceFabricCluster $serviceFabric -Description "service fabric backend" -PassThru
 ```
 
-Membuat Kontrak Service Fabric Backend
+Membuat Backend Service Fabric Contract
 
 ## PARAMETERS
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzInsightsPrivateLinkScopedResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzInsightsPrivateLinkScopedResource.md
-ms.openlocfilehash: 53494e9d82b18e2317a27e204be665cff6ea1b69
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 680b28dc2cbc2a3bbac6e570f0aaabd0c21e69c1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263771"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955427"
 ---
 # New-AzInsightsPrivateLinkScopedResource
 
 ## SYNOPSIS
 buat untuk sumber daya yang lingkup link privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azinsightsprivatelinkscopedresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzInsightsPrivateLinkScopedResource -LinkedResourceId <String> -Name <String
 ```
 
 ## DESCRIPTION
-buat untuk sumber daya dengan lingkup link privat, sumber daya yang lingkupnya bisa menjadi ruang kerja Analitik Log atau Insights aplikasi
+buat untuk sumber daya dengan lingkup tautan privat, sumber daya yang lingkupnya bisa menjadi ruang kerja Analitik Log atau Insights aplikasi
 
 ## EXAMPLES
 

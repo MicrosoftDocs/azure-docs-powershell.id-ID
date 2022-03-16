@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/New-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/New-AzAttestation.md
-ms.openlocfilehash: 622f55da933e3f96ef8322edcaaee367879f90bd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 51fbcfb597287d839761af3373dec1b2183eca26
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347873"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143575"
 ---
 # New-AzAttestation
 
 ## SYNOPSIS
 Membuat attestation
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/new-azattestation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ TagsTable         :
                     Test          true
 ```
 
-Buat contoh baru Penyedia Attestation bernama *pshtest4* dengan beberapa tag dan gunakan AAD baru untuk menguasai kebijakan DNS.
+Buat contoh baru Penyedia Attestation bernama *pshtest4* dengan beberapa tag dan gunakan AAD untuk menguasai kebijakan DNS.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +67,7 @@ Tags              :
 TagsTable         :
 ```
 
-Buat contoh baru Dari Penyedia Attestation bernama *pshtest3*' yang menggunakan Kepercayaan Default untuk menguasai kebijakan JPEG melalui menentukan serangkaian tombol penandatanganan tepercaya melalui file PEM.
+Buat contoh baru Penyedia Attestation bernama *pshtest3*' yang menggunakanSpijakied untuk menguasai kebijakan JPEG melalui menentukan serangkaian tombol penandatanganan tepercaya melalui file PEM.
 
 ## PARAMETERS
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

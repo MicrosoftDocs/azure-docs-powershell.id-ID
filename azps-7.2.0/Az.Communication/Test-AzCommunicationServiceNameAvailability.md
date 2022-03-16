@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/te
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Test-AzCommunicationServiceNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Test-AzCommunicationServiceNameAvailability.md
-ms.openlocfilehash: 6ab1a52cd30d1012f50eea1d1387955f2d374e77
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ddb259961bd1b3917724729e61d298d2cae02f5d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126097"
 ---
 # Test-AzCommunicationServiceNameAvailability
 
 ## SYNOPSIS
 Memeriksa bahwa nama CommunicationService valid dan belum digunakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/test-azcommunicationservicenameavailability) untuk informasi terkini.
 
 ## SYNTAX
 

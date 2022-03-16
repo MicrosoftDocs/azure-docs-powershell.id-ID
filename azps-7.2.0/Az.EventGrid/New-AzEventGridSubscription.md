@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridSubscription.md
-ms.openlocfilehash: 9b84cc5127dff229b0521b5ee8488fbb2c180387
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7e0232a834845b28553178f00728d8ca0c762ab0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123757"
 ---
 # New-AzEventGridSubscription
 
 ## SYNOPSIS
 Membuat Langganan Acara Kisi Acara Azure baru pada topik, sumber daya Azure, langganan Azure, atau Grup Sumber Daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgridsubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureActiveDirectoryApplicationIdOrUri
-Id Aplikasi Azure Active Directory (AAD) atau Uri untuk mendapatkan token akses yang akan disertakan sebagai token tahan dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
+Id Aplikasi Azure Active Directory (AAD) atau Uri untuk mendapatkan token akses yang akan disertakan sebagai token beruang dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
 
 ```yaml
 Type: System.String
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureActiveDirectoryTenantId
-Id Azure Active Directory (AAD) untuk mendapatkan token akses yang akan disertakan sebagai token bearer dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
+Id Penyewa Azure Active Directory (AAD) untuk mendapatkan token akses yang akan disertakan sebagai token bearer dalam permintaan pengiriman. Hanya berlaku untuk webhook sebagai tujuan.
 
 ```yaml
 Type: System.String

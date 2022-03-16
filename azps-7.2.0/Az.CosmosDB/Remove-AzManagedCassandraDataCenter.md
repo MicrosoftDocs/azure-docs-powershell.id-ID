@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: 6283b2bd25f5aa9b7f3a0e20497eff9700e47173
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 425a7872c0fe3c8ff3a2ecc39fad6e7f93b3546b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301388"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124765"
 ---
 # Remove-AzManagedCassandraDataCenter
 
 ## SYNOPSIS
 Menghapus Azure Managed Instances untuk Apache Sandbox data center.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandradatacenter) untuk informasi terkini.
 
 ## SYNTAX
 

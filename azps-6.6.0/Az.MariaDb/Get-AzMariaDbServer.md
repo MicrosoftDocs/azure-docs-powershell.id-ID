@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbServer.md
-ms.openlocfilehash: 8cc091301a7a4f23477a46067cedacd33e0ac86b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2ec9787473212a85953a38818a5dc0b5d8b8b998
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156832"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140105453"
 ---
 # Get-AzMariaDbServer
 
 ## SYNOPSIS
 Mendapatkan informasi tentang server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ rstrgp02-rep-004           eastus   xpwjyfdgui         10.2    7168             
 
 Perintah ini mencantumkan semua MariaDB di bawah langganan.
 
-### Contoh 2: List all MariaDB under a resource group
+### Contoh 2:  List all MariaDB under a resource group
 ```powershell
 PS C:\> Get-AzMariaDbServer -ResourceGroupName mariadb-test-qu5ov0
 
@@ -199,7 +202,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMariaDbIdentity> : Parameter Identitas
+INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: Nama konfigurasi server.
   - `[DatabaseName <String>]`: Nama database.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.

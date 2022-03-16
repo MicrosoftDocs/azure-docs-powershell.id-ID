@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultSecret.md
-ms.openlocfilehash: a181bd0a9db6bb317726702b0b3d7908f84af537
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0fbbcaaca1ced136412c05a0d20458ac7d614bb6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275084"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055155"
 ---
 # Restore-AzKeyVaultSecret
 
 ## SYNOPSIS
 Membuat rahasia di kunci vault dari rahasia cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultsecret) untuk informasi terkini.
 
 ## SYNTAX
 

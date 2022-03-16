@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
-ms.openlocfilehash: e5389a4e11907ec7f20c81acf1089eae98731371
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ca237ad29a4759ad225ef968d81d45afa3434875
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372817"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076275"
 ---
 # Add-AzMetricAlertRuleV2
 
 ## SYNOPSIS
 Menambahkan atau memperbarui aturan pemberitahuan berbasis metrik V2 (non klasik).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/add-azmetricalertrulev2) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Add-AzMetricAlertRuleV2 -Name <String> -ResourceGroupName <String> -WindowSize <
 ```
 
 ## DESCRIPTION
-Menambahkan atau memperbarui aturan pemberitahuan berbasis metrik **V2 (non klasik)**. Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Menambahkan atau memperbarui **aturan pemberitahuan berbasis metrik V2 (non klasik**). Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -425,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

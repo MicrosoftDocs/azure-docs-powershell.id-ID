@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchAccount.md
-ms.openlocfilehash: e6aabc4945b56211f791dfc1cf283eca44005d89
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d592e8a063c1cfb81aea706b780ba2083a02eea1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349337"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143053"
 ---
 # Remove-AzBatchAccount
 
 ## SYNOPSIS
 Menghapus akun Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzBatchAccount [-AccountName] <String> [[-ResourceGroupName] <String>] [-
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchAccount** menghapus akun Azure Batch.
-Cmdlet akan meminta Anda sebelum menghapus akun, kecuali jika Anda menentukan parameter *Paksa.*
+Cmdlet akan meminta Anda sebelum menghapus akun, kecuali jika Anda menentukan parameter *Paksa* .
 
 ## EXAMPLES
 
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

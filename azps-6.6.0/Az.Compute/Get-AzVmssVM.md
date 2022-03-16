@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmssVM.md
-ms.openlocfilehash: 71e753a534102cd736ec5c0bc15213132d8857cf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0719923035947939845faa417462d7ba05a85d28
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383902"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142657"
 ---
 # Get-AzVmssVM
 
 ## SYNOPSIS
 Mendapatkan properti mesin virtual VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmssvm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ PS C:\> Get-AzVmssVM -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
 Perintah ini memiliki properti mesin virtual VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya bernama Group001.
-Karena perintah tidak menentukan parameter *sakelar InstanceView,* cmdlet mendapatkan tampilan model mesin virtual.
+Karena perintah tidak menentukan parameter *sakelar InstanceView* , cmdlet mendapatkan tampilan model mesin virtual.
 
 ### Contoh 2: Mendapatkan properti tampilan model mesin virtual VMSS
 ```
@@ -62,7 +65,7 @@ PS C:\> Get-AzVmssVM -InstanceView  -ResourceGroupName $rgname  -VMScaleSetName 
 ```
 
 Perintah ini memiliki properti mesin virtual VMSS bernama VMSS004 yang dimiliki oleh grup sumber daya bernama Group002.
-Karena perintah menentukan parameter *sakelar InstanceView,* cmdlet mendapatkan tampilan contoh mesin virtual.
+Karena perintah menentukan parameter *sakelar InstanceView* , cmdlet mendapatkan tampilan contoh mesin virtual.
 Perintah akan mendapatkan ID instans yang disimpan di $ID variabel untuk mendapatkan tampilan instans.
 
 ## PARAMETERS
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

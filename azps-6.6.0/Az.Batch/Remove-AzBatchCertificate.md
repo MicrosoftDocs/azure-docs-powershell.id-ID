@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchCertificate.md
-ms.openlocfilehash: e489f4dc0010320638b44c2901e7710c1b8e9f99
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cd062384f4cf1f43c06f10fcb4871410b016a059
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376398"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143035"
 ---
 # Remove-AzBatchCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat dari akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ PS C:\>Get-AzBatchCertificate -Filter "state eq 'active'" -BatchContext $Context
 Perintah ini mendapatkan semua sertifikat yang aktif dengan menggunakan cmdlet Get-AzBatchCertificate cmdlet.
 Perintah ini memberikan sertifikat aktif ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet tersebut akan menghapus setiap sertifikat.
-Perintah menentukan parameter *Paksa.*
+Perintah menentukan parameter *Paksa* .
 Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ThumbprintAlgorithm
-Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint.*
+Menentukan algoritma yang digunakan untuk mendapatkan parameter *Thumbprint* .
 Saat ini, satu-satunya nilai valid adalah bayangan1.
 
 ```yaml
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

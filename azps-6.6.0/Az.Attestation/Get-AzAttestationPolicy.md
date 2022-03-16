@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicy.md
-ms.openlocfilehash: bbd84556167a76766f747ef7252a6e9233ddd42c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cf54f3488a4d5fa142aa6d96520c93cc845e0f77
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347885"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143665"
 ---
 # Get-AzAttestationPolicy
 
 ## SYNOPSIS
 Dapatkan kebijakan dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/get-azattestationpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ JwtLength  : 1129
 Algorithm  : none
 ```
 
-Dapatkan kebijakan untuk *Pshtest Penyedia Attestation untuk* Tipe *SgxEnclave*.
+Mendapatkan kebijakan untuk *Pshtest Penyedia Attestation untuk* Tipe *SgxEnclave*.
 
 ### Contoh 2
 ```powershell
@@ -85,7 +88,7 @@ JwtLength  : 907
 Algorithm  : none
 ```
 
-Mendapatkan kebijakan untuk Penyedia Default Attestation dari Location *UK South* untuk Tipe *SgxEnclave*.
+Mendapatkan kebijakan untuk Penyedia Default Attestation dari Location *UK South* untuk Type *SgxEnclave*.
 
 ## PARAMETERS
 
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/Get-AzRemoteRenderingAccount.md
-ms.openlocfilehash: 80b7c004e92250fc7ad66fbb86faf96b00aae922
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ae1bb2fce4a2885336b692ae3fa27b1744a48284
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361181"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076329"
 ---
 # Get-AzRemoteRenderingAccount
 
 ## SYNOPSIS
 Dapatkan akun penyajian jarak jauh
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/get-azremoterenderingaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRemoteRenderingAccount -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Dapatkan atau list Akun Penyajian Jarak Jauh di Grup Langganan dan Sumber Daya tertentu.
+Dapatkan atau  list Akun Penyajian Jarak Jauh di Grup Langganan dan Sumber Daya tertentu.
 
 ## EXAMPLES
 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

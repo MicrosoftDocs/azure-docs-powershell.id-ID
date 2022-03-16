@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzFrontDoorCdnRoute.md
-ms.openlocfilehash: db0e1cf34e740f3cede4009111d48755cf8a7698
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 28c751f117d6ea6a026ba01720cf362e33259f2f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138284843"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060177"
 ---
 # Set-AzFrontDoorCdnRoute
 
 ## SYNOPSIS
 Memperbarui rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/set-azfrontdoorcdnroute) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBTableThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBTableThroughput.md
-ms.openlocfilehash: e60c8a5e31f131c60f15d726723f53c0dcadfb94
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4bc5570d070380f65a9bf69fe2a373444b31fe3d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256907"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125179"
 ---
 # Get-AzCosmosDBTableThroughput
 
 ## SYNOPSIS
 Mendapatkan throughput Tabel CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbtablethroughput) untuk informasi terkini.
 
 ## SYNTAX
 

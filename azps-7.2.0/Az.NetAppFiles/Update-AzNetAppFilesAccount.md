@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesAccount.md
-ms.openlocfilehash: e74443b6f13faa66edf6f1dfc3f887c7db97b4fc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 096001872529baf0baeb87316befff475d2e0054
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138295403"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119905"
 ---
 # Update-AzNetAppFilesAccount
 
 ## SYNOPSIS
 Memperbarui akun Azure NetApp Files (ANF) sesuai dengan pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesaccount) untuk informasi terkini.
 
 ## SYNTAX
 
