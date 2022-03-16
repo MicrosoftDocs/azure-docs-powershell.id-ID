@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
-ms.openlocfilehash: 6d1c6a3a4c7ac8c7778fb907e699da23bfdb702a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0fb050e354a1f661a3c222def049d2480edaa985
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164328"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292397"
 ---
 # Get-AzSqlServerAdvisor
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa Penasihat untuk Azure SQL Server.
+Dapatkan satu atau beberapa Penasihat azure SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserveradvisor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlServerAdvisor [-AdvisorName <String>] [-ExpandRecommendedActions] -Serv
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerAdvisor** mendapatkan satu atau beberapa SQL Server Azure untuk SQL Server.
+Cmdlet **Get-AzSqlServerAdvisor** mendapatkan satu atau beberapa SQL Server Azure untuk azure SQL Server.
 
 ## EXAMPLES
 

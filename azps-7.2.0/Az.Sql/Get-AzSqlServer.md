@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServer.md
-ms.openlocfilehash: 817d19208a1d136697b1488227e4ac57bffa99c3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 265e19ad2759ff8e672a645d19e0057f09216dba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276699"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292487"
 ---
 # Get-AzSqlServer
 
 ## SYNOPSIS
 Mengembalikan informasi tentang SQL Database server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Identity                 :
 FullyQualifiedDomainName : server02.database.windows.net
 ```
 
-Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ### Contoh 2: Mendapatkan informasi tentang Azure SQL Database server
 ```
@@ -176,7 +179,7 @@ TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
 AzureADOnlyAuthentication : True
 ```
 
-Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ### Contoh 6: Mendapatkan informasi tentang server Azure SQL Database dengan informasi administrator eksternal
 ```

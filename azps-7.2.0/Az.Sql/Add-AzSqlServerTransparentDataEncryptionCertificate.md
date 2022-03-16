@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: cc0a24c4cd14a838db16edb65757321fde84dc29
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9ccf7283a9d55f2db66d56bf1e5f862a770704c3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308572"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292757"
 ---
 # Add-AzSqlServerTransparentDataEncryptionCertificate
 
 ## SYNOPSIS
 Menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server enkripsi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlservertransparentdataencryptioncertificate) untuk informasi terkini.
 
 ## SYNTAX
 

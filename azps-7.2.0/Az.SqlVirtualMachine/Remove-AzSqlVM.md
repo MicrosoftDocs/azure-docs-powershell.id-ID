@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Remove-AzSqlVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Remove-AzSqlVM.md
-ms.openlocfilehash: d7d43d2d900d8a2ec9042c6abb05e2bdd38b0157
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d6311155d48e6f403dea5bb4c3fcfaf663b80b57
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269692"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261641"
 ---
 # Remove-AzSqlVM
 
 ## SYNOPSIS
 Menghapus mesin virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/remove-azsqlvm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Cmdlet Remove-AzSqlVM menghapus mesin virtual sql.
 PS C:\> Remove-AzSqlVM -ResourceGroupName "ResourceGroup01" -Name "vm"
 ```
 
-Menghapus komputer virtual Azure SQL "vm" dalam grup sumber daya ResourceGroup01.
+Menghapus mesin virtual Azure SQL "vm" dalam grup sumber daya ResourceGroup01.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL mesin virtual.
+SQL objek mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMModel

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Add-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
-ms.openlocfilehash: b84b00d3f537a5f1ab8501a31b169dc2404a7ce2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1f8472fba5586e5bc2337094b719a6c4645038c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136331865"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305249"
 ---
 # Add-AzSecurityAdaptiveNetworkHardening
 
 ## SYNOPSIS
 Menerapkan aturan tertentu pada NSG yang tercantum dalam permintaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/add-azsecurityadaptivenetworkhardening) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

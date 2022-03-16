@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: 2b1b683e42c73314e1f391cf2be6c44ecd960ce6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 80bd8c3e20b67b69ee696829255b7579cdfbbf4c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167755"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292685"
 ---
 # Get-AzSqlDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasebackupshorttermretentionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

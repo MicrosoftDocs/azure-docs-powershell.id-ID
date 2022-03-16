@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverBulkRemove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverBulkRemove.md
-ms.openlocfilehash: ab17f0b0de8f9da5db2f48c2b4d67261828bf63a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3aab231a9739c97af5a1eb49f00d6d93c25bad75
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335068"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140247283"
 ---
 # Invoke-AzResourceMoverBulkRemove
 
@@ -18,6 +18,9 @@ ms.locfileid: "136335068"
 Menghapus kumpulan sumber daya pemindahan yang disertakan dalam badan permintaan dari kumpulan pemindahan.
 The orchestration is done by service.
 Untuk membantu pengguna agar prasyarat operasi klien bisa memanggil operasi dengan properti validateOnly yang diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverbulkremove) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

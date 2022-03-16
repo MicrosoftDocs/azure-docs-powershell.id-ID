@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Disable-AzStackHCIAttestation.md
-ms.openlocfilehash: c1285693a5ba3930d986d42bbcbab51dd8200b96
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0d9805de3716117ff853be1ef77b8922674a6f3e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303099"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261191"
 ---
 # Disable-AzStackHCIAttestation
 
 ## SYNOPSIS
 Disable-AzStackHCIAttestation menonaktifkan ImDS Attestation di host
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/disable-azstackhciattestation) untuk informasi terkini.
 
 ## SYNTAX
 

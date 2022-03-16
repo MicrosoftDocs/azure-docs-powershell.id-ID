@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelBookmark.md
-ms.openlocfilehash: 78b67e1677b30d2468e44a67b85bc816abf5a32e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d4d4528acc21f9b305483fba285519e9506586a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140304727"
 ---
 # New-AzSentinelBookmark
 
 ## SYNOPSIS
 Membuat Bookmark untuk insiden tertentu.<br/>
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelbookmark) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ New-AzSentinelBookmark -ResourceGroupName <String> -WorkspaceName <String> [-Boo
 ## DESCRIPTION
 Cmdlet **New-AzSentinelBookmark** membuat Bookmark di ruang kerja yang ditentukan.<br/>
 Bookmark digunakan untuk menyimpan kueri, komentar, atau tag untuk insiden tertentu.<br/>
-Anda dapat menggunakan *parameter Konfirmasi* dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ Anda dapat menggunakan *parameter Konfirmasi* dan $ConfirmPreference Windows Pow
 PS C:\> $Bookmark = New-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -DisplayName "MyBookmark" -Query "SecurityAlert | take 1"
 ```
 
-Contoh ini membuat **Bookmark di** ruang kerja tertentu, lalu menyimpannya di $Bookmark simpan.
+Contoh ini membuat **Bookmark di** ruang kerja tertentu, lalu menyimpannya di $Bookmark kolom.
 
 ### Contoh 2
 ```powershell
@@ -242,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTag.md
-ms.openlocfilehash: b17300810d22b88fe9f136c7ecb63636261752b2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8507203141515c23cbb012e93a8b10600a60a07d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156258"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305555"
 ---
 # Remove-AzTag
 
 ## SYNOPSIS
 Menghapus tag atau nilai Azure yang sudah ditentukan | Menghapus seluruh kumpulan tag pada sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-aztag) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,10 +44,10 @@ Remove-AzTag
 
 ## DESCRIPTION
 
-**RemovePredefinedTagSet**: Cmdlet **Remove-AzTag menghapus** tag dan nilai Azure yang sudah ditentukan sebelumnya dari langganan Anda.
-Untuk menghapus nilai tertentu dari tag yang sudah ditentukan sebelumnya, gunakan parameter *Nilai.*
+**RemovePredefinedTagSet**: Cmdlet **Remove-AzTag** menghapus tag dan nilai Azure yang sudah ditentukan sebelumnya dari langganan Anda.
+Untuk menghapus nilai tertentu dari tag yang sudah ditentukan sebelumnya, gunakan parameter *Nilai* .
 Secara default, **Remove-AzTag** menghapus tag yang ditentukan dan semua nilainya. Anda tidak bisa menghapus tag atau nilai yang saat ini diterapkan ke grup sumber daya atau sumber daya.
-Sebelum menggunakan **Remove-AzTag,** gunakan parameter *Tag* cmdlet Set-AzResourceGroup cmdlet untuk menghapus tag atau nilai dari grup sumber daya atau sumber daya.
+Sebelum menggunakan **Remove-AzTag**, gunakan parameter *Tag* cmdlet Set-AzResourceGroup cmdlet untuk menghapus tag atau nilai dari grup sumber daya atau sumber daya.
 Modul Tag Azure yang **dihapus-AzTag merupakan** bagian darinya bisa membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
 Tag Azure adalah pasangan nilai nama yang dapat digunakan untuk mengategorikan sumber daya dan grup sumber daya Azure, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
 Anda bisa menetapkan dan menerapkan tag dalam satu langkah, tapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan yang bisa diprediksi untuk tag di langganan Anda.
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan Nama tag yang sudah ditentukan sebelumnya untuk dihapus.
 Secara default, **Remove-AzTag** menghapus tag yang ditentukan dan semua nilainya.
-Untuk menghapus nilai yang dipilih, tetapi tidak menghapus tag, gunakan parameter *Value.*
+Untuk menghapus nilai yang dipilih, tetapi tidak menghapus tag, gunakan parameter *Value* .
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

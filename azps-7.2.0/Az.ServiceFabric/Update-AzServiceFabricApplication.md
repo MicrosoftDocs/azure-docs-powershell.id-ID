@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricApplication.md
-ms.openlocfilehash: 73d7810cbcb8eb4d6ff70163590e5e97ed39ddbb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5c1a287fa907e55dfdb08e982e710603ab1a4e35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258235"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292901"
 ---
 # Update-AzServiceFabricApplication
 
 ## SYNOPSIS
 Update a service fabric application. Ini memungkinkan untuk memperbarui parameter aplikasi dan/atau memutakhirkan versi tipe aplikasi yang akan memicu pemutakhiran aplikasi. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricapplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckRetryTimeoutSec
-Menentukan durasi, dalam detik, setelah Service Fabric lagi memeriksa kesehatan jika pemeriksaan kesehatan sebelumnya gagal.
+Menentukan durasi, dalam detik, setelahnya Service Fabric kembali memeriksa kesehatan jika pemeriksaan kesehatan sebelumnya gagal.
 
 ```yaml
 Type: System.Int32
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckStableDurationSec
-Menentukan durasi, dalam detik, Service Fabric menunggu untuk memverifikasi bahwa aplikasi stabil sebelum pindah ke domain pemutakhiran berikutnya atau menyelesaikan pemutakhiran.
+Menentukan durasi, dalam detik, Service Fabric tunggu untuk memverifikasi bahwa aplikasi stabil sebelum pindah ke domain pemutakhiran berikutnya atau menyelesaikan pemutakhiran.
 Durasi tunggu ini mencegah perubahan kesehatan yang tidak terdeteksi tepat setelah pemeriksaan kesehatan dilakukan.
 
 ```yaml
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumNodeCount
-Menentukan jumlah minimum node tempat pengguna Service Fabric memesan kapasitas untuk aplikasi ini
+Menentukan jumlah minimum node tempat Service Fabric akan memesan kapasitas untuk aplikasi ini
 
 ```yaml
 Type: System.Int64
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeDomainTimeoutSec
-Menentukan waktu maksimum, dalam detik, Service Fabric diperlukan untuk memutakhirkan satu domain pemutakhiran.
+Menentukan waktu maksimum, dalam detik, yang Service Fabric untuk memutakhirkan satu domain pemutakhiran.
 Setelah periode ini, pemutakhiran gagal.
 
 ```yaml

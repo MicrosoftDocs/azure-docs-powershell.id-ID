@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupProtection.md
-ms.openlocfilehash: 2d84b76b59ccf5ea2d3af56cbf38bd8194d791bd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ab85a4321ea16ab8137ae8ccff3fb801ab8a5137
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381833"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140279293"
 ---
 # Disable-AzRecoveryServicesBackupProtection
 
 ## SYNOPSIS
 Menonaktifkan proteksi untuk item yang diproteksi cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackupprotection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Disable-AzRecoveryServicesBackupProtection [-Item] <ItemBase> [-RemoveRecoveryPo
 Cmdlet **Disable-AzRecoveryServicesBackupProtection** menonaktifkan proteksi untuk item Azure Backup-protected.
 Cmdlet ini menghentikan pencadangan item terjadwal seperti jadwal.
 Cmdlet ini juga dapat menghapus poin pemulihan yang sudah ada untuk item cadangan jika dijalankan dengan parameter RemoveRecoveryPoints.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
@@ -40,9 +43,9 @@ PS C:\> $PI = Get-AzRecoveryServicesBackupItem -Container $Cont[0] -WorkloadType
 PS C:\> Disable-AzRecoveryServicesBackupProtection -Item $PI[0]
 ```
 
-Perintah pertama mendapatkan array wadah cadangan, lalu menyimpannya dalam array $Cont array.
+Perintah pertama berisi array wadah cadangan, lalu menyimpannya dalam larik $Cont larik.
 Perintah kedua mendapatkan item Cadangan yang terkait dengan item wadah pertama, lalu menyimpannya dalam $PI variabel.
-Perintah terakhir menonaktifkan Proteksi cadangan untuk item di $PI \[ 0 \] , tetapi mempertahankan data.
+Perintah terakhir menonaktifkan Proteksi cadangan untuk item di $PI\[ 0\], tetapi mempertahankan data.
 
 ### Contoh 2
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -Item
 Menentukan item Cadangan di mana cmdlet ini menonaktifkan proteksi.
-Untuk mendapatkan **AzureRmRecoveryServicesBackupItem,** gunakan cmdlet Get-AzRecoveryServicesBackupItem cmdlet.
+Untuk mendapatkan **AzureRmRecoveryServicesBackupItem**, gunakan cmdlet Get-AzRecoveryServicesBackupItem cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

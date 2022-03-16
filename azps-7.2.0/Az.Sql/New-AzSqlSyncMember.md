@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
-ms.openlocfilehash: 52f3a15db5c93d502327da1b163859b71a605e4c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c744eec45cc5e823842bb20161be38adfde28c7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299628"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292145"
 ---
 # New-AzSqlSyncMember
 
 ## SYNOPSIS
 Membuat anggota Azure SQL Database Sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlsyncmember) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ New-AzSqlSyncMember -Name <String> -MemberDatabaseType <String> -SqlServerDataba
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlSyncMember** membuat Azure SQL Database Sinkronisasi Bersama.
+Cmdlet **New-AzSqlSyncMember** membuat Azure SQL Database Sinkronisasi Terbaru.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ MemberDatabasePassword      :
 SyncState                   : UnProvisioned
 ```
 
-Perintah ini membuat anggota sinkronisasi untuk database Azure SQL.
+Perintah ini membuat anggota sinkronisasi untuk database Azure SQL baru.
 
 ### Contoh 2: Buat anggota sinkronisasi untuk database SQL Server lokal
 ```
@@ -103,7 +106,7 @@ Perintah ini membuat anggota sinkronisasi untuk database SQL lokal.
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Azure SQL Database.
+Nama nama Azure SQL Database.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/new-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJobTargetGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlElasticJobTargetGroup.md
-ms.openlocfilehash: ef3602c94b646821a3b45953ebe35e6401c5d109
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a1dcc0faf159d4258d37d9570b904cae652d1b1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140317553"
 ---
 # New-AzSqlElasticJobTargetGroup
 
 ## SYNOPSIS
 Membuat grup target baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlelasticjobtargetgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzSqlElasticJobTargetGroup [-ParentResourceId] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzSqlElasticJobTargetGroup membuat grup target baru
+Cmdlet New-AzSqlElasticJobTargetGroup cmdlet membuat grup target baru
 
 ## EXAMPLES
 

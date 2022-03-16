@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlDatabase.md
-ms.openlocfilehash: 7761e41d08b33c47ec933ba9dc2e21b56071b5f9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7e73398157823405e164286f239be40a542205cf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376709"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140242261"
 ---
 # Update-AzSynapseSqlDatabase
 
 ## SYNOPSIS
-Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu. Memperbarui database Analisis Synapse SQL baru.
+Fitur ini berada dalam pratinjau terbatas, awalnya hanya dapat diakses untuk langganan tertentu. Memperbarui database Analitik Synapse SQL baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsesqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Update-AzSynapseSqlDatabase -ResourceId <String> [-Tag <Hashtable>] [-PassThru] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSqlDatabase** memperbarui database Analitik Azure Synapse SQL baru.
+Cmdlet **Update-AzSynapseSqlDatabase** memperbarui analitik Azure Synapse SQL database.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Cmdlet **Update-AzSynapseSqlDatabase** memperbarui database Analitik Azure Synap
 PS C:\> Update-AzSynapseSqlDatabase -WorkspaceName ContosoWorkspace -Name ContosoSqlDatabase -Tag @{'key'='value'}
 ```
 
-Perintah ini memperbarui SQL Analitik Azure Synapse.
+Perintah ini memperbarui hasil analisis Azure Synapse SQL database.
 
 ## PARAMETERS
 
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

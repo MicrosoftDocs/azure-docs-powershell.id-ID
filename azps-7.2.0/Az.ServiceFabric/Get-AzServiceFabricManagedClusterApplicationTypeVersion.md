@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationTypeVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedClusterApplicationTypeVersion.md
-ms.openlocfilehash: b6500469d5f180cd10a33b97f5722f7cce85eed2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 995ee954c71f0f8fdd4021605e975789e00c6f07
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317676"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140293009"
 ---
 # Get-AzServiceFabricManagedClusterApplicationTypeVersion
 
 ## SYNOPSIS
 Dapatkan Service Fabric versi jenis aplikasi yang dikelola. Hanya mendukung versi tipe aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagedclusterapplicationtypeversion) untuk informasi terkini.
 
 ## SYNTAX
 

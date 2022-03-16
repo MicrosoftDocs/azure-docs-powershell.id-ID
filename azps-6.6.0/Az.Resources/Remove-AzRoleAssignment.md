@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleAssignment.md
-ms.openlocfilehash: e951330f53d793962059bdfcd2613d3a9a0be2e5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8274d816e91b8808cd22ec1a097d98c273daa2c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136331946"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305609"
 ---
 # Remove-AzRoleAssignment
 
 ## SYNOPSIS
 Menghapus penetapan peran ke pokok tertentu yang ditetapkan pada peran tertentu di lingkup tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -103,7 +106,7 @@ Peran yang ditetapkan untuk POKOK HARUS ditentukan menggunakan parameter RoleDef
 Lingkup penetapan MUNGKIN ditentukan dan jika tidak ditentukan, default untuk lingkup langganan mis. Program ini akan berusaha menghapus penugasan ke pokok dan peran tertentu pada lingkup langganan.
 Lingkup penetapan dapat ditentukan menggunakan salah satu parameter berikut ini.
 a.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/ \<subscriptionId\> b.
+Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/\<subscriptionId\> b.
 ResourceGroupName - Nama grup sumber daya apa pun di bawah langganan.
 c.
 ResourceName, ResourceType, ResourceGroupName dan (opsional) ParentResource - Mengidentifikasi sumber daya tertentu di bawah langganan.
@@ -131,7 +134,7 @@ PS C:\> $roleassignment = Get-AzRoleAssignment |Select-Object -First 1 -Wait
 PS C:\> Remove-AzRoleAssignment -InputObject $roleassignment
 ```
 
-Menghapus objek penetapan peran pertama yang diambil dari commandlet Get-AzRoleAssignment baru.
+Menghapus objek penetapan peran pertama yang diambil dari Get-AzRoleAssignment commandlet.
 
 ## PARAMETERS
 
@@ -370,7 +373,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

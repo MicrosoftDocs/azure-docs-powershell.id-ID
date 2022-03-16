@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerUpgradeHint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerUpgradeHint.md
-ms.openlocfilehash: a732ef61ee342babee7b1f53d086ebfd164a8c7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1a1671f51136c22cc14cee717bfc1e8178633da7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289532"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292253"
 ---
 # Get-AzSqlServerUpgradeHint
 
 ## SYNOPSIS
 Mendapatkan petunjuk tingkatan harga untuk pemutakhiran server Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserverupgradehint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlServerUpgradeHint [-ServerName] <String> [-ExcludeElasticPools <Boolean
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerUpgradeHint** mendapatkan petunjuk tingkatan harga untuk memutakhirkan server Azure SQL Database lain.
+Cmdlet **Get-AzSqlServerUpgradeHint** mendapatkan petunjuk tingkatan harga untuk memutakhirkan server Azure SQL Database.
 Petunjuk mungkin berisi elastis database pool dan petunjuk database mandiri.
 Database yang masih berada di tingkatan harga Web dan Bisnis mendapatkan petunjuk untuk memutakhirkan ke tingkatan harga Dasar, Standar, atau Premium yang baru, atau masuk ke dalam ruang database elastis.
 Cmdlet ini mengembalikan petunjuk untuk semua database yang dihosting di server yang ditentukan.

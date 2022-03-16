@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/mer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Merge-AzReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Merge-AzReservation.md
-ms.openlocfilehash: ca6e00351c4b2c98b71a84dfa94904e6fe876faf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a04d64147ea560ce89fdac78948935100ae3f21b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381483"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140247445"
 ---
 # Merge-AzReservation
 
 ## SYNOPSIS
-Menggabungkan dua `Reservation` s.
+Menggabungkan dua `Reservation`s.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.reservations/merge-azreservation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Merge-AzReservation -Reservation <PSReservation[]> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Gabungkan nilai tertentu `Reservation` ke dalam file baru `Reservation` . Kedua `Reservation` data yang sedang digabungkan harus memiliki properti yang sama.
+Gabungkan nilai tertentu `Reservation`ke dalam file baru `Reservation`. Kedua data `Reservation`yang sedang digabungkan harus memiliki properti yang sama.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Gabungkan nilai tertentu `Reservation` ke dalam file baru `Reservation` . Kedua 
 PS C:\> Merge-AzReservation -ReservationOrderId "1111aaaa-b1b2-c0c2-d0d2-00000fffff" -ReservationId "11111111-1111-1111-1111-1111111111","11111111-0000-0000-0000-1111111111"
 ```
 
-Menggabungkan dua nilai yang `Reservation` ditentukan menjadi satu `Reservation`
+Menggabungkan dua nilai yang `Reservation`ditentukan menjadi satu `Reservation`
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-ReservationOrderId untuk `ReservationOrder` yang berisi `Reservation` dua
+ReservationOrderId untuk `ReservationOrder` yang berisi dua `Reservation`
 
 ```yaml
 Type: System.Guid[]
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

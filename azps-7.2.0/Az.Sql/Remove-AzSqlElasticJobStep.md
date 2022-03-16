@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/remove-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlElasticJobStep.md
-ms.openlocfilehash: 721132ef9b2565b9ed68782ff4b2445ddeab7de7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1f71ab7c088cbc82b0f69ebc114e19e133e39cd2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140317481"
 ---
 # Remove-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Menghapus langkah pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlelasticjobstep) untuk informasi terkini.
 
 ## SYNTAX
 

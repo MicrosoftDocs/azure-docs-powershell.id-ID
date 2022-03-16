@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsZone.md
-ms.openlocfilehash: 2e35e3f59da03568e889cfa6870943a7be0a4e98
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3c5c00e696c271ca8e9ff658f33bb48940d6689a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378921"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140279509"
 ---
 # Get-AzPrivateDnsZone
 
 ## SYNOPSIS
 Mendapatkan zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/get-azprivatednszone) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Get-AzPrivateDnsZone [-ResourceGroupName <String>] [-Name <String>] [-DefaultPro
 
 ## DESCRIPTION
 Cmdlet **Get-AzPrivateDnsZone** mendapatkan zona Private Domain Name System (DNS) dari grup sumber daya yang ditentukan.
-Jika Anda menentukan parameter *Nama,* satu **objek PrivateDnsZone** akan dikembalikan.
-Jika Anda tidak menentukan parameter *Name,* array yang berisi semua zona dalam grup sumber daya yang ditentukan akan dikembalikan.
+Jika Anda menentukan parameter *Nama* , satu **objek PrivateDnsZone** akan dikembalikan.
+Jika Anda tidak menentukan parameter *Name* , array yang berisi semua zona dalam grup sumber daya yang ditentukan akan dikembalikan.
 Anda dapat menggunakan **objek PrivateDnsZone** untuk memperbarui zona, misalnya Anda dapat menambahkan **objek RecordSet** ke dalamnya.
 
 ## EXAMPLES
@@ -122,8 +125,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama zona DNS Privat yang akan dapatkan.
-Jika Anda tidak menentukan nilai untuk parameter *Nama,* cmdlet ini akan mendapatkan semua zona DNS Privat dalam grup sumber daya yang ditentukan.
-Jika Anda juga menghilangkan parameter *ResourceGroupName,* cmdlet ini akan mendapatkan semua zona DNS Privat di langganan Azure saat ini.
+Jika Anda tidak menentukan nilai untuk parameter *Nama* , cmdlet ini akan mendapatkan semua zona DNS Privat dalam grup sumber daya yang ditentukan.
+Jika Anda juga menghilangkan parameter *ResourceGroupName* , cmdlet ini akan mendapatkan semua zona DNS Privat di langganan Azure saat ini.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi zona DNS Privat yang akan dapatkan.
-Jika Anda tidak menentukan *ResourceGroupName,* maka Anda juga harus menghilangkan parameter *Name.*
+Jika Anda tidak menentukan *ResourceGroupName*, maka Anda juga harus menghilangkan parameter *Name* .
 Dalam hal ini, cmdlet ini akan mendapatkan semua zona DNS Privat dalam langganan Azure saat ini.
 
 ```yaml
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

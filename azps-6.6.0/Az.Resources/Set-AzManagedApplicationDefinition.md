@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplicationDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzManagedApplicationDefinition.md
-ms.openlocfilehash: fd212a7afd9ce961bb919f21e798ffe8d5ea020e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b0e76a2438a7d58d17ffc9fc4e575a9a92fbc713
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364442"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305483"
 ---
 # Set-AzManagedApplicationDefinition
 
 ## SYNOPSIS
 Memperbarui definisi aplikasi yang dikelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azmanagedapplicationdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -Authorization
 Otorisasi definisi aplikasi terkelola.
-Pasangan otorisasi yang dipisahkan koma dalam \<principalId\> format:\<roleDefinitionId\>
+Pasangan otorisasi yang dipisahkan koma dalam format \<principalId\>:\<roleDefinitionId\>
 
 ```yaml
 Type: System.String[]
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

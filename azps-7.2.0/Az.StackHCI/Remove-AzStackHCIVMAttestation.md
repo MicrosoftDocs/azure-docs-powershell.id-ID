@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Remove-AzStackHCIVMAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Remove-AzStackHCIVMAttestation.md
-ms.openlocfilehash: 8183271a5ec1992634066eaf40bc9d190a56809f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8e0b51af722bb9b5cfc5a66f42e16d2a9d332f38
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261155"
 ---
 # Remove-AzStackHCIVMAttestation
 
 ## SYNOPSIS
 Remove-AzStackHCIVMAttestation menghapus tamu dari AzureStack HCI IMDS Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/remove-azstackhcivmattestation) untuk informasi terkini.
 
 ## SYNTAX
 

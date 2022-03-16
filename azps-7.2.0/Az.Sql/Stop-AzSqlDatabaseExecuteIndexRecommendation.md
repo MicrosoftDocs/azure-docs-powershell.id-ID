@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/stop-azsqlda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseExecuteIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlDatabaseExecuteIndexRecommendation.md
-ms.openlocfilehash: 4733d3b5af8d296967ca4c54da239f26d5d28335
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fca4b6a3730c9a789efafab532a58ab88bf3c0fa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138280396"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261803"
 ---
 # Stop-AzSqlDatabaseExecuteIndexRecommendation
 
 ## SYNOPSIS
 Menghentikan alur kerja yang menjalankan operasi indeks yang direkomendasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/stop-azsqldatabaseexecuteindexrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstance.md
-ms.openlocfilehash: e30d42560fb341158d225c04bf29996a7fc38f9e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0724fbe30a141c76635dcd4151ed4e316b2c6721
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308475"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292037"
 ---
 # Remove-AzSqlInstance
 
 ## SYNOPSIS
 Menghapus Instans Database SQL Terkelola Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzSqlInstance [-ResourceId] <String> [-Force] [-AsJob] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlInstance** menghapus item Azure SQL Database Terkelola.
+Cmdlet **Remove-AzSqlInstance** menghapus Azure SQL Database Terkelola Terbaru.
 
 ## EXAMPLES
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-SQL contoh.
+SQL nama contoh.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Remove-AzSentinelIncident.md
-ms.openlocfilehash: c92f1841d862d0aadbe7a72b2f566a31b9dbce7e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 74e4e130e9c0a20afeb1351c802a42a036f69987
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364394"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140304673"
 ---
 # Remove-AzSentinelIncident
 
 ## SYNOPSIS
 Menghapus Insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/remove-azsentinelincident) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzSentinelIncident -InputObject <PSSentinelIncident> [-PassThru]
 ## DESCRIPTION
 Cmdlet **Remove-AzSentinelIncident** menghapus Insiden dari ruang kerja tertentu secara permanen.
 Anda bisa melewati **objek Insiden** dengan menggunakan operator pipeline, atau alternatifnya Anda bisa menentukan parameter yang diperlukan.
-Anda dapat menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ $Incident = Get-AzSentinelIncident @SentinelConnection | Where-Object {$_.Incide
 Remove-AzSentinelIncident @SentinelConnection -IncidentId $Incident.Name
 ```
 
-Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName untuk mendapatkan Insiden tertentu berdasarkan nomor Insiden (seperti yang diperlihatkan di tampilan Insiden). Lalu laporan menggunakan nilai $Incident.Name (yang mewakili IncidentId) untuk menghapus Insiden.
+Contoh ini menggunakan objek koneksi untuk melewati resourceGroupName dan workspaceName untuk mendapatkan Insiden tertentu berdasarkan nomor Insiden (seperti yang diperlihatkan di tampilan Insiden). Lalu laporan ini menggunakan nilai $Incident.Name (yang mewakili IncidentId) untuk menghapus Insiden.
 
 ## PARAMETERS
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

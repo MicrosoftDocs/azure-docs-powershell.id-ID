@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementUserFromGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementUserFromGroup.md
-ms.openlocfilehash: 5849dbf9eb6922b68f149bf00359dc203ef00cb8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a3b0a46b5d814aa3439d284c76dd63eb499f3e42
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287116"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241550"
 ---
 # Remove-AzApiManagementUserFromGroup
 
 ## SYNOPSIS
 Menghapus pengguna dari grup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementuserfromgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True berhasil, jika berhasil, atau nilai nilai $False akan berhasil.
+Mengindikasikan bahwa cmdlet ini mengembalikan nilai $True, jika berhasil, atau nilai nilai $False, jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/get-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticJobExecution.md
-ms.openlocfilehash: 4ec05e091acf6cd031be8ea13e8b13008b7746bf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a29cb0b4db21fa7eff3777f2906a2c5473eb02f1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290635"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292577"
 ---
 # Get-AzSqlElasticJobExecution
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticjobexecution) untuk informasi terkini.
 
 ## SYNTAX
 

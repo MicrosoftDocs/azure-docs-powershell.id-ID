@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzAvailabilityGroupListener.md
-ms.openlocfilehash: e1c339ced027f81efadfe220c44c73187617f03a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 563d82b4eecc43599441f3ca598a026877ae9e1f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261713"
 ---
 # New-AzAvailabilityGroupListener
 
 ## SYNOPSIS
 Membuat Pendengar Grup Ketersediaan yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azavailabilitygrouplistener) untuk informasi terkini.
 
 ## SYNTAX
 

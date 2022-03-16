@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzResource.md
-ms.openlocfilehash: 5f66b60715e4433a696be969165343301ba34615
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 83feba2f6508a1e1d0ffa9c6d80fe04e52a1ebca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136331963"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305663"
 ---
 # Remove-AzResource
 
 ## SYNOPSIS
 Menghapus sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PS C:\>Remove-AzResource -ResourceId "/subscriptions/00000000-0000-0000-0000-000
 
 Perintah ini menghapus sumber daya situs web bernama ContosoSite.
 Contoh ini menggunakan nilai tempat penampung untuk ID langganan.
-Perintah menentukan parameter *Paksa.*
+Perintah menentukan parameter *Paksa* .
 Oleh karena itu, kami tidak meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi dari sumber daya yang dihapus cmdlet ini.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: nama `/` server database
+Misalnya, untuk menentukan database, gunakan format berikut: namadatabase`/` server
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 
 ### -ResourceId
 Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya yang dihapus cmdlet ini.
-ID mencakup langganan, seperti dalam contoh berikut: `/subscriptions/` ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
+ID mencakup langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

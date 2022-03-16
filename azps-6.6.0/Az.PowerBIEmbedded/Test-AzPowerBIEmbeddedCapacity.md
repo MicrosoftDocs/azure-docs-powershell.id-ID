@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Test-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Test-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: ce7ab0e6c00ecbaddb8b4de5622c9e8fe3ef8a1a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: adc9e5e87e6da3e7bdf075aa2d3e6b5b7d36443a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345146"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140279527"
 ---
 # Test-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Menguji keberadaan instans Kapasitas yang Disematkan PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/test-azpowerbiembeddedcapacity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Test-AzPowerBIEmbeddedCapacity [-Name] <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzPowerBIEmbeddedCapacity menguji keberadaan instans Kapasitas Yang Disematkan PowerBI
+Cmdlet Test-AzPowerBIEmbeddedCapacity cmdlet menguji keberadaan instans Kapasitas Yang Disematkan PowerBI
 
 ## EXAMPLES
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

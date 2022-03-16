@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeUser.md
-ms.openlocfilehash: 140a081ec13e96330679cc4cbba00a324dbb6efb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 071699079a9997772687c5544ab265abb55bf675
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309852"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261263"
 ---
 # Remove-AzStackEdgeUser
 
 ## SYNOPSIS
 Menghapus pengguna di perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/remove-azstackedgeuser) untuk informasi terkini.
 
 ## SYNTAX
 

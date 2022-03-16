@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ChildItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzDataLakeGen2ChildItem.md
-ms.openlocfilehash: 6ca7c1761c9f527058ba4e0355c206b0cb3a111a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 513dbf1bf11ea119cb107511b79c198b611a4c77
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307323"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261065"
 ---
 # Get-AzDataLakeGen2ChildItem
 
 ## SYNOPSIS
 Mencantumkan sub direktori dan file dari direktori atau akar filesystem.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azdatalakegen2childitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzDataLakeGen2ChildItem [-FileSystem] <String> [[-Path] <String>] [-FetchPro
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataLakeGen2ChildItem** mencantumkan sub direktori dan file dalam direktori atau Filesystem di akun penyimpanan Azure.
-Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage baru. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
+Cmdlet ini hanya berfungsi jika Ruang Nama Hierarki diaktifkan untuk Storage tersebut. Jenis akun ini dapat dibuat dengan menjalankan cmdlet "New-AzStorageAccount" dengan "-EnableHierarchicalNamespace $true".
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Contoh ini menggunakan parameter *MaxCount* dan *ContinuationToken* untuk mencan
 *MaxCount kecil* dapat membatasi jumlah item yang dikembalikan dari satu kali berurutan, dapat membantu jika waktu operasi habis dan membatasi penggunaan memori Powershell.
 Empat perintah pertama menetapkan nilai ke variabel untuk digunakan dalam contoh.
 Perintah kelima menentukan pernyataan **Do-While yang** menggunakan cmdlet **Get-AzDataLakeGen2ChildItem** untuk mencantumkan item.
-Pernyataan menyertakan token lanjutan yang disimpan dalam variabel $Token.
+Pernyataan menyertakan token kelanjutan yang disimpan dalam variabel $Token disimpan.
 $Token perubahan saat pengulangan berjalan.
 Perintah final menggunakan perintah **Echo** untuk menampilkan total.
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputUserPrincipalName
-Jika parameter ini ditentukan, nilai identitas pengguna yang dikembalikan di bidang pemilik dan grup dari setiap entri daftar akan diubah dari id Azure Active Directory Id Objek menjadi Nama Prinsipal Pengguna. Jika tidak spesifik parameter ini, nilai akan dikembalikan sebagai AZURE ACTIVE DIRECTORY OBJECT IDs. Perhatikan bahwa ID Objek grup dan aplikasi tidak diterjemahkan karena tidak memiliki nama yang mudah diingat.
+Jika parameter ini ditentukan, nilai identitas pengguna yang dikembalikan di bidang pemilik dan grup dari setiap entri daftar akan diubah dari id Azure Active Directory Objek menjadi Nama Prinsipal Pengguna. Jika tidak spesifik parameter ini, nilai akan dikembalikan sebagai Azure Active Directory OBJECT IDs. Perhatikan bahwa ID Objek grup dan aplikasi tidak diterjemahkan karena tidak memiliki nama yang mudah diingat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
-ms.openlocfilehash: 44591a57ac2517497ac3051db6144e82e3cbe042
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2bb24c7c270ec301d8df47831ffd5979f7361cae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292289"
 ---
 # New-AzSqlDatabaseCopy
 
 ## SYNOPSIS
 Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabasecopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyDatabaseName
-Menentukan nama SQL Database salinan.
+Menentukan nama SQL Database salin.
 
 ```yaml
 Type: System.String
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server yang berisi database untuk disalin.
+Menentukan nama dokumen SQL Server berisi database untuk disalin.
 
 ```yaml
 Type: System.String

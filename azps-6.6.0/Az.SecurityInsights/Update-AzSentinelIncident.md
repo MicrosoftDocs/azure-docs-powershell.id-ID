@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelIncident.md
-ms.openlocfilehash: dd2c3b762f3244e963371de5417f55b4b3b46a97
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4b34003c537952175c07556e5f3e7fe4a409db4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156093"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140304547"
 ---
 # Update-AzSentinelIncident
 
 ## SYNOPSIS
 Memperbarui Insiden
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentinelincident) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\> Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName" -IncidentId "myIncidentId" -Severity High
 ```
 
-Contoh ini mendapatkan Insiden menurut *IncidentId* dan mengatur *properti Keparahan* ke *Tinggi.*  Semua properti lainnya tetap tidak berubah.
+Contoh ini mendapatkan Insiden menurut *IncidentId* dan mengatur *properti Keparahan* ke *Tinggi*.  Semua properti lainnya tetap tidak berubah.
 
 ### Contoh 2
 ```powershell
@@ -67,9 +70,9 @@ $ownerObject = @{"AssignedTo" = "John Doe"; "Email" = "johndoe@contoso.com"; "Ob
 Update-AzSentinelIncident -ResourceGroupName "myResourceGroup" -WorkspaceName "myWorkspaceName"  -IncidentId a4b586c8-97d8-4cc5-9154-b723c62d26d8 -Owner $ownerObject
 ```
 
-Contoh ini pertama membuat *"* objek pemilik " yang berisi informasi pemilik, lalu cmdlet **Update-AzSentinelIncident** digunakan untuk melewati ownerObject untuk memperbarui insiden. <br/><br/>
+Contoh ini membuat "objek *pemilik*" terlebih dahulu yang berisi informasi pemilik, lalu cmdlet **Update-AzSentinelIncident** digunakan untuk melewati ownerObject untuk memperbarui insiden. <br/><br/>
 
-*Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika Anda ingin mengotomatisasi pengambilan ObjectId melalui scripting, Anda bisa memanfaatkan modul Azure Active Directory PowerShell, seperti ini: Get-AzureADUser -ObjectId " johndoe@contoso.com ".*
+*Catatan: ObjectId pemilik dapat ditemukan di bawah tampilan detail pengguna di bawah Azure Active Directory. Jika Anda ingin mengotomatisasi pengambilan ObjectId melalui scripting, Anda bisa memanfaatkan modul Azure Active Directory PowerShell, seperti ini: Get-AzureADUser -ObjectId "johndoe@contoso.com".*
 
 ### Contoh 3
 ```powershell
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlPoolSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Disable-AzSynapseSqlPoolSensitivityRecommendation.md
-ms.openlocfilehash: ba5b6c76e55791311c29ec418a90318c57107dff
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f6eee830d81d71e5241710a8e0d972866f54cb1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292748"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140260731"
 ---
 # Disable-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
-Menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom di dalam SQL sama.
+Menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom di SQL tim.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/disable-azsynapsesqlpoolsensitivityrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,16 +43,16 @@ Disable-AzSynapseSqlPoolSensitivityRecommendation -SqlPoolObject <PSSynapseSqlPo
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzSynapseSqlPoolSensitivityRecommendation menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom dalam SQL tim.
+Cmdlet Disable-AzSynapseSqlPoolSensitivityRecommendation menonaktifkan (menghilangkan) rekomendasi sensitivitas pada kolom di dalam SQL tim.
 
 ## EXAMPLES
 
-### Contoh 1: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam azure synapse SQL pool.
+### Contoh 1: Menonaktifkan rekomendasi sensitivitas pada kolom tertentu dalam SQL Azure Synapse.
 ```powershell
 PS C:\> Disable-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Nonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam SQL Azure Synapse menggunakan Piping.
+### Contoh 2: Nonaktifkan rekomendasi sensitivitas pada kolom yang memiliki rekomendasi sensitivitas dalam azure Synapse SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool | Disable-AzSynapseSqlPoolSensitivityRecommendation
 ```
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek yang mewakili Klasifikasi Sensitivitas SQL Pool.
+Objek yang mewakili Klasifikasi Sensitivitas SQL Kolam Renang.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.DataClassification.SqlPoolSensitivityClassificationModel
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

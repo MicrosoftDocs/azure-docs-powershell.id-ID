@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Enable-AzSecurityAdvancedThreatProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Enable-AzSecurityAdvancedThreatProtection.md
-ms.openlocfilehash: e500e29d0a00466ef0f45f66030f5574d99e591d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cef77649d8f2724fd5a3b2878ff98b827d3c2c16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305231"
 ---
 # Enable-AzSecurityAdvancedThreatProtection
 
 ## SYNOPSIS
 Mengaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk akun storage / cosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/enable-azsecurityadvancedthreatprotection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Enable-AzSecurityAdvancedThreatProtection -ResourceId <String> [-DefaultProfile 
 
 ## DESCRIPTION
 Cmdlet `Enable-AzSecurityAdvancedThreatProtection` mengaktifkan kebijakan perlindungan ancaman untuk akun penyimpanan / cosmosDB.
-Untuk menggunakan cmdlet ini, tentukan parameter *ResourceId.*
+Untuk menggunakan cmdlet ini, tentukan parameter *ResourceId* .
 
 ## EXAMPLES
 
-### Contoh 1: Storage Anda
+### Contoh 1: Storage Baru
 ```powershell
 PS C:\> Enable-AzSecurityAdvancedThreatProtection -ResourceId "/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.Storage/storageAccounts/myStorageAccount/"
 
@@ -39,7 +42,7 @@ IsEnabled Id
     True  "/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.Storage/storageAccounts/myStorageAccount/"
 ```
 
-Perintah ini mengaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk id sumber `"/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.Storage/storageAccounts/myStorageAccount/"` daya.
+Perintah ini mengaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk id sumber daya `"/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.Storage/storageAccounts/myStorageAccount/"`.
 
 ### Contoh 2: CosmosDB Account
 ```powershell
@@ -50,7 +53,7 @@ IsEnabled Id
     True  "/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.DocumentDb/databaseAccounts/myCosmosDBAccount/"
 ```
 
-Perintah ini mengaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk id sumber ` "/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.DocumentDb/databaseAccounts/myCosmosDBAccount/"` daya.
+Perintah ini mengaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk id sumber daya ` "/subscriptions/xxxxxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/myResourceGroup/providers/Microsoft.DocumentDb/databaseAccounts/myCosmosDBAccount/"`.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

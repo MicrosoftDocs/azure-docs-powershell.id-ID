@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/Up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementGateway.md
-ms.openlocfilehash: 32fd7c3bdaee94734847a2c83bf658f9cce4b61f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 03a72790dea13fca7b01327593ed41a11c8433ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270619"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241469"
 ---
 # Update-AzApiManagementGateway
 
 ## SYNOPSIS
 Mengonfigurasi Gateway manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementgateway) untuk informasi terkini.
 
 ## SYNTAX
 

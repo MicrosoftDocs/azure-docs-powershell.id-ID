@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzSmartGroupState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Update-AzSmartGroupState.md
-ms.openlocfilehash: 0fd415521012cc92ae9779e50e35d08418bbdf3d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c24da3cfbd397d685166a81d8e17fd6572102e9b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166845"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140241757"
 ---
 # Update-AzSmartGroupState
 
 ## SYNOPSIS
 Memperbarui status grup cerdas
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/update-azsmartgroupstate) untuk informasi terkini.
 
 ## SYNTAX
 

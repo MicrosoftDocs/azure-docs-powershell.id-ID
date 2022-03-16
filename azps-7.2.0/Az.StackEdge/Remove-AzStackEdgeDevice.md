@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeDevice.md
-ms.openlocfilehash: ce278383ed4ba89b9d740f0c97b7dcd0781f303b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 29fffba9c974e70f5d115b9f19a732bc602f2ae0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138291724"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261407"
 ---
 # Remove-AzStackEdgeDevice
 
 ## SYNOPSIS
 Menghapus perangkat Stack Edge.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/remove-azstackedgedevice) untuk informasi terkini.
 
 ## SYNTAX
 

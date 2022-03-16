@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.springcloud/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Update-AzSpringCloudApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SpringCloud/help/Update-AzSpringCloudApp.md
-ms.openlocfilehash: b1d5888a27f9970577fd3fe0c9624e66f37b35fa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c3003cedcc74ed982ec57c75e25c7f3566042f81
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308587"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292829"
 ---
 # Update-AzSpringCloudApp
 
 ## SYNOPSIS
 Operasi untuk memperbarui Aplikasi keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.springcloud/update-azspringcloudapp) untuk informasi terkini.
 
 ## SYNTAX
 

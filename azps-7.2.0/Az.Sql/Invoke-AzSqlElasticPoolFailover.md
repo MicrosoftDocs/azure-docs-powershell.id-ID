@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/invoke-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlElasticPoolFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlElasticPoolFailover.md
-ms.openlocfilehash: 19351d38205d73648097f9df2d56f1268ca1370c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d9d5c7e1fa2f19b5f30f07e63f1a910af0a624f7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272059"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292271"
 ---
 # Invoke-AzSqlElasticPoolFailover
 
 ## SYNOPSIS
 Failovers sebuah pool elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/invoke-azsqlelasticpoolfailover) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Invoke-AzSqlElasticPoolFailover [-ElasticPoolName] <String> [-AsJob] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet failovers Invoke-AzSqlElasticPoolFailover dan pool elastis. Failover akan terjadi pada semua database dalam pool elastis setelah menjalankan cmdlet ini.
+Cmdlet Invoke-AzSqlElasticPoolFailover cmdlet memiliki kolam renang elastis. Failover akan terjadi pada semua database dalam pool elastis setelah menjalankan cmdlet ini.
 
 ## EXAMPLES
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure SQL Server Elastis Pool ada.
+Nama Azure SQL Server Ruang Elastis ada di.
 
 ```yaml
 Type: System.String

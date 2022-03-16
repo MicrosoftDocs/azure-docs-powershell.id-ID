@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroupDeployment.md
-ms.openlocfilehash: 151be9e3fac4baaedc34d3261f5ec9b04ebbe293
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1705c67bcc8dc1cb736dd3ca0b430d44b4868ba0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332016"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140305699"
 ---
 # New-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Menambahkan penyebaran Azure ke grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcegroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -188,9 +191,9 @@ Untuk menambahkan penyebaran grup sumber daya, tentukan nama grup sumber daya ya
 Templat grup sumber daya adalah string JSON yang mewakili grup sumber daya untuk layanan berbasis awan yang kompleks, seperti portal web.
 Templat ini menyertakan tempat penampung parameter untuk sumber daya yang diperlukan dan nilai properti yang dapat dikonfigurasi, seperti nama dan ukuran.
 Anda dapat menemukan banyak templat dalam galeri templat Azure atau membuat sendiri templat Anda.
-Untuk menggunakan templat kustom guna membuat grup sumber daya, tentukan parameter *TemplateFile* atau parameter *TemplateUri.*
+Untuk menggunakan templat kustom guna membuat grup sumber daya, tentukan parameter *TemplateFile* atau parameter *TemplateUri* .
 Setiap templat memiliki parameter untuk properti yang dapat dikonfigurasi.
-Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject.*
+Untuk menentukan nilai bagi parameter templat, tentukan parameter *TemplateParameterFile* atau *parameter TemplateParameterObject* .
 Alternatifnya, Anda bisa menggunakan parameter templat yang ditambahkan secara dinamis ke perintah saat Anda menentukan templat.
 Untuk menggunakan parameter dinamis, ketik parameter dinamis di prompt perintah, atau ketik tanda minus (-) untuk mengindikasikan parameter dan gunakan tombol Tab untuk melihat parameter yang tersedia.
 Nilai parameter templat yang Anda masukkan di prompt perintah lebih diprioritaskan ke prioritas dalam objek parameter templat atau file.
@@ -233,7 +236,7 @@ PS C:\> New-AzResourceGroupDeployment -ResourceGroupName "RGName" -TemplateUri "
 ```
 
 Perintah ini membuat penyebaran baru menggunakan templat di TemplateUri yang tidak publik dan membutuhkan parameter token untuk mengakses yang akan disediakan menggunakan parameter QueryString.
-Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo` .
+Menjalankan perintah ini secara efektif mengakses templat menggunakan url `https://example.com/example.json?foo`.
 Ini dapat digunakan jika Anda ingin menggunakan templat di akun penyimpanan dengan menyediakan token SAS sebagai String Kueri
 
 ## PARAMETERS
@@ -489,7 +492,7 @@ Accept wildcard characters: False
 
 ### -TemplateParameterFile
 Menentukan jalur lengkap file JSON yang berisi nama dan nilai parameter templat.
-Jika templat memiliki parameter, Anda harus menentukan nilai parameter dengan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject.*
+Jika templat memiliki parameter, Anda harus menentukan nilai parameter dengan parameter *TemplateParameterFile* atau parameter *TemplateParameterObject* .
 Parameter templat ditambahkan secara dinamis ke perintah ketika Anda menentukan templat.
 Untuk menggunakan parameter dinamis, ketik tanda minus (-) untuk menunjukkan nama parameter, lalu gunakan tombol Tab untuk melihat parameter yang tersedia.
 
@@ -507,7 +510,7 @@ Accept wildcard characters: False
 
 ### -TemplateParameterObject
 Menentukan tabel hash nama dan nilai parameter templat.
-Untuk bantuan terkait tabel hash dalam Windows PowerShell, ketikkan `Get-Help about_Hash_Tables` .
+Untuk bantuan terkait tabel hash dalam Windows PowerShell, ketikkan `Get-Help about_Hash_Tables`.
 Jika templat memiliki parameter, Anda harus menentukan nilai parameter.
 Parameter templat ditambahkan secara dinamis ke perintah ketika Anda menentukan templat.
 
@@ -631,7 +634,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

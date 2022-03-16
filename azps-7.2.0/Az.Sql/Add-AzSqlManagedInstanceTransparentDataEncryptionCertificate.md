@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlMan
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: 16bd6d3564b4902729ed72f2801dd634a34de1ff
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1f1856a9063b1dd3bef1d19ae986c3c33d723818
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288412"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140292793"
 ---
 # Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate
 
 ## SYNOPSIS
 Menambahkan Sertifikat Enkripsi Data Transparan untuk instans terkelola tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqlmanagedinstancetransparentdataencryptioncertificate) untuk informasi terkini.
 
 ## SYNTAX
 

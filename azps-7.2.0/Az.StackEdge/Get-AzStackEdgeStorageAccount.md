@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Get-AzStackEdgeStorageAccount.md
-ms.openlocfilehash: 894ef3cc1db1a1271aec24a24a262d90cb232e80
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ec9f3f0f7beaf7a4dcac22231bf3e0684a332b00
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314492"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140261533"
 ---
 # Get-AzStackEdgeStorageAccount
 
 ## SYNOPSIS
 Dapatkan akun Storage Edge pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/get-azstackedgestorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzStackEdgeStorageAccount [[-Name] <String>] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-Az StackEdgeStorageAccount** mendapatkan akun Storage Edge tersedia pada perangkat Stack Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi tentang akun edge Storage tersebut.
+Cmdlet **Get-Az StackEdgeStorageAccount** mendapatkan akun Storage Edge tersedia pada perangkat Stack Edge. Anda dapat menentukan Nama sebagai parameter dalam cmdlet untuk mendapatkan informasi tentang akun Storage Edge tertentu.
 
 ## EXAMPLES
 

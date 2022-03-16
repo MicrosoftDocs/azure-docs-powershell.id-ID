@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncAgent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncAgent.md
-ms.openlocfilehash: 3d3ee65228c73a49e040c19919f8c0d2480e7bd6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cc9359728747b769b7668bb082c297a7b61ec197
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169660"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140317517"
 ---
 # New-AzSqlSyncAgent
 
 ## SYNOPSIS
 Membuat Agen Sinkronisasi Azure SQL Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlsyncagent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ ExpiryTime                  : 12/31/9999 11:59:59 PM
 State                       : NeverConnected
 ```
 
-Perintah ini akan membuat agen sinkronisasi untuk server SQL Azure.
+Perintah ini akan membuat agen sinkronisasi untuk server azure SQL.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server agen sinkronisasi berada.
+Nama azure SQL Server agen sinkronisasi sudah masuk.
 
 ```yaml
 Type: System.String

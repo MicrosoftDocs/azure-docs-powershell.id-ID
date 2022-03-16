@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlInstanceDatabaseSensitivityClassification.md
-ms.openlocfilehash: 899c394b02f807fb78b71c597dabe14a435b23c4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: df5bc2621d88626438171b20b12a566f30c987f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308459"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291965"
 ---
 # Remove-AzSqlInstanceDatabaseSensitivityClassification
 
 ## SYNOPSIS
-Menghapus tipe informasi dan label sensitivitas kolom di database Azure SQL Managed Instance.
+Menghapus tipe informasi dan label sensitivitas kolom di database Azure SQL Instans Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlinstancedatabasesensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Cmdlet Remove-AzSqlInstanceDatabaseSensitivityClassification menghapus tipe info
 
 ## EXAMPLES
 
-### Contoh 1: Hapus tipe informasi dan label sensitivitas kolom di database Azure SQL Instans Terkelola.
+### Contoh 1: Hapus tipe informasi dan label sensitivitas kolom di database Azure SQL Managed Instance.
 ```powershell
 PS C:\> Remove-AzSqlInstanceDatabaseSensitivityClassification -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassificationObject
-Objek mewakili Klasifikasi Sensitivitas Database SQL Terkelola.
+Objek mewakili klasifikasi SQL Sensitivitas Database Terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel
