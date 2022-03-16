@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: ffbe90c1b896a6a0fee0bba8c9f56b2d2986ca29
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 77c83a9a8c397b75ac5f3a2eade419dc6290efd6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138254507"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232290"
 ---
 # Add-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi pool alamat backend ke penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azloadbalancerbackendaddresspoolconfig) untuk informasi terkini.
 
 ## SYNTAX
 

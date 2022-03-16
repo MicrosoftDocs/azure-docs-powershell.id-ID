@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerOutboundRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerOutboundRuleConfig.md
-ms.openlocfilehash: 6acf9cd20c6bc0dba1389753b70cf29f33c500c6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4afd298d6589d20b032d71c766a01a3eb1aff61d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272491"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231803"
 ---
 # Get-AzLoadBalancerOutboundRuleConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi aturan keluar dalam penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalanceroutboundruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 

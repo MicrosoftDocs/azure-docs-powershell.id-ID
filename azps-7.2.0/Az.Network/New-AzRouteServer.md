@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzRouteServer.md
-ms.openlocfilehash: 88ce56de86a6c3fe7fae746e6994bbea97b5542d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 080fbab574763adb08d9655f6f47bd245d07d3db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258476"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230651"
 ---
 # New-AzRouteServer
 
 ## SYNOPSIS
 Membuat Azure RouteServer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azrouteserver) untuk informasi terkini.
 
 ## SYNTAX
 

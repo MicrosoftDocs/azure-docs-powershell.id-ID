@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageFileSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageFileSASToken.md
-ms.openlocfilehash: 4a856ec99c4365686f6c1a69f8e1d387a1011413
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7dd0c3b4756883a479d93cfee49452b0e443dd5e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351194"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243971"
 ---
 # New-AzStorageFileSASToken
 
 ## SYNOPSIS
 Menghasilkan token tanda tangan akses bersama untuk file Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragefilesastoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ PS C:\> New-AzStorageFileSASToken -ShareName "ContosoShare" -Path "FilePath" -Pe
 ```
 
 Perintah pertama membuat objek **DateTime** menggunakan cmdlet Get-Date.
-Perintah menyimpan waktu saat ini dalam $StartTime variabel.
+Perintah menyimpan waktu saat ini dalam variabel $StartTime baru.
 Perintah kedua menambahkan dua jam ke objek $StartTime, lalu menyimpan hasilnya dalam $EndTime variabel.
 Objek ini adalah waktu dua jam di masa mendatang.
 Perintah ketiga menghasilkan token tanda tangan akses bersama yang memiliki izin tertentu.
@@ -81,7 +84,7 @@ Token tetap berlaku hingga waktu yang disimpan di $EndTime.
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan objek **CloudFile.**
+Menentukan objek **CloudFile** .
 Anda dapat membuat file awan atau mendapatkannya menggunakan cmdlet Get-AzStorageFile cmdlet.
 
 ```yaml
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 
 ### -Permission
 Menentukan izin untuk file Storage.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
 
 ```yaml
 Type: System.String
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

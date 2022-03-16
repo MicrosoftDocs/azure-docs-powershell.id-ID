@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkPeering.md
-ms.openlocfilehash: 38e6923e6de46d9ec9f8689f3d4ff27ccd4a0780
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9529a00b19d4fd566d65c0c363aff4dd62fe162b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231137"
 ---
 # Get-AzVirtualNetworkPeering
 
 ## SYNOPSIS
 Mendapatkan peering jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualnetworkpeering) untuk informasi terkini.
 
 ## SYNTAX
 

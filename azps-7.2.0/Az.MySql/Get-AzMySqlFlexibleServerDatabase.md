@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerDatabase.md
-ms.openlocfilehash: 74371355ddef84f9dd2a723c4dc6ca86682cd223
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d9edab28e52f1a5782bc17a190638ddeb88a9384
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307772"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086985"
 ---
 # Get-AzMySqlFlexibleServerDatabase
 
 ## SYNOPSIS
 Mendapatkan informasi tentang database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverdatabase) untuk informasi terkini.
 
 ## SYNTAX
 

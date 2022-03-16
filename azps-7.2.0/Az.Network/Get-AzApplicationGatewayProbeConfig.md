@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 4648bfaa4bf29c37d115eef35065089c18492d8a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6dcbe58808a42e309caec7ad1dcb4e156a0fc7e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270124"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231947"
 ---
 # Get-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi konfigurasi konfigurasi konfigurasi kesehatan yang sudah ada dari Gateway Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzApplicationGatewayProbeConfig [-Name <String>] -ApplicationGateway <PSAppl
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzApplicationGatewayProbeConfig mendapatkan konfigurasi utama kesehatan yang sudah ada dari Gateway Aplikasi.
+Cmdlet Get-AzApplicationGatewayProbeConfig mendapatkan konfigurasi konfigurasi utama kesehatan yang sudah ada dari Gateway Aplikasi.
 
 ## EXAMPLES
 

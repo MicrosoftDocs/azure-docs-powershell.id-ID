@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet.md
-ms.openlocfilehash: ae8c16b0f75fda4d0302541a898cda398297e1b5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 07ff21c6b15c0405fafe2f068613aa2717afba06
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138289915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230777"
 ---
 # New-AzApplicationGatewayFirewallPolicyExclusionManagedRuleSet
 
 ## SYNOPSIS
 Membuat ExclusionManagedRuleSet untuk pengecualian firewallPolicy
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicyexclusionmanagedruleset) untuk informasi terkini.
 
 ## SYNTAX
 

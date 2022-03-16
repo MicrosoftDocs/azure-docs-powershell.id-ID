@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzNetworkInterfaceTapConfig.md
-ms.openlocfilehash: 298a721f31bd542cf8222df1f471cdfe8a9e9fd4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 397d28be2f3c4ed111fc5c873ff51313c2cc9d66
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259739"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232199"
 ---
 # Add-AzNetworkInterfaceTapConfig
 
 ## SYNOPSIS
 Membuat sumber daya TapConfiguration yang terkait dengan NetworkInterface. Ini akan merujuk ke sumber daya VirtualNetworkTap yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-aznetworkinterfacetapconfig) untuk informasi terkini.
 
 ## SYNTAX
 

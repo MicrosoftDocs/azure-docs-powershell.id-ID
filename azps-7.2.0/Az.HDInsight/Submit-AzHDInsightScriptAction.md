@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/submit
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Submit-AzHDInsightScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Submit-AzHDInsightScriptAction.md
-ms.openlocfilehash: ce4fd1a334e2318ce3b7374e8166bc2ac545125f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c7b9b092c69d44cd58ae5d7fec65e04712a20f44
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123181"
 ---
 # Submit-AzHDInsightScriptAction
 
 ## SYNOPSIS
 Mengirimkan tindakan skrip baru ke kluster Azure HDInsight.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/submit-azhdinsightscriptaction) untuk informasi terkini.
 
 ## SYNTAX
 

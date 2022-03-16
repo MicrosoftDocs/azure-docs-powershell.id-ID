@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitorVMHost.md
-ms.openlocfilehash: b35a0e29f3f572d47931997e8ff445205a059151
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: bb4bd83b5e1c581bae2548ed94219b2ce41f1e94
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276956"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140087453"
 ---
 # Get-AzLogzMonitorVMHost
 
 ## SYNOPSIS
 List the compute resources currently being monitored by the Logz main account resource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/get-azlogzmonitorvmhost) untuk informasi terkini.
 
 ## SYNTAX
 

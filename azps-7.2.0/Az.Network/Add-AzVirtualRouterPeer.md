@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualRouterPeer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualRouterPeer.md
-ms.openlocfilehash: 7612290da1a68276a0eab965a9d74b879f924d06
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c4e180d3c913644b64f4f83c3640d8a21b46f136
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164585"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232091"
 ---
 # Add-AzVirtualRouterPeer
 
 ## SYNOPSIS
 Menambahkan Peer ke Azure VirtualRouter
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvirtualrouterpeer) untuk informasi terkini.
 
 ## SYNTAX
 

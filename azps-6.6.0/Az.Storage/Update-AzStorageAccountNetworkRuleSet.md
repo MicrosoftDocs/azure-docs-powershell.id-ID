@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageAccountNetworkRuleSet.md
-ms.openlocfilehash: 92eff0434efa7a57979b0cd605a283aeaae19316
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 97edeffab649bd1c680a9ac45f7b13dcf8620422
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364061"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140243557"
 ---
 # Update-AzStorageAccountNetworkRuleSet
 
 ## SYNOPSIS
-Memperbarui properti NetworkRule dari Storage tersebut
+Memperbarui properti NetworkRule dari akun Storage lain
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azstorageaccountnetworkruleset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzStorageAccountNetworkRuleSet [-ResourceGroupName] <String> [-Name] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageAccountNetworkRuleSet** memperbarui properti NetworkRule dari Storage tersebut
+Cmdlet **Update-AzStorageAccountNetworkRuleSet** memperbarui properti NetworkRule dari Storage anda
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Bypass
-Nilai Bypass untuk memperbarui ke properti NetworkRule dari Storage Anda.
+Nilai Lewati untuk memperbarui ke properti NetworkRule dari Storage Anda.
 Nilai yang diperbolehkan tidak ada atau kombinasi apa pun dari: • Pembuatan Log • Metrik • Azureservices
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Nilai DefaultAction untuk memperbarui ke properti NetworkRule dari Storage Tersebut.
+Nilai DefaultAction untuk memperbarui ke properti NetworkRule dari akun Storage Anda.
 Opsi yang diperbolehkan: • Izinkan • Tolak
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRule
-Array objek IpRule diperbarui ke properti NetworkRule dari Storage Anda.
+Array objek IpRule diperbarui ke properti NetworkRule dari akun Storage Anda.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule[]
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Array objek VirtualNetworkRule diperbarui ke properti NetworkRule dari akun Storage Anda.
+Array objek VirtualNetworkRule untuk diperbarui ke properti NetworkRule dari akun Storage Anda.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule[]
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerInboundNatPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzLoadBalancerInboundNatPoolConfig.md
-ms.openlocfilehash: dceee93192d1f93f7e125792580f8955f85d56b9
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f8115d7fabfa71186190da518b4c68923523b950
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232271"
 ---
 # Add-AzLoadBalancerInboundNatPoolConfig
 
 ## SYNOPSIS
 Menambahkan pool NAT masuk ke penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azloadbalancerinboundnatpoolconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengonfigurasi titik akhir mesin virtual untuk kapabilitas IP terapung yang diperlukan untuk mengonfigurasi SQL Ketersediaan AlwaysOn. Pengaturan ini diperlukan saat menggunakan Grup Ketersediaan SQL AlwaysOn di SQL server. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
+Mengonfigurasi titik akhir mesin virtual untuk kapabilitas IP terapung yang diperlukan untuk mengonfigurasi Grup Ketersediaan AlwaysOn SQL. Pengaturan ini diperlukan saat menggunakan Grup Ketersediaan SQL AlwaysOn di SQL server. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

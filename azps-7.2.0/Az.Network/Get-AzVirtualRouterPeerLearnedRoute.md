@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualRouterPeerLearnedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualRouterPeerLearnedRoute.md
-ms.openlocfilehash: 3f8b0e5fbb57dd270f075f29d38f5f9d2d88e29d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3886eff4427870ff3944265582d068b992ba8648
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315724"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231083"
 ---
 # Get-AzVirtualRouterPeerLearnedRoute
 
 ## SYNOPSIS
 Rute daftar yang dipelajari oleh rekan router virtual tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvirtualrouterpeerlearnedroute) untuk informasi terkini.
 
 ## SYNTAX
 

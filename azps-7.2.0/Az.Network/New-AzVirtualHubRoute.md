@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHubRoute.md
-ms.openlocfilehash: c760b18d7fdd083de8380a5a76dcf958585e7dfb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b55ec560a5ca5c6b4d19c3bab7f8fd27b6841d2e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301083"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230579"
 ---
 # New-AzVirtualHubRoute
 
 ## SYNOPSIS
 Membuat objek Azure Virtual Hub Route.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualhubroute) untuk informasi terkini.
 
 ## SYNTAX
 

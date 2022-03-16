@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: 2476d1a79f6bc08147ac1fd4753fbf26c61e97f3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9bead1bb5e7bbd57a2ad933107178890d3902765
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168557"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231821"
 ---
 # Get-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi aturan NAT masuk untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerinboundnatruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpAddress.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPublicIpAddress.md
-ms.openlocfilehash: 02e5084ff53b92c94182df42863139b42a3498c6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6214101701e575e41462e9e919c809708a3bb584
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303580"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230713"
 ---
 # New-AzPublicIpAddress
 
 ## SYNOPSIS
 Membuat alamat IP publik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azpublicipaddress) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Perintah ini akan membuat sumber daya alamat IP publik baru. Catatan DNS dibuat 
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $location -ReverseFqdn $customFqdn
 ```
 
-Perintah ini akan membuat sumber daya alamat IP publik baru. Dengan parameter -ReverseFqdn, Azure membuat catatan DNS PTR (pencarian terbalik) untuk alamat IP publik yang dialokasikan ke sumber daya ini, mengarahkan ke $customFqdn yang ditentukan dalam perintah. Sebagai prasyarat, $customFqdn (misalnya webapp.contoso.com) harus memiliki catatan DNS CNAME (pencarian terusan) yang menunjuk ke $dnsPrefix.$location.cloudapp.azure.com.
+Perintah ini akan membuat sumber daya alamat IP publik baru. Dengan parameter -ReverseFqdn, Azure membuat catatan DNS PTR (pencarian terbalik) untuk alamat IP publik yang dialokasikan ke sumber daya ini, mengarahkan ke $customFqdn ditentukan dalam perintah. Sebagai prasyarat, $customFqdn (misalnya webapp.contoso.com) harus memiliki catatan DNS CNAME (pencarian terusan) yang menunjuk ke $dnsPrefix.$location.cloudapp.azure.com.
 
 ### Contoh 3: Buat alamat IP publik baru dengan IpTag
 ```powershell
@@ -53,7 +56,7 @@ $ipTag = New-AzPublicIpTag -IpTagType "FirstPartyUsage" -Tag "/Sql"
 $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $location -IpTag $ipTag
 ```
 
-Perintah ini akan membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang mengarah ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini sebagai -AllocationMethod ditentukan sebagai 'Statis'. Jika ditetapkan sebagai 'Dynamic', alamat IP publik akan dialokasikan hanya ketika Anda memulai (atau membuat) sumber daya yang terkait (seperti VM atau load balancer). Iptag digunakan untuk spesifik Tag yang terkait dengan sumber daya. Iptag dapat ditentukan menggunakan New-AzPublicIpTag dan disampaikan sebagai input melalui -IpTags.
+Perintah ini akan membuat sumber daya alamat IP publik baru. Catatan DNS dibuat untuk $dnsPrefix.$location.cloudapp.azure.com yang mengarah ke alamat IP publik sumber daya ini. Alamat IP publik segera dialokasikan ke sumber daya ini sebagai -AllocationMethod ditentukan sebagai 'Statis'. Jika ditetapkan sebagai 'Dynamic', alamat IP publik akan dialokasikan hanya ketika Anda memulai (atau membuat) sumber daya yang terkait (seperti VM atau load balancer). Iptag digunakan untuk spesifik Tag yang terkait dengan sumber daya. Iptag dapat ditentukan menggunakan New-AzPublicIpTag dan diteruskan sebagai input melalui -IpTags.
 
 ### Contoh 4: Membuat alamat IP publik baru dari Prefiks
 ```powershell

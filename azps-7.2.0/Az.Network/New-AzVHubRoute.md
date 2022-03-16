@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVHubRoute.md
-ms.openlocfilehash: 5b84c0e168a297aacaac43a8878ef48e958ed840
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ea63fe114a1c4afa17b9dcc2b92ebbaf98062a1a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264700"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230615"
 ---
 # New-AzVHubRoute
 
 ## SYNOPSIS
 Membuat objek VHubRoute yang dapat dialihkan sebagai parameter ke New-AzVHubRouteTable parameter.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvhubroute) untuk informasi terkini.
 
 ## SYNTAX
 

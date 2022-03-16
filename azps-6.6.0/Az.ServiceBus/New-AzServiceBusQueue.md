@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusQueue.md
-ms.openlocfilehash: 54e4606e19b14b34105ca676e496ae41e7a2f6a0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 41ac78e359d85244a04f5fb5205eed14ac2f3859
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342269"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246530"
 ---
 # New-AzServiceBusQueue
 
 ## SYNOPSIS
-Membuat antrean Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+Membuat Bus Layanan dalam ruang nama Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebusqueue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ New-AzServiceBusQueue [-ResourceGroupName] <String> [-Namespace] <String> [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusQueue** membuat permintaan Bus Layanan dalam ruang nama Bus Layanan tertentu.
+Cmdlet **New-AzServiceBusQueue** membuat antrean Bus Layanan dalam ruang nama Bus Layanan tertentu.
 
 ## EXAMPLES
 
@@ -64,11 +67,11 @@ ForwardDeadLetteredMessagesTo       :
 EnableBatchedOperations             : False
 ```
 
-Membuat antrean baru Bus Layanan dalam `SB-Queue_example1` ruang nama Bus Layanan `SB-Example1` tertentu.
+Membuat permintaan Bus Layanan dalam ruang `SB-Queue_example1` nama Bus Layanan ditentukan`SB-Example1`.
 
 ### Contoh 2
 
-Membuat antrean Bus Layanan dalam ruang nama Bus Layanan ditentukan. (otomatisgenerated)
+Membuat Bus Layanan dalam ruang nama Bus Layanan yang ditentukan. (otomatisgenerated)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzServiceBusQueue -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Name SB-Queue_example1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
@@ -77,7 +80,7 @@ New-AzServiceBusQueue -EnablePartitioning $true -MaxSizeInMegabytes <Int64> -Nam
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [diam jangka waktu,](https://msdn.microsoft.com/library/system.timespan.aspx) setelah itu antrean dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval [diam jangka waktu](https://msdn.microsoft.com/library/system.timespan.aspx) , setelah itu antrean dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeInMegabytes
-MaxSizeInMegabytes - ukuran maksimum antrean dalam megabyte, yang adalah ukuran memori yang dialokasikan untuk antrean. Defaultnya adalah 1024. Maks untuk SKU Standar adalah 5120 dan untuk Premium SKU adalah 81920, Nilai yang diperbolehkan: 1024, 2048, 3072, 4096, 5120, 10240, 20480, 40960, 81920
+MaxSizeInMegabytes - ukuran maksimum antrean dalam megabyte, yang adalah ukuran memori yang dialokasikan untuk antrean. Defaultnya adalah 1024. Maks untuk SKU Standar adalah 5120 dan untuk SKU Premium adalah 81920, Nilai yang diperbolehkan: 1024, 2048, 3072, 4096, 5120, 10240, 20480, 40960, 81920
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

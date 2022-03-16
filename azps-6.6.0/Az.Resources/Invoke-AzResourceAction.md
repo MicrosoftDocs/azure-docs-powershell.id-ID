@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Invoke-AzResourceAction.md
-ms.openlocfilehash: d9a1e609e95e14f655f5242194593111fc4c733c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 88568e3c9572a9655ea55a1aa318782e19d7547b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349502"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246923"
 ---
 # Invoke-AzResourceAction
 
 ## SYNOPSIS
 Menjalankan tindakan pada sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/invoke-azresourceaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ PS C:\>Invoke-AzResourceAction -ResourceGroupName testGroup -ResourceName testVM
 ```
 
 Perintah ini menghentikan Komputer Virtual dengan {ResourceId}.
-Perintah menentukan parameter *Paksa,* oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
 
 ### Contoh 3: Invoke mendaftarkan penyedia sumber daya dengan ResourceId
 
@@ -86,7 +89,7 @@ registrationState : Registered
 ```
 
 Perintah ini mendaftarkan penyedia sumber daya "Microsoft.Network".
-Perintah menentukan parameter *Paksa,* oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Perintah menentukan parameter *Paksa* , oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi untuk sumber daya di mana cmdlet ini akan menjalankan tindakan.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: nama `/` server database
+Misalnya, untuk menentukan database, gunakan format berikut: namadatabase`/` server
 
 ```yaml
 Type: System.String
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 
 ### -ResourceId
 Menentukan ID sumber daya yang sepenuhnya memenuhi syarat dari sumber daya di mana cmdlet ini akan menjalankan tindakan.
-ID mencakup langganan, seperti dalam contoh berikut: `/subscriptions/` ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
+ID mencakup langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -339,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

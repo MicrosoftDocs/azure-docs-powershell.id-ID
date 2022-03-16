@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 2ef6b16cea389b88ba8403fbeefc22481e466758
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 03e6dab5e447a0e3cbcdd625157a6f4c9dfae37e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272492"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231839"
 ---
 # Get-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Mendapatkan Sertifikat Akar Tepercaya dengan nama tertentu dari Gateway Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewaytrustedrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\> $gw = Get-AzApplicationGateway -Name $appgwName -ResourceGroupName $resg
 PS C:\> $trustedRootCert = Get-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw -Name $certName --CertificateFile ".\rootCA.cer"
 ```
 
-Perintah pertama akan mendapatkan Gateway Aplikasi dan menyimpannya dalam $gw variabel.
+Perintah pertama mendapatkan Gateway Aplikasi dan menyimpannya dalam $gw baru.
 Perintah kedua mendapatkan Sertifikat Akar Tepercaya dengan nama yang ditentukan dari Gateway Aplikasi.
 
 ## PARAMETERS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayIPConfiguration.md
-ms.openlocfilehash: 9b53d207ff0defb24b510028485b1b158a17b2aa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 76a61b25817a010ab9ad9bbad5685b95b5a60798
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288636"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230741"
 ---
 # New-AzApplicationGatewayIPConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi IP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayipconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

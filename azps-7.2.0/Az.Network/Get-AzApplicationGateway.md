@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGateway.md
-ms.openlocfilehash: d9db87de4f2f581d13835269e9eb5c2a80e66660
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ccd021f0899c6a5cc9cbb7caca0b100881e73811
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232111"
 ---
 # Get-AzApplicationGateway
 
 ## SYNOPSIS
 Mendapatkan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal.
+Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya.
 
 ### Contoh 2: Dapatkan daftar gateway aplikasi dalam grup sumber daya
 ```
@@ -144,7 +147,7 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini mendapatkan daftar semua gateway aplikasi di grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGwList sumber daya.
+Perintah ini mendapatkan daftar semua gateway aplikasi di grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGwList lokal.
 
 ### Contoh 3: Dapatkan daftar gateway aplikasi dalam langganan
 ```

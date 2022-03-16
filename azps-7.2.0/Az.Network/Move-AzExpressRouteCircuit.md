@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/move-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Move-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Move-AzExpressRouteCircuit.md
-ms.openlocfilehash: d67d6949a6652ffee549ade889668ad90e8c33e7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c01b6db2c596cd7e58fb7e7db66e2abc64973147
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162338"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140230957"
 ---
 # Move-AzExpressRouteCircuit
 
 ## SYNOPSIS
 Memindahkan sirkuit ExpressRoute dari model penyebaran klasik ke model penyebaran Manajer Sumber Daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/move-azexpressroutecircuit) untuk informasi terkini.
 
 ## SYNTAX
 

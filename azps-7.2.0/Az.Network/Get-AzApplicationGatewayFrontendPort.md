@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayFrontendPort.md
-ms.openlocfilehash: 67df569126d96a70d312a938543cc5b6b7a14c0a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ea61620476d2cf0e6e1af45f9c0f6a4e364737a7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231929"
 ---
 # Get-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
 Mendapatkan port ujung-depan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azapplicationgatewayfrontendport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ PS C:\> $FrontEndPorts = Get-AzApplicationGatewayFrontendPort  -ApplicationGatew
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan daftar port ujung-depan dari $AppGw dan menyimpannya di variabel $FrontEndPorts.
+Perintah kedua mendapatkan daftar port ujung-depan dari $AppGw dan menyimpannya di $FrontEndPorts variabel.
 
 ## PARAMETERS
 

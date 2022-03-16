@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightCluster.md
-ms.openlocfilehash: 661e246b0a41a9dee3190c2f31304c74b2def636
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c7176f66001cfd06ed7f4a32c3eb6f313c975e67
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169267"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123217"
 ---
 # New-AzHDInsightCluster
 
 ## SYNOPSIS
 Membuat kluster Azure HDInsight dalam grup sumber daya yang ditentukan untuk langganan saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightcluster) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -860,7 +863,7 @@ Accept wildcard characters: False
 
 ### -Config
 Menentukan objek kluster yang akan digunakan untuk membuat kluster.
-Objek ini dapat dibuat menggunakan cmdlet New-AzHDInsightClusterConfig cmdlet.
+Objek ini dapat dibuat menggunakan cmdlet New-AzHDInsightClusterConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -1195,7 +1198,7 @@ Accept wildcard characters: False
 ```
 
 ### -OozieMetastore
-Menentukan hasil SQL Database menyimpan metadata Oozie.
+Menentukan metode SQL Database menyimpan metadata Oozie.
 Anda juga dapat menggunakan cmdlet Add-AzHDInsightMetastore.
 
 ```yaml
@@ -1386,7 +1389,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Mendapatkan atau mengatur Storage Akses Akun baru untuk Storage tersebut.
+Mendapatkan atau mengatur Storage Akses Akun untuk Storage tersebut.
 
 ```yaml
 Type: System.String

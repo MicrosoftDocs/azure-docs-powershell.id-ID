@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareProviderShareSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareProviderShareSubscription.md
-ms.openlocfilehash: 8958a94ce5a9733c43a7af46687c3a2306a5b2d4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9d3c137e8341c68c0d4ba6193c54460d11bb6cfd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138260107"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140090261"
 ---
 # Get-AzDataShareProviderShareSubscription
 
 ## SYNOPSIS
 Mendapatkan informasi tentang langganan berbagi konsumen di sisi penyedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/get-azdatashareprovidersharesubscription) untuk informasi terkini.
 
 ## SYNTAX
 

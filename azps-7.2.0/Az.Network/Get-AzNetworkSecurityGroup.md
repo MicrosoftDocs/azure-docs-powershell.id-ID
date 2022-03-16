@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityGroup.md
-ms.openlocfilehash: ee8040f58542c9ba1e8afc5451ace34418b2fb05
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 56bacb6d925bbb102a95ba67f2b738dde44f66d4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138285387"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140231677"
 ---
 # Get-AzNetworkSecurityGroup
 
 ## SYNOPSIS
 Mendapatkan grup keamanan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworksecuritygroup) untuk informasi terkini.
 
 ## SYNTAX
 

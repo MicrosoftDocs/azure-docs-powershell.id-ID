@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: 8acf9d9e370eb1b7f5f9cdf7d473c13d199e98a0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d69962d660744fded81b197d5def71e29a5bfafc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169890"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140232341"
 ---
 # Add-AzApplicationGatewayRedirectConfiguration
 
 ## SYNOPSIS
 Menambahkan konfigurasi pengalihan ke Gateway Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewayredirectconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

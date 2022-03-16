@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesSnapshotPolicy.md
-ms.openlocfilehash: b650f35a849666d594d5d05de9b99a06d3e76cdc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1898771a5eb0439591c4adc6dd35bf220086c0f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281035"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140086823"
 ---
 # Update-AzNetAppFilesSnapshotPolicy
 
 ## SYNOPSIS
 Memperbarui kebijakan snapshot Azure NetApp Files (ANF) ke pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilessnapshotpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
