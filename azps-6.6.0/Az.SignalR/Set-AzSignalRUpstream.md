@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/set-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Set-AzSignalRUpstream.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Set-AzSignalRUpstream.md
-ms.openlocfilehash: 36c94b5122aacc5855400f43a4a33d92ed41c1b2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 04721b5cadb7919ae3987e22a28f88f311314d89
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358013"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303881"
 ---
 # Set-AzSignalRUpstream
 
 ## SYNOPSIS
 Mengatur pengaturan upstream layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/set-azsignalrupstream) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 Item templat untuk pengaturan upstream.
 Kunci yang diperlukan: UrlTemplate.
 Tombol opsional: HubPattern, EventPattern, CategoryPattern.
-Contoh penggunaan sintaks splatting untuk memasukkan parameter templat: @{UrlTemplate=' http://host-connections1.com ', HubPattern= 'chat'; EventPattern='broadcast' },@{UrlTemplate=' http://host-connections2.com '}
+Contoh penggunaan sintaks splatting untuk memasukkan parameter templat: @{UrlTemplate=''http://host-connections1.com, HubPattern= 'chat'; EventPattern='broadcast' },@{UrlTemplate='http://host-connections2.com'}
 
 ```yaml
 Type: Microsoft.Azure.Commands.SignalR.Models.PSUpstreamTemplate[]
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/test-azbat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Test-AzBatchAutoScale.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Test-AzBatchAutoScale.md
-ms.openlocfilehash: db0017fad73e9b976694611c17572c63cb2130a9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 61d7a08156e6514635005f1a64fa4b5a927c3134
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366110"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140258641"
 ---
 # Test-AzBatchAutoScale
 
 ## SYNOPSIS
 Mendapatkan hasil rumus penskalaan otomatis pada sebuah kolam renang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/test-azbatchautoscale) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> $Evaluation.AutoScaleRun.Results
 $TargetDedicated=5;$NodeDeallocationOption=requeue;totalNodes=5
 ```
 
-Perintah pertama menyimpan rumus dalam variabel $Formula untuk digunakan dalam contoh.
+Perintah pertama menyimpan rumus dalam $Formula variabel untuk digunakan dalam contoh.
 Perintah kedua mengevaluasi rumus skala otomatis pada kolam yang memiliki ID ContosoPool.
 Perintah final menampilkan Hasil **dengan** menggunakan sintaks titik standar.
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

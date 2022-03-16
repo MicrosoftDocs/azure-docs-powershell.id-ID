@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIRemoteSupport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Enable-AzStackHCIRemoteSupport.md
-ms.openlocfilehash: 7ab519e81cf5d82c732d63cde2cac4a136893938
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cd8be640b9e4a0a01623cd2d20550ad3a26d511e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301820"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316725"
 ---
 # Enable-AzStackHCIRemoteSupport
 
 ## SYNOPSIS
 Mengaktifkan Dukungan Jarak Jauh.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/enable-azstackhciremotesupport) untuk informasi terkini.
 
 ## SYNTAX
 

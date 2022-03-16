@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzDeviceSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Remove-AzDeviceSecurityGroup.md
-ms.openlocfilehash: 91fc0897e401e922897104e1d78aeb86169839fb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 32669f4e8873e8f3e7fd09ce29751123408781aa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140293459"
 ---
 # Remove-AzDeviceSecurityGroup
 
 ## SYNOPSIS
 Hapus grup keamanan perangkat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/remove-azdevicesecuritygroup) untuk informasi terkini.
 
 ## SYNTAX
 

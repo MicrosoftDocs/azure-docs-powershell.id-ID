@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageQueue.md
-ms.openlocfilehash: 16a412f924a8500eaf4c7fed0b1937ed44a2c8f0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 41f115b40acba0b665e82b9dfcb553b567f1f301
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316239"
 ---
 # New-AzStorageQueue
 
 ## SYNOPSIS
 Membuat antrean penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragequeue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Alur kerja menggunakan metode Terpisah dari kelas .NET String lalu melewati nama
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext baru.
+Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationSecurityGroup.md
-ms.openlocfilehash: e8785d63080d911b21b12e9de03a6845f9c7ae2a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 561dea66e3e979a520527503bbae93f70a1996cb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162325"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294827"
 ---
 # New-AzApplicationSecurityGroup
 
 ## SYNOPSIS
 Membuat grup keamanan aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationsecuritygroup) untuk informasi terkini.
 
 ## SYNTAX
 

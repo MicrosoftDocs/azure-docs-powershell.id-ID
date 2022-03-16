@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSqlInformationProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSqlInformationProtectionPolicy.md
-ms.openlocfilehash: 14e0d8cc7f433b03669abb36ea899852b0a42c0f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d965e7e9a2a5adf29933e44d0353b484e75e2529
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360125"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140277241"
 ---
 # Set-AzSqlInformationProtectionPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan perlindungan informasi SQL penyewa yang efektif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-azsqlinformationprotectionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Set-AzSqlInformationProtectionPolicy -Policy <String> [-AsJob] [-DefaultProfile 
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SQL File Jalur File Kebijakan Proteksi Informasi
+### SQL File Jalur Kebijakan Proteksi Informasi
 ```
 Set-AzSqlInformationProtectionPolicy -FilePath <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan definisi kebijakan SQL informasi informasi. Anda dapat menentukan jalur file .json atau string format JSON yang menentukan kebijakan.
+Menentukan definisi SQL kebijakan perlindungan informasi. Anda dapat menentukan jalur file .json atau string format JSON yang menentukan kebijakan.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

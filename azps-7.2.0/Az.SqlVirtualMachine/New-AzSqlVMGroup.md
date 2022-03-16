@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
-ms.openlocfilehash: 68657c478779797b5164c4e739e64bfb0c2ec5ce
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e228c9e0fc71c04d137e7cd79e763f4dd1be4dfb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166265"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291281"
 ---
 # New-AzSqlVMGroup
 
 ## SYNOPSIS
 Membuat grup mesin virtual sql yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServiceAccount
-Nama di mana SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
+Nama layanan yang SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag untuk dikaitkan dengan SQL grup mesin virtual.
+Tag untuk dikaitkan dengan SQL mesin virtual Anda.
 
 ```yaml
 Type: System.Collections.Hashtable

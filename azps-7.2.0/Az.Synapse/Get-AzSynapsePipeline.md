@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapsePipeline.md
-ms.openlocfilehash: 2f32598f67099b5715179d50588d1277e85e1688
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 51329685a63a4f8c6f510166a87f1a9648088161
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138273419"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140315213"
 ---
 # Get-AzSynapsePipeline
 
 ## SYNOPSIS
 Mendapatkan informasi tentang saluran di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsepipeline) untuk informasi terkini.
 
 ## SYNTAX
 

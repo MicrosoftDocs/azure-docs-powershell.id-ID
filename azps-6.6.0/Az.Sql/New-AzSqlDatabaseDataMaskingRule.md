@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseDataMaskingRule.md
-ms.openlocfilehash: af5de414d2573ade6ce4d38ab76653b3f166f824
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 661dd9d25aaefc0e6b7d97d39e9988d94e2f07a8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140276503"
 ---
 # New-AzSqlDatabaseDataMaskingRule
 
 ## SYNOPSIS
 Membuat aturan masker data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabasedatamaskingrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,10 +32,10 @@ New-AzSqlDatabaseDataMaskingRule -MaskingFunction <String> [-PrefixSize <UInt32>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabaseDataMaskingRule** membuat aturan masker data untuk database azure SQL.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi aturan.
+Cmdlet **New-AzSqlDatabaseDataMaskingRule** membuat aturan masker data untuk database SQL Azure.
+Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, *dan DatabaseName* untuk mengidentifikasi aturan.
 Sediakan *TableName* dan *ColumnName* untuk menentukan target aturan dan parameter *MaskingFunction* untuk menentukan cara data disinggapkan.
-Jika *Fungsi Penyem* masking memiliki nilai dari Angka atau Teks, Anda bisa menentukan parameter *NumberFrom* dan *NumberTo,* untuk number masking, atau *PrefixSize*, *ReplacementString*, dan *SuffixSize* untuk penyempengan teks.
+Jika *Fungsi Penyem* masking memiliki nilai dari Angka atau Teks, Anda bisa menentukan parameter *NumberFrom* dan *NumberTo* , untuk number masking, atau *PrefixSize*, *ReplacementString*, dan *SuffixSize* untuk penyempengan teks.
 Jika perintah berhasil dan parameter *PassThru* digunakan, cmdlet akan mengembalikan objek yang menjelaskan properti aturan masker data selain pengidentifikasi aturan.
 Pengidentifikasi aturan menyertakan, tetapi tidak terbatas pada, *ResourceGroupName*, *ServerName*, *DatabaseName*, dan *RuleID*.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 
 ### -NumberFrom
 Menentukan jumlah batas bawah interval yang darinya nilai acak dipilih.
-Tentukan parameter ini hanya jika Anda menentukan nilai Number untuk parameter *MaskingFunction.*
+Tentukan parameter ini hanya jika Anda menentukan nilai Number untuk parameter *MaskingFunction* .
 Nilai default adalah 0.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -NumberTo
 Menentukan angka batas atas interval yang darinya nilai acak dipilih.
-Tentukan parameter ini hanya jika Anda menentukan nilai Number untuk parameter *MaskingFunction.*
+Tentukan parameter ini hanya jika Anda menentukan nilai Number untuk parameter *MaskingFunction* .
 Nilai default adalah 0.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 
 ### -PrefixSize
 Menentukan jumlah karakter di awal teks yang tidak disingg masker.
-Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction.*
+Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
 Nilai default adalah 0.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 
 ### -ReplacementString
 Menentukan jumlah karakter di akhir teks yang tidak disinggakhirkan.
-Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction.*
+Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
 Nilai defaultnya adalah string kosong.
 
 ```yaml
@@ -250,7 +253,7 @@ Accept wildcard characters: False
 
 ### -SuffixSize
 Menentukan jumlah karakter di akhir teks yang tidak disinggakhirkan.
-Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction.*
+Tentukan parameter ini hanya jika Anda menentukan nilai Teks untuk parameter *MaskingFunction* .
 Nilai default adalah 0.
 
 ```yaml
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseWorkspace.md
-ms.openlocfilehash: 5ca5e78cd203fdf48853d3f4484666a55031f23b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4e37ac73e483ec8d37e79b6012f9d70cc08fe6ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376989"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140275877"
 ---
 # Enable-AzSynapseWorkspace
 
 ## SYNOPSIS
 Saat membuat ruang kerja Analitik Azure Synapse, Anda dapat memilih untuk mengenkripsi semua data yang disimpan di ruang kerja 'dengan kunci yang dikelola pelanggan, yang akan menyediakan enkripsi ganda ke ruang kerja. Anda mungkin perlu menyiapkan lingkungan enkripsi terlebih dahulu, seperti membuat kunci vault dengan proteksi pembersihan dan menentukan Kebijakan Access ke vault kunci. Lalu gunakan cmdlet ini untuk mengaktifkan ruang kerja Azure Synapse Analytics baru yang enkripsi gandanya diaktifkan menggunakan kunci yang dikelola pelanggan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/enable-azsynapseworkspace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Enable-AzSynapseWorkspace -ResourceId <String> [-EncryptionKeyIdentifier <String
 ```
 
 ## DESCRIPTION
-Cmdlet Enable-AzSynapseWorkspace mengaktifkan ruang kerja Azure Synapse Analytics baru yang mendukung enkripsi ganda menggunakan kunci yang dikelola pelanggan.
+Cmdlet Enable-AzSynapseWorkspace mengaktifkan ruang kerja Analitik Azure Synapse baru yang mendukung enkripsi ganda menggunakan kunci yang dikelola pelanggan.
 
 ## EXAMPLES
 

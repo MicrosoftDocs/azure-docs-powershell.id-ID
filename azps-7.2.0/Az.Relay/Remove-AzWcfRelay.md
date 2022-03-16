@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzWcfRelay.md
-ms.openlocfilehash: 10b4233fdad8f7be68f774f2ee25958a7520b1d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 02f86427cecaaf009c05fa78631b6247a0d8b0ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138313388"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294251"
 ---
 # Remove-AzWcfRelay
 
 ## SYNOPSIS
 Menghapus Wcf Benary dari ruang nama Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/remove-azwcfrelay) untuk informasi terkini.
 
 ## SYNTAX
 

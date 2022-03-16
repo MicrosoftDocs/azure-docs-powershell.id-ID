@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcemover/in
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverPrepare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceMover/help/Invoke-AzResourceMoverPrepare.md
-ms.openlocfilehash: 8828b77452616240602a168ba67956219b338b61
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f6971ef0eedf1d4e2cfb461653570a785bbd2766
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140278663"
 ---
 # Invoke-AzResourceMoverPrepare
 
@@ -18,6 +18,9 @@ ms.locfileid: "136342377"
 Memulai persiapan untuk kumpulan sumber daya yang disertakan dalam badan permintaan.
 Operasi persiapan berada pada moveResources yang berada di moveState 'PreparePending' atau 'PrepareFailed', setelah selesai, moveResource moveState melakukan transisi ke MovePending.
 Untuk membantu pengguna agar prasyarat operasi klien bisa memanggil operasi dengan properti validateOnly yang diatur ke true.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcemover/invoke-azresourcemoverprepare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

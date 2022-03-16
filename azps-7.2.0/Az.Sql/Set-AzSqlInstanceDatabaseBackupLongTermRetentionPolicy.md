@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy.md
-ms.openlocfilehash: 3e64f3bfcd47f55df73b8a3caf71f813560fdc5d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c6ac2421f8baf03a8fcc6e9945d8a748f9d05cc7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292844"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291677"
 ---
 # Set-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy
 
 ## SYNOPSIS
 Cmdlet **Set-AzSqlInstanceDatabaseLongTermRetentionBackup** mengatur kebijakan penyimpanan jangka panjang database terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlinstancedatabasebackuplongtermretentionpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

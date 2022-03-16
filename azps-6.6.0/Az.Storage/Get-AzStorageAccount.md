@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccount.md
-ms.openlocfilehash: 616ad0ed28ea6c99cb0e6a1257607852b6bc75d6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 26e8a75f7940786c47b51c348c876d696270415f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368348"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140276395"
 ---
 # Get-AzStorageAccount
 
 ## SYNOPSIS
 Mendapatkan akun Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01" -Name "mystorageaccount"
 
 Perintah ini mendapatkan akun Storage tertentu.
 
-### Contoh 2: Dapatkan Storage sumber daya dalam grup sumber daya
+### Contoh 2: Dapatkan semua Storage sumber daya dalam grup sumber daya
 ```
 PS C:\>Get-AzStorageAccount -ResourceGroupName "RG01"
 ```
@@ -64,7 +67,7 @@ PS C:\>Get-AzStorageAccount
 
 Perintah ini akan mendapatkan semua Storage baru dalam langganan.
 
-### Contoh 4: Mendapatkan Storage dengan status pemulihan blob
+### Contoh 4: Dapatkan akun Storage dengan status pemulihan blobnya
 ```
 PS C:\> $account = Get-AzStorageAccount -ResourceGroupName "myresourcegoup" -StorageAccountName "mystorageaccount" -IncludeBlobRestoreStatus
 
@@ -75,7 +78,7 @@ Status     RestoreId                            FailureReason Parameters.TimeToR
 InProgress a70cd4a1-f223-4c86-959f-cc13eb4795a8               2020-02-10T13:45:04.7155962Z [container1/blob1 -> container2/blob2]
 ```
 
-Perintah ini memberikan Storage akun dengan status pemulihan blobnya, dan memperlihatkan status pemulihan blob.
+Perintah ini akan memberikan Storage akun dengan status pemulihan blobnya, dan memperlihatkan status pemulihan blob.
 
 ## PARAMETERS
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage yang akan dapatkan.
+Menentukan nama grup sumber daya yang berisi nama Storage yang akan dapatkan.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

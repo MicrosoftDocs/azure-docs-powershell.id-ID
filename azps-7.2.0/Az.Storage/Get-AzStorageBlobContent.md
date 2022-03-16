@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageBlobContent.md
-ms.openlocfilehash: 72433ae89ce4040402f16e03f77a76ea22594fcc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 18b7fe74a5100e07b0eec6e96a80e9330a3dd8d7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316509"
 ---
 # Get-AzStorageBlobContent
 
 ## SYNOPSIS
 Mengunduh blob penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageblobcontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 
 ### -CloudBlobContainer
 Menentukan objek **CloudBlobContainer** dari pustaka klien penyimpanan Azure.
-Anda dapat membuatnya atau menggunakan cmdlet Get-AzStorageContainer baru.
+Anda dapat membuatnya atau menggunakan Get-AzStorageContainer cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlobContainer
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan akun penyimpanan Azure yang ingin Anda unduh konten blobnya.
-Anda dapat menggunakan cmdlet New-AzStorageContext cmdlet untuk membuat konteks penyimpanan.
+Anda dapat menggunakan cmdlet New-AzStorageContext tersebut untuk membuat konteks penyimpanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext

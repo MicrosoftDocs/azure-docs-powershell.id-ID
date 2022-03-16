@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHub.md
-ms.openlocfilehash: 052c35f0faa5b440cf7130afb611060189deec03
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e48cd92a625c136edac91b27aa898856a104d0c3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389712"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140306851"
 ---
 # Get-AzNotificationHub
 
 ## SYNOPSIS
 Mendapatkan informasi tentang hub pemberitahuan Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Get-AzNotificationHub [-ResourceGroup] <String> [-Namespace] <String> [[-Notific
 Cmdlet **Get-AzNotificationHub** mendapatkan informasi tentang hub pemberitahuan dalam ruang nama yang ditentukan dan ditetapkan ke grup sumber daya yang ditentukan.
 Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan dalam ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 Alternatifnya, Anda dapat menggunakan parameter *NotificationHub* untuk membatasi data yang dikembalikan menjadi informasi tentang hub pemberitahuan tertentu.
-Hub pemberitahuan digunakan untuk mengirimkan pemberitahuan push ke beberapa klien, terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Windows Store, yang digunakan oleh klien tersebut.
+Hub pemberitahuan digunakan untuk mengirimkan pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Windows Store, yang digunakan oleh klien tersebut.
 Hub tersebut kira-kira sama dengan aplikasi individu dan setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet ini hanya mendapatkan informasi tentang hub itu sendiri.
 Cmdlet lain, seperti Get-AzNotificationHubAuthorizationRules, Get-AzNotificationHubListKeys, dan Get-AzNotificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

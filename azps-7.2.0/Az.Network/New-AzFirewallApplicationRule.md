@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallApplicationRule.md
-ms.openlocfilehash: 590711237663ca2c316ab6bdf5336347bab7611e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1197311f65bea4783fcc95c78f95e9b5d284dfc4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306715"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294665"
 ---
 # New-AzFirewallApplicationRule
 
 ## SYNOPSIS
 Membuat Aturan Aplikasi Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallapplicationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Contoh ini membuat aturan yang akan memperbolehkan semua lalu lintas HTTPS pada 
 New-AzFirewallApplicationRule -Name "windows-update-rule" -FqdnTag WindowsUpdate -SourceAddress "10.0.0.0/24"
 ```
 
-Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Baru untuk domain 10.0.0.0/24.
+Contoh ini membuat aturan yang akan memungkinkan lalu lintas untuk Windows Untuk domain 10.0.0.0/24.
 
 ## PARAMETERS
 

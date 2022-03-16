@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/add-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountManagementPolicyAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzStorageAccountManagementPolicyAction.md
-ms.openlocfilehash: e0104fd3a33e3fdbf433463e0683528550fe6a48
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2e329f8989f52bf1074c0a31a6078eb247badda8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258188"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316707"
 ---
 # Add-AzStorageAccountManagementPolicyAction
 
 ## SYNOPSIS
 Menambahkan tindakan ke objek Grup Tindakan ManagementPolicy input, atau membuat objek Grup Tindakan ManagementPolicy dengan tindakan tersebut. Objek dapat digunakan dalam New-AzStorageAccountManagementPolicyRule.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/add-azstorageaccountmanagementpolicyaction) untuk informasi terkini.
 
 ## SYNTAX
 

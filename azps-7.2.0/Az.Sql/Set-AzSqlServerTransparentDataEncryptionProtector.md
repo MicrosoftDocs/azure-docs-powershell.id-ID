@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerTransparentDataEncryptionProtector.md
-ms.openlocfilehash: f6a7fdcdc105555b6cb6187dbe82bdb171d9c8b5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f2e38f053855eec24adbf9c09a440cb15ca51c46
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288316"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291515"
 ---
 # Set-AzSqlServerTransparentDataEncryptionProtector
 
 ## SYNOPSIS
 Mengatur konfigurasi Enkripsi Data Transparan (TDE) untuk server SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlservertransparentdataencryptionprotector) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
-ms.openlocfilehash: 93347c45508972179faa16b8b294daa8fe5c81c6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9073f4c44a25c6e51daa4c04a608f0f7c56a7f14
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310972"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140293729"
 ---
 # Set-AzPolicyAssignment
 
 ## SYNOPSIS
 Mengubah penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azpolicyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -99,8 +102,8 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -DisplayName 'Do
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
 Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dengan menggunakan Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
+Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebeseruan Dengan menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
 Perintah terakhir memperbarui nama tampilan pada penetapan kebijakan di grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
 ### Contoh 2: Tambahkan identitas terkelola yang ditetapkan sistem ke penetapan kebijakan
@@ -110,7 +113,7 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -IdentityType 'S
 ```
 
 Perintah pertama mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dari langganan saat ini dengan menggunakan cmdlet Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
 The final command assigns a system assigned managed identity to the policy assignment.
 
 ### Contoh 3: Tambahkan pengguna identitas terkelola yang ditetapkan ke penetapan kebijakan
@@ -121,8 +124,8 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -IdentityType 'U
 ```
 
 Perintah pertama mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dari langganan saat ini dengan menggunakan cmdlet Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
-Perintah kedua mendapatkan identitas terkelola yang ditetapkan pengguna bernama UserAssignedIdentity1 dengan menggunakan cmdlet Get-AzUserAssignedIdentity dan menyimpannya dalam variabel $UserAssignedIdentity baru.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
+Perintah kedua membuat pengguna mendapatkan identitas terkelola yang dinamai UserAssignedIdentity1 dengan menggunakan cmdlet Get-AzUserAssignedIdentity dan menyimpannya di variabel $UserAssignedIdentity baru.
 The final command assigns the user assigned managed identity identified by the **Id** property of $UserAssignedIdentity to the policy assignment.
 
 ### Contoh 4: Perbarui parameter penetapan kebijakan dengan objek parameter kebijakan baru
@@ -169,8 +172,8 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -EnforcementMode
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
 Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dengan menggunakan Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
+Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebeseruan Dengan menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
 Perintah terakhir memperbarui properti enforcementMode pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup.
 
 ### Contoh 7: Perbarui pesan tidak sesuai
@@ -179,7 +182,7 @@ PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicy'
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -NonComplianceMessage @{Message="All resources must follow resource naming guidelines."}
 ```
 
-Perintah pertama mendapatkan penetapan kebijakan bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam $PolicyAssignment variabel.
+Perintah pertama mendapatkan penetapan kebijakan yang bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam $PolicyAssignment baru.
 Perintah terakhir memperbarui pesan tidak memenuhi persyaratan pada penetapan kebijakan dengan pesan baru yang akan ditampilkan jika sumber daya ditolak oleh kebijakan tersebut.
 
 ## PARAMETERS
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Menentukan tipe identitas terkelola untuk ditetapkan ke penetapan kebijakan ini. Jika nilai 'SystemAssigned' disediakan, identitas terkelola yang ditetapkan untuk sistem akan dihasilkan dan ditetapkan untuk penetapan kebijakan ini. Jika nilai 'UserAssigned' disediakan, identitas yang ditetapkan pengguna yang diberikan melalui Id-nya ke parameter -IdentityId ditetapkan untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists' dan 'modifikasi'. Lokasi diperlukan saat menetapkan identitas. Izin harus diberikan ke identitas menggunakan identitas New-AzRoleAssignment setelah identitas yang ditetapkan sistem dibuat. Parameter IdentityType akan didahulukan jika kedua parameter AssignIdentity dan IdentityType digunakan.
+Menentukan tipe identitas terkelola untuk ditetapkan ke penetapan kebijakan ini. Jika nilai 'SystemAssigned' disediakan, identitas terkelola yang ditetapkan untuk sistem akan dihasilkan dan ditetapkan untuk penetapan kebijakan ini. Jika nilai 'UserAssigned' disediakan, identitas yang ditetapkan pengguna yang diberikan melalui Id-nya ke parameter -IdentityId ditetapkan untuk penetapan kebijakan ini. Identitas akan digunakan saat menjalankan penyebaran untuk kebijakan 'deployIfNotExists' dan 'modifikasi'. Lokasi diperlukan saat menetapkan identitas. Izin harus diberikan pada identitas menggunakan identitas New-AzRoleAssignment setelah identitas yang ditetapkan sistem dibuat. Parameter IdentityType akan didahulukan jika kedua parameter AssignIdentity dan IdentityType digunakan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.ResourceManager.Cmdlets.Entities.Resources.ManagedIdentityType]

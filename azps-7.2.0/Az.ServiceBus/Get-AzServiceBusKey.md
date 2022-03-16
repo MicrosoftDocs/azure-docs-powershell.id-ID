@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
-ms.openlocfilehash: 39c8ac611b88f39363f65acb973dd04bcc6b7e16
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 847d4da480c0d7defe9de36162219f64ad1a1a88
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255243"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140293234"
 ---
 # Get-AzServiceBusKey
 
 ## SYNOPSIS
 Mendapatkan string koneksi utama dan sekunder untuk Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) yang diberikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebuskey) untuk informasi terkini.
 
 ## SYNTAX
 

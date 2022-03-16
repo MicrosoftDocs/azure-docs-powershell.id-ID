@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageAccountKey.md
-ms.openlocfilehash: eb61d3ae0e56887e6e04bc16fe003226d0f2ed94
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: db510fc0b343bc4a0b78aa460baddf2838654e1c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268476"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316545"
 ---
 # Get-AzStorageAccountKey
 
 ## SYNOPSIS
-Dapatkan kunci akses untuk akun Azure Storage Anda.
+Mendapatkan kunci akses untuk akun Azure Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ This command gets a specific key for a Storage account. This command works for A
 PS C:\>(Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount").Key1
 ```
 
-### Contoh 3: Mencantumkan kunci akses untuk akun Storage, menyertakan tombol Kerberos (jika direktori aktif diaktifkan)
+### Contoh 3: Mencantumkan kunci akses untuk akun Storage Anda, sertakan tombol Kerberos (jika direktori aktif diaktifkan)
 ```
 PS C:\>Get-AzStorageAccountKey -ResourceGroupName "RG01" -AccountName "mystorageaccount" -ListKerbKey
 ```

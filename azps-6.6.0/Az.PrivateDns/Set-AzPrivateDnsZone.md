@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/Set-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Set-AzPrivateDnsZone.md
-ms.openlocfilehash: 4aef8ad1e36ff44d6cce55c05ecda3725871c4f5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5299fa38e0fc692232a4ac2f8664a4e759e25703
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386926"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140306347"
 ---
 # Set-AzPrivateDnsZone
 
 ## SYNOPSIS
 Memperbarui zona DNS Privat dari grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/set-azprivatednszone) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,11 +42,11 @@ Set-AzPrivateDnsZone -PrivateZone <PSPrivateDnsZone> [-Tag <Hashtable>] [-Overwr
 
 ## DESCRIPTION
 Cmdlet **Set-AzPrivateDnsZone** secara permanen memperbarui zona Sistem Nama Domain (DNS) privat dari grup sumber daya yang ditentukan.
-Anda dapat melewati **objek PrivateDnsZone** menggunakan parameter *PrivateZone* atau menggunakan operator pipeline, atau menentukan parameter *Name* dan *ResourceGroupName.*
-Anda dapat menggunakan perintah Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
-Ketika menentukan zona menggunakan objek **PrivateDnsZone** (disampaikan melalui *saluran* atau parameter Zona), zona tidak diperbarui jika telah diubah dalam Dns Azure sejak objek **PrivateDnsZone** lokal diambil (hanya operasi yang langsung tersedia pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan digunakan).
+Anda dapat melewati **objek PrivateDnsZone** menggunakan parameter *PrivateZone* atau menggunakan operator pipeline, atau menentukan parameter *Name* dan *ResourceGroupName* .
+Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
+Ketika menentukan zona menggunakan objek **PrivateDnsZone** (disampaikan *melalui saluran atau* parameter Zona), zona tidak diperbarui jika telah diubah dalam Dns Azure sejak objek **PrivateDnsZone** lokal diambil (hanya operasi yang langsung tersedia pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan digunakan).
 Hal ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang memperbarui zona terlepas dari perubahan serentak.
+Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang memperbarui zona terlepas dari perubahan serentak.
 
 ## EXAMPLES
 
@@ -83,8 +86,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama zona DNS Privat yang diperbarui cmdlet ini.
-Anda juga harus menentukan parameter *ResourceGroupName.*
-Alternatifnya, Anda dapat menentukan zona DNS privat menggunakan parameter *Zone.*
+Anda juga harus menentukan parameter *ResourceGroupName* .
+Alternatifnya, Anda dapat menentukan zona DNS privat menggunakan parameter *Zone* .
 
 ```yaml
 Type: System.String
@@ -99,9 +102,9 @@ Accept wildcard characters: False
 ```
 
 ### -Overwrite
-Ketika menentukan zona menggunakan objek **PrivateDnsZone** (disampaikan melalui *saluran* atau parameter Zona), zona tidak diperbarui jika telah diubah di Azure DNS sejak objek **DnsZone** lokal diambil (hanya operasi langsung di jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan dilakukan).
+Ketika menentukan zona menggunakan objek **PrivateDnsZone** (disampaikan *melalui saluran atau* parameter Zona), zona tidak diperbarui jika telah diubah di Azure DNS sejak objek **DnsZone** lokal diambil (hanya operasi langsung di jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan dilakukan).
 Hal ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang memperbarui zona terlepas dari perubahan serentak.
+Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang memperbarui zona terlepas dari perubahan serentak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,8 +135,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi zona yang akan diperbarui.
-Anda juga harus menentukan parameter *ZoneName.*
-Alternatifnya, Anda dapat menentukan zona DNS pribadi menggunakan **objek DnsZone,** yang dikirim melalui saluran atau *parameter Zona.*
+Anda juga harus menentukan parameter *ZoneName* .
+Alternatifnya, Anda dapat menentukan zona DNS pribadi menggunakan **objek DnsZone** , yang dikirim melalui saluran atau *parameter Zona* .
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

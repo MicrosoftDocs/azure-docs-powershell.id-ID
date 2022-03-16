@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachine.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachine.md
-ms.openlocfilehash: f20e6b4d35325e34ceb4b92b755b63e8b32c0de5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 400963968d6b2ba8c74889cec800fc865067cca5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373626"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140257948"
 ---
 # Get-AzConnectedMachine
 
 ## SYNOPSIS
 Mengambil informasi tentang tampilan model atau tampilan contoh mesin hibrid.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.connectedmachine/get-azconnectedmachine) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ winwestus2_3   westus2  windows  Connected  Succeeded
 ```
 
 Mencantumkan semua komputer yang tersambung dalam langganan.
-Jika langganan tidak ditentukan, langganan akan menggunakan langganan dari konteks Azure PowerShell saat ini.
+Jika langganan tidak ditentukan, langganan akan digunakan dari paket anda saat Azure PowerShell konteks.
 
 ### Contoh 2: Hubungkan semua komputer yang tersambung dalam grup sumber daya
 ```powershell
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

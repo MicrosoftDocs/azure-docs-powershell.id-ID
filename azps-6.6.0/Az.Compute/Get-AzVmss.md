@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVmss.md
-ms.openlocfilehash: a2f486b4dc8f79229e07d3661872aca985f66981
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d1c7aa79b7eae88a842d6e938b9e1bbac32347dc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372198"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140258533"
 ---
 # Get-AzVmss
 
 ## SYNOPSIS
 Mendapatkan properti VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -113,7 +116,7 @@ Tags                                        : {}
 ```
 
 Perintah ini memiliki properti VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya bernama Group001.
-Karena perintah tidak menentukan parameter *sakelar InstanceView,* cmdlet mendapatkan tampilan model kumpulan skala mesin virtual.
+Karena perintah tidak menentukan parameter *sakelar InstanceView* , cmdlet mendapatkan tampilan model kumpulan skala mesin virtual.
 
 ### Contoh 2: Dapatkan semua Vmss dalam grup sumber daya
 ```
@@ -233,7 +236,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

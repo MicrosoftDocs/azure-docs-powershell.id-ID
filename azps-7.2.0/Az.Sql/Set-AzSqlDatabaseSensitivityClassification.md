@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSensitivityClassification.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSensitivityClassification.md
-ms.openlocfilehash: 3213acef9191cb65e394d7dda374ee1575fbf761
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0d9e7ad9c301e20793f6b69f13171bb9d66e749e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291803"
 ---
 # Set-AzSqlDatabaseSensitivityClassification
 
 ## SYNOPSIS
 Mengatur tipe informasi dan label sensitivitas kolom dalam database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabasesensitivityclassification) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,12 +49,12 @@ Cmdlet Set-AzSqlDatabaseSensitivityClassification mengatur tipe informasi dan la
 
 ## EXAMPLES
 
-### Contoh 1: Atur tipe informasi dan label sensitivitas kolom di database Azure SQL anda.
+### Contoh 1: Setel tipe informasi dan label sensitivitas kolom di database Azure SQL.
 ```powershell
 PS C:\> Set-AzSqlDatabaseSensitivityClassification -ResourceGroupName resourceGroup -ServerName server -DatabaseName database -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
 ```
 
-### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom di database Azure SQL Anda.
+### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom di database Azure SQL.
 ```powershell
 PS C:\> Get-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Set-AzSqlDatabaseSensitivityClassification
 ```

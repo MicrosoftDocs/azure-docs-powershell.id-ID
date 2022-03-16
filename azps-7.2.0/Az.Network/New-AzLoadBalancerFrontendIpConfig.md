@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerFrontendIpConfig.md
-ms.openlocfilehash: 2e748d70811a2de9c25639c37e7ce1e480137bdc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e4d08a7dff855cdcf47c66ad4e2bd8e451b61de6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294413"
 ---
 # New-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
 Membuat konfigurasi IP front-end untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalancerfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ PS C:\> New-AzLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -PublicIpA
 ```
 
 Perintah pertama membuat alamat IP publik dinamis bernama MyPublicIP dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $publicip lokal.
-Perintah kedua membuat konfigurasi IP ujung-depan bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip.
+Perintah kedua membuat konfigurasi IP front-end bernama FrontendIpConfig01 menggunakan alamat IP publik dalam $publicip.
 
 ### Contoh 2: Membuat konfigurasi IP front-end untuk penyeimbang muat menggunakan prefiks ip
 ```

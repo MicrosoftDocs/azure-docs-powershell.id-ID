@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Remove-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/Remove-AzResourceGraphQuery.md
-ms.openlocfilehash: 9797cc98681ca5855bc010a004f51c473d61812b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 41305b2cde2a47bba92c180a9ef473d00fb12a2f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255324"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294233"
 ---
 # Remove-AzResourceGraphQuery
 
 ## SYNOPSIS
 Menghapus kueri grafik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resourcegraph/remove-azresourcegraphquery) untuk informasi terkini.
 
 ## SYNTAX
 

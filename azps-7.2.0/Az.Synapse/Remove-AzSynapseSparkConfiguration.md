@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSparkConfiguration.md
-ms.openlocfilehash: 4bfd41aa4adca49749f1baed6458af707bc00f61
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8ba10118fb21aab9411b64380f48eef61f3c1436
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138259116"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140315141"
 ---
 # Remove-AzSynapseSparkConfiguration
 
 ## SYNOPSIS
 Menghapus konfigurasi grafik api dari ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesparkconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

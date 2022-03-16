@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroupDeploymentOperation.md
-ms.openlocfilehash: f4541176fd89758b361009c7e3d2ab1c11e5e254
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d5c1cbd95c2d6a7363455fa0909a00424315e1bc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138277851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294089"
 ---
 # Get-AzManagementGroupDeploymentOperation
 
 ## SYNOPSIS
 Mendapatkan operasi penyebaran untuk manajemen penyebaran grup
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azmanagementgroupdeploymentoperation) untuk informasi terkini.
 
 ## SYNTAX
 

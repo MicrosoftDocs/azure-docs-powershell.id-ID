@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSubHub.md
-ms.openlocfilehash: 94af7c8dbe8447a09b4543c6f1acd80ed4348abe
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 076a98be5b998d54815a063ab221ce82168a66d5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334564"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303917"
 ---
 # New-AzWebPubSubHub
 
 ## SYNOPSIS
 Buat atau perbarui pengaturan hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/new-azwebpubsubhub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -235,8 +238,8 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-EVENTHANDLER <IEventHandler[]>: Penanganan acara sebuah hub.
-  - `UrlTemplate <String>`: Mendapatkan atau mengatur templat URL EventHandler. Anda bisa menggunakan parameter {hub} dan {event} yang sudah ditentukan sebelumnya di dalam templat, nilai URL EventHandler dihitung secara dinamis saat permintaan klien masuk.         Misalnya, UrlTemplate dapat adalah `http://example.com/api/{hub}/{event}` . Bagian host tidak bisa berisi parameter.
+EVENTHANDLER <IEventHandler[]>: Penanganan kejadian sebuah hub.
+  - `UrlTemplate <String>`: Mendapatkan atau mengatur templat URL EventHandler. Anda bisa menggunakan parameter {hub} dan {event} yang sudah ditentukan sebelumnya di dalam templat, nilai URL EventHandler dihitung secara dinamis saat permintaan klien masuk.         Misalnya, UrlTemplate dapat adalah `http://example.com/api/{hub}/{event}`. Bagian host tidak bisa berisi parameter.
   - `[AuthType <UpstreamAuthType?>]`: Mendapatkan atau mengatur tipe auth. Tidak ada atau Identitas Terkelola kini didukung.
   - `[ManagedIdentityResource <String>]`: Sumber daya yang menunjukkan URI ID Aplikasi dari sumber daya target.         Itu juga muncul dalam klaim aud (audiens) untuk token yang dikeluarkan.
   - `[SystemEvent <String[]>]`: Mendapatkan ot mengatur daftar kejadian sistem. Nilai yang valid berisi: 'sambungkan', 'tersambung', 'terputus'.

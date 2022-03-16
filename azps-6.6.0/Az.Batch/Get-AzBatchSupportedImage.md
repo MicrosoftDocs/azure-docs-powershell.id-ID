@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSupportedImage.md
-ms.openlocfilehash: 993f2f0043f1cf7f3b35440dccc87ca27ab8d33b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f64dd6d94d4180641feb18ae4042652bc4d39c4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346358"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140258839"
 ---
 # Get-AzBatchSupportedImage
 
 ## SYNOPSIS
 Dapatkan Kumpulan gambar yang didukung untuk akun Batch.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchsupportedimage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzBatchSupportedImage [-Filter <String>] [-MaxCount <Int32>] -BatchContext <
 
 ## DESCRIPTION
 Cmdlet **Get-AzBatchSupportedImage** mendapatkan gambar mesin virtual yang didukung yang tersedia di akun Azure Batch.
-Tentukan akun dengan menggunakan parameter *BatchContext.*
+Tentukan akun dengan menggunakan parameter *BatchContext* .
 
 ## EXAMPLES
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

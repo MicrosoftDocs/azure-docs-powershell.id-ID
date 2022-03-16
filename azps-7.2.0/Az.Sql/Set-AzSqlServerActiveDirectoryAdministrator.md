@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerActiveDirectoryAdministrator.md
-ms.openlocfilehash: c9432f3ac34076e0df12d0b0ac0edd4bf755e741
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 95bc2cc49ebc4fd5068553919f9ba5adaa24bd25
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138287243"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291587"
 ---
 # Set-AzSqlServerActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menyediakan administrator Azure AD untuk SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlserveractivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Tentukan nama perusahaan SQL Server cmdlet ini menyediakan administrator.
+Menentukan nama perusahaan SQL Server cmdlet ini menyediakan administrator.
 
 ```yaml
 Type: System.String

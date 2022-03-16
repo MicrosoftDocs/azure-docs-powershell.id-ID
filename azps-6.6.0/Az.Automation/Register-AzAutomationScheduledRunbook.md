@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/regis
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationScheduledRunbook.md
-ms.openlocfilehash: 36c405d0dc0cf79d951fb06d787a5048362c2241
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d1bba98739eab93626937e9d5ae949dd6f55b2a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346397"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140259144"
 ---
 # Register-AzAutomationScheduledRunbook
 
 ## SYNOPSIS
 Mengaitkan buku runbook ke jadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/register-azautomationscheduledrunbook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Register-AzAutomationScheduledRunbook -RunbookName <String> -ScheduleName <Strin
 
 ## DESCRIPTION
 Cmdlet **Register-AzAutomationScheduledRunbook** mengaitkan runbook Azure Automation ke jadwal.
-Runbook dimulai berdasarkan jadwal yang Anda tentukan menggunakan parameter *ScheduleName.*
+Runbook dimulai berdasarkan jadwal yang Anda tentukan menggunakan parameter *ScheduleName* .
 
 ## EXAMPLES
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

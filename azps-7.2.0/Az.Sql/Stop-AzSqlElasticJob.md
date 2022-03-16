@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/stop-Azsqlel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Stop-AzSqlElasticJob.md
-ms.openlocfilehash: d43e51a71a84a29e3c51f3f8b6792d96973f7744
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 69080fc22e0726a9fe47b33bdd29a77185de1cae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291461"
 ---
 # Stop-AzSqlElasticJob
 
 ## SYNOPSIS
 Menghentikan pekerjaan dengan id eksekusi pekerjaan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/stop-azsqlelasticjob) untuk informasi terkini.
 
 ## SYNTAX
 

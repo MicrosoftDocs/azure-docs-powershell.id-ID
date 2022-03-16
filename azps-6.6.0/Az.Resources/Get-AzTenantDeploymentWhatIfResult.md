@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzTenantDeploymentWhatIfResult.md
-ms.openlocfilehash: 625663d2325fbc16405f9fef088f040a2b9163ba
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cf88b08f5ca7877917fa20c3615dd4f20f1f3eef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344849"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140278447"
 ---
 # Get-AzTenantDeploymentWhatIfResult
 
 ## SYNOPSIS
-Mendapatkan templat What-If dihasilkan untuk penggunaan pada lingkup penyewa. 
+Mendapatkan templat What-If untuk penggunaan pada lingkup penyewa. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-aztenantdeploymentwhatifresult) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -132,7 +135,7 @@ Get-AzTenantDeploymentWhatIfResult [-Name <String>] -Location <String> [-ResultF
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzTenantDeploymentWhatIfResult** mendapatkan hasil What-If ARM untuk penggunaan templat pada lingkup penyewa yang ditentukan. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat.*
+Cmdlet **Get-AzTenantDeploymentWhatIfResult** mendapatkan hasil What-If arm untuk penggunaan templat pada lingkup penyewa yang ditentukan. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResultFormat
-Hasil What-If.
+Hasil What-If format.
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.WhatIfResultFormat
@@ -385,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

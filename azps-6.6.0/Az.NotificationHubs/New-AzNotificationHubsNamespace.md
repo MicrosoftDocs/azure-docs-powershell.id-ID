@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespace.md
-ms.openlocfilehash: 1d94738793c58b1409b3e5f763917c8072a6bbe9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f59feb60af87655118a4fa7f0c8678640379d29d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335404"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140306797"
 ---
 # New-AzNotificationHubsNamespace
 
 ## SYNOPSIS
 Membuat ruang nama hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubsnamespace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Anda setidaknya harus memiliki satu ruang nama hub pemberitahuan.
 Ruang nama tunggal bisa menjadi rumah beberapa hub.
 Anda bisa memiliki beberapa ruang nama untuk menata hub Anda, atau memberikan izin kepada individu tertentu untuk mengelola subkumpulan yang dipilih dari hub Anda.
 Untuk membuat ruang nama, pastikan bahwa Anda menentukan nama yang unik untuk ruang nama; tentukan datacenter di mana ruang nama akan berada; dan, tentukan grup sumber daya yang akan diberi ruang nama.
-Setelah ruang nama dibuat, Anda bisa menggunakan cmdlet New-AzNotificationHubsNamespaceAuthorizationRules untuk menetapkan aturan otorisasi ke ruang nama itu.
+Setelah kumpulan nama dibuat, Anda bisa menggunakan cmdlet New-AzNotificationHubsNamespaceAuthorizationRules untuk menetapkan aturan otorisasi ke kumpulan nama itu.
 Aturan otorisasi digunakan untuk mengelola izin ke ruang nama.
 
 ## EXAMPLES
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 Menentukan pasangan nilai nama yang dapat digunakan untuk mengategorikan dan menata item Azure.
 Fungsi tag yang sama dengan kata kunci, dan beroperasi pada penyebaran.
 Misalnya, jika Anda mencari semua item dengan tag Departemen:IT, pencarian akan mengembalikan semua item Azure yang memiliki tag tersebut, terlepas dari hal-hal seperti tipe item, lokasi, atau grup sumber daya.
-Tag individu terdiri dari dua bagian: *Nama* dan, secara opsional, *Nilai.*
+Tag individu terdiri dari dua bagian: *Nama* dan, opsional, *Nilai*.
 Misalnya, di Department:IT, nama tag adalah Departemen dan nilai tag adalah IT.
 Untuk menambahkan tag, gunakan sintaks tabel hash seperti ini, yang akan membuat tag CalendarYear:2016:
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/New-AzStackEdgeShare.md
-ms.openlocfilehash: fa3c3ed0e0583ebdf6d472cd79a1b8bcfc309d02
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3273ddd7f8679c33bb2e9635a24b408fcc03992e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140291119"
 ---
 # New-AzStackEdgeShare
 
 ## SYNOPSIS
 Membuat berbagi baru pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/new-azstackedgeshare) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageShare.md
-ms.openlocfilehash: e9ca7a36e5c7e83a15748f3b119564676a4f474a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eb42deda12f31ade81c79e5dad2ad41863a83b74
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169607"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140315555"
 ---
 # Update-AzRmStorageShare
 
 ## SYNOPSIS
 Mengubah file Storage file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azrmstorageshare) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,11 +51,11 @@ Update-AzRmStorageShare -InputObject <PSShare> [-QuotaGiB <Int32>] [-Metadata <H
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageShare** mengubah berbagi Storage file.
+Cmdlet **New-AzRmStorageShare** mengubah Storage file baru.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah metadata Storage berbagi file dan berbagi kuota dengan nama Storage dan nama berbagi file
+### Contoh 1: Mengubah metadata Storage berbagi file dan berbagi dengan nama Storage dan nama berbagi file
 ```
 PS C:\>$share = Update-AzRmStorageShare -ResourceGroupName "myresourcegroup" -StorageAccountName "mystorageaccount" -Name "myshare" -QuotaGiB 200 -Metadata @{tag0="value0";tag1="value1"}
 
@@ -72,15 +75,15 @@ tag0 value0
 tag1 value1
 ```
 
-Perintah ini mengubah metadata Storage berbagi file Storage dan berbagi kuota dengan nama akun Storage dan nama berbagi, dan memperlihatkan hasil modifikasi dengan objek berbagi file yang dikembalikan.
+Perintah ini mengubah metadata Storage berbagi file dan berbagi kuota dengan nama akun Storage dan nama berbagi, dan memperlihatkan hasil modifikasi dengan objek berbagi file yang dikembalikan.
 
-### Contoh 2: Memodifikasi metadata pada file Storage berbagi dengan objek Storage dan nama berbagi
+### Contoh 2: Mengubah metadata pada file Storage berbagi file dengan Storage objek akun dan nama berbagi
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -StorageAccountName "myStorageAccount"
 PS C:\>$share = Update-AzRmStorageShare -StorageAccount $accountObject -Name "myshare" -Metadata @{tag0="value0";tag1="value1"}
 ```
 
-Perintah ini mengubah metadata pada file Storage dibagikan dengan objek akun Storage dan nama berbagi.
+Perintah ini mengubah metadata pada file Storage dibagikan dengan Storage akun dan nama berbagi.
 
 ### Contoh 3: Mengubah kuota berbagi untuk semua Storage file yang dibagikan dalam Storage dengan saluran
 ```
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNetworkRuleCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallNetworkRuleCollection.md
-ms.openlocfilehash: cd807ff9114eef30b792eae00750193994033f39
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 53b346ef52bba20694c34363c053670a940886aa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258492"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140294611"
 ---
 # New-AzFirewallNetworkRuleCollection
 
 ## SYNOPSIS
 Membuat Aturan Jaringan Kumpulan Jaringan Azure Firewall.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallnetworkrulecollection) untuk informasi terkini.
 
 ## SYNTAX
 

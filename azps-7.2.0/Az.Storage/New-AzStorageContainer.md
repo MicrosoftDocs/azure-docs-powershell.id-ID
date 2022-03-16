@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainer.md
-ms.openlocfilehash: 6360ed6a8bee31ab5f787bb0e191493c09fc0343
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 98f46741f34575023dbc58d00aa5a91d2e0fefc6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314475"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140316221"
 ---
 # New-AzStorageContainer
 
 ## SYNOPSIS
 Membuat wadah penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 

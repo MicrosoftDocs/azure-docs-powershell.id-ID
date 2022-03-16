@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccount.md
-ms.openlocfilehash: 14a02d4e18ddb8f0449657ddab67877dfb820f7f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ddb25bac3075c188e42be13f0ec0523abeee4816
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136388231"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140257489"
 ---
 # Update-AzCosmosDBAccount
 
 ## SYNOPSIS
 Perbarui atribut akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessPrefix
-Ketika digunakan dengan konsistensi Staleness Terikat, nilai ini menunjukkan jumlah permintaan basi yang diobesakan.
+Ketika digunakan dengan konsistensi  Staleness Terikat, nilai ini menunjukkan jumlah permintaan basi yang diobesakan.
 Rentang yang diterima untuk nilai ini adalah 1 - 2.147.483.647.
 
 ```yaml
@@ -557,7 +560,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

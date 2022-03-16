@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageBlobLegalHold.md
-ms.openlocfilehash: 95757222b5a7c958a8b9664a8933fff9bd9f8de1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e6b7980af5cdab62c102e10a907dbfa9e3cac7ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308428"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140315753"
 ---
 # Set-AzStorageBlobLegalHold
 
 ## SYNOPSIS
 Mengaktifkan atau menonaktifkan perlindungan hukum pada Storage blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragebloblegalhold) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ True
 ```
 
 Perintah ini memungkinkan perlindungan hukum pada Storage blob, lalu memperlihatkan hasilnya.
-Perintah hanya berfungsi ketika penampung blob telah mengaktifkan fitur yang tidak Storage dengan versioning.
+Perintah hanya berfungsi ketika wadah blob telah mengaktifkan fitur yang dapat dimut coba Storage dengan versioning.
 
 ### Contoh 2: Disable legal hold on a Storage blob with pipeline.
 ```
@@ -93,7 +96,7 @@ False
 ```
 
 Perintah ini menonaktifkan perlindungan hukum pada Storage blob dengan pipeline, lalu memperlihatkan hasilnya.
-Perintah hanya berfungsi ketika penampung blob telah mengaktifkan fitur yang tidak Storage dengan versioning.
+Perintah hanya berfungsi ketika wadah blob telah mengaktifkan fitur yang dapat dimut coba Storage dengan versioning.
 
 ## PARAMETERS
 

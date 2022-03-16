@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageBlobServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageBlobServiceProperty.md
-ms.openlocfilehash: 811211e0cb70729fa59a2221128e15f6200ed18a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d6b99caedebfc59c7027a284eaa356a465f3ee4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357806"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303053"
 ---
 # Update-AzStorageBlobServiceProperty
 
 ## SYNOPSIS
 Mengubah properti layanan untuk layanan Azure Storage Blob.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azstorageblobserviceproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ IsVersioningEnabled           :
 
 Perintah ini mengatur DefaultServiceVersion Layanan Blob ke 2018-03-28.
 
-### Contoh 2: Mengaktifkan Changefeed di layanan Blob layanan Storage dengan ChangeFeedRetentionInDays sebagai 5 hari
+### Contoh 2: Aktifkan Changefeed on Blob service of a Storage with ChangeFeedRetentionInDays as 5 days
 ```
 C:\PS> Update-AzStorageBlobServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EnableChangeFeed $true -ChangeFeedRetentionInDays 5
 
@@ -81,10 +84,10 @@ IsVersioningEnabled           :
 ```
 
 Perintah ini mengaktifkan Changefeed di layanan Blob akun Storage dengan ChangeFeedRetentionInDays sebagai 5 hari.
-Ubah dukungan umpan di azure Storage berfungsi dengan mendengarkan akun penyimpanan GPv2 atau Blob untuk setiap kejadian penghapusan, modifikasi, atau pembuatan tingkat blob. Kemudian menghasilkan log kejadian yang diurutkan untuk blob yang disimpan di wadah $blobchangefeed dalam akun penyimpanan. The serialized changes are persisted as an Apache Avro file and can be processed asynchronously and incrementally.
+Ubah dukungan umpan di Azure Blob Storage berfungsi dengan mendengarkan akun penyimpanan GPv2 atau Blob untuk setiap kejadian penghapusan, modifikasi, atau pembuatan tingkat blob. Kemudian, menghasilkan log kejadian yang diurutkan untuk blob yang disimpan dalam $blobchangefeed dalam akun penyimpanan. The serialized changes are persisted as an Apache Avro file and can be processed asynchronously and incrementally.
 Jika tidak menentukan ChangeFeedRetentionInDays, akan mendapatkan nilai null dalam properti layanan, menunjukkan penyimpanan umpan perubahan yang tidak terbatas.
 
-### Contoh 3: Mengaktifkan Versioning di layanan Blob layanan Storage pengguna
+### Contoh 3: Mengaktifkan Versioning on Blob service of a Storage account
 ```
 C:\PS> Update-AzStorageBlobServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -IsVersioningEnabled $true
 
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableChangeFeed
-Aktifkan pembuatan log Ubah Umpan untuk akun penyimpanan dengan diatur ke $true, nonaktifkan Pembuatan log Ubah Umpan dengan mengatur ke $false.
+Aktifkan pembuatan log Ubah Umpan untuk akun penyimpanan dengan diatur ke $true, nonaktifkan Ubah pembuatan log umpan dengan mengatur ke $false.
 
 ```yaml
 Type: System.Boolean
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
