@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSqlPool.md
-ms.openlocfilehash: 78f94d96b146512f1973bf2b5f4c3ca1e1a3d2ef
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 889765743089081a3ee7fda6c1b8c7235d9ebd23
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350966"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140064305"
 ---
 # Update-AzSynapseSqlPool
 
 ## SYNOPSIS
-Memperbarui Laporan Analitik Synapse SQL pool.
+Memperbarui Alat Analitik Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsesqlpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Cmdlet **Update-AzSynapseSqlPool** memperbarui azure Synapse Analytics SQL pool.
 PS C:\> Update-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -Tag @{'key'='value'} -PerformanceLevel DW300c
 ```
 
-Perintah ini memperbarui SQL Azure Synapse Analytics.
+Perintah ini memperbarui azure Synapse Analytics SQL sama.
 
 ### Contoh 2
 ```powershell
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -296,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

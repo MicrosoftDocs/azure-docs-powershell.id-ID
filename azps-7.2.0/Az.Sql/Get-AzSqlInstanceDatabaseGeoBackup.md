@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseGeoBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceDatabaseGeoBackup.md
-ms.openlocfilehash: 6564c90961d8d028c5aeaf17996b3953ab6da9d2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a9ffcf4b76a08ab0bc5b3218d1ca3d87ebdafa55
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163585"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140115027"
 ---
 # Get-AzSqlInstanceDatabaseGeoBackup
 
 ## SYNOPSIS
-Mengembalikan informasi tentang database Azure SQL cadangan tak penting database Terkelola.
+Mengembalikan informasi tentang database Azure SQL cadangan tak berulang database Contoh Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancedatabasegeobackup) untuk informasi terkini.
 
 ## SYNTAX
 

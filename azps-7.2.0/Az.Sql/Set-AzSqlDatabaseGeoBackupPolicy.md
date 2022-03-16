@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseGeoBackupPolicy.md
-ms.openlocfilehash: b210511dfd58fc03792317fd988f0457bd5cb136
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ab92aafbe67d60641aa9c948557d229aa837bfb2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311964"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114343"
 ---
 # Set-AzSqlDatabaseGeoBackupPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan database geo backup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabasegeobackuppolicy) untuk informasi terkini.
 
 ## SYNTAX
 

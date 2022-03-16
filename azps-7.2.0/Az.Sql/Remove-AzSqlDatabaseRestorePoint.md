@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseRestorePoint.md
-ms.openlocfilehash: ad745d93a4e5de4af9f8291886c444d939b368e1
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dda5f19e6ff7c33722b680fccb3998b3b6268f27
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114667"
 ---
 # Remove-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
 Menghapus titik pemulihan tertentu dari SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabaserestorepoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\>$RestorePointCreationDate = Get-Date "3/11/2017 1:50:00 AM"
 PS C:\>Remove-AzSqlDatabaseRestorePoint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -RestorePointCreationDate $RestorePointCreationDate
 ```
 
-Perintah ini akan menghapus titik pemulihan untuk Azure SQL Database tanggal pembuatan tertentu.
+Perintah ini menghapus titik pemulihan untuk Azure SQL Database tanggal pembuatan tertentu.
 
 ## PARAMETERS
 

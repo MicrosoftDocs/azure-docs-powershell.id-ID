@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchAutoScale.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchAutoScale.md
-ms.openlocfilehash: 0ccd84e7678cee15ceea8b5fb19b246acc00bcdd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8effb4f35d926f9d32681766ae0b9f9d22dbf023
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282572"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061419"
 ---
 # Enable-AzBatchAutoScale
 
 ## SYNOPSIS
 Mengaktifkan penskalaan otomatis sebuah kolam renang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/enable-azbatchautoscale) untuk informasi terkini.
 
 ## SYNTAX
 

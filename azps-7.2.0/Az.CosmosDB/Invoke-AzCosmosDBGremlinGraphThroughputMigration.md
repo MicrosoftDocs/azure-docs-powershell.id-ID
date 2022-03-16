@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBGremlinGraphThroughputMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Invoke-AzCosmosDBGremlinGraphThroughputMigration.md
-ms.openlocfilehash: 6b12c7a0fc1050213a0d19bd522dc5867cfa7cee
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9aafe7bbb29ad9c56371e9219e369227af3b8c02
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306059"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140125125"
 ---
 # Invoke-AzCosmosDBGremlinGraphThroughputMigration
 
 ## SYNOPSIS
 Gunakan opsi ini untuk melakukan migrasi throughput skala otomatis ke throughput manual dan sebaliknya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/invoke-azcosmosdbgremlingraphthroughputmigration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sasaranmlin Graph objek.
+Dll. Graph tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetResults

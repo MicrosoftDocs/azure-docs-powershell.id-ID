@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Register-AzStaticWebAppUserProvidedFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Register-AzStaticWebAppUserProvidedFunctionApp.md
-ms.openlocfilehash: c632076b251e73aa9fa7fad3b0a0bef2a3dde6a3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fa185df9c071048f2bc2eac99ce24c21db7869e8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283787"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140112868"
 ---
 # Register-AzStaticWebAppUserProvidedFunctionApp
 
 ## SYNOPSIS
 Deskripsi untuk Mendaftarkan pengguna aplikasi fungsi yang disediakan dengan build situs statis
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/register-azstaticwebappuserprovidedfunctionapp) untuk informasi terkini.
 
 ## SYNTAX
 

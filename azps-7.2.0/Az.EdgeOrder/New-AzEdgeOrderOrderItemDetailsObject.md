@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderOrderItemDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderOrderItemDetailsObject.md
-ms.openlocfilehash: 6ca006bf652f8fa23b0853edca8ec5241cd3bd17
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2f71653bbcb7a4f27458880e3a6a8054a532a315
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124081"
 ---
 # New-AzEdgeOrderOrderItemDetailsObject
 
 ## SYNOPSIS
 Buat objek dalam memori untuk OrderItemDetails.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderorderitemdetailsobject) untuk informasi terkini.
 
 ## SYNTAX
 

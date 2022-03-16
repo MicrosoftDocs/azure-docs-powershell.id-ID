@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
-ms.openlocfilehash: 9fd290a0884a3cb7d3cb85a3e51ed9d315c26d30
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7a56f0746ea827d2d7bfa368dd701fa697124866
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156737"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076365"
 ---
 # Remove-AzMigrateServerReplication
 
 ## SYNOPSIS
 Menghentikan replikasi untuk server yang dimigrasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/remove-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -TargetObjectID
 Menentukan server berulang di mana replika perlu dinonaktifkan.
-ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication baru.
+ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,7 +195,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem> : Menentukan objek mesin dari server yang replikasi.
+INPUTOBJECT <IMigrationItem>: Menentukan objek mesin dari server yang replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

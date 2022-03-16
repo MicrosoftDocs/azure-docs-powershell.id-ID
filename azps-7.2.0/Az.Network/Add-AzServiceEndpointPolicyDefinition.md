@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzServiceEndpointPolicyDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzServiceEndpointPolicyDefinition.md
-ms.openlocfilehash: f3a33e6ba4b3438771a5c74f01fa7c71001cbb76
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9f347aa67f2bca127c4c89dda29b85feb2dd7429
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274876"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119563"
 ---
 # Add-AzServiceEndpointPolicyDefinition
 
 ## SYNOPSIS
 Menambahkan definisi kebijakan titik akhir layanan ke kebijakan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azserviceendpointpolicydefinition) untuk informasi terkini.
 
 ## SYNTAX
 

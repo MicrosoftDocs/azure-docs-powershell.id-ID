@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-azVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwarePrivateCloud.md
-ms.openlocfilehash: a8e0da8f89271005d24c0c2917b2fc64f5a7ec63
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dcdaa0b0bd7e93431ef237b5a88d1efbbe65e98f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298091"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113047"
 ---
 # New-AzVMwarePrivateCloud
 
 ## SYNOPSIS
 Membuat atau memperbarui awan pribadi
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/new-azvmwareprivatecloud) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultCertificate.md
-ms.openlocfilehash: d8a8c5ce7642a53d4299a1a092092679c0eb8180
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 755b554c1af26020afb8ea743c6d8b2076d28782
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310347"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958271"
 ---
 # Update-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Mengubah atribut sertifikat yang dapat diedit.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ Updated     : 8/1/2016 5:37:48 PM
 ```
 
 Perintah pertama menetapkan pasangan kunci/nilai array ke $Tags nilai.
-Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang akan $Tags.
+Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang $Tags.
 
 ### Contoh 2
 

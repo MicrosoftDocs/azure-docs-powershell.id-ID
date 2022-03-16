@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomain.md
-ms.openlocfilehash: 8f54208918872921ba25020b358407ff423deb70
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: aec7aa2cf559dfbe678c6cd72153e07659dc156f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370115"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139976523"
 ---
 # New-AzEventGridDomain
 
 ## SYNOPSIS
 Membuat Domain Kisi Acara Azure yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomain) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Membuat Domain Kisi Acara Azure yang baru. Setelah domain dibuat, aplikasi dapat
 
 ### Contoh 1
 
-Membuat domain Kisi Kejadian \` Domain1 \` di lokasi geografis tertentu \` westus2 \` , di grup sumber daya \` MyResourceGroupName \` .
+Membuat domain Kisi Kejadian Domain1 \`di\` lokasi geografis tertentu \`westus2\`, di grup sumber daya \`MyResourceGroupName\`.
 
 ```powershell
 PS C:\> New-AzEventGridDomain -ResourceGroupName MyResourceGroupName -Name Domain1 -Location westus2
@@ -50,7 +53,7 @@ Tags              :
 
 ### Contoh 2
 
-Membuat domain Kisi Kejadian Domain1 di lokasi geografis tertentu westus2, di grup sumber daya \` \` \` MyResourceGroupName dengan tag \` "Departemen" dan \` \` "Lingkungan" yang ditentukan.
+Membuat domain Kisi Kejadian \`Domain1\` \`di lokasi geografis tertentu westus2\`, \`di grup sumber daya MyResourceGroupName\` dengan tag "Departemen" dan "Lingkungan" yang ditentukan.
 
 ```powershell
 PS C:\> New-AzEventGridDomain -ResourceGroupName MyResourceGroupName -Name Domain1 -Location westus2 -Tag @{ Department="Finance"; Environment="Test" }
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/impor
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Import-AzAutomationDscConfiguration.md
-ms.openlocfilehash: 8ffb4410d37f18aac7a101c65f80c6e84ba2cde8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1dd26a39f2c5684495fc59127485fa3cdff592d9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256060"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061761"
 ---
 # Import-AzAutomationDscConfiguration
 
 ## SYNOPSIS
 Mengimpor konfigurasi DSC ke otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/import-azautomationdscconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogVerbose
-Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai yang $True untuk mengaktifkan atau mengaktifkan pembuatan log verbose $False untuk menonaktifkannya.
+Menentukan apakah cmdlet ini mengaktifkan atau menonaktifkan pembuatan log verbose untuk pekerjaan kompilasi konfigurasi DSC ini. Tentukan nilai dari $True mengaktifkan atau mengaktifkan pembuatan log verbose $False untuk menonaktifkannya.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: b864951cffc7729edf22515128b5934eee1c0182
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: e6e6da6b026a7d7aeef79bd5af9db12f840df204
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298748"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119707"
 ---
 # Add-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
 Menambahkan rantai sertifikat CA klien tepercaya ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewaytrustedclientcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

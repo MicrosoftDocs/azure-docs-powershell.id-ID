@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 049ce025f9a596976152b740e754d247d6a68265
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a24565562a8900ac8ab690ab1d47944c09536864
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340742"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140069633"
 ---
 # Set-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Memperbarui sertifikat SSL untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ PS C:\> $secretId = $secret.Id.Replace($secret.Version, "") # https://<keyvaultn
 PS C:\> $cert = Set-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Rahasiakan dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate` .
+Rahasiakan dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate`.
 
 ### Contoh 3: Memperbarui sertifikat SSL yang sudah ada menggunakan KeyVault Secret di Application Gateway
 ```
@@ -56,7 +59,7 @@ PS C:\> $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/
 PS C:\> $cert = Set-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Rahasiakan dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate` .
+Rahasiakan dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate`.
 Catatan: Jika diperlukan agar Gateway Aplikasi menyinkronkan sertifikat dengan KeyVault, harap sediakanid rahasia versinya.
 
 ## PARAMETERS
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

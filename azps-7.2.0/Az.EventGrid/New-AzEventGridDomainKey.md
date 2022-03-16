@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridDomainKey.md
-ms.openlocfilehash: 981fc1bc7c8e8f3b0b378eb34f75deea1d38d195
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7cc6bf8ae637c9e7b804e0e2ca2fdae0a2245c16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168646"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140123811"
 ---
 # New-AzEventGridDomainKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses bersama untuk Domain Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgriddomainkey) untuk informasi terkini.
 
 ## SYNTAX
 

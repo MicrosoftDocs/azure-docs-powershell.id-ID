@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/reset-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Reset-AzSynapseSqlPoolAuditSetting.md
-ms.openlocfilehash: 4601b003eafc763ee0a602b5e68323eb71fc6acb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8badae2c3a0a1f0c5113810bf06e31d7c24f9e7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366503"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140064575"
 ---
 # Reset-AzSynapseSqlPoolAuditSetting
 
 ## SYNOPSIS
 Menghapus pengaturan pengauditan analitik Azure Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/reset-azsynapsesqlpoolauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,14 +56,14 @@ Cmdlet **Reset-AzSynapseSqlPoolAuditSetting** menghapus pengaturan audit azure S
 PS C:\> Reset-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini menghapus pengaturan pengauditan penyimpanan SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace.
+Perintah ini menghapus pengaturan pengauditan pool SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Reset-AzSynapseSqlPoolAuditSetting
 ```
 
-Perintah ini menghapus pengaturan pengauditan penyimpanan SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini menghapus pengaturan pengauditan sebuah SQL bernama ContosoSqlPool di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

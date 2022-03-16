@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/start-azba
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchPoolResize.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Start-AzBatchPoolResize.md
-ms.openlocfilehash: 167d0c7cde3b0787a97e17999b25b5da2ea48ccf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a9351f4ca3b417f2b9993563cd4de4bb9f222c36
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315148"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140061113"
 ---
 # Start-AzBatchPoolResize
 
 ## SYNOPSIS
 Mulai mengubah ukuran kolam renang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/start-azbatchpoolresize) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ PS C:\>Start-AzBatchPoolResize -Id "ContosoPool06" -TargetDedicatedComputeNodes 
 
 Perintah ini memulai operasi pengubahan ukuran pada pool yang memiliki ID ContosoPool06.
 Target untuk operasi adalah 12 node perhitungan khusus.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Ubah ukuran pool menggunakan opsi deallocation
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azde
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzDelegation.md
-ms.openlocfilehash: 0f75366ae13ab3065e0473acc1f8b8b434263c6d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 888f620d24fb458e6808ed40a6ede1849a32704c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138298732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119671"
 ---
 # Add-AzDelegation
 
 ## SYNOPSIS
 Menambahkan delegasi ke subnet.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azdelegation) untuk informasi terkini.
 
 ## SYNTAX
 

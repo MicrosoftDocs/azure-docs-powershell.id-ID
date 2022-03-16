@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightScriptAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightScriptAction.md
-ms.openlocfilehash: 257b531d49f6075bc2aada22021ba1a2e7288dcc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b5d052cb2ac395fd970cda42c9dc36b0d97cdfbc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138297740"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959243"
 ---
 # Add-AzHDInsightScriptAction
 
 ## SYNOPSIS
 Menambahkan tindakan skrip ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightscriptaction) untuk informasi terkini.
 
 ## SYNTAX
 

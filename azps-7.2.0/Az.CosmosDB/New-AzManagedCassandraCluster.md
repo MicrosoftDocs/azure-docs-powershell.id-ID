@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzManagedCassandraCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzManagedCassandraCluster.md
-ms.openlocfilehash: 3a4ad5291770cf8663b490d4855a20541870af9f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 21e32e33bbc5051cb5c32b669c20bd12bd7d8bb1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138301404"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140124909"
 ---
 # New-AzManagedCassandraCluster
 
 ## SYNOPSIS
 Membuat Azure Managed Instance baru untuk kluster Apache Apache Apache.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azmanagedcassandracluster) untuk informasi terkini.
 
 ## SYNTAX
 

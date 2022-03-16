@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountApiProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountApiProperty.md
-ms.openlocfilehash: f455c32affa59a8bae35230f463c4bb8cc537214
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: df6c1d6e29874ad3fd2cf24fddd0c685fbaa2046
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167508"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059889"
 ---
 # New-AzCognitiveServicesAccountApiProperty
 
 ## SYNOPSIS
 Menghasilkan contoh baru DariProperti Akun Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccountapiproperty) untuk informasi terkini.
 
 ## SYNTAX
 

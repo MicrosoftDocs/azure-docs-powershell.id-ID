@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountDeployment.md
-ms.openlocfilehash: 6b104b4a2046af82daead1aeb4fef7df8e95a36f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: df4e7cd0c4dff5a9fb89fd90d5175ea5357c9c1c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314203"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126367"
 ---
 # New-AzCognitiveServicesAccountDeployment
 
 ## SYNOPSIS
 Membuat Penyebaran untuk akun Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccountdeployment) untuk informasi terkini.
 
 ## SYNTAX
 

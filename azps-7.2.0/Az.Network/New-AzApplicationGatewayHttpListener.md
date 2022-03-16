@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayHttpListener.md
-ms.openlocfilehash: 77d94e2f68743ab80392005cfdd4511eefe46c80
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 90cef1076f8d47c6a8cf2994eddb5d4805326037
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118825"
 ---
 # New-AzApplicationGatewayHttpListener
 
 ## SYNOPSIS
 Membuat pendengar HTTP untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayhttplistener) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Perintah menyimpan hasil di variabel yang bernama $Listener.
 PS C:\>$Listener = New-AzApplicationGatewayHttpListener -Name "Listener01" -Protocol "Http" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -FirewallPolicy $firewallPolicy
 ```
 
-Perintah ini membuat pendengar HTTP bernama Listener01, FirewallPolicy sebagai $firewallPolicy dan menyimpan hasilnya dalam variabel yang bernama $Listener.
+Perintah ini membuat pendengar HTTP bernama Listener01, FirewallPolicy sebagai $firewallPolicy dan menyimpan hasilnya di variabel yang bernama $Listener.
 
 ### Contoh 4: Tambahkan pendengar HTTPS dengan SSL dan HostNames
 ```

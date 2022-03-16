@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleCondition.md
-ms.openlocfilehash: 773c63ad1078b9988fd8ee36da475b51e022aef1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 26f5dcbdf5c76a1099406e6110b3c1cc35ff3ede
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358970"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140070623"
 ---
 # New-AzApplicationGatewayRewriteRuleCondition
 
 ## SYNOPSIS
 Menambahkan kondisi ke RewriteRule untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriterulecondition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Variable        Pattern IgnoreCase Negate
 --------        ------- ---------- ------
 var_request_uri http          True  False
 ```
-Perintah ini membuat kondisi dalam aturan tulis ulang dan menyimpan hasilnya dalam variabel bernama $condition.
+Perintah ini membuat kondisi dalam aturan tulis ulang dan menyimpan hasilnya dalam variabel yang bernama $condition.
 
 ## PARAMETERS
 
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

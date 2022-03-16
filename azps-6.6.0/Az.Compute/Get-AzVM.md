@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVM.md
-ms.openlocfilehash: 4c37d80b70fa6f63b1cbaa1d2bc4b57ccafef962
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c4a920c689ca0a59aed6a96059538e1e8b2b76a5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136157829"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142783"
 ---
 # Get-AzVM
 
 ## SYNOPSIS
 Mendapatkan properti mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -168,7 +171,7 @@ Statuses[1]             :
 ```
 
 Perintah ini mendapatkan properti dari mesin virtual bernama VirtualMachine07.
-Perintah ini menentukan *parameter Status.*
+Perintah ini menentukan *parameter Status* .
 Oleh karena itu, perintah hanya mendapatkan properti tampilan contoh.
 
 ### Contoh 3: Dapatkan properti untuk semua mesin virtual dalam grup sumber daya
@@ -360,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

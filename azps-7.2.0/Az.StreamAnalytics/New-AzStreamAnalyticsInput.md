@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsInput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/New-AzStreamAnalyticsInput.md
-ms.openlocfilehash: 8afd8917a467d0d2fe84f3419d6b3e3999d7e7ee
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 36d5c4a939473211d7b57a0b1255059eb1674be0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138252987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113857"
 ---
 # New-AzStreamAnalyticsInput
 
 ## SYNOPSIS
 Membuat input atau mengganti input yang sudah ada di bawah pekerjaan streaming yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.streamanalytics/new-azstreamanalyticsinput) untuk informasi terkini.
 
 ## SYNTAX
 

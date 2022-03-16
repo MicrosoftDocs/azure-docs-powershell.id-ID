@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlActiveDirectoryAdministrator.md
-ms.openlocfilehash: db376b79aef9442042836b3d62be1c410b61cd6b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 994a629319e59ea4640747f37d9bc83f7db62d62
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168293"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113479"
 ---
 # Remove-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menghapus administrator Azure AD untuk Ruang Kerja Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlactivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 

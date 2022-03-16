@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/invoke-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDiagnoseClusterVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Invoke-AzKustoDiagnoseClusterVirtualNetwork.md
-ms.openlocfilehash: 1e14a64b83449cd7ee7245c163430e6fc74b0aeb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b9b3f29711cbb3e8b033a23f00a0af50f44fbe8f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138303851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957983"
 ---
 # Invoke-AzKustoDiagnoseClusterVirtualNetwork
 
 ## SYNOPSIS
 Mendiagnosis status konektivitas jaringan untuk sumber daya eksternal yang tergantung pada layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kusto/invoke-azkustodiagnoseclustervirtualnetwork) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -215,7 +218,7 @@ INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

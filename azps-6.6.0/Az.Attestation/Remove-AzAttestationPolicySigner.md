@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestationPolicySigner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Remove-AzAttestationPolicySigner.md
-ms.openlocfilehash: ba08fe5670334ba3c6d2d1d1d50c7f6c267ee722
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1cb4691f8753d7447b013484319bce5406203a4e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347894"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143593"
 ---
 # Remove-AzAttestationPolicySigner
 
 ## SYNOPSIS
 Menghapus penanda tangan kebijakan tepercaya untuk penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/remove-azattestationpolicysigner) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\> $trustedSigner = Get-Content -Path .\trusted.signer.txt
 PS C:\> Remove-AzAttestationPolicySigner -Name pshtest -ResourceGroupName psh-test-rg -Signer $trustedSigner
 ```
 
-Menghapus penanda tangan tepercaya untuk Penyedia Attestation yang bernama *pshtest*.
+Hapus penanda tangan tepercaya untuk Penyedia Attestation yang bernama *pshtest*.
 
 ## PARAMETERS
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

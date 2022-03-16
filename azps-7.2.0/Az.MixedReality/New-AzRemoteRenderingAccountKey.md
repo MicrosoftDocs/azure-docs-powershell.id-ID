@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mixedreality/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MixedReality/MixedReality/help/New-AzRemoteRenderingAccountKey.md
-ms.openlocfilehash: 20d4fe291a4f1e96c3605e658018d25adce4eb34
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 248b712193163c436925fb973c90a3332ffb8e73
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138253548"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139955841"
 ---
 # New-AzRemoteRenderingAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci Akun Penyajian Jarak Jauh
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mixedreality/new-azremoterenderingaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 

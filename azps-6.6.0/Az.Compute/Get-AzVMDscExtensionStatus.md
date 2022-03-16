@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMDscExtensionStatus.md
-ms.openlocfilehash: afdd6569e47bb72bae11278b35018605acc01440
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 298834e5d6b9a24f01c87f459420fb5f23e86f11
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361922"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142639"
 ---
 # Get-AzVMDscExtensionStatus
 
 ## SYNOPSIS
 Mendapatkan status penanganan ekstensi DSC untuk komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmdscextensionstatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Get-AzVMDscExtensionStatus [-VM <PSVirtualMachine>] [-DefaultProfile <IAzureCont
 
 ## DESCRIPTION
 Cmdlet **Get-AzVMDscExtensionStatus** mendapatkan status penanganan ekstensi Desired State Configuration (DSC) untuk mesin virtual dalam grup sumber daya.
-Jika konfigurasi diterapkan, cmdlet ini akan menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration cmdlet.
+Jika konfigurasi diterapkan, cmdlet ini menghasilkan output yang konsisten dengan cmdlet Start-DscConfiguration cmdlet.
 
 ## EXAMPLES
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

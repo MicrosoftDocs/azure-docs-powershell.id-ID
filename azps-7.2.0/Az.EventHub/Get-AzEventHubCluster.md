@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubCluster.md
-ms.openlocfilehash: bd2a0df0db5ff6c0dd14c467c28e6f5d7ad0462e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a9197d3ddbdd96baf0fba9b3eb6eff95fb1b6aa3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138271515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139959855"
 ---
 # Get-AzEventHubCluster
 
 ## SYNOPSIS
 Dapatkan detail tentang Kluster Hub Acara tunggal, atau mendapatkan daftar Kluster Hub Acara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubcluster) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzEventHubCluster [-ResourceGroupName] <String> [-Name <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHubCluster mengembalikan detail Kluster Hub Kejadian, atau daftar semua Kluster Hub Kejadian dalam grup sumber daya tertentu.
+Cmdlet Get-AzEventHubCluster akan mengembalikan detail Kluster Hub Kejadian, atau daftar semua Kluster Hub Kejadian dalam grup sumber daya tertentu.
 Jika nama kluster disediakan, detail kluster tunggal akan dikembalikan.
 Jika nama kluster tidak tersedia, daftar semua kluster dalam grup sumber daya yang ditentukan akan dikembalikan.
 

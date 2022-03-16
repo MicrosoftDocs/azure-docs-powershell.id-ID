@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerSubscriptionStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseTriggerSubscriptionStatus.md
-ms.openlocfilehash: 20fe754aa5f284b983fdf97fb9ba16761fe11087
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9df8d83ceb5f4e74105914144fe432b8a1c6d805
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113605"
 ---
 # Get-AzSynapseTriggerSubscriptionStatus
 
 ## SYNOPSIS
 Dapatkan status langganan untuk pemicu kejadian ke kejadian layanan eksternal tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapsetriggersubscriptionstatus) untuk informasi terkini.
 
 ## SYNTAX
 

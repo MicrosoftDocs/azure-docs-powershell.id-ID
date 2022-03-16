@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMDataDisk.md
-ms.openlocfilehash: 4afaef1cd3b6fe18203a9d2d8ef8740e86aff8f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 193680e0d0f65dd607367fac1ffe12ee14c38ad8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138302747"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059781"
 ---
 # Add-AzVMDataDisk
 
 ## SYNOPSIS
 Menambahkan disk data ke mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmdatadisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ PS C:\> Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
 Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet [Get-AzVM](./Get-AzVM.md) .
-Perintah menyimpan mesin virtual di $VirtualMachine variabel.
+Perintah menyimpan mesin virtual di $VirtualMachine baru.
 Perintah kedua menambahkan disk data ke mesin virtual yang disimpan di $VirtualMachine.
 Perintah terakhir memperbarui status mesin virtual yang disimpan di $VirtualMachine Sumber DayaGroup11.
 
@@ -83,7 +86,7 @@ PS C:\> $VirtualMachine = Add-AzVMDataDisk -VM $VirtualMachine -Name "disk1" -So
 
 Perintah pertama membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Dua perintah berikutnya menetapkan jalur untuk disk data gambar dan data ke $DataImageUri dan $DataDiskUri lain.
+Dua perintah berikutnya menetapkan jalur untuk disk data gambar dan data ke $DataImageUri dan $DataDiskUri berikutnya.
 Pendekatan ini digunakan untuk meningkatkan keterbacaan perintah berikut.
 Perintah terakhir menambahkan disk data ke mesin virtual yang disimpan di $VirtualMachine.
 Perintah menentukan nama dan lokasi untuk disk dan properti disk lainnya.
@@ -97,7 +100,7 @@ PS C:\> $VirtualMachine = Add-AzVMDataDisk -VM $VirtualMachine -Name "dd1" -VhdU
 
 Perintah pertama membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Perintah berikutnya menetapkan jalur disk data ke variabel $DataDiskUri berikutnya.
+Perintah berikutnya menetapkan jalur disk data ke variabel $DataDiskUri berbeda.
 Pendekatan ini digunakan untuk meningkatkan keterbacaan perintah berikut.
 Perintah terakhir menambahkan disk data ke mesin virtual yang disimpan di $VirtualMachine.
 Perintah menentukan nama dan lokasi untuk disk, dan properti disk lainnya.

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVM.md
-ms.openlocfilehash: c4bc975f9ea14a0d4af404c8bc46a443bfb661bc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6488292d9fe662345244189db9c2c030a084936e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140142549"
 ---
 # New-AzVM
 
 ## SYNOPSIS
 Membuat mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ New-AzVM -ResourceGroupName $ResourceGroupName -Location $LocationName -VM $Virt
 Contoh ini menggunakan gambar sistem operasi kustom ter generalisasi yang sudah ada dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menempatkan VHD, dan menjalankannya.
 Skrip ini bisa digunakan untuk penyediaan otomatis karena skrip ini menggunakan kredensial admin mesin virtual lokal sebaris, bukan memanggil **Get-Credential** yang memerlukan interaksi pengguna.
 Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure.
-Anda bisa mengonfirmasi status masuk Anda dengan menggunakan cmdlet **Get-AzSubscription.**
+Anda bisa mengonfirmasi status masuk Anda dengan menggunakan cmdlet **Get-AzSubscription** .
 
 ### Contoh 3: Buat VM dari gambar marketplace tanpa IP Publik
 ```
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainNameLabel
-Label subdomain untuk nama domain berkualifikasi penuh (FQDN, Fully-Qualified Domain Name) VM.  Ini akan mengambil formulir `{domainNameLabel}.{location}.cloudapp.azure.com` .
+Label subdomain untuk nama domain berkualifikasi penuh (FQDN, Fully-Qualified Domain Name) VM.  Ini akan mengambil formulir `{domainNameLabel}.{location}.cloudapp.azure.com`.
 
 ```yaml
 Type: System.String
@@ -833,7 +836,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan mesin virtual lokal untuk dibuat.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet New-AzVMConfig.
+Untuk mendapatkan objek mesin virtual, gunakan New-AzVMConfig cmdlet.
 Cmdlet lain bisa digunakan untuk mengonfigurasi mesin virtual, seperti Set-AzVMOperatingSystem, Set-AzVMSourceImage, dan Add-AzVMNetworkInterface.
 
 ```yaml
@@ -922,7 +925,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

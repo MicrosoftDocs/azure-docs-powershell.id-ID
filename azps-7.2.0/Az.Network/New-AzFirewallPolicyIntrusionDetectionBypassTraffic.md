@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetectionBypassTraffic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyIntrusionDetectionBypassTraffic.md
-ms.openlocfilehash: 564bead539cb8022e26f7022891000dcaaa95f7f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ef816cc8b4d5d22f0499cfc7668a7be225bc290
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140118393"
 ---
 # New-AzFirewallPolicyIntrusionDetectionBypassTraffic
 
 ## SYNOPSIS
 Membuat Pengaturan Lalu Lintas Lewati Deteksi Intrusi Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallpolicyintrusiondetectionbypasstraffic) untuk informasi terkini.
 
 ## SYNTAX
 

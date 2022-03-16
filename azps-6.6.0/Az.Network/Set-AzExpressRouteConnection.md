@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteConnection.md
-ms.openlocfilehash: ceeeb179599f98ceaf23c8845d4e3d891422328c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c197b3e2b067ee0ff22646fd77dbce2c1adf73ac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376090"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140069525"
 ---
 # Set-AzExpressRouteConnection
 
 ## SYNOPSIS
 Memperbarui koneksi rute ekspres yang dibuat antara gateway rute ekspres dan peering sirkuit rute ekspres lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azexpressrouteconnection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -88,7 +91,7 @@ Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Vir
 
 Setelah gateway dibuat, gateway tersambung ke sirkuit ExpressRoute lokal peering menggunakan New-AzExpressRouteConnection koneksi.
 
-Koneksi lalu diperbarui agar memiliki RoutingWeight berbeda dengan menggunakan Set-AzExpressRouteConnection koneksi.
+Koneksi lalu diperbarui agar memiliki RoutingWeight berbeda dengan menggunakan Set-AzExpressRouteConnection kedua.
 
 ## PARAMETERS
 
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

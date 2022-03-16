@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLabForVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Get-AzLabServicesLabForVM.md
-ms.openlocfilehash: 0eba7e5167299d2c2285d6ff41a27db41c10a575
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f2c37da3a679dc87a8cebb87307a25438f55355a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261211"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139957731"
 ---
 # Get-AzLabServicesLabForVM
 
 ## SYNOPSIS
 API untuk mengembalikan lab bagi VM tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.labservices/get-azlabserviceslabforvm) untuk informasi terkini.
 
 ## SYNTAX
 

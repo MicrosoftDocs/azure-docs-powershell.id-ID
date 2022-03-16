@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Remove-AzElasticMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Remove-AzElasticMonitor.md
-ms.openlocfilehash: f24e64b3340a8aa3422147ec4c9b3c846178e7ac
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ca169b78322b5462cf08fb654ae914dc49d7b8ba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139960017"
 ---
 # Remove-AzElasticMonitor
 
 ## SYNOPSIS
 Menghapus sumber daya monitor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.elastic/remove-azelasticmonitor) untuk informasi terkini.
 
 ## SYNTAX
 

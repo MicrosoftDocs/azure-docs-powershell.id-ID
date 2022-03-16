@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/New-AzAppConfigurationStore.md
-ms.openlocfilehash: 8abb92a9439aee870c6aa1768bad9e97614ccc0a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fa7e0a2ba30147ee5881c58eb5040398d4cb3459
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136375757"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140143791"
 ---
 # New-AzAppConfigurationStore
 
 ## SYNOPSIS
 Membuat penyimpanan konfigurasi dengan parameter yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/new-azappconfigurationstore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ eastus   appconfig-test03 Microsoft.AppConfiguration/configurationStores
 ```
 
 Perintah ini akan membuat konfigurasi aplikasi dan menetapkan identitas terkelola yang ditetapkan pengguna ke dalamnya.
-Lihat contoh langkah `Update-AzAppConfigurationStore` berikut untuk mengaktifkan CMK (kunci terkelola cusomer).
+Lihat contoh langkah berikut `Update-AzAppConfigurationStore` untuk mengaktifkan CMK (kunci terkelola cusomer).
 
 ### Contoh 3: Buat konfigurasi aplikasi dengan IdentityType diatur ke "SystemAssigned" 
 ```powershell
@@ -65,7 +68,7 @@ eastus   appconfig-test11 Microsoft.AppConfiguration/configurationStores
 ```
 
 Perintah ini akan membuat konfigurasi aplikasi dan mengaktifkan identitas terkelola yang ditetapkan sistem yang terkait dengan sumber daya.
-Lihat contoh langkah `Update-AzAppConfigurationStore` berikut untuk mengaktifkan CMK (kunci terkelola cusomer).
+Lihat contoh langkah berikut `Update-AzAppConfigurationStore` untuk mengaktifkan CMK (kunci terkelola cusomer).
 
 ### Contoh 4: Buat konfigurasi aplikasi dengan IdentityType diatur ke "SystemAssigned, UserAssigned"
 ```powershell
@@ -78,7 +81,7 @@ eastus   appconfig-test10 Microsoft.AppConfiguration/configurationStores
 ```
 
 Anda dapat mengaktifkan identitas terkelola yang ditetapkan sistem dan memberikan identitas yang ditetapkan pengguna secara bersamaan.
-Lihat contoh langkah `Update-AzAppConfigurationStore` berikut untuk mengaktifkan CMK (kunci terkelola cusomer).
+Lihat contoh langkah berikut `Update-AzAppConfigurationStore` untuk mengaktifkan CMK (kunci terkelola cusomer).
 
 ## PARAMETERS
 
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Microsoft Azure langganan.
+ID Microsoft Azure langganan.
 
 ```yaml
 Type: System.String
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

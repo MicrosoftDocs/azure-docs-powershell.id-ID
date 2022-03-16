@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/stop-azcdnen
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Stop-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Stop-AzCdnEndpoint.md
-ms.openlocfilehash: b6e917b24d48c1140fdfba2baf590812f6883860
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0d0ac92dfa5c7d622a33b293007835c7db8e1393
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168797"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140060123"
 ---
 # Stop-AzCdnEndpoint
 
 ## SYNOPSIS
 Menghentikan titik CDN akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/stop-azcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 

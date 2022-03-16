@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSparkPool.md
-ms.openlocfilehash: 5ec88788ab86999b5751805393a5d69dadbc516b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ef64c8d805ccba3b4a87e8a0a509cf3da4d187f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163498"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113209"
 ---
 # Update-AzSynapseSparkPool
 
 ## SYNOPSIS
 Memperbarui pool Apache Spark dalam Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/update-azsynapsesparkpool) untuk informasi terkini.
 
 ## SYNTAX
 

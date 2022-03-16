@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: 048d9dccccea15272c5e104ca5447ef16bd7cd0f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ab6bb53e2648af60897252a087fa6a80329b944d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138281195"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139958667"
 ---
 # Backup-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Mencadangkan akun penyimpanan yang dikelola KeyVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ PS C:\> Backup-AzKeyVaultManagedStorageAccount -StorageAccount $msak -OutputFile
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan akun penyimpanan terkelola yang bernama $msak. Nama di vault bernama $msak. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
+Perintah ini membuat cadangan akun penyimpanan terkelola yang dinamai $msak. Nama di vault bernama $msak. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage akun anda dicadangkan, dibuat salurannya dari output panggilan pengambilan.
+Storage akun Anda dicadangkan, dibuat salurannya dari output panggilan pengambilan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultManagedStorageAccountIdentityItem

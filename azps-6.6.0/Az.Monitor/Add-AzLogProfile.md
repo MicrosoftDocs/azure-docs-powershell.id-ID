@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/add-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzLogProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Add-AzLogProfile.md
-ms.openlocfilehash: 72039317361f803bc554fab3d0c34debe7f6671f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 695623491cdd3e556cc95aa79c9551d6db095d34
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365609"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076293"
 ---
 # Add-AzLogProfile
 
 ## SYNOPSIS
 Membuat profil log aktivitas baru. Profil ini digunakan untuk mengarsipkan log aktivitas ke akun penyimpanan Azure atau melakukan streaming ke hub aktivitas Azure dalam langganan yang sama. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/add-azlogprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,9 +32,9 @@ Add-AzLogProfile -Name <String> [-StorageAccountId <String>] [-ServiceBusRuleId 
 
 ## DESCRIPTION
 Cmdlet **Add-AzLogProfile** membuat profil log.
-- **Storage Anda** - Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Dapat berupa tipe ARM atau Klasik. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih sesuai tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan secara konsekuensial, hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
+- **Storage Baru** - Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Dapat berupa tipe ARM atau Klasik. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih sesuai tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan secara konsekuensial, hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
 - **Hub Kejadian** - Hanya ada satu profil log per langganan secara konsekuensial, hanya satu hub acara per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas di-streaming ke hub acara, harga hub acara standar akan berlaku. Dalam log aktivitas, acara dapat terkait dengan kawasan atau dapat menjadi "Global". Global pada dasarnya berarti acara ini adalah agnostik kawasan dan terpisah dari kawasan, bahkan mayoritas acara termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil secara implisit menambahkan "Global" bersama dengan kawasan lain yang dipilih dalam antarmuka pengguna. Saat menggunakan cmdlet, lokasi sebagai "Global" harus disebutkan secara eksplisit terlepas dari kawasan lain. 
-**Catatan** :- **Gagal menetapkan "Global"** di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+**Catatan** :- **Gagal menetapkan "Global" di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor.** Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/set-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Set-AzMigrateServerReplication.md
-ms.openlocfilehash: c04df98e1e5cccc4699f3efb831260df005d4bdf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d0c3c138fdf8f4a2b4a0afc0053a6c35abea9e73
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361214"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076383"
 ---
 # Set-AzMigrateServerReplication
 
 ## SYNOPSIS
 Memperbarui properti target untuk server yang replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/set-azmigrateserverreplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 
 ### -TargetObjectID
 Menentukan server berulang di mana properti perlu diperbarui.
-ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication baru.
+ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
 Type: System.String
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 
 ### -TargetVMName
 Menentukan server berulang di mana properti perlu diperbarui.
-ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication baru.
+ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
 Type: System.String
@@ -470,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -487,11 +490,11 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DISKTOUPDATE <IVMwareCbtUpdateDiskInput[]>: Memperbarui disk untuk Azure VM yang akan dibuat.
+DISKTOUPDATE <IVMwareCbtUpdateDiskInput[]>: Memperbarui disk untuk VM Azure yang akan dibuat.
   - `DiskId <String>`: Id disk.
   - `[TargetDiskName <String>]`: Nama disk target.
 
-INPUTOBJECT <IMigrationItem> : Menentukan server replikasi tempat properti perlu diperbarui. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
+INPUTOBJECT <IMigrationItem>: Menentukan server replikasi tempat properti perlu diperbarui. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 
@@ -503,13 +506,13 @@ NICTOUPDATE <IVMwareCbtNicInput[]>: Updates the NIC for the Azure VM to be creat
   - `[TargetStaticIPAddress <String>]`: Alamat IP statis.
   - `[TargetSubnetName <String>]`: Nama subnet target.
 
-UPDATEDISKTAG <IVMwareCbtEnableMigrationInputTargetDiskTags> : Menentukan tag yang akan digunakan untuk pembuatan disk.
+UPDATEDISKTAG <IVMwareCbtEnableMigrationInputTargetDiskTags>: Menentukan tag yang akan digunakan untuk pembuatan disk.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-UPDATENICTAG <IVMwareCbtEnableMigrationInputTargetNicTags> : Menentukan tag yang akan digunakan untuk pembuatan NIC.
+UPDATENICTAG <IVMwareCbtEnableMigrationInputTargetNicTags>: Menentukan tag yang akan digunakan untuk pembuatan NIC.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
-UPDATEVMTAG <IVMwareCbtEnableMigrationInputTargetVmtags> : Menentukan tag yang akan digunakan untuk pembuatan VM.
+UPDATEVMTAG <IVMwareCbtEnableMigrationInputTargetVmtags>: Menentukan tag yang akan digunakan untuk pembuatan VM.
   - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 
 ## RELATED LINKS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
-ms.openlocfilehash: 4cc1d9973b472168fb998cb6a1d51a80b0742ecc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: afefa53cda73d1fadbdedf71b56240ebd3511f48
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138310892"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140114757"
 ---
 # New-AzSqlServer
 
 ## SYNOPSIS
 Membuat server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ TenantId                  : f553829b-6d84-481b-86a9-42db57c1dc73
 AzureADOnlyAuthentication : True
 ```
 
-Perintah ini akan membuat server administrator Azure SQL Database versi 12 dengan properti administrator eksternal dan hanya mengaktifkan autentikasi azure active directory.
+Perintah ini membuat server administrator versi 12 Azure SQL Database dengan properti administrator eksternal dan hanya autentikasi Azure active directory yang diaktifkan.
 
 ## PARAMETERS
 
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorCredentials
-Menentukan SQL Database administrator server untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential cmdlet. Untuk informasi selengkapnya, ketik `Get-Help
+Menentukan SQL Database administrator server untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
 Get-Credential`.
 
 ```yaml

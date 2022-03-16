@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/get-azaksver
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Get-AzAksVersion.md
-ms.openlocfilehash: e7f9603a35eeeea744ad3f4e2f0a95253b6674d0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 56b3d5376137ed555e42ea91c8a52e7f679762a5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165455"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140063597"
 ---
 # Get-AzAksVersion
 
 ## SYNOPSIS
 Daftar versi yang tersedia untuk membuat kluster Ruang Kerja terkelola.
 Operasi akan mengembalikan properti setiap pengelola, termasuk versi, pemutakhiran yang tersedia, dan apakah versi atau pemutakhiran tersebut sedang dalam pratinjau.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/get-azaksversion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

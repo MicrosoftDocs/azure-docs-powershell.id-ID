@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/New-AzServiceFabricApplication.md
-ms.openlocfilehash: 45dd6dc83c29fa640c5b6b6e10a13789dccf6fad
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: efd96ca657e5346a2fc465ad1291aa1cefec22ea
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317644"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140116179"
 ---
 # New-AzServiceFabricApplication
 
 ## SYNOPSIS
 Create new service fabric application under the specified resource group and cluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/new-azservicefabricapplication) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzFrontDoorCdnOrigin.md
-ms.openlocfilehash: 380eaf6a03502de495f5582149922dba6ae5059e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 05a201f13a25d074300b40f1085aade6a268e1c9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167535"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140126385"
 ---
 # Get-AzFrontDoorCdnOrigin
 
 ## SYNOPSIS
 Dapatkan asalnya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/get-azfrontdoorcdnorigin) untuk informasi terkini.
 
 ## SYNTAX
 

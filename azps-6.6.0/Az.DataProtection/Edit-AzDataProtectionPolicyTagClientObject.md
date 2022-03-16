@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTagClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Edit-AzDataProtectionPolicyTagClientObject.md
-ms.openlocfilehash: 00b1666a7f51fef7da778ba72a52d86b96c28981
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 79bc2eff51406c6a95b5eba81cb0c003e84f1860
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343058"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140107829"
 ---
 # Edit-AzDataProtectionPolicyTagClientObject
 
 ## SYNOPSIS
 Menambahkan atau menghapus tag jadwal dalam kebijakan pencadangan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/edit-azdataprotectionpolicytagclientobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,7 +155,7 @@ CRITERIA <IScheduleBasedBackupCriteria[]>: Kriteria yang akan dikaitkan dengan t
   - `[ScheduleTime <DateTime[]>]`: Daftar waktu jadwal untuk cadangan
   - `[WeeksOfTheMonth <WeekNumber[]>]`: Harus menjadi Pertama/Kedua/Ketiga/Keempat/Terakhir
 
-KEBIJAKAN <IBackupPolicy> : Objek Kebijakan Pencadangan.
+KEBIJAKAN <IBackupPolicy>: Objek Kebijakan Pencadangan.
   - `DatasourceType <String[]>`: Tipe sumber data untuk manajemen pencadangan
   - `ObjectType <String>`: 
   - `PolicyRule <IBasePolicyRule[]>`: Kamus aturan kebijakan yang berisi aturan untuk setiap tipe cadangan i.e Penuh/Penambahan/Log dll

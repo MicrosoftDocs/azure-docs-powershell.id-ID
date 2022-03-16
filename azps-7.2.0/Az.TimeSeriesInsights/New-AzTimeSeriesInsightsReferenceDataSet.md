@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/New-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 0fa613bee4d619298d2de2747c18b8a3b686f895
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c04dbae0459d5b6c49748fd0c33be474dc3db729
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138282747"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140113173"
 ---
 # New-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Membuat atau memperbarui kumpulan data referensi dalam lingkungan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.timeseriesinsights/new-aztimeseriesinsightsreferencedataset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu yang Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String

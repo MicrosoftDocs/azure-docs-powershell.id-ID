@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendHttpSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayBackendHttpSetting.md
-ms.openlocfilehash: 51d8f4a7f7e76ce055e1b4835fdf99666b6e4319
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f00d5260925f324e5f8df3d1ce3f3eb92909f386
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311307"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140119815"
 ---
 # Add-AzApplicationGatewayBackendHttpSetting
 
 ## SYNOPSIS
 Menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewaybackendhttpsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceG
 PS C:\> $AppGw = Add-AzApplicationGatewayBackendHttpSetting -ApplicationGateway $AppGw -Name "Setting02" -Port 88 -Protocol "HTTP" -CookieBasedAffinity "Disabled"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw sumber daya. Perintah kedua menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi, mengatur port ke 88 dan protokol ke HTTP dan memberi nama pengaturan Pengaturan02.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal. Perintah kedua menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi, mengatur port ke 88 dan protokol ke HTTP dan memberi nama pengaturan Pengaturan02.
 
 ### Contoh 2
 
