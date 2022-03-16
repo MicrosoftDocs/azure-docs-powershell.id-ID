@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/add-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
-ms.openlocfilehash: 359e8a920b3abf90f2aa89d0abf6b1807f6aac47
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 57c1ed92e19bbb2d61a970d6735cfe63b894a933
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373111"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140105993"
 ---
 # Add-AzHDInsightComponentVersion
 
 ## SYNOPSIS
 Menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightcomponentversion) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Add-AzHDInsightComponentVersion [-Config] <AzureHDInsightConfig> [-ComponentName
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzHDInsightComponentVersion menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig nya.
+Cmdlet Add-AzHDInsightComponentVersion menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig lanjut.
 
 ## EXAMPLES
 
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

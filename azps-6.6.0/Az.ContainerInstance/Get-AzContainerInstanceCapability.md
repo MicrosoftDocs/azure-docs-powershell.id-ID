@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceCapability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceCapability.md
-ms.openlocfilehash: 5975625c5535c1afba02dbd941b1ba9bb13768f3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3d3cc689a26f02931ed479ba9c3e591798b077e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383482"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140078489"
 ---
 # Get-AzContainerInstanceCapability
 
 ## SYNOPSIS
 Dapatkan daftar kapabilitas CPU/memori/GPU di suatu wilayah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancecapability) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ V100 Public        EASTUS   Linux        containerGroups
 None Public        EASTUS   Windows      containerGroups
 ```
 
-Perintah ini berisi daftar kapabilitas CPU/memori/GPU di `eastus` kawasan.
+Perintah ini berisi daftar kapabilitas CPU/memori/GPU di kawasan.`eastus`
 
 ## PARAMETERS
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

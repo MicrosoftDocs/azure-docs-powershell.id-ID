@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/invoke-A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Invoke-AzStorageAccountFailover.md
-ms.openlocfilehash: 163843a9d90ddb479c6b2ccf86c57be96a289c36
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 81d3e1e8c8d3a25e2b9416ffe3988df8bcf7f784
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270827"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082395"
 ---
 # Invoke-AzStorageAccountFailover
 
 ## SYNOPSIS
 Menggunakan failover akun Storage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/invoke-azstorageaccountfailover) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ PS C:\>$job = Invoke-AzStorageAccountFailover -ResourceGroupName "MyResourceGrou
 PS C:\>$job | Wait-Job
 ```
 
-Perintah ini memeriksa waktu sinkronisasi terakhir akun Storage lalu meminta failover, kluster sekunder akan menjadi utama setelah failover. Karena failover memakan waktu lama, sarankan untuk menjalankannya dalam backend dengan parameter -Asjob, lalu tunggu hingga pekerjaan selesai.
+Perintah ini memeriksa waktu sinkronisasi terakhir akun Storage meminta failover, kluster sekunder akan menjadi utama setelah failover. Karena failover memakan waktu lama, sarankan untuk menjalankannya dalam backend dengan parameter -Asjob, lalu tunggu hingga pekerjaan selesai.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage akun
+Storage objek akun
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount

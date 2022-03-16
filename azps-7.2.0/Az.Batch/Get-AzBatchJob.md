@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJob.md
-ms.openlocfilehash: 108abfe38c13454aeac3f1d6e7ff389100a63c8d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 07d7cd37f7f977c2a68766121d1f8927cb5624ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299355"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139963797"
 ---
 # Get-AzBatchJob
 
 ## SYNOPSIS
 Dapatkan pekerjaan Kumpulan untuk akun Kumpulan atau jadwal pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Url                         : https://pfuller.westus.batch.azure.com/jobs/Job01
 ```
 
 Perintah ini mendapatkan pekerjaan dengan ID Job01.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Mendapatkan semua pekerjaan aktif untuk jadwal pekerjaan
 ```

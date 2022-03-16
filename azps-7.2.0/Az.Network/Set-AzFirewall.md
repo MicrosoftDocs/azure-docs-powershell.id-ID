@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzFirewall.md
-ms.openlocfilehash: dfbd9e8fb775fd64f0f626a53ea9371ee5bf5974
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fb74a2f8a4faa74f8bcfeb9ea02bd025f832c16b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275900"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953681"
 ---
 # Set-AzFirewall
 
 ## SYNOPSIS
 Menyimpan Firewall yang dimodifikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azfirewall) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Set-AzFirewall -AzureFirewall $azFw
 ```
 
 Contoh ini memperbarui prioritas kumpulan aturan azure firewall yang sudah ada.
-Dengan menganggap Azure Firewall "AzureFirewall" dalam grup sumber daya "rg" berisi kumpulan aturan aplikasi bernama "ruleCollectionName", perintah di atas akan mengubah prioritas kumpulan aturan tersebut dan memperbarui Azure Firewall sesudahnya. Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak ditampilkan di server.
+Dengan menganggap Azure Firewall "AzureFirewall" dalam grup sumber daya "rg" berisi kumpulan aturan aplikasi bernama "ruleCollectionName", perintah di atas akan mengubah prioritas kumpulan aturan tersebut dan memperbarui Azure Firewall sesudahnya. Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak akan terlihat di server.
 
 ### 2: Buat Azure Firewall dan atur kumpulan aturan aplikasi nanti
 ```
@@ -62,7 +65,7 @@ Set-AzFirewall -Firewall $azFw
 ```
 
 Contoh ini memperbarui mode operasi Threat Intel dari Azure Firewall "AzureFirewall" di grup sumber daya "rg".
-Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak ditampilkan di server.
+Tanpa perintah Set-AzFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak akan terlihat di server.
 
 ### 4: Deallocate dan alokasikan Firewall
 ```

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Invoke-AzHDInsightHiveJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Invoke-AzHDInsightHiveJob.md
-ms.openlocfilehash: 791a5534cdd414432d2fb05466dc94e144e8db3f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 433dab74993ef900766568989ff39acfd5447a7f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332915"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140105831"
 ---
 # Invoke-AzHDInsightHiveJob
 
 ## SYNOPSIS
 Mengirimkan kueri Hive ke kluster HDInsight dan mengambil hasil kueri dalam satu operasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/invoke-azhdinsighthivejob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 
 ### -File
 Menentukan jalur ke file di Azure Storage berisi kueri yang akan dijalankan.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query.*
+Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 
 ### -JobName
 Menentukan nama pekerjaan Hive.
-Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan nilai default: "Hive: \<first 100 characters of Query\> ".
+Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan nilai default: "Hive: \<first 100 characters of Query\>".
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

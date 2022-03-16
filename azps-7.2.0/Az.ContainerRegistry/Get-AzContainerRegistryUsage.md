@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryUsage.md
-ms.openlocfilehash: 7c8b99562ac8b9873eafc24c98dd9cbc821a4825
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7ae78420aa21ef09b934ac07d2cad6fe655f5d67
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138293515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139962825"
 ---
 # Get-AzContainerRegistryUsage
 
 ## SYNOPSIS
 Dapatkan Penggunaan registri azure container.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistryusage) untuk informasi terkini.
 
 ## SYNTAX
 

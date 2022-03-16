@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: c8b9fe1c06b16e4ed369776c64859c714052ac06
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6623ed1dbe1d6eaa79032857720ab422479525db
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138269164"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055389"
 ---
 # Get-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Mendapatkan Key Vault yang Storage sas Definitions.
+Mendapatkan Key Vault yang Storage Sas Definitions.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedstoragesasdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedStora
 ```
 
 ## DESCRIPTION
-Mendapatkan Kunci Vault yang Storage sas Definition jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, semua definisi SAS yang terkait dengan Key Vault tertentu dikelola Storage Akun di vault dicantumkan.
+Mendapatkan Kunci Vault yang Storage sas Definition jika nama definisi ditentukan. Jika nama definisi tidak ditentukan, maka semua definisi SAS yang terkait dengan Key Vault tertentu dikelola Storage Akun di vault dicantumkan.
 
 ## EXAMPLES
 
-### Contoh 1:  List all Key Vault managed Storage SAS Definitions
+### Contoh 1: Daftar semua Kunci Vault Storage Sas Definitions
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount'
 
@@ -50,7 +53,7 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Key Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh vault 'myvault'
+Mencantumkan semua definisi SAS yang terkait dengan Kunci Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh vault 'myvault'
 
 ### Contoh 2: Get a Key Vault managed Storage Account
 ```powershell
@@ -70,7 +73,7 @@ Tags        :
 
 Dapatkan detail 'accountsas' Sas Definition terkait dengan Key Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh vault 'myvault'.
 
-### Contoh 3: Daftar semua Kunci Vault Storage Sas Definitions menggunakan pemfilteran
+### Contoh 3: Daftar semua Key Vault Storage Sas Definitions menggunakan pemfilteran
 ```powershell
 PS C:\> Get-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name "account*"
 
@@ -93,7 +96,7 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Mencantumkan semua definisi SAS yang terkait dengan Kunci Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh Vault 'myvault' yang dimulai dengan "account".
+Mencantumkan semua definisi SAS yang terkait dengan Key Vault yang dikelola Storage 'mystorageaccount' yang dikelola oleh Vault 'myvault' yang dimulai dengan "account".
 
 ## PARAMETERS
 

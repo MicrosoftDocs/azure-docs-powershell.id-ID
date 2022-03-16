@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusGeoDRConfiguration.md
-ms.openlocfilehash: 4d49a035f052f8923640a38a0dbb3b7f6a4df212
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 9871e58fc2db1a166d60b8136860e039bcbcf70e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272171"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916701"
 ---
 # Get-AzServiceBusGeoDRConfiguration
 
 ## SYNOPSIS
 Ambil Alias(Konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusgeodrconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 

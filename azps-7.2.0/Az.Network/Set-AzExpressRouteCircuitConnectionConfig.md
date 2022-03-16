@@ -5,17 +5,20 @@ ms.assetid: 8b4a8c9f-874c-4a27-b87e-c8ad7e73188d
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCircuitConnectionConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzExpressRouteCircuitConnectionConfig.md
-ms.openlocfilehash: 81770580b1f03e058515f5ffc3c0553c07fc68f7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: abcd5543205714031fa5a3716e07bc1f9808dc00
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258443"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953771"
 ---
 # Set-AzExpressRouteCircuitConnectionConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi koneksi sirkuit yang dibuat di Peering Privat untuk Sirkuit Rute Ekspres. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azexpressroutecircuitconnectionconfig) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringServicePrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringServicePrefix.md
-ms.openlocfilehash: 8792393cde511806280401bcf18bdbad91050b2b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 0e72f19dd5679fedba01db91c171e2ca42f280b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138266652"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952187"
 ---
 # New-AzPeeringServicePrefix
 
 ## SYNOPSIS
 Membuat prefiks layanan peering baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/new-azpeeringserviceprefix) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 
 ### -PeeringServiceName
 Nama layanan peering.
-Gunakan New-AzPeeringService cmdlet untuk layanan peering baru Get-AzPeeringService cmdlet untuk daftar.
+Gunakan New-AzPeeringService cmdlet untuk layanan peering baru atau Get-AzPeeringService bagi daftar.
 
 ```yaml
 Type: System.String

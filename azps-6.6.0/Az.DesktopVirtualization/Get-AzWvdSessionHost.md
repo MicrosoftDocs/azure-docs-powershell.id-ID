@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdSessionHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdSessionHost.md
-ms.openlocfilehash: 02d5933f978bb0fe9c8f8fe21d82da1d936096f6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 694e7a4ad4a013b9d97bf36b29dcf993b35f0709
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385781"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140107019"
 ---
 # Get-AzWvdSessionHost
 
 ## SYNOPSIS
 Dapatkan tuan rumah sesi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdsessionhost) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Name                                               Type
 HostPoolName/SessionHostName Microsoft.DesktopVirtualization/hostpools/sessionhosts
 ```
 
-Perintah ini mendapatkan Windows Desktop Virtual SessionHost dalam Host Pool.
+Perintah ini mendapatkan Windows Virtual Desktop SessionHost dalam Host Pool.
 
 ### Contoh 2: List Windows Virtual Desktop SessionHosts
 ```powershell
@@ -63,7 +66,7 @@ HostPoolName/SessionHostName1 Microsoft.DesktopVirtualization/hostpools/sessionh
 HostPoolName/SessionHostName2 Microsoft.DesktopVirtualization/hostpools/sessionhosts
 ```
 
-Perintah ini mencantumkan Windows Desktop Virtual SessionHosts dalam Pool Host.
+Perintah ini mencantumkan Windows Virtual Desktop SessionHosts dalam Host Pool.
 
 ## PARAMETERS
 
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +181,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDesktopVirtualizationIdentity> : Parameter Identitas
+INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
   - `[ApplicationName <String>]`: Nama aplikasi di dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan

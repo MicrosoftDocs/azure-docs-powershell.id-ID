@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubRoute.md
-ms.openlocfilehash: b0d949dce7469dd8caa4bc913f298bd89febddf6
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c7f849454c7252ea847b0297d5d7402459e17479
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138276172"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055659"
 ---
 # Get-AzIotHubRoute
 
 ## SYNOPSIS
 Dapatkan informasi tentang rute dalam IoT Hub
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubroute) untuk informasi terkini.
 
 ## SYNTAX
 

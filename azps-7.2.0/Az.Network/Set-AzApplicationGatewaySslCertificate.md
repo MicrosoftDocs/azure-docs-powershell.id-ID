@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 049ce025f9a596976152b740e754d247d6a68265
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a24565562a8900ac8ab690ab1d47944c09536864
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138307531"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953789"
 ---
 # Set-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Memperbarui sertifikat SSL untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslcertificate) untuk informasi terkini.
 
 ## SYNTAX
 

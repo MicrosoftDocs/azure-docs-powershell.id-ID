@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
-ms.openlocfilehash: ce8799e9c7ad2b51de64edd77552c3ca8d462bab
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a0dd20bb24c96d721ad631416eed4684f4eb15ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138272155"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916647"
 ---
 # Get-AzServiceBusTopic
 
 ## SYNOPSIS
 Mengembalikan deskripsi untuk topik Bus Layanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebustopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzServiceBusTopic [-ResourceGroupName <String>] [-Namespace <String>] [-Name
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzServiceBusTopic** mengembalikan deskripsi topik untuk kumpulan nama Bus Layanan ditentukan.
+Cmdlet **Get-AzServiceBusTopic** mengembalikan deskripsi topik untuk kumpulan nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ SupportOrdering                     : True
 UpdatedAt                           : 10/11/2018 11:51:24 PM
 ```
 
-Mengembalikan deskripsi topik yang ditentukan untuk ruang nama Bus Layanan ditentukan.
+Mengembalikan deskripsi dari topik yang ditentukan untuk ruang nama Bus Layanan tertentu.
 
 ### Contoh 2
 ```

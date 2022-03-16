@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzStaticWebApp.md
-ms.openlocfilehash: 180c0bd845638d5df4e29f5ff658a9be8091d3bf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d3c362e5fc75c2ce41358d636c61620fe97a4d9e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163478"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140046893"
 ---
 # Remove-AzStaticWebApp
 
 ## SYNOPSIS
 Deskripsi untuk Menghapus situs statis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azstaticwebapp) untuk informasi terkini.
 
 ## SYNTAX
 

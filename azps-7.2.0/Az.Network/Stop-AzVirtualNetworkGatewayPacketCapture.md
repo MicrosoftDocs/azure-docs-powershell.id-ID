@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azv
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayPacketCapture.md
-ms.openlocfilehash: baddc5993903be3b1cdecff1e8a037a837687656
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 11e4ca36f8396f7e3b84463422f5efd139ec69aa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138314667"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953087"
 ---
 # Stop-AzVirtualNetworkGatewayPacketCapture
 
 ## SYNOPSIS
 Menghentikan Operasi Penangkapan Paket di Gateway Jaringan Virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/stop-azvirtualnetworkgatewaypacketcapture) untuk informasi terkini.
 
 ## SYNTAX
 

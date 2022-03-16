@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
-ms.openlocfilehash: 93e0340714a0d1bc5e5977620ca41c15849d3158
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1289c8249b19125fb8fea5081ab600abb2c09123
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953465"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
 ## SYNOPSIS
 Mengonfigurasi pembuatan log alur untuk sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconfigflowlog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -104,7 +107,7 @@ Sumber Set-AzNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk
 
 ## EXAMPLES
 
-### Contoh 1: Mengonfigurasi Flow Log untuk NSG tertentu
+### Contoh 1: Mengonfigurasi Flow Log Untuk NSG tertentu
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -186,7 +189,7 @@ FlowAnalyticsConfiguration : {
 
 Dalam contoh ini, kami mengonfigurasi status pembuatan log alur dan Analitik Lalu Lintas untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur dan Analitik Lalu Lintas yang diaktifkan, format default, dan tidak ada kumpulan kebijakan penyimpanan.
 
-### Contoh 4: Menonaktifkan Analitik Lalu Lintas untuk NSG Tertentu dengan Pembuatan Log Flow dan Analitik Lalu Lintas dikonfigurasi
+### Contoh 4: Menonaktifkan Analitik Lalu Lintas untuk NSG Tertentu dengan Pembuatan Log Flow dan Analitik Lalu Lintas yang dikonfigurasi
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG

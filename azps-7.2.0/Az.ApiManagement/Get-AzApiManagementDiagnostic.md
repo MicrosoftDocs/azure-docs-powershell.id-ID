@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 6bfaecef88b2eefa8d6c2bb2fe5f48e4fb4bff4a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5a05f3a3ebd8af8ec5e07bd72115e07ce5bf1573
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138258044"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964877"
 ---
 # Get-AzApiManagementDiagnostic
 
 ## SYNOPSIS
 Dapatkan detail Diagnostik yang dikonfigurasi di tingkat layanan atau Tingkat Api. Diagnostik digunakan untuk membuat log permintaan/respons dari gateway Manajemen Api.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementdiagnostic) untuk informasi terkini.
 
 ## SYNTAX
 

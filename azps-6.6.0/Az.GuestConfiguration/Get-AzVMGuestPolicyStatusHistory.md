@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.guestconfigurati
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
-ms.openlocfilehash: 15a0b856b1e5f5176c0746185375f289f2d15651
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 02a4d57be32edb1128f5c528125f53b4e563ce69
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332940"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140105975"
 ---
 # Get-AzVMGuestPolicyStatusHistory
 
 ## SYNOPSIS
 Mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu atas inisiatif tipe "Konfigurasi Tamu" yang ditetapkan pada VM.
 Inisiatif adalah kebijakan tipe definisi "Inisiatif".
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.guestconfiguration/get-azvmguestpolicystatushistory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

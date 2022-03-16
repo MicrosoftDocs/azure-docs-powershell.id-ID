@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/new-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultNetworkRuleSetObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/New-AzKeyVaultNetworkRuleSetObject.md
-ms.openlocfilehash: c17986338c68f3274dedc75a2037c4a79d5bcbed
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a2ef3231b5fcc9be3e5451d026ed0e0518e76845
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138286668"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055209"
 ---
 # New-AzKeyVaultNetworkRuleSetObject
 
 ## SYNOPSIS
 Buat objek yang mewakili pengaturan aturan jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/new-azkeyvaultnetworkrulesetobject) untuk informasi terkini.
 
 ## SYNTAX
 

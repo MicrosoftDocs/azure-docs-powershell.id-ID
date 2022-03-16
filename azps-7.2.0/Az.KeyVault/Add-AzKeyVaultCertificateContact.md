@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificateContact.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultCertificateContact.md
-ms.openlocfilehash: 9062a4842cd3256aa7948d9f06a5261b24a77993
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 66380f3b514e583e61f9c08e01cdcdacec695279
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138306875"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140055443"
 ---
 # Add-AzKeyVaultCertificateContact
 
 ## SYNOPSIS
 Menambahkan kontak untuk pemberitahuan sertifikat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultcertificatecontact) untuk informasi terkini.
 
 ## SYNTAX
 

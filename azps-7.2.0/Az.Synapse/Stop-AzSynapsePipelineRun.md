@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapsePipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapsePipelineRun.md
-ms.openlocfilehash: ffd0173a7360845f59a7016b5cb599da145b0319
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8b354bb57bb865b9254ab2fe498b2e8b568f7470
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166215"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140047379"
 ---
 # Stop-AzSynapsePipelineRun
 
 ## SYNOPSIS
 Menghentikan jalannya saluran di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/stop-azsynapsepipelinerun) untuk informasi terkini.
 
 ## SYNTAX
 

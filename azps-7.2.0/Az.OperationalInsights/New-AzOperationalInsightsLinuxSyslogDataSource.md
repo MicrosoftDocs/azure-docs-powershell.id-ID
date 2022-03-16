@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsLinuxSyslogDataSource.md
-ms.openlocfilehash: 6d2857ce18c61200d2679433add440c0b31cacfa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 7673f8068199590262f5a3278ffec1bcffb6e428
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169080"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952583"
 ---
 # New-AzOperationalInsightsLinuxSyslogDataSource
 
 ## SYNOPSIS
 Menambahkan sumber data ke komputer Linux.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightslinuxsyslogdatasource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzOperationalInsightsLinuxSyslogDataSource [-Workspace] <PSWorkspace> [-Name
 
 ## DESCRIPTION
 Cmdlet **New-AzOperationalInsightsLinuxSyslogDataSource** menambahkan sumber data syslog ke komputer Linux yang tersambung di dalam ruang kerja.
-Azure Operational Insights bisa mengumpulkan data syslog.
+Azure Operational Insights dapat mengumpulkan data syslog.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ Get-AzOperationalInsightsDataSource `
 ## PARAMETERS
 
 ### -CollectAlert
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan peringatan.
+Menunjukkan bahwa operasi Insights mengumpulkan pesan peringatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectEmergency
-Menunjukkan bahwa Operasional Insights mengumpulkan pesan darurat.
+Menunjukkan bahwa Operasi Insights mengumpulkan pesan darurat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -CollectInformational
-Menunjukkan bahwa Operasi Insights mengumpulkan pesan informasi.
+Menunjukkan bahwa operasi Insights mengumpulkan pesan informasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

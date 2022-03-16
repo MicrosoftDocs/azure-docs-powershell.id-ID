@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzCustomIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzCustomIpPrefix.md
-ms.openlocfilehash: cf9abbd2491723960a30f96c226ef661093698c8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1589c14b9fc5302f833a6f4ec8eef807272cd053
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953015"
 ---
 # Update-AzCustomIpPrefix
 
 ## SYNOPSIS
 Memperbarui CustomIpPrefix
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azcustomipprefix) untuk informasi terkini.
 
 ## SYNTAX
 

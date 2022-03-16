@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzRouteConfig.md
-ms.openlocfilehash: 19bf3a63e10f924af1a6279c2528965eb3e23998
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 89eebb3c73303675a7405c635cd0e7f7d9ba67c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362438"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140070929"
 ---
 # Get-AzRouteConfig
 
 ## SYNOPSIS
 Mendapatkan rute dari tabel rute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azrouteconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ NextHopType       : VnetLocal
 NextHopIpAddress  :
 ```
 
-Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable.**
+Perintah ini mendapatkan tabel rute bernama RouteTable01 dengan menggunakan cmdlet **Get-AzRouteTable** .
 Perintah itu meneruskan tabel itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Cmdlet saat ini mendapatkan rute yang bernama Route07 dalam tabel rute yang bernama RouteTable01.
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

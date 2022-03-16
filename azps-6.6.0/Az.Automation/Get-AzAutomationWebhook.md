@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationWebhook.md
-ms.openlocfilehash: 88dcdee4c3f0a29b52491dc53b1a93d25ae95846
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 81da456d02a3724802d5c90788c6d7188ae0a808
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385974"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945177"
 ---
 # Get-AzAutomationWebhook
 
 ## SYNOPSIS
 Mendapatkan webhooks dari Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/get-azautomationwebhook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Get-AzAutomationWebhook -RunbookName <String> [-ResourceGroupName] <String> [-Au
 ## DESCRIPTION
 Cmdlet **Get-AzAutomationWebhook** gets webhooks.
 Untuk mendapatkan webhook tertentu, tentukan nama webhook atau tentukan nama runbook Azure Automation agar webhooks tersambung ke dalamnya.<br>
-**Catatan:** WebhookUri dikembalikan sebagai string kosong karena masalah keamanan. Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet **New-AzAutomationWebhook,** karena tidak dapat diperoleh menggunakan **Get-AzAutomationWebhook**.
+**Catatan:** WebhookUri dikembalikan sebagai string kosong karena masalah keamanan. Pastikan untuk menyimpan URL webhook yang dikembalikan cmdlet **New-AzAutomationWebhook** , karena url tersebut tidak bisa diambil dengan menggunakan **Get-AzAutomationWebhook**.
 
 ## EXAMPLES
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

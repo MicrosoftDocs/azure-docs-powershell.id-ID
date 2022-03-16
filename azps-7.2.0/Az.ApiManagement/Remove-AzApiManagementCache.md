@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementCache.md
-ms.openlocfilehash: 276f5ab070203ca22f13f1eb611a6f52b681983e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 911c1e8b0cc010541d5acb55ca4d0526b5728bfc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308300"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964678"
 ---
 # Remove-AzApiManagementCache
 
 ## SYNOPSIS
 Menghapus entitas singgahan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementcache) untuk informasi terkini.
 
 ## SYNTAX
 

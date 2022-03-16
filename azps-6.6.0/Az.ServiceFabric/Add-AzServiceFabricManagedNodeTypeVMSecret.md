@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricManagedNodeTypeVMSecret.md
-ms.openlocfilehash: cf21cba82a5db7f1a02575845cae7d5f2e84cd0d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 281fc6781b396cf7674c382f9df21b4a133e56b5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355034"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139968801"
 ---
 # Add-AzServiceFabricManagedNodeTypeVMSecret
 
 ## SYNOPSIS
 Tambahkan sertifikat rahasia ke tipe node.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricmanagednodetypevmsecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -95,8 +98,8 @@ Accept wildcard characters: False
 
 ### -CertificateUrl
 Url ini adalah sertifikat yang telah diunggah ke Key Vault sebagai rahasia.
-Untuk menambahkan kunci vault, lihat \[ Menambahkan kunci atau rahasia ke key vault ( \] https://docs.microsoft.com/azure/key-vault/key-vault-get-started/#add) .
-Dalam hal ini, sertifikat Anda harus menggunakan Pengodean Base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: \<br\> \<br\> { \<br\> "data comments \<Base64-encoded-certificate\> ", \<br\> "dataType http=pfx", \<br\> "password unicode \<pfx-file-password\> " \<br\> }/
+Untuk menambahkan rahasia ke Key Vault, lihat \[Menambahkan kunci atau rahasia ke key vault\](https://docs.microsoft.com/azure/key-vault/key-vault-get-started/#add).
+Dalam hal ini, sertifikat Anda harus menggunakan pengodean Base64 dari Objek JSON berikut yang dikodekan dalam UTF-8: \<br\>\<br\> {\<br\>  "databerber...\<Base64-encoded-certificate\>",\<br\>  "dataType pengodeans",\<br\>  "kata sandiformat\<pfx-file-password\>"\<br\>}/
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

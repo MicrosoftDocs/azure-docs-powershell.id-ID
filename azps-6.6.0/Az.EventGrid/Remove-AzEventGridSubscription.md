@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridSubscription.md
-ms.openlocfilehash: 13d0e0d8b70137164c18f38df184277a6d6c1d41
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cc2316bc86308cc64d99bdd35c20b9c546be6469
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343010"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140106371"
 ---
 # Remove-AzEventGridSubscription
 
 ## SYNOPSIS
 Menghapus langganan acara Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/remove-azeventgridsubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -85,35 +88,35 @@ Menghapus langganan acara Kisi Acara Azure untuk topik Kisi Acara Azure, sumber 
 PS C:\> Remove-AzEventGridSubscription -ResourceGroup MyResourceGroup -TopicName Topic1 -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan acara \` EventSubscription1 ke topik Kisi \` Acara Azure \` Topic1 di grup sumber daya \` \` MyResourceGroupName \` .
+Menghapus langganan acara EventSubscription1 \`\` ke topik Kisi Acara \`Azure Topic1\` di grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 PS C:\> Remove-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan kejadian \` EventSubscription1 \` ke grup sumber daya \` MyResourceGroupName \` .
+Menghapus langganan kejadian EventSubscription1 \`ke\` grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 3
 ```powershell
 PS C:\> Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan acara \` EventSubscription1 \` ke langganan default Azure.
+Menghapus langganan acara EventSubscription1 \`\` ke langganan default Azure.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName" | Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan \` acaraSubscription1 \` ke ruang nama Hub Acara.
+Menghapus langganan acaraSubscription1 \`\` ke ruang nama Hub Acara.
 
 ### Contoh 5
 ```powershell
 PS C:\> Get-AzEventGridTopic -ResourceGroup MyResourceGroup -TopicName Topic1 | Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
-Menghapus langganan \` acaraSubskrip1 \` kejadian ke Topik Kisi Acara.
+Menghapus langganan acaraSubskrip1 \`\` kejadian ke Topik Kisi Acara.
 
 ## PARAMETERS
 
@@ -338,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

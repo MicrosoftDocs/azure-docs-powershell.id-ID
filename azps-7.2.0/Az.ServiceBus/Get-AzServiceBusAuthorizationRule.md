@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: 6ff45bf26ea7b8f03f3c345cccaf2b41405a5236
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 57db947d7531f2a1727dade06c3e50a44638618e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138299740"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916737"
 ---
 # Get-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan deskripsi aturan otorisasi yang ditentukan untuk Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) yang ditentukan. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 

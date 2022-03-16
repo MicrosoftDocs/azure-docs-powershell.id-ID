@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayDefaultSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayDefaultSite.md
-ms.openlocfilehash: d4a0145fc84cec234fa281e941ec2e4fe0bb5629
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: eaea5eacc5b9d61aa8391fdcab2618f6001f6e71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290843"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953357"
 ---
 # Set-AzVirtualNetworkGatewayDefaultSite
 
 ## SYNOPSIS
 Mengatur situs default untuk gateway jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewaydefaultsite) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ### -VirtualNetworkGateway
 Menentukan referensi objek ke gateway jaringan virtual tempat situs default akan ditetapkan.
 Anda bisa membuat referensi objek ke gateway jaringan virtual dengan menggunakan **Get-AzVirtualNetworkGateway** dan menentukan nama gateway.
-Variabel $VirtualGateway lalu bisa digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway* :
+Variabel yang $VirtualGateway lalu bisa digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway* :
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway

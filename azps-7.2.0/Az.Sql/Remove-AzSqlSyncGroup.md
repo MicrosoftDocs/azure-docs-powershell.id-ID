@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/remove-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlSyncGroup.md
-ms.openlocfilehash: cf6768daa9ca1f23c06be3e241e509797193356b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 813501e1680f56343212e60f308fc599536f8be7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317547"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140082989"
 ---
 # Remove-AzSqlSyncGroup
 
 ## SYNOPSIS
-Menghapus Grup Azure SQL Database Disinkronkan.
+Menghapus grup Azure SQL Database Sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqlsyncgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzSqlSyncGroup [-Name] <String> [-Force] [-PassThru] [-ServerName] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSqlSyncGroup** menghapus Azure SQL Database Sinkronisasi Otomatis.
+Cmdlet **Remove-AzSqlSyncGroup** menghapus Azure SQL Database Sinkronisasi Terbaru.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **Remove-AzSqlSyncGroup** menghapus Azure SQL Database Sinkronisasi Otoma
 PS C:\>Remove-AzSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "database01" -Name "syncGroup01"
 ```
 
-Perintah ini menghapus grup Azure SQL Database bernama syncGroup01.
+Perintah ini menghapus Azure SQL Database Sinkronisasi bernama syncGroup01.
 
 ## PARAMETERS
 

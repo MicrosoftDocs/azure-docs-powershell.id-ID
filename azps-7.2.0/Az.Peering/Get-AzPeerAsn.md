@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/get-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeerAsn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Get-AzPeerAsn.md
-ms.openlocfilehash: b62f77ad13f1609d337caaf9db3125848fb065a5
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cfdb6f9e1ceb4efa5d4795b6f355fdb1b8cc3423
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167869"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139952457"
 ---
 # Get-AzPeerAsn
 
 ## SYNOPSIS
 Mendapatkan objek PeerAsn dari ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/get-azpeerasn) untuk informasi terkini.
 
 ## SYNTAX
 

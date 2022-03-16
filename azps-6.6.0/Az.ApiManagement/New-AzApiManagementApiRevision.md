@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementApiRevision.md
-ms.openlocfilehash: f2113814026f2eb5d4e3ccacbeb428f07599edec
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ff397355f4de18926106b004591e150b80e517a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341762"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139945771"
 ---
 # New-AzApiManagementApiRevision
 
 ## SYNOPSIS
 Membuat Revisi baru API yang Ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementapirevision) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ PS C:\>New-AzApiManagementApiRevision -Context $context -ApiId "echo-api" -ApiRe
 New-AzApiManagementApiRevision -Context $context -ApiId "echo-api" -ApiRevision "5"
 ```
 
-Perintah ini akan membuat `2` Revisi `echo-api` API API.
+Perintah ini akan membuat Revisi `2` `echo-api` API API.
 
 ### Contoh 2: Membuat Revisi API dari Api yang Ada dan menyalin Semua operasi, tag, dan Kebijakan
 ```powershell
@@ -72,7 +75,7 @@ ResourceGroupName             : apimService1
 ServiceName                   : sdktestapim4163
 ```
 
-Perintah ini akan membuat `5` Revisi `echo-api` API API.
+Perintah ini akan membuat Revisi `5` `echo-api` API API.
 
 ## PARAMETERS
 
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

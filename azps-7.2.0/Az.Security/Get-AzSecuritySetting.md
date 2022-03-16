@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecuritySetting.md
-ms.openlocfilehash: d5352bdb8d2174e0e05b3510905be7f086415153
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ab7bb5da8f0ef877100cfa54572e762e1b7f8c36
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139916899"
 ---
 # Get-AzSecuritySetting
 
 ## SYNOPSIS
 Dapatkan pengaturan keamanan di Pusat Keamanan Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecuritysetting) untuk informasi terkini.
 
 ## SYNTAX
 

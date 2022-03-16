@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoBackupConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoBackupConfig.md
-ms.openlocfilehash: 891fb0ee90938050f84dec33ba076ef64f1c040f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bf5972bc7e2e8b66f8cf26bb593ca35acf0004bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383706"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139942459"
 ---
 # New-AzVMSqlServerAutoBackupConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi untuk SQL Server pencadangan otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautobackupconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 
 ### -StorageContext
 Menentukan akun penyimpanan yang akan digunakan untuk menyimpan cadangan.
-Untuk mendapatkan objek **AzureStorageContext,** gunakan cmdlet New-AzStorageContext cmdlet.
+Untuk mendapatkan objek **AzureStorageContext** , gunakan cmdlet New-AzStorageContext cmdlet.
 Defaultnya adalah akun penyimpanan yang terkait dengan SQL Server virtual.
 
 ```yaml
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

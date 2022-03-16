@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Set-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Set-AzAttestationPolicy.md
-ms.openlocfilehash: bc0adc24d971d39ab9f53108ace44b59fe473d5f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 48d27bcd5f651d5af741db439847fe31c7260f7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164075"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139964265"
 ---
 # Set-AzAttestationPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan dari penyewa di Azure Attestationn.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.attestation/set-azattestationpolicy) untuk informasi terkini.
 
 ## SYNTAX
 

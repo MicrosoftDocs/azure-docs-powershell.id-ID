@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
-ms.openlocfilehash: b993033cdc61e50509a3fe7340369eac7229f49f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d15829075ddbc4a3e0fb1c02c4e6f375a64e75a3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136379649"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140107073"
 ---
 # Get-AzWvdRegistrationInfo
 
 ## SYNOPSIS
-Dapatkan informasi Windows pendaftaran desktop virtual Anda.
+Dapatkan informasi Windows desktop virtual Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdregistrationinfo) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzWvdRegistrationInfo -HostPoolName <String> -ResourceGroupName <String> [-S
 ```
 
 ## DESCRIPTION
-Dapatkan informasi Windows pendaftaran desktop virtual Anda.
+Dapatkan informasi Windows desktop virtual Anda.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ ExpirationTime       RegistrationTokenOperation Token
 4/1/2020 10:19:33 PM None                       eyJhbGciOiJSUzI1NiIsImtpZCI6IkMyRjU1RUYxNzg0MEFCNzkzMDk2RUYzRjdEMkNBRDk0NThGNDhEOTQiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjU5NGJjZWUwLTk5MjQtNDg3ZC1iOW...    
 ```
 
-Perintah ini mendapatkan Windows Token Registrasi Desktop Virtual di Host Pool.
+Perintah ini mendapatkan Windows Token Registrasi Desktop Virtual dalam Host Pool.
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

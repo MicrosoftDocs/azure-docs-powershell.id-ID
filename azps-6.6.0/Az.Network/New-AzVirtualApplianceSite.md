@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSite.md
-ms.openlocfilehash: f1812aeed8da0165402c0fe379ba3bcb68de4af5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a0d175780030aa9ef990cb7a617cb95797097d05
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356009"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140070270"
 ---
 # New-AzVirtualApplianceSite
 
 ## SYNOPSIS
 Membuat situs yang tersambung ke Alat Virtual Jaringan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualappliancesite) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ New-AzVirtualApplianceSite -ResourceId <String> -AddressPrefix <String>
 ```
 
 ## DESCRIPTION
-Perintah New-AzVirtualApplianceSite membuat situs Peralatan Virtual yang tersambung ke sumber daya Alat Virtual Jaringan.
+Perintah New-AzVirtualApplianceSite membuat situs Peralatan Virtual yang tersambung ke sumber daya Peralatan Virtual Jaringan.
 
 ## EXAMPLES
 
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -O365Policy
-Kebijakan Office 365 terobosan.
+Kebijakan Office 365 terobosan baru.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSOffice365PolicyProperties
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

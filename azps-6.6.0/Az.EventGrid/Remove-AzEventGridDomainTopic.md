@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridDomainTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/Remove-AzEventGridDomainTopic.md
-ms.openlocfilehash: cf5d1099eeb3f231f92ca8eb679be11d3946f82b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4594fecf4d9a804d5edc6356420fe1903dfbc2ad
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347093"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140106425"
 ---
 # Remove-AzEventGridDomainTopic
 
 ## SYNOPSIS
 Menghapus Topik Domain Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/remove-azeventgriddomaintopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,14 +50,14 @@ Menghapus Topik Domain Kisi Acara Azure.
 PS C:\> Remove-AzEventGridDomainTopic -ResourceGroupName MyResourceGroupName -DomainName Domain1 -Name Topic1
 ```
 
-Menghapus Topik Domain Kisi Kejadian1 \` di \` bawah Domain \` Domain1 dalam grup sumber daya \` \` MyResourceGroupName \` .
+Menghapus Topik Domain Kisi Kejadian1 di \`\` bawah Domain \`Domain1 dalam grup\` sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/domains/Domain1/topics/Topic1" | Remove-AzEventGridDomainTopic
 ```
 
-Menghapus Topik Domain Kisi Kejadian1 \` di \` bawah Domain \` Domain1 dalam grup sumber daya \` \` MyResourceGroupName \` .
+Menghapus Topik Domain Kisi Kejadian1 di \`\` bawah Domain \`Domain1 dalam grup\` sumber daya \`MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
