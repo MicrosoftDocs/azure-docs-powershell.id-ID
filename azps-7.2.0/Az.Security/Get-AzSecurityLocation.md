@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzS
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityLocation.md
-ms.openlocfilehash: ff76242a2a6776b1d43aeab9c11bfbad94805871
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5d701db044ddd250a1185c24816e33ec3e5aa859
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138308619"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083547"
 ---
 # Get-AzSecurityLocation
 
 ## SYNOPSIS
 Mendapatkan lokasi tempat Pusat Keamanan Azure secara otomatis menyimpan data untuk langganan tertentu
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecuritylocation) untuk informasi terkini.
 
 ## SYNTAX
 

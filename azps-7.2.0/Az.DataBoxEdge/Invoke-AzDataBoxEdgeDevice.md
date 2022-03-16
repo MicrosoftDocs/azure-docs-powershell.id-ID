@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeDevice.md
-ms.openlocfilehash: e6613e879597805a21bf72e5c7e72032556a1faf
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5ad5c4ebab8e94661fb4dcd1db5316af9302a478
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138162535"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140059151"
 ---
 # Invoke-AzDataBoxEdgeDevice
 
 ## SYNOPSIS
 Menjalankan tindakan tertentu pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgedevice) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/enable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Enable-AzSecurityAdvancedThreatProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Enable-AzSecurityAdvancedThreatProtection.md
-ms.openlocfilehash: e500e29d0a00466ef0f45f66030f5574d99e591d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: cef77649d8f2724fd5a3b2878ff98b827d3c2c16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257340"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140083637"
 ---
 # Enable-AzSecurityAdvancedThreatProtection
 
 ## SYNOPSIS
 Mengaktifkan kebijakan perlindungan ancaman tingkat lanjut untuk akun storage / cosmosDB.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/enable-azsecurityadvancedthreatprotection) untuk informasi terkini.
 
 ## SYNTAX
 

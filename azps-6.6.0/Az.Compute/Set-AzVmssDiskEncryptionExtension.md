@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssDiskEncryptionExtension.md
-ms.openlocfilehash: c19e01d8a15a36c12e3fe278cd5889a260dff4cd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 402f25263c6cb37111d77b8a2a48495f406c2bad
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353534"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140109503"
 ---
 # Set-AzVmssDiskEncryptionExtension
 
 ## SYNOPSIS
 Mengaktifkan enkripsi disk pada kumpulan skala VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssdiskencryptionextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -285,7 +288,7 @@ Menentukan tipe volume mesin virtual untuk melakukan operasi enkripsi: OS, Data,
 
 Linux: **Parameter VolumeType** harus ada dan harus diatur ke Data. 
 
-Windows: **Parameter VolumeType,** jika ada, harus disetel ke Semua atau OS. Jika **parameter VolumeType** dihilangkan, parameter default menjadi "All".
+Windows: **Parameter VolumeType**, jika ada, harus disetel ke Semua atau OS. Jika **parameter VolumeType** dihilangkan, parameter default menjadi "All".
 
 
 ```yaml
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

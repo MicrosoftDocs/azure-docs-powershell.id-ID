@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualHub.md
-ms.openlocfilehash: b59e93eb03ea62d957a9ec578a59d6d4f9416d07
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 6f48151300cdee9fa9449b3d0819c18a21b9581c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304539"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139954293"
 ---
 # New-AzVirtualHub
 
 ## SYNOPSIS
 Membuat sumber daya Azure VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualhub) untuk informasi terkini.
 
 ## SYNTAX
 

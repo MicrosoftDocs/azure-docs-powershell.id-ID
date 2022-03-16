@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryCredential.md
-ms.openlocfilehash: 3e673207c761d6fe068bf0251960ab54fbf525b5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ef00871ddbdde445a9e5cc7408d7f61ebd7f4429
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373587"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140109251"
 ---
 # Get-AzContainerRegistryCredential
 
 ## SYNOPSIS
 Mendapatkan kredensial masuk untuk registri wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrycredential) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzContainerRegistryCredential -ResourceId <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryCredential mendapatkan kredensial masuk untuk registri wadah.
+Cmdlet Get-AzContainerRegistryCredential cmdlet mendapatkan kredensial masuk untuk registri wadah.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ MyRegistry +Y+==B==KdT=YV=ZgH=p/zQ/e1sNQq/d //JRPkgxx+r+z/ztU=R//E==vum=pRKL
 ```
 
 Perintah ini mendapatkan kredensial masuk untuk registri wadah yang ditentukan.
-Pengguna admin harus diaktifkan untuk registri wadah \` MyRegistry \` untuk mendapatkan kredensial masuk.
+Pengguna admin harus diaktifkan untuk registri wadah \`MyRegistry\` untuk mendapatkan kredensial masuk.
 
 ## PARAMETERS
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

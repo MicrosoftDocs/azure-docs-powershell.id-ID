@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceInitDefinitionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceInitDefinitionObject.md
-ms.openlocfilehash: 06883b7c346fb2c6a7ac305b3b9b9b9400373d9b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cdc6a69362d7fe5a4af57cc186d29aa432511575
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136375432"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140109359"
 ---
 # New-AzContainerInstanceInitDefinitionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk InitContainerDefinition
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceinitdefinitionobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,7 +146,7 @@ ENVIRONMENTVARIABLE <IEnvironmentVariable[]>: Variabel lingkungan untuk diatur d
   - `[SecureValue <String>]`: Nilai variabel lingkungan yang aman.
   - `[Value <String>]`: Nilai variabel lingkungan.
 
-VOLUMEMOUNT <IVolumeMount[]>: Volume terpasang yang tersedia pada wadah init.
+VOLUMEMOUNT <IVolumeMount[]>: Volume terpasang yang tersedia untuk wadah init.
   - `MountPath <String>`: Jalur di dalam wadah tempat volume harus terpasang. Tidak boleh berisi titik dua (:).
   - `Name <String>`: Nama volume yang naik.
   - `[ReadOnly <Boolean?>]`: Bendera menunjukkan apakah volume naik merupakan baca-saja.

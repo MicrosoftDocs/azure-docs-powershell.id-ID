@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistry.md
-ms.openlocfilehash: f69a2effeefe5805b3535eed4c6f3309f4679d6a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 84ac65277040ed0fb168732bc8910261c7652f7c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341369"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140109197"
 ---
 # Update-AzContainerRegistry
 
 ## SYNOPSIS
 Memperbarui registri wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistry) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -92,7 +95,7 @@ Registry Name        Sku        LoginServer                    CreationDate     
 MyRegistry           Basic      myregistry.azurecr.io          11/20/2017 10:05:... Succeeded  True       mystorageaccount
 ```
 
-Perintah ini mengatur registri kontainer tertentu untuk menggunakan akun penyimpanan \` mystorageaccount yang sudah ada \` dalam langganan yang sama.
+Perintah ini mengatur registri kontainer tertentu untuk menggunakan akun penyimpanan \`mystorageaccount yang sudah ada\` dalam langganan yang sama.
 
 ## PARAMETERS
 
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

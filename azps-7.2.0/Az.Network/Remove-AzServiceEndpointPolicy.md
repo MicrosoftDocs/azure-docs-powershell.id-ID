@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzServiceEndpointPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzServiceEndpointPolicy.md
-ms.openlocfilehash: e03d866bde497cbbfc2381b6a39b731b260ca3c2
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: a68aa15f1f02bf450f7cb6dad92659ea77ba0f74
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138292043"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139953969"
 ---
 # Remove-AzServiceEndpointPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan titik akhir layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azserviceendpointpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
