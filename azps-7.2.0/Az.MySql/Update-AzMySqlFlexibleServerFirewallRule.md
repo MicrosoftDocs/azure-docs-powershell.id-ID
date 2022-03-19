@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/update-azm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Update-AzMySqlFlexibleServerFirewallRule.md
-ms.openlocfilehash: 526f9dd30d05cb71c0d196329509418632a9d4aa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b86e77d8cb0bc88ba5ebf26dfc9fa5fc5f1151c2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138283244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921525"
 ---
 # Update-AzMySqlFlexibleServerFirewallRule
 
 ## SYNOPSIS
 Memperbarui aturan firewall yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/update-azmysqlflexibleserverfirewallrule) untuk informasi terkini.
 
 ## SYNTAX
 

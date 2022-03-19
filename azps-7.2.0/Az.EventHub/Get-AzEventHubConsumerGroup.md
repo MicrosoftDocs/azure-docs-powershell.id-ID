@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 3b34b0c67860e0841f2450f8f7acfa11542291ed
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 106267e647a0dc8957da3e33a923c5167a922825
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315947"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924081"
 ---
 # Get-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Mendapatkan detail tentang grup konsumen Hub Acara tertentu, atau mendapatkan daftar grup konsumen di Hub Acara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzEventHubConsumerGroup [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzEventHubConsumerGroup cmdlet mendapatkan detail grup konsumen Hub Acara yang ditentukan, atau daftar grup konsumen dalam Hub Acara tertentu.
+Cmdlet Get-AzEventHubConsumerGroup mendapatkan detail grup konsumen Hub Acara yang ditentukan, atau daftar grup konsumen dalam Hub Acara tertentu.
 Jika nama grup konsumen disediakan, rincian dari detail grup konsumen tunggal akan dikembalikan.
 Jika nama grup konsumen tidak disediakan, daftar grup konsumen di Hub Acara yang ditentukan akan dikembalikan.
 

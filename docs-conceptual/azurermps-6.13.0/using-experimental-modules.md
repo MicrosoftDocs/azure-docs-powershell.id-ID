@@ -1,13 +1,13 @@
 ---
 title: Menggunakan modul Azure PowerShell eksperimental
-description: Memahami ilmu filsafat dan penggunaan modul Azure PowerShell eksperimental.
+description: Memahami filosofi dan penggunaan modul Azure PowerShell eksperimental.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 10/05/2021
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 2b72f39d58f8f7349326b71a5646fd90fbd4b333
 ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "132429341"
@@ -16,19 +16,19 @@ ms.locfileid: "132429341"
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
-Dengan penekanan pada alat pengembang (khususnya CLIS) di Azure, tim Azure PowerShell sedang bereksperimen dengan banyak penyempurnaan pada pengalaman Azure PowerShell Anda.
+Dengan penekanan pada alat pengembang (terutama CLI) di Azure, tim Azure PowerShell bereksperimen dengan banyak peningkatan pada pengalaman Azure PowerShell.
 
 ## <a name="experimentation-methodology"></a>Metodologi eksperimen
 
-Untuk memfasilitasi eksperimen, kami membuat modul baru Azure PowerShell yang mengimplementasikan fungsionalitas Azure SDK yang sudah ada dalam cara baru yang lebih mudah digunakan. Dalam banyak kasus, cmdlet sama persis dengan cmdlet yang sudah ada. Namun, cmdlet eksperimental menyediakan notasi singkatan dan nilai default yang lebih cerdas yang memudahkan untuk membuat dan mengelola sumber daya Azure.
+Untuk memfasilitasi eksperimen, kami membuat modul Azure PowerShell baru yang menerapkan fungsionalitas Azure SDK yang ada dengan cara baru yang lebih mudah digunakan. Dalam kebanyakan kasus, cmdlet mencerminkan cmdlet yang ada dengan tepat. Namun, cmdlet eksperimental memberikan notasi singkat dan nilai default yang lebih cerdas yang membuatnya lebih mudah untuk membuat dan mengelola sumber daya Azure.
 
-Modul ini dapat diinstal berdampingan dengan modul Azure PowerShell yang sudah ada. Nama cmdlet telah disingkat untuk memberikan nama yang lebih singkat dan menghindari konflik nama dengan cmdlet yang sudah ada dan bukan eksperimental.
+Modul-modul ini dapat diinstal berdampingan dengan modul Azure PowerShell yang ada. Nama cmdlet telah dipersingkat untuk memberikan nama yang lebih pendek dan menghindari konflik nama dengan cmdlet non-eksperimental yang ada.
 
-Modul eksperimental menggunakan konvensi penamaan berikut: `AzureRM.*.Experiments` . Konvensi penamaan ini mirip dengan penamaan modul Pratinjau: `AzureRM.*.Preview` . Modul pratinjau berbeda dari modul eksperimental. Modul pratinjau menerapkan fungsi baru layanan Azure yang hanya tersedia sebagai penawaran Pratinjau. Modul pratinjau menggantikan modul Azure PowerShell yang sudah ada dan menggunakan cmdlet dan nama parameter yang sama.
+Modul eksperimental menggunakan konvensi penamaan berikut: `AzureRM.*.Experiments`. Konvensi penamaan ini mirip dengan penamaan modul Pratinjau: `AzureRM.*.Preview`. Modul pratinjau berbeda dari modul eksperimental. Modul pratinjau menerapkan fungsionalitas baru layanan Azure yang hanya tersedia sebagai penawaran Pratinjau. Modul pratinjau menggantikan modul Azure PowerShell yang ada dan menggunakan cmdlet dan nama parameter yang sama.
 
 ## <a name="how-to-install-an-experimental-module"></a>Cara menginstal modul eksperimental
 
-Modul eksperimental diterbitkan ke Galeri PowerShell sama seperti modul Azure PowerShell yang sudah ada. Untuk melihat daftar modul eksperimental, jalankan perintah berikut:
+Modul eksperimental diterbitkan ke Galeri PowerShell seperti modul Azure PowerShell yang ada. Untuk melihat daftar modul eksperimental, jalankan perintah berikut:
 
 ```powershell
 Find-Module -Name AzureRM.*.Experiments
@@ -41,7 +41,7 @@ Version Name                         Repository Description
 1.0.0   AzureRM.Websites.Experiments PSGallery  Create and deploy web applications using Azure App Services.
 ```
 
-Untuk menginstal modul eksperimental, gunakan perintah berikut dari sesi PowerShell yang ditingkatkan:
+Untuk menginstal modul eksperimental, gunakan perintah berikut dari sesi PowerShell yang ditinggikan:
 
 ```powershell
 Install-Module -Name AzureRM.Compute.Experiments
@@ -50,47 +50,47 @@ Install-Module -Name AzureRM.Websites.Experiments
 
 ### <a name="documentation-and-support"></a>Dokumentasi dan dukungan
 
-Dokumentasi disertakan dalam paket penginstalan dan diakses menggunakan `Get-Help` cmdlet. Tidak ada dokumentasi resmi yang diterbitkan untuk modul eksperimental.
+Dokumentasi disertakan dalam paket instal dan diakses menggunakan cmdlet `Get-Help`. Tidak ada dokumentasi resmi yang diterbitkan untuk modul eksperimental.
 
-Kami mendorong Anda untuk menguji modul ini. Umpan balik Anda memungkinkan kami meningkatkan kegunaan dan merespons kebutuhan Anda. Namun, untuk percobaan, dukungan untuk modul ini terbatas. Pertanyaan atau laporan masalah dapat dikirimkan dengan membuat [masalah](https://github.com/Azure/azure-powershell/issues) di GitHub penyimpanan.
+Kami mendorong Anda untuk menguji modul-modul ini. Umpan balik Anda memungkinkan kami meningkatkan kegunaan dan menanggapi kebutuhan Anda. Namun, karena eksperimental, dukungan untuk modul-modul ini terbatas. Pertanyaan atau laporan masalah dapat diajukan dengan membuat [masalah](https://github.com/Azure/azure-powershell/issues) di repositori GitHub.
 
-## <a name="experiments-and-areas-of-improvement"></a>Eksperimen dan area perbaikan
+## <a name="experiments-and-areas-of-improvement"></a>Eksperimen dan bidang perbaikan
 
-Penyempurnaan ini dipilih berdasarkan perbedaan kunci dalam bersaing dengan produk. Misalnya, Azure CLI 2.0 telah membuat poin dari perintah basing _pada skenario_ daripada area _permukaan API._
-Azure CLI 2.0 menggunakan sejumlah default cerdas yang memudahkan skenario "memulai" bagi pengguna akhir.
+Perbaikan ini dipilih berdasarkan pembeda utama dalam produk yang bersaing. Misalnya, Azure CLI 2.0 telah membuat titik mendasarkan perintah pada _skenario_ daripada _luas permukaan API_.
+Azure CLI 2.0 menggunakan sejumlah default cerdas yang membuat skenario "memulai" lebih mudah bagi pengguna akhir.
 
-### <a name="core-improvements"></a>Penyempurnaan inti
+### <a name="core-improvements"></a>Peningkatan inti
 
-Penyempurnaan inti dianggap sebagai "common sense", dan sedikit eksperimen diperlukan untuk bergerak maju dalam menerapkan pembaruan ini.
+Perbaikan inti dianggap sebagai "akal sehat", dan sedikit eksperimen diperlukan untuk bergerak maju dalam menerapkan pembaruan ini.
 
-- Cmdlet berbasis skenario - <em>*Semua</em>- cmdlet harus dirancang untuk skenario, bukan layanan Azure REST.
+- Cmdlet berbasis skenario - <em>*Semua</em>- cmdlet harus dirancang di sekitar skenario, bukan layanan Azure REST.
 
-- Nama yang Lebih Pendek - Berisi nama cmdlet (misalnya, `New-AzureRmVM`  =>  `New-AzVm` ) dan nama parameter (misalnya, `-ResourceGroupName`  =>  `-Rg` ). Gunakan alias untuk kompatibilitas dengan cmdlet "lama". Menyediakan set parameter _yang kompatibel_ mundur.
+- Nama Yang Lebih Pendek - Termasuk nama cmdlet (misalnya, `New-AzureRmVM` => `New-AzVm`) dan nama parameter (misalnya, `-ResourceGroupName` => `-Rg`). Gunakan alias untuk kompatibilitas dengan cmdlet "lama". Menyediakan set parameter _yang kompatibel dengan versi sebelumnya_.
 
-- Default Cerdas - Buat default cerdas untuk mengisi informasi "diperlukan". Misalnya:
+- Default Cerdas - Buat default cerdas untuk mengisi informasi "yang diperlukan". Contohnya:
   - Grup Sumber Daya
   - Lokasi
   - Sumber daya dependen
 
-### <a name="experimental-improvements"></a>Penyempurnaan eksperimental
+### <a name="experimental-improvements"></a>Perbaikan eksperimental
 
-Penyempurnaan eksperimental memberikan perubahan signifikan yang ingin divalidasi oleh tim melalui eksperimen.
+Perbaikan eksperimental menghadirkan perubahan signifikan yang ingin divalidasi oleh tim melalui eksperimen.
 
-- Tipe sederhana - Membuat skenario harus beralih dari tipe kompleks dan objek konfigurasi. Sederhanakan konfigurasi hingga satu atau dua parameter.
+- Tipe sederhana - Buat skenario harus menjauh dari jenis kompleks dan objek konfigurasi. Sederhanakan konfigurasi menjadi satu atau dua parameter.
 
-- "Smart Create" - Semua skenario pembuatan yang  menerapkan "Smart Create" tidak akan memiliki parameter yang diperlukan: semua informasi yang diperlukan akan dipilih oleh Azure PowerShell secara pendapat.
+- "Smart Create" - Semua membuat skenario yang menerapkan "Smart Create" _tidak_ akan memiliki parameter yang diperlukan: semua informasi yang diperlukan akan dipilih oleh Azure PowerShell dengan cara yang berpendirian.
 
-- Parameter Abu-abu - Dalam banyak kasus, beberapa parameter bisa "abu-abu" atau semi-opsional. Jika parameter tidak ditentukan, pengguna akan ditanya apakah mereka ingin parameter dibuat untuk mereka. Parameter abu-abu juga dapat disimpulkan berdasarkan konteks dengan persetujuan pengguna.
-  Misalnya, mungkin akan masuk akal membuat parameter abu-abu menyarankan nilai yang terakhir digunakan.
+- Parameter Abu-abu - Dalam banyak kasus, beberapa parameter bisa "abu-abu" atau semi-opsional. Jika parameter tidak ditentukan, pengguna akan ditanya apakah mereka menginginkan parameter yang dihasilkan untuk mereka. Juga masuk akal bagi parameter abu-abu untuk menyimpulkan nilai berdasarkan konteks dengan persetujuan pengguna.
+  Misalnya, mungkin masuk akal untuk memiliki parameter abu-abu yang menyarankan nilai yang paling baru digunakan.
 
-- `-Auto`Sakelar - Sakelar akan menyediakan cara "memilih" bagi pengguna untuk default semua hal sekaligus mempertahankan integritas parameter yang diperlukan `-Auto` dalam jalur garis utama. 
+- `-Auto` Pengalih - Pengalih `-Auto` akan memberikan cara "ikut serta" bagi pengguna untuk _default semua hal_ sambil menjaga integritas parameter yang diperlukan di jalur utama.
 
-### <a name="feature-specific-switches"></a>Sakelar khusus fitur
+### <a name="feature-specific-switches"></a>Pengalih khusus fitur
 
-Misalnya, skenario "Buat aplikasi web" mungkin memiliki atau beralih yang akan menambahkan jarak jauh "azure" secara otomatis ke repositori `-Git` `-AddRemote` git yang ada.
+Misalnya, skenario "Buat aplikasi web" mungkin memiliki pengalih `-Git` atau `-AddRemote` yang secara otomatis akan menambahkan remote "azure" ke repositori git yang ada.
 
-- Settable Defaults - Pengguna harus dapat mengatur default untuk parameter umum seperti `-ResourceGroupName` dan `-Location` .
+- Default yang Dapat Diatur - Pengguna harus dapat mengatur default untuk parameter umum seperti `-ResourceGroupName` dan `-Location`.
 
-- Default Ukuran - "ukuran" sumber daya dapat membingungkan bagi pengguna karena banyak Penyedia Sumber Daya menggunakan nama yang berbeda (misalnya, "Standar \_ DS1 \_ v2" atau "S1"). Namun, sebagian besar pengguna lebih peduli dengan biaya. Jadi masuk akal menentukan ukuran "universal" berdasarkan jadwal harga. Pengguna dapat memilih ukuran tertentu atau Azure PowerShell opsi _terbaik_ berdasarkan sumber daya anggaran.
+- Default Ukuran - "Ukuran" sumber daya dapat membingungkan pengguna karena banyak Penyedia Sumber Daya menggunakan nama yang berbeda (misalnya, "Standard\_DS1\_v2" atau "S1"). Namun, sebagian besar pengguna lebih peduli tentang biaya. Jadi, masuk akal untuk menentukan ukuran "universal" berdasarkan jadwal harga. Pengguna dapat memilih ukuran tertentu atau membiarkan Azure PowerShell memilih _opsi terbaik_ berdasarkan sumber daya anggaran.
 
-- Format Output - Azure PowerShell saat `PSObject` ini mengembalikan nilai dan tidak ada output konsol. Azure PowerShell mungkin perlu menampilkan beberapa informasi kepada pengguna tentang "default cerdas" yang digunakan.
+- Format Output - Azure PowerShell saat ini mengembalikan `PSObject`dan ada sedikit output konsol. Azure PowerShell mungkin perlu menampilkan beberapa informasi kepada pengguna tentang "default cerdas" yang digunakan.

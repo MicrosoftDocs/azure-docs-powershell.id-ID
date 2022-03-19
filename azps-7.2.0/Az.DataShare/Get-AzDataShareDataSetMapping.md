@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSetMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSetMapping.md
-ms.openlocfilehash: c36ec30ec181a6f7e751631781db7c11afda2c5e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: fce8ebe28c9846cc050108dd8e9b49357c6ce3f3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138255756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925161"
 ---
 # Get-AzDataShareDataSetMapping
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pemetaan set data dalam langganan bersama
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/get-azdatasharedatasetmapping) untuk informasi terkini.
 
 ## SYNTAX
 

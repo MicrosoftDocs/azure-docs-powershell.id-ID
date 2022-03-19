@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdApplication.md
-ms.openlocfilehash: 6899d120491d04f08300ef8800e5f90c3eba065c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c109119fbd3bcb481fd17eaf10121959bef24f09
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138170047"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924747"
 ---
 # Update-AzWvdApplication
 
 ## SYNOPSIS
 Memperbarui aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvdapplication) untuk informasi terkini.
 
 ## SYNTAX
 

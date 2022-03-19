@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareInvitation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareInvitation.md
-ms.openlocfilehash: 73452c1a0abf35e4f698e56505a457f90a920458
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9111457516371d5d6d55a21901bf98fb7101c6e2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337028"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139977423"
 ---
 # New-AzDataShareInvitation
 
 ## SYNOPSIS
 Membuat undangan untuk berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/new-azdatashareinvitation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Name             : AdsInvitation
 Type             : Microsoft.DataShare/Invitations
 ```
 
-Perintah ini membuat undangan AdsInvitation untuk berbagi AdsShare dan mengirimnya ke email adstest@microsoft.com target.
+Perintah ini membuat undangan AdsInvitation untuk berbagi AdsShare dan mengirimnya ke email adstest@microsoft.comtarget.
 
 ## PARAMETERS
 
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
