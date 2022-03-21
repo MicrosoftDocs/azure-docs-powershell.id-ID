@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hanaonazure/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HanaOnAzure/help/Get-AzSapMonitor.md
-ms.openlocfilehash: a9c8808874059d80f6b195ed7ef8980918257fa4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 70f90d80e513186153b56b680df8dcad40702d0c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138311452"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923163"
 ---
 # Get-AzSapMonitor
 
 ## SYNOPSIS
 Mendapatkan properti monitor SAP untuk langganan, grup sumber daya, dan nama sumber daya yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hanaonazure/get-azsapmonitor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+ID Langganan yang secara unik mengidentifikasi Microsoft Azure langganan.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

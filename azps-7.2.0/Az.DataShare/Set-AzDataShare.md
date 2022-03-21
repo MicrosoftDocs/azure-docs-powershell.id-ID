@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Set-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Set-AzDataShare.md
-ms.openlocfilehash: bf02c193c4478537e529c15326ad9bab7d990257
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 782ff0747557d5be43404b4776065fcbd327d4b2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138166605"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925143"
 ---
 # Set-AzDataShare
 
 ## SYNOPSIS
 Memperbarui berbagi data yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/set-azdatashare) untuk informasi terkini.
 
 ## SYNTAX
 

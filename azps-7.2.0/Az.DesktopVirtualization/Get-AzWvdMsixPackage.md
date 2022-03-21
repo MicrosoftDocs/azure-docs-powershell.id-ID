@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdMsixPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdMsixPackage.md
-ms.openlocfilehash: 273f12b6e17dc7fcc7d540325ce44f7addc862fb
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 57cbdb13338b3ece8b2fca0c82ae1dbf8b98a8a3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138278411"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924801"
 ---
 # Get-AzWvdMsixPackage
 
 ## SYNOPSIS
 Dapatkan msixpackage.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdmsixpackage) untuk informasi terkini.
 
 ## SYNTAX
 

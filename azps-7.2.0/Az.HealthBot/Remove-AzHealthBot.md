@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthbot/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Remove-AzHealthBot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthBot/help/Remove-AzHealthBot.md
-ms.openlocfilehash: 0f0f1b948c7d423730ed76f7b4994054ce8b5e1f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 33e58618d61c14b0a5955a6ddb330f895e7c1138
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139923073"
 ---
 # Remove-AzHealthBot
 
 ## SYNOPSIS
 Menghapus HealthBot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.healthbot/remove-azhealthbot) untuk informasi terkini.
 
 ## SYNTAX
 

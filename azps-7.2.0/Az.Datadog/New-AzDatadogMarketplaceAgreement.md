@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMarketplaceAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogMarketplaceAgreement.md
-ms.openlocfilehash: 70740c106c6cc6ac1a49e2276d1db90e6fd856c7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 2928780cdfb432f67ce5fd5d9902556784858ae1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138288971"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924999"
 ---
 # New-AzDatadogMarketplaceAgreement
 
 ## SYNOPSIS
 Buat perjanjian marketplace Datadog dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datadog/new-azdatadogmarketplaceagreement) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseTextLink
-Link ke HTML dengan Microsoft dan Publisher html.
+Link ke HTML dengan Microsoft dan Publisher masih berlaku.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-Publisher string pengidentifikasi.
+Publisher pengidentifikasi.
 
 ```yaml
 Type: System.String
