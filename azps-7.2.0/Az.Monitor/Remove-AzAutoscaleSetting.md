@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzAutoscaleSetting.md
-ms.openlocfilehash: 13db5fe54fecb1de1c35eb824883553e0a9627e8
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ddb26f5a53ecf14dd542cc725a5be0feec960b36
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138274988"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921777"
 ---
 # Remove-AzAutoscaleSetting
 
 ## SYNOPSIS
 Menghapus pengaturan Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azautoscalesetting) untuk informasi terkini.
 
 ## SYNTAX
 

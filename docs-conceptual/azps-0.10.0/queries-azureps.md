@@ -1,6 +1,6 @@
 ---
-title: Output kueri cmdlet Azure PowerShell kueri
-description: Cara membuat kueri untuk sumber daya di Azure dan memformat hasilnya.
+title: Mengkueri output cmdlet Azure PowerShell
+description: Cara mengkueri sumber daya di Azure dan memformat hasilnya.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 01/10/2019
@@ -8,20 +8,20 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: 71de99fec7de36cf8cc0fe3e8840fb55cedc5db7
 ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "132421099"
 ---
-# <a name="query-output-of-azure-powershell"></a>Output kueri Azure PowerShell 
+# <a name="query-output-of-azure-powershell"></a>Mengkueri output Azure PowerShell 
 
-Hasil dari setiap Azure PowerShell cmdlet merupakan Azure PowerShell objek. Bahkan cmdlet yang tidak operasinya tidak secara eksplisit mungkin mengembalikan nilai yang dapat diperiksa, untuk memberikan informasi tentang `Get-` sumber daya yang dibuat atau diubah. Sementara sebagian besar cmdlet mengembalikan sebuah objek, beberapa mengembalikan array yang harus iterated melaluinya.
+Hasil dari setiap cmdlet Azure PowerShell adalah objek Azure PowerShell. Bahkan cmdlet yang secara eksplisit bukan operasi `Get-` dapat mengembalikan nilai yang dapat diperiksa, untuk memberikan informasi tentang sumber daya yang dibuat atau dimodifikasi. Sementara sebagian besar cmdlet mengembalikan objek tunggal, beberapa cmdlet mengembalikan array yang harus diiterasi.
 
-Dalam hampir semua kasus, output kueri dari Azure PowerShell cmdlet [Select-Object,](/powershell/module/Microsoft.PowerShell.Utility/Select-Object) sering kali disingkat `select` . Output bisa difilter dengan [Where-Object,](/powershell/module/Microsoft.PowerShell.Core/Where-Object)atau aliasnya `where` .
+Dalam hampir semua kasus, Anda mengkueri output dari Azure PowerShell dengan cmdlet [Select-Object](/powershell/module/Microsoft.PowerShell.Utility/Select-Object), sering disingkat menjadi `select`. Output dapat difilter dengan [Where-Object](/powershell/module/Microsoft.PowerShell.Core/Where-Object), atau aliasnya `where`.
 
-## <a name="select-simple-properties"></a>Pilih properti sederhana
+## <a name="select-simple-properties"></a>Memilih properti sederhana
 
-Dalam format tabel default, cmdlet Azure PowerShell tidak menampilkan semua properti yang tersedia. Anda dapat memperoleh properti penuh menggunakan cmdlet [Format-List,](/powershell/module/microsoft.powershell.utility/format-list) atau dengan pemipaan output `Select-Object *` ke:
+Dalam format tabel default, cmdlet Azure PowerShell tidak menampilkan semua properti yang tersedia. Anda dapat mendapatkan properti lengkap dengan menggunakan cmdlet [Format-List](/powershell/module/microsoft.powershell.utility/format-list), atau dengan mengeluarkan output ke `Select-Object *`:
 
 ```azurepowershell-interactive
 Get-AzVM -Name TestVM -ResourceGroupName TestGroup | Select-Object *
@@ -56,7 +56,7 @@ RequestId                : 711d8ed1-b888-4c52-8ab9-66f07b87eb6b
 StatusCode               : OK
 ```
 
-Setelah mengetahui nama properti yang diminati, Anda dapat menggunakan nama properti tersebut `Select-Object` untuk langsung mendapatkannya:
+Secara Anda mengetahui nama properti yang Anda minati, Anda dapat menggunakan nama properti tersebut dengan `Select-Object` untuk mendapatkannya secara langsung:
 
 ```azurepowershell-interactive
 Get-AzVM -Name TestVM -ResourceGroupName TestGroup | Select-Object Name,VmId,ProvisioningState
@@ -68,11 +68,11 @@ Name   VmId                                 ProvisioningState
 TestVM 711d8ed1-b888-4c52-8ab9-66f07b87eb6b Succeeded
 ```
 
-Output dari menggunakan `Select-Object` selalu diformat untuk menampilkan informasi yang diminta. Untuk mempelajari tentang cara menggunakan pemformatan sebagai bagian dari hasil cmdlet kueri, lihat [Memformat Azure PowerShell output cmdlet](formatting-output.md).
+Output dari penggunaan `Select-Object` selalu diformat untuk menampilkan informasi yang diminta. Untuk mempelajari tentang menggunakan pemformatan sebagai bagian dari mengkueri hasil cmdlet, lihat [Memformat output cmdlet Azure PowerShell](formatting-output.md).
 
-## <a name="select-nested-properties"></a>Pilih properti bertum tersedia
+## <a name="select-nested-properties"></a>Memilih properti berlapis
 
-Beberapa properti dalam Azure PowerShell cmdlet menggunakan objek bertumpuk, `StorageProfile` seperti properti `Get-AzVM` output. Untuk mendapatkan nilai dari properti bertumbat, sediakan nama tampilan dan jalur lengkap ke nilai yang ingin Anda periksa sebagai bagian dari argumen kamus untuk `Select-Object` :
+Beberapa properti dalam output cmdlet Azure PowerShell menggunakan objek berlapis, seperti properti `StorageProfile` dari output `Get-AzVM`. Untuk mendapatkan nilai dari properti berlapis, berikan nama tampilan dan jalur lengkap ke nilai yang ingin Anda periksa sebagai bagian dari argumen kamus untuk `Select-Object`:
 
 ```azurepowershell-interactive
 Get-AzVM -ResourceGroupName TestGroup | `
@@ -87,11 +87,11 @@ TestVM2   Linux
 WinVM   Windows
 ```
 
-Setiap argumen kamus memilih satu properti dari objek. Properti yang akan diekstrak harus merupakan bagian dari ekspresi.
+Setiap argumen kamus memilih satu properti dari objek. Properti yang akan diekstraksi harus menjadi bagian dari ekspresi.
 
 ## <a name="filter-results"></a>Memfilter hasil 
 
-Cmdlet `Where-Object` memungkinkan Anda memfilter hasil berdasarkan nilai properti apa pun, termasuk properti bertumpuk. Contoh berikutnya memperlihatkan cara penggunaan `Where-Object` untuk menemukan VM Linux dalam grup sumber daya.
+Cmdlet `Where-Object` memungkinkan Anda memfilter hasil berdasarkan nilai properti apa pun, termasuk properti berlapis. Contoh berikutnya menunjukkan cara menggunakan `Where-Object` untuk menemukan VM Linux dalam grup sumber daya.
 
 ```azurepowershell-interactive
 Get-AzVM -ResourceGroupName TestGroup | `
@@ -105,7 +105,7 @@ TestGroup          TestVM  westus2 Standard_D2s_v3  Linux  testvm299         Suc
 TestGroup         TestVM2  westus2 Standard_D2s_v3  Linux testvm2669         Succeeded
 ```
 
-Anda bisa pipetkan hasil `Select-Object` dari dan satu sama `Where-Object` lain. Untuk tujuan kinerja, sebaiknya selalu dilakukan operasi `Where-Object` `Select-Object` sebelum:
+Anda dapat mengeluarkan hasil `Select-Object` dan `Where-Object` ke satu sama lain. Untuk tujuan performa, selalu disarankan untuk menempatkan operasi `Where-Object` sebelum `Select-Object`:
 
 ```azurepowershell-interactive
 Get-AzVM -ResourceGroupName TestGroup | `

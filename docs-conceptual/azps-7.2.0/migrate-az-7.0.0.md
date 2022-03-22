@@ -1,5 +1,5 @@
 ---
-description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 7.0.0.
+description: Panduan migrasi ini berisi daftar perubahan pemecahan yang dibuat untuk Azure PowerShell dalam rilis Az versi 7.0.0.
 ms.custom: devx-track-azurepowershell
 ms.date: 02/08/2022
 ms.devlang: powershell
@@ -8,7 +8,7 @@ ms.topic: conceptual
 title: Panduan migrasi untuk Az 7.0.0
 ms.openlocfilehash: cc8eed1c20ae81942f5e35fd15af4b360a34e521
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855639"
@@ -17,9 +17,9 @@ ms.locfileid: "138855639"
 
 ## <a name="azaccounts"></a>Az.Accounts
 
-### <a name="context-and-account-cmdlets"></a>Cmdlet konteks dan akun
+### <a name="context-and-account-cmdlets"></a>cmdlet konteks dan akun
 
-Output dari cmdlet berikut telah diubah:
+Output cmdlet berikut telah diubah:
 - Get-AzContext
 - Remove-AzContext
 - Rename-AzContext
@@ -29,7 +29,7 @@ Output dari cmdlet berikut telah diubah:
 - Import-AzContext
 - Save-AzContext
 
-Dihapus `ServicePrincipalSecret` dan `CertificatePassword` di `PSAzureRmAccount`
+Menghapus `ServicePrincipalSecret` dan `CertificatePassword` dalam `PSAzureRmAccount`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -115,7 +115,7 @@ Kubernetes       1.22.2              True
 ## <a name="azcontainerinstance"></a>Az.ContainerInstance
 
 ### `New-AzContainerGroup`
-Parameter dihapus NetworkProfileId, menambahkan SubnetId sebagai alternatifnya
+Menghapus NetworkProfileId parameter, menambahkan SubnetId sebagai alternatifnya
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -136,7 +136,7 @@ Name : subnet
 
 
 ### `Invoke-AzContainerInstanceCommand`
-Hasil eksekusi perintah yang ditampilkan sebagai output cmdlet dengan menghubungkan websocket di backend
+Menampilkan hasil eksekusi perintah sebagai output cmdlet dengan menyambungkan websocket di ujung belakang
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -160,7 +160,7 @@ hello
 ## <a name="azfunctions"></a>Az.Functions
 
 ### `Update-AzFunctionApp, Update-AzFunctionAppPlan`
-`Update-AzFunctionApp` akan meminta konfirmasi. Perilaku ini dapat dilewati dengan `-Force`menentukan .
+`Update-AzFunctionApp` akan meminta konfirmasi. Perilaku ini dapat dilewati dengan menentukan `-Force`.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -173,14 +173,14 @@ Update-AzFunctionApp -Name MyUniqueFunctionAppName -ResourceGroupName MyResource
 
 
 ### `New-AzFunctionApp`
-Jika `FunctionsVersion` parameter tidak ditentukan saat `New-AzFunctionApp` menjalankan cmdlet, maka versi Fungsi default akan diatur ke `4`.
+Jika parameter `FunctionsVersion` tidak ditentukan ketika menjalankan cmdlet `New-AzFunctionApp`, versi Fungsi default akan diatur ke `4`.
 
 ```
 There is no change to the usage.
 ```
 
 ### `Remove-AzFunctionApp`
-Jika ini adalah aplikasi terakhir dalam paket layanan aplikasi, maka paket tidak akan dihapus. Sebelum rilis ini, paket aplikasi juga akan dihapus.
+Jika ini adalah aplikasi terakhir dalam paket layanan aplikasi, paket tidak akan dihapus. Sebelum rilis ini, paket aplikasi juga akan dihapus.
 
 ```
 There is no change to the usage.
@@ -189,7 +189,7 @@ There is no change to the usage.
 ## <a name="azhdinsight"></a>Az.HDInsight
 
 ### `New-AzHDInsightCluster`
-Mengubah jenis parameter "OSType" dari `Microsoft.Azure.Management.HDInsight.Models.OSType` ke `System.string`
+Mengubah jenis parameter "OSType" dari `Microsoft.Azure.Management.HDInsight.Models.OSType` menjadi `System.string`
 
 ```
 There is no change to the usage.
@@ -197,7 +197,7 @@ There is no change to the usage.
 
 
 ### `New-AzHDInsightCluster, New-AzHDInsightClusterConfig`
-Mengubah jenis parameter "ClusterTier" dari `Microsoft.Azure.Management.HDInsight.Models.ClusterTier` ke `System.string`
+Mengubah jenis parameter "ClusterTier" dari `Microsoft.Azure.Management.HDInsight.Models.ClusterTier` menjadi `System.string`
 
 ```
 There is no change to the usage.
@@ -223,7 +223,7 @@ All properties remain the same, so there is no change to the usage.
 
 
 ### `Get-AzHDInsightProperties`
-Jenis generik untuk output 'properti VmSizes' telah diubah dari `System.Collections.Generic.IDictionary2[System.String,Microsoft.Azure.Commands.HDInsight.Models.Management.AzureHDInsightVmSizesCapability]` ke `System.Collections.Generic.IList1[System.String]`.
+Jenis generik untuk 'property VmSizes' output telah berubah dari `System.Collections.Generic.IDictionary2[System.String,Microsoft.Azure.Commands.HDInsight.Models.Management.AzureHDInsightVmSizesCapability]` menjadi `System.Collections.Generic.IList1[System.String]`.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -240,7 +240,7 @@ PS C:\> $availableVmSizes = $result.VmSizes
 ## <a name="azkeyvault"></a>Az.KeyVault
 
 ### `New-AzKeyVaultRoleDefinition, Get-AzKeyVaultRoleDefinition`
-Properti berikut dalam `PSKeyVaultPermission` model diganti namanya:
+Properti dalam model `PSKeyVaultPermission` berikut diganti namanya:
 - `AllowedActions` -> `Actions`
 - `DeniedActions` -> `NotActions`
 - `AllowedDataActions` -> `DataActions`
@@ -283,7 +283,7 @@ Microsoft.KeyVault/managedHsm/keys/backup/action
 ## <a name="azmanagedservices"></a>Az.ManagedServices
 
 ### `New-AzManagedServicesDefinition`
-Parameter telah `-DisplayName` dihapus.
+Parameter `-DisplayName` telah dihapus.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -300,7 +300,7 @@ PS C:\> New-AzManagedServicesDefinition -Name xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 
 ### `Get-AzLog`
 
-Jenis properti 'EventName', 'Category', 'ResourceProviderName', 'OperationName', 'Status', 'SubStatus telah berubah dari `Microsoft.Azure.Management.Monitor.Models.LocalizableString` ke `System.String`
+Jenis properti 'EventName', 'Category', 'ResourceProviderName', 'OperationName', 'Status', 'SubStatus telah berubah dari `Microsoft.Azure.Management.Monitor.Models.LocalizableString` menjadi `System.String`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -345,7 +345,7 @@ There is no change to the usage.
 ## <a name="azoperationalinsights"></a>Az.OperationalInsights
 
 ### `Get-AzOperationalInsightsCluster`
-Membuat "daftar" set parameter default.
+Membuat "daftar" yang diatur parameter default.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -358,7 +358,7 @@ Default parameter set is now "list", when providing resource group name - return
 
 
 ### `Update-AzOperationalInsightsCluster`
-Membuat "UpdateByNameParameterSet" set parameter default.
+Membuat "UpdateByNameParameterSet" diatur parameter default.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -373,7 +373,7 @@ Default parameter set is now "UpdateByNameParameterSet".
 ## <a name="azrecoveryservices"></a>Az.RecoveryServices
 
 ### `Get-AzRecoveryServicesBackupContainer`
-Mengubah BackupManagementType dari MARS ke MAB. Fungsionalitas tetap sama, ini untuk membawa konsistensi di seluruh cmdlet.
+Mengubah BackupManagementType dari MARS menjadi MAB. Fungsionalitas tetap sama, hal ini untuk membawa konsistensi di seluruh cmdlet.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -386,7 +386,7 @@ $cont = Get-AzRecoveryServicesBackupContainer -ContainerType Windows -BackupMana
 
 
 ### `Get-AzRecoveryServicesBackupItem`
-Mengubah BackupManagementType dari MARS ke MAB. Fungsionalitas tetap sama, ini untuk membawa konsistensi di seluruh cmdlet
+Mengubah BackupManagementType dari MARS menjadi MAB. Fungsionalitas tetap sama, hal ini untuk membawa konsistensi di seluruh cmdlet
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -399,7 +399,7 @@ Get-AzRecoveryServicesBackupItem -BackupManagementType MAB -VaultId $vault.ID -W
 
 
 ### `Get-AzRecoveryServicesBackupJob`
-Mengubah BackupManagementType dari MARS ke MAB. Fungsionalitas tetap sama, ini untuk membawa konsistensi di seluruh cmdlet
+Mengubah BackupManagementType dari MARS menjadi MAB. Fungsionalitas tetap sama, hal ini untuk membawa konsistensi di seluruh cmdlet
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -414,10 +414,10 @@ Get-AzRecoveryServicesBackupJob -BackupManagementType MAB -VaultId $vault.ID
 ## <a name="azresources"></a>Az.Resources
 
 ### `AzAD cmdlets`
-Silakan lihat [panduan migrasi](/powershell/azure/azps-msgraph-migration-changes) cmdlet Active Directory.
+Harap lihat [panduan migrasi](/powershell/azure/azps-msgraph-migration-changes) cmdlet Active Directory.
 
 ### `PolicyAssignment cmdlets`
-Jenis properti 'Identitas' dari jenis 'Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment' telah berubah dari 'System.Management.Automation.PSObject' menjadi 'Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyIdentity'.
+Jenis properti 'Identity' dari jenis 'Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyAssignment' telah berubah dari 'System.Management.Automation.PSObject' menjadi 'Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.Policy.PsPolicyIdentity'.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -434,7 +434,7 @@ PS C:\> Write-Host $v.IdentityType, $v.PrincipalId, $v.TenantId, $v.UserAssigned
 ## <a name="azstorage"></a>Az.Storage
 
 ### `Get-AzRmStorageShare`
-Parameter "Nama" telah dihapus dari kumpulan parameter "ShareResourceId", karena nama dapat disimpulkan dari ID sumber daya.
+Parameter "Name" telah dihapus dari set parameter "ShareResourceId", karena nama dapat disimpulkan dari ID sumber daya.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell

@@ -1,5 +1,5 @@
 ---
-description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 3.0.
+description: Panduan migrasi ini berisi daftar perubahan yang melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 3.0.
 ms.custom: devx-track-azurepowershell
 ms.date: 02/08/2022
 ms.devlang: powershell
@@ -8,21 +8,21 @@ ms.topic: conceptual
 title: Panduan migrasi untuk Az 3.0.0
 ms.openlocfilehash: 9bae55c0fb0d438bd03e58b0d8cd0e0e10816d0e
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855873"
 ---
 # <a name="migration-guide-for-az-300"></a>Panduan Migrasi untuk Az 3.0.0
 
-Dokumen ini menjelaskan perubahan antara az versi 2.0.0 dan 3.0.0
+Dokumen ini menjelaskan perubahan antara Az versi 2.0.0 dan 3.0.0
 
 <!-- TOC -->
 
 - [Panduan Migrasi untuk Az 3.0.0](#migration-guide-for-az-300)
   - [Batch](#batch)
     - [`Get-AzBatchNodeAgentSku`](#get-azbatchnodeagentsku)
-    - [Ketidakcocokan dengan versi sebelumnya dari `Az.Resources`](#previous-version-incompatibility-with-azresources-module)
+    - [Ketidakcocokan dengan versi `Az.Resources` sebelumnya](#previous-version-incompatibility-with-azresources-module)
   - [Compute](#compute)
     - [`New-AzDiskConfig`](#new-azdiskconfig)
   - [HDInsight](#hdinsight)
@@ -43,12 +43,12 @@ Dokumen ini menjelaskan perubahan antara az versi 2.0.0 dan 3.0.0
     - [`Get-AzIotHubEventHubConsumerGroup`](#get-aziothubeventhubconsumergroup)
     - [`Remove-AzIotHubEventHubConsumerGroup`](#remove-aziothubeventhubconsumergroup)
     - [`Set-AzIotHub`](#set-aziothub)
-  - [Layanan Pemulihan](#recoveryservices)
+  - [RecoveryServices](#recoveryservices)
     - [`Edit-AzRecoveryServicesAsrRecoveryPlan`](#edit-azrecoveryservicesasrrecoveryplan)
     - [`Get-AzRecoveryServicesAsrRecoveryPlan`](#get-azrecoveryservicesasrrecoveryplan)
     - [`New-AzRecoveryServicesAsrReplicationProtectedItem`](#new-azrecoveryservicesasrreplicationprotecteditem)
   - [Sumber](#resources)
-    - [Ketidakcocokan dengan versi sebelumnya dari `Az.Batch`](#previous-version-incompatibility-with-azbatch-module)
+    - [Ketidakcocokan dengan versi `Az.Batch` sebelumnya](#previous-version-incompatibility-with-azbatch-module)
   - [ServiceFabric](#servicefabric)
     - [`Add-ServiceFabricApplicationCertificate`](#add-servicefabricapplicationcertificate)
   - [Sql](#sql)
@@ -91,9 +91,9 @@ Dokumen ini menjelaskan perubahan antara az versi 2.0.0 dan 3.0.0
 ## <a name="batch"></a>Batch
 
 ### `Get-AzBatchNodeAgentSku`
-- Dihapus `Get-AzBatchNodeAgentSku` dan diganti dengan  `Get-AzBatchSupportedImage`.
-- `Get-AzBatchSupportedImage` mengembalikan data yang sama seperti `Get-AzBatchNodeAgentSku` tetapi dalam format yang lebih ramah.
-- Gambar baru yang tidak diverifikasi juga sekarang dikembalikan. Informasi tambahan tentang `Capabilities` dan `BatchSupportEndOfLife` untuk setiap gambar juga disertakan.
+- Menghapus `Get-AzBatchNodeAgentSku` dan menggantinya dengan `Get-AzBatchSupportedImage`.
+- `Get-AzBatchSupportedImage` mengembalikan data yang sama dengan `Get-AzBatchNodeAgentSku` tetapi dalam format yang lebih ramah.
+- Citra baru yang tidak diverifikasi kini juga dikembalikan. Informasi tambahan tentang `Capabilities` dan `BatchSupportEndOfLife` untuk setiap citra juga disertakan.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -106,13 +106,13 @@ Get-AzBatchNodeAgentSku -BatchContext $Context
 $Context = Get-AzBatchAccountKey -AccountName "ContosoBatchAccount"
 Get-AzBatchSupportedImage -BatchContext $Context
 ```
-### <a name="previous-version-incompatibility-with-azresources-module"></a>Ketidakcocokan Versi Sebelumnya dengan Modul Az.Resources
-Versi 2.0.1 dari modul 'Az.Batch' tidak kompatibel dengan versi sebelumnya (versi 1.7.0 atau versi lebih lama) dari modul 'Az.Resources'.  Hal ini akan mengakibatkan tidak dapat mengimpor versi 1.7.0 dari modul 'Az.Resources' ketika versi 2.0.1 dari modul 'Az.Batch' diimpor.  Untuk memperbaiki masalah ini, cukup perbarui modul 'Az.Resources' ke versi 1.7.1 atau lebih besar, atau cukup instal versi terbaru modul 'Az'.
+### <a name="previous-version-incompatibility-with-azresources-module"></a>Ketidakcocokan Versi sebelumnya dengan modul Az.Resources
+Versi 2.0.1 modul ‘Az.Batch’ tidak cocok dengan versi sebelumnya (versi 1.7.0 atau lebih lama) dari modul ‘Az.Resources’.  Hal ini akan mengakibatkan ketidakmampuan untuk mengimpor versi 1.7.0 modul ‘Az.Resources’ jika versi 2.0.1 modul ‘Az.Batch’ diimpor.  Untuk memperbaiki masalah ini, cukup perbarui modul ‘Az.Resources’ ke versi 1.7.1 atau yang lebih tinggi, atau cukup pasang versi modul ‘Az’ terbaru.
 
 ## <a name="compute"></a>Compute
 
 ### `New-AzDiskConfig`
-`UploadSizeInBytes`parameter digunakan sebagai pengganti `DiskSizeGB` `New-AzDiskConfig` ketika CreateOption Upload
+Parameter `UploadSizeInBytes` digunakan bukan `DiskSizeGB` untuk `New-AzDiskConfig` ketika CreateOption Diunggah
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -127,9 +127,9 @@ $diskconfig = New-AzDiskConfig -Location 'Central US' -UploadSizeInBytes 1023 * 
 ## <a name="hdinsight"></a>HDInsight
 
 ### `Get-AzHDInsightJobOutput`
-- `Get-AzHDInsightJobOutput` Memperbarui cmdlet untuk mendukung akses berbasis peran granular ke kunci penyimpanan.
+- Memperbarui cmdlet `Get-AzHDInsightJobOutput` untuk mendukung akses berbasis peran granular ke kunci penyimpanan.
 - Pengguna dengan peran Operator Kluster HDInsight, Kontributor, atau Pemilik tidak akan terpengaruh.
-- Pengguna dengan hanya peran Reader perlu menentukan `DefaultStorageAccountKey` parameter secara eksplisit.
+- Pengguna hanya dengan peran Pembaca perlu menentukan parameter `DefaultStorageAccountKey` secara eksplisit.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -142,10 +142,10 @@ Get-AzHDInsightJobOutput -ClusterName $clusterName -JobId $jobId -DefaultStorage
 ```
 
 ### `Add-AzHDInsightConfigValues`
-Cmdlet `Add-AzHDInsightConfigValue` dihapus alias ke `Add-AzHDInsightConfigValues`.
+Cmdlet `Add-AzHDInsightConfigValue` menghapus alias ke `Add-AzHDInsightConfigValues`.
 
 #### <a name="before"></a>Sebelumnya
-Menggunakan alias usang
+Menggunakan alias yang tidak digunakan lagi
 ```powershell
 Add-AzHDInsightConfigValues
 ```
@@ -157,7 +157,7 @@ Add-AzHDInsightConfigValue
 
 
 ### `Disable-AzHDInsightMonitoring`
-Menambahkan cmdlet baru `Disable-AzHDInsightMonitoring` . Gunakan cmdlet ini untuk menonaktifkan pemantauan dalam klaster HDInsight (menggantikan `Disable-AzHDInsightOperationsManagementSuite` dan `Disable-AzHDInsightOMS`).
+Menambahkan cmdlet `Disable-AzHDInsightMonitoring` baru. Gunakan cmdlet ini untuk menonaktifkan pemantauan di kluster HDInsight (mengganti `Disable-AzHDInsightOperationsManagementSuite` dan `Disable-AzHDInsightOMS`).
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -174,7 +174,7 @@ Disable-AzHDInsightMonitoring -Name testcluster
 
 
 ### `Enable-AzHDInsightMonitoring`
-Menambahkan cmdlet baru `Enable-AzHDInsightMonitoring` . Gunakan cmdlet ini untuk mengaktifkan pemantauan dalam klaster HDInsight (menggantikan `Enable-AzHDInsightOperationsManagementSuite` dan `Enable-AzHDInsightOMS`).
+Menambahkan cmdlet `Enable-AzHDInsightMonitoring` baru. Gunakan cmdlet ini untuk mengaktifkan pemantauan di kluster HDInsight (mengganti `Enable-AzHDInsightOperationsManagementSuite` dan `Enable-AzHDInsightOMS`).
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -190,7 +190,7 @@ Enable-AzHDInsightMonitoring Enable-AzHDInsightMonitoring -Name testcluster -Wor
 ```
 
 ### `Get-AzHDInsightMonitoring`
-Menambahkan cmdlet baru `Get-AzHDInsightMonitoring` . Gunakan cmdlet ini untuk mendapatkan status instalasi pemantauan di klaster Azure HDInsight (menggantikan `Get-AzHDInsightOperationsManagementSuite` dan `Get-AzHDInsightOMS`).
+Menambahkan cmdlet `Get-AzHDInsightMonitoring` baru. Gunakan cmdlet ini untuk mendapatkan status penginstalan pemantauan di kluster Azure HDInsight (mengganti `Get-AzHDInsightOperationsManagementSuite` dan `Get-AzHDInsightOMS`).
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -206,10 +206,10 @@ Get-AzHDInsightMonitoring -Name testcluster
 ```
 
 ### `Get-AzHDInsightProperty`
-Cmdlet `Get-HDInsightProperty` dihapus alias ke `Get-AzHDInsightProperties`.
+Cmdlet `Get-HDInsightProperty` menghapus alias ke `Get-AzHDInsightProperties`.
 
 #### <a name="before"></a>Sebelumnya
-Menggunakan alias usang
+Menggunakan alias yang tidak digunakan lagi
 ```powershell
 Get-AzHDInsightProperties -Location "East US 2"
 ```
@@ -220,10 +220,10 @@ Get-AzHDInsightProperty -Location "East US 2"
 ```
 
 ### `Grant-AzHDInsightRdpServicesAccess`
-`Grant-AzHDInsightRdpServicesAccess` Menghapus dan `Revoke-AzHDInsightRdpServicesAccess` cmdlets. Ini tidak lagi diperlukan karena cluster yang menggunakan jenis OS Windows tidak didukung. Silakan buat cluster menggunakan tipe OS Linux sebagai gantinya.
+Menghapus cmdlet `Grant-AzHDInsightRdpServicesAccess` dan `Revoke-AzHDInsightRdpServicesAccess`. Cmdlet ini tidak lagi diperlukan karena kluster yang menggunakan jenis OS Windows tidak didukung. Silakan buat kluster menggunakan jenis OS Linux sebagai gantinya.
 
 ### `Remove-AzHDInsightCluster`
-Jenis `Remove-AzHDInsightCluster` output berubah dari `Microsoft.Azure.Management.HDInsight.Models.ClusterGetResponse` ke `bool`.
+Jenis output `Remove-AzHDInsightCluster` berubah dari `Microsoft.Azure.Management.HDInsight.Models.ClusterGetResponse` menjadi `bool`.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -237,10 +237,10 @@ True
 ```
 
 ### `Revoke-AzHDInsightRdpServicesAccess`
-Cmdlet tidak digunakan lagi. Tidak ada pengganti untuk itu.
+Cmdlet tidak digunakan lagi. Tidak ada pengganti untuk cmdlet ini.
 
 ### `Set-AzHDInsightGatewayCredential`
-Jenis `Set-AzHDInsightGatewayCredential` output berubah dari `HttpConnectivitySettings` ke `AzureHDInsightGatewaySettings`.
+Jenis output `Set-AzHDInsightGatewayCredential` berubah dari `HttpConnectivitySettings` menjadi `AzureHDInsightGatewaySettings`.
 
 
 
@@ -273,7 +273,7 @@ New-AzIotHubExportDevice -ResourceGroupName "myresourcegroup" -Name "myiothub" -
 ```
 
 ### `Add-AzIotHubEventHubConsumerGroup`
-Parameter `EventHubEndPointName` tidak digunakan lagi tanpa diganti karena IotHub hanya dilengkapi dengan satu titik akhir bawaan ("peristiwa") yang dapat menangani pesan sistem dan perangkat.
+Parameter `EventHubEndPointName` tidak digunakan lagi tanpa perlu diganti karena IotHub dilengkapi dengan hanya satu titik akhir bawaan ("peristiwa") yang dapat menangani sistem dan pesan peranti.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -286,7 +286,7 @@ Add-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "my
 ```
 
 ### `Get-AzIotHubEventHubConsumerGroup`
-Parameter `EventHubEndPointName` tidak digunakan lagi tanpa diganti karena IotHub hanya dilengkapi dengan satu titik akhir bawaan ("peristiwa") yang dapat menangani pesan sistem dan perangkat.
+Parameter `EventHubEndPointName` tidak digunakan lagi tanpa perlu diganti karena IotHub dilengkapi dengan hanya satu titik akhir bawaan ("peristiwa") yang dapat menangani sistem dan pesan peranti.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -299,7 +299,7 @@ Get-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "my
 ```
 
 ### `Remove-AzIotHubEventHubConsumerGroup`
-Parameter `EventHubEndPointName` tidak digunakan lagi tanpa diganti karena IotHub hanya dilengkapi dengan satu titik akhir bawaan ("peristiwa") yang dapat menangani pesan sistem dan perangkat.
+Parameter `EventHubEndPointName` tidak digunakan lagi tanpa perlu diganti karena IotHub dilengkapi dengan hanya satu titik akhir bawaan ("peristiwa") yang dapat menangani sistem dan pesan peranti.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -312,17 +312,17 @@ Remove-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name 
 ```
 
 ### `Set-AzIotHub`
-Parameter `OperationsMonitoringProperties` tidak digunakan lagi tanpa diganti karena IotHub tidak lagi menggunakan titik akhir bawaan("operationsMonitoringEvents").
+Parameter `OperationsMonitoringProperties` tidak digunakan lagi tanpa diganti karena IotHub tidak lagi menggunakan titik akhir bawaan ("operationsMonitoringEvents").
 
 
 
-## <a name="recoveryservices"></a>Layanan Pemulihan
+## <a name="recoveryservices"></a>RecoveryServices
 
 ### `Edit-AzRecoveryServicesAsrRecoveryPlan`
-`ASRRecoveryPlanGroup.ReplicationProtectedItems`, `ASRRecoveryPlanGroup.StartGroupActions` dan `ASRRecoveryPlanGroup.EndGroupActions` dihapus dari output.
+`ASRRecoveryPlanGroup.ReplicationProtectedItems`, `ASRRecoveryPlanGroup.StartGroupActions`, dan `ASRRecoveryPlanGroup.EndGroupActions` dihapus dari output.
 
 ### `Get-AzRecoveryServicesAsrRecoveryPlan`
-`ASRRecoveryPlanGroup.ReplicationProtectedItems`, `ASRRecoveryPlanGroup.StartGroupActions` dan `ASRRecoveryPlanGroup.EndGroupActions` dihapus dari output.
+`ASRRecoveryPlanGroup.ReplicationProtectedItems`, `ASRRecoveryPlanGroup.StartGroupActions`, dan `ASRRecoveryPlanGroup.EndGroupActions` dihapus dari output.
 
 ### `New-AzRecoveryServicesAsrReplicationProtectedItem`
 Parameter IncludeDiskId diubah untuk mendukung penulisan langsung ke disk terkelola di Azure Site Recovery.
@@ -341,13 +341,13 @@ $job = New-AzRecoveryServicesAsrReplicationProtectedItem -VMwareToAzure -Account
 
 ## <a name="resources"></a>Sumber
 
-### <a name="previous-version-incompatibility-with-azbatch-module"></a>Ketidakcocokan Versi Sebelumnya dengan Modul Az.Batch
-Versi 1.7.1 dari modul 'Az.Resources' tidak kompatibel dengan versi sebelumnya (versi 1.1.2 atau versi lebih lama) dari modul 'Az.Batch'.  Hal ini akan mengakibatkan tidak dapat mengimpor versi 1.1.2 dari modul 'Az.Batch' ketika versi 1.7.1 dari modul 'Az.Resources' diimpor.  Untuk memperbaiki masalah ini, perbarui modul 'Az.Batch' ke versi 2.0.1 atau lebih besar, atau cukup instal versi terbaru modul 'Az'.
+### <a name="previous-version-incompatibility-with-azbatch-module"></a>Ketidakcocokan Versi sebelumnya dengan modul Az.Batch
+Versi 1.7.1 modul ‘Az.Resources’ tidak cocok dengan versi sebelumnya (versi 1.1.2 atau lebih lama) dari modul ‘Az.Batch’.  Hal ini akan mengakibatkan ketidakmampuan untuk mengimpor versi 1.1.2 modul ‘Az.Batch’ jika versi 1.7.1 modul ‘Az.Resources’ diimpor.  Untuk memperbaiki masalah ini, perbarui modul ‘Az.Batch’ ke versi 2.0.1 atau yang lebih tinggi, atau cukup pasang versi modul ‘Az’ terbaru.
 
 ## <a name="servicefabric"></a>ServiceFabric
 
 ### `Add-ServiceFabricApplicationCertificate`
-Dihapus `Add-ServiceFabricApplicationCertificate` karena skenario ini dicakup oleh `Add-AzVmssSecret`.
+Menghapus `Add-ServiceFabricApplicationCertificate` karena skenario ini dicakup dengan `Add-AzVmssSecret`.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -366,17 +366,17 @@ Add-AzVmssSecret -VirtualMachineScaleSet $VMSS -SourceVaultId $Vault.ResourceId 
 ## <a name="sql"></a>Sql
 
 ### `Get-AzSqlDatabaseSecureConnectionPolicy`
-Perhatikan bahwa koneksi aman tidak digunakan lagi sehingga perintah dihapus. Silakan gunakan bilah database SQL di portal Microsoft Azure untuk melihat string koneksi
+Perhatikan bahwa koneksi yang aman tidak digunakan lagi dan sehingga perintah dihapus. Silakan gunakan bilah database SQL di portal Microsoft Azure untuk menampilkan string koneksi
 
 ### `Get-AzSqlDatabaseIndexRecommendations`
-`Get-AzSqlDatabaseIndexRecommendations` alias dihapus. Gunakan `Get-AzSqlDatabaseIndexRecommendation` sebagai gantinya.
+Alias `Get-AzSqlDatabaseIndexRecommendations` dihapus. Gunakan `Get-AzSqlDatabaseIndexRecommendation` sebagai gantinya.
 
 ### `Get-AzSqlDatabaseRestorePoints`
-`Get-AzSqlDatabaseRestorePoints` alias dihapus. Gunakan `Get-AzSqlDatabaseRestorePoint` sebagai gantinya.
+Alias `Get-AzSqlDatabaseRestorePoints` dihapus. Gunakan `Get-AzSqlDatabaseRestorePoint` sebagai gantinya.
 
 ### `Get-AzSqlDatabaseAuditing`
 - Cmdlet `Get-AzSqlDatabaseAudit` menggantikan cmdlet ini.
-- Jenis output berubah dari tipe yang ada :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' ke tipe baru :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseAuditingSettingsModel', menghapus properti `AuditState` dan `StorageAccountName`. dan `StorageAccountSubscriptionId`.  Skrip dapat mengambil informasi akun penyimpanan dari properti baru `StorageAccountResourceId` .
+- Jenis output berubah dari jenis :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' yang ada menjadi jenis :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseAuditingSettingsModel' baru, yang menghapus properti `AuditState` dan `StorageAccountName`. dan `StorageAccountSubscriptionId`.  Skrip dapat mengambil informasi akun penyimpanan dari properti `StorageAccountResourceId` baru.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -418,7 +418,7 @@ WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2
 
 ### `Set-AzSqlDatabaseAuditing`
 - Cmdlet `Set-AzSqlDatabaseAudit` menggantikan cmdlet ini.
-- Jenis output berubah dari tipe yang ada :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' ke tipe baru :'bool'
+- Jenis output berubah dari jenis :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' yang ada menjadi jenis :'bool' baru
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -432,7 +432,7 @@ Set-AzSqlDatabaseAudit -ResourceGroupName "ResourceGroup01" -ServerName "Server0
 
 ### `Get-AzSqlServerAuditing`
 - Cmdlet `Get-AzSqlServerAudit` menggantikan cmdlet ini.
-- Jenis output berubah dari tipe yang ada :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' ke tipe baru :'Microsoft.Azure.Commands.Sql.Auditing.Model.ServerAuditingSettingsModel'.  Properti `AuditState`, `StorageAccountName`, dan `StorageAccountSubscriptionId` dihapus.  Skrip yang menggunakan `StorageAccountName` dan `StorageAccountSubscriptionId` proeprties dapat mengambil informasi ini dari properti baru `StorageAccountResourceId` .
+- Jenis output berubah dari jenis :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' yang ada menjadi jenis :'Microsoft.Azure.Commands.Sql.Auditing.Model.ServerAuditingSettingsModel' baru.  Properti `AuditState`, `StorageAccountName`, dan `StorageAccountSubscriptionId` dihapus.  Skrip yang menggunakan properti `StorageAccountName` dan `StorageAccountSubscriptionId` dapat mengambil informasi ini dari properti `StorageAccountResourceId` baru.
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -468,7 +468,7 @@ WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2
 
 ### `Set-AzSqlServerAuditing`
 - Cmdlet `Set-AzSqlServerAudit` menggantikan cmdlet ini.
-- Jenis output berubah dari tipe yang ada :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' ke tipe baru :'bool'
+- Jenis output berubah dari jenis :'Microsoft.Azure.Commands.Sql.Auditing.Model.DatabaseBlobAuditingSettingsModel' yang ada menjadi jenis :'bool' baru
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -481,7 +481,7 @@ PS C:\> Set-AzSqlServerAudit -ResourceGroupName "ResourceGroup01" -ServerName "S
 ```
 
 ### `Get-AzSqlServerAdvancedThreatProtectionSettings`
-Cmdlet `Get-AzSqlServerAdvancedThreatProtectionSettings` digantikan oleh `Get-AzSqlServerAdvancedThreatProtectionSetting`
+Cmdlet `Get-AzSqlServerAdvancedThreatProtectionSettings` diganti dengan `Get-AzSqlServerAdvancedThreatProtectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -494,7 +494,7 @@ Get-AzSqlServerAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGroup
 ```
 
 ### `Clear-AzSqlServerAdvancedThreatProtectionSettings`
-Cmdlet `Clear-AzSqlServerAdvancedThreatProtectionSettings` digantikan oleh `Clear-AzSqlServerAdvancedThreatProtectionSetting`
+Cmdlet `Clear-AzSqlServerAdvancedThreatProtectionSettings` diganti dengan `Clear-AzSqlServerAdvancedThreatProtectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -507,7 +507,7 @@ Clear-AzSqlServerAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGro
 ```
 
 ### `Update-AzSqlServerAdvancedThreatProtectionSettings`
-Cmdlet `Update-AzSqlServerAdvancedThreatProtectionSettings` digantikan oleh `Update-AzSqlServerAdvancedThreatProtectionSetting`
+Cmdlet `Update-AzSqlServerAdvancedThreatProtectionSettings` diganti dengan `Update-AzSqlServerAdvancedThreatProtectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -520,7 +520,7 @@ Update-AzSqlServerAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGr
 ```
 
 ### `Get-AzSqlDatabaseAdvancedThreatProtectionSettings`
-Cmdlet `Get-AzSqlDatabaseAdvancedThreatProtectionSettings` digantikan oleh `Get-AzSqlDatabaseAdvancedThreatProtectionSetting`
+Cmdlet `Get-AzSqlDatabaseAdvancedThreatProtectionSettings` diganti dengan `Get-AzSqlDatabaseAdvancedThreatProtectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -533,7 +533,7 @@ Get-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGro
 ```
 
 ### `Update-AzSqlDatabaseAdvancedThreatProtectionSettings`
-Cmdlet `Update-AzSqlDatabaseAdvancedThreatProtectionSettings` adalah repleaced oleh `Update-AzSqlDatabaseAdvancedThreatProtectionSetting`
+Cmdlet `Update-AzSqlDatabaseAdvancedThreatProtectionSettings` diganti dengan `Update-AzSqlDatabaseAdvancedThreatProtectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -546,7 +546,7 @@ Update-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "Resource
 ```
 
 ### `Clear-AzSqlDatabaseAdvancedThreatProtectionSettings`
-Cmdlet `Clear-AzSqlDatabaseAdvancedThreatProtectionSettings` adalah repleaced oleh `Clear-AzSqlDatabaseAdvancedThreatProtectionSetting`
+Cmdlet `Clear-AzSqlDatabaseAdvancedThreatProtectionSettings` diganti dengan `Clear-AzSqlDatabaseAdvancedThreatProtectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -559,7 +559,7 @@ Clear-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "ResourceG
 ```
 
 ### `Update-AzSqlDatabaseVulnerabilityAssessmentSettings`
-Cmdlet `Update-AzSqlDatabaseVulnerabilityAssessmentSettings` adalah repleaced oleh `Update-AzSqlDatabaseVulnerabilityAssessmentSetting`
+Cmdlet `Update-AzSqlDatabaseVulnerabilityAssessmentSettings` diganti dengan `Update-AzSqlDatabaseVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -589,7 +589,7 @@ Update-AzSqlDatabaseVulnerabilityAssessmentSetting `
 
 
 ### `Get-AzSqlDatabaseVulnerabilityAssessmentSettings`
-Cmdlet `Get-AzSqlDatabaseVulnerabilityAssessmentSettings` adalah repleaced oleh `Get-AzSqlDatabaseVulnerabilityAssessmentSetting`
+Cmdlet `Get-AzSqlDatabaseVulnerabilityAssessmentSettings` diganti dengan `Get-AzSqlDatabaseVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -608,7 +608,7 @@ Get-AzSqlDatabaseVulnerabilityAssessmentSetting `
 ```
 
 ### `Clear-AzSqlDatabaseVulnerabilityAssessmentSettings`
-Cmdlet `Clear-AzSqlDatabaseVulnerabilityAssessmentSettings` adalah repleaced oleh `Clear-AzSqlDatabaseVulnerabilityAssessmentSetting`
+Cmdlet `Clear-AzSqlDatabaseVulnerabilityAssessmentSettings` diganti dengan `Clear-AzSqlDatabaseVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -627,7 +627,7 @@ Clear-AzSqlDatabaseVulnerabilityAssessmentSetting `
 ```
 
 ### `Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings`
-Cmdlet `Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings` adalah repleaced oleh `Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting`
+Cmdlet `Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings` diganti dengan `Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -656,7 +656,7 @@ Update-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting `
 ```
 
 ### `Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings`
-Cmdlet `Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings` adalah repleaced oleh `Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting`
+Cmdlet `Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings` diganti dengan `Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -675,7 +675,7 @@ Get-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting `
 ```
 
 ### `Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings`
-Cmdlet `Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings` adalah repleaced oleh `Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting`
+Cmdlet `Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSettings` diganti dengan `Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -694,7 +694,7 @@ Clear-AzSqlInstanceDatabaseVulnerabilityAssessmentSetting `
 ```
 
 ### `Update-AzSqlInstanceVulnerabilityAssessmentSettings`
-Cmdlet `Update-AzSqlInstanceVulnerabilityAssessmentSettings` adalah repleaced oleh `Update-AzSqlInstanceVulnerabilityAssessmentSetting`
+Cmdlet `Update-AzSqlInstanceVulnerabilityAssessmentSettings` diganti dengan `Update-AzSqlInstanceVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -721,7 +721,7 @@ Update-AzSqlInstanceVulnerabilityAssessmentSetting `
 ```
 
 ### `Get-AzSqlInstanceVulnerabilityAssessmentSettings`
-Cmdlet `Get-AzSqlInstanceVulnerabilityAssessmentSettings` adalah repleaced oleh `Get-AzSqlInstanceVulnerabilityAssessmentSetting`
+Cmdlet `Get-AzSqlInstanceVulnerabilityAssessmentSettings` diganti dengan `Get-AzSqlInstanceVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -740,7 +740,7 @@ Get-AzSqlInstanceVulnerabilityAssessmentSetting `
 ```
 
 ### `Clear-AzSqlInstanceVulnerabilityAssessmentSettings`
-Cmdlet `Clear-AzSqlInstanceVulnerabilityAssessmentSettings` adalah repleaced oleh `Clear-AzSqlInstanceVulnerabilityAssessmentSetting`
+Cmdlet `Clear-AzSqlInstanceVulnerabilityAssessmentSettings` diganti dengan `Clear-AzSqlInstanceVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -759,7 +759,7 @@ Clear-AzSqlInstanceVulnerabilityAssessmentSetting `
 ```
 
 ### `Update-AzSqlServerVulnerabilityAssessmentSettings`
-Cmdlet `Update-AzSqlServerVulnerabilityAssessmentSettings` adalah repleaced oleh `Update-AzSqlServerVulnerabilityAssessmentSetting`
+Cmdlet `Update-AzSqlServerVulnerabilityAssessmentSettings` diganti dengan `Update-AzSqlServerVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -786,7 +786,7 @@ Update-AzSqlServerVulnerabilityAssessmentSetting `
 ```
 
 ### `Get-AzSqlServerVulnerabilityAssessmentSettings`
-Cmdlet `Get-AzSqlServerVulnerabilityAssessmentSettings` adalah repleaced oleh `Get-AzSqlServerVulnerabilityAssessmentSetting`
+Cmdlet `Get-AzSqlServerVulnerabilityAssessmentSettings` diganti dengan `Get-AzSqlServerVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -805,7 +805,7 @@ Get-AzSqlServerVulnerabilityAssessmentSetting `
 ```
 
 ### `Clear-AzSqlServerVulnerabilityAssessmentSettings`
-Cmdlet `Clear-AzSqlServerVulnerabilityAssessmentSettings` adalah repleaced oleh `Clear-AzSqlServerVulnerabilityAssessmentSetting`
+Cmdlet `Clear-AzSqlServerVulnerabilityAssessmentSettings` diganti dengan `Clear-AzSqlServerVulnerabilityAssessmentSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -824,10 +824,10 @@ Clear-AzSqlDatabaseVulnerabilityAssessmentSetting `
 ```
 
 ### `Get-AzSqlServerAdvancedThreatProtectionPolicy`
-Cmdlet `Get-AzSqlServerAdvancedThreatProtectionPolicy` dihapus dan tidak ada cmdlet yang penuh dengannya
+Cmdlet `Get-AzSqlServerAdvancedThreatProtectionPolicy` dihapus dan tidak ada cmdlet yang menggantikannya
 
 ### `Get-AzSqlServerThreatDetectionPolicy`
-Cmdlet `Get-AzSqlServerThreatDetectionPolicy` adalah repleaced oleh `Get-AzSqlServerThreatDetectionSetting`
+Cmdlet `Get-AzSqlServerThreatDetectionPolicy` diganti dengan `Get-AzSqlServerThreatDetectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -856,7 +856,7 @@ RetentionInDays              : 0
 ```
 
 ### `Remove-AzSqlServerThreatDetectionPolicy`
-Cmdlet `Remove-AzSqlServerThreatDetectionPolicy` adalah repleaced oleh `Clear-AzSqlServerThreatDetectionSetting`
+Cmdlet `Remove-AzSqlServerThreatDetectionPolicy` diganti dengan `Clear-AzSqlServerThreatDetectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -869,7 +869,7 @@ Clear-AzSqlServerAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGro
 ```
 
 ### `Set-AzSqlServerThreatDetectionPolicy`
-Cmdlet `Set-AzSqlServerThreatDetectionPolicy` adalah repleaced oleh `Update-AzSqlServerThreatDetectionSetting`
+Cmdlet `Set-AzSqlServerThreatDetectionPolicy` diganti dengan `Update-AzSqlServerThreatDetectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -882,7 +882,7 @@ Update-AzSqlServerAdvancedThreatProtectionSetting -ResourceGroupName "ResourceGr
 ```
 
 ### `Get-AzSqlDatabaseThreatDetectionPolicy`
-Cmdlet `Get-AzSqlDatabaseThreatDetectionPolicy` adalah repleaced oleh `Get-AzSqlDatabaseThreatDetectionSetting`
+Cmdlet `Get-AzSqlDatabaseThreatDetectionPolicy` diganti dengan `Get-AzSqlDatabaseThreatDetectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -913,7 +913,7 @@ RetentionInDays              : 0
 ```
 
 ### `Set-AzSqlDatabaseThreatDetectionPolicy`
-Cmdlet `Set-AzSqlDatabaseThreatDetectionPolicy` adalah repleaced oleh `Update-AzSqlDatabaseThreatDetectionSetting`
+Cmdlet `Set-AzSqlDatabaseThreatDetectionPolicy` diganti dengan `Update-AzSqlDatabaseThreatDetectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell
@@ -926,7 +926,7 @@ Update-AzSqlDatabaseAdvancedThreatProtectionSetting -ResourceGroupName "Resource
 ```
 
 ### `Remove-AzSqlDatabaseThreatDetectionPolicy`
-Cmdlet `Remove-AzSqlDatabaseThreatDetectionPolicy` adalah repleaced oleh `Clear-AzSqlDatabaseThreatDetectionSetting`
+Cmdlet `Remove-AzSqlDatabaseThreatDetectionPolicy` diganti dengan `Clear-AzSqlDatabaseThreatDetectionSetting`
 
 #### <a name="before"></a>Sebelumnya
 ```powershell

@@ -1,24 +1,24 @@
 ---
-description: Panduan migrasi ini berisi daftar perubahan Azure PowerShell untuk migrasi Azure AD ke Microsoft Graph di Az.Resources 5.1.0.
+description: Panduan migrasi berisi daftar perubahan Azure PowerShell untuk migrasi Azure AD ke Microsoft Graph di Az.Resources 5.1.0.
 ms.custom: devx-track-azurepowershell
 ms.date: 02/08/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
-title: Azure AD ke Microsoft Graph perubahan migrasi di Azure PowerShell
+title: Migrasi Azure AD ke Microsoft Graph di Azure PowerShell
 ms.openlocfilehash: 14e77e7de3b8855d1d06979ddc0edb1f4eb66cb0
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855585"
 ---
-# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Azure AD ke Microsoft Graph perubahan migrasi di Azure PowerShell
+# <a name="azure-ad-to-microsoft-graph-migration-changes-in-azure-powershell"></a>Migrasi Azure AD ke Microsoft Graph di Azure PowerShell
 
-Modul `Az.Resources` PowerShell versi 5.1.0 dari Azure PowerShell memperkenalkan perubahan pada cmdlet terkait identitas. Cmdlet yang mengandalkan Graph Azure AD beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang lancar mengingat [pengumuman pensiunnya Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
-Untuk informasi selengkapnya, lihat [Azure AD ke Microsoft Graph migrasi untuk alat baris perintah Azure](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666).
+Modul `Az.Resources` PowerShell versi 5.1.0 dari Azure PowerShel memperkenalkan perubahan pada cmdlet terkait identitas. Cmdlet yang mengandalkan Azure AD Graph beralih ke Microsoft Graph. Perubahan ini terjadi untuk memastikan transisi yang mulus dalam hal [pengumuman penghentian Azure AD Graph](https://azure.microsoft.com/updates/update-your-apps-to-use-microsoft-graph-before-30-june-2022/).
+Untuk informasi selengkapnya, lihat [migrasi Azure AD ke Microsoft Graph untuk alat baris perintah Azure](https://techcommunity.microsoft.com/t5/azure-tools/azure-ad-to-microsoft-graph-migration-for-azure-command-line/ba-p/2836666).
 
-Contoh berikut menginstal versi terbaru dari `Az.Resources` modul Azure PowerShell.
+Contoh berikut menginstal versi terbaru modul `Az.Resources` Azure PowerShell.
 
 ```azurepowershell
 Install-Module -Name Az.Resources -Repository PSGallery -Scope CurrentUser
@@ -42,23 +42,23 @@ Lihat informasi berikut untuk daftar perubahan.
 
 ### <a name="remove-azadapplication"></a>Remove-AzAdApplication
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
-### <a name="update-azadapplication"></a>Update-AzAdApplication
+### <a name="update-azadapplication"></a>Update-AzADApplication
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `System.Boolean`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `System.Boolean`
 
 ### <a name="changes-to-application-object"></a>Perubahan pada Objek Aplikasi
 
 - `ObjectId` telah digantikan oleh `Id`
 
-- `HomePage` telah digantikan oleh `HomepageUrl` dalam `Web` elemen
+- `HomePage` telah diganti dengan `HomepageUrl` di elemen `Web`
 
 - `ApplicationId` telah digantikan oleh `AppId`
 
-- `AvailableToOtherTenants` (boolean) telah digantikan oleh `SignInAudience` (string dengan 4 nilai: 'AzureADMyOrg', 'AzureADMultipleOrgs', 'AzureADandPersonalMicrosoftAccount', 'PersonalMicrosoftAccount')
+- `AvailableToOtherTenants` (boolean) telah diganti dengan `SignInAudience` (string dengan 4 nilai: 'AzureADMyOrg', 'AzureADMultipleOrgs', 'AzureADandPersonalMicrosoftAccount', 'PersonalMicrosoftAccount')
 
   - AzureADMultipleOrgs setara dengan AvailableToOtherTenants:$true
 
@@ -66,125 +66,125 @@ Lihat informasi berikut untuk daftar perubahan.
 
 - `ApiPermissions` telah digantikan oleh `RequiredResourceAccess`
 
-- `ReplyUrls` telah digantikan oleh `RedirectUris ` dalam `Web` elemen
+- `ReplyUrls` telah diganti dengan `RedirectUris ` di elemen `Web`
 
 - `ObjectType` telah digantikan oleh `OdataType`
 
-## <a name="application-credential"></a>Kredensial Aplikasi
+## <a name="application-credential"></a>Informasi Masuk Aplikasi
 
 ### <a name="get-azadappcredential"></a>Get-AzAdAppCredential
 
-- Jenis parameter input `ApplicationObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
+- Jenis input parameter `ApplicationObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
-  dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
+   dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
 
 ### <a name="new-azadappcredential"></a>New-AzAdAppCredential
 
-- Jenis parameter input `ApplicationObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
+- Jenis input parameter `ApplicationObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
-  dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
+   dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
 
 - Parameter `Password` telah dihapus, kata sandi yang disesuaikan tidak didukung lagi, server akan menetapkan teks rahasia saat pembuatan
 
 ### <a name="remove-azadappcredential"></a>Remove-AzAdAppCredential
 
-- Jenis parameter input `ApplicationObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
+- Jenis input parameter `ApplicationObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
-### <a name="changes-to-app-credential-object"></a>Perubahan pada Objek Kredensial Aplikasi
+### <a name="changes-to-app-credential-object"></a>Perubahan pada Objek Informasi Masuk Aplikasi
 
-#### <a name="password-credential"></a>Kredensial Kata Sandi
+#### <a name="password-credential"></a>Informasi Masuk Kata Sandi
 - `Password` telah digantikan oleh `SecretText`
 
-#### <a name="key-credential"></a>Kredensial Kunci
-- `CertValue` telah dihapus
+#### <a name="key-credential"></a>Informasi Masuk Kunci
+- `CertValue` telah Dihapus
 
 ## <a name="serviceprincipal"></a>ServicePrincipal
 
 ### <a name="get-azadserviceprincipal"></a>Get-AzAdServicePrincipal
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
 - Parameter `IncludeTotalCount` tidak didukung dan telah dihapus.
 
 ### <a name="new-azadserviceprincipal"></a>New-AzAdServicePrincipal
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
-- Parameter set `ApplicationWithoutCredentialParameterSet`, `ApplicationWithPasswordPlainParameterSet`, `DisplayNameWithoutCredentialParameterSet`, , telah `DisplayNameWithPasswordPlainParameterSet` dihapus karena set parameter asli tidak berfungsi.
+- Set parameter `ApplicationWithoutCredentialParameterSet`, `ApplicationWithPasswordPlainParameterSet`, `DisplayNameWithoutCredentialParameterSet`, `DisplayNameWithPasswordPlainParameterSet` telah dihapus karena set parameter asli tidak berfungsi.
 
-- Peran `contributor` tidak ditetapkan sebagai default ketika parameter `-Role` tidak disediakan karena pertimbangan keamanan.
+- Peran `contributor` tidak ditetapkan sebagai default saat parameter `-Role` tidak disediakan karena pertimbangan keamanan.
 
 - Parameter `SkipAssignment` telah dihapus.
 
 ### <a name="remove-azadserviceprincipal"></a>Remove-AzAdServicePrincipal
 
-- Jenis parameter input `ApplicationObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
+- Jenis input parameter `ApplicationObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADApplication` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphApplication`
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
 ### <a name="update-azadserviceprincipal"></a>Update-AzAdServicePrincipal
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `System.Boolean`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `System.Boolean`
 
-### <a name="changes-to-service-principal-object"></a>Perubahan pada Objek Utama Layanan
+### <a name="changes-to-service-principal-object"></a>Perubahan pada Objek Perwakilan Layanan
 
 - `ApplicationId` telah digantikan oleh `AppId`
 
 - `ObjectType` telah digantikan oleh `OdataType`
 
-## <a name="serviceprincipal-credential"></a>Kredensial ServicePrincipal
+## <a name="serviceprincipal-credential"></a>Informasi Masuk ServicePrincipal
 
 ### <a name="get-azadspcredential"></a>Get-AzAdSpCredential
 
-- Jenis parameter input `ServicePrincipalObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis input parameter `ServicePrincipalObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
-  dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
+   dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
 
 ### <a name="new-azadspcredential"></a>New-AzAdSpCredential
 
-- Jenis parameter input `ServicePrincipalObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis input parameter `ServicePrincipalObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
-  dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory. PSADCredential` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphKeyCredential`
+   dan `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphPasswordCredential`
 
 ### <a name="remove-azadspcredential"></a>Remove-AzAdSpCredential
 
-- Jenis parameter input `ServicePrincipalObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
+- Jenis input parameter `ServicePrincipalObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphServicePrincipal`
 
-### <a name="changes-to-serviceprincipal-credential-object"></a>Perubahan pada Objek Kredensial ServicePrincipal
+### <a name="changes-to-serviceprincipal-credential-object"></a>Perubahan pada Objek Informasi Masuk ServicePrincipal
 
-#### <a name="password-credential"></a>Kredensial Kata Sandi
+#### <a name="password-credential"></a>Informasi Masuk Kata Sandi
 - `Password` telah digantikan oleh `SecretText`
 
-#### <a name="key-credential"></a>Kredensial Kunci
-- `CertValue` telah dihapus
+#### <a name="key-credential"></a>Informasi Masuk Kunci
+- `CertValue` telah Dihapus
 
 ## <a name="user"></a>Pengguna
 
 ### <a name="get-azaduser"></a>Get-AzAdUser
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
 
 - Parameter `IncludeTotalCount` tidak didukung dan telah dihapus
 
 ### <a name="new-azaduser"></a>New-AzAdUser
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
 
 ### <a name="remove-azaduser"></a>Remove-AzAdUser
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
 
 ### <a name="update-azaduser"></a>Update-AzAdUser
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser`
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` ke `System.Boolean`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADUser` menjadi `System.Boolean`
 
 ### <a name="changes-to-user-object"></a>Perubahan pada Objek Pengguna
 
@@ -196,17 +196,17 @@ Lihat informasi berikut untuk daftar perubahan.
 
 ### <a name="get-azadgroup"></a>Get-AzAdGroup
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
 
 - Parameter `IncludeTotalCount` tidak didukung dan telah dihapus
 
 ### <a name="new-azadgroup"></a>New-AzAdGroup
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
 
 ### <a name="remove-azadgroup"></a>Remove-AzAdGroup
 
-- Jenis parameter input `InputObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+- Jenis input parameter `InputObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
 
 ### <a name="changes-of-group-object"></a>Perubahan Objek Grup
 
@@ -216,18 +216,18 @@ Lihat informasi berikut untuk daftar perubahan.
 
 ### <a name="get-azadgroupmember"></a>Get-AzAdGroupMember
 
-- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADObject` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphDirectoryObject`
+- Jenis output telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADObject` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphDirectoryObject`
 
 - Parameter `IncludeTotalCount` telah dihapus
 
-- Jenis parameter input `GroupObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+- Jenis input parameter `GroupObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
 
 [!INCLUDE [get-azadgroupmember-no-serviceprincipal-banner](../../includes/get-azadgroupmember-no-serviceprincipal-banner.md)]
 
 ### <a name="add-azadgroupmember"></a>Add-AzAdGroupMember
 
-- Jenis parameter input `GroupObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+- Jenis input parameter `GroupObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
 
 ### <a name="remove-azadgroupmember"></a>Remove-AzAdGroupMember
 
-- Jenis parameter input `GroupObject` telah diubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` ke `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`
+- Jenis input parameter `GroupObject` telah berubah dari `Microsoft.Azure.Commands.ActiveDirectory.PSADGroup` menjadi `Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup`

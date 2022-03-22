@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesVolume.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesVolume.md
-ms.openlocfilehash: 2320888676dfaede61349cb0bd17f845da3328c4
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d77ba1dc4cfcb48d82b907f330a365024af2034c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138169897"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921471"
 ---
 # Update-AzNetAppFilesVolume
 
 ## SYNOPSIS
 Memperbarui volume File Azure NetApp (ANF) sesuai dengan pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesvolume) untuk informasi terkini.
 
 ## SYNTAX
 

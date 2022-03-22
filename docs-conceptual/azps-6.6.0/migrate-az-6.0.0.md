@@ -1,6 +1,6 @@
 ---
 title: Panduan migrasi untuk Az 6.0.0
-description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell rilis Az versi 6.0.0.
+description: Panduan migrasi ini berisi daftar perubahan yang melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 6.0.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
@@ -8,14 +8,14 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: cc4691094f0889e4a42b8cce7afd345bb100397b
 ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 11/03/2021
 ms.locfileid: "132429552"
 ---
 # <a name="migration-guide-for-az-600"></a>Panduan Migrasi untuk Az 6.0.0
 
-Dokumen ini menjelaskan perubahan antara versi 5.0.0 dan 6.0.0 az.
+Dokumen ini menjelaskan perubahan antara Az versi 5.0.0 dan 6.0.0.
 
 - [Panduan Migrasi untuk Az 6.0.0](#migration-guide-for-az-600)
     - [Versi PowerShell yang didukung](#supported-versions-of-powershell)
@@ -40,7 +40,7 @@ Dokumen ini menjelaskan perubahan antara versi 5.0.0 dan 6.0.0 az.
         - [`Get-AzRecoveryServicesBackupJobDetail`](#get-azrecoveryservicesbackupjobdetail)
     - [Az.Storage](#azstorage)
         - [`Remove-AzRmStorageShare`](#remove-azrmstorageshare)
-    - [az.servicefabric](#azservicefabric)
+    - [Az.ServiceFabric](#azservicefabric)
         - [`Add-AzServiceFabricClusterCertificate`](#add-azservicefabricclustercertificate)
         - [`Get-AzServiceFabricManagedClusterService`](#get-azservicefabricmanagedclusterservice)
         - [`New-AzServiceFabricManagedCluster`](#new-azservicefabricmanagedcluster)
@@ -52,25 +52,25 @@ Dokumen ini menjelaskan perubahan antara versi 5.0.0 dan 6.0.0 az.
 
 ## <a name="supported-versions-of-powershell"></a>Versi PowerShell yang didukung
 
-Karena [VBA-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701) Az 6 hanya didukung pada platform berikut:
-- PowerShell 7.1: versi 7.1.3 atau lebih baru
-- PowerShell 7.0: versi 7.0.6 atau lebih baru
+Karena [CVE-2021-26701](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26701) Az 6 hanya didukung di platform berikut:
+- PowerShell 7.1: versi 7.1.3 atau lebih tinggi
+- PowerShell 7.0: versi 7.0.6 atau lebih tinggi
 - Windows PowerShell 5.1
 
-Untuk detail selengkapnya, lihat siklus [Azure PowerShell dukungan kami](https://aka.ms/azpslifecycle)
+Untuk detail lebih lanjut, lihat [siklus hidup dukungan Azure PowerShell](https://aka.ms/azpslifecycle)
 
 ## <a name="azaccounts"></a>Az.Accounts
 
 ### `Connect-AzAccount`
 
-Menghapus parameter yang sudah tidak t obsolete ManagedServiceHostName, ManagedServicePort dan ManagedServiceSecret.
+Menghapus parameter usang ManagedServiceHostName, ManagedServicePort, dan ManagedServiceSecret.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Connect-AzAccount -Identity -ManagedServiceSecret $secret
 ```
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 #To use customized MSI endpoint, please set environment variable MSI_ENDPOINT, e.g. "http://localhost:50342/oauth2/token"; to use customized MSI secret, please set environment variable MSI_SECRET.
@@ -80,9 +80,9 @@ Connect-AzAccount -Identity
 
 ### `New-AzContainerGroup`
 
-Tidak lagi mendukung parameter , , , , , , , , , , , , , , , dan tidak ada `Image` alias yang `RegistryCredential` ditemukan untuk nama `AzureFileVolumeShareName` `AzureFileVolumeAccountCredential` `AzureFileVolumeMountPath` `IdentityId` parameter `AssignIdentity` `OsType` `Cpu` `MemoryInGB` `IpAddressType` `DnsNameLabel` `Port` `Command` `EnvironmentVariable` `RegistryServerDomain` asli.
+Tidak lagi mendukung parameter `Image`, `RegistryCredential`, `AzureFileVolumeShareName`, `AzureFileVolumeAccountCredential`, `AzureFileVolumeMountPath`, `IdentityId`, `AssignIdentity`, `OsType`, `Cpu`, `MemoryInGB`, `IpAddressType`, `DnsNameLabel`, `Port`, `Command`, `EnvironmentVariable`, `RegistryServerDomain`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image nginx -OsType Linux -IpAddressType Public -Port @(8000)
@@ -105,7 +105,7 @@ State                    : Running
 Events                   : {}
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $port1 = New-AzContainerInstancePortObject -Port 8000 -Protocol TCP
@@ -121,13 +121,13 @@ eastus   test-cg Microsoft.ContainerInstance/containerGroups
 
 Cmdlet 'Remove-AzContainerGroup' tidak lagi mendukung parameter 'ResourceId' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> Find-AzResource -ResourceGroupEquals MyResourceGroup -ResourceNameEquals MyContainer | Remove-AzContainerGroup
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> Remove-AzContainerGroup -Name test-cg -ResourceGroupName test-rg
@@ -141,7 +141,7 @@ eastus   test-cg Microsoft.ContainerInstance/containerGroups
 
 Cmdlet 'Get-AzContainerGroup' tidak lagi mendukung parameter 'ResourceId' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> Find-AzResource -ResourceGroupEquals demo -ResourceNameEquals mycontainer | Get-AzContainerGroup
@@ -164,7 +164,7 @@ State                    : Running
 Events                   : {}
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> Get-AzContainerGroup
@@ -180,7 +180,7 @@ eastus   bez-cg2        Microsoft.ContainerInstance/containerGroups
 Cmdlet 'Get-AzContainerInstanceLog' tidak lagi mendukung parameter 'ResourceId' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 Cmdlet 'Get-AzContainerInstanceLog' tidak lagi mendukung parameter 'Name' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> Get-AzContainerGroup -ResourceGroupName demo -Name mycontainer | Get-AzContainerInstanceLog
@@ -191,7 +191,7 @@ Log line 3.
 Log line 4.
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> Get-AzContainerInstanceLog -ContainerGroupName test-cg -ContainerName test-container -ResourceGroupName test-rg
@@ -205,16 +205,16 @@ Cmdlet 'New-AzWvdHostPool' tidak lagi mendukung parameter 'SsoContext' dan tidak
 
 ### `Expand-AzWvdMsixImage`
 
-Cmdlet 'Expand-AzWvdMsixImage' tidak lagi mendukung tipe 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixImageUri' untuk parameter 'MsixImageUri'.
+Cmdlet 'Expand-AzWvdMsixImage' tidak lagi mendukung jenis 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixImageUri' untuk parameter 'MsixImageUri'.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $MsixImageUri = [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixImageUri]::New()
 Get-AzWvdDesktop -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName -Name DesktopName | Expand-AzWvdMsixImage -MsixImageUri $MsixImageUri
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 $MsixImageUri = [Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210201Preview.IMsixImageUri]::New()
@@ -223,10 +223,10 @@ Get-AzWvdDesktop -ResourceGroupName ResourceGroupName -ApplicationGroupName Appl
 
 ### `New-AzWvdMsixPackage`
 
-Tipe elemen untuk parameter 'PackageApplication' telah diubah dari 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixPackageApplications' menjadi 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210201Preview.IMsixPackageApplications'.
-Tipe elemen untuk parameter 'PackageDependency' telah diubah dari 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixPackageDependencies' menjadi 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210201Preview.IMsixPackageDependencies'.
+Jenis elemen untuk parameter 'PackageApplication' telah berubah dari 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixPackageApplications' menjadi 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210201Preview.IMsixPackageApplications'.
+Jenis elemen untuk parameter 'PackageDependency' telah berubah dari 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixPackageDependencies' menjadi 'Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210201Preview.IMsixPackageDependencies'.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $apps = @([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20201102Preview.IMsixPackageApplications]::New())
@@ -248,7 +248,7 @@ PS C:\> New-AzWvdMsixPackage -FullName PackageFullName `
                             -Version packageversion `
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $apps = @([Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210201Preview.IMsixPackageApplications]::New())
@@ -280,13 +280,13 @@ Cmdlet 'Update-AzWvdHostPool' tidak lagi mendukung parameter 'SsoContext' dan ti
 
 Cmdlet 'Get-AzStreamAnalyticsDefaultFunctionDefinition' tidak lagi mendukung parameter 'File' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Get-AzStreamAnalyticsDefaultFunctionDefinition -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamJob22" -File "C:\RetrieveDefaultDefinitionRequest.json" -Name "ScoreTweet"
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Get-AzStreamAnalyticsDefaultFunctionDefinition -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name mlsfunction-01 -BindingType Microsoft.MachineLearningServices -Endpoint "http://875da830-4d5f-44f1-b221-718a5f26a21d.eastus.azurecontainer.io/score"-UdfType Scalar
@@ -297,13 +297,13 @@ Input is specified in flattened parameters instead from the input file.
 
 Cmdlet 'New-AzStreamAnalyticsJob' tidak lagi mendukung parameter 'File' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 New-AzStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -File "C:\JobDefinition.json"
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 New-AzStreamAnalyticsJob -ResourceGroupName azure-rg-test -Name sajob-02-pwsh -Location westcentralus -SkuName Standard
@@ -314,13 +314,13 @@ Input is specified in flattened parameters instead from the input file.
 
 Cmdlet 'New-AzStreamAnalyticsTransformation' tidak lagi mendukung parameter 'File' dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 New-AzStreamAnalyticsTransformation -ResourceGroupName "StreamAnalytics-Default-West-US" -File "C:\Transformation.json" -JobName "StreamingJob" -Name "StreamingJobTransform"
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 New-AzStreamAnalyticsTransformation -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name tranf-01 -StreamingUnit 6 -Query "Select Id, Name from input-01"
@@ -331,20 +331,20 @@ Input is specified in flattened parameters instead from the input file.
 
 ### `Set-AzRecoveryServicesBackupProperty`
 
-Dihapus Set-AzRecoveryServicesBackupProperties bentuk jamak, gunakan Set-AzRecoveryServicesBackupProperty cmdlet untuk maju
+Menghapus alias jamak Set-AzRecoveryServicesBackupProperties, gunakan nama cmdlet Set-AzRecoveryServicesBackupProperty maju ke depan
 
 ### `Get-AzRecoveryServicesBackupJobDetail`
 
-Dihapus Get-AzRecoveryServicesBackupJobDetails bentuk jamak, gunakan Get-AzRecoveryServicesBackupJobDetail cmdlet untuk maju
+Menghapus alias jamak Get-AzRecoveryServicesBackupJobDetails, gunakan nama cmdlet Get-AzRecoveryServicesBackupJobDetail maju ke depan
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $jobDetails = Get-AzRecoveryServicesBackupJobDetails -VaultId $vault.ID -Job $job
 $jobDetails2 = Get-AzRecoveryServicesBackupJobDetails -VaultId $vault.ID -JobId $job.JobId
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 $jobDetails = Get-AzRecoveryServicesBackupJobDetail -VaultId $vault.ID -Job $job
@@ -355,39 +355,39 @@ $jobDetails2 = Get-AzRecoveryServicesBackupJobDetail -VaultId $vault.ID -JobId $
 
 ### `Remove-AzRmStorageShare`
 
-Cmdlet 'Remove-AzRmStorageShare' dapat menghapus berbagi dengan snapshot secara default sebelum; tapi setelah perubahan, berbagi dengan snapshot akan gagal secara default, perlu menambahkan parameter "-Sertakan Snapshot" untuk membuat keberhasilan.
+Cmdlet 'Remove-AzRmStorageShare' dapat menghapus berbagi dengan snapshot secara default sebelumnya; tetapi setelah berbagi penghapusan perubahan dengan snapshot gagal secara default, perlu menambahkan parameter "-Include Snapshots" untuk menyukseskan penghapusan.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Remove-AzRmStorageShare -ResourceGroupName $resourceGroupName -StorageAccountName $accountName -Name $shareName
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Remove-AzRmStorageShare -ResourceGroupName $resourceGroupName -StorageAccountName $accountName -Name $shareName -Force -Include Snapshots
 ```
 
-## <a name="azservicefabric"></a>az.servicefabric
+## <a name="azservicefabric"></a>Az.ServiceFabric
 
 ### `Add-AzServiceFabricClusterCertificate`
 
-cmdlet ini telah dihapus sepenuhnya. ikuti instruksi di [sini](/azure/service-fabric/service-fabric-cluster-security-update-certs-azure#add-a-secondary-certificate-using-azure-resource-manager) untuk menambahkan sertifikat kluster.
+cmdlet ini telah dihapus sepenuhnya. harap ikuti petunjuk [di sini](/azure/service-fabric/service-fabric-cluster-security-update-certs-azure#add-a-secondary-certificate-using-azure-resource-manager) untuk menambahkan sertifikat kluster.
 
 ### `Get-AzServiceFabricManagedClusterService`
 
-Ubah model PSManagedService untuk menghindari penggunaan parameter properti secara langsung dari sdk. Sekarang semua properti berada di tingkat pertama objek.
-Dan menghapus parameter yang sudah tidak berlaku InstanceCloseDelayDuration, DropSourceReplicaOnMove dan ServiceDnsName
+Ubah model PSManagedService untuk menghindari penggunaan parameter properti langsung dari sdk. Kini semua properti berada di tingkat pertama objek.
+Dan hapus parameter InstanceCloseDelayDuration, DropSourceReplicaOnMove, dan ServiceDnsName yang tidak digunakan lagi
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $service = Get-AzServiceFabricManagedClusterService -ResourceId $resourceId
 $statelessService.Properties.ProvisioningState
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 $service = Get-AzServiceFabricManagedClusterService -ResourceId $resourceId
@@ -396,21 +396,21 @@ $statelessService.ProvisioningState
 
 ### `New-AzServiceFabricManagedCluster`
 
-Menghapus parameter yang sudah tidak berlaku ReverseProxyEndpointPort.
+Hapus parameter ReverseProxyEndpointPort yang tidak digunakan lagi.
 
 ### `New-AzServiceFabricManagedClusterService`
 
-Ubah model PSManagedService untuk menghindari penggunaan parameter properti secara langsung dari sdk. Sekarang semua properti berada di tingkat pertama objek.
-Dan menghapus parameter yang sudah tidak berlaku InstanceCloseDelayDuration, DropSourceReplicaOnMove dan ServiceDnsName
+Ubah model PSManagedService untuk menghindari penggunaan parameter properti langsung dari sdk. Kini semua properti berada di tingkat pertama objek.
+Dan hapus parameter InstanceCloseDelayDuration, DropSourceReplicaOnMove, dan ServiceDnsName yang tidak digunakan lagi
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $service = New-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateless -InstanceCount -1 -PartitionSchemaSingleton
 $statelessService.Properties.ProvisioningState
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 $service = New-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $appName -Name $serviceName -Type $serviceTypeName -Stateless -InstanceCount -1 -PartitionSchemaSingleton
@@ -419,22 +419,22 @@ $statelessService.ProvisioningState
 
 ### `Remove-AzServiceFabricClusterCertificate`
 
-cmdlet ini telah dihapus sepenuhnya. ikuti instruksi di [sini](/azure/service-fabric/service-fabric-cluster-security-update-certs-azure#remove-a-cluster-certificate-using-the-portal) untuk menambahkan sertifikat kluster.
+cmdlet ini telah dihapus sepenuhnya. harap ikuti petunjuk [di sini](/azure/service-fabric/service-fabric-cluster-security-update-certs-azure#remove-a-cluster-certificate-using-the-portal) untuk menambahkan sertifikat kluster.
 
 ### `Remove-AzServiceFabricManagedClusterService`
 
-Ubah model PSManagedService untuk menghindari penggunaan parameter properti secara langsung dari sdk. Sekarang semua properti berada di tingkat pertama objek.
+Ubah model PSManagedService untuk menghindari penggunaan parameter properti langsung dari sdk. Kini semua properti berada di tingkat pertama objek.
 
 ### `Set-AzServiceFabricManagedCluster`
 
-Menghapus parameter yang sudah tidak berlaku ReverseProxyEndpointPort.
+Hapus parameter ReverseProxyEndpointPort yang tidak digunakan lagi.
 
 ### `Set-AzServiceFabricManagedClusterService`
 
-Ubah model PSManagedService untuk menghindari penggunaan parameter properti secara langsung dari sdk. Sekarang semua properti berada di tingkat pertama objek.
-Dan menghapus parameter yang sudah tidak berlaku InstanceCloseDelayDuration, DropSourceReplicaOnMove dan ServiceDnsName
+Ubah model PSManagedService untuk menghindari penggunaan parameter properti langsung dari sdk. Kini semua properti berada di tingkat pertama objek.
+Dan hapus parameter InstanceCloseDelayDuration, DropSourceReplicaOnMove, dan ServiceDnsName yang tidak digunakan lagi
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $service = Get-AzServiceFabricManagedClusterService -ResourceId $resourceId
@@ -442,7 +442,7 @@ $statelessService.Properties.MinInstanceCount = 3
 service | Set-AzServiceFabricManagedClusterService
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 $service = Get-AzServiceFabricManagedClusterService -ResourceId $resourceId

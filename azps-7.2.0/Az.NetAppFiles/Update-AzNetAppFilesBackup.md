@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesBackup.md
-ms.openlocfilehash: 8d1158c17330c6ec6a740bc25faff375d6894b0c
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8e343419e8fe32497465f37f04edaa3d6ddc8f25
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165168"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921561"
 ---
 # Update-AzNetAppFilesBackup
 
 ## SYNOPSIS
 Memperbarui cadangan Azure NetApp Files (ANF) untuk pengubah opsional yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesbackup) untuk informasi terkini.
 
 ## SYNTAX
 

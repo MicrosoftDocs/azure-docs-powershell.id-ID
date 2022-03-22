@@ -1,6 +1,6 @@
 ---
 title: Panduan migrasi untuk Az 5.0.0
-description: Panduan migrasi ini berisi daftar perubahan terbaru yang dibuat Azure PowerShell di rilis Az versi 5.0.0.
+description: Panduan migrasi ini berisi daftar perubahan yang melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 5.0.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
@@ -8,14 +8,14 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: 220871cd4537838cd84eeec966ea9fbf3dbdb6dc
 ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 11/03/2021
 ms.locfileid: "132429556"
 ---
 # <a name="migration-guide-for-az-500"></a>Panduan Migrasi untuk Az 5.0.0
 
-Dokumen ini menjelaskan perubahan antara versi 4.0.0 dan 5.0.0 az.
+Dokumen ini menjelaskan perubahan antara Az versi 4.0.0 dan 5.0.0.
 
 - [Panduan Migrasi untuk Az 5.0.0](#migration-guide-for-az-500)
   - [Az.Aks](#azaks)
@@ -68,7 +68,7 @@ Dokumen ini menjelaskan perubahan antara versi 4.0.0 dan 5.0.0 az.
     - [Test-AzResourceGroupDeployment](#test-azresourcegroupdeployment)
     - [Get-AzManagementGroupDeploymentWhatIfResult](#get-azmanagementgroupdeploymentwhatifresult)
     - [Get-AzTenantDeploymentWhatIfResult](#get-aztenantdeploymentwhatifresult)
-  - [az.sql](#azsql)
+  - [Az.Sql](#azsql)
     - [Set-AzSqlServerActiveDirectoryAdministrator](#set-azsqlserveractivedirectoryadministrator)
   - [Az.Synapse](#azsynapse)
     - [New-AzSynapseSqlPool](#new-azsynapsesqlpool)
@@ -85,18 +85,18 @@ Dokumen ini menjelaskan perubahan antara versi 4.0.0 dan 5.0.0 az.
 
 ### <a name="new-azakscluster"></a>New-AzAksCluster
 
-- Tidak lagi mendukung parameter `NodeOsType` dan tidak ada alias yang ditemukan untuk nama parameter asli, akan selalu `Linux` .
-- Tidak lagi mendukung alias `ClientIdAndSecret` untuk parameter `ServicePrincipalIdAndSecret` .
-- Nilai default dari `NodeVmSetType` diubah ke `AvailabilitySet` `VirtualMachineScaleSets` .
-- Nilai default dari `NetworkPlugin` diubah ke `none` `azure` .
+- Tidak lagi mendukung parameter `NodeOsType` dan tidak ada alias yang ditemukan untuk nama parameter asli, parameter akan selalu berupa `Linux`.
+- Tidak lagi mendukung alias `ClientIdAndSecret` untuk parameter `ServicePrincipalIdAndSecret`.
+- Nilai default `NodeVmSetType` diubah dari `AvailabilitySet` menjadi `VirtualMachineScaleSets`.
+- Nilai default `NetworkPlugin` diubah dari `none` menjadi `azure`.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 New-AzAksCluster -ResourceGroupName myResourceGroup -Name myCluster -WindowsProfileAdminUserName azureuser -WindowsProfileAdminUserPassword $cred -NetworkPlugin azure -NodeOsType Linux -ClientIdAndSecret xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 New-AzAksCluster -ResourceGroupName myResourceGroup -Name myCluster -WindowsProfileAdminUserName azureuser -WindowsProfileAdminUserPassword $cred -NodeVmSetType AvailabilitySet  -ServicePrincipalIdAndSecret xxx
@@ -104,15 +104,15 @@ New-AzAksCluster -ResourceGroupName myResourceGroup -Name myCluster -WindowsProf
 
 ### <a name="set-azakscluster"></a>Set-AzAksCluster
 
-Tidak lagi mendukung alias `ClientIdAndSecret` untuk parameter `ServicePrincipalIdAndSecret` .
+Tidak lagi mendukung alias `ClientIdAndSecret` untuk parameter `ServicePrincipalIdAndSecret`.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Get-AzAksCluster -ResourceGroupName xxx -Name xxx | Set-AzAksCluster -ClientIdAndSecret xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Get-AzAksCluster -ResourceGroupName xxx -Name xxx | Set-AzAksCluster -ServicePrincipalIdAndSecret xxx
@@ -124,31 +124,31 @@ Get-AzAksCluster -ResourceGroupName xxx -Name xxx | Set-AzAksCluster -ServicePri
 
 Tidak lagi mendukung parameter `StorageAccountName` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 New-AzContainerRegistry -Name $name -ResourceGroupName $rg -Location $location -SKU Classic -StorageAccountName $storage
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
-`Classic` sudah tidak berlaku dan dihapus `StorageAccountName` karena hanya berfungsi dengan Registri Wadah Klasik.
+`Classic` tidak digunakan lagi dan `StorageAccountName` dihapus karena hanya berfungsi dengan Classic Container Registry.
 
 ## <a name="azfunctions"></a>Az.Functions
 
 ### <a name="get-azfunctionapp"></a>Get-AzFunctionApp
 
-Removed `IncludeSlot` switch parameter from all but one parameter set of `Get-AzFunctionApp` . Cmdlet kini mendukung pengambilan slot penggunaan di hasil saat `-IncludeSlot` ditentukan.
-Fungsionalitas ini rusak dalam versi cmdlet sebelumnya. Namun, masalah ini telah diperbaiki.
+Menghapus parameter sakelar `IncludeSlot` dari semua kecuali satu set parameter dari `Get-AzFunctionApp`. Cmdlet sekarang mendukung pengambilan slot penyebaran dalam hasil saat `-IncludeSlot` ditentukan.
+Fungsionalitas ini telah rusak di versi cmdlet sebelumnya. Namun, kini telah diperbaiki.
 
 ### <a name="new-azfunctionapp"></a>New-AzFunctionApp
 
-- Diperbaiki `-DisableApplicationInsights` agar tidak ada proyek wawasan aplikasi yang dibuat saat opsi ini `New-AzFunctionApp` ditentukan.
-- Menghapus dukungan untuk membuat aplikasi fungsi PowerShell 6.2 karena PowerShell 6.2 adalah EOL. Panduan terbaru bagi pelanggan adalah membuat aplikasi fungsi PowerShell 7.0 sebagai gantinya.
-- Mengubah versi runtime default dalam Functions versi 3 di Windows untuk aplikasi fungsi PowerShell dari 6.2 menjadi 7.0 saat `RuntimeVersion` parameter tidak ditentukan.
-- Mengubah versi runtime default dalam Functions versi 3 di Windows dan Linux untuk aplikasi fungsi Node dari 10 sampai 12 ketika `RuntimeVersion` parameter tidak ditentukan. Namun, pengguna masih dapat membuat aplikasi fungsi Node 10 dengan `-Runtime Node` menentukan dan `-RuntimeVersion 10` . Mengubah versi runtime default dalam Fungsi versi 3 di aplikasi fungsi Python dari 3.7 menjadi 3.8 ketika `RuntimeVersion` parameter tidak ditentukan. Namun, pengguna masih dapat membuat aplikasi fungsi Python 3.7 dengan `-Runtime Python` menentukan dan `-RuntimeVersion 3.7` .
+- Memperbaiki `-DisableApplicationInsights` di `New-AzFunctionApp` sehingga tidak proyek wawasan aplikasi yang dibuat ketika opsi ini ditentukan.
+- Menghapus dukungan untuk membuat aplikasi fungsi PowerShell 6.2 karena PowerShell 6.2 adalah EOL. Panduan untuk pelanggan saat ini adalah untuk membuat aplikasi fungsi PowerShell 7.0 sebagai gantinya.
+- Mengubah versi runtime default dalam Fungsi versi 3 di Windows untuk aplikasi fungsi PowerShell dari 6.2 hingga 7.0 saat parameter `RuntimeVersion` tidak ditentukan.
+- Mengubah versi runtime default dalam Fungsi versi 3 di Windows dan Linux untuk aplikasi fungsi Node dari 10 hingga 12 saat parameter `RuntimeVersion` tidak ditentukan. Namun, pengguna dapat tetap membuat aplikasi fungsi Node 10 dengan menentukan `-Runtime Node` dan `-RuntimeVersion 10`. Mengubah versi runtime default dalam Fungsi versi 3 di Linux untuk aplikasi fungsi Python dari 3.7 hingga 3.8 saat parameter `RuntimeVersion` tidak ditentukan. Namun, pengguna dapat tetap membuat aplikasi fungsi Python 3.7 dengan menentukan `-Runtime Python` dan `-RuntimeVersion 3.7`.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 # Create a Node 10 function app on Linux
@@ -176,7 +176,7 @@ New-AzFunctionApp -ResourceGroupName $rd `
                   -Runtime Python
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 # Create a Node 10 function app on Linux
@@ -212,43 +212,43 @@ New-AzFunctionApp -ResourceGroupName $rd `
 
 Tidak lagi mendukung parameter `DisableSoftDelete` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 # Opt out soft delete while creating a key vault
 New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US' -DisableSoftDelete
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
-Kemampuan untuk memperbarui pengaturan penghapusan sementara tidak berlaku lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
+Kemampuan untuk memperbarui pengaturan penghapusan sementara tidak digunakan lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
 
 ### <a name="update-azkeyvault"></a>Update-AzKeyVault
 
-Tidak lagi mendukung parameter `EnableSoftDelete` , dan tidak ada alias yang ditemukan untuk nama parameter `SoftDeleteRetentionInDays` asli.
+Tidak lagi mendukung parameter `EnableSoftDelete`, `SoftDeleteRetentionInDays`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Update-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -EnableSoftDelete -SoftDeleteRetentionInDays 15
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
-Kemampuan untuk memperbarui pengaturan penghapusan sementara tidak berlaku lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
+Kemampuan untuk memperbarui pengaturan penghapusan sementara tidak digunakan lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
 
 ### <a name="get-azkeyvaultsecret"></a>Get-AzKeyVaultSecret
 
-Properti `SecretValueText` tipe `Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret` telah dihapus. Terapkan pada `-AsPlainText` panggilan untuk mendapatkan teks biasa rahasia, atau penggunaan tipe dalam skrip `$secret.SecretValue` `SecureString` Anda.
+Properti `SecretValueText` jenis `Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret` telah dihapus. Terapkan `-AsPlainText` pada panggilan untuk mendapatkan rahasia teks biasa, atau gunakan `$secret.SecretValue` dari jenis `SecureString` di skrip Anda.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $secret = Get-AzKeyVaultSecret -VaultName myVault -Name mySecret
 $secretInPlainText = $secret.SecretValueText
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 $secretInPlainText = Get-AzKeyVaultSecret -VaultName myVault -Name mySecret -AsPlainText
@@ -260,13 +260,13 @@ $secretInPlainText = Get-AzKeyVaultSecret -VaultName myVault -Name mySecret -AsP
 
 Tidak lagi mendukung parameter `ResourceId` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Get-AzManagedServicesDefinition -ResourceId xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Get-AzManagedServicesDefinition -Id xxx
@@ -274,15 +274,15 @@ Get-AzManagedServicesDefinition -Id xxx
 
 ### <a name="new-azmanagedservicesassignment"></a>New-AzManagedServicesAssignment
 
-Tidak lagi mendukung parameter `RegistrationDefinitionName` , dan tidak ada alias yang ditemukan untuk nama parameter `RegistrationDefinitionResourceId` asli.
+Tidak lagi mendukung parameter `RegistrationDefinitionName`, `RegistrationDefinitionResourceId`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 New-AzManagedServicesAssignment -RegistrationDefinitionName xxx -Scope xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 New-AzManagedServicesAssignment -Scope xxx -RegistrationDefinition xxx
@@ -290,15 +290,15 @@ New-AzManagedServicesAssignment -Scope xxx -RegistrationDefinition xxx
 
 ### <a name="remove-azmanagedservicesassignment"></a>Remove-AzManagedServicesAssignment
 
-Tidak lagi mendukung parameter `Id` , dan tidak ada alias yang ditemukan untuk nama parameter `ResourceId` asli.
+Tidak lagi mendukung parameter `Id`, `ResourceId`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Remove-AzManagedServicesAssignment -ResourceId xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Get-AzManagedServicesAssignment -Scope xxx | Remove-AzManagedServicesAssignment
@@ -306,15 +306,15 @@ Get-AzManagedServicesAssignment -Scope xxx | Remove-AzManagedServicesAssignment
 
 ### <a name="remove-azmanagedservicesdefinition"></a>Remove-AzManagedServicesDefinition
 
-Tidak lagi mendukung parameter `Id` , dan tidak ada alias yang ditemukan untuk nama parameter `ResourceId` asli.
+Tidak lagi mendukung parameter `Id`, `ResourceId`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Remove-AzManagedServicesDefinition -ResourceId xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Get-AzManagedServicesDefinition -Scope xxx | Remove-AzManagedServicesDefinition
@@ -326,13 +326,13 @@ Get-AzManagedServicesDefinition -Scope xxx | Remove-AzManagedServicesDefinition
 
 Tidak lagi mendukung parameter `ApiVersion` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Get-AzManagementGroupDeployment -ManagementGroupId xxx -Name xxx -ApiVersion xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Get-AzManagementGroupDeployment -ManagementGroupId xxx -Name xxx
@@ -340,141 +340,141 @@ Get-AzManagementGroupDeployment -ManagementGroupId xxx -Name xxx
 
 ### <a name="get-azmanagementgroupdeploymentoperation"></a>Get-AzManagementGroupDeploymentOperation
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azdeployment"></a>Get-AzDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azdeploymentoperation"></a>Get-AzDeploymentOperation
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azdeploymentwhatifresult"></a>Get-AzDeploymentWhatIfResult
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-aztenantdeployment"></a>Get-AzTenantDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-aztenantdeploymentoperation"></a>Get-AzTenantDeploymentOperation
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="new-azmanagementgroupdeployment"></a>New-AzManagementGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="new-azdeployment"></a>New-AzDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="new-aztenantdeployment"></a>New-AzTenantDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="remove-azmanagementgroupdeployment"></a>Remove-AzManagementGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="remove-azdeployment"></a>Remove-AzDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="remove-aztenantdeployment"></a>Remove-AzTenantDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="save-azmanagementgroupdeploymenttemplate"></a>Save-AzManagementGroupDeploymentTemplate
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="save-azdeploymenttemplate"></a>Save-AzDeploymentTemplate
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="save-aztenantdeploymenttemplate"></a>Save-AzTenantDeploymentTemplate
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="stop-azmanagementgroupdeployment"></a>Stop-AzManagementGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="stop-azdeployment"></a>Stop-AzDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="stop-aztenantdeployment"></a>Stop-AzTenantDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="test-azmanagementgroupdeployment"></a>Test-AzManagementGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="test-azdeployment"></a>Test-AzDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="test-aztenantdeployment"></a>Test-AzTenantDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azresourcegroupdeployment"></a>Get-AzResourceGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azresourcegroupdeploymentoperation"></a>Get-AzResourceGroupDeploymentOperation
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azresourcegroupdeploymentwhatifresult"></a>Get-AzResourceGroupDeploymentWhatIfResult
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="new-azresourcegroupdeployment"></a>New-AzResourceGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="remove-azresourcegroupdeployment"></a>Remove-AzResourceGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="save-azresourcegroupdeploymenttemplate"></a>Save-AzResourceGroupDeploymentTemplate
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="stop-azresourcegroupdeployment"></a>Stop-AzResourceGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="test-azresourcegroupdeployment"></a>Test-AzResourceGroupDeployment
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-azmanagementgroupdeploymentwhatifresult"></a>Get-AzManagementGroupDeploymentWhatIfResult
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
 ### <a name="get-aztenantdeploymentwhatifresult"></a>Get-AzTenantDeploymentWhatIfResult
 
-Sama dengan `Get-AzManagementGroupDeployment` .
+Sama halnya dengan `Get-AzManagementGroupDeployment`.
 
-## <a name="azsql"></a>az.sql
+## <a name="azsql"></a>Az.Sql
 
 ### <a name="set-azsqlserveractivedirectoryadministrator"></a>Set-AzSqlServerActiveDirectoryAdministrator
 
 Tidak lagi mendukung parameter `IsAzureADOnlyAuthentication` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Set-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName 'ResourceGroup01' -ServerName 'Server01' -DisplayName 'DBAs' -IsAzureADOnlyAuthentication
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Set-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName 'ResourceGroup01' -ServerName 'Server01' -DisplayName 'DBAs'
@@ -484,15 +484,15 @@ Set-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName 'ResourceGroup01'
 
 ### <a name="new-azsynapsesqlpool"></a>New-AzSynapseSqlPool
 
-Tidak lagi mendukung parameter , , , , , , , , , , , , , dan `FromBackup` `FromRestorePoint` tidak ada alias yang `BackupResourceGroupName` ditemukan untuk `BackupWorkspaceName` nama `BackupSqlPoolName` parameter `BackupSqlPoolObject` `BackupResourceId` `SourceResourceGroupName` `SourceWorkspaceName` `SourceSqlPoolName` `SourceSqlPoolObject` `SourceResourceId` `RestorePoint` asli.
+Tidak lagi mendukung parameter `FromBackup`, `FromRestorePoint`, `BackupResourceGroupName`, `BackupWorkspaceName`, `BackupSqlPoolName`, `BackupSqlPoolObject`, `BackupResourceId`, `SourceResourceGroupName`, `SourceWorkspaceName`, `SourceSqlPoolName`, `SourceSqlPoolObject`, `SourceResourceId`, `RestorePoint`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 New-AzSynapseSqlPool -FromBackup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BackupWorkspaceName ContosoWorkspace -BackupSqlPoolName ExistingContosoSqlPool
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> New-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -PerformanceLevel DW200c
@@ -500,7 +500,7 @@ PS C:\> New-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPoo
 
 ### <a name="update-azsynapsesqlpool"></a>Update-AzSynapseSqlPool
 
-Tidak lagi mendukung parameter `Suspend` , dan tidak ada alias yang ditemukan untuk nama parameter `Resume` asli.
+Tidak lagi mendukung parameter `Suspend`, `Resume`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
 ## <a name="aznetwork"></a>Az.Network
 
@@ -508,13 +508,13 @@ Tidak lagi mendukung parameter `Suspend` , dan tidak ada alias yang ditemukan un
 
 Tidak lagi mendukung parameter `PrivateLinkResourceType` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 Approve-AzPrivateEndpointConnection -ResourceGroupName xxx -ServiceName xxx -Name xxx -PrivateLinkResourceType 'Microsoft.Network/privateLinkServices' -Description xxx
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 Approve-AzPrivateEndpointConnection -ResourceGroupName xxx -ServiceName xxx -Name xxx -Description xxx
@@ -522,25 +522,25 @@ Approve-AzPrivateEndpointConnection -ResourceGroupName xxx -ServiceName xxx -Nam
 
 ### <a name="deny-azprivateendpointconnection"></a>Deny-AzPrivateEndpointConnection
 
-Sama dengan `Approve-AzPrivateEndpointConnection` .
+Sama halnya dengan `Approve-AzPrivateEndpointConnection`.
 
 ### <a name="get-azprivateendpointconnection"></a>Get-AzPrivateEndpointConnection
 
-Sama dengan `Approve-AzPrivateEndpointConnection` .
+Sama halnya dengan `Approve-AzPrivateEndpointConnection`.
 
 ### <a name="remove-azprivateendpointconnection"></a>Remove-AzPrivateEndpointConnection
 
-Sama dengan `Approve-AzPrivateEndpointConnection` .
+Sama halnya dengan `Approve-AzPrivateEndpointConnection`.
 
 ### <a name="set-azprivateendpointconnection"></a>Set-AzPrivateEndpointConnection
 
-Sama dengan `Approve-AzPrivateEndpointConnection` .
+Sama halnya dengan `Approve-AzPrivateEndpointConnection`.
 
 ### <a name="new-aznetworkwatcherconnectionmonitorendpointobject"></a>New-AzNetworkWatcherConnectionMonitorEndpointObject
 
-Tidak lagi mendukung parameter `FilterType` , dan tidak ada alias yang ditemukan untuk nama parameter `FilterItem` asli.
+Tidak lagi mendukung parameter `FilterType`, `FilterItem`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 $MySrcResourceId1 = '/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/myresourceGroup/providers/Microsoft.OperationalInsights/workspaces/myworkspace'
@@ -548,7 +548,7 @@ $SrcEndpointFilterItem1 =New-AzNetworkWatcherConnectionMonitorEndpointFilterItem
 $SourceEndpointObject1 = New-AzNetworkWatcherConnectionMonitorEndPointObject -Name 'workspaceEndpoint' -ResourceId $MySrcResourceId1 -FilterType Include -FilterItem $SrcEndpointFilterItem1
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 MySrcResourceId1 = '/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/myresourceGroup/providers/Microsoft.OperationalInsights/workspaces/myworkspace'

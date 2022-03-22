@@ -1,5 +1,5 @@
 ---
-description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 2.0.
+description: Panduan migrasi ini berisi daftar perubahan berisiko yang dibuat untuk Azure PowerShell dalam rilis Az versi 2.0.
 ms.custom: devx-track-azurepowershell
 ms.date: 02/08/2022
 ms.devlang: powershell
@@ -8,26 +8,26 @@ ms.topic: conceptual
 title: Panduan migrasi untuk Az 2.0.0
 ms.openlocfilehash: ddf03ec39efb93170da393a39caa944174bcdd3b
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855891"
 ---
 # <a name="migration-guide-for-az-200"></a>Panduan Migrasi untuk Az 2.0.0
 
-Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
+Dokumen ini menjelaskan perubahan antara Az versi 1.0.0 dan 2.0.0
 
 ## <a name="table-of-contents"></a>Daftar Isi
-- [Perubahan pemecahan modul](#module-breaking-changes)
+- [Perubahan modul yang dapat menyebabkan gangguan](#module-breaking-changes)
   - [Az.Compute](#azcompute)
   - [Az.HDInsight](#azhdinsight)
   - [Az.Storage](#azstorage)
 
-## <a name="module-breaking-changes"></a>Perubahan pemecahan modul
+## <a name="module-breaking-changes"></a>Perubahan modul yang dapat menyebabkan gangguan
 
 ### <a name="azcompute"></a>Az.Compute
 
-- Menghapus `Managed` Parameter dari `New-AzAvailabilitySet` dan `Update-AzAvailabilitySet` cmdlet yang mendukung penggunaan ```Sku = Aligned```
+- Menghapus Parameter `Managed` dari cmdlet `New-AzAvailabilitySet` dan `Update-AzAvailabilitySet` yang mendukung penggunaan ```Sku = Aligned```
 
   #### <a name="before"></a>Sebelumnya
 
@@ -40,11 +40,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   ```powershell
   Update-AzAvailabilitySet -Sku Aligned
   ```
-- Untuk konsistensi, parameter yang dihapus `Image` dari parameter 'ByName' dan 'ByResourceId' diatur dalam `Update-AzImage`
+- Untuk konsistensi, parameter `Image` dihapus dari set parameter 'ByName' dan 'ByResourceId' di `Update-AzImage`
 
   #### <a name="before"></a>Sebelumnya
 
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi ImageName yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi ImageName yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
 
   ```powershell
   Update-AzImage -ResourceGroupName $Rg -ImageName $Name -Image $Image -Tag $tags
@@ -60,11 +60,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Update-AzImage -ResourceId $Id -Tag $tags
   ```
 
-- Untuk konsistensi, parameter yang dihapus `Name` dari kumpulan parameter 'ByObject' dan 'ByResourceId' di `Restart-AzVM`
+- Untuk konsistensi,parameter `Name` dihapus dari set parameter 'ByObject' dan 'ByResourceId' di `Restart-AzVM`
 
   #### <a name="before"></a>Sebelumnya
 
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi Nama yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi Nama yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
   ```powershell
   Restart-AzVM -InputObject $VM -Name $Name
 
@@ -79,11 +79,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Restart-AzVM -ResourceId $Id
   ```
 
-- Untuk konsistensi, parameter yang dihapus `Name` dari kumpulan parameter 'ByObject' dan 'ByResourceId' di `Start-AzVM`
+- Untuk konsistensi, parameter `Name` dihapus dari set parameter 'ByObject' dan 'ByResourceId' di `Start-AzVM`
 
   #### <a name="before"></a>Sebelumnya
 
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi Nama yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi Nama yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
 
   ```powershell
   Start-AzVM -InputObject $VM -Name $Name
@@ -99,11 +99,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Start-AzVM -ResourceId $Id
   ```
 
-- Untuk konsistensi, parameter yang dihapus `Name` dari kumpulan parameter 'ByObject' dan 'ByResourceId' di `Stop-AzVM`
+- Untuk konsistensi, parameter `Name` dihapus dari set parameter 'ByObject' dan 'ByResourceId' di `Stop-AzVM`
 
   #### <a name="before"></a>Sebelumnya
 
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi Nama yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi Nama yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
 
   ```powershell
   Stop-AzVM -InputObject $VM -Name $Name
@@ -119,11 +119,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Stop-AzVM -ResourceId $Id
   ```
 
-- Untuk konsistensi, parameter yang dihapus `Name` dari kumpulan parameter 'ByObject' dan 'ByResourceId' di `Remove-AzVM`
+- Untuk konsistensi, parameter `Name` dihapus dari set parameter 'ByObject' dan 'ByResourceId' di `Remove-AzVM`
 
   #### <a name="before"></a>Sebelumnya
 
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi Nama yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi Nama yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
 
   ```powershell
   Remove-AzVM -InputObject $VM -Name $Name
@@ -139,11 +139,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Remove-AzVM -ResourceId $Id
   ```
 
-- Untuk konsistensi, parameter yang dihapus `Name` dari kumpulan parameter 'ByObject' dan 'ByResourceId' di `Set-AzVM`
+- Untuk konsistensi, parameter `Name` dihapus dari set parameter 'ByObject' dan 'ByResourceId' di `Set-AzVM`
 
   #### <a name="before"></a>Sebelumnya
 
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi Nama yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi Nama yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
 
   ```powershell
   Set-AzVM -InputObject $VM -Name $Name ...
@@ -159,10 +159,10 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Set-AzVM -ResourceId $Id ...
   ```
 
-- Untuk konsistensi, parameter yang dihapus `Name` dari kumpulan parameter 'ByObject' dan 'ByResourceId' di `Save-AzVMImage`
+- Untuk konsistensi, parameter `Name` dihapus dari set parameter 'ByObject' dan 'ByResourceId' di `Save-AzVMImage`
 
   #### <a name="before"></a>Sebelumnya
-  Perhatikan bahwa kode di bawah ini berfungsi, tetapi Nama yang diteruskan tidak digunakan, sehingga menghapus parameter ini tidak memiliki dampak fungsional.
+  Perhatikan bahwa kode berikut bersifat fungsional, tetapi Nama yang diteruskan tidak digunakan sehingga menghapus parameter ini tidak berdampak pada fungsi.
   ```powershell
   Save-AzVMImage -InputObject $VM -Name $Name ...
 
@@ -175,7 +175,7 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Save-AzVMImage -ResourceId $Id ...
   ```
 
-- Menambahkan properti ProtectionPolicy untuk merangkum `ProtectFromScaleIn` properti di `PSVirtualMachineScaleSetVM`
+- Menambahkan properti ProtectionPolicy untuk merangkum properti `ProtectFromScaleIn` di `PSVirtualMachineScaleSetVM`
 
   #### <a name="before"></a>Sebelumnya
 
@@ -204,7 +204,7 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
 
   ```
 
-- Menambahkan ```EncryptionSettingsCollection``` Properti untuk melampirkan `EncryptionSettings` properti di `PSDisk`
+- Menambahkan Properti ```EncryptionSettingsCollection``` untuk menyertakan properti `EncryptionSettings` di `PSDisk`
 
   #### <a name="before"></a>Sebelumnya
 
@@ -238,7 +238,7 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   $update.EncryptionSettingsCollection.EncryptionSettings
   ```
 
-- Menambahkan ```EncryptionSettingsCollection``` Properti untuk melampirkan `EncryptionSettings` properti di `PSSnapshot`
+- Menambahkan Properti ```EncryptionSettingsCollection``` untuk menyertakan properti `EncryptionSettings` di `PSSnapshot`
 
   #### <a name="before"></a>Sebelumnya
 
@@ -272,7 +272,7 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   $update.EncryptionSettingsCollection.EncryptionSettings
   ```
 
-- Properti yang dihapus `VirtualMachineProfile` dari `PSVirtualMachineScaleSet`
+- Menghapus properti `VirtualMachineProfile` dari `PSVirtualMachineScaleSet`
 
   #### <a name="before"></a>Sebelumnya
 
@@ -288,11 +288,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   $vmss.AdditionalCapabilities.UltraSSDEnabled = $true
   ```
 
-- Cmdlet `Set-AzVMBootDiagnostic` dihapus alias ke `Set-AzVMBootDiagnostics`
+- Cmdlet `Set-AzVMBootDiagnostic` menghapus alias untuk `Set-AzVMBootDiagnostics`
 
   #### <a name="before"></a>Sebelumnya
 
-  Menggunakan alias usang
+  Menggunakan alias yang tidak digunakan lagi
 
   ```powershell
   Set-AzVMBootDiagnostics
@@ -304,11 +304,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
   Set-AzVMBootDIagnostic
   ```
 
-- Cmdlet `Export-AzLogAnalyticThrottledRequest` dihapus alias ke `Export-AzLogAnalyticThrottledRequests`
+- Cmdlet `Export-AzLogAnalyticThrottledRequest` menghapus alias untuk `Export-AzLogAnalyticThrottledRequests`
 
   #### <a name="before"></a>Sebelumnya
 
-  Menggunakan alias terdepresiasi
+  Menggunakan alias yang tidak digunakan lagi
 
   ```powershell
   Export-AzLogAnalyticThrottledRequests
@@ -322,11 +322,11 @@ Dokumen ini menjelaskan perubahan antara az versi 1.0.0 dan 2.0.0
 
 ### <a name="azhdinsight"></a>Az.HDInsight
 
-- `Grant-AzHDInsightHttpServicesAccess` Menghapus dan `Revoke-AzHDInsightHttpServicesAccess` cmdlets. Ini tidak lagi diperlukan karena akses HTTP selalu diaktifkan pada semua klaster HDInsight.
-- Menambahkan cmdlet baru `Set-AzHDInsightGatewayCredential`  . Gunakan cmdlet ini untuk mengubah nama pengguna dan kata sandi HTTP gateway (menggantikan `Grant-AzHDInsightHttpServicesAccess`).
-- `Get-AzHDInsightJobOutput` Memperbarui cmdlet untuk mendukung akses berbasis peran granular ke kunci penyimpanan.
+- Menghapus cmdlet `Grant-AzHDInsightHttpServicesAccess` dan `Revoke-AzHDInsightHttpServicesAccess`. Hal ini tidak lagi diperlukan karena akses HTTP selalu diaktifkan di semua kluster HDInsight.
+- Menambahkan cmdlet `Set-AzHDInsightGatewayCredential` baru. Gunakan cmdlet ini untuk mengubah nama pengguna dan kata sandi HTTP gateway (menggantikan `Grant-AzHDInsightHttpServicesAccess`).
+- Memperbarui cmdlet `Get-AzHDInsightJobOutput` untuk mendukung akses berbasis peran granular ke kunci penyimpanan.
     - Pengguna dengan peran Operator Kluster HDInsight, Kontributor, atau Pemilik tidak akan terpengaruh.
-    - Pengguna dengan hanya peran Reader perlu menentukan `DefaultStorageAccountKey` parameter secara eksplisit.
+    - Pengguna dengan peran Pembaca saja perlu menentukan parameter `DefaultStorageAccountKey` secara eksplisit.
 
 Untuk informasi selengkapnya tentang perubahan akses berbasis peran ini, lihat [aka.ms/hdi-config-update](/azure/hdinsight/hdinsight-migrate-granular-access-cluster-configurations)
 
@@ -342,7 +342,7 @@ Untuk informasi selengkapnya tentang perubahan akses berbasis peran ini, lihat [
   Set-AzHDInsightGatewayCredential -ClusterName $cluster -HttpCredential $credential
   ```
 
-###  <a name="users-with-only-reader-role-for-cmdlet-get-azhdinsightjoboutput"></a>Pengguna dengan hanya peran Reader untuk cmdlet Get-AzHDInsightJobOutput
+###  <a name="users-with-only-reader-role-for-cmdlet-get-azhdinsightjoboutput"></a>Pengguna dengan peran Pembaca saja untuk cmdlet Get-AzHDInsightJobOutput
 
   ####  <a name="before"></a>Sebelumnya
 
@@ -358,9 +358,9 @@ Untuk informasi selengkapnya tentang perubahan akses berbasis peran ini, lihat [
 
 ### <a name="azstorage"></a>Az.Storage
 
-- Namespace untuk jenis yang dikembalikan dari cmdlet Blob, Queue, dan File telah mengubah namespace mereka dari `Microsoft.WindowsAzure.Storage` ke `Microsoft.Azure.Storage`.  Meskipun ini secara teknis bukan perubahan yang melanggar sesuai dengan kebijakan perubahan yang melanggar, mungkin memerlukan beberapa perubahan dalam kode yang menggunakan metode dari Storage .Net SDK untuk berinteraksi dengan objek yang dikembalikan dari cmdlet ini.
+- Namespace untuk jenis yang ditampilkan dari cmdlet Blob, Queue, dan File telah mengubah namespace-nya dari `Microsoft.WindowsAzure.Storage` menjadi `Microsoft.Azure.Storage`.  Meskipun secara teknis bukan perubahan berisiko sesuai dengan kebijakan perubahan berisiko, hal ini memerlukan beberapa perubahan kode yang menggunakan metode dari Storage .Net SDK untuk berinteraksi dengan objek yang ditampilkan dari cmdlet ini.
 
-  #### <a name="example-1--add-a-message-to-a-queue-change-cloudqueuemessage-object-namespace"></a>Contoh 1: Menambahkan pesan ke Antrean (ubah namespace objek CloudQueueMessage)
+  #### <a name="example-1--add-a-message-to-a-queue-change-cloudqueuemessage-object-namespace"></a>Contoh 1: Menambahkan pesan ke Queue (mengubah namespace objek CloudQueueMessage)
 
   Sebelumnya:
 
@@ -378,7 +378,7 @@ Untuk informasi selengkapnya tentang perubahan akses berbasis peran ini, lihat [
   $queue.CloudQueue.AddMessageAsync($QueueMessage)
   ```
 
-  #### <a name="example-2--fetch-blobfile-attributes-with-accesscondition-change-accesscondition-object-namespace"></a>Contoh 2: Ambil Atribut Blob/File dengan AccessCondition (ubah ruang nama objek AccessCondition)
+  #### <a name="example-2--fetch-blobfile-attributes-with-accesscondition-change-accesscondition-object-namespace"></a>Contoh 2: Mengambil Atribut Blob/File dengan AccessCondition (mengubah namespace objek AccessCondition)
 
   Sebelumnya:
 
@@ -404,16 +404,16 @@ Untuk informasi selengkapnya tentang perubahan akses berbasis peran ini, lihat [
   $file.FetchAttributes($accessCondition)
   ```
 
-- Meskipun secara teknis bukan perubahan yang melanggar, Anda akan melihat perbedaan output dalam properti Sku.Name akun Storage yang dikembalikan dari `New/Get/Set-AzStorageAccount` perubahan adalah sebagai berikut. (Setelah perubahan, output dan input SkuName diselaraskan.)
+- Meskipun secara teknis bukan perubahan berisiko, Anda akan menyadari perbedaan output di properti Sku.Name dari Akun Penyimpanan yang ditampilkan dari perubahan `New/Get/Set-AzStorageAccount` sebagai berikut. (Setelah perubahan, SkuName output dan input diselaraskan.)
   - "StandardLRS" -> "Standard_LRS";
   - "StandardGRS" -> "Standard_GRS";
   - "StandardRAGRS" -> "Standard_RAGRS";
   - "StandardZRS" -> "Standard_ZRS";
   - "PremiumLRS" -> "Premium_LRS";
 
-- Perilaku layanan default saat membuat akun penyimpanan dengan menentukan Jenis telah berubah.  Di versi sebelumnya, ketika akun penyimpanan dibuat tanpa `Kind` ditentukan, jenis akun `Storage` Storage digunakan, dalam versi `StorageV2` baru adalah nilai default`Kind`. Jika Anda perlu membuat akun Storage V1 dengan Kind 'Storage', tambahkan parameter '-Kind Storage'
+- Perilaku layanan default saat membuat akun penyimpanan tanpa menentukan Jenis telah berubah.  Pada versi sebelumnya, saat akun penyimpanan dibuat tanpa menentukan `Kind`, Jenis Akun penyimpanan `Storage` digunakan, pada versi baru `StorageV2` adalah nilai default `Kind`. Jika Anda perlu membuat Akun penyimpanan V1 dengan Jenis 'Storage', tambahkan parameter '-Kind Storage'
 
-  #### <a name="example--create-a-storage-account-default-kind-change"></a>Contoh : Membuat Akun penyimpanan (Perubahan jenis default)
+  #### <a name="example--create-a-storage-account-default-kind-change"></a>Contoh: Membuat Akun penyimpanan (perubahan Jenis Default)
 
   Sebelumnya:
 

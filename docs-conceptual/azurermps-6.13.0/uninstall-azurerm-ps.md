@@ -1,40 +1,40 @@
 ---
-title: Menghapus Azure PowerShell
-description: Cara melakukan penghapusan instalan Azure PowerShell
+title: Menghapus instalan Azure PowerShell
+description: Cara melakukan penghapusan instalan Azure PowerShell secara menyeluruh
 ms.date: 10/05/2021
 ms.devlang: powershell
 ms.topic: conceptual
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 8b2cd5302b84718af1dd54298748f72914741b05
 ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "132429342"
 ---
-# <a name="uninstall-the-azure-powershell-module"></a>Menghapus instalan Azure PowerShell aplikasi
+# <a name="uninstall-the-azure-powershell-module"></a>Menghapus instalan modul Azure PowerShell
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
-Artikel ini memberi tahu Anda cara menghapus instalan versi lama Azure PowerShell, atau menghapus instalan sepenuhnya dari sistem. Jika memutuskan untuk menghapus instalan Azure PowerShell sepenuhnya, kirimkan umpan balik melalui cmdlet [Kirim-Umpan](/powershell/module/azurerm.profile/send-feedback) Balik. Jika Anda menghadapi bug, kami sangat menghargainya jika Anda [menggunggah GitHub Anda.](https://github.com/azure/azure-powershell/issues)
+Artikel ini menjelaskan cara menghapus instalan versi Azure PowerShell lama, atau menghapus seluruhnya dari sistem Anda. Jika Anda memutuskan untuk menghapus instalan Azure PowerShell sepenuhnya, berikan beberapa umpan balik kepada kami melalui cmdlet [Send-Feedback](/powershell/module/azurerm.profile/send-feedback). Jika Anda menemukan bug, kami akan menghargainya jika Anda [mengajukan masalah GitHub](https://github.com/azure/azure-powershell/issues).
 
 
-## <a name="uninstall-azure-powershell-msi"></a>Menghapus Azure PowerShell MSI
+## <a name="uninstall-azure-powershell-msi"></a>Menghapus instalan Azure PowerShell MSI
 
-Jika menginstal Azure PowerShell paket MSI, Anda harus menghapus instalan melalui sistem Windows dan bukan PowerShell.
+Jika Anda menginstal Azure PowerShell menggunakan paket MSI, Anda harus menghapus instalan melalui sistem Windows, bukan PowerShell.
 
 |         Platform         |                      Instruksi                      |
 | ------------------------ | ------------------------------------------------------ |
-| Windows 10               | Memulai > Pengaturan > Baru                                |
-| Windows 7 </br>Windows 8 | Memulai > Panel Kontrol > Program > Menghapus instalan program |
+| Windows 10               | Mulai > Pengaturan > Aplikasi                                |
+| Windows 7 </br>Windows 8 | Mulai > Panel Kontrol > Program > Hapus instalan program |
 
-Setelah berada di layar ini, Anda __Azure PowerShell__ layar dalam daftar program. Ini adalah aplikasi untuk menghapus instalasi.
+Setelah tiba di layar ini Anda akan melihat __Azure PowerShell__ di daftar program. Ini adalah aplikasi untuk menghapus instalannya.
 
 ## <a name="uninstall-from-powershell"></a>Menghapus instalan dari PowerShell
 
-Jika Menginstal Azure PowerShell PowerShellGet, Anda dapat menggunakan cmdlet [Uninstall-Module.](/powershell/module/powershellget/uninstall-module) Namun, `Uninstall-Module` hanya menghapus instalan satu modul. Untuk menghapus Azure PowerShell, Anda harus menghapus instalan setiap modul satu per satu. Penghapusan instalan bisa rumit jika Anda memiliki lebih dari satu versi Azure PowerShell diinstal.
+Jika Anda menginstal Azure PowerShell menggunakan PowerShellGet, Anda dapat menggunakan cmdlet [Uninstall-Module](/powershell/module/powershellget/uninstall-module). Namun, `Uninstall-Module` hanya menghapus instalan satu modul. Untuk menghapus Azure PowerShell seluruhnya, Anda harus menghapus instalan setiap modul satu per satu. Penghapusan instalan dapat menjadi rumit jika Anda memiliki lebih dari satu versi Azure PowerShell yang diinstal.
 
-Untuk memeriksa versi versi Azure PowerShell yang saat ini terinstal, jalankan perintah berikut:
+Untuk memeriksa versi Azure PowerShell yang saat ini telah Anda pasang, jalankan perintah berikut:
 
 ```powershell
 Get-InstalledModule -Name AzureRM -AllVersions
@@ -47,7 +47,7 @@ Version              Name                                Repository           De
 6.13.1               AzureRM                             PSGallery            Azure Resource Manager Module
 ```
 
-Skrip berikut ini memberikan kueri Galeri PowerShell untuk mendapatkan daftar submodul dependen. Kemudian, skrip menghapus instalan versi submodule yang benar. Anda harus memiliki akses administrator untuk menjalankan skrip ini dalam lingkup selain `Process` atau `CurrentUser` .
+Skrip berikut meminta Galeri PowerShell untuk mendapatkan daftar submodul dependen. Kemudian, skrip menghapus instalan versi setiap submodul yang benar. Anda akan harus memiliki akses administrator untuk menjalankan skrip ini dalam cakupan selain `Process` atau `CurrentUser`.
 
 ```powershell
 function Uninstall-AllModules {
@@ -98,13 +98,13 @@ function Uninstall-AllModules {
 }
 ```
 
-Untuk menggunakan fungsi ini, salin dan tempelkan kode ke sesi PowerShell Anda. Contoh berikut ini memperlihatkan cara menjalankan fungsi untuk menghapus versi lama Azure PowerShell.
+Untuk menggunakan fungsi ini, salin dan tempel kode ke dalam sesi PowerShell Anda. Contoh berikut menunjukkan cara menjalankan fungsi untuk menghapus versi Azure PowerShell yang lebih lama.
 
 ```powershell
 Uninstall-AllModules -TargetModule AzureRM -Version 4.4.1 -Force
 ```
 
-Saat skrip berjalan, skrip akan menampilkan nama dan versi setiap submodule yang sedang dihapus instalannya. Untuk menjalankan skrip agar hanya melihat apa yang akan dihapus, tanpa menghapusnya, gunakan `-WhatIf` opsi tersebut.
+Saat skrip berjalan, skrip akan menampilkan nama dan versi setiap submodul yang sedang dihapus. Untuk menjalankan skrip hanya untuk melihat yang akan dihapus, tanpa menghapusnya, gunakan opsi `-WhatIf`.
 
 ```Output
 Creating list of dependencies...
@@ -116,9 +116,9 @@ Uninstalling Azure.AnalysisServices version 0.4.7
 ```
 
 > [!NOTE]
-> Jika skrip ini tidak dapat menyesuaikan dependensi persis dengan versi yang  sama untuk dihapus, skrip tidak akan menghapus instalan versi dependensi tersebut. Ini karena mungkin ada versi modul target lainnya pada sistem Anda yang mengandalkan dependensi ini. Dalam hal ini, versi dependensi yang tersedia akan dicantumkan. Lalu Anda bisa menghapus versi lama secara manual dengan `Uninstall-Module` .
+> Jika skrip tidak dapat mencocokkan dependensi dengan versi sama yang akan dihapus instalannya, skrip tidak akan menghapus _setiap_ versi dependensi. Hal ini karena dapat terdapat versi modul target lainnya di sistem Anda yang bergantung pada dependensi ini. Dalam hal ini, versi dependensi yang tersedia dicantumkan. Anda kemudian dapat menghapus versi lama secara manual dengan `Uninstall-Module`.
 
-Jalankan perintah ini untuk setiap versi Azure PowerShell ingin Anda hapus instalannya. Demi kenyamanan, skrip berikut akan menghapus instalasi semua versi AzureRM __kecuali__ untuk yang terbaru.
+Jalankan perintah untuk setiap versi Azure PowerShell yang ingin Anda hapus instalannya. Untuk mudahnya, skrip berikut akan menghapus instalan semua versi AzureRM __kecuali__ versi terbaru.
 
 ```powershell
 $versions = (Get-InstalledModule -Name AzureRM -AllVersions | Select-Object -Property Version)

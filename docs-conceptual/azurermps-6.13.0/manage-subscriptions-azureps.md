@@ -1,13 +1,13 @@
 ---
-title: Kelola langganan Azure dengan Azure PowerShell
-description: Kelola langganan Azure dengan Azure PowerShell
+title: Mengelola langganan Azure dengan Azure PowerShell
+description: Mengelola langganan Azure dengan Azure PowerShell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 10/05/2021
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 75f114ed4b58df4061db3b9478a4f7736a333eb3
 ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "132429357"
@@ -16,9 +16,9 @@ ms.locfileid: "132429357"
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
-Jika baru menggunakan Azure, Anda mungkin hanya memiliki satu langganan. Namun, jika telah menggunakan Azure untuk beberapa lama, Anda mungkin telah membuat beberapa langganan Azure. Anda dapat Azure PowerShell untuk menjalankan perintah terhadap langganan tertentu.
+Jika Anda baru awal menggunakan Azure, Anda mungkin hanya memiliki satu langganan. Tetapi jika Anda telah menggunakan Azure untuk sementara waktu, Anda mungkin telah membuat beberapa langganan Azure. Anda dapat mengonfigurasi Azure PowerShell untuk menjalankan perintah terhadap langganan tertentu.
 
-1. Dapatkan daftar semua langganan dalam akun Anda.
+1. Dapatkan daftar semua langganan di akun Anda.
 
    ```azurepowershell
    Get-AzureRmSubscription
@@ -47,13 +47,13 @@ Jika baru menggunakan Azure, Anda mungkin hanya memiliki satu langganan. Namun, 
    CurrentStorageAccount :
    ```
 
-2. Atur default.
+2. Atur defaultnya.
 
    ```azurepowershell
    Select-AzureRmSubscription -Subscription 'My Demos'
    ```
 
-3. Verifikasi perubahan dengan menjalankan `Get-AzureRmContext` cmdlet.
+3. Verifikasi perubahan dengan menjalankan cmdlet `Get-AzureRmContext`.
 
    ```azurepowershell
    Get-AzureRmContext
@@ -68,4 +68,4 @@ Jika baru menggunakan Azure, Anda mungkin hanya memiliki satu langganan. Namun, 
    CurrentStorageAccount :
    ```
 
-Setelah Anda menetapkan langganan default, semua Azure PowerShell perintah dijalankan terhadap langganan ini.
+Setelah mengatur langganan default Anda, semua perintah Azure PowerShell berjalan terhadap langganan ini.

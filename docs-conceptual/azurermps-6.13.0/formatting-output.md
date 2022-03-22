@@ -1,5 +1,5 @@
 ---
-title: Output cmdlet format Azure PowerShell
+title: Memformat output cmdlet Azure PowerShell
 description: Cara memformat output cmdlet untuk Azure PowerShell.
 ms.devlang: powershell
 ms.topic: conceptual
@@ -7,28 +7,28 @@ ms.date: 10/05/2021
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 4ba2cf544385c205990278bd075d479710d9ce92
 ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "132429362"
 ---
-# <a name="format-azurepowershell-cmdlet-output"></a>Output cmdlet Format AzurePowerShell
+# <a name="format-azurepowershell-cmdlet-output"></a>Memformat output cmdlet Azure PowerShell
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
-Secara default, Azure PowerShell cmdlet telah memformat output yang sudah ditentukan sebelumnya sehingga mudah dibaca.
-PowerShell juga menyediakan fleksibilitas untuk menyesuaikan output atau mengonversi output cmdlet ke format lain dengan cmdlet berikut:
+Secara default setiap cmdlet Azure PowerShell memiliki pemformatan output yang telah ditentukan yang memudahkannya untuk dibaca.
+PowerShell juga memberikan fleksibilitas untuk menyesuaikan output atau mengonversi output cmdlet ke format yang berbeda dengan cmdlet berikut:
 
 |                                   Pemformatan                                   |                                    Konversi                                    |
 | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| [Format-Kustom](/powershell/module/microsoft.powershell.utility/format-custom) | [ConvertTo-csv](/powershell/module/microsoft.powershell.utility/convertto-csv)   |
+| [Format-Custom](/powershell/module/microsoft.powershell.utility/format-custom) | [ConvertTo-Csv](/powershell/module/microsoft.powershell.utility/convertto-csv)   |
 | [Format-List](/powershell/module/microsoft.powershell.utility/format-list)     | [ConvertTo-Html](/powershell/module/microsoft.powershell.utility/convertto-html) |
-| [Format-Tabel](/powershell/module/microsoft.powershell.utility/format-table)   | [ConvertTo-Json](/powershell/module/microsoft.powershell.utility/convertto-json) |
+| [Format-Table](/powershell/module/microsoft.powershell.utility/format-table)   | [ConvertTo-Json](/powershell/module/microsoft.powershell.utility/convertto-json) |
 | [Format-Wide](/powershell/module/microsoft.powershell.utility/format-wide)     | [ConvertTo-Xml](/powershell/module/microsoft.powershell.utility/convertto-xml)   |
 
 ## <a name="format-examples"></a>Contoh format
 
-Dalam contoh ini, kami mendapatkan daftar VM Azure dalam langganan default. Perintah `Get-AzureRmVM` default output ke dalam format tabel.
+Dalam contoh ini, kami mendapatkan daftar Azure VM di langganan default kami. Default perintah `Get-AzureRmVM` menghasilkan ke dalam format tabel.
 
 ```azurepowershell
 Get-AzureRmVM
@@ -41,7 +41,7 @@ MYWESTEURG        MyUnbuntu1610 westeurope Standard_DS1_v2   Linux myunbuntu1610
 MYWESTEURG          MyWin2016VM westeurope Standard_DS1_v2 Windows   mywin2016vm880         Succeeded
 ```
 
-Jika ingin membatasi kolom yang dikembalikan, Anda dapat menggunakan `Format-Table` cmdlet. Dalam contoh berikut, kami mendapatkan daftar mesin virtual yang sama tetapi membatasi output hanya dengan nama VM, grup sumber daya, dan lokasi VM. Parameter `-Autosize` akan mengubah ukuran kolom sesuai dengan ukuran data.
+Jika Anda ingin membatasi kolom yang dikembalikan, Anda dapat menggunakan cmdlet `Format-Table`. Dalam contoh berikut, kami mendapatkan daftar mesin virtual yang sama tetapi membatasi output ke hanya nama VM, grup sumber daya, dan lokasi VM. Parameter `-Autosize` mengukur kolom sesuai dengan ukuran data.
 
 ```azurepowershell
 Get-AzureRmVM |
@@ -55,7 +55,7 @@ MyUnbuntu1610 MYWESTEURG        westeurope
 MyWin2016VM   MYWESTEURG        westeurope
 ```
 
-Output juga bisa diformat ke dalam daftar. Contoh berikut memperlihatkan hal ini menggunakan `Format-List` cmdlet.
+Output juga dapat diformat ke dalam daftar. Contoh berikut menunjukkan hal ini menggunakan cmdlet `Format-List`.
 
 ```azurepowershell
 Get-AzureRmVM |
@@ -74,9 +74,9 @@ Location          : westeurope
 ResourceGroupName : MYWESTEURG
 ```
 
-## <a name="convert-to-other-data-types"></a>Mengonversi ke tipe data lainnya
+## <a name="convert-to-other-data-types"></a>Mengonversi ke jenis data lain
 
-PowerShell juga memungkinkan mengambil output perintah dan mengonversinya menjadi beberapa format data. Dalam contoh berikut, cmdlet digunakan untuk mendapatkan atribut mesin virtual di langganan kami dan mengonversi output ke format CSV untuk memudahkan impor ke `Select-Object` database atau lembar bentang.
+PowerShell juga memungkinkan pengambilan output perintah dan mengonversinya menjadi beberapa format data. Dalam contoh berikut, cmdlet `Select-Object` digunakan untuk mendapatkan atribut mesin virtual di langganan kami dan mengonversi output ke format CSV untuk kemudahan impor ke database atau spreadsheet.
 
 ```azurepowershell
 Get-AzureRmVM |
@@ -90,7 +90,7 @@ Get-AzureRmVM |
 "MYWESTUERG","/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/MYWESTUERG/providers/Microsoft.Compute/virtualMachines/MyWin2016VM","4650c755-fc2b-4fc7-a5bc-298d5c00808f","MyWin2016VM","westeurope","Succeeded"
 ```
 
-Output juga bisa dikonversi menjadi format JSON. Contoh berikut membuat daftar VM yang sama namun mengubah format output menjadi JSON.
+Output juga dapat dikonversi menjadi format JSON. Contoh berikut membuat daftar VM yang sama tetapi mengubah format output menjadi JSON.
 
 ```azurepowershell
 Get-AzureRmVM |

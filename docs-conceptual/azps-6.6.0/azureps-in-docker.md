@@ -1,6 +1,6 @@
 ---
 title: Menggunakan Azure PowerShell di Docker
-description: Cara menggunakan Azure PowerShell yang telah diinstal sebelumnya dalam gambar Docker.
+description: Cara menggunakan Azure PowerShell yang diinstal sebelumnya di citra Docker.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
@@ -8,60 +8,60 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: ef5f9c2007f6475b4c53a6e3c8510e6222102a6f
 ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 11/03/2021
 ms.locfileid: "132429515"
 ---
 # <a name="using-azure-powershell-in-docker"></a>Menggunakan Azure PowerShell di Docker
 
-Kami menerbitkan gambar Docker dengan Azure PowerShell yang telah diinstal sebelumnya. Artikel ini memperlihatkan kepada Anda cara mulai menggunakan Azure PowerShell dalam wadah Docker.
+Kami menerbitkan citra Docker dengan Azure PowerShell yang diinstal sebelumnya. Artikel ini menunjukkan kepada Anda cara memulai menggunakan Azure PowerShell di kontainer Docker.
 
-## <a name="finding-available-images"></a>Menemukan gambar yang tersedia
+## <a name="finding-available-images"></a>Menemukan citra yang tersedia
 
-Gambar yang dirilis memerlukan Docker 17.05 atau yang lebih baru. Diharapkan pula bahwa Anda bisa menjalankan Docker tanpa atau `sudo` hak administratif lokal. Ikuti instruksi resmi Docker [untuk menginstal][install] dengan `docker` benar.
+Citra yang dirilis memerlukan Docker 17.05 atau yang lebih baru. Diharapkan juga Anda mampu menjalankan Docker tanpa `sudo` atau hak administratif lokal. Silakan ikuti [instruksi][install] resmi Docker untuk menginstal `docker` dengan benar.
 
-Gambar wadah terbaru berisi versi terbaru PowerShell dan modul Azure PowerShell terbaru didukung dengan modul Az.
+Citra kontainer terbaru berisi versi PowerShell terbaru dan modul Azure PowerShell terbaru yang didukung dengan modul Az.
 
-Untuk setiap rilis baru modul Az, kami akan merilis gambar untuk sistem operasi berikut ini:
+Untuk setiap rilis baru modul Az, kami merilis citra untuk sistem operasi berikut:
 
 - Ubuntu 18.04 (default)
 - Debian 9
-- CentOS 7
+- CentOS 7+
 
-Daftar lengkap gambar yang tersedia dapat ditemukan di halaman [gambar Docker][az image] kami.
+Daftar lengkap citra yang tersedia dapat ditemukan di halaman [citra Docker][az image].
 
-## <a name="using-azure-powershell-in-a-container"></a>Menggunakan Azure PowerShell dalam wadah
+## <a name="using-azure-powershell-in-a-container"></a>Menggunakan Azure PowerShell dalam kontainer
 
-Langkah-langkah berikut ini memperlihatkan perintah Docker yang diperlukan untuk mengunduh gambar dan memulai sesi PowerShell interaktif.
+Langkah berikut menunjukkan perintah Docker yang diperlukan untuk mengunduh citra dan memulai sesi PowerShell interaktif.
 
-1. Unduh gambar terbaru Azure-powershell.
+1. Unduh citra azure-powershell terbaru.
 
    ```console
    docker pull mcr.microsoft.com/azure-powershell
    ```
 
-1. Jalankan wadah azure-powershell dalam mode interaktif:
+1. Jalankan kontainer azure-powershell dalam mode interaktif:
 
    ```console
    docker run -it mcr.microsoft.com/azure-powershell pwsh
    ```
 
-Untuk Windows docker baru, Anda harus mengaktifkan berbagi file Docker agar drive lokal Windows dapat dibagikan dengan wadah Linux. Untuk informasi selengkapnya, [lihat Mulai menggunakan Docker untuk Windows][file-sharing].
+Untuk host Windows Docker, Anda harus mengaktifkan berbagi file Docker untuk memungkinkan drive lokal pada Windows untuk dibagikan dengan kontainer Linux. Untuk informasi selengkapnya lihat [Memulai dengan Docker untuk Windows][file-sharing].
 
-### <a name="run-the-azure-powershell-container-interactively-using-host-authentication"></a>Jalankan wadah azure-powershell secara interaktif menggunakan autentikasi host
+### <a name="run-the-azure-powershell-container-interactively-using-host-authentication"></a>Menjalankan kontainer azure-powershell secara interaktif menggunakan autentikasi host
 
-Jika telah Azure PowerShell di docker hosting sistem, Anda mungkin memiliki kredensial Azure singgahan. Kredensial ini dapat digunakan di sesi PowerShell yang berjalan dalam wadah Docker.
+Jika Anda telah menginstal Azure PowerShell di Docker hosting sistem, Anda mungkin memiliki informasi masuk Azure yang di-cache. Informasi masuk ini dapat digunakan di sesi PowerShell yang berjalan di kontainer Docker.
 
-Secara default, kredensial singgahan berada dalam direktori `$HOME/.Azure` di host Anda. Layanan Docker harus memiliki akses ke lokasi ini untuk mengakses kredensial. Perintah berikut memulai wadah dengan cache kredensial yang terpasang dan memulai sesi PowerShell interaktif.
+Secara default, informasi masuk yang di-cache ada di direktori `$HOME/.Azure` di host Anda. Layanan Docker harus memiliki akses ke lokasi ini untuk mengakses informasi masuk. Perintah berikut memulai kontainer dengan cache informasi masuk yang dipasang dan memulai sesi PowerShell interaktif.
 
 ```console
 docker run -it -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.json -v ~/.Azure/TokenCache.dat:/root/.Azure/TokenCache.dat mcr.microsoft.com/azure-powershell pwsh
 ```
 
-### <a name="remove-the-image-when-no-longer-needed"></a>Hapus gambar ketika tidak lagi diperlukan
+### <a name="remove-the-image-when-no-longer-needed"></a>Menghapus citra saat tidak lagi diperlukan
 
-Perintah berikut ini digunakan untuk menghapus wadah Docker ketika Anda tidak lagi memerlukannya.
+Perintah berikut digunakan untuk menghapus kontainer Docker saat Anda tidak lagi membutuhkannya.
 
 ```console
 docker rmi mcr.microsoft.com/azure-powershell
@@ -69,7 +69,7 @@ docker rmi mcr.microsoft.com/azure-powershell
 
 ## <a name="next-steps"></a>Langkah berikutnya
 
-Untuk mempelajari selengkapnya tentang modul Azure PowerShell dan fiturnya, lihat [Mulai dengan Azure PowerShell](get-started-azureps.md).
+Untuk mempelajari selengkapnya tentang modul Azure PowerShell dan fiturnya, lihat [Memulai dengan Azure PowerShell](get-started-azureps.md).
 
 <!-- link references -->
 [install]: https://docs.docker.com/engine/installation/

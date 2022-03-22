@@ -1,6 +1,6 @@
 ---
-title: Semua perubahan dari AzureRM ke Azure PowerShell Az 1.0.0
-description: Panduan migrasi ini berisi daftar perubahan yang telah dibuat untuk Azure PowerShell di rilis Az versi 1.
+title: Semua perubahan dari AzureRM menjadi Azure PowerShell Az 1.0.0
+description: Panduan migrasi ini berisi daftar perubahan pemecahan yang dibuat untuk Azure PowerShell dalam rilis Az versi 1.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
@@ -8,56 +8,56 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: 658e21f940f71c1aba9bd313062ba1e41435d437
 ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 11/03/2021
 ms.locfileid: "132429535"
 ---
-# <a name="breaking-changes-for-az-100"></a>Memutus perubahan untuk Az 1.0.0
+# <a name="breaking-changes-for-az-100"></a>Perubahan yang dapat menyebabkan gangguan untuk Az 1.0.0
 
-Dokumen ini menyediakan informasi mendetail tentang perubahan antara AzureRM 6.x dan modul Az baru, versi 1.x dan yang lebih baru. Daftar isi akan membantu memandu Anda melalui jalur migrasi lengkap, termasuk perubahan khusus modul yang mungkin memengaruhi skrip Anda.
+Dokumen ini memberikan informasi detail tentang perubahan antara AzureRM 6.x dan modul Az baru, versi 1.x dan yang lebih baru. Daftar isi akan membantu memandu Anda menyelesaikan jalur migrasi penuh, termasuk perubahan khusus modul yang dapat memengaruhi skrip Anda.
 
-Untuk saran umum tentang memulai migrasi dari AzureRM ke Az, lihat [Memulai migrasi dari AzureRM ke Az](migrate-from-azurerm-to-az.md).
+Untuk saran umum tentang memulai dengan migrasi dari AzureRM ke Az, lihat [Memulai migrasi dari AzureRM ke Az](migrate-from-azurerm-to-az.md).
 
 > [!IMPORTANT]
-> Ada perubahan antara Az 1.0.0 dan Az 2.0.0 juga. Setelah mengikuti panduan untuk memperbarui dari AzureRM ke Az, lihat perubahan terbaru [Az 2.0.0](migrate-az-2.0.0.md) untuk mengetahui jika Anda perlu membuat perubahan tambahan.
+> Telah terdapat pula perubahan pemecahan antara Az 1.0.0 dan Az 2.0.0. Setelah mengikuti panduan ini untuk memperbarui dari AzureRM ke Az, lihat [perubahan pemecahan Az 2.0.0](migrate-az-2.0.0.md) untuk mengetahui apakah Anda harus membuat perubahan tambahan.
 
 ## <a name="table-of-contents"></a>Daftar Isi
 
-- [Perubahan umum yang tidak berubah](#general-breaking-changes)
-  - [Perubahan prefiks kata benda cmdlet](#cmdlet-noun-prefix-changes)
+- [Perubahan umum yang dapat menyebabkan gangguan](#general-breaking-changes)
+  - [Perubahan awalan kata benda cmdlet](#cmdlet-noun-prefix-changes)
   - [Perubahan nama modul](#module-name-changes)
   - [Modul yang dihapus](#removed-modules)
-  - [Windows PowerShell 5.1 dan .NET 4.7.2](#windows-powershell-51-and-net-472)
-  - [Penghapusan sementara pengguna masuk menggunakan PSCredential](#temporary-removal-of-user-login-using-pscredential)
-  - [Kode perangkat default masuk, bukan perintah browser web](#default-device-code-login-instead-of-web-browser-prompt)
-- [Perubahan pecah modul](#module-breaking-changes)
-  - [Az.ApiManagement (sebelumnya AzureRM.ApiManagement)](#azapimanagement-previously-azurermapimanagement)
-  - [Az.Billing (sebelumnya AzureRM.Billing, AzureRM.Consumption, dan AzureRM.UsageAggregates)](#azbilling-previously-azurermbilling-azurermconsumption-and-azurermusageaggregates)
-  - [Az.CognitiveServices (sebelumnya AzureRM.CognitiveServices)](#azcognitiveservices-previously-azurermcognitiveservices)
-  - [Az.Compute (sebelumnya AzureRM.Compute)](#azcompute-previously-azurermcompute)
+  - [Windows PowerShell 5.1 and .NET 4.7.2](#windows-powershell-51-and-net-472)
+  - [Penghapusan sementara masuk pengguna menggunakan PSCredential](#temporary-removal-of-user-login-using-pscredential)
+  - [Masuk kode perangkat default sebagai ganti perintah browser web](#default-device-code-login-instead-of-web-browser-prompt)
+- [Perubahan modul yang dapat menyebabkan gangguan](#module-breaking-changes)
+  - [Az.ApiManagement (previously AzureRM.ApiManagement)](#azapimanagement-previously-azurermapimanagement)
+  - [Az.Billing (previously AzureRM.Billing, AzureRM.Consumption, and AzureRM.UsageAggregates)](#azbilling-previously-azurermbilling-azurermconsumption-and-azurermusageaggregates)
+  - [Az.CognitiveServices (previously AzureRM.CognitiveServices)](#azcognitiveservices-previously-azurermcognitiveservices)
+  - [Az.Compute (previously AzureRM.Compute)](#azcompute-previously-azurermcompute)
   - [Az.DataFactory (sebelumnya AzureRM.DataFactories dan AzureRM.DataFactoryV2)](#azdatafactory-previously-azurermdatafactories-and-azurermdatafactoryv2)
-  - [Az.DataLakeAnalytics (sebelumnya AzureRM.DataLakeAnalytics)](#azdatalakeanalytics-previously-azurermdatalakeanalytics)
-  - [Az.DataLakeStore (sebelumnya AzureRM.DataLakeStore)](#azdatalakestore-previously-azurermdatalakestore)
-  - [Az.KeyVault (sebelumnya AzureRM.KeyVault)](#azkeyvault-previously-azurermkeyvault)
-  - [Az.Media (sebelumnya AzureRM.Media)](#azmedia-previously-azurermmedia)
-  - [Az.Monitor (sebelumnya AzureRM.Insights)](#azmonitor-previously-azurerminsights)
-  - [Az.Network (sebelumnya AzureRM.Network)](#aznetwork-previously-azurermnetwork)
+  - [Az.DataLakeAnalytics (previously AzureRM.DataLakeAnalytics)](#azdatalakeanalytics-previously-azurermdatalakeanalytics)
+  - [Az.DataLakeStore (previously AzureRM.DataLakeStore)](#azdatalakestore-previously-azurermdatalakestore)
+  - [Az.KeyVault (previously AzureRM.KeyVault)](#azkeyvault-previously-azurermkeyvault)
+  - [Az.Media (previously AzureRM.Media)](#azmedia-previously-azurermmedia)
+  - [Az.Monitor (previously AzureRM.Insights)](#azmonitor-previously-azurerminsights)
+  - [Az.Network (previously AzureRM.Network)](#aznetwork-previously-azurermnetwork)
   - [Az.OperationalInsights (sebelumnya AzureRM.OperationalInsights)](#azoperationalinsights-previously-azurermoperationalinsights)
   - [Az.RecoveryServices (sebelumnya AzureRM.RecoveryServices, AzureRM.RecoveryServices.Backup, dan AzureRM.RecoveryServices.SiteRecovery)](#azrecoveryservices-previously-azurermrecoveryservices-azurermrecoveryservicesbackup-and-azurermrecoveryservicessiterecovery)
-  - [Az.Resources (sebelumnya AzureRM.Resources)](#azresources-previously-azurermresources)
-  - [Az.ServiceFabric (sebelumnya AzureRM.ServiceFabric)](#azservicefabric-previously-azurermservicefabric)
+  - [Az.Resources (previously AzureRM.Resources)](#azresources-previously-azurermresources)
+  - [Az.ServiceFabric (previously AzureRM.ServiceFabric)](#azservicefabric-previously-azurermservicefabric)
   - [Az.Sql (sebelumnya AzureRM.Sql)](#azsql-previously-azurermsql)
-  - [Az.Storage (sebelumnya Azure.Storage dan AzureRM.Storage)](#azstorage-previously-azurestorage-and-azurermstorage)
-  - [Az.Websites (sebelumnya AzureRM.Websites)](#azwebsites-previously-azurermwebsites)
+  - [Az.Storage (previously Azure.Storage and AzureRM.Storage)](#azstorage-previously-azurestorage-and-azurermstorage)
+  - [Az.Websites (previously AzureRM.Websites)](#azwebsites-previously-azurermwebsites)
 
-## <a name="general-breaking-changes"></a>Perubahan umum yang tidak berubah
+## <a name="general-breaking-changes"></a>Perubahan umum yang dapat menyebabkan gangguan
 
-Bagian ini menjelaskan perubahan umum yang menjadi bagian dari desain ulang modul Az.
+Bagian ini merinci perubahan umum yang dapat menyebabkan gangguan yang merupakan bagian dari desain ulang modul Az.
 
-### <a name="cmdlet-noun-prefix-changes"></a>Perubahan Prefiks Kata Benda Cmdlet
+### <a name="cmdlet-noun-prefix-changes"></a>Perubahan Awalan Kata Benda Cmdlet
 
-Dalam modul AzureRM, cmdlet menggunakan baik `AzureRM` atau `Azure` sebagai prefiks kata benda.  Az menyederhanakan dan menormalisasikan nama cmdlet, sehingga semua cmdlet menggunakan 'Az' sebagai prefiks kata benda cmdlet mereka. Misalnya:
+Di modul AzureRM, cmdlet menggunakan `AzureRM` atau `Azure` sebagai awalan kata benda.  Az menyederhanakan dan menormalkan nama cmdlet, sehingga semua cmdlet menggunakan 'Az' sebagai awalan kata benda cmdlet-nya. Contohnya:
 
 ```azurepowershell-interactive
 Get-AzureRMVM
@@ -71,16 +71,16 @@ Get-AzVM
 Get-AzKeyVaultSecret
 ```
 
-Agar transisi ke nama cmdlet baru ini lebih sederhana, Az memperkenalkan dua cmdlet baru, [Enable-AzureRmAlias](/powershell/module/az.accounts/enable-azurermalias) [dan Disable-AzureRmAlias.](/powershell/module/az.accounts/disable-azurermalias)  `Enable-AzureRmAlias` membuat alias untuk nama cmdlet yang lebih lama di AzureRM yang di map ke nama cmdlet Az yang lebih baru. Menggunakan `-Scope` argumen dengan `Enable-AzureRmAlias` memungkinkan Anda memilih di mana alias diaktifkan.
+Untuk mempermudah transisi ke nama cmdlet baru ini, Az memperkenalkan dua cmdlet baru, [Enable-AzureRmAlias](/powershell/module/az.accounts/enable-azurermalias) dan [Disable-AzureRmAlias](/powershell/module/az.accounts/disable-azurermalias).  `Enable-AzureRmAlias` membuat alias untuk nama cmdlet lama di AzureRM yang memetakan ke nama cmdlet Az yang lebih baru. Menggunakan argumen `-Scope` dengan `Enable-AzureRmAlias` memungkinkan Anda untuk memilih di mana alias diaktifkan.
 
-Misalnya, skrip berikut ini di AzureRM:
+Misalnya, skrip berikut di AzureRM:
 
 ```azurepowershell-interactive
 #Requires -Modules AzureRM.Storage
 Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
 ```
 
-Dapat dijalankan dengan perubahan minimal `Enable-AzureRmAlias` menggunakan:
+Dapat dijalankan dengan perubahan minimal menggunakan `Enable-AzureRmAlias`:
 
 ```azurepowershell-interactive
 #Requires -Modules Az.Storage
@@ -88,29 +88,29 @@ Enable-AzureRmAlias -Scope Process
 Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
 ```
 
-Menjalankan akan mengaktifkan alias untuk semua sesi PowerShell yang Anda buka, sehingga setelah menjalankan cmdlet ini, skrip seperti ini tidak perlu diubah `Enable-AzureRmAlias -Scope CurrentUser` sama sekali:
+Menjalankan `Enable-AzureRmAlias -Scope CurrentUser` akan mengaktifkan alias untuk semua sesi PowerShell yang Anda buka, sehingga setelah menjalankan cmdlet ini, skrip seperti ini tidak perlu diubah sama sekali:
 
 ```azurepowershell-interactive
 Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
 ```
 
-Untuk detail selengkapnya tentang penggunaan cmdlet alias, lihat referensi [Enable-AzureRmAlias.](/powershell/module/az.accounts/enable-azurermalias)
+Untuk detail lengkap tentang penggunaan cmdlet alias, lihat [referensi Enable-AzureRmAlias](/powershell/module/az.accounts/enable-azurermalias).
 
-Ketika Anda siap untuk menonaktifkan alias, `Disable-AzureRmAlias` menghapus alias yang dibuat. Untuk detail selengkapnya, lihat [referensi Disable-AzureRmAlias](/powershell/module/az.accounts/disable-azurermalias).
+Saat Anda siap menonaktifkan alias, `Disable-AzureRmAlias` akan menghapus alias yang dibuat. Untuk detail selengkapnya, lihat [referensi Disable-AzureRmAlias](/powershell/module/az.accounts/disable-azurermalias).
 
 > [!IMPORTANT]
-> Ketika menonaktifkan alias, pastikan alias dinonaktifkan untuk _semua_ lingkup yang memiliki alias yang diaktifkan.
+> Saat menonaktifkan alias, pastikan bahwa alias dinonaktifkan untuk _semua_ cakupan yang memiliki alias aktif.
 
-### <a name="module-name-changes"></a>Module Name Changes
+### <a name="module-name-changes"></a>Perubahan Nama Modul
 
-Nama modul telah berubah dari `AzureRM.*` menjadi , kecuali modul berikut `Az.*` ini:
+Nama modul telah berubah dari `AzureRM.*` ke `Az.*`, kecuali untuk modul berikut:
 
-| Modul AzureRM | Modul Az |
+| AzureRM module | Modul Az |
 |----------------|-----------|
-| Azure. Storage | Az.Storage |
+| Azure.Storage | Az.Storage |
 | Azure.AnalysisServices | Az.AnalysisServices |
 | AzureRM.Profile | Az.Accounts |
-| AzureRM. Insights | Az.Monitor |
+| AzureRM.Insights | Az.Monitor |
 | AzureRM.DataFactories | Az.DataFactory |
 | AzureRM.DataFactoryV2 | Az.DataFactory |
 | AzureRM.RecoveryServices.Backup | Az.RecoveryServices |
@@ -120,11 +120,11 @@ Nama modul telah berubah dari `AzureRM.*` menjadi , kecuali modul berikut `Az.*`
 | AzureRM.UsageAggregates | Az.Billing |
 | AzureRM.Consumption | Az.Billing |
 
-Perubahan dalam nama modul berarti bahwa skrip apa pun yang menggunakan atau memuat `#Requires` modul tertentu perlu diubah untuk menggunakan modul `Import-Module` baru. Untuk modul yang akhiran cmdlet belum berubah, hal ini berarti meskipun nama modul telah berubah, akhiran yang menunjukkan ruang operasi _belum_.
+Perubahan dalam nama modul berarti bahwa setiap skrip yang menggunakan `#Requires` atau `Import-Module` untuk memuat modul tertentu harus diubah untuk menggunakan modul baru sebagai gantinya. Untuk modul yang akhiran cmdlet-nya tidak berubah, ini berarti meskipun nama modul telah berubah, akhiran yang menunjukkan ruang operasi _masih belum_.
 
-#### <a name="migrating-requires-and-import-module-statements"></a>Melakukan migrasi #Requires dan Import-Module Migrasi
+#### <a name="migrating-requires-and-import-module-statements"></a>Memigrasi #Memerlukan dan Mengimpor Pernyataan Modul
 
-Skrip yang menggunakan `#Requires` `Import-Module` atau mendeklarasikan dependensi pada modul AzureRM harus diperbarui untuk menggunakan nama modul baru. Misalnya:
+Skrip yang menggunakan `#Requires` atau `Import-Module` untuk mendeklarasikan dependensi pada modul AzureRM harus diperbarui untuk menggunakan nama modul baru. Contohnya:
 
 ```azurepowershell-interactive
 #Requires -Module AzureRM.Compute
@@ -136,7 +136,7 @@ Harus diubah menjadi:
 #Requires -Module Az.Compute
 ```
 
-Untuk `Import-Module` :
+Untuk `Import-Module`:
 
 ```azurepowershell-interactive
 Import-Module -Name AzureRM.Compute
@@ -148,23 +148,23 @@ Harus diubah menjadi:
 Import-Module -Name Az.Compute
 ```
 
-### <a name="migrating-fully-qualified-cmdlet-invocations"></a>Migrasi Fully-Qualified Cmdlet
+### <a name="migrating-fully-qualified-cmdlet-invocations"></a>Migrasi Pemanggilan Cmdlet yang Memenuhi Syarat
 
-Skrip yang menggunakan invokasi cmdlet yang memenuhi syarat modul, seperti:
+Skrip yang menggunakan pemanggilan cmdlet yang memenuhi syarat modul, seperti:
 
 ```azurepowershell-interactive
 AzureRM.Compute\Get-AzureRmVM
 ```
 
-Harus diubah agar dapat menggunakan nama modul dan cmdlet baru:
+Harus diubah untuk menggunakan modul dan nama cmdlet baru:
 
 ```azurepowershell-interactive
 Az.Compute\Get-AzVM
 ```
 
-### <a name="migrating-module-manifest-dependencies"></a>Migrasi dependensi manifes modul
+### <a name="migrating-module-manifest-dependencies"></a>Memigrasi dependensi manifes modul
 
-Modul yang menyatakan dependensi pada modul AzureRM melalui file manifes modul (.psd1) harus memperbarui nama modul di `RequiredModules` bagiannya:
+Modul yang menunjukkan dependensi pada modul AzureRM melalui file manifes modul (.psd1) harus memperbarui nama modul di bagian `RequiredModules`:
 
 ```powershell
 RequiredModules = @(@{ModuleName="AzureRM.Profile"; ModuleVersion="5.8.2"})
@@ -178,76 +178,76 @@ RequiredModules = @(@{ModuleName="Az.Profile"; ModuleVersion="1.0.0"})
 
 ### <a name="removed-modules"></a>Modul yang dihapus
 
-Modul berikut ini telah dihapus:
+Modul-modul berikut telah dihapus:
 
 - `AzureRM.Backup`
 - `AzureRM.Compute.ManagedService`
 - `AzureRM.Scheduler`
 
-Alat untuk layanan ini tidak lagi didukung secara aktif.  Pelanggan didorong untuk beralih ke layanan alternatif segera setelah memudahkan.
+Alat untuk layanan ini tidak lagi didukung secara aktif.  Pelanggan disarankan untuk pindah ke layanan alternatif segera setelah sesuai.
 
-### <a name="windows-powershell-51-and-net-472"></a>Windows PowerShell 5.1 dan .NET 4.7.2
+### <a name="windows-powershell-51-and-net-472"></a>Windows PowerShell 5.1 and .NET 4.7.2
 
-Menggunakan Az dengan PowerShell 5.1 untuk Windows memerlukan instalasi .NET Framework 4.7.2. Menggunakan PowerShell Core 6.x atau yang lebih baru tidak memerlukan .NET Framework.
+Menggunakan Az dengan PowerShell 5.1 untuk Windows memerlukan penginstalan .NET Framework 4.7.2. Menggunakan PowerShell Core 6.x atau yang lebih baru tidak memerlukan .NET Framework.
 
-### <a name="temporary-removal-of-user-login-using-pscredential"></a>Penghapusan sementara pengguna masuk menggunakan PSCredential
+### <a name="temporary-removal-of-user-login-using-pscredential"></a>Penghapusan sementara masuk Pengguna menggunakan PSCredential
 
-Karena perubahan dalam aliran autentikasi untuk .NET Standard, kami menghapus sementara pengguna masuk melalui PSCredential. Kemampuan ini akan diperkenalkan kembali dalam rilis 15/1/2019 untuk PowerShell 5.1 untuk Windows. Ini dibahas secara detail dalam [masalah GitHub ini.](https://github.com/Azure/azure-powershell/issues/7430)
+Karena perubahan alur autentikasi untuk .NET Standard, kami untuk sementara menghapus pengguna yang masuk melalui PSCredential. Kemampuan ini akan diperkenalkan kembali dalam rilis 1/15/2019 untuk PowerShell 5.1 untuk Windows. Ini dibahas secara detail dalam [masalah GitHub ini.](https://github.com/Azure/azure-powershell/issues/7430)
 
-### <a name="default-device-code-login-instead-of-web-browser-prompt"></a>Kode perangkat default masuk, bukan perintah browser web
+### <a name="default-device-code-login-instead-of-web-browser-prompt"></a>Masuk kode perangkat default sebagai ganti perintah browser web
 
-Karena perubahan dalam aliran autentikasi untuk .NET Standard, kami menggunakan masuk perangkat sebagai alur masuk default selama masuk interaktif. Login berbasis browser web akan diperkenalkan kembali untuk PowerShell 5.1, Windows sebagai default dalam rilis 15/1/2019. Pada saat itu, pengguna akan dapat memilih perangkat masuk menggunakan parameter Alihkan.
+Karena perubahan dalam alur autentikasi untuk .NET Standar, kami menggunakan masuk perangkat sebagai alur masuk default selama masuk interaktif. Masuk berbasis browser web akan diperkenalkan kembali untuk PowerShell 5.1 untuk Windows sebagai default dalam rilis 1/15/2019. Pada saat itu, pengguna akan dapat memilih masuk perangkat menggunakan parameter Beralih.
 
-## <a name="module-breaking-changes"></a>Perubahan pecah modul
+## <a name="module-breaking-changes"></a>Perubahan modul yang dapat menyebabkan gangguan
 
-Bagian ini menjelaskan perubahan khusus untuk modul dan cmdlet individual.
+Bagian ini merinci perubahan spesifik yang dapat menyebabkan gangguan untuk modul dan cmdlet individual.
 
-### <a name="azapimanagement-previously-azurermapimanagement"></a>Az.ApiManagement (sebelumnya AzureRM.ApiManagement)
+### <a name="azapimanagement-previously-azurermapimanagement"></a>Az.ApiManagement (previously AzureRM.ApiManagement)
 
-- Hapus cmdlet berikut:
+- Menghapus cmdlet berikut: 
   - New-AzureRmApiManagementHostnameConfiguration
   - Set-AzureRmApiManagementHostnames
   - Update-AzureRmApiManagementDeployment
   - Import-AzureRmApiManagementHostnameCertificate
-  - Gunakan cmdlet **Set-AzApiManagement** untuk mengatur properti ini sebagai gantinya
-- Menghapus properti berikut ini:
-  - Properti yang `PortalHostnameConfiguration` `ProxyHostnameConfiguration` dihapus, , `ManagementHostnameConfiguration` dan tipe `ScmHostnameConfiguration` dari `PsApiManagementHostnameConfiguration` `PsApiManagementContext` . Sebagai `PortalCustomHostnameConfiguration` gantinya `ProxyCustomHostnameConfiguration` gunakan , , dan dari tipe `ManagementCustomHostnameConfiguration` `ScmCustomHostnameConfiguration` `PsApiManagementCustomHostNameConfiguration` .
-  - Properti yang `StaticIPs` dihapus dari PsApiManagementContext. Properti telah dipisahkan menjadi `PublicIPAddresses` dan `PrivateIPAddresses` .
-  - Properti yang diperlukan `Location` telah dihapus New-AzureApiManagementVirtualNetwork cmdlet.
+  - Gunakan cmdlet **Set-AzApiMenagement** untuk mengatur properti ini sebagai gantinya
+- Menghapus properti berikut: 
+  - Properti yang dihapus `PortalHostnameConfiguration`, `ProxyHostnameConfiguration`, `ManagementHostnameConfiguration`, dan `ScmHostnameConfiguration` pada jenis `PsApiManagementHostnameConfiguration` dari `PsApiManagementContext`. Sebagai gantinya gunakan `PortalCustomHostnameConfiguration`, `ProxyCustomHostnameConfiguration`, `ManagementCustomHostnameConfiguration`, dan `ScmCustomHostnameConfiguration` pada jenis `PsApiManagementCustomHostNameConfiguration`.
+  - Menghapus properti `StaticIPs` dari PsApiManagementContext. Properti telah dibagi menjadi `PublicIPAddresses` dan `PrivateIPAddresses`.
+  - Menghapus properti `Location` yang diperlukan dari cmdlet New-AzureApiManagementVirtualNetwork.
 
-### <a name="azbilling-previously-azurermbilling-azurermconsumption-and-azurermusageaggregates"></a>Az.Billing (sebelumnya AzureRM.Billing, AzureRM.Consumption, dan AzureRM.UsageAggregates)
+### <a name="azbilling-previously-azurermbilling-azurermconsumption-and-azurermusageaggregates"></a>Az.Billing (previously AzureRM.Billing, AzureRM.Consumption, and AzureRM.UsageAggregates)
 
-- Parameter `InvoiceName` dihapus dari `Get-AzConsumptionUsageDetail` cmdlet.  Skrip perlu menggunakan parameter identitas lain untuk faktur.
+- Parameter `InvoiceName` telah dihapus dari cmdlet `Get-AzConsumptionUsageDetail`.  Skrip perlu menggunakan parameter identitas lain untuk faktur.
 
-### <a name="azcognitiveservices-previously-azurermcognitiveservices"></a>Az.CognitiveServices (sebelumnya AzureRM.CognitiveServices)
+### <a name="azcognitiveservices-previously-azurermcognitiveservices"></a>Az.CognitiveServices (previously AzureRM.CognitiveServices)
 
-- Kumpulan `GetSkusWithAccountParamSetName` parameter yang dihapus dari `Get-AzCognitiveServicesAccountSkus` cmdlet.  Anda harus mendapatkan Skus dengan Tipe dan Lokasi Akun, dan bukan menggunakan ResourceGroupName dan Nama Akun.
+- Menghapus set parameter `GetSkusWithAccountParamSetName` dari cmdlet `Get-AzCognitiveServicesAccountSkus`.  Anda harus mendapatkan Skus dengan Jenis Akun dan Lokasi, bukan menggunakan ResourceGroupName dan Nama Akun.
 
-### <a name="azcompute-previously-azurermcompute"></a>Az.Compute (sebelumnya AzureRM.Compute)
+### <a name="azcompute-previously-azurermcompute"></a>Az.Compute (previously AzureRM.Compute)
 
-- `IdentityIds` dihapus dari `Identity` properti dalam dan objek Skrip tidak boleh lagi menggunakan nilai bidang ini untuk membuat keputusan `PSVirtualMachine` `PSVirtualMachineScaleSet` pemrosesan.
-- Tipe `InstanceView` properti objek diubah dari `PSVirtualMachineScaleSetVM` `VirtualMachineInstanceView` menjadi `VirtualMachineScaleSetVMInstanceView`
-- `AutoOSUpgradePolicy` dan `AutomaticOSUpgrade` properti dihapus dari `UpgradePolicy` properti
-- Tipe properti `Sku` dalam objek diubah dari `PSSnapshotUpdate` `DiskSku` menjadi `SnapshotSku`
-- `VmScaleSetVMParameterSet` dihapus dari `Add-AzVMDataDisk` cmdlet, Anda tidak dapat lagi menambahkan disk data satu per satu ke ScaleSet VM.
+- `IdentityIds` dihapus dari properti `Identity` di objek `PSVirtualMachine` dan `PSVirtualMachineScaleSet` Skrip tidak boleh lagi menggunakan nilai kolom ini untuk membuat keputusan pemrosesan.
+- Jenis properti `InstanceView` objek `PSVirtualMachineScaleSetVM` diubah dari `VirtualMachineInstanceView` menjadi `VirtualMachineScaleSetVMInstanceView`
+-               properti `AutoOSUpgradePolicy` dan `AutomaticOSUpgrade` dihapus dari properti `UpgradePolicy`
+- Jenis properti `Sku` objek `PSSnapshotUpdate` diubah dari `DiskSku` menjadi `SnapshotSku`
+- `VmScaleSetVMParameterSet` dihapus dari cmdlet `Add-AzVMDataDisk`, Anda tidak dapat lagi menambahkan disk data secara individual ke mesin virtual ScaleSet.
 
 ### <a name="azdatafactory-previously-azurermdatafactories-and-azurermdatafactoryv2"></a>Az.DataFactory (sebelumnya AzureRM.DataFactories dan AzureRM.DataFactoryV2)
 
-- Parameter `GatewayName` ini telah menjadi wajib di `New-AzDataFactoryEncryptValue` cmdlet
-- Cmdlet `New-AzDataFactoryGatewayKey` yang dihapus
-- Parameter `LinkedServiceName` yang dihapus dari skrip cmdlet tidak boleh menggunakan nilai bidang ini lagi untuk membuat keputusan `Get-AzDataFactoryV2ActivityRun` pemrosesan.
+- Parameter `GatewayName` telah menjadi wajib dalam cmdlet `New-AzDataFactoryEncryptValue`
+- Menghapus cmdlet `New-AzDataFactoryGatewayKey`
+- Menghapus parameter `LinkedServiceName` dari cmdlet `Get-AzDataFactoryV2ActivityRun`, Skrip tidak lagi menggunakan nilai bidang ini untuk membuat keputusan pemrosesan.
 
-### <a name="azdatalakeanalytics-previously-azurermdatalakeanalytics"></a>Az.DataLakeAnalytics (sebelumnya AzureRM.DataLakeAnalytics)
+### <a name="azdatalakeanalytics-previously-azurermdatalakeanalytics"></a>Az.DataLakeAnalytics (previously AzureRM.DataLakeAnalytics)
 
-- Cmdlets yang dihapus: `New-AzDataLakeAnalyticsCatalogSecret` , `Remove-AzDataLakeAnalyticsCatalogSecret` , dan `Set-AzDataLakeAnalyticsCatalogSecret`
+- Menghapus cmdlet yang tidak digunakan lagi: `New-AzDataLakeAnalyticsCatalogSecret`, `Remove-AzDataLakeAnalyticsCatalogSecret`, dan `Set-AzDataLakeAnalyticsCatalogSecret`
 
-### <a name="azdatalakestore-previously-azurermdatalakestore"></a>Az.DataLakeStore (sebelumnya AzureRM.DataLakeStore)
+### <a name="azdatalakestore-previously-azurermdatalakestore"></a>Az.DataLakeStore (previously AzureRM.DataLakeStore)
 
-- Cmdlet berikut ini memiliki parameter `Encoding` yang berubah dari tipe menjadi `FileSystemCmdletProviderEncoding` `System.Text.Encoding` . Perubahan ini menghapus nilai pengodean `String` dan `Oem` . Semua nilai pengodean sebelumnya lainnya tetap ada.
+- Cmdlet berikut telah memiliki parameter `Encoding` yang diubah dari jenis `FileSystemCmdletProviderEncoding` menjadi `System.Text.Encoding`. Perubahan ini menghapus nilai pengodean `String` dan `Oem`. Semua nilai pengodean sebelumnya tetap ada.
   - New-AzureRmDataLakeStoreItem
   - Add-AzureRmDataLakeStoreItemContent
   - Get-AzureRmDataLakeStoreItemContent
-- Menghapus alias properti `Tags` yang tidak berlaku lagi dari dan `New-AzDataLakeStoreAccount` `Set-AzDataLakeStoreAccount` cmdlet
+- Menghapus alias properti `Tags` yang tidak digunakan lagi dari cmdlet `New-AzDataLakeStoreAccount` dan `Set-AzDataLakeStoreAccount`
 
   Skrip menggunakan
   ```azurepowershell-interactive
@@ -259,15 +259,15 @@ Bagian ini menjelaskan perubahan khusus untuk modul dan cmdlet individual.
   New-AzDataLakeStoreAccount -Tag @{TagName="TagValue"}
   ```
 
-- Properti yang sudah tidak berlaku `Identity` lagi , , , , , , , `EncryptionState` , , `EncryptionProvisioningState` , , `EncryptionConfig` dari `FirewallState` `FirewallRules` `VirtualNetworkRules` `TrustedIdProviderState` `TrustedIdProviders` `DefaultGroup` `NewTier` `CurrentTier` `FirewallAllowAzureIps` `PSDataLakeStoreAccountBasic` objek.  Skrip apa pun yang menggunakan `PSDatalakeStoreAccount` hasil dari seharusnya tidak `Get-AzDataLakeStoreAccount` mereferensikan properti ini.
+- Menghapus properti `Identity`, `EncryptionState`, `EncryptionProvisioningState`, `EncryptionConfig`, `FirewallState`, `FirewallRules`, `VirtualNetworkRules`, `TrustedIdProviderState`, `TrustedIdProviders`, `DefaultGroup`, `NewTier`, `CurrentTier`, `FirewallAllowAzureIps` yang tidak digunakan lagi dari objek `PSDataLakeStoreAccountBasic`.  Setiap skrip yang menggunakan `PSDatalakeStoreAccount` yang dikembalikan dari `Get-AzDataLakeStoreAccount` seharusnya tidak mereferensikan properti ini.
 
-### <a name="azkeyvault-previously-azurermkeyvault"></a>Az.KeyVault (sebelumnya AzureRM.KeyVault)
+### <a name="azkeyvault-previously-azurermkeyvault"></a>Az.KeyVault (previously AzureRM.KeyVault)
 
-- Properti `PurgeDisabled` dihapus dari Skrip , , dan objek seharusnya tidak lagi merujuk properti untuk membuat keputusan `PSKeyVaultKeyAttributes` `PSKeyVaultKeyIdentityItem` `PSKeyVaultSecretAttributes` ```PurgeDisabled``` pemrosesan.
+- Properti `PurgeDisabled` telah dihapus dari objek `PSKeyVaultKeyAttributes`, `PSKeyVaultKeyIdentityItem`, dan `PSKeyVaultSecretAttributes` Skrip seharusnya tidak lagi merujuk properti ```PurgeDisabled``` untuk membuat keputusan pemrosesan.
 
-### <a name="azmedia-previously-azurermmedia"></a>Az.Media (sebelumnya AzureRM.Media)
+### <a name="azmedia-previously-azurermmedia"></a>Az.Media (previously AzureRM.Media)
 
-- Menghapus alias properti yang `Tags` sudah tidak berlaku dari skrip cmdlet `New-AzMediaService` menggunakan
+- Menghapus alias properti `Tags` yang tidak digunakan lagi dari cmdlet `New-AzMediaService` Skrip menggunakan
   ```azurepowershell-interactive
   New-AzureRMMediaService -Tags @{TagName="TagValue"}
   ```
@@ -277,9 +277,9 @@ Bagian ini menjelaskan perubahan khusus untuk modul dan cmdlet individual.
   New-AzMediaService -Tag @{TagName="TagValue"}
   ```
 
-### <a name="azmonitor-previously-azurerminsights"></a>Az.Monitor (sebelumnya AzureRM.Insights)
+### <a name="azmonitor-previously-azurerminsights"></a>Az.Monitor (previously AzureRM.Insights)
 
-- Menghapus nama dan `Categories` `Timegrains` parameter bentuk jamak untuk mendukung nama parameter singular dari `Set-AzDiagnosticSetting` Skrip cmdlet menggunakan
+- Menghapus parameter `Categories` dan `Timegrains` nama jamak sebagai ganti nama parameter tunggal dari cmdlet `Set-AzDiagnosticSetting` Skrip menggunakan
   ```azurepowershell-interactive
   Set-AzureRmDiagnosticSetting -Timegrains PT1M -Categories Category1, Category2
   ```
@@ -289,17 +289,17 @@ Bagian ini menjelaskan perubahan khusus untuk modul dan cmdlet individual.
   Set-AzDiagnosticSetting -Timegrain PT1M -Category Category1, Category2
   ```
 
-### <a name="aznetwork-previously-azurermnetwork"></a>Az.Network (sebelumnya AzureRM.Network)
+### <a name="aznetwork-previously-azurermnetwork"></a>Az.Network (previously AzureRM.Network)
 
-- Menghapus parameter yang sudah `ResourceId` tidak berlaku dari `Get-AzServiceEndpointPolicyDefinition` cmdlet
-- Properti yang dihapus dari `EnableVmProtection` `PSVirtualNetwork` objek
-- Cmdlet yang dihapus yang `Set-AzVirtualNetworkGatewayVpnClientConfig` tidak lagi dipakai
+- Menghapus parameter `ResourceId` yang tidak digunakan lagi dari cmdlet `Get-AzServiceEndpointPolicyDefinition`
+- Menghapus properti `EnableVmProtection` yang tidak digunakan lagi dari objek `PSVirtualNetwork`
+- Menghapus cmdlet `Set-AzVirtualNetworkGatewayVpnClientConfig` yang tidak digunakan lagi
 
-Skrip tidak boleh lagi membuat keputusan pemrosesan berdasarkan nilai bidang ini.
+Skrip seharusnya tidak lagi membuat keputusan pemrosesan berdasarkan nilai-nilai di kolom ini.
 
-### <a name="azoperationalinsights-previously-azurermoperationalinsights"></a>Az.OperationalInsights (sebelumnya AzureRM.OperationalInsights)
+### <a name="azoperationalinsights-previously-azurermoperationalinsights"></a>Az.OperationalInsights (previously AzureRM.OperationalInsights)
 
-- Kumpulan parameter default `Get-AzOperationalInsightsDataSource` untuk dihapus, `ByWorkspaceNameByKind` dan telah menjadi kumpulan parameter default
+- Set parameter default untuk `Get-AzOperationalInsightsDataSource` dihapus, dan `ByWorkspaceNameByKind` menjadi set parameter default
 
   Skrip yang mencantumkan sumber data menggunakan
   ```azurepowershell-interactive
@@ -313,15 +313,15 @@ Skrip tidak boleh lagi membuat keputusan pemrosesan berdasarkan nilai bidang ini
 
 ### <a name="azrecoveryservices-previously-azurermrecoveryservices-azurermrecoveryservicesbackup-and-azurermrecoveryservicessiterecovery"></a>Az.RecoveryServices (sebelumnya AzureRM.RecoveryServices, AzureRM.RecoveryServices.Backup, dan AzureRM.RecoveryServices.SiteRecovery)
 
-- Parameter `Encryption` yang dihapus dari `New/Set-AzRecoveryServicesAsrPolicy` cmdlet
-- `TargetStorageAccountName` parameter sekarang wajib untuk pemulihan disk terkelola dalam `Restore-AzRecoveryServicesBackupItem` cmdlet
-- Parameter `StorageAccountName` dan yang dihapus dalam `StorageAccountResourceGroupName` `Restore-AzRecoveryServicesBackupItem` cmdlet
-- Parameter `Name` yang dihapus dalam `Get-AzRecoveryServicesBackupContainer` cmdlet
+- Menghapus parameter `Encryption` dari cmdlet `New/Set-AzRecoveryServicesAsrPolicy`
+- Parameter `TargetStorageAccountName` kini wajib untuk pemulihan disk terkelola di cmdlet `Restore-AzRecoveryServicesBackupItem`
+- Menghapus parameter `StorageAccountName` dan `StorageAccountResourceGroupName` dalam cmdlet `Restore-AzRecoveryServicesBackupItem`
+- Menghapus parameter `Name` dalam cmdlet `Get-AzRecoveryServicesBackupContainer`
 
-### <a name="azresources-previously-azurermresources"></a>Az.Resources (sebelumnya AzureRM.Resources)
+### <a name="azresources-previously-azurermresources"></a>Az.Resources (previously AzureRM.Resources)
 
-- Parameter `Sku` yang dihapus dari `New/Set-AzPolicyAssignment` cmdlet
-- Parameter `Password` yang dihapus dari dan kata sandi cmdlet secara otomatis `New-AzADServicePrincipal` `New-AzADSpCredential` dihasilkan, skrip yang menyediakan kata sandi:
+- Menghapus parameter `Sku` dari cmdlet `New/Set-AzPolicyAssignment`
+- Menghapus parameter `Password` dari cmdlet `New-AzADServicePrincipal` dan `New-AzADSpCredential` Kata sandi dibuat secara otomatis, skrip yang menyediakan kata sandinya:
 
   ```azurepowershell-interactive
   New-AzAdSpCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476 -Password $secPassword
@@ -334,12 +334,12 @@ Skrip tidak boleh lagi membuat keputusan pemrosesan berdasarkan nilai bidang ini
   $secPassword = $credential.Secret
   ```
 
-### <a name="azservicefabric-previously-azurermservicefabric"></a>Az.ServiceFabric (sebelumnya AzureRM.ServiceFabric)
+### <a name="azservicefabric-previously-azurermservicefabric"></a>Az.ServiceFabric (previously AzureRM.ServiceFabric)
 
-- Tipe pengembalian cmdlet berikut ini telah diubah:
-  - Properti `ServiceTypeHealthPolicies` tipe `ApplicationHealthPolicy` telah dihapus.
-  - Properti `ApplicationHealthPolicies` tipe `ClusterUpgradeDeltaHealthPolicy` telah dihapus.
-  - Properti `OverrideUserUpgradePolicy` tipe `ClusterUpgradePolicy` telah dihapus.
+- Jenis pengembalian cmdlet berikut telah diubah:
+  - Properti `ServiceTypeHealthPolicies` jenis `ApplicationHealthPolicy` telah dihapus.
+  - Properti `ApplicationHealthPolicies` jenis `ClusterUpgradeDeltaHealthPolicy` telah dihapus.
+  - Properti `OverrideUserUpgradePolicy` jenis `ClusterUpgradePolicy` telah dihapus.
   - Perubahan ini memengaruhi cmdlet berikut:
     - Add-AzServiceFabricClientCertificate
     - Add-AzServiceFabricClusterCertificate
@@ -358,20 +358,20 @@ Skrip tidak boleh lagi membuat keputusan pemrosesan berdasarkan nilai bidang ini
 
 ### <a name="azsql-previously-azurermsql"></a>Az.Sql (sebelumnya AzureRM.Sql)
 
-- Parameter `State` dan yang dihapus dari `ResourceId` `Set-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet
-- Cmdlets yang dihapus: `Get/Set-AzSqlServerBackupLongTermRetentionVault` , `Get/Start/Stop-AzSqlServerUpgrade` , , , `Get/Set-AzSqlDatabaseAuditingPolicy` `Get/Set-AzSqlServerAuditingPolicy` `Remove-AzSqlDatabaseAuditing` , `Remove-AzSqlServerAuditing`
-- Menghapus parameter yang sudah tidak berlaku `Current` dari `Get-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet
-- Menghapus parameter yang sudah tidak berlaku `DatabaseName` dari `Get-AzSqlServerServiceObjective` cmdlet
-- Menghapus parameter yang sudah tidak berlaku `PrivilegedLogin` dari `Set-AzSqlDatabaseDataMaskingPolicy` cmdlet
+- Menghapus parameter `State` dan `ResourceId` dari cmdlet `Set-AzSqlDatabaseBackupLongTermRetentionPolicy`
+- Menghapus cmdlet yang tidak digunakan lagi: `Get/Set-AzSqlServerBackupLongTermRetentionVault`, `Get/Start/Stop-AzSqlServerUpgrade`, `Get/Set-AzSqlDatabaseAuditingPolicy`, `Get/Set-AzSqlServerAuditingPolicy`, `Remove-AzSqlDatabaseAuditing`, `Remove-AzSqlServerAuditing`
+- Menghapus parameter `Current` yang tidak digunakan lagi dari cmdlet `Get-AzSqlDatabaseBackupLongTermRetentionPolicy`
+- Menghapus parameter `DatabaseName` yang tidak digunakan lagi dari cmdlet `Get-AzSqlServerServiceObjective`
+- Menghapus parameter `PrivilegedLogin` yang tidak digunakan lagi dari cmdlet `Set-AzSqlDatabaseDataMaskingPolicy`
 
-### <a name="azstorage-previously-azurestorage-and-azurermstorage"></a>Az.Storage (sebelumnya Azure.Storage dan AzureRM.Storage)
+### <a name="azstorage-previously-azurestorage-and-azurermstorage"></a>Az.Storage (previously Azure.Storage and AzureRM.Storage)
 
 - Untuk mendukung pembuatan konteks penyimpanan Oauth hanya dengan nama akun penyimpanan, kumpulan parameter default telah diubah menjadi `OAuthParameterSet`
   - Contoh: `$ctx = New-AzureStorageContext -StorageAccountName $accountName`
-- Parameter `Location` ini telah menjadi wajib di `Get-AzStorageUsage` cmdlet
-- Metode Storage API sekarang menggunakan Pola Asinkron Berbasis Tugas (TAP), bukan panggilan API sinkron. Contoh berikut memperlihatkan perintah asinkron baru:
+- Parameter `Location` telah menjadi wajib dalam cmdlet `Get-AzStorageUsage`
+- Metode API Storage kini menggunakan Pola Asinkron Berbasis Tugas (TAP), bukan panggilan API sinkron. Contoh berikut menunjukkan perintah asinkron baru:
 
-#### <a name="blob-snapshot"></a>Blob Snapshot
+#### <a name="blob-snapshot"></a>Snapshot Blob
 
 AzureRM:
 
@@ -407,7 +407,7 @@ $task.Wait()
 $snapshot = $task.Result
 ```
 
-#### <a name="undelete-soft-deleted-blob"></a>Undelete soft-deleted blob
+#### <a name="undelete-soft-deleted-blob"></a>Membatalkan penghapusan blob yang dihapus sementara
 
 AzureRM:
 
@@ -424,7 +424,7 @@ $task = $b.ICloudBlob.UndeleteAsync()
 $task.Wait()
 ```
 
-#### <a name="set-blob-tier"></a>Set Blob Tier
+#### <a name="set-blob-tier"></a>Mengatur Tingkat Blob
 
 AzureRM:
 
@@ -448,6 +448,6 @@ $task = $pageBlob.ICloudBlob.SetPremiumBlobTierAsync("P4")
 $task.Wait()
 ```
 
-### <a name="azwebsites-previously-azurermwebsites"></a>Az.Websites (sebelumnya AzureRM.Websites)
+### <a name="azwebsites-previously-azurermwebsites"></a>Az.Websites (previously AzureRM.Websites)
 
-- Properti yang sudah tidak berlaku dari `PSAppServicePlan` objek , , , `PSCertificate` `PSCloningInfo` dan `PSSite`
+- Menghapus properti yang tidak digunakan lagi dari objek `PSAppServicePlan`, `PSCertificate`, `PSCloningInfo`, dan `PSSite`

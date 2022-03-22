@@ -1,6 +1,6 @@
 ---
-title: Gambaran umum tentang PowerShell Admin Tumpukan Azure | Microsoft Docs
-description: Gambaran umum PowerShell Admin Tumpukan Azure dengan instruksi untuk penginstalan dan konfigurasi.
+title: Gambaran Umum Azure Stack Admin PowerShell | Microsoft Docs
+description: Gambaran umum Azure Stack Admin PowerShell dengan instruksi untuk penginstalan dan konfigurasi.
 author: sijuman
 ms.author: sijuman
 manager: knithinc
@@ -10,18 +10,18 @@ ms.manager: knithinc
 ms.date: 08/06/2020
 ms.openlocfilehash: 5e30e1b4a21f62c00419cfa77e1d875e110eebec
 ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "132425043"
 ---
-# <a name="azure-stack-module-182"></a>Azure Stack Module 1.8.2
+# <a name="azure-stack-module-182"></a>Modul Azure Stack 1.8.2
 
 ## <a name="requirements"></a>Persyaratan:
 
-Versi minimum Azure Stack yang didukung adalah 1910.
+Versi Azure Stack minimum yang didukung adalah versi 1910.
 
-Catatan: Untuk versi Lama Azure Stack, centang Instal [Powershell Tumpukan Azure](/azure/azure-stack/azure-stack-powershell-install#install-azure-stack-powershell)
+Catatan: Untuk versi Azure Stack yang lebih lama, periksa [Menginstal Azure Stack Powershell](/azure/azure-stack/azure-stack-powershell-install#install-azure-stack-powershell)
 
 ## <a name="install"></a>Instal
 

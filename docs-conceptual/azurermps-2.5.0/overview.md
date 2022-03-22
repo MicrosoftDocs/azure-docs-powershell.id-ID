@@ -1,6 +1,6 @@
 ---
-title: Gambaran umum | PowerShell Tumpukan Azure Microsoft Docs
-description: Gambaran umum PowerShell Azure Stack dengan instruksi untuk penginstalan dan konfigurasi.
+title: Gambaran Umum Azure Stack PowerShell | Microsoft Docs
+description: Gambaran umum Azure Stack PowerShell dengan instruksi untuk penginstalan dan konfigurasi.
 author: bganapa
 ms.author: bganapa
 manager: knithinc
@@ -11,7 +11,7 @@ ms.date: 09/21/2018
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 4b72bbd1bda93767251e0ba3d488f798575d9115
 ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "132428311"
@@ -19,9 +19,9 @@ ms.locfileid: "132428311"
 # <a name="azurerm-module-250"></a>AzureRM Module 2.5.0
 
 ## <a name="requirements"></a>Persyaratan:
-Versi minimum Azure Stack yang didukung adalah 1904.
+Versi Azure Stack minimum yang didukung adalah versi tahun 1904.
 
-Catatan: Jika Anda menggunakan versi instalan yang lebih lama, versi 1.2.11
+Catatan: Jika Anda menggunakan versi yang lebih lama, pasang versi 1.2.11
 
 
 ## <a name="install"></a>Instal
@@ -45,87 +45,87 @@ Use-AzureRmProfile -Profile 2018-03-01-hybrid -Force
 
 ## <a name="release-notes"></a>Catatan Rilis
 * AzureRm.Resources
-    * Modul sumber daya baru yang mendukung versi api 2018-05-01 dengan profil hibrid 2019-03-01
-    * PolicyDefinition(2016-12-01) dan PolicyDefinition(2017-06-01-preview) masih dengan versi api lama
+    * Modul Sumber Daya baru yang mendukung versi api 2018-05-01 dengan profil hibrid 2019-03-01
+    * Operasi PolicyDefinition(2016-12-01) dan PolicyAssisgment(2017-06-01-preview) masih dengan versi api lama
 * AzureRm.Compute
-    * Modul perhitungan baru yang mendukung versi api 2017-12-01.'
+    * Modul komputasi baru yang mendukung versi api 2017-12-01.'
 
 
-* Rilis ini berkaitan dengan pemutakhiran profil api tertentu 2019-03-01-hybrid
-* Semua modul akan mengambil lebih dari atau sama dengan dependensi pada modul AzureRm.Profile.
-* Versi Api yang dikunyapkan oleh setiap modul akan diperbarui. 
-    * Hitung - 30-12-2017
-    * Jaringan - 01-10-2017
-    * Storage - 01-2016
-    * Sumber Daya - 01-02-2011
+* Rilis ini sesuai dengan profil api spesifik azurestack 2019-03-01-hybrid
+* Semua modul mengambil lebih besar dari atau sama dengan dependensi di modul AzureRm.Profile.
+* Versi Api yang didukung oleh setiap modul diperbarui. 
+    * Komputasi - 2017-12-30
+    * Jaringan - 2017-10-01
+    * Penyimpanan - 2016-01-01
+    * Sumber daya - 2018-02-01
     * Keyvault - 2016-10-01
     * Dns - 2016-04-01
-* Peta lengkap versi api untuk setiap tipe sumber daya dapat ditemukan di https://github.com/Azure/azure-rest-api-specs/blob/master/profile/2018-03-01-hybrid.json
+* Peta versi api lengkap untuk setiap jenis sumber daya dapat ditemukan di https://github.com/Azure/azure-rest-api-specs/blob/master/profile/2018-03-01-hybrid.json
 
 ## <a name="content"></a>Konten:
 ### <a name="azure-bridge"></a>Azure Bridge
-Pratinjau rilis modul administrator Azure Stack AzureBridge yang memungkinkan Anda untuk men syndicate gambar dari Azure.
+Pratinjau rilis modul administrator Azure Stack AzureBridge yang memungkinkan Anda untuk mensindikasikan citra dari Azure.
 
-### <a name="backup"></a>Pencadangan
-Rilis pratinjau modul administrator Cadangan yang memungkinkan administrator untuk:
-- Mengonfigurasi di mana cadangan disimpan
+### <a name="backup"></a>Cadangan
+Pratinjau rilis modul administrator Microsoft Azure Backup yang memungkinkan administrator untuk:
+- Mengonfigurasi tempat cadangan disimpan
 - Melakukan pencadangan
-- Cadangkan daftar dan pulihkan yang telah selesai
+- Mencantumkan dan memulihkan cadangan yang telah selesai
 
-### <a name="commerce"></a>Perdagangan
-Rilis pratinjau modul administrator Azure Stack Commerce yang menyediakan cara untuk menampilkan agregat penggunaan data di seluruh sistem Azure Stack Anda.
+### <a name="commerce"></a>Commerce
+Pratinjau rilis modul administrator Azure Stack Commerce yang menyediakan cara untuk menampilkan penggunaan data agregat di seluruh sistem Azure Stack.
 
-### <a name="compute"></a>Hitung
-Rilis pratinjau modul administrator Hitung Tumpukan Azure yang menyediakan fungsionalitas untuk mengelola kuota perhitungan, gambar platform, disk yang dikelola dan ekstensi mesin virtual.
+### <a name="compute"></a>Compute
+Pratinjau rilis modul administrator Azure Stack Compute yang menyediakan fungsionalitas untuk mengelola kuota komputasi, citra platform, disk terkelola, dan ekstensi mesin virtual.
 
 ### <a name="fabric"></a>Fabric
-Preview release of the Azure Stack Fabric administrator module which allows administrators to view and manage infrastructure components:
-- Hentikan, Mulai dan Penutupan simpul unit skala
-- Kuras dan Lanjutkan node unit skala untuk aktivitas yang terkait dengan FRU
+Pratinjau rilis modul administrator Azure Stack Fabric yang memungkinkan administrator untuk menampilkan dan mengelola komponen infrastruktur:
+- Menghentikan, Memulai, dan Mematikan node unit skala
+- Menguras dan Melanjutkan node unit skala untuk aktivitas terkait FRU
 - Perbaikan node unit skala
-- Mulai ulang peran Infrastruktur
-- Contoh peran Hentikan, Mulai dan Penutupan Infrastruktur
-- Buat Kolam Renang IP baru
+- Memulai kembali peran Infrastruktur
+- Menghentikan, Memulai, dan Mematikan instans peran Infrastruktur
+- Membuat Kumpulan IP baru
 
 
-### <a name="gallery"></a>Galeri
-Rilis pratinjau modul administrator Galeri Tumpukan Azure yang menyediakan fungsionalitas untuk mengelola item galeri di marketplace Azure Stack.
+### <a name="gallery"></a>galeri
+Pratinjau rilis modul administrator Azure Stack Gallery yang menyediakan fungsionalitas untuk mengelola item galeri di marketplace Azure Stack.
 
-### <a name="infrastructure-insights"></a>Infrastruktur Insights
-Rilis pratinjau modul Insights administrator infrastruktur yang memungkinkan administrator:
-- Lihat kesehatan sumber daya stempel Azure Stack mereka
-- Menampilkan dan mengelola pemberitahuan
+### <a name="infrastructure-insights"></a>Infrastructure Insights
+Pratinjau rilis modul administrator Infrastructure Insights yang memungkinkan administrator:
+- Menampilkan kesehatan sumber daya stempel Azure Stack
+- Menampilkan dan mengelola peringatan
 
-### <a name="keyvault"></a>KeyVault
-Rilis pratinjau modul administrator Azure Stack KeyVault yang memungkinkan administrator menampilkan kuota KeyVault.
+### <a name="keyvault"></a>Az.KeyVault
+Pratinjau rilis modul administrator Azure Stack KeyVault yang memungkinkan administrator untuk menampilkan kuota KeyVault.
 
 ### <a name="network"></a>Jaringan
-Rilis pratinjau modul administrator jaringan yang memungkinkan:
+Pratinjau rilis modul administrator Jaringan yang memungkinkan:
 - Manajemen kuota jaringan
-- Menampilkan sumber daya jaringan yang dialokasikan seperti alamat IP publik, jaringan virtual, penyeimbang muat
+- Menampilkan sumber daya jaringan yang dialokasikan seperti alamat IP publik, jaringan virtual, penyeimbang beban
 - Menyediakan cmdlet yang menampilkan gambaran umum administrator
 
-### <a name="storage"></a>Storage
-Rilis pratinjau modul administrator Azure Stack Storage.  Dalam rilis ini, kami menyediakan fungsi untuk:
+### <a name="storage"></a>Penyimpanan
+Pratinjau rilis modul administrator Azure Stack Storage.  Dalam rilis ini kami menyediakan fungsionalitas untuk:
 - Mengelola kuota penyimpanan
-- Sumber daya penyimpanan terkumpul sampah yang dihapus
+- Sampah mengumpulkan sumber daya penyimpanan yang dihapus
 - Memulihkan akun penyimpanan yang dihapus
-- Melakukan migrasi wadah dari satu berbagi ke yang lain
-- Menampilkan informasi tentang komponen penyimpanan individual
-- Menampilkan informasi penggunaan dan kinerja
+- Memigrasikan kontainer dari satu bagian ke bagian lainnya
+- Melihat informasi tentang komponen penyimpanan individu
+- Menampilkan informasi penggunaan dan performa
 
 ### <a name="subscription-admin"></a>Admin Langganan
-Rilis pratinjau modul administrator Langganan Tumpukan Azure.  Modul ini menyediakan fungsionalitas untuk administrator untuk:
+Pratinjau rilis modul administrator Langganan Azure Stack.  Modul ini menyediakan fungsionalitas bagi administrator untuk:
 - Mengelola paket dan penawaran
-- Menampilkan informasi penggunaan dan kinerja
-- Kelola RBAC
+- Menampilkan informasi penggunaan dan performa
+- Mengelola RBAC
 
 ### <a name="subscription"></a>Langganan
-Rilis pratinjau modul Langganan Tumpukan Azure.  Modul ini menyediakan fungsionalitas bagi Pengguna untuk:
+Pratinjau rilis modul Langganan Azure Stack.  Modul ini menyediakan fungsionalitas bagi Pengguna untuk:
 - Membuat, Menghapus, dan Memperbarui Langganan
 
-### <a name="update"></a>Perbarui
-Rilis pratinjau modul administrator Pembaruan Tumpukan Azure.  Dalam modul ini administrator dapat:
-- Membuat daftar dan menginstal pembaruan yang tersedia
-- Lanjutkan pembaruan yang terganggu
-- Menampilkan pembaruan yang diinstal
+### <a name="update"></a>Pembaruan
+Pratinjau rilis modul administrator Azure Stack Update.  Dalam modul ini administrator dapat:
+- Mencantumkan dan menginstal pembaruan yang tersedia
+- Melanjutkan pembaruan yang terganggu
+- Melihat pembaruan yang diinstal

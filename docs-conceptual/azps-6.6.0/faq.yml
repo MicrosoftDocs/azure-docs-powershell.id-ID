@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Pertanyaan Umum (FAQ)
-  description: Pertanyaan yang sering diajukan tentang Azure PowerShell.
+  description: Tanya Jawab Umum tentang Azure PowerShell.
   ms.devlang: powershell
   ms.topic: faq
   ms.date: 11/02/2021
@@ -9,23 +9,23 @@ metadata:
   ms.service: azure-powershell
   ms.openlocfilehash: 935f8913b73ea2c30cc3a8b5dfc8fec041bf7889
   ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: id-ID
   ms.lasthandoff: 02/16/2022
   ms.locfileid: "138854685"
-title: Pertanyaan yang sering diajukan tentang Azure PowerShell
+title: Tanya jawab umum tentang Azure PowerShell
 summary: ''
 sections:
 - name: Diabaikan
   questions:
   - question: >
-      Apa Azure PowerShell itu?
+      Apa itu Azure PowerShell?
     answer: >
-      Azure PowerShell adalah sekumpulan cmdlet yang memungkinkan Anda mengelola sumber daya Azure secara langsung dengan PowerShell. Pada bulan Desember 2018, modul Az PowerShell tersedia secara umum. Sekarang modul PowerShell yang direkomendasikan untuk berinteraksi dengan Azure. Untuk mempelajari selengkapnya tentang modul Az PowerShell, lihat [Memperkenalkan modul Azure PowerShell Az baru](/powershell/azure/new-azureps-module-az).
+      Azure PowerShell adalah set cmdlet yang memungkinkan Anda untuk mengelola sumber daya Azure langsung dengan PowerShell. Pada bulan Desember 2018, modul Az PowerShell menjadi tersedia secara umum. Kini ini adalah modul PowerShell yang disarankan untuk berinteraksi dengan Azure. Untuk mempelajari selengkapnya tentang modul Az PowerShell, lihat [Memperkenalkan modul Az Azure PowerShell baru](/powershell/azure/new-azureps-module-az).
   - question: >
-      Bagaimana cara menonaktifkan pesan peringatan perubahan yang melanggar di Azure PowerShell?
+      Bagaimana cara menonaktifkan pesan peringatan perubahan pemecahan di Azure PowerShell?
     answer: >
-      Untuk menekan pesan peringatan perubahan yang melanggar di Azure PowerShell, Anda harus mengatur variabel `SuppressAzurePowerShellBreakingChangeWarnings` lingkungan ke `true`.
+      Untuk menekan pesan peringatan perubahan pemecahan di Azure PowerShell, Anda akan harus mengatur variabel lingkungan `SuppressAzurePowerShellBreakingChangeWarnings` ke `true`.
 
 
       ```azurepowershell
@@ -34,9 +34,9 @@ sections:
 
       ```
   - question: >
-      Bagaimana cara menonaktifkan pesan peringatan pensiun AzureRM di Azure PowerShell?
+      Bagaimana cara menonaktifkan pesan peringatan penghentian AzureRM di Azure PowerShell?
     answer: >-
-      Untuk menekan pesan peringatan pensiun AzureRM dalam Azure PowerShell, Anda harus mengatur variabel `SuppressAzureRmModulesRetiringWarning` lingkungan ke `true`.
+      Untuk menekan pesan peringatan penghentian AzureRM di Azure PowerShell, Anda akan harus mengatur variabel lingkungan `SuppressAzureRmModulesRetiringWarning` ke `true`.
 
 
       ```azurepowershell-interactive
@@ -46,7 +46,7 @@ sections:
       ```
 
 
-      Salah satu kelemahan dari contoh sebelumnya adalah Anda harus menjalankan perintah untuk setiap sesi PowerShell baru kecuali Anda menambahkannya ke profil PowerShell Anda.
+      Satu kekurangan dari contoh sebelumnya adalah Anda akan harus menjalankan perintah untuk sesi PowerShell baru, kecuali jika Anda menambahkannya ke profil PowerShell Anda.
 
 
       Untuk mengatur variabel lingkungan secara permanen, Anda juga dapat menggunakan contoh berikut.

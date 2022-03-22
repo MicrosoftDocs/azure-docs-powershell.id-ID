@@ -1,33 +1,33 @@
 ---
-title: Menjalankan cmdlet secara paralel menggunakan pekerjaan PowerShell
-description: Cara menjalankan cmdlet secara paralel menggunakan parameter -AsJob.
+title: Menjalankan cmdlet secara paralel dengan menggunakan pekerjaan PowerShell
+description: Cara menjalankan cmdlet secara paralel dengan menggunakan parameter -AsJob.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 10/05/2021
 ms.custom: devx-track-azurepowershell
 ms.openlocfilehash: 70cf7b8e0046a1402ec2d3b93a161d13f5c7a67f
 ms.sourcegitcommit: c489152c02cceaa5c8e284933af57f07c5350961
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 10/07/2021
 ms.locfileid: "132429340"
 ---
-# <a name="running-cmdlets-in-parallel-using-powershell-jobs"></a>Menjalankan cmdlet secara paralel menggunakan pekerjaan PowerShell
+# <a name="running-cmdlets-in-parallel-using-powershell-jobs"></a>Menjalankan cmdlet secara paralel dengan menggunakan pekerjaan PowerShell
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
-PowerShell mendukung tindakan asinkron dengan [Pekerjaan PowerShell](/powershell/module/microsoft.powershell.core/about/about_jobs). Azure PowerShell sangat bergantung pada pembuatan, dan menunggu, panggilan jaringan ke Azure. Sering kali, Anda mungkin memerlukan panggilan untuk tidak memblokir. Untuk mengatasi kebutuhan ini, Azure PowerShell menyediakan dukungan [PSJob kelas](/powershell/module/microsoft.powershell.core/about/about_jobs) satu.
+PowerShell mendukung tindakan asinkron dengan [Pekerjaan PowerShell](/powershell/module/microsoft.powershell.core/about/about_jobs). Azure PowerShell sangat bergantung pada pembuatan, dan menunggu, panggilan jaringan ke Azure. Anda mungkin sering merasa perlu membuat panggilan non-pemblokiran. Untuk mengatasi kebutuhan ini, Azure PowerShell menyediakan dukungan [PSJob](/powershell/module/microsoft.powershell.core/about/about_jobs) kelas satu.
 
 ## <a name="context-persistence-and-psjobs"></a>Persistensi Konteks dan PSJobs
 
-Karena PSJobs dijalankan sebagai proses terpisah, koneksi Azure Anda harus dibagikan dengan mereka. Setelah masuk ke akun Azure Anda `Connect-AzureRmAccount` dengan , berikan konteksnya pada pekerjaan.
+Karena PSJobs dijalankan sebagai proses terpisah, koneksi Azure Anda harus dibagikan dengan PSJobs. Setelah masuk ke akun Azure Anda dengan `Connect-AzureRmAccount`, berikan konteks ke pekerjaan.
 
 ```azurepowershell
 $creds = Get-Credential
 $job = Start-Job { param($context,$vmadmin) New-AzureRmVM -Name MyVm -AzureRmContext $context -Credential $vmadmin} -Arguments (Get-AzureRmContext),$creds
 ```
 
-Namun, jika Anda telah memilih untuk membuat konteks Anda disimpan secara otomatis dengan , konteks akan otomatis `Enable-AzureRmContextAutosave` dibagikan dengan pekerjaan yang Anda buat.
+Namun, jika Anda telah memilih untuk menyimpan konteks Anda secara otomatis dengan `Enable-AzureRmContextAutosave`, konteks dibagikan secara otomatis dengan pekerjaan yang Anda buat.
 
 ```azurepowershell
 Enable-AzureRmContextAutosave
@@ -37,15 +37,15 @@ $job = Start-Job { param($vmadmin) New-AzureRmVM -Name MyVm -Credential $vmadmin
 
 ## <a name="automatic-jobs-with--asjob"></a>Pekerjaan Otomatis dengan `-AsJob`
 
-Demi kenyamanan, Azure PowerShell menyediakan `-AsJob` pengalih pada beberapa cmdlet yang berjalan dalam waktu lama.
-Sakelar `-AsJob` membuat PSJobs lebih mudah.
+Untuk kemudahan, Azure PowerShell juga menyediakan sakelar `-AsJob` di beberapa cmdlet yang berjalan lama.
+Sakelar `-AsJob` memudahkan pembuatan PSJobs.
 
 ```azurepowershell
 $creds = Get-Credential
 $job = New-AzureRmVM -Name MyVm -Credential $creds -AsJob
 ```
 
-Anda dapat memeriksa pekerjaan dan kemajuan kapan saja dengan `Get-Job` dan `Get-AzureRmVM` .
+Anda dapat memeriksa pekerjaan dan kemajuan kapan saja dengan `Get-Job` dan `Get-AzureRmVM`.
 
 ```azurepowershell
 Get-Job $job
@@ -62,10 +62,10 @@ ResourceGroupName    Name Location          VmSize  OsType     NIC ProvisioningS
 MyVm                 MyVm   eastus Standard_DS1_v2 Windows    MyVm          Creating
 ```
 
-Ketika pekerjaan selesai, dapatkan hasil pekerjaan tersebut dengan `Receive-Job` .
+Ketika pekerjaan selesai, dapatkan hasil pekerjaan dengan `Receive-Job`.
 
 > [!NOTE]
-> `Receive-Job` mengembalikan hasil dari cmdlet seperti jika `-AsJob` bendera tidak ada. Misalnya, `Receive-Job` hasil dari tipe yang sama dengan hasil `Do-Action -AsJob` `Do-Action` .
+> `Receive-Job` mengembalikan hasil dari cmdlet seolah-olah bendera `-AsJob` tidak ada. Misalnya, hasil `Receive-Job` dari `Do-Action -AsJob` berasal dari jenis yang sama dengan hasil dari `Do-Action`.
 
 ```azurepowershell
 $vm = Receive-Job $job
@@ -88,7 +88,7 @@ StorageProfile           : {ImageReference, OsDisk, DataDisks}
 FullyQualifiedDomainName : myvmmyvm.eastus.cloudapp.azure.com
 ```
 
-## <a name="example-scenarios"></a>Contoh Skenario
+## <a name="example-scenarios"></a>Skenario Contoh
 
 Membuat beberapa VM sekaligus:
 
@@ -105,7 +105,7 @@ Get-Job | Wait-Job
 Get-AzureRmVM
 ```
 
-Dalam contoh ini, `Wait-Job` cmdlet menyebabkan skrip untuk dijeda saat pekerjaan berjalan. Skrip terus menjalankan setelah semua pekerjaan telah selesai. Beberapa pekerjaan berjalan secara paralel, lalu skrip menunggu penyelesaian sebelum melanjutkan.
+Dalam contoh ini, cmdlet `Wait-Job` menyebabkan skrip berhenti sejenak saat pekerjaan berjalan. Skrip terus berjalan setelah semua pekerjaan selesai. Beberapa pekerjaan berjalan secara paralel kemudian skrip menunggu penyelesaian sebelum melanjutkan.
 
 ```Output
 Id     Name            PSJobTypeName   State         HasMoreData     Location             Command

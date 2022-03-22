@@ -1,6 +1,6 @@
 ---
-title: Menghapus Azure PowerShell
-description: Cara melakukan penghapusan instalan Azure PowerShell
+title: Menghapus instalan Azure PowerShell
+description: Cara melakukan penghapusan instalan Azure PowerShell secara menyeluruh
 ms.date: 09/15/2020
 ms.devlang: powershell
 ms.topic: conceptual
@@ -8,31 +8,31 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: ff9135839b01ad9a1bf10e5969cd3226fe492145
 ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "132428325"
 ---
-# <a name="uninstall-the-azure-powershell-module"></a>Menghapus instalan Azure PowerShell modul
+# <a name="uninstall-the-azure-powershell-module"></a>Menghapus instalan modul Azure PowerShell
 
-Artikel ini memberi tahu Anda cara menghapus instalan versi lama Azure PowerShell, atau sepenuhnya menghapusnya dari sistem. Jika memutuskan untuk menghapus instalan Azure PowerShell sepenuhnya, beri kami beberapa umpan balik melalui cmdlet [Kirim Umpan Balik.](/powershell/module/az.accounts/send-feedback) Jika menemukan bug, kami menghargainya jika Anda [mengajukan GitHub sehingga](https://github.com/azure/azure-powershell/issues) masalah tersebut dapat diperbaiki.
+Artikel ini menjelaskan cara menghapus instalan versi Azure PowerShell lama, atau menghapus seluruhnya dari sistem Anda. Jika Anda memutuskan untuk menghapus instalan Azure PowerShell sepenuhnya, berikan beberapa umpan balik kepada kami melalui cmdlet [Send-Feedback](/powershell/module/az.accounts/send-feedback). Jika Anda menjumpai bug, kami akan sangat menghargainya jika Anda [mencatatkan masalah GitHub](https://github.com/azure/azure-powershell/issues) sehingga dapat diperbaiki.
 
 ## <a name="uninstall-the-az-powershell-module-from-msi"></a>Menghapus instalan modul Az PowerShell dari MSI
 
-Jika Anda menginstal modul Az PowerShell menggunakan paket MSI, Anda harus menghapus instalasi melalui sistem Windows dan bukan PowerShell.
+Jika Anda menginstal modul Az PowerShell menggunakan paket MSI, Anda harus menghapus instalan melalui sistem Windows bukan PowerShell.
 
 |         Platform         |                      Instruksi                      |
 | ------------------------ | ------------------------------------------------------ |
-| Windows 10               | Memulai > Pengaturan > Baru                                |
-| Windows 7 </br>Windows 8 | Mulai > Panel Kontrol > Program > Menghapus instalan program |
+| Windows 10               | Mulai > Pengaturan > Aplikasi                                |
+| Windows 7 </br>Windows 8 | Mulai > Panel Kontrol > Program > Hapus instalan program |
 
-Setelah berada di layar ini, Anda **akan Azure PowerShell** layar dalam daftar program. Ini adalah aplikasi untuk menghapus instalasi. Jika anda tidak melihat program ini dicantumkan, maka Anda menginstal melalui PowerShellGet, dan harus mengikuti kumpulan instruksi berikutnya.
+Setelah tiba di layar ini, Anda akan melihat **Azure PowerShell** di daftar program. Daftar ini adalah aplikasi yang akan dihapus instalannya. Jika Anda tidak melalui program tercantum ini, Anda menghapus instalan melalui PowerShellGet, dan harus mengikuti set instruksi berikutnya.
 
 ## <a name="uninstall-the-az-powershell-module-from-powershellget"></a>Menghapus instalan modul Az PowerShell dari PowerShellGet
 
-Untuk menghapus instalasi modul Az, Anda bisa menggunakan cmdlet [Uninstall-Module.](/powershell/module/powershellget/uninstall-module) Namun, `Uninstall-Module` hanya menghapus instalan satu modul. Untuk menghapus modul Az PowerShell sepenuhnya, Anda harus menghapus instalan setiap modul satu per satu. Penghapusan instalan bisa rumit jika Anda memiliki lebih dari satu versi Azure PowerShell diinstal.
+Untuk menghapus modul Az, Anda dapat menggunakan cmdlet [Uninstall-Module](/powershell/module/powershellget/uninstall-module). Namun, `Uninstall-Module` hanya menghapus instalan satu modul. Untuk menghapus modul Az PowerShell seluruhnya, Anda harus menghapus instalan setiap modul satu per satu. Penghapusan instalan dapat menjadi rumit jika Anda memiliki lebih dari satu versi Azure PowerShell yang diinstal.
 
-Untuk memeriksa versi modul Az PowerShell mana yang sudah Anda instal, jalankan perintah berikut ini:
+Untuk memeriksa versi modul Az PowerShell yang telah diinstal, jalankan perintah berikut:
 
 ```powershell-interactive
 Get-InstalledModule -Name Az -AllVersions
@@ -45,7 +45,7 @@ Version             Name                           Repository           Descript
 4.1.0               Az                             PSGallery            Microsoft Azure PowerShell
 ```
 
-Skrip berikut ini memberikan kueri Galeri PowerShell untuk mendapatkan daftar submodul dependen. Kemudian, skrip menghapus instalan versi submodule yang benar. Anda harus mempunyai akses administrator untuk menjalankan skrip ini dalam lingkup selain Proses **atau** Pengguna **Saat Ini.**
+Skrip berikut meminta Galeri PowerShell untuk mendapatkan daftar submodul dependen. Kemudian, skrip menghapus instalan versi setiap submodul yang benar. Anda harus memiliki akses administrator untuk menjalankan skrip ini dalam cakupan selain **Proses** atau **Pengguna Saat Ini**.
 
 ```powershell-interactive
 function Uninstall-AzModule {
@@ -141,13 +141,13 @@ function Uninstall-AzModule {
 }
 ```
 
-Untuk menggunakan fungsi ini, salin dan tempelkan kode ke sesi PowerShell Anda. Contoh berikut ini menunjukkan cara menjalankan fungsi untuk menghapus versi lama modul Az PowerShell dan submodulnya.
+Untuk menggunakan fungsi ini, salin dan tempel kode ke dalam sesi PowerShell Anda. Contoh berikut menunjukkan cara menjalankan fungsi untuk menghapus versi modul Az PowerShell yang lebih lama dan submodulnya.
 
 ```powershell-interactive
 Uninstall-AzModule -Name Az -Version 1.8.0
 ```
 
-Saat skrip berjalan, skrip menampilkan **Nama,** **Versi,** dan **Negara Bagian** setiap submodule yang sedang dihapus instalasinya. Untuk menjalankan skrip agar hanya melihat apa yang akan dihapus, tanpa menghapusnya, tentukan `-WhatIf` parameter.
+Saat skrip berjalan, skrip menampilkan **Nama**, **Versi**, dan **Status** setiap submodul yang akan dihapus instalannya. Untuk menjalankan skrip hanya untuk melihat yang akan dihapus, tanpa menghapusnya, tentukan parameter `-WhatIf`.
 
 ```output
 ModuleName              Version  State
@@ -161,10 +161,10 @@ Az.ApplicationInsights  1.0.0    Uninstalled
 ```
 
 > [!IMPORTANT]
-> Jika skrip ini tidak dapat menyesuaikan dependensi persis dengan versi yang  sama untuk dihapus, skrip tidak akan menghapus instalan versi dependensi tersebut. Ini karena mungkin ada versi modul target lainnya pada sistem Anda yang mengandalkan dependensi ini.
+> Jika skrip tidak dapat mencocokkan dependensi dengan versi sama yang akan dihapus instalannya, skrip tidak akan menghapus _setiap_ versi dependensi. Hal ini karena dapat terdapat versi modul target lainnya di sistem Anda yang bergantung pada dependensi ini.
 
-Jalankan contoh berikut ini untuk setiap versi modul Az PowerShell yang ingin Anda hapus instalannya.
-Demi kenyamanan, skrip berikut menghapus instalasi semua versi Az **kecuali** untuk yang terbaru.
+Jalankan contoh berikut untuk setiap versi modul Az PowerShell yang ingin Anda hapus instalannya.
+Untuk mudahnya, skrip berikut menghapus instalan semua versi Az **kecuali** versi terbaru.
 
 ```powershell-interactive
 $Modules = Get-InstalledModule -Name Az -AllVersions |
@@ -175,22 +175,22 @@ $Modules | ForEach-Object {Uninstall-AzModule -Name $_.Name -Version $_.Version}
 
 ## <a name="uninstall-the-azurerm-module"></a>Menghapus instalan modul AzureRM
 
-Jika modul Az sudah terinstal di sistem Anda dan ingin menghapus instalan AzureRM, ada dua opsi. Metode mana yang Anda ikuti bergantung pada cara Anda menginstal modul AzureRM. Jika tidak yakin dengan metode penginstalan asli, ikuti langkah-langkah untuk menghapus instalan MSI terlebih dahulu.
+Jika modul Az terinstal di sistem Anda dan Anda ingin menghapus instalan AzureRM, terdapat dua opsi. Metode yang diikuti bergantung pada cara Anda menginstal modul AzureRM. Jika Anda tidak yakin dengan metode penginstalan awal Anda, ikuti langkah untuk menghapus MSI terlebih dahulu.
 
-### <a name="uninstall-the-azurerm-powershell-module-from-msi"></a>Menghapus instalan modul PowerShell AzureRM dari MSI
+### <a name="uninstall-the-azurerm-powershell-module-from-msi"></a>Menghapus instalan modul AzureRM PowerShell dari MSI
 
-Jika menginstal modul PowerShell AzureRM menggunakan paket MSI, Anda harus menghapus instalan melalui sistem Windows, bukan PowerShell.
+Jika Anda menginstal modul AzureRM PowerShell menggunakan paket MSI, Anda harus menghapus instalan melalui sistem Windows bukan PowerShell.
 
 |         Platform         |                      Instruksi                      |
 | ------------------------ | ------------------------------------------------------ |
-| Windows 10               | Memulai > Pengaturan > Baru                                |
-| Windows 7 </br>Windows 8 | Mulai > Panel Kontrol > Program > Menghapus instalan program |
+| Windows 10               | Mulai > Pengaturan > Aplikasi                                |
+| Windows 7 </br>Windows 8 | Mulai > Panel Kontrol > Program > Hapus instalan program |
 
-Setelah berada di layar ini, Anda akan **Azure PowerShell** nama **Microsoft Azure PowerShell - Tahun Bulan** di daftar program. Ini adalah aplikasi untuk menghapus instalasi. Jika anda tidak melihat program ini dicantumkan, maka Anda menginstal melalui PowerShellGet, dan harus mengikuti kumpulan instruksi berikutnya.
+Setelah tiba di layar ini, Anda akan melihat **Azure PowerShell** atau **Microsoft Azure PowerShell - Bulan Tahun** di daftar program. Daftar ini adalah aplikasi yang akan dihapus instalannya. Jika Anda tidak melalui program tercantum ini, Anda menghapus instalan melalui PowerShellGet, dan harus mengikuti set instruksi berikutnya.
 
-### <a name="uninstall-the-azurerm-powershell-module-from-powershellget"></a>Menghapus instalan modul PowerShell AzureRM dari PowerShellGet
+### <a name="uninstall-the-azurerm-powershell-module-from-powershellget"></a>Menghapus instalan modul AzureRM PowerShell dari PowerShellGet
 
-Jika menginstal AzureRM dengan PowerShellGet, Anda dapat menghapus modul menggunakan cmdlet [AzureRM Hapus](/powershell/module/az.accounts/uninstall-azurerm) Instalan, yang tersedia sebagai bagian `Az.Accounts` dari modul. Contoh berikut ini menghapus semua _modul_ AzureRM dari komputer Anda. Situs ini membutuhkan hak istimewa administrator.
+Jika Anda menginstal AzureRM dengan PowerShellGet, Anda dapat menghapus modul dengan cmdlet [Uninstall-AzureRM](/powershell/module/az.accounts/uninstall-azurerm), yang tersedia sebagai bagian dari modul `Az.Accounts`. Contoh berikut menghapus _semua_ modul AzureRM dari komputer Anda. Tindakan ini memerlukan hak istimewa administrator.
 
 ```powershell-interactive
 Uninstall-AzureRm

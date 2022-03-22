@@ -1,6 +1,6 @@
 ---
-title: Mengelola sumber daya Azure Invoke-AzRestMethod
-description: Cara menggunakan cmdlet Azure PowerShell mengelola sumber daya dengan cmdlet Invoke-AzRestMethod cmdlet.
+title: Mengelola sumber daya Azure dengan Invoke-AzRestMethod
+description: Cara menggunakan Azure PowerShell untuk mengelola sumber daya dengan cmdlet Invoke-AzRestMethod.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
@@ -8,24 +8,24 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: 4ba6940e0fc5ac49b3f11860cd1ba24adb6995f2
 ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 11/03/2021
 ms.locfileid: "132429517"
 ---
-# <a name="manage-azure-resources-with-invoke-azrestmethod"></a>Mengelola sumber daya Azure Invoke-AzRestMethod
+# <a name="manage-azure-resources-with-invoke-azrestmethod"></a>Mengelola sumber daya Azure dengan Invoke-AzRestMethod
 
-[Invoke-AzConfigMethod](/powershell/module/az.accounts/invoke-azrestmethod) adalah cmdlet Azure PowerShell cmdlet yang diperkenalkan di Az PowerShell versi modul 4.4.0. Ini memungkinkan Anda untuk membuat permintaan HTTP kustom ke titik akhir Manajemen Sumber Daya Azure (ARM, Azure Resource Management) menggunakan konteks Az.
+[Invoke-AzRestMethod](/powershell/module/az.accounts/invoke-azrestmethod) adalah cmdlet Azure PowerShell yang diperkenalkan di modul Az PowerShell versi 4.4.0. Cmdlet ini memungkinkan Anda membuat permintaan HTTP kustom ke titik akhir Azure Resource Management (ARM) dengan konteks Az.
 
-Cmdlet ini berguna saat Anda ingin mengelola layanan Azure untuk fitur yang belum tersedia dalam modul Az PowerShell.
+Cmdlet ini berguna saat Anda ingin mengelola layanan Azure untuk fitur yang belum tersedia di modul Az PowerShell.
 
 ## <a name="how-to-use-invoke-azrestmethod"></a>Cara menggunakan Invoke-AzRestMethod
 
-Sebagai contoh, Anda dapat mengizinkan akses ke Azure Container Registry (ACR) hanya untuk jaringan tertentu atau menolak akses publik. Saat modul Az PowerShell versi 4.5.0, fitur tersebut belum tersedia dalam modul [PowerShell Az.ContainerRegistry](/powershell/module/Az.ContainerRegistry/). Namun, file ini dapat dikelola secara sementara dengan `Invoke-AzRestMethod` .
+Misalnya, Anda dapat mengizinkan akses ke Azure Container Registry (ACR) hanya untuk jaringan tertentu atau menolak akses publik. Sejak modul Az PowerShell versi 4.5.0, fitur tersebut belum tersedia di [modul Az.ContainerRegistry Powershell](/powershell/module/Az.ContainerRegistry/). Namun, fitur tersebut dapat dikelola untuk sementara dengan `Invoke-AzRestMethod`.
 
 ## <a name="using-invoke-azrestmethod-with-get-operations"></a>Menggunakan Invoke-AzRestMethod dengan operasi GET
 
-Contoh berikut ini menunjukkan cara menggunakan `Invoke-AzRestMethod` cmdlet dengan operasi GET:
+Contoh berikut menunjukkan cara menggunakan cmdlet `Invoke-AzRestMethod` dengan operasi GET:
 
 ```azurepowershell-interactive
 $getParams = @{
@@ -39,22 +39,22 @@ $getParams = @{
 Invoke-AzRestMethod @getParams
 ```
 
-Untuk memungkinkan fleksibilitas maksimum, sebagian besar parameter untuk `Invoke-AzRestMethod` adalah opsional.
-Namun, saat Anda mengelola sumber daya di dalam grup sumber daya, Anda kemungkinan besar harus menyediakan ID lengkap untuk sumber daya atau parameter seperti grup sumber daya, penyedia sumber daya, dan tipe sumber daya.
+Untuk fleksibilitas maksimum, sebagian besar parameter `Invoke-AzRestMethod` bersifat opsional.
+Namun, saat Anda mengelola sumber daya dalam grup sumber daya, kemungkinan besar Anda perlu memberikan ID lengkap ke sumber daya atau parameter seperti grup sumber daya, penyedia sumber daya, dan jenis sumber daya.
 
-Parameter `ResourceType` dapat mengambil beberapa nilai saat menargetkan sumber daya yang memerlukan lebih dari satu `Name` nama. Misalnya, untuk memanipulasi pencarian yang disimpan dalam ruang kerja Analitik Log, parameter terlihat seperti contoh berikut: `-ResourceType @('workspaces', 'savedsearches') -Name @('my-la', 'my-search')` .
+Parameter `ResourceType` dan `Name` dapat mengambil beberapa nilai saat menargetkan sumber daya yang memerlukan lebih dari satu nama. Misalnya, untuk memanipulasi pencarian yang tersimpan di ruang kerja Log Analytics, parameternya terlihat seperti contoh berikut: `-ResourceType @('workspaces', 'savedsearches') -Name @('my-la', 'my-search')`.
 
-Dengan menggunakan pemetaan berdasarkan posisi dalam array, cmdlet menyusun sumber daya berikut: `Id:'/workspaces/my-la/savedsearches/my-search'` .
+Menggunakan pemetaan berdasarkan posisi dalam array, cmdlet membangun sumber daya berikut: `Id:'/workspaces/my-la/savedsearches/my-search'`.
 
-Parameter `APIVersion` ini memungkinkan Anda menggunakan versi API tertentu, termasuk melihat pratinjaunya. Versi API yang didukung untuk penyedia Sumber Daya Azure dapat ditemukan di spesifikasi [azure rest-api](https://github.com/Azure/azure-rest-api-specs) GitHub penyimpanan.
+Parameter `APIVersion` memungkinkan Anda untuk menggunakan versi API tertentu, termasuk versi pratinjau. Versi API yang didukung untuk penyedia Azure Resource dapat ditemukan di repositori GitHub [azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs).
 
-Anda dapat menemukan definisi ACR versi 2019-12-01-preview di lokasi berikut: [azure-rest-api-specification/specification/containerregistry/resource-manager/Microsoft.ContainerRegistry/preview/](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/containerregistry/resource-manager/Microsoft.ContainerRegistry/preview).
+Anda dapat menemukan definisi ACR versi 2019-12-01-preview di lokasi berikut: [azure-rest-api-specs/specification/containerregistry/resource-manager/Microsoft.ContainerRegistry/preview/](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/containerregistry/resource-manager/Microsoft.ContainerRegistry/preview).
 
 ## <a name="using-invoke-azrestmethod-with-patch-operations"></a>Menggunakan Invoke-AzRestMethod dengan operasi PATCH
 
-Anda bisa menonaktifkan akses publik ke ACR yang sudah ada yang `myacr` dinamai di grup sumber daya menggunakan `myresourcegroup` `Invoke-AzRestMethod` cmdlet.
+Anda dapat menonaktifkan akses publik ke ACR yang ada yang bernama `myacr` dalam grup sumber daya `myresourcegroup` menggunakan cmdlet `Invoke-AzRestMethod`.
 
-Untuk menonaktifkan akses jaringan publik, Anda perlu melakukan panggilan **PATCH** ke API yang mengubah nilai parameter seperti yang `publicNetwokAccess` diperlihatkan dalam contoh berikut ini:
+Untuk menonaktifkan akses jaringan publik, Anda perlu melakukan panggilan **PATCH** ke API yang mengubah nilai parameter `publicNetwokAccess` seperti yang ditunjukkan pada contoh berikut:
 
 ```azurepowershell-interactive
 $patchParams = @{
@@ -71,12 +71,12 @@ $patchParams = @{
 Invoke-AzRestMethod @patchParams
 ```
 
-`Payload`Properti tersebut merupakan string JSON yang memperlihatkan jalur properti yang akan dimodifikasi.
+Properti `Payload` adalah string JSON yang menunjukkan jalur properti yang akan dimodifikasi.
 
-Semua parameter untuk API ini dijelaskan dalam file **spesifikasi api rest yang** terkait dengan API ini.
-Definisi tertentu untuk parameter publicNetworkAccess dapat ditemukan dalam file JSON registri [wadah untuk versi pratinjau](https://github.com/Azure/azure-rest-api-specs/blob/2a9da9a79d0a7b74089567ec4f0289f3e0f31bec/specification/containerregistry/resource-manager/Microsoft.ContainerRegistry/preview/2019-12-01-preview/containerregistry.json) API 2019-12-01.
+Semua parameter untuk API ini dijelaskan dalam file **rest-api-spec** yang terkait dengan API ini.
+Definisi spesifik untuk parameter publicNetworkAccess dapat ditemukan di [file JSON registri kontainer](https://github.com/Azure/azure-rest-api-specs/blob/2a9da9a79d0a7b74089567ec4f0289f3e0f31bec/specification/containerregistry/resource-manager/Microsoft.ContainerRegistry/preview/2019-12-01-preview/containerregistry.json) untuk versi API pratinjau 2019-12-01.
 
-Untuk mengizinkan akses ke registri dari alamat IP tertentu saja, payload perlu dimodifikasi seperti yang diperlihatkan dalam contoh berikut:
+Untuk mengizinkan akses ke registri dari alamat IP tertentu saja, payload perlu dimodifikasi seperti dalam contoh berikut:
 
 ```azurepowershell-interactive
 $specificIpParams = @{
@@ -99,16 +99,16 @@ $specificIpParams = @{
 Invoke-AzRestMethod @specificIpParams
 ```
 
-## <a name="comparison-to-get-azresource-new-azresource-and-remove-azresource"></a>Perbandingan ke Get-AzResource, New-AzResource, dan Remove-AzResource
+## <a name="comparison-to-get-azresource-new-azresource-and-remove-azresource"></a>Perbandingan antara Get-AzResource, New-AzResource, dan Remove-AzResource
 
-Cmdlets `*-AzResource` allow you to customize the REST API call to Azure by specifying the resource type, the API version, and the properties to be updated. Namun, properti perlu dibuat terlebih dahulu sebagai `PSObject` . Proses ini menambahkan tingkat kerumitan tambahan dan bisa dengan mudah menjadi rumit.
+Cmdlet `*-AzResource` memungkinkan Anda untuk menyesuaikan panggilan REST API ke Azure dengan menentukan jenis sumber daya, versi API, dan properti yang akan diperbarui. Namun, properti harus dibuat terlebih dahulu sebagai `PSObject`. Proses ini menambahkan tingkat kompleksitas dan mungkin menjadi lebih rumit.
 
-`Invoke-AzRestMethod` menawarkan cara sederhana untuk mengelola sumber daya Azure. Seperti yang diperlihatkan dalam contoh sebelumnya, Anda dapat membuat string JSON dan menggunakannya untuk mengustomisasi panggilan REST API tanpa harus membuat string JSON terlebih `PSObjects` lanjut.
+`Invoke-AzRestMethod` menghadirkan cara mudah untuk mengelola sumber daya Azure. Seperti yang ditunjukkan pada contoh sebelumnya, Anda dapat membuat string JSON dan menggunakannya untuk menyesuaikan panggilan REST API tanpa harus membuat `PSObjects` terlebih dahulu.
 
-Jika Anda sudah tidak asing dengan `*-AzResource` cmdlet, Anda bisa terus menggunakannya. Kami tidak memiliki rencana untuk berhenti mendukung mereka. Dengan `Invoke-AzRestMethod` , kami telah menambahkan cmdlet baru ke toolkit Anda.
+Jika Anda sudah memahami cmdlet `*-AzResource`, Anda dapat terus menggunakannya. Kami tidak berencana untuk berhenti mendukungnya. Dengan `Invoke-AzRestMethod`, kami telah menambahkan cmdlet baru ke toolkit Anda.
 
-## <a name="see-also"></a>Lihat Juga
+## <a name="see-also"></a>Lihat juga
 
-* [Get-AzResource](/powershell/module/az.resources/get-azresource)
-* [New-AzResource](/powershell/module/az.resources/new-azresource)
+* [Mendapatkan-AzResource](/powershell/module/az.resources/get-azresource)
+* [Baru-AzResource](/powershell/module/az.resources/new-azresource)
 * [Remove-AzResource](/powershell/module/az.resources/remove-azresource)

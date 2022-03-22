@@ -1,5 +1,5 @@
 ---
-description: Panduan migrasi ini berisi daftar perubahan melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 5.0.0.
+description: Panduan migrasi ini berisi daftar perubahan berisiko yang dibuat untuk Azure PowerShell dalam rilis Az versi 5.0.0.
 ms.custom: devx-track-azurepowershell
 ms.date: 02/08/2022
 ms.devlang: powershell
@@ -8,7 +8,7 @@ ms.topic: conceptual
 title: Panduan migrasi untuk Az 5.0.0
 ms.openlocfilehash: 7ba78378f8563549bb5e53c1d80e6204d340e904
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855261"
@@ -40,7 +40,7 @@ Dokumen ini menjelaskan perubahan antara Az versi 4.0.0 dan 5.0.0.
     - [Get-AzManagementGroupDeploymentOperation](#get-azmanagementgroupdeploymentoperation)
     - [Get-AzDeployment](#get-azdeployment)
     - [Get-AzDeploymentOperation](#get-azdeploymentoperation)
-    - [Get-AzDeploymentApaIfResult](#get-azdeploymentwhatifresult)
+    - [Get-AzDeploymentWhatIfResult](#get-azdeploymentwhatifresult)
     - [Get-AzTenantDeployment](#get-aztenantdeployment)
     - [Get-AzTenantDeploymentOperation](#get-aztenantdeploymentoperation)
     - [New-AzManagementGroupDeployment](#new-azmanagementgroupdeployment)
@@ -60,14 +60,14 @@ Dokumen ini menjelaskan perubahan antara Az versi 4.0.0 dan 5.0.0.
     - [Test-AzTenantDeployment](#test-aztenantdeployment)
     - [Get-AzResourceGroupDeployment](#get-azresourcegroupdeployment)
     - [Get-AzResourceGroupDeploymentOperation](#get-azresourcegroupdeploymentoperation)
-    - [Get-AzResourceGroupDeploymentApaIfResult](#get-azresourcegroupdeploymentwhatifresult)
+    - [Get-AzResourceGroupDeploymentWhatIfResult](#get-azresourcegroupdeploymentwhatifresult)
     - [New-AzResourceGroupDeployment](#new-azresourcegroupdeployment)
     - [Remove-AzResourceGroupDeployment](#remove-azresourcegroupdeployment)
     - [Save-AzResourceGroupDeploymentTemplate](#save-azresourcegroupdeploymenttemplate)
     - [Stop-AzResourceGroupDeployment](#stop-azresourcegroupdeployment)
     - [Test-AzResourceGroupDeployment](#test-azresourcegroupdeployment)
-    - [Get-AzManagementGroupDeploymentApaIfResult](#get-azmanagementgroupdeploymentwhatifresult)
-    - [Get-AzTenantDeploymentApaIfResult](#get-aztenantdeploymentwhatifresult)
+    - [Get-AzManagementGroupDeploymentWhatIfResult](#get-azmanagementgroupdeploymentwhatifresult)
+    - [Get-AzTenantDeploymentWhatIfResult](#get-aztenantdeploymentwhatifresult)
   - [Az.Sql](#azsql)
     - [Set-AzSqlServerActiveDirectoryAdministrator](#set-azsqlserveractivedirectoryadministrator)
   - [Az.Synapse](#azsynapse)
@@ -85,10 +85,10 @@ Dokumen ini menjelaskan perubahan antara Az versi 4.0.0 dan 5.0.0.
 
 ### <a name="new-azakscluster"></a>New-AzAksCluster
 
-- Tidak lagi mendukung parameter `NodeOsType` dan tidak ada alias yang ditemukan untuk nama parameter asli, itu akan `Linux`selalu .
+- Tidak lagi mendukung parameter `NodeOsType` dan tidak ada alias yang ditemukan untuk nama parameter asli, parameter akan selalu berupa `Linux`.
 - Tidak lagi mendukung alias `ClientIdAndSecret` untuk parameter `ServicePrincipalIdAndSecret`.
-- Nilai `NodeVmSetType` default diubah dari `AvailabilitySet` .`VirtualMachineScaleSets`
-- Nilai `NetworkPlugin` default diubah dari `none` .`azure`
+- Nilai default `NodeVmSetType` diubah dari `AvailabilitySet` menjadi `VirtualMachineScaleSets`.
+- Nilai default `NetworkPlugin` diubah dari `none` menjadi `azure`.
 
 #### <a name="before"></a>Sebelumnya
 
@@ -132,21 +132,21 @@ New-AzContainerRegistry -Name $name -ResourceGroupName $rg -Location $location -
 
 #### <a name="after"></a>Sesudahnya
 
-`Classic` telah usang dan `StorageAccountName` dihapus karena hanya berfungsi dengan Classic Container Registry.
+`Classic` tidak digunakan lagi dan `StorageAccountName` dihapus karena hanya berfungsi dengan Classic Container Registry.
 
 ## <a name="azfunctions"></a>Az.Functions
 
 ### <a name="get-azfunctionapp"></a>Get-AzFunctionApp
 
-Menghapus `IncludeSlot` parameter switch dari semua kecuali satu set `Get-AzFunctionApp`parameter . Cmdlet sekarang mendukung pengambilan slot penyebaran dalam hasil ketika `-IncludeSlot` ditentukan.
-Fungsi ini rusak dalam versi cmdlet sebelumnya. Namun, ini sekarang diperbaiki.
+Menghapus parameter switch `IncludeSlot` dari semua, kecuali satu set parameter dari `Get-AzFunctionApp`. Cmdlet sekarang mendukung pengambilan slot penyebaran dalam hasil saat `-IncludeSlot` ditentukan.
+Fungsi ini bermasalah di versi cmdlet sebelumnya. Namun, kini telah diperbaiki.
 
 ### <a name="new-azfunctionapp"></a>New-AzFunctionApp
 
-- `New-AzFunctionApp` Diperbaiki `-DisableApplicationInsights` agar tidak ada proyek wawasan aplikasi yang dibuat saat opsi ini ditentukan.
-- Dukungan yang dihapus untuk membuat aplikasi fungsi PowerShell 6.2 karena PowerShell 6.2 adalah EOL. Panduan saat ini untuk pelanggan adalah membuat aplikasi fungsi PowerShell 7.0 sebagai gantinya.
-- Mengubah versi runtime default di Functions versi 3 pada Windows untuk aplikasi fungsi PowerShell dari 6.2 ke 7.0 ketika `RuntimeVersion` parameter tidak ditentukan.
-- Mengubah versi runtime default di Functions versi 3 pada Windows dan Linux untuk aplikasi fungsi Node dari 10 ke 12 ketika `RuntimeVersion` parameter tidak ditentukan. Namun, pengguna masih dapat membuat aplikasi fungsi Node 10 dengan `-Runtime Node` menentukan dan `-RuntimeVersion 10`. Mengubah versi runtime default di Functions versi 3 di Aplikasi fungsi Linux untuk Python dari 3,7 menjadi 3,8 saat `RuntimeVersion` parameter tidak ditentukan. Namun, pengguna masih dapat membuat aplikasi fungsi Python 3.7 dengan `-Runtime Python` menentukan dan `-RuntimeVersion 3.7`.
+- Memperbaiki `-DisableApplicationInsights` di `New-AzFunctionApp` sehingga tidak ada proyek Application Insights yang dibuat ketika opsi ini ditentukan.
+- Menghapus dukungan untuk membuat aplikasi fungsi PowerShell 6.2 karena PowerShell 6.2 adalah EOL. Panduan saat ini untuk pelanggan adalah membuat aplikasi fungsi PowerShell 7.0 sebagai gantinya.
+- Mengubah versi runtime default dalam Functions versi 3 di Windows untuk aplikasi fungsi PowerShell dari 6.2 hingga 7.0 saat parameter `RuntimeVersion` tidak ditentukan.
+- Mengubah versi runtime default dalam Functions versi 3 di Windows dan Linux untuk aplikasi fungsi Node dari 10 hingga 12 saat parameter `RuntimeVersion` tidak ditentukan. Namun, pengguna tetap dapat membuat aplikasi fungsi Node 10 dengan menentukan `-Runtime Node` dan `-RuntimeVersion 10`. Mengubah versi runtime default dalam Functions versi 3 di Linux untuk aplikasi fungsi Python dari 3.7 hingga 3.8 saat parameter `RuntimeVersion` tidak ditentukan. Namun, pengguna tetap dapat membuat aplikasi fungsi Python 3.7 dengan menentukan `-Runtime Python` dan `-RuntimeVersion 3.7`.
 
 #### <a name="before"></a>Sebelumnya
 
@@ -221,7 +221,7 @@ New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Locatio
 
 #### <a name="after"></a>Sesudahnya
 
-Kemampuan untuk memperbarui pengaturan penghapusan lunak tidak digunakan lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
+Kemampuan untuk memperbarui pengaturan penghapusan sementara tidak digunakan lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
 
 ### <a name="update-azkeyvault"></a>Update-AzKeyVault
 
@@ -235,11 +235,11 @@ Update-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Enab
 
 #### <a name="after"></a>Sesudahnya
 
-Kemampuan untuk memperbarui pengaturan penghapusan lunak tidak digunakan lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
+Kemampuan untuk memperbarui pengaturan penghapusan sementara tidak digunakan lagi di Az.KeyVault 3.0.0. [Baca selengkapnya](/azure/key-vault/general/soft-delete-change)
 
 ### <a name="get-azkeyvaultsecret"></a>Get-AzKeyVaultSecret
 
-Properti `SecretValueText` jenis `Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret` telah dihapus. Baik menerapkan panggilan `-AsPlainText` untuk mendapatkan rahasia teks biasa, atau penggunaan `$secret.SecretValue` jenis `SecureString` dalam script Anda.
+Properti `SecretValueText` jenis `Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecret` telah dihapus. Terapkan `-AsPlainText` pada panggilan untuk mendapatkan rahasia teks biasa, atau gunakan `$secret.SecretValue` jenis `SecureString` di skrip Anda.
 
 #### <a name="before"></a>Sebelumnya
 
@@ -484,7 +484,7 @@ Set-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName 'ResourceGroup01'
 
 ### <a name="new-azsynapsesqlpool"></a>New-AzSynapseSqlPool
 
-Tidak lagi mendukung parameter `FromBackup`, `FromRestorePoint`, , `BackupResourceGroupName``BackupSqlPoolName``BackupWorkspaceName`, `BackupSqlPoolObject`, `BackupResourceId`, `SourceResourceGroupName`, `SourceResourceId``SourceSqlPoolName``SourceWorkspaceName``SourceSqlPoolObject`, `RestorePoint`dan tidak ada alias yang ditemukan untuk nama parameter asli.
+Tidak lagi mendukung parameter `FromBackup`, `FromRestorePoint`, `BackupResourceGroupName`, `BackupWorkspaceName`, `BackupSqlPoolName`, `BackupSqlPoolObject`, `BackupResourceId`, `SourceResourceGroupName`, `SourceWorkspaceName`, `SourceSqlPoolName`, `SourceSqlPoolObject`, `SourceResourceId`, `RestorePoint`, dan tidak ada alias yang ditemukan untuk nama parameter asli.
 
 #### <a name="before"></a>Sebelumnya
 

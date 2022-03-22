@@ -5,30 +5,30 @@ ms.date: 02/08/2022
 ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
-title: Memformat Azure PowerShell output cmdlet
+title: Memformat output cmdlet Azure PowerShell
 ms.openlocfilehash: 9f63d4cf7645ae3566067fff2209130d1976b503
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855657"
 ---
-# <a name="format-azure-powershell-cmdlet-output"></a>Memformat Azure PowerShell output cmdlet
+# <a name="format-azure-powershell-cmdlet-output"></a>Memformat output cmdlet Azure PowerShell
 
-Secara default setiap Azure PowerShell format cmdlet output agar mudah dibaca. PowerShell memungkinkan Anda mengonversi atau memformat output cmdlet dengan menyalurkan ke salah satu cmdlet berikut:
+Secara default setiap format cmdlet Azure PowerShell mengeluarkan output yang mudah dibaca. PowerShell memungkinkan Anda untuk mengonversi atau memformat output cmdlet dengan mengeluarkan ke salah satu cmdlet berikut:
 
-| Format      | Konversi       |
+| Pemformatan      | Konversi       |
 |-----------------|------------------|
-| [Format-Kustom](/powershell/module/microsoft.powershell.utility/format-custom) | [ConvertTo-Csv](/powershell/module/microsoft.powershell.utility/convertto-csv)  |
-| [Daftar Format](/powershell/module/microsoft.powershell.utility/format-list)   | [ConvertTo-Html](/powershell/module/microsoft.powershell.utility/convertto-html) |
-| [Format-Tabel](/powershell/module/microsoft.powershell.utility/format-table)  | [ConvertTo-Json](/powershell/module/microsoft.powershell.utility/convertto-json) |
-| [Format-Lebar](/powershell/module/microsoft.powershell.utility/format-wide)   | [ConvertTo-Xml](/powershell/module/microsoft.powershell.utility/convertto-xml)  |
+| [Format-Custom](/powershell/module/microsoft.powershell.utility/format-custom) | [ConvertTo-Csv](/powershell/module/microsoft.powershell.utility/convertto-csv)  |
+| [Format-List](/powershell/module/microsoft.powershell.utility/format-list)   | [ConvertTo-Html](/powershell/module/microsoft.powershell.utility/convertto-html) |
+| [Format-Table](/powershell/module/microsoft.powershell.utility/format-table)  | [ConvertTo-Json](/powershell/module/microsoft.powershell.utility/convertto-json) |
+| [Format-Wide](/powershell/module/microsoft.powershell.utility/format-wide)   | [ConvertTo-Xml](/powershell/module/microsoft.powershell.utility/convertto-xml)  |
 
-Pemformatan digunakan untuk tampilan di konsol PowerShell, dan konversi digunakan untuk menghasilkan data yang akan dikonsumsi oleh skrip atau program lain.
+Pemformatan digunakan untuk ditampilkan di konsol PowerShell, dan konversi digunakan untuk menghasilkan data yang akan dikonsumsi oleh skrip atau program lain.
 
 ## <a name="table-output-format"></a>Format output tabel
 
-Secara default, Azure PowerShell output cmdlet dalam format tabel. Format ini tidak menampilkan semua informasi dari sumber daya yang diminta:
+Secara default, cmdlet Azure PowerShell menghasilkan output dalam format tabel. Format ini tidak menampilkan semua informasi dari sumber daya yang diminta:
 
 ```azurepowershell-interactive
 Get-AzVM
@@ -42,7 +42,7 @@ QueryExample         RHELExample  westus2  Standard_D2_v3   Linux    rhelexample
 QueryExample        WinExampleVM  westus2 Standard_DS1_v2 Windows   winexamplevm268         Succeeded
 ```
 
-Jumlah data yang ditampilkan dapat `Format-Table` dipengaruhi oleh lebar jendela sesi PowerShell Anda. Untuk membatasi output ke properti tertentu dan memesannya, nama properti dapat diberikan sebagai argumen untuk `Format-Table`:
+Jumlah data yang ditampilkan oleh `Format-Table` dapat dipengaruhi oleh lebar jendela sesi PowerShell Anda. Untuk membatasi output ke properti tertentu dan memesannya, nama properti dapat disediakan sebagai argumen untuk `Format-Table`:
 
 ```azurepowershell-interactive
 Get-AzVM -ResourceGroupName QueryExample |
@@ -59,13 +59,13 @@ WinExampleVM   QueryExample      westus2
 
 ## <a name="list-output-format"></a>Format output daftar
 
-Format output daftar menghasilkan dua kolom, nama properti diikuti oleh nilainya. Untuk objek yang kompleks, jenis objek ditampilkan sebagai gantinya.
+Format output daftar menghasilkan dua kolom, nama properti diikuti oleh nilainya. Untuk objek kompleks, jenis objek ditampilkan sebagai gantinya.
 
 ```azurepowershell-interactive
 Get-AzVM | Format-List
 ```
 
-Output berikut memiliki beberapa bidang dihapus.
+Output berikut memiliki beberapa bidang yang dihapus.
 
 ```Output
 ResourceGroupName        : QueryExample
@@ -135,13 +135,13 @@ QueryExample
 
 ## <a name="custom-output-format"></a>Format output kustom
 
-Jenis `Custom-Format` output dimaksudkan untuk memformat objek kustom. Tanpa parameter apa pun, ia berperilaku seperti `Format-List` tetapi menampilkan nama properti kelas kustom.
+Jenis output `Custom-Format` ditujukan untuk memformat objek kustom. Tanpa parameter apa pun, ini berperilaku seperti `Format-List` tetapi menampilkan nama properti kelas kustom.
 
 ```azurepowershell-interactive
 Get-AzVM | Format-Custom
 ```
 
-Output berikut memiliki beberapa bidang dihapus.
+Output berikut memiliki beberapa bidang yang dihapus.
 
 ```Output
 ResourceGroupName : QueryExample
@@ -166,7 +166,7 @@ Memberikan nama properti sebagai argumen untuk `Custom-Format` menampilkan pasan
 Get-AzVM | Format-Custom -Property Name, ResourceGroupName, Location, OSProfile
 ```
 
-Output berikut memiliki beberapa bidang dihapus.
+Output berikut memiliki beberapa bidang yang dihapus.
 
 ```Output
 class PSVirtualMachineList
@@ -230,9 +230,9 @@ class PSVirtualMachineList
 }
 ```
 
-## <a name="conversion-to-other-data-formats"></a>Konversi ke format data lain
+## <a name="conversion-to-other-data-formats"></a>Konversi ke format data lainnya
 
-Keluarga `ConvertTo-*` cmdlet memungkinkan untuk mengubah hasil cmdlet Azure PowerShell ke format yang dapat dibaca mesin. Untuk mendapatkan hanya beberapa properti dari hasil Azure PowerShell, pipa ke `Select-Object` cmdlet sebelum melakukan konversi. Contoh-contoh berikut menunjukkan berbagai jenis output yang dihasilkan setiap konversi.
+Keluarga `ConvertTo-*` cmdlet memungkinkan untuk mengubah hasil cmdlet Azure PowerShell ke format yang dapat dibaca komputer. Untuk mendapatkan hanya beberapa properti dari hasil Azure PowerShell, alurkan ke cmdlet `Select-Object` sebelum melakukan konversi. Contoh berikut menunjukkan berbagai jenis output yang dihasilkan setiap konversi.
 
 ### <a name="conversion-to-csv"></a>Konversi ke CSV
 
@@ -250,13 +250,13 @@ Get-AzVM | ConvertTo-CSV
 
 ### <a name="conversion-to-json"></a>Konversi ke JSON
 
-Output JSON tidak memperluas semua properti secara default. Untuk mengubah kedalaman properti yang diperluas, gunakan `Depth` parameter. Secara default, kedalaman ekspansi adalah `2`.
+Output JSON tidak memperluas semua properti secara default. Untuk mengubah kedalaman properti yang diperluas, gunakan parameter `Depth`. Secara default, kedalaman perluasan adalah `2`.
 
 ```azurepowershell-interactive
 Get-AzVM | ConvertTo-JSON
 ```
 
-Output berikut memiliki beberapa bidang dihapus.
+Output berikut memiliki beberapa bidang yang dihapus.
 
 ```Output
 [
@@ -315,7 +315,7 @@ version="1.0" encoding="utf-8" Objects
 
 ### <a name="conversion-to-html"></a>Konversi ke HTML
 
-Mengonversi objek ke HTML menghasilkan output yang akan dirender sebagai tabel HTML. Rendering HTML akan tergantung pada perilaku browser Anda untuk merender tabel yang tidak mengandung informasi lebar. Tidak ada objek kelas kustom yang diperluas.
+Mengonversi objek ke HTML menghasilkan output yang akan dirender sebagai tabel HTML. Rendering HTML akan bergantung pada perilaku browser Anda untuk merender tabel yang tidak mengandung informasi lebar. Tidak ada objek kelas kustom yang diperluas.
 
 ```azurepowershell-interactive
 Get-AzVM | ConvertTo-HTML

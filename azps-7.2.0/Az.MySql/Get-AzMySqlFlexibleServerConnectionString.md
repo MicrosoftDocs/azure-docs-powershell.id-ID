@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFlexibleServerConnectionString.md
-ms.openlocfilehash: 71843ffd0956f2cae133de89f1633d464ef59d69
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 1567e3b69f74a769c3187a391f1c9a169dc2c113
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270140"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139921651"
 ---
 # Get-AzMySqlFlexibleServerConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi menurut penyedia koneksi klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/get-azmysqlflexibleserverconnectionstring) untuk informasi terkini.
 
 ## SYNTAX
 

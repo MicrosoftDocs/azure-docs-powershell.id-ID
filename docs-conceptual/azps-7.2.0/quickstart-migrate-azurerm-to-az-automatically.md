@@ -6,10 +6,10 @@ ms.custom: devx-track-azurepowershell, mode-api
 ms.date: 02/08/2022
 ms.service: azure-powershell
 ms.topic: quickstart
-title: Migrasi skrip PowerShell secara otomatis dari AzureRM ke modul Az PowerShell
+title: Secara otomatis memigrasikan skrip PowerShell dari AzureRM ke modul Az PowerShell
 ms.openlocfilehash: ef226fb0d199fc387738f18e4109200c3a5c4788
 ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 02/16/2022
 ms.locfileid: "138855351"
@@ -20,7 +20,7 @@ Pada artikel ini, Anda akan mempelajari cara menggunakan modul Az.Tools.Migratio
 
 ## <a name="requirements"></a>Persyaratan
 
-* Perbarui skrip PowerShell yang ada ke [versi terbaru modul AzureRM PowerShell (6.13.1)](https://github.com/Azure/azure-powershell/releases/tag/v6.13.1-November2018).
+* Perbarui skrip PowerShell saat ini ke versi terbaru [modul AzureRM PowerShell (6.13.1)](https://github.com/Azure/azure-powershell/releases/tag/v6.13.1-November2018).
 * Instal modul Az.Tools.Migration PowerShell.
 
   ```powershell
@@ -29,19 +29,19 @@ Pada artikel ini, Anda akan mempelajari cara menggunakan modul Az.Tools.Migratio
 
 ## <a name="step-1-generate-an-upgrade-plan"></a>Langkah 1: Buat rencana peningkatan
 
-Anda menggunakan **`New-AzUpgradeModulePlan`** cmdlet untuk membuat rencana peningkatan untuk memigrasikan skrip dan modul Anda ke modul Az PowerShell. Cmdlet ini tidak membuat perubahan pada skrip yang ada. **`FilePath`** Gunakan parameter untuk menargetkan skrip tertentu atau **`DirectoryPath`** parameter untuk menargetkan semua skrip dalam folder tertentu.
+Anda menggunakan cmdlet **`New-AzUpgradeModulePlan`** untuk membuat rencana peningkatan untuk memigrasikan skrip dan modul ke modul Az PowerShell. Cmdlet ini tidak membuat perubahan apa pun pada skrip saat ini. Gunakan parameter **`FilePath`** untuk menargetkan skrip tertentu atau parameter **`DirectoryPath`** untuk menargetkan semua skrip dalam folder tertentu.
 
 > [!NOTE]
-> Cmdlet **`New-AzUpgradeModulePlan`** tidak menjalankan rencana, itu hanya menghasilkan langkah-langkah peningkatan.
+> Cmdlet **`New-AzUpgradeModulePlan`** tidak menjalankan rencana, hanya membuat langkah-langkah peningkatan.
 
-Contoh berikut menghasilkan rencana untuk semua skrip di _`C:\Scripts`_ folder. Parameter **`OutVariable`** ditentukan sehingga hasilnya dikembalikan dan secara bersamaan disimpan dalam variabel bernama **`Plan`**.
+Contoh berikut menghasilkan rencana untuk semua skrip di folder _`C:\Scripts`_ . Parameter **`OutVariable`** ditentukan sehingga hasilnya ditampilkan dan disimpan secara bersamaan dalam variabel bernama **`Plan`** .
 
 ```powershell
 # Generate an upgrade plan for all the scripts and module files in the specified folder and save it to a variable.
 New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 5.2.0 -DirectoryPath 'C:\Scripts' -OutVariable Plan
 ```
 
-Seperti yang ditunjukkan dalam output berikut, rencana pemutakhiran merinci file tertentu dan titik offset yang memerlukan perubahan saat berpindah dari AzureRM ke cmdlet Az PowerShell.
+Seperti yang ditunjukkan dalam output berikut, rencana peningkatan merinci file tertentu dan titik offset yang memerlukan perubahan saat berpindah dari AzureRM ke cmdlet Az PowerShell.
 
 ```Output
 Order Location                                                   UpgradeType     PlanResult             Original
@@ -69,14 +69,14 @@ Order Location                                                   UpgradeType    
 ...
 ```
 
-Sebelum melakukan upgrade, Anda perlu melihat hasil rencana untuk masalah. Contoh berikut mengembalikan daftar skrip dan item dalam skrip tersebut yang akan mencegahnya ditingkatkan secara otomatis.
+Sebelum melakukan peningkatan, Anda perlu melihat masalah pada hasil rencana. Contoh berikut menampilkan daftar skrip dan item dalam skrip tersebut yang akan mencegahnya ditingkatkan secara otomatis.
 
 ```powershell
 # Filter plan results to only warnings and errors
 $Plan | Where-Object PlanResult -ne ReadyToUpgrade | Format-List
 ```
 
-Item yang ditampilkan dalam output berikut tidak akan ditingkatkan secara otomatis tanpa memperbaiki masalah secara manual terlebih dahulu.
+Item yang ditampilkan dalam output berikut tidak akan ditingkatkan secara otomatis tanpa mengatasi masalah secara manual terlebih dahulu.
 
 ```Output
 Order                  : 42
@@ -93,15 +93,15 @@ Original               : ResourceNameEquals
 Replacement            :
 ```
 
-## <a name="step-2-perform-the-upgrade"></a>Langkah 2: Lakukan pemutakhiran
+## <a name="step-2-perform-the-upgrade"></a>Langkah 2: Lakukan peningkatan
 
 > [!CAUTION]
-> Tidak ada operasi undo. Selalu pastikan bahwa Anda memiliki salinan cadangan skrip dan modul PowerShell yang ingin Anda tingkatkan.
+> Tidak ada operasi undo (pembatalan). Selalu pastikan bahwa Anda memiliki salinan cadangan skrip dan modul PowerShell yang ingin Anda tingkatkan.
 
-Setelah Anda puas dengan rencana tersebut, peningkatan dilakukan dengan **`Invoke-AzUpgradeModulePlan`** cmdlet. **`FileEditMode`** Tentukan **`SaveChangesToNewFiles`** nilai parameter untuk mencegah perubahan dilakukan pada skrip asli Anda. Saat menggunakan mode ini, peningkatan dilakukan dengan membuat salinan setiap skrip yang ditargetkan dengan _`_az_upgraded`_ ditambahkan ke nama file.
+Setelah Anda puas dengan rencananya, peningkatan dilakukan dengan cmdlet **`Invoke-AzUpgradeModulePlan`** . Tentukan **`SaveChangesToNewFiles`** untuk nilai parameter **`FileEditMode`** untuk mencegah perubahan dilakukan pada skrip asli Anda. Saat menggunakan mode ini, peningkatan dilakukan dengan membuat salinan setiap skrip yang ditargetkan dengan _`_az_upgraded`_ yang disertakan pada nama file.
 
 > [!WARNING]
-> Cmdlet **`Invoke-AzUpgradeModulePlan`** merusak ketika **`-FileEditMode ModifyExistingFiles`** opsi ditentukan! Ini memodifikasi skrip dan fungsi Anda di tempat sesuai dengan rencana peningkatan modul yang dihasilkan oleh **`New-AzUpgradeModulePlan`** cmdlet. Untuk opsi non-destruktif tentukan **`-FileEditMode SaveChangesToNewFiles`** sebagai gantinya.
+> Cmdlet **`Invoke-AzUpgradeModulePlan`** bersifat destruktif ketika opsi **`-FileEditMode ModifyExistingFiles`** ditentukan. Cmdlet ini memodifikasi skrip dan fungsi Anda di tempatnya sesuai dengan rencana peningkatan modul yang dihasilkan oleh cmdlet **`New-AzUpgradeModulePlan`** . Untuk opsi non-destruktif, tentukan **`-FileEditMode SaveChangesToNewFiles`** sebagai gantinya.
 
 ```powershell
 # Execute the automatic upgrade plan and save the results to a variable.
@@ -134,7 +134,7 @@ Order Location                                                   UpgradeType    
 ...
 ```
 
-Jika ada kesalahan yang dikembalikan, Anda dapat melihat lebih dekat hasil kesalahan dengan perintah berikut:
+Jika ada kesalahan yang ditampilkan, Anda dapat mengamati hasil kesalahan dengan perintah berikut:
 
 ```powershell
 # Filter results to show only errors
@@ -158,14 +158,14 @@ Replacement            :
 
 ## <a name="limitations"></a>Batasan
 
-* Operasi File I/O menggunakan pengkodean default. Situasi pengkodean file yang tidak biasa dapat menyebabkan masalah.
-* Cmdlet AzureRM diteruskan saat argumen ke pernyataan tiruan uji unit Pester tidak terdeteksi.
+* Operasi I/O file menggunakan pengodean default. Situasi pengodean file yang tidak biasa dapat menyebabkan masalah.
+* Cmdlet AzureRM yang diteruskan sebagai argumen ke pernyataan tiruan uji unit Pester tidak terdeteksi.
 * Saat ini, hanya modul Az PowerShell versi 5.2.0 yang didukung sebagai target.
 
 ## <a name="how-to-report-issues"></a>Cara melaporkan masalah
 
-Laporkan umpan balik dan masalah tentang modul Az.Tools.Migration PowerShell melalui [masalah GitHub](https://github.com/Azure/azure-powershell-migration/issues) di `azure-powershell-migration` repositori.
+Laporkan umpan balik dan masalah terkait modul Az.Tools.Migration PowerShell melalui [masalah GitHub](https://github.com/Azure/azure-powershell-migration/issues) di repositori `azure-powershell-migration`.
 
 ## <a name="next-steps"></a>Langkah berikutnya
 
-Untuk mempelajari selengkapnya tentang modul Az PowerShell, lihat [dokumentasi Azure PowerShell](/powershell/azure/)
+Untuk informasi selengkapnya tentang modul Az PowerShell, lihat [dokumentasi Azure PowerShell](/powershell/azure/)

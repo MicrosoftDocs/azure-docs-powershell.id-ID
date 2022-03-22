@@ -1,6 +1,6 @@
 ---
 title: Panduan migrasi untuk Az 4.1.0
-description: Panduan migrasi ini berisi daftar perubahan yang telah dibuat untuk Azure PowerShell di rilis Az versi 4.1.0.
+description: Panduan migrasi ini berisi daftar perubahan yang melanggar yang dibuat untuk Azure PowerShell dalam rilis Az versi 4.1.0.
 ms.devlang: powershell
 ms.topic: conceptual
 ms.date: 11/02/2021
@@ -8,14 +8,14 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: 0b81875974deaf96c07e343b7c2ec0f1cdfdd11a
 ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 11/03/2021
 ms.locfileid: "132429520"
 ---
 # <a name="migration-guide-for-az-410"></a>Panduan Migrasi untuk Az 4.1.0
 
-Dokumen ini menjelaskan perubahan antara versi 3.0.0 dan 4.1.0 az.
+Dokumen ini menjelaskan perubahan antara Az versi 3.0.0 dan 4.1.0.
 
 - [Panduan Migrasi untuk Az 4.1.0](#migration-guide-for-az-410)
   - [Az.ApiManagement](#azapimanagement)
@@ -122,75 +122,75 @@ Dokumen ini menjelaskan perubahan antara versi 3.0.0 dan 4.1.0 az.
 
 ### `Add-AzApiManagementRegion`
 
-Tipe properti tipe `Type` telah berubah dari menjadi `Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementServiceIdentity` `Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementServiceIdentityType` `System.String` .
+Jenis properti `Type` dari jenis `Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementServiceIdentity` berubah dari `Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagementServiceIdentityType` menjadi `System.String`.
 
 ### `New-AzApiManagement`
 
-- Cmdlet `New-AzApiManagement` tidak lagi mendukung parameter dan `AssignIdentity` tidak ada alias yang ditemukan untuk nama parameter aslinya.
-- Kumpulan parameter `__AllParameterSets` untuk cmdlet telah `New-AzApiManagement` dihapus.
+- Cmdlet `New-AzApiManagement` tidak lagi mendukung parameter `AssignIdentity` dan tidak ada alias yang ditemukan untuk nama parameter asli.
+- Set parameter `__AllParameterSets` untuk cmdlet `New-AzApiManagement` telah dihapus.
 
 ### `Set-AzApiManagement`
 
-- Cmdlet `Set-AzApiManagement` tidak lagi mendukung parameter dan `AssignIdentity` tidak ada alias yang ditemukan untuk nama parameter aslinya.
-- Kumpulan parameter `__AllParameterSets` untuk cmdlet telah `Set-AzApiManagement` dihapus.
+- Cmdlet `Set-AzApiManagement` tidak lagi mendukung parameter `AssignIdentity` dan tidak ada alias yang ditemukan untuk nama parameter asli.
+- Set parameter `__AllParameterSets` untuk cmdlet `Set-AzApiManagement` telah dihapus.
 
 ### `Get-AzApiManagementProperty`
 
-Cmdlet `Get-AzApiManagementProperty` telah digantikan oleh `Get-AzApiManagementNamedValue` .
+Cmdlet `Get-AzApiManagementProperty` telah diganti dengan `Get-AzApiManagementNamedValue`.
 
 ### `New-AzApiManagementProperty`
 
-Cmdlet `New-AzApiManagementProperty` telah digantikan oleh `New-AzApiManagementNamedValue` .
+Cmdlet `New-AzApiManagementProperty` telah diganti dengan `New-AzApiManagementNamedValue`.
 
 ### `Remove-AzApiManagementProperty`
 
-Cmdlet `Remove-AzApiManagementProperty` telah digantikan oleh `Remove-AzApiManagementNamedValue` .
+Cmdlet `Remove-AzApiManagementProperty` telah diganti dengan `Remove-AzApiManagementNamedValue`.
 
 ### `Set-AzApiManagementProperty`
 
-Cmdlet `Set-AzApiManagementProperty` telah digantikan oleh `Set-AzApiManagementNamedValue` .
+Cmdlet `Set-AzApiManagementProperty` telah diganti dengan `Set-AzApiManagementNamedValue`.
 
 ## <a name="azbatch"></a>Az.Batch
 
 ### <a name="get-azbatchapplication-new-azbatchapplication"></a>`Get-AzBatchApplication`, `New-AzBatchApplication`
 
-Properti `ApplicationPackages` tipe `Microsoft.Azure.Commands.Batch.Models.PSApplication` telah dihapus.
+Properti `ApplicationPackages` jenis `Microsoft.Azure.Commands.Batch.Models.PSApplication` telah dihapus.
 
 ### <a name="get-azbatchcomputenode-new-azbatchpool"></a>`Get-AzBatchComputeNode`, `New-AzBatchPool`
 
-Properti `PublicIPs` tipe `Microsoft.Azure.Commands.Batch.Models.PSNetworkConfiguration` telah dihapus
+Properti `PublicIPs` jenis `Microsoft.Azure.Commands.Batch.Models.PSNetworkConfiguration` telah dihapus
 
 ### <a name="get-azbatchapplicationpackage-new-azbatchapplicationpackage"></a>`Get-AzBatchApplicationPackage`, `New-AzBatchApplicationPackage`
 
-Tipe properti tipe `StorageUrlExpiry` telah berubah dari menjadi `Microsoft.Azure.Commands.Batch.Models.PSApplicationPackage` `System.DateTime` `System.DateTime?` .
+Jenis properti `StorageUrlExpiry` dari jenis `Microsoft.Azure.Commands.Batch.Models.PSApplicationPackage` berubah dari `System.DateTime` menjadi `System.DateTime?`.
 
 ## <a name="azcompute"></a>Az.Compute
 
 ### `Remove-AzVmssDiagnosticsExtension`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Get-AzVMImage`
 
-- Cmdlet `Get-AzVMImage` tidak lagi mendukung parameter dan `FilterExpression` tidak ada alias yang ditemukan untuk nama parameter aslinya.
-- Kumpulan parameter `ListVMImage` untuk cmdlet telah `Get-AzVMImage` dihapus.
+- Cmdlet `Get-AzVMImage` tidak lagi mendukung parameter `FilterExpression` dan tidak ada alias yang ditemukan untuk nama parameter asli.
+- Set parameter `ListVMImage` untuk cmdlet `Get-AzVMImage` telah dihapus.
 
 ### `New-AzVMConfig`
 
-- Cmdlet `New-AzVMConfig` tidak lagi mendukung parameter dan `AssignIdentity` tidak ada alias yang ditemukan untuk nama parameter aslinya.
-- Kumpulan parameter `AssignIdentityParameterSet` untuk cmdlet telah `New-AzVMConfig` dihapus.
+- Cmdlet `New-AzVMConfig` tidak lagi mendukung parameter `AssignIdentity` dan tidak ada alias yang ditemukan untuk nama parameter asli.
+- Set parameter `AssignIdentityParameterSet` untuk cmdlet `New-AzVMConfig` telah dihapus.
 
 ### `Update-AzVM`
 
-- Cmdlet `Update-AzVM` tidak lagi mendukung parameter dan `AssignIdentity` tidak ada alias yang ditemukan untuk nama parameter aslinya.
-- Kumpulan parameter `AssignIdentityParameterSet` untuk cmdlet telah `Update-AzVM` dihapus.
+- Cmdlet `Update-AzVM` tidak lagi mendukung parameter `AssignIdentity` dan tidak ada alias yang ditemukan untuk nama parameter asli.
+- Set parameter `AssignIdentityParameterSet` untuk cmdlet `Update-AzVM` telah dihapus.
 
 ### `New-AzProximityPlacementGroup`
 
-- Tipe generik untuk properti `VirtualMachines` , , dan telah diubah dari menjadi `VirtualMachineScaleSets` `AvailabilitySets` `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResource]` `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResourceWithColocationStatus]` .
-- Properti `VirtualMachinesColocationStatus` , `VirtualMachineScaleSetsColocationStatus` , dan dari tipe `AvailabilitySetsColocationStatus` telah `Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup` dihapus.
+- Jenis generik untuk properti`VirtualMachines`, `VirtualMachineScaleSets`, dan `AvailabilitySets` telah berubah dari `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResource]` menjadi `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResourceWithColocationStatus]`.
+- Properti `VirtualMachinesColocationStatus`, `VirtualMachineScaleSetsColocationStatus`, dan `AvailabilitySetsColocationStatus` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup` telah dihapus.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> New-AzProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName -Location $location -Tag @{key1 = 'val1'} | Format-List
@@ -211,7 +211,7 @@ VirtualMachineScaleSets                 : {}
 AvailabilitySets                        : {}
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> New-AzProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName -Location $location -Tag @{key1 = 'val1'} | Format-List
@@ -230,10 +230,10 @@ AvailabilitySets                        : {}
 
 ### `Remove-AzProximityPlacementGroup`
 
-- Tipe generik untuk properti `VirtualMachines` , , dan telah diubah dari menjadi `VirtualMachineScaleSets` `AvailabilitySets` `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResource]` `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResourceWithColocationStatus]` .
-- Properti `VirtualMachinesColocationStatus` , `VirtualMachineScaleSetsColocationStatus` , dan dari tipe `AvailabilitySetsColocationStatus` telah `Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup` dihapus.
+- Jenis generik untuk properti`VirtualMachines`, `VirtualMachineScaleSets`, dan `AvailabilitySets` telah berubah dari `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResource]` menjadi `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResourceWithColocationStatus]`.
+- Properti `VirtualMachinesColocationStatus`, `VirtualMachineScaleSetsColocationStatus`, dan `AvailabilitySetsColocationStatus` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup` telah dihapus.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> Get-AzProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName | Remove-AzProximityPlacementGroup | Format-List
@@ -254,7 +254,7 @@ VirtualMachineScaleSets                 : {}
 AvailabilitySets                        : {}
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> Get-AzProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName | Remove-AzProximityPlacementGroup | Format-List
@@ -273,10 +273,10 @@ AvailabilitySets                        : {}
 
 ### `Get-AzProximityPlacementGroup`
 
-- Tipe generik untuk properti `VirtualMachines` , , dan telah diubah dari menjadi `VirtualMachineScaleSets` `AvailabilitySets` `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResource]` `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResourceWithColocationStatus]` .
-- Properti `VirtualMachinesColocationStatus` , `VirtualMachineScaleSetsColocationStatus` , dan dari tipe `AvailabilitySetsColocationStatus` telah `Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup` dihapus.
+- Jenis generik untuk properti`VirtualMachines`, `VirtualMachineScaleSets`, dan `AvailabilitySets` telah berubah dari `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResource]` menjadi `System.Collections.Generic.IList1[Microsoft.Azure.Management.Compute.Models.SubResourceWithColocationStatus]`.
+- Properti `VirtualMachinesColocationStatus`, `VirtualMachineScaleSetsColocationStatus`, dan `AvailabilitySetsColocationStatus` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSProximityPlacementGroup` telah dihapus.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> Get-AzProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName | Format-List
@@ -297,7 +297,7 @@ VirtualMachineScaleSets                 : {}
 AvailabilitySets                        : {}
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> Get-AzProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName | Format-List
@@ -316,113 +316,113 @@ AvailabilitySets                        : {}
 
 ### `Add-AzVmssAdditionalUnattendContent`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Add-AzVmssDataDisk`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Add-AzVmssExtension`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Add-AzVmssNetworkInterfaceConfiguration`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Add-AzVmssSecret`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Add-AzVmssSshPublicKey`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Add-AzVmssWinRMListener`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `New-AzVmssConfig`
 
-- Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+- Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 - Tidak lagi mendukung parameter `AutomaticRepairMaxInstanceRepairsPercent` dan tidak ada alias yang ditemukan untuk nama parameter asli.
 - Tidak lagi mendukung parameter `AssignIdentity` dan tidak ada alias yang ditemukan untuk nama parameter asli.
-- Kumpulan parameter `__AllParameterSets` telah dihapus.
-- Kumpulan parameter `ExplicitIdentityParameterSet` telah dihapus.
-- Kumpulan parameter `AssignIdentityParameterSet` telah dihapus.
+- Set parameter `__AllParameterSets` telah dihapus.
+- Set parameter `ExplicitIdentityParameterSet` telah dihapus.
+- Set parameter `AssignIdentityParameterSet` telah dihapus.
 
 ### `Remove-AzVmssDataDisk`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Remove-AzVmssExtension`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Remove-AzVmssNetworkInterfaceConfiguration`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Set-AzVmssBootDiagnostic`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Set-AzVmssOsProfile`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Set-AzVmssRollingUpgradePolicy`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Set-AzVmssStorageProfile`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `New-AzVmss`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Repair-AzVmssServiceFabricUpdateDomain`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Get-AzVmss`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Set-AzVmssOrchestrationServiceState`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Update-AzVmss`
 
-- Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+- Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 - Tidak lagi mendukung parameter `AutomaticRepairMaxInstanceRepairsPercent` dan tidak ada alias yang ditemukan untuk nama parameter asli.
-- Kumpulan parameter `__AllParameterSets` telah dihapus.
-- Kumpulan parameter `ExplicitIdentityParameterSet` telah dihapus.
+- Set parameter `__AllParameterSets` telah dihapus.
+- Set parameter `ExplicitIdentityParameterSet` telah dihapus.
 
 ### `Add-AzVmssDiagnosticsExtension`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ### `Disable-AzVmssDiskEncryption`
 
-Tipe properti tipe `AutomaticRepairsPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy` .
+Jenis properti `AutomaticRepairsPolicy` dari jenis `Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet` berubah dari `Microsoft.Azure.Commands.Compute.Automation.Models.PSAutomaticRepairsPolicy` menjadi `Microsoft.Azure.Management.Compute.Models.AutomaticRepairsPolicy`.
 
 ## <a name="azkeyvault"></a>Az.KeyVault
 
 ### `New-AzKeyVaultCertificateOrganizationDetail`
 
-Alias `New-AzKeyVaultCertificateOrganizationDetails` dihapus. Silakan gunakan `New-AzKeyVaultCertificateOrganizationDetail` .
+Alias `New-AzKeyVaultCertificateOrganizationDetails` dihapus. Harap gunakan `New-AzKeyVaultCertificateOrganizationDetail`.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> New-AzKeyVaultCertificateOrganizationDetails -AdministratorDetails $AdminDetails
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> New-AzKeyVaultCertificateOrganizationDetail -AdministratorDetails $AdminDetails
@@ -430,15 +430,15 @@ PS C:\> New-AzKeyVaultCertificateOrganizationDetail -AdministratorDetails $Admin
 
 ### `New-AzKeyVaultCertificateAdministratorDetail`
 
-Alias `New-AzKeyVaultCertificateAdministratorDetails` dihapus. Silakan gunakan `New-AzKeyVaultCertificateAdministratorDetail` .
+Alias `New-AzKeyVaultCertificateAdministratorDetails` dihapus. Harap gunakan `New-AzKeyVaultCertificateAdministratorDetail`.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $AdminDetails = New-AzKeyVaultCertificateAdministratorDetails -FirstName 'Patti' -LastName 'Fuller' -EmailAddress 'patti.fuller@contoso.com' -PhoneNumber '5553334444'
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $AdminDetails = New-AzKeyVaultCertificateAdministratorDetail -FirstName 'Patti' -LastName 'Fuller' -EmailAddress 'patti.fuller@contoso.com' -PhoneNumber '5553334444'
@@ -448,13 +448,13 @@ PS C:\> $AdminDetails = New-AzKeyVaultCertificateAdministratorDetail -FirstName 
 
 `-EnableSoftDelete` dihapus, karena penghapusan sementara diaktifkan secara default. Silakan gunakan `-DisableSoftDelete` jika Anda tidak menginginkan perilaku ini.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US' -EnableSoftDelete
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -Location 'East US'
@@ -464,159 +464,159 @@ PS C:\> New-AzKeyVault -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' 
 
 ### `Add-AzLogProfile`
 
-Tipe properti tipe `RetentionPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile` `Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy` `Microsoft.Azure.Management.Monitor.Models.RetentionPolicy` .
+Jenis properti `RetentionPolicy` dari jenis `Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile` berubah dari `Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy` menjadi `Microsoft.Azure.Management.Monitor.Models.RetentionPolicy`.
 
 ### `Get-AzLogProfile`
 
-Tipe properti tipe `RetentionPolicy` telah berubah dari menjadi `Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile` `Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy` `Microsoft.Azure.Management.Monitor.Models.RetentionPolicy` .
+Jenis properti `RetentionPolicy` dari jenis `Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile` berubah dari `Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy` menjadi `Microsoft.Azure.Management.Monitor.Models.RetentionPolicy`.
 
 ### `New-AzMetricAlertRuleV2Criteria`
 
-Kumpulan parameter `__AllParameterSets` untuk cmdlet telah `New-AzMetricAlertRuleV2Criteria` dihapus.
+Set parameter `__AllParameterSets` untuk cmdlet `New-AzMetricAlertRuleV2Criteria` telah dihapus.
 
 ## <a name="aznetwork"></a>Az.Network
 
 ### `Get-AzNetworkWatcherConnectionMonitor`
 
-Tipe generik untuk properti `RoundTripTimeMs` telah diubah dari menjadi `System.Nullable1[System.Int32]` `System.Nullable1[System.Double]` .
+Jenis generik untuk properti `RoundTripTimeMs` telah berubah dari `System.Nullable1[System.Int32]`menjadi `System.Nullable1[System.Double]`.
 
 ### `New-AzNetworkWatcherConnectionMonitorTestConfigurationObject`
 
-Tipe umum untuk parameter `SuccessThresholdRoundTripTimeMs` telah diubah dari menjadi `System.Nullable1[System.Int32]` `System.Nullable1[System.Double]` .
+Jenis generik untuk parameter `SuccessThresholdRoundTripTimeMs` telah berubah dari `System.Nullable1[System.Int32]`menjadi `System.Nullable1[System.Double]`.
 
 ## <a name="azoperationalinsights"></a>Az.OperationalInsights
 
 ### `Get-AzOperationalInsightsDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsApplicationInsightsDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsAzureActivityLogDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsCustomLogDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsLinuxPerformanceObjectDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsLinuxSyslogDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsWindowsEventDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsWindowsPerformanceCounterDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Remove-AzOperationalInsightsDataSource`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Disable-AzOperationalInsightsIISLogCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Disable-AzOperationalInsightsLinuxCustomLogCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Disable-AzOperationalInsightsLinuxPerformanceCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Disable-AzOperationalInsightsLinuxSyslogCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Enable-AzOperationalInsightsIISLogCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Enable-AzOperationalInsightsLinuxCustomLogCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Enable-AzOperationalInsightsLinuxPerformanceCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Enable-AzOperationalInsightsLinuxSyslogCollection`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Get-AzOperationalInsightsSavedSearch`
 
-Properti `Metadata` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSSearchListSavedSearchResponse` telah dihapus.
+Properti `Metadata` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSSearchListSavedSearchResponse` telah dihapus.
 
 ### `Get-AzOperationalInsightsSavedSearchResult`
 
-Cmdlet `Get-AzOperationalInsightsSavedSearchResult` tidak lagi didukung oleh SDK dan telah dihapus.
+Cmdlet `Get-AzOperationalInsightsSavedSearchResult` tidak didukung oleh SDK lagi dan telah dihapus.
 
 ### `Get-AzOperationalInsightsSearchResult`
 
-Cmdlet `Get-AzOperationalInsightsSearchResult` tidak lagi didukung oleh SDK dan telah dihapus.
+Cmdlet `Get-AzOperationalInsightsSearchResult` tidak didukung oleh SDK lagi dan telah dihapus.
 
 ### `Get-AzOperationalInsightsStorageInsight`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsStorageInsight`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Remove-AzOperationalInsightsStorageInsight`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Set-AzOperationalInsightsStorageInsight`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Get-AzOperationalInsightsLinkTarget`
 
-Cmdlet `Get-AzOperationalInsightsLinkTarget` tidak lagi didukung oleh SDK dan telah dihapus.
+Cmdlet `Get-AzOperationalInsightsLinkTarget` tidak didukung oleh SDK lagi dan telah dihapus.
 
 ### `Get-AzOperationalInsightsWorkspace`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `New-AzOperationalInsightsWorkspace`
 
-- Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
-- Cmdlet `New-AzOperationalInsightsWorkspace` tidak lagi mendukung parameter dan `CustomerId` tidak ada alias yang ditemukan untuk nama parameter aslinya.
-- Kumpulan parameter `__AllParameterSets` untuk cmdlet telah `New-AzOperationalInsightsWorkspace` dihapus.
+- Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+- Cmdlet `New-AzOperationalInsightsWorkspace` tidak lagi mendukung parameter `CustomerId` dan tidak ada alias yang ditemukan untuk nama parameter asli.
+- Set parameter `__AllParameterSets` untuk cmdlet `New-AzOperationalInsightsWorkspace` telah dihapus.
 
 ### `Set-AzOperationalInsightsWorkspace`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ### `Invoke-AzOperationalInsightsQuery`
 
-Properti `PortalUrl` tipe `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
+Properti `PortalUrl` jenis `Microsoft.Azure.Commands.OperationalInsights.Models.PSWorkspace` telah dihapus.
 
 ## <a name="azresources"></a>Az.Resources
 
 ### `Get-AzDeploymentScript`
 
-Tipe properti tipe `Status` telah berubah dari menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus` .
+Jenis properti `Status` dari jenis `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` berubah dari `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus`.
 
 ### `Get-AzDeploymentScriptLog`
 
-Tipe properti tipe `Status` telah berubah dari menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus` .
+Jenis properti `Status` dari jenis `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` berubah dari `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus`.
 
 ### `Save-AzDeploymentScriptLog`
 
-Tipe properti tipe `Status` telah berubah dari menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus` .
+Jenis properti `Status` dari jenis `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` berubah dari `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus`.
 
 ### `Get-AzResourceLock, New-AzResourceLock, Remove-AzResourceLock, Set-AzResourceLock`
 
@@ -624,32 +624,32 @@ Parameter `TenantLevel` telah dihapus.
 
 ### `Get-AzPolicyAlias`
 
-Tipe generik untuk properti `Aliases` telah diubah dari menjadi `System.Collections.Generic.IList1[Microsoft.Azure.Management.ResourceManager.Models.AliasType]` `System.Collections.Generic.IList1[Microsoft.Azure.Management.ResourceManager.Models.Alias]` .
+Jenis generik untuk properti `Aliases` telah berubah dari `System.Collections.Generic.IList1[Microsoft.Azure.Management.ResourceManager.Models.AliasType]`menjadi `System.Collections.Generic.IList1[Microsoft.Azure.Management.ResourceManager.Models.Alias]`.
 
 ### `New-AzPolicyAssignment`
 
-- Cmdlet `New-AzPolicyAssignment` tidak lagi mendukung tipe `System.Management.Automation.PSObject` untuk parameter `PolicyDefinition` .
-- Cmdlet `New-AzPolicyAssignment` tidak lagi mendukung tipe `System.Management.Automation.PSObject` untuk parameter `PolicySetDefinition` .
+- Cmdlet `New-AzPolicyAssignment` tidak lagi mendukung jenis `System.Management.Automation.PSObject` untuk parameter `PolicyDefinition`.
+- Cmdlet `New-AzPolicyAssignment` tidak lagi mendukung jenis `System.Management.Automation.PSObject` untuk parameter `PolicySetDefinition`.
 
 ### `Remove-AzDeploymentScript`
 
-Tipe properti tipe `Status` telah berubah dari menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus` .
+Jenis properti `Status` dari jenis `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsDeploymentScript` berubah dari `Microsoft.Azure.Management.ResourceManager.Models.ScriptStatus` menjadi `Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.PsScriptStatus`.
 
 ## <a name="azstorage"></a>Az.Storage
 
 ### <a name="update-azstorageaccountnetworkruleset-get-azstorageaccountnetworkruleset"></a>`Update-AzStorageAccountNetworkRuleSet`, `Get-AzStorageAccountNetworkRuleSet`
 
-Changed NetWorkRule DefaultAction value from: Allow = 1, Deny = 0, to: Allow = 0, Deny = 1.
+Mengubah nilai NetWorkRule DefaultAction dari: Izinkan = 1, Tolak = 0, ke: Izinkan = 0, Tolak = 1.
 
 ### <a name="new-azstoragetable-get-azstoragetable"></a>`New-AzStorageTable`, `Get-AzStorageTable`
 
-Objek output AzureStorageTable.CloudTable.ServiceClient telah menghapus 2 properti: ConnectionPolicy, ConsistencyLevel.
+Objek output AzureStorageTable.CloudTable.ServiceClient memiliki 2 properti yang dihapus: ConnectionPolicy, ConsistencyLevel.
 
 ### <a name="get-azstoragefile-remove-azstoragefile-get-azstoragefilecontent-set-azstoragefilecontent-start-azstoragefilecopy"></a>`Get-AzStorageFile`, `Remove-AzStorageFile`, `Get-AzStorageFileContent`, `Set-AzStorageFileContent`, `Start-AzStorageFileCopy`
 
-Mengubah tipe output dari CloudFile ke AzureStorageFile, output asli akan menjadi properti anak "CloudFile" dari output baru
+Mengubah jenis output dari CloudFile ke AzureStorageFile, output asli akan menjadi properti turunan “CloudFile” dari output baru
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $file = Get-AzStorageFile -ShareName $shareName -Path testfile -Context $ctx
@@ -657,7 +657,7 @@ PS C:\> $file = Get-AzStorageFile -ShareName $shareName -Path testfile -Context 
 PS C:\> Remove-AzStorageFile -File $file
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $file = Get-AzStorageFile -ShareName $shareName -Path testfile -Context $ctx
@@ -667,9 +667,9 @@ PS C:\> Remove-AzStorageFile -File $file.CloudFile
 
 ### <a name="get-azstoragefile-new-azstoragedirectory-remove-azstoragedirectory"></a>`Get-AzStorageFile`, `New-AzStorageDirectory`, `Remove-AzStorageDirectory`
 
-Ubah tipe output dari CloudFileDirectory ke AzureStorageFileDirectory, output asli akan menjadi properti anak "CloudFileDirectory" dari output baru
+Mengubah jenis output dari CloudFileDirectory ke AzureStorageFileDirectory, output asli akan menjadi properti turunan “CloudFileDirectory” dari output baru
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $dir = Get-AzStorageFile -ShareName $shareName -Path testdir -Context $ctx
@@ -677,7 +677,7 @@ PS C:\> $dir = Get-AzStorageFile -ShareName $shareName -Path testdir -Context $c
 PS C:\> Remove-AzStorageDirectory -Directory $dir
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $dir = Get-AzStorageFile -ShareName $shareName -Path testdir -Context $ctx
@@ -687,9 +687,9 @@ PS C:\> Remove-AzStorageDirectory -Directory $dir.CloudFileDirectory
 
 ### <a name="get-azstorageshare-new-azstorageshare-remove-azstorageshare"></a>`Get-AzStorageShare`, `New-AzStorageShare`, `Remove-AzStorageShare`
 
-Change output type from FileShareProperties to AzureStorageFileShare, the original output will become child property "CloudFileShare" of the new output
+Mengubah jenis output dari FileShareProperties ke AzureStorageFileShare, output asli akan menjadi properti turunan “CloudFileShare” dari output baru
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $share = Get-AzStorageShare -Name $shareName -Context $ctx
@@ -697,7 +697,7 @@ PS C:\> $share = Get-AzStorageShare -Name $shareName -Context $ctx
 PS C:\> Remove-AzStorageShare -Share $share
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $share = Get-AzStorageShare -Name $shareName -Context $ctx
@@ -707,9 +707,9 @@ PS C:\> Remove-AzStorageShare -Share $share.CloudFileShare
 
 ### `Set-AzStorageShareQuota`
 
-Change output type from FileShareProperties to AzureStorageFileShare, the original output will become sub child property ""CloudFileShare.Properties"" of the new output
+Mengubah jenis output dari FileShareProperties ke AzureStorageFileShare, output asli akan menjadi properti sub-turunan “”CloudFileShare.Properties”” dari output baru
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $shareProperties = Set-AzStorageShareQuota -Name $shareName -Quota 100 -Context $ctx
@@ -721,7 +721,7 @@ ETag                LastModified                Quota
 "0x8D7F5BC7789FC63" 5/11/2020 3:03:30 PM +00:00   100
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $share = Set-AzStorageShareQuota -Name $shareName -Quota 100 -Context $ctx
@@ -743,9 +743,9 @@ ETag                LastModified                Quota
 
 ### `Remove-AzStorageDirectory`
 
-Saat menghapus sub Direktori File dengan objek Direktori induk dan -Jalur, Tidak bisa menginput -Jalur dari saluran dengan tipe (string) cocok lagi.
+Saat menghapus sub Direktori File dengan objek Direktori induk dan -Path, Tidak dapat memasukkan -Path dari alur dengan kecocokan jenis (string) lagi.
 
-#### <a name="before"></a>Sebelum
+#### <a name="before"></a>Sebelumnya
 
 ```powershell
 PS C:\> $dir = Get-AzStorageFile -ShareName $shareName -Path testdir -Context $ctx
@@ -753,7 +753,7 @@ PS C:\> $dir = Get-AzStorageFile -ShareName $shareName -Path testdir -Context $c
 PS C:\> @('dir1', 'dir2') | Remove-AzStorageDirectory -Directory $dir
 ```
 
-#### <a name="after"></a>Setelah
+#### <a name="after"></a>Sesudahnya
 
 ```powershell
 PS C:\> $dir = Get-AzStorageFile -ShareName $shareName -Path testdir -Context $ctx

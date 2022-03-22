@@ -8,93 +8,93 @@ ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
 ms.openlocfilehash: 8958570285e3db264b3e0bb654acb7f38526354c
 ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: id-ID
 ms.lasthandoff: 09/13/2021
 ms.locfileid: "132427999"
 ---
 # <a name="get-started-with-azure-powershell"></a>Mulai menggunakan Azure PowerShell
 
-Azure PowerShell dirancang untuk mengelola dan mengelola sumber daya Azure dari baris perintah. Gunakan Azure PowerShell saat Anda ingin menyusun alat otomatis yang menggunakan model Azure Resource Manager.
-Coba di browser dengan [Azure Cloud Shell](/azure/cloud-shell/overview), atau instal di komputer lokal Anda.
+Azure PowerShell dirancang untuk mengelola dan mengelola sumber daya Azure dari baris perintah. Gunakan Azure PowerShell saat Anda ingin membuat alat otomatis yang menggunakan model Azure Resource Manager.
+Cobalah di browser Anda dengan [Azure Cloud Shell](/azure/cloud-shell/overview), atau instal di komputer lokal Anda.
 
-Artikel ini membantu Anda memulai dengan Azure PowerShell dan mengajarkan konsep inti di baliknya.
+Artikel ini membantu Anda memulai Azure PowerShell dan mengajarkan konsep inti di baliknya.
 
-## <a name="install-or-run-in-azure-cloud-shell"></a>Menginstal atau menjalankan Azure Cloud Shell
+## <a name="install-or-run-in-azure-cloud-shell"></a>Menginstal atau menjalankan di Azure Cloud Shell
 
-Cara termudah untuk mulai menggunakan Azure PowerShell adalah dengan mencobanya dalam lingkungan Azure Cloud Shell.
-Untuk memulai dan menjalankan Cloud Shell, lihat [Mulai cepat PowerShell di Azure Cloud Shell](/azure/cloud-shell/quickstart-powershell).
-Cloud Shell menjalankan PowerShell 6 di wadah Linux, Windows fungsionalitas khusus tidak tersedia.
+Cara termudah untuk memulai Azure PowerShell adalah dengan mencobanya di lingkungan Azure Cloud Shell.
+Untuk mulai dan bekerja dengan Cloud Shell, lihat [Mulai Cepat untuk PowerShell di Azure Cloud Shell](/azure/cloud-shell/quickstart-powershell).
+Cloud Shell menjalankan PowerShell 6 pada kontainer Linux, sehingga fungsionalitas khusus Windows tidak tersedia.
 
-Jika sudah siap menginstal di Azure PowerShell lokal Anda, ikuti instruksi di [Menginstal modul Azure PowerShell .](install-az-ps.md)
+Saat Anda siap menginstal Azure PowerShell di komputer lokal Anda, ikuti petunjuk dalam [Menginstal modul Azure PowerShell](install-az-ps.md).
 
 ## <a name="sign-in-to-azure"></a>Masuk ke Azure
 
-Masuk secara interaktif dengan `Connect-AzAccount` cmdlet. Lewati langkah ini jika menggunakan Cloud Shell: Sesi Azure Cloud Shell Anda sudah diautentikasi untuk lingkungan, langganan, dan penyewa yang meluncurkan sesi Cloud Shell.
+Masuk secara interaktif dengan cmdlet `Connect-AzAccount`. Lewati langkah ini jika Anda menggunakan Cloud Shell: Sesi Azure Cloud Shell Anda sudah diautentikasi untuk lingkungan, langganan, dan penyewa yang meluncurkan sesi Cloud Shell.
 
 ```azurepowershell-interactive
 Connect-AzAccount
 ```
 
-Jika Anda berada di kawasan non-AS, gunakan `-Environment` parameter untuk masuk. Dapatkan nama lingkungan untuk kawasan Anda menggunakan cmdlet [Get-AzEnvironment.](/powershell/module/Az.Accounts/Get-AzEnvironment) Misalnya, untuk masuk ke Azure China 21Vianet:
+Jika Anda berada di wilayah non-AS, gunakan parameter `-Environment` untuk masuk. Dapatkan nama lingkungan untuk wilayah Anda dengan menggunakan cmdlet [Get-AzEnvironment](/powershell/module/Az.Accounts/Get-AzEnvironment). Misalnya, untuk masuk ke Azure Tiongkok:
 
 ```azurepowershell-interactive
 Connect-AzAccount -Environment AzureChinaCloud
 ```
 
-Di lingkungan PowerShell 5.1, Anda akan mendapatkan dialog masuk untuk menyediakan nama pengguna dan kata sandi untuk akun Azure Anda. Di setiap versi PowerShell lainnya, Anda akan mendapatkan token untuk digunakan di [ https://microsoft.com/devicelogin ].
-Buka halaman ini di browser Anda dan masukkan token, lalu masuk dengan kredensial akun Azure dan otorisasikan akun Azure PowerShell.
+Di lingkungan PowerShell 5.1, Anda akan mendapatkan dialog masuk untuk memberikan nama pengguna dan kata sandi untuk akun Azure Anda. Di setiap versi PowerShell lainnya, Anda akan mendapatkan token untuk digunakan di [https://microsoft.com/devicelogin ].
+Buka halaman ini di browser Anda dan masukkan token, lalu masuk dengan kredensial akun Azure Anda dan otorisasi Azure PowerShell.
 
-Setelah masuk, Anda akan melihat informasi yang mengindikasikan langganan Azure mana yang aktif. Jika memiliki beberapa langganan Azure dalam akun Anda dan ingin memilih langganan lainnya, dapatkan langganan yang tersedia dengan [Get-AzSubscription](/powershell/module/az.accounts/get-azsubscription) dan gunakan cmdlet [Set-AzContext](/powershell/module/az.accounts/set-azcontext) dengan ID langganan.
-Untuk informasi selengkapnya tentang cara mengelola langganan Azure di Azure PowerShell, [lihat Menggunakan beberapa langganan Azure.](manage-subscriptions-azureps.md)
+Setelah masuk, Anda akan melihat informasi yang menunjukkan langganan Azure mana yang aktif. Jika Anda memiliki beberapa langganan Azure di akun Anda dan ingin memilih yang lain, dapatkan langganan yang tersedia dengan [Get-AzSubscription](/powershell/module/az.accounts/get-azsubscription) dan gunakan cmdlet [Set-AzContext](/powershell/module/az.accounts/set-azcontext) dengan ID langganan Anda.
+Untuk informasi selengkapnya tentang mengelola langganan Azure Anda di Azure PowerShell, lihat [Menggunakan beberapa langganan Azure](manage-subscriptions-azureps.md).
 
-Setelah masuk, gunakan cmdlet Azure PowerShell cmdlet untuk mengakses dan mengelola sumber daya dalam langganan Anda. Untuk mempelajari selengkapnya tentang proses masuk dan metode autentikasi, lihat [Masuk dengan Azure PowerShell](authenticate-azureps.md).
+Setelah masuk, gunakan cmdlet Azure PowerShell untuk mengakses dan mengelola sumber daya dalam langganan Anda. Untuk mempelajari metode proses masuk dan autentikasi lebih lanjut, lihat [Masuk dengan Azure PowerShell](authenticate-azureps.md).
 
 ## <a name="find-commands"></a>Menemukan perintah
 
-Azure PowerShell cmdlet mengikuti konvensi penamaan standar untuk PowerShell, `VERB-NOUN` . Kata kerja menjelaskan tindakan (contohnya antara lain , , , ) dan kata benda yang menguraikan tipe sumber daya `New` `Get` `Set` `Remove` (contohnya antara `AzVM` lain , , , `AzKeyVaultCertificate` `AzFirewall` `AzVirtualNetworkGateway` ). Kata benda Azure PowerShell selalu diawali dengan prefiks `Az` . Untuk daftar lengkap kata kerja standar, lihat [Kata kerja yang disetujui untuk Perintah PowerShell](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands).
+Azure PowerShell cmdlet mengikuti konvensi penamaan standar untuk PowerShell, `VERB-NOUN`. Kata kerja menggambarkan tindakan (contohnya meliputi `New`, `Get`, `Set`, `Remove`) dan kata benda menggambarkan jenis sumber daya (contohnya meliputi `AzVM`, `AzKeyVaultCertificate`, `AzFirewall`, `AzVirtualNetworkGateway`). Kata benda dalam Azure PowerShell selalu dimulai dengan awalan `Az`. Untuk daftar lengkap kata kerja standar, lihat [Kata kerja yang disetujui untuk Perintah PowerShell](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands).
 
-Mengetahui kata benda, kata kerja, dan Azure PowerShell modul tersedia untuk membantu Anda menemukan perintah menggunakan cmdlet [Get-Command.](/powershell/module/microsoft.powershell.core/get-command) Misalnya, untuk menemukan semua perintah vm terkait yang menggunakan kata `Get` kerja:
+Mengetahui kata benda, kata kerja, dan modul Azure PowerShell yang tersedia membantu Anda menemukan perintah dengan cmdlet [Get-Command](/powershell/module/microsoft.powershell.core/get-command). Misalnya, untuk menemukan semua perintah terkait VM yang menggunakan kata kerja `Get`:
 
 ```powershell-interactive
 Get-Command -Verb Get -Noun AzVM* -Module Az.Compute
 ```
 
-Untuk membantu Anda menemukan perintah umum, tabel ini mencantumkan tipe sumber daya, modul Azure PowerShell terkait, dan prefiks kata benda untuk digunakan `Get-Command` dengan:
+Untuk membantu Anda menemukan perintah umum, tabel ini mencantumkan jenis sumber daya, modul Azure PowerShell yang sesuai, dan awalan kata benda untuk digunakan dengan `Get-Command`:
 
-| Tipe sumber daya | Azure PowerShell ini | Prefiks kata benda |
+| Jenis Sumber Daya | Modul Azure PowerShell | Awalan kata benda |
 |---------------|-------------------------|----------------|
-| [Grup Sumber Daya](/azure/azure-resource-manager/resource-group-overview) | [Az.Resources](/powershell/module/az.resources#resources) | `AzResourceGroup` |
-| [Mesin virtual](/azure/virtual-machines) | [Az.Compute](/powershell/module/az.compute#virtual_machines) | `AzVM` |
-| [Storage akun](/azure/storage/common/storage-introduction) | [Az.Storage](/powershell/module/az.storage/) | `AzStorageAccount` |
-| [Kunci Vault](/azure/key-vault/key-vault-whatis) | [Az.KeyVault](/powershell/module/az.keyvault) | `AzKeyVault` |
-| [Aplikasi web](/azure/app-service) | [Situs Web Az.](/powershell/module/az.websites) | `AzWebApp` |
-| [SQL database](/azure/sql-database) | [az.sql](/powershell/module/az.sql) | `AzSqlDatabase` |
+| [Grup sumber daya](/azure/azure-resource-manager/resource-group-overview) | [Az.Resources](/powershell/module/az.resources#resources) | `AzResourceGroup` |
+| [Komputer virtual](/azure/virtual-machines) | [Az.Compute](/powershell/module/az.compute#virtual_machines) | `AzVM` |
+| [Akun penyimpanan](/azure/storage/common/storage-introduction) | [Az.Storage](/powershell/module/az.storage/) | `AzStorageAccount` |
+| [Key Vault](/azure/key-vault/key-vault-whatis) | [Az.KeyVault](/powershell/module/az.keyvault) | `AzKeyVault` |
+| [Aplikasi web](/azure/app-service) | [Az.Websites](/powershell/module/az.websites) | `AzWebApp` |
+| [Database SQL](/azure/sql-database) | [Az.Sql](/powershell/module/az.sql) | `AzSqlDatabase` |
 
-Untuk daftar lengkap modul di Azure PowerShell, lihat daftar modul [Azure PowerShell dihosting di](https://github.com/Azure/azure-powershell/blob/master/documentation/azure-powershell-modules.md) GitHub.
+Untuk daftar lengkap modul di Azure PowerShell, lihat [daftar modul Azure PowerShell](https://github.com/Azure/azure-powershell/blob/master/documentation/azure-powershell-modules.md) yang dihosting di GitHub.
 
-## <a name="learn-azure-powershell-basics-with-quickstarts-and-tutorials"></a>Pelajari Azure PowerShell dasar-dasar dengan mulai cepat dan tutorial
+## <a name="learn-azure-powershell-basics-with-quickstarts-and-tutorials"></a>Pelajari dasar-dasar Azure PowerShell dengan mulai cepat dan tutorial
 
-Untuk mulai menggunakan Azure PowerShell, cobalah tutorial mendalam untuk menyetel mesin virtual dan mempelajari cara membuat kuerinya.
+Untuk memulai Azure PowerShell, cobalah tutorial mendalam untuk menyiapkan mesin virtual dan mempelajari cara memintanya.
 
 > [!div class="nextstepaction"]
 > [Membuat mesin virtual dengan Azure PowerShell](azureps-vm-tutorial.yml)
 
-Tersedia juga cara Azure PowerShell cepat untuk layanan Azure populer lainnya:
+Ada juga mulai cepat Azure PowerShell untuk layanan Azure lain yang populer:
 
-* [Membuat akun penyimpanan](/azure/storage/common/storage-quickstart-create-account?tabs=azure-powershell)
-* [Mentransfer objek ke/dari penyimpanan Blob Azure](/azure/storage/blobs/storage-quickstart-blobs-powershell)
-* [Membuat dan mengambil rahasia dari Key Vault Azure](/azure/key-vault/quick-create-powershell)
+* [Buat akun penyimpanan](/azure/storage/common/storage-quickstart-create-account?tabs=azure-powershell)
+* [Mentransfer objek ke/dari penyimpanan Azure Blob](/azure/storage/blobs/storage-quickstart-blobs-powershell)
+* [Membuat dan mengambil rahasia dari Azure Key Vault](/azure/key-vault/quick-create-powershell)
 * [Membuat database dan firewall Azure SQL](/azure/sql-database/scripts/sql-database-create-and-configure-database-powershell)
-* [Menjalankan wadah dalam Azure Container Instances](/azure/container-instances/container-instances-quickstart-powershell)
-* [Membuat Kumpulan Skala Mesin Virtual (VMSS)](/azure/virtual-machine-scale-sets/quick-create-powershell)
-* [Membuat penyeimbang muat standar](/azure/load-balancer/quickstart-create-standard-load-balancer-powershell)
+* [Menjalankan kontainer dalam Azure Container Instances](/azure/container-instances/container-instances-quickstart-powershell)
+* [Membuat Virtual Machine Scale Sets (VMSS)](/azure/virtual-machine-scale-sets/quick-create-powershell)
+* [Membuat penyeimbang muatan standar](/azure/load-balancer/quickstart-create-standard-load-balancer-powershell)
 
 ## <a name="next-steps"></a>Langkah berikutnya
 
 * [Masuk dengan Azure PowerShell](authenticate-azureps.md)
-* [Kelola langganan Azure dengan Azure PowerShell](manage-subscriptions-azureps.md)
-* [Membuat prinsipal layanan dengan Azure PowerShell](create-azure-service-principal-azureps.md)
-* Dapatkan bantuan dari komunitas:
+* [Mengelola langganan Azure dengan Azure PowerShell](manage-subscriptions-azureps.md)
+* [Membuat perwakilan layanan dengan Azure PowerShell](create-azure-service-principal-azureps.md)
+* Mendapatkan bantuan dari komunitas:
   * [Forum Azure di MSDN](https://go.microsoft.com/fwlink/p/?LinkId=320212)
   * [Stack Overflow](https://go.microsoft.com/fwlink/?LinkId=320213)
