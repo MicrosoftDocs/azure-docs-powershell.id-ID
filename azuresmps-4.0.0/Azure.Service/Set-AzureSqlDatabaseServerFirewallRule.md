@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.SqlDatabase.dll-Help.xml
 ms.assetid: F311A7A9-5FE9-4E81-8FF1-8E3A02F2BF4B
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 41abe73717a919ab26ff0752643331ee2a5b0dd5e71ef7758b9213fdc69b6b6b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 39fdf9a8781fba32389f9731d3d2ae9604d3048e
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414746"
 ---
 # Set-AzureSqlDatabaseServerFirewallRule
 
 ## SYNOPSIS
-Memodifikasi aturan firewall yang sudah ada di server Azure SQL Database.
+Mengubah aturan firewall yang sudah ada di server Azure SQL Database.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Set-AzureSqlDatabaseServerFirewallRule -ServerName <String> -RuleName <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureSqlDatabaseServerFirewallRule** mengubah alamat IP awal dan nilai alamat IP akhir dari aturan firewall yang sudah ada dalam contoh Azure SQL Database Server yang ditentukan.
+Cmdlet **Set-AzureSqlDatabaseServerFirewallRule** memodifikasi alamat IP awal dan nilai alamat IP akhir dari aturan firewall yang sudah ada dalam contoh Azure SQL Database Server tertentu.
 
 ## EXAMPLES
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -179,7 +179,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)
 
-[Operasi untuk Database Azure SQL](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
+[Operasi untuk Database SQL Azure](https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx)
 
 [Menetapkan Aturan Firewall](https://msdn.microsoft.com/en-us/library/azure/dn505707.aspx)
 

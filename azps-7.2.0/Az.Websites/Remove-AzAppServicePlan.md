@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzAppServicePlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzAppServicePlan.md
-ms.openlocfilehash: 6be2f3a78a412ba47f1cb274a3b0928a8b95f962
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b2f4673f19b7ecd7db58ed330bf896e5eee238a1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138270731"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080757"
 ---
 # Remove-AzAppServicePlan
 
 ## SYNOPSIS
 Menghapus paket Layanan Aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azappserviceplan) untuk informasi terkini.
 
 ## SYNTAX
 

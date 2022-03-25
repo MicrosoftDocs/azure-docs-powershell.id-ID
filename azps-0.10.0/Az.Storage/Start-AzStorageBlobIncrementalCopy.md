@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/st
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Start-AzStorageBlobIncrementalCopy.md
-ms.openlocfilehash: 432ebee591cad2609746244b6b5b8e994133608425137917a452671d969ef5d7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 28d0c33a1aa74b5c5f69670622cc12c48810906f
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414847"
 ---
 # Start-AzStorageBlobIncrementalCopy
@@ -63,7 +63,7 @@ Start-AzStorageBlobIncrementalCopy -AbsoluteUri <String> -DestContainer <String>
 
 ## DESCRIPTION
 Memulai operasi penyalinan Bertahap dari snapshot blob Halaman ke blob tujuan tertentu.
-Lihat detail selengkapnya tentang fitur ini di https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/incremental-copy-blob .
+Lihat detail selengkapnya tentang fitur ini di https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/incremental-copy-blob.
 
 ## EXAMPLES
 
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

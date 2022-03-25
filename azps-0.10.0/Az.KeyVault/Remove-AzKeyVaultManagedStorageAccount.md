@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.keyvault/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: 413e88fdb40246ec033142cf64827050b67b2c6dec93c1aa01a2b008176848ea
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bfecf2e20848b1cea6038660c94939d0ffd4939e
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414592"
 ---
 # Remove-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
-Menghapus kunci vault yang dikelola Azure Storage dan semua definisi SAS terkait.
+Menghapus kunci vault yang dikelola Azure Storage Dan semua definisi SAS terkait.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-AzKeyVaultManagedStorageAccount [-VaultName] <String> [-AccountName] <Str
 ```
 
 ## DESCRIPTION
-Memisahkan Akun Azure Storage dari Key Vault. Ini tidak akan menghapus Azure Storage Anda, tetapi menghapus kunci akun agar tidak dikelola oleh Azure Key Vault. Semua definisi kunci vault Storage sas terkait juga dihapus.
+Memisahkan akun Azure Storage dari Key Vault. Ini tidak akan menghapus Azure Storage Anda, tetapi menghapus kunci akun agar tidak dikelola oleh Azure Key Vault. Semua kunci vault yang terkait Storage definisi SAS juga dihapus.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName
 
 Memisahkan akun Azure Storage 'mystorageaccount' dari Key Vault 'myvault' dan menghentikan Key Vault mengelola kuncinya. Akun 'mystorageaccount' tidak akan dihapus. Semua definisi Key Vault Storage SAS yang terkait dengan akun ini akan dihapus.
 
-### Contoh 2: Hapus Kunci Vault Azure Storage akun dan semua definisi SAS terkait tanpa konfirmasi pengguna.
+### Contoh 2: Hapus Kunci Vault yang Azure Storage akun dan semua definisi SAS terkait tanpa konfirmasi pengguna.
 ```
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -Force -Confirm:$False
 ```
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

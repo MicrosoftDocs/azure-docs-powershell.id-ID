@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 8CDB4C0A-A050-4F65-8CC0-1822D006D772
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: e27cbdf2c2d3d70d9f6cfbd482f696303cee579af0585464b70967e9ab67de28
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b3ef03304790dde85efd721ad22040c0ad0185bb
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414785"
 ---
 # Remove-AzureNetworkSecurityRule
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ### -NetworkSecurityGroup
 Menentukan grup keamanan jaringan yang dimodifikasi cmdlet ini.
-Untuk mendapatkan objek **INetworkSecurityGroup,** gunakan cmdlet Get-AzureNetworkSecurityGroup.
+Untuk mendapatkan objek **INetworkSecurityGroup** , gunakan cmdlet Get-AzureNetworkSecurityGroup.
 
 ```yaml
 Type: INetworkSecurityGroup
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

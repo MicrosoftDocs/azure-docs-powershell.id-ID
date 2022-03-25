@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/e
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Enable-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Enable-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 264390da854f14a8306f4592e791bb1947c2cc4a
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f17316cb9820ad4c800663a9c811274174a38330
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138300604"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080937"
 ---
 # Enable-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
-Mengaktifkan titik akhir dalam Traffic Manager profil.
+Mengaktifkan titik akhir di Traffic Manager profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/enable-aztrafficmanagerendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerEndpoint
 Menentukan titik Traffic Manager titik akhir yang cmdlet ini aktifkan.
-Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe titik akhir yang dinonaktifkan cmdlet ini di Traffic Manager profil.
+Menentukan tipe titik akhir yang dinonaktifkan cmdlet ini dalam Traffic Manager profil.
 Nilai valid adalah: 
 
 - AzureEndpoints

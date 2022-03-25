@@ -3,11 +3,11 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: BB36A434-6BE3-46BF-B10A-FCD6C766CB84
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 9bc83eab7b731712b8b36a148fb5ffe36df73674ce9525a79bfdfd3220c66666
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2bf6c89569fdd5ce9710736bfd023d677b676fbf
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414781"
 ---
 # Remove-AzureSiteRecoveryNetworkMapping
@@ -36,14 +36,14 @@ PS C:\> $NetworkMapping = Get-AzureSiteRecoveryNetworkMapping -PrimaryServer $Se
 PS C:\> Remove-AzureSiteRecoveryNetworkMapping -NetworkMapping $NetworkMapping
 ```
 
-Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer.**
-Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer** .
+Perintah menyimpan server Pemulihan Situs di $Servers array baru.
 
-Perintah kedua mendapatkan pemetaan antara jaringan utama dan jaringan pemulihan, lalu menyimpannya dalam variabel $NetworkMapping pemulihan.
+Perintah kedua mendapatkan pemetaan antara jaringan utama dan jaringan pemulihan, lalu menyimpannya di variabel $NetworkMapping pemulihan.
 Perintah menentukan server utama untuk pemetaan jaringan sebagai elemen pertama dalam $Servers.
 Perintah menentukan server untuk jaringan pemulihan sebagai elemen kedua dari $Servers.
 
-Perintah terakhir menghapus pemetaan jaringan pada $NetworkMapping.
+Perintah terakhir menghapus pemetaan jaringan dalam $NetworkMapping.
 
 ### Contoh 2: Menghapus pemetaan antara jaringan dan jaringan mesin virtual Azure
 ```
@@ -53,14 +53,14 @@ PS C:\> Remove-AzureSiteRecoveryNetworkMapping -NetworkMapping $NetworkMapping
 ```
 
 Cmdlet perintah pertama mendapatkan server untuk vault Pemulihan Situs saat ini.
-Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+Perintah menyimpan server Pemulihan Situs di $Servers array baru.
 
-Perintah kedua mendapatkan pemetaan antara jaringan utama dan jaringan mesin virtual Azure, lalu menyimpannya di $NetworkMapping lokal.
+Perintah kedua mendapatkan pemetaan antara jaringan utama dan jaringan mesin virtual Azure, lalu menyimpannya dalam $NetworkMapping lokal.
 Perintah menentukan server utama untuk jaringan sebagai elemen pertama dalam $Servers.
-Perintah menentukan parameter *Azure.*
+Perintah menentukan parameter *Azure* .
 Oleh karena itu, perintah akan memetakannya ke jaringan mesin virtual Azure.
 
-Perintah terakhir menghapus pemetaan jaringan pada $NetworkMapping.
+Perintah terakhir menghapus pemetaan jaringan dalam $NetworkMapping.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

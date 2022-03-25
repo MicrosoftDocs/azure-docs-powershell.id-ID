@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 7259C717-250C-454A-B0DF-738B70747FF8
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 3e87452cf451f0bd315a8c2ad2443177bd7f47cdfa11070fddf5eab64a65007c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 70ce9c68095544b86ad3a14ee245bd1a841580a6
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414753"
 ---
 # Set-AzureLoadBalancedEndpoint
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -DirectServerReturn
 Menentukan apakah cmdlet ini mengaktifkan pengembalian server langsung.
-Tentukan $True diaktifkan, atau $False dinonaktifkan.
+Tentukan $True untuk mengaktifkan, atau $False menonaktifkannya.
 
 ```yaml
 Type: Boolean
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 
 ### -VirtualIPName
 Menentukan nama alamat IP virtual yang terkait dengan Azure ke titik akhir.
-Untuk menambahkan IP virtual ke layanan Anda, gunakan cmdlet **Add-AzureVirtualIP.**
+Untuk menambahkan IP virtual ke layanan Anda, gunakan cmdlet **Add-AzureVirtualIP** .
 
 ```yaml
 Type: String
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

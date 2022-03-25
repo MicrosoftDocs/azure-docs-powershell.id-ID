@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemAclEntry.md
-ms.openlocfilehash: a9a202d435953cb945964b7be2d5c91e8bcac4dd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 88fc0aba720c261d282760c83c99b5a5b653aac7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138265052"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925809"
 ---
 # Get-AzDataLakeStoreItemAclEntry
 
 ## SYNOPSIS
 Mendapatkan entri dalam ACL file atau folder di Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemaclentry) untuk informasi terkini.
 
 ## SYNTAX
 

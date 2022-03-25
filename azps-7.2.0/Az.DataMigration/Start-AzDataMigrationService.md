@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
-ms.openlocfilehash: 159f455247d5e4765a3909899d8aafcc43d64d5e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 514277f5ae3fe1824b487829e7c33a208327ad59
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138168694"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925467"
 ---
 # Start-AzDataMigrationService
 
 ## SYNOPSIS
 Memulai contoh Layanan Migrasi Database Azure dalam keadaan berhenti. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/start-azdatamigrationservice) untuk informasi terkini.
 
 ## SYNTAX
 

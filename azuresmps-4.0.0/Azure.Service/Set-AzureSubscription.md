@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.Profile.dll-Help.xml
 ms.assetid: 6185C6BA-460E-4EEA-B1EF-CD67629AA75E
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f7b1b228a0015557e4819ff316a3bdb125734383bb6347e6f58e0de1d34f8678
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 589ff3496db0c6d589f94b86cdaf5669eba8f2b9
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414744"
 ---
 # Set-AzureSubscription
@@ -44,15 +44,15 @@ Set-AzureSubscription -SubscriptionName <String> -SubscriptionId <String> -Certi
 ## DESCRIPTION
 Cmdlet **Set-AzureSubscription** membuat dan mengubah properti objek langganan Azure.
 Anda dapat menggunakan cmdlet ini untuk bekerja dalam langganan Azure yang bukan merupakan langganan default atau untuk mengubah akun penyimpanan saat ini.
-Untuk informasi tentang langganan saat ini dan default, lihat cmdlet **Select-AzureSubscription.**
+Untuk informasi tentang langganan saat ini dan default, lihat cmdlet **Select-AzureSubscription** .
 
 Cmdlet ini beroperasi pada objek langganan Azure, bukan langganan Azure aktual Anda.
-Untuk membuat dan menyediakan langganan Azure, kunjungi [Portal Azure](https://azure.microsoft.com/) ( https://azure.microsoft.com/) .
+Untuk membuat dan menyediakan langganan Azure, kunjungi [Portal Azure](https://azure.microsoft.com/) (https://azure.microsoft.com/).
 
 Cmdlet ini mengubah data dalam file data langganan yang dibuat saat menggunakan cmdlet **Add-AzureAccount** atau **Import-AzurePublishSettingsFile** untuk menambahkan akun Azure Windows PowerShell.
 
 Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 ## EXAMPLES
 
@@ -86,7 +86,7 @@ C:\PS> Set-AzureSubscription -SubscriptionName ContosoFinance -SubscriptionDataF
 ```
 
 Perintah ini mengubah akun penyimpanan saat ini dari langganan Contoso Azure ke ContosoStorage01.
-Perintah tersebut menggunakan parameter **SubscriptionDataFile** untuk mengubah data dalam file C:\Azure\SubscriptionData.xml data langganan.
+Perintah tersebut menggunakan parameter **SubscriptionDataFile** untuk mengubah data dalam file data C:\Azure\SubscriptionData.xml langganan.
 Secara default, **Langganan Azure-Azure menggunakan** file data langganan default di profil pengguna roaming Anda.
 
 ## PARAMETERS
@@ -147,7 +147,7 @@ Menentukan lingkungan Azure.
 
 Lingkungan Azure, penyebaran independen dari Microsoft Azure, seperti AzureCloud untuk global Azure dan AzureChinaCloud untuk Azure yang dioperasikan oleh 21Vianet di Tiongkok.
 Anda juga bisa membuat lingkungan Azure lokal dengan menggunakan Paket Azure dan cmdlet WAPack.
-Untuk informasi selengkapnya, lihat [Azure Pack](/previous-versions/azure/windows-server-azure-pack/).
+Untuk informasi selengkapnya, lihat [Paket Azure](/previous-versions/azure/windows-server-azure-pack/).
 
 ```yaml
 Type: String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -ResourceManagerEndpoint
 Menentukan titik akhir untuk data Azure Resource Manager, termasuk data tentang grup sumber daya yang terkait dengan akun tersebut.
-Untuk informasi selengkapnya tentang Manajer Sumber Daya Azure, lihat [Cmdlet Azure Resource Manager](https://go.microsoft.com/fwlink/?LinkID=394765) ( dan Menggunakan Windows PowerShell dengan Pengelola Sumber https://go.microsoft.com/fwlink/?LinkID=394765) [Daya](https://go.microsoft.com/fwlink/?LinkID=394767) ( https://go.microsoft.com/fwlink/?LinkID=394767) .
+Untuk informasi selengkapnya tentang Azure Resource Manager, lihat [Cmdlet Azure Resource Manager](https://go.microsoft.com/fwlink/?LinkID=394765) (https://go.microsoft.com/fwlink/?LinkID=394765) dan [Menggunakan Windows PowerShell dengan Resource Manager](https://go.microsoft.com/fwlink/?LinkID=394767) (https://go.microsoft.com/fwlink/?LinkID=394767).
 
 ```yaml
 Type: String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -258,7 +258,7 @@ Anda dapat pipa input ke cmdlet ini berdasarkan nama properti, tetapi tidak menu
 ## OUTPUTS
 
 ### Tidak Ada atau System.Boolean
-Ketika Anda menggunakan parameter *PassThru,* cmdlet ini mengembalikan nilai Boolean.
+Ketika Anda menggunakan parameter *PassThru* , cmdlet ini mengembalikan nilai Boolean.
 Secara default, cmdlet ini tidak mengembalikan output apa pun.
 
 ## CATATAN

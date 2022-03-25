@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/new-azscomputequota
 schema: 2.0.0
-ms.openlocfilehash: 18999a05dc3eb0e8540d5557fc2aa01a349bef3d43caac31acc392baeafe9b78
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: efbd141d5ba41afa51c57f05df96840a81ab4fa1
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414621"
 ---
 # New-AzsComputeQuota
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -321,7 +321,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-NEWQUOTA <IQuota> : Menyimpan Informasi kuota perhitungan yang digunakan untuk mengontrol alokasi sumber daya.
+NEWQUOTA <IQuota>: Menyimpan Informasi kuota perhitungan yang digunakan untuk mengontrol alokasi sumber daya.
   - `[Location <String>]`: Lokasi sumber daya.
   - `[AvailabilitySetCount <Int32?>]`: Jumlah maksimum kumpulan ketersediaan yang diperbolehkan.
   - `[CoresLimit <Int32?>]`: Jumlah maksimum inti yang diperbolehkan.

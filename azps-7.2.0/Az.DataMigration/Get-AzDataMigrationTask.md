@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationTask.md
-ms.openlocfilehash: 0325182548618965dd08d4fbeadaf6d06cc37e23
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8f5d86f9d19d04b614a9e0c1fe1c9c9cf4012971
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138317116"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925539"
 ---
 # Get-AzDataMigrationTask
 
 ## SYNOPSIS
 Mengambil objek PSProjectTask yang terkait dengan tugas migrasi Layanan Migrasi Database Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationtask) untuk informasi terkini.
 
 ## SYNTAX
 

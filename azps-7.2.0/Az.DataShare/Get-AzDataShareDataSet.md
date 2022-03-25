@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareDataSet.md
-ms.openlocfilehash: 588820910e2eea4db31883bcee12d543610b307b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3bce59e4e8e2defff7436790b481103cd4dd388b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138312716"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925215"
 ---
 # Get-AzDataShareDataSet
 
 ## SYNOPSIS
 Mendapatkan informasi tentang Kumpulan Data dalam berbagi data Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/get-azdatasharedataset) untuk informasi terkini.
 
 ## SYNTAX
 

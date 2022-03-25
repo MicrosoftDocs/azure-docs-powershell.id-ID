@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdDesktop.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdDesktop.md
-ms.openlocfilehash: c850c1753939f9f0888f30145164953a3030483d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: d1480a0670bb4114a6bb5609edbace03d3a03ba4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138261404"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924783"
 ---
 # Get-AzWvdDesktop
 
 ## SYNOPSIS
 Dapatkan desktop.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvddesktop) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Dapatkan desktop.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi Windows Desktop Virtual berdasarkan nama
+### Contoh 1: Dapatkan aplikasi Windows Desktop Virtual menurut nama
 ```powershell
 PS C:\> Get-AzWvdDesktop -ResourceGroupName ResourceGroupName -ApplicationGroupName ApplicationGroupName -Name DesktopName
 

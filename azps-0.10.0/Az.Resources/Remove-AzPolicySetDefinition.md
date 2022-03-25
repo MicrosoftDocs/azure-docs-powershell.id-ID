@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.resources/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Remove-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Remove-AzPolicySetDefinition.md
-ms.openlocfilehash: 435006bba188d703cfeee64ecb258cf6c21e61d62a0c364906b5d6758fa093cf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 148f7b22a9df77532f574457da453e9e4b07a846
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414557"
 ---
 # Remove-AzPolicySetDefinition
@@ -55,7 +55,7 @@ PS C:\> $PolicySetDefinition = Get-AzPolicySetDefinition -ResourceId '/subscript
 PS C:\> Remove-AzPolicySetDefinition -Id $PolicySetDefinition.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan definisi kumpulan kebijakan menggunakan cmdlet Get-AzPolicySetDefinition.
+Perintah pertama mendapatkan definisi kumpulan kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition cmdlet.
 Perintah menyimpannya di $PolicySetDefinition variabel.
 Perintah kedua menghapus definisi kumpulan kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicySetDefinition.
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

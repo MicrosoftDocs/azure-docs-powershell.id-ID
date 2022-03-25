@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.digitaltwins/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
-ms.openlocfilehash: cb3f9f725d633d30b386eb3fa95e6570a31ee1fa
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 28afdebaa4390776e3e1ae887806aeb11c0679a4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138257708"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924315"
 ---
 # Get-AzDigitalTwinsInstance
 
 ## SYNOPSIS
 Dapatkan sumber daya DigitalTwinsInstances.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsinstance) untuk informasi terkini.
 
 ## SYNTAX
 

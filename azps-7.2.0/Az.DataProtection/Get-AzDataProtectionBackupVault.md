@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionBackupVault.md
-ms.openlocfilehash: 9fe4aaf355410d63ee3afe3346cbbe8d6c1d122f
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: c8165f1422cb9565ea7d0cc842209accf2843a6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138309276"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925377"
 ---
 # Get-AzDataProtectionBackupVault
 
 ## SYNOPSIS
 Mengembalikan kumpulan sumber daya milik grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionbackupvault) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.resources/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Update-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Update-AzADApplication.md
-ms.openlocfilehash: 9661671f876713a25f332cd9e06772597091d0597cdc403cd8fe709c267643ec
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8eb01ccfa16b1d3610468f98117ee650376d4b6c
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414853"
 ---
 # Update-AzADApplication
@@ -68,7 +68,7 @@ Memperbarui properti aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d9
 PS C:\> Get-AzADApplication -ObjectId fb7b3405-ca44-4b5b-8584-12392f5d96d7 | Update-AzADApplication -DisplayName MyNewDisplayName
 ```
 
-Dapatkan aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' dan pipa yang berada di cmdlet Update-AzADApplication untuk memperbarui nama tampilan aplikasi menjadi "MyNewDisplayName".
+Dapatkan aplikasi dengan id objek 'fb7b3405-ca44-4b5b-8584-12392f5d96d7' dan pipa yang ke cmdlet Update-AzADApplication untuk memperbarui nama tampilan aplikasi menjadi "MyNewDisplayName".
 
 ## PARAMETERS
 
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

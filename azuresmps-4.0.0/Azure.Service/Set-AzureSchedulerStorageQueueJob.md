@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 8D53014E-B32D-4A37-8C49-E7BA6217A228
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 9b24e24939db3360603bbfb4537eaa789a0a6ccdadd1a8923caafe789bbdbcde
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e23b092cc12e479e8a001a006c9bbebfb8845170
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414750"
 ---
 # Set-AzureSchedulerStorageQueueJob
@@ -39,7 +39,7 @@ Set-AzureSchedulerStorageQueueJob [-Interval <Int32>] [-Frequency <String>] [-En
 
 ## DESCRIPTION
 Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Set-AzureSchedulerStorageQueueJob** memperbarui pekerjaan penjadwal yang memiliki Azure Storage jadwal.
 
@@ -59,14 +59,14 @@ PS C:\> Set-AzureSchedulerStorageQueueJob -Location "North Central US" -JobColle
 ```
 
 Perintah ini memungkinkan pekerjaan bernama Pekerjaan16.
-Perintah mengubah status pekerjaan ke Diaktifkan dengan menentukan nilai tersebut untuk parameter *JobState.*
+Perintah mengubah status pekerjaan ke Diaktifkan dengan menentukan nilai tersebut untuk parameter *JobState* .
 
 ## PARAMETERS
 
 ### -EndTime
-Menentukan waktu, sebagai objek **DateTime,** bagi penjadwal untuk berhenti memulai pekerjaan.
-Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.**
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Menentukan waktu, sebagai objek **DateTime** , bagi penjadwal untuk berhenti memulai pekerjaan.
+Untuk mendapatkan **objek DateTime** , gunakan cmdlet **Get-Date** .
+Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
 
 ```yaml
 Type: DateTime
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ErrorActionQueueMessageMessageMessage
-Menentukan badan untuk tindakan Storage pekerjaan Anda.
+Menentukan badan untuk tindakan Storage pekerjaan.
 
 ```yaml
 Type: String
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval pengulangan pada frekuensi yang ditentukan dengan menggunakan parameter *Frequency.*
+Menentukan interval pengulangan pada frekuensi yang ditentukan dengan menggunakan parameter *Frequency* .
 
 ```yaml
 Type: Int32
@@ -374,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu, sebagai objek **DateTime,** agar pekerjaan dimulai.
+Menentukan waktu, sebagai objek **DateTime** , agar pekerjaan dimulai.
 
 ```yaml
 Type: DateTime
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageQueueAccount
-Menentukan nama Storage akun.
+Menentukan Storage akun.
 
 ```yaml
 Type: String
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

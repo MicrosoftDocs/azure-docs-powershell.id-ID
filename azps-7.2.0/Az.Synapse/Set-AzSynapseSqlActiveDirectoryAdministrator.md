@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
-ms.openlocfilehash: 01cfb92889e76002685e62b09a491cd42c2bc447
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 8b1acc5349fab427d36ad8c755e20a96ad55b26c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138268395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081297"
 ---
 # Set-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
 Menyediakan administrator Azure AD untuk Analitik Synapse SQL terku secara gratis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlactivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau grup di Azure Active Directory yang akan diberi izin.
+Menentukan ID objek pengguna atau grup di Azure Active Directory yang memberikan izin.
 
 ```yaml
 Type: System.Guid

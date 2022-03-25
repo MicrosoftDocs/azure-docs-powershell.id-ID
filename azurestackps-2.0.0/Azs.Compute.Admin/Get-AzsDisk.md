@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/get-azsdisk
 schema: 2.0.0
-ms.openlocfilehash: e618683081357121c46a7674553f424702c912d1d7abd50ab3f8779579923f79
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9c3c87e7c62764cff0a7d6b9d65a3dfe3df31990
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414625"
 ---
 # Get-AzsDisk
@@ -123,7 +123,7 @@ UserResourceId  : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGr
                   e/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489
 ```
 
-Gunakan `Count` parameter untuk mengambil jumlah disk tertentu.
+`Count` Gunakan parameter untuk mengambil jumlah disk tertentu.
 
 ### Contoh 4: Dapatkan semua disk di lokasi tertentu
 ```powershell
@@ -172,7 +172,7 @@ Type            : Microsoft.Compute.Admin/locations/disks
 UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/RBACTEST/providers/Microsoft.Compute/Disks/testdd
 ```
 
-Menggunakan `ScaleUnit` parameter `VolumeLabel` atau untuk mencantumkan semua disk di lokasi tertentu
+Menggunakan parameter `ScaleUnit` atau `VolumeLabel` untuk mencantumkan semua disk di lokasi tertentu
 
 ## PARAMETERS
 
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -386,7 +386,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IComputeAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IComputeAdminIdentity>: Parameter Identitas
   - `[DiskId <String>]`: Disk guid sebagai identitas.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.

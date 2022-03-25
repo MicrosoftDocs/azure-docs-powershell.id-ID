@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 70899AAC-BF64-4FFA-9DAF-92E859D0B271
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 79bbee184abd9dc98e9448aa6159813efe391296a722a5f7c2b5648ee3aa559a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f78768e805b66fa2b020946426e36ce1cee434fb
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414738"
 ---
 # Set-AzureVNetGateway
@@ -34,7 +34,7 @@ Set-AzureVNetGateway [-Disconnect] -VNetName <String> -LocalNetworkSiteName <Str
 ## DESCRIPTION
 Cmdlet **Set-AzureVNetGateway** mengaktifkan atau menonaktifkan gateway jaringan privat virtual (VPN) untuk jaringan virtual Azure.
 Gateway jaringan virtual adalah titik akhir VPN untuk menyambungkan ke jaringan virtual.
-Tentukan *parameter Koneksi* *atau Putuskan* parameter untuk mengaktifkan atau menonaktifkan koneksi VPN antara situs jaringan lokal lokal dan jaringan virtual.
+Tentukan *parameter Koneksi* *atau Putuskan* koneksi untuk mengaktifkan atau menonaktifkan koneksi VPN antara situs jaringan lokal lokal dan jaringan virtual.
 
 ## EXAMPLES
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

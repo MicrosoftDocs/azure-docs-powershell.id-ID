@@ -3,11 +3,11 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: B8E4F6BD-FBF2-4B19-AA61-02149F933ABB
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 4b465e6a3f6c9e0897445cd5f7f56b1b5ed66c2a3d6a8b2abc5e60a50804ecb3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ff7c5afb7c82e1af5ef54cea5e822f6c89b28585
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414489"
 ---
 # Remove-AzureAutomationAccount
@@ -28,7 +28,7 @@ Remove-AzureAutomationAccount -Name <String> [-Force] [-Profile <AzureSMProfile>
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Remove-AzureAutomationAccount** menghapus akun dari layanan Microsoft Azure Otomatisasi.
+Cmdlet **Remove-AzureAutomationAccount** menghapus akun dari Microsoft Azure Automation.
 
 ## EXAMPLES
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

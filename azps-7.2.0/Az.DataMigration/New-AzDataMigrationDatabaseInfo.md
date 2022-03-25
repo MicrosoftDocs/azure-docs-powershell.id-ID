@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationDatabaseInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationDatabaseInfo.md
-ms.openlocfilehash: d9f0c9e5b083a66f2b9f4a498ded9508b943eb7d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f1ad81ccb7081cff648bd36751398b5705e76722
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138304860"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925521"
 ---
 # New-AzDataMigrationDatabaseInfo
 
 ## SYNOPSIS
 Membuat objek DatabaseInfo untuk Layanan Migrasi Database Azure, yang menentukan sumber database untuk migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationdatabaseinfo) untuk informasi terkini.
 
 ## SYNTAX
 

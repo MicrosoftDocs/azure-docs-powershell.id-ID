@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 956B60BE-D978-4682-BA11-4EE9296B77B4
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 843e10906c4201e9dbb6ebb0802bfd4f9fdbf7907cdec4873eebeff207e94103
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0375f9f402a8edb99c8799a26428ce8e85cfd0f9
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414491"
 ---
 # Publish-AzureVMDscConfiguration
@@ -37,7 +37,7 @@ Publish-AzureVMDscConfiguration [-ConfigurationPath] <String> [-Force] [-Configu
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzureVMDscConfiguration** menerbitkan skrip konfigurasi status yang diinginkan ke penyimpanan blob Azure, yang nantinya dapat diterapkan ke komputer virtual Azure menggunakan cmdlet **Set-AzureVMDscExtension.**
+Cmdlet **Publish-AzureVMDscConfiguration** menerbitkan skrip konfigurasi status yang diinginkan ke penyimpanan blob Azure, yang nantinya dapat diterapkan ke komputer virtual Azure menggunakan cmdlet **Set-AzureVMDscExtension** .
 
 ## EXAMPLES
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationArchivePath
-Menentukan jalur file file .zip lokal yang ditulis cmdlet pada arsip konfigurasi.
+Menentukan jalur file .zip lokal yang ditulis cmdlet ini sebagai arsip konfigurasi.
 Skrip konfigurasi tidak diunggah ke penyimpanan blob Azure jika Anda menggunakan parameter ini.
 
 ```yaml
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContext
-Menentukan konteks penyimpanan Azure yang menyediakan pengaturan keamanan yang digunakan untuk mengunggah skrip konfigurasi ke wadah yang ditentukan oleh parameter *ContainerName.*
+Menentukan konteks penyimpanan Azure yang menyediakan pengaturan keamanan yang digunakan untuk mengunggah skrip konfigurasi ke wadah yang ditentukan oleh parameter *ContainerName* .
 Konteks ini menyediakan akses tulis ke wadah tersebut.
 
 ```yaml
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

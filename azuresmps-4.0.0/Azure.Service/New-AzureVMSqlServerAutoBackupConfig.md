@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 55E097F4-1F49-4196-9A8B-949FD5D9108A
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 1daef4e49fccbf52c0b8a3942e80f6317d26fcb6c36cf65a4e9601c092ef795d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 05fce55fa1e4fb9e69630666433b61f5df367a1c
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414794"
 ---
 # New-AzureVMSqlServerAutoBackupConfig
@@ -73,7 +73,7 @@ RetentionPeriodInDays : 10
 ```
 
 Perintah ini akan membuat objek konfigurasi pencadangan otomatis dengan menentukan Storage konteks dan mengaktifkan opsi enkripsi dengan kata sandi.
-Sertifikatkata sandi disimpan dalam variabel yang bernama $CertPasswd.
+Sertifikatkata sandi disimpan di variabel yang bernama $CertPasswd.
 
 ## PARAMETERS
 
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
