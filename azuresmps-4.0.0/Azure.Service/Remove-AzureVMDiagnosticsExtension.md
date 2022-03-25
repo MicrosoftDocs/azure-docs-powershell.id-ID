@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: A513B7CA-182E-46A2-8181-020C5DFC7DE9
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 9f99410d1e3d5fcb6b090c8bbb60d0fc565bc3566624c795af9aadbfee12b353
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 758025d6f452f1578cf0c3a9bd0bb9e479002446
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414773"
 ---
 # Remove-AzureVMDiagnosticsExtension
@@ -26,7 +26,7 @@ Remove-AzureVMDiagnosticsExtension -VM <IPersistentVM> [-Profile <AzureSMProfile
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureVMDiagnosticsExtension** menghapus Microsoft Azure Diagnostik dari komputer virtual.
-Anda harus menyampaikan output cmdlet ini ke cmdlet **Update-AzureVM.**
+Anda harus menyampaikan output cmdlet ini ke cmdlet **Update-AzureVM** .
 
 ## EXAMPLES
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

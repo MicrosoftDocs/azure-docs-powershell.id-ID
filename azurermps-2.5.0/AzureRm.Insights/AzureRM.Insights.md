@@ -4,11 +4,11 @@ Module Guid: 698c387c-bd6b-41c6-82ce-721f1ef39548
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights
 Help Version: 4.0.4.0
 Locale: en-US
-ms.openlocfilehash: fa0641d7f57796f94169a95b83c31592aed202568f5e9c1f189c5fdfbf74e214
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9c086c630ab670afd093299bbd884d99aa318826
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414541"
 ---
 # AzureRM. Insights Module

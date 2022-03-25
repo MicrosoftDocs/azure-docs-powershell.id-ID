@@ -3,11 +3,11 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: AE74024A-A12A-4EC4-AF6C-62F921EA2532
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 2c0f501b8673479346e9ddc9ad8fcaa1fe58e11a3f3074129e9eb3549f7bcb14
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b40cfd625296297340d7b07da84bc4c81c64b7dc
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414762"
 ---
 # Set-AzureAutomationCertificate
@@ -30,7 +30,7 @@ Set-AzureAutomationCertificate -Name <String> [-Description <String>] [-Password
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Set-AzureAutomationCertificate** mengubah konfigurasi sertifikat dalam proses Microsoft Azure Otomatisasi.
+Cmdlet **Set-AzureAutomationCertificate** memodifikasi konfigurasi sertifikat dalam proses Microsoft Azure Otomatisasi.
 
 ## EXAMPLES
 
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

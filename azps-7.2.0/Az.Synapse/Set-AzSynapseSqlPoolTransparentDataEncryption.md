@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolTransparentDataEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolTransparentDataEncryption.md
-ms.openlocfilehash: 39988023669a64a3c9edd0b22a88e5c75b53a10b
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b29f4040504b89fde1cc8af05c1d4a798b89b865
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138264395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081243"
 ---
 # Set-AzSynapseSqlPoolTransparentDataEncryption
 
 ## SYNOPSIS
 Mengubah properti TDE untuk satu SQL lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpooltransparentdataencryption) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Set-AzSynapseSqlPoolTransparentDataEncryption -ResourceId <String> -State <Trans
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlPoolTransparentDataEncryption** mengubah properti Transparent Data Encryption (TDE) dari kumpulan SQL Analitik Azure Synapse.
+Cmdlet **Set-AzSynapseSqlPoolTransparentDataEncryption** mengubah properti Transparent Data Encryption (TDE) dari kumpulan SQL Azure Synapse.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Cmdlet **Set-AzSynapseSqlPoolTransparentDataEncryption** mengubah properti Trans
 PS C:\> Set-AzSynapseSqlPoolTransparentDataEncryption -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -State Enabled
 ```
 
-Perintah ini mengaktifkan TDE untuk SQL bernama ContosoSqlPool di bawah ruang kerja bernama ContosoWorkspace.
+Perintah ini mengaktifkan TDE untuk SQL bernama ContosoSqlPool di bawah ruang kerja yang bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama grup Synapse SQL baru.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTagCriteriaClientObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionPolicyTagCriteriaClientObject.md
-ms.openlocfilehash: a8d06397c2208b462897f474da96a0dfa2cfce11
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f619c281caa8a46aa68776af977622b29508f29b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138256859"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139925251"
 ---
 # New-AzDataProtectionPolicyTagCriteriaClientObject
 
 ## SYNOPSIS
 Membuat objek kriteria baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionpolicytagcriteriaclientobject) untuk informasi terkini.
 
 ## SYNTAX
 

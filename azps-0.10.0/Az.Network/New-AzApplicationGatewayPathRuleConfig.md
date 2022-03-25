@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.network/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/New-AzApplicationGatewayPathRuleConfig.md
-ms.openlocfilehash: b7acbc486e72a5c5d3dbdcc3b7423a8e541b2cd789449b09201beb6f37e206e8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b6722412717d0ef087c2540ff49d3d7a5b87913c
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414573"
 ---
 # New-AzApplicationGatewayPathRuleConfig
@@ -76,7 +76,7 @@ Anda dapat membuat referensi objek ini menggunakan cmdlet New-AzApplicationGatew
 Perintah sebelumnya menambahkan dua alamat IP (192.16.1.1 dan 192.168.1.2) ke pool alamat.
 Perhatikan bahwa alamat IP dimasukkan di dalam tanda petik dan dipisahkan dengan menggunakan koma.
 
-Variabel yang dihasilkan, $AddressPool, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool.*
+Variabel yang dihasilkan, $AddressPool, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool* .
 
 The backend address pool represents the IP addresses on the backend servers.
 Alamat IP ini harus termasuk dalam subnet jaringan virtual atau harus merupakan alamat IP publik.
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ### -BackendAddressPoolId
 Menentukan ID sebuah pool alamat backend yang sudah ada yang bisa ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
 ADDRESS pool IDs can be returned by using the Get-AzApplicationGatewayBackendAddressPool cmdlet.
-Setelah Mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendAddressPoolId* dan bukan parameter *DefaultBackendAddressPool.*
+Setelah Mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendAddressPoolId* dan bukan parameter *DefaultBackendAddressPool* .
 Misalnya:
 
 -DefaultBackendAddressPoolId "/subscriptions/39c54063-01d3-4abf-8f4c-234777bc1f10/resourceGroups/appgw-rg/providers/Microsoft.Network/applicationGateway/appgwtest/backendAddressPools/ContosoAddressPool"
@@ -123,7 +123,7 @@ Anda dapat membuat referensi objek ini menggunakan cmdlet New-AzApplicationGatew
 
 $HttpSettings = New-AzApplicationGatewayBackendHttpSetting -Name "ContosoHttpSetings" -Port 80 -Protocol "Http" -CookieBasedAffinity "Disabled"
 
-Variabel yang dihasilkan, $HttpSettings, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool:*
+Variabel yang dihasilkan, $HttpSettings, lalu bisa digunakan sebagai nilai parameter untuk parameter *DefaultBackendAddressPool* :
 
 -DefaultBackendHttpSettings $HttpSettings
 
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 
 ### -BackendHttpSettingsId
 Menentukan ID kumpulan pengaturan backend HTTP yang sudah ada yang bisa ditambahkan ke pengaturan konfigurasi aturan jalur gateway.
-ID pengaturan HTTP dapat dikembalikan menggunakan cmdlet Get-AzApplicationGatewayBackendHttpSetting baru.
-Setelah mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendHttpSettingsId* dan bukan parameter *DefaultBackendHttpSettings.*
+ID pengaturan HTTP bisa dikembalikan dengan menggunakan cmdlet Get-AzApplicationGatewayBackendHttpSetting.
+Setelah mendapatkan ID, Anda kemudian dapat menggunakan parameter *DefaultBackendHttpSettingsId* dan bukan parameter *DefaultBackendHttpSettings* .
 Misalnya:
 
 -DefaultBackendSettings Id "/subscriptions/39c54063-01d3-4abf-8f4c-234777bc1f10/resourceGroups/appgw-rg/providers/Microsoft.Network/applicationGateway/appgwtest/backendHttpSettingsCollection/ContosoHttpSettings"
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -251,7 +251,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## OUTPUTS
 
 ###  
-**New-AzApplicationGatewayPathRuleConfig** membuat contoh baru objek **Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPathRule.**
+**New-AzApplicationGatewayPathRuleConfig** membuat contoh baru objek **Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayPathRule** .
 
 ## CATATAN
 

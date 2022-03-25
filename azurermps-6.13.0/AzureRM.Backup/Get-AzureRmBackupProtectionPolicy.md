@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.backu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupProtectionPolicy.md
-ms.openlocfilehash: f627d0b66f46d54c571f52061e5dda17e6e2e1c138a4bfd732af8a79a41873a9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e3e4858e3cb4f3c54c502ac14fb2c5d8e3ba0c63
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414688"
 ---
 # Get-AzureRmBackupProtectionPolicy
@@ -45,9 +45,9 @@ WeeklyBkp                 AzureVM            Weekly             26-Aug-15 5:00:0
 contoso02                 AzureVM            Daily              26-Aug-15 3:00:00 PM
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
+Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
 Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan semua Kebijakan perlindungan cadangan untuk vault di $Vault.
+Perintah kedua mendapatkan semua Kebijakan proteksi cadangan untuk vault di $Vault.
 
 ### Contoh 2: Mendapatkan kebijakan tertentu dari vault
 ```
@@ -58,9 +58,9 @@ Name                      Type               ScheduleType       BackupTime
 DefaultPolicy             AzureVM            Daily              26-Aug-15 12:30:00 AM
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
+Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
 Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan kebijakan Proteksi cadangan yang bernama DefaultPolicy untuk penyimpanan di $Vault.
+Perintah kedua mendapatkan Kebijakan proteksi cadangan bernama DefaultPolicy untuk penyimpanan di $Vault.
 
 ## PARAMETERS
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -Vault
 Menentukan penyimpanan Cadangan tempat cmdlet ini mendapatkan kebijakan.
-Untuk mendapatkan objek **AzureRmBackupVault,** gunakan cmdlet Get-AzureRmBackupVault cmdlet.
+Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

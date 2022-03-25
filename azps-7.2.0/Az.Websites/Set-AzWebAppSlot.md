@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebAppSlot.md
-ms.openlocfilehash: 9ccaad7a2af3a520fb299878d057f6f85c72c2ed
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ec56f11e7e154fd9210a2c5e6cd6da674c0b2859
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138296267"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080667"
 ---
 # Set-AzWebAppSlot
 
 ## SYNOPSIS
 Mengubah slot Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/set-azwebappslot) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Aplikasi Pengaturan HashTable. Aplikasi yang sudah Pengaturan akan diganti, dan menghapus semua pengaturan yang tidak disediakan.
+Aplikasi Pengaturan HashTable. Aplikasi yang sudah Pengaturan Anda ganti, menghapus pengaturan apa pun yang tidak disediakan.
 
 ```yaml
 Type: System.Collections.Hashtable
