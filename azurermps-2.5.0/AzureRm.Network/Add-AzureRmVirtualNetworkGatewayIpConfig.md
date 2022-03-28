@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 ms.assetid: BCB64535-FF37-46EF-85AF-7286BB67787B
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermvirtualnetworkgatewayipconfig
 schema: 2.0.0
-ms.openlocfilehash: 03d27ec3ba029fec5a3802c2150ba5ed058f9a2592c5b767d9b9bfddf977f899
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 340baa4b7a7d0afaf0e0523cb8c2f14f8270bf7c
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414533"
 ---
 # Add-AzureRmVirtualNetworkGatewayIpConfig
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **PSSubnet.**
+Menentukan objek **PSSubnet** .
 
 ```yaml
 Type: PSSubnet
@@ -152,9 +152,9 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGateway
-Menentukan objek **PSVirtualNetworkGateway.**
+Menentukan objek **PSVirtualNetworkGateway** .
 Cmdlet ini memodifikasi objek **PSVirtualNetworkGateway** yang Anda tentukan.
-Anda bisa menggunakan cmdlet Get-AzureRmVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway.**
+Anda bisa menggunakan cmdlet Get-AzureRmVirtualNetworkGateway untuk mengambil objek **PSVirtualNetworkGateway** .
 
 ```yaml
 Type: PSVirtualNetworkGateway
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

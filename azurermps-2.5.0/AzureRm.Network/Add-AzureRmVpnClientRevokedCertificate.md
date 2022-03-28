@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 ms.assetid: 90FB7B88-844E-4783-A10F-04D7BA47C030
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermvpnclientrevokedcertificate
 schema: 2.0.0
-ms.openlocfilehash: 59cc596ea2e68ac5ef7f9b07e3947ded1f9a5e67f0b60b739e1759289f63bb53
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e2a2153ca9d75447603ce87c896720ece0f83a18
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415047"
 ---
 # Add-AzureRmVpnClientRevokedCertificate
@@ -81,7 +81,7 @@ Misalnya:
 
 -Thumbprint "E3A38EBA60CAA1C162785A2E1C44A15AD450199C3"
 
-Anda bisa mendapatkan informasi yang dapat dicetak dengan jempol untuk sertifikat Anda menggunakan Windows PowerShell seperti ini: `Get-ChildItem -Path Cert:\LocalMachine\Root` .
+Anda bisa mendapatkan informasi yang dapat dicetak dengan jempol untuk sertifikat Anda menggunakan Windows PowerShell seperti ini: `Get-ChildItem -Path Cert:\LocalMachine\Root`.
 
 Perintah sebelumnya mendapatkan informasi untuk semua sertifikat komputer lokal yang ditemukan di penyimpanan sertifikat akar.
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: 64493247f6915fc56f2b88a6778e8c1e194caebc
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: ff17942d51d9daa047486358d6d65d0cabe9b6b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167885"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140051753"
 ---
 # Set-AzApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
 Mengubah konfigurasi koneksi dari objek pengaturan HTTP ujung-belakang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewayconnectiondraining) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> Set-AzApplicationGatewayConnectionDraining -BackendHttpSettings $poolSet
 ```
 
 Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan pengaturan HTTP ujung belakang yang bernama Settings01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan tersebut.
+Perintah kedua mendapatkan pengaturan HTTP ujung belakang yang bernama Settings01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan .
 Perintah terakhir mengubah konfigurasi koneksi menghabiskan koneksi dari objek pengaturan HTTP ujung belakang yang disimpan di $Pengaturan dengan mengatur Diaktifkan ke False dan DrainTimeoutInSec ke 3600.
 
 ## PARAMETERS

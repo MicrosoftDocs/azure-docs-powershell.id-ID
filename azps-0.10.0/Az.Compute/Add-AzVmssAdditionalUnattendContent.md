@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzVmssAdditionalUnattendContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzVmssAdditionalUnattendContent.md
-ms.openlocfilehash: 6104c5d54c270035a27c827291996ae6a5d4a3f50e7ed1c236310459a1d1f946
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 38f510602259ca799c6df947b9d74984dff178ba
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414723"
 ---
 # Add-AzVmssAdditionalUnattendContent
@@ -27,7 +27,7 @@ Add-AzVmssAdditionalUnattendContent [-VirtualMachineScaleSet] <PSVirtualMachineS
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Setup tanpa pengawasan.
+Cmdlet **Add-AzVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Setup tanpa Windows.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Add-AzVmssAdditionalUnattendContent** menambahkan informasi ke file jaw
 PS C:\> Add-AzVmssAdditionalUnattendContent -VirtualMachineScaleSet $VMSS -ComponentName  $AUCComponentName -Content  $AUCContent -PassName $AUCPassName -SettingName  $AUCSetting
 ```
 
-Perintah ini menambahkan informasi ke file Windows jawaban Penyetelan tanpa Windows.
+Perintah ini menambahkan informasi ke file jawaban Windows tanpa Windows.
 
 ## PARAMETERS
 
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

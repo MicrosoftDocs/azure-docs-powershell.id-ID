@@ -6,11 +6,11 @@ Help Version: 0.4.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/AzureRM.MachineLearningCompute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearningCompute/Commands.MachineLearningCompute/help/AzureRM.MachineLearningCompute.md
-ms.openlocfilehash: fd6fc99cba2f6b924ad7b5cf6834ce146ba337243b899001c12286a1cd7426f2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 86f7c8b685ad6811f65993a7c72d42c53cd57131
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414809"
 ---
 # AzureRM.MachineLearningCompute Module

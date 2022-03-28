@@ -6,11 +6,11 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: 3514a19ebe9cc2b2a4ea401f76a1416877afba6295a00f1be83886c42dbe7397
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: cf5aa7e64610f90dd50fe24edd289071a08baeec
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415043"
 ---
 # AzureRM.Network Module

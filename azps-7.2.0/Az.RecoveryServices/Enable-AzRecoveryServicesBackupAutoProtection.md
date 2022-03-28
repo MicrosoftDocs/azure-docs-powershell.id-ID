@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
-ms.openlocfilehash: ede10313ba152785466e894e83775e60280a18d3
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 47af2e58fae6a8abea4921f3c449ff46fc24632b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290748"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140050997"
 ---
 # Enable-AzRecoveryServicesBackupAutoProtection
 
 ## SYNOPSIS
-Cmdlet **Enable-AzRecoveryServicesBackupAutoProtection** mengatur proteksi otomatis atas DB saat ini dan masa SQL yang akan datang dalam instans tertentu dengan kebijakan yang disediakan.
+Cmdlet **Enable-AzRecoveryServicesBackupAutoProtection** mengatur proteksi otomatis atas DB saat ini dan masa SQL mendatang dalam instans tertentu dengan kebijakan yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupautoprotection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Enable-AzRecoveryServicesBackupAutoProtection [-InputItem] <ProtectableItemBase>
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan pengguna untuk secara otomatis memproteksi semua DB tidak SQL proteksi yang ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan yang diberikan.  Karena instruksi tersebut adalah untuk mencadangkan semua DB yang akan datang, operasi dilakukan pada tingkat SQLInstance, layanan pencadangan Azure akan secara rutin memindai wadah yang diproteksi otomatis untuk semua DB baru dan secara otomatis memproteksinya.
+Perintah ini memungkinkan pengguna untuk secara otomatis memproteksi semua DB SQL tidak terproteksi yang ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan yang diberikan.  Karena instruksi tersebut adalah untuk mencadangkan semua DB yang akan datang, operasi dilakukan pada tingkat SQLInstance, layanan pencadangan Azure akan secara rutin memindai wadah yang diproteksi otomatis untuk semua DB baru dan secara otomatis memproteksinya.
 
 ## EXAMPLES
 

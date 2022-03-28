@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/set-azsofferdelegation
 schema: 2.0.0
-ms.openlocfilehash: f23999655398146b7ae94c2ba1cc275f1e8fdd7cdc423cbe3668cc26026c3d86
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 59afc363d040724bbd525afc6e1f599a995cfdcb
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415145"
 ---
 # Set-AzsOfferDelegation
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -226,7 +226,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-OFFERDELEGATIONDEFINITION <IOfferDelegation> : Delegasi penawaran.
+OFFERDELEGATIONDEFINITION <IOfferDelegation>: Delegasi penawaran.
   - `[Location <String>]`: Lokasi sumber daya
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan yang menerima penawaran yang didelegasikan.
 

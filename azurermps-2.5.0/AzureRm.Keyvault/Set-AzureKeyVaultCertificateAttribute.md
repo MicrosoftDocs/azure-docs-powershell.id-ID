@@ -4,11 +4,11 @@ Module Name: AzureRM.KeyVault
 ms.assetid: 3BD243C7-A40E-4061-93FF-DDE7DECAD0A7
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/set-azurekeyvaultcertificateattribute
 schema: 2.0.0
-ms.openlocfilehash: e0085d27677e0e1e9a4e5b5021deac1aadd94300f5bb1471e815798a382d384c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9f7c08f42026c6cc5d321ae78687a903c8393904
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415061"
 ---
 # Set-AzureKeyVaultCertificateAttribute
@@ -69,7 +69,7 @@ Perintah pertama menetapkan pasangan kunci/nilai array ke $Tags nilai.
 
 Perintah kedua mengatur nilai tag sertifikat bernama TestCert01 yang $Tags.
 
-Perintah terakhir menampilkan sertifikat TestCert01 dengan menggunakan cmdlet Get-AzureKeyVaultCertificate untuk memverifikasi operasi.
+Perintah final menampilkan sertifikat TestCert01 dengan menggunakan cmdlet Get-AzureKeyVaultCertificate untuk memverifikasi operasi.
 
 ## PARAMETERS
 
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

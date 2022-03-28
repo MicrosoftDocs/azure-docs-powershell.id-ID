@@ -6,16 +6,16 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/AzureRM.DataLakeStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/AzureRM.DataLakeStore.md
-ms.openlocfilehash: b3a9238055c3d600f62f0ab5df9bb579b4cd4e984f7dcdeea84045e9fcba1596
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 26a97d9f41ed7d0acb4e80a3302b22c8b2fab1c1
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414969"
 ---
 # Modul AzureRM.DataLakeStore
 ## Deskripsi
-Topik dalam bagian ini mendokumentasikan Azure PowerShell cmdlet untuk Azure Data Lake Store dalam kerangka kerja Azure Resource Manager (ARM). Cmdlets ada di ruang nama Microsoft.Azure.Commands.DataLakeStore. Cmdlets ini hanya berfungsi dengan akun Azure Data Lake Storage Gen1.
+Topik dalam bagian ini mendokumentasikan Azure PowerShell cmdlet untuk Azure Data Lake Store dalam kerangka kerja Azure Resource Manager (ARM). Cmdlets ada di ruang nama Microsoft.Azure.Commands.DataLakeStore. Cmdlet ini hanya berfungsi dengan akun Azure Data Lake Storage Gen1.
 
 ## Cmdlet AzureRM.DataLakeStore
 ### [Add-AzureRmDataLakeStoreFirewallRule](Add-AzureRmDataLakeStoreFirewallRule.md)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssSecret.md
-ms.openlocfilehash: 2cc2fcd5c836af99f8df90424eda208eb39ac0f8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a1a868a33b954f58a86190d51b7aa058d8628a79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391101"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139978575"
 ---
 # Add-AzVmssSecret
 
 ## SYNOPSIS
 Menambahkan rahasia pada VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmsssecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Add-AzVmssSecret [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-SourceV
 Cmdlet **Add-AzVmssSecret** menambahkan rahasia pada Virtual Machine Scale Set (VMSS).
 Rahasia harus disimpan di Key Vault Azure.
 Untuk informasi selengkapnya tentang Key Vault, lihat [Apa itu Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/general/basic-concepts) (https://docs.microsoft.com/azure/key-vault/general/basic-concepts).
-Untuk informasi selengkapnya tentang cmdlet, lihat [Cmdlet Azure Key Vault atau](/powershell/module/az.keyvault) cmdlet [Set-AzKeyVaultSecret.](/powershell/module/az.keyvault/set-azkeyvaultsecret)
+Untuk informasi selengkapnya tentang cmdlet, lihat [Cmdlet Azure Key Vault atau](/powershell/module/az.keyvault) cmdlet [Set-AzKeyVaultSecret](/powershell/module/az.keyvault/set-azkeyvaultsecret) .
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ PS C:\> Add-AzVmssExtension -VirtualMachineScaleSet $vmss  -Name $extName -Publi
 PS C:\> Update-AzVmss -ResourceGroupName <ResourceGroupName> -VMScaleSetName <VmssName> -VirtualMachineScaleSet $vmss
 ```
 
-Untuk menginstal sertifikat di mesin virtual, disarankan untuk menggunakan ekstensi mesin [virtual Azure Key Vault](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-linux) untuk Linux atau ekstensi mesin virtual Azure Key Vault untuk [Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-windows). 
+Untuk menginstal sertifikat di mesin virtual, disarankan untuk menggunakan ekstensi mesin [virtual Azure Key Vault untuk Linux](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-linux) atau ekstensi mesin [virtual Azure Key Vault untuk Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-windows). 
 
 ### Contoh 2: Add a secret to the VMSS using Add-AzVmssSecret
 ```powershell
@@ -67,10 +70,10 @@ PS C:\> Add-AzVmssSecret -VirtualMachineScaleSet $VMSS -SourceVaultId $Vault.Res
 ```
 
 Contoh ini menambahkan rahasia VMSS.
-Perintah pertama menggunakan cmdlet Get-AzKeyVault cmdlet untuk mendapatkan rahasia vault dari vault bernama ContosoVault dan menyimpan hasilnya dalam variabel yang bernama $Vault.
+Perintah pertama menggunakan cmdlet Get-AzKeyVault untuk rahasia penyimpanan dari vault bernama ContosoVault dan menyimpan hasilnya dalam variabel yang bernama $Vault.
 Perintah kedua menggunakan cmdlet **New-AzVmssVaultCertificateConfig** untuk membuat konfigurasi sertifikat Key Vault menggunakan URL sertifikat yang ditentukan dari penyimpanan sertifikat bernama Sertifikat dan menyimpan hasilnya dalam variabel yang bernama $CertConfig.
 Perintah ketiga menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel yang bernama $VMSS.
-Perintah keempat menambahkan rahasia VMSS menggunakan rahasia vault menggunakan ID sumber daya kunci dan sertifikat vault yang disimpan di $Vault $CertConfig terbatas.
+Perintah keempat menambahkan rahasia VMSS menggunakan rahasia vault menggunakan ID sumber daya kunci dan sertifikat vault yang disimpan di variabel $Vault $CertConfig besar.
 
 ## PARAMETERS
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultCertificate
-Menentukan objek **Sertifikat** Vault yang berisi URL sertifikat dan nama sertifikat.
+Menentukan **objek Sertifikat Vault** yang berisi URL sertifikat dan nama sertifikat.
 Anda dapat menggunakan cmdlet [New-AzVmssVaultCertificateConfig](./New-AzVmssVaultCertificateConfig.md) untuk membuat objek ini.
 
 ```yaml
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

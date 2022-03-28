@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.InfrastructureInsights.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.infrastructureinsights.admin/get-azsregionhealth
 schema: 2.0.0
-ms.openlocfilehash: 8f9f41579920193a8d3581ec252f15047757070c9406b547b653622b7cb29ad8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6f5fa25f1b35ac03d27688eced71919cb409d1cb
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414933"
 ---
 # Get-AzsRegionHealth
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -163,7 +163,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IInfrastructureInsightsAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IInfrastructureInsightsAdminIdentity>: Parameter Identitas
   - `[AlertName <String>]`: Nama pemberitahuan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan

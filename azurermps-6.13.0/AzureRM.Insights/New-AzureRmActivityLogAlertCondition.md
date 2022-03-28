@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmActivityLogAlertCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmActivityLogAlertCondition.md
-ms.openlocfilehash: df12bdc6c3b0ce76fa7fe955b0bd0870ce128fcde4d2f5b24a2cc23e99795373
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3904be513baf73c67c2dbd0018ae6b3e7e2226fd
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414954"
 ---
 # New-AzureRmActivityLogAlertCondition
@@ -38,7 +38,7 @@ PS C:\>$condition = New-AzureRmActivityLogAlertCondition -Field "Requests" -Equa
 ```
 
 Perintah ini akan membuat objek kondisi peringatan log aktivitas baru dalam memori.
-**CATATAN:** jika cmdlet ini digunakan dengan Set-AzureRmActivityLogAlert setidaknya salah satu objek ini, yang diberikan sebagai parameter, Bidang harus sama dengan "Kategori". Jika tidak, backend merespons dengan 400 (BadRequest.)
+**CATATAN**: ketika cmdlet ini digunakan dengan Set-AzureRmActivityLogAlert setidaknya salah satu objek ini, yang diberikan sebagai parameter, harus memiliki Bidang yang sama dengan "Kategori". Jika tidak, backend merespons dengan 400 (BadRequest.)
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

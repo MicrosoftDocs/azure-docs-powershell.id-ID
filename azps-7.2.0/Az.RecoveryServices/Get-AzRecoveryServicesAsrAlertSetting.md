@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrAlertSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrAlertSetting.md
-ms.openlocfilehash: 548adb95228f819059fca28fbd7a0af6574e621e
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: f2312ea0742653463fe58d8fd7d207c695602a7f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138315563"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140051016"
 ---
 # Get-AzRecoveryServicesAsrAlertSetting
 
 ## SYNOPSIS
 Dapatkan pengaturan pemberitahuan Pemulihan Situs Azure yang dikonfigurasi untuk vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasralertsetting) untuk informasi terkini.
 
 ## SYNTAX
 

@@ -1,12 +1,12 @@
 ---
-title: Bus Layanan penghentian ini
+title: Bus Layanan pemberitahuan penghentian ini
 ms.date: 05/25/2020
 ms.topic: include
 ms.openlocfilehash: d09e0e1abc3703d864a4a8d66e3403353cfdf1be
-ms.sourcegitcommit: 4923e9aff9d7df92739aa2076a6d9180408ff910
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/13/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132419480"
 ---
 > [!IMPORTANT]

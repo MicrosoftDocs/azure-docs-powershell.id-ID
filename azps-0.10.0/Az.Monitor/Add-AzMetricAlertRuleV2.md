@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Add-AzMetricAlertRuleV2.md
-ms.openlocfilehash: 122591cb9c6a6bfb52c089899474ae3eb063cbede62a729445031c109bdad11e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3c0178ebae2237730d7f0d11eb832a30988ffdb4
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415111"
 ---
 # Add-AzMetricAlertRuleV2
@@ -74,7 +74,7 @@ Add-AzMetricAlertRuleV2 -Name <String> -ResourceGroupName <String> -WindowSize <
 ```
 
 ## DESCRIPTION
-Menambahkan atau memperbarui aturan pemberitahuan berbasis metrik **V2 (non klasik)**. Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+Menambahkan atau memperbarui **aturan pemberitahuan berbasis metrik V2 (non klasik**). Aturan yang ditambahkan dikaitkan dengan grup sumber daya dan memiliki nama. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -103,7 +103,7 @@ Location             : global
 Tags                 :
 ```
 
-Perintah ini membuat aturan pemberitahuan metrik untuk komputer virtual. $condition adalah output cmdlet New-AzMetricAlertRuleV2Criteria dan $act adalah output dari cmdlet New-AzActionGroup cmdlet
+Perintah ini membuat aturan pemberitahuan metrik untuk komputer virtual. $condition adalah output cmdlet New-AzMetricAlertRuleV2Criteria cmdlet $act adalah output dari New-AzActionGroup cmdlet
 
 ### Contoh 2: Tambahkan aturan pemberitahuan metrik untuk semua mesin virtual dalam langganan
 ```powershell

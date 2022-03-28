@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlDatabaseCopy.md
-ms.openlocfilehash: 9b9487521918339e17a5ff5fa5e42c98af36ab8fe3af0fcec5bf9c084a6071b2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7019fc7345b4296d9c35f11c6acec5bf5a42d966
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415239"
 ---
 # New-AzureRmSqlDatabaseCopy
@@ -40,7 +40,7 @@ New-AzureRmSqlDatabaseCopy [-DatabaseName] <String> [-Tags <Hashtable>] [-CopyRe
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlDatabaseCopy** membuat salinan salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzureSqlDatabaseCopy cmdlet baru untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
+Cmdlet **New-AzureRmSqlDatabaseCopy** membuat salinan salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzureSqlDatabaseCopy cmdlet untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
 Catatan: Gunakan cmdlet New-AzureRmSqlDatabaseSecondary cmdlet untuk mengonfigurasi geo-replication untuk database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server yang berisi database untuk disalin.
+Menentukan nama dokumen SQL Server berisi database untuk disalin.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

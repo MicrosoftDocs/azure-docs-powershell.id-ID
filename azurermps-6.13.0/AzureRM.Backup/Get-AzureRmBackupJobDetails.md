@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.backu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupJobDetails.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupJobDetails.md
-ms.openlocfilehash: 7ba77d6d881ec0c2aeff21ef26c222442ee7327654a44c52006fb5fb3ed9b50c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bf4ba77a7162faaf593e11b68a82fe5a6e55df1d
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414828"
 ---
 # Get-AzureRmBackupJobDetails
@@ -51,10 +51,10 @@ ErrorCode ErrorMessage                            Recommendations
    400001 Command execution failed.               {Another operation is currently in p...
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
+Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
 Perintah menyimpan objek tersebut dalam $Vault variabel.
 Perintah kedua gagal melakukan pekerjaan dari vault di $Vault, lalu menyimpannya dalam $Jobs array tertentu.
-Pekerjaan ketiga mendapatkan detail untuk pekerjaan pertama di variabel $Jobs, lalu menyimpan detail tersebut di $JobDetails baru.
+Pekerjaan ketiga mendapatkan detail untuk pekerjaan pertama di $Jobs baru, lalu menyimpan detail tersebut di $JobDetails baru.
 Perintah terakhir menampilkan properti **ErrorDetails** dari rumus $JobDetails menggunakan sintaks titik standar.
 
 ### Contoh 2: Menampilkan tindakan yang direkomendasikan untuk pekerjaan yang gagal
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan yang mendapatkan detail cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupJob,** gunakan cmdlet Get-AzureRmBackupJob cmdlet.
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan Get-AzureRmBackupJob cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 
 ### -JobId
 Menentukan ID pekerjaan yang mendapatkan detail cmdlet ini.
-ID adalah properti **InstanceId** dari objek **AzureRmBackupJob.**
-Untuk mendapatkan objek **AzureRmBackupJob,** gunakan Get-AzureRmBackupJob.
+ID adalah properti **InstanceId** dari objek **AzureRmBackupJob** .
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan Get-AzureRmBackupJob.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -Vault
 Menentukan vault Cadangan di mana cmdlet ini mendapatkan detail pekerjaan.
-Untuk mendapatkan objek **AzureRmBackupVault,** gunakan cmdlet Get-AzureRmBackupVault cmdlet.
+Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

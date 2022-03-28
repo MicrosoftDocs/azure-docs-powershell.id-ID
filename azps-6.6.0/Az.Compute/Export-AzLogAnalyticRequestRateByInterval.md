@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/export-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticRequestRateByInterval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Export-AzLogAnalyticRequestRateByInterval.md
-ms.openlocfilehash: 350100874acba45ce245e92d6db1bda17ebfea45
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b0a9a24caacc38eb81e3627f26a2866439e53c37
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380150"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139978467"
 ---
 # Export-AzLogAnalyticRequestRateByInterval
 
 ## SYNOPSIS
 Ekspor log yang memperlihatkan permintaan Api yang dibuat oleh langganan ini dalam jendela waktu tertentu untuk memperlihatkan aktivitas pembatasan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/export-azloganalyticrequestratebyinterval) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Export-AzLogAnalyticRequestRateByInterval [-Location] <String> [-FromTime] <Date
 Mengekspor data statistik tentang panggilan langganan ke Microsoft.Compute API menurut Status Berhasil, Gagal, atau Batas, dalam interval waktu yang sudah ditentukan sebelumnya. Log bisa dikelompokkan lebih lanjut menurut lima parameter: GroupByOperationName, GroupByThrottlePolicy, GroupByResourceName, GroupByUserAgent, atau GroupByApplicationId.
 Perhatikan bahwa cmdlet ini hanya mengumpulkan log Penyedia Sumber Daya Perhitungan; selain itu, data tentang tipe sumber daya Disk dan Snapshot belum tersedia.
 
-Untuk gambaran umum pembatasan API Penyedia Sumber Daya Perhitungan, lihat https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-request-limits . 
+Untuk gambaran umum pembatasan API Penyedia Sumber Daya Perhitungan, lihat https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-request-limits. 
 
 ## EXAMPLES
 
@@ -308,7 +311,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

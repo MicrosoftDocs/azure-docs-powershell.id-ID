@@ -4,11 +4,11 @@ Module Name: AzureRM.Insights
 ms.assetid: 18D5B95E-4CF1-4C79-AE8B-9F4DA49B46A9
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/add-azurermlogprofile
 schema: 2.0.0
-ms.openlocfilehash: 23234497fb57b7eedb9260feaf4e04d1872b86d50cdd712bda6b62356d8a0cf5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4302aa7dbc0cf31b9a7aa61678d871e9da140d51
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414542"
 ---
 # Add-AzureRmLogProfile
@@ -29,9 +29,9 @@ Add-AzureRmLogProfile -Name <String> [-StorageAccountId <String>] [-ServiceBusRu
 
 ## DESCRIPTION
 Cmdlet **Add-AzureRmLogProfile** membuat profil log.
-- **Storage -** Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Dapat berupa tipe ARM atau Klasik. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih sesuai tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan secara konsekuensial, hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
-- **Hub Kejadian** - Hanya ada satu profil log per langganan secara konsekuensial, hanya satu hub acara per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas di-streaming ke hub acara, harga hub acara standar akan berlaku. Dalam log aktivitas, acara dapat terkait dengan kawasan atau dapat menjadi "Global". Global pada dasarnya berarti acara ini adalah agnostik kawasan dan terpisah oleh kawasan, bahkan mayoritas acara termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil secara implisit menambahkan "Global" bersama dengan kawasan lain yang dipilih dalam antarmuka pengguna. Saat menggunakan cmdlet, lokasi sebagai "Global" harus disebutkan secara eksplisit terlepas dari kawasan lain. 
-**Catatan** :- **Gagal menetapkan "Global"** di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+- **Storage Baru** - Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Dapat berupa tipe ARM atau Klasik. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih sesuai tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan secara konsekuensial, hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
+- **Hub Kejadian** - Hanya ada satu profil log per langganan secara konsekuensial, hanya satu hub acara per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas di-streaming ke hub acara, harga hub acara standar akan berlaku. Dalam log aktivitas, acara dapat terkait dengan kawasan atau dapat menjadi "Global". Global pada dasarnya berarti acara ini adalah agnostik kawasan dan terpisah dari kawasan, bahkan mayoritas acara termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil secara implisit menambahkan "Global" bersama dengan kawasan lain yang dipilih dalam antarmuka pengguna. Saat menggunakan cmdlet, lokasi sebagai "Global" harus disebutkan secara eksplisit terlepas dari kawasan lain. 
+**Catatan** :- **Gagal menetapkan "Global" di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor.** Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Menentukan ID akun Storage anda. ID adalah ID Sumber Daya yang sepenuhnya memenuhi syarat dari akun penyimpanan, misalnya  
+Menentukan ID akun Storage Anda. ID adalah ID Sumber Daya yang sepenuhnya memenuhi syarat dari akun penyimpanan, misalnya  
 /subscriptions/40gpe80s-9sb7-4f07-9042-b1b6a92ja9fk/resourceGroups/activitylogRG/providers/Microsoft. Storage/storageAccounts/activitylogstorageaccount
 
 ```yaml
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,12 +6,12 @@ ms.devlang: powershell
 ms.service: azure-powershell
 ms.topic: conceptual
 title: Pemecahan masalah modul Azure Az PowerShell
-ms.openlocfilehash: 55482b3adeb56823f8a01fc6d73e120b749b554d
-ms.sourcegitcommit: cdca0d3199eb118c98aafb63ffcacc3dd080f0d4
-ms.translationtype: HT
+ms.openlocfilehash: 9bd93d801411dcf2c9a3fba59b697f6bb67b91a4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "138854901"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139913515"
 ---
 # <a name="troubleshooting-the-azure-az-powershell-module"></a>Pemecahan masalah modul Azure Az PowerShell
 
@@ -85,7 +85,7 @@ Disable-AzContextAutosave
 
 Kesalahan: _Nilai properti IdentifierUris harus menggunakan domain terverifikasi dari organisasi atau subdomainnya_ ditampilkan saat menjalankan `New-AzADServicePrincipal` atau `New-AzADApplication`.
 
-Karena Azure Active Directory melanggar perubahan yang mengharuskan [AppId Uri dalam aplikasi penyewa tunggal untuk mewajibkan penggunaan skema default atau domain terverifikasi](/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains), Anda harus meningkatkan modul [Az.Resources](https://www.powershellgallery.com/packages/Az.Resources) ke versi 4.1.0 atau yang lebih baru untuk terus menggunakan cmdlet `New-AzADServicePrincipal` atau `New-AzADApplication`.
+Karena Azure Active Directory melanggar perubahan yang mengharuskan [AppId Uri dalam aplikasi penyewa tunggal untuk mewajibkan penggunaan skema default atau domain terverifikasi](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains), Anda harus meningkatkan modul [Az.Resources](https://www.powershellgallery.com/packages/Az.Resources) ke versi 4.1.0 atau yang lebih baru untuk terus menggunakan cmdlet `New-AzADServicePrincipal` atau `New-AzADApplication`.
 
 Anda juga dapat meningkatkan ke modul Az PowerShell versi 6.0 atau lebih baru.
 
@@ -106,6 +106,6 @@ Jika Anda masih mengalami masalah setelah peningkatan, jangan ragu untuk membuka
 
 Jika Anda tidak dapat meningkatkan ke modul PowerShell yang dijelaskan di atas, Anda dapat mengikuti langkah-langkah tersebut saat membuat perwakilan layanan:
 
-- Bila perlu, [tambahkan nama domain kustom Anda menggunakan portal Azure Active Directory](/active-directory/fundamentals/add-custom-domain)
+- Bila perlu, [tambahkan nama domain kustom Anda menggunakan portal Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 - Membuat aplikasi dengan IdentifierUri yang diterima
 - Membuat perwakilan layanan yang merujuk aplikasi ini

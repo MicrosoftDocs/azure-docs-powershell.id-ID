@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.monitor/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Add-AzLogProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Monitor/Monitor/help/Add-AzLogProfile.md
-ms.openlocfilehash: 1614ba1da9a55cc4c9f3cad0121b483d28603b33e16f029a1f78af5ea9de2984
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9b850f1f1018014aa0d9f7a2472282fd68e02cb2
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414705"
 ---
 # Add-AzLogProfile
@@ -29,9 +29,9 @@ Add-AzLogProfile -Name <String> [-StorageAccountId <String>] [-ServiceBusRuleId 
 
 ## DESCRIPTION
 Cmdlet **Add-AzLogProfile** membuat profil log.
-- **Storage -** Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Dapat berupa tipe ARM atau Klasik. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih sesuai tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan secara konsekuensial, hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
-- **Hub Kejadian** - Hanya ada satu profil log per langganan secara konsekuensial, hanya satu hub acara per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas di-streaming ke hub acara, harga hub acara standar akan berlaku. Dalam log aktivitas, acara dapat terkait dengan kawasan atau dapat menjadi "Global". Global pada dasarnya berarti acara ini adalah agnostik kawasan dan terpisah oleh kawasan, bahkan mayoritas acara termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil secara implisit menambahkan "Global" bersama dengan kawasan lain yang dipilih dalam antarmuka pengguna. Saat menggunakan cmdlet, lokasi sebagai "Global" harus disebutkan secara eksplisit terlepas dari kawasan lain. 
-**Catatan** :- **Gagal menetapkan "Global"** di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor. Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
+- **Storage Baru** - Hanya akun penyimpanan standar (akun penyimpanan premium tidak didukung) yang didukung. Dapat berupa tipe ARM atau Klasik. Jika log masuk ke akun penyimpanan, biaya penyimpanan log aktivitas ditagih sesuai tarif penyimpanan standar normal. Mungkin hanya ada satu profil log per langganan secara konsekuensial, hanya satu akun penyimpanan per langganan yang dapat digunakan untuk mengekspor log aktivitas. 
+- **Hub Kejadian** - Hanya ada satu profil log per langganan secara konsekuensial, hanya satu hub acara per langganan yang dapat digunakan untuk mengekspor log aktivitas. Jika log aktivitas di-streaming ke hub acara, harga hub acara standar akan berlaku. Dalam log aktivitas, acara dapat terkait dengan kawasan atau dapat menjadi "Global". Global pada dasarnya berarti acara ini adalah agnostik kawasan dan terpisah dari kawasan, bahkan mayoritas acara termasuk dalam kategori ini. Jika profil log aktivitas diatur dari portal, profil secara implisit menambahkan "Global" bersama dengan kawasan lain yang dipilih dalam antarmuka pengguna. Saat menggunakan cmdlet, lokasi sebagai "Global" harus disebutkan secara eksplisit terlepas dari kawasan lain. 
+**Catatan** :- **Gagal menetapkan "Global" di lokasi akan mengakibatkan sebagian besar log aktivitas tidak diekspor.** Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat, mengubah, atau menghapus sumber daya.
 
 ## EXAMPLES
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountId
-Menentukan ID akun Storage anda. ID adalah ID Sumber Daya yang sepenuhnya memenuhi syarat dari akun penyimpanan, misalnya  
+Menentukan ID akun Storage Anda. ID adalah ID Sumber Daya yang sepenuhnya memenuhi syarat dari akun penyimpanan, misalnya  
 /subscriptions/40gpe80s-9sb7-4f07-9042-b1b6a92ja9fk/resourceGroups/activitylogRG/providers/Microsoft. Storage/storageAccounts/activitylogstorageaccount
 
 ```yaml

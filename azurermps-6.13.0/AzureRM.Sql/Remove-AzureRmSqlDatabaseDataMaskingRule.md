@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseDataMaskingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseDataMaskingRule.md
-ms.openlocfilehash: 4d793e0e2c9ac8c2dddf3ad4573439ccf8af0801366648ab2ad849f685182a17
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 15341932acd8764deb9a1b8b0417b25a5a5cacd7
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415231"
 ---
 # Remove-AzureRmSqlDatabaseDataMaskingRule
@@ -30,7 +30,7 @@ Remove-AzureRmSqlDatabaseDataMaskingRule [-PassThru] [-Force] -SchemaName <Strin
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmSqlDatabaseDataMaskingRule** menghapus aturan masker data tertentu dari database SQL Azure.
-Anda bisa menghapus aturan masker data dengan menggunakan parameter *ResourceGroupName,* *ServerName*, *DatabaseName*, dan *RuleId* untuk mengidentifikasi aturan yang dihapus cmdlet ini.
+Anda bisa menghapus aturan masker data dengan menggunakan parameter *ResourceGroupName*, *ServerName*, *DatabaseName*, dan *RuleId* untuk mengidentifikasi aturan yang dihapus cmdlet ini.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

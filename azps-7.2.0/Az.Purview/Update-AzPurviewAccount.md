@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.purview/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Update-AzPurviewAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Update-AzPurviewAccount.md
-ms.openlocfilehash: bb9bfb634f80c1f5bb303eb3b10acf2e79586367
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 4735fd2d52159962c3c93bea68647080103e17e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138167185"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140051051"
 ---
 # Update-AzPurviewAccount
 
 ## SYNOPSIS
 Memperbarui akun
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/update-azpurviewaccount) untuk informasi terkini.
 
 ## SYNTAX
 

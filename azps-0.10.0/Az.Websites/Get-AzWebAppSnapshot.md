@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.websites/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebAppSnapshot.md
-ms.openlocfilehash: 3cb0d7f6fca581ed86ef56b28920216eb4d3197629ecd8d2835bcf1bd5dc883c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1374bfb67b3150b2c65841d91fd440a83f791b95
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414840"
 ---
 # Get-AzWebAppSnapshot
@@ -31,7 +31,7 @@ Get-AzWebAppSnapshot [-WebApp] <Site> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzWebAppSnapshot.**
+Cmdlet **Get-AzWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzWebAppSnapshot** .
 
 ## EXAMPLES
 

@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRMVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRMVMDataDisk.md
-ms.openlocfilehash: 0aacd88356776f66deb13ec27dea1a0c6609b920f2621048c95395ac45ea0354
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4ed0abb355bf7a755e5acaa36f8bb11e88d80c5c
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414991"
 ---
 # Set-AzureRmVMDataDisk
@@ -47,10 +47,10 @@ PS C:\> $VM = Get-AzureRMVM -ResourceGroupName "ResourceGroup11" -VMName "Contos
 PS C:\> Set-AzureRmVMDataDisk -VM $VM -Name "DataDisk01" -Caching ReadWrite | Update-AzureRmVM
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzureRmVM.**
-Perintah menyimpannya di $VM berbeda.
-Perintah kedua mengubah mode cache untuk disk data yang bernama DataDisk01 di komputer virtual dalam $VM.
-Perintah melewati hasil ke cmdlet Update-AzureRmVM, yang menerapkan perubahan Anda.
+Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzureRmVM**.
+Perintah menyimpannya di $VM variabel.
+Perintah kedua memodifikasi mode cache untuk disk data yang bernama DataDisk01 di komputer virtual dalam $VM.
+Perintah melewati hasil ke cmdlet Update-AzureRmVM, yang mengimplementasikan perubahan Anda.
 Perubahan pada mode kas menyebabkan mesin virtual memulai ulang.
 
 ## PARAMETERS
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan mesin virtual yang digunakan cmdlet ini untuk memodifikasi disk data.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzureRmVM.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzureRmVM cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

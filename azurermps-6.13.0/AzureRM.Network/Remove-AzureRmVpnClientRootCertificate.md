@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVpnClientRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVpnClientRootCertificate.md
-ms.openlocfilehash: e666accd21496af3c4ab59c4b157e5aa92bfcb7647ea0aa1407f49228c896a9e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 95442c724548119726aa466edf1b4fa223271865
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414803"
 ---
 # Remove-AzureRmVpnClientRootCertificate
@@ -32,8 +32,8 @@ Remove-AzureRmVpnClientRootCertificate -VpnClientRootCertificateName <String>
 Cmdlet **Remove-AzureRmVpnClientRootCertificate** menghapus sertifikat akar tertentu dari gateway jaringan virtual.
 Sertifikat akar adalah sertifikat X.509 yang mengidentifikasi Otoritas Sertifikasi Akar Anda: semua sertifikat lain yang digunakan di gateway mempercayai sertifikat akar.
 Jika Anda menghapus komputer sertifikat akar yang menggunakan sertifikat untuk tujuan autentikasi tidak akan bisa lagi menyambungkan ke gateway.
-Saat menggunakan **Remove-AzureRmVpnClientRootCertificate,** Anda harus menyediakan nama sertifikat dan teks representasi data sertifikat.
-Untuk informasi selengkapnya tentang teks representasi sertifikat, lihat deskripsi parameter *PublicCertData.*
+Saat anda menggunakan **Remove-AzureRmVpnClientRootCertificate**, Anda harus menyediakan nama sertifikat dan teks representasi data sertifikat.
+Untuk informasi selengkapnya tentang teks representasi sertifikat, lihat deskripsi parameter *PublicCertData* .
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ PS C:\> Remove-AzureRmVpnClientRootCertificate -PublicCertData $CertificateText 
 
 Contoh ini menghapus sertifikat akar klien yang bernama ContosoRootCertificate dari gateway jaringan virtual ContosoVirtualGateway.
 Perintah pertama menggunakan cmdlet **Get-Content** untuk mendapatkan representasi teks sertifikat yang diekspor sebelumnya; representasi teks ini disimpan di variabel bernama $Text.
-Perintah kedua lalu menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali untuk baris pertama dan baris terakhir.
+Lalu perintah kedua menggunakan pengulangan untuk mengekstrak semua teks dalam $Text kecuali untuk baris pertama dan baris terakhir.
 Teks yang diekstrak ini disimpan dalam variabel yang bernama $CertificateText.
 Perintah ketiga menggunakan informasi yang disimpan di variabel $CertificateText bersama dengan cmdlet **Remove-AzureRmVpnClientRootCertificate** untuk menghapus sertifikat dari gateway.
 
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ### -PublicCertData
 Menentukan representasi teks dari sertifikat akar yang akan dihapus.
 Untuk mendapatkan representasi teks, ekspor sertifikat Anda dalam format .cer (menggunakan pengodean Base64), lalu buka file yang dihasilkan di editor teks.
-Anda akan melihat output yang mirip dengan hal berikut (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel yang disingkat diperlihatkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
-Anda dapat mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text \[ $i \] }
+Anda akan melihat output seperti berikut (perhatikan bahwa output aktual akan berisi lebih banyak baris teks daripada sampel yang disingkat, yang ditunjukkan di sini): ----- BEGIN CERTIFICATE ----- MIIC13FAAXC3671Auij9HgUNEW8343NMJklo09982CVVFAw8w ----- END CERTIFICATE ----- PublicCertData terdiri dari semua garis antara baris pertama (----- BEGIN CERTIFICATE -----) dan baris terakhir (----- END CERTIFICATE -----) dalam file.
+Anda bisa mengambil PublicCertData menggunakan perintah Windows PowerShell seperti ini: $Text = Get-Content -Path "C:\Azure\Certificates\ExportedCertficate.cer" $CertificateText = for ($i=1; $i -lt $Text.Length -1 ; $i++){$Text\[$i\]}
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

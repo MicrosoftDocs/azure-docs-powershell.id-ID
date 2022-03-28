@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 3E3E0237-8E2D-4B3A-AD0C-2121DDE1AAB6
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 3c905cd37f912ab8481881b2e088ec100189af0e4b8e8943950c1ecba9996c97
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 32ed03788f14eac65fdee9f3284f10dc4e9daab6
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414787"
 ---
 # Remove-AzureNetworkSecurityGroupAssociation
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -ServiceName
 Menentukan nama layanan awan.
-Peran PaaS yang darinya cmdlet menghapus grup keamanan jaringan milik layanan yang ditentukan parameter ini.
+Peran PaaS yang darinya cmdlet menghapus grup keamanan jaringan milik layanan yang ditentukan oleh parameter ini.
 
 ```yaml
 Type: String
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

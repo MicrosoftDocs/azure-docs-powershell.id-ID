@@ -6,11 +6,11 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: ad373008c33b3c33bce87d89d780f66795976e941bf1a7162cef8366c5e3b1cd
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 35ded5ef7874272747b45321488ee7083a3f6efb
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415158"
 ---
 # Azs.Infrastructureinsights.Admin Module

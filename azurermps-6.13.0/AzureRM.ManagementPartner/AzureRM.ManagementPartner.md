@@ -6,11 +6,11 @@ Help Version: 0.1.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/AzureRM.ManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/AzureRM.ManagementPartner.md
-ms.openlocfilehash: bba5abc1137c5269d7ab0d7199666eabf63ff07e06594f5fdfc47ff3777349b6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0918f5623d7591f4d13922b6307f5f44bc640e3c
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414506"
 ---
 # AzureRM.ManagementPartner Module

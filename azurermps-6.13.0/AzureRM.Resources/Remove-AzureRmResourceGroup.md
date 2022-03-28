@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Remove-AzureRmResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Remove-AzureRmResourceGroup.md
-ms.openlocfilehash: d4095c0e8abed499e47c33358cba339521bdd86f23ef7f44779229dc2aa5cea6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f59aca506ca9cb9e02c5b76f401d32ec314b864d
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415241"
 ---
 # Remove-AzureRmResourceGroup
@@ -53,7 +53,7 @@ Cmdlet meminta konfirmasi Anda dan tidak mengembalikan output.
 PS C:\>Get-AzureRmResourceGroup -Name "ContosoRG01" | Remove-AzureRmResourceGroup -Verbose -Force
 ```
 
-Perintah ini menggunakan cmdlet Get-AzureRmResourceGroup sumber daya untuk mendapatkan grup sumber daya ContosoRG01, lalu meneruskannya ke **Remove-AzureRmResourceGroup** menggunakan operator pipeline.
+Perintah ini menggunakan cmdlet Get-AzureRmResourceGroup cmdlet untuk mendapatkan grup sumber daya ContosoRG01, lalu meneruskannya ke **Remove-AzureRmResourceGroup** menggunakan operator pipeline.
 Parameter *umum Verbose* mendapatkan informasi status tentang operasi, dan parameter *Paksa* menyembunyikan perintah konfirmasi.
 
 ### Contoh 3: Hapus semua grup sumber daya
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
