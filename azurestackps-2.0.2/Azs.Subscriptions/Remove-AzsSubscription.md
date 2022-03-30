@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions
 online version: https://docs.microsoft.com/powershell/module/azs.subscriptions/remove-azssubscription
 schema: 2.0.0
-ms.openlocfilehash: dac8b628005817a7fca85cb08433434961b0fab942a8cce9d929382233965a77
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b6fddf677cd619dad577b7bca8286671b85d0791
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415301"
 ---
 # Remove-AzsSubscription
@@ -174,7 +174,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionIdentity> : 
+INPUTOBJECT <ISubscriptionIdentity>: 
   - `[DelegatedProviderId <String>]`: Id penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferName <String>]`: Nama penawaran.

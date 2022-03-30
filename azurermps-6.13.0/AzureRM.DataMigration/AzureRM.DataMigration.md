@@ -6,11 +6,11 @@ Help Version: 0.1.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/AzureRM.DataMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/AzureRM.DataMigration.md
-ms.openlocfilehash: 21cd238797fee8fc2ed41b89b502fc60ec1dd1d60b1b6072ce838df84b4e84ac
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1842bf625623e66d35adf32490a1d71315413c84
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414966"
 ---
 # AzureRM.DataMigration Module

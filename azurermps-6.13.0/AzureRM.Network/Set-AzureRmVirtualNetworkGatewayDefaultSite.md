@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmVirtualNetworkGatewayDefaultSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmVirtualNetworkGatewayDefaultSite.md
-ms.openlocfilehash: cd290b7fb9874d03c6bb5dc4fff11bd01777fae1648c2e1938d448b5f13782a3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9c0eec0f38929efe188d8ab0ba8e30d31a16b717
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414662"
 ---
 # Set-AzureRmVirtualNetworkGatewayDefaultSite
@@ -44,7 +44,7 @@ PS C:\> Set-AzureRmVirtualNetworkGatewayDefaultSite -GatewayDefaultSite $LocalGa
 
 Contoh ini menetapkan situs default ke gateway jaringan virtual bernama ContosoVirtualGateway.
 Perintah pertama membuat referensi objek ke gateway lokal bernama ContosoLocalGateway.
-Referensi objek yang disimpan dalam variabel yang bernama $LocalGateway mewakili gateway yang akan dikonfigurasi sebagai situs default.
+Referensi objek ini yang disimpan dalam variabel yang $LocalGateway mewakili gateway yang akan dikonfigurasi sebagai situs default.
 Perintah kedua lalu membuat referensi objek ke gateway jaringan virtual dan menyimpan hasilnya dalam variabel yang bernama $VirtualGateway.
 Perintah ketiga menggunakan cmdlet **Set-AzureRmVirtualNetworkGatewayDefaultSite** untuk menetapkan situs default ke ContosoVirtualGateway.
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ### -VirtualNetworkGateway
 Menentukan referensi objek ke gateway jaringan virtual tempat situs default akan ditetapkan.
 Anda bisa membuat referensi objek ke gateway jaringan virtual dengan menggunakan **Get-AzureRmVirtualNetworkGateway** dan menentukan nama gateway.
-Variabel $VirtualGateway lalu bisa digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway:*
+Variabel yang $VirtualGateway lalu bisa digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway* :
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

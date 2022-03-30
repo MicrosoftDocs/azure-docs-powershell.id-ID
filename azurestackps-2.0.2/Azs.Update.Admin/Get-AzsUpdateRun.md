@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Update.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.update.admin/get-azsupdaterun
 schema: 2.0.0
-ms.openlocfilehash: 7066ea47d7689dd9282c95a96241691a65f3786a87ff50b5cb109e2ff483b3ce
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fb36cb0d1be46abb66a1c0cc97165f8eb9cc3913
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415297"
 ---
 # Get-AzsUpdateRun
@@ -53,10 +53,10 @@ northwest/Microsoft1.1907.0.10/45aaeb... Failed          7/11/2019 3:07:10 PM   
 northwest/Microsoft1.1907.0.10/51e878... Succeeded       7/11/2019 3:07:10 PM      7/12/2019 6:47:37 AM
 ```
 
-Jika nilai NamaMutakhir tidak ditentukan, Get-UpdateRun akan selalu meminta input.
+Jika nilai NamaUpdate tidak ditentukan, Get-UpdateRun akan selalu meminta input.
 Begitu disediakan, itu akan membuat output semua instans UpdateRun yang Gagal atau Berhasil
 
-### Contoh 2: Get-AzsUpdateRun Menurut NamaUpdate
+### Contoh 2: Get-AzsUpdateRun Menurut NamaMutakhir
 ```powershell
 PS C:\> Get-AzsUpdateRun -UpdateName Microsoft1.1907.0.10
 or 
@@ -215,7 +215,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUpdateAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IUpdateAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[RunName <String>]`: Perbarui jalankan pengidentifikasi.

@@ -6,16 +6,16 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: 8fd9b7c6902bc3f58547829a057ef32defff5e442a994e1f955fd780c555fbfa
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: dced39a6f5d4acbebec5a32e8db2634085ccbb75
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415154"
 ---
 # Azs.Keyvault.Admin Module
 ## Deskripsi
-Pratinjau rilis modul administrator AzureStack KeyVault yang memungkinkan administrator menampilkan kuota KeyVault. 
+Pratinjau rilis modul administrator AzureStack KeyVault yang memungkinkan administrator untuk menampilkan kuota KeyVault. 
 
 ## Cmdlet Azs.Keyvault.Admin
 ### [Get-AzsKeyVaultQuota](Get-AzsKeyVaultQuota.md)

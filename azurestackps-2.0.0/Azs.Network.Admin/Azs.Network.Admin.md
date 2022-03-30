@@ -4,11 +4,11 @@ Module Guid: 818c880d-2aa0-4aa3-961c-cc58c4ef12b2
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.network.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 364b28b673cbdf7f549001d868f599b0ae9abf89687e239da5141e2fab6d8d86
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 27a39c4269584acc41a0231f34c572ed7fe5ff94
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414924"
 ---
 # Azs.Network.Admin Module

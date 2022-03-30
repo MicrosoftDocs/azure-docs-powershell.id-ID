@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.timeseriesinsigh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsReferenceDataSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TimeSeriesInsights/help/Remove-AzTimeSeriesInsightsReferenceDataSet.md
-ms.openlocfilehash: 271a5ad5a59305f5318b5c9823451b65a4c4be81
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: dbd9a5ff4fbbe741f05dada5a46019181e22245d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138164148"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140081045"
 ---
 # Remove-AzTimeSeriesInsightsReferenceDataSet
 
 ## SYNOPSIS
 Menghapus kumpulan data referensi dengan nama yang ditentukan dalam langganan, grup sumber daya, dan lingkungan yang ditentukan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.timeseriesinsights/remove-aztimeseriesinsightsreferencedataset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Nama lingkungan Rangkaian Waktu yang Insights dengan grup sumber daya yang ditentukan.
+Nama lingkungan Rangkaian Waktu Insights dengan grup sumber daya yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama rangkaian data referensi Insights terkait dengan lingkungan tertentu.
+Nama kumpulan data referensi Insights waktu terkait dengan lingkungan tertentu.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ITimeSeriesInsightsIdentity>: Parameter Identitas
   - `[AccessPolicyName <String>]`: Nama kebijakan akses.
   - `[EnvironmentName <String>]`: Nama lingkungan
-  - `[EventSourceName <String>]`: Nama Rangkaian Waktu yang Insights acara yang terkait dengan lingkungan yang ditentukan.
+  - `[EventSourceName <String>]`: Nama Sumber waktu yang Insights terkait dengan lingkungan tertentu.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ReferenceDataSetName <String>]`: Nama kumpulan data referensi.
   - `[ResourceGroupName <String>]`: Nama grup Sumber Daya Azure.

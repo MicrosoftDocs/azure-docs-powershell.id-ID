@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 1D433BD2-4604-474B-A2DA-BC80EE935E5C
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: bb906875f20cc826d93e65d6679eed8a7a9cdf96a34a8d7b39f6cf2a9e33c44f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fe49b884f06d8c72cd026374eabe8cc5c51cf862
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415219"
 ---
 # Get-AzureSBNamespace
@@ -26,7 +26,7 @@ Get-AzureSBNamespace [-Name <String>] [-Profile <AzureSMProfile>] [<CommonParame
 
 ## DESCRIPTION
 Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Get-AzureSBNamespace** mengembalikan ruang Bus Layanan nama layanan terkait dengan langganan saat ini.
 
@@ -34,12 +34,12 @@ Cmdlet **Get-AzureSBNamespace** mengembalikan ruang Bus Layanan nama layanan ter
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan nama Bus Layanan nama
+### Contoh 1: Dapatkan Bus Layanan nama
 ```
 PS C:\> Get-AzureSBNamespace
 ```
 
-Contoh ini mendapatkan ruang Bus Layanan nama yang terkait dengan langganan saat ini.
+Contoh ini mendapatkan Bus Layanan nama layanan terkait dengan langganan saat ini.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

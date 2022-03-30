@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Get-AzIoTDeviceProvisioningServiceAccessPolicy.md
-ms.openlocfilehash: cd8e09c51bc1bdc5d5d8b1ee77c5472c695c4ecd
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 792b2866d8b73cf8c073e4794f6137b902d478f7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138163855"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924531"
 ---
 # Get-AzIoTDeviceProvisioningServiceAccessPolicy
 
 ## SYNOPSIS
 Daftar semua atau tampilkan detail kebijakan akses bersama dalam layanan penyediaan perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deviceprovisioningservices/get-aziotdeviceprovisioningserviceaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 

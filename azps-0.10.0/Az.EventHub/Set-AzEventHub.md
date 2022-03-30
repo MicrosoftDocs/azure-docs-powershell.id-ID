@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHub.md
-ms.openlocfilehash: afecae45c0bfbf8493cc21eba660be42422d80220df56a9a50cb321e6fc1477d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2b1f3c0cd30b9f0ebc67a0b11f5b42a35b7e3394
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414911"
 ---
 # Set-AzEventHub
@@ -55,14 +55,14 @@ PS C:\> $createdEventHub.CaptureDescription.Destination.StorageAccountResourceId
 PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 
-Memperbarui Event Hub MyEventHubName yang diwakili oleh objek \` \` MyCreatedEventHub, mengatur periode penyimpanan pesan ke 4 hari, jumlah partisi ke 2 dan properti \` \` CaptureDescription
+Memperbarui Event Hub \`MyEventHubName\` \`yang diwakili oleh objek MyCreatedEventHub\` , mengatur periode penyimpanan pesan ke 4 hari, jumlah partisi ke 2 dan properti CaptureDescription
 
 ### Contoh 2
 ```
 PS C:\> Set-AzEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName -InputObject MyCreatedEventHub -messageRetentionInDays 4 -partitionCount 2
 ```
 
-Memperbarui Event Hub MyEventHubName yang diwakili oleh objek \` \` \` MyCreatedEventHub, mengatur periode penyimpanan pesan ke 4 hari, dan jumlah \` partisi menjadi 2.
+Memperbarui Event Hub \`MyEventHubName\` \`yang diwakili oleh objek MyCreatedEventHub\` , mengatur periode penyimpanan pesan ke 4 hari, dan jumlah partisi menjadi 2.
 
 ## PARAMETERS
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions
 online version: https://docs.microsoft.com/powershell/module/azs.subscriptions/get-azssubscription
 schema: 2.0.0
-ms.openlocfilehash: ddc77352de6b493aa6496cb8066cf4e0537921ae429d4e9bf1572839e69c1a9a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7dce95be9a936d341e0f063fd6d89701b18c2ce7
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415138"
 ---
 # Get-AzsSubscription
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionIdentity> : Parameter Identitas
+INPUTOBJECT <ISubscriptionIdentity>: Parameter Identitas
   - `[DelegatedProviderId <String>]`: Id penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferName <String>]`: Nama penawaran.

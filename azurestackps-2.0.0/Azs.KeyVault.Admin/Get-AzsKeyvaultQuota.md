@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.KeyVault.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.keyvault.admin/get-azskeyvaultquota
 schema: 2.0.0
-ms.openlocfilehash: 27405e2b1c46d086f328d92ee1a349449c87c71816a8dd732a7317f1ae8184fb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 813e0e7dc2535b3c7cd424e55ff924c380d84e2f
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414925"
 ---
 # Get-AzsKeyvaultQuota
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]

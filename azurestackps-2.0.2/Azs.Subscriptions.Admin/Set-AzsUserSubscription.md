@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/set-azsusersubscription
 schema: 2.0.0
-ms.openlocfilehash: 870cb8c37b99ead34fc9b707c0fcc30602574402d9296fe28678784d945360fb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fcf6254cfbb29add4990197dddf3fb188e665937
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415307"
 ---
 # Set-AzsUserSubscription
@@ -334,7 +334,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-SUBSCRIPTIONDEFINITION <ISubscriptionDefinition> : Properti objek langganan.
+SUBSCRIPTIONDEFINITION <ISubscriptionDefinition>: Properti objek langganan.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan Delegasi Delegasi Induk.
   - `[DisplayName <String>]`: Nama langganan.
   - `[ExternalReferenceId <String>]`: Pengidentifikasi referensi eksternal.

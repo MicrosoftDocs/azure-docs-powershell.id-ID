@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.fabric.admin/add-azsscaleunitnode
 schema: 2.0.0
-ms.openlocfilehash: 2ae46bfc98104640bad09b3618266da08d4c0987fd3de11e3c8d4c9157e0c87f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4546be57a2a2bd7f3f450290be2e0bf144e09817
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414620"
 ---
 # Add-AzsScaleUnitNode
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -308,7 +308,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IFabricAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IFabricAdminIdentity>: Parameter Identitas
   - `[Drive <String>]`: Nama drive penyimpanan.
   - `[EdgeGateway <String>]`: Nama gateway tepi.
   - `[EdgeGatewayPool <String>]`: Nama gateway pool tepi.
@@ -335,7 +335,7 @@ NODELIST <dengan IScaleOutScaleUnitParameters[]>: Daftar simpul dalam unit skala
   - `[BmciPv4Address <String>]`: Alamat BMC komputer fisik.
   - `[ComputerName <String>]`: Nama komputer komputer.
 
-SCALEUNITNODEPARAMETER : Daftar data input yang memungkinkan penambahan rangkaian simpul <IScaleOutScaleUnitParametersList> unit skala.
+SCALEUNITNODEPARAMETER <IScaleOutScaleUnitParametersList>: Daftar data input yang memungkinkan penambahan rangkaian simpul unit skala.
   - `[AwaitStorageConvergence <Boolean?>]`: Bendera menunjukkan jika operasi harus menunggu penyimpanan memulang sebelum dikembalikan.
   - `[NodeList <IScaleOutScaleUnitParameters[]>]`: Daftar node dalam unit skala.
     - `[BmciPv4Address <String>]`: Alamat BMC komputer fisik.

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdDesktop.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Update-AzWvdDesktop.md
-ms.openlocfilehash: 18ba2742e8eed6e3dc8098e4a390a3e03f53928d
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: b867ee87a86993037b766457a73e7418c9605cbc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138290220"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924657"
 ---
 # Update-AzWvdDesktop
 
 ## SYNOPSIS
 Memperbarui desktop.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/update-azwvddesktop) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Memperbarui desktop.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui Windows Desktop Virtual
+### Contoh 1: Memperbarui Windows Desktop Virtual
 ```powershell
 PS C:\> Update-AzWvdDesktop -ResourceGroupName ResourceGroupName `
                              -GroupName ApplicationGroupName `

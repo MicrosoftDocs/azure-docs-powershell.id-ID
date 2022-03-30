@@ -5,11 +5,11 @@ Module Guid:
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.subscriptions
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 28aaeee40287b359d980961c126054c69fb7fb87c8b17c2276581e26927a5965
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fe85d4ea114b6b5dcb30e0c39543b20d81bdc253
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415306"
 ---
 # Azs.Subscriptions Module

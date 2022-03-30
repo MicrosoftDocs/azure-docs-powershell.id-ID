@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.resources/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Set-AzPolicySetDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Set-AzPolicySetDefinition.md
-ms.openlocfilehash: ef13141b20f3c965919b4c9d4d20b41ecdea38eab6efd86c6d98e588a7ac8570
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 21ea2a78ed14cc7fbcc343bd7905a33ef4bd126a
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415285"
 ---
 # Set-AzPolicySetDefinition
@@ -60,7 +60,7 @@ PS C:\> $PolicySetDefinition = Get-AzPolicySetDefinition -ResourceId '/subscript
 PS C:\> Set-AzPolicySetDefinition -Id $PolicySetDefinition.ResourceId -Description 'Updated policy to not allow virtual machine creation'
 ```
 
-Perintah pertama mendapatkan definisi kumpulan kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition.
+Perintah pertama mendapatkan definisi kumpulan kebijakan dengan menggunakan cmdlet Get-AzPolicySetDefinition cmdlet.
 Perintah menyimpan objek tersebut dalam $PolicySetDefinition variabel.
 Perintah kedua memperbarui deskripsi definisi kumpulan kebijakan yang diidentifikasi oleh properti **ResourceId** $PolicySetDefinition.
 
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

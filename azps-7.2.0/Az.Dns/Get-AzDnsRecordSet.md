@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/get-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Get-AzDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/Get-AzDnsRecordSet.md
-ms.openlocfilehash: 3b3f36b58d3c817eed3932e3e10657b1d3e187c7
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 3808c7db538a2848728e12b75a31a78c8cdec8a0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138263963"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924244"
 ---
 # Get-AzDnsRecordSet
 
 ## SYNOPSIS
 Mendapatkan kumpulan catatan DNS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/get-azdnsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,14 +56,14 @@ Karena parameter *Nama* *dan RecordType* ditentukan, hanya satu **objek RecordSe
 PS C:\>$RecordSets = Get-AzDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -RecordType A
 ```
 
-Perintah ini mendapatkan array dari semua kumpulan rekaman tipe data A dalam zona yang bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $RecordSets sumber daya.
+Perintah ini mendapatkan array dari semua kumpulan data tipe data A dalam zona yang bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $RecordSets sumber daya.
 
 ### Contoh 3: Mendapatkan semua kumpulan rekaman dalam satu zona
 ```
 PS C:\>$RecordSets = Get-AzDnsRecordSet -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 ```
 
-Perintah ini mendapatkan array dari semua kumpulan data dalam zona yang bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya dalam $RecordSets sumber daya.
+Perintah ini mendapatkan array semua kumpulan data dalam zona yang bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya dalam $RecordSets sumber daya.
 
 ### Contoh 4: Mendapatkan semua kumpulan rekaman dalam satu zona, menggunakan objek DnsZone
 ```

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: d54fe0b2f0fde9aa8c163c5e451ff30c95be66e0
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 688c1fe1f4d16abdcd37315f0cdbfdee33ae5076
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138275180"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924099"
 ---
 # Get-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Mendapatkan detail aturan otorisasi, atau mendapatkan daftar aturan otorisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 

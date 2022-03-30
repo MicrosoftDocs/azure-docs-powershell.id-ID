@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancerInboundNatPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancerInboundNatPoolConfig.md
-ms.openlocfilehash: 8f54913b154af06752b59d14fb66350770359fa73c2ffec0b0e9bae5efdc5ae0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3d2110b4d8f4caf75751745ef996cb18094ae7e6
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415252"
 ---
 # Set-AzureRmLoadBalancerInboundNatPoolConfig
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengonfigurasi titik akhir mesin virtual untuk kapabilitas IP terapung yang diperlukan untuk mengonfigurasi SQL Ketersediaan AlwaysOn. Pengaturan ini diperlukan saat menggunakan Grup Ketersediaan SQL AlwaysOn di SQL server. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
+Mengonfigurasi titik akhir mesin virtual untuk kapabilitas IP terapung yang diperlukan untuk mengonfigurasi Grup Ketersediaan AlwaysOn SQL. Pengaturan ini diperlukan saat menggunakan Grup Ketersediaan SQL AlwaysOn di SQL server. Pengaturan ini tidak dapat diubah setelah Anda membuat titik akhir.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

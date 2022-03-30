@@ -4,11 +4,11 @@ Module Guid: cc69c625-e961-43f4-8b50-0061eba6e4b6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: a8a7078fa66752a10c3a541c620e1a73ae9db34301fd6c155b6ff0391b397a7d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6be8a4fb2950233be91f5818a9e886c6e2a68835
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415029"
 ---
 # AzureRM.Websites Module

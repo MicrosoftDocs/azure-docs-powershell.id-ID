@@ -4,11 +4,11 @@ Module Name: AzureRM.Compute
 ms.assetid: 9BE2E42C-594B-4B67-866C-BBA3B84AA5FD
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/add-azurermvmssadditionalunattendcontent
 schema: 2.0.0
-ms.openlocfilehash: ccb8f29500ccedc3f3d32fb09751cdf0dfd27961dc2080a8f32fdf4253e2f5b3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c0ceb74c6880508f04fb0832c48d0752507f5a5b
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415076"
 ---
 # Add-AzureRmVmssAdditionalUnattendContent
@@ -27,7 +27,7 @@ Add-AzureRmVmssAdditionalUnattendContent [-VirtualMachineScaleSet] <PSVirtualMac
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Setup tanpa Windows.
+Cmdlet **Add-AzureRmVmssAdditionalUnattendContent** menambahkan informasi ke file jawaban Windows Tanpa Pengawasan.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Add-AzureRmVmssAdditionalUnattendContent** menambahkan informasi ke fil
 PS C:\> Add-AzureRmVmssAdditionalUnattendContent -VirtualMachineScaleSet $VMSS -ComponentName  $AUCComponentName -Content  $AUCContent -PassName $AUCPassName -SettingName  $AUCSetting
 ```
 
-Perintah ini menambahkan informasi ke file Windows jawaban Penyetelan tanpa Windows.
+Perintah ini menambahkan informasi ke file jawaban Windows tanpa Windows.
 
 ## PARAMETERS
 
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

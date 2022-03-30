@@ -4,11 +4,11 @@ Module Guid: 3f7f32a5-5fe8-4593-ac9a-3e696d01b5ed
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.update.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 62d1de7579f1517aaff1fb7a33fcaadf4373ba999362ee0862b8a588d1f5fd79
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a976231b5490dafbefad1c6b1b941062b17220dc
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415300"
 ---
 # Azs.Update.Admin Module

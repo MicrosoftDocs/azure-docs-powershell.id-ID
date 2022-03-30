@@ -7,11 +7,11 @@ Help Version: 0.1.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/SignalR/Commands.SignalR/help/AzureRM.SignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/SignalR/Commands.SignalR/help/AzureRM.SignalR.md
-ms.openlocfilehash: aa10e1e04c5dd73391db1255182ad182198189d189eed4d850b3ae35d18c946b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b344e20a147ec506a43d5deebb675db920edb915
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414944"
 ---
 # Modul AzureRM.Signalr
