@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dns/new-azdnsrec
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Dns/Dns/help/New-AzDnsRecordConfig.md
-ms.openlocfilehash: c616a069de435a26a583471862bac25fa607e167
-ms.sourcegitcommit: 7e47562b11e670049c3a18af7498414da853a921
+ms.openlocfilehash: 5ae0b5b934b9d58b4262625591d9b5a86cd7249f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138165268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139924189"
 ---
 # New-AzDnsRecordConfig
 
 ## SYNOPSIS
 Membuat objek lokal catatan DNS baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dns/new-azdnsrecordconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -107,7 +110,7 @@ PS C:\> $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGr
 Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
 Kumpulan catatan merupakan tipe AAAA dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 3: Membuat RecordSet tipe CNAME
 ```
@@ -119,7 +122,7 @@ PS C:\> $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType CNAME -ResourceG
 Contoh ini membuat **RecordSet** bernama www di zona myzone.com.
 Kumpulan catatan merupakan tipe CNAME dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 4: Membuat Set Rekaman tipe MX
 ```
@@ -128,10 +131,10 @@ PS C:\> $Records += New-AzDnsRecordConfig -Exchange "mail.microsoft.com" -Prefer
 PS C:\> $RecordSet = New-AzDnsRecordSet -Name "www" -RecordType AAAA -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini akan membuat **RecordSet** bernama www dalam zona myzone.com.
+Perintah ini membuat **RecordSet** bernama www dalam zona myzone.com.
 Kumpulan catatan berjenis MX dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 5: Membuat Set Rekaman tipe NS
 ```
@@ -140,10 +143,10 @@ PS C:\> $Records += New-AzDnsRecordConfig -Nsdname ns1-01.azure-dns.com
 PS C:\> $RecordSet = New-AzDnsRecordSet -Name "ns1" -RecordType NS -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "myzone.com" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet bernama** ns1 dalam zona myzone.com.
+Perintah ini akan membuat **RecordSet** bernama ns1 dalam zona myzone.com.
 Kumpulan rekaman berjenis NS dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 6: Membuat Set Rekaman tipe PTR
 ```
@@ -152,10 +155,10 @@ PS C:\> $Records += New-AzDnsRecordConfig -Ptrdname www.contoso.com
 PS C:\> $RecordSet = New-AzDnsRecordSet -Name "4" -RecordType PTR -ResourceGroupName "MyResourceGroup" -TTL 3600 -ZoneName "3.2.1.in-addr.arpa" -DnsRecords $Records
 ```
 
-Perintah ini membuat **RecordSet bernama** 4 dalam zona 3.2.1.in-addr.arpa.
+Perintah ini akan membuat **RecordSet** bernama 4 dalam zona 3.2.1.in-addr.arpa.
 Kumpulan catatan merupakan tipe PTR dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 7: Membuat RecordSet tipe SRV
 ```
@@ -168,7 +171,7 @@ Perintah ini membuat **RecordSet bernama** _sip._tcp dalam zona myzone.com.
 Kumpulan catatan berjenis SRV dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS, mengarahkan ke alamat IP 2001.2.3.4.
 Layanan (sip) dan protokol (tcp) ditentukan sebagai bagian dari nama kumpulan catatan, bukan sebagai bagian dari data rekaman.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ### Contoh 8: Buat RecordSet tipe TXT
 ```
@@ -180,7 +183,7 @@ PS C:\> $RecordSet = New-AzDnsRecordSet -Name "text" -RecordType TXT -ResourceGr
 Perintah ini akan membuat **teks bernama RecordSet** dalam zona myzone.com.
 Kumpulan catatan merupakan tipe TXT dan memiliki TTL 1 jam (3600 detik).
 Daftar ini berisi satu catatan DNS.
-Untuk membuat Kumpulan **Rekaman menggunakan** hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
+Untuk membuat Kumpulan **Rekaman** menggunakan hanya satu baris pn_PowerShell_short, atau untuk membuat kumpulan catatan dengan beberapa rekaman, lihat Contoh 1.
 
 ## PARAMETERS
 
