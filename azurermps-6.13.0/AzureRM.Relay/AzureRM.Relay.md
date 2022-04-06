@@ -6,11 +6,11 @@ Help Version: 4.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/AzureRM.Relay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/AzureRM.Relay.md
-ms.openlocfilehash: 109f8bd64eca237cdcbd695b0a6b97058d796c6be29249518b1b7f77e6776c12
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: db4f0abbba55c3cf8b0b8fc2034ad437f5377188
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415380"
 ---
 # AzureRm.Relay Module

@@ -3,11 +3,11 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: AFAA1BDF-3F6A-437A-ADC2-C5EBD970F57D
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 1232c8ba52609b8bbd2b43deed295e6398296a9d6c0693a10bb262b909da115f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 777a1a6063eb0d318594aaaf9c1280bdc95333ee
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415664"
 ---
 # Get-AzureSiteRecoveryVaultSettingsFile
@@ -45,10 +45,10 @@ FilePath
 C:\Users\ContosoAdmin\ContosoVault_2015-02-02T05-39-23.VaultCredentials
 ```
 
-Perintah pertama mendapatkan penyimpanan Pemulihan Situs Azure aktif bernama ContosoVault menggunakan cmdlet **Get-AzureSiteRecoveryVault.**
+Perintah pertama mendapatkan penyimpanan Pemulihan Situs Azure aktif bernama ContosoVault menggunakan cmdlet **Get-AzureSiteRecoveryVault** .
 Perintah menyimpan vault tersebut di $Vault variabel.
 
-Perintah kedua mendapatkan file pengaturan untuk vault yang disimpan di $Vault.
+Perintah kedua akan mendapatkan file pengaturan untuk vault yang disimpan di $Vault.
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Situs
 Menentukan situs untuk mendapatkan file pengaturan.
-Untuk mendapatkan objek **Situs,** gunakan cmdlet **Get-AzureSiteRecoverySite.**
+Untuk mendapatkan objek **Situs** , gunakan cmdlet **Get-AzureSiteRecoverySite** .
 
 ```yaml
 Type: ASRSite
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

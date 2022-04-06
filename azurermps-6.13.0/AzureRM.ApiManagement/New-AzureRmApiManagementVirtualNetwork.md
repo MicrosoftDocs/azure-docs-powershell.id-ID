@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementVirtualNetwork.md
-ms.openlocfilehash: 055ca84b88c6de38fe63aca22e48e19184b0373f2b1e24f1cf1e5ed96e2e045d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: abfcbec55ba3f53986a63a8c0964320c10fc91ec
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415749"
 ---
 # New-AzureRmApiManagementVirtualNetwork
@@ -29,7 +29,7 @@ New-AzureRmApiManagementVirtualNetwork -Location <String> -SubnetResourceId <Str
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmApiManagementVirtualNetwork** adalah perintah bantuan untuk membuat instans **PsApiManagementVirtualNetwork**.
-Perintah ini digunakan dengan cmdlet **Update-AzureRmApiManagementDeployment.**
+Perintah ini digunakan dengan cmdlet **Update-AzureRmApiManagementDeployment** .
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ PS C:\>$service.VpnType = "External"
 PS C:\>Update-AzureRmApiManagementDeployment -ApiManagement $service
 ```
 
-Contoh ini membuat jaringan virtual lalu memanggil cmdlet **Update-AzureRmApiManagementDeployment.**
+Contoh ini membuat jaringan virtual lalu memanggil cmdlet **Update-AzureRmApiManagementDeployment** .
 
 ## PARAMETERS
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
