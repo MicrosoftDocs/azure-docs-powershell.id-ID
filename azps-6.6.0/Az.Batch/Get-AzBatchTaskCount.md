@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTaskCount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchTaskCount.md
-ms.openlocfilehash: 94f52954b64937f1fea6732e997a1ce56b14d1c3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cd1722a205e7f0e17b1e73ade266b4af86d2a1fd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346301"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140288095"
 ---
 # Get-AzBatchTaskCount
 
 ## SYNOPSIS
 Mendapatkan hitungan tugas untuk pekerjaan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchtaskcount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzBatchTaskCount [[-Job] <PSCloudJob>] -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Get-AzBatchTaskCount** mendapatkan jumlah tugas Azure Batch untuk pekerjaan Kumpulan.
-Tentukan pekerjaan dengan parameter *JobId* atau *parameter Job.*
+Tentukan pekerjaan dengan parameter *JobId* atau *parameter Job* .
 Hitungan tugas menyediakan hitungan tugas menurut status tugas aktif, berjalan atau selesai, dan hitungan tugas yang berhasil atau gagal. Tugas dalam keadaan mempersiapkan dihitung sebagai berjalan. Jika validationStatus tidak divalidasi, layanan Kumpulan belum dapat memeriksa jumlah status terhadap status tugas seperti yang dilaporkan di API Tugas Daftar. ValidasiStatus mungkin tidak divalidasi jika pekerjaan berisi lebih dari 200.000 tugas.
 
 ## EXAMPLES
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -Job
 Menentukan pekerjaan berisi tugas yang akan didaurkan cmdlet ini.
-Untuk mendapatkan objek **PSCloudJob,** gunakan Get-AzBatchJob cmdlet.
+Untuk mendapatkan objek **PSCloudJob** , gunakan Get-AzBatchJob cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJob
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
