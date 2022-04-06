@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzManagementGroup.md
-ms.openlocfilehash: 291b0b4de71f10da1d21b293eaa9b73b36b0759f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5ae15d4536e06796031311d62eae573a17f6b7e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344798"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099225"
 ---
 # New-AzManagementGroup
 
 ## SYNOPSIS
 Membuat Grup Manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azmanagementgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Pembuatan grup baru dengan `DisplayName` dan `ParentId` mengatur ke `null` . `DisplayName`The will be same as the and the parent of the group will be the `GroupName` tenant.  
+Pembuatan grup baru dengan dan `DisplayName` mengatur `ParentId` ke `null`. The `DisplayName` will be same as the `GroupName` and the parent of the group will be the tenant.  
 
 ### Contoh 2: Membuat Grup Manajemen dengan nama tampilan
 ```
@@ -70,7 +73,7 @@ ParentName        : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ParentDisplayName : 14307de0-5e6f-46cf-b2ba-64a062964d30
 ```
 
-Dalam kasus ini, induk grup akan menjadi penyewa dan `DisplayName` akan diatur ke nilai yang diberikan.
+Dalam kasus ini, induk grup akan menjadi penyewa dan akan `DisplayName` diatur ke nilai yang diberikan.
 
 ### Contoh 3: Buat Grup Manajemen dengan induk dan nama tampilan
 ```
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzTemplateSpec.md
-ms.openlocfilehash: daee3ab273e4918b32a655010a3e5925299a0220
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9750983c3a0e92fe7105cc8302f327850b043403
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355265"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140099117"
 ---
 # Remove-AzTemplateSpec
 
 ## SYNOPSIS
 Menghapus Spesifikasi Templat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-aztemplatespec) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Menghapus versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam g
 PS C:\> Remove-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/MyTemplateSpec' -Version 'v1.0'
 ```
 
-Menghapus versi 'v1.0' dari Template Spec bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' dari \{ subId langganan \} .
+Menghapus versi 'v1.0' dari Spesifikasi Templat bernama 'MyTemplateSpec' dalam grup sumber daya 'myRG' dari subId \{langganan\}.
 
 ### Contoh 3: Menghapus Spesifikasi Templat dan semua versi menurut nama
 ```powershell
@@ -62,7 +65,7 @@ Menghapus Spesifikasi Templat yang bernama 'MyTemplateSpec' dan semua versinya d
 PS C:\> Remove-AzTemplateSpec -ResourceId '/subscriptions/{subId}/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/MyTemplateSpec' -ResourceGroupName 'myRG'
 ```
 
-Menghapus Spesifikasi Templat bernama 'MyTemplateSpec' dan semua versinya dalam grup sumber daya 'myRG' dari \{ subId langganan \} .
+Menghapus Spesifikasi Templat bernama 'MyTemplateSpec' dan semua versinya dalam grup sumber daya 'myRG' dari subId \{langganan\}.
 
 ## PARAMETERS
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

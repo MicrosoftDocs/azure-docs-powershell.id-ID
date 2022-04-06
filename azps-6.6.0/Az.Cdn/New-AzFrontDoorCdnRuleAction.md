@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRuleAction.md
-ms.openlocfilehash: 8f5dd1d36ee4215dd0fddb4b5547ba1ba8c03e4a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 57251e4b99a8449acb18b0f5782954477b9690a6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353690"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140287591"
 ---
 # New-AzFrontDoorCdnRuleAction
 
 ## SYNOPSIS
 Membuat tindakan aturan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnruleaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -CacheDuration
 Durasi untuk konten yang diperlukan untuk disingginggasi.
-Format yang diperbolehkan adalah \[ d. \] hh:mm:ss
+Format yang diperbolehkan adalah \[d.\] hh:mm:ss
 
 ```yaml
 Type: String
@@ -154,8 +157,8 @@ Accept wildcard characters: False
 ### -CustomQueryString
 Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
 Pengaturan nilai ini akan mengganti setiap string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
-String kueri harus dalam \<key\> = \<value\> format.
-? dan & akan ditambahkan secara otomatis, jadi jangan sertakan.
+String kueri harus dalam \<key\>=\<value\> format.
+? dan & akan ditambahkan secara otomatis, jadi jangan sertakan mereka.
 
 ```yaml
 Type: String
@@ -368,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

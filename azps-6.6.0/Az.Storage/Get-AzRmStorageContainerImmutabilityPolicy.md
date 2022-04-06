@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: a17d493a933de9b76705cdea871d4aab44ea9fcd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f0dc4d6875a707f725d8ca79a2867ff99b454194
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346649"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244223"
 ---
 # Get-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Mendapatkan ImmutabilityPolicy wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azrmstoragecontainerimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRmStorageContainerImmutabilityPolicy -Container <PSContainer> [-Etag <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPolicy penampung blob Storage
+Cmdlet **Get-AzRmStorageContainerImmutabilityPolicy** mendapatkan ImmutabilityPolicy penampung Storage blob
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage objek akun dan wadah penampung.
+Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage objek akun dan nama wadah.
 
 ### Contoh 3: Get ImmutabilityPolicy of a Storage blob container with Storage container object
 ```
@@ -63,7 +66,7 @@ PS C:\>$containerObject = Get-AzStorageContainer -ResourceGroupName "myResourceG
 PS C:\>Get-AzRmStorageContainerImmutabilityPolicy -Container $containerObject
 ```
 
-Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage wadah.
+Perintah ini mendapatkan ImmutabilityPolicy pada wadah Storage blob dengan Storage wadah objek.
 
 ## PARAMETERS
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

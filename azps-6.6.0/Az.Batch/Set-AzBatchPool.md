@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchPool.md
-ms.openlocfilehash: 5adc398369d838ffc4afa1478fd419f03de06572
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a928d783f8472fd1014aa942fb783aeb16fdc24c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366206"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140287969"
 ---
 # Set-AzBatchPool
 
 ## SYNOPSIS
 Memperbarui properti kolam renang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzBatchPool [-Pool] <PSCloudPool> -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Set-AzBatchPool** memperbarui properti kumpulan di layanan Azure Batch.
-Gunakan cmdlet Get-AzBatchPool untuk mendapatkan objek **PSCloudPool.**
+Gunakan cmdlet Get-AzBatchPool untuk mendapatkan objek **PSCloudPool** .
 Modifikasi properti objek itu, lalu gunakan cmdlet saat ini untuk melakukan perubahan Anda ke layanan Batch.
 
 ## EXAMPLES
@@ -41,7 +44,7 @@ PS C:\> $Pool.StartTask = $StartTask
 PS C:\> Set-AzBatchPool -Pool $Pool -BatchContext $Context
 ```
 
-Perintah pertama mendapatkan kolam renang dengan menggunakan **Get-AzBatchPool,** lalu menyimpannya di $Pool berbeda.
+Perintah pertama mendapatkan kolam renang dengan menggunakan **Get-AzBatchPool**, lalu menyimpannya di $Pool berbeda.
 Tiga perintah berikutnya memodifikasi spesifikasi mulai tugas pada $Pool baru.
 Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $Pool.
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
