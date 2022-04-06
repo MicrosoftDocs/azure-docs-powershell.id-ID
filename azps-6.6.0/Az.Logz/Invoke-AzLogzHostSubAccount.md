@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostSubAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostSubAccount.md
-ms.openlocfilehash: 19a9ae3a4ab80ed4bcb4497088c888599f7e748d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6f6e8e15e7d65a5a299d22a8ee979e93b8bb28aa
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140283793"
 ---
 # Invoke-AzLogzHostSubAccount
 
 ## SYNOPSIS
 Mengembalikan payload yang perlu disampaikan sebagai permintaan untuk penginstalan agen Logz.io pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/invoke-azlogzhostsubaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,9 +48,9 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io pada VM.
+Perintah ini mengembalikan muatan akun sub logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io pada VM.
 
-### Contoh 2: Mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io pada VM dengan pipeline
+### Contoh 2: Mengembalikan payload sub akun logz yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io dalam VM dengan pipeline
 ```powershell
 PS C:\> Get-AzLogzSubAccount -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 -Name logz-pwshsub01 | Invoke-AzLogzHostSubAccount
 
@@ -56,7 +59,7 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan muatan dari sub akun logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io dalam VM melalui pipeline.
+Perintah ini mengembalikan muatan akun sub logz yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io dalam VM dengan saluran.
 
 ## PARAMETERS
 
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -202,7 +205,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ILogzIdentity> : Parameter Identitas
+INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

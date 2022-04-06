@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubKey.md
-ms.openlocfilehash: a1730602f245af16715a4809bf863c1b6f85911c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d0176982a5551769c371c978061301ff790373fd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363161"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137383"
 ---
 # Get-AzEventHubKey
 
 ## SYNOPSIS
 Dapatkan detail kunci utama dari aturan otorisasi Hub Kejadian yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -52,14 +55,14 @@ PS C:\> Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName 
 PS C:\> Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName
 ```
 
-Mendapatkan detail string dan tombol koneksi Utama dan Sekunder untuk aturan otorisasi \` MyAuthRuleName \` .
+Dapatkan detail string dan tombol koneksi Utama dan Sekunder untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ### Contoh 3: Alias (Konfigurasi GeoRecovery)
 ```powershell
 PS C:\> Get-AzEventHubKey -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AliasName MyAliasName -Name MyAuthRuleName
 ```
 
-Mendapatkan detail string dan kunci koneksi Utama, Sekunder, AliasPrimary dan AliasSecstringry untuk aturan otorisasi \` MyAuthRuleName \` .
+Mendapatkan detail string dan tombol koneksi Utama, Sekunder, AliasPrimary dan AliasSecstringry untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ## PARAMETERS
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

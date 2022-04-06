@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/remove-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoClusterLanguageExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Remove-AzKustoClusterLanguageExtension.md
-ms.openlocfilehash: 5e1858718085d28a4b9f41d36b21e5913f71e5a1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d2368cfe2060a4dc0e62ec1bb50405b8d1a9af29
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341018"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136879"
 ---
 # Remove-AzKustoClusterLanguageExtension
 
 ## SYNOPSIS
 Hapus daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kusto/remove-azkustoclusterlanguageextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,7 +237,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKustoIdentity> : Parameter Identitas
+INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
   - `[ClusterName <String>]`: Nama kluster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.

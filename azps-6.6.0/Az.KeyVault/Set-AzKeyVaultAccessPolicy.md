@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/set-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Set-AzKeyVaultAccessPolicy.md
-ms.openlocfilehash: f923d92a6f88ca46aa813f0ff4b5e6b0734f3360
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bb37a4cf538369c903dd5ba8ff0539dd68fdce7b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354665"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137005"
 ---
 # Set-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
 Memberikan atau mengubah izin yang sudah ada untuk pengguna, aplikasi, atau grup keamanan untuk melakukan operasi dengan kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -242,9 +245,9 @@ Access Policies                  :
 Tags                             :
 ```
 
-Perintah pertama memberikan izin bagi pengguna dalam Azure Active Directory Anda, untuk menjalankan operasi kunci dan rahasia dengan kunci PattiFuller@contoso.com vault yang bernama Contoso03Vault. Parameter *PassThru* menghasilkan objek yang diperbarui yang dikembalikan oleh cmdlet.
-Perintah kedua mengubah izin yang diberikan pada perintah pertama, untuk sekarang memungkinkan mendapatkan rahasia selain mengatur PattiFuller@contoso.com dan menghapusnya. Izin operasi utama tetap tidak berubah setelah perintah ini.
-Perintah terakhir selanjutnya mengubah izin yang sudah ada untuk PattiFuller@contoso.com menghapus semua izin ke operasi utama. Izin operasi rahasia tidak berubah setelah perintah ini.
+Perintah pertama memberikan izin bagi pengguna dalam Azure Active Directory Anda, PattiFuller@contoso.comuntuk menjalankan operasi kunci dan rahasia dengan kunci vault yang bernama Contoso03Vault. Parameter *PassThru* menghasilkan objek yang diperbarui yang dikembalikan oleh cmdlet.
+Perintah kedua mengubah izin PattiFuller@contoso.com yang diberikan pada perintah pertama, untuk sekarang memungkinkan mendapatkan rahasia selain mengatur dan menghapusnya. Izin operasi utama tetap tidak berubah setelah perintah ini.
+Perintah terakhir selanjutnya mengubah izin yang sudah ada untuk menghapus PattiFuller@contoso.com semua izin ke operasi utama. Izin operasi rahasia tidak berubah setelah perintah ini.
 
 ### Contoh 2: Memberikan izin untuk prinsipal layanan aplikasi untuk rahasia baca dan tulis
 ```powershell
@@ -252,8 +255,8 @@ PS C:\> Set-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ServicePrincipal
 ```
 
 Perintah ini memberikan izin untuk aplikasi untuk penyimpanan kunci yang bernama Contoso03Vault.
-Parameter *ServicePrincipalName* menentukan aplikasi. Aplikasi harus didaftarkan di akun Azure Active Directory. Nilai parameter *ServicePrincipalName* harus merupakan nama prinsipal layanan aplikasi atau GUID ID aplikasi.
-Contoh ini menentukan nama prinsipal layanan `http://payroll.contoso.com` , dan perintah memberikan izin aplikasi untuk membaca dan menulis rahasia.
+Parameter *ServicePrincipalName* menentukan aplikasi. Aplikasi harus terdaftar di komputer Azure Active Directory. Nilai parameter *ServicePrincipalName* harus merupakan nama prinsipal layanan aplikasi atau GUID ID aplikasi.
+Contoh ini menentukan nama prinsipal layanan `http://payroll.contoso.com`, dan perintah memberikan izin aplikasi untuk membaca dan menulis rahasia.
 
 ### Contoh 3: Berikan izin untuk aplikasi menggunakan ID objeknya
 ```powershell
@@ -286,7 +289,7 @@ PS C:\> Set-AzKeyVaultAccessPolicy -VaultName 'myownvault' -ObjectId (Get-AzADGr
 Perintah pertama menggunakan cmdlet Get-AzADGroup untuk mendapatkan semua grup Direktori Aktif. Dari output, Anda melihat 3 grup yang dikembalikan, bernama **grup1**, **grup2**, dan **grup3**. Beberapa grup dapat memiliki nama yang sama tetapi selalu mempunyai ObjectId yang unik. Ketika lebih dari satu grup dengan nama yang sama dikembalikan, gunakan ObjectId dalam output untuk mengidentifikasi yang ingin Anda gunakan.
 Anda lalu menggunakan output perintah ini dengan Set-AzKeyVaultAccessPolicy untuk memberikan izin ke grup2 untuk penyimpanan kunci Anda, bernama **myownvault**. Contoh ini menghitung grup yang bernama sebaris 'grup2' dalam baris perintah yang sama.
 Mungkin terdapat beberapa grup dalam daftar yang dikembalikan yang bernama 'grup2'.
-Contoh ini memilih yang pertama, yang ditunjukkan dengan indeks \[ 0 \] dalam daftar yang dikembalikan.
+Contoh ini memilih yang pertama, yang ditunjukkan dengan indeks \[0\] dalam daftar yang dikembalikan.
 
 ### Contoh 7: Berikan akses Perlindungan Informasi Azure ke kunci penyewa yang dikelola pelanggan (BYOK)
 ```powershell
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau prinsipal layanan dalam Azure Active Directory yang akan diberikan izin.
+Menentukan ID objek pengguna atau prinsipal layanan dalam Azure Active Directory yang akan diberi izin.
 
 ```yaml
 Type: System.String
@@ -703,7 +706,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

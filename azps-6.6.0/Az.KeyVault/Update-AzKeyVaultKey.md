@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultKey.md
-ms.openlocfilehash: 67c58522e86f1c336c42cc0a5d5ceb83332180b7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b3428f0af35e1785351368b4571b47a084edde09
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357002"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136933"
 ---
 # Update-AzKeyVaultKey
 
 ## SYNOPSIS
 Memperbarui atribut kunci di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -66,8 +69,8 @@ Tags           : Name        Value
                  Accounting  true
 ```
 
-Perintah pertama membuat objek **DateTime** menggunakan cmdlet **Get-Date.** Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam variabel $Expires baru.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Perintah pertama membuat objek **DateTime** menggunakan cmdlet **Get-Date** . Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam $Expires variabel.
+Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
 Perintah kedua membuat variabel untuk menyimpan nilai tag dengan tingkat keparahan tinggi dan Akuntansi.
 Perintah terakhir mengubah kunci bernama ITSoftware. Perintah mengaktifkan kunci, mengatur waktu kedaluwarsanya ke waktu yang disimpan di $Expires, dan mengatur tag yang disimpan di $Tags.
 
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

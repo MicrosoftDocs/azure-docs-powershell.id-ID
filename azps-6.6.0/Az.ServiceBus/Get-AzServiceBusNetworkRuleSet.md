@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusNetworkRuleSet.md
-ms.openlocfilehash: 2b207d9c29ec120de43497885da69e45780a8d2b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4afa8cadeca438154f2105b51e81273fba045544
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339398"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140098757"
 ---
 # Get-AzServiceBusNetworkRuleSet
 
 ## SYNOPSIS
 Mendapatkan detail kumpulan nama NetworkruleSet Hub Acara di langganan Azure saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusnetworkruleset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

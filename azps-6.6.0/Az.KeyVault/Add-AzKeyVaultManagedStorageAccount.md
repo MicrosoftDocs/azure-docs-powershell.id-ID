@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: aeb13d3b4fec2f7899876b675e16e8290f29b129
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c46deb560cca376dad2003428891c77868ec407d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385501"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137203"
 ---
 # Add-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Menambahkan Akun Azure Storage yang sudah ada ke key vault tertentu agar kunci-kuncinya dikelola oleh layanan Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Kunci Vault otomatis meregenerasi dan beralih kunci aktif berdasarkan periode re
 
 ## EXAMPLES
 
-### Contoh 1: Atur akun Azure Storage dengan Key Vault untuk mengelola tombolnya
+### Contoh 1: Mengatur Azure Storage Akun dengan Key Vault untuk mengelola kuncinya
 ```powershell
 PS C:\> $storage = Get-AzStorageAccount -ResourceGroupName "mystorageResourceGroup" -StorageAccountName "mystorage"
 PS C:\> $servicePrincipal = Get-AzADServicePrincipal -ServicePrincipalName cfa8b339-82a2-471a-a3c9-0fc0be7a4093
@@ -55,9 +58,9 @@ Updated             : 5/21/2018 11:55:58 PM
 Tags                :
 ```
 
-Mengatur akun Storage dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jeda 90 hari.
+Mengatur akun Storage Anda dengan Key Vault agar kuncinya dikelola oleh Key Vault. Kumpulan kunci aktif adalah 'key1'. Kunci ini akan digunakan untuk menghasilkan token sas. Key Vault akan meregenerasi kunci 'key2' setelah periode regenerasi dari waktu perintah ini dan mengaturnya sebagai kunci aktif. Proses regenerasi otomatis ini akan berlanjut antara 'key1' dan 'key2' dengan jeda 90 hari.
 
-### Contoh 2: Atur Akun Azure Storage Klasik dengan Key Vault untuk mengelola tombolnya
+### Contoh 2: Mengatur Akun Azure Storage Klasik dengan Key Vault untuk mengelola tombolnya
 ```powershell
 PS C:\> $regenerationPeriod = [System.Timespan]::FromDays(90)
 PS C:\> Add-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -AccountResourceId '/subscriptions/<subscription id>/resourceGroups/myresourcegroup/providers/Microsoft.ClassicStorage/storageAccounts/mystorageaccount' -ActiveKeyName 'Primary' -RegenerationPeriod $regenerationPeriod
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

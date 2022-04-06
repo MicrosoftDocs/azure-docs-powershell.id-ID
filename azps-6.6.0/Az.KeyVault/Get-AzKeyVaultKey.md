@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultKey.md
-ms.openlocfilehash: 3edd211fcad3c0ff1215cbda0960801774c0e8b6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2f017f4df5537881f46ae861873726be5be510fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362810"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140137185"
 ---
 # Get-AzKeyVaultKey
 
 ## SYNOPSIS
 Mendapatkan kunci Kunci Vault. Harap catat bahwa informasi mendetail tentang kunci, seperti tipe kunci atau ukuran kunci, hanya tersedia ketika membuat kueri versi kunci tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -385,8 +388,8 @@ Accept wildcard characters: False
 ### -IncludeVersions
 Mengindikasikan bahwa cmdlet ini mendapatkan semua versi kunci.
 Versi kunci saat ini adalah yang pertama dalam daftar.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName.*
-Jika Anda tidak menentukan parameter *IncludeVersions,* cmdlet akan mendapatkan versi kunci saat ini dengan Nama yang *ditentukan.*
+Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet akan mendapatkan versi kunci saat ini dengan Nama yang *ditentukan*.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -520,7 +523,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

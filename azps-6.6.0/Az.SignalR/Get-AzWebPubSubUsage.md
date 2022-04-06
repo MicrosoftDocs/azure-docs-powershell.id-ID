@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubUsage.md
-ms.openlocfilehash: cab7eb58f775a56f842b93930fbba440d176c036
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e7ace559d835d485692108f261f56fd0d229bc0a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374270"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140098325"
 ---
 # Get-AzWebPubSubUsage
 
 ## SYNOPSIS
 Mencantumkan kuota penggunaan sumber daya menurut lokasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azwebpubsubusage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ NameValue          : SignalRTotalUnits
 Unit               : Count
 ```
 
-Contoh akan pipes `Get-AzWebPubSubUsage -Location eastus` hasil untuk menampilkan nilai semua properti dari `Format-list` hasil.
+Contoh akan pipes hasil `Get-AzWebPubSubUsage -Location eastus` untuk `Format-list` menampilkan nilai semua properti dari hasil.
 
 ## PARAMETERS
 
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

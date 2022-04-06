@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/invoke-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Invoke-AzLogzHostMonitor.md
-ms.openlocfilehash: 00354550560daef8d0f1dd937d21a33c3e470404
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 311517cd32fb07d78f0cfe848abe2c77626eda22
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387598"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140283775"
 ---
 # Invoke-AzLogzHostMonitor
 
 ## SYNOPSIS
-Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io pada VM.
+Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io agen pada VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/invoke-azlogzhostmonitor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Invoke-AzLogzHostMonitor -InputObject <ILogzIdentity> [-DefaultProfile <PSObject
 ```
 
 ## DESCRIPTION
-Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan agen Logz.io pada VM.
+Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io agen pada VM.
 
 ## EXAMPLES
 
@@ -45,9 +48,9 @@ ApiKey                           Region
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   westus2
 ```
 
-Perintah ini mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io pada VM.
+Perintah ini mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk penginstalan Logz.io pada VM.
 
-### Contoh 2: Mengembalikan muatan yang perlu disampaikan dalam badan permintaan untuk menginstal agen Logz.io pada VM dengan pipeline
+### Contoh 2: Mengembalikan payload yang perlu disampaikan dalam badan permintaan untuk menginstal Logz.io pada VM dengan pipeline
 ```powershell
 PS C:\> Get-AzLogzMonitor -ResourceGroupName logz-rg-test -MonitorName pwsh-logz04 | Invoke-AzLogzHostMonitor
 
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -187,7 +190,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ILogzIdentity> : Parameter Identitas
+INPUTOBJECT <ILogzIdentity>: Parameter Identitas
   - `[ConfigurationName <String>]`: 
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[MonitorName <String>]`: Memantau nama sumber daya

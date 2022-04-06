@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzWebPubSubKey.md
-ms.openlocfilehash: b7ef221a45f2c7a531c27c59919cf233055a516f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a53c1ccb5bd1d06d64acce65168c71d42f318c36
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374273"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140098397"
 ---
 # Get-AzWebPubSubKey
 
 ## SYNOPSIS
 Dapatkan kunci akses sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azwebpubsubkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ SecondaryConnectionString : Endpoint=https://psdemo-wps.webpubsub.azure.com;Acce
 SecondaryKey              : ********
 ```
 
-Contoh mendapatkan kunci akses dari sumber daya PubSub Web lalu pipa hasilnya untuk `Format-List` melihat semua nilai properti hasilnya.
+Contoh mendapatkan kunci akses dari sumber daya PubSub Web lalu `Format-List` pipa hasilnya untuk melihat semua nilai properti hasilnya.
 
 ### Contoh 2: Mendapatkan kunci akses sumber daya PubSub Web melalui identitas
 ```powershell
@@ -59,7 +62,7 @@ SecondaryConnectionString : Endpoint=https://psdemo-wps.webpubsub.azure.com;Acce
 SecondaryKey              : ********
 ```
 
-Contoh mendapatkan kunci akses dari sumber daya PubSub Web lalu pipa hasilnya untuk `Format-List` melihat semua nilai properti hasilnya.
+Contoh mendapatkan kunci akses dari sumber daya PubSub Web lalu `Format-List` pipa hasilnya untuk melihat semua nilai properti hasilnya.
 
 ## PARAMETERS
 
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,7 +194,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebPubSubIdentity> : Parameter Identitas
+INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: kawasan

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelBookmark.md
-ms.openlocfilehash: ae55414371ce56b3b9c27857af877639cbabf85e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 96ab45367ecab95d585f2521f7fea4507b0894e0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156104"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140098847"
 ---
 # Get-AzSentinelBookmark
 
@@ -18,6 +18,9 @@ ms.locfileid: "136156104"
 Mendapatkan Bookmark. <br/>
 Bookmark digunakan untuk mempertahankan kueri, komentar, dan tag untuk insiden tertentu.<br/>
 Buat Bookmark terlebih dahulu, lalu tambahkan ke insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentinelbookmark) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,9 +43,9 @@ Get-AzSentinelBookmark -ResourceId <String> [-DefaultProfile <IAzureContextConta
 
 ## DESCRIPTION
 Cmdlet **Get-AzSentinelBookmark** mendapatkan Bookmark dari ruang kerja yang ditentukan.
-Jika Anda menentukan parameter *BookmarkId,* satu objek Bookmark dikembalikan.
-Jika Anda tidak menentukan parameter *BookmarkId,* array yang berisi semua Bookmark di ruang kerja tertentu akan dikembalikan.
-Anda bisa menggunakan objek Bookmark untuk memperbarui Bookmark, misalnya Anda bisa menambahkan Tag dan Catatan **Bookmark.**
+Jika Anda menentukan parameter *BookmarkId* , satu objek Bookmark dikembalikan.
+Jika Anda tidak menentukan parameter *BookmarkId* , array yang berisi semua Bookmark di ruang kerja tertentu akan dikembalikan.
+Anda bisa menggunakan objek Bookmark untuk memperbarui Bookmark, misalnya Anda bisa menambahkan Tag dan Catatan **Bookmark**.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Contoh ini mendapatkan semua Bookmark di ruang kerja tertentu, lalu menyimpannya
 PS C:\> $Bookmark = Get-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -BookmarkId "MyBookmarkId"
 ```
 
-Contoh ini mendapatkan Bookmark di ruang kerja tertentu, lalu menyimpannya di $Bookmark simpan.
+Contoh ini mendapatkan Bookmark di ruang kerja tertentu, lalu menyimpannya di variabel $Bookmark tertentu.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
