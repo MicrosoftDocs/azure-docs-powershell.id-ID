@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/start-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigrationCleanup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Start-AzMigrateTestMigrationCleanup.md
-ms.openlocfilehash: 9802952a65b9793c1f2ce700cdeeddd26f4c81ee
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5c704412152a79407694c1ff1c74622e2645f7c6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361193"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140135889"
 ---
 # Start-AzMigrateTestMigrationCleanup
 
 ## SYNOPSIS
 Membersihkan migrasi percobaan untuk server yang replikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/start-azmigratetestmigrationcleanup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Menentukan server replikasi tempat pembersihan migrasi percobaan perlu dimulai.
-Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication To, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -181,7 +184,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem> : Menentukan server replikasi tempat pembersihan migrasi uji perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication
+INPUTOBJECT <IMigrationItem>: Menentukan server replikasi tempat pembersihan migrasi uji perlu dimulai. Objek server dapat diambil menggunakan cmdlet Get-AzMigrateServerReplication
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

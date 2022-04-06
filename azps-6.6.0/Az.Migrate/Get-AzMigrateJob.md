@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateJob.md
-ms.openlocfilehash: 05bab56847933bc3105857afef5fb477d7844c54
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 42178774f99befb2c65d1a1d8e6d4321008df0e5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156790"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140135943"
 ---
 # Get-AzMigrateJob
 
 ## SYNOPSIS
 Mengambil status pekerjaan Azure Migrate.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigratejob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Get-AzMigrateJob -ProjectID <String> -ResourceGroupID <String> [-SubscriptionId 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzMigrateJob cmdlet tersebut masih menggunakan status pekerjaan Azure Migrate.
+Cmdlet Get-AzMigrateJob cmdlet tersebut mencoba kembali status pekerjaan Azure Migrate.
 
 ## EXAMPLES
 
@@ -81,7 +84,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 Hal ini mendapatkan pekerjaan dengan ID-nya.
 
-### Contoh 2: List by resource group and project
+### Contoh 2:  List by resource group and project
 ```powershell
 PS C:\> Get-AzMigrateJob -ResourceGroupName 'azmigratepwshtestasr13072020' -ProjectName 'AzMigrateTestProjectPWSH'
 
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -308,7 +311,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IJob> : Menentukan objek pekerjaan dari server yang replikasi.
+INPUTOBJECT <IJob>: Menentukan objek pekerjaan dari server yang replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ActivityId <String>]`: Id aktivitas.
   - `[AllowedAction <String[]>]`: Tindakan yang diperbolehkan untuk pekerjaan.
@@ -334,7 +337,7 @@ INPUTOBJECT <IJob> : Menentukan objek pekerjaan dari server yang replikasi.
   - `[StartTime <DateTime?>]`: Waktu mulai.
   - `[State <String>]`: Status Pekerjaan. Ini adalah salah satu nilai ini - NotStarted, InProgress, Succeeded, Failed, Cancelled, Suspended atau Other.
   - `[StateDescription <String>]`: Deskripsi status Pekerjaan. Misalnya - Untuk status Berhasil, deskripsi dapat Diselesaikan, PartiallySucceed, CompletedWithInformation atau Skipped.
-  - `[TargetInstanceType <String>]`: Tipe objek yang terpengaruh yang merupakan pengguna Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType kelas.
+  - `[TargetInstanceType <String>]`: Tipe objek yang terpengaruh yang merupakan pengguna Microsoft.Azure.SiteRecovery.V2015_11_10.AffectedObjectType.
   - `[TargetObjectId <String>]`: Id Objek yang terpengaruh.
   - `[TargetObjectName <String>]`: Nama objek yang terpengaruh.
   - `[Task <IAsrTask[]>]`: Tugas.

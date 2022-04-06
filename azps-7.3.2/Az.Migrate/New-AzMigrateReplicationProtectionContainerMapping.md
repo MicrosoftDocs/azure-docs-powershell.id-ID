@@ -5,20 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/new-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/New-AzMigrateReplicationProtectionContainerMapping.md
-ms.openlocfilehash: 817f553d5622a5b1c9690afaa32510273099c6f5
+ms.openlocfilehash: 1dc97c9ccc8b425621218e537c4988f30d514568
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140135907"
+ms.locfileid: "140008274"
 ---
 # New-AzMigrateReplicationProtectionContainerMapping
 
 ## SYNOPSIS
 Operasi ini untuk membuat pemetaan wadah proteksi.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/new-azmigratereplicationprotectioncontainermapping) untuk informasi terkini.
 
 ## SYNTAX
 

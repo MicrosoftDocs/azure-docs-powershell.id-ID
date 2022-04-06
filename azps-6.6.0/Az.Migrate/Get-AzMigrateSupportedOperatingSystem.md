@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/get-azmi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateSupportedOperatingSystem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Get-AzMigrateSupportedOperatingSystem.md
-ms.openlocfilehash: 2fc396aa1dc499fb3c806cf72d63234deac73842
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6a9f7a57810af69638f5d712b27fb161bcb29e15
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367494"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140135925"
 ---
 # Get-AzMigrateSupportedOperatingSystem
 
 ## SYNOPSIS
 Mendapatkan data sistem operasi yang didukung oleh SRS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/get-azmigratesupportedoperatingsystem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +169,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrateIdentity> : Parameter Identitas
+INPUTOBJECT <IMigrateIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Jalankan sebagai nama arm akun.
   - `[AlertSettingName <String>]`: Nama konfigurasi pemberitahuan email.
   - `[ClusterName <String>]`: Nama ARM kluster.
