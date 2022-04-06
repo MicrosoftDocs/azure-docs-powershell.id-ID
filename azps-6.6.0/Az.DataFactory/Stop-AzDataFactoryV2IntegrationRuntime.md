@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2IntegrationRuntime.md
-ms.openlocfilehash: 69ed1b88c6fbe743e9f8fa36abe3a4ccfd56473e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6c1b21e91fd7c4e4dc50deb161e807c709714902
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343565"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140256877"
 ---
 # Stop-AzDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
 Menghentikan runtime integrasi khusus yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2integrationruntime) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Stop-AzDataFactoryV2IntegrationRuntime [-Force] [-InputObject] <PSIntegrationRun
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataFactoryV2IntegrationRuntime** menghentikan runtime integrasi khusus terkelola dalam status 'Dimulai', yang dimulai oleh cmdlet Start-AzDataFactoryV2IntegrationRuntime lanjut. Sumber daya dirilis dan transfer status ke 'Dihentikan'.
+Cmdlet **Stop-AzDataFactoryV2IntegrationRuntime** menghentikan runtime integrasi khusus terkelola dalam status 'Dimulai', yang dimulai oleh cmdlet Start-AzDataFactoryV2IntegrationRuntime cmdlet. Sumber daya dirilis dan transfer status ke 'Dihentikan'.
 
 ## EXAMPLES
 
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryPipeline.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryPipeline.md
-ms.openlocfilehash: d1be899695e80f2ef3ad59dfd86081cf56b6b99f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: de0d25be77ef38371d2dfbc8eddb16941b1d53b6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383149"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140257039"
 ---
 # New-AzDataFactoryPipeline
 
 ## SYNOPSIS
 Membuat saluran di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/new-azdatafactorypipeline) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ New-AzDataFactoryPipeline [[-Name] <String>] [-DataFactory] <PSDataFactory> [-Fi
 ## DESCRIPTION
 Cmdlet **New-AzDataFactoryPipeline** membuat saluran di Azure Data Factory.
 Jika Anda menentukan nama untuk pipeline yang sudah ada, cmdlet meminta konfirmasi Anda sebelum menggantikan saluran.
-Jika Anda menentukan parameter *Paksa,* cmdlet menggantikan saluran yang sudah ada tanpa konfirmasi.
+Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan saluran yang sudah ada tanpa konfirmasi.
 Jalankan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
 - Membuat layanan tertaut. 
@@ -63,7 +66,7 @@ File ini mencakup informasi tentang aktivitas seperti Salin Aktivitas dan Aktivi
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini membuat pipeline untuk pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
