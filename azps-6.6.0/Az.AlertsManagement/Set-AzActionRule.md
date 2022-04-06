@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzActionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzActionRule.md
-ms.openlocfilehash: de4ffbf4be628547923da8da49f5badad5543f02
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: de736d79fc11337f52a42f833ef2271574bfe785
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337756"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080469"
 ---
 # Set-AzActionRule
 
 ## SYNOPSIS
 Membuat atau memperbarui aturan tindakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/set-azactionrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertContextCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 Contains:smartgroups
 
 ```yaml
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleIdCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 Sama dengan:/langganan/ad825170-845c-47db-8f00-11978947b089/resourceGroups/abvarma/providers/microsoft.insights/metricAlerts/test-mrmc-vm-abvarma
 
 ```yaml
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -DescriptionCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 Contains:Test Alert
 
 ```yaml
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 NotEquals:Resolved
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorServiceCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 Sama dengan:Platform,Analitik Log
 
 ```yaml
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReccurentValue
-Nilai reccurent, jika ada. Dalam hal Mingguan - \[ 1,2 Dalam hal \] Bulanan - \[ 1,3,5,30\]
+Nilai reccurent, jika ada. Dalam hal Mingguan - \[1,2\] Dalam hal Bulanan - \[1,3,5,30\]
 
 ```yaml
 Type: System.Int32[]
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -SeverityCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 Equals:Sev0,Sev1
 
 ```yaml
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceTypeCondition
-Format yang diharapkan - { \<operation\> : \<comma separated list of values\> } Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
 Berisi:Mesin Virtual,Storage Saya
 
 ```yaml
@@ -423,7 +426,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageDirectory.md
-ms.openlocfilehash: 0c3d4de0ec1ab600ab3ef3151d6e97e05d140076
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3195487b0fb95a919d91213817b3344782239647
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364133"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140095859"
 ---
 # Remove-AzStorageDirectory
 
 ## SYNOPSIS
 Menghapus direktori.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstoragedirectory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
+Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini akan menghapus folder yang ditentukan oleh parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory cmdlet.
 Anda juga dapat menggunakan cmdlet **Get-AzStorageFile** untuk mendapatkan direktori.
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Mengindikasikan bahwa, jika cmdlet ini berhasil, cmdlet ini akan mengembalikan nilai $True.
-Jika Anda menentukan parameter ini, dan jika cmdlet tidak berhasil karena nilai yang tidak pantas untuk parameter _Jalur,_ cmdlet akan mengembalikan kesalahan.
+Jika Anda menentukan parameter ini, dan jika cmdlet tidak berhasil karena nilai yang tidak pantas untuk parameter _Jalur_ , cmdlet akan mengembalikan kesalahan.
 Jika Anda tidak menentukan parameter ini, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -205,11 +208,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
+Menentukan objek **CloudFileShare** .
 Cmdlet ini menghapus folder di bawah berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzStorageShare.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileShare
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

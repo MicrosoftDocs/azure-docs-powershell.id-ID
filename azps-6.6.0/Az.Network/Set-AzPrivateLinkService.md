@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateLinkService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzPrivateLinkService.md
-ms.openlocfilehash: b7e01f0faf3f8514e5033f9a686a0a55c27adb55
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a60a3409052a540aab56395607913ab45f50b72f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355334"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140133765"
 ---
 # Set-AzPrivateLinkService
 
 ## SYNOPSIS
 Memperbarui layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azprivatelinkservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ $privateLinkService.IpConfigurations[0] = $newIPConfig
 $privateLinkService | Set-AzPrivateLinkService
 ```
 
-Contoh ini membuat layanan tautan pribadi yang disebut mypls. Lalu mengganti ipConfigurations dari objek ipConfiguratiuon dalam memori. Cmdlet Set-AzPrivateLinkService lalu digunakan untuk menulis status layanan tautan pribadi yang diubah di sisi layanan. 
+Contoh ini membuat layanan tautan pribadi yang disebut mypls. Lalu mengganti ipConfigurations dari objek ipConfiguratiuon dalam memori. Cmdlet Set-AzPrivateLinkService lalu digunakan untuk menulis status layanan tautan pribadi yang dimodifikasi di sisi layanan. 
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

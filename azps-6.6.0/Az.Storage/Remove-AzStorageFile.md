@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageFile.md
-ms.openlocfilehash: cff3afc9bca584d6a928018eb5a8b65ef2a4cbaf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8b1783090f396ebcd371db41e2598d37a412bfd7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338232"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140095751"
 ---
 # Remove-AzStorageFile
 
 ## SYNOPSIS
 Menghapus file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstoragefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
+Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini menghapus file dalam folder yang ditentukan parameter ini.
 
 ```yaml
@@ -156,9 +159,9 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan file sebagai objek **CloudFile.**
+Menentukan file sebagai objek **CloudFile** .
 Cmdlet ini akan menghapus file yang ditentukan oleh parameter ini.
-Untuk mendapatkan objek **CloudFile,** gunakan cmdlet Get-AzStorageFile.
+Untuk mendapatkan objek **CloudFile** , gunakan cmdlet Get-AzStorageFile.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -220,11 +223,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
+Menentukan objek **CloudFileShare** .
 Cmdlet ini menghapus file dalam fitur bagikan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzStorageShare.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileShare
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

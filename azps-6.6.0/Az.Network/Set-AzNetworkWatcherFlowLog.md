@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherFlowLog.md
-ms.openlocfilehash: c829a85245f0487df6befe337f9bc31e18bf625b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4b6d2da74e365aa4e451ab21b27b4fd91048e1a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382082"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140133837"
 ---
 # Set-AzNetworkWatcherFlowLog
 
 ## SYNOPSIS
 Pembaruan sumber daya log alur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkwatcherflowlog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -106,7 +109,7 @@ PS C:\> $flowLog.Format.Version = 2
 PS C:\> $flowLog | Set-AzNetworkWatcherFlowLog -Force
 ```
 
-Nama : Id pstest : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/NetworkWatcherRG/provid ers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus/FlowLogs/pstest Etag : W/"e939e1e6-1 509-4d7a-9e89-1ea532f6f222" ProvisioningState : Lokasi Berhasil: eastus TargetResourceId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/MyFlowLog/provide  rs/Microsoft.Network/networkSecurityGroups/MyNSG StorageId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/FlowLogsV2Demo/provider s/Microsoft. Storage/storageAccounts/MyStorage Diaktifkan : True RetentionPolicy : { "Days": 0, "Enabled": false } Format : { "Type": "JSON", "Version": 2 } FlowAnalyticsConfiguration :{}
+Nama : Id pstest : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/NetworkWatcherRG/provid ers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus/FlowLogs/pstest Etag : W/"e939e1e6-1509-4d7a-9e89-1ea532f6f222" ProvisioningState : Lokasi Berhasil: eastus TargetResourceId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/MyFlowLog/provide  rs/Microsoft.Network/networkSecurityGroups/MyNSG StorageId : /subscriptions/bbbbbbbb-bbbb-bbbb-bbbbbbbbbb/resourceGroups/FlowLogsV2Demo/provider s/Microsoft. Storage/storageAccounts/MyStorage Diaktifkan : True RetentionPolicy : { "Days": 0, "Enabled": false } Format : { "Type": "JSON", "Version": 2 } FlowAnalyticsConfiguration :{}
 
 ### Contoh 2
 
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
