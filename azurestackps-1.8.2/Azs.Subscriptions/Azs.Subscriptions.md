@@ -6,16 +6,16 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: 6a725dcda136829a3d99592be4d5b77bdc4caa246e8a5e7e37e6e3328b2d0e88
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 165dbe7c3e16037b630100c85f8b8ddd6a450959
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415317"
 ---
 # Azs.Subscriptions Module
 ## Deskripsi
-Pratinjau versi modul langganan azure tabel untuk pengguna penyewa. Ini menyediakan tampilan yang menyenangkan dan berlangganan ke penawaran publik dan untuk mengelola langganan.
+Pratinjau versi modul langganan azure tabel untuk pengguna penyewa. Ini memberikan tampilan yang menyenangkan dan berlangganan ke penawaran publik dan mengelola langganan.
 
 ## Cmdlet Azs.Subscriptions
 ### [Get-AzsDelegatedProviderOffer](Get-AzsDelegatedProviderOffer.md)

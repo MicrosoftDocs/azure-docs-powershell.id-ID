@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Restore-AzureRmSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Restore-AzureRmSqlDatabase.md
-ms.openlocfilehash: c019f7e77e3037779778c169c487815a9ee68d8f9a277a133de291d6e8299c59
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b4c444233701a6ecfe66eb77f90dade618c9e08f
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415812"
 ---
 # Restore-AzureRmSqlDatabase
@@ -99,7 +99,7 @@ PS C:\>$Database = Get-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -
 PS C:\> Restore-AzureRmSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName "S2"
 ```
 
-Perintah pertama akan mendapatkan SQL database bernama Database01, lalu menyimpannya dalam $Database variabel.
+Perintah pertama akan mendapatkan SQL database bernama Database01, lalu menyimpannya di $Database baru.
 Perintah kedua memulihkan database di $Database dari pencadangan titik waktu yang ditentukan ke database bernama RestoredDatabase.
 
 ### Contoh 2: Memulihkan database dari titik waktu ke kolam elastis
@@ -108,7 +108,7 @@ PS C:\>$Database = Get-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -
 PS C:\> Restore-AzureRmSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah pertama akan mendapatkan SQL database bernama Database01, lalu menyimpannya dalam $Database variabel.
+Perintah pertama akan mendapatkan SQL database bernama Database01, lalu menyimpannya di $Database baru.
 Perintah kedua memulihkan database di $Database dari pencadangan titik waktu yang ditentukan ke database SQL bernama RestoredDatabase di kolam elastis yang disebut elastispool01.
 
 ### Contoh 3: Memulihkan database yang dihapus
@@ -117,8 +117,8 @@ PS C:\>$DeletedDatabase = Get-AzureRmSqlDeletedDatabaseBackup -ResourceGroupName
 PS C:\> Restore-AzureRmSqlDatabase -FromDeletedDatabaseBackup -DeletionDate $DeletedDatabase.DeletionDate -ResourceGroupName $DeletedDatabase.ResourceGroupName -ServerName $DeletedDatabase.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $DeletedDatabase.ResourceID -Edition "Standard" -ServiceObjectiveName "S2" -PointInTime UTCDateTime
 ```
 
-Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzureRmSqlDeletedDatabaseBackup.](./Get-AzureRMSqlDeletedDatabaseBackup.md)
-Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan cmdlet [Restore-AzureRmSqlDatabase.](./Restore-AzureRmSqlDatabase.md) Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
+Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzureRmSqlDeletedDatabaseBackup](./Get-AzureRMSqlDeletedDatabaseBackup.md).
+Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan cmdlet [Restore-AzureRmSqlDatabase](./Restore-AzureRmSqlDatabase.md) . Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
 
 ### Contoh 4: Memulihkan database yang dihapus ke dalam pool elastis
 ```
@@ -126,8 +126,8 @@ PS C:\>$DeletedDatabase = Get-AzureRmSqlDeletedDatabaseBackup -ResourceGroupName
 PS C:\> Restore-AzureRmSqlDatabase -FromDeletedDatabaseBackup -DeletionDate $DeletedDatabase.DeletionDate -ResourceGroupName $DeletedDatabase.ResourceGroupName -ServerName $DeletedDatabase.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $DeletedDatabase.ResourceID -ElasticPoolName "elasticpool01" -PointInTime UTCDateTime
 ```
 
-Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzureRmSqlDeletedDatabaseBackup.](./Get-AzureRMSqlDeletedDatabaseBackup.md)
-Perintah kedua memulai pemulihan dari pencadangan database yang dihapus dengan menggunakan [Pulihkan-AzureRmSqlDatabase.](./Restore-AzureRmSqlDatabase.md) Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
+Perintah pertama mendapatkan cadangan database yang dihapus yang ingin Anda pulihkan menggunakan [Get-AzureRmSqlDeletedDatabaseBackup](./Get-AzureRMSqlDeletedDatabaseBackup.md).
+Perintah kedua memulai pemulihan dari cadangan database yang dihapus dengan menggunakan [Pulihkan-AzureRmSqlDatabase](./Restore-AzureRmSqlDatabase.md). Jika parameter -PointInTime tidak ditentukan, database akan dipulihkan ke waktu penghapusan.
 
 ### Contoh 5: Geo-Restore database
 ```
@@ -135,8 +135,8 @@ PS C:\>$GeoBackup = Get-AzureRmSqlDatabaseGeoBackup -ResourceGroupName "Resource
 PS C:\> Restore-AzureRmSqlDatabase -FromGeoBackup -ResourceGroupName "TargetResourceGroup" -ServerName "TargetServer" -TargetDatabaseName "RestoredDatabase" -ResourceId $GeoBackup.ResourceID -Edition "Standard" -RequestedServiceObjectiveName "S2"
 ```
 
-Perintah pertama mendapatkan cadangan geo-berlebihan untuk database bernama Database01, lalu menyimpannya dalam $GeoBackup kosong.
-Perintah kedua memulihkan cadangan di $GeoBackup database SQL bernama RestoredDatabase.
+Perintah pertama mendapatkan cadangan geo-berlebihan untuk database bernama Database01, lalu menyimpannya dalam $GeoBackup nya.
+Perintah kedua memulihkan cadangan secara otomatis $GeoBackup database SQL bernama RestoredDatabase.
 
 ## PARAMETERS
 
@@ -186,8 +186,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeletionDate
-Menentukan tanggal penghapusan sebagai objek **DateTime.**
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
+Menentukan tanggal penghapusan sebagai objek **DateTime** .
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
 ```yaml
 Type: System.DateTime
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Edition
-Menentukan edisi database SQL.
+Menentukan edisi SQL database.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak ada
 - Dasar
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 
 ### -FromDeletedDatabaseBackup
 Mengindikasikan bahwa cmdlet ini memulihkan database dari cadangan database SQL dihapus.
-Anda dapat menggunakan cmdlet Get-AzureRMSqlDeletedDatabaseBackup untuk mendapatkan cadangan database SQL dihapus.
+Anda dapat menggunakan cmdlet Get-AzureRMSqlDeletedDatabaseBackup tersebut untuk mendapatkan cadangan database SQL dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -270,8 +270,8 @@ Accept wildcard characters: False
 ```
 
 ### -FromGeoBackup
-Mengindikasikan bahwa cmdlet ini memulihkan database SQL dari cadangan geo berlebihan.
-Anda bisa menggunakan cmdlet Get-AzureRMSqlDatabaseGeoBackup untuk mendapatkan cadangan geo berlebihan.
+Mengindikasikan bahwa cmdlet ini memulihkan SQL database dari cadangan geo berlebihan.
+Anda dapat menggunakan cmdlet Get-AzureRMSqlDatabaseGeoBackup untuk mendapatkan cadangan geo-redundan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -331,9 +331,9 @@ Accept wildcard characters: False
 ```
 
 ### -PointInTime
-Menentukan titik dalam waktu, sebagai objek **DateTime,** tempat Anda ingin memulihkan SQL database.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet **Get-Date.**
-Gunakan parameter ini bersama dengan parameter *FromPointInTimeBackup.*
+Menentukan titik dalam waktu, sebagai objek **DateTime**, tempat Anda ingin memulihkan database SQL.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet **Get-Date** .
+Gunakan parameter ini bersama dengan parameter *FromPointInTimeBackup* .
 
 ```yaml
 Type: System.DateTime
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

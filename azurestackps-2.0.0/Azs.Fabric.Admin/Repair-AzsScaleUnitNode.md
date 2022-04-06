@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.fabric.admin/repair-azsscaleunitnode
 schema: 2.0.0
-ms.openlocfilehash: be4f25380d114eae6fa0851a07046db4529a55ec101a96010defa3cbf43f0d01
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b9a285e650f0ed47dd0144a460b324ecdae49f7d
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415477"
 ---
 # Repair-AzsScaleUnitNode
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -422,7 +422,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-BAR NAVIGASITALNODE <IBareMetalNodeDescription> : Parameter Identitas
+BAR NAVIGASITALNODE <IBareMetalNodeDescription>: Parameter Identitas
   - `[BiosVersion <String>]`: Versi Desktop dari mesin fisik.
   - `[BmciPv4Address <String>]`: Alamat BMC komputer fisik.
   - `[ClusterName <String>]`: Nama kluster.
@@ -432,7 +432,7 @@ BAR NAVIGASITALNODE <IBareMetalNodeDescription> : Parameter Identitas
   - `[SerialNumber <String>]`: Nomor seri mesin fisik.
   - `[Vendor <String>]`: Vendor perangkat fisik.
 
-INPUTOBJECT <IFabricAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IFabricAdminIdentity>: Parameter Identitas
   - `[Drive <String>]`: Nama drive penyimpanan.
   - `[EdgeGateway <String>]`: Nama gateway tepi.
   - `[EdgeGatewayPool <String>]`: Nama gateway pool tepi.

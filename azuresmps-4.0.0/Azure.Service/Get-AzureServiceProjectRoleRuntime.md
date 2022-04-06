@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: CEFFEF9F-4500-447E-99F1-FE053AED880A
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 053f914048fd87a9245a8fecfcd65ea1ef35ffe18358412e5f28233f10ce2ef2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c4b2a382a6be1ed2ba0348983f69ab53c20118c3
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415668"
 ---
 # Get-AzureServiceProjectRoleRuntime
@@ -25,7 +25,7 @@ Get-AzureServiceProjectRoleRuntime [-Runtime <String>] [-Profile <AzureSMProfile
 
 ## DESCRIPTION
 Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Mendapatkan runtime tersedia untuk diinstal dalam sebuah peran.
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -Runtime
 Nama runtime.
-Jika runtime ditentukan, hanya versi runtime tertentu yang tersedia untuk diinstal dalam peran Windows Azure akan dikembalikan.
+Jika runtime ditentukan, hanya versi runtime tertentu yang tersedia untuk diinstal dalam peran di Windows Azure akan dikembalikan.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

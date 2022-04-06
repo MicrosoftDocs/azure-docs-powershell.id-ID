@@ -6,11 +6,11 @@ Help Version: 4.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/AzureRM.EventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/AzureRM.EventHub.md
-ms.openlocfilehash: a3bd5e9c5402cf31b0d57af8c5ca171dad63cfa9aa890328ea2f6c2e5964d06e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 269c600fd464ba962a47645013005d37c3b30206
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415717"
 ---
 # AzureRM.EventHub Module
@@ -88,5 +88,5 @@ Invokes GEO DR failover dan mengonfigurasi ulang alias agar menunjuk ke ruang na
 Memperbarui ruang nama Hub Acara yang ditentukan.
 
 ### [Test-AzureRmEventHubName](Test-AzureRmEventHubName.md)
-Memeriksa Ketersediaan Nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan
+Memeriksa Ketersediaan nama NameSpace atau Alias (Nama Konfigurasi DR) yang diberikan
 

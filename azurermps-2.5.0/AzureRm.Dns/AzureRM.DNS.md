@@ -6,11 +6,11 @@ Download Help Link:
 Help Version:
   '[object Object]': 
 Locale: en-US
-ms.openlocfilehash: e143a441dcf203b4ec8a02b9627c30f0ad5221f946af2aa08137ab30f43f5b41
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 90cd54197835bd43d279313aee34fa4e509511c2
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415766"
 ---
 # AzureRM.DNS Module

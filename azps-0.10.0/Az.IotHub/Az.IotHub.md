@@ -6,11 +6,11 @@ Help Version: 3.1.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Az.IotHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Az.IotHub.md
-ms.openlocfilehash: 0fecb2282e73394508003d16164d96f0872dbdd7800682a3f61a7254455b3694
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3700cf400245224a146eacacc02a97417de5b6c3
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414886"
 ---
 # Az.IotHub Module

@@ -6,11 +6,11 @@ Help Version: 0.1.3.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/AzureRM.RecoveryServices.SiteRecovery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/AzureRM.RecoveryServices.SiteRecovery.md
-ms.openlocfilehash: 685a327b0915fbba8d6cdd28e178ce1e6de82a357de264cd20e26b1d0745e362
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3527dff2631bf41739a43da221b8ad7f0723dce8
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415390"
 ---
 # AzureRM.RecoveryServices.SiteRecovery Module
@@ -97,7 +97,7 @@ Tambahkan(Temukan) server fisik ke daftar item yang dapat diproteksi.
 Creates an Azure Site Recovery Protection Container within the specified fabric.
 
 ### [New-AzureRmRecoveryServicesAsrProtectionContainerMapping](New-AzureRmRecoveryServicesAsrProtectionContainerMapping.md)
-Membuat pemetaan Penampung Proteksi Pemulihan Situs Azure dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
+Membuat pemetaan Wadah Proteksi Pemulihan Situs Azure dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
 
 ### [New-AzureRmRecoveryServicesAsrRecoveryPlan](New-AzureRmRecoveryServicesAsrRecoveryPlan.md)
 Membuat paket pemulihan ASR.

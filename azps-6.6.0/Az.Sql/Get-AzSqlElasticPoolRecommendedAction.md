@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendedAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPoolRecommendedAction.md
-ms.openlocfilehash: a6ba3913f008c50da8abb165270e6f0d8d86d049
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 56e0907e280cdcdc698316d78a0bdfe4a1c510cc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369191"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140097875"
 ---
 # Get-AzSqlElasticPoolRecommendedAction
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa tindakan yang disarankan untuk Azure SQL Elastis Pool Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpoolrecommendedaction) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlElasticPoolRecommendedAction [-RecommendedActionName <String>] -ServerN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlElasticPoolRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Penasihat Kolam SQL Elastis Azure.
+Cmdlet **Get-AzSqlElasticPoolRecommendedAction** mendapatkan satu atau beberapa tindakan yang direkomendasikan untuk Penasihat Pool Elastis Azure SQL.
 
 ## EXAMPLES
 
@@ -161,7 +164,7 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini mendapatkan tindakan yang disarankan bernama \[ IR_ test_schema \] _ \[ test_table_0.0361551 _6C7AE8CC9C87E7FD5893 dari Penasihat bernama \] CreateIndex.
+Perintah ini mendapatkan tindakan yang disarankan bernama IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 dari Penasihat bernama CreateIndex.
 
 ## PARAMETERS
 
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

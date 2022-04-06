@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPool.md
-ms.openlocfilehash: b098ee6bf910ad54d01a3e503c5c60f9526473a8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3a322a3a63a61c9d4de5a7b0d18b0edf214d597f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344558"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140096849"
 ---
 # Set-AzSqlElasticPool
 
 ## SYNOPSIS
-Mengubah properti database elastis di Azure SQL Database.
+Mengubah properti database elastis dalam Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Set-AzSqlElasticPool [-ElasticPoolName] <String> [-Edition <String>] [-StorageMB
 
 ## DESCRIPTION
 Cmdlet **Set-AzSqlElasticPool mengatur** properti untuk kumpulan elastis di Azure SQL Database. Cmdlet ini dapat memodifikasi eDTUs per pool (*Dtu*), ukuran maksimum penyimpanan per pool (*StorageMB*), eDTUs maksimal per database (*DatabaseDtuMax*), dan minimum eDTUs per database (*DatabaseDtuMin*).
-Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang ditetapkan adalah dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
+Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang ditetapkan berasal dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
 ## EXAMPLES
 
@@ -86,7 +89,7 @@ Perintah ini mengubah properti untuk kolam elastis bernama elastispool01. Perint
 
 ### Contoh 3
 
-Mengubah properti database elastis di Azure SQL Database. (otomatisgenerated)
+Mengubah properti database elastis dalam Azure SQL Database. (otomatisgenerated)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -418,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

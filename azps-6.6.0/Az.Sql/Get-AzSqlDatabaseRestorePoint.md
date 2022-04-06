@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseRestorePoint.md
-ms.openlocfilehash: 54dd114b8afbb38bfc5d519563f9a93c376acb1d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9a7c929b99888efdea6d5a74d1a27a079d86c7fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369468"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140098145"
 ---
 # Get-AzSqlDatabaseRestorePoint
 
 ## SYNOPSIS
-Mengambil titik pemulihan berbeda dari tempat SQL Data Warehouse bisa dipulihkan.
+Mengambil titik pemulihan berbeda dari titik SQL Data Warehouse bisa dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaserestorepoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlDatabaseRestorePoint [-ServerName] <String> [-DatabaseName] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseRestorePoint** mengambil titik pemulihan berbeda yang bisa dipulihkan SQL Data Azure darinya.
+Cmdlet **Get-AzSqlDatabaseRestorePoint** mengambil titik pemulihan berbeda yang dapat dipulihkan oleh SQL Data Azure.
 Sebagai Azure SQL Database, jendela pemulihan akan berkelanjutan.
 Ini berarti bahwa setiap titik waktu dalam periode penyimpanan cadangan database bisa digunakan sebagai titik pemulihan.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

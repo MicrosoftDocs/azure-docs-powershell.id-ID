@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 3ce12004f526cb02145257c63d241224841d51dba501291f4788f7c2d87d2b58
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e957ef203d0bf90393e523cca41b949a9d99acc5
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415707"
 ---
 # Get-AzureRmApplicationGatewaySslCertificate
@@ -39,7 +39,7 @@ PS C:\> $Cert = Get-AzureRmApplicationGatewaySslCertificate -Name "Cert01" -Appl
 ```
 
 Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
-Perintah kedua mendapatkan sertifikat SSL yang bernama Cert01 dari gateway aplikasi yang disimpan di variabel yang bernama $AppGW.
+Perintah kedua mendapatkan sertifikat SSL bernama Cert01 dari gateway aplikasi yang disimpan di variabel yang bernama $AppGW.
 Perintah menyimpan sertifikat di variabel yang bernama $Cert.
 
 ### Contoh 2: Mendapatkan daftar sertifikat SSL
@@ -50,7 +50,7 @@ PS C:\> $Certs = Get-AzureRmApplicationGatewaySslCertificate -ApplicationGateway
 
 Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
 Perintah kedua ini mendapatkan daftar sertifikat SSL dari gateway aplikasi yang disimpan di variabel yang bernama $AppGW.
-Perintah lalu menyimpan hasil di variabel yang bernama $Certs.
+Perintah lalu menyimpan hasil di dalam variabel yang bernama $Certs.
 
 ## PARAMETERS
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
