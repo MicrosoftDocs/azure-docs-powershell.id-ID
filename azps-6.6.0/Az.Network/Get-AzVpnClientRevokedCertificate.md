@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientRevokedCertificate.md
-ms.openlocfilehash: a39eeff3f50b3d2dee937773de780c261f6aa50f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ba53a99e1ff9bbb9a2ee50be06bb2d8ddfd6b2af
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365138"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140251207"
 ---
 # Get-AzVpnClientRevokedCertificate
 
 ## SYNOPSIS
 Mendapatkan informasi tentang sertifikat pembatalan klien VPN.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvpnclientrevokedcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Get-AzVpnClientRevokedCertificate [-VpnClientRevokedCertificateName <String>]
 ## DESCRIPTION
 Cmdlet **Get-AzVpnClientRevokedCertificate** mengembalikan informasi tentang sertifikat pembatalan klien yang ditetapkan ke gateway jaringan virtual.
 Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
-**Get-AzVpnClientRevokedCertificate** memungkinkan Anda untuk mengembalikan informasi tentang semua sertifikat pencabutan klien di gateway atau, dengan menggunakan parameter *VpnClientRevokedCertificateName,* untuk mendapatkan informasi tentang sertifikat tunggal.
+**Get-AzVpnClientRevokedCertificate** memungkinkan Anda untuk mengembalikan informasi tentang semua sertifikat pencabutan klien di gateway atau, dengan menggunakan parameter *VpnClientRevokedCertificateName* , untuk mendapatkan informasi tentang sertifikat tunggal.
 
 ## EXAMPLES
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

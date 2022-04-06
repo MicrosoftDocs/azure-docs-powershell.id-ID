@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncMember.md
-ms.openlocfilehash: 52f3a15db5c93d502327da1b163859b71a605e4c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c744eec45cc5e823842bb20161be38adfde28c7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338764"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140097335"
 ---
 # New-AzSqlSyncMember
 
 ## SYNOPSIS
-Membuat Azure SQL Database Sinkronisasi Otomatis.
+Membuat anggota Azure SQL Database Sinkronisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlsyncmember) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -73,7 +76,7 @@ MemberDatabasePassword      :
 SyncState                   : UnProvisioned
 ```
 
-Perintah ini membuat anggota sinkronisasi untuk database Azure SQL.
+Perintah ini membuat anggota sinkronisasi untuk database Azure SQL baru.
 
 ### Contoh 2: Buat anggota sinkronisasi untuk database SQL Server lokal
 ```
@@ -406,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

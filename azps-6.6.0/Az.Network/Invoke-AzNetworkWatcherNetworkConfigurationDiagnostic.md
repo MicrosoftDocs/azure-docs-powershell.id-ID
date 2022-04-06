@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic.md
-ms.openlocfilehash: d9c5099fa73d38fbddf51a7cf416932782e69853
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 325798f7e0a71d0a7790c51850c5bc7001c6e1ac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365093"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140251135"
 ---
 # Invoke-AzNetworkWatcherNetworkConfigurationDiagnostic
 
 ## SYNOPSIS
 Menjalankan sesi diagnostik konfigurasi jaringan untuk profil jaringan tertentu pada sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/invoke-aznetworkwatchernetworkconfigurationdiagnostic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnSite.md
-ms.openlocfilehash: 930d76b7157e3c79b7352c821af82bd3e3bbe43e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 927719485f127ef3e7ddd69b0a1d3f5c24270ffe
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365102"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140251189"
 ---
 # Get-AzVpnSite
 
@@ -18,6 +18,9 @@ ms.locfileid: "136365102"
 Mendapatkan sumber daya Azure VpnSite menurut nama ATAU mencantumkan semua Situs Vpn dalam Grup Sumber Daya atau SubscriptionId. 
 
 Ini adalah representasi RM cabang pelanggan yang diunggah ke Azure untuk konektivitas S2S dengan hub virtual Cortex.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azvpnsite) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Langkah di atas akan membuat grup sumber daya, Virtual WAN di AS Barat dalam gru
 
 Lalu membuat VpnSite untuk mewakili cabang pelanggan dan menautkannya ke Virtual WAN.
 
-Setelah dibuat, situs akan mendapatkan situs menggunakan Get-AzVpnSite situs.
+Setelah dibuat, situs akan mendapatkan situs menggunakan Get-AzVpnSite baru.
 
 ### Contoh 2
 
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

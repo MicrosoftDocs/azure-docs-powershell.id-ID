@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstanceDatabase.md
-ms.openlocfilehash: a50da455e2411fdfb9c7ca590f681a7ef7964323
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 96dfa85e9b2db52e4ef17dc13467a5bab3f643f6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386142"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140097425"
 ---
 # New-AzSqlInstanceDatabase
 
 ## SYNOPSIS
 Membuat database Azure SQL Instans Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlinstancedatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzSqlInstanceDatabase [-Name] <String> [-Collation <String>] [-Tag <Hashtabl
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstanceDatabase** membuat database contoh Azure SQL Dikelola.
+Cmdlet **New-AzSqlInstanceDatabase** membuat database azure SQL contoh yang dikelola.
 
 ## EXAMPLES
 
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

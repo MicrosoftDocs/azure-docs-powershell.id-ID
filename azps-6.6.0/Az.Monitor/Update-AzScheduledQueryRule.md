@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzScheduledQueryRule.md
-ms.openlocfilehash: 0043b3d67e69d79c603e95aeb0c7f27f2b80de52
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4f4a322f058faff8627975df356b21147637bd90
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335880"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140135367"
 ---
 # Update-AzScheduledQueryRule
 
 ## SYNOPSIS
 Memperbarui aturan Pemberitahuan Log
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/update-azscheduledqueryrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Update-AzScheduledQueryRule -ResourceId <String> -Enabled <Boolean> [-DefaultPro
 
 ## DESCRIPTION
 Memperbarui aturan Pemberitahuan Log, memperbarui properti "Diaktifkan" saja didukung oleh perintah ini.
-Untuk memperbarui properti lainnya, lihat [perintah Set-AzScheduledQueryRule.](https://docs.microsoft.com/powershell/module/az.monitor/set-azscheduledqueryrule)
+Untuk memperbarui properti lainnya, lihat [perintah Set-AzScheduledQueryRule](https://docs.microsoft.com/powershell/module/az.monitor/set-azscheduledqueryrule) .
 
 ## EXAMPLES
 
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

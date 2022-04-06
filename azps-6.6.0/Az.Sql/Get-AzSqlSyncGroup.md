@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlSyncGroup.md
-ms.openlocfilehash: b2c7d6c2b6d187edbf50e8e1561fcfdebc15169a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: eea0b256337172585a4d615f1c09369d63903a2f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338876"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140097443"
 ---
 # Get-AzSqlSyncGroup
 
 ## SYNOPSIS
-Mengembalikan informasi tentang Azure SQL Database Grup Sinkronisasi.
+Mengembalikan informasi tentang Azure SQL Database Sinkronisasi Grup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlsyncgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Tentukan nama grup sinkronisasi untuk melihat informasi hanya untuk grup sinkron
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua instans Grup Sinkronisasi Azure SQL ditetapkan ke Azure SQL Database
+### Contoh 1: Dapatkan semua instans Grup Sinkronisasi Azure SQL yang ditetapkan ke Azure SQL Database
 ```
 PS C:\>Get-AzSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" | Format-List
 ResourceId                  : /subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/databases/{Database01}/syncGroups/{SyncGroup01}
@@ -64,7 +67,7 @@ Schema                      :
 
 Perintah ini mendapatkan informasi tentang semua Azure SQL Database Sinkronisasi Email yang ditetapkan ke Azure SQL Database.
 
-### Contoh 2: Dapatkan informasi tentang Azure SQL Database Sinkronisasi Akun
+### Contoh 2: Dapatkan informasi tentang Azure SQL Database Sinkronisasi Otomatis
 ```
 PS C:\>Get-AzSqlSyncGroup -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -Name "SyncGroup01" | Format-List
 ResourceId                  : /subscriptions/{subscriptionId}/resourceGroups/{ResourceGroup01}/servers/{Server01}/databases/{Database01}/syncGroups/{SyncGroup02}
@@ -116,7 +119,7 @@ LastSyncTime                : 1/1/0001 12:00:00 AM
 Schema                      :
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database Sinkronisasi Yang ditetapkan ke grup Azure SQL Database yang dimulai dengan "SyncGroup".
+Perintah ini mendapatkan informasi tentang semua Azure SQL Database Sinkronisasi yang ditetapkan ke grup Azure SQL Database dimulai dengan "GrupSinkronisasi".
 
 ## PARAMETERS
 
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

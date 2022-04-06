@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Remove-AzDataCollectionRule.md
-ms.openlocfilehash: de6a6ab4061866bf7008652895b37dda1e3c065d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b0c69d5b33448d63b05fdee4a0ac5b3b51edc97d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385095"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140135457"
 ---
 # Remove-AzDataCollectionRule
 
 ## SYNOPSIS
 Menghapus aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/remove-azdatacollectionrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Remove-AzDataCollectionRule
 ## DESCRIPTION
 Cmdlet **Remove-AzDataCollectionRule** menghapus aturan pengumpulan data.
 
-Aturan Pengumpulan Data (DCR, Data Collection Rules) menentukan data yang akan masuk ke Azure Monitor dan menentukan tempat data harus dikirimkan atau disimpan. Berikut adalah artikel gambaran [umum DCR lengkap.](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview)
+Aturan Pengumpulan Data (DCR, Data Collection Rules) menentukan data yang akan masuk ke Azure Monitor dan menentukan tempat data harus dikirimkan atau disimpan. Berikut adalah artikel gambaran [umum DCR lengkap](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-overview).
 
 ## EXAMPLES
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,7 +204,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Set-AzDataCollectionRule](./Set-AzDataCollectionRule.md) 
- [Get-AzDataCollectionRule](./Get-AzDataCollectionRule.md) 
- [New-AzDataCollectionRule](./New-AzDataCollectionRule.md) 
+[Set-AzDataCollectionRule](./Set-AzDataCollectionRule.md)
+ [Get-AzDataCollectionRule](./Get-AzDataCollectionRule.md)
+ [New-AzDataCollectionRule](./New-AzDataCollectionRule.md)
  [Update-AzDataCollectionRule](./Update-AzDataCollectionRule.md)

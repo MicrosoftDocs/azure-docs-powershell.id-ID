@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGateway.md
-ms.openlocfilehash: f655b9173b042bbccabbf69e5f9b435e55c25c9b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: af95620417a18505651e9c9b701e37c2790b0276
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136382600"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140251063"
 ---
 # New-AzApplicationGateway
 
 ## SYNOPSIS
 Membuat gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -170,11 +173,11 @@ Perintah kedua membuat jaringan virtual.
 Perintah ketiga memverifikasi konfigurasi subnet dan perintah keempat memverifikasi bahwa jaringan virtual berhasil dibuat.
 Perintah berikut membuat gateway aplikasi.
 Perintah pertama membuat konfigurasi IP yang bernama GatewayIp01 untuk subnet yang dibuat sebelumnya.
-Perintah kedua membuat sebuah pool server back-end bernama Pool01 dengan daftar alamat IP ujung-belakang dan menyimpan pool dalam variabel $Pool lain.
+Perintah kedua membuat sebuah pool server back-end bernama Pool01 dengan daftar alamat IP ujung-belakang dan menyimpan pool dalam $Pool lain.
 Perintah ketiga membuat pengaturan untuk pool server back-end dan menyimpan pengaturan di $PoolSetting lain.
-Perintah maju membuat port ujung-depan pada port 80, memberi nama FrontEndPort01, dan menyimpan port di $FrontEndPort variabel.
+Perintah maju membuat port ujung-depan di port 80, memberi nama FrontEndPort01, dan menyimpan port dalam variabel $FrontEndPort baru.
 Perintah kelima membuat alamat IP publik dengan menggunakan New-AzPublicIpAddress.
-Perintah keenam membuat konfigurasi IP ujung-depan menggunakan $PublicIp, memberi nama FrontEndPortConfig01, dan menyimpannya dalam variabel $FrontEndIpConfig baru.
+Perintah keenam membuat konfigurasi IP ujung-depan menggunakan $PublicIp, memberi nama FrontEndPortConfig01, dan menyimpannya di variabel $FrontEndIpConfig ini.
 Perintah ketujuh membuat pendengar menggunakan perintah yang sebelumnya $FrontEndIpConfig $FrontEndPort.
 Perintah kedelapan membuat aturan untuk pendengar.
 Perintah kesembilan mengatur SKU.
@@ -791,7 +794,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
