@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackhci/registe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Register-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Register-AzStackHCI.md
-ms.openlocfilehash: f9ff85a310df569f4f72a923e4e8a87f66c4aabd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d06fc115b319767ba6c767d82b5783ac56b15b33
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338428"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244331"
 ---
 # Register-AzStackHCI
 
 ## SYNOPSIS
 Register-AzStackHCI membuat sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal dan mendaftarkan kluster lokal dengan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/register-azstackhci) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama Grup Sumber Daya Azure.
-Jika tidak ditentukan \<LocalClusterName\> ,rg akan digunakan sebagai nama grup sumber daya.
+Jika tidak ditentukan \<LocalClusterName\>,rg akan digunakan sebagai nama grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -355,7 +358,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Hasil: Berhasil atau Gagal atau TertundaForAdminConsent atau Dibatalkan.
 ### ResourceId: ID Sumber Daya dari sumber daya yang dibuat di Azure.
 ### PortalResourceURL: URL Sumber Daya Portal Azure.
-### PortalAADAppPermissionsURL: URL Portal Azure AAD halaman izin Aplikasi.
+### PortalAADAppPermissionsURL: URL Portal Azure untuk AAD izin Aplikasi Anda.
 ## CATATAN
 
 ## RELATED LINKS

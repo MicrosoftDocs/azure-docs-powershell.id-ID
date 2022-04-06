@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseLongTermRetentionBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlDatabaseLongTermRetentionBackup.md
-ms.openlocfilehash: a5b0a7270ea173a0700e943f6fcc3210d8775df8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9003d9094be8761db6e1e57f83597ac5e91ab15f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338526"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244709"
 ---
 # Update-AzSqlDatabaseLongTermRetentionBackup
 
 ## SYNOPSIS
 Memperbarui pencadangan penyimpanan jangka panjang.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/update-azsqldatabaselongtermretentionbackup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,9 +67,9 @@ ResourceGroupName                : testrg
 BackupStorageRedundancy          : Geo
 ```
 
-Perintah ini mengatur Kelebihan Storage cadangan tertentu menggunakan lokasi dan Grup Sumber Daya, Server, Database, dan Nama Cadangan.  
+Perintah ini mengatur pencadangan Storage Kelebihan Data cadangan tertentu menggunakan lokasi dan Grup Sumber Daya, Server, Database, dan Nama cadangan.  
 
-### Contoh 2: Update Backup Storage Redundancy of a long term retention backup (using Resource Id).
+### Contoh 2: Perbarui Cadangan Storage Kelebihan Data pencadangan penyimpanan jangka panjang (menggunakan Id Sumber Daya).
 ```powershell
 PS C:\> Update-AzSqlDatabaseLongTermRetentionBackup -ResourceId '/subscriptions/01c4ec88-e179-44f7-9eb0-e9719a5087ab/resourceGroups/testrg/providers/Microsoft.Sql/locations/southeastasia/longTermRetentionServers/ayang-stage-seas/longTermRetentionDatabases/ltr3/longTermRetentionBackups/e5c20f43-494c-4925-89d1-58e0f4569fb3;132579992320000000' -BackupStorageRedundancy Geo
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama nama Azure SQL Database dari cadangan berasal.
+Nama akun Azure SQL Database dari cadangan berasal.
 
 ```yaml
 Type: System.String
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

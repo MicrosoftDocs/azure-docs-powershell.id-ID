@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOrigin.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOrigin.md
-ms.openlocfilehash: bb3f40e9af3b0055175762a697b33074ae660cf6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e1be3e626d9c661afec34f61c02dd26acc952d5c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140079785"
 ---
 # Set-AzCdnOrigin
 
 ## SYNOPSIS
 Memperbarui server CDN origin.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/set-azcdnorigin) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginName
-Azure CDN origin tersebut.
+Azure CDN origin.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Azure CDN origin anda.
+Azure CDN origin baru.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Azure CDN sumber daya link privat origin.
+Azure CDN sumber daya tautan privat origin.
 
 ```yaml
 Type: System.String
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccount.md
-ms.openlocfilehash: 009bf1804d3468db757678c4ba35abbd54976109
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b81d150469c710b039361d2554902de5396ab9b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136388679"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244097"
 ---
 # New-AzStorageAccount
 
 ## SYNOPSIS
 Membuat akun Storage Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,12 +71,12 @@ PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName myst
 
 Perintah ini membuat akun Storage untuk nama grup sumber daya MyResourceGroup.
 
-### Contoh 2: Create a Blob Storage account with BlobStorage Kind and hot AccessTier
+### Contoh 2: Buat akun Storage BlobStorage dan hot AccessTier
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -SkuName Standard_GRS -Kind BlobStorage -AccessTier Hot
 ```
 
-Perintah ini akan membuat akun Storage BlobStorage dan hot AccessTier
+Perintah ini membuat akun Storage BlobStorage dan hot AccessTier
 
 ### Contoh 3: Buat akun Storage dengan Kind StorageV2, lalu Buat dan Tetapkan Identitas untuk Azure KeyVault.
 ```powershell
@@ -82,7 +85,7 @@ PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName myst
 
 Perintah ini membuat akun Storage dengan Kind StorageV2.  Pernyataan ini juga menghasilkan dan menetapkan identitas yang dapat digunakan untuk mengelola kunci akun melalui Azure KeyVault.
 
-### Contoh 4: Membuat akun Storage dengan NetworkRuleSet dari JSON
+### Contoh 4: Membuat Storage dengan NetworkRuleSet dari JSON
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName MyResourceGroup -AccountName mystorageaccount -Location westus -Type Standard_LRS -NetworkRuleSet (@{bypass="Logging,Metrics";
     ipRules=(@{IPAddressOrRange="20.11.0.0/16";Action="allow"},
@@ -101,12 +104,12 @@ PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "m
 
 Perintah ini membuat akun Storage dengan Ruang Nama Hierarki diaktifkan.
 
-### Contoh 6: Buat akun Storage dengan Azure Files AAD DS Authentication, dan aktifkan berbagi file berukuran besar.
+### Contoh 6: Buat akun Storage dengan Autentikasi DS Azure file AAD, dan aktifkan berbagi file berukuran besar.
 ```powershell
 PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Location "eastus2euap" -SkuName "Standard_LRS" -Kind StorageV2  -EnableAzureActiveDirectoryDomainServicesForFile $true -EnableLargeFileShare
 ```
 
-Perintah ini akan membuat akun Storage dengan Autentikasi DS Azure Files AAD, dan mengaktifkan berbagi file berukuran besar.
+Perintah ini akan membuat akun Storage dengan Autentikasi Azure Files AAD DS, dan mengaktifkan berbagi file berukuran besar.
 
 ### Contoh 7: Buat akun Storage dengan aktifkan Autentikasi Layanan Domain Direktori Aktif File dan DefaultSharePermission.
 ```
@@ -120,7 +123,7 @@ PS C:\>New-AzStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "m
         -DefaultSharePermission StorageFileDataSmbShareElevatedContributor
 ```
 
-Perintah ini akan membuat Storage akun yang dapat dibagikan Autentikasi Layanan Domain Direktori Aktif dan DefaultSharePermission.
+Perintah ini membuat akun Storage Autentikasi Layanan Domain Direktori Aktif File yang Dapat Digunakan dan DefaultSharePermission.
 
 ### Contoh 8: Membuat Storage dengan Queue and Table Service menggunakan kunci enkripsi akun yang scope, dan Memerlukan Enkripsi Infrastruktur.
 ```powershell
@@ -144,8 +147,8 @@ PS C:\> $account.Encryption.RequireInfrastructureEncryption
 True
 ```
 
-Perintah ini akan membuat akun Storage dengan Layanan Antrean dan Tabel menggunakan kunci enkripsi akun yang scoped dan Perlu Enkripsi Infrastruktur, sehingga Queue dan Table akan menggunakan kunci enkripsi yang sama dengan layanan Blob dan File, dan layanan akan menerapkan lapisan enkripsi sekunder dengan kunci yang dikelola platform untuk data dalam media fisik.
-Lalu dapatkan kunci Storage, dan tampilkan tipe kunci enkripsi Dari Queue and Table Service, dan nilai RequireInfrastructureEncryption.
+Perintah ini membuat akun Storage dengan Layanan Antrean dan Tabel menggunakan kunci enkripsi akun yang scoped dan Perlu Enkripsi Infrastruktur, sehingga Queue dan Table akan menggunakan kunci enkripsi yang sama dengan layanan Blob dan File, dan layanan akan menerapkan lapisan enkripsi sekunder dengan kunci terkelola platform untuk data dalam media fisik.
+Lalu dapatkan kunci Storage properti akun, dan tampilkan tipe keytype enkripsi dari Queue and Table Service, dan nilai RequireInfrastructureEncryption.
 
 ### Contoh 9: Buat akun MinimumTlsVersion dan AllowBlobPublicAccess, dan nonaktifkan SharedKey Access
 ```
@@ -189,7 +192,7 @@ InternetEndpoints  : {"Blob":"https://mystorageaccount-internetrouting.blob.core
 
 Perintah ini membuat akun Storage dengan pengaturan RoutingPreference: PublishMicrosoftEndpoint dan PublishInternetEndpoint sebagai true, dan RoutingChoice sebagai MicrosoftRouting.
 
-### Contoh 11: Membuat akun Storage dengan EdgeZone dan AllowCrossTenantReplication
+### Contoh 11: Buat akun Storage dengan EdgeZone dan AllowCrossTenantReplication
 ```powershell
 PS C:\>$account = New-AzStorageAccount -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -SkuName Premium_LRS -Location westus -EdgeZone "microsoftlosangeles1" -AllowCrossTenantReplication $false
 
@@ -218,7 +221,7 @@ PS C:\> $$account.SasPolicy.SasExpirationPeriod
 
 Perintah ini akan membuat Storage dengan KeyExpirationPeriod dan SasExpirationPeriod, lalu memperlihatkan properti terkait akun yang dibuat.
 
-### Contoh 12: Membuat akun Storage dengan enkripsi Keyvault (akses Keyvault dengan identitas yang ditetapkan pengguna)
+### Contoh 12: Membuat akun Storage dengan enkripsi Keyvault (akses Keyvault dengan identitas ditetapkan pengguna)
 ```powershell
 # Create KeyVault (no need if using exist keyvault)
 PS C:\> $keyVault = New-AzKeyVault -VaultName $keyvaultName -ResourceGroupName $resourceGroupName -Location eastus2euap -EnablePurgeProtection
@@ -277,7 +280,7 @@ Perintah membuat akun dengan Ewith menonaktifkan PublicNetworkAccess akun.
 ### -AccessTier
 Menentukan tingkatan akses akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Hot dan Cool.
-Jika Anda menentukan nilai BlobStorage untuk parameter *Kind,* Anda harus menentukan nilai untuk parameter *AccessTier.* Jika Anda menentukan nilai yang Storage untuk parameter *Kind* ini, jangan tentukan parameter *AccessTier.*
+Jika Anda menentukan nilai BlobStorage untuk parameter *Kind* , Anda harus menentukan nilai untuk parameter *AccessTier* . Jika Anda menentukan nilai properti Storage untuk parameter *Kind* ini, jangan tentukan parameter *AccessTier*.
 
 ```yaml
 Type: System.String
@@ -458,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomDomainName
-Menentukan nama domain kustom akun Storage tersebut.
+Menentukan nama domain kustom dari akun Storage tersebut.
 Nilai defaultnya adalah Storage.
 
 ```yaml
@@ -676,7 +679,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Storage kunci enkripsi AkunSource KeyVault KeyName
+Storage Kunci enkripsi AkunSource KeyVault KeyName
 
 ```yaml
 Type: System.String
@@ -738,7 +741,7 @@ Accept wildcard characters: False
 ### -Kind
 Menentukan jenis akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Storage. Akun tujuan Storage yang mendukung penyimpanan Blob, Tabel, Antrean, File dan Disk.
+- Storage. Akun tujuan Storage yang mendukung penyimpanan Blob, Tabel, Antrean, File, dan Disk.
 - StorageV2. Akun Storage Tujuan Umum Versi 2 (GPv2) yang mendukung Blob, Tabel, Antrean, File, dan Disk, dengan fitur tingkat lanjut seperti tingkatan data.
 - BlobStorage. Akun Storage Blob yang mendukung penyimpanan Blob saja.
 - BlockBlobStorage. Blokir akun Storage Blob yang mendukung penyimpanan Blokir Blob saja.
@@ -759,7 +762,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi akun Storage untuk dibuat.
+Menentukan lokasi akun Storage dibuat.
 
 ```yaml
 Type: System.String
@@ -790,7 +793,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang akan dibuat.
+Menentukan nama akun Storage dibuat.
 
 ```yaml
 Type: System.String
@@ -880,7 +883,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk menambahkan akun Storage tersebut.
+Menentukan nama grup sumber daya untuk menambahkan Storage tersebut.
 
 ```yaml
 Type: System.String
@@ -926,15 +929,15 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan nama SKU pengguna Storage yang dibuat cmdlet ini.
+Menentukan nama SKU akun Storage yang dibuat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Standard_LRS. Penyimpanan lokal yang berlebihan.
 - Standard_ZRS. Penyimpanan tidak berlebihan zona.
 - Standard_GRS. Penyimpanan geo berlebihan.
 - Standard_RAGRS. Baca mengakses penyimpanan geo berlebihan.
-- Premium_LRS. Premium lokal berlebihan.
+- Premium_LRS. Premium yang berlebihan secara lokal.
 - Premium_ZRS. Premium berlebihan zona.
-- Standard_GZRS - Penyimpanan tak ada zona berlebihan geo.
+- Standard_GZRS - Penyimpanan yang tidak berlebihan zona berulang geo.
 - Standard_RAGZRS - Membaca akses yang tidak berlebihan dalam zona penyimpanan yang berlebihan.
 
 ```yaml
@@ -996,7 +999,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

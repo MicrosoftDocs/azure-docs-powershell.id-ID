@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVmss.md
-ms.openlocfilehash: 395c7f023a3a2e1650afff3f3d3de393d615881a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5571dfc77c27128d95bed6eb97ca5ec1d3328bf8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347501"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140079317"
 ---
 # New-AzVmss
 
 ## SYNOPSIS
 Membuat VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ New-AzVmss [[-ResourceGroupName] <String>] [-VMScaleSetName] <String> [-AsJob] [
 
 ## DESCRIPTION
 Cmdlet **New-AzVmss** membuat Kumpulan Skala Mesin Virtual (VMSS) di Azure.
-Gunakan kumpulan parameter sederhana ( ) untuk membuat VMSS dan sumber daya terkait yang telah diatur `SimpleParameterSet` sebelumnya dengan cepat. Gunakan kumpulan parameter default ( ) untuk skenario tingkat lanjut saat Anda perlu mengonfigurasi setiap komponen VMSS dan setiap sumber daya yang terkait `DefaultParameter` sebelum pembuatan dengan tepat.
+Gunakan simple parameter set (`SimpleParameterSet`) untuk membuat VMSS dan sumber daya terkait yang telah diatur sebelumnya dengan cepat. Gunakan kumpulan parameter default (`DefaultParameter`) untuk skenario tingkat lanjut saat Anda perlu mengonfigurasi setiap komponen VMSS dan setiap sumber daya yang terkait sebelum pembuatan dengan tepat.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ $vmCred = New-Object System.Management.Automation.PSCredential(<USERNAME_HERE>, 
 New-AzVmss -Credential $vmCred -VMScaleSetName $vmssName
 ```
 
-Perintah di atas membuat hal berikut dengan `$vmssName` nama:
+Perintah di atas membuat hal berikut dengan nama `$vmssName` :
 * Grup Sumber Daya
 * Jaringan virtual
 * Penyeimbang muat
@@ -157,21 +160,21 @@ New-AzVmss -ResourceGroupName $RGName -Name $VMSSName -VirtualMachineScaleSet $V
 Contoh kompleks di atas membuat VMSS, berikut penjelasan tentang apa yang terjadi:
 * Perintah pertama membuat grup sumber daya dengan nama dan lokasi yang ditentukan.
 * Perintah kedua menggunakan cmdlet **New-AzStorageAccount** untuk membuat akun penyimpanan.
-* Perintah ketiga lalu menggunakan cmdlet **Get-AzStorageAccount** untuk membuat akun penyimpanan di perintah kedua dan menyimpan hasilnya dalam $STOAccount penyimpanan.
+* Perintah ketiga lalu menggunakan cmdlet **Get-AzStorageAccount** untuk membuat akun penyimpanan di perintah kedua dan menyimpan hasilnya di $STOAccount penyimpanan tersebut.
 * Perintah kelima menggunakan cmdlet **New-AzVirtualNetworkSubnetConfig** untuk membuat subnet dan menyimpan hasilnya di variabel yang bernama $SubNet.
 * Perintah keenam menggunakan cmdlet **New-AzVirtualNetwork** untuk membuat jaringan virtual dan menyimpan hasilnya di variabel yang bernama $VNet.
 * Perintah ketujuh menggunakan **Get-AzVirtualNetwork** untuk mendapatkan informasi tentang jaringan virtual yang dibuat di perintah keenam dan menyimpan informasi di variabel yang bernama $VNet.
 * Perintah kedelapan dan kesembilan menggunakan **New-AzPublicIpAddress** dan **Get- AzureRmPublicIpAddress** untuk membuat dan mendapatkan informasi dari alamat IP publik tersebut.
 * Perintah menyimpan informasi dalam variabel yang bernama $PubIP.
 * Perintah kesepuluh menggunakan cmdlet **New- AzureRmLoadBalancerFrontendIpConfig** untuk membuat frontend load balancer dan menyimpan hasilnya di variabel yang bernama $Frontend.
-* Perintah sebelas tersebut menggunakan **New-AzLoadBalancerBackendAddressPoolConfig** untuk membuat konfigurasi pool alamat backend dan menyimpan hasilnya di variabel yang bernama $BackendAddressPool.
-* Perintah kedua belas menggunakan **New-AzLoadBalancerProbeConfig** untuk membuat jaringan dan menyimpan informasi umum di variabel yang bernama $Probe.
+* Perintah sebelas menggunakan **New-AzLoadBalancerBackendAddressPoolConfig** untuk membuat konfigurasi pool alamat backend dan menyimpan hasilnya di variabel yang bernama $BackendAddressPool.
+* Perintah kedua belas menggunakan **New-AzLoadBalancerProbeConfig** untuk membuat barangka dan menyimpan informasi umum di variabel yang bernama $Probe.
 * Perintah ketiga belas menggunakan cmdlet **New-AzLoadBalancerInboundNatPoolConfig** untuk membuat konfigurasi pool Inbound Network Address Translation (NAT) penyeimbang.
 * Perintah empat belas menggunakan **New-AzLoadBalancerRuleConfig** untuk membuat konfigurasi aturan penyeimbang muat dan menyimpan hasilnya dalam variabel yang bernama $LBRule.
 * Perintah ke-lima belas menggunakan cmdlet **New-AzLoadBalancer** untuk membuat penyeimbang muat dan menyimpan hasilnya dalam variabel yang bernama $ActualLb.
 * Perintah rahasia menggunakan **Get-AzLoadBalancer** untuk mendapatkan informasi tentang penyeimbang muat yang dibuat dalam perintah ke-lima belas dan menyimpan informasi dalam variabel yang bernama $ExpectedLb.
 * Perintah tujuh belas menggunakan cmdlet **New-AzVmssIPConfig** untuk membuat konfigurasi IP VMSS dan menyimpan informasi di variabel bernama $IPCfg.
-* Perintah kedelapan menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya di variabel yang bernama $VMSS.
+* Perintah kedelapan menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
 * Perintah kesepulen menggunakan cmdlet **New-AzVmss** untuk membuat VMSS.
 
 ## PARAMETERS
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainNameLabel
-Label nama domain untuk kumpulan domain Fully-Qualified publik (FQDN) untuk Kumpulan Skala ini. Komponen ini adalah komponen pertama nama domain yang ditetapkan secara otomatis pada Kumpulan Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir ( <DomainNameLabel> <Location> . . cloudapp.azure.com). Jika tidak ada nilai yang disertakan, label nama domain default akan menjadi penggabungan <ScaleSetName> dan <ResourceGroupName> .
+Label nama domain untuk kumpulan domain Fully-Qualified publik (FQDN) untuk Kumpulan Skala ini. Komponen ini adalah komponen pertama nama domain yang ditetapkan secara otomatis pada Kumpulan Skala. Nama domain yang ditetapkan secara otomatis menggunakan formulir (<DomainNameLabel>.<Location>. cloudapp.azure.com). Jika tidak ada nilai yang disertakan, label nama domain default akan menjadi penggabungan dan <ScaleSetName> <ResourceGroupName>.
 
 ```yaml
 Type: System.String
@@ -403,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageName
-Nama gambar untuk VM dalam Kumpulan Skala ini. Jika tidak ada nilai yang disediakan, gambar "Windows DataCenter Server 2016" akan digunakan.
+Nama gambar untuk VM dalam Kumpulan Skala ini. Jika tidak ada nilai yang disediakan, gambar "Windows Server 2016 DataCenter" akan digunakan.
 
 ```yaml
 Type: System.String
@@ -867,7 +870,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
