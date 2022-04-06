@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstancePoolUsage.md
-ms.openlocfilehash: ff767984fa24c4629346234b811004290e713dd7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0a945e5702ba11c4f54ede9978e9c2c0f983b760
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368939"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140097641"
 ---
 # Get-AzSqlInstancePoolUsage
 
 ## SYNOPSIS
-Mengembalikan informasi tentang penggunaan SQL Instance Azure.
+Mengembalikan informasi tentang penggunaan SQL Azure instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancepoolusage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Cmdlet **Get-AzSqlInstancePoolUsage** mengembalikan informasi penggunaan SQL Ins
 
 ## EXAMPLES
 
-### Contoh 1 : Mendapatkan penggunaan azure SQL Instance
+### Contoh 1 : Mendapatkan penggunaan azure SQL instance
 ```powershell
 PS C:\> Get-AzSqlInstancePoolUsage -ResourceGroupName resourcegroup01 -Name instancepool0
 
@@ -73,7 +76,7 @@ Type           : Microsoft.Sql/instancePools/usages
 
 Mendapatkan penggunaan instancepool0 Azure SQL Instance.
 
-### Contoh 2: Mendapatkan penggunaan SQL Azure SQL menggunakan objek instance pool
+### Contoh 2: Mendapatkan penggunaan azure SQL instance menggunakan objek instance pool
 ```powershell
 PS C:\> $instancePool = Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancepool0
 PS C:\> Get-AzSqlInstancePoolUsage -InstancePool $instancePool
@@ -103,9 +106,9 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan instancepool0 SQL Azure SQL menggunakan objek instance pool.
+Mendapatkan penggunaan instancepool0 Azure SQL Instance menggunakan objek instance pool.
 
-### Contoh 3: Mendapatkan penggunaan pool Azure SQL Instance menggunakan id sumber daya instance pool
+### Contoh 3: Mendapatkan penggunaan azure SQL instance menggunakan id sumber daya pool instans
 ```powershell
 PS C:\> Get-AzSqlInstancePoolUsage -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0"
 
@@ -134,7 +137,7 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 SQL Azure SQL menggunakan pengidentifikasi sumber daya kolam renang instans.
+Mendapatkan penggunaan untuk instancepool0 SQL Azure SQL menggunakan pengidentifikasi sumber daya pool instans.
 
 ### Contoh 3: Mendapatkan penggunaan azure SQL Instance dengan uraian penggunaan instans terkelola dalam pool.
 ```powershell
@@ -189,7 +192,7 @@ Name           : Database utilization
 Type           : Microsoft.Sql/instancePools/managedInstances/usages
 ```
 
-Mendapatkan penggunaan untuk instancepool0 SQL Azure instance bersama dengan penggunaan instans terkelola dalam instancepool0.
+Mendapatkan penggunaan instancepool0 SQL Azure SQL bersama dengan penggunaan instans terkelola dalam instancepool0.
 
 ## PARAMETERS
 
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
