@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/get-azsmanifest
 schema: 2.0.0
-ms.openlocfilehash: e3ae6a075a474564f9009514242a063dc3c84c541d64537b471c3254f794c9d9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4e5ccedc67af31c19d35e5a91fad62ba46535ed7
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415465"
 ---
 # Get-AzsManifest
@@ -134,7 +134,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
+INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya

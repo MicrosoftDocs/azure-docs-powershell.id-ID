@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.SqlDatabase.dll-Help.xml
 ms.assetid: 0ACEDE22-1C2B-4846-A949-710AF6C148D0
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 950b0be53b2410937dd3b75f202ba44791e7199a88b79c660da913f5b4895d91
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6b7072c5cd9c9e91a5c71d585be685a4dfa7700c
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415663"
 ---
 # Get-AzureSqlDatabaseServer
 
 ## SYNOPSIS
-Mendapatkan informasi tentang Azure SQL Database server.
+Mendapatkan informasi tentang Azure SQL Database baru.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,7 +24,7 @@ Get-AzureSqlDatabaseServer [-ServerName <String>] [-Profile <AzureSMProfile>] [<
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSqlDatabaseServer** mendapatkan informasi tentang instans Server Azure SQL Database langganan saat ini.
+Cmdlet **Get-AzureSqlDatabaseServer** mendapatkan informasi tentang instans Server Azure SQL Database dalam langganan saat ini.
 Jika Anda menentukan server menurut nama, cmdlet ini mengembalikan objek yang berisi informasi tentang server itu.
 Jika tidak, cmdlet akan mengembalikan informasi tentang semua server.
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

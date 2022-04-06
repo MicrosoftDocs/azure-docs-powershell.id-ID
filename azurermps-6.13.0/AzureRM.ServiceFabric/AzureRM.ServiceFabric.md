@@ -6,11 +6,11 @@ Help Version: 0.3.4.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/AzureRM.ServiceFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceFabric/Commands.ServiceFabric/help/AzureRM.ServiceFabric.md
-ms.openlocfilehash: 7dc6e5790ec64bc620647688f4a5e72fe035a9c560d740c8831aef42a60a7af3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6d93775a028e7a590a8da9cc008640fb8484bdf2
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414945"
 ---
 # AzureRM.ServiceFabric Module
@@ -52,10 +52,10 @@ Hapus node dari tipe node tertentu dari kluster.
 Menghapus tipe node lengkap dari kluster.
 
 ### [Remove-AzureRmServiceFabricSetting](Remove-AzureRmServiceFabricSetting.md)
-Hapus satu atau beberapa Service Fabric kluster dari kluster.
+Menghapus satu atau Service Fabric kluster dari kluster.
 
 ### [Set-AzureRmServiceFabricSetting](Set-AzureRmServiceFabricSetting.md)
-Menambahkan atau memperbarui satu atau beberapa Service Fabric ke kluster.
+Tambahkan atau perbarui satu atau Service Fabric yang sama ke kluster.
 
 ### [Set-AzureRmServiceFabricUpgradeType](Set-AzureRmServiceFabricUpgradeType.md)
 Ubah Service Fabric pemutakhiran kluster.

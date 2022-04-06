@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/remove-azsplanfromoffer
 schema: 2.0.0
-ms.openlocfilehash: eb54920e6fabd69b5ba566d736b1ee82cc9c3d13c8c9cc950a28b9ee479efac7
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c3a68c028abc9033cef9d9fd7e8fbd39e4066d2d
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415309"
 ---
 # Remove-AzsPlanFromOffer
@@ -255,7 +255,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
+INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -272,7 +272,7 @@ INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 
-PLANLINK <IPlanLinkDefinition> : Definisi untuk menautkan dan menghapus link paket untuk ditawarkan.
+PLANLINK <IPlanLinkDefinition>: Definisi untuk menautkan dan menghapus link paket untuk ditawarkan.
   - `[MaxAcquisitionCount <Int32?>]`: Jumlah akuisisi maksimal oleh pelanggan
   - `[PlanLinkType <PlanLinkType?>]`: Tipe tautan rencana.
   - `[PlanName <String>]`: Nama rencana.

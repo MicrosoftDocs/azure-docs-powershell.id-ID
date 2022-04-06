@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Update.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.update.admin/get-azsupdatelocation
 schema: 2.0.0
-ms.openlocfilehash: 9ca145221eb7f15019d3812f5fd87e89ba0c5c81fb49540fc28153447189f80e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0aa8e2358a5af4a5f73339a1068b0668914eef6e
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415299"
 ---
 # Get-AzsUpdateLocation
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IUpdateAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IUpdateAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
   - `[RunName <String>]`: Perbarui jalankan pengidentifikasi.

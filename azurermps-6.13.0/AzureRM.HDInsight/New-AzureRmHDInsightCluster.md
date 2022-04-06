@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightCluster.md
-ms.openlocfilehash: 96ac76d22632428f4faa9b1b62b326c21269afc411c5127f9a4c9013fefcd1d2
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b10fe80fb0a58267212912f554d044b2715fd1d3
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415712"
 ---
 # New-AzureRmHDInsightCluster
@@ -86,7 +86,7 @@ New-AzureRmHDInsightCluster [-Location] <String> [-ResourceGroupName] <String> [
 ```
 
 ## DESCRIPTION
-Contoh New-AzureHDInsightCluster membuat kluster Azure HDInsight dengan menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet New-AzureRmHDInsightClusterConfig.
+Contoh New-AzureHDInsightCluster membuat kluster Azure HDInsight menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet New-AzureRmHDInsightClusterConfig.
 
 ## EXAMPLES
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ### -ClusterTier
 Menentukan tingkatan kluster HDInsight.
 Secara default, ini standar.
-Tingkatan Premium baru hanya dapat digunakan dengan kluster Linux, dan memungkinkan penggunaan beberapa fitur baru.
+Tingkatan Premium hanya dapat digunakan dengan kluster Linux, dan memungkinkan penggunaan beberapa fitur baru.
 
 ```yaml
 Type: Microsoft.Azure.Management.HDInsight.Models.Tier
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 
 ### -Config
 Menentukan objek kluster yang akan digunakan untuk membuat kluster.
-Objek ini dapat dibuat menggunakan cmdlet New-AzureRmHDInsightClusterConfig baru.
+Objek ini dapat dibuat menggunakan cmdlet New-AzureRmHDInsightClusterConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -707,7 +707,7 @@ Accept wildcard characters: False
 
 ### -WorkerNodeSize
 Menentukan ukuran mesin virtual untuk node Pekerja.
-Gunakan Get-AzureRmVMSize ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
+Gunakan Get-AzureRmVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
 Type: System.String
@@ -723,7 +723,7 @@ Accept wildcard characters: False
 
 ### -Penjaga Kebun BinatangNodeSize
 Menentukan ukuran mesin virtual untuk simpul Penjaga Binatang.
-Gunakan Get-AzureRmVMSize ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
+Gunakan Get-AzureRmVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 Parameter ini hanya valid untuk kluster HBase atau Storm.
 
 ```yaml
@@ -739,7 +739,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

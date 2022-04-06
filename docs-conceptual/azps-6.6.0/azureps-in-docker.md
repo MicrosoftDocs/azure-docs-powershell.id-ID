@@ -3,15 +3,15 @@ title: Menggunakan Azure PowerShell di Docker
 description: Cara menggunakan Azure PowerShell yang diinstal sebelumnya di citra Docker.
 ms.devlang: powershell
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 03/08/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: ef5f9c2007f6475b4c53a6e3c8510e6222102a6f
-ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: HT
+ms.openlocfilehash: fbd38f6d20d8aa4745c0f6d160da53e15175aed6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "132429515"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140111096"
 ---
 # <a name="using-azure-powershell-in-docker"></a>Menggunakan Azure PowerShell di Docker
 
@@ -48,16 +48,6 @@ Langkah berikut menunjukkan perintah Docker yang diperlukan untuk mengunduh citr
    ```
 
 Untuk host Windows Docker, Anda harus mengaktifkan berbagi file Docker untuk memungkinkan drive lokal pada Windows untuk dibagikan dengan kontainer Linux. Untuk informasi selengkapnya lihat [Memulai dengan Docker untuk Windows][file-sharing].
-
-### <a name="run-the-azure-powershell-container-interactively-using-host-authentication"></a>Menjalankan kontainer azure-powershell secara interaktif menggunakan autentikasi host
-
-Jika Anda telah menginstal Azure PowerShell di Docker hosting sistem, Anda mungkin memiliki informasi masuk Azure yang di-cache. Informasi masuk ini dapat digunakan di sesi PowerShell yang berjalan di kontainer Docker.
-
-Secara default, informasi masuk yang di-cache ada di direktori `$HOME/.Azure` di host Anda. Layanan Docker harus memiliki akses ke lokasi ini untuk mengakses informasi masuk. Perintah berikut memulai kontainer dengan cache informasi masuk yang dipasang dan memulai sesi PowerShell interaktif.
-
-```console
-docker run -it -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.json -v ~/.Azure/TokenCache.dat:/root/.Azure/TokenCache.dat mcr.microsoft.com/azure-powershell pwsh
-```
 
 ### <a name="remove-the-image-when-no-longer-needed"></a>Menghapus citra saat tidak lagi diperlukan
 

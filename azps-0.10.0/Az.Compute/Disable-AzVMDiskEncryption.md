@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.compute/di
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Disable-AzVMDiskEncryption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Disable-AzVMDiskEncryption.md
-ms.openlocfilehash: 5a0380f80895fc9c5e1461126c9f34de85e00820b29bc7a29ebcdf9a0cd8b841
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6a14a8472ca33fe9dbb15aa2ddf58208764a5a6f
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414608"
 ---
 # Disable-AzVMDiskEncryption
@@ -44,7 +44,7 @@ PS C:\> Disable-AzVMDiskEncryption -ResourceGroupName "Group001" -VMName "VM002"
 Perintah ini menonaktifkan enkripsi untuk volume tipe semua untuk mesin virtual bernama VM002 yang termasuk dalam grup sumber daya bernama Group001.
 Karena *parameter VolumeType* tidak ditentukan, cmdlet mengatur nilai menjadi Semua.
 
-### Contoh 2: Menonaktifkan enkripsi untuk volume data di Windows virtual anda
+### Contoh 2: Menonaktifkan enkripsi untuk volume data di Windows virtual
 ```
 PS C:\> $ResourceGroup = "Group002";
 PS C:\> $VMName = "VM004";
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Spesifikasi nama sumber daya Azure Resource Manager (ARM) yang mewakili ekstensi.
-Jika parameter ini tidak ditentukan, cmdlet ini default untuk "AzureDiskEncryption untuk Windows VM".
+Jika parameter ini tidak ditentukan, cmdlet ini akan menggunakan "AzureDiskEncryption untuk Windows VM".
 
 ```yaml
 Type: String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

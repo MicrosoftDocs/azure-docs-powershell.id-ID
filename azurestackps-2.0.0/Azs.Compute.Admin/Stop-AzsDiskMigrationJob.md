@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/stop-azsdiskmigrationjob
 schema: 2.0.0
-ms.openlocfilehash: 4e50bc6a5a944383ab7508fb545a4077e054104c6213a020bd452a284af6d610
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bb5c78d6c0ae29d415e02d3e78e79f963bc3315c
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415510"
 ---
 # Stop-AzsDiskMigrationJob
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml

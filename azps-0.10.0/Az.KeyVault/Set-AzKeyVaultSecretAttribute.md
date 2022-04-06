@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.keyvault/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultSecretAttribute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Set-AzKeyVaultSecretAttribute.md
-ms.openlocfilehash: a51a243319db54f090e4819d66a87aa13fc824b9601cce02879b931d1830b357
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 719f0676b87cf785785b0adfbfde71ad2a6b965b
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415446"
 ---
 # Set-AzKeyVaultSecretAttribute
@@ -62,7 +62,7 @@ Perintah pertama menyimpan nilai string Contoso dalam $Vault string.
 
 Perintah kedua menyimpan nilai string IT dalam $Prefix nilai.
 
-Perintah ketiga menggunakan cmdlet Get-AzKeyVaultSecret rahasia untuk mendapatkan rahasia dalam penyimpanan kunci tertentu, lalu melewati rahasia tersebut ke cmdlet **Where-Object.** Cmdlet **Where-Object** memfilter rahasia untuk nama yang dimulai dengan karakter IT. Perintah pipa rahasia yang cocok dengan filter ke cmdlet Set-AzKeyVaultSecretAttribute, yang menonaktifkannya.
+Perintah ketiga menggunakan cmdlet Get-AzKeyVaultSecret rahasia untuk mendapatkan rahasia dalam penyimpanan kunci tertentu, lalu melewati rahasia tersebut ke cmdlet **Where-Object** . Cmdlet **Where-Object** memfilter rahasia untuk nama yang dimulai dengan karakter IT. Perintah akan pipa rahasia yang cocok dengan filter ke cmdlet Set-AzKeyVaultSecretAttribute, yang akan menonaktifkannya.
 
 ### Contoh 4: Setel ContentType untuk semua versi rahasia
 ```
@@ -72,7 +72,7 @@ PS C:\> $ContentType = 'xml'
 PS C:\> Get-AzKeyVaultKey -VaultName $VaultName -Name $Name -IncludeVersions | Set-AzKeyVaultSecretAttribute -ContentType $ContentType
 ```
 
-Tiga perintah pertama menentukan variabel string yang akan digunakan untuk *parameter VaultName*, *Nama*, *dan ContentType.* Perintah keempat menggunakan cmdlet Get-AzKeyVaultKey cmdlet untuk mendapatkan tombol yang ditentukan, dan pipa tombol ke cmdlet Set-AzKeyVaultSecretAttribute untuk mengatur tipe kontennya ke XML.
+Tiga perintah pertama menentukan variabel string yang akan digunakan untuk *parameter VaultName*, *Name*, *dan ContentType* . Perintah keempat menggunakan cmdlet Get-AzKeyVaultKey cmdlet untuk mendapatkan kunci yang ditentukan, dan pipakan tombol ke cmdlet Set-AzKeyVaultSecretAttribute untuk mengatur tipe kontennya ke XML.
 
 ## PARAMETERS
 
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

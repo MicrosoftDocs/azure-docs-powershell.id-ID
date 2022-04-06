@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 2AEA385F-E180-4564-A62A-9E913C665801
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 048f208210a67e42f31320607898ee4ede4bc34b0fa2b79f7209bfe5d8093c5d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 995ea9fd34e19a394c932220cc5fef0e64016b2f
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415354"
 ---
 # Reset-AzureRoleInstance
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -Reboot
 Menentukan bahwa cmdlet ini memulai ulang instans peran yang ditentukan atau, jika tidak ada yang ditentukan, semua instans peran.
-Anda harus menyertakan *parameter Reboot* atau *Reimage,* tapi tidak keduanya.
+Anda harus menyertakan *parameter Reboot* *atau Reimage* , tapi tidak keduanya.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -Reimage
 Menentukan bahwa cmdlet ini penggantian contoh peran yang ditentukan atau, jika tidak ada yang ditentukan, semua contoh peran.
-Anda harus menyertakan *parameter Reboot* atau *Reimage,* tapi tidak keduanya.
+Anda harus menyertakan *parameter Reboot* *atau Reimage* , tapi tidak keduanya.
 
 ```yaml
 Type: SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ### -Slot
 Menentukan lingkungan penyebaran di mana contoh peran dijalankan.
 Nilai yang valid adalah: Produksi dan Pementasan.
-Anda dapat menyertakan parameter *DeploymentName* *atau Slot,* tetapi tidak keduanya.
+Anda dapat menyertakan parameter *DeploymentName* *atau Slot* , tetapi tidak keduanya.
 
 ```yaml
 Type: String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

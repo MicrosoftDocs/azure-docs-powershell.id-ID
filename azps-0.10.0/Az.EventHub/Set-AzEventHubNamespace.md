@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
-ms.openlocfilehash: 0ba760aab59cd4d5a4be8d3f19c8aa26761c25ca824baba2afd8e191ab615e8c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: af46e09571deba338d67b75659f6915ac0e8e061
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414905"
 ---
 # Set-AzEventHubNamespace
@@ -59,7 +59,7 @@ MaximumThroughputUnits : 10
 
 ```
 
-Memperbarui Tag untuk ruang nama \` MyNamespaceName \` menjadi Dibuat.
+Memperbarui Tag untuk ruang nama \`MyNamespaceName\` menjadi Dibuat.
 
 ### Contoh 2
 ```
@@ -83,7 +83,7 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 10
 ```
 
-Memperbarui status ruang nama \` MyNamespaceName \` dengan AutoIn protocole = enabled dan MaximumThroughputUnits = 10
+Memperbarui status ruang nama \`MyNamespaceName\` dengan AutoIn protocole = enabled dan MaximumThroughputUnits = 10
 
 ## PARAMETERS
 
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Network.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.network.admin/new-azsnetworkquota
 schema: 2.0.0
-ms.openlocfilehash: ac1f32e62b13d95c3670a5221df0614d9f46451aac631915d4fe69655e612838
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 554ebe0e6c4ef8a4b0d262071595c0dc6336f482
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415795"
 ---
 # New-AzsNetworkQuota
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -348,13 +348,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <INetworkAdminIdentity> : Parameter Identitas
+INPUTOBJECT <INetworkAdminIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
   - `[ResourceName <String>]`: Nama sumber daya.
   - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-KUOTA <IQuota> : Sumber daya kuota jaringan.
+KUOTA <IQuota>: Sumber daya kuota jaringan.
   - `[Tag <IResourceTags>]`: Daftar pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
   - `[MaxLoadBalancersPerSubscription <Int64?>]`: Jumlah maksimum penyeimbang muat yang dapat ditetapkan langganan penyewa.

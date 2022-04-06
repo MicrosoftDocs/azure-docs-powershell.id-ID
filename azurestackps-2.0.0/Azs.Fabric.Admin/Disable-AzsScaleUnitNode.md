@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.fabric.admin/disable-azsscaleunitnode
 schema: 2.0.0
-ms.openlocfilehash: cb5d89d0a753d45d98e3f4d69763b6c7509dd876e6858aa79feb749b6ae983c5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 532ca56646ae2cfa25f6e3480f9f924d918cfedc
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415498"
 ---
 # Disable-AzsScaleUnitNode
@@ -256,7 +256,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IFabricAdminIdentity> : 
+INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Nama drive penyimpanan.
   - `[EdgeGateway <String>]`: Nama gateway tepi.
   - `[EdgeGatewayPool <String>]`: Nama gateway pool tepi.

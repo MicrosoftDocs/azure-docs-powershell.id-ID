@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 2DEF8B3A-4E91-4D39-AD39-1871F9FECE10
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 0fcad74e604520c784c7c3934109278944799db31020b3a9cdfe0ac4bb73db81
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 85df212e6b3002c93af7e2f2edf1ade046919024
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415658"
 ---
 # Get-AzureWebHostingPlanMetric
@@ -27,7 +27,7 @@ Get-AzureWebHostingPlanMetric [-MetricNames <String[]>] [-StartDate <DateTime>] 
 
 ## DESCRIPTION
 Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Get-AzureWebHostingPlanMetric** mendapatkan metrik untuk paket hosting web Azure dalam langganan.
 
@@ -64,9 +64,9 @@ Perintah ini mendapatkan metrik paket hosting web selama tiga jam terakhir di ti
 ## PARAMETERS
 
 ### -EndDate
-Menentukan waktu akhir, sebagai objek **DateTime,** untuk mengembalikan metrik.
-Untuk mendapatkan **objek DateTime,** gunakan cmdlet **Get-Date.**
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date` .
+Menentukan waktu akhir, sebagai objek **DateTime** , untuk mengembalikan metrik.
+Untuk mendapatkan **objek DateTime** , gunakan cmdlet **Get-Date** .
+Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
 
 ```yaml
 Type: DateTime
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Menentukan waktu mulai, sebagai objek **DateTime,** yang akan mendapatkan metrik.
+Menentukan waktu mulai, sebagai objek **DateTime** , yang akan mendapatkan metrik.
 
 ```yaml
 Type: DateTime
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -212,7 +212,7 @@ Anda dapat menyampaikan input ke cmdlet ini berdasarkan nama properti, tetapi ti
 ###  
 Microsoft.WindowsAzure.commands.Utilities.Websites.Services.WebEntities.MetricResponse
 
-Secara default, **Get-AzureWebHostingPlanMetric** mengembalikan array **objek MetricResponse.**
+Secara default, **Get-AzureWebHostingPlanMetric** mengembalikan array **objek MetricResponse** .
 
 ## CATATAN
 

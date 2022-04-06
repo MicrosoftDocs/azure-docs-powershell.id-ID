@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 5B255D11-0A9B-4679-A2AC-4357B293EE96
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 0eed7d855d36077984828214c714230178b2878116b96d480386eae21e923a71
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 998fdac1eabdc06fcb41659f998c09e25c93af8f
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/24/2022
 ms.locfileid: "132414789"
 ---
 # Remove-AzureMediaServicesAccount
@@ -15,7 +15,7 @@ ms.locfileid: "132414789"
 ## SYNOPSIS
 Menghapus akun Azure Media Services tertentu.
 
-**Catatan:**  Versi ini sudah tidak berlaku, silakan lihat versi [yang lebih baru.](https://docs.microsoft.com/powershell/module/azurerm.media/?view=azurermps-5.4.0#media_services)
+**Catatan:**  Versi ini sudah tidak berlaku, silakan lihat [versi yang lebih baru](https://docs.microsoft.com/powershell/module/azurerm.media/?view=azurermps-5.4.0#media_services).
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -28,13 +28,13 @@ Remove-AzureMediaServicesAccount -Name <String> [-Force] [-Profile <AzureSMProfi
 
 ## DESCRIPTION
 Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **Remove-AzureMediaServicesAccount** menghapus Media Services tersebut.
+Cmdlet **Remove-AzureMediaServicesAccount** menghapus Media Services anda.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus Media Services Anda
+### Contoh 1: Hapus Media Services Anda
 ```
 PS C:\> Remove-AzureMediaServicesAccount -Name "mediaservicesaccount" -Force
 ```
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

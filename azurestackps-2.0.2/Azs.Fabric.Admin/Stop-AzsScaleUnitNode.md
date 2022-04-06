@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Fabric.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/stop-azsscaleunitnode
 schema: 2.0.0
-ms.openlocfilehash: 9df1eedd1e682bd7273d60c776b114bb49e8391f50c2a33fc177cb7ab684d28e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 3f5adef6382038fdaf8c17620508b4a450ff74bc
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415310"
 ---
 # Stop-AzsScaleUnitNode
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
+Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -273,7 +273,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IFabricAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IFabricAdminIdentity>: Parameter Identitas
   - `[Drive <String>]`: Nama drive penyimpanan.
   - `[EdgeGateway <String>]`: Nama gateway tepi.
   - `[EdgeGatewayPool <String>]`: Nama gateway pool tepi.

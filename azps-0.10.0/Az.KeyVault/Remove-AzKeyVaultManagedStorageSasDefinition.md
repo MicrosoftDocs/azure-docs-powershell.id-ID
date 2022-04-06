@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/Az.keyvault/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
-ms.openlocfilehash: cfab3d09b568947977a0d026a438489f73b4117ca27058e1fd4c82115187786e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ced9f5149b03de506c9aa4d83b873aacbff07693
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415457"
 ---
 # Remove-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Menghapus definisi Kunci Vault Azure Storage SAS yang dikelola.
+Menghapus kunci Vault yang dikelola Azure Storage SAS.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-AzKeyVaultManagedStorageSasDefinition [-VaultName] <String> [-AccountName
 ```
 
 ## DESCRIPTION
-Menghapus definisi Kunci Vault Azure Storage SAS yang dikelola. Ini juga menghapus rahasia yang digunakan untuk mendapatkan token SAS per definisi SAS ini.
+Menghapus kunci Vault yang dikelola Azure Storage SAS. Ini juga menghapus rahasia yang digunakan untuk mendapatkan token SAS per definisi SAS ini.
 
 ## EXAMPLES
 
@@ -34,14 +34,14 @@ Menghapus definisi Kunci Vault Azure Storage SAS yang dikelola. Ini juga menghap
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'mysasdef'
 ```
 
-Menghapus kunci vault yang dikelola Storage definisi SAS 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
+Menghapus Kunci Vault yang dikelola Storage sas 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
 
-### Contoh 2: Remove a Key Vault managed Azure Storage SAS definition without user confirmation.
+### Contoh 2: Hapus Kunci Vault yang dikelola Azure Storage sas definition tanpa konfirmasi pengguna.
 ```
 PS C:\> Remove-AzKeyVaultManagedStorageAccount -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'mysasdef' -Force -Confirm:$False
 ```
 
-Menghapus kunci vault yang dikelola Storage definisi SAS 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
+Menghapus Kunci Vault yang dikelola Storage sas 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
 
 ## PARAMETERS
 
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

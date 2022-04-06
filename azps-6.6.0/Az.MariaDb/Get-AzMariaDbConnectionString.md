@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/get-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Get-AzMariaDbConnectionString.md
-ms.openlocfilehash: 84809c76a141b0450d2870e9e42637feebe1e564
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9de36f7b79027451642513b16da41c5723473ccb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136379436"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140076509"
 ---
 # Get-AzMariaDbConnectionString
 
 ## SYNOPSIS
 Dapatkan string koneksi MariaDB di bawah kerangka kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mariadb/get-azmariadbconnectionstring) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +169,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IServer> : Parameter Identitas
+INPUTOBJECT <IServer>: Parameter Identitas
   - `Location <String>`: Lokasi tempat sumber daya berada.
   - `[Tag <ITrackedResourceTags>]`: Metadata khusus aplikasi dalam bentuk pasangan nilai kunci.
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
@@ -178,14 +181,14 @@ INPUTOBJECT <IServer> : Parameter Identitas
   - `[ReplicaCapacity <Int32?>]`: Jumlah maksimum replika yang bisa ada di server master.
   - `[ReplicationRole <String>]`: Replikasi peran server.
   - `[SkuCapacity <Int32?>]`: Skalakan kapasitas, mewakili unit perhitungan server.
-  - `[SkuFamily <String>]`: Keluarga perangkat keras.
+  - `[SkuFamily <String>]`:  Keluarga perangkat keras.
   - `[SkuName <String>]`: Nama sku, biasanya, tier + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
   - `[SkuSize <String>]`: Kode ukuran, akan diinterpretasikan menurut sumber daya yang tepat.
   - `[SkuTier <SkuTier?>]`: Tingkatan SKU tertentu, misalnya Dasar.
   - `[SslEnforcement <SslEnforcementEnum?>]`: Mengaktifkan penerapan ssl atau tidak saat tersambung ke server.
   - `[StorageProfileBackupRetentionDay <Int32?>]`: Waktu penyimpanan cadangan untuk server.
   - `[StorageProfileGeoRedundantBackup <GeoRedundantBackup?>]`: Mengaktifkan geo-redundan atau tidak untuk pencadangan server.
-  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Aktifkan Storage Auto Grow.
+  - `[StorageProfileStorageAutogrow <StorageAutogrow?>]`: Mengaktifkan Storage Auto Grow.
   - `[StorageProfileStorageMb <Int32?>]`: Maksimum penyimpanan yang diperbolehkan untuk server.
   - `[UserVisibleState <ServerState?>]`: Status server yang terlihat oleh pengguna.
   - `[Version <ServerVersion?>]`: Versi server.

@@ -6,11 +6,11 @@ Help Version: 5.5.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/AzureRM.Resources.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/AzureRM.Resources.md
-ms.openlocfilehash: e9ab3cb05b0cc7772ca8d1a068803507be2dd4a397ebbfcae3e8acc1dd4b0573
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e0fc92ebad2f169c80959e0ee1a5fe40360000cc
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415379"
 ---
 # AzureRM.Resources Module
@@ -246,7 +246,7 @@ Peran yang akan dihapus ditentukan menggunakan properti Id dari peran tersebut.
 Delete akan gagal jika terdapat penetapan peran yang ada yang dilakukan pada peran kustom.
 
 ### [Save-AzureRmDeploymentTemplate](Save-AzureRmDeploymentTemplate.md)
-Mendapatkan templat untuk penggunaan di lingkup langganan.
+Dapatkan templat untuk penggunaan di lingkup langganan.
 
 ### [Save-AzureRmResourceGroupDeploymentTemplate](Save-AzureRmResourceGroupDeploymentTemplate.md)
 Menyimpan templat penyebaran grup sumber daya ke file.

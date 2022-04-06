@@ -4,11 +4,11 @@ Module Name: AzureRM.Resources
 ms.assetid: 770093CD-CE2A-4076-8A28-F4DCFFB7A075
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/set-azurermresourcelock
 schema: 2.0.0
-ms.openlocfilehash: d8e2e6c52f38b9e9ec94e4fa79f443c10b0822727f5a153218cdec2ba1c127f3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ccb491742d9a66a7e6eb300d7e75be0dcfac687e
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415036"
 ---
 # Set-AzureRmResourceLock
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 
 ### -ResourceName
 Menentukan nama sumber daya untuk menerapkan kunci.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: Database Server `/`
+Misalnya, untuk menentukan database, gunakan format berikut: ServerDatabase`/`
 
 ```yaml
 Type: System.String
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 Menentukan lingkup berlakunya kunci.
-Misalnya, untuk menentukan database, gunakan format berikut ini: nama server nama server nama grup sumber daya ID langganan Untuk menentukan grup sumber daya, gunakan format berikut `/subscriptions/` `/resourceGroups/` `/providers/Microsoft.Sql/servers/` `/databases/` ini: `/subscriptions/` nama `/resourceGroups/` grup sumber daya ID langganan
+Misalnya, untuk menentukan database, gunakan format berikut ini: `/subscriptions/`nama server nama grup IDresource`/resourceGroups/``/databases/``/providers/Microsoft.Sql/servers/` langganan namadatabase Untuk menentukan grup sumber daya, gunakan format berikut ini: `/subscriptions/`nama grup IDresource langganan`/resourceGroups/`
 
 ```yaml
 Type: System.String
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

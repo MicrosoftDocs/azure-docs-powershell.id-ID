@@ -3,11 +3,11 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: DBB8EC31-877C-4DB1-8197-CA7A4148AE06
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 3e83dfc1099b07a04710ae1befd6c73d5f18ca0ebde5aa4f7f49aae4a5ec66c1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 011ba762badad894fa6b7d8e7f5dab3f4d3cd681
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415660"
 ---
 # Get-AzureVMCustomScriptExtension
@@ -34,7 +34,7 @@ Cmdlet **Get-AzureVMCustomScriptExtension** mendapatkan informasi dari ekstensi 
 PS C:\> Get-AzureVMCustomScriptExtension -VM $VM;
 ```
 
-Perintah ini mendapatkan ekstensi skrip mesin virtual Azure yang disimpan dalam variabel $VM.
+Perintah ini akan mendapatkan ekstensi skrip mesin virtual Azure yang disimpan dalam variabel $VM.
 
 ## PARAMETERS
 
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

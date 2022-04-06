@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Restart-AzVmss.md
-ms.openlocfilehash: 3f962be3c164a3801d6b23c2724c986d63d71214
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 823e7d636a012c769b9ab78eabc0b302d4d635a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136390989"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140079083"
 ---
 # Restart-AzVmss
 
 ## SYNOPSIS
 Memulai ulang VMSS atau mesin virtual dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/restart-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Restart-AzVmss [-ResourceGroupName] <String> [-VMScaleSetName] <String> [[-Insta
 
 ## DESCRIPTION
 Cmdlet **Mulai Ulang-AzVmss** memulai ulang Virtual Machine Scale Set (VMSS).
-Cmdlet ini juga dapat digunakan untuk memulai ulang mesin virtual tertentu dalam VMSS menggunakan parameter *InstanceId.*
+Cmdlet ini juga dapat digunakan untuk memulai ulang mesin virtual tertentu dalam VMSS menggunakan parameter *InstanceId* .
 
 ## EXAMPLES
 
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

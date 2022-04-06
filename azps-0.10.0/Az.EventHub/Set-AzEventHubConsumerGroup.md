@@ -5,11 +5,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/az.eventhub/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/Set-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 5ef85fee678c31950cdf2279233a2de7ee8efbc38cfad43ecd287a0565257eac
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6b1a7656922c32cbade9061fbe4e6868ca06ce79
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132414909"
 ---
 # Set-AzEventHubConsumerGroup
@@ -26,7 +26,7 @@ Set-AzEventHubConsumerGroup [-ResourceGroupName] <String> [-Namespace] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubConsumerGroup cmdlet memperbarui grup konsumen Hub Kejadian yang ditentukan.
+Cmdlet Set-AzEventHubConsumerGroup memperbarui grup konsumen Hub Kejadian yang ditentukan.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Cmdlet Set-AzEventHubConsumerGroup cmdlet memperbarui grup konsumen Hub Kejadian
 PS C:\> Set-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName -UserMetadata "Testing"
 ```
 
-Mengatur metadata pengguna grup konsumen \` MyConsumerGroupName \` menjadi "Pengujian."
+Mengatur metadata pengguna grup konsumen \`MyConsumerGroupName menjadi\` "Pengujian."
 
 ## PARAMETERS
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

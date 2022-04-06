@@ -6,23 +6,23 @@ Help Version: 4.2.1.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Azure.Storage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Azure.Storage.md
-ms.openlocfilehash: 1ca54d4820e2440be2c93d195a9297a6f7ee0a5636a66733e05e92213a9c1521
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fc997f7db4e6b7cf3d239f0f15a6344e35993f39
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415025"
 ---
 # Azure. Storage Module
 ## Deskripsi
 Topik ini menampilkan topik bantuan untuk Azure Storage Cmdlets.
 
-## Azure. Cmdlet Storage Baru
+## Azure. Cmdlets Storage Baru
 ### [Disable-AzureStorageDeleteRetentionPolicy](Disable-AzureStorageDeleteRetentionPolicy.md)
 Menonaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob Anda.
 
 ### [Disable-AzureStorageStaticWebsite](Disable-AzureStorageStaticWebsite.md)
-Menonaktifkan situs web statis untuk akun Azure Storage baru.
+Menonaktifkan situs web statis untuk akun Azure Storage.
 
 ### [Enable-AzureStorageDeleteRetentionPolicy](Enable-AzureStorageDeleteRetentionPolicy.md)
 Mengaktifkan kebijakan penyimpanan penghapusan untuk Azure Storage Blob Anda.
@@ -43,7 +43,7 @@ Mendapatkan status salinan suatu Azure Storage blob.
 Mencantumkan wadah penyimpanan.
 
 ### [Get-AzureStorageContainerStoredAccessPolicy](Get-AzureStorageContainerStoredAccessPolicy.md)
-Mendapatkan kebijakan atau kebijakan akses tersimpan untuk wadah penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses tersimpan untuk tempat penyimpanan Azure.
 
 ### [Get-AzureStorageCORSRule](Get-AzureStorageCORSRule.md)
 Mendapatkan aturan CORS untuk Storage layanan baru.
@@ -121,10 +121,10 @@ Membuat kebijakan akses tersimpan untuk antrean penyimpanan Azure.
 Membuat berbagi file.
 
 ### [New-AzureStorageShareSASToken](New-AzureStorageShareSASToken.md)
-Buat token Tanda Tangan Akses Bersama Azure Storage bagikan.
+Buat token Tanda Tangan Akses Bersama Azure Storage berbagi.
 
 ### [New-AzureStorageShareStoredAccessPolicy](New-AzureStorageShareStoredAccessPolicy.md)
-Membuat kebijakan akses tersimpan di Storage bersama.
+Membuat kebijakan akses tersimpan pada Storage bersama.
 
 ### [New-AzureStorageTable](New-AzureStorageTable.md)
 Membuat tabel penyimpanan.
@@ -163,7 +163,7 @@ Menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
 Menghapus berbagi file.
 
 ### [Remove-AzureStorageShareStoredAccessPolicy](Remove-AzureStorageShareStoredAccessPolicy.md)
-Menghapus kebijakan akses yang disimpan dari jaringan Storage bersama.
+Menghapus kebijakan akses yang disimpan dari Storage bersama.
 
 ### [Remove-AzureStorageTable](Remove-AzureStorageTable.md)
 Menghapus tabel penyimpanan.
@@ -181,7 +181,7 @@ Mengatur izin akses publik ke tempat penyimpanan.
 Menetapkan kebijakan akses tersimpan untuk tempat penyimpanan Azure.
 
 ### [Set-AzureStorageCORSRule](Set-AzureStorageCORSRule.md)
-Mengatur aturan CORS untuk jenis Storage layanan.
+Menetapkan aturan CORS untuk tipe Storage baru.
 
 ### [Set-AzureStorageFileContent](Set-AzureStorageFileContent.md)
 Mengunggah konten file.
@@ -208,7 +208,7 @@ Mengatur kebijakan akses tersimpan untuk tabel penyimpanan Azure.
 Memulai menyalin blob.
 
 ### [Start-AzureStorageBlobIncrementalCopy](Start-AzureStorageBlobIncrementalCopy.md)
-Memulai operasi penyalinan Bertahap dari snapshot Blob Halaman ke blob tujuan yang ditentukan.
+Memulai operasi penyalinan Bertahap dari snapshot blob Halaman ke blob tujuan tertentu.
 
 ### [Start-AzureStorageFileCopy](Start-AzureStorageFileCopy.md)
 Mulai menyalin file sumber.
@@ -220,5 +220,5 @@ Menghentikan operasi penyalinan.
 Menghentikan operasi penyalinan ke file tujuan yang ditentukan.
 
 ### [Update-AzureStorageServiceProperty](Update-AzureStorageServiceProperty.md)
-Mengubah properti untuk layanan Azure Storage.
+Mengubah properti untuk layanan Azure Storage baru.
 

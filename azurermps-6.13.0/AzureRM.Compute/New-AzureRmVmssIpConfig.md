@@ -6,11 +6,11 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVmssIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVmssIpConfig.md
-ms.openlocfilehash: 33b2db4222a18c7008f65ddf28a492587bcdeeae6c39392a5f78c89752e0b88f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9c49fd381e1f63d60332eb42759cfb9dd187fbf5
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415409"
 ---
 # New-AzureRmVmssIpConfig
@@ -33,7 +33,7 @@ New-AzureRmVmssIpConfig [[-Name] <String>] [[-Id] <String>] [[-SubnetId] <String
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmVmssIpConfig** membuat objek konfigurasi IP untuk antarmuka jaringan Virtual Machine Scale Set (VMSS).
-Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPConfiguration* cmdlet Add-AzureRmVmssNetworkInterfaceConfiguration.
+Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPConfiguration* cmdlet Add-AzureRmVmssNetworkInterfaceConfiguration cmdlet.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ PS C:\> $IPConfiguration = New-AzureRmVmssIPConfig -Name "ContosoVmssInterface02
 
 Perintah ini membuat objek konfigurasi IP bernama ContosoVmssInterface02.
 Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan di $SubnetId.
-Perintah menyimpan pengaturan konfigurasi di variabel $IPConfiguration untuk digunakan nanti dengan **Add-AzureRmVmssNetworkInterfaceConfiguration**.
+Perintah menyimpan pengaturan konfigurasi di variabel $IPConfiguration digunakan nanti dengan **Add-AzureRmVmssNetworkInterfaceConfiguration**.
 
 ### Contoh 2: Buat objek konfigurasi IP yang mencakup pengaturan pool NAT
 ```
@@ -54,7 +54,7 @@ PS C:\> $IPConfiguration = New-AzureRmVmssIPConfig -Name "ContosoVmssInterface03
 Perintah ini akan membuat objek konfigurasi IP bernama ContosoVmssInterface03, lalu menyimpannya dalam variabel $IPConfiguration untuk digunakan nanti.
 Perintah menggunakan ID subnet yang ditentukan sebelumnya yang disimpan di $SubnetId.
 Perintah menyimpan pengaturan konfigurasi di variabel $IPConfiguration digunakan nanti.
-Perintah menentukan nilai untuk parameter *LoadBalancerInboundNatPoolsId* dan *LoadBalancerBackendAddressPoolsId.*
+Perintah menentukan nilai untuk parameter *LoadBalancerInboundNatPoolsId* dan *LoadBalancerBackendAddressPoolsId* .
 
 ## PARAMETERS
 
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

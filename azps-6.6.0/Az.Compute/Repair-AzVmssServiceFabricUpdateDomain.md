@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/repair-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Repair-AzVmssServiceFabricUpdateDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Repair-AzVmssServiceFabricUpdateDomain.md
-ms.openlocfilehash: b509269557d167d6d13f262c02df849bea80d4a5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9aefdbece7e5f6ee7e0216a6c28e32b77ee6700a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361838"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140079101"
 ---
 # Repair-AzVmssServiceFabricUpdateDomain
 
 ## SYNOPSIS
 Manual platform update domain walk to update virtual machines in a service fabric virtual machine scale set.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/repair-azvmssservicefabricupdatedomain) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

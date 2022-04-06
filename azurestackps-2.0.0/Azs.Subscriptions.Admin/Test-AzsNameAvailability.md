@@ -3,11 +3,11 @@ external help file: ''
 Module Name: Azs.Subscriptions.Admin
 online version: https://docs.microsoft.com/en-us/powershell/module/azs.subscriptions.admin/test-azsnameavailability
 schema: 2.0.0
-ms.openlocfilehash: dfcf912de127271c7185ba4143691984401b838c6263a80d6098b9ad58b5be3d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d92c2558375a180c96ff20260977bdb38908fa61
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/25/2022
 ms.locfileid: "132415140"
 ---
 # Test-AzsNameAvailability
@@ -209,7 +209,7 @@ ALIAS
 
 PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
+INPUTOBJECT <ISubscriptionsAdminIdentity>: Parameter Identitas
   - `[DelegatedProvider <String>]`: Pengidentifikasi DelegatedProvider.
   - `[DelegatedProviderSubscriptionId <String>]`: Pengidentifikasi langganan penyedia yang didelegasikan.
   - `[Id <String>]`: Jalur identitas sumber daya
@@ -226,7 +226,7 @@ INPUTOBJECT <ISubscriptionsAdminIdentity> : Parameter Identitas
   - `[TargetSubscriptionId <String>]`: ID langganan target.
   - `[Tenant <String>]`: Nama penyewa direktori.
 
-NAMEAVAILABILITYDEFINITION <ICheckNameAvailabilityDefinition> : Definisi tindakan ketersediaan nama pemeriksaan.
+NAMEAVAILABILITYDEFINITION <ICheckNameAvailabilityDefinition>: Definisi tindakan ketersediaan nama pemeriksaan.
   - `[Name <String>]`: Nama sumber daya untuk memverifikasi.
   - `[ResourceType <String>]`: Tipe sumber daya yang akan diverifikasi.
 

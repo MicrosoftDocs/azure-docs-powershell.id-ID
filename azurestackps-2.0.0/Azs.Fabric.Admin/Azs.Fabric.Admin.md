@@ -4,11 +4,11 @@ Module Guid: 28bcb385-26d7-4905-99f7-d278099b2518
 Download Help Link: https://docs.microsoft.com/powershell/module/azs.fabric.admin
 Help Version: 1.0.0.0
 Locale: en-US
-ms.openlocfilehash: 85a8b2f8bce46a5e6c09248669c5b73c215b9746e39289325abb14ae3aa53113
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8c9a74e402f31904aecf610f91a1f41016f85a15
+ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 03/28/2022
 ms.locfileid: "132415509"
 ---
 # Azs.Fabric.Admin Module
