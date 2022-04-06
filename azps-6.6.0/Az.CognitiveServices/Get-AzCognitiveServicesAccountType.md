@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountType.md
-ms.openlocfilehash: ba89bd98b71804f0bbbd9780e5a9942e5e856072
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 82c913b28a58dee94fdc77eed6d8f98e562677b7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363290"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139978785"
 ---
 # Get-AzCognitiveServicesAccountType
 
 ## SYNOPSIS
 Dapatkan Tipe Akun Layanan Kognitif yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccounttype) untuk informasi terkini.
 
 ## SYNTAX
 

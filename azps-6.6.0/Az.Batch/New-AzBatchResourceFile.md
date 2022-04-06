@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchResourceFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchResourceFile.md
-ms.openlocfilehash: 5f1126386c48138ffa5a279de735bd666a6a6ce4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 53bcd51ac960143dc8a3ecba0e6a5aed4cae9199
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349346"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080127"
 ---
 # New-AzBatchResourceFile
 
 ## SYNOPSIS
-Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask` .
+Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask`.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchresourcefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzBatchResourceFile [-FilePath <String>] [-FileMode <String>] -AutoStorageCo
 ```
 
 ## DESCRIPTION
-Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask` .
+Membuat File Sumber Daya untuk penggunaan oleh `New-AzBatchTask`.
 
 ## EXAMPLES
 
@@ -48,15 +51,15 @@ PS C:\> $file = New-AzBatchResourceFile -HttpUrl "https://testacct.blob.core.win
 PS C:\> New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ResourceFiles $file -BatchContext $Context
 ```
 
-Membuat `PSResourceFile` referensi url HTTP.
+Membuat referensi `PSResourceFile` url HTTP.
 
-### Contoh 2: Membuat file sumber daya dari URL Azure Storage penampung
+### Contoh 2: Membuat file sumber daya dari URL Azure Storage wadah data
 ```
 PS C:\> $file = New-AzBatchResourceFile -StorageContainerUrl "https://testacct.blob.core.windows.net/mycontainer" -FilePath "myfolder"
 PS C:\> New-AzBatchTask -JobId "Job-000001" -Id "Task23" -CommandLine "cmd /c dir /s" -ResourceFiles $file -BatchContext $Context
 ```
 
-Membuat referensi `PSResourceFile` URL wadah Azure Storage. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
+Membuat referensi `PSResourceFile` URL Azure Storage wadah. Semua file dalam wadah akan diunduh ke folder yang ditentukan.
 
 ### Contoh 3: Buat file sumber daya dari nama wadah Storage otomatis
 ```
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlobPrefix
-Mendapatkan prefiks blob untuk digunakan ketika mengunduh blob dari Azure Storage penampung.
+Mendapatkan prefiks blob yang digunakan ketika mengunduh blob dari Azure Storage penampung.
 Hanya blob yang namanya dimulai dengan prefiks tertentu yang akan diunduh.
 Prefiks ini dapat merupakan nama file parsial atau subarah.
 Jika prefiks tidak ditentukan, semua file dalam wadah akan diunduh.
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

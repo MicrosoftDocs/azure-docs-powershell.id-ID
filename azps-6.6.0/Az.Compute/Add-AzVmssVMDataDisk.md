@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssVMDataDisk.md
-ms.openlocfilehash: f7342f4427a3baa6db87ab1bce893870b819d13c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c9c0a41a012d0c1b5c0ba14b8f96cbccf326d114
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357221"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140079569"
 ---
 # Add-AzVmssVMDataDisk
 
 ## SYNOPSIS
 Menambahkan disk data ke VM Vmss.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmssvmdatadisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ PS C:\> Update-AzVmssVM -VirtualMachineScaleSetVM $VmssVM
 
 Perintah pertama mendapatkan disk terkelola yang sudah ada.
 Perintah berikutnya akan memiliki Vmss VM yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah berikutnya menambahkan disk terkelola ke VMss VM yang disimpan secara lokal di $VmssVM.
+Perintah berikutnya menambahkan disk terkelola ke VMss VM yang disimpan secara lokal dalam $VmssVM.
 Perintah terakhir memperbarui VM VM dengan disk data tambahan.
 
 ## PARAMETERS
@@ -73,7 +76,7 @@ Menentukan apakah cmdlet ini membuat disk di komputer virtual dari platform atau
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lampirkan.
 Tentukan opsi ini untuk membuat mesin virtual dari disk khusus.
-Ketika Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri.*
+Ketika Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
 *VhdUri* hanya dibutuhkan untuk memberi tahu platform Azure tentang lokasi hard disk virtual (VHD) untuk melampirkan sebagai disk data ke mesin virtual.
 - Kosong.
 Tentukan ini untuk membuat disk data kosong.
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

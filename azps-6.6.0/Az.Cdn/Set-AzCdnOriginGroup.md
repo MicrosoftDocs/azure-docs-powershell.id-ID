@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/set-azcdnori
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Set-AzCdnOriginGroup.md
-ms.openlocfilehash: 146e89a331e981471989b84cbe850d3523a441b0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ad193b746f54b70967390e08b1bcd3e8874f87b2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136333881"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "139978971"
 ---
 # Set-AzCdnOriginGroup
 
 ## SYNOPSIS
 Memperbarui grup CDN origin
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/set-azcdnorigingroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Set-AzCdnOriginGroup -CdnOriginGroup <PSOriginGroup> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Set-AzCdnOriginGroup akan memperbarui grup origin tertentu dalam titik akhir yang ditentukan. 
+Set-AzCdnOriginGroup akan memperbarui grup origin tertentu dalam titik akhir tertentu. 
 
 ## EXAMPLES
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginId
-Azure CDN grup asal.
+Azure CDN id grup origin.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/new-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountManagementPolicyRule.md
-ms.openlocfilehash: 5b0761dbe0c87ebed992718a4cac08cfbedc90c9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 48ff435e502ba897e90fdcb9aa50c00499771593
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351341"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244061"
 ---
 # New-AzStorageAccountManagementPolicyRule
 
 ## SYNOPSIS
 Membuat objek aturan ManagementPolicy, yang bisa digunakan dalam Set-AzStorageAccountManagementPolicy.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageaccountmanagementpolicyrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Definition : {
 PS C:\>$policy = Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -Rule $rule
 ```
 
-Perintah ini membuat objek aturan ManagementPolicy, dengan objek grup tindakan ManagementPolicy berisi 4 tindakan, objek filter aturan ManagementPolicy, lalu atur aturan menjadi Akun Storage.
+Perintah ini membuat objek aturan ManagementPolicy, dengan objek grup tindakan ManagementPolicy berisi 4 tindakan, objek filter aturan ManagementPolicy, lalu menetapkan aturan menjadi Akun Storage.
 
 ## PARAMETERS
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
