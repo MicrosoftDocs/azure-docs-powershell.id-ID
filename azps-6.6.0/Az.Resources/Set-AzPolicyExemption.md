@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyExemption.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyExemption.md
-ms.openlocfilehash: beb1dbbc7beca157dd33c20ff95b97c7b28a9d57
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 05c8626830290165a9390aadb50ca7368e14ed39
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358082"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329559"
 ---
 # Set-AzPolicyExemption
 
 ## SYNOPSIS
 Mengubah pengecualian kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azpolicyexemption) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ PS C:\> $PolicyExemption = Get-AzPolicyExemption -Name 'PolicyExemption07'
 PS C:\> Set-AzPolicyExemption -Id $PolicyExemption.ResourceId -ExpiresOn $NextMonth
 ```
 
-Perintah pertama mendapatkan waktu tanggal saat ini menggunakan cmdlet Get-Date dan menambahkan 1 bulan ke waktu tanggal saat ini Perintah menyimpan objek tersebut dalam $NextMonth variabel.
+Perintah pertama mendapatkan waktu tanggal saat ini menggunakan cmdlet Get-Date dan menambahkan 1 bulan ke waktu tanggal saat ini Perintah menyimpan objek tersebut dalam variabel $NextMonth baru.
 Perintah kedua mendapatkan pengecualian kebijakan bernama PolicyExemption07 menggunakan cmdlet Get-AzPolicyExemption cmdlet.
 Perintah menyimpan objek tersebut dalam $PolicyExemption variabel.
 Perintah terakhir memperbarui tanggal kedaluwarsa untuk pengecualian kebijakan pada langganan default.
@@ -343,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

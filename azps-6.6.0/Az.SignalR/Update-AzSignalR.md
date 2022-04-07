@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzSignalR.md
-ms.openlocfilehash: 328406271dfbb831a6601a865379707e2d0825d7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c81db72d2d5815869c44263da044ac504d07f82e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372509"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328209"
 ---
 # Update-AzSignalR
 
 ## SYNOPSIS
 Memperbarui layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/update-azsignalr) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Update-AzSignalR -InputObject <PSSignalRResource> [-Sku <String>] [-UnitCount <I
 ## DESCRIPTION
 Memperbarui layanan SignalR.
 Nilai berikut ini akan digunakan untuk parameter jika tidak ditentukan:
-* `ResourceGroupName`: grup sumber daya default yang diatur oleh `Set-AzDefault -ResourceGroupName` .
+* `ResourceGroupName`: grup sumber daya default yang diatur oleh `Set-AzDefault -ResourceGroupName`.
 * `Sku`: `Standard_S1`
 
 ## EXAMPLES
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

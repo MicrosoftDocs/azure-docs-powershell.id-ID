@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Set-AzServiceFabricManagedClusterApplication.md
-ms.openlocfilehash: d75b16e5ec6e4bc3f24536ccd6e8d5df8297b94c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: dde8554b644517a2a05251b04951809715b79f02
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374399"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328569"
 ---
 # Set-AzServiceFabricManagedClusterApplication
 
 ## SYNOPSIS
 Update a service fabric managed application. Hal ini memungkinkan untuk memperbarui parameter aplikasi dan/atau memutakhirkan versi tipe aplikasi yang akan memicu pemutakhiran aplikasi atau pembaruan konfigurasi lainnya saja. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/set-azservicefabricmanagedclusterapplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Set-AzServiceFabricManagedClusterApplication [[-ApplicationTypeVersion] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet ini dapat digunakan untuk memperbarui parameter aplikasi dan memutakhirkan versi tipe aplikasi bersama dengan pembaruan konfigurasi lainnya saja. Memperbarui parameter hanya akan mengubah model di sisi ARM, hanya jika versi tipe baru digunakan, perintah akan memicu pemutakhiran aplikasi. Versi tipe yang ditentukan harus sudah dibuat di kluster menggunakan **New-AzServiceFabricManagedClusterApplicationTypeVersion.**
+Cmdlet ini dapat digunakan untuk memperbarui parameter aplikasi dan memutakhirkan versi tipe aplikasi bersama dengan pembaruan konfigurasi lainnya saja. Memperbarui parameter hanya akan mengubah model di sisi ARM, hanya jika versi tipe baru digunakan, perintah akan memicu pemutakhiran aplikasi. Versi tipe yang ditentukan harus sudah dibuat dalam kluster menggunakan **New-AzServiceFabricManagedClusterApplicationTypeVersion**.
 
 ## EXAMPLES
 
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckRetryTimeoutSec
-Menentukan durasi, dalam detik, setelah Service Fabric lagi memeriksa kesehatan jika pemeriksaan kesehatan sebelumnya gagal.
+Menentukan durasi, dalam detik, setelahnya Service Fabric kembali memeriksa kesehatan jika pemeriksaan kesehatan sebelumnya gagal.
 
 ```yaml
 Type: System.Int32
@@ -481,7 +484,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeDomainTimeoutSec
-Menentukan waktu maksimum, dalam detik, yang Service Fabric diperlukan untuk memutakhirkan satu domain pemutakhiran.
+Menentukan waktu maksimum, dalam detik, yang Service Fabric untuk memutakhirkan satu domain pemutakhiran.
 Setelah periode ini, pemutakhiran gagal.
 
 ```yaml
@@ -576,7 +579,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

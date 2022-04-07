@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Start-AzSqlI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlInstanceDatabaseLogReplay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Start-AzSqlInstanceDatabaseLogReplay.md
-ms.openlocfilehash: 713c637dc933e15ac8a09b5bc8988d002a827b67
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6d09981e4f7cee568fa1ae43904afa43295ddcb6
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342149"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140096561"
 ---
 # Start-AzSqlInstanceDatabaseLogReplay
 
 ## SYNOPSIS
 Memulai layanan Pemutaran Ulang Log dengan parameter tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/start-azsqlinstancedatabaselogreplay) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -281,7 +284,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

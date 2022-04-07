@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzIotSecurityAnalyticsAggregatedAlert.md
-ms.openlocfilehash: 0b61c7f73f02bbd6f38471d93af14cd89b6c8aed
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d4730ff526d97cdb579976c11500b306899cdd16
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374704"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140277673"
 ---
 # Get-AzIotSecurityAnalyticsAggregatedAlert
 
 ## SYNOPSIS
 Mendapatkan pemberitahuan agregat keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-aziotsecurityanalyticsaggregatedalert) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzIotSecurityAnalyticsAggregatedAlert -ResourceGroupName <String> -SolutionN
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzIotSecurityAnalyticsAggregatedAlert akan mengembalikan satu atau beberapa pemberitahuan agregat pada perangkat hub iot.
+Cmdlet Get-AzIotSecurityAnalyticsAggregatedAlert akan mengembalikan satu atau beberapa pemberitahuan agregat di perangkat hub iot.
 Nama agregat pemberitahuan adalah kombinasi dari tipe pemberitahuan dan tanggal aggragt pemberitahuan, dipisahkan oleh '/'.
 
 ## EXAMPLES
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

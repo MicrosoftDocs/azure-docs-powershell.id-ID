@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/stop-azn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: 95893cfe5417cccef478f1f6f1aada5186623f5d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 84b01da8302d30693507fb907db5622c78a6e11e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136348806"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140133603"
 ---
 # Stop-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Menghentikan sesi pengambilan paket yang berjalan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/stop-aznetworkwatcherpacketcapture) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

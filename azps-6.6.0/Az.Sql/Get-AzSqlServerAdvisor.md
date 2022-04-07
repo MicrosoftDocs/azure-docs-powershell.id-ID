@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAdvisor.md
-ms.openlocfilehash: 6d1c6a3a4c7ac8c7778fb907e699da23bfdb702a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0fb050e354a1f661a3c222def049d2480edaa985
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368883"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140245717"
 ---
 # Get-AzSqlServerAdvisor
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa Penasihat azure SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserveradvisor) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzSqlServerAdvisor [-AdvisorName <String>] [-ExpandRecommendedActions] -Serv
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerAdvisor** mendapatkan satu atau beberapa SQL Server Azure untuk SQL Server.
+Cmdlet **Get-AzSqlServerAdvisor** mendapatkan satu atau beberapa SQL Server Azure untuk azure SQL Server.
 
 ## EXAMPLES
 
@@ -141,7 +144,7 @@ RecommendedActions             : {}
 ```
 
 Perintah ini akan mendapatkan semua penasihat server bernama wi-runner-australia-east.
-Karena perintah menggunakan parameter *ExpandRecommendedActions,* cmdlet akan mendapatkan tindakan yang disarankan penasihat yang disertakan dalam respons.
+Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet akan mendapatkan tindakan yang disarankan penasihat yang disertakan dalam respons.
 
 ### Contoh 4: Dapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageBlob.md
-ms.openlocfilehash: 26b07650610285ed10f52806a361c4a0c5cdb45a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 54b91612432d5c770014214218b3aff156995712
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136388648"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140095895"
 ---
 # Remove-AzStorageBlob
 
 ## SYNOPSIS
 Menghapus blob penyimpanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azstorageblob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -CloudBlob
 Menentukan blob awan.
-Untuk mendapatkan objek **CloudBlob,** gunakan cmdlet Get-AzStorageBlob cmdlet.
+Untuk mendapatkan objek **CloudBlob** , gunakan cmdlet Get-AzStorageBlob.
 
 ```yaml
 Type: Microsoft.Azure.Storage.Blob.CloudBlob
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 
 ### -TagCondition
 Pernyataan ekspresi Tag opsional untuk memeriksa kecocokan kondisi. Permintaan blob akan gagal ketika tag blob tidak cocok dengan ekspresi tertentu.
-Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations .
+Lihat detail di https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations#tags-conditional-operations.
 
 ```yaml
 Type: System.String
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

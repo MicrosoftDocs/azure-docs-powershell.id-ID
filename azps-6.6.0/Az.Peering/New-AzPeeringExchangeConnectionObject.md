@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.peering/new-azpe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringExchangeConnectionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/New-AzPeeringExchangeConnectionObject.md
-ms.openlocfilehash: 2e115f214aafd12958ad6460c42a01a334c0a659
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6201fcd68bddeeac8a745ec923cc428680aae14c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358646"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140133171"
 ---
 # New-AzPeeringExchangeConnectionObject
 
 ## SYNOPSIS
 Membuat dalam memori PSObject untuk digunakan untuk membuat atau memodifikasi Peering.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.peering/new-azpeeringexchangeconnectionobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

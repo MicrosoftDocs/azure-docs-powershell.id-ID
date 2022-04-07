@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: 982e5ba68a12ef785c9900dd2fbb4a419d99fff4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f029f9fd429a08c3bc089f8d8d2d7c644a8faf4d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369566"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140245951"
 ---
 # Get-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan Grup Failover Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseinstancefailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 

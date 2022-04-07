@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseImport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseImport.md
-ms.openlocfilehash: 5be02ad898c688a3214ae87d026ecabdf98bf6b2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a69998e80c0fb5842f10344b6aa5ab0bd2b2f4e3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368519"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140245285"
 ---
 # New-AzSqlDatabaseImport
 
 ## SYNOPSIS
 Mengimpor file .bacpac dan membuat database baru di server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabaseimport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -103,10 +106,10 @@ Parameter ini default untuk SQL jika tidak ada tipe autentikasi yang diatur.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - SQL.
 SQL autentikasi.
-Set the *AdministratorLogin* and *AdministratorLoginPassword parameters* to the SQL administrator username and password. 
+Set the *AdministratorLogin* and *AdministratorLoginPassword* parameters to the SQL administrator username and password. 
 - ADPassword.
 Azure Active Directory autentikasi.
-Atur *AdministratorLogin* dan *AdministratorLoginPassword menjadi* nama pengguna dan kata sandi administrator Azure Active Directory.
+Atur *AdministratorLogin* dan *AdministratorLoginPassword ke* nama pengguna Azure Active Directory pengguna dan kata sandi administrator Anda.
 Parameter ini hanya tersedia di server SQL Database V12.
 
 ```yaml
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama tujuan layanan untuk ditetapkan ke Azure SQL Database.
+Menentukan nama tujuan layanan untuk ditetapkan kepada Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -362,7 +365,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

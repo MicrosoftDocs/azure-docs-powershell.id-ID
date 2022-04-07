@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzRoleDefinition.md
-ms.openlocfilehash: ded759d6dfe914e0e294ece5f901c19c3c6011ce
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c97b22faf950e7b1c7b30b7743dc4a62a9c5de87
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344750"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329613"
 ---
 # Remove-AzRoleDefinition
 
@@ -19,6 +19,9 @@ ms.locfileid: "136344750"
 Menghapus peran kustom di Azure RBAC.
 Peran yang akan dihapus ditentukan menggunakan properti Id dari peran tersebut.
 Delete akan gagal jika terdapat penetapan peran yang ada yang dilakukan pada peran kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azroledefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNodeType.md
-ms.openlocfilehash: 5568ef8b44ee82256b03a1fd0dc4cdcbf2ded9d3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 766ba29217a5eb3875dddb24caeb5507107a4d86
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374511"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328795"
 ---
 # Add-AzServiceFabricNodeType
 
 ## SYNOPSIS
 Tambahkan tipe node baru ke kluster yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricnodetype) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMImagePublisher
-Tentukan referensi gambar VM Publisher.
+Tentukan opsi referensi gambar VM Publisher.
 
 ```yaml
 Type: System.String
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

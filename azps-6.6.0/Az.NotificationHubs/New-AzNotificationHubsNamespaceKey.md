@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespaceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/New-AzNotificationHubsNamespaceKey.md
-ms.openlocfilehash: 0be0055639deedcb13b78fa1d0e376dca15fd26e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 228345b09d5761c61c6906142a7c6183453de13e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389642"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140133441"
 ---
 # New-AzNotificationHubsNamespaceKey
 
 ## SYNOPSIS
 Meregenerasi Kunci Aturan Otorisasi untuk Ruang Nama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/new-aznotificationhubsnamespacekey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
