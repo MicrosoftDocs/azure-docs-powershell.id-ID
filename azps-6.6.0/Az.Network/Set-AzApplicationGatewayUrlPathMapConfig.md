@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayUrlPathMapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayUrlPathMapConfig.md
-ms.openlocfilehash: ce4f68eb62d900c54c899615294600781e188a08
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 504b39d9c39614d5a58d3d42aeb8b8529578a173
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389908"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140463959"
 ---
 # Set-AzApplicationGatewayUrlPathMapConfig
 
 ## SYNOPSIS
 Mengatur konfigurasi untuk array pemetaan jalur URL ke kumpulan server backend.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewayurlpathmapconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ PS C:\> $appgw = Set-AzApplicationGatewayUrlPathMapConfig -ApplicationGateway $a
 PS C:\> $appgw = Set-AzApplicationGateway -ApplicationGateway $appgw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama appGwName dan menyimpan hasilnya $appgw variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama appGwName dan menyimpan hasilnya di $appgw variabel.
 Perintah kedua memperbarui pemetaan jalur URL yang dinamai map01 di gateway aplikasi.
 Perintah ketiga memperbarui gateway aplikasi.
 
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

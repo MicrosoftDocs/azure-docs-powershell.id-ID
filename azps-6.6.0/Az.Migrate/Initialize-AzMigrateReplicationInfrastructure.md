@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/initiali
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Initialize-AzMigrateReplicationInfrastructure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Initialize-AzMigrateReplicationInfrastructure.md
-ms.openlocfilehash: 6f3b7bed6f93674e44d1662c845b321cf87b30d9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 00d910a024f1a5bd72737b7404d8d0fdc12656b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367483"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140308813"
 ---
 # Initialize-AzMigrateReplicationInfrastructure
 
 ## SYNOPSIS
 Inisial adalah infrastruktur untuk proyek migrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.migrate/initialize-azmigratereplicationinfrastructure) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Initialize-AzMigrateReplicationInfrastructure -ProjectName <String> -ResourceGro
 ```
 
 ## DESCRIPTION
-Inisial cmdlet Initialize-AzMigrateReplicationInfrastructure adalah infrastruktur untuk proyek migrasi.
+Inisial Initialize-AzMigrateReplicationInfrastructure cmdlet adalah infrastruktur untuk proyek migrasi.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan Grup Sumber Daya migrasi Azure Project langganan saat ini.
+Menentukan Grup Sumber Daya Migrasi Azure Project langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

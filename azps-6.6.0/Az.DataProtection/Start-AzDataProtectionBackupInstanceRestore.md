@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
-ms.openlocfilehash: 33d4154ffe6eddefbb83468f96a225835703d336
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 60f35dcd16cc4bab88c10fba8c06aa3e50a87473
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337056"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140483817"
 ---
 # Start-AzDataProtectionBackupInstanceRestore
 
 ## SYNOPSIS
 Memicu pemulihan untuk BackupInstance
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/start-azdataprotectionbackupinstancerestore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ PS C:\> while($jobstatus -ne "Completed")
 ```
 
 Perintah pertama, kedua mengambil contoh dan titik pemulihan untuk instans tersebut.
-Perintah ketiga memulai proses $targetResourceId dengan Id database postgre target (targetDbName harus nama database baru).
+Perintah ketiga memulai $targetResourceId dengan Id database postgre target (targetDbName harus nama database baru).
 Perintah keempat memulai URI rahasia.
 Perintah kelima dan keenam memulai dan memicu permintaan pemulihan untuk AzureDatabaseForPostgreSQL dengan penyimpanan rahasia.
 Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan hingga selesai.
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -319,14 +322,14 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-PARAMETER <IAzureBackupRestoreRequest> : Permintaan pemulihan cadangan Azure
+PARAMETER <IAzureBackupRestoreRequest>: Permintaan pemulihan cadangan Azure
   - `ObjectType <String>`: 
   - `RestoreTargetInfo <IRestoreTargetInfoBase>`: Mendapatkan atau mengatur informasi target pemulihan.
     - `ObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
     - `[RestoreLocation <String>]`: Kawasan Pemulihan Target
   - `SourceDataStoreType <SourceDataStoreType>`: Mendapatkan atau mengatur tipe penyimpanan data sumber.
 
-RESTORETARGETINFO <IRestoreTargetInfoBase> : Mendapatkan atau mengatur informasi target pemulihan.
+RESTORETARGETINFO <IRestoreTargetInfoBase>: Mendapatkan atau mengatur informasi target pemulihan.
   - `ObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
   - `[RestoreLocation <String>]`: Kawasan Pemulihan Target
 

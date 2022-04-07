@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDscExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDscExtension.md
-ms.openlocfilehash: 096354af6ce4d2310d11f7e83925c73c5b90d743
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 42ace5687b4e44fb75678641b90acf9efee2de71
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361613"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140335139"
 ---
 # Set-AzVMDscExtension
 
 ## SYNOPSIS
 Mengonfigurasi ekstensi DSC di komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmdscextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Set-AzVMDscExtension [-ResourceGroupName] <String> [-VMName] <String> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMDscExtension** mengonfigurasi ekstensi Windows PowerShell Desired State Configuration (DSC) pada mesin virtual dalam grup sumber daya.
+Cmdlet **Set-AzVMDscExtension** mengonfigurasi ekstensi Windows PowerShell Status Konfigurasi Yang Diinginkan (DSC, Desired State Configuration) pada mesin virtual dalam grup sumber daya.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Cmdlet **Set-AzVMDscExtension** mengonfigurasi ekstensi Windows PowerShell Desir
 PS C:\> Set-AzVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM07" -ArchiveBlobName "Sample.ps1.zip" -ArchiveStorageAccountName "Stg" -ConfigurationName "ConfigName" -Version "1.10" -Location "West US"
 ```
 
-Perintah ini mengatur ekstensi DSC pada komputer virtual bernama VM07 untuk diunduh Sample.ps1.zip dari akun penyimpanan yang bernama Stg dan wadah default.
+Perintah ini mengatur ekstensi DSC pada komputer virtual bernama VM07 untuk diunduh dari Sample.ps1.zip penyimpanan bernama Stg dan wadah default.
 Perintah tersebut akan menjalankan konfigurasi bernama ConfigName.
 File Sample.ps1.zip sebelumnya diunggah dengan menggunakan **Publish-AzVMDscConfiguration**.
 
@@ -48,7 +51,7 @@ File Sample.ps1.zip sebelumnya diunggah dengan menggunakan **Publish-AzVMDscConf
 PS C:\> Set-AzVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM13" -ArchiveBlobName "Sample.ps1.zip" -ArchiveStorageAccountName "Stg" -ConfigurationName "ConfigName" -ConfigurationArgument "@{arg="val"}" -ArchiveContainerName "WindowsPowerShellDSC" -ConfigurationData "SampleData.psd1" -Version "1.10" -Location "West US"
 ```
 
-Perintah ini mengatur ekstensi pada mesin virtual bernama VM13 untuk diunduh Sample.ps1.zip dari akun penyimpanan yang bernama Stg dan wadah bernama WindowsPowerShellDSC.
+Perintah ini mengatur ekstensi pada komputer virtual bernama VM13 untuk diunduh Sample.ps1.zip dari akun penyimpanan bernama Stg dan wadah bernama WindowsPowerShellDSC.
 Perintah konfigurasi bernama ConfigName dan menentukan data dan argumen konfigurasi.
 File Sample.ps1.zip sebelumnya diunggah dengan menggunakan **Publish-AzVMDscConfiguration**.
 
@@ -57,10 +60,10 @@ File Sample.ps1.zip sebelumnya diunggah dengan menggunakan **Publish-AzVMDscConf
 PS C:\> Set-AzVMDscExtension -ResourceGroupName "ResourceGroup001" -VMName "VM22" -ArchiveBlobName "Sample.ps1.zip" -ArchiveStorageAccountName "Stg" -ConfigurationName "ConfigName" -ConfigurationArgument "@{arg="val"}" -ArchiveContainerName WindowsPowerShellDSC -ConfigurationData "SampleData.psd1" -Version "1.10" -Location "West US" -AutoUpdate
 ```
 
-Perintah ini mengatur ekstensi pada mesin virtual bernama VM22 untuk diunduh Sample.ps1.zip dari akun penyimpanan bernama Stg dan wadah bernama WindowsPowerShellDSC.
+Perintah ini mengatur ekstensi pada mesin virtual bernama VM22 untuk diunduh Sample.ps1.zip dari akun penyimpanan yang bernama Stg dan wadah bernama WindowsPowerShellDSC.
 Perintah tersebut akan meminta konfigurasi bernama ConfigName serta menentukan data dan argumen konfigurasi.
 Perintah ini juga mengaktifkan pembaruan otomatis penanganan ekstensi ke versi terbaru.
-The Sample.ps1.zip was previously uploaded by using **Publish-AzVMDscConfiguration**.
+Halaman Sample.ps1.zip diunggah sebelumnya dengan menggunakan **Publish-AzVMDscConfiguration**.
 
 ## PARAMETERS
 
@@ -388,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

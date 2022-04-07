@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnGateway.md
-ms.openlocfilehash: e0632bd319a6ca5479da06056a4c207cea737e07
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5e66c4d3f3c119d8fe16fc719ee370c9aef25725
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355829"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140464481"
 ---
 # New-AzVpnGateway
 
 ## SYNOPSIS
 Membuat Gateway VPN Terukur.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvpngateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,10 +47,10 @@ New-AzVpnGateway -ResourceGroupName <String> -Name <String> -VpnGatewayScaleUnit
 ```
 
 ## DESCRIPTION
-New-AzVpnGateway membuat Gateway VPN yang dapat disesuaikan.
+New-AzVpnGateway gateway VPN yang dapat disesuaikan.
 Ini adalah perangkat lunak yang ditentukan konektivitas untuk situs ke koneksi situs di dalam VirtualHub.
 
-Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzVpnGateway ini.
+Gateway ini mengubah ukuran dan skala berdasarkan unit skala yang ditentukan dalam cmdlet Set-AzVpnGateway cmdlet.
 
 Koneksi disetel dari cabang/Situs yang dikenal sebagai Situs VPN ke gateway yang dapat disesuaikan.
 Setiap koneksi terdiri dari 2 Active-Active sambungan.
@@ -305,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

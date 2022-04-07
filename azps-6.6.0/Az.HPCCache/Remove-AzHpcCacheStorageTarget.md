@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hpccache/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Remove-AzHpcCacheStorageTarget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HPCCache/HPCCache/help/Remove-AzHpcCacheStorageTarget.md
-ms.openlocfilehash: 61a76a0930b6cbdd4c284011009ff62e850d670d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4c85dc4e3a6be3fdafe62da8f089b7eefdc82f00
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365738"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140310487"
 ---
 # Remove-AzHpcCacheStorageTarget
 
 ## SYNOPSIS
 Menghapus Storage Target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hpccache/remove-azhpccachestoragetarget) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzHpcCacheStorageTarget -ResourceGroupName <String> -CacheName <String> -
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzHpcCacheStorageTarget** menghapus sebuah Storage Target dari Singgahan HPC Azure.
+Cmdlet **Remove-AzHpcCacheStorageTarget** menghapus item Storage Target dari Singgahan HPC Azure.
 
 ## EXAMPLES
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

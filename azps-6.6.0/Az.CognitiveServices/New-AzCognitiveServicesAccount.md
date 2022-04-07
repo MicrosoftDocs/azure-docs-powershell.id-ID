@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccount.md
-ms.openlocfilehash: f3c3e3b8b39ebf64ba0663140eab0702de7efa86
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 66c6104548cdc54f19b30598b264ae9d9659bbcd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363281"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140336327"
 ---
 # New-AzCognitiveServicesAccount
 
 ## SYNOPSIS
 Membuat akun Layanan Kognitif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -381,7 +384,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - S1
 - S2
 - S3
-- S4 Untuk informasi selengkapnya, [lihat API Layanan Kognitif.](https://www.microsoft.com/cognitive-services/en-us/apis)
+- S4 Untuk informasi selengkapnya, [lihat API Layanan Kognitif](https://www.microsoft.com/cognitive-services/en-us/apis).
 
 ```yaml
 Type: System.String

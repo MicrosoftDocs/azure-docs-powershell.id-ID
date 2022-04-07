@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultManagedStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVaultManagedStorageAccount.md
-ms.openlocfilehash: 048d9dccccea15272c5e104ca5447ef16bd7cd0f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ab6bb53e2648af60897252a087fa6a80329b944d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349742"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140310091"
 ---
 # Backup-AzKeyVaultManagedStorageAccount
 
 ## SYNOPSIS
 Mencadangkan akun penyimpanan yang dikelola KeyVault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvaultmanagedstorageaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ C:\Backup.blob
 
 Perintah ini mengambil akun penyimpanan terkelola bernama MyMSAK dari penyimpanan kunci bernama MyKeyVault dan menyimpan cadangan akun penyimpanan yang dikelola itu ke file bernama Backup.blob.
 
-### Contoh 3: Mencadangkan akun penyimpanan terkelola yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
+### Contoh 3:  Mencadangkan akun penyimpanan terkelola yang sebelumnya diambil ke nama file tertentu, menimpa file tujuan tanpa meminta.
 ```powershell
 PS C:\> $msak = Get-AzKeyVaultManagedStorageAccount -VaultName 'MyKeyVault' -Name 'MyMSAK'
 PS C:\> Backup-AzKeyVaultManagedStorageAccount -StorageAccount $msak -OutputFile 'C:\Backup.blob' -Force
@@ -70,7 +73,7 @@ PS C:\> Backup-AzKeyVaultManagedStorageAccount -StorageAccount $msak -OutputFile
 C:\Backup.blob
 ```
 
-Perintah ini membuat cadangan akun penyimpanan terkelola yang bernama $msak. Nama di vault bernama $msak. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
+Perintah ini membuat cadangan akun penyimpanan terkelola yang dinamai $msak. Nama di vault bernama $msak. VaultName ke file bernama Backup.blob, akan menimpa file tanpa masalah jika file sudah ada.
 
 ## PARAMETERS
 
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

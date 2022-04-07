@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountSchema.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountSchema.md
-ms.openlocfilehash: af5847eb7112ba281f012368f2f8a4ec57cf7291
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 47fa8f0c573be43fab0a66687009aa24634fb4f0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345638"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140333213"
 ---
 # New-AzIntegrationAccountSchema
 
 ## SYNOPSIS
 Membuat skema akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountschema) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -SchemaDefinition
 Menentukan objek definisi untuk skema akun integrasi.
-Tentukan parameter ini atau *parameter SchemaFilePath.*
+Tentukan parameter ini atau *parameter SchemaFilePath* .
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -SchemaFilePath
 Menentukan jalur file definisi untuk skema akun integrasi.
-Tentukan parameter ini atau *parameter SchemaDefinition.*
+Tentukan parameter ini atau *parameter SchemaDefinition* .
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

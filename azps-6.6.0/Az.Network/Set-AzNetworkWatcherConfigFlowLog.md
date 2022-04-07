@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
-ms.openlocfilehash: 93e0340714a0d1bc5e5977620ca41c15849d3158
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1289c8249b19125fb8fea5081ab600abb2c09123
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384563"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140463833"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
 ## SYNOPSIS
 Mengonfigurasi pembuatan log alur untuk sumber daya target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-aznetworkwatcherconfigflowlog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -128,7 +131,7 @@ Format           : {
 
 Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur yang diaktifkan, format default, dan tidak ada kumpulan kebijakan penyimpanan.
 
-### Contoh 2: Konfigurasi Flow Pembuatan Log untuk NSG tertentu dan atur versi pembuatan log alur ke 2.
+### Contoh 2: Konfigurasi Flow Log Pihak Server untuk NSG tertentu dan atur versi pembuatan log alur ke 2.
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -551,7 +554,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

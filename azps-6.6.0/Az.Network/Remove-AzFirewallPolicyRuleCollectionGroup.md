@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: 28540c6ecd587718bda6d36817da7598cee3c001
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6211a0645ad05019e1330db0eec91d4bb6ef9879
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360821"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140464301"
 ---
 # Remove-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
 Menghapus Grup Kumpulan Aturan Kebijakan Azure Firewall dalam kebijakan firewall Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azfirewallpolicyrulecollectiongroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Cmdlet **Remove-AzFirewallPolicyRuleCollectionGroup** menghapus grup kumpulan at
 PS C:\> Remove-AzFirewallPolicyRuleCollectionGroup -Name testRcGroup -FirewallPolicyObject $fp
 ```
 
-Contoh ini menghapus grup colelction aturan kebijakan firewall bernama "testRcGroup" dalam objek kebijakan firewall $fp
+Contoh ini menghapus grup colelction aturan kebijakan firewall yang bernama "testRcGroup" dalam objek kebijakan firewall $fp
 
 ### Contoh 2
 ```powershell
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
