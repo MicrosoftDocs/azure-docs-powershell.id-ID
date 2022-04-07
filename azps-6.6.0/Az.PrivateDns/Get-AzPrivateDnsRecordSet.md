@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Get-AzPrivateDnsRecordSet.md
-ms.openlocfilehash: a7d471398355c3e08c0086489df24749a6f8df98
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c2ee8aee4c17f9cd4c3162be1b40b8a90318d614
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140481675"
 ---
 # Get-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
 Mendapatkan kumpulan catatan dari zona DNS Privat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/get-azprivatednsrecordset) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ Get-AzPrivateDnsRecordSet -ParentResourceId <String> [-RecordType <RecordType>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzPrivateDnsRecordSet membuat kumpulan catatan Private Domain Name System (DNS) dengan nama dan tipe yang ditentukan, dalam zona privat yang ditentukan. Jika Anda tidak menentukan parameter Name atau RecordType, cmdlet ini akan mengembalikan semua kumpulan data tipe yang ditentukan dalam zona privat. Jika Anda menentukan parameter RecordType tetapi bukan parameter Name, cmdlet ini akan mengembalikan semua kumpulan data tipe catatan yang ditentukan. Anda dapat menggunakan operator pipeline untuk menyampaikan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat melewati objek PSPrivateDnsZone sebagai parameter Zona, atau anda juga dapat menentukan zona dan grup sumber daya berdasarkan namanya. Anda juga bisa menentukan zona privat menggunakan Id Sumber Daya zona privat.
+Cmdlet Get-AzPrivateDnsRecordSet mendapatkan kumpulan catatan Private Domain Name System (DNS) dengan nama dan tipe yang ditentukan, dalam zona privat yang ditentukan. Jika Anda tidak menentukan parameter Name atau RecordType, cmdlet ini akan mengembalikan semua kumpulan data tipe yang ditentukan dalam zona privat. Jika Anda menentukan parameter RecordType tetapi bukan parameter Name, cmdlet ini akan mengembalikan semua kumpulan data tipe catatan yang ditentukan. Anda dapat menggunakan operator pipeline untuk menyampaikan objek PSPrivateDnsZone ke cmdlet ini, atau Anda dapat melewati objek PSPrivateDnsZone sebagai parameter Zona, atau anda juga dapat menentukan zona dan grup sumber daya berdasarkan namanya. Anda juga bisa menentukan zona privat menggunakan Id Sumber Daya zona privat.
 
 ## EXAMPLES
 
@@ -108,7 +111,7 @@ Metadata          :
 IsAutoRegistered  :
 ```
 
-Perintah ini mendapatkan array dari semua kumpulan data tipe data A dalam zona privat bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya dalam $RecordSets sumber daya.
+Perintah ini mendapatkan array dari semua kumpulan data tipe data A dalam zona privat bernama myzone.com dalam grup sumber daya yang bernama MyResourceGroup, lalu menyimpannya di $RecordSets sumber daya.
 
 ### Contoh 3: Mendapatkan semua kumpulan rekaman dalam zona privat
 ```powershell
@@ -295,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
