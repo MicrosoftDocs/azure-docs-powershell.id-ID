@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSslSetting.md
-ms.openlocfilehash: ec77689fbab13d4bf3aade2b09307d48ec25d325
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d3cda1f856610c48f670b73ba14a4a8616f9c519
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391280"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140313793"
 ---
 # New-AzApiManagementSslSetting
 
 ## SYNOPSIS
 Membuat contoh PsApiManagementSslSetting
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsslsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzApiManagementSslSetting [-FrontendProtocol <Hashtable>] [-BackendProtocol 
 
 ## DESCRIPTION
 Perintah bantuan untuk membuat contoh PsApiManagementSslSetting.
-Perintah ini akan digunakan dengan New-AzApiManagement baris.
+Perintah ini akan digunakan dengan New-AzApiManagement perintah.
 
 ## EXAMPLES
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 
 ### -CipherSuite
 Pengaturan ssl cipher suites dalam urutan yang ditentukan. Parameter ini bersifat opsional.
-Syarat Pengaturan adalah `TripleDes168` - Aktifkan / Nonaktifkan Tripe Des 168
+Tanggal valid Pengaturan adalah `TripleDes168` - Aktifkan / Nonaktifkan Tripe Des 168
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

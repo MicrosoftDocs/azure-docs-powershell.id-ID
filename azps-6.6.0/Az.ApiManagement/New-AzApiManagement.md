@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagement.md
-ms.openlocfilehash: 5a75a796495a0325ed077c43a3feb5fb9bf6767a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 13e69801540bffbac3f69e256bfffe0e47e12f1b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370773"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140314008"
 ---
 # New-AzApiManagement
 
 ## SYNOPSIS
 Membuat penyebaran Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagement) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ ResourceGroupName                     : ContosoGroup02
 
 Perintah ini akan membuat layanan Manajemen API tingkat pengembang.
 Perintah menentukan organisasi dan alamat administrator.
-Perintah tidak menentukan parameter *SKU.*
+Perintah tidak menentukan parameter *SKU* .
 Oleh karena itu, cmdlet menggunakan nilai default Pengembang.
 
 ### Contoh 2: Membuat layanan tingkat Standar yang memiliki tiga unit
@@ -132,7 +135,7 @@ PS C:\> $virtualNetwork = New-AzApiManagementVirtualNetwork -Location "West US" 
 PS C:\> New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US" -Name "ContosoApi" -Organization "Contoso" -AdminEmail "admin@contoso.com" -VirtualNetwork $virtualNetwork -VpnType "Internal" -Sku "Premium"
 ```
 
-Perintah ini membuat layanan Manajemen API Premium tingkat dalam subnet jaringan virtual Azure yang memiliki titik akhir gateway untuk internal dengan kawasan master di AS Barat.
+Perintah ini membuat layanan manajemen API Premium tingkat dalam subnet jaringan virtual Azure yang memiliki titik akhir gateway untuk internal dengan kawasan master di AS Barat.
 
 ### Contoh 6: Membuat layanan Manajemen API dan Mengaktifkan protokol TLS 1.0
 ```powershell
@@ -546,7 +549,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
