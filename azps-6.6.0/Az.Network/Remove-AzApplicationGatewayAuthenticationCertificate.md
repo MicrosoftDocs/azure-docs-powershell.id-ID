@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayAuthenticationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayAuthenticationCertificate.md
-ms.openlocfilehash: bae596bc3f4a5fc72bd7b67d5ebaf2b1fb533993
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 20feb5d77fa7faf07e5b95a3362c41305d248cdb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355766"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330423"
 ---
 # Remove-AzApplicationGatewayAuthenticationCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat autentikasi dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayauthenticationcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> $appgw = Remove-AzApplicationGatewayAuthenticationCertificate -Applicati
 PS C:\> $appgw = Set-AzApplicationGateway -ApplicationGateway $appgw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama appGwName dan menyimpan hasilnya $appgw variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama appGwName dan menyimpan hasilnya di $appgw variabel.
 Perintah kedua menghapus sertifikat autentikasi bernama cert01 dari gateway aplikasi.
 Perintah ketiga memperbarui gateway aplikasi.
 
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

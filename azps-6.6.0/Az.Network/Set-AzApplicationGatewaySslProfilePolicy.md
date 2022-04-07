@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfilePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslProfilePolicy.md
-ms.openlocfilehash: a7ff830dc5273480154ceadb3fb1e2c5150a913a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3dbcafa2a0c4f269d64c71572c80fbd8fc38cc92
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342518"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330405"
 ---
 # Set-AzApplicationGatewaySslProfilePolicy
 
 ## SYNOPSIS
 Memodifikasi kebijakan SSL profil SSL gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslprofilepolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\> $profile  = Get-AzApplicationGatewaySslProfile -Name "SslProfile01" -App
 PS C:\> $profile = Set-AzApplicationGatewaySslProfilePolicy -SslProfile $profile -PolicyType Predefined -PolicyName AppGwSslPolicy20170401
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan profil ssl bernama SslProfile01 untuk $AppGw dan menyimpan pengaturan dalam $profile baru. Perintah terakhir mengubah kebijakan ssl dari objek profil ssl yang disimpan di $profile.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya. Perintah kedua mendapatkan profil ssl bernama SslProfile01 untuk $AppGw dan menyimpan pengaturan di $profile ini. Perintah terakhir mengubah kebijakan ssl dari objek profil ssl yang disimpan di $profile.
 
 ## PARAMETERS
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

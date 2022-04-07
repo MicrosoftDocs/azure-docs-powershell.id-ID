@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicySetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayFirewallPolicySetting.md
-ms.openlocfilehash: 04e78c93b8a8a00306c774e4719903f83ea09271
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d6a53e52b101081c3c3c4a84f38f976dd53dc5f5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352010"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330675"
 ---
 # New-AzApplicationGatewayFirewallPolicySetting
 
 ## SYNOPSIS
 Membuat pengaturan kebijakan untuk kebijakan firewall
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewayfirewallpolicysetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ PS C:\> $condition = New-AzApplicationGatewayFirewallPolicySetting -State $enabl
 ```
 
 Perintah membuat pengaturan kebijakan dengan status sebagai $enabledState, mode sebagai $enabledMode, RequestHargaCheck sebagai false, FileUploadLimitInMb sebagai $fileUploadLimitInMb dan MaxRequestRequestRequestSizeInKb sebagai $$maxRequestBodySizeInKb.
-The new policySettings is stored to $condition.
+Pengaturan kebijakan baru disimpan ke $condition.
 
 ## PARAMETERS
 
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azof
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzOffice365PolicyProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzOffice365PolicyProperty.md
-ms.openlocfilehash: 4c95ed6e5d1b16dfceca44ee051bb6ad24258cfa
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2aed72b32c62e21320d2172b686af3e287e2b14c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356177"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330549"
 ---
 # New-AzOffice365PolicyProperty
 
 ## SYNOPSIS
-Menetapkan kebijakan Office 365 terobosan lalu lintas baru untuk digunakan dengan situs Perlengkapan Virtual.
+Tentukan kebijakan Office 365 terobosan lalu lintas baru untuk digunakan dengan situs Perlengkapan Virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azoffice365policyproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Perintah New-AzOffice365PolicyProperties menetapkan kebijakan Office 365 terobos
 PS C:\> $o365Policy = New-AzOffice365PolicyProperty -Allow -Optimize 
 ```
 
-Buat Office 365 kebijakan terobosan lalu lintas untuk digunakan dengan perintah situs Perlengkapan Virtual.
+Membuat Office 365 kebijakan terobosan lalu lintas untuk digunakan dengan perintah situs Perlengkapan Virtual.
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

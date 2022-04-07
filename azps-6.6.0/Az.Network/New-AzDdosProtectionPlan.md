@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azdd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
-ms.openlocfilehash: 99f5493107a968ea642828a0410cd224d1c1f675
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 235cb3f62c36d3e20a1c2caebe103a97fd691095
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351941"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330585"
 ---
 # New-AzDdosProtectionPlan
 
 ## SYNOPSIS
 Membuat rencana proteksi DDoS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azddosprotectionplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ D:\> $subnet = New-AzVirtualNetworkSubnetConfig -Name SubnetName -AddressPrefix 
 D:\> $vnet = New-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName -Location "West US" -AddressPrefix 10.0.0.0/16 -DnsServer 8.8.8.8 -Subnet $subnet -EnableDdoSProtection -DdosProtectionPlanId $ddosProtectionPlan.Id
 ```
 
-Pertama, kami membuat paket Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan.**
+Pertama, kami membuat paket Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
 Lalu, kami membuat jaringan virtual baru dengan **New-AzVirtualNetwork** dan kami menentukan ID paket yang baru dibuat di parameter **DdosProtectionPlanId**. Dalam kasus ini, karena kami mengaitkan jaringan virtual dengan rencana, kami juga dapat menentukan parameter **EnableDdoSProtection**.
 
 ### Contoh 2: Membuat dan mengaitkan rencana proteksi DDoS dengan jaringan virtual yang sudah ada
@@ -87,9 +90,9 @@ DdosProtectionPlan     : {
 EnableVmProtection     : false
 ```
 
-Pertama, kami membuat paket Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan.**
+Pertama, kami membuat paket Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
 Kedua, kita mendapatkan versi jaringan virtual terbaru yang ingin kami kaitkan dengan paket. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId yang** berisi referensi ke ID dari paket yang baru dibuat. Dalam hal ini, jika kami mengaitkan jaringan virtual dengan paket proteksi DDoS, kami juga dapat menetapkan bendera **EnableDdosProtection** ke true.
-Terakhir, kami tetap pada kondisi baru dengan pemipaan variabel lokal ke **Set-AzVirtualNetwork**.
+Terakhir, kami tetap pada status baru dengan pemipaan variabel lokal ke **Set-AzVirtualNetwork**.
 
 ## PARAMETERS
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

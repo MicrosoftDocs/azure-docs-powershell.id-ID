@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedClientCertificate.md
-ms.openlocfilehash: 914d029e12580d7a2a4245daf77067517794377e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9470dceb0395c97f0a6ed62ba2b555b9f7205c6b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342521"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330387"
 ---
 # Set-AzApplicationGatewayTrustedClientCertificate
 
 ## SYNOPSIS
 Mengubah rantai sertifikat CA klien tepercaya dari sebuah gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedclientcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ PS C:\> $gw = Set-AzApplicationGatewayTrustedClientCertificate -ApplicationGatew
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Contoh skenario di atas memperlihatkan cara memperbarui objek rantai sertifikat CA klien tepercaya yang sudah ada. Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $gw variabel. Perintah kedua mengubah objek rantai sertifikat CA klien tepercaya yang sudah ada dengan file rantai sertifikat CA yang baru. Perintah ketiga memperbarui gateway aplikasi di Azure.
+Contoh skenario di atas memperlihatkan cara memperbarui objek rantai sertifikat CA klien tepercaya yang sudah ada. Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru. Perintah kedua mengubah objek rantai sertifikat CA klien tepercaya yang sudah ada dengan file rantai sertifikat CA yang baru. Perintah ketiga memperbarui gateway aplikasi di Azure.
 
 ## PARAMETERS
 
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
