@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBAccount.md
-ms.openlocfilehash: 067981ed5a516d5133f454c4584730e61cfa0595
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7c927d09f691db2e90480aa2c0bfe0209d38ee04
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136157378"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140311279"
 ---
 # New-AzCosmosDBAccount
 
 ## SYNOPSIS
 Buat Akun CosmosDB baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -461,7 +464,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxStalenessPrefix
-Ketika digunakan dengan konsistensi Staleness Terikat, nilai ini menunjukkan jumlah permintaan basi yang diobesakan.
+Ketika digunakan dengan konsistensi  Staleness Terikat, nilai ini menunjukkan jumlah permintaan basi yang diobesakan.
 Rentang yang diterima untuk nilai ini adalah 1 - 2.147.483.647.
 
 ```yaml
@@ -644,7 +647,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Tipe kelebihan data cadangan Storage Anda
+Tipe kelebihan data cadangan Storage ini
 
 ```yaml
 Type: System.String
@@ -659,7 +662,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

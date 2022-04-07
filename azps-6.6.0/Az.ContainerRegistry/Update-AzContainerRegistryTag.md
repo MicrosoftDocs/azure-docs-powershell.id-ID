@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryTag.md
-ms.openlocfilehash: 3c7dcd3643349f3bfbb620857c02aa3dad89e044
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a2c890b421cfc7b8ba9380b9381186c0b65803be
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337308"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140334697"
 ---
 # Update-AzContainerRegistryTag
 
 ## SYNOPSIS
 Perbarui tag ACR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrytag) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Update-AzContainerRegistryTag -RepositoryName <String> -Name <String> [-DeleteEn
 ## DESCRIPTION
 Perbarui atribut dari tag ACR yang diberikan.
 
-Sebelum menggunakan cmdlet ini, Anda harus menjalankannya `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true` terlebih dahulu.
+Sebelum menggunakan cmdlet ini, Anda harus menjalankannya terlebih `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true` dahulu.
 
 ## EXAMPLES
 
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

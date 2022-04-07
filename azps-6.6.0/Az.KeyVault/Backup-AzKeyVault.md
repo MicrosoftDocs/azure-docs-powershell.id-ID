@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/backup-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Backup-AzKeyVault.md
-ms.openlocfilehash: b6ad094f370351e646121177b9c1c40d2618a5c8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2f8db0dab04eda3dfe49d5dd0f51d55f69593c5e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377255"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140333465"
 ---
 # Backup-AzKeyVault
 
 ## SYNOPSIS
 Sepenuhnya mencadangkan HSM yang dikelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/backup-azkeyvault) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ PS C:\> Backup-AzKeyVault -HsmName myHsm -StorageContainerUri "https://{accountN
 https://{accountName}.blob.core.windows.net/{containerName}/{backupFolder}
 ```
 
-Cmdlet akan membuat folder (biasanya bernama `mhsm-{name}-{timestamp}` ) dalam wadah penyimpanan, menyimpan cadangan di folder tersebut dan membuat output URI folder.
+Cmdlet akan membuat folder (biasanya bernama `mhsm-{name}-{timestamp}`) dalam wadah penyimpanan, menyimpan cadangan di folder tersebut dan membuat output URI folder.
 
 ## PARAMETERS
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerInstanceObject.md
-ms.openlocfilehash: f05a1c8b725e3451c027170e5ae7e6cb9ef4bace
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 92b6d8e36fb8a40f014dadf1007573491e443b59
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349142"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140334779"
 ---
 # New-AzContainerInstanceObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Wadah
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerinstance/new-azcontainerinstanceobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -608,7 +611,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -630,11 +633,11 @@ ENVIRONMENTVARIABLE <IEnvironmentVariable[]>: Variabel lingkungan untuk diatur d
   - `[SecureValue <String>]`: Nilai variabel lingkungan yang aman.
   - `[Value <String>]`: Nilai variabel lingkungan.
 
-PORT <IContainerPort[]>: Port yang diekspos pada contoh wadah.
+PORT <IContainerPort[]>: Port yang diekspos pada wadah contoh.
   - `Port <Int32>`: Nomor port yang diekspos dalam grup wadah.
   - `[Protocol <ContainerNetworkProtocol?>]`: Protokol yang terkait dengan port.
 
-VOLUMEMOUNT <IVolumeMount[]>: Volume terpasang yang tersedia pada wadah.
+VOLUMEMOUNT <IVolumeMount[]>: Volume terpasang yang tersedia untuk contoh wadah.
   - `MountPath <String>`: Jalur di dalam wadah tempat volume harus terpasang. Tidak boleh berisi titik dua (:).
   - `Name <String>`: Nama volume yang naik.
   - `[ReadOnly <Boolean?>]`: Bendera menunjukkan apakah volume naik merupakan baca-saja.

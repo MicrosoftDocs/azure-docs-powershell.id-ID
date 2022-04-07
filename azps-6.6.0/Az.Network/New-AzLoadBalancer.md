@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancer.md
-ms.openlocfilehash: db9c42b6ed7988130e16e87329fbba01bc1d2a80
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a57fc597bb75387c973ef08f09e8d44d63adf633
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356318"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140281867"
 ---
 # New-AzLoadBalancer
 
 ## SYNOPSIS
 Membuat penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalancer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ PS C:\> Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResource
 Menggunakan penyeimbang muat mengharuskan Anda terlebih dahulu membuat beberapa objek, dan tujuh perintah pertama memperlihatkan cara membuat objek tersebut.
 Perintah kedelapan membuat penyeimbang muat bernama MyLoadBalancer dalam grup sumber daya yang bernama MyResourceGroup.
 Perintah sembilan dan terakhir mendapatkan penyeimbang muat baru untuk memastikan berhasil dibuat.
-Perhatikan bahwa contoh ini hanya memperlihatkan cara membuat penyeimbang muat. Anda juga harus mengonfigurasinya menggunakan cmdlet Add-AzNetworkInterfaceIpConfig untuk menetapkan NICs ke mesin virtual yang berbeda.
+Perhatikan bahwa contoh ini hanya memperlihatkan cara membuat penyeimbang muat. Anda juga harus mengonfigurasinya menggunakan cmdlet Add-AzNetworkInterfaceIpConfig untuk menetapkan NICs ke komputer virtual yang berbeda.
 
 ### Contoh 2: Membuat penyeimbang muat global
 ```
@@ -355,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

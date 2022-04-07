@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraphThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBGremlinGraphThroughput.md
-ms.openlocfilehash: 3693bb328e4511f9a6cdd172931b8a480bb2e779
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cd0780dfa3ea9d5cb891c96f9a50511f628b987a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349121"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140334635"
 ---
 # Get-AzCosmosDBGremlinGraphThroughput
 
 ## SYNOPSIS
 Mendapatkan throughput dari CosmosDB Throughputmlin Graph.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbgremlingraphthroughput) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBGremlinGraphThroughput [-Name <String>] -InputObject <PSGremlinGra
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBGremlinGraphThroughput** mendapatkan throughput cmdlet Cmdlet CosmosDB CmdletsDB Graph.
+Cmdlet **Get-AzCosmosDBGremlinGraphThroughput** mendapatkan throughput cmdlet CosmosDB Throughputmlin Graph.
 
 ## EXAMPLES
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Dll. Graph objek.
+Dll. Graph tertentu.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetResults
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Dll. Graph Dll.
+Jackmlin Graph Nama.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

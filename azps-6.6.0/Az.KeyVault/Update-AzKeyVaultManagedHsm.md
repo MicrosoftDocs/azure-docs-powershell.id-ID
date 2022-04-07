@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultManagedHsm.md
-ms.openlocfilehash: 8bc6c5692a4df5b85750f229b94445e46360f725
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 155f3dde3f9fdc46e5ec0b93805ec33c1cceda6c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356969"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140309839"
 ---
 # Update-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
 Memperbarui status HSM yang dikelola Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultmanagedhsm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -68,7 +71,7 @@ Tags                                :
                                       testKey     testValued
 ```
 
-Memperbarui tag untuk Hsm terkelola yang dinamai `$hsmName` dalam grup sumber daya `$resourceGroupName` .
+Memperbarui tag untuk Hsm terkelola yang dinamai `$hsmName` dalam grup sumber daya `$resourceGroupName`.
 
 ### Contoh 2: Memperbarui Hsm terkelola menggunakan pemipaan
 ```powershell
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
