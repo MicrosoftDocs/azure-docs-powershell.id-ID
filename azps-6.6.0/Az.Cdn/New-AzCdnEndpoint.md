@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnend
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnEndpoint.md
-ms.openlocfilehash: 6c5f2e9fc91db6cbb01c73f48efe1c76c13a3fad
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e9b9e0ca86144fff188f65c50bb05994911866c8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380433"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140312341"
 ---
 # New-AzCdnEndpoint
 
 ## SYNOPSIS
-Membuat CDN akhir.
+Membuat titik CDN akhir.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Cmdlet **New-AzCdnEndpoint** membuat titik akhir Azure Content Delivery Network 
 ## PARAMETERS
 
 ### -CdnProfile
-Menentukan objek CDN profil tempat titik akhir ditambahkan.
+Menentukan CDN profil pengguna tempat titik akhir ditambahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -465,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-Azure CDN sumber daya link privat origin.
+Azure CDN sumber daya tautan privat origin.
 
 ```yaml
 Type: System.String
@@ -510,7 +513,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryStringCachingBestringior
-Menentukan perilaku titik akhir CDN saat string kueri ada dalam URL permintaan.
+Menentukan perilaku titik akhir CDN ketika string kueri ada dalam URL permintaan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSQueryStringCachingBehavior]
@@ -602,7 +605,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

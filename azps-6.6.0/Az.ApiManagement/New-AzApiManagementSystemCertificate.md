@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSystemCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementSystemCertificate.md
-ms.openlocfilehash: 6e315d25c149246ad0373c1e5408aecb354e8ace
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e589530b8d41b7bc0e24f3f0277d37d4bcd0d331
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391269"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140313757"
 ---
 # New-AzApiManagementSystemCertificate
 
 ## SYNOPSIS
-Membuat contoh `PsApiManagementSystemCertificate` . Sertifikat bisa dikeluarkan oleh CA privat dan akan diinstal pada layanan Manajemen API ke dalam `CertificateAuthority` atau `Root` menyimpan.
+Membuat contoh `PsApiManagementSystemCertificate`. Sertifikat bisa dikeluarkan oleh CA privat dan akan diinstal pada layanan Manajemen API ke dalam atau `CertificateAuthority` menyimpan `Root` .
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementsystemcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzApiManagementSystemCertificate -StoreName <String> -PfxPath <String> [-Pfx
 
 ## DESCRIPTION
 Cmdlet **New-AzApiManagementSystemCertificate** adalah perintah helper yang membuat contoh **PsApiManagementSystemCertificate**.
-Perintah ini digunakan dengan cmdlet New-AzApiManagement Set-AzApiManagement cmdlet.
+Perintah ini digunakan dengan cmdlet New-AzApiManagement Set-AzApiManagement.
 
 ## EXAMPLES
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

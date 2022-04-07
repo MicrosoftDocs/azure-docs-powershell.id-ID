@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJobSchedule.md
-ms.openlocfilehash: 4c22a092307b77bd31b46feda17a44c908df575a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 236e5303ce9dda3819e3c3b1e989f50d4c909e11
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347657"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140313055"
 ---
 # Get-AzBatchJobSchedule
 
 ## SYNOPSIS
 Mendapatkan jadwal pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchjobschedule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzBatchJobSchedule [[-Id] <String>] [-Select <String>] [-Expand <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchJobSchedule** mendapatkan jadwal pekerjaan Azure Batch untuk akun Batch yang ditentukan oleh parameter *BatchContext.*
+Cmdlet **Get-AzBatchJobSchedule** mendapatkan jadwal pekerjaan Azure Batch untuk akun Batch yang ditentukan oleh parameter *BatchContext* .
 Tentukan ID untuk mendapatkan satu jadwal pekerjaan.
 Tentukan *parameter Filter* untuk mendapatkan jadwal pekerjaan yang sesuai dengan filter Open Data Protocol (OData).
 
@@ -60,7 +63,7 @@ Url                         : https://pfuller.westus.batch.azure.com/jobschedule
 ```
 
 Perintah ini mendapatkan jadwal pekerjaan yang memiliki ID JobSchedule23.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Mendapatkan jadwal pekerjaan dengan menggunakan filter
 ```
@@ -98,7 +101,7 @@ Statistics                  :
 Url                         : https://pfuller.westus.batch.azure.com/jobschedules/JobSchedule26
 ```
 
-Perintah ini mendapatkan semua jadwal pekerjaan dengan IDENTITAS yang dimulai dengan Pekerjaan dengan menentukan *parameter Filter.*
+Perintah ini mendapatkan semua jadwal pekerjaan dengan IDENTITAS yang dimulai dengan Pekerjaan dengan menentukan *parameter Filter* .
 
 ## PARAMETERS
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

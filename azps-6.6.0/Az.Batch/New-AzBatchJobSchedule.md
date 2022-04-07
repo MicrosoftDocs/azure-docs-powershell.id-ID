@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJobSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchJobSchedule.md
-ms.openlocfilehash: db4a8e4f2385a12fdf61ed3bb06c1651c82d92dd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fbfba8f6409a92488c1644b795f079fbd3318396
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366262"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140312769"
 ---
 # New-AzBatchJobSchedule
 
 ## SYNOPSIS
 Membuat jadwal pekerjaan dalam layanan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchjobschedule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,9 +46,9 @@ PS C:\> New-AzBatchJobSchedule -Id "JobSchedule17" -Schedule $Schedule -JobSpeci
 ```
 
 Contoh ini membuat jadwal kerja.
-Lima perintah pertama membuat dan mengubah **PSSchedule**, **PSJobSpecification**, dan **objek PSPoolInformation.**
+Lima perintah pertama membuat dan mengubah **PSSchedule**, **PSJobSpecification**, dan **objek PSPoolInformation** .
 Perintah menggunakan cmdlet New-Object standar dan Azure PowerShell standar.
-Perintah menyimpan objek ini dalam $Schedule $JobSpecification variabel.
+Perintah menyimpan objek ini dalam $Schedule $JobSpecification berbeda.
 Perintah terakhir membuat jadwal pekerjaan yang memiliki ID JobSchedule17.
 Jadwal ini membuat pekerjaan dengan interval pengulangan satu hari.
 Pekerjaan dijalankan di pool yang memiliki ID ContosoPool06, seperti yang ditentukan dalam perintah kelima.
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

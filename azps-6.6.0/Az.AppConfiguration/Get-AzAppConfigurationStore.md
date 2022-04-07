@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.appconfiguration
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AppConfiguration/help/Get-AzAppConfigurationStore.md
-ms.openlocfilehash: bbbbbb03a5af6cd32d45558ee49885b77c484dbd
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: be145507991fb22a5807cb30c6f3425f92130131
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359741"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140313433"
 ---
 # Get-AzAppConfigurationStore
 
 ## SYNOPSIS
-Dapatkan atau list app configuration stores.
+Dapatkan atau  list app configuration stores.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.appconfiguration/get-azappconfigurationstore) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,11 +46,11 @@ Get-AzAppConfigurationStore -ResourceGroupName <String> [-SubscriptionId <String
 ```
 
 ## DESCRIPTION
-Dapatkan atau list app configuration stores.
+Dapatkan atau  list app configuration stores.
 
 ## EXAMPLES
 
-### Contoh 1: List all app configuration stores under a subscription
+### Contoh 1:  List all app configuration stores under a subscription
 ```powershell
 PS C:\> Get-AzAppConfigurationStore
 
@@ -59,7 +62,7 @@ eastus   contoso-app-config Microsoft.AppConfiguration/configurationStores
 
 Perintah ini mencantumkan semua konfigurasi aplikasi yang menyimpan di bawah langganan.
 
-### Contoh 2: List all app configuration stores under a resource group
+### Contoh 2:  List all app configuration stores under a resource group
 ```powershell
 PS C:\> Get-AzAppConfigurationStore -ResourceGroupName azpwsh-manual-test
 
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Microsoft Azure langganan.
+ID Microsoft Azure langganan.
 
 ```yaml
 Type: System.String[]
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,13 +193,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IAppConfigurationIdentity> : Parameter Identitas
+INPUTOBJECT <IAppConfigurationIdentity>: Parameter Identitas
   - `[ConfigStoreName <String>]`: Nama penyimpanan konfigurasi.
   - `[GroupName <String>]`: Nama grup sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat
   - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat wadah registri t dimiliki.
-  - `[SubscriptionId <String>]`: MICROSOFT AZURE ID langganan.
+  - `[SubscriptionId <String>]`: Microsoft Azure ID langganan.
 
 ## RELATED LINKS
 

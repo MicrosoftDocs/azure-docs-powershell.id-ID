@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
-ms.openlocfilehash: 7215df8d0ba16d66950ac70b0aaff10b9c155503
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 609a11d8228ad598d9c24b74e83074117de87ded
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361574"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140311675"
 ---
 # Set-AzVmssOsProfile
 
 ## SYNOPSIS
 Mengatur properti profil sistem operasi VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssosprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -81,12 +84,12 @@ Accept wildcard characters: False
 
 ### -AdminUsername
 Menentukan nama akun administrator yang akan digunakan untuk semua instans mesin virtual dalam VMSS. <br>
-**Windows saja: Tidak** dapat diakhiri dengan \" .\" <br>
-**Nilai yang tidak diizinkan:** \" administrator \" , admin , pengguna , \" \" \" \" \" user1 , test , \" \" \" \" user2 , \" \" test1 , \" \" user3 , \" \" admin1 , \" \" 1 , \" \" 123 \" , a , \" \" \" actuser , \" \" adm , \" \" admin2 , \" \" aspnet , backup , \" console , david , guest , john \" , \" owner , root , \" server , sql \" \" \" \" \" \" , \" \" \" \" \" \" \" \" \" \" support \", \" support_388945a0 , sys \" , \" \" \" test2 , \" \" test3 , \" \" user4 , \" \" user5 \" . <br>
+**Windows-saja: Tidak** dapat diakhiri dengan \".\" <br>
+**Nilai yang tidak diizinkan:** \" administrator\", \"admin\", \"pengguna\", \"user1\", \"test\", \"user2\", \"test1\", \"user3\", \"admin1\", \"1\", \"123\", \"a\", \"actuser\", \"adm\", \"admin2\", \"aspnet\", \"backup, console\", \"\"\"david, guest\"\", \"\"john\", \"owner\", \"root\", \"server\", \"sql\", support \" \", \"support_388945a0\", \"sys\", \"test2\", \"test3\", \"user4\", \"user5\". <br>
 **Panjang-minimum (Linux):** 1 karakter <br>
 **Panjang-maks (Linux):** 64 karakter <br>
-**Panjang maksimal (Windows):** 20 karakter  <br>
-<li> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat Memilih Nama [Pengguna untuk Linux di Azure.](https://docs.microsoft.com/azure/devops/organizations/settings/naming-restrictions)
+**Panjang maks (Windows):** 20 karakter  <br>
+<li> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat Memilih [Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/devops/organizations/settings/naming-restrictions).
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 Menentukan string berkode basis 64 dari data kustom.
 Ini dikodekan ke array biner yang disimpan sebagai file pada mesin virtual.
 Panjang maksimum array biner adalah 65535 byte. <br>
-Untuk menggunakan cloud-init untuk VM, lihat [Menggunakan cloud-init untuk mengustomisasi VM Linux selama pembuatan.](/azure/virtual-machines/linux/tutorial-automate-vm-deployment)
+Untuk menggunakan cloud-init untuk VM, lihat [Menggunakan cloud-init untuk mengustomisasi VM Linux selama pembuatan](/azure/virtual-machines/linux/tutorial-automate-vm-deployment).
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 
 ### -Rahasia
 Menentukan objek rahasia yang berisi referensi sertifikat untuk menempatkan di komputer virtual.
-Anda bisa menggunakan cmdlet Add-AzVmssSecret untuk membuat objek rahasia.
+Anda bisa menggunakan cmdlet Add-AzVmssSecret rahasia untuk membuat objek rahasia.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.VaultSecretGroup[]
@@ -244,8 +247,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu mesin virtual. misalnya Waktu Standar \" \" Pasifik. <br>
-Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones.](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones)
+Menentukan zona waktu mesin virtual. misalnya Waktu Standar \"Pasifik\". <br>
+Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [Zona WaktuInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
 
 ```yaml
 Type: System.String
@@ -350,7 +353,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
