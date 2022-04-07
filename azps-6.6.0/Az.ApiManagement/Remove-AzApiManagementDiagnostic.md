@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementDiagnostic.md
-ms.openlocfilehash: aab546bc85cb8acbfcd38a9629520c97530bf372
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c693ce15413455b36590e3fe6e7c587ebe599f76
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362057"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140288923"
 ---
 # Remove-AzApiManagementDiagnostic
 
 ## SYNOPSIS
 Hapus entitas Diagnostik dari lingkup tingkat Global atau API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementdiagnostic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzApiManagementDiagnostic -InputObject <PsApiManagementDiagnostic> [-Pass
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementDiagnostic** menghapus entitas diagnostik yang ditentukan `DiagnosticId` dari lingkup global atau `ApiId` lingkup
+Cmdlet **Remove-AzApiManagementDiagnostic** menghapus entitas diagnostik yang ditentukan dari `DiagnosticId` lingkup global atau lingkup `ApiId`
 
 ## EXAMPLES
 
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

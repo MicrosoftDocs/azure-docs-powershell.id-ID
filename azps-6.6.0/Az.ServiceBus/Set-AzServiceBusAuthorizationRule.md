@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Set-AzServiceBusAuthorizationRule.md
-ms.openlocfilehash: c15319071a67e82b71a36dfc71806dd461457e89
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 331d958fcade701d0a6cdbaef8a6cf804cc75d2d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353885"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246473"
 ---
 # Set-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
 Memperbarui deskripsi aturan otorisasi tertentu untuk ruang nama Bus Layanan atau antrean atau topik yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/set-azservicebusauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Set-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzServiceBusAuthorizationRule** memperbarui deskripsi untuk aturan otorisasi tertentu dalam kumpulan nama Bus Layanan atau antrean atau topik tertentu.
+Cmdlet **Set-AzServiceBusAuthorizationRule** memperbarui deskripsi untuk aturan otorisasi tertentu dalam ruang nama Bus Layanan atau antrean atau topik yang ditentukan.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ PS C:\> $authRuleObj.Rights.Remove("Manage")
 PS C:\> Set-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -InputObj $authRuleObj
 ```
 
-Menghapus Kelola **dari** hak akses aturan otorisasi dalam `AuthoRule1` ruang nama `SB-Example1` .
+Menghapus Kelola **dari** hak akses aturan otorisasi dalam ruang `AuthoRule1` nama `SB-Example1`.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +75,7 @@ PS C:\> $authRuleObj.Rights.Remove("Manage")
 PS C:\> Set-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -InputObj $authRuleObj
 ```
 
-Menghapus **Kelola** dari hak akses aturan otorisasi dalam `AuthoRule1` antrean `SBQueue` .
+Menghapus **Kelola** dari hak akses aturan otorisasi dalam `AuthoRule1` antrean `SBQueue`.
 
 ### Contoh 3
 ```powershell
@@ -83,7 +86,7 @@ PS C:\> $authRuleObj.Rights.Remove("Manage")
 PS C:\> Set-AzServiceBusNamespaceAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -InputObj $authRuleObj
 ```
 
-Menghapus **Kelola** dari hak akses aturan otorisasi dalam `AuthoRule1` topik `SBTopic` .
+Menghapus **Kelola** dari hak akses aturan otorisasi dalam `AuthoRule1` topik `SBTopic`.
 
 ## PARAMETERS
 
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

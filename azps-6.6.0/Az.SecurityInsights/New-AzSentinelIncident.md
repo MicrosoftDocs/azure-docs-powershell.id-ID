@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncident.md
-ms.openlocfilehash: 683244ec3af6f0c85cbe5f163012d734a642752b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b79cb455ce96e592e165aead8d6e7e400fb85694
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359966"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329037"
 ---
 # New-AzSentinelIncident
 
 ## SYNOPSIS
 Membuat Insiden.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincident) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\> $Incident = New-AzSentinelIncident -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Title "NewIncident" -Description "My Description" -Severity Low -Status New
 ```
 
-Contoh ini membuat **Insiden di** ruang kerja tertentu, lalu menyimpannya di $Incident berbeda.<br/><br/>
+Contoh ini membuat **Insiden di** ruang kerja tertentu, lalu menyimpannya di $Incident otomatis.<br/><br/>
 
 *Harap diingat bahwa saat ini Anda tidak dapat menambahkan entitas ke insiden baru yang dibuat melalui otomatisasi. Artinya, Anda tidak dapat menggunakan fitur investigasi untuk insiden baru yang dibuat melalui otomatisasi. <br/> Fitur untuk menambahkan entitas ke insiden telah direncanakan dan akan ditambahkan di masa mendatang.*
 
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

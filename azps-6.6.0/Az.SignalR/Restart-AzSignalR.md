@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/restart-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Restart-AzSignalR.md
-ms.openlocfilehash: 1adec9978aedb078cc7c7485f37e6c031df32981
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 825966f3e4e85703387a602688ba4e98a07b1d6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364274"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328335"
 ---
 # Restart-AzSignalR
 
 ## SYNOPSIS
 Mulai ulang layanan SignalR.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/restart-azsignalr) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ PS C:\> Restart-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1 -P
 True
 ```
 
-Grup sumber daya default dapat diatur oleh \` Set-AzDefault -ResourceGroupName myResourceGroup \` .
+Grup sumber daya default dapat diatur oleh \`Set-AzDefault -ResourceGroupName myResourceGroup\`.
 
 ## PARAMETERS
 
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

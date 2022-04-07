@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseActivity.md
-ms.openlocfilehash: b7e2c20c5cc1d38bbbfb9e57d56a5fdbb9649ce5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d8515549b93e9760d5dd96e933bc087b946e7b6d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136339058"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328011"
 ---
 # Get-AzSqlDatabaseActivity
 
 ## SYNOPSIS
 Mendapatkan status operasi database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseactivity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Cmdlet **Get-AzSqlDatabaseActivity** mendapatkan status operasi database di Azur
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan status untuk SQL Database semua instans
+### Contoh 1: Dapatkan status untuk SQL Database anda
 ```
 PS C:\>Get-AzSqlDatabaseActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama database Microsoft SQL Server menjadi host database.
+Menentukan nama database Microsoft SQL Server meng host database.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Update-AzWebPubSub.md
-ms.openlocfilehash: 52664390f42f04f4df7d6141d59bc92330b8e960
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b53d7fccda4537234aedd36b997927cf9402f071
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136339170"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246221"
 ---
 # Update-AzWebPubSub
 
 ## SYNOPSIS
 Operasi untuk memperbarui sumber daya keluar.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/update-azwebpubsub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -91,7 +94,7 @@ Version                      : 1.0
 ```
 
 Contoh ini membangun tabel hash yang mewakili identitas sumber daya PubSub Web, lalu akan pipa objek identitas ke `Update` cmdlet.
-Pada akhirnya perintah tersebut akan pipa `Update` hasil cmdlet untuk melihat semua nilai `Format-List` properti.
+Pada akhirnya perintah tersebut akan pipa hasil `Update` cmdlet untuk `Format-List` melihat semua nilai properti.
 
 ## PARAMETERS
 
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKU.
-Nilai yang diperbolehkan:Standard_S1, Free_F1
+Nilai yang diizinkan: Standard_S1, Free_F1
 
 ```yaml
 Type: System.String
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ### -SkuTier
 Tingkatan opsional dari SKU tertentu ini.
 'Standar' atau 'Gratis'.
-`Basic` sudah tidak berlaku, gunakan sebagai `Standard` gantinya.
+`Basic` sudah tidak berlaku, gunakan sebagai gantinya `Standard` .
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubSkuTier
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -499,7 +502,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -518,7 +521,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IWebPubSubIdentity> : Parameter Identitas
+INPUTOBJECT <IWebPubSubIdentity>: Parameter Identitas
   - `[HubName <String>]`: Nama hub.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: kawasan

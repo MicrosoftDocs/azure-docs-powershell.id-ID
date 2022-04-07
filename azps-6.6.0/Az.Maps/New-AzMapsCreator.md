@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/new-azmapsc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsCreator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsCreator.md
-ms.openlocfilehash: f712786d6a62ec5704334911f46b1e220412a42b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fb3a80cd1b1d399b4b0afbe1b6a7f21b84337671
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387363"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140332889"
 ---
 # New-AzMapsCreator
 
 ## SYNOPSIS
-Buat atau perbarui sumber daya Peta Creator Anda.
+Buat atau perbarui sumber Peta Creator Anda.
 Sumber daya pembuat akan mengelola sumber daya Azure yang diperlukan untuk mengisi kumpulan data pemetaan kustom.
 Akun harus ada sebelum dapat dibuat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/new-azmapscreator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,13 +31,13 @@ New-AzMapsCreator -AccountName <String> -Name <String> -ResourceGroupName <Strin
 ```
 
 ## DESCRIPTION
-Buat atau perbarui sumber daya Peta Creator Anda.
+Buat atau perbarui sumber Peta Creator Anda.
 Sumber daya pembuat akan mengelola sumber daya Azure yang diperlukan untuk mengisi kumpulan data pemetaan kustom.
 Akun harus ada sebelum dapat dibuat.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat sumber Peta Creator
+### Contoh 1: Membuat sumber Peta Pembuat Konten
 ```powershell
 PS C:\> New-AzMapsCreator -ResourceGroupName azure-rg-test -AccountName pwsh-mapsAccount02 -Name creator-01 -Location eastus2 -StorageUnit 3
 
@@ -43,14 +46,14 @@ Location Name       Type
 eastus2  creator-01 Microsoft.Maps/accounts/creators
 ```
 
-Perintah ini akan membuat sumber Peta Creator.
+Perintah ini akan membuat sumber daya Peta Creator.
 Sumber daya pembuat akan mengelola sumber daya Azure yang diperlukan untuk mengisi kumpulan data pemetaan kustom.
 Akun harus ada sebelum dapat dibuat.
 
 ## PARAMETERS
 
 ### -Nama Akun
-Nama akun Peta.
+Nama akun Peta Anda.
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

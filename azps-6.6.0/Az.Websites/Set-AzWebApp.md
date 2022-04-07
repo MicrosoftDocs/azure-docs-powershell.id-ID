@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/set-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Set-AzWebApp.md
-ms.openlocfilehash: 14be879fbcc49551723e313f266dae3160adc39c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b4d7530330e7b44030906bea50f1fcb5ad61a405
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380657"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140301793"
 ---
 # Set-AzWebApp
 
 ## SYNOPSIS
 Mengubah Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/set-azwebapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettings
-Aplikasi Pengaturan HashTable. Aplikasi yang sudah Pengaturan akan diganti, menghapus semua pengaturan yang tidak disediakan.
+Aplikasi Pengaturan HashTable. Aplikasi yang sudah Pengaturan Anda ganti, menghapus pengaturan apa pun yang tidak disediakan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureStoragePath
-Azure Storage duduk di dalam Web App untuk Container. Menggunakan New-AzureRmWebAppAzureStoragePath untuk membuatnya
+Azure Storage terpasang di dalam Aplikasi Web untuk Kontainer. Menggunakan New-AzureRmWebAppAzureStoragePath untuk membuatnya
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.WebAppAzureStoragePath[]
@@ -562,7 +565,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricApplication.md
-ms.openlocfilehash: 73d7810cbcb8eb4d6ff70163590e5e97ed39ddbb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5c1a287fa907e55dfdb08e982e710603ab1a4e35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136339268"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328515"
 ---
 # Update-AzServiceFabricApplication
 
 ## SYNOPSIS
 Update a service fabric application. Ini memungkinkan untuk memperbarui parameter aplikasi dan/atau memutakhirkan versi tipe aplikasi yang akan memicu pemutakhiran aplikasi. Hanya mendukung aplikasi yang disebarkan ARM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricapplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Update-AzServiceFabricApplication -InputObject <PSApplication> [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet ini bisa digunakan untuk memperbarui parameter aplikasi dan memutakhirkan versi tipe aplikasi. Memperbarui parameter hanya akan mengubah model di sisi ARM, hanya jika versi tipe baru digunakan, perintah akan memicu pemutakhiran aplikasi. Versi tipe yang ditentukan harus sudah dibuat di kluster menggunakan **New-AzServiceFabricApplicationTypeVersion.**
+Cmdlet ini bisa digunakan untuk memperbarui parameter aplikasi dan memutakhirkan versi tipe aplikasi. Memperbarui parameter hanya akan mengubah model di sisi ARM, hanya jika versi tipe baru digunakan, perintah akan memicu pemutakhiran aplikasi. Versi tipe yang ditentukan harus sudah dibuat di kluster menggunakan **New-AzServiceFabricApplicationTypeVersion**.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ PS C:\> New-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourceGr
 PS C:\> Update-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeVersion $version -Name $appName -ApplicationParameter @{key0="value0";key1=$null;key2="value2"}
 ```
 
-Contoh ini akan memulai pemutakhiran aplikasi untuk memperbarui versi tipe ke "v2" yang dibuat dengan **New-AzServiceFabricApplicationTypeVersion.** Parameter aplikasi yang harus ditentukan dalam manifes aplikasi.
+Contoh ini akan memulai pemutakhiran aplikasi untuk memperbarui versi tipe ke "v2" yang dibuat dengan **New-AzServiceFabricApplicationTypeVersion**. Parameter aplikasi yang harus ditentukan dalam manifes aplikasi.
 
 ### Contoh 2
 ```powershell
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthCheckRetryTimeoutSec
-Menentukan durasi, dalam detik, setelah Service Fabric lagi memeriksa kesehatan jika pemeriksaan kesehatan sebelumnya gagal.
+Menentukan durasi, dalam detik, setelahnya Service Fabric kembali memeriksa kesehatan jika pemeriksaan kesehatan sebelumnya gagal.
 
 ```yaml
 Type: System.Int32
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeDomainTimeoutSec
-Menentukan waktu maksimum, dalam detik, yang Service Fabric diperlukan untuk memutakhirkan satu domain pemutakhiran.
+Menentukan waktu maksimum, dalam detik, yang Service Fabric untuk memutakhirkan satu domain pemutakhiran.
 Setelah periode ini, pemutakhiran gagal.
 
 ```yaml
@@ -502,7 +505,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
-ms.openlocfilehash: 1c6fdc093de01dec7e0eff08ae99d03e8a5554c1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 203a86c0406c470d51c7d11c2e84636aaad41207
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361097"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140332547"
 ---
 # Get-AzMetricDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi metrik.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azmetricdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -231,7 +234,7 @@ Informasi selengkapnya tentang metrik yang didukung dapat ditemukan di: https://
 
 ## RELATED LINKS
 
-[Get-AzMetric](./Get-AzMetric.md) 
+[Get-AzMetric](./Get-AzMetric.md)
  [New-AzMetricFilter](./New-AzMetricFilter.md)
 
 

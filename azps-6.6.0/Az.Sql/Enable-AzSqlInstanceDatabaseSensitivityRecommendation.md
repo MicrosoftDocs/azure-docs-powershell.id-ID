@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceDatabaseSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlInstanceDatabaseSensitivityRecommendation.md
-ms.openlocfilehash: 03100654971281671a71fe410cf5ed548f0d6f55
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5687ed977f303c4d1844eef0d26bc1198cae62b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389138"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328029"
 ---
 # Enable-AzSqlInstanceDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
 Memungkinkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) di database Azure SQL Managed Instance.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/enable-azsqlinstancedatabasesensitivityrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,7 +49,7 @@ Cmdlet Enable-AzSqlInstanceDatabaseSensitivityRecommendation memungkinkan rekome
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Managed Instance.
+### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam database Azure SQL Instans Terkelola.
 ```powershell
 PS C:\> Enable-AzSqlInstanceDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -InstanceName managedInstance -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek yang mewakili SQL Klasifikasi Sensitivitas Database Instans Terkelola.
+Objek mewakili klasifikasi SQL Sensitivitas Database Terkelola.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.ManagedDatabaseSensitivityClassificationModel
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
