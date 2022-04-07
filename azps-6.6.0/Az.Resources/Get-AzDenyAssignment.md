@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDenyAssignment.md
-ms.openlocfilehash: 2c96d6f40b8305f2b06c52b3d8323356ea405c11
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2ba3a917686ad7666c6b8729201cbcc50c4f5300
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364505"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140460443"
 ---
 # Get-AzDenyAssignment
 
@@ -18,6 +18,9 @@ ms.locfileid: "136364505"
 Mencantumkan Azure RBAC menolak penetapan pada lingkup yang ditentukan.
 Secara default, daftar tersebut mencantumkan semua penugasan dalam langganan Azure yang dipilih.
 Gunakan parameter terkait untuk mencantumkan tolak penetapan kepada pengguna tertentu, atau untuk mencantumkan tolak penetapan pada grup atau sumber daya sumber daya tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azdenyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -139,7 +142,7 @@ Dan untuk menentukan aplikasi Azure AD, gunakan parameter ServicePrincipalName a
 Lingkup di mana akses sedang ditolak mungkin ditentukan.
 Pengaturan defaultnya adalah langganan yang dipilih.
 Lingkup penetapan tolak bisa ditentukan menggunakan salah satu kombinasi parameter berikut ini.
-Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/ \<subscriptionId\> .
+Lingkup - Ini adalah lingkup yang sepenuhnya memenuhi syarat dimulai dengan /subscriptions/\<subscriptionId\>.
 Ini akan memfilter untuk menolak penetapan yang efektif pada lingkup tertentu itu misalnya, semua menolak penetapan dalam lingkup tersebut dan di atasnya.
 b.
 ResourceGroupName - Nama grup sumber daya apa pun di bawah langganan.
@@ -202,7 +205,7 @@ IsSystemProtected       : True
 
 ### Contoh 2
 
-Mendapatkan semua tolak penetapan yang dibuat kepada john.doe@contoso.com pengguna pada lingkupRG dan di atasnya.
+Mendapatkan semua tolak penetapan yang dibuat kepada pengguna john.doe@contoso.com pada lingkupRG dan di atasnya.
 
 ```
 PS C:\> Get-AzDenyAssignment -ResourceGroupName testRG -SignInName john.doe@contoso.com
@@ -548,7 +551,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

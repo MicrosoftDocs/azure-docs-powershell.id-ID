@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzManagementGroup.md
-ms.openlocfilehash: 95a56b3d29d02c8c495ff349a110b80cdb9555a9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1a896bf1c1dd0bc97972f5bdef0b30575023eed4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386607"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140460353"
 ---
 # Get-AzManagementGroup
 
 ## SYNOPSIS
 Gets Management Group(s)
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azmanagementgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -94,7 +97,7 @@ DisplayName : TestGroup1DisplayName
 Children    :
 ```
 
-Dengan `Expand` bendera, seseorang dapat menavigasi larik `Children` dan mendapatkan detail untuk setiap anak. Misalnya, `Children[0]` akan memberi detail untuk grup dengan nama tampilan `TestGroup1DisplayName` .
+Dengan bendera `Expand` , seseorang dapat menavigasi larik dan `Children` mendapatkan detail untuk setiap anak. Misalnya, akan `Children[0]` memberi detail untuk grup dengan nama tampilan `TestGroup1DisplayName`.
 
 ### Contoh 4: Dapatkan Grup Manajemen tertentu dan semua tingkat hierarki
 ```
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

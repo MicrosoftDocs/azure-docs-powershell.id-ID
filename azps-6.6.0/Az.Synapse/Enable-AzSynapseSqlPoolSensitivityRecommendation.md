@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/enable-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseSqlPoolSensitivityRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Enable-AzSynapseSqlPoolSensitivityRecommendation.md
-ms.openlocfilehash: c8cb97bdae23766aad594cc16ecb43cc1775622a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: beb0071ee1c18f8129d3779f10dd32bb9d0ebf8b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377000"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140458786"
 ---
 # Enable-AzSynapseSqlPoolSensitivityRecommendation
 
 ## SYNOPSIS
 Memungkinkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) dalam SQL kolom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/enable-azsynapsesqlpoolsensitivityrecommendation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,16 +43,16 @@ Enable-AzSynapseSqlPoolSensitivityRecommendation -SqlPoolObject <PSSynapseSqlPoo
 ```
 
 ## DESCRIPTION
-Cmdlet Enable-AzSynapseSqlPoolSensitivityRecommendation memungkinkan rekomendasi sensitivitas pada kolom dalam SQL sama.
+Cmdlet Enable-AzSynapseSqlPoolSensitivityRecommendation memungkinkan rekomendasi sensitivitas pada kolom di SQL pool.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam azure synapse SQL pool.
+### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam Azure Synapse SQL pool.
 ```powershell
 PS C:\> Enable-AzSynapseSqlPoolSensitivityRecommendation -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -SqlPoolName ContosoSqlPool -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Aktifkan rekomendasi sensitivitas pada kolom tertentu Azure Synapse SQL menggunakan Piping.
+### Contoh 2: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu Azure Synapse SQL menggunakan Piping.
 ```powershell
 PS C:\> Get-AzSynapseSqlPool -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool | Enable-AzSynapseSqlPoolSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek yang mewakili klasifikasi SQL Klasifikasi Sensitivitas Kolam Renang.
+Objek yang mewakili Klasifikasi Sensitivitas SQL Kolam Renang.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.DataClassification.SqlPoolSensitivityClassificationModel

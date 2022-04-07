@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/New-AzCommunicationServiceKey.md
-ms.openlocfilehash: aea0bf0d7347f891e8bb93fa4ca608cb8ea04b2a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: eb17429c799cfbe9e192b9685868f5c36611361c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363194"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486211"
 ---
 # New-AzCommunicationServiceKey
 
 ## SYNOPSIS
 Regenerasi Kunci akses CommunicationService.
 PrimaryKey dan SecondaryKey tidak bisa digenerasi pada waktu yang sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/new-azcommunicationservicekey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -237,7 +240,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity> : Parameter Identitas
+INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya Layanan Komunikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Kawasan Azure
@@ -245,7 +248,7 @@ INPUTOBJECT <ICommunicationIdentity> : Parameter Identitas
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
   - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang mengidentifikasi secara unik Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
-PARAMETER <IRegenerateKeyParameters> : Parameter menguraikan permintaan untuk meregenerasi kunci akses
+PARAMETER <IRegenerateKeyParameters>: Parameter menguraikan permintaan untuk meregenerasi kunci akses
   - `[KeyType <KeyType?>]`: KeyType untuk meregenerasi. Harus 'primer' atau 'sekunder'(insensitif huruf besar/huruf).
 
 ## RELATED LINKS

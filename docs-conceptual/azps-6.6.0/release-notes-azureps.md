@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.date: 11/02/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: a7f5530bc5a3ebada2ef5c5d31f5b8f4fa3836b3
-ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: HT
+ms.openlocfilehash: 01b90b35213ae0fe06af32a1a1965a2b7885b328
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "132429539"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140511893"
 ---
 # <a name="azure-powershell-release-notes"></a>Catatan rilis Azure PowerShell
 ## <a name="660---november-2021"></a>6.6.0 - November 2021
@@ -4542,7 +4542,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Set-AzScheduledQueryRule
     - Update-AzScheduledQueryRule
     - Remove-AzScheduledQueryRule
-    - Informasi [lebih lanjut](/rest/api/monitor/scheduledqueryrules) tentang API SQR
+    - Informasi [lebih lanjut](/rest/api/monitor/scheduledqueryrule-2021-08-01/scheduled-query-rules) tentang API SQR
     - Memperbarui Az.Monitor.md untuk menyertakan cmdlet pada aturan peringatan berbasis metrik GenV2 (non klasik)
 
 #### <a name="aznetwork"></a>Az.Network

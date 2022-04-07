@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/select-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Select-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Select-AzContext.md
-ms.openlocfilehash: 4f5c00b6a5cca56c4ed095865dfc3cca748b0416
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 38bc6be7cf39d064cca08883a3f9b3e248a562a1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337854"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140508009"
 ---
 # Select-AzContext
 
 ## SYNOPSIS
-Pilih langganan dan akun untuk ditargetkan Azure PowerShell cmdlet
+Pilih langganan dan akun untuk ditargetkan Azure PowerShell cmdlets
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/select-azcontext) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,11 +48,11 @@ Name    Account             SubscriptionName    Environment         TenantId
 Work    test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Targetkan cmdlet Azure PowerShell masa mendatang di akun, penyewa, dan langganan dalam konteks 'Kerja'.
+Targetkan cmdlet Azure PowerShell pelanggan di akun, penyewa, dan langganan dalam konteks 'Kerja'.
 
 ### Contoh 2
 
-Pilih langganan dan akun untuk menargetkan dalam Azure PowerShell cmdlet di sesi powershell ini. (otomatisgenerated)
+Pilih langganan dan akun untuk menargetkan dalam Azure PowerShell cmdlets di sesi powershell ini. (otomatisgenerated)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Select-AzContext -Name TestEnvironment -Scope Process
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

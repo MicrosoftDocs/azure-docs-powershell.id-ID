@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzPolicyAssignment.md
-ms.openlocfilehash: 5b8cbfe30696345373af25c141d62a0fbf83f681
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b64334edc981aa79fa707d258e84c9bd2800d5fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136331932"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140459861"
 ---
 # Set-AzPolicyAssignment
 
 ## SYNOPSIS
 Mengubah penetapan kebijakan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azpolicyassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -93,8 +96,8 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -DisplayName 'Do
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
 Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dengan menggunakan Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
+Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebeseruan Dengan menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
 Perintah terakhir memperbarui nama tampilan pada penetapan kebijakan di grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
 
 ### Contoh 2: Tambahkan identitas terkelola ke penetapan kebijakan
@@ -104,7 +107,7 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -AssignIdentity 
 ```
 
 Perintah pertama mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dari langganan saat ini dengan menggunakan cmdlet Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
 Perintah terakhir menetapkan identitas terkelola ke penetapan kebijakan.
 
 ### Contoh 3: Perbarui parameter penetapan kebijakan dengan objek parameter kebijakan baru
@@ -151,9 +154,9 @@ PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -EnforcementMode
 
 Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup cmdlet.
 Perintah menyimpan objek tersebut dalam $ResourceGroup variabel.
-Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebesianKebesian dengan menggunakan Get-AzPolicyAssignment cmdlet.
-Perintah menyimpan objek tersebut dalam $PolicyAssignment variabel.
-Perintah terakhir memperbarui properti enforcementMode pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** $ResourceGroup.
+Perintah kedua mendapatkan penetapan kebijakan bernama PenetapanKebeseruan Dengan menggunakan cmdlet Get-AzPolicyAssignment.
+Perintah menyimpan objek tersebut di $PolicyAssignment variabel.
+Perintah terakhir memperbarui properti enforcementMode pada penetapan kebijakan pada grup sumber daya yang diidentifikasi oleh properti **ResourceId** dari $ResourceGroup.
 
 ### Contoh 6: Memperbarui pesan tidak sesuai
 ```
@@ -161,7 +164,7 @@ PS C:\> $PolicyAssignment = Get-AzPolicyAssignment -Name 'VirtualMachinePolicy'
 PS C:\> Set-AzPolicyAssignment -Id $PolicyAssignment.ResourceId -NonComplianceMessage @{Message="All resources must follow resource naming guidelines."}
 ```
 
-Perintah pertama mendapatkan penetapan kebijakan bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam $PolicyAssignment variabel.
+Perintah pertama mendapatkan penetapan kebijakan yang bernama VirtualMachinePolicy menggunakan cmdlet Get-AzPolicyAssignment dan menyimpannya dalam $PolicyAssignment baru.
 Perintah terakhir memperbarui pesan tidak memenuhi persyaratan pada penetapan kebijakan dengan pesan baru yang akan ditampilkan jika sumber daya ditolak oleh kebijakan tersebut.
 
 ## PARAMETERS
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
