@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagedApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzManagedApplication.md
-ms.openlocfilehash: cb39e9a7f50c2b8b85cfeb5420f5fdc779f79d74
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f8b7c8534c74168a74947fbe2e8a2e2539d7aa24
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334858"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329685"
 ---
 # Remove-AzManagedApplication
 
 ## SYNOPSIS
 Menghapus aplikasi yang dikelola
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/remove-azmanagedapplication) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ PS C:\>$Application = Get-AzManagedApplication -Name "myApp" -ResourceGroupName 
 PS C:\>Remove-AzManagedApplication -Id $Application.ResourceId -Force
 ```
 
-Perintah pertama mendapatkan aplikasi terkelola yang bernama myApp dengan menggunakan cmdlet Get-AzManagedApplication baru.
+Perintah pertama mendapatkan aplikasi terkelola bernama myApp dengan menggunakan cmdlet Get-AzManagedApplication baru.
 Perintah menyimpannya di $Application variabel.
 Perintah kedua menghapus aplikasi terkelola yang diidentifikasi oleh properti **ResourceId** $Application.
 
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

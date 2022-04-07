@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSkuProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSkuProperty.md
-ms.openlocfilehash: 3ded5db5cd738b54e4c2b98b3cdcd4e5afe6d0fa
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 03824b1df3bf179dd23791daf8c04106c5f57075
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335838"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140134449"
 ---
 # New-AzVirtualApplianceSkuProperty
 
 ## SYNOPSIS
 Define a Network Virtual Appliance sku for the resource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualapplianceskuproperty) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ The New-AzVirtualApplianceSkuProperties command defines a Sku for Network Virtua
 PS C:\> $var=New-AzVirtualApplianceSkuProperty -VendorName "barracudasdwanrelease" -BundledScaleUnit 1 -MarketPlaceVersion 'latest'
 ```
 
-Membuat objek Properti Sku Perlengkapan Virtual yang akan digunakan dengan New-AzNetworkVirtualAppliance baru. 
+Membuat objek Properti Sku Perlengkapan Virtual untuk digunakan dengan New-AzNetworkVirtualAppliance baru. 
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

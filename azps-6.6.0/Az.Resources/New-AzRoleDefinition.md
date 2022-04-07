@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzRoleDefinition.md
-ms.openlocfilehash: fa7e942517808525d34b15ef5113959ba9ac94fb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9d1da04f8a97011786b74e587f1eeaf6975cf73e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340589"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329721"
 ---
 # New-AzRoleDefinition
 
@@ -21,6 +21,9 @@ Sediakan file definisi peran JSON atau objek PSRoleDefinition sebagai input.
 Pertama, gunakan perintah Get-AzRoleDefinition untuk menghasilkan objek definisi peran garis dasar.
 Lalu, modifikasi propertinya sebagaimana diperlukan.
 Terakhir, gunakan perintah ini untuk membuat peran kustom menggunakan definisi peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azroledefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Jika ada operasi khusus yang tidak ingin Anda berikan akses dalam peran kustom, 
 Jika ada operasi data tertentu yang tidak ingin Anda berikan akses dalam peran kustom, lebih mudah menggunakan NotDataActions untuk mengeluarkannya, daripada menentukan semua operasi selain operasi khusus itu dalam Tindakan.
 CATATAN: Jika pengguna diberi peran yang menentukan operasi dalam NotActions dan juga menetapkan peran lain memberikan akses ke operasi yang sama - pengguna akan dapat melakukan operasi itu.
 NotActions bukanlah aturan tolak - ini hanya merupakan cara yang mudah untuk membuat kumpulan operasi yang diperbolehkan saat operasi tertentu perlu dikecualikan.
-Berikut adalah contoh definisi peran json yang dapat disediakan sebagai input { "Nama": "Peran yang Diperbarui", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang mesin virtual", "Tindakan": \[ "*/baca", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \] , "NotActions": \[ "*/write" \] , "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \] , "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \] , "AssignableScopes": \[ "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \] }
+Berikut adalah contoh definisi peran json yang dapat disediakan sebagai input { "Nama": "Peran yang Diperbarui", "Deskripsi": "Dapat memantau semua sumber daya dan memulai dan memulai ulang mesin virtual", "Tindakan": \[ "*/baca", "Microsoft.ClassicCompute/virtualmachines/restart/action", "Microsoft.ClassicCompute/virtualmachines/start/action" \], "NotActions": \[ "*/write" \], "DataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/read" \], "NotDataActions": \[ "Microsoft.Storage /storageAccounts/blobServices/containers/blobs/write" \], "AssignableScopes": \["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"\] }
 
 ## EXAMPLES
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

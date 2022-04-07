@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayProbeConfig.md
-ms.openlocfilehash: 580d9a3b09319068618d9352a7359579d89149c9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 94f16ba9d9dfaea8ebf45b77b247844a1b63fd30
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354506"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140134789"
 ---
 # Add-AzApplicationGatewayProbeConfig
 
 ## SYNOPSIS
 Menambahkan manajemen kesehatan ke Gateway Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewayprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ### -Path
 Menentukan jalur relatif of path.
 Jalur yang valid dimulai dengan karakter garis miring (/).
-Thebes dikirim ke \<Protocol\> :// \<host\> : \<port\> \<path\> .
+Thebes dikirim ke \<Protocol\>://\<host\>:\<port\>\<path\>.
 
 ```yaml
 Type: System.String
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

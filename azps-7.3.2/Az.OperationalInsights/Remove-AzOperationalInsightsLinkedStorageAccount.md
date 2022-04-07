@@ -1,57 +1,56 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
-Module Name: Az.Network
-online version: https://docs.microsoft.com/powershell/module/az.network/new-azfirewallpolicyfilterrulecollection
+external help file: Microsoft.Azure.PowerShell.Cmdlets.OperationalInsights.dll-Help.xml
+Module Name: Az.OperationalInsights
+online version: https://docs.microsoft.com/powershell/module/az.operationalinsights/remove-azoperationalinsightslinkedstorageaccount
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyFilterRuleCollection.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyFilterRuleCollection.md
-ms.openlocfilehash: ca67ee19201f20849d994bdf1191ab0783bebc86
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsLinkedStorageAccount.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Remove-AzOperationalInsightsLinkedStorageAccount.md
+ms.openlocfilehash: ee8ee5cd96d5f81e59898f7f2381e03ebdeb2fd9
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140134683"
+ms.locfileid: "140178831"
 ---
-# New-AzFirewallPolicyFilterRuleCollection
+# Remove-AzOperationalInsightsLinkedStorageAccount
 
 ## SYNOPSIS
-Membuat Kumpulan Aturan Filter Kebijakan Azure Firewall baru
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallpolicyfilterrulecollection) untuk informasi terkini.
+Menghapus akun penyimpanan tertaut untuk ruang kerja
 
 ## SYNTAX
 
 ```
-New-AzFirewallPolicyFilterRuleCollection -Name <String> -Priority <UInt32> -Rule <PSAzureFirewallPolicyRule[]>
- -ActionType <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzOperationalInsightsLinkedStorageAccount [-ResourceGroupName] <String> [-WorkspaceName] <String>
+ [[-DataSourceType] <String>] [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzFirewallPolicyFilterRuleCollection** membuat kumpulan aturan Filter untuk Azure Firewall Policy.
+Menghapus akun penyimpanan tertaut untuk ruang kerja
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-PS C:\> New-AzFirewallPolicyFilterRuleCollection -Name FR1 -Priority 400 -Rule $appRule1 ,$appRule2 -ActionType "Allow"
+Remove-AzOperationalInsightsLinkedStorageAccount -ResourceGroupName {rg-name} -WorkspaceName {workspace-name} -DataSourceType CustomLogs
+True
 ```
 
-Contoh ini membuat aturan Filter dengan 2 kondisi aturan
+Hapus akun penyimpanan tertaut dengan ketik "CustomLogs" untuk {workspace-name}
 
 ## PARAMETERS
 
-### -ActionType
-Tindakan kumpulan aturan
+### -DataSourceType
+Tipe Sumber Data harus merupakan salah satu dari 'CustomLogs', 'AzureWatson'.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
-Accepted values: Allow, Deny
+Accepted values: CustomLogs, AzureWatson, Query, Alerts
 
-Required: True
-Position: Named
+Required: False
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -61,7 +60,7 @@ Accept wildcard characters: False
 Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
-Type: IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzContext, AzureRmContext, AzureCredential
 
@@ -72,46 +71,46 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama
-Nama Kumpulan Aturan Aplikasi
+### -Force
+Jangan minta konfirmasi.
 
 ```yaml
-Type: String
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Prioritas
-Prioritas kumpulan aturan
+### -ResourceGroupName
+Nama grup sumber daya.
 
 ```yaml
-Type: UInt32
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rule
-Daftar aturan aplikasi
+### -WorkspaceName
+Nama ruang kerja.
 
 ```yaml
-Type: PSAzureFirewallPolicyRule[]
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -121,7 +120,7 @@ Accept wildcard characters: False
 Meminta konfirmasi Anda sebelum menjalankan cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -137,7 +136,7 @@ Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
 Cmdlet tidak berjalan.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -157,7 +156,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSAzureFirewallPolicyRuleCollectionGroup
+### System.Boolean
 
 ## CATATAN
 

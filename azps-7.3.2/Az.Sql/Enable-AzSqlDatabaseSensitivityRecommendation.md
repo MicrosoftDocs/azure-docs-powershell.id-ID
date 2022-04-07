@@ -2,66 +2,57 @@
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Sql.dll-Help.xml
 Module Name: Az.Sql
 ms.assetid: 14814BF3-51AF-4E51-A8A6-661825BD88D1
-online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldatabasesensitivityclassification
+online version: https://docs.microsoft.com/powershell/module/az.sql/enable-azsqldatabasesensitivityrecommendation
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSensitivityClassification.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseSensitivityClassification.md
-ms.openlocfilehash: 0d9e7ad9c301e20793f6b69f13171bb9d66e749e
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseSensitivityRecommendation.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Enable-AzSqlDatabaseSensitivityRecommendation.md
+ms.openlocfilehash: 8de7bfdc5ca5a26ba59535b79885a74b29de22b2
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140244835"
+ms.locfileid: "140178550"
 ---
-# Set-AzSqlDatabaseSensitivityClassification
+# Enable-AzSqlDatabaseSensitivityRecommendation
 
 ## SYNOPSIS
-Mengatur tipe informasi dan label sensitivitas kolom dalam database.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabasesensitivityclassification) untuk informasi terkini.
+Memungkinkan rekomendasi sensitivitas pada kolom (rekomendasi diaktifkan secara default pada semua kolom) dalam database.
 
 ## SYNTAX
 
-### ClassificationObjectParameterSet (Default)
+### InputObjectParameterSet (Default)
 ```
-Set-AzSqlDatabaseSensitivityClassification -ClassificationObject <SqlDatabaseSensitivityClassificationModel>
+Enable-AzSqlDatabaseSensitivityRecommendation -InputObject <SqlDatabaseSensitivityClassificationModel>
  [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ColumnParameterSet
 ```
-Set-AzSqlDatabaseSensitivityClassification [-SensitivityLabel <String>] [-InformationType <String>]
- [-ResourceGroupName] <String> [-ServerName] <String> [-DatabaseName] <String> -SchemaName <String>
- -TableName <String> -ColumnName <String> [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-AzSqlDatabaseSensitivityRecommendation [-ResourceGroupName] <String> [-ServerName] <String>
+ [-DatabaseName] <String> -SchemaName <String> -TableName <String> -ColumnName <String> [-PassThru] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DatabaseObjectColumnParameterSet
 ```
-Set-AzSqlDatabaseSensitivityClassification [-SensitivityLabel <String>] [-InformationType <String>]
- -DatabaseObject <AzureSqlDatabaseModel> -SchemaName <String> -TableName <String> -ColumnName <String>
- [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-AzSqlDatabaseSensitivityRecommendation -DatabaseObject <AzureSqlDatabaseModel> -SchemaName <String>
+ -TableName <String> -ColumnName <String> [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlDatabaseSensitivityClassification mengatur tipe informasi dan label sensitivitas kolom dalam database.
+Cmdlet Enable-AzSqlDatabaseSensitivityRecommendation memungkinkan rekomendasi sensitivitas pada kolom dalam database.
 
 ## EXAMPLES
 
-### Contoh 1: Setel tipe informasi dan label sensitivitas kolom di database Azure SQL.
+### Contoh 1: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu dalam Azure SQL Database.
 ```powershell
-PS C:\> Set-AzSqlDatabaseSensitivityClassification -ResourceGroupName resourceGroup -ServerName server -DatabaseName database -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
+PS C:\> Enable-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database -SchemaName schema -TableName table -ColumnName column
 ```
 
-### Contoh 2: Atur tipe informasi yang direkomendasikan dan label sensitivitas kolom di database Azure SQL.
+### Contoh 2: Mengaktifkan rekomendasi sensitivitas pada kolom tertentu Azure SQL database menggunakan Piping.
 ```powershell
-PS C:\> Get-AzSqlDatabaseSensitivityRecommendation -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Set-AzSqlDatabaseSensitivityClassification
-```
-
-### Contoh 3: Atur tipe informasi dan label sensitivitas kolom dalam database Azure SQL, menggunakan pemipaan.
-```powershell
-PS C:\> Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Set-AzSqlDatabaseSensitivityClassification  -SchemaName schema -TableName table -ColumnName column -InformationType informationType -SensitivityLabel label
+PS C:\> Get-AzSqlDatabase -ResourceGroupName resourceGroup -ServerName server -DatabaseName database | Enable-AzSqlDatabaseSensitivityRecommendation -SchemaName schema -TableName table -ColumnName column
 ```
 
 ## PARAMETERS
@@ -78,21 +69,6 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ClassificationObject
-Objek yang mewakili SQL Database Klasifikasi Sensitivitas.
-
-```yaml
-Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
-Parameter Sets: ClassificationObjectParameterSet
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -156,18 +132,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InformationType
-Nama yang menjelaskan tipe informasi data yang disimpan dalam kolom.
+### -InputObject
+Objek yang mewakili SQL Database Klasifikasi Sensitivitas.
 
 ```yaml
-Type: System.String
-Parameter Sets: ColumnParameterSet, DatabaseObjectColumnParameterSet
-Aliases:
+Type: Microsoft.Azure.Commands.Sql.DataClassification.Model.SqlDatabaseSensitivityClassificationModel
+Parameter Sets: InputObjectParameterSet
+Aliases: ClassificationObject
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -210,21 +186,6 @@ Parameter Sets: ColumnParameterSet, DatabaseObjectColumnParameterSet
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -SensitivityLabel
-Nama yang menjelaskan sensitivitas data yang disimpan di kolom.
-
-```yaml
-Type: System.String
-Parameter Sets: ColumnParameterSet, DatabaseObjectColumnParameterSet
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName)

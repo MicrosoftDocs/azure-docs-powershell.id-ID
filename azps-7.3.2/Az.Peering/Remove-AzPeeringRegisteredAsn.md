@@ -1,61 +1,58 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
-Module Name: Az.Network
-online version: https://docs.microsoft.com/powershell/module/az.network/remove-azpublicipprefix
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Peering.dll-Help.xml
+Module Name: Az.Peering
+online version: https://docs.microsoft.com/powershell/module/az.peering/remove-azpeeringregisteredasn
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPublicIpPrefix.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzPublicIpPrefix.md
-ms.openlocfilehash: 5ef27a910e86022a866397ab3266ffaa5a7c7894
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredAsn.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Peering/Peering/help/Remove-AzPeeringRegisteredAsn.md
+ms.openlocfilehash: 3ac935e9d41bc9a01f1da4ec8942b27111e6dcb5
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140134197"
+ms.locfileid: "140178817"
 ---
-# Remove-AzPublicIpPrefix
+# Remove-AzPeeringRegisteredAsn
 
 ## SYNOPSIS
-Menghapus prefiks IP publik
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azpublicipprefix) untuk informasi terkini.
+Hapus atau hapus ASN terdaftar dari sumber daya peering induk.
 
 ## SYNTAX
 
-### RemoveByNameParameterSet (Default)
+### ByName (Default)
 ```
-Remove-AzPublicIpPrefix -Name <String> -ResourceGroupName <String> [-Force] [-PassThru] [-AsJob]
+Remove-AzPeeringRegisteredAsn [-ResourceGroupName] <String> [-PeeringName] <String> [-Name] <String> [-Force]
+ [-AsJob] [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### InputObject
+```
+Remove-AzPeeringRegisteredAsn -InputObject <PSPeeringServicePrefix> [-Force] [-AsJob] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteByResourceIdParameterSet
+### ByResourceId
 ```
-Remove-AzPublicIpPrefix -ResourceId <String> [-Force] [-PassThru] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteByInputObjectParameterSet
-```
-Remove-AzPublicIpPrefix -InputObject <PSPublicIpPrefix> [-Force] [-PassThru] [-AsJob]
+Remove-AzPeeringRegisteredAsn [-ResourceId] <String> [-Force] [-AsJob] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzPublicIpPrefix menghapus** prefiks IP publik Azure selama tidak ada alamat IP publik yang dialokasikannya.
+Memungkinkan penghapusan ASN yang terdaftar dari sumber daya peering induk.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-PS C:\> Remove-AzPublicIpPrefix -Name $prefixName -ResourceGroupName $rgName
+PS C:\> Remove-AzPeeringRegisteredAsn -ResourceId $resourceId
 ```
 
-Menghapus prefiks IP publik dengan Name $prefixName grup sumber daya $rgName
+Hapus ASN yang terdaftar berdasarkan id sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Jalankan di latar belakang.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-Jangan minta konfirmasi.
+Memaksa operasi untuk selesai
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,11 +97,11 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PublicIpPrefix
+Menggunakan Get-AzPeeringServicePrefix
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
-Parameter Sets: DeleteByInputObjectParameterSet
+Type: Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeeringServicePrefix
+Parameter Sets: InputObject
 Aliases:
 
 Required: True
@@ -115,23 +112,22 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya.
+Nama ASN yang terdaftar
 
 ```yaml
 Type: System.String
-Parameter Sets: RemoveByNameParameterSet
-Aliases: ResourceName
+Parameter Sets: ByName
+Aliases:
 
 Required: True
-Position: Named
+Position: 2
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
-Secara default, cmdlet ini tidak menghasilkan output apa pun.
+{{ Fill PassThru Description }}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,31 +141,46 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceGroupName
-Nama grup sumber daya.
+### -PeeringName
+Nama unik PSPeering.
 
 ```yaml
 Type: System.String
-Parameter Sets: RemoveByNameParameterSet
+Parameter Sets: ByName
 Aliases:
 
 Required: True
-Position: Named
+Position: 1
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Buat atau gunakan nama grup sumber daya yang sudah ada.
+
+```yaml
+Type: System.String
+Parameter Sets: ByName
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId untuk sumber daya yang akan dihapus
+Nama string id sumber daya.
 
 ```yaml
 Type: System.String
-Parameter Sets: DeleteByResourceIdParameterSet
+Parameter Sets: ByResourceId
 Aliases:
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
@@ -207,13 +218,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### System.String
+### Microsoft.Azure.PowerShell.Cmdlets.Peering.Models.PSPeeringServicePrefix
 
-### Microsoft.Azure.Commands.Network.Models.PSPublicIpPrefix
+### System.String
 
 ## OUTPUTS
 
@@ -222,9 +233,3 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ## CATATAN
 
 ## RELATED LINKS
-
-[Get-AzPublicIpPrefix](./Get-AzPublicIpPrefix.md)
-
-[New-AzPublicIpPrefix](./New-AzPublicIpPrefix.md)
-
-[Set-AzPublicIpPrefix](./Set-AzPublicIpPrefix.md)

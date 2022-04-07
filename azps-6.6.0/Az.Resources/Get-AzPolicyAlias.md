@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAlias.md
-ms.openlocfilehash: 232e4140a83b73270b730f489ca25dfce5296d0a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 25aee20141b5ed12ca8bf4337cff477950226800
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381413"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329811"
 ---
 # Get-AzPolicyAlias
 
 ## SYNOPSIS
-Get-AzPolicyAlias dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditetapkan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
+Get-AzPolicyAlias dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
 Sakelar -ListAvailable mengubah perilaku ini dengan mencantumkan semua tipe sumber daya yang cocok termasuk yang tanpa alias.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azpolicyalias) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -404,8 +407,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-* Untuk memperluas Alias atau properti lainnya, pipes output ke `select -ExpandProperty <property>` . Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Microsoft.Cache' -ApiVersionMatch 'alpha' | select -ExpandProperty Aliases | select -Property Name -ExpandProperty Paths`
+* Untuk memperluas Alias atau properti lainnya, pipes output ke `select -ExpandProperty <property>`. Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Microsoft.Cache' -ApiVersionMatch 'alpha' | select -ExpandProperty Aliases | select -Property Name -ExpandProperty Paths`
 
-* Properti tambahan tersedia dalam output dan dapat ditampilkan dengan pemipaan output ke `Format-List` . Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Web' -ResourceTypeMatch site -PathMatch cert | Format-List`
+* Properti tambahan tersedia dalam output dan dapat ditampilkan dengan pemipaan output ke `Format-List`. Misalnya: `Get-AzPolicyAlias -NamespaceMatch 'Web' -ResourceTypeMatch site -PathMatch cert | Format-List`
 
 ## RELATED LINKS

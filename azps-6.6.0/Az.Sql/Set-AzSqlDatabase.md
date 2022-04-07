@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
-ms.openlocfilehash: fb545007e77487b32bc634ab9d47d9a3a11b0d75
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 83af5117ecdf695c51164df76431b5df14625851
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340025"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244943"
 ---
 # Set-AzSqlDatabase
 
 ## SYNOPSIS
 Mengatur properti untuk database, atau memindahkan database yang sudah ada ke dalam kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabase) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Set-AzSqlDatabase [-DatabaseName] <String> -NewName <String> [-AsJob] [-BackupSt
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabase** mengatur properti untuk database di Azure SQL Database. Cmdlet ini dapat mengubah tingkat layanan (*Edition*), tingkat kinerja (*RequestedServiceObjectiveName*), dan ukuran maks penyimpanan (*MaxSizeBytes*) untuk database.  Selain itu, Anda dapat menentukan parameter *ElastisPoolName* untuk memindahkan database ke dalam kolam elastis. Jika database sudah dalam pool elastis, Anda dapat menggunakan parameter *RequestedServiceObjectiveName* untuk memindahkan database dari pool elastis dan ke tingkat kinerja untuk database tunggal.
+Cmdlet **Set-AzSqlDatabase** mengatur properti untuk database di Azure SQL Database. Cmdlet ini dapat mengubah tingkat layanan (*Edition*), tingkat kinerja (*RequestedServiceObjectiveName*), dan ukuran maksimum penyimpanan (*MaxSizeBytes*) untuk database.  Selain itu, Anda dapat menentukan parameter *ElastisPoolName* untuk memindahkan database ke dalam kolam elastis. Jika database sudah dalam pool elastis, Anda dapat menggunakan parameter *RequestedServiceObjectiveName* untuk memindahkan database dari pool elastis dan ke tingkat kinerja untuk database tunggal.
 
 ## EXAMPLES
 
@@ -333,7 +336,7 @@ Accept wildcard characters: False
 
 ### -LicenseType
 Tipe lisensi untuk database Azure Sql. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi sudah ada diterapkan. Harga database akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
+- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga database akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
 - LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga database akan menyertakan biaya SQL Server baru.
 
 ```yaml
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadScale
-Jika diaktifkan, koneksi yang memiliki maksud aplikasi yang diatur ke baca saja dalam string koneksinya mungkin dirutekan ke replika sekunder saja. Properti ini hanya dapat diatur untuk database Premium Dan Kritis Bisnis.
+Jika diaktifkan, koneksi yang memiliki maksud aplikasi yang diatur ke baca saja dalam string koneksinya mungkin dirutekan ke replika sekunder saja. Properti ini hanya dapat diatur untuk database Premium dan Kritis Bisnis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.DatabaseReadScale
@@ -563,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

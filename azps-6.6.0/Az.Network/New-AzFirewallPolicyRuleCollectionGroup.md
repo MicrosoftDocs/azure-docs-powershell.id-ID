@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyRuleCollectionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzFirewallPolicyRuleCollectionGroup.md
-ms.openlocfilehash: c95d91a306959fdef14d2cdb2df9a3182fee0d8b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b702378eba77103c8f3cdd1c9f811eae8e5e3ec1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136356369"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140134629"
 ---
 # New-AzFirewallPolicyRuleCollectionGroup
 
 ## SYNOPSIS
 Membuat Grup Kumpulan Aturan Kebijakan Azure Firewall baru
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azfirewallpolicyrulecollectiongroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Cmdlet **New-AzFirewallPolicyRuleCollectionGroup** membuat grup kumpulan aturan 
 PS C:\> New-AzFirewallPolicyRuleCollectionGroup -Name rg1 -ResourceGroupName TestRg -Priority 200 -RuleCollection $filterRule1 -FirewallPolicyObject $fp
 ```
 
-Contoh ini membuat grup kumpulan aturan dalam grup kebijakan firewall $fp
+Contoh ini membuat grup kumpulan aturan dalam kebijakan firewall $fp
 
 ### Contoh 2
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
