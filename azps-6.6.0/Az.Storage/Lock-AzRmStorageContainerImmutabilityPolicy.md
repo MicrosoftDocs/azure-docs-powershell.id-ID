@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/lock-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Lock-AzRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 071bbedab06386b7803c038297b6c6532a853c77
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8dbb512ee0f9796c8e9c317e9e5b62321152dee1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136371008"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326247"
 ---
 # Lock-AzRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
 Mengunci ImmutabilityPolicy wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/lock-azrmstoragecontainerimmutabilitypolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -45,26 +48,26 @@ Lock-AzRmStorageContainerImmutabilityPolicy [-InputObject] <PSImmutabilityPolicy
 ```
 
 ## DESCRIPTION
-Cmdlet **Lock-AzRmStorageContainerImmutabilityPolicy** mengunci ImmutabilityPolicy wadah blob Storage.
+Cmdlet **Lock-AzRmStorageContainerImmutabilityPolicy** mengunci ImmutabilityPolicy penampung Storage blob.
 
 ## EXAMPLES
 
-### Contoh 1: Lock ImmutabilityPolicy of a Storage blob container with Storage account name and container name
+### Contoh 1: Mengunci ImmutabilityPolicy wadah Storage blob dengan nama Storage dan nama wadah akun
 ```
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer"
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Etag $policy.Etag
 ```
 
-Perintah ini Mengunci ImmutabilityPolicy wadah Storage blob dengan Storage dan nama wadah akun.
+Perintah ini Mengunci ImmutabilityPolicy wadah Storage blob dengan nama Storage dan nama wadah akun.
 
-### Contoh 2: Mengunci ImmutabilityPolicy of a Storage blob container, with Storage account object
+### Contoh 2: Kunci ImmutabilityPolicy wadah Storage blob, dengan Storage objek akun
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>$policy = Get-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer"
 PS C:\>Lock-AzRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -Etag $policy.Etag -Force
 ```
 
-Perintah ini mengunci ImmutabilityPolicy pada wadah blob Storage, dengan Storage objek akun. 
+Perintah ini mengunci ImmutabilityPolicy pada wadah Storage blob, dengan Storage objek akun. 
 
 ### Contoh 3: Lock ImmutabilityPolicyof a Storage blob container, with container object
 ```
@@ -85,7 +88,7 @@ Perintah ini mengunci ImmutabilityPolicy pada wadah blob Storage, dengan objek I
 ## PARAMETERS
 
 ### -Container
-Storage objek wadah
+Storage wadah objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

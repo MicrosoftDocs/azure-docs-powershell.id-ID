@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContext.md
-ms.openlocfilehash: e23110f5f1a43227775dae2e60d9938c140bad9c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ede979e126f2895a8b2e13dd9ff7f434557a716c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351242"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326229"
 ---
 # New-AzStorageContext
 
 ## SYNOPSIS
 Membuat Azure Storage konteks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragecontext) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -81,7 +84,7 @@ New-AzStorageContext [-Local] [<CommonParameters>]
 ## DESCRIPTION
 Cmdlet **New-AzStorageContext** membuat Azure Storage konteks.
 Autentikasi default konteks Storage adalah OAuth (Azure AD), jika hanya memasukkan Storage akun.
-Lihat detail autentikasi layanan Storage di https://docs.microsoft.com/rest/api/storageservices/authorization-for-the-azure-storage-services .
+Lihat detail autentikasi layanan Storage di https://docs.microsoft.com/rest/api/storageservices/authorization-for-the-azure-storage-services.
 
 ## EXAMPLES
 
@@ -121,7 +124,7 @@ PS C:\>New-AzStorageContext -Local | Get-AzStorageContainer
 ```
 
 Perintah ini membuat konteks dengan menggunakan akun penyimpanan pengembangan lokal, lalu meneruskan konteks baru ke cmdlet **Get-AzStorageContainer** menggunakan operator pipeline.
-Perintah tersebut mendapatkan Azure Storage khusus untuk akun penyimpanan pengembang lokal.
+Perintah akan mendapatkan Azure Storage khusus untuk akun penyimpanan pengembang lokal.
 
 ### Contoh 6: Dapatkan beberapa wadah
 ```
@@ -159,7 +162,7 @@ PS C:\> $Context | Get-AzStorageBlob -Container "ContosoMain"
 
 Perintah pertama menghasilkan token SAS menggunakan cmdlet **New-AzStorageContainerSASToken** untuk wadah bernama ContosoMain, lalu menyimpan token tersebut di $SasToken pelanggan.
 Token tersebut untuk izin membaca, menambahkan, memperbarui, dan menghapus.
-Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan token SAS yang disimpan di $SasToken, lalu menyimpan konteks tersebut di variabel $Context mereka.
+Perintah kedua membuat konteks untuk akun bernama ContosoGeneral yang menggunakan token SAS yang disimpan di $SasToken, lalu menyimpan konteks tersebut di variabel $Context bervariasi.
 Perintah akhir mencantumkan semua blob yang terkait dengan wadah bernama ContosoMain dengan menggunakan konteks yang disimpan dalam $Context.
 
 ### Contoh 10: Membuat konteks menggunakan Autentikasi OAuth
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 ### -Lingkungan
 Menentukan lingkungan Azure.
 Nilai yang dapat diterima untuk parameter ini adalah: AzureCloud dan AzureChinaCloud.
-Untuk informasi selengkapnya, ketik `Get-Help Get-AzEnvironment` .
+Untuk informasi selengkapnya, ketik `Get-Help Get-AzEnvironment`.
 
 ```yaml
 Type: System.String
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

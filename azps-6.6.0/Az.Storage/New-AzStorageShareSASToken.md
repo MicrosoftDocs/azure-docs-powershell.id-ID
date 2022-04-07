@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageShareSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageShareSASToken.md
-ms.openlocfilehash: 1b321509bcdc32c9e52e0cf0b6232230a2c60f0f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e48ae867de208e4e9ba25a921d395253468a8bb7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351158"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326139"
 ---
 # New-AzStorageShareSASToken
 
 ## SYNOPSIS
-Buat token Tanda Tangan Akses Bersama Azure Storage bagikan.
+Buat token Tanda Tangan Akses Bersama Azure Storage berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragesharesastoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzStorageShareSASToken [-ShareName] <String> [-Permission <String>] [-Protoc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageShareSASToken** menghasilkan token tanda tangan akses bersama untuk layanan Azure Storage bersama.
+Cmdlet **New-AzStorageShareSASToken** menghasilkan token tanda tangan akses bersama untuk Azure Storage bersama.
 
 ## EXAMPLES
 
@@ -60,13 +63,13 @@ Cmdlet saat ini membuat token akses bersama untuk setiap Storage bersama yang me
 PS C:\>New-AzStorageShareSASToken -ShareName "ContosoShare" -Policy "ContosoPolicy03"
 ```
 
-Perintah ini akan membuat token tanda tangan akses bersama untuk Storage bersama bernama ContosoShare yang memiliki kebijakan bernama ContosoPolicy03.
+Perintah ini membuat token tanda tangan akses bersama untuk Storage bersama bernama ContosoShare yang memiliki kebijakan bernama ContosoPolicy03.
 
 ## PARAMETERS
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 
 ### -Permission
 Menentukan izin di token untuk mengakses berbagi dan file di bawah berbagi.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
 
 ```yaml
 Type: System.String
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
