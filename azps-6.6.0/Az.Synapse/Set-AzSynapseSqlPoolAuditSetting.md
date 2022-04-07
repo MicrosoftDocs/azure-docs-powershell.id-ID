@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlPoolAuditSetting.md
-ms.openlocfilehash: bd5816c70b29f4577a76bd31ef90e1a8e8ade3e5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 545bfbc7e58bae14c3c0153a1531a0930e1f0f82
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341894"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140498397"
 ---
 # Set-AzSynapseSqlPoolAuditSetting
 
 ## SYNOPSIS
-Mengubah pengaturan audit untuk azure Synapse Analytics SQL sama.
+Mengubah pengaturan audit untuk analitik Azure Synapse SQL sama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlpoolauditsetting) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *Stora
 PS C:\> Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary
 ```
 
-Mengaktifkan kebijakan pengauditan penyimpanan blob dari penyimpanan Azure Synapse Analytics SQL bernama ContosoSqlPool.
+Mengaktifkan kebijakan pengauditan penyimpanan blob dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
 
 ### Contoh 2
 ```powershell
@@ -105,21 +108,21 @@ Aktifkan kebijakan pengauditan hub kejadian dari grup Analitik Azure Synapse SQL
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -EventHubTargetState Disabled
 ```
 
-Nonaktifkan kebijakan pengauditan hub kejadian dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Menonaktifkan kebijakan pengauditan hub kejadian dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
 
 ### Contoh 7
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/myworkspace"
 ```
 
-Aktifkan kebijakan pengauditan analitik log dari layanan Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Aktifkan kebijakan pengauditan analitik log dari grup Analitik Azure Synapse SQL bernama ContosoSqlPool.
 
 ### Contoh 8
 ```powershell
 PS C:\>Set-AzSynapseSqlPoolAuditSetting -WorkspaceName ContosoWorkspace -Name ContosoSqlPool -LogAnalyticsTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan analitik log dari layanan Analitik Azure Synapse SQL bernama ContosoSqlPool.
+Nonaktifkan kebijakan pengauditan analitik log dari layanan Analitik Azure Synapse SQL bernama ContosoSqlPool.
 
 ### Contoh 9
 ```powershell
@@ -165,10 +168,10 @@ REFERENCES
 
 Formulir umum untuk menentukan tindakan yang akan diaudit adalah:
 
-\[tindakan \] ON objek BY \[ \] \[ prinsipal\]
+\[tindakan\] ON \[objek\] BY \[prinsipal\]
 
-Perhatikan bahwa objek dalam format di atas bisa merujuk ke objek seperti tabel, tampilan, atau prosedur \[ \] yang disimpan, atau seluruh database atau skema.
-Untuk kasus yang terakhir ini, formulir DATABASE:: \[ dbname \] dan SCHEMA:: \[ schemaname \] digunakan untuk masing-masing.
+Perhatikan bahwa \[objek\] dalam format di atas bisa merujuk ke objek seperti tabel, tampilan, atau prosedur yang disimpan, atau seluruh database atau skema.
+Untuk kasus yang terakhir ini, formulir DATABASE::\[dbname\] dan SCHEMA::\[schemaname\] digunakan untuk masing-masing.
 
 Misalnya:
 
@@ -178,7 +181,7 @@ SELECT pada DATABASE::myDatabase menurut publik
 
 SELECT pada SCHEMA::mySchema menurut publik
 
-Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-actions .
+Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-actions.
 
 ```yaml
 Type: System.String[]
@@ -204,9 +207,9 @@ Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut 
 "FAILED_DATABASE_AUTHENTICATION_GROUP"
 
 Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default.
-Grup ini mencakup SQL pernyataan bisnis dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Grup ini mencakup SQL pernyataan privasi dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 
-Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups .
+Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.Auditing.AuditActionGroups[]
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Nama SQL tim.
+Nama SQL Tim.
 
 ```yaml
 Type: System.String
@@ -528,7 +531,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

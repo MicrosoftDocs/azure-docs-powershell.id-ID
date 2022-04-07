@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.storagesync/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncChangeDetection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/Invoke-AzStorageSyncChangeDetection.md
-ms.openlocfilehash: 3db86e620dbb5177aef9914970e95cc1e1b56d86
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2d3a720a7f57b7150749d42214302a9ffd24c153
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344489"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140499423"
 ---
 # Invoke-AzStorageSyncChangeDetection
 
@@ -24,6 +24,9 @@ Perintah ini bisa digunakan untuk memulai deteksi perubahan ruang nama secara ma
 > - File yang dihapus dan dibuat dengan nama yang sama.  
 > 
 >  Jika deteksi perubahan tingkat berbagi diminta, semua perubahan ini akan dideteksi. Perubahan ini juga akan dideteksi saat pekerjaan deteksi [perubahan terjadwal](https://docs.microsoft.com/azure/storage/files/storage-sync-files-troubleshoot?tabs=portal1%2Cazure-portal#afs-change-detection) berjalan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/invoke-azstoragesyncchangedetection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

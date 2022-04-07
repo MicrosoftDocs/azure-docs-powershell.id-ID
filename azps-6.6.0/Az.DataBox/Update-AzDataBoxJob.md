@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Update-AzDataBoxJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Update-AzDataBoxJob.md
-ms.openlocfilehash: 66f6a18e5f7d4c9bec5a0d4af4efbb02e5c12522
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4dfe21749932ac6d86fcb1bea6ca60704add7dc2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354710"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140466443"
 ---
 # Update-AzDataBoxJob
 
 ## SYNOPSIS
 Memperbarui properti pekerjaan yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/update-azdataboxjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -339,7 +342,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-CONTACTDETAIL <IContactDetails> : Detail kontak untuk pemberitahuan dan pengiriman.
+CONTACTDETAIL <IContactDetails>: Detail kontak untuk pemberitahuan dan pengiriman.
   - `ContactName <String>`: Nama kontak orang tersebut.
   - `EmailList <String[]>`: Daftar Id Email untuk diberi tahu tentang kemajuan pekerjaan.
   - `Phone <String>`: Telepon nomor kontak.
@@ -349,7 +352,7 @@ CONTACTDETAIL <IContactDetails> : Detail kontak untuk pemberitahuan dan pengirim
     - `StageName <NotificationStageName>`: Nama tahapan.
   - `[PhoneExtension <String>]`: Telepon nomor ekstensi orang kontak.
 
-KEYENCRYPTIONKEY <IKeyEncryptionKey> : Kunci enkripsi kunci untuk pekerjaan tersebut.
+KEYENCRYPTIONKEY <IKeyEncryptionKey>: Kunci enkripsi kunci untuk pekerjaan tersebut.
   - `KekType <KekType>`: Tipe kunci enkripsi yang digunakan untuk enkripsi kunci.
   - `[IdentityProperty <IIdentityProperties>]`: Properti identitas terkelola digunakan untuk enkripsi kunci.
     - `[Type <String>]`: Tipe identitas layanan terkelola.
@@ -357,7 +360,7 @@ KEYENCRYPTIONKEY <IKeyEncryptionKey> : Kunci enkripsi kunci untuk pekerjaan ters
   - `[KekUrl <String>]`: Kunci enkripsi kunci. It is required in case of Customer managed KekType.
   - `[KekVaultResourceId <String>]`: Id sumber daya penyimpanan kek. It is required in case of Customer managed KekType.
 
-ALAMAT <IShippingAddress> PENGIRIMAN : Alamat pengiriman pelanggan.
+ALAMAT PENGIRIMAN <IShippingAddress>: Alamat pengiriman pelanggan.
   - `Country <String>`: Nama Negara.
   - `StreetAddress1 <String>`: Alamat Jalan baris 1.
   - `[AddressType <AddressType?>]`: Tipe alamat.

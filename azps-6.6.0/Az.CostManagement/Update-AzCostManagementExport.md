@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Update-AzCostManagementExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Update-AzCostManagementExport.md
-ms.openlocfilehash: 7519ee20f4757a8604262795f50bb69da153a376
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9fff525450426080941acdb3f72bc20c989574a1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373349"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140466587"
 ---
 # Update-AzCostManagementExport
 
@@ -19,6 +19,9 @@ Operasi untuk membuat atau memperbarui ekspor.
 Operasi pembaruan memerlukan eTag terbaru untuk diatur di permintaan.
 Anda mungkin mendapatkan eTag terbaru dengan melakukan operasi dapatkan.
 Operasi membuat tidak memerlukan eTag.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.costmanagement/update-azcostmanagementexport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -400,7 +403,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -419,7 +422,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICostManagementIdentity> : Parameter Identitas
+INPUTOBJECT <ICostManagementIdentity>: Parameter Identitas
   - `[AlertId <String>]`: ID Pemberitahuan
   - `[ExportName <String>]`: Ekspor Nama.
   - `[ExternalCloudProviderId <String>]`: Dapat juga merupakan '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.

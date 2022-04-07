@@ -1,0 +1,824 @@
+---
+external help file: ''
+Module Name: Az.ProviderHub
+online version: https://docs.microsoft.com/powershell/module/az.providerhub/new-azproviderhubresourcetyperegistration
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubResourceTypeRegistration.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/New-AzProviderHubResourceTypeRegistration.md
+ms.openlocfilehash: 62cb47a3986cb47ff4eaeed58ef4c8cc449c29ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140555002"
+---
+# New-AzProviderHubResourceTypeRegistration
+
+## SYNOPSIS
+Membuat atau memperbarui tipe sumber daya.
+
+## SYNTAX
+
+```
+New-AzProviderHubResourceTypeRegistration -ProviderNamespace <String> -ResourceType <String>
+ [-SubscriptionId <String>] [-AllowedUnauthorizedAction <String[]>]
+ [-AuthorizationActionMapping <IAuthorizationActionMapping[]>]
+ [-CheckNameAvailabilitySpecificationEnableDefaultValidation]
+ [-CheckNameAvailabilitySpecificationResourceTypesWithCustomValidation <String[]>]
+ [-DefaultApiVersion <String>] [-DisallowedActionVerb <String[]>] [-EnableAsyncOperation]
+ [-EnableThirdPartyS2S] [-Endpoint <IResourceTypeEndpoint[]>] [-ExtendedLocation <IExtendedLocationOptions[]>]
+ [-FeatureRuleRequiredFeaturesPolicy <String>] [-IdentityManagementApplicationId <String>]
+ [-IdentityManagementType <IdentityManagementTypes>] [-IsPureProxy]
+ [-LinkedAccessCheck <ILinkedAccessCheck[]>] [-LoggingRule <ILoggingRule[]>] [-MarketplaceType <String>]
+ [-ProvisioningState <ProvisioningState>] [-Regionality <Regionality>]
+ [-RequestHeaderOptionOptInHeader <OptInHeaderType>] [-RequiredFeature <String[]>]
+ [-ResourceCreationBeginRequest <ExtensionOptionType[]>]
+ [-ResourceCreationBeginResponse <ExtensionOptionType[]>] [-ResourceDeletionPolicy <ResourceDeletionPolicy>]
+ [-ResourceMovePolicyCrossResourceGroupMoveEnabled] [-ResourceMovePolicyCrossSubscriptionMoveEnabled]
+ [-ResourceMovePolicyValidationRequired] [-RoutingType <RoutingType>] [-ServiceTreeInfo <IServiceTreeInfo[]>]
+ [-SubscriptionLifecycleNotificationSpecificationSoftDeleteTtl <TimeSpan>]
+ [-SubscriptionLifecycleNotificationSpecificationSubscriptionStateOverrideAction <ISubscriptionStateOverrideAction[]>]
+ [-SubscriptionStateRule <ISubscriptionStateRule[]>] [-SwaggerSpecification <ISwaggerSpecification[]>]
+ [-TemplateDeploymentOptionPreflightOption <PreflightOption[]>] [-TemplateDeploymentOptionPreflightSupported]
+ [-ThrottlingRule <IThrottlingRule[]>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Membuat atau memperbarui tipe sumber daya.
+
+## EXAMPLES
+
+### Contoh 1: Buat/Perbarui pendaftaran tipe sumber daya.
+```powershell
+PS C:\> New-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType" -RoutingType "Default" -Regionality "Regional" -Endpoint @{ApiVersion = "2021-01-01-preview"; Location = "West US 2", "East US 2 EUAP"; RequiredFeature = "Microsoft.Contoso/SampleApp" } -SwaggerSpecification @{ApiVersion = "2021-01-01-preview"; SwaggerSpecFolderUri = "https://github.com/Azure/azure-rest-api-specs-pr/blob/RPSaaSMaster/specification/rpsaas/resource-manager/Microsoft.Contoso/" } -EnableAsyncOperation
+
+Name                  Type
+----                  ----
+testResourceType      Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
+```
+
+Buat/Perbarui pendaftaran tipe sumber daya.
+
+### Contoh 2: Buat/Perbarui pendaftaran tipe sumber daya bertumpuk.
+```powershell
+PS C:\> New-AzProviderHubResourceTypeRegistration -ProviderNamespace "Microsoft.Contoso" -ResourceType "testResourceType/nestedResourceType" -RoutingType "Default" -Regionality "Global" -Endpoint @{ApiVersion = "2021-01-01-preview"; Location = ""; RequiredFeature = "Microsoft.Contoso/SampleApp" } -SwaggerSpecification @{ApiVersion = "2021-01-01-preview"; SwaggerSpecFolderUri = "https://github.com/Azure/azure-rest-api-specs-pr/blob/RPSaaSMaster/specification/rpsaas/resource-manager/Microsoft.Contoso/" }
+
+Name                                     Type
+----                                     ----
+testResourceType/nestedResourceType      Microsoft.ProviderHub/providerRegistrations/resourceTypeRegistrations
+```
+
+Buat/Perbarui pendaftaran tipe sumber daya bertumpuk.
+
+## PARAMETERS
+
+### -AllowedUnauthorizedAction
+.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AsJob
+Menjalankan perintah sebagai pekerjaan
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AuthorizationActionMapping
+.
+Untuk membuat, lihat bagian CATATAN untuk properti AUTHORIZATIONACTIONMAPPING dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IAuthorizationActionMapping[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CheckNameAvailabilitySpecificationEnableDefaultValidation
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CheckNameAvailabilitySpecificationResourceTypesWithCustomValidation
+.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultApiVersion
+.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisallowedActionVerb
+.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnableAsyncOperation
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnableThirdPartyS2S
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Titik akhir
+.
+Untuk membuat, lihat bagian CATATAN untuk properti ENDPOINT dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeEndpoint[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExtendedLocation
+.
+Untuk membuat, lihat bagian CATATAN untuk properti EXTENDEDLOCATION dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IExtendedLocationOptions[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FeatureRuleRequiredFeaturesPolicy
+.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityManagementApplicationId
+.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityManagementType
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.IdentityManagementTypes
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsProxyProxy
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LinkedAccessCheck
+.
+Untuk membuat, lihat bagian CATATAN untuk properti LINKEDACCESSCHECK dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ILinkedAccessCheck[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LoggingRule
+.
+Untuk membuat, lihat bagian CATATAN untuk properti LOGGINGRULE dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ILoggingRule[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MarketplaceType
+.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Menjalankan perintah secara asinkron
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProviderNamespace
+Nama penyedia sumber daya yang dihosting dalam ProviderHub.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProvisioningState
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.ProvisioningState
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Kawasan
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.Regionality
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RequestHeaderOptionOptInHeader
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.OptInHeaderType
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RequiredFeature
+.
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceCreationBeginRequest
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.ExtensionOptionType[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceCreationBeginResponse
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.ExtensionOptionType[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceDeletionPolicy
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.ResourceDeletionPolicy
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceMovePolicyCrossResourceGroupMoveEnabled
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceMovePolicyCrossSubscriptionMoveEnabled
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceMovePolicyValidationRequired
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceType
+Tipe sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoutingType
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.RoutingType
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServiceTreeInfo
+.
+Untuk membuat, lihat bagian CATATAN untuk properti SERVICETREEINFO dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IServiceTreeInfo[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+ID langganan target.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionLifecycleNotificationSpecificationSoftDeleteTtl
+.
+
+```yaml
+Type: System.TimeSpan
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionLifecycleNotificationSpecificationSubscriptionStateOverrideAction
+.
+Untuk selanjutnya, lihat bagian CATATAN untuk PROPERTI SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION dan buat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISubscriptionStateOverrideAction[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionStateRule
+.
+Untuk membuat, lihat bagian CATATAN untuk properti SUBSCRIPTIONSTATERULE dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISubscriptionStateRule[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SwaggerSpecification
+.
+Untuk membuat, lihat bagian CATATAN untuk properti SWAGGERSPECIFICATION dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.ISwaggerSpecification[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TemplateDeploymentOptionPreflightOption
+.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Support.PreflightOption[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TemplateDeploymentOptionPreflightSupported
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PembatasanRule
+.
+Untuk membuat, lihat bagian CATATAN untuk properti THROTTLINGRULE dan membuat tabel hash.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IThrottlingRule[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.Api20201120.IResourceTypeRegistration
+
+## CATATAN
+
+ALIAS
+
+PROPERTI PARAMETER KOMPLEKS
+
+Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+
+
+AUTHORIZATIONACTIONMAPPING <IAuthorizationActionMapping[]>: .
+  - `[Desired <String>]`: 
+  - `[Original <String>]`: 
+
+ENDPOINT <IResourceTypeEndpoint[]>: .
+  - `[ApiVersion <String[]>]`: 
+  - `[Enabled <Boolean?>]`: 
+  - `[Extension <IResourceTypeExtension[]>]`: 
+    - `[EndpointUri <String>]`: 
+    - `[ExtensionCategory <ExtensionCategory[]>]`: 
+    - `[Timeout <TimeSpan?>]`: 
+  - `[FeatureRuleRequiredFeaturesPolicy <String>]`: 
+  - `[Location <String[]>]`: 
+  - `[RequiredFeature <String[]>]`: 
+  - `[Timeout <TimeSpan?>]`: 
+
+EXTENDEDLOCATION <IExtendedLocationOptions[]>: .
+  - `[SupportedPolicy <String>]`: 
+  - `[Type <String>]`: 
+
+LINKEDACCESSCHECK <ILinkedAccessCheck[]>: .
+  - `[ActionName <String>]`: 
+  - `[LinkedAction <String>]`: 
+  - `[LinkedActionVerb <String>]`: 
+  - `[LinkedProperty <String>]`: 
+  - `[LinkedType <String>]`: 
+
+LOGGINGRULE <ILoggingRule[]>: .
+  - `Action <String>`: 
+  - `DetailLevel <LoggingDetails>`: 
+  - `Direction <LoggingDirections>`: 
+  - `[HiddenPropertyPathHiddenPathsOnRequest <String[]>]`: 
+  - `[HiddenPropertyPathHiddenPathsOnResponse <String[]>]`: 
+
+SERVICETREEINFO <IServiceTreeInfo[]>: .
+  - `[ComponentId <String>]`: 
+  - `[ServiceId <String>]`: 
+
+SUBSCRIPTIONLIFECYCLENOTIFICATIONSPECIFICATIONSUBSCRIPTIONSTATEOVERRIDEACTION <ISubscriptionStateOverrideAction[]>: .
+  - `Action <SubscriptionNotificationOperation>`: 
+  - `State <SubscriptionTransitioningState>`: 
+
+SUBSCRIPTIONSTATERULE <ISubscriptionStateRule[]>: .
+  - `[AllowedAction <String[]>]`: 
+  - `[State <SubscriptionState?>]`: 
+
+SWAGGERSPECIFICATION <ISwaggerSpecification[]>: .
+  - `[ApiVersion <String[]>]`: 
+  - `[SwaggerSpecFolderUri <String>]`: 
+
+THROTTLINGRULE <IThrottlingRule[]>: .
+  - `Action <String>`: 
+  - `Metric <IThrottlingMetric[]>`: 
+    - `Limit <Int64>`: 
+    - `Type <ThrottlingMetricType>`: 
+    - `[Interval <TimeSpan?>]`: 
+  - `[RequiredFeature <String[]>]`: 
+
+## RELATED LINKS
+
