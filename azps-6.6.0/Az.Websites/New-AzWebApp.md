@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebApp.md
-ms.openlocfilehash: 05f3f3845a637c9c648cc482f2632d7840a7f858
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 774279cac01af0b212d4b6b222f9d105ef97ca3f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334368"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140457253"
 ---
 # New-AzWebApp
 
 ## SYNOPSIS
 Membuat Aplikasi Azure Web.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepositoryPath
-Jalur ke GitHub tempat penyimpanan yang berisi aplikasi web untuk disebarkan.
+Jalur ke GitHub penyimpanan yang berisi aplikasi web untuk disebarkan.
 
 ```yaml
 Type: System.String
@@ -428,7 +431,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

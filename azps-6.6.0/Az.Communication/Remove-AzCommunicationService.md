@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.communication/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Communication/help/Remove-AzCommunicationService.md
-ms.openlocfilehash: cf487162ad227efa300e44309f9671b274224779
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e0ce10a9e20258be0963e3e32b44c5612665f246
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136333741"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486247"
 ---
 # Remove-AzCommunicationService
 
 ## SYNOPSIS
 Operasi untuk menghapus CommunicationService.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.communication/remove-azcommunicationservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -218,7 +221,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICommunicationIdentity> : Parameter Identitas
+INPUTOBJECT <ICommunicationIdentity>: Parameter Identitas
   - `[CommunicationServiceName <String>]`: Nama sumber daya Layanan Komunikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Kawasan Azure

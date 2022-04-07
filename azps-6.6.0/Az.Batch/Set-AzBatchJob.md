@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/set-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Set-AzBatchJob.md
-ms.openlocfilehash: dd8ec2f33d298cdfe30ec8b8a724421ae5ec1ed9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 01d7129f67a88956a00ce9fc481f533ef66cb5ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366220"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486661"
 ---
 # Set-AzBatchJob
 
 ## SYNOPSIS
 Memperbarui pekerjaan Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/set-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzBatchJob [-Job] <PSCloudJob> -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Set-AzBatchJob** memperbarui pekerjaan Azure Batch.
-Gunakan cmdlet Get-AzBatchJob untuk mendapatkan objek **PSCloudJob.**
+Gunakan cmdlet Get-AzBatchJob untuk mendapatkan objek **PSCloudJob** .
 Modifikasi properti objek itu, lalu gunakan cmdlet saat ini untuk melakukan perubahan Anda ke layanan Batch.
 
 ## EXAMPLES
@@ -39,8 +42,8 @@ PS C:\> $Job.Priority = 1
 PS C:\> Set-AzBatchJob -Job $Job -BatchContext $Context
 ```
 
-Perintah pertama mendapatkan pekerjaan menggunakan **Get-AzBatchJob**, lalu menyimpannya di $Job baru.
-Perintah kedua mengubah spesifikasi prioritas pada objek $Job.
+Perintah pertama mendapatkan pekerjaan menggunakan **Get-AzBatchJob**, lalu menyimpannya di $Job variabel.
+Perintah kedua mengubah spesifikasi prioritas pada objek $Job baru.
 Perintah terakhir memperbarui layanan Kumpulan agar sesuai dengan objek lokal di $Job.
 
 ## PARAMETERS
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

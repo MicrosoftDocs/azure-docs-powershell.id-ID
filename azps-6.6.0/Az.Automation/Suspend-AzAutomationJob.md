@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/suspe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Suspend-AzAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Suspend-AzAutomationJob.md
-ms.openlocfilehash: 90c7ccfeb8662822359aa48d397d5a90ff939019
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 54d958f47162b20dd9acc0bb8aed6b0ca080e320
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136391154"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486733"
 ---
 # Suspend-AzAutomationJob
 
 ## SYNOPSIS
 Menangguhkan pekerjaan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/suspend-azautomationjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Suspend-AzAutomationJob [-Id] <Guid> [-ResourceGroupName] <String> [-AutomationA
 ## DESCRIPTION
 Cmdlet **Suspend-AzAutomationJob** menangguhkan pekerjaan Azure Automation.
 Tentukan pekerjaan Otomatisasi yang sedang berjalan.
-Untuk melanjutkan pekerjaan yang ditangguhkan, gunakan cmdlet Resume-AzAutomationJob baru.
+Untuk melanjutkan pekerjaan yang ditangguhkan, gunakan cmdlet Resume-AzAutomationJob.
 
 ## EXAMPLES
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
