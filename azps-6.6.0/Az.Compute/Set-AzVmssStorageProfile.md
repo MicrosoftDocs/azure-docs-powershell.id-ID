@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssStorageProfile.md
-ms.openlocfilehash: 75b01ea0efa9b9f7dc77de06d459f5d4c50ea971
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 959dd4875d2d85ebb3a188c1c78f4a781f72c6fb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383597"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140485275"
 ---
 # Set-AzVmssStorageProfile
 
 ## SYNOPSIS
 Mengatur properti profil penyimpanan VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmssstorageprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 
 ### -ImageReferenceSku
 Menentukan VMImage SKU.
-Untuk mendapatkan SKU, gunakan cmdlet Get-AzVMImageSku cmdlet.
+Untuk mendapatkan SKU, gunakan Get-AzVMImageSku cmdlet.
 
 ```yaml
 Type: System.String
@@ -242,7 +245,7 @@ Menentukan cara cmdlet ini membuat mesin virtual VMSS.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Lampirkan: Nilai ini digunakan ketika Anda menggunakan disk khusus untuk membuat mesin virtual VMSS. 
 - FromImage : Nilai ini digunakan ketika Anda menggunakan gambar untuk membuat mesin virtual VMSS.
-Jika Anda menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference.*
+Jika Anda menggunakan gambar platform, Anda juga akan menggunakan parameter *imageReference* .
 
 ```yaml
 Type: System.String
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 
 ### -VirtualMachinescaleSet
 Menentukan objek VMSS.
-Untuk mendapatkan objek, gunakan New-AzVmssConfig objek.
+Untuk mendapatkan objek, gunakan objek New-AzVmssConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

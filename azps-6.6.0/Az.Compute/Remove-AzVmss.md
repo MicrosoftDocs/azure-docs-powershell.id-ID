@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmss.md
-ms.openlocfilehash: 48e9cb5d1a6497b664053ce3a8d50d826654766a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 736d0502636072eaa2d4f460a11855f9d85f1f2d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346121"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140485509"
 ---
 # Remove-AzVmss
 
 ## SYNOPSIS
 Menghapus VMSS atau mesin virtual yang berada dalam VMSS.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvmss) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 
 ### -VMScaleSetName
 Spesies nama VMSS yang dihapus cmdlet ini.
-Jika Anda menentukan parameter *InstanceId,* cmdlet akan menghapus mesin virtual tertentu dari VMSS yang dinamai oleh parameter ini.
+Jika Anda menentukan parameter *InstanceId* , cmdlet akan menghapus mesin virtual tertentu dari VMSS yang dinamai oleh parameter ini.
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

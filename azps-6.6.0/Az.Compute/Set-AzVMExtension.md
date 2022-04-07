@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMExtension.md
-ms.openlocfilehash: e3a280fbf1798068a51253cd78f7dec2a7596b31
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7d57d08bff7e52b3f7ab806aa3ebcc115822e148
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361586"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140485365"
 ---
 # Set-AzVMExtension
 
 ## SYNOPSIS
 Memperbarui properti ekstensi atau menambahkan ekstensi ke komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ PS C:\> Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West U
 ```
 
 Dua perintah pertama menggunakan sintaks Windows PowerShell standar untuk membuat tabel hash, lalu menyimpan tabel hash tersebut dalam variabel $Pengaturan $ProtectedSettings.
-Untuk informasi selengkapnya, ketik `Get-Help about_Hash_Tables` .
+Untuk informasi selengkapnya, ketik `Get-Help about_Hash_Tables`.
 Perintah kedua menyertakan dua nilai yang sebelumnya dibuat dan disimpan dalam variabel.
 Perintah terakhir mengubah ekstensi komputer virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $Pengaturan dan $ProtectedSettings.
 Perintah menentukan informasi lain yang diperlukan yang menyertakan penerbit dan tipe ekstensi.
@@ -63,8 +66,8 @@ PS C:\> $ProtectedSettingsString = '{"storageAccountName":"' + $stoname + '","st
 PS C:\> Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West US" -VMName "VirtualMachine22" -Name "CustomScriptExtension" -Publisher "Contoso.Compute" -Type "CustomScriptExtension" -TypeHandlerVersion "1.1" -SettingString $SettingsString -ProtectedSettingString $ProtectedSettingsString ;
 ```
 
-Dua perintah pertama membuat string yang berisi pengaturan, lalu menyimpannya dalam $SettingsString $ProtectedSettingsString tertentu.
-Perintah terakhir akan mengubah ekstensi mesin virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $SettingsString lalu $ProtectedSettingsString.
+Dua perintah pertama membuat string yang berisi pengaturan, lalu menyimpannya dalam $SettingsString dan $ProtectedSettingsString lain.
+Perintah terakhir akan memodifikasi ekstensi mesin virtual bernama VirtualMachine22 di ResourceGroup11 sesuai dengan konten $SettingsString dan $ProtectedSettingsString.
 Perintah menentukan informasi lain yang diperlukan yang menyertakan penerbit dan tipe ekstensi.
 
 ## PARAMETERS
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

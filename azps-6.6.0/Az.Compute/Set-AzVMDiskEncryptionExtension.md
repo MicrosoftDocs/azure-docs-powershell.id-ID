@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiskEncryptionExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMDiskEncryptionExtension.md
-ms.openlocfilehash: a66517e39bf18515d18c8486c1cd61964f8d9eac
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 703e97e4c7fa1af1d2ef36faa495a7403f07b4a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361625"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140485419"
 ---
 # Set-AzVMDiskEncryptionExtension
 
 ## SYNOPSIS
 Mengaktifkan enkripsi pada mesin virtual IaaS yang sedang berjalan di Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmdiskencryptionextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -257,10 +260,10 @@ Contoh ini menggunakan ID klien Azure AD dan thumbprint sertifikat klien untuk m
 ## PARAMETERS
 
 ### -AadClientCertThumbprint
-Menentukan thumbprint sertifikat klien aplikasi AzureActive Directory (Azure AD) yang memiliki izin untuk menulis rahasia ke **KeyVault**.
+Menentukan thumbprint sertifikat klien aplikasi AzureActive Directory (Azure AD) yang memiliki izin untuk menulis rahasia bagi **KeyVault**.
 Sebagai prasyarat, sertifikat klien Azure AD harus sebelumnya digunakan ke penyimpanan sertifikat komputer lokal komputer `my` virtual.
 Cmdlet Add-AzVMSecret baru dapat digunakan untuk menyebarkan sertifikat ke komputer virtual di Azure.
-Untuk detail selengkapnya, lihat bantuan cmdlet **Add-AzVMSecret.**
+Untuk detail selengkapnya, lihat **bantuan cmdlet Add-AzVMSecret** .
 Sertifikat harus sebelumnya digunakan di komputer virtual komputer lokal penyimpanan sertifikat saya.
 
 ```yaml
@@ -505,7 +508,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi. Jika parameter *Nama* dihilangkan, ekstensi yang diinstal akan dinamai AzureDiskEncryption pada komputer virtual Windows dan AzureDiskEncryptionForLinux pada komputer virtual Linux.
+Menentukan nama sumber daya Azure Resource Manager yang mewakili ekstensi. Jika parameter *Nama* dihilangkan, ekstensi yang diinstal akan dinamai AzureDiskEncryption di komputer virtual Windows dan AzureDiskEncryptionForLinux pada komputer virtual Linux.
 
 
 ```yaml
@@ -522,7 +525,7 @@ Accept wildcard characters: False
 
 ### -Passphrase
 Menentukan passphrase yang hanya digunakan untuk mengenkripsi mesin virtual Linux.
-Parameter ini tidak digunakan untuk mesin virtual yang menjalankan sistem Windows operasi.
+Parameter ini tidak digunakan untuk mesin virtual yang menjalankan Windows sistem operasi.
 
 ```yaml
 Type: System.String
@@ -554,7 +557,7 @@ Accept wildcard characters: False
 ### -SequenceVersion
 Menentukan nomor urutan operasi enkripsi untuk komputer virtual.
 Cara ini unik untuk setiap operasi enkripsi yang dilakukan di komputer virtual yang sama.
-Cmdlet Get-AzVMExtension baru dapat digunakan untuk mengambil nomor urutan sebelumnya yang digunakan.
+Cmdlet Get-AzVMExtension cmdlet bisa digunakan untuk mengambil nomor urutan sebelumnya yang digunakan.
 
 ```yaml
 Type: System.String
@@ -665,7 +668,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
