@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/New-AzMlCommitmentPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/New-AzMlCommitmentPlan.md
-ms.openlocfilehash: 3831cff7429e9223a78ea12604e2d55e4ef22632
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d35ec552470089088ce604ece6329be9bdfaada5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372842"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140332997"
 ---
 # New-AzMlCommitmentPlan
 
 ## SYNOPSIS
 Membuat rencana komitmen baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/new-azmlcommitmentplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzMlCommitmentPlan -ResourceGroupName <String> -Location <String> -Name <Str
 ```
 
 ## DESCRIPTION
-Membuat rencana Azure Machine Learning komitmen dalam grup sumber daya yang sudah ada.
+Membuat rencana Azure Machine Learning komitmen dalam grup sumber daya yang ada.
 Jika rencana komitmen dengan nama yang sama terdapat di grup sumber daya, panggilan bertindak sebagai operasi pembaruan dan rencana komitmen yang ada ditimpa.
 
 ## EXAMPLES
@@ -36,7 +39,7 @@ Jika rencana komitmen dengan nama yang sama terdapat di grup sumber daya, panggi
 New-AzMlCommitmentPlan -ResourceGroupName "MyResourceGroup" -Name "MyCommitmentPlanName" -Location "South Central US" -SkuName DevTest -SkuTier Standard -SkuCapacity 1
 ```
 
-Membuat rencana Azure Machine Learning baru bernama "MyCommitmentPlanName" di grup "MyResourceGroup" dan kawasan AS Pusat Selatan. Dalam contoh ini, SKU DevTest/Standard digunakan, yang berarti sumber daya yang disediakan oleh rencana komitmen akan ditentukan oleh batas DevTest/Standard. KotaKuCapacity dalam contoh ini adalah 1, artinya biaya paket adalah 1x biaya DevTest, dan sumber daya yang terdapat dalam paket adalah 1x yang diberikan DevTest.
+Membuat rencana komitmen Azure Machine Learning baru bernama "MyCommitmentPlanName" di grup "MyResourceGroup" dan kawasan AS Pusat Selatan. Dalam contoh ini, SKU DevTest/Standard digunakan, yang berarti sumber daya yang disediakan oleh rencana komitmen akan ditentukan oleh batas DevTest/Standard. KotaKuCapacity dalam contoh ini adalah 1, artinya biaya paket adalah 1x biaya DevTest, dan sumber daya yang terdapat dalam paket adalah 1x yang diberikan DevTest.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk Azure ML rencana komitmen.
+Nama grup sumber daya untuk Rencana ML Azure.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama SKU yang akan digunakan saat menyediakan paket komitmen ML Azure.
+Nama SKU yang akan digunakan ketika menyediakan paket komitmen ML Azure.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

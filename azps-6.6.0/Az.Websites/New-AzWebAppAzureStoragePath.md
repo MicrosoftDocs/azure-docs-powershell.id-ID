@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
-ms.openlocfilehash: 7c8cec7dfb8db9a11f01b3f914b579766ca8db45
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f4804f90f121d6607b78baca1fbce59469e73314
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380825"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140301901"
 ---
 # New-AzWebAppAzureStoragePath
 
 ## SYNOPSIS
-Membuat objek yang mewakili Azure Storage jalur untuk terpasang di Web App. Parameter ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp dan Set-AzWebAppSlot
+Membuat objek yang mewakili Azure Storage jalur untuk terpasang di Web App. Parameter ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp Set-AzWebAppSlot
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebappazurestoragepath) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzWebAppAzureStoragePath -Name <String> -Type <AzureStorageType> -AccountNam
 ```
 
 ## DESCRIPTION
-Membuat objek yang mewakili jalur Azure Storage akan terpasang di dalam Web App.
+Membuat objek yang mewakili jalur Azure Storage akan terpasang di dalam Aplikasi Web.
 
 ## EXAMPLES
 
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe Azure Storage Anda.
+Tipe Azure Storage anda.
 Windows Baru hanya mendukung File Azure
 
 ```yaml
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

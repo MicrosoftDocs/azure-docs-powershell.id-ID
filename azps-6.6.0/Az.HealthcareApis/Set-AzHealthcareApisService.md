@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.healthcareapis/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Set-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/Set-AzHealthcareApisService.md
-ms.openlocfilehash: 043ab3ca5a188594e49a06894d25d5a933982c5e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 27c60323a1c70c56596c06d71b2e820d740378b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373010"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140285647"
 ---
 # Set-AzHealthcareApisService
 
 ## SYNOPSIS
 Memperbarui layanan kesehatan yang sudah adaApis fapis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.healthcareapis/set-azhealthcareapisservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ ResourceType            : Microsoft.HealthcareApis/services
 SmartProxyEnabled       : False
 ```
 
-### Contoh 2: Memperbarui layanan healthcareapis yang sudah ada bernama MyService dalam grup sumber daya MyResourceGroup dengan cosmosdb OfferThroughput = 500 dan kunci vault kunci uri "https:// \<my-keyvault> .vault.azure.net/keys/ \<my-key> "
+### Contoh 2: Memperbarui layanan healthcareapis yang sudah ada bernama MyService dalam grup sumber daya MyResourceGroup dengan cosmosdb OfferThroughput = 500 dan kunci kunci vault kunci uri "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
 
 ```powershell
 PS C:\> $ResourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MyResourceGroup/providers/Microsoft.HealthcareApis/services/MyService"
@@ -371,7 +374,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportStorageAccountName
-Layanan HealthcareApis Fapis Mengekspor Storage Akun.
+Layanan HealthcareApis Fapis Mengekspor Storage Akun Baru.
 
 ```yaml
 Type: System.String
@@ -416,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Tipe akses jaringan untuk layanan Fhir. Umumnya `Enabled` atau `Disabled` .
+Tipe akses jaringan untuk layanan Fhir. Umumnya `Enabled` atau `Disabled`.
 
 ```yaml
 Type: System.String
@@ -508,7 +511,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

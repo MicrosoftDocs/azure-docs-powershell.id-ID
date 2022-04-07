@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppSSLBinding.md
-ms.openlocfilehash: 7f7b2438ab003f828a1b349b3d900d8e1a96ee6e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6ae8f8b3841e3bfbead2c40ba0a238fc7a436edf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339545"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140301847"
 ---
 # New-AzWebAppSSLBinding
 
 ## SYNOPSIS
 Membuat pengikatan sertifikat SSL untuk Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebappsslbinding) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan nama slot penggunaan Web App.
-Anda bisa menggunakan cmdlet Get-AzWebAppSlot untuk mendapatkan slot.
+Anda dapat menggunakan cmdlet Get-AzWebAppSlot untuk mendapatkan slot.
 Slot penyebaran menyediakan cara untuk Anda melakukan tahapan dan memvalidasi aplikasi web tanpa aplikasi itu bisa diakses melalui internet.
 Umumnya, Anda akan menyebarkan perubahan ke situs pengaturan, memvalidasi perubahan tersebut, lalu menyebarkannya ke situs produksi (yang mudah diakses internet).
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WebApp
 Menentukan Aplikasi Web.
-Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp baru.
+Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp.
 Anda tidak bisa menggunakan parameter *WebApp* di perintah yang sama seperti parameter *ResourceGroupName* dan/atau *WebAppName*.
 
 ```yaml
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

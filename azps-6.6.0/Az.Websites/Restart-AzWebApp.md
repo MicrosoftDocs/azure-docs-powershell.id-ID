@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restart
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
-ms.openlocfilehash: 6ab2be6ad81b731ba4f8d8961a14930b706b29d8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 30b111ce20dcd45fb3c42c85d324e31f4eeefaac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136380685"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140301811"
 ---
 # Restart-AzWebApp
 
 ## SYNOPSIS
 Memulai ulang Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/restart-azwebapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Restart-AzWebApp [-WebApp] <PSSite> [-DefaultProfile <IAzureContextContainer>] [
 
 ## DESCRIPTION
 Cmdlet **Mulai Ulang-AzWebApp** berhenti dan memulai Azure Web App.
-Jika Web App dalam keadaan berhenti, gunakan cmdlet Start-AzWebApp baru.
+Jika Web App dalam keadaan berhenti, gunakan cmdlet Start-AzWebApp.
 
 ## EXAMPLES
 
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
