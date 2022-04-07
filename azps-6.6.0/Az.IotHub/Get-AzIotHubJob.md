@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubJob.md
-ms.openlocfilehash: 4ad003464338cac4cd5a4ef91142aa1c4d5f9c8e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: da03fda0e9638a09b522d73210767a5d07b1830b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377420"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140285341"
 ---
 # Get-AzIotHubJob
 
 ## SYNOPSIS
 Mendapatkan informasi tentang pekerjaan IotHub.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzIotHubJob [-ResourceGroupName] <String> [-Name] <String> [[-JobId] <String
 
 ## DESCRIPTION
 Mendapatkan informasi tentang Pekerjaan IotHub.
-IotHub Job dibuat saat operasi impor atau ekspor diinisasi menggunakan New-AzIotHubExportDevices atau New-AzIotHubImportDevices ekspor.
+Pekerjaan IotHub dibuat ketika operasi impor atau ekspor diinisasi menggunakan New-AzIotHubExportDevices atau New-AzIotHubImportDevices impor.
 Anda dapat mencantumkan semua pekerjaan atau memfilter pekerjaan menggunakan Pengidentifikasi Pekerjaan.
 
 ## EXAMPLES
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
