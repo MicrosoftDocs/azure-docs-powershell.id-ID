@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/remove-azr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Remove-AzRelayAuthorizationRule.md
-ms.openlocfilehash: d7ba3359c0818d8d63d13556c5bd255110548952
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 384267326da8f25b0f45d9ef8ba259321e391f14
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344873"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140460910"
 ---
 # Remove-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Menghapus aturan otorisasi HybridConnection dari entitas Relay yang diberikan (Namespace/WcfIguy/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/remove-azrelayauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,21 +52,21 @@ Cmdlet **Remove-AzIguyAuthorizationRule** menghapus aturan otorisasi entitas Rel
 PS C:\> Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi `AuthoRule1` ruang nama `TestNameSpace-Relay1` .
+Menghapus aturan otorisasi ruang `AuthoRule1` nama `TestNameSpace-Relay1`.
 
 ### Contoh 2
 ```
 PS C:\> Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWcfRelay -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi `AuthoRule1` Wcf Berlaku dari `TestWcfRelay` ruang nama `TestNameSpace-Relay1` .
+Menghapus aturan otorisasi Wcf `AuthoRule1` Berlaku dari `TestWcfRelay` ruang nama `TestNameSpace-Relay1`.
 
 ### Contoh 3
 ```
 PS C:\> Remove-AzRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -HybridConnection TestHybridConnection -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi `AuthoRule1` HybridConnection `TestHybridConnection` dari ruang nama `TestNameSpace-Relay1` .
+Menghapus aturan otorisasi HybridConnection `AuthoRule1` dari `TestHybridConnection` ruang nama `TestNameSpace-Relay1`.
 
 ## PARAMETERS
 
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

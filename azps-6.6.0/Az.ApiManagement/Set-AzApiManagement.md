@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagement.md
-ms.openlocfilehash: 46c8ed3c2e5ffee6e7260d0a706100c5a6a01b4a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 76b609be7f9d99d7977d3160d3541ceb9c8d4ad3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344045"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140259613"
 ---
 # Set-AzApiManagement
 
 ## SYNOPSIS
 Memperbarui layanan Manajemen Api Azure
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagement) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Set-AzApiManagement** memperbarui layanan Manajemen API Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan layanan Manajemen API dan scale untuk Premium dan Tambahkan kawasan
+### Contoh 1: Dapatkan layanan Manajemen API dan  scale untuk Premium dan Tambahkan kawasan
 ```powershell
 PS C:\> $apim = Get-AzApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
 PS C:\> $apim.Sku = "Premium"
@@ -50,7 +53,7 @@ PS C:\> $apim.VirtualNetwork = $virtualNetwork
 PS C:\> Set-AzApiManagement -InputObject $apim
 ```
 
-Perintah ini memperbarui penyebaran Manajemen API yang sudah ada dan bergabung ke *VpnType eksternal.*
+Perintah ini memperbarui penyebaran Manajemen API yang sudah ada dan bergabung ke *VpnType eksternal*.
 
 ### Contoh 3: Membuat dan memulai contoh PsApiManagementCustomHostNameConfiguration menggunakan Rahasia dari Sumber Daya KeyVault
 ```powershell
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

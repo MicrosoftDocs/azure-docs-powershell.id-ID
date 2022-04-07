@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/update-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccountVMHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Update-AzLogzSubAccountVMHost.md
-ms.openlocfilehash: 8ce172107035e149a55c24d93a0e0dda42294a1d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e50b9223df1c18373b39eeed02afc2379533f028
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136372873"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136483"
 ---
 # Update-AzLogzSubAccountVMHost
 
 ## SYNOPSIS
-Permintaan pengiriman untuk memperbarui kumpulan jika Logz.io telah diinstal pada VM untuk monitor tertentu.
+Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/update-azlogzsubaccountvmhost) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzLogzSubAccountVMHost -MonitorName <String> -Name <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Permintaan pengiriman untuk memperbarui kumpulan jika Logz.io telah diinstal pada VM untuk monitor tertentu.
+Permintaan pengiriman untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor tertentu.
 
 ## EXAMPLES
 
@@ -40,7 +43,7 @@ AgentVersion Id
 1.0          /SUBSCRIPTIONS/CE37D538-DFA3-49C3-B3CD-149B4B7DB48A/RESOURCEGROUPS/KOYTEST/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/TEST-VM-1
 ```
 
-Perintah mengirim permintaan untuk memperbarui koleksi ketika Logz.io telah diinstal pada VM untuk monitor sub akun logz.
+Perintah ini mengirimkan permintaan untuk memperbarui koleksi jika Logz.io vm telah diinstal pada VM untuk monitor sub akun logz.
 
 ## PARAMETERS
 
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

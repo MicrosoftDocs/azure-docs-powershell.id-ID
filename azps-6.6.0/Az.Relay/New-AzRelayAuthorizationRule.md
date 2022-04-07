@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azrela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzRelayAuthorizationRule.md
-ms.openlocfilehash: c4d70c98234d04dc24297163864548d4f196ee23
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e06529458346f404da9778e520c11d7b243535ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378554"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140461068"
 ---
 # New-AzRelayAuthorizationRule
 
 ## SYNOPSIS
 Membuat aturan otorisasi baru untuk entitas Relay yang ditentukan (Namespace/WcfIguy/HybridConnection).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/new-azrelayauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/AuthorizationRules/AuthoRule1
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan untuk ruang nama `TestNameSpace-Relay1` .
+Membuat `AuthoRule1` dengan **hak** Dengarkan untuk ruang nama `TestNameSpace-Relay1`.
 
 ### Contoh 2: WcfCfCfy
 ```powershell
@@ -66,7 +69,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/WcfRelays/TestWCFRelay1/authorizationRules/AuthoRule1
 ```
 
-Membuat aturan otorisasi `AuthoRule1` **dengan hak** Dengarkan untuk Wcf `TestWCFRelay1` Berlaku.
+Membuat aturan otorisasi `AuthoRule1` **dengan hak** Dengarkan untuk Wcf Berlaku `TestWCFRelay1`.
 
 ### Contoh 3: HybridConnection
 ```powershell
@@ -78,7 +81,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/HybridConnections/TestHybridConnection/authorizationRules/AuthoRule1
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan untuk Koneksi `TestHybridConnection` Hibrid.
+Membuat `AuthoRule1` dengan **hak** Dengarkan untuk Koneksi Hibrid `TestHybridConnection`.
 
 ## PARAMETERS
 
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

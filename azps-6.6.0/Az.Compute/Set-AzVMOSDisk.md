@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOSDisk.md
-ms.openlocfilehash: bb97f0cc2ea8ddaecc784641fa686031ef3dd4ae
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2090fa0867196e9e2975ed5cb0651f895b93253a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361577"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140311765"
 ---
 # Set-AzVMOSDisk
 
 ## SYNOPSIS
 Mengatur properti disk sistem operasi pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmosdisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -82,10 +85,10 @@ PS C:\> $VirtualMachine = Set-AzVMOSDisk -VM $VirtualMachine -Name "osDisk.vhd" 
 PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
+Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
 Perintah kedua membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
 
 ### Contoh 2: Mengatur properti pada mesin virtual dari gambar pengguna umum
@@ -98,9 +101,9 @@ PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
 Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11 dan menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine variabel.
+Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine baru.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
 
 ### Contoh 3: Mengatur properti pada mesin virtual dari gambar pengguna khusus
@@ -112,9 +115,9 @@ PS C:> New-AzVM -VM $VirtualMachine -ResourceGroupName "ResourceGroup11"
 ```
 
 Perintah pertama mendapatkan ketersediaan yang diatur bernama AvailabilitySet13 dalam grup sumber daya yang bernama ResourceGroup11 dan menyimpan objek tersebut di $AvailabilitySet sumber daya.
-Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine variabel.
+Perintah kedua membuat objek mesin virtual dan menyimpannya dalam $VirtualMachine baru.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Perintah terakhir mengatur properti di komputer virtual dalam $VirtualMachine.
 
 ### Contoh 4: Mengatur pengaturan enkripsi disk pada disk sistem operasi mesin virtual
@@ -154,13 +157,13 @@ Menentukan apakah cmdlet ini membuat disk di komputer virtual dari platform atau
 Nilai valid adalah: 
 - Lampirkan.
 Tentukan opsi ini untuk membuat mesin virtual dari disk khusus.
-Ketika Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri.*
+Ketika Anda menentukan opsi ini, jangan tentukan parameter *SourceImageUri* .
 Sebagai gantinya, Set-AzVMSourceImage cmdlet.
-Anda juga harus menggunakan parameter *Windows* *atau Linux* untuk memberi tahu tipe sistem operasi pada VHD platform Azure.
+Anda juga harus menggunakan parameter *Windows* *atau Linux* agar memberi tahu tipe sistem operasi pada VHD platform Azure.
 Parameter *VhdUri* cukup memberi tahu platform Azure mengenai lokasi disk untuk melampirkannya. 
 - FromImage.
 Tentukan opsi ini untuk membuat mesin virtual dari gambar platform atau gambar pengguna umum.
-Dalam kasus gambar pengguna yang di generalisasi, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu lokasi platform Azure dan tipe disk sistem operasi VHD daripada menggunakan cmdlet **Set-AzVMSourceImage.**
+Dalam kasus gambar pengguna yang di generalisasi, Anda juga perlu menentukan parameter *SourceImageUri* dan parameter *Windows* atau *Linux* untuk memberi tahu lokasi platform Azure dan tipe disk sistem operasi VHD daripada menggunakan cmdlet **Set-AzVMSourceImage**.
 Dalam kasus gambar platform, parameter *VhdUri* sudah memadai. 
 - Kosong.
 
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual lokal untuk mengatur properti disk sistem operasi.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM baru.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

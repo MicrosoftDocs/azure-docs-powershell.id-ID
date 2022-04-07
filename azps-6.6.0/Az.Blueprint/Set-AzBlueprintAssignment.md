@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blueprint/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Set-AzBlueprintAssignment.md
-ms.openlocfilehash: 639e6d9a10db808f21a88d566aca061cbfd8c3da
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 560a9a921b79e7ace778c64fa811c97fcd13c3d4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359438"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140312611"
 ---
 # Set-AzBlueprintAssignment
 
 ## SYNOPSIS
 Memperbarui penetapan cetak biru yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/set-azblueprintassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ Parameters        : {applytaganditsdefaultvalue_tagName, applytaganditsdefaultva
 ResourceGroups    : ResourceGroup
 ```
 
-Memperbarui penetapan cetak biru definisi cetak biru yang sudah `$blueprintObject` ada di dalam langganan tertentu, memperbarui parameter. Menggunakan identitas yang ditetapkan sistem. Lokasi menentukan kawasan untuk membuat identitas terkelola.
+Memperbarui penetapan cetak biru definisi cetak biru yang sudah ada `$blueprintObject` di dalam langganan tertentu, memperbarui parameter. Menggunakan identitas yang ditetapkan sistem. Lokasi menentukan kawasan untuk membuat identitas terkelola.
 
 ### Contoh 2
 ```powershell
@@ -82,7 +85,7 @@ PS C:\> $blueprintObject =  Get-AzBlueprint -ManagementGroup "myManagementGroup"
 PS C:\> Set-AzBlueprintAssignment -Name "myAssignment" -Blueprint $blueprintObject -ManagementGroupId "myManagementGroup" -SubscriptionId 00000000-1111-0000-1111-000000000000 -Location "West US" -Parameter @{P1="v1"; P2="v2"}
 ```
 
-Perbarui penetapan cetak biru definisi cetak biru yang sudah ada yang menargetkan langganan `$blueprintObject` tertentu dalam grup manajemen tertentu menggunakan parameter yang ditentukan.
+Perbarui penetapan cetak biru definisi cetak biru yang sudah `$blueprintObject` ada yang menargetkan langganan tertentu dalam grup manajemen tertentu menggunakan parameter yang ditentukan.
 
 ## PARAMETERS
 
@@ -365,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
