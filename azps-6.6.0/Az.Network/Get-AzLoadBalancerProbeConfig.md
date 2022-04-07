@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerProbeConfig.md
-ms.openlocfilehash: 572537f7f13a5b3a494d7e52fd898b5b66bc3df4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8d047f8b25f6cea6cebf7b078b00732dad4537ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136371697"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140282533"
 ---
 # Get-AzLoadBalancerProbeConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi configuration configuration for a load balancer.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerprobeconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyRe
 PS C:\> Get-AzLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
-Perintah kedua mendapatkan konfigurasi konfigurasi konfigurasi konfigurasi terkait bernama MyProbe dari penyeimbang muat dalam $slb.
+Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
+Perintah kedua mendapatkan konfigurasi konfigurasi konfigurasi konfigurasi terkait bernama MyProbe dari penyeimbang muat di $slb.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

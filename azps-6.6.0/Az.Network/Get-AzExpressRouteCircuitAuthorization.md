@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuitAuthorization.md
-ms.openlocfilehash: 0f60c6b77bafd834a19b51d7dd31478a6f7fa4cb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: da9a6d6cadff7ca16b76aa8e648fa4f94a5fa580
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362561"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140282659"
 ---
 # Get-AzExpressRouteCircuitAuthorization
 
 ## SYNOPSIS
 Dapatkan informasi tentang otorisasi sirkuit ExpressRoute.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azexpressroutecircuitauthorization) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "
  Get-AzExpressRouteCircuitAuthorization -Circuit $Circuit | Where-Object {$_.AuthorizationUseStatus -eq "Available"}
 ```
 
-Perintah ini menunjukkan variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam kasus ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan di perintah 2 dan pipa ke cmdlet **Where-Object.**
+Perintah ini menunjukkan variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam kasus ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan di perintah 2 dan pipa ke cmdlet **Where-Object** .
 **Jika kemudian Objek** hanya memilih otorisasi dengan properti *AuthorizationUseStatus* yang diatur ke Tersedia. Untuk mencantumkan izin yang tidak tersedia saja, gunakan sintaks ini untuk klausul Where: `{$_.AuthorizationUseStatus -ne "Available"}`
 
 ## PARAMETERS
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

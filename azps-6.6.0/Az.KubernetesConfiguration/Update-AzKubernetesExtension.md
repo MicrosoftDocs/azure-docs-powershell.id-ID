@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kubernetesconfig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Update-AzKubernetesExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/Update-AzKubernetesExtension.md
-ms.openlocfilehash: 599449315d9ca78f6ed26849aa95e6f7fc87f741
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 790691f3f30551443c042dfea679ec3e1b072947
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136336163"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140309695"
 ---
 # Update-AzKubernetesExtension
 
 ## SYNOPSIS
 Melakukan patch Ekstensi Kluster Kjadwal yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kubernetesconfiguration/update-azkubernetesextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -318,7 +321,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IKubernetesConfigurationIdentity> : Parameter Identitas
+INPUTOBJECT <IKubernetesConfigurationIdentity>: Parameter Identitas
   - `[ClusterName <String>]`: Nama kluster kjadwal.
   - `[ClusterResourceName <String>]`: Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) atau connectedClusters (untuk kluster OnPrem K8S).
   - `[ClusterRp <String>]`: Kluster Kmicrosoft RP - baik Microsoft.ContainerService (untuk kluster AKS) atau Microsoft.Kmicrosoft (untuk kluster OnPrem K8S).

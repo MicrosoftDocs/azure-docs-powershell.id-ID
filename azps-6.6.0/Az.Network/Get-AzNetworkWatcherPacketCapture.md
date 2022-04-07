@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkWatcherPacketCapture.md
-ms.openlocfilehash: 871f9646659c2cd87e459e9d5c5cd44b9a76ff62
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9ce729a1a8287636d212878d4568bc7bad570f91
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136362510"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140282497"
 ---
 # Get-AzNetworkWatcherPacketCapture
 
 ## SYNOPSIS
 Mendapatkan informasi dan properti serta status sumber daya penangkapan paket.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworkwatcherpacketcapture) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Get-AzNetworkWatcherPacketCapture -NetworkWatcher $networkWatcher -PacketCapture
 Dalam contoh ini, kami membuat penyimpanan paket bernama "PacketCaptureTest" dengan beberapa filter dan batas waktu. Setelah sesi selesai, sesi akan disimpan ke akun penyimpanan tertentu. Lalu kami Get-AzNetworkWatcherPacketCapture untuk mengambil status sesi ambil. Catatan: Ekstensi Azure Network Watcher harus diinstal di komputer virtual target untuk membuat pengambilan paket.
 
 >[!NOTE]
->Jika Anda membuat referensi ke paket pengambilan secara langsung dari New-AzNetworkWatcherPacketCapture, perintah itu tidak akan memiliki semua properti. Anda bisa mendapatkan semua properti penangkapan paket dengan melakukan panggilan ke Get-AzNetworkWatcherPacketCapture jaringan.
+>Jika Anda membuat referensi ke paket menangkap secara langsung dari New-AzNetworkWatcherPacketCapture, paket itu tidak akan memiliki semua properti. Anda bisa mendapatkan semua properti penangkapan paket dengan melakukan panggilan ke Get-AzNetworkWatcherPacketCapture jaringan.
 
 ### Contoh 2: Membuat Penangkapan Paket dengan beberapa filter dan mengambil statusnya
 ```
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

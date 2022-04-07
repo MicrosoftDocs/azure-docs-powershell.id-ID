@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerRuleConfig.md
-ms.openlocfilehash: bff4aeffe1a4100d71406748524a07ccf63181f7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 004b4f6a7f01ca1fe1ab1f17852a755a799ed836
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346850"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140331305"
 ---
 # Get-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
 Mendapatkan konfigurasi aturan untuk penyeimbang muat.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azloadbalancerruleconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyRe
 PS C:\> Get-AzLoadBalancerRuleConfig -Name "MyLBrulename" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
 Perintah kedua mendapatkan konfigurasi aturan terkait bernama MyLBrulename dari penyeimbang muat dalam $slb.
 
 ## PARAMETERS
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageContainer.md
-ms.openlocfilehash: b6497d67b1041da6038b2e5cbf4550b182de1a86
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1eeff8b51c9d9468897322c7bc4efb308c08820f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364166"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140096147"
 ---
 # Get-AzStorageContainer
 
 ## SYNOPSIS
 Mencantumkan wadah penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ PS C:\>Get-AzStorageContainer -Prefix "container"
 
 Contoh ini menggunakan parameter *Prefix* untuk mengembalikan daftar semua wadah dengan nama yang dimulai dengan wadah.
 
-### Contoh 3: Wadah Azure Storage, termasuk wadah terhapus
+### Contoh 3: Container Azure Storage, include deleted containers
 ```
 PS C:\> $containers =  Get-AzStorageContainer -IncludeDeleted -Context $ctx 
 
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ### -Konteks
 Menentukan konteks penyimpanan.
 Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzStorageContext baru.
-Izin wadah tidak akan diambil saat Anda menggunakan konteks penyimpanan yang dibuat dari SAS Token, karena izin wadah kueri memerlukan Storage kunci akun.
+Izin wadah tidak akan diambil ketika Anda menggunakan konteks penyimpanan yang dibuat dari SAS Token, karena izin wadah kueri memerlukan Storage kunci akun.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewaySslCertificate.md
-ms.openlocfilehash: 9dd286f27cfb010734e15a2fd87c91ad4768aa3c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 443382a095c949cb8f407b2b2f5e2f15a05e28ed
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335740"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140250469"
 ---
 # Remove-AzApplicationGatewaySslCertificate
 
 ## SYNOPSIS
 Menghapus sertifikat SSL dari gateway aplikasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewaysslcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,8 +40,8 @@ PS C:\> Remove-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Na
 PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang disebut $AppGW.
-Perintah kedua menghapus sertifikat SSL yang bernama Cert02 dari gateway aplikasi yang disimpan di $AppGW koneksi.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
+Perintah kedua menghapus sertifikat SSL yang bernama Cert02 dari gateway aplikasi yang disimpan di $AppGW ini.
 Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
