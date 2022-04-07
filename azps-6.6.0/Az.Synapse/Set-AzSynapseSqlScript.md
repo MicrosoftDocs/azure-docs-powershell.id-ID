@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
-ms.openlocfilehash: 056fb06cc19613b8d7427a6e07805db99de48245
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 65b7b5662f92ede119f4fddaf4a56fdb62f7ff3a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374158"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140275169"
 ---
 # Set-AzSynapseSqlScript
 
 ## SYNOPSIS
 Membuat atau memperbarui SQL skrip di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlscript) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Set-AzSynapseSqlScript -WorkspaceObject <PSSynapseWorkspace> -SqlPoolName <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui SQL skrip di ruang kerja.
+Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui skrip SQL di dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui SQL skrip di ruang ke
 PS C:\> Set-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\sqlscript.sql"
 ```
 
-Perintah ini akan membuat atau memperbarui SQL skrip SQL script file sqlscript.sql di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja yang bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -66,7 +69,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapseSqlScript -DefinitionFile "C:\\samples\\sqlscript.sql"
 ```
 
-Perintah ini akan membuat atau memperbarui SQL skrip SQL script file sqlscript.sql di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja yang bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi skrip SQL.
+Deskripsi skrip SQL skrip.
 
 ```yaml
 Type: System.String
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -FolderName
-Folder tempat SQL skrip ini berada.
+Folder tempat SQL skrip berada.
 Jika tidak ditentukan, SQL skrip akan muncul di tingkat akar.
 
 ```yaml
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

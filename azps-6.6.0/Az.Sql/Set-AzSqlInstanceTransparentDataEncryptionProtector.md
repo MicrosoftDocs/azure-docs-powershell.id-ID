@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/Set-AzSqlIns
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceTransparentDataEncryptionProtector.md
-ms.openlocfilehash: b506887d3ae940209c205341ce43126e104e7247
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d494c0eef5dee8537866ae870664058d77911f2d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351518"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326535"
 ---
 # Set-AzSqlInstanceTransparentDataEncryptionProtector
 
 ## SYNOPSIS
 Mengatur enkripsi data transparan (TDE) untuk instans SQL terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlinstancetransparentdataencryptionprotector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Set-AzSqlInstanceTransparentDataEncryptionProtector [-Type] <EncryptionProtector
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlInstanceTransparentDataEncryptionProtector menetapkan TDE tertentu untuk instans SQL terkelola. Mengubah tipe tripoin TDE akan memutar tripoin tersebut.
+Cmdlet Set-AzSqlInstanceTransparentDataEncryptionProtector menetapkan file TDE untuk instans SQL terkelola. Mengubah tipe tripoin TDE akan memutar tripoin tersebut.
 
 ## EXAMPLES
 
@@ -69,7 +72,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola tertentu untuk menggunakan Key Vault Key Key dengan Id https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 ' ' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
 
 ### Contoh 3: Mengatur tipe enkripsi data transparan ke Azure Key Vault menggunakan objek instans terkelola
 ```powershell
@@ -83,7 +86,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola tertentu untuk menggunakan Key Vault Key Key dengan Id https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 ' ' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
 
 ### Contoh 4: Mengatur tipe enkripsi data transparan ke Azure Key Vault menggunakan id sumber daya
 ```powershell
@@ -97,7 +100,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola tertentu untuk menggunakan Key Vault Key Key dengan Id https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 ' ' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
 
 ### Contoh 5: Mengatur tipe enkripsi data transparan ke Azure Key Vault menggunakan pemipaan
 ```powershell
@@ -111,7 +114,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini memperbarui instans terkelola tertentu untuk menggunakan Key Vault Key Key dengan Id https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 ' ' sebagai pengirim TDE.
+Perintah ini memperbarui instans terkelola yang ditentukan untuk menggunakan Key Vault Key Key dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai pengirim TDE.
 
 ## PARAMETERS
 
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

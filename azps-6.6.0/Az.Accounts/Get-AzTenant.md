@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azt
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzTenant.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzTenant.md
-ms.openlocfilehash: dd409e7b6cd7a85e718dc133caa59ce8dd27ae05
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 39d8739deb23bb494a1bb3a93c033278d4edf903
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384196"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140289427"
 ---
 # Get-AzTenant
 
 ## SYNOPSIS
 Mendapatkan penyewa yang diotorisasi untuk pengguna saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/get-aztenant) untuk informasi terkini.
 
 ## SYNTAX
 

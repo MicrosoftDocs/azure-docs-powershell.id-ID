@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerProfile.md
-ms.openlocfilehash: 040bf8d98538b4726fee0803beb678723433cbb7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8ed9ebee67a4852a7227c44977748a03e430453f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381368"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140274935"
 ---
 # Set-AzTrafficManagerProfile
 
 ## SYNOPSIS
-Memperbarui profil Traffic Manager Anda.
+Memperbarui profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/set-aztrafficmanagerprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -42,8 +45,8 @@ PS C:\> $TrafficManagerProfile.ProfileStatus = Disabled
 PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 ```
 
-Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet Get-AzTrafficManagerProfile.
-Perintah menyimpan profil secara lokal di $TrafficManagerProfile berbeda.
+Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet Get-AzTrafficManagerProfile cmdlet.
+Perintah menyimpan profil secara lokal di $TrafficManagerProfile baru.
 
 Perintah kedua mengubah profil secara lokal.
 Perintah ini akan menonaktifkan profil.
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
-Cmdlet ini memperbarui Traffic Manager agar sesuai dengan objek lokal ini.
+Cmdlet ini memperbarui Traffic Manager cocok dengan objek lokal ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

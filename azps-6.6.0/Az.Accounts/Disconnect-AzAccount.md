@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/disconn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disconnect-AzAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Disconnect-AzAccount.md
-ms.openlocfilehash: 2c0f974cde3c000cfe1f56a3672447dbcabd8cd3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: be804058b178fdf2852a087ac39c485d44eb4e01
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384353"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140289481"
 ---
 # Disconnect-AzAccount
 
 ## SYNOPSIS
 Memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks yang terkait dengan akun tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.accounts/disconnect-azaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Disconnect-AzAccount [-AzureContext] <PSAzureContext> [-Scope <ContextModificati
 ```
 
 ## DESCRIPTION
-Cmdlet Disconnect-AzAccount memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks (informasi langganan dan penyewa) yang terkait dengan akun tersebut.
+Cmdlet Disconnect-AzAccount jaringan memutuskan koneksi akun Azure yang tersambung dan menghapus semua kredensial dan konteks (informasi langganan dan penyewa) yang terkait dengan akun tersebut.
 Setelah menjalankan cmdlet ini, Anda perlu masuk lagi menggunakan Koneksi-AzAccount.
 
 ## EXAMPLES
@@ -74,7 +77,7 @@ Mengeluarkan akun yang terkait dengan konteks yang diberikan (bernama 'Pekerjaan
 PS C:\> Disconnect-AzAccount -Username 'user1@contoso.org'
 ```
 
-Mengeluarkan pengguna user1@contoso.org ' ' - semua kredensial dan semua konteks yang terkait dengan pengguna ini akan dihapus.
+Mengeluarkan pengguna 'user1@contoso.org', semua kredensial dan semua konteks yang terkait dengan pengguna ini akan dihapus.
 
 ## PARAMETERS
 
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama pengguna
-Nama pengguna formulir user@contoso.org ' '
+Nama pengguna formulir 'user@contoso.org'
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

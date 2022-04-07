@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.privatedns/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsZone.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/New-AzPrivateDnsZone.md
-ms.openlocfilehash: dc3ad9a4dde1253c6d2a4be9cd3d301eb7c6c2d3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2cdc1291588b536b0f59d15ac461ef6211634284
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378907"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140132973"
 ---
 # New-AzPrivateDnsZone
 
 ## SYNOPSIS
 Membuat zona DNS privat baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/new-azprivatednszone) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzPrivateDnsZone -ResourceGroupName <String> -Name <String> [-Tag <Hashtable
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateDnsZone** membuat zona Sistem Nama Domain (DNS) privat baru di grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS privat unik *untuk* parameter Nama atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzPrivateDnsRecordSet untuk membuat kumpulan catatan dalam zona.
+Cmdlet **New-AzPrivateDnsZone** membuat zona Sistem Nama Domain (DNS) privat baru di grup sumber daya yang ditentukan. Anda harus menentukan nama zona DNS privat *unik untuk parameter* Nama atau cmdlet akan mengembalikan kesalahan. Setelah zona dibuat, gunakan cmdlet New-AzPrivateDnsRecordSet untuk membuat kumpulan catatan dalam zona.
 Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

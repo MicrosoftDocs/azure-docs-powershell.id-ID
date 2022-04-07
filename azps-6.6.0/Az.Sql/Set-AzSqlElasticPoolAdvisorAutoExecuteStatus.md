@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolAdvisorAutoExecuteStatus.md
-ms.openlocfilehash: 34e4b6c702501658e598eebe39bab9c8627ff986
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 432049288000b9fcf634d2237c18d6678ba09e57
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338624"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326679"
 ---
 # Set-AzSqlElasticPoolAdvisorAutoExecuteStatus
 
 ## SYNOPSIS
 Memperbarui status dijalankan otomatis dari Azure SQL Elastis Pool Advisor.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticpooladvisorautoexecutestatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Set-AzSqlElasticPoolAdvisorAutoExecuteStatus -AdvisorName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlElasticPoolAdvisorAutoExecuteStatus** mengatur properti jalankan otomatis untuk Penasihat Kumpulan Elastis Azure SQL.
+Cmdlet **Set-AzSqlElasticPoolAdvisorAutoExecuteStatus** mengatur properti jalankan otomatis untuk Penasihat Kumpulan SQL Elastis Azure.
 
 ## EXAMPLES
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

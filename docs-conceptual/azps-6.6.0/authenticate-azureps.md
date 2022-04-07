@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.date: 11/02/2021
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: e67b60013fb8577ec18bc8da59c431cf234241e1
-ms.sourcegitcommit: b7ef209e489945ce397bbbba2c5f34fa6b2ca22e
-ms.translationtype: HT
+ms.openlocfilehash: 04946694f9e7fee278e9f4191241a0c534a733c5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "132429531"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140289526"
 ---
 # <a name="sign-in-with-azure-powershell"></a>Masuk dengan Azure PowerShell
 
@@ -128,7 +128,7 @@ Contoh ini menghubungkan menggunakan identitas terkelola dari lingkungan host. M
  Connect-AzAccount -Identity
 ```
 
-Contoh ini terhubung menggunakan Identitas Layanan Terkelola myUserAssignedIdentity. Ini menambahkan identitas yang ditetapkan pengguna ke mesin virtual, lalu menghubungkan menggunakan ClientId dari identitas yang ditetapkan pengguna. Untuk informasi selengkapnya, lihat [Mengonfigurasi identitas terkelola untuk sumber daya Azure di Azure VM](/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm).
+Contoh ini terhubung menggunakan Identitas Layanan Terkelola myUserAssignedIdentity. Ini menambahkan identitas yang ditetapkan pengguna ke mesin virtual, lalu menghubungkan menggunakan ClientId dari identitas yang ditetapkan pengguna. Untuk informasi selengkapnya, lihat [Mengonfigurasi identitas terkelola untuk sumber daya Azure di Azure VM](/azure/active-directory/managed-identities-azure-resources/qs-configure-powershell-windows-vm).
 
 ```azurepowershell-interactive
 $identity = Get-AzUserAssignedIdentity -ResourceGroupName 'myResourceGroup' -Name 'myUserAssignedIdentity'

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/get-azw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSSLBinding.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzWebAppSSLBinding.md
-ms.openlocfilehash: 1ab2e9da93abb9f669154876afe1fdcd823a96bc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9db41620491dd8312b043cbad332ac7b9b2b36f9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136155701"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140274683"
 ---
 # Get-AzWebAppSSLBinding
 
 ## SYNOPSIS
 Mendapatkan pengikatan SSL sertifikat Azure Web App.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azwebappsslbinding) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ PS C:\> Get-AzWebAppSSLBinding -WebApp $WebApp
 Perintah dalam contoh ini juga mendapatkan pengikatan SSL untuk Web App ContosoWebApp; namun, dalam kasus ini, referensi objek digunakan sebagai ganti nama Web App dan nama grup sumber daya terkait.
 Referensi objek ini dibuat oleh perintah pertama dalam contoh, yang menggunakan **Get-AzWebApp** untuk membuat referensi objek ke Web App bernama ContosoWebApp.
 Referensi objek tersebut disimpan dalam variabel yang bernama $WebApp.
-Variabel ini, dan cmdlet **Get-AzWebAppSSLBinding,** lalu digunakan oleh perintah kedua untuk mendapatkan pengikatan SSL.
+Variabel ini, dan cmdlet **Get-AzWebAppSSLBinding** , lalu digunakan oleh perintah kedua untuk mendapatkan pengikatan SSL.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 
 ### -WebApp
 Menentukan Aplikasi Web.
-Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp baru.
+Untuk mendapatkan Web App, gunakan cmdlet Get-AzWebApp.
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

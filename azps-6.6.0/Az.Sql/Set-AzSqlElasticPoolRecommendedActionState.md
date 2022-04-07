@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolRecommendedActionState.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticPoolRecommendedActionState.md
-ms.openlocfilehash: f00d5ad450ebfcad8607eb2b71b3245d3e3acf3d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 704a3460efea9f5d8886c53527eb592d266cfab7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346757"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326609"
 ---
 # Set-AzSqlElasticPoolRecommendedActionState
 
 ## SYNOPSIS
-Memperbarui status tindakan Azure SQL Elastis Pool yang disarankan.
+Memperbarui status tindakan Azure SQL Elastis Pool yang direkomendasikan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticpoolrecommendedactionstate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzSqlElasticPoolRecommendedActionState -RecommendedActionName <String> -Stat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlElasticPoolRecommendedActionState** memperbarui status tindakan Kumpulan Elastis Azure SQL Elastis yang dianjurkan.
+Cmdlet **Set-AzSqlElasticPoolRecommendedActionState** memperbarui status tindakan Azure SQL Elastis Pool yang direkomendasikan.
 Cmdlet ini menerapkan tindakan yang disarankan, dikembalikan, atau dibuang berdasarkan status baru.
 
 ## EXAMPLES
@@ -66,7 +69,7 @@ TimeSeries                 : {}
 ValidSince                 : 4/21/2016 3:24:47 PM
 ```
 
-Perintah ini memperbarui status tindakan elastis pool yang direkomendasikan \[ IR_ test_schema \] _ \[ test_table_0.0361551 \] _6C7AE8CC9C87E7FD5893 ke Tertunda.
+Perintah ini memperbarui status tindakan elastis pool yang direkomendasikan IR_\[test_schema\]_\[test_table_0.0361551\]_6C7AE8CC9C87E7FD5893 ke Tertunda.
 
 ## PARAMETERS
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

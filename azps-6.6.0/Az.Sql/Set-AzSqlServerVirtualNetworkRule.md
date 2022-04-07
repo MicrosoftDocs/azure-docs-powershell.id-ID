@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: 54bd0ffd0fb2aa64c08384cb1a37b451b9b94063
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5fe688a774cb4603792a648b1d4ca6bd17fdb4ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351401"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326499"
 ---
 # Set-AzSqlServerVirtualNetworkRule
 
 ## SYNOPSIS
 Mengubah konfigurasi Aturan Jaringan Virtual Azure SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlservervirtualnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzSqlServerVirtualNetworkRule -VirtualNetworkRuleName <String> -VirtualNetwo
 ```
 
 ## DESCRIPTION
-Perintah ini mengubah konfigurasi Azure SQL Server Virtual Network Rule.
+Perintah ini mengubah konfigurasi Aturan Jaringan Virtual Azure SQL Server.
 Untuk mengontrol kumpulan aturan jaringan virtual di server, gunakan 'Add-AzSqlServerVirtualNetworkRule' dan 'Remove-AzSqlServerVirtualNetworkRule' sebagai gantinya.
 
 ## EXAMPLES
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
-ms.openlocfilehash: dfe4b10bd4c326ce02de184d67ca9997b1a85a0b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 24a3895af88916f980407a7ac23b17c9c07c1596
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136160949"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140275205"
 ---
 # Set-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
-Menyediakan administrator Azure AD untuk Analitik Synapse SQL terkuap.
+Menyediakan administrator Azure AD untuk Analitik Synapse SQL terku secara gratis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlactivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator Ruang Kerja 
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
 - Anggota yang diimpor dari Azure AD lain yang merupakan anggota asli atau gabungan 
-- Grup Azure AD yang dibuat sebagai akun Microsoft grup keamanan, seperti akun Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
+- Grup Azure AD yang dibuat sebagai akun Microsoft grup keamanan, seperti akun di Outlook.com, Hotmail.com, atau Live.com eksternal, tidak didukung sebagai administrator.
 Akun tamu lain, seperti yang ada di Gmail.com atau Yahoo.com tamu, tidak didukung sebagai administrator.
 Kami menyarankan Anda menyediakan grup Khusus Azure AD sebagai administrator.
 
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
