@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Get-AzR
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceAssessment.md
-ms.openlocfilehash: e05200c7e3b2c5d25ba6669ecf0b8e39e9b315d8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7f6add1deecb8454127b925014ceda1c03d8aac2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374676"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140277637"
 ---
 # Get-AzRegulatoryComplianceAssessment
 
 ## SYNOPSIS
 Mendapatkan penilaian kepatuhan terhadap peraturan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azregulatorycomplianceassessment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzRegulatoryComplianceAssessment -ResourceId <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Dapatkan detail penilaian yang spesifik atau list semua penilaian di bawah kontrol dan standar kepatuhan peraturan tertentu.
+Dapatkan detail penilaian yang spesifik atau  list semua penilaian di bawah kontrol dan standar kepatuhan peraturan tertentu.
 
 ## EXAMPLES
 
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

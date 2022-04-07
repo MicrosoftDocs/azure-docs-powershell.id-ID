@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/move-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Move-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Move-AzResource.md
-ms.openlocfilehash: 4a7c517055e53489fe003b5a785486935f1c23b4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e075b43362e9f0c9d149442101a9149825255a49
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156314"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140278393"
 ---
 # Move-AzResource
 
 ## SYNOPSIS
 Memindahkan sumber daya ke grup atau langganan sumber daya yang berbeda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/move-azresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ PS C:\>$Resource = Get-AzResource -ResourceType "Microsoft.ClassicCompute/storag
 PS C:\> Move-AzResource -ResourceId $Resource.ResourceId -DestinationResourceGroupName "ResourceGroup14"
 ```
 
-Perintah pertama mendapatkan sumber daya bernama ContosoStorageAccount menggunakan cmdlet Get-AzResource, lalu menyimpan sumber daya tersebut dalam $Resource sumber daya.
+Perintah pertama mendapatkan sumber daya bernama ContosoStorageAccount dengan menggunakan cmdlet Get-AzResource, lalu menyimpan sumber daya tersebut dalam $Resource sumber daya.
 Perintah kedua memindahkan sumber daya tersebut ke dalam grup sumber daya bernama ResourceGroup14.
 Perintah mengidentifikasi sumber daya yang akan dipindahkan menggunakan **properti ResourceId** $Resource.
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

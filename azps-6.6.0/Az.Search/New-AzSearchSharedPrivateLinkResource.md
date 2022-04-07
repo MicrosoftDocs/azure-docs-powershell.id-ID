@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/new-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchSharedPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchSharedPrivateLinkResource.md
-ms.openlocfilehash: e380aeb411b3b0afb7f8ee9f9231bc1a1e2b8320
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2bdf2ca84238b61fa844202150d2d4b7acc1ec8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334791"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140277817"
 ---
 # New-AzSearchSharedPrivateLinkResource
 
 ## SYNOPSIS
 Membuat sumber daya tautan pribadi bersama untuk layanan Pencarian Kognitif Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/new-azsearchsharedprivatelinkresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

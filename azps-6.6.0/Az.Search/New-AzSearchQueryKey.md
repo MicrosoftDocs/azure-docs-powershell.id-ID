@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.search/new-azsea
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchQueryKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/New-AzSearchQueryKey.md
-ms.openlocfilehash: ae8347b9f07b84f79e117eafaabe4a990e2e5656
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 90d9caa21f5b6856d6fcb4c970e46ab8e7dae3d8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386394"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140277835"
 ---
 # New-AzSearchQueryKey
 
 ## SYNOPSIS
 Buat kunci kueri baru untuk layanan Pencarian Kognitif Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/new-azsearchquerykey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

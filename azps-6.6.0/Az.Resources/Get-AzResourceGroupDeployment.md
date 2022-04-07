@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeployment.md
-ms.openlocfilehash: f39194e8297209359322edaa7558aa613b473742
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 296f578f36917a0d211e5bc5189cbf4aa81c747e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386537"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140278519"
 ---
 # Get-AzResourceGroupDeployment
 
 ## SYNOPSIS
 Mendapatkan penyebaran di grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeployment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ PS C:\>Get-AzResourceGroupDeployment -ResourceGroupName "ContosoLabsRG" -Name "D
 ```
 
 Perintah ini menerapkan penyebaran DeployWebsite01 dari grup sumber daya ContosoLabsRG.
-Anda bisa menetapkan nama untuk penggunaan saat Anda membuatnya dengan menggunakan cmdlet **New-AzResourceGroup** atau **New-AzResourceGroupDeployment.**
+Anda bisa menetapkan nama untuk penggunaan saat Anda membuatnya dengan menggunakan cmdlet **New-AzResourceGroup** atau **New-AzResourceGroupDeployment** .
 Jika Anda tidak memberi nama, cmdlet memberikan nama default berdasarkan templat yang digunakan untuk membuat penyebaran.
 
 ### Contoh 3: Mendapatkan penyebaran semua grup sumber daya
@@ -67,9 +70,9 @@ Jika Anda tidak memberi nama, cmdlet memberikan nama default berdasarkan templat
 PS C:\>Get-AzResourceGroup | Get-AzResourceGroupDeployment | Format-Table ResourceGroupName, DeploymentName, ProvisioningState
 ```
 
-Perintah ini akan mendapatkan semua grup sumber daya dalam langganan Anda menggunakan cmdlet Get-AzResourceGroup cmdlet.
+Perintah ini mendapatkan semua grup sumber daya dalam langganan Anda menggunakan cmdlet Get-AzResourceGroup cmdlet.
 Perintah itu meneruskan grup sumber daya ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini mendapatkan semua penyebaran dari semua grup sumber daya dalam langganan, dan memberikan hasil ke cmdlet Format-Table untuk menampilkan nilai properti **ResourceGroupName,** **DeploymentName,** dan **ProvisioningState.**
+Cmdlet saat ini mendapatkan semua penyebaran dari semua grup sumber daya dalam langganan, dan memberikan hasil ke cmdlet Format-Table untuk menampilkan nilai properti **ResourceGroupName**, **DeploymentName**, **dan ProvisioningState** .
 
 ## PARAMETERS
 
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

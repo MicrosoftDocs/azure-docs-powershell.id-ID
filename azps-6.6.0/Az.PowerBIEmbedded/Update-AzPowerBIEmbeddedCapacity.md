@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Update-AzPowerBIEmbeddedCapacity.md
-ms.openlocfilehash: 2f601cabbbe8bf6758e705c179701fcea709817a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 17c878c590f017249e47857110f25627b3431809
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136358310"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140133027"
 ---
 # Update-AzPowerBIEmbeddedCapacity
 
 ## SYNOPSIS
 Mengubah instans Kapasitas yang Disematkan PowerBI.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/update-azpowerbiembeddedcapacity) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Tier                   : PBIE_Azure
 Tag                    : {[key1, value1], [key2, value2]}
 ```
 
-Memodifikasi kapasitas bernama testcapacity dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 and key2:value2 dan administrator menjadi , dan testuser1@contoso.com testuser2@contoso.com prinsipal layanan: 9035a021-a96f-43ea-acbf-864227c2abbb@45119f4f-c71b-4420-b6ec-60e503450098
+Memodifikasi kapasitas bernama testcapacity dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 and key2:value2 dan administrator menjadi testuser1@contoso.com , testuser2@contoso.com dan prinsipal layanan: 9035a021-a96f-43ea-acbf-864227c2abbb@45119f4f-c71b-4420-b6ec-60e503450098
 
 ## PARAMETERS
 
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
