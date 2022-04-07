@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMDataDisk.md
-ms.openlocfilehash: 7e37d5687e3004f84d7dc4d45786ff1bd31ed59f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b55f79a83871c18b28579955320c99b755354e2e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368026"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140335427"
 ---
 # Remove-AzVMDataDisk
 
 ## SYNOPSIS
 Menghapus disk data dari mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvmdatadisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,10 +40,10 @@ PS C:\> Remove-AzVMDataDisk -VM $VirtualMachine -Name "Disk3"
 PS C:\> Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzVM.**
-Perintah menyimpan mesin virtual di $VirtualMachine variabel.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzVM** .
+Perintah menyimpan mesin virtual di $VirtualMachine baru.
 Perintah kedua menghapus disk data yang bernama Disk3 dari mesin virtual yang disimpan di $VirtualMachine.
-Perintah terakhir memperbarui status mesin virtual yang disimpan di komputer $VirtualMachine ResourceGroup11.
+Perintah terakhir memperbarui status mesin virtual yang disimpan di $VirtualMachine Sumber DayaGroup11.
 
 ## PARAMETERS
 
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual lokal untuk menghapus disk data.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

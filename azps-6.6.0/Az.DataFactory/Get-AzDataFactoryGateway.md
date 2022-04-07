@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryGateway.md
-ms.openlocfilehash: 445181fac2be479228f0e272e06c88549b01b382
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d0d7bf4db29cd9f4e8024084e7b8e3ceb448d17c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377966"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140466154"
 ---
 # Get-AzDataFactoryGateway
 
 ## SYNOPSIS
 Mendapatkan informasi tentang gateway logika di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactorygateway) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Get-AzDataFactoryGateway [-DataFactory] <PSDataFactory> [[-Name] <String>]
 Cmdlet **Get-AzDataFactoryGateway** mendapatkan informasi tentang gateway logika di Azure Data Factory.
 Jika Anda menentukan nama gateway, cmdlet ini mendapatkan informasi tentang gateway itu.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua gateway untuk pabrik data.
-Jika Anda ingin menambahkan pusat Microsoft SQL Server sebagai layanan tertaut ke pabrik data, Anda harus menginstal gateway di komputer lokal Anda.
+Jika Anda ingin menambahkan pusat data Microsoft SQL Server sebagai layanan tertaut ke pabrik data, Anda harus menginstal gateway di komputer lokal Anda.
 
 ## EXAMPLES
 
@@ -84,7 +87,7 @@ Perintah ini mendapatkan informasi tentang gateway logika yang bernama Gateway01
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini mendapatkan informasi tentang gateway logika di pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

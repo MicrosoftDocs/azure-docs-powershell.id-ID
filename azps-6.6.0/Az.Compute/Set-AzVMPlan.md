@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
-ms.openlocfilehash: d47961a7b4d00b3cb77cf9edce00c8bb741024a4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5004c70caba632be02b92626b0b87c032eafe658
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353549"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140335085"
 ---
 # Set-AzVMPlan
 
 ## SYNOPSIS
 Mengatur informasi paket Marketplace di mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmplan) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ Accept wildcard characters: False
 ### -Nama
 Menentukan nama gambar dari Marketplace.
 Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzVMImageSku.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace](/azure/virtual-machines/windows/cli-ps-findimage) dengan Azure PowerShell di Microsoft Azure ter dokumentasi.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam Microsoft Azure ter dokumentasi.
 
 ```yaml
 Type: System.String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan penerbit gambar.
-Anda dapat menemukan informasi ini menggunakan cmdlet Get-AzVMImagePublisher cmdlet.
+Anda dapat menemukan informasi ini menggunakan cmdlet Get-AzVMImagePublisher.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

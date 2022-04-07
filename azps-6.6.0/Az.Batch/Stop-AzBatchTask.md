@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/stop-azbat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Stop-AzBatchTask.md
-ms.openlocfilehash: c0da167383a65da1183addbbb42d3fd0e24d677a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 51ba071ab7bf3fca4564fb9b087832adcf7d9ffc
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366122"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140337047"
 ---
 # Stop-AzBatchTask
 
 ## SYNOPSIS
 Menghentikan tugas Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/stop-azbatchtask) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ PS C:\>Stop-AzBatchTask -JobId "Job-000001" -Id "Task23" -BatchContext $Context
 
 Perintah ini menghentikan tugas yang memiliki ID Tugas23 di bawah pekerjaan yang memiliki ID Job-000001.
 Perintah akan meminta konfirmasi Anda.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Menghentikan tugas Kumpulan menggunakan saluran
 ```
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -Tugas
 Menentukan tugas yang dihentikan cmdlet ini.
-Untuk mendapatkan objek **PSCloudTask,** gunakan cmdlet Get-AzBatchTask.
+Untuk mendapatkan objek **PSCloudTask** , gunakan Get-AzBatchTask cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudTask
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

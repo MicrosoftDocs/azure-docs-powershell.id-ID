@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnProfile.md
-ms.openlocfilehash: 746a63836d0a6273754fdbb5bf83c56699895a9b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: aad74aa15e93a9a89440d03d3ff60f043e2fb2e1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136333990"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140336651"
 ---
 # New-AzCdnProfile
 
 ## SYNOPSIS
-Membuat profil CDN Anda.
+Membuat profil CDN anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdnprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet **New-AzCdnProfile** membuat profil Azure Content Delivery Network (CDN).
 
 ### Contoh 1
 
-Membuat profil CDN Anda. (otomatisgenerated)
+Membuat profil CDN anda. (otomatisgenerated)
 
 <!-- Aladdin Generated Example -->
 
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blockchain/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Update-AzBlockchainTransactionNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Update-AzBlockchainTransactionNode.md
-ms.openlocfilehash: 6d44d7805f93123a511cbff21fe37806959126cb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e910c02e72ec903389e671abb750cf66c4d3b88b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136359549"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140336821"
 ---
 # Update-AzBlockchainTransactionNode
 
 ## SYNOPSIS
 Perbarui node transaksi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/update-azblockchaintransactionnode) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -243,7 +246,7 @@ FIREWALLRULE <IFirewallRule[]>: Mendapatkan atau mengatur aturan firewall.
   - `[RuleName <String>]`: Mendapatkan atau mengatur nama aturan firewall.
   - `[StartIPAddress <String>]`: Mendapatkan atau mengatur alamat IP awal dari rentang aturan firewall.
 
-INPUTOBJECT <IBlockchainIdentity> : Parameter Identitas
+INPUTOBJECT <IBlockchainIdentity>: Parameter Identitas
   - `[BlockchainMemberName <String>]`: Nama anggota Server 365.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi.

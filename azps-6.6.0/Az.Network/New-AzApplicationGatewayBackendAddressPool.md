@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendAddressPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayBackendAddressPool.md
-ms.openlocfilehash: 91f9d581c42031480952d8b4de41890a32e68f0f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0a48996bf73983a3dd8c233ad60ff8cee56c46ce
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342629"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140465255"
 ---
 # New-AzApplicationGatewayBackendAddressPool
 
 ## SYNOPSIS
 Membuat sebuah gabungan alamat ujung-belakang untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azapplicationgatewaybackendaddresspool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Alamat ujung-belakang dapat ditentukan sebagai alamat IP, nama domain yang sepen
 PS C:\>$Pool = New-AzApplicationGatewayBackendAddressPool -Name "Pool01" -BackendFqdns "contoso1.com", "contoso2.com"
 ```
 
-Perintah ini membuat sebuah pool alamat ujung-belakang yang bernama Pool01 dengan menggunakan FQDN server ujung-belakang, dan menyimpannya dalam variabel $Pool lokal.
+Perintah ini membuat sebuah pool alamat ujung-belakang yang bernama Pool01 dengan menggunakan FQDN server ujung-belakang, dan menyimpannya dalam $Pool lain.
 
 ### Contoh 2: Membuat pool alamat back-end dengan menggunakan alamat IP server back-end
 ```
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
