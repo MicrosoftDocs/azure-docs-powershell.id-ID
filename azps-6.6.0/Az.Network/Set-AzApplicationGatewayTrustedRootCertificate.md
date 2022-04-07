@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedRootCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayTrustedRootCertificate.md
-ms.openlocfilehash: 0a5d6ecbdbf2c392af350277c91d1c0ccc683b08
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b46a2dc5c1ddc8d94d0bcbba752b5a4954d20c89
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355394"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140330315"
 ---
 # Set-AzApplicationGatewayTrustedRootCertificate
 
 ## SYNOPSIS
 Memperbarui Sertifikat Akar Tepercaya dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaytrustedrootcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
 Contoh skenario di atas memperlihatkan cara memperbarui sertifikat akar tepercaya yang sudah ada saat sertifikat akar diluncurkan.
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya di $gw lain.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
 Perintah kedua mengubah sertifikat akar tepercaya yang sudah ada dengan sertifikat akar baru.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

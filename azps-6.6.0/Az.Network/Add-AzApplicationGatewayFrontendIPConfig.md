@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/add-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayFrontendIPConfig.md
-ms.openlocfilehash: 39744fe5f15cbfeddf1445cbaa2bb79f8ffc6fae
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a7c1872e127e2f930b257010f4956f6784f3ad61
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349541"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140134890"
 ---
 # Add-AzApplicationGatewayFrontendIPConfig
 
 ## SYNOPSIS
 Menambahkan konfigurasi IP front-end ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewayfrontendipconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $AppGw -Name "FrontEndIp01" -PublicIPAddress $PublicIp
 ```
 
-Perintah pertama membuat objek alamat IP publik dan menyimpannya dalam $PublicIp variabel.
+Perintah pertama membuat objek alamat IP publik dan menyimpannya di $PublicIp variabel.
 Perintah kedua mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw lokal.
 Perintah ketiga menambahkan konfigurasi IP ujung-depan bernama FrontEndIp01, untuk gateway di $AppGw, menggunakan alamat yang disimpan di $PublicIp.
 
@@ -64,8 +67,8 @@ PS C:\> $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $A
 ```
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $VNet sumber daya.
-Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 $VNet dari perintah pertama dan menyimpannya dalam $Subnet baru.
-Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw tersebut.
+Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam $Subnet baru.
+Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw lokal.
 Perintah keempat menambahkan konfigurasi IP ujung-depan bernama FrontendIP02 menggunakan $Subnet dari perintah kedua dan alamat IP privat 10.0.1.1.
 
 ### Contoh 3: Tambahkan IP privat dinamis sebagai alamat IP front-end
@@ -77,8 +80,8 @@ PS C:\> $AppGw = Add-AzApplicationGatewayFrontendIPConfig -ApplicationGateway $A
 ```
 
 Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $VNet sumber daya.
-Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 $VNet dari perintah pertama dan menyimpannya dalam $Subnet baru.
-Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw tersebut.
+Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dari perintah pertama dan menyimpannya dalam $Subnet baru.
+Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01, dan menyimpannya di $AppGw lokal.
 Perintah keempat menambahkan konfigurasi IP ujung-depan yang bernama FrontendIP02 menggunakan $Subnet dari perintah kedua.
 
 ## PARAMETERS
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
