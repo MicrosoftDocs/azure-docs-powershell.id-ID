@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVaultCertificate.md
-ms.openlocfilehash: d19bf89ef765c5606341ad83ccf06f8df282da68
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: bc5bb0f229444123426f93831a59db3f8a89821e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352493"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140252935"
 ---
 # Restore-AzKeyVaultCertificate
 
 ## SYNOPSIS
 Memulihkan sertifikat di kunci vault dari file cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/restore-azkeyvaultcertificate) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Jika kunci vault sudah berisi sertifikat dengan nama yang sama, cmdlet ini gagal
 Jika cadangan berisi beberapa versi sertifikat, semua versi dipulihkan.
 Kunci vault tempat Anda memulihkan sertifikat mungkin berbeda dari key vault yang Anda cadangkan sertifikatnya.
 Namun, kunci vault harus menggunakan langganan yang sama dan berada di kawasan Azure di geografi yang sama (misalnya, Amerika Utara).
-Lihat Microsoft Azure Kepercayaan Baru ( https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
+Lihat Microsoft Azure Kepercayaan Lokal (https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
 
 ## EXAMPLES
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

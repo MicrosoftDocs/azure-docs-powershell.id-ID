@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageShareQuota.md
-ms.openlocfilehash: 29814b1be617731bc7ba5567547aa037ff43a638
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5bd5fe7c47d38e4719063c882a4fa16a94af11b1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357917"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140325977"
 ---
 # Set-AzStorageShareQuota
 
 ## SYNOPSIS
 Mengatur kapasitas penyimpanan untuk sebuah berbagi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragesharequota) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 
 ### -Quota
 Menentukan nilai kuota dalam gigabyte (GB).
-Lihat batasan kuota dalam https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-files-limits . 
+Lihat batasan kuota dalam https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-files-limits. 
 
 ```yaml
 Type: System.Int32
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -Bagikan
 Menentukan objek **CloudFileShare** untuk mewakili berbagi di mana cmdlet ini menetapkan kuota.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzStorageShare.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileShare
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

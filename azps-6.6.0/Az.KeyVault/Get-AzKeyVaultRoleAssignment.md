@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultRoleAssignment.md
-ms.openlocfilehash: 6e7a517a99faaae0dbd8b424d885c02e934e2860
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 333a6a88270217c4d086a4345b28034ef7c71c68
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385484"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140253151"
 ---
 # Get-AzKeyVaultRoleAssignment
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan penetapan peran HSM yang dikelola. Gunakan parameter terkait untuk mencantumkan penetapan ke pengguna tertentu atau definisi peran.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultroleassignment) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzKeyVaultRoleAssignment [-HsmName] <String> [-Scope <String>] -RoleAssignme
 ```
 
 ## DESCRIPTION
-Gunakan `Get-AzKeyVaultRoleAssignment` perintah untuk mencantumkan semua penetapan peran yang efektif pada lingkup.
+Gunakan perintah `Get-AzKeyVaultRoleAssignment` untuk mencantumkan semua penetapan peran yang efektif pada lingkup.
 Tanpa parameter apa pun, perintah ini mengembalikan semua penetapan peran yang dibuat di bawah HSM yang dikelola.
 Daftar ini bisa difilter menggunakan parameter pemfilteran untuk pokok, peran dan lingkup.
 Subjek tugas harus ditentukan.
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

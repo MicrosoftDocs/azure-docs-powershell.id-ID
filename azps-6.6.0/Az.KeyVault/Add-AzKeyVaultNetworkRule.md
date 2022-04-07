@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/add-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Add-AzKeyVaultNetworkRule.md
-ms.openlocfilehash: 2b5230a25e5e03edf6669f628560538001666b0c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 756872db62f037fcbf9ed6ea04fce569a0bbf5ac
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136370014"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140253223"
 ---
 # Add-AzKeyVaultNetworkRule
 
 ## SYNOPSIS
 Menambahkan aturan yang dimaksudkan untuk membatasi akses ke kunci vault berdasarkan alamat internet klien.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/add-azkeyvaultnetworkrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Add-AzKeyVaultNetworkRule [-ResourceId] <String> [-IpAddressRange <String[]>]
 ## DESCRIPTION
 Cmdlet **Add-AzKeyVaultNetworkRule** memberi atau membatasi akses ke vault kunci ke kumpulan penelepon yang ditetapkan oleh alamat IP mereka atau jaringan virtual tempat mereka berada. Aturan ini berpotensi membatasi akses bagi pengguna lain, aplikasi, atau grup keamanan yang telah diberi izin melalui kebijakan akses.
 
-Harap diperhatikan bahwa setiap rentang IP di `10.0.0.0-10.255.255.255` dalam (alamat IP privat) tidak bisa digunakan untuk menambahkan aturan jaringan.
+Harap diperhatikan bahwa setiap rentang IP di dalam `10.0.0.0-10.255.255.255` (alamat IP privat) tidak bisa digunakan untuk menambahkan aturan jaringan.
 
 ## EXAMPLES
 
@@ -93,7 +96,7 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini menambahkan aturan jaringan ke vault yang ditentukan, yang memungkinkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
+Perintah ini akan menambahkan aturan jaringan ke vault tertentu, yang memungkinkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
 
 ## PARAMETERS
 
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

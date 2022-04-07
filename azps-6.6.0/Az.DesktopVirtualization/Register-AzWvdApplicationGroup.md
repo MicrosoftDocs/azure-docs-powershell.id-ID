@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Register-AzWvdApplicationGroup.md
-ms.openlocfilehash: 62ce47e2249a9867f1e4c498c9fc7d9531739e42
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 91fb0250c64128b86ac97d3e1516968ffd13cb7a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353069"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286565"
 ---
 # Register-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Daftarkan Windows aplikasi desktop virtual Anda.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/register-azwvdapplicationgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Daftarkan Windows aplikasi desktop virtual Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Mendaftarkan Windows Grup Aplikasi Desktop Virtual
+### Contoh 1: Daftarkan Windows Grup Aplikasi Desktop Virtual
 ```powershell
 PS C:\> Register-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName `
                                     -WorkspaceName WorkspaceName `
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

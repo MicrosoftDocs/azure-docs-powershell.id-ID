@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzRmStorageContainer.md
-ms.openlocfilehash: 23942c6af22fd6e9dd5d5afe0d76ba067d42ebe9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8510c05ee68dacdf6881f4f5d5f3078a3b83de27
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338148"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140325941"
 ---
 # Update-AzRmStorageContainer
 
 ## SYNOPSIS
 Mengubah wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/update-azrmstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,20 +47,20 @@ Cmdlet **Update-AzRmStorageContainer** mengubah wadah Storage blob
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah metadata Storage wadah blob dan akses publik dengan nama Storage dan nama wadah akun
+### Contoh 1: Mengubah metadata Storage wadah blob dan akses publik dengan nama akun Storage dan nama wadah
 ```
 PS C:\>Update-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -PublicAccess Container -Metadata @{tag0="value0";tag1="value1"}
 ```
 
-Perintah ini mengubah metadata Storage blob dan akses publik wadah Storage nama akun dan wadah.
+Perintah ini mengubah metadata Storage blob dan akses publik wadah Storage wadah.
 
-### Contoh 2: Menonaktifkan akses publik pada wadah Storage blob dengan nama Storage dan wadah akun
+### Contoh 2: Menonaktifkan akses publik pada wadah Storage blob dengan Storage dan nama wadah akun
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Update-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess None
 ```
 
-Perintah ini akan menonaktifkan akses publik di wadah Storage blob dengan Storage objek akun dan nama wadah.
+Perintah ini akan menonaktifkan akses publik pada wadah Storage blob dengan nama Storage dan wadah akun.
 
 ### Contoh 3: Mengatur akses publik sebagai Blob untuk Storage wadah blob dalam Storage dengan pipeline
 ```
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Storage objek wadah
+Storage wadah objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -249,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

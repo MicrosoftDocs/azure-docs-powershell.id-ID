@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/restore
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
-ms.openlocfilehash: fccb9188d1331f9e4933948c1251cffb2f219ee7
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7889fd4da5d547fe87407409b7f367dbf41f1c31
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352502"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140252917"
 ---
 # Restore-AzKeyVault
 
 ## SYNOPSIS
 Sepenuhnya memulihkan HSM yang dikelola dari cadangan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/restore-azkeyvault) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ Contoh ini memulihkan cadangan yang disimpan dalam folder bernama "mhsm-myHsm-20
 ## PARAMETERS
 
 ### -BackupFolder
-Nama folder cadangan, misalnya 'mhsm-*-2020101309020403'. Juga dapat ditumpuk seperti 'backups/mhsm-*-2020101309020403'.
+Nama folder cadangan, misalnya 'mhsm-*-2020101309020403'. Juga bisa ditumpuk seperti 'backups/mhsm-*-2020101309020403'.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

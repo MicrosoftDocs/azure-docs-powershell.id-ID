@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.date: 03/10/2020
 ms.custom: devx-track-azurepowershell
 ms.service: azure-powershell
-ms.openlocfilehash: bcc219695687605e8a6b0c49762e374dc09d3f09
-ms.sourcegitcommit: 2b90f2e68e4992e43f16a51f69e5581db189440b
-ms.translationtype: HT
+ms.openlocfilehash: cc89c0bc7ab9ed9c09a728c522943c64c6a56273
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "137778622"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140314882"
 ---
 # <a name="azure-powershell-release-notes"></a>Catatan rilis Azure PowerShell
 ## <a name="0100-preview---april-2020"></a>0.10.0-preview - April 2020
 ### <a name="general"></a>Umum
 * Modul Az sekarang tersedia dalam pratinjau di Azure Stack Hub. Hal ini memungkinkan kompatibilitas lintas platform dengan Linux dan macOs. Azure Stack Hub sekarang mendukung inti PowerShell dengan modul Az, informasi lebih lanjut [di sini](/azure-stack/operator/powershell-install-az-module)
-* Modul Az mendukung profil 2019-03-01-hybrid:
+* Profil dukungan modul Az 01-03-2019-hibrid:
   - Az.Billing
   - Az.Compute
   - Az.DataBoxEdge
@@ -29,8 +29,8 @@ ms.locfileid: "137778622"
   - Az.Resources
   - Az.Storage
   - Az.Websites
-* Tiga modul PowerShell baru untuk az yang bekerja dengan Azure Stack Hub telah diperkenalkan, yaitu Az.Databox, Az.IotHub, dan Az.EventHub
-* Perintah tetap relatif sama dengan perubahan kecil, seperti mengubah AzureRM ke Az
+* Tiga modul PowerShell baru untuk az telah diperkenalkan yang bekerja dengan Azure Stack Hub, yaitu Az.Databox, Az.IotHub, dan Az.EventHub
+* Perintah tetap relatif sama, dengan perubahan kecil seperti mengubah AzureRM ke Az
 * Link yang diperbarui ke dokumentasi PowerShell untuk Azure Stack Hub dapat ditemukan [di sini](/azure-stack/operator/powershell-install-az-module)
 
 #### <a name="azaccounts"></a>Az.Accounts
@@ -44,7 +44,7 @@ ms.locfileid: "137778622"
 #### <a name="azcompute"></a>Az.Compute
 * Menambahkan parameter berikut ke cmdlet 'New-AzDiskConfig':
     - DiskIOPSReadOnly, DiskMBpsReadOnly, MaxSharesCount, GalleryImageReference
-* Mengizinkan Properti Enkripsi ke parameter Target cmdlet 'New-AzGalleryImageVersion'.
+* Memungkinkan properti Enkripsi ke Parameter target cmdlet 'New-AzGalleryImageVersion'.
 * Memperbaiki masalah tempDisk untuk cmdlet 'Set-AzVmss' -Reimage dan 'Invoke-AzVMReimage'. [#11354]
 * Menambahkan dukungan ke cmdlet di bawah ini untuk Ekstensi SAP baru
     - 'Set-AzVMAEMExtension'
@@ -56,7 +56,7 @@ ms.locfileid: "137778622"
 * 'New-AzVmssConfig': memperbaiki serialisasi properti AutomaticRepairs saat SinglePlacementGroup dinonaktifkan. [#11257]
 
 #### <a name="azdatafactory"></a>Az.DataFactory
-* Memperbarui versi ADF .Net SDK ke 4.8.0
+* Memperbarui versi SDK .Net ADF ke 4.8.0
 * Menambahkan parameter opsional ke perintah 'Invoke-AzDataFactoryV2Pipeline' untuk mendukung eksekusi ulang
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
@@ -67,12 +67,12 @@ ms.locfileid: "137778622"
 * Mendukung penentuan versi TLS yang didukung minimal saat membuat kluster.
 
 #### <a name="aziothub"></a>Az.IotHub
-* Menambahkan dukungan untuk mengelola pengaturan terdistribusi per perangkat. Cmdlet baru adalah:
+* Menambahkan dukungan untuk mengelola pengaturan terdistribusi per perangkat. Cmdlet yang baru adalah:
     - 'Get-AzIotHubDistributedTracing'
     - 'Set-AzIotHubDistributedTracing'
 
 #### <a name="azkeyvault"></a>Az.KeyVault
-* Menambahkan atribut perubahan berisiko ke 'New-AzKeyVault'
+* Menambahkan atribut perubahan yang berisiko ke 'New-AzKeyVault'
 
 #### <a name="azmonitor"></a>Az.Monitor
 * Memperbarui dokumentasi untuk 'New-AzScheduledQueryRuleLogMetricTrigger'
@@ -91,7 +91,7 @@ ms.locfileid: "137778622"
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Azure Site Recovery menambahkan dukungan untuk melakukan perlindungan ulang dan memperbarui properti mesin virtual untuk Virtual Machines terenkripsi disk Azure.
 * Menambahkan pemantauan DR properti VmwareToAzure Azure Site Recovery
-* Azure Backup menambahkan dukungan untuk kebijakan percobaan kembali pada item yang gagal.
+* Azure Backup menambahkan dukungan untuk pembaruan kebijakan percobaan kembali pada item yang gagal.
 * Azure Backup Menambahkan dukungan untuk pengaturan pengecualian disk selama pencadangan dan pemulihan.
 * Azure Backup Menambahkan Dukungan untuk Memulihkan Beberapa file/folder di AzureFileShare
 * Azure Backup Menambahkan dukungan untuk dukungan Resourcegroup yang ditentukan Pengguna saat memperbarui Kebijakan IaasVM
@@ -100,7 +100,7 @@ ms.locfileid: "137778622"
 * Memperbaiki 'Get-AzResource -ResourceGroupName -Name -ExpandProperties -ResourceType' agar menggunakan apiVersion sumber daya yang sebenarnya dan bukan apiVersion default [#11267]
 * Menambahkan pengelogan correlationId untuk skenario kesalahan
 * Perubahan dokumentasi kecil pada 'Get-AzResourceLock'. Menambahkan contoh.
-* Memberi tanda escape pada kutipan tunggal dalam nilai parameter 'Get-AzADUser' [#11317]
+* Kutipan tunggal yang lolos dalam nilai parameter 'Get-AzADUser' [#11317]
 * Menambahkan cmdlet baru untuk Skrip Penyebaran ('Get-AzDeploymentScript', 'Get-AzDeploymentScriptLog', 'Save-AzDeploymentScriptLog', 'Remove-AzDeploymentScript')
 
 #### <a name="azsql"></a>Az.Sql
@@ -112,7 +112,7 @@ ms.locfileid: "137778622"
 * Ketersediaan umum modul 'Az.Support'
 
 #### <a name="azwebsites"></a>Az.Websites
-* Menambahkan dukungan untuk bekerja dengan Aturan Perutean Lalu Lintas aplikasi web melalui cmdlet baru di bawah ini
+* Menambahkan dukungan untuk bekerja dengan Aturan Perutean Lalu Lintas webapp melalui cmdlet baru di bawah ini
     - 'Get-AzWebAppTrafficRouting'
     - 'Update-AzWebAppTrafficRouting'
     - 'Add-AzWebAppTrafficRouting'
@@ -134,19 +134,19 @@ ms.locfileid: "137778622"
 * Menambahkan referensi ke System.Buffers secara eksplisit di csproj dan psd1.
 
 #### <a name="aziothub"></a>Az.IotHub
-* Menambahkan dukungan untuk mengelola perangkat di Iot Hub. Cmdlet baru adalah:
+* Menambahkan dukungan untuk mengelola perangkat di Iot Hub. Cmdlet yang baru adalah:
     - 'Add-AzIotHubDevice'
     - 'Get-AzIotHubDevice'
     - 'Remove-AzIotHubDevice'
     - 'Set-AzIotHubDevice'
-* Menambahkan dukungan untuk mengelola modul pada perangkat Iot target di Iot Hub. Cmdlet baru adalah:
+* Menambahkan dukungan untuk mengelola modul pada perangkat Iot target di Iot Hub. Cmdlet yang baru adalah:
     - 'Add-AzIotHubModule'
     - 'Get-AzIotHubModule'
     - 'Remove-AzIotHubModule'
     - 'Set-AzIotHubModule'
 * Menambahkan cmdlet untuk mendapatkan string koneksi perangkat IoT target di Iot Hub.
 * Menambahkan cmdlet untuk mendapatkan string koneksi modul pada perangkat IoT target di Iot Hub.
-* Menambahkan dukungan untuk mendapatkan/mengatur perangkat induk perangkat IoT. Cmdlet baru adalah:
+* Menambahkan dukungan untuk mendapatkan/mengatur perangkat induk perangkat IoT. Cmdlet yang baru adalah:
     - 'Get-AzIotHubDeviceParent'
     - 'Set-AzIotHubDeviceParent'
 * Menambahkan dukungan untuk mengelola hubungan perangkat induk-turunan.
@@ -162,13 +162,13 @@ ms.locfileid: "137778622"
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki bug referensi null di 'Get-AzRoleAssignment'
-* Menandai sakelar '-Force' dan '-PassThru' sebagai opsional di 'Remove-AzADGroup' [#10849]
+* Menandai pengalihan '-Force' dan '-PassThru' sebagai opsional di 'Remove-AzADGroup' [#10849]
 * Memperbaiki masalah 'MailNickname' tidak muncul di 'Remove-AzADGroup' [#11167]
 * Memperbaiki masalah operasi pipa 'Remove-AzADGroup' tidak berfungsi [#11171]
 * Memperbaiki bug referensi null di GetAzureRoleAssignmentCommand
-* Menambahkan atribut perubahan berisiko untuk perubahan yang akan datang ke cmdlet kebijakan
+* Menambahkan atribut perubahan yang berisiko untuk perubahan yang akan datang ke cmdlet kebijakan
 * Memperbarui 'Get-AzResourceGroup' untuk melakukan pemfilteran tag grup sumber daya di sisi server
-* Memperpanjang cmdlet Tag untuk menerima -ResourceId
+* Memperpanjang tag cmdlet untuk menerima -ResourceId
     - Get-AzTag -ResourceId
     - New-AzTag -ResourceId
     - Remove-AzTag -ResourceId
@@ -190,7 +190,7 @@ ms.locfileid: "137778622"
 #### <a name="azstorage"></a>Az.Storage
 * Mendukung AllowProtectedAppendWrite di ImmutabilityPolicy
     - 'Set-AzRmStorageContainerImmutabilityPolicy'
-* Menambahkan pesan peringatan perubahan berisiko untuk perubahan jenis AzureStorageTable di rilis mendatang
+* Menambahkan pesan peringatan perubahan yang berisiko untuk perubahan jenis AzureStorageTable di rilis mendatang
     - 'New-AzStorageTable'
     - 'Get-AzStorageTable'
 
@@ -202,7 +202,7 @@ ms.locfileid: "137778622"
 * Memperbaiki masalah saat mengatur nama host kustom untuk WebAppSlots
 
 ## <a name="350---february-2020"></a>3.5.0 - Februari 2020
-### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis utama sebelumnya
+### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis besar terakhir
 * Mempebarui telemetri sisi klien.
 * Az.IotHub menambahkan cmdlet untuk mendukung pengelolaan perangkat.
 * Az.SqlVirtualMachine menambahkan cmdlet untuk Pendengar Grup Ketersediaan.
@@ -218,13 +218,13 @@ ms.locfileid: "137778622"
 * Memperbarui pesan kesalahan saat isi respons server kosong
 
 #### <a name="azcompute"></a>Az.Compute
-* Mengizinkan nilai kosong untuk ProximityPlacementGroupId selama pembaruan
+* Memungkinkan nilai kosong untuk ProximityPlacementGroupId selama pembaruan
 
 #### <a name="azfrontdoor"></a>Az.FrontDoor
 * Menambahkan cmdlet untuk mendapatkan definisi aturan terkelola yang dapat digunakan di WAF
 
 #### <a name="aziothub"></a>Az.IotHub
-* Menambahkan dukungan untuk mengelola perangkat di Iot Hub. Cmdlet baru adalah:
+* Menambahkan dukungan untuk mengelola perangkat di Iot Hub. Cmdlet yang baru adalah:
     - 'Add-AzIotHubDevice'
     - 'Get-AzIotHubDevice'
     - 'Remove-AzIotHubDevice'
@@ -239,7 +239,7 @@ ms.locfileid: "137778622"
     - Pengguna dapat menyediakan ActionGroupId(string) atau ActionGorup(ActivityLogAlertActionGroup).
 
 #### <a name="aznetwork"></a>Az.Network
-* Menambahkan satu catatan parameter tambahan pada parameter '-EnableProxyProtocol' untuk cmdlet 'New-AzPrivateLinkService'.
+* Menambahkan satu catatan parameter tambahan untuk parameter '-EnableProxyProtocol' untuk cmdlet 'New-AzPrivateLinkService'.
 * Memperbaiki contoh FilterData di Start-AzVirtualNetworkGatewayConnectionPacketCapture.md dan Start-AzVirtualnetworkGatewayPacketCapture.md.
 * Menambahkan contoh Pengambilan Paket untuk mengambil semua paket dalam dan luar di Start-AzVirtualNetworkGatewayConnectionPacketCapture.md dan Start-AzVirtualnetworkGatewayPacketCapture.md.
 * Mendukung Kebijakan Azure Firewall pada Firewall VNet
@@ -249,10 +249,10 @@ ms.locfileid: "137778622"
 * Menambahkan Dukungan untuk Restore-as-files pada SQL Database.
 
 #### <a name="azresources"></a>Az.Resources
-* Memfaktorkan ulang cmdlet penyebaran templat
+* Merefaktorisasi cmdlet penyebaran templat
     - Menambahkan cmdlet baru untuk mengelola penyebaran di grup manajemen: *-AzManagementGroupDeployment
     - Menambahkan cmdlet baru untuk mengelola penyebaran di cakupan penyewa: *-AzTenantDeployment
-    - Memfaktorkan ulang cmdlet *-AzDeployment untuk bekerja secara khusus di cakupan langganan
+    - Merefaktorisasi cmdlet *-AzDeployment untuk bekerja secara khusus di cakupan langganan
     - Membuat alias *-AzSubscriptionDeployment untuk *-cmdlet AzDeployment
 * Memperbaiki 'Update-AzADApplication' saat parameter 'AvailableToOtherTenants' tidak diatur
 * Menghapus ApplicationObjectWithoutCredentialParameterSet untuk menghindari AmbiguousParameterSetException.
@@ -261,7 +261,7 @@ ms.locfileid: "137778622"
 #### <a name="azsql"></a>Az.Sql
 * Menambahkan dukungan untuk pemulihan titik waktu tertentu antar langganan di Instans Terkelola.
 * Menambahkan dukungan untuk mengubah generasi perangkat keras Instans Terkelola Sql yang ada
-* Memperbaiki contoh bantuan 'Update-AzSqlServerVulnerabilityAssessmentSetting': output parameter/properti - EmailAdmins
+* Memperbaiki contoh bantuan 'Update-AzSqlServerVulnerabilityAssessmentSetting': parameter/output properti - EmailAdmins
 
 #### <a name="azsqlvirtualmachine"></a>Az.SqlVirtualMachine
 * Menambahkan cmdlet untuk Pendengar Grup Ketersediaan
@@ -270,13 +270,13 @@ ms.locfileid: "137778622"
 * Memperbarui tataan karakter yang didukung di 'Invoke-AzStorageSyncCompatibilityCheck'.
 
 ## <a name="340---february-2020"></a>3.4.0 - Februari 2020
-### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis utama sebelumnya
+### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis besar terakhir
 * Az.CosmosDB versi awal 0.1.0 dirilis
 * Dukungan Az.Network ConnectionMonitor V2 ditambahkan
 
 #### <a name="azaccounts"></a>Az.Accounts
 * Menonaktifkan penyimpanan otomatis konteks saat AzureRmContext.json tidak tersedia
-* Memperbarui referensi ke Azure Powershell Common ke 1.3.5-preview
+* Memperbarui referensi ke Azure Powershell Common ke 1.3.5-pratinjau
 
 #### <a name="azapimanagement"></a>Az.ApiManagement
 * **Get-AzApiManagementApiSchema** Memperbaiki skema Open-Api yang terkait dengan API   https://github.com/Azure/azure-powershell/issues/10626
@@ -302,18 +302,18 @@ ms.locfileid: "137778622"
 * Memperbaiki kesalahan dokumen New-AzHDInsightCluster.
 
 #### <a name="azkeyvault"></a>Az.KeyVault
-* Menambahkan alias Nama ke atribut VaultName untuk membuat Remove-AzureKeyVault konsisten dengan New-AzureKeyVault.
+* Menambahkan alias Name ke atribut VaultName untuk membuat Remove-AzureKeyVault konsisten dengan New-AzureKeyVault.
 
 #### <a name="aznetwork"></a>Az.Network
-* Contoh baru ditambahkan ke Set-AzNetworkWatcherConfigFlowLog.md untuk menunjukkan skenario nonaktif Traffic Analitik Lalu Lintas.
+* Contoh baru ditambahkan ke Set-AzNetworkWatcherConfigFlowLog.md untuk menunjukkan skenario nonaktif Analitik Lalu Lintas.
 * Menambahkan dukungan untuk menetapkan konfigurasi IP manajemen ke Azure Firewall - subnet khusus dan IP Publik yang akan digunakan firewall untuk lalu lintas manajemennya
     - Memperbarui cmdlet New-AzFirewall:
         - Menambahkan parameter -ManagementPublicIpAddress (tidak wajib) yang menerima objek Alamat IP Publik
         - Menambahkan metode SetManagementIpConfiguration pada objek firewall - memerlukan subnet dan alamat IP Publik sebagai input - nama subnet harus 'AzureFirewallManagementSubnet'
 * Mengoreksi contoh Get-AzNetworkSecurityGroup untuk menampilkan contoh untuk NSG, bukan antarmuka jaringan.
-* Memperbaiki kesalahan ketik dalam perintah New-AzVpnSite yang mencegah pelengkap id sumber daya menyelesaikan parameter.
-* Menambahkan dukungan untuk Url Konfigurasi dalam Kumpulan Tindakan Aturan Penulisan Ulang di Application Gateway
-    - Cmdlet baru ditambahkan:
+* Memperbaiki kesalahan ketik dalam perintah New-AzVpnSite yang mencegah completer id sumber daya menyelesaikan parameter.
+* Menambahkan dukungan untuk Url Konfigurasi dalam Set Tindakan Aturan Penulisan Ulang di Application Gateway
+    - Cmdlet baru yang ditambahkan:
         - New-AzApplicationGatewayRewriteRuleUrlConfiguration
     - Memperbarui cmdlet dengan parameter opsional - UrlConfiguration
         - New-AzApplicationGatewayRewriteRuleActionSet
@@ -323,11 +323,11 @@ ms.locfileid: "137778622"
 * Mendukung evaluasi kepatuhan sebelum menentukan sumber daya apa yang akan diremediasi
     - Menambahkan parameter '-ResourceDiscoverMode' ke Start-AzPolicyRemediation
 * Menambahkan cmdlet Get-AzPolicyMetadata untuk mendapatkan sumber daya metadata kebijakan
-* Memperbarui Get-AzPolicyState dan Get-AzPolicyStateSummary untuk API versi 2019-10-01
+* Memperbarui Get-AzPolicyState dan Get-AzPolicyStateSummary untuk API versi 01-10-2019
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Dukungan Azure Site Recovery untuk menghapus disk yang direplikasi.
-* Azure Backup menambahkan dukungan untuk menambahkan tag saat membuat Vault Layanan Pemulihan.
+* Azure Backup menambahkan dukungan untuk menambahkan tag saat membuat Brankas Layanan Pemulihan.
 
 #### <a name="azresources"></a>Az.Resources
 * Menjadikan -Scope sebagai opsional di cmdlet *-AzPolicyAssignment dengan langganan default ke konteks
@@ -337,14 +337,14 @@ ms.locfileid: "137778622"
 Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan PartnerDatabaseName, bukan keberadaan DatabaseName.
 
 #### <a name="azstorage"></a>Az.Storage
-* Mendukung pengaturan Keytype Enkripsi Tabel/Antrean di Buat Akun Penyimpanan
+* Mendukung pengaturan Keytype Enkripsi Tabel/Antrean di Buat Akun penyimpanan
     - New-AzStorageAccount
 * Menampilkan RequestId saat StorageException tidak memiliki ExtendedErrorInformation
 * Memperbaiki Contoh 6 cmdlet Start-AzStorageBlobCopy
 
 #### <a name="azwebsites"></a>Az.Websites
-* Set-AzWebapp dan Set-AzWebappSlot mendukung properti AlwaysOn, MinTls, dan FtpsState
-* Memperbaiki masalah saat mengatur HttpsOnly bersama dengan mengubah AppservicePlan pada saat yang sama menggunakan Perintah Set-AzWebApp tunggal, sebelumnya mengatur ulang HttpsOnly ke nilai default
+* Set-AzWebapp dan Set-AzWebappSlot mendukung properti Grup Ketersediaan AlwaysOn, MinTls, dan FtpsState
+* Memperbaiki masalah saat mengatur HttpsOnly bersama dengan mengubah AppservicePlan pada saat yang sama menggunakan Perintah Set-AzWebApp tunggal, sedang mengatur ulang HttpsOnly ke nilai default
 
 ## <a name="330---january-2020"></a>3.3.0 - Januari 2020
 #### <a name="azaccounts"></a>Az.Accounts
@@ -404,13 +404,13 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
   - Update-AzMlOpClusterSystemService
 
 #### <a name="aznetwork"></a>Az.Network
-* Meningkatkan dependensi Microsoft.Azure.Management.Sql dari 1.36-preview ke 1.37-preview
+* Meningkatkan dependensi Microsoft.Azure.Management.Sql dari 1.36-pratinjau ke 1.37-pratinjau
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Azure Site Recovery mengubah dukungan untuk mesin virtual disk terkelola yang dienkripsi saat tidak aktif dengan kunci yang dikelola pelanggan untuk penyedia Azure ke Azure.
 * Azure Site Recovery mendukung untuk memasukkan enkripsi disk Set Id sebagai input opsional untuk mengaktifkan perlindungan Vmware ke Azure.
 * Azure Site Recovery mendukung untuk memasukkan enkripsi disk Set Id sebagai input opsional di tingkat disk untuk mengaktifkan perlindungan Vmware ke Azure.
-* Azure Site Recovery mendukung untuk memperbarui replikasi item yang dilindungi dengan set enkripsi disk Map for HyperV ke Azure.
+* Azure Site Recovery mendukung untuk memperbarui item yang dilindungi replikasi dengan Peta set enkripsi disk untuk HyperV ke Azure.
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki kesalahan dalam dokumen bantuan 'Remove-AzTag'.
@@ -425,7 +425,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 #### <a name="azstorage"></a>Az.Storage
 * Menambahkan pesan peringatan perubahan yang berisiko untuk perubahan Nilai DefaultAction dalam rilis mendatang
     - Update-AzStorageAccountNetworkRuleSet
-* Mendukung Get waktu sinkronisasi terakhir akun Penyimpanan dengan menjalankan get-AzureRMStorageAccount dengan parameter -IncludeGeoReplicationStats
+* Mendukung untuk mendapatkan waktu sinkronisasi terakhir Akun penyimpanan dengan menjalankan get-AzureRMStorageAccount dengan parameter -IncludeGeoReplicationStats
     - Get-AzureRMStorageAccount
 
 ## <a name="320---december-2019"></a>3.2.0 - Desember 2019
@@ -441,7 +441,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbaiki masalah [#10602](https://github.com/Azure/azure-powershell/issues/10602), ketika **New-AzBatchPool** tidak mengirim 'VirtualMachineConfiguration.ContainerConfiguration' atau 'VirtualMachineConfiguration.DataDisks' ke server dengan benar.
 
 #### <a name="azdatafactory"></a>Az.DataFactory
-* Memperbarui versi ADF .Net SDK ke 4.5.0
+* Memperbarui versi SDK .Net ADF ke 4.5.0
 
 #### <a name="azfrontdoor"></a>Az.FrontDoor
 * Menambahkan dukungan pengecualian aturan terkelola WAF
@@ -456,14 +456,14 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Menambahkan dukungan untuk menentukan Kurva untuk Kebijakan Sertifikat
 
 #### <a name="azmonitor"></a>Az.Monitor
-* Menambahkan argumen opsional ke perintah Tambahkan Pengaturan Diagnostik. Argumen pengalihan yang, jika ada, menunjukkan bahwa ekspor ke Log Analytics harus ke skema tetap (alias khusus, jenis data)
+* Menambahkan argumen opsional ke perintah Tambahkan Pengaturan Diagnostik. Argumen pengalihan yang, jika ada, menunjukkan bahwa ekspor ke Log Analytics harus ke skema tetap (alias jenis data khusus)
 
 #### <a name="aznetwork"></a>Az.Network
 * Dukungan untuk IpGroups di Aplikasi AzureFirewall, Nat & Aturan Jaringan.
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki masalah ketika penyebaran templat gagal membaca parameter templat jika namanya bertentangan dengan beberapa nama parameter bawaan.
-* Memperbarui cmdlet kebijakan untuk menggunakan api baru versi 2019-09-01 yang memperkenalkan dukungan pengelompokan dalam definisi set kebijakan.
+* Memperbarui cmdlet kebijakan untuk menggunakan api baru versi 01-09-2019 yang memperkenalkan dukungan pengelompokan dalam definisi set kebijakan.
 
 #### <a name="azsql"></a>Az.Sql
 * Meningkatkan pembuatan penyimpanan dalam pengaktifan otomatis Penilaian Kerentanan ke StorageV2
@@ -474,7 +474,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - New-AzStorageBlobSASToken
 * Mendukung pencabutan Kunci Delegasi Pengguna Akun Penyimpanan, sehingga semua token SAS Identitas dicabut
     - Revoke-AzStorageAccountUserDelegationKeys
-* Meningkatkan ke Microsoft.Azure.Management.Storage 14.2.0, untuk mendukung API baru versi 2019-06-01.
+* Meningkatkan ke Microsoft.Azure.Management.Storage 14.2.0, untuk mendukung API baru versi 01-06-2019.
 * Dukungan QuotaGiB (Kuota Bersama di Gibibye) untuk nilai lebih dari 5120 di bidang Manajemen cmdlet Berbagi File dan menambahkan alias parameter 'Quota' ke parameter 'QuotaGiB'.
     - New-AzRmStorageShare
     - Update-AzRmStorageShare
@@ -484,7 +484,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Set-AzStorageContainerAcl
 
 ## <a name="310---november-2019"></a>3.1.0 - November 2019
-### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis utama sebelumnya
+### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis besar terakhir
 * Az.DataBoxEdge 1.0.0 dirilis
 * Az.SqlVirtualMachine 1.0.0 dirilis
 
@@ -508,7 +508,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Membuat Perintah baru
 * Menambahkan cmdlet `Remove-AzDataBoxEdgeOrder`
     - Menghapus Perintah
-* Perubahan pada cmdlet `New-AzDataBoxEdgeShare`
+* Perubahan cmdlet `New-AzDataBoxEdgeShare`
     - Sekarang membuat Berbagi Lokal
 * Menambahkan cmdlet `Set-AzDataBoxEdgeRole`
     - Sekarang IotRole dapat dipetakan ke Berbagi
@@ -522,7 +522,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Menghapus Pemicu
 
 #### <a name="azdatafactory"></a>Az.DataFactory
-* Memperbarui versi ADF .Net SDK ke 4.4.0
+* Memperbarui versi SDK .Net ADF ke 4.4.0
 * Menambahkan parameter 'ExpressCustomSetup' untuk cmd 'Set-AzureRmDataFactoryV2IntegrationRuntime' untuk mengaktifkan konfigurasi penyiapan dan komponen pihak ketiga tanpa skrip penyiapan khusus.
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
@@ -549,7 +549,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Azure Backup SQL Memulihkan dukungan untuk menerima MB aliran file.
 
 #### <a name="azrediscache"></a>Az.RedisCache
-* Menambahkan parameter 'MinimumTlsVersion' di cmdlet 'New-AzRedisCache' dan 'Set-AzRedisCache'. Selain itu, menambahkan 'MinimumTlsVersion' dalam output cmdlet 'Get-AzRedisCache'.
+* Menambahkan parameter 'MinimumTlsVersion' di cmdlet 'New-AzRedisCache' dan 'Set-AzRedisCache'. Juga, menambahkan 'MinimumTlsVersion' dalam output cmdlet 'Get-AzRedisCache'.
 * Menambahkan validasi pada parameter '-Size' untuk cmdlet 'Set-AzRedisCache' dan 'New-AzRedisCache'
 
 #### <a name="azresources"></a>Az.Resources
@@ -574,7 +574,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Menambahkan kategori baru 'Operational Excellence' ke cmdlet Get-AzAdvisorRecommendation.
 
 #### <a name="azbatch"></a>Az.Batch
-* Mengganti nama `CoreQuota`di `BatchAccountContext` menjadi `DedicatedCoreQuota`. Ada juga `LowPriorityCoreQuota` baru.
+* Mengganti nama `CoreQuota` di `BatchAccountContext` menjadi `DedicatedCoreQuota`. Ada juga `LowPriorityCoreQuota` baru .
   - Hal ini berdampak pada **Get-AzBatchAccount**.
 * **New-AzBatchTask** parameter `-ResourceFile` sekarang mengambil koleksi objek `PSResourceFile`, yang dapat dibangun menggunakan cmdlet **New-AzBatchResourceFile** baru.
 * Cmdlet **New-AzBatchResourceFile** baru untuk membantu membuat objek `PSResourceFile`. Objek ini dapat dipasok ke **New-AzBatchTask** pada parameter `-ResourceFile`.
@@ -620,7 +620,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - PublishingProfile.Source.ManagedImage.Id diganti dengan StorageProfile.Source.Id di objek GalleryImageVersion
 
 #### <a name="azdatafactory"></a>Az.DataFactory
-* Memperbarui versi ADF .Net SDK ke 4.3.0
+* Memperbarui versi SDK .Net ADF ke 4.3.0
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
 * Memperbarui versi SDK ADLS (https://github.com/Azure/azure-data-lake-store-net/blob/preview-alpha/CHANGELOG.md#version-123-alpha), menghadirkan perbaikan berikut
@@ -644,8 +644,8 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Grant-AzHDInsightRdpServicesAccess
     - Revoke-AzHDInsightRdpServicesAccess
 * Menambahkan tiga cmdlet:
-    - Get-AzHDInsightMonitoring menggantikan Get-AzHDInsightOMS.
-    - Enable-AzHDInsightMonitoring menggantikan Enable-AzHDInsightOMS.
+    - Get-AzHDInsightMonitoring untuk menggantikan Get-AzHDInsightOMS.
+    - Enable-AzHDInsightMonitoring untuk menggantikan Enable-AzHDInsightOMS.
     - Disable-AzHDInsightMonitoring untuk menggantikan Disable-AzHDInsightOMS.
 * Memperbaiki cmdlet Get-AzHDInsightProperties untuk mendukung mendapatkan informasi kemampuan dari lokasi tertentu.
 * Menghapus set parameter ('Spark1', 'Spark2') dari Add-AzHDInsightConfigValue.
@@ -658,7 +658,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Menghapus beberapa alias: 'Add-AzHDInsightConfigValues', 'Get-AzHDInsightProperties'.
 
 #### <a name="aziothub"></a>Az.IotHub
-* Perubahan yang berisiko:
+* Perubahan yang Berisiko:
     - Cmdlet 'Add-AzIotHubEventHubConsumerGroup' tidak lagi mendukung parameter 'EventHubEndpointName' dan tidak ada alias yang ditemukan untuk nama parameter asli.
     - Parameter '__AllParameterSets' yang diatur untuk cmdlet 'Add-AzIotHubEventHubConsumerGroup' telah dihapus.
     - Cmdlet 'Get-AzIotHubEventHubConsumerGroup' tidak lagi mendukung parameter 'EventHubEndpointName' dan tidak ada alias yang ditemukan untuk nama parameter asli.
@@ -673,13 +673,13 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Parameter 'UpdateOperationsMonitoringProperties' yang diatur untuk cmdlet 'Set-AzIotHub' telah dihapus.
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
-* Azure Site Recovery mendukung untuk mengonfigurasi sumber daya jaringan seperti NSG, IP publik, dan load balancer internal untuk Azure ke Azure.
+* Azure Site Recovery mendukung untuk mengonfigurasi sumber daya jaringan seperti NSG, IP publik, dan penyeimbang beban internal untuk Azure ke Azure.
 * Azure Site Recovery mendukung untuk menulis ke disk terkelola untuk vMWare ke Azure.
 * Azure Site Recovery mendukung pengurangan NIC untuk vMWare ke Azure.
 * Azure Site Recovery mendukung jaringan yang dipercepat untuk Azure ke Azure.
 * Azure Site Recovery mendukung agen pembaruan otomatis untuk Azure ke Azure.
 * Azure Site Recovery mendukung SSD Standar untuk Azure ke Azure.
-* Azure Site Recovery mendukung Azure Disk Encryption dua sandi untuk Azure ke Azure.
+* Azure Site Recovery mendukung Azure Disk Encryption dua langkah untuk Azure ke Azure.
 * Azure Site Recovery Mendukung untuk melindungi disk yang baru ditambahkan untuk Azure ke Azure.
 * Menambahkan fitur SoftDelete untuk mesin virtual dan menambahkan pengujian untuk softdelete
 
@@ -688,7 +688,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="aznetwork"></a>Az.Network
 * Mengubah semua cmdlet untuk PrivateEndpointConnection untuk mendukung penyedia layanan generik.
-    - Memperbarui cmdlet:
+    - Cmdlet yang diperbarui:
         - Approve-AzPrivateEndpointConnection
         - Deny-AzPrivateEndpointConnection
         - Get-AzPrivateEndpointConnection
@@ -704,7 +704,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbaiki deskripsi parameter yang salah dalam dokumentasi referensi 'New-AzApplicationGatewaySku'
 * Cmdlet baru untuk mendukung kebijakan firewall azure
 * Menambahkan dukungan untuk RouteTables sumber daya turunan virtualhub
-    - Cmdlet baru ditambahkan:
+    - Cmdlet baru yang ditambahkan:
         - Add-AzVirtualHubRoute
         - Add-AzVirtualHubRouteTable
         - Get-AzVirtualHubRouteTable
@@ -717,7 +717,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
         - New-AzVirtualWan : menambahkan parameter VirtualWANType
         - Update-AzVirtualWan : menambahkan parameter VirtualWANType
 * Menambahkan dukungan untuk properti EnableInternetSecurity untuk HubVnetConnection, VpnConnection, dan ExpressRouteConnection
-    - Cmdlet baru ditambahkan:
+    - Cmdlet baru yang ditambahkan:
         - Update-AzureRmVirtualHubVnetConnection
     - Memperbarui cmdlet dengan parameter opsional:
         - New-AzureRmVirtualHubVnetConnection : menambahkan parameter EnableInternetSecurity
@@ -726,7 +726,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
         - New-AzureRmExpressRouteConnection : menambahkan parameter EnableInternetSecurity
         - Set-AzureRmExpressRouteConnection : menambahkan parameter EnableInternetSecurity
 * Menambahkan dukungan untuk Mengonfigurasi Kebijakan TopLevel WebApplicationFirewall
-    - Cmdlet baru ditambahkan:
+    - Cmdlet baru yang ditambahkan:
         - New-AzApplicationGatewayFirewallPolicySetting
         - New-AzApplicationGatewayFirewallPolicyExclusion
         - New-AzApplicationGatewayFirewallPolicyManagedRuleGroupOverride
@@ -741,10 +741,10 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Memperbarui cmdlet dengan parameter opsional:
         - New-AzApplicationGatewayHttpListener : menambahkan parameter FirewallPolicy, FirewallPolicyId
         - New-AzApplicationGatewayPathRuleConfig : menambahkan parameter FirewallPolicy, FirewallPolicyId
-* Memperbaiki subnet yang diperlukan dengan nama AzureBastionSubnet di 'PSBastion' tidak peka huruf besar kecil
+* Memperbaiki subnet yang diperlukan dengan nama AzureBastionSubnet di 'PSBastion' tidak peka huruf besar atau kecil
 * Dukungan untuk FQDN Tujuan dalam Aturan Jaringan dan FQDN yang Diterjemahkan dalam Aturan NAT untuk Azure Firewall
 * Menambahkan dukungan untuk RouteTables sumber daya tingkat atas dari IpGroup
-    - Cmdlet baru ditambahkan:
+    - Cmdlet baru yang ditambahkan:
         - Baru-AzIpGroup
         - Remove-AzIpGroup
         - Dapatkan-AzIpGroup
@@ -765,10 +765,10 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Menambahkan cmdlet ke Nonaktifkan dan aktifkan rekomendasi sensitivitas pada kolom dalam database.
 
 #### <a name="azstorage"></a>Az.Storage
-* Mendukung pengaktifan berbagi File Besar saat membuat atau memperbarui akun Penyimpanan
+* Mendukung pengaktifan berbagi File Besar saat membuat atau memperbarui Akun penyimpanan
     -  New-AzStorageAccount
     -  Set-AzStorageAccount
-* Saat close/get handel File, melewati pemeriksaan jalur input yang merupakan Direktori file atau File, untuk menghindari kegagalan dengan objek di status DeletePending
+* Saat menutup/mendapatkan gagang File, lewati periksa jalur input adalah Direktori file atau File, untuk menghindari kegagalan dengan objek di status DeletePending
     -  Get-AzStorageFileHandle
     -  Close-AzStorageFileHandle
 
@@ -798,7 +798,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 #### <a name="azdatafactory"></a>Az.DataFactory
 * Menambahkan perintah CRUD untuk aliran data ADF V2: Set-AzDataFactoryV2DataFlow, Remove-AzDataFactoryV2DataFlow, dan Get-AzDataFactoryV2DataFlow.
 * Menambahkan perintah tindakan untuk debug Sesi aliran data ADF V2: Start-AzDataFactoryV2DataFlowDebugSession, Get-AzDataFactoryV2DataFlowDebugSession, Add-AzDataFactoryV2DataFlowDebugSessionPackage, Invoke-AzDataFactoryV2DataFlowDebugSessionCommand dan Stop-AzDataFactoryV2DataFlowDebugSession.
-* Memperbarui versi ADF .Net SDK ke 4.2.0
+* Memperbarui versi SDK .Net ADF ke 4.2.0
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
 * Memperbaiki validasi akun sehingga akun dengan '-' dapat diteruskan tanpa domain
@@ -807,7 +807,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbarui versi powershell ke 1.0.0
 * Memperbarui versi SDK ke 1.0.2
 * Pembaruan dalam pengujian untuk merujuk ke versi SDK baru
-* Memperbarui struktur output dari berlapis menjadi rata.
+* Memperbarui struktur output dari berlapis menjadi diratakan.
 
 #### <a name="aziothub"></a>Az.IotHub
 * Menambahkan sumber perutean baru: DigitalTwinChangeEvents
@@ -819,11 +819,11 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Webhook sekarang mendukung autentikasi direktori aktif Azure .
 
 #### <a name="aznetwork"></a>Az.Network
-* Menambahkan cmdlet baru Get-AzAvailableServiceAlias yang dapat dipanggil get alias yang dapat digunakan untuk Kebijakan Titik Akhir Layanan.
+* Menambahkan cmdlet baru Get-AzAvailableServiceAlias yang dapat dipanggil untuk mendapatkan alias yang dapat digunakan untuk Kebijakan Titik Akhir Layanan.
 * Menambahkan dukungan untuk menambahkan pemilih lalu lintas ke Koneksi Gateway Virtual Network
-    - Cmdlet baru ditambahkan:
+    - Cmdlet baru yang ditambahkan:
         - New-AzureRmTrafficSelectorPolicy
-    - Memperbarui cmdlet dengan parameter opsional -TrafficSelectorPolicies   -New-AzureRmVirtualNetworkGatewayConnection   -Set-AzureRmVirtualNetworkGatewayConnection
+    - Cmdlet diperbarui dengan parameter opsional -TrafficSelectorPolicies -New-AzureRmVirtualNetworkGatewayConnection -Set-AzureRmVirtualNetworkGatewayConnection
 * Menambahkan dukungan untuk protokol ESP dan AH dalam konfigurasi aturan keamanan jaringan
     - Memperbarui cmdlet:
         - Tambahkan-AzNetworkSecurityRuleConfig
@@ -844,7 +844,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Meningkatkan Pustaka Klien Penyimpanan ke 11.1.0
 * Mencantumkan kontainer dengan API bidang Manajemen, akan mencantumkan dengan NextPageLink
     -  Get-AzRmStorageContainer
-* Mencantumkan akun Penyimpanan dari langganan, akan mencantumkan dengan NextPageLink
+* Mencantumkan Akun penyimpanan dari langganan, akan mencantumkan dengan NextPageLink
     -  Dapatkan-AkunPenyimpananAz
 
 #### <a name="azstoragesync"></a>Az.StorageSync
@@ -876,26 +876,26 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azdatafactory"></a>Az.DataFactory
 * Menambahkan 3 perintah baru untuk ADF V2 - Add-AzDataFactoryV2TriggerSubscription, Remove-AzDataFactoryV2TriggerSubscription, and Get-AzDataFactoryV2TriggerSubscriptionStatus
-* Memperbarui versi ADF .Net SDK ke 4.1.3
+* Memperbarui versi SDK .Net ADF ke 4.1.3
 
 #### <a name="azhdinsight"></a>Az.HDInsight
 * Memanggil perubahan yang berisiko
 
 #### <a name="aziothub"></a>Az.IotHub
 * Menambahkan dukungan untuk memanggil failover untuk IotHub ke wilayah pemulihan bencana yang dipasangkan secara geografis.
-* Menambahkan dukungan untuk mengelola pengayaan pesan untuk IotHub. Cmdlet baru adalah:
+* Menambahkan dukungan untuk mengelola pengayaan pesan untuk IotHub. Cmdlet yang baru adalah:
     - Add-AzIotHubMessageEnrichment
     - Get-AzIotHubMessageEnrichment
     - Remove-AzIotHubMessageEnrichment
     - Set-AzIotHubMessageEnrichment
 
 #### <a name="azmonitor"></a>Az.Monitor
-* Menunjuk ke SDK Monitor terbaru, yaitu 0.24.1-preview
+* Menunjuk ke Monitor SDK terbaru, yaitu 0.24.1-preview
    - Menambahkan perubahan yang tidak berisiko pada cmdlet Metrik, yaitu enumerasi Unit mendukung beberapa nilai baru. Ini adalah cmdlet hanya baca, jadi tidak akan ada perubahan dalam input cmdlet.
-   - Permintaan **ActionGroups** versi api sekarang **2019-06-01**, sebelumnya **2018-03-01**. Tes skenario telah diperbarui untuk mengakomodasi perubahan ini.
+   - Permintaan **ActionGroups** versi api sekarang **01-06-2019**, sebelumnya **01-03-2018**. Tes skenario telah diperbarui untuk mengakomodasi perubahan ini.
    - Konstruktor untuk kelas **EmailReceiver** dan **WebhookReceiver** menambahkan satu argumen wajib baru, yaitu nilai Boolean yang disebut **useCommonAlertSchema**. Saat ini, nilainya ditetapkan ke **false** untuk menyembunyikan perubahan yang berisiko ini dari cmdlet. **CATATAN**: perubahan ini bersifat sementara yang harus divalidasi oleh tim Peringatan.
-   - Urutan argumen untuk konstruktor **Sumber** kelas (terkait dengan kelas **ScheduledQueryRuleSource**) berubah dari SDK sebelumnya. Perubahan ini membutuhkan dua tes unit untuk diperbaiki: keduanya dikompilasi, tetapi gagal lulus uji.
-   - Urutan argumen untuk konstruktor **AlertingAction** kelas (terkait dengan kelas **ScheduledQueryRuleSource**) berubah dari SDK sebelumnya. Perubahan ini membutuhkan dua tes unit untuk diperbaiki: keduanya dikompilasi, tetapi gagal lulus uji.
+   - Urutan argumen untuk konstruktor **Sumber** kelas (terkait dengan kelas **ScheduledQueryRuleSource**) berubah dari SDK sebelumnya. Perubahan ini membutuhkan dua pengujian unit untuk diperbaiki: mereka dikompilasi, tetapi gagal lulus pengujian.
+   - Urutan argumen untuk konstruktor **AlertingAction** kelas (terkait dengan kelas **ScheduledQueryRuleSource**) berubah dari SDK sebelumnya. Perubahan ini membutuhkan dua pengujian unit untuk diperbaiki: mereka dikompilasi, tetapi gagal lulus pengujian.
 * Mendukung kriteria Ambang Dinamis untuk peringatan metrik V2
     - New-AzMetricAlertRuleV2Criteria: sekarang juga menciptakan kriteria ambang batas dinamis
     - Add-AzMetricAlertRuleV2: sekarang juga menerima kriteria ambang dinamis
@@ -922,7 +922,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Cmdlet baru
         - New-AzVpnSiteLink
         - New-AzVpnSiteLinkConnection
-    - Memperbarui cmdlet:
+    - Cmdlet yang diperbarui:
         - New-VpnSite
         - Update-VpnSite
         - New-VpnConnection
@@ -966,7 +966,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azstorage"></a>Az.Storage
 * Memperbarui contoh dalam dokumentasi referensi untuk 'Get-AzStorageAccountKey'
-* Di pengunggahan/Pengunduhan File Azure, didukung untuk mempertahankan properti File SMB sumber (Atribut File, Waktu Pembuatan File, Waktu Penulisan File Terakhir) di file tujuan
+* Di upload/Downalod Azure File,support perserve properti SMB File sumber (File Attributtes, Waktu Pembuatan File, Waktu Penulisan Terakhir File) di file tujuan
     -  Set-AzStorageFileContent
     -  Get-AzStorageFileContent
 * Memperbaiki pengunggahan blob blok dengan properti/metadate gagal pada ImmutabilityPolicy yang diaktifkan kontainer.
@@ -1019,7 +1019,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azdatafactory"></a>Az.DataFactory
 * Memperbaiki kesalahan ketik untuk memanfaatkan dokumentasi 'Windows' di dokumentasi 'New-AzDataFactoryEncryptValue'
-* Memperbarui versi ADF .Net SDK ke 4.1.2
+* Memperbarui versi SDK .Net ADF ke 4.1.2
 * Menambahkan parameter 'DataProxyIntegrationRuntimeName', 'DataProxyStagingLinkedServiceName' dan 'DataProxyStagingPath' untuk cmd 'Set-AzureRmDataFactoryV2IntegrationRuntime' untuk mengaktifkan pengaturan Runtime Integrasi yang Dihost Sendiri sebagai proksi untuk Integration Runtime SSIS
 * Memperbarui PSTriggerRun untuk menampilkan alur, pesan, dan properti yang dipicu, dan PSActivityRun untuk menampilkan jenis aktivitas
 
@@ -1040,8 +1040,8 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="aznetwork"></a>Az.Network
 * Memperbarui New-AzPrivateLinkServiceIpConfig
-    - Menghentikan parameter 'PublicIpAddress' karena parameter ini tidak pernah digunakan di sisi server.
-    - Menambahkan satu parameter opsional 'Primary' yang menunjukkan konfigurasi ip saat ini adalah yang utama atau tidak.
+    - Tidak menggunakan lagi parameter 'PublicIpAddress' karena parameter ini tidak pernah digunakan di sisi server.
+    - Menambahkan satu parameter opsional 'Primer' yang menunjukkan konfigurasi ip saat ini adalah yang utama atau tidak.
 * Meningkatkan penanganan pengecualian kesalahan permintaan dari SDK -Memperbaiki masalah pengecualian SDK sebelumnya yang tidak ditangani dengan benar sehingga mengakibatkan detail kesalahan utama tidak ditampilkan
 * Menyesuaikan logika validasi untuk Awalan IP Ipv6 untuk memeriksa panjang prefiks IPv6 yang benar.
 * Memperbarui Get-AzVirtualNetworkSubnetConfig: Menambahkan parameter yang diatur untuk mendapatkan id sumber daya subnet.
@@ -1072,7 +1072,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbaiki bug cmdlet jenis node tambahkan’:
     - Bug NullReferenceException ketika grup sumber daya memiliki vmss lain yang tidak terkait dengan kluster service fabric. Memperbaiki masalah: https://github.com/Azure/azure-powershell/issues/8681
     - Memperbaiki bug ketika cmdlet gagal jika virtualNetwork berada dalam grup sumber daya yang berbeda dengan kluster. memperbaiki masalah: https://github.com/Azure/azure-powershell/issues/8407
-    - Menghentikan cmdlet Add-AzServiceFabricApplicationCertificate
+    - Tidak menggunakan lagi cmdlet Add-AzServiceFabricApplicationCertificate
 
 #### <a name="azsql"></a>Az.Sql
 * Memperbarui dokumentasi cmdlet Audit lama.
@@ -1109,12 +1109,12 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Informasi selengkapnya di sini https://github.com/Azure/azure-powershell/issues/9633
 
 #### <a name="azdatafactory"></a>Az.DataFactory
-* Memperbarui versi ADF .Net SDK ke 4.1.0
+* Memperbarui versi SDK .Net ADF ke 4.1.0
 * Memperbaiki kesalahan ketik dalam dokumentasi untuk 'Get-AzDataFactoryV2PipelineRun'
 
 #### <a name="azeventhub"></a>Az.EventHub
 * Menambahkan cmdlet baru yang ditambahkan untuk menghasilkan token SAS: New-AzEventHubAuthorizationRuleSASToken
-* menambahkan pesan verifikasi dan kesalahan untuk hak otorisasi jika hanya 'Kelola' yang ditetapkan
+* Menambahkan pesan verifikasi dan kesalahan untuk authorizationrules benar hanya jika 'Kelola' yang ditetapkan
 
 #### <a name="azkeyvault"></a>Az.KeyVault
 * Menambahkan dukungan untuk menentukan Kebijakan KeySize for Certificate
@@ -1124,7 +1124,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Menambahkan parameter MapType baru untuk pemfilteran
 
 #### <a name="azmanagedservices"></a>Az.ManagedServices
-* Menambahkan dukungan untuk api versi 2019-06-01 (GA)
+* Menambahkan dukungan untuk api versi 01-06-2019 (GA)
 
 #### <a name="aznetwork"></a>Az.Network
 * Menambahkan dukungan untuk titik akhir privat dan layanan link privat
@@ -1149,7 +1149,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
         - Set-AzNetworkSecurityRuleConfig
 * Menambahkan ConnectionProtocolType (Ikev1/Ikev2) sebagai parameter yang dapat dikonfigurasi untuk New-AzVirtualNetworkGatewayConnection
 * Menambahkan PrivateIpAddressVersion di LoadBalancerFrontendIpConfiguration
-    - Memperbarui cmdlet:
+    - Cmdlet yang diperbarui:
         - New-AzLoadBalancerFrontendIpConfig
         - Add-AzLoadBalancerFrontendIpConfig
         - Set-AzLoadBalancerFrontendIpConfig
@@ -1178,7 +1178,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azservicebus"></a>Az.ServiceBus
 * Menambahkan cmdlet baru yang ditambahkan untuk menghasilkan token SAS: New-AzServiceBusAuthorizationRuleSASToken
-* menambahkan pesan verifikasi dan kesalahan untuk hak otorisasi jika hanya 'Manage' yang ditetapkan
+* Menambahkan pesan verifikasi dan kesalahan untuk authorizationrules benar hanya jika 'Kelola' yang ditetapkan
 
 #### <a name="azsql"></a>Az.Sql
 * Memperbaiki contoh yang hilang untuk cmdlet Set-AzSqlDatabaseSecondary
@@ -1223,13 +1223,13 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Menambahkan parameter HyperVGeneration ke New-AzImageConfig
 
 #### <a name="azdatafactory"></a>Az.DataFactory
-* Memperbarui output aktivitas get yang berjalan, get alur yang berjalan, dan get pemicu yang menjalankan cmdlet ADF untuk mendukung alur Select-Object.
+* Memperbarui output dari aktivitas mendapatkan berjalan, mendapatkan pipa berjalan, dan mendapatkan pemicu menjalankan cmdlet ADF untuk mendukung pipa Select-Object.
 
 #### <a name="azeventgrid"></a>Az.EventGrid
 * Memperbaiki kesalahan ketik dalam dokumentasi 'New-AzEventGridSubscription'
 
 #### <a name="aziothub"></a>Az.IotHub
-* Menambahkan dukungan untuk meregenerasi kunci kebijakan otorisasi
+* Menambahkan dukungan untuk meregenerasi kunci kebijakan otorisasi.
 
 #### <a name="aznetwork"></a>Az.Network
 * Menambahkan 'RoutingPreference' ke tag ip publik
@@ -1240,23 +1240,23 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/9446
 
 #### <a name="azoperationalinsights"></a>Az.OperationalInsights
-* Memperbaiki model sumber data CustomLog yang dimunculkan dalam Get-AzOperationalInsightsDataSource
+* Memperbaiki model sumber data CustomLog yang ditampilkan dalam Get-AzOperationalInsightsDataSource
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Memperbaiki perintah get-policy untuk IaaSVMs
 
 #### <a name="azresources"></a>Az.Resources
-   - Memperbaiki teks bantuan untuk Parameter Get-AzPolicyState -Top
+   - Memperbaiki teks bantuan untuk Parameter -Top Get-AzPolicyState
    - Menambahkan dukungan penomoran sisi klien untuk Get-AzPolicyAlias
    - Menambahkan parameter baru untuk Set-AzPolicyAssignment, -PolicyParameters dan -PolicyParametersObject
-   - Beberapa dokumen dan contoh pembaruan untuk cmdlet Policy
+   - Beberapa dokumen dan contoh pembaruan untuk cmdlet Kebijakan
 
 #### <a name="azservicebus"></a>Az.ServiceBus
 * Memperbaiki masalah #4938 - New-AzureRmServiceBusQueue memunculkan BadRequest saat mengatur MaxSizeInMegabytes
 
 #### <a name="azsql"></a>Az.Sql
 * Menambahkan cmdlet Grup Failover Instans dari rilis pratinjau ke rilis publik
-* Mendukung Audit Azure SQL Server\Database dengan cmdlet baru.
+* Mendukung Audit Database/Azure SQL Server dengan cmdlet baru.
     - Set-AzSqlServerAudit
     - Get-AzSqlServerAudit
     - Remove-AzSqlServerAudit
@@ -1270,7 +1270,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     -  Enable-AzStorageStaticWebsite
 * Memperbarui bantuan Get-AzStorageBlobContent dengan menambahkan contoh
 * Menampilkan informasi kesalahan lainnya saat cmdlet gagal dengan StorageException
-* Mendukung pembuatan atau pembaruan akun Penyimpanan dengan Autentikasi DS AAD Azure Files
+* Mendukung pembuatan atau pembaruan Akun penyimpanan dengan Autentikasi DS AAD Azure Files
     -  New-AzStorageAccount
     -  Set-AzStorageAccount
 * Mendukung pencantuman atau penutupan handel file berbagi file, direktori file, atau file
@@ -1296,7 +1296,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbaiki kesalahan ketik dalam contoh bantuan 'Set-AzDnsZone'.
 
 #### <a name="azeventgrid"></a>Az.EventGrid
-* Memperbarui penggunaan versi API 06-01-2019.
+* Memperbarui penggunaan versi API 01-06-2019.
 * Cmdlet baru:
     - New-AzureRmEventGridDomain
         - Membuat Domain Azure Event Grid baru.
@@ -1323,7 +1323,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
             - Masa kedaluwarsa langganan peristiwa,
             - Parameter pemfilteran tingkat lanjut.
         - Menambahkan enum baru untuk servicebusqueue sebagai tujuan.
-        - Melarang penggunaan 'All' dalam opsi -IncludedEventType dan menggantinya dengan
+        - Melarang penggunaan 'Semua' dalam opsi -IncludedEventType dan menggantinya dengan
     - Get-AzEventGridTopic, Get-AzEventGridDomain, Get-AzEventGridDomainTopic, Get-AzEventGridSubscription:
         - Menambahkan parameter opsional baru (Top, ODataQuery dan NextLink) untuk mendukung hasil penomoran dan penyaringan.
     - Remove-AzureRmEventGridSubscription
@@ -1374,7 +1374,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
         - Menambahkan parameter -PublicIpAddress yang menerima satu atau beberapa objek Alamat IP Publik
         - Menambahkan parameter -VirtualNetwork yang menerima objek Virtual Network
         - Menambahkan metode AddPublicIpAddress dan RemovePublicIpAddress pada objek firewall - metode ini menerima objek Alamat IP Publik sebagai input
-        - Parameter yang tidak digunakan lagi -PublicIpName dan -VirtualNetworkName
+        - Tidak menggunakan lagi parameter -PublicIpName dan -VirtualNetworkName
 * Memperbarui perintah fitur di bawah ini: Atur opsi autentikasi AAD VpnClient ke sumber daya gateway virtual.
     - Memperbarui New-AzVirtualNetworkGateway: Menambahkan parameter opsional AadTenantUri,AadAudienceId,AadIssuerUri untuk mengatur opsi autentikasi AAD VpnClient di Gateway.
     - Memperbarui Set-AzVirtualNetworkGateway: Menambahkan parameter opsional AadTenantUri,AadAudienceId,AadIssuerUri untuk mengatur opsi autentikasi AAD VpnClient di Gateway.
@@ -1390,7 +1390,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Menambahkan parameter '-Resource' ke Export-AzResourceGroup untuk pemfilteran sumber daya yang diekspor
 
 #### <a name="azservicefabric"></a>Az.ServiceFabric
-* Memperbaiki penambahan sertifikat ByExistingKeyVault agar tidak mendapatkan thumbprint yang salah dalam beberapa kasus
+* Perbaiki tambahkan sertifikat ByExistingKeyVault mendapatkan cap jempol yang salah dalam beberapa kasus
 
 #### <a name="azsql"></a>Az.Sql
 * Memperbaiki akhiran titik akhir penyimpanan Perlindungan Ancaman Tingkat Lanjut
@@ -1403,18 +1403,18 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
    - Set-AzSqlInstanceTransparentDataEncryptionProtector
 
 #### <a name="azstorage"></a>Az.Storage
-* Mendukung FileStorage Kind dan Premium_ZRS SkuName saat membuat akun Penyimpanan
+* Mendukung Jenis FileStorage dan Premium_ZRS SkuName saat membuat Akun penyimpanan
     - New-AzStorageAccount
-* Deskripsi yang diklarifikasi tentang cmdlet ketetapan blob
+* Mengklarifikasi deskripsi tentang cmdlet kekebalan blob
     -  Remove-AzRmStorageContainerImmutabilityPolicy
 
 #### <a name="azwebsites"></a>Az.Websites
 * Mengoptimalkan Get-AzWebAppCertificate untuk memfilter berdasarkan grup sumber daya di server, bukan klien
-* Menambahkan parameter sakelar -UseDisasterRecovery ke Get-AzWebAppSnapshot
+* Menambahkan parameter pengalihan -UseDisasterRecovery ke Get-AzWebAppSnapshot
 
 ## <a name="220---june-2019"></a>2.2.0 - Juni 2019
 #### <a name="azcdn"></a>Az.Cdn
-* Memperbarui cmdlet untuk mendukung fitur rulesEngine berdasarkan API versi 2019-04-15.
+* Memperbarui cmdlet untuk mendukung fitur rulesEngine berdasarkan API versi 15-04-2019.
 
 #### <a name="azcompute"></a>Az.Compute
 * Menambahkan parameter `NoWait` yang memulai operasi dan segera memunculkannya, sebelum operasi selesai.
@@ -1443,26 +1443,26 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azsql"></a>Az.Sql
 * Menambahkan Parameter DnsZonePartner untuk cmdlet New-AzureSqlInstance guna mendukung AutoDr pada Instans Terkelola.
-* Menghentikan cmdlet Get-AzSqlDatabaseSecureConnectionPolicy
+* Tidak menggunakan lagi cmdlet Get-AzSqlDatabaseSecureConnectionPolicy
 * Mengganti nama cmdlet Deteksi Ancaman menjadi Perlindungan Ancaman Tingkat Lanjut
 * Parameter New-AzSqlInstance -StorageSizeInGB dan -LicenseType sekarang bersifat opsional.
 
 #### <a name="azwebsites"></a>Az.Websites
-* memperbaiki masalah saat menggunakan Set-AzWebApp dan Set-AzWebAppSlot dengan properti -WebApp yang menghapus tag
+* memperbaiki masalah saat menggunakan Set-AzWebApp dan Set-AzWebAppSlot dengan properti -WebApp telah menghapus tag
 
 ## <a name="210---may-2019"></a>2.1.0 - Mei 2019
 #### <a name="azapimanagement"></a>Az.ApiManagement
 * Membuat Cmdlet baru untuk mengelola diagnostik di Cakupan global dan API
     - **Get-AzApiManagementDiagnostic** - Mendapatkan diagnostik yang dikonfigurasi Cakupan global atau api
     - **New-AzApiManagementDiagnostic** - Membuat diagnostik baru di cakupan global atau Cakupan api
-    - **New-AzApiManagementHttpMessageDiagnostic** - Membuat pengaturan diagnostik tempat Header mencatat dan ukuran Byte Body
+    - **New-AzApiManagementHttpMessageDiagnostic** - Membuat pengaturan diagnostik tempat Header untuk log dan ukuran Byte Body
     - **New-AzApiManagementPipelineDiagnosticSetting** - Membuat pengaturan Diagnostik untuk pesan HTTP masuk/keluar ke Gateway.
     - **New-AzApiManagementSamplingSetting** - Membuat Pengaturan Pengambilan Sampel untuk permintaan/respons untuk diagnostik
     - **Remove-AzApiManagementDiagnostic** - Menghapus entitas diagnostik di cakupan global atau api
     - **Set-AzApiManagementDiagnostic** - Memperbarui Entitas diagnostik di cakupan global atau api
 * Membuat Cmdlet baru untuk mengelola Cache di layanan ApiManagement
     - **Get-AzApiManagementCache** - Mendapatkan detail Cache yang ditentukan oleh pengidentifikasi atau semua cache
-    - **New-AzApiManagementCache** - Membuat Cache atau Cache 'default' baru di 'region' azure tertentu
+    - **New-AzApiManagementCache** - Membuat Cache atau Cache 'default' baru di 'wilayah' azure tertentu
     - **Remove-AzApiManagementCache** - Menghapus cache
     - **Update-AzApiManagementCache** - Memperbarui cache
 * Membuat Cmdlet baru untuk mengelola Skema API
@@ -1501,17 +1501,17 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbarui cmdlet **New-AzApiManagementRevision**
     - Untuk mengkloning (salin tag, produk, operasi, dan kebijakan) revisi yang ada menggunakan 'SourceApiRevision'. Revisi baru mengasumsikan 'ApiId' dari induk.
     - Untuk menyediakan 'ApiRevisionDescription'
-    - Untuk mengambil alih 'ServiceUrl' saat mengkloning API.
+    - Untuk mengganti 'ServiceUrl' saat mengkloning API.
 * Memperbarui cmdlet **New-AzApiManagementIdentityProvider**
-    - Untuk mengonfigurasi 'AAD' atau 'AADB2C' dengan 'Authority'
+    - Untuk mengonfigurasi 'AAD' atau 'AADB2C' dengan 'Otoritas'
     - Untuk menyiapkan 'SignupPolicy', 'SigninPolicy', 'ProfileEditingPolicy' dan 'PasswordResetPolicy'
 * Memperbarui cmdlet **New-AzApiManagementSubscription**
-    - Untuk menjelaskan SubscriptonModel baru menggunakan 'Scope' dan 'UserId'
-    - Untuk menjelaskan model langganan lama menggunakan 'ProductId' dan 'UserId'
+    - Untuk memperhitungkan SubscriptonModel baru menggunakan 'Scope' dan 'UserId'
+    - Untuk memperhitungkan model langganan lama menggunakan 'ProductId' dan 'UserId'
     - Menambahkan dukungan untuk mengaktifkan 'AllowTracing' di tingkat langganan.
 * Memperbarui cmdlet **Set-AzApiManagementSubscription**
-    - Untuk menjelaskan SubscriptonModel baru menggunakan 'Scope' dan 'UserId'
-    - Untuk menjelaskan model langganan lama menggunakan 'ProductId' dan 'UserId'
+    - Untuk memperhitungkan SubscriptonModel baru menggunakan 'Scope' dan 'UserId'
+    - Untuk memperhitungkan model langganan lama menggunakan 'ProductId' dan 'UserId'
     - Menambahkan dukungan untuk mengaktifkan 'AllowTracing' di tingkat langganan.
 * Memperbarui cmdlet berikut untuk menerima 'ResourceId' sebagai input
     - 'New-AzApiManagementContext'
@@ -1533,7 +1533,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Memperbaiki masalah https://github.com/Azure/azure-powershell/issues/8600
 * Mengubah perilaku bagi Start-AzAutomationDscCompilationJob untuk memulai pekerjaan bukan menunggu hingga selesai.
     * Memperbaiki masalah https://github.com/Azure/azure-powershell/issues/8347
-* Memperbaiki Get-AzAutomationDscNode saat menggunakan -Name memunculkan semua node. Sekarang memunculkan node yang cocok saja.
+* Memperbaiki Get-AzAutomationDscNode saat menggunakan -Name memunculkan semua node. Sekarang menampilkan node yang cocok saja.
 
 #### <a name="azcompute"></a>Az.Compute
 * Menambahkan parameter ProtectFromScaleIn dan ProtectFromScaleSetAction ke cmdlet Update-AzVmssVM.
@@ -1547,7 +1547,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="aznetwork"></a>Az.Network
 * Menambahkan bendera DisableBgpRoutePropagation ke output Tabel Rute yang Efektif
-    - Memperbarui cmdlet:
+    - Cmdlet yang diperbarui:
         - Get-AzEffectiveRouteTable
 * Memperbaiki tanda hubung ganda dalam dokumentasi New-AzApplicationGatewayTrustedRootCertificate
 
@@ -1577,7 +1577,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Export-AzLogAnalyticThrottledRequests diubah menjadi Export-AzLogAnalyticThrottledRequests.
 
 #### <a name="azdeploymentmanager"></a>Az.DeploymentManager
-* Rilis cmdlet Manajer Penyebaran Azure pertama yang tersedia secara umum
+* Rilis cmdlet Manajer Penyebaran Azure Pertama yang Tersedia Secara Umum
 
 #### <a name="azdns"></a>Az.Dns
 * Delegasi NameServer DNS Otomatis
@@ -1618,7 +1618,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Set-AzScheduledQueryRule
     - Update-AzScheduledQueryRule
     - Remove-AzScheduledQueryRule
-    - Informasi [lebih lanjut](/rest/api/monitor/scheduledqueryrules) tentang SQR API
+    - Informasi [lebih lanjut](/rest/api/monitor/scheduledqueryrule-2021-08-01/scheduled-query-rules) tentang API SQR
     - Memperbarui Az.Monitor.md untuk menyertakan cmdlet pada aturan peringatan berbasis metrik GenV2 (non klasik)
 
 #### <a name="aznetwork"></a>Az.Network
@@ -1642,85 +1642,85 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Mendukung antar langganan Azure ke pemulihan situs Azure.
 * Menandai perubahan berisiko yang akan datang untuk Azure Site Recovery.
-* Memperbaiki rencana tindakan akhir pemulihan Azure Site Recovery.
-* Memperbaiki pemetaan jaringan Pembaruan Azure Site Recovery untuk Azure ke Azure.
-* Memperbaiki arah perlindungan pembaruan Azure Site Recovery untuk Azure ke Azure pada disk terkelola.
-* Perubahan kecil lainnya.
+* Perbaikan untuk rencana tindakan akhir rencana pemulihan Azure Site Recovery.
+* Perbaikan untuk pemetaan jaringan Pembaruan Azure Site Recovery untuk Azure ke Azure.
+* Perbaikan untuk arah perlindungan pembaruan Azure Site Recovery untuk Azure ke Azure untuk disk terkelola.
+* Perbaikan kecil lainnya.
 
 #### <a name="azrelay"></a>Az.Relay
-* Memperbaiki kesalahan ketik dalam pesan yang diterima pelanggan
+* Memperbaiki kesalahan ketik dalam pesan yang menghadap pelanggan
 
 #### <a name="azservicebus"></a>Az.ServiceBus
-* Menambahkan cmdlet baru untuk NetworkRuleSet pada Namespace layanan
+* Menambahkan cmdlet baru untuk NetworkRuleSet dari Namespace
 
 #### <a name="azstorage"></a>Az.Storage
-* Meningkatkan ke Pustaka Klien Penyimpanan 10.0.1 (namespace layanan semua objek dari SDK ini berubah dari 'Microsoft.WindowsAzure.Storage. *' menjadi 'Microsoft.Azure. Storage.* ')
-* Meningkatkan ke Microsoft.Azure.Management.Storage 11.0.0, untuk mendukung API baru versi 2019-04-01.
-* Akun Penyimpanan Kind default di Buat perubahan akun Penyimpanan dari 'Storage' menjadi 'StorageV2'
+* Meningkatkan ke Storage Client Library 10.0.1 (namespace semua objek dari SDK ini berubah dari 'Microsoft.WindowsAzure.Storage. *' ke 'Microsoft.Azure.Storage.* ')
+* Meningkatkan ke Microsoft.Azure.Management.Storage 11.0.0, untuk mendukung API baru versi 01-04-2019.
+* Jenis Akun penyimpanan default di Buat Akun penyimpanan berubah dari 'Storage' menjadi 'StorageV2'
     - New-AzStorageAccount
-* Mengubah output cmdlet akun Penyimpanan Sku.Name diratakan dengan input SkuName dengan menambahkan '-', seperti perubahan 'StandardLRS' menjadi 'Standard_LRS'
+* Mengubah output cmdlet Akun penyimpanan Sku.Name disejajarkan dengan input SkuName dengan menambahkan '-', seperti perubahan 'StandardLRS' menjadi 'Standard_LRS'
     - New-AzStorageAccount
     - Dapatkan-AkunPenyimpananAz
     - Set-AzStorageAccount
 
 #### <a name="azwebsites"></a>Az.Websites
-* Properti 'Kind' sekarang akan ditetapkan untuk objek PSSite yang dimunculkan oleh Get-AzWebApp
-* Get-AzWebApp*Metrics dan Get-AzAppServicePlanMetrics ditandai sebagai tidak digunakan lagi
+* Properti 'Kind' sekarang akan ditetapkan untuk objek PSSite yang ditampilkan oleh Get-AzWebApp
+* Get-AzWebApp*Metrics dan Get-AzAppServicePlanMetrics ditandai tidak digunakan lagi
 
 ## <a name="180---april-2019"></a>1.8.0 - April 2019
-### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis utama sebelumnya
-* Ketersediaan umum modul `Az`
-* Untuk informasi lebih lanjut tentang modul `Az`, silakan kunjungi: https://aka.ms/azps-announce
-* Menambahkan pelengkap Location, ResourceGroup, dan resourcename: https://azure.microsoft.com/blog/completers-in-azure-powershell/
+### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis besar terakhir
+* Ketersediaan umum dari modul `Az`
+* Untuk informasi lebih lanjut tentang modul `Az`, kunjungi yang berikut: https://aka.ms/azps-announce
+* Menambahkan pelengkap Location, ResourceGroup, dan ResourceName: https://azure.microsoft.com/blog/completers-in-azure-powershell/
 * Menambahkan dukungan kartubebas ke cmdlet Get untuk Az.Compute dan Az.Network
-* Menambahkan autentikasi interaktif dan nama pengguna/kata sandi hanya untuk Windows PowerShell 5.1
+* Menambahkan autentikasi nama pengguna/kata sandi dan interaktif hanya untuk Windows PowerShell 5.1
 * Menambahkan dukungan untuk runbook Python 2 di Az.Automation
-* Az.LogicApp: cmdlet baru untuk Assembly Akun Integrasi dan Konfigurasi Batch
+* Az.LogicApp: Cmdlet baru untuk Konfigurasi Batch dan Rakitan Akun Integrasi
 
 #### <a name="azaccounts"></a>Az.Accounts
 * Memperbarui Uninstall-AzureRm untuk menghapus modul dengan benar di Mac
 
 #### <a name="azbatch"></a>Az.Batch
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azcdn"></a>Az.Cdn
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azcognitiveservices"></a>Az.CognitiveServices
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azcompute"></a>Az.Compute
-* Memperbaiki masalah dengan penginstalan AEM jika id sumber daya disk memiliki kumpulan sumber daya huruf kecil di id sumber daya
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbaiki masalah terkait instalasi AEM jika id sumber daya disk memiliki resourcegroups berhuruf kecil di id sumber daya
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 * Memperbaiki dokumentasi untuk kartubebas
 
 #### <a name="azdatafactory"></a>Az.DataFactory
 * Menambahkan SsisProperties jika NodeCount tidak null untuk runtime integrasi terkelola.
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azeventgrid"></a>Az.EventGrid
-* Memperbarui teks bantuan untuk titik akhir guna menunjukkan bahwa sumber daya harus dibuat sebelum menggunakan cmdlet langganan peristiwa buat/perbarui.
+* Memperbarui teks bantuan untuk titik akhir guna menunjukkan bahwa sumber daya harus dibuat sebelum menggunakan cmdlet langganan acara buat/perbarui.
 
 #### <a name="azeventhub"></a>Az.EventHub
-* Menambahkan cmdlet baru untuk NetworkRuleSet pada Namespace layanan
+* Menambahkan cmdlet baru untuk NetworkRuleSet dari Namespace
 
 #### <a name="azhdinsight"></a>Az.HDInsight
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="aziothub"></a>Az.IotHub
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azkeyvault"></a>Az.KeyVault
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 * Memperbaiki dokumentasi untuk kartubebas
 
 #### <a name="azmachinelearning"></a>Az.MachineLearning
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azmedia"></a>Az.Media
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan nama jamak yang tidak digunakan lagi.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azmonitor"></a>Az.Monitor
   * Cmdlet baru untuk aturan peringatan berbasis metrik GenV2 (non klasik)
@@ -1729,124 +1729,124 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
       - Remove-AzMetricAlertRuleV2
       - Get-AzMetricAlertRuleV2
       - Add-AzMetricAlertRuleV2
-  * Memperbarui SDK Monitor ke versi 0.22.0-preview
+  * Memperbarui SDK Monitor ke versi 0.22.0-pratinjau
 
 #### <a name="aznetwork"></a>Az.Network
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 * Memperbaiki dokumentasi untuk kartubebas
 
 #### <a name="aznotificationhubs"></a>Az.NotificationHubs
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azoperationalinsights"></a>Az.OperationalInsights
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azpowerbiembedded"></a>Az.PowerBIEmbedded
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 * Memperbarui format tabel untuk SQL di mesin virtual azure
 * Menambahkan metode alternatif untuk mengambil lokasi di AzureFileShare
 * Memperbarui ScheduleRunDays di objek SchedulePolicy berdasarkan zona waktu
 
 #### <a name="azrediscache"></a>Az.RedisCache
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki dokumentasi untuk kartubebas
 
 #### <a name="azsql"></a>Az.Sql
-* Mengganti dependensi pada SDK Monitor dengan kode umum
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
-* Menyempurnakan proses pada klasifikasi beberapa kolom.
-* Menyertakan properti sku (nama sku, keluarga, kapasitas) sebagai respons dari Get-AzSqlServerServiceObjective dan format sebagai tabel secara default.
+* Mengganti dependensi pada Monitor SDK dengan kode umum
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
+* Menyempurnakan proses dari klasifikasi beberapa kolom.
+* Menyertakan properti sku (nama, keluarga, kapasitas sku) sebagai respons dari Get-AzSqlServerServiceObjective dan format sebagai tabel secara default.
 * Kemampuan untuk Get-AzSqlServerServiceObjective berdasarkan lokasi tanpa memerlukan server yang sudah ada sebelumnya di wilayah tersebut.
-* Mendukung parameter zona waktu dalam pembuatan Instans Terkelola.
+* Dukungan untuk parameter zona waktu dalam pembuatan Instans Terkelola.
 * Memperbaiki dokumentasi untuk kartubebas
 
 #### <a name="azwebsites"></a>Az.Websites
-* memperbaiki Set-AzWebApp dan Set-AzWebAppSlot agar tidak menghapus tag pada eksekusi
-* Memperbarui cmdlet dengan kata benda jamak menjadi tunggal dan menghentikan penggunaan nama jamak.
+* memperbaiki Set-AzWebApp dan Set-AzWebAppSlot untuk tidak menghapus tag pada eksekusi
+* Memperbarui cmdlet dengan kata benda jamak menjadi nama jamak tunggal, dan tidak digunakan lagi.
 * Memperbarui SDK WebSites.
 * Menghapus properti AdminSiteName dari PSAppServicePlan.
 
 ## <a name="170---april-2019"></a>1.7.0 - April 2019
-### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis utama sebelumnya
-* Ketersediaan umum modul `Az`
-* Untuk informasi lebih lanjut tentang modul `Az`, silakan kunjungi: https://aka.ms/azps-announce
-* Menambahkan pelengkap Location, ResourceGroup, dan resourcename: https://azure.microsoft.com/blog/completers-in-azure-powershell/
+### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis besar terakhir
+* Ketersediaan umum dari modul `Az`
+* Untuk informasi lebih lanjut tentang modul `Az`, kunjungi yang berikut: https://aka.ms/azps-announce
+* Menambahkan pelengkap Location, ResourceGroup, dan ResourceName: https://azure.microsoft.com/blog/completers-in-azure-powershell/
 * Menambahkan dukungan kartubebas ke cmdlet Get untuk Az.Compute dan Az.Network
-* Menambahkan autentikasi interaktif dan nama pengguna/kata sandi hanya untuk Windows PowerShell 5.1
+* Menambahkan autentikasi nama pengguna/kata sandi dan interaktif hanya untuk Windows PowerShell 5.1
 * Menambahkan dukungan untuk runbook Python 2 di Az.Automation
-* Az.LogicApp: cmdlet baru untuk Assembly Akun Integrasi dan Konfigurasi Batch
+* Az.LogicApp: Cmdlet baru untuk Konfigurasi Batch dan Rakitan Akun Integrasi
 
 #### <a name="azaccounts"></a>Az.Accounts
 * Memperbarui Add-AzEnvironment dan Set-AzEnvironment untuk menerima parameter AzureAnalysisServicesEndpointResourceId
 
 #### <a name="azanalysisservices"></a>Az.AnalysisServices
 * Menggunakan ServiceClient dalam cmdlet dataplane dan menghapus logika autentikasi asli
-* Membuat Add-AzureASAccount sebagai pembungkus Connect-AzAccount untuk menghindari perubahan yang berisiko
+* Membuat Add-AzureASAccount pembungkus Connect-AzAccount guna menghindari perubahan yang berisiko
 
 #### <a name="azautomation"></a>Az.Automation
 * Memperbaiki bug cmdlet New-AzAutomationSoftwareUpdateConfiguration untuk Inklusi. Sekarang parameter IncludedKbNumber dan IncludedPackageNameMask akan berfungsi.
-* Memperbaiki bug untuk grup dinamis manajemen pembaruan otomatisasi azure
+* Perbaikan bug untuk grup dinamis manajemen pembaruan otomatisasi azure
 
 #### <a name="azcompute"></a>Az.Compute
 * Menambahkan parameter HyperVGeneration ke New-AzDiskConfig dan New-AzSnapshotConfig
-* Mengizinkan pembuatan mesin virtual dengan gambar galeri dari penyewa lain.
+* Memungkinkan pembuatan mesin virtual dengan gambar galeri dari penyewa lain.
 
 #### <a name="azcontainerinstance"></a>Az.ContainerInstance
-* Memperbaiki masalah di parameter -Command New-AzContainerGroup yang menambahkan argumen kosong berikutnya
+* Memperbaiki masalah dalam parameter -Command New-AzContainerGroup yang menambahkan argumen kosong di belakang
 
 #### <a name="azdatafactory"></a>Az.DataFactory
 * Memperbarui versi SDK .Net ADF ke 3.0.2
-* Memperbarui Set-AzDataFactoryV2 cmdlet dengan parameter tambahan untuk pengaturan terkait RepoConfiguration.
+* Memperbarui cmdlet Set-AzDataFactoryV2 dengan parameter tambahan untuk pengaturan terkait RepoConfiguration.
 
 #### <a name="azresources"></a>Az.Resources
-* Meningkatkan penanganan penyedia untuk parameter 'Get-AzResource' saat menyediakan parameter '-ResourceId' atau '-ResourceGroupName', '-Name' dan '-ResourceType'
+* Meningkatkan penanganan penyedia untuk parameter 'Get-AzResource' saat menyediakan parameter '-ResourceId' atau '-ResourceGroupName', '-Name', dan '-ResourceType'
 * Meningkatkan penanganan kesalahan untuk 'Test-AzDeployment' dan 'Test-AzResourceGroupDeployment'
-    - Menangani kesalahan yang dikeluarkan di luar validasi penyebaran dan menyertakannya ke dalam output perintah sebagai gantinya
+    - Menangani kesalahan yang dilemparkan di luar validasi penyebaran dan memasukkannya ke dalam output perintah sebagai gantinya
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/6856
-* Menambahkan parameter sakelar '-IgnoreDynamicParameters' ke kumpulan cmdlet penyebaran untuk melewati permintaan dalam skenario skrip dan pekerjaan
+* Menambahkan parameter pengalihan '-IgnoreDynamicParameters' ke set cmdlet penyebaran untuk melewati prompt dalam skenario skrip dan pekerjaan
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/6856
 
 #### <a name="azsql"></a>Az.Sql
 * Mendukung Klasifikasi Data Database.
 
 #### <a name="azstorage"></a>Az.Storage
-* Melaporkan kesalahan detail saat membuat konteks Penyimpanan dengan parameter -UseConnectedAccount, tetapi tanpa login akun Azure
+* Melaporkan kesalahan detail saat konteks membuat Penyimpanan dengan parameter -UseConnectedAccount, tetapi tanpa proses masuk akun Azure
     - New-AzStorageContext
-* Mendukung Pengelolaan Properti Layanan Blob dari akun Penyimpanan tertentu dengan API bidang Manajemen
+* Mendukung Pengelolaan Properti Layanan Blob dari Akun penyimpanan tertentu dengan API bidang Manajemen
     - Update-AzStorageBlobServiceProperty
     - Get-AzStorageBlobServiceProperty
     - Enable-AzStorageBlobDeleteRetentionPolicy
     - Disable-AzStorageBlobDeleteRetentionPolicy
-* -AsJob mendukung Blob dan pengunggahan file dan pengunduhan cmdlet
+* Dukungan -AsJob untuk Blob dan pengunggahan file serta pengunduhan cmdlet
     - Get-AzStorageBlobContent
     - Set-AzStorageBlobContent
     - Get-AzStorageFileContent
     - Set-AzStorageFileContent
 
 ## <a name="160---march-2019"></a>1.6.0 - Maret 2019
-### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis utama sebelumnya
-* Ketersediaan umum modul `Az`
-* Untuk informasi lebih lanjut tentang modul `Az`, silakan kunjungi: https://aka.ms/azps-announce
-* Menambahkan pelengkap Location, ResourceGroup, dan resourcename: https://azure.microsoft.com/blog/completers-in-azure-powershell/
+### <a name="highlights-since-the-last-major-release"></a>Sorotan sejak rilis besar terakhir
+* Ketersediaan umum dari modul `Az`
+* Untuk informasi lebih lanjut tentang modul `Az`, kunjungi yang berikut: https://aka.ms/azps-announce
+* Menambahkan pelengkap Location, ResourceGroup, dan ResourceName: https://azure.microsoft.com/blog/completers-in-azure-powershell/
 * Menambahkan dukungan kartubebas ke cmdlet Get untuk Az.Compute dan Az.Network
-* Menambahkan autentikasi interaktif dan nama pengguna/kata sandi hanya untuk Windows PowerShell 5.1
+* Menambahkan autentikasi nama pengguna/kata sandi dan interaktif hanya untuk Windows PowerShell 5.1
 * Menambahkan dukungan untuk runbook Python 2 di Az.Automation
-* Az.LogicApp: cmdlet baru untuk Assembly Akun Integrasi dan Konfigurasi Batch
+* Az.LogicApp: Cmdlet baru untuk Konfigurasi Batch dan Rakitan Akun Integrasi
 
 #### <a name="azautomation"></a>Az.Automation
-* Otomatisasi Azure memperbarui perubahan manajemen untuk mendukung fitur baru berikut:
+* Manajemen pembaruan otomatisasi Azure berubah untuk mendukung fitur baru berikut:
     * Pengelompokan dinamis
-    * Skrip Pra-Posting
+    * Skrip pra-posting
     * Pengaturan penghidupan ulang
 
 #### <a name="azcompute"></a>Az.Compute
-* Memperbaiki masalah pada resolusi jalur di Get-AzVmBootDiagnosticsData
-* Memperbarui pustaka klien Azure Compute ke 25.0.0.
+* Memperbaiki masalah terkait resolusi jalur di Get-AzVmBootDiagnosticsData
+* Memperbarui pustaka klien Komputasi ke 25.0.0.
 
 #### <a name="azkeyvault"></a>Az.KeyVault
 * Menambahkan dukungan kartubebas ke cmdlet KeyVault
@@ -1857,17 +1857,17 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Menambahkan SnapshotRetentionInDays dalam kebijakan mesin virtual Azure untuk mendukung RP Instan
-* Menambahkan dukungan alur untuk kontainer yang tidak terdaftar
+* Menambahkan dukungan pipa untuk kontainer yang tidak terdaftar
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbarui dukungan kartubebas untuk Get-AzResource dan Get-AzResourceGroup
 * Memperbarui info masuk yang digunakan saat melakukan panggilan umum ke ARM
 
 #### <a name="azsql"></a>Az.Sql
-* mengubah param cmdlet Deteksi Ancaman (ExcludeDetectionType) dari DetectionType ke string[] untuk menjadikannya sebagai bukti di masa mendatang ketika DetectionTypes baru ditambahkan dan juga untuk mendukung pelengkapan otomatis.
+* mengubah param cmdlet Deteksi Ancaman (ExcludeDetectionType) dari DetectionType ke string[] untuk menjadikannya bukti masa depan ketika DetectionTypes baru ditambahkan dan untuk mendukung pelengkapan otomatis juga.
 
 #### <a name="azstorage"></a>Az.Storage
-* Mendukung Kebijakan Manajemen Get/Set/Remove pada akun Penyimpanan
+* Mendukung untuk Mendapatkan/Mengatur/Menghapus Kebijakan Manajemen pada Akun penyimpanan
     - Atur-AzStorageAccountManagementPolicy
     - Get-AzStorageAccountManagementPolicy
     - Hapus-AzStorageAccountManagementPolicy
@@ -1876,7 +1876,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Baru-AzStorageAccountManagementPolicyRule
 
 #### <a name="azwebsites"></a>Az.Websites
-* Memperbaiki bug templat ARM yang memutus kloning semua slot menggunakan 'New-AzWebApp -IncludeSourceWebAppSlots'
+* Memperbaiki bug templat ARM yang merusak kloning semua slot menggunakan 'New-AzWebApp -IncludeSourceWebAppSlots'
 
 ## <a name="150---march-2019"></a>1.5.0 - Maret 2019
 #### <a name="azaccounts"></a>Az.Accounts
@@ -1885,22 +1885,22 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 
 #### <a name="azautomation"></a>Az.Automation
 * Memperbaiki masalah saat menerima jadwal bulanan tertentu di beberapa cmdlet Azure Automation
-* Memperbaiki Get-AzAutomationDscNode yang memunculkan hanya 20 node teratas. Sekarang memunculkan semua node
+* Memperbaiki Get-AzAutomationDscNode yang menampilkan hanya 20 node teratas. Sekarang ia menampilkan semua node
 
 #### <a name="azcdn"></a>Az.Cdn
-* Menambahkan cmdlet Powershell baru untuk Mengaktifkan/Menonaktifkan Https Domain Kustom dan menghentikan penggunaan yang lama
+* Menambahkan cmdlet Powershell baru untuk Mengaktifkan/Menonaktifkan Https Domain Kustom dan tidak menggunakan lagi yang lama
 
 #### <a name="azcompute"></a>Az.Compute
-* Menambahkan dukungan kartubebas ke cmdlet Get
+* Menambahkan dukungan kartubebas ke cmdlet Dapatkan
 
 #### <a name="azdatafactory"></a>Az.DataFactory
 * Memperbarui versi SDK .Net ADF ke 3.0.1
 
 #### <a name="azlogicapp"></a>Az.LogicApp
-* Memperbaiki ListWorkflows yang hanya mengambil halaman pertama hasil
+* Perbaikan untuk ListWorkflows yang hanya mengambil halaman pertama hasil
 
 #### <a name="aznetwork"></a>Az.Network
-* Menambahkan dukungan kartubebas ke cmdlet Network
+* Menambahkan dukungan kartubebas ke cmdlet Jaringan
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
 * Menambahkan server Sql di dukungan mesin virtual Azure
@@ -1921,11 +1921,11 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - Memperbaiki perilaku kasus tepi saat membuat pengaturan diagnostik baru.
 
 #### <a name="azstorage"></a>Az.Storage
-* Mendukung BlockBlobStorage Kind saat membuat akun Penyimpanan      - New-AzStorageAccount
+* Mendukung Jenis BlockBlobStorage saat membuat Akun penyimpanan - New-AzStorageAccount
 
 ## <a name="140---february-2019"></a>1.4.0 - Februari 2019
 #### <a name="azanalysisservices"></a>Az.AnalysisServices
-* Menghentikan penggunaan cmdlet AddAzureASAccount
+* Tidak menggunakan lagi cmdlet AddAzureASAccount
 
 #### <a name="azautomation"></a>Az.Automation
 * Memperbarui bantuan untuk Import-AzAutomationDscNodeConfiguration
@@ -1933,26 +1933,26 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Meningkatkan penanganan kesalahan untuk cmdlet Import-AzAutomationDscConfiguration
 
 #### <a name="azcognitiveservices"></a>Az.CognitiveServices
-* Menambahkan CustomSubdomainName sebagai parameter opsional baru untuk New-AzCognitiveServicesAccount yang digunakan untuk menentukan subdomain pada sumber daya.
+* Menambahkan CustomSubdomainName sebagai parameter opsional baru untuk New-AzCognitiveServicesAccount yang digunakan untuk menentukan subdomain untuk sumber daya.
 
 #### <a name="azcompute"></a>Az.Compute
-* Memperbaiki masalah set parameter ID
-* Memperbarui Get-AzVMExtension untuk mencantumkan semua ekstensi yang dipasang jika parameter Name tidak disediakan
+* Memperbaiki masalah terkait set parameter ID
+* Memperbarui Get-AzVMExtension untuk mencantumkan semua ekstensi yang diinstal jika parameter Name tidak disediakan
 * Menambahkan parameter Tag dan ResourceId ke cmdlet Update-AzImage
 * Get-AzVmssVM tanpa ID instans dan dengan InstanceView dapat mencantumkan mesin virtual VMSS dengan tampilan instans.
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
-* Menambahkan cmdlet untuk enumerasi dan pemulihan item ADL yang terhapus
+* Menambahkan cmdlet untuk pencacahan dan pemulihan item yang dihapus ADL
 
 #### <a name="azeventhub"></a>Az.EventHub
-* Menambahkan properti boolean baru SkipEmptyArchives untuk Melewati Arsip Kosong di kelas CaptureDescription Eventhub
+* Menambahkan properti boolean baru SkipEmptyArchives untuk Melewatkan Arsip Kosong di kelas CaptureDescription Eventhub
 
 #### <a name="azkeyvault"></a>Az.KeyVault
 * Memperbaiki penandaan di Set-AzKeyVaultSecret
 
 #### <a name="azlogicapp"></a>Az.LogicApp
 * Menambahkan sku Dasar untuk Akun Integrasi
-* Menambahkan XSLT 2.0, XSLT 3.0 dan Jenis Peta Dinamis
+* Menambahkan XSLT 2.0, XSLT 3.0, dan Jenis Peta Cair
 * Cmdlet baru untuk Assembly Akun Integrasi
     - Get-AzIntegrationAccountAssembly
     - New-AzIntegrationAccountAssembly
@@ -1963,7 +1963,7 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
     - New-AzIntegrationAccountBatchConfiguration
     - Remove-AzIntegrationAccountBatchConfiguration
     - Set-AzIntegrationAccountBatchConfiguration
-* Memperbarui SDK Aplikasi Logika ke versi 4.1.0
+* Memperbaru SDK Logic App ke versi 4.1.0
 
 #### <a name="azmonitor"></a>Az.Monitor
 * Memperbarui bantuan untuk Get-AzMetric
@@ -1972,9 +1972,9 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbarui contoh bantuan untuk Add-AzApplicationGatewayCustomError
 
 #### <a name="azoperationalinsights"></a>Az.OperationalInsights
-* Dukungan tambahan untuk sumber data New dan Get ApplicationInsights.
-    - Menambahkan jenis 'ApplicationInsights' baru untuk mendukung Get spesifik dan Get semua sumber data ApplicationInsights untuk ruang kerja tertentu.
-    - Menambahkan cmdlet New-AzOperationalInsightsApplicationInsightsDataSource untuk membuat sumber data dengan parameter sumber daya Application-Insights yang diberikan: Id langganan, resourceGroupName, dan name.
+* Dukungan tambahan untuk Baru dan Dapatkan sumber data ApplicationInsights.
+    - Menambahkan jenis 'ApplicationInsights' baru untuk mendukung Dapatkan spesifik dan Dapatkan semua sumber data ApplicationInsights untuk ruang kerja tertentu.
+    - Menambahkan cmdlet New-AzOperationalInsightsApplicationInsightsDataSource untuk membuat sumber data dengan parameter sumber daya yang diberikan Application-Insights: Id berlangganan, resourceGroupName, dan nama.
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki masalah https://github.com/Azure/azure-powershell/issues/8166
@@ -1983,21 +1983,21 @@ Memperbaiki cmdlet New-AzSqlDatabaseSecondary untuk memeriksa keberadaan Partner
 * Memperbaiki bug yang mencegah pembuatan KeyCredentials berulang
 
 #### <a name="azsql"></a>Az.Sql
-* Menambahkan dukungan untuk tingkat DB Hyperscale SQL
-* Memperbaiki bug ketika pemulihan bisa gagal karena pengaturan properti yang tidak perlu dalam permintaan pemulihan
+* Menambahkan dukungan untuk tingkat Hyperscale DB SQL
+* Memperbaiki bug di mana pemulihan bisa gagal karena pengaturan properti yang tidak perlu dalam permintaan pemulihan
 
 #### <a name="azwebsites"></a>Az.Websites
-* Memperbaiki contoh pada Get-AzWebAppSlotMetrics
+* Contoh yang benar dalam Get-AzWebAppSlotMetrics
 
 ## <a name="130---february-2019"></a>1.3.0 - Februari 2019
 #### <a name="azaccounts"></a>Az.Accounts
-* Memperbarui ke versi terbaru ClientRuntime
+* Perbarui ke versi terbaru ClientRuntime
 
 #### <a name="azanalysisservices"></a>Az.AnalysisServices
 Ketersediaan umum untuk modul Az.AnalysisServices.
 
 #### <a name="azcompute"></a>Az.Compute
-* Ekstensi AEM: Menambahkan dukungan untuk disk UltraSSD dan P60,P70 dan P80
+* Ekstensi AEM: Menambahkan dukungan untuk disk UltraSSD dan P60, P70, dan P80
 * Memperbarui deskripsi bantuan untuk Set-AzVMBootDiagnostics
 * Memperbarui deskripsi dan contoh bantuan untuk Update-AzImage
 
@@ -2007,23 +2007,23 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki penandaan untuk grup sumber daya
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/8166
-* Memperbaiki masalah ketika `Get-AzureRmRoleAssignment` tidak mematuhi -ErrorAction
+* Memperbaiki masalah di mana `Get-AzureRmRoleAssignment` tidak menghormati -ErrorAction
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/8235
 
 #### <a name="azsql"></a>Az.Sql
 * Menambahkan Get/Set AzSqlDatabaseBackupShortTermRetentionPolicy
-* Memperbaiki masalah ketika tidak masuk ke akun Azure akan mengakibatkan pengecualian nullref saat menjalankan cmdlet SQL
+* Memperbaiki masalah saat tidak masuk ke akun Azure akan menghasilkan pengecualian nullref saat menjalankan cmdlet SQL
 * Memperbaiki pengecualian ref null di Get-AzSqlCapability
 
 ## <a name="121---january-2019"></a>1.2.1 - Januari 2019
 #### <a name="azaccounts"></a>Az.Accounts
-* Merilis dengan versi Autentikasi yang benar
+* Rilis dengan versi Autentikasi yang benar
 
 #### <a name="azanalysisservices"></a>Az.AnalysisServices
-* Merilis dengan dependensi Autentikasi yang diperbarui
+* Rilis dengan dependensi Autentikasi yang diperbarui
 
 #### <a name="azrecoveryservices"></a>Az.RecoveryServices
-* Merilis dengan dependensi Autentikasi yang diperbarui
+* Rilis dengan dependensi Autentikasi yang diperbarui
 
 ## <a name="120---january-2019"></a>1.2.0 - Januari 2019
 #### <a name="azaccounts"></a>Az.Accounts
@@ -2053,7 +2053,7 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 * Memperbarui versi SDK .Net ADF ke 3.0.0
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
-* Memperbaiki masalah titik akhir ADLS saat menggunakan MSI
+* Memperbaiki permasalahan titik akhir ADLS saat menggunakan MSI
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/7462
 * Memperbarui URL bantuan online yang salah
 
@@ -2068,31 +2068,31 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki contoh yang salah dalam dokumentasi referensi 'New-AzADAppCredential' dan 'New-AzADSpCredential'
-* Memperbaiki masalah ketika jalur untuk parameter '-TemplateFile' tidak diselesaikan sebelum menjalankan cmdlet penyebaran grup sumber daya
-* Az.Resources: Memperbaiki dokumentasi untuk nilai default New-AzureRmPolicyDefinition -Mode
+* Memperbaiki masalah di mana jalur untuk parameter '-TemplateFile' tidak diselesaikan sebelum menjalankan cmdlet penyebaran grup sumber daya
+* Az.Resources: Dokumentasi yang benar untuk nilai default -Mode New-AzureRmPolicyDefinition
 * Az.Resources: Memperbaiki masalah https://github.com/Azure/azure-powershell/issues/7522
 * Az.Resources: Memperbaiki masalah https://github.com/Azure/azure-powershell/issues/5747
 * Memperbaiki masalah pemformatan dengan objek 'PSResourceGroupDeployment'
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/2123
 
 #### <a name="azservicefabric"></a>Az.ServiceFabric
-* Memutar kembali ketika sertifikat ditambahkan ke model VMSS tetapi pengecualian diberikan untuk memperbaiki bug: https://github.com/Azure/service-fabric-issues/issues/932
+* Rollback ketika sertifikat ditambahkan ke model VMSS tetapi pengecualian dilemparkan ini adalah untuk memperbaiki bug: https://github.com/Azure/service-fabric-issues/issues/932
 * Memperbaiki beberapa pesan kesalahan.
 * Memperbaiki pembuatan kluster dengan templat ARM default untuk New-AzServiceFabriCluster yang tidak berfungsi dengan migrasi ke Az.
-* Memperbaiki penambahan sertifikat kluster/aplikasi untuk ditambahkan hanya ke VM Scale Sets yang sesuai kluster dengan memeriksa id kluster di ekstensi.
+* Memperbaiki penambahan sertifikat kluster/aplikasi untuk hanya ditambahkan ke VM Scale Sets yang sesuai dengan kluster dengan memeriksa id kluster di ekstensi.
 
 #### <a name="azsignalr"></a>Az.SignalR
 * Memperbarui URL bantuan online yang salah
 
 #### <a name="azsql"></a>Az.Sql
 * Memperbarui URL bantuan online yang salah
-* Memperbarui deskripsi parameter untuk parameter LicenseType dengan nilai yang memungkinkan
-* Memperbaiki pembaruan identitas instans terkelola yang tidak berfungsi ketika identitas tersebut satu-satunya properti yang diperbarui
-* Mendukung kolase kustom pada instans terkelola
+* Memperbarui deskripsi parameter untuk parameter LicenseType dengan nilai yang mungkin
+* Memperbaiki pembaruan identitas instans terkelola yang tidak berfungsi saat itu adalah satu-satunya properti yang diperbarui
+* Dukungan untuk kolektasi kustom pada instans terkelola
 
 #### <a name="azstorage"></a>Az.Storage
 * Memperbarui URL bantuan online yang salah
-* Memberikan pesan kesalahan detail saat melakukan get/set Logging/Metric klasik di Akun Penyimpanan Premium, karena Akun Premium Storage tidak mendukung Logging/Metric klasik.
+* Memberikan pesan kesalahan detail saat mendapatkan/mengatur Pengelogan/Metrik klasik di Akun Premium Storage, karena Akun Premium Storage tidak mendukung Pengelogan/Metrik klasik.
     - Get/Set-AzStorageServiceLoggingProperty
     - Get/Set-AzStorageServiceMetricsProperty
 
@@ -2102,14 +2102,14 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 #### <a name="azwebsites"></a>Az.Websites
 * Memperbarui URL bantuan online yang salah
 * Memperbaiki 'New-AzWebAppSSLBinding' untuk mengunggah sertifikat ke resourcegroup+location yang benar jika aplikasi dihosting di ASE.
-* Memperbaiki 'New-AzWebAppSSLBinding' agar tidak menimpa tag saat mengikat sertifikat SSL ke aplikasi
+* Memperbaiki 'New-AzWebAppSSLBinding' untuk tidak menimpa tag saat mengikat sertifikat SSL ke aplikasi
 
 ## <a name="110---january-2019"></a>1.1.0 - Januari 2019
 #### <a name="azaccounts"></a>Az.Accounts
-* Menambahkan Cakupan 'Local' ke Enable-AzureRmAlias
+* Menambahkan Cakupan 'Lokal' ke Enable-AzureRmAlias
 
 #### <a name="azcompute"></a>Az.Compute
-* Name sekarang bersifat opsional dalam parameter ID yang ditetapkan untuk Restart/Start/Stop/Remove/Set-AzVM dan Save-AzVMImage
+* Nama sekarang opsional dalam parameter ID yang ditetapkan untuk Restart/Start/Stop/Remove/Set-AzVM dan Save-AzVMImage
 * Memperbarui deskripsi ID dalam file bantuan
 * Memperbaiki masalah kompatibilitas mundur dengan modul Az.Accounts
 
@@ -2119,42 +2119,42 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 
 #### <a name="azeventgrid"></a>Az.EventGrid
 * Memperbarui penggunaan versi API 01-01-2019.
-* Memperbarui cmdlet berikut untuk mendukung skenario baru dalam versi API 2019-01-01
+* Memperbarui cmdlet berikut untuk mendukung skenario baru dalam versi API 01-01-2019
     - New-AzureRmEventGridSubscription: Menambahkan parameter opsional baru untuk menentukan:
-        - Waktu Hidup Peristiwa,
-        - Jumlah maksimum upaya pengiriman untuk peristiwa tersebut,
-        - Titik akhir surat gagal.
+        - Waktu Aktif Kejadian,
+        - Jumlah maksimum upaya pengiriman untuk kejadian tersebut,
+        - Titik akhir pengiriman yang gagal.
     - Update-AzureRmEventGridSubscription: Menambahkan parameter opsional baru untuk menentukan:
-        - Waktu Hidup Peristiwa,
-        - Jumlah maksimum upaya pengiriman untuk peristiwa tersebut,
-        - Titik akhir surat gagal.
-* Menambahkan nilai enum baru (yaitu, storageQueue dan hybridConnection) untuk opsi EndpointType dalam cmdlet New-AzureRmEventGridSubscription dan Update-AzureRmEventGridSubscription.
-* Menampilkan pesan peringatan jika pembuatan atau pembaruan langganan peristiwa diharapkan melibatkan tindakan manual dari pengguna.
+        - Waktu Aktif Kejadian,
+        - Jumlah maksimum upaya pengiriman untuk kejadian tersebut,
+        - Titik akhir pengiriman yang gagal.
+* Menambahkan nilai enum baru (yaitu, storageQueue dan hybridConnection) untuk opsi EndpointType dalam New-AzureRmEventGridSubscription dan Update-AzureRmEventGridSubscription cmdlet.
+* Menampilkan pesan peringatan jika membuat atau memperbarui langganan acara diharapkan memerlukan tindakan manual dari pengguna.
 
 #### <a name="aziothub"></a>Az.IotHub
 * Memperbarui SDK IotHub ke versi terbaru
 
 #### <a name="azlogicapp"></a>Az.LogicApp
-* Get-AzLogicApp mencantumkan semua tanpa Name yang ditentukan
+* Get-AzLogicApp mencantumkan semua tanpa Nama yang ditentukan
 
 #### <a name="azresources"></a>Az.Resources
 * Memperbaiki masalah set parameter saat menyediakan parameter '-ODataQuery' dan '-ResourceId' untuk 'Get-AzResource'
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/7875
 * Memperbaiki penanganan parameter -Custom di New/Set-AzPolicyDefinition
 * Memperbaiki kesalahan ketik dalam dokumentasi New-AzDeployment
-* Mewajibkan parameter '-MailNickname' untuk 'New-AzADUser'
+* Membuat parameter '-MailNickname' wajib untuk 'New-AzADUser'
     - Informasi selengkapnya di sini: https://github.com/Azure/azure-powershell/issues/8220
 
 #### <a name="azsignalr"></a>Az.SignalR
 * Memperbaiki masalah kompatibilitas mundur dengan modul Az.Accounts
 
 #### <a name="azsql"></a>Az.Sql
-* Mengonversi dependensi klien manajemen Penyimpanan ke implementasi SDK umum.
+* Mengonversi Ketergantungan klien manajemen penyimpanan ke implementasi SDK umum.
 
 #### <a name="azstorage"></a>Az.Storage
-* Mengatur StorageAccountName pada konteks Penyimpanan sebagai Nama Akun Penyimpanan yang sebenarnya, saat dibuat dengan Sas Token, OAuth, atau Anonim
+* Mengatur StorageAccountName dari konteks Penyimpanan sebagai Nama Akun Penyimpanan yang sebenarnya, saat dibuat dengan Token Sas, OAuth, atau Anonymous
     - New-AzStorageContext
-* Membuat Token Sas Objek Snapshot Blob dengan parameter '-FullUri', memperbaiki Uri yang dimunculkan menjadi snapshot Uri
+* Membuat Token Sas Objek Snapshot Blob dengan parameter '-FullUri', memperbaiki Uri yang ditampilkan menjadi Uri snapshot
     - New-AzStorageBlobSASToken
 
 #### <a name="azwebsites"></a>Az.Websites
@@ -2166,7 +2166,7 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 
 - Ketersediaan Umum Modul Az
 - Bantuan online untuk setiap modul
-- Untuk detail selengkapnya dan peta strategi, lihat [Halaman Pengumuman Az](https://aka.ms/azps-announce)
+- Untuk detail selengkapnya dan peta jalan, lihat [halaman Pengumuman Az](https://aka.ms/azps-announce)
 - Lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk informasi tentang migrasi dari AzureRM
 
 ### <a name="azaccounts"></a>Az.Accounts
@@ -2174,16 +2174,16 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 - Memperbaiki format tabel untuk jenis profil dan konteks
 
 ### <a name="azapimanagement"></a>Az.ApiManagement
-- Memperbaiki #7002
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perbaikan untuk #7002
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azbatch"></a>Az.Batch
-- Menambahkan kemampuan untuk melihat versi Agen Node Azure Batch yang berjalan di masing-masing mesin virtual dalam kumpulan, melalui properti `NodeAgentInformation` baru di `PSComputeNode`.
-- Default `Caching` untuk `PSDataDisk` sekarang `ReadWrite`, bukan `None`.
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Menambahkan kemampuan untuk melihat versi Agen Node Azure Batch apa yang berjalan di masing-masing mesin virtual dalam kumpulan, melalui properti baru `NodeAgentInformation` di `PSComputeNode`.
+- Default `Caching` untuk `PSDataDisk` sekarang `ReadWrite` bukan `None`.
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azbilling"></a>Az.Billing
-- Menggabungkan Penagihan, Konsumsi, dan cmdlet UsageAggregates, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Menggabungkan cmdlet Penagihan, Konsumsi, dan UsageAggregates, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azcognitivservices"></a>Az.CognitivServices
 - Menambahkan pelengkap untuk SkuName dan Typem yang tersedia di New-AzureRmCognitiveServicesAccount operasi
@@ -2193,13 +2193,13 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 - Menambahkan dukungan ManagedIdentity
 
 ### <a name="azdatalakeanalytics"></a>Az.DataLakeAnalytics
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azdatalakestore"></a>Az.DataLakeStore
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azmonitor"></a>Az.Monitor
-- Mengganti nama Az.Insights menjadi Az.Monitor dan perubahan berisiko kecil lainnya, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
+- Mengganti nama Az.Insights menjadi Az.Monitor dan perubahan kecil yang berisiko lainnya, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azkeyvault"></a>Az.KeyVault
 - Menghapus properti 'PurgeDisabled' yang tidak digunakan lagi dari jenis output
@@ -2208,11 +2208,11 @@ Ketersediaan umum untuk modul Az.RecoveryServices.
 - Menyertakan cmdlet dari modul Az.MachineLearningCompute
 
 ### <a name="azmedia"></a>Az.Media
-- Menghapus alias -Tags yang tidak digunakan lagi dari New-AzMediaService
+- Menghapus alias -Tag yang tidak digunakan lagi dari New-AzMediaService
 
 ### <a name="aznetwork"></a>Az.Network
 Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
-    - Cmdlet baru ditambahkan:
+    - Cmdlet baru yang ditambahkan:
         - Add-AzureRmApplicationGatewayRewriteRuleSet
         - Get-AzureRmApplicationGatewayRewriteRuleSet
         - New-AzureRmApplicationGatewayRewriteRuleSet
@@ -2221,49 +2221,49 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
         - New-AzureRmApplicationGatewayRewriteRule
         - New-AzureRmApplicationGatewayRewriteRuleActionSet
         - New-AzureRmApplicationGatewayRewriteRuleHeaderConfiguration
-    - Memperbarui cmdlet dengan parameter opsional -RewriteRuleSet
+    - Cmdlet diperbarui dengan parameter opsional -RewriteRuleSet
         - New-AzureRmApplicationGateway
         - New-AzureRmApplicationGatewayRequestRoutingRule
         - Add-AzureRmApplicationGatewayRequestRoutingRule
         - New-AzureRmApplicationGatewayPathRuleConfig
         - Add-AzureRmApplicationGatewayUrlPathMapConfig
         - New-AzureRmApplicationGatewayUrlPathMapConfig Menambahkan Dukungan KeyVault ke Application Gateway menggunakan Identity.
-    - Memperbarui cmdlet dengan parameter opsional -KeyVaultSecretId, -KeyVaultSecret
+    - Cmdlet diperbarui dengan parameter opsional -KeyVaultSecretId, -KeyVaultSecret
         - Add-AzApplicationGatewaySslCertificate
         - New-AzApplicationGatewaySslCertificate
         - Set-AzApplicationGatewaySslCertificate
-    - Memperbarui cmdlet New-AzApplicationGateway dengan parameter opsional -UserAssignedIdentity
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+    - Cmdlet New-AzApplicationGateway diperbarui dengan parameter opsional -UserAssignedIdentity
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azoperationalinsights"></a>Az.OperationalInsights
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azprofile"></a>Az.Profile
 - Mengubah nama modul menjadi Az.Accounts
 
 ### <a name="azrecoveryservices"></a>Az.RecoveryServices
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azresources"></a>Az.Resources
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azservicefabric"></a>Az.ServiceFabric
-- Mendukung Penentuan sertifikat berdasarkan nama umum dan thumbprint
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Mendukung penentuan sertifikat dengan nama umum dan cap jempol
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azsignalr"></a>Az.SIgnalR
-- Ketersediaan Umum untuk cmdlet PowerShell pada SIgnalR
+- Ketersediaan Umum untuk cmdlet PowerShell untuk SIgnalR
 
 ### <a name="azsql"></a>Az.Sql
 - Menambahkan jenis deteksi Data_Exfiltration dan Unsafe_Action baru ke cmdlet Deteksi Ancaman
 - Memperbarui contoh dokumentasi untuk cmdlet Audit Sql
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azstorage"></a>Az.Storage
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ### <a name="azwebsites"></a>Az.Websites
-- Perubahan berisiko kecil, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide)  untuk detailnya
+- Perubahan kecil yang berisiko, lihat [Panduan Migrasi](https://aka.ms/azps-migration-guide) untuk detailnya
 
 ## <a name="070---december-2018"></a>0.7.0 - Desember 2018
 
@@ -2273,7 +2273,7 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 
 ### <a name="azcompute"></a>Az.Compute
 
-* Menambahkan dukungan untuk UltraSSD dan Gambar Galeri dalam set param sederhana untuk cmdlet `New-AzVm(ss)`.
+* Menambahkan dukungan untuk Gambar UltraSSD dan Galeri dalam set param sederhana untuk cmdlet `New-AzVm(ss)`.
 
 ### <a name="azdatalakestore"></a>Az.DataLakeStore
 
@@ -2282,29 +2282,29 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 ### <a name="azfrontdoor"></a>Az.FrontDoor
 
 * Memperbaiki beberapa hyperlink rusak
-    - Memperbaiki link ke artikel cmdlet New-AzureRmFrontDoorHealthProbeSettingObject dalam artikel New-AzureRmFrontDoor dan Set-AzureRmFrontDoor.
-    - Memperbaiki link ke artikel cmdlet New-AzureRmFrontDoorRuleGroupOverrideObject dalam artikel New-AzureRmFrontDoorManagedRuleObject.
+    - Dalam artikel New-AzureRmFrontDoor dan Set-AzureRmFrontDoor, memperbaiki tautan ke artikel cmdlet New-AzureRmFrontDoorHealthProbeSettingObject.
+    - Dalam artikel New-AzureRmFrontDoorManagedRuleObject, memperbaiki tautan ke artikel cmdlet New-AzureRmFrontDoorRuleGroupOverrideObject.
 
 ### <a name="azrecoveryservices"></a>Az.RecoveryServices
 
-* Menambahkan validasi sisi klien untuk operasi pemulihan Berbagi File Azure.
-* Menjadikan storageAccountName dan storageAccountResourceGroupName sebagai opsional untuk pemulihan afs.
+* Menambahkan validasi sisi klien untuk operasi pemulihan Azure File Share.
+* Membuat storageAccountName dan storageAccountResourceGroupName opsional untuk pemulihan afs.
 
 ### <a name="azresources"></a>Az.Resources
 
-* Memperbaiki https://github.com/Azure/azure-powershell/issues/7679
+* Perbaikan untuk https://github.com/Azure/azure-powershell/issues/7679
     - Memperbarui Get-AzureRmRoleAssignment untuk menggunakan cakupan langganan jika disediakan saat meminta administrator klasik.
 
 ### <a name="azsql"></a>Az.Sql
 
 * Perubahan kecil untuk transisi AzureRM ke Az mendatang
-* Memperbaiki masalah dengan menggunakan Get-AzureRmSqlDatabaseVulnerabilityAssessment dengan inti DotNet
-* Mengubah dokumentasi pesan bantuan yang terkait dengan cmdlet Audit SQL.
+* Memperbaiki permasalahan menggunakan Get-AzureRmSqlDatabaseVulnerabilityAssessment dengan inti DotNet
+* Memodifikasi dokumentasi pesan bantuan yang terkait dengan cmdlet Auditing SQL.
 
 ### <a name="azstorage"></a>Az.Storage
 
 * Menambahkan -EnableHierarchicalNamespace ke New-AzureRmStorageAccount
-* Memperbaiki masalah bahwa cmdlet Copy File tidak dapat menggunakan kembali konteks sumber di tujuan saat tidak memasukkan -DestContext
+* Memperbaiki permasalahan cmdlet Salin File tidak dapat menggunakan kembali konteks sumber di tujuan saat tidak memasukkan -DestContext
     - Start-AzureStorageFileCopy
 * Mendukung konfigurasi Situs Web Statis
     - Enable-AzureStorageStaticWebsite
@@ -2322,10 +2322,10 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 
 ### <a name="azautomation"></a>Az.Automation
 * Cmdlet Azure Automation berbasis Swagger
-* Menambahkan cmdlet Update Management
-* Menambahkan cmdlet Source Control
+* Menambahkan cmdlet Manajemen Pembaruan
+* Menambahkan cmdlet Kontrol Sumber
 * Menambahkan cmdlet Remove-AzureRmAutomationHybridWorkerGroup
-* Memperbaiki perintah Node Pendaftaran DSC
+* Memperbaiki perintah DSC Register Node
 
 ### <a name="azcompute"></a>Az.Compute
 * Memperbaiki masalah identitas untuk identitas SystemAssigned
@@ -2341,14 +2341,14 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 * Menambahkan cmdlet New-AzureRmApplicationGatewayCustomError, Add-AzureRmApplicationGatewayCustomError, Get-AzureRmApplicationGatewayCustomError, Set-AzureRmApplicationGatewayCustomError, Remove-AzureRmApplicationGatewayCustomError, Add-AzureRmApplicationGatewayHttpListenerCustomError, Get-AzureRmApplicationGatewayHttpListenerCustomError, Set-AzureRmApplicationGatewayHttpListenerCustomError, Remove-AzureRmApplicationGatewayHttpListenerCustomError
 * Menambahkan ICMP kembali ke Protokol Jaringan AzureFirewall yang didukung
 * Memperbarui cmdlet Test-AzureRmNetworkWatcherConnectivity, menambahkan validasi pada id tujuan, alamat, dan port.
-* Memperbaiki masalah penggunaan memori di peta VirtualNetwork
+* Memperbaiki permasalahan penggunaan memori di peta VirtualNetwork
 
 ### <a name="azrecoveryservicesbackup"></a>Az.RecoveryServices.Backup
-* Memperbaiki perubahan kebijakan untuk berbagi file yang dilindungi.
-* Mengonversi zona waktu kebijakan menjadi huruf besar.
+* Perbaikan untuk kebijakan pengubahan untuk berbagi file yang dilindungi.
+* Mengubah zona waktu kebijakan menjadi huruf besar.
 
 ### <a name="azrecoveryservicessiterecovery"></a>Az.RecoveryServices.SiteRecovery
-* Memperbaiki contoh di New-AzureRmRecoveryServicesAsrProtectableItem
+* Mengoreksi contoh di New-AzureRmRecoveryServicesAsrProtectableItem
 * Memperbarui dependensi untuk masalah pemetaan jenis
 
 ### <a name="azrelay"></a>Az.Relay
@@ -2357,13 +2357,13 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 ### <a name="azresources"></a>Az.Resources
 * Memperbarui dokumentasi bantuan untuk parameter terkait identitas sumber daya di `New-AzureRmPolicyAssignment` dan `Set-AzureRmPolicyAssignment`
 * Menambahkan contoh untuk New-AzureRmPolicyDefinition yang menggunakan -Metadata
-* Melakukan perbaikan agar memungkinkan pelestarian kasus di kunci Tag di NetStandard: #7678 #7703
+* Memperbaiki guna memungkinkan untuk mempertahankan huruf besar atau kecil di kunci Tag di NetStandard: #7678 #7703
 
 ### <a name="azservicefabric"></a>Az.ServiceFabric
-* Menambahkan pesan penghentian untuk perubahan berisiko yang akan datang
+* Menambahkan pesan penghentian untuk perubahan yang akan datang
 
 ### <a name="azsql"></a>Az.Sql
-* Menambahkan cmdlet baru untuk operasi CRUD pada Instans Terkelola Database Azure Sql dan Database Terkelola Azure Sql
+* Menambahkan cmdlet baru untuk operasi CRUD pada Azure Sql Database Managed Instance dan Azure Sql Managed Database
     - Get-AzureRmSqlInstance
     - New-AzureRmSqlInstance
     - Set-AzureRmSqlInstance
@@ -2372,30 +2372,30 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
     - New-AzureRmSqlInstanceDatabase
     - Restore-AzureRmSqlInstanceDatabase
     - Remove-AzureRmSqlInstanceDatabase
-* Mengaktifkan Manajemen Kebijakan Audit yang Diperpanjang di server atau database.
+* Mengaktifkan Manajemen Kebijakan Audit Diperpanjang di server atau database.
     - Parameter baru (PredicateExpression) ditambahkan untuk mengaktifkan pemfilteran log audit.
-    - Cmdlet dimodifikasi untuk menggunakan klien SQL, bukan klien Legacy.
+    - Cmdlet dimodifikasi untuk menggunakan klien SQL alih-alih klien Legacy.
     - Set-AzureRmSqlServerAuditing.
     - Get-AzureRmSqlServerAuditing.
     - Set-AzureRmSqlDatabaseAuditing.
     - Get-AzureRmSqlDatabaseAuditing.
-* Memperbaiki masalah saat menggunakan Update-AzureRmSqlDatabaseVulnerabilityAssessmentSettings dengan kumpulan parameter nama akun penyimpanan
+* Memperbaiki permasalahan penggunaan Update-AzureRmSqlDatabaseVulnerabilityAssessmentSettings dengan set parameter nama akun penyimpanan
 
 ## <a name="050---november-2018"></a>0.5.0 - November 2018
 #### <a name="general"></a>Umum
-* Menambahkan kPelengkap Sumber Daya ke banyak cmdlet inti - hal ini memungkinkan Anda untuk menandai nama sumber daya yang ada saat memanggil cmdlet secara interaktif
+* Menambahkan Pelengkap Sumber Daya ke banyak cmdlet inti - hal ini memungkinkan Anda tab melalui nama sumber daya yang ada saat memanggil cmdlet secara interaktif
 
 #### <a name="azprofile"></a>Az.Profile
 * Memperbarui kode umum untuk menggunakan versi terbaru ClientRuntime
 * Mengganti nama param TenantId di cmdlet Connect-AzAccount ke Penyewa dan menambahkan alias untuk TenantId
 * Memperbarui deskripsi TenantId untuk Connect-AzAccount
-* Memperbaiki pesan kesalahan untuk login yang gagal saat menyediakan domain penyewa
+* Memperbaiki pesan kesalahan terkait proses masuk yang gagal saat menyediakan domain penyewa
     - https://github.com/Azure/azure-powershell/issues/6936
-* Memperbaiki masalah dengan nama konteks yang berbenturan untuk akun tanpa langganan di penyewa
+* Memperbaiki permasalahan nama konteks yang berbenturan untuk akun tanpa langganan di penyewa
     - https://github.com/Azure/azure-powershell/issues/7453
-* Memperbaiki masalah titik akhir DataLake saat menggunakan MSI
+* Memperbaiki permasalahan titik akhir DataLake saat menggunakan MSI
     - https://github.com/Azure/azure-powershell/issues/7462
-* Memperbaiki masalah ketika 'Disconnect-AzAccount' dikeluarkan jika tidak terhubung
+* Memperbaiki masalah di mana 'Disconnect-AzAccount' akan dibuang jika tidak terhubung
     - https://github.com/Azure/azure-powershell/issues/7167
 
 #### <a name="azcognitiveservices"></a>Az.CognitiveServices
@@ -2404,17 +2404,17 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 #### <a name="azcompute"></a>Az.Compute
 * Menambahkan cmdlet Add-AzVmssVMDataDisk dan Remove-AzVmssVMDataDisk
 * Get-AzVMImage menunjukkan AutomaticOSUpgradeProperties
-* Memperbaiki nilai opsi SetAzVMChefExtension -BootstrapOptions dan -JsonAttribute yang tidak diatur dalam format json.
+* Memperbaiki nilai opsi SetAzVMChefExtension, -BootstrapOptions, dan -JsonAttribute yang tidak diatur dalam format json.
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
 * Memperbarui paket DataLake ke 1.1.10.
-* Menambahkan Konkurensi default ke operasi multialur.
+* Menambahkan Konkurensi default ke operasi multithreaded.
 
 #### <a name="azinsights"></a>Az.Insights
 * Memperbaiki masalah #7267 (Area skala otomatis)
-    - Masalah pembuatan aturan skala otomatis baru yang tidak mengatur parameter yang dienumerasi dengan benar (akan selalu diatur ke nilai default).
+    - Masalah terkait membuat aturan skala otomatis baru yang tidak mengatur parameter yang disebutkan dengan benar (akan selalu mengaturnya ke nilai default).
 * Memperbaiki masalah #7513 [Insights] Set-AzDiagnosticSetting memerlukan spesifikasi kategori eksplisit selama pembuatan pengaturan
-    - Sekarang cmdlet tidak memerlukan indikasi eksplisit pada kategori agar aktif selama pembuatan, yaitu berfungsi saat didokumentasikan
+    - Sekarang cmdlet tidak memerlukan indikasi eksplisit dari kategori untuk mengaktifkan selama pembuatan, artinya ia berfungsi sebagaimana didokumentasikan
 
 #### <a name="aznetwork"></a>Az.Network
 * Mengubah PeeringType menjadi parameter wajib untuk cmdlet berikut: -
@@ -2429,57 +2429,57 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 * Menambahkan cmdlet remediasi kebijakan
 
 #### <a name="azresources"></a>Az.Resources
-* Memperbaiki https://github.com/Azure/azure-powershell/issues/7402
-    - Mengizinkan daftar sumber daya menggunakan parameter '-ResourceId' untuk 'Get-AzResource'
+* Perbaikan untuk https://github.com/Azure/azure-powershell/issues/7402
+    - Memungkinkan pembuatan daftar sumber daya menggunakan parameter '-ResourceId' untuk 'Get-AzResource'
 
 #### <a name="azservicebus"></a>Az.ServiceBus
 * Menambahkan properti baca-saja MigrationState ke PSServiceBusMigrationConfigurationAttributes yang akan membantu mengetahui status Migrasi.
 
 #### <a name="azservicefabric"></a>Az.ServiceFabric
-* Memperbaiki penambahan sertifikat ke Linux Vmss.
+* Memperbaiki penambahan sertifikat ke Vmss Linux.
 * Memperbaiki 'Add-AzServiceFabricClusterCertificate'
     - Menggunakan thumbprint yang benar dari sertifikat baru (Azure/service-fabric-issues#932).
     - Menampilkan pengecualian dengan benar (Azure/service-fabric-issues#1054).
-* Memperbaiki 'Update-AzServiceFabricDurability' untuk memperbarui konfigurasi kluster sebelum memulai operasi Vmss CreateOrUpdate.
+* Memperbaiki 'Update-AzServiceFabricDurability' untuk memperbarui konfigurasi kluster sebelum memulai operasi CreateOrUpdate Vmss.
 
 ## <a name="040---october-2018"></a>0.4.0 - Oktober 2018
 #### <a name="azprofile"></a>Az.Profile
-* Memperbaiki masalah Get-AzSubscription di CloudShell
+* Memperbaiki permasalahan Get-AzSubscription di CloudShell
 * Memperbarui kode umum untuk menggunakan versi terbaru ClientRuntime
 
 #### <a name="azcompute"></a>Az.Compute
-* Menambahkan ukuran baru ke daftar yang memungkinkan ukuran mesin virtual untuk mengaktifkan jaringan yang dipercepat saat menggunakan set param sederhana untuk 'New-AzVm'
+* Menambahkan ukuran baru ke daftar yang memungkinkan ukuran mesin virtual yang mana jaringan yang dipercepat akan diaktifkan saat menggunakan set param sederhana untuk 'New-AzVm'
 * Menambahkan pelengkap argumen ResourceName ke semua cmdlet.
 
 #### <a name="azdatalakestore"></a>Az.DataLakeStore
 * Menambahkan dukungan untuk Aturan Virtual Network
-    - Get-AzDataLakeStoreVirtualNetworkRule: Mendapat atau Mencantumkan aturan jaringan virtual Azure Data Lake Store.
+    - Get-AzDataLakeStoreVirtualNetworkRule: Mendapatkan atau Mencantumkan aturan jaringan virtual Azure Data Lake Store.
     - Add-AzDataLakeStoreVirtualNetworkRule: Menambahkan aturan jaringan virtual ke akun Data Lake Store yang ditentukan.
-    - Set-AzDataLakeStoreVirtualNetworkRule: Mengubah aturan jaringan virtual yang ditentukan di akun Data Lake Store yang ditentukan.
+    - Set-AzDataLakeStoreVirtualNetworkRule: Memodifikasi aturan jaringan virtual yang ditentukan di akun Data Lake Store yang ditentukan.
     - Remove-AzDataLakeStoreVirtualNetworkRule: Menghapus aturan jaringan virtual Azure Data Lake Store.
 
 #### <a name="aznetwork"></a>Az.Network
-* Memperbarui cmdlet Test-AzNetworkWatcherConnectivity, meneruskan nilai protokol ke backend.
+* Memperbarui cmdlet Test-AzNetworkWatcherConnectivity, memberikan nilai protokol ke backend.
 * Menambahkan pelengkap argumen ResourceName ke semua cmdlet.
 
 #### <a name="azresources"></a>Az.Resources
-* Memperbaiki masalah ketika Get-AzRoleDefinition memberikan pengecualian yang tidak dapat dipahami (ketika profil default tidak memiliki langganan di dalamnya dan tidak ada cakupan yang ditentukan) dengan menambahkan pengecualian yang berarti dalam skenario. Juga mengatur param default ke 'RoleDefinitionNameParameterSet'.
+* Memperbaiki masalah di mana Get-AzRoleDefinition memberikan pengecualian yang tidak dapat dipahami (ketika profil default tidak memiliki langganan di dalamnya dan tidak ada cakupan yang ditentukan) dengan menambahkan pengecualian yang berarti dalam skenario. Juga mengatur param default ke 'RoleDefinitionNameParameterSet'.
 
 ## <a name="030---october-2018"></a>0.3.0 - Oktober 2018
 #### <a name="azurestorage"></a>Azure.Storage
-* Memperbaiki Copy Blob/File yang tidak menyalin metadata saat tujuan mengalami masalah metadata
+* Memperbaiki Salin Blob/File yang tidak mau menyalin metadata saat tujuan mengalami masalah metadata
     - Start-AzureStorageBlobCopy
     - Start-AzureStorageFileCopy
-* Mendukung get penggunaan sumber daya Penyimpanan dari lokasi tertentu, dan menambahkan pesan peringatan karena get penggunaan sumber daya Penyimpanan global sudah usang.
+* Mendukung untuk mendapatkan penggunaan sumber daya Storage dari lokasi tertentu, dan menambahkan pesan peringatan untuk mendapatkan penggunaan sumber daya Penyimpanan global yang sudah usang.
     - Get-AzStorageUsage
 
 #### <a name="azcognitiveservices"></a>Az.CognitiveServices
 * Mendukung Get-AzCognitiveServicesAccountSkus tanpa akun yang ada.
 
 #### <a name="azcompute"></a>Az.Compute
-* Memperbaiki `<rg>` Get-AzVM -ResourceGroupName untuk memunculkan lebih dari 50 hasil jika diperlukan
+* Memperbaiki Get-AzVM -ResourceGroupName `<rg>` untuk menampilkan lebih dari 50 hasil jika diperlukan
 * Menambahkan contoh 'SimpleParameterSet' ke bantuan cmdlet New-AzVmss.
-* Memperbaiki kesalahan ketik di pesan progres Azure Disk Encryption
+* Memperbaiki kesalahan ketik di pesan kemajuan Azure Disk Encryption
 
 #### <a name="azdatafactoryv2"></a>Az.DataFactoryV2
 * Memperbarui versi SDK .Net ADF ke 2.3.0.
@@ -2497,18 +2497,18 @@ Menambahkan dukungan untuk mengonfigurasi RewriteRuleSets di Application Gateway
 * Menambahkan cmdlet Set-AzNEtworkInterfaceTapConfig, Get-AzNEtworkInterfaceTapConfig, Remove-AzNEtworkInterfaceTapConfig
 
 #### <a name="azrediscache"></a>Az.RedisCache
-* Mengizinkan string apa pun sebagai parameter Size seterusnya. Menambahkan P5 di popup PSArgumentCompleter
+* Memungkinkan string apa pun sebagai parameter Ukuran ke depan. Menambahkan P5 di popup PSArgumentCompleter
 
 #### <a name="azresources"></a>Az.Resources
 * Menambahkan parameter -Mode yang hilang ke Set-AzPolicyDefinition
 * Memperbaiki bug commandlet Get-AzProviderOperation untuk operasi dengan Asal yang berisi Pengguna
 
 #### <a name="azsql"></a>Az.Sql
-* Memperbaiki masalah ketika beberapa cmdlet cadangan tidak akan mengenali langganan azure saat ini
+* Memperbaiki masalah di mana beberapa cmdlet cadangan tidak mau mengenali langganan azure saat ini
 
 #### <a name="azwebsites"></a>Az.Websites
-* Cmdlet baru Get-AzWebAppContainerContinuousDeploymentUrl - Mendapatkan URL Webhook Penyebaran Berkelanjutan Kontainer
-* Cmdlet baru New-AzWebAppContainerPSSession dan Enter-WebAppContainerPSSession - Memulai sesi jarak jauh PowerShell ke dalam aplikasi kontainer windows
+* Cmdlet Baru Get-AzWebAppContainerContinuousDeploymentUrl - Mendapatkan URL Webhook Penyebaran Berkelanjutan Kontainer
+* Cmdlet Baru New-AzWebAppContainerPSSession dan Enter-WebAppContainerPSSession - Memulai sesi jarak jauh PowerShell ke dalam aplikasi kontainer windows
 
 ## <a name="020---september-2018"></a>0.2.0 - September 2018
  Rilis Awal

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
-ms.openlocfilehash: 85ff54c793ff8336f0318e908001de206ce19832
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e707fe317a6eddda879335a33ad542fb36bbd69f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353093"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286637"
 ---
 # New-AzWvdMsixPackage
 
 ## SYNOPSIS
 Buat atau perbarui paket MSIX.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdmsixpackage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 
 ### -PackageFamilyName
 Nama Keluarga Paket dari appxmanifest.xml.
-Berisi Nama Paket Publisher nama.
+Berisi Nama Paket Publisher nama paket.
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi Paket ditemukan di appxmanifest.xml.
+Versi Paket yang ditemukan di appxmanifest.xml.
 
 ```yaml
 Type: System.String
@@ -373,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
