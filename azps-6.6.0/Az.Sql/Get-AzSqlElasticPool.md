@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlElasticPool.md
-ms.openlocfilehash: f27c3781d82444f14cc0ad0725a15a65b0e7900b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 32fdff830b0c80f295407e53ef7a97330e8480c0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338991"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140245933"
 ---
 # Get-AzSqlElasticPool
 
 ## SYNOPSIS
 Mendapatkan kolam renang elastis dan nilai propertinya dalam Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlelasticpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -144,7 +147,7 @@ TimeGrain      : 00:05:00
 Unit           : Percent
 ```
 
-Perintah ini mengembalikan metrik untuk azure SQL database elastis bernama ElastisPool01.
+Perintah ini mengembalikan metrik untuk azure penyimpanan database SQL elastis bernama ElastisPool01.
 
 ### Contoh 4: Dapatkan semua kolam renang elastis menggunakan pemfilteran -ElastisPoolName "ElastisPool*"
 ```
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/new-azmedi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
-ms.openlocfilehash: 640bd61aac325a23f775a1cc53411d3c9b0129cb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3910946fdb401652064b3147a236c5ee6f875f15
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387332"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140309065"
 ---
 # New-AzMediaServiceStorageConfig
 
 ## SYNOPSIS
 Buat konfigurasi akun penyimpanan untuk cmdlet layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/new-azmediaservicestorageconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,8 +41,8 @@ $StorageAccount = New-AzStorageAccount -ResourceGroupName $ResourceGroupName -Na
 PS C:\> New-AzMediaServiceStorageConfig -StorageAccountId $StorageAccount.Id -IsPrimary
 ```
 
-Perintah pertama membuat objek akun penyimpanan dengan menggunakan cmdlet **New-AzStorageAccount.**
-Perintah ini menamai akun penyimpanan Penyimpanan1 dan tipenya dinamai Standard_GRS dan menyimpan hasilnya di variabel yang bernama $StorageAccount.
+Perintah pertama membuat objek akun penyimpanan dengan menggunakan cmdlet **New-AzStorageAccount** .
+Perintah memberi nama akun penyimpanan ini Penyimpanan1 dan tipenya dinamai Standard_GRS dan menyimpan hasilnya di dalam variabel yang bernama $StorageAccount.
 Perintah kedua membuat objek konfigurasi penyimpanan sebagai akun penyimpanan utama yang terkait dengan layanan media menggunakan informasi ID akun penyimpanan yang disimpan di $StorageAccount penyimpanan tersebut.
 
 ## PARAMETERS
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

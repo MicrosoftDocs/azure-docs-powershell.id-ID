@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.servicefabric/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricVmImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Update-AzServiceFabricVmImage.md
-ms.openlocfilehash: 6743329d9f77c8f197c0c3448f899742d018dab1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: deada1ac27ee19eeb31ac0437396a63df5ce73b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374354"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246365"
 ---
 # Update-AzServiceFabricVmImage
 
 ## SYNOPSIS
 
 Perbarui pengaturan vmImage sumber daya kluster yang memetakan paket runtime yang sesuai untuk dikirimkan berdasarkan sistem operasi target.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/update-azservicefabricvmimage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Catatan Penting: VmImage 'Linux' serta peta 'Ubuntu' untuk pengiriman paket Ubun
 Update-AzServiceFabricVmImage -ResourceGroupName 'Group1' -ClusterName 'Contoso01SFCluster' -VmImage Ubuntu18_04
 ```
 
-Perintah ini mengubah vmImage kluster 'Contoso01SFCluster' menjadi 'Ubuntu18_04', untuk tujuan melakukan migrasi pemutakhiran yang akan datang untuk menggunakan paket runtime deb Ubuntu 18 SF.
+Perintah ini mengubah vmImage kluster 'Contoso01SFCluster' menjadi 'Ubuntu18_04', untuk tujuan melakukan migrasi pemutakhiran mendatang untuk menggunakan paket runtime deb Ubuntu 18 SF.
 
 ## PARAMETERS
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azse
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzServiceEndpointPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzServiceEndpointPolicy.md
-ms.openlocfilehash: b5ad9894eb0ef17ccac60a82a0ec8cfe20116088
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: aaa8bf38fa5163ecdabf7226df0c5823dd605612
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136335866"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140464697"
 ---
 # New-AzServiceEndpointPolicy
 
 ## SYNOPSIS
 Membuat kebijakan titik akhir layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azserviceendpointpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **New-AzServiceEndpointPolicy** membuat kebijakan titik akhir layanan.
 $serviceEndpointPolicy = New-AzServiceEndpointPolicy -Name "Policy1" -ServiceEndpointPolicyDefinition $serviceEndpointDefinition -Location "location";
 ```
 
-Perintah ini akan membuat kebijakan titik akhir layanan yang bernama Policy1 dengan definisi yang ditentukan oleh $serviceEndpointDefinition objek dan menyimpannya dalam $serviceEndpointPolicy pengguna.
+Perintah ini membuat kebijakan titik akhir layanan yang bernama Policy1 dengan definisi yang ditentukan oleh $serviceEndpointDefinition objek dan menyimpannya di $serviceEndpointPolicy variabel.
 
 ## PARAMETERS
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

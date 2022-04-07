@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVpnConnection.md
-ms.openlocfilehash: 13ec881d01617736ab3f77fe27976051bd4c1e05
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1ba6ce4edae3859f159cf5ebe131f9b6f838cf2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355838"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140464553"
 ---
 # New-AzVpnConnection
 
 ## SYNOPSIS
 Membuat koneksi IPSec yang menyambungkan VpnGateway ke cabang pelanggan jarak jauh yang dinyatakan dalam RM sebagai VpnSite.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvpnconnection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -128,7 +131,7 @@ RoutingConfiguration      : {
 
 Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzVpnConnection situs.
+Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzVpnConnection jaringan.
 
 ### Contoh 2
 ```powershell
@@ -492,7 +495,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

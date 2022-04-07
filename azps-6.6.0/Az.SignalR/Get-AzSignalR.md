@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/get-azsi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalR.md
-ms.openlocfilehash: 008f485c0a0ae1b1e1322ed78eb8bfb11bf275c1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7e97a236dc2c094adada5affebba51f655612c20
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136339229"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246293"
 ---
 # Get-AzSignalR
 
 ## SYNOPSIS
 Dapatkan layanan SignalR tertentu atau semua layanan SignalR dalam grup sumber daya atau langganan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azsignalr) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -80,7 +83,7 @@ HostName                                           Location       ServerPort Pub
 mysignalr2.service.signalr.net                     eastus         5002       5001       Succeeded         1.0
 ```
 
-Grup sumber daya default dapat diatur oleh \` Set-AzDefault -ResourceGroupName myResourceGroup \` .
+Grup sumber daya default dapat diatur oleh \`Set-AzDefault -ResourceGroupName myResourceGroup\`.
 
 ## PARAMETERS
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

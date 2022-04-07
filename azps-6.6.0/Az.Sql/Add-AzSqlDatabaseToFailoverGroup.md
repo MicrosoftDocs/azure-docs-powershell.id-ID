@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/add-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlDatabaseToFailoverGroup.md
-ms.openlocfilehash: 27192a55561b6c6744d45f3eccb57717c05b8d8a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2d35a6251f1bbc87c5ce082f0668909e550612d0
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136339145"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140246185"
 ---
 # Add-AzSqlDatabaseToFailoverGroup
 
 ## SYNOPSIS
 Menambahkan satu atau beberapa database ke Azure SQL Database Failover Group.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/add-azsqldatabasetofailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database dari Grup Failover.
+Nama server utama Azure SQL Database Dari Grup Failover.
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
-ms.openlocfilehash: 3fdbe983b1cc31b7a8616162d764b4d05e9a621b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fc9441de00593f1c557b51cfd5e1b649cc10f86e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136354341"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140463770"
 ---
 # Set-AzVirtualNetworkSubnetConfig
 
 ## SYNOPSIS
 Memperbarui konfigurasi subnet untuk jaringan virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetworksubnetconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -82,7 +85,7 @@ Set-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNe
 $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Kemudian, grup keamanan jaringan akan membuat grup keamanan jaringan dengan aturan perbolehkan untuk lalu lintas RDP. Cmdlet Set-AzVirtualNetworkSubnetConfig digunakan untuk memodifikasi representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzVirtualNetwork akan disebut untuk menulis status yang diubah kembali ke layanan.
+Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Kemudian, grup keamanan jaringan akan membuat grup keamanan jaringan dengan aturan perbolehkan untuk lalu lintas RDP. Cmdlet Set-AzVirtualNetworkSubnetConfig digunakan untuk memodifikasi representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzVirtualNetwork baru kemudian disebut untuk menulis status yang diubah kembali ke layanan.
 
 ### 3: Melampirkan Gateway Nat ke subnet
 ```
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
+Menentukan objek **NetworkSecurityGroup** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
