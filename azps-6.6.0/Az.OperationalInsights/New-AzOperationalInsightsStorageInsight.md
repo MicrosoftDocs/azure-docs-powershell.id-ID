@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: c6c54badf38898edff8c1022bd9f4070fe932cb8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 18b383e61e5d72c1860bcad9105bb6f60ad69906
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345245"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140463326"
 ---
 # New-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
 Membuat wawasan Storage di dalam ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsstorageinsight) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ PS C:\>New-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResour
 ```
 
 Perintah pertama menggunakan cmdlet Get-AzStorageAccount cmdlet untuk mendapatkan akun penyimpanan bernama ContosoStorage, lalu menyimpannya dalam variabel $Storage.
-Perintah kedua melewati akun penyimpanan di $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator pipeline untuk mendapatkan kunci akun penyimpanan yang ditentukan, lalu menyimpannya dalam variabel $StorageKey. Contoh ini mengambil kunci pertama. Untuk mengambil yang lainnya, gunakan Value[1] dan bukan Value[0].
+Perintah kedua melewati akun penyimpanan di $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator pipeline untuk mendapatkan kunci akun penyimpanan yang ditentukan, lalu menyimpannya dalam variabel $StorageKey tertentu. Contoh ini mengambil kunci pertama. Untuk mengambil yang lainnya, gunakan Value[1] dan bukan Value[0].
 Perintah terakhir membuat wawasan penyimpanan bernama MyStorageInsight di ruang kerja yang bernama MyWorkspace.
 Wawasan penyimpanan ini menggunakan data dari tabel WINDOWSWindowsEventLogsTable di sumber daya akun penyimpanan yang ditentukan.
 
@@ -66,8 +69,8 @@ PS C:\>$StorageKey = ($Storage | Get-AzStorageAccountKey).Value[0]
 PS C:\>New-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -StorageAccountResourceId $Storage.Id -StorageAccountKey $StorageKey -Tables @("WADWindowsEventLogsTable")
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace terbatas.
-Perintah kedua menggunakan cmdlet Get-AzStorageAccount cmdlet untuk mendapatkan akun penyimpanan tertentu, lalu menyimpannya dalam variabel $Storage.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace variabel.
+Perintah kedua menggunakan cmdlet Get-AzStorageAccount cmdlet untuk mendapatkan akun penyimpanan tertentu, lalu menyimpannya dalam variabel $Storage tersebut.
 Perintah ketiga meneruskan akun penyimpanan di $Storage ke cmdlet Get-AzStorageAccountKey dengan menggunakan operator pipeline untuk mendapatkan kunci yang ditentukan, lalu menyimpannya dalam variabel $StorageKey terbatas. Contoh ini mengambil kunci pertama. Untuk mengambil yang lainnya, gunakan Value[1] dan bukan Value[0].
 Perintah terakhir membuat wawasan penyimpanan bernama MyStorageInsight dalam ruang kerja yang ditentukan dalam $Workspace.
 Sumber Storage Insight menggunakan data dari tabel WINDOWSWindowsEventLogsTable di sumber daya akun penyimpanan yang ditentukan.
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

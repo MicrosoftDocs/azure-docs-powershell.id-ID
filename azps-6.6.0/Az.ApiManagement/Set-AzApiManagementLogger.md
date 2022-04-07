@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementLogger.md
-ms.openlocfilehash: cacac05921c02cbaafcae75f2c4b7b1c88c90197
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ba4428ac1ef0d312c4b453a3a9a2fbcccc45d7c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344021"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140288743"
 ---
 # Set-AzApiManagementLogger
 
 ## SYNOPSIS
 Mengubah Logger Manajemen API.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementlogger) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Set-AzApiManagementLogger -Context <PsApiManagementContext> -LoggerId <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementLogger** mengubah pengaturan dari **Logger** Manajemen Azure API.
+Cmdlet **Set-AzApiManagementLogger** mengubah pengaturan **Logger** Manajemen Azure API.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstrumentationKey
-Kunci Instrumen aplikasi untuk Insights. Parameter ini bersifat opsional.
+Kunci Instrumentasi aplikasi Insights. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.String
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
