@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/new-azmapsa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/New-AzMapsAccountKey.md
-ms.openlocfilehash: 25189ec6740dbc543a02e3f56c51cf58673459ee
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c85f96b43c7b7058a8f8a2f1512659c972c7dc7f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140501943"
 ---
 # New-AzMapsAccountKey
 
 ## SYNOPSIS
 Meregenerasi kunci utama atau sekunder untuk digunakan dengan Peta API.
 Kunci lama akan langsung berhenti bekerja.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/new-azmapsaccountkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Kunci lama akan langsung berhenti bekerja.
 
 ## EXAMPLES
 
-### Contoh 1: Meregenerasi kunci primer atau sekunder untuk digunakan dengan Peta API
+### Contoh 1: Meregenerasi kunci primer atau sekunder untuk digunakan dengan API Peta
 ```powershell
 PS C:\> New-AzMapsAccountKey -ResourceGroupName azure-rg-test -Name pwsh-mapsAccount01 -KeyType primary
 
@@ -59,7 +62,7 @@ PrimaryKey                                  PrimaryKeyLastUpdated        Seconda
 xoGsuTFWuG6xq0re7EdA7nCbDhvRoisZfLHvKfdzIhQ 2021-05-20T05:55:21.7797268Z zi6W1bw4zIYLjDj_DRRrC3jBkX-APgBebwx4cZBKJOU 2021-05-20T05:41:03.452571Z
 ```
 
-Perintah ini meregenerasi kunci utama atau sekunder untuk digunakan dengan PETA API melalui pipeline.
+Perintah ini meregenerasi kunci utama atau sekunder untuk digunakan dengan PETA API menurut saluran.
 Kunci lama akan langsung berhenti bekerja.
 
 ## PARAMETERS
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,9 +209,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity> : Parameter Identitas
+INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

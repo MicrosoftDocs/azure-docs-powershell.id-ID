@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSqlServerExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMSqlServerExtension.md
-ms.openlocfilehash: 9ee37ba9915d979de8652e1b0e74e7d88feb777a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 703947a2f949e1caebfcfec75808373ceb6d8e85
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378305"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140335805"
 ---
 # Get-AzVMSqlServerExtension
 
 ## SYNOPSIS
 Dapatkan pengaturan untuk ekstensi SQL Server di komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azvmsqlserverextension) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Get-AzVMSqlServerExtension** mendapatkan pengaturan infrastruktur SQL S
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan ekstensi SQL Server di komputer virtual
+### Contoh 1: Dapatkan pengaturan ekstensi SQL Server di mesin virtual
 ```
 PS C:\> Get-AzVMSqlServerExtension -ResourceGroupName "ResourceGroup11" -VMName "ContosoVM07"
 ExtensionName        : SqlIaaSAgent
@@ -56,7 +59,7 @@ AutoPatchingSettings : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Ex
 AutoBackupSettings   : Microsoft.WindowsAzure.Commands.ServiceManagement.IaaS.Extensions.AutoBackupSettings
 ```
 
-Perintah ini mendapatkan mesin virtual bernama ContosoVM22 pada layanan Service08 dengan menggunakan cmdlet Get-AzVM cmdlet.
+Perintah ini mendapatkan mesin virtual bernama ContosoVM22 di layanan Service08 menggunakan cmdlet Get-AzVM cmdlet.
 Perintah itu menyampaikan hasilnya ke cmdlet saat ini dengan menggunakan operator pipeline.
 Perintah saat ini mendapatkan pengaturan Agen IaaS SQL Server di komputer virtual tersebut.
 
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

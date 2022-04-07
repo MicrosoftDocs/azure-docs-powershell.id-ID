@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusTopic.md
-ms.openlocfilehash: ce8799e9c7ad2b51de64edd77552c3ca8d462bab
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a0dd20bb24c96d721ad631416eed4684f4eb15ae
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339386"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140480973"
 ---
 # Get-AzServiceBusTopic
 
 ## SYNOPSIS
 Mengembalikan deskripsi untuk topik Bus Layanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebustopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -54,7 +57,7 @@ SupportOrdering                     : True
 UpdatedAt                           : 10/11/2018 11:51:24 PM
 ```
 
-Mengembalikan deskripsi topik yang ditentukan untuk ruang nama Bus Layanan ditentukan.
+Mengembalikan deskripsi dari topik yang ditentukan untuk ruang nama Bus Layanan tertentu.
 
 ### Contoh 2
 ```
@@ -68,7 +71,7 @@ Mengembalikan daftar topik untuk ruang nama Bus Layanan tertentu. Secara default
 PS C:\> Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -MaxCount 150
 ```
 
-Mengembalikan daftar 150 topik pertama untuk ruang nama Bus Layanan tertentu.
+Mengembalikan daftar 150 topik pertama untuk ruang Bus Layanan namanya.
 
 ## PARAMETERS
 
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

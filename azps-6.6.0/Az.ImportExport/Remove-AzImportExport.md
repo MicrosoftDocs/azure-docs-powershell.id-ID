@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.importexport/rem
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Remove-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Remove-AzImportExport.md
-ms.openlocfilehash: ae5ecc9627402085e0a79332aa68338153f584e9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 260b0d9715f8a334e961dc1c6bd6fb0c568144d2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383020"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140503419"
 ---
 # Remove-AzImportExport
 
 ## SYNOPSIS
 Menghapus pekerjaan yang sudah ada.
 Hanya pekerjaan di negara bagian Membuat atau Selesai yang bisa dihapus.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/remove-azimportexport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -211,7 +214,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IImportExportIdentity> : Parameter Identitas
+INPUTOBJECT <IImportExportIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[JobName <String>]`: Nama pekerjaan impor/ekspor.
   - `[LocationName <String>]`: Nama lokasi. Misalnya, AS Barat atau westus.

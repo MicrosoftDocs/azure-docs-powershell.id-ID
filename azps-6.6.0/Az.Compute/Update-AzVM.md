@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzVM.md
-ms.openlocfilehash: 9bd5f2c8f346aa8f73ceba7dfc7ace044ed27ed0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5236ca831dd0257c70f9f74ba058c0bf9e3369f8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136361541"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140334959"
 ---
 # Update-AzVM
 
 ## SYNOPSIS
 Memperbarui status mesin virtual Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/update-azvm) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -58,7 +61,7 @@ PS C:\> Update-AzVM -ResourceGroupName "ResourceGroup11" -VM $VirtualMachine
 
 Perintah ini memperbarui mesin virtual, $VirtualMachine, di ResourceGroup11.
 Perintah memperbaruinya menggunakan objek mesin virtual yang disimpan di $VirtualMachine variabel.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzVM.**
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet **Get-AzVM** .
 
 ## PARAMETERS
 
@@ -277,8 +280,8 @@ Accept wildcard characters: False
 ```
 
 ### -UltraSSDEnabled
-Bendera yang mengaktifkan atau menonaktifkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun UltraSSD_LRS penyimpanan vm.
-Disk terkelola dengan tipe akun penyimpanan UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
+Bendera yang mengaktifkan atau menonaktifkan kemampuan untuk memiliki satu atau beberapa disk data terkelola dengan tipe akun UltraSSD_LRS yang sama pada VM.
+Disk terkelola dengan tipe akun UltraSSD_LRS dapat ditambahkan ke mesin virtual hanya jika properti ini diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual lokal.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM baru.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
 Objek mesin virtual ini berisi status yang diperbarui untuk mesin virtual.
 
 ```yaml
@@ -341,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

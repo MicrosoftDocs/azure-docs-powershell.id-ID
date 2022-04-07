@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzLogicApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzLogicApp.md
-ms.openlocfilehash: aadda38740d4353649d402673f45a49c854d7231
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7a5cf74173d56e8d9d1de016632f8ee47d5397f9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385288"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140502339"
 ---
 # Set-AzLogicApp
 
 ## SYNOPSIS
 Mengubah aplikasi logika dalam grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/set-azlogicapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -Parameter
 Menentukan objek kumpulan parameter untuk Aplikasi Logika.
-Menentukan tabel hash, \<string\> Kamus, atau Kamus \<string, WorkflowParameter\> .
+Menentukan tabel hash, Kamus\<string\>, atau Kamus\<string, WorkflowParameter\>.
 
 ```yaml
 Type: System.Object
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionDirection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrProtectionDirection.md
-ms.openlocfilehash: f3e6cce9ff06b6291700793acfd179d8f931b618
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d99195f44a16638d6fc8d83ca0680af8cf78411e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332201"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140481405"
 ---
 # Update-AzRecoveryServicesAsrProtectionDirection
 
 ## SYNOPSIS
 Memperbarui arah replikasi untuk item replikasi terproteksi atau rencana pemulihan tertentu. Digunakan untuk memproteksi ulang/membalikkan replikasi item yang gagal direplikasi atau paket pemulihan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrprotectiondirection) untuk informasi terkini.
 
 ## SYNTAX
 
