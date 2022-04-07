@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/new-azwcfr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/New-AzWcfRelay.md
-ms.openlocfilehash: 76bb308dd46a1314dcbb46ac02c262ed59b98e2a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 96e82b0e387b53a07a1662a45d3d4494ab44c22e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381511"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140461086"
 ---
 # New-AzWcfRelay
 
 ## SYNOPSIS
 Membuat WcfIguy dalam ruang nama Relay yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/new-azwcfrelay) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Name                        : TestWCFRelay2
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Membuat WcfIguy \` TestWCF Spacey2 baru \` dalam ruang nama Relay tertentu \` TestNameSpace-Relay. \`
+Membuat WcfIguy \`TestWCF Spacey2\` baru dalam ruang nama Relay tertentu \`TestNameSpace-Relay\`.
 
 ### Contoh 2 - Properti
 ```
@@ -80,7 +83,7 @@ Name                        : TestWCFRelay
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Membuat WcfIguy \` TestWCF Spacey baru \` dalam ruang nama Relay ditentukan \` TestNameSpace-Relay1 \` .
+Membuat WcfIguy \`TestWCFEby baru\` dalam ruang nama Relay tertentu \`TestNameSpace-Relay1\`.
 
 ## PARAMETERS
 
@@ -253,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

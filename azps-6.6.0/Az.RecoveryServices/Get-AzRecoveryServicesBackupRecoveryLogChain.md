@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
-ms.openlocfilehash: 07ae36801b4996fe8e315938d80036e9a058bbe1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2d77659c1379703265abee18f8c31b57859642e7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369723"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140462101"
 ---
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
 ## SYNOPSIS
 Perintah ini mencantumkan titik mulai dan titik akhir rangkaian log yang tidak terputus dari item cadangan tersebut. Gunakan itu untuk menentukan apakah titik waktu, di mana pengguna ingin DB dipulihkan, valid atau tidak.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverylogchain) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ PS C:\> $RP = Get-AzRecoveryServicesBackupItem -Container $Container -WorkloadTy
 
 Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $StartDate variabel.
 Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya dalam $EndDate variabel.
-Perintah ketiga mendapatkan wadah cadangan AzureWorkload, dan menyimpannya di $Container variabel.
+Perintah ketiga mendapatkan wadah cadangan AzureWorkload, dan menyimpannya di $Container lokal.
 Perintah keempat mendapatkan item cadangan, lalu membagikannya di cmdlet pipa sebagai objek item cadangan.
 Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item di $BackupItem, lalu menyimpannya dalam $RP pemulihan.
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

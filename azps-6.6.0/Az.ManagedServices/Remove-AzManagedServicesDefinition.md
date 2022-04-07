@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/Remove-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/Remove-AzManagedServicesDefinition.md
-ms.openlocfilehash: 45dd68c70897a9b27ca7103a8511b2d15fe7ebd9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7c1d403defcaa9181d36fbf4d4b4cb7ad9689f6a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136340985"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140283235"
 ---
 # Remove-AzManagedServicesDefinition
 
 ## SYNOPSIS
 Menghapus definisi registrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/remove-azmanagedservicesdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

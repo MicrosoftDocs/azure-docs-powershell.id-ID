@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Set-AzI
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzIotSecuritySolution.md
-ms.openlocfilehash: 2e6543ca204439e828ac390db40d79c3b3773654
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6ac4468a98a490c01029527d0c5f0f303ea84d2a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374539"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140277349"
 ---
 # Set-AzIotSecuritySolution
 
 ## SYNOPSIS
 Membuat atau memperbarui solusi keamanan IoT
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-aziotsecuritysolution) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -302,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendationsConfiguration
-Rekomendasi konfigurasi.
+Rekomendasi lain.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Security.Models.IotSecuritySolutions.PSRecommendationConfiguration[]
@@ -498,7 +501,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.maps/update-azma
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Update-AzMapsAccount.md
-ms.openlocfilehash: 3722be5cc541a41aad3b0a3cc0a808f54d2c7842
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 743cd33fe2e76f880e106221fc5e8098012794e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136387349"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136177"
 ---
 # Update-AzMapsAccount
 
 ## SYNOPSIS
 Memperbarui Akun Peta Anda.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/update-azmapsaccount) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Location Name               Type                    Kind
 eastus   pwsh-mapsAccount03 Microsoft.Maps/accounts Gen1
 ```
 
-Perintah ini memperbarui Peta melalui saluran.
+Perintah ini memperbarui Peta tersebut menurut saluran.
 Hanya subset parameter yang dapat diperbarui setelah pembuatan, seperti Sku, Tag, Properti.
 
 ## PARAMETERS
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-Memungkinkan fungsi pengalih pada Kebijakan Azure untuk menonaktifkan Azure Peta autentikasi lokal Anda.
+Memungkinkan fungsi pengalih pada Kebijakan Azure untuk menonaktifkan Azure Peta dukungan autentikasi lokal.
 Ini akan menonaktifkan autentikasi Kunci Bersama dari setiap penggunaan.
 
 ```yaml
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama akun Peta.
+Nama akun Peta Anda.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -256,9 +259,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMapsIdentity> : Parameter Identitas
+INPUTOBJECT <IMapsIdentity>: Parameter Identitas
   - `[AccountName <String>]`: Nama akun Peta Anda.
-  - `[CreatorName <String>]`: Nama Peta Creator.
+  - `[CreatorName <String>]`: Nama instans Peta Creator.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[SubscriptionId <String>]`: ID langganan target.

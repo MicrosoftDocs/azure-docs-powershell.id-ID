@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageAccountSASToken.md
-ms.openlocfilehash: 1b0d9e4d8940db74a1e8c1e03c81687e67388bf3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 94ec38f98dbf0cc489e02f24b1f8f3f01bc232b4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351338"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140276377"
 ---
 # New-AzStorageAccountSASToken
 
 ## SYNOPSIS
 Membuat token SAS tingkat akun.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageaccountsastoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzStorageAccountSASToken -Service <SharedAccessAccountServices>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageSASToken** membuat token tanda tangan akses bersama (SAS, Shared Access Signature) tingkat akun untuk akun Azure Storage Anda.
+Cmdlet **New-AzStorageSASToken** membuat token tanda tangan akses bersama (SAS) tingkat akun untuk akun Azure Storage mereka.
 Anda dapat menggunakan token SAS untuk mendelegasikan izin untuk beberapa layanan, atau untuk mendelegasikan izin untuk layanan yang tidak tersedia dengan token SAS tingkat objek.
 
 ## EXAMPLES
@@ -51,7 +54,7 @@ Perintah ini membuat token SAS tingkat akun untuk permintaan HTTPS-saja dari ren
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat menggunakan cmdlet New-AzStorageContext cmdlet untuk mendapatkan **objek AzureStorageContext.**
+Anda dapat menggunakan cmdlet New-AzStorageContext untuk mendapatkan objek **AzureStorageContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ### -Permission
 Menentukan izin untuk Storage Anda.
 Izin hanya valid jika sesuai dengan tipe sumber daya yang ditentukan.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
 Untuk informasi selengkapnya tentang nilai izin yang dapat diterima, lihat Membangun SAS Akun http://go.microsoft.com/fwlink/?LinkId=799514
 
 ```yaml
@@ -192,8 +195,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu, sebagai objek **DateTime,** ketika SAS menjadi valid.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
+Menentukan waktu, sebagai objek **DateTime** , ketika SAS menjadi valid.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

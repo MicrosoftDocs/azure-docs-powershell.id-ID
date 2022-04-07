@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/set-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActivityLogAlert.md
-ms.openlocfilehash: b11df71c7103e9db9cbce3be301c40c0b70908b4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e01567bd2e937f0d395e7e46791ec8f828fd83ca
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385022"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140282983"
 ---
 # Set-AzActivityLogAlert
 
 ## SYNOPSIS
 Membuat atau mengatur pemberitahuan log aktivitas yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/set-azactivitylogalert) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Set-AzActivityLogAlert [-Scope <System.Collections.Generic.List`1[System.String]
 Cmdlet **Set-AzActivityLogAlert** membuat baru atau mengatur pemberitahuan log aktivitas yang sudah ada.
 Untuk tag, kondisi, dan tindakan, objek harus dibuat sebelumnya dan diberikan sebagai parameter dalam panggilan ini sebagai tanda koma yang dipisahkan (lihat contoh di bawah).
 Cmdlet ini menerapkan pola ShouldProcess, misalnya meminta konfirmasi dari pengguna sebelum benar-benar membuat/mengubah sumber daya.
-**CATATAN**: Cmdlet ini dan yang terkait menggantikan **Add-AzLogAlertRule**(November 2017) yang sudah tidak berlaku.
+**CATATAN**: Cmdlet ini dan perintah yang terkait menggantikan **Add-AzLogAlertRule** (November 2017) yang sudah tidak berlaku.
 
 ## EXAMPLES
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -Kondisi
 Daftar kondisi untuk pemberitahuan log aktivitas.
-**CATATAN**: Dalam daftar kondisi, setidaknya harus ada satu dengan Bidang yang sama dengan "Kategori". Backend merespons dengan 400 (BadRequest) jika kondisi ini tidak ada.
+**CATATAN**: Dalam daftar kondisi, setidaknya harus ada satu bidang dengan Bidang yang sama dengan "Kategori". Backend merespons dengan 400 (BadRequest) jika kondisi ini tidak ada.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]
@@ -431,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
