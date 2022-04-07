@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.media/sync-azmed
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Sync-AzMediaServiceStorageKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/Sync-AzMediaServiceStorageKey.md
-ms.openlocfilehash: 3cc5a061ac44cb784c9181d5c6fbda8891ba5458
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 341d2e458c4e76dc237843c0e99ceb943d57f77e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136367606"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136051"
 ---
 # Sync-AzMediaServiceStorageKey
 
 ## SYNOPSIS
 Menyinkronkan kunci akun penyimpanan untuk akun penyimpanan yang terkait dengan layanan media.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/sync-azmediaservicestoragekey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ $StorageAccount = Get-AzStorageAccount -ResourceGroupName "ResourceGroup001" -Na
 Sync-AzMediaServiceStorageKey -ResourceGroupName "ResourceGroup001" -AccountName "MediasService001" -StorageAccountId $StorageAccount.Id
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzStorageAccount untuk mendapatkan akun penyimpanan bernama Storage135 yang termasuk dalam ResourceGroup001 dan menyimpan hasilnya dalam variabel bernama $StorageAccount.
+Perintah pertama menggunakan cmdlet Get-AzStorageAccount untuk mendapatkan akun penyimpanan bernama Storage135 yang dimiliki oleh ResourceGroup001 dan menyimpan hasilnya dalam variabel yang bernama $StorageAccount.
 Perintah kedua menyinkronkan kunci akun penyimpanan untuk layanan media bernama MediaService001 menggunakan properti **Id** yang terdapat di dalam $StorageAccount terbatas.
 
 ## PARAMETERS
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
