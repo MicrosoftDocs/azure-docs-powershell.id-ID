@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualNetworkGatewayConnection.md
-ms.openlocfilehash: a7bf82a6e806a40a86cff5728db7ceeeed352117
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c85641cd423baa480aa0b507f2c59e67fd8ff86c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136355946"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140250631"
 ---
 # New-AzVirtualNetworkGatewayConnection
 
 ## SYNOPSIS
 Membuat koneksi VPN Situs-ke-Situs antara gateway jaringan virtual dan perangkat VPN lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azvirtualnetworkgatewayconnection) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,7 +67,7 @@ PS C:\>New-AzVirtualNetworkGatewayConnection -Name conn-client-1 -ResourceGroupN
 ```
 Perintah pertama mendapatkan gateway jaringan virtual natRule yang bernama natRule1 yang tipenya adalah IngressSnat.
 Perintah kedua mendapatkan gateway jaringan virtual natRule bernama natRule2 yang tipenya adalah EgressSnat.
-Perintah ketiga membuat koneksi gateway Jaringan virtual baru ini dengan Ingress dan Egress NatRules.
+Perintah ketiga membuat koneksi gateway Jaringan virtual baru dengan Ingress dan Egress NatRules.
 
 ## PARAMETERS
 
@@ -508,7 +511,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

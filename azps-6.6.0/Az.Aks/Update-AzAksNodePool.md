@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/update-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Update-AzAksNodePool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Update-AzAksNodePool.md
-ms.openlocfilehash: 6426d44e2d087a4f620510a8fb922184d39020c9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 12a30418ffb3a64d84790149afce28d6c1a76df9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373962"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140314621"
 ---
 # Update-AzAksNodePool
 
 ## SYNOPSIS
 Perbarui node pool dalam kluster terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/update-azaksnodepool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

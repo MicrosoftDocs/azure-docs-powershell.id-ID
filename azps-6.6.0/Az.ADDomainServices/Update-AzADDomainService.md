@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.addomainservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ADDomainServices/help/Update-AzADDomainService.md
-ms.openlocfilehash: 20b24d15ea95449e69523d05b7792e12136dd4a9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7e4d36e5a6e966760953d1130f2077522810fc9b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341834"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140314765"
 ---
 # Update-AzADDomainService
 
 ## SYNOPSIS
 Operasi Perbarui Layanan Domain bisa digunakan untuk memperbarui penyebaran yang sudah ada.
 Panggilan pembaruan hanya mendukung properti yang tercantum dalam badan PATCH.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.addomainservices/update-azaddomainservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -443,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -505,7 +508,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -531,11 +534,11 @@ FORESTTRUST <IForestTrust[]>: Daftar pengaturan untuk Hutan Sumber Daya
   - `[TrustPassword <String>]`: Percayai Kata Sandi
   - `[TrustedDomainFqdn <String>]`: FQDN Domain Tepercaya
 
-INPUTOBJECT <IAdDomainServicesIdentity> : Parameter Identitas
+INPUTOBJECT <IAdDomainServicesIdentity>: Parameter Identitas
   - `[DomainServiceName <String>]`: Nama layanan domain.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya dalam langganan pengguna. Namanya peka huruf besar/huruf.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 REPLICASET <IReplicaSet[]>: Daftar ReplikaSet
   - `[Location <String>]`: Lokasi jaringan virtual

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Export-AzAnalysisServicesInstanceLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Export-AzAnalysisServicesInstanceLog.md
-ms.openlocfilehash: ce1db794029a5d4fc58d80be4e681971df2ff144
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e78b0413caf1ca3cc841e7a5afeba1b0c9b25a24
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136348398"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140314423"
 ---
 # Export-AzAnalysisServicesInstanceLog
 
 ## SYNOPSIS
-Mengekspor log dari contoh server Analysis Services di Lingkungan yang saat ini dicatat dalam lingkungan seperti yang Add-AzAnalysisServicesAccount eksternal
+Mengekspor log dari contoh server Analysis Services di Lingkungan yang saat ini dicatat dalam lingkungan seperti yang ditentukan Add-AzAnalysisServicesAccount manajemen
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/export-azanalysisservicesinstancelog) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Cmdlet Export-AzAnalysisServicesInstance mengekspor log dari contoh server Azure
 PS C:\>Export-AzAnalysisServicesInstanceLog -Instance testserver -OutputPath C:\path\to\log\testserver.log
 ```
 
-Perintah ini akan mengekspor log dari 'testserver' server di lingkungan yang ditentukan dalam perintah Add-AzAnalysisServicesAccount dan menyimpannya ke file yang ditentukan di OutputPath 'C:\path\to\log\testserver.log'
+Perintah ini akan mengekspor log dari 'testserver' server di lingkungan yang ditentukan dalam perintah Add-AzAnalysisServicesAccount lalu menyimpannya ke file yang ditentukan di OutputPath 'C:\path\to\log\testserver.log'
 
 ## PARAMETERS
 
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopic.md
-ms.openlocfilehash: 84771450bd7c7bbf3840e11a30adc2aaec335197
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 48d2f91e767ce10c49f467272be18bffb9202990
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347126"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286205"
 ---
 # New-AzEventGridTopic
 
 ## SYNOPSIS
 Membuat Topik Kisi Acara Azure yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgridtopic) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,14 +39,14 @@ Membuat Topik Kisi Acara Azure yang baru. Setelah topik dibuat, aplikasi dapat m
 PS C:\> New-AzEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1 -Location westus2
 ```
 
-Membuat topik Kisi Acara \` Topic1 \` di lokasi geografis tertentu \` westus2 \` , di grup sumber daya \` MyResourceGroupName \` .
+Membuat topik Kisi Acara Topic1 \`\` di lokasi geografis tertentu \`westus2\`, di grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzEventGridTopic -ResourceGroupName MyResourceGroupName -Name Topic1 -Location westus2 -Tag @{ Department="Finance"; Environment="Test" }
 ```
 
-Membuat topik Kisi Acara Topic1 di lokasi geografis tertentu westus2, di grup sumber daya \` \` \` MyResourceGroupName dengan tag \` "Departemen" dan \` \` "Lingkungan" yang ditentukan.
+Membuat topik Kisi Acara \`Topic1\` \`di lokasi geografis tertentu westus2\`, \`di grup sumber daya MyResourceGroupName\` dengan tag "Departemen" dan "Lingkungan" yang ditentukan.
 
 ## PARAMETERS
 
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerUserPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlVMsPerUserPolicy.md
-ms.openlocfilehash: 9b9b6044826176b4b82588082c3e00030b92c5cc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6aaa3d7717bdf98eb775db9157ab3d3e01ff9c9f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350282"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286457"
 ---
 # Get-AzDtlVMsPerUserPolicy
 
 ## SYNOPSIS
 Dapatkan mesin virtual per kebijakan pengguna sebuah lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.devtestlabs/get-azdtlvmsperuserpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

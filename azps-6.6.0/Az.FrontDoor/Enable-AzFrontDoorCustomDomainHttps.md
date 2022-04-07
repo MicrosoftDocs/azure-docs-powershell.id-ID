@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/enable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Enable-AzFrontDoorCustomDomainHttps.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Enable-AzFrontDoorCustomDomainHttps.md
-ms.openlocfilehash: 71a4690b9dacfee5656ba516696ed4916fa42dcf
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 94afc593cd79c6ef4fb84882a0d130c0a67c7183
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352862"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286097"
 ---
 # Enable-AzFrontDoorCustomDomainHttps
 
 ## SYNOPSIS
 Mengaktifkan HTTPS untuk domain kustom menggunakan sertifikat terkelola Front Pintu atau menggunakan sertifikat sendiri dari Azure Key Vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/enable-azfrontdoorcustomdomainhttps) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

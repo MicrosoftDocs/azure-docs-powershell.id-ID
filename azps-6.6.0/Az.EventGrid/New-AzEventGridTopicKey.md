@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventgrid/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventGrid/EventGrid/help/New-AzEventGridTopicKey.md
-ms.openlocfilehash: f0db79dc512b8f7595d4d70132d76a876d18a678
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 47927aa4c44b4e1f820b7f259c4ca459cf423c3d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347117"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286223"
 ---
 # New-AzEventGridTopicKey
 
 ## SYNOPSIS
 Meregenerasi kunci akses bersama untuk Topik Kisi Acara Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventgrid/new-azeventgridtopickey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,14 +50,14 @@ Meregenerasi kunci akses bersama untuk Topik Kisi Acara Azure.
 PS C:\> New-AzEventGridTopicKey -ResourceGroup MyResourceGroupName -TopicName Topic1 -KeyName key1
 ```
 
-Meregenerasi kunci yang terkait dengan \' kunci1'\ topik Kisi Acara \` Topic1 \` dalam grup sumber daya \` MyResourceGroupName \` .
+Meregenerasi kunci yang terkait dengan kunci1 \''\ topik Kisi Acara \`Topic1\` dalam grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 | New-AzEventGridTopicKey -KeyName "key1"
 ```
 
-Meregenerasi kunci yang terkait dengan \' kunci1'\ topik Kisi Acara \` Topic1 \` dalam grup sumber daya \` MyResourceGroupName \` .
+Meregenerasi kunci yang terkait dengan kunci1 \''\ topik Kisi Acara \`Topic1\` dalam grup sumber daya \`MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

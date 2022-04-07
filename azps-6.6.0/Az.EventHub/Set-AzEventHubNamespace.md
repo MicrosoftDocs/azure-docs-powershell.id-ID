@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubNamespace.md
-ms.openlocfilehash: 11c7e6927bbfd112ba12cbdcb433a609d71b2b74
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1422859b4d9b739b6f6893e3f92bcebe7d13b149
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363005"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140286133"
 ---
 # Set-AzEventHubNamespace
 
 ## SYNOPSIS
 Memperbarui ruang nama Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/set-azeventhubnamespace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Set-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Locatio
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubNamespace memperbarui properti ruang nama Hub Kejadian yang ditentukan.
+Cmdlet Set-AzEventHubNamespace memperbarui properti dari ruang nama Hub Kejadian yang ditentukan.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ MaximumThroughputUnits : 10
 
 ```
 
-Memperbarui Tag untuk ruang nama \` MyNamespaceName \` menjadi Dibuat.
+Memperbarui Tag untuk ruang nama \`MyNamespaceName\` menjadi Dibuat.
 
 ### Contoh 2
 ```powershell
@@ -97,7 +100,7 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 10
 ```
 
-Memperbarui status ruang nama \` MyNamespaceName \` dengan AutoIn protocole = enabled dan MaximumThroughputUnits = 10
+Memperbarui status ruang nama \`MyNamespaceName\` dengan AutoIn protocole = enabled dan MaximumThroughputUnits = 10
 
 ### Contoh 3
 
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

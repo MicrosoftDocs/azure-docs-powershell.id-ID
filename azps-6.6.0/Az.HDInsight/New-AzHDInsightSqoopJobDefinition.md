@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightSqoopJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/New-AzHDInsightSqoopJobDefinition.md
-ms.openlocfilehash: 3642be23fee18e994c96c66b71ec9ec018d11f70
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 334267036943ccea9b3a901caebb6d65d7cca3b3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136349754"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140285863"
 ---
 # New-AzHDInsightSqoopJobDefinition
 
 ## SYNOPSIS
 Membuat objek pekerjaan Sqoop.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/new-azhdinsightsqoopjobdefinition) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ### -File
 Menentukan jalur ke file yang berisi kueri untuk dijalankan.
 File harus tersedia pada akun Storage yang terkait dengan kluster.
-Anda bisa menggunakan parameter ini sebagai ganti *parameter Query.*
+Anda bisa menggunakan parameter ini sebagai ganti *parameter Query* .
 
 ```yaml
 Type: System.String
