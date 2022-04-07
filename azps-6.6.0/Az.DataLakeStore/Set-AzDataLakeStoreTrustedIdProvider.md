@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreTrustedIdProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Set-AzDataLakeStoreTrustedIdProvider.md
-ms.openlocfilehash: d0a217e1d16fdd385bf93fa052fff9ef093cbf39
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 900ef1286240d701214d4823788bcd95a3b363c4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343130"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140484231"
 ---
 # Set-AzDataLakeStoreTrustedIdProvider
 
 ## SYNOPSIS
 Mengubah penyedia identitas tepercaya yang ditentukan di Data Lake Store yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/set-azdatalakestoretrustedidprovider) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet **Set-AzDataLakeStoreTrustedIdProvider** memodifikasi penyedia identitas 
 PS C:\> Set-AzDataLakeStoreTrustedIdProvider -AccountName "ContosoADL" -Name MyProvider -ProviderEndpoint "https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150"
 ```
 
-Langkah ini memperbarui titik akhir penyedia untuk aturan firewall "MyProvider" di akun "ContosoADL" ke " https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150 "
+Langkah ini memperbarui titik akhir penyedia untuk aturan firewall "MyProvider" di akun "ContosoADL" untuk "https://sts.windows.net/6b04908c-b91f-40ce-8024-7ee8a4fd6150"
 
 ## PARAMETERS
 
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

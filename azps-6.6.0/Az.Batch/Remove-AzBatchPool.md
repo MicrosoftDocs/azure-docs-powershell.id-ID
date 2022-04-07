@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchPool.md
-ms.openlocfilehash: 418d7e7e55af7d04efe3fc31f9c0a037b8b855b3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4aab2b616daf9bd208a0941719065ba106adcfd8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373853"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486715"
 ---
 # Remove-AzBatchPool
 
 ## SYNOPSIS
 Menghapus kumpulan kumpulan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchpool) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-AzBatchPool [-Id] <String> [-Force] -BatchContext <BatchAccountContext>
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchPool** menghapus kumpulan Kumpulan Azure tertentu.
-Anda akan diminta konfirmasi, kecuali jika menggunakan parameter *Paksa.*
+Anda akan diminta konfirmasi, kecuali jika menggunakan parameter *Paksa* .
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ PS C:\>Get-AzBatchPool -BatchContext $Context | Remove-AzBatchPool -Force -Batch
 ```
 
 Perintah ini akan menghapus semua kolam renang Batch.
-Karena *parameter* Paksa ada, perintah konfirmasi disingggahkan.
+Karena *parameter Paksa* ada, perintah konfirmasi disingggahkan.
 
 ## PARAMETERS
 
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

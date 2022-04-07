@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/St
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Start-AzDataMigrationService.md
-ms.openlocfilehash: 159f455247d5e4765a3909899d8aafcc43d64d5e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 514277f5ae3fe1824b487829e7c33a208327ad59
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353414"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140483997"
 ---
 # Start-AzDataMigrationService
 
 ## SYNOPSIS
 Memulai contoh Layanan Migrasi Database Azure dalam keadaan berhenti. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/start-azdatamigrationservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Start-AzDataMigrationService [-ResourceId] <String> [-PassThru] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Start-AzDataMigrationService memulai contoh Layanan Migrasi Database Azure dalam status berhenti. 
+Cmdlet Start-AzDataMigrationService memulai contoh Layanan Migrasi Database Azure dalam keadaan berhenti. 
 
 ## EXAMPLES
 
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

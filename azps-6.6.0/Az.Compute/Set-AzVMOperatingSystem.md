@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOperatingSystem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMOperatingSystem.md
-ms.openlocfilehash: 26c3a82b1ae645f9d36411a4c0d6037629171064
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6a09bb101d8441a43296cb66055fe73a3aed57ba
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343670"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140335121"
 ---
 # Set-AzVMOperatingSystem
 
 ## SYNOPSIS
 Mengatur properti sistem operasi untuk mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmoperatingsystem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -80,16 +83,16 @@ $CustomData = "echo 'Hello World'"
 $VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Windows -ComputerName $ComputerName -Credential $Credential -CustomData $CustomData -WinRMHttp -WinRMHttps -WinRMCertificateUrl $WinRMCertUrl -ProvisionVMAgent -EnableAutoUpdate -TimeZone $TimeZone -PatchMode "AutomaticByPlatform"
 ```
 
-Perintah pertama mengonversi kata sandi ke string aman, lalu menyimpannya di $SecurePassword variabel.
-Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` .
+Perintah pertama mengonversi kata sandi ke string yang aman, lalu menyimpannya di $SecurePassword variabel.
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Perintah kedua membuat kredensial untuk Pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial di $Credential lain.
-Untuk informasi selengkapnya, ketik `Get-Help New-Object` .
+Untuk informasi selengkapnya, ketik `Get-Help New-Object`.
 Perintah ketiga mendapatkan ketersediaan yang diatur bernama AvailabilitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
 Perintah keempat membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
-Karena Anda bisa menentukan string ini secara langsung di perintah **Set-AzVMOperatingSystem,** pendekatan ini hanya digunakan untuk keterbacaan.
+Karena Anda bisa menentukan string ini secara langsung di perintah **Set-AzVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
 Namun, Anda mungkin menggunakan pendekatan seperti ini dalam skrip.
 Perintah terakhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
 Perintah menggunakan kredensial yang disimpan di $Credential.
@@ -108,16 +111,16 @@ $CustomData = "echo 'Hello World'"
 $VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Windows -ComputerName $ComputerName -Credential $Credential -CustomData $CustomData -WinRMHttp -WinRMHttps -WinRMCertificateUrl $WinRMCertUrl -ProvisionVMAgent -EnableAutoUpdate -TimeZone $TimeZone -PatchMode "AutomaticByPlatform" -EnableHotPatching
 ```
 
-Perintah pertama mengonversi kata sandi ke string aman, lalu menyimpannya di $SecurePassword variabel.
-Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` .
+Perintah pertama mengonversi kata sandi ke string yang aman, lalu menyimpannya di $SecurePassword variabel.
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Perintah kedua membuat kredensial untuk Pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial di $Credential lain.
-Untuk informasi selengkapnya, ketik `Get-Help New-Object` .
+Untuk informasi selengkapnya, ketik `Get-Help New-Object`.
 Perintah ketiga mendapatkan ketersediaan yang diatur bernama AvailabilitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
 Perintah keempat membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Empat perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
-Karena Anda bisa menentukan string ini secara langsung di perintah **Set-AzVMOperatingSystem,** pendekatan ini hanya digunakan untuk keterbacaan.
+Karena Anda bisa menentukan string ini secara langsung di perintah **Set-AzVMOperatingSystem** , pendekatan ini hanya digunakan untuk keterbacaan.
 Namun, Anda mungkin menggunakan pendekatan seperti ini dalam skrip.
 Perintah terakhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
 Perintah menggunakan kredensial yang disimpan di $Credential.
@@ -135,14 +138,14 @@ $CustomData = "echo 'Hello World'"
 $VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Linux -ComputerName $ComputerName -Credential $Credential -CustomData $CustomData -PatchMode "AutomaticByPlatform"
 ```
 
-Perintah pertama mengonversi kata sandi ke string aman, lalu menyimpannya di $SecurePassword variabel.
-Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` .
+Perintah pertama mengonversi kata sandi ke string yang aman, lalu menyimpannya di $SecurePassword variabel.
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Perintah kedua membuat kredensial untuk Pengguna FullerP dan kata sandi yang disimpan di $SecurePassword, lalu menyimpan kredensial di $Credential lain.
-Untuk informasi selengkapnya, ketik `Get-Help New-Object` .
+Untuk informasi selengkapnya, ketik `Get-Help New-Object`.
 Perintah ketiga mendapatkan ketersediaan yang diatur bernama AvailabilitySet03 dalam grup sumber daya yang bernama ResourceGroup11, lalu menyimpan objek tersebut di $AvailabilitySet sumber daya.
 Perintah keempat membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Mesin virtual tersebut termasuk dalam kumpulan ketersediaan yang disimpan di $AvailabilitySet.
+Mesin virtual tersebut merupakan bagian dari kumpulan ketersediaan yang disimpan di $AvailabilitySet.
 Dua perintah berikutnya menetapkan nilai ke variabel untuk digunakan dalam perintah berikut.
 Perintah terakhir mengatur properti sistem operasi untuk mesin virtual yang disimpan di $VirtualMachine.
 Perintah menggunakan kredensial yang disimpan di $Credential.
@@ -182,9 +185,9 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential.**
+Menentukan nama pengguna dan kata sandi untuk komputer virtual sebagai objek **PSCredential** .
 Untuk mendapatkan kredensial, gunakan cmdlet Get-Credential.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomData
-Menentukan string yang akan diteruskan ke komputer virtual. Untuk informasi selengkapnya lihat [Data Kustom di VM Azure.](https://docs.microsoft.com/azure/virtual-machines/custom-data)
+Menentukan string yang akan diteruskan ke komputer virtual. Untuk informasi selengkapnya, [lihat Data Kustom di VM Azure](https://docs.microsoft.com/azure/virtual-machines/custom-data).
 **Catatan: Tidak direkomendasikan untuk menyimpan informasi sensitif dalam data kustom.**
 
 
@@ -341,8 +344,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu mesin virtual. misalnya Waktu Standar \" \" Pasifik. <br>
-Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones.](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones)
+Menentukan zona waktu mesin virtual. misalnya Waktu Standar \"Pasifik\". <br>
+Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [Zona WaktuInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
 
 ```yaml
 Type: System.String
@@ -358,7 +361,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual lokal untuk mengatur properti sistem operasi.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzVM cmdlet.
+Untuk mendapatkan objek mesin virtual, gunakan Get-AzVM cmdlet.
 Membuat objek mesin virtual menggunakan cmdlet New-AzVMConfig.
 
 ```yaml
@@ -435,7 +438,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
