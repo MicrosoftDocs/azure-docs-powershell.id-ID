@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubAuthorizationRule.md
-ms.openlocfilehash: 57e244e3c9b934af4bfc820cfe93fe834b869caa
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f384961a122af5b4f3c1b26a6c76fd0dc29935d7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363041"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140481783"
 ---
 # Set-AzEventHubAuthorizationRule
 
 ## SYNOPSIS
 Memperbarui aturan otorisasi tertentu pada Hub Acara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/set-azeventhubauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Cmdlet Set-AzEventHubAuthorizationRule memperbarui aturan otorisasi yang ditentu
 PS C:\> Set-AzEventHubAuthorizationRule -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -AuthorizationRuleName MyAuthRuleName -Rights @("Manage")
 ```
 
-Memperbarui aturan otorisasi MyAuthRuleName untuk memberikan hak Kelola ke Hub Kejadian \` \` \` MyEventHubName, yang lingkupnya ruang nama \` \` MyNamespaceName \` .
+Memperbarui aturan otorisasi \`MyAuthRuleName\` untuk memberikan hak Kelola ke Hub \`Kejadian MyEventHubName\`, yang lingkupnya ruang nama \`MyNamespaceName\`.
 
 ## PARAMETERS
 
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

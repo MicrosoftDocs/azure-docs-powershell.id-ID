@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Remove-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 32688550414f72b72cda6eb92a7b7d3cb1441739
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3d5ee43e39aa2d77b24ee693b2810deca018c3a4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136363134"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140503887"
 ---
 # Remove-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Menghapus grup konsumen Hub Acara yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/remove-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Remove-AzEventHubConsumerGroup [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzEventHubConsumerGroup Menghapus dan menghapus grup konsumen tertentu dari Hub Acara tertentu.
+Cmdlet Remove-AzEventHubConsumerGroup menghapus grup konsumen tertentu dari Hub Acara tertentu.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ Cmdlet Remove-AzEventHubConsumerGroup Menghapus dan menghapus grup konsumen tert
 PS C:\> Remove-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyConsumerGroupName
 ```
 
-Menghapus grup konsumen \` MyConsumerGroupName \` dari Event Hub \` MyEventHubName, yang lingkupnya adalah \` ruang nama \` MyNamespaceName. \`
+Menghapus grup konsumen \`MyConsumerGroupName\` dari Event Hub \`MyEventHubName\`, yang lingkupnya \`ruang nama MyNamespaceName\` .
 
 ### Contoh 2: InputObject - Menggunakan Variabel
 ```powershell
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

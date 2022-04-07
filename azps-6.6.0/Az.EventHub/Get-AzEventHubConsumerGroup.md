@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/get-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Get-AzEventHubConsumerGroup.md
-ms.openlocfilehash: 3b34b0c67860e0841f2450f8f7acfa11542291ed
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 106267e647a0dc8957da3e33a923c5167a922825
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350162"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140482089"
 ---
 # Get-AzEventHubConsumerGroup
 
 ## SYNOPSIS
 Mendapatkan detail tentang grup konsumen Hub Acara tertentu, atau mendapatkan daftar grup konsumen di Hub Acara.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/get-azeventhubconsumergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,14 +39,14 @@ Jika nama grup konsumen tidak disediakan, daftar grup konsumen di Hub Acara yang
 PS C:\> Get-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName
 ```
 
-Mendapatkan grup konsumen \` MyConsumerGroupName di \` Event Hub MyEventHubName, yang ada di ruang nama MyNamespaceName dengan grup sumber daya \` \` \` \` \` MyResourceGroupName \` .
+Mendapatkan grup konsumen \`MyConsumerGroupName\` di Event Hub \`MyEventHubName\`, yang ada di ruang \`nama MyNamespaceName\` dengan grup sumber \`daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
-Mendapatkan daftar grup konsumen di Hub Kejadian MyEventHubName, yang ada di ruang nama \` \` \` MyNamespaceName dengan \` grup sumber daya \` MyResourceGroupName \` .
+Mendapatkan daftar grup konsumen di Hub \`Kejadian MyEventHubName\`, yang ada di ruang \`nama MyNamespaceName\` dengan grup sumber daya \`MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

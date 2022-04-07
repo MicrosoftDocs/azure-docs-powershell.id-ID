@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseImportExportStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseImportExportStatus.md
-ms.openlocfilehash: dea9fbc990cd4c541a80b0bbd79db3dd72cd2be4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9042333591ce8219a78e081f9e3ddcedf1764223
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369583"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140480415"
 ---
 # Get-AzSqlDatabaseImportExportStatus
 
 ## SYNOPSIS
 Mendapatkan detail impor atau ekspor data Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseimportexportstatus) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationStatusLink
-Menentukan link status yang dikembalikan dari cmdlet New-AzSqlDatabaseExport atau New-AzSqlDatabaseImport baru.
+Menentukan link status yang dikembalikan dari cmdlet New-AzSqlDatabaseExport atau New-AzSqlDatabaseImport.
 
 ```yaml
 Type: System.String
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

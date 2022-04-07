@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azl
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzLogicAppTriggerHistory.md
-ms.openlocfilehash: c4c6b364c958b956f9224752324a652e3cbf081c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8502bdc78330ed32388b4d3c0d2c37dbef787257
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342833"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140502555"
 ---
 # Get-AzLogicAppTriggerHistory
 
 ## SYNOPSIS
 
 Dapatkan riwayat pemicu dalam aplikasi logika.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azlogicapptriggerhistory) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-AzLogicAppTriggerHistory -ResourceGroupName <String> -Name <String> -Trigger
 ## DESCRIPTION
 
 Cmdlet **Get-AzLogicAppTriggerHistory** mendapatkan riwayat pemicu dalam aplikasi logika di fitur Aplikasi Logika.
-Cmdlet ini mengembalikan objek **WorkflowTriggerHistory.**
+Cmdlet ini mengembalikan objek **WorkflowTriggerHistory** .
 Tentukan aplikasi logika, grup sumber daya, dan pemicu.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

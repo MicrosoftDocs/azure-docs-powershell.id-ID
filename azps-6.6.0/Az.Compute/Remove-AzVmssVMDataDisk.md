@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssVMDataDisk.md
-ms.openlocfilehash: 8adf65ffefc54aa94501ec968e604a3e3f93bf04
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5c5014dd10fa9f8bc73658604840b2e425bf5432
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136341426"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140335319"
 ---
 # Remove-AzVmssVMDataDisk
 
 ## SYNOPSIS
 Menghapus disk data dari kumpulan skala mesin virtual VM
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/remove-azvmssvmdatadisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ PS C:\> Update-AzVmssVM -VirtualMachineScaleSetVM $VmssVM
 ```
 
 Perintah pertama mendapatkan Vmss VM yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah kedua menghapus data disk lun 0 dari VM scale set VM yang disimpan di $VmssVM Perintah terakhir memperbarui VMss VM dengan disk data yang dihapus.
+Perintah kedua menghapus data disk lun 0 dari VM scale set VM yang disimpan dalam $VmssVM Perintah terakhir memperbarui Vmss VM dengan disk data yang dihapus.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

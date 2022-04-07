@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: f518862b0c1e58c3a5ab3ce09cc355ec9f821c87
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 010d039765e71a2d6b4cdea642d38f58afea21e5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136345653"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140502501"
 ---
 # New-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Membuat perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountagreement) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ New-AzIntegrationAccountAgreement -AgreementContent <String> -AgreementName 'Int
 
 ### -AgreementContent
 Menentukan konten perjanjian, dalam format JavaScript Object Notation (JSON), untuk perjanjian tersebut.
-Tentukan parameter ini atau *parameter AgreementContentFilePath.*
+Tentukan parameter ini atau *parameter AgreementContentFilePath* .
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 
 ### -AgreementContentFilePath
 Menentukan jalur file konten perjanjian untuk perjanjian itu.
-Tentukan parameter ini atau parameter *AgreementContent.*
+Tentukan parameter ini atau parameter *AgreementContent* .
 
 ```yaml
 Type: System.String
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
