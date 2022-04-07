@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.securityinsights
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelAlertRule.md
-ms.openlocfilehash: 9706667b1a963c1f73a96b72efb5aa86d0adbee9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1acc0f03a020ee51eeef3f65a66afe239296b60d
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360017"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329055"
 ---
 # New-AzSentinelAlertRule
 
 ## SYNOPSIS
 Membuat Aturan Analitik (Aturan Pemberitahuan).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelalertrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ New-AzSentinelAlertRule -ResourceGroupName <String> -WorkspaceName <String>
 
 ## DESCRIPTION
 Cmdlet **New-AzSentinelAlertRule** membuat Analitik (Aturan Pemberitahuan) di ruang kerja yang ditentukan.
-Anda harus menentukan salah satu dari tiga *parameter,Jadwal,* *Scheduled* atau *MicrosoftSecurityIncidentCreation,* untuk menentukan jenis Aturan peringatan untuk dibuat.  Setiap Jenis memiliki paramater yang diperlukan berbeda.
+Anda harus menentukan salah satu dari tiga *parameter,Jadwal*, *Scheduled* atau *MicrosoftSecurityIncidentCreation*, untuk menentukan jenis Aturan peringatan untuk dibuat.  Setiap Jenis memiliki paramater yang diperlukan berbeda.
 Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
 
 ## EXAMPLES
@@ -60,7 +63,7 @@ PS C:\>$AlertRuleTemplateName = "f71aba3d-28fb-450b-b192-4e76a83015c8"
 PS C:\>$AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Fusion -Enabled -AlertRuleTemplateName $AlertRuleTemplateName
 ```
 
-Contoh ini membuat **AlertRule** dari jenis *Laut* berdasarkan Templat untuk Deteksi Serangan *Multistage* Tingkat Lanjut , lalu menyimpannya dalam variabel $AlertRule tertentu.<br/>
+Contoh ini membuat **AlertRule** dari jenis *Laut* berdasarkan Templat untuk Deteksi Serangan *Multistage* Tingkat Lanjut, lalu menyimpannya dalam variabel $AlertRule pencarian.<br/>
 Karena menggunakan AlertRuleTemplate, Parameter hanya perlu diaktifkan *untuk* mengaktifkan dan mengaktifkan aturan ini.
 
 ### Contoh 2
@@ -76,7 +79,7 @@ Contoh ini membuat **AlertRule** jenis *MicrosoftSecurityIncidentCreation* berda
 PS C:\> $AlertRule = New-AzSentinelAlertRule -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Scheduled -Enabled -DisplayName "Powershell Exection Alert (Several Times per Hour)" -Severity Low -Query "SecurityEvent | where EventId == 4688" -QueryFrequency (New-TimeSpan -Hours 1) -QueryPeriod (New-TimeSpan -Hours 1) -TriggerThreshold 10
 ```
 
-Contoh ini membuat **DataConnector** dari *jenis Scheduled,* lalu menyimpannya di $AlertRule ini.<br/>
+Contoh ini membuat **DataConnector** dari *jenis Scheduled* , lalu menyimpannya di $AlertRule lain.<br/>
 *Harap diperhatikan bahwa kueri (parameter -Kueri) harus berada di satu baris sebagai string.*
 
 ### Contoh 4
@@ -511,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

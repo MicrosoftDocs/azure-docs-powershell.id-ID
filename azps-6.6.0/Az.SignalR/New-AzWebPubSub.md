@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.signalr/new-azwe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/New-AzWebPubSub.md
-ms.openlocfilehash: 073564cc96cb0edbc856b5849ac946e7e75741c1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3332891bebf6dcdc082fa6b23f34ce6578eee55c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364310"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303953"
 ---
 # New-AzWebPubSub
 
 ## SYNOPSIS
 Membuat atau memperbarui sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/new-azwebpubsub) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Lokasi GEO sumber daya.
-mis. negara bagian Barat | Negara bagian | Negara Bagian Tengah | AS Tengah Selatan.
+mis. negara bagian Barat | Negara bagian | | Amerika | AS Tengah Selatan.
 
 ```yaml
 Type: System.String
@@ -402,7 +405,7 @@ Accept wildcard characters: False
 
 ### -SkuName
 Nama SKU.
-Nilai yang diperbolehkan:Standard_S1, Free_F1
+Nilai yang diizinkan: Standard_S1, Free_F1
 
 ```yaml
 Type: System.String
@@ -419,7 +422,7 @@ Accept wildcard characters: False
 ### -SkuTier
 Tingkatan opsional dari SKU tertentu ini.
 'Standar' atau 'Gratis'.
-`Basic` sudah tidak berlaku, gunakan sebagai `Standard` gantinya.
+`Basic` sudah tidak berlaku, gunakan sebagai gantinya `Standard` .
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WebPubSub.Support.WebPubSubSkuTier
@@ -434,7 +437,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
+Mendapatkan Id langganan yang secara unik mengidentifikasi Microsoft Azure anda.
 ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
@@ -511,7 +514,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

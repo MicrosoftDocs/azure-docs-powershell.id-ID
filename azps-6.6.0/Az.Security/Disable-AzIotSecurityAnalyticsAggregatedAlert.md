@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.security/Disable
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzIotSecurityAnalyticsAggregatedAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Disable-AzIotSecurityAnalyticsAggregatedAlert.md
-ms.openlocfilehash: 0bed4198e4c3fed473773bd1315af9213c40c0be
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 1cb4d05af5f763397ca5ec9157eed2a5a245f15c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374746"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140329361"
 ---
 # Disable-AzIotSecurityAnalyticsAggregatedAlert
 
 ## SYNOPSIS
 Mengabaikan pemberitahuan agregat Iot
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/disable-aziotsecurityanalyticsaggregatedalert) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceId <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert mengabaikan pemberitahuan aggragat tertentu di perangkat hub iot. Nama agregat pemberitahuan adalah kombinasi dari tipe pemberitahuan dan tanggal aggragt pemberitahuan, dipisahkan oleh '/'.
+Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert menghilangkan pemberitahuan aggragat tertentu pada perangkat hub iot. Nama agregat pemberitahuan adalah kombinasi dari tipe pemberitahuan dan tanggal aggragt pemberitahuan, dipisahkan oleh '/'.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet Disable-AzIotSecurityAnalyticsAggregatedAlert mengabaikan pemberitahuan a
 PS C:\> Disable-AzIotSecurityAnalyticsAggregatedAlert -ResourceGroupName "MyResourceGroup" -SolutionName "MySolutionName" -Name "IoT_SucessfulLocalLogin/2020-03-15"
 ```
 
-Menghilangkan peringatan agregat "IoT_SucessfulLocalLogin/2020-03-15" (nama digabungkan dari tipe pemberitahuan dan tanggal agregatnya) dari solusi keamanan IoT "MySolutionName" di grup sumber daya "MyResourceGroup"
+Menghilangkan pemberitahuan agregat "IoT_SucessfulLocalLogin/2020-03-15" (nama digabungkan dari tipe pemberitahuan dan tanggal agregatnya) dari solusi keamanan IoT "MySolutionName" di grup sumber daya "MyResourceGroup"
 
 ### Contoh 2
 ```powershell
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

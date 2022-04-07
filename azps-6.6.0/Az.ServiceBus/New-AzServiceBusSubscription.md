@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusSubscription.md
-ms.openlocfilehash: 7dfe33b4cc9c09b3003182cd461897177c4964be
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 33d659df0e0aa23e1734bad191d3c18b79573b45
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334676"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140328929"
 ---
 # New-AzServiceBusSubscription
 
 ## SYNOPSIS
 Membuat langganan ke topik Bus Layanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebussubscription) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -53,12 +56,12 @@ Status                                    : Active
 UpdatedAt                                 : 1/20/2017 3:18:54 AM
 ```
 
-Membuat langganan `SB-TopicSubscription-Example1` untuk topik Bus Layanan tertentu `SB-Topic_exampl1` .
+Membuat langganan untuk `SB-TopicSubscription-Example1` topik Bus Layanan tertentu `SB-Topic_exampl1`.
 
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [diam jangka waktu,](https://msdn.microsoft.com/library/system.timespan.aspx) setelah itu langganan dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval [diam jangka waktu](https://msdn.microsoft.com/library/system.timespan.aspx) , setelah itu langganan dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.notificationhubs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Set-AzNotificationHubAuthorizationRule.md
-ms.openlocfilehash: 92b897df3d54ab5d7a11394a32ed517b6538827a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 159a83b7ac5053844104c03af69058e836911abf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136360626"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140463562"
 ---
 # Set-AzNotificationHubAuthorizationRule
 
 ## SYNOPSIS
 Mengatur aturan otorisasi untuk hub pemberitahuan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/set-aznotificationhubauthorizationrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,10 +46,10 @@ Tingkat izin bisa menjadi salah satu dari yang berikut:
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
 Misalnya, klien yang diberikan izin Dengarkan akan diarahkan ke URI untuk izin tersebut.
 Cmdlet ini menyediakan dua cara untuk mengubah aturan otorisasi yang ditetapkan ke hub pemberitahuan.
-Sebagai contoh, Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes,** lalu mengonfigurasi objek tersebut dengan nilai properti yang ingin dimiliki aturan.
+Sebagai contoh, Anda dapat membuat contoh objek **SharedAccessAuthorizationRuleAttributes** , lalu mengonfigurasi objek tersebut dengan nilai properti yang ingin dimiliki aturan.
 Anda dapat mengonfigurasi objek melalui .NET Framework.
-Kemudian, Anda dapat menyalin nilai properti tersebut ke aturan menggunakan parameter *SASRule.*
-Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut melalui parameter *InputFile.*
+Kemudian, Anda dapat menyalin nilai properti tersebut ke aturan menggunakan parameter *SASRule* .
+Alternatifnya, Anda dapat membuat file JSON (JavaScript Object Notation) yang berisi nilai konfigurasi yang relevan, lalu menerapkan nilai-nilai tersebut *melalui parameter InputFile* .
 File JSON adalah file teks yang menggunakan sintaks seperti ini: { "Name": "ContosoAuthorizationRule",  
   "PrimaryKey": "WE4qH0398AyXjlekt56gg1gMR3NHoMs29IkalUnnpUk01Y=",  
   "Hak": \[  
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
