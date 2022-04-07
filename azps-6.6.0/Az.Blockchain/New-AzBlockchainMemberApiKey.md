@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.blockchain/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainMemberApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/New-AzBlockchainMemberApiKey.md
-ms.openlocfilehash: 824829d40d90a68dc156d99fac06b51268daa9b8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6b8aae4729977b456bf51a60245c69e291b333cb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136365981"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486571"
 ---
 # New-AzBlockchainMemberApiKey
 
 ## SYNOPSIS
 Meregenerasi kunci API untuk anggota regenerasi api untuk anggota regenerasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/new-azblockchainmemberapikey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -224,13 +227,13 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IBlockchainIdentity> : Parameter Identitas
+INPUTOBJECT <IBlockchainIdentity>: Parameter Identitas
   - `[BlockchainMemberName <String>]`: Nama anggota Server 365.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi.
   - `[OperationId <String>]`: Id Operasi.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SubscriptionId <String>]`: Mendapatkan ID langganan yang mengidentifikasi secara unik Microsoft Azure langganan. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
   - `[TransactionNodeName <String>]`: Nama node transaksi.
 
 ## RELATED LINKS

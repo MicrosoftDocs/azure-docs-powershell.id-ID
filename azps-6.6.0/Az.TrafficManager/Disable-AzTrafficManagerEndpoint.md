@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/d
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Disable-AzTrafficManagerEndpoint.md
-ms.openlocfilehash: 260669cdf6dbffeebf1aa87f892195cb7d17770c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 409fd4b109442ace6b849e68c59beafb3316dd3e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386089"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140457651"
 ---
 # Disable-AzTrafficManagerEndpoint
 
 ## SYNOPSIS
-Menonaktifkan titik akhir di Traffic Manager terkait.
+Menonaktifkan titik akhir di Traffic Manager profil.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/disable-aztrafficmanagerendpoint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,9 +39,9 @@ Disable-AzTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoint
 ## DESCRIPTION
 Cmdlet **Disable-AzTrafficManagerEndpoint** menonaktifkan titik akhir di profil Azure Traffic Manager.
 
-Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa mengirim objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint.*
+Anda bisa menggunakan operator pipeline untuk mengirim objek **TrafficManagerEndpoint** ke cmdlet ini, atau Anda bisa mengirim objek **TrafficManagerEndpoint** menggunakan parameter *TrafficManagerEndpoint* .
 
-Alternatifnya, Anda bisa menentukan nama titik  akhir dan mengetik dengan menggunakan parameter Nama dan *Tipe,* bersama dengan parameter *ProfileName* *dan ResourceGroupName.*
+Alternatifnya, Anda bisa menentukan nama titik akhir dan mengetik dengan menggunakan parameter  Nama dan *Tipe*, bersama dengan parameter *ProfileName dan ResourceGroupName*.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ PS C:\>Get-AzTrafficManagerEndpoint -Name "contoso" -Type ExternalEndpoints -Pro
 Perintah ini mendapatkan titik akhir eksternal yang bernama Contoso dari profil yang bernama ContosoProfile dalam ResourceGroup11.
 Perintah itu lalu melewati titik akhir itu ke cmdlet **Disable-AzTrafficManagerEndpoint** dengan menggunakan operator pipeline.
 Cmdlet tersebut menonaktifkan titik akhir tersebut.
-Perintah menentukan parameter *Paksa.*
+Perintah menentukan parameter *Paksa* .
 Oleh karena itu, kami tidak meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama titik akhir Traffic Manager cmdlet ini dinonaktifkan.
+Menentukan nama titik akhir Traffic Manager yang dinonaktifkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerEndpoint
 Menentukan titik Traffic Manager titik akhir yang dinonaktifkan cmdlet ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint,** gunakan cmdlet Get-AzTrafficManagerEndpoint cmdlet.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

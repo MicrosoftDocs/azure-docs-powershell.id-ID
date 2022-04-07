@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Set-AzResource.md
-ms.openlocfilehash: 6358ad6af9e5ba4ca145889c03a7433412fa824a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e518225c88c170d591eb31e533e338aa468e1b99
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156244"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140459824"
 ---
 # Set-AzResource
 
 ## SYNOPSIS
 Mengubah sumber daya.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/set-azresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -67,7 +70,7 @@ PS C:\> $Resource.Properties.Enabled = "False"
 PS C:\> $Resource | Set-AzResource -Force
 ```
 
-Perintah pertama mendapatkan sumber daya bernama ContosoSite dengan menggunakan cmdlet Get-AzResource, lalu menyimpannya di $Resource sumber.
+Perintah pertama mendapatkan sumber daya bernama ContosoSite menggunakan cmdlet Get-AzResource, lalu menyimpannya di $Resource nya.
 Perintah kedua mengubah properti properti dari $Resource.
 Perintah terakhir memperbarui sumber daya agar sesuai dengan $Resource.
 
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ExtensionResourceName
 Menentukan nama sumber daya ekstensi untuk sumber daya tersebut.
-Sebagai contoh, untuk menentukan database, gunakan format berikut: nama `/` server database
+Misalnya, untuk menentukan database, gunakan format berikut: namadatabase`/` server
 
 ```yaml
 Type: System.String
@@ -307,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat, termasuk langganan, seperti dalam contoh berikut: `/subscriptions/` ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat, termasuk langganan, seperti dalam contoh berikut: `/subscriptions/`ID langganan`/providers/Microsoft.Sql/servers/ContosoServer/databases/ContosoDatabase`
 
 ```yaml
 Type: System.String
@@ -445,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
