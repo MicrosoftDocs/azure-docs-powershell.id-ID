@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Get-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerMSSupportAudit.md
-ms.openlocfilehash: 24f2ab28c7d07aa93a28cef71dc6485d20ee7de2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e3b92ca42d642741980a72991d5b0bc2c3a79726
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368768"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140245537"
 ---
 # Get-AzSqlServerMSSupportAudit
 
 ## SYNOPSIS
 Mendapatkan pengaturan pengauditan operasi dukungan Microsoft dari server Azure SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlservermssupportaudit) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Get-AzSqlServerMSSupportAudit -ServerObject <AzureSqlServerModel> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerMSSupportAudit** mendapatkan pengaturan pengauditan operasi dukungan Microsoft dari server SQL Azure.
+Cmdlet **Get-AzSqlServerMSSupportAudit** mendapatkan pengaturan audit operasi dukungan Microsoft dari server SQL Azure.
 Tentukan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi server.
 
 ## EXAMPLES
@@ -52,7 +55,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 2: Dapatkan, melalui pipeline, pengaturan audit operasi dukungan Microsoft untuk server SQL Azure
+### Contoh 2: Get, through pipeline, the Microsoft support operations auditing settings of an Azure SQL server
 ```
 PS C:\> Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Get-AzSqlServerMSSupportAudit
 ServerName                          : server01
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/set-Azsqlela
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlElasticJobStep.md
-ms.openlocfilehash: d06be42139a05efec5da8bd6ffc419922e01d008
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2a79dfdd742e4051505fec09699169af8c428de9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136344561"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140244817"
 ---
 # Set-AzSqlElasticJobStep
 
 ## SYNOPSIS
 Memperbarui langkah kerja
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlelasticjobstep) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -110,7 +113,7 @@ Set-AzSqlElasticJobStep [-ResourceId] <String> -OutputDatabaseResourceId <String
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzSqlElasticJobStep memperbarui langkah kerja
+Cmdlet Set-AzSqlElasticJobStep cmdlet memperbarui langkah kerja
 
 ## EXAMPLES
 
@@ -522,7 +525,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

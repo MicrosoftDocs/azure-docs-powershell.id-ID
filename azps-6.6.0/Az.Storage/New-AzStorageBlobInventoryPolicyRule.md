@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobInventoryPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobInventoryPolicyRule.md
-ms.openlocfilehash: a757b2cd93b551c63c7fe72efc8b4abe9e27e037
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d3e1818206c9df5fff230bf71c96e6c6e41191ec
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351314"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140095994"
 ---
 # New-AzStorageBlobInventoryPolicyRule
 
 ## SYNOPSIS
 Membuat objek aturan kebijakan inventaris blob, yang dapat digunakan di Set-AzStorageBlobInventoryPolicy.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageblobinventorypolicyrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -72,7 +75,7 @@ Perintah berikut mengatur kebijakan inventaris blob ke akun Storage dengan 2 obj
 ## PARAMETERS
 
 ### -BlobSchemaField
-Menentukan bidang dan properti objek Blob yang akan disertakan dalam inventaris. Nilai yang valid meliputi: Nama, Waktu Pembuatan, Terakhir Diubah, Panjang Konten, Content-MD5, BlobType, AccessTier, AccessTierChangeTime, Expiry-Time, hdi_isfolder, Owner, Group, Permissions, Acl, Metadata, LastAccessTime, AccessTierInferred, Tags. 'Name' adalah skemafield yang diperlukan. Nilai bidang skema 'Kedaluwarsa-Waktu, hdi_isfolder, Pemilik, Grup, Izin, Acl' hanya valid untuk akun yang diaktifkan HierarchicalNamespace.'Tag' hanya berlaku untuk akun non HierarchicalNamespace.
+Menentukan bidang dan properti objek Blob yang akan disertakan dalam inventaris. Nilai yang valid meliputi: Nama, Pembuatan-Waktu, Terakhir Diubah, Panjang Konten, Content-MD5, BlobType, AccessTier, AccessTierChangeTime, Expiry-Time, hdi_isfolder, Owner, Group, Permissions, Acl, Metadata, LastAccessTime, AccessTierInferred, Tags. 'Name' adalah skemafield yang diperlukan. Nilai bidang skema 'Kedaluwarsa-Waktu, hdi_isfolder, Pemilik, Grup, Izin, Acl' hanya valid untuk akun yang diaktifkan HierarchicalNamespace.'Tag' hanya berlaku untuk akun non HierarchicalNamespace.
 Jika menentukan '-IncludeSnapshot', akan menyertakan 'Snapshot' di inventaris.  Jika menentukan '-IncludeBlobVersion', akan menyertakan 'VersionId, 'IsCurrentVersion' di inventaris.
 
 ```yaml
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

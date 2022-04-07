@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchJob.md
-ms.openlocfilehash: 108abfe38c13454aeac3f1d6e7ff389100a63c8d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 07d7cd37f7f977c2a68766121d1f8927cb5624ef
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136343805"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080199"
 ---
 # Get-AzBatchJob
 
 ## SYNOPSIS
 Dapatkan pekerjaan Kumpulan untuk akun Kumpulan atau jadwal pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchjob) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,10 +44,10 @@ Get-AzBatchJob [[-JobSchedule] <PSCloudJobSchedule>] [-Filter <String>] [-MaxCou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchJob** mendapatkan pekerjaan Azure Batch untuk akun Batch yang ditentukan oleh parameter *BatchAccountContext.*
+Cmdlet **Get-AzBatchJob** mendapatkan pekerjaan Azure Batch untuk akun Batch yang ditentukan oleh parameter *BatchAccountContext* .
 Anda dapat menggunakan parameter *Id* untuk mendapatkan pekerjaan tunggal.
 Anda dapat menggunakan parameter *Filter* untuk mendapatkan pekerjaan yang cocok dengan filter Open Data Protocol (OData).
-Jika Anda menyediakan instans ID jadwal pekerjaan **atau PSCloudJobSchedule,** cmdlet ini hanya mengembalikan pekerjaan untuk jadwal pekerjaan tersebut.
+Jika Anda menyediakan instans ID jadwal pekerjaan **atau PSCloudJobSchedule** , cmdlet ini hanya mengembalikan pekerjaan untuk jadwal pekerjaan tersebut.
 
 ## EXAMPLES
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -JobSchedule
 Menentukan objek **PSCloudJobSchedule** yang mewakili jadwal pekerjaan yang berisi pekerjaan.
-Untuk mendapatkan objek **PSCloudJobSchedule,** gunakan Get-AzBatchJobSchedule cmdlet.
+Untuk mendapatkan objek **PSCloudJobSchedule** , gunakan Get-AzBatchJobSchedule cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudJobSchedule
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

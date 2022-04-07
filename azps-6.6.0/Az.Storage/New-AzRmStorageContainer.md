@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azrm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzRmStorageContainer.md
-ms.openlocfilehash: 0d998b293dcccfdb8b06575d55b662e07a72205c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: eac2558d5ca3b4c56bc779bd490015dc2c5e0023
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338291"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140096021"
 ---
 # New-AzRmStorageContainer
 
 ## SYNOPSIS
 Membuat wadah Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azrmstoragecontainer) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ New-AzRmStorageContainer -StorageAccount <PSStorageAccount> -Name <String> -Defa
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRmStorageContainer** membuat Storage blob terpisah
+Cmdlet **New-AzRmStorageContainer** membuat Storage wadah blob
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Cmdlet **New-AzRmStorageContainer** membuat Storage blob terpisah
 PS C:\>New-AzRmStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Metadata @{tag0="value0";tag1="value1";tag2="value2"}
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage penampung dan nama wadah akun, dengan metadata.
+Perintah ini akan membuat Storage blob dengan Storage wadah dan nama akun, dengan metadata.
 
 ### Contoh 2: Membuat wadah Storage blob dengan Storage wadah dan objek akun, dengan akses publik sebagai Blob
 ```
@@ -66,7 +69,7 @@ PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup
 PS C:\>New-AzRmStorageContainer -StorageAccount $accountObject -ContainerName "myContainer" -PublicAccess Blob
 ```
 
-Perintah ini akan membuat Storage blob dengan Storage penampung dan objek akun, dengan akses publik sebagai Blob.
+Perintah ini akan membuat Storage blob dengan Storage objek akun dan nama wadah pengguna, dengan akses publik sebagai Blob.
 
 ### Contoh 3: Membuat wadah penyimpanan dengan pengaturan EnkripsiScope
 ```
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

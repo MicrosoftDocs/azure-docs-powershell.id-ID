@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerIpAddressRange.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Add-AzTrafficManagerIpAddressRange.md
-ms.openlocfilehash: e3c50e89224b3dbf6effef35e0ed811c7a8722d1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a76c759c954a3b32fa99554bc6cf527e911528be
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381382"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140302333"
 ---
 # Add-AzTrafficManagerIpAddressRange
 
 ## SYNOPSIS
 Menambahkan rentang alamat atau subnet ke objek titik Traffic Manager titik akhir lokal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/add-aztrafficmanageripaddressrange) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,10 +31,10 @@ Add-AzTrafficManagerIpAddressRange -First <String> [-Last <String>] [-Scope <Int
 
 ## DESCRIPTION
 Cmdlet **Add-AzTrafficManagerIpAddressRange** menambahkan rentang alamat IP ke objek titik akhir Azure Traffic Manager lokal.
-Anda dapat memperoleh titik akhir menggunakan New-AzTrafficManagerEndpoint cmdlet Get-AzTrafficManagerEndpoint.
+Anda dapat memperoleh titik akhir menggunakan cmdlet New-AzTrafficManagerEndpoint Get-AzTrafficManagerEndpoint.
 
 Cmdlet ini beroperasi pada objek titik akhir lokal.
-Lakukan perubahan Anda ke titik akhir Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint cmdlet.
+Lakukan perubahan anda ke titik akhir Traffic Manager dengan menggunakan cmdlet Set-AzTrafficManagerEndpoint cmdlet.
 
 ## EXAMPLES
 
@@ -45,13 +48,13 @@ PS C:\> Add-AzTrafficManagerIpAddressRange -TrafficManagerEndpoint $TrafficManag
 PS C:\> Set-AzTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama membuat titik akhir Azure Traffic Manager dengan menggunakan cmdlet **New-AzTrafficManagerEndpoint.**
+Perintah pertama membuat titik akhir Azure Traffic Manager dengan menggunakan cmdlet **New-AzTrafficManagerEndpoint**.
 Perintah menyimpan titik akhir lokal dalam $TrafficManagerEndpoint variabel.
 Perintah kedua menambahkan rentang alamat IP 1.2.3.4 ke 5.6.7.8 ke titik akhir yang disimpan $TrafficManagerEndpoint.
 Perintah ketiga menambahkan rentang alamat IP 9.10.11.0 ke 9.10.11.255 ke titik akhir yang disimpan dalam $TrafficManagerEndpoint.
-Perintah keempat memverifikasi bahwa lingkup cocok dengan ukuran rentang, lalu menambahkan rentang alamat IP 12.13.14.0 hingga 12.13.14.31 ke titik akhir yang disimpan di $TrafficManagerEndpoint.
+Perintah keempat memverifikasi bahwa lingkup cocok dengan ukuran rentang, lalu menambahkan rentang alamat IP 12.13.14.0 hingga 12.13.14.31 ke titik akhir yang disimpan dalam $TrafficManagerEndpoint.
 Perintah kelima menambahkan rentang alamat IP 15.16.17.18 ke 15.16.17.18 ke titik akhir yang disimpan dalam $TrafficManagerEndpoint.
-Perintah terakhir memperbarui titik akhir di Traffic Manager sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah terakhir memperbarui titik akhir pada Traffic Manager cocok dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ### -TrafficManagerEndpoint
 Menentukan objek **TrafficManagerEndpoint** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerEndpoint,** gunakan cmdlet Get-AzTrafficManagerEndpoint atau New-AzTrafficManagerEndpoint cmdlet.
+Untuk mendapatkan objek **TrafficManagerEndpoint** , gunakan cmdlet Get-AzTrafficManagerEndpoint New-AzTrafficManagerEndpoint.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

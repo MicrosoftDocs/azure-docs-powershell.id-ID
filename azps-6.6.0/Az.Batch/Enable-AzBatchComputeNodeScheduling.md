@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchComputeNodeScheduling.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchComputeNodeScheduling.md
-ms.openlocfilehash: 6dbb94d0a6044d420f898b2b9770af09b4c7b9e0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0a779eed283bc26eb24937c92c416b9c8d5cdd35
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136334175"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080217"
 ---
 # Enable-AzBatchComputeNodeScheduling
 
 ## SYNOPSIS
 Memungkinkan penjadwalan tugas pada node perhitungan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/enable-azbatchcomputenodescheduling) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -59,7 +62,7 @@ Perintah ini mengaktifkan penjadwalan tugas di semua node perhitungan yang ditem
 Untuk menjalankan tugas ini, perintah pertama dalam contoh membuat referensi objek yang berisi tombol akun untuk akun batch contosobatchaccount.
 Referensi objek ini disimpan dalam variabel yang bernama $context.
 Perintah kedua dalam contoh lalu menggunakan referensi objek ini dan **Get-AzBatchComputeNode** untuk mengembalikan kumpulan semua node hitung yang ditemukan di Pool06.
-Kumpulan itu lalu dibingkas ke cmdlet **Enable-AzBatchComputeNodeScheduling,** yang memungkinkan penjadwalan tugas pada setiap node perhitungan dalam koleksi.
+Kumpulan itu lalu dibingkas ke cmdlet **Enable-AzBatchComputeNodeScheduling** , yang memungkinkan penjadwalan tugas pada setiap node perhitungan dalam koleksi.
 
 ## PARAMETERS
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

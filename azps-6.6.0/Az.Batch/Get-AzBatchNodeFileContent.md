@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFileContent.md
-ms.openlocfilehash: 0a16ed5c3ade6d6f43ab2c70eba61b744d4306e3
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3f7fd2bd5dad871fe0a2a67a267e748e8d2eb31b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378428"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140080181"
 ---
 # Get-AzBatchNodeFileContent
 
 ## SYNOPSIS
 Mendapatkan file node Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchnodefilecontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -74,14 +77,14 @@ PS C:\>Get-AzBatchNodeFileContent -JobId "Job01" -TaskId "Task01" -Path "StdOut.
 
 Perintah ini mendapatkan file node yang dinamai StdOut.txt, dan menyimpannya ke jalur file E:\PowerShell\StdOut.txt di komputer lokal.
 File node StdOut.txt terkait dengan tugas yang memiliki ID Task01 untuk pekerjaan yang memiliki ID Job01.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan file node Kumpulan dan simpan ke jalur file tertentu menggunakan saluran
 ```
 PS C:\>Get-AzBatchNodeFile -JobId "Job02" -TaskId "Task02" -Path "StdErr.txt" -BatchContext $Context | Get-AzBatchNodeFileContent -DestinationPath "E:\PowerShell\StdOut.txt" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file node yang dinamai StdErr.txt dengan menggunakan cmdlet Get-AzBatchNodeFile.
+Perintah ini akan mendapatkan file node yang dinamai StdErr.txt dengan cmdlet Get-AzBatchNodeFile.
 Perintah meneruskan file itu ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet saat ini menyimpan file tersebut ke E:\PowerShell\StdOut.txt jalur file di komputer lokal.
 File node StdOut.txt terkait dengan tugas yang memiliki ID Task02 untuk pekerjaan yang memiliki ID Job02.
@@ -92,7 +95,7 @@ PS C:\>$Stream = New-Object -TypeName "System.IO.MemoryStream"
 PS C:\> Get-AzBatchNodeFileContent -JobId "Job03" -TaskId "Task11" -Path "StdOut.txt" -DestinationStream $Stream -BatchContext $Context
 ```
 
-Perintah pertama membuat aliran menggunakan cmdlet New-Object, lalu menyimpannya dalam $Stream variabel.
+Perintah pertama membuat aliran menggunakan cmdlet New-Object, lalu menyimpannya di $Stream variabel.
 Perintah kedua mendapatkan file node yang dinamai StdOut.txt dari tugas yang memiliki ID Task11 untuk pekerjaan yang memiliki ID Job03.
 Perintah mengarahkan konten file ke aliran di $Stream.
 
@@ -109,7 +112,7 @@ Perintah tersebut menyimpan file ke E:\PowerShell\StdOut.txt file di komputer lo
 PS C:\>Get-AzBatchNodeFile -PoolId "Pool01" -ComputeNodeId "ComputeNode01" -Path "Startup\StdOut.txt" -BatchContext $Context | Get-AzBatchNodeFileContent -DestinationPath "E:\PowerShell\StdOut.txt" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan file node Startup\StdOut.txt dengan menggunakan Get-AzBatchNodeFile dari node hitung yang memiliki ID ComputeNode01.
+Perintah ini mendapatkan file node Startup\StdOut.txt menggunakan Get-AzBatchNodeFile dari node hitung yang memiliki ID ComputeNode01.
 Node perhitungan berada di pool yang memiliki ID Pool01.
 Perintah meneruskan file node itu ke cmdlet saat ini.
 Cmdlet tersebut menyimpan file ke E:\PowerShell\StdOut.txt jalur file di komputer lokal.
@@ -120,7 +123,7 @@ PS C:\>$Stream = New-Object -TypeName "System.IO.MemoryStream"
 PS C:\> Get-AzBatchNodeFileContent -PoolId "Pool01" -ComputeNodeId "ComputeNode01" -Path "startup\stdout.txt" -DestinationStream $Stream -BatchContext $Context
 ```
 
-Perintah pertama membuat aliran menggunakan cmdlet New-Object, lalu menyimpannya dalam $Stream variabel.
+Perintah pertama membuat aliran menggunakan cmdlet New-Object, lalu menyimpannya di $Stream variabel.
 Perintah kedua mendapatkan file node yang dinamai StdOut.txt dari node hitung yang memiliki ID ComputeNode01 dalam pool yang memiliki ID Pool01.
 Perintah mengarahkan konten file ke aliran di $Stream.
 
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan file yang akan dapatkan cmdlet ini, sebagai objek **PSNodeFile.**
+Menentukan file yang akan dapatkan cmdlet ini, sebagai objek **PSNodeFile** .
 Untuk mendapatkan objek file node, gunakan cmdlet Get-AzBatchNodeFile.
 
 ```yaml
@@ -310,7 +313,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

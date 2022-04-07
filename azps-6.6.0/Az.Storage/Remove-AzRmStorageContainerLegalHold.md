@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzRmStorageContainerLegalHold.md
-ms.openlocfilehash: b916c88e656d3370a6b08e898e35eca56bd7edfb
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 23cb19a6618bceb921f0094fa2f1f85df35aa051
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136364154"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140095913"
 ---
 # Remove-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
 Menghapus tag perlindungan hukum dari Storage blob
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/remove-azrmstoragecontainerlegalhold) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,27 +51,27 @@ Cmdlet **Remove-AzRmStorageContainerLegalHold** menghapus tag penyimpanan hukum 
 PS C:\>Remove-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1
 ```
 
-Perintah ini menghapus tag perlindungan hukum dari Storage blob dengan nama Storage dan wadah akun.
+Perintah ini menghapus tag perlindungan hukum dari wadah Storage blob dengan nama Storage dan wadah akun.
 
-### Contoh 2: Menghapus tag perlindungan hukum dari wadah Storage blob dengan nama Storage dan wadah akun
+### Contoh 2: Menghapus tag perlindungan hukum dari wadah Storage blob dengan Storage dan nama wadah akun
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Remove-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1,tag2
 ```
 
-Perintah ini menghapus tag perlindungan hukum dari wadah Storage blob dengan nama Storage dan wadah akun.
+Perintah ini menghapus tag perlindungan hukum dari wadah blob Storage dengan nama Storage dan wadah akun.
 
-### Contoh 3: Menghapus tag perlindungan hukum dari Storage wadah blob dalam Storage dengan saluran
+### Contoh 3: Menghapus tag perlindungan hukum Storage penampung blob dalam Storage dengan saluran
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Remove-AzRmStorageContainerLegalHold -Tag  tag1
 ```
 
-Perintah ini menghapus tag perlindungan hukum dari Storage wadah blob dalam akun Storage dengan saluran.
+Perintah ini menghapus tag perlindungan hukum dari Storage wadah blob dalam Storage dengan saluran.
 
 ## PARAMETERS
 
 ### -Container
-Storage objek wadah
+Storage wadah objek
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

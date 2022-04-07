@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
-ms.openlocfilehash: 8d4b6b6035a443f52fc1c21e4993132c7d91e67c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 06350833b40490c6f1c616e4473cb58eaee1fb8e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136379593"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136609"
 ---
 # Get-AzLogzMonitoredResource
 
 ## SYNOPSIS
 List the resources currently being monitored by the Logz monitor resource.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logz/get-azlogzmonitoredresource) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ List the resources currently being monitored by the Logz monitor resource.
 
 ## EXAMPLES
 
-### Contoh 1: List the resources currently being monitored by the Logz monitor resource
+### Contoh 1:  List the resources currently being monitored by the Logz monitor resource
 ```powershell
 PS C:\> Get-AzLogzMonitoredResource -ResourceGroupName LPTrials -MonitorName lpatlogz
 
@@ -51,7 +54,7 @@ CapturedByRules                                       True
 
 Perintah ini mencantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz.
 
-### Contoh 2: List the resources currently being monitored by the Logz sub account
+### Contoh 2:  List the resources currently being monitored by the Logz sub account
 ```powershell
 PS C:\> Get-AzLogzMonitoredResource -ResourceGroupName LPTrials -MonitorName lpatlogz -SubAccountName lpslogzsubaccount
 
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

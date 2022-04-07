@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.machinelearning/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/New-AzMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MachineLearning/MachineLearning/help/New-AzMlWebService.md
-ms.openlocfilehash: 86dd355441aeea1d272d10f2c5b89b44abd804d6
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 2b6a9aebaa5cb1ea9012d2c9d1581fbd6573d2d8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136352466"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140136411"
 ---
 # New-AzMlWebService
 
 ## SYNOPSIS
 Membuat layanan web baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.machinelearning/new-azmlwebservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,14 +46,14 @@ Jika ada layanan web dengan nama yang sama dalam grup sumber daya, panggilan ber
 New-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Location "South Central US" -DefinitionFile "C:\mlservice.json"
 ```
 
-Membuat layanan web Azure Machine Learning bernama "mywebservicename" di grup "myresourcegroup" dan kawasan AS Tengah Selatan, berdasarkan definisi yang ada dalam file json yang direferensikan.
+Membuat layanan web Azure Machine Learning baru bernama "mywebservicename" dalam grup "myresourcegroup" dan kawasan AS Tengah Selatan, berdasarkan definisi yang ada dalam file json yang direferensikan.
 
 ### Contoh 2: Membuat layanan baru dari contoh objek
 ```
 New-AzMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Location "South Central US" -NewWebServiceDefinition $serviceDefinitionObject
 ```
 
-Anda bisa mendapatkan contoh objek layanan web untuk dikustomisasi sebelum menerbitkan sebagai sumber daya dengan menggunakan cmdlet Import-AzMlWebService baru.
+Anda bisa mendapatkan contoh objek layanan web untuk dikustomisasi sebelum menerbitkan sebagai sumber daya dengan menggunakan cmdlet Import-AzMlWebService.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 
 ### -DefinitionFile
 Menentukan jalur ke file yang berisi definisi format JSON dari layanan web.
-Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web di spesifikasi di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/ .
+Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web di spesifikasi di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Masukkan kawasan pusat data Azure, seperti "AS Barat" atau "Asia Tenggara".
 Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe itu.
 Layanan web tidak harus berada di kawasan yang sama dengan langganan Azure Anda atau kawasan yang sama dengan grup sumber dayanya.
 Grup sumber daya bisa berisi layanan web dari wilayah yang berbeda.
-Untuk menentukan kawasan yang mendukung setiap tipe sumber daya, Get-AzResourceProvider cmdlet parameter ProviderNamespace.
+Untuk menentukan kawasan yang mendukung setiap tipe sumber daya, gunakan Get-AzResourceProvider dengan cmdlet parameter ProviderNamespace.
 
 ```yaml
 Type: System.String
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ### -NewWebServiceDefinition
 Definisi untuk layanan web baru, berisi semua properti yang menjadi dasar layanan.
 Parameter ini diperlukan dan mewakili instans kelas Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
-Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web di spesifikasi di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/stable/2017-01-01/webservices.json .
+Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web di spesifikasi di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/stable/2017-01-01/webservices.json.
 
 ```yaml
 Type: Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
@@ -159,7 +162,7 @@ Masukkan kawasan pusat data Azure, seperti "AS Barat" atau "Asia Tenggara".
 Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe itu.
 Layanan web tidak harus berada di kawasan yang sama dengan langganan Azure Anda atau kawasan yang sama dengan grup sumber dayanya.
 Grup sumber daya bisa berisi layanan web dari wilayah yang berbeda.
-Untuk menentukan kawasan yang mendukung setiap tipe sumber daya, Get-AzResourceProvider cmdlet parameter ProviderNamespace.
+Untuk menentukan kawasan yang mendukung setiap tipe sumber daya, gunakan Get-AzResourceProvider dengan cmdlet parameter ProviderNamespace.
 
 ```yaml
 Type: System.String
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

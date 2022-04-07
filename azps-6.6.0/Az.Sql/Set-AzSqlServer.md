@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
-ms.openlocfilehash: 51842d05b2c015c7e1f5b1f0b46244c31880bb89
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e0ec267842eaf00524681a74c4da3a1505743984
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351506"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140326517"
 ---
 # Set-AzSqlServer
 
 ## SYNOPSIS
 Mengubah properti server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Set-AzSqlServer [-ServerName] <String> [-SqlAdministratorPassword <SecureString>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlServer** mengubah properti server Azure SQL Database.
+Cmdlet **Set-AzSqlServer** memodifikasi properti server Azure SQL Database.
 
 ## EXAMPLES
 
@@ -200,8 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorPassword
-Menentukan kata sandi baru, sebagai **SecureString**, untuk administrator server database. Untuk mendapatkan **SecureString,** gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
-ConvertTo-SecureString` .
+Menentukan kata sandi baru, sebagai **SecureString**, untuk administrator server database. Untuk mendapatkan **SecureString**, gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
+ConvertTo-SecureString`.
 
 ```yaml
 Type: System.Security.SecureString
@@ -322,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.storage/set-Azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccountManagementPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageAccountManagementPolicy.md
-ms.openlocfilehash: 0396ed17ded3e868be0e41f5f481dd5e7a1b6bef
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5efc3b7b165578b3295efb4f26f1108897a8dca9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338179"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303179"
 ---
 # Set-AzStorageAccountManagementPolicy
 
 ## SYNOPSIS
-Membuat atau mengubah kebijakan manajemen akun Azure Storage anda.
+Membuat atau mengubah kebijakan manajemen akun Azure Storage tersebut.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstorageaccountmanagementpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -158,7 +161,7 @@ Rules              : [
                      ]
 ```
 
-Perintah ini terlebih dahulu membuat 2 objek aturan ManajemenPolicy, lalu membuat atau memperbarui kebijakan manajemen suatu Storage dengan 2 objek aturan ManagementPolicy.
+Perintah ini terlebih dahulu membuat 2 objek aturan ManajemenPolicy, lalu membuat atau memperbarui kebijakan manajemen suatu akun Storage dengan 2 objek aturan ManagementPolicy.
 
 ### Contoh 2: Buat atau perbarui kebijakan manajemen akun Storage dengan kebijakan format Json.
 ```
@@ -295,14 +298,14 @@ Rules              : [
                      ]
 ```
 
-Perintah ini membuat atau memperbarui kebijakan manajemen akun Storage dengan kebijakan format json.
+Perintah ini akan membuat atau memperbarui kebijakan manajemen Storage dengan kebijakan format json.
 
-### Contoh 3: Dapatkan kebijakan manajemen dari akun Storage, lalu atur ke akun Storage lain.
+### Contoh 3: Dapatkan kebijakan manajemen dari akun Storage, lalu setel ke akun Storage lain.
 ```
 PS C:\>$outputPolicy = Get-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" | Set-AzStorageAccountManagementPolicy -ResourceGroupName "myresourcegroup2" -AccountName "mystorageaccount2"
 ```
 
-Perintah ini pertama mendapatkan kebijakan manajemen dari Storage, lalu atur ke akun Storage lain.
+Perintah ini terlebih dahulu mendapatkan kebijakan manajemen dari Storage, lalu mengaturnya ke akun Storage lain.
 
 ## PARAMETERS
 
@@ -443,7 +446,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageFileContent.md
-ms.openlocfilehash: 7e314cd504275d1cd65363bfe28ae018fcd634f1
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 9c13f60f8602648684ed07245d91c6e1b03a6bf2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357941"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140303143"
 ---
 # Set-AzStorageFileContent
 
 ## SYNOPSIS
 Mengunggah konten file.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragefilecontent) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Cmdlet **Set-AzStorageFileContent** mengunggah konten file ke file pada berbagi 
 
 ## EXAMPLES
 
-### Contoh 1: Upload file dalam folder saat ini
+### Contoh 1: Upload melihat file dalam folder saat ini
 ```
 PS C:\>Set-AzStorageFileContent -ShareName "ContosoShare06" -Source "DataFile37" -Path "ContosoWorkingFolder/CurrentDataFile"
 ```
@@ -67,13 +70,13 @@ PS C:\> Get-ChildItem -Recurse | Where-Object { $_.GetType().Name -eq "FileInfo"
 ```
 
 Contoh ini menggunakan beberapa cmdlet Windows PowerShell umum dan cmdlet saat ini untuk mengunggah semua file dari folder saat ini ke folder akar wadah ContosoShare06.
-Perintah pertama mendapatkan nama folder saat ini dan menyimpannya di variabel $CurrentFolder baru.
-Perintah kedua menggunakan cmdlet **Get-AzStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu menyimpannya dalam $Container baru.
+Perintah pertama mendapatkan nama folder saat ini dan menyimpannya di $CurrentFolder variabel.
+Perintah kedua menggunakan cmdlet **Get-AzStorageShare** untuk mendapatkan berbagi file bernama ContosoShare06, lalu menyimpannya dalam $Container jaringan.
 Perintah terakhir mendapatkan konten folder saat ini dan meneruskannya ke cmdlet Where-Object dengan menggunakan operator pipeline.
-Cmdlet tersebut memfilter objek yang bukan file, lalu meneruskan file ke ForEach-Object cmdlet.
+Cmdlet tersebut memfilter objek yang bukan file, lalu meneruskan file ke cmdlet ForEach-Object cmdlet.
 Cmdlet tersebut menjalankan blok skrip untuk setiap file yang membuat jalur yang sesuai untuknya, lalu menggunakan cmdlet saat ini untuk mengunggah file.
 Hasilnya memiliki nama yang sama dan posisi relatif yang sama berkaitan dengan file lain yang diunggah contoh ini.
-Untuk informasi selengkapnya tentang blok skrip, ketik `Get-Help about_Script_Blocks` .
+Untuk informasi selengkapnya tentang blok skrip, ketik `Get-Help about_Script_Blocks`.
 
 ### Contoh 3: Upload menggunakan file lokal ke file Azure, dan memesan properti SMB File lokal (File Attributtes, Waktu Pembuatan File, Waktu Penulisan Terakhir File) di file Azure.
 ```
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext.](./New-AzStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzStorageContext](./New-AzStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -167,10 +170,10 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
+Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini mengunggah file ke folder yang ditentukan parameter ini.
-Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory.
-Anda juga dapat menggunakan cmdlet Get-AzStorageFile cmdlet untuk mendapatkan direktori.
+Untuk mendapatkan direktori, gunakan cmdlet New-AzStorageDirectory cmdlet.
+Anda juga dapat menggunakan cmdlet Get-AzStorageFile untuk mendapatkan direktori.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileDirectory
@@ -219,8 +222,8 @@ Menentukan jalur file atau folder.
 Cmdlet ini mengunggah konten ke file yang ditentukan oleh parameter ini, atau ke file dalam folder yang ditentukan oleh parameter ini.
 Jika Anda menentukan folder, cmdlet ini akan membuat file yang memiliki nama yang sama dengan file sumber.
 Jika Anda menentukan jalur file yang tidak ada, cmdlet ini membuat file itu dan menyimpan konten ke file itu.
-Jika Anda menentukan file yang sudah ada, dan Anda menentukan parameter _Paksa,_ cmdlet ini menimpa konten file.
-Jika Anda menentukan file yang sudah ada dan Anda tidak menentukan _Paksa,_ cmdlet ini tidak melakukan perubahan, dan akan mengembalikan kesalahan.
+Jika Anda menentukan file yang sudah ada, dan Anda menentukan parameter _Paksa_ , cmdlet ini menimpa konten file.
+Jika Anda menentukan file yang sudah ada dan Anda tidak menentukan _Paksa_, cmdlet ini tidak melakukan perubahan, dan akan mengembalikan kesalahan.
 Jika Anda menentukan jalur folder yang tidak ada, cmdlet ini tidak melakukan perubahan, dan mengembalikan kesalahan.
 
 ```yaml
@@ -266,11 +269,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
+Menentukan objek **CloudFileShare** .
 Cmdlet ini mengunggah ke file dalam berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzStorageShare.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzStorageShare tersebut.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFileShare
@@ -348,7 +351,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

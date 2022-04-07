@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerTransparentDataEncryptionProtector.md
-ms.openlocfilehash: f6a7fdcdc105555b6cb6187dbe82bdb171d9c8b5
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: f2e38f053855eec24adbf9c09a440cb15ca51c46
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351410"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140096705"
 ---
 # Set-AzSqlServerTransparentDataEncryptionProtector
 
 ## SYNOPSIS
 Mengatur konfigurasi Enkripsi Data Transparan (TDE) untuk server SQL.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlservertransparentdataencryptionprotector) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -46,10 +49,10 @@ ContosoResourceGroup ContosoServer ServiceManaged ServiceManaged
 PS C:\> Set-AzSqlServerTransparentDataEncryptionProtector -Type AzureKeyVault -KeyId 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' -ServerName 'ContosoServer' -ResourceGroup 'ContosoResourceGroup'
 ```
 
-Perintah ini memperbarui server untuk menggunakan Kunci Vault Server dengan Id https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901 ' sebagai pengembang TDE.
+Perintah ini memperbarui server untuk menggunakan Kunci Vault Server dengan Id 'https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901' sebagai kunci tDE.
 ResourceGroupName ServerName Type ServerKeyVaultKeyName
 ----------------- ----------                   ---- ---------------------
-ContosoResourceGroup ContosoServer AzureKeyVault contoso_contosokey_01234567890123456789012345678901
+Contoso_contosokey_01234567890123456789012345678901 ContosoResourceGroup ContosoServer AzureKeyVault
 
 ### Contoh 3
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

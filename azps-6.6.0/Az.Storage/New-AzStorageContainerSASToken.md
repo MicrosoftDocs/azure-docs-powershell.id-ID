@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/new-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerSASToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageContainerSASToken.md
-ms.openlocfilehash: 31d10f99881d3bde63b3bb47352d25255d49ac64
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7b67a12a8187258acf4ee3b7e45f2fce7931912a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136351269"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140095993"
 ---
 # New-AzStorageContainerSASToken
 
 ## SYNOPSIS
 Menghasilkan token SAS untuk wadah penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstoragecontainersastoken) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ Contoh ini menghasilkan token SAS wadah Identitas Pengguna dengan konteks penyim
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext baru.
+Anda dapat membuatnya menggunakan cmdlet New-AzStorageContext.
 Saat konteks penyimpanan didasarkan pada autentikasi OAuth, akan menghasilkan token SAS wadah Identitas Pengguna.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 
 ### -Permission
 Menentukan izin untuk wadah penyimpanan.
-Penting untuk diingat bahwa ini adalah string, seperti `rwd` (untuk Baca, Tulis dan Hapus).
+Penting untuk diingat bahwa ini adalah string, seperti (untuk `rwd` Baca, Tulis dan Hapus).
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
