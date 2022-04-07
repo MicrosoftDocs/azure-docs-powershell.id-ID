@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/invoke-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlElasticPoolFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlElasticPoolFailover.md
-ms.openlocfilehash: 19351d38205d73648097f9df2d56f1268ca1370c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d9d5c7e1fa2f19b5f30f07e63f1a910af0a624f7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368572"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140327309"
 ---
 # Invoke-AzSqlElasticPoolFailover
 
 ## SYNOPSIS
 Failovers sebuah pool elastis.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/invoke-azsqlelasticpoolfailover) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElastisPoolName
-Nama Azure untuk SQL Elastis untuk dihapus.
+Nama Azure untuk SQL Elastis Pool untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Azure untuk SQL Server Elastis Pool ada.
+Nama Azure SQL Server Ruang Elastis ada di.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: 0ea55dba0525d91f5c31db6f4ffe5daf23e78ada
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 7e90714016268e63ffb3e1df3da2e4a1460beb52
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368530"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140327273"
 ---
 # New-AzSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
 Perintah ini akan membuat grup Azure SQL Database Failover Baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabasefailovergroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ New-AzSqlDatabaseFailoverGroup [-ServerName] <String> -FailoverGroupName <String
 ```
 
 ## DESCRIPTION
-Membuat kumpulan baru Azure SQL Database Failover untuk server yang ditentukan.
-Dua Azure SQL Database titik akhir TDS dibuat di FailoverGroupName.SqlDatabaseDnsMarfix (misalnya, FailoverGroupName.database.windows.net) dan FailoverGroupName.secondary.SqlDatabaseDns Halfix. Titik akhir ini mungkin digunakan untuk tersambung ke server utama dan sekunder di Failover Group. Jika server utama terpengaruh oleh pemadaman, failover otomatis titik akhir dan database akan dipicu oleh pendiktean oleh kebijakan failover dan masa tenggang Failover Group.
+Membuat folder baru Azure SQL Database Failover Group untuk server yang ditentukan.
+Dua Azure SQL Database titik akhir TDS dibuat di FailoverGroupName.SqlDatabaseDnsFix (misalnya, FailoverGroupName.database.windows.net) dan FailoverGroupName.secondary.SqlDatabaseDnsFixfix. Titik akhir ini mungkin digunakan untuk tersambung ke server utama dan sekunder di Failover Group. Jika server utama terpengaruh oleh pemadaman, failover otomatis titik akhir dan database akan dipicu oleh pendiktean oleh kebijakan failover dan masa tenggang Failover Group.
 Grup Failover yang baru dibuat tidak berisi database apa pun. Untuk mengontrol kumpulan database dalam Grup Failover, gunakan cmdlet 'Add-AzSqlDatabaseToFailoverGroup' dan 'Remove-AzSqlDatabaseFromFailoverGroup'.
 Hanya nilai yang lebih besar dari atau sama dengan 1 jam yang didukung untuk parameter '-GracePeriodWithDataLossHours'.
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Kebijakan failover grup Azure SQL Database Failover.
+Kebijakan failover dari Azure SQL Database Failover Group.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.FailoverGroup.Model.FailoverPolicy
@@ -143,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Nama server sekunder dari Azure SQL Database Failover.
+Nama server sekunder dari Azure SQL Database Failover Group.
 
 ```yaml
 Type: System.String
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server utama Azure SQL Database dari Grup Failover.
+Nama server utama Azure SQL Database Dari Grup Failover.
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

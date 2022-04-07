@@ -5,19 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
-ms.openlocfilehash: 1f4919ce1297c1c2dbd62169a67f9a7ae8637b40
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: db1fbd3b7ce5c87d93c46f1d57a069b9e56036bd
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350081"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140255293"
 ---
 # New-AzEventHubNamespace
 
 ## SYNOPSIS
 Membuat ruang nama Hub Acara.
 
-## SYNTAX
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/new-azeventhubnamespace) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +42,7 @@ New-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Locatio
 Cmdlet New-AzEventHubNamespace membuat ruang nama baru tipe Hub Kejadian.
 
 ## EXAMPLES
-### Contoh 1                                           
+### Contoh 1
 ```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation
 
@@ -71,7 +72,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian \` MyNamespaceName \` di lokasi geografis tertentu \` MyLocation , di grup sumber daya \` \` MyResourceGroupName \` .
+Membuat ruang nama Hub Kejadian \`MyNamespaceName di\` lokasi geografis \`tertentu MyLocation\`, di grup sumber daya \`MyResourceGroupName\`.
 
 ### Contoh 2
 ```powershell
@@ -102,7 +103,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian MyNamespaceName di lokasi geografis tertentu MyLocation , dalam grup sumber daya \` \` \` \` \` MyResourceGroupName \` dan AutoInservere diaktifkan dengan MaximumThroughputUnits 10.
+Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` dan AutoInsourcee diaktifkan dengan MaximumThroughputUnits 10.
 
 ### Contoh 3: Ruang nama Junii yang diaktifkan
 ```powershell
@@ -133,7 +134,7 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian MyNamespaceName di lokasi geografis tertentu MyLocation , di grup sumber daya \` \` \` \` \` MyResourceGroupName \` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
 
 ### Contoh 4: Ruang nama yang diaktifkan ZonaRedundant
 ```powershell
@@ -164,9 +165,9 @@ Encryption.KeySource          :
 Encryption.KeyVaultProperties :
 ```
 
-Membuat ruang nama Hub Kejadian MyNamespaceName di lokasi geografis tertentu MyLocation , di grup sumber daya \` \` \` \` \` MyResourceGroupName \` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
 
-### Contoh 5: Membuat Ruang Nama dengan Kelola Identitas di kluster 
+### Contoh 5: Membuat Ruang Nama dengan Kelola Identitas di kluster
 ```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation --EnableAutoInflate -MaximumThroughputUnits 12 -EnableKafka -ZoneRedundant -Identity
 
@@ -481,7 +482,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

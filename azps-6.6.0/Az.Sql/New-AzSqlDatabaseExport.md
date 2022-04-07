@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseExport.md
-ms.openlocfilehash: e14bf392f6b8855ef9824fb123133074292dc241
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a6b3efe20584593ac7be3a9256ea1e8a19f2d5eb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338851"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140327255"
 ---
 # New-AzSqlDatabaseExport
 
 ## SYNOPSIS
 Mengekspor Azure SQL Database sebagai file .bacpac ke akun penyimpanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabaseexport) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Permintaan status dapatkan database mungkin dikirim untuk mengambil informasi st
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 > [!IMPORTANT]
-> Agar dapat menggunakan cmdlet ini, firewall di Azure SQL Server perlu dikonfigurasi menjadi "Izinkan layanan dan sumber daya Azure mengakses server ini". Jika ini tidak dikonfigurasi maka kesalahan GatewayTimeout akan dialami.
+> Agar dapat menggunakan cmdlet ini, firewall di Azure SQL Server perlu dikonfigurasi untuk "Izinkan layanan dan sumber daya Azure mengakses server ini". Jika ini tidak dikonfigurasi maka kesalahan GatewayTimeout akan dialami.
 
 ## EXAMPLES
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 
 ### -AuthenticationType
 Menentukan tipe autentikasi yang digunakan untuk mengakses server.
-Nilai default diatur SQL tipe autentikasi tidak diatur.
+Nilai default akan SQL tipe autentikasi tidak diatur.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql.
 SQL autentikasi.
@@ -101,7 +104,7 @@ Set the *AdministratorLogin* and *AdministratorLoginPassword* to the SQL adminis
 - ADPassword.
 Azure Active Directory autentikasi.
 Atur *AdministratorLogin* dan *AdministratorLoginPassword menjadi* nama pengguna dan kata sandi administrator Azure AD.
-Parameter ini hanya tersedia pada server SQL Database V12.
+Parameter ini hanya tersedia di server SQL Database V12.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ImportExport.Model.AuthenticationType
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseNetworkIsolation
-Jika diatur, akan membuat tautan pribadi untuk akun penyimpanan dan/atau SQL server
+If set, will create private link for storage account and/or SQL server
 
 ```yaml
 Type: System.Boolean
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

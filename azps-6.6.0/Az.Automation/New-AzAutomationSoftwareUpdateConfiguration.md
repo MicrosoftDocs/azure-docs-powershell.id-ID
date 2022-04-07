@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/New-AzAutomationSoftwareUpdateConfiguration.md
-ms.openlocfilehash: 6c2f1e6b0d1e91a3f6a316a798df8d45cc604878
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b3ebd82df948abc7a9ae40eb5085774002be4be5
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376524"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140288437"
 ---
 # New-AzAutomationSoftwareUpdateConfiguration
 
 ## SYNOPSIS
 Membuat konfigurasi pembaruan perangkat lunak otomatisasi Azure terjadwal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/new-azautomationsoftwareupdateconfiguration) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Membuat konfigurasi pembaruan perangkat lunak yang berjalan sesuai jadwal untuk 
 ## EXAMPLES
 
 ### Contoh 1
-Membuat konfigurasi pembaruan perangkat lunak untuk menginstal pembaruan penting di dua Windows virtual Azure setiap hari Sabtu pukul 21.00. Durasi pembaruan diatur ke 2 jam dalam contoh ini.
+Membuat konfigurasi pembaruan perangkat lunak untuk menginstal pembaruan penting pada dua komputer virtual Azure Windows setiap Sabtu pukul 21.00. Durasi pembaruan diatur ke 2 jam dalam contoh ini.
 
 ```powershell
 PS C:\> $startTime = [DateTimeOffset]"2018-09-13T21:00"
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludedUpdateClassification
-Menyertakan Windows Perbarui klasifikasi.
+Menyertakan Windows Klasifikasi pembaruan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.WindowsUpdateClasses[]
@@ -468,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

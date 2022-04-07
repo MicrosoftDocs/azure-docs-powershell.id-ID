@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customproviders/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomProviders/help/New-AzCustomProvider.md
-ms.openlocfilehash: 7450a7cb3cbbea40117552975531f7d20418d5b8
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a81fb45060c89d7d786d205fd522a9c0756ff105
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373318"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140257363"
 ---
 # New-AzCustomProvider
 
 ## SYNOPSIS
 Membuat atau memperbarui penyedia sumber daya kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.customproviders/new-azcustomprovider) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -275,12 +278,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 TINDAKAN <ICustomRpActionRouteDefinition[]>: Daftar tindakan yang diterapkan penyedia sumber daya kustom.
-  - `Endpoint <String>`: URI titik akhir definisi rute yang akan dialihkan oleh penyedia sumber daya kustom. Ini bisa dalam bentuk URI datar (misalnya ' ') atau bisa menentukan untuk merutekan melalui jalur https://testendpoint/ (misalnya ' https://testendpoint/{requestPath} ')
+  - `Endpoint <String>`: URI titik akhir definisi rute yang akan dialihkan oleh penyedia sumber daya kustom. Ini bisa dalam bentuk URI datar (misalnya 'https://testendpoint/') atau bisa menentukan untuk merutekan melalui jalur (misalnya 'https://testendpoint/{requestPath}')
   - `Name <String>`: Nama definisi rute. Ini menjadi nama untuk ekstensi ARM (misalnya '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CustomProviders/resourceProviders/{resourceProviderName}/{name}')
   - `[RoutingType <ActionRouting?>]`: Tipe perutean yang didukung untuk permintaan tindakan.
 
 RESOURCETYPE <ICustomRpResourceTypeRouteDefinition[]>: Daftar tipe sumber daya yang diterapkan oleh penyedia sumber daya kustom.
-  - `Endpoint <String>`: URI titik akhir definisi rute yang akan dialihkan oleh penyedia sumber daya kustom. Ini bisa dalam bentuk URI datar (misalnya ' ') atau bisa menentukan untuk merutekan melalui jalur https://testendpoint/ (misalnya ' https://testendpoint/{requestPath} ')
+  - `Endpoint <String>`: URI titik akhir definisi rute yang akan dialihkan oleh penyedia sumber daya kustom. Ini bisa dalam bentuk URI datar (misalnya 'https://testendpoint/') atau bisa menentukan untuk merutekan melalui jalur (misalnya 'https://testendpoint/{requestPath}')
   - `Name <String>`: Nama definisi rute. Ini menjadi nama untuk ekstensi ARM (misalnya '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CustomProviders/resourceProviders/{resourceProviderName}/{name}')
   - `[RoutingType <ResourceTypeRouting?>]`: Tipe perutean yang didukung untuk permintaan sumber daya.
 

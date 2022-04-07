@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSourceControl.md
-ms.openlocfilehash: 94b032c044840a31bebe406d2993a0934b9c0d0a
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5e3ec463f40e873c6de50c4eb18d84b7bcdeb391
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376499"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140288275"
 ---
 # Remove-AzAutomationSourceControl
 
 ## SYNOPSIS
 Menghapus kontrol sumber Otomatisasi Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/remove-azautomationsourcecontrol) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Cmdlet Remove-AzAutomationSourceControl menghapus kontrol sumber dari Azure Auto
 
 ### Contoh 1
 Perintah ini menghapus kontrol sumber Otomatisasi yang bernama VSTSNative dalam akun yang bernama devAccount.
-Perintah ini menentukan parameter *Force.* Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Perintah ini menentukan parameter *Force* . Oleh karena itu, kami tidak meminta konfirmasi Anda.
 
 ```powershell
 PS C:\> Remove-AzAutomationSourceControl -ResourceGroupName "rg1" `
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
