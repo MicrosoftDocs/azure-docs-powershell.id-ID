@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseCopy.md
-ms.openlocfilehash: 83f342290c52e02ddf4e80ca30db9603bc9c3838
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5ca7605e3e66a5c4f0ccb84d0f95ab56020c035a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368558"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140500989"
 ---
 # New-AzSqlDatabaseCopy
 
 ## SYNOPSIS
 Membuat salinan data SQL Database yang menggunakan snapshot pada saat ini.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabasecopy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ New-AzSqlDatabaseCopy [-DatabaseName] <String> [-Tags <Hashtable>] [-CopyResourc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlDatabaseCopy** membuat salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzSqlDatabaseCopy cmdlet baru untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
-Catatan: Gunakan cmdlet New-AzSqlDatabaseSecondary cmdlet untuk mengonfigurasi replikasi geografis untuk database.
+Cmdlet **New-AzSqlDatabaseCopy** membuat salinan Azure SQL Database yang menggunakan snapshot data saat ini. Gunakan cmdlet ini, Start-AzSqlDatabaseCopy cmdlet untuk membuat salinan database satu kali. Cmdlet ini mengembalikan objek **Database** salinan.
+Catatan: Gunakan cmdlet New-AzSqlDatabaseSecondary cmdlet untuk mengonfigurasi geo-replication untuk database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyDatabaseName
-Menentukan nama SQL Database salinan.
+Menentukan nama SQL Database salin.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -CopyServerName
-Menentukan nama grup SQL Server menjadi host salinan tersebut.
+Menentukan nama grup yang SQL Server menjadi host salinan tersebut.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama SQL Database disalin.
+Menentukan nama dokumen SQL Database disalin.
 
 ```yaml
 Type: System.String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server yang berisi database untuk disalin.
+Menentukan nama dokumen SQL Server berisi database untuk disalin.
 
 ```yaml
 Type: System.String
@@ -323,7 +326,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

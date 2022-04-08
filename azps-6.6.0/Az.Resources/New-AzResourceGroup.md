@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzResourceGroup.md
-ms.openlocfilehash: 9563dd87ab97c4a6500e6662e2e030feee9c8b33
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5d10fc4d0b543ac39913ee2aa851f0fd890a84bf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136386520"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140460245"
 ---
 # New-AzResourceGroup
 
 ## SYNOPSIS
 Membuat grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/new-azresourcegroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzResourceGroup [-Name] <String> [-Location] <String> [-Tag <Hashtable>] [-F
 ## DESCRIPTION
 Cmdlet **New-AzResourceGroup** membuat grup sumber daya Azure.
 Anda bisa membuat grup sumber daya hanya dengan menggunakan nama dan lokasi, lalu menggunakan cmdlet New-AzResource untuk membuat sumber daya untuk ditambahkan ke grup sumber daya.
-Untuk menambahkan penyebaran ke grup sumber daya yang sudah ada, gunakan cmdlet New-AzResourceGroupDeployment cmdlet. Untuk menambahkan sumber daya ke grup sumber daya yang sudah ada, gunakan cmdlet **New-AzResource.** Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web. Grup sumber daya Azure adalah kumpulan sumber daya Azure yang digunakan sebagai unit.
+Untuk menambahkan penyebaran ke grup sumber daya yang sudah ada, gunakan cmdlet New-AzResourceGroupDeployment cmdlet. Untuk menambahkan sumber daya ke grup sumber daya yang sudah ada, gunakan cmdlet **New-AzResource** . Sumber daya Azure adalah entitas Azure yang dikelola pengguna, seperti server database, database, atau situs web. Grup sumber daya Azure adalah kumpulan sumber daya Azure yang digunakan sebagai unit.
 
 ## EXAMPLES
 
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi grup sumber daya. Tentukan lokasi pusat data Azure, seperti AS Barat atau Asia Tenggara. Anda bisa menempatkan grup sumber daya di lokasi mana pun. Grup sumber daya tidak harus berada di lokasi yang sama dengan langganan Azure Anda atau di lokasi yang sama dengan sumber dayanya.
-Untuk menentukan lokasi yang mendukung setiap tipe sumber daya, Get-AzResourceProvider cmdlet dengan parameter *ProviderNamespace.*
+Untuk menentukan lokasi yang mendukung setiap tipe sumber daya, Get-AzResourceProvider cmdlet dengan parameter *ProviderNamespace* .
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

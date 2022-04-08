@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchTask.md
-ms.openlocfilehash: fd454bd0a781416dda4f0b50585b2b07e46e1aa4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 249ff907719c038214bbfb37081735f74f9e556c
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136337395"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140468711"
 ---
 # Remove-AzBatchTask
 
 ## SYNOPSIS
 Menghapus tugas Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchtask) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzBatchTask [-InputObject] <PSCloudTask> [-Force] -BatchContext <BatchAcc
 
 ## DESCRIPTION
 Cmdlet **Remove-AzBatchTask** menghapus tugas Kumpulan Azure.
-Cmdlet ini akan meminta konfirmasi Anda, kecuali jika Anda menentukan parameter *Paksa.*
+Cmdlet ini akan meminta konfirmasi Anda, kecuali jika Anda menentukan parameter *Paksa* .
 
 ## EXAMPLES
 
@@ -52,10 +55,10 @@ Gunakan cmdlet **Get-AzBatchAccountKey** untuk menetapkan konteks ke $Context va
 PS C:\>Get-AzBatchTask -JobId "Job-000001" -Id "Task26" -BatchContext $Context | Remove-AzBatchTask -Force -BatchContext $Context
 ```
 
-Perintah ini mendapatkan tugas Kumpulan yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchTask.**
+Perintah ini mendapatkan tugas Kumpulan yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001 dengan menggunakan cmdlet **Get-AzBatchTask** .
 Perintah itu meneruskan tugas itu ke cmdlet saat ini dengan menggunakan operator pipeline.
 Perintah menghapus tugas tersebut.
-Perintah ini menentukan parameter *Force.*
+Perintah ini menentukan parameter *Force* .
 Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Menentukan tugas yang dihapus cmdlet ini.
-Untuk mendapatkan objek **PSCloudTask,** gunakan Get-AzBatchTask cmdlet.
+Untuk mendapatkan objek **PSCloudTask** , gunakan Get-AzBatchTask cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudTask

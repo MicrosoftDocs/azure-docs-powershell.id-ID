@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Get-AzSqlVMGroup.md
-ms.openlocfilehash: 0cd5cf45f86a7960ed46c1d144c1a7107fabf163
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e064b0a452a804fe1d4ee7a56fd689065d6d7579
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338459"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140500413"
 ---
 # Get-AzSqlVMGroup
 
 ## SYNOPSIS
 Mendapatkan satu atau beberapa grup mesin virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/get-azsqlvmgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -61,7 +64,7 @@ Name       ResourceGroupName  Sku       Offer
 test-group ResourceGroup01    Developer SQL2017-WS2016
 ```
 
-Perintah ini mendapatkan informasi tentang semua grup komputer virtual Azure SQL dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua grup mesin virtual Azure SQL dalam langganan saat ini yang ditetapkan ke grup sumber daya ResourceGroup01.
 
 ### Contoh 3
 ```powershell
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
