@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchNodeFile.md
-ms.openlocfilehash: a3499ea6bf95d627bd44026a04258b76b6ff2121
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cbe846d2b77a04a80947458c0961f81a5d89818f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136376496"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140468747"
 ---
 # Get-AzBatchNodeFile
 
 ## SYNOPSIS
 Mendapatkan properti file node Kumpulan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchnodefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -76,7 +79,7 @@ False       StdOut.txt    Microsoft.Azure.Commands.Batch.Models.PSFile... https:
 ```
 
 Perintah ini mendapatkan properti file node StdOut.txt terkait dengan tugas yang memiliki ID Task26 dalam pekerjaan yang memiliki ID Job-000001.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan properti file node yang terkait dengan tugas menggunakan filter
 ```
@@ -106,8 +109,8 @@ False       wd\newFile.txt   Microsoft.Azure.Commands.Batch.Models.PSFile... htt
 ```
 
 Perintah ini mendapatkan properti semua file yang terkait dengan tugas yang memiliki ID Task31 dalam pekerjaan Pekerjaan-00003.
-Perintah ini menentukan parameter *Rekursif.*
-Oleh karena itu, cmdlet akan melakukan pencarian file berulang, dan mengembalikan file wd\newFile.txt node tersebut.
+Perintah ini menentukan parameter *Rekursif* .
+Oleh karena itu, cmdlet akan melakukan pencarian file berulang, dan mengembalikan file wd\newFile.txt node.
 
 ### Contoh 4: Dapatkan satu file dari simpul perhitungan
 ```
@@ -117,7 +120,7 @@ IsDirectory Name                    Properties                                  
 False       startup\stdout.txt      Microsoft.Azure.Commands.Batch.Models.PSFile... https://cmdletexample.westus.Batch.contoso...
 ```
 
-Perintah ini mendapatkan file yang dinamai Startup\StdOut.txt dari node hitung yang memiliki ID ComputeNode01 dalam pool yang memiliki ID Pool22.
+Perintah ini mendapatkan file yang dinamai Startup\StdOut.txt dari node perhitungan yang memiliki ID ComputeNode01 dalam pool yang memiliki ID Pool22.
 
 ### Contoh 5: Mendapatkan semua file dalam folder dari node perhitungan
 ```
@@ -132,7 +135,7 @@ True        startup\wd                                                          
 ```
 
 Perintah ini mendapatkan semua file di bawah folder mulai dari node hitung yang memiliki ID ComputeNode01 di pool yang memiliki ID Pool22.
-Cmdlet ini menentukan parameter *Rekursif.*
+Cmdlet ini menentukan parameter *Rekursif* .
 
 ### Contoh 6: Dapatkan file dari folder akar node perhitungan
 ```
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan node perhitungan, sebagai objek **PSComputeNode,** yang berisi file node Batch.
+Menentukan node perhitungan, sebagai objek **PSComputeNode** , yang berisi file node Batch.
 Untuk mendapatkan objek node perhitungan, gunakan Get-AzBatchComputeNode cmdlet.
 
 ```yaml
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tugas
-Menentukan tugas, sebagai objek **PSCloudTask,** dengan file node yang terkait.
+Menentukan tugas, sebagai objek **PSCloudTask** , dengan file node yang terkait.
 Untuk mendapatkan objek tugas, gunakan cmdlet Get-AzBatchTask.
 
 ```yaml
@@ -337,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

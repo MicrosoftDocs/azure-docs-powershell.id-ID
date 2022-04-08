@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADUser.md
-ms.openlocfilehash: 5ff03a729e6c609f65c362360c0cbcfcc1b2aab4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 90e89e16a55e888732a2056dcf25bb126f2a1be8
+ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195831"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140664111"
 ---
 # Update-AzADUser
 
 ## SYNOPSIS
 Memperbarui entitas dalam pengguna
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

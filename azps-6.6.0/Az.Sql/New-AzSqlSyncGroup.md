@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlsyn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlSyncGroup.md
-ms.openlocfilehash: 5cf575ca81141cac0c40997940d70073ba66dbbe
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c43826f89d343811bcd7651c56d13b73e6731008
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136389012"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140500899"
 ---
 # New-AzSqlSyncGroup
 
 ## SYNOPSIS
-Membuat grup Azure SQL Database Sinkronisasi.
+Membuat Azure SQL Database Sinkronisasi Bersama.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlsyncgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzSqlSyncGroup [-Name] <String> -SyncDatabaseName <String> -SyncDatabaseServ
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlSyncGroup** membuat grup Azure SQL Database Sinkronisasi.
+Cmdlet **New-AzSqlSyncGroup** membuat Azure SQL Database Sinkronisasi Terbaru.
 
 ## EXAMPLES
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama Azure SQL Database.
+Nama nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

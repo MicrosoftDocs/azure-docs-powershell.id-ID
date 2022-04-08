@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraTable.md
-ms.openlocfilehash: 896ec263b7bd2efc6e712ca33d5617d144aadcd0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 86d49e531ce586025f16d95458284a62d7771b6e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373542"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140467199"
 ---
 # Get-AzCosmosDBCassandraTable
 
 ## SYNOPSIS
 Dapatkan Table CosmosDB Pivot.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandratable) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Name    Id   Resource
 {name}  {id} {resourceObject}
 ```
 
-{{ Get-AzCosmosDBCassandraTable mendapatkan properti Dari Spasi Tambahan yang sudah ada. Anda dapat memperluas Sumber Daya untuk mendapatkan DefaultTtl, Skema, _etag, _ts, _rid properti.}}
+{{ Get-AzCosmosDBCassandraTable mendapatkan properti Dari Spasi Tambahan yang sudah adaKeyspace. Anda dapat memperluas Sumber Daya untuk mendapatkan DefaultTtl, Skema, _etag, _ts, _rid properti.}}
 
 ## PARAMETERS
 
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

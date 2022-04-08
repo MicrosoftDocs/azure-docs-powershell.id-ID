@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServer.md
-ms.openlocfilehash: 4cc1d9973b472168fb998cb6a1d51a80b0742ecc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: afefa53cda73d1fadbdedf71b56240ebd3511f48
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368390"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140500881"
 ---
 # New-AzSqlServer
 
 ## SYNOPSIS
 Membuat server SQL Database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlserver) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Tags                     :
 
 Perintah ini akan membuat server Azure SQL Database versi 12.
 
-### Contoh 2: Buat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), Azure Active Directory Only Authentication and no SqlAdministratorCredentials
+### Contoh 2: Buat server Azure SQL Database baru dengan Administrator External(Azure Active Directory), hanya Azure Active Directory Autentikasi dan tidak ada SqlAdministratorCredentials
 ```
 PS C:\>New-AzSqlServer -ResourceGroupName "ResourceGroup01" -Location "Central US" -ServerName "server01" -ServerVersion "12.0" -ExternalAdminName DummyLogin -EnableActiveDirectoryOnlyAuthentication
 ResourceGroupName        : resourcegroup01
@@ -282,8 +285,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorCredentials
-Menentukan SQL Database administrator server untuk server baru. Untuk mendapatkan objek **PSCredential,** gunakan cmdlet Get-Credential cmdlet. Untuk informasi selengkapnya, ketik `Get-Help
-Get-Credential` .
+Menentukan SQL Database administrator server untuk server baru. Untuk mendapatkan objek **PSCredential** , gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
+Get-Credential`.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -404,7 +407,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
