@@ -1,0 +1,233 @@
+---
+external help file: Microsoft.Azure.Commands.AnalysisServices.Dataplane.dll-Help.xml
+Module Name: Azure.AnalysisServices
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.analysisservices/add-azureanalysisservicesaccount
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices.Dataplane/help/Add-AzureAnalysisServicesAccount.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices.Dataplane/help/Add-AzureAnalysisServicesAccount.md
+ms.openlocfilehash: 6758401edb33da6077961c09fcf92c9a4dbc39b38c212556c7fbde8d7a48c340
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "140868378"
+---
+# Add-AzureAnalysisServicesAccount
+
+## SYNOPSIS
+Menambahkan akun terautentikasi untuk digunakan dalam permintaan cmdlet server Azure Analysis Services.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### UserParameterSetName (Default)
+```
+Add-AzureAnalysisServicesAccount [[-RolloutEnvironment] <String>] [[-Credential] <PSCredential>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### ServicePrincipalWithPasswordParameterSetName
+```
+Add-AzureAnalysisServicesAccount [-RolloutEnvironment] <String> [-Credential] <PSCredential>
+ [-ServicePrincipal] -TenantId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ServicePrincipalWithCertificateParameterSetName
+```
+Add-AzureAnalysisServicesAccount [-RolloutEnvironment] <String> [-ServicePrincipal] -TenantId <String>
+ -ApplicationId <String> -CertificateThumbprint <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet Add-AzureAnalysisServicesAccount digunakan untuk masuk ke suatu instans server Azure Analysis Services
+
+## EXAMPLES
+
+### Contoh 1
+```
+PS C:\>Add-AzureAnalysisServicesAccount
+RolloutEnvironment: westcentralus.asazure.windows.net
+Credential: $UserCredential
+```
+
+Contoh ini akan menambahkan akun yang ditentukan oleh $UserCredential variabel ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+
+### Contoh 2
+```
+PS C:\>$ApplicationCredential = Get-Credential
+PS C:\>Add-AzureAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -Credential $ApplicationCredential -TenantId "xxxx-xxxx-xxxx-xxxx"
+```
+
+Perintah pertama mendapatkan kredensial prinsipal layanan aplikasi, lalu menyimpannya dalam $ApplicationCredential layanan.
+Perintah kedua menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh variabel $ApplicationCredential dan TenantId ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+
+### Contoh 3
+```
+PS C:\>Add-AzureAnalysisServicesAccount -RolloutEnvironment 'westcentralus.asazure.windows.net' -ServicePrincipal -ApplicationId "yyyy-yyyy-yyyy-yyyy" -CertificateThumbprint 'zzzzzzzzzzzzzzzz' -TenantId "xxxx-xxxx-xxxx-xxxx"
+```
+
+Contoh ini akan menambahkan akun prinsipal layanan aplikasi yang ditentukan oleh ApplicationId, TenantId, dan CertificateThumbprint ke lingkungan westcentralus.asazure.windows.net Analysis Services.
+
+## PARAMETERS
+
+### -ApplicationId
+ID aplikasi.
+
+```yaml
+Type: System.String
+Parameter Sets: ServicePrincipalWithCertificateParameterSetName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CertificateThumbprint
+Hash Sertifikat (Thumbprint)
+
+```yaml
+Type: System.String
+Parameter Sets: ServicePrincipalWithCertificateParameterSetName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Credential
+Kredensial masuk
+
+```yaml
+Type: System.Management.Automation.PSCredential
+Parameter Sets: UserParameterSetName
+Aliases:
+
+Required: False
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.Management.Automation.PSCredential
+Parameter Sets: ServicePrincipalWithPasswordParameterSetName
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RolloutEnvironment
+Nama lingkungan Azure Analysis Services yang menjadi tempat masuk. Diberikan nama lengkap server misalnya untuk asazure://westcentralus.asazure.windows.net/testserver , nilai yang benar untuk variabel ini akan westcentralus.asazure.windows.net
+
+```yaml
+Type: System.String
+Parameter Sets: UserParameterSetName
+Aliases:
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: ServicePrincipalWithPasswordParameterSetName, ServicePrincipalWithCertificateParameterSetName
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServicePrincipal
+Menunjukkan bahwa akun ini mengautentikasi dengan menyediakan kredensial prinsipal layanan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ServicePrincipalWithPasswordParameterSetName, ServicePrincipalWithCertificateParameterSetName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantId
+Nama penyewa atau ID
+
+```yaml
+Type: System.String
+Parameter Sets: ServicePrincipalWithPasswordParameterSetName, ServicePrincipalWithCertificateParameterSetName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.AnalysisServices.Dataplane.AsAzureProfile
+
+## CATATAN
+Alias: Login-AzureAsAccount
+
+## RELATED LINKS

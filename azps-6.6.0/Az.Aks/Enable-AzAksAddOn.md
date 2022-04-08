@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.aks/enable-azaks
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Enable-AzAksAddOn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Aks/Aks/help/Enable-AzAksAddOn.md
-ms.openlocfilehash: 40c139ba6a0b547162d8dfc996f5df0555fb2a0f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: be3a7f4d6d7dcf2b3d7d5b552f256c56e464ece3
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374046"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140507811"
 ---
 # Enable-AzAksAddOn
 
 ## SYNOPSIS
 Mengaktifkan add-in untuk aks.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.aks/enable-azaksaddon) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,7 +46,7 @@ Mengaktifkan add-in untuk aks.
 PS C:\> Get-AzAks -ResourceGroupName group -Name myCluster | Enable-AzAksAddon -Name HttpApplicationRouting,Monitoring,AzurePolicy,VirtualNode,KubeDashboard -WorkspaceResourceId xxxxx/xxxx -SubnetName subnet
 ```
 
-Mengaktifkan add-in `HttpApplicationRouting` , , , dan untuk `Monitoring` `AzurePolicy` `VirtualNode` `KubeDashboard` aks.
+Mengaktifkan add-in `HttpApplicationRouting`, `Monitoring`, `AzurePolicy`, `VirtualNode` dan `KubeDashboard` untuk aks.
 
 ## PARAMETERS
 
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

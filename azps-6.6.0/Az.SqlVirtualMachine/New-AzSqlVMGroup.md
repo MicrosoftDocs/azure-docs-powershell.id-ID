@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/New-AzSqlVMGroup.md
-ms.openlocfilehash: 68657c478779797b5164c4e739e64bfb0c2ec5ce
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: e228c9e0fc71c04d137e7cd79e763f4dd1be4dfb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136388844"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140479533"
 ---
 # New-AzSqlVMGroup
 
 ## SYNOPSIS
 Membuat grup mesin virtual sql yang baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/new-azsqlvmgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SQL edisi mesin virtual.
+SQL edisi grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServiceAccount
-Nama layanan SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
+Nama layanan yang SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
 
 ```yaml
 Type: System.String
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

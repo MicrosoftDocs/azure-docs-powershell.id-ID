@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabaseDataMaskingPolicy.md
-ms.openlocfilehash: 681bb9d62ea4a9bba4614f89bcb460cafd6ccb97
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: cc12624fd050d41255d096f3e0b47f30ae0b3f39
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136388984"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140500647"
 ---
 # Set-AzSqlDatabaseDataMaskingPolicy
 
 ## SYNOPSIS
 Mengatur masker data untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqldatabasedatamaskingpolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,8 +30,8 @@ Set-AzSqlDatabaseDataMaskingPolicy [-PassThru] [-PrivilegedUsers <String>] [-Dat
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabaseDataMaskingPolicy** mengatur kebijakan masker data untuk database SQL Azure.
-Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName,* *ServerName,* *dan DatabaseName* untuk mengidentifikasi database.
+Cmdlet **Set-AzSqlDatabaseDataMaskingPolicy** mengatur kebijakan masker data untuk database Azure SQL Anda.
+Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName*, *ServerName*, *dan DatabaseName* untuk mengidentifikasi database.
 Anda dapat mengatur parameter *DataMaskingState* untuk menentukan apakah operasi masker data diaktifkan atau dinonaktifkan.
 Jika cmdlet berhasil dan parameter *PassThru* digunakan, objek akan mengembalikan objek yang menjelaskan kebijakan masker data saat ini selain pengidentifikasi database.
 Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, dan **DatabaseName**.
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/update
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzADServicePrincipal.md
-ms.openlocfilehash: 3ba0eaa17c9289b03d3c090c3d420661f460124f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9d88a0c93cb3c2c48918ffb72f9e2c8d1d6c2f93
+ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195863"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140664652"
 ---
 # Update-AzADServicePrincipal
 
 ## SYNOPSIS
 Entitas pembaruan dalam prinsipal layanan
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

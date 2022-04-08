@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sqlvirtualmachin
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVMGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzSqlVMGroup.md
-ms.openlocfilehash: de3bb414ac91b89ee1f0f81e67fe874f5380395f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 3ca88bf451b028bd52eec305399f8a4f773da456
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136388732"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140479371"
 ---
 # Update-AzSqlVMGroup
 
 ## SYNOPSIS
 Memperbarui grup mesin virtual sql.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azsqlvmgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL mesin virtual.
+SQL objek mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlServiceAccount
-Nama layanan SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
+Nama layanan yang SQL akan dijalankan di semua komputer virtual SQL yang berpartisipasi dalam kluster
 
 ```yaml
 Type: System.String
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

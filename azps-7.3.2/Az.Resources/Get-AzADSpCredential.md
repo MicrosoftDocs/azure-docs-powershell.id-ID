@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADSpCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADSpCredential.md
-ms.openlocfilehash: 724d7398b172b28fdde4af6751c930b5eab1bb02
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 828a931e7d6caa8f7036f69107a36ed0c56d0f8e
+ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196055"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140664087"
 ---
 # Get-AzADSpCredential
 
 ## SYNOPSIS
 Mencantumkan kredensial kunci dan kredensial kata sandi untuk prinsipal layanan.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

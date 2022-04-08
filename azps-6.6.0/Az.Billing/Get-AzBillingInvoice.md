@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/get-azbi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingInvoice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Get-AzBillingInvoice.md
-ms.openlocfilehash: 96ad7f4666cc19c1c598ae1698b252e47dc79d49
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 730692e525614e9abbb8295926b04c6adc8a476f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136366098"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140468693"
 ---
 # Get-AzBillingInvoice
 
 ## SYNOPSIS
 Dapatkan faktur tagihan langganan.
 Mendapatkan faktur tagihan dari akun tagihan dan profil tagihan
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.billing/get-azbillinginvoice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
