@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
-ms.openlocfilehash: 84f46e98e8214c963eefb3d9d63c1229f211a7ea
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4c6a3ed55aa40e20d60e6f2bf8b1b8b152873acf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136381119"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140457506"
 ---
 # Update-AzVMwarePrivateCloud
 
 ## SYNOPSIS
 Memperbarui awan privat
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.vmware/update-azvmwareprivatecloud) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -291,7 +294,7 @@ IDENTITYSOURCE <IIdentitySource[]>: vCenter Masuk Tunggal Pada Sumber Identitas
   - `[Ssl <SslEnum?>]`: Memproteksi komunikasi LDAP menggunakan sertifikat SSL (LDAPS)
   - `[Username <String>]`: ID pengguna Direktori Aktif dengan minimal akses baca-saja ke Basis DN untuk pengguna dan grup
 
-INPUTOBJECT <IVMwareIdentity> : Parameter Identitas
+INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
   - `[AddonName <String>]`: Nama add-on untuk awan privat
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
   - `[CloudLinkName <String>]`: Nama sumber daya tautan awan

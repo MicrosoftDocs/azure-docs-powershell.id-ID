@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Update-AzDisk.md
-ms.openlocfilehash: 7f733883635051b011785c9c32cd96965f5fe9b0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6f74d23559b091b908ee00812218e1f8390526e4
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373682"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140467721"
 ---
 # Update-AzDisk
 
 ## SYNOPSIS
 Memperbarui disk.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/update-azdisk) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ PS C:\> $diskupdateconfig = Set-AzDiskUpdateKeyEncryptionKey -DiskUpdate $diskup
 PS C:\> Update-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -DiskUpdate $diskupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan disk kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan.  Sistem ini juga Windows OS dan mengaktifkan pengaturan enkripsi.
+Perintah pertama membuat objek pembaruan disk kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan.  Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi.
 Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan disk.
 Perintah terakhir mengambil objek pembaruan disk dan memperbarui disk yang sudah ada dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
 

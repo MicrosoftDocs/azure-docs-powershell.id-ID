@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Import-AzContainerRegistryImage.md
-ms.openlocfilehash: 1631d8f83bbca105098ddd0a72f9c64f4511bde4
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 4be10e490fea936973f36c467be2c7acb28a690f
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350510"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140467397"
 ---
 # Import-AzContainerRegistryImage
 
 ## SYNOPSIS
 Impor gambar dari registri publik/azure ke registri azure wadah.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/import-azcontainerregistryimage) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -159,7 +162,7 @@ Ini akan menggunakan tag 'terbaru'.
 
 Tentukan gambar menurut tag ('halo dunia:terbaru').
 
-Tentukan gambar dengan ringkasan manifes berbasis sha256 (' hello-world@sha256:abc123 ').
+Tentukan gambar dengan ringkasan manifes berbasis sha256 ('hello-world@sha256:abc123).
 
 ```yaml
 Type: System.String
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetTag
-Daftar string formulir repo \[ :tag \] .
+Daftar string dari repo\[:tag formulir\].
 When tag is omitted the source will be used (or 'latest' if source tag is also omitted).
 
 ```yaml
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

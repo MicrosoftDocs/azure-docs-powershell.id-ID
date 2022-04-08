@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchNodeFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchNodeFile.md
-ms.openlocfilehash: 62a7bbdcb08a8386f36a9b87db784d6d738419f9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fdad55c3ef5db0622020996664a91f40ac7f3f80
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346286"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140486680"
 ---
 # Remove-AzBatchNodeFile
 
 ## SYNOPSIS
 Menghapus file node untuk tugas atau node perhitungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/remove-azbatchnodefile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -69,7 +72,7 @@ Perintah ini mendapatkan file simpul menggunakan **Get-AzBatchNodeFile**.
 File tersebut dikaitkan dengan tugas yang memiliki ID Task26 di bawah pekerjaan Job-000001.
 Perintah meneruskan file itu ke cmdlet saat ini dengan menggunakan saluran.
 Cmdlet saat ini akan menghapus file node.
-Perintah menentukan parameter *Paksa.*
+Perintah menentukan parameter *Paksa* .
 Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
 
 ## PARAMETERS
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Menentukan objek **PSNodeFile** yang mewakili file node yang dihapus cmdlet ini.
-Untuk mendapatkan **PSNodeFile,** gunakan cmdlet Get-AzBatchNodeFile.
+Untuk mendapatkan **PSNodeFile**, gunakan cmdlet Get-AzBatchNodeFile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSNodeFile
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

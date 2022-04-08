@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSecret.md
-ms.openlocfilehash: b6423b7dd3c4ffed5a73f3f0e1dfc2452be82b17
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 8cc9ad8b715bdc71cbded42fe58f309d9f38a9c8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368029"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140468099"
 ---
 # Add-AzVMSecret
 
 ## SYNOPSIS
 Menambahkan rahasia ke mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmsecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -31,10 +34,10 @@ Cmdlet **Add-AzVMSecret** menambahkan rahasia ke mesin virtual.
 Nilai ini memungkinkan Anda menambahkan sertifikat ke komputer virtual.
 Rahasia harus disimpan di Key Vault.
 Untuk informasi selengkapnya tentang Key Vault, lihat [Apa itu Azure Key Vault?](https://azure.microsoft.com/documentation/articles/key-vault-whatis/).
-Untuk informasi selengkapnya tentang cmdlet, lihat [Cmdlet Azure Key Vault atau](/powershell/module/az.keyvault) cmdlet [Set-AzKeyVaultSecret.](/powershell/module/az.keyvault/set-azkeyvaultsecret)
+Untuk informasi selengkapnya tentang cmdlet, lihat [Cmdlet Azure Key Vault atau](/powershell/module/az.keyvault) cmdlet [Set-AzKeyVaultSecret](/powershell/module/az.keyvault/set-azkeyvaultsecret) .
 
 > [!NOTE] 
-> Untuk menginstal sertifikat di mesin virtual, disarankan untuk menggunakan ekstensi mesin [virtual Azure Key Vault](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-linux) untuk Linux atau ekstensi mesin virtual Azure Key Vault untuk [Windows,](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-windows) bukan `Add-AzVMSecret` .
+> Untuk menginstal sertifikat di mesin virtual, disarankan untuk menggunakan ekstensi mesin [virtual Azure Key Vault untuk Linux](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-linux) atau ekstensi mesin [virtual Azure Key Vault untuk Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/key-vault-windows), bukan `Add-AzVMSecret`.
 
 ## EXAMPLES
 
@@ -49,11 +52,11 @@ PS C:\> $CertificateUrl01 = "https://contosovault.vault.azure.net/secrets/514ceb
 PS C:\> $VirtualMachine = Add-AzVMSecret -VM $VirtualMachine -SourceVaultId $SourceVaultId -CertificateStore $CertificateStore01 -CertificateUrl $CertificateUrl01
 ```
 
-Perintah pertama membuat objek mesin virtual, lalu menyimpannya dalam $VirtualMachine variabel.
+Perintah pertama membuat objek mesin virtual, lalu menyimpannya di $VirtualMachine variabel.
 Perintah menetapkan nama dan ukuran ke komputer virtual.
-Perintah kedua membuat objek kredensial dengan menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya dalam $Credential variabel.
+Perintah kedua membuat objek kredensial dengan menggunakan cmdlet Get-Credential, lalu menyimpan hasilnya di $Credential penerima.
 Perintah akan meminta nama pengguna dan kata sandi Anda.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
 Perintah ketiga menggunakan cmdlet **Set-AzVMOperatingSystem** untuk mengonfigurasi mesin virtual yang disimpan di $VirtualMachine.
 Perintah keempat menetapkan ID penyimpanan sumber ke variabel $SourceVaultId digunakan nanti.
 Perintah mengasumsikan bahwa variabel $SubscriptionId memiliki nilai yang sesuai.
@@ -69,7 +72,7 @@ Anda bisa menjalankan **Add-AzVMSecret berulang** kali untuk menambahkan rahasia
 ### -CertificateStore
 Menentukan nama penyimpanan sertifikat pada komputer virtual yang menjalankan sistem Windows operasi.
 Cmdlet ini menambahkan sertifikat ke penyimpanan yang ditentukan parameter ini.
-Anda hanya dapat menentukan parameter ini untuk mesin virtual yang menjalankan Windows sistem operasi.
+Anda hanya dapat menentukan parameter ini untuk mesin virtual yang menjalankan Windows operasi.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 
 ### -CertificateUrl
 Menentukan URL yang menunjukkan rahasia Key Vault yang berisi sertifikat.
-Sertifikatnya adalah pengodean Base64 dari objek JavaScript Object Notation (JSON) berikut, yang dikodekan dalam UTF-8: { "data": " \<Base64-encoded-file\> ", "dataType": " \<file-format\> ", "password": " } Saat ini, tipedata hanya menerima \<pfx-file-password\> file .pfx.
+Sertifikatnya adalah pengodean Base64 dari objek JavaScript Object Notation (JSON) berikut, yang dikodekan dalam UTF-8: { "data": "\<Base64-encoded-file\>", "dataType": "", "\<file-format\>password": "\<pfx-file-password\>" } Saat ini, tipedata hanya menerima file .pfx.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM.](./Get-AzVM.md)
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM](./Get-AzVM.md) .
 Anda dapat menggunakan cmdlet [New-AzVMConfig](./New-AzVMConfig.md) untuk membuat objek mesin virtual.
 
 ```yaml
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

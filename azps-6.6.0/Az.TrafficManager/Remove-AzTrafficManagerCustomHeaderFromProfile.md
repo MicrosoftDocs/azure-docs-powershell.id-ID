@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerCustomHeaderFromProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Remove-AzTrafficManagerCustomHeaderFromProfile.md
-ms.openlocfilehash: 84f3462c7e9cb54c329e9e3a2eddb47f10d25528
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c143871ca48fadd0278dc9b9146805e77334152b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136384448"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140498109"
 ---
 # Remove-AzTrafficManagerCustomHeaderFromProfile
 
 ## SYNOPSIS
 Menghapus informasi header kustom dari objek Traffic Manager profil kustom.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/remove-aztrafficmanagercustomheaderfromprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ PS C:\> Remove-AzTrafficManagerCustomHeaderFromEndpoint -TrafficManagerProfile $
 PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 ```
 
-Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile.**
+Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet **Get-AzTrafficManagerProfile**.
 Perintah kedua menghapus informasi header kustom dari profil yang disimpan di $TrafficManagerProfile.
 Perintah terakhir memperbarui profil di Traffic Manager cocok dengan nilai lokal di $TrafficManagerProfile.
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
 Cmdlet ini mengubah objek lokal ini.
-Untuk mendapatkan objek **TrafficManagerProfile,** gunakan cmdlet Get-AzTrafficManagerProfile.
+Untuk mendapatkan objek **TrafficManagerProfile** , gunakan cmdlet Get-AzTrafficManagerProfile.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

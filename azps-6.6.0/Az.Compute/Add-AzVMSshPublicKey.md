@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSshPublicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSshPublicKey.md
-ms.openlocfilehash: 39290e67c26154a62102f80547e7c47fa9a4ae4d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 06bee28e2fa1543d3b96d645894c5a3bc5d3a355
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357278"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140468081"
 ---
 # Add-AzVMSshPublicKey
 
 ## SYNOPSIS
 Menambahkan kunci publik untuk KEYS untuk mesin virtual, ketika hanya membuat VM.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmsshpublickey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -36,8 +39,8 @@ PS C:\> $VirtualMachine = Get-AzVM -ResourceGroupName "ResourceGroup11" -Name "V
 PS C:\> $VirtualMachine = Add-AzVMSshPublicKey -VM $VirtualMachine -KeyData "MIIDszCCApugAwIBAgIJALBV9YJCF/tAMA0GCSq12Ib3DQEB21QUAMEUxCzAJBgNV" -Path "/home/admin/.ssh/authorized_keys"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzVM.**
-Perintah menyimpan mesin virtual di $VirtualMachine variabel.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzVM** .
+Perintah menyimpan mesin virtual di $VirtualMachine baru.
 Perintah kedua menambahkan kunci publik ke lokasi di VirtualMachine07 yang ditentukan parameter Jalur.
 
 ## PARAMETERS
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM.](./Get-AzVM.md)
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM](./Get-AzVM.md) .
 Anda dapat menggunakan cmdlet [New-AzVMConfig](./New-AzVMConfig.md) untuk membuat objek mesin virtual.
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

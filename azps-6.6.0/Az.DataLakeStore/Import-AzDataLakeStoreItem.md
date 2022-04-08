@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakestore/im
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
-ms.openlocfilehash: 5e72a3417b939109b034767ad7ec9e9a24b2515e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 05b6566ef67c71e90dd8d2656bddcd4b4409348e
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136156975"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140465651"
 ---
 # Import-AzDataLakeStoreItem
 
 ## SYNOPSIS
 Mengunggah file atau direktori lokal ke Data Lake Store.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/import-azdatalakestoreitem) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -40,12 +43,12 @@ Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Da
 
 ## EXAMPLES
 
-### Contoh 1: Upload sebuah file
+### Contoh 1: Upload file
 ```
 PS C:\>Import-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "C:\SrcFile.csv" -Destination "/MyFiles/File.csv" -Concurrency 4
 ```
 
-Perintah ini mengunggah file ke SrcFile.csv dan menambahkannya ke folder MyFiles di Data Lake Store File.csv dengan konkurensi 4.
+Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Data Lake Store File.csv dengan konkurensi 4.
 
 ## PARAMETERS
 
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
