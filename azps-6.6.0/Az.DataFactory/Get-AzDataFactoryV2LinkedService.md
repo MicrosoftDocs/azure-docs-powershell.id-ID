@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2LinkedService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2LinkedService.md
-ms.openlocfilehash: d80a03d924cfc1cb22444a75bf0fda8b8f709668
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0dfcbcfb3862046dbf1174c009092d09ab1686e2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136157168"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140465939"
 ---
 # Get-AzDataFactoryV2LinkedService
 
 ## SYNOPSIS
 Mendapatkan informasi tentang layanan yang ditautkan di Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2linkedservice) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -64,9 +67,9 @@ PS C:\> Get-AzDataFactoryV2LinkedService -ResourceGroupName "ADF" -DataFactoryNa
     Properties        : Microsoft.Azure.Management.DataFactory.Models.AzureStorageLinkedService
 ```
 
-Perintah ini mendapatkan informasi tentang semua layanan yang ditautkan di pabrik data yang bernama WikiADF, lalu meneruskan layanan tertaut ke cmdlet Format-List dengan menggunakan operator pipeline.
+Perintah ini mendapatkan informasi tentang semua layanan yang ditautkan di pabrik data bernama WikiADF, lalu meneruskan layanan tertaut ke cmdlet Format-List dengan menggunakan operator pipeline.
 Hal Windows PowerShell cmdlet akan memformat hasil.
-Untuk informasi selengkapnya, Get-Help Format-List.
+Untuk informasi selengkapnya, ketik Get-Help Format-List.
 Anda bisa menggunakan salah satu cara berikut ini:
 
 ### Contoh 2: Mendapatkan informasi tentang layanan tertaut tertentu
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.customlocation/u
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Update-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Update-AzCustomLocation.md
-ms.openlocfilehash: 135f62e8c72b22b62d38f347c3189a5d25d93195
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b430f763ac707875264fcac4b842be83856bae49
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136373321"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140466479"
 ---
 # Update-AzCustomLocation
 
 ## SYNOPSIS
 Memperbarui Lokasi Kustom dengan Nama Sumber Daya yang ditentukan dalam Grup Sumber Daya dan Langganan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.customlocation/update-azcustomlocation) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -294,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -313,7 +316,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICustomLocationIdentity> : Parameter Identitas
+INPUTOBJECT <ICustomLocationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
   - `[ResourceName <String>]`: Nama Lokasi Kustom.

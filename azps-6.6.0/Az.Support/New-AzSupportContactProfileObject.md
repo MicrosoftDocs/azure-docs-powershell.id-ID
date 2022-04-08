@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.support/new-azsu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportContactProfileObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Support/Support/help/New-AzSupportContactProfileObject.md
-ms.openlocfilehash: 9c56b91c35a5724fcc5b6cf4a298f775a68f0f48
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: da94750cb48230278da7a95f28ae6932c59db26b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357641"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140499189"
 ---
 # New-AzSupportContactProfileObject
 
 ## SYNOPSIS
 Membuat objek profil kontak dukungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.support/new-azsupportcontactprofileobject) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -PreferredSupportLanguage
 Bahasa dukungan pilihan pelanggan.
-Kode ini harus merupakan kode lanjutan bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di https://azure.microsoft.com/support/faq/ sini.
+Kode ini harus merupakan kode lanjutan bahasa yang valid untuk salah satu bahasa yang didukung yang tercantum di sini https://azure.microsoft.com/support/faq/.
 
 ```yaml
 Type: System.String
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

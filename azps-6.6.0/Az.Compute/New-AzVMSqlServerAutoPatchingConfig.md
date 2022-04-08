@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoPatchingConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzVMSqlServerAutoPatchingConfig.md
-ms.openlocfilehash: 2447c67943f4dead9e2ff88f367713462346ed0c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 0bcd068c59be85f83816cfc5b0176e4f0331fa99
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383678"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140258335"
 ---
 # New-AzVMSqlServerAutoPatchingConfig
 
 ## SYNOPSIS
 Membuat objek konfigurasi untuk patching otomatis pada komputer virtual.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azvmsqlserverautopatchingconfig) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 
 ### -Aktifkan
 Menunjukkan bahwa patch otomatis untuk mesin virtual telah diaktifkan.
-Jika Anda mengaktifkan patching otomatis, cmdlet Windows Update ke dalam mode interaktif.
+Jika Anda mengaktifkan patching otomatis, cmdlet meletakkan Windows Update ke dalam mode interaktif.
 Jika Anda menonaktifkan patching otomatis, Windows Pengaturan pembaruan tidak berubah.
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
-ms.openlocfilehash: 0ae563518a033d8ce6bfb84c1f3225d250a66fac
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 36167e927e5cc4a816d587e43e4a5cebf0c5efeb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136347282"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140466677"
 ---
 # Invoke-AzCostManagementQuery
 
 ## SYNOPSIS
 Buat kueri tentang data penggunaan untuk lingkup yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.costmanagement/invoke-azcostmanagementquery) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -314,7 +317,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DATASETFILTER <IQueryFilter> : Memiliki ekspresi filter yang akan digunakan dalam kueri.
+DATASETFILTER <IQueryFilter>: Memiliki ekspresi filter yang akan digunakan dalam kueri.
   - `[And <IQueryFilter[]>]`: Ekspresi "AND" logika. Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
     - `Name <String>`: Nama kolom yang akan digunakan jika dibandingkan.

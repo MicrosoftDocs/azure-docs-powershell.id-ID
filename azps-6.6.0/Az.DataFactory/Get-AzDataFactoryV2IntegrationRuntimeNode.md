@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2IntegrationRuntimeNode.md
-ms.openlocfilehash: d90987c2202d3186a8b465ed321d4f742b7fa94b
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a00566050ef94302650b37de9f8cf2e778f85739
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383258"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140465921"
 ---
 # Get-AzDataFactoryV2IntegrationRuntimeNode
 
 ## SYNOPSIS
 Mendapatkan informasi node runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2integrationruntimenode) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -101,7 +104,7 @@ MaxConcurrentJobs      : 48
 IpAddress              : 167.220.1.167
 ```
 
-Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2', termasuk alamat IP.
+Cmdlet mendapatkan informasi node yang bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2', termasuk alamat IP.
 
 ## PARAMETERS
 
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

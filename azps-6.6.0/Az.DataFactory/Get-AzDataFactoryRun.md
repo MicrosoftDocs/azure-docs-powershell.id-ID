@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryRun.md
-ms.openlocfilehash: f8b68d3758315e0e0dae5d956f2e8d82398fe90f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: d7ac367e28f262f69e2b92fe6a749308f745fcfb
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136377913"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140466173"
 ---
 # Get-AzDataFactoryRun
 
 ## SYNOPSIS
 Dijalankan untuk potongan dataset data di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryrun) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Lebar potongan ditentukan oleh jadwal, baik setiap jam atau harian.
 Proses adalah unit pemrosesan untuk potongan.
 Mungkin ada satu atau beberapa yang berjalan untuk irisan dalam kasus perretries atau jika Anda menjalankan ulang potongan karena kegagalan.
 Potongan diidentifikasi menurut waktu mulainya.
-Untuk mendapatkan waktu mulai potongan, gunakan cmdlet Get-AzDataFactorySlice.
+Untuk mendapatkan waktu mulai potongan, gunakan cmdlet Get-AzDataFactorySlice baru.
 Misalnya, untuk memulai untuk potongan berikut, gunakan waktu mulai 2015-04-02T20:00:00.
 ResourceGroupName : ADF DataFactoryName : SPDataFactory0924 DatasetName : MarketingCampaignEffectivenessBlobDataset Mulai : 5/2/2014 8:00:00 PM End : 5/3/2014 8:00:00 PMTryCount : 0 Status : Ready LatencyStatus :
 
@@ -73,7 +76,7 @@ Perintah ini dijalankan untuk potongan set data yang bernama DAWikiAggregatedDat
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini dijalankan untuk potongan yang termasuk dalam pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -152,9 +155,9 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-Menentukan awal periode waktu sebagai objek **DateTime.**
+Menentukan awal periode waktu sebagai objek **DateTime** .
 Cmdlet ini akan berjalan untuk potongan data yang cocok dengan periode waktu ini.
-*StartDateTime* harus ditentukan dalam format ISO8601, seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01- 01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
+*StartDateTime* harus ditentukan dalam format ISO8601, seperti dalam contoh berikut: 2015-01-01Z 2015-01-01T00:00:00Z 2015-01-01T00:00:00.000Z (UTC) 2015-01-01T00:00:00-08:00 (Waktu Standar Pasifik) Penanda zona waktu default adalah UTC.
 
 ```yaml
 Type: System.DateTime
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
