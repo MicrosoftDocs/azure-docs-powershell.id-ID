@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/get-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageQueueStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageQueueStoredAccessPolicy.md
-ms.openlocfilehash: 71fcfca6de80afc67c098847508c3aec0dab548d
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 473635726306820ea3f5d1b4efe54a22281849a9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136342005"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140500071"
 ---
 # Get-AzStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan atau kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragequeuestoredaccesspolicy) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Perintah ini akan membuat semua kebijakan akses tersimpan dalam antrean yang ber
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext cmdlet.
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet New-AzStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
