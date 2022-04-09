@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteDesktopProtocolFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchRemoteDesktopProtocolFile.md
-ms.openlocfilehash: 255f1ebea873b194a98ca85bcc38b89aa888fecc
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 86a4e88a02d52a987bdce824b52cbfa3fd4f94e9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378400"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140468729"
 ---
 # Get-AzBatchRemoteDesktopProtocolFile
 
 ## SYNOPSIS
 Mendapatkan file RDP dari simpul perhitungan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchremotedesktopprotocolfile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -56,7 +59,7 @@ PS C:\>Get-AzBatchRemoteDesktopProtocolFile -PoolId "Pool06" -ComputeNodeId "Com
 
 Perintah ini mendapatkan file RDP dari node perhitungan yang memiliki ID ComputeNode01 di pool yang memiliki ID Pool06.
 Perintah menyimpan file .rdp sebagai C:\PowerShell\MyComputeNode.rdp.
-Gunakan cmdlet Get-AzBatchAccountKey untuk menetapkan konteks ke variabel $Context.
+Gunakan cmdlet Get-AzBatchAccountKey cmdlet untuk menetapkan konteks ke $Context variabel.
 
 ### Contoh 2: Dapatkan file RDP dari node perhitungan dan simpan file menggunakan saluran
 ```
@@ -73,7 +76,7 @@ PS C:\>$Stream = New-Object -TypeName "System.IO.MemoryStream"
 PS C:\> Get-AzBatchRemoteDesktopProtocolFile "Pool06" -ComputeNodeId "ComputeNode03" -DestinationStream $Stream -BatchContext $Context
 ```
 
-Perintah pertama membuat aliran dengan menggunakan cmdlet New-Object, lalu menyimpannya di $Stream variabel.
+Perintah pertama membuat aliran menggunakan cmdlet New-Object, lalu menyimpannya di $Stream variabel.
 Perintah kedua mendapatkan file .rdp dari node hitung yang memiliki ID ComputeNode03 di pool yang memiliki ID Pool06.
 Perintah mengarahkan konten file ke aliran di $Stream.
 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan node perhitungan, sebagai objek **PSComputeNode,** yang menjadi titik file .rdp.
+Menentukan node perhitungan, sebagai objek **PSComputeNode** , yang menjadi titik file .rdp.
 Untuk mendapatkan objek node perhitungan, gunakan Get-AzBatchComputeNode cmdlet.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseSecondary.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlDatabaseSecondary.md
-ms.openlocfilehash: d86fce282766fd0a045d7941d461455d76e1be53
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: fb7286cc75cedc1097b63febca9cfdf921c7bba8
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136368474"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140480019"
 ---
 # New-AzSqlDatabaseSecondary
 
 ## SYNOPSIS
 Membuat database sekunder untuk database yang sudah ada dan memulai replikasi data.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqldatabasesecondary) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ $database = Get-AzSqlDatabase -DatabaseName $databasename -ResourceGroupName $pr
 $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername -AllowConnections "All"
 ```
 
-### Contoh 2: Tetapkan nama Geo-Replication aktif dan tentukan nama database mitra agar berbeda dari nama database sumber
+### Contoh 2: Tetapkan nama Geo-Replication dan tentukan nama database mitra berbeda dari nama database sumber
 ```powershell
 $database = Get-AzSqlDatabase -DatabaseName $databasename -ResourceGroupName $primaryresourcegroupname -ServerName $primaryservername
 $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername -PartnerDatabaseName $secondarydatabasename -AllowConnections "All"
@@ -60,7 +63,7 @@ $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresou
 ## PARAMETERS
 
 ### -AllowConnections
-Menentukan tujuan pembacaan kata atau kata Azure SQL Database.
+Menentukan tujuan baca opsi tambahan Azure SQL Database.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Tidak
 - Semua
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama SQL Server bidang utama SQL Database.
+Menentukan nama bidang SQL Server bidang SQL Database.
 
 ```yaml
 Type: System.String
@@ -367,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

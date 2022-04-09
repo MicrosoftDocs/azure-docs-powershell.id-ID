@@ -2,7 +2,7 @@
   href: index.yml
 - name: Gambaran Umum
   items:
-    - name: Apa Azure PowerShell itu?
+    - name: Apa itu Azure PowerShell?
       href: what-is-azure-powershell.md
     - name: Memperkenalkan modul Az PowerShell
       href: new-azureps-module-az.md
@@ -10,7 +10,7 @@
     - name: Mulai
       href: get-started-azureps.md
       displayName: 'sign in, signin, log in, login, find, feedback, intro, introduction'
-    - name: Versi modul dan irama rilis
+    - name: Modul versioning dan irama rilis
       href: azps-versioning-release-cadence.md
     - name: Siklus hidup dukungan
       href: azureps-support-lifecycle.md
@@ -34,7 +34,7 @@
   items:
     - name: Konfigurasi
       items:
-        - name: Menggunakan modul Az PowerShell di belakang proxy
+        - name: Menggunakan modul Az PowerShell di belakang proksi.
           href: az-powershell-proxy.md
     - name: Otentikasi dan Identitas
       items:
@@ -57,7 +57,7 @@
         - name: Memfilter hasil cmdlet
           href: queries-azureps.md
           displayName: 'filter, search, format, output, variable, scripting, array, dictionary, map, object'
-        - name: Memformat output
+        - name: Output format
           href: formatting-output.md
           displayName: 'object, table, yaml, json, xml, csv, html, list'
         - name: Lowongan PowerShell
@@ -67,9 +67,9 @@
       items:
         - name: Menyebarkan templat Resource Manager
           href: /azure/azure-resource-manager/templates/deploy-powershell?toc=/powershell/azure/toc.json
-        - name: Mengekspor templat Resource Manager
+        - name: Templat Manajer Sumber Daya Ekspor
           href: /azure/azure-resource-manager/management/manage-resources-powershell?toc=/powershell/azure/toc.json
-        - name: Menerapkan templat Pengelola Sumber Daya pribadi
+        - name: Menyebarkan templat Pengelola Sumber Daya pribadi
           href: /azure/azure-resource-manager/templates/secure-template-with-sas-token?toc=/powershell/azure/toc.json
 - name: Tutorial
   items:
@@ -77,8 +77,10 @@
       href: azureps-vm-tutorial.yml
 - name: Migration
   items:
-    - name: Bermigrasi dari versi Az sebelumnya
+    - name: Bermigrasi dari az versi sebelumnya
       items:
+        - name: Az 6.0.0 melanggar perubahan
+          href: migrate-az-6.0.0.md
         - name: Az 5.0.0 melanggar perubahan
           href: migrate-az-5.0.0.md
         - name: Az 4.1.0 melanggar perubahan

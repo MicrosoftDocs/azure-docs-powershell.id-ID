@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlser
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServerActiveDirectoryAdministrator.md
-ms.openlocfilehash: c9432f3ac34076e0df12d0b0ac0edd4bf755e741
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 95bc2cc49ebc4fd5068553919f9ba5adaa24bd25
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338610"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140479659"
 ---
 # Set-AzSqlServerActiveDirectoryAdministrator
 
 ## SYNOPSIS
-Ketentuan bagi administrator Azure AD untuk SQL Server.
+Menyediakan administrator Azure AD untuk SQL Server.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlserveractivedirectoryadministrator) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Set-AzSqlServerActiveDirectoryAdministrator [-DisplayName] <String> [[-ObjectId]
 ## DESCRIPTION
 Cmdlet **Set-AzSqlServerActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk AzureSQL Server dalam langganan saat ini.
 Anda hanya bisa menyediakan satu administrator dalam satu waktu.
-Anggota Azure AD berikut ini dapat ditetapkan sebagai SQL Server administrator:
+Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator SQL Server baru:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
 - Anggota yang diimpor dari Azure AD lain yang merupakan anggota asli atau gabungan 
@@ -69,7 +72,7 @@ ResourceGroup01   Server01   DBAs        40b79501-b343-44ed-9ce7-da4c8cc7353b Fa
 ```
 
 Perintah ini menyediakan grup administrator Azure AD bernama DBAs untuk server bernama Server01.
-Perintah menentukan ID untuk parameter *ObjectId.*
+Perintah menentukan ID untuk parameter *ObjectId* .
 Ini memastikan bahwa perintah berhasil meskipun nama tampilan grup tidak unik.
 
 ## PARAMETERS
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama perusahaan SQL Server cmdlet ini sebagai administrator.
+Menentukan nama perusahaan SQL Server cmdlet ini menyediakan administrator.
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

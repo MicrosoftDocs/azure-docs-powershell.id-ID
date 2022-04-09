@@ -34,7 +34,7 @@
   items:
     - name: Konfigurasi
       items:
-        - name: Gunakan modul Az PowerShell di belakang proxy
+        - name: Menggunakan modul Az PowerShell di belakang proksi.
           href: az-powershell-proxy.md
     - name: Otentikasi dan Identitas
       items:
@@ -52,7 +52,7 @@
         - name: Kelola langganan
           href: manage-subscriptions-azureps.md
           displayName: 'tenant, user, sign in, signin, log in, login, authenticate, authentication, accounts'
-        - name: Kelola sumber daya Azure dengan Invoke-AzRestMethod
+        - name: Mengelola sumber daya Azure dengan Invoke-AzRestMethod
           href: manage-azure-resources-invoke-azrestmethod.md
         - name: Memfilter hasil cmdlet
           href: queries-azureps.md
@@ -81,6 +81,8 @@
       href: azps-msgraph-migration-changes.md
     - name: Bermigrasi dari az versi sebelumnya
       items:
+        - name: Az 7.0.0 melanggar perubahan
+          href: migrate-az-7.0.0.md
         - name: Az 6.0.0 melanggar perubahan
           href: migrate-az-6.0.0.md
         - name: Az 5.0.0 melanggar perubahan

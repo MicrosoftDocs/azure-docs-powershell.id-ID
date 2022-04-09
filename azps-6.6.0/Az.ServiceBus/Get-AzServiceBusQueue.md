@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusQueue.md
-ms.openlocfilehash: 6240c31f8cf54c796b907039b977d70c30e011c0
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: a426ce93bd61f9b0566369d5dedfe2f2d2502c58
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136371624"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140481045"
 ---
 # Get-AzServiceBusQueue
 
 ## SYNOPSIS
-Mengembalikan deskripsi untuk kolom yang Bus Layanan antre.
+Mengembalikan deskripsi untuk rentang yang Bus Layanan tertentu.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebusqueue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzServiceBusQueue [-ResourceGroupName] <String> [-Namespace] <String> [[-Nam
 ```
 
 ## DESCRIPTION
-Mengembalikan deskripsi untuk kolom yang Bus Layanan antre.
+Mengembalikan deskripsi untuk rentang yang Bus Layanan tertentu.
 
 ## EXAMPLES
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

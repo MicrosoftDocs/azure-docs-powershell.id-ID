@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/new-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlInstance.md
-ms.openlocfilehash: 16e132fb5d9234f8bfd874209573283b04da6c5e
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 979b1f5ddb9c18c1bd3971146f35d533b1a36b79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136338809"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140479929"
 ---
 # New-AzSqlInstance
 
 ## SYNOPSIS
 Membuat Instans Azure SQL Database Terkelola.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlinstance) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -71,7 +74,7 @@ New-AzSqlInstance [-Name] <String> [-ResourceGroupName] <String> [-Administrator
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlInstance** membuat proyek Azure SQL Database Yang Dikelola.
+Cmdlet **New-AzSqlInstance** membuat Azure SQL Database Yang Dikelola.
 
 ## EXAMPLES
 
@@ -222,7 +225,7 @@ MaintenanceConfigurationId : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 Perintah ini membuat contoh baru dengan konfigurasi pemeliharaan MI_2
 
-### Contoh 7: Buat contoh baru dengan Administrator External(Azure Active Directory), hanya Azure Active Directory Autentikasi dan tidak ada SqlAdministratorCredentials
+### Contoh 7: Buat instans baru dengan Administrator External(Azure Active Directory), Azure Active Directory Hanya Autentikasi dan tidak ada SqlAdministratorCredentials
 ```powershell
 PS C:\>New-AzSqlInstance -Name managedInstance2 -ResourceGroupName ResourceGroup01 -ExternalAdminName DummyLogin -EnableActiveDirectoryOnlyAuthentication -Location westcentralus -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Network/virtualNetworks/vnet_name/subnets/subnet_name" -LicenseType LicenseIncluded -StorageSizeInGB 1024 -VCore 16 -Edition "GeneralPurpose" -ComputeGeneration Gen4
 Location                 : westcentralus
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Azure Active Directory Identity untuk instans Terkelola ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas Azure Active Directory untuk instans Terkelola ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -572,7 +575,7 @@ Accept wildcard characters: False
 
 ### -LicenseType
 Menentukan Tipe Lisensi mana yang digunakan. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
+- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga layanan Instans Terkelola akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
 - LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga layanan Instans Terkelola akan menyertakan biaya SQL Server lisensi baru.
 
 ```yaml
@@ -724,7 +727,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageSizeInGB
-Menentukan besar Storage yang akan dikaitkan dengan instans
+Menentukan seberapa Storage besar untuk dikaitkan dengan instans
 
 ```yaml
 Type: System.Int32
@@ -860,7 +863,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

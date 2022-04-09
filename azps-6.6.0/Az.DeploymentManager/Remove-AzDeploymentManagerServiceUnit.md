@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Remove-AzDeploymentManagerServiceUnit.md
-ms.openlocfilehash: 18c4227c52ffa02c946693da9ca014e2dbae4f58
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: efba00fd1fe349bc46a5ba9f17220e6ab6a19085
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136353189"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140504139"
 ---
 # Remove-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
 Menghapus unit layanan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/remove-azdeploymentmanagerserviceunit) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -90,7 +93,7 @@ Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah la
 PS C:\> Remove-AzDeploymentManagerServiceUnit -InputObject $serviceUnitObject
 ```
 
-Perintah ini menghapus unit layanan yang namanya, nama layanan, nama topologi layanan, dan ResourceGroup cocok dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
+Perintah ini menghapus unit layanan dengan nama, nama layanan, nama topologi layanan, dan ResourceGroup sesuai dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
 
 ## PARAMETERS
 
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

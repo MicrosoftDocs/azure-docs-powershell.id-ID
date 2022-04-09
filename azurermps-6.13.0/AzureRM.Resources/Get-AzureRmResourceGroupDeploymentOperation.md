@@ -1,0 +1,187 @@
+---
+external help file: Microsoft.Azure.Commands.ResourceManager.Cmdlets.dll-Help.xml
+Module Name: AzureRM.Resources
+ms.assetid: 9F29DFCB-A02B-45A5-99B9-C054BF4FCA6C
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermresourcegroupdeploymentoperation
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmResourceGroupDeploymentOperation.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmResourceGroupDeploymentOperation.md
+ms.openlocfilehash: 354e4ef8f113e514fe89b56b6d1693c261ed1af5e2110f32fff6283c5df81f38
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "140850242"
+---
+# Get-AzureRmResourceGroupDeploymentOperation
+
+## SYNOPSIS
+Mendapatkan operasi penggunaan grup sumber daya
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+```
+Get-AzureRmResourceGroupDeploymentOperation -DeploymentName <String> [-SubscriptionId <Guid>]
+ -ResourceGroupName <String> [-ApiVersion <String>] [-Pre] [-DefaultProfile <IAzureContextContainer>]
+ [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRmResourceGroupDeploymentOperation** mencantumkan semua operasi yang menjadi bagian dari penyebaran untuk membantu Anda mengidentifikasi dan memberikan informasi selengkapnya tentang operasi yang gagal untuk penyebaran tertentu.
+Konten juga dapat memperlihatkan respons dan permintaan konten untuk setiap operasi penyebaran.
+Ini adalah informasi yang sama yang disediakan dalam detail penggunaan di portal.
+Untuk mendapatkan permintaan dan konten respons, aktifkan pengaturan ketika mengirimkan penyebaran melalui **New-AzureRmResourceGroupDeployment**.
+Ini bisa berpotensi membuat log dan mengekspos rahasia seperti kata sandi yang digunakan dalam properti sumber daya atau operasi **ListKeys** yang kemudian dikembalikan saat Anda mengambil operasi penyebaran.
+Untuk informasi selengkapnya tentang pengaturan ini dan cara mengaktifkannya, lihat cara New-AzureRmResourceGroupDeployment Dan Debug penyebaran templat ARM
+
+## EXAMPLES
+
+### Dapatkan1
+```
+PS C:\>Get-AzureRmResourceGroupDeploymentOperation -DeploymentName test -ResourceGroupName test
+```
+
+Mendapatkan operasi penyebaran dengan nama "uji" di bawah grup sumber daya "uji"
+
+## PARAMETERS
+
+### -ApiVersion
+Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan.
+Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeploymentName
+Nama penyebaran.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: Name
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InformationAction
+Menentukan bagaimana cmdlet merespons kejadian informasi.
+Nilai yang dapat diterima untuk parameter ini adalah:
+- Lanjutkan
+- Abaikan
+- Pemeriksaan
+- SilentlyContinue
+- Stop
+- Tangguhkan
+
+```yaml
+Type: System.Management.Automation.ActionPreference
+Parameter Sets: (All)
+Aliases: infa
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InformationVariable
+Menentukan variabel informasi.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: iv
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Pra
+Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Nama grup sumber daya.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+Langganan yang akan digunakan.
+
+```yaml
+Type: System.Nullable`1[System.Guid]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+## CATATAN
+
+## RELATED LINKS

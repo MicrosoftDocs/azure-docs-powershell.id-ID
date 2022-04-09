@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseUpgradeHint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseUpgradeHint.md
-ms.openlocfilehash: f4de0583bbb5f2f633609648257cf066fb7b5246
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 42c7ec89d51fb38e9f555259a9783932f9a0c40b
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136369440"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140480343"
 ---
 # Get-AzSqlDatabaseUpgradeHint
 
 ## SYNOPSIS
 Mendapatkan petunjuk tingkatan harga untuk database.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseupgradehint) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Get-AzSqlDatabaseUpgradeHint [-ServerName] <String> [-DatabaseName <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseUpgradeHint** mendapatkan petunjuk tingkatan harga untuk pemutakhiran standar Azure SQL Database.
+Cmdlet **Get-AzSqlDatabaseUpgradeHint** mendapatkan petunjuk tingkatan harga untuk pemutakhiran Azure SQL Database.
 Database yang masih berada di tingkatan harga Web dan Bisnis mendapatkan petunjuk untuk memutakhirkan ke tingkatan harga Dasar, Standar, atau Premium baru.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
@@ -64,7 +67,7 @@ Perintah ini mengembalikan petunjuk pemutakhiran untuk semua database di server 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database SQL di mana cmdlet ini mendapatkan petunjuk pemutakhiran.
+Menentukan nama database SQL yang mendapatkan petunjuk pemutakhiran.
 Jika Anda tidak menentukan database, cmdlet ini akan mendapatkan petunjuk untuk semua database pada server logika.
 
 ```yaml
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
