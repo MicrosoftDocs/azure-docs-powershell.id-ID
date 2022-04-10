@@ -1,77 +1,94 @@
 ---
 external help file: Az.Resources-help.xml
 Module Name: Az.Resources
-online version: https://docs.microsoft.com/powershell/module/az.resources/get-azadgroup
+online version: https://docs.microsoft.com/powershell/module/az.resources/get-azaduser
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroup.md
-ms.openlocfilehash: cf50e0564c6dc88934c3498f04389cb166d853f3
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADUser.md
+ms.openlocfilehash: d112d5f97fb9bef8cde9fc29e2be0d9d3fa69ec0
 ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/16/2022
-ms.locfileid: "140664615"
+ms.locfileid: "140664309"
 ---
-# Get-AzADGroup
+# Get-AzADUser
 
 ## SYNOPSIS
-Lists entities from groups or get entity from groups by key
+Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menurut kunci
 
 [!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
-### EmptyParameterSet (Default)
+### Daftar (Default)
 ```
-Get-AzADGroup [-Expand <String[]>] [-Select <String[]>] [-Filter <String>] [-Orderby <String[]>]
- [-Search <String>] [-ConsistencyLevel <String>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
+ [-Filter <String>] [-Orderby <String[]>] [-Search <String>] [-ConsistencyLevel <String>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
+```
+
+### MailParameterSet
+```
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
+ [-DefaultProfile <PSObject>] -Mail <String> [<CommonParameters>]
 ```
 
 ### DisplayNameParameterSet
 ```
-Get-AzADGroup [-Expand <String[]>] [-Select <String[]>] [-ConsistencyLevel <String>] [-First <UInt64>]
- [-Skip <UInt64>] [-AppendSelected] -DisplayName <String> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
+ [-DefaultProfile <PSObject>] -DisplayName <String> [<CommonParameters>]
 ```
 
-### SearchStringParameterSet
+### StartsWithParameterSet
 ```
-Get-AzADGroup [-Expand <String[]>] [-Select <String[]>] [-ConsistencyLevel <String>] [-First <UInt64>]
- [-Skip <UInt64>] [-AppendSelected] -DisplayNameStartsWith <String> [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-First <UInt64>] [-Skip <UInt64>] [-AppendSelected]
+ [-DefaultProfile <PSObject>] -StartsWith <String> [<CommonParameters>]
 ```
 
 ### ObjectIdParameterSet
 ```
-Get-AzADGroup [-Expand <String[]>] [-Select <String[]>] [-ConsistencyLevel <String>] [-AppendSelected]
- -ObjectId <Guid> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-AppendSelected] [-DefaultProfile <PSObject>]
+ -ObjectId <String> [<CommonParameters>]
+```
+
+### UPNParameterSet
+```
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-AppendSelected] [-DefaultProfile <PSObject>]
+ -UserPrincipalName <String> [<CommonParameters>]
+```
+
+### SignedInUser
+```
+Get-AzADUser [-Expand <String[]>] [-Select <String[]>] [-AppendSelected] [-DefaultProfile <PSObject>]
+ [-SignedIn] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Lists entities from groups or get entity from groups by key
+Mencantumkan entitas dari pengguna atau mendapatkan entitas dari pengguna menurut kunci
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan grup berdasarkan nama tampilan
+### Contoh 1: Dapatkan pengguna masuk
 ```powershell
-PS C:\> Get-AzADGroup -DisplayName $gname
+PS C:\> Get-AzADUser -SignedIn
 ```
 
-Dapatkan grup menurut nama tampilan
+Dapatkan pengguna masuk
 
-### Contoh 2: Grup daftar
+### Contoh 2:  List users
 ```powershell
-PS C:\> Get-AzADGroup -First 10
+PS C:\> Get-AzADUser -First 10 -Select 'City' -AppendSelected
 ```
 
-Membuat daftar 10 grup pertama
+10 pengguna pertama mencantumkan dan menambahkan properti 'City' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'UserPrincipalName', 'UsageLocation', 'GivenName', 'SurName', 'AccountEnabled', 'MailNickName', 'Mail'
 
-### Contoh 3: Get group by object id
+### Contoh 3: Dapatkan pengguna dengan nama tampilan
 ```powershell
-PS C:\> Get-AzADGroup -ObjectId $id -Select groupTypes -AppendSelected
+PS C:\> Get-AzADUser -DisplayName $name
 ```
 
-Dapatkan grup dengan id objek dan properti tambahkan 'groupTypes' setelah properti default: 'DisplayName', 'Id', 'DeletedDateTime', 'SecurityEnabled', 'MailEnabled', 'MailNickname', 'Deskripsi'
+Mendapatkan pengguna dengan nama tampilan
 
 ## PARAMETERS
 
@@ -96,7 +113,7 @@ URL Dokumentasi: https://developer.microsoft.com/en-us/office/blogs/microsoft-gr
 
 ```yaml
 Type: System.String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -122,27 +139,12 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan grup.
+nama tampilan pengguna
 
 ```yaml
 Type: System.String
 Parameter Sets: DisplayNameParameterSet
 Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayNameStartsWith
-Digunakan untuk menemukan grup yang dimulai dengan string yang disediakan.
-
-```yaml
-Type: System.String
-Parameter Sets: SearchStringParameterSet
-Aliases: SearchString
 
 Required: True
 Position: Named
@@ -171,7 +173,7 @@ Memfilter item menurut nilai properti
 
 ```yaml
 Type: System.String
-Parameter Sets: EmptyParameterSet
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -181,11 +183,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ObjectId
-kunci: id grup
+### -Mail
+alamat email pengguna
 
 ```yaml
-Type: System.Guid
+Type: System.String
+Parameter Sets: MailParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ObjectId
+kunci: id pengguna
+
+```yaml
+Type: System.String
 Parameter Sets: ObjectIdParameterSet
 Aliases:
 
@@ -201,7 +218,7 @@ Item pesanan menurut nilai properti
 
 ```yaml
 Type: System.String[]
-Parameter Sets: EmptyParameterSet
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -216,7 +233,7 @@ Mencari item menurut frasa pencarian
 
 ```yaml
 Type: System.String
-Parameter Sets: EmptyParameterSet
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -241,12 +258,57 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SignedIn
+alamat email pengguna
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: SignedInUser
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartsWith
+nama tampilan pengguna dimulai dengan
+
+```yaml
+Type: System.String
+Parameter Sets: StartsWithParameterSet
+Aliases: SearchString
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserPrincipalName
+nama prinsipal pengguna
+
+```yaml
+Type: System.String
+Parameter Sets: UPNParameterSet
+Aliases: UPN
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Lewati
 Mengabaikan objek 'n' pertama, lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
-Parameter Sets: EmptyParameterSet, DisplayNameParameterSet, SearchStringParameterSet
+Parameter Sets: List, MailParameterSet, DisplayNameParameterSet, StartsWithParameterSet
 Aliases:
 
 Required: False
@@ -261,7 +323,7 @@ Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
 Type: System.UInt64
-Parameter Sets: EmptyParameterSet, DisplayNameParameterSet, SearchStringParameterSet
+Parameter Sets: List, MailParameterSet, DisplayNameParameterSet, StartsWithParameterSet
 Aliases:
 
 Required: False
@@ -278,7 +340,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphGroup
+### Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Models.ApiV10.IMicrosoftGraphUser
 
 ## CATATAN
 
