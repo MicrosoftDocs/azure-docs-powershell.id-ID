@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Remove-AzNetAppFilesBackupPolicy.md
-ms.openlocfilehash: 63e4db9dd9e03af7bcd8b57e37259e3f53f59577
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 12179aa8d2b64589e8bebc3f8ccf5036a894fce9
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136374987"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140501475"
 ---
 # Remove-AzNetAppFilesBackupPolicy
 
 ## SYNOPSIS
 Menghapus kebijakan pencadangan File Azure NetApp (ANF).
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/remove-aznetappfilesbackuppolicy) untuk informasi terkini.
 
 ## SYNTAX
 

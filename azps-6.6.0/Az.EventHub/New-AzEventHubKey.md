@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/new-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/New-AzEventHubKey.md
-ms.openlocfilehash: ae1d74c7034081dcc3023c5ae505af7df8455e15
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 13f6e202b1783efc9487b6e17ed6d8fef15b3a79
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136350090"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140481837"
 ---
 # New-AzEventHubKey
 
 ## SYNOPSIS
 Membuat kunci primer atau sekunder baru untuk aturan otorisasi Hub Kejadian yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.eventhub/new-azeventhubkey) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -43,14 +46,14 @@ Cmdlet New-AzEventHubKey meregenerasi tombol SAS utama atau sekunder untuk atura
 PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -Name MyAuthRuleName -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi kunci utama untuk aturan otorisasi \` MyAuthRuleName \` .
+Meregenerasi kunci utama untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ### Contoh 2: EventHub - AuthorizationRule PrimaryKey
 ```powershell
 PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyAuthRuleName -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi kunci utama untuk aturan otorisasi \` MyAuthRuleName \` .
+Meregenerasi kunci utama untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ### Contoh 3: - Namespace - AuthorizationRule SecondaryKey
 ```powershell
@@ -62,7 +65,7 @@ PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamesp
 PS C:\> New-AzEventHubKey -ResourceGroup MyResourceGroupName -Namespace MyNamespaceName -EventHub MyEventHubName -Name MyAuthRuleName -RegenerateKey SecondaryKey
 ```
 
-Meregenerasi kunci sekunder untuk aturan otorisasi \` MyAuthRuleName \` .
+Meregenerasi kunci sekunder untuk aturan otorisasi \`MyAuthRuleName\`.
 
 ## PARAMETERS
 
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

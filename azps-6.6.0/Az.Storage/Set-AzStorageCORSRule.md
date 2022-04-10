@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/set-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageCORSRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Set-AzStorageCORSRule.md
-ms.openlocfilehash: 271ec9f96a446988d8544a8b0ce068404178784c
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: c58c7dbaba77a7c4bbae6e70c945fc2003e2b6a2
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136346625"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140499657"
 ---
 # Set-AzStorageCORSRule
 
 ## SYNOPSIS
-Mengatur aturan CORS untuk tipe layanan Storage.
+Menetapkan aturan CORS untuk tipe Storage baru.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/set-azstoragecorsrule) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -27,10 +30,10 @@ Set-AzStorageCORSRule [-ServiceType] <StorageServiceType> -CorsRules <PSCorsRule
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzStorageCORSRule** mengatur aturan Berbagi Sumber Daya Lintas Asal (CORS, Cross-Origin Resource Sharing) untuk suatu tipe Azure Storage terkait.
+Cmdlet **Set-AzStorageCORSRule** mengatur aturan Berbagi Sumber Daya Lintas Asal (CORS, Cross-Origin Resource Sharing) untuk suatu tipe Azure Storage eksternal.
 Tipe layanan penyimpanan untuk cmdlet ini adalah Blob, Tabel, Antrean, dan File.
 Cmdlet ini menimpa aturan yang sudah ada.
-Untuk melihat aturan saat ini, gunakan cmdlet Get-AzStorageCORSRule.
+Untuk melihat aturan saat ini, gunakan cmdlet Get-AzStorageCORSRule cmdlet.
 
 ## EXAMPLES
 
@@ -62,10 +65,10 @@ PS C:\> $CorsRules[0].AllowedMethods = @("Get", "Connect", "Merge")
 PS C:\> Set-AzStorageCORSRule -ServiceType Blob -CorsRules $CorsRules
 ```
 
-Perintah pertama mendapatkan aturan CORS saat ini untuk tipe Blob dengan menggunakan cmdlet **Get-AzStorageCORSRule.**
+Perintah pertama mendapatkan aturan CORS saat ini untuk tipe Blob dengan menggunakan cmdlet **Get-AzStorageCORSRule** .
 Perintah menyimpan aturan dalam variabel $CorsRules larik.
 Perintah kedua dan ketiga mengubah aturan pertama dalam $CorsRules.
-Perintah terakhir menetapkan aturan dalam $CorsRules tipe layanan Blob.
+Perintah akhir menetapkan aturan dalam $CorsRules tipe layanan Blob.
 Aturan yang direvisi menimpa aturan CORS saat ini.
 
 ## PARAMETERS
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan Azure Storage konteks.
-Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext.
+Untuk mendapatkan konteks, gunakan cmdlet New-AzStorageContext cmdlet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

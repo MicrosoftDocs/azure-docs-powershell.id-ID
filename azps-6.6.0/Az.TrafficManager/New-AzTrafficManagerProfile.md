@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/New-AzTrafficManagerProfile.md
-ms.openlocfilehash: d9fad68d0b1e304ba4e9eb0d8539a302b60513fe
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 759bb41de14d5762c873ac2bb366a02571a2e4f1
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136339818"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140498181"
 ---
 # New-AzTrafficManagerProfile
 
 ## SYNOPSIS
 Membuat profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/new-aztrafficmanagerprofile) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorToleratedNumberOfFailures
-Jumlah pemeriksaan kesehatan gagal berurutan yang dilakukan Traffic Manager sebelum mendeklarasi titik akhir di profil ini Menurun setelah pemeriksaan kesehatan berurutan berikutnya gagal. Defaultnya adalah 3.
+Jumlah pemeriksaan kesehatan yang gagal berturut-turut Traffic Manager menurun sebelum mendeklarasi titik akhir di profil ini Menurun setelah pemeriksaan kesehatan berurutan berikutnya gagal. Defaultnya adalah 3.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 
 ### -RelativeDnsName
 Menentukan nama DNS relatif yang telah Traffic Manager profil.
-Traffic Manager menggabungkan nilai ini dan nama domain DNS yang Azure Traffic Manager gunakan untuk membentuk nama domain yang sepenuhnya memenuhi syarat (FQDN, Fully Qualified Domain Name) dari profil.
+Traffic Manager menggabungkan nilai ini dan nama domain DNS yang digunakan Azure Traffic Manager untuk membentuk nama domain yang sepenuhnya memenuhi syarat (FQDN, Fully Qualified Domain Name) dari profil.
 
 ```yaml
 Type: System.String
@@ -331,7 +334,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

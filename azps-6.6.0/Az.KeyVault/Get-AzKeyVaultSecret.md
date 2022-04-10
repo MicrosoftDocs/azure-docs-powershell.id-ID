@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/get-azk
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultSecret.md
-ms.openlocfilehash: b9273dc5da40693fd5c1bdd08cddbbe83d4bbcd9
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 6161ae90e45a3b8079e76035544b572f22d9031a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136385431"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140503149"
 ---
 # Get-AzKeyVaultSecret
 
 ## SYNOPSIS
 Rahasianya ada di kunci vault.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultsecret) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -187,7 +190,7 @@ PS C:\> $secretText = Get-AzKeyVaultSecret -VaultName 'Contoso' -Name 'ITSecret'
 
 Cmdlet mengembalikan rahasia sebagai string ketika `-AsPlainText` diterapkan.
 
-**Catatan:** Bila mencantumkan rahasia, misalnya tidak menyediakan `-Name` , `-AsPlainText` akan diabaikan.
+**Catatan:** Bila mencantumkan rahasia, misalnya tidak menyediakan `-Name`, `-AsPlainText` akan diabaikan.
 
 ### Contoh 6: Dapatkan semua rahasia yang telah dihapus tapi tidak di purged untuk vault kunci ini.
 ```powershell
@@ -310,8 +313,8 @@ Accept wildcard characters: False
 ### -IncludeVersions
 Mengindikasikan bahwa cmdlet ini mendapatkan semua versi rahasia.
 Versi rahasia saat ini adalah versi pertama dalam daftar.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName.*
-Jika Anda tidak menentukan parameter *IncludeVersions,* cmdlet ini mendapatkan versi rahasia terbaru dengan Nama yang *ditentukan.*
+Jika Anda menentukan parameter ini, Anda juga harus menentukan *parameter* *Nama dan VaultName* .
+Jika Anda tidak menentukan parameter *IncludeVersions* , cmdlet ini mendapatkan versi rahasia saat ini dengan Nama yang *ditentukan*.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
