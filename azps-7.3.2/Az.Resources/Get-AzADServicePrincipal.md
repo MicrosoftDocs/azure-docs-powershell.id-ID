@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADServicePrincipal.md
-ms.openlocfilehash: 943ec9fe690fd0021354bef8facb6653ed03c122
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dbd4424fd697acc51517ae81c4e5a666706e46a1
+ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184291"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140663643"
 ---
 # Get-AzADServicePrincipal
 
 ## SYNOPSIS
 Lists entities from service principals or get entity from service principals by key
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

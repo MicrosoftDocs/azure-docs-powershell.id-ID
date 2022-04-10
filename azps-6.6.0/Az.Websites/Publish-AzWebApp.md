@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/publish
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Publish-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Publish-AzWebApp.md
-ms.openlocfilehash: b647bd10fe4beeb6c86b249c1429b3792ac3cf35
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: ceff2073c0de13d73b7801441b3ca8b850af928a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136155684"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140497083"
 ---
 # Publish-AzWebApp
 
 ## SYNOPSIS
 Menyebarkan Azure Web App dari file ZIP, JAR, atau WAR menggunakan zipdeploy. 
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/publish-azwebapp) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Cmdlet **Publish-AzWebApp** mengunggah konten ke Azure Web App yang sudah ada. K
 PS C:\> Publish-AzWebApp -ResourceGroupName Default-Web-WestUS -Name MyApp -ArchivePath C:\project\app.zip
 ```
 
-Mengunggah konten akun app.zip aplikasi web bernama MyApp milik grup sumber daya Default-Web-WestUS.
+Mengunggah konten pesan app.zip aplikasi web bernama MyApp milik grup sumber daya Default-Web-WestUS.
 
 ### Contoh 2
 ```powershell
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

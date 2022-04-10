@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryEncryptValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/New-AzDataFactoryEncryptValue.md
-ms.openlocfilehash: 2628721aceb9d4176c3cc43e58dcc517c7a7ff07
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: b48161d488af7a56efc8fb1e3f7d9612483ac8c7
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136383174"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140465723"
 ---
 # New-AzDataFactoryEncryptValue
 
 ## SYNOPSIS
 Mengenkripsi data sensitif.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/new-azdatafactoryencryptvalue) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzDataFactoryEncryptValue [-DataFactory] <PSDataFactory> [[-Value] <SecureSt
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataFactoryEncryptValue** mengenkripsi data sensitif, seperti kata sandi atau string koneksi Microsoft SQL Server, dan mengembalikan nilai terenkripsi.
+Cmdlet **New-AzDataFactoryEncryptValue** mengenkripsi data sensitif, seperti kata sandi atau string Microsoft SQL Server koneksi, dan mengembalikan nilai terenkripsi.
 
 ## EXAMPLES
 
@@ -47,8 +50,8 @@ PS C:\>$Value = ConvertTo-SecureString 'Data Source=ContosoServer;Initial Catalo
 PS C:\> New-AzDataFactoryEncryptValue -GatewayName "WikiGateway" -DataFactoryName "WikiAdf" -Value $value -ResourceGroupName "ADF" -Type OnPremisesSqlLinkedService
 ```
 
-Perintah pertama menggunakan cmdlet ConvertTo-SecureString untuk mengonversi string koneksi yang ditentukan menjadi objek **SecureString,** lalu menyimpan objek tersebut dalam $Value variabel.
-Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString` .
+Perintah pertama menggunakan cmdlet ConvertTo-SecureString untuk mengonversi string koneksi yang ditentukan menjadi objek **SecureString** , lalu menyimpan objek tersebut dalam $Value variabel.
+Untuk informasi selengkapnya, ketik `Get-Help ConvertTo-SecureString`.
 Nilai yang diperbolehkan: SQL Server atau string koneksi Oracle.
 Perintah kedua membuat nilai terenkripsi untuk objek yang disimpan di $Value pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan yang ditentukan.
 
@@ -60,9 +63,9 @@ PS C:\> New-AzDataFactoryEncryptValue -DataFactoryName "WikiADF" -GatewayName "W
 ```
 
 Perintah pertama menggunakan **ConvertTo-SecureString** untuk mengonversi string koneksi yang ditentukan menjadi objek string aman, lalu menyimpan objek tersebut dalam $Value variabel.
-Perintah kedua menggunakan cmdlet Get-Credential untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut di $Credential variabel.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Credential` .
-Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan.
+Perintah kedua menggunakan cmdlet Get-Credential untuk mengumpulkan autentikasi windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut dalam $Credential variabel.
+Untuk informasi selengkapnya, ketik `Get-Help Get-Credential`.
+Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan yang ditentukan.
 
 ### Contoh 3: Enkripsi nama server dan kredensial untuk Layanan tertaut sistem file
 ```
@@ -73,7 +76,7 @@ PS C:\> New-AzDataFactoryEncryptValue -DataFactoryName "WikiADF" -GatewayName "W
 
 Perintah pertama menggunakan **ConvertTo-SecureString** untuk mengonversi string yang ditentukan menjadi string aman, lalu menyimpan objek tersebut dalam $Value variabel.
 Perintah kedua menggunakan **Get-Credential** untuk mengumpulkan Windows autentikasi (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** tersebut di $Credential kedua.
-Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan.
+Perintah ketiga membuat nilai terenkripsi untuk objek yang disimpan di $Value dan $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan yang ditentukan.
 
 ### Contoh 4: Mengenkripsi kredensial untuk layanan tertaut HDFS
 ```
@@ -85,8 +88,8 @@ New-AzDataFactoryEncryptValue -DataFactoryName "MyDataFactory" -ResourceGroupNam
 
 Perintah **ConvertTo-SecureString** mengonversi string yang ditentukan menjadi string aman.
 Perintah **Objek Baru** membuat objek PSCredential menggunakan nama pengguna dan string kata sandi yang aman.
-Sebaliknya, Anda bisa menggunakan perintah **Get-Credential** untuk mengumpulkan autentikasi Windows (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** yang dikembalikan dalam variabel $credential seperti yang diperlihatkan di contoh sebelumnya.
-Perintah **New-AzDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan.
+Sebaliknya, Anda bisa menggunakan perintah **Get-Credential** untuk mengumpulkan Windows authentication (nama pengguna dan kata sandi), lalu menyimpan objek **PSCredential** yang dikembalikan dalam variabel $credential seperti yang diperlihatkan di contoh sebelumnya.
+Perintah **New-AzDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Credential untuk pabrik data, gateway, grup sumber daya, dan tipe layanan tertaut yang ditentukan.
 
 ### Contoh 5: Mengenkripsi kredensial untuk layanan tertaut ODBC
 ```
@@ -95,7 +98,7 @@ New-AzDataFactoryEncryptValue -ResourceGroupName $RGName -DataFactoryName $DFNam
 ```
 
 Perintah **ConvertTo-SecureString** mengonversi string yang ditentukan menjadi string aman.
-Perintah **New-AzDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Value untuk pabrik data, gateway, grup sumber daya, dan tipe layanan yang ditautkan.
+Perintah **New-AzDataFactoryEncryptValue** membuat nilai terenkripsi untuk objek yang disimpan di $Value untuk pabrik data, gateway, grup sumber daya, dan tipe layanan tertaut yang ditentukan.
 
 ## PARAMETERS
 
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
+Menentukan objek **PSDataFactory** .
 Cmdlet ini mengenkripsi data untuk pabrik data yang ditentukan parameter ini.
 
 ```yaml
@@ -289,9 +292,9 @@ Accept wildcard characters: False
 
 ### -Value
 Menentukan nilai untuk dienkripsi.
-Untuk layanan terkait SQL Server tertaut dan layanan oracle lokal yang ditautkan, gunakan string koneksi.
+Untuk layanan terkait SQL Server dan layanan tertaut Oracle lokal, gunakan string koneksi.
 Untuk layanan tertaut ODBC di tempat, gunakan bagian kredensial dari string koneksi.
-Untuk layanan tertaut sistem file lokal, jika sistem file ber lokal untuk komputer gateway, gunakan Local atau localhost, dan jika sistem file berada di server berbeda dari komputer gateway, gunakan \\ \\ nama server.
+Untuk layanan tertaut sistem file lokal, jika sistem file ber lokal untuk komputer gateway, gunakan Local atau localhost, dan jika sistem file berada di server berbeda dari komputer gateway, \\\\gunakan nama server.
 
 ```yaml
 Type: System.Security.SecureString
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

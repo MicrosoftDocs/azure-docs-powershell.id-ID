@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdApplicationGroup.md
-ms.openlocfilehash: 6fa68028c67128bce393828ae12cc1c0826cc581
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 432f137b3acd75df09f8ba19ac6af304a1a7cd61
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136357074"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140482917"
 ---
 # New-AzWvdApplicationGroup
 
 ## SYNOPSIS
 Membuat atau memperbarui aplikasiGrup.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdapplicationgroup) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Membuat atau memperbarui aplikasiGrup.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat grup Windows Virtual Desktop ApplicationGroup menurut nama
+### Contoh 1: Membuat Windows Virtual Desktop ApplicationGroup menurut nama
 ```powershell
 PS C:\> New-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName `
                             -Name ApplicationGroupName `
@@ -50,7 +53,7 @@ Location   Name                 Type
 eastus     ApplicationGroupName Microsoft.DesktopVirtualization/applicationgroups
 ```
 
-Perintah ini akan membuat Windows Aplikasi Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini akan membuat Windows Desktop Virtual ApplicationGroup dalam Grup Sumber Daya.
 
 ### Contoh 2: Membuat Windows Virtual Desktop ApplicationGroup menurut nama
 ```powershell
@@ -67,7 +70,7 @@ Location   Name                 Type
 eastus     ApplicationGroupName Microsoft.DesktopVirtualization/applicationgroups
 ```
 
-Perintah ini akan membuat Windows Aplikasi Desktop Virtual dalam Grup Sumber Daya.
+Perintah ini akan membuat Windows Desktop Virtual ApplicationGroup dalam Grup Sumber Daya.
 
 ## PARAMETERS
 
@@ -491,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

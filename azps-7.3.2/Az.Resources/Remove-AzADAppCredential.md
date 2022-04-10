@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/Remove
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Remove-AzADAppCredential.md
-ms.openlocfilehash: 98032daf18fc09eeaf93c31536155832b67d94e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1102042b4bc37aba870adfa9b08a81de1064e3d8
+ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184207"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140663499"
 ---
 # Remove-AzADAppCredential
 
 ## SYNOPSIS
 Menghapus kredensial kunci atau kredensial kata sandi untuk aplikasi.
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryWebhook.md
-ms.openlocfilehash: f9acb572c89091a05863c16c35d1c815fc8317d2
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 5c039dcc465b9ecfa3a760b715cd889f12e20c9a
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "136378235"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140467495"
 ---
 # Get-AzContainerRegistryWebhook
 
 ## SYNOPSIS
 Mendapatkan container registry webhook.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrywebhook) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Get-AzContainerRegistryWebhook [-IncludeConfiguration] -ResourceId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryWebhook cmdlet mendapatkan webhook tertentu dari container registry atau semua webhooks dari container registry.
+Cmdlet Get-AzContainerRegistryWebhook mendapatkan webhook tertentu dari registri wadah atau semua webhook registri wadah.
 
 ## EXAMPLES
 
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

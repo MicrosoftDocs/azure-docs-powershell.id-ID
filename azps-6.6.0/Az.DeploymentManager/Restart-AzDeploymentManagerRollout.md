@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Restart-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Restart-AzDeploymentManagerRollout.md
-ms.openlocfilehash: 4e48a7babdc3f76b511bd2f93a3060221454e87f
-ms.sourcegitcommit: 53ef403038f665f1b3a9f616185b31f5de9bd7bb
+ms.openlocfilehash: 31dc036b53cf65418a39669997d3ed66993267cf
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "136332999"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140483097"
 ---
 # Restart-AzDeploymentManagerRollout
 
 ## SYNOPSIS
 Memulai ulang peluncuran yang gagal.
+
+> [!NOTE]
+>Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/restart-azdeploymentmanagerrollout) untuk informasi terkini.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceG
 PS C:\> Get-AzDeploymentManagerRollout -InputObject $rolloutObject
 ```
 
-Perintah ini memulai ulang peluncuran dengan nama dan ResourceGroup yang sesuai dengan properti Nama dan ResourceGroupName $rolloutObject, secara berurutan.
+Perintah ini memulai ulang peluncuran dengan nama dan Grup Sumber Daya yang sesuai dengan properti Nama dan ResourceGroupName $rolloutObject grup.
 
 ## PARAMETERS
 
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADApplication.md
-ms.openlocfilehash: feaa3a343a67850fcc078cf9c19e13fb9091c900
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 120c651c28892470d029cb54b33ec935cfa09abc
+ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196071"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "140663733"
 ---
 # Get-AzADApplication
 
 ## SYNOPSIS
 Mencantumkan entitas dari aplikasi atau mendapatkan entitas dari aplikasi dengan kunci
+
+[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
