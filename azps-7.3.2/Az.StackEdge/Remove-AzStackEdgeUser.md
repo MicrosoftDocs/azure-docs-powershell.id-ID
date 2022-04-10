@@ -1,53 +1,50 @@
 ---
 external help file: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.dll-Help.xml
 Module Name: Az.StackEdge
-online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove-azstackedgerole
+online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove-azstackedgeuser
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeRole.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeRole.md
-ms.openlocfilehash: b2d4c29352107dd0c8aaa2912998c13c8975ab6c
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeUser.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeUser.md
+ms.openlocfilehash: 140a081ec13e96330679cc4cbba00a324dbb6efb
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140500287"
+ms.locfileid: "140553912"
 ---
-# Remove-AzStackEdgeRole
+# Remove-AzStackEdgeUser
 
 ## SYNOPSIS
-Menghapus peran IoT yang terkait untuk suatu perangkat.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/remove-azstackedgerole) untuk informasi terkini.
+Menghapus pengguna di perangkat.
 
 ## SYNTAX
 
 ### DeleteByNameParameterSet (Default)
 ```
-Remove-AzStackEdgeRole [-ResourceGroupName] <String> [-DeviceName] <String> [-Name] <String> [-AsJob]
+Remove-AzStackEdgeUser [-ResourceGroupName] <String> [-DeviceName] <String> [-Name] <String> [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteByResourceIdParameterSet
 ```
-Remove-AzStackEdgeRole -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-PassThru]
+Remove-AzStackEdgeUser [-ResourceId] <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteByInputObjectParameterSet
 ```
-Remove-AzStackEdgeRole -InputObject <PSStackEdgeRole> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+Remove-AzStackEdgeUser [-InputObject] <PSStackEdgeUser> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStackEdgeRole** menghapus peran IoT terkait untuk perangkat Stack Edge.
+Cmdlet **Remove-AzStackEdgeUser** menghapus pengguna pada perangkat Stack Edge. Pembuatan hanya pengguna tipe `Share` didukung.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-PS C:\> Remove-AzStackEdgeRole -ResourceGroupName resourceGroupName -DeviceName deviceName -Name roleName
+PS C:\> Remove-AzStackEdgeUser -ResourceGroupName resourceGroupName -DeviceName deviceName -Name username
 ```
 
 ## PARAMETERS
@@ -101,24 +98,24 @@ Accept wildcard characters: False
 Objek Input
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeRole
+Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeUser
 Parameter Sets: DeleteByInputObjectParameterSet
-Aliases: Role
+Aliases: User
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Sumber Daya
+Nama pengguna
 
 ```yaml
 Type: System.String
 Parameter Sets: DeleteByNameParameterSet
-Aliases: RoleName
+Aliases: Username
 
 Required: True
 Position: 2
@@ -166,7 +163,7 @@ Parameter Sets: DeleteByResourceIdParameterSet
 Aliases:
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
@@ -209,11 +206,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeRole
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeUser
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeRole
+### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeStorageAccountCredential
 
 ## CATATAN
 

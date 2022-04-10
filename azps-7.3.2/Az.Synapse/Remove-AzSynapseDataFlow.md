@@ -1,54 +1,53 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.dll-Help.xml
-Module Name: Az.StackEdge
-online version: https://docs.microsoft.com/powershell/module/az.stackedge/remove-azstackedgerole
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Synapse.dll-Help.xml
+Module Name: Az.Synapse
+online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-azsynapsedataflow
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeRole.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Remove-AzStackEdgeRole.md
-ms.openlocfilehash: b2d4c29352107dd0c8aaa2912998c13c8975ab6c
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseDataFlow.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseDataFlow.md
+ms.openlocfilehash: f46af91357df0d796b61477dcebed1c3df7715f8
 ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "140500287"
+ms.locfileid: "140553619"
 ---
-# Remove-AzStackEdgeRole
+# Remove-AzSynapseDataFlow
 
 ## SYNOPSIS
-Menghapus peran IoT yang terkait untuk suatu perangkat.
-
-> [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackedge/remove-azstackedgerole) untuk informasi terkini.
+Menghapus alur data dari ruang kerja.
 
 ## SYNTAX
 
-### DeleteByNameParameterSet (Default)
+### RemoveByName (Default)
 ```
-Remove-AzStackEdgeRole [-ResourceGroupName] <String> [-DeviceName] <String> [-Name] <String> [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteByResourceIdParameterSet
-```
-Remove-AzStackEdgeRole -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzSynapseDataFlow -WorkspaceName <String> -Name <String> [-PassThru] [-AsJob] [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteByInputObjectParameterSet
+### RemoveByObject
 ```
-Remove-AzStackEdgeRole -InputObject <PSStackEdgeRole> [-AsJob] [-DefaultProfile <IAzureContextContainer>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-AzSynapseDataFlow -WorkspaceObject <PSSynapseWorkspace> -Name <String> [-PassThru] [-AsJob] [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveByInputObject
+```
+Remove-AzSynapseDataFlow -InputObject <PSDataFlowResource> [-PassThru] [-AsJob] [-Force]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStackEdgeRole** menghapus peran IoT terkait untuk perangkat Stack Edge.
+Cmdlet **Remove-AzSynapseDataFlow** menghapus alur data dari ruang kerja.
 
 ## EXAMPLES
 
 ### Contoh 1
 ```powershell
-PS C:\> Remove-AzStackEdgeRole -ResourceGroupName resourceGroupName -DeviceName deviceName -Name roleName
+PS C:\> Remove-AzSynapseDataFlow -WorkspaceName ContosoWorkspace -Name ContosoDataFlow
 ```
+
+Perintah ini menghapus alur data yang bernama ContosoDataFlow dari ruang kerja yang bernama ContosoWorkspace.
 
 ## PARAMETERS
 
@@ -82,53 +81,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceName
-Nama Perangkat
-
-```yaml
-Type: System.String
-Parameter Sets: DeleteByNameParameterSet
-Aliases:
-
-Required: True
-Position: 1
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -InputObject
-Objek Input
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PSStackEdgeRole
-Parameter Sets: DeleteByInputObjectParameterSet
-Aliases: Role
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Nama
-Nama Sumber Daya
-
-```yaml
-Type: System.String
-Parameter Sets: DeleteByNameParameterSet
-Aliases: RoleName
-
-Required: True
-Position: 2
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -PassThru
-mengembalikan true jika berhasil
+### -Force
+Jangan minta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,33 +96,79 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceGroupName
-Nama Grup Sumber Daya
+### -InputObject
+Objek alur data.
 
 ```yaml
-Type: System.String
-Parameter Sets: DeleteByNameParameterSet
-Aliases:
-
-Required: True
-Position: 0
-Default value: None
-Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -ResourceId
-Azure ResourceId
-
-```yaml
-Type: System.String
-Parameter Sets: DeleteByResourceIdParameterSet
+Type: Microsoft.Azure.Commands.Synapse.Models.PSDataFlowResource
+Parameter Sets: RemoveByInputObject
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Nama
+Nama alur data.
+
+```yaml
+Type: System.String
+Parameter Sets: RemoveByName, RemoveByObject
+Aliases: DataFlowName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Cmdlet ini tidak mengembalikan objek secara default.
+Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkspaceName
+Nama ruang kerja Synapse.
+
+```yaml
+Type: System.String
+Parameter Sets: RemoveByName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkspaceObject
+objek input ruang kerja, biasanya melewati saluran.
+
+```yaml
+Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
+Parameter Sets: RemoveByObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -188,7 +188,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,13 +208,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## INPUTS
 
-### System.String
+### Microsoft.Azure.Commands.Synapse.Models.PSSynapseWorkspace
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeRole
+### Microsoft.Azure.Commands.Synapse.Models.PSDataFlowResource
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.StackEdge.Models.PS StackEdgeRole
+### System.Boolean
 
 ## CATATAN
 

@@ -5,19 +5,17 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/New-AzADApplication.md
-ms.openlocfilehash: 7a8999cfb3338869adce02ecc03162c7e021e4e9
-ms.sourcegitcommit: b346b2fbd8b25f54759984e75ddbee3304921c43
+ms.openlocfilehash: e031a588ba7ea2cf10f3312c88f1eac8a8591982
+ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "140663841"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "140554679"
 ---
 # New-AzADApplication
 
 ## SYNOPSIS
 Menambahkan entitas baru ke aplikasi
-
-[!INCLUDE [msgraph-migration-banner-az7](../../includes/msgraph-migration-banner-az7.md)]
 
 ## SYNTAX
 
