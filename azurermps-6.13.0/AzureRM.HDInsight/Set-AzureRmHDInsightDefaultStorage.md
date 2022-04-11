@@ -1,0 +1,166 @@
+---
+external help file: Microsoft.Azure.Commands.HDInsight.dll-Help.xml
+Module Name: AzureRM.HDInsight
+ms.assetid: 37E41DA2-B65B-4AA2-B6AB-F93CCA881C72
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdinsight/set-azurermhdinsightdefaultstorage
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Set-AzureRmHDInsightDefaultStorage.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Set-AzureRmHDInsightDefaultStorage.md
+ms.openlocfilehash: d6ba5bc68ae38af16b934f001fcf167248dc53941f1d182b5ae99acf29903569
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "140858980"
+---
+# Set-AzureRmHDInsightDefaultStorage
+
+## SYNOPSIS
+Mengatur pengaturan akun Storage default dalam objek konfigurasi kluster.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+```
+Set-AzureRmHDInsightDefaultStorage [-Config] <AzureHDInsightConfig> [-StorageAccountName] <String>
+ [[-StorageAccountKey] <String>] [-StorageAccountType <StorageType>] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Set-AzureRmHDInsightDefaultStorage** mengatur pengaturan akun Storage default dalam objek konfigurasi kluster Azure HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig default.
+
+## EXAMPLES
+
+### Contoh 1: Mengatur akun penyimpanan default untuk objek konfigurasi kluster
+```
+PS C:\># Primary storage account info
+PS C:\> $storageAccountResourceGroupName = "Group"
+PS C:\> $storageAccountName = "yourstorageacct001"
+PS C:\> $storageAccountKey = (Get-AzureRmStorageAccountKey -ResourceGroupName $storageAccountResourceGroupName -Name $storageAccountName)[0].value
+
+
+PS C:\>$storageContainer = "container002"
+
+# Cluster configuration info
+PS C:\> $location = "East US 2"
+PS C:\> $clusterResourceGroupName = "Group"
+PS C:\> $clusterName = "your-hadoop-002"
+PS C:\> $clusterCreds = Get-Credential
+
+# If the cluster's resource group doesn't exist yet, run:
+#   New-AzureRMResourceGroup -Name $clusterResourceGroupName -Location $location
+
+# Create the cluster
+PS C:\> New-AzureRmHDInsightClusterConfig `
+            | Set-AzureRmHDInsightDefaultStorage `
+                -StorageAccountName "$secondStorageAccountName.blob.core.contoso.net" `
+                -StorageAccountKey $key2 `
+                -StorageContainer $storageContainer `
+            | New-AzureRmHDInsightCluster `
+                -ClusterType Hadoop `
+                -OSType Windows `
+                -ClusterSizeInNodes 4 `
+                -ResourceGroupName $clusterResourceGroupName `
+                -ClusterName $clusterName `
+                -HttpCredential $clusterCreds `
+                -Location $location
+```
+
+Perintah ini mengatur akun Storage default untuk objek konfigurasi kluster.
+
+## PARAMETERS
+
+### -Config
+Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Objek ini dibuat oleh cmdlet **New-AzureRmHDInsightClusterConfig** .
+
+```yaml
+Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StorageAccountKey
+Menentukan kunci akun untuk akun Azure Storage default yang akan digunakan kluster HDInsight.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StorageAccountName
+Menentukan nama akun penyimpanan default yang akan digunakan oleh kluster HDInsight.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StorageAccountType
+Mendapatkan atau mengatur tipe akun penyimpanan default. Default untuk AzureStorage
+
+```yaml
+Type: System.Nullable`1[Microsoft.Azure.Commands.HDInsight.Models.Management.StorageType]
+Parameter Sets: (All)
+Aliases:
+Accepted values: AzureStorage, AzureDataLakeStore
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
+Parameter: Config (ByValue)
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
+
+## CATATAN
+
+## RELATED LINKS
