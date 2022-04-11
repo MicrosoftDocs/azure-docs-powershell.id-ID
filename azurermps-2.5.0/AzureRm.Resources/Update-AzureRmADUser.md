@@ -1,0 +1,307 @@
+---
+external help file: Microsoft.Azure.Commands.Resources.dll-Help.xml
+Module Name: AzureRM.Resources
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/update-azurermaduser
+schema: 2.0.0
+ms.openlocfilehash: 00cd6b65d6755a73388e45c16888d9d9daa4e2192d3b9f5b7c50a67fa38b5a98
+ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "140868433"
+---
+# Update-AzureRmADUser
+
+## SYNOPSIS
+Memperbarui pengguna direktori aktif yang sudah ada.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+### UPNOrObjectIdParameterSet (Default)
+```
+Update-AzureRmADUser -UPNOrObjectId <String> [-DisplayName <String>] [-EnableAccount <Boolean>]
+ [-Password <SecureString>] [-ForceChangePasswordNextLogin] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UPNParameterSet
+```
+Update-AzureRmADUser -UserPrincipalName <String> [-DisplayName <String>] [-EnableAccount <Boolean>]
+ [-Password <SecureString>] [-ForceChangePasswordNextLogin] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ObjectIdParameterSet
+```
+Update-AzureRmADUser -ObjectId <Guid> [-DisplayName <String>] [-EnableAccount <Boolean>]
+ [-Password <SecureString>] [-ForceChangePasswordNextLogin] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### InputObjectParameterSet
+```
+Update-AzureRmADUser -InputObject <PSADUser> [-DisplayName <String>] [-EnableAccount <Boolean>]
+ [-Password <SecureString>] [-ForceChangePasswordNextLogin] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Memperbarui pengguna direktori aktif yang sudah ada (akun kantor/sekolah juga dikenal sebagai org-id).
+Untuk informasi selengkapnya: https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/users-operations#UpdateUser
+
+## EXAMPLES
+
+### Contoh 1 - Memperbarui nama tampilan pengguna menggunakan id objek
+
+```
+PS C:\> Update-AzureRmADUser -ObjectId 155a5c10-93a9-4941-a0df-96d83ab5ab24 -DisplayName MyNewDisplayName
+```
+
+Memperbarui nama tampilan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' menjadi 'MyNewDisplayName'.
+
+### Contoh 2 - Memperbarui nama tampilan pengguna menggunakan nama prinsipal pengguna
+
+```
+PS C:\> Update-AzureRmADUser -UserPrincipalName foo@domain.com -DisplayName MyNewDisplayName
+```
+
+Memperbarui nama tampilan pengguna dengan nama prinsipal pengguna 'foo@domain.com' menjadi 'MyNewDisplayName'.
+
+### Contoh 3 - Memperbarui nama tampilan pengguna menggunakan pemipaan
+
+```
+PS C:\> Get-AzureRmADUser -ObjectId 155a5c10-93a9-4941-a0df-96d83ab5ab24 | Update-AzureRmADUser -DisplayName MyNewDisplayName
+```
+
+Dapatkan pengguna dengan id objek '155a5c10-93a9-4941-a0df-96d83ab5ab24' dan pipa yang berada di cmdlet Update-AzureRmADUser untuk memperbarui nama tampilan pengguna tersebut ke 'MyNewDisplayName'.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Nama tampilan baru untuk pengguna.
+
+```yaml
+Type: System.String
+Parameter Sets: UPNOrObjectIdParameterSet, UPNParameterSet, ObjectIdParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.String
+Parameter Sets: InputObjectParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -EnableAccount
+true untuk mengaktifkan akun; jika tidak, false.
+
+```yaml
+Type: System.Nullable`1[System.Boolean]
+Parameter Sets: UPNOrObjectIdParameterSet, UPNParameterSet, ObjectIdParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.Nullable`1[System.Boolean]
+Parameter Sets: InputObjectParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ForceChangePasswordNextLogin
+Ini harus ditentukan jika pengguna harus mengubah kata sandi di saat berikutnya berhasil masuk.
+Hanya valid jika kata sandi diperbarui jika tidak, kata sandi akan diabaikan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Objek yang mewakili pengguna yang akan diperbarui.
+
+```yaml
+Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADUser
+Parameter Sets: InputObjectParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ObjectId
+Id objek pengguna yang akan diperbarui.
+
+```yaml
+Type: System.Guid
+Parameter Sets: ObjectIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Password
+Kata sandi baru untuk pengguna.
+
+```yaml
+Type: System.Security.SecureString
+Parameter Sets: UPNOrObjectIdParameterSet, UPNParameterSet, ObjectIdParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: System.Security.SecureString
+Parameter Sets: InputObjectParameterSet
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -UPNOrObjectId
+Nama prinsipal pengguna atau id objek pengguna yang akan diperbarui.
+
+```yaml
+Type: System.String
+Parameter Sets: UPNOrObjectIdParameterSet
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -UserPrincipalName
+Nama utama pengguna dari pengguna yang akan diperbarui.
+
+```yaml
+Type: System.String
+Parameter Sets: UPNParameterSet
+Aliases: UPN
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Konfirmasi
+Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak berjalan.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+### System.Guid
+
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.ACTIVEDUser
+Parameter: InputObject (ByValue)
+
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+
+### System.Security.SecureString
+
+## OUTPUTS
+
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.ACTIVEDUser
+
+## CATATAN
+
+## RELATED LINKS

@@ -1,0 +1,71 @@
+---
+external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
+Module Name: AzureRM.Network
+online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationgatewayavailablewafrulesets
+schema: 2.0.0
+ms.openlocfilehash: 83ee8e673271079690c24691f22badfe5193ba50
+ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "140858564"
+---
+# Get-AzureRmApplicationGatewayAvailableWafRuleSets
+
+## SYNOPSIS
+Mendapatkan semua kumpulan aturan firewall aplikasi web yang tersedia.
+
+[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
+
+## SYNTAX
+
+```
+Get-AzureRmApplicationGatewayAvailableWafRuleSets [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzureRmApplicationGatewayAvailableWafRuleSets** mendapatkan semua kumpulan aturan firewall aplikasi web yang tersedia.
+
+## EXAMPLES
+
+### Contoh 1
+```
+PS C:\>$availableRuleSets = Get-AzureRmApplicationGatewayAvailableWafRuleSets
+```
+
+Perintah ini mengembalikan semua kumpulan aturan firewall aplikasi web yang tersedia.
+
+## PARAMETERS
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Tidak ada
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableWafRuleSetsResult
+
+## CATATAN
+**List-AzureRmApplicationGatewayAvailableWafRuleSets** merupakan alias untuk cmdlet **Get-AzureRmApplicationGatewayAvailableWafRuleSets** .
+
+## RELATED LINKS
+
