@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Stop-AzureRMAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Stop-AzureRMAutomationJob.md
 ms.openlocfilehash: 67100c80a3a0ca822fc1f37f63968be282925b76
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424578"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142066006"
 ---
 # Stop-AzureRmAutomationJob
 
@@ -28,22 +28,22 @@ Stop-AzureRmAutomationJob [-Id] <Guid> [-ResourceGroupName] <String> [-Automatio
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmAutomationJob** menghentikan pekerjaan Otomatisasi Azure.
-Tentukan pekerjaan Otomatisasi yang sedang berjalan.
+Cmdlet **Stop-AzureRmAutomationJob** menghentikan pekerjaan Azure Automation.
+Tentukan tugas Otomatisasi yang berjalan.
 
 ## EXAMPLES
 
-### Contoh 1: Berhenti pekerjaan
+### Contoh 1: Menghentikan pekerjaan
 ```
 PS C:\>Stop-AzureRmAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menghentikan pekerjaan dengan ID yang ditentukan.
+Perintah ini menghentikan pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini menghentikan pekerjaan.
+Menentukan nama akun Otomatisasi di mana cmdlet ini menghentikan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan yang dihentikan cmdlet ini.
+Menentukan ID pekerjaan yang cmdlet ini berhenti.
 
 ```yaml
 Type: System.Guid
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

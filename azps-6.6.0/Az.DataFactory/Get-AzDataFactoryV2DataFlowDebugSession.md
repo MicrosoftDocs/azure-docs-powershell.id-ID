@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2DataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2DataFlowDebugSession.md
 ms.openlocfilehash: e5aca88988269a260b93a98d199ef1c554ae649c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140140299"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142086873"
 ---
 # Get-AzDataFactoryV2DataFlowDebugSession
 
 ## SYNOPSIS
-Mendapatkan semua sesi debug aliran data aktif oleh Azure Data Factory
+Dapatkan semua sesi debug aliran data aktif menurut Azure Data Factory
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2dataflowdebugsession) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2dataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzDataFactoryV2DataFlowDebugSession [-DataFactory] <PSDataFactory>
 ```
 
 ## DESCRIPTION
-Membuat daftar semua sesi debug aliran data aktif oleh Azure Data Factory dengan detailnya.
+Mencantumkan semua sesi debug aliran data aktif menurut Azure Data Factory dengan detail.
 
 ## EXAMPLES
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -144,17 +144,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDemicrosoftSessionInfo
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDebugSessionInfo
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
-[Start-AzDataFactoryV2DataFlowDeflowSession](./Start-AzDataFactoryV2DataFlowDebugSession.md)
+[Start-AzDataFactoryV2DataFlowDebugSession](./Start-AzDataFactoryV2DataFlowDebugSession.md)
 
-[Add-AzDataFactoryV2DataFlowDeflowSessionPackage](./Add-AzDataFactoryV2DataFlowDebugSessionPackage.md)
+[Add-AzDataFactoryV2DataFlowDebugSessionPackage](./Add-AzDataFactoryV2DataFlowDebugSessionPackage.md)
 
-[Invoke-AzDataFactoryV2DataFlowDeflowSessionCommand](./Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md)
+[Invoke-AzDataFactoryV2DataFlowDebugSessionCommand](./Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md)
 
-[Stop-AzDataFactoryV2DataFlowDeflowSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)
+[Stop-AzDataFactoryV2DataFlowDebugSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Remove-AzServiceBusTopic.md
-ms.openlocfilehash: 88cfe52ee55f16b62e316b6f82c43b84b69d92e8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f42bc031f60e79ee3f507d9c825e1840a771f110
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391114"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142027253"
 ---
 # Remove-AzServiceBusTopic
 
 ## SYNOPSIS
-Menghapus topik dari ruang nama Bus Layanan ditentukan.
+Menghapus topik dari ruang nama Bus Layanan yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/remove-azservicebustopic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzServiceBusTopic [-ResourceGroupName] <String> [-Namespace] <String> [-N
  [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TopicInputObjectSet
+### TopikInputObjectSet
 ```
 Remove-AzServiceBusTopic [-InputObject] <PSTopicAttributes> [-PassThru] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +41,7 @@ Remove-AzServiceBusTopic [-ResourceId] <String> [-PassThru] [-AsJob] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzServiceBusTopic** menghapus topik dari kumpulan nama Bus Layanan tertentu.
+Cmdlet **Remove-AzServiceBusTopic** menghapus topik dari ruang nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -47,9 +50,9 @@ Cmdlet **Remove-AzServiceBusTopic** menghapus topik dari kumpulan nama Bus Layan
 PS C:\> Remove-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1
 ```
 
-Menghapus topik dari ruang `SB-Topic_exampl1` nama `SB-Example1`.
+Menghapus topik `SB-Topic_exampl1` dari ruang `SB-Example1`nama .
 
-### Contoh 2: InputObject - Menggunakan Variabel:
+### Contoh 2: InputObject - Using Variable:
 ```powershell
 PS C:\> $inputobject = Get-AzServiceBusTopic <parmas>
 PS C:\> Remove-AzServiceBusTopic -InputObject $inputobject
@@ -66,7 +69,7 @@ PS C:\> $resourceid = Get-AzServiceBusTopic <params>
 PS C:\> Remove-AzServiceBusTopic -ResourceId $resourceid.Id
 ```
 
-### Contoh 5: ResourceId Menggunakan nilai String
+### Contoh 5: Nilai ResourceId Using String
 ```powershell
 PS C:\> Remove-AzServiceBusTopic -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-xxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.ServiceBus/namespaces/NamespaceName/topics/TopicName"
 ```
@@ -74,7 +77,7 @@ PS C:\> Remove-AzServiceBusTopic -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-x
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Topik Pencarian
+Objek Topik Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSTopicAttributes
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-id Sumber Daya Bus Layanan Topik Baru
+Id Sumber Daya Topik Bus Layanan
 
 ```yaml
 Type: System.String
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

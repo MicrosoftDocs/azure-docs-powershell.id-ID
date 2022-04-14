@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSynchronizationDetail.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareSynchronizationDetail.md
-ms.openlocfilehash: 1bb9365f887f5e8ea2c047dcefa47e0d15076644
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b5da122a044539c6370813d07f2fd59bdb8b648d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001133"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142112237"
 ---
 # Get-AzDataShareSynchronizationDetail
 
 ## SYNOPSIS
-Mendapatkan informasi tentang detail sinkronisasi untuk dibagikan.
+Mendapatkan informasi tentang detail sinkronisasi untuk berbagi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharesynchronizationdetail) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzDataShareSynchronizationDetail -SynchronizationId <String> -ResourceId <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareSynchronizationDetail** menyediakan detail tentang sinkronisasi yang dimulai untuk berbagi.
+Cmdlet **Get-AzDataShareSynchronizationDetail** menyediakan detail sinkronisasi yang dimulai untuk berbagi.
 
 ## EXAMPLES
 
@@ -54,11 +57,11 @@ Name         : 16d5161b-2b3f-4d90-b074-13ad7121bcc7
 Message      :
 ```
 
-Perintah ini menyediakan informasi tentang detail sinkronisasi dari semua set data yang terkait dengan id sinkronisasi yang disediakan.
+Perintah ini menyediakan informasi tentang detail sinkronisasi semua kumpulan data yang terkait dengan id sinkronisasi yang disediakan.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -SynchronizationId
-Id sinkronisasi sinkronisasi berbagi
+Id sinkronisasi berbagi
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

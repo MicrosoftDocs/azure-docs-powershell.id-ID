@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrRecoveryPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrRecoveryPlan.md
 ms.openlocfilehash: ceedd758a660828ed3ee93390384c1e212c55097
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424176"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061410"
 ---
 # New-AzureRmRecoveryServicesAsrRecoveryPlan
 
 ## SYNOPSIS
-Membuat paket pemulihan ASR.
+Membuat rencana pemulihan ASR.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,9 +42,9 @@ New-AzureRmRecoveryServicesAsrRecoveryPlan -Path <String> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmRecoveryServicesAsrRecoveryPlan** membuat rencana pemulihan Situs Azure di vault Layanan Pemulihan.
+Cmdlet **New-AzureRmRecoveryServicesAsrRecoveryPlan** membuat rencana pemulihan Azure Site Recovery dalam kubah Layanan Pemulihan.
 
-Rencana pemulihan mengumpulkan mesin virtual milik aplikasi ke dalam sebuah unit untuk memungkinkannya dipulihkan bersama-sama.
+Rencana pemulihan mengumpulkan mesin virtual milik aplikasi ke dalam satu unit untuk memungkinkan mereka dipulihkan bersama-sama.
 
 ## EXAMPLES
 
@@ -53,7 +53,7 @@ Rencana pemulihan mengumpulkan mesin virtual milik aplikasi ke dalam sebuah unit
 PS C:\> $currentJob = New-AzureRmRecoveryServicesAsrRecoveryPlan -Name $RPName -PrimaryFabric $PrimaryFabric -RecoveryFabric $RecoveryFabric -ReplicationProtectedItem $RPI
 ```
 
-Memulai operasi pembuatan rencana pemulihan dengan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi pembuatan rencana pemulihan dengan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverDeploymentModel
-Menentukan model penyebaran failover (Manajer Sumber Daya atau Klasik) dari replikasi item yang diproteksi yang akan menjadi bagian dari rencana pemulihan ini.
+Menentukan model penyebaran failover (Klasik atau Resource Manager) item yang dilindungi replikasi yang akan menjadi bagian dari rencana pemulihan ini.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama paket pemulihan.
+Nama rencana pemulihan.
 
 ```yaml
 Type: System.String
@@ -119,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur untuk file json definisi rencana pemulihan. Json definisi rencana pemulihan dapat digunakan untuk membuat rencana pemulihan.
+### -Jalur
+Menentukan jalur ke file json definisi rencana pemulihan. Json definisi rencana pemulihan dapat digunakan untuk membuat rencana pemulihan.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryFabric
-Specifies the ASR fabric object for the primary ASR fabric of the replication protected items that will be part of this recovery plan.
+Menentukan objek kain ASR untuk kain ASR utama dari item yang dilindungi replikasi yang akan menjadi bagian dari rencana pemulihan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -149,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecoveryFabric
-Specifies the ASR fabric object for the recovery ASR fabric of the replication protected items that will be part of this recovery plan.
+### -PemulihanFabric
+Menentukan objek kain ASR untuk kain ASR pemulihan item yang dilindungi replikasi yang akan menjadi bagian dari rencana pemulihan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Daftar replikasi item yang diproteksi untuk ditambahkan ke grup pertama rencana pemulihan.
+Daftar item yang diproteksi replikasi untuk ditambahkan ke grup pertama paket pemulihan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

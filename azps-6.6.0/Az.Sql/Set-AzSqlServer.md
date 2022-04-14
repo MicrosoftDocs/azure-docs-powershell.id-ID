@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlServer.md
 ms.openlocfilehash: e0ec267842eaf00524681a74c4da3a1505743984
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140326517"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142222327"
 ---
 # Set-AzSqlServer
 
@@ -19,7 +19,7 @@ ms.locfileid: "140326517"
 Mengubah properti server SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/set-azsqlserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ Set-AzSqlServer [-ServerName] <String> [-SqlAdministratorPassword <SecureString>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlServer** memodifikasi properti server Azure SQL Database.
+Cmdlet **Set-AzSqlServer** mengubah properti server Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Reset kata sandi administrator
+### Contoh 1: Mereset kata sandi administrator
 ```powershell
 PS C:\>$ServerPassword = "newpassword"
 PS C:\> $SecureString = ConvertTo-SecureString $ServerPassword -AsPlainText -Force
@@ -52,11 +52,11 @@ Identity                 :
 FullyQualifiedDomainName : server01.database.windows.net
 ```
 
-Perintah ini mengatur ulang kata sandi administrator di Server AzureSQL bernama server01.
+Perintah ini mengatur ulang kata sandi administrator di AzureSQL Server bernama server01.
 
 ### Contoh 2
 
-Mengubah properti server SQL Database. (otomatisgenerated)
+Mengubah properti server SQL Database. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -95,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimalTlsVersion
-Versi TLS minimal untuk diterapkan untuk Sql Server
+Versi TLS minimal yang diterapkan untuk Sql Server
 
 ```yaml
 Type: System.String
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Benderai, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diperbolehkan atau tidak.
-Saat dinonaktifkan, hanya koneksi yang dibuat melalui Link Privat yang bisa menjangkau server ini.
+Mengambil bendera, diaktifkan/dinonaktifkan, untuk menentukan apakah akses jaringan publik ke server diperbolehkan atau tidak.
+Ketika dinonaktifkan, hanya koneksi yang dibuat melalui Tautan Privat yang dapat menjangkau server ini.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestrictOutboundNetworkAccess
-Ketika diaktifkan, hanya koneksi keluar yang diizinkan oleh aturan firewall keluar yang akan berhasil.
+Saat diaktifkan, hanya koneksi keluar yang diperbolehkan oleh aturan firewall keluar yang akan berhasil.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang akan dimodifikasi cmdlet ini.
+Menentukan nama server yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerVersion
-Menentukan versi cmdlet ini mengubah server. Nilai yang dapat diterima untuk parameter ini adalah: 2.0 dan 12.0.
+Menentukan versi di mana cmdlet ini mengubah server. Nilai yang dapat diterima untuk parameter ini adalah: 2,0 dan 12,0.
 
 ```yaml
 Type: System.String
@@ -203,8 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAdministratorPassword
-Menentukan kata sandi baru, sebagai **SecureString**, untuk administrator server database. Untuk mendapatkan **SecureString**, gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik `Get-Help
-ConvertTo-SecureString`.
+Menentukan kata sandi baru, sebagai **SecureString**, untuk administrator server database. Untuk mendapatkan **SecureString**, gunakan cmdlet Get-Credential. Untuk informasi selengkapnya, ketik .`Get-Help
+ConvertTo-SecureString`
 
 ```yaml
 Type: System.Security.SecureString
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryUserAssignedIdentityId
-Id utama User Managed Identity(UMI).
+Id Identitas Terkelola Pengguna (UMI) utama.
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyId
-URI Azure Key Vault yang digunakan untuk enkripsi.
+Azure Key Vault URI yang digunakan untuk enkripsi.
 
 ```yaml
 Type: System.String
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang akan ditetapkan ke server. Nilai yang mungkin adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
+Tipe identitas yang akan ditetapkan ke server. Nilai yang memungkinkan adalah SystemAsssigned, UserAssigned, 'SystemAssigned,UserAssigned' dan None.
 
 ```yaml
 Type: System.String
@@ -278,8 +278,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan kamus tag yang terkait dengan server cmdlet ini. Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag di server. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan kamus tag yang dikaitkan cmdlet ini dengan server. Pasangan nilai kunci dalam bentuk tabel hash yang diatur sebagai tag di server. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -339,4 +339,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

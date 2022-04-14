@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolverInboundEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsResolverInboundEndpoint.md
-ms.openlocfilehash: 6a79e15ddb9cf0f9e95362f0f102941b25356515
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2baecc73cfb7dacdfa58070b3061e25ebfed1abb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179614"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142110725"
 ---
 # New-AzDnsResolverInboundEndpoint
 
 ## SYNOPSIS
-Membuat atau memperbarui titik akhir masuk untuk resolver DNS.
+Membuat atau memperbarui titik akhir masuk untuk penyelesaian DNS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsresolverinboundendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +30,11 @@ New-AzDnsResolverInboundEndpoint -DnsResolverName <String> -Name <String> -Resou
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui titik akhir masuk untuk resolver DNS.
+Membuat atau memperbarui titik akhir masuk untuk penyelesaian DNS.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Titik Akhir Masuk untuk Resolver DNS
+### Contoh 1: Membuat Titik Akhir Masuk untuk Pemecah DNS
 ```powershell
 $ipConfiguration = New-AzDnsResolverIPConfigurationObject -PrivateIPAllocationMethod Dynamic -SubnetId /subscriptions/0e5a46b1-de0b-4ec3-a5d7-dda908b4e076/resourceGroups/powershell-test-rg/providers/Microsoft.Network/virtualNetworks/psvirtualnetworkname31ur3isx/subnets/pssubnetname311tqweg
 
@@ -44,7 +47,7 @@ Name                  Type                                            Etag
 sampleInboundEndpoint Microsoft.Network/dnsResolvers/inboundEndpoints "0b008451-0000-0800-0000-60402b960000"
 ```
 
-Perintah ini membuat Titik Akhir Masuk untuk Resolver DNS.
+Perintah ini membuat Titik Akhir Masuk untuk Pemecah DNS.
 
 ### Contoh 2: Membuat Titik Akhir Masuk untuk Resolver DNS dengan Metadata
 ```powershell
@@ -57,7 +60,7 @@ Name                   Type                                            Etag
 sampleInboundEndpoint1 Microsoft.Network/dnsResolvers/inboundEndpoints "0b0071aa-0000-0800-0000-60406a2d0000"
 ```
 
-Perintah ini membuat Titik Akhir masuk untuk Dns Resolver dengan Metadata.
+Perintah ini membuat Titik Akhir Masuk untuk Resolver DNS dengan Metadata.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsResolverName
-Nama resolver DNS.
+Nama penuntas DNS.
 
 ```yaml
 Type: System.String
@@ -108,8 +111,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag sumber daya.
-Menghilangkan nilai ini agar selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan konklar apa pun.
+Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memungkinkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
+Atur ke '*' untuk memperbolehkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
 Nilai lain akan diabaikan.
 
 ```yaml
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 
 ### -IPConfiguration
 Konfigurasi IP untuk titik akhir masuk.
-Untuk membuat, lihat bagian CATATAN untuk properti IPCONFIGURATION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti IPCONFIGURATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DnsResolver.Models.Api20200401Preview.IIPConfiguration[]
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi geo-location di mana sumber daya berada
+Lokasi geografis tempat sumber daya berada
 
 ```yaml
 Type: System.String
@@ -171,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama titik akhir masuk untuk resolver DNS.
+Nama titik akhir masuk untuk penyelesaian DNS.
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -296,7 +299,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 IPCONFIGURATION <IIPConfiguration[]>: Konfigurasi IP untuk titik akhir masuk.
-  - `[PrivateIPAddress <String>]`: Alamat IP privat dari konfigurasi IP.
+  - `[PrivateIPAddress <String>]`: Alamat IP pribadi konfigurasi IP.
   - `[PrivateIPAllocationMethod <IPAllocationMethod?>]`: Metode alokasi alamat IP privat.
   - `[SubnetId <String>]`: ID Sumber Daya.
 

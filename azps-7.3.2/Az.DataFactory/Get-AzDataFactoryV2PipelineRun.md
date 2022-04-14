@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2PipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2PipelineRun.md
-ms.openlocfilehash: 5a76a3d5b29abee1bdfb1c0a76d76010f1450f0e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 896a930bf91474b59f58b61ef6a6b5783ba766a5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113281"
 ---
 # Get-AzDataFactoryV2PipelineRun
 
 ## SYNOPSIS
-Mendapatkan informasi tentang pipeline yang berjalan.
+Mendapatkan informasi tentang jalur pipa yang berjalan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2pipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Get-AzDataFactoryV2PipelineRun [-ResourceGroupName] <String> [-DataFactoryName] 
 ```
 
 ## DESCRIPTION
-Perintah **Get-AzDataFactoryV2PipelineRun** mengembalikan informasi tentang berjalan untuk saluran yang ditentukan. Jika PipelineRunId ditentukan, id akan memperlihatkan detail untuk proses dengan ID tersebut. Jika PipelineRunId tidak ditentukan, itu memperlihatkan informasi tentang semua berjalan untuk saluran yang terjadi antara nilai LastUpdatedAfter dan LastUpdatedBefore.
+Perintah **Get-AzDataFactoryV2PipelineRun** mengembalikan informasi tentang jalankan untuk pipeline yang ditentukan. Jika PipelineRunId ditentukan, pipelineRunId memperlihatkan detail untuk dijalankan dengan ID tersebut. Jika PipelineRunId tidak ditentukan, pipelineRunId memperlihatkan informasi tentang semua alur yang terjadi antara nilai LastUpdatedAfter dan LastUpdatedBefore.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi untuk menjalankan pipeline
+### Contoh 1: Dapatkan informasi untuk proses pipeline
 ```
 PS C:\> Get-AzDataFactoryV2PipelineRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineRunId "61eb095a-fe23-4591-8a97-fade6c65ca72"
 
@@ -67,7 +70,7 @@ PS C:\> Get-AzDataFactoryV2PipelineRun -ResourceGroupName "ADF" -DataFactoryName
     Message           :
 ```
 
-Perintah ini mendapatkan detail tentang pipeline yang dijalankan dengan ID "61eb095a-fe23-4591-8a97-fade6c65ca72".
+Perintah ini mendapatkan detail tentang pipeline run dengan ID "61eb095a-fe23-4591-8a97-fade6c65ca72".
 
 ## PARAMETERS
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedAfter
-Waktu yang digunakan untuk menjalankan pipeline diperbarui dalam format ISO8601.
+Waktu pada atau setelah proses saluran diperbarui dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedBefore
-Waktu yang digunakan untuk menjalankan pipeline diperbarui dalam format ISO8601.
+Waktu di atau sebelum alur dijalankan diperbarui dalam format ISO8601.
 
 ```yaml
 Type: System.DateTime
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-Run ID dari pipeline.
+ID Jalankan dari pipeline.
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

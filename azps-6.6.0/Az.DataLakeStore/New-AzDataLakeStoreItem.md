@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/New-AzDataLakeStoreItem.md
 ms.openlocfilehash: 1d31b81705a6cb401c4a0f968549abe52b0d8c8d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139941218"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142086171"
 ---
 # New-AzDataLakeStoreItem
 
 ## SYNOPSIS
-Membuat file atau folder baru di Data Lake Store.
+Membuat file atau folder baru di Penyimpanan Data Lake.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/new-azdatalakestoreitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/new-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,13 +40,13 @@ PS C:\>New-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "/NewFile.txt"
 PS C:\> New-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "/NewFolder" -Folder
 ```
 
-Perintah pertama akan membuat file NewFile.txt akun yang ditentukan.
-Perintah kedua akan membuat folder NewFolder di folder akar.
+Perintah pertama membuat NewFile.txt file untuk akun tertentu.
+Perintah kedua membuat folder NewFolder di folder akar.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,20 +75,20 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Encoding
+### -Pengodean
 Menentukan pengodean untuk item yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak Diketahui
+- Diketahui
 - String
 - Unicode
 - Byte
-- BigEnndiUnicode
+- BigEndianUnicode
 - UTF8
 - UTF7
 - Ascii
 - Default
 - Oem
-- BigEnlupaUTF32
+- BigEndianUTF32
 
 ```yaml
 Type: System.Text.Encoding
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Folder
-Menunjukkan bahwa operasi ini akan membuat folder.
+Menunjukkan bahwa operasi ini membuat folder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menunjukkan bahwa operasi ini dapat menimpa item tujuan jika sudah ada.
 
 ```yaml
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store item untuk dibuat, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake dari item yang akan dibuat, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan konten yang akan ditambahkan ke item yang Anda buat.
+Menentukan konten untuk ditambahkan ke item yang Anda buat.
 
 ```yaml
 Type: System.Object
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

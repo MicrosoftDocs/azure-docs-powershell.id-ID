@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Remove-AzRecoveryServicesAsrServicesProvider.md
 ms.openlocfilehash: fc1529ab5b73f23cd37686581fc68d4acd3ab0b0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140067996"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142043795"
 ---
 # Remove-AzRecoveryServicesAsrServicesProvider
 
 ## SYNOPSIS
-Menghapus/membatalkan pendaftaran penyedia layanan Pemulihan Situs Azure tertentu dari vault layanan pemulihan.
+Menghapus/membatalkan pendaftaran penyedia layanan pemulihan Azure Site Recovery yang ditentukan dari kubah layanan pemulihan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrservicesprovider) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/remove-azrecoveryservicesasrservicesprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-AzRecoveryServicesAsrServicesProvider -InputObject <ASRRecoveryServicesPr
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzRecoveryServicesAsrServicesProvider** menghapus penyedia layanan pemulihan Situs Azure tertentu dari vault.
+Cmdlet **Remove-AzRecoveryServicesAsrServicesProvider** menghapus penyedia layanan pemulihan Azure Site Recovery yang ditentukan dari kubah.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Cmdlet **Remove-AzRecoveryServicesAsrServicesProvider** menghapus penyedia layan
 PS C:\> $currentJob = Remove-AzRecoveryServicesAsrServicesProvider -ServicesProvider $ServicesProvider
 ```
 
-Memulai penghapusan/pembatalan pendaftaran penyedia layanan Pemulihan Situs Azure tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai penghapusan/pembatasan registrasi penyedia layanan Azure Site Recovery yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -57,8 +57,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk berjalan tanpa menyediakan peringatan tambahan.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa memberikan peringatan tambahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek penyedia layanan pemulihan ASR yang terkait dengan penyedia layanan pemulihan ASR akan dihapus.
+Objek input ke cmdlet: Objek penyedia layanan pemulihan ASR yang terkait dengan penyedia layanan pemulihan ASR yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet dijalankan tanpa menjalankan cmdlet tersebut.
+Menunjukkan apa yang akan terjadi jika cmdlet dijalankan tanpa benar-benar menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

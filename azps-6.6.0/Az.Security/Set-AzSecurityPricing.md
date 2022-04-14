@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityPricing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Set-AzSecurityPricing.md
 ms.openlocfilehash: a0af8913441a5660f0496d96172f61053ed0a8d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246725"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141906015"
 ---
 # Set-AzSecurityPricing
 
 ## SYNOPSIS
 
-Mengaktifkan atau menonaktifkan paket Pertahanan Azure untuk langganan di Pusat Keamanan Azure.
+Mengaktifkan atau menonaktifkan paket Pertahanan Azure untuk langganan di Azure Security Center.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/set-azsecuritypricing) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/set-azsecuritypricing) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,9 +39,9 @@ Set-AzSecurityPricing -InputObject <PSSecurityPricing> [-DefaultProfile <IAzureC
 
 ## DESCRIPTION
 
-Mengaktifkan atau menonaktifkan paket Pertahanan Azure untuk langganan.
+Mengaktifkan atau menonaktifkan salah satu paket Pertahanan Azure untuk langganan.
 
-Untuk detail tentang Pertahanan Azure dan paket yang tersedia, [lihat Pengenalan Pertahanan Azure](https://docs.microsoft.com/azure/security-center/azure-defender).
+Untuk detail tentang Pertahanan Azure dan paket yang tersedia, lihat [Pengenalan Pertahanan Azure](https://docs.microsoft.com/azure/security-center/azure-defender).
 
 ## EXAMPLES
 
@@ -51,9 +51,9 @@ Untuk detail tentang Pertahanan Azure dan paket yang tersedia, [lihat Pengenalan
 PS C:\> Set-AzSecurityPricing -Name "virtualmachines" -PricingTier "Standard"
 ```
 
-Mengaktifkan **Pertahanan Azure untuk server** untuk langganan.
+Mengaktifkan **Azure Defender untuk server** untuk langganan.
 
-"Standar" merujuk ke negara bagian "Aktif" untuk paket Pertahanan Azure seperti yang diperlihatkan dalam area pengaturan dan harga Pusat Keamanan Azure di portal Azure.
+"Standar" merujuk pada status "Aktif" untuk paket Pertahanan Azure seperti yang diperlihatkan dalam area harga dan pengaturan Azure Security Center portal Azure.
 
 
 ## PARAMETERS
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -PricingTier
 
-Tingkatan Harga.
+Tingkat Harga.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -Konfirmasi
 
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### CommonParameters
 
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

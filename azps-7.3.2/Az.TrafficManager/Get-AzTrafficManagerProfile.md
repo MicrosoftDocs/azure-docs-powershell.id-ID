@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.trafficmanager/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Get-AzTrafficManagerProfile.md
-ms.openlocfilehash: 189bee4ef4b55162c6a9bb066155bb0da744d508
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 358723ae238de801f63f6f7aa3901994d0f98af3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142204903"
 ---
 # Get-AzTrafficManagerProfile
 
 ## SYNOPSIS
-Mendapatkan profil Traffic Manager Anda.
+Mendapatkan profil Traffic Manager.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/get-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,9 +37,9 @@ Get-AzTrafficManagerProfile [-ResourceGroupName] <String> [-Name] <String>
 
 ## DESCRIPTION
 Cmdlet **Get-AzTrafficManagerProfile** mendapatkan profil Azure Traffic Manager, dan mengembalikan objek yang mewakili profil tersebut.
-Tentukan profil berdasarkan namanya dan nama grup sumber daya.
+Tentukan profil menurut nama dan nama grup sumber dayanya.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke profil menggunakan cmdlet Set-AzTrafficManagerProfile cmdlet.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada profil menggunakan cmdlet Set-AzTrafficManagerProfile.
 
 ## EXAMPLES
 
@@ -45,12 +48,12 @@ Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke profil 
 PS C:\>Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 ```
 
-Perintah ini mendapatkan profil bernama ContosoProfile dalam ResourceGroup11.
+Perintah ini mendapatkan profil bernama ContosoProfile di ResourceGroup11.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama profil Traffic Manager yang akan dapatkan cmdlet ini.
+Menentukan nama profil Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi profil Traffic Manager yang akan dapatkan cmdlet ini.
+Menentukan nama grup sumber daya yang berisi profil Traffic Manager yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

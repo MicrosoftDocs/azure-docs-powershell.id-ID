@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.eventhub/set-aze
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EventHub/EventHub/help/Set-AzEventHubCluster.md
-ms.openlocfilehash: 4de12237736bc6881050033a01d7db5f01f9868a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e4c32b23f4aa71b3c54da8ab43e7d9b97e1d782f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009044"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142070149"
 ---
 # Set-AzEventHubCluster
 
 ## SYNOPSIS
-Memperbarui Tag untuk Kluster tertentu
+Memperbarui Tag untuk Kluster yang diberikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.eventhub/set-azeventhubcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzEventHubCluster [-InputObject] <PSEventHubClusterAttributes> [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzEventHubCluster cmdlet memperbarui tag kluster tertentu
+Cmdlet Set-AzEventHubCluster memperbarui tag dari kluster tertentu
 
 ## EXAMPLES
 
@@ -57,12 +60,12 @@ Sku       : Microsoft.Azure.Commands.EventHub.Models.PSEventHubsClusterSkuAttrib
 Tags      : {[ClusterTag3, Tag3], [ClusterTag4, Tag4]}
 ```
 
-Memperbarui tag kluster tertentu. 
+Memperbarui tag dari kluster tertentu. 
 
 ## PARAMETERS
 
 ### -Kapasitas
-Kapasitas Kluster (CU), secara melengkung, nilai yang diperbolehkan = 1
+Cluster Capacity (CU), curerntrly, allowed value = 1
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,13 +216,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSEventHubClusterAttributes
 

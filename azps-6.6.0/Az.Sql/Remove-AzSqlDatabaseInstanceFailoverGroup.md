@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Remove-AzSqlDatabaseInstanceFailoverGroup.md
 ms.openlocfilehash: bbc9376976d42cc879e912ba2789f78850256390
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097209"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076125"
 ---
 # Remove-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
-Menghapus Grup Failover Instance.
+Menghapus Grup Failover Instans.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/remove-azsqldatabaseinstancefailovergroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/remove-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,9 +41,9 @@ Remove-AzSqlDatabaseInstanceFailoverGroup [-InputObject] <AzureSqlInstanceFailov
 ```
 
 ## DESCRIPTION
-Perintah ini akan menghapus Grup Failover Instance dengan nama yang ditentukan, dan membiarkan semua database tetap utuh. Titik akhir pendengar akan tidak terdaftar dari DNS.
+Perintah ini menghapus Grup Failover Instans dengan nama yang ditentukan, membiarkan semua database tetap utuh. Titik akhir pendengar akan tidak terdaftar dari DNS.
 
-Kawasan utama Grup Failover Instance harus digunakan untuk menjalankan perintah.
+Kawasan utama Grup Failover Instans harus digunakan untuk menjalankan perintah.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Kawasan utama Grup Failover Instance harus digunakan untuk menjalankan perintah.
 PS C:\> Get-AzSqlDatabaseInstanceFailoverGroup -ResourceGroupName rg -Location location -Name fg | Remove-AzSqlDatabaseInstanceFailoverGroup
 ```
 
-Hapus Grup Failover Instance.
+Menghapus Grup Failover Instans.
 
 ## PARAMETERS
 
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Lewati pesan konfirmasi untuk menjalankan tindakan.
+### -Paksa
+Lewati pesan konfirmasi untuk melakukan tindakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Grup Failover Instance yang akan dihapus
+Objek Grup Failover Instans untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal untuk mengambil Contoh Grup Failover.
+Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Grup Failover Contoh yang akan dihapus.
+Nama Grup Failover Instans untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Grup Failover Contoh yang akan dihapus.
+ID Sumber Daya dari Grup Failover Instans untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,16 +208,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
+### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
+### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 
 ## CATATAN
 

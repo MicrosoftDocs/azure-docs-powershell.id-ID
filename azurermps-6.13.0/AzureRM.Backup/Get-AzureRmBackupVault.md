@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupVault.md
 ms.openlocfilehash: c11170e6bee80b9eaa19135ad604d8bf70e1baab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425159"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065966"
 ---
 # Get-AzureRmBackupVault
 
 ## SYNOPSIS
-Mendapatkan vault Cadangan.
+Mendapatkan kubah Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,29 +28,29 @@ Get-AzureRmBackupVault [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBackupVault** mendapatkan vault Azure Backup.
-Cmdlet ini mengembalikan **objek AzureRmBackupVault** untuk digunakan dengan cmdlet lainnya.
+Cmdlet **Get-AzureRmBackupVault** mendapatkan Azure Backup kubah.
+Cmdlet ini mengembalikan objek **AzureRmBackupVault** untuk digunakan dengan cmdlet lainnya.
 
 ## EXAMPLES
 
-### Contoh 1: Menampilkan semua vault Cadangan
+### Contoh 1: Menampilkan semua kubah Cadangan
 ```
 PS C:\>Get-AzureRmBackupVault
 ```
 
-Perintah ini akan mendapatkan semua vault Azure Backup.
+Perintah ini mendapatkan semua Azure Backup kubah.
 
-### Contoh 2: Menampilkan semua vault yang dibuat di West US
+### Contoh 2: Menampilkan semua kubah yang dibuat di AS Barat
 ```
 PS C:\>Get-AzureRmBackupVault | Where-Object { $_.Region -eq "westus" }
 ```
 
-Perintah ini akan mendapatkan semua vault Cadangan.
-Perintah itu meneruskannya ke Where-Object cmdlet dengan menggunakan operator pipeline.
-Cmdlet tersebut memfilter hasil berdasarkan **properti** Kawasan.
-Untuk informasi selengkapnya, ketik `Get-Help Where-Object` .
+Perintah ini mendapatkan semua kubah Cadangan.
+Perintah mengarahkan mereka ke cmdlet Where-Object menggunakan operator pipeline.
+Cmdlet tersebut memfilter hasil berdasarkan properti **Kawasan** .
+Untuk informasi selengkapnya, ketik .`Get-Help Where-Object`
 
-### Contoh 3: Dapatkan vault tertentu
+### Contoh 3: Dapatkan kubah tertentu
 ```
 PS C:\>Get-AzureRmBackupVault -Name "Vault03"
 ResourceId        : /subscriptions/4bfbe168-f42a-4a06-8f5a-331cad1f497e/resourceGroups/ResourceGroup011/providers/Microsoft.Backup
@@ -61,9 +61,9 @@ Region            : westus
 Storage           : GeoRedundant
 ```
 
-Perintah ini mendapatkan vault bernama Vault03.
+Perintah ini mendapatkan kubah bernama Vault03.
 
-### Contoh 4: Hitung jumlah vault yang memiliki penyimpanan lokal yang berlebihan
+### Contoh 4: Menghitung jumlah kubah yang memiliki penyimpanan lokal yang berlebihan
 ```
 PS C:\>Get-AzureRmBackupVault | Where-Object { $_.Storage -match "LocallyRedundant" } | Measure-Object
 Count    : 4
@@ -74,15 +74,15 @@ Minimum  :
 Property :
 ```
 
-Perintah ini akan mendapatkan semua vault Azure Backup.
-Perintah melewatinya ke **Where-Object**, yang memfilter hasil berdasarkan **Storage** mereka.
-Perintah melewati orang-orang yang memiliki nilai LocallyRedundant ke cmdlet Measure-Object, yang menghitung hasilnya.
-Untuk informasi selengkapnya, ketik `Get-Help Measure-Object` .
+Perintah ini mendapatkan semua Azure Backup kubah.
+Perintah mengarahkan mereka ke **Where-Object**, yang memfilter hasil berdasarkan properti **Storage**.
+Perintah melewati yang memiliki nilai LocallyRedundant ke cmdlet Measure-Object, yang menghitung hasil.
+Untuk informasi selengkapnya, ketik .`Get-Help Measure-Object`
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,9 +97,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama vault Cadangan yang akan dapatkan cmdlet ini.
-Jika ada lebih dari satu vault Cadangan yang memiliki nama yang sama, cmdlet ini akan mengembalikan semuanya.
-Tentukan parameter *ResourceGroupName* untuk mendapatkan vault yang unik.
+Menentukan nama kubah Cadangan yang didapatkan cmdlet ini.
+Jika lebih dari satu kubah Cadangan memiliki nama yang sama, cmdlet ini mengembalikan semuanya.
+Tentukan parameter *ResourceGroupName* untuk mendapatkan kubah unik.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya Azure yang mendapatkan vault Cadangan.
+Menentukan nama grup sumber daya Azure tempat cmdlet ini mendapatkan kubah Cadangan.
 
 ```yaml
 Type: System.String
@@ -129,11 +129,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -145,9 +145,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmBackupContainer](./Get-AzureRmBackupContainer.md)
 
-[New-AzureRmBackupVault](./New-AzureRmBackupVault.md)
+[AzureRmBackupVault Baru](./New-AzureRmBackupVault.md)
 
-[Remove-AzureRmBackupVault](./Remove-AzureRmBackupVault.md)
+[Hapus-AzureRmBackupVault](./Remove-AzureRmBackupVault.md)
 
 [Set-AzureRmBackupVault](./Set-AzureRmBackupVault.md)
 

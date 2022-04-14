@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Add-AzServiceFabricNode.md
 ms.openlocfilehash: 8bb0bb544744875ad6b23161bd947b10b2dfd6af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140328857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142223605"
 ---
 # Add-AzServiceFabricNode
 
 ## SYNOPSIS
-Tambahkan node ke tipe node tertentu dalam kluster.
+Tambahkan node ke tipe simpul tertentu dalam kluster.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricnode) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/add-azservicefabricnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Add-AzServiceFabricNode -NumberOfNodesToAdd <Int32> [-ResourceGroupName] <String
 ```
 
 ## DESCRIPTION
-Gunakan **Add-AzServiceFabricNode** untuk menambahkan node ke tipe node tertentu. Anda hanya perlu menentukan jumlah node yang ingin ditambahkan ke tipe node.
+Gunakan **Add-AzServiceFabricNode** untuk menambahkan node ke tipe simpul tertentu. Anda hanya perlu menentukan jumlah node yang ingin ditambahkan ke tipe simpul.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Gunakan **Add-AzServiceFabricNode** untuk menambahkan node ke tipe node tertentu
 PS c:> Add-AzServiceFabricNode -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -NumberOfNodesToAdd 2 -NodeTypeName 'nt1'
 ```
 
-Perintah ini akan menambahkan 2 node ke tipe node 'n1'.
+Perintah ini akan menambahkan 2 node ke tipe simpul 'n1'.
 
 ## PARAMETERS
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kluster
+Tentukan nama kluster
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeType
-Nama tipe node
+Nama tipe simpul
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,4 +164,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzServiceFabricNode](./Remove-AzServiceFabricNode.md)
+[Hapus-AzServiceFabricNode](./Remove-AzServiceFabricNode.md)

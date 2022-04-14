@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices/help/Get-AzureRmRecoveryServicesVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices/help/Get-AzureRmRecoveryServicesVault.md
 ms.openlocfilehash: 0812fc8aa5673f6475fb822137cffff025003d32
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428182"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097194"
 ---
 # Get-AzureRmRecoveryServicesVault
 
 ## SYNOPSIS
-Mendapatkan daftar vault Layanan Pemulihan.
+Mendapatkan daftar kubah Layanan Pemulihan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmRecoveryServicesVault [-ResourceGroupName <String>] [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesVault** mendapatkan daftar vault Layanan Pemulihan dalam langganan saat ini.
+Cmdlet **Get-AzureRmRecoveryServicesVault** mendapatkan daftar kubah Layanan Pemulihan dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -37,26 +37,26 @@ Cmdlet **Get-AzureRmRecoveryServicesVault** mendapatkan daftar vault Layanan Pem
 PS C:\> Get-AzureRmRecoveryServicesVault
 ```
 
-Dapatkan daftar vault dalam langganan yang dipilih.
+Dapatkan daftar kubah dalam langganan yang dipilih.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmRecoveryServicesVault -ResourceGroupName "resourceGroup"
 ```
 
-Dapatkan daftar vault dalam grup sumber daya dalam langganan yang dipilih.
+Dapatkan daftar kubah dalam grup sumber daya dalam langganan yang dipilih.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzureRmRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
 ```
 
-Dapatkan vault dalam grup sumber daya dengan nama tertentu.
+Dapatkan kubah dalam grup sumber daya dengan nama tertentu.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama vault untuk kueri.
+Menentukan nama kubah untuk kueri.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya Azure untuk membuat atau mengambil objek Layanan Pemulihan tertentu.
+Menentukan nama grup sumber daya Azure tempat untuk membuat atau dari mana untuk mengambil objek Layanan Pemulihan yang ditentukan.
 
 ```yaml
 Type: String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -101,15 +101,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
 ## CATATAN
 
@@ -117,7 +117,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRecoveryServicesVaultSettingsFile](./Get-AzureRmRecoveryServicesVaultSettingsFile.md)
 
-[New-AzureRmRecoveryServicesVault](./New-AzureRmRecoveryServicesVault.md)
+[Baru-AzureRmRecoveryServicesVault](./New-AzureRmRecoveryServicesVault.md)
 
 [Remove-AzureRmRecoveryServicesVault](./Remove-AzureRmRecoveryServicesVault.md)
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlDatabaseFailover.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Invoke-AzSqlDatabaseFailover.md
 ms.openlocfilehash: 9d5cd5b64cd97a411b1b25f887bdc42a9619d926
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245357"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076341"
 ---
 # Invoke-AzSqlDatabaseFailover
 
@@ -18,7 +18,7 @@ ms.locfileid: "140245357"
 Failovers database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/invoke-azsqldatabasefailover) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/invoke-azsqldatabasefailover) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Invoke-AzSqlDatabaseFailover [-DatabaseName] <String> [-ReadableSecondary] [-AsJ
 ```
 
 ## DESCRIPTION
-Cmdlet Invoke-AzSqlDatabaseFailover cmdlet failover Azure SQL database. Jika database berada dalam pool elastis, perintah ini akan membuat database tertentu tanpa mempengaruhi database lain dalam pool elastis yang sama.
+Cmdlet Invoke-AzSqlDatabaseFailover failovers database Azure SQL. Jika database berada dalam kumpulan elastis, perintah ini akan gagal lagi dari database tertentu tanpa memengaruhi database lain dalam kumpulan elastis yang sama.
 
 ## EXAMPLES
 
@@ -38,19 +38,19 @@ Cmdlet Invoke-AzSqlDatabaseFailover cmdlet failover Azure SQL database. Jika dat
 PS C:\> Invoke-AzSqlDatabaseFailover -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
 
-Perintah ini akan membuat replika utama database yang bernama "Database01" di server bernama "Server01"
+Perintah ini akan gagal lagi dari replika utama database bernama "Database01" di server bernama "Server01"
 
 ### Contoh 2
 ```powershell
 PS C:\> Invoke-AzSqlDatabaseFailover -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -ReadableSecondary
 ```
 
-Perintah ini akan menjadi replika sekunder database yang dapat dibaca yang bernama "Database01" di server yang bernama "Server01"
+Perintah ini akan gagal lagi dari replika sekunder database yang dapat dibaca bernama "Database01" di server bernama "Server01"
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama file Azure SQL Database failover.
+Nama Azure SQL Database untuk failover.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lewati pesan konfirmasi untuk melakukan tindakan
 
 ```yaml
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada Eksekusi yang berhasil, mengembalikan true.  Secara default, cmdlet ini tidak menghasilkan output apa pun.
+Pada eksekusi Berhasil, mengembalikan true.  Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ReadableSecsecsecry
-Replika sekunder yang dapat dibaca dan bukan replika utama default
+### -ReadableSecondary
+Failover replika sekunder yang dapat dibaca dan bukan replika utama default
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama Server Azure SQL Database database berada.
+Nama server Azure SQL Database tempat database berada.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -226,4 +226,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Suspend-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

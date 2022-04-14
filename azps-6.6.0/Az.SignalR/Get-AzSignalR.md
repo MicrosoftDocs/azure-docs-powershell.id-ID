@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalR.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SignalR/SignalR/help/Get-AzSignalR.md
 ms.openlocfilehash: 7e97a236dc2c094adada5affebba51f655612c20
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142223245"
 ---
 # Get-AzSignalR
 
@@ -18,11 +18,11 @@ ms.locfileid: "140246293"
 Dapatkan layanan SignalR tertentu atau semua layanan SignalR dalam grup sumber daya atau langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.signalr/get-azsignalr) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.signalr/get-azsignalr) untuk informasi terbaru.
 
 ## SYNTAX
 
-### ListSignalrServiceParameterSet (Default)
+### ListSignalRServiceParameterSet (Default)
 ```
 Get-AzSignalR [-ResourceGroupName <String>] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
@@ -55,7 +55,7 @@ mysignalr2.service.signalr.net                     eastus         5002       500
 mysignalr3.service.signalr.net                     eastus         5002       5001       Creating          1.0
 ```
 
-### Dapatkan semua layanan SignalR dalam grup sumber daya
+### Mendapatkan semua layanan SignalR dalam grup sumber daya
 ```
 PS C:\> Get-AzSignalR -ResourceGroupName myResourceGroup
 
@@ -65,7 +65,7 @@ mysignalr1.service.signalr.net                     eastus         5002       500
 mysignalr2.service.signalr.net                     eastus         5002       5001       Succeeded         1.0
 ```
 
-### Mendapatkan layanan SignalR tertentu
+### Dapatkan layanan SignalR tertentu
 ```
 PS C:\> Get-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya layanan SignalR.
+ID sumber daya layanan Signalr.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

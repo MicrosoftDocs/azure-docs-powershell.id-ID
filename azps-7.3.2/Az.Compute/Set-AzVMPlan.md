@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVMPlan.md
-ms.openlocfilehash: 15ef2e289e3d4ecf031ef8f43e9db9948b171742
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dba9e4f49084f181d9c4ec6efda07fe0780d982d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188421"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897957"
 ---
 # Set-AzVMPlan
 
 ## SYNOPSIS
-Mengatur informasi paket Marketplace di mesin virtual.
+Mengatur informasi rencana Marketplace di mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Set-AzVMPlan [-VM] <PSVirtualMachine> [-Name] <String> [[-Product] <String>] [[-
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVMPlan** mengatur informasi paket Azure Marketplace untuk mesin virtual.
-Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan menggunakan portal Azure.
+Cmdlet **Set-AzVMPlan** mengatur informasi rencana Marketplace Azure untuk mesin virtual.
+Sebelum dapat menyebarkan gambar Marketplace melalui baris perintah, akses programatik harus diaktifkan atau mesin virtual harus digunakan dengan menggunakan portal Azure.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Plan            : {Name, Publisher, Product}
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,8 +65,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama gambar dari Marketplace.
-Nilai ini sama dengan yang dikembalikan oleh cmdlet Get-AzVMImageSku.
-Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat Menemukan dan menggunakan gambar [VM Azure Marketplace dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam Microsoft Azure ter dokumentasi.
+Ini adalah nilai yang sama yang dikembalikan oleh cmdlet Get-AzVMImageSku.
+Untuk informasi selengkapnya tentang cara menemukan informasi gambar, lihat [Menemukan dan menggunakan gambar VM Marketplace Azure dengan Azure PowerShell](/azure/virtual-machines/windows/cli-ps-findimage) dalam dokumentasi Microsoft Azure.
 
 ```yaml
 Type: System.String
@@ -77,9 +80,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Product
+### -Produk
 Menentukan produk gambar dari Marketplace.
-Ini adalah informasi yang sama **dengan** nilai Penawaran **elemenreferensi** gambar.
+Ini adalah informasi yang sama dengan nilai **Penawaran** dari elemen **imageReference** .
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kode Promosi
+### -PromotionCode
 Menentukan kode promosi.
 
 ```yaml
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 
 ### -Publisher
 Menentukan penerbit gambar.
-Anda dapat menemukan informasi ini menggunakan cmdlet Get-AzVMImagePublisher.
+Anda bisa menemukan informasi ini dengan menggunakan cmdlet Get-AzVMImagePublisher.
 
 ```yaml
 Type: System.String
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang akan digunakan untuk menetapkan paket Marketplace.
+Menentukan objek mesin virtual untuk mengatur rencana Marketplace.
 Anda dapat menggunakan cmdlet Get-AzVM untuk mendapatkan objek mesin virtual.
 Anda dapat menggunakan cmdlet New-AzVMConfig untuk membuat objek mesin virtual.
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,10 +161,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
 [Get-AzVMImagePublisher](./Get-AzVMImagePublisher.md)
 
-[Get-azvmImagesku](./Get-AzVMImageSku.md)
+[Get-AzVMImageSku](./Get-AzVMImageSku.md)
 
-[New-azvmConfig](./New-AzVMConfig.md)
+[New-AzVMConfig](./New-AzVMConfig.md)

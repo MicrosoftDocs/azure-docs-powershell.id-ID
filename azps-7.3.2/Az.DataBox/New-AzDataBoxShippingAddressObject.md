@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DataBox/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxShippingAddressObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxShippingAddressObject.md
-ms.openlocfilehash: 37bdab35ef1ad09fbe5942b416f6a8b2e553a811
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b97e7606866376c3efdf8a28f8e2f4d21b4eae6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571780"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141896067"
 ---
 # New-AzDataBoxShippingAddressObject
 
 ## SYNOPSIS
-Buat objek dalam memori untuk ShippingAddress.
+Membuat objek dalam memori untuk ShippingAddress.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxshippingaddressobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzDataBoxShippingAddressObject -Country <String> -StreetAddress1 <String> [-
 ```
 
 ## DESCRIPTION
-Buat objek dalam memori untuk ShippingAddress.
+Membuat objek dalam memori untuk ShippingAddress.
 
 ## EXAMPLES
 
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZipExtendedCode
-Kode pos yang diperluas.
+Kode Pos Diperpanjang.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

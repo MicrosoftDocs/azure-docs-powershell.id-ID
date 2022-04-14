@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeStorageAccountCredential.md
 ms.openlocfilehash: bec83442fe48b2434a9272d6dd1974921c221a17
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140466335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142087197"
 ---
 # Get-AzDataBoxEdgeStorageAccountCredential
 
 ## SYNOPSIS
-Dapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan pada perangkat.
+Mendapatkan kredensial akun penyimpanan yang terkait dengan akun penyimpanan di perangkat.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestorageaccountcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgestorageaccountcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzDataBoxEdgeStorageAccountCredential [[-Name] <String>] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan terkait pada perangkat Data Box Edge. Anda bisa menentukan parameter Nama, Nama Grup Sumber Daya dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
+Cmdlet **Get-AzDataBoxEdgeStorageAccountCredential** mendapatkan kredensial akun penyimpanan untuk akun penyimpanan terkait di perangkat Box Edge Data. Anda dapat menentukan parameter Nama, Nama Grup Sumber Daya, dan Nama Perangkat untuk mendapatkan informasi tentang kredensial akun penyimpanan tertentu.
 
 ## EXAMPLES
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupLongTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseBackupLongTermRetentionPolicy.md
 ms.openlocfilehash: 7f30b43f56c63aea8553c08972733d96ac0bae5c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140303359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076647"
 ---
 # Get-AzSqlDatabaseBackupLongTermRetentionPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140303359"
 Mendapatkan kebijakan penyimpanan jangka panjang database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasebackuplongtermretentionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasebackuplongtermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,12 +29,12 @@ Get-AzSqlDatabaseBackupLongTermRetentionPolicy [-ServerName] <String> [-Database
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang terdaftar di database ini.
-Kebijakan tersebut adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Cmdlet **Get-AzSqlDatabaseBackupLongTermRetentionPolicy** mendapatkan kebijakan penyimpanan jangka panjang yang terdaftar pada database ini.
+Kebijakan ini merupakan sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan versi saat ini dari kebijakan penyimpanan jangka panjang
+### Contoh 1: Dapatkan versi kebijakan penyimpanan jangka panjang saat ini
 ```powershell
 PS C:\> Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01
 
@@ -51,12 +51,12 @@ RecoveryServicesBackupPolicyResourceId :
 Location                               :
 ```
 
-Perintah ini mendapatkan versi terbaru kebijakan penyimpanan jangka panjang untuk database01
+Perintah ini mendapatkan versi kebijakan penyimpanan jangka panjang untuk database01 saat ini
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database digunakan.
+Nama Azure SQL Database untuk digunakan.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server database berada.
+Nama Server Azure SQL tempat database berada.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -171,4 +171,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlDatabaseBackupLongTermRetentionPolicy](./Set-AzSqlDatabaseBackupLongTermRetentionPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

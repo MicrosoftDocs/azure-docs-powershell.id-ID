@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/restar
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Restart-AzHDInsightHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Restart-AzHDInsightHost.md
-ms.openlocfilehash: c3f314dabb78ae84137189ede40215f833538634
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f7fe9aecde33b1cc6539939fbc2570b35815aa96
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140199799"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142069753"
 ---
 # Restart-AzHDInsightHost
 
 ## SYNOPSIS
-Memulai ulang host kluster HDInsight tertentu.
+Memulai ulang host tertentu dari kluster HDInsight.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/restart-azhdinsighthost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Restart-AzHDInsightHost [[-ResourceGroupName] <String>] [-ClusterName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Restart-AzHDInsightHost** ini memulai ulang host kluster HDInsight tertentu.
+Cmdlet **Restart-AzHDInsightHost** ini memulai ulang host tertentu dari kluster HDInsight.
 
 ## EXAMPLES
 
@@ -54,12 +57,12 @@ PS C:\> $worknode1= Get-AzHDInsightHost -ClusterName $clusterName | Where-Object
 PS C:\> $worknode1 | Restart-AzHDInsightHost -ClusterName $clusterName
 ```
 
-Perintah ini memperlihatkan cara bekerja sama dengan cmdlet 'Get-AzHDInsightHost'.
+Perintah ini menunjukkan cara bekerja sama dengan cmdlet 'Get-AzHDInsightHost'.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

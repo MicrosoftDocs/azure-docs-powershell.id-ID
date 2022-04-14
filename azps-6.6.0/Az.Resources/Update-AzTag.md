@@ -7,20 +7,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Update-AzTag.md
 ms.openlocfilehash: 53793752e1db74406e4333fdfdba2042b165470b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139969521"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141906339"
 ---
 # Update-AzTag
 
 ## SYNOPSIS
 
-Memperbarui kumpulan tag secara selektif pada sumber daya atau langganan.
+Secara selektif memperbarui kumpulan tag pada sumber daya atau langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/update-aztag) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/update-aztag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +38,8 @@ Update-AzTag
 
 ## DESCRIPTION
 
-Cmdlet **Update-AzTag** dengan **ResourceId secara** selektif memperbarui kumpulan tag pada sumber daya atau langganan.
-Operasi ini memungkinkan penggantian, penggabungan, atau penghapusan tag secara selektif pada sumber daya atau langganan yang ditentukan. Entitas yang ditentukan bisa memiliki maksimal 50 tag di akhir operasi. Opsi 'ganti' menggantikan seluruh rangkaian tag yang sudah ada dengan kumpulan baru. Opsi 'gabungkan' memungkinkan menambahkan tag dengan nama baru dan memperbarui nilai tag dengan nama yang sudah ada. Opsi 'hapus' memungkinkan penghapusan tag secara selektif berdasarkan nama atau pasangan nama/nilai tertentu.
+Cmdlet **Update-AzTag** dengan **ResourceId** secara selektif memperbarui kumpulan tag pada sumber daya atau langganan.
+Operasi ini memungkinkan mengganti, menggabungkan, atau menghapus tag secara selektif pada sumber daya atau langganan tertentu. Entitas yang ditentukan dapat memiliki maksimal 50 tag di akhir operasi. Opsi 'ganti' menggantikan seluruh rangkaian tag yang sudah ada dengan rangkaian baru. Opsi 'gabungkan' memungkinkan menambahkan tag dengan nama baru dan memperbarui nilai tag dengan nama yang sudah ada. Opsi 'hapus' memungkinkan penghapusan tag secara selektif berdasarkan nama atau pasangan nama/nilai tertentu.
 
 ## EXAMPLES
 
@@ -60,9 +60,9 @@ Properties :
              key3     value3
 ```
 
-Perintah ini Menggabungkan serangkaian tag pada langganan dengan {subId}.
+Perintah ini Menggabungkan kumpulan tag pada langganan dengan {subId}.
 
-### Contoh 2: Memperbarui kumpulan tag secara selektif di langganan dengan Operasi "Ganti"
+### Contoh 2: Secara selektif memperbarui kumpulan tag pada langganan dengan Operasi "Ganti"
 
 ```powershell
 PS C:\>$replacedTags = @{"key1"="value1"; "key3"="value3";}
@@ -78,9 +78,9 @@ Properties :
              key3     value3
 ```
 
-Perintah ini Menandai ulang serangkaian tag pada langganan dengan {subId}.
+Perintah ini Membalas kumpulan tag pada langganan dengan {subId}.
 
-### Contoh 3: Memperbarui kumpulan tag secara selektif di langganan dengan Operasi "Hapus"
+### Contoh 3: Secara selektif memperbarui kumpulan tag pada langganan dengan Operasi "Hapus"
 
 ```powershell
 PS C:\>$deletedTags = @{"key1"="value1"}
@@ -95,12 +95,12 @@ Properties :
              key3     value3
 ```
 
-Perintah ini Menghapus serangkaian tag pada langganan dengan {subId}.
+Perintah ini Menghapus kumpulan tag pada langganan dengan {subId}.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya untuk entitas yang ditandai. Sumber daya, grup sumber daya atau langganan mungkin ditandai.
+Pengidentifikasi sumber daya untuk entitas bertag. Sumber daya, grup sumber daya, atau langganan mungkin ditandai.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kumpulan tag yang akan digunakan untuk pembaruan.
+Kumpulan tag yang digunakan untuk pembaruan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operasi
-Operasi pembaruan. Opsinya adalah Gabungkan, Ganti, dan Hapus.
+Operasi pembaruan. Opsinya adalah Gabungkan, Ganti dan Hapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Tags.Model.TagPatchOperation
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,4 +215,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzTag](./New-AzTag.md)
 
-[Remove-AzTag](./Remove-AzTag.md)
+[Hapus-AzTag](./Remove-AzTag.md)

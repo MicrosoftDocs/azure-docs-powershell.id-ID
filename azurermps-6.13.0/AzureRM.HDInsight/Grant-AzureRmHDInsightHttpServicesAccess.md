@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Grant-AzureRmHDInsightHttpServicesAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Grant-AzureRmHDInsightHttpServicesAccess.md
 ms.openlocfilehash: 644fd5ff1b038f275288e30d85fbc653b6107b1c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427598"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097864"
 ---
 # Grant-AzureRmHDInsightHttpServicesAccess
 
@@ -28,11 +28,11 @@ Grant-AzureRmHDInsightHttpServicesAccess [-ClusterName] <String> [-HttpCredentia
 ```
 
 ## DESCRIPTION
-Cmdlet **Grant-AzureRmHDInsightHttpServicesAccess** memberikan akses HTTP ke kluster Azure HDInsight menggunakan layanan web, Ambari, Oozie, DAN ODBC.
+Cmdlet **Grant-AzureRmHDInsightHttpServicesAccess** memberikan akses HTTP ke kluster Azure HDInsight menggunakan layanan ODBC, Ambari, Oozie, dan web.
 
 ## EXAMPLES
 
-### Contoh 1: Berikan akses HTTP ke kluster Azure HDInsight
+### Contoh 1: Memberikan akses HTTP ke kluster Azure HDInsight
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -43,7 +43,7 @@ PS C:\> Grant-AzureRmHDInsightHttpServicesAccess `
             -HttpCredential $newClusterCreds
 ```
 
-Perintah ini memberikan akses HTTP ke kluster bernama up-hadoop-001.
+Perintah ini memberikan akses HTTP ke kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -108,11 +108,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -122,6 +122,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Revoke-AzureRmHDInsightHttpServicesAccess](./Revoke-AzureRmHDInsightHttpServicesAccess.md)
+[Mencabut-AzureRmHDInsightHttpServicesAccess](./Revoke-AzureRmHDInsightHttpServicesAccess.md)
 
 

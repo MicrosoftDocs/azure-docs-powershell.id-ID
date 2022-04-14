@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/stop
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2TriggerRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Stop-AzDataFactoryV2TriggerRun.md
-ms.openlocfilehash: 2876cee8be6a4b0dfa6e361e582bea3de70ba7a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3fac805612cd1734a9e1daca6541eea40d655f16
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201046"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113065"
 ---
 # Stop-AzDataFactoryV2TriggerRun
 
 ## SYNOPSIS
-Menghentikan pemicu dijalankan di pabrik data.
+Menghentikan pemicu yang dijalankan di pabrik data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/stop-azdatafactoryv2triggerrun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +43,8 @@ Stop-AzDataFactoryV2TriggerRun [-TriggerName] <String> [-TriggerRunId] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzDataFactoryV2TriggerRun** menghentikan pemicu dijalankan di pabrik data yang ditentukan dengan nama pemicu dan memicu id jalankan.
-Saat ini hanya didukung untuk TumblingWindowTriggers dalam WaitingOnDependency State.
+Cmdlet **Stop-AzDataFactoryV2TriggerRun** menghentikan pemicu yang dijalankan di pabrik data yang ditentukan dengan nama pemicu dan ID proses pemicu.
+Saat ini hanya didukung untuk TumblingWindowTriggers di WaitingOnDependency State.
 
 ## EXAMPLES
 
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi mengenai pemicu berjalan.
+Informasi tentang pemicu berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika cmdlet menulis true jika operasi berhasil.
+Jika ditentukan cmdlet menulis true dalam hal operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerRunId
-Id Jalankan dari pemicu.
+ID Jalankan pemicu.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

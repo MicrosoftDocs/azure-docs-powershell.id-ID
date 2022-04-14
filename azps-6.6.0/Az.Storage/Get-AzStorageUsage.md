@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageUsage.md
 ms.openlocfilehash: 60ebb21258a05f8d6ed8d232bc1c7b8b92a5645b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140276359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142221715"
 ---
 # Get-AzStorageUsage
 
 ## SYNOPSIS
-Mendapatkan layanan Storage sumber daya langganan saat ini.
+Mendapatkan Storage penggunaan sumber daya langganan saat ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageusage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageusage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzStorageUsage -Location <String> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Storage langganan saat ini.
+Cmdlet **Get-AzStorageUsage** mendapatkan penggunaan sumber daya untuk Azure Storage untuk langganan saat ini.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ CurrentValue  : 18
 Limit         : 250
 ```
 
-Perintah ini memberikan Storage sumber daya dari lokasi tertentu di bawah langganan saat ini.
+Perintah ini mendapatkan Storage penggunaan sumber daya dari lokasi tertentu di bawah langganan saat ini.
 
 ## PARAMETERS
 
@@ -63,8 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Tunjukkan untuk mendapatkan Storage sumber daya di lokasi tertentu.
-Jika tidak ditentukan, akan mendapatkan Storage sumber daya di semua lokasi dalam langganan.
+Indikasikan untuk mendapatkan penggunaan sumber daya Storage pada lokasi yang ditentukan.
+Jika tidak ditentukan, akan mendapatkan Storage penggunaan sumber daya di semua lokasi di bawah langganan.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -93,6 +93,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[cmdlet Azure Storage Manager](./Az.Storage.md)
+[Cmdlet Manajer Azure Storage](./Az.Storage.md)
 
 

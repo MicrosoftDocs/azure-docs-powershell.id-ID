@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.containerregistr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/New-AzContainerRegistryNetworkRule.md
-ms.openlocfilehash: f9be398f097e2bde4dadca7088f59eccef13340a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 13524f7ee85b2cb45ea1b7a0c6e880495dcc16f3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897399"
 ---
 # New-AzContainerRegistryNetworkRule
 
 ## SYNOPSIS
 Membuat aturan jaringan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/new-azcontainerregistrynetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzContainerRegistryNetworkRule [-Action <String>] [-IPRule] -IPAddressOrRang
 ```
 
 ## DESCRIPTION
-Membuat objek aturan jaringan di sesi powershell saat ini.
+Membuat objek aturan jaringan dalam sesi powershell saat ini.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ PS C:\> $vnet = New-AzVirtualNetwork -Name $VnetName -ResourceGroupName $resourc
 PS C:\> $rule = New-AzContainerRegistryNetworkRule -VirtualNetworkRule -VirtualNetworkResourceId $vnet.Subnets[0].Id
 ```
 
-Membuat kumpulan aturan jaringan virtual.
+Membuat kumpulan aturan virtualnetwork.
 
 ## PARAMETERS
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRule
-Tunjukkan untuk membuat IPRule.
+Menunjukkan untuk membuat IPRule.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Tunjukkan untuk membuat VirtualNetworkRule.
+Indikasikan untuk membuat VirtualNetworkRule.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/Get-AzureRmEventGridTopic.md
 ms.openlocfilehash: 2d18e923e14caf4c0048575465e9f52fb14596f7
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140866559"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098449"
 ---
 # Get-AzureRmEventGridTopic
 
 ## SYNOPSIS
-Mendapatkan detail topik Kisi Acara, atau mendapatkan daftar semua topik Kisi Acara di langganan Azure saat ini.
+Mendapatkan detail topik Kisi Acara, atau mendapatkan daftar semua topik Kisi Acara dalam langganan Azure saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,9 +40,9 @@ Get-AzureRmEventGridTopic [-ResourceId] <String> [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmEventGridTopic mendapatkan detail Topik Kisi Kejadian yang ditentukan, atau daftar semua topik Kisi Acara di langganan Azure saat ini.
-Jika nama topik disediakan, rincian dari satu Topik Kisi Acara dikembalikan.
-Jika nama topik tidak tersedia, daftar topik akan dikembalikan.
+Cmdlet Get-AzureRmEventGridTopic mendapatkan detail Topik Kisi Acara tertentu, atau daftar semua topik Kisi Acara dalam langganan Azure saat ini.
+Jika nama topik disediakan, detail dari satu Topik Kisi Acara dikembalikan.
+Jika nama topik tidak disediakan, daftar topik akan dikembalikan.
 
 ## EXAMPLES
 
@@ -51,33 +51,33 @@ Jika nama topik tidak tersedia, daftar topik akan dikembalikan.
 PS C:\> Get-AzureRmEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1
 ```
 
-Mendapatkan detail topik Kisi Acara Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmEventGridTopic -ResourceId "/subscriptions/$subscriptionId/resourceGroups/MyResourceGroupName/providers/Microsoft.EventGrid/topics/Topic1"
 ```
 
-Mendapatkan detail topik Kisi Acara Topic1 \`di grup\` sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzureRmEventGridTopic -ResourceGroup MyResourceGroupName
 ```
 
-List all the Event Grid topics in resource group \`MyResourceGroupName\`.
+Cantumkan semua topik Kisi Kejadian dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 4
 ```
 PS C:\> Get-AzureRmEventGridTopic
 ```
 
-List all the Event Grid topics in the subscription.
+Cantumkan semua topik Kisi Acara dalam langganan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Acara.
+Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Kejadian.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagement.md
-ms.openlocfilehash: 8fd50e2f57a8935dce3dde99d6fcb24aef8e436f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 00c65f546cb1842780287c1ebe94f71c7466708f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560679"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142074631"
 ---
 # Set-AzApiManagement
 
 ## SYNOPSIS
 Memperbarui layanan Manajemen Api Azure
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Set-AzApiManagement -InputObject <PsApiManagement> [-SystemAssignedIdentity] [-U
 
 ## DESCRIPTION
 
-Cmdlet **Set-AzApiManagement** memperbarui layanan Manajemen API Azure.
+Cmdlet **Set-AzApiManagement** memperbarui layanan API Management Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan layanan Manajemen API dan  scale untuk Premium dan Tambahkan kawasan
+### Contoh 1: Dapatkan layanan API Management dan skalakan ke Premium dan Tambahkan kawasan
 ```powershell
 $apim = Get-AzApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
 $apim.Sku = "Premium"
@@ -39,9 +42,9 @@ $apim.AddRegion("Central US", "Premium", 3)
 Set-AzApiManagement -InputObject $apim
 ```
 
-Contoh ini mendapatkan instans Manajemen Api, menskalakan ke lima unit premium lalu menambahkan tiga unit tambahan ke kawasan premium.
+Contoh ini mendapatkan instance Api Management, menskalakannya menjadi lima unit premium lalu menambahkan tiga unit tambahan ke kawasan premium.
 
-### Contoh 2: Perbarui penyebaran (VNET eksternal)
+### Contoh 2: Penyebaran pembaruan (VNET eksternal)
 ```powershell
 $virtualNetwork = New-AzApiManagementVirtualNetwork -SubnetResourceId "/subscriptions/a8ff56dc-3bc7-4174-a1e8-3726ab15d0e2/resourceGroups/Api-Default-WestUS/providers/Microsoft.Network/virtualNetworks/dfVirtualNetwork/subnets/backendSubnet"
 $apim = Get-AzApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
@@ -50,9 +53,9 @@ $apim.VirtualNetwork = $virtualNetwork
 Set-AzApiManagement -InputObject $apim
 ```
 
-Perintah ini memperbarui penyebaran Manajemen API yang sudah ada dan bergabung ke *VpnType eksternal*.
+Perintah ini memperbarui penyebaran API Management yang sudah ada dan bergabung ke *VpnType* eksternal.
 
-### Contoh 3: Membuat dan memulai contoh PsApiManagementCustomHostNameConfiguration menggunakan Rahasia dari Sumber Daya KeyVault
+### Contoh 3: Membuat dan menginisialisasi contoh PsApiManagementCustomHostNameConfiguration menggunakan Secret dari KeyVault Resource
 ```powershell
 $portal = New-AzApiManagementCustomHostnameConfiguration -Hostname "portal.contoso.com" -HostnameType Portal -KeyVaultId "https://apim-test-keyvault.vault.azure.net/secrets/api-portal-custom-ssl.pfx"
 $proxy1 = New-AzApiManagementCustomHostnameConfiguration -Hostname "gatewayl.contoso.com" -HostnameType Proxy -KeyVaultId "https://apim-test-keyvault.vault.azure.net/secrets/contoso-proxy-custom-ssl.pfx"
@@ -64,7 +67,7 @@ $apim.ProxyCustomHostnameConfiguration = $proxyCustomConfig
 Set-AzApiManagement -InputObject $apim -SystemAssignedIdentity
 ```
 
-### Contoh 4: Perbarui Publisher Email, NotificationSender Email, dan Nama Organisasi
+### Contoh 4: Memperbarui Publisher Email, Email NotificationSender, dan Nama Organisasi
 ```powershell
 $apim = Get-AzApiManagement -ResourceGroupName "api-Default-West-US" -Name "Contoso"
 $apim.PublisherEmail = "foobar@contoso.com"
@@ -76,7 +79,7 @@ Set-AzApiManagement -InputObject $apim -PassThru
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengirimkan PsApiManagement yang diperbarui ke saluran jika operasi berhasil.
+Mengirim PsApiManagement yang diperbarui ke pipeline jika operasi berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,4 +217,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzApiManagement](./New-AzApiManagement.md)
 
-[Remove-AzApiManagement](./Remove-AzApiManagement.md)
+[Hapus-AzApiManagement](./Remove-AzApiManagement.md)

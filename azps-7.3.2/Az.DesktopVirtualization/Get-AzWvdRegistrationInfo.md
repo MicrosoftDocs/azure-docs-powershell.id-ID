@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Get-AzWvdRegistrationInfo.md
-ms.openlocfilehash: b993033cdc61e50509a3fe7340369eac7229f49f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d15829075ddbc4a3e0fb1c02c4e6f375a64e75a3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179684"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142111643"
 ---
 # Get-AzWvdRegistrationInfo
 
 ## SYNOPSIS
-Dapatkan informasi Windows desktop virtual Anda.
+Dapatkan info registrasi desktop virtual Windows.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/get-azwvdregistrationinfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzWvdRegistrationInfo -HostPoolName <String> -ResourceGroupName <String> [-S
 ```
 
 ## DESCRIPTION
-Dapatkan informasi Windows desktop virtual Anda.
+Dapatkan info registrasi desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan Windows Token Registrasi Desktop Virtual 
+### Contoh 1: Dapatkan Token Registrasi Desktop Virtual Windows 
 ```powershell
 PS C:\> Get-AzWvdRegistrationInfo -ResourceGroupName ResourceGroupName -HostPoolName HostPoolName   
 ExpirationTime       RegistrationTokenOperation Token   
@@ -37,7 +40,7 @@ ExpirationTime       RegistrationTokenOperation Token
 4/1/2020 10:19:33 PM None                       eyJhbGciOiJSUzI1NiIsImtpZCI6IkMyRjU1RUYxNzg0MEFCNzkzMDk2RUYzRjdEMkNBRDk0NThGNDhEOTQiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjU5NGJjZWUwLTk5MjQtNDg3ZC1iOW...    
 ```
 
-Perintah ini mendapatkan Windows Token Registrasi Desktop Virtual dalam Host Pool.
+Perintah ini mendapatkan Token Registrasi Desktop Virtual Windows di Host Pool.
 
 ## PARAMETERS
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostPoolName
-Nama Host Pool
+Nama Pool Host
 
 ```yaml
 Type: System.String
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

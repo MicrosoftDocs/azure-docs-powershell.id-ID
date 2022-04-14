@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzRoleDefinition.md
 ms.openlocfilehash: 9927b3496911ca41836d0dd5f6ca630f75b17fb9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139969773"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141906753"
 ---
 # Get-AzRoleDefinition
 
 ## SYNOPSIS
-Mencantumkan semua peran Azure RBAC yang tersedia untuk pengalihan.
+Mencantumkan semua peran RBAC Azure yang tersedia untuk penetapan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azroledefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,8 +42,8 @@ Get-AzRoleDefinition [-Scope <String>] [-Custom] [-DefaultProfile <IAzureContext
 ```
 
 ## DESCRIPTION
-Gunakan perintah Get-AzRoleDefinition dengan nama peran tertentu untuk melihat detailnya.
-Untuk memeriksa operasi individual yang diberi peran akses, tinjau properti Tindakan dan NotActions dari peran tersebut.
+Gunakan perintah Get-AzRoleDefinition dengan nama peran tertentu untuk menampilkan detailnya.
+Untuk memeriksa operasi individual yang diberi peran akses, tinjau properti Tindakan dan Notaksi peran tersebut.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Untuk memeriksa operasi individual yang diberi peran akses, tinjau properti Tind
 PS C:\> Get-AzRoleDefinition -Name Reader
 ```
 
-Mendapatkan definisi peran Pembaca
+Dapatkan definisi peran Pembaca
 
 ### Contoh 2
 ```
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -155,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Resources.Models.Authorization.PSRoleDefinition
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, resource, group, template, deployment
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sumber daya, grup, Templat, penyebaran
 
 ## RELATED LINKS
 
