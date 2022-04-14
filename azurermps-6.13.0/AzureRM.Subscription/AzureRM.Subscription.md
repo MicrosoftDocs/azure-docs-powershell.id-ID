@@ -6,18 +6,18 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Subscription/Commands.Subscription/help/AzureRM.Subscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Subscription/Commands.Subscription/help/AzureRM.Subscription.md
-ms.openlocfilehash: cc4619e34694e78165a9073be3ca5c6686d1327b0627f25ca957326cfc9a022e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a3a79da89ce5e642ae2a75504dc3bb317ab813d2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418482"
 ---
-# AzureRM.Subscription Module
+# Modul AzureRM.Subscription
 ## Deskripsi
-Topik dalam bagian ini mendokumentasikan Azure PowerShell cmdlet untuk Langganan Azure dalam kerangka kerja Azure Resource Manager (ARM). Cmdlets ada dalam ruang nama Microsoft.Azure.Commands.Subscription.
+Topik di bagian ini mendokumentasikan cmdlet Azure PowerShell untuk Langganan Azure dalam kerangka kerja Azure Resource Manager (ARM). Cmdlet ada di ruang nama Microsoft.Azure.Commands.Subscription.
 
 ## Cmdlet AzureRM.Subscription
-### [New-AzureRmSubscription](New-AzureRmSubscription.md)
+### [AzureRmSubscription baru](New-AzureRmSubscription.md)
 Membuat langganan Azure.
 

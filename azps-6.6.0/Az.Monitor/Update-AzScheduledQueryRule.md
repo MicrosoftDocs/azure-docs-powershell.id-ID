@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzScheduledQueryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Update-AzScheduledQueryRule.md
 ms.openlocfilehash: 4f4a322f058faff8627975df356b21147637bd90
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140135367"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141909921"
 ---
 # Update-AzScheduledQueryRule
 
 ## SYNOPSIS
-Memperbarui aturan Pemberitahuan Log
+Memperbarui aturan Peringatan Log
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/update-azscheduledqueryrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/update-azscheduledqueryrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,8 +41,8 @@ Update-AzScheduledQueryRule -ResourceId <String> -Enabled <Boolean> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Memperbarui aturan Pemberitahuan Log, memperbarui properti "Diaktifkan" saja didukung oleh perintah ini.
-Untuk memperbarui properti lainnya, lihat [perintah Set-AzScheduledQueryRule](https://docs.microsoft.com/powershell/module/az.monitor/set-azscheduledqueryrule) .
+Memperbarui aturan Peringatan Log, memperbarui properti "Diaktifkan" saja didukung oleh perintah ini.
+Untuk memperbarui properti lain, lihat Perintah [Set-AzScheduledQueryRule](https://docs.microsoft.com/powershell/module/az.monitor/set-azscheduledqueryrule) .
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 2: Perbarui menurut objek input
+### Contoh 2: Memperbarui menurut objek input
 ```powershell
 PS C:\> Update-AzScheduledQueryRule -InputObject $sqr -Enabled $false
 
@@ -82,7 +82,7 @@ Location          : centralindia
 Tags              : {[hidden-link:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/Microsoft.OperationalInsights/workspaces/MyWorkspace, Resource]}
 ```
 
-### Contoh 3: Perbarui menurut Id sumber daya
+### Contoh 3: Memperbarui menurut ID sumber daya
 ```powershell
 PS C:\> Update-AzScheduledQueryRule -ResourceId /subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/MyResourceGroup/providers/microsoft.insights/scheduledqueryrules/LogAlertRule1 -Enabled $true
 
@@ -117,8 +117,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Status pemberitahuan Azure - nilai yang valid - $true, $false
+### -Difungsikan
+Status peringatan azure - nilai yang valid - $true, $false
 
 ```yaml
 Type: System.Boolean
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServiceIdentity/ManagedServiceIdentity/help/New-AzUserAssignedIdentity.md
 ms.openlocfilehash: 9f1c753f5d50c721c159ccb6a047ee8229fab31b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140283343"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141910875"
 ---
 # New-AzUserAssignedIdentity
 
 ## SYNOPSIS
-Membuat Identitas Ditetapkan Pengguna baru atau memperbarui Identitas yang Ditetapkan Pengguna yang sudah ada.
+Membuat Identitas yang Ditetapkan Pengguna baru atau memperbarui Identitas yang Ditetapkan Pengguna yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedserviceidentity/new-azuserassignedidentity) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedserviceidentity/new-azuserassignedidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +28,13 @@ New-AzUserAssignedIdentity [-ResourceGroupName] <String> [-Name] <String> [-Loca
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzUserAssignedIdentity** membuat Identitas Ditetapkan Pengguna baru. Ketika digunakan dengan identitas yang sudah ada, identitas akan diperbarui.
-Untuk menambahkan tag Azure Resource Manager ke identitas, harap gunakan cmdlet Set-AzResource cmdlet.
+Cmdlet **New-AzUserAssignedIdentity** membuat Identitas yang Ditetapkan Pengguna baru. Ketika digunakan dengan identitas yang sudah ada, identitas diperbarui.
+Untuk menambahkan tag Azure Resource Manager ke identitas, silakan gunakan cmdlet Set-AzResource.
 
 ## EXAMPLES
 
 ### Contoh 1
-Cmdlet contoh ini membuat Identitas Ditetapkan Pengguna baru dengan **ID nama di** bawah grup sumber daya **PSRG** di lokasi Grup Sumber Daya.
+Cmdlet contoh ini membuat Identitas Ditetapkan Pengguna baru dengan nama **ID1** di bawah grup sumber daya **PSRG** di lokasi Grup Sumber Daya.
 
 ```powershell
 PS C:\> New-AzUserAssignedIdentity -ResourceGroupName PSRG -Name ID1
@@ -59,7 +59,7 @@ Type              : Microsoft.ManagedIdentity/userAssignedIdentities
 ```
 
 ### Contoh 2
-Cmdlet contoh ini membuat Identitas Ditetapkan Pengguna baru dengan id nama **di** bawah grup sumber daya **PSRG** di kawasan barat.
+Cmdlet contoh ini membuat Identitas Ditetapkan Pengguna baru dengan nama **ID1** di bawah grup sumber daya **PSRG** di kawasan westus.
 
 ```powershell
 PS C:\> New-AzUserAssignedIdentity -ResourceGroupName PSRG -Name ID1 -Location westus
@@ -86,7 +86,7 @@ Type              : Microsoft.ManagedIdentity/userAssignedIdentities
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama identitas.
+Nama Identitas.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

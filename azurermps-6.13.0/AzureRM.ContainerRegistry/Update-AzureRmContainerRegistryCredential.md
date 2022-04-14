@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Update-AzureRmContainerRegistryCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ContainerRegistry/Commands.ContainerRegistry/help/Update-AzureRmContainerRegistryCredential.md
 ms.openlocfilehash: 836e8983a9d2e6c7ff21444f0da7b3bf85c1b1d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413973"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779612"
 ---
 # Update-AzureRmContainerRegistryCredential
 
 ## SYNOPSIS
-Meregenerasi kredensial masuk untuk registri wadah.
+Meregenerasi kredensial masuk untuk registri kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Update-AzureRmContainerRegistryCredential [-ResourceGroupName] <String> [-Name] 
  [<CommonParameters>]
 ```
 
-### RegistryObjectParameterSet
+### RegistriObjectParameterSet
 ```
 Update-AzureRmContainerRegistryCredential -Registry <PSContainerRegistry> -PasswordName <PasswordName>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,11 +41,11 @@ Update-AzureRmContainerRegistryCredential -PasswordName <PasswordName> -Resource
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzureRmContainerRegistryCredential meregenerasi kredensial masuk untuk registri wadah.
+Cmdlet Update-AzureRmContainerRegistryCredential meregenerasi kredensial masuk untuk registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Meregenerasi kredensial masuk untuk registri wadah
+### Contoh 1: Meregenerasi kredensial masuk untuk registri kontainer
 ```powershell
 PS C:\>Update-AzureRmContainerRegistryCredential -ResourceGroupName "MyResourceGroup" -Name "MyRegistry" -PasswordName "Password"
 
@@ -54,13 +54,13 @@ Username   Password                         Password2
 MyRegistry ++q/=K9+RH/+hwg2+3A=N+/w=J/12Ph9 //JRPkgxx+r+z/ztU=R//E==vum=pRKL
 ```
 
-Perintah ini meregenerasi kredensial masuk untuk registri wadah yang ditentukan.
-Pengguna admin harus diaktifkan agar registri wadah \`MyRegistry meregenerasi\` kredensial masuk.
+Perintah ini meregenerasi kredensial masuk untuk registri kontainer yang ditentukan.
+Pengguna admin harus diaktifkan untuk registri kontainer MyRegistry \`\` untuk meregenerasi kredensial masuk.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -PasswordName
-Nama kata sandi untuk meregenerasi.
-Nilai yang diperbolehkan: kata sandi, kata sandi2.
+Nama kata sandi untuk diregenerasi.
+Nilai yang diizinkan: kata sandi, kata sandi2.
 
 ```yaml
 Type: Microsoft.Azure.Management.ContainerRegistry.Models.PasswordName
@@ -106,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registry
-Container Registry Object.
+### -Registri
+Objek Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Container registry resource id
+Id sumber daya registri kontainer
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,12 +183,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
-Parameter: Registry (ByValue)
+Parameter: Registri (ByValue)
 
 ### System.String
 
@@ -200,9 +200,9 @@ Parameter: Registry (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmContainerRegistry](New-AzureRmContainerRegistry.md)
+[AzureRmContainerRegistry baru](New-AzureRmContainerRegistry.md)
 
-[Update-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
+[Pembaruan-AzureRmContainerRegistry](Update-AzureRmContainerRegistry.md)
 
 [Get-AzureRmContainerRegistryCredential](Get-AzureRmContainerRegistryCredential.md)
 

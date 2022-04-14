@@ -5,11 +5,11 @@ ms.assetid: 30A34CA8-AC07-4327-B7B9-19F001DA996A
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermapplicationgatewaysslpolicy
 schema: 2.0.0
 ms.openlocfilehash: 1e0d5de8013bbb6fd5104c3af5bdb555b0317e75
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424418"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780548"
 ---
 # Set-AzureRmApplicationGatewaySslPolicy
 
@@ -39,14 +39,14 @@ PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $AppGw = Set-AzureRmApplicationGatewaySslPolicy -ApplicationGateway $getgw -PolicyType Predefined -PolicyName AppGwSslPolicy20170401
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam $AppGw variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpannya dalam variabel $AppGw.
 
-Perintah kedua mengubah kebijakan ssl menjadi tipe kebijakan yang sudah ditentukan sebelumnya dan nama kebijakan AppGwSslPolicy20170401.
+Perintah kedua ini mengubah kebijakan ssl menjadi jenis kebijakan Yang sudah ditentukan sebelumnya dan nama kebijakan AppGwSslPolicy20170401.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi dari kebijakan SSL yang ditentukan cmdlet ini.
+Menentukan gateway aplikasi kebijakan SSL yang diubah cmdlet ini.
 
 ```yaml
 Type: PSApplicationGateway
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -CipherSuite
-Ssl cipher suites to be enabled in the specified order to application gateway
+Rangkaian sandi Ssl untuk diaktifkan dalam urutan yang ditentukan untuk gateway aplikasi
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledSslProtocols
-Menentukan protokol mana yang dinonaktifkan.
+Menentukan protokol mana yang dinon-fungsikan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - TLSv1_0 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinProtocolVersion
-Versi minimum protokol Ssl yang akan didukung di gateway aplikasi
+Versi minimum protokol Ssl untuk didukung di gateway aplikasi
 
 ```yaml
 Type: String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyName
-Kebijakan Nama Ssl yang sudah ditentukan sebelumnya
+Nama kebijakan Ssl yang sudah ditentukan sebelumnya
 
 ```yaml
 Type: String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyType
-Tipe Kebijakan Ssl
+Jenis Kebijakan Ssl
 
 ```yaml
 Type: String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,7 +201,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

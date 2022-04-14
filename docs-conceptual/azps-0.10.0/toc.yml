@@ -5,13 +5,13 @@
   displayName: 'intro, introduction, azurerm'
 - name: Instal
   items:
-    - name: Instal dengan PowerShellGet
+    - name: Menginstal dengan PowerShellGet
       href: install-az-ps.md
-    - name: Instal dengan MSI
+    - name: Menginstal dengan MSI
       href: install-az-ps-msi.md
 - name: Hapus instalasi
   href: uninstall-az-ps.md
-- name: Migrate dari AzureRM
+- name: Migrasi dari AzureRM
   items:
     - name: Langkah migrasi
       href: migrate-from-azurerm-to-az.md
@@ -40,7 +40,7 @@
 - name: Kueri
   href: queries-azureps.md
   displayName: 'filter, search, format, output, variable, scripting, array, dictionary, map, object'
-- name: Format output
+- name: Output format
   href: formatting-output.md
   displayName: 'object, table, yaml, json, xml, csv, html, list'
 - name: Kelola langganan
@@ -48,11 +48,11 @@
   displayName: 'tenant, user, sign in, signin, log in, login, authenticate, authentication, accounts'
 - name: Sebarkan
   items:
-    - name: Menerapkan templat Pengelola Sumber Daya
+    - name: Menyebarkan templat Resource Manager
       href: /azure/azure-resource-manager/resource-group-template-deploy
-    - name: Mengekspor templat Pengelola Sumber Daya
+    - name: Mengekspor templat Resource Manager
       href: /azure/azure-resource-manager/resource-manager-export-template-powershell
-    - name: Menerapkan templat Pengelola Sumber Daya pribadi
+    - name: Menyebarkan templat Resource Manager privat
       href: /azure/azure-resource-manager/resource-manager-powershell-sas-token
 - name: Konsep
   items:
@@ -82,7 +82,7 @@
   items:
     - name: Catatan rilis
       href: release-notes-azureps.md
-    - name: Az 2.0.0 melanggar perubahan
+    - name: Perubahan melanggar Az 2.0.0
       href: migrate-az-2.0.0.md
-    - name: Az 3.0.0 melanggar perubahan
+    - name: Perubahan melanggar Az 3.0.0
       href: migrate-az-3.0.0.md

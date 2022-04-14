@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVmssIpTagConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVmssIpTagConfig.md
 ms.openlocfilehash: a77680921eeef0a678cbd83d04bef9a51cf35cb3
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140853825"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780064"
 ---
 # New-AzureRmVmssIpTagConfig
 
 ## SYNOPSIS
-Membuat objek TAG IP untuk antarmuka jaringan VMSS.
+Membuat objek Tag IP untuk antarmuka jaringan VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,8 +27,8 @@ New-AzureRmVmssIpTagConfig [-IpTagType] <String> [-Tag <String>] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmVmssIpTagConfig** membuat objek konfigurasi Tag IP untuk antarmuka jaringan Virtual Machine Scale Set (VMSS).
-Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPTag* cmdlet New-AzureRmVmssIpConfig cmdlet.
+Cmdlet **New-AzureRmVmssIpTagConfig** membuat objek konfigurasi Tag IP untuk antarmuka jaringan Kumpulan Skala Mesin Virtual (VMSS).
+Tentukan konfigurasi dari cmdlet ini sebagai parameter *IPTag* cmdlet New-AzureRmVmssIpConfig.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ PS C:\> $iptag = New-AzureRmVmssIpTagConfig -IpTagType 'FirstPartyUsage' -Tag 'S
 PS C:\> $ipCfg = New-AzureRmVmssIPConfig -Name 'test' -SubnetId $subnetId -IpTag $ipTag;
 ```
 
-Perintah ini membuat objek lokal Tag IP dengan tipe 'FirstPartyUsage' dan tag 'Sql', lalu membuat konfigurasi IP dengan tag IP ini.
+Perintah ini membuat objek lokal TAG IP dengan tipe 'FirstPartyUsage' dan tag 'Sql', lalu membuat konfigurasi IP dengan tag IP ini.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

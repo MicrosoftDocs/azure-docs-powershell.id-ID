@@ -5,17 +5,17 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Get-AzureRmIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Get-AzureRmIoTDeviceProvisioningServiceCertificate.md
-ms.openlocfilehash: dea1cb85c2c2b9a8e348d7f75c9ea8a2cfdf6ccaf7c57bcca00c3a4119ad7abc
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c44e36a0aa08daf7e4a9ae9822f8a4be85db5d57
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868268"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779225"
 ---
 # Get-AzureRmIoTDeviceProvisioningServiceCertificate
 
 ## SYNOPSIS
-Mencantumkan semua sertifikat atau sertifikat tertentu yang dimuat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
+Mencantumkan semua sertifikat atau sertifikat tertentu yang terdapat dalam Layanan Penyediaan Perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmIoTDeviceProvisioningServiceCertificate [-ResourceId] <String> [-Cert
 ```
 
 ## DESCRIPTION
-Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/how-to-verify-certificates.
+Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/how-to-verify-certificates.
 
 ## EXAMPLES
 
@@ -72,7 +72,7 @@ myresourcegroup     myiotdps    mycert1         Unverified 12/04/2027 13:12
 myresourcegroup     myiotdps    mycert2         Unverified 12/04/2027 13:12
 ```
 
-Membuat daftar semua sertifikat dalam "myiotdps" menggunakan pipeline.
+Cantumkan semua sertifikat dalam "myiotdps" menggunakan pipeline.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Object
+### -DpsObject
 Objek Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -167,12 +167,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
-Parameter:ObjectObject (ByValue)
+Parameter: DpsObject (ByValue)
 
 ### System.String
 

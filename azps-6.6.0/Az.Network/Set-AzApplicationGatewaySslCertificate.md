@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewaySslCertificate.md
 ms.openlocfilehash: a24565562a8900ac8ab690ab1d47944c09536864
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140069633"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142046189"
 ---
 # Set-AzApplicationGatewaySslCertificate
 
@@ -19,7 +19,7 @@ ms.locfileid: "140069633"
 Memperbarui sertifikat SSL untuk gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslcertificate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewaysslcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Cmdlet **Set-AzApplicationGatewaySslCertificate** memperbarui sertifikat SSL unt
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui sertifikat SSL yang sudah ada di Gateway Aplikasi
+### Contoh 1: Memperbarui sertifikat SSL yang sudah ada di Application Gateway
 ```
 PS C:\> $appGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $password = ConvertTo-SecureString $passwordPlainString -AsPlainText -Force
@@ -50,7 +50,7 @@ PS C:\> $secretId = $secret.Id.Replace($secret.Version, "") # https://<keyvaultn
 PS C:\> $cert = Set-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Rahasiakan dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate`.
+Dapatkan rahasia dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate`.
 
 ### Contoh 3: Memperbarui sertifikat SSL yang sudah ada menggunakan KeyVault Secret di Application Gateway
 ```
@@ -59,13 +59,13 @@ PS C:\> $secretId = $secret.Id # https://<keyvaultname>.vault.azure.net/secrets/
 PS C:\> $cert = Set-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
 ```
 
-Rahasiakan dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate`.
-Catatan: Jika diperlukan agar Gateway Aplikasi menyinkronkan sertifikat dengan KeyVault, harap sediakanid rahasia versinya.
+Dapatkan rahasia dan perbarui Sertifikat SSL yang sudah ada menggunakan `Set-AzApplicationGatewaySslCertificate`.
+Catatan: Jika diperlukan agar Application Gateway menyinkronkan sertifikat dengan KeyVault, harap sediakan secretId tanpa versi.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi yang terkait dengan sertifikat Secure Socket Layer (SSL).
+Menentukan gateway aplikasi tempat sertifikat Secure Socket Layer (SSL) terkait.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

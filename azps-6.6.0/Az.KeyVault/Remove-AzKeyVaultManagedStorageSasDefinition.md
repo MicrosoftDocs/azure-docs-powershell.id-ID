@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultManagedStorageSasDefinition.md
 ms.openlocfilehash: e32728d8d061f5af1e0493888f152b3ae52ac5a5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076959"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141911613"
 ---
 # Remove-AzKeyVaultManagedStorageSasDefinition
 
 ## SYNOPSIS
-Menghapus kunci Vault yang dikelola Azure Storage SAS.
+Menghapus Key Vault dikelola Azure Storage definisi SAS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedstoragesasdefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultmanagedstoragesasdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Remove-AzKeyVaultManagedStorageSasDefinition [-InputObject] <PSKeyVaultManagedSt
 ```
 
 ## DESCRIPTION
-Menghapus kunci Vault yang dikelola Azure Storage SAS. Ini juga menghapus rahasia yang digunakan untuk mendapatkan token SAS per definisi SAS ini.
+Menghapus Key Vault dikelola Azure Storage definisi SAS. Ini juga menghapus rahasia yang digunakan untuk mendapatkan token SAS sesuai definisi SAS ini.
 
 ## EXAMPLES
 
-### Contoh 1: Remove a Key Vault managed Azure Storage SAS definition.
+### Contoh 1: Menghapus Key Vault dikelola Azure Storage definisi SAS.
 ```powershell
 PS C:\> Remove-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'mysasdef' -PassThru
 
@@ -53,9 +53,9 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Menghapus Kunci Vault yang dikelola Storage sas 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
+Menghapus Key Vault dikelola Storage definisi SAS 'mysasdef' yang terkait dengan akun 'mystorageaccount' dalam kubah 'myvault'.
 
-### Contoh 2: Hapus Kunci Vault yang dikelola Azure Storage sas definition tanpa konfirmasi pengguna.
+### Contoh 2: Hapus Key Vault dikelola Azure Storage definisi SAS tanpa konfirmasi pengguna.
 ```powershell
 PS C:\> Remove-AzKeyVaultManagedStorageSasDefinition -VaultName 'myvault' -AccountName 'mystorageaccount' -Name 'mysasdef' -PassThru -Force
 
@@ -69,13 +69,13 @@ Updated     : 5/24/2018 9:11:08 PM
 Tags        :
 ```
 
-Menghapus Kunci Vault yang dikelola Storage sas 'mysasdef' yang terkait dengan akun 'mystorageaccount' di vault 'myvault'.
+Menghapus Key Vault dikelola Storage definisi SAS 'mysasdef' yang terkait dengan akun 'mystorageaccount' dalam kubah 'myvault'.
 
 ## PARAMETERS
 
-### -Nama Akun
-Storage akun.
-Cmdlet menyusun FQDN dari nama akun penyimpanan terkelola dari nama vault, lingkungan yang saat ini dipilih, dan nama akun penyimpanan.
+### -AccountName
+Storage nama akun.
+Cmdlet menyusun FQDN nama akun penyimpanan terkelola dari nama kubah, lingkungan yang saat ini dipilih dan nama akun penyimpanan.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -104,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Storage sas definition name.
-Cmdlet membangun FQDN dari definisi sas penyimpanan dari nama vault, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
+Storage nama definisi sas.
+Cmdlet menyusun FQDN definisi sas penyimpanan dari nama kubah, lingkungan yang saat ini dipilih, nama akun penyimpanan dan nama definisi sas.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, cmdlet akan mengembalikan akun penyimpanan terkelola yang dihapus.
+Jika sakelar ini ditentukan, cmdlet mengembalikan akun penyimpanan terkelola yang dihapus.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

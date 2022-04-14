@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVMAccessExtension.md
 ms.openlocfilehash: 23120c9225d6905a528ac113bd055ec8fa585870
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423541"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142132091"
 ---
 # Get-AzVMAccessExtension
 
@@ -26,7 +26,7 @@ Get-AzVMAccessExtension [-ResourceGroupName] <String> [-VMName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Ekstensi Mesin Virtual Access (VMAccess) Virtual Machine.
+Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Virtual Machine Access (VMAccess) Virtual Machine Extension.
 
 ## EXAMPLES
 
@@ -35,19 +35,19 @@ Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Ekstensi Mesin 
 PS C:\> $VMAccessExtension = Get-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoTest"
 ```
 
-Perintah ini akan mendapatkan ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
 
-### Contoh 2: Mendapatkan tampilan contoh ekstensi VMAccess
+### Contoh 2: Dapatkan tampilan instans ekstensi VMAccess
 ```
 PS C:\> $VMAccessExtension = Get-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoTest" -Status
 ```
 
-Perintah ini mendapatkan tampilan contoh ekstensi VMAccess yang bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan tampilan instans ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama ekstensi yang akan dapatkan cmdlet ini.
+Menentukan nama ekstensi yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini hanya mendapatkan tampilan contoh ekstensi.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -123,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

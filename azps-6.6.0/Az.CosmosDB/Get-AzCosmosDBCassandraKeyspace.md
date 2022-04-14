@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraKeyspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBCassandraKeyspace.md
 ms.openlocfilehash: 8451cb191c0a3b517e01fb85fbca0222116f311e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140467217"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142088259"
 ---
 # Get-AzCosmosDBCassandraKeyspace
 
 ## SYNOPSIS
-Gets a CosmosDB Cosmo Keyspace.
+Dapatkan CosmosDB Cassandra Keyspace.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandrakeyspace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbcassandrakeyspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzCosmosDBCassandraKeyspace [-Name <String>] -ParentObject <PSDatabaseAccoun
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBCass cmdletKeyspace** membuat baru atau memperbarui Cmdlet Existing CosmosDB Keyspace Keyspace.
+Cmdlet **Get-AzCosmosDBCassandraKeyspace** menciptakan yang baru atau memperbarui Keyspace CosmosDB Cassandra yang sudah ada.
 
 ## EXAMPLES
 
@@ -47,11 +47,11 @@ Name    Id   Resource
 {name}  {id} {resourceObject}
 ```
 
-Get-AzCosmosDBCassandraKeyspace mendapatkan properti dari File file 365B yang sudah adaKeyspace. Anda dapat memperluas Sumber Daya untuk mendapatkan _etag, _ts, _rid sumber.
+Get-AzCosmosDBCassandraKeyspace mendapatkan properti CassandraKeyspace yang sudah ada. Anda bisa memperluas Sumber Daya untuk mendapatkan properti _etag, _ts, _rid.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -135,7 +135,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftKeyspaceGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSThroughputSettingsGetResults
 

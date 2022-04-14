@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkTap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkTap.md
 ms.openlocfilehash: 1466951ef5a4226376fe8d30531a6a3ee7087afe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139934215"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142045577"
 ---
 # Set-AzVirtualNetworkTap
 
@@ -18,7 +18,7 @@ ms.locfileid: "139934215"
 Memperbarui ketuk jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetworktap) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworktap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,20 +32,20 @@ Cmdlet **Set-AzVirtualNetworkTap** memperbarui ketuk jaringan virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Konfigurasi Ketuk jaringan virtual
+### Contoh 1: Mengonfigurasi ketuk Jaringan virtual
 ```
 PS C:\>$vTap = Get-AzVirtualNetworkTap -ResourceGroupName "ResourceGroup1" -Name "VirtualTap1"
 PS C:\>$vTap.DestinationNetworkInterfaceIPConfiguration = $newDestinationNic.IpConfigurations[0]
 PS C:\>Set-AzVirtualNetworkTap -VirtualNetworkTap $vTap
 ```
 
-Perintah memperbarui IpConfiguration Tujuan dan memperbarui ketuk jaringan Virtual.
-Jika ada konfigurasi ketuk yang merujuknya, lalu lintas semua sumber tidak akan dicerminkan ke pembaruan konfigurasi ip tujuan baru.
+Perintah memperbarui IpConfiguration Tujuan dan memperbarui ketuk Jaringan virtual.
+Jika ada konfigurasi ketukan yang mereferensikannya, maka semua lalu lintas sumber tidak akan mulai dicerminkan ke pembaruan postingan konfigurasi ip tujuan baru.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

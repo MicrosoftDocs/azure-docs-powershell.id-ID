@@ -5,20 +5,20 @@ Download Help Link: None
 Help Version: 4.0.0.0
 Locale: en-US
 ms.assetid: 70B87755-FEEF-45CE-BAE9-32088C408B41
-ms.openlocfilehash: 709a29634904abc5a72d8c472cfb2290c80f854b3c1a6dc323d439e2df59518a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5126fbda1e44dc01f3968b2edc189387980ee95c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418656"
 ---
 # Azure.Service Module
 ## Deskripsi
-Topik ini menampilkan topik bantuan untuk Cmdlet Manajemen Layanan Azure.
+Topik ini menampilkan topik bantuan untuk Cmdlet Azure Service Management.
 
 ## Cmdlet Azure.Service
 ### [Add-AzureCertificate](./Add-AzureCertificate.md)
-Mengunggah sertifikat ke layanan cloud Azure.
+Mengunggah sertifikat ke layanan awan Azure.
 
 
 ### [Add-AzureDataDisk](./Add-AzureDataDisk.md)
@@ -26,7 +26,7 @@ Menambahkan disk data ke mesin virtual.
 
 
 ### [Add-AzureDisk](./Add-AzureDisk.md)
-Menambahkan disk ke repositori disk Azure.
+Menambahkan disk ke penyimpanan disk Azure.
 
 
 ### [Add-AzureDns](./Add-AzureDns.md)
@@ -38,7 +38,7 @@ Menambahkan titik akhir ke mesin virtual.
 
 
 ### [Add-AzureInternalLoadBalancer](./Add-AzureInternalLoadBalancer.md)
-Menambahkan penyeimbang muat internal ke layanan Azure.
+Menambahkan penyeimbang muatan internal ke layanan Azure.
 
 
 ### [Add-AzureNetworkInterfaceConfig](./Add-AzureNetworkInterfaceConfig.md)
@@ -46,7 +46,7 @@ Menambahkan penyeimbang muat internal ke layanan Azure.
 
 
 ### [Add-AzureProvisioningConfig](./Add-AzureProvisioningConfig.md)
-Menambahkan konfigurasi pengadaan untuk mesin virtual Azure.
+Menambahkan konfigurasi penyediaan untuk mesin virtual Azure.
 
 
 ### [Add-AzureVhd](./Add-AzureVhd.md)
@@ -58,19 +58,19 @@ Menambahkan IP virtual ke layanan awan.
 
 
 ### [Add-AzureVMImage](./Add-AzureVMImage.md)
-Menambahkan gambar sistem operasi atau gambar mesin virtual baru ke repositori gambar.
+Menambahkan gambar sistem operasi baru atau gambar mesin virtual baru ke penyimpanan gambar.
 
 
-### [Export-AzureVM](./Export-AzureVM.md)
+### [Ekspor-AzureVM](./Export-AzureVM.md)
 Mengekspor status mesin virtual Azure ke file.
 
 
 ### [Get-AzureAclConfig](./Get-AzureAclConfig.md)
-Mendapatkan objek konfigurasi ACL dari komputer virtual Azure.
+Mendapatkan objek konfigurasi ACL dari mesin virtual Azure.
 
 
 ### [Get-AzureAffinityGroup](./Get-AzureAffinityGroup.md)
-Mendapatkan objek grup afiliasi Azure.
+Mendapatkan objek grup affinity Azure.
 
 
 ### [Get-AzureCertificate](./Get-AzureCertificate.md)
@@ -82,7 +82,7 @@ Mendapatkan disk data Azure.
 
 
 ### [Get-AzureDeploymentEvent](./Get-AzureDeploymentEvent.md)
-Mendapatkan informasi tentang kejadian yang dimulai oleh Azure yang berdampak pada mesin virtual dan layanan cloud.
+Mendapatkan informasi tentang kejadian yang diinisiasi Azure yang memengaruhi mesin virtual dan layanan cloud.
 
 
 ### [Get-AzureDeployment](./Get-AzureDeployment.md)
@@ -90,23 +90,23 @@ Mendapatkan detail penyebaran.
 
 
 ### [Get-AzureDisk](./Get-AzureDisk.md)
-Dapatkan informasi tentang disk di penyimpanan disk Azure.
+Mendapatkan informasi tentang disk di penyimpanan disk Azure.
 
 
 ### [Get-AzureDns](./Get-AzureDns.md)
-Dapatkan pengaturan DNS untuk penyebaran Azure.
+Mendapatkan pengaturan DNS untuk penyebaran Azure.
 
 
 ### [Get-AzureEndpoint](./Get-AzureEndpoint.md)
-Mendapatkan informasi tentang titik akhir yang ditetapkan untuk komputer virtual Azure.
+Mendapatkan informasi tentang titik akhir yang ditetapkan ke mesin virtual Azure.
 
 
 ### [Get-AzureInternalLoadBalancer](./Get-AzureInternalLoadBalancer.md)
-Mendapatkan detail konfigurasi penyeimbang muat internal.
+Mendapatkan detail konfigurasi load balancer internal.
 
 
 ### [Get-AzureLocation](./Get-AzureLocation.md)
-Dapatkan lokasi pusat data yang tersedia untuk langganan Azure saat ini.
+Mendapatkan lokasi pusat data yang tersedia untuk langganan Azure saat ini.
 
 
 ### [Get-AzureNetworkInterfaceConfig](./Get-AzureNetworkInterfaceConfig.md)
@@ -133,7 +133,7 @@ Mendapatkan file RDP untuk mesin virtual Azure.
 Mendapatkan alamat IP khusus berdasarkan namanya atau mencantumkan semua alamat IP khusus dalam langganan.
 
 
-### [Get-AzureRoleSize](./Get-AzureRoleSize.md)
+### [Dapatkan-AzureRoleSize](./Get-AzureRoleSize.md)
 Mendapatkan informasi ukuran peran untuk langganan saat ini.
 
 
@@ -142,7 +142,7 @@ Mengembalikan daftar peran dalam layanan Microsoft Azure Anda.
 
 
 ### [Get-AzureServiceADDomainExtension](./Get-AzureServiceADDomainExtension.md)
-Mendapatkan ekstensi domain Direktori Aktif (AD) layanan awan yang berlaku untuk semua peran atau peran bernama pada slot penggunaan tertentu.
+Mendapatkan ekstensi domain Active Directory (AD) layanan awan yang berlaku untuk semua peran atau peran bernama pada slot penyebaran tertentu.
 
 
 ### [Get-AzureServiceAntimalwareConfig](./Get-AzureServiceAntimalwareConfig.md)
@@ -154,15 +154,15 @@ Mendapatkan informasi tentang ekstensi yang tersedia untuk layanan yang dihostin
 
 
 ### [Get-AzureServiceDiagnosticsExtension](./Get-AzureServiceDiagnosticsExtension.md)
-Ekstensi diagnostik layanan cloud diterapkan di semua peran atau peran bernama pada slot penyebaran tertentu.
+Mendapatkan ekstensi diagnostik layanan cloud yang diterapkan pada semua peran atau peran bernama pada slot penyebaran tertentu.
 
 
 ### [Get-AzureServiceExtension](./Get-AzureServiceExtension.md)
-Mendapatkan ekstensi layanan awan yang diterapkan pada penyebaran.
+Mendapatkan ekstensi layanan cloud yang diterapkan pada penyebaran.
 
 
 ### [Get-AzureServiceRemoteDesktopExtension](./Get-AzureServiceRemoteDesktopExtension.md)
-Cmdlet ini akan menerapkan ekstensi desktop jarak jauh layanan awan pada semua peran atau peran bernama pada slot penyebaran tertentu.
+Cmdlet ini mendapatkan ekstensi desktop jarak jauh layanan cloud yang diterapkan pada semua peran atau peran bernama pada slot penyebaran tertentu.
 
 
 ### [Get-AzureService](./Get-AzureService.md)
@@ -182,23 +182,23 @@ Mengembalikan kunci akun penyimpanan utama dan sekunder untuk akun penyimpanan A
 
 
 ### [Get-AzureSubnet](./Get-AzureSubnet.md)
-Mendapatkan daftar subnet yang terkait dengan komputer virtual Azure yang ditentukan.
+Mendapatkan daftar subnet yang terkait dengan mesin virtual Azure yang ditentukan.
 
 
 ### [Get-AzureVMAccessExtension](./Get-AzureVMAccessExtension.md)
-Dapatkan ekstensi VMAccess yang diterapkan pada komputer virtual.
+Dapatkan ekstensi VMAccess yang diterapkan pada mesin virtual.
 
 
 ### [Get-AzureVMAvailableExtension](./Get-AzureVMAvailableExtension.md)
-Mendapatkan informasi ekstensi terbaru yang tersedia untuk mesin virtual.
+Mendapatkan informasi untuk ekstensi terbaru yang tersedia untuk mesin virtual.
 
 
 ### [Get-AzureVMBGInfoExtension](./Get-AzureVMBGInfoExtension.md)
-Ekstensi BGInfo diterapkan di komputer virtual.
+Dapatkan ekstensi BGInfo yang diterapkan pada mesin virtual.
 
 
 ### [Get-AzureVMChefExtension](./Get-AzureVMChefExtension.md)
-Dapatkan ekstensi Chef diterapkan di mesin virtual.
+Mendapatkan ekstensi Chef diterapkan pada mesin virtual.
 
 
 ### [Get-AzureVMCustomScriptExtension](./Get-AzureVMCustomScriptExtension.md)
@@ -206,7 +206,7 @@ Mendapatkan informasi dari ekstensi skrip kustom mesin virtual Azure.
 
 
 ### [Get-AzureVMDiagnosticsExtension](./Get-AzureVMDiagnosticsExtension.md)
-Dapatkan pengaturan ekstensi Azure Diagnostics di komputer virtual.
+Mendapatkan pengaturan ekstensi Diagnostik Azure di mesin virtual.
 
 
 ### [Get-AzureVMDscExtensionStatus](./Get-AzureVMDscExtensionStatus.md)
@@ -214,11 +214,11 @@ Mendapatkan status ekstensi DSC untuk semua mesin virtual yang digunakan di laya
 
 
 ### [Get-AzureVMDscExtension](./Get-AzureVMDscExtension.md)
-Dapatkan pengaturan ekstensi DSC di komputer virtual.
+Mendapatkan pengaturan ekstensi DSC di mesin virtual.
 
 
 ### [Get-AzureVMExtension](./Get-AzureVMExtension.md)
-Ekstensi sumber daya diterapkan pada mesin virtual.
+Dapatkan ekstensi sumber daya yang diterapkan ke mesin virtual.
 
 
 ### [Get-AzureVMImageDiskConfigSet](./Get-AzureVMImageDiskConfigSet.md)
@@ -226,19 +226,19 @@ Mendapatkan objek kumpulan konfigurasi disk dari konteks gambar input.
 
 
 ### [Get-AzureVMImage](./Get-AzureVMImage.md)
-Dapatkan propertinya di salah satu atau beberapa daftar sistem operasi atau gambar mesin virtual di repositori gambar.
+Mendapatkan properti pada satu atau daftar sistem operasi atau gambar mesin virtual di repository gambar.
 
 
 ### [Get-AzureVMMicrosoftAntimalwareExtension](./Get-AzureVMMicrosoftAntimalwareExtension.md)
-Mendapatkan detail ekstensi Antimalware Microsoft untuk komputer virtual.
+Mendapatkan detail ekstensi Antimalware Microsoft untuk mesin virtual.
 
 
 ### [Get-AzureVMPuppetExtension](./Get-AzureVMPuppetExtension.md)
-Dapatkan ekstensi Samakan diterapkan pada mesin virtual.
+Mendapatkan ekstensi Puppet diterapkan pada mesin virtual.
 
 
 ### [Get-AzureVMSqlServerExtension](./Get-AzureVMSqlServerExtension.md)
-Dapatkan pengaturan agen SQL Server IaaS di komputer virtual tertentu.
+Mendapatkan pengaturan agen iaaS SQL Server pada mesin virtual tertentu.
 
 
 ### [Get-AzureVM](./Get-AzureVM.md)
@@ -254,106 +254,106 @@ Mendapatkan objek daftar dengan informasi tentang jaringan virtual Azure.
 
 
 ### [Get-AzureWinRMUri](./Get-AzureWinRMUri.md)
-Dapatkan URI ke winRM https listener ke komputer virtual atau daftar mesin virtual di layanan yang dihosting.
+Mendapatkan URI ke WinRM https listener ke mesin virtual atau daftar mesin virtual dalam layanan yang dihosting.
 
 
-### [Import-AzureVM](./Import-AzureVM.md)
+### [Impor-AzureVM](./Import-AzureVM.md)
 Mengimpor status mesin virtual Azure dari file.
 
 
-### [Move-AzureDeployment](./Move-AzureDeployment.md)
-Menukar penyebaran antara produksi dan perbesaran.
+### [Pindahkan-AzureDeployment](./Move-AzureDeployment.md)
+Menukar penyebaran antara produksi dan pementasan.
 
 
-### [Move-AzureNetworkSecurityGroup](./Move-AzureNetworkSecurityGroup.md)
-Memigrasikan Grup Keamanan Jaringan ke tumpukan Azure Resource Manager.
+### [Pindahkan-AzureNetworkSecurityGroup](./Move-AzureNetworkSecurityGroup.md)
+Melakukan migrasi Grup Keamanan Jaringan ke tumpukan Resource Manager Azure.
 
 
-### [Move-AzureReservedIP](./Move-AzureReservedIP.md)
-Memigrasikan alamat IP khusus ke tumpukan Azure Resource Manager.
+### [Pindahkan-AzureReservedIP](./Move-AzureReservedIP.md)
+Melakukan migrasi alamat IP khusus ke tumpukan Resource Manager Azure.
 
 
-### [Move-AzureRouteTable](./Move-AzureRouteTable.md)
-Melakukan migrasi tabel rute ke tumpukan Azure Resource Manager.
+### [Pindahkan-AzureRouteTable](./Move-AzureRouteTable.md)
+Melakukan migrasi tabel rute ke tumpukan Resource Manager Azure.
 
 
-### [Move-AzureService](./Move-AzureService.md)
-Melakukan migrasi layanan awan ke tumpukan Azure Resource Manager.
+### [Pindahkan-AzureService](./Move-AzureService.md)
+Melakukan migrasi layanan awan ke tumpukan Resource Manager Azure.
 
 
 ### [Move-AzureStorageAccount](./Move-AzureStorageAccount.md)
-Memigrasikan akun penyimpanan ke tumpukan Azure Resource Manager.
+Melakukan migrasi akun penyimpanan ke tumpukan Resource Manager Azure.
 
 
-### [Move-AzureVirtualNetwork](./Move-AzureVirtualNetwork.md)
-Memigrasikan jaringan virtual ke tumpukan Azure Resource Manager.
+### [Pindahkan-AzureVirtualNetwork](./Move-AzureVirtualNetwork.md)
+Melakukan migrasi jaringan virtual ke tumpukan Resource Manager Azure.
 
 
-### [New-AzureAclConfig](./New-AzureAclConfig.md)
+### [AzureAclConfig Baru](./New-AzureAclConfig.md)
 Membuat objek konfigurasi ACL kosong.
 
 
-### [New-AzureAffinityGroup](./New-AzureAffinityGroup.md)
-Membuat grup afiliasi di langganan saat ini.
+### [Baru-AzureAffinityGroup](./New-AzureAffinityGroup.md)
+Membuat grup affinity dalam langganan saat ini.
 
 
-### [New-AzureCertificateSetting](./New-AzureCertificateSetting.md)
-Membuat objek pengaturan sertifikat untuk sertifikat berada di layanan.
+### [AzureCertificateSetting baru](./New-AzureCertificateSetting.md)
+Membuat objek pengaturan sertifikat untuk sertifikat berada dalam layanan.
 
 
-### [New-AzureDeployment](./New-AzureDeployment.md)
+### [AzureDeployment baru](./New-AzureDeployment.md)
 Membuat penyebaran dari layanan.
 
 
-### [AzureDn baru](./New-AzureDns.md)
-Membuat objek Pengaturan DNS Azure.
+### [AzureDns baru](./New-AzureDns.md)
+Membuat objek pengaturan DNS Azure.
 
 
-### [New-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
-Membuat konfigurasi penyeimbang muat internal.
+### [Baru-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
+Membuat konfigurasi load balancer internal.
 
 
 ### [New-AzureQuickVM](./New-AzureQuickVM.md)
 Mengonfigurasi dan membuat mesin virtual Azure.
 
 
-### [New-AzureReservedIP](./New-AzureReservedIP.md)
+### [AzureReservedIP Baru](./New-AzureReservedIP.md)
 Membuat alamat IP khusus.
 
 
-### [New-AzureServiceADDomainExtensionConfig](./New-AzureServiceADDomainExtensionConfig.md)
-Menghasilkan konfigurasi ekstensi domain AD untuk layanan awan.
+### [Baru-AzureServiceADDomainExtensionConfig](./New-AzureServiceADDomainExtensionConfig.md)
+Menghasilkan konfigurasi untuk ekstensi domain AD untuk layanan awan.
 
 
-### [New-AzureServiceDiagnosticsExtensionConfig](./New-AzureServiceDiagnosticsExtensionConfig.md)
+### [Baru-AzureServiceDiagnosticsExtensionConfig](./New-AzureServiceDiagnosticsExtensionConfig.md)
 Menghasilkan konfigurasi untuk ekstensi diagnostik untuk peran tertentu atau semua peran.
 
 
-### [New-AzureServiceExtensionConfig](./New-AzureServiceExtensionConfig.md)
+### [AzureServiceExtensionConfig Baru](./New-AzureServiceExtensionConfig.md)
 Membuat konfigurasi ekstensi layanan awan untuk penyebaran.
 
 
-### [New-AzureServiceRemoteDesktopExtensionConfig](./New-AzureServiceRemoteDesktopExtensionConfig.md)
+### [Baru-AzureServiceRemoteDesktopExtensionConfig](./New-AzureServiceRemoteDesktopExtensionConfig.md)
 Menghasilkan konfigurasi ekstensi desktop jarak jauh untuk penyebaran.
 
 
-### [New-AzureService](./New-AzureService.md)
+### [AzureService baru](./New-AzureService.md)
 Membuat layanan Azure.
 
 
-### [New-AzureSSHKey](./New-AzureSSHKey.md)
-Membuat objek Kunci LINUX untuk menyisipkan sertifikat yang sudah ada ke komputer virtual Azure berbasis Linux baru.
+### [AzureSSHKey Baru](./New-AzureSSHKey.md)
+Membuat objek Kunci SSH untuk menyisipkan sertifikat yang sudah ada ke mesin virtual Azure berbasis Linux yang baru.
 
 
-### [New-AzureStorageAccount](./New-AzureStorageAccount.md)
-Membuat akun penyimpanan baru di langganan Azure.
+### [AzureStorageAccount baru](./New-AzureStorageAccount.md)
+Membuat akun penyimpanan baru dalam langganan Azure.
 
 
-### [New-AzureStorageKey](./New-AzureStorageKey.md)
+### [AzureStorageKey Baru](./New-AzureStorageKey.md)
 Meregenerasi kunci penyimpanan untuk akun penyimpanan Azure.
 
 
-### [New-AzureVMConfig](./New-AzureVMConfig.md)
+### [AzureVMConfig baru](./New-AzureVMConfig.md)
 Membuat objek konfigurasi mesin virtual Azure.
 
 
@@ -361,11 +361,11 @@ Membuat objek konfigurasi mesin virtual Azure.
 Membuat objek kumpulan konfigurasi disk.
 
 
-### [New-AzureVMSqlServerAutoBackupConfig](./New-AzureVMSqlServerAutoBackupConfig.md)
-Membuat objek konfigurasi untuk SQL Server pencadangan otomatis.
+### [Baru-AzureVMSqlServerAutoBackupConfig](./New-AzureVMSqlServerAutoBackupConfig.md)
+Membuat objek konfigurasi untuk pencadangan otomatis SQL Server.
 
 
-### [New-AzureVMSqlServerAutoPatchingConfig](./New-AzureVMSqlServerAutoPatchingConfig.md)
+### [Baru-AzureVMSqlServerAutoPatchingConfig](./New-AzureVMSqlServerAutoPatchingConfig.md)
 Membuat objek konfigurasi untuk patch otomatis mesin virtual.
 
 
@@ -373,7 +373,7 @@ Membuat objek konfigurasi untuk patch otomatis mesin virtual.
 
 
 
-### [New-AzureVM](./New-AzureVM.md)
+### [AzureVM baru](./New-AzureVM.md)
 Membuat mesin virtual Azure.
 
 
@@ -381,47 +381,47 @@ Membuat mesin virtual Azure.
 Menerbitkan skrip konfigurasi status yang diinginkan ke penyimpanan blob Azure.
 
 
-### [Remove-AzureAclConfig](./Remove-AzureAclConfig.md)
-Menghapus objek konfigurasi ACL dari konfigurasi komputer virtual Azure.
+### [Hapus-AzureAclConfig](./Remove-AzureAclConfig.md)
+Menghapus objek konfigurasi ACL dari konfigurasi mesin virtual Azure.
 
 
-### [Remove-AzureAffinityGroup](./Remove-AzureAffinityGroup.md)
-Menghapus grup afiliasi dalam langganan.
+### [Hapus-AzureAffinityGroup](./Remove-AzureAffinityGroup.md)
+Menghapus grup affinity dalam langganan.
 
 
-### [Remove-AzureAvailabilitySet](./Remove-AzureAvailabilitySet.md)
-Menghapus kumpulan ketersediaan dari komputer virtual Azure.
+### [Hapus-AzureAvailabilitySet](./Remove-AzureAvailabilitySet.md)
+Menghapus ketersediaan yang diatur dari mesin virtual Azure.
 
 
-### [Remove-AzureCertificate](./Remove-AzureCertificate.md)
+### [Hapus-AzureCertificate](./Remove-AzureCertificate.md)
 Menghapus sertifikat dari layanan Azure.
 
 
-### [Remove-AzureDataDisk](./Remove-AzureDataDisk.md)
-Menghapus disk data dari komputer virtual Azure.
+### [Hapus-AzureDataDisk](./Remove-AzureDataDisk.md)
+Menghapus disk data dari mesin virtual Azure.
 
 
-### [Remove-AzureDeployment](./Remove-AzureDeployment.md)
+### [Hapus-AzureDeployment](./Remove-AzureDeployment.md)
 Menghapus penyebaran layanan awan.
 
 
-### [Remove-AzureDisk](./Remove-AzureDisk.md)
+### [Hapus-AzureDisk](./Remove-AzureDisk.md)
 Menghapus disk dari penyimpanan disk Azure.
 
 
-### [Remove-AzureDns](./Remove-AzureDns.md)
+### [Hapus AzureDns](./Remove-AzureDns.md)
 Menghapus server DNS dari layanan Azure.
 
 
-### [Remove-AzureEndpoint](./Remove-AzureEndpoint.md)
+### [Hapus-AzureEndpoint](./Remove-AzureEndpoint.md)
 Menghapus titik akhir dari mesin virtual Azure.
 
 
-### [Remove-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
-Menghapus konfigurasi penyeimbang muat internal.
+### [Hapus-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
+Menghapus konfigurasi load balancer internal.
 
 
-### [Remove-AzureNetworkInterfaceConfig](./Remove-AzureNetworkInterfaceConfig.md)
+### [Hapus-AzureNetworkInterfaceConfig](./Remove-AzureNetworkInterfaceConfig.md)
 
 
 
@@ -429,20 +429,20 @@ Menghapus konfigurasi penyeimbang muat internal.
 
 
 
-### [Remove-AzurePublicIP](./Remove-AzurePublicIP.md)
-Menghapus konfigurasi IP publik dari komputer virtual Azure.
+### [Hapus-AzurePublicIP](./Remove-AzurePublicIP.md)
+Menghapus konfigurasi IP Publik dari mesin virtual Azure.
 
 
-### [Remove-AzureReservedIPAssociation](./Remove-AzureReservedIPAssociation.md)
-Menghapus asosiasi dari alamat IP khusus untuk VM atau layanan cloud.
+### [Hapus-AzureReservedIPAssociation](./Remove-AzureReservedIPAssociation.md)
+Menghapus asosiasi dari alamat IP khusus ke VM atau layanan awan.
 
 
-### [Remove-AzureReservedIP](./Remove-AzureReservedIP.md)
+### [Hapus-AzureReservedIP](./Remove-AzureReservedIP.md)
 Menghapus alamat IP khusus menurut namanya.
 
 
-### [Remove-AzureServiceADDomainExtension](./Remove-AzureServiceADDomainExtension.md)
-Menghapus ekstensi domain AD layanan cloud yang diterapkan pada semua peran atau peran bernama di slot penyebaran tertentu.
+### [Hapus-AzureServiceADDomainExtension](./Remove-AzureServiceADDomainExtension.md)
+Menghapus ekstensi domain AD layanan awan yang diterapkan pada semua peran atau peran bernama di slot penyebaran tertentu.
 
 
 ### [Remove-AzureServiceAntimalwareExtension](./Remove-AzureServiceAntimalwareExtension.md)
@@ -450,51 +450,51 @@ Menghapus konfigurasi antimalware dari layanan awan.
 
 
 ### [Remove-AzureServiceDiagnosticsExtension](./Remove-AzureServiceDiagnosticsExtension.md)
-Menghapus ekstensi diagnostik layanan awan yang diterapkan di semua peran atau peran bernama pada slot penyebaran tertentu.
+Menghapus ekstensi diagnostik layanan awan yang diterapkan pada semua peran atau peran bernama pada slot penyebaran tertentu.
 
 
-### [Remove-AzureServiceExtension](./Remove-AzureServiceExtension.md)
+### [Hapus-AzureServiceExtension](./Remove-AzureServiceExtension.md)
 Menghapus ekstensi layanan awan yang diterapkan pada penyebaran.
 
 
-### [Remove-AzureServiceRemoteDesktopExtension](./Remove-AzureServiceRemoteDesktopExtension.md)
-Menghapus ekstensi desktop jarak jauh layanan awan yang diterapkan pada semua peran atau peran bernama pada slot penggunaan tertentu.
+### [Hapus-AzureServiceRemoteDesktopExtension](./Remove-AzureServiceRemoteDesktopExtension.md)
+Menghapus ekstensi desktop jarak jauh layanan awan yang diterapkan pada semua peran atau peran bernama pada slot penyebaran yang ditentukan.
 
 
-### [Remove-AzureStaticVNetIP](./Remove-AzureStaticVNetIP.md)
+### [Hapus-AzureStaticVNetIP](./Remove-AzureStaticVNetIP.md)
 Menghapus informasi alamat IP jaringan virtual statis dari objek mesin virtual, jika ada.
 
 
-### [Remove-AzureStorageAccount](./Remove-AzureStorageAccount.md)
+### [Hapus-AzureStorageAccount](./Remove-AzureStorageAccount.md)
 Menghapus akun penyimpanan tertentu dari langganan.
 
 
-### [Remove-AzureVirtualIP](./Remove-AzureVirtualIP.md)
+### [Hapus-AzureVirtualIP](./Remove-AzureVirtualIP.md)
 Menghapus alamat IP virtual dari Layanan Awan Anda.
 
 
-### [Remove-AzureVMAccessExtension](./Remove-AzureVMAccessExtension.md)
-Menghapus ekstensi VMAccess yang diterapkan pada komputer virtual.
+### [Hapus-AzureVMAccessExtension](./Remove-AzureVMAccessExtension.md)
+Menghapus ekstensi VMAccess yang diterapkan pada mesin virtual.
 
 
-### [Remove-AzureVMBGInfoExtension](./Remove-AzureVMBGInfoExtension.md)
-Menghapus ekstensi BGInfo yang diterapkan pada komputer virtual.
+### [Hapus-AzureVMBGInfoExtension](./Remove-AzureVMBGInfoExtension.md)
+Menghapus ekstensi BGInfo yang diterapkan pada mesin virtual.
 
 
-### [Remove-AzureVMChefExtension](./Remove-AzureVMChefExtension.md)
-Menghapus ekstensi Chef yang diterapkan pada komputer virtual.
+### [Hapus-AzureVMChefExtension](./Remove-AzureVMChefExtension.md)
+Menghapus ekstensi Chef yang diterapkan pada mesin virtual.
 
 
 ### [Remove-AzureVMCustomScriptExtension](./Remove-AzureVMCustomScriptExtension.md)
-Menghapus ekstensi skrip kustom dari komputer virtual.
+Menghapus ekstensi skrip kustom dari mesin virtual.
 
 
 ### [Remove-AzureVMDiagnosticsExtension](./Remove-AzureVMDiagnosticsExtension.md)
-Menghapus ekstensi Azure Diagnostics dari komputer virtual.
+Menghapus ekstensi Diagnostik Azure dari mesin virtual.
 
 
 ### [Remove-AzureVMDscExtension](./Remove-AzureVMDscExtension.md)
-Menghapus ekstensi Azure DSC dari komputer virtual.
+Menghapus ekstensi DSC Azure dari mesin virtual.
 
 
 ### [Remove-AzureVMExtension](./Remove-AzureVMExtension.md)
@@ -509,44 +509,44 @@ Menghapus konfigurasi disk data dari objek DiskConfigSet.
 Menghapus konfigurasi disk sistem operasi dari objek DiskConfigSet.
 
 
-### [Remove-AzureVMImage](./Remove-AzureVMImage.md)
+### [Hapus-AzureVMImage](./Remove-AzureVMImage.md)
 Menghapus gambar sistem operasi dari penyimpanan gambar.
 
 
 ### [Remove-AzureVMMicrosoftAntimalwareExtension](./Remove-AzureVMMicrosoftAntimalwareExtension.md)
-Menghapus ekstensi Microsoft Antimalware dari komputer virtual.
+Menghapus ekstensi Antimalware Microsoft dari mesin virtual.
 
 
 ### [Remove-AzureVMPuppetExtension](./Remove-AzureVMPuppetExtension.md)
-Menghapus ekstensi Salah Satu Ekstensi yang diterapkan pada mesin virtual.
+Menghapus ekstensi Puppet yang diterapkan pada mesin virtual.
 
 
 ### [Remove-AzureVMSqlServerExtension](./Remove-AzureVMSqlServerExtension.md)
-Menghapus ekstensi SQL Server mesin virtual Azure dari objek mesin virtual.
+Menghapus mesin virtual Azure SQL Server ekstensi dari objek mesin virtual.
 
 
-### [Remove-AzureVM](./Remove-AzureVM.md)
+### [Hapus-AzureVM](./Remove-AzureVM.md)
 Menghapus mesin virtual Azure.
 
 
-### [Remove-AzureVNetConfig](./Remove-AzureVNetConfig.md)
+### [Hapus-AzureVNetConfig](./Remove-AzureVNetConfig.md)
 Menghapus konfigurasi jaringan dari langganan Azure saat ini.
 
 
-### [Reset-AzureRoleInstance](./Reset-AzureRoleInstance.md)
-Meminta reboot atau mengganti satu contoh peran atau semua contoh peran dari peran tertentu.
+### [Mengatur ulang AzureRoleInstance](./Reset-AzureRoleInstance.md)
+Meminta boot ulang atau reimage contoh peran tunggal atau semua contoh peran dari peran tertentu.
 
 
-### [Mulai Ulang-AzureVM](./Restart-AzureVM.md)
+### [Mulai ulang-AzureVM](./Restart-AzureVM.md)
 Memulai ulang mesin virtual Azure.
 
 
-### [Save-AzureVhd](./Save-AzureVhd.md)
-Memungkinkan pengunduhan gambar .vhd.
+### [Simpan-AzureVhd](./Save-AzureVhd.md)
+Mengaktifkan unduhan gambar .vhd.
 
 
-### [Save-AzureVMImage](./Save-AzureVMImage.md)
-Mengambil dan menyimpan gambar mesin virtual Azure yang dihentikan.
+### [Simpan-AzureVMImage](./Save-AzureVMImage.md)
+Merekam dan menyimpan gambar mesin virtual Azure yang dihentikan.
 
 
 ### [Set-AzureAclConfig](./Set-AzureAclConfig.md)
@@ -554,15 +554,15 @@ Mengubah objek konfigurasi ACL.
 
 
 ### [Set-AzureAffinityGroup](./Set-AzureAffinityGroup.md)
-Mengubah properti grup afiliasi.
+Mengubah properti grup affinity.
 
 
 ### [Set-AzureAvailabilitySet](./Set-AzureAvailabilitySet.md)
-Mengatur nama ketersediaan di komputer virtual Azure.
+Mengatur nama ketersediaan yang ditetapkan di mesin virtual Azure.
 
 
 ### [Set-AzureDataDisk](./Set-AzureDataDisk.md)
-Memodifikasi host cache disk data yang sudah ada di komputer virtual Azure.
+Mengubah cache host disk data yang sudah ada di mesin virtual Azure.
 
 
 ### [Set-AzureDeployment](./Set-AzureDeployment.md)
@@ -574,15 +574,15 @@ Mengubah alamat IP server DNS.
 
 
 ### [Set-AzureEndpoint](./Set-AzureEndpoint.md)
-Mengubah titik akhir yang ditetapkan ke komputer virtual.
+Mengubah titik akhir yang ditetapkan ke mesin virtual.
 
 
 ### [Set-AzureInternalLoadBalancer](./Set-AzureInternalLoadBalancer.md)
-Mengubah konfigurasi penyeimbang muat internal dalam layanan Azure.
+Mengubah konfigurasi penyeimbang muatan internal dalam layanan Azure.
 
 
 ### [Set-AzureLoadBalancedEndpoint](./Set-AzureLoadBalancedEndpoint.md)
-Mengubah semua titik akhir dalam penyeimbang muat dalam layanan Azure.
+Mengubah semua titik akhir dalam penyeimbang beban yang diatur dalam layanan Azure.
 
 
 ### [Set-AzureNetworkInterfaceConfig](./Set-AzureNetworkInterfaceConfig.md)
@@ -594,7 +594,7 @@ Mengubah semua titik akhir dalam penyeimbang muat dalam layanan Azure.
 
 
 ### [Set-AzureOSDisk](./Set-AzureOSDisk.md)
-Mengubah mode cache host komputer virtual Azure.
+Mengubah mode cache host mesin virtual Azure.
 
 
 ### [Set-AzurePublicIP](./Set-AzurePublicIP.md)
@@ -606,7 +606,7 @@ Mengaitkan alamat IP khusus dengan mesin virtual atau layanan cloud yang sudah a
 
 
 ### [Set-AzureRole](./Set-AzureRole.md)
-Mengatur jumlah instans peran Azure yang akan dijalankan.
+Mengatur jumlah instans peran Azure untuk dijalankan.
 
 
 ### [Set-AzureServiceADDomainExtension](./Set-AzureServiceADDomainExtension.md)
@@ -614,23 +614,23 @@ Mengaktifkan ekstensi Domain AD untuk layanan awan.
 
 
 ### [Set-AzureServiceAntimalwareExtension](./Set-AzureServiceAntimalwareExtension.md)
-Mengonfigurasi ekstensi Antimalware Microsoft untuk layanan awan.
+Mengonfigurasi ekstensi Antimalware Microsoft untuk layanan cloud.
 
 
 ### [Set-AzureServiceDiagnosticsExtension](./Set-AzureServiceDiagnosticsExtension.md)
-Memungkinkan ekstensi Azure Diagnostics untuk peran tertentu atau semua peran pada layanan yang disebarkan atau saat penyebaran.
+Mengaktifkan ekstensi Diagnostik Azure pada peran tertentu atau semua peran pada layanan yang disebarkan atau saat penyebaran.
 
 
 ### [Set-AzureServiceExtension](./Set-AzureServiceExtension.md)
-Menambahkan ekstensi layanan awan ke penggunaan.
+Menambahkan ekstensi layanan awan ke penyebaran.
 
 
 ### [Set-AzureServiceRemoteDesktopExtension](./Set-AzureServiceRemoteDesktopExtension.md)
-Memungkinkan ekstensi desktop jarak jauh pada peran tertentu atau semua peran pada layanan yang disebarkan atau saat penggunaan.
+Mengaktifkan ekstensi desktop jarak jauh pada peran tertentu atau semua peran pada layanan yang digunakan atau saat penyebaran.
 
 
 ### [Set-AzureService](./Set-AzureService.md)
-Mengatur atau memperbarui label dan deskripsi layanan Microsoft Azure tertentu.
+Mengatur atau memperbarui label dan deskripsi layanan Microsoft Azure yang ditentukan.
 
 
 ### [Set-AzureStaticVNetIP](./Set-AzureStaticVNetIP.md)
@@ -642,7 +642,7 @@ Memperbarui properti akun penyimpanan dalam langganan Azure.
 
 
 ### [Set-AzureSubnet](./Set-AzureSubnet.md)
-Menentukan daftar subnet untuk komputer virtual Azure.
+Menentukan daftar subnet untuk mesin virtual Azure.
 
 
 ### [Set-AzureVMAccessExtension](./Set-AzureVMAccessExtension.md)
@@ -650,7 +650,7 @@ Mengatur ekstensi VMAccess untuk mesin virtual.
 
 
 ### [Set-AzureVMBGInfoExtension](./Set-AzureVMBGInfoExtension.md)
-Mengatur ekstensi BGInfo untuk komputer virtual.
+Mengatur ekstensi BGInfo untuk mesin virtual.
 
 
 ### [Set-AzureVMBootDiagnostics](./Set-AzureVMBootDiagnostics.md)
@@ -666,11 +666,11 @@ Mengatur informasi untuk ekstensi skrip kustom mesin virtual Azure.
 
 
 ### [Set-AzureVMDiagnosticsExtension](./Set-AzureVMDiagnosticsExtension.md)
-Mengonfigurasi ekstensi Azure Diagnostics di komputer virtual.
+Mengonfigurasi ekstensi Diagnostik Azure di mesin virtual.
 
 
 ### [Set-AzureVMDscExtension](./Set-AzureVMDscExtension.md)
-Mengonfigurasi ekstensi DSC di komputer virtual.
+Mengonfigurasi ekstensi DSC pada mesin virtual.
 
 
 ### [Set-AzureVMExtension](./Set-AzureVMExtension.md)
@@ -678,35 +678,35 @@ Mengatur ekstensi sumber daya untuk mesin virtual.
 
 
 ### [Set-AzureVMImageDataDiskConfig](./Set-AzureVMImageDataDiskConfig.md)
-Mengatur properti Disk Data pada gambar mesin virtual.
+Mengatur properti Disk Data pada citra mesin virtual.
 
 
 ### [Set-AzureVMImageOSDiskConfig](./Set-AzureVMImageOSDiskConfig.md)
-Mengatur properti disk sistem operasi pada gambar mesin virtual.
+Mengatur properti disk sistem operasi pada citra mesin virtual.
 
 
 ### [Set-AzureVMMicrosoftAntimalwareExtension](./Set-AzureVMMicrosoftAntimalwareExtension.md)
-Mengonfigurasi ekstensi Microsoft Antimalware untuk komputer virtual.
+Mengonfigurasi ekstensi Antimalware Microsoft untuk mesin virtual.
 
 
 ### [Set-AzureVMPuppetExtension](./Set-AzureVMPuppetExtension.md)
-Mengatur ekstensi Salah Satu Ekstensi untuk mesin virtual.
+Mengatur ekstensi Puppet untuk mesin virtual.
 
 
-### [Set-AzureVMSize](./Set-AzureVMSize.md)
-Mengatur ukuran komputer virtual Azure.
+### [Atur-AzureVMSize](./Set-AzureVMSize.md)
+Mengatur ukuran mesin virtual Azure.
 
 
 ### [Set-AzureVMSqlServerExtension](./Set-AzureVMSqlServerExtension.md)
-Mengatur ekstensi SQL Server Azure di komputer virtual.
+Mengatur ekstensi Server Azure SQL pada mesin virtual.
 
 
 ### [Set-AzureVNetConfig](./Set-AzureVNetConfig.md)
 Memperbarui pengaturan jaringan virtual untuk layanan cloud Azure.
 
 
-### [Set-Azure Azure AzureUpgradeDomain](./Set-AzureWalkUpgradeDomain.md)
-Memandu domain pemutakhiran tertentu.
+### [Set-AzureWalkUpgradeDomain](./Set-AzureWalkUpgradeDomain.md)
+Memanjat domain pemutakhiran yang ditentukan.
 
 
 ### [Start-AzureVM](./Start-AzureVM.md)
@@ -717,20 +717,20 @@ Memulai mesin virtual Azure.
 Mematikan mesin virtual Azure.
 
 
-### [Test-AzureStaticVNetIP](./Test-AzureStaticVNetIP.md)
-Menguji ketersediaan alamat IP jaringan virtual statis, dan mendapatkan daftar saran jika alamat yang diku kueri tidak tersedia.
+### [Uji-AzureStaticVNetIP](./Test-AzureStaticVNetIP.md)
+Menguji ketersediaan alamat IP jaringan virtual statis, dan mendapatkan daftar saran jika alamat yang dikueri tidak tersedia.
 
 
 ### [Update-AzureDisk](./Update-AzureDisk.md)
 Mengubah label disk di penyimpanan disk Azure.
 
 
-### [Update-AzureVMImage](./Update-AzureVMImage.md)
-Memperbarui label gambar sistem operasi di penyimpanan gambar.
+### [Pembaruan-AzureVMImage](./Update-AzureVMImage.md)
+Memperbarui label gambar sistem operasi dalam penyimpanan gambar.
 
 
-### [Update-AzureVM](./Update-AzureVM.md)
-Mengubah konfigurasi komputer virtual Azure.
+### [Perbarui-AzureVM](./Update-AzureVM.md)
+Mengubah konfigurasi mesin virtual Azure.
 
 
 

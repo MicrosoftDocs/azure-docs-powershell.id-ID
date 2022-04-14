@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBRestorableDatabaseAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBRestorableDatabaseAccount.md
 ms.openlocfilehash: c9d647e8b5797c05de2bf39282c5b94bc9dba28d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140078363"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142088133"
 ---
 # Get-AzCosmosDBRestorableDatabaseAccount
 
 ## SYNOPSIS
-Mendapatkan objek akun database yang dapat dikembalikan
+Mendapatkan objek akun database yang dapat disehatkan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbrestorabledatabaseaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbrestorabledatabaseaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzCosmosDBRestorableDatabaseAccount [-Location <String>] [-DatabaseAccountIn
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar semua objek akun database yang dapat dikembalikan dalam akun tertentu, atau objek akun database tertentu yang dapat dikembalikan dengan contohId dan lokasi tertentu
+Mendapatkan daftar semua objek akun database yang dapat disembuhkan dalam akun tertentu, atau objek akun database tertentu yang dapat disembuhkan dengan instanceId dan lokasi tertentu
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ ApiType                   : MongoDB
 RestorableLocations       : {West US}
 ```
 
-Mencantumkan semua akun database yang dapat dikembalikan di langganan saat ini
+Mencantumkan semua akun database yang dapat disehatkan dalam langganan saat ini
 
 ### Contoh 1
 ```powershell
@@ -80,12 +80,12 @@ ApiType                   : Sql
 RestorableLocations       : {West US, East US}
 ```
 
-Mendapatkan akun database yang dapat dikembalikan dengan DatabaseInstanceId yang diberikan di lokasi ARM yang diberikan  
+Mendapatkan akun database yang dapat disembuhkan dengan DatabaseInstanceId yang diberikan di lokasi ARM yang diberikan  
 
 ## PARAMETERS
 
 ### -DatabaseAccountInstanceId
-Contoh Id dari akun database CosmosDB.
+Id instans akun database CosmosDB.
 
 ```yaml
 Type: System.String
@@ -145,11 +145,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

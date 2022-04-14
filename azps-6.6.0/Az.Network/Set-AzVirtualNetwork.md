@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetwork.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetwork.md
 ms.openlocfilehash: 2bcd1bf802e2148f30b97e3a244df676e0efbb27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140280409"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142045667"
 ---
 # Set-AzVirtualNetwork
 
@@ -19,7 +19,7 @@ ms.locfileid: "140280409"
 Memperbarui jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetwork) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetwork) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +47,12 @@ Remove-AzVirtualNetworkSubnetConfig -Name backendSubnet -VirtualNetwork $virtual
 $virtualNetwork | Set-AzVirtualNetwork ## Remove subnet from virtual network
 ```
 
-Contoh ini membuat jaringan virtual yang disebut TestResourceGroup dengan dua subnet: frontendSubnet dan backendSubnet. Lalu, backendSubnet menghapus subnet backendSubnet dari representasi dalam memori jaringan virtual. Cmdlet Set-AzVirtualNetwork lalu digunakan untuk menulis status jaringan virtual yang diubah di sisi layanan. Saat cmdlet Set-AzVirtualNetwork dijalankan, backendSubnet dihapus.
+Contoh ini membuat jaringan virtual yang disebut TestResourceGroup dengan dua subnet: frontendSubnet dan backendSubnet. Kemudian menghapus subnet backendSubnet dari representasi dalam memori jaringan virtual. Cmdlet Set-AzVirtualNetwork kemudian digunakan untuk menulis status jaringan virtual yang dimodifikasi di sisi layanan. Ketika cmdlet Set-AzVirtualNetwork dijalankan, backendSubnet akan dihapus.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan objek jaringan virtual yang mewakili status yang harus diatur oleh jaringan virtual.
+Menentukan objek jaringan maya yang mewakili status di mana jaringan maya harus disetel.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

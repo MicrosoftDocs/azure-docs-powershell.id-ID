@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebAppAzureStoragePath.md
 ms.openlocfilehash: f4804f90f121d6607b78baca1fbce59469e73314
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140301901"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142116773"
 ---
 # New-AzWebAppAzureStoragePath
 
 ## SYNOPSIS
-Membuat objek yang mewakili Azure Storage jalur untuk terpasang di Web App. Parameter ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp Set-AzWebAppSlot
+Membuat objek yang mewakili jalur Azure Storage untuk dipasang di Web App. Ini dimaksudkan untuk digunakan sebagai parameter (-AzureStoragePath) untuk Set-AzWebApp dan Set-AzWebAppSlot
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebappazurestoragepath) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebappazurestoragepath) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzWebAppAzureStoragePath -Name <String> -Type <AzureStorageType> -AccountNam
 ```
 
 ## DESCRIPTION
-Membuat objek yang mewakili jalur Azure Storage akan terpasang di dalam Aplikasi Web.
+Membuat objek yang mewakili jalur Azure Storage untuk dipasang di dalam Aplikasi Web.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ PS C:\> Set-AzWebApp -ResourceGroup myresourcegroup -Name myapp -AzureStoragePat
 ## PARAMETERS
 
 ### -AccessKey
-Tombol Akses ke Azure Storage tersebut
+Kunci akses ke akun Azure Storage
 
 ```yaml
 Type: System.String
@@ -61,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Nama Akun
-Azure Storage akun.
+### -AccountName
+Azure Storage nama akun.
 Misalnya: myfilestorageaccount.file.core.windows.net
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -MountPath
-Jalur dalam wadah di mana berbagi yang ditentukan oleh ShareName akan diekspos
+Jalur dalam wadah tempat berbagi yang ditentukan oleh ShareName akan diekspos
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Nama berbagi untuk terpasang pada wadah
+Nama bagikan untuk dipasangkan ke wadah
 
 ```yaml
 Type: System.String
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Tipe Azure Storage anda.
-Windows Baru hanya mendukung File Azure
+Tipe akun Azure Storage.
+Windows Container hanya mendukung Azure Files
 
 ```yaml
 Type: Microsoft.Azure.Management.WebSites.Models.AzureStorageType
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

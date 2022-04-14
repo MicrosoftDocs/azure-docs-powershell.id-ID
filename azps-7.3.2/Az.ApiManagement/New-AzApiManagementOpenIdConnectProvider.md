@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
-ms.openlocfilehash: 55c6e4956a85b5443fb3c93861d2a275b312d80e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bc24be88c799af86eec7b8c30d2d1b5a97f01033
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189456"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142115585"
 ---
 # New-AzApiManagementOpenIdConnectProvider
 
 ## SYNOPSIS
 Membuat penyedia Koneksi OpenID.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,21 +30,21 @@ New-AzApiManagementOpenIdConnectProvider -Context <PsApiManagementContext> [-Ope
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementOpenIdConnectProvider** membuat penyedia Koneksi OpenID di Manajemen API Azure.
+Cmdlet **New-AzApiManagementOpenIdConnectProvider** membuat penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Buat penyedia
+### Contoh 1: Membuat penyedia
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 New-AzApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectProviderId "OICProvider01" -Name "Contoso OpenID Connect Provider" -MetadataEndpointUri "https://openid.provider/configuration" -ClientId "12432143" -Description "OpenID Connect provider description"
 ```
 
-Perintah ini membuat Penyedia Koneksi OpenID **bernama** Contoso OpenID Koneksi Provider
+Perintah ini membuat **Penyedia** Koneksi OpenID bernama Penyedia Koneksi Contoso OpenID
 
 ### Contoh 2
 
-Membuat penyedia Koneksi OpenID. (otomatisgenerated)
+Membuat penyedia Koneksi OpenID. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataEndpointUri
-Menentukan URI titik akhir metadata dari penyedia.
+Menentukan URI titik akhir metadata penyedia.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk penyedia.
+Menentukan nama yang mudah dikenali untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -OpenIdConnectProviderId
 Menentukan ID untuk penyedia.
-Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkan ID.
+Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzDdosProtectionPlan.md
 ms.openlocfilehash: 235cb3f62c36d3e20a1c2caebe103a97fd691095
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140330585"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142047251"
 ---
 # New-AzDdosProtectionPlan
 
 ## SYNOPSIS
-Membuat rencana proteksi DDoS.
+Membuat paket proteksi DDoS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azddosprotectionplan) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,17 +32,17 @@ Cmdlet New-AzDdosProtectionPlan membuat rencana proteksi DDoS.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan mengaitkan rencana proteksi DDoS dengan jaringan virtual baru
+### Contoh 1: Membuat dan mengaitkan paket proteksi DDoS dengan jaringan virtual baru
 ```
 D:\> $ddosProtectionPlan = New-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName -Location "West US"
 D:\> $subnet = New-AzVirtualNetworkSubnetConfig -Name SubnetName -AddressPrefix 10.0.1.0/24
 D:\> $vnet = New-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName -Location "West US" -AddressPrefix 10.0.0.0/16 -DnsServer 8.8.8.8 -Subnet $subnet -EnableDdoSProtection -DdosProtectionPlanId $ddosProtectionPlan.Id
 ```
 
-Pertama, kami membuat paket Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
-Lalu, kami membuat jaringan virtual baru dengan **New-AzVirtualNetwork** dan kami menentukan ID paket yang baru dibuat di parameter **DdosProtectionPlanId**. Dalam kasus ini, karena kami mengaitkan jaringan virtual dengan rencana, kami juga dapat menentukan parameter **EnableDdoSProtection**.
+Pertama, kami membuat rencana Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
+Lalu, kami membuat jaringan virtual baru dengan **New-AzVirtualNetwork** dan kami menentukan ID rencana yang baru dibuat dalam parameter **DdosProtectionPlanId**. Dalam hal ini, karena kami mengaitkan jaringan virtual dengan rencana, kami juga dapat menentukan parameter **EnableDdoSProtection**.
 
-### Contoh 2: Membuat dan mengaitkan rencana proteksi DDoS dengan jaringan virtual yang sudah ada
+### Contoh 2: Membuat dan mengaitkan paket proteksi DDoS dengan jaringan virtual yang sudah ada
 ```
 D:\> $ddosProtectionPlan = New-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName -Location "West US"
 D:\> $vnet = Get-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName
@@ -90,14 +90,14 @@ DdosProtectionPlan     : {
 EnableVmProtection     : false
 ```
 
-Pertama, kami membuat paket Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
-Kedua, kita mendapatkan versi jaringan virtual terbaru yang ingin kami kaitkan dengan paket. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId yang** berisi referensi ke ID dari paket yang baru dibuat. Dalam hal ini, jika kami mengaitkan jaringan virtual dengan paket proteksi DDoS, kami juga dapat menetapkan bendera **EnableDdosProtection** ke true.
-Terakhir, kami tetap pada status baru dengan pemipaan variabel lokal ke **Set-AzVirtualNetwork**.
+Pertama, kami membuat rencana Proteksi DDoS baru dengan perintah **New-AzDdosProtectionPlan** .
+Kedua, kami mendapatkan versi terbaru dari jaringan virtual yang ingin kami kaitkan dengan rencana. Kami memperbarui properti **DdosProtectionPlan** dengan objek **PSResourceId** yang berisi referensi ke ID rencana yang baru dibuat. Dalam hal ini, jika kami mengaitkan jaringan virtual dengan paket proteksi DDoS, kami juga dapat mengatur bendera **EnableDdosProtection** ke true.
+Akhirnya, kami tetap menggunakan status baru dengan memipakan variabel lokal ke **Set-AzVirtualNetwork**.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama paket proteksi DDoS yang akan dibuat.
+Menentukan nama rencana proteksi DDoS yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -234,9 +234,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azddosProtectionPlan](./Get-AzDdosProtectionPlan.md)
+[Get-AzDdosProtectionPlan](./Get-AzDdosProtectionPlan.md)
 
-[Remove-azddosProtectionPlan](./Remove-AzDdosProtectionPlan.md)
+[Remove-AzDdosProtectionPlan](./Remove-AzDdosProtectionPlan.md)
 
 [New-AzVirtualNetwork](./New-AzVirtualNetwork.md)
 

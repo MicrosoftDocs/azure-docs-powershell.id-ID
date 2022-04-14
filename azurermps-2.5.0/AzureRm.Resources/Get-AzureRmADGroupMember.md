@@ -5,11 +5,11 @@ ms.assetid: 52C5CD8B-2489-4FE6-9F33-B3350531CD8E
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermadgroupmember
 schema: 2.0.0
 ms.openlocfilehash: f790266f1e61446cb9d1c257929cf8b6e3ab25d3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428753"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780431"
 ---
 # Get-AzureRmADGroupMember
 
@@ -43,15 +43,15 @@ Mencantumkan anggota grup AD dalam penyewa saat ini.
 
 ## EXAMPLES
 
-### Contoh 1 - Anggota daftar menurut id objek grup AD
+### Contoh 1 - Daftar anggota menurut id objek grup AD
 
 ```
 PS C:\> Get-AzureRmADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
 ```
 
-Mencantumkan anggota grup AD dengan object id '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
+Mencantumkan anggota grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
 
-### Contoh 2 - Anggota daftar dengan ID objek grup AD menggunakan pembuatan halaman
+### Contoh 2 - Daftar anggota menurut id objek grup AD menggunakan halaman
 
 ```
 PS C:\> Get-AzureRmADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE -First 100
@@ -59,18 +59,18 @@ PS C:\> Get-AzureRmADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D32
 
 Mencantumkan 100 anggota pertama grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
 
-### Contoh 3 - Anggota daftar dengan pemipaan
+### Contoh 3 - Daftar anggota dengan pipa
 
 ```
 PS C:\> Get-AzureRmADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Get-AzureRmADGroupMember
 ```
 
-Mendapatkan grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan pipanya ke cmdlet Get-AzureRmADGroupMember untuk mencantumkan semua anggota di grup itu. 
+Mendapatkan grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan menyalurkannya ke cmdlet Get-AzureRmADGroupMember untuk mencantumkan semua anggota dalam grup itu. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,8 +84,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -175,18 +175,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.Guid
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDGroup
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADGroup
 Parameter: GroupObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDObject
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADObject
 
 ## CATATAN
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Grant-AzureRmHDInsightRdpServicesAccess.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Grant-AzureRmHDInsightRdpServicesAccess.md
 ms.openlocfilehash: ce169dc1cce1552b48aa864885c6877624da0176
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428410"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779002"
 ---
 # Grant-AzureRmHDInsightRdpServicesAccess
 
 ## SYNOPSIS
-Memberikan akses RDP ke Windows kluster.
+Memberikan akses RDP ke klaster Windows.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Grant-AzureRmHDInsightRdpServicesAccess [-ClusterName] <String> [-RdpCredential]
 ```
 
 ## DESCRIPTION
-Cmdlet **Grant-AzureRmHDInsightRdpServicesAccess** mengaktifkan Remote Desktop Protocol (RDP) untuk mengakses ke kluster Azure HDInsight berbasis Windows.
+Cmdlet **Grant-AzureRmHDInsightRdpServicesAccess** memungkinkan Remote Desktop Protocol (RDP) mengakses cluster Azure HDInsight berbasis Windows.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ PS C:\> Grant-AzureRmHDInsightRdpServicesAccess `
             -RdpAccessExpiry $newRdpExpiry
 ```
 
-Perintah ini memberikan akses RDP ke kluster yang bernama Your-hadoop-001.
+Perintah ini memberikan akses RDP ke kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -RdpAccessExpiry
-Menentukan kedaluwarsa, sebagai objek **DateTime,** untuk akses RDP ke kluster.
+Menentukan kedaluwarsa, sebagai objek **DateTime** , untuk akses RDP ke kluster.
 
 ```yaml
 Type: System.DateTime
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -RdpCredential
 Menentukan kredensial RDP untuk kluster.
-Ini hanya untuk Windows kluster.
+Ini hanya untuk kluster Windows.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -126,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -140,6 +140,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Revoke-AzureRmHDInsightRdpServicesAccess](./Revoke-AzureRmHDInsightRdpServicesAccess.md)
+[Cabut-AzureRmHDInsightRdpServicesAccess](./Revoke-AzureRmHDInsightRdpServicesAccess.md)
 
 

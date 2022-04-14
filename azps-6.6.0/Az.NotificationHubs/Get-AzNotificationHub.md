@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Get-AzNotificationHub.md
 ms.openlocfilehash: e48cd92a625c136edac91b27aa898856a104d0c3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140306851"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142045451"
 ---
 # Get-AzNotificationHub
 
@@ -19,7 +19,7 @@ ms.locfileid: "140306851"
 Mendapatkan informasi tentang hub pemberitahuan Anda.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhub) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/get-aznotificationhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,13 +29,13 @@ Get-AzNotificationHub [-ResourceGroup] <String> [-Namespace] <String> [[-Notific
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzNotificationHub** mendapatkan informasi tentang hub pemberitahuan dalam ruang nama yang ditentukan dan ditetapkan ke grup sumber daya yang ditentukan.
-Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan dalam ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
-Alternatifnya, Anda dapat menggunakan parameter *NotificationHub* untuk membatasi data yang dikembalikan menjadi informasi tentang hub pemberitahuan tertentu.
-Hub pemberitahuan digunakan untuk mengirimkan pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Windows Store, yang digunakan oleh klien tersebut.
-Hub tersebut kira-kira sama dengan aplikasi individu dan setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
+Cmdlet **Get-AzNotificationHub** mendapatkan informasi tentang hub pemberitahuan dalam ruang nama tertentu dan ditetapkan ke grup sumber daya tertentu.
+Misalnya, Anda bisa mendapatkan informasi untuk semua hub pemberitahuan di ruang nama ContosoNamespace dan ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Atau, Anda dapat menggunakan parameter *NotificationHub* untuk membatasi data yang dikembalikan ke informasi tentang hub pemberitahuan tertentu.
+Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform, seperti iOS, Android, Windows Phone 8, dan Bursa Windows, yang digunakan oleh klien tersebut.
+Hub ini kira-kira setara dengan aplikasi individual dan setiap aplikasi Anda biasanya akan memiliki hub pemberitahuannya sendiri.
 Cmdlet ini hanya mendapatkan informasi tentang hub itu sendiri.
-Cmdlet lain, seperti Get-AzNotificationHubAuthorizationRules, Get-AzNotificationHubListKeys, dan Get-AzNotificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
+Cmdlet lainnya, seperti Get-AzNotificationHubAuthorizationRules, Get-AzNotificationHubListKeys, dan Get-AzNotificationHubPNSCredentials, diperlukan untuk mendapatkan informasi tentang aturan otorisasi hub, string koneksi, dan kredensial layanan pemberitahuan platform.
 
 ## EXAMPLES
 
@@ -44,11 +44,11 @@ Cmdlet lain, seperti Get-AzNotificationHubAuthorizationRules, Get-AzNotification
 PS C:\>Get-AzNotificationHub -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
 
-Perintah ini mendapatkan informasi untuk semua hub pemberitahuan dalam ruang nama contosoNamespace yang telah ditetapkan ke grup sumber daya ContosoNotificationsGroup.
+Perintah ini mendapatkan informasi untuk semua hub pemberitahuan di ruang nama bernama ContosoNamespace yang telah ditetapkan ke grup sumber daya ContosoNotificationsGroup.
 
 ### Contoh 2
 
-Mendapatkan informasi tentang hub pemberitahuan Anda. (otomatisgenerated)
+Mendapatkan informasi tentang hub pemberitahuan Anda. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -58,7 +58,7 @@ Get-AzNotificationHub -Namespace 'ContosoNamespace' -NotificationHub 'ContosoInt
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationHub
-Menentukan nama hub pemberitahuan yang akan dapatkan cmdlet ini.
+Menentukan nama hub pemberitahuan yang didapat cmdlet ini.
 Hub pemberitahuan digunakan untuk mengirim pemberitahuan push ke beberapa klien terlepas dari platform yang digunakan oleh klien tersebut.
 
 ```yaml
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat hub pemberitahuan ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,18 +6,18 @@ Help Version: 1.0.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StorageSync/Commands.StorageSync/help/AzureRm.StorageSync.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/StorageSync/Commands.StorageSync/help/AzureRm.StorageSync.md
-ms.openlocfilehash: 57c9b11279af7d01bfb55bdeb434a5223a7fda4cea1a8b7ae959532457a031bf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d0800429f753146009170069754ba93bf705ed3a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132418493"
 ---
-# Modul AzureRm.StorageSync
+# AzureRm.StorageSync Module
 ## Deskripsi
-Cmdlet di modul Storage Sync memungkinkan Anda mengelola operasi yang terkait dengan Sinkronisasi File Azure di PowerShell.
+Cmdlet dalam modul sinkronisasi Storage memungkinkan Anda mengelola operasi yang berkaitan dengan Sinkronisasi File Azure di PowerShell.
 
 ## Cmdlet AzureRm.StorageSync
 ### [Invoke-AzureRmStorageSyncCompatibilityCheck](Invoke-AzureRmStorageSyncCompatibilityCheck.md)
-Memeriksa potensi masalah kompatibilitas antara sistem dan Sinkronisasi File Azure.
+Memeriksa potensi masalah kompatibilitas antara sistem Anda dan Sinkronisasi File Azure.
 

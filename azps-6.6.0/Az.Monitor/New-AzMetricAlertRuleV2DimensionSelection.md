@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzMetricAlertRuleV2DimensionSelection.md
 ms.openlocfilehash: bedb1e065a372be4a7469ea10ba38136b832b277
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140252521"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141910163"
 ---
 # New-AzMetricAlertRuleV2DimensionSelection
 
 ## SYNOPSIS
-Membuat objek pilihan dimensi lokal yang bisa digunakan untuk menyusun kriteria pemberitahuan metrik.
+Membuat objek pemilihan dimensi lokal yang dapat digunakan untuk menyusun kriteria peringatan metrik.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/new-azmetricalertrulev2dimensionselection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azmetricalertrulev2dimensionselection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ New-AzMetricAlertRuleV2DimensionSelection -DimensionName <String> -ValuesToInclu
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzMetricAlertRuleV2DimensionSelection** membuat objek pilihan dimensi lokal untuk membantu pembuatan kriteria peringatan metrik menggunakan cmdlet [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria) .
+Cmdlet **New-AzMetricAlertRuleV2DimensionSelection membuat objek pemilihan** dimensi lokal untuk membantu pembangunan kriteria peringatan metrik menggunakan cmdlet [New-AzMetricAlertRuleV2Criteria](https://docs.microsoft.com/powershell/module/az.monitor/new-azmetricalertrulev2criteria) .
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek pilihan dimensi
+### Contoh 1: Membuat objek pemilihan dimensi
 
 ```powershell
 PS C:\> New-AzMetricAlertRuleV2DimensionSelection -DimensionName LUN -ValuesToInclude 1,3,4
@@ -42,7 +42,7 @@ Dimension IncludeValues ExcludeValues
 LUN       {1, 3, 4}
 ```
 
-Perintah ini akan membuat objek pilihan dimensi yang menentukan bahwa nilai {1,3,4} perlu dipilih untuk Dimensi "LUN"
+Perintah ini membuat objek pemilihan dimensi yang menentukan bahwa nilai {1,3,4} harus dipilih untuk Dimensi "LUN"
 
 ## PARAMETERS
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DimensionName
-Nama dimensi
+Nama Dimensi
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

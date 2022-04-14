@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccount.md
 ms.openlocfilehash: ab0a1a997f245c1d99c90214df10f1138b792c6c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140136753"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141911307"
 ---
 # Get-AzIntegrationAccount
 
@@ -19,7 +19,7 @@ ms.locfileid: "140136753"
 Mendapatkan akun integrasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Cmdlet **Get-AzIntegrationAccount** mendapatkan akun integrasi dari grup sumber 
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ CreatedTime : 3/26/2016 4:26:07 PM
 ChangedTime : 3/26/2016 4:26:07 PM
 ```
 
-Perintah ini mendapatkan akun integrasi yang bernama IntegrationAccount31 dari grup sumber daya yang ditentukan.
+Perintah ini mendapatkan akun integrasi bernama IntegrationAccount31 dari grup sumber daya yang ditentukan.
 
 ### Contoh 2: Dapatkan akun integrasi dalam grup sumber daya
 ```
@@ -82,7 +82,7 @@ Perintah ini mendapatkan semua akun integrasi dalam langganan Azure Anda.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -145,7 +145,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzIntegrationAccount](./New-AzIntegrationAccount.md)
 
-[Remove-AzIntegrationAccount](./Remove-AzIntegrationAccount.md)
+[Hapus-AzIntegrationAccount](./Remove-AzIntegrationAccount.md)
 
 [Set-AzIntegrationAccount](./Set-AzIntegrationAccount.md)
 

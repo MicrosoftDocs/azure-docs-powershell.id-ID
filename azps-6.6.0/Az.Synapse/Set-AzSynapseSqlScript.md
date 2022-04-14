@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlScript.md
 ms.openlocfilehash: 65b7b5662f92ede119f4fddaf4a56fdb62f7ff3a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275169"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142117565"
 ---
 # Set-AzSynapseSqlScript
 
 ## SYNOPSIS
-Membuat atau memperbarui SQL skrip di dalam ruang kerja.
+Membuat atau memperbarui skrip SQL dalam ruang kerja.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlscript) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Set-AzSynapseSqlScript -WorkspaceObject <PSSynapseWorkspace> -SqlPoolName <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui skrip SQL di dalam ruang kerja.
+Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui skrip SQL dalam ruang kerja.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Cmdlet **Set-AzSynapseSqlScript** membuat atau memperbarui skrip SQL di dalam ru
 PS C:\> Set-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\sqlscript.sql"
 ```
 
-Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -69,19 +69,19 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Set-AzSynapseSqlScript -DefinitionFile "C:\\samples\\sqlscript.sql"
 ```
 
-Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql di ruang kerja bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzSynapseSqlScript -WorkspaceName ContosoWorkspace -DefinitionFile "C:\\samples\\sqlscript.sql"  -SqlPoolName Contososqlpool -SqlDatabaseName Contosodatabase
 ```
 
-Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql yang tersambung ke ContosoSqlPool dan menggunakan database bernama Contosodatabase di ruang kerja yang bernama ContosoWorkspace.
+Perintah ini membuat atau memperbarui skrip SQL dari file skrip SQL sqlscript.sql yang tersambung ke ContosoSqlPool dan menggunakan database bernama Contosodatabase di ruang kerja bernama ContosoWorkspace.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefinitionFile
-Jalur SQL file.
+Jalur file SQL.
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi skrip SQL skrip.
+Penjabaran dari skrip SQL.
 
 ```yaml
 Type: System.String
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -FolderName
-Folder tempat SQL skrip berada.
-Jika tidak ditentukan, SQL skrip akan muncul di tingkat akar.
+Folder tempat skrip SQL ini berada.
+Jika tidak ditentukan, skrip SQL ini akan muncul di tingkat akar.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResultLimit
-Batasi hasil, '-1' tanpa batasan.
+Batas hasil, '-1' tanpa batas.
 
 ```yaml
 Type: System.Int32
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlPoolName
-Sql pool yang menjadi tempat tersambungnya skrip sql.
+Sql pool mana skrip sql akan terhubung.
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

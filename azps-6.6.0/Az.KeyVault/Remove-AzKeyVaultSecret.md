@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultSecret.md
 ms.openlocfilehash: 0efdc6e8be5b2a7cb7875c8267057c90a69a7d06
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076887"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141911559"
 ---
 # Remove-AzKeyVaultSecret
 
 ## SYNOPSIS
-Menghapus rahasia di kunci vault.
+Menghapus rahasia dalam kubah kunci.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultsecret) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,13 +35,13 @@ Remove-AzKeyVaultSecret [-InputObject] <PSKeyVaultSecretIdentityItem> [-Force] [
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzKeyVaultSecret menghapus rahasia di key vault.
-Jika rahasia tidak sengaja dihapus, rahasia bisa dipulihkan menggunakan Undo-AzKeyVaultSecretRemoval oleh pengguna dengan izin 'pemulihan' khusus.
-Cmdlet ini memiliki nilai yang tinggi untuk **properti ConfirmImpact** .
+Cmdlet Remove-AzKeyVaultSecret menghapus rahasia dalam kubah kunci.
+Jika rahasia dihapus secara tidak sengaja, rahasia dapat dipulihkan menggunakan Undo-AzKeyVaultSecretRemoval oleh pengguna dengan izin khusus 'pulihkan'.
+Cmdlet ini memiliki nilai tinggi untuk properti **ConfirmImpact** .
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus rahasia dari key vault
+### Contoh 1: Menghapus rahasia dari kubah kunci
 ```powershell
 PS C:\> Remove-AzKeyVaultSecret -VaultName 'Contoso' -Name 'FinanceSecret' -PassThru
 
@@ -60,9 +60,9 @@ Content Type         :
 Tags                 :
 ```
 
-Perintah ini menghapus rahasia bernama FinanceSecret dari kunci vault bernama Contoso.'
+Perintah ini menghapus rahasia bernama FinanceSecret dari kubah kunci bernama Contoso.
 
-### Contoh 2: Menghapus rahasia dari kunci vault tanpa konfirmasi pengguna
+### Contoh 2: Menghapus rahasia dari kubah kunci tanpa konfirmasi pengguna
 ```powershell
 PS C:\> Remove-AzKeyVaultSecret -VaultName 'Contoso' -Name 'FinanceSecret' -PassThru -Force
 
@@ -81,21 +81,21 @@ Content Type         :
 Tags                 :
 ```
 
-Perintah ini menghapus rahasia bernama FinanceSecret dari kunci vault bernama Contoso.
-Perintah menentukan parameter *Paksa* *dan Konfirmasi* , dan oleh karena itu, cmdlet tidak meminta konfirmasi Anda.
+Perintah ini menghapus rahasia bernama FinanceSecret dari kubah kunci bernama Contoso.
+Perintah menentukan parameter *Paksa* dan *Konfirmasi* , dan oleh karena itu, cmdlet tidak meminta Anda untuk mengonfirmasi.
 
-### Contoh 3: Membersihkan rahasia terhapus dari key vault secara permanen
+### Contoh 3: Hapus rahasia yang dihapus dari kubah kunci secara permanen
 ```powershell
 PS C:\> Remove-AzKeyVaultSecret -VaultName 'Contoso' -Name 'FinanceSecret' -InRemovedState
 ```
 
-Perintah ini premoves the secret named FinanceSecret from the key vault named Contoso permanently.
-Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus sebelumnya dan secara eksplisit diberikan kepada pengguna untuk vault kunci ini.
+Perintah ini mengabaikan rahasia bernama FinanceSecret dari kubah kunci bernama Contoso secara permanen.
+Menjalankan cmdlet ini memerlukan izin 'pembersihan', yang harus telah diberikan secara eksplisit dan sebelumnya kepada pengguna untuk kubah kunci ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -109,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Rahasia Kunci Vault
+Objek Rahasia Key Vault
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultSecretIdentityItem
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama rahasia.
-Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN, Fully Qualified Domain Name) dari rahasia berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini.
+Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) rahasia berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini mengembalikan **objek Microsoft.Azure.Commands.KeyVault.Models.Secret** .
+Menunjukkan bahwa cmdlet ini mengembalikan objek **Microsoft.Azure.Commands.KeyVault.Models.Secret** .
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -187,8 +187,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault yang menjadi miliknya.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
+Menentukan nama kubah kunci tempat rahasia berada.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini dan lingkungan Anda saat ini.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,8 +219,8 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan. Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -253,5 +253,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzKeyVaultSecret](./Set-AzKeyVaultSecret.md)
 
-[Undo-AzKeyVaultSecretRemoval](./Undo-AzKeyVaultSecretRemoval.md)
+[Batalkan-AzKeyVaultSecretRemoval](./Undo-AzKeyVaultSecretRemoval.md)
 

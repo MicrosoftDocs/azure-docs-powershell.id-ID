@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVmssRollingUpgradePolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVmssRollingUpgradePolicy.md
-ms.openlocfilehash: 8d547e61f8085ec82ed712a306aa478d7a3b0a0ee7590032a2096a3682e1adb8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 872012c6d00f5251c53b289e99ee4a4436f4b8aa
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779929"
 ---
 # Set-AzureRmVmssRollingUpgradePolicy
 
 ## SYNOPSIS
-Mengatur properti kebijakan pemutakhiran vmSS yang diluncurkan.
+Mengatur properti kebijakan pemutakhiran bergulir VMSS.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmVmssRollingUpgradePolicy [-VirtualMachineScaleSet] <PSVirtualMachineS
 ```
 
 ## DESCRIPTION
-Mengatur properti kebijakan pemutakhiran vmSS yang diluncurkan.
+Mengatur properti kebijakan pemutakhiran bergulir VMSS.
 
 ## EXAMPLES
 
@@ -38,12 +38,12 @@ Mengatur properti kebijakan pemutakhiran vmSS yang diluncurkan.
 PS C:\> Set-AzureRmVmssRollingUpgradePolicy -VirtualMachineScaleSet $vmss -VirtualMachineScaleSet $vmss -MaxBatchInstancePercent 40 -MaxUnhealthyInstancePercent 35 -MaxUnhealthyUpgradedInstancePercent 30 -PauseTimeBetweenBatches "PT30S"
 ```
 
-Perintah ini mengatur 40 persen untuk MaxBatchInstance, 35 persen untuk MaxUnhealthyInstance, 30 persen untuk MaxUnhealthyUpgradedInstance, dan 30 detik waktu jeda antar kumpulan untuk objek lokal VMSS $vmss.
+Perintah ini menetapkan 40 persen untuk MaxBatchInstance, 35 persen untuk MaxUnhealthyInstance, 30 persen untuk MaxUnhealthyUpgradedInstance dan 30 waktu jeda kedua antar kumpulan untuk objek lokal VMSS $vmss.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,8 +58,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxBatchInstancePercent
-Persentase maksimum instans mesin virtual total yang akan dimutakhirkan secara bersamaan dengan pemutakhiran bertahap dalam satu kumpulan.
-Karena ini adalah contoh maksimum yang tidak sehat pada kumpulan sebelumnya atau yang akan datang dapat menyebabkan persentase contoh dalam batch berkurang untuk memastikan keandalan yang lebih tinggi.
+Persen maksimum dari total instans mesin virtual yang akan dimutakhirkan secara bersamaan dengan pemutakhiran bergulir dalam satu batch.
+Karena ini adalah instans maksimum yang tidak sehat dalam kumpulan sebelumnya atau yang akan datang dapat menyebabkan persentase instans dalam kumpulan berkurang untuk memastikan keandalan yang lebih tinggi.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -75,8 +75,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxUnhealthyInstancePercent
-Persentase maksimum instans mesin virtual total dalam kumpulan skala yang dapat secara bersamaan tidak sehat, baik sebagai akibat pemutakhiran, atau dengan ditemukan dalam keadaan tidak sehat oleh pemeriksaan kesehatan mesin virtual sebelum peluncuran peningkatan.
-Batasan ini akan dicentang sebelum memulai kumpulan apa pun.
+Persentase maksimum dari total instans mesin virtual dalam kumpulan skala yang bisa secara bersamaan tidak sehat, baik sebagai akibat dari dimutakhirkan, atau dengan ditemukan dalam keadaan tidak sehat oleh pemeriksaan kesehatan mesin virtual sebelum pemutakhiran bergulir dibatalkan.
+Batasan ini akan diperiksa sebelum memulai kumpulan apa pun.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -92,9 +92,9 @@ Accept wildcard characters: False
 ```
 
 ### -MaxUnhealthyUpgradedInstancePercent
-Persentase maksimum dari mesin virtual yang dimutakhirkan yang dapat ditemukan dalam keadaan tidak sehat.
-Pemeriksaan ini akan terjadi setelah setiap kumpulan ditakhirkan.
-Jika persentase ini pernah melebihi, pembaruan diluncurkan pada pembaruan terkini.
+Persentase maksimum instans mesin virtual yang dimutakhirkan yang dapat ditemukan dalam keadaan tidak sehat.
+Pemeriksaan ini akan terjadi setelah setiap kumpulan dimutakhirkan.
+Jika persentase ini pernah melebihi, pembaruan bergulir akan dibatalkan.
 Jika nilai tidak ditentukan, nilai diatur ke 20.
 
 ```yaml
@@ -126,7 +126,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
 Anda dapat menggunakan cmdlet New-AzureRmVmssConfig untuk membuat objek.
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

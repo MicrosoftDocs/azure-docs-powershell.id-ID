@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Sync-AzSynapseIntegrationRuntimeCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Sync-AzSynapseIntegrationRuntimeCredential.md
 ms.openlocfilehash: 74de93751360ee37b4e2926a1924c1d3c33ed829
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140458175"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142117367"
 ---
 # Sync-AzSynapseIntegrationRuntimeCredential
 
 ## SYNOPSIS
-Menyinkronkan kredensial di antara node runtime integrasi.
+Menyinkronkan kredensial di antara simpul runtime integrasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/sync-azsynapseintegrationruntimecredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/sync-azsynapseintegrationruntimecredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Sync-AzSynapseIntegrationRuntimeCredential -InputObject <PSIntegrationRuntime> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Sync-AzSynapseIntegrationRuntimeCredential** menyinkronkan kredensial lokal di antara node runtime integrasi, yang memaksa kredensial untuk identik di semua node.
+Cmdlet **Sync-AzSynapseIntegrationRuntimeCredential** menyinkronkan kredensial lokal di antara simpul runtime integrasi, yang memaksa kredensial menjadi identik di semua simpul.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Cmdlet **Sync-AzSynapseIntegrationRuntimeCredential** menyinkronkan kredensial l
 PS C:\> Sync-AzSynapseIntegrationRuntimeCredential -WorkspaceName ContosoWorkspace -IntegrationRuntimeName 'test-selfhost-ir'
 ```
 
-Menyinkronkan kredensial di antara node runtime integrasi.
+Menyinkronkan kredensial di antara simpul runtime integrasi.
 
 ## PARAMETERS
 
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari runtime integrasi Synapse.
+Pengidentifikasi sumber daya runtime integrasi Synapse.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

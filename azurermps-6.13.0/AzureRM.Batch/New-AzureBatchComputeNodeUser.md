@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/New-AzureBatchComputeNodeUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBatch/Commands.Batch/help/New-AzureBatchComputeNodeUser.md
 ms.openlocfilehash: 1e95eff4e93b1b7d55a099ad188fc196025cd06f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421276"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780067"
 ---
 # New-AzureBatchComputeNodeUser
 
 ## SYNOPSIS
-Membuat akun pengguna pada node perhitungan Kumpulan.
+Membuat akun pengguna di simpul komputasi Kumpulan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,34 +37,34 @@ New-AzureBatchComputeNodeUser [[-ComputeNode] <PSComputeNode>] -Name <String> -P
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureBatchComputeNodeUser** membuat akun pengguna pada node perhitungan Azure Batch.
+Cmdlet **New-AzureBatchComputeNodeUser** membuat akun pengguna di simpul komputasi Azure Batch.
 
 ## EXAMPLES
 
-### Contoh 1: Buat akun pengguna yang memiliki kredensial administratif
+### Contoh 1: Membuat akun pengguna yang memiliki kredensial administratif
 ```
 PS C:\>New-AzureBatchComputeNodeUser -PoolId "MyPool01" -ComputeNodeId "ComputeNode01" -Name "TestUser" -Password "Password" -ExpiryTime ([DateTime]::Now.AddDays(7)) -IsAdmin -BatchContext $Context
 ```
 
-Perintah ini membuat akun pengguna pada node perhitungan yang memiliki ID ComputeNode01.
-Simpul berada di pool yang memiliki ID MyPool01.
-Nama pengguna adalah PenggunaUji, kata sandinya adalah Kata Sandi, akun kedaluwarsa dalam tujuh hari, dan akun memiliki kredensial administratif.
+Perintah ini membuat akun pengguna pada simpul komputasi yang memiliki ID ComputeNode01.
+Simpul berada di kolam renang yang memiliki ID MyPool01.
+Nama pengguna adalah TestUser, kata sandi adalah Kata Sandi, akun kedaluwarsa dalam tujuh hari, dan akun tersebut memiliki kredensial administratif.
 
-### Contoh 2: Buat akun pengguna di node perhitungan dengan menggunakan saluran
+### Contoh 2: Membuat akun pengguna di simpul komputasi menggunakan pipeline
 ```
 PS C:\>Get-AzureBatchComputeNode "MyPool01" -ComputeNodeId "ComputeNode01" -BatchContext $Context | New-AzureBatchComputeNodeUser -Name "TestUser" -Password "Password" -BatchContext $Context
 ```
 
-Perintah ini mendapatkan node hitung bernama ComputeNode01 menggunakan cmdlet **Get-AzureBatchComputeNode.**
-Node tersebut berada di pool yang memiliki ID MyPool01.
-Perintah itu melewati node perhitungan itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah membuat akun pengguna yang memiliki nama pengguna TestUserdan kata sandi Kata Sandi.
+Perintah ini mendapatkan node komputasi bernama ComputeNode01 menggunakan cmdlet **Get-AzureBatchComputeNode** .
+Simpul itu ada di kolam renang yang memiliki ID MyPool01.
+Perintah melewati simpul komputasi ke cmdlet saat ini menggunakan operator pipeline.
+Perintah membuat akun pengguna yang memiliki nama pengguna UjiMenggunakan Kata Sandi.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzureRmBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzureRmBatchAccountKeys untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNode
-Menentukan node perhitungan, sebagai objek **PSComputeNode,** di mana cmdlet ini membuat akun pengguna.
+Menentukan simpul komputasi, sebagai objek **PSComputeNode** , di mana cmdlet ini membuat akun pengguna.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSComputeNode
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeNodeId
-Menentukan ID node perhitungan tempat cmdlet ini membuat akun pengguna.
+Menentukan ID simpul komputasi tempat cmdlet ini membuat akun pengguna.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun akun Windows baru.
+Menentukan nama akun Windows lokal baru.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolId
-Menentukan ID pool yang berisi node perhitungan untuk membuat akun pengguna.
+Menentukan ID kumpulan yang berisi simpul komputasi tempat untuk membuat akun pengguna.
 
 ```yaml
 Type: System.String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -223,6 +223,6 @@ Parameter: BatchContext (ByValue)
 
 [Remove-AzureBatchComputeNodeUser](./Remove-AzureBatchComputeNodeUser.md)
 
-[Cmdlet Kumpulan Azure](./AzureRM.Batch.md)
+[Cmdlet Azure Batch](./AzureRM.Batch.md)
 
 

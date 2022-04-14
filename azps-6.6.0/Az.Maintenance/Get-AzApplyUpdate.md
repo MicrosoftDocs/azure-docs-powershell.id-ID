@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzApplyUpdate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Get-AzApplyUpdate.md
 ms.openlocfilehash: f9986fe2d4afc6985b61356a7745ab536a58db43
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140283433"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141910893"
 ---
 # Get-AzApplyUpdate
 
 ## SYNOPSIS
-Melacak pembaruan pemeliharaan pada sumber daya
+Melacak pembaruan pemeliharaan ke sumber daya
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/get-azapplyupdate) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/get-azapplyupdate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzApplyUpdate [-ResourceGroupName] <String> [-ProviderName] <String> [-Resou
 ```
 
 ## DESCRIPTION
-Melacak pembaruan pemeliharaan pada sumber daya
+Melacak pembaruan pemeliharaan ke sumber daya
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Name           : default
 Type           : Microsoft.Maintenance/applyUpdates
 ```
 
-Melacak pembaruan pemeliharaan pada sumber daya
+Melacak pembaruan pemeliharaan ke sumber daya
 
 ## PARAMETERS
 
 ### -ApplyUpdateName
-Menerapkan pembaruan nama sumber daya.
+Terapkan nama sumber daya pembaruan.
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubRoutingEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubRoutingEndpoint.md
 ms.openlocfilehash: e65c45fb57700499de3cc804390854f3235d49ba
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140310361"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050185"
 ---
 # Add-AzIotHubRoutingEndpoint
 
 ## SYNOPSIS
-Menambahkan titik akhir ke Hub IoT Anda
+Menambahkan titik akhir ke IoT Hub Anda
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/add-aziothubroutingendpoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubroutingendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Add-AzIotHubRoutingEndpoint [-ResourceId] <String> [-EndpointName] <String> -End
 ```
 
 ## DESCRIPTION
-Tambahkan titik akhir baru dalam Hub IoT Anda. Untuk mempelajari tentang titik akhir yang didukung, lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
+Tambahkan titik akhir baru di IoT Hub Anda. Untuk mempelajari tentang titik akhir yang didukung, lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-endpoints
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ EndpointName      : E2
 ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;SharedAccessKeyName=iothubroutes_myeventhub1;SharedAccessKey=****;EntityPath=event1
 ```
 
-Tambahkan titik akhir baru "E2" tipe EventHub ke Hub IoT "myiothub".
+Tambahkan titik akhir baru "E2" tipe EventHub ke IoT Hub "myiothub".
 
 ### Contoh 2
 ```
@@ -76,12 +76,12 @@ MaxChunkSizeInBytes     : 314572800
 Encoding                : json
 ```
 
-Tambahkan titik akhir baru "S1" tipe AzureStorageContainer ke Hub IoT "myiothub".
+Tambahkan titik akhir baru "S1" tipe AzureStorageContainer ke IoT Hub "myiothub".
 
 ## PARAMETERS
 
 ### -ConnectionString
-String koneksi Titik Akhir Perutean
+String koneksi titik Akhir Perutean
 
 ```yaml
 Type: System.String
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointResourceGroup
-Grup sumber daya sumber daya Titik Akhir
+Grup sumber daya sumber daya titik akhir
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointSubscriptionId
-SubscriptionId dari sumber daya Titik Akhir
+SubscriptionId sumber daya Titik Akhir
 
 ```yaml
 Type: System.String
@@ -186,8 +186,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Encoding
-Pilih format tempat Anda ingin merutekan data. Anda dapat memilih JSON atau AVRO. Default-nya diatur ke AVRO.
+### -Pengodean
+Pilih format tempat Anda ingin merutekan data. Anda dapat memilih JSON atau AVRO. Default diatur ke AVRO.
 
 ```yaml
 Type:System.String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

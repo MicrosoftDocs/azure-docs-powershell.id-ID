@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datam
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/Stop-AzureRmDataMigrationTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataMigration/Commands.DataMigration/help/Stop-AzureRmDataMigrationTask.md
-ms.openlocfilehash: 074da7c973a35f0a1df273e09dc7fa7f851c9c6f9171aa22f2a2e335223aff95
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: aec7870522d5d25887c9cb7437a4a232d3021a24
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866594"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779414"
 ---
 # Stop-AzureRmDataMigrationTask
 
 ## SYNOPSIS
-Menghentikan tugas Layanan Migrasi Database Azure yang berada dalam status berjalan.
+Menghentikan tugas Azure Database Migration Service yang sedang berjalan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,7 +41,7 @@ Stop-AzureRmDataMigrationTask [-ResourceId] <String> [-PassThru] [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Stop-AzureRmDataMigrationTask cmdlet menghentikan aktivitas migrasi database dalam status berjalan. 
+cmdlet Stop-AzureRmDataMigrationTask menghentikan aktivitas migrasi database dalam status berjalan. 
 
 ## EXAMPLES
 
@@ -50,19 +50,19 @@ Stop-AzureRmDataMigrationTask cmdlet menghentikan aktivitas migrasi database dal
 PS C:\> Stop-AzureRmDataMigrationTask -ResourceGroupName MyResourceGroup  -ServiceName TestService -ProjectName myDMSProject -Name myDMSTask
 ```
 
-Contoh di atas menghentikan tugas Layanan Migrasi Database Azure bernama myDMSTask yang terkait dengan proyek myDMSProject dan contoh Layanan Migrasi Database Azure bernama TestService
+Contoh di atas menghentikan tugas Azure Database Migration Service bernama myDMSTask yang terkait dengan project myDMSProject dan instans Azure Database Migration Service bernama TestService
 
 ### Contoh 2
 ```
 PS C:\> Stop-AzureRmDataMigrationTask -InputObject $MyDMSTask
 ```
 
-Contoh di atas menghentikan tugas Layanan Migrasi Database Azure yang lolos sebagai parameter input objek PSProjectTask
+Contoh di atas berhenti Azure Database Migration Service tugas yang dilewati sebagai parameter input objek PSProjectTask
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Migrasi Database.
+nama Database Migration Service.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVmss.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzVmss.md
 ms.openlocfilehash: 22e281d7aa6e2d71506ddb616f96a149dcff6068
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422878"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142132019"
 ---
 # Get-AzVmss
 
@@ -33,25 +33,25 @@ Get-AzVmss [[-ResourceGroupName] <String>] [[-VMScaleSetName] <String>] [-Instan
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVmss** mendapatkan tampilan model dan contoh Dari Kumpulan Skala Mesin Virtual (VMSS).
-Tampilan model adalah properti komputer virtual yang ditentukan pengguna.
-Tampilan contoh adalah status tingkat contoh mesin virtual.
-Tentukan parameter *Status* untuk mendapatkan hanya tampilan contoh mesin virtual.
+Cmdlet **Get-AzVmss** mendapatkan model dan tampilan instans Kumpulan Skala Mesin Virtual (VMSS).
+Tampilan model adalah properti mesin virtual yang ditentukan pengguna.
+Tampilan instans adalah status tingkat instans mesin virtual.
+Tentukan parameter *Status* untuk mendapatkan hanya tampilan instans mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan properti VMSS
+### Contoh 1: Dapatkan properti VMSS
 ```
 PS C:\> Get-AzVmss -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Perintah ini memiliki properti VMSS bernama VMSS001 yang dimiliki oleh grup sumber daya bernama Group001.
-Karena perintah tidak menentukan parameter *sakelar InstanceView,* cmdlet mendapatkan tampilan model mesin virtual.
+Perintah ini mendapatkan properti VMSS bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
+Karena perintah tidak menentukan parameter switch *InstanceView* , cmdlet mendapatkan tampilan model mesin virtual.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceView
-Mengindikasikan bahwa cmdlet ini hanya mendapatkan tampilan contoh mesin virtual.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans mesin virtual.
 
 ```yaml
 Type: SwitchParameter
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Grup Sumber Daya VMSS.
+Menentukan nama Grup Sumber Daya dari VMSS.
 
 ```yaml
 Type: String
@@ -111,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -128,16 +128,16 @@ Cmdlet ini tidak menerima input apa pun.
 
 [New-AzVmss](./New-AzVmss.md)
 
-[Remove-AzVmss](./Remove-AzVmss.md)
+[Hapus-AzVms](./Remove-AzVmss.md)
 
-[Mulai Ulang AzVmss](./Restart-AzVmss.md)
+[Mulai ulang-AzVms](./Restart-AzVmss.md)
 
-[Set-AzVmss](./Set-AzVmss.md)
+[Set-AzVms](./Set-AzVmss.md)
 
 [Start-AzVmss](./Start-AzVmss.md)
 
 [Stop-AzVmss](./Stop-AzVmss.md)
 
-[Update-AzVmss](./Update-AzVmss.md)
+[Pembaruan-AzVms](./Update-AzVmss.md)
 
 

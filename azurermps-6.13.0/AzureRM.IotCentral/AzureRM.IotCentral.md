@@ -6,27 +6,27 @@ Help Version: 0.1.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotCentral/Commands.IotCentral/help/AzureRM.IotCentral.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/IotCentral/Commands.IotCentral/help/AzureRM.IotCentral.md
-ms.openlocfilehash: e81f3b868d4e80298ef903afea78570017334dd305f7183d93a7d191a81ac14e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4ea6f841b13627bcd1434e65b33b50b45bb32e72
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132419340"
 ---
-# AzureRM.IotCentral Module
+# Modul AzureRM.IotCentral
 ## Deskripsi
 Menyediakan Manajemen CRUD untuk Aplikasi Pusat IoT.
 
 ## Cmdlet AzureRM.IotCentral
-### [Get-AzureRmIotCentralApp](Get-AzureRmIotCentralApp.md)
+### [Get-AzureRmiotCentralApp](Get-AzureRmIotCentralApp.md)
 Mendapatkan properti untuk satu atau beberapa Aplikasi Pusat IoT.
 
-### [New-AzureRmIotCentralApp](New-AzureRmIotCentralApp.md)
+### [AzureRmiotCentralApp baru](New-AzureRmIotCentralApp.md)
 Membuat Aplikasi Pusat IoT baru.
 
-### [Remove-AzureRmIotCentralApp](Remove-AzureRmIotCentralApp.md)
+### [Hapus-AzureRmiotCentralApp](Remove-AzureRmIotCentralApp.md)
 Menghapus Aplikasi Pusat IoT.
 
-### [Set-AzureRmIotCentralApp](Set-AzureRmIotCentralApp.md)
+### [Set-AzureRmiotCentralApp](Set-AzureRmIotCentralApp.md)
 Memperbarui metadata untuk Aplikasi Pusat IoT.
 

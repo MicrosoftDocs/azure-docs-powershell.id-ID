@@ -5,11 +5,11 @@ ms.assetid: D1D51DEF-05DE-45C4-9013-A02A5B248EAC
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermvirtualnetworksubnetconfig
 schema: 2.0.0
 ms.openlocfilehash: b13a06fbc2bd7f071888dcd0504d3e1963cbedd8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421937"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780483"
 ---
 # Set-AzureRmVirtualNetworkSubnetConfig
 
@@ -37,11 +37,11 @@ Set-AzureRmVirtualNetworkSubnetConfig -Name <String> -VirtualNetwork <PSVirtualN
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVirtualNetworkSubnetConfig** mengonfigurasi status tujuan untuk konfigurasi subnet dalam jaringan virtual Azure.
+Cmdlet **Set-AzureRmVirtualNetworkSubnetConfig** mengonfigurasi status tujuan untuk konfigurasi subnet di jaringan virtual Azure.
 
 ## EXAMPLES
 
-### 1: Mengubah prefiks alamat subnet
+### 1: Mengubah awalan alamat subnet
 ```
 New-AzureRmResourceGroup -Name TestResourceGroup -Location centralus
 
@@ -55,7 +55,7 @@ Set-AzureRmVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virt
 $virtualNetwork | Set-AzureRmVirtualNetwork
 ```
 
-Contoh ini membuat jaringan virtual dengan satu subnet. Lalu, panggilan Set-AzureRmVirtualNetworkSubnetConfig untuk mengubah AddressPrefix subnet. Ini hanya mempengaruhi representasi dalam memori jaringan virtual. Set-AzureRmVirtualNetwork lalu disebut untuk memodifikasi jaringan virtual di Azure.
+Contoh ini membuat jaringan virtual dengan satu subnet. Lalu adalah panggilan Set-AzureRmVirtualNetworkSubnetConfig untuk mengubah AddressPrefix subnet. Hal ini hanya memengaruhi representasi dalam memori jaringan virtual. Set-AzureRmVirtualNetwork kemudian dipanggil untuk mengubah jaringan virtual di Azure.
 
 ### 2: Menambahkan grup keamanan jaringan ke subnet
 ```
@@ -78,7 +78,7 @@ Set-AzureRmVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virt
 $virtualNetwork | Set-AzureRmVirtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Kemudian, grup keamanan jaringan akan membuat grup keamanan jaringan dengan aturan perbolehkan untuk lalu lintas RDP. Cmdlet Set-AzureRmVirtualNetworkSubnetConfig digunakan untuk memodifikasi representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzureRmVirtualNetwork cmdlet kemudian disebut untuk menulis status yang diubah kembali ke layanan.
+Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Lalu membuat grup keamanan jaringan dengan aturan yang diperbolehkan untuk lalu lintas RDP. Cmdlet Set-AzureRmVirtualNetworkSubnetConfig digunakan untuk mengubah representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzureRmVirtualNetwork kemudian dipanggil untuk menulis keadaan yang dimodifikasi kembali ke layanan.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
+Menentukan objek **NetworkSecurityGroup** .
 
 ```yaml
 Type: PSNetworkSecurityGroup
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

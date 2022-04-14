@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubConfiguration.md
 ms.openlocfilehash: e828b0b78c83b4e3ad13e71296f06ad070833029
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077103"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050077"
 ---
 # Get-AzIotHubConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "140077103"
 Mencantumkan semua atau konfigurasi manajemen perangkat otomatis IoT tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzIotHubConfiguration [-ResourceId] <String> [-Name <String>] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Dapatkan detail konfigurasi manajemen perangkat otomatis IoT atau daftar konfigurasi manajemen perangkat otomatis IoT dalam Hub IoT.
+Dapatkan detail konfigurasi manajemen perangkat otomatis IoT atau daftar konfigurasi manajemen perangkat otomatis IoT dalam IoT Hub.
 Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi selengkapnya.
 
 ## EXAMPLES
@@ -58,7 +58,7 @@ Dapatkan detail konfigurasi manajemen perangkat otomatis IoT.
 PS C:\> Get-AzIotHubConfiguration -ResourceGroupName "myresourcegroup" -IotHubName "myiothub"
 ```
 
-Mencantumkan konfigurasi manajemen perangkat otomatis IoT dalam Hub IoT.
+Cantumkan konfigurasi manajemen perangkat otomatis IoT dalam IoT Hub.
 
 ## PARAMETERS
 
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

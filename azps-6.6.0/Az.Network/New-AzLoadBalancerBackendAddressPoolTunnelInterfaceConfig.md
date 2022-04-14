@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig.md
 ms.openlocfilehash: 52f562a6b90f8a03ed92405a024f7b920b1532b1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140464931"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141909777"
 ---
 # New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig
 
 ## SYNOPSIS
-Membuat antarmuka interface dalam pool alamat backend yang berisi penyeimbang muat.
+Membuat antarmuka terowongan dalam kumpulan alamat backend penyeimbang beban.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspooltunnelinterfaceconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddresspooltunnelinterfaceconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,10 +28,10 @@ New-AzLoadBalancerBackendAddressPoolTunnelInterfaceConfig [-Type <String>] [-Pro
 ```
 
 ## DESCRIPTION
-Membuat antarmuka interface dalam pool alamat backend yang berisi penyeimbang muat. Ini digunakan untuk Penyeimbang Muat Gateway
+Membuat antarmuka terowongan dalam kumpulan alamat backend penyeimbang beban. Ini digunakan untuk Load Balancer Gateway
 ## EXAMPLES
 
-### Contoh 1: Menambahkan antarmuka penghubung ke konfigurasi pool alamat backend ke penyeimbang muat
+### Contoh 1: Menambahkan antarmuka tunnel ke konfigurasi kumpulan alamat backend ke load balancer
 ```powershell
 ## Get loadbalancer
 PS C:\> $lb = Get-AzLoadBalancer -ResourceGroupName $resourceGroup -Name $loadBalancerName
@@ -47,8 +47,8 @@ Jika properti tidak disediakan, properti akan diganti dengan nilai default.
 
 ## PARAMETERS
 
-### -Protocol
-Menentukan protokol antarmuka protocol of interface.
+### -Protokol
+Menentukan protokol antarmuka terowongan.
 
 ```yaml
 Type: System.String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe antarmuka antarmuka antar muka.
+Menentukan tipe antarmuka terowongan.
 
 ```yaml
 Type: System.String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port antarmuka antar muka.
+Menentukan port antarmuka terowongan.
 
 ```yaml
 Type: System.Int32
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Identifier
-Menentukan pengidentifikasi antarmuka antar muka.
+Menentukan pengidentifikasi antarmuka terowongan.
 
 ```yaml
 Type: System.Int32

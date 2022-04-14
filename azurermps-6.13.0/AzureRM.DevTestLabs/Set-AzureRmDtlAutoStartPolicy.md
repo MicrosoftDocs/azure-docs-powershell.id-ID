@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Set-AzureRmDtlAutoStartPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Set-AzureRmDtlAutoStartPolicy.md
 ms.openlocfilehash: 8cc571a9ba906ecc5556d920503712ef1bb3587a
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132414956"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141779224"
 ---
 # Set-AzureRmDtlAutoStartPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan mulai otomatis sebuah lab di Lab DevTest.
+Mengatur kebijakan mulai otomatis lab di DevTest Labs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmDtlAutoStartPolicy [[-Time] <DateTime>] [[-Days] <DayOfWeek[]>] [-Ena
  [<CommonParameters>]
 ```
 
-### Disable
+### Menonaktifkan
 ```
 Set-AzureRmDtlAutoStartPolicy [[-Time] <DateTime>] [[-Days] <DayOfWeek[]>] [-Disable] [-LabName] <String>
  [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -37,15 +37,15 @@ Set-AzureRmDtlAutoStartPolicy [[-Time] <DateTime>] [[-Days] <DayOfWeek[]>] [-Dis
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDtlAutoStartPolicy** mengatur kebijakan mulai otomatis sebuah lab, yang memungkinkan mesin virtual lab dijadwalkan untuk mulai otomatis.
-Cmdlet menggunakan grup sumber daya tertentu dan nama lab untuk menetapkan kebijakan tersebut.
+Cmdlet **Set-AzureRmDtlAutoStartPolicy** mengatur kebijakan mulai otomatis lab, yang memungkinkan mesin virtual lab dijadwalkan untuk mulai otomatis.
+Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk menetapkan kebijakan.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -Hari
-Menentukan, sebagai larik, hari-hari dalam seminggu ketika mesin virtual lab harus dimulai.
+Menentukan, sebagai array, hari-hari dalam seminggu ketika mesin virtual lab harus dimulai.
 
 ```yaml
 Type: System.DayOfWeek[]
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan kebijakan untuk mesin virtual di lab.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan kebijakan untuk mesin virtual di laboratorium.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa cmdlet ini mengaktifkan kebijakan untuk mesin virtual di lab.
+Menunjukkan bahwa cmdlet ini memungkinkan kebijakan untuk mesin virtual di lab.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini menetapkan kebijakan mulai otomatis.
+Menentukan nama lab tempat cmdlet ini mengatur kebijakan mulai otomatis.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu
-Menentukan waktu mesin virtual lab harus dimulai.
+Menentukan waktu ketika mesin virtual lab harus dimulai.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

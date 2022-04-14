@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceConnectionString.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceConnectionString.md
 ms.openlocfilehash: d02e48e3bbf5d8401eb30099a16ed618184ea3f9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140253925"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050131"
 ---
 # Get-AzIotHubDeviceConnectionString
 
 ## SYNOPSIS
-Dapatkan string koneksi perangkat IoT target di Iot Hub.
+Dapatkan string koneksi perangkat IoT target di Hub Iot.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.iothub/get-aziothubdeviceconnectionstring) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdeviceconnectionstring) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzIotHubDeviceConnectionString [-ResourceId] <String> [-DeviceId <String>] [
 ```
 
 ## DESCRIPTION
-Daftar string koneksi semua perangkat atau perangkat IoT target yang dimuat dalam Azure IoT Hub.
+Daftar string koneksi semua perangkat atau perangkat IoT target yang terdapat dalam Azure IoT Hub.
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ device1   HostName=myiothub.azure-devices.net;DeviceId=device1;SharedAccessKey=/
 device2   HostName=myiothub.azure-devices.net;DeviceId=device2;x509=true
 ```
 
-Memperlihatkan semua string koneksi perangkat di Hub Iot.
+Menampilkan string koneksi semua perangkat dalam Hub Iot.
 
 ### Contoh 2
 ```powershell
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

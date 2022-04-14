@@ -4,17 +4,17 @@ Module Name: AzureRm.Resources
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/get-azurermpolicyalias
 schema: 2.0.0
 ms.openlocfilehash: f0f8f3ded2697e713215929f66ebd82b3af03ea0
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140856209"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780392"
 ---
 # Get-AzureRmPolicyAlias
 
 ## SYNOPSIS
-Get-AzureRmPolicyAlias dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
-Sakelar -ListAvailable mengubah perilaku ini dengan mencantumkan semua tipe sumber daya yang cocok termasuk yang tanpa alias.
+Get-AzureRmPolicyAlias mengambil dan output tipe sumber daya penyedia Azure yang memiliki alias yang ditentukan dan cocok dengan nilai parameter tertentu. Jika tidak ada parameter yang disediakan, semua tipe sumber daya penyedia yang berisi alias akan menjadi output.
+Sakelar -ListAvailable mengubah perilaku ini dengan mencantumkan semua tipe sumber daya yang cocok termasuk yang tidak memiliki alias.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,10 +27,10 @@ Get-AzureRmPolicyAlias [-NamespaceMatch <String>] [-ResourceTypeMatch <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmPolicyAlias** mendapatkan daftar alias kebijakan.
-Alias kebijakan digunakan oleh Kebijakan Azure untuk merujuk ke properti tipe sumber daya.
-Parameter disediakan untuk membatasi item dalam daftar dengan mencocokkan berbagai properti tipe sumber daya atau aliasnya.
-Nilai kecocokan tertentu cocok jika string target memuatnya menggunakan perbandingan insensitif kasus.
+Cmdlet **Get-AzureRmPolicyAlias mendapatkan daftar alias** kebijakan.
+Alias kebijakan digunakan oleh Azure Policy untuk merujuk ke properti tipe sumber daya.
+Parameter disediakan yang membatasi item dalam daftar dengan mencocokkan berbagai properti tipe sumber daya atau aliasnya.
+Nilai kecocokan tertentu cocok jika string target berisinya menggunakan perbandingan yang tidak peka huruf besar kecil.
 
 ## EXAMPLES
 
@@ -93,7 +93,7 @@ Microsoft.Compute disks                              {Microsoft.Compute/imagePub
 PS C:\>
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang ruang namanya cocok dengan 'perhitungan' dan berisi alias.
+Mencantumkan semua tipe sumber daya penyedia yang ruang namanya cocok dengan 'komputasi' dan berisi alias.
 
 ### Contoh 4
 ```powershell
@@ -154,8 +154,8 @@ Microsoft.Compute virtualMachineScaleSets/extensions {Microsoft.Compute/virtualM
 PS C:\>
 ```
 
-Mencantumkan semua tipe sumber daya penyedia yang ruang namanya cocok dengan 'perhitungan' dan tipe sumber daya cocok dengan 'virtual' dan berisi alias.
-Catatan: -NamespaceMatch dan -ResourceTypeMatch menyediakan kecocokan eksklusif, sedangkan yang lain bersifat inklusif.
+Mencantumkan semua tipe sumber daya penyedia yang ruang namanya cocok dengan 'komputasi' dan tipe sumber daya cocok dengan 'virtual' dan berisi alias.
+Catatan: -NamespaceMatch dan -ResourceTypeMatch menyediakan kecocokan eksklusif, sedangkan yang lainnya inklusif.
 
 ### Contoh 7
 ```powershell
@@ -227,7 +227,7 @@ Microsoft.Security complianceResults   {Microsoft.Security/complianceResults/res
 PS C:\>
 ```
 
-Mencantumkan semua tipe sumber daya penyedia dengan versi api alfa atau yang berisi alias dengan versi api alfa.
+Mencantumkan semua tipe sumber daya penyedia dengan versi api alfa atau berisi alias dengan versi api alfa.
 
 ## PARAMETERS
 
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiVersion
-Saat diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan. Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
+Ketika diatur, menunjukkan versi API penyedia sumber daya yang akan digunakan. Jika tidak ditentukan, versi API secara otomatis ditentukan sebagai versi terbaru yang tersedia.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListAvailable
-Termasuk dalam output item yang cocok dengan dan tanpa alias.
+Termasuk dalam output yang cocok dengan item dengan dan tanpa alias.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -NamespaceMatch
-Membatasi output item yang ruang namanya cocok dengan nilai ini.
+Membatasi output untuk item yang ruang namanya cocok dengan nilai ini.
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -382,8 +382,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-* Untuk memperluas Alias atau properti lainnya, pipes output ke `select -ExpandProperty <property>`. Misalnya: `Get-AzureRmPolicyAlias -NamespaceMatch 'Microsoft.Cache' -ApiVersionMatch 'alpha' | select -ExpandProperty Aliases | select -Property Name -ExpandProperty Paths`
+* Untuk memperluas Alias atau properti lainnya, pipa output ke `select -ExpandProperty <property>`. Misalnya: `Get-AzureRmPolicyAlias -NamespaceMatch 'Microsoft.Cache' -ApiVersionMatch 'alpha' | select -ExpandProperty Aliases | select -Property Name -ExpandProperty Paths`
 
-* Properti tambahan tersedia dalam output dan dapat ditampilkan dengan pemipaan output ke `Format-List`. Misalnya: `Get-AzureRmPolicyAlias -NamespaceMatch 'Web' -ResourceTypeMatch site -PathMatch cert | Format-List`
+* Properti tambahan tersedia dalam output dan dapat ditampilkan dengan memipakan output ke `Format-List`. Misalnya: `Get-AzureRmPolicyAlias -NamespaceMatch 'Web' -ResourceTypeMatch site -PathMatch cert | Format-List`
 
 ## RELATED LINKS

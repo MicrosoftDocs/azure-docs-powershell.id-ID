@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebApp.md
 ms.openlocfilehash: 30b111ce20dcd45fb3c42c85d324e31f4eeefaac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140301811"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142116629"
 ---
 # Restart-AzWebApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "140301811"
 Memulai ulang Azure Web App.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/restart-azwebapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/restart-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,22 +35,22 @@ Restart-AzWebApp [-WebApp] <PSSite> [-DefaultProfile <IAzureContextContainer>] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Mulai Ulang-AzWebApp** berhenti dan memulai Azure Web App.
-Jika Web App dalam keadaan berhenti, gunakan cmdlet Start-AzWebApp.
+Cmdlet **Restart-AzWebApp** berhenti lalu memulai Azure Web App.
+Jika Web App berada dalam status berhenti, gunakan cmdlet Start-AzWebApp.
 
 ## EXAMPLES
 
-### Contoh 1: Mulai ulang Web App
+### Contoh 1: Mulai ulang Aplikasi Web
 ```
 PS C:\>Restart-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini menghentikan Azure Web App bernama ContosoSite yang dimiliki oleh grup sumber daya yang bernama Default-Web-WestUS dan memulai ulang.
+Perintah ini menghentikan Azure Web App bernama ContosoSite yang termasuk dalam grup sumber daya bernama Default-Web-WestUS lalu memulai ulang.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -110,17 +110,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 
@@ -130,7 +130,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

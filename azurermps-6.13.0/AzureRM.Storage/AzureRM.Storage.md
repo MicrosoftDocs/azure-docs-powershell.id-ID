@@ -7,83 +7,83 @@ Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/AzureRM.Storage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/AzureRM.Storage.md
 ms.openlocfilehash: e0f85a02e1d0c7b6421fa96f4817924fcdd2672e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132419516"
 ---
-# AzureRM. Storage Module
+# AzureRM. Modul Storage
 ## Deskripsi
-Topik ini menampilkan topik bantuan untuk Azure Storage Cmdlet Manajemen.
+Topik ini menampilkan topik bantuan untuk Cmdlet Manajemen Azure Storage.
 
-## AzureRM. Cmdlet Storage Baru
+## AzureRM. Cmdlet Storage
 ### [Add-AzureRmStorageAccountNetworkRule](Add-AzureRmStorageAccountNetworkRule.md)
  Menambahkan IpRules atau VirtualNetworkRules ke properti NetworkRule dari Akun Storage
 
 ### [Add-AzureRmStorageContainerLegalHold](Add-AzureRmStorageContainerLegalHold.md)
-Menambahkan tag untuk perlindungan hukum atas Storage wadah blob
+Menambahkan tag untuk penahanan legal wadah blob Storage
 
 ### [Get-AzureRmStorageAccount](Get-AzureRmStorageAccount.md)
-Dapatkan akun Storage Anda.
+Mendapatkan akun Storage.
 
 ### [Get-AzureRmStorageAccountKey](Get-AzureRmStorageAccountKey.md)
-Mendapatkan kunci akses untuk akun Azure Storage Anda.
+Mendapatkan kunci akses untuk akun Azure Storage.
 
 ### [Get-AzureRmStorageAccountNameAvailability](Get-AzureRmStorageAccountNameAvailability.md)
-Memeriksa ketersediaan akun email Storage Anda.
+Memeriksa ketersediaan nama akun Storage.
 
 ### [Get-AzureRmStorageAccountNetworkRuleSet](Get-AzureRmStorageAccountNetworkRuleSet.md)
-Mendapatkan properti NetWorkRule dari Storage Anda
+Mendapatkan properti NetWorkRule dari Akun Storage
 
 ### [Get-AzureRmStorageContainer](Get-AzureRmStorageContainer.md)
-Gets or lists Storage blob containers
+Mendapatkan atau mencantumkan Storage wadah blob
 
 ### [Get-AzureRmStorageContainerImmutabilityPolicy](Get-AzureRmStorageContainerImmutabilityPolicy.md)
-Mendapatkan ImmutabilityPolicy wadah Storage blob
+Mendapatkan ImmutabilityPolicy dari wadah blob Storage
 
-### [Get-AzureRmStorageUsage](Get-AzureRmStorageUsage.md)
-Mendapatkan layanan Storage sumber daya langganan saat ini.
+### [Get-AzureRmstorageUsage](Get-AzureRmStorageUsage.md)
+Mendapatkan Storage penggunaan sumber daya langganan saat ini.
 
 ### [Lock-AzureRmStorageContainerImmutabilityPolicy](Lock-AzureRmStorageContainerImmutabilityPolicy.md)
-Mengunci ImmutabilityPolicy wadah Storage blob
+Mengunci ImmutabilityPolicy dari wadah blob Storage
 
-### [New-AzureRmStorageAccount](New-AzureRmStorageAccount.md)
-Membuat akun Storage Anda.
+### [AzureRmStorageAccount baru](New-AzureRmStorageAccount.md)
+Membuat akun Storage.
 
 ### [New-AzureRmStorageAccountKey](New-AzureRmStorageAccountKey.md)
-Meregenerasi kunci penyimpanan untuk Azure Storage tersebut.
+Meregenerasi kunci penyimpanan untuk akun Azure Storage.
 
-### [New-AzureRmStorageContainer](New-AzureRmStorageContainer.md)
-Membuat wadah Storage blob
+### [AzureRmStorageContainer baru](New-AzureRmStorageContainer.md)
+Membuat wadah blob Storage
 
-### [Remove-AzureRmStorageAccount](Remove-AzureRmStorageAccount.md)
+### [Hapus-AzureRmstorageAccount](Remove-AzureRmStorageAccount.md)
 Menghapus akun Storage dari Azure.
 
-### [Remove-AzureRmStorageAccountNetworkRule](Remove-AzureRmStorageAccountNetworkRule.md)
-Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule di Akun Storage
+### [Hapus-AzureRmStorageAccountNetworkRule](Remove-AzureRmStorageAccountNetworkRule.md)
+Menghapus IpRules atau VirtualNetworkRules dari properti NetWorkRule akun Storage
 
-### [Remove-AzureRmStorageContainer](Remove-AzureRmStorageContainer.md)
-Menghapus wadah Storage blob
+### [Hapus-AzureRmStorageContainer](Remove-AzureRmStorageContainer.md)
+Menghapus wadah blob Storage
 
-### [Remove-AzureRmStorageContainerImmutabilityPolicy](Remove-AzureRmStorageContainerImmutabilityPolicy.md)
-Menghapus ImmutabilityPolicy wadah Storage blob
+### [Hapus-AzureRmStorageContainerImmutabilityPolicy](Remove-AzureRmStorageContainerImmutabilityPolicy.md)
+Menghapus ImmutabilityPolicy wadah blob Storage
 
-### [Remove-AzureRmStorageContainerLegalHold](Remove-AzureRmStorageContainerLegalHold.md)
-Menghapus tag untuk perlindungan hukum dari Storage blob
+### [Hapus-AzureRmStorageContainerLegalHold](Remove-AzureRmStorageContainerLegalHold.md)
+Menghapus tag untuk penahanan legal wadah blob Storage
 
 ### [Set-AzureRmCurrentStorageAccount](Set-AzureRmCurrentStorageAccount.md)
-Mengubah akun langganan Storage langganan tertentu saat ini.
+Mengubah akun Storage saat ini dari langganan yang ditentukan.
 
 ### [Set-AzureRmStorageAccount](Set-AzureRmStorageAccount.md)
-Mengubah akun Storage Anda.
+Mengubah akun Storage.
 
 ### [Set-AzureRmStorageContainerImmutabilityPolicy](Set-AzureRmStorageContainerImmutabilityPolicy.md)
-Membuat atau memperbarui ImmutabilityPolicy wadah blob Storage
+Membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage
 
 ### [Update-AzureRmStorageAccountNetworkRuleSet](Update-AzureRmStorageAccountNetworkRuleSet.md)
-Memperbarui properti NetworkRule dari akun Storage Anda
+Memperbarui properti NetworkRule dari Akun Storage
 
-### [Update-AzureRmStorageContainer](Update-AzureRmStorageContainer.md)
-Mengubah wadah Storage blob
+### [Pembaruan-AzureRmStorageContainer](Update-AzureRmStorageContainer.md)
+Mengubah wadah blob Storage
 
