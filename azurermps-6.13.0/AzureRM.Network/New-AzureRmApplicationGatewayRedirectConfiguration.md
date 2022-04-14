@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayRedirectConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayRedirectConfiguration.md
-ms.openlocfilehash: 9db3b028a37b1272c7257bd04c64c48515c2457c939af2f203bb155a0494e264
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 06f8b64e1f79a4c024c56d834e09d374ce201cfe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864270"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821169"
 ---
 # New-AzureRmApplicationGatewayRedirectConfiguration
 
@@ -43,7 +43,7 @@ New-AzureRmApplicationGatewayRedirectConfiguration -Name <String> -RedirectType 
 ```
 
 ## DESCRIPTION
-**Cmdlet New-AzureRmApplicationGatewayRedirectConfiguration** membuat konfigurasi pengalihan untuk gateway aplikasi.
+Cmdlet **New-AzureRmApplicationGatewayRedirectConfiguration** membuat konfigurasi pengalihan untuk gateway aplikasi.
 
 ## EXAMPLES
 
@@ -52,12 +52,12 @@ New-AzureRmApplicationGatewayRedirectConfiguration -Name <String> -RedirectType 
 PS C:\>$RedirectConfig = New-AzureRmApplicationGatewayRedirectConfiguration -Name "Redirect01" -RedirectType Permanent -TargetListener $listener01
 ```
 
-Perintah ini membuat konfigurasi pengalihan yang bernama Redirect01 dan menyimpan hasilnya dalam variabel yang bernama $RedirectConfig.
+Perintah ini membuat konfigurasi pengalihan bernama Pengalihan01 dan menyimpan hasilnya dalam variabel bernama $RedirectConfig.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludePath
-Sertakan jalur di url yang dialihkan.
+Sertakan jalur dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeQueryString
-Sertakan string kueri di url yang dialihkan.
+Sertakan string kueri dalam url yang dialihkan.
 Default adalah true.
 
 ```yaml
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetUrl
-Pengalihan URL target
+Pengalihan fo URL target
 
 ```yaml
 Type: System.String
@@ -180,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

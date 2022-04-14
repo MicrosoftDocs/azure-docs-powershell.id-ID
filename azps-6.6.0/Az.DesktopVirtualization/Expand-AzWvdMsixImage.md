@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Expand-AzWvdMsixImage.md
 ms.openlocfilehash: 1c920300ade3a0610e46da8474a9dba644496fae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140482989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868118"
 ---
 # Expand-AzWvdMsixImage
 
 ## SYNOPSIS
-Memperluas dan Mencantumkan paket MSIX dalam Gambar, diberi Jalur Gambar.
+Memperluas dan Mencantumkan paket MSIX dalam Gambar, mengingat Jalur Gambar.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/expand-azwvdmsiximage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/expand-azwvdmsiximage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Expand-AzWvdMsixImage -HostPoolName <String> -ResourceGroupName <String> [-Subsc
  [-Uri <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Perluas
+### Memperluas
 ```
 Expand-AzWvdMsixImage -HostPoolName <String> -ResourceGroupName <String> -MsixImageUri <IMsixImageUri>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -47,11 +47,11 @@ Expand-AzWvdMsixImage -InputObject <IDesktopVirtualizationIdentity> [-Uri <Strin
 ```
 
 ## DESCRIPTION
-Memperluas dan Mencantumkan paket MSIX dalam Gambar, diberi Jalur Gambar.
+Memperluas dan Mencantumkan paket MSIX dalam Gambar, mengingat Jalur Gambar.
 
 ## EXAMPLES
 
-### Contoh 1: Memperluas Jalur Gambar yang ditentukan dan mengambil metadata Paket yang ditemukan AppxManifest.xml
+### Contoh 1: Memperluas Jalur Gambar tertentu dan mengambil metadata Paket yang ditemukan di AppxManifest.xml
 ```powershell
 PS C:\> Expand-AzWvdMsixImage -HostPoolName HostPoolName `
           -ResourceGroupName resourceGroupName `
@@ -63,7 +63,7 @@ Name                          Type
 HostPoolName/extractmsiximage Microsoft.DesktopVirtualization/hostpools/extractmsiximage
 ```
 
-Perintah ini mengembalikan Metadata dari Paket MSIX yang ditemukan di Jalur Gambar yang diberikan.
+Perintah ini mengembalikan Metadata Dari Paket MSIX yang ditemukan dalam Jalur Gambar tertentu.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.IDesktopVirtualizationIdentity
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -MsixImageUri
-Mewakili URI yang merujuk ke konstruksi Gambar MSIX Untuk, lihat bagian CATATAN untuk properti MSIXIMAGEURI dan membuat tabel hash.
+Mewakili URI yang mengacu pada Gambar MSIX Untuk dibangun, lihat bagian CATATAN untuk properti MSIXIMAGEURI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IMsixImageUri
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,19 +228,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IDesktopVirtualizationIdentity>: Parameter Identitas
   - `[ApplicationGroupName <String>]`: Nama grup aplikasi
-  - `[ApplicationName <String>]`: Nama aplikasi di dalam grup aplikasi yang ditentukan
+  - `[ApplicationName <String>]`: Nama aplikasi dalam grup aplikasi yang ditentukan
   - `[DesktopName <String>]`: Nama desktop dalam grup desktop yang ditentukan
-  - `[HostPoolName <String>]`: Nama host pool dalam grup sumber daya yang ditentukan
+  - `[HostPoolName <String>]`: Nama kumpulan host dalam grup sumber daya yang ditentukan
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[MsixPackageFullName <String>]`: Nama lengkap paket versi tertentu dari paket MSIX di dalam hostpool tertentu
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[ScalingPlanName <String>]`: Nama rencana penskalaan.
-  - `[SessionHostName <String>]`: Nama tuan rumah sesi dalam host pool yang ditentukan
+  - `[MsixPackageFullName <String>]`: Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ScalingPlanName <String>]`: Nama paket penskalaan.
+  - `[SessionHostName <String>]`: Nama host sesi dalam kumpulan host yang ditentukan
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[UserSessionId <String>]`: Nama sesi pengguna dalam sesi host yang ditentukan
+  - `[UserSessionId <String>]`: Nama sesi pengguna dalam host sesi yang ditentukan
   - `[WorkspaceName <String>]`: Nama ruang kerja
 
-MSIXIMAGEURI <IMsixImageUri>: Mewakili URI yang merujuk ke Gambar MSIX
+MSIXIMAGEURI <IMsixImageUri>: Mewakili URI yang mengacu pada MSIX Image
   - `[Uri <String>]`: URI ke Gambar
 
 ## RELATED LINKS

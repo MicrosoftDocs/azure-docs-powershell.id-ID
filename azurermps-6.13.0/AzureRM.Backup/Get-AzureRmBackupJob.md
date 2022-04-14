@@ -7,22 +7,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupJob.md
 ms.openlocfilehash: cbdb60fb4ec139b1dae92b7dd8e2e54675ae1f90
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426336"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844922"
 ---
 # Get-AzureRmBackupJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan Cadangan.
+Mendapatkan pekerjaan Pencadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### FiltersSet (Default)
+### FilterSet (Default)
 ```
 Get-AzureRmBackupJob -Vault <AzureRMBackupVault> [-JobId <String>] [-From <DateTime>] [-To <DateTime>]
  [-Status <String>] [-Type <String>] [-Operation <String>] [-DefaultProfile <IAzureContextContainer>]
@@ -35,11 +35,11 @@ Get-AzureRmBackupJob -Job <AzureRMBackupJob> [-DefaultProfile <IAzureContextCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBackupJob** mendapatkan pekerjaan Azure Backup untuk vault tertentu.
+Cmdlet **Get-AzureRmBackupJob** mendapatkan pekerjaan Azure Backup untuk kubah tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua pekerjaan di vault Backup
+### Contoh 1: Dapatkan semua pekerjaan dalam kubah Cadangan
 ```
 PS C:\>$Vault = Get-AzureRmBackupVault -Name "Vault03"
 PS C:\> Get-AzureRmBackupJob -Vault $Vault
@@ -50,11 +50,11 @@ co03-vm         ConfigureBackup Completed       26-Aug-15 12:19:49 PM  26-Aug-15
 co03-vm         Register        Completed       25-Aug-15 3:23:53 PM   25-Aug-15 3:25:00 PM
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan semua pekerjaan untuk vault di $Vault.
+Perintah pertama mendapatkan kubah bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan semua pekerjaan untuk brankas dalam $Vault.
 
-### Contoh 2: Mendapatkan pekerjaan yang telah selesai
+### Contoh 2: Dapatkan pekerjaan yang sudah selesai
 ```
 PS C:\>Get-AzureRmBackupJob -Vault $Vault -Status Completed
 WorkloadName    Operation       Status          StartTime              EndTime
@@ -62,19 +62,19 @@ WorkloadName    Operation       Status          StartTime              EndTime
 co03-vm         Register        Completed       25-Aug-15 3:23:53 PM   25-Aug-15 3:25:00 PM
 ```
 
-Perintah ini menyelesaikan pekerjaan dari vault di $Vault.
+Perintah ini akan menyelesaikan pekerjaan dari brankas di $Vault.
 
-### Contoh 3: Mendapatkan pekerjaan yang gagal untuk minggu lalu
+### Contoh 3: Dapatkan pekerjaan yang gagal untuk minggu lalu
 ```
 PS C:\>Get-AzureRmBackupJob -Vault $Vault -From (Get-Date).AddDays(-7) -Status Failed
 ```
 
-Perintah ini gagal dari minggu lalu dari penyimpanan di $Vault.
-Parameter *Dari* menentukan waktu tujuh hari sebelumnya.
-Perintah tidak menentukan nilai untuk parameter *To.*
-Oleh karena itu, menggunakan nilai default waktu saat ini.
+Perintah ini mendapatkan pekerjaan yang gagal dari minggu lalu dari lemari besi di $Vault.
+Parameter *Dari* menentukan waktu tujuh hari di masa lalu.
+Perintah tidak menentukan nilai untuk parameter *Kepada* .
+Oleh karena itu, aplikasi ini menggunakan nilai default dari waktu saat ini.
 
-### Contoh 4: Cadangan Polling untuk pekerjaan yang sedang berlangsung yang selesai
+### Contoh 4: Pencadangan Polling untuk pekerjaan yang sedang berlangsung yang selesai
 ```
 PS C:\>$Jobs = Get-AzureRmBackupJob -Vault $Vault -Status InProgress
 $Job = $Jobs[0] 
@@ -92,19 +92,19 @@ Done!
 ```
 
 Skrip ini menjajaki pekerjaan pertama yang saat ini sedang berlangsung hingga pekerjaan selesai.
-Baris pertama skrip mendapatkan semua pekerjaan di $Vault yang sedang berlangsung, lalu menyimpan pekerjaan tersebut di $Jobs array baru.
-Baris kedua menyimpan pekerjaan pertama dari $Jobs larik di $Job baru.
-Baris ketiga dimulai **pengulangan** sementara yang memeriksa status pekerjaan saat ini hingga pekerjaan selesai.
-Untuk informasi tentang kata **kunci** sementara, ketik `Get-Help about_While` .
-The **while** loop writes a message to the console, sleeps for ten seconds, and then updates the $Job variable.
-Skrip memperbarui $Job variabel dengan menggunakan nilai pekerjaan yang sudah $Job dan cmdlet saat ini untuk mendapatkan status pekerjaan saat ini.
-Untuk informasi tentang cmdlet Windows PowerShell, ketik `Get-Help Write-Host` dan `Get-Help Start-Sleep` .
+Baris pertama skrip mendapatkan semua pekerjaan dalam $Vault yang sedang berlangsung, lalu menyimpan pekerjaan tersebut dalam variabel array $Jobs.
+Baris kedua menyimpan pekerjaan pertama dari array $Jobs dalam variabel $Job.
+Baris ketiga dimulai **beberapa saat** pengulangan yang memeriksa status pekerjaan saat ini hingga pekerjaan selesai.
+Untuk informasi tentang **kata kunci saat ini**, ketik .`Get-Help about_While`
+**Saat** pengulangan menulis pesan ke konsol, tidur selama sepuluh detik, lalu memperbarui variabel $Job.
+Skrip memperbarui variabel $Job dengan menggunakan nilai $Job yang sudah ada dan cmdlet saat ini untuk mendapatkan status pekerjaan saat ini.
+Untuk informasi tentang cmdlet Windows PowerShell, ketik `Get-Help Write-Host` dan `Get-Help Start-Sleep`.
 Baris terakhir skrip memberi tahu Anda bahwa skrip telah selesai.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -119,9 +119,9 @@ Accept wildcard characters: False
 ```
 
 ### -Dari
-Menentukan mulai, sebagai objek **DateTime,** rentang waktu untuk pekerjaan yang cmdlet ini dapatkan.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
-Untuk informasi selengkapnya tentang **objek DateTime,** ketik `Get-Help Get-Date` .
+Menentukan mulai, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapat cmdlet ini.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
+Untuk informasi selengkapnya tentang objek **DateTime**, ketik .`Get-Help Get-Date`
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -136,8 +136,8 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan yang akan dilakukan cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupJob,** gunakan cmdlet Get-AzureRmBackupJob cmdlet.
+Menentukan pekerjaan yang didapat cmdlet ini.
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan cmdlet Get-AzureRmBackupJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
@@ -152,9 +152,9 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan yang akan dapatkan cmdlet ini.
-ID adalah properti **InstanceId** dari objek **AzureRmBackupJob.**
-Untuk mendapatkan objek **AzureRmBackupJob,** gunakan Get-AzureRmBackupJob.
+Menentukan ID pekerjaan yang didapat cmdlet ini.
+ID adalah properti **InstanceId** dari objek **AzureRmBackupJob** .
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan Get-AzureRmBackupJob.
 
 ```yaml
 Type: System.String
@@ -169,15 +169,15 @@ Accept wildcard characters: False
 ```
 
 ### -Operasi
-Menentukan operasi pekerjaan yang akan dilakukan cmdlet ini.
+Menentukan operasi pekerjaan yang didapat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Pencadangan 
-- ConfigureBackup 
+- Cadangan 
+- Mengonfigurasi Kembali 
 - DeleteBackupData 
 - Daftar 
-- Pulihkan 
+- Mengembalikan 
 - Buka Proteksi 
-- Pisahkan pendaftaran
+- Batalkan pendaftaran
 
 ```yaml
 Type: System.String
@@ -193,14 +193,14 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status pekerjaan yang cmdlet ini dapatkan.
+Menentukan status pekerjaan yang didapat cmdlet ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - InProgress
 - Gagal
 - Dibatalkan
 - Membatalkan
 - Selesai
-- CompletedWithWarnings Anda bisa menentukan parameter ini untuk menemukan semua pekerjaan yang sedang berlangsung atau semua pekerjaan yang gagal.
+- CompletedWithWarnings Anda dapat menentukan parameter ini untuk menemukan semua pekerjaan yang sedang berlangsung atau semua pekerjaan yang gagal.
 
 ```yaml
 Type: System.String
@@ -215,10 +215,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ke
-Menentukan akhir, sebagai objek **DateTime,** rentang waktu untuk pekerjaan yang cmdlet ini dapatkan.
+### -Kepada
+Menentukan akhir, sebagai objek **DateTime** , dari rentang waktu untuk pekerjaan yang didapat cmdlet ini.
 Nilai default adalah waktu sistem saat ini.
-Jika Anda menentukan parameter ini, Anda juga harus menentukan parameter *From.*
+Jika menentukan parameter ini, Anda juga harus menentukan parameter *Dari* .
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe wadah di mana cmdlet ini mendapatkan pekerjaan pencadangan.
+Menentukan tipe kontainer di mana cmdlet ini mendapatkan pekerjaan cadangan.
 Saat ini, satu-satunya nilai yang didukung adalah AzureVM.
 
 ```yaml
@@ -250,8 +250,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan pekerjaan cmdlet pencadangan seperti yang dilakukan cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupVault,** gunakan cmdlet Get-AzureRmBackupVault cmdlet.
+Menentukan kubah Cadangan tempat cmdlet ini mendapatkan pekerjaan.
+Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -278,7 +278,7 @@ Parameter: Vault (ByValue)
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
 
 ## CATATAN
-* Tidak ada
+* Tidak
 
 ## RELATED LINKS
 
@@ -286,6 +286,6 @@ Parameter: Vault (ByValue)
 
 [Stop-AzureRmBackupJob](./Stop-AzureRmBackupJob.md)
 
-[Wait-AzureRmBackupJob](./Wait-AzureRmBackupJob.md)
+[Tunggu-AzureRmBackupJob](./Wait-AzureRmBackupJob.md)
 
 

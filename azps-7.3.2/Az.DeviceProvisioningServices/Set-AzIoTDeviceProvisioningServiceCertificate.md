@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deviceprovisioni
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeviceProvisioningServices/DeviceProvisioningServices/help/Set-AzIoTDeviceProvisioningServiceCertificate.md
-ms.openlocfilehash: 3ed8e65f7ef55d683c574bd7978f7725ae5f2f82
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6598fc328ca78b2cb2abd310e4c46818306c32fe
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394407"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141851972"
 ---
 # Set-AzIoTDeviceProvisioningServiceCertificate
 
 ## SYNOPSIS
 Verifikasi sertifikat Layanan Penyediaan Perangkat Azure IoT Hub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deviceprovisioningservices/set-aziotdeviceprovisioningservicecertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Set-AzIoTDeviceProvisioningServiceCertificate [-ResourceId] <String> [-Etag] <St
 ```
 
 ## DESCRIPTION
-Verifikasi sertifikat dengan mengunggah sertifikat verifikasi yang berisi kode verifikasi yang diperoleh dengan memanggil buat-kode verifikasi. Ini adalah langkah terakhir dalam proses pembuktian kepemilikan.
-Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates
+Verifikasi sertifikat dengan mengunggah sertifikat verifikasi yang berisi kode verifikasi yang diperoleh dengan memanggil generate-verification-code. Ini adalah langkah terakhir dalam proses pembuktian kepemilikan.
+Untuk penjelasan mendetail tentang sertifikat CA dalam layanan penyediaan perangkat Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-dps/how-to-verify-certificates
 
 ## EXAMPLES
 
@@ -78,7 +81,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpGcA=
 ```
 
-Verifikasi kepemilikan kunci privat "mycertificate" menggunakan pipeline.
+Verifikasi kepemilikan kunci pribadi "mycertificate" menggunakan pipeline.
 
 ## PARAMETERS
 
@@ -157,8 +160,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-representasi basis-64 dari file .cer atau file .pem sertifikat X509 atau jalur file .pem
+### -Jalur
+representasi base-64 dari file .cer sertifikat X509 atau jalur file .pem
 
 ```yaml
 Type: System.String
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Sertifikat Layanan Pengadaan Perangkat Iot
+Id Sumber Daya Sertifikat Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

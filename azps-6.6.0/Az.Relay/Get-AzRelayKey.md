@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayKey.md
 ms.openlocfilehash: e4204079a06099206d10cbf38d0f96706ffe4a41
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140067599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142043201"
 ---
 # Get-AzRelayKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi utama dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfIguy/HybridConnection).
+Mendapatkan string koneksi utama dan sekunder untuk entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/get-azrelaykey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelaykey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzRelayKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] <Stri
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 Get-AzRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzRelayKey [-ResourceGroupName] <String> [[-Namespace] <String>] [-HybridCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzIguyKey** mengembalikan string koneksi utama dan sekunder untuk entitas Relay tertentu (Namespace/WcfIguy/HybridConnection).
+Cmdlet **Get-AzRelayKey** mengembalikan string koneksi utama dan sekunder untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1: Kumpulan Nama
+### Contoh 1: Ruang nama
 ```powershell
 PS C:\> Get-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 
@@ -56,7 +56,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-### Contoh 2: WcfCfCfy
+### Contoh 2: WcfRelay
 ```powershell
 PS C:\> Get-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1  -WcfRelay TestWCFRelay1 -Name AuthoRule1
 
@@ -78,7 +78,7 @@ SecondaryKey              : ############################################
 KeyName                   : AuthoRule1
 ```
 
-String koneksi utama dan sekunder ke entitas Relay yang ditentukan (Namespace/WcfIguy/HybridConnection).
+String koneksi primer dan sekunder ke entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## PARAMETERS
 
@@ -169,8 +169,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

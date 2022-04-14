@@ -4,16 +4,16 @@ ms.assetid: E4F6D096-E265-49CF-AA73-E9C807F8383B
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 62c56b4f249b4feffaca76b8f0192d37768f3d59
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420265"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966168"
 ---
 # Get-AzureStorSimpleLegacyVolumeContainerMigrationPlan
 
 ## SYNOPSIS
-Mendapatkan rencana migrasi untuk wadah warisan.
+Mendapatkan paket migrasi untuk kontainer warisan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,11 +25,11 @@ Get-AzureStorSimpleLegacyVolumeContainerMigrationPlan [-LegacyConfigId <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorSimpleLEgacyVolumeContainerMigrationPlan** mendapatkan rencana migrasi untuk wadah warisan.
+Cmdlet **Get-AzureStorSimpleLEgacyVolumeContainerMigrationPlan** mendapatkan paket migrasi untuk kontainer warisan.
 Tentukan paket migrasi menurut ID konfigurasi warisannya.
-Jika pembuatan rencana migrasi masih dalam proses, cmdlet ini akan mendapatkan status rencana migrasi.
-Jika rencana migrasi selesai, cmdlet ini akan mengembalikan rencana migrasi sebenarnya untuk kumpulan wadah warisan.
-Jika Anda tidak menentukan parameter *LegacyConfigId,* cmdlet ini akan mengembalikan daftar IP konfigurasi.
+Jika pembuatan paket migrasi masih berlangsung, cmdlet ini akan mendapatkan status rencana migrasi.
+Jika paket migrasi selesai, cmdlet ini mengembalikan rencana migrasi aktual untuk kumpulan kontainer warisan.
+Jika Anda tidak menentukan parameter *LegacyConfigId* , cmdlet ini mengembalikan daftar ID konfigurasi.
 
 ## EXAMPLES
 
@@ -57,10 +57,10 @@ MigrationTimeEstimationFailed     : None
 MigrationTimeEstimationNotStarted : None
 ```
 
-Perintah ini mendapatkan status rencana migrasi.
-Status mencakup bandwidth yang diasumsikan, perkiraan waktu, dan informasi terkait.
+Perintah ini mendapatkan status paket migrasi.
+Status ini mencakup bandwidth yang diasumsikan, perkiraan waktu dan, informasi terkait.
 
-### Contoh 2: Mendapatkan ID dari rencana yang sudah ada
+### Contoh 2: Dapatkan ID paket yang sudah ada
 ```
 PS C:\>Get-AzureStorSimpleLegacyVolumeContainerMigrationPlan
 VERBOSE: 2015-04-08 13:46:51 ClientRequestId: 813da56c-0cfc-4325-80db-08ef32bdde1e_PS
@@ -73,12 +73,12 @@ LegacyConfigId                                              DeviceName
 26d4096d-49b6-4102-b188-0446ece73c8b                        ARUNKM-N4
 ```
 
-Perintah ini mendapatkan semua IP konfigurasi paket migrasi.
+Perintah ini mendapatkan semua ID konfigurasi paket migrasi.
 
 ## PARAMETERS
 
 ### -LegacyConfigId
-Menentukan ID unik konfigurasi alat warisan.
+Menentukan ID unik konfigurasi peralatan warisan.
 
 ```yaml
 Type: String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -LegacyContainerNames
-Menentukan array nama wadah volume yang akan mendapatkan rencana migrasi oleh cmdlet ini.
+Menentukan array nama kontainer volume yang cmdletnya mendapatkan paket migrasi.
 
 ```yaml
 Type: String[]
@@ -123,16 +123,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### MigrationPlanMsg
-Cmdlet ini mengembalikan **objek MigrationPlanMsg** yang berisi status pekerjaan rencana migrasi, diasumsikan bandwidth dalam megabit per detik, dan perkiraan waktu dalam menit.
+### MigrasiPlanMsg
+Cmdlet ini mengembalikan objek **MigrationPlanMsg** yang berisi status pekerjaan rencana migrasi, bandwidth diasumsikan dalam megabit per detik, dan perkiraan waktu dalam menit.
 
 ## CATATAN
 

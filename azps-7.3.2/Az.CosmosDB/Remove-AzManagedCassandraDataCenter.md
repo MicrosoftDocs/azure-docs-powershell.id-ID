@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: 6283b2bd25f5aa9b7f3a0e20497eff9700e47173
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 425a7872c0fe3c8ff3a2ecc39fad6e7f93b3546b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187888"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852836"
 ---
 # Remove-AzManagedCassandraDataCenter
 
 ## SYNOPSIS
-Menghapus Azure Managed Instances untuk Apache Sandbox data center.
+Menghapus Instans terkelola Azure untuk pusat data Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,7 +52,7 @@ Remove-AzManagedCassandraDataCenter
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzManagedCass cmdletDataCenter** menghapus pusat data Cmdlet yang dikelola.
+**Cmdlet Remove-AzManagedCassandraDataCenter** menghapus pusat data Cassandra yang dikelola.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ PS C:\> $dataCenterResource | Remove-AzManagedCassandraDataCenter
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataCenterName
-Nama pusat data Seluler yang dikelola.
+Nama pusat data Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pusat data Managed Hosting
+Objek pusat data Cassandra terkelola
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSDataCenterResource
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Resource id of the managedCenter DataCenter.
+Id sumber daya dari Cassandra DataCenter yang dikelola.
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,18 +4,18 @@ ms.assetid: A1327796-0CDC-43E0-97A6-FD1BF570066F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b4f5e38a61775b27be36baf557a558b4f6d429e2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421584"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966417"
 ---
 # Get-AzureMediaServicesAccount
 
 ## SYNOPSIS
 Dapatkan akun Azure Media Services yang tersedia.
 
-**Catatan:** Versi ini sudah tidak berlaku, silakan lihat versi [yang lebih baru.](https://docs.microsoft.com/powershell/module/azurerm.media/?view=azurermps-5.4.0#media_services)
+**Catatan:** Versi ini sudah tidak digunakan lagi, silakan lihat [versi yang lebih baru](https://docs.microsoft.com/powershell/module/azurerm.media/?view=azurermps-5.4.0#media_services).
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,32 +26,32 @@ Get-AzureMediaServicesAccount [-Name <String>] [-Profile <AzureSMProfile>] [<Com
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Untuk mencantumkan semua akun, gunakan `Get-AzureMediaServicesAccount` cmdlet.
-Untuk mendapatkan informasi yang lebih mendetail tentang akun tertentu, gunakan `Get-AzureMediaServicesAccount -Name YourAccountName` cmdlet.
+Untuk mendapatkan informasi lebih mendetail tentang akun tertentu, gunakan `Get-AzureMediaServicesAccount -Name YourAccountName` cmdlet.
 
 ## EXAMPLES
 
-### Contoh 1: List all Media Services accounts
+### Contoh 1: Daftar semua akun Media Services
 ```
 PS C:\> Get-AzureMediaServicesAccount
 ```
 
-Perintah ini mencantumkan semua akun Media Services tersedia.
+Perintah ini mencantumkan semua akun Media Services yang tersedia.
 
-### Contoh 2: Mendapatkan informasi detail tentang akun Media Services Anda
+### Contoh 2: Dapatkan informasi mendetail tentang akun Media Services
 ```
 PS C:\> Get-AzureMediaServicesAccount -Name accountname
 ```
 
-Perintah ini menampilkan properti akun Media Services Anda.
+Perintah ini menampilkan properti akun Media Services.
 
 ## PARAMETERS
 
 ### -Nama
-Nama Media Services saya.
+Nama akun Media Services.
 
 ```yaml
 Type: String
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

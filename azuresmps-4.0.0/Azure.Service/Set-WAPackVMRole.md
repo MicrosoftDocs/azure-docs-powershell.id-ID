@@ -4,16 +4,16 @@ ms.assetid: 69FBF1E7-E69A-42B5-AC17-C7CF8CAB3C9D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: da54fc7031fff5f14b503f8ef074b06fdee3311b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425067"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965984"
 ---
 # Set-WAPackVMRole
 
 ## SYNOPSIS
-Mengubah properti jumlah instans dari sebuah peran mesin virtual.
+Mengubah properti hitungan instans peran mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,28 +25,28 @@ Set-WAPackVMRole -VMRole <VMRole> -InstanceCount <Int32> [-PassThru] [-Profile <
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **Set-WAPackVMRole** mengubah properti jumlah instans dari sebuah peran mesin virtual.
+Cmdlet **Set-WAPackVMRole** mengubah properti hitungan instans peran mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan jumlah instance untuk peran mesin virtual
+### Contoh 1: Tentukan hitungan instans untuk peran mesin virtual
 ```
 PS C:\> $VMRole = Get-WAPackVMRole -Name "ContosoVMRole01"
 PS C:\> Set-WAPackVMRole -VMRole $VMRole -InstanceCount 3
 ```
 
-Perintah pertama mendapatkan peran mesin virtual bernama ContosoVMRole01 dengan menggunakan cmdlet **Get-WAPackVMRole,** lalu menyimpan objek tersebut dalam $VMRole variabel.
+Perintah pertama mendapatkan peran mesin virtual bernama ContosoVMRole01 dengan menggunakan cmdlet **Get-WAPackVMRole** , lalu menyimpan objek tersebut dalam variabel $VMRole.
 
-Perintah kedua dan terakhir mengatur jumlah instans baru dari peran mesin virtual yang disimpan dalam $VMRole ke 3.
+Perintah kedua dan terakhir mengatur hitungan instans baru peran mesin virtual yang disimpan di $VMRole ke 3.
 
 ## PARAMETERS
 
 ### -InstanceCount
-Menentukan jumlah instans untuk peran mesin virtual.
+Menentukan hitungan instans untuk peran mesin virtual.
 
 ```yaml
 Type: Int32
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -VMRole
 Menentukan peran mesin virtual.
-Untuk mendapatkan peran mesin virtual, gunakan cmdlet **Get-WAPackVMRole.**
+Untuk mendapatkan peran mesin virtual, gunakan cmdlet **Get-WAPackVMRole** .
 
 ```yaml
 Type: VMRole
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,6 +123,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-WAPackVMRole](./New-WAPackVMRole.md)
 
-[Remove-WAPackVMRole](./Remove-WAPackVMRole.md)
+[Hapus-WAPackVMRole](./Remove-WAPackVMRole.md)
 
 

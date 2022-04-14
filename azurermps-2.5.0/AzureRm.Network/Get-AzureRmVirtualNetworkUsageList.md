@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
 Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvirtualnetworkusagelist
 schema: 2.0.0
-ms.openlocfilehash: eb0acf1b5b353379db42377ba14180fbb2bfb512dfcc2b1745021eb9090d2844
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 61717f314629259caca9329c2ef1a458aa9a0e0f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864469"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141889144"
 ---
 # Get-AzureRmVirtualNetworkUsageList
 
@@ -25,7 +25,7 @@ Get-AzureRmVirtualNetworkUsageList -ResourceGroupName <String> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVirtualNetworkUsageList** mendapatkan penggunaan per subnet untuk jaringan virtual tertentu.
+Cmdlet **Get-AzureRmVirtualNetworkUsageList** mendapatkan penggunaan per subnet untuk jaringan virtual yang ditentukan.
 
 ## EXAMPLES
 
@@ -48,12 +48,12 @@ Limit        : 251
 Unit         : Count
 ```
 
-Mendapatkan per nilai subnet saat ini dari penggunaan untuk jaringan virtual uji penggunaan.
+Mendapatkan nilai penggunaan saat ini per subnet untuk jaringan virtual tergunakan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama jaringan virtual untuk menampilkan penggunaan.
+Menentukan nama jaringan maya untuk memperlihatkan penggunaan.
 
 ```yaml
 Type: String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi bagian dari jaringan virtual.
+Menentukan nama grup sumber daya tempat jaringan maya berada.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

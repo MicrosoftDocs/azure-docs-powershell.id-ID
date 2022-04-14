@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusTopic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusTopic.md
 ms.openlocfilehash: e2ca0b6902ecc13c9dfe4f418ea5d321b6e36dbf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140861845"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881449"
 ---
 # New-AzureRmServiceBusTopic
 
 ## SYNOPSIS
-Membuat topik baru Bus Layanan dalam ruang nama Bus Layanan ditentukan.
+Membuat topik Bus Layanan baru dalam ruang nama Bus Layanan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,7 +31,7 @@ New-AzureRmServiceBusTopic [-ResourceGroupName] <String> [-Namespace] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmServiceBusTopic** membuat topik Bus Layanan baru di ruang nama Bus Layanan tertentu.
+Cmdlet **New-AzureRmServiceBusTopic** membuat topik Bus Layanan baru dalam ruang nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -60,12 +60,12 @@ SupportOrdering                     : True
 UpdatedAt                           : 10/11/2018 11:51:24 PM
 ```
 
-Membuat topik baru Bus Layanan di `SB-Topic_exampl1` ruang nama Bus Layanan nama yang ditentukan`SB-Example1`.
+Membuat topik `SB-Topic_exampl1` Bus Layanan baru dalam ruang `SB-Example1`nama Bus Layanan yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutoDeleteOnIdle
-Menentukan interval [diam jangka waktu](https://msdn.microsoft.com/library/system.timespan.aspx) setelah topik dihapus secara otomatis. Durasi minimum adalah 5 menit.
+Menentukan interval [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) diam setelah topik dihapus secara otomatis. Durasi minimum adalah 5 menit.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultMessageTimeToLive
-Menentukan durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirimkan ke Bus Layanan.
+Menentukan durasi setelah pesan kedaluwarsa, dimulai dari kapan pesan dikirim ke Bus Layanan.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DuplicateDetectionHistoryTimeWindow
-Menentukan struktur [Jangka Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) yang menentukan durasi riwayat deteksi duplikat. Nilai default adalah 10 menit.
+Menentukan struktur [Rentang Waktu](https://msdn.microsoft.com/library/system.timespan.aspx) yang menentukan durasi riwayat deteksi duplikat. Nilai defaultnya adalah 10 menit.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBatchedOperations
-Menunjukkan apakah operasi batch sisi server diaktifkan.
+Menunjukkan apakah operasi kumpulan sisi server diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableExpress
-Menunjukkan apakah Express Entities diaktifkan. Antrean ekspres menyimpan pesan dalam memori untuk sementara waktu sebelum menulisnya ke penyimpanan persisten.
+Menunjukkan apakah Entitas Ekspres diaktifkan. Antrean ekspres menyimpan pesan dalam memori untuk sementara sebelum menulisnya ke penyimpanan tetap.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnablePartitioning
-Menentukan apakah akan mengaktifkan topik yang akan dipartisi di beberapa broker pesan. 
+Menentukan apakah akan mengaktifkan topik untuk dipartisi di beberapa broker pesan. 
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeInMegabytes
-Ukuran maksimum topik dalam megabyte, yaitu ukuran memori yang dialokasikan untuk topik.
+Ukuran maksimum topik dalam megabyte, yang merupakan ukuran memori yang dialokasikan untuk topik tersebut.
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequiresDuplicateDetection
-Menunjukkan apakah topik tersebut memerlukan deteksi duplikasi.
+Menunjukkan apakah topik memerlukan deteksi duplikasi.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -311,15 +311,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

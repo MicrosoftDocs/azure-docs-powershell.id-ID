@@ -3,17 +3,17 @@ external help file: Azs.Backup.Admin-help.xml
 Module Name: Azs.Backup.Admin
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: f0064c715e2d7e4ff47389e137884f1f4f266f5853bcea12e192f8693e932ebe
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e7b6e8139f201a69684d4236a5e84e89f6607c5c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417824"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770936"
 ---
 # Set-AzsBackupConfiguration
 
 ## SYNOPSIS
-Mengatur konfigurasi cadangan di lokasi tertentu.
+Atur konfigurasi cadangan pada lokasi yang ditentukan.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Set-AzsBackupConfiguration -ResourceId <String> [-Path <String>] [-Username <Str
 ```
 
 ## DESCRIPTION
-Mengatur konfigurasi cadangan di lokasi tertentu.
+Atur konfigurasi cadangan pada lokasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupFrequencyInHours
-Interval, dalam jam, untuk frekuensi yang digunakan penjadwal untuk cadangan.
+Interval, dalam jam, untuk frekuensi penjadwal mengambil cadangan.
 
 ```yaml
 Type: Int32
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionPeriodInDays
-Periode penyimpanan, dalam beberapa hari, untuk pencadangan di lokasi penyimpanan.
+Periode penyimpanan, dalam hari, untuk cadangan di lokasi penyimpanan.
 
 ```yaml
 Type: Int32
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Konfigurasi lokasi cadangan dikembalikan oleh Get-AzsBackupConfiguration.
+Konfigurasi lokasi cadangan yang dikembalikan oleh Get-AzsBackupConfiguration.
 
 ```yaml
 Type: BackupLocation
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi untuk mengonfigurasi.
+Lokasi untuk dikonfigurasi.
 
 ```yaml
 Type: String
@@ -175,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Lokasi tempat pencadangan akan disimpan.
+### -Jalur
+Lokasi tempat cadangan akan disimpan.
 
 ```yaml
 Type: String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

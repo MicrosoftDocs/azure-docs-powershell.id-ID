@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzLoadBalancerFrontendIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzLoadBalancerFrontendIpConfig.md
 ms.openlocfilehash: 9692f44ce5d0a819d0176e0b295571ca260a2a71
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425743"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141810752"
 ---
 # Set-AzLoadBalancerFrontendIpConfig
 
 ## SYNOPSIS
-Mengatur status tujuan untuk konfigurasi IP ujung-depan dalam penyeimbang muat.
+Mengatur status tujuan untuk konfigurasi IP ujung depan dalam penyeimbang beban.
 
 ## SYNTAX
 
@@ -49,11 +49,11 @@ Set-AzLoadBalancerFrontendIpConfig -Name <String> -LoadBalancer <PSLoadBalancer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancerFrontendIpConfig** menetapkan status tujuan untuk konfigurasi IP ujung-depan dalam penyeimbang muat Azure.
+Cmdlet **Set-AzLoadBalancerFrontendIpConfig** menetapkan status tujuan untuk konfigurasi IP ujung depan dalam penyeimbang muatan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi IP front-end dari penyeimbang muat
+### Contoh 1: Mengubah konfigurasi IP ujung depan penyeimbang muatan
 ```
 PS C:\>$Subnet = Get-AzVirtualNetwork -Name "MyVnet" -ResourceGroupName "MyResourceGroup" | Get-AzVirtualNetworkSubnetConfig -Name "Subnet"
 PS C:\> $slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
@@ -61,18 +61,18 @@ PS C:\> $slb | Add-AzLoadBalancerFrontendIpConfig -Name "NewFrontend" -Subnet $S
 PS C:\> $slb | Set-AzLoadBalancerFrontendIpConfig -Name "NewFrontend" -Subnet $Subnet
 ```
 
-Perintah pertama mendapatkan subnet virtual bernama Subnet, lalu menyimpannya dalam $Subnet tertentu.
+Perintah pertama mendapatkan subnet virtual bernama Subnet, lalu menyimpannya dalam variabel $Subnet.
 
-Perintah kedua mendapatkan penyeimbang muat terkait bernama MyLoadBalancer, lalu menyimpannya dalam $slb baru.
+Perintah kedua mendapatkan load balancer terkait bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
 
-Perintah ketiga menggunakan operator pipeline untuk mengirim penyeimbang muat di $slb ke Add-AzLoadBalancerFrontendIpConfig, yang membuat konfigurasi IP ujung-depan yang bernama NewFrontend untuk $slb.
+Perintah ketiga menggunakan operator pipeline untuk mengirimkan load balancer dalam $slb ke Add-AzLoadBalancerFrontendIpConfig, yang membuat konfigurasi IP front-end bernama NewFrontend untuk $slb.
 
-Perintah keempat mengirim penyeimbang muat di $slb **ke Set-AzLoadBalancerFrontendIpConfig**, yang menyimpan dan memperbarui konfigurasi IP ujung-depan.
+Perintah keempat melewati load balancer dalam $slb ke **Set-AzLoadBalancerFrontendIpConfig**, yang menyimpan dan memperbarui konfigurasi IP ujung depan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat.
-Cmdlet ini mengatur status tujuan untuk konfigurasi ujung-depan bagi penyeimbang muat yang ditentukan parameter ini.
+Menentukan penyeimbang beban.
+Cmdlet ini mengatur status tujuan untuk konfigurasi ujung depan untuk load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: PSLoadBalancer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi IP ujung-depan untuk disetel.
+Menentukan nama konfigurasi IP ujung-depan yang akan diatur.
 
 ```yaml
 Type: String
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Menentukan alamat IP privat dari penyeimbang muat yang terkait dengan konfigurasi IP front-end untuk diatur.
-Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet.*
+Menentukan alamat IP privat penyeimbang muatan yang terkait dengan konfigurasi IP ujung depan yang akan diatur.
+Tentukan parameter ini hanya jika Anda juga menentukan parameter *Subnet* .
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddress
-Menentukan objek **PublicIpAddress** yang terkait dengan konfigurasi IP front-end untuk diatur.
+Menentukan objek **PublicIpAddress** yang terkait dengan konfigurasi IP ujung depan untuk diatur.
 
 ```yaml
 Type: PSPublicIpAddress
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressId
-Menentukan ID objek **PublicIpAddress** yang terkait dengan konfigurasi IP front-end yang ditetapkan cmdlet ini.
+Menentukan ID objek **PublicIpAddress** yang terkait dengan konfigurasi IP ujung depan yang diatur cmdlet ini.
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Menentukan objek **Subnet** yang berisi konfigurasi IP ujung-depan yang ditetapkan cmdlet ini.
+Menentukan objek **Subnet** yang berisi konfigurasi IP ujung-depan yang diatur cmdlet ini.
 
 ```yaml
 Type: PSSubnet
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Menentukan ID subnet yang berisi konfigurasi IP ujung-depan yang ditetapkan cmdlet ini.
+Menentukan ID subnet yang berisi konfigurasi IP ujung depan yang diatur cmdlet ini.
 
 ```yaml
 Type: String
@@ -193,8 +193,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan IP yang dialokasikan untuk sumber daya yang diperlukan.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -209,12 +209,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLoadBalancer
-Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari saluran
+Parameter 'LoadBalancer' menerima nilai tipe 'PSLoadBalancer' dari pipeline
 
 ## OUTPUTS
 

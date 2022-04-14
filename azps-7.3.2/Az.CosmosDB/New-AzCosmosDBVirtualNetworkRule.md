@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBVirtualNetworkRule.md
-ms.openlocfilehash: 39b4ba307cf6af5b08fd9cdb39ebe0d16304e258
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b02067f994f201fabb6d06cc70eb7adf7778e4b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386751"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852980"
 ---
 # New-AzCosmosDBVirtualNetworkRule
 
 ## SYNOPSIS
-Buat CosmosDB VirtualNetworkRule Object(PSVirtualNetworkRule) baru.
+Buat CosmosDB VirtualNetworkRule Object (PSVirtualNetworkRule baru).
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbvirtualnetworkrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBVirtualNetworkRule -Id <String> [-IgnoreMissingVNetServiceEndpoint
 ```
 
 ## DESCRIPTION
-Buat CosmosDB VirtualNetworkRule Object(PSVirtualNetworkRule) baru.
+Buat CosmosDB VirtualNetworkRule Object (PSVirtualNetworkRule baru).
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-ID Sumber Daya subnet, misalnya: /subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}
+ID sumber daya subnet, misalnya: /subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreMissingVNetServiceEndpoint
-Boolean untuk menunjukkan jika untuk membuat aturan firewall sebelum jaringan virtual memiliki titik akhir layanan vnet yang diaktifkan.
+Boolean untuk menunjukkan apakah membuat aturan firewall sebelum jaringan virtual memiliki titik akhir layanan vnet diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -85,11 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

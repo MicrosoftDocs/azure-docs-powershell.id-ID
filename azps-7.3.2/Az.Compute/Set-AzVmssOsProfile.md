@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/set-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssOsProfile.md
-ms.openlocfilehash: 9ceb914dbf637672a8c2790bb96cc360e9b81bf1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ca8ae64ccb6ad0c22637a3c4d137b53149f7b16f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373398"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897939"
 ---
 # Set-AzVmssOsProfile
 
 ## SYNOPSIS
 Mengatur properti profil sistem operasi VMSS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmssosprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Set-AzVmssOsProfile [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-Comp
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVmssOsProfile** mengatur properti profil sistem operasi Atur Skala Komputer Virtual.
+Cmdlet **Set-AzVmssOsProfile** mengatur properti profil sistem operasi Set Skala Mesin Virtual.
 
 ## EXAMPLES
 
@@ -43,10 +46,10 @@ $vmss = New-AzVmssConfig -Location $Loc -SkuCapacity 2 -SkuName "Standard_A0" -U
 Set-AzVmssOSProfile -VirtualMachineScaleSet $vmss -ComputerNamePrefix "Test" -AdminUsername $AdminUsername -AdminPassword $AdminPassword
 ```
 
-Perintah ini mengatur properti profil sistem operasi untuk $vmss operasi.
+Perintah ini mengatur properti profil sistem operasi untuk objek $vmss.
 Perintah mengatur prefiks nama komputer untuk semua instans mesin virtual dalam VMSS untuk Menguji dan menyediakan nama pengguna dan kata sandi administrator.
 
-### Contoh 2: Mengatur properti profil sistem operasi untuk Vmss dalam mode Fleksibel dengan Hotpatching yang diaktifkan.
+### Contoh 2: Atur properti profil sistem operasi untuk Vmss dalam mode Fleksibel dengan Hotpatching diaktifkan.
 ```powershell
 # Setup variables.
 $loc = "eastus";
@@ -199,7 +202,7 @@ $vmss = New-AzVmss `
 ## PARAMETERS
 
 ### -AdditionalUnattendContent
-Menentukan objek konten tanpa pengawasan.
+Menentukan objek konten tanpa pengawas.
 Anda dapat menggunakan Add-AzVMAdditionalUnattendContent untuk membuat objek.
 
 ```yaml
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdminPassword
-Menentukan kata sandi administrator yang akan digunakan untuk semua instans mesin virtual dalam VMSS.
+Menentukan kata sandi administrator untuk digunakan untuk semua instans mesin virtual dalam VMSS.
 
 ```yaml
 Type: System.String
@@ -230,13 +233,13 @@ Accept wildcard characters: False
 ```
 
 ### -AdminUsername
-Menentukan nama akun administrator yang akan digunakan untuk semua instans mesin virtual dalam VMSS. <br>
-**Windows-saja: Tidak** dapat diakhiri dengan \".\" <br>
-**Nilai yang tidak diizinkan:** \" administrator\", \"admin\", \"pengguna\", \"user1\", \"test\", \"user2\", \"test1\", \"user3\", \"admin1\", \"1\", \"123\", \"a\", \"actuser\", \"adm\", \"admin2\", \"aspnet\", \"backup, console\", \"\"\"david, guest\"\", \"\"john\", \"owner\", \"root\", \"server\", \"sql\", support \" \", \"support_388945a0\", \"sys\", \"test2\", \"test3\", \"user4\", \"user5\". <br>
-**Panjang-minimum (Linux):** 1 karakter <br>
-**Panjang-maks (Linux):** 64 karakter <br>
-**Panjang maks (Windows):** 20 karakter  <br>
-<li> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat Memilih [Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/devops/organizations/settings/naming-restrictions).
+Menentukan nama akun administrator untuk digunakan untuk semua instans mesin virtual dalam VMSS. <br>
+**batasan Windows-saja:** Tidak dapat diakhiri dengan \".\" <br>
+**Nilai yang tidak diperbolehkan:** \" administrator\", \"admin\", \"pengguna\", \"pengguna1\", \"uji\", \"user2\", \"uji1\", \"user3\", \"admin1\", \"1\", \"123\", \"a\", \"actuser\", adm\", \"\"admin2\", aspnet\", \"\"mencadangkan\", \"konsol\", \"david\", \"tamu\", \"john\", \"pemilik\", \"akar\", \"server\", \"sql\", \"mendukung \", \"support_388945a0\", \"sys\", \"test2\", \"test3\", \"user4\", \"user5\". <br>
+**Panjang minimum (Linux):** 1 karakter <br>
+**Panjang maks (Linux):** 64 karakter <br>
+**Panjang maksimal (Windows):** 20 karakter  <br>
+<li> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat [Memilih Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/devops/organizations/settings/naming-restrictions).
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 
 ### -ComputerNamePrefix
 Menentukan prefiks nama komputer untuk semua instans mesin virtual dalam VMSS.
-Nama komputer harus panjangnya 1 sampai 15 karakter.
+Nama komputer harus panjangnya 1 hingga 15 karakter.
 
 ```yaml
 Type: System.String
@@ -267,10 +270,10 @@ Accept wildcard characters: False
 ```
 
 ### -CustomData
-Menentukan string berkode basis 64 dari data kustom.
-Ini dikodekan ke array biner yang disimpan sebagai file pada mesin virtual.
+Menentukan string data kustom berkode basis 64.
+Ini didekodekan ke array biner yang disimpan sebagai file di mesin virtual.
 Panjang maksimum array biner adalah 65535 byte. <br>
-Untuk menggunakan cloud-init untuk VM, lihat [Menggunakan cloud-init untuk mengustomisasi VM Linux selama pembuatan](/azure/virtual-machines/linux/tutorial-automate-vm-deployment).
+Untuk menggunakan cloud-init untuk VM Anda, lihat [Menggunakan cloud-init untuk mengkustomisasi VM Linux selama pembuatan](/azure/virtual-machines/linux/tutorial-automate-vm-deployment).
 
 ```yaml
 Type: System.String
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHotpatching
-Memungkinkan pelanggan untuk melakukan patch Azure Vms mereka tanpa memerlukan reboot. Untuk enableHotpatching, 'provisionVMAgent' harus diatur ke true dan 'patchMode' harus diatur ke 'AutomaticByPlatform'.
+Memungkinkan pelanggan untuk menambal Azure Vms mereka tanpa memerlukan boot ulang. Untuk enableHotpatching, 'provisionVMAgent' harus diatur ke true dan 'patchMode' harus diatur ke 'AutomaticByPlatform'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxConfigurationDisablePasswordAuthentication
-Mengindikasikan bahwa cmdlet ini menonaktifkan autentikasi kata sandi.
+Menunjukkan bahwa cmdlet ini menonaktifkan autentikasi kata sandi.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -330,7 +333,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxConfigurationPatchMode
-Menentukan mode Patching Tamu VM ke mesin virtual IaaS atau mesin virtual yang terkait dengan skala mesin virtual yang diatur dengan OrchestrationMode sebagai Fleksibel.<br /><br /> Nilai yang mungkin adalah:<br /><br /> **ImageDefault** - Konfigurasi patching default komputer virtual digunakan. <br /><br /> **AutomaticByPlatform** - Mesin virtual akan otomatis diperbarui oleh platform. ProvisionVMAgent properti harus benar
+Menentukan mode VM Guest Patching ke mesin virtual IaaS atau mesin virtual yang terkait dengan skala mesin virtual yang diatur dengan OrchestrationMode sebagai Fleksibel.<br /><br /> Nilai yang memungkinkan adalah:<br /><br /> **ImageDefault** - Konfigurasi patch default mesin virtual digunakan. <br /><br /> **AutomaticByPlatform** - Mesin virtual akan diperbarui secara otomatis oleh platform. Ketentuan propertiVMAgent harus benar
 
 ```yaml
 Type: System.String
@@ -345,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinuxConfigurationProvisionVMAgent
-Menunjukkan apakah agen mesin virtual harus disediakan di komputer virtual. <br><br> When this property is not specified in the request body, default behavior is to set it to true.  Hal ini akan memastikan bahwa VM Agent diinstal pada VM sehingga ekstensi dapat ditambahkan ke VM nanti
+Menunjukkan apakah agen mesin virtual harus disediakan pada mesin virtual. <br><br> Ketika properti ini tidak ditentukan dalam isi permintaan, perilaku default adalah mengaturnya ke true.  Ini akan memastikan bahwa Agen VM diinstal pada VM sehingga ekstensi dapat ditambahkan ke VM nanti
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -359,10 +362,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Listener
-Menentukan Windows Manajemen Jarak Jauh (WinRM, Remote Management).
-Ini memungkinkan pengguna jarak Windows PowerShell.
-Anda dapat menggunakan cmdlet Add-AzVmssWinRMListener tersebut untuk membuat pendengar.
+### -Pendengar
+Menentukan pendengar Windows Remote Management (WinRM).
+Ini memungkinkan Windows PowerShell jarak jauh.
+Anda dapat menggunakan cmdlet Add-AzVmssWinRMListener untuk membuat pendengar.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.WinRMListener[]
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicKey
-Menentukan objek kunci publik Secure Shell (SHELL).
+Menentukan objek kunci publik Secure Shell (SSH).
 Anda dapat menggunakan cmdlet Add-AzVMSshPublicKey untuk membuat objek.
 
 ```yaml
@@ -393,8 +396,8 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menentukan objek rahasia yang berisi referensi sertifikat untuk menempatkan di komputer virtual.
-Anda bisa menggunakan cmdlet Add-AzVmssSecret rahasia untuk membuat objek rahasia.
+Menentukan objek rahasia yang berisi referensi sertifikat untuk diletakkan di mesin virtual.
+Anda dapat menggunakan cmdlet Add-AzVmssSecret untuk membuat objek rahasia.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.VaultSecretGroup[]
@@ -409,8 +412,8 @@ Accept wildcard characters: False
 ```
 
 ### -Zona Waktu
-Menentukan zona waktu mesin virtual. misalnya Waktu Standar \"Pasifik\". <br>
-Nilai yang mungkin dapat [TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) nilai dari zona waktu yang dikembalikan oleh [Zona WaktuInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
+Menentukan zona waktu mesin maya. misalnya \"Waktu\" Standar Pasifik. <br>
+Nilai yang memungkinkan dapat [berupa nilai TimeZoneInfo.Id](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.id?#System_TimeZoneInfo_Id) dari zona waktu yang dikembalikan oleh [TimeZoneInfo.GetSystemTimeZones](https://docs.microsoft.com/dotnet/api/system.timezoneinfo.getsystemtimezones).
 
 ```yaml
 Type: System.String
@@ -424,7 +427,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
 Anda dapat menggunakan cmdlet New-AzVmssConfig untuk membuat objek.
 
@@ -441,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsConfigurationEnableAutomaticUpdate
-Menunjukkan apakah mesin virtual pada VMSS diaktifkan untuk pembaruan otomatis.
+Menunjukkan apakah mesin virtual dalam VMSS diaktifkan untuk pembaruan otomatis.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -456,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsConfigurationPatchMode
-Menentukan mode Patching Tamu VM ke mesin virtual IaaS atau mesin virtual yang terkait dengan skala mesin virtual yang diatur dengan OrchestrationMode sebagai Fleksibel.<br /><br /> Nilai yang mungkin adalah:<br /><br /> **Manual** - Anda mengontrol aplikasi patch ke komputer virtual. Anda dapat melakukannya dengan menerapkan patch secara manual dalam VM. Dalam mode ini, pembaruan otomatis dinonaktifkan; properti WindowsConfiguration.enableAutomaticUpdates harus false<br /><br /> **AutomaticByOS** - Mesin virtual akan otomatis diperbarui oleh OS. Properti WindowsConfiguration.enableAutomaticUpdates harus benar. <br /><br /> **AutomaticByPlatform** - mesin virtual akan otomatis diperbarui oleh platform. The properties provisionVMAgent and WindowsConfiguration.enableAutomaticUpdates must be true
+Menentukan mode VM Guest Patching ke mesin virtual IaaS atau mesin virtual yang terkait dengan skala mesin virtual yang diatur dengan OrchestrationMode sebagai Fleksibel.<br /><br /> Nilai yang memungkinkan adalah:<br /><br /> **Manual** - Anda mengontrol aplikasi patch ke mesin virtual. Anda melakukan ini dengan menerapkan patch secara manual di dalam VM. Dalam mode ini, pembaruan otomatis dinonaktifkan; properti WindowsConfiguration.enableAutomaticUpdates harus false<br /><br /> **AutomaticByOS** - Mesin virtual akan diperbarui secara otomatis oleh OS. Properti WindowsConfiguration.enableAutomaticUpdates harus true. <br /><br /> **AutomaticByPlatform** - mesin virtual akan diperbarui secara otomatis oleh platform. Provision propertiVMAgent dan WindowsConfiguration.enableAutomaticUpdates harus benar
 
 
 ```yaml
@@ -472,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsConfigurationProvisionVMAgent
-Menunjukkan apakah agen mesin virtual harus disediakan pada komputer virtual dalam VMSS.
+Menunjukkan apakah agen mesin virtual harus disediakan pada mesin virtual dalam VMSS.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -487,7 +490,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -502,7 +505,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -517,7 +520,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -525,13 +528,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Management.Compute.Models.AdditionalUnattendContent[]
 
 ### Microsoft.Azure.Management.Compute.Models.WinRMListener[]
 
-### Microsoft.Azure.Management.Compute.Models.AzurePublicKey[]
+### Microsoft.Azure.Management.Compute.Models.SshPublicKey[]
 
 ### Microsoft.Azure.Management.Compute.Models.VaultSecretGroup[]
 
@@ -547,7 +550,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzVmssWinRMListener](./Add-AzVmssWinRMListener.md)
 
-[Add-AzvMSshPublicKey](./Add-AzVMSshPublicKey.md)
+[Add-AzVMSshPublicKey](./Add-AzVMSshPublicKey.md)
 
 [Add-AzVmssSecret](./Add-AzVmssSecret.md)
 

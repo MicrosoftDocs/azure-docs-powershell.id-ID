@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssDataDisk.md
 ms.openlocfilehash: a0d07cc1f1c105c54228e06e04443666f285d529
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139943252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871592"
 ---
 # Add-AzVmssDataDisk
 
@@ -18,7 +18,7 @@ ms.locfileid: "139943252"
 Menambahkan disk data ke VMSS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmssdatadisk) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmssdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Add-AzVmssDataDisk [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssDataDisk** menambahkan disk data ke instans Virtual Machine Scale Set (VMSS).
+Cmdlet **Add-AzVmssDataDisk** menambahkan disk data ke instans Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ Perintah ini menambahkan disk data kosong ke objek VMSS.
 ## PARAMETERS
 
 ### -Caching
-Menentukan tipe cache disk.
+Menentukan tipe cache diska.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.Compute.Models.CachingTypes]
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateOption
-Menentukan opsi buat disk.
+Menentukan opsi buat diska.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan Id sumber daya dari kumpulan enkripsi disk yang dikelola pelanggan.  This can only be specified for managed disk.
+Menentukan ID sumber daya kumpulan enkripsi disk yang dikelola pelanggan.  Ini hanya dapat ditentukan untuk disk yang dikelola.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskIOPSReadWrite
-Menentukan Read-Write IOPS untuk disk yang dikelola. Hanya dapat digunakan ketika StorageAccountType UltraSSD_LRS. Jika tidak ditentukan, nilai default akan ditetapkan berdasarkan diskSizeGB.
+Menentukan IOPS Read-Write untuk disk yang dikelola. Harus digunakan hanya ketika StorageAccountType UltraSSD_LRS. Jika tidak ditentukan, nilai default akan ditetapkan berdasarkan diskSizeGB.
 
 ```yaml
 Type: System.Int64
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskMBpsReadWrite
-Menentukan bandwidth dalam MB per detik untuk disk yang dikelola. Hanya dapat digunakan ketika StorageAccountType UltraSSD_LRS. Jika tidak ditentukan, nilai default akan ditetapkan berdasarkan diskSizeGB.
+Menentukan bandwidth dalam MB per detik untuk disk yang dikelola. Harus digunakan hanya ketika StorageAccountType UltraSSD_LRS. Jika tidak ditentukan, nilai default akan ditetapkan berdasarkan diskSizeGB.
 
 ```yaml
 Type: System.Int64
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika disk.
+Menentukan nomor unit logika diska.
 
 ```yaml
 Type: System.Int32
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama disk.
+Menentukan nama diska.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Menentukan tipe akun penyimpanan disk.
+Menentukan tipe akun penyimpanan diska.
 
 ```yaml
 Type: System.String
@@ -196,9 +196,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Tentukan objek VMSS.
-Anda dapat menggunakan cmdlet [New-AzVmssConfig](./New-AzVmssConfig.md) untuk membuat objek.
+Anda dapat menggunakan cmdlet [New-AzVmsConfig](./New-AzVmssConfig.md) untuk membuat objek.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -269,7 +269,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Int32
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 

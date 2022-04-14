@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationVariable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationVariable.md
-ms.openlocfilehash: 1e570d14a4ea5da5ba4aee43ab0aefcd9d631952872aba3a085958b503f5e003
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4036261cd333194a71d302e57e97a1f017554da0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416548"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969590"
 ---
 # New-AzureRmAutomationVariable
 
@@ -30,8 +30,8 @@ New-AzureRmAutomationVariable [-Name] <String> -Encrypted <Boolean> [-Descriptio
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmAutomationVariable** membuat variabel dalam Azure Automation.
-Untuk mengenkripsi variabel, tentukan parameter *Encrypted.*
-Anda tidak bisa mengubah status variabel yang dienkripsi setelah pembuatan.
+Untuk mengenkripsi variabel, *tentukan parameter Terenkripsi* .
+Anda tidak dapat mengubah status variabel terenkripsi setelah pembuatan.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ Anda tidak bisa mengubah status variabel yang dienkripsi setelah pembuatan.
 PS C:\>New-AzureRmAutomationVariable -AutomationAccountName "Contoso17" -Name "StringVariable22" -Encrypted $False -Value "My String" -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini membuat variabel bernama StringVariable22 dengan nilai string dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini membuat variabel bernama StringVariable22 dengan nilai string di akun Otomatisasi bernama Contoso17.
 
 ### Contoh 2: Membuat variabel dengan nilai kompleks
 ```
@@ -48,15 +48,15 @@ PS C:\>$VirtualMachine = Get-AzureVM -ServiceName "VirtualMachine" -Name "Virtua
 PS C:\> New-AzureRmAutomationVariable -AutomationAccountName "Contoso17" -Name "ComplexVariable01" -Encrypted $False -Value $VirtualMachine -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah pertama mendapatkan mesin virtual menggunakan cmdlet Get-AzureVM cmdlet.
-Perintah menyimpannya di $VirtualMachine variabel.
-Perintah kedua membuat variabel bernama ComplexVariable01 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah pertama mendapatkan mesin virtual dengan menggunakan cmdlet Get-AzureVM.
+Perintah menyimpannya dalam variabel $VirtualMachine.
+Perintah kedua membuat variabel bernama ComplexVariable01 dalam akun Otomatisasi bernama Contoso17.
 Perintah ini menggunakan objek kompleks untuk nilainya, dalam hal ini, mesin virtual dalam $VirtualMachine.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi untuk menyimpan variabel.
+Menentukan nama akun Otomatisasi tempat untuk menyimpan variabel.
 
 ```yaml
 Type: System.String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi untuk variabel.
+Menentukan deskripsi untuk variabel tersebut.
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Encrypted
+### -Terenkripsi
 Menentukan apakah cmdlet ini mengenkripsi nilai variabel untuk penyimpanan.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya di mana cmdlet ini membuat variabel.
+Menentukan grup sumber daya tempat cmdlet ini membuat variabel.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk variabel tersebut.
+Menentukan nilai untuk variabel.
 
 ```yaml
 Type: System.Object
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -181,7 +181,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationVariable](./Get-AzureRMAutomationVariable.md)
 
-[Remove-AzureRmAutomationVariable](./Remove-AzureRMAutomationVariable.md)
+[Hapus-AzureRmAutomationVariable](./Remove-AzureRMAutomationVariable.md)
 
 [Set-AzureRmAutomationVariable](./Set-AzureRMAutomationVariable.md)
 

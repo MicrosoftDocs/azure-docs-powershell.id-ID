@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRule.md
 ms.openlocfilehash: 044238cb15630af0852ab36597892a4462628fd9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140312359"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141872096"
 ---
 # New-AzFrontDoorCdnRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140312359"
 Membuat aturan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kondisi
-Kumpulan kondisi untuk aturan pengiriman.
+Kumpulan ketentuan untuk aturan pengiriman.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Cdn.AfdModels.PSAfdRuleCondition]
@@ -90,9 +90,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MatchProcessingBeprocessior
+### -MatchProcessingBehavior
 Jika aturan ini cocok jika mesin aturan terus menjalankan aturan yang tersisa atau berhenti.
-Jika tidak ada, defaultnya adalah Lanjutkan.
+Jika tidak ada, default ke Lanjutkan.
 
 ```yaml
 Type: String
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pesanan
-Urutan aturan yang diterapkan untuk titik akhir.
-Nilai yang mungkin {0,1,2,3,.........}.
+Urutan penerapan aturan untuk titik akhir.
+Kemungkinan nilai {0,1,2,3,.........}.
 Aturan dengan urutan yang lebih kecil akan diterapkan sebelum aturan dengan urutan yang lebih besar.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Nama profil Pintu Depan Azure.
+Nama profil Azure Front Door.
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -RuleSetName
-Nama kumpulan aturan Pintu Depan Azure.
+Nama aturan Pintu Depan Azure diatur.
 
 ```yaml
 Type: String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -215,11 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -2,12 +2,12 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: b0026ecf0e8ddef64d27539e6b36822a99ffdfb19732c6ebfecb60a191792a4e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 253305eb6a19df78f3b6b9cd0e02ed22f0d9dfcf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417629"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141771528"
 ---
 # Select-AzureRmProfile
 
@@ -18,7 +18,7 @@ Memuat informasi autentikasi Azure dari file.
 
 ## SYNTAX
 
-### InFileProfile
+### InMemoryProfile
 ```
 Select-AzureRmProfile [-Profile] <AzureRMProfile> [<CommonParameters>]
 ```
@@ -46,7 +46,7 @@ SubscriptionName      : Test Subscription
 CurrentStorageAccount :
 ```
 
-Contoh ini memilih profil dari PSAzureProfile yang disampaikan ke cmdlet.
+Contoh ini memilih profil dari PSAzureProfile yang diteruskan ke cmdlet.
 
 ### Contoh 2: Memilih profil dari file JSON
 ```
@@ -60,12 +60,12 @@ SubscriptionName      : Test Subscription
 CurrentStorageAccount :
 ```
 
-Contoh ini memilih profil dari file JSON yang diteruskan ke cmdlet. File JSON ini dapat dibuat dari Simpan-AzureRmProfile.
+Contoh ini memilih profil dari file JSON yang diteruskan ke cmdlet. File JSON ini dapat dibuat dari Save-AzureRmProfile.
 
 ## PARAMETERS
 
-### -Path
-Menentukan jalur ke informasi profil yang disimpan dengan menggunakan Simpan-AzureRMProfile.
+### -Jalur
+Menentukan jalur ke informasi profil yang disimpan menggunakan Save-AzureRMProfile.
 
 ```yaml
 Type: String
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureRMProfile
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

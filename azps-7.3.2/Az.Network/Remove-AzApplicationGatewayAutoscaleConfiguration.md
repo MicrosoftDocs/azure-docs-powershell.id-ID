@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayAutoscaleConfiguration.md
-ms.openlocfilehash: 503ec68b51a4df9a0e591fd08d3a460b06139bb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7d6e717130d9e4d98e3771bbc159bb9b2d7c9a59
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999662"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141890576"
 ---
 # Remove-AzApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
 Menghapus Konfigurasi Skala Otomatis dari gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayautoscaleconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Remove-AzApplicationGatewayAutoscaleConfiguration -ApplicationGateway <PSApplica
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayAutoscaleConfiguration** menghapus Konfigurasi SkalaOtomatis dari Gateway Aplikasi yang sudah ada.
+Cmdlet **Remove-AzApplicationGatewayAutoscaleConfiguration** menghapus Konfigurasi Skala Otomatis dari Application Gateway yang sudah ada.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ PS C:\> $gw = Remove-AzApplicationGatewayAutoscaleConfiguration -ApplicationGate
 PS C:\> $gw = Set-AzApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
 Perintah kedua menghapus konfigurasi skala otomatis dari gateway aplikasi.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
@@ -72,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: FCDEA955-EB64-4EEA-9F4A-04E2C1F0A831
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0a78d2407865b8944e85f34b20580a82d0c83c6a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428330"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966309"
 ---
 # Get-AzureRemoteAppStartMenuProgram
 
@@ -25,11 +25,11 @@ Get-AzureRemoteAppStartMenuProgram [-CollectionName] <String> [[-ProgramName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRemoteAppStartMenuProgram** mencantumkan program Menu Mulai dalam gambar templat yang digunakan kumpulan Azure RemoteApp.
+Cmdlet **Get-AzureRemoteAppStartMenuProgram** mencantumkan program Menu Mulai dalam gambar templat yang digunakan koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar program Menu Mulai untuk koleksi
+### Contoh 1: Mencantumkan program Menu Mulai untuk koleksi
 ```
 PS C:\> Get-AzureRemoteAppStartMenuProgram -CollectionName "ContosoApps"
 ```
@@ -54,8 +54,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -85,7 +85,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

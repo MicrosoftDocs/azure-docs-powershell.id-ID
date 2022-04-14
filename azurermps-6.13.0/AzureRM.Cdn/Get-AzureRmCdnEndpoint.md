@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.cdn/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Get-AzureRmCdnEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Get-AzureRmCdnEndpoint.md
-ms.openlocfilehash: e8b8268467c8867896cbd91f324897eeb644a6949673b9295c261dcce85e624d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: eb4215a281b83bd533a7502e3ec538ec4e3a570c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416526"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141887090"
 ---
 # Get-AzureRmCdnEndpoint
 
 ## SYNOPSIS
-Mendapatkan titik CDN akhir.
+Mendapatkan titik akhir CDN.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,14 +35,14 @@ Get-AzureRmCdnEndpoint [-EndpointName <String>] -CdnProfile <PSProfile>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRMCdnEndpoint** mendapatkan titik akhir Azure Content Delivery Network (CDN) dan data konfigurasi yang terkait.
+**Cmdlet Get-AzureRMCdnEndpoint** mendapatkan titik akhir Azure Content Delivery Network (CDN) dan data konfigurasi yang terkait.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -CdnProfile
-Menentukan objek CDN profil tempat titik akhir tersebut berada.
+Menentukan objek profil CDN tempat titik akhir berada.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 
 ### -EndpointName
 Menentukan nama titik akhir.
-Nama titik akhir bukan nama host titik akhir.
+Nama titik akhir bukanlah nama host titik akhir.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Menentukan nama profil tempat titik akhir tersebut berada.
+Menentukan nama profil tempat titik akhir berada.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat titik akhir tersebut berada.
+Menentukan nama grup sumber daya tempat titik akhir berada.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -133,9 +133,9 @@ Parameter: CdnProfile (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmCdnEndpoint](./New-AzureRmCdnEndpoint.md)
+[AzureRmCdnEndpoint baru](./New-AzureRmCdnEndpoint.md)
 
-[Remove-AzureRmCdnEndpoint](./Remove-AzureRmCdnEndpoint.md)
+[Hapus-AzureRmCdnEndpoint](./Remove-AzureRmCdnEndpoint.md)
 
 [Set-AzureRmCdnEndpoint](./Set-AzureRmCdnEndpoint.md)
 

@@ -4,16 +4,16 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/restart-azurermdeploymentmanagerrollout
 schema: 2.0.0
 ms.openlocfilehash: ee1ef6e5b8bcee4af1d3aef67767269042c552df
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422022"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782657"
 ---
 # Restart-AzureRmDeploymentManagerRollout
 
 ## SYNOPSIS
-Memulai ulang peluncuran yang gagal.
+Mulai ulang peluncuran yang gagal.
 
 ## SYNTAX
 
@@ -37,8 +37,8 @@ Restart-AzureRmDeploymentManagerRollout [-Rollout] <PSRollout> [-SkipSucceeded]
 
 ## DESCRIPTION
 Cmdlet **Restart-AzureRmDeploymentManagerRollout** memulai ulang peluncuran yang gagal, dan mengembalikan objek yang mewakili peluncuran tersebut dengan semua informasi mendetail tentang kemajuan peluncuran.
-Tentukan peluncuran berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Rollout atau ResourceId.
-Parameter opsional SkipSucceed memungkinkan Anda untuk melewati semua langkah yang berhasil dalam proses peluncuran sebelumnya.
+Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
+Parameter opsional SkipSucceed memungkinkan Anda melewati semua langkah yang berhasil dalam peluncuran sebelumnya.
 
 ## EXAMPLES
 
@@ -47,21 +47,21 @@ Parameter opsional SkipSucceed memungkinkan Anda untuk melewati semua langkah ya
 PS C:\> Restart-AzureRmDeploymentManagerRollout -ResourceGroupName ContosoResourceGroup -Name ContosoRollout -SkipSucceeded
 ```
 
-Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceGroup. Bendera SkipSucceed menunjukkan bahwa semua langkah yang sudah berhasil dilewatkan dan peluncuran akan melanjutkan eksekusi dari langkah terakhir gagal.
+Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceGroup. Bendera Dilewati menunjukkan bahwa semua langkah yang sudah berjalan berhasil harus dilewati dan peluncuran harus dilanjutkan eksekusi dari tempat terakhir gagal.
 
-### Contoh 2: Mulai ulang peluncuran menggunakan pengidentifikasi sumber daya
+### Contoh 2: Memulai ulang peluncuran menggunakan pengidentifikasi sumber daya
 ```powershell
 PS C:\> Restart-AzureRmDeploymentManagerRollout -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/rollouts/ContosoRollout"
 ```
 
 Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Mulai ulang peluncuran menggunakan objek rollout.
+### Contoh 3: Mulai ulang peluncuran menggunakan objek peluncuran.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerRollout -Rollout $rolloutObject
 ```
 
-Perintah ini memulai ulang peluncuran dengan nama dan Grup Sumber Daya yang sesuai dengan properti Nama dan ResourceGroupName $rolloutObject, secara berurutan.
+Perintah ini memulai ulang peluncuran yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $rolloutObject.
 
 ## PARAMETERS
 
@@ -125,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Rollout
+### -Peluncuran
 Sumber daya yang akan dihapus.
 
 ```yaml
@@ -140,8 +140,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -SkipSucceeded
-Lewati langkah-langkah yang berhasil dalam proses peluncuran sebelumnya.
+### -SkipSucceed
+Lewati langkah-langkah yang berhasil dalam peluncuran sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -205,4 +205,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmDeploymentManagerRollout](./Stop-AzureRmDeploymentManagerRollout.md)
 
-[Remove-AzureRmDeploymentManagerRollout](./Remove-AzureRmDeploymentManagerRollout.md)
+[Hapus-AzureRmDeploymentManagerRollout](./Remove-AzureRmDeploymentManagerRollout.md)

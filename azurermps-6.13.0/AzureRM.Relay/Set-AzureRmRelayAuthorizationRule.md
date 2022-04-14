@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Set-AzureRmRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Set-AzureRmRelayAuthorizationRule.md
 ms.openlocfilehash: d4d3dc0ffc3606cbf37bed040e6cf4e805d72482
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140853048"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881717"
 ---
 # Set-AzureRmRelayAuthorizationRule
 
 ## SYNOPSIS
-Memperbarui deskripsi aturan otorisasi tertentu untuk entitas Relay yang diberikan (Namespace/WcfIguy/HybridConnection).
+Memperbarui deskripsi aturan otorisasi tertentu untuk entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Set-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 Set-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String>
  [-Name] <String> [[-InputObject] <AuthorizationRuleAttributes>] [[-Rights] <String[]>]
@@ -56,11 +56,11 @@ Set-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmEroyAuthorizationRule** memperbarui deskripsi untuk aturan otorisasi tertentu dari entitas Relay yang diberikan (Namespace/Wcf Azurey/HybridConnection).
+Cmdlet **Set-AzureRmRelayAuthorizationRule** memperbarui deskripsi untuk aturan otorisasi tertentu dari entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
-### Contoh 1.1 - Namespace dengan InputObject
+### Contoh 1.1 - Ruang nama dengan InputObject
 ```
 PS C:\>
 PS C:\> $getAutoRule = Get-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -NamespaceName TestNameSpace-Relay1 -AuthorizationRuleName
@@ -74,9 +74,9 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/AuthorizationRules/AuthoRule1
 ```
 
-Menambahkan **Kirim** dari hak akses aturan otorisasi dalam `AuthoRule1` ruang nama `TestNameSpace-Relay1`.
+Menambahkan **Kirim** dari hak akses aturan `AuthoRule1` otorisasi dalam ruang `TestNameSpace-Relay1`nama .
 
-### Contoh 1.2 - Kumpulan nama dengan parameter Hak
+### Contoh 1.2 - Ruang nama dengan parameter Hak
 ```
 PS C:\> Set-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -AuthorizationRule AuthoRule1 -Rights "Send"
 
@@ -86,9 +86,9 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/AuthorizationRules/AuthoRule1
 ```
 
-Menambahkan **Kirim** dari hak akses aturan otorisasi dalam `AuthoRule1` ruang nama `TestNameSpace-Relay1`.
+Menambahkan **Kirim** dari hak akses aturan `AuthoRule1` otorisasi dalam ruang `TestNameSpace-Relay1`nama .
 
-### Contoh 2.1 - Wcf Filey dengan InputObject
+### Contoh 2.1 - WcfRelay dengan InputObject
 ```
 PS C:\> $getWcfRelayAutho = Get-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWCFRelay1 -Name AuthoRule1
 PS C:\> $getWcfRelayAutho.Rights.Add("Send")
@@ -100,9 +100,9 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/WcfRelays/TestWCFRelay1/authorizationRules/AuthoRule1
 ```
 
-Menambahkan **Kirim** ke hak akses aturan otorisasi `AuthoRule1` Wcf Access `TestWCFRelay1`.
+Menambahkan **Kirim** ke hak akses aturan `AuthoRule1` otorisasi WcfRelay `TestWCFRelay1`.
 
-### Contoh 2.2 - Wcf Filey dengan parameter Hak
+### Contoh 2.2 - WcfRelay dengan parameter Rights
 ```
 PS C:\> Set-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWCFRelay1 -Name AuthoRule1 -Rights "Send"
 
@@ -112,7 +112,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/WcfRelays/TestWCFRelay1/authorizationRules/AuthoRule1
 ```
 
-Menambahkan **Kirim** ke hak akses aturan otorisasi `AuthoRule1` Wcf Access `TestWCFRelay1`.
+Menambahkan **Kirim** ke hak akses aturan `AuthoRule1` otorisasi WcfRelay `TestWCFRelay1`.
 
 ### Contoh 3.1 - HybridConnection dengan InputObject
 ```
@@ -126,7 +126,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/HybridConnections/TestHybridConnection/authorizationRules/AuthoRule1
 ```
 
-Menambahkan **Kirim** ke hak akses aturan otorisasi `AuthoRule1` HybridConnection `TestHybridConnection`.
+Menambahkan **Kirim** ke hak akses aturan `AuthoRule1` otorisasi HibridConnection `TestHybridConnection`.
 
 ### Contoh 3.2 - HybridConnection dengan parameter Rights
 ```
@@ -138,7 +138,7 @@ Type   : Microsoft.Relay/AuthorizationRules
 Id     : /subscriptions/854d368f-1828-428f-8f3c-f2affa9b2f7d/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.Relay/namespaces/TestNameSpace-Relay1/HybridConnections/TestHybridConnection/authorizationRules/AuthoRule1
 ```
 
-Menambahkan **Kirim** ke hak akses aturan otorisasi `AuthoRule1` HybridConnection `TestHybridConnection`.
+Menambahkan **Kirim** ke hak akses aturan `AuthoRule1` otorisasi HibridConnection `TestHybridConnection`.
 
 ## PARAMETERS
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Relay AuthorizationRule.
+Relay AuthorizationRule Object.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Relay.Models.PSAuthorizationRuleAttributes
@@ -283,8 +283,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

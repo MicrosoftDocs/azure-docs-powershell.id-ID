@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppRunAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/LogicApp/Commands.LogicApp/help/Get-AzureRmLogicAppRunAction.md
 ms.openlocfilehash: 4aa135adf8db8cc1044eba761b33f570abd0396b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423655"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822503"
 ---
 # Get-AzureRmLogicAppRunAction
 
@@ -28,17 +28,17 @@ Get-AzureRmLogicAppRunAction -ResourceGroupName <String> -Name <String> -RunName
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLogicAppRunAction** mendapatkan tindakan dari aplikasi logika yang berjalan.
-Cmdlet ini mengembalikan objek **WorkflowRunAction.**
+Cmdlet **Get-AzureRmLogicAppRunAction** mendapatkan tindakan dari aplikasi logika yang dijalankan.
+Cmdlet ini mengembalikan objek **WorkflowRunAction** .
 Tentukan aplikasi logika, grup sumber daya, dan jalankan.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan tindakan dari aplikasi logika
+### Contoh 1: Mendapatkan tindakan dari menjalankan Aplikasi Logika
 ```
 PS C:\>Get-AzureRmLogicAppActionRun -ResourceGroupName "ResourceGroup11" -Name "LogicApp05" -RunName "LogicAppRun56" -ActionName "LogicAppAction01"
 Code        : NotFound
@@ -53,9 +53,9 @@ TrackingId  :
 Type        :
 ```
 
-Perintah ini mendapatkan tindakan Aplikasi Logika tertentu dari aplikasi logika bernama LogicApp05 untuk dijalankan bernama LogicAppRun56.
+Perintah ini mendapatkan tindakan Aplikasi Logika tertentu dari aplikasi logika bernama LogicApp05 untuk menjalankan bernama LogicAppRun56.
 
-### Contoh 2: Mendapatkan semua tindakan dari Aplikasi Logika
+### Contoh 2: Dapatkan semua tindakan dari aplikasi logika yang dijalankan
 ```
 PS C:\>Get-AzureRmLogicAppActionRun -ResourceGroupName "ResourceGroup11" -Name "LogicApp05" -RunName "LogicAppRun56"
 Code        : NotFound
@@ -70,13 +70,13 @@ TrackingId  :
 Type        :
 ```
 
-Perintah ini mendapatkan semua tindakan Aplikasi Logika dari proses yang bernama LogicAppRun56 dari aplikasi logika bernama LogicApp05.
+Perintah ini mendapatkan semua tindakan Aplikasi Logika dari aplikasi logika bernama LogicAppRun56 dari aplikasi logika bernama LogicApp05.
 
 ## PARAMETERS
 
 ### -ActionName
 Menentukan nama tindakan dalam aplikasi logika yang dijalankan.
-Cmdlet ini mendapatkan tindakan yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan tindakan yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aplikasi logika tempat cmdlet ini mendapatkan tindakan.
+Menentukan nama aplikasi logika di mana cmdlet ini mendapatkan tindakan.
 
 ```yaml
 Type: System.String
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan tindakan.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan tindakan.
 
 ```yaml
 Type: System.String
@@ -136,8 +136,8 @@ Accept wildcard characters: False
 ```
 
 ### -RunName
-Menentukan nama untuk menjalankan aplikasi logika.
-Cmdlet ini mendapatkan tindakan untuk proses yang ditentukan parameter ini.
+Menentukan nama aplikasi logika yang dijalankan.
+Cmdlet ini mendapatkan tindakan untuk menjalankan yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVpnClientIpsecParameter.md
 ms.openlocfilehash: b88fff9775665f5b20f403d46f11bba89dc61220
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140866097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141819930"
 ---
 # Remove-AzureRmVpnClientIpsecParameter
 
 ## SYNOPSIS
-Menghapus kebijakan ipsec kustom Vpn yang diatur di sumber daya Gateway Jaringan Virtual.
+Menghapus kebijakan ipsec kustom Vpn yang diatur di sumber daya Gateway Virtual Network.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,18 +40,18 @@ Remove-AzureRmVpnClientIpsecParameter -ResourceId <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
-Cmdlet **Remove-AzureRmVpnClientIpsecParameter** menghapus parameter ipsec kustom vpn yang diatur di Gateway Jaringan Virtual Anda, yang pada gilirannya menetapkan kebijakan ipsec vpn default di gateway VPN berdasarkan Nama VirtualNetworkGateway dan Nama Grup Sumber Daya yang lolos.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
+Cmdlet **Remove-AzureRmVpnClientIpsecParameter** menghapus parameter ipsec kustom vpn yang diatur di gateway Virtual Network Anda, yang pada gilirannya mengatur kebijakan ipsec vpn default pada gateway VPN berdasarkan Nama VirtualNetworkGateway dan Nama Grup Sumber Daya yang dilewatkan.
 
 ## EXAMPLES
 
-### 1: Menghapus set parameter ipsec vpn yang diatur di Gateway Jaringan Virtual
+### 1: Menghapus parameter ipsec vpn yang ditetapkan di gateway Virtual Network
 ```
 PS C:\> $delete = Remove-AzureRmVpnClientIpsecParameter -VirtualNetworkGatewayName myGateway -ResourceGroupName myRG
 ```
 
-Menghapus parameter ipsec kustom vpn yang diatur di Gateway Jaringan Virtual dengan nama "myGateway" dalam grup sumber daya "myRG". Perintah ini mengembalikan objek bool yang memperlihatkan apakah penghapusan berhasil atau gagal.
-Catatan: Ini akan mengakibatkan pengaturan kebijakan ipsec vpn default di Gateway Jaringan Virtual Anda.
+Menghapus parameter ipsec kustom vpn yang diatur di gateway Virtual Network Anda dengan nama "myGateway" dalam grup sumber daya "myRG". Perintah ini mengembalikan objek bool yang memperlihatkan jika penghapusan berhasil atau gagal.
+Catatan: Ini akan mengakibatkan pengaturan kebijakan ipsec vpn default di Gateway Virtual Network Anda.
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pintu masuk jaringan virtual
+Objek gateaway jaringan virtual
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

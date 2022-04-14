@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmDelegation.md
 ms.openlocfilehash: 1daa68e021646d91a2ab1b45382b137771411325
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421236"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141777460"
 ---
 # Remove-AzureRmDelegation
 
@@ -26,7 +26,7 @@ Remove-AzureRmDelegation -Name <String> -Subnet <PSSubnet> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmDelegation** memerlukan Subnet dengan delegasi dan menghapus delegasi bernama dari subnet itu.
+Cmdlet **Remove-AzureRmDelegation** menggunakan Subnet dengan delegasi dan menghapus delegasi bernama dari subnet tersebut.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ PS C:\> $subnet = Remove-AzureRmDelegation -Name "myDelegation" -Subnet $subnet
 PS C:\> Set-AzureRmVirtualNetwork $vnet
 ```
 
-Dalam contoh ini, paruh pertama (ditemukan di bawah "Tambahkan delegasi ke subnet yang sudah _ada"_) identik dengan [Add-AzureRmDelegation.](./Add-AzureRmDelegation.md) Pada paruh kedua, dua cmdlet pertama mengambil subnet yang menarik, melakukan refresh salinan lokal dengan apa yang ada di server. Cmdlet ketiga menghapus delegasi yang dibuat di paruh pertama dari _mySubnet_ dan menyimpan subnet yang diperbarui di _$subnet_. Cmdlet akhir memperbarui server dengan delegasi yang dihapus.
+Dalam contoh ini, paruh pertama (ditemukan di bawah _"Tambahkan delegasi ke subnet yang sudah ada"_) identik dengan [Add-AzureRmDelegation](./Add-AzureRmDelegation.md). Di paruh kedua, dua cmdlet pertama mengambil subnet yang menarik, merefresh salinan lokal dengan apa yang ada di server. Cmdlet ketiga menghapus delegasi yang dibuat pada paruh pertama dari _mySubnet_ dan menyimpan subnet yang diperbarui di _$subnet_. Cmdlet terakhir memperbarui server dengan delegasi yang dihapus.
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Subnet yang ingin dihapus delegasinya
+Subnet tempat untuk menghapus delegasi
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,9 +123,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Add-AzureRmDelegation](./Add-AzureRmDelegation.md) 
- [Get-AzureRmDelegation](./Get-AzureRmDelegation.md) 
- [New-AzureRmDelegation](./New-AzureRmDelegation.md) 
- [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md) 
- [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md) 
+[Add-AzureRmDelegation](./Add-AzureRmDelegation.md)
+ [Get-AzureRmDelegation](./Get-AzureRmDelegation.md)
+ [New-AzureRmDelegation](./New-AzureRmDelegation.md)
+ [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md)
+ [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md)
  [Set-AzureRmVirtualNetwork](./Set-AzureRmVirtualNetwork.md)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeBandwidthSchedule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Get-AzDataBoxEdgeBandwidthSchedule.md
-ms.openlocfilehash: 83490f79d6a93a144c075642b3a325f925d535e7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: daf7b543a655e6cae50b2cdd5a80d3cd070b5d6f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009834"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852530"
 ---
 # Get-AzDataBoxEdgeBandwidthSchedule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang jadwal Bandwidth
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/get-azdataboxedgebandwidthschedule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Get-AzDataBoxEdgeBandwidthSchedule [[-Name] <String>] [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataBoxEdgeBandwidthSchedule** mendapatkan informasi tentang Jadwal Bandwidth. Anda dapat menentukan Nama Jadwal bersama dengan nama Grup Sumber Daya dan Nama perangkat untuk mendapatkan informasi tentang jadwal Bandwidth tertentu
+Cmdlet **Get-AzDataBoxEdgeBandwidthSchedule** mendapatkan informasi tentang Jadwal Bandwidth. Anda bisa menentukan Nama Jadwal bersama dengan nama Grup Sumber Daya dan Nama perangkat untuk mendapatkan informasi tentang jadwal Bandwidth tertentu
 
 ## EXAMPLES
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

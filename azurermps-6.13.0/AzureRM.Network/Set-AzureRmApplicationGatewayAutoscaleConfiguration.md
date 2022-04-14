@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmApplicationGatewayAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmApplicationGatewayAutoscaleConfiguration.md
-ms.openlocfilehash: f4555dbe2a3f3a118c489a63c3292f764e61e7bbf3301929b7c145d6151b776f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2d7fa9dd9030f1e5878293276a248c2f6718efe5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140861516"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141819938"
 ---
 # Set-AzureRmApplicationGatewayAutoscaleConfiguration
 
 ## SYNOPSIS
-Memperbarui Konfigurasi SkalaOtomatis gateway aplikasi.
+Memperbarui Konfigurasi Skala Otomatis gateway aplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Set-AzureRmApplicationGatewayAutoscaleConfiguration -ApplicationGateway <PSAppli
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmApplicationGatewayAutoscaleConfiguration** mengubah konfigurasi skala otomatis Gateway Aplikasi yang sudah ada.
+Cmdlet **Set-AzureRmApplicationGatewayAutoscaleConfiguration** mengubah konfigurasi skala otomatis Application Gateway yang sudah ada.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ PS C:\> $gw = Set-AzureRmApplicationGatewayAutoscaleConfiguration -ApplicationGa
 PS C:\> $gw = Set-AzureRmApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
 Perintah kedua memperbarui konfigurasi skala otomatis dari gateway applicationg.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinCapacity
-Jumlah maksimal untuk gateway aplikasi.
+Kapitalitas minimum untuk gateway aplikasi.
 
 ```yaml
 Type: System.Int32
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

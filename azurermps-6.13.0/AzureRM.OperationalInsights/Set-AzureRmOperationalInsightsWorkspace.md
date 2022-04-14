@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Set-AzureRmOperationalInsightsWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Set-AzureRmOperationalInsightsWorkspace.md
-ms.openlocfilehash: 5ada4a738408f84776df370921771d9446e5c5749d18a645a85db3e42f88871d
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8c884e69dd13b96925940f467633baf515d88eda
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141776372"
 ---
 # Set-AzureRmOperationalInsightsWorkspace
 
@@ -45,19 +45,19 @@ Cmdlet **Set-AzureRmOperationalInsightsWorkspace** mengubah konfigurasi ruang ke
 PS C:\>Set-AzureRmOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" -Sku Standard -Tags @{ "Department" = "IT" }
 ```
 
-Perintah ini mengubah SKU dan tag ruang kerja yang bernama MyWorkspace dalam grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mengubah SKU dan tag ruang kerja bernama MyWorkspace dalam grup sumber daya bernama ContosoResourceGroup.
 
-### Contoh 2: Memperbarui ruang kerja dengan menggunakan saluran
+### Contoh 2: Memperbarui ruang kerja menggunakan saluran
 ```
 PS C:\>Get-AzureRmOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace" | Set-AzureRmOperationalInsightsWorkspace -Sku "Premium"
 ```
 
-Perintah ini menggunakan cmdlet Get-AzureRmOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkSpace, lalu meneruskannya ke cmdlet **Set-AzureRmOperationalInsightsWorkspace** menggunakan operator pipeline untuk mengatur SKU menjadi Premium.
+Perintah ini menggunakan cmdlet Get-AzureRmOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkSpace, lalu meneruskannya ke cmdlet **Set-AzureRmOperationalInsightsWorkspace** menggunakan operator pipeline untuk mengatur SKU ke Premium.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -118,10 +118,10 @@ Accept wildcard characters: False
 
 ### -Sku
 Menentukan tingkat layanan ruang kerja.
-Nilai valid adalah: 
-- gratis
-- standar
-- premium
+Nilai yang valid adalah: 
+- Gratis
+- Standar
+- Premium
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -178,7 +178,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -188,7 +188,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 [Get-AzureRmOperationalInsightsWorkspace](./Get-AzureRmOperationalInsightsWorkspace.md)
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Add-AzureRmKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Add-AzureRmKeyVaultNetworkRule.md
-ms.openlocfilehash: b23c06172b188b25dd45fe652901b214a8b6839c7320c66f2e79b25f1d8a4440
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c99b621a39df1be595ceb873d85f5a3d848abc88
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853276"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822919"
 ---
 # Add-AzureRmKeyVaultNetworkRule
 
 ## SYNOPSIS
-Menambahkan aturan yang dimaksudkan untuk membatasi akses ke kunci vault berdasarkan alamat internet klien.
+Menambahkan aturan yang dimaksudkan untuk membatasi akses ke kubah kunci berdasarkan alamat internet klien.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Add-AzureRmKeyVaultNetworkRule [-ResourceId] <String> [-IpAddressRange <String[]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmKeyVaultNetworkRule** memberikan atau membatasi akses ke vault kunci ke kumpulan penelepon yang ditetapkan oleh alamat IP mereka atau jaringan virtual tempat mereka berada. Aturan ini berpotensi membatasi akses bagi pengguna lain, aplikasi, atau grup keamanan yang telah diberi izin melalui kebijakan akses.
+Cmdlet **Add-AzureRmKeyVaultNetworkRule** memberikan atau membatasi akses ke kubah kunci ke sekumpulan penelepon yang ditunjuk oleh alamat IP mereka atau jaringan virtual tempatnya berada. Aturan ini berpotensi membatasi akses bagi pengguna, aplikasi, atau grup keamanan lain yang telah diberi izin melalui kebijakan akses.
 
 ## EXAMPLES
 
@@ -93,7 +93,7 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini akan menambahkan aturan jaringan ke vault tertentu, yang memungkinkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
+Perintah ini menambahkan aturan jaringan ke kubah yang ditentukan, memungkinkan akses ke alamat IP tertentu dari jaringan virtual yang diidentifikasi oleh $myNetworkResId.
 
 ## PARAMETERS
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: String[]
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, tombol tersebut akan mengembalikan objek vault kunci yang diperbarui.
+Jika sakelar ini ditentukan, maka akan mengembalikan objek kubah kunci yang diperbarui.
 
 ```yaml
 Type: SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan penyimpanan kunci yang aturan jaringannya sedang diubah.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault yang aturan jaringannya sedang dimodifikasi.
+Menentukan nama kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan virtual yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: String[]
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

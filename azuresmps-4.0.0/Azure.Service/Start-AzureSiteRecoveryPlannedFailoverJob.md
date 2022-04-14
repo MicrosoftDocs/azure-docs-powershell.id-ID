@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.RecoveryServicesRdfe.dll-Help.xml
 ms.assetid: 2575F5C4-A276-49CE-AB0C-726F359DA6F9
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: fd1c529e41c9130fc9f41c832aa91cb40658a01c76bf73c7ae368e328ff42ea3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 37eb0368d66528cb07648c6286bf7c1f9bac8cb3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417691"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965983"
 ---
 # Start-AzureSiteRecoveryPlannedFailoverJob
 
 ## SYNOPSIS
-Memulai operasi failover yang direncanakan Pemulihan Situs.
+Memulai operasi failover yang direncanakan Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -44,8 +44,8 @@ Start-AzureSiteRecoveryPlannedFailoverJob -ProtectionEntity <ASRProtectionEntity
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureSiteRecoveryPlannedFailoverJob** memulai failover yang direncanakan untuk entitas proteksi Pemulihan Situs Azure atau rencana pemulihan.
-Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet **Get-AzureSiteRecoveryJob.**
+Cmdlet **Start-AzureSiteRecoveryPlannedFailoverJob** memulai failover yang direncanakan untuk entitas perlindungan Site Recovery Azure atau rencana pemulihan.
+Anda dapat memeriksa apakah pekerjaan berhasil menggunakan cmdlet **Get-AzureSiteRecoveryJob** .
 
 ## EXAMPLES
 
@@ -66,13 +66,13 @@ Tasks            : {}
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan semua wadah yang diproteksi dalam vault Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer,** lalu menyimpan hasil dalam variabel $Container baru.
-Dalam contoh ini, terdapat satu wadah.
+Perintah pertama mendapatkan semua kontainer yang dilindungi di azure saat ini Site Recovery kubah dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionContainer**, lalu menyimpan hasilnya dalam variabel $Container.
+Dalam contoh ini, ada satu wadah.
 
-Perintah kedua mendapatkan mesin virtual terlindungi yang termasuk dalam wadah yang disimpan di $Container dengan menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
-Perintah menyimpan hasil dalam $Protected variabel.
+Perintah kedua mendapatkan mesin virtual yang dilindungi milik wadah yang disimpan di $Container menggunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
+Perintah menyimpan hasil dalam variabel $Protected.
 
-Perintah terakhir memulai pekerjaan failover sesuai dengan arah Pemulihan PrimaryToRecovery untuk mesin virtual terlindungi yang disimpan di $Protected.
+Perintah akhir memulai pekerjaan failover ke arah PrimaryToRecovery untuk mesin virtual terproteksi yang disimpan di $Protected.
 
 ## PARAMETERS
 
@@ -96,21 +96,21 @@ Accept wildcard characters: False
 ```
 
 ### -Optimize
-Menentukan apa yang akan dioptimalkan.
+Menentukan apa yang harus dioptimalkan.
 Parameter ini berlaku untuk failover dari situs Azure ke situs lokal yang memerlukan sinkronisasi data yang signifikan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- ForDowntime
+- Untuk Waktu Henti
 - ForSynchronization
 
-Saat **ForDowntime** ditentukan, ini menunjukkan bahwa data disinkronkan sebelum failover untuk meminimalkan waktu henti.
+Ketika **ForDowntime** ditentukan, ini menunjukkan bahwa data disinkronkan sebelum failover untuk meminimalkan waktu henti.
 Sinkronisasi dilakukan tanpa mematikan mesin virtual.
 Setelah sinkronisasi selesai, pekerjaan ditangguhkan.
 Lanjutkan pekerjaan untuk melakukan operasi sinkronisasi tambahan yang mematikan mesin virtual.
 
-Saat **ForSynchronization** ditentukan, ini menunjukkan bahwa data disinkronkan selama failover saja sehingga sinkronisasi data diminimalkan.
-Karena pengaturan ini diaktifkan, mesin virtual akan segera mematikan.
-Sinkronisasi dimulai setelah penutupan untuk menyelesaikan operasi failover.
+Ketika **ForSynchronization** ditentukan, ini menunjukkan bahwa data hanya disinkronkan selama failover sehingga sinkronisasi data diminimalkan.
+Karena pengaturan ini diaktifkan, mesin virtual segera dimatikan.
+Sinkronisasi dimulai setelah shutdown untuk menyelesaikan operasi failover.
 
 ```yaml
 Type: String
@@ -125,8 +125,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainerId
-Menentukan ID penampung terlindungi untuk memulai pekerjaan.
+Menentukan ID wadah yang dilindungi untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionEntity
-Menentukan objek entitas proteksi Pemulihan Situs.
+Menentukan objek entitas perlindungan Site Recovery.
 
 ```yaml
 Type: ASRProtectionEntity
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -ProtectionEntityId
 Menentukan objek **ASRProtectionEntity** untuk memulai pekerjaan.
-Untuk mendapatkan objek **ASRProtectionEntity,** gunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity.**
+Untuk mendapatkan objek **ASRProtectionEntity** , gunakan cmdlet **Get-AzureSiteRecoveryProtectionEntity** .
 
 ```yaml
 Type: String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -RPId
-Menentukan ID paket pemulihan yang akan digunakan untuk memulai pekerjaan.
+Menentukan ID rencana pemulihan untuk memulai pekerjaan.
 
 ```yaml
 Type: String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

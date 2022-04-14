@@ -5,37 +5,40 @@ online version: https://docs.microsoft.com/powershell/module/az.guestconfigurati
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/GuestConfiguration/GuestConfiguration/help/Get-AzVMGuestPolicyStatusHistory.md
-ms.openlocfilehash: 15a0b856b1e5f5176c0746185375f289f2d15651
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 02a4d57be32edb1128f5c528125f53b4e563ce69
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000773"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141851612"
 ---
 # Get-AzVMGuestPolicyStatusHistory
 
 ## SYNOPSIS
-Mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu atas inisiatif tipe "Konfigurasi Tamu" yang ditetapkan pada VM.
+Mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu untuk inisiatif tipe "Konfigurasi Tamu" yang ditetapkan ke VM.
 Inisiatif adalah kebijakan tipe definisi "Inisiatif".
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.guestconfiguration/get-azvmguestpolicystatushistory) untuk informasi terbaru.
 
 ## SYNTAX
 
-### InitiativeNameScope (Default)
+### InisiatifNameScope (Default)
 ```
 Get-AzVMGuestPolicyStatusHistory [-ResourceGroupName] <String> [-VMName] <String> [-InitiativeName] <String>
  [-ShowOnlyChange] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### InitiativeIdScope
+### InisiatifIdScope
 ```
 Get-AzVMGuestPolicyStatusHistory [-ResourceGroupName] <String> [-VMName] <String> [[-InitiativeId] <String>]
  [-ShowOnlyChange] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzVMGuestPolicyStatusHistory mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu atas inisiatif mengetikkan "Konfigurasi Tamu" yang ditetapkan pada VM.
+Cmdlet Get-AzVMGuestPolicyStatusHistory mendapatkan riwayat status kepatuhan kebijakan konfigurasi tamu untuk inisiatif tipe "Konfigurasi Tamu" yang ditetapkan ke VM.
 Inisiatif adalah kebijakan tipe definisi "Inisiatif".
-Gunakan Get-AzVMGuestPolicyStatus cmdlet untuk mendapatkan detail tentang satu status kepatuhan menggunakan ReportId yang dapat ditemukan dalam output Get-AzVMGuestPolicyStatusHistory cmdlet.
+Gunakan cmdlet Get-AzVMGuestPolicyStatus untuk mendapatkan detail status kepatuhan tunggal menggunakan ReportId yang dapat ditemukan dalam output cmdlet Get-AzVMGuestPolicyStatusHistory.
 
 ## EXAMPLES
 
@@ -44,46 +47,46 @@ Gunakan Get-AzVMGuestPolicyStatus cmdlet untuk mendapatkan detail tentang satu s
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af" -ShowOnlyChange
 ```
 
-Mendapatkan riwayat status kepatuhan berdasarkan Id inisiatif. Sakelar ShowOnlyChange hanya memperlihatkan perubahan status riwayat.
-Melewati status yang belum diubah antara dua pemeriksaan kepatuhan.
+Mendapatkan riwayat status kepatuhan menurut Id inisiatif. Sakelar ShowOnlyChange hanya memperlihatkan perubahan status riwayat.
+Lewati status yang tidak berubah antara dua pemeriksaan kepatuhan.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeName "b5a822e0-ba98-4e54-9278-5d9833aa9b17" -ShowOnlyChange
 ```
 
-Mendapatkan riwayat status kepatuhan berdasarkan nama inisiatif.
-Sakelar ShowOnlyChange hanya memperlihatkan riwayat perubahan status.
-Melewati status yang belum diubah antara dua pemeriksaan kepatuhan.
+Mendapatkan riwayat status kepatuhan menurut nama inisiatif.
+Sakelar ShowOnlyChange hanya memperlihatkan perubahan status riwayat.
+Lewati status yang tidak berubah antara dua pemeriksaan kepatuhan.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -ShowOnlyChange
 ```
 
-Mendapatkan riwayat status kepatuhan untuk semua kebijakan konfigurasi tamu yang ditetapkan pada VM.
-Sakelar ShowOnlyChange hanya memperlihatkan riwayat perubahan status.
-Melewati status yang belum diubah antara dua pemeriksaan kepatuhan.
+Mendapatkan riwayat status kepatuhan untuk semua kebijakan konfigurasi tamu yang ditetapkan ke VM.
+Sakelar ShowOnlyChange hanya memperlihatkan perubahan status riwayat.
+Lewati status yang tidak berubah antara dua pemeriksaan kepatuhan.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af"
 ```
 
-Mendapatkan riwayat status kepatuhan berdasarkan ID inisiatif.
+Mendapatkan riwayat status kepatuhan menurut Id inisiatif.
 
 ### Contoh 5
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeName "b5a822e0-ba98-4e54-9278-5d9833aa9b17"
 ```
 
-Mendapatkan riwayat status kepatuhan berdasarkan nama inisiatif.
+Mendapatkan riwayat status kepatuhan menurut nama inisiatif.
 
 ### Contoh 6
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName"
 ```
-Mendapatkan riwayat status kepatuhan untuk semua kebijakan konfigurasi tamu yang ditetapkan pada VM.
+Mendapatkan riwayat status kepatuhan untuk semua kebijakan konfigurasi tamu yang ditetapkan ke VM.
 
 ### Contoh 7
 ```powershell
@@ -94,7 +97,7 @@ PS C:\> Get-AzVMGuestPolicyStatus -ReportId $x[10].ReportId
 ```
 
 Dapatkan status kebijakan konfigurasi tamu menurut ReportId.
-ReportId adalah properti ReportId yang dapat ditemukan dalam hasil Get-AzVMGuestPolicyStatusHistory. (silakan lihat contoh lainnya)
+ReportId adalah properti ReportId yang dapat ditemukan dalam hasil Get-AzVMGuestPolicyStatusHistory. (silakan lihat contoh lain)
 
 ## PARAMETERS
 
@@ -113,8 +116,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InitiativeId
-Id Definisi dari kebijakan di mana tipe definisi adalah Inisiatif dan kategori adalah Konfigurasi Tamu
+### -InisiatifId
+Id Definisi kebijakan di mana tipe definisi adalah Inisiatif dan kategori adalah Konfigurasi Tamu
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 
 ### -ShowOnlyChange
 Memperlihatkan perubahan status riwayat hanya untuk kebijakan konfigurasi tamu.
-Melewatkan status yang belum diubah antara dua proses audit status kepatuhan.
+Melewati status yang tidak berubah antara dua audit status kepatuhan dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,11 +193,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.GuestConfiguration.Models.PolicyStatus

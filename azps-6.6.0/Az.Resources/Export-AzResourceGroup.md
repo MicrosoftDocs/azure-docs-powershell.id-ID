@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Export-AzResourceGroup.md
 ms.openlocfilehash: bd899fd257836292dcfe8b33e5c57008345f4346
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099333"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142043003"
 ---
 # Export-AzResourceGroup
 
@@ -19,7 +19,7 @@ ms.locfileid: "140099333"
 Merekam grup sumber daya sebagai templat dan menyimpannya ke file.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/export-azresourcegroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/export-azresourcegroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,11 +31,11 @@ Export-AzResourceGroup -ResourceGroupName <String> [-Path <String>] [-IncludePar
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzResourceGroup** merekam grup sumber daya yang ditentukan sebagai templat dan menyimpannya ke file JSON. Ini bisa berguna dalam skenario di mana Anda sudah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan penggunaan yang dicadangkan templat.
-Cmdlet ini memberi Anda permulaan yang mudah dengan menghasilkan templat untuk sumber daya Anda yang sudah ada di grup sumber daya.
-Mungkin ada beberapa kasus ketika cmdlet ini gagal menghasilkan beberapa bagian templat.
-Pesan peringatan akan menginformasikan sumber daya yang gagal.
-Templat masih akan dihasilkan untuk bagian yang berhasil.
+Cmdlet **Export-AzResourceGroup** menangkap grup sumber daya tertentu sebagai templat dan menyimpannya ke file JSON. Ini bisa berguna dalam skenario di mana Anda telah membuat beberapa sumber daya di grup sumber daya Anda, lalu ingin memanfaatkan manfaat penggunaan templat yang didukung.
+Cmdlet ini memberi Anda awal yang mudah dengan menghasilkan templat untuk sumber daya yang sudah ada dalam grup sumber daya.
+Mungkin ada beberapa kasus di mana cmdlet ini gagal menghasilkan beberapa bagian templat.
+Pesan peringatan akan memberi tahu Anda tentang sumber daya yang gagal.
+Templat masih akan dihasilkan untuk bagian-bagian yang berhasil.
 
 ## EXAMPLES
 
@@ -44,14 +44,14 @@ Templat masih akan dihasilkan untuk bagian yang berhasil.
 PS C:\>Export-AzResourceGroup -ResourceGroupName "TestGroup"
 ```
 
-Perintah ini akan mengambil gambar grup sumber daya bernama GrupUji sebagai templat, dan menyimpannya ke file JSON dalam direktori saat ini.
+Perintah ini menangkap grup sumber daya bernama TestGroup sebagai templat, dan menyimpannya ke file JSON di direktori saat ini.
 
-### Contoh 2: Mengekspor satu sumber daya dari grup sumber daya
+### Contoh 2: Mengekspor sumber daya tunggal dari grup sumber daya
 ```
 PS C:\>Export-AzResourceGroup -ResourceGroupName "TestGroup" -Resource "/subscriptions/5f43547b-1d2d-4a3e-ace4-88d4b600d568/resourceGroups/TestGroup/providers/Microsoft.Compute/virtualMachines/TestVirtualMachine"
 ```
 
-Perintah ini mengambil sumber daya Mesin Virtual bernama "TestVirtualMachine" dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON dalam direktori saat ini.
+Perintah ini mengambil sumber daya Mesin Virtual bernama "TestVirtualMachine" dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini.
 
 ### Contoh 3: Mengekspor pilihan sumber daya dari grup sumber daya
 ```
@@ -61,13 +61,13 @@ PS C:\>Export-AzResourceGroup -ResourceGroupName "TestGroup" -SkipAllParameteriz
 )
 ```
 
-Perintah ini mengambil dua sumber daya dari grup sumber daya "GrupUji" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini. Templat yang dihasilkan tidak akan berisi parameter yang dihasilkan.
+Perintah ini mengambil dua sumber daya dari grup sumber daya "TestGroup" sebagai templat, dan menyimpannya ke file JSON di direktori saat ini. Templat yang dihasilkan tidak akan berisi parameter yang dihasilkan.
 
 ## PARAMETERS
 
 ### -ApiVersion
 Menentukan versi API penyedia sumber daya untuk digunakan.
-Jika tidak ditentukan, versi API terbaru akan digunakan.
+Jika tidak ditentukan, versi API terbaru digunakan.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -96,8 +96,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur output file templat.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Menunjukkan bahwa cmdlet ini menggunakan versi API prari perilisan ketika secara otomatis menentukan versi API mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini menggunakan versi API prarilis saat menentukan versi API mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,8 +171,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Resource
-Daftar resourceIds untuk memfilter hasilnya.
+### -Sumber daya
+Daftar resourceId untuk memfilter hasil.
 
 ```yaml
 Type: System.String[]
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

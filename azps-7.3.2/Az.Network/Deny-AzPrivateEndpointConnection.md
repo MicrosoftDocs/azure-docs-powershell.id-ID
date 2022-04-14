@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/deny-azp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Deny-AzPrivateEndpointConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Deny-AzPrivateEndpointConnection.md
-ms.openlocfilehash: 7ff41efc7d2c5a9e0df60369d4ebc0241fb1b058
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 09cbcaf14c79b42751f7bea429622ddca651d93f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186068"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141891332"
 ---
 # Deny-AzPrivateEndpointConnection
 
 ## SYNOPSIS
-menyangkal koneksi titik akhir privat.
+menolak koneksi titik akhir privat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/deny-azprivateendpointconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Deny-AzPrivateEndpointConnection -Name <String> -ServiceName <String> -ResourceG
 ```
 
 ## DESCRIPTION
-Cmdlet **Deny-AzPrivateEndpointConnection** menyangkal koneksi titik akhir privat.
+Cmdlet **Deny-AzPrivateEndpointConnection** menolak koneksi titik akhir privat.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ Cmdlet **Deny-AzPrivateEndpointConnection** menyangkal koneksi titik akhir priva
 Deny-AzPrivateEndpointConnection -Name TestPrivateEndpointConnection -ResourceGroupName TestResourceGroup -ServiceName TestPrivateLinkService
 ```
 
-Contoh ini menyangkal koneksi titik akhir privat.
+Contoh ini menolak koneksi titik akhir privat.
 
 ## PARAMETERS
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceType
-Tipe sumber daya tautan pribadi.
+Tipe sumber daya tautan privat.
 
 ```yaml
 Type: System.String
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama layanan tempat koneksi titik akhir privat dimiliki.
+Nama layanan yang menjadi milik koneksi titik akhir privat.
 
 ```yaml
 Type: System.String
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -166,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Approve-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
+[Setujui-AzPrivateEndpointConnection](./Approve-AzPrivateEndpointConnection.md)
 
 [Get-AzPrivateEndpointConnection](./Get-AzPrivateEndpointConnection.md)
 

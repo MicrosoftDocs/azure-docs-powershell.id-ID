@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric.md
-ms.openlocfilehash: 0df172f4042b72a09da5255993201b8a0fd69c7b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 664aae7bac7c0ab02619879144d9823857ecc0d4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187525"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852242"
 ---
 # Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric
 
 ## SYNOPSIS
-Mengambil node Integration Runtime yang terdaftar dan data pemantauannya untuk Layanan Migrasi Database
+Mengambil node Integration Runtime yang terdaftar dan data pemantauannya untuk Database Migration Service
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/get-azdatamigrationsqlserviceintegrationruntimemetric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric -ResourceGroupName <String
 ```
 
 ## DESCRIPTION
-Mengambil node Integration Runtime yang terdaftar dan data pemantauannya untuk Layanan Migrasi Database
+Mengambil node Integration Runtime yang terdaftar dan data pemantauannya untuk Database Migration Service
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan node Integration Runtime yang terdaftar dan data pemantauannya untuk Layanan Migrasi Sql tertentu
+### Contoh 1: Dapatkan node Integration Runtime terdaftar dan data pemantauannya untuk Layanan Migrasi Sql tertentu
 ```powershell
 PS C:\> Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService" | Select *
 
@@ -39,9 +42,9 @@ Name       Node
 default-ir {WIN-AKLAB}
 ```
 
-Perintah ini mendapatkan node Integration Runtime yang terdaftar dan memantau datanya untuk Layanan Migrasi Sql tertentu.
+Perintah ini mendapatkan simpul Integration Runtime terdaftar dan data pemantauannya untuk Layanan Migrasi Sql tertentu.
 
-### Contoh 2: Cetak data pemantauan untuk setiap node Runtime Integrasi
+### Contoh 2: Cetak data pemantauan untuk setiap simpul Integration Runtime
 ```powershell
 PS C:\> $item = Get-AzDataMigrationSqlServiceIntegrationRuntimeMetric -ResourceGroupName "MyResourceGroup" -SqlMigrationService "MySqlMigrationService"
 PS C:\> $item.Node[0] 
@@ -52,7 +55,7 @@ AvailableMemoryInMb ConcurrentJobsLimit ConcurrentJobsRunning CpuUtilization Max
 ```
 
 Perintah pertama mendapatkan data pemantauan simpul dari Layanan Migrasi Sql.
-Perintah kedua lalu digunakan untuk mencetak data pemantauan untuk setiap simpul.
+Perintah kedua kemudian digunakan untuk mencetak data pemantauan untuk setiap simpul.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlMigrationServiceName
-Nama layanan SQL migrasi.
+Nama Layanan Migrasi SQL.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

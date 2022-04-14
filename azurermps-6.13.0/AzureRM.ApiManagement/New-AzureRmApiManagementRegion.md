@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementRegion.md
 ms.openlocfilehash: 8d292f6e03661ae55a63686a0282ce65292087f5
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140859698"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845994"
 ---
 # New-AzureRmApiManagementRegion
 
@@ -29,8 +29,8 @@ New-AzureRmApiManagementRegion -Location <String> [-Capacity <Int32>]
 ```
 
 ## DESCRIPTION
-Perintah Bantu untuk membuat contoh PsApiManagementRegion.
-Perintah ini akan digunakan dengan New-AzureRmApiManagement perintah.
+Perintah Helper untuk membuat contoh PsApiManagementRegion.
+Perintah ini akan digunakan dengan perintah New-AzureRmApiManagement.
 
 ## EXAMPLES
 
@@ -56,13 +56,13 @@ $virtualNetwork = New-AzureRmApiManagementVirtualNetwork -Location "West US" -Su
 New-AzureRmApiManagement -ResourceGroupName ContosoGroup -Location "West US" -Name ContosoApi -Organization Contoso -AdminEmail admin@contoso.com -AdditionalRegions $additionalRegions -VirtualNetwork $virtualNetwork -VpnType "External" -Sku "Premium"
 ```
 
-Membuat layanan ApiManagement tentang VpnType Eksternal di Kawasan AS Barat, dengan Kawasan Tambahan di AS Tengah.
+Membuat layanan ApiManagement VpnType Eksternal di Kawasan AS Barat, dengan Kawasan Tambahan di AS Tengah.
 
 ## PARAMETERS
 
 ### -Kapasitas
-Kapasitas Sku layanan Manajemen API Azure kawasan tambahan.
-Nilai default adalah 1.
+Kapasitas Sku dari kawasan tambahan layanan azure API Management.
+Nilai defaultnya adalah 1.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi wilayah penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
-Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Select-Object Lokasi
+Menentukan lokasi kawasan penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
+Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Konfigurasi Jaringan Virtual wilayah penyebaran Manajemen API Azure.
+Virtual Network Konfigurasi wilayah penyebaran Azure API Management.
 Nilai default adalah $null.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

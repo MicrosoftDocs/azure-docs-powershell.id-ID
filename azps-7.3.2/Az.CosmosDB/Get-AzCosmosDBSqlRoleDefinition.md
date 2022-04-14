@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlRoleDefinition.md
-ms.openlocfilehash: ef6009143d310b3dbaa1f9804c8d29fda5e596db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 675c058013fdb125e24d62b2bd92348aab1a0f11
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386823"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141897003"
 ---
 # Get-AzCosmosDBSqlRoleDefinition
 
 ## SYNOPSIS
-Mendapatkan Definisi Peran CosmosDB.
+Dapatkan Definisi Peran CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlroledefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlRoleDefinition [-Id <String>] -ParentObject <PSDatabaseAccountG
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzCosmosDBSqlRoleDefinition ini mendapatkan daftar semua Definisi Peran CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName, dan mendapatkan satu Database CosmosDB Sql untuk ResourceGroupName, AccountName, dan Id tertentu. Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
+Cmdlet Get-AzCosmosDBSqlRoleDefinition mendapatkan daftar semua Definisi Peran CosmosDB Sql yang sudah ada untuk ResourceGroupName, AccountName, dan mendapatkan satu Database CosmosDB Sql untuk ResourceGroupName, AccountName, dan Id tertentu. Id dapat sepenuhnya memenuhi syarat atau hanya Guid.
 
 ## EXAMPLES
 
@@ -49,7 +52,7 @@ AssignableScopes : {/subscriptions/subId/resourceGroups/resourceGroupName/provid
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -125,11 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.CosmosDB.Models.PSSqlRoleDefinitionGetResults

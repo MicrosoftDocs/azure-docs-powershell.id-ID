@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmContainerNicConfigIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmContainerNicConfigIpConfig.md
-ms.openlocfilehash: f9c3faafa89baf0d869ad537dbddb2e3368f758af5c94d5a26d8460f03b279f1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0a2157d006277aa491281c51f1c3b7a910b8a5c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856980"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821003"
 ---
 # New-AzureRmNetworkProfileContainerNicConfigIpConfig
 
 ## SYNOPSIS
-Creates a container nic configuration ip configuration object.
+Membuat kontainer nic configuration ip configuration object.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmNetworkProfileContainerNicConfigIpConfig -Name <String> -Subnet <PSSu
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmNetworkProfileContainerNicConfigIpConfig** membuat konfigurasi ip konfigurasi jaringan wadah baru. 
+Cmdlet **New-AzureRmNetworkProfileContainerNicConfigIpConfig** membuat konfigurasi ip konfigurasi antarmuka jaringan kontainer baru. 
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ $containerNicConfig = New-AzureRmNetworkProfileContainerNicConfig -Name cnic -Ip
 $networkProfile = New-AzureRmNetworkProfile -Name np1 -Location "West US" -ResourceGroupName rg1 -ContainerNetworkInterfaceConfiguration $containerNicConfig
 ```
 
-Dua perintah pertama membuat dan memulai vnet dan subnet. Perintah ketiga membuat profil konfigurasi ip container nic yang merujuk subnet yang dibuat.  Perintah keempat membuat konfigurasi antarmuka jaringan wadah yang menyediakan profil konfigurasi ip yang dibuat di perintah sebelumnya. Terakhir, perintah kelima membuat profil jaringan yang diinialisasi dengan konfigurasi antarmuka jaringan wadah yang disimpan di $containerNicConfig.
+Dua perintah pertama membuat dan menginisialisasi vnet dan subnet. Perintah ketiga membuat profil konfigurasi container nic ip yang mereferensikan subnet yang dibuat.  Perintah keempat membuat konfigurasi antarmuka jaringan kontainer yang memasok profil konfigurasi ip yang dibuat dalam perintah sebelumnya. Akhirnya, perintah kelima membuat profil jaringan yang diinisialisasi dengan konfigurasi antarmuka jaringan kontainer yang disimpan di $containerNicConfig.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama profil konfigurasi ip konfigurasi antarmuka jaringan wadah.
+Nama profil konfigurasi ip konfigurasi antarmuka jaringan kontainer.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,11 +140,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

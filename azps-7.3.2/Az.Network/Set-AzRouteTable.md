@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/set-azro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzRouteTable.md
-ms.openlocfilehash: 3991181f4784a1e17644ef155a667566b50c025b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a5843523f0fff1dcd6779d356a8064d234f53cee
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570750"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141934521"
 ---
 # Set-AzRouteTable
 
 ## SYNOPSIS
 Memperbarui tabel rute.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Cmdlet **Set-AzRouteTable** memperbarui tabel rute.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tabel rute dengan menambahkan konfigurasi rute ke tabel
+### Contoh 1: Memperbarui tabel rute dengan menambahkan konfigurasi rute ke tabel rute
 ```
 PS C:\>Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Add-AzRouteConfig -Name "Route07" -AddressPrefix 10.2.0.0/16 -NextHopType "VnetLocal" | Set-AzRouteTable
 Name              : RouteTable01
@@ -75,11 +78,11 @@ Routes            : [
 Subnets           : []
 ```
 
-Perintah ini mendapatkan tabel rute yang bernama RouteTable01 dengan Get-AzRouteTable cmdlet.
-Perintah itu meneruskan tabel itu ke Add-AzRouteConfig cmdlet dengan menggunakan operator pipeline.
-**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasilnya ke cmdlet saat ini, yang memperbarui tabel agar mencerminkan perubahan Anda.
+Perintah ini mendapatkan tabel rute bernama RouteTable01 menggunakan cmdlet Get-AzRouteTable.
+Perintah melewati tabel tersebut ke cmdlet Add-AzRouteConfig menggunakan operator pipeline.
+**Add-AzRouteConfig** menambahkan rute bernama Route07, lalu meneruskan hasil ke cmdlet saat ini, yang memperbarui tabel untuk mencerminkan perubahan Anda.
 
-### Contoh 2: Ubah tabel rute
+### Contoh 2: Modifikasi tabel rute
 
 ```
 PS C:\> $rt = Get-AzRouteTable -ResourceGroupName "rgName" -Name "rtName"
@@ -92,17 +95,17 @@ PS C:\> $rt.DisableBgpRoutePropagation
 True
 ```
 
-Perintah pertama mendapatkan tabel rute bernama rtName dan menyimpannya dalam $rt variabel.
+Perintah pertama mendapatkan tabel rute bernama rtName dan menyimpannya dalam variabel $rt.
 Perintah kedua menampilkan nilai DisableBgpRoutePropagation.
 Perintah ketiga memperbarui nilai DisableBgpRoutePropagation.
 Perintah keempat memperbarui tabel rute di server.
-Perintah kelima mendapatkan tabel rute yang diperbarui dan menyimpannya dalam $rt baru.
+Perintah kelima mendapatkan tabel rute yang diperbarui dan menyimpannya dalam variabel $rt.
 Perintah keenam menampilkan nilai DisableBgpRoutePropagation.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan objek tabel rute yang menyatakan status yang harus disetel tabel rutenya.
+Menentukan objek tabel rute yang mewakili status tempat tabel rute harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

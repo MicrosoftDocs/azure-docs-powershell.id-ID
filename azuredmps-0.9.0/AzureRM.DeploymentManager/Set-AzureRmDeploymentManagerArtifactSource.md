@@ -4,16 +4,16 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/set-azurermdeploymentmanagerartifactsource
 schema: 2.0.0
 ms.openlocfilehash: 230e443fad4740b6bf9896164f02ae9b382e3ed2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428293"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782638"
 ---
 # Set-AzureRmDeploymentManagerArtifactSource
 
 ## SYNOPSIS
-Memperbarui sumber artifak.
+Memperbarui sumber artefak.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Set-AzureRmDeploymentManagerArtifactSource [-ArtifactSource] <PSArtifactSource>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDeploymentManagerArtifactSource** memperbarui sumber artifak dengan objek sumber artifak yang ditentukan.
+**Cmdlet Set-AzureRmDeploymentManagerArtifactSource** memperbarui sumber artefak dengan objek sumber artefak yang ditentukan.
 Cmdlet mengembalikan objek ArtifactSource yang diperbarui.
 
 ## EXAMPLES
@@ -33,13 +33,13 @@ Cmdlet mengembalikan objek ArtifactSource yang diperbarui.
 PS C:\> Get-AzureRmDeploymentManagerArtifactSource -ArtifactSource $artifactSourceObject
 ```
 
-Perintah ini memperbarui sumber artifak yang namanya dan Grup Sumber Dayanya sesuai dengan properti Nama dan ResourceGroupName $artifactSourceObject, secara berurutan.
-Sumber artifak akan diperbarui ke properti yang diatur dalam $artifactSourceObject.
+Perintah ini memperbarui sumber artefak yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $artifactSourceObject.
+Sumber artefak akan diperbarui ke properti yang diatur dalam $artifactSourceObject.
 
 ## PARAMETERS
 
 ### -ArtifactSource
-Objek sumber artifak.
+Objek sumber artefak.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSArtifactSource
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

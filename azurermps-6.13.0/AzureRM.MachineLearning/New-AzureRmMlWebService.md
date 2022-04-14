@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.machi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/New-AzureRmMlWebService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/New-AzureRmMlWebService.md
-ms.openlocfilehash: 49895d4b93052c63880a3ef9aaed96ab64fa6ae593bb5687a9df8fd987d763e1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 70704905063f120edd9f15bcda300707167c5d80
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853250"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822353"
 ---
 # New-AzureRmMlWebService
 
@@ -21,13 +21,13 @@ Membuat layanan web baru.
 
 ## SYNTAX
 
-### CreateFromFile
+### BuatFromFile
 ```
 New-AzureRmMlWebService -ResourceGroupName <String> -Location <String> -Name <String> -DefinitionFile <String>
  [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateFromInstance
+### BuatFromInstance
 ```
 New-AzureRmMlWebService -ResourceGroupName <String> -Location <String> -Name <String>
  -NewWebServiceDefinition <WebService> [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -35,29 +35,29 @@ New-AzureRmMlWebService -ResourceGroupName <String> -Location <String> -Name <St
 ```
 
 ## DESCRIPTION
-Membuat layanan Azure Machine Learning web dalam grup sumber daya yang sudah ada.
-Jika ada layanan web dengan nama yang sama dalam grup sumber daya, panggilan bertindak sebagai operasi pembaruan dan layanan web yang sudah ada ditimpa.
+Membuat layanan web Azure Machine Learning dalam grup sumber daya yang sudah ada.
+Jika layanan web dengan nama yang sama ada dalam grup sumber daya, panggilan bertindak sebagai operasi pembaruan dan layanan web yang sudah ada ditimpa.
 
 ## EXAMPLES
 
-### Contoh 1: Buat layanan baru dari definisi berbasis file Json
+### Contoh 1: Membuat layanan baru dari definisi berbasis file Json
 ```
 New-AzureRmMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Location "South Central US" -DefinitionFile "C:\mlservice.json"
 ```
 
-Membuat layanan web Azure Machine Learning baru bernama "mywebservicename" dalam grup "myresourcegroup" dan kawasan AS Tengah Selatan, berdasarkan definisi yang ada dalam file json yang direferensikan.
+Membuat layanan web Azure Machine Learning baru bernama "mywebservicename" dalam grup "myresourcegroup" dan kawasan South Central US, berdasarkan definisi yang ada dalam file json yang direferensikan.
 
-### Contoh 2: Membuat layanan baru dari contoh objek
+### Contoh 2: Membuat layanan baru dari instans objek
 ```
 New-AzureRmMlWebService -ResourceGroupName "myresourcegroup" -Name "mywebservicename" -Location "South Central US" -NewWebServiceDefinition $serviceDefinitionObject
 ```
 
-Anda bisa mendapatkan contoh objek layanan web untuk dikustomisasi sebelum menerbitkan sebagai sumber daya dengan menggunakan cmdlet Import-AzureRmMlWebService.
+Anda bisa mendapatkan instans objek layanan web untuk dikustomisasi sebelum menerbitkan sebagai sumber daya dengan menggunakan cmdlet Import-AzureRmMlWebService.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -DefinitionFile
-Spesifikasi jalur ke file yang berisi definisi format JSON dari layanan web.
-Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web di spesifikasi di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/.
+Menspekuifikasikan jalur ke file yang berisi definisi format JSON dari layanan web.
+Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web dalam spesifikasi swagger di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/.
 
 ```yaml
 Type: System.String
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,12 +103,12 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Kawasan layanan web.
+Wilayah layanan web.
 Masukkan kawasan pusat data Azure, seperti "AS Barat" atau "Asia Tenggara".
-Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe itu.
+Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe tersebut.
 Layanan web tidak harus berada di kawasan yang sama dengan langganan Azure Anda atau kawasan yang sama dengan grup sumber dayanya.
-Grup sumber daya bisa berisi layanan web dari wilayah yang berbeda.
-Untuk menentukan kawasan yang mendukung setiap tipe sumber daya, gunakan Get-AzureRmResourceProvider dengan cmdlet parameter ProviderNamespace.
+Grup sumber daya bisa berisi layanan web dari kawasan yang berbeda.
+Untuk menentukan wilayah mana yang mendukung setiap tipe sumber daya, gunakan Get-AzureRmResourceProvider dengan cmdlet parameter ProviderNamespace.
 
 ```yaml
 Type: System.String
@@ -139,9 +139,9 @@ Accept wildcard characters: False
 ```
 
 ### -NewWebServiceDefinition
-Definisi untuk layanan web baru, berisi semua properti yang menjadi dasar layanan.
-Parameter ini diperlukan dan mewakili instans kelas Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
-Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web di spesifikasi di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/stable/2017-01-01/webservices.json.
+Definisi untuk layanan web baru, berisi semua properti yang menyusun layanan.
+Parameter ini diperlukan dan mewakili contoh kelas Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService.
+Anda dapat menemukan spesifikasi terbaru untuk definisi layanan web dalam spesifikasi swagger di bawah https://github.com/Azure/azure-rest-api-specs/blob/master/specification/machinelearning/resource-manager/Microsoft.MachineLearning/stable/2017-01-01/webservices.json.
 
 ```yaml
 Type: Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
@@ -156,12 +156,12 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya di mana menempatkan layanan web.
+Grup sumber daya tempat untuk menempatkan layanan web.
 Masukkan kawasan pusat data Azure, seperti "AS Barat" atau "Asia Tenggara".
-Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe itu.
+Anda bisa menempatkan layanan web di kawasan mana pun yang mendukung sumber daya tipe tersebut.
 Layanan web tidak harus berada di kawasan yang sama dengan langganan Azure Anda atau kawasan yang sama dengan grup sumber dayanya.
-Grup sumber daya bisa berisi layanan web dari wilayah yang berbeda.
-Untuk menentukan kawasan yang mendukung setiap tipe sumber daya, gunakan Get-AzureRmResourceProvider dengan cmdlet parameter ProviderNamespace.
+Grup sumber daya bisa berisi layanan web dari kawasan yang berbeda.
+Untuk menentukan wilayah mana yang mendukung setiap tipe sumber daya, gunakan Get-AzureRmResourceProvider dengan cmdlet parameter ProviderNamespace.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,6 +219,6 @@ Parameter: NewWebServiceDefinition (ByValue)
 ### Microsoft.Azure.Management.MachineLearning.WebServices.Models.WebService
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

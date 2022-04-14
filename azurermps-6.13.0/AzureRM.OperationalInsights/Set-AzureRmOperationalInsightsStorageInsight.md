@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.opera
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Set-AzureRmOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/OperationalInsights/Commands.OperationalInsights/help/Set-AzureRmOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 24c7a6e7af3bc295566c3302ea330ad8db355b32617d4a7e62f6530c018be439
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 460a1585c8c6c556f0044b9cd0673a3be750ffe2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416128"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141776480"
 ---
 # Set-AzureRmOperationalInsightsStorageInsight
 
@@ -41,26 +41,26 @@ Cmdlet **Set-AzureRmOperationalInsightsStorageInsight** mengubah konfigurasi Sto
 
 ## EXAMPLES
 
-### Contoh 1: Modify a Storage Insight by name
+### Contoh 1: Memodifikasi Storage Insight menurut nama
 ```
 PS C:\>Set-AzureRmOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight" -Tables @("WADWindowsEventLogsTable")
 ```
 
-Perintah ini mengubah tabel yang darinya wawasan Storage bernama MyStorageInsight dibaca.
+Perintah ini mengubah tabel yang dibaca oleh Storage Insight bernama MyStorageInsight.
 
-### Contoh 2: Memodifikasi Storage Insight dengan menggunakan objek ruang kerja
+### Contoh 2: Memodifikasi Storage Insight menggunakan objek ruang kerja
 ```
 PS C:\>$Workspace = Get-AzureRmOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
 PS C:\>Set-AzureRmOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -Containers @("wad-iis-logfiles")
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzureRmOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace terbatas.
-Perintah kedua mengubah wadah yang darinya wawasan Storage bernama MyStorageInsight dibaca.
+Perintah pertama menggunakan cmdlet Get-AzureRmOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam variabel $Workspace.
+Perintah kedua mengubah wadah tempat Storage Insight bernama MyStorageInsight dibaca.
 
 ## PARAMETERS
 
-### -Wadah
+### -Kontainer
 Menentukan daftar wadah yang menyediakan data.
 
 ```yaml
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama suatu Storage Insight.
+Menentukan nama Storage Insight.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -200,7 +200,7 @@ Parameter: Ruang Kerja (ByValue)
 
 ## RELATED LINKS
 
-[Cmdlet Azure Operational Insights](./AzureRM.OperationalInsights.md)
+[Cmdlet Insights Operasional Azure](./AzureRM.OperationalInsights.md)
 
 [Get-AzureRmOperationalInsightsWorkspace](./Get-AzureRmOperationalInsightsWorkspace.md)
 

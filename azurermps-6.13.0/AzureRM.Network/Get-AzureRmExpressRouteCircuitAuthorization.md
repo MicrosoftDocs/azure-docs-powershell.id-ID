@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmExpressRouteCircuitAuthorization.md
 ms.openlocfilehash: 5b277ca35071c3639a3c7b341451cea78c024901
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425125"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821750"
 ---
 # Get-AzureRmExpressRouteCircuitAuthorization
 
 ## SYNOPSIS
-Dapatkan informasi tentang otorisasi sirkuit ExpressRoute.
+Mendapatkan informasi tentang otorisasi sirkuit ExpressRoute.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmExpressRouteCircuitAuthorization [-Name <String>] -ExpressRouteCircui
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmExpressRouteCircuitAuthorization** mendapatkan informasi tentang otorisasi yang ditetapkan untuk sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; ini otorisasi menghasilkan kunci otorisasi yang bisa digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). Tombol otorisasi, serta informasi lain tentang otorisasi, dapat dilihat kapan saja dengan menjalankan **Get-AzureRmExpressRouteCircuitAuthorization**.
+Cmdlet **Get-AzureRmExpressRouteCircuitAuthorization** mendapatkan informasi tentang otorisasi yang ditetapkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menyambungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). Tombol otorisasi, serta informasi lain tentang otorisasi, dapat ditampilkan kapan saja dengan menjalankan **Get-AzureRmExpressRouteCircuitAuthorization**.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ $Circuit = Get-AzureRmExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupN
 Get-AzureRmExpressRouteCircuitAuthorization -Circuit $Circuit
 ```
 
-Perintah ini mengembalikan informasi tentang semua otorisasi ExpressRoute yang terkait dengan sirkuit ExpressRoute. Perintah pertama menggunakan cmdlet **Get-AzureRmExpressRouteCircuit** untuk membuat referensi objek sirkuit bernama ContosoCircuit; referensi objek tersebut disimpan di variabel $Circuit. Perintah kedua lalu menggunakan referensi objek dan cmdlet **Get-AzureRmExpressRouteCircuitAuthorization** untuk mengembalikan informasi tentang otorisasi yang terkait dengan ContosoCircuit.
+Perintah ini mengembalikan informasi tentang semua otorisasi ExpressRoute yang terkait dengan sirkuit ExpressRoute. Perintah pertama menggunakan cmdlet **Get-AzureRmExpressRouteCircuit** untuk membuat referensi objek ke sirkuit bernama ContosoCircuit; referensi objek tersebut disimpan dalam variabel $Circuit. Perintah kedua kemudian menggunakan referensi objek tersebut dan cmdlet **Get-AzureRmExpressRouteCircuitAuthorization** untuk mengembalikan informasi tentang otorisasi yang terkait dengan ContosoCircuit.
 
 ### Contoh 2: Dapatkan semua otorisasi ExpressRoute menggunakan cmdlet Where-Object
 ```
@@ -46,13 +46,13 @@ $Circuit = Get-AzureRmExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupN
  Get-AzureRmExpressRouteCircuitAuthorization -Circuit $Circuit | Where-Object {$_.AuthorizationUseStatus -eq "Available"}
 ```
 
-Perintah ini menunjukkan variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam kasus ini, informasi hanya dikembalikan untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan di perintah 2 dan pipa ke cmdlet **Where-Object.**
-**Jika kemudian Objek** hanya memilih otorisasi dengan properti *AuthorizationUseStatus* yang diatur ke Tersedia. Untuk mencantumkan izin yang tidak tersedia saja, gunakan sintaks ini untuk klausul Where: `{$_.AuthorizationUseStatus -ne "Available"}`
+Perintah ini menunjukkan variasi pada perintah yang digunakan dalam Contoh 1. Namun, dalam hal ini, informasi dikembalikan hanya untuk otorisasi yang tersedia untuk digunakan (yaitu, untuk otorisasi yang belum ditetapkan ke jaringan virtual). Untuk melakukan ini, informasi otorisasi sirkuit dikembalikan dalam perintah 2 dan disalurkan ke cmdlet **Where-Object** .
+**Where-Object** kemudian hanya memilih otorisasi di mana properti *AuthorizationUseStatus* diatur ke Tersedia. Untuk mencantumkan otorisasi yang tidak tersedia saja, gunakan sintaks ini untuk klausul Where: `{$_.AuthorizationUseStatus -ne "Available"}`
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama otorisasi sirkuit ExpressRoute yang akan cmdlet ini dapatkan.
+Menentukan nama otorisasi sirkuit ExpressRoute yang didapat cmdlet ini.
 -Name "ContosoCircuitAuthorization"
 
 ```yaml
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
