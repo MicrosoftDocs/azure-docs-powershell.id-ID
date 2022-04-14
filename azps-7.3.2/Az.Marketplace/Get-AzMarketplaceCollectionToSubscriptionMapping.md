@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplaceCollectionToSubscriptionMapping.md
-ms.openlocfilehash: 2da30d57fdd111d6cbd669cd233909cc094d7205
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 46972172983deb6697192c7715cd4fde52c43e58
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198806"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787586"
 ---
 # Get-AzMarketplaceCollectionToSubscriptionMapping
 
 ## SYNOPSIS
-Untuk daftar langganan tertentu, API akan mengembalikan peta kumpulan dan langganan terkait dari daftar yang disediakan.
+Untuk daftar langganan tertentu, API akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplacecollectiontosubscriptionmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -46,11 +49,11 @@ Get-AzMarketplaceCollectionToSubscriptionMapping -InputObject <IMarketplaceIdent
 ```
 
 ## DESCRIPTION
-Untuk daftar langganan tertentu, API akan mengembalikan peta kumpulan dan langganan terkait dari daftar yang disediakan.
+Untuk daftar langganan tertentu, API akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
 
 ## EXAMPLES
 
-### Contoh 1: Untuk daftar langganan tertentu, Cmdlet akan menampilkan peta kumpulan dan langganan terkait dari daftar yang disediakan.
+### Contoh 1: Untuk daftar langganan tertentu, Cmdlet akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
 ```powershell
 PS C:\>  $res = Get-AzMarketplaceCollectionToSubscriptionMapping -PrivateStoreId a260d38c-96cf-492d-a340-404d0c4b3ad6 -Payload @{SubscriptionId = "53425a7b-4ac1-4729-8340-e1da5046212c"}
 PS C:\> $res.keys
@@ -58,7 +61,7 @@ e58535dc-1be3-4d2c-904c-1f97984ebe5d
 fdb889a1-cf3e-49f0-95b8-2bb012fa01f1
 ```
 
-Perintah ini Untuk daftar langganan tertentu, akan mengembalikan peta kumpulan dan langganan terkait dari daftar yang disediakan.
+Perintah Ini Untuk daftar langganan tertentu, akan mengembalikan peta koleksi dan langganan terkait dari daftar yang disediakan.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.IMarketplaceIdentity
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Daftar langganan untuk mendapatkan kumpulan terkait Untuk dibuat, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
+Daftar langganan untuk mendapatkan koleksi terkait Untuk dibangun, lihat bagian CATATAN untuk properti PAYLOAD dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Marketplace.Models.Api20210601.ICollectionsToSubscriptionsMappingPayload
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,12 +194,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IMarketplaceIdentity>: Parameter Identitas
-  - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk mendapatkan buat atau perbarui
+  - `[AdminRequestApprovalId <String>]`: ID persetujuan permintaan admin untuk membuat atau memperbarui
   - `[CollectionId <String>]`: ID koleksi
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[OfferId <String>]`: ID penawaran untuk memperbarui atau menghapus
   - `[PrivateStoreId <String>]`: ID bursa - harus menggunakan ID penyewa
-  - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk mendapatkan buat atau perbarui
+  - `[RequestApprovalId <String>]`: ID persetujuan permintaan untuk membuat atau memperbarui
 
 PAYLOAD <ICollectionsToSubscriptionsMappingPayload>: Daftar langganan untuk mendapatkan koleksi terkait
   - `[SubscriptionId <String[]>]`: Daftar id langganan

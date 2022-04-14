@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseRoleAssignment.md
 ms.openlocfilehash: 289db727b1d44cdabc7ae2075305ce2df06d908c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140242981"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141794696"
 ---
 # Get-AzSynapseRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "140242981"
 Mendapatkan penetapan peran Analitik Synapse.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/get-azsynapseroleassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapseroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -91,8 +91,8 @@ Get-AzSynapseRoleAssignment -WorkspaceObject <PSSynapseWorkspace> [-RoleDefiniti
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseRoleAssignment** mendapatkan Penetapan Peran Analitik Azure Synapse.
-Jika Anda tidak menentukan definisi peran atau nama prinsipal pengguna, cmdlet ini akan menetapkan semua peran.
+Cmdlet **Get-AzSynapseRoleAssignment** mendapatkan Azure Synapse Penetapan Peran Analitik.
+Jika Anda tidak menentukan definisi peran atau nama utama pengguna, cmdlet ini mendapatkan semua penetapan peran.
 
 ## EXAMPLES
 
@@ -101,28 +101,28 @@ Jika Anda tidak menentukan definisi peran atau nama prinsipal pengguna, cmdlet i
 PS C:\> Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace
 ```
 
-Perintah ini mendapatkan semua penetapan peran di bawah ruang kerja.
+Perintah ini mendapatkan semua tugas peran di bawah ruang kerja.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole
 ```
 
-Perintah ini mendapatkan semua penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole.
+Perintah ini mendapatkan semua tugas peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName
 ```
 
-Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole dan nama prinsipal pengguna ContosoName.
+Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole dan nama utama pengguna ContosoName.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleDefinitionName ContosoRole -SignInName ContosoName -ItemType ContosoItemType
 ```
 
-Perintah ini mendapatkan penetapan peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole, nama prinsipal pengguna ContosoName dan di bawah itemtype ContosoItemtype.
+Perintah ini mendapatkan tugas peran di bawah ruang kerja ContosoWorkspace dengan nama peran ContosoRole, nama utama pengguna ContosoName dan di bawah itemtype ContosoItemtype.
 
 ### Contoh 5
 ```powershell
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ObjectId Azure AD dari Prinsipal Pengguna, Grup atau Layanan.
+ObjectId Azure AD Dari Prinsipal Pengguna, Grup, atau Layanan.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id Peran yang ditetapkan kepada pokok.
+Id dari Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama Peran yang ditetapkan kepada pokok.
+Nama Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-ServicePrincipalName prinsipal layanan.
+ServicePrincipalName dari prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -301,7 +301,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -332,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

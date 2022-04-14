@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRewriteRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzApplicationGatewayRewriteRuleSet.md
 ms.openlocfilehash: d63d02fb79fbbfe323242320c2c7cc2a17862604
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140332151"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141864464"
 ---
 # Add-AzApplicationGatewayRewriteRuleSet
 
 ## SYNOPSIS
-Menambahkan aturan tulis ulang diatur ke gateway aplikasi.
+Menambahkan rangkaian aturan penulisan ulang ke gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azapplicationgatewayrewriteruleset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azapplicationgatewayrewriteruleset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Add-AzApplicationGatewayRewriteRuleSet -ApplicationGateway <PSApplicationGateway
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApplicationGatewayRewriteRuleSet** menambahkan aturan penulisan ulang pada gateway aplikasi.
+Cmdlet **Add-AzApplicationGatewayRewriteRuleSet** menambahkan aturan penulisan ulang yang diatur ke gateway aplikasi.
 
 ## EXAMPLES
 
@@ -39,8 +39,8 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> $AppGw = Add-AzApplicationGatewayRewriteRuleSet -ApplicationGateway $AppGw -Name "ruleset1" -RewriteRule $rule
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw variabel.
-Perintah kedua menambahkan aturan tulis ulang diatur ke gateway aplikasi.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
+Perintah kedua menambahkan kumpulan aturan penulisan ulang ke gateway aplikasi.
 
 ## PARAMETERS
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Tulis UlangRuleSet
+Nama RewriteRuleSet
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -RewriteRule
-Daftar aturan tulis ulang
+Daftar aturan penulisan ulang
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayRewriteRule]
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

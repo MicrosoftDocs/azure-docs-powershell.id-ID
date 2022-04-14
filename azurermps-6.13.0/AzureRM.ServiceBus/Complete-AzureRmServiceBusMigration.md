@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Complete-AzureRmServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Complete-AzureRmServiceBusMigration.md
 ms.openlocfilehash: 0006e4768dc27994d18e93e48696b5ee9a514c45
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140861213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775061"
 ---
 # Complete-AzureRmServiceBusMigration
 
 ## SYNOPSIS
-Cmdlet mengatur Migrasi dari ruang nama Standar ke premium sebagai selesai dan string koneksi dari ruang nama standar sekarang arahkan ke Premium nama
+Cmdlet mengatur ruang nama Migrasi dari Standar ke premium sebagai string lengkap dan koneksi ruang nama standar kini mengarah ke ruang nama Premium
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Complete-AzureRmServiceBusMigration [-ResourceId] <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Complete-AzureRmServiceBusMigration** mengatur Migrasi dari ruang nama Standar ke premium sebagai selesai dan string koneksi dari kumpulan nama standar sekarang arahkan ke Premium nama
+Cmdlet **Complete-AzureRmServiceBusMigration** mengatur Migrasi dari Standar ke ruang nama premium sebagai string lengkap dan koneksi ruang nama standar kini mengarah ke Premium ruang nama
 
 ## EXAMPLES
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan migrasi - Objek Kumpulan Nama Standar
+konfigurasi Bus Layanan Migrasi - Objek Ruang Nama Standar
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSServiceBusDRConfigurationAttributes
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Bus Layanan Migraigu - Standard Namespace Resource Id
+Bus Layanan Migratio - Id Sumber Daya Ruang Nama Standar
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

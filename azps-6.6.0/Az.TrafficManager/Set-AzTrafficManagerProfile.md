@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/TrafficManager/TrafficManager/help/Set-AzTrafficManagerProfile.md
 ms.openlocfilehash: 8ed9ebee67a4852a7227c44977748a03e430453f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140274935"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141794084"
 ---
 # Set-AzTrafficManagerProfile
 
@@ -19,7 +19,7 @@ ms.locfileid: "140274935"
 Memperbarui profil Traffic Manager.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.trafficmanager/set-aztrafficmanagerprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.trafficmanager/set-aztrafficmanagerprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Set-AzTrafficManagerProfile -TrafficManagerProfile <TrafficManagerProfile>
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzTrafficManagerProfile** memperbarui Azure Traffic Manager profil.
+Cmdlet **Set-AzTrafficManagerProfile** memperbarui profil Azure Traffic Manager.
 Cmdlet ini memperbarui pengaturan profil dari objek profil lokal.
-Anda bisa menentukan objek profil baik dengan menggunakan parameter *TrafficManagerProfile* atau dengan menggunakan saluran.
+Anda dapat menentukan objek profil baik dengan menggunakan parameter *TrafficManagerProfile* atau menggunakan pipeline.
 
-Anda dapat memperoleh objek lokal yang mewakili profil menggunakan cmdlet Get-AzTrafficManagerProfile.
+Anda bisa mendapatkan objek lokal yang mewakili profil dengan menggunakan cmdlet Get-AzTrafficManagerProfile.
 Ubah objek secara lokal lalu gunakan **Set-AzTrafficManagerProfile** untuk melakukan perubahan Anda.
 
 ## EXAMPLES
@@ -45,18 +45,18 @@ PS C:\> $TrafficManagerProfile.ProfileStatus = Disabled
 PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
 ```
 
-Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet Get-AzTrafficManagerProfile cmdlet.
-Perintah menyimpan profil secara lokal di $TrafficManagerProfile baru.
+Perintah pertama mendapatkan profil Azure Traffic Manager dengan menggunakan cmdlet Get-AzTrafficManagerProfile.
+Perintah menyimpan profil secara lokal dalam variabel $TrafficManagerProfile.
 
-Perintah kedua mengubah profil secara lokal.
+Perintah kedua mengubah profil tersebut secara lokal.
 Perintah ini akan menonaktifkan profil.
 
-Perintah ketiga memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal di $TrafficManagerProfile.
+Perintah ketiga memperbarui profil Traffic Manager bernama ContosoProfile agar sesuai dengan nilai lokal dalam $TrafficManagerProfile.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -TrafficManagerProfile
 Menentukan objek **TrafficManagerProfile** lokal.
-Cmdlet ini memperbarui Traffic Manager cocok dengan objek lokal ini.
+Cmdlet ini memperbarui Traffic Manager agar sesuai dengan objek lokal ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerProfile
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

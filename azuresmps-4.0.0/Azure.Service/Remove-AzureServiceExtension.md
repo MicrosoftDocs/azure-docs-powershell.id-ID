@@ -4,11 +4,11 @@ ms.assetid: 6B5E4968-5DF5-4956-A070-9F54A79D960B
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: aef0876ec39f9a70647cda687dcf2e22e384cd1a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422066"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772161"
 ---
 # Remove-AzureServiceExtension
 
@@ -28,7 +28,7 @@ Remove-AzureServiceExtension [[-ServiceName] <String>] [[-Slot] <String>] [[-Rol
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### RemoveAllRoles
+### HapusAllRoles
 ```
 Remove-AzureServiceExtension [[-ServiceName] <String>] [[-Slot] <String>] [-ExtensionName] <String>
  [-ProviderNamespace] <String> [-UninstallConfiguration] [-Profile <AzureSMProfile>]
@@ -36,23 +36,23 @@ Remove-AzureServiceExtension [[-ServiceName] <String>] [[-Slot] <String>] [-Exte
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureServiceExtension** menghapus ekstensi layanan awan yang diterapkan pada penyebaran.
+Cmdlet **Remove-AzureServiceExtension** menghapus ekstensi layanan cloud yang diterapkan pada penyebaran.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi layanan
+### Contoh 1: Menghapus ekstensi layanan
 ```
 PS C:\> Remove-AzureServiceExtension -ServiceName $Svc -Slot "Production" -ExtensionName "RDP" -ProviderNamespace "Microsoft.Windows.Azure.Extensions"
 ```
 
-Perintah ini akan menghapus ekstensi layanan.
+Perintah ini menghapus ekstensi layanan.
 
-### Contoh 2: Hapus ekstensi layanan dan hapus semua konfigurasi
+### Contoh 2: Menghapus ekstensi layanan dan menghapus instalan semua konfigurasi
 ```
 PS C:\> Remove-AzureServiceExtension -ServiceName $Svc -Slot "Production" -ExtensionName "RDP" -ProviderNamespace "Microsoft.Windows.Azure.Extensions" -UninstallConfiguration
 ```
 
-Perintah ini akan menghapus ekstensi layanan dan menghapus instalan semua konfigurasi.
+Perintah ini menghapus ekstensi layanan dan menghapus instalan semua konfigurasi.
 
 ## PARAMETERS
 
@@ -72,16 +72,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -Peran
 Menentukan array peran opsional untuk menentukan ekstensi.
-Jika tidak ditentukan, ekstensi akan diterapkan sebagai konfigurasi default untuk semua peran.
+Jika tidak ditentukan ekstensi diterapkan sebagai konfigurasi default untuk semua peran.
 
 ```yaml
 Type: String[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan penyebaran untuk diubah.
-Nilai yang valid adalah Produksi atau Pementasan.
+Nilai yang valid adalah Produksi atau Staging.
 
 ```yaml
 Type: String
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -UninstallConfiguration
-Mengindikasikan bahwa cmdlet ini menghapus instalasi semua konfigurasi dari layanan awan.
+Menunjukkan bahwa cmdlet ini menghapus semua konfigurasi dari layanan awan.
 
 ```yaml
 Type: SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

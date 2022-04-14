@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutoProvisioningSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityAutoProvisioningSetting.md
 ms.openlocfilehash: 2e1d7e487c065dd6c1659f4c42594c91886f4002
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098973"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141860234"
 ---
 # Get-AzSecurityAutoProvisioningSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "140098973"
 Mendapatkan pengaturan penyediaan otomatis keamanan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecurityautoprovisioningsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecurityautoprovisioningsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,8 +40,8 @@ Get-AzSecurityAutoProvisioningSetting -ResourceId <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Opsi Penyediaan Pengaturan memungkinkan Anda memutuskan apakah Anda ingin Pusat Keamanan Azure secara otomatis menyediakan agen keamanan yang akan diinstal pada VM Anda.
-Agen keamanan akan memantau VM Anda untuk membuat pemberitahuan keamanan dan memantau kepatuhan keamanan VM.
+Pengaturan Penyediaan Otomatis memungkinkan Anda memutuskan apakah Anda ingin Azure Security Center menyediakan agen keamanan yang akan diinstal secara otomatis di VM Anda.
+Agen keamanan akan memantau VM Anda untuk membuat peringatan keamanan dan memantau kepatuhan keamanan VM.
 
 ## EXAMPLES
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesSnapshotPolicy.md
 ms.openlocfilehash: 1898771a5eb0439591c4adc6dd35bf220086c0f8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139936771"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141864590"
 ---
 # Update-AzNetAppFilesSnapshotPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "139936771"
 Memperbarui kebijakan snapshot Azure NetApp Files (ANF) ke pengubah opsional yang disediakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilessnapshotpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilessnapshotpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ Update-AzNetAppFilesSnapshotPolicy [-Enabled <Boolean>] [-HourlySchedule <PSNetA
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzNetAppFilesSnapshotPolicy** mengubah kebijakan snapshot ANF.
+**Cmdlet Update-AzNetAppFilesSnapshotPolicy** memodifikasi kebijakan snapshot ANF.
 
 ## EXAMPLES
 
@@ -71,11 +71,11 @@ $hourlySchedule = @{
 PS C:\> Update-AzNetAppFilesSnapshotPolicy -ResourceGroupName "MyRG" -AccountName "MyAccount" -Name "MySnapshotPolicy" -HourlySchedule $hourlySchedule
 ```
 
-Perintah ini mengubah kebijakan pencadangan ANF "MySnapshotPolicy" agar diberi HourlySchedule.
+Perintah ini mengubah kebijakan cadangan ANF "MySnapshotPolicy" menjadi HourlySchedule yang diberikan.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailySchedule
-Larik hashtable yang menyatakan Jadwal harian
+Array hashtable yang mewakili Jadwal harian
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesDailySchedule
@@ -135,7 +135,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 Properti untuk memutuskan kebijakan diaktifkan atau tidak
 
 ```yaml
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -HourlySchedule
-Array hashtable yang menyatakan Jadwal per jam
+Array hashtable yang mewakili Jadwal per jam
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesHourlySchedule
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek snapshot yang akan dihapus
+Objek snapshot untuk dihapus
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesSnapshotPolicy
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlySchedule
-Larik hashtable mewakili Jadwal montly
+Array hashtable yang mewakili Jadwal montly
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesMonthlySchedule
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklySchedule
-Larik hashtable mewakili Jadwal montly
+Array hashtable yang mewakili Jadwal montly
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesWeeklySchedule
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

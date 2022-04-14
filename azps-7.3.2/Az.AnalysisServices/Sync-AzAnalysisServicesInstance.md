@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Sync-AzAnalysisServicesInstance.md
-ms.openlocfilehash: e23fec88a19c209ef7fad5eec6aed6a0efa211dd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0c7a53162a2ffade7b00c8a5b70919e8559a0b78
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550822"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141793184"
 ---
 # Sync-AzAnalysisServicesInstance
 
 ## SYNOPSIS
 
-Menyinkronkan database tertentu pada contoh server Analysis Services yang ditentukan ke semua contoh skala kueri di Lingkungan yang saat ini dicatat seperti yang ditentukan dalam Add-AzAnalysisServicesAccount pencarian
+Menyinkronkan database tertentu pada contoh server Analysis Services yang ditentukan ke semua contoh skala kueri dalam lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/sync-azanalysisservicesinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Sync-AzAnalysisServicesInstance [-Database] <String> [-Instance] <String> [-Pass
 
 ## DESCRIPTION
 
-Cmdlet Sync-AzAnalysisServicesInstance menyinkronkan database yang ditentukan pada instans server Analysis Services yang ditentukan ke semua contoh skala kueri di Lingkungan yang saat ini dicatat seperti yang ditentukan Add-AzAnalysisServicesAccount pencarian
+Cmdlet Sync-AzAnalysisServicesInstance menyinkronkan database tertentu pada contoh server Analysis Services tertentu ke semua contoh skala kueri dalam Lingkungan yang saat ini masuk seperti yang ditentukan dalam perintah Add-AzAnalysisServicesAccount
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ Cmdlet Sync-AzAnalysisServicesInstance menyinkronkan database yang ditentukan pa
 Sync-AzAnalysisServicesInstance -Instance asazure://westus.asazure.windows.net/contoso -Database SalesOrders
 ```
 
-Perintah ini akan menyinkronkan database bernama SalesOrders di server yang bernama 'contoso' dalam lingkungan westus.asazure.windows.net asalkan pengguna telah masuk ke lingkungan ini menggunakan Add-AzAnalysisServicesAccount perintah.
+Perintah ini akan menyinkronkan database bernama SalesOrders di server bernama 'contoso' di lingkungan westus.asazure.windows.net asalkan pengguna telah masuk ke lingkungan ini menggunakan perintah Add-AzAnalysisServicesAccount.
 
 ## PARAMETERS
 
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 
 ### -Instance
 
-Nama contoh server Analysis Services untuk dimulai ulang
+Nama contoh server Analysis Services untuk memulai ulang
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

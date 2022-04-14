@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azfi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallFqdnTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewallFqdnTag.md
-ms.openlocfilehash: df895193185b9a8ef65edd948492eaa65cb2005c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d70f2c0f20896e7a7764aa0695c4b82f9041a727
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386115"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787082"
 ---
 # Get-AzFirewallFqdnTag
 
 ## SYNOPSIS
-Dapatkan Tag Fqdn Azure Firewall yang tersedia.
+Dapatkan Azure Firewall Fqdn Tag yang tersedia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewallfqdntag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzFirewallFqdnTag [-DefaultProfile <IAzureContextContainer>] [<CommonParamet
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzFirewallFqdnTag** mendapatkan daftar Tag FQDN yang bisa digunakan untuk Aturan Aplikasi Azure Firewall
+Cmdlet **Get-AzFirewallFqdnTag** mendapatkan daftar Tag FQDN yang dapat digunakan untuk Azure Firewall Aturan Aplikasi
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ Get-AzFirewallFqdnTag
 
 Contoh ini mengambil semua Tag FQDN yang tersedia.
 
-### 2: Menggunakan Tag FQDN yang tersedia pertama kali dalam Aturan Aplikasi
+### 2: Menggunakan Tag FQDN pertama yang tersedia dalam Aturan Aplikasi
 ```
 $fqdnTags = Get-AzFirewallFqdnTag
 New-AzFirewallApplicationRule -Name AR -SourceAddress * -FqdnTag $fqdnTags[0].FqdnTagName
@@ -47,7 +50,7 @@ Contoh ini membuat Aturan Aplikasi Firewall menggunakan Tag FQDN pertama yang te
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,11 +65,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

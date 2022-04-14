@@ -4,11 +4,11 @@ ms.assetid: 08A7556E-C07F-4B3B-B9D6-B241C72860FA
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 695cbf0935e95070d9f8ec050da356db6772bb31
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423574"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772173"
 ---
 # Set-WAPackVM
 
@@ -25,31 +25,31 @@ Set-WAPackVM -VM <VirtualMachine> -VMSizeProfile <HardwareProfile> [-PassThru] [
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell standar.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketikkan `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **Set-WAPackVM** mengubah properti ukuran komputer virtual.
+Cmdlet **Set-WAPackVM** mengubah properti ukuran mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan ukuran untuk mesin virtual
+### Contoh 1: Tentukan ukuran untuk mesin virtual
 ```
 PS C:\> $VirtualMachine = Get-WAPackVM -Name "ContosoV126"
 PS C:\> $SizeProfile = Get-WAPackVMSizeProfile -Name "MediumSizeVM"
 PS C:\> Set-WAPackVM -VM $VirtualMachine -VMSizeProfile $SizeProfile
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoV126 dengan menggunakan cmdlet **Get-WAPackVM,** lalu menyimpan objek tersebut dalam $VirtualMachine variabel.
+Perintah pertama mendapatkan mesin virtual bernama ContosoV126 dengan menggunakan cmdlet **Get-WAPackVM** , lalu menyimpan objek tersebut dalam variabel $VirtualMachine.
 
-Perintah kedua mendapatkan profil ukuran bernama MediumSizeVM dengan menggunakan cmdlet **Get-WAPackVMSizeProfile,** lalu menyimpan objek tersebut dalam $SizeProfile variabel.
+Perintah kedua mendapatkan profil ukuran bernama MediumSizeVM menggunakan cmdlet **Get-WAPackVMSizeProfile** , lalu menyimpan objek tersebut dalam variabel $SizeProfile.
 
-Perintah terakhir menetapkan profil ukuran yang disimpan di $SizeProfile ke mesin virtual yang disimpan di $VirtualMachine.
+Perintah akhir menetapkan profil ukuran yang disimpan di $SizeProfile ke mesin virtual yang disimpan di $VirtualMachine.
 
 ## PARAMETERS
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -65,8 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -VM
 Menentukan mesin virtual.
-Untuk mendapatkan mesin virtual, gunakan cmdlet **Get-WAPackVM.**
+Untuk mendapatkan mesin virtual, gunakan cmdlet **Get-WAPackVM** .
 
 ```yaml
 Type: VirtualMachine
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -VMSizeProfile
-Menentukan profil ukuran untuk komputer virtual sebagai objek **HardwareProfile.**
-Untuk mendapatkan profil ukuran, gunakan cmdlet **Get-WAPackVMSizeProfile.**
+Menentukan profil ukuran untuk mesin virtual sebagai objek **HardwareProfile** .
+Untuk mendapatkan profil ukuran, gunakan cmdlet **Get-WAPackVMSizeProfile** .
 
 ```yaml
 Type: HardwareProfile
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,22 +123,22 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvm](./Get-WAPackVM.md)
+[Get-WAPackVM](./Get-WAPackVM.md)
 
-[New-WAPackvm](./New-WAPackVM.md)
+[WAPackVM Baru](./New-WAPackVM.md)
 
-[Remove-WAPackvm](./Remove-WAPackVM.md)
+[Hapus-WAPackVM](./Remove-WAPackVM.md)
 
-[Restart-WAPackvm](./Restart-WAPackVM.md)
+[Mulai ulang-WAPackVM](./Restart-WAPackVM.md)
 
-[Resume-WAPackvm](./Resume-WAPackVM.md)
+[Resume-WAPackVM](./Resume-WAPackVM.md)
 
-[Start-WAPackvm](./Start-WAPackVM.md)
+[Start-WAPackVM](./Start-WAPackVM.md)
 
-[Stop-WAPackvm](./Stop-WAPackVM.md)
+[Stop-WAPackVM](./Stop-WAPackVM.md)
 
-[Suspend-WAPackvm](./Suspend-WAPackVM.md)
+[Suspensi-WAPackVM](./Suspend-WAPackVM.md)
 
-[Get-WAPackvMSizeProfile](./Get-WAPackVMSizeProfile.md)
+[Get-WAPackVMSizeProfile](./Get-WAPackVMSizeProfile.md)
 
 

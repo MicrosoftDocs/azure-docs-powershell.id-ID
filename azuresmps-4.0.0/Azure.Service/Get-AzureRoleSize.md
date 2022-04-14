@@ -4,11 +4,11 @@ ms.assetid: 2CBF8DEF-954C-4D9F-B495-C2F76550BC79
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 58929cd88749c2388a55d6c38f436d7a3e8bc74b
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415222"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772574"
 ---
 # Get-AzureRoleSize
 
@@ -71,28 +71,28 @@ PS C:\> Get-AzureRoleSize -InstanceSize A7
           OperationStatus            : Succeeded
 ```
 
-Perintah ini mendapatkan informasi ukuran peran untuk ukuran peran tertentu.
+Perintah ini mendapatkan informasi ukuran peran untuk ukuran peran yang ditentukan.
 
-### Contoh 3: Mendapatkan informasi ukuran peran untuk semua mesin virtual di semua layanan Azure
+### Contoh 3: Dapatkan informasi ukuran peran untuk semua mesin virtual di semua layanan Azure
 ```
 PS C:\> Get-AzureService | Get-AzureVM | Get-AzureRoleSize
 ```
 
-Perintah ini mendapatkan informasi ukuran peran untuk semua komputer virtual di semua layanan Azure.
+Perintah ini mendapatkan informasi ukuran peran untuk semua mesin virtual di semua layanan Azure.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -121,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InstanceSize
+### -Instancesize
 Menentukan nama ukuran peran, misalnya: ExtraSmall, Small, Large, ExtraLarge, A5, A6, A7.
 
 ```yaml
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

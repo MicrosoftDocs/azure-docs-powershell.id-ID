@@ -5,27 +5,30 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsWebTest.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Get-AzApplicationInsightsWebTest.md
-ms.openlocfilehash: 05627bdcbd912d661d7138f8ea00dc13e00488d8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 842729dce6180b50be246fb1310e0701c37974b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558002"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141792266"
 ---
 # Get-AzApplicationInsightsWebTest
 
 ## SYNOPSIS
-Dapatkan definisi uji Insights web aplikasi tertentu.
+Dapatkan definisi pengujian web Insights Aplikasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/get-azapplicationinsightswebtest) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzApplicationInsightsWebTest [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzApplicationInsightsWebTest -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -50,11 +53,11 @@ Get-AzApplicationInsightsWebTest -AppInsightsName <String> -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Dapatkan definisi uji Insights web aplikasi tertentu.
+Dapatkan definisi pengujian web Insights Aplikasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1:  List all Application Insights web tests under a subscription
+### Contoh 1: Mencantumkan semua uji web Insights Aplikasi di bawah langganan
 ```powershell
 Get-AzApplicationInsightsWebTest
 ```
@@ -68,9 +71,9 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test
 standard-pwsh01                      westus2  standard    azpwsh-rg-test
 ```
 
-Perintah ini mencantumkan semua uji Insights web di bawah langganan.
+Perintah ini mencantumkan semua uji web aplikasi Insights di bawah langganan.
 
-### Contoh 2:  List all Application Insights web tests under a resource group
+### Contoh 2: Mencantumkan semua uji web Insights Aplikasi di bawah grup sumber daya
 ```powershell
  Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test
 ```
@@ -84,9 +87,9 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test
 standard-pwsh01                      westus2  standard    azpwsh-rg-test
 ```
 
-Perintah ini mencantumkan semua uji Insights web di bawah grup sumber daya.
+Perintah ini mencantumkan semua uji web aplikasi Insights di bawah grup sumber daya.
 
-### Contoh 3:  List all Application Insights web tests under a specific Application Insights
+### Contoh 3: Mencantumkan semua uji web Insights Aplikasi di bawah Insights Aplikasi tertentu
 ```powershell
 Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -AppInsightsName appinsights-portal01
 ```
@@ -100,9 +103,9 @@ standard-portal-appinsights-portal01 westus2  standard    azpwsh-rg-test      Tr
 standard-pwsh01                      westus2  standard    azpwsh-rg-test      True
 ```
 
-Perintah ini mencantumkan semua uji Insights web di bawah aplikasi Insights.
+Perintah ini mencantumkan semua pengujian web Insights Aplikasi di bawah Insights Aplikasi tertentu.
 
-### Contoh 4: Dapatkan definisi uji Insights web tertentu
+### Contoh 4: Dapatkan definisi pengujian web Insights Aplikasi tertentu
 ```powershell
 Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -Name standard-pwsh01
 ```
@@ -112,9 +115,9 @@ Name            Location WebTestKind ResourceGroupName  Enabled
 standard-pwsh01 westus2  standard    azpwsh-rg-test     True
 ```
 
-Perintah ini mendapatkan definisi uji Insights web tertentu.
+Perintah ini mendapatkan definisi pengujian web Insights Aplikasi tertentu.
 
-### Contoh 5: Get a specific Application Insights web test definition by pipeline
+### Contoh 5: Dapatkan definisi pengujian web Insights Aplikasi tertentu menurut pipeline
 ```powershell
 $location01 = New-AzApplicationInsightsWebTestGeolocationObject -Location "emea-nl-ams-azr"
 ```
@@ -135,12 +138,12 @@ Name                    Location WebTestKind ResourceGroupName  Enabled
 standardwebtestpwsh03   westus2  standard    azpwsh-rg-test     True
 ```
 
-Perintah ini mendapatkan definisi uji Insights web tertentu menurut saluran.
+Perintah ini mendapatkan definisi pengujian web Insights Aplikasi tertentu menurut pipeline.
 
 ## PARAMETERS
 
 ### -AppInsightsName
-Nama Sumber daya komponen Insights Aplikasi.
+Nama sumber daya komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.IApplicationInsightsIdentity
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya Application Insights WebTest.
+Nama sumber daya Aplikasi Insights WebTest.
 
 ```yaml
 Type: System.String
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -251,11 +254,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
-  - `[ComponentName <String>]`: Nama Application Insights component resource.
+  - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[WebTestName <String>]`: Nama sumber daya Application Insights WebTest.
+  - `[WebTestName <String>]`: Nama sumber daya Aplikasi Insights WebTest.
 
 ## RELATED LINKS
 

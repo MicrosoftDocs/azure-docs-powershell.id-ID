@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceAdvancedDataSecurityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceAdvancedDataSecurityPolicy.md
 ms.openlocfilehash: ef1f637b1c82c7d3bacfdaa6fc28a44d8393efb4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245825"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141795650"
 ---
 # Get-AzSqlInstanceAdvancedDataSecurityPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140245825"
 Mendapatkan kebijakan Keamanan Data Tingkat Lanjut dari instans terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstanceadvanceddatasecuritypolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceadvanceddatasecuritypolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Cmdlet **Get-AzSqlInstanceAdvancedDataSecurityPolicy** mengambil kebijakan Keama
 
 ## EXAMPLES
 
-### Contoh 1: Gets managed instance Advanced Data Security
+### Contoh 1: Mendapatkan instans terkelola Keamanan Data Tingkat Lanjut
 ```powershell
 PS C:\>  Get-AzSqlInstanceAdvancedDataSecurityPolicy `
             -ResourceGroupName "ResourceGroup01" `
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek contoh terkelola untuk digunakan dengan operasi kebijakan Keamanan Data Tingkat Lanjut
+Objek instans terkelola untuk digunakan dengan operasi kebijakan Keamanan Data Tingkat Lanjut
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-SQL Database instans terkelola Anda.
+SQL Database nama instans yang dikelola.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzSecurityLocation.md
 ms.openlocfilehash: 5d701db044ddd250a1185c24816e33ec3e5aa859
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246887"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141860162"
 ---
 # Get-AzSecurityLocation
 
 ## SYNOPSIS
-Mendapatkan lokasi tempat Pusat Keamanan Azure secara otomatis menyimpan data untuk langganan tertentu
+Mendapatkan lokasi di mana Azure Security Center akan secara otomatis menyimpan data untuk langganan tertentu
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azsecuritylocation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azsecuritylocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-AzSecurityLocation -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Pusat Keamanan Azure secara otomatis akan memutuskan lokasi untuk menyimpan beberapa data Anda.
+Azure Security Center akan secara otomatis memutuskan lokasi untuk menyimpan beberapa data Anda.
 Gunakan cmdlet ini untuk menemukan lokasi tersebut.
 
 ## EXAMPLES
@@ -51,7 +51,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/locations/centralus centralus
 ```
 
-Mendapatkan lokasi tempat Pusat Keamanan Azure menyimpan data keamanan terhitung.
+Mendapatkan lokasi tempat Azure Security Center menyimpan data keamanan terhitung.
 
 ## PARAMETERS
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

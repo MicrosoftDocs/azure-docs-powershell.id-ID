@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/get-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Get-AzAdvisorRecommendation.md
-ms.openlocfilehash: b0f6d53c150a86c605d9b54ebf2462b5a9834b32
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 17587c23372ed29196cfa765303c940e2fc8822d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010664"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141793382"
 ---
 # Get-AzAdvisorRecommendation
 
 ## SYNOPSIS
-Mendapatkan daftar rekomendasi Penasihat Azure.
+Mendapatkan daftar rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.advisor/get-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzAdvisorRecommendation [-ResourceId] <String> [-Category <String>]
 ```
 
 ## DESCRIPTION
-Mendapatkan daftar rekomendasi Azure Advisor. Dapat difilter menurut Kategori, ResourceId, Nama, dll.
+Mendapatkan daftar rekomendasi Azure Advisor. Dapat difilter menurut Kategori, ResourceId, Nama dll.
 
 ## EXAMPLES
 
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya rekomendasi
+Nama ResourceGroup rekomendasi
 
 ```yaml
 Type: String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId rekomendasi
+ResourceId dari rekomendasi
 
 ```yaml
 Type: String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

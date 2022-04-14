@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchTask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchTask.md
-ms.openlocfilehash: 98d6d2137bb58f7203fdb84bfa5648b1654eb8be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a44c7fa043d65a1521e43d71e65da79b421424dc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557772"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141855752"
 ---
 # Enable-AzBatchTask
 
 ## SYNOPSIS
-Mengaktifkan tugas kembali.
+Mengaktifkan kembali tugas.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/enable-azbatchtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Enable-AzBatchTask [-Task] <PSCloudTask> -BatchContext <BatchAccountContext>
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzBatchTask** mengaktifkan tugas kembali.
-Jika tugas telah menghabiskan banyak tugas, cmdlet ini tetap memungkinkannya untuk berjalan.
+Cmdlet **Enable-AzBatchTask** mengaktifkan kembali tugas.
+Jika tugas telah kelelahan dalam jumlah coba lagi, cmdlet ini tetap memungkinkannya untuk dijalankan.
 
 ## EXAMPLES
 
@@ -43,22 +46,22 @@ Jika tugas telah menghabiskan banyak tugas, cmdlet ini tetap memungkinkannya unt
 Enable-AzBatchTask -JobId "Job7" -Id "Task2" -BatchContext $Context
 ```
 
-Perintah ini mengaktifkan ulang tugas Task2 di pekerjaan Job7.
+Perintah ini mengaktifkan kembali tugas Task2 di job Job7.
 
-### Contoh 2: Mengaktifkan tugas kembali dengan menggunakan saluran
+### Contoh 2: Mengaktifkan ulang tugas menggunakan saluran
 ```powershell
 Get-AzBatchTask -JobId "Job8" -Id "Task3" -BatchContext $Context | Enable-AzBatchTask -BatchContext $Context
 ```
 
-Perintah ini mendapatkan tugas Kumpulan yang memiliki ID Task3 dalam pekerjaan yang memiliki ID Job8 dengan menggunakan cmdlet Get-AzBatchTask cmdlet.
-Perintah itu meneruskan tugas itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Perintah mengaktifkan tugas tersebut kembali.
+Perintah ini mendapatkan tugas Batch yang memiliki ID Task3 dalam pekerjaan yang memiliki cmdlet ID Job8 dengan menggunakan Get-AzBatchTask.
+Perintah melewati tugas tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Perintah mengaktifkan kembali tugas tersebut.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -Tugas
 Menentukan tugas yang diaktifkan kembali cmdlet ini.
-Untuk mendapatkan objek **PSCloudTask** , gunakan Get-AzBatchTask cmdlet.
+Untuk mendapatkan objek **PSCloudTask** , gunakan cmdlet Get-AzBatchTask.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.Models.PSCloudTask
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -189,7 +192,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzBatchTask](./New-AzBatchTask.md)
 
-[Remove-AzBatchTask](./Remove-AzBatchTask.md)
+[Hapus-AzBatchTask](./Remove-AzBatchTask.md)
 
 [Set-AzBatchTask](./Set-AzBatchTask.md)
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Remove-AzureRmRecoveryServicesAsrServicesProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Remove-AzureRmRecoveryServicesAsrServicesProvider.md
 ms.openlocfilehash: 4de1861c3db804e7ffd4371f4e35c241843374cc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421221"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775904"
 ---
 # Remove-AzureRmRecoveryServicesAsrServicesProvider
 
 ## SYNOPSIS
-Menghapus/membatalkan pendaftaran penyedia layanan Pemulihan Situs Azure tertentu dari vault layanan pemulihan.
+Menghapus/membatalkan pendaftaran penyedia layanan pemulihan Azure Site Recovery yang ditentukan dari kubah layanan pemulihan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Remove-AzureRmRecoveryServicesAsrServicesProvider -InputObject <ASRRecoveryServi
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmRecoveryServicesAsrServicesProvider** menghapus penyedia layanan pemulihan Situs Azure tertentu dari penyimpanan.
+Cmdlet **Remove-AzureRmRecoveryServicesAsrServicesProvider** menghapus penyedia layanan pemulihan Azure Site Recovery yang ditentukan dari kubah.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Cmdlet **Remove-AzureRmRecoveryServicesAsrServicesProvider** menghapus penyedia 
 PS C:\> $currentJob = Remove-AzureRmRecoveryServicesAsrServicesProvider -ServicesProvider $ServicesProvider
 ```
 
-Memulai penghapusan/pembatalan pendaftaran penyedia layanan Pemulihan Situs Azure tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai penghapusan/pembatasan registrasi penyedia layanan Azure Site Recovery yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -56,8 +56,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk berjalan tanpa menyediakan peringatan tambahan.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa memberikan peringatan tambahan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input ke cmdlet: Objek penyedia layanan pemulihan ASR yang terkait dengan penyedia layanan pemulihan ASR akan dihapus.
+Objek input ke cmdlet: Objek penyedia layanan pemulihan ASR yang terkait dengan penyedia layanan pemulihan ASR yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRRecoveryServicesProvider
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet dijalankan tanpa menjalankan cmdlet tersebut.
+Menunjukkan apa yang akan terjadi jika cmdlet dijalankan tanpa benar-benar menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -125,7 +125,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRJob, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Remove-AzServiceFabricSetting.md
 ms.openlocfilehash: d99c61e6ed39e0e65d22f0ffa72c1e8d604b4e21
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140480793"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141859532"
 ---
 # Remove-AzServiceFabricSetting
 
 ## SYNOPSIS
-Menghapus satu atau Service Fabric kluster dari kluster.
+Hapus satu atau beberapa pengaturan Service Fabric dari kluster.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricsetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/remove-azservicefabricsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String> -Se
  -Parameter <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BatchSettings
+### KumpulanSettings
 ```
 Remove-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String>
  -SettingsSectionDescription <PSSettingsSectionDescription[]> [-DefaultProfile <IAzureContextContainer>]
@@ -36,7 +36,7 @@ Remove-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Gunakan **Remove-AzServiceFabricSetting** untuk Service Fabric pengaturan dari kluster.
+Gunakan **Remove-AzServiceFabricSetting** untuk menghapus pengaturan Service Fabric dari kluster.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ Gunakan **Remove-AzServiceFabricSetting** untuk Service Fabric pengaturan dari k
 PS c:> Remove-AzServiceFabricSetting -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -Section 'EseStore' -Parameter 'MaxCursors'
 ```
 
-Perintah ini akan menghapus pengaturan 'MaxCursors' di bawah bagian 'EseStore'.
+Perintah ini akan menghapus pengaturan 'MaxCursors' di bagian 'EseStore'.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kluster
+Tentukan nama kluster
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Parameter name of the fabric setting
+Nama parameter pengaturan kain
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Bagian
-Section name of the fabric setting
+Nama bagian pengaturan kain
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

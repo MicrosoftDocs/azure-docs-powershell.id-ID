@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayConnectionPacketCapture.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Stop-AzVirtualNetworkGatewayConnectionPacketCapture.md
 ms.openlocfilehash: f57961b0c8aff1a85e1a265aa227d79a91a11b1f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140133549"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141862610"
 ---
 # Stop-AzVirtualNetworkGatewayConnectionPacketCapture
 
 ## SYNOPSIS
-Menghentikan Operasi Penangkapan Paket pada koneksi Gateway Jaringan Virtual
+Menghentikan Operasi Penangkapan Paket pada koneksi gateway Virtual Network
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/stop-azvirtualnetworkgatewayconnectionpacketcapture) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/stop-azvirtualnetworkgatewayconnectionpacketcapture) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Stop-AzVirtualNetworkGatewayConnectionPacketCapture -ResourceId <String> -SasUrl
 ```
 
 ## DESCRIPTION
-Menghentikan Operasi Penangkapan Paket pada koneksi Gateway Jaringan Virtual dan akan mengunggah hasil dari wadah penyimpanan SasUrl tertentu.
+Menghentikan Operasi Penangkapan Paket pada koneksi Gateway Virtual Network dan akan mengunggah hasilnya pada wadah penyimpanan SasUrl yang diberikan.
 
 ## EXAMPLES
 
@@ -104,7 +104,7 @@ Id                :
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek koneksi gateway jaringan virtual tempat pengambilan paket untuk dimulai.
+Objek koneksi gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
 Type: PSVirtualNetworkGatewayConnection
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama koneksi gateway jaringan virtual tempat pengambilan paket akan dimulai.
+Nama koneksi gateway jaringan virtual tempat pengambilan paket dimulai.
 
 ```yaml
 Type: String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari VirtualNetworkGatewayConnection tempat pengambilan paket akan dimulai.
+ID sumber daya Azure dari VirtualNetworkGatewayConnection tempat pengambilan paket dimulai.
 
 ```yaml
 Type: String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SasUrl
-Url SAS untuk menghentikan pengambilan paket di gateway jaringan virtual.
+URL SAS untuk menghentikan perekaman paket di gateway jaringan virtual.
 
 ```yaml
 Type: String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

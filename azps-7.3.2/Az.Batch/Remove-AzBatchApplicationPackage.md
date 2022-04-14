@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/remove-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Remove-AzBatchApplicationPackage.md
-ms.openlocfilehash: c99af9ec8dc599758b1567bcabcc0f0089a43ffd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7f582490f3929885fb7b25207cf8114f10c8ee91
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382473"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141855428"
 ---
 # Remove-AzBatchApplicationPackage
 
 ## SYNOPSIS
 Menghapus catatan paket aplikasi dan file biner.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/remove-azbatchapplicationpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,13 +39,13 @@ Cmdlet **Remove-AzBatchApplicationPackage** menghapus catatan paket aplikasi dan
 Remove-AzBatchApplicationPackage -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationName "litware" -ApplicationVersion "1.0"
 ```
 
-Perintah ini menghapus versi 1.0 aplikasi Litware dari akun ContosoBatchGroup.
-Perintah menghapus catatan paket dan blob yang berisi file biner paket.
+Perintah ini menghapus aplikasi Litware versi 1.0 dari akun ContosoBatchGroup.
+Perintah menghapus catatan paket dan blob yang berisi file biner kemasan.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan tempat cmdlet menghapus paket aplikasi.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini menghapus paket aplikasi.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,16 +134,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchApplication](./Get-AzBatchApplication.md)
+[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchApplication](./New-AzBatchApplication.md)
+[New-AzBatchAplikasi](./New-AzBatchApplication.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
+[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
 
-[Set-AzBatchApplication](./Set-AzBatchApplication.md)
+[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
 
 

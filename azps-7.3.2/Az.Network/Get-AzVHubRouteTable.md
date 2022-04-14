@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvh
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVHubRouteTable.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVHubRouteTable.md
-ms.openlocfilehash: 27666aee42d66391761e6d969212468e333e0fdf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e58a554337bc79d6d0729ca18cbbe51a8a4e1e12
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392787"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786866"
 ---
 # Get-AzVHubRouteTable
 
 ## SYNOPSIS
 Mengambil sumber daya tabel rute hub yang terkait dengan VirtualHub.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvhubroutetable) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Get-AzVHubRouteTable -ResourceId <String> [-AsJob] [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Mendapatkan tabel rute hub tertentu yang terkait dengan hub virtual yang ditentukan.
+Mendapatkan tabel rute hub tertentu yang terkait dengan hub virtual tertentu.
 
 ## EXAMPLES
 
@@ -74,7 +77,7 @@ AssociatedConnections  : []
 PropagatingConnections : []
 ```
 
-Perintah ini berisi tabel rute hub hub virtual.
+Perintah ini mendapatkan tabel rute hub hub hub virtual.
 
 ### Contoh 2
 
@@ -102,12 +105,12 @@ AssociatedConnections  : []
 PropagatingConnections : []
 ```
 
-Perintah ini mencantumkan semua tabel rute hub di VirtualHub yang ditentukan.
+Perintah ini mencantumkan semua tabel rute hub dalam VirtualHub yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek hub virtual induk dari sumber daya ini.
+Objek hub maya induk sumber daya ini.
 
 ```yaml
 Type: PSVirtualHub
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari sumber daya vhubroutetable menjadi Dapatkan.
+Id sumber daya sumber daya vhubroutetable ke Get.
 
 ```yaml
 Type: String
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -259,10 +262,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzvHubRoute](./New-AzVHubRoute.md)
+[New-AzVHubRoute](./New-AzVHubRoute.md)
 
-[New-AzvHubRouteTable](./New-AzVHubRouteTable.md)
+[New-AzVHubRouteTable](./New-AzVHubRouteTable.md)
 
-[Update-azvHubRouteTable](./Update-AzVHubRouteTable.md)
+[Update-AzVHubRouteTable](./Update-AzVHubRouteTable.md)
 
-[Remove-AzvHubRouteTable](./Remove-AzVHubRouteTable.md)
+[Remove-AzVHubRouteTable](./Remove-AzVHubRouteTable.md)

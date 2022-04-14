@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupProtectionPolicy.md
 ms.openlocfilehash: 43f4bd9df1483214ec2df7cde9b35ffb25144f67
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140462119"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141797720"
 ---
 # Get-AzRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan proteksi Cadangan untuk vault.
+Mendapatkan kebijakan perlindungan Pencadangan untuk kubah.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectionpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupprotectionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,12 +49,12 @@ Get-AzRecoveryServicesBackupProtectionPolicy [-WorkloadType] <WorkloadType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupProtectionPolicy** mendapatkan kebijakan proteksi Azure Backup untuk vault.
-Mengatur konteks vault menggunakan cmdlet Set-AzRecoveryServicesVaultContext cmdlet sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Get-AzRecoveryServicesBackupProtectionPolicy** mendapatkan kebijakan perlindungan Azure Backup untuk kubah.
+Mengatur konteks kubah menggunakan cmdlet Set-AzRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kebijakan di vault
+### Contoh 1: Dapatkan semua kebijakan dalam kubah
 ```
 PS C:\> Get-AzRecoveryServicesBackupProtectionPolicy 
 Name                 WorkloadType       BackupManagementType BackupTime                DaysOfWeek   
@@ -64,14 +64,14 @@ NewPolicy            AzureVM            AzureVM              4/23/2016 5:30:00 P
 NewPolicy2           AzureVM            AzureVM              4/24/2016 1:30:00 AM
 ```
 
-Perintah ini menerapkan semua kebijakan proteksi yang dibuat di vault.
+Perintah ini mendapatkan semua kebijakan perlindungan yang dibuat dalam kubah.
 
-### Contoh 2: Mendapatkan kebijakan tertentu
+### Contoh 2: Dapatkan kebijakan tertentu
 ```
 PS C:\> $Pol= Get-AzRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 ```
 
-Perintah ini mendapatkan kebijakan proteksi yang bernama DefaultPolicy, lalu menyimpannya dalam $Pol variabel.
+Perintah ini mendapatkan kebijakan perlindungan bernama DefaultPolicy, lalu menyimpannya dalam variabel $Pol.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

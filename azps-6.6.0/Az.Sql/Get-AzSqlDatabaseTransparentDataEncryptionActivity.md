@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseTransparentDataEncryptionActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseTransparentDataEncryptionActivity.md
 ms.openlocfilehash: 748fc12bd77d27504ca639aac9affd641faf3321
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098109"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141795884"
 ---
 # Get-AzSqlDatabaseTransparentDataEncryptionActivity
 
@@ -19,7 +19,7 @@ ms.locfileid: "140098109"
 Mendapatkan kemajuan pemindaian TDE database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasetransparentdataencryptionactivity) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasetransparentdataencryptionactivity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,14 +30,14 @@ Get-AzSqlDatabaseTransparentDataEncryptionActivity [-ServerName] <String> [-Data
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseTransparentDataEncryptionActivity** mendapatkan kemajuan pemindaian Enkripsi Data Transparan (TDE) dari database SQL Azure.
-Jika tidak ada rentang enkripsi yang berjalan, cmdlet ini akan mengembalikan daftar kosong.
+Cmdlet **Get-AzSqlDatabaseTransparentDataEncryptionActivity** mendapatkan kemajuan pemindaian Enkripsi Data Transparan (TDE) database Azure SQL.
+Jika tidak ada rentang enkripsi yang berjalan, cmdlet ini mengembalikan daftar kosong.
 Untuk informasi selengkapnya, lihat Enkripsi Data Transparan dengan Azure SQL Databasehttps://msdn.microsoft.com/library/dn948096 (https://msdn.microsoft.com/library/dn948096) di Pustaka Jaringan Pengembang Microsoft.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan aktivitas TDE untuk database
+### Contoh 1: Dapatkan aktivitas TDE untuk database
 ```
 PS C:\>Get-AzSqlDatabaseTransparentDataEncryptionActivity -ServerName "server01" -ResourceGroupName "resourcegroup01" -DatabaseName "database01"
 ResourceGroupName : resourcegroup01
@@ -47,12 +47,12 @@ Status            : Encrypting
 PercentComplete   : 3.662109
 ```
 
-Perintah ini mendapatkan aktivitas TDE untuk database yang bernama database01 di server yang bernama server01.
+Perintah ini mendapatkan aktivitas TDE untuk database bernama database01 di server bernama server01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mendapatkan aktivitas enkripsi TDE.
+Menentukan nama database tempat cmdlet ini mendapatkan aktivitas enkripsi TDE.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

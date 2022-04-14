@@ -4,16 +4,16 @@ ms.assetid: 4A0442F9-F420-4A26-9127-4C875090CC12
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c064b739e3eedebfc7a1da5d70922a8cefd213e5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420261"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773204"
 ---
 # Add-AzureInternalLoadBalancer
 
 ## SYNOPSIS
-Menambahkan penyeimbang muat internal ke layanan Azure.
+Menambahkan penyeimbang muatan internal ke layanan Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -41,47 +41,47 @@ Add-AzureInternalLoadBalancer [-InternalLoadBalancerName] <String> [-ServiceName
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureInternalLoadBalancer** menambahkan konfigurasi penyeimbang muat internal ke layanan Azure.
-Untuk jaringan virtual, Anda dapat menentukan subnet atau alamat IP penyeimbang muat internal.
+Cmdlet **Add-AzureInternalLoadBalancer** menambahkan konfigurasi penyeimbang muatan internal ke layanan Azure.
+Untuk jaringan virtual, Anda dapat menentukan subnet atau alamat IP penyeimbang muatan internal.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan penyeimbang muat internal
+### Contoh 1: Menambahkan load balancer internal
 ```
 PS C:\> Add-AzureInternalLoadBalancer -ServiceName "ContosoWebsite01" -InternalLoadBalancerName "ContosoILB"
 ```
 
-Perintah ini menambahkan penyeimbang muat internal bernama ContosoILB ke layanan bernama ContosoWebsite01.
+Perintah ini menambahkan load balancer internal bernama ContosoILB ke layanan bernama ContosoWebsite01.
 
-### Contoh 2: Menambahkan penyeimbang muat internal untuk subnet yang ditentukan
+### Contoh 2: Menambahkan load balancer internal untuk subnet tertentu
 ```
 PS C:\> Add-AzureInternalLoadBalancer -ServiceName "ContosoWebsite01" -InternalLoadBalancerName "ContosoILB" -SubnetName "FrontEndSubnet"
 ```
 
-Perintah ini menambahkan penyeimbang muat internal bernama ContosoILB ke layanan bernama ContosoWebsite01.
+Perintah ini menambahkan load balancer internal bernama ContosoILB ke layanan bernama ContosoWebsite01.
 Perintah menentukan subnet bernama FrontEndSubnet.
 
-### Contoh 3: Menambahkan penyeimbang muat internal untuk subnet dan alamat tertentu
+### Contoh 3: Menambahkan penyeimbang muatan internal untuk subnet dan alamat tertentu
 ```
 PS C:\> Add-AzureInternalLoadBalancer -ServiceName "ContosoWebsite01" -InternalLoadBalancerName "ContosoILB" -SubnetName "FrontEndSubnet" -StaticVNetIPAddress 192.168.4.7
 ```
 
-Perintah ini menambahkan penyeimbang muat internal bernama ContosoILB ke layanan bernama ContosoWebsite01.
+Perintah ini menambahkan load balancer internal bernama ContosoILB ke layanan bernama ContosoWebsite01.
 Perintah menentukan subnet bernama FrontEndSubnet dan alamat statis jaringan virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalLoadBalancerName
-Menentukan nama penyeimbang muat internal yang penambahan cmdlet ini.
+Menentukan nama penyeimbang muatan internal yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan bagi cmdlet ini untuk menambahkan penyeimbang muat internal.
+Menentukan nama layanan tempat cmdlet ini menambahkan penyeimbang muatan internal.
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticVNetIPAddress
-Menentukan alamat IP jaringan virtual untuk penyeimbang muat internal yang penambahan cmdlet ini.
+Menentukan alamat IP jaringan virtual untuk penyeimbang muatan internal yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: IPAddress
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Menentukan nama subnet untuk penyeimbang muat internal yang penambahan cmdlet ini.
+Menentukan nama subnet untuk load balancer internal yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,9 +201,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureInternalLoadBalancer](./Get-AzureInternalLoadBalancer.md)
 
-[New-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
+[Baru-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
 
-[Remove-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
+[Hapus-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
 
 [Set-AzureInternalLoadBalancer](./Set-AzureInternalLoadBalancer.md)
 

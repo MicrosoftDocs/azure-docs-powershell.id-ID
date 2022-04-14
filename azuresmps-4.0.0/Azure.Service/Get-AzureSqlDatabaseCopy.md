@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.SqlDatabase.dll-Help.xml
 ms.assetid: 5AEF7D44-624D-4794-86FF-156E6729BB56
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 26b4df0e9247004a65e061fe3f7842405264e81549d7506586863e539da60f9e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7774e6434122cf6e6d98b9ebb23311631e57a0b1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419235"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772390"
 ---
 # Get-AzureSqlDatabaseCopy
 
 ## SYNOPSIS
-Memeriksa status hubungan salinan.
+Memeriksa status menyalin hubungan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -38,17 +38,17 @@ Get-AzureSqlDatabaseCopy -ServerName <String> -Database <Database> [-PartnerServ
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSqlDatabaseCopy** memeriksa status salah satu atau beberapa hubungan salin aktif.
-Jalankan cmdlet ini setelah Anda menjalankan cmdlet Start-AzureSqlDatabaseCopy Stop-AzureSqlDatabaseCopy cmdlet.
-Anda bisa memeriksa hubungan salinan tertentu, semua hubungan salinan, atau daftar hubungan salinan yang difilter, seperti semua salinan pada server target tertentu.
-Anda dapat menjalankan cmdlet ini di server yang meng host database sumber atau target.
+Cmdlet **Get-AzureSqlDatabaseCopy** memeriksa status satu atau beberapa hubungan salinan aktif.
+Jalankan cmdlet ini setelah Anda menjalankan cmdlet Start-AzureSqlDatabaseCopy atau Stop-AzureSqlDatabaseCopy.
+Anda bisa memeriksa hubungan salinan tertentu, semua salin hubungan, atau daftar hubungan salinan yang difilter, seperti semua salinan di server target tertentu.
+Anda bisa menjalankan cmdlet ini di server yang menjadi host database sumber atau target.
 
 Cmdlet ini sinkron.
-Cmdlet memblokir Azure PowerShell konsol hingga mengembalikan objek status.
+Cmdlet memblokir konsol Azure PowerShell hingga mengembalikan objek status.
 
-Parameter *PartnerServer* *dan PartnerDatabase* bersifat opsional.
-Jika Anda tidak menentukan salah satu parameter, cmdlet ini akan mengembalikan tabel hasil.
-Untuk melihat status hanya untuk database tertentu, tentukan kedua parameter.
+Parameter *PartnerServer* dan *PartnerDatabase* bersifat opsional.
+Jika Anda tidak menentukan salah satu parameter, cmdlet ini mengembalikan tabel hasil.
+Untuk melihat status untuk database tertentu saja, tentukan kedua parameter.
 
 ## EXAMPLES
 
@@ -57,21 +57,21 @@ Untuk melihat status hanya untuk database tertentu, tentukan kedua parameter.
 PS C:\> Get-AzureSqlDatabaseCopy -ServerName "lpqd0zbr8y" -DatabaseName "Orders" -PartnerServer "bk0b8kf658"
 ```
 
-Perintah ini mendapatkan status database bernama Pesanan di server yang bernama lpqd0zbr8y.
+Perintah ini mendapatkan status database bernama Pesanan di server bernama lpqd0zbr8y.
 Parameter *PartnerServer* membatasi perintah ini ke server bk0b8kf658.
 
-### Contoh 2: Mendapatkan status semua salinan di serverDapatkan status semua salinan di server
+### Contoh 2: Dapatkan status semua salinan di serverDapatkan status semua salinan di server
 ```
 PS C:\> Get-AzureSqlDatabaseCopy -ServerName "lpqd0zbr8y"
 ```
 
-Perintah ini mendapatkan status semua salinan aktif di server yang bernama lpqd0zbr8y.
+Perintah ini mendapatkan status semua salinan aktif di server bernama lpqd0zbr8y.
 
 ## PARAMETERS
 
 ### -Database
 Menentukan objek yang mewakili sumber Azure SQL Database.
-Cmdlet ini mendapatkan status salinan database yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan status salinan database yang ditentukan parameter ini.
 
 ```yaml
 Type: Database
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 
 ### -DatabaseCopy
 Menentukan objek yang mewakili database.
-Cmdlet ini mendapatkan status salinan database yang ditentukan oleh parameter ini.
-Parameter ini menerima input saluran.
+Cmdlet ini mendapatkan status salinan database yang ditentukan parameter ini.
+Parameter ini menerima input pipeline.
 
 ```yaml
 Type: DatabaseCopy
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 
 ### -DatabaseName
 Menentukan nama database sumber.
-Cmdlet ini mendapatkan status salinan database yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan status salinan database yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -PartnerDatabase
 Menentukan nama database sekunder.
-Jika database ini tidak ditemukan dalam tampilan sys.dm_database_copies manajemen dinamis, cmdlet ini akan mengembalikan objek status kosong.
+Jika database ini tidak ditemukan dalam tampilan manajemen dinamis sys.dm_database_copies, cmdlet ini mengembalikan objek status kosong.
 
 ```yaml
 Type: String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -PartnerServer
 Menentukan nama server yang menjadi host database target.
-Jika server ini tidak ditemukan dalam tampilan manajemen sys.dm_database_copies dinamis, cmdlet ini akan mengembalikan objek status kosong.
+Jika server ini tidak ditemukan dalam tampilan manajemen dinamis sys.dm_database_copies, cmdlet ini mengembalikan objek status kosong.
 
 ```yaml
 Type: String
@@ -151,8 +151,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,7 +195,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.WindowsAzure.Commands.SqlDatabase.Model.DatabaseCopy
 
 ## CATATAN
-* Autentikasi: Cmdlet ini memerlukan autentikasi berbasis sertifikat. Untuk contoh cara menggunakan autentikasi berbasis sertifikat untuk mengatur langganan saat ini, lihat cmdlet New-AzureSqlDatabaseServerContext cmdlet.
+* Autentikasi: Cmdlet ini memerlukan autentikasi berbasis sertifikat. Untuk contoh cara menggunakan autentikasi berbasis sertifikat untuk mengatur langganan saat ini, lihat cmdlet New-AzureSqlDatabaseServerContext.
 
 ## RELATED LINKS
 

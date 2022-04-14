@@ -4,16 +4,16 @@ ms.assetid: 615D2C5D-AB31-45DB-9535-9B9C8E957322
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: f81b57a585521150745c76b44c8947906c781c8a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772484"
 ---
 # Get-AzureSiteRecoveryNetwork
 
 ## SYNOPSIS
-Mendapatkan informasi tentang jaringan yang dikelola oleh Pemulihan Situs untuk vault saat ini.
+Mendapatkan informasi tentang jaringan yang dikelola oleh Site Recovery untuk kubah saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,7 +24,7 @@ Get-AzureSiteRecoveryNetwork -Server <ASRServer> [-Profile <AzureSMProfile>] [<C
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSiteRecoveryNetwork** mendapatkan informasi tentang jaringan Pemulihan Situs Azure untuk vault Pemulihan Situs saat ini.
+Cmdlet **Get-AzureSiteRecoveryNetwork** mendapatkan informasi tentang jaringan Azure Site Recovery untuk kubah Site Recovery saat ini.
 
 ## EXAMPLES
 
@@ -49,16 +49,16 @@ FabricType          : VMM
 VmNetworkSubnetList : {}
 ```
 
-Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer.**
-Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+Cmdlet perintah pertama mendapatkan server untuk brankas Azure Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer**.
+Perintah menyimpan server Site Recovery dalam variabel array $Servers.
 
-Perintah kedua mendapatkan jaringan pemulihan situs untuk server pertama dalam $Servers larik.
+Perintah kedua mendapatkan jaringan pemulihan situs untuk server pertama dalam array $Servers.
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Server
-Menentukan server Pemulihan Situs.
+Menentukan server Site Recovery.
 
 ```yaml
 Type: ASRServer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

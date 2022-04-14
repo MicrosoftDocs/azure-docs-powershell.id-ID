@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPoolActivity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPoolActivity.md
 ms.openlocfilehash: f5e7455a253c86fe363b72c5d4c0e8ff47b96f56
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428136"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774688"
 ---
 # Get-AzureRmSqlElasticPoolActivity
 
@@ -29,22 +29,22 @@ Get-AzureRmSqlElasticPoolActivity [-ServerName] <String> [-ElasticPoolName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlElasticPoolActivity** mendapatkan status operasi pada kolam elastis untuk suatu Azure SQL Database.
-Anda dapat melihat status pembaruan pembuatan dan konfigurasi pool.
+Cmdlet **Get-AzureRmSqlElasticPoolActivity** mendapatkan status operasi pada kolam elastis untuk Azure SQL Database.
+Anda dapat melihat status pembaruan pembuatan kumpulan dan konfigurasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status operasi untuk pool elastis
+### Contoh 1: Dapatkan status operasi untuk kumpulan elastis
 ```
 PS C:\>Get-AzureRmSqlElasticPoolActivity -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ```
 
-Perintah ini mendapatkan status operasi untuk kolam elastis bernama ElastisPool01.
+Perintah ini mendapatkan status operasi untuk kolam elastis bernama ElasticPool01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat kelompok elastis ditetapkan.
+Menentukan nama grup sumber daya tempat kumpulan elastis ditetapkan.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang berisi kolam elastis.
+Menentukan nama server yang berisi kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,17 +150,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Sql.ElastisPool.Model.AzureSqlElasticPoolActivityModel
+### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolActivityModel
 
 ## CATATAN
 
@@ -172,7 +172,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlElasticPool](./New-AzureRmSqlElasticPool.md)
 
-[Remove-AzureRmSqlElasticPool](./Remove-AzureRmSqlElasticPool.md)
+[Hapus-AzureRmSqlElasticPool](./Remove-AzureRmSqlElasticPool.md)
 
 [Set-AzureRmSqlElasticPool](./Set-AzureRmSqlElasticPool.md)
 

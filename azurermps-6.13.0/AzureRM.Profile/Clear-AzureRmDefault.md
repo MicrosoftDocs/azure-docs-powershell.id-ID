@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.profi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Clear-AzureRmDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Profile/Commands.Profile/help/Clear-AzureRmDefault.md
-ms.openlocfilehash: 667239495feb9dd9957addae3162e300898ec4f9c7edc8108a7bb9b95d5cbbef
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a29bf86b4104fb9a3936daad055da0eab4368690
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851797"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141776165"
 ---
 # Clear-AzureRmDefault
 
 ## SYNOPSIS
-Menghapus pengaturan default yang ditetapkan oleh pengguna dalam konteks saat ini.
+Menghapus default yang diatur oleh pengguna dalam konteks saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Clear-AzureRmDefault [-ResourceGroup] [-PassThru] [-Force] [-Scope <ContextModif
 ```
 
 ## DESCRIPTION
-Cmdlet Clear-AzureRmDefault menghapus pengaturan default oleh pengguna, tergantung pada parameter sakelar yang ditentukan oleh pengguna.
+Cmdlet Clear-AzureRmDefault menghapus default yang diatur oleh pengguna bergantung pada parameter sakelar yang ditentukan oleh pengguna.
 
 ## EXAMPLES
 
@@ -36,19 +36,19 @@ Cmdlet Clear-AzureRmDefault menghapus pengaturan default oleh pengguna, tergantu
 PS C:\> Clear-AzureRmDefault
 ```
 
-Perintah ini menghapus semua pengaturan default oleh pengguna dalam konteks saat ini.
+Perintah ini menghapus semua default yang diatur oleh pengguna dalam konteks saat ini.
 
 ### Contoh 1
 ```
 PS C:\> Clear-AzureRmDefault -ResourceGroup
 ```
 
-Perintah ini menghapus kumpulan grup sumber daya default yang ditetapkan oleh pengguna dalam konteks saat ini.
+Perintah ini menghapus grup sumber daya default yang diatur oleh pengguna dalam konteks saat ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus semua default jika tidak ada default yang ditentukan
+### -Paksa
+Hapus semua default jika tidak ada default yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

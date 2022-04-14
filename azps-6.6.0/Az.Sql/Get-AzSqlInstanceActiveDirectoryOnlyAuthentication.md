@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceActiveDirectoryOnlyAuthentication.md
 ms.openlocfilehash: 1bf536db09f40dfc809c39b53a880850229cadb8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140245843"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141858740"
 ---
 # Get-AzSqlInstanceActiveDirectoryOnlyAuthentication
 
 ## SYNOPSIS
-Mendapatkan autentikasi Azure AD hanya untuk program SQL Terkelola tertentu.
+Hanya mendapatkan autentikasi Azure AD untuk SQL Managed Instance tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstanceactivedirectoryonlyauthentication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceactivedirectoryonlyauthentication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzSqlInstanceActiveDirectoryOnlyAuthentication [-ResourceGroupName] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UseInputObjectParameterSet
+### GunakanInputObjectParameterSet
 ```
 Get-AzSqlInstanceActiveDirectoryOnlyAuthentication -InputObject <AzureSqlManagedInstanceModel>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -41,7 +41,7 @@ Get-AzSqlInstanceActiveDirectoryOnlyAuthentication [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication** hanya mendapatkan Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL dalam langganan saat ini.
+Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication** mendapatkan Azure Active Directory (Azure AD) hanya persyaratan autentikasi untuk Instans Terkelola AzureSQL dalam langganan saat ini.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet **Get-AzSqlInstanceActiveDirectoryOnlyAuthentication** hanya mendapatkan 
 PS C:\>Get-AzSqlInstanceActiveDirectoryOnlyAuthentication -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01"
 ```
 
-Perintah ini hanya Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL bernama ManagedInstance01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
+Perintah ini hanya mendapatkan persyaratan autentikasi Azure Active Directory (Azure AD) untuk Instans Terkelola AzureSQL bernama ManagedInstance01 yang terkait dengan grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek instans terkelola yang akan digunakan.
+Objek instans yang dikelola untuk digunakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans SQL Terkelola Azure tempat Azure Active Directory autentikasi berada.
+Nama Azure SQL Managed Instance hanya autentikasi Azure Active Directory yang ada.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya contoh yang digunakan
+Id sumber daya instans yang akan digunakan
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceActiveDirectoryOnlyAuthentication.Model.AzureSqlInstanceActiveDirectoryOnlyAuthenticationModel
+### Microsoft.Azure.Commands.Sql.InstanceActiveDirectoryOnlyAuthentication.Model.AzureSqlInstanceActiveDirectoryOnlyAuthenticationModel
 
 ## CATATAN
 

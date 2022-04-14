@@ -7,18 +7,18 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Edit-AzWebAppBackupConfiguration.md
 ms.openlocfilehash: ceedc65cbe998e9a8bccebe5e201bbd868cd4384
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140128599"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141793958"
 ---
 # Edit-AzWebAppBackupConfiguration
 
 ## SYNOPSIS
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/edit-azwebappbackupconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/edit-azwebappbackupconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Cmdlet **Edit-AzWebAppBackupConfiguration** mengedit cadangan konfigurasi saat i
 
 ### Contoh 1
 
-Cmdlet Edit-AzWebAppBackupConfiguration baru mengedit cadangan konfigurasi saat ini untuk Azure Web App. (otomatisgenerated)
+Cmdlet Edit-AzWebAppBackupConfiguration mengedit cadangan konfigurasi saat ini untuk Azure Web App. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Edit-AzWebAppBackupConfiguration -FrequencyInterval <Int32> -FrequencyUnit <String> -KeepAtLeastOneBackup -Name IpRule -ResourceGroupName MyResourceGroup -RetentionPeriodInDays <Int32> -StartTime 2016-11-30T22:00:00Z -StorageAccountUrl 'https://storageaccount.file.core.windows.net'
@@ -53,7 +53,7 @@ Edit-AzWebAppBackupConfiguration -FrequencyInterval <Int32> -FrequencyUnit <Stri
 
 ## PARAMETERS
 
-### -Database
+### -Databases
 Database tipe DatabaseBackupSetting[]
 
 ```yaml
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrequencyUnit
-Frequency Unit
+Satuan Frekuensi
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeepAtLeastOneBackup
-Opsi Simpan Setidaknya Satu Cadangan
+Pertahankan Setidaknya Satu Opsi Pencadangan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu Mulai dalam UTC
+StartTime di UTC
 
 ```yaml
 Type: System.DateTime
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountUrl
-Url Akun Storage Baru
+URL Akun Storage
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -246,7 +246,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Management.Automation.SwitchParameter
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ### Microsoft.Azure.Management.WebSites.Models.DatabaseBackupSetting[]
 

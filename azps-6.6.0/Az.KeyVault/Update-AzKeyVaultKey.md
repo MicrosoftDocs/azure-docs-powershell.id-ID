@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Update-AzKeyVaultKey.md
 ms.openlocfilehash: b3428f0af35e1785351368b4571b47a084edde09
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140136933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141866552"
 ---
 # Update-AzKeyVaultKey
 
 ## SYNOPSIS
-Memperbarui atribut kunci di kunci vault.
+Memperbarui atribut kunci dalam kubah kunci.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/update-azkeyvaultkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Update-AzKeyVaultKey [-InputObject] <PSKeyVaultKeyIdentityItem> [[-Version] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzKeyVaultKey** memperbarui atribut kunci yang dapat diedit di vault kunci.
+Cmdlet **Update-AzKeyVaultKey** memperbarui atribut kunci yang dapat diedit dalam kubah kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Ubah kunci untuk mengaktifkannya, serta atur tanggal kedaluwarsa dan tag
+### Contoh 1: Memodifikasi kunci untuk mengaktifkannya, dan mengatur tanggal kedaluwarsa dan tag
 ```powershell
 PS C:\> $Expires = (Get-Date).AddYears(2).ToUniversalTime()
 PS C:\> $Tags = @{'Severity' = 'high'; 'Accounting' = 'true'}
@@ -69,10 +69,10 @@ Tags           : Name        Value
                  Accounting  true
 ```
 
-Perintah pertama membuat objek **DateTime** menggunakan cmdlet **Get-Date** . Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal itu dalam $Expires variabel.
-Untuk informasi selengkapnya, ketik `Get-Help Get-Date`.
+Perintah pertama membuat objek **DateTime** menggunakan cmdlet **Get-Date** . Objek tersebut menentukan waktu dua tahun di masa mendatang. Perintah menyimpan tanggal tersebut dalam variabel $Expires.
+Untuk informasi selengkapnya, ketik .`Get-Help Get-Date`
 Perintah kedua membuat variabel untuk menyimpan nilai tag dengan tingkat keparahan tinggi dan Akuntansi.
-Perintah terakhir mengubah kunci bernama ITSoftware. Perintah mengaktifkan kunci, mengatur waktu kedaluwarsanya ke waktu yang disimpan di $Expires, dan mengatur tag yang disimpan di $Tags.
+Perintah akhir mengubah kunci bernama ITSoftware. Perintah mengaktifkan kunci, mengatur waktu kedaluwarsanya ke waktu yang disimpan di $Expires, dan mengatur tag yang disimpan di $Tags.
 
 ### Contoh 2: Mengubah kunci untuk menghapus semua tag
 ```powershell
@@ -91,7 +91,7 @@ Purge Disabled : False
 Tags           :
 ```
 
-Perintah ini menghapus semua tag untuk versi kunci tertentu bernama ITSoftware.
+Perintah ini menghapus semua tag untuk versi kunci tertentu yang bernama ITSoftware.
 
 ## PARAMETERS
 
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Nilai true mengaktifkan kunci dan nilai false akan menonaktifkan kunci tersebut.
-Jika tidak ditentukan, status diaktifkan/dinonaktifkan yang sudah ada tetap tidak berubah.
+Nilai true memungkinkan kunci dan nilai false akan menonaktifkan kunci.
+Jika tidak ditentukan, status aktif/nonaktif yang sudah ada tetap tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Kedaluwarsa
 Waktu kedaluwarsa kunci dalam waktu UTC.
-Jika tidak ditentukan, waktu kedaluwarsa kunci yang sudah ada tetap tidak berubah.
+Jika tidak ditentukan, waktu kedaluwarsa kunci yang sudah ada tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -HsmName
-Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama HSM. Cmdlet menyusun FQDN dari HSM yang dikelola berdasarkan nama dan lingkungan yang dipilih saat ini.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek utama
+Objek kunci
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVaultKeyIdentityItem
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyOps
-Operasi yang bisa dijalankan dengan kunci.
-Jika tidak ditentukan, operasi kunci yang sudah ada dari kunci tetap tidak berubah.
+Operasi yang dapat dilakukan dengan kunci.
+Jika tidak ditentukan, operasi kunci kunci yang sudah ada dari kunci tetap tidak berubah.
 
 ```yaml
 Type: System.String[]
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama kunci.
-Cmdlet menyusun FQDN kunci dari nama vault, lingkungan yang saat ini dipilih dan nama kunci.
+Cmdlet menyusun FQDN kunci dari nama kubah, lingkungan yang saat ini dipilih, dan nama kunci.
 
 ```yaml
 Type: System.String
@@ -204,9 +204,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NotBefore
+### -TidakBefore
 Waktu UTC sebelum kunci mana yang tidak bisa digunakan.
-Jika tidak ditentukan, atribut NotBefore yang sudah ada dari kunci tetap tidak berubah.
+Jika tidak ditentukan, atribut NotBefore yang sudah ada dari kunci tidak berubah.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, mengembalikan objek bundel tombol yang diperbarui.
+Jika sakelar ini ditentukan, mengembalikan objek bundel kunci yang diperbarui.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 
 ### -Tag
 Hashtable mewakili tag kunci.
-Jika tidak ditentukan, tag kunci yang sudah ada tetap tidak berubah.
+Jika tidak ditentukan, tag kunci yang sudah ada tidak berubah.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -253,8 +253,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -269,8 +269,8 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi utama.
-Cmdlet menyusun FQDN kunci dari nama vault, lingkungan yang saat ini dipilih, nama kunci, dan versi kunci.
+Versi kunci.
+Cmdlet menyusun FQDN kunci dari nama kubah, lingkungan yang saat ini dipilih, nama kunci, dan versi kunci.
 
 ```yaml
 Type: System.String
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

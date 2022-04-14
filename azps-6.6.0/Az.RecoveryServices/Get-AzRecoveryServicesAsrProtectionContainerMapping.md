@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrProtectionContainerMapping.md
 ms.openlocfilehash: 25bcd659dc7214fb86854f5872ee1bd72e32b605
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140462411"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861566"
 ---
 # Get-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
-Mendapatkan pemetaan Wadah Perlindungan Pemulihan Situs Azure.
+Mendapatkan pemetaan Azure Site Recovery Protection Container.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzRecoveryServicesAsrProtectionContainerMapping -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrProtectionContainerMapping** mendapatkan informasi tentang wadah proteksi untuk pemetaan kebijakan replikasi (asosiasi) di dalam vault untuk wadah proteksi ASR yang ditentukan.
+Cmdlet **Get-AzRecoveryServicesAsrProtectionContainerMapping** mendapatkan informasi tentang wadah perlindungan untuk pemetaan kebijakan replikasi(asosiasi) dalam kubah untuk wadah perlindungan ASR yang ditentukan.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzRecoveryServicesAsrProtectionContainerMapping** mendapatkan infor
 PS C:\> $ProtectionContainerMappings = Get-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainer $Container
 ```
 
-Daftar pemetaan wadah proteksi untuk wadah.
+Daftar pemetaan wadah perlindungan untuk kontainer.
 
 ### Contoh 2
 ```
@@ -65,7 +65,7 @@ TargetProtectionContainerFriendlyName : Microsoft Azure
 TargetProtectionContainerId           : Microsoft Azure
 ```
 
-Mendapatkan semua pemetaan wadah proteksi untuk wadah proteksi yang ditentukan.
+Mendapatkan semua pemetaan wadah perlindungan untuk wadah perlindungan yang ditentukan.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pemetaan wadah proteksi untuk mendapatkannya.
+Menentukan nama pemetaan wadah proteksi yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Dapatkan pemetaan wadah proteksi terkait dengan objek wadah proteksi ASR yang ditentukan.
+Dapatkan pemetaan kontainer proteksi yang terkait dengan objek kontainer proteksi ASR yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

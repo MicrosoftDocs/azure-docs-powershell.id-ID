@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlElasticPool.md
 ms.openlocfilehash: e40510745ea7de39df4e15d0b1be7516d0fb33ee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421184"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141774697"
 ---
 # Get-AzureRmSqlElasticPool
 
 ## SYNOPSIS
-Mendapatkan kolam renang elastis dan nilai propertinya dalam Azure SQL Database.
+Mendapatkan kumpulan elastis dan nilai propertinya dalam Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Get-AzureRmSqlElasticPool [[-ElasticPoolName] <String>] [-ServerName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlElasticPool** mendapatkan kolam renang elastis dan nilai propertinya.
-Tentukan nama pool elastis yang sudah ada untuk melihat nilai properti hanya untuk pool tersebut.
+Cmdlet **Get-AzureRmSqlElasticPool** mendapatkan kumpulan elastis dan nilai propertinya.
+Tentukan nama kumpulan elastis yang sudah ada untuk melihat nilai properti hanya untuk kumpulan tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kolam renang elastis
+### Contoh 1: Dapatkan semua kumpulan elastis
 ```
 PS C:\>Get-AzureRmSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/resourcegroup01/providers/Microsoft.Sql/servers/server01/elasticPools/elasticpool01
@@ -65,9 +65,9 @@ StorageMB         : 409600
 Tags              :
 ```
 
-Perintah ini akan mendapatkan semua kolam renang elastis di server bernama Server01.
+Perintah ini mendapatkan semua kumpulan elastis di server bernama Server01.
 
-### Contoh 2: Dapatkan kelompok elastis tertentu
+### Contoh 2: Dapatkan kumpulan elastis tertentu
 ```
 PS C:\>Get-AzureRmSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool27"
 ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/resourcegroup01/providers/Microsoft.Sql/servers/server01/elasticPools/elasticpool01
@@ -85,9 +85,9 @@ StorageMB         : 409600
 Tags              :
 ```
 
-Perintah ini mendapatkan pool elastis bernama ElastisPool0127 di server bernama Server01.
+Perintah ini mendapatkan kumpulan elastis bernama ElasticPool0127 di server bernama Server01.
 
-### Contoh 3: Dapatkan metrik untuk Azure SQL Database Elastis Pool
+### Contoh 3: Dapatkan metrik untuk Azure SQL Elastic Database Pool
 ```
 PS C:\>Get-AzureRmSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01" | Get-Metrics -TimeGrain 0:5:0
 DimensionName  : 
@@ -146,12 +146,12 @@ TimeGrain      : 00:05:00
 Unit           : Percent
 ```
 
-Perintah ini mengembalikan metrik untuk azure SQL database elastis bernama ElastisPool01.
+Perintah ini mengembalikan metrik untuk kumpulan database elastis Azure SQL bernama ElasticPool01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -165,8 +165,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis yang didaurkan cmdlet ini.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi kelompok elastis yang didaurkan cmdlet ini.
+Menentukan nama grup sumber daya yang berisi kumpulan elastis yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang berisi kolam elastis yang didaurkan cmdlet ini.
+Menentukan nama server yang berisi kumpulan elastis yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -219,7 +219,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.elastisPool.Model.AzureSqlElasticPoolModel
+### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
 ## CATATAN
 
@@ -227,7 +227,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlElasticPool](./New-AzureRmSqlElasticPool.md)
 
-[Remove-AzureRmSqlElasticPool](./Remove-AzureRmSqlElasticPool.md)
+[Hapus-AzureRmSqlElasticPool](./Remove-AzureRmSqlElasticPool.md)
 
 [Set-AzureRmSqlElasticPool](./Set-AzureRmSqlElasticPool.md)
 

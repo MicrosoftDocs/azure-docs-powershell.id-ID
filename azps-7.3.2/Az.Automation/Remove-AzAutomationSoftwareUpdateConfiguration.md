@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSoftwareUpdateConfiguration.md
-ms.openlocfilehash: cad1b4965b413d2dd4ca1c621f9410bcaf820e4f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 175fb8ec3c59dffc00bdda857155e0669b5f97a4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550622"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791582"
 ---
 # Remove-AzAutomationSoftwareUpdateConfiguration
 
 ## SYNOPSIS
-Menghapus konfigurasi pembaruan perangkat lunak otomatisasi Azure.
+Menghapus konfigurasi pembaruan perangkat lunak otomatisasi azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationsoftwareupdateconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Remove-AzAutomationSoftwareUpdateConfiguration -SoftwareUpdateConfiguration <Sof
 ```
 
 ## DESCRIPTION
-Cmdlet ini telah menghapus konfigurasi pembaruan perangkat lunak otomatisasi Azure.
+Cmdlet ini menghapus konfigurasi pembaruan perangkat lunak otomatisasi azure.
 
 ## EXAMPLES
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama konfigurasi pembaruan perangkat lunak yang akan dihapus.
+Nama konfigurasi pembaruan perangkat lunak untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-PassThru mengembalikan objek yang mewakili item yang Sedang Anda kerjakan. Secara default, cmdlet ini tidak menghasilkan output apa pun.
+PassThru mengembalikan objek yang mewakili item tempat Anda bekerja. Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfiguration
-Konfigurasi pembaruan perangkat lunak yang akan dihapus.
+Konfigurasi pembaruan perangkat lunak untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateConfiguration
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

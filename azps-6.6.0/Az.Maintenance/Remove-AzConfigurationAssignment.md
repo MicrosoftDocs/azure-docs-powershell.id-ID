@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Remove-AzConfigurationAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maintenance/Maintenance/help/Remove-AzConfigurationAssignment.md
 ms.openlocfilehash: 45ebc2989afb6d9e794caf173acc36d4e48e73ca
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140283379"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141865688"
 ---
 # Remove-AzConfigurationAssignment
 
 ## SYNOPSIS
-Pisahkan konfigurasi untuk sumber daya.
+Batalkan pendaftaran konfigurasi untuk sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maintenance/remove-azconfigurationassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maintenance/remove-azconfigurationassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Remove-AzConfigurationAssignment [-ResourceGroupName] <String> [-ProviderName] <
 ```
 
 ## DESCRIPTION
-Pisahkan konfigurasi untuk sumber daya.
+Batalkan pendaftaran konfigurasi untuk sumber daya.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ This cmdlet will remove the specified resource.  Do you want to continue?
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"):
 ```
 
-Pisahkan konfigurasi untuk sumber daya.
+Batalkan pendaftaran konfigurasi untuk sumber daya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +92,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Hapus paksa tanpa konfirmasi.
 
 ```yaml
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

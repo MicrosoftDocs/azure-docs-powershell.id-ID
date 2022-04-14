@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerCommunicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerCommunicationLink.md
 ms.openlocfilehash: 070a83e5bde86e5d68bd56c9bb236747bd9b31df
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140327489"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141795615"
 ---
 # Get-AzSqlServerCommunicationLink
 
 ## SYNOPSIS
-Mendapatkan link komunikasi untuk transaksi database elastis antar server database.
+Mendapatkan tautan komunikasi untuk transaksi database elastis antar server database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlservercommunicationlink) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlservercommunicationlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,26 +29,26 @@ Get-AzSqlServerCommunicationLink [[-LinkName] <String>] [-ServerName] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlServerCommunicationLink** mendapatkan link komunikasi server-ke-server untuk transaksi database elastis dalam Azure SQL Database.
-Tentukan nama dari link komunikasi server untuk melihat properti untuk link itu.
+Cmdlet **Get-AzSqlServerCommunicationLink** mendapatkan tautan komunikasi server-ke-server untuk transaksi database elastis di Azure SQL Database.
+Tentukan nama link komunikasi server untuk melihat properti untuk link tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua link komunikasi untuk server
+### Contoh 1: Dapatkan semua link komunikasi untuk server
 ```
 PS C:\> Get-AzSqlServerCommunicationLink -ResourceGroupName "ResourceGroup01" -ServerName "ContosoServer17"
 ```
 
 Perintah ini mendapatkan semua tautan komunikasi server-ke-server untuk transaksi database elastis untuk server bernama ContosoServer17.
 
-### Contoh 2: Mendapatkan link komunikasi tertentu untuk server
+### Contoh 2: Mendapatkan tautan komunikasi tertentu untuk server
 ```
 PS C:\> Get-AzSqlServerCommunicationLink -ResourceGroupName "ResourceGroup01" -ServerName "ContosoServer17" -LinkName "Link01"
 ```
 
 Perintah ini mendapatkan tautan komunikasi server-ke-server bernama Link01.
 
-### Contoh 3: Mendapatkan semua link komunikasi untuk server menggunakan pemfilteran
+### Contoh 3: Mendapatkan semua tautan komunikasi untuk server menggunakan pemfilteran
 ```
 PS C:\> Get-AzSqlServerCommunicationLink -ResourceGroupName "ResourceGroup01" -ServerName "ContosoServer17" -LinkName "Link*"
 ```
@@ -58,7 +58,7 @@ Perintah ini mendapatkan semua tautan komunikasi server-ke-server untuk transaks
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -LinkName
-Menentukan nama tautan komunikasi server yang akan dapatkan cmdlet ini.
+Menentukan nama link komunikasi server yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditentukan oleh server yang ditentukan oleh parameter *ServerName* .
+Menentukan nama grup sumber daya tempat server ditentukan oleh parameter *ServerName* .
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 
 ### -ServerName
 Menentukan nama server.
-Server ini berisi tautan komunikasi yang akan didaurkan cmdlet ini.
+Server ini berisi tautan komunikasi yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -158,10 +158,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.ServerCommunicationLink.Model.AzureSqlServerCommunicationLinkModel
+### Microsoft.Azure.Commands.Sql.ServerCommunicationLink.Model.AzureSqlServerCommunicationLinkModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, database, mssql
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS
 
@@ -169,4 +169,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzSqlServerCommunicationLink](./Remove-AzSqlServerCommunicationLink.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
