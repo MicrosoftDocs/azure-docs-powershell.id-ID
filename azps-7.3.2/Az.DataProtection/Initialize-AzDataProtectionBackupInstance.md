@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Initialize-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 6d9efc75a6ab3ce5cc00f06e39137ce5a3475cea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fbbac2466a27da3aa93cf16fb7e35aaf1ed39dc6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788612"
 ---
 # Initialize-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
-Memulai objek Permintaan instans Cadangan untuk mengonfigurasi cadangan
+Menginisialisasi objek Permintaan instans Cadangan untuk mengonfigurasi cadangan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/initialize-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Initialize-AzDataProtectionBackupInstance -DatasourceLocation <String> -Datasour
 ```
 
 ## DESCRIPTION
-Memulai objek Permintaan instans Cadangan untuk mengonfigurasi cadangan
+Menginisialisasi objek Permintaan instans Cadangan untuk mengonfigurasi cadangan
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan objek instance Cadangan untuk Disk Azure
+### Contoh 1: Dapatkan objek instans Cadangan untuk Azure Disk
 ```powershell
 PS C:\> $policy = Get-AzDataProtectionBackupPolicy -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 PS C:\> $AzureDiskId = "/subscriptions/{subscription}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/disks/{diskname}"
@@ -43,11 +46,11 @@ Name Type BackupInstanceName
           sarath-disk3-sarath-disk3-af697a80-e2bc-49f1-af6c-22f6c4d68405
 ```
 
-Perintah Pertama menerapkan semua kebijakan dalam vault tertentu.
-Perintah kedua menyimpan id sumber daya disk Azure dalam $AzureDiskId sumber daya.
+Perintah Pertama mendapatkan semua kebijakan dalam kubah tertentu.
+Perintah kedua menyimpan id sumber daya disk Azure dalam variabel $AzureDiskId.
 Perintah ketiga mengembalikan sumber daya instans cadangan untuk Azure Disk.
 Perintah keempat mengatur bidang grup sumber daya snapshot.
-Objek ini sekarang bisa digunakan untuk mengonfigurasi cadangan untuk disk tertentu.
+Obyek ini kini bisa digunakan untuk mengonfigurasi cadangan untuk diska yang diberikan.
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatasourceLocation
-Lokasi SumberData untuk diproteksi.
+Lokasi Datasource yang akan dilindungi.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatasourceType
-Tipe SumberData
+Tipe Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyId
-Id Kebijakan yang akan diberikan ke SumberData
+Id Kebijakan yang akan disebarkan ke Datasource
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretStoreType
-Tipe penyimpanan rahasia untuk autentikasi sumber data toko rahasia.
+Tipe penyimpanan rahasia untuk autentikasi penyimpanan rahasia sumber data.
 Parameter ini hanya didukung untuk AzureDatabaseForPostgreSQL saat ini.
 
 ```yaml
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretStoreURI
-Rahasia uri untuk autentikasi penyimpanan rahasia sumber data.
+Rahasia uri untuk penyimpanan rahasia autentikasi sumber data.
 Parameter ini hanya didukung untuk AzureDatabaseForPostgreSQL saat ini.
 
 ```yaml
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

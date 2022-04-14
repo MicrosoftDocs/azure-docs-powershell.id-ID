@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryLogChain.md
 ms.openlocfilehash: 2d77659c1379703265abee18f8c31b57859642e7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140462101"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861314"
 ---
 # Get-AzRecoveryServicesBackupRecoveryLogChain
 
 ## SYNOPSIS
-Perintah ini mencantumkan titik mulai dan titik akhir rangkaian log yang tidak terputus dari item cadangan tersebut. Gunakan itu untuk menentukan apakah titik waktu, di mana pengguna ingin DB dipulihkan, valid atau tidak.
+Perintah ini mencantumkan titik mulai dan titik akhir rantai log yang tidak terpotong dari item cadangan yang diberikan. Gunakan untuk menentukan apakah point-in-time, tempat pengguna ingin memulihkan DB, valid atau tidak.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverylogchain) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverylogchain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-AzRecoveryServicesBackupRecoveryLogChain [[-StartDate] <DateTime>] [[-EndDat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupRecoveryLogChain** mendapatkan titik pemulihan rentang waktu dalam waktu untuk item Azure Backup yang dicadangkan.
+Cmdlet **Get-AzRecoveryServicesBackupRecoveryLogChain** mendapatkan titik pemulihan rentang waktu tepat waktu untuk item Azure Backup yang dicadangkan.
 Setelah item dicadangkan, objek **AzRecoveryServicesBackupRecoveryLogChain** memiliki satu atau beberapa rentang waktu pemulihan.
 
 ## EXAMPLES
@@ -49,15 +49,15 @@ PS C:\> $Container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureW
 PS C:\> $RP = Get-AzRecoveryServicesBackupItem -Container $Container -WorkloadType MSSQL | Get-AzRecoveryServicesBackupRecoveryLogChain -StartDate $Startdate.ToUniversalTime() -EndDate $Enddate.ToUniversalTime()
 ```
 
-Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $StartDate variabel.
-Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya dalam $EndDate variabel.
-Perintah ketiga mendapatkan wadah cadangan AzureWorkload, dan menyimpannya di $Container lokal.
-Perintah keempat mendapatkan item cadangan, lalu membagikannya di cmdlet pipa sebagai objek item cadangan.
-Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item di $BackupItem, lalu menyimpannya dalam $RP pemulihan.
+Perintah pertama mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam variabel $StartDate.
+Perintah kedua mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $EndDate.
+Perintah ketiga mendapatkan wadah cadangan AzureWorkload, dan menyimpannya dalam variabel $Container.
+Perintah keempat mendapatkan item cadangan, lalu membagikannya di seluruh cmdlet piped sebagai objek item cadangan.
+Perintah terakhir mendapatkan array rentang waktu titik pemulihan untuk item dalam $BackupItem, lalu menyimpannya dalam variabel $RP.
 
 ### Contoh 2
 
-Perintah ini mencantumkan titik mulai dan titik akhir rangkaian log yang tidak terputus dari item cadangan tersebut. (otomatisgenerated)
+Perintah ini mencantumkan titik mulai dan titik akhir rantai log yang tidak terpotong dari item cadangan yang diberikan. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Waktu akhir rentang Waktu yang titik pemulihannya perlu diambil
+Waktu akhir rentang Waktu yang titik pemulihannya perlu didapatkan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Objek Item Terproteksi yang harus diambil titik pemulihannya
+Objek Item Terproteksi yang titik pemulihannya perlu didapatkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ItemBase
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Waktu mulai rentang Waktu yang perlu diambil titik pemulihannya
+Waktu mulai rentang Waktu yang titik pemulihannya perlu didapatkan
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -126,8 +126,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UseSecirisanryRegion
-Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
+### -UseSecondaryRegion
+Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Stop-AzureRmDataFactoryV2IntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Stop-AzureRmDataFactoryV2IntegrationRuntime.md
 ms.openlocfilehash: ce9ca0f1581bc995f9ea18b3b87169ed979dd92c
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140854134"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885463"
 ---
 # Stop-AzureRmDataFactoryV2IntegrationRuntime
 
 ## SYNOPSIS
-Menghentikan runtime integrasi khusus yang dikelola.
+Menghentikan runtime integrasi khusus terkelola.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,16 +41,16 @@ Stop-AzureRmDataFactoryV2IntegrationRuntime [-Force] [-InputObject] <PSIntegrati
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmDataFactoryV2IntegrationRuntime** menghentikan runtime integrasi khusus terkelola dalam status 'Dimulai', yang dimulai oleh cmdlet Start-AzureRmDataFactoryV2IntegrationRuntime cmdlet. Sumber daya dirilis dan transfer status ke 'Dihentikan'.
+Cmdlet **Stop-AzureRmDataFactoryV2IntegrationRuntime** menghentikan runtime integrasi khusus terkelola dalam status 'Dimulai', yang dimulai oleh cmdlet Start-AzureRmDataFactoryV2IntegrationRuntime. Sumber daya dirilis dan transfer status ke 'Dihentikan'.
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan runtime integrasi terkelola yang berada dalam status 'Dimulai'.
+### Contoh 1: Hentikan runtime integrasi terkelola yang berada dalam status 'Dimulai'.
 ```
 PS C:\> Stop-AzureRmDataFactoryV2IntegrationRuntime -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df' -Name 'test-reserlved-ir'
 ```
 
-Runtime integrasi terkelola 'test-reserlved-ir' berada dalam status 'Dimulai'. Setelah menjalankan Stop-AzureRmDataFactoryV2IntegrationRuntime cmdlet, sumber daya dirilis dan transfer status ke 'Dihentikan'.
+Runtime integrasi terkelola 'test-reserlved-ir' berada dalam status 'Dimulai'. Setelah menjalankan cmdlet Stop-AzureRmDataFactoryV2IntegrationRuntime, sumber daya dirilis dan transfer status ke 'Dihentikan'.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -84,7 +84,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menjalankan cmdlet tanpa meminta konfirmasi.
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -204,7 +204,7 @@ Parameter: InputObject (ByValue)
 ### System.Void
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories, copy, activities, integration runtime
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS
 

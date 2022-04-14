@@ -4,11 +4,11 @@ ms.assetid: 9FCECA04-9855-461C-9470-85312993C4B1
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d348a0da2ff48ab471be2706f149b305c3f5c702
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428029"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772127"
 ---
 # Start-AzureVNetGatewayDiagnostics
 
@@ -27,8 +27,8 @@ Start-AzureVNetGatewayDiagnostics -VNetName <String> -CaptureDurationInSeconds <
 
 ## DESCRIPTION
 Cmdlet **Start-AzureVNetGatewayDiagnostics** memulai sesi diagnostik gateway baru untuk gateway jaringan privat virtual (VPN).
-Hanya satu sesi diagnostik gateway yang bisa dijalankan dalam satu waktu.
-Jika Anda menjalankan cmdlet ini saat sesi diagnostik gateway berjalan, cmdlet ini akan mengembalikan kesalahan.
+Hanya satu sesi diagnostik gateway yang bisa berjalan dalam satu waktu.
+Jika Anda menjalankan cmdlet ini saat sesi diagnostik gateway berjalan, cmdlet ini mengembalikan kesalahan.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerName
-Menentukan nama kontainer Azure.
+Menentukan nama wadah Azure.
 Cmdlet ini menyimpan hasil dalam wadah yang ditentukan parameter ini.
 
 ```yaml
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -StorageContext
 Menentukan konteks penyimpanan Azure.
-Cmdlet ini menyimpan hasil menggunakan konteks penyimpanan yang ditentukan parameter ini.
+Cmdlet ini menyimpan hasil dengan menggunakan konteks penyimpanan yang ditentukan parameter ini.
 
 ```yaml
 Type: AzureStorageContext
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: FAB5E55D-95FC-4545-8BA6-EEFCFDB04200
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a9e80d00d972920c219d9c90d261ff84fd2d25bc33ce438dbd809f42a07e77c3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8d60bf375381fbe1e21fa4d5eb0b77946f2ae62e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419407"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772718"
 ---
 # Get-AzureOSVersion
 
@@ -42,22 +42,22 @@ PS C:\> Get-AzureOSVersion | Format-Table -AutoSize -Property "Family", "FamilyL
 ```
 
 Perintah ini mengambil objek yang berisi daftar semua versi sistem operasi tamu yang tersedia dalam langganan saat ini.
-Perintah itu meneruskannya ke cmdlet **Format-Table** dengan menggunakan operator pipeline.
+Perintah akan meneruskannya ke cmdlet **Format-Tabel** menggunakan operator pipeline.
 Cmdlet tersebut memformatnya sebagai tabel yang memperlihatkan keluarga sistem operasi, label keluarga sistem operasi, dan versi.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

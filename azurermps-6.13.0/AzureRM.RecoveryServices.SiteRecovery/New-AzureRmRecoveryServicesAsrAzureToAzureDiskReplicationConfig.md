@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrAzureToAzureDiskReplicationConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrAzureToAzureDiskReplicationConfig.md
-ms.openlocfilehash: d7d1fea9c4d12de40d9d7e6f7cb0f9be614f32d607f78c981caaaf6e903cc629
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 19ba256176c47b5841b9d124d186f376f0ecce7d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864108"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775999"
 ---
 # New-AzureRmRecoveryServicesAsrAzureToAzureDiskReplicationConfig
 
 ## SYNOPSIS
-Membuat objek pemetaan disk untuk disk mesin virtual Azure untuk direplikasi.
+Membuat objek pemetaan disk untuk disk mesin virtual Azure yang akan direplikasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,7 +37,7 @@ New-AzureRmRecoveryServicesAsrAzureToAzureDiskReplicationConfig [-ManagedDisk] -
 ```
 
 ## DESCRIPTION
-Membuat objek pemetaan disk yang memetakan disk mesin virtual Azure ke akun penyimpanan cache dan akun penyimpanan target (kawasan pemulihan) untuk digunakan mereplikasi disk.
+Membuat objek pemetaan disk yang memetakan disk mesin virtual Azure ke akun penyimpanan cache dan akun penyimpanan target (kawasan pemulihan) yang akan digunakan untuk mereplikasi disk.
 
 ## EXAMPLES
 
@@ -46,7 +46,7 @@ Membuat objek pemetaan disk yang memetakan disk mesin virtual Azure ke akun peny
 PS C:\> New-AzureRmRecoveryServicesAsrAzureToAzureDiskReplicationConfig -VhdUri  $vhdUri -RecoveryAzureStorageAccountId $recoveryStorageAccountId -LogStorageAccountId $logStorageAccountId
 ```
 
-Buat objek pemetaan disk untuk disk mesin virtual Azure yang akan direplikasi. Digunakan selama Azure ke Azure EnableDr dan melindungi ulang operasi.
+Buat objek pemetaan disk untuk disk mesin virtual Azure untuk direplikasi. Digunakan selama Azure ke Azure EnableDr dan operasi proteksi ulang.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Menentukan id disk dari disk yang dikelola.
+Menentukan id diska dari diska terkelola.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDisk
-Menentukan input untuk disk yang dikelola.
+Menentukan input untuk diska terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryReplicaDiskAccountType
-Menentukan tipe akun dari disk terkelola yang direplikasi.
+Menentukan tipe akun disk terkelola yang direplikasi.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTargetDiskAccountType
-Menentukan disk target pemulihan untuk disk yang dikelola direplikasi.
+Menentukan disk target pemulihan untuk disk terkelola yang direplikasi.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdUri
-Tentukan URI VHD dari disk yang terkait dengan pemetaan ini.
+Tentukan URI VHD disk yang terkait dengan pemetaan ini.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,11 +219,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

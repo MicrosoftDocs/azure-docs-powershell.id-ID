@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/enable-azb
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchAutoScale.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Enable-AzBatchAutoScale.md
-ms.openlocfilehash: f29188ad12e38749d89a0662bb4b3871bd7c3230
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 68ddfaf154d7e2bc72713b013f72d5f2f30e70a0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560572"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791312"
 ---
 # Enable-AzBatchAutoScale
 
 ## SYNOPSIS
-Mengaktifkan penskalaan otomatis sebuah kolam renang.
+Memungkinkan penskalaan otomatis kumpulan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/enable-azbatchautoscale) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,24 +30,24 @@ Enable-AzBatchAutoScale [-Id] <String> [[-AutoScaleFormula] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Enable-AzBatchAutoScale** mengaktifkan penskalaan otomatis dari pool tertentu.
+Cmdlet **Enable-AzBatchAutoScale** memungkinkan penskalaan otomatis dari kumpulan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan penskalaan otomatis untuk pool
+### Contoh 1: Aktifkan penskalaan otomatis untuk kumpulan
 ```powershell
 $Formula = 'totalNodes=($CPUPercent.GetSamplePercent(TimeInterval_Minute*0,TimeInterval_Minute*10)<0.7?5:(min($CPUPercent.GetSample(TimeInterval_Minute*0, TimeInterval_Minute*10))>0.8?($CurrentDedicated*1.1):$CurrentDedicated));$TargetDedicated=min(100,totalNodes);';
 Enable-AzBatchAutoScale -Id "MyPool" -AutoScaleFormula $Formula -BatchContext $Context
 ```
 
-Perintah pertama menentukan rumus, lalu menyimpannya ke $Formula variabel.
-Perintah kedua mengaktifkan penskalaan otomatis pada pool bernama MyPool menggunakan rumus di $Formula.
+Perintah pertama menentukan rumus, lalu menyimpannya ke variabel $Formula.
+Perintah kedua memungkinkan penskalaan otomatis pada kumpulan bernama MyPool menggunakan rumus dalam $Formula.
 
 ## PARAMETERS
 
 ### -AutoScaleEvaluationInterval
-Menentukan jumlah waktu (dalam menit) yang berlalu sebelum ukuran pool secara otomatis disesuaikan menurut rumus SkalaOtomatis.
-Nilai default adalah 15 menit, dan nilai minimum adalah 5 menit.
+Menentukan jumlah waktu (dalam menit) yang berlalu sebelum ukuran kumpulan secara otomatis disesuaikan sesuai dengan rumus SkalaOtomatis.
+Nilai defaultnya adalah 15 menit, dan nilai minimumnya adalah 5 menit.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoScaleFormula
-Menentukan rumus untuk jumlah node perhitungan yang diinginkan dalam pool.
+Menentukan rumus untuk jumlah node komputasi yang diinginkan dalam kumpulan.
 
 ```yaml
 Type: System.String
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID objek dari pool yang akan mengaktifkan penskalaan otomatis.
+Menentukan ID objek kumpulan untuk mengaktifkan penskalaan otomatis.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,4 +143,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Test-AzBatchAutoScale](./Test-AzBatchAutoScale.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)

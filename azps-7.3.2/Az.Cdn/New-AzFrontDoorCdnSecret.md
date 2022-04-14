@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnSecret.md
-ms.openlocfilehash: 5c83b2d8db18856f2d5f85b94861d1d0c6e96459
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9e3dda190be69b5b99be9048ffc7d5ad2b01b31f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140188952"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790610"
 ---
 # New-AzFrontDoorCdnSecret
 
 ## SYNOPSIS
-Rahasianya dibuat.
+Menciptakan rahasia.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzFrontDoorCdnSecret [-CertificateAuthority <String>] -ProfileName <String> 
 ```
 
 ## DESCRIPTION
-Rahasianya dibuat.
+Menciptakan rahasia.
 
 ## EXAMPLES
 
@@ -36,7 +39,7 @@ Rahasianya dibuat.
 New-AzFrontDoorCdnSecret -ProfileName $profileName -ResourceGroupName $resourceGroupName -SecretName $secretName -SecretSource $secretSource
 ```
 
-Rahasianya dibuat.
+Menciptakan rahasia.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Nama profil Pintu Depan Azure.
+Nama profil Azure Front Door.
 
 ```yaml
 Type: String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretName
-Nama rahasia Pintu Depan Azure.
+Nama rahasia Azure Front Door.
 
 ```yaml
 Type: String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretSource
-Referensi sumber daya untuk rahasia Azure Key Vault.
+Referensi sumber daya ke azure Key Vault rahasia.
 
 ```yaml
 Type: String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecretVersion
-Versi rahasia untuk digunakan
+Versi rahasia yang akan digunakan
 
 ```yaml
 Type: String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -207,11 +210,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

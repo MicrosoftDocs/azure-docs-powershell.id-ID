@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Move-AzRecoveryServicesBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Move-AzRecoveryServicesBackupRecoveryPoint.md
 ms.openlocfilehash: 84160b8cab8c90b8273c0ee342254d9c5595e3d1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140279113"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861278"
 ---
 # Move-AzRecoveryServicesBackupRecoveryPoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "140279113"
 Memindahkan titik pemulihan dari tingkat sumber ke tingkat tujuan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/move-azrecoveryservicesbackuprecoverypoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/move-azrecoveryservicesbackuprecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Move-AzRecoveryServicesBackupRecoveryPoint [-RecoveryPoint] <RecoveryPointBase>
 ```
 
 ## DESCRIPTION
-Cmdlet **Move-AzRecoveryServicesBackupRecoveryPoint** memindahkan titik pemulihan dari tingkat sumber ke tingkat tujuan. Saat ini hanya tingkatan Sumber yang valid adalah VaultStandard, hanya tingkatan tujuan yang valid adalah VaultArchive.
+Cmdlet **Move-AzRecoveryServicesBackupRecoveryPoint** memindahkan titik pemulihan dari tingkat sumber ke tingkat tujuan. Saat ini hanya tingkat Sumber yang valid adalah VaultStandard, hanya tingkat tujuan yang valid adalah VaultArchive.
 
 ## EXAMPLES
 
-### Contoh 1: Pindahkan titik pemulihan dari VaultStandard tier ke vaultArchive tier
+### Contoh 1: Pindahkan titik pemulihan dari tingkat VaultStandard ke tingkat VaultArchive
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -44,7 +44,7 @@ PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -Item $item[3] -StartDat
 PS C:\> Move-AzRecoveryServicesBackupRecoveryPoint -RecoveryPoint $rp[2] -SourceTier VaultStandard -DestinationTier VaultArchive -VaultId $vault.ID
 ```
 
-Pertama kami mendapatkan vault layanan pemulihan, daftar item cadangan. Lalu, kami mengambil poin pemulihan untuk item cadangan tertentu (dalam $item[3] dalam hal ini) yang ada di tingkat VaultStandard. Kemudian kami memicu pemindahan salah satu poin pemulihan dari daftar rp ke tingkatan VaultArchive.  
+Pertama, kami mendapatkan kubah layanan pemulihan, daftar item cadangan. Lalu, kami mengambil titik pemulihan untuk item cadangan tertentu ($item[3] dalam hal ini) yang ada di tingkat VaultStandard. Lalu kita memicu perpindahan untuk salah satu titik pemulihan dari daftar Rp ke tingkat VaultArchive.  
 
 ## PARAMETERS
 
@@ -64,8 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -DestinationTier
-Tingkat Tujuan untuk pemindahan Titik Pemulihan.
-Saat ini, satu-satunya nilai yang dapat diterima adalah 'VaultArchive'
+Tingkat Tujuan untuk perpindahan Titik Pemulihan.
+Saat ini satu-satunya nilai yang dapat diterima adalah 'VaultArchive'
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointTier
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPoint
-Titik Pemulihan untuk dipindahkan ke arsip
+Titik Pemulihan untuk berpindah ke arsip
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointBase
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceTier
-Tingkat Sumber untuk pemindahan Titik Pemulihan.
+Tingkat Sumber untuk perpindahan Titik Pemulihan.
 Saat ini satu-satunya nilai yang dapat diterima adalah 'VaultStandard'
 
 ```yaml
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

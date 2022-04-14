@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.polic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PolicyInsights/Commands.PolicyInsights/help/Stop-AzureRmPolicyRemediation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PolicyInsights/Commands.PolicyInsights/help/Stop-AzureRmPolicyRemediation.md
-ms.openlocfilehash: 22314444bd31f12f1bfb1bc653c14fa4da4277c827d575c9044a2ebbbd413e73
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6e36b2ce8fb03173bfaab80b68c219873875526c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864171"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141776315"
 ---
 # Stop-AzureRmPolicyRemediation
 
 ## SYNOPSIS
-Membatalkan pemulihan kebijakan dalam proses.
+Membatalkan perbaikan kebijakan yang sedang berlangsung.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,18 +41,18 @@ Stop-AzureRmPolicyRemediation -InputObject <PSRemediation> [-AsJob] [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureRmPolicyRemediation** membatalkan perbaikan kebijakan dalam proses. Penyebaran aktif akan dibatalkan dan tidak ada penyebaran baru yang akan dibuat.
+Cmdlet **Stop-AzureRmPolicyRemediation** membatalkan perbaikan kebijakan yang sedang berlangsung. Penyebaran aktif akan dibatalkan dan tidak ada penyebaran baru yang akan dibuat.
 
 ## EXAMPLES
 
-### Contoh 1: Membatalkan perbaikan kebijakan pada lingkup grup sumber daya
+### Contoh 1: Membatalkan perbaikan kebijakan di lingkup grup sumber daya
 ```
 PS C:\> Stop-AzureRmPolicyRemediation -ResourceGroupName "myRG" -Name "remediation1"
 ```
 
-Perintah ini membatalkan perbaikan yang bernama 'remediation1' di grup sumber daya 'myRG'.
+Perintah ini membatalkan perbaikan bernama 'remediation1' dalam grup sumber daya 'myRG'.
 
-### Contoh 2: Membatalkan perbaikan grup manajemen melalui pemipaan
+### Contoh 2: Membatalkan perbaikan grup manajemen melalui piping
 ```
 PS C:\> $remediation = Get-AzureRmPolicyRemediation -ManagementGroupName "mg1" -Name "remediation1"
 PS C:\> $remediation | Stop-AzureRmPolicyRemediation
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Remediation.
+Objek Remediasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PolicyInsights.Models.Remediation.PSRemediation
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -Lingkup
 Lingkup sumber daya.
-Misalnya
+Misalnya.
 '/subscriptions/{subscriptionId}/resourceGroups/{rgName}'.
 
 ```yaml
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

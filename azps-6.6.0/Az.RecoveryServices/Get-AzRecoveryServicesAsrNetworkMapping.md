@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrNetworkMapping.md
 ms.openlocfilehash: ec0cb290fba2b13bf6876a2ce302ea91a133f2d6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248057"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861530"
 ---
 # Get-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
-Mendapatkan informasi tentang pemetaan jaringan Pemulihan Situs untuk vault saat ini.
+Mendapatkan informasi tentang pemetaan jaringan Site Recovery untuk kubah saat ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrnetworkmapping) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrnetworkmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzRecoveryServicesAsrNetworkMapping [-Name <String>] -PrimaryFabric <ASRFabr
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrNetworkMapping** mendapatkan informasi tentang pemetaan jaringan Pemulihan Situs Azure untuk vault Layanan Pemulihan.
+Cmdlet **Get-AzRecoveryServicesAsrNetworkMapping** mendapatkan informasi tentang pemetaan jaringan Azure Site Recovery untuk kubah Layanan Pemulihan.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzRecoveryServicesAsrNetworkMapping** mendapatkan informasi tentang
 PS C:\> $Networkmappings = Get-AzRecoveryServicesAsrNetworkMapping -Network $Network
 ```
 
-Mendapatkan semua pemetaan jaringan untuk jaringan yang lolos.
+Mendapatkan semua pemetaan jaringan untuk Jaringan yang lolos.
 
 ### Contoh 2
 ```
@@ -52,7 +52,7 @@ PS C:\> $primaryFabric = Get-AzRecoveryServicesAsrFabric -Name xxxx
 PS C:\> $Networkmappings = Get-AzRecoveryServicesAsrNetworkMapping -Name $networkMappingName -PrimaryFabric $primaryFabric
 ```
 
-Gets networks mapping with provided name in specified azure site recovery fabric.
+Mendapatkan pemetaan jaringan dengan nama yang disediakan dalam kain pemulihan situs azure tertentu.
 
 ## PARAMETERS
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama objek pemetaan jaringan ASR yang akan anda dapatkan.
+Nama objek pemetaan jaringan ASR untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Network
-Dapatkan pemetaan jaringan ASR terkait dengan objek ASR jaringan yang ditentukan.
+### -Jaringan
+Dapatkan pemetaan jaringan ASR yang terkait dengan objek ASR jaringan yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRNetwork
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryFabric
-Get the ASR network mappings corresponding to the specified primary fabric object.
+Dapatkan pemetaan jaringan ASR yang sesuai dengan objek kain utama yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

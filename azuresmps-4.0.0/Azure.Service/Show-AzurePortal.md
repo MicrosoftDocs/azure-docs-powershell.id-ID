@@ -4,16 +4,16 @@ ms.assetid: 7ABEC06E-1046-401E-B4A1-902FC3EED867
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a6387f9c9ec0601b663aae155d70526f7281a324
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423573"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772007"
 ---
 # Show-AzurePortal
 
 ## SYNOPSIS
-Tampilkan Portal Manajemen Azure.
+Perlihatkan Portal Manajemen Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,8 +25,8 @@ Show-AzurePortal [-Name <String>] [-Realm <String>] [-Environment <String>] [-Pr
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Show-AzurePortal** memperlihatkan Portal Manajemen Azure.
 
@@ -37,7 +37,7 @@ Cmdlet **Show-AzurePortal** memperlihatkan Portal Manajemen Azure.
 PS C:\> Show-AzurePortal -Name mySite
 ```
 
-Contoh ini membuka browser di portal Azure, yang memperlihatkan informasi tentang situs web bernama Situs saya.
+Contoh ini membuka browser di portal Azure, memperlihatkan informasi tentang situs web bernama situs saya.
 
 ## PARAMETERS
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama situs web untuk diperlihatkan di portal.
+Menentukan nama situs web untuk ditampilkan di portal.
 
 ```yaml
 Type: String
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -111,6 +111,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Show-AzureWebsite](./Show-AzureWebsite.md)
+[Tampilkan-AzureSitus Web](./Show-AzureWebsite.md)
 
 

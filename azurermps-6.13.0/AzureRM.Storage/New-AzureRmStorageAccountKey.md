@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/New-AzureRmStorageAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/New-AzureRmStorageAccountKey.md
 ms.openlocfilehash: e44ccbaae730554db35610ff1084e9740e873e53
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427548"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773716"
 ---
 # New-AzureRmStorageAccountKey
 
 ## SYNOPSIS
-Meregenerasi kunci penyimpanan untuk Azure Storage tersebut.
+Meregenerasi kunci penyimpanan untuk akun Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,16 +28,16 @@ New-AzureRmStorageAccountKey [-ResourceGroupName] <String> [-Name] <String> [-Ke
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmStorageAccountKey** meregenerasi kunci penyimpanan untuk Azure Storage tersebut.
+Cmdlet **New-AzureRmStorageAccountKey** meregenerasi kunci penyimpanan untuk akun Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci penyimpanan
+### Contoh 1: Meregenerasi kunci penyimpanan
 ```
 PS C:\>New-AzureRmStorageKey -ResourceGroupName "MyResourceGroup" -Name "mystorageaccount" -KeyName "key1"
 ```
 
-Perintah ini meregenerasi kunci penyimpanan untuk akun Storage tertentu.
+Perintah ini meregenerasi kunci penyimpanan untuk akun Storage yang ditentukan.
 
 ## PARAMETERS
 
@@ -57,10 +57,10 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Menentukan kunci mana yang harus digenerasi.
+Menentukan kunci mana yang akan diregenerasi.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - tombol1
-- tombol2
+- key2
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage di mana untuk meregenerasi kunci penyimpanan.
+Menentukan nama akun Storage untuk meregenerasi kunci penyimpanan.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Storage tersebut.
+Menentukan nama grup sumber daya yang berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

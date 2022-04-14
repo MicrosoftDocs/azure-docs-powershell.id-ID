@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Set-AzAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/Set-AzAnalysisServicesServer.md
 ms.openlocfilehash: e8e7cfab2b4c6b4f7dc7f6b71439cd1d88ca1b3d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139946041"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809276"
 ---
 # Set-AzAnalysisServicesServer
 
@@ -18,7 +18,7 @@ ms.locfileid: "139946041"
 Mengubah contoh server Analysis Services
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.analysisservices/set-azanalysisservicesserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/set-azanalysisservicesserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Set-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>] [[
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DisableBackup
+### Non-fungsikanBackup
 ```
 Set-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>] [[-Sku] <String>]
  [[-Tag] <Hashtable>] [[-Administrator] <String>] [-PassThru] [-DisableBackup] [-ReadonlyReplicaCount <Int32>]
@@ -39,7 +39,7 @@ Set-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>] [[
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DisassociateGateway
+### DisasociateGateway
 ```
 Set-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>] [[-Sku] <String>]
  [[-Tag] <Hashtable>] [[-Administrator] <String>] [-PassThru] [-ReadonlyReplicaCount <Int32>]
@@ -48,7 +48,7 @@ Set-AzAnalysisServicesServer [-Name] <String> [[-ResourceGroupName] <String>] [[
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzAnalysisServicesServer cmdlet mengubah instans server Analysis Services
+Cmdlet Set-AzAnalysisServicesServer mengubah contoh server Analysis Services
 
 ## EXAMPLES
 
@@ -57,13 +57,13 @@ Cmdlet Set-AzAnalysisServicesServer cmdlet mengubah instans server Analysis Serv
 PS C:\> Set-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup" -Tag "key1:value1,key2:value2" -Administrator "testuser1@contoso.com"
 ```
 
-Mengubah server bernama testserver dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 dan key2:value2 serta administrator untuk testuser1@contoso.com
+Mengubah server yang bernama testserver dalam grup uji grup sumber daya untuk mengatur tag sebagai key1:value1 dan key2:value2 dan administrator menjadi testuser1@contoso.com
 
 ## PARAMETERS
 
 ### -Administrator
-String yang mewakili daftar pengguna atau grup yang dipisahkan koma yang akan diatur sebagai administrator di server.
-Pengguna atau grup harus ditentukan format UPN misalnya user@contoso.com atau groups@contoso.com
+String yang mewakili daftar pengguna atau grup yang dipisahkan koma untuk diatur sebagai administrator di server.
+Pengguna atau grup perlu ditentukan format UPN misalnya user@contoso.com atau groups@contoso.com
 
 ```yaml
 Type: System.String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupBlobContainerUri
-Uri wadah blob untuk mencadangkan server Analysis Services
+Wadah blob Uri untuk mencadangkan server Analysis Services
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultConnectionMode
-Mode koneksi default dari server layanan Analisis
+Mode koneksi default server layanan Analisis
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -123,9 +123,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisableBackup
+### -Non-fungsikanBackup
 Sakelar untuk menonaktifkan wadah blob cadangan.
-Untuk mengaktifkan kembali wadah blob cadangan, harap sediakan wadah blob cadangan Uri sebagai -BackupBlobContainerUri.
+Untuk mengaktifkan kembali kontainer blob cadangan, harap sediakan kontainer blob cadangan Uri sebagai -BackupBlobContainerUri.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -DisassociateGateway
+### -DisasociateGateway
 Memisahkan sumber daya Gateway dari server Analisis
 
 ```yaml
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallConfig
-Konfigurasi firewall dari server Analisis
+Konfigurasi firewall server Analisis
 
 ```yaml
 Type: Microsoft.Azure.Commands.AnalysisServices.Models.PsAzureAnalysisServicesFirewallConfig
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyReplicaCount
-Baca hanya replika jumlah server layanan Analisis
+Hanya membaca hitungan replika server layanan Analisis
 
 ```yaml
 Type: System.Int32
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat server dimiliki
+Nama grup sumber daya Azure tempat server berada
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 
 ### -Sku
 Nama Sku untuk server.
-Nilai yang didukung adalah 'S0', 'S1', 'S2', 'S4', 'S8', 'S9', 'S8v2', 'S9v2' untuk tingkat Standar; 'B1', 'B2' untuk Tingkat dasar dan 'D1' untuk Tingkat pengembangan.
+Nilai yang didukung adalah 'S0', 'S1', 'S2', 'S4', 'S8', 'S9', 'S8v2', 'S9v2' untuk tingkat Standar; 'B1', 'B2' untuk tingkat Dasar dan 'D1' untuk tingkat Pengembangan.
 
 ```yaml
 Type: System.String
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

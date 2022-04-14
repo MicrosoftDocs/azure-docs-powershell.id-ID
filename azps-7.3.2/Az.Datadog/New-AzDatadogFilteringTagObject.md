@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.Datadog/new-AzDa
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogFilteringTagObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Datadog/help/New-AzDatadogFilteringTagObject.md
-ms.openlocfilehash: db5296c661161355d5c81e2ccbf49ea55d56c47f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ce7abf700731a3f217ff3892a5dd5c16847c9a7d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140187287"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141894176"
 ---
 # New-AzDatadogFilteringTagObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk FilteringTag
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datadog/new-azdatadogfilteringtagobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Perintah ini Membuat objek dalam memori untuk FilteringTag.
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan yang valid untuk tag pemfilteran.
-Pengecualian akan diprioritaskan atas pencakusan.
+Tindakan valid untuk tag pemfilteran.
+Pengecualian lebih diprioritaskan daripada penyertaan.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.TagAction
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

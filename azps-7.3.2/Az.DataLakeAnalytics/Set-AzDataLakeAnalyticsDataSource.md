@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: 779317e1188f02e5721826885f1a1f57b001f35b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 44bc0294bf09aefd437f9b50599056ce0c52e7b4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140200951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895040"
 ---
 # Set-AzDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
-Mengubah detail sumber data akun Analitik Danau Data.
+Mengubah detail sumber data akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Set-AzDataLakeAnalyticsDataSource [-Account] <String> [-Blob] <String> [-AccessK
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeAnalyticsDataSource** mengubah detail sumber data dari akun Azure Data Lake Analytics.
+Cmdlet **Set-AzDataLakeAnalyticsDataSource** mengubah detail sumber data akun azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ Cmdlet **Set-AzDataLakeAnalyticsDataSource** mengubah detail sumber data dari ak
 PS C:\>Set-AzDataLakeAnalyticsDataSource -Account "ContosoAdlAccount" -Blob "contosowasb" -AccessKey "...newaccesskey..."
 ```
 
-Perintah ini akan mengubah kunci akses yang disimpan untuk sumber data Storage Azure Blob.
+Perintah ini mengubah kunci akses yang disimpan untuk sumber data Azure Blob Storage.
 
 ## PARAMETERS
 
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blob
-Menentukan nama sumber data Storage Azure Blob.
+Menentukan nama sumber data Azure Blob Storage.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari akun Analitik Danau Data.
+Menentukan nama grup sumber daya akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

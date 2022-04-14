@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2DataFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryV2DataFlow.md
 ms.openlocfilehash: 4d0644bbb2861a67dcc9ba25009cb3c0229872d4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077949"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141805100"
 ---
 # Get-AzDataFactoryV2DataFlow
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aliran data di Data Factory.
+Mendapatkan informasi tentang alur data di Pabrik Data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2dataflow) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactoryv2dataflow) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,12 +41,12 @@ Get-AzDataFactoryV2DataFlow [-ResourceId] <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDataFactoryV2DataFlow mendapatkan informasi tentang aliran data di Azure Data Factory.
-Jika Anda menentukan nama aliran data, cmdlet ini mendapatkan informasi tentang aliran data tersebut.
-Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua aliran data di pabrik data.
+Cmdlet Get-AzDataFactoryV2DataFlow mendapatkan informasi tentang aliran data dalam Azure Data Factory.
+Jika Anda menentukan nama alur data, cmdlet ini akan mendapatkan informasi tentang alur data tersebut.
+Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua alur data di pabrik data.
 
 ## EXAMPLES
-### Contoh 1: Mendapatkan informasi tentang semua aliran data
+### Contoh 1: Dapatkan informasi tentang semua alur data
 ```powershell
 PS C:\> Get-AzDataFactoryV2DataFlow -ResourceGroupName "ADF" -DataFactoryName "WikiADF"
 
@@ -57,7 +57,7 @@ dataflow1                      WikiADF               adf Microsoft.Azure.Managem
 dataflow3                      WikiADF               adf Microsoft.Azure.Management.DataFactory.Models.MappingDataFlow
 ```
 
-Perintah ini mendapatkan informasi tentang semua aliran data di pabrik data yang bernama WikiADF.
+Perintah ini mendapatkan informasi tentang semua alur data di pabrik data bernama WikiADF.
 
 ### Contoh 2: Mendapatkan informasi tentang alur data tertentu
 ```powershell
@@ -68,7 +68,7 @@ DataFlowName           DataFactoryName ResourceGroupName                        
 TaxiDemo1                      WikiADF               adf Microsoft.Azure.Management.DataFactory.Models.MappingDataFlow
 ```
 
-Perintah ini mendapatkan informasi tentang aliran data yang bernama alur data1 di pabrik data yang bernama WikiADF.
+Perintah ini mendapatkan informasi tentang alur data bernama alur data1 di pabrik data bernama WikiADF.
 
 ## PARAMETERS
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,7 +176,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlow
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

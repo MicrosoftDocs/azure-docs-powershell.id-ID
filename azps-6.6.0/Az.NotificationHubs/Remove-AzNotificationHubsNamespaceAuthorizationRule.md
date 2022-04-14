@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubsNamespaceAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NotificationHubs/NotificationHubs/help/Remove-AzNotificationHubsNamespaceAuthorizationRule.md
 ms.openlocfilehash: 1f6db8d326a1f7c3ab1b01ceff47cffa243a22c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139933963"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141862485"
 ---
 # Remove-AzNotificationHubsNamespaceAuthorizationRule
 
@@ -19,7 +19,7 @@ ms.locfileid: "139933963"
 Menghapus aturan otorisasi dari ruang nama hub pemberitahuan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhubsnamespaceauthorizationrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.notificationhubs/remove-aznotificationhubsnamespaceauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,14 +30,14 @@ Remove-AzNotificationHubsNamespaceAuthorizationRule [-ResourceGroup] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzNotificationHubsNamespaceAuthorizationRule** menghapus aturan otorisasi Shared Access Signature (SAS) dari ruang nama hub pemberitahuan.
+Cmdlet **Remove-AzNotificationHubsNamespaceAuthorizationRule** menghapus aturan otorisasi Tanda Tangan Akses Bersama (SAS) dari ruang nama hub pemberitahuan.
 Aturan otorisasi mengelola akses ke ruang nama.
-Ini dilakukan melalui pembuatan link, sebagai URI, berdasarkan pada tingkat izin yang berbeda.
+Hal ini dilakukan melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
 Tingkat izin bisa dari yang berikut ini: 
-- Dengarkan
-- Kirim
+- Mendengarkan
+- Mengirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
-Misalnya, klien yang diberikan izin Dengarkan diarahkan ke URI untuk izin tersebut.
+Misalnya, klien yang diberi izin Dengar diarahkan ke URI untuk izin tersebut.
 Menghapus aturan otorisasi juga menghapus izin pengguna terkait.
 
 ## EXAMPLES
@@ -47,8 +47,8 @@ Menghapus aturan otorisasi juga menghapus izin pengguna terkait.
 PS C:\>Remove-AzNotificationHubNamespaceAuthorizationRule -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup" -AuthorizationRule "ListenRule"
 ```
 
-Perintah ini menghapus aturan otorisasi yang bernama ListenRule dari ruang nama contosoNamespace.
-Saat Anda menjalankan perintah ini Anda harus menentukan grup sumber daya yang diberi ruang nama.
+Perintah ini menghapus aturan otorisasi bernama ListenRule dari ruang nama bernama ContosoNamespace.
+Ketika menjalankan perintah ini, Anda harus menentukan grup sumber daya tempat ruang nama ditetapkan.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -82,8 +82,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroup
 Menentukan grup sumber daya tempat ruang nama ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

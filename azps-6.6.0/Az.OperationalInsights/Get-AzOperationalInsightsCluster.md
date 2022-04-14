@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsCluster.md
 ms.openlocfilehash: c61be3e882846407ed7f3c15c600c218600d30c2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140463344"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141862448"
 ---
 # Get-AzOperationalInsightsCluster
 
 ## SYNOPSIS
-Dapatkan atau daftar kluster
+Mendapatkan atau mencantumkan kluster
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightscluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzOperationalInsightsCluster [[-ResourceGroupName] <String>] [[-ClusterName]
 ```
 
 ## DESCRIPTION
-Dapatkan atau pisahkan kluster daftar, kluster daftar di bawah grup sumber daya ketika "-ClusterName" tidak tersedia, kluster daftar di bawah langganan ketika "-ClusterName" dan "ResourceGroupName" tidak disediakan.
+Dapatkan atau daftar kluster, daftar kluster di bawah grup sumber daya ketika "-ClusterName" tidak disediakan, daftar kluster di bawah langganan ketika "-ClusterName" dan "ResourceGroupName" tidak disediakan.
 
 ## EXAMPLES
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

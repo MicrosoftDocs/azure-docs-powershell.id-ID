@@ -4,16 +4,16 @@ ms.assetid: 0A1FD05F-6573-46D8-8217-C7EA432F6742
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: cd4bb8987331f13910c9f283cfc505d685f4083f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422064"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772137"
 ---
 # Remove-AzureSiteRecoveryStorageMapping
 
 ## SYNOPSIS
-Menghapus pemetaan Storage pemetaan objek untuk vault Pemulihan Situs.
+Menghapus pemetaan objek Storage untuk kubah Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Remove-AzureSiteRecoveryStorageMapping -StorageMapping <ASRStorageMapping> [-Pro
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureSiteRecoveryStorageMapping** menghapus pemetaan objek Storage untuk vault Pemulihan Situs Azure saat ini.
+Cmdlet **Remove-AzureSiteRecoveryStorageMapping** menghapus pemetaan objek Storage untuk kubah Azure Site Recovery saat ini.
 
 ## EXAMPLES
 
@@ -37,20 +37,20 @@ PS C:\> Remove-AzureSiteRecoveryStorageMapping -StorageMapping $StorageMapping
 Get-AzureSiteRecoveryServerGet-AzureSiteRecoveryStorageMappingNew-AzureSiteRecoveryStorageMapping
 ```
 
-Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer.**
-Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+Cmdlet perintah pertama mendapatkan server untuk brankas Azure Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer**.
+Perintah menyimpan server Site Recovery dalam variabel array $Servers.
 
-Perintah kedua memetakan antara dua Storage baru, lalu menyimpannya di $StorageMapping variabel.
-Perintah menentukan server utama untuk pemetaan jaringan sebagai elemen pertama dalam $Servers.
-Perintah menentukan server untuk jaringan pemulihan sebagai elemen kedua dari $Servers.
+Perintah kedua mendapatkan pemetaan antara dua objek Storage, lalu menyimpannya dalam variabel $StorageMapping.
+Perintah menentukan server utama untuk pemetaan jaringan sebagai elemen pertama $Servers.
+Perintah menentukan server untuk jaringan pemulihan sebagai elemen kedua $Servers.
 
-Perintah terakhir menghapus pemetaan pada $StorageMapping.
+Perintah akhir menghapus pemetaan dalam $StorageMapping.
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -StorageMapping
 Menentukan pemetaan jaringan.
-Untuk mendapatkan **ASRStorageMapping,** gunakan cmdlet **Get-AzureSiteRecoveryStorage.**
+Untuk mendapatkan **ASRStorageMapping**, gunakan cmdlet **Get-AzureSiteRecoveryStorage** .
 
 ```yaml
 Type: ASRStorageMapping
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

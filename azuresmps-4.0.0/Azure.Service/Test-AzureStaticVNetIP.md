@@ -4,16 +4,16 @@ ms.assetid: 4E059EF1-740C-4AEB-AF41-BF6003BE15F2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: bf0fb8f94e075e7dc5b3bf6acd0f7aec4de7b11b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425065"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141771656"
 ---
 # Test-AzureStaticVNetIP
 
 ## SYNOPSIS
-Menguji ketersediaan alamat IP jaringan virtual statis, dan mendapatkan daftar saran jika alamat yang diku kueri tidak tersedia.
+Menguji ketersediaan alamat IP jaringan virtual statis, dan mendapatkan daftar saran jika alamat yang dikueri tidak tersedia.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Test-AzureStaticVNetIP [-VNetName] <String> [-IPAddress] <String> [-Profile <Azu
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzureStaticVNetIP** menguji ketersediaan alamat IP jaringan virtual statis, dan mendapatkan daftar saran jika alamat yang dikuerari tidak tersedia.
+Cmdlet **Test-AzureStaticVNetIP** menguji ketersediaan alamat IP jaringan virtual statis, dan mendapatkan daftar saran jika alamat yang dikueri tidak tersedia.
 
 ## EXAMPLES
 
@@ -37,16 +37,16 @@ Cmdlet **Test-AzureStaticVNetIP** menguji ketersediaan alamat IP jaringan virtua
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -91,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

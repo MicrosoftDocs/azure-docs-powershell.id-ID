@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceDiagnosticsExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceDiagnosticsExtension.md
-ms.openlocfilehash: 25f5b75eba07e4eba011f1f92bc66f960b9d349a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4039c7b1fb37e1d1008ad7e4dc7cf8d4bc0d0791
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790286"
 ---
 # New-AzCloudServiceDiagnosticsExtension
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi Diagnostik
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudservicediagnosticsextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,13 +41,13 @@ $configFile = "<WAD configuration file path>"
 $extension = New-AzCloudServiceDiagnosticsExtension -Name "WADExtension" -ResourceGroupName "ContosOrg" -CloudServiceName "ContosCS" -StorageAccountName "ContosSA" -StorageAccountKey $storageAccountKey[0].Value -DiagnosticsConfigurationPath $configFile -TypeHandlerVersion "1.5" -AutoUpgradeMinorVersion $true
 ```
 
-Perintah ini akan membuat objek ekstensi diagnostik yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek ekstensi diagnostik yang digunakan untuk membuat atau memperbarui layanan awan.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
 
 ### -AutoUpgradeMinorVersion
-Peningkatan otomatis versi minor.
+Pemutakhiran otomatis versi minor.
 
 ```yaml
 Type: System.Boolean
@@ -74,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticsConfigurationPath
-Menentukan konfigurasi untuk Diagnostik Azure.
-Anda dapat mengunduh skema menggunakan perintah berikut: (Get-AzureServiceAvailableExtension -ExtensionName 'PaaSDiagnostics' -ProviderNamespace 'Microsoft.Azure.Diagnostics'). PublicConfigurationSchema | Out-File -Encoding utf8 -FilePath 'Config.xsd'
+Menentukan konfigurasi untuk Azure Diagnostics.
+Anda dapat mengunduh skema menggunakan perintah berikut: (Get-AzureServiceAvailableExtension -ExtensionName 'PaaSDiagnostics' -ProviderNamespace 'Microsoft.Azure.Diagnostics'). PublicConfigurationSchema | Out-File -Encoding utf8 -FilePath 'WadConfig.xsd'
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Storage Bawah.
+Storage Kunci Akun.
 
 ```yaml
 Type: System.String
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Langganan
-Langganan.
+Berlangganan.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

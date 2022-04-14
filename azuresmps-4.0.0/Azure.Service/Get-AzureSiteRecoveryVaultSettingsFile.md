@@ -4,16 +4,16 @@ ms.assetid: AFAA1BDF-3F6A-437A-ADC2-C5EBD970F57D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 777a1a6063eb0d318594aaaf9c1280bdc95333ee
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415664"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772448"
 ---
 # Get-AzureSiteRecoveryVaultSettingsFile
 
 ## SYNOPSIS
-Mendapatkan file pengaturan vault Pemulihan Situs.
+Mendapatkan file pengaturan kubah Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -32,11 +32,11 @@ Get-AzureSiteRecoveryVaultSettingsFile -Vault <ASRVault> [-Site <ASRSite>] [-Pro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSiteRecoveryVaultSettingsFile** mendapatkan file pengaturan untuk vault Pemulihan Situs Azure.
+Cmdlet **Get-AzureSiteRecoveryVaultSettingsFile** mendapatkan file pengaturan untuk brankas Azure Site Recovery.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan file pengaturan untuk vault
+### Contoh 1: Dapatkan file pengaturan untuk kubah
 ```
 PS C:\> $Vault = Get-AzureSiteRecoveryVault -Name "ContosoVault"
 PS C:\> Get-AzureSiteRecoveryVaultSettingsFile -Vault $Vault
@@ -45,15 +45,15 @@ FilePath
 C:\Users\ContosoAdmin\ContosoVault_2015-02-02T05-39-23.VaultCredentials
 ```
 
-Perintah pertama mendapatkan penyimpanan Pemulihan Situs Azure aktif bernama ContosoVault menggunakan cmdlet **Get-AzureSiteRecoveryVault** .
-Perintah menyimpan vault tersebut di $Vault variabel.
+Perintah pertama mendapatkan azure aktif Site Recovery kubah bernama ContosoVault dengan menggunakan cmdlet **Get-AzureSiteRecoveryVault**.
+Perintah menyimpan kubah dalam variabel $Vault.
 
-Perintah kedua akan mendapatkan file pengaturan untuk vault yang disimpan di $Vault.
+Perintah kedua akan mendapatkan file pengaturan untuk kubah yang disimpan di $Vault.
 
 ## PARAMETERS
 
 ### -Lokasi
-Menentukan lokasi geografis tempat penyimpanan berada.
+Menentukan lokasi geografis tempat kubah berada.
 
 ```yaml
 Type: String
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama vault.
+Menentukan nama kubah.
 
 ```yaml
 Type: String
@@ -82,9 +82,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur file pengaturan vault Pemulihan Situs.
-Untuk menyimpan file ini secara lokal, unduh dari portal vault Pemulihan Situs setelah perintah selesai dijalankan.
+### -Jalur
+Menentukan jalur file pengaturan kubah Site Recovery.
+Untuk menyimpan file ini secara lokal, unduh dari portal Site Recovery kubah setelah perintah selesai dijalankan.
 
 ```yaml
 Type: String
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan vault untuk situs tersebut.
+Menentukan kubah untuk situs.
 
 ```yaml
 Type: ASRVault
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,6 +192,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSiteRecoveryVaultSettings](./Get-AzureSiteRecoveryVaultSettings.md)
 
-[Import-AzureSiteRecoveryVaultSettingsFile](./Import-AzureSiteRecoveryVaultSettingsFile.md)
+[Impor-AzureSiteRecoveryVaultSettingsFile](./Import-AzureSiteRecoveryVaultSettingsFile.md)
 
 

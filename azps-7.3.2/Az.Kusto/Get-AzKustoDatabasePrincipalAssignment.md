@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.kusto/get-azkust
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoDatabasePrincipalAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/Get-AzKustoDatabasePrincipalAssignment.md
-ms.openlocfilehash: b4249aadcbdd78ebd48ede29357173770c0d2fb0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 85163d47a45c9df729c34ecc668123593bbe2193
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140186489"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141787892"
 ---
 # Get-AzKustoDatabasePrincipalAssignment
 
 ## SYNOPSIS
-Mendapatkan prinsipal database kluster KustoAssignment.
+Mendapatkan Kusto database database principalAssignment.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/get-azkustodatabaseprincipalassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzKustoDatabasePrincipalAssignment -ClusterName <String> -DatabaseName <Stri
  -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzKustoDatabasePrincipalAssignment -ClusterName <String> -DatabaseName <String>
  -PrincipalAssignmentName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
@@ -39,11 +42,11 @@ Get-AzKustoDatabasePrincipalAssignment -InputObject <IKustoIdentity> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Mendapatkan prinsipal database kluster KustoAssignment.
+Mendapatkan Kusto database database principalAssignment.
 
 ## EXAMPLES
 
-### Contoh 1:  List all PrincipalAssignment in a database by name
+### Contoh 1: Mencantumkan semua Penetapan Prinsipal dalam database menurut nama
 ```powershell
 PS C:\> Get-AzKustoDatabasePrincipalAssignment -ResourceGroupName testrg -ClusterName testnewkustocluster -DatabaseName mykustodatabase
 
@@ -56,7 +59,7 @@ testnewkustocluster/mykustodatabase/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microso
 
 Perintah di atas mengembalikan semua PrincipalAssignment dalam database "mykustodatabase" yang ditemukan dalam kluster "testnewkustocluster".
 
-### Contoh 2: Mendapatkan PrincipalAssignment tertentu dalam database dengan nama
+### Contoh 2: Mendapatkan PrincipalAssignment tertentu dalam database berdasarkan nama
 ```powershell
 PS C:\> Get-AzKustoDatabasePrincipalAssignment -ResourceGroupName testrg -ClusterName testnewkustocluster -DatabaseName mykustodatabase -PrincipalAssignmentName kustoprincipal1
 
@@ -65,12 +68,12 @@ Name                                                Type
 testnewkustocluster/mykustodatabase/kustoprincipal1 Microsoft.Kusto/Clusters/Databases/PrincipalAssignments
 ```
 
-Perintah di atas mengembalikan semua PrincipalAssignment bernama "kustoprincipal1" dalam database "mykustodatabase" yang ditemukan pada kluster "testnewkustocluster".
+Perintah di atas mengembalikan semua PrincipalAssignment bernama "kustoprincipal1" dalam database "mykustodatabase" yang ditemukan dalam kluster "testnewkustocluster".
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database dalam kluster Kusto.
+Nama database dalam klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalAssignmentName
-Nama principalAssignment Kusto.
+Nama Kusto principalAssignment.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -160,8 +163,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -176,15 +179,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.IKustoIdentity
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.IKustoIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IDatabasePrincipalAssignment
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IDatabasePrincipalAssignment
 
 ## CATATAN
 
@@ -197,16 +200,16 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IKustoIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
-  - `[ClusterName <String>]`: Nama kluster Kusto.
+  - `[ClusterName <String>]`: Nama klaster Kusto.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database dalam kluster Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam klaster Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi Azure (kawasan).
-  - `[OperationId <String>]`: Guid ID operasi
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi kluster Kusto.
+  - `[OperationId <String>]`: Guid of the operation ID
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi klaster Kusto.
   - `[ScriptName <String>]`: Nama skrip database Kusto.
-  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

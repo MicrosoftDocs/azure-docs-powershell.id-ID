@@ -4,16 +4,16 @@ ms.assetid: 4F083EBC-7D7E-4836-8AAB-6BF2B08162DF
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: e68b42b310c08eb82a63da5bf50b1d8b9c3f592d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423241"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772435"
 ---
 # Get-AzureSiteRecoveryStorageMapping
 
 ## SYNOPSIS
-Mendapatkan pemetaan objek Storage Pemulihan Situs untuk vault.
+Mendapatkan pemetaan objek Site Recovery Storage untuk kubah.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,11 +25,11 @@ Get-AzureSiteRecoveryStorageMapping -PrimaryServer <ASRServer> -RecoveryServer <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureSiteRecoveryStorageMapping** mendapatkan pemetaan objek Pemulihan Situs Azure Storage untuk vault Pemulihan Situs Azure saat ini.
+Cmdlet **Get-AzureSiteRecoveryStorageMapping** mendapatkan pemetaan objek Azure Site Recovery Storage untuk brankas Azure Site Recovery saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemetaan antara objek Storage dan pemulihan objek Storage Anda
+### Contoh 1: Dapatkan pemetaan antara objek Storage dan objek Storage pemulihan
 ```
 PS C:\> $Servers = Get-AzureSiteRecoveryServer
 PS C:\> Get-AzureSiteRecoveryStorageMapping -PrimaryServer $Servers[0] -RecoveryServer $Servers[1]
@@ -41,18 +41,18 @@ RecoveryStorageId   : 20cf8d92-fd5d-4872-985a-0f4562b8a0bf
 RecoveryStorageName : phase2RecoveryStorageClassification
 ```
 
-Cmdlet perintah pertama mendapatkan server untuk penyimpanan Pemulihan Situs Azure saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer.**
-Perintah menyimpan server Pemulihan Situs di $Servers array terpisah.
+Cmdlet perintah pertama mendapatkan server untuk brankas Azure Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryServer**.
+Perintah menyimpan server Site Recovery dalam variabel array $Servers.
 
-Perintah kedua memetakan di antara dua Azure Storage objek.
+Perintah kedua mendapatkan pemetaan antara dua objek Azure Storage.
 Perintah menentukan server utama untuk pemetaan objek Storage sebagai elemen pertama $Servers.
-Perintah menentukan server untuk pemulihan Storage objek sebagai elemen kedua dari $Servers.
+Perintah menentukan server untuk objek Storage pemulihan sebagai elemen kedua $Servers.
 
 ## PARAMETERS
 
 ### -PrimaryServer
 Menentukan server utama.
-Untuk mendapatkan server, gunakan cmdlet **Get-AzureSiteRecoveryServer.**
+Untuk mendapatkan server, gunakan cmdlet **Get-AzureSiteRecoveryServer** .
 
 ```yaml
 Type: ASRServer
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -111,8 +111,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSiteRecoveryServer](./Get-AzureSiteRecoveryServer.md)
 
-[New-AzureSiteRecoveryStorageMapping](./New-AzureSiteRecoveryStorageMapping.md)
+[Baru-AzureSiteRecoveryStorageMapping](./New-AzureSiteRecoveryStorageMapping.md)
 
-[Remove-AzureSiteRecoveryStorageMapping](./Remove-AzureSiteRecoveryStorageMapping.md)
+[Hapus-AzureSiteRecoveryStorageMapping](./Remove-AzureSiteRecoveryStorageMapping.md)
 
 

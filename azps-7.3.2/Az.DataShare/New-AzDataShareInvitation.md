@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareInvitation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareInvitation.md
-ms.openlocfilehash: 73452c1a0abf35e4f698e56505a457f90a920458
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9111457516371d5d6d55a21901bf98fb7101c6e2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140403131"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141894248"
 ---
 # New-AzDataShareInvitation
 
 ## SYNOPSIS
-Membuat undangan untuk berbagi.
+Membuat undangan untuk dibagikan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatashareinvitation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ New-AzDataShareInvitation -ResourceGroupName <String> -AccountName <String> -Sha
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareInvitation** mengirim undangan ke konsumen target dengan informasi tentang berbagi penyedia. 
+Cmdlet **New-AzDataShareInvitation** mengirimkan undangan kepada konsumen target dengan informasi tentang berbagi penyedia. 
 
 ## EXAMPLES
 
@@ -57,11 +60,11 @@ Name             : AdsInvitation
 Type             : Microsoft.DataShare/Invitations
 ```
 
-Perintah ini membuat undangan AdsInvitation untuk berbagi AdsShare dan mengirimnya ke email adstest@microsoft.comtarget.
+Perintah ini membuat undangan AdsInvitation untuk berbagi AdsShare dan mengirimkannya ke email adstest@microsoft.comtarget .
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,11 +216,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

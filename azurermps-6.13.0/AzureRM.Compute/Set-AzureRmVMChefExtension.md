@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVMChefExtension.md
 ms.openlocfilehash: 25082cbf5b69867953580cb0f4b0ea74c15005da
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422540"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141886207"
 ---
 # Set-AzureRmVMChefExtension
 
@@ -49,30 +49,30 @@ Cmdlet **Set-AzureVMChefExtension** menambahkan ekstensi Chef ke mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Add a Chef extension to a Windows virtual machine
+### Contoh 1: Tambahkan ekstensi Chef ke mesin virtual Windows
 ```
 PS C:\> Set-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup001" -VMName "WindowsVM001" -ValidationPem "C:\my-org-validator.pem" -ClientRb "C:\client.rb" -RunList "Apache" -Daemon "service" -SecretFile "C:\my_encrypted_data_bag_secret" -Windows
 ```
 
-Perintah ini menambahkan ekstensi Chef ke komputer virtual Windows bernama WindowsVM001.
-Saat mesin virtual dimulai, Bootstrap bootstrap mesin virtual untuk menjalankan Apache.
+Perintah ini menambahkan ekstensi Chef ke mesin virtual Windows bernama WindowsVM001.
+Ketika mesin virtual dimulai, Chef bootstraps mesin virtual untuk menjalankan Apache.
 
-### Contoh 2: Tambahkan ekstensi Chef ke komputer virtual Linux
+### Contoh 2: Tambahkan ekstensi Chef ke mesin virtual Linux
 ```
 PS C:\> Set-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup002" -VMName "LinuxVM001" -ValidationPem "C:\my-org-validator.pem" -ClientRb "C:\client.rb" -RunList "Apache" -Secret "my_secret" -Linux
 ```
 
 Perintah ini menambahkan ekstensi Chef ke mesin virtual Linux bernama LinuxVM001.
-Saat mesin virtual dimulai, Bootstrap bootstrap mesin virtual untuk menjalankan Apache.
+Ketika mesin virtual dimulai, Chef bootstraps mesin virtual untuk menjalankan Apache.
 
-### Contoh 3: Menambahkan ekstensi Chef ke komputer virtual Windows dengan opsi bootstrap
+### Contoh 3: Tambahkan ekstensi Chef ke mesin virtual Windows dengan opsi bootstrap
 ```
 PS C:\> Set-AzureRmVMChefExtension -ResourceGroupName "ResourceGroup003" -VMName "WindowsVM002" -ValidationPem C:\my-org-validator.pem -ClientRb C:\client.rb -BootstrapOptions '{"chef_node_name":"your_node_name","chef_server_url":"https://api.opscode.com/organizations/some-org", "validation_client_name":"some-org-validator"}' -RunList "Apache" -Windows
 ```
 
-Perintah ini menambahkan ekstensi Chef ke komputer virtual Windows bernama WindowsVM002.
-Saat mesin virtual dimulai, Bootstrap bootstrap mesin virtual untuk menjalankan Apache.
-Setelah bootstrap, komputer virtual merujuk ke BootstrapOptions yang ditentukan dalam format JSON.
+Perintah ini menambahkan ekstensi Chef ke mesin virtual Windows bernama WindowsVM002.
+Ketika mesin virtual dimulai, Chef bootstraps mesin virtual untuk menjalankan Apache.
+Setelah bootstrapping, mesin virtual merujuk ke BootstrapOptions yang ditentukan dalam format JSON.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -BootstrapOptions
-Menentukan pengaturan konfigurasi dalam client_rb opsi.
+Menentukan pengaturan konfigurasi dalam opsi client_rb.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ChefDaemonInterval
-Menentukan frekuensi (dalam menit) ketika layanan chef berjalan. Jika jika tidak ingin layanan chef diinstal di Azure VM, atur nilainya sebagai 0 dalam bidang ini.
+Menentukan frekuensi (dalam menit) tempat layanan koki berjalan. Jika Anda tidak ingin layanan koki diinstal di Azure VM lalu tetapkan nilai sebagai 0 di bidang ini.
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ServerUrl
+### -ChefServerUrl
 Menentukan tautan server Chef, sebagai URL.
 
 ```yaml
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientRb
-Menentukan jalur lengkap klien Client.rb.
+Menentukan jalur lengkap chef client.rb.
 
 ```yaml
 Type: System.String
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 ```
 
 ### -Daemon
-Mengonfigurasi layanan klien chef untuk eksekusi tanpa pengawasan. Platform node harus Windows.
+Mengonfigurasi layanan klien koki untuk eksekusi tanpa pengawas. Platform simpul harus Windows.
 Opsi yang diperbolehkan: 'tidak ada','layanan' dan 'tugas'.
-tidak ada - Saat ini layanan klien klien tidak dikonfigurasi sebagai layanan.
-layanan - Mengonfigurasi klien firewall agar berjalan secara otomatis di latar belakang sebagai layanan.
-tugas - Mengonfigurasi klien chef agar berjalan secara otomatis di latar belakang sebagai tugas yang tertata.
+tidak ada - Saat ini mencegah layanan chef-client dikonfigurasi sebagai layanan.
+service - Mengonfigurasi chef-client untuk berjalan secara otomatis di latar belakang sebagai layanan.
+tugas - Mengonfigurasi klien koki untuk berjalan secara otomatis di latar belakang sebagai tugas terjadwal.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -JsonAttribute
-String JSON yang akan ditambahkan ke proses pertama klien chef. misalnya -JsonAttribute '{"foo" : "bar"}'
+String JSON yang akan ditambahkan ke run of chef-client pertama. misalnya -JsonAttribute '{"foo" : "bar"}'
 
 ```yaml
 Type: System.String
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Mengindikasikan bahwa cmdlet ini membuat Windows virtual.
+Menunjukkan bahwa cmdlet ini membuat mesin virtual Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi mesin virtual.
+Menentukan lokasi mesin maya.
 
 ```yaml
 Type: System.String
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationName
-Menentukan nama organisasi ekstensi Chef.
+Menentukan nama organisasi ekstensi Koki.
 
 ```yaml
 Type: System.String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi komputer virtual.
+Menentukan nama grup sumber daya yang berisi mesin virtual.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunList
-Menentukan daftar jalankan node Node Node.
+Menentukan daftar run chef node.
 
 ```yaml
 Type: System.String
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Kunci enkripsi digunakan untuk mengenkripsi dan mendekripsi nilai item tas data.
+Kunci enkripsi yang digunakan untuk mengenkripsi dan mendekripsi nilai item tas data.
 
 ```yaml
 Type: System.String
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -TypeHandlerVersion
-Menentukan versi ekstensi untuk digunakan untuk komputer virtual ini.
+Menentukan versi ekstensi yang akan digunakan untuk mesin virtual ini.
 
 ```yaml
 Type: System.String
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 ```
 
 ### -ValidationPem
-Menentukan jalur file Chef validator .pem
+Menentukan jalur file .pem validator Chef
 
 ```yaml
 Type: System.String
@@ -394,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Mengindikasikan bahwa cmdlet ini membuat Windows virtual.
+Menunjukkan bahwa cmdlet ini membuat mesin virtual Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -425,7 +425,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -440,7 +440,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -458,4 +458,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVMChefExtension](./Get-AzureRmVMChefExtension.md)
 
-[Remove-AzureRmVMChefExtension](./Remove-AzureRmVMChefExtension.md)
+[Hapus-AzureRmVMChefExtension](./Remove-AzureRmVMChefExtension.md)

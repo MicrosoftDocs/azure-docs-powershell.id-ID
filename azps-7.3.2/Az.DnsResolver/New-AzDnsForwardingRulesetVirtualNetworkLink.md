@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dnsresolver/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsForwardingRulesetVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DnsResolver/help/New-AzDnsForwardingRulesetVirtualNetworkLink.md
-ms.openlocfilehash: fb5d82c9befb0f3a2616ad88165b574a3a406e7d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3083db5b7211af681079f3f70d9231764608e77a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000918"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788234"
 ---
 # New-AzDnsForwardingRulesetVirtualNetworkLink
 
 ## SYNOPSIS
-Membuat atau memperbarui link jaringan virtual ke perangkat aturan penerusan DNS.
+Membuat atau memperbarui tautan jaringan virtual ke aturan penerusan DNS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dnsresolver/new-azdnsforwardingrulesetvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName <String> 
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui link jaringan virtual ke perangkat aturan penerusan DNS.
+Membuat atau memperbarui tautan jaringan virtual ke aturan penerusan DNS.
 
 ## EXAMPLES
 
@@ -42,9 +45,9 @@ Location Name                   Type                                            
 westus2  sampleVnetLink Microsoft.Network/dnsForwardingRulesets/virtualNetworkLinks "0a009902-0000-0800-0000-60e378030000"
 ```
 
-Cmdlet ini membuat link jaringan virtual.
+Cmdlet ini membuat tautan jaringan virtual.
 
-### Contoh 2: Buat link jaringan virtual dengan metadata
+### Contoh 2: Membuat tautan jaringan virtual dengan metadata
 ```powershell
 New-AzDnsForwardingRulesetVirtualNetworkLink -DnsForwardingRulesetName dnsForwardingRuleset -Name sampleVnetLink -ResourceGroupName sampleRG -VirtualNetworkId "/subscriptions/ea40042d-63d8-4d02-9261-fb31450e6c64/resourceGroups/sampleRG/providers/Microsoft.Network/virtualNetworks/vnet-hub" -Metadata @{"key0" = "value0"}
 ```
@@ -55,7 +58,7 @@ Location Name                   Type                                            
 westus2  sampleVnetLink Microsoft.Network/dnsForwardingRulesets/virtualNetworkLinks "0a009902-0000-0800-0000-60e378030000"
 ```
 
-Cmdlet ini membuat link jaringan virtual dengan metadata.
+Cmdlet ini membuat tautan jaringan virtual dengan metadata.
 
 ## PARAMETERS
 
@@ -106,8 +109,8 @@ Accept wildcard characters: False
 
 ### -IfMatch
 ETag sumber daya.
-Menghilangkan nilai ini agar selalu menimpa sumber daya saat ini.
-Tentukan nilai ETag yang terakhir dilihat untuk mencegah secara tidak sengaja menimpa perubahan konklar apa pun.
+Hilangkan nilai ini untuk selalu menimpa sumber daya saat ini.
+Tentukan nilai ETag yang terakhir dilihat untuk mencegah timpa perubahan bersamaan secara tidak sengaja.
 
 ```yaml
 Type: System.String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -IfNoneMatch
-Atur ke '*' untuk memungkinkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
+Atur ke '*' untuk memperbolehkan sumber daya baru dibuat, tetapi untuk mencegah pembaruan sumber daya yang sudah ada.
 Nilai lain akan diabaikan.
 
 ```yaml
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Metadata yang dilampirkan ke link jaringan virtual.
+Metadata yang dilampirkan ke tautan jaringan virtual.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama link jaringan virtual.
+Nama tautan jaringan virtual.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.RemoteApp.dll-Help.xml
 ms.assetid: 8EF86C66-498F-4183-9070-F178628483F1
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: aef3aa8d5a13b2b5d14d30f1735976267e5eec70788796993b43542c57684d15
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8e941757b59fc66634f051e8cb26dd515f9170e7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419239"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772700"
 ---
 # Get-AzureRemoteAppCollectionUsageSummary
 
 ## SYNOPSIS
-Mengambil ringkasan penggunaan untuk kumpulan Azure RemoteApp.
+Mengambil ringkasan penggunaan untuk koleksi Azure RemoteApp.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,16 +25,16 @@ Get-AzureRemoteAppCollectionUsageSummary [-CollectionName] <String> [[-UsageMont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRemoteAppCollectionUsageSummary** mengambil ringkasan penggunaan untuk kumpulan Azure RemoteApp.
+Cmdlet **Get-AzureRemoteAppCollectionUsageSummary** mengambil ringkasan penggunaan untuk koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan ringkasan penggunaan
+### Contoh 1: Dapatkan ringkasan penggunaan
 ```
 PS C:\> Get-AzureRemoteAppCollectionUsageSummary -CollectionName Contoso -UsageMonth 12 -UsageYear 2014
 ```
 
-Perintah ini mendapatkan ringkasan penggunaan untuk bulan Desember pada tahun 2014, untuk koleksi bernama Contoso.
+Perintah ini mendapatkan ringkasan penggunaan untuk bulan Desember dalam tahun 2014, untuk koleksi bernama Contoso.
 
 ## PARAMETERS
 
@@ -54,8 +54,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 ```
 
 ### -UsageYear
-Menentukan empat digit tahun yang akan digunakan untuk mendapatkan ringkasan penggunaan.
-Jika parameter ini tidak ditentukan, cmdlet ini akan menyediakan ringkasan penggunaan untuk tahun ini.
+Menentukan tahun empat digit untuk mendapatkan ringkasan penggunaan.
+Jika parameter ini tidak ditentukan, cmdlet ini menyediakan ringkasan penggunaan untuk tahun ini akan digunakan.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

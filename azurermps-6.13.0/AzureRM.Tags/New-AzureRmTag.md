@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Tags/Commands.Tags/help/New-AzureRmTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Tags/Commands.Tags/help/New-AzureRmTag.md
 ms.openlocfilehash: cd9700a633f1a9c09c5fafd060d318b35eaeaabb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428122"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773627"
 ---
 # New-AzureRmTag
 
@@ -28,20 +28,20 @@ New-AzureRmTag [-Name] <String> [[-Value] <String>] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmTag** membuat tag Azure yang sudah ditentukan sebelumnya dengan nilai opsional yang telah ditentukan sebelumnya.
-Anda juga bisa menggunakannya untuk menambahkan nilai tambahan ke tag yang sudah ditentukan sebelumnya yang sudah ada.
+Cmdlet **AzureRmTag Baru** membuat tag Azure yang sudah ditentukan sebelumnya dengan nilai opsional yang sudah ditentukan sebelumnya.
+Anda juga bisa menggunakannya untuk menambahkan nilai tambahan ke tag yang sudah ditentukan sebelumnya.
 Untuk membuat tag yang sudah ditentukan sebelumnya, masukkan nama tag unik.
-Untuk menambahkan nilai ke tag yang sudah ditentukan sebelumnya yang sudah ada, tentukan nama tag yang sudah ada dan nilai baru.
-Cmdlet ini mengembalikan objek yang mewakili tag baru atau yang dimodifikasi dengan nilainya dan jumlah sumber daya yang diterapkan.
-Modul Tag Azure yang **menjadi bagian dari AzureRmTag** Baru dapat membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
-Tag Azure adalah pasangan nilai nama yang dapat digunakan untuk mengategorikan sumber daya dan grup sumber daya Azure, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
-Anda bisa menetapkan dan menerapkan tag dalam satu langkah, tapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan yang bisa diprediksi untuk tag di langganan Anda.
-Untuk menerapkan tag yang sudah ditentukan sebelumnya ke grup sumber daya atau sumber *daya,* gunakan parameter Tag New-AzureRmTag cmdlet.
-Untuk mencari grup sumber daya dengan nama atau nama atau nilai tag yang *ditentukan,* gunakan parameter Tag Get-AzureRMResourceGroup cmdlet.
+Untuk menambahkan nilai ke tag yang sudah ditentukan sebelumnya, tentukan nama tag yang sudah ada dan nilai baru.
+Cmdlet ini mengembalikan objek yang mewakili tag baru atau yang diubah dengan nilainya dan jumlah sumber daya yang telah diterapkan.
+Modul Tag Azure yang merupakan bagian dari **AzureRmTag Baru** dapat membantu Anda mengelola tag Azure yang sudah ditentukan sebelumnya.
+Tag Azure adalah pasangan nilai nama yang bisa Anda gunakan untuk mengategorikan sumber daya dan grup sumber daya Azure Anda, seperti menurut departemen atau pusat biaya, atau untuk melacak catatan atau komentar tentang sumber daya dan grup.
+Anda bisa menentukan dan menerapkan tag dalam satu langkah, tetapi tag yang sudah ditentukan sebelumnya memungkinkan Anda menetapkan nama dan nilai standar, konsisten, dan dapat diprediksi untuk tag dalam langganan Anda.
+Untuk menerapkan tag yang sudah ditentukan sebelumnya ke grup sumber daya atau sumber daya, gunakan parameter *Tag* cmdlet New-AzureRmTag.
+Untuk mencari grup sumber daya dengan nama atau nama dan nilai tag tertentu, gunakan parameter *Tag* cmdlet Get-AzureRMResourceGroup.
 Setiap tag memiliki nama.
-Nilainya bersifat opsional.
-Tag Azure yang sudah ditentukan sebelumnya bisa memiliki beberapa nilai, tapi saat Anda menerapkan tag ke sumber daya atau grup sumber daya, Anda menerapkan nama tag dan hanya salah satu nilainya.
-Misalnya, Anda dapat membuat tag Departemen yang sudah ditentukan sebelumnya dengan nilai untuk setiap departemen, seperti Keuangan, Sumber Daya Manusia, dan IT.
+Nilai bersifat opsional.
+Tag Azure yang sudah ditentukan sebelumnya dapat memiliki beberapa nilai, tetapi saat Anda menerapkan tag ke grup sumber daya atau sumber daya, Anda menerapkan nama tag dan hanya salah satu nilainya.
+Misalnya, Anda bisa membuat tag Departemen yang sudah ditentukan sebelumnya dengan nilai untuk setiap departemen, seperti Keuangan, Sumber Daya Manusia, dan TI.
 Saat Anda menerapkan tag Departemen ke sumber daya, Anda hanya menerapkan satu nilai yang sudah ditentukan sebelumnya, seperti Keuangan.
 
 ## EXAMPLES
@@ -59,10 +59,10 @@ Values:
         Finance     0
 ```
 
-Perintah ini akan membuat tag yang sudah ditentukan sebelumnya bernama FY2015.
+Perintah ini membuat tag yang sudah ditentukan sebelumnya bernama FY2015.
 Tag ini tidak memiliki nilai.
-Anda dapat menerapkan tag tanpa nilai ke grup sumber daya atau sumber daya, atau menggunakan **AzureRmTag** Baru untuk menambahkan nilai ke tag.
-Anda juga bisa menentukan nilai saat Anda menerapkan tag ke grup sumber daya atau sumber daya.
+Anda dapat menerapkan tag tanpa nilai ke grup sumber daya atau sumber daya, atau menggunakan **New-AzureRmTag** untuk menambahkan nilai ke tag.
+Anda juga dapat menentukan nilai saat menerapkan tag ke grup sumber daya atau sumber daya.
 
 ### Contoh 2: Membuat tag yang sudah ditentukan sebelumnya dengan nilai
 ```
@@ -76,7 +76,7 @@ Values:
         Finance     0
 ```
 
-Perintah ini akan membuat tag yang sudah ditentukan sebelumnya bernama Departemen dengan nilai Keuangan.
+Perintah ini membuat tag yang sudah ditentukan sebelumnya bernama Departemen dengan nilai Keuangan.
 
 ### Contoh 3: Menambahkan nilai ke tag yang sudah ditentukan sebelumnya
 ```
@@ -98,7 +98,7 @@ Values:
 ```
 
 Perintah ini membuat tag yang sudah ditentukan sebelumnya bernama Departemen dengan dua nilai.
-Jika nama tag ada, **New-AzureRmTag** menambahkan nilai ke tag yang sudah ada, bukan membuat yang baru.
+Jika nama tag sudah ada, **New-AzureRmTag** menambahkan nilai ke tag yang sudah ada, bukan membuat yang baru.
 
 ### Contoh 4: Menggunakan tag yang sudah ditentukan sebelumnya
 ```
@@ -151,7 +151,7 @@ Perintah dalam contoh ini membuat dan menggunakan tag yang sudah ditentukan sebe
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 Menentukan nama tag.
 Untuk membuat tag baru yang sudah ditentukan sebelumnya, masukkan nama yang unik.
 Untuk menambahkan nilai ke tag yang sudah ada, masukkan nama tag yang sudah ada.
-Jika tag yang sudah ditentukan sebelumnya memiliki nama yang ditentukan, **New-AzureRmTag** menambahkan nilai yang ditentukan, jika ada, ke tag dengan nama itu dan bukan membuat tag baru.
+Jika tag yang sudah ditentukan sebelumnya memiliki nama yang ditentukan, **AzureRmTag Baru** menambahkan nilai yang ditentukan, jika ada, ke tag dengan nama tersebut, bukan membuat tag baru.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -217,6 +217,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmTag](./Get-AzureRmTag.md)
 
-[Remove-AzureRmTag](./Remove-AzureRmTag.md)
+[Hapus-AzureRmTag](./Remove-AzureRmTag.md)
 
 

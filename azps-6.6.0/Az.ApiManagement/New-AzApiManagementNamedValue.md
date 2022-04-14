@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementNamedValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementNamedValue.md
 ms.openlocfilehash: ad0a27a7749dc11cd9e8d94de4a4efd3faebfb5a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141808538"
 ---
 # New-AzApiManagementNamedValue
 
 ## SYNOPSIS
-Membuat Nilai Bernama yang baru.
+Membuat Nilai Bernama baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementnamedvalue) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementnamedvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,19 +29,19 @@ New-AzApiManagementNamedValue -Context <PsApiManagementContext> [-NamedValueId <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementNamedValue** membuat Nilai **Bernama Manajemen API** Azure.
+Cmdlet **New-AzApiManagementNamedValue** membuat Azure API Management **Nilai Bernama**.
 
 ## EXAMPLES
 
-### Contoh 1: Buat nilai bernama yang menyertakan tag
+### Contoh 1: Membuat nilai bernama yang menyertakan tag
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$Tags = 'sdk', 'powershell'
 PS C:\> New-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property11" -Name "Property Name" -Value "Property Value" -Tags $Tags
 ```
 
-Perintah pertama menetapkan dua nilai ke $Tags variabel.
-Perintah kedua membuat nilai bernama dan menetapkan string di daftar $Tags tag pada properti.
+Perintah pertama menetapkan dua nilai ke variabel $Tags.
+Perintah kedua membuat nilai bernama dan menetapkan string dalam $Tags sebagai tag pada properti.
 
 ### Contoh 2: Membuat nilai bernama yang memiliki nilai rahasia
 ```powershell
@@ -49,9 +49,9 @@ PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default
 PS C:\>New-AzApiManagementNamedValue -Context $apimContext -NamedValueId "Property12" -Name "Secret Property" -Value "Secret Property Value" -Secret
 ```
 
-Perintah ini membuat **Nilai** Bernama yang memiliki nilai yang dienkripsi.
+Perintah ini membuat **Nilai Bernama** yang memiliki nilai yang dienkripsi.
 
-### Contoh 3 : Membuat kunciVault Namedvalue
+### Contoh 3 : Membuat keyVault Bernamavalue
 ```powershell
 PS C:\>$secretIdentifier = 'https://contoso.vault.azure.net/secrets/xxxx'
 PS C:\>$keyvault = New-AzApiManagementKeyVaultObject -SecretIdentifier $secretIdentifier 
@@ -59,7 +59,7 @@ PS C:\>$keyVaultNamedValue = New-AzApiManagementNamedValue -Context $context -Na
 ```
 
 Perintah pertama membuat keyvault.
-Perintah kedua membuat nilai bernama menggunakan rahasia dari keyvault ini.
+Perintah kedua membuat nilai bernama menggunakan secret dari keyvault ini.
 
 ## PARAMETERS
 
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVault
-KeyVault digunakan untuk mengambil data Namedvalue. Parameter ini diperlukan jika Value tidak ditentukan.
-Lihat New-AzApiManagementKeyVaultObject detailnya.
+KeyVault digunakan untuk mengambil data Bernamavalue. Parameter ini diperlukan jika Nilai tidak ditentukan.
+Lihat New-AzApiManagementKeyVaultObject untuk detailnya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementKeyVaultEntity
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ### -Nama
 Nama nilai bernama.
 Panjang maksimum adalah 100 karakter.
-Ini mungkin berisi hanya huruf, digit, titik, garis putus-putus, dan garis bawah.
+Ini mungkin hanya berisi huruf, digit, titik, garis putus-putus, dan karakter garis bawah.
 Parameter ini diperlukan.
 
 ```yaml
@@ -128,7 +128,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NamedValueId
+### -NameValueId
 Pengidentifikasi nilai bernama baru.
 Parameter ini bersifat opsional.
 Jika tidak ditentukan akan dihasilkan.
@@ -146,9 +146,9 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menentukan apakah nilainya rahasia dan harus dienkripsi atau tidak.
+Menentukan apakah nilai adalah rahasia dan harus dienkripsi atau tidak.
 Parameter ini bersifat opsional.
-Nilai default adalah false.
+Nilai Default adalah false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,9 +180,9 @@ Accept wildcard characters: False
 
 ### -Value
 Nilai nilai bernama.
-Bisa berisi ekspresi kebijakan.
+Dapat berisi ekspresi kebijakan.
 Panjang maksimum adalah 1000 karakter.
-File mungkin tidak kosong atau hanya terdiri dari spasi kosong.
+Spasi mungkin tidak kosong atau hanya terdiri dari spasi kosong.
 Parameter ini diperlukan.
 
 ```yaml
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

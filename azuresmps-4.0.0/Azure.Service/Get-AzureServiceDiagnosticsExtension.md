@@ -4,16 +4,16 @@ ms.assetid: 235DD5D7-BE24-4FBE-88E2-40D1943ED155
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: dd308e450b34c3f6cc7f7c09fd24a5d27102f078
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419925"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772520"
 ---
 # Get-AzureServiceDiagnosticsExtension
 
 ## SYNOPSIS
-Ekstensi diagnostik layanan cloud diterapkan di semua peran atau peran bernama pada slot penyebaran tertentu.
+Mendapatkan ekstensi diagnostik layanan cloud yang diterapkan pada semua peran atau peran bernama pada slot penyebaran tertentu.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureServiceDiagnosticsExtension [[-ServiceName] <String>] [[-Slot] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureServiceDiagnosticsExtension** mendapatkan ekstensi diagnostik layanan awan yang diterapkan di semua peran atau peran bernama di slot penggunaan tertentu.
+Cmdlet **Get-AzureServiceDiagnosticsExtension** mendapatkan ekstensi diagnostik layanan cloud yang diterapkan pada semua peran atau peran bernama di slot penyebaran tertentu.
 
 ## EXAMPLES
 
@@ -37,21 +37,21 @@ Cmdlet **Get-AzureServiceDiagnosticsExtension** mendapatkan ekstensi diagnostik 
 PS C:\> Get-AzureServiceDiagnosticsExtension -ServiceName $Svc
 ```
 
-Perintah ini akan mendapatkan diagnostik layanan untuk suatu layanan, di seluruh peran.
+Perintah ini mendapatkan diagnostik layanan untuk layanan, di semua peran.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan Azure penyebaran.
+Menentukan nama layanan Azure dari penyebaran.
 
 ```yaml
 Type: String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan penyebaran untuk diubah.
-Nilai yang dapat diterima untuk parameter ini adalah: Produksi atau Pengaturan Ulang.
+Nilai yang dapat diterima untuk parameter ini adalah: Produksi atau Staging.
 
 ```yaml
 Type: String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

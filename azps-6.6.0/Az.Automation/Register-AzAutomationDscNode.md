@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Register-AzAutomationDscNode.md
 ms.openlocfilehash: 2949c0a8d41fdfbff176c10de70af8f82f41b741
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139980465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807584"
 ---
 # Register-AzAutomationDscNode
 
 ## SYNOPSIS
-Mendaftarkan mesin virtual Azure yang Windows OS sebagai node DSC untuk akun Otomatisasi.
+Mendaftarkan mesin virtual Azure yang menjalankan os Windows sebagai simpul DSC untuk akun Otomatisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.automation/register-azautomationdscnode) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/register-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,25 +32,25 @@ Register-AzAutomationDscNode -AzureVMName <String> [-NodeConfigurationName <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Register-AzAutomationDscNode** mendaftarkan mesin virtual Azure sebagai simpul KONFIGURASI Status yang Diinginkan (DSC, Desired State Configuration) APS dalam akun Otomatisasi Azure. Cmdlet ini hanya akan mendaftarkan VM yang Windows OS sebagai Node DSC Otomatisasi untuk akun.
+Cmdlet **Register-AzAutomationDscNode** mendaftarkan mesin virtual Azure sebagai node APS Desired State Configuration (DSC) dalam akun Azure Automation. Cmdlet ini hanya akan mendaftarkan VM yang menjalankan Windows OS sebagai Node DSC Otomatisasi untuk akun.
 
-Jika Anda perlu mendaftarkan simpul ke akun otomatisasi dalam langganan yang berbeda, Anda perlu menggunakan templat ARM, bukan cmdlet. Lihat dokumentasi Otomatisasi Azure [untuk](https://docs.microsoft.com/azure/automation/automation-dsc-onboarding#registering-virtual-machines-across-azure-subscriptions) detail selengkapnya.
+Jika Anda perlu mendaftarkan simpul ke akun otomatisasi dalam langganan yang berbeda, Anda harus menggunakan templat ARM daripada cmdlet. Lihat [dokumentasi](https://docs.microsoft.com/azure/automation/automation-dsc-onboarding#registering-virtual-machines-across-azure-subscriptions) Azure Automation untuk detail selengkapnya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendaftarkan mesin virtual Azure sebagai node Azure DSC
+### Contoh 1: Daftarkan mesin virtual Azure sebagai simpul DSC Azure
 ```
 PS C:\>Register-AzAutomationDscNode -AutomationAccountName "Contoso17" -AzureVMName "VirtualMachine01" -ResourceGroupName "ResourceGroup01"-NodeConfigurationName "ContosoConfiguration.webserver"
 ```
 
-Perintah ini mendaftarkan mesin virtual Azure yang bernama VirtualMachine01 sebagai simpul DSC dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendaftarkan mesin virtual Azure bernama VirtualMachine01 sebagai simpul DSC di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
 ### -ActionAfterReboot
-Menentukan tindakan yang dilakukan mesin virtual setelah menghidupkan ulang.
-Nilai valid adalah: 
-- ContinueConfiguration 
+Menentukan aksi yang dilakukan mesin virtual setelah dimulai ulang.
+Nilai yang valid adalah: 
+- Lanjutkan Konfigurasi 
 - StopConfiguration
 
 ```yaml
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowModuleOverwrite
-Menentukan apakah konfigurasi baru yang diunduh simpul DSC ini dari server tarik DSC Azure Automation menggantikan modul yang sudah ada pada node target.
+Menentukan apakah konfigurasi baru yang diunduh simpul DSC ini dari Azure Automation server tarik DSC menggantikan modul yang sudah ada pada simpul target.
 
 ```yaml
 Type: System.Boolean
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mendaftarkan mesin virtual.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mendaftarkan mesin virtual.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureVMName
-Nama mesin virtual Azure untuk mendaftar manajemen dengan DSC Otomatisasi Azure.
+Nama mesin virtual Azure untuk mendaftar manajemen dengan Azure Automation DSC.
 
 ```yaml
 Type: System.String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationMode
 Menentukan mode konfigurasi DSC.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 - ApplyAndMonitor 
 - ApplyAndAutocorrect 
 - ApplyOnly
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationModeFrequencyMins
-Menentukan frekuensi, dalam menit, di mana aplikasi latar belakang DSC berusaha menerapkan konfigurasi saat ini pada node target.
+Menentukan frekuensi, dalam menit, di mana aplikasi latar belakang DSC berusaha menerapkan konfigurasi saat ini pada simpul target.
 
 ```yaml
 Type: System.Int32
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeConfigurationName
-Menentukan nama konfigurasi node yang dikonfigurasi cmdlet ini untuk menarik dari DSC Otomatisasi Azure.
+Menentukan nama konfigurasi simpul yang cmdlet ini mengonfigurasi mesin virtual untuk menarik dari Azure Automation DSC.
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -RebootNodeIfNeeded
-Menentukan apakah akan memulai ulang mesin virtual, jika diperlukan.
+Menentukan apakah akan memulai ulang mesin maya, jika diperlukan.
 
 ```yaml
 Type: System.Boolean
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshFrequencyMins
-Menentukan frekuensi, dalam menit, di mana Manajer Konfigurasi lokal menghubungi server tarik DSC Azure Automation untuk mengunduh konfigurasi node terbaru.
+Menentukan frekuensi, dalam menit, di mana Configuration Manager lokal menghubungi server tarik DSC Azure Automation untuk mengunduh konfigurasi simpul terbaru.
 
 ```yaml
 Type: System.Int32
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Akun Otomatisasi yang mendaftarkan komputer virtual milik grup sumber daya yang ditentukan parameter ini.
+Akun Otomatisasi tempat cmdlet ini mendaftarkan mesin virtual milik grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

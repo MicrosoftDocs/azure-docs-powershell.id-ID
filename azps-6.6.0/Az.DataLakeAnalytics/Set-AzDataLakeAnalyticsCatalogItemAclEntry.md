@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Set-AzDataLakeAnalyticsCatalogItemAclEntry.md
 ms.openlocfilehash: e3e2007803ff76c1502e57ff7675e1c64b977789
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140256625"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141804704"
 ---
 # Set-AzDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
-Mengubah entri dalam ACL katalog atau item katalog di Analitik Danau Data.
+Mengubah entri dalam ACL item katalog atau katalog di Data Lake Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticscatalogitemaclentry) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/set-azdatalakeanalyticscatalogitemaclentry) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -90,7 +90,7 @@ Set-AzDataLakeAnalyticsCatalogItemAclEntry [-Account] <String> [-GroupOwner] -It
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataLakeAnalyticsCatalogItemAclEntry** menambahkan atau mengubah entri (ACE) dalam daftar kontrol akses (ACL, Access Control List) dari katalog atau item katalog di Analitik Danau Data.
+Cmdlet **Set-AzDataLakeAnalyticsCatalogItemAclEntry** menambahkan atau mengubah entri (ACE) dalam daftar kontrol akses (ACL) item katalog atau katalog dalam Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -134,7 +134,7 @@ Other 00000000-0000-0000-0000-000000000000        Read
 User  bd0b55bb-3a57-442a-b2f6-78c95c10ef86        Read
 ```
 
-Perintah ini memodifikasi katalog ACE untuk perangkat lain agar memiliki izin baca.
+Perintah ini mengubah katalog ACE agar orang lain memiliki izin baca.
 
 ### Contoh 4: Mengubah Izin lain untuk database
 ```powershell
@@ -157,9 +157,9 @@ Type      Id                                   Permissions
 UserOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc        Read
 ```
 
-Perintah ini mengatur izin pemilik untuk akun tersebut agar dapat Dibaca.
+Perintah ini mengatur izin pemilik untuk akun tersebut ke Baca.
 
-### Contoh 6: Mengubah izin pemilik pengguna untuk database
+### Contoh 6: Mengubah Izin pemilik pengguna untuk database
 ```powershell
 PS C:\> Set-AzDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -UserOwner -ItemType Database -Path "databaseName" -Permissions Read
 
@@ -168,12 +168,12 @@ Type       Id                                   Permissions
 GroupOwner 0316ac75-6703-4ace-984f-a4dd79aeeafc        Read
 ```
 
-Perintah ini mengatur izin pemilik database ke Baca.
+Perintah ini mengatur izin pemilik untuk database menjadi Dibaca.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Grup
-Set ACL entry of catalog for group.
+Atur entri ACL katalog untuk grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupOwner
-Mengatur entri katalog ACL untuk pemilik grup.
+Atur entri ACL katalog untuk pemilik grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Identitas pengguna yang akan ditetapkan.
+Identitas pengguna yang akan diatur.
 
 ```yaml
 Type: System.Guid
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lainnya
-Set ACL entry of catalog for other.
+Atur entri ACL katalog untuk yang lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,9 +279,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Analitik Danau Data dari katalog atau item katalog.
-Bagian jalur harus dipisahkan oleh titik (.).
+### -Jalur
+Menentukan jalur Data Lake Analytics item katalog atau katalog.
+Bagian jalur harus dipisahkan oleh tanda titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -295,11 +295,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Permissions
+### -Izin
 Menentukan izin untuk ACE.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
-- Baca
+- Tidak
+- Membaca
 - ReadWrite
 
 ```yaml
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengguna
-Set ACL entry of catalog for user.
+Atur entri ACL katalog untuk pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -331,7 +331,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserOwner
-Set ACL entry of catalog for user owner.
+Atur entri ACL katalog untuk pemilik pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

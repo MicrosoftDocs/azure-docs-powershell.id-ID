@@ -5,27 +5,30 @@ online version: https://docs.microsoft.com/powershell/module/az.dedicatedhsm/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/Get-AzDedicatedHsm.md
-ms.openlocfilehash: b68819fd0ac330489c63005f5458df906420181f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6beb089d247043bb90497c4b6f2103d80da825ec
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402999"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141894151"
 ---
 # Get-AzDedicatedHsm
 
 ## SYNOPSIS
-Mendapatkan HSM khusus Azure khusus tertentu.
+Mendapatkan HSM khusus Azure yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/get-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzDedicatedHsm [-SubscriptionId <String[]>] [-Top <Int32>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDedicatedHsm -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,7 +46,7 @@ Get-AzDedicatedHsm -ResourceGroupName <String> [-SubscriptionId <String[]>] [-To
 ```
 
 ## DESCRIPTION
-Mendapatkan HSM khusus Azure khusus tertentu.
+Mendapatkan HSM khusus Azure yang ditentukan.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 yeminghsm  Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan semua HSM Khusus dalam langganan
+Perintah ini mendapatkan semua HSM Khusus di bawah langganan
 
 ### Contoh 2: Dapatkan semua HSM Khusus di bawah grup sumber daya.
 ```powershell
@@ -79,7 +82,7 @@ Name       Provisioning State SKU                           Location
 hsm-7t2xaf Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini menggunakan HSM Khusus menurut nama.
+Perintah ini mendapatkan HSM Khusus berdasarkan nama.
 
 ### Contoh 4: Dapatkan HSM Khusus menurut objek
 ```powershell
@@ -91,7 +94,7 @@ Name       Provisioning State SKU                           Location
 hsm-n7wfxi Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini mendapatkan HSM Khusus menurut objek.
+Perintah ini mendapatkan HSM Khusus berdasarkan objek.
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.IDedicatedHsmIdentity
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya tempat hsm khusus dimiliki.
+Nama Grup Sumber Daya tempat hsm khusus berada.
 
 ```yaml
 Type: System.String
@@ -156,8 +159,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-Jumlah hasil maksimum yang dikembalikan.
+Jumlah hasil maksimum untuk dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -209,8 +212,8 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDedicatedHsmIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Name <String>]`: Nama Hsm khusus
-  - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya tersebut berada.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[ResourceGroupName <String>]`: Nama Grup Sumber Daya tempat sumber daya berada.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

@@ -6,25 +6,25 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelBookmark.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Get-AzSentinelBookmark.md
 ms.openlocfilehash: 96ab45367ecab95d585f2521f7fea4507b0894e0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098847"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141859856"
 ---
 # Get-AzSentinelBookmark
 
 ## SYNOPSIS
 Mendapatkan Bookmark. <br/>
 Bookmark digunakan untuk mempertahankan kueri, komentar, dan tag untuk insiden tertentu.<br/>
-Buat Bookmark terlebih dahulu, lalu tambahkan ke insiden.
+Anda membuat Bookmark terlebih dahulu lalu menambahkannya ke insiden.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/get-azsentinelbookmark) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/get-azsentinelbookmark) untuk informasi terbaru.
 
 ## SYNTAX
 
-### WorkspaceScope (Default)
+### Ruang KerjaScope (Default)
 ```
 Get-AzSentinelBookmark -ResourceGroupName <String> -WorkspaceName <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -42,9 +42,9 @@ Get-AzSentinelBookmark -ResourceId <String> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSentinelBookmark** mendapatkan Bookmark dari ruang kerja yang ditentukan.
-Jika Anda menentukan parameter *BookmarkId* , satu objek Bookmark dikembalikan.
-Jika Anda tidak menentukan parameter *BookmarkId* , array yang berisi semua Bookmark di ruang kerja tertentu akan dikembalikan.
+Cmdlet **Get-AzSentinelBookmark** mendapatkan Bookmark dari ruang kerja tertentu.
+Jika Anda menentukan parameter *BookmarkId* , sebuah objek Bookmark akan dikembalikan.
+Jika Anda tidak menentukan parameter *BookmarkId* , array yang berisi semua Bookmark dalam ruang kerja tertentu akan dikembalikan.
 Anda bisa menggunakan objek Bookmark untuk memperbarui Bookmark, misalnya Anda bisa menambahkan Tag dan Catatan **Bookmark**.
 
 ## EXAMPLES
@@ -54,14 +54,14 @@ Anda bisa menggunakan objek Bookmark untuk memperbarui Bookmark, misalnya Anda b
 PS C:\> $Bookmarks = Get-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName"
 ```
 
-Contoh ini mendapatkan semua Bookmark di ruang kerja tertentu, lalu menyimpannya di $Bookmarks baru.
+Contoh ini mendapatkan semua Bookmark di ruang kerja tertentu, lalu menyimpannya dalam variabel $Bookmarks.
 
 ### Contoh 2
 ```powershell
 PS C:\> $Bookmark = Get-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -BookmarkId "MyBookmarkId"
 ```
 
-Contoh ini mendapatkan Bookmark di ruang kerja tertentu, lalu menyimpannya di variabel $Bookmark tertentu.
+Contoh ini mendapatkan Bookmark di ruang kerja tertentu, lalu menyimpannya dalam variabel $Bookmark.
 
 ## PARAMETERS
 
@@ -125,7 +125,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

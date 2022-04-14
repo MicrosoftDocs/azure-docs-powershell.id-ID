@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/New-AzureRmDataLakeAnalyticsCatalogSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/New-AzureRmDataLakeAnalyticsCatalogSecret.md
 ms.openlocfilehash: ce6bd748a639116f1f6d2e5c42e824fb3687bdfb
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132414980"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141885274"
 ---
 # New-AzureRmDataLakeAnalyticsCatalogSecret
 
 ## SYNOPSIS
-Membuat katalog Analitik Danau Data rahasia.
+Membuat rahasia katalog Data Lake Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,21 +35,21 @@ New-AzureRmDataLakeAnalyticsCatalogSecret [-Account] <String> [-DatabaseName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmDataLakeAnalyticsCatalogSecret** rahasia digunakan di katalog Azure Data Lake Analytics.
+Cmdlet **New-AzureRmDataLakeAnalyticsCatalogSecret** membuat rahasia untuk digunakan dalam katalog Data Lake Analytics Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Get the secret for a catalog
+### Contoh 1: Dapatkan rahasia untuk katalog
 ```
 PS C:\>New-AzureRmDataLakeAnalyticsCatalogSecret -Account "ContosoAdlAccount" -DatabaseName "databaseName" -Secret (Get-Credential) -Host "https://example.contoso.com" -Port 8080
 ```
 
-Perintah ini mendapatkan rahasia terkait dengan akun, database, kredensial, dan host tertentu.
+Perintah ini mendapatkan rahasia yang terkait dengan akun, database, kredensial, dan host tertentu.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseHost
-Menentukan nama host untuk database rahasia terkait dengan dalam format 'mydatabase.contoso.com'.
+Menentukan nama host untuk database yang dikaitkan dengan rahasia dalam format 'mydatabase.contoso.com'.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan nama database yang rahasia.
+Menentukan nama database yang menyimpan rahasia.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rahasia
-Menentukan nama dan kata sandi rahasia tersebut.
+Menentukan nama dan kata sandi rahasia.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Menentukan Uniform Resource Identifier (URI) rahasia tersebut.
+Menentukan Uniform Resource Identifier (URI) rahasia.
 
 ```yaml
 Type: System.Uri
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

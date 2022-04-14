@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/new-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplication.md
-ms.openlocfilehash: e496b8590d188c7b56f12eb3c24825e773108fdc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7ebe4836fc0908a4dc6879f26c4ce6a8876d9926
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202598"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791042"
 ---
 # New-AzBatchApplication
 
 ## SYNOPSIS
-Menambahkan aplikasi ke akun Kumpulan yang ditentukan.
+Menambahkan aplikasi ke akun Batch yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchapplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzBatchApplication [-AccountName] <String> [-ResourceGroupName] <String> [-A
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzBatchApplication** menambahkan sebuah aplikasi ke akun Azure Batch yang ditentukan.
+Cmdlet **New-AzBatchApplication** menambahkan aplikasi ke akun Azure Batch yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,8 +44,8 @@ Aplikasi awalnya tidak berisi paket.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan tempat cmdlet menambahkan aplikasi.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini menambahkan aplikasi.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowUpdates
-Menentukan apakah paket dalam aplikasi bisa ditimpa menggunakan string versi yang sama.
+Menentukan apakah paket dalam aplikasi dapat ditimpa menggunakan string versi yang sama.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -132,32 +135,32 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Batch.Models.PSApplication
+### Microsoft.Azure.Commands.Batch.Models.PSAplikasi
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzBatchApplication](./Get-AzBatchApplication.md)
+[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
 [New-AzBatchApplicationPackage](./New-AzBatchApplicationPackage.md)
 
-[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
+[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 
-[Set-AzBatchApplication](./Set-AzBatchApplication.md)
+[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
 
 

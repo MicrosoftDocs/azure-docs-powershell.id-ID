@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Get-AzDataLakeStoreItemContent.md
 ms.openlocfilehash: 5d552832795d73439438aff91fef0181721ae998
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140108063"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141804524"
 ---
 # Get-AzDataLakeStoreItemContent
 
@@ -19,7 +19,7 @@ ms.locfileid: "140108063"
 Mendapatkan konten file di Data Lake Store.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemcontent) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/get-azdatalakestoreitemcontent) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,19 +52,19 @@ Cmdlet **Get-AzDataLakeStoreItemContent** mendapatkan konten file di Data Lake S
 PS C:\>Get-AzDataLakeStoreItemContent -AccountName "ContosoADL" -Path "/MyFile.txt"
 ```
 
-Perintah ini berisi konten file yang MyFile.txt akun ContosoADL.
+Perintah ini mendapatkan konten file MyFile.txt di akun ContosoADL.
 
 ### Contoh 2: Mendapatkan dua baris pertama file
 ```
 PS C:\>Get-AzDataLakeStoreItemContent -AccountName "ContosoADL" -Path "/MyFile.txt" -Head 2
 ```
 
-Perintah ini mendapatkan dua baris pertama yang dipisahkan baris baru dalam file MyFile.txt dalam akun ContosoADL.
+Perintah ini mendapatkan dua baris baru pertama yang dipisahkan dalam file MyFile.txt di akun ContosoADL.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -93,20 +93,20 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Encoding
+### -Pengodean
 Menentukan pengodean untuk item yang akan dibuat.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak Diketahui
+- Diketahui
 - String
 - Unicode
 - Byte
-- BigEnndiUnicode
+- BigEndianUnicode
 - UTF8
 - UTF7
 - Ascii
 - Default
 - Oem
-- BigEnlupaUTF32
+- BigEndianUTF32
 
 ```yaml
 Type: System.Text.Encoding
@@ -120,8 +120,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,8 +135,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Head
-Jumlah baris (dibatasi baris baru) dari awal file untuk ditinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data tersebut yang akan dikembalikan.
+### -Kepala
+Jumlah baris (baris baru dibatasi) dari awal file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Length
-Menentukan panjang, dalam byte, dari konten yang akan dapatkan.
+Menentukan panjang, dalam byte, konten yang akan didapatkan.
 
 ```yaml
 Type: System.Int64
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Offset
-Menentukan jumlah byte untuk melompati dalam file sebelum mendapatkan konten.
+Menentukan jumlah byte yang akan dilewati dalam file sebelum mendapatkan konten.
 
 ```yaml
 Type: System.Int64
@@ -180,8 +180,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari sebuah file, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake dari sebuah file, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tail
-Jumlah baris (dibatasi baris baru) dari akhir file untuk ditinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data tersebut yang akan dikembalikan.
+Jumlah baris (baris baru dibatasi) dari akhir file untuk dipratinjau. Jika tidak ada baris baru yang ditemukan dalam 4mb data pertama, hanya data yang akan dikembalikan.
 
 ```yaml
 Type: System.Int32
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

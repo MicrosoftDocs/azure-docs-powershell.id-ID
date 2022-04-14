@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzRelayOperation.md
 ms.openlocfilehash: 961c47a7d164e9118f454a80df8df6837830e6f6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132343"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141860666"
 ---
 # Get-AzRelayOperation
 
 ## SYNOPSIS
-Operasi Relay yang Didukung Daftar
+Operasi Relai yang didukung daftar
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/get-azrelayoperation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azrelayoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-AzRelayOperation [-DefaultProfile <IAzureContextContainer>] [<CommonParamete
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzConfigyOperation** mencantumkan Operasi yang Didukung Relay.
+Cmdlet **Get-AzRelayOperation** Mencantumkan Operasi yang didukung Relay.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Microsoft.Relay/namespaces/WcfRelays/authorizationRules/delete                  
 Microsoft.Relay/namespaces/WcfRelays/authorizationRules/listkeys/action         Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes
 ```
 
-Operasi relay daftar yang didukung
+Operasi yang didukung Relai Daftar
 
 ## PARAMETERS
 
@@ -79,11 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

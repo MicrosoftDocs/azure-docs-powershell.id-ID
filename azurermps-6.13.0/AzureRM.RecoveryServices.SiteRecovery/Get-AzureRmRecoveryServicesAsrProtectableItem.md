@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Get-AzureRmRecoveryServicesAsrProtectableItem.md
 ms.openlocfilehash: 0efdf49188725e701f9f967dc683c61f739a6767
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140850276"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775912"
 ---
 # Get-AzureRmRecoveryServicesAsrProtectableItem
 
 ## SYNOPSIS
-Dapatkan item yang diproteksi dalam wadah proteksi ASR.
+Dapatkan item yang dapat dilindungi dalam wadah perlindungan ASR.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmRecoveryServicesAsrProtectableItem -FriendlyName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesAsrProtectableItem** mendapatkan item yang diproteksi di Wadah Perlindungan Pemulihan Situs Azure.
+Cmdlet **Get-AzureRmRecoveryServicesAsrProtectableItem** mendapatkan item yang dapat dilindungi dalam Wadah Proteksi Site Recovery Azure.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet **Get-AzureRmRecoveryServicesAsrProtectableItem** mendapatkan item yang d
 PS C:\> $ProtectableItems = Get-AzureRmRecoveryServicesAsrProtectableItem -ProtectionContainer $Container
 ```
 
-Mendapatkan semua item yang dapat diproteksi dalam wadah proteksi ASR yang ditentukan.
+Mendapatkan semua item yang dapat dilindungi dalam wadah proteksi ASR tertentu.
 
 ### Contoh 2
 ```
@@ -72,7 +72,7 @@ ReplicationProtectedItemId    :
 SupportedReplicationProviders : {InMage, InMageAzureV2}
 ```
 
-Dapatkan item yang dapat diproteksi dalam wadah proteksi ASR tertentu dan dengan nama yang mudah dikenal.
+Dapatkan item yang dapat dilindungi dalam wadah proteksi ASR tertentu dan dengan nama yang mudah dikenali.
 
 ### Contoh 3
 ```
@@ -95,7 +95,7 @@ ReplicationProtectedItemId    :
 SupportedReplicationProviders : {InMage, InMageAzureV2}
 ```
 
-Mendapatkan semua item yang dapat diproteksi dalam wadah proteksi ASR yang ditentukan.
+Mendapatkan semua item yang dapat dilindungi dalam wadah proteksi ASR tertentu.
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Menentukan nama item yang dapat diproteksi ASR yang mudah diproteksi.
+Menentukan nama item yang mudah diproteksi ASR.
 
 ```yaml
 Type: System.String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama item ASR yang dapat diproteksi.
+Menentukan nama item yang dapat diproteksi ASR.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -169,7 +169,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectableItem, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectableItem, Microsoft.Azure.Commands.RecoveryServices.SiteRecovery, Version=4.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 

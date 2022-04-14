@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.Profile.dll-Help.xml
 ms.assetid: EBB080C0-12AB-4B0C-B3DA-EEA4BCBFB7DF
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 5124b1fd02b3e8a0ad3c68463d5aa71d4b0c8b7e378287535dccaeff93634cb9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8bc3d92b1f9a36a5b0cf7f102a2e0dd1c4907835
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418655"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773023"
 ---
 # Clear-AzureProfile
 
@@ -33,7 +33,7 @@ PS C:\>
 
 ## PARAMETERS
 
-### -Force
+### -Paksa
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

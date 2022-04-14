@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementDiagnostic.md
 ms.openlocfilehash: 5a05f3a3ebd8af8ec5e07bd72115e07ce5bf1573
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140144817"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141809132"
 ---
 # Get-AzApiManagementDiagnostic
 
 ## SYNOPSIS
-Dapatkan detail Diagnostik yang dikonfigurasi di tingkat layanan atau Tingkat Api. Diagnostik digunakan untuk membuat log permintaan/respons dari gateway Manajemen Api.
+Dapatkan detail Diagnostik yang dikonfigurasi pada tingkat layanan atau Api Level. Diagnostik digunakan untuk mencatat permintaan/respons dari gateway Manajemen Api.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementdiagnostic) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ Get-AzApiManagementDiagnostic -ResourceId <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-**Get-AzApiManagementDiagnostic** mendapatkan detail diagnostik yang dikonfigurasi di layanan manajemen Api dalam lingkup tertentu.
+**Get-AzApiManagementDiagnostic** mendapatkan detail diagnostik yang dikonfigurasi dalam layanan manajemen Api pada lingkup tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua diagnostik dikonfigurasi di lingkup penyewa.
+### Contoh 1: Dapatkan semua diagnostik yang dikonfigurasi di lingkup penyewa.
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementDiagnostic -Context $apimContext
@@ -69,9 +69,9 @@ ResourceGroupName            : Api-Default-WestUS
 ServiceName                  : contoso
 ```
 
-Perintah ini akan mengatur semua diagnostik yang dikonfigurasi di layanan Manajemen Api.
+Perintah ini mendapatkan semua diagnostik yang dikonfigurasi dalam layanan Manajemen Api.
 
-### Contoh 2: Konfigurasi semua diagnostik di lingkup Api
+### Contoh 2: Dapatkan semua diagnostik yang dikonfigurasi di lingkup Api
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementDiagnostic -Context $apimContext -ApiId "echo-api"
@@ -89,7 +89,7 @@ ResourceGroupName            : Api-Default-WestUS
 ServiceName                  : contoso
 ```
 
-Perintah ini akan mengonfigurasi semua diagnostik di `echo-api` lingkup Api
+Perintah ini mendapatkan semua diagnostik yang dikonfigurasi di `echo-api` lingkup Api
 
 ### Contoh 3: Dapatkan diagnostik lingkup API yang ditentukan oleh Id
 ```powershell
@@ -109,7 +109,7 @@ ResourceGroupName            : Api-Default-WestUS
 ServiceName                  : contoso
 ```
 
-Perintah ini akan mengonfigurasi `applicationinsights` diagnostik dalam api `echo-api`.
+Perintah ini mendapatkan diagnostik yang dikonfigurasi `applicationinsights` dalam api `echo-api`.
 
 ## PARAMETERS
 
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya Diagnostik atau Diagnostik Api. Jika ditentukan akan mencoba menemukan diagnostik menurut pengidentifikasi. Parameter ini diperlukan.
+Arm Resource Identifier of a Diagnostic or Api Diagnostic. Jika ditentukan akan mencoba menemukan diagnostik oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

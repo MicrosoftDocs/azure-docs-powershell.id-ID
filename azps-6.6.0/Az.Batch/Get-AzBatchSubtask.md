@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSubtask.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchSubtask.md
 ms.openlocfilehash: 40787f387569cf912dd786681ae4b3ff0c32595d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807332"
 ---
 # Get-AzBatchSubtask
 
 ## SYNOPSIS
-Mendapatkan informasi subsk dari tugas yang ditentukan.
+Mendapatkan informasi subtugas tugas yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/get-azbatchsubtask) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchsubtask) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,8 +36,8 @@ Get-AzBatchSubtask [[-Task] <PSCloudTask>] [-MaxCount <Int32>] -BatchContext <Ba
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzBatchSubtask** mengambil informasi subtask tentang tugas yang ditentukan.
-Subtugas menyediakan pemrosesan paralel untuk tugas individu, dan memungkinkan pemantauan tepat dari eksekusi dan kemajuan tugas.
+Cmdlet **Get-AzBatchSubtask** mengambil informasi subtugas tentang tugas yang ditentukan.
+Subtugas menyediakan pemrosesan paralel untuk tugas individual, dan mengaktifkan pemantauan eksekusi dan kemajuan tugas yang tepat.
 
 ## EXAMPLES
 
@@ -47,16 +47,16 @@ PS C:\>$Context = Get-AzBatchAccountKey -AccountName "contosobatchaccount"
 PS C:\> Get-AzBatchSubtask -JobId "Job-01" -TaskID "myTask" -BatchContext $Context
 ```
 
-Perintah ini mengembalikan semua subtugas untuk tugas dengan myTask ID.
-Untuk melakukannya, perintah pertama dalam contoh membuat referensi objek ke tombol akun untuk akun batch contosobatchaccount.
-Referensi objek ini disimpan dalam variabel yang bernama $context.
-Perintah kedua lalu menggunakan referensi objek tersebut dan cmdlet **Get-AzBatchSubtask** untuk mengembalikan semua subtugas untuk myTask, tugas yang berjalan sebagai bagian dari pekerjaan Pekerjaan 01.
+Perintah ini mengembalikan semua subtugas untuk tugas dengan ID MyTask.
+Untuk melakukan ini, perintah pertama dalam contoh membuat referensi objek ke kunci akun untuk akun batch contosobatchaccount.
+Referensi objek ini disimpan dalam variabel bernama $context.
+Perintah kedua kemudian menggunakan referensi objek dan cmdlet **Get-AzBatchSubtask** untuk mengembalikan semua subtugas untuk myTask, tugas yang berjalan sebagai bagian dari job Job-01.
 
 ## PARAMETERS
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan berisi tugas yang mendapatkan subtugas cmdlet ini.
+Menentukan ID pekerjaan yang berisi tugas yang didapatkan oleh subtugas cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxCount
-Menentukan jumlah maksimal subtugas untuk dikembalikan.
+Menentukan jumlah maksimum subtugas yang akan dikembalikan.
 Jika Anda menentukan nilai nol (0) atau kurang, cmdlet tidak menggunakan batas atas.
 Nilai defaultnya adalah 1000.
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tugas
-Menentukan referensi objek untuk tugas yang berisi subtugas yang dikembalikan cmdlet ini.
+Menentukan referensi objek ke tugas yang berisi subtugas yang dikembalikan cmdlet ini.
 Referensi objek ini dibuat dengan menggunakan cmdlet Get-AzBatchTask dan menyimpan objek yang dikembalikan dalam variabel.
 
 ```yaml
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskId
-Menentukan ID tugas yang subtugasnya dikembalikan cmdlet ini.
+Menentukan ID tugas yang mengembalikan subtugas cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,7 +161,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Batch.Models.PSSubtaskInformation
+### Microsoft.Azure.Commands.Batch.Models.PSSubtaskInformasi
 
 ## CATATAN
 

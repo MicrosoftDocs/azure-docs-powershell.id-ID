@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Get-AzDataProtectionRecoveryPoint.md
-ms.openlocfilehash: 5aa1608fe2524b426177b85a5c06dcf2a12752fa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6e83c6511948cffb1d8eb1df7b9a5b252f2f35d9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141788648"
 ---
 # Get-AzDataProtectionRecoveryPoint
 
 ## SYNOPSIS
-Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk sumber data.
+Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Datasource.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/get-azdataprotectionrecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzDataProtectionRecoveryPoint [-BackupInstanceName <String>] [-ResourceGroup
  [-StartTime <DateTime>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDataProtectionRecoveryPoint -BackupInstanceName <String> -Id <String> -ResourceGroupName <String>
  -VaultName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -39,11 +42,11 @@ Get-AzDataProtectionRecoveryPoint -InputObject <IDataProtectionIdentity> [-Defau
 ```
 
 ## DESCRIPTION
-Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk sumber data.
+Mendapatkan Titik Pemulihan menggunakan recoveryPointId untuk Datasource.
 
 ## EXAMPLES
 
-### Contoh 1: Get all recovery points of a given backup instance
+### Contoh 1: Dapatkan semua titik pemulihan instans cadangan tertentu
 ```powershell
 PS C:\> $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 PS C:\> Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault -BackupInstanceName $instance[2].Name
@@ -60,7 +63,7 @@ dc814d61a9624c36a1f9d635bc0b80f0 Microsoft.DataProtection/backupVaults/backupIns
 
 Perintah ini mencantumkan semua titik pemulihan yang tersedia dari instans cadangan tertentu
 
-### Contoh 2: Dapatkan poin pemulihan dengan id poin pemulihan yang diberikan.
+### Contoh 2: Dapatkan titik pemulihan dengan id titik pemulihan yang diberikan.
 ```powershell
 PS C:\> $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault
 PS C:\> Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxx-xxx-xxx" -ResourceGroupName sarath-rg -VaultName sarath-vault -BackupInstanceName $instance[2].Name -Id 892e5c5014dc4a96807d22924f5745c9
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.IDataProtectionIdentity
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault cadangan ada.
+Nama grup sumber daya tempat kubah cadangan ada.
 
 ```yaml
 Type: System.String
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama vault cadangan.
+Nama kubah cadangan.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -240,10 +243,10 @@ INPUTOBJECT <IDataProtectionIdentity>: Parameter Identitas
   - `[OperationId <String>]`: 
   - `[RecoveryPointId <String>]`: 
   - `[RequestName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat vault cadangan ada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat kubah cadangan ada.
   - `[ResourceGuardsName <String>]`: Nama ResourceGuard
   - `[SubscriptionId <String>]`: Id langganan.
-  - `[VaultName <String>]`: Nama vault cadangan.
+  - `[VaultName <String>]`: Nama kubah cadangan.
 
 ## RELATED LINKS
 

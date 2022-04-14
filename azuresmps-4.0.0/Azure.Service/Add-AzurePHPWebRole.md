@@ -4,11 +4,11 @@ ms.assetid: F9A06B8B-55DB-48A5-B246-53347E759E64
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 965df90e8a94048e64c0d4d92bcc0f86d6ffb37c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428119"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773078"
 ---
 # Add-AzurePHPWebRole
 
@@ -24,8 +24,8 @@ Add-AzurePHPWebRole [-Name <String>] [-Instances <Int32>] [-Profile <AzureSMProf
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Add-AzurePHPWebRole** membuat file dan konfigurasi, terkadang disebut sebagai perancah, untuk aplikasi PHP yang akan dihosting di Azure melalui IIS.
 
@@ -36,20 +36,20 @@ Cmdlet **Add-AzurePHPWebRole** membuat file dan konfigurasi, terkadang disebut s
 PS C:\> Add-AzurePHPWebRole
 ```
 
-Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru menggunakan nilai default layanan bernama "WebRole1" dengan 1 contoh.
+Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru menggunakan nilai default layanan bernama "WebRole1" dengan 1 instans.
 
 ### Contoh 2: Menambahkan peran web dengan beberapa contoh
 ```
 PS C:\> Add-AzurePHPWebRole MyWebRole -I 2
 ```
 
-Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru ke aplikasi saat ini, menggunakan nama "MyWebRole" dan hitungan contoh peran 2.
+Contoh ini menambahkan file dan konfigurasi yang diperlukan untuk peran web baru ke aplikasi saat ini, menggunakan nama "MyWebRole" dan jumlah contoh peran 2.
 
 ## PARAMETERS
 
-### -Contoh
-Menentukan jumlah contoh peran untuk peran di web ini.
-Nilai default adalah 1.
+### -Instances
+Menentukan jumlah contoh peran untuk peran web ini.
+Defaultnya adalah 1.
 
 ```yaml
 Type: Int32
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

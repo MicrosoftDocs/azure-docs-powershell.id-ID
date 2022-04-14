@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datalakeanalytic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Add-AzDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Add-AzDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: bfb77a16374e5cde4da07dc766c55fe95bb774b8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 47e6c2254750a5a68acdcdacf9bea6ccea8bf37a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571657"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141895292"
 ---
 # Add-AzDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
-Menambahkan sumber data ke akun Analitik Danau Data.
+Menambahkan sumber data ke akun Data Lake Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/add-azdatalakeanalyticsdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Add-AzDataLakeAnalyticsDataSource [-Account] <String> [-Blob] <String> [-AccessK
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzDataLakeAnalyticsDataSource** menambahkan sumber data ke akun Analitik Danau Azure Data.
+Cmdlet **Add-AzDataLakeAnalyticsDataSource** menambahkan sumber data ke akun Azure Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -42,11 +45,11 @@ Cmdlet **Add-AzDataLakeAnalyticsDataSource** menambahkan sumber data ke akun Ana
 PS C:\>Add-AzDataLakeAnalyticsDataSource -Account "ContosoAdlA" -DataLakeStore "ContosoAdlS"
 ```
 
-Perintah ini menambahkan sumber data Data Lake Store ke akun Analitik Danau Data.
+Perintah ini menambahkan sumber data Data Lake Store ke akun Data Lake Analytics.
 
 ### Contoh 2
 
-Menambahkan sumber data ke akun Analitik Danau Data. (otomatisgenerated)
+Menambahkan sumber data ke akun Data Lake Analytics. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blob
-Menentukan nama akun Storage Blob Azure yang akan ditambahkan.
+Menentukan nama akun Azure Blob Storage untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataLakeStore
-Menentukan nama akun Azure Data Lake Store yang akan ditambahkan.
+Menentukan nama akun Azure Data Lake Store untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari akun Analitik Danau Data.
+Menentukan nama grup sumber daya akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

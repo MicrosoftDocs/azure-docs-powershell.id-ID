@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplicationPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/New-AzBatchApplicationPackage.md
 ms.openlocfilehash: dc82c1a88b134e26544a1f0e9a2c522f5511b3ae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139944475"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807314"
 ---
 # New-AzBatchApplicationPackage
 
@@ -19,7 +19,7 @@ ms.locfileid: "139944475"
 Membuat paket aplikasi dalam akun Batch.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/new-azbatchapplicationpackage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/new-azbatchapplicationpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] <Stri
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### AktifkanSesering
+### ActivateOnly
 ```
 New-AzBatchApplicationPackage [-AccountName] <String> [-ResourceGroupName] <String> [-ApplicationName] <String>
  [-ApplicationVersion] <String> [-Format] <String> [-ActivateOnly] [-DefaultProfile <IAzureContextContainer>]
@@ -47,12 +47,12 @@ Cmdlet **New-AzBatchApplicationPackage** membuat paket aplikasi dalam akun Azure
 PS C:\>New-AzBatchApplicationPackage -AccountName "ContosoBatch" -ResourceGroupName "ContosoBatchGroup" -ApplicationName "Litware" -ApplicationVersion "1.0" -FilePath "litware.1.0.zip" -Format "zip"
 ```
 
-Perintah ini akan membuat dan mengaktifkan versi 1.0 aplikasi Litware, dan mengunggah konten litware.1.0.zip sebagai konten paket aplikasi.
+Perintah ini membuat dan mengaktifkan aplikasi Litware versi 1.0, dan mengunggah konten litware.1.0.zip sebagai konten paket aplikasi.
 
 ## PARAMETERS
 
-### -Nama Akun
-Menentukan nama akun Kumpulan tempat cmdlet menambahkan paket aplikasi.
+### -AccountName
+Menentukan nama akun Batch tempat cmdlet ini menambahkan paket aplikasi.
 
 ```yaml
 Type: System.String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun Kumpulan.
+Menentukan nama grup sumber daya yang berisi akun Batch.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -188,16 +188,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzBatchApplication](./Get-AzBatchApplication.md)
+[Get-AzBatchAplikasi](./Get-AzBatchApplication.md)
 
 [Get-AzBatchApplicationPackage](./Get-AzBatchApplicationPackage.md)
 
-[New-AzBatchApplication](./New-AzBatchApplication.md)
+[New-AzBatchAplikasi](./New-AzBatchApplication.md)
 
-[Remove-AzBatchApplication](./Remove-AzBatchApplication.md)
+[Remove-AzBatchAplikasi](./Remove-AzBatchApplication.md)
 
 [Remove-AzBatchApplicationPackage](./Remove-AzBatchApplicationPackage.md)
 
-[Set-AzBatchApplication](./Set-AzBatchApplication.md)
+[Set-AzBatchAplikasi](./Set-AzBatchApplication.md)
 
 

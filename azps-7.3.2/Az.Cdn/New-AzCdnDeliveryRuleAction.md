@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azcdndel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRuleAction.md
-ms.openlocfilehash: 210d2c47824000a6826ce249039f151f3a7f526a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 824bd55fba0af140e086b8e657ee3741e0e13a70
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560552"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790700"
 ---
 # New-AzCdnDeliveryRuleAction
 
 ## SYNOPSIS
 Membuat tindakan pengiriman.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ New-AzCdnDeliveryRuleAction -SourcePattern <String> -Destination <String> [-Pres
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCdnDeliveryRule** membuat aturan pengiriman untuk CDN titik akhir.
+**Cmdlet New-AzCdnDeliveryRule** membuat aturan pengiriman untuk pembuatan titik akhir CDN.
 
 ## EXAMPLES
 
@@ -66,12 +69,12 @@ HeaderActionType    Action HeaderName      Value
 ModifyRequestHeader Append Accept-Encoding gzip
 ```
 
-Membuat aturan pengiriman sederhana.
+Buat aturan pengiriman sederhana.
 
 ## PARAMETERS
 
 ### -Tindakan
-Tindakan yang akan dilakukan.
+Tindakan untuk dijalankan.
 
 ```yaml
 Type: System.String
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CacheBeaviior
-Perilaku penyimpanan cache untuk tindakan
+### -CacheBehavior
+Perilaku singgahan untuk tindakan tersebut
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -CacheDuration
-Durasi untuk konten yang diperlukan untuk disingginggasi.
+Durasi yang kontennya perlu disinggahkan.
 Format yang diperbolehkan adalah \[d.\] hh:mm:ss
 
 ```yaml
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ### -CustomFragment
 Fragmen untuk ditambahkan ke URL pengalihan.
 Fragmen adalah bagian dari URL yang muncul setelah #.
-Jangan sertakan #.
+Jangan sertakan kesalahan #.
 
 ```yaml
 Type: System.String
@@ -168,9 +171,9 @@ Accept wildcard characters: False
 
 ### -CustomQueryString
 Kumpulan string kueri yang akan ditempatkan di URL pengalihan.
-Pengaturan nilai ini akan mengganti setiap string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
+Mengatur nilai ini akan menggantikan string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk.
 String kueri harus dalam \<key\>=\<value\> format.
-? dan & akan ditambahkan secara otomatis, jadi jangan sertakan mereka.
+? dan & akan ditambahkan secara otomatis, jadi jangan sertakan.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Tentukan URL relatif yang menjadi tujuan penulisan ulang permintaan di atas.
+Tentukan URL relatif tempat permintaan di atas akan ditulis ulang.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderActionType
-Apakah akan mengubah header permintaan atau header respons
+Apakah mengubah header permintaan atau header respons
 
 ```yaml
 Type: System.String
@@ -276,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -QueryParameter
-Parameter kueri untuk menyertakan atau mengecualikan (dipisahkan koma).
+Parameter kueri untuk disertakan atau dikecualikan (dipisahkan koma).
 
 ```yaml
 Type: System.String[]
@@ -290,8 +293,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -QueryStringBestringior
-Perilaku String Kueri untuk permintaan
+### -QueryStringBehavior
+Perilaku QueryString untuk permintaan
 
 ```yaml
 Type: System.String
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectType
-Tipe pengalihan aturan akan digunakan saat mengalihkan lalu lintas
+Tipe pengalihan yang akan digunakan aturan saat mengalihkan lalu lintas
 
 ```yaml
 Type: System.String
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourcePattern
-Tentukan pola URI permintaan yang mengidentifikasi tipe permintaan yang mungkin ditulis ulang. Jika nilai kosong, semua string akan cocok.
+Tentukan pola URI permintaan yang mengidentifikasi tipe permintaan yang mungkin ditulis ulang. Jika nilai kosong, semua string cocok.
 
 ```yaml
 Type: System.String
@@ -336,7 +339,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Nilai untuk tindakan tertentu.
+Nilai untuk tindakan yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -351,11 +354,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

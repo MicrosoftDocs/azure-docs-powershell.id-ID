@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrRecoveryPoint.md
 ms.openlocfilehash: 116b4b09a38b282140d00bbed4535c852da12f14
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140462375"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141861476"
 ---
 # Get-AzRecoveryServicesAsrRecoveryPoint
 
 ## SYNOPSIS
-Dapatkan poin pemulihan yang tersedia untuk item replikasi yang diproteksi.
+Mendapatkan titik pemulihan yang tersedia untuk item yang diproteksi replikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrrecoverypoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrrecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzRecoveryServicesAsrRecoveryPoint -Name <String> -ReplicationProtectedItem 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrRecoveryPoint** mendapatkan daftar titik pemulihan yang tersedia untuk replikasi item yang diproteksi. Daftar tersebut di urutan dari Titik Pemulihan terbaru ke yang paling lama, yang pertama adalah Paling Baru Diproses (RTO terendah).
+Cmdlet **Get-AzRecoveryServicesAsrRecoveryPoint** mendapatkan daftar titik pemulihan yang tersedia untuk item yang dilindungi replikasi. Daftar ini berurutan dari Titik Pemulihan terbaru ke terlama, yang pertama adalah Proses Terbaru (RTO terendah).
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzRecoveryServicesAsrRecoveryPoint** mendapatkan daftar titik pemul
 PS C:\> $RecoveryPoints = Get-AzRecoveryServicesAsrRecoveryPoint -ReplicationProtectedItem $ReplicationProtectedItem
 ```
 
-Mendapatkan poin pemulihan untuk item replikasi ASR tertentu yang diproteksi. $RecoveryPoints[0] akan memiliki Titik Pemulihan Diproses Terbaru (untuk RTO Terendah).
+Mendapatkan titik pemulihan untuk item yang diproteksi replikasi ASR tertentu. $RecoveryPoints[0] akan memiliki Titik Pemulihan Diproses Terbaru (untuk RTO Terendah).
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama titik pemulihan untuk mendapatkannya.
+Menentukan nama titik pemulihan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Menentukan objek Item Terproteksi Replikasi Situs Azure yang akan mendapatkan daftar poin pemulihan yang tersedia.
+Menentukan objek Item Terproteksi Azure Site Recovery Replikasi untuk mendapatkan daftar titik pemulihan yang tersedia.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

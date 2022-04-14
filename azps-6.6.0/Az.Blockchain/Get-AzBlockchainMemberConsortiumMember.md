@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Get-AzBlockchainMemberConsortiumMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Get-AzBlockchainMemberConsortiumMember.md
 ms.openlocfilehash: ff0761a6e587a3749e64a205c2288ce39b04d82a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979547"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141807080"
 ---
 # Get-AzBlockchainMemberConsortiumMember
 
 ## SYNOPSIS
-Mencantumkan anggota consortium untuk anggota premium.
+Mencantumkan daftar anggota konsorsium untuk anggota blockchain.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/get-azblockchainmemberconsortiummember) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/get-azblockchainmemberconsortiummember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzBlockchainMemberConsortiumMember -BlockchainMemberName <String> -ResourceG
 ```
 
 ## DESCRIPTION
-Mencantumkan anggota consortium untuk anggota premium.
+Mencantumkan daftar anggota konsorsium untuk anggota blockchain.
 
 ## EXAMPLES
 
-### Contoh 1: Lists the consortium members for acontoh member.
+### Contoh 1: Mencantumkan anggota konsorsium untuk anggota blockchain.
 ```powershell
 PS C:\> Get-AzBlockchainMemberConsortiumMember -BlockchainMemberName dolauli001 -ResourceGroupName testgroup
 
@@ -41,12 +41,12 @@ DateModified          DisplayName JoinDate              Name       Role  Status 
 11/19/2019 5:14:41 AM dolauli001  11/19/2019 5:01:20 AM dolauli001 ADMIN Ready  c9cbd920-c00c-427c-852b-8aaf38badaeb
 ```
 
-Perintah ini mencantumkan anggota consortium untuk anggotabelibeli.
+Perintah ini mencantumkan anggota konsorsium untuk anggota blockchain.
 
 ## PARAMETERS
 
-### -TemplatMemberName
-Nama anggota Blokir.
+### -BlockchainMemberName
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -76,8 +76,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -108,13 +108,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.IConsortiumMember
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IConsortiumMember
 
 ## CATATAN
 

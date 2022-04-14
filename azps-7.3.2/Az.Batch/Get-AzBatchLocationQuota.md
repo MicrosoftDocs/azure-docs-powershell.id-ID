@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.batch/get-azbatc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Get-AzBatchLocationQuota.md
-ms.openlocfilehash: 6f685b8bcb25df0c9fb39fb5220cdbd744e12f27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ffd29e4b43acf8cccf9aac1de1d0a9b43a3dd158
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373803"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791168"
 ---
 # Get-AzBatchLocationQuota
 
 ## SYNOPSIS
-Mendapatkan kuota layanan Kumpulan untuk langganan Anda pada lokasi tertentu.
+Mendapatkan kuota layanan Batch untuk langganan Anda di lokasi tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/get-azbatchlocationquota) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzBatchLocationQuota [-Location] <String> [-DefaultProfile <IAzureContextCon
 ```
 
 ## DESCRIPTION
-Mendapatkan kuota layanan Kumpulan untuk langganan tertentu pada lokasi tertentu.
+Mendapatkan kuota layanan Batch untuk langganan tertentu di lokasi tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kuota layanan Kumpulan untuk langganan di kawasan Barat AS
+### Contoh 1: Dapatkan kuota layanan Batch untuk langganan di kawasan AS Barat
 ```powershell
 Get-AzBatchLocationQuota -Location "westus"
 ```
@@ -40,13 +43,13 @@ Get-AzBatchLocationQuota -Location "westus"
           1            westus
 ```
 
-Perintah ini mendapatkan kuota langganan saat ini di kawasan AS Barat.
-Nilai pengembalian menunjukkan bahwa langganan ini hanya dapat membuat satu akun Kumpulan di kawasan tersebut.
+Perintah ini mendapatkan kuota untuk langganan saat ini di kawasan AS Barat.
+Nilai yang dikembalikan menunjukkan bahwa langganan ini hanya dapat membuat satu akun Batch di kawasan tersebut.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -61,8 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan tempat cmdlet ini memeriksa kuota.
-Untuk informasi selengkapnya, lihat Azure Regions (https://azure.microsoft.com/regions).
+Menentukan kawasan di mana cmdlet ini memeriksa kuota.
+Untuk informasi selengkapnya, lihat Kawasan Azure (https://azure.microsoft.com/regions).
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

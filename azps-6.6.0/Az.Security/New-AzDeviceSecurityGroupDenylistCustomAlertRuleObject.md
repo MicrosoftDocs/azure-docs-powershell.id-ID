@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject.md
 ms.openlocfilehash: c293f43a06f5b24daf6c2418af0354044cd3175b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140329235"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141859964"
 ---
 # New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject
 
 ## SYNOPSIS
-Membuat aturan pemberitahuan kustom tolak daftar yang baru untuk grup keamanan perangkat (Keamanan IoT)
+Membuat aturan pemberitahuan kustom daftar tolak baru untuk grup keamanan perangkat (Keamanan IoT)
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/new-azdevicesecuritygroupdenylistcustomalertruleobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/new-azdevicesecuritygroupdenylistcustomalertruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject -Enabled <Boolean> -Type 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject membuat daftar baru aturan pemberitahuan kustom yang telah di tolak untuk grup keamanan perangkat dalam solusi keamanan IoT.
+Cmdlet New-AzDeviceSecurityGroupDenylistCustomAlertRuleObject membuat daftar baru aturan peringatan kustom yang ditolak untuk grup keamanan perangkat dalam solusi keamanan IoT.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ ValueType: "String"
 DenylistValues: []
 ```
 
-Membuat aturan pemberitahuan kustom tolak baru dengan tipe kasar "SomeRuleType" dan status diatur ke desable
+Membuat aturan pemberitahuan kustom daftar tolak baru dengan tipe rull "SomeRuleType" dan status diatur ke desable
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DenylistValue
-Menolak nilai daftar.
+Tolak nilai daftar.
 
 ```yaml
 Type: System.String[]
@@ -78,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Apakah aturan diaktifkan.
+### -Difungsikan
+Aturan diaktifkan.
 
 ```yaml
 Type: System.Boolean
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Jenis aturan.
+Tipe aturan.
 
 ```yaml
 Type: System.String
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

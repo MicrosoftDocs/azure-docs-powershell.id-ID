@@ -4,16 +4,16 @@ ms.assetid: 7190C668-6A0C-4E1D-9B5A-0CEEF53E3F85
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: baa781938cfb3d0a89f38cb1a727f329bb295c79
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423248"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773097"
 ---
 # Add-AzureNodeWorkerRole
 
 ## SYNOPSIS
-Membuat file dan folder yang diperlukan untuk Node.js yang akan dihosting di awan melalui node.exe
+Membuat file dan folder yang diperlukan agar aplikasi Node.js dapat dihosting di awan melalui node.exe
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,30 +24,30 @@ Add-AzureNodeWorkerRole [-Name <String>] [-Instances <Int32>] [-Profile <AzureSM
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
-Cmdlet **Add-AzureNodeWorkerRole** membuat file dan folder yang diperlukan, terkadang disebut sebagai foldercakup, untuk aplikasi Node.js yang akan dihosting di awan melalui node.exe.
+Cmdlet **Add-AzureNodeWorkerRole** membuat file dan folder yang diperlukan, terkadang disebut sebagai perancah, agar aplikasi Node.js dihosting di awan melalui node.exe.
 
 ## EXAMPLES
 
-### Contoh 1: Peran pekerja contoh tunggal
+### Contoh 1: Peran pekerja instans tunggal
 ```
 PS C:\> Add-AzureWorkerRole MyWorkerRole
 ```
 
-Contoh ini menambahkan peran peran peran pekerja tunggal bernama **MyWorkerRole ke** aplikasi saat ini.
+Contoh ini menambahkan perancah untuk peran pekerja tunggal bernama **MyWorkerRole** ke aplikasi saat ini.
 
-### Contoh 2: Beberapa peran pekerja contoh
+### Contoh 2: Peran beberapa contoh pekerja
 ```
 PS C:\> Add-AzureNodeWorkerRole MyWorkerRole -I 2
 ```
 
-Contoh ini menambahkan peran pekerja tunggal bernama **MyWorkerRole** ke aplikasi saat ini, dengan hitungan contoh peran 2.
+Contoh ini menambahkan perancah untuk peran pekerja tunggal bernama **MyWorkerRole** ke aplikasi saat ini, dengan jumlah contoh peran 2.
 
 ## PARAMETERS
 
-### -Contoh
+### -Instances
 Menentukan jumlah contoh peran untuk peran pekerja ini.
 Defaultnya adalah 1.
 
@@ -64,8 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama peran pekerja tersebut.
-Nilai menentukan nama folder yang berisi folder folder untuk layanan node.js yang dihosting dalam peran pekerja.
+Menentukan nama peran pekerja.
+Nilai menentukan nama folder yang berisi perancah untuk layanan node.js yang dihosting dalam peran pekerja.
 Defaultnya adalah WorkerRole1.
 
 ```yaml
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

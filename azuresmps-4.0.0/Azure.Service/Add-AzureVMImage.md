@@ -4,16 +4,16 @@ ms.assetid: 02DECCEE-86C8-4662-9ED0-D1BDB4E687C2
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 8c14c1f8cb1cadc8e200afbbd71ad8fccb4eab16
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141773021"
 ---
 # Add-AzureVMImage
 
 ## SYNOPSIS
-Menambahkan gambar sistem operasi atau gambar mesin virtual baru ke repositori gambar.
+Menambahkan gambar sistem operasi baru atau gambar mesin virtual baru ke penyimpanan gambar.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -38,12 +38,12 @@ Add-AzureVMImage [-ImageName] <String> [-DiskConfig] <VirtualMachineImageDiskCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureVMImage** menambahkan gambar sistem operasi atau gambar mesin virtual baru ke penyimpanan gambar.
-Gambar tersebut adalah gambar sistem operasi umum, menggunakan Sysprep untuk Windows, atau, untuk Linux, menggunakan alat yang sesuai untuk distribusi.
+Cmdlet **Add-AzureVMImage** menambahkan gambar sistem operasi baru atau gambar mesin virtual baru ke penyimpanan gambar.
+Gambar adalah gambar sistem operasi umum, menggunakan Sysprep untuk Windows atau, untuk Linux, menggunakan alat yang sesuai untuk distribusi.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan gambar sistem operasi ke repositori
+### Contoh 1: Menambahkan gambar sistem operasi ke penyimpanan
 ```
 PS C:\> $S = New-AzureVMImageDiskConfigSet
 PS C:\> Set-AzureVMImageOSDiskConfig -DiskConfig $S -HostCaching ReadWrite -OSState "Generalized" -OS "Windows" -MediaLink $Link
@@ -54,12 +54,12 @@ PS C:\> $IMGName = "TestCREATEvmimage2";
 PS C:\> Add-AzureVMImage -ImageName $IMGName -Label "Test1" -Description "Test1" -DiskConfig $S -Eula "http://www.contoso.com" -ImageFamily Windows -PublishedDate (Get-Date) -PrivacyUri "http://www.test.com" -RecommendedVMSize Small -IconName "Icon01" -SmallIconName "SmallIcon01" -ShowInGui
 ```
 
-Contoh ini menambahkan gambar sistem operasi ke tempat penyimpanan.
+Contoh ini menambahkan gambar sistem operasi ke repository.
 
 ## PARAMETERS
 
 ### -Deskripsi
-Menentukan deskripsi dari gambar sistem operasi.
+Menentukan deskripsi citra sistem operasi.
 
 ```yaml
 Type: String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskConfig
-Menentukan konfigurasi disk sistem operasi untuk gambar mesin virtual.
+Menentukan konfigurasi disk sistem operasi untuk citra mesin virtual.
 
 ```yaml
 Type: VirtualMachineImageDiskConfigSet
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -IconName
-Menentukan nama ikon yang digunakan saat gambar ditambahkan ke repositori.
+Menentukan nama ikon yang digunakan saat gambar ditambahkan ke penyimpanan.
 
 ```yaml
 Type: String
@@ -150,16 +150,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Menentukan label untuk memberi gambar.
+Menentukan label untuk memberikan gambar.
 
 ```yaml
 Type: String
@@ -203,7 +203,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -MediaLocation
+### -MediaLokasi
 Menentukan lokasi halaman blob fisik tempat gambar berada.
 Ini adalah tautan ke halaman blob di penyimpanan langganan saat ini.
 
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivacyUri
-Menentukan URL yang menunjuk ke dokumen yang berisi kebijakan privasi terkait dengan gambar sistem operasi.
+Menentukan URL yang mengarah ke dokumen yang berisi kebijakan privasi yang terkait dengan citra sistem operasi.
 
 ```yaml
 Type: Uri
@@ -262,8 +262,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -293,11 +293,11 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedVMSize
-Menentukan ukuran yang akan digunakan untuk mesin virtual yang dibuat dari gambar sistem operasi.
+Menentukan ukuran yang akan digunakan untuk mesin virtual yang dibuat dari citra sistem operasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
-- Sedang
+- Menengah
 - Besar
 - ExtraLarge
 - A5
@@ -332,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -SmallIconName
-Menentukan nama ikon kecil yang digunakan saat gambar ditambahkan ke repositori.
+Menentukan nama ikon kecil yang digunakan saat gambar ditambahkan ke penyimpanan.
 
 ```yaml
 Type: String
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -361,10 +361,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVMImage](./Get-AzureVMImage.md)
 
-[Remove-AzureVMImage](./Remove-AzureVMImage.md)
+[Hapus-AzureVMImage](./Remove-AzureVMImage.md)
 
-[Save-AzureVMImage](./Save-AzureVMImage.md)
+[Simpan-AzureVMImage](./Save-AzureVMImage.md)
 
-[Update-AzureVMImage](./Update-AzureVMImage.md)
+[Pembaruan-AzureVMImage](./Update-AzureVMImage.md)
 
 

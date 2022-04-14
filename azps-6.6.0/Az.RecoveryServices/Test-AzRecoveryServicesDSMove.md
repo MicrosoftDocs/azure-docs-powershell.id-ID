@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Test-AzRecoveryServicesDSMove.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Test-AzRecoveryServicesDSMove.md
 ms.openlocfilehash: c3c3099d102c6a185d0e23ff40af6c2e49369f30
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139970187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141860936"
 ---
 # Test-AzRecoveryServicesDSMove
 
 ## SYNOPSIS
-Cmdlet ini menjalankan validasi yang diperlukan untuk Pemindahan DS.
+Cmdlet ini melakukan validasi yang diperlukan untuk DS Move.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/test-azrecoveryservicesdsmove) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/test-azrecoveryservicesdsmove) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Test-AzRecoveryServicesDSMove [-Force] [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet ini menjalankan validasi yang diperlukan untuk Pemindahan DS. Cmdlet ini menghasilkan boolean true jika semua validasi berhasil melewatinya. Cmdlet ini wajib dijalankan sebelum Initialize-AzRecoveryServicesDSMove cmdlet. Cmdlet ini sangat berguna untuk skenario pemindahan DS lintas penyewa.
+Cmdlet ini melakukan validasi yang diperlukan untuk DS Move. Cmdlet ini menghasilkan boolean true jika semua validasi berhasil lolos. Wajib menjalankan cmdlet ini sebelum cmdlet Initialize-AzRecoveryServicesDSMove. Cmdlet ini berguna untuk skenario perpindahan DS penyewa silang.
 
 ## EXAMPLES
 
-### Contoh 1: Memulai Pemindahan DS untuk salinan langganan silang
+### Contoh 1: Inisialisasi Pemindahan DS untuk salinan lintas langganan
 ```powershell
 PS C:\> Set-AzContext -SubscriptionName $targetSubscription
 PS C:\> $validated = Test-AzRecoveryServicesDSMove -SourceVault $srcVault -TargetVault $trgVault -Force
@@ -42,9 +42,9 @@ PS C:\> if($validated) {
 >> }
 ```
 
-Cmdlet pertama mengatur konteks langganan target. Cmdlet kedua memicu beberapa validasi wajib pada penyimpanan target.
+Cmdlet pertama menetapkan konteks langganan target. Cmdlet kedua memicu beberapa validasi wajib pada kubah target.
 Cmdlet ketiga mengatur konteks langganan sumber.
-Lalu berdasarkan Test-AzRecoveryServicesDSMove cmdlet, kami mengambil CorrelationId menggunakan Initialize-AzRecoveryServicesDSMove cmdlet. $corr dapat diinput ke cmdlet Salin.
+Kemudian berdasarkan Test-AzRecoveryServicesDSMove cmdlet state, kami mengambil CorrelationId menggunakan cmdlet Initialize-AzRecoveryServicesDSMove. $corr dapat diinput ke cmdlet Salin.
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Memaksa operasi pemindahan data (mencegah dialog konfirmasi).
 Parameter ini bersifat opsional.
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceVault
-Objek vault sumber untuk memicu pemindahan data.
+Objek kubah sumber untuk memicu perpindahan data.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetVault
-Objek vault target tempat data harus dipindahkan.
+Objek kubah target tempat data harus dipindahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.ARSVault
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.RecoveryServices.VAULT
+### Microsoft.Azure.Commands.RecoveryServices.ARSVault
 
 ## OUTPUTS
 

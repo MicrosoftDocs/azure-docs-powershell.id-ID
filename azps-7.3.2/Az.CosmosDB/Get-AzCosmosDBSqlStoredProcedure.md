@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlStoredProcedure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBSqlStoredProcedure.md
-ms.openlocfilehash: 714196e0709b5db82dc2cd68c49ad64a93d48317
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 11e98343fcd2d52ee762eaf9c87c5272c29161b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395110"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141789674"
 ---
 # Get-AzCosmosDBSqlStoredProcedure
 
 ## SYNOPSIS
 Dapatkan CosmosDB Sql StoredProcedure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbsqlstoredprocedure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzCosmosDBSqlStoredProcedure [-Name <String>] -ParentObject <PSSqlContainerG
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCosmosDBSqlStoredProcedure** mendapatkan daftar semua cmdlet CosmosDB Sql StoredProcedures yang sudah ada untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName serta mendapatkan satu CosmosDB Sql StoredProcedure untuk ResourceGroupName, AccountName, DatabaseName, ContainerName dan StoredProcedureName.
+Cmdlet **Get-AzCosmosDBSqlStoredProcedure** mendapatkan daftar semua CosmosDB Sql StoredProcedures yang sudah ada untuk ResourceGroupName, AccountName, DatabaseName, dan ContainerName dan mendapatkan satu CosmosDB Sql StoredProcedure untuk ResourceGroupName, AccountName, DatabaseName, ContainerName, dan StoredProcedureName.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Resource                       : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlS
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengadaan yang disimpan.
+Nama Prcodecure yang Disimpan.
 
 ```yaml
 Type: System.String
@@ -153,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRmVM.md
 ms.openlocfilehash: 18fd719662fbbe46276927fb05fbff021d8bcb96
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425458"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141886211"
 ---
 # Set-AzureRmVM
 
 ## SYNOPSIS
-Menandai mesin virtual sebagai di generalisasi.
+Menandai mesin virtual sebagai generalisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -47,22 +47,22 @@ Set-AzureRmVM [-Id] <String> [-Name] <String> [-Redeploy] [-AsJob] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVM** menandai komputer virtual sebagai umum.
-Sebelum Menjalankan cmdlet ini, masuk ke komputer virtual dan gunakan Sysprep untuk menyiapkan hard disk.
+Cmdlet **Set-AzureRmVM** menandai mesin virtual sebagai umum.
+Sebelum Anda menjalankan cmdlet ini, masuk ke mesin virtual dan gunakan Sysprep untuk menyiapkan hard disk.
 
 ## EXAMPLES
 
-### Contoh 1: Tandai mesin virtual sebagai generalisasi
+### Contoh 1: Menandai mesin virtual sebagai generalisasi
 ```
 PS C:\> Set-AzureRmVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized
 ```
 
-Perintah ini menandai mesin virtual bernama VirtualMachine07 sebagai umum.
+Perintah ini menandai mesin virtual bernama VirtualMachine07 seperti yang digeneralisasi.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Generalized
-Menunjukkan bahwa cmdlet ini menandai mesin virtual sebagai generalisasi.
+Menunjukkan bahwa cmdlet ini menandai mesin virtual seperti yang disertifikasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID Sumber Daya komputer virtual.
+Menentukan ID Sumber Daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 ```
 
 ### -Redeploy
-Cmdlet ini menunjukkan bahwa cmdlet ini secara manual akan memindahkan komputer virtual ke host Azure lain untuk memperbaiki masalah apa pun.
-Jika Anda memindahkan kembali mesin virtual, mesin virtual akan dimulai ulang, yang mengakibatkan hilangnya data drive ephemeral.
+Menunjukkan bahwa cmdlet ini secara manual menampung mesin virtual ke host Azure yang berbeda untuk memperbaiki masalah apa pun.
+Jika Anda menebus mesin virtual, mesin virtual akan dimulai ulang, yang menyebabkan hilangnya data drive sementara.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

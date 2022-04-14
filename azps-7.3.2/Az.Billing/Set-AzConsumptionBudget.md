@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.billing/set-azco
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Set-AzConsumptionBudget.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Billing/Billing/help/Set-AzConsumptionBudget.md
-ms.openlocfilehash: bcde9631c8e4f8c052aff9e07e474c7923eaab44
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3943ae62c13e63b60051d831be019bd7e06069ef
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189037"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790952"
 ---
 # Set-AzConsumptionBudget
 
 ## SYNOPSIS
 Perbarui anggaran dalam langganan atau grup sumber daya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.billing/set-azconsumptionbudget) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Set-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -Name <String
  [-ContactRole <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Pemipaan
+### Pipa
 ```
 Set-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObject <PSBudget> [-Amount <Decimal>]
  [-Category <String>] [-TimeGrain <String>] [-StartDate <DateTime>] [-EndDate <DateTime>]
@@ -45,7 +48,7 @@ Set-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObject 
  [<CommonParameters>]
 ```
 
-### Pemipaan dan Pemberitahuan
+### Pipa dan Pemberitahuan
 ```
 Set-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObject <PSBudget> [-Amount <Decimal>]
  [-Category <String>] [-TimeGrain <String>] [-StartDate <DateTime>] [-EndDate <DateTime>]
@@ -55,11 +58,11 @@ Set-AzConsumptionBudget [-DefaultProfile <IAzureContextContainer>] -InputObject 
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzConsumptionBudget cmdlet memperbarui anggaran dalam langganan atau grup sumber daya.
+Cmdlet Set-AzConsumptionBudget memperbarui anggaran baik dalam langganan atau grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui anggaran menggunakan jumlah baru dengan nama anggaran di tingkat langganan
+### Contoh 1: Memperbarui anggaran dengan jumlah baru dengan nama anggaran pada tingkat langganan
 ```powershell
 Set-AzConsumptionBudget -Name PSBudget -Amount 75
 ```
@@ -76,7 +79,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 2: Perbarui anggaran dengan pemberitahuan saat biaya atau penggunaan mencapai ambang batas 90 persen dari jumlah pada tingkat langganan
+### Contoh 2: Memperbarui anggaran dengan pemberitahuan ketika biaya atau penggunaan mencapai ambang batas 90 persen dari jumlah pada tingkat langganan
 ```powershell
 Set-AzConsumptionBudget -Name PSBudget -NotificationKey notificationKey-ps1234 -NotificationEnabled -NotificationThreshold 90 -ContactEmail johndoe@contoso.com,janesmith@contoso.com -ContactRole Owner,Reader,Contributor
 ```
@@ -98,7 +101,7 @@ TimePeriod:  EndDate:  11/1/2018 12:00:00 AM
 Type:  Microsoft.Consumption/budgets
 ```
 
-### Contoh 3: Memperbarui anggaran dengan jumlah baru dengan nama anggaran pada tingkat grup sumber daya
+### Contoh 3: Memperbarui anggaran dengan jumlah baru dengan nama anggaran di tingkat grup sumber daya
 ```powershell
 Set-AzConsumptionBudget -ResourceGroupName RGBudgets -Name PSBudgetRG -Amount 75
 ```
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kategori
-Kategori anggaran bisa menjadi biaya atau penggunaan.
+Kategori anggaran dapat berupa biaya atau penggunaan.
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactEmail
-Alamat email untuk mengirim pemberitahuan anggaran ketika ambang batas telah melebihi batas.
+Alamat email untuk mengirim pemberitahuan anggaran ke saat ambang batas melebihi batas.
 
 ```yaml
 Type: System.String[]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactGroup
-Grup tindakan untuk mengirim pemberitahuan anggaran ke saat ambang batas melebihi batas.
+Grup tindakan untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
 
 ```yaml
 Type: System.String[]
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContactRole
-Peran kontak untuk mengirim pemberitahuan anggaran ke bila ambang batas telah melebihi batas.
+Peran kontak untuk mengirim pemberitahuan anggaran ke saat ambang batas terlampaui.
 
 ```yaml
 Type: System.String[]
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-Tanggal selesai (DD-MM-YYY dalam UTC) periode waktu anggaran.
+Tanggal akhir (YYYY-MM-DD dalam UTC) periode waktu anggaran.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -287,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationKey
-Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan tombol pemberitahuan aktif, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
+Kunci pemberitahuan yang terkait dengan anggaran, diperlukan untuk membuat pemberitahuan dengan sakelar pemberitahuan diaktifkan, ambang pemberitahuan, email kontak, grup kontak, atau peran kontak.
 
 ```yaml
 Type: System.String
@@ -303,8 +306,8 @@ Accept wildcard characters: False
 
 ### -NotificationThreshold
 Nilai ambang batas yang terkait dengan pemberitahuan.
-Pemberitahuan dikirim saat biaya atau penggunaan telah melampaui ambang batas.
-Selalu persen dan harus berada di antara 0 dan 1000.
+Pemberitahuan dikirim ketika biaya atau penggunaan melebihi ambang batas.
+Selalu persen dan harus antara 0 dan 1000.
 
 ```yaml
 Type: System.Nullable`1[System.Decimal]
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceFilter
-Daftar contoh sumber daya yang dipisahkan koma untuk difilter.
+Daftar instans sumber daya yang dipisahkan koma untuk difilter.
 
 ```yaml
 Type: System.String[]
@@ -364,10 +367,10 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-Tanggal mulai (DD-MM-YYY dalam UTC) periode waktu anggaran.
-Tidak sebelum bulan saat ini untuk grain waktu bulanan.
-Tidak sebelum tiga bulan untuk tinggian waktu per kuartal.
-Tidak sebelum dua belas bulan untuk tinggi waktu tahunan.
+Tanggal mulai (YYYY-MM-DD dalam UTC) periode waktu anggaran.
+Tidak sebelum bulan saat ini untuk biji-bijian waktu bulanan.
+Tidak sebelum tiga bulan untuk biji-bijian kuartalan waktu.
+Tidak sebelum dua belas bulan untuk biji-bijian tahunan.
 Tanggal mulai di masa mendatang tidak lebih dari tiga bulan.
 
 ```yaml
@@ -383,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeGrain
-Tinggi waktu anggaran dapat bulanan, kuartal, atau tahunan.
+Butir waktu anggaran bisa bulanan, kuartalan, atau tahunan.
 
 ```yaml
 Type: System.String
@@ -399,7 +402,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,7 +418,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -430,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -441,7 +444,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Consumption.Models.PSBudget
 
 ## CATATAN
-- Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia bagi Perjanjian Enterprise pelanggan.
-- PowerShell SDK untuk Konsumsi menggunakan versi Anggaran API yang lebih lama dan beberapa item yang tidak kompatibel mundur seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
+- Saat ini, SDK PowerShell untuk Pemakaian hanya tersedia untuk pelanggan Perjanjian Enterprise.
+- SDK PowerShell untuk Pemakaian menggunakan versi API Anggaran yang lebih lama dan beberapa item yang tidak kompatibel seperti daftar Anggaran dengan filter tidak akan berfungsi seperti yang diharapkan.
 
 ## RELATED LINKS

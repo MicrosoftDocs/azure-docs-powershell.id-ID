@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cloudservice/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CloudService/help/New-AzCloudServiceExtensionObject.md
-ms.openlocfilehash: 5b6baef6828a1a02da8b5c6690fc6d788b8c95b3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 82118ff29b74e0e5537d709169a11fb5a56647d4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010601"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141790232"
 ---
 # New-AzCloudServiceExtensionObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Ekstensi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cloudservice/new-azcloudserviceextensionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,13 +38,13 @@ Membuat objek dalam memori untuk Ekstensi
 $extension = New-AzCloudServiceExtensionObject -Name "GenevaExtension" -Publisher "Microsoft.Azure.Geneva" -Type "GenevaMonitoringPaaS" -TypeHandlerVersion "2.14.0.2"
 ```
 
-Perintah ini membuat objek ekstensi Geneva yang digunakan untuk membuat atau memperbarui layanan awan.
+Perintah ini membuat objek ekstensi Jenewa yang digunakan untuk membuat atau memperbarui layanan awan.
 Untuk detail selengkapnya, lihat New-AzCloudService.
 
 ## PARAMETERS
 
 ### -AutoUpgradeMinorVersion
-Tentukan secara eksplisit apakah CRP bisa secara otomatis memutakhirkan tipeHandlerVersion ke versi minor yang lebih tinggi ketika mereka menjadi tersedia.
+Tentukan secara eksplisit apakah CRP dapat secara otomatis memutakhirkan typeHandlerVersion ke versi minor yang lebih tinggi ketika tersedia.
 
 ```yaml
 Type: System.Boolean
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectedSetting
-Pengaturan yang diproteksi untuk ekstensi yang dienkripsi sebelum dikirimkan ke VM.
+Pengaturan terproteksi untuk ekstensi yang dienkripsi sebelum dikirim ke VM.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Ketik.
+Jenis.
 
 ```yaml
 Type: System.String
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,18 +3,18 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: 1C18EE5D-A916-4776-ABAE-A7B24FA74108
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: b1c017168db66a52d63022732f338736bd974ed40b7ebaa8e60693421928314e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0bbcba87698652bbdedfd0a50e8fffde6c47b2ae
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141772928"
 ---
 # Get-AzureAutomationJobOutput
 
 ## SYNOPSIS
 
-Mendapatkan output pekerjaan Otomatisasi Azure.
+Mendapatkan output dari pekerjaan Azure Automation.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -29,21 +29,21 @@ Get-AzureAutomationJobOutput -Id <Guid> [-Stream <StreamType>] [-StartTime <Date
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationJobOutput** mendapatkan output pekerjaan Microsoft Azure Otomatisasi.
+Cmdlet **Get-AzureAutomationJobOutput** mendapatkan output pekerjaan Microsoft Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan output pekerjaan Azure Automation
+### Contoh 1: Dapatkan output dari pekerjaan Azure Automation
 ```
 PS C:\> Get-AzureAutomationJobOutput -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -Stream "Any"
 ```
 
-Perintah ini mendapatkan semua output pekerjaan yang memiliki ID yang ditentukan.
+Perintah ini mendapatkan semua output dari pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi Azure.
+Menentukan nama akun Azure Automation.
 
 ```yaml
 Type: String
@@ -73,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -105,9 +105,9 @@ Accept wildcard characters: False
 
 ### -Stream
 Menentukan tipe output.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- Apa pun
+- Setiap
 - Debug
 - Kesalahan
 - Output
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
