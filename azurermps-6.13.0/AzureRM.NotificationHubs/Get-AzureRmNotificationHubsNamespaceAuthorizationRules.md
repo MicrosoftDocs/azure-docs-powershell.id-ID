@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Get-AzureRmNotificationHubsNamespaceAuthorizationRules.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/NotificationHubs/Commands.NotificationHubs/help/Get-AzureRmNotificationHubsNamespaceAuthorizationRules.md
 ms.openlocfilehash: 9546039459792d5ef72807d8466f728f2060a346
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428358"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141776667"
 ---
 # Get-AzureRmNotificationHubsNamespaceAuthorizationRules
 
 ## SYNOPSIS
-Mendapatkan informasi tentang aturan otorisasi terkait dengan ruang nama hub pemberitahuan.
+Mendapatkan informasi tentang aturan otorisasi yang terkait dengan ruang nama hub pemberitahuan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,22 +28,22 @@ Get-AzureRmNotificationHubsNamespaceAuthorizationRules [-ResourceGroup] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmNotificationHubsNamespaceAuthorizationRules** mengembalikan informasi tentang aturan otorisasi Shared Access Signature (SAS) yang terkait dengan ruang nama hub pemberitahuan.
+Cmdlet **Get-AzureRmNotificationHubsNamespaceAuthorizationRules** mengembalikan informasi tentang aturan otorisasi Tanda Tangan Akses Bersama (SAS) yang terkait dengan ruang nama hub pemberitahuan.
 Anda bisa mengembalikan informasi tentang semua aturan yang terkait dengan ruang nama.
-Alternatifnya, dan dengan menyertakan parameter *AuthorizationRule,* Anda dapat mengembalikan informasi untuk aturan tertentu.
+Alternatifnya, dan dengan menyertakan parameter *AuthorizationRule* , Anda dapat mengembalikan informasi untuk aturan tertentu.
 Aturan otorisasi mengelola akses ke ruang nama.
-Ini dilakukan melalui pembuatan link, sebagai URI, berdasarkan pada tingkat izin yang berbeda.
-Tingkat platform dapat menjadi salah satu hal berikut: 
-- Dengarkan
-- Kirim
+Hal ini dilakukan melalui pembuatan tautan, sebagai URI, berdasarkan tingkat izin yang berbeda.
+Tingkat platform dapat berupa salah satu hal berikut: 
+- Mendengarkan
+- Mengirim
 - Kelola Klien diarahkan ke salah satu URI ini berdasarkan tingkat izin yang sesuai.
-Misalnya, klien yang diberikan izin Dengarkan akan diarahkan ke URI untuk izin tersebut.
-Cmdlet ini hanya mendapatkan aturan otorisasi terkait dengan ruang nama.
+Misalnya, klien yang diberi izin Dengar akan diarahkan ke URI untuk izin tersebut.
+Cmdlet ini hanya mendapatkan aturan otorisasi yang terkait dengan ruang nama.
 Untuk mendapatkan informasi tentang ruang nama itu sendiri, gunakan Get-AzureRmNotificationHubsNamespace.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang semua aturan otorisasi ditetapkan ke ruang nama
+### Contoh 1: Dapatkan informasi tentang semua aturan otorisasi yang ditetapkan ke ruang nama
 ```
 PS C:\>Get-AzureRmNotificationHubsNamespaceAuthorizationRules -Namespace "ContosoNamespace" -ResourceGroup "ContosoNotificationsGroup"
 ```
@@ -56,13 +56,13 @@ PS C:\>Get-AzureRmNotificationHubsNamespaceAuthorizationRules -Namespace "Contos
 ```
 
 Perintah ini mendapatkan informasi tentang aturan otorisasi ruang nama tunggal bernama ListenRule.
-Anda harus menyertakan ruang nama dan grup sumber daya saat Anda mendapatkan informasi untuk aturan otorisasi tertentu.
+Anda harus menyertakan ruang nama dan grup sumber daya saat mendapatkan informasi untuk aturan otorisasi tertentu.
 
 ## PARAMETERS
 
 ### -AuthorizationRule
 Menentukan nama aturan autentikasi SAS.
-Aturan ini menentukan tipe akses yang pengguna miliki ke ruang nama.
+Aturan ini menentukan tipe akses yang dimiliki pengguna ke ruang nama.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroup
-Menentukan grup sumber daya di mana aturan otorisasi ditetapkan.
-Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang membantu manajemen inventaris dan administrasi Azure.
+Menentukan grup sumber daya tempat aturan otorisasi ditetapkan.
+Grup sumber daya menata item seperti ruang nama, hub pemberitahuan, dan aturan otorisasi dengan cara yang hanya membantu manajemen inventaris dan administrasi Azure.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -140,9 +140,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmNotificationHubsNamespace](./Get-AzureRmNotificationHubsNamespace.md)
 
-[New-AzureRmNotificationHubsNamespace](./New-AzureRmNotificationHubsNamespace.md)
+[Baru-AzureRmNotificationHubsNamespace](./New-AzureRmNotificationHubsNamespace.md)
 
-[Remove-AzureRmNotificationHubsNamespace](./Remove-AzureRmNotificationHubsNamespace.md)
+[Hapus-AzureRmNotificationHubsNamespace](./Remove-AzureRmNotificationHubsNamespace.md)
 
 [Set-AzureRmNotificationHubsNamespace](./Set-AzureRmNotificationHubsNamespace.md)
 

@@ -5,11 +5,11 @@ ms.assetid: 38855E74-F30C-43DF-8D94-ABD7872BCE11
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermapplicationgatewayauthenticationcertificate
 schema: 2.0.0
 ms.openlocfilehash: 4d664018592f05203c684a896f0a0701940301a6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425369"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781702"
 ---
 # Add-AzureRmApplicationGatewayAuthenticationCertificate
 
@@ -39,7 +39,7 @@ Cmdlet **Add-AzureRmApplicationGatewayAuthenticationCertificate** menambahkan se
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan nama gateway aplikasi di mana cmdlet ini menambahkan sertifikat autentikasi.
+Menentukan nama gateway aplikasi tempat cmdlet ini menambahkan sertifikat autentikasi.
 
 ```yaml
 Type: PSApplicationGateway
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFile
-Menentukan jalur sertifikat autentikasi yang penambahan cmdlet ini.
+Menentukan jalur sertifikat autentikasi yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama sertifikat yang tambahkan cmdlet ini ke gateway aplikasi.
+Menentukan nama sertifikat yang ditambahkan cmdlet ini ke gateway aplikasi.
 
 ```yaml
 Type: String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,7 +141,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApplicationGatewayAuthenticationCertificate](./New-AzureRmApplicationGatewayAuthenticationCertificate.md)
 
-[Remove-AzureRmApplicationGatewayAuthenticationCertificate](./Remove-AzureRmApplicationGatewayAuthenticationCertificate.md)
+[Hapus-AzureRmApplicationGatewayAuthenticationCertificate](./Remove-AzureRmApplicationGatewayAuthenticationCertificate.md)
 
 [Set-AzureRmApplicationGatewayAuthenticationCertificate](./Set-AzureRmApplicationGatewayAuthenticationCertificate.md)
 

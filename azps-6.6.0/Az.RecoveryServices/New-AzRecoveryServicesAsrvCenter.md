@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrvCenter.md
 ms.openlocfilehash: 22145e171f6fc2755b400f1bb32b38c666a205db
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247877"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907581"
 ---
 # New-AzRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
-Menambahkan server vCenter untuk menemukan item yang diproteksi darinya.
+Menambahkan server vCenter untuk menemukan item yang dapat dilindungi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvcenter) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvcenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzRecoveryServicesAsrvCenter -Fabric <ASRFabric> -Name <String> -Account <AS
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrvCenter** menambahkan server vCenter untuk menemukan item yang diproteksi darinya. Cmdlet ini mendaftarkan server vCenter untuk penemuan dengan server Konfigurasi.
+Cmdlet **New-AzRecoveryServicesAsrvCenter** menambahkan server vCenter untuk menemukan item yang dapat dilindungi. Cmdlet ini mendaftarkan server vCenter untuk penemuan dengan server Konfigurasi.
 
 ## EXAMPLES
 
@@ -39,11 +39,11 @@ PS C:\> New-AzRecoveryServicesAsrvCenterServer -Account $ConfigServer.FabricSpec
 Asr Job for vCenter creation.
 ```
 
-Menambahkan server vCenter untuk menemukan item yang diproteksi darinya.
+Menambahkan server vCenter untuk menemukan item yang dapat dilindungi.
 
 ### Contoh 2
 
-Menambahkan server vCenter untuk menemukan item yang diproteksi darinya. (otomatisgenerated)
+Menambahkan server vCenter untuk menemukan item yang dapat dilindungi. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzRecoveryServicesAsrvCenter -Account $fabric.FabricSpecificDetails.RunAsAccounts[0] -Fabric $Fabric -IpOrHostName <String> -Name 'V2VM' -Port <Int32>
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Kain ASR terkait dengan server Konfigurasi.
+Kain ASR yang terkait dengan server Konfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama yang mudah digunakan untuk server vCenter.
+Nama yang mudah dikenali untuk server vCenter.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Port TCP di server vCenter yang akan digunakan untuk penemuan.
+Port TCP di server vCenter untuk digunakan untuk penemuan.
 
 ```yaml
 Type: System.Int32
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

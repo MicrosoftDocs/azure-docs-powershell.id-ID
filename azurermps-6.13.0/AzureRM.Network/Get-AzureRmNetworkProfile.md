@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkProfile.md
 ms.openlocfilehash: 5bdd5e5d5212564afb1f9b06f220e8c452bcbbaa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140857034"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821609"
 ---
 # Get-AzureRmNetworkProfile
 
 ## SYNOPSIS
-Mendapatkan sumber daya tingkat atas profil jaringan yang sudah ada
+Mendapatkan sumber daya tingkat teratas profil jaringan yang sudah ada
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -51,7 +51,7 @@ Get-AzureRmNetworkProfile -ResourceId <String> -ExpandResource <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmNetworkProfile** mengambil sumber daya tingkat teratas profil jaringan yang sudah ada
+Cmdlet **Get-AzureRmNetworkProfile** mengambil sumber daya tingkat atas profil jaringan yang sudah ada
 
 ## EXAMPLES
 
@@ -60,7 +60,7 @@ Cmdlet **Get-AzureRmNetworkProfile** mengambil sumber daya tingkat teratas profi
 $networkProfile = Get-AzureRmNetworkProfile -Name np1 -ResourceGroupName rg1
 ```
 
-Ini mengambil np1 profil jaringan di grup sumber daya rg1
+Ini mengambil profil jaringan np1 dalam grup sumber daya rg1
 
 ## PARAMETERS
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id manajer sumber daya Azure profil jaringan.
+Id manajer sumber daya Azure dari profil jaringan.
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

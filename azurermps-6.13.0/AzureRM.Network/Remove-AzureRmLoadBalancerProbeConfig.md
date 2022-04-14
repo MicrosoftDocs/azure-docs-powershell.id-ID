@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmLoadBalancerProbeConfig.md
 ms.openlocfilehash: c52546ba0477a2911ac34533060d7a47df0b0698
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415687"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820178"
 ---
 # Remove-AzureRmLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi konfigurasi konfigurasi konfigurasi konfigurasi dari penyeimbang muat.
+Menghapus konfigurasi probe dari load balancer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,23 +28,23 @@ Remove-AzureRmLoadBalancerProbeConfig -LoadBalancer <PSLoadBalancer> [-Name <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmLoadBalancerProbeConfig** menghapus konfigurasi konfigurasi cmdlet dari penyeimbang muat.
+Cmdlet **Remove-AzureRmLoadBalancerProbeConfig** menghapus konfigurasi probe dari load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi konfigurasi konfigurasi konfigurasi dari penyeimbang muat
+### Contoh 1: Menghapus konfigurasi probe dari load balancer
 ```
 PS C:\>$loadbalancer = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:> Remove-AzureRmLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di $loadbalancer variabel.
-Perintah kedua menghapus konfigurasi yang bernama MyProbe dari penyeimbang muat dalam $loadbalancer.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $loadbalancer.
+Perintah kedua menghapus konfigurasi bernama MyProbe dari load balancer di $loadbalancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang berisi konfigurasi cmdlet ini.
+Menentukan penyeimbang beban yang berisi konfigurasi probe yang dihapus cmdlet ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi konfigurasi ini yang dihapus cmdlet ini.
+Menentukan nama konfigurasi probe yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

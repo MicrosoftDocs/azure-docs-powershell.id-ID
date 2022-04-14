@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIdentity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayIdentity.md
-ms.openlocfilehash: a391b8ddf8ef732b3dd693bc690cc7d04464d34a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 46863e87dc5c018d23e224d9e30c6279183e1beb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392895"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141935007"
 ---
 # Get-AzApplicationGatewayIdentity
 
 ## SYNOPSIS
 Dapatkan identitas yang ditetapkan ke gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayidentity) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ PS C:\> $gw = Get-AzApplicationGateway -Name $appgwName -ResourceGroupName $resg
 PS C:\> $identity = Get-AzApplicationGatewayIdentity -ApplicationGateway $gw
 ```
 
-Contoh ini memperlihatkan cara mendapatkan identitas gateway aplikasi dari Gateway Aplikasi.
+Contoh ini memperlihatkan cara mendapatkan identitas gateway aplikasi dari Application Gateway.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmLoadBalancerProbeConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmLoadBalancerProbeConfig.md
 ms.openlocfilehash: 62ed11a2819a2b0c31756c90ce4ab623a1feae91
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419581"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822108"
 ---
 # Add-AzureRmLoadBalancerProbeConfig
 
 ## SYNOPSIS
-Menambahkan konfigurasi configuration configuration to a load balancer.
+Menambahkan konfigurasi probe ke penyeimbang muatan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,21 +29,21 @@ Add-AzureRmLoadBalancerProbeConfig -LoadBalancer <PSLoadBalancer> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmLoadBalancerProbeConfig** menambahkan konfigurasi konfigurasi konfigurasi cmdlet ke penyeimbang muat Azure.
+Cmdlet **Add-AzureRmLoadBalancerProbeConfig** menambahkan konfigurasi probe ke penyeimbang muat Azure.
 
 ## EXAMPLES
 
-### Contoh 1 Menambahkan konfigurasi konfigurasi konfigurasi konfigurasi ke penyeimbang muat
+### Contoh 1 Menambahkan konfigurasi probe ke penyeimbang muat
 ```
 PS C:\>Get-AzureRmLoadBalancer -Name "myLb" -ResourceGroupName "myRg" | Add-AzureRmLoadBalancerProbeConfig -Name "probeName" -RequestPath healthcheck2.aspx -Protocol http -Port 81 -IntervalInSeconds 16 -ProbeCount 3 | Set-AzureRmLoadBalancer
 ```
 
-Perintah ini mendapatkan penyeimbang muat yang bernama myLb, menambahkan konfigurasi tertentu ke dalamnya, lalu menggunakan cmdlet **Set-AzureRmLoadBalancer** untuk memperbarui penyeimbang muat.
+Perintah ini mendapatkan load balancer bernama myLb, menambahkan konfigurasi probe tertentu ke dalamnya, lalu menggunakan cmdlet **Set-AzureRmLoadBalancer** untuk memperbarui load balancer.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Menentukan interval, dalam detik, antar nilai ke setiap instans layanan dengan beban seimbang.
+Menentukan interval, dalam detik, antara probe untuk setiap instans layanan yang seimbang muat.
 
 ```yaml
 Type: System.Int32
@@ -73,8 +73,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan objek **LoadBalancer.**
-Cmdlet ini menambahkan konfigurasi konfigurasi ke penyeimbang muat yang ditentukan parameter ini.
+Menentukan objek **LoadBalancer** .
+Cmdlet ini menambahkan konfigurasi probe ke load balancer yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi konfigurasi konfigurasi konfigurasi untuk ditambahkan.
+Menentukan nama konfigurasi probe untuk ditambahkan.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port yang harus tersambung ke layanan berimbang muat.
+Menentukan port tempat probe harus tersambung ke layanan seimbang-muat.
 
 ```yaml
 Type: System.Int32
@@ -118,8 +118,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -DipesanCount
-Menentukan jumlah kegagalan berturut-turut per instans untuk suatu instans dianggap tidak sehat.
+### -ProbeCount
+Menentukan jumlah kegagalan berturut-turut per instans yang dianggap tidak sehat.
 
 ```yaml
 Type: System.Int32
@@ -133,8 +133,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol untuk digunakan bagi paratuan.
+### -Protokol
+Menentukan protokol yang akan digunakan untuk probe.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Http.
 
 ```yaml
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestPath
-Menentukan jalur dalam layanan berimbang muat untuk menetapkan kesehatan.
+Menentukan jalur dalam layanan load-balanced untuk pemeriksaan guna menentukan kesehatan.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,7 +214,7 @@ Parameter: LoadBalancer (ByValue)
 
 [New-AzureRmLoadBalancerProbeConfig](./New-AzureRmLoadBalancerProbeConfig.md)
 
-[Remove-AzureRmLoadBalancerProbeConfig](./Remove-AzureRmLoadBalancerProbeConfig.md)
+[Hapus-AzureRmLoadBalancerProbeConfig](./Remove-AzureRmLoadBalancerProbeConfig.md)
 
 [Set-AzureRmLoadBalancer](./Set-AzureRmLoadBalancer.md)
 

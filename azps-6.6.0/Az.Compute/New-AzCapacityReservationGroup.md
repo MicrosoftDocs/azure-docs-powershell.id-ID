@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzCapacityReservationGroup.md
 ms.openlocfilehash: 110a08f707adca85753902ff028bc39bc8fcd33a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139942675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141913881"
 ---
 # New-AzCapacityReservationGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "139942675"
 Membuat Grup Reservasi Kapasitas
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azcapacityreservationgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azcapacityreservationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Perintah ini akan membuat Grup Reservasi Kapasitas dengan properti tertentu.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan kumpulan pasangan nama nilai. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan untuk membuat tampilan Anda sendiri. Setiap grup sumber daya atau sumber daya dapat memiliki maksimal 15 tag.
+Menentukan bahwa sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama. Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri. Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -132,8 +132,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan daftar zona mesin virtual.
+### -Zona
+Menentukan daftar zona mesin maya.
 
 ```yaml
 Type: System.String[]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Set-AzureStorageShareQuota.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Set-AzureStorageShareQuota.md
-ms.openlocfilehash: 08877ad6a1fd99453042f40d252b870f045ccb6750282266facf75c1429e9ad9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 62e9fc5036c4a73335b0b68154288149e806dc4b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846779"
 ---
 # Set-AzureStorageShareQuota
 
 ## SYNOPSIS
-Mengatur kapasitas penyimpanan untuk sebuah berbagi.
+Mengatur kapasitas penyimpanan untuk berbagi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureStorageShareQuota [-ShareName] <String> [-Quota] <Int32> [-Context <ISt
  [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>] [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Set-AzureStorageShareQuota [-Share] <CloudFileShare> [-Quota] <Int32> [-ServerTimeoutPerRequest <Int32>]
  [-ClientTimeoutPerRequest <Int32>] [-DefaultProfile <IAzureContextContainer>] [-ConcurrentTaskCount <Int32>]
@@ -37,7 +37,7 @@ Set-AzureStorageShareQuota [-Share] <CloudFileShare> [-Quota] <Int32> [-ServerTi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageShareQuota** mengatur kapasitas penyimpanan untuk berbagi tertentu.
+Cmdlet **Set-AzureStorageShareQuota** mengatur kapasitas penyimpanan untuk berbagi yang ditentukan.
 
 ## EXAMPLES
 
@@ -46,14 +46,14 @@ Cmdlet **Set-AzureStorageShareQuota** mengatur kapasitas penyimpanan untuk berba
 PS C:\>Set-AzureStorageShareQuota -ShareName "ContosoShare01" -Quota 1024
 ```
 
-Perintah ini mengatur kapasitas penyimpanan untuk berbagi bernama ContosoShare01 menjadi 1024 GB.
+Perintah ini mengatur kapasitas penyimpanan untuk berbagi bernama ContosoShare01 hingga 1024 GB.
 
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -68,11 +68,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -117,7 +117,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Quota
+### -Kuota
 Menentukan nilai kuota dalam gigabyte (GB).
 Lihat batasan kuota dalam https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits#azure-files-limits. 
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare** untuk mewakili berbagi di mana cmdlet ini menetapkan kuota.
-Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzureStorageShare tersebut.
+Menentukan objek **CloudFileShare** untuk mewakili berbagi tempat cmdlet ini mengatur kuota.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzureStorageShare.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi file yang akan ditetapkan kuotanya.
+Menentukan nama file yang dibagikan untuk mengatur kuota.
 
 ```yaml
 Type: System.String
@@ -180,14 +180,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileShare
-Parameter: Berbagi (ByValue)
+Parameter: Bagikan (ByValue)
 
 ### Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
 
@@ -203,4 +203,4 @@ Parameter: Berbagi (ByValue)
 
 [Get-AzureStorageShare](./Get-AzureStorageShare.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)

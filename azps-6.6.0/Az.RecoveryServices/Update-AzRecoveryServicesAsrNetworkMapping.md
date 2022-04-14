@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrNetworkMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Update-AzRecoveryServicesAsrNetworkMapping.md
 ms.openlocfilehash: 25146bacd6b2f30598a811937210f8da6025978a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132415"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907293"
 ---
 # Update-AzRecoveryServicesAsrNetworkMapping
 
 ## SYNOPSIS
-Memperbarui pemetaan jaringan pemulihan situs Azure tertentu.
+Memperbarui pemetaan jaringan pemulihan situs azure yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrnetworkmapping) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/update-azrecoveryservicesasrnetworkmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Update-AzRecoveryServicesAsrNetworkMapping -InputObject <ASRNetworkMapping> -Rec
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzRecoveryServicesAsrNetworkMapping** memperbarui pemetaan jaringan Pemulihan Situs Azure yang ditentukan.
+Cmdlet **Update-AzRecoveryServicesAsrNetworkMapping memperbarui** pemetaan jaringan Azure Site Recovery yang ditentukan.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Cmdlet **Update-AzRecoveryServicesAsrNetworkMapping** memperbarui pemetaan jarin
 PS C:\> $currentJob = Update-AzRecoveryServicesAsrNetworkMapping -Mapping $NetworkMapping -RecoveryNetwork $RecoveryNetwork
 ```
 
-Memulai operasi pemetaan jaringan pembaruan menggunakan parameter tertentu dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
+Memulai operasi pemetaan jaringan pembaruan menggunakan parameter yang ditentukan dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryAzureNetworkId
-Menentukan ID jaringan Azure pemulihan untuk pemetaan jaringan.
+Menentukan ID jaringan azure pemulihan untuk pemetaan jaringan.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
