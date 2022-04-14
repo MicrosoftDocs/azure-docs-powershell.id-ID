@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Get-AzContext.md
-ms.openlocfilehash: 1454d5bfd611f51dfd375321d45b4dc7d6f3ffe2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 66c9a2903a46c4a6932153b2351170366f472797
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550899"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142116215"
 ---
 # Get-AzContext
 
 ## SYNOPSIS
-Dapatkan metadata yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+Mendapatkan metadata yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/get-azcontext) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzContext [-ListAvailable] [-RefreshContextFromTokenCache] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Azure Resource Manager.
+Cmdlet Get-AzContext mendapatkan metadata saat ini yang digunakan untuk mengautentikasi permintaan Resource Manager Azure.
 Cmdlet ini mendapatkan akun Direktori Aktif, penyewa Direktori Aktif, langganan Azure, dan lingkungan Azure yang ditargetkan.
 Cmdlet Azure Resource Manager menggunakan pengaturan ini secara default saat membuat permintaan Azure Resource Manager.
 
@@ -49,7 +52,7 @@ Name                                     Account             SubscriptionName   
 Subscription1 (xxxxxxxx-xxxx-xxxx-xxx... test@outlook.com    Subscription1       AzureCloud          xxxxxxxx-x...
 ```
 
-Dalam contoh ini, kami masuk ke akun dengan langganan Azure menggunakan Koneksi-AzAccount, lalu kami mendapatkan konteks sesi saat ini dengan menghubungi Get-AzContext.
+Dalam contoh ini, kami masuk ke akun kami dengan langganan Azure menggunakan Koneksi-AzAccount, lalu kami mendapatkan konteks sesi saat ini dengan menghubungi Get-AzContext.
 
 ### Contoh 2: Mencantumkan semua konteks yang tersedia
 ```powershell
@@ -64,12 +67,12 @@ Subscription2 (xxxxxxxx-xxxx-xxxx-xxx... test@outlook.com    Subscription2      
 Subscription3 (xxxxxxxx-xxxx-xxxx-xxx... test@outlook.com    Subscription3       AzureCloud          xxxxxxxx-x...
 ```
 
-Dalam contoh ini, semua konteks yang saat ini tersedia ditampilkan.  Pengguna dapat memilih salah satu konteks ini menggunakan Select-AzContext.
+Dalam contoh ini, semua konteks yang tersedia saat ini ditampilkan.  Pengguna dapat memilih salah satu konteks ini menggunakan Select-AzContext.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshContextFromTokenCache
-Merefresh konteks dari cache token
+Refresh konteks dari singgahan token
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

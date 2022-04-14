@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Get-AzKeyVaultManagedHsm.md
 ms.openlocfilehash: 04ab081f44d03d4e7a9a3a02c7e1d7f03bfa8e49
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140284981"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142231381"
 ---
 # Get-AzKeyVaultManagedHsm
 
 ## SYNOPSIS
-Mendapatkan HSM yang dikelola.
+Dapatkan HSM terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedhsm) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/get-azkeyvaultmanagedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,12 +28,12 @@ Get-AzKeyVaultManagedHsm [[-Name] <String>] [[-ResourceGroupName] <String>] [-Ta
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzKeyVaultManagedHsm** mendapatkan informasi tentang HSMS yang dikelola dalam langganan. Anda bisa menampilkan semua instans HSMS yang dikelola dalam langganan, atau memfilter hasil Anda menurut grup sumber daya atau HSM terkelola tertentu.
-Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini ketika Anda mendapatkan HSM terkelola tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
+Cmdlet **Get-AzKeyVaultManagedHsm** mendapatkan informasi tentang HSM yang dikelola dalam langganan. Anda dapat menampilkan semua instans HSM terkelola dalam langganan, atau memfilter hasil menurut grup sumber daya atau HSM terkelola tertentu.
+Perhatikan bahwa meskipun menentukan grup sumber daya opsional untuk cmdlet ini ketika Anda mendapatkan HSM terkelola tunggal, Anda harus melakukannya untuk kinerja yang lebih baik.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua VM yang dikelola dalam langganan Anda saat ini
+### Contoh 1: Dapatkan semua HSM terkelola dalam langganan Anda saat ini
 ```powershell
 PS C:\> Get-AzKeyVaultManagedHsm
 
@@ -42,9 +42,9 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini mendapatkan semua VM yang dikelola dalam langganan Anda saat ini.
+Perintah ini mendapatkan semua HSM terkelola dalam langganan Anda saat ini.
 
-### Contoh 2: Mendapatkan HSM terkelola tertentu
+### Contoh 2: Dapatkan HSM terkelola tertentu
 ```powershell
 PS C:\> Get-AzKeyVaultManagedHsm -Name 'myhsm'
 
@@ -53,9 +53,9 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini mendapatkan HSM terkelola yang bernama myhsm dalam langganan Anda saat ini.
+Perintah ini mendapatkan HSM terkelola bernama myhsm dalam langganan Anda saat ini.
 
-### Contoh 3: Get managed HSMs in a resource group
+### Contoh 3: Dapatkan HSM terkelola dalam grup sumber daya
 ```powershell
 PS C:\> Get-AzKeyVaultManagedHsm -ResourceGroupName 'myrg1'
 
@@ -64,9 +64,9 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini mendapatkan semua VM yang dikelola dalam grup sumber daya yang bernama myrg1.
+Perintah ini mendapatkan semua HSM terkelola dalam grup sumber daya bernama myrg1.
 
-### Contoh 4: Mendapatkan VM yang dikelola menggunakan pemfilteran
+### Contoh 4: Dapatkan HSM terkelola menggunakan pemfilteran
 ```powershell
 PS C:\> Get-AzKeyVaultManagedHsm -Name 'myhsm*'
 
@@ -75,7 +75,7 @@ Name  Resource Group Name Location    SKU
 myhsm myrg1               eastus2euap StandardB1
 ```
 
-Perintah ini mendapatkan semua IM yang dikelola dalam langganan yang dimulai dengan "myhsm".
+Perintah ini mendapatkan semua HSM terkelola dalam langganan yang dimulai dengan "myhsm".
 
 ## PARAMETERS
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama HSM. Cmdlet menyusun FQDN dari HSM berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama HSM. Cmdlet menyusun FQDN HSM berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan HSM yang dikelola yang akan ditanya.
+Menentukan nama grup sumber daya yang terkait dengan HSM yang dikelola yang sedang dikueri.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: True
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan nilai kunci dan opsional dari tag yang ditentukan untuk memfilter daftar HSMs yang dikelola oleh.
+Menentukan kunci dan nilai opsional tag yang ditentukan untuk memfilter daftar HSM yang dikelola.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

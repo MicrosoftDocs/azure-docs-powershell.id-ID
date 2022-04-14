@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementGatewayKey.md
-ms.openlocfilehash: 0031d207ad339f8fdcbfc9d3db57a72f9aefc644
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4afcdadb152a3df9e7ea73eb75c7cb2352dea51c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203175"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142115765"
 ---
 # Get-AzApiManagementGatewayKey
 
 ## SYNOPSIS
 Mendapatkan kunci Gateway yang sudah ada
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementgatewaykey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,17 +28,17 @@ Get-AzApiManagementGatewayKey -Context <PsApiManagementContext> -GatewayId <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementGatewayKey** mendapatkan kunci gateway yang sudah ada
+Cmdlet **Get-AzApiManagementGatewayKey** mendapatkan kunci Gateway yang sudah ada
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan gateway dengan ID
+### Contoh 1: Mendapatkan gateway menurut ID
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementGatewayKey -Context $apimContext -GatewayId "0123456789"
 ```
 
-Perintah ini akan mendapatkan kunci untuk gateway "0123456789".
+Perintah ini mendapatkan kunci untuk gateway "0123456789".
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

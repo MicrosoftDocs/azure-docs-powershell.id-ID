@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerServiceUnit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Get-AzDeploymentManagerServiceUnit.md
 ms.openlocfilehash: 9883206258f973e1cae450eebda11da672e65017
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107181"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142305943"
 ---
 # Get-AzDeploymentManagerServiceUnit
 
 ## SYNOPSIS
-Dapatkan unit layanan.
+Mendapatkan unit layanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerserviceunit) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/get-azdeploymentmanagerserviceunit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,11 +66,11 @@ Get-AzDeploymentManagerServiceUnit [-InputObject] <PSServiceUnitResource>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentManagerServiceUnit** mendapatkan unit layanan dalam layanan.
+Cmdlet **Get-AzDeploymentManagerServiceUnit** mendapatkan unit layanan dalam sebuah layanan.
 
-Tentukan unit layanan menurut namanya, layanan yang ditentukan, nama topologi layanan dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceUnit atau ResourceId.
+Tentukan unit layanan menurut namanya, layanan di mana layanan ditetapkan, nama topologi layanan dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceUnit atau ResourceId.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke unit layanan menggunakan cmdlet Set-AzDeploymentManagerServiceUnit cmdlet.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada unit layanan menggunakan cmdlet Set-AzDeploymentManagerServiceUnit.
 
 ## EXAMPLES
 
@@ -79,21 +79,21 @@ Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan ke unit la
 PS C:\> Get-AzDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -ServiceName ContosoService1  -Name ContosoService1Storage
 ```
 
-Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
 ### Contoh 2: Dapatkan unit layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Get-AzDeploymentManagerServiceUnit -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology/services/ContosoService1/serviceUnits/ContosoService1Storage"
 ```
 
-Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini mendapatkan unit layanan bernama ContosoService1Storage di bawah layanan ContosoService1 dalam topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
 ### Contoh 3: Dapatkan unit layanan menggunakan objek unit layanan.
 ```powershell
 PS C:\> Get-AzDeploymentManagerServiceUnit -InputObject $serviceUnitObject
 ```
 
-Perintah ini akan mendapatkan unit layanan yang namanya, nama layanan, nama topologi layanan, dan ResourceGroup cocok dengan masing-masing properti Nama, Nama ServiceTopologyName dan ResourceGroupName $serviceUnitObject.
+Perintah ini mendapatkan unit layanan dengan nama, nama layanan, nama topologi layanan, dan ResourceGroup yang masing-masing cocok dengan properti Name, ServiceName, ServiceTopologyName, dan ResourceGroupName $serviceUnitObject.
 
 ## PARAMETERS
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama layanan, unit layanan merupakan bagian darinya.
+Nama layanan yang menjadi bagian dari unit layanan.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObject
-Objek layanan tempat unit layanan akan dibuat.
+Objek layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceResource
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyName
-Nama topologi layanan, bagian dari unit layanan.
+Nama layanan topologi unit layanan adalah bagian dari.
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyObject
-Objek topologi layanan tempat unit layanan akan dibuat.
+Objek topologi layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyResourceId
-Pengidentifikasi sumber daya topologi layanan tempat unit layanan akan dibuat.
+Pengidentifikasi sumber daya topologi layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: System.String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/up
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementApiRelease.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Update-AzApiManagementApiRelease.md
-ms.openlocfilehash: ca1af688fc422f131989934ab16338b83b82e147
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7905ff9ef32aa57848fdc83eb4fd09f9337dbeac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038539"
 ---
 # Update-AzApiManagementApiRelease
 
 ## SYNOPSIS
 Memperbarui Rilis Api tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/update-azapimanagementapirelease) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Update-AzApiManagementApiRelease [-Note <String>] -InputObject <PsApiManagementA
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzApiManagementApiRelease** mengubah Rilis API Manajemen API Azure API.
+Cmdlet **Update-AzApiManagementApiRelease** mengubah Rilis API Azure API Management.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 Update-AzApiManagementApiRelease -Context $ApiMgmtContext -ApiId "echo-api" -ReleaseId "echo-api-release" -Note "Releasing version 2 of the echo-api to public"
 ```
 
-Perintah ini akan `echo-api-release` memperbarui Rilis API Api dengan `echo-api` catatan baru.
+Perintah ini memperbarui `echo-api-release` Rilis API Api `echo-api` dengan catatan baru.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Note
+### -Catatan
 Catatan Rilis Api.
 Parameter ini bersifat opsional.
 
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiRelease mewakili kumpulan rilis API.
+Jika ditentukan, contoh microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiRelease type mewakili set RILIS API.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReleaseId
-Pengidentifikasi untuk Id Rilis Revisi Api.
+Pengidentifikasi untuk ReleaseId Revisi Api.
 Parameter ini diperlukan.
 
 ```yaml
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

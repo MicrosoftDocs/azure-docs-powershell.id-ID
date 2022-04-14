@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Remove-AzApplicationInsightsApiKey.md
-ms.openlocfilehash: 5ed835c05dfcd04727744ec8c16c1220c1c1a630
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 14c35c22a547e6e857fe0b56e16a2332b3e2c7fb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557972"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142219591"
 ---
 # Remove-AzApplicationInsightsApiKey
 
 ## SYNOPSIS
 Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/remove-azapplicationinsightsapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,19 +46,19 @@ Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
-### Contoh 1 Hapus tombol api wawasan aplikasi untuk sumber daya wawasan aplikasi
+### Contoh 1 Menghapus kunci api wawasan aplikasi untuk sumber daya wawasan aplikasi
 ```powershell
 Remove-AzApplicationInsightsApiKey -ResourceGroupName "testGroup" -Name "test"  -ApiKeyId dd173f38-4fd1-4c75-8af5-9
 9c29aa0f867 -PassThru
 True
 ```
 
-Hapus kunci api wawasan aplikasi tertentu yang idnya adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk "test" sumber daya di grup sumber daya "testGroup".
+Hapus kunci api wawasan aplikasi tertentu yang id adalah "dd173f38-4fd1-4c75-8af5-9 9c29aa0f867" untuk sumber daya "uji" dalam grup sumber daya "testGroup".
 
 ## PARAMETERS
 
 ### -ApiKeyId
-APPLICATION Insights API Key ID.
+ID Kunci API Wawasan Aplikasi.
 
 ```yaml
 Type: System.String
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Application Insights.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aplikasi Insights Komponen.
+Nama Komponen Application Insights.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Wawasan Aplikasi.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

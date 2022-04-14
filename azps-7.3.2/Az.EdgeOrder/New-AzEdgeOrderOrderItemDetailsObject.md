@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderOrderItemDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderOrderItemDetailsObject.md
-ms.openlocfilehash: 6ca006bf652f8fa23b0853edca8ec5241cd3bd17
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2f71653bbcb7a4f27458880e3a6a8054a532a315
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394287"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142215793"
 ---
 # New-AzEdgeOrderOrderItemDetailsObject
 
 ## SYNOPSIS
-Buat objek dalam memori untuk OrderItemDetails.
+Membuat objek dalam memori untuk OrderItemDetails.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeorderorderitemdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzEdgeOrderOrderItemDetailsObject -OrderItemType <OrderItemType> -ProductDet
 ```
 
 ## DESCRIPTION
-Buat objek dalam memori untuk OrderItemDetails.
+Membuat objek dalam memori untuk OrderItemDetails.
 
 ## EXAMPLES
 
@@ -35,7 +38,7 @@ PS C:\> $HierarchyInformation=New-AzEdgeOrderHierarchyInformationObject -Product
 PS C:\> $details = New-AzEdgeOrderOrderItemDetailsObject -OrderItemType "Purchase"  -ProductDetail  @{"HierarchyInformation"=$HierarchyInformation}
 ```
 
-Buat objek dalam memori untuk OrderItemDetails.
+Membuat objek dalam memori untuk OrderItemDetails.
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 
 ### -ProductDetail
 Pengidentifikasi unik untuk konfigurasi.
-Untuk membuat, lihat bagian CATATAN untuk properti PRODUCTDETAIL dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PRODUCTDETAIL dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.EdgeOrder.Models.Api20211201.IProductDetails
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -121,20 +124,20 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 PREFERENSI <IPreferences>: Preferensi pemberitahuan pelanggan.
   - `[EncryptionPreference <IEncryptionPreferences>]`: Preferensi yang terkait dengan Enkripsi.
-    - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda saat dimasukkan oleh pelanggan. Parameter ini wajib diberikan jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
-  - `[ManagementResourcePreference <IManagementResourcePreferences>]`: Preferensi terkait dengan sumber daya Manajemen.
-    - `[PreferredManagementResourceId <String>]`: ID SUMBER daya manajemen pilihan pelanggan ARM
+    - `[DoubleEncryptionStatus <DoubleEncryptionStatus?>]`: Status enkripsi ganda seperti yang dimasukkan oleh pelanggan. Diwajibkan untuk memberikan parameter ini jika kebijakan 'Tolak' atau 'Dinonaktifkan' dikonfigurasi.
+  - `[ManagementResourcePreference <IManagementResourcePreferences>]`: Preferensi yang terkait dengan sumber daya Manajemen.
+    - `[PreferredManagementResourceId <String>]`: ID ARM sumber daya Manajemen pilihan pelanggan
   - `[NotificationPreference <INotificationPreference[]>]`: Preferensi pemberitahuan.
     - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
-    - `StageName <NotificationStageName>`: Nama tahapan.
-  - `[TransportPreference <ITransportPreferences>]`: Preferensi terkait logistik pengiriman pesanan.
-    - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan tipe Logistik Pengiriman yang lebih disukai pelanggan.
+    - `StageName <NotificationStageName>`: Nama panggung.
+  - `[TransportPreference <ITransportPreferences>]`: Preferensi yang terkait dengan logistik pengiriman pesanan.
+    - `PreferredShipmentType <TransportShipmentTypes>`: Menunjukkan jenis Logistik Pengiriman yang lebih disukai pelanggan.
 
 PRODUCTDETAIL <IProductDetails>: Pengidentifikasi unik untuk konfigurasi.
   - `HierarchyInformation <IHierarchyInformation>`: Hierarki produk yang mengidentifikasi produk secara unik
     - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang mengidentifikasi konfigurasi secara unik
-    - `[ProductFamilyName <String>]`: Mewakili nama produk keluarga yang mengidentifikasi keluarga produk secara unik
-    - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi lini produk secara unik
+    - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang mengidentifikasi keluarga produk secara unik
+    - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi baris produk secara unik
     - `[ProductName <String>]`: Mewakili nama produk yang mengidentifikasi produk secara unik
 
 ## RELATED LINKS

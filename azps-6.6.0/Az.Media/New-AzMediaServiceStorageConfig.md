@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Media/Media/help/New-AzMediaServiceStorageConfig.md
 ms.openlocfilehash: 3910946fdb401652064b3147a236c5ee6f875f15
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140309065"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142229527"
 ---
 # New-AzMediaServiceStorageConfig
 
@@ -19,7 +19,7 @@ ms.locfileid: "140309065"
 Buat konfigurasi akun penyimpanan untuk cmdlet layanan media.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.media/new-azmediaservicestorageconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.media/new-azmediaservicestorageconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Cmdlet **New-AzMediaServiceStorageConfig** membuat konfigurasi akun penyimpanan 
 
 ## EXAMPLES
 
-### Contoh 1: Buat konfigurasi akun penyimpanan untuk cmdlet layanan media
+### Contoh 1: Membuat konfigurasi akun penyimpanan untuk cmdlet layanan media
 ```
 PS C:\>
 $StorageAccount = New-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name "Storage1" -Location "East US" -Type "Standard_GRS"
@@ -41,14 +41,14 @@ $StorageAccount = New-AzStorageAccount -ResourceGroupName $ResourceGroupName -Na
 PS C:\> New-AzMediaServiceStorageConfig -StorageAccountId $StorageAccount.Id -IsPrimary
 ```
 
-Perintah pertama membuat objek akun penyimpanan dengan menggunakan cmdlet **New-AzStorageAccount** .
-Perintah memberi nama akun penyimpanan ini Penyimpanan1 dan tipenya dinamai Standard_GRS dan menyimpan hasilnya di dalam variabel yang bernama $StorageAccount.
-Perintah kedua membuat objek konfigurasi penyimpanan sebagai akun penyimpanan utama yang terkait dengan layanan media menggunakan informasi ID akun penyimpanan yang disimpan di $StorageAccount penyimpanan tersebut.
+Perintah pertama membuat objek akun penyimpanan menggunakan cmdlet **New-AzStorageAccount** .
+Perintah menamai akun penyimpanan ini Storage1 dan tipenya dinamai Standard_GRS dan menyimpan hasilnya dalam variabel bernama $StorageAccount.
+Perintah kedua membuat objek konfigurasi penyimpanan sebagai akun penyimpanan utama yang terkait dengan layanan media menggunakan informasi ID akun penyimpanan yang disimpan dalam variabel $StorageAccount.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsPrimary
-Mengindikasikan bahwa cmdlet membuat akun penyimpanan sebagai penyimpanan utama untuk layanan media.
+Menunjukkan bahwa cmdlet membuat akun penyimpanan sebagai penyimpanan utama untuk layanan media.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

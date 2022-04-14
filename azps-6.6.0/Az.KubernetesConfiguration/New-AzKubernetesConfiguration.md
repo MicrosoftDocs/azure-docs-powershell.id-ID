@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KubernetesConfiguration/help/New-AzKubernetesConfiguration.md
 ms.openlocfilehash: 6cf1860a5ef224a0d1ed255d6c21e26bee37fed0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140309821"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142230859"
 ---
 # New-AzKubernetesConfiguration
 
 ## SYNOPSIS
-Membuat K configurations Source Control Configuration baru.
+Buat Konfigurasi Kontrol Sumber Kubernetes baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kubernetesconfiguration/new-azkubernetesconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ New-AzKubernetesConfiguration -ClusterName <String> -Name <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Membuat K configurations Source Control Configuration baru.
+Buat Konfigurasi Kontrol Sumber Kubernetes baru.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat konfigurasi untuk kluster grup
+### Contoh 1: Membuat konfigurasi untuk kluster kubernetes
 ```powershell
 PS C:\> New-AzKubernetesConfiguration -ResourceGroupName azps_test_group -ClusterName azps_test_cluster -Name azpstestk8s01 -RepositoryUrl http://github.com/xxxx
 
@@ -45,9 +45,9 @@ Name          Type
 azpstestk8s01 Microsoft.KubernetesConfiguration/sourceControlConfigurations
 ```
 
-Perintah ini akan membuat konfigurasi untuk kluster k configurations.
+Perintah ini membuat konfigurasi untuk kluster kubernetes.
 
-### Contoh 2: Membuat konfigurasi untuk kluster kriteria dengan menentukan paramter OperatorNamespace
+### Contoh 2: Membuat konfigurasi untuk kluster kubernetes dengan menentukan paramter OperatorNamespace
 ```powershell
 PS C:\> New-AzKubernetesConfiguration -ResourceGroupName azps_test_group -ClusterName azps_test_cluster -Name azpstestk8s02 -RepositoryUrl http://github.com/xxxx -OperatorNamespace namespace-t01
 
@@ -56,13 +56,13 @@ Name          Type
 azpstestk8s02 Microsoft.KubernetesConfiguration/sourceControlConfigurations
 ```
 
-Perintah ini akan membuat konfigurasi dalam ruang nama operator baru untuk kluster k operator.
-Catatan, Tidak bisa membuat konfigurasi dalam ruang nama operator yang sudah ada.
+Perintah ini membuat konfigurasi di namespace operator baru untuk kluster kubernetes.
+Catatan, Tidak dapat membuat konfigurasi di ruang nama operator yang sudah ada.
 
 ## PARAMETERS
 
 ### -ClusterName
-Nama kluster k ada.
+Nama kluster kubernetes.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterScoped
-Jika lolos, atur lingkup Configuration to Cluster (default is nameSpace).
+Jika lolos, atur lingkup Konfigurasi ke Kluster (defaultnya adalah nameSpace).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterType
-Nama sumber daya kluster Kjadwal, baik managedClusters (untuk kluster AKS) maupun connectedClusters (untuk kluster OnPrem K8S).
+Nama sumber daya kluster Kubernetes - baik managedClusters (untuk kluster AKS) atau ConnectedClusters (untuk kluster OnPrem K8S).
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -HelmOperatorChartValue
-Nilai menimpa untuk operator bagan Helm.
+Nilai akan ditimpa untuk bagan Helm operator.
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -HelmOperatorChartVersion
-Versi operator bagan Helm.
+Versi bagan Helm operator.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperatorInstanceName
-Nama contoh operator - mengidentifikasi konfigurasi tertentu.
+Nama instans operator - mengidentifikasi konfigurasi tertentu.
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 
 ### -OperatorNamespace
 Ruang nama tempat operator ini diinstal.
-Maksimum 253 karakter alfanumerik huruf kecil, tanda hubung dan titik saja.
+Maksimal 253 karakter alfanumerik huruf kecil, tanda hubung dan titik saja.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperatorParameter
-Parameter apa pun untuk contoh Operator dalam format string.
+Parameter apa pun untuk instans Operator dalam format string.
 
 ```yaml
 Type: System.String
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryUrl
-Url Repositori SourceControl.
+Url Repository SourceControl.
 
 ```yaml
 Type: System.String
@@ -272,8 +272,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KnownHost
-Jika lolos, atur lingkup Configuration to Cluster (default is nameSpace).
+### -SshKnownHost
+Jika lolos, atur lingkup Konfigurasi ke Kluster (defaultnya adalah nameSpace).
 
 ```yaml
 Type: System.String
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -334,13 +334,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.K cmdletsConfiguration.Models.Api20210301.ISourceControlConfiguration
+### Microsoft.Azure.PowerShell.Cmdlets.KubernetesConfiguration.Models.Api20210301.ISourceControlConfiguration
 
 ## CATATAN
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Websites/Websites/help/Get-AzWebApp.md
 ms.openlocfilehash: f86e0f18c7d793b5876a48c39b56b11c14b17546
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419834"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142091498"
 ---
 # Get-AzWebApp
 
 ## SYNOPSIS
-Mendapatkan Azure Web Apps dalam grup sumber daya yang ditentukan.
+Mendapatkan azure Web Apps dalam grup sumber daya tertentu.
 
 ## SYNTAX
 
@@ -42,17 +42,17 @@ Cmdlet **Get-AzWebApp** mendapatkan informasi tentang Azure Web App.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan Aplikasi Web dari grup sumber daya
+### Contoh 1: Dapatkan Aplikasi Web dari grup sumber daya
 ```
 PS C:\>Get-AzWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini mendapatkan Aplikasi Web bernama ContosoSite yang dimiliki oleh grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan Web App bernama ContosoSite yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Objek Paket Layanan Aplikasi
+objek Rencana App Service
 
 ```yaml
 Type: AppServicePlan
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,9 +143,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzWebApp](./New-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

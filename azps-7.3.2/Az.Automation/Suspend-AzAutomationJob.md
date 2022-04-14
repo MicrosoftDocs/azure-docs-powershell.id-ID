@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/suspe
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Suspend-AzAutomationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Suspend-AzAutomationJob.md
-ms.openlocfilehash: 90c7ccfeb8662822359aa48d397d5a90ff939019
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 54d958f47162b20dd9acc0bb8aed6b0ca080e320
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560602"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142037945"
 ---
 # Suspend-AzAutomationJob
 
 ## SYNOPSIS
 Menangguhkan pekerjaan Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/suspend-azautomationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,8 +29,8 @@ Suspend-AzAutomationJob [-Id] <Guid> [-ResourceGroupName] <String> [-AutomationA
 ```
 
 ## DESCRIPTION
-Cmdlet **Suspend-AzAutomationJob** menangguhkan pekerjaan Azure Automation.
-Tentukan pekerjaan Otomatisasi yang sedang berjalan.
+**Cmdlet Suspend-AzAutomationJob** menangguhkan pekerjaan Azure Automation.
+Tentukan tugas Otomatisasi yang berjalan.
 Untuk melanjutkan pekerjaan yang ditangguhkan, gunakan cmdlet Resume-AzAutomationJob.
 
 ## EXAMPLES
@@ -37,12 +40,12 @@ Untuk melanjutkan pekerjaan yang ditangguhkan, gunakan cmdlet Resume-AzAutomatio
 PS C:\>Suspend-AzAutomationJob -AutomationAccountName "Contoso17" -Id 2989b069-24fe-40b9-b3bd-cb7e5eac4b64 -ResourceGroupName "ResourceGroup01"
 ```
 
-Perintah ini menangguhkan pekerjaan yang memiliki ID tertentu.
+Perintah ini menangguhkan pekerjaan yang memiliki ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang menangguhkan pekerjaan cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini menangguhkan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

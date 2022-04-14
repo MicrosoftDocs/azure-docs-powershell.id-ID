@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/add-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Add-AzAttestationPolicySigner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Add-AzAttestationPolicySigner.md
-ms.openlocfilehash: fa21d0e0e04187b13c022244bbd0488c6227768c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e9168ddc660584872fbecda077274c6fd3b64f97
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557962"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038439"
 ---
 # Add-AzAttestationPolicySigner
 
 ## SYNOPSIS
 Menambahkan penanda tangan kebijakan tepercaya untuk penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/add-azattestationpolicysigner) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Add-AzAttestationPolicySigner [-ResourceId] <String> -Signer <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzAttestationPolicySigner menambahkan penanda tangan kebijakan tepercaya untuk penyewa di Azure Attestation.
+Cmdlet Add-AzAttestationPolicySigner menambahkan penanda tangan kebijakan tepercaya untuk penyewa dalam Azure Attestation.
 
 ## EXAMPLES
 
@@ -42,7 +45,7 @@ $trustedSigner = Get-Content -Path .\trusted.signer.txt
 Add-AzAttestationPolicySigner -Name pshtest -ResourceGroupName psh-test-rg -Signer $trustedSigner
 ```
 
-Tambahkan penanda tangan tepercaya untuk Penyedia Atteestation yang dinamai *pshtest*.
+Tambahkan penanda tangan tepercaya untuk Penyedia Atteestation bernama *pshtest*.
 
 ## PARAMETERS
 
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyedia attestation.
+Menentukan nama penyedia atestation.
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari penyedia attestation.
+Menentukan nama grup sumber daya penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ResourceID dari penyedia attestation.
+Menentukan RESOURCEID penyedia atestation.
 
 ```yaml
 Type: System.String
@@ -107,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Penanda tangan
-Menentukan JSON Web Token RFC7519 berisi klaim bernama "maa-policyCertificate" yang nilainya adalah JSON Web Key RFC7517 yang berisi kunci penandatanganan tepercaya yang baru untuk ditambahkan.
+Menentukan Token Web RFC7519 JSON yang berisi klaim bernama "maa-policyCertificate" yang nilainya adalah Kunci Web JSON RFC7517 yang berisi kunci penandatanganan tepercaya baru untuk ditambahkan.
 RFC7519 JWT harus ditandatangani dengan salah satu kunci penandatanganan tepercaya yang sudah ada.
 
 ```yaml
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

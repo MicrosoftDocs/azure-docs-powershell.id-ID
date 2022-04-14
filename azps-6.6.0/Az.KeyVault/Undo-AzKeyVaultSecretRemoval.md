@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultSecretRemoval.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Undo-AzKeyVaultSecretRemoval.md
 ms.openlocfilehash: f1d06ad87fd2e2c92f93126fcc2a6a2a4c272c41
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139974777"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142231003"
 ---
 # Undo-AzKeyVaultSecretRemoval
 
 ## SYNOPSIS
-Memulihkan rahasia yang telah dihapus di kunci vault ke keadaan aktif.
+Memulihkan rahasia yang dihapus dalam kubah kunci ke status aktif.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultsecretremoval) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/undo-azkeyvaultsecretremoval) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Undo-AzKeyVaultSecretRemoval [-InputObject] <PSDeletedKeyVaultSecretIdentityItem
 ## DESCRIPTION
 Cmdlet **Undo-AzKeyVaultSecretRemoval** akan memulihkan rahasia yang dihapus sebelumnya.
 Rahasia yang dipulihkan akan aktif dan dapat digunakan untuk semua operasi rahasia normal.
-Penelepon harus memiliki izin 'pulihkan' agar dapat melakukan operasi ini.
+Penelepon perlu memiliki izin 'pulihkan' untuk melakukan operasi ini.
 
 ## EXAMPLES
 
@@ -58,12 +58,12 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini akan memulihkan 'MySecret' rahasia yang sebelumnya telah dihapus, ke dalam keadaan aktif dan dapat digunakan.
+Perintah ini akan memulihkan rahasia 'MySecret' yang sebelumnya dihapus, ke dalam keadaan aktif dan dapat digunakan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama rahasia.
-Cmdlet menyusun FQDN rahasia dari nama vault, lingkungan yang saat ini dipilih dan nama rahasia.
+Cmdlet menyusun FQDN rahasia dari nama kubah, lingkungan yang saat ini dipilih dan nama rahasia.
 
 ```yaml
 Type: System.String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama Vault.
-Cmdlet menyusun FQDN dari vault berdasarkan nama dan lingkungan yang saat ini dipilih.
+Nama kubah.
+Cmdlet menyusun FQDN kubah berdasarkan nama dan lingkungan yang saat ini dipilih.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

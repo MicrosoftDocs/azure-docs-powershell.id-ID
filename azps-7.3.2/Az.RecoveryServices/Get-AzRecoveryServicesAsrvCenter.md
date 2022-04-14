@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrvCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesAsrvCenter.md
-ms.openlocfilehash: a70f6a8e02637c3f06c4483eca9574c63f7ae587
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 135054e3db8ad8e0747ddc49afa51f1d1860ea0d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184584"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142210987"
 ---
 # Get-AzRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
-Gets details of the vCenter servers registered for discovery on the Configuration server specified by the ASR fabric.
+Mendapatkan detail server vCenter yang terdaftar untuk penemuan di server Konfigurasi yang ditentukan oleh kain ASR.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesasrvcenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzRecoveryServicesAsrvCenter -Fabric <ASRFabric> -Name <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesAsrvCenter** mendapatkan detail server vCenter yang terdaftar untuk penemuan pada server Configuration yang ditentukan oleh kain ASR.
+Cmdlet **Get-AzRecoveryServicesAsrvCenter** mendapatkan detail server vCenter yang terdaftar untuk penemuan pada server Konfigurasi yang ditentukan oleh kain ASR.
 
 ## EXAMPLES
 
@@ -58,19 +61,19 @@ DiscoveryStatus       : Pending
 LastHeartbeat         :
 ```
 
-Get azure site recovery vCenter by fabric name and name of vCenter.
+Dapatkan vCenter pemulihan situs azure menurut nama kain dan nama vCenter.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzRecoveryServicesAsrvCenter -Fabric $Fabric
 ```
 
-Get azure site recovery vCenter list by fabric name.
+Dapatkan daftar vCenter pemulihan situs azure menurut nama kain.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Objek kain ASR mewakili Configuration Server.
+Objek kain ASR mewakili Server Konfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan resourceId dari vCenter.
+Menentukan resourceId vCenter.
 
 ```yaml
 Type: System.String
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

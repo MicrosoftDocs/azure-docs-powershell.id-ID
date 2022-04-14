@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Remove-AzApiManagementGateway.md
-ms.openlocfilehash: c13e5eef40e607cf01bd0f7ce091806a89ce6829
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 099b2297e059ff70261ac77028fc86b5d5e01b6c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140373971"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142115423"
 ---
 # Remove-AzApiManagementGateway
 
 ## SYNOPSIS
-Melepaskan API dari Gateway.
+Menghapus api dari Gateway.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/remove-azapimanagementgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Remove-AzApiManagementGateway -ResourceId <String> [-PassThru] [-DefaultProfile 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApiManagementGateway** melepaskan API dari Gateway.
+Cmdlet **Remove-AzApiManagementGateway** menghapus API dari Gateway.
 
 ## EXAMPLES
 
@@ -48,7 +51,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Remove-AzApiManagementGateway -Context $apimContext -GatewayId "g0001" -Force
 ```
 
-Perintah ini akan menghapus gateway yang sudah ada dan tidak meminta konfirmasi pengguna.
+Perintah ini menghapus gateway yang sudah ada dan tidak meminta konfirmasi kepada pengguna.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil.
 Parameter ini bersifat opsional.
 Nilai default adalah false.
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.powerbiembedded/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Get-AzPowerBIWorkspaceCollection.md
-ms.openlocfilehash: 1ada14bc94f1b795a016516146c2c8983fa209c2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f832fbed15a96f09093de654281681dafa52c4a0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380858"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142211329"
 ---
 # Get-AzPowerBIWorkspaceCollection
 
 ## SYNOPSIS
-Dapatkan Power BI ruang kerja Anda.
+Mendapatkan kumpulan ruang kerja Power BI.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/get-azpowerbiworkspacecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,18 +36,18 @@ Get-AzPowerBIWorkspaceCollection [-ResourceGroupName] <String> [-WorkspaceCollec
 ```
 
 ## DESCRIPTION
-**Get-AzPowerBIWorkspaceCollection** cmdlet gets Power BI workspace collections in your Azure subscription and resource group, or by collection name.
+Cmdlet **Get-AzPowerBIWorkspaceCollection** mendapatkan kumpulan ruang kerja Power BI dalam grup sumber daya dan langganan Azure Anda, atau menurut nama koleksi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kumpulan ruang kerja dalam grup sumber daya
+### Contoh 1: Mendapatkan semua kumpulan ruang kerja dalam grup sumber daya
 ```
 PS C:\>Get-AzPowerBIWorkspaceCollection -ResourceGroupName "ResourceGroup17"
 ```
 
-Perintah ini mendapatkan kumpulan ruang kerja yang termasuk dalam grup sumber daya bernama ResourceGroup17.
+Perintah ini mendapatkan kumpulan ruang kerja yang tergabung dalam grup sumber daya bernama ResourceGroup17.
 
-### Contoh 2: Mendapatkan kumpulan ruang kerja dengan menggunakan namanya
+### Contoh 2: Mendapatkan kumpulan ruang kerja menggunakan namanya
 ```
 PS C:\>Get-AzPowerBIWorkspaceCollection -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11"
 ```
@@ -54,7 +57,7 @@ Perintah ini mendapatkan kumpulan ruang kerja bernama WCN11 dalam grup sumber da
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya asal cmdlet ini mendapatkan kumpulan ruang kerja.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan koleksi ruang kerja.
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang Power BI kerja yang akan dapatkan cmdlet ini.
+Menentukan nama kumpulan ruang kerja Power BI yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

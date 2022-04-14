@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Remove-AzFrontDoor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/Remove-AzFrontDoor.md
 ms.openlocfilehash: 283437b184df613c4aaf687ec90a16f4b0f5bfea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140106101"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142232299"
 ---
 # Remove-AzFrontDoor
 
 ## SYNOPSIS
-Hapus Penyeimbang muat Pintu Depan
+Lepas penyeimbang muat Pintu Depan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/remove-azfrontdoor) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/remove-azfrontdoor) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,23 +41,23 @@ Remove-AzFrontDoor -ResourceId <String> [-PassThru] [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzFrontDoor** menghapus penyeimbang muat Front Door di bawah langganan saat ini
+Cmdlet **Remove-AzFrontDoor** menghapus penyeimbang beban Pintu Depan di bawah langganan saat ini
 
 ## EXAMPLES
 
-### Contoh 1: Hapus "frontdoor1" di grup sumber daya "rg1" di bawah langganan saat ini.
+### Contoh 1: Hapus "frontdoor1" dalam grup sumber daya "rg1" di bawah langganan saat ini.
 ```powershell
 PS C:\> Remove-AzFrontDoor -Name "frontdoor1" -ResourceGroupName "rg1"
 ```
 
-Hapus "frontdoor1" di grup sumber daya "rg1" di bawah langganan saat ini.
+Hapus "frontdoor1" dalam grup sumber daya "rg1" di bawah langganan saat ini.
 
-### Contoh 2: Hapus semua FrontDoors in resource group "rg1" di bawah langganan saat ini.
+### Contoh 2: Hapus semua FrontDoors dalam grup sumber daya "rg1" di bawah langganan saat ini.
 ```powershell
 PS C:\> Get-AzFrontDoor -ResourceGroupName "rg1" | Remove-AzFrontDoor
 ```
 
-Hapus semua FrontDoors di grup sumber daya "rg1" di bawah langganan saat ini.
+Hapus semua FrontDoors dalam grup sumber daya "rg1" di bawah langganan saat ini.
 
 ### Contoh 3: Hapus semua FrontDoors di bawah langganan saat ini.
 ```powershell
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Pintu Depan yang akan dihapus.
+Objek Pintu Depan untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSFrontDoor
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Objek yang dikembalikan (jika ditentukan).
+Mengembalikan objek (jika ditentukan).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya dari Pintu Depan untuk dihapus
+Id Sumber Daya Dari Pintu Depan untuk dihapus
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

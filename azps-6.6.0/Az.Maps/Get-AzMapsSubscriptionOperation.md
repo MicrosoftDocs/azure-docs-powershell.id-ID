@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsSubscriptionOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Maps/help/Get-AzMapsSubscriptionOperation.md
 ms.openlocfilehash: 826862417ffef5e66ebdb7a581640b90de005223
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139937725"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142229761"
 ---
 # Get-AzMapsSubscriptionOperation
 
 ## SYNOPSIS
-Operasi daftar yang tersedia untuk Penyedia Peta Sumber Daya
+Operasi daftar tersedia untuk Penyedia Sumber Daya Peta
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.maps/get-azmapssubscriptionoperation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.maps/get-azmapssubscriptionoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,11 +27,11 @@ Get-AzMapsSubscriptionOperation [-SubscriptionId <String[]>] [-DefaultProfile <P
 ```
 
 ## DESCRIPTION
-Operasi daftar yang tersedia untuk Penyedia Peta Sumber Daya
+Operasi daftar tersedia untuk Penyedia Sumber Daya Peta
 
 ## EXAMPLES
 
-### Contoh 1: Operasi daftar yang tersedia untuk Peta Sumber Daya
+### Contoh 1: Operasi daftar tersedia untuk Penyedia Sumber Daya Peta
 ```powershell
 PS C:\> Get-AzMapsSubscriptionOperation
 
@@ -77,7 +77,7 @@ True         Microsoft.Maps/accounts/services/analytics/write
              Microsoft.Maps/accounts/creators/delete
 ```
 
-Perintah ini mencantumkan operasi yang tersedia untuk Peta Sumber Daya Tambahan.
+Perintah ini mencantumkan operasi yang tersedia untuk Penyedia Sumber Daya Peta.
 
 ## PARAMETERS
 
@@ -112,13 +112,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets. Peta. Models.Api20210201.IOperationDetail
+### Microsoft.Azure.PowerShell.Cmdlets.Maps.Models.Api20210201.IOperationDetail
 
 ## CATATAN
 

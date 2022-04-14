@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzDdosProtectionPlan.md
 ms.openlocfilehash: eb09bf5525cfd6ad3e5d892707ece4346ca8ea63
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140281165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142267675"
 ---
 # Remove-AzDdosProtectionPlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "140281165"
 Menghapus paket proteksi DDoS.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azddosprotectionplan) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-AzDdosProtectionPlan -ResourceGroupName <String> -Name <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzDdosProtectionPlan baru menghapus rencana proteksi DDoS.
+Cmdlet Remove-AzDdosProtectionPlan menghapus paket proteksi DDoS.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ D:\> Remove-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name Ddos
 
 Dalam hal ini, kami menghapus paket proteksi DDoS seperti yang ditentukan.
 
-### Contoh 2: Menghapus paket proteksi DDoS yang terkait dengan jaringan virtual
+### Contoh 2: Hapus paket proteksi DDoS yang terkait dengan jaringan virtual
 ```
 D:\> $vnet = Get-AzVirtualNetwork -Name VnetName -ResourceGroupName ResourceGroupName
 D:\> $vnet.DdosProtectionPlan = $null
@@ -86,9 +86,9 @@ EnableVmProtection     : false
 D:\> Remove-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlan
 ```
 
-Paket proteksi DDoS tidak dapat dihapus jika terkait dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan paket, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak boleh benar tanpa rencana).
-Lalu, kami tetap pada status baru dengan pemipaan variabel lokal ke **Set-AzVirtualNetwork**. Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
-Jika ini adalah yang terakhir terkait dengan paket tersebut, kami bisa menghapus paket proteksi DDoS dengan menggunakan perintah Remove-AzDdosProtectionPlan.
+Paket proteksi DDoS tidak dapat dihapus jika dikaitkan dengan jaringan virtual. Jadi langkah pertama adalah memisahkan kedua objek. Di sini, kami mendapatkan versi terbaru dari jaringan virtual yang terkait dengan rencana, dan kami mengatur properti **DdosProtectionPlan** ke nilai kosong dan bendera **EnableDdosProtection** (bendera ini tidak dapat berlaku tanpa rencana).
+Kemudian, kami tetap menggunakan status baru dengan memipakan variabel lokal ke **Set-AzVirtualNetwork**. Pada titik ini, rencana tidak lagi terkait dengan jaringan virtual.
+Jika ini adalah yang terakhir terkait dengan rencana, kami dapat menghapus paket proteksi DDoS menggunakan perintah Remove-AzDdosProtectionPlan.
 
 ## PARAMETERS
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -199,9 +199,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-azddosProtectionPlan](./New-AzDdosProtectionPlan.md)
+[New-AzDdosProtectionPlan](./New-AzDdosProtectionPlan.md)
 
-[Get-azddosProtectionPlan](./Get-AzDdosProtectionPlan.md)
+[Get-AzDdosProtectionPlan](./Get-AzDdosProtectionPlan.md)
 
 [New-AzVirtualNetwork](./New-AzVirtualNetwork.md)
 

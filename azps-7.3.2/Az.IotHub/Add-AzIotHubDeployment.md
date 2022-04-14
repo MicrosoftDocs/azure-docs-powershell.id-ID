@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubDeployment.md
-ms.openlocfilehash: ef1607ded130539b53b9c2616a0ee65278e65050
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 694dd2eca5e21b52d91eaa9f2598302cbb426ac5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000678"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142110131"
 ---
 # Add-AzIotHubDeployment
 
 ## SYNOPSIS
-Menambahkan penyebaran IoT Edge dalam Hub IoT target.
+Tambahkan penyebaran IoT Edge dalam IoT Hub target.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubdeployment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Add-AzIotHubDeployment [-ResourceId] <String> -Name <String> [-ModulesContent <H
 ```
 
 ## DESCRIPTION
-Penyebaran Edge dapat dibuat dengan metrik yang ditentukan pengguna untuk evaluasi permintaan.
+Penyebaran Edge dapat dibuat dengan metrik yang ditentukan pengguna untuk evaluasi sesuai permintaan.
 Lihat https://docs.microsoft.com/azure/iot-edge/module-deployment-monitoring untuk informasi selengkapnya.
 
 ## EXAMPLES
@@ -58,7 +61,7 @@ Buat penyebaran Edge dengan metadata default.
 PS C:\> Add-AzIotHubDeployment -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "deploy1" -Priority 3 -TargetCondition "tags.building=9 and tags.environment='test'"
 ```
 
-Buat penyebaran Edge dengan prioritas 3 yang berlaku pada kondisi ketika perangkat ditandai dengan tag di gedung 9 dan lingkungan adalah 'uji'.
+Buat penyebaran Edge dengan prioritas 3 yang berlaku pada kondisi saat perangkat ditandai dalam pembuatan 9 dan lingkungan 'uji'.
 
 ### Contoh 2
 ```powershell
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Label
-Peta label yang akan diterapkan untuk penggunaan target.
+Peta label yang akan diterapkan ke penempatan target.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -149,7 +152,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metric
+### -Metrik
 Kumpulan kueri untuk definisi metrik penyebaran IoT Edge.
 
 ```yaml
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Bobot penyebaran jika ada aturan yang bersaing (kemenangan tertinggi).
+Berat penyebaran dalam kasus aturan bersaing (kemenangan tertinggi).
 
 ```yaml
 Type: System.Int32
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCondition
-Kondisi target untuk menerapkan penyebaran Edge.
+Kondisi target tempat penerapan Edge diterapkan.
 
 ```yaml
 Type: System.String
@@ -255,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

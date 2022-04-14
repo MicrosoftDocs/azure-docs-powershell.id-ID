@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRetentionPolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRetentionPolicyObject.md
-ms.openlocfilehash: 17c147c7834993e43352edf9ef9adb7a183ef4e8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a36c76d5a13c453b7f00bd220ee87613a047c5e4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570527"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142210933"
 ---
 # Get-AzRecoveryServicesBackupRetentionPolicyObject
 
 ## SYNOPSIS
 Mendapatkan objek kebijakan penyimpanan dasar.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackupretentionpolicyobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,9 +30,9 @@ Get-AzRecoveryServicesBackupRetentionPolicyObject [-WorkloadType] <WorkloadType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzRecoveryServicesBackupRetentionPolicyObject** mendapatkan cmdlet **azureRMRecoveryServicesRetentionPolicyObject dasar**.
-Objek ini tidak tetap ada dalam sistem.
-Objek ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan pencadangan baru.
+Cmdlet **Get-AzRecoveryServicesBackupRetentionPolicyObject** mendapatkan basis **AzureRMRecoveryServicesRetentionPolicyObject**.
+Obyek ini tidak tetap ada dalam sistem.
+Ini adalah objek sementara yang dapat Anda manipulasi dan gunakan dengan cmdlet New-AzRecoveryServicesBackupProtectionPolicy untuk membuat kebijakan cadangan baru.
 
 ## EXAMPLES
 
@@ -41,18 +44,18 @@ PS C:\> $SchPol = Get-AzRecoveryServicesBackupSchedulePolicyObject -WorkloadType
 PS C:\> New-AzRecoveryServicesBackupProtectionPolicy -Name "NewPolicy" -WorkloadType AzureVM -RetentionPolicy $RetPol -SchedulePolicy $SchPol
 ```
 
-Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya di $RetPol penyimpanan.
-Perintah kedua mengatur durasi untuk objek kebijakan penyimpanan ke 365 hari.
-Perintah ketiga mendapatkan objek kebijakan jadwal, lalu menyimpannya dalam $SchPol variabel.
+Perintah pertama mendapatkan objek kebijakan penyimpanan, lalu menyimpannya dalam variabel $RetPol.
+Perintah kedua mengatur durasi untuk objek kebijakan penyimpanan menjadi 365 hari.
+Perintah ketiga mendapatkan objek kebijakan jadwal, lalu menyimpannya dalam variabel $SchPol.
 Perintah terakhir membuat kebijakan proteksi cadangan menggunakan kebijakan penyimpanan dan kebijakan jadwal yang dibuat dengan perintah sebelumnya.
 
-### Contoh 2: Dapatkan objek penyimpanan dasar per jam untuk kebijakan berbagi file 
+### Contoh 2: Dapatkan objek penyimpanan basis jam untuk kebijakan filehare 
 ```powershell
 PS C:\> $retentionPolicy = Get-AzRecoveryServicesBackupRetentionPolicyObject -WorkloadType AzureFiles -BackupManagementType AzureStorage -ScheduleRunFrequency Hourly
 PS C:\> $retentionPolicy.DailySchedule.DurationCountInDays = 10
 ```
 
-Perintah pertama mendapatkan objek **RetentionPolicy basis** per jam, lalu menyimpannya dalam $retentionPolicy per jam.
+Perintah pertama mendapatkan objek Base Hourly **RetentionPolicy** , lalu menyimpannya dalam variabel $retentionPolicy.
 Perintah kedua mengatur durasi penyimpanan untuk titik pemulihan harian menjadi 10 hari.
 
 ## PARAMETERS
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduleRunFrequency
-Frekuensi jadwal pengambilan objek kebijakan penyimpanan dasar mana yang diambil. Nilai yang dapat diterima adalah Harian dan Per jam.
+Frekuensi jadwal pengambilan objek kebijakan penyimpanan dasar. Nilai yang dapat diterima adalah Harian dan Per Jam.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ScheduleRunType
@@ -127,11 +130,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

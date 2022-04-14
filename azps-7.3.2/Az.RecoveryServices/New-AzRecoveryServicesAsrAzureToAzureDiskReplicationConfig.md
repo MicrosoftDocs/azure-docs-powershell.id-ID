@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig.md
-ms.openlocfilehash: 7caea20662bdf94b276ffb34a7963549801d09ac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c4a83dbbb27e5d27a7e468a605dd477aba49e22d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140391755"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142210789"
 ---
 # New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig
 
 ## SYNOPSIS
-Membuat objek pemetaan disk untuk disk mesin virtual Azure untuk direplikasi.
+Membuat objek pemetaan disk untuk disk mesin virtual Azure yang akan direplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrazuretoazurediskreplicationconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig [-ManagedDisk] -LogSt
 ```
 
 ## DESCRIPTION
-Membuat objek pemetaan disk yang memetakan disk mesin virtual Azure ke akun penyimpanan cache dan akun penyimpanan target (kawasan pemulihan) untuk digunakan mereplikasi disk.
+Membuat objek pemetaan disk yang memetakan disk mesin virtual Azure ke akun penyimpanan cache dan akun penyimpanan target (kawasan pemulihan) yang akan digunakan untuk mereplikasi disk.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Membuat objek pemetaan disk yang memetakan disk mesin virtual Azure ke akun peny
 PS C:\> New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig -VhdUri  $vhdUri -RecoveryAzureStorageAccountId $recoveryStorageAccountId -LogStorageAccountId $logStorageAccountId
 ```
 
-Buat objek pemetaan disk untuk disk mesin virtual Azure yang akan direplikasi. Digunakan selama Azure ke Azure EnableDr dan operasi perlindungan ulang.
+Buat objek pemetaan disk untuk disk mesin virtual Azure untuk direplikasi. Digunakan selama Azure ke Azure EnableDr dan melindungi kembali operasi.
 
 ### Contoh 2
 ```
@@ -54,7 +57,7 @@ PS C:\> New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig -ManagedDisk 
 -RecoveryReplicaDiskAccountType $RecoveryReplicaDiskAccountType -RecoveryTargetDiskAccountType $RecoveryTargetDiskAccountType
 ```
 
-Buat objek pemetaan disk terkelola untuk disk mesin virtual Azure yang dapat direplikasi. Digunakan selama Azure ke Azure EnableDr dan operasi perlindungan ulang.
+Buat objek pemetaan disk terkelola untuk disk mesin virtual Azure yang akan direplikasi. Digunakan selama Azure ke Azure EnableDr dan melindungi kembali operasi.
 
 ### Contoh 3
 ```
@@ -63,7 +66,7 @@ PS C:\> New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig -ManagedDisk 
 -KeyEncryptionKeyUrl $keyUrl -KeyEncryptionVaultId $keyVaultId
 ```
 
-Buat objek pemetaan disk terkelola dengan pengaturan enkripsi sekali jalan agar disk mesin virtual Azure dapat direplikasi. Digunakan selama Azure ke Azure EnableDr dan operasi perlindungan ulang.
+Buat objek pemetaan disk terkelola dengan satu pengaturan enkripsi akses untuk disk mesin virtual Azure yang akan direplikasi. Digunakan selama Azure ke Azure EnableDr dan melindungi kembali operasi.
 
 ### Contoh 4
 ```
@@ -71,7 +74,7 @@ PS C:\> New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig -ManagedDisk 
 -RecoveryReplicaDiskAccountType $RecoveryReplicaDiskAccountType -RecoveryTargetDiskAccountType $RecoveryTargetDiskAccountType -RecoveryDiskEncryptionSetId $RecoveryDiskEncryptionSetId
 ```
 
-Buat objek pemetaan disk terkelola dengan Id kumpulan enkripsi disk target, agar disk mesin virtual Azure dapat direplikasi. Digunakan selama Azure ke Azure EnableDr dan operasi perlindungan ulang.
+Buat objek pemetaan disk terkelola dengan id kumpulan enkripsi disk target, agar disk mesin virtual Azure direplikasi. Digunakan selama Azure ke Azure EnableDr dan melindungi kembali operasi.
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSecretUrl
-Menentukan URL rahasia enkripsi disk.
+Menentukan url rahasia enkripsi disk.
 
 ```yaml
 Type: System.String
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionVaultId
-Menentukan Id ARM penyimpanan kunci enkripsi disk.
+Menentukan kunci enkripsi diska VAULT ARM Id.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskId
-Menentukan id disk dari disk yang dikelola.
+Menentukan id diska dari diska terkelola.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverDiskName
-Menentukan nama disk yang dibuat selama failover.
+Menentukan nama diska yang dibuat selama failover.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionVaultId
-Menentukan Kunci Enkripsi Kunci Vault ARM.
+Menentukan kunci enkripsi kunci vault ARM Id.
 
 ```yaml
 Type: System.String
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDisk
-Menentukan input untuk disk yang dikelola.
+Menentukan input untuk diska terkelola.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryDiskEncryptionSetId
-Menentukan ID kumpulan enkripsi disk Azure yang akan digunakan untuk pemulihan disk.
+Menentukan ID kumpulan enkripsi disk Azure yang akan digunakan untuk disk pemulihan.
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryReplicaDiskAccountType
-Menentukan tipe akun dari disk terkelola yang direplikasi.
+Menentukan tipe akun disk terkelola yang direplikasi.
 
 ```yaml
 Type: System.String
@@ -272,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryTargetDiskAccountType
-Menentukan disk target pemulihan untuk disk yang dikelola direplikasi.
+Menentukan disk target pemulihan untuk disk terkelola yang direplikasi.
 
 ```yaml
 Type: System.String
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoDiskName
-Menentukan nama disk yang dibuat selama failover uji.
+Menentukan nama disk yang dibuat selama uji failover.
 
 ```yaml
 Type: System.String
@@ -303,7 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -VhdUri
-Tentukan URI VHD dari disk yang terkait dengan pemetaan ini.
+Tentukan URI VHD disk yang terkait dengan pemetaan ini.
 
 ```yaml
 Type: System.String
@@ -318,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -349,11 +352,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

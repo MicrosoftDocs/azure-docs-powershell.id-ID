@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.providerhub/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ProviderHub/help/Get-AzProviderHubSku.md
-ms.openlocfilehash: c199930ea79270be4c2f3c4956a66c5a28db2811
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3a8df1ec8c30db20afcdda51ce83c86875a34b26
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142211113"
 ---
 # Get-AzProviderHubSku
 
 ## SYNOPSIS
-Mendapatkan detail sku untuk tipe sumber daya dan nama sku yang diberikan.
+Mendapatkan detail sku untuk tipe sumber daya dan nama sku tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.providerhub/get-azproviderhubsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzProviderHubSku -ProviderNamespace <String> -ResourceType <String> [-Subscr
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzProviderHubSku -ProviderNamespace <String> -ResourceType <String> -Sku <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -49,7 +52,7 @@ Get-AzProviderHubSku -NestedResourceTypeFirst <String> -NestedResourceTypeSecond
  [<CommonParameters>]
 ```
 
-### Daftar3
+### List3
 ```
 Get-AzProviderHubSku -NestedResourceTypeFirst <String> -NestedResourceTypeSecond <String>
  -NestedResourceTypeThird <String> -ProviderNamespace <String> -ResourceType <String>
@@ -57,7 +60,7 @@ Get-AzProviderHubSku -NestedResourceTypeFirst <String> -NestedResourceTypeSecond
 ```
 
 ## DESCRIPTION
-Mendapatkan detail sku untuk tipe sumber daya dan nama sku yang diberikan.
+Mendapatkan detail sku untuk tipe sumber daya dan nama sku tertentu.
 
 ## EXAMPLES
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ProviderHub.Models.IProviderHubIdentity
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -NestedResourceTypeFirst
-Tipe sumber daya anak pertama.
+Tipe sumber daya turunan pertama.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU tersebut.
+The SKU.
 
 ```yaml
 Type: System.String
@@ -221,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -245,7 +248,7 @@ INPUTOBJECT <IProviderHubIdentity>: Parameter Identitas
   - `[NestedResourceTypeFirst <String>]`: Tipe sumber daya anak pertama.
   - `[NestedResourceTypeSecond <String>]`: Tipe sumber daya anak kedua.
   - `[NestedResourceTypeThird <String>]`: Tipe sumber daya anak ketiga.
-  - `[NotificationRegistrationName <String>]`: Pendaftaran pemberitahuan.
+  - `[NotificationRegistrationName <String>]`: Registrasi pemberitahuan.
   - `[ProviderNamespace <String>]`: Nama penyedia sumber daya yang dihosting dalam ProviderHub.
   - `[ResourceType <String>]`: Tipe sumber daya.
   - `[RolloutName <String>]`: Nama peluncuran.

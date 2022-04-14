@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.stackedge/invoke
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackEdge/StackEdge/help/Invoke-AzStackEdgeDevice.md
-ms.openlocfilehash: 5657190104120f4b001a707345677942e6b2f20b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5a5b95b36a3cbf38e8169740a7e16def0e762741
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553979"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142251325"
 ---
 # Invoke-AzStackEdgeDevice
 
 ## SYNOPSIS
-Menjalankan tindakan tertentu pada perangkat.
+Memanggil tindakan tertentu pada perangkat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackedge/invoke-azstackedgedevice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -74,7 +77,7 @@ Invoke-AzStackEdgeDevice -DeviceObject <PSStackEdgeDevice> [-InstallUpdate] [-As
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-Az StackEdgeDevice** menjalankan tindakan untuk memindai, mengunduh dan menginstal pembaruan pada perangkat Stack Edge. Pemindaian otomatis berjalan di perangkat setiap hari, Anda dapat memicu pindaian secara eksplisit dengan menjalankan cmdlet ini.
+Cmdlet **Invoke-AzStackEdgeDevice** meminta tindakan untuk memindai, mengunduh, dan menginstal pembaruan di perangkat Stack Edge. Pemindaian otomatis berjalan pada perangkat setiap hari, Anda dapat memicu pemindaian secara eksplisit dengan menjalankan cmdlet ini.
 
 ## EXAMPLES
 
@@ -96,7 +99,7 @@ PS C:\> Invoke-AzStackEdgeDevice -ResourceGroupName resourceGroupName -Name devi
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -FetchUpdate
-Mengunduh pembaruan pada perangkat Stack edge/gateway
+Mengunduh pembaruan di perangkat Stack edge/gateway
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstallUpdate
-Menginstal pembaruan pada perangkat Stack edge/gateway
+Menginstal pembaruan di perangkat Stack edge/gateway
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScanForUpdate
-Memindai pembaruan pada perangkat Stack edge/gateway.
+Pindai pembaruan di perangkat Stack edge/gateway.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,11 +279,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

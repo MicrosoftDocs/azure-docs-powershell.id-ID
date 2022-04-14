@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/update-azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Update-AzSqlSyncMember.md
-ms.openlocfilehash: 24c3f4c670fab7b54d6726dd7655472ba7eac9c8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 45f936c7b464153e97dc01282b02d0f28f7a7100
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390639"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142251505"
 ---
 # Update-AzSqlSyncMember
 
 ## SYNOPSIS
-Memperbarui anggota Azure SQL Database Sinkronisasi.
+Memperbarui Anggota Sinkronisasi Azure SQL Database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/update-azsqlsyncmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzSqlSyncMember -Name <String> [-MemberDatabaseCredential <PSCredential>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSqlSyncGroup** mengubah properti layanan Azure SQL Database Sync Member.
+Cmdlet **Update-AzSqlSyncGroup** mengubah properti anggota sinkronisasi Azure SQL Database.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Perintah ini mengatur ulang kata sandi administrator untuk database anggota.
 
 ### Contoh 2
 
-Memperbarui anggota Azure SQL Database Sinkronisasi. (otomatisgenerated)
+Memperbarui Anggota Sinkronisasi Azure SQL Database. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -67,7 +70,7 @@ Update-AzSqlSyncMember -DatabaseName 'Database01' -MemberDatabaseCredential <PSC
 ## PARAMETERS
 
 ### -DatabaseName
-Nama nama Azure SQL Database.
+Nama Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama azure SQL Server.
+Nama Server Azure SQL.
 
 ```yaml
 Type: System.String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -UsePrivateLinkConnection
-Apakah akan menggunakan tautan pribadi saat menyambungkan ke anggota sinkronisasi ini.
+Apakah akan menggunakan tautan privat saat menyambungkan ke anggota sinkronisasi ini.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

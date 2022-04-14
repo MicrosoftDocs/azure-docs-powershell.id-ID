@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayFrontendPort.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzApplicationGatewayFrontendPort.md
 ms.openlocfilehash: d2e3f59c458c36613908b2f6d330f32638a69199
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140134413"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142267819"
 ---
 # Remove-AzApplicationGatewayFrontendPort
 
 ## SYNOPSIS
-Menghapus port ujung-depan dari gateway aplikasi.
+Menghapus port ujung depan dari gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayfrontendport) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azapplicationgatewayfrontendport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,25 +29,25 @@ Remove-AzApplicationGatewayFrontendPort -Name <String> -ApplicationGateway <PSAp
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzApplicationGatewayFrontendPort** menghapus port ujung-depan dari gateway aplikasi Azure.
+Cmdlet **Remove-AzApplicationGatewayFrontendPort** menghapus port ujung depan dari gateway aplikasi Azure.
 
 ## EXAMPLES
 
-### Contoh: Menghapus port front-end dari gateway aplikasi
+### Contoh: Hapus port ujung depan dari gateway aplikasi
 ```
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> Remove-AzApplicationGatewayFrontendPort -ApplicationGateway $AppGw -Name "FrontEndPort02"
 PS C:\> Set-AzApplicationGateway -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpan gateway di $AppGw lain.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpan gateway dalam variabel $AppGw.
 Perintah kedua menghapus port bernama FrontEndPort02 dari gateway aplikasi.
 Perintah terakhir memperbarui gateway aplikasi.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi untuk menghapus port ujung-depan.
+Menentukan gateway aplikasi untuk menghapus port ujung depan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
