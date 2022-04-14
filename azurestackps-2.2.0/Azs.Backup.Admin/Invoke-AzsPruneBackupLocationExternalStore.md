@@ -4,41 +4,41 @@ Module Name: Azs.Backup.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.backup.admin/invoke-azsprunebackuplocationexternalstore
 schema: 2.0.0
 ms.openlocfilehash: f0a4dc86138ea59ba26ae0d435c4ad39a2cba7e1
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580090"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141812300"
 ---
 # Invoke-AzsPruneBackupLocationExternalStore
 
 ## SYNOPSIS
-Dimensi toko cadangan eksternal.
+Pangkas penyimpanan cadangan eksternal.
 
 ## SYNTAX
 
-### UalneExpanded (Default)
+### PruneExpanded (Default)
 ```
 Invoke-AzsPruneBackupLocationExternalStore [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-OperationType <PruneBackupStoreOperationType>] [-DefaultProfile <PSObject>]
  [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Innsbruckne
+### Memangkas
 ```
 Invoke-AzsPruneBackupLocationExternalStore -Option \<IPruneBackupStoreOperationOptionModel>
  [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
  [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### besViaIdentity
+### PruneViaIdentity
 ```
 Invoke-AzsPruneBackupLocationExternalStore -INPUTOBJECT \<IBackupAdminIdentity>
  -Option \<IPruneBackupStoreOperationOptionModel> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ViaIdentityExpanded
+### PruneViaIdentityExpanded
 ```
 Invoke-AzsPruneBackupLocationExternalStore -INPUTOBJECT \<IBackupAdminIdentity>
  [-OperationType <PruneBackupStoreOperationType>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
@@ -46,20 +46,20 @@ Invoke-AzsPruneBackupLocationExternalStore -INPUTOBJECT \<IBackupAdminIdentity>
 ```
 
 ## DESCRIPTION
-Dimensi toko cadangan eksternal.
+Pangkas penyimpanan cadangan eksternal.
 
 ## EXAMPLES
 
-### Contoh 1: Data dari external store
+### Contoh 1: Prune external store
 ```powershell
 PS C:\> Invoke-AzsPruneBackupLocationExternalStore
 
 masbackup/progressivebackup/garbage
 ```
 
-Toko eksternal External External Store
+Pangkas bursa eksternal
 
-### Contoh 2: Jalankan proses kering yang tidak benar-benar menghapus sampah
+### Contoh 2: Melakukan dry run yang tidak benar-benar menghapus sampah
 ```powershell
 PS C:\> Invoke-AzsPruneBackupLocationExternalStore -OperationType DryRun
 
@@ -67,7 +67,7 @@ masbackup/progressivebackup/garbage
 
 ```
 
-Menjalankan proses kering yang tidak benar-benar menghapus sampah
+Melakukan dry run yang tidak benar-benar menghilangkan sampah
 
 ## PARAMETERS
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,8 +162,8 @@ Accept wildcard characters: False
 ```
 
 ### -Option
-Model operasi penyimpanan cadangan Database database.
-Untuk membuat, lihat bagian CATATAN untuk properti OPTION dan membuat tabel hash.
+Pangkas model operasi penyimpanan cadangan.
+Untuk membangun, lihat bagian CATATAN untuk properti OPTION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IPruneBackupStoreOperationOptionModel
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,8 +208,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -276,15 +276,15 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT \<IBackupAdminIdentity> : Parameter Identitas
+INPUTOBJECT \<IBackupAdminIdentity>: Parameter Identitas
   - `[Backup <String>]`: Nama cadangan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama lokasi cadangan.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
-OPTION \<IPruneBackupStoreOperationOptionModel> : Model operasi penyimpanan cadangan Kode 365.
-  - `[OperationType <PruneBackupStoreOperationType?>]`: Tipe operasi.
+OPTION \<IPruneBackupStoreOperationOptionModel>: Pangkas model operasi penyimpanan cadangan.
+  - `[OperationType <PruneBackupStoreOperationType?>]`: Jenis operasi.
 
 ## RELATED LINKS
 

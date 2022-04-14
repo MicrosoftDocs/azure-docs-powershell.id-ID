@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualHubVnetConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmVirtualHubVnetConnection.md
 ms.openlocfilehash: 3a7c48803f18bf73f75e721296757e37ff89d44c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140855837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882932"
 ---
 # Remove-AzureRmVirtualHubVnetConnection
 
 ## SYNOPSIS
-Cmdlet Remove-AzureRmVirtualHubVnetConnection menghapus Azure Virtual Network Connection yang merepotkan VNET jarak jauh ke hub VNET.
+Cmdlet Remove-AzureRmVirtualHubVnetConnection menghapus Azure Virtual Network Connection yang mengabdikan VNET jarak jauh ke hub VNET.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,7 +41,7 @@ Remove-AzureRmVirtualHubVnetConnection -ResourceId <String> [-AsJob] [-Force] [-
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmVirtualHubVnetConnection menghapus Azure Virtual Network Connection yang merepotkan VNET jarak jauh ke hub VNET.
+Cmdlet Remove-AzureRmVirtualHubVnetConnection menghapus Azure Virtual Network Connection yang mengabdikan VNET jarak jauh ke hub VNET.
 
 ## EXAMPLES
 
@@ -58,9 +58,9 @@ PS C:\> New-AzureRmVirtualHubVnetConnection -ResourceGroupName "testRG" -Virtual
 PS C:\> Remove-AzureRmVirtualHubVnetConnection -ResourceGroupName testRG -VirtualHubName westushub -Name testvnetconnection
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
-Setelah hub koneksi jaringan virtual dibuat, hub menghapus koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
+Setelah koneksi jaringan virtual hub dibuat, hub akan menghapus koneksi jaringan virtual hub menggunakan nama grup sumber dayanya, nama hub dan nama koneksi.
 
 ### Contoh 2
 
@@ -75,14 +75,14 @@ PS C:\> New-AzureRmVirtualHubVnetConnection -ResourceGroupName "testRG" -Virtual
 PS C:\> Get-AzureRmVirtualHubVnetConnection -ResourceGroupName testRG -VirtualHubName westushub -Name testvnetconnection | Remove-AzureRmHubVnetConnection
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Jaringan Virtual akan dibuat setelahnya, yang akan peer Jaringan Virtual ke Virtual Hub.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Tengah dalam grup sumber daya tersebut di Azure. Koneksi Virtual Network akan dibuat setelahnya yang akan mengintip Virtual Network ke Hub Virtual.
 
-Setelah koneksi jaringan virtual hub dibuat, koneksi jaringan virtual hub menghapus koneksi jaringan virtual hub menggunakan pemipaan powershell pada output dari Get-AzureRmHubVirtualNetworkConnection.
+Setelah koneksi jaringan virtual hub dibuat, koneksi jaringan virtual hub akan dihapus menggunakan piping powershell pada output dari Get-AzureRmHubVirtualNetworkConnection.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sumber daya hubvirtualnetworkconnection untuk memodifikasi.
+Sumber daya hubvirtualnetworkconnection untuk diubah.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSHubVirtualNetworkConnection
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari sumber daya hubvirtualnetworkconnection untuk memodifikasi.
+Id sumber daya sumber daya hubvirtualnetworkconnection untuk diubah.
 
 ```yaml
 Type: System.String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/Get-AzCognitiveServicesAccountSku.md
-ms.openlocfilehash: e069efdab622d1fb0a458037b0fad984afb08a19
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bdeaeb6c9dcd08ba7819bbcfe70fc304e042a521
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010561"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073011"
 ---
 # Get-AzCognitiveServicesAccountSku
 
 ## SYNOPSIS
-Dapatkan SKU yang tersedia untuk akun.
+Mendapatkan SKU yang tersedia untuk akun.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/get-azcognitiveservicesaccountsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzCognitiveServicesAccountSku [-Type <String>] [-Location <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCognitiveServicesAccountSku** mendapatkan SKU yang tersedia untuk akun Layanan Kognitif.
-SKU adalah rencana tingkat untuk akun.
+Cmdlet **Get-AzCognitiveServicesAccountSku** mendapatkan SKU yang tersedia untuk akun Cognitive Services.
+SKU adalah paket tingkat untuk sebuah akun.
 Ini menentukan harga, batas panggilan, dan tarif untuk akun tersebut.
 F0 SKU adalah tingkat gratis.
-Tingkatan berbayar meliputi S0, S1, S2, dan lain-lain.
+Tingkat berbayar mencakup S0, S1, S2, dan seterusnya.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ S0   Standard
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

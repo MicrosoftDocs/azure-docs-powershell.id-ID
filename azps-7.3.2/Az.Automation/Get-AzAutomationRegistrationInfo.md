@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRegistrationInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationRegistrationInfo.md
-ms.openlocfilehash: fcb0d854623196623864eaa020651799cf12502d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ba75831f6ddf073305000f9aeb3f94a377d6f34c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550669"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856040"
 ---
 # Get-AzAutomationRegistrationInfo
 
 ## SYNOPSIS
-Mendapatkan informasi pendaftaran untuk onboarding node DSC atau pekerja hibrid ke Otomatisasi.
+Mendapatkan informasi pendaftaran untuk onboarding simpul DSC atau pekerja hibrid ke Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationregistrationinfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,21 +29,21 @@ Get-AzAutomationRegistrationInfo [-ResourceGroupName] <String> [-AutomationAccou
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutomationRegistrationInfo** mendapatkan titik akhir dan kunci yang diperlukan untuk onboard node Konfigurasi Status yang Diinginkan (DSC) atau pekerja hibrid ke akun Azure Automation.
+Cmdlet **Get-AzAutomationRegistrationInfo** mendapatkan titik akhir dan kunci yang diperlukan untuk mengintegrasikan node Desired State Configuration (DSC) atau pekerja hibrid ke akun Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi pendaftaran
+### Contoh 1: Dapatkan informasi registrasi
 ```
 PS C:\>Get-AzAutomationRegistrationInfo -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini mendapatkan informasi pendaftaran untuk akun Otomatisasi yang bernama AutomationAccount01 dalam Grup Sumber Daya bernama ResourceGroup01.
+Perintah ini mendapatkan informasi pendaftaran untuk akun Otomatisasi bernama AutomationAccount01 dalam Grup Sumber Daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi di mana cmdlet ini mendapatkan informasi pendaftaran.
+Menentukan nama akun Otomatisasi tempat cmdlet ini mendapatkan informasi registrasi.
 
 ```yaml
 Type: System.String
@@ -55,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

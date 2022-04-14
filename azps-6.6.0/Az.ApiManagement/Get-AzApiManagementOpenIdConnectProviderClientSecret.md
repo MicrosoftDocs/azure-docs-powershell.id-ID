@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProviderClientSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementOpenIdConnectProviderClientSecret.md
 ms.openlocfilehash: 0abf5e07c17186c1ee0b8d155d3bb64560c74a26
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140259955"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141808952"
 ---
 # Get-AzApiManagementOpenIdConnectProviderClientSecret
 
 ## SYNOPSIS
-Mendapatkan OpenID Koneksi rahasia klien penyedia.
+Dapatkan rahasia klien penyedia openID Koneksi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementopenidconnectproviderclientsecret) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementopenidconnectproviderclientsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzApiManagementOpenIdConnectProviderClientSecret -Context <PsApiManagementCo
 ```
 
 ## DESCRIPTION
-Mendapatkan OpenID Koneksi rahasia klien penyedia.
+Dapatkan rahasia klien penyedia openID Koneksi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan rahasia klien penyedia dengan menggunakan ID
+### Contoh 1: Dapatkan rahasia klien penyedia dengan menggunakan ID
 ```
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementOpenIdConnectProviderClientSecret -Context $apimContext -OpenIdConnectProviderId "OICProvider01"
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenIdConnectProviderId
-Pengidentifikasi Dari Penyedia Koneksi OpenID.
+Pengidentifikasi Penyedia Koneksi OpenID.
 Parameter ini diperlukan.
 
 ```yaml
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

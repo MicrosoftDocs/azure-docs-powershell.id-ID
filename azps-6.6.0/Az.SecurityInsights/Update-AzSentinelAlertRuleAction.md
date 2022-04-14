@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRuleAction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/Update-AzSentinelAlertRuleAction.md
 ms.openlocfilehash: 7312807cf541c9a7e77893cfa4749c7b98b3ad9b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140304601"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141905691"
 ---
 # Update-AzSentinelAlertRuleAction
 
 ## SYNOPSIS
-Memperbarui Respons Otomatis (Tindakan Aturan Pemberitahuan).
+Memperbarui Respons Otomatis (Tindakan Aturan Peringatan).
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertruleaction) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/update-azsentinelalertruleaction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,9 +43,9 @@ Update-AzSentinelAlertRuleAction -LogicAppResourceId <String> -TriggerUri <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSentinelAlertRuleAction** memperbarui bookmark di ruang kerja yang ditentukan.
-Anda dapat melewati objek **AlertRuleAction** sebagai parameter atau menggunakan operator pipeline, atau alternatifnya Anda dapat menentukan *parameter AlertRuleId* *dan ActionId* .
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **Update-AzSentinelAlertRuleAction** memperbarui bookmark di ruang kerja tertentu.
+Anda dapat melewati objek **AlertRuleAction** sebagai parameter atau menggunakan operator pipeline, atau anda dapat menentukan parameter *AlertRuleId* dan *ActionId* .
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ PS C:\>$LogicAppTriggerUri = Get-AzLogicAppTriggerCallbackUrl -ResourceGroupName
 PS C:\> Update-AzSentinelBookmark -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -AlertRuleId "MyAlertRuleId" -ActionId "MyActionId" -LogicAppResourceId ($LogicAppResourceId.Id) -TriggerUri ($LogicAppTriggerUri.Value)
 ```
 
-Contoh ini memperbarui Tindakan AlertRuleAction untuk mengganti Tindakan yang *sudah ada* dengan properti baru.
+Contoh ini memperbarui AlertRuleAction menggantikan *Tindakan* yang sudah ada dengan properti baru.
 
 ### Contoh 2
 ```powershell
@@ -64,7 +64,7 @@ PS C:\> $AlertRuleAction = Get-AzSentinelAlertRuleAction -ResourceGroupName "MyR
 PS C:\> Update-AzSentinelAlertRuleAction -InputObject $AlertRuleAction -LogicAppResourceId ($LogicAppResourceId.Id) -TriggerUri ($LogicAppTriggerUri.Value)
 ```
 
-Contoh ini memperbarui Tindakan AlertRuleAction menggunakan InputObject untuk mengganti Tindakan yang sudah *ada dengan* properti baru.
+Contoh ini memperbarui AlertRuleAction menggunakan InputObject menggantikan *Tindakan* yang sudah ada dengan properti baru.
 
 ## PARAMETERS
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleId
-Id Aturan Pemberitahuan.
+Id Aturan Peringatan.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -TriggerUri
-Uri Pemicu Aplikasi Logika Tindakan.
+Aplikasi Logika Tindakan Memicu Uri.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

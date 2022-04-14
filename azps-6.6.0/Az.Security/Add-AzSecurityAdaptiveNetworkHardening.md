@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Add-AzSecurityAdaptiveNetworkHardening.md
 ms.openlocfilehash: 1f8472fba5586e5bc2337094b719a6c4645038c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140305249"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141906195"
 ---
 # Add-AzSecurityAdaptiveNetworkHardening
 
 ## SYNOPSIS
-Menerapkan aturan tertentu pada NSG yang tercantum dalam permintaan
+Memberlakukan aturan yang diberikan pada NSG yang tercantum dalam permintaan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/add-azsecurityadaptivenetworkhardening) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/add-azsecurityadaptivenetworkhardening) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Add-AzSecurityAdaptiveNetworkHardening [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Adaptif Network Hardenings secara otomatis dihitung oleh Pusat Keamanan Azure, gunakan cmdlet ini untuk memberlakukan aturan tertentu pada NSG yang tercantum dalam permintaan.
+Hardening Jaringan Adaptif dihitung secara otomatis oleh Azure Security Center, gunakan cmdlet ini untuk menerapkan aturan tertentu pada NSG yang tercantum dalam permintaan.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ PS C:\> Add-AzSecurityAdaptiveNetworkHardening -AdaptiveNetworkHardeningResource
 
 True
 ```
-Menerapkan aturan tertentu pada NSG yang tercantum dalam permintaan
+Memberlakukan aturan yang diberikan pada NSG yang tercantum dalam permintaan
 
 ## PARAMETERS
 
@@ -58,8 +58,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AdaptiveNetworkSourceeningResourceName
-Nama sumber daya Adaptive Network Hardening.
+### -AdaptiveNetworkHardeningResourceName
+Nama sumber daya Pengerasan Jaringan Adaptif.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNamespace
-Kumpulan nama sumber daya.
+Ruang Nama sumber daya.
 
 ```yaml
 Type: System.String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aturan
-Aturan untuk diberlakukan.
+Aturan yang akan diterapkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SecurityCenter.Models.AdaptiveNetworkHardenings.PSSecurityAdaptiveNetworkHardeningsRule
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroups
-ID sumber daya Azure dari grup keamanan jaringan efektif yang akan diperbarui dengan aturan keamanan yang dibuat dari aturan Hardening Jaringan Adaptif.
+ID sumber daya Azure dari grup keamanan jaringan efektif yang akan diperbarui dengan aturan keamanan yang dibuat dari aturan Pengerasan Jaringan Adaptif.
 
 ```yaml
 Type: System.Collections.Generic.List<System.String>
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan nilai yang menunjukkan keberhasilan atau kegagalan
+Mengembalikan nilai yang mengindikasikan keberhasilan atau kegagalan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,13 +194,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.SecurityCenter.Models.AdaptiveNetworkMicrosoftenings.PSSecurityAdaptiveNetworkPtiveEningsRule
+### Microsoft.Azure.Commands.SecurityCenter.Models.AdaptiveNetworkHardenings.PSSecurityAdaptiveNetworkHardeningsRule
 
 ## OUTPUTS
 

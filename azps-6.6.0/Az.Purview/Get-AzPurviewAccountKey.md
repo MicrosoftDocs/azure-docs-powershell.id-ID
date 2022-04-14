@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Purview/help/Get-AzPurviewAccountKey.md
 ms.openlocfilehash: 34044149402db25cf2f1f456647be0699cfd9e29
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139933279"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907779"
 ---
 # Get-AzPurviewAccountKey
 
 ## SYNOPSIS
-List the authorization keys associated with this account.
+Cantumkan kunci otorisasi yang terkait dengan akun ini.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.purview/get-azpurviewaccountkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.purview/get-azpurviewaccountkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzPurviewAccountKey -AccountName <String> -ResourceGroupName <String> [-Subs
 ```
 
 ## DESCRIPTION
-List the authorization keys associated with this account.
+Cantumkan kunci otorisasi yang terkait dengan akun ini.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar tombol otorisasi yang terkait dengan akun tertentu.
+### Contoh 1: Cantumkan kunci otorisasi yang terkait dengan akun tertentu.
 ```powershell
 PS C:\> Get-AzPurviewAccountKey -AccountName test-pa -ResourceGroupName test-rg
 
@@ -41,11 +41,11 @@ AtlasKafkaPrimaryEndpoint
 Endpoint=sb://atlas-xxxxxxxx-5348-4811-a336-759242a25d37.servicebus.windows.net/;SharedAccessKeyName=AlternateSharedAccessKey;SharedAcces… 
 ```
 
-List the authorization keys associated with account 'test-pa'.
+Cantumkan kunci otorisasi yang terkait dengan akun 'test-pa'.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun.
 
 ```yaml
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/New-AzMySqlFirewallRule.md
 ms.openlocfilehash: beaea705cef425bfb44ba629cbba0c8b86048699
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140308345"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141864914"
 ---
 # New-AzMySqlFirewallRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140308345"
 Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.mysql/new-azmysqlfirewallrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/new-azmysqlfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -59,7 +59,7 @@ rule 0.0.0.0        0.0.0.1
 
 Cmdlet ini membuat Aturan Firewall server MySql.
 
-### Contoh 2: Membuat Aturan Firewall MySql baru menggunakan -ClientIPAddress.
+### Contoh 2: Buat Aturan Firewall MySql baru menggunakan -ClientIPAddress.
 ```powershell
 PS C:\> New-AzMySqlFirewallRule -ResourceGroupName PowershellMySqlTest -ServerName mysql-test -ClientIPAddress 0.0.0.1
 
@@ -68,7 +68,7 @@ Name                                StartIPAddress EndIPAddress
 ClientIPAddress_2020-08-11_18-19-27 0.0.0.1        0.0.0.1
 ```
 
-Cmdlets ini membuat Aturan Firewall MySql menggunakan -ClientIPAddress.
+Cmdlet ini membuat Aturan Firewall MySql menggunakan -ClientIPAddress.
 
 ### Contoh 3: Membuat Aturan Firewall MySql baru untuk memperbolehkan semua IP
 ```powershell
@@ -79,12 +79,12 @@ Name                         StartIPAddress EndIPAddress
 AllowAll_2020-08-11_18-19-27 0.0.0.0        255.255.255.255
 ```
 
-Cmdlet ini membuat Aturan Firewall MySql baru untuk memperbolehkan semua IP.
+Cmdlet ini membuat Aturan Firewall MySql baru untuk mengizinkan semua IP.
 
 ## PARAMETERS
 
 ### -AllowAll
-Sajikan untuk memperbolehkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
+Sajikan untuk mengizinkan semua IP rentang, dari 0.0.0.0 hingga 255.255.255.255.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien ip tunggal aturan firewall server yang ditentukan.
-Harus menggunakan format IPv4.
+Klien menentukan IP tunggal aturan firewall server.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -162,8 +162,8 @@ Accept wildcard characters: False
 
 ### -Nama
 Nama aturan firewall server.
-Jika tidak ditentukan, defaultnya tidak didefinisikan.
-Jika AllowAll ada, nama default adalah AllowAll_yyyy-MM-dd_HH-mm-ss.
+Jika tidak ditentukan, defaultnya tidak ditentukan.
+Jika AllowAll ada, nama defaultnya AllowAll_yyyy-MM-dd_HH-mm-ss.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 
 ### -StartIPAddress
 Alamat IP mulai aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

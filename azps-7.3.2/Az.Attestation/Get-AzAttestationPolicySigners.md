@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Get-AzAttestationPolicySigners.md
-ms.openlocfilehash: 7552d7e55fe4bd6c6182c64d3fe3c9aadd563b15
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 228b64295708f003021643b7aff9e464de8ca7ea
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189261"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856346"
 ---
 # Get-AzAttestationPolicySigners
 
 ## SYNOPSIS
 Mendapatkan penanda tangan kebijakan tepercaya dari penyewa di Azure Attestation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/get-azattestationpolicysigners) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ JKU              : https://pshtest.us.attest.azure.net/certs
 Certificates     : {}
 ```
 
-Dapatkan penanda tangan kebijakan tepercaya untuk *pshtest Penyedia Attestation* di *psh-test-rg Grup Sumber Daya*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Attestation ini.
+Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest* Penyedia Pengesahan di Grup Sumber Daya *psh-test-rg*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Pengesahan ini.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +77,7 @@ Certificates     : {{
                    }}
 ```
 
-Dapatkan penanda tangan kebijakan tepercaya untuk *Pshtest2* Penyedia Attestation di *psh-test-rg Grup Sumber Daya*.  Perhatikan bahwa ada satu penanda tangan tepercaya untuk Penyedia Attestation ini.
+Mendapatkan penanda tangan kebijakan tepercaya untuk *pshtest2* Penyedia Pengesahan2 di Resource Group *psh-test-rg*.  Perhatikan bahwa ada satu penanda tangan tepercaya untuk Penyedia Pengesahan ini.
 
 ### Contoh 3
 ```powershell
@@ -95,7 +98,7 @@ JKU              : https://sharedcus.cus.attest.azure.net/certs
 Certificates     : {}
 ```
 
-Dapatkan penanda tangan kebijakan tepercaya untuk Penyedia Default Attestation di Lokasi *AS Pusat*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Default Penyimpanan.
+Mendapatkan penanda tangan kebijakan tepercaya untuk Penyedia Default Pengesahan di Location *Central US*.  Perhatikan bahwa tidak ada penanda tangan tepercaya untuk Penyedia Default Pengesahan.
 
 ## PARAMETERS
 
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProvider
-Menentukan ini adalah permintaan ke penyedia attestation default.
+Menentukan ini adalah permintaan ke penyedia pengesahan default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan Lokasi penyedia attestation default.
+Menentukan Lokasi penyedia penetapan default.
 
 ```yaml
 Type: System.String
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyedia attestation.
+Menentukan nama penyedia atestation.
 
 ```yaml
 Type: System.String
@@ -160,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari penyedia attestation.
+Menentukan nama grup sumber daya penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ResourceID dari penyedia attestation.
+Menentukan RESOURCEID penyedia atestation.
 
 ```yaml
 Type: System.String
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

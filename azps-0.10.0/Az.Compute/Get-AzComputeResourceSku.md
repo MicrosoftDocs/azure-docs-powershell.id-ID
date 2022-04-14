@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzComputeResourceSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Get-AzComputeResourceSku.md
 ms.openlocfilehash: 751a551f5ed0a0a1968c74e5f94bcabad3b5ff32
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414719"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141811544"
 ---
 # Get-AzComputeResourceSku
 
 ## SYNOPSIS
-Daftar semua Sku sumber daya perhitungan
+Mencantumkan semua sku sumber daya komputasi
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-AzComputeResourceSku [-DefaultProfile <IAzureContextContainer>] [<CommonPara
 ```
 
 ## DESCRIPTION
-Daftar semua Sku sumber daya perhitungan
+Mencantumkan semua sku sumber daya komputasi
 
 ## EXAMPLES
 
@@ -33,12 +33,12 @@ Daftar semua Sku sumber daya perhitungan
 PS C:\> PS C:\> Get-AzComputeResourceSku | where {$_.Locations.Contains("westus")};
 ```
 
-Daftar semua sku sumber daya yang dihitung di kawasan AS Barat
+Daftar semua sku sumber daya komputasi di kawasan AS Barat
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -53,11 +53,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

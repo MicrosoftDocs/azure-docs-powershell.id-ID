@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iotcentral/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/Set-AzIotCentralApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotCentral/IotCentral/help/Set-AzIotCentralApp.md
-ms.openlocfilehash: 1a055aefb082530e87d03262f1b2d18e49131414
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 87ebaaab4ef2da2dd5e6dc6530bc5b01e4e653f8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372747"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141851324"
 ---
 # Set-AzIotCentralApp
 
 ## SYNOPSIS
 Memperbarui metadata untuk Aplikasi Pusat IoT.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iotcentral/set-aziotcentralapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,33 +53,33 @@ Perbarui metadata untuk Aplikasi Pusat IoT.
 PS C:\> Set-AzureRmIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -DisplayName "My New Custom Display Name"
 ```
 
-Perbarui Nama tampilan pada Aplikasi Pusat IoT yang sudah ada.
+Perbarui nama Tampilan pada Aplikasi Pusat IoT yang sudah ada.
 
-Output Contoh:
+Contoh Output:
 
-ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft . IotCentral/IoTApps/MyAppResourceName Nama : Tipe MyAppResourceName : Microsoft.IoTCentral/IoTApps Lokasi : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppSkuInfo ApplicationId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX DisplayName : My New Custom Display Name Subdomain : MyAppSubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName Identity : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
+ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft. IoTCentral/IoTApps/MyAppResourceName Name : MyAppResourceName Type : Lokasi Microsoft.IoTCentral/IoTApps : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppskuInfo ApplicationId : XXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX DisplayName : Subdomain Nama Tampilan Kustom Baru Saya : MyAppsubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName Identity : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 
-### Contoh 2 Update Subdomain
+### Contoh 2 Perbarui Subdomain
 ```powershell
 PS C:\> Set-AzureRmIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "new-subdomain"
 ```
 
-Perbarui Nama tampilan pada Aplikasi Pusat IoT yang sudah ada.
+Perbarui nama Tampilan pada Aplikasi Pusat IoT yang sudah ada.
 
-Output Contoh:
+Contoh Output:
 
-ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft . IoTCentral/IoTApps/MyAppResourceName Nama : Tipe MyAppResourceName : Microsoft.IoTCentral/IoTApps Lokasi : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppSkuInfo ApplicationId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX DisplayName : Display Name Subdomain : new-subdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName Identity : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
+ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft. IoTCentral/IoTApps/MyAppResourceName Name : MyAppResourceName Type : Lokasi Microsoft.IoTCentral/IoTApps : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppskuInfo ApplicationId : XXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXX DisplayName : Subdomain Nama Tampilan : templat subdomain baru : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName Identity : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 
-### Contoh 3 Perbarui Info Sku Aplikasi
+### Contoh 3 Perbarui Sku Info Aplikasi
 ```powershell
 PS C:\> Set-AzureRmIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Sku "ST2"
 ```
 
 Perbarui sku pada Aplikasi Pusat IoT yang sudah ada.
 
-Output Contoh:
+Contoh Output:
 
-ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft . IotCentral/IoTApps/MyAppResourceName Nama : Tipe MyAppResourceName : Microsoft.IoTCentral/IoTApps Lokasi : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIotCentralAppSkuInfo ApplicationId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX DisplayName : Display Name Subdomain : MyAppSubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName Identity : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
+ResourceId : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX/resourceGroups/MyResourceGroupName/providers/Microsoft. IoTCentral/IoTApps/MyAppResourceName Name : MyAppResourceName Type : Lokasi Microsoft.IoTCentral/IoTApps : westus Tag : Sku : Microsoft.Azure.Commands.IotCentral.Models.PSIOtCentralAppskuInfo ApplicationId : XXXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXX DisplayName : Subdomain Nama Tampilan : MyAppSubdomain Template : iotc-default@1.0.0  SubscriptionId : XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX ResourceGroupName : MyResourceGroupName Identity : Microsoft.Azure.Management.IotCentral.Models.SystemAssignedServiceIdentity
 
 ## PARAMETERS
 
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Custom Display Name of the Iot Central Application.
+Nama Tampilan Kustom Aplikasi Pusat Iot.
 
 ```yaml
 Type: System.String
@@ -186,8 +189,8 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Tingkatan harga untuk aplikasi Pusat IoT.
-Nilai default adalah ST2.
+Tingkat harga untuk aplikasi Pusat IoT.
+Nilai defaultnya adalah ST2.
 
 ```yaml
 Type: System.String
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subdomain
-Subdomain Aplikasi Pusat IoT.
+Subdomain dari Aplikasi Pusat IoT.
 
 ```yaml
 Type: System.String
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Sumber Daya Aplikasi Pusat.
+Iot Central Application Resource Tags.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -231,9 +234,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Identity
-Tipe identitas terkelola untuk aplikasi Pusat IoT.
-Nilai default adalah Tidak Ada. Identitas terkelola yang ditetapkan sistem didukung.
+### -Identitas
+Tipe identitas terkelola untuk aplikasi IoT Central.
+Nilai defaultnya tidak ada. Identitas terkelola yang ditetapkan sistem didukung.
 
 ```yaml
 Type: System.String
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +267,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

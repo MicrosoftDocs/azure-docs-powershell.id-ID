@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewaySku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewaySku.md
 ms.openlocfilehash: 5d0409ae5be910f2e4480ac61f36d907e7736f0a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421645"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141883648"
 ---
 # Get-AzureRmApplicationGatewaySku
 
@@ -28,7 +28,7 @@ Get-AzureRmApplicationGatewaySku -ApplicationGateway <PSApplicationGateway>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewaySku** mendapatkan unit penyimpanan saham (SKU) dari gateway aplikasi.
+Cmdlet **Get-AzureRmApplicationGatewaySku** mendapatkan stock keeping unit (SKU) gateway aplikasi.
 
 ## EXAMPLES
 
@@ -38,8 +38,8 @@ PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> $SKU = Get-AzureRmApplicationGatewaySku -ApplicationGateway $AppGW
 ```
 
-Perintah pertama mendapatkan Gateway Aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel yang bernama $AppGW.
-Perintah kedua mendapatkan SKU gateway aplikasi yang bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $SKU.
+Perintah pertama mendapatkan Application Gateway bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $AppGW.
+Perintah kedua mendapatkan SKU gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya dalam variabel bernama $SKU.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -89,8 +89,8 @@ Parameter: ApplicationGateway (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmApplicationGatewaySku](./New-AzureRmApplicationGatewaySku.md)
+[New-AzureRmApplicationGatewaysku](./New-AzureRmApplicationGatewaySku.md)
 
-[Set-AzureRmApplicationGatewaySku](./Set-AzureRmApplicationGatewaySku.md)
+[Set-AzureRmApplicationGatewaysku](./Set-AzureRmApplicationGatewaySku.md)
 
 

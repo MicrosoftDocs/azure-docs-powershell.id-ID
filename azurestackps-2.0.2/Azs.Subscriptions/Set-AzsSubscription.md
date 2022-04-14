@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Subscriptions
 online version: https://docs.microsoft.com/powershell/module/azs.subscription/set-azssubscription
 schema: 2.0.0
-ms.openlocfilehash: 273f07e396af7461eb3b859fc928e891cb76e61ebd4412ba8c137b62d3daf66b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d4636bb8f6e3fdbe9fc1911c173680f966e0f9e4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418285"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141812354"
 ---
 # Set-AzsSubscription
 
@@ -24,7 +24,7 @@ Set-AzsSubscription -SubscriptionId <String> [-DisplayName <String>] [-Id <Strin
  [<CommonParameters>]
 ```
 
-### Perbarui
+### Update
 ```
 Set-AzsSubscription -SubscriptionDefinition <ISubscription> [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionDefinition
 Daftar operasi yang didukung.
-Untuk membuat, lihat bagian CATATAN untuk properti SUBSCRIPTIONDEFINITION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti SUBSCRIPTIONDEFINITION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Subscription.Models.Api20151101.ISubscription
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -230,9 +230,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-SUBSCRIPTIONDEFINITION <ISubscription> : Daftar operasi yang didukung.
+SUBSCRIPTIONDEFINITION <ISubscription>: Daftar operasi yang didukung.
   - `[DisplayName <String>]`: Nama langganan.
   - `[Id <String>]`: Pengidentifikasi yang sepenuhnya memenuhi syarat.
   - `[OfferId <String>]`: Pengidentifikasi penawaran di bawah lingkup penyedia yang didelegasikan.

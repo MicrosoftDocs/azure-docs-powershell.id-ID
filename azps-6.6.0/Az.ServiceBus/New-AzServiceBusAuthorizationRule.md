@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusAuthorizationRule.md
 ms.openlocfilehash: 7648ff88565ff5d7f430cae8a52a8df4596146ee
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139969071"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141905529"
 ---
 # New-AzServiceBusAuthorizationRule
 
 ## SYNOPSIS
-Membuat aturan otorisasi baru untuk ruang yang ditentukan Bus Layanan Nama atau Antrean atau Topik.
+Membuat aturan otorisasi baru untuk Bus Layanan tertentu yang diberikan Ruang Nama atau Antrean atau Topik.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/new-azservicebusauthorizationrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusauthorizationrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,14 +28,14 @@ New-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
  -Rights <String[]> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### QueueAuthorizationRuleSet
+### AntreanAuthorizationRuleSet
 ```
 New-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String>
  [-Name] <String> -Rights <String[]> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### TopicAuthorizationRuleSet
+### TopikAuthorizationRuleSet
 ```
 New-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String>
  [-Name] <String> -Rights <String[]> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -43,7 +43,7 @@ New-AzServiceBusAuthorizationRule [-ResourceGroupName] <String> [-Namespace] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusAuthorizationRule** membuat aturan otorisasi baru untuk ruang nama Bus Layanan atau antrean atau topik yang ditentukan.
+Cmdlet **New-AzServiceBusAuthorizationRule** membuat aturan otorisasi baru untuk ruang nama atau antrean atau topik Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -52,21 +52,21 @@ Cmdlet **New-AzServiceBusAuthorizationRule** membuat aturan otorisasi baru untuk
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk ruang nama `SB-Example1`.
+`AuthoRule1` Membuat dengan hak **Dengarkan** dan **Kirim** untuk ruang `SB-Example1`nama .
 
 ### Contoh 2
 ```
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk antrean `SBQueue`.
+`AuthoRule1` Membuat dengan hak **Dengarkan** dan **Kirim** untuk antrean `SBQueue`.
 
 ### Contoh 3
 ```
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
-Membuat `AuthoRule1` dengan **hak** Dengarkan **dan** Kirim untuk topik ini `SBTopic`.
+`AuthoRule1` Membuat dengan hak **Dengarkan** dan **Kirim** untuk topik `SBTopic`tersebut .
 
 ## PARAMETERS
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

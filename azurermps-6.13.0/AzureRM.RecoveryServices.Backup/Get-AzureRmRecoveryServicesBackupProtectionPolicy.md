@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupProtectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.Backup/help/Get-AzureRmRecoveryServicesBackupProtectionPolicy.md
 ms.openlocfilehash: d08bd0a02878b1b99b3243e80512df30eca6e1c9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422520"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818716"
 ---
 # Get-AzureRmRecoveryServicesBackupProtectionPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan proteksi Cadangan untuk vault.
+Mendapatkan kebijakan perlindungan Pencadangan untuk kubah.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -48,12 +48,12 @@ Get-AzureRmRecoveryServicesBackupProtectionPolicy [-WorkloadType] <WorkloadType>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRecoveryServicesBackupProtectionPolicy** mendapatkan kebijakan proteksi Azure Backup untuk vault.
-Mengatur konteks vault menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
+Cmdlet **Get-AzureRmRecoveryServicesBackupProtectionPolicy** mendapatkan kebijakan perlindungan Azure Backup untuk kubah.
+Mengatur konteks kubah menggunakan cmdlet Set-AzureRmRecoveryServicesVaultContext sebelum Anda menggunakan cmdlet saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua kebijakan di vault
+### Contoh 1: Dapatkan semua kebijakan dalam kubah
 ```
 PS C:\> Get-AzureRmRecoveryServicesBackupProtectionPolicy 
 Name                 WorkloadType       BackupManagementType BackupTime                DaysOfWeek   
@@ -63,14 +63,14 @@ NewPolicy            AzureVM            AzureVM              4/23/2016 5:30:00 P
 NewPolicy2           AzureVM            AzureVM              4/24/2016 1:30:00 AM
 ```
 
-Perintah ini menerapkan semua kebijakan proteksi yang dibuat di vault.
+Perintah ini mendapatkan semua kebijakan perlindungan yang dibuat dalam kubah.
 
-### Contoh 2: Mendapatkan kebijakan tertentu
+### Contoh 2: Dapatkan kebijakan tertentu
 ```
 PS C:\> $Pol= Get-AzureRmRecoveryServicesBackupProtectionPolicy -Name "DefaultPolicy"
 ```
 
-Perintah ini mendapatkan kebijakan proteksi bernama DefaultPolicy, lalu menyimpannya dalam $Pol variabel.
+Perintah ini mendapatkan kebijakan perlindungan bernama DefaultPolicy, lalu menyimpannya dalam variabel $Pol.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

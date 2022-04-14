@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.maps/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/Remove-AzureRmMapsAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/Remove-AzureRmMapsAccount.md
-ms.openlocfilehash: fef37d802a25e72231da8a2376b0739cc8af022f16158c837d0eb2ebc0b37535
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9880bf574aec57796d185742b2f33b79da8f7c59
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866325"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141883995"
 ---
 # Remove-AzureRmMapsAccount
 
 ## SYNOPSIS
-Menghapus akun Azure Peta Anda.
+Menghapus akun Azure Maps.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmMapsAccount [-ResourceId] <String> [-PassThru] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmMapsAccount menghapus akun azure Peta tertentu.
+Cmdlet Remove-AzureRmMapsAccount menghapus akun Azure Maps yang ditentukan.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ Performing the operation "Deleting account MyAccount." on target "MyAccount".
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): y
 ```
 
-Menghapus Akun Azure Peta tertentu.
+Menghapus Akun Azure Maps yang ditentukan.
 
 ## PARAMETERS
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Peta disambungkan dari Get-AzureRmMapsAccount.
+Peta Akun yang disalurkan dari Get-AzureRmMapsAccount.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Maps.Models.PSMapsAccount
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Peta Akun.
+Peta Nama Akun.
 
 ```yaml
 Type: System.String
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Kembalikan apakah akun tertentu berhasil dihapus atau tidak.
+Mengembalikan apakah akun tertentu berhasil dihapus atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Peta ResourceId Akun.
+Peta Account ResourceId.
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

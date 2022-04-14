@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsRecordSet.md
 ms.openlocfilehash: f18efbf60e3e112e5e8ebd3536f038996a0d759c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099837"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141908013"
 ---
 # Remove-AzPrivateDnsRecordSet
 
 ## SYNOPSIS
-Menghapus kumpulan catatan dari zona DNS Privat.
+Menghapus kumpulan catatan dari zona DNS Pribadi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsrecordset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsrecordset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Remove-AzPrivateDnsRecordSet -Zone <PSPrivateDnsZone> -Name <String> -RecordType
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Remove-AzPrivateDnsRecordSet -RecordSet <PSPrivateDnsRecordSet> [-Overwrite] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,19 +48,19 @@ Remove-AzPrivateDnsRecordSet -ResourceId <String> [-PassThru] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan data tertentu dari zona yang ditentukan. Anda tidak dapat menghapus rekaman SOA yang secara otomatis dibuat di zona privat apex. Anda dapat menyampaikan objek RecordSet ke cmdlet ini menggunakan operator pipeline atau sebagai parameter atau sebagai ResourceId. Untuk mengidentifikasi kumpulan catatan berdasarkan nama dan tipe tanpa menggunakan objek RecordSet, Anda harus melewati zona sebagai objek PSPrivateDnsZone ke cmdlet ini menggunakan operator pipeline atau sebagai parameter, atau alternatifnya Anda dapat menentukan parameter ZoneName dan ResourceGroupName. Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda. Saat menentukan kumpulan data menggunakan objek RecordSet, kumpulan data tidak dihapus jika telah diubah dalam DNS Azure Private sejak objek RecordSet lokal diambil. Ini menyediakan perlindungan untuk perubahan serentak. Anda dapat menyembunyikan hal ini menggunakan parameter Timpa, yang menghapus kumpulan rekaman terlepas dari perubahan serentak.
+Cmdlet Remove-AzPrivateDnsRecordSet menghapus kumpulan rekaman yang ditentukan dari zona yang ditentukan. Anda tidak dapat menghapus rekaman SOA yang dibuat secara otomatis di apex zona privat. Anda dapat mengirimkan objek RecordSet ke cmdlet ini menggunakan operator pipeline atau sebagai parameter atau sebagai ResourceId. Untuk mengidentifikasi data yang diatur menurut nama dan mengetik tanpa menggunakan objek RecordSet, Anda harus melewati zona sebagai objek PSPrivateDnsZone ke cmdlet ini dengan menggunakan operator pipeline atau sebagai parameter, atau anda bisa menentukan parameter ZoneName dan ResourceGroupName. Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi. Saat menentukan kumpulan catatan menggunakan objek RecordSet, kumpulan catatan tidak dihapus jika telah diubah di Azure Private DNS sejak objek RecordSet lokal diambil. Ini memberikan perlindungan untuk perubahan serentak. Anda bisa menyembunyikan ini dengan menggunakan parameter Timpa, yang menghapus kumpulan rekaman terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kumpulan rekaman
+### Contoh 1: Menghapus kumpulan catatan
 ```powershell
 PS C:\> $RecordSet = Get-AzPrivateDnsRecordSet -Name "www" -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com"
 PS C:\> Remove-AzPrivateDnsRecordSet -RecordSet $RecordSet
 ```
 
-Perintah pertama mendapatkan kumpulan data tertentu, lalu menyimpannya dalam $RecordSet tertentu. Perintah kedua menghapus kumpulan rekaman di $RecordSet.
+Perintah pertama mendapatkan kumpulan rekaman yang ditentukan, lalu menyimpannya dalam variabel $RecordSet. Perintah kedua menghapus kumpulan catatan dalam $RecordSet.
 
-### Contoh 2: Menghapus kumpulan data dan menyembunyikan semua konfirmasi
+### Contoh 2: Menghapus kumpulan rekaman dan menyembunyikan semua konfirmasi
 ```powershell
 PS C:\> $RecordSet = Get-AzPrivateDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup"
 PS C:\> Remove-AzPrivateDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Overwrite
@@ -72,7 +72,7 @@ PS C:\> Remove-AzPrivateDnsRecordSet -RecordSet $RecordSet -Confirm:$False -Over
 PS C:\> Remove-AzPrivateDnsRecordSet -Name "www" -ZoneName "myzone.com" -ResourceGroupName "MyResourceGroup" -Confirm:$False
 ```
 
-Perintah pertama mendapatkan kumpulan data tertentu. Perintah kedua menghapus kumpulan catatan tersebut, meskipun telah berubah untuk sementara. Perintah konfirmasi akan disingggahkan.
+Perintah pertama akan mendapatkan kumpulan rekaman yang ditentukan. Perintah kedua menghapus kumpulan catatan, bahkan jika telah berubah sementara itu. Perintah konfirmasi disempurnakan.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama catatan di kumpulan catatan (relatif terhadap nama zona dan tanpa titik akhir).
+Nama rekaman dalam kumpulan catatan (relatif terhadap nama zona dan tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -106,8 +106,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Jangan gunakan bidang ETag parameter RecordSet untuk pemeriksaan konkurensi optimistis.
+### -Timpa
+Jangan gunakan bidang ETag parameter RecordSet untuk pemeriksaan konkurensi optimis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Digunakan untuk memberikan hasil (boolean) dari operasi menghapus zona privat lebih jauh ke bawah saluran.
+Digunakan untuk melewati hasil (boolean) operasi menghapus zona privat lebih jauh ke bawah saluran.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecordType
-Tipe catatan DNS Privat dalam kumpulan catatan.
+Tipe catatan DNS Pribadi dalam kumpulan catatan.
 
 ```yaml
 Type: Microsoft.Azure.Management.PrivateDns.Models.RecordType
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya tempat zona tersebut berada.
+Grup sumber daya tempat zona berada.
 
 ```yaml
 Type: System.String
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Private DNS RecordSet ResourceID.
+ID Sumber Daya Kumpulan Catatan DNS Pribadi.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
+### -Zona
 Objek PrivateDnsZone mewakili zona untuk membuat kumpulan rekaman.
 
 ```yaml
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Zona di mana kumpulan rekaman itu ada (tanpa titik berakhir).
+Zona di mana kumpulan rekaman ada (tanpa titik penghentian).
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

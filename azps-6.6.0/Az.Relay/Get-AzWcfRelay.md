@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Get-AzWcfRelay.md
 ms.openlocfilehash: 54b530ecbb1e02e9348ad955833fd250ccb782c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140305933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907023"
 ---
 # Get-AzWcfRelay
 
 ## SYNOPSIS
-Mengembalikan deskripsi untuk WcfCf tertentu.
+Mengembalikan deskripsi untuk WcfRelay yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.relay/get-azwcfrelay) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/get-azwcfrelay) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [[-Name] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzWcf Haly** mengembalikan deskripsi dari Wcf Cmdlet Tertentu.
+Cmdlet **Get-AzWcfRelay** mengembalikan deskripsi WcfRelay yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Name                        : TestWCFRelay1
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Mengembalikan deskripsi WcfCfCfY.
+Mengembalikan deskripsi WcfRelay.
 
 ## PARAMETERS
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WcfEby.
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,7 +123,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Relay.Models.PSWcfMicrosoftyAttributes
+### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
 ## CATATAN
 

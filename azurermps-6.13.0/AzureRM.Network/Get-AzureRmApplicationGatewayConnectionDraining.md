@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayConnectionDraining.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayConnectionDraining.md
-ms.openlocfilehash: fb5e63991bcf2030faa6ff816d8c3f846aa4518c5b5bb6b6f1acab2493419a55
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 147727cffc03de5ba8848705cf79facdbdc43320
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140866289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884003"
 ---
 # Get-AzureRmApplicationGatewayConnectionDraining
 
 ## SYNOPSIS
-Dapatkan koneksi dengan menghabiskan konfigurasi objek pengaturan HTTP ujung belakang.
+Mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung-belakang.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmApplicationGatewayConnectionDraining -BackendHttpSettings <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApplicationGatewayConnectionDsapping** mendapatkan konfigurasi koneksi yang menghabiskan konfigurasi objek pengaturan HTTP ujung-belakang.
+Cmdlet **Get-AzureRmApplicationGatewayConnectionDraining** mendapatkan koneksi menguras konfigurasi objek pengaturan HTTP ujung belakang.
 
 ## EXAMPLES
 
@@ -38,14 +38,14 @@ PS C:\> $Settings  = Get-AzureRmApplicationGatewayBackendHttpSettings -Name "Set
 PS C:\> $ConnectionDraining = Get-AzureRmApplicationGatewayConnectionDraining -BackendHttpSettings $Settings
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan pengaturan HTTP ujung belakang yang bernama Settings01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan .
-Perintah terakhir mendapatkan koneksi menghabiskan konfigurasi dari pengaturan HTTP ujung belakang $Pengaturan dan menyimpannya dalam $ConnectionDraining akhir.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mendapatkan pengaturan HTTP ujung-belakang bernama Pengaturan01 untuk $AppGw dan menyimpan pengaturan dalam variabel $Pengaturan.
+Perintah terakhir mendapatkan konfigurasi pengurasan koneksi dari pengaturan HTTP ujung-belakang $Pengaturan dan menyimpannya dalam variabel $ConnectionDraining.
 
 ## PARAMETERS
 
 ### -BackendHttpSettings
-Pengaturan backend http
+Pengaturan http backend
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendHttpSettings
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -84,7 +84,7 @@ Parameter: BackendHttpSettings (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionD adaptering
+### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayConnectionDraining
 
 ## CATATAN
 
@@ -94,8 +94,8 @@ Parameter: BackendHttpSettings (ByValue)
 
 [Get-AzureRmApplicationGatewayBackendHttpSettings](./Get-AzureRmApplicationGatewayBackendHttpSettings.md)
 
-[New-AzureRmApplicationGatewayConnectionDsapping](./New-AzureRmApplicationGatewayConnectionDraining.md)
+[New-AzureRmApplicationGatewayConnectionDraining](./New-AzureRmApplicationGatewayConnectionDraining.md)
 
-[Remove-AzureRmApplicationGatewayConnectionDsapping](./Remove-AzureRmApplicationGatewayConnectionDraining.md)
+[Remove-AzureRmApplicationGatewayConnectionDraining](./Remove-AzureRmApplicationGatewayConnectionDraining.md)
 
-[Set-AzureRmApplicationGatewayConnectionDsapping](./Set-AzureRmApplicationGatewayConnectionDraining.md)
+[Set-AzureRmApplicationGatewayConnectionDraining](./Set-AzureRmApplicationGatewayConnectionDraining.md)

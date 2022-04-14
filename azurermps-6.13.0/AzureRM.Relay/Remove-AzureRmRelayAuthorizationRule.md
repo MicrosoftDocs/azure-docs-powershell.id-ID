@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Remove-AzureRmRelayAuthorizationRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Remove-AzureRmRelayAuthorizationRule.md
 ms.openlocfilehash: cebc4680e4c24bb7e19342d32e4aedd57b960e55
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140858189"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096919"
 ---
 # Remove-AzureRmRelayAuthorizationRule
 
 ## SYNOPSIS
-Menghapus aturan otorisasi HybridConnection dari entitas Relay yang diberikan (Namespace/WcfIguy/HybridConnection).
+Menghapus aturan otorisasi HibridConnection dari entitas Relay tertentu (Namespace/WcfRelay/HybridConnection).
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Remove-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [-Namespace] 
  [-Force] [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WcfAuthorizationRuleSet
+### WcfRelayAuthorizationRuleSet
 ```
 Remove-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace] <String>] [-WcfRelay] <String>
  [-Name] <String> [-Force] [-PassThru] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -42,7 +42,7 @@ Remove-AzureRmRelayAuthorizationRule [-ResourceGroupName] <String> [[-Namespace]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmEroyAuthorizationRule** menghapus aturan otorisasi entitas Relay tertentu (Namespace/WcfIguy/HybridConnection).
+Cmdlet **Remove-AzureRmRelayAuthorizationRule** menghapus aturan otorisasi entitas Relay yang diberikan (Namespace/WcfRelay/HybridConnection).
 
 ## EXAMPLES
 
@@ -51,21 +51,21 @@ Cmdlet **Remove-AzureRmEroyAuthorizationRule** menghapus aturan otorisasi entita
 PS C:\> Remove-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi ruang `AuthoRule1` nama `TestNameSpace-Relay1`.
+Menghapus aturan `AuthoRule1` otorisasi ruang `TestNameSpace-Relay1`nama .
 
 ### Contoh 2
 ```
 PS C:\> Remove-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -WcfRelay TestWcfRelay -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi Wcf `AuthoRule1` Berlaku dari `TestWcfRelay` ruang nama `TestNameSpace-Relay1`.
+Menghapus aturan `AuthoRule1` otorisasi WcfRelay `TestWcfRelay` dari ruang `TestNameSpace-Relay1`nama .
 
 ### Contoh 3
 ```
 PS C:\> Remove-AzureRmRelayAuthorizationRule -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -HybridConnection TestHybridConnection -Name AuthoRule1
 ```
 
-Menghapus aturan otorisasi HybridConnection `AuthoRule1` dari `TestHybridConnection` ruang nama `TestNameSpace-Relay1`.
+Menghapus aturan `AuthoRule1` otorisasi HibridConnection `TestHybridConnection` dari ruang `TestNameSpace-Relay1`nama .
 
 ## PARAMETERS
 
@@ -84,8 +84,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,8 +186,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WcfEby
-Nama WcfEby.
+### -WcfRelay
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

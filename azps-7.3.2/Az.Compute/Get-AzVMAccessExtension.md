@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAccessExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMAccessExtension.md
-ms.openlocfilehash: dd1a33afb9454147ebb52f7ccfe1ad4eb0dba7b4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 63a67695119388b716b09b26696777fda617c5f0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202214"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072813"
 ---
 # Get-AzVMAccessExtension
 
 ## SYNOPSIS
 Mendapatkan informasi tentang ekstensi VMAccess.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmaccessextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzVMAccessExtension [-ResourceGroupName] <String> [-VMName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Ekstensi Mesin Virtual Access (VMAccess) Virtual Machine.
+Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Virtual Machine Access (VMAccess) Virtual Machine Extension.
 
 ## EXAMPLES
 
@@ -35,19 +38,19 @@ Cmdlet **Get-AzVMAccessExtension** mendapatkan informasi tentang Ekstensi Mesin 
 $VMAccessExtension = Get-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoTest"
 ```
 
-Perintah ini akan mendapatkan ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
 
-### Contoh 2: Mendapatkan tampilan contoh ekstensi VMAccess
+### Contoh 2: Dapatkan tampilan instans ekstensi VMAccess
 ```powershell
 $VMAccessExtension = Get-AzVMAccessExtension -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -Name "ContosoTest" -Status
 ```
 
-Perintah ini mendapatkan tampilan contoh ekstensi VMAccess yang bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
+Perintah ini mendapatkan tampilan instans ekstensi VMAccess bernama ContosoTest untuk mesin virtual bernama VirtualMachine07.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama ekstensi yang akan dapatkan cmdlet ini.
+Menentukan nama ekstensi yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
+Menentukan nama grup sumber daya mesin virtual.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Mengindikasikan bahwa cmdlet ini hanya mendapatkan tampilan contoh ekstensi.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans ekstensi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

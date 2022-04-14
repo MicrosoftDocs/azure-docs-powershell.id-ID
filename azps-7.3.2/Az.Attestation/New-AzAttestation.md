@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/New-AzAttestation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/New-AzAttestation.md
-ms.openlocfilehash: ec51b599d9f2ade21453ddf270f10505aff38092
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7353cf3d724884283c551dd804230f7f93c96a70
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189247"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856256"
 ---
 # New-AzAttestation
 
 ## SYNOPSIS
-Membuat attestation
+Membuat atestasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/new-azattestation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ New-AzAttestation -Name <String> -ResourceGroupName <String> -Location <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzAttestation membuat attestation di grup sumber daya yang ditentukan.
+Cmdlet New-AzAttestation membuat pengesahan dalam grup sumber daya yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ TagsTable         :
                     Test          true
 ```
 
-Buat contoh baru Penyedia Attestation bernama *pshtest4* dengan beberapa tag dan gunakan AAD untuk menguasai kebijakan DNS.
+Buat contoh baru Penyedia Pengesahan bernama *pshtest4* dengan beberapa tag dan gunakan kepercayaan AAD untuk menguasai kebijakan TEE.
 
 ### Contoh 2
 ```powershell
@@ -68,7 +71,7 @@ Tags              :
 TagsTable         :
 ```
 
-Buat contoh baru Penyedia Attestation bernama *pshtest3*' yang menggunakanSpijakied untuk menguasai kebijakan JPEG melalui menentukan serangkaian tombol penandatanganan tepercaya melalui file PEM.
+Buat contoh baru Penyedia Pengesahan bernama *pshtest3*' yang menggunakan kepercayaan Terisolasi untuk menguasai kebijakan TEE melalui menentukan sekumpulan kunci penandatanganan tepercaya melalui file PEM.
 
 ## PARAMETERS
 
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure untuk membuat penyedia aplikasi gratis. Gunakan perintah yang Get-AzResourceProvider dengan parameter ProviderNamespace untuk melihat pilihan Anda.
+Menentukan kawasan Azure untuk membuat penyedia pengesahan. Gunakan perintah Get-AzResourceProvider dengan parameter ProviderNamespace untuk melihat pilihan Anda.
 
 ```yaml
 Type: System.String
@@ -103,9 +106,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Instans untuk dibuat.
-Nama dapat kombinasi huruf, digit, atau tanda hubung apa pun.
-Nama harus diawali dan diakhiri dengan huruf atau digit.
+Menentukan nama Instans yang akan dibuat.
+Nama dapat berupa kombinasi huruf, digit, atau tanda hubung apa pun.
+Nama harus dimulai dan diakhiri dengan huruf atau digit.
 Nama harus unik secara universal.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicySignersCertificateFile
-Menentukan set tombol penandatanganan tepercaya untuk kebijakan penerbitan dalam file sertifikat tunggal.
+Menentukan kumpulan kunci penandatanganan tepercaya untuk kebijakan penerbitan dalam satu file sertifikat.
 
 ```yaml
 Type: System.String
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

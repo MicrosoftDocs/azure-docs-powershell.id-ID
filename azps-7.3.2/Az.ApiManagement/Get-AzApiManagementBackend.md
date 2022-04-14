@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementBackend.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementBackend.md
-ms.openlocfilehash: a6276e9fa36d411bf235dc8e56dbfc49d1d4f4a9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b1065c869626c718208323d58b03e29a4a4caea5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856940"
 ---
 # Get-AzApiManagementBackend
 
 ## SYNOPSIS
 Dapatkan detail Backend.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementbackend) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Dapatkan detail Backend.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua Backends
+### Contoh 1: Dapatkan semua Backend
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementBackend -Context $apimContext
@@ -50,13 +53,13 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Get-AzApiManagementBackend -Context $apimContext -backendId 123
 ```
 
-Dapatkan detail Backend tertentu yang diidentifikasi oleh Pengidentifikasi '123'
+Dapatkan detail Backend yang ditentukan yang diidentifikasi oleh Pengidentifikasi '123'
 
 ## PARAMETERS
 
 ### -BackendId
 Pengidentifikasi backend.
-Jika ditentukan akan mencoba menemukan backend menurut pengidentifikasi.
+Jika ditentukan akan mencoba menemukan backend oleh pengidentifikasi.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier dari backend. Jika ditentukan akan mencoba menemukan backend menurut pengidentifikasi. Parameter ini diperlukan.
+Arm Resource Identifier dari backend. Jika ditentukan akan mencoba menemukan backend oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

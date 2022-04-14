@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmFirewall.md
 ms.openlocfilehash: 8f2c2560ac8ca0787a8a0eb8d37fb5242f4a915e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420680"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882779"
 ---
 # Set-AzureRmFirewall
 
@@ -32,7 +32,7 @@ Cmdlet **Set-AzureRmFirewall** memperbarui Azure Firewall.
 
 ## EXAMPLES
 
-### 1: Perbarui prioritas kumpulan aturan aplikasi Firewall
+### 1: Memperbarui prioritas kumpulan aturan aplikasi Firewall
 ```
 $azFw = Get-AzureRmFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $ruleCollection = $azFw.GetApplicationRuleCollectionByName("ruleCollectionName")
@@ -40,10 +40,10 @@ $ruleCollection.Priority = 101
 Set-AzureRmFirewall -Firewall $azFw
 ```
 
-Contoh ini memperbarui prioritas kumpulan aturan azure firewall yang sudah ada.
-Dengan menganggap Azure Firewall "AzureFirewall" dalam grup sumber daya "rg" berisi kumpulan aturan aplikasi bernama "ruleCollectionName", perintah di atas akan mengubah prioritas kumpulan aturan tersebut dan memperbarui Azure Firewall sesudahnya. Tanpa perintah Set-AzureRmFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak akan terlihat di server.
+Contoh ini memperbarui prioritas kumpulan aturan yang sudah ada dari Azure Firewall.
+Dengan asumsi Azure Firewall "AzureFirewall" dalam grup sumber daya "rg" berisi kumpulan aturan aplikasi bernama "ruleCollectionName", perintah di atas akan mengubah prioritas pengumpulan aturan tersebut dan memperbarui Azure Firewall sesudahnya. Tanpa perintah Set-AzureRmFirewall, semua operasi yang dilakukan pada objek $azFw lokal tidak terlihat di server.
 
-### 2: Buat Azure Firewall dan atur kumpulan aturan aplikasi nanti
+### 2: Membuat Azure Firewall dan mengatur kumpulan aturan aplikasi nanti
 ```
 $azFw = New-AzureRmFirewall -Name "AzureFirewall" -ResourceGroupName "rg" -VirtualNetworkName "vnet-name" -PublicIpName "pip-name"
 
@@ -54,12 +54,12 @@ $azFw.ApplicationRuleCollections = $RuleCollection
 $azFw | Set-AzureRmFirewall
 ```
 
-Dalam contoh ini, Firewall dibuat terlebih dahulu tanpa kumpulan aturan aplikasi apa pun. Setelah itu, Aturan Aplikasi dan Kumpulan Aturan Aplikasi dibuat, kemudian objek Firewall dimodifikasi dalam memori, tanpa memengaruhi konfigurasi sebenarnya di awan. Agar perubahan terlihat di awan, Anda Set-AzureRmFirewall harus dipanggil.
+Dalam contoh ini, Firewall dibuat terlebih dahulu tanpa kumpulan aturan aplikasi apa pun. Setelah itu Aturan Aplikasi dan Kumpulan Aturan Aplikasi dibuat, maka objek Firewall diubah dalam memori, tanpa memengaruhi konfigurasi nyata di awan. Agar perubahan terlihat di awan, Set-AzureRmFirewall harus dipanggil.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,4 +153,4 @@ Parameter 'AzureFirewall' menerima nilai tipe 'PSAzureFirewall' dari pipeline
 
 [New-AzureRmFirewall](./New-AzureRmFirewall.md)
 
-[Remove-AzureRmFirewall](./Remove-AzureRmFirewall.md)
+[Hapus-AzureRmFirewall](./Remove-AzureRmFirewall.md)

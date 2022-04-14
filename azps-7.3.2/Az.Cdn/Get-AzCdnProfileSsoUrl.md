@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/get-azcdnpro
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSsoUrl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Get-AzCdnProfileSsoUrl.md
-ms.openlocfilehash: 7a8b22cf991e59fc8e89d0eae5da62c38c4693e1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8e10eedd971a0cb78738b03fe76c3839ee5ecc2b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382333"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073624"
 ---
 # Get-AzCdnProfileSsoUrl
 
 ## SYNOPSIS
-Dapatkan URL masuk tunggal profil CDN masuk.
+Mendapatkan URL masuk tunggal dari profil CDN.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/get-azcdnprofilessourl) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ Get-AzCdnProfileSsoUrl -CdnProfile <PSProfile> [-DefaultProfile <IAzureContextCo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzCdnProfileSsoUrl** mendapatkan URL masuk tunggal dari profil Azure Content Delivery Network (CDN).
-URL ini memungkinkan pengguna menyambungkan ke portal tambahan dan menggunakan fitur tambahan CDN.
+**Cmdlet Get-AzCdnProfileSsoUrl** mendapatkan URL masuk tunggal profil azure Content Delivery Network (CDN).
+URL ini memungkinkan pengguna tersambung ke portal tambahan dan menggunakan fitur tambahan CDN.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ https://cdn.windowsazure.com/account/loginexternal/?token=IUQ9oj9b0H%2bZTL8gSnaB
 ## PARAMETERS
 
 ### -CdnProfile
-Menentukan CDN profil.
+Menentukan profil CDN.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Profile.PSProfile
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama nama grup sumber daya di mana profil tersebut berada.
+Menentukan nama grup sumber daya tempat profil berada.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

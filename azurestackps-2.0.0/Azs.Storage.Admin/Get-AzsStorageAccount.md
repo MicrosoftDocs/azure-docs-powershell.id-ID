@@ -3,12 +3,12 @@ external help file: ''
 Module Name: Azs.Storage.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.storage.admin/get-azsstorageaccount
 schema: 2.0.0
-ms.openlocfilehash: b385bea02d70fe2d6e2954611c1d3536cf5899b96a40a6ccbb66b1c17f5d1e41
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0ddf99277834e69a55b009abcb4b683eebb7a4ec
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416903"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141813387"
 ---
 # Get-AzsStorageAccount
 
@@ -23,7 +23,7 @@ Get-AzsStorageAccount [-Location <String>] [-SubscriptionId <String[]>] [-Filter
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsStorageAccount -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -44,7 +44,7 @@ Mengembalikan akun penyimpanan yang diminta.
 PS C:\> Get-AzsStorageAccount -Summary
 ```
 
-Mendapatkan daftar akun penyimpanan (ringkasan).
+Dapatkan daftar akun penyimpanan (ringkasan).
 
 ### Contoh 2:
 ```powershell
@@ -59,7 +59,7 @@ Dapatkan daftar akun penyimpanan dengan detail dan cetak status.
 PS C:\> Get-AzsStorageAccount -Name 32cbc1173bde4e5fad04e11cc4cb2e00 | fl *
 ```
 
-Dapatkan detail tentang akun penyimpanan tertentu.
+Dapatkan detail akun penyimpanan tertentu.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-String filter
+Memfilter string
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Models.IStorageAdminIdentity
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,16 +190,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IStorageAdminIdentity> : Parameter Identitas
+INPUTOBJECT <IStorageAdminIdentity>: Parameter Identitas
   - `[AccountId <String>]`: ID akun penyimpanan internal, yang tidak terlihat oleh penyewa.
-  - `[AsyncOperationId <String>]`: Async Operation Id.
+  - `[AsyncOperationId <String>]`: Id Operasi Asinkron.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya.
   - `[QuotaName <String>]`: Nama kuota penyimpanan.
   - `[ResourceGroup <String>]`: Nama grup sumber daya.
-  - `[ServiceName <String>]`: Storage layanan baru.
+  - `[ServiceName <String>]`: Storage nama layanan.
   - `[SubscriptionId <String>]`: Id Langganan.
 
 ## RELATED LINKS

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayCustomError.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmApplicationGatewayCustomError.md
-ms.openlocfilehash: 2e1e4f70c7615ed5d29d0662a8d15aa542796dfa5c362c5e154b5294b8c4bb2b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b2f748bca68bff772026237f3bb6205ca6bc1923
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850524"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141884080"
 ---
 # Get-AzureRmApplicationGatewayCustomError
 
@@ -36,19 +36,19 @@ Cmdlet **Get-AzureRmApplicationGatewayCustomError** mendapatkan kesalahan kustom
 PS C:\> $ce = Get-AzureRmApplicationGatewayCustomError -ApplicationGateway $appgw -StatusCode HttpStatus502
 ```
 
-Perintah ini mendapatkan dan mengembalikan kesalahan kustom http kode status 502 dari gateway aplikasi $appgw.
+Perintah ini mendapatkan dan mengembalikan kesalahan kustom kode status http 502 dari gateway aplikasi $appgw.
 
 ### Contoh 2: Mendapatkan daftar semua kesalahan kustom di gateway aplikasi
 ```powershell
 PS C:\> $ces = Get-AzureRmApplicationGatewayCustomError -ApplicationGateway $appgw
 ```
 
-Perintah ini akan mendapatkan dan mengembalikan daftar semua kesalahan kustom dari gateway aplikasi $appgw.
+Perintah ini mendapatkan dan mengembalikan daftar semua kesalahan kustom dari gateway aplikasi $appgw.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Gateway Aplikasi
+Application Gateway
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

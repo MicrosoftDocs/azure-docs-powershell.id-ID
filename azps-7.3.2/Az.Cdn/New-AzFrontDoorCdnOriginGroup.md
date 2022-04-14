@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnOriginGroup.md
-ms.openlocfilehash: 915c4defc23d92966e2b9682a0faa9421e286f1d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9513fdfb3a1c607b654b59c98e2fc8f281fc452d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202406"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073497"
 ---
 # New-AzFrontDoorCdnOriginGroup
 
 ## SYNOPSIS
-Membuat grup origin.
+Membuat grup asal.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnorigingroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ New-AzFrontDoorCdnOriginGroup [-AdditionalLatencyInMillisecond <Int32>] -OriginG
 ```
 
 ## DESCRIPTION
-Membuat grup origin.
+Membuat grup asal.
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ Membuat grup origin.
 New-AzFrontDoorCdnOriginGroup -OriginGroupName $originGroupName -ProfileName $profileName -ResourceGroupName $resourceGroupName
 ```
 
-Membuat grup origin.
+Membuat grup asal.
 
 ## PARAMETERS
 
 ### -AdditionalLatencyInMillisecond
-Latensi tambahan dalam milidetik agar belanda masuk ke dalam wadah latensi terendah.
+Latensi tambahan dalam milidetik untuk probe jatuh ke dalam ember latensi terendah.
 
 ```yaml
 Type: Int32
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -OriginGroupName
-Nama grup origin Pintu Depan Azure.
+Nama grup asal Pintu Depan Azure.
 
 ```yaml
 Type: String
@@ -86,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AllahIntervalInSeconds
-Jumlah detik antara health transit.
+### -ProbeIntervalInSeconds
+Jumlah detik antara pemeriksaan kesehatan.
 
 ```yaml
 Type: Int32
@@ -101,8 +104,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur relatif terhadap origin yang digunakan untuk menentukan kesehatan origin.
+### -ProbePath
+Jalur relatif terhadap asal yang digunakan untuk menentukan kesehatan asal.
 
 ```yaml
 Type: String
@@ -116,8 +119,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Yamaprotocol
-Protokol untuk digunakan dalam protokol kesehatan.
+### -ProbeProtocol
+Protokol untuk digunakan untuk pemeriksaan kesehatan.
 
 ```yaml
 Type: String
@@ -131,8 +134,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RequestRequestType
-Tipe permintaan kesehatan yang dibuat.
+### -ProbeRequestType
+Jenis permintaan pemeriksaan kesehatan yang dibuat.
 
 ```yaml
 Type: String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileName
-Nama profil Pintu Depan Azure.
+Nama profil Azure Front Door.
 
 ```yaml
 Type: String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -SampleSize
-Jumlah sampel yang dipertimbangkan untuk memuat keputusan keseimbangan.
+Jumlah sampel yang perlu dipertimbangkan untuk keputusan penyeimbangan beban.
 
 ```yaml
 Type: Int32
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficRestorationTimeToHealedOrNewEndpointsInMinutes
-Waktu dalam hitungan menit untuk menggeser lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat menjadi sehat atau titik akhir baru ditambahkan.
+Waktu dalam menit untuk mengalihkan lalu lintas ke titik akhir secara bertahap ketika titik akhir yang tidak sehat menjadi sehat atau titik akhir baru ditambahkan.
 
 ```yaml
 Type: Int32
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -253,11 +256,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

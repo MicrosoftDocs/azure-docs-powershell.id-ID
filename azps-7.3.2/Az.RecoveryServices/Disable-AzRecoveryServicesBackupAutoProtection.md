@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Disable-AzRecoveryServicesBackupAutoProtection.md
-ms.openlocfilehash: 078dc697d080e084267e1d79bd0f21b9c2451aa6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6990c4d4ce45c52317bca68780f404efe1b6ff56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371346"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029647"
 ---
 # Disable-AzRecoveryServicesBackupAutoProtection
 
 ## SYNOPSIS
 Menonaktifkan pencadangan otomatis untuk item yang dapat diproteksi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/disable-azrecoveryservicesbackupautoprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Disable-AzRecoveryServicesBackupAutoProtection [-InputItem] <ProtectableItemBase
 ```
 
 ## DESCRIPTION
-Cmdlet **Disable-AzRecoveryServicesBackupAutoProtection** menonaktifkan proteksi pada item yang dapat diproteksi.
+Cmdlet **Disable-AzRecoveryServicesBackupAutoProtection** menonaktifkan perlindungan pada item yang dapat dilindungi.
 
 ## EXAMPLES
 
@@ -36,11 +39,11 @@ PS C:\> $container = Get-AzRecoveryServicesBackupContainer -ContainerType AzureV
 PS C:\> Get-AzRecoveryServicesBackupProtectableItem -Container $container -WorkloadType "MSSQL" -ItemType "SQLInstance" -Name "MSSQLInstance"| Disable-AzRecoveryServicesBackupAutoProtection -BackupManagementType "AzureWorkload" -WorkloadType "MSSQL"
 ```
 
-Cmdlet pertama mendapatkan wadah Cadangan tipe AzureVMAppContainer.  Cmdlet kedua mendapatkan BackupItem yang dapat diproteksi dan menonaktifkan proteksi otomatis.
+Cmdlet pertama mendapatkan wadah Cadangan tipe AzureVMAppContainer.  Cmdlet kedua mendapatkan BackupItem yang dapat dilindungi dan menonaktifkan proteksi otomatis.
 
 ### Contoh 2
 
-Menonaktifkan pencadangan otomatis untuk item yang dapat diproteksi. (otomatisgenerated)
+Menonaktifkan pencadangan otomatis untuk item yang dapat diproteksi. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Disable-AzRecoveryServicesBackupAutoProtection -BackupManagementType AzureVM -InputItem <ProtectableItemBase> -VaultId $vault.ID -WorkloadType AzureVM
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Add-AzHDInsightComponentVersion.md
 ms.openlocfilehash: 57c1ed92e19bbb2d61a970d6735cfe63b894a933
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140105993"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141867722"
 ---
 # Add-AzHDInsightComponentVersion
 
@@ -19,7 +19,7 @@ ms.locfileid: "140105993"
 Menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi kluster.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightcomponentversion) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/add-azhdinsightcomponentversion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Add-AzHDInsightComponentVersion [-Config] <AzureHDInsightConfig> [-ComponentName
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzHDInsightComponentVersion menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig lanjut.
+Cmdlet Add-AzHDInsightComponentVersion menambahkan versi untuk layanan yang berjalan dalam kluster ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan versi Untuk Grafik Api ke objek konfigurasi kluster.
+### Contoh 1: Tambahkan versi untuk Spark ke objek konfigurasi kluster.
 ```
 PS C:\> # Primary storage account info
         $storageAccountResourceGroupName = "Group"
@@ -75,7 +75,7 @@ PS C:\> # Primary storage account info
                 -Version "3.5"
 ```
 
-Perintah ini menambahkan versi Grafik Spark ke kluster HDInsight yang bernama 'your-spark-001'.
+Perintah ini menambahkan versi Spark ke kluster HDInsight bernama 'your-spark-001'.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

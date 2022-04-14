@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementLogger.md
-ms.openlocfilehash: 659d13b4b722f0cfa6b8f1c08bdefcc193ab4911
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9f2b7f13836931afa2d1238ba02abb963dce1e17
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560799"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141856868"
 ---
 # Get-AzApiManagementLogger
 
 ## SYNOPSIS
-Mendapatkan objek Logger Manajemen API.
+Mendapatkan objek API Management Logger.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementlogger) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,17 +36,17 @@ Get-AzApiManagementLogger -Context <PsApiManagementContext> -LoggerId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementLogger** mendapatkan **Logger** Manajemen API Azure atau semua loggers.
+Cmdlet **Get-AzApiManagementLogger** mendapatkan Azure API Management **Logger** atau semua logger.
 
 ## EXAMPLES
 
-### Contoh 1: Get all loggers
+### Contoh 1: Dapatkan semua logger
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementLogger -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua loggers untuk konteks yang ditentukan.
+Perintah ini mendapatkan semua logger untuk konteks yang ditentukan.
 
 ### Contoh 2: Dapatkan logger tertentu
 ```powershell
@@ -51,7 +54,7 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS
 Get-AzApiManagementLogger -Context $apimContext -LoggerId "Logger123"
 ```
 
-Perintah ini akan menghapus logger yang memiliki ID Logger123.
+Perintah ini menghapus logger yang memiliki ID Logger123.
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoggerId
-Menentukan ID logger tertentu untuk mendapatkan.
+Menentukan ID dari logger tertentu untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

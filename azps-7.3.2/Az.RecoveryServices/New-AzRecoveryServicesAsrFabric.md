@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrFabric.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrFabric.md
-ms.openlocfilehash: 215d332ec537cff1247fde22ccbe501e3ecaf157
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d8734ef9f74ad4fa6c1cae99a8902eee8f387837
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196294"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142029377"
 ---
 # New-AzRecoveryServicesAsrFabric
 
 ## SYNOPSIS
-Creates an Azure Site Recovery Fabric.
+Membuat Kain Pemulihan Situs Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrfabric) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ New-AzRecoveryServicesAsrFabric [-Azure] -Name <String> -Location <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Azure Site Recovery Fabric tipe yang ditentukan.
+Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Kain Pemulihan Situs Azure dari tipe yang ditentukan.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet **New-AzRecoveryServicesAsrFabric** membuat Azure Site Recovery Fabric ti
 PS C:\>  $currentJob = New-AzRecoveryServicesAsrFabric -Name $FabricName
 ```
 
-Starts the fabric creation with passed name and returns the ASR job used to track the fabric creation operation.
+Memulai pembuatan kain dengan nama yang dilewati dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi pembuatan kain.
 
 ### Contoh 2
 ```
@@ -49,12 +52,12 @@ PS C:\>  $currentJob = New-AzRecoveryServicesAsrFabric -Azure -Name $fabricName 
 PS C:\>  Get-ASRJob -name $currentJob.id
 ```
 
-Starts the azure fabric creation with passed name and returns the ASR job used to track the fabric creation operation.
+Memulai pembuatan kain azure dengan nama yang dilewati dan mengembalikan pekerjaan ASR yang digunakan untuk melacak operasi pembuatan kain.
 
 ## PARAMETERS
 
 ### -Azure
-Switch parameter specifies to create azure fabric.
+Alihkan parameter yang ditentukan untuk membuat kain azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Specifies the Azure region corresponding to the Fabric object being created. The Azure Site Recovery fabric object represents a region. For virtual machines being replicated between two Azure regions a primary fabric represents the primary Azure region and the recovery fabric .
+Menentukan kawasan Azure yang terkait dengan objek Fabric yang sedang dibuat. Objek kain Azure Site Recovery mewakili sebuah kawasan. Untuk mesin virtual yang sedang direplikasi antara dua kawasan Azure, kain utama mewakili wilayah Azure utama dan kain pemulihan.
 
 ```yaml
 Type: System.String
@@ -100,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Specifies the name of the Azure Site Recovery Fabric.
+Menentukan nama Azure Site Recovery Fabric.
 
 ```yaml
 Type: System.String
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Specifies the Azure Site Recovery Fabric Type.
+Menentukan Tipe Kain Pemulihan Situs Azure.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,11 +164,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedNodeType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceFabric/ServiceFabric/help/Get-AzServiceFabricManagedNodeType.md
 ms.openlocfilehash: 527b4e21ce2f228347bccb99a4748ba2e960c2df
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139932415"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141905133"
 ---
 # Get-AzServiceFabricManagedNodeType
 
 ## SYNOPSIS
-Dapatkan detail sumber daya tipe node terkelola.
+Dapatkan detail sumber daya tipe simpul terkelola.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagednodetype) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicefabric/get-azservicefabricmanagednodetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzServiceFabricManagedNodeType [-ResourceGroupName] <String> [-ClusterName] 
 ```
 
 ## DESCRIPTION
-Dapatkan detail sumber daya tipe node terkelola.
+Dapatkan detail sumber daya tipe simpul terkelola.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ $NodeTypeName = "nt1"
 Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName -Name $NodeTypeName
 ```
 
-Dapatkan detail tipe node.
+Dapatkan detail tipe simpul.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +55,7 @@ $rgName = "testRG"
 Get-AzServiceFabricManagedNodeType -ResourceGroupName $rgName -ClusterName $clusterName
 ```
 
-Dapatkan daftar tipe node di bawah kluster tertentu.
+Dapatkan daftar tipe node di bawah kluster yang ditentukan.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama tipe node.
+Tentukan nama tipe simpul.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
