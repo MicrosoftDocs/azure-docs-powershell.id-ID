@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Get-AzureRmMlCommitmentPlanUsageHistory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/MachineLearning/Commands.MachineLearning/help/Get-AzureRmMlCommitmentPlanUsageHistory.md
 ms.openlocfilehash: 481d1e26ad769101f06acda5573175bd06331fac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140858879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141822372"
 ---
 # Get-AzureRmMlCommitmentPlanUsageHistory
 
 ## SYNOPSIS
-Mengambil informasi riwayat penggunaan untuk rencana komitmen yang ditentukan.
+Mengambil informasi riwayat penggunaan untuk rencana komitmen tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ Get-AzureRmMlCommitmentPlanUsageHistory -ResourceGroupName <String> -Name <Strin
 ```
 
 ## DESCRIPTION
-Mengambil informasi riwayat penggunaan untuk rencana komitmen tertentu, termasuk sumber daya yang digunakan dan sumber daya yang tersisa di dalam rencana tersebut.
+Mengambil informasi riwayat penggunaan untuk rencana komitmen tertentu, termasuk sumber daya yang digunakan dan sumber daya yang tersisa dalam rencana.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan riwayat penggunaan untuk paket komitmen tertentu
+### Contoh 1: Dapatkan riwayat penggunaan untuk rencana komitmen tertentu
 ```
 Get-AzureRmMlCommitmentPlanUsageHistory -ResourceGroupName "MyResourceGroup" -Name "MyCommitmentPlanName"
 ```
@@ -39,7 +39,7 @@ Get-AzureRmMlCommitmentPlanUsageHistory -ResourceGroupName "MyResourceGroup" -Na
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama paket komitmen ML Azure.
+Nama rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya untuk Rencana ML Azure.
+Nama grup sumber daya untuk rencana komitmen Azure ML.
 
 ```yaml
 Type: System.String
@@ -84,17 +84,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Management.MachineLearning.CommitmentPlans.Models.PlanUsageHistory
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, machine, machine learning, azureml
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, mesin, pembelajaran mesin, azureml
 
 ## RELATED LINKS

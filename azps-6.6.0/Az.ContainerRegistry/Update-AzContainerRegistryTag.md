@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Update-AzContainerRegistryTag.md
 ms.openlocfilehash: a2c890b421cfc7b8ba9380b9381186c0b65803be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140334697"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141869378"
 ---
 # Update-AzContainerRegistryTag
 
@@ -18,7 +18,7 @@ ms.locfileid: "140334697"
 Perbarui tag ACR.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrytag) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/update-azcontainerregistrytag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,9 +29,9 @@ Update-AzContainerRegistryTag -RepositoryName <String> -Name <String> [-DeleteEn
 ```
 
 ## DESCRIPTION
-Perbarui atribut dari tag ACR yang diberikan.
+Memperbarui atribut tag ACR tertentu.
 
-Sebelum menggunakan cmdlet ini, Anda harus menjalankannya terlebih `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true` dahulu.
+Sebelum menggunakan cmdlet ini, Anda harus menjalankan `Update-AzContainerRegistryRepository -RegistryName XXX -Repository XXX -WriteEnable $true` terlebih dahulu.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeleteEnabled
-Hapus aktif.
+Hapus aktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Beri tag.
+Tandai.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadEnabled
-Baca diaktifkan.
+Baca aktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistryName
-Nama Registri Azure Container.
+nama Azure Container Registry.
 
 ```yaml
 Type: System.String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -WriteEnabled
-Menulis diaktifkan.
+Aktifkan penulisan.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

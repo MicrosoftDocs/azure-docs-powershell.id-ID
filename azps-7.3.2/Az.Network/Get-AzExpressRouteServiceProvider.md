@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteServiceProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteServiceProvider.md
-ms.openlocfilehash: dedcadf19739c4f7fa4a45f4253f6914860795c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1d4518e9d52a1cf30c9b4397eb8e5e1daa8e37bb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849398"
 ---
 # Get-AzExpressRouteServiceProvider
 
 ## SYNOPSIS
 Mendapatkan daftar penyedia layanan ExpressRoute dan atributnya.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressrouteserviceprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzExpressRouteServiceProvider [-DefaultProfile <IAzureContextContainer>] [<C
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzExpressRouteServiceProvider** mengambil daftar penyedia layanan ExpressRoute dan atributnya. Atribut meliputi opsi lokasi dan bandwidth.
+Cmdlet **Get-AzExpressRouteServiceProvider** mengambil daftar penyedia layanan ExpressRoute dan atributnya. Atribut menyertakan opsi lokasi dan bandwidth.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Get-AzExpressRouteServiceProvider |
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -54,11 +57,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

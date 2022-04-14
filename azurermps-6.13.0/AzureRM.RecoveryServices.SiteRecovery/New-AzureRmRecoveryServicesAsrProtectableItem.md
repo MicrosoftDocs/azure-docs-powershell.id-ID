@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/New-AzureRmRecoveryServicesAsrProtectableItem.md
-ms.openlocfilehash: 4c8f4e8a42f33ff2e368c40773e412c2ec2ea4de588b55b75236d67969398137
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c5d86909bffa7c38d66c31b56b34a66251b21d65
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859410"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775930"
 ---
 # New-AzureRmRecoveryServicesAsrProtectableItem
 
@@ -28,7 +28,7 @@ New-AzureRmRecoveryServicesAsrProtectableItem -ProtectionContainer <ASRProtectio
 ```
 
 ## DESCRIPTION
-The **New-AzureRmRecoveryServicesAsrProtectableItem** adds a new protectable item to the list of discovered protectable items in a protection container within an ASR fabric (applicable only for the VMware fabric type).
+**New-AzureRmRecoveryServicesAsrProtectableItem** menambahkan item baru yang dapat dilindungi ke daftar item yang ditemukan dilindungi dalam wadah perlindungan dalam kain ASR (hanya berlaku untuk tipe kain VMware).
 
 ## EXAMPLES
 
@@ -42,7 +42,7 @@ Tambahkan atau Temukan Azure Recovery Service ProtectableItem baru.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -FriendlyName
-Nama yang mudah diproteksi untuk item yang dapat diproteksi.
+Nama yang mudah dikenali untuk item yang dapat dilindungi.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPAddress
-Alamat IP item yang dapat diproteksi.
+Alamat IP item yang dapat dilindungi.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Tipe Sistem Operasi (Windows/Linux) dari item yang dapat diproteksi.
+Tipe Sistem Operasi (Windows/Linux) dari item yang dapat dilindungi.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProtectionContainer
-Objek wadah Proteksi ASR tempat item yang diproteksi harus ditambahkan.
+Objek kontainer Proteksi ASR tempat item yang dapat diproteksi harus ditambahkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Konfirmasikan sebelum menjalankan cmdlet.
+Minta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

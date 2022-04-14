@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGateway.md
-ms.openlocfilehash: d9db87de4f2f581d13835269e9eb5c2a80e66660
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ccd021f0899c6a5cc9cbb7caca0b100881e73811
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392931"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141935169"
 ---
 # Get-AzApplicationGateway
 
 ## SYNOPSIS
 Mendapatkan gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -86,9 +89,9 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $AppGw sumber daya.
+Perintah ini mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
 
-### Contoh 2: Dapatkan daftar gateway aplikasi dalam grup sumber daya
+### Contoh 2: Mendapatkan daftar gateway aplikasi dalam grup sumber daya
 ```
 PS C:\>$AppGwList = Get-AzApplicationGateway -ResourceGroupName "ResourceGroup01"
 
@@ -144,9 +147,9 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini mendapatkan daftar semua gateway aplikasi di grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGwList lokal.
+Perintah ini mendapatkan daftar semua gateway aplikasi dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGwList.
 
-### Contoh 3: Dapatkan daftar gateway aplikasi dalam langganan
+### Contoh 3: Mendapatkan daftar gateway aplikasi dalam langganan
 ```
 PS C:\>$AppGwList = Get-AzApplicationGateway
 
@@ -202,9 +205,9 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini mendapatkan daftar semua gateway aplikasi dalam langganan dan menyimpannya di $AppGwList variabel.
+Perintah ini mendapatkan daftar semua gateway aplikasi dalam langganan dan menyimpannya dalam variabel $AppGwList.
 
-### Contoh 4: Dapatkan daftar gateway aplikasi dalam langganan menggunakan pemfilteran
+### Contoh 4: Mendapatkan daftar gateway aplikasi dalam langganan menggunakan pemfilteran
 ```
 PS C:\>$AppGwList = Get-AzApplicationGateway -Name ApplicationGateway*
 
@@ -260,12 +263,12 @@ Id                                  : /subscriptions/00000000-0000-0000-0000-000
                                       rs/Microsoft.Network/applicationGateways/ApplicationGateway01
 ```
 
-Perintah ini akan mendapatkan daftar semua gateway aplikasi dalam langganan yang dimulai dengan "ApplicationGateway01" dan menyimpannya di $AppGwList lain.
+Perintah ini mendapatkan daftar semua gateway aplikasi dalam langganan yang dimulai dengan "ApplicationGateway01" dan menyimpannya dalam variabel $AppGwList.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway aplikasi yang akan dapatkan cmdlet ini.
+Menentukan nama gateway aplikasi yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -310,7 +313,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

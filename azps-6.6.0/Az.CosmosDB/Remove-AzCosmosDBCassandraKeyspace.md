@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraKeyspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBCassandraKeyspace.md
 ms.openlocfilehash: 317fd9c679e0b0b03d782a793a9e94a53f2d1a54
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140257579"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868748"
 ---
 # Remove-AzCosmosDBCassandraKeyspace
 
 ## SYNOPSIS
-Deletes a CosmosDB DeletesDB Keyspace.
+Menghapus CosmosDB Cassandra Keyspace.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbcassandrakeyspace) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbcassandrakeyspace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Remove-AzCosmosDBCassandraKeyspace -InputObject <PSCassandraKeyspaceGetResults> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCosmosDBCass cmdletKeyspace menghapus** cmdlet Existing CosmosDB Cmdlet cmdlet Keyspace.
+Cmdlet **Remove-AzCosmosDBCassandraKeyspace** menghapus Keyspace CosmosDB Cassandra yang sudah ada.
 
 ## EXAMPLES
 
@@ -44,11 +44,11 @@ Cmdlet **Remove-AzCosmosDBCass cmdletKeyspace menghapus** cmdlet Existing Cosmos
 PS C:\> Remove-AzCosmosDBCassandraKeyspace -ResourceGroupName {resourceGroupName} -AccountName {accountName} -Name {keyspaceName}
 ```
 
-Cmdlet mengembalikan objek tipe bool(saat -PassThru diteruskan) yang true jika penghapusan berhasil.
+Cmdlet mengembalikan objek type bool(when -PassThru is passed) yang true jika penghapusan berhasil.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Keyspace Space.
+Objek Keyspace Cassandra.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Space, Keyspace, Dana, Dan lain-lain
+Nama Keyspace Cassandra.
 
 ```yaml
 Type: System.String
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Diatur ke true jika pengguna ingin menerima output.
-Output adalah true jika operasi berhasil dan kesalahan akan dihasilkan jika tidak.
+Untuk diatur ke true jika pengguna ingin menerima output.
+Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,11 +171,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.CosmosDB.Models.PSCassmicrosoftKeyspaceGetResults
+### Microsoft.Azure.Commands.CosmosDB.Models.PSCassandraKeyspaceGetResults
 
 ## OUTPUTS
 

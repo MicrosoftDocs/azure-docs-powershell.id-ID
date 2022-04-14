@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBTableThroughput.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBTableThroughput.md
-ms.openlocfilehash: 57c59d4516e7357d5187254c2726d1f72ef9bd48
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6b4717ec9e44e7b747b57a8f0ae72ad33a8df3d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394930"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852763"
 ---
 # Update-AzCosmosDBTableThroughput
 
 ## SYNOPSIS
 Memperbarui nilai throughput Tabel CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbtablethroughput) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +60,7 @@ OfferReplacePending :
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoscaleMaxThroughput
-Nilai Throughput Maksimum jika skala otomatis diaktifkan.
+Nilai Throughput maksimum jika skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -Throughput
 Throughput Tabel (RU/s).
-Nilai default adalah 400.
+Nilai defaultnya adalah 400.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -2,17 +2,17 @@
 external help file: Microsoft.Azure.Commands.Profile.dll-Help.xml
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 1af07f350229ff4b081b41b4f331bff6be241d265a1a9ec1fd50d557f283e4e8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 757f1024c9f8cf285cfb54a25d12eb570981beea
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417640"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815224"
 ---
 # Get-AzureRmSubscription
 
 ## SYNOPSIS
-Dapatkan langganan yang bisa diakses oleh akun saat ini.
+Dapatkan langganan yang dapat diakses akun saat ini.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -29,11 +29,11 @@ Get-AzureRmSubscription [-SubscriptionName <String>] [-TenantId <String>] [<Comm
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmSubscription mendapatkan ID langganan, nama langganan, dan penyewa rumah untuk langganan yang bisa diakses akun saat ini.
+Cmdlet Get-AzureRmSubscription mendapatkan ID langganan, nama langganan, dan penyewa rumah untuk langganan yang dapat diakses akun saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan semua langganan dalam semua penyewa
+### Contoh 1: Dapatkan semua langganan di semua penyewa
 ```
 PS C:\>Get-AzureRmSubscription -All
 
@@ -42,9 +42,9 @@ SubscriptionId    : xxxx-xxxx-xxxx-xxxx
 TenantId          : yyyy-yyyy-yyyy-yyyy
 ```
 
-Perintah ini akan mendapatkan semua langganan di semua penyewa yang diizinkan untuk akun saat ini.
+Perintah ini mendapatkan semua langganan di semua penyewa yang diotorisasi untuk akun saat ini.
 
-### Contoh 2: Mendapatkan semua langganan untuk penyewa tertentu
+### Contoh 2: Dapatkan semua langganan untuk penyewa tertentu
 ```
 PS C:\>Get-AzureRmSubscription -TenantId "xxxx-xxxx-xxxx-xxxx"
 
@@ -57,9 +57,9 @@ SubscriptionId    : yyyy-yyyy-yyyy-yyyy
 TenantId          : xxxx-xxxx-xxxx-xxxx
 ```
 
-Daftar semua langganan dalam penyewa tertentu yang diotorisasi untuk akun saat ini.
+Cantumkan semua langganan dalam penyewa tertentu yang diotorisasi untuk akun saat ini.
 
-### Contoh 3: Dapatkan semua langganan dalam penyewa saat ini
+### Contoh 3: Dapatkan semua langganan di penyewa saat ini
 ```
 PS C:\>Get-AzureRmSubscription
 
@@ -72,7 +72,7 @@ SubscriptionId    : yyyy-yyyy-yyyy-yyyy
 TenantId          : xxxx-xxxx-xxxx-xxxx
 ```
 
-Perintah ini mendapatkan semua langganan di penyewa saat ini yang diotorisasi untuk pengguna saat ini.
+Perintah ini mendapatkan semua langganan dalam penyewa saat ini yang diotorisasi untuk pengguna saat ini.
 
 ### Contoh 4: Mengubah konteks saat ini untuk menggunakan langganan tertentu
 ```
@@ -83,13 +83,13 @@ SubscriptionId    : xxxx-xxxx-xxxx-xxxx
 TenantId          : yyyy-yyyy-yyyy-yyyy
 ```
 
-Perintah ini akan mendapatkan langganan tertentu, lalu mengatur konteks saat ini untuk menggunakannya.
+Perintah ini mendapatkan langganan yang ditentukan, lalu mengatur konteks saat ini untuk menggunakannya.
 Semua cmdlet berikutnya dalam sesi ini menggunakan langganan baru (Langganan Contoso 1) secara default.
 
 ## PARAMETERS
 
 ### -SubscriptionId
-Menentukan ID langganan yang akan dapatkan.
+Menentukan ID langganan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionName
-Menentukan nama langganan yang akan dapatkan.
+Menentukan nama langganan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Menentukan ID penyewa berisi langganan yang akan dapatkan.
+Menentukan ID penyewa yang berisi langganan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

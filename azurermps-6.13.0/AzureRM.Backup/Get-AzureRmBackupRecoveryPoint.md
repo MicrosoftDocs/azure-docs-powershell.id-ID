@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupRecoveryPoint.md
 ms.openlocfilehash: f82abc45a9b78093c13764ab0eb28f2593c7fabb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426334"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141887243"
 ---
 # Get-AzureRmBackupRecoveryPoint
 
 ## SYNOPSIS
-Dapatkan poin pemulihan untuk item yang dicadangkan.
+Mendapatkan titik pemulihan untuk item yang dicadangkan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Get-AzureRmBackupRecoveryPoint [[-RecoveryPointId] <String>] [-Item] <AzureRMBac
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBackupRecoveryPoint** mendapatkan poin pemulihan untuk item Cadangan Azure yang dicadangkan.
-Setelah item dicadangkan, Cadangkan menyimpan satu atau beberapa poin pemulihan.
+Cmdlet **Get-AzureRmBackupRecoveryPoint** mendapatkan titik pemulihan untuk item Azure Backup yang dicadangkan.
+Setelah item dicadangkan, Cadangan menyimpan satu atau beberapa titik pemulihan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan poin pemulihan untuk sebuah item
+### Contoh 1: Dapatkan poin pemulihan untuk item
 ```
 PS C:\>$Vault = Get-AzureRmBackupVault -Name "Vault03"
 PS C:\> $Container = Get-AzureRmBackupContainer -Vault $Vault -Type AzureVM -Name "DPMSERVER.CONTOSO.COM"
@@ -44,18 +44,18 @@ RecoveryPointId    RecoveryPointType  RecoveryPointTime      ContainerName
 15273496567119     AppConsistent      26-Aug-15 12:27:38 PM  iaasvmcontainer;conto02-vm;conto0...
 ```
 
-Perintah pertama mendapatkan vault bernama Vault03 menggunakan cmdlet Get-AzureRmBackupVault baru.
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan wadah dengan nama yang ditentukan dalam penyimpanan pada $Vault menggunakan cmdlet **Get-AzureRmBackupContainer.**
-Perintah menyimpan objek tersebut dalam $Container variabel.
-Perintah ketiga mendapatkan item cadangan dalam wadah pada $Container dengan menggunakan cmdlet **Get-AzureRmBackupItem.**
-Perintah menyimpan objek tersebut dalam $BackupItem variabel.
-Perintah terakhir mendapatkan poin pemulihan untuk item tersebut dalam $BackupItem.
+Perintah pertama mendapatkan kubah bernama Vault03 dengan menggunakan cmdlet Get-AzureRmBackupVault.
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan wadah yang memiliki nama yang ditentukan dalam kubah di $Vault menggunakan cmdlet **Get-AzureRmBackupContainer** .
+Perintah menyimpan objek tersebut dalam variabel $Container.
+Perintah ketiga mendapatkan item cadangan dalam wadah dalam $Container menggunakan cmdlet **Get-AzureRmBackupItem** .
+Perintah menyimpan objek tersebut dalam variabel $BackupItem.
+Perintah akhir mendapatkan titik pemulihan untuk item dalam $BackupItem.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item di mana cmdlet ini mendapatkan poin pemulihan.
-Untuk mendapatkan **AzureRmBackupItem,** gunakan cmdlet Get-AzureRmBackupItem cmdlet.
+Menentukan item di mana cmdlet ini mendapatkan titik pemulihan.
+Untuk mendapatkan **AzureRmBackupItem**, gunakan cmdlet Get-AzureRmBackupItem.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupItem
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryPointId
-Menentukan ID titik pemulihan yang akan didaurkan cmdlet ini.
+Menentukan ID titik pemulihan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -101,12 +101,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupItem
-Parameter: Item (MenurutNilai)
+Parameter: Item (ByValue)
 
 ## OUTPUTS
 

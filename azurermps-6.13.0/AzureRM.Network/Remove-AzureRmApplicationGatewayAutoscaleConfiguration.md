@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayAutoscaleConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayAutoscaleConfiguration.md
-ms.openlocfilehash: e60bb9f3c36e1bad9a9d1658e767cced815da28d73062ff784387758cd2dab72
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1ca390eb8c99ad991f5a15c6a3959d366ae5f983
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140861552"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820500"
 ---
 # Remove-AzureRmApplicationGatewayAutoscaleConfiguration
 
@@ -27,7 +27,7 @@ Remove-AzureRmApplicationGatewayAutoscaleConfiguration -ApplicationGateway <PSAp
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmApplicationGatewayAutoscaleConfiguration** menghapus Konfigurasi SkalaOtomatis dari Gateway Aplikasi yang sudah ada.
+Cmdlet **Remove-AzureRmApplicationGatewayAutoscaleConfiguration** menghapus Konfigurasi Skala Otomatis dari Application Gateway yang sudah ada.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ PS C:\> $gw = Remove-AzureRmApplicationGatewayAutoscaleConfiguration -Applicatio
 PS C:\> $gw = Set-AzureRmApplicationGateway -ApplicationGateway $gw
 ```
 
-Perintah pertama akan mendapatkan gateway aplikasi dan menyimpannya dalam $gw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $gw.
 Perintah kedua menghapus konfigurasi skala otomatis dari gateway applicationg.
 Perintah ketiga memperbarui gateway aplikasi di Azure.
 
@@ -74,8 +74,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

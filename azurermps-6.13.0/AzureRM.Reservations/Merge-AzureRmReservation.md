@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Merge-AzureRmReservation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Merge-AzureRmReservation.md
 ms.openlocfilehash: 6428e4df850d2806939f5d9f8d4e115698e91fb1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140861933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881794"
 ---
 # Merge-AzureRmReservation
 
@@ -34,7 +34,7 @@ Merge-AzureRmReservation -Reservation <PSReservation[]> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Gabungkan nilai tertentu `Reservation`ke dalam file baru `Reservation`. Kedua data `Reservation`yang sedang digabungkan harus memiliki properti yang sama.
+Gabungkan s yang ditentukan `Reservation`ke dalam .`Reservation` Dua `Reservation`s yang sedang digabungkan harus memiliki properti yang sama.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Gabungkan nilai tertentu `Reservation`ke dalam file baru `Reservation`. Kedua da
 PS C:\> Merge-AzureRmReservation -ReservationOrderId "1111aaaa-b1b2-c0c2-d0d2-00000fffff" -ReservationId "11111111-1111-1111-1111-1111111111","11111111-0000-0000-0000-1111111111"
 ```
 
-Menggabungkan dua nilai yang `Reservation`ditentukan menjadi satu `Reservation`
+Menggabungkan dua s yang ditentukan `Reservation`menjadi satu `Reservation`
 
 ## PARAMETERS
 
@@ -62,8 +62,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Reservation
-String dua Id Reservasi yang dipisahkan koma untuk digabungkan
+### -Reservasi
+String yang dipisahkan koma dari dua ReservationId untuk digabungkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Reservations.Models.PSReservation[]
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReservationId
-ReservationOrderId untuk `ReservationOrder` yang berisi dua `Reservation`
+ReservationOrderId untuk yang `ReservationOrder` berisi dua `Reservation`s
 
 ```yaml
 Type: System.Guid[]
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,11 +138,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

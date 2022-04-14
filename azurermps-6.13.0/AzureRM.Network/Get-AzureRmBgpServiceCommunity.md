@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmBgpServiceCommunity.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmBgpServiceCommunity.md
-ms.openlocfilehash: 221ccb2e7db8a76e64b29c77ef705126049e789a5e06aa0ca8a4f0344def4fb9
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f951aab0ab655d073c830d08e2665533c961960a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858483"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821997"
 ---
 # Get-AzureRmBgpServiceCommunity
 
@@ -26,7 +26,7 @@ Get-AzureRmBgpServiceCommunity [-DefaultProfile <IAzureContextContainer>] [<Comm
 ```
 
 ## DESCRIPTION
-Cmdlet ini menyediakan daftar semua layanan /kawasan, komunitas BGP, dan prefiks terkait.
+Cmdlet ini menyediakan daftar semua layanan / kawasan, komunitas BGP, dan prefiks terkait.
 
 ## EXAMPLES
 
@@ -76,12 +76,12 @@ BgpCommunities : [
 ...
 ```
 
-Cmdlet ini menyediakan daftar semua layanan /kawasan, komunitas BGP, dan prefiks terkait.
+Cmdlet ini menyediakan daftar semua layanan / kawasan, komunitas BGP, dan prefiks terkait.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -110,11 +110,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Move-AzureRmExpressRouteCircuit](Move-AzureRmExpressRouteCircuit.md)
+[Pindahkan-AzureRmExpressRouteCircuit](Move-AzureRmExpressRouteCircuit.md)
 
-[New-AzureRmExpressRouteCircuit](New-AzureRmExpressRouteCircuit.md)
+[Baru-AzureRmExpressRouteCircuit](New-AzureRmExpressRouteCircuit.md)
 
-[Remove-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
+[Hapus-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
 
 [Set-AzureRmExpressRouteCircuit](Set-AzureRmExpressRouteCircuit.md)
 
@@ -122,14 +122,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRouteFilterRuleConfig](Get-AzureRmRouteFilterRuleConfig.md)
 
-[Remove-AzureRmRouteFilter](Remove-AzureRmRouteFilter.md)
+[Hapus-AzureRmRouteFilter](Remove-AzureRmRouteFilter.md)
 
-[Remove-AzureRmRouteFilterRuleConfig](Remove-AzureRmRouteFilterRuleConfig.md)
+[Hapus-AzureRmRouteFilterRuleConfig](Remove-AzureRmRouteFilterRuleConfig.md)
 
 [Set-AzureRmRouteFilter](Set-AzureRmRouteFilter.md)
 
 [Set-AzureRmRouteFilterRuleConfig](Set-AzureRmRouteFilterRuleConfig.md)
 
-[New-AzureRmRouteFilter](New-AzureRmRouteFilter.md)
+[AzureRmRouteFilter Baru](New-AzureRmRouteFilter.md)
 
 [New-AzureRmRouteFilterRuleConfig](New-AzureRmRouteFilterRuleConfig.md)

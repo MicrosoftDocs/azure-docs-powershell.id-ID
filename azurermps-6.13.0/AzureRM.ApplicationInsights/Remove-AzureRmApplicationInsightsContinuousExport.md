@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApplicationInsights/Commands.ApplicationInsights/help/Remove-AzureRmApplicationInsightsContinuousExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApplicationInsights/Commands.ApplicationInsights/help/Remove-AzureRmApplicationInsightsContinuousExport.md
 ms.openlocfilehash: b9a26a1279b89609728837def1997ac5735ddaea
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140862950"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141887796"
 ---
 # Remove-AzureRmApplicationInsightsContinuousExport
 
 ## SYNOPSIS
-Menghapus konfigurasi ekspor dalam sumber daya wawasan aplikasi
+Menghapus konfigurasi ekspor bersama dalam sumber daya wawasan aplikasi
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -42,22 +42,22 @@ Remove-AzureRmApplicationInsightsContinuousExport [-ResourceId] <String> [-Expor
 ```
 
 ## DESCRIPTION
-Menghapus konfigurasi ekspor dalam sumber daya wawasan aplikasi
+Menghapus konfigurasi ekspor bersama dalam sumber daya wawasan aplikasi
 
 ## EXAMPLES
 
-### Contoh 1 Menghapus konfigurasi ekspor dalam sumber daya wawasan aplikasi
+### Contoh 1 Menghapus konfigurasi ekspor bersama dalam sumber daya wawasan aplikasi
 ```
 PS C:\> Remove-AzureRmApplicationInsightsContinuousExport -ResourceGroupName "testgroup" -Name "test" -ExportId "uGOoki0jQsyEs3IdQ83Q4QsNr4=" -PassThru
 True
 ```
 
-Menghapus konfigurasi ekspor berkelanjutan wawasan aplikasi dengan id ekspor "uGOqs0jQsyEs3IdQ83Q4QsNr4=" untuk sumber daya bernama "uji" di grup sumber daya "grupuji"
+Hapus konfigurasi ekspor berkelanjutan wawasan aplikasi dengan id ekspor "uGOoki0jQsyEs3IdQ83Q4QsNr4=" untuk sumber daya bernama "test" dalam grup sumber daya "testgroup"
 
 ## PARAMETERS
 
 ### -ApplicationInsightsComponent
-Application Insights Component Object.
+Objek Komponen Insights Aplikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApplicationInsights.Models.PSApplicationInsightsComponent
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportId
-Application Insights Continuous Export ID.
+ID Ekspor Berkelanjutan Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Aplikasi Insights Komponen.
+Nama Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika ditentukan akan menuliskan true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
+Jika ditentukan akan menulis true dalam kasus operasi berhasil. Parameter ini bersifat opsional. Nilai default adalah false.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Application Insights Component Resource Id.
+Id Sumber Daya Komponen Insights Aplikasi.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

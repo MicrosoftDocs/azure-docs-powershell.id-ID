@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskPurchasePlanConfig.md
 ms.openlocfilehash: 29ac9ecedb20a44e79cfa0944f2b0f55ac14aaf6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141870998"
 ---
 # New-AzDiskPurchasePlanConfig
 
@@ -18,7 +18,7 @@ ms.locfileid: "140079389"
 Membuat Objek PurchasePlan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/new-azdiskpurchaseplanconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskpurchaseplanconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Konfigurasi
+Nama Config
 
 ```yaml
 Type: String
@@ -74,7 +74,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Product
+### -Produk
 Nama Produk
 
 ```yaml
@@ -89,7 +89,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Kode Promosi
+### -PromotionCode
 Kode Promosi untuk Paket Pembelian
 
 ```yaml
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

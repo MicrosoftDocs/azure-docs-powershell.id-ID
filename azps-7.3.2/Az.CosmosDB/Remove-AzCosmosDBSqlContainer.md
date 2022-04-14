@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Remove-AzCosmosDBSqlContainer.md
-ms.openlocfilehash: fe47616fc3593457fc8c285b9ad3c5217ae82cac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: dcf45a767053ec382675241549f7e7b50b1da406
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852890"
 ---
 # Remove-AzCosmosDBSqlContainer
 
 ## SYNOPSIS
-Menghapus Wadah CosmosDB Sql.
+Menghapus CosmosDB Sql Container.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/remove-azcosmosdbsqlcontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Remove-AzCosmosDBSqlContainer -InputObject <PSSqlContainerGetResults> [-PassThru
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzCosmosDBSqlContainer** menghapus Cmdlet CosmosDB Sql Container yang terkait dengan ResourceGroupName, AccountName, DatabaseName, dan ContainerName.
+Cmdlet **Remove-AzCosmosDBSqlContainer** menghapus CosmosDB Sql Container yang terkait dengan ResourceGroupName, AccountName, DatabaseName, dan ContainerName.
 
 ## EXAMPLES
 
@@ -44,7 +47,7 @@ PS C:\> Remove-AzCosmosDBSqlContainer -ResourceGroupName {resourceGroupName} -Ac
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -120,8 +123,8 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Diatur ke true jika pengguna ingin menerima output.
-Output adalah true jika operasi berhasil dan kesalahan akan dihasilkan jika tidak.
+Untuk diatur ke true jika pengguna ingin menerima output.
+Output adalah true jika operasi berhasil dan kesalahan dilemparkan jika tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

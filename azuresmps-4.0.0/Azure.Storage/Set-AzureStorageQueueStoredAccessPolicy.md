@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.Storage.dll-Help.xml
 ms.assetid: 4FB7E017-7D37-4EDB-BEC1-36629058B87C
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 5d7799211f31daf1a68d6e8e5f4d2c3434888269e98cfc4a295186350d2148e3
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1070813414e0b64a82b11b199ef8092096e2dcd7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419196"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141771593"
 ---
 # Set-AzureStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Menetapkan kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Mengatur kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,16 +26,16 @@ Set-AzureStorageQueueStoredAccessPolicy [-Queue] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageQueueStoredAccessPolicy** mengatur kebijakan akses tersimpan untuk antrean penyimpanan Azure.
+Cmdlet **Set-AzureStorageQueueStoredAccessPolicy** mengatur kebijakan akses yang disimpan untuk antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menetapkan kebijakan akses yang disimpan dalam antrean
+### Contoh 1: Mengatur kebijakan akses yang disimpan dalam antrean
 ```
 PS C:\> Set-AzureStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy07"
 ```
 
-Perintah ini mengatur kebijakan akses bernama Policy07 untuk antrean penyimpanan yang bernama MyQueue.
+Perintah ini mengatur kebijakan akses bernama Policy07 untuk antrean penyimpanan bernama Antrean Saya.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpiryTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi tidak valid.
+Menentukan waktu ketika kebijakan akses yang disimpan menjadi tidak valid.
 
 ```yaml
 Type: DateTime
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoStartTime
-Cmdlet ini menetapkan waktu mulai untuk waktu $Null.
+Menunjukkan bahwa cmdlet ini mengatur waktu mulai menjadi $Null.
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permission
+### -Izin
 Menentukan tingkat akses publik ke antrean penyimpanan ini.
 
 ```yaml
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token SAS ini.
+Menentukan kebijakan akses tersimpan, yang menyertakan izin untuk token SAS ini.
 
 ```yaml
 Type: String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Menentukan waktu di mana kebijakan akses tersimpan menjadi valid.
+Menentukan waktu di mana kebijakan akses yang disimpan menjadi valid.
 
 ```yaml
 Type: DateTime
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

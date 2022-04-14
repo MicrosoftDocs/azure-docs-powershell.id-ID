@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualNetworkGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualNetworkGateway.md
 ms.openlocfilehash: 7a818ba86092200c31d9d0a217042e6f6dce4857
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820497"
 ---
 # New-AzureRmVirtualNetworkGateway
 
 ## SYNOPSIS
-Membuat Gateway Jaringan Virtual
+Membuat Gateway Virtual Network
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -54,14 +54,14 @@ New-AzureRmVirtualNetworkGateway -Name <String> -ResourceGroupName <String> -Loc
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
 Cmdlet **New-AzureRmVirtualNetworkGateway** membuat objek gateway Anda di Azure berdasarkan Nama, Nama Grup Sumber Daya, Lokasi, dan konfigurasi IP, serta Tipe Gateway dan jika VPN, Tipe VPN. Anda juga bisa memberi nama SKU Gateway.
-Jika Gateway ini digunakan untuk koneksi Point-to-Site, Anda juga perlu menyertakan Kumpulan Alamat Klien VPN yang digunakan untuk menetapkan alamat untuk menyambungkan klien dan Sertifikat Akar Klien VPN yang digunakan untuk mengautentikasi klien VPN yang tersambung ke Gateway.
+Jika Gateway ini sedang digunakan untuk koneksi Point-to-Site, Anda juga perlu menyertakan VPN Client Address Pool untuk menetapkan alamat ke klien yang menyambungkan klien dan VPN Client Root Certificate yang digunakan untuk mengautentikasi klien VPN yang tersambung ke Gateway.
 Anda juga dapat memilih untuk menyertakan fitur lain seperti BGP dan Active-Active.
 
 ## EXAMPLES
 
-### 1: Membuat Gateway Jaringan Virtual
+### 1: Membuat Gateway Virtual Network
 ```
 New-AzureRmResourceGroup -Location "UK West" -Name "vnet-gateway"
 $subnet = New-AzureRMVirtualNetworkSubnetConfig -Name 'gatewaysubnet' -AddressPrefix '10.254.0.0/27'
@@ -74,10 +74,10 @@ $ngwipconfig = New-AzureRMVirtualNetworkGatewayIpConfig -Name ngwipconfig -Subne
 New-AzureRmVirtualNetworkGateway -Name myNGW -ResourceGroupName vnet-gateway -Location "UK West" -IpConfigurations $ngwIpConfig  -GatewayType "Vpn" -VpnType "RouteBased" -GatewaySku "Basic"
 ```
 
-Grup sumber daya di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Jaringan Virtual dan subnet, serta membuat Gateway Jaringan Virtual di Azure.
-Gateway akan disebut "myNGW" di dalam grup sumber daya "vnet-gateway" di lokasi "INGGRIS Barat" dengan konfigurasi IP yang dibuat sebelumnya disimpan di variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "Basic."
+Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Virtual Network dan subnet dan membuat gateway Virtual Network di Azure.
+Gateway akan disebut "myNGW" dalam grup sumber daya "vnet-gateway" di lokasi "UK West" dengan konfigurasi IP yang dibuat sebelumnya disimpan dalam variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "Basic."
 
-### 2: Membuat Gateway Jaringan Virtual dengan Konfigurasi Radius Eksternal
+### 2: Membuat Gateway Virtual Network dengan Konfigurasi Radius Eksternal
 ```
 New-AzureRmResourceGroup -Location "UK West" -Name "vnet-gateway"
 New-AzureRMVirtualNetworkSubnetConfig -Name 'gatewaysubnet' -AddressPrefix '10.254.0.0/27'
@@ -91,10 +91,10 @@ $Secure_String_Pwd = ConvertTo-SecureString "TestRadiusServerPassword" -AsPlainT
 New-AzureRmVirtualNetworkGateway -Name myNGW -ResourceGroupName vnet-gateway -Location "UK West" -IpConfigurations $ngwIpConfig  -GatewayType "Vpn" -VpnType "RouteBased" -GatewaySku "Basic" -RadiusServerAddress "TestRadiusServer" -RadiusServerSecret $Secure_String_Pwd
 ```
 
-Grup sumber daya di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Jaringan Virtual dan subnet, serta membuat Gateway Jaringan Virtual di Azure.
-Gateway akan disebut "myNGW" di dalam grup sumber daya "vnet-gateway" di lokasi "INGGRIS Barat" dengan konfigurasi IP yang dibuat sebelumnya disimpan di variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "Basic." Radius ini juga menambahkan server radius eksternal dengan alamat "TestRadiusServer"
+Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Virtual Network dan subnet dan membuat gateway Virtual Network di Azure.
+Gateway akan disebut "myNGW" dalam grup sumber daya "vnet-gateway" di lokasi "UK West" dengan konfigurasi IP yang dibuat sebelumnya disimpan dalam variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "Basic." Ini juga menambahkan server radius eksternal dengan alamat "TestRadiusServer"
 
-### 1: Buat Gateway Jaringan Virtual dengan pengaturan P2S
+### 1: Membuat Gateway Virtual Network dengan pengaturan P2S
 ```
 New-AzureRmResourceGroup -Location "UK West" -Name "vnet-gateway"
 $subnet = New-AzureRMVirtualNetworkSubnetConfig -Name 'gatewaysubnet' -AddressPrefix '10.254.0.0/27'
@@ -109,13 +109,13 @@ $vpnclientipsecpolicy = New-AzureRmVpnClientIpsecPolicy -IpsecEncryption AES256 
 New-AzureRmVirtualNetworkGateway -Name myNGW -ResourceGroupName vnet-gateway -Location "UK West" -IpConfigurations $ngwIpConfig  -GatewayType "Vpn" -VpnType "RouteBased" -GatewaySku "VpnGw1" -VpnClientProtocol IkeV2 -VpnClientAddressPool 201.169.0.0/16 -VpnClientRootCertificates $rootCert -VpnClientIpsecPolicy $vpnclientipsecpolicy
 ```
 
-Yang di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Jaringan Virtual dan subnet, serta membuat Gateway Jaringan Virtual dengan pengaturan P2S misalnya VpnProtocol,VpnClientAddressPool,VpnClientRootCertificates,VpnClientIpsecPolicy dll. di Azure.
-Gateway akan disebut "myNGW" di dalam grup sumber daya "vnet-gateway" di lokasi "UK West" dengan konfigurasi IP yang dibuat sebelumnya disimpan dalam variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "VpnGw1." Pengaturan Vpn akan diatur di Gateway seperti VpnProtocol yang diatur sebagai Ikev2, VpnClientAddressPool sebagai "201.169.0.0/16", VpnClientRootCertificate ditetapkan sebagai diteruskan: klienRootCertName dan kebijakan ipsec vpn kustom yang disampaikan di object:$vpnclientipsecpolicy  
+Di atas akan membuat grup sumber daya, meminta Alamat IP Publik, membuat Virtual Network dan subnet dan membuat Gateway Virtual Network dengan pengaturan P2S misalnya VpnProtocol,VpnClientAddressPool,VpnClientRootCertificates,VpnClientIpsecPolicy dll. di Azure.
+Gateway akan disebut "myNGW" dalam grup sumber daya "vnet-gateway" di lokasi "UK West" dengan konfigurasi IP yang dibuat sebelumnya disimpan dalam variabel "ngwIPConfig," tipe gateway "VPN," tipe vpn "RouteBased," dan sku "VpnGw1." Pengaturan vpn akan diatur di Gateway seperti VpnProtocol diatur sebagai Ikev2, VpnClientAddressPool sebagai "201.169.0.0/16", VpnClientRootCertificate diatur sebagai lulus satu: clientRootCertName dan kebijakan ipsec vpn kustom yang diserahkan dalam objek:$vpnclientipsecpolicy  
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableActiveActiveFeature
-Mengaktifkan fitur aktif.
+Mengaktifkan fitur aktif-aktif.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,8 +187,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -GatewaySku
+### -Gatewaysku
 
 ```yaml
 Type: System.String
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientIpsecPolicy
-Daftar kebijakan IPSec untuk protokol protokol protokol klien P2S VPN.
+Daftar kebijakan IPSec untuk protokol tunneling klien P2S VPN.
 
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy]
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientProtocol
-Daftar protokol klien P2S VPN
+Daftar protokol tunneling klien P2S VPN
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -466,7 +466,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -481,25 +481,25 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayIpConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayIpConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Boolean
 
 ### Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
 
-### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.List'1[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.UInt32
 
@@ -519,10 +519,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVirtualNetworkGateway](./Get-AzureRmVirtualNetworkGateway.md)
 
-[Remove-AzureRmVirtualNetworkGateway](./Remove-AzureRmVirtualNetworkGateway.md)
+[Hapus-AzureRmVirtualNetworkGateway](./Remove-AzureRmVirtualNetworkGateway.md)
 
-[Reset-AzureRmVirtualNetworkGateway](./Reset-AzureRmVirtualNetworkGateway.md)
+[Mengatur ulang AzureRmVirtualNetworkGateway](./Reset-AzureRmVirtualNetworkGateway.md)
 
-[Resize-AzureRmVirtualNetworkGateway](./Resize-AzureRmVirtualNetworkGateway.md)
+[Mengubah ukuran AzureRmVirtualNetworkGateway](./Resize-AzureRmVirtualNetworkGateway.md)
 
 [Set-AzureRmVirtualNetworkGateway](./Set-AzureRmVirtualNetworkGateway.md)

@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmPublicIpPrefix.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmPublicIpPrefix.md
-ms.openlocfilehash: d82687a69decead48c96ada7086fa8dfebac9e665a2adf9ca546503421a55d79
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e361e4d3c4daec88ddb35fa7973b65f630dcc390
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140858366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820129"
 ---
 # Remove-AzureRmPublicIpPrefix
 
@@ -40,7 +40,7 @@ Remove-AzureRmPublicIpPrefix -InputObject <PSPublicIpPrefix> [-Force] [-PassThru
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmPublicIpPrefix menghapus prefiks IP publik Azure selama tidak ada alamat IP publik yang dialokasikan darinya.
+Cmdlet Remove-AzureRmPublicIpPrefix menghapus prefiks IP publik Azure selama tidak ada alamat IP publik yang dialokasikan darinya.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ Cmdlet **Remove-AzureRmPublicIpPrefix menghapus prefiks IP publik Azure selama t
 PS C:\> Remove-AzureRmPublicIpPrefix -Name $prefixName -ResourceGroupName $rgName
 ```
 
-Menghapus prefiks IP publik dengan Name $prefixName grup sumber daya $rgName
+Menghapus prefiks IP publik dengan $prefixName Nama dari grup sumber daya $rgName
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -83,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ResourceId untuk sumber daya yang akan dihapus
+ResourceId untuk dihapus sumber daya
 
 ```yaml
 Type: String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

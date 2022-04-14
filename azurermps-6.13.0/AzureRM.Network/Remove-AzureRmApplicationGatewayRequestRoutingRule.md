@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayRequestRoutingRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmApplicationGatewayRequestRoutingRule.md
 ms.openlocfilehash: a4c1710ebbdfad1afb428bb09cccf27865c5e56e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424517"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141777459"
 ---
 # Remove-AzureRmApplicationGatewayRequestRoutingRule
 
@@ -38,7 +38,7 @@ PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> Remove-AzureRmApplicationGatewayRequestRoutingRule -ApplicationGateway $AppGw -Name "Rule02"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam $AppGw baru.
+Perintah pertama mendapatkan gateway aplikasi dan menyimpannya dalam variabel $AppGw.
 Perintah kedua menghapus aturan perutean permintaan bernama Rule02 dari gateway aplikasi yang disimpan di $AppGw.
 
 ## PARAMETERS
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama aturan perutean permintaan yang dihapus cmdlet ini.
+Menentukan nama aturan perutean permintaan yang akan dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

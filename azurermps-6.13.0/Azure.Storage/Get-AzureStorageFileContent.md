@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageFileContent.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Get-AzureStorageFileContent.md
 ms.openlocfilehash: 0641fdf635bce2bbb545e50ecc99a39329fabc9f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425505"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888466"
 ---
 # Get-AzureStorageFileContent
 
@@ -30,7 +30,7 @@ Get-AzureStorageFileContent [-ShareName] <String> [-Path] <String> [[-Destinatio
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Get-AzureStorageFileContent [-Share] <CloudFileShare> [-Path] <String> [[-Destination] <String>] [-CheckMd5]
  [-PassThru] [-Force] [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -65,22 +65,22 @@ Cmdlet ini tidak mengembalikan konten file.
 PS C:\>Get-AzureStorageFileContent -ShareName "ContosoShare06" -Path "ContosoWorkingFolder/CurrentDataFile"
 ```
 
-Perintah ini mengunduh file yang bernama CurrentDataFile dalam folder ContosoWorkingFolder dari file bersama ContosoShare06 ke folder saat ini.
+Perintah ini mengunduh file yang bernama CurrentDataFile dalam folder ContosoWorkingFolder dari file berbagi ContosoShare06 ke folder saat ini.
 
-### Contoh 2: Mengunduh file di bawah sampel berbagi file
+### Contoh 2: Mengunduh file di bawah berbagi file sampel
 ```
 PS C:\>Get-AzureStorageFile -ShareName sample | ? {$_.GetType().Name -eq "CloudFile"} | Get-AzureStorageFileContent
 ```
 
-Contoh ini mengunduh file di bawah sampel berbagi file
+Contoh ini mengunduh file di bawah berbagi file sampel
 
 ## PARAMETERS
 
 ### -CheckMd5
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,10 +95,10 @@ Accept wildcard characters: False
 ```
 
 ### -ClientTimeoutPerRequest
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -113,10 +113,10 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -131,10 +131,10 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 
 ### -Tujuan
 Menentukan jalur tujuan.
-Cmdlet ini mengunduh konten file ke lokasi yang ditentukan oleh parameter ini.
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Cmdlet ini mengunduh konten file ke lokasi yang ditentukan parameter ini.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.String
@@ -184,10 +184,10 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
+Menentukan folder sebagai objek **CloudFileDirectory** .
 Cmdlet ini mendapatkan konten untuk file dalam folder yang ditentukan parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzureStorageDirectory.
-Anda juga dapat menggunakan cmdlet Get-AzureStorageFile cmdlet untuk mendapatkan direktori.
+Anda juga dapat menggunakan cmdlet Get-AzureStorageFile untuk mendapatkan direktori.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileDirectory
@@ -202,9 +202,9 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan file sebagai objek **CloudFile.**
+Menentukan file sebagai objek **CloudFile** .
 Cmdlet ini mendapatkan file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFile,** gunakan cmdlet Get-AzureStorageFile.
+Untuk mendapatkan objek **CloudFile** , gunakan cmdlet Get-AzureStorageFile.
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFile
@@ -218,11 +218,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+### -Paksa
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,10 +237,10 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,10 +254,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur file.
-Cmdlet ini akan mendapatkan konten file yang ditentukan parameter ini.
-Jika file tidak ada, cmdlet ini akan mengembalikan kesalahan.
+Cmdlet ini mendapatkan konten file yang ditentukan parameter ini.
+Jika file tidak ada, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.String
@@ -272,10 +272,10 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten di file baru.
-Jika menentukan jalur file yang sudah ada dan menentukan parameter *Paksa,* cmdlet akan menimpa file.
-Jika Anda menentukan jalur file yang sudah ada dan tidak menentukan *Paksa,* cmdlet akan meminta Anda sebelum melanjutkannya.
-Jika Anda menentukan jalur folder, cmdlet ini akan berusaha membuat file yang memiliki nama file penyimpanan Azure.
+Jika Anda menentukan jalur file yang tidak ada, cmdlet ini akan membuat file tersebut, dan menyimpan konten dalam file baru.
+Jika Anda menentukan jalur file yang sudah ada dan Anda menentukan parameter *Force* , cmdlet menimpa file.
+Jika Anda menentukan jalur file yang sudah ada dan Anda tidak menentukan *Force*, cmdlet akan meminta Anda sebelum melanjutkan.
+Jika Anda menentukan jalur folder, cmdlet ini akan mencoba membuat file yang memiliki nama file penyimpanan Azure.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -290,11 +290,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
-Cmdlet ini mengunduh konten file dalam fitur bagikan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzureStorageShare baru.
+Menentukan objek **CloudFileShare** .
+Cmdlet ini mengunduh konten file dalam parameter berbagi ini yang ditentukan.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzureStorageShare.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -309,8 +309,8 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi file.
-Cmdlet ini mengunduh konten file dalam fitur bagikan parameter ini.
+Menentukan nama file yang dibagikan.
+Cmdlet ini mengunduh konten file dalam parameter berbagi ini yang ditentukan.
 
 ```yaml
 Type: System.String
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -356,12 +356,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileShare
-Parameter: Berbagi (ByValue)
+Parameter: Bagikan (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileDirectory
 Parameter: Direktori (ByValue)

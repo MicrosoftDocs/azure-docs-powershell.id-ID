@@ -4,16 +4,16 @@ Module Name: Azs.Subscriptions
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d905159ca62f34584f045a699621f6672507ffe1
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415315"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141770650"
 ---
 # New-AzsSubscription
 
 ## SYNOPSIS
-Buat langganan.
+Membuat langganan.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ New-AzsSubscription [-OfferId] <String> [[-DisplayName] <String>] [[-TenantId] <
 ```
 
 ## DESCRIPTION
-Buat langganan.
+Membuat langganan.
 
 ## EXAMPLES
 
@@ -33,7 +33,7 @@ Buat langganan.
 New-AzsSubscription -OfferId /delegatedProviders/default/offers/offer1
 ```
 
-Buat langganan.
+Membuat langganan.
 
 ## PARAMETERS
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi tempat sumber daya adalah lokasi.
+Lokasi lokasi sumber daya.
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

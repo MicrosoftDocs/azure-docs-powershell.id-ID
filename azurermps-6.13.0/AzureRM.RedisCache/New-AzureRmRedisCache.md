@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/New-AzureRmRedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/New-AzureRmRedisCache.md
 ms.openlocfilehash: 6b2239e09a35ada6b756e58cf2c3a09ed891e730
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141818159"
 ---
 # New-AzureRmRedisCache
 
 ## SYNOPSIS
-Membuat Cache Redis.
+Membuat Singgahan Redis.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -34,7 +34,7 @@ Cmdlet **New-AzureRmRedisCache** membuat Cache Azure Redis.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Cache Redis
+### Contoh 1: Membuat Singgahan Redis
 ```
 PS C:\>New-AzureRmRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "North Central US"
 
@@ -58,9 +58,9 @@ PS C:\>New-AzureRmRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Locat
           Zone               : []
 ```
 
-Perintah ini akan membuat Cache Redis.
+Perintah ini membuat Singgahan Redis.
 
-### Contoh 2: Membuat Cache Redis SKU Standar
+### Contoh 2: Create a Standard SKU Redis Cache
 ```
 PS C:\>New-AzureRmRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Location "North Central US" -Size 250MB -Sku "Standard" -RedisConfiguration @{"maxmemory-policy" = "allkeys-random"} -Force
 
@@ -84,12 +84,12 @@ PS C:\>New-AzureRmRedisCache -ResourceGroupName "MyGroup" -Name "MyCache" -Locat
           Zone               : []
 ```
 
-Perintah ini akan membuat Cache Redis.
+Perintah ini membuat Singgahan Redis.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -EnableNonSslPort
 Menunjukkan apakah port non-SSL diaktifkan.
-Nilai default dinonaktifkan $False (port non-SSL dinonaktifkan).
+Nilai default adalah $False (port non-SSL dinonaktifkan).
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi untuk membuat Cache Redis.
-Nilai valid adalah: 
+Menentukan lokasi untuk membuat Singgahan Redis.
+Nilai yang valid adalah: 
 - As Tengah Utara
 - As Tengah Selatan
 - AS Tengah
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Cache Redis untuk dibuat.
+Menentukan nama Singgahan Redis untuk dibuat.
 
 ```yaml
 Type: System.String
@@ -166,46 +166,46 @@ Accept wildcard characters: False
 ```
 
 ### -RedisConfiguration
-Menentukan Pengaturan konfigurasi Redis.
+Menentukan pengaturan konfigurasi Redis.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - rdb-backup-enabled.
-Menentukan bahwa Redis data persistensi diaktifkan.
-Premium tier saja.
+Menentukan bahwa Redis persistensi data diaktifkan.
+Premium tingkat saja.
 - rdb-storage-connection-string.
-Menentukan string koneksi ke akun Storage untuk Persistensi data Redis.
-Premium tier saja.
+Menentukan string koneksi ke akun Storage untuk persistensi data Redis.
+Premium tingkat saja.
 - rdb-backup-frequency.
-Menentukan frekuensi pencadangan untuk persistensi data Redis.
-Premium tier saja. 
-- max reserved.
-Mengonfigurasi memori yang dicadangkan untuk proses non-cache.
-Standar dan Premium tingkat. 
-- max cookie-policy.
-Mengonfigurasi kebijakan pembatalan untuk cache.
-Semua tingkatan harga. 
+Menentukan frekuensi cadangan untuk persistensi data Redis.
+Premium tingkat saja. 
+- maxmemory-reserved.
+Mengonfigurasi memori yang dipesan untuk proses non-cache.
+Tingkat standar dan Premium. 
+- maxmemory-policy.
+Mengonfigurasi kebijakan penggalian untuk singgahan.
+Semua tingkat harga. 
 - notify-keyspace-events.
 Mengonfigurasi pemberitahuan keyspace.
-Tingkatan standar dan premium. 
+Tingkat standar dan premium. 
 - hash-max-ziplist-entries.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Tingkat standar dan Premium. 
 - hash-max-ziplist-value.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Tingkat standar dan Premium. 
 - set-max-intset-entries.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Tingkat standar dan Premium. 
 - zset-max-ziplist-entries.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
+Tingkat standar dan Premium. 
 - zset-max-ziplist-value.
 Mengonfigurasi optimisasi memori untuk tipe data agregat kecil.
-Standar dan Premium tingkat. 
-- database anda.
+Tingkat standar dan Premium. 
+- Database.
 Mengonfigurasi jumlah database.
-Properti ini hanya dapat dikonfigurasi di pembuatan singgahan.
-Standar dan Premium tingkat.
-Untuk informasi selengkapnya, lihat Mengelola Cache Azure Redis dengan Azure PowerShell https://go.microsoft.com/fwlink/?LinkId=800051 ( https://go.microsoft.com/fwlink/?LinkId=800051) .
+Properti ini hanya dapat dikonfigurasi pada pembuatan cache.
+Tingkat standar dan Premium.
+Untuk informasi selengkapnya, lihat Mengelola Singgahan Azure Redis dengan Azure PowerShellhttps://go.microsoft.com/fwlink/?LinkId=800051 (https://go.microsoft.com/fwlink/?LinkId=800051).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk membuat Cache Redis.
+Menentukan nama grup sumber daya untuk membuat Singgahan Redis.
 
 ```yaml
 Type: System.String
@@ -234,8 +234,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -ScountCount
-Menentukan jumlah grup untuk dibuat pada singgahan kluster Premium baru.
+### -ShardCount
+Menentukan jumlah shard yang akan dibuat pada singgahan klaster Premium.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - 1
 - 2
@@ -261,8 +261,8 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-Menentukan ukuran Cache Redis.
-Nilai valid adalah: 
+Menentukan ukuran Singgahan Redis.
+Nilai yang valid adalah: 
 - P1
 - P2
 - P3
@@ -276,11 +276,11 @@ Nilai valid adalah:
 - C6
 - 250MB
 - 1GB
-- 2,5GB
+- 2,5 GB
 - 6GB
 - 13GB
 - 26GB
-- 53GB Nilai default adalah 1GB atau C1.
+- 53GB Nilai defaultnya adalah 1GB atau C1.
 
 ```yaml
 Type: System.String
@@ -296,8 +296,8 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan SKU Cache Redis untuk dibuat.
-Nilai valid adalah: 
+Menentukan SKU Singgahan Redis untuk dibuat.
+Nilai yang valid adalah: 
 - Dasar
 - Standar
 - Premium Nilai defaultnya adalah Standar.
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticIP
-Menentukan alamat IP unik dalam subnet untuk Cache Redis.
+Menentukan alamat IP unik dalam subnet untuk Singgahan Redis.
 Jika Anda tidak menentukan nilai untuk parameter ini, cmdlet ini memilih alamat IP dari subnet.
 
 ```yaml
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantSettings
-Parameter ini sudah tidak berlaku.
+Parameter ini telah ditolak.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -374,7 +374,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
+### -Zona
 Daftar zona.
 
 ```yaml
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -428,9 +428,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.String[]
 
@@ -444,7 +444,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRedisCache](./Get-AzureRmRedisCache.md)
 
-[Remove-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
+[Hapus-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
 
 [Set-AzureRmRedisCache](./Set-AzureRmRedisCache.md)
 

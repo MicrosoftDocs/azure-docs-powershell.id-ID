@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseSqlPool.md
-ms.openlocfilehash: c9eb621416bf4985b77933ef6d86350352f6b921
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ecfd11189726e3d215684546ae95571f435d3229
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195143"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786344"
 ---
 # Remove-AzSynapseSqlPool
 
 ## SYNOPSIS
-Menghapus konten Analitik Synapse SQL sama.
+Menghapus kumpulan SQL Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsesqlpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +48,7 @@ Remove-AzSynapseSqlPool [-Version <Int32>] -ResourceId <String> [-PassThru] [-As
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseSqlPool** secara permanen menghapus grup SQL Analitik Azure Synapse.
+Cmdlet **Remove-AzSynapseSqlPool** secara permanen menghapus Azure Synapse Analytics SQL pool.
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ Cmdlet **Remove-AzSynapseSqlPool** secara permanen menghapus grup SQL Analitik A
 PS C:\> Remove-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name ContosoSqlPool
 ```
 
-Perintah ini menghapus azure Synapse Analytics SQL sama.
+Perintah ini menghapus Azure Synapse kumpulan SQL Analitik.
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseSqlPool -Name ContosoSqlPool
 ```
 
-Perintah ini menghapus Analitik Azure Synapse SQL saluran melalui saluran.
+Perintah ini menghapus Azure Synapse Analytics SQL pool melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -70,19 +73,19 @@ PS C:\> $pool = Get-AzSynapseSqlPool -WorkspaceName ContosoWorkspace -Name Conto
 PS C:\> $pool | Remove-AzSynapseSqlPool
 ```
 
-Perintah ini menghapus Analitik Azure Synapse SQL saluran melalui saluran.
+Perintah ini menghapus Azure Synapse Analytics SQL pool melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Remove-AzSynapseSqlPool -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/sqlPools/ContosoSqlPool
 ```
 
-Perintah ini menghapus analitik Azure Synapse yang SQL dengan ID sumber daya yang ditentukan.
+Perintah ini menghapus kumpulan SQL analitik Azure Synapse dengan ID sumber daya yang ditentukan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-SQL input kolam renang, biasanya melewati saluran.
+SQL objek input pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSqlPool
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama SQL Tim.
+Nama Synapse SQL pool.
 
 ```yaml
 Type: System.String
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari Synapse SQL Pool.
+Pengidentifikasi sumber daya Synapse SQL Pool.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

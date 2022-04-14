@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHost.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzHost.md
 ms.openlocfilehash: 045c977b0683352318cbee74489a57c6dd59ba8a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140079497"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141871377"
 ---
 # Get-AzHost
 
 ## SYNOPSIS
-Dapatkan atau  list hosts.
+Dapatkan atau daftar host.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azhost) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azhost) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -103,7 +103,7 @@ Location               : eastus
 Tags                   : {"key1":"val2"}
 ```
 
-Perintah ini mengembalikan tampilan contoh host.
+Perintah ini mengembalikan tampilan instans host.
 
 ### Contoh 3
 ```
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceView
-Mengindikasikan bahwa cmdlet ini hanya mendapatkan tampilan host instans.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans host.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

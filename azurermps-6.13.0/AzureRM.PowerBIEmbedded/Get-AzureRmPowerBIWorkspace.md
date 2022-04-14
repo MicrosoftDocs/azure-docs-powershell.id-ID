@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.power
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PowerBIEmbedded/Commands.Management.PowerBIEmbedded/help/Get-AzureRmPowerBIWorkspace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PowerBIEmbedded/Commands.Management.PowerBIEmbedded/help/Get-AzureRmPowerBIWorkspace.md
-ms.openlocfilehash: 86d4b25845ea82b55afdd715385f516096bb20c6832ccad50940a2c4e88678b0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2217a6940e5f740c2499e95ff05f67c7144cbc3d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416121"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141819118"
 ---
 # Get-AzureRmPowerBIWorkspace
 
 ## SYNOPSIS
-Dapatkan ruang kerja dalam kumpulan Power BI kerja Anda.
+Mendapatkan ruang kerja dalam kumpulan ruang kerja Power BI.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Get-AzureRmPowerBIWorkspace [-ResourceGroupName] <String> [-WorkspaceCollectionN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmPowerBIWorkspace** dapat memperoleh ruang kerja dalam Power BI ruang kerja Anda.
+Cmdlet **Get-AzureRmPowerBIWorkspace** mendapatkan ruang kerja dalam kumpulan ruang kerja Power BI.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan ruang kerja koleksi ruang kerja
+### Contoh 1: Mendapatkan ruang kerja kumpulan ruang kerja
 ```
 PS C:\>Get-AzureRmPowerBIWorkspace -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11"
 ```
@@ -42,7 +42,7 @@ Perintah ini mendapatkan ruang kerja yang termasuk dalam kumpulan ruang kerja be
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat kumpulan ruang kerja tersebut berada.
+Menentukan nama grup sumber daya tempat kumpulan ruang kerja berada.
 
 ```yaml
 Type: System.String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang kerja di mana cmdlet ini mendapatkan ruang kerja.
+Menentukan nama kumpulan ruang kerja tempat cmdlet ini mendapatkan ruang kerja.
 
 ```yaml
 Type: System.String
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

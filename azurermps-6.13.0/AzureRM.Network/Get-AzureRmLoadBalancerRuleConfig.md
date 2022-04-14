@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancerRuleConfig.md
 ms.openlocfilehash: b09aeb7288f69d0edc678578bbcc91306f5b0c2d
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414498"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141821592"
 ---
 # Get-AzureRmLoadBalancerRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan untuk penyeimbang muat.
+Mendapatkan konfigurasi aturan untuk penyeimbang muatan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,23 +28,23 @@ Get-AzureRmLoadBalancerRuleConfig -LoadBalancer <PSLoadBalancer> [-Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLoadBalancerRuleConfig** mendapatkan satu atau beberapa konfigurasi aturan untuk penyeimbang muat.
+Cmdlet **Get-AzureRmLoadBalancerRuleConfig** mendapatkan satu atau beberapa konfigurasi aturan untuk load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan konfigurasi aturan dari penyeimbang muat
+### Contoh 1: Dapatkan konfigurasi aturan penyeimbang muat
 ```
 PS C:\>$slb = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> Get-AzureRmLoadBalancerRuleConfig -Name "MyLBrulename" -LoadBalancer $slb
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di nilai $slb.
-Perintah kedua mendapatkan konfigurasi aturan terkait bernama MyLBrulename dari penyeimbang muat dalam $slb.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua mendapatkan konfigurasi aturan terkait bernama MyLBrulename dari load balancer di $slb.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang terkait dengan konfigurasi aturan yang akan dapatkan.
+Menentukan penyeimbang muatan yang terkait dengan konfigurasi aturan yang akan didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi aturan untuk mendapatkan.
+Menentukan nama konfigurasi aturan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -108,7 +108,7 @@ Parameter: LoadBalancer (ByValue)
 
 [Get-AzureRmLoadBalancer](./Get-AzureRmLoadBalancer.md)
 
-[Remove-AzureRmLoadBalancerRuleConfig](./Remove-AzureRmLoadBalancerRuleConfig.md)
+[Hapus-AzureRmLoadBalancerRuleConfig](./Remove-AzureRmLoadBalancerRuleConfig.md)
 
 [Set-AzureRmLoadBalancerRuleConfig](./Set-AzureRmLoadBalancerRuleConfig.md)
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientPackage.md
 ms.openlocfilehash: d08f91029940d60440d50be406dbdfe3652934a7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964401"
 ---
 # Get-AzVpnClientPackage
 
@@ -27,24 +27,24 @@ Get-AzVpnClientPackage -ResourceGroupName <String> -VirtualNetworkGatewayName <S
 
 ## DESCRIPTION
 Cmdlet **Get-AzVpnClientPackage** mendapatkan informasi tentang paket klien VPN yang tersedia dari gateway jaringan virtual.
-Paket klien berisi data konfigurasi yang memungkinkan komputer klien membuat koneksi VPN ke jaringan virtual Azure; komputer klien harus memiliki instalan paket konfigurasi yang benar agar dapat membuat koneksi VPN.
-Paket konfigurasi berbeda tersedia berdasarkan versi Windows komputer klien (misalnya, Windows 7 atau Windows 10) dan pada arsitektur prosesor komputer klien (AMD64 atau x86).
-Anda harus menentukan tipe arsitektur ketika menjalankan **Get-AzVpnClientPackage**.
+Paket klien berisi data konfigurasi yang memungkinkan komputer klien membuat koneksi VPN ke jaringan virtual Azure; komputer klien harus memiliki paket konfigurasi yang benar yang terinstal untuk membuat koneksi VPN.
+Paket konfigurasi yang berbeda tersedia berdasarkan versi Windows komputer klien (misalnya, Windows 7 atau Windows 10) dan pada arsitektur prosesor komputer klien (AMD64 atau x86).
+Anda harus menentukan tipe arsitektur saat menjalankan **Get-AzVpnClientPackage**.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan informasi tentang arsitektur prosesor paket klien VPN
+### Contoh 1: Dapatkan informasi tentang paket klien VPN arsitektur prosesor
 ```
 PS C:\>Get-AzVpnClientPackage -ProcessorArchitecture -VirtualNetworkGatewayName "ContosoVirtualNetworkGateway" -ResourceGroupName "ContosoResourceGroup" -ProcessorArchitecture "Amd64"
 ```
 
-Perintah ini mendapatkan informasi tentang paket klien VPN AMD64 yang disimpan di gateway jaringan virtual bernama ContosoVirtualNetworkGateway.
+Perintah ini mendapatkan informasi tentang paket klien AMD64 VPN yang disimpan di gateway jaringan virtual bernama ContosoVirtualNetworkGateway.
 Untuk mendapatkan informasi tentang paket klien x86, atur nilai parameter *ProcessorArchitecture* ke x86.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessorArchitecture
-Menentukan tipe arsitektur CPU yang didesain untuk paket klien.
+Menentukan tipe arsitektur CPU tempat paket klien didesain.
 Nilai yang valid adalah Amd64 dan X86.
 
 ```yaml
@@ -76,9 +76,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
 
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: String
@@ -108,26 +108,26 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### String
-Parameter 'ResourceGroupName' menerima nilai tipe 'String' dari saluran
+Parameter 'ResourceGroupName' menerima nilai tipe 'String' dari pipeline
 
 ### String
-Parameter 'VirtualNetworkGatewayName' menerima nilai tipe 'String' dari saluran
+Parameter 'VirtualNetworkGatewayName' menerima nilai tipe 'String' dari pipeline
 
 ## OUTPUTS
 
 ###  
-**Get-AzVpnClientPackage** mengembalikan instans objek System.String.
+**Get-AzVpnClientPackage** mengembalikan instance objek System.String.
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Resize-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)
+[Mengubah ukuran-AzVirtualNetworkGateway](./Resize-AzVirtualNetworkGateway.md)
 
 [Set-AzVirtualNetworkGatewayVpnClientConfig](./Set-AzVirtualNetworkGatewayVpnClientConfig.md)
 

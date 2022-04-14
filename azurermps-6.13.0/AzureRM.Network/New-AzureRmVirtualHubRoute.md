@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVirtualHubRoute.md
 ms.openlocfilehash: 7197c90e5d5cb0c8a0e15b5e16d1a3c05aaeebf2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140867213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141820711"
 ---
 # New-AzureRmVirtualHubRoute
 
@@ -41,7 +41,7 @@ AddressPrefixes            NextHopIpAddress
 {10.0.0.0/16, 11.0.0.0/16} 12.0.0.5
 ```
 
-Langkah di atas akan membuat objek rute hub virtual yang dapat disertakan dalam tabel rute hub virtual.
+Hal di atas akan membuat objek rute hub virtual yang dapat disertakan dalam tabel rute hub virtual.
 
 Rute hub virtual adalah objek dalam memori yang dapat digunakan untuk membuat objek VirtualHubRouteTable.
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -NextHopIpAddress
-The Next Hop IpAddress.
+Hop Berikutnya IpAddress.
 
 ```yaml
 Type: System.String
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

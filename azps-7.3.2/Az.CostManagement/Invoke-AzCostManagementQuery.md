@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.costmanagement/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CostManagement/help/Invoke-AzCostManagementQuery.md
-ms.openlocfilehash: d8db8bb75ec43d324ba12e85460071c77ebba6ba
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 791c94512937925d8babd8c7ebf61ef7f4e52784
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140544852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852674"
 ---
 # Invoke-AzCostManagementQuery
 
 ## SYNOPSIS
-Buat kueri tentang data penggunaan untuk lingkup yang ditentukan.
+Buat kueri data penggunaan untuk lingkup yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.costmanagement/invoke-azcostmanagementquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Invoke-AzCostManagementQuery -ExternalCloudProviderId <String>
 ```
 
 ## DESCRIPTION
-Buat kueri tentang data penggunaan untuk lingkup yang ditentukan.
+Buat kueri data penggunaan untuk lingkup yang ditentukan.
 
 ## EXAMPLES
 
@@ -52,9 +55,9 @@ Column                Row
 {UsageDate, Currency} {20201101 USD, 20201102 USD, 20201103 USD, 20201104 USD…}
 ```
 
-Invoke AzCostManagementQuery menurut Lingkup
+Memanggil AzCostManagementQuery menurut Lingkup
 
-### Contoh 2: Invoke AzCostManagementQuery menurut Lingkup dengan Dimensi
+### Contoh 2: Memanggil AzCostManagementQuery menurut Lingkup dengan Dimensi
 ```powershell
 $dimensions = New-AzCostManagementQueryComparisonExpressionObject -Name 'ResourceGroup' -Value 'API'
 $filter = New-AzCostManagementQueryFilterObject -Dimensions $dimensions
@@ -67,7 +70,7 @@ Column                   Row
 {BillingMonth, Currency} {}
 ```
 
-Invoke AzCostManagementQuery menurut Lingkup dengan Dimensi
+Memanggil AzCostManagementQuery menurut Lingkup dengan Dimensi
 
 ## PARAMETERS
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatasetAggregation
-Kamus ekspresi agregasi yang akan digunakan dalam kueri.
+Kamus ekspresi agregasi untuk digunakan dalam kueri.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 
 ### -DatasetFilter
 Memiliki ekspresi filter untuk digunakan dalam kueri.
-Untuk membuat, lihat bagian CATATAN untuk properti DATASETFILTER dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti DATASETFILTER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryFilter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -DatasetGrouping
 Array grup menurut ekspresi untuk digunakan dalam kueri.
-Untuk membuat, lihat bagian CATATAN untuk properti DATASETGROUPING dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti DATASETGROUPING dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Models.Api20200601.IQueryGrouping[]
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalCloudProviderId
-Hal ini dapat terjadi '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
+Ini dapat berupa '{externalSubscriptionId}' untuk akun tertaut atau '{externalBillingAccountId}' untuk akun konsolidasi yang digunakan dengan operasi dimensi/kueri.
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalCloudProviderType
-Tipe penyedia awan eksternal terkait dengan operasi dimensi/kueri.
+Tipe penyedia awan eksternal yang terkait dengan operasi dimensi/kueri.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Support.ExternalCloudProviderType
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Ini mencakup 'subscriptions/{subscriptionId}/' untuk lingkup langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk lingkup resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' untuk lingkup Akun Tagihan dan 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' untuk lingkup Departemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ enrollmentAccountId}' untuk PendaftaranPeng lingkup Akun, 'providers/Microsoft.Management/managementGroups/{managementGroupId} untuk lingkup Grup Manajemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk lingkup billingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/invoiceSections/{invoiceSectionId}' untuk lingkup invoiceSection, dan 'providers/Microsoft. Billing/billingAccounts/{billingAccountId}/customers/{customerId}' specific for partners.
+Ini termasuk 'subscriptions/{subscriptionId}/' untuk lingkup langganan, 'subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' untuk lingkup resourceGroup, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}' untuk lingkup Akun Penagihan dan 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' untuk lingkup Departemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{ pendaftaranAccountId}' untuk lingkup EnrollmentAccount, 'providers/Microsoft.Management/managementGroups/{managementGroupId} untuk lingkup Grup Manajemen, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}' untuk lingkup billingProfile, 'providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/invoiceSections/{invoiceSectionId}' untuk lingkup invoiceSection, dan 'providers/Microsoft. Tagihan/tagihanAccounts/{billingAccountId}/customers/{customerId}' khusus untuk mitra.
 
 ```yaml
 Type: System.String
@@ -208,8 +211,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Timeframe
-Kerangka waktu untuk menarik data kueri.
+### -Jangka waktu
+Jangka waktu untuk menarik data untuk kueri.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CostManagement.Support.TimeframeType
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimePeriodFrom
-Tanggal mulai untuk menarik data.
+Tanggal mulai untuk menarik data dari.
 
 ```yaml
 Type: System.DateTime
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -317,18 +320,18 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-DATASETFILTER <IQueryFilter>: Memiliki ekspresi filter yang akan digunakan dalam kueri.
-  - `[And <IQueryFilter[]>]`: Ekspresi "AND" logika. Harus memiliki setidaknya 2 item.
+DATASETFILTER <IQueryFilter>: Memiliki ekspresi filter untuk digunakan dalam kueri.
+  - `[And <IQueryFilter[]>]`: Ekspresi logika "AND". Harus memiliki setidaknya 2 item.
   - `[Dimensions <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk dimensi
-    - `Name <String>`: Nama kolom yang akan digunakan jika dibandingkan.
-    - `Value <String[]>`: Array nilai yang digunakan untuk perbandingan
-  - `[Not <IQueryFilter>]`: Ekspresi "NOT" logika.
+    - `Name <String>`: Nama kolom yang digunakan sebagai perbandingan.
+    - `Value <String[]>`: Array nilai yang akan digunakan untuk perbandingan
+  - `[Not <IQueryFilter>]`: Ekspresi logika "NOT".
   - `[Or <IQueryFilter[]>]`: Ekspresi "OR" logika. Harus memiliki setidaknya 2 item.
   - `[Tag <IQueryComparisonExpression>]`: Memiliki ekspresi perbandingan untuk tag
 
 DATASETGROUPING <IQueryGrouping[]>: Array grup menurut ekspresi untuk digunakan dalam kueri.
   - `Name <String>`: Nama kolom untuk dikelompokkan.
-  - `Type <QueryColumnType>`: Memiliki tipe kolom yang akan dikelompokkan.
+  - `Type <QueryColumnType>`: Memiliki tipe kolom untuk dikelompokkan.
 
 ## RELATED LINKS
 

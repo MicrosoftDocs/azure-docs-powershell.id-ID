@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteCircuit.md
-ms.openlocfilehash: d477e01cc88fc90e1d6cc533e26127b92745f465
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1f8252a7f936cf593b256a75b57c5f10a61803b8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198087"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849452"
 ---
 # Get-AzExpressRouteCircuit
 
 ## SYNOPSIS
-Dapatkan sirkuit Azure ExpressRoute dari Azure.
+Mendapatkan sirkuit Azure ExpressRoute dari Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutecircuit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -64,9 +67,9 @@ AllowClassicOperations           : False
 GatewayManagerEtag               :
 ```
 
-Dapatkan sirkuit ExpressRoute tertentu dengan Nama "testrg" dan "test" ResourceGroupName
+Dapatkan sirkuit ExpressRoute tertentu dengan Name "testrg" dan ResourceGroupName "test"
 
-### Contoh 2: Daftar sirkuit ExpressRoute menggunakan pemfilteran
+### Contoh 2: Mencantumkan sirkuit ExpressRoute menggunakan pemfilteran
 ```
 Get-AzExpressRouteCircuit -Name test*
 
@@ -129,12 +132,12 @@ AllowClassicOperations           : False
 GatewayManagerEtag               :
 ```
 
-Dapatkan semua sirkuit ExpressRoute yang namanya dimulai dengan "tes".
+Dapatkan semua sirkuit ExpressRoute yang namanya dimulai dengan "test".
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -179,7 +182,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

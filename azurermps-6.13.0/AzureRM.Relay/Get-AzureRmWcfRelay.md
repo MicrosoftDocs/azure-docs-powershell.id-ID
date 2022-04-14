@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmWcfRelay.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmWcfRelay.md
 ms.openlocfilehash: 342c18add7438c75babd1225722c3830c4c5c696
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140866970"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881869"
 ---
 # Get-AzureRmWcfRelay
 
 ## SYNOPSIS
-Mengembalikan deskripsi untuk WcfCf tertentu.
+Mengembalikan deskripsi untuk WcfRelay yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmWcfRelay [-ResourceGroupName] <String> [-Namespace] <String> [[-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmWcf Cmdlets** mengembalikan deskripsi dari Wcf AzureRmRm Tertentu.
+Cmdlet **Get-AzureRmWcfRelay** mengembalikan deskripsi WcfRelay yang ditentukan.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Name                        : TestWCFRelay1
 Type                        : Microsoft.Relay/WcfRelays
 ```
 
-Mengembalikan deskripsi WcfCfCfY.
+Mengembalikan deskripsi WcfRelay.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama WcfEby.
+Nama WcfRelay.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -124,7 +124,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Relay.Models.PSWcfMicrosoftyAttributes
+### Microsoft.Azure.Commands.Relay.Models.PSWcfRelayAttributes
 
 
 ## CATATAN

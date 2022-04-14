@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Stop-AzureRmResourceGroupDeployment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Stop-AzureRmResourceGroupDeployment.md
 ms.openlocfilehash: c9a144e92c4950d927177d4cbcb921c245c18b98
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423287"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881450"
 ---
 # Stop-AzureRmResourceGroupDeployment
 
@@ -36,15 +36,15 @@ Stop-AzureRmResourceGroupDeployment -Id <String> [-ApiVersion <String>] [-Pre]
 
 ## DESCRIPTION
 Cmdlet **Stop-AzureRmResourceGroupDeployment** membatalkan penyebaran grup sumber daya Azure yang telah dimulai tetapi belum selesai.
-Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status selesai, seperti Diprovisikan atau Gagal.
+Untuk menghentikan penyebaran, penyebaran harus memiliki status penyediaan yang tidak lengkap, seperti Penyediaan, dan bukan status yang diselesaikan, seperti Provisioned atau Failed.
 Sumber daya Azure adalah entitas yang dikelola pengguna, seperti situs web, database, atau server database.
 Grup sumber daya adalah kumpulan sumber daya yang digunakan sebagai unit.
-Untuk menyebarkan grup sumber daya, gunakan New-AzureRmResourceGroupDeployment cmdlet.
+Untuk menyebarkan grup sumber daya, gunakan cmdlet New-AzureRmResourceGroupDeployment.
 Cmdlet New-AzureRmResource membuat sumber daya baru, tetapi tidak memicu operasi penyebaran grup sumber daya yang dapat dihentikan cmdlet ini.
-Cmdlet ini hanya berhenti satu kali menjalankan penyebaran.
-Gunakan parameter *Name* untuk menghentikan penyebaran tertentu.
-Jika Anda menghilangkan parameter *Nama,* **Stop-AzureRmResourceGroupDeployment** akan mencari penyebaran yang berjalan dan menghentikannya.
-Jika cmdlet menemukan lebih dari satu penyebaran yang berjalan, perintah akan gagal.
+Cmdlet ini hanya menghentikan satu penyebaran yang berjalan.
+Gunakan parameter *Nama* untuk menghentikan penyebaran tertentu.
+Jika Anda menghilangkan parameter *Nama* , **Stop-AzureRmResourceGroupDeployment** mencari penyebaran yang berjalan dan menghentikannya.
+Jika cmdlet menemukan lebih dari satu penyebaran yang berjalan, perintah gagal.
 
 ## EXAMPLES
 
@@ -71,7 +71,7 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID penyebaran grup sumber daya untuk dihentikan.
+Menentukan ID penyebaran grup sumber daya untuk berhenti.
 
 ```yaml
 Type: System.String
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyebaran grup sumber daya untuk dihentikan.
-Jika Anda tidak menentukan parameter ini, cmdlet ini akan mencari penyebaran yang berjalan dalam grup sumber daya dan menghentikannya.
+Menentukan nama penyebaran grup sumber daya untuk berhenti.
+Jika Anda tidak menentukan parameter ini, cmdlet ini mencari penyebaran yang berjalan dalam grup sumber daya dan menghentikannya.
 Jika menemukan lebih dari satu penyebaran yang berjalan, perintah akan gagal.
 Untuk mendapatkan nama penyebaran, gunakan cmdlet Get-AzureRmResourceGroupDeployment.
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,11 +196,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -212,14 +212,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmResourceGroupDeployment](./Get-AzureRmResourceGroupDeployment.md)
 
-[New-AzureRmResource](./New-AzureRmResource.md)
+[AzureRmResource baru](./New-AzureRmResource.md)
 
-[New-AzureRmResourceGroup](./New-AzureRmResourceGroup.md)
+[AzureRmResourceGroup baru](./New-AzureRmResourceGroup.md)
 
 [New-AzureRmResourceGroupDeployment](./New-AzureRmResourceGroupDeployment.md)
 
 [Remove-AzureRmResourceGroupDeployment](./Remove-AzureRmResourceGroupDeployment.md)
 
-[Test-AzureRmResourceGroupDeployment](./Test-AzureRmResourceGroupDeployment.md)
+[Uji-AzureRmResourceGroupDeployment](./Test-AzureRmResourceGroupDeployment.md)
 
 

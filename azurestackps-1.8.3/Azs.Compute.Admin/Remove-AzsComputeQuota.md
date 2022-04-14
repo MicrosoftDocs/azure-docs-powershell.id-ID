@@ -4,16 +4,16 @@ Module Name: Azs.Compute.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: ebc1ebae40d6d1726ee6c23def6f82ff1efc8517
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577836"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141878126"
 ---
 # Remove-AzsComputeQuota
 
 ## SYNOPSIS
-Menghapus kuota perhitungan tertentu.
+Menghapus kuota komputasi yang ditentukan.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-AzsComputeQuota -ResourceId <String> [-Force] [-WhatIf] [-Confirm] [<Comm
 ```
 
 ## DESCRIPTION
-Menghapus kuota yang ada.
+Hapus kuota yang sudah ada.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Menghapus kuota yang ada.
 Remove-AzsComputeQuota -Name ComputeQuota
 ```
 
-Hapus kuota perhitungan yang diberikan semua parameter.
+Hapus kuota komputasi yang diberikan semua parameter.
 
 ## PARAMETERS
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: SwitchParameter
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi sumber daya. Jika tidak diberikan secara default ke lokasi yang terikat dengan langganan tenat tersebut.
+Lokasi sumber daya. Jika tidak diberikan, kami default ke lokasi yang terikat ke langganan tenat.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementHostnameConfiguration.md
 ms.openlocfilehash: defd5c046427115e44783d6b34ea7b034edc8317
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420389"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888246"
 ---
 # New-AzureRmApiManagementHostnameConfiguration
 
@@ -28,22 +28,22 @@ New-AzureRmApiManagementHostnameConfiguration -CertificateThumbprint <String> -H
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementHostnameConfiguration** adalah perintah bantuan yang membuat instans **PsApiManagementHostnameConfiguration**.
+Cmdlet **New-AzureRmApiManagementHostnameConfiguration** adalah perintah pembantu yang membuat contoh **PsApiManagementHostnameConfiguration**.
 Perintah ini digunakan dengan cmdlet Set-AzureRmApiManagementHostnames.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat dan memulai contoh PsApiManagementHostnameConfiguration
+### Contoh 1: Membuat dan menginisialisasi contoh PsApiManagementHostnameConfiguration
 ```
 PS C:\>New-AzureRmApiManagementHostnameConfiguration -Hostname "portal.contoso.com" -CertificateThumbprint "33CC47C6FCA848DC9B14A6F071C1EF7C"
 ```
 
-Perintah ini membuat dan memulai contoh **PsApiManagementHostnameConfiguration.**
+Perintah ini membuat dan menginisialisasi contoh **PsApiManagementHostnameConfiguration**.
 
 ## PARAMETERS
 
 ### -CertificateThumbprint
-Menentukan sertifikat yang dapat dicetak.
+Menentukan sidik jari sertifikat.
 Sertifikat harus terlebih dahulu diimpor dengan cmdlet Import-AzureRmApiManagementHostnameCertificate.
 
 ```yaml
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -Hostname
-Menentukan nama host kustom di mana cmdlet ini membuat instans **PsApiManagementHostnameConfiguration.**
+Menentukan nama host kustom tempat cmdlet ini membuat **instans PsApiManagementHostnameConfiguration** .
 
 ```yaml
 Type: System.String
@@ -89,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Import-AzureRmApiManagementHostnameCertificate](./Import-AzureRmApiManagementHostnameCertificate.md)
+[Impor-AzureRmApiManagementHostnameCertificate](./Import-AzureRmApiManagementHostnameCertificate.md)
 
 [Set-AzureRmApiManagementHostnames](./Set-AzureRmApiManagementHostnames.md)
 

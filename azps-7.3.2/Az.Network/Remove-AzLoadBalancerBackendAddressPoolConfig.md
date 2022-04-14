@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerBackendAddressPoolConfig.md
-ms.openlocfilehash: ac05ce98335ed55fc9d455523467231178bf98b3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5c62dc3b893b7c4a5a5e2b0be1b3412af4314d11
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385755"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141890306"
 ---
 # Remove-AzLoadBalancerBackendAddressPoolConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi pool alamat backend dari penyeimbang muat.
+Menghapus konfigurasi kumpulan alamat backend dari penyeimbang muatan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerbackendaddresspoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,23 +29,23 @@ Remove-AzLoadBalancerBackendAddressPoolConfig -LoadBalancer <PSLoadBalancer> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerBackendAddressPoolConfig** menghapus pool alamat backend dari penyeimbang muat.
+Cmdlet **Remove-AzLoadBalancerBackendAddressPoolConfig** menghapus kumpulan alamat backend dari load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi pool alamat backend dari penyeimbang muat
+### Contoh 1: Menghapus konfigurasi kumpulan alamat backend dari penyeimbang muat
 ```
 PS C:\>Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup" | Remove-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzLoadBalancer
 ```
 
-Perintah ini mendapatkan penyeimbang muat bernama MyLoadBalancer dan mengirimnya ke **Remove-AzLoadBalancerBackendAddressPoolConfig**, yang menghapus konfigurasi BackendAddressPool02 dari MyLoadBalancer.
-Terakhir, cmdlet Set-AzLoadBalancer cmdlet MyLoadBalancer.
-Perhatikan bahwa konfigurasi pool alamat backend harus ada sebelum Anda bisa menghapusnya.
+Perintah ini mendapatkan load balancer bernama MyLoadBalancer dan mengirimkannya ke **Remove-AzLoadBalancerBackendAddressPoolConfig**, yang menghapus konfigurasi BackendAddressPool02 dari MyLoadBalancer.
+Akhirnya, cmdlet Set-AzLoadBalancer memperbarui MyLoadBalancer.
+Perhatikan bahwa konfigurasi kumpulan alamat backend harus ada sebelum Anda dapat menghapusnya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat yang berisi pool alamat backend untuk dihapus.
+Menentukan penyeimbang muatan yang berisi kumpulan alamat backend untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pool alamat backend yang dihapus cmdlet ini.
+Menentukan nama kumpulan alamat backend yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

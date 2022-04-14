@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmVpnClientIpsecParameter.md
 ms.openlocfilehash: 89106b6474e52863514c65614d334cf5d8382f3d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140860466"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141777458"
 ---
 # New-AzureRmVpnClientIpsecParameter
 
 ## SYNOPSIS
-Perintah ini memungkinkan pengguna untuk membuat objek parameter ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk disetel di gateway VPN yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek parameter Ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmVpnClientIpsecParameter [-SALifeTime <Int32>] [-SADataSize <Int32>] [
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan pengguna untuk membuat objek parameter ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk disetel di gateway VPN yang sudah ada.
+Perintah ini memungkinkan pengguna untuk membuat objek parameter Ipsec Vpn yang menentukan satu atau semua nilai seperti IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup untuk diatur pada gateway VPN yang sudah ada.
 
 ## EXAMPLES
 
@@ -38,8 +38,8 @@ PS C:\> $vpnclientipsecparams1 = New-AzureRmVpnClientIpsecParameter -IpsecEncryp
 PS C:\> $setvpnIpsecParams = Set-AzureRmVpnClientIpsecParameter -VirtualNetworkGatewayName $rname -ResourceGroupName $rgname -VpnClientIPsecParameter $vpnclientipsecparams1
 ```
 
-New-AzureRmVpnClientIpsecParameter cmdlet digunakan untuk membuat objek parameter ipsec vpn objek menggunakan satu atau semua nilai parameter yang telah diberikan yang bisa diatur oleh pengguna untuk semua gateway jaringan Virtual yang sudah ada di ResourceGroup.
-Objek VpnClientIPsecParameters yang dibuat ini disimpan ke Set-AzureRmVpnClientIpsecParameter untuk menetapkan kebijakan kustom ipsec Vpn tertentu di gateway jaringan Virtual seperti yang diperlihatkan di contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang memperlihatkan parameter set.
+cmdlet New-AzureRmVpnClientIpsecParameter digunakan untuk membuat objek parameter ipsec vpn menggunakan nilai satu atau semua parameter yang dilewati yang dapat diatur pengguna untuk gateway jaringan Virtual yang sudah ada di ResourceGroup.
+Objek VpnClientIPsecParameters yang dibuat ini dialihkan ke perintah Set-AzureRmVpnClientIpsecParameter untuk mengatur kebijakan kustom Ipsec Vpn tertentu pada gateway jaringan virtual seperti yang diperlihatkan dalam contoh di atas. Perintah ini mengembalikan objek VpnClientIPsecParameters yang memperlihatkan parameter yang ditetapkan.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DhGroup
-Vpnclient DH Groups digunakan di IKE Fase 1 untuk SA awal.
+Vpnclient DH Groups digunakan di IKE Fase 1 untuk awal SA.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeEncryption
-Algoritma enkripsi IKE Vpnclient (Fase 2 IKE)
+Algoritma enkripsi Vpnclient IKE (IKE Fase 2)
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -IkeIntegrity
-Algoritma integritas IKE Vpnclient (Fase 2 IKE)
+Algoritma integritas Vpnclient IKE (Tahap 2 IKE)
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecEncryption
-Algoritma enkripsi IPSec Vpnclient (Fase 1 IKE)
+Algoritma enkripsi Vpnclient IPSec (Tahap 1 IKE)
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpsecIntegrity
-Algoritma integritas IPSec Vpnclient (Fase 1 IKE)
+Algoritma integritas Vpnclient IPSec (Tahap 1 IKE)
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PfsGroup
-Grup Vpnclient PFS yang digunakan di IKE Fase 2 untuk anak baru SA
+Grup PFS Vpnclient yang digunakan dalam IKE Fase 2 untuk anak baru SA
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -SADataSize
-Ukuran muat Vpnclient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) di KB
+Ukuran muatan Vpnclient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) dalam KB
 
 ```yaml
 Type: System.Int32
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -SALifeTime
-Vpnclient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam detik
+Vpnclient IPSec Security Association (juga disebut Mode Cepat atau Fase 2 SA) seumur hidup dalam hitungan detik
 
 ```yaml
 Type: System.Int32
@@ -185,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

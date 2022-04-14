@@ -6,11 +6,11 @@ Help Version: 4.1.2.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/AzureRM.RedisCache.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/AzureRM.RedisCache.md
-ms.openlocfilehash: fe1cfbd3c0673457b348cf8e0ecc1c9ab30c938a9303035d50cc72b8fd863828
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: eb9ef4233b12c487e0e182c23e2136d1cb8747ac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417297"
 ---
 # AzureRM.RedisCache Module
@@ -18,38 +18,38 @@ ms.locfileid: "132417297"
 Topik ini menampilkan topik bantuan untuk cmdlet Cache Azure Redis.
 
 ## Cmdlet AzureRM.RedisCache
-### [Export-AzureRmRedisCache](Export-AzureRmRedisCache.md)
-Mengekspor data dari Cache Azure Redis ke wadah.
+### [Ekspor-AzureRmRedisCache](Export-AzureRmRedisCache.md)
+Mengekspor data dari Azure Redis Cache ke wadah.
 
 ### [Get-AzureRmRedisCache](Get-AzureRmRedisCache.md)
-Mendapatkan Cache Redis.
+Dapatkan Cache Redis.
 
 ### [Get-AzureRmRedisCacheFirewallRule](Get-AzureRmRedisCacheFirewallRule.md)
-Atur aturan firewall di Singgahan Redis.
+Atur aturan firewall di Redis Cache.
 
 ### [Get-AzureRmRedisCacheKey](Get-AzureRmRedisCacheKey.md)
-Mendapatkan tombol akses untuk Cache Redis.
+Mendapatkan kunci akses untuk Cache Redis.
 
 ### [Get-AzureRmRedisCacheLink](Get-AzureRmRedisCacheLink.md)
-Dapatkan link replikasi geo untuk Redis Cache.
+Dapatkan tautan replikasi geografis untuk Redis Cache.
 
 ### [Get-AzureRmRedisCachePatchSchedule](Get-AzureRmRedisCachePatchSchedule.md)
-Mendapatkan jadwal patch.
+Mendapat jadwal patch.
 
-### [Import-AzureRmRedisCache](Import-AzureRmRedisCache.md)
+### [Impor-AzureRmRedisCache](Import-AzureRmRedisCache.md)
 Mengimpor data dari blob ke Cache Azure Redis.
 
-### [New-AzureRmRedisCache](New-AzureRmRedisCache.md)
-Membuat Cache Redis.
+### [AzureRmRedisCache Baru](New-AzureRmRedisCache.md)
+Membuat Singgahan Redis.
 
 ### [New-AzureRmRedisCacheFirewallRule](New-AzureRmRedisCacheFirewallRule.md)
-Membuat aturan firewall di Cache Redis.
+Membuat aturan firewall di Singgahan Redis.
 
 ### [New-AzureRmRedisCacheKey](New-AzureRmRedisCacheKey.md)
 Meregenerasi kunci akses Cache Redis.
 
-### [New-AzureRmRedisCacheLink](New-AzureRmRedisCacheLink.md)
-Buat tautan replikasi geo di antara dua Cache Redis.
+### [AzureRmRedisCacheLink Baru](New-AzureRmRedisCacheLink.md)
+Buat tautan replikasi geografis antara dua Singgahan Redis.
 
 ### [New-AzureRmRedisCachePatchSchedule](New-AzureRmRedisCachePatchSchedule.md)
 Menambahkan jadwal patch.
@@ -57,27 +57,27 @@ Menambahkan jadwal patch.
 ### [New-AzureRmRedisCacheScheduleEntry](New-AzureRmRedisCacheScheduleEntry.md)
 Membuat entri jadwal.
 
-### [Remove-AzureRmRedisCache](Remove-AzureRmRedisCache.md)
-Menghapus Cache Redis.
+### [Hapus-AzureRmRedisCache](Remove-AzureRmRedisCache.md)
+Menghapus Singgahan Redis.
 
 ### [Remove-AzureRmRedisCacheDiagnostics](Remove-AzureRmRedisCacheDiagnostics.md)
-Menonaktifkan diagnostik di Singgahan Azure Redis.
+Menonaktifkan diagnostik di Cache Azure Redis.
 
-### [Remove-AzureRmRedisCacheFirewallRule](Remove-AzureRmRedisCacheFirewallRule.md)
-Menghapus aturan firewall dari Cache Redis.
+### [Hapus-AzureRmRedisCacheFirewallRule](Remove-AzureRmRedisCacheFirewallRule.md)
+Menghapus aturan firewall dari Singgahan Redis.
 
-### [Remove-AzureRmRedisCacheLink](Remove-AzureRmRedisCacheLink.md)
-Hapus tautan replikasi geo di antara dua Cache Redis.
+### [Hapus-AzureRmRedisCacheLink](Remove-AzureRmRedisCacheLink.md)
+Hapus tautan replikasi geografis antara dua Singgahan Redis.
 
-### [Remove-AzureRmRedisCachePatchSchedule](Remove-AzureRmRedisCachePatchSchedule.md)
+### [Hapus-AzureRmRedisCachePatchSchedule](Remove-AzureRmRedisCachePatchSchedule.md)
 Menghapus jadwal patch.
 
-### [Reset-AzureRmRedisCache](Reset-AzureRmRedisCache.md)
-Memulai ulang node cache.
+### [Atur ulang-AzureRmRedisCache](Reset-AzureRmRedisCache.md)
+Memulai ulang simpul singgahan.
 
 ### [Set-AzureRmRedisCache](Set-AzureRmRedisCache.md)
-Mengubah Cache Redis.
+Mengubah Singgahan Redis.
 
 ### [Set-AzureRmRedisCacheDiagnostics](Set-AzureRmRedisCacheDiagnostics.md)
-Mengaktifkan diagnostik di Singgahan Azure Redis.
+Mengaktifkan diagnostik di Cache Azure Redis.
 

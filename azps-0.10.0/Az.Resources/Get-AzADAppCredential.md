@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Resources/Resources/help/Get-AzADAppCredential.md
 ms.openlocfilehash: fc8e454328706243e701c0f4df61733562ab73ce
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426183"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141963951"
 ---
 # Get-AzADAppCredential
 
@@ -44,12 +44,12 @@ Get-AzADAppCredential -ApplicationObject <PSADApplication> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzADAppCredential ini dapat digunakan untuk mengambil daftar kredensial yang terkait dengan aplikasi.
+Cmdlet Get-AzADAppCredential dapat digunakan untuk mengambil daftar kredensial yang terkait dengan aplikasi.
 Perintah ini akan mengambil semua properti kredensial (tetapi bukan nilai kredensial) yang terkait dengan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1 - Dapatkan kredensial aplikasi dengan id objek
+### Contoh 1 - Dapatkan kredensial aplikasi menurut id objek
 
 ```
 PS C:\> Get-AzADAppCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476
@@ -57,13 +57,13 @@ PS C:\> Get-AzADAppCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476
 
 Mengembalikan daftar kredensial yang terkait dengan aplikasi yang memiliki id objek '1f99cf81-0146-4f4e-beae-2007d0668476'.
 
-### Contoh 2 - Dapatkan kredensial aplikasi dengan pemipaan
+### Contoh 2 - Dapatkan kredensial aplikasi dengan pipa
 
 ```
 PS C:\> Get-AzADApplication -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476 | Get-AzADAppCredential
 ```
 
-Dapatkan aplikasi dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan pipes ke cmdlet Get-AzADAppCredential untuk mencantumkan semua kredensial untuk aplikasi tersebut.
+Mendapatkan aplikasi dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan menyalurkannya ke cmdlet Get-AzADAppCredential untuk mencantumkan semua kredensial untuk aplikasi itu.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi untuk mengambil kredensial.
+Id objek aplikasi untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.Guid
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -151,12 +151,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.CREDCredential
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADCredential
 
 ## CATATAN
 
@@ -166,5 +166,5 @@ Parameter: ApplicationObject (ByValue)
 
 [Remove-AzADAppCredential](./Remove-AzADAppCredential.md)
 
-[Get-AzADApplication](./Get-AzADApplication.md)
+[Get-AzADAplikasi](./Get-AzADApplication.md)
 

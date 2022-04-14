@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Set-AzureRmSecurityPricing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Set-AzureRmSecurityPricing.md
 ms.openlocfilehash: f5b23c9221fe8d344e9220590283ab7799a0a3fc
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140861789"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881457"
 ---
 # Set-AzureRmSecurityPricing
 
 ## SYNOPSIS
-Mengatur harga tingkat Azure Security Center untuk satu lingkup.
+Mengatur harga tingkat Azure Security Center untuk lingkup.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Set-AzureRmSecurityPricing -InputObject <PSAddPricingInputObject> [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Mengatur harga tingkat Azure Security Center untuk satu lingkup.
+Mengatur harga tingkat Azure Security Center untuk lingkup.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Id                                                                              
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/providers/Microsoft.Security/pricings/default default Standard
 ```
 
-Mengatur tingkatan harga Pusat Keamanan Azure langganan menjadi "Standar"
+Mengatur tingkat harga Azure Security Center langganan ke "Standar"
 
 ### Contoh 2
 ```powershell
@@ -63,7 +63,7 @@ Id
 /subscriptions/487bb485-b5b0-471e-9c0d-10717612f869/resourceGroups/myService1/providers/Microsoft.Security/pricings/...
 ```
 
-Mengatur tingkatan harga "myService1" grup sumber daya Pusat Keamanan Azure ke "Standar"
+Mengatur grup sumber daya "myService1" Azure Security Center tingkat harga ke "Standar"
 
 ## PARAMETERS
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -PricingTier
-Tingkatan Harga.
+Tingkat Harga.
 
 ```yaml
 Type: String
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

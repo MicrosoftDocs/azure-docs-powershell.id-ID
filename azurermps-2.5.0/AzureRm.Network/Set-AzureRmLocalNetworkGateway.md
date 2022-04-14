@@ -5,16 +5,16 @@ ms.assetid: F8C1DF39-1DAF-4BDB-8B0E-1BC3B5E82185
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermlocalnetworkgateway
 schema: 2.0.0
 ms.openlocfilehash: f01fd5c1c6694c8d16ab34e6aad9f6a52463c726
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421946"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888758"
 ---
 # Set-AzureRmLocalNetworkGateway
 
 ## SYNOPSIS
-Memodifikasi gateway jaringan lokal.
+Mengubah gateway jaringan lokal.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -135,12 +135,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSLocalNetworkGateway
-Parameter 'LocalNetworkGateway' menerima nilai tipe 'PSLocalNetworkGateway' dari saluran
+Parameter 'LocalNetworkGateway' menerima nilai tipe 'PSLocalNetworkGateway' dari pipeline
 
 ## OUTPUTS
 
@@ -152,8 +152,8 @@ Parameter 'LocalNetworkGateway' menerima nilai tipe 'PSLocalNetworkGateway' dari
 
 [Get-AzureRmLocalNetworkGateway](./Get-AzureRmLocalNetworkGateway.md)
 
-[New-AzureRmLocalNetworkGateway](./New-AzureRmLocalNetworkGateway.md)
+[AzureRmLocalNetworkGateway baru](./New-AzureRmLocalNetworkGateway.md)
 
-[Remove-AzureRmLocalNetworkGateway](./Remove-AzureRmLocalNetworkGateway.md)
+[Hapus-AzureRmLocalNetworkGateway](./Remove-AzureRmLocalNetworkGateway.md)
 
 

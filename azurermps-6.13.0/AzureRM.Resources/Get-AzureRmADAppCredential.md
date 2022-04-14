@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Get-AzureRmADAppCredential.md
 ms.openlocfilehash: ba169c54d2b4664473a0013be52e2d078827dcb0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141881707"
 ---
 # Get-AzureRmADAppCredential
 
@@ -46,12 +46,12 @@ Get-AzureRmADAppCredential -ApplicationObject <PSADApplication> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmADAppCredential ini dapat digunakan untuk mengambil daftar kredensial yang terkait dengan aplikasi.
+Cmdlet Get-AzureRmADAppCredential dapat digunakan untuk mengambil daftar kredensial yang terkait dengan aplikasi.
 Perintah ini akan mengambil semua properti kredensial (tetapi bukan nilai kredensial) yang terkait dengan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1 - Dapatkan kredensial aplikasi dengan id objek
+### Contoh 1 - Dapatkan kredensial aplikasi menurut id objek
 
 ```
 PS C:\> Get-AzureRmADAppCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476
@@ -59,13 +59,13 @@ PS C:\> Get-AzureRmADAppCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d066847
 
 Mengembalikan daftar kredensial yang terkait dengan aplikasi yang memiliki id objek '1f99cf81-0146-4f4e-beae-2007d0668476'.
 
-### Contoh 2 - Dapatkan kredensial aplikasi dengan pemipaan
+### Contoh 2 - Dapatkan kredensial aplikasi dengan pipa
 
 ```
 PS C:\> Get-AzureRmADApplication -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476 | Get-AzureRmADAppCredential
 ```
 
-Dapatkan aplikasi dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan pipes ke cmdlet Get-AzureRmADAppCredential untuk mencantumkan semua kredensial untuk aplikasi tersebut.
+Mendapatkan aplikasi dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan menyalurkannya ke cmdlet Get-AzureRmADAppCredential untuk mencantumkan semua kredensial untuk aplikasi itu.
 
 ## PARAMETERS
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi untuk mengambil kredensial.
+Id objek aplikasi untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.Guid
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -153,20 +153,20 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.FOLDApplication
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADAplikasi
 Parameter: ApplicationObject (ByValue)
 
 ## OUTPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.CREDCredential
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADCredential
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[New-AzureRmADAppCredential](./New-AzureRmADAppCredential.md)
+[AzureRmADAppCredential baru](./New-AzureRmADAppCredential.md)
 
-[Remove-AzureRmADAppCredential](./Remove-AzureRmADAppCredential.md)
+[Hapus-AzureRmADAppCredential](./Remove-AzureRmADAppCredential.md)
 
-[Get-AzureRmADApplication](./Get-AzureRmADApplication.md)
+[Get-AzureRmADAplikasi](./Get-AzureRmADApplication.md)
 

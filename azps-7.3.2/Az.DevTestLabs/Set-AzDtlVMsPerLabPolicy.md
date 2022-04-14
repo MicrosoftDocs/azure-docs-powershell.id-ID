@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.devtestlabs/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlVMsPerLabPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Set-AzDtlVMsPerLabPolicy.md
-ms.openlocfilehash: 2bd8120051cc421c15b0c51ac75c10ff1cbbc0dc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 094191b144ae1b5f4044bf04711f76addc790fc5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372999"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852062"
 ---
 # Set-AzDtlVMsPerLabPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan mesin virtual per lab sebuah lab di Lab DevTest.
+Mengatur mesin virtual per kebijakan lab di DevTest Labs.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/set-azdtlvmsperlabpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,15 +29,15 @@ Set-AzDtlVMsPerLabPolicy [[-MaxVMs] <Int32>] [-Enable] [-LabName] <String> [-Res
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Disable
+### Menonaktifkan
 ```
 Set-AzDtlVMsPerLabPolicy [[-MaxVMs] <Int32>] [-Disable] [-LabName] <String> [-ResourceGroupName] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDtlVMsPerLabPolicy** mengatur kebijakan mesin virtual per lab, yang mengatur jumlah total mesin virtual yang diperbolehkan di sebuah lab.
-Cmdlet menggunakan grup sumber daya tertentu dan nama lab untuk menetapkan kebijakan tersebut.
+Cmdlet **Set-AzDtlVMsPerLabPolicy** mengatur mesin virtual per kebijakan lab lab, yang mengatur jumlah total mesin virtual yang diperbolehkan di laboratorium.
+Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk menetapkan kebijakan.
 
 ## EXAMPLES
 
@@ -55,13 +58,13 @@ Description        :
 Status             : Enabled
 Provisioning State : 
 ```
-Mengatur kebijakan mesin virtual per lab sebuah lab di Lab DevTest.
+Mengatur mesin virtual per kebijakan lab di DevTest Labs.
 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini menonaktifkan kebijakan lab.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini menonaktifkan kebijakan laboratorium.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Mengindikasikan bahwa cmdlet ini mengaktifkan kebijakan lab.
+Menunjukkan bahwa cmdlet ini memungkinkan kebijakan lab.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mengatur kebijakan mesin virtual per lab.
+Menentukan nama lab tempat cmdlet ini mengatur mesin virtual per kebijakan lab.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -196,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azdtlvMsPerLabPolicy](./Get-AzDtlVMsPerLabPolicy.md)
+[Get-AzDtlVMsPerLabPolicy](./Get-AzDtlVMsPerLabPolicy.md)
 
 

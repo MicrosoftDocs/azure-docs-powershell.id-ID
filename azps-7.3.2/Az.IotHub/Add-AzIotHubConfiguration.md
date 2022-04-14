@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/add-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Add-AzIotHubConfiguration.md
-ms.openlocfilehash: 7b138a149f153a0ff34ea2ef62dbadbf53e164f5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2381f765dc5e535a1311dda9b322ca3855f6ab92
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000686"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141851342"
 ---
 # Add-AzIotHubConfiguration
 
 ## SYNOPSIS
-Tambahkan konfigurasi manajemen perangkat otomatis IoT dalam Hub IoT target.
+Tambahkan konfigurasi manajemen perangkat otomatis IoT dalam IoT Hub target.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/add-aziothubconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,12 +44,12 @@ Add-AzIotHubConfiguration [-ResourceId] <String> -Name <String> [-DeviceContent 
 ```
 
 ## DESCRIPTION
-Konten konfigurasi json dan ada sedikit perubahan berdasarkan perangkat atau tujuan modul. Konfigurasi perangkat berbentuk {"deviceContent":{...}}
+Konten konfigurasi adalah json dan sedikit bervariasi berdasarkan tujuan perangkat atau modul. Konfigurasi perangkat berupa {"deviceContent":{...}}
 Konfigurasi modul berbentuk {"moduleContent":{...}}
-Configurations can be defined with user provided metrics for on demand evaluation.
-Metrik pengguna berupa json dan dalam bentuk {"queries":{...}} atau {"metrics":{"queries":{...}}.
+Konfigurasi dapat ditentukan dengan metrik yang disediakan pengguna untuk evaluasi sesuai permintaan.
+Metrik pengguna adalah json dan dalam bentuk {"kueri":{...}} atau {"metrics":{"queries":{...}}}.
 
-Catatan: Kondisi target untuk modul harus dimulai dengan "dari perangkat.modul di mana". Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi selengkapnya.
+Catatan: Kondisi target untuk modul harus dimulai dengan "from devices.modules where". Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management untuk informasi selengkapnya.
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ Buat konfigurasi perangkat dengan metadata default.
 PS C:\> Add-AzIotHubConfiguration -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "config1" -Priority 3 -TargetCondition "tags.building=9 and tags.environment='test'"
 ```
 
-Buat konfigurasi perangkat dengan prioritas 3 yang berlaku pada kondisi ketika perangkat ditandai dalam gedung 9 dan lingkungan adalah 'uji'.
+Buat konfigurasi perangkat dengan prioritas 3 yang berlaku pada kondisi saat perangkat ditandai dalam gedung 9 dan lingkungannya 'uji'.
 
 ### Contoh 3
 ```powershell
@@ -71,7 +74,7 @@ PS C:\> $metrics.add("query1", "select deviceId from devices where tags.location
 PS C:\> Add-AzIotHubConfiguration -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "config1" -Metric $metrics
 ```
 
-Buat konfigurasi perangkat dengan metrik pengguna.
+Membuat konfigurasi perangkat dengan metrik pengguna.
 
 ### Contoh 4
 ```powershell
@@ -81,7 +84,7 @@ PS C:\> $labels.add("key1","value1")
 PS C:\> Add-AzIotHubConfiguration -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "config1" -Label $labels
 ```
 
-Buat konfigurasi perangkat dengan label.
+Membuat konfigurasi perangkat dengan label.
 
 ### Contoh 5
 ```powershell
@@ -92,7 +95,7 @@ PS C:\> $content.add("properties.desired.Region", $prop)
 PS C:\> Add-AzIotHubConfiguration -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Name "config1" -DeviceContent $content
 ```
 
-Buat konfigurasi perangkat dengan konten.
+Membuat konfigurasi perangkat dengan konten.
 
 ## PARAMETERS
 
@@ -171,7 +174,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metric
+### -Metrik
 Kumpulan kueri untuk definisi metrik konfigurasi.
 
 ```yaml
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Bobot konfigurasi perangkat jika ada aturan yang bersaing (kemenangan tertinggi).
+Berat konfigurasi perangkat jika ada aturan bersaing (kemenangan tertinggi).
 
 ```yaml
 Type: System.Int32
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetCondition
-Kondisi target di mana konfigurasi perangkat diterapkan.
+Kondisi target tempat konfigurasi perangkat diterapkan.
 
 ```yaml
 Type: System.String
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,7 +281,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +296,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

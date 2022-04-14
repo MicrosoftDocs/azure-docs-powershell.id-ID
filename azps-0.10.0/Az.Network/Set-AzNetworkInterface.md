@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzNetworkInterface.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzNetworkInterface.md
 ms.openlocfilehash: 389a34a5b1c34618339bb7a1752031eaafb9efe9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425726"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964095"
 ---
 # Set-AzNetworkInterface
 
 ## SYNOPSIS
-Menetapkan status tujuan untuk antarmuka jaringan.
+Mengatur status tujuan untuk antarmuka jaringan.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Set-AzNetworkInterface -NetworkInterface <PSNetworkInterface> [-AsJob]
 ```
 
 ## DESCRIPTION
-**Set-AzNetworkInterface** mengatur status tujuan untuk antarmuka jaringan Azure.
+**Set-AzNetworkInterface** menetapkan status tujuan untuk antarmuka jaringan Azure.
 
 ## EXAMPLES
 
@@ -40,11 +40,11 @@ Set-AzNetworkInterface -NetworkInterface $Nic
 ```
 
 Contoh ini mengonfigurasi antarmuka jaringan.
-Perintah pertama mendapatkan antarmuka jaringan yang bernama NetworkInterface1 dalam grup sumber daya ResourceGroup1.
+Perintah pertama mendapatkan antarmuka jaringan bernama NetworkInterface1 dalam grup sumber daya ResourceGroup1.
 Perintah kedua mengatur alamat IP privat konfigurasi IP.
-Perintah ketiga mengatur metode alokasi IP privat menjadi Statis.
+Perintah ketiga mengatur metode alokasi IP privat ke Statis.
 Perintah keempat mengatur tag pada antarmuka jaringan.
-Perintah kelima menggunakan informasi yang disimpan di $Nic variabel untuk mengatur antarmuka jaringan.
+Perintah kelima menggunakan informasi yang disimpan dalam variabel $Nic untuk mengatur antarmuka jaringan.
 
 ### Contoh 2: Mengubah pengaturan DNS pada antarmuka jaringan
 ```
@@ -53,16 +53,16 @@ $nic.DnsSettings.DnsServers.Add("192.168.1.100")
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan bernama NetworkInterface1 yang ada di dalam grup sumber daya ResourceGroup1. Perintah kedua menambahkan SERVER DNS 192.168.1.100 ke antarmuka ini. Perintah ketiga menerapkan perubahan ini ke antarmuka jaringan. Untuk menghapus server DNS, ikuti perintah yang tercantum di atas, tetapi ganti ". Tambahkan" dengan ". Hapus" di perintah kedua.
+Perintah pertama mendapatkan antarmuka jaringan bernama NetworkInterface1 yang ada dalam grup sumber daya ResourceGroup1. Perintah kedua menambahkan server DNS 192.168.1.100 ke antarmuka ini. Perintah ketiga menerapkan perubahan ini ke antarmuka jaringan. Untuk menghapus server DNS, ikuti perintah yang tercantum di atas, tetapi ganti ". Tambahkan" dengan ". Hapus" di perintah kedua.
 
-### Contoh 3: Enable IP for enkripsi on a network interface
+### Contoh 3: Mengaktifkan IP forwading pada antarmuka jaringan
 ```
 $nic = Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -Name "NetworkInterface1"
 $nic.EnableIPForwarding = 1
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic variabel. Perintah kedua akan mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, namun pastikan untuk mengubah perintah kedua ke "$nic. EnableIPForwarding = 0".
+Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mengubah nilai penerusan IP menjadi true. Terakhir, perintah ketiga menerapkan perubahan pada antarmuka jaringan. Untuk menonaktifkan penerusan IP pada antarmuka jaringan, ikuti contoh contoh, tetapi pastikan untuk mengubah perintah kedua menjadi "$nic. EnableIPForwarding = 0".
 
 ### Contoh 4: Mengubah subnet antarmuka jaringan
 ```
@@ -73,15 +73,15 @@ $nic.IpConfigurations[0].Subnet.Id = $subnet2.Id
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan NetworkInterface1 dan menyimpannya di $nic variabel. Perintah kedua mendapatkan jaringan virtual yang terkait dengan subnet yang akan dikaitkan dengan antarmuka jaringan. Perintah kedua akan mendapatkan subnet dan menyimpannya dalam $subnet 2. Perintah ketiga terkait alamat IP privat utama antarmuka jaringan dengan subnet baru. Akhirnya perintah terakhir menerapkan perubahan ini pada antarmuka jaringan.
+Perintah pertama mendapatkan antarmuka jaringan NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mendapatkan jaringan virtual yang terkait dengan subnet yang akan dikaitkan dengan antarmuka jaringan. Perintah kedua mendapatkan subnet dan menyimpannya dalam variabel $subnet 2. Perintah ketiga mengaitkan alamat IP privat utama antarmuka jaringan dengan subnet baru. Akhirnya perintah terakhir menerapkan perubahan ini pada antarmuka jaringan.
 
 >[!NOTE] 
->Konfigurasi IP harus dinamis sebelum Anda dapat mengubah subnet. Jika Anda memiliki konfigurasi IP statis, ubah lalu menjadi dinamis sebelum melanjutkan. 
+>Konfigurasi IP harus dinamis sebelum Anda bisa mengubah subnet. Jika Anda memiliki konfigurasi IP statis, ubah ke dinamis sebelum melanjutkan. 
 
 >[!NOTE]
->Jika antarmuka jaringan memiliki beberapa konfigurasi IP, perintah sebagai contoh harus dilakukan untuk semua konfigurasi IP ini sebelum Set-AzNetworkInterface akhir dijalankan. Ini bisa dilakukan seperti di dalam perintah maju tapi dengan mengganti "0" dengan angka yang tepat. Jika antarmuka jaringan memiliki konfigurasi IP N, N-1 dari perintah ini harus ada.
+>Jika antarmuka jaringan memiliki beberapa konfigurasi IP, perintah forth harus dilakukan untuk semua konfigurasi IP ini sebelum perintah akhir Set-AzNetworkInterface dijalankan. Hal ini dapat dilakukan seperti dalam perintah ke depan tetapi dengan mengganti "0" dengan angka yang sesuai. Jika antarmuka jaringan memiliki konfigurasi N IP, maka N-1 dari perintah ini harus ada.
 
-### Contoh 5: Kaitkan/Dissociate Grup Keamanan Jaringan ke antarmuka jaringan
+### Contoh 5: Mengaitkan/Mengaitkan Grup Keamanan Jaringan ke antarmuka jaringan
 ```
 $nic = Get-AzNetworkInterface -ResourceGroupName "ResourceGroup1" -Name "NetworkInterface1"
 $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName "ResourceGroup1" -Name "MyNSG"
@@ -89,12 +89,12 @@ $nic.NetworkSecurityGroup = $nsg
 $nic | Set-AzNetworkInterface
 ```
 
-Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam $nic variabel. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya di $nsg jaringan. Perintah di depannya menetapkan $nsg ke $nic. Terakhir, perintah kelima menerapkan perubahan pada antarmuka Jaringan. Untukssociate grup keamanan jaringan dari antarmuka jaringan, sederhana ganti $nsg di baris sebagainya dengan $null.
+Perintah pertama mendapatkan antarmuka jaringan yang sudah ada yang disebut NetworkInterface1 dan menyimpannya dalam variabel $nic. Perintah kedua mendapatkan grup keamanan jaringan yang sudah ada yang disebut MyNSG dan menyimpannya dalam variabel $nsg. Perintah keempat menetapkan $nsg ke $nic. Akhirnya, perintah kelima menerapkan perubahan pada antarmuka Jaringan. Untuk memisahkan grup keamanan jaringan dari antarmuka jaringan, ganti sederhana $nsg dalam perintah keempat dengan $null.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -139,12 +139,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSNetworkInterface
-Parameter 'NetworkInterface' menerima nilai tipe 'PSNetworkInterface' dari saluran
+Parameter 'NetworkInterface' menerima nilai tipe 'PSNetworkInterface' dari pipeline
 
 ## OUTPUTS
 

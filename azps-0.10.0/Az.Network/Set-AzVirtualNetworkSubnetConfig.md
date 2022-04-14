@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: 73649f0f04cf1de07d991cb454b44308c4ff6443
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419860"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141964041"
 ---
 # Set-AzVirtualNetworkSubnetConfig
 
@@ -41,7 +41,7 @@ Cmdlet **Set-AzVirtualNetworkSubnetConfig** mengonfigurasi status tujuan untuk k
 
 ## EXAMPLES
 
-### 1: Mengubah prefiks alamat subnet
+### 1: Mengubah awalan alamat subnet
 ```
 New-AzResourceGroup -Name TestResourceGroup -Location centralus
 
@@ -55,7 +55,7 @@ Set-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNe
 $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-Contoh ini membuat jaringan virtual dengan satu subnet. Lalu, panggilan Set-AzVirtualNetworkSubnetConfig untuk mengubah AddressPrefix subnet. Ini hanya mempengaruhi representasi dalam memori jaringan virtual. Set-AzVirtualNetwork lalu disebut untuk memodifikasi jaringan virtual di Azure.
+Contoh ini membuat jaringan virtual dengan satu subnet. Lalu adalah panggilan Set-AzVirtualNetworkSubnetConfig untuk mengubah AddressPrefix subnet. Hal ini hanya memengaruhi representasi dalam memori jaringan virtual. Set-AzVirtualNetwork kemudian dipanggil untuk mengubah jaringan virtual di Azure.
 
 ### 2: Menambahkan grup keamanan jaringan ke subnet
 ```
@@ -78,7 +78,7 @@ Set-AzVirtualNetworkSubnetConfig -Name frontendSubnet -VirtualNetwork $virtualNe
 $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Kemudian, grup keamanan jaringan akan membuat grup keamanan jaringan dengan aturan perbolehkan untuk lalu lintas RDP. Cmdlet Set-AzVirtualNetworkSubnetConfig digunakan untuk memodifikasi representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzVirtualNetwork cmdlet kemudian disebut untuk menulis status yang diubah kembali ke layanan.
+Contoh ini membuat grup sumber daya dengan satu jaringan virtual yang hanya berisi satu subnet. Lalu membuat grup keamanan jaringan dengan aturan yang diperbolehkan untuk lalu lintas RDP. Cmdlet Set-AzVirtualNetworkSubnetConfig digunakan untuk mengubah representasi dalam memori subnet frontend sehingga menunjuk ke grup keamanan jaringan yang baru dibuat. Cmdlet Set-AzVirtualNetwork kemudian dipanggil untuk menulis keadaan yang dimodifikasi kembali ke layanan.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup.**
+Menentukan objek **NetworkSecurityGroup** .
 
 ```yaml
 Type: PSNetworkSecurityGroup
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -239,6 +239,6 @@ Parameter 'VirtualNetwork' menerima nilai tipe 'PSVirtualNetwork' dari pipeline
 
 [New-AzVirtualNetworkSubnetConfig](./New-AzVirtualNetworkSubnetConfig.md)
 
-[Remove-AzVirtualNetworksubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
+[Remove-AzVirtualNetworkSubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
 
 

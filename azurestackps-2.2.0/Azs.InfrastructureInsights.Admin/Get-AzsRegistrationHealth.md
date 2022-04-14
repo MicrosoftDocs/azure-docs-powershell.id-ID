@@ -4,11 +4,11 @@ Module Name: Azs.InfrastructureInsights.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.infrastructureinsights.admin/get-azsregistrationhealth
 schema: 2.0.0
 ms.openlocfilehash: 5d7320d9a761becc1745161586d865edd97dae93
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580003"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141875972"
 ---
 # Get-AzsRegistrationHealth
 
@@ -23,7 +23,7 @@ Get-AzsRegistrationHealth -ServiceRegistrationId <String> [-Location <String>] [
  [-SubscriptionId <String[]>] [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsRegistrationHealth -ResourceRegistrationId <String> -ServiceRegistrationId <String>
  [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>] [-Filter <String>]
@@ -46,14 +46,14 @@ Mengembalikan informasi kesehatan yang diminta tentang sumber daya.
 PS C:\> Get-AzsRegistrationHealth -ServiceRegistrationName e56bc7b8-c8b5-4e25-b00c-4f951effb22c
 ```
 
-Mengembalikan daftar dari setiap kesehatan sumber daya di bawah layanan.
+Mengembalikan daftar kesehatan setiap sumber daya di bawah layanan.
 
 ### Contoh 2:
 ```powershell
 PS C:\> Get-AzsRPHealth | Where {$_.NamespaceProperty -eq 'Microsoft.Fabric.Admin'} | % { Get-AzsRegistrationHealth -ServiceRegistrationName $_.RegistrationId } | select ResourceName, HealthState
 ```
 
-Mengembalikan status kesehatan di bawah a for Microsoft.Fabric.Admin.
+Mengembalikan status kesehatan di bawah Microsoft.Fabric.Admin.
 
 ## PARAMETERS
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Models.IInfrastructureInsightsAdminIdentity
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceRegistrationId
-ID registrasi layanan.
+ID pendaftaran layanan.
 
 ```yaml
 Type: System.String
@@ -170,8 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure Anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,9 +201,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> : Parameter Identitas
+INPUTOBJECT \<IInfrastructureInsightsAdminIdentity>: Parameter Identitas
   - `[AlertName <String>]`: Nama pemberitahuan.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan
@@ -211,7 +211,7 @@ INPUTOBJECT \<IInfrastructureInsightsAdminIdentity> : Parameter Identitas
   - `[ResourceRegistrationId <String>]`: ID pendaftaran sumber daya.
   - `[ServiceHealth <String>]`: Nama Kesehatan Layanan.
   - `[ServiceRegistrationId <String>]`: ID pendaftaran layanan.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

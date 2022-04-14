@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerInboundNatPoolConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzLoadBalancerInboundNatPoolConfig.md
-ms.openlocfilehash: 0829ecc6887a97e3aa8192a40549c4872703b01e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fe5ae29e77d3f30f34aebc85fd6a16526a1657a4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140197991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849254"
 ---
 # Get-AzLoadBalancerInboundNatPoolConfig
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa konfigurasi pool NAT masuk dari penyeimbang muat.
+Mendapatkan satu atau beberapa konfigurasi kumpulan NAT masuk dari penyeimbang beban.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azloadbalancerinboundnatpoolconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Get-AzLoadBalancerInboundNatPoolConfig -LoadBalancer <PSLoadBalancer> [-Name <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzLoadBalancerInboundNatPoolConfig** mendapatkan satu atau lebih konfigurasi pool masuk NAT dari penyeimbang muat.
+Cmdlet **Get-AzLoadBalancerInboundNatPoolConfig** mendapatkan satu atau beberapa konfigurasi kumpulan NAT masuk dari load balancer.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ PS C:\> $slb | Get-AzLoadBalancerInboundNatPoolConfig -Name myInboundNatPool
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

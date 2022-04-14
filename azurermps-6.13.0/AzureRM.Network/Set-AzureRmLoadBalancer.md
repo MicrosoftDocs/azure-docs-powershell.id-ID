@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Set-AzureRmLoadBalancer.md
 ms.openlocfilehash: 5090d97157e608b2c3f6ef52d6eafa932ae4be50
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420676"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141776928"
 ---
 # Set-AzureRmLoadBalancer
 
 ## SYNOPSIS
-Mengatur status tujuan untuk penyeimbang muat.
+Mengatur status tujuan untuk penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,25 +28,25 @@ Set-AzureRmLoadBalancer -LoadBalancer <PSLoadBalancer> [-AsJob] [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmLoadBalancer** mengatur status tujuan untuk penyeimbang muat Azure.
+Cmdlet **Set-AzureRmLoadBalancer** menetapkan status tujuan untuk penyeimbang muat Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah penyeimbang muat
+### Contoh 1: Memodifikasi load balancer
 ```
 PS C:\>$slb = Get-AzureRmLoadBalancer -Name "NRPLB" -ResourceGroupName "NRP-RG"
 PS C:\> $slb | Add-AzureRmLoadBalancerInboundNatRuleConfig -Name "NewRule" -FrontendIpConfiguration $slb.FrontendIpConfigurations[0] -FrontendPort 81 -BackendPort 8181 -Protocol "TCP"
 PS C:\> $slb | Set-AzureRmLoadBalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang bernama NRPLB, lalu menyimpannya dalam $slb baru.
-Perintah kedua menggunakan operator pipeline untuk melewati penyeimbang muat di $slb ke Add-AzureRmLoadBalancerInboundNatRuleConfig, yang menambahkan aturan NAT masuk yang bernama NewRule.
-Perintah ketiga memindahkan penyeimbang muat ke **Set-AzureRmLoadBalancer,** yang memperbarui konfigurasi penyeimbang muat dan menyimpannya.
+Perintah pertama mendapatkan load balancer bernama NRPLB, lalu menyimpannya dalam variabel $slb.
+Perintah kedua menggunakan operator pipeline untuk mengirim penyeimbang muatan dalam $slb ke Add-AzureRmLoadBalancerInboundNatRuleConfig, yang menambahkan aturan NAT masuk bernama NewRule.
+Perintah ketiga melewati penyeimbang muatan ke **Set-AzureRmLoadBalancer**, yang memperbarui konfigurasi load balancer dan menyimpannya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,8 +76,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat.
-Cmdlet ini mengatur status tujuan untuk penyeimbang muat yang ditentukan parameter ini.
+Menentukan penyeimbang beban.
+Cmdlet ini mengatur status tujuan untuk penyeimbang beban yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,6 +141,6 @@ Parameter: LoadBalancer (ByValue)
 
 [New-AzureRmLoadBalancer](./New-AzureRmLoadBalancer.md)
 
-[Remove-AzureRmLoadBalancer](./Remove-AzureRmLoadBalancer.md)
+[Hapus-AzureRmLoadBalancer](./Remove-AzureRmLoadBalancer.md)
 
 

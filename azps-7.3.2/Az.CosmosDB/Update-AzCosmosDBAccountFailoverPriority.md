@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccountFailoverPriority.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBAccountFailoverPriority.md
-ms.openlocfilehash: cd2ce2e5fc6fed9eada7547fffec09e915a60ae2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2b37ced89bb2a88d64e23e92d77e84dfbfd20410
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571857"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852782"
 ---
 # Update-AzCosmosDBAccountFailoverPriority
 
 ## SYNOPSIS
-Perbarui Prioritas Wilayah Failover dari Akun CosmosDB.
+Memperbarui Prioritas Kawasan Failover dari Akun CosmosDB.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbaccountfailoverpriority) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Update-AzCosmosDBAccountFailoverPriority -FailoverPolicy <String[]> -InputObject
 ```
 
 ## DESCRIPTION
-Perbarui Prioritas Wilayah Failover dari Akun CosmosDB.
+Memperbarui Prioritas Kawasan Failover dari Akun CosmosDB.
 
 ## EXAMPLES
 
@@ -73,7 +76,7 @@ FailoverPolicies diperbarui dengan region1 sebagai FailoverPriority 1, region2 s
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverPolicy
-Array string yang memiliki nama kawasan, di pesan menurut prioritas failover.
+Array string yang memiliki nama kawasan, diurutkan berdasarkan prioritas failover.
 Misalnya eastus, westus
 
 ```yaml
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,11 +213,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

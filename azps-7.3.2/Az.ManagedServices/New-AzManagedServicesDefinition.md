@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.managedservices/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/help/New-AzManagedServicesDefinition.md
-ms.openlocfilehash: ff501ae011145dee02c773286c1122750f08920d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0f1e1b2633b8d825accb804ca5eaf54c100635a2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372630"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141936519"
 ---
 # New-AzManagedServicesDefinition
 
 ## SYNOPSIS
-Membuat atau memperbarui definisi registrasi.
+Membuat atau memperbarui definisi pendaftaran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzManagedServicesDefinition -Name <String> [-Scope <String>] [-Authorization
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui definisi registrasi.
+Membuat atau memperbarui definisi pendaftaran.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek definisi pendaftaran Azure Lighthouse yang baru dengan otorisasi permanen
+### Contoh 1: Buat objek definisi pendaftaran Azure Lighthouse baru dengan otorisasi permanen
 ```powershell
 PS C:\> $permantAuth = New-AzManagedServicesAuthorizationObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -RoleDefinitionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Test user" -DelegatedRoleDefinitionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx","xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
@@ -43,9 +46,9 @@ Name                                 Type
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx Microsoft.ManagedServices/registrationDefinitions
 ```
 
-Membuat objek definisi pendaftaran Azure Lighthouse yang baru dengan otorisasi permanen.
+Membuat objek definisi pendaftaran Azure Lighthouse baru dengan otorisasi permanen.
 
-### Contoh 2: Buat objek definisi registrasi Azure Lighthouse yang baru dengan otorisasi permanen dan yang memenuhi syarat
+### Contoh 2: Buat objek definisi pendaftaran Azure Lighthouse baru dengan otorisasi permanen dan memenuhi syarat
 ```powershell
 PS C:\> $approver = New-AzManagedServicesEligibleApproverObject -PrincipalId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -PrincipalIdDisplayName "Approver group"
 
@@ -58,7 +61,7 @@ Name                                 Type
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxMicrosoft.ManagedServices/registrationDefinitions
 ```
 
-Membuat objek definisi registrasi Azure Lighthouse baru dengan otorisasi permanen dan yang memenuhi syarat.
+Membuat objek definisi pendaftaran Azure Lighthouse baru dengan otorisasi permanen dan memenuhi syarat.
 
 ## PARAMETERS
 
@@ -77,9 +80,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Authorization
-Kumpulan objek otorisasi yang menjelaskan akses Azure Active Directory utama dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
-Untuk membuat, lihat bagian CATATAN untuk properti OTORISASI dan membuat tabel hash.
+### -Otorisasi
+Kumpulan objek otorisasi yang menjelaskan akses Azure Active Directory pokok dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
+Untuk membangun, lihat bagian CATATAN untuk properti OTORISASI dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.Api20200201Preview.IAuthorization[]
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi definisi registrasi.
+Penjabaran dari definisi pendaftaran.
 
 ```yaml
 Type: System.String
@@ -124,8 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -EligibleAuthorization
-Kumpulan objek otorisasi yang memenuhi syarat yang menjelaskan akses langsung Azure Active Directory lokal dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
-Untuk membuat, lihat bagian CATATAN untuk propertiAUTHORISASI YANG MEMENUHI SYARAT dan membuat tabel hash.
+Kumpulan objek otorisasi yang memenuhi syarat yang menjelaskan akses tepat waktu Azure Active Directory pokok dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
+Untuk membangun, lihat bagian CATATAN untuk properti ELIGIBLEAUTHORIZATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.Api20200201Preview.IEligibleAuthorization[]
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-GUID definisi registrasi.
+GUID definisi pendaftaran.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanName
-Nama paket Azure Marketplace.
+Marketplace Azure nama rencana.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanProduct
-Kode produk Azure Marketplace.
+Marketplace Azure kode produk.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-ID penerbit Azure Marketplace.
+MARKETPLACE AZURE ID penerbit.
 
 ```yaml
 Type: System.String
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanVersion
-Versi paket Azure Marketplace.
+Marketplace Azure versi paket.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegistrationDefinitionName
-Nama definisi registrasi.
+Nama definisi pendaftaran.
 
 ```yaml
 Type: System.String
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -291,7 +294,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -323,21 +326,21 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-AUTHORIZATION <IAuthorization[]>: Kumpulan objek otorisasi yang menjelaskan prinsipal Azure Active Directory akses dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa terkelola.
-  - `PrincipalId <String>`: Pengidentifikasi dari Azure Active Directory utama.
-  - `RoleDefinitionId <String>`: Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan tersedia Azure Active Directory utamanya pada lingkup proyek.
-  - `[DelegatedRoleDefinitionId <String[]>]`: Bidang delegatedRoleDefinitionIds diperlukan saat peranDefinitionId merujuk pada Peran Administrator Akses Pengguna. Ini adalah daftar id definisi peran yang menetapkan semua izin yang bisa ditetapkan pengguna ke prinsipal lain dalam otorisasi.
-  - `[PrincipalIdDisplayName <String>]`: Nama tampilan pokok Azure Active Directory.
+OTORISASI <IAuthorization[]>: Kumpulan objek otorisasi yang menjelaskan akses Azure Active Directory prinsipal dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
+  - `PrincipalId <String>`: Pengidentifikasi prinsipal Azure Active Directory.
+  - `RoleDefinitionId <String>`: Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan dimiliki prinsipal Azure Active Directory pada lingkup yang diproyeksikan.
+  - `[DelegatedRoleDefinitionId <String[]>]`: Bidang delegasiRoleDefinitionIds diperlukan saat roleDefinitionId merujuk ke Peran Administrator Akses Pengguna. Ini adalah daftar id definisi peran yang menentukan semua izin yang dapat ditetapkan pengguna dalam otorisasi ke prinsipal lain.
+  - `[PrincipalIdDisplayName <String>]`: Nama tampilan prinsipal Azure Active Directory.
 
-SITUS RESMI <IEligibleAuthorization[]>: Kumpulan objek otorisasi yang memenuhi syarat yang menjelaskan prinsipal Azure Active Directory akses langsung dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa yang dikelola.
-  - `PrincipalId <String>`: Pengidentifikasi dari Azure Active Directory utama.
-  - `RoleDefinitionId <String>`: Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan tersedia Azure Active Directory utamanya pada lingkup proyek.
-  - `[JustInTimeAccessPolicyManagedByTenantApprover <IEligibleApprover[]>]`: Daftar pemberi persetujuan ManagedByTenant untuk otorisasi yang memenuhi syarat.
-    - `PrincipalId <String>`: Pengidentifikasi dari Azure Active Directory utama.
-    - `[PrincipalIdDisplayName <String>]`: Nama tampilan pokok Azure Active Directory.
-  - `[JustInTimeAccessPolicyMaximumActivationDuration <TimeSpan?>]`: Durasi akses maksimum dalam format ISO 8601 untuk permintaan akses langsung.
-  - `[JustInTimeAccessPolicyMultiFactorAuthProvider <MultiFactorAuthProvider?>]`: Penyedia otorisasi multiftor yang akan digunakan untuk permintaan akses hanya dalam waktu.
-  - `[PrincipalIdDisplayName <String>]`: Nama tampilan pokok Azure Active Directory.
+ELIGIBLEAUTHORIZATION <IEligibleAuthorization[]>: Kumpulan objek otorisasi yang memenuhi syarat yang menjelaskan akses tepat waktu Azure Active Directory prinsipal dalam penyewa managedBy akan diterima pada sumber daya yang didelegasikan dalam penyewa terkelola.
+  - `PrincipalId <String>`: Pengidentifikasi prinsipal Azure Active Directory.
+  - `RoleDefinitionId <String>`: Pengidentifikasi peran bawaan Azure yang menentukan izin yang akan dimiliki prinsipal Azure Active Directory pada lingkup yang diproyeksikan.
+  - `[JustInTimeAccessPolicyManagedByTenantApprover <IEligibleApprover[]>]`: Daftar penyetuju managedByTenant untuk otorisasi yang memenuhi syarat.
+    - `PrincipalId <String>`: Pengidentifikasi prinsipal Azure Active Directory.
+    - `[PrincipalIdDisplayName <String>]`: Nama tampilan prinsipal Azure Active Directory.
+  - `[JustInTimeAccessPolicyMaximumActivationDuration <TimeSpan?>]`: Durasi akses maksimum dalam format ISO 8601 untuk permintaan akses tepat waktu.
+  - `[JustInTimeAccessPolicyMultiFactorAuthProvider <MultiFactorAuthProvider?>]`: Penyedia otorisasi multifaktor yang akan digunakan untuk permintaan akses tepat waktu.
+  - `[PrincipalIdDisplayName <String>]`: Nama tampilan prinsipal Azure Active Directory.
 
 ## RELATED LINKS
 

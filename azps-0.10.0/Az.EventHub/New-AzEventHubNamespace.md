@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/EventHub/EventHub/help/New-AzEventHubNamespace.md
 ms.openlocfilehash: 592af2c1ecd26e3e744845ae24e8f9c71cf0b0f3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414017"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141874544"
 ---
 # New-AzEventHubNamespace
 
 ## SYNOPSIS
-Membuat ruang nama Hub Acara.
+Membuat ruang nama Hub Kejadian.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Locatio
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AutoInparameterSet
+### AutoInflateParameterSet
 ```
 New-AzEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Location] <String>
  [[-SkuName] <String>] [[-SkuCapacity] <Int32>] [[-Tag] <Hashtable>] [-EnableAutoInflate]
@@ -59,7 +59,7 @@ IsAutoInflateEnabled   : False
 MaximumThroughputUnits : 0
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName di\` lokasi geografis \`tertentu MyLocation\`, di grup sumber daya \`MyResourceGroupName\`.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
@@ -81,9 +81,9 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 10
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` dan AutoInsourcee diaktifkan dengan MaximumThroughputUnits 10.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis myLocation\` tertentu, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
 
-### Contoh 3 - Ruang nama yang diaktifkan Junii
+### Contoh 3 - Ruang nama aktif Kafka
 ```
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -EnableKafka
 
@@ -103,7 +103,7 @@ IsAutoInflateEnabled   : True
 MaximumThroughputUnits : 12
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
 ## PARAMETERS
 
@@ -122,8 +122,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableAutoInotomatise
-Menunjukkan apakah PengaturanOtomatis diaktifkan
+### -EnableAutoInflate
+Menunjukkan apakah AutoInflate diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableKafka
-mengaktifkan atau menonaktifkan NamespaceKa untuk
+mengaktifkan atau menonaktifkan Kafka untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas satuan throughput ketika FileOtomatis diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Ruang Nama Sku.
+Nama Sku Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,13 +290,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### System.Collections.Hashtable
 

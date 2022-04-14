@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRuleAssociation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzDataCollectionRuleAssociation.md
-ms.openlocfilehash: 72c853b55d1f74e4c38c24cd169efd5032fcf196
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7fb7553c37d437cb0c2b02f65a33105c21e62b3b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401823"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141935916"
 ---
 # New-AzDataCollectionRuleAssociation
 
 ## SYNOPSIS
-Membuat asosiasi aturan pengumpulan data.
+Membuat kaitan aturan pengumpulan data.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azdatacollectionruleassociation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,11 +52,11 @@ New-AzDataCollectionRuleAssociation
 ## DESCRIPTION
 Cmdlet **New-AzDataCollectionRuleAssociation** membuat asosiasi aturan pengumpulan data (DCRA).
 
-Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki kaitan ke beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan kumpulan DCR, setiap persyaratan tertentu yang cocok, dan menerapkannya hanya pada mesin virtual di mana ketentuan berlaku. Berikut adalah artikel ["Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
+Untuk menerapkan DCR ke mesin virtual, Anda membuat asosiasi untuk mesin virtual. Mesin virtual mungkin memiliki hubungan dengan beberapa DCR, dan DCR mungkin memiliki beberapa mesin virtual yang terkait dengannya. Ini memungkinkan Anda menentukan sekumpulan DCR, masing-masing cocok dengan persyaratan tertentu, dan menerapkannya hanya ke mesin virtual tempatnya diterapkan. Berikut adalah [artikel "Mengonfigurasi pengumpulan data untuk agen Azure Monitor"](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection-rule-azure-monitor-agent) menggunakan DCRA.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat asosiasi aturan pengumpulan data
+### Contoh 1: Membuat kaitan aturan pengumpulan data
 ```
 PS C:\>$dcr = Get-AzDataCollectionRule -ResourceGroupName $rg -RuleName $dcrName
 PS C:\>$vmId = '/subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/virtualMachines/{vmName}'
@@ -68,9 +71,9 @@ Name                 : dcrAssoc
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini membuat asosiasi aturan pengumpulan data untuk ATURAN dan ID sumber daya target yang diberikan.
+Perintah ini membuat kaitan aturan pengumpulan data untuk aturan dan ID sumber daya target tertentu.
 
-### Contoh 2: Membuat asosiasi aturan pengumpulan data dari objek DCR
+### Contoh 2: Membuat kaitan aturan pengumpulan data dari objek DCR
 ```
 PS C:\>$dcr = Get-AzDataCollectionRule -ResourceGroupName $rg -RuleName $dcrName
 PS C:\>$vmId = '/subscriptions/{subId}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/virtualMachines/{vmName}'
@@ -85,12 +88,12 @@ Name                 : dcrAssocInput
 Type                 : Microsoft.Insights/dataCollectionRuleAssociations
 ```
 
-Perintah ini membuat asosiasi aturan pengumpulan data untuk ATURAN dan ID sumber daya target yang diberikan.
+Perintah ini membuat kaitan aturan pengumpulan data untuk aturan dan ID sumber daya target tertentu.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-PSDataCollectionRuleResource Object
+Objek PSDataCollectionRuleResource
 
 ```yaml
 Type: System.String
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.netappfiles/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesPool.md
-ms.openlocfilehash: 7194fc58d86781a78b17bebb7793af27746c4e9b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3e5f2f7f7450c5cc632a371ec9b93bf040375a99
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571067"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141849596"
 ---
 # New-AzNetAppFilesPool
 
 ## SYNOPSIS
-Membuat pool Azure NetApp Files (ANF) baru.
+Membuat kumpulan Azure NetApp Files (ANF) baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ New-AzNetAppFilesPool -Name <String> -PoolSize <Int64> -ServiceLevel <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNetAppFilesPool** membuat sebuah kolam ANF.
+Cmdlet **New-AzNetAppFilesPool** membuat kolam renang ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Buat sebuah pool ANF
+### Contoh 1: Membuat kumpulan ANF
 ```
 PS C:\>New-AzNetAppFilesPool -ResourceGroupName "MyRG" -AccountName "MyAnfAccount" -Name "MyAnfPool" -l "westus2" -PoolSize 4398046511104 -ServiceLevel "Premium" -QosType "Auto"
 
@@ -58,11 +61,11 @@ QosType           : Auto
 ProvisioningState : Succeeded
 ```
 
-Perintah ini membuat pool ANF baru "MyAnfPool" di dalam akun "MyAnfAccount".
+Perintah ini membuat kumpulan ANF baru "MyAnfPool" dalam akun "MyAnfAccount".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -CoolAccess
-Jika diaktifkan (benar) kolam renang bisa berisi volume berkemampuan Access yang bagus.
+Jika diaktifkan (true) kumpulan dapat berisi volume keren yang diaktifkan Access.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionType
-Tipe enkripsi dari kumpulan kapasitas (Tunggal, Ganda), atur tipe enkripsi untuk data yang digunakan untuk kumpulan ini dan semua volume di dalamnya. Nilai ini hanya bisa diatur saat membuat kumpulan baru.
+Tipe enkripsi kumpulan kapasitas (Tunggal, Ganda), atur tipe enkripsi untuk data saat disimpan untuk kumpulan ini dan semua volume di dalamnya. Nilai ini hanya dapat diatur saat membuat kumpulan baru.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolSize
-Ukuran kolam ANF
+Ukuran kumpulan ANF
 
 ```yaml
 Type: System.Int64
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -QosType
-Tipe qos dari pool. Nilai yang memungkinkan meliputi: 'Otomatis', 'Manual'
+Jenis qos kolam renang. Nilai yang memungkinkan termasuk: 'Otomatis', 'Manual'
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceLevel
-Tingkat layanan pool ANF
+Tingkat layanan kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya
+Sebuah hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

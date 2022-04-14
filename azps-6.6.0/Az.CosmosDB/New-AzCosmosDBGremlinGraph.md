@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinGraph.md
 ms.openlocfilehash: 6feef32e8878d09f33351e31dcf91b775facb6ce
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140467019"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141868910"
 ---
 # New-AzCosmosDBGremlinGraph
 
 ## SYNOPSIS
-Membuat jendela CosmosDBAmpmlin baru Graph.
+Membuat Graph Gremlin CosmosDB baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlingraph) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlingraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-AzCosmosDBGremlinGraph -Name <String> [-IndexingPolicy <PSIndexingPolicy>] [
 ```
 
 ## DESCRIPTION
-Membuat jendela CosmosDBAmpmlin baru Graph.
+Membuat Graph Gremlin CosmosDB baru.
 
 ## EXAMPLES
 
@@ -62,7 +62,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinGraphGetPropertiesR
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoscaleMaxThroughput
-Nilai Throughput Maksimum jika skala otomatis diaktifkan.
+Nilai Throughput maksimum jika skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicy
-ConflictResolutionPolicy Object tipe PSConflictResolutionPolicy, bila ini diatur sebagai ConflictResolutionPolicy wadah.
+ConflictResolutionPolicy Object tipe PSConflictResolutionPolicy, ketika disediakan ini diatur sebagai ConflictResolutionPolicy kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSConflictResolutionPolicy
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyMode
-Dapat memiliki nilai: LastWriterWins, Custom, Manual.
+Dapat memiliki nilai: LastWriterWins, Kustom, Manual.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyPath
-Untuk disediakan saat tipe ini adalah LastWriterWins.
+Untuk disediakan ketika tipenya adalah LastWriterWins.
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConflictResolutionPolicyProcedure
-Dapat disediakan ketika tipe berjenis kustom.
+Untuk disediakan saat tipenya adalah kustom.
 
 ```yaml
 Type: System.String
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Jackmlin Graph Nama.
+Gremlin Graph Nama.
 
 ```yaml
 Type: System.String
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Database Database.
+Objek Database Gremlin.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSGremlinDatabaseGetResults
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -PartitionKeyKind
 Jenis algoritma yang digunakan untuk partisi.
-Kemungkinan nilai meliputi: 'Hash', 'Rentang'
+Nilai yang memungkinkan termasuk: 'Hash', 'Rentang'
 
 ```yaml
 Type: System.String
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartitionKeyPath
-Jalur Kunci Partisi, misalnya '/alamat/kode pos'.
+Jalur Kunci Partisi, mis., '/address/zipcode'.
 
 ```yaml
 Type: System.String[]
@@ -289,8 +289,8 @@ Accept wildcard characters: False
 ```
 
 ### -Throughput
-Throughput dari Throughput Graph (RU/s).
-Nilai default adalah 400.
+Throughput gremlin Graph (RU/s).
+Nilai defaultnya adalah 400.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -305,9 +305,9 @@ Accept wildcard characters: False
 ```
 
 ### -TtlInSeconds
-Default Ttl dalam hitungan detik.
+Ttl default dalam detik.
 Jika nilai hilang atau diatur ke - 1, item tidak akan kedaluwarsa.
-Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu modifikasi terakhir.
+Jika nilai diatur ke n, item akan kedaluwarsa n detik setelah waktu terakhir diubah.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueKeyPolicy
-Objek UniqueKeyPolicy ketikkan Microsoft.Azure.Commands.CosmosDB.PSUniqueKeyPolicy.
+Objek UniqueKeyPolicy tipe Microsoft.Azure.Commands.CosmosDB.PSUniqueKeyPolicy.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSUniqueKeyPolicy
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,7 +353,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -368,7 +368,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

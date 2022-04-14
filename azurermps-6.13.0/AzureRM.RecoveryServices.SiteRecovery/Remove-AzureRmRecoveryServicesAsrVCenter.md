@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.recov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Remove-AzureRmRecoveryServicesAsrVCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RecoveryServices/Commands.RecoveryServices.SiteRecovery/help/Remove-AzureRmRecoveryServicesAsrVCenter.md
-ms.openlocfilehash: bb367a5aef86afad9e21437fae287a9a4b9b42d3c9e7f25c43439a3e5c15f787
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 505d2d81eefed3132cd693ea6cd989fde173b8b3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859392"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141882209"
 ---
 # Remove-AzureRmRecoveryServicesAsrvCenter
 
 ## SYNOPSIS
-Removes the vCenter server from the ASR fabric and stops discovery of virtual machines from the vCenter server.
+Menghapus server vCenter dari kain ASR dan menghentikan penemuan mesin virtual dari server vCenter.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmRecoveryServicesAsrvCenter -Fabric <ASRFabric> -Name <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmRecoveryServicesAsrvCenter** menghapus server vCenter dari kain ASR dan berhenti menemukan mesin virtual dari server vCenter.
+Cmdlet **Remove-AzureRmRecoveryServicesAsrvCenter** menghapus server vCenter dari kain ASR dan menghentikan penemuan mesin virtual dari server vCenter.
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ Cmdlet **Remove-AzureRmRecoveryServicesAsrvCenter** menghapus server vCenter dar
 PS C:\> Remove-AzureRmRecoveryServicesAsrvCenterServer -InputObject $vCenter
 ```
 
-Removes the vCenter server from the ASR fabric.
+Menghapus server vCenter dari kain ASR.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Objek kain ASR mewakili Configuration Server.
+Objek kain ASR mewakili Server Konfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek ASR vCenter yang mewakili server vCenter akan dihapus.
+Objek VCenter ASR yang mewakili server vCenter yang akan dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRvCenter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Server vCenter.
+Nama vCenter Server.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan resourceId dari vCenter yang akan dihapus.
+Menentukan resourceId vCenter untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

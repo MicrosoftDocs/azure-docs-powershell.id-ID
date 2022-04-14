@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlStoredProcedure.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlStoredProcedure.md
-ms.openlocfilehash: bddb78632a2edd1b273bbd58ab0171c64035d738
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 140d0276302720340d935b94994b57c81b755333
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009944"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141852746"
 ---
 # Update-AzCosmosDBSqlStoredProcedure
 
 ## SYNOPSIS
-Memperbarui CosmosDB Sql StoredProcedure. Menjalankan operasi patch sisi klien dengan membaca StoredProcedure yang sudah ada.
+Memperbarui CosmosDB Sql StoredProcedure. Melakukan operasi patch sisi klien dengan membaca StoredProcedure yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqlstoredprocedure) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +43,7 @@ Update-AzCosmosDBSqlStoredProcedure [-Name <String>] [-Body <String>]
 ```
 
 ## DESCRIPTION
-Memperbarui CosmosDB Sql StoredProcedure. Menjalankan operasi patch sisi klien dengan membaca StoredProcedure yang sudah ada.
+Memperbarui CosmosDB Sql StoredProcedure. Melakukan operasi patch sisi klien dengan membaca StoredProcedure yang sudah ada.
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlStoredProcedureGetPrope
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -72,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Body
-Badan Prosedur yang Disimpan.
+### -Isi
+Isi Prosedur yang Disimpan.
 
 ```yaml
 Type: System.String
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Sql Stored Procedure
+Objek Prosedur Tersimpan Sql
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlStoredProcedureGetResults
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pengadaan yang disimpan.
+Nama Prcodecure yang Disimpan.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,12 +4,12 @@ Module Name: AzureRM.WebSites
 ms.assetid: 513BE097-EB4A-4C49-9F7F-42A2BED09022
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/get-azurermwebappmetrics
 schema: 2.0.0
-ms.openlocfilehash: d39960078c0a25909fac1b9f5c11e8b8b3d500b8b9ba4f45b9dae87718b61790
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1382ec0f4a2eaa61493e05a762616d9fac54a7f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862758"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141888767"
 ---
 # Get-AzureRmWebAppMetrics
 
@@ -44,12 +44,12 @@ Get-AzureRmWebAppMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [[-EndTim
 PS C:\> Get-AzureRmAppServicePlanMetrics -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -StartTime 2016-11-30T22:00:00Z -EndTime 2016-11-30T22:30:00Z -Granularity PT1M -Metrics ["Requests"]
 ```
 
-Perintah ini mendapatkan Permintaan Web App ContosoWebApp per menit(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
+Perintah ini mendapatkan Permintaan Aplikasi Web ContosoWebApp per menit (PT1M - Poll Time 1 menit) antara StartTime dan EndTime
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu Berakhir dalam UTC
+Waktu Selesai di UTC
 
 ```yaml
 Type: DateTime
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceDetails
-Detail Contoh
+Detail Instans
 
 ```yaml
 Type: SwitchParameter
@@ -109,7 +109,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metrics
+### -Metrik
 Metrik sebagai array string
 
 ```yaml
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu Mulai dalam UTC
+Waktu Mulai di UTC
 
 ```yaml
 Type: DateTime
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

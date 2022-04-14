@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVpnConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVpnConnection.md
 ms.openlocfilehash: 7f4ba2cf4a57eedea41eccb8d5846129a80414d1
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140860544"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141778131"
 ---
 # Get-AzureRmVpnConnection
 
 ## SYNOPSIS
-Mendapatkan koneksi vpn berdasarkan nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
+Mendapatkan koneksi vpn menurut nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmVpnConnection -ParentResourceId <String> [-Name <String>] [-DefaultPr
 ```
 
 ## DESCRIPTION
-Mendapatkan koneksi vpn berdasarkan nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
+Mendapatkan koneksi vpn menurut nama atau mencantumkan semua koneksi vpn yang tersambung ke VpnGateway.
 
 ## EXAMPLES
 
@@ -77,11 +77,11 @@ Etag                      : W/"4580a2e2-2fab-4cff-88eb-92013a76b5a8"
 Id                        : /subscriptions/{subscriptionId}/resourceGroups/ps9361/providers/Microsoft.Network/vpnGateways/testvpngw/vpnConnections/testConnection
 ```
 
-Langkah di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub, dan VpnSite di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual, dan Situs Vpn di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Setelah gateway dibuat, gateway itu tersambung ke Situs Vpn menggunakan New-AzureRmVpnConnection jaringan.
+Setelah gateway dibuat, gateway tersambung ke VpnSite menggunakan perintah New-AzureRmVpnConnection.
 
-Lalu koneksi akan di koneksi menggunakan nama koneksi.
+Lalu ia mendapatkan koneksi menggunakan nama koneksi.
 
 ## PARAMETERS
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-VpnGateway induk untuk koneksi ini.
+VpnGateway induk untuk sambungan ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnGateway
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-Id sumber daya dari VpnGateway induk untuk koneksi ini.
+Id sumber daya dari induk VpnGateway untuk koneksi ini.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

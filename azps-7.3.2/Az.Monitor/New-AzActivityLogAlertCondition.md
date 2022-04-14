@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActivityLogAlertCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzActivityLogAlertCondition.md
-ms.openlocfilehash: 89ec3bc84da4470a1cf6c999d26b92040ef45ef1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0865f157545c07ad2265dcb007df7860f9b32502
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393250"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141935915"
 ---
 # New-AzActivityLogAlertCondition
 
 ## SYNOPSIS
-Membuat objek kondisi log aktivitas baru dalam memori.
+Membuat objek kondisi peringatan log aktivitas baru dalam memori.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azactivitylogalertcondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzActivityLogAlertCondition -Field <String> -Equal <String> [-DefaultProfile
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzActivityLogAlertCondition** membuat objek kondisi pemberitahuan log aktivitas baru dalam memori.
+Cmdlet **New-AzActivityLogAlertCondition** membuat objek kondisi peringatan log aktivitas baru dalam memori.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek kondisi peringatan log aktivitas baru dalam memori.
+### Contoh 1: Membuat objek kondisi peringatan log aktivitas baru dalam memori.
 ```
 PS C:\>$Condition = New-AzActivityLogAlertCondition -Field "Requests" -Equal "OtherField"
 PS C:\>Write-Host "Field property value: $($Condition.Field)"
@@ -40,13 +43,13 @@ Field property value: Requests
 Equals property value: OtherField
 ```
 
-Perintah ini akan membuat objek kondisi peringatan log aktivitas baru dalam memori.
-**CATATAN**: saat cmdlet ini digunakan dengan [Set-AzActivityLogAlert](https://docs.microsoft.com/powershell/module/az.monitor/set-azactivitylogalert) setidaknya salah satu objek ini, yang diberikan sebagai parameter, harus memiliki Bidang yang sama dengan "Kategori". Jika tidak, backend merespons dengan 400 (BadRequest.)
+Perintah ini membuat objek kondisi peringatan log aktivitas baru dalam memori.
+**CATATAN**: ketika cmdlet ini digunakan dengan [Set-AzActivityLogAlert](https://docs.microsoft.com/powershell/module/az.monitor/set-azactivitylogalert) setidaknya salah satu objek ini, yang diteruskan sebagai parameter, harus memiliki Bidang yang sama dengan "Kategori". Jika tidak, backend merespons dengan 400 (BadRequest.)
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sama dengan
-Menentukan properti sama dengan untuk kondisi daun.
+Menentukan properti yang sama dengan untuk kondisi daun.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -113,6 +116,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzActivityLogAlert](./Get-AzActivityLogAlert.md)
 
-[Remove-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
+[Hapus-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
 
-[New-AzActionGroup](./Get-AzActionGroup.md)
+[Grup Baru-AzAction](./Get-AzActionGroup.md)

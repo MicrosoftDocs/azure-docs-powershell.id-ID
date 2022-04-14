@@ -5,11 +5,11 @@ ms.assetid: E066BBFA-2E03-431D-85D1-99F230B6AC59
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermnetworkinterface
 schema: 2.0.0
 ms.openlocfilehash: 263293ea117f85caf32029ee0cfbf0dff2142cc3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141889150"
 ---
 # Get-AzureRmNetworkInterface
 
@@ -55,7 +55,7 @@ Cmdlet **Get-AzureRmNetworkInterface** mendapatkan antarmuka jaringan Azure atau
 PS C:\>Get-AzureRmNetworkInterface
 ```
 
-Perintah ini akan mendapatkan semua antarmuka jaringan untuk langganan saat ini.
+Perintah ini mendapatkan semua antarmuka jaringan untuk langganan saat ini.
 
 ### Contoh 2: Dapatkan semua antarmuka jaringan dengan status penyediaan tertentu
 ```
@@ -67,7 +67,7 @@ Perintah ini mendapatkan semua antarmuka jaringan dalam grup sumber daya bernama
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama antarmuka jaringan yang akan didaurkan cmdlet ini.
+Menentukan nama antarmuka jaringan yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya asal cmdlet ini mendapatkan antarmuka jaringan.
+Menentukan nama grup sumber daya tempat cmdlet ini mendapatkan antarmuka jaringan.
 
 ```yaml
 Type: String
@@ -175,8 +175,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetName
-Menentukan nama kumpulan skala mesin virtual yang mendapatkan antarmuka jaringan dari cmdlet ini.
+### -VirtualMachineScaleSetName
+Menentukan nama kumpulan skala mesin virtual tempat cmdlet ini mendapatkan antarmuka jaringan.
 
 ```yaml
 Type: String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -215,9 +215,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkInterface](./New-AzureRmNetworkInterface.md)
+[Baru-AzureRmNetworkInterface](./New-AzureRmNetworkInterface.md)
 
-[Remove-AzureRmNetworkInterface](./Remove-AzureRmNetworkInterface.md)
+[Hapus-AzureRmNetworkInterface](./Remove-AzureRmNetworkInterface.md)
 
 [Set-AzureRmNetworkInterface](./Set-AzureRmNetworkInterface.md)
 
