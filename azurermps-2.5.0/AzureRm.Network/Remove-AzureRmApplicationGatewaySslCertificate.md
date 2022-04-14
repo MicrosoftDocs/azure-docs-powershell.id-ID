@@ -5,11 +5,11 @@ ms.assetid: 5D788B84-0179-4A35-AC35-27C6F5FECB39
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermapplicationgatewaysslcertificate
 schema: 2.0.0
 ms.openlocfilehash: eeab1f5699af5de737bc1e0390c35d387acfdd98
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422782"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847638"
 ---
 # Remove-AzureRmApplicationGatewaySslCertificate
 
@@ -26,7 +26,7 @@ Remove-AzureRmApplicationGatewaySslCertificate -Name <String> -ApplicationGatewa
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmApplicationGatewaySslCertificate** menghapus sertifikat Lapisan Soket Aman (SSL) dari gateway aplikasi Azure.
+Cmdlet **Remove-AzureRmApplicationGatewaySslCertificate** menghapus sertifikat Secure Sockets Layer (SSL) dari gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -36,9 +36,9 @@ PS C:\>$AppGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -Reso
 PS C:\> Remove-AzureRmApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert02"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasilnya di variabel yang bernama $AppGW.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dan menyimpan hasil dalam variabel bernama $AppGW.
 
-Perintah kedua menghapus sertifikat SSL yang bernama Cert02 dari gateway aplikasi yang disimpan di $AppGW simpan.
+Perintah kedua menghapus sertifikat SSL bernama Cert02 dari gateway aplikasi yang disimpan dalam variabel $AppGW.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

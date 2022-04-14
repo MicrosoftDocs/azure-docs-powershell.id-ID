@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedPrivateLinkScopeTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Update-AzConnectedPrivateLinkScopeTag.md
-ms.openlocfilehash: fcc03d455d2b5c4fed839cee624e5791910df403
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7f59de726777f126d729939efbaf317eea629975
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560282"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142294279"
 ---
 # Update-AzConnectedPrivateLinkScopeTag
 
 ## SYNOPSIS
 Memperbarui tag PrivateLinkScope yang sudah ada.
-Untuk memperbarui bidang lain menggunakan metode CreateOrUpdate.
+Untuk memperbarui bidang lain, gunakan metode CreateOrUpdate.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/update-azconnectedprivatelinkscopetag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Update-AzConnectedPrivateLinkScopeTag -ResourceGroupName <String> -ScopeName <St
  [<CommonParameters>]
 ```
 
-### Perbarui
+### Update
 ```
 Update-AzConnectedPrivateLinkScopeTag -ResourceGroupName <String> -ScopeName <String>
  -PrivateLinkScopeTag <ITagsResource> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm]
@@ -48,11 +51,11 @@ Update-AzConnectedPrivateLinkScopeTag -InputObject <IConnectedMachineIdentity> [
 
 ## DESCRIPTION
 Memperbarui tag PrivateLinkScope yang sudah ada.
-Untuk memperbarui bidang lain menggunakan metode CreateOrUpdate.
+Untuk memperbarui bidang lain, gunakan metode CreateOrUpdate.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui tag lingkup link privat
+### Contoh 1: Memperbarui tag lingkup tautan privat
 ```powershell
 Update-AzConnectedPrivateLinkScopeTag -ResourceGroupName $resourceGroupName -ScopeName $scopeName -Tag $tags2
 ```
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.IConnectedMachineIdentity
@@ -99,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkScopeTag
-Wadah yang hanya menyimpan Tag untuk sumber daya, yang memungkinkan pengguna untuk memperbarui tag pada instans PrivateLinkScope.
-Untuk membuat, lihat bagian CATATAN untuk properti PRIVATELINKSCOPETAG dan membuat tabel hash.
+Wadah yang hanya menyimpan Tag untuk sumber daya, memungkinkan pengguna memperbarui tag pada instans PrivateLinkScope.
+Untuk membangun, lihat bagian CATATAN untuk properti PRIVATELINKSCOPETAG dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedMachine.Models.Api20210520.ITagsResource
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -176,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -229,18 +232,18 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IConnectedMachineIdentity>: Parameter Identitas
-  - `[ExtensionName <String>]`: Nama ekstensi komputer.
+  - `[ExtensionName <String>]`: Nama ekstensi mesin.
   - `[GroupName <String>]`: Nama sumber daya tautan privat.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Lokasi sumber daya target.
   - `[MachineName <String>]`: Nama mesin hibrid.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya Azure Arc PrivateLinkScope.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[PrivateLinkScopeId <String>]`: Id (Guid) sumber daya PrivateLinkScope Azure Arc.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[ScopeName <String>]`: Nama sumber daya Azure Arc PrivateLinkScope.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-PRIVATELINKSCOPETAG <ITagsResource>: Wadah yang hanya menyimpan Tag untuk sumber daya, yang memungkinkan pengguna untuk memperbarui tag pada instans PrivateLinkScope.
+PRIVATELINKSCOPETAG <ITagsResource>: Wadah yang hanya memiliki Tag untuk sumber daya, memungkinkan pengguna untuk memperbarui tag pada instans PrivateLinkScope.
   - `[Tag <ITagsResourceTags>]`: Tag sumber daya
     - `[(Any) <String>]`: Ini menunjukkan properti apa pun dapat ditambahkan ke objek ini.
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationDscNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationDscNode.md
-ms.openlocfilehash: 78bd3f7814e69f39a6f1a1cd23bc54c18ad068cf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 28b1961947a49feea03df959545314717fbb1d72
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202758"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038017"
 ---
 # Set-AzAutomationDscNode
 
 ## SYNOPSIS
-Mengubah konfigurasi node yang akan dipetakan oleh simpul DSC.
+Memodifikasi konfigurasi simpul tempat simpul DSC dipetakan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationdscnode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,22 +30,22 @@ Set-AzAutomationDscNode -Id <Guid> -NodeConfigurationName <String> [-Force] [-Re
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzAutomationDscNode** mengubah konfigurasi node Konfigurasi Status Diinginkan (DSC, Desired State Configuration).
-Azure Automation menyimpan konfigurasi node DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
+Cmdlet **Set-AzAutomationDscNode** mengubah konfigurasi node APS Desired State Configuration (DSC).
+Azure Automation menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi pemetaan konfigurasi node
+### Contoh 1: Modifikasi pemetaan konfigurasi simpul
 ```
 PS C:\>Set-AzAutomationDscNode -NodeConfigurationName "Contoso.NodeConfiguration01" -ResourceGroupName "ResourceGroup01" -Id 064a8929-c98b-25e4-80hh-111c8a6067j8
 ```
 
-Perintah ini menetapkan konfigurasi node yang bernama Contoso.NodeConfiguration01 ke simpul yang memiliki GUID tertentu.
+Perintah ini menetapkan konfigurasi node bernama Contoso.NodeConfiguration01 ke simpul yang memiliki GUID yang ditentukan.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi node DSC di mana cmdlet ini memodifikasi konfigurasi.
+Menentukan nama akun Otomatisasi yang berisi simpul DSC di mana cmdlet ini mengubah konfigurasi.
 
 ```yaml
 Type: System.String
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -71,7 +74,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ps_force perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
 
 ```yaml
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID unik node DSC di mana cmdlet ini memodifikasi konfigurasi.
+Menentukan ID unik simpul DSC tempat cmdlet ini mengubah konfigurasi.
 
 ```yaml
 Type: System.Guid
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeConfigurationName
-Menentukan nama konfigurasi node yang akan di memetakan cmdlet ini.
+Menentukan nama konfigurasi simpul tempat cmdlet ini memetakan simpul.
 
 ```yaml
 Type: System.String
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi konfigurasi node DSC.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah konfigurasi simpul DSC.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: A8E230A0-5057-40BC-81CD-6D397A503A84
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c12c5532a85bacb5cd854f4f2ad87ad0d8b68178
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428769"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142147216"
 ---
 # Remove-AzureRmDnsZone
 
@@ -25,23 +25,23 @@ Remove-AzureRmDnsZone -Name <String> -ResourceGroupName <String> [-Force] [-Pass
  [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Remove-AzureRmDnsZone -Zone <DnsZone> [-Overwrite] [-Force] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmDnsZone** secara permanen menghapus zona Domain Name System (DNS) dari grup sumber daya yang ditentukan.
-Semua kumpulan catatan yang dimuat dalam zona juga dihapus.
+Cmdlet **Remove-AzureRmDnsZone** menghapus zona Sistem Nama Domain (DNS) secara permanen dari grup sumber daya tertentu.
+Semua kumpulan rekaman yang terdapat dalam zona juga dihapus.
 
-Anda dapat memberikan objek **DnsZone** menggunakan parameter *Name* atau dengan operator pipeline, atau alternatifnya Anda dapat menentukan parameter *ZoneName* *dan ResourceGroupName.*
+Anda bisa melewati objek **DnsZone** menggunakan parameter *Nama* atau dengan menggunakan operator pipeline, atau anda bisa menentukan parameter *ZoneName* dan *ResourceGroupName* .
 
-Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
+Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
-Ketika menentukan zona menggunakan objek **DnsZone** (dikirim melalui *saluran* atau parameter Zona), zona tidak dihapus jika telah diubah dalam DNS Azure karena objek **DnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan digunakan).
-Hal ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang menghapus zona terlepas dari perubahan konklarasi.
+Saat menentukan zona menggunakan objek **DnsZone** (dilewatkan melalui pipeline atau parameter *Zona* ), zona tidak dihapus jika telah diubah di Azure DNS karena objek **DnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan catatan di dalam zona tidak).
+Ini menyediakan perlindungan untuk perubahan zona serentak.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus zona terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -50,15 +50,15 @@ Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang menghapus zo
 PS C:\>Remove-AzureRmDnsZone -Name "myzone.com" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini menghapus zona yang bernama myzone.com grup sumber daya yang bernama MyResourceGroup.
+Perintah ini menghapus zona bernama myzone.com dari grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
-### -Force
-Parameter ini tidak berlaku bagi cmdlet ini.
-File akan dihapus pada rilis mendatang.
+### -Paksa
+Parameter ini tidak digunakan lagi untuk cmdlet ini.
+Ini akan dihapus dalam rilis mendatang.
 
-Untuk mengontrol apakah cmdlet ini meminta konfirmasi Anda, gunakan parameter *Konfirmasi.*
+Untuk mengontrol apakah cmdlet ini meminta anda untuk konfirmasi, gunakan parameter *Konfirmasi* .
 
 ```yaml
 Type: SwitchParameter
@@ -74,9 +74,9 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama zona DNS yang dihapus cmdlet ini.
-Anda juga harus menentukan parameter *ResourceGroupName.*
+Anda juga harus menentukan parameter *ResourceGroupName* .
 
-Alternatifnya, Anda dapat menentukan zona DNS menggunakan parameter *Zone.*
+Alternatifnya, Anda bisa menentukan zona DNS menggunakan parameter *Zona* .
 
 ```yaml
 Type: String
@@ -90,11 +90,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Ketika menentukan zona menggunakan objek **DnsZone** (dikirim melalui *saluran* atau parameter Zona), zona tidak dihapus jika telah diubah dalam DNS Azure karena objek **DnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan rekaman dalam zona tidak akan digunakan).
-Hal ini menyediakan perlindungan untuk perubahan zona serentak.
+### -Timpa
+Saat menentukan zona menggunakan objek **DnsZone** (dilewatkan melalui pipeline atau parameter *Zona* ), zona tidak dihapus jika telah diubah di Azure DNS karena objek **DnsZone** lokal diambil (hanya operasi langsung pada jumlah sumber daya zona DNS sebagai perubahan, operasi pada kumpulan catatan di dalam zona tidak).
+Ini menyediakan perlindungan untuk perubahan zona serentak.
 
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite,* yang menghapus zona terlepas dari perubahan konklarasi.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus zona terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: SwitchParameter
@@ -124,10 +124,10 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi zona yang akan dihapus.
-Anda juga harus menentukan parameter *ZoneName.*
+Menentukan nama grup sumber daya yang berisi zona untuk dihapus.
+Anda juga harus menentukan parameter *ZoneName* .
 
-Alternatifnya, Anda dapat menentukan zona DNS menggunakan objek **DnsZone,** yang dikirim melalui saluran atau *parameter Zona.*
+Alternatifnya, Anda bisa menentukan zona DNS menggunakan objek **DnsZone** , yang dilewati melalui pipeline atau parameter *Zona* .
 
 ```yaml
 Type: String
@@ -141,11 +141,11 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan zona DNS yang akan dihapus.
-Objek **DnsZone** yang melintas juga dapat diteruskan melalui saluran.
+### -Zona
+Menentukan zona DNS untuk dihapus.
+Objek **DnsZone yang** dilewati juga bisa dilewati melalui pipeline.
 
-Alternatifnya, Anda bisa menentukan zona DNS untuk dihapus dengan menggunakan parameter *ZoneName* dan *ResourceGroupName.*
+Alternatifnya, Anda dapat menentukan zona DNS untuk dihapus menggunakan parameter *ZoneName* dan *ResourceGroupName* .
 
 ```yaml
 Type: DnsZone
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -191,28 +191,28 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Dns.DnsZone
-Anda dapat pipa objek **DnsZone** ke cmdlet ini.
+Anda dapat menyalurkan objek **DnsZone** ke cmdlet ini.
 
 ## OUTPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menghasilkan output apa pun.
 
 ## CATATAN
-Karena dampak penghapusan zona DNS yang berpotensi tinggi, cmdlet ini meminta konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai selain Tidak Ada.
+Karena dampak yang berpotensi tinggi untuk menghapus zona DNS, secara default, cmdlet ini meminta konfirmasi jika variabel $ConfirmPreference Windows PowerShell memiliki nilai selain Tidak Ada.
 
-Jika Anda menentukan *Konfirmasi* *atau Konfirmasi:$True*, cmdlet ini akan meminta konfirmasi sebelum dijalankan.
-Jika Anda menentukan *Confirm:$False*, cmdlet tidak akan meminta konfirmasi Anda. 
+Jika Anda menentukan *Konfirmasi* atau *Konfirmasi:$True*, cmdlet ini meminta anda untuk konfirmasi sebelum berjalan.
+Jika Anda menentukan *Konfirmasi:$False*, cmdlet tidak meminta konfirmasi kepada Anda. 
 
 ## RELATED LINKS
 
 [Get-AzureRmDnsZone](./Get-AzureRmDnsZone.md)
 
-[New-AzureRmDnsZone](./New-AzureRmDnsZone.md)
+[AzureRmDnsZone baru](./New-AzureRmDnsZone.md)
 
 [Set-AzureRmDnsZone](./Set-AzureRmDnsZone.md)

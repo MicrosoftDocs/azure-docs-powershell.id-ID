@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.confluent/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/New-AzConfluentOrganization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Confluent/help/New-AzConfluentOrganization.md
-ms.openlocfilehash: 0aa56d8f7d98924d50bafcd5ac0a9efc26a43403
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a6d3c0f7d0fb56c788cc9e73b2a747859494fcc7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140545112"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142294333"
 ---
 # New-AzConfluentOrganization
 
 ## SYNOPSIS
-Buat Sumber daya organisasi
+Membuat sumber daya Organisasi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.confluent/new-azconfluentorganization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +31,11 @@ New-AzConfluentOrganization -Name <String> -ResourceGroupName <String> [-Subscri
 ```
 
 ## DESCRIPTION
-Buat Sumber daya organisasi
+Membuat sumber daya Organisasi
 
 ## EXAMPLES
 
-### Contoh 1: Membuat organisasi terbatas
+### Contoh 1: Membuat organisasi konferensi
 ```powershell
 New-AzConfluentOrganization -ResourceGroupName azure-rg-test -Name confluentorg-02-pwsh -Location eastus -OfferDetailId "confluent-cloud-azure-prod" -OfferDetailPlanId "confluent-cloud-azure-payg-prod" -OfferDetailPlanName "Confluent Cloud - Pay as you Go" -OfferDetailPublisherId "confluentinc" -OfferDetailTermUnit "P1M" -UserDetailEmailAddress "xxxx@microsoft.com"
 ```
@@ -43,7 +46,7 @@ Location Name                   Type
 eastus   confluentorg-02-pwsh Microsoft.Confluent/organizations
 ```
 
-Perintah ini akan membuat organisasi terbatas.
+Perintah ini membuat organisasi konferensi.
 
 ## PARAMETERS
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDetailPlanId
-Id Penawaran Paket
+Id Paket Penawaran
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDetailPublisherId
-id Publisher
+Id Publisher
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferDetailTermUnit
-Unit Jangka Waktu Paket Penawaran
+Unit Istilah Paket Penawaran
 
 ```yaml
 Type: System.String
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Microsoft Azure id langganan
+id langganan Microsoft Azure
 
 ```yaml
 Type: System.String
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

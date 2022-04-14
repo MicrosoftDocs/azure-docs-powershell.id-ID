@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.DigitalTwins/new
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsCheckNameRequestObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/New-AzDigitalTwinsCheckNameRequestObject.md
-ms.openlocfilehash: 7fb9f3daa786d9d0f5c9c4d1aff27949ffcba92f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f312633bfa17cd62b53410f5af847f132472e59a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001006"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142215955"
 ---
 # New-AzDigitalTwinsCheckNameRequestObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk CheckNameRequest
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/new-azdigitaltwinschecknamerequestobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Membuat objek dalam memori untuk CheckNameRequest
 
 ## EXAMPLES
 
-### Contoh 1: Create a DigitalTwinsCheckNameRequestObject by name
+### Contoh 1: Membuat DigitalTwinsCheckNameRequestObject menurut nama
 ```powershell
 PS C:\> New-AzDigitalTwinsCheckNameRequestObject -name youriTestName
 
@@ -57,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

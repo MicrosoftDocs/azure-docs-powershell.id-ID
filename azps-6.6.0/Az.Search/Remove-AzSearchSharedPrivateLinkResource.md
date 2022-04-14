@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchSharedPrivateLinkResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Search/Search/help/Remove-AzSearchSharedPrivateLinkResource.md
 ms.openlocfilehash: dec08ca1d7a490bc6728d0eb9065c0163b1739e3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140329415"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142077727"
 ---
 # Remove-AzSearchSharedPrivateLinkResource
 
 ## SYNOPSIS
-Hapus sumber daya tautan pribadi bersama dari layanan Pencarian Kognitif Azure.
+Hapus sumber daya tautan pribadi bersama dari layanan Azure Cognitive Search.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.search/remove-azsearchsharedprivatelinkresource) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.search/remove-azsearchsharedprivatelinkresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Remove-AzSearchSharedPrivateLinkResource -InputObject <PSSharedPrivateLinkResour
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSearchSharedPrivateLinkResource** menghapus sumber daya tautan pribadi bersama dari layanan Pencarian Kognitif Azure.
+Cmdlet **Remove-AzSearchSharedPrivateLinkResource** menghapus sumber daya tautan pribadi bersama dari layanan Azure Cognitive Search.
 
 ## EXAMPLES
 
@@ -61,12 +61,12 @@ Remove Shared Private Link Resource 'blob-pe'.
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): Y
 ```
 
-Contoh ini menghapus sumber daya tautan pribadi bersama dengan nama layanan Pencarian Kognitif Azure.
+Contoh ini menghapus sumber daya tautan pribadi bersama berdasarkan nama layanan Azure Cognitive Search.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input sumber daya tautan privat bersama
+Objek input sumber daya tautan pribadi bersama
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSharedPrivateLinkResource
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Sumber daya tautan pribadi Bersama Pencarian Kognitif Azure
+sumber daya tautan pribadi bersama Azure Cognitive Search
 
 ```yaml
 Type: System.String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek Input Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Objek Input Layanan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Shared private link resource id
+Id sumber daya tautan pribadi bersama
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama Layanan Pencarian Kognitif Azure.
+Azure Cognitive Search Nama layanan.
 
 ```yaml
 Type: System.String
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,11 +248,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

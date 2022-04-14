@@ -5,19 +5,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppAccessRestrictionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppAccessRestrictionRule.md
 ms.openlocfilehash: e96b07f1092f3f5cde82cfc1760fce948fa6e031
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140457034"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142219897"
 ---
 # Remove-AzWebAppAccessRestrictionRule
 
 ## SYNOPSIS
-Menghapus aturan Batasan Akses dari Azure Web App.
+Menghapus aturan Pembatasan Akses dari Azure Web App.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/remove-azwebappaccessrestrictionrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azwebappaccessrestrictionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,28 +29,28 @@ Remove-AzWebAppAccessRestrictionRule [-ResourceGroupName] <String> [-WebAppName]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzWebAppAccessRestrictionRule** menghapus aturan Batasan Akses dari Azure Web App
+Cmdlet **Remove-AzWebAppAccessRestrictionRule** menghapus aturan Pembatasan Akses dari Azure Web App
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Aturan Pembatasan Akses Aplikasi Web
+### Contoh 1: Menghapus Aturan Pembatasan Akses Aplikasi Web
 ```
 PS C:\>Remove-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" -Name IpRule
 ```
 
 Perintah ini menghapus aturan pembatasan akses IpRule dari Azure Web App bernama ContosoSite yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
-### Contoh 2: Hapus Aturan Pembatasan Akses Tag Layanan Web App
+### Contoh 2: Menghapus Aturan Pembatasan Akses Tag Layanan Web App
 ```
 PS C:\>Remove-AzWebAppAccessRestrictionRule -ResourceGroupName "Default-Web-WestUS" -WebAppName "ContosoSite" -ServiceTag AzureFrontDoor.Backend
 ```
 
-Perintah ini menghapus aturan batasan akses dengan ServiceTag sama dengan AzureFrontDoor.Backend dari Azure Web App yang bernama ContosoSite yang dimiliki oleh grup sumber daya bernama Default-Web-WestUS.
+Perintah ini menghapus aturan pembatasan akses dengan ServiceTag sama dengan AzureFrontDoor.Backend dari Azure Web App bernama ContosoSite yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -Tindakan
-Memperbolehkan atau Menolak aturan.
+Aturan Izinkan atau Tolak.
 
 ```yaml
 Type: System.String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat Ip v4 atau v6 Rentang CIDR. Misalnya: 192.168.0.0/24
+Rentang Alamat Ip v4 atau v6 CIDR. Misalnya: 192.168.0.0/24
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek konfigurasi pembatasan akses.
+Mengembalikan objek konfigurasi batasan akses.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-ResourceId dari Subnet.
+ResourceId of Subnet.
 
 ```yaml
 Type: System.String
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetScmSite
-Aturan ditujukan untuk situs Utama atau situs Scm.
+Aturan ditujukan untuk Situs utama atau situs Scm.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama Jaringan Virtual (harus berada di grup sumber daya yang sama dengan Web App).
+Nama Virtual Network (harus berada dalam grup sumber daya yang sama dengan Web App).
 
 ```yaml
 Type: System.String
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

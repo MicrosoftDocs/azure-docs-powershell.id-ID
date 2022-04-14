@@ -4,11 +4,11 @@ ms.assetid: C7F08804-E177-4BC5-8F0E-DEC1B467C4BB
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a2b1b94a03d183180bbf4de7fa40f674dd1383f3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243148"
 ---
 # Update-AzureApplicationGateway
 
@@ -37,32 +37,32 @@ PS C:\> Update-AzureApplicationGateway -Name "ApplicationGateway06" -VnetName "V
 ```
 
 Perintah pertama menghentikan gateway aplikasi bernama ApplicationGateway06.
-Gateway aplikasi harus dihentikan sebelum Anda dapat mengubah jaringan virtual atau subnet.
+Gateway aplikasi harus dihentikan sebelum Anda bisa mengubah jaringan virtual atau subnet.
 
-Perintah kedua mengubah subnet dan subnet virtual untuk gateway aplikasi bernama ApplicationGateway06.
+Perintah kedua mengubah subnet virtual dan subnet untuk gateway aplikasi bernama ApplicationGateway06.
 
-### Contoh 2: Modifikasi properti tambahan gateway aplikasi
+### Contoh 2: Mengubah properti tambahan gateway aplikasi
 ```
 PS C:\> Update-AzureApplicationGateway -Name "ApplicationGateway06" -InstanceCount 2 -GatewaySize "Large" -Description "Updated application gateway"
 ```
 
-Perintah ini mengubah hitungan contoh, ukuran gateway, dan deskripsi untuk gateway aplikasi bernama ApplicationGateway06.
-Perintah ini tidak memodifikasi jaringan virtual atau subnet untuk gateway aplikasi.
-Oleh karena itu, Anda tidak harus menghentikan gateway aplikasi sebelum menjalankan perintah ini.
+Perintah ini mengubah jumlah instans, ukuran gateway, dan deskripsi untuk gateway aplikasi bernama ApplicationGateway06.
+Perintah ini tidak mengubah jaringan virtual atau subnet untuk gateway aplikasi.
+Oleh karena itu, Anda tidak perlu menghentikan gateway aplikasi sebelum menjalankan perintah ini.
 
-### Contoh 3: Mengubah gateway aplikasi dengan menggunakan saluran
+### Contoh 3: Memodifikasi gateway aplikasi dengan menggunakan saluran
 ```
 PS C:\> $ApplicationGateway = Get-AzureApplicationGateway -Name "ApplicationGateway06"
 PS C:\> $ApplicationGateway.GatewaySize = "Medium"
 PS C:\> $ApplicationGateway | Update-AzureApplicationGateway
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway06 menggunakan cmdlet **Get-AzureApplicationGateway.**
-Perintah menyimpannya di $ApplicationGateway variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway06 menggunakan cmdlet **Get-AzureApplicationGateway** .
+Perintah menyimpannya dalam variabel $ApplicationGateway.
 
-Perintah kedua menetapkan properti **GatewaySize** nilai Sedang.
+Perintah kedua menetapkan properti **GatewaySize** nilai Medium.
 
-Perintah terakhir menyampaikan pembaruan $ApplicationGateway cmdlet saat ini.
+Perintah akhir melewati $ApplicationGateway yang diperbarui ke cmdlet saat ini.
 
 ## PARAMETERS
 
@@ -83,10 +83,10 @@ Accept wildcard characters: False
 
 ### -GatewaySize
 Menentukan ukuran yang ditetapkan cmdlet ini ke gateway aplikasi.
-Nilai valid adalah:
+Nilai yang valid adalah:
 
 - Kecil
-- Sedang
+- Menengah
 - Besar
 
 ```yaml
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subnets
-Menentukan array subnet yang digunakan cmdlet ini untuk menyebarkan gateway aplikasi.
+Menentukan array subnet tempat cmdlet ini menyebarkan gateway aplikasi.
 
 Anda tidak bisa memperbarui subnet saat gateway aplikasi sedang berjalan.
 Untuk menghentikan gateway aplikasi, gunakan cmdlet Stop-AzureApplicationGateway.
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -VnetName
-Menentukan jaringan virtual di mana cmdlet ini menempatkan gateway aplikasi.
+Menentukan jaringan virtual tempat cmdlet ini menyebarkan gateway aplikasi.
 
 Anda tidak bisa memperbarui jaringan virtual saat gateway aplikasi sedang berjalan.
 Untuk menghentikan gateway aplikasi, gunakan **Stop-AzureApplicationGateway**.
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -200,9 +200,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureApplicationGateway](./Get-AzureApplicationGateway.md)
 
-[New-AzureApplicationGateway](./New-AzureApplicationGateway.md)
+[AzureApplicationGateway baru](./New-AzureApplicationGateway.md)
 
-[Remove-AzureApplicationGateway](./Remove-AzureApplicationGateway.md)
+[Hapus-AzureApplicationGateway](./Remove-AzureApplicationGateway.md)
 
 [Start-AzureApplicationGateway](./Start-AzureApplicationGateway.md)
 

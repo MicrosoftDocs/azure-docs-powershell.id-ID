@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Export-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Export-AzApiManagementApi.md
-ms.openlocfilehash: c0346dbfa4b39aa1dbaed20910eadd551d61fdd7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d80af92a75d6a0d1b1c6409f21bc5775f3389c13
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560832"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261717"
 ---
 # Export-AzApiManagementApi
 
 ## SYNOPSIS
 Mengekspor API ke file.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/export-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +38,11 @@ Export-AzApiManagementApi -Context <PsApiManagementContext> -ApiId <String> [-Ap
 ```
 
 ## DESCRIPTION
-Cmdlet **Export-AzApiManagementApi** mengekspor API Manajemen API Azure ke file dalam salah satu format yang didukung.
+Cmdlet **Export-AzApiManagementApi** mengekspor API Azure API Management ke file dalam salah satu format yang didukung.
 
 ## EXAMPLES
 
-### Contoh 1: Mengekspor API dalam format Bahasa Deskripsi Aplikasi Web (WADL, Web Application Description Language)
+### Contoh 1: Mengekspor API dalam format Web Application Description Language (WADL)
 ```powershell
 $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Export-AzApiManagementApi -Context $ApiMgmtContext -ApiId "0123456789" -SpecificationFormat "Wadl" -SaveAs "C:\contoso\specifications\0123456789.wadl"
@@ -53,12 +56,12 @@ $ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-Wes
 Export-AzApiManagementApi -Context $ApiMgmtContext -ApiId swagger-petstore -SpecificationFormat OpenApiJson -SaveAs D:\github\petstore.json
 ```
 
-Perintah ini mengekspor definisi API dalam format Buka Api sebagai dokumen Json
+Perintah ini mengekspor definisi API dalam format Open Api sebagai dokumen Json
 
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID API untuk diekspor.
+Menentukan ID API yang akan diekspor.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiRevision
-Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, ekspor akan dilakukan untuk revisi api yang saat ini aktif.
+Pengidentifikasi Revisi API. Parameter ini bersifat opsional. Jika tidak ditentukan, ekspor akan dilakukan untuk revisi api aktif saat ini.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Menunjukkan bahwa operasi ini menimpa file dengan nama yang sama jika sudah ada.
 
 ```yaml
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa operasi ini $True jika API berhasil diekspor, atau $False sebaliknya.
+Menunjukkan bahwa operasi ini mengembalikan $True jika API berhasil diekspor, atau $False sebaliknya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 
 ### -SpecificationFormat
 Menentukan format API.
-psdx_paramvalues Wadl, Wsdl, Swagger, OpenApi, dan OpenApiJson
+psdx_paramvalues Wadl, Wsdl, Swagger, OpenApi dan OpenApiJson
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementApiFormat
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -233,7 +236,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzApiManagementApi](./Get-AzApiManagementApi.md)
 
-[Import-AzApiManagementApi](./Import-AzApiManagementApi.md)
+[Impor-AzApiManagementApi](./Import-AzApiManagementApi.md)
 
 [New-AzApiManagementApi](./New-AzApiManagementApi.md)
 

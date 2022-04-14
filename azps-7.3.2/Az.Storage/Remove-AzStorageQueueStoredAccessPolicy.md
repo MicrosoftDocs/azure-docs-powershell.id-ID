@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageQueueStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Remove-AzStorageQueueStoredAccessPolicy.md
-ms.openlocfilehash: 9b628213fb9982bb6ea194b7aa0a83ef3e521bab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9fe6b1410f75f44eed7fad4379fc36758717960e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140400179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142365209"
 ---
 # Remove-AzStorageQueueStoredAccessPolicy
 
 ## SYNOPSIS
-Menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
+Menghapus kebijakan akses yang disimpan dari antrean penyimpanan Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/remove-azstoragequeuestoredaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,16 +30,16 @@ Remove-AzStorageQueueStoredAccessPolicy [-Queue] <String> [-Policy] <String> [-P
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzStorageQueueStoredAccessPolicy** menghapus kebijakan akses tersimpan dari antrean penyimpanan Azure.
+Cmdlet **Remove-AzStorageQueueStoredAccessPolicy** menghapus kebijakan akses yang disimpan dari antrean penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus kebijakan akses tersimpan dari antrean penyimpanan
+### Contoh 1: Menghapus kebijakan akses yang disimpan dari antrean penyimpanan
 ```
 PS C:\>Remove-AzStorageQueueStoredAccessPolicy -Queue "MyQueue" -Policy "Policy04"
 ```
 
-Perintah ini menghapus kebijakan akses yang bernama Policy04 dari antrean penyimpanan bernama MyQueue.
+Perintah ini menghapus kebijakan akses bernama Policy04 dari antrean penyimpanan bernama Antrean Saya.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan bahwa cmdlet ini **mengembalikan Boolean** yang mencerminkan keberhasilan operasi.
+Menunjukkan bahwa cmdlet ini mengembalikan **Boolean** yang mencerminkan keberhasilan operasi.
 Secara default, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

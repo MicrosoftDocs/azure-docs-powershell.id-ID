@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageTableStoredAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Storage/Storage.Management/help/Get-AzStorageTableStoredAccessPolicy.md
 ms.openlocfilehash: c079b65dc0a37ea07815e2e3b47799b9a194f4e2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424921"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142092062"
 ---
 # Get-AzStorageTableStoredAccessPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan atau kebijakan akses tersimpan untuk tabel penyimpanan Azure.
+Mendapatkan kebijakan atau kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ## SYNTAX
 
@@ -26,23 +26,23 @@ Get-AzStorageTableStoredAccessPolicy [-Table] <String> [[-Policy] <String>] [-Co
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageTableStoredAccessPolicy** mencantumkan kebijakan akses tersimpan atau kebijakan untuk tabel penyimpanan Azure.
+Cmdlet **Get-AzStorageTableStoredAccessPolicy** mencantumkan kebijakan atau kebijakan akses yang disimpan untuk tabel penyimpanan Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan akses tersimpan dalam tabel penyimpanan
+### Contoh 1: Mendapatkan kebijakan akses yang disimpan dalam tabel penyimpanan
 ```
 PS C:\>Get-AzStorageTableStoredAccessPolicy -Table "Table02" -Policy "Policy50"
 ```
 
-Perintah ini mendapatkan kebijakan akses yang bernama Policy50 dalam tabel penyimpanan yang bernama Table02.
+Perintah ini mendapatkan kebijakan akses bernama Policy50 dalam tabel penyimpanan bernama Table02.
 
-### Contoh 2: Mendapatkan semua kebijakan akses tersimpan dalam tabel penyimpanan
+### Contoh 2: Dapatkan semua kebijakan akses yang disimpan dalam tabel penyimpanan
 ```
 PS C:\>Get-AzStorageTableStoredAccessPolicy -Table "Table02"
 ```
 
-Perintah ini mendapatkan semua kebijakan akses di tabel bernama Table02.
+Perintah ini mendapatkan semua kebijakan akses dalam tabel bernama Table02.
 
 ## PARAMETERS
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan kebijakan akses tersimpan, yang mencakup izin untuk token Shared Access Signature (SAS) ini.
+Menentukan kebijakan akses yang disimpan, yang menyertakan izin untuk token Tanda Tangan Akses Bersama (SAS) ini.
 
 ```yaml
 Type: System.String
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

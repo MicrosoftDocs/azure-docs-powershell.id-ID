@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmContainerService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Update-AzureRmContainerService.md
 ms.openlocfilehash: bacc9366292225e07fd07ac65726018f1d1879e2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424544"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065428"
 ---
 # Update-AzureRmContainerService
 
 ## SYNOPSIS
-Memperbarui status layanan wadah.
+Memperbarui status layanan kontainer.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Update-AzureRmContainerService [-ResourceGroupName] <String> [-Name] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRmContainerService** memperbarui status layanan wadah agar sesuai dengan instans lokal layanan.
+Cmdlet **Update-AzureRmContainerService** memperbarui status layanan kontainer agar sesuai dengan instans lokal layanan.
 
 ## EXAMPLES
 
@@ -38,18 +38,18 @@ Cmdlet **Update-AzureRmContainerService** memperbarui status layanan wadah agar 
 PS C:\> Get-AzureRmContainerService -ResourceGroupName "ResourceGroup17" -Name "CSResourceGroup17" | Remove-AzureRmContainerServiceAgentPoolProfile -Name "AgentPool01" | Add-AzureRmContainerServiceAgentPoolProfile -Name "AgentPool01" -VmSize "Standard_A1" -DnsPrefix "APResourceGroup17" -Count 2 | Update-AzureRmContainerService -ResourceGroupName "ResourceGroup17" -Name "CSResourceGroup17"
 ```
 
-Perintah ini mendapatkan layanan wadah bernama CSResourceGroup17 dengan menggunakan cmdlet Get-AzureRmContainerService.
-Perintah melewati objek itu ke Remove-AzureRmContainerServiceAgentPoolProfile cmdlet dengan menggunakan operator pipeline.
+Perintah ini mendapatkan layanan kontainer bernama CSResourceGroup17 menggunakan cmdlet Get-AzureRmContainerService.
+Perintah melewati objek tersebut ke cmdlet Remove-AzureRmContainerServiceAgentPoolProfile menggunakan operator pipeline.
 **Remove-AzureRmContainerServiceAgentPoolProfile** menghapus profil bernama AgentPool01.
-Perintah melewati hasil ke cmdlet Add-AzureRmContainerServiceAgentPoolProfile cmdlet.
+Perintah melewati hasil ke cmdlet Add-AzureRmContainerServiceAgentPoolProfile.
 **Add-AzureRmContainerServiceAgentPoolProfile** menambahkan profil yang memiliki nama AgentPool01, dan memiliki properti yang ditentukan.
-Perintah itu menyampaikan hasilnya ke cmdlet saat ini.
-Cmdlet saat ini memperbarui layanan wadah untuk mencerminkan perubahan yang dibuat dalam perintah ini.
+Perintah melewati hasil ke cmdlet saat ini.
+Cmdlet saat ini memperbarui layanan kontainer untuk mencerminkan perubahan yang dibuat dalam perintah ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerService
-Menentukan objek **ContainerService lokal** yang berisi perubahan.
+Menentukan objek **ContainerService** lokal yang berisi perubahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSContainerService
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,10 +176,10 @@ Parameter: ContainerService (ByValue)
 
 [Get-AzureRmContainerService](./Get-AzureRmContainerService.md)
 
-[New-AzureRmContainerService](./New-AzureRmContainerService.md)
+[Baru-AzureRmContainerService](./New-AzureRmContainerService.md)
 
-[Remove-AzureRmContainerService](./Remove-AzureRmContainerService.md)
+[Hapus-AzureRmContainerService](./Remove-AzureRmContainerService.md)
 
-[Remove-AzureRmContainerServiceAgentPoolProfile](./Remove-AzureRmContainerServiceAgentPoolProfile.md)
+[Hapus-AzureRmContainerServiceAgentPoolProfile](./Remove-AzureRmContainerServiceAgentPoolProfile.md)
 
 

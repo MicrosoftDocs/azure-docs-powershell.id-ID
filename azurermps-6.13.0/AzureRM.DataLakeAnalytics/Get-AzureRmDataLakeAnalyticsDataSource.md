@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.datal
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Get-AzureRmDataLakeAnalyticsDataSource.md
-ms.openlocfilehash: 31a0bd0c582e4af804e9b7c589d14c46d04d6fcf3786cff1bb354fffa40d78df
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2f6dfae3d13a6de57a7dc04367ec2886be78f5f5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418385"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064984"
 ---
 # Get-AzureRmDataLakeAnalyticsDataSource
 
 ## SYNOPSIS
-Mendapatkan sumber data Analitik Danau Data.
+Mendapatkan sumber data Data Lake Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -50,7 +50,7 @@ Cmdlet **Get-AzureRmDataLakeAnalyticsDataSource** mendapatkan sumber data Azure 
 PS C:\>Get-AzureRmDataLakeAnalyticsDataSource -AccountName "ContosoAdlA" -DataLakeStore "ContosoAdls"
 ```
 
-Perintah ini mendapatkan sumber data Data Penyimpanan Danau bernama ContosoAdls dari akun Analitik Danau Data.
+Perintah ini mendapatkan sumber data Data Lake Store bernama ContosoAdls dari akun Data Lake Analytics.
 
 ### Contoh 2: Dapatkan daftar akun Data Lake Store dalam akun Data Lake Analytics
 ```
@@ -62,7 +62,7 @@ Perintah ini mendapatkan semua akun Data Lake Store dari akun Data Lake Analytic
 ## PARAMETERS
 
 ### -Akun
-Menentukan akun Analitik Danau Data bahwa cmdlet ini mendapatkan sumber data.
+Menentukan akun Data Lake Analytics yang cmdlet ini mendapatkan sumber data.
 
 ```yaml
 Type: System.String
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Blob
-Menentukan nama sumber data Storage Azure Blob.
+Menentukan nama sumber data Azure Blob Storage.
 
 ```yaml
 Type: System.String
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataLakeStore
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

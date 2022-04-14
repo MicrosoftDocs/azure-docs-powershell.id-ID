@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.containerinstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint.md
-ms.openlocfilehash: 22b02f0445e0ea3a0e134fed7c724999785721b7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9ad8a25889a7612820cb269cabb58a1aca8eb842
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140180062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142294117"
 ---
 # Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint
 
 ## SYNOPSIS
-Mendapatkan semua dependensi jaringan untuk grup wadah ini untuk memungkinkan kontrol penuh atas pengaturan dan konfigurasi jaringan.
+Mendapatkan semua dependensi jaringan untuk grup kontainer ini untuk memungkinkan kontrol penuh pengaturan dan konfigurasi jaringan.
 Untuk grup wadah, ini akan selalu menjadi daftar kosong.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/get-azcontainerinstancecontainergroupoutboundnetworkdependencyendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,12 +36,12 @@ Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint
 ```
 
 ## DESCRIPTION
-Mendapatkan semua dependensi jaringan untuk grup wadah ini untuk memungkinkan kontrol penuh atas pengaturan dan konfigurasi jaringan.
+Mendapatkan semua dependensi jaringan untuk grup kontainer ini untuk memungkinkan kontrol penuh pengaturan dan konfigurasi jaringan.
 Untuk grup wadah, ini akan selalu menjadi daftar kosong.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan daftar dependensi jaringan keluar
+### Contoh 1: Dapatkan daftar dependensi jaringan keluar
 ```powershell
 Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint -ResourceGroupName test-rg -ContainerGroupName test-cg
 ```
@@ -47,7 +50,7 @@ Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint -Resource
 []
 ```
 
-Perintah ini mengembalikan daftar dependensi jaringan keluar untuk Contoh Wadah.
+Perintah ini mengembalikan daftar dependensi jaringan keluar untuk Container Instances.
 Container Instances tidak memiliki dependensi jaringan keluar, sehingga daftar ini akan kosong.
 
 ## PARAMETERS
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.IContainerInstanceIdentity
@@ -113,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,11 +155,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <IContainerInstanceIdentity>: Parameter Identitas
   - `[ContainerGroupName <String>]`: Nama grup wadah.
-  - `[ContainerName <String>]`: Contoh nama wadah.
+  - `[ContainerName <String>]`: Nama instans kontainer.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Pengidentifikasi untuk lokasi azure fisik.
   - `[ResourceGroupName <String>]`: Nama grup sumber daya.
-  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+  - `[SubscriptionId <String>]`: Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik. ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ## RELATED LINKS
 

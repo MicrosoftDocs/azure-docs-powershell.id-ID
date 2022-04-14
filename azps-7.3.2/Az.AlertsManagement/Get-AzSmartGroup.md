@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.alertsmanagement
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Get-AzSmartGroup.md
-ms.openlocfilehash: aa5525604ff42964ec859b74c6cfad02d5d72288
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f864a01765cf286c0a8e1ba5285f8f2228ef2684
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189722"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261969"
 ---
 # Get-AzSmartGroup
 
 ## SYNOPSIS
 Mendapatkan informasi Grup Cerdas
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/get-azsmartgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +34,7 @@ Get-AzSmartGroup -SmartGroupId <String> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-**Cmdlet Get-AzSmartGroup** mendapatkan informasi grup cerdas.
+Cmdlet **Get-AzSmartGroup** mendapatkan informasi grup cerdas.
 
 ## EXAMPLES
 
@@ -40,14 +43,14 @@ Get-AzSmartGroup -SmartGroupId <String> [-DefaultProfile <IAzureContextContainer
 Get-AzSmartGroup -TimeRange "1h"
 ```
 
-Daftar semua grup cerdas yang dibentuk dalam 1 jam terakhir. Gunakan Format-List untuk mendapatkan detail lengkap setiap grup cerdas dalam daftar.
+Mencantumkan semua grup cerdas yang dibentuk dalam 1 jam terakhir. Gunakan Format-List untuk mendapatkan detail lengkap setiap grup cerdas dalam daftar.
 
 ### Contoh 2
 ```powershell
 Get-AzSmartGroup -SmartGroupId "afbf1b3a-0a6c-4f19-9c9b-644ccd7b1529" | Format-List
 ```
 
-Dapatkan detail Grup Cerdas berdasarkan Id (GUID) atau Id Sumber Daya (Id ARM Lengkap)
+Dapatkan detail Smart Group menurut Id (GUID) atau Id Sumber Daya (Complete ARM Id)
 
 ## PARAMETERS
 
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -SmartGroupId
-Pengidentifikasi Unik SmartGroup / ResourceId dari SmartGroup.
+Pengidentifikasi Unik SmartGroup / ResourceId smartGroup.
 
 ```yaml
 Type: System.String
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -SortBy
-Properti pemberitahuan yang akan digunakan saat mengurutkan
+Properti peringatan untuk digunakan saat mengurutkan
 
 ```yaml
 Type: System.String
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -TimeRange
-Nilai rentang waktu yang didukung - 1j, 1d, 7d, 30d (Default adalah 1d)
+Nilai rentang waktu yang didukung - 1h, 1d, 7d, 30d (Defaultnya adalah 1d)
 
 ```yaml
 Type: System.String
@@ -127,11 +130,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGatewayHostnameConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementGatewayHostnameConfiguration.md
-ms.openlocfilehash: 50c461e4ecefe7b3a976458055312f049838510d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4f831d28aa8f66ab537addfcc9dc764d7b6c1ae8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189512"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261393"
 ---
 # New-AzApiManagementGatewayHostnameConfiguration
 
 ## SYNOPSIS
-Membuat hostname configuratin untuk Gateway yang sudah ada.
+Membuat configuratin nama host untuk Gateway yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementgatewayhostnameconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzApiManagementGatewayHostnameConfiguration -Context <PsApiManagementContext
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementGatewayHostnameConfiguration** membuat hostname configuratin untuk Gateway yang sudah ada.
+Cmdlet **New-AzApiManagementGatewayHostnameConfiguration** membuat configuratin nama host untuk Gateway yang sudah ada.
 
 ## EXAMPLES
 
@@ -38,7 +41,7 @@ $cert = Get-AzApiManagementCertificate -Context $apimContext -CertificateId "333
 New-AzApiManagementGatewayHostnameConfiguration -Context $apimContext -GatewayId "g01" -GatewayHostnameConfigurationId "h01" -Hostname "www.contoso.com" -CertificateResourceId $cert.Id
 ```
 
-Perintah ini akan membuat konfigurasi nama host "h01" untuk gateway "g01".
+Perintah ini membuat konfigurasi nama host "h01" untuk gateway "g01".
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayHostnameConfigurationId
-Pengidentifikasi dari gateway hostname confiuration baru.
+Pengidentifikasi kebingungan nama host gateway baru.
 Parameter ini bersifat opsional.
 Jika tidak ditentukan akan dihasilkan.
 
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

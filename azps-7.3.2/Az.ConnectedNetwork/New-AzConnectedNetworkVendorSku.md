@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSku.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/New-AzConnectedNetworkVendorSku.md
-ms.openlocfilehash: 52447797e4a17f01ec3e2ad68f52cfc767fd4fc8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f7ddbcb0aeca64fb626a8a880b0ad145af55f88f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010221"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142294189"
 ---
 # New-AzConnectedNetworkVendorSku
 
 ## SYNOPSIS
 Membuat atau memperbarui sku.
-Operasi ini dapat memakan waktu hingga 2 jam untuk selesai.
-Perilaku ini adalah perilaku layanan yang diharapkan.
+Operasi ini dapat memakan waktu hingga 2 jam untuk diselesaikan.
+Ini adalah perilaku layanan yang diharapkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/new-azconnectednetworkvendorsku) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +35,8 @@ New-AzConnectedNetworkVendorSku -SkuName <String> -VendorName <String> [-Subscri
 
 ## DESCRIPTION
 Membuat atau memperbarui sku.
-Operasi ini dapat memakan waktu hingga 2 jam untuk selesai.
-Perilaku ini adalah perilaku layanan yang diharapkan.
+Operasi ini dapat memakan waktu hingga 2 jam untuk diselesaikan.
+Ini adalah perilaku layanan yang diharapkan.
 
 ## EXAMPLES
 
@@ -44,8 +47,8 @@ PS C:\> New-AzConnectedNetworkVendorSku -SkuName sku1 -VendorName myVendor -Subs
 
 ```
 
-Membuat objek konfigurasi peran NF wuth detail yang ditentukan.
-Gunakan fitur ini untuk membuat sku dengan nama sku1, nama vendor myVendor, sku tipe VirtualMachine, tipe penyebaran PrivateEdgeZone.
+Membuat objek konfigurasi peran NF dengan detail yang ditentukan.
+Menggunakan ini untuk membuat sku dengan sku name sku1, nama vendor myVendor, tipe sku VirtualMachine, tipe deployment PrivateEdgeZone.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedApplicationParameter
-Parameter untuk aplikasi terkelola yang akan disediakan oleh vendor.
+Parameter untuk aplikasi yang dikelola akan disediakan oleh vendor.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedApplicationTemplate
-Templat untuk penyebaran aplikasi yang dikelola.
+Templat untuk penyebaran aplikasi terkelola.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -126,7 +129,7 @@ Accept wildcard characters: False
 
 ### -NetworkFunctionRoleConfigurationType
 Array definisi peran fungsi jaringan.
-Untuk membuat, lihat bagian CATATAN untuk properti NETWORKFUNCTIONROLECONFIGURATIONTYPE dan buat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti NETWORKFUNCTIONROLECONFIGURATIONTYPE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.Api20210501.INetworkFunctionRoleConfiguration[]
@@ -156,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,8 +173,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Preview
-Menunjukkan jika sku vendor berada dalam mode pratinjau.
+### -Pratinjau
+Menunjukkan apakah sku vendor berada dalam mode pratinjau.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuType
-Tipe sku.
+Jenis sku.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Support.SkuType
@@ -246,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -296,38 +299,38 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 NETWORKFUNCTIONROLECONFIGURATIONTYPE <INetworkFunctionRoleConfiguration[]>: Array definisi peran fungsi jaringan.
   - `[CustomProfileMetadataConfigurationPath <String>]`: Jalur untuk konfigurasi metadata.
-  - `[ImageReferenceExactVersion <String>]`: Menentukan dalam angka desimal, versi gambar yang tepat yang digunakan untuk membuat mesin virtual.
+  - `[ImageReferenceExactVersion <String>]`: Menentukan angka desimal, versi gambar yang tepat digunakan untuk membuat mesin virtual.
   - `[ImageReferenceOffer <String>]`: Menentukan penawaran gambar yang digunakan untuk membuat mesin virtual.
   - `[ImageReferencePublisher <String>]`: Penerbit gambar.
   - `[ImageReferenceSku <String>]`: SKU gambar.
-  - `[ImageReferenceVersion <String>]`: Menentukan versi gambar yang digunakan untuk membuat mesin virtual. Format yang diperbolehkan adalah Major.Minor.Build atau 'terbaru'. Major, Minor, dan Build adalah angka desimal. Tentukan 'terbaru' untuk menggunakan versi terbaru gambar yang tersedia saat penggunaan. Meskipun Anda menggunakan 'terbaru', gambar VM tidak akan diperbarui secara otomatis setelah waktu penyebaran meskipun versi baru sudah tersedia.
+  - `[ImageReferenceVersion <String>]`: Menentukan versi gambar yang digunakan untuk membuat mesin virtual. Format yang diizinkan adalah Major.Minor.Build atau 'terbaru'. Mayor, Minor, dan Build adalah angka desimal. Tentukan 'terbaru' untuk menggunakan versi terbaru gambar yang tersedia pada waktu penggunaan. Bahkan jika Anda menggunakan 'terbaru', gambar VM tidak akan diperbarui secara otomatis setelah waktu penggunaan bahkan jika versi baru tersedia.
   - `[NetworkInterface <INetworkInterface[]>]`: Konfigurasi antarmuka jaringan.
     - `[IPConfiguration <INetworkInterfaceIPConfiguration[]>]`: Daftar konfigurasi IP antarmuka jaringan.
       - `[DnsServer <String[]>]`: Daftar alamat IP server DNS.
       - `[Gateway <String>]`: Nilai gateway.
       - `[IPAddress <String>]`: Nilai alamat IP.
-      - `[IPAllocationMethod <IPAllocationMethod?>]`: metode alokasi alamat IP.
-      - `[IPVersion <IPVersion?>]`: versi alamat IP.
+      - `[IPAllocationMethod <IPAllocationMethod?>]`: Metode alokasi alamat IP.
+      - `[IPVersion <IPVersion?>]`: Versi alamat IP.
       - `[Subnet <String>]`: Nilai subnet.
     - `[MacAddress <String>]`: Alamat MAC antarmuka jaringan.
     - `[Name <String>]`: Nama antarmuka jaringan.
     - `[VMSwitchType <VMSwitchType?>]`: Tipe sakelar VM.
   - `[OSDiskName <String>]`: Nama VHD.
   - `[OSDiskOstype <OperatingSystemTypes?>]`: Tipe OS.
-  - `[OSDiskSizeGb <Int32?>]`: Menentukan ukuran os disk dalam gigabyte. Ini adalah ukuran disk yang diperluas sepenuhnya dari gambar VHD di ASE. Ukuran disk ini harus lebih besar dari ukuran VHD yang disediakan di vhdUri.
-  - `[OSProfileAdminUsername <String>]`: Menentukan nama akun administrator.    **Windows saja: Tidak** dapat diakhiri dengan "."    **Nilai yang tidak diizinkan:** "administrator", "admin", "pengguna", "user1", "test", "user2", "test1", "user3", "admin1", "1", "123", "a", "actuser", "adm", "admin2", "aspnet", "backup", "console", "david", "guest", "john", "owner", "root", "server", "sql", "support", "support_388945a0", "sys", "test2", "test3", "user4", "user5".    **Panjang minimum (Linux):** 1 karakter **Panjang maksimum (Linux):** 64 karakter **Panjang maksimum (Windows):** 20 karakter    <li> Untuk akses akar ke VM Linux, lihat [Menggunakan hak istimewa akar pada komputer virtual Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) <li> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat Memilih [Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-  - `[OSProfileCustomData <String>]`: Menentukan string berkode basis 64 dari data kustom. String berkode basis 64 dikodekan ke array biner yang disimpan sebagai file di mesin virtual. Panjang maksimum array biner adalah 65535 byte.    **Catatan: Jangan sampai rahasia atau kata sandi apa pun dalam properti CustomData**    Properti ini tidak dapat diperbarui setelah VM dibuat.    customData disampaikan ke VM untuk disimpan sebagai file. Untuk informasi selengkapnya, lihat [Data Kustom di VM Azure](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/) Untuk menggunakan cloud-init untuk Linux VM, lihat Menggunakan [cloud-init](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) untuk mengustomisasi VM Linux selama pembuatan
-  - `[OSProfileCustomDataRequired <Boolean?>]`: Menunjukkan jika data kustom diperlukan untuk menggunakan peran ini.
+  - `[OSDiskSizeGb <Int32?>]`: Menentukan ukuran disk os dalam gigabyte. Ini adalah ukuran disk yang sepenuhnya diperluas yang diperlukan dari gambar VHD di ASE. Ukuran disk ini harus lebih besar dari ukuran VHD yang disediakan dalam vhdUri.
+  - `[OSProfileAdminUsername <String>]`: Menentukan nama akun administrator.    **batasan Windows-saja:** Tidak dapat berakhiran "."    **Nilai yang tidak diperbolehkan:** "administrator", "admin", "user", "user1", "test", "user2", "test1", "user3", "admin1", "1", "123", "a", "actuser", "adm", "admin2", "aspnet", "backup", "console", "david", "guest", "john", "owner", "root", "server", "sql", "support", "support_388945a0", "sys", "test2", "test3", "user4", "user5".    **Panjang minimum (Linux):** Panjang maksimal 1 karakter **(Linux):** Panjang maksimal 64 karakter **(Windows):** 20 karakter    <li> Untuk akses akar ke VM Linux, lihat [Menggunakan hak istimewa akar pada mesin virtual Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-use-root-privileges?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json) <li> Untuk daftar pengguna sistem bawaan di Linux yang tidak boleh digunakan dalam bidang ini, lihat [Memilih Nama Pengguna untuk Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-usernames?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+  - `[OSProfileCustomData <String>]`: Menentukan string data kustom berkode basis 64. String berkode basis 64 didekodekan ke array biner yang disimpan sebagai file di mesin virtual. Panjang maksimum array biner adalah 65535 byte.    **Catatan: Jangan berikan rahasia atau kata sandi apa pun dalam properti customData**    Properti ini tidak dapat diperbarui setelah VM dibuat.    customData dialihkan ke VM untuk disimpan sebagai file. Untuk informasi selengkapnya, lihat [Data Kustom di Azure VM](https://azure.microsoft.com/en-us/blog/custom-data-and-cloud-init-on-windows-azure/)    Untuk menggunakan cloud-init untuk VM Linux Anda, lihat [Menggunakan cloud-init untuk mengkustomisasi VM Linux selama pembuatan](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+  - `[OSProfileCustomDataRequired <Boolean?>]`: Menunjukkan apakah data kustom diperlukan untuk menyebarkan peran ini.
   - `[RoleName <String>]`: Nama peran fungsi jaringan.
   - `[RoleType <NetworkFunctionRoleConfigurationType?>]`: Tipe peran.
-  - `[SshPublicKey <ISshPublicKey[]>]`: Daftar kunci publik KEYS digunakan untuk mengautentikasi menggunakan VM berbasis linux.
-    - `[KeyData <String>]`: Sertifikat kunci publik VM digunakan untuk mengautentikasi dengan VM melalui vm. Kuncinya setidaknya harus memiliki 2048-bit dan dalam format linux-rsa.    Untuk membuat tombol linux, lihat [Membuat tombol KEYS DI Linux dan Mac untuk VM Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-mac-create-ssh-keys?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-    - `[Path <String>]`: Menentukan jalur lengkap pada VM yang dibuat dengan kunci publik vm yang disimpan. Jika file sudah ada, kunci tertentu akan ditambahkan ke file. Contoh: /home/user/.firefox/authorized_keys
-  - `[StorageProfileDataDisk <IDataDisk[]>]`: Menentukan parameter yang digunakan untuk menambahkan disk data ke komputer virtual.
+  - `[SshPublicKey <ISshPublicKey[]>]`: Daftar kunci publik SSH yang digunakan untuk mengautentikasi dengan VM berbasis linux.
+    - `[KeyData <String>]`: Sertifikat kunci publik SSH yang digunakan untuk mengautentikasi dengan VM melalui ssh. Kunci harus setidaknya 2048-bit dan dalam format ssh-rsa.    Untuk membuat kunci ssh, lihat [Membuat kunci SSH di Linux dan Mac untuk VM Linux di Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-mac-create-ssh-keys?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+    - `[Path <String>]`: Menentukan jalur lengkap pada VM yang dibuat tempat kunci publik ssh disimpan. Jika file sudah ada, kunci yang ditentukan ditambahkan ke file. Contoh: /home/user/.ssh/authorized_keys
+  - `[StorageProfileDataDisk <IDataDisk[]>]`: Menentukan parameter yang digunakan untuk menambahkan disk data ke mesin virtual.
     - `[CreateOption <DiskCreateOptionTypes?>]`: Menentukan bagaimana mesin virtual harus dibuat.
-    - `[DiskSizeGb <Int32?>]`: Menentukan ukuran disk kosong dalam gigabyte. Elemen ini bisa digunakan untuk menimpa ukuran disk dalam gambar mesin virtual.
+    - `[DiskSizeGb <Int32?>]`: Menentukan ukuran disk kosong dalam gigabyte. Elemen ini dapat digunakan untuk menimpa ukuran disk dalam gambar mesin virtual.
     - `[Name <String>]`: Nama disk data.
-  - `[UserDataParameter <IAny>]`: Parameter pengguna untuk pelanggan. Format parameter data pengguna harus cocok dengan templat data pengguna yang disediakan.
+  - `[UserDataParameter <IAny>]`: Parameter pengguna untuk pelanggan. Format parameter data pengguna harus dicocokkan dengan templat data pengguna yang disediakan.
   - `[UserDataTemplate <IAny>]`: Templat data pengguna untuk pelanggan. Ini adalah templat skema json yang menjelaskan format dan tipe data parameter data pengguna.
   - `[VhdUri <String>]`: Menentukan uri hard disk virtual.
   - `[VirtualMachineSize <VirtualMachineSizeTypes?>]`: Ukuran mesin virtual.

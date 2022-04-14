@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzDeletedWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Get-AzDeletedWebApp.md
 ms.openlocfilehash: 844ccd89ab306cb3b1ae846bfd1ca16f7260dd31
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140497749"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142116917"
 ---
 # Get-AzDeletedWebApp
 
 ## SYNOPSIS
-Akan dihapus aplikasi web dalam langganan.
+Mendapatkan aplikasi web yang dihapus dalam langganan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/get-azdeletedwebapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/get-azdeletedwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzDeletedWebApp [[-ResourceGroupName] <String>] [[-Name] <String>] [[-Slot] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeletedWebApp** mengembalikan semua aplikasi web yang dihapus dalam langganan. Aplikasi yang dihapus secara opsional dapat difilter menurut grup, nama, dan slot sumber daya. Bisa terdapat lebih dari satu aplikasi yang dihapus dengan nama dan grup sumber daya yang sama. Periksa Waktu Penghapusan untuk membedakan aplikasi terhapus yang memiliki nama yang sama.
+**Cmdlet Get-AzDeletedWebApp** mengembalikan semua aplikasi web yang dihapus dalam langganan. Aplikasi yang dihapus secara opsional dapat difilter menurut grup sumber daya, nama, dan slot. Ada lebih dari satu aplikasi yang dihapus dengan nama dan grup sumber daya yang sama. Periksa DeletionTime untuk membedakan aplikasi yang dihapus yang memiliki nama yang sama.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Cmdlet **Get-AzDeletedWebApp** mengembalikan semua aplikasi web yang dihapus dal
 PS C:\> Get-AzDeletedWebApp -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite"
 ```
 
-Perintah ini memberikan aplikasi yang dihapus bernama ContosoSite milik grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan aplikasi yang dihapus bernama ContosoSite milik grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
@@ -117,11 +117,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

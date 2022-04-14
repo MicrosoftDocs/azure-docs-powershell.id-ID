@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.hdinsight/set-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Set-AzHDInsightDefaultStorage.md
-ms.openlocfilehash: 0073196206fd78edcdff061231fca954b1ed0d1a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cedf7160a3dfa05f35a32132963fb3171a3df52f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008914"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142110311"
 ---
 # Set-AzHDInsightDefaultStorage
 
 ## SYNOPSIS
 Mengatur pengaturan akun Storage default dalam objek konfigurasi kluster.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/set-azhdinsightdefaultstorage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Set-AzHDInsightDefaultStorage [-Config] <AzureHDInsightConfig> [-StorageAccountR
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzHDInsightDefaultStorage** mengatur pengaturan akun Storage default dalam objek konfigurasi kluster Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig lanjut.
+Cmdlet **Set-AzHDInsightDefaultStorage** mengatur pengaturan akun Storage default dalam objek konfigurasi cluster Azure HDInsight yang dibuat oleh cmdlet New-AzHDInsightClusterConfig.
 
 ## EXAMPLES
 
@@ -72,7 +75,7 @@ Perintah ini mengatur akun Storage default untuk objek konfigurasi kluster.
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzHDInsightClusterConfig** .
 
 ```yaml
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Mendapatkan atau mengatur tipe akun penyimpanan default. Default untuk AzureStorage
+Mendapatkan atau mengatur tipe akun penyimpanan default. Default ke AzureStorage
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.HDInsight.Models.Management.StorageType]
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,16 +4,16 @@ ms.assetid: 0BF58D9C-814E-4276-823F-D566DC99391C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 53747eb8f47f329356e348087c6b822a13a58bf7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142243027"
 ---
 # Use-AzureHDInsightCluster
 
 ## SYNOPSIS
-Memilih kluster HDInsight untuk cmdlet Invoke-AzureHDInsightHiveJob digunakan untuk mengirimkan pekerjaan.
+Memilih kluster HDInsight untuk cmdlet Invoke-AzureHDInsightHiveJob yang digunakan untuk mengirimkan pekerjaan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -26,21 +26,21 @@ Use-AzureHDInsightCluster [-Certificate <X509Certificate2>] [-HostedService <Str
 ```
 
 ## DESCRIPTION
-Versi Azure PowerShell HDInsight ini sudah tidak berlaku.
-Cmdlets ini akan dihapus pada 1 Januari 2017.
-Silakan gunakan versi yang lebih baru Azure PowerShell HDInsight.
+Versi Azure PowerShell HDInsight ini sudah tidak digunakan lagi.
+Cmdlet ini akan dihapus pada 1 Januari 2017.
+Silakan gunakan versi Azure PowerShell HDInsight yang lebih baru.
 
-Untuk informasi tentang cara menggunakan HDInsight yang baru untuk membuat kluster, lihat Membuat kluster berbasis Linux di [HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) .
-Untuk informasi tentang cara mengirimkan pekerjaan menggunakan Azure PowerShell dan pendekatan lain, lihat Mengirimkan pekerjaan Hadoop di [HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) .
-Untuk informasi referensi tentang Azure PowerShell HDInsight, [lihat Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
+Untuk informasi tentang cara menggunakan HDInsight baru untuk membuat klaster, lihat [Membuat kluster berbasis Linux dalam HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
+Untuk informasi tentang cara mengirimkan pekerjaan dengan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
+Untuk informasi referensi tentang Azure PowerShell HDInsight, lihat [Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
 
-Cmdlet **Use-AzureHDInsightCluster** memilih kluster Azure HDInsight untuk cmdlet **Invoke-AzureHDInsightHiveJob** yang akan digunakan untuk mengirimkan pekerjaan.
+Cmdlet **Use-AzureHDInsightCluster** memilih cluster Azure HDInsight untuk cmdlet **Invoke-AzureHDInsightHiveJob** yang akan digunakan untuk mengirimkan pekerjaan.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -Certificate
+### -Sertifikat
 Menentukan sertifikat manajemen untuk langganan Azure.
 
 ```yaml
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Titik akhir
-Menentukan titik akhir yang akan digunakan untuk menyambungkan ke Azure.
+Menentukan titik akhir untuk digunakan untuk menyambungkan ke Azure.
 Jika Anda tidak menentukan parameter ini, cmdlet ini menggunakan titik akhir default.
 
 ```yaml
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kluster yang digunakan oleh cmdlet **Invoke-AzureHDInsightHiveJob.**
+Menentukan nama kluster yang digunakan oleh cmdlet **Invoke-AzureHDInsightHiveJob** .
 
 ```yaml
 Type: String
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Langganan
-Menentukan langganan yang berisi kluster HDInsight yang akan digunakan.
+Menentukan langganan yang berisi kluster HDInsight untuk digunakan.
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -161,8 +161,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureHDInsightCluster](./Get-AzureHDInsightCluster.md)
 
-[New-AzureHDInsightCluster](./New-AzureHDInsightCluster.md)
+[AzureHDInsightCluster baru](./New-AzureHDInsightCluster.md)
 
-[Remove-AzureHDInsightCluster](./Remove-AzureHDInsightCluster.md)
+[Hapus-AzureHDInsightCluster](./Remove-AzureHDInsightCluster.md)
 
 

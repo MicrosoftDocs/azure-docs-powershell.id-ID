@@ -5,26 +5,29 @@ online version: https://docs.microsoft.com/powershell/module/az.windowsiotservic
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/WindowsIotServices/help/Get-AzWindowsIotServicesDevice.md
-ms.openlocfilehash: 26900e9b4a58bd3a827eedd0c36fc1ec212bde18
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6ec8e194d4ad2f6974fae3a240f6c9311d58a1e3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140389823"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142248499"
 ---
 # Get-AzWindowsIotServicesDevice
 
 ## SYNOPSIS
-Dapatkan metadata terkait non-keamanan dari suatu Windows IoT Device Service.
+Dapatkan metadata terkait non-keamanan dari Layanan Perangkat IoT Windows.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.windowsiotservices/get-azwindowsiotservicesdevice) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Daftar1 (Default)
+### List1 (Default)
 ```
 Get-AzWindowsIotServicesDevice [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzWindowsIotServicesDevice -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,11 +46,11 @@ Get-AzWindowsIotServicesDevice -ResourceGroupName <String> [-SubscriptionId <Str
 ```
 
 ## DESCRIPTION
-Dapatkan metadata terkait non-keamanan dari suatu Windows IoT Device Service.
+Dapatkan metadata terkait non-keamanan dari Layanan Perangkat IoT Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua Windows IoT dalam langganan
+### Contoh 1: Dapatkan semua layanan IoT Windows di bawah langganan
 ```powershell
 PS C:\> Get-AzWindowsIotServicesDevice
 
@@ -57,9 +60,9 @@ West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5f
 eastus   wsi-t02 Microsoft.WindowsIoT/DeviceServices "5c006ad2-0000-0700-0000-5faa3e090000"
 ```
 
-Perintah ini akan Windows ioT dalam langganan.
+Perintah ini mendapatkan semua layanan IoT Windows dalam langganan.
 
-### Contoh 2: Dapatkan semua Windows IoT di bawah grup sumber daya
+### Contoh 2: Dapatkan semua layanan IoT Windows di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzWindowsIotServicesDevice -ResourceGroupName azure-rg-test
 
@@ -69,9 +72,9 @@ West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5f
 eastus   wsi-t02 Microsoft.WindowsIoT/DeviceServices "5c006ad2-0000-0700-0000-5faa3e090000"
 ```
 
-Perintah ini akan memberikan Windows IoT di bawah grup sumber daya.
+Perintah ini mendapatkan semua layanan IoT Windows di bawah grup sumber daya.
 
-### Contoh 3: Mendapatkan Windows IoT berdasarkan nama
+### Contoh 3: Dapatkan layanan IoT Windows menurut nama
 ```powershell
 PS C:\> Get-AzWindowsIotServicesDevice -ResourceGroupName azure-rg-test -Name wsi-t01
 
@@ -80,9 +83,9 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5faa37830000"
 ```
 
-Perintah ini mendapatkan Windows IoT berdasarkan namanya.
+Perintah ini mendapatkan layanan IoT Windows berdasarkan nama.
 
-### Contoh 4: Mendapatkan Windows IoT berdasarkan objek
+### Contoh 4: Dapatkan layanan IoT Windows menurut objek
 ```powershell
 PS C:\> $wsi = New-AzWindowsIotServicesDevice -Name wsi-t01 -ResourceGroupName azure-rg-test -Location eastus -Quantity 10 -BillingDomainName 'microsoft.onmicrosoft.com' -AdminDomainName 'microsoft.onmicrosoft.com'
 PS C:\> Get-AzWindowsIotServicesDevice -InputObject $wsi
@@ -92,9 +95,9 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5faa37830000"
 ```
 
-Perintah ini akan Windows IoT berdasarkan objek.
+Perintah ini mendapatkan layanan IoT Windows menurut objek.
 
-### Contoh 4: Mendapatkan Windows IoT berdasarkan pipeline
+### Contoh 4: Dapatkan layanan IoT Windows menurut pipeline
 ```powershell
 PS C:\> $wsi = New-AzWindowsIotServicesDevice -Name wsi-t01 -ResourceGroupName azure-rg-test -Location eastus -Quantity 10 -BillingDomainName 'microsoft.onmicrosoft.com' -AdminDomainName 'microsoft.onmicrosoft.com' | Get-AzWindowsIotServicesDevice
 
@@ -103,7 +106,7 @@ Location Name    Type                                Etag
 West US  wsi-t01 Microsoft.WindowsIoT/DeviceServices "5c006e63-0000-0700-0000-5faa37830000"
 ```
 
-Perintah ini mendapatkan Windows IoT menurut pipeline.
+Perintah ini mendapatkan layanan IoT Windows menurut saluran.
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.WindowsIotServices.Models.IWindowsIotServicesIdentity
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama layanan Windows IoT Device.
+Nama Layanan Perangkat IoT Windows.
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi data Windows IoT Device.
+Nama grup sumber daya yang berisi Windows Layanan Perangkat IoT.
 
 ```yaml
 Type: System.String
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -203,9 +206,9 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWindowsIotServicesIdentity>: Parameter Identitas
-  - `[DeviceName <String>]`: Nama layanan Windows IoT Device.
+  - `[DeviceName <String>]`: Nama Layanan Perangkat IoT Windows.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi data Windows IoT Device.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi Windows Layanan Perangkat IoT.
   - `[SubscriptionId <String>]`: Pengidentifikasi langganan.
 
 ## RELATED LINKS

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Backup-AzureRmBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Backup-AzureRmBackupItem.md
 ms.openlocfilehash: e87ab3ec04378dc97e144d2b444ee5398ff4f4f0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424577"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100871"
 ---
 # Backup-AzureRmBackupItem
 
 ## SYNOPSIS
-Memulai pencadangan untuk item Cadangan.
+Memulai cadangan untuk item Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,9 +28,9 @@ Backup-AzureRmBackupItem [-Item] <AzureRMBackupItem> [-DefaultProfile <IAzureCon
 ```
 
 ## DESCRIPTION
-Cmdlet **Backup-AzureRmBackupItem** memulai pencadangan untuk item Cadangan Azure yang diproteksi yang tidak terikat dengan jadwal pencadangan.
-Anda bisa melakukan cadangan awal segera setelah Anda mengaktifkan proteksi atau memulai cadangan setelah pencadangan terjadwal gagal.
-Jika pekerjaan pencadangan yang sudah ada dijalankan, cmdlet ini gagal.
+Cmdlet **Backup-AzureRmBackupItem** memulai cadangan untuk item Azure Backup yang diproteksi yang tidak terkait dengan jadwal cadangan.
+Anda dapat melakukan pencadangan awal segera setelah Mengaktifkan proteksi atau memulai pencadangan setelah pencadangan terjadwal gagal.
+Jika tugas pencadangan yang sudah ada berjalan, cmdlet ini gagal.
 
 ## EXAMPLES
 
@@ -44,18 +44,18 @@ WorkloadName    Operation       Status          StartTime              EndTime
 co03-vm         Backup          InProgress      26-Aug-15 12:24:01 PM  01-Jan-01 12:00:00 AM
 ```
 
-Perintah pertama mendapatkan vault bernama Vault03 menggunakan cmdlet Get-AzureRmBackupVault baru.
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan wadah yang memiliki nama yang ditentukan di penyimpanan $Vault dengan menggunakan cmdlet Get-AzureRmBackupContainer.
-Perintah menyimpan objek tersebut dalam $Container variabel.
-Perintah terakhir mendapatkan item cadangan di $Container dengan menggunakan cmdlet Get-AzureRmBackupItem.
-Perintah itu meneruskan item ke cmdlet saat ini dengan menggunakan operator pipeline.
+Perintah pertama mendapatkan kubah bernama Vault03 dengan menggunakan cmdlet Get-AzureRmBackupVault.
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan wadah yang memiliki nama yang ditentukan dalam kubah di $Vault menggunakan cmdlet Get-AzureRmBackupContainer.
+Perintah menyimpan objek tersebut dalam variabel $Container.
+Perintah terakhir mendapatkan item cadangan dalam $Container menggunakan cmdlet Get-AzureRmBackupItem.
+Perintah melewati item ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet saat ini mulai mencadangkan mesin virtual dalam wadah.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Item
-Menentukan item Cadangan ketika cmdlet ini memulai operasi pencadangan.
+Menentukan item Cadangan di mana cmdlet ini memulai operasi pencadangan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupItem
@@ -85,12 +85,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupItem
-Parameter: Item (MenurutNilai)
+Parameter: Item (ByValue)
 
 ## OUTPUTS
 
@@ -104,6 +104,6 @@ Parameter: Item (MenurutNilai)
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[Restore-AzureRmBackupItem](./Restore-AzureRmBackupItem.md)
+[Pulihkan-AzureRmBackupItem](./Restore-AzureRmBackupItem.md)
 
 

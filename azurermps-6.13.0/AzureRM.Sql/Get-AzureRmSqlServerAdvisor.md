@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAdvisor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAdvisor.md
 ms.openlocfilehash: a77119e653f3d4e6155fbe98e85a583eca50c33f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419522"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247994"
 ---
 # Get-AzureRmSqlServerAdvisor
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa Penasihat azure SQL Server.
+Mendapatkan satu atau beberapa Penasihat untuk Server Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Get-AzureRmSqlServerAdvisor [-AdvisorName <String>] [-ExpandRecommendedActions] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServerAdvisor** mendapatkan satu atau beberapa SQL Server Umum Azure untuk SQL Server.
+Cmdlet **Get-AzureRmSqlServerAdvisor** mendapatkan satu atau beberapa Azure SQL Server Advisors untuk Server Azure SQL.
 
 ## EXAMPLES
 
@@ -75,9 +75,9 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah ini mendapatkan daftar semua penasihat untuk server yang bernama wi-runner-australia-east yang dimiliki grup sumber daya bernama WIRunnersProd.
+Perintah ini mendapatkan daftar semua penasihat untuk server bernama wi-runner-australia-east yang termasuk dalam grup sumber daya bernama WIRunnersProd.
 
-### Contoh 2: Mendapatkan satu penasihat untuk server
+### Contoh 2: Dapatkan penasihat tunggal untuk server
 ```
 PS C:\> Get-AzureRmSqlServerAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex"
 ResourceGroupName              : WIRunnersProd
@@ -91,9 +91,9 @@ RecommendationsStatus          : Ok
 RecommendedActions             : {}
 ```
 
-Perintah ini mendapatkan penasihat bernama CreateIndex untuk server yang bernama wi-runner-australia-east.
+Perintah ini mendapatkan penasihat bernama CreateIndex untuk server bernama wi-runner-australia-east.
 
-### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang disarankan yang disertakan dalam respons
+### Contoh 3: Mencantumkan semua penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
 PS C:\>Get-AzureRmSqlServerAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -ExpandRecommendedActions
 ResourceGroupName              : WIRunnersProd
@@ -142,10 +142,10 @@ RecommendationsStatus          : SchemaIsConsistent
 RecommendedActions             : {}
 ```
 
-Perintah ini akan mendapatkan semua penasihat server bernama wi-runner-australia-east.
-Karena perintah menggunakan parameter *ExpandRecommendedActions,* cmdlet akan mendapatkan tindakan yang disarankan penasihat yang disertakan dalam respons.
+Perintah ini mendapatkan semua penasihat untuk server bernama wi-runner-australia-east.
+Karena perintah menggunakan parameter *ExpandRecommendedActions* , cmdlet mendapatkan tindakan yang direkomendasikan penasihat yang disertakan dalam respons.
 
-### Contoh 4: Dapatkan satu penasihat dengan tindakan yang direkomendasikan yang disertakan dalam respons
+### Contoh 4: Dapatkan penasihat tunggal dengan tindakan yang direkomendasikan yang disertakan dalam respons
 ```
 PS C:\> Get-AzureRmSqlServerAdvisor -ResourceGroupName "WIRunnersProd" -ServerName "wi-runner-australia-east" -AdvisorName "CreateIndex" -ExpandRecommendedActions
 ResourceGroupName              : WIRunnersProd
@@ -162,12 +162,12 @@ RecommendedActions             : {IR_[test_schema]_[test_table_0.0361551]_6C7AE8
                                  IR_[test_schema]_[test_table_0.437714]_6C7AE8CC9C87E7FD5893...}
 ```
 
-Perintah ini mendapatkan penasihat bernama CreateIndex dari server yang bernama wi-runner-australia-east dengan tindakan yang disarankan yang disertakan dalam respons.
+Perintah ini mendapatkan penasihat bernama CreateIndex dari server bernama wi-runner-australia-east dengan tindakan yang direkomendasikan yang disertakan dalam respons.
 
 ## PARAMETERS
 
 ### -AdvisorName
-Menentukan nama penasihat yang akan mendapatkan cmdlet ini.
+Menentukan nama penasihat yang didapatkan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpandRecommendedActions
-Mengindikasikan bahwa cmdlet menyertakan tindakan rekomendasi penasihat yang disertakan dalam respons.
+Menunjukkan bahwa cmdlet menyertakan tindakan yang direkomendasikan dari penasihat yang disertakan dalam respons.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server untuk penasihat bahwa permintaan cmdlet ini.
+Menentukan nama server untuk penasihat yang diminta cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -252,10 +252,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.Advisor.Model.AzureSqlServerAdvisorModel
+### Microsoft.Azure.Commands.Sql.Advisor.Model.AzureSqlServerAdvisorModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, server, mssql, advisor
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, server, mssql, penasihat
 
 ## RELATED LINKS
 
@@ -267,5 +267,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlServerAdvisorAutoExecuteStatus](./Set-AzureRmSqlServerAdvisorAutoExecuteStatus.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 

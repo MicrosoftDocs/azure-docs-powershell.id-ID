@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/set-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountGeneratedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Set-AzIntegrationAccountGeneratedIcn.md
-ms.openlocfilehash: 116a9bfecc4e35c8789b8c24b82b54bb08716c52
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2e7f02975966b9a309c69abc4b75a607ac25a53c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140402195"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109951"
 ---
 # Set-AzIntegrationAccountGeneratedIcn
 
 ## SYNOPSIS
-Memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran (ICN, Interchange Control Number) dalam grup sumber daya Azure.
+Memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran (ICN, Interchange Control Number) di grup sumber daya Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/set-azintegrationaccountgeneratedicn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Set-AzIntegrationAccountGeneratedIcn -ResourceGroupName <String> -Name <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet Set-AzIntegrationAccountGeneratedIcn memperbarui akun integrasi yang sudah ada yang menghasilkan nomor kontrol pertukaran (ICN, Interchange Control Number) dan mengembalikan objek yang mewakili akun integrasi yang menghasilkan nomor kontrol pertukaran.
+Cmdlet Set-AzIntegrationAccountGeneratedIcn memperbarui akun integrasi yang sudah ada yang dihasilkan nomor kontrol pertukaran (ICN) dan mengembalikan objek yang mewakili akun integrasi yang dihasilkan nomor kontrol pertukaran.
 Gunakan cmdlet ini untuk memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran.
 Anda bisa memperbarui akun integrasi yang dihasilkan nomor kontrol pertukaran dengan menentukan nama akun integrasi, nama grup sumber daya dan nama perjanjian.
-Anda tidak bisa membuat akun integrasi baru yang dihasilkan nomor kontrol pertukaran dengan perintah ini.
-Untuk menggunakan parameter dinamis, cukup ketikkan parameter dinamis dalam perintah, atau ketikkan tanda hubung(-) untuk menunjukkan nama parameter, lalu tekan tombol TAB berulang kali untuk melihat parameter yang tersedia.
-Jika Anda melewatkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
-Harap sediakan parameter "-AgreementType" untuk menentukan apakah angka kontrol X12 atau Edifact akan dikembalikan
+Anda tidak dapat membuat akun integrasi baru yang dihasilkan nomor kontrol pertukaran dengan perintah ini.
+Untuk menggunakan parameter dinamis, cukup ketikkan parameter dalam perintah, atau ketik tanda hubung(-) untuk menunjukkan nama parameter lalu tekan tombol TAB berulang kali untuk menelusuri parameter yang tersedia.
+Jika Anda melewatkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
+Harap sediakan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan akun integrasi yang dihasilkan nomor kontrol pertukaran X12 untuk perjanjian akun integrasi tertentu, meningkatkan nilainya dengan 100 lalu menulis kembali nilai yang diperbarui.
+Perintah ini mendapatkan akun integrasi yang dihasilkan X12 nomor kontrol pertukaran untuk perjanjian akun integrasi tertentu, meningkatkan nilainya dengan 100 lalu menulis kembali nilai yang diperbarui.
 
 ### Contoh 2
 ```
@@ -65,7 +68,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan akun integrasi yang dihasilkan EdifactIntegrationAccountAgreement interchange control number untuk perjanjian akun integrasi tertentu, meningkatkan nilainya dengan menambah 100 lalu menulis kembali nilai yang diperbarui.
+Perintah ini mendapatkan akun integrasi yang dihasilkan EdifactIntegrationAccountAgreement nomor kontrol pertukaran untuk perjanjian akun integrasi tertentu, meningkatkan nilainya dengan 100 lalu menulis kembali nilai yang diperbarui.
 
 ## PARAMETERS
 
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlNumber
-Nilai baru angka kontrol yang dihasilkan.
+Nomor kontrol yang dihasilkan nilai baru.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

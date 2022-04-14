@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PrivateDns/PrivateDns/help/Remove-AzPrivateDnsVirtualNetworkLink.md
 ms.openlocfilehash: a7611df5907564d68475b3fdea069d3ad238883e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099819"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225657"
 ---
 # Remove-AzPrivateDnsVirtualNetworkLink
 
 ## SYNOPSIS
-Menghapus link jaringan virtual dari grup sumber daya.
+Menghapus tautan jaringan virtual dari grup sumber daya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsvirtualnetworklink) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.privatedns/remove-azprivatednsvirtualnetworklink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Remove-AzPrivateDnsVirtualNetworkLink -ResourceGroupName <String> -ZoneName <Str
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Object
+### Objek
 ```
 Remove-AzPrivateDnsVirtualNetworkLink -InputObject <PSPrivateDnsVirtualNetworkLink> [-Overwrite] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -42,10 +42,10 @@ Remove-AzPrivateDnsVirtualNetworkLink -ResourceId <String> [-PassThru]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzPrivateDnsVirtualNetworkLink secara** permanen menghapus link Privat Domain Name System (DNS) dari grup sumber daya yang ditentukan.
-Anda bisa melewati **objek PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau dengan menggunakan operator pipeline, atau Anda juga bisa menentukan parameter *Name ZoneName* dan  *ResourceGroupName*.
-Anda bisa menggunakan parameter Konfirmasi dan $ConfirmPreference Windows PowerShell kontrol apakah cmdlet meminta konfirmasi Anda.
-Saat menentukan link menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link* ), link tersebut tidak dihapus jika telah diubah dalam DNS Privat Azure sejak **objek PSPrivateDnsVirtualNetworkLink** lokal diambil. Hal ini menyediakan perlindungan untuk perubahan zona serentak. Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang menghapus zona terlepas dari perubahan konklarasi.
+Cmdlet **Remove-AzPrivateDnsVirtualNetworkLink** menghapus tautan Domain Name System (DNS) pribadi secara permanen dari grup sumber daya tertentu.
+Anda dapat melewati objek **PSPrivateDnsVirtualNetworkLink** menggunakan parameter *Link* atau menggunakan operator pipeline, atau menentukan parameter *Name* *ZoneName* dan *ResourceGroupName* .
+Anda dapat menggunakan variabel Konfirmasi parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
+Saat menentukan tautan menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dilewatkan melalui pipeline atau parameter *Link* ), tautan tidak dihapus jika telah diubah dalam DNS Pribadi Azure sejak objek **PSPrivateDnsVirtualNetworkLink** lokal diambil. Ini menyediakan perlindungan untuk perubahan zona serentak. Ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus zona terlepas dari perubahan bersamaan.
 
 ## EXAMPLES
 
@@ -54,12 +54,12 @@ Saat menentukan link menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikir
 PS C:\>Remove-AzPrivateDnsVirtualNetworkLink -ResourceGroupName "MyResourceGroup" -ZoneName "myzone.com" -Name "mylink"
 ```
 
-Perintah ini menghapus link bernama mylink yang ditautkan ke zona myzone.com dari grup sumber daya yang bernama MyResourceGroup.
+Perintah ini menghapus tautan bernama mylink yang ditautkan ke zona myzone.com dari grup sumber daya bernama MyResourceGroup.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek link jaringan virtual yang akan dihapus.
+Objek tautan jaringan virtual untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.PrivateDns.Models.PSPrivateDnsVirtualNetworkLink
@@ -89,9 +89,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama link yang akan dihapus.
-Anda juga harus menentukan parameter *ResourceGroupName* *dan ZoneName* .
-Alternatifnya, Anda dapat menentukan tautan menggunakan parameter *Link* .
+Menentukan nama tautan yang akan dihapus.
+Anda juga harus menentukan parameter *ResourceGroupName* dan *ZoneName* .
+Atau, Anda dapat menentukan tautan menggunakan parameter *Tautan* .
 
 ```yaml
 Type: System.String
@@ -105,10 +105,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Overwrite
-Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (dikirim melalui saluran atau parameter *Link* ), zona tidak dihapus jika telah diubah di DNS Azure karena objek **PSPrivateDnsVirtualNetworkLink** lokal diambil.
-Hal ini menyediakan perlindungan untuk perubahan zona serentak.
-Hal ini dapat menyembunyikan penggunaan parameter *Overwrite* , yang menghapus zona terlepas dari perubahan konklarasi.
+### -Timpa
+Saat menentukan zona menggunakan objek **PSPrivateDnsVirtualNetworkLink** (yang dilewatkan melalui parameter pipeline atau *Link* ), zona tidak dihapus jika telah diubah di Azure DNS sejak objek **PSPrivateDnsVirtualNetworkLink** lokal diambil.
+Ini menyediakan perlindungan untuk perubahan zona serentak.
+Ini dapat ditekan menggunakan parameter *Timpa* , yang menghapus zona terlepas dari perubahan bersamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Digunakan untuk memberikan hasil (boolean) dari operasi menghapus link jaringan virtual selanjutnya ke bawah saluran.
+Digunakan untuk melewati hasil (boolean) operasi hapus tautan jaringan virtual lebih jauh ke bawah pipeline.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya yang berisi tautan untuk dihapus.
-Anda juga harus menentukan parameter *ZoneName* *dan Name* .
-Alternatifnya, Anda bisa menentukan zona DNS menggunakan objek **PSPrivateDnsVirtualNetworkLink** , yang dikirim melalui saluran atau parameter *Link* .
+Anda juga harus menentukan parameter *ZoneName* dan *Name* .
+Alternatifnya, Anda dapat menentukan zona DNS menggunakan objek **PSPrivateDnsVirtualNetworkLink** , yang dilewati melalui pipeline atau parameter *Link* .
 
 ```yaml
 Type: System.String
@@ -170,9 +170,9 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneName
-Menentukan nama zona DNS privat yang terkait dengan tautan.
-Anda juga harus menentukan parameter *ResourceGroupName* *dan Name* .
-Alternatifnya, Anda dapat menentukan tautan menggunakan parameter *Link* .
+Menentukan nama zona DNS privat yang dikaitkan dengan link.
+Anda juga harus menentukan parameter *ResourceGroupName* dan *Name* .
+Atau, Anda dapat menentukan tautan menggunakan parameter *Tautan* .
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountMap.md
-ms.openlocfilehash: 90826dc3bfa290bf8c2932fc704a6d82642ae6fa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 27413ab6f37c2c2aa4cedffddf26d1e465b1da80
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393555"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109987"
 ---
 # New-AzIntegrationAccountMap
 
 ## SYNOPSIS
 Membuat peta akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountmap) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,15 +33,15 @@ New-AzIntegrationAccountMap -ResourceGroupName <String> -Name <String> -MapName 
 Cmdlet **New-AzIntegrationAccountMap** membuat peta akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili peta akun integrasi.
 Menentukan nama akun integrasi, nama grup sumber daya, nama peta, dan definisi peta.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Buat peta akun integrasi
+### Contoh 1: Membuat peta akun integrasi
 ```powershell
 PS C:\>New-AzIntegrationAccountMap -ResourceGroupName "ResourceGroup11" -Name "IntegrationAccount31" -MapName "IntegrationAccountMap47" -MapDefinition $MapContent
 Id          : /subscriptions/<SubscriptionId>/resourceGroups/ResourceGroup11/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount31/maps/IntegrationAccountMap47
@@ -53,12 +56,12 @@ ContentSize : 3056
 Metadata    :
 ```
 
-Perintah ini membuat peta akun integrasi dalam grup sumber daya yang ditentukan.
-Perintah menentukan definisi peta yang disimpan di variabel $MapContent oleh perintah sebelumnya.
+Perintah ini membuat peta akun integrasi dalam grup sumber daya tertentu.
+Perintah menentukan definisi peta yang disimpan dalam variabel $MapContent oleh perintah sebelumnya.
 
 ### Contoh 2
 
-Membuat peta akun integrasi. (otomatisgenerated)
+Membuat peta akun integrasi. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMap47' -MapType Xslt -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
@@ -68,7 +71,7 @@ New-AzIntegrationAccountMap -MapFilePath <String> -MapName 'IntegrationAccountMa
 
 ### -ContentType
 Menentukan tipe konten untuk peta akun integrasi.
-Cmdlet ini mendukung application/xml sebagai tipe konten peta.
+Cmdlet ini mendukung aplikasi/xml sebagai tipe konten peta.
 
 ```yaml
 Type: System.String
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 
 ### -MapDefinition
 Menentukan objek definisi untuk peta akun integrasi.
-Tentukan parameter ini atau *parameter MapFilePath* .
+Tentukan parameter ini atau parameter *MapFilePath* .
 
 ```yaml
 Type: System.String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -MapFilePath
-Menentukan jalur file definisi untuk peta akun integrasi. Tentukan parameter ini atau *parameter MapDefinition* .
+Menentukan jalur file definisi untuk peta akun integrasi. Tentukan parameter ini atau parameter *MapDefinition* .
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

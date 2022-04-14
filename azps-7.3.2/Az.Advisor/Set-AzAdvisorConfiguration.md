@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/set-azad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Set-AzAdvisorConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Set-AzAdvisorConfiguration.md
-ms.openlocfilehash: 5a4a6f232934cc10522a265edc056a77bfe08248
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8d7e6a246a08508f38e79f542b126e1035d4aba9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010644"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261987"
 ---
 # Set-AzAdvisorConfiguration
 
 ## SYNOPSIS
-Memperbarui atau membuat Konfigurasi Penasihat Azure.
+Memperbarui atau membuat Konfigurasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.advisor/set-azadvisorconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,10 +37,10 @@ Set-AzAdvisorConfiguration [-Exclude] [-LowCpuThreshold] <Int32>
 ```
 
 ## DESCRIPTION
-Digunakan untuk memperbarui konfigurasi Azure Advisor. Dua tipe Konfigurasi ada: Konfigurasi tingkat langganan dan Konfigurasi tingkat Grup Sumber Daya. 
+Digunakan untuk memperbarui konfigurasi Azure Advisor. Ada dua tipe Konfigurasi: Konfigurasi tingkat langganan dan konfigurasi tingkat ResourceGroup. 
 
-Konfigurasi tingkat langganan: Hanya bisa ada satu Konfigurasi untuk tipe ini untuk langganan. Properti LowCpuThreshold dan Exclude bisa diperbarui menggunakan cmdlet ini.
-Konfigurasi tingkat Grup Sumber Daya: Hanya ada satu konfigurasi untuk setiap Grup Sumber Daya. Hanya properti Exclude yang dapat diperbarui menggunakan cmdlet ini.
+Konfigurasi tingkat langganan: Hanya ada satu Konfigurasi untuk tipe ini untuk langganan. Properti LowCpuThreshold dan Exclude dapat diperbarui menggunakan cmdlet ini.
+Konfigurasi tingkat ResourceGroup: Hanya ada satu konfigurasi untuk setiap ResourceGroup. Hanya properti Pengecualian yang dapat diperbarui menggunakan cmdlet ini.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Properties : additionalProperties : null
 Type       : Microsoft.Advisor/Configurations
 ```
 
-Memperbarui configuration(lowCpuThreshold) untuk Konfigurasi tingkat langganan.
+Memperbarui konfigurasi(lowCpuThreshold) untuk Konfigurasi tingkat langganan.
 
 ### Contoh 2
 ```powershell
@@ -73,7 +76,7 @@ Properties : additionalProperties : null
 Type       : Microsoft.Advisor/Configurations
 ```
 
-Memperbarui configuration(lowCpuThreshold, exclude) untuk Konfigurasi tingkat langganan dan dikecualikan dari rekomendasi pembuatan.
+Memperbarui konfigurasi(lowCpuThreshold, exclude) untuk Konfigurasi tingkat langganan dan tidak termasuk dari generasi rekomendasi.
 
 ### Contoh 3
 ```powershell
@@ -90,7 +93,7 @@ Properties : additionalProperties : null
 Type       : Microsoft.Advisor/Configurations
 ```
 
-Pembaruan configuration(exclude) untuk resourceGroupName1 akan dikecualikan dalam pembuatan rekomendasi.
+Memperbarui konfigurasi(dikecualikan) agar resourceGroupName1 dikecualikan dalam pembuatan rekomendasi.
 
 ### Contoh 4
 ```powershell
@@ -107,12 +110,12 @@ Properties : additionalProperties : null
 Type       : Microsoft.Advisor/Configurations
 ```
 
-Memperbarui konfigurasi untuk rekomendasi tertentu yang disampaikan dari saluran.
+Memperbarui konfigurasi untuk rekomendasi yang diberikan dari pipeline.
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Exclude
-Kecualikan dalam pembuatan rekomendasi. Jika tidak ada properti pengecualian yang ditentukan akan diatur ke false.
+Tidak termasuk dari generasi rekomendasi. Jika properti exclude tidak ditentukan akan diatur ke false.
 
 ```yaml
 Type: SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Tipe objek powershell PsAzureAdvisorConfigurationData dikembalikan oleh Get-AzAdvisorConfiguration panggilan.
+Tipe objek powershell PsAzureAdvisorConfigurationData dikembalikan oleh panggilan Get-AzAdvisorConfiguration.
 
 ```yaml
 Type: PsAzureAdvisorConfigurationData
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -LowCpuThreshold
-Nilai untuk ambang Cpu rendah.
+Nilai untuk ambang batas Cpu Rendah.
 
 ```yaml
 Type: Int32
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -219,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlDatabase.md
-ms.openlocfilehash: fb545007e77487b32bc634ab9d47d9a3a11b0d75
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 83af5117ecdf695c51164df76431b5df14625851
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140370803"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207621"
 ---
 # Set-AzSqlDatabase
 
 ## SYNOPSIS
 Mengatur properti untuk database, atau memindahkan database yang sudah ada ke dalam kumpulan elastis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqldatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +45,7 @@ Set-AzSqlDatabase [-DatabaseName] <String> [-MaxSizeBytes <Int64>] [-Edition <St
  [-Confirm] [<CommonParameters>]
 ```
 
-### Ganti Nama
+### Ubah nama
 ```
 Set-AzSqlDatabase [-DatabaseName] <String> -NewName <String> [-AsJob] [-BackupStorageRedundancy <String>]
  [-SecondaryType <String>] [-MaintenanceConfigurationId <String>] [-ServerName] <String>
@@ -51,7 +54,7 @@ Set-AzSqlDatabase [-DatabaseName] <String> -NewName <String> [-AsJob] [-BackupSt
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlDatabase** mengatur properti untuk database di Azure SQL Database. Cmdlet ini dapat mengubah tingkat layanan (*Edition*), tingkat kinerja (*RequestedServiceObjectiveName*), dan ukuran maksimum penyimpanan (*MaxSizeBytes*) untuk database.  Selain itu, Anda dapat menentukan parameter *ElastisPoolName* untuk memindahkan database ke dalam kolam elastis. Jika database sudah dalam pool elastis, Anda dapat menggunakan parameter *RequestedServiceObjectiveName* untuk memindahkan database dari pool elastis dan ke tingkat kinerja untuk database tunggal.
+Cmdlet **Set-AzSqlDatabase** mengatur properti untuk database dalam Azure SQL Database. Cmdlet ini dapat mengubah tingkat layanan (*Edisi*), tingkat kinerja (*RequestedServiceObjectiveName*), dan ukuran maksimum penyimpanan (*MaxSizeBytes*) untuk database.  Selain itu, Anda dapat menentukan parameter *ElasticPoolName* untuk memindahkan database ke dalam kumpulan elastis. Jika database sudah ada dalam kumpulan elastis, Anda dapat menggunakan parameter *RequestedServiceObjectiveName* untuk memindahkan database keluar dari kumpulan elastis dan ke tingkat kinerja untuk database tunggal.
 
 ## EXAMPLES
 
@@ -78,9 +81,9 @@ EarliestRestoreDate           :
 Tags                          :
 ```
 
-Perintah ini memperbarui database yang bernama Database01 ke database S0 Standar di server yang bernama Server01.
+Perintah ini memperbarui database bernama Database01 menjadi database S0 Standar di server bernama Server01.
 
-### Contoh 2: Menambahkan database ke pool elastis
+### Contoh 2: Menambahkan database ke kumpulan elastis
 ```
 PS C:\>Set-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -DatabaseName "Database01" -ServerName "Server01" -ElasticPoolName "ElasticPool01"
 ResourceGroupName             : ResourceGroup01
@@ -103,9 +106,9 @@ EarliestRestoreDate           :
 Tags                          :
 ```
 
-Perintah ini menambahkan database bernama Database01 ke kolam elastis bernama ElastisPool01 yang dihosting di server bernama Server01.
+Perintah ini menambahkan database bernama Database01 ke kumpulan elastis bernama ElasticPool01 yang dihosting di server bernama Server01.
 
-### Contoh 3: Mengubah ukuran maksimum penyimpanan database
+### Contoh 3: Memodifikasi ukuran maksimal penyimpanan database
 ```
 PS C:\>Set-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -DatabaseName "Database01" -ServerName "Server01" -MaxSizeBytes 1099511627776
 ResourceGroupName             : ResourceGroup01
@@ -130,7 +133,7 @@ Tags                          :
 
 Perintah ini memperbarui database bernama Database01 untuk mengatur ukuran maksimalnya menjadi 1 TB.
 
-### Contoh 4: Memperbarui database Tujuan Umum yang sudah ada ke tingkat layanan Hyperscale
+### Contoh 4: Memperbarui database General Purpose yang sudah ada ke tingkat layanan Hyperscale
 ```
 PS C:\>Set-AzSqlDatabase -ResourceGroupName "ResourceGroup01" -DatabaseName "Database01" -ServerName "Server01" -Edition "Hyperscale" -RequestedServiceObjectiveName "HS_Gen5_2"
 ResourceGroupName             : ResourceGroup01
@@ -165,12 +168,12 @@ ReadReplicaCount              : 1
 BackupStorageRedundancy       : Geo
 ```
 
-Perintah ini memperbarui database yang bernama Database01 dari Tujuan Umum ke tingkat layanan Hyperscale.
+Perintah ini memperbarui database bernama Database01 dari Tujuan Umum menjadi tingkat layanan Hyperscale.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPauseDelayInMinutes
-Jeda otomatis dalam menit untuk database (hanya tanpa server), -1 untuk menolak
+Penundaan jeda otomatis dalam menit untuk database (tanpa server saja), -1 untuk menolak
 
 ```yaml
 Type: System.Int32
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupStorageRedundancy
-Kelebihan penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
+Redundansi penyimpanan Cadangan digunakan untuk menyimpan cadangan untuk SQL Database. Opsinya adalah: Lokal, Zona dan Geo.
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan.
+Generasi komputasi untuk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeModel
-Model terkomputer dari database Azure Sql. Serverless or Provisioned
+Model terhitung database Azure Sql. Tanpa Server atau Disediakan
 
 ```yaml
 Type: System.String
@@ -261,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -275,18 +278,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
+### -Edisi
 Menentukan edisi untuk database.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Dasar
 - Standar
 - Premium
-- DataWarehouse
+- Gudang Data
 - Gratis
-- Regang
+- Stretch
 - GeneralPurpose
-- Hyperscale
+- Skala hiper
 - BusinessCritical
 
 ```yaml
@@ -301,8 +304,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam elastis tempat untuk memindahkan database.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis untuk memindahkan database.
 
 ```yaml
 Type: System.String
@@ -317,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -HighAvailabilityReplicaCount
-Jumlah replika sekunder yang hanya dibaca yang terkait dengan database.  Hanya untuk edisi Hiperscale.
+Jumlah replika sekunder baca-saja yang terkait dengan database.  Hanya untuk edisi Hyperscale.
 
 ```yaml
 Type: System.Int32
@@ -332,9 +335,9 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Tipe lisensi untuk database Azure Sql. Nilai yang mungkin adalah:
-- BasePrice - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada diterapkan. Harga database akan didiskon untuk pemilik SQL Server lisensi yang sudah ada.
-- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik SQL Server lisensi yang sudah ada tidak berlaku. Harga database akan menyertakan biaya SQL Server baru.
+Tipe lisensi untuk database Azure Sql. Nilai yang memungkinkan adalah:
+- Harga diskon BasePrice - Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada diterapkan. Harga database akan didiskon untuk pemilik lisensi SQL Server yang sudah ada.
+- LicenseIncluded - Harga diskon Azure Hybrid Benefit (AHB) untuk pemilik lisensi SQL Server yang sudah ada tidak diterapkan. Harga database akan menyertakan biaya lisensi SQL Server baru.
 
 ```yaml
 Type: System.String
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSizeBytes
-Ukuran maksimal file Azure SQL Database byte.
+Ukuran maksimum Azure SQL Database dalam byte.
 
 ```yaml
 Type: System.Int64
@@ -379,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinimumCapacity
-Kapasitas minimal yang akan selalu dialokasikan database, jika tidak dijeda.
+Kapasitas Minimal yang akan selalu dialokasikan database, jika tidak dijeda.
 Hanya untuk database Azure Sql tanpa server.
 
 ```yaml
@@ -410,7 +413,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadScale
-Jika diaktifkan, koneksi yang memiliki maksud aplikasi yang diatur ke baca saja dalam string koneksinya mungkin dirutekan ke replika sekunder saja. Properti ini hanya dapat diatur untuk database Premium dan Kritis Bisnis.
+Jika diaktifkan, koneksi yang memiliki tujuan aplikasi diatur ke baca-sebelumnya dalam string koneksinya mungkin dirutekan ke replika sekunder baca-saja. Properti ini hanya dapat diatur untuk database Premium dan Kritis Bisnis.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.DatabaseReadScale
@@ -426,7 +429,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestedServiceObjectiveName
-Menentukan nama tujuan layanan untuk ditetapkan ke database. Untuk informasi tentang tujuan layanan, [lihat Azure SQL Database Tingkat Layanan dan Tingkat Kinerja](https://docs.microsoft.com/azure/sql-database/sql-database-dtu-resource-limits-single-databases) di Pustaka Jaringan Pengembang Microsoft.
+Menentukan nama tujuan layanan untuk ditetapkan ke database. Untuk informasi tentang tujuan layanan, lihat [Azure SQL Database Tingkat Layanan dan Tingkat Kinerja](https://docs.microsoft.com/azure/sql-database/sql-database-dtu-resource-limits-single-databases) di Pustaka Jaringan Pengembang Microsoft.
 
 ```yaml
 Type: System.String
@@ -456,7 +459,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryType
-Tipe database sekunder jika database sekunder.  Nilai yang valid adalah Geo dan Bernama.
+Tipe database sekunder jika merupakan tipe sekunder.  Nilai yang valid adalah Geo dan Bernama.
 
 ```yaml
 Type: System.String
@@ -472,7 +475,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -486,7 +489,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tag
+### -Tags
 Pasangan nilai kunci dalam bentuk tabel hash. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
@@ -517,7 +520,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Database Azure Sql
+Redundansi zona untuk dikaitkan dengan Database Azure Sql
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -532,7 +535,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -548,7 +551,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -563,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -587,4 +590,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Suspend-AzSqlDatabase](./Suspend-AzSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

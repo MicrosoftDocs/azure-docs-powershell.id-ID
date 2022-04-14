@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapseSparkJob.md
-ms.openlocfilehash: 491a63244c91433b90436911a4f043de8b1e50b4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 47a31a05268e12deaef7286f13f1be0997f3e446
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139997932"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249345"
 ---
 # Stop-AzSynapseSparkJob
 
 ## SYNOPSIS
-Membatalkan pekerjaan Grafik Apik Analitik Synapse.
+Membatalkan pekerjaan Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsesparkjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzSynapseSparkJob -SparkJobObject <PSSynapseSparkJob> [-LivyId <Int32>] [-F
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSynapseSparkJob** membatalkan pekerjaan Grafik Api Analitik Synapse.
+Cmdlet **Stop-AzSynapseSparkJob** membatalkan pekerjaan Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Stop-AzSynapseSparkJob** membatalkan pekerjaan Grafik Api Analitik Syna
 PS C:\> Stop-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -LivyId 130
 ```
 
-Perintah ini membatalkan pekerjaan Grafik Apik Analitik Synapse.
+Perintah ini membatalkan pekerjaan Synapse Analytics Spark.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name Con
 PS C:\> $pool | Stop-AzSynapseSparkJob -LivyId 130
 ```
 
-Perintah ini membatalkan pekerjaan Grafik Spark Analitik Synapse melalui pipeline.
+Perintah ini membatalkan pekerjaan Synapse Analytics Spark melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -63,7 +66,7 @@ PS C:\> $job = Get-AzSynapseSparkJob -WorkspaceName ContosoWorkspace -SparkPoolN
 PS C:\> $job | Stop-AzSynapseSparkJob
 ```
 
-Perintah ini membatalkan pekerjaan Grafik Spark Analitik Synapse melalui pipeline.
+Perintah ini membatalkan pekerjaan Synapse Analytics Spark melalui pipeline.
 
 ## PARAMETERS
 
@@ -82,8 +85,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -97,7 +100,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tifid
+### -LivyId
 Pengidentifikasi pekerjaan Spark.
 
 ```yaml
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Cmdlet ini tidak mengembalikan objek secara default. Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkJobObject
-Objek input pekerjaan grafik grafik, biasanya melewati saluran.
+Objek input pekerjaan percikan api, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkJob
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolObject
-Objek input spark pool, biasanya melewati saluran.
+Objek input spark pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -184,7 +187,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

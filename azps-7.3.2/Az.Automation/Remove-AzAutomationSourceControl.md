@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/remov
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Remove-AzAutomationSourceControl.md
-ms.openlocfilehash: 94b032c044840a31bebe406d2993a0934b9c0d0a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5e3ec463f40e873c6de50c4eb18d84b7bcdeb391
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140550609"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142038089"
 ---
 # Remove-AzAutomationSourceControl
 
 ## SYNOPSIS
-Menghapus kontrol sumber Otomatisasi Azure.
+Menghapus kontrol sumber Azure Automation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/remove-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,8 +34,8 @@ Cmdlet Remove-AzAutomationSourceControl menghapus kontrol sumber dari Azure Auto
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini menghapus kontrol sumber Otomatisasi yang bernama VSTSNative dalam akun yang bernama devAccount.
-Perintah ini menentukan parameter *Force* . Oleh karena itu, kami tidak meminta konfirmasi Anda.
+Perintah ini menghapus kontrol sumber Otomatisasi bernama VSTSNative dalam akun bernama devAccount.
+Perintah ini menentukan parameter *Paksa* . Oleh karena itu, tindakan ini tidak meminta konfirmasi kepada Anda.
 
 ```powershell
 PS C:\> Remove-AzAutomationSourceControl -ResourceGroupName "rg1" `
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-PassThru mengembalikan objek yang mewakili item yang Sedang Anda kerjakan.
+PassThru mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

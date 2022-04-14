@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMChefExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVMChefExtension.md
-ms.openlocfilehash: e4fd31092998604d5e141b8e6001501a5ca74b60
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1033afb59a1a7a36431f70feb2aed251b29e976b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395386"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142217629"
 ---
 # Remove-AzVMChefExtension
 
 ## SYNOPSIS
 Menghapus ekstensi Chef dari mesin virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmchefextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,24 +40,24 @@ Cmdlet **Remove-AzVMChefExtension** menghapus ekstensi Chef dari mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus ekstensi Chef dari Windows virtual
+### Contoh 1: Hapus ekstensi Chef dari mesin virtual Windows
 ```powershell
 Remove-AzVMChefExtension -ResourceGroupName "ResourceGroup001" -VMName "WindowsVM001" -Windows
 ```
 
-Perintah ini menghapus ekstensi Chef dari komputer virtual berbasis Windows bernama WindowsVM001 yang dimiliki oleh grup sumber daya bernama ResourceGroup001.
+Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Windows bernama WindowsVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup001.
 
-### Contoh 2: Hapus ekstensi Chef dari komputer virtual Linux
+### Contoh 2: Hapus ekstensi Chef dari mesin virtual Linux
 ```powershell
 Remove-AzVMChefExtension -ResourceGroupName "ResourceGroup002" -VMName "LinuxVM001" -Linux
 ```
 
-Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Linux yang bernama LinuxVM001 yang dimiliki grup sumber daya yang bernama ResourceGroup002.
+Perintah ini menghapus ekstensi Chef dari mesin virtual berbasis Linux bernama LinuxVM001 yang termasuk dalam grup sumber daya bernama ResourceGroup002.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Tentukan nama ekstensi Chef yang dihapus cmdlet ini.
+Menentukan nama ekstensi Chef yang dihapus cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Memulai operasi dan segera mengembalikannya, sebelum operasi selesai. Untuk mengetahui apakah operasi berhasil diselesaikan, gunakan beberapa mekanisme lain.
+Memulai operasi dan segera kembali, sebelum operasi selesai. Untuk menentukan apakah operasi telah berhasil diselesaikan, gunakan beberapa mekanisme lain.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi komputer virtual.
+Menentukan nama grup sumber daya yang berisi mesin virtual.
 
 ```yaml
 Type: System.String
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Windows
-Mengindikasikan bahwa cmdlet ini menargetkan mesin Windows virtual.
+Menunjukkan bahwa cmdlet ini menargetkan mesin virtual Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

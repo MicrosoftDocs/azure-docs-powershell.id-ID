@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: CC6AF515-2F43-4E1B-BCBB-8DA23F3C6CBD
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: e42f65aa31128f4b56c8f26807e88d0d4f67b845a05c269b826b24aab856d64e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 8a0b14cb36ce5a7da17aeae252ce84583fbc4780
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418978"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142245763"
 ---
 # Get-AzureAutomationVariable
 
@@ -20,7 +20,7 @@ Mendapatkan variabel Otomatisasi.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureAutomationVariable -AutomationAccountName <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ Get-AzureAutomationVariable -Name <String> -AutomationAccountName <String> [-Pro
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Get-AzureAutomationVariable** mendapatkan satu atau beberapa Microsoft Azure otomatisasi.
+Cmdlet **Get-AzureAutomationVariable** mendapatkan satu atau beberapa variabel Otomatisasi Microsoft Azure.
 Secara default, semua variabel dikembalikan.
 Untuk mendapatkan variabel tertentu, tentukan namanya.
 
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -111,9 +111,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureAutomationVariable](./New-AzureAutomationVariable.md)
+[AzureAutomation BaruVariable](./New-AzureAutomationVariable.md)
 
-[Remove-AzureAutomationVariable](./Remove-AzureAutomationVariable.md)
+[Hapus-AzureAutomationVariable](./Remove-AzureAutomationVariable.md)
 
 [Set-AzureAutomationVariable](./Set-AzureAutomationVariable.md)
 

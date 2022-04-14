@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlActiveDirectoryAdministrator.md
 ms.openlocfilehash: 24a3895af88916f980407a7ac23b17c9c07c1596
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275205"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142220384"
 ---
 # Set-AzSynapseSqlActiveDirectoryAdministrator
 
 ## SYNOPSIS
-Menyediakan administrator Azure AD untuk Analitik Synapse SQL terku secara gratis.
+Menyediakan administrator Azure AD untuk kumpulan SQL Synapse Analytics.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlactivedirectoryadministrator) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlactivedirectoryadministrator) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -62,13 +62,13 @@ Set-AzSynapseSqlActiveDirectoryAdministrator -ResourceId <String> -ObjectId <Gui
 ## DESCRIPTION
 Cmdlet **Set-AzSynapseSqlActiveDirectoryAdministrator** menyediakan administrator Azure Active Directory (Azure AD) untuk Ruang Kerja Analitik Azure Synapse dalam langganan saat ini.
 Anda hanya bisa menyediakan satu administrator dalam satu waktu.
-Anggota Azure AD berikut ini dapat ditetapkan sebagai administrator Ruang Kerja Analitik Synapse:
+Anggota Azure AD berikut ini dapat disediakan sebagai administrator Ruang Kerja Analitik Sinapsis:
 - Anggota asli Azure AD 
 - Anggota gabungan Azure AD 
-- Anggota yang diimpor dari Azure AD lain yang merupakan anggota asli atau gabungan 
-- Grup Azure AD yang dibuat sebagai akun Microsoft grup keamanan, seperti akun di Outlook.com, Hotmail.com, atau Live.com eksternal, tidak didukung sebagai administrator.
-Akun tamu lain, seperti yang ada di Gmail.com atau Yahoo.com tamu, tidak didukung sebagai administrator.
-Kami menyarankan Anda menyediakan grup Khusus Azure AD sebagai administrator.
+- Anggota yang diimpor dari AZURE AD lain yang merupakan anggota asli atau gabungan 
+- Grup Azure AD yang dibuat sebagai grup keamanan akun Microsoft, seperti yang ada di domain Outlook.com, Hotmail.com, atau Live.com, tidak didukung sebagai administrator.
+Akun tamu lain, seperti yang ada di domain Gmail.com atau Yahoo.com, tidak didukung sebagai administrator.
+Kami menyarankan agar Anda menyediakan grup Azure AD khusus sebagai administrator.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Perintah ini menyediakan administrator Azure AD menurut objectId untuk ruang ker
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Menentukan nama tampilan pengguna atau grup yang akan diberi izin.
-Nama tampilan harus ada di direktori aktif yang terkait dengan langganan saat ini.
+Menentukan nama tampilan pengguna atau grup yang akan memberikan izin.
+Nama tampilan ini harus ada di direktori aktif yang terkait dengan langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau grup di Azure Active Directory yang memberikan izin.
+Menentukan ID objek pengguna atau grup di Azure Active Directory untuk memberikan izin.
 
 ```yaml
 Type: System.Guid
@@ -194,7 +194,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

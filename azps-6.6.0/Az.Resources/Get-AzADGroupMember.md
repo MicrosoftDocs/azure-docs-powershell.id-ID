@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADGroupMember.md
 ms.openlocfilehash: 3e94b41b2cfa184ae046eac5536341fd289f2ee2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380144"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142224667"
 ---
 # Get-AzADGroupMember
 
@@ -21,7 +21,7 @@ Mencantumkan anggota grup AD dalam penyewa saat ini.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azadgroupmember) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadgroupmember) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,15 +48,15 @@ Mencantumkan anggota grup AD dalam penyewa saat ini.
 
 ## EXAMPLES
 
-### Contoh 1:  List members by AD group object id
+### Contoh 1: Daftar anggota menurut id objek grup AD
 
 ```powershell
 PS C:\> Get-AzADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
 ```
 
-Mencantumkan anggota grup AD dengan object id '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
+Mencantumkan anggota grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
 
-### Contoh 2: List members by AD group object id using paging
+### Contoh 2: Daftar anggota menurut id objek grup AD menggunakan halaman
 
 ```powershell
 PS C:\> Get-AzADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE -First 100
@@ -64,18 +64,18 @@ PS C:\> Get-AzADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE 
 
 Mencantumkan 100 anggota pertama grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
 
-### Contoh 3: List members by piping
+### Contoh 3: Daftar anggota menurut perpipaan
 
 ```powershell
 PS C:\> Get-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Get-AzADGroupMember
 ```
 
-Dapatkan grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan  pipes ke cmdlet Get-AzADGroupMember untuk mencantumkan semua anggota di grup itu. 
+Mendapatkan grup AD dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan menyalurkannya ke cmdlet Get-AzADGroupMember untuk mencantumkan semua anggota dalam grup itu. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -164,8 +164,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -180,17 +180,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDGroup
+### Microsoft.Azure.Commands.ActiveDirectory.PSADGroup
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDObject
+### Microsoft.Azure.Commands.ActiveDirectory.PSADObject
 
 ## CATATAN
 

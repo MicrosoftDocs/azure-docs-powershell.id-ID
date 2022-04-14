@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRMAutomationCertificate.md
 ms.openlocfilehash: 83ec5c8cd9dd9937ca372441d5a9be005bffc76a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421296"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100996"
 ---
 # New-AzureRmAutomationCertificate
 
@@ -30,7 +30,7 @@ New-AzureRmAutomationCertificate [-Name] <String> [-Description <String>] [-Pass
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmAutomationCertificate** membuat sertifikat di Azure Automation.
-Berikan jalur ke file sertifikat untuk diunggah.
+Sediakan jalur ke file sertifikat untuk diunggah.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ PS C:\> New-AzureRmAutomationCertificate -AutomationAccountName "Contoso17" -Nam
 ```
 
 Perintah pertama mengonversi kata sandi teks biasa menjadi string aman menggunakan cmdlet ConvertTo-SecureString.
-Perintah menyimpan objek tersebut dalam $Password variabel.
+Perintah menyimpan objek tersebut dalam variabel $Password.
 Perintah kedua membuat sertifikat bernama ContosoCertificate.
 Perintah menggunakan kata sandi yang disimpan di $Password.
 Perintah menentukan nama akun dan jalur file yang diunggahnya.
@@ -49,7 +49,7 @@ Perintah menentukan nama akun dan jalur file yang diunggahnya.
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini menyimpan sertifikat.
+Menentukan nama akun Otomatisasi tempat cmdlet ini menyimpan sertifikat.
 
 ```yaml
 Type: System.String
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Exportable
+### -Dapat diekspor
 Menentukan apakah sertifikat bisa diekspor.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi untuk file sertifikat.
+Menentukan kata sandi untuk berkas sertifikat.
 
 ```yaml
 Type: System.Security.SecureString
@@ -138,9 +138,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur ke file skrip yang diunggah cmdlet ini.
-File bisa merupakan file .cer atau .pfx.
+File dapat berupa file .cer atau .pfx.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini membuat sertifikat.
+Menentukan nama grup sumber daya tempat cmdlet ini membuat sertifikat.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,7 +190,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmAutomationCertificate](./Get-AzureRMAutomationCertificate.md)
 
-[Remove-AzureRmAutomationCertificate](./Remove-AzureRMAutomationCertificate.md)
+[Hapus-AzureRmAutomationCertificate](./Remove-AzureRMAutomationCertificate.md)
 
 [Set-AzureRmAutomationCertificate](./Set-AzureRMAutomationCertificate.md)
 

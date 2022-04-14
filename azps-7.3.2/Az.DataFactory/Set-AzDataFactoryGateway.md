@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Set-AzDataFactoryGateway.md
-ms.openlocfilehash: 9ab940c7a6d37c012172fb13250b266bc87fdfac
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0ba0863320bb5f2f8843a3548eb2d02aa38964c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140544709"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142216027"
 ---
 # Set-AzDataFactoryGateway
 
 ## SYNOPSIS
 Mengatur deskripsi untuk gateway di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/set-azdatafactorygateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +54,7 @@ LastConnectTime : 8/22/2014 1:41:41 AM
 ExpiryTime      :
 ```
 
-Perintah ini mengatur deskripsi untuk gateway yang bernama ContosoGateway di pabrik data bernama WikiADF.
+Perintah ini mengatur deskripsi untuk gateway bernama ContosoGateway di pabrik data bernama WikiADF.
 Parameter Deskripsi menentukan deskripsi baru.
 
 ## PARAMETERS
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway untuk menetapkan deskripsi.
+Menentukan nama gateway untuk mengatur deskripsi.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya Azure.
-Cmdlet ini mengatur deskripsi untuk gateway milik grup yang ditentukan parameter ini.
+Cmdlet ini mengatur deskripsi untuk gateway yang termasuk dalam grup yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -163,7 +166,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGateway
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
@@ -171,6 +174,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzDataFactoryGateway](./New-AzDataFactoryGateway.md)
 
-[Remove-AzDataFactoryGateway](./Remove-AzDataFactoryGateway.md)
+[Hapus-AzDataFactoryGateway](./Remove-AzDataFactoryGateway.md)
 
 

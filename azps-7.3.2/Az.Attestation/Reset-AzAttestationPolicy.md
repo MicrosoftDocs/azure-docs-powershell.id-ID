@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.attestation/rese
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Attestation/Attestation/help/Reset-AzAttestationPolicy.md
-ms.openlocfilehash: 84c08e436c24def13f6660a8719e5948dfeb41d6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 677228214da268b4102c25a67fdb59fa1d69cdf2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557949"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261033"
 ---
 # Reset-AzAttestationPolicy
 
 ## SYNOPSIS
 Mengatur ulang kebijakan dari penyewa di Azure Attestationn.}
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.attestation/reset-azattestationpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Reset-AzAttestationPolicy [-ResourceId] <String> -Tee <String> [-Policy <String>
 ```
 
 ## DESCRIPTION
-Cmdlet Reset-AzAttestationPolicy mengatur ulang pengguna yang ditentukan kebijakan attestation dari penyewa di Azure Attestation.
+Cmdlet Reset-AzAttestationPolicy mengatur ulang kebijakan pengesahan yang ditentukan pengguna dari penyewa dalam Azure Attestation.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ Cmdlet Reset-AzAttestationPolicy mengatur ulang pengguna yang ditentukan kebijak
 Reset-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave
 ```
 
-Reset kebijakan ke default untuk *pshtest* Penyedia Attestation untuk *SgxEnclave tipe Sgx*.
+Mengatur ulang kebijakan ke default untuk *pshtest* Penyedia Pengesahan untuk tipe Tee *SgxEnclave*.
 
 ### Contoh 2
 ```powershell
@@ -49,7 +52,7 @@ $resetJwt = Get-Content -Path .\reset.policy.txt.signed.txt
 Reset-AzAttestationPolicy -Name pshtest -ResourceGroupName psh-test-rg -Tee SgxEnclave -Policy $resetJwt
 ```
 
-Jika *pshtest* Penyedia Attestation dikonfigurasi agar menggunakan model kepercayaan terpisah, atur ulang kebijakan ke default tipe *SgxEnclave* dengan menyertakan kebijakan bertanda tangan.
+Jika *pshtest* Penyedia Pengesahan dikonfigurasi untuk menggunakan model kepercayaan terisolasi, atur ulang kebijakan ke default untuk tipe Tee *SgxEnclave* dengan menyertakan kebijakan yang ditandatangani.
 
 ## PARAMETERS
 
@@ -70,7 +73,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama penyewa.
-Cmdlet ini mengatur ulang kebijakan attestation untuk penyewa yang ditentukan parameter ini.
+Cmdlet ini mengatur ulang kebijakan pengesahan untuk penyewa yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan JSON Web Token yang menjelaskan dokumen kebijakan untuk diatur ulang.
+Menentukan Token Web JSON yang menjelaskan dokumen kebijakan untuk direset.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya dari penyedia attestation.
+Menentukan nama grup sumber daya penyedia pengesahan.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan ResourceID dari penyedia attestation.
+Menentukan RESOURCEID penyedia atestation.
 
 ```yaml
 Type: System.String
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -Tee
 Menentukan tipe Lingkungan Eksekusi Tepercaya.
-Kami mendukung empat tipe lingkungan: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
+Kami mendukung empat jenis lingkungan: SgxEnclave, OpenEnclave, CyResComponent dan VBSEnclave.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

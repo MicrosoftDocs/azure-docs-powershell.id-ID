@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/add-azurermapplicationgatewaybackendhttpsettings
 schema: 2.0.0
 ms.openlocfilehash: f283b40e7e40285a221eb436495d54820884003f
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140858582"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141848201"
 ---
 # Add-AzureRmApplicationGatewayBackendHttpSettings
 
@@ -30,24 +30,24 @@ Add-AzureRmApplicationGatewayBackendHttpSettings -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet Add-AzureRmApplicationGatewayBackendHttpSettings menambahkan pengaturan HTTP ujung belakang ke gateway aplikasi.
+Cmdlet Add-AzureRmApplicationGatewayBackendHttpSettings menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi.
 
-Pengaturan HTTP ujung-belakang diterapkan ke semua server ujung-belakang dalam pool.
+Pengaturan HTTP ujung-belakang diterapkan ke semua server ujung-belakang dalam kumpulan.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi
+### Contoh 1: Menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $AppGw = Add-AzureRmApplicationGatewayBackendHttpSettings -ApplicationGateway $AppGw -Name "Setting02" -Port 88 -Protocol "HTTP" -CookieBasedAffinity "Disabled"
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal. Perintah kedua menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi, mengatur port ke 88 dan protokol ke HTTP dan memberi nama pengaturan Pengaturan02.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw. Perintah kedua menambahkan pengaturan HTTP ujung-belakang ke gateway aplikasi, mengatur port ke 88 dan protokol ke HTTP dan memberi nama pengaturan Pengaturan02.
 
 ## PARAMETERS
 
-### -AffinityCoyamaeName
-Nama cookie untuk digunakan untuk cookie afiliasi
+### -AffinityCookieName
+Nama cookie yang digunakan untuk cookie affinity
 
 ```yaml
 Type: String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationGateway
-Menentukan nama gateway aplikasi di mana cmdlet ini menambahkan pengaturan.
+Menentukan nama gateway aplikasi tempat cmdlet ini menambahkan pengaturan.
 
 ```yaml
 Type: PSApplicationGateway
@@ -91,8 +91,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConnectionDhubungan
-Koneksi menghabiskan sumber daya pengaturan backend http.
+### -ConnectionDraining
+Koneksi menguras sumber daya pengaturan backend http.
 
 ```yaml
 Type: PSApplicationGatewayConnectionDraining
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -CookieBasedAffinity
-Menentukan apakah affinity berbasis cookie harus diaktifkan atau dinonaktifkan untuk pool server backend.
+Menentukan apakah affinity berbasis cookie harus diaktifkan atau dinonaktifkan untuk kumpulan server backend.
 Nilai yang dapat diterima untuk parameter ini adalah: Dinonaktifkan, Diaktifkan.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Mengatur header host yang akan dikirimkan ke server backend.
+Mengatur header host yang akan dikirim ke server backend.
 
 ```yaml
 Type: String
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pengaturan HTTP ujung belakang yang tambahkan cmdlet ini.
+Menentukan nama pengaturan HTTP ujung-belakang yang ditambahkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -168,9 +168,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur yang harus digunakan sebagai prefiks untuk semua permintaan HTTP.
-Jika tidak ada nilai yang disediakan untuk parameter ini, maka tidak ada jalur yang akan diawali.
+Jika tidak ada nilai yang disediakan untuk parameter ini, maka tidak ada jalur yang akan didahului.
 
 ```yaml
 Type: String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Port
-Menentukan port pool server back-end.
+Menentukan port kumpulan server ujung-belakang.
 
 ```yaml
 Type: Int32
@@ -214,8 +214,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ser
-Menentukan konfigurasi untuk dikaitkan dengan server ujung-belakang.
+### -Probe
+Menentukan probe untuk dikaitkan dengan server ujung-belakang.
 
 ```yaml
 Type: PSApplicationGatewayProbe
@@ -229,8 +229,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PengetahuanEnabled
-Benderai jika pengbenderaan harus diaktifkan.
+### -ProbeEnabled
+Tandai jika probe harus diaktifkan.
 
 ```yaml
 Type: SwitchParameter
@@ -244,8 +244,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -siid
-Menentukan ID perusahaan untuk dikaitkan dengan server ujung-belakang.
+### -ProbeId
+Menentukan ID probe untuk dikaitkan dengan server ujung-belakang.
 
 ```yaml
 Type: String
@@ -259,8 +259,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol untuk komunikasi antara gateway aplikasi dan server ujung-belakang.
+### -Protokol
+Menentukan protokol untuk komunikasi antara gateway aplikasi dan server back-end.
 Nilai yang dapat diterima untuk parameter ini adalah: Http dan Https.
 
 ```yaml
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -RequestTimeout
-Menentukan nilai waktu habis permintaan.
+Menentukan nilai batas waktu permintaan.
 
 ```yaml
 Type: Int32
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
