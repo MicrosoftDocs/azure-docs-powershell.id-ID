@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/stop-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapsePipelineRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Stop-AzSynapsePipelineRun.md
-ms.openlocfilehash: ffd0173a7360845f59a7016b5cb599da145b0319
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8b354bb57bb865b9254ab2fe498b2e8b568f7470
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195031"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141783410"
 ---
 # Stop-AzSynapsePipelineRun
 
 ## SYNOPSIS
-Menghentikan jalannya saluran di ruang kerja.
+Menghentikan alur berjalan di ruang kerja.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/stop-azsynapsepipelinerun) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Stop-AzSynapsePipelineRun -InputObject <PSPipelineRun> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzSynapsePipelineRun** menghentikan proses pipeline dalam ruang kerja yang ditentukan dengan ID berjalannya pipeline.
+Cmdlet **Stop-AzSynapsePipelineRun** menghentikan proses saluran dalam ruang kerja yang ditentukan dengan ID proses saluran.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Stop-AzSynapsePipelineRun** menghentikan proses pipeline dalam ruang ke
 PS C:\> Stop-AzSynapsePipelineRun -WorkspaceName ContosoWorkspace -PipelineRunId b9730a13-aa12-4926-a8b3-8e3a974ab0bd
 ```
 
-Perintah ini menghentikan saluran yang dijalankan dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace.
+Perintah ini menghentikan proses pipeline dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Stop-AzSynapsePipelineRun -PipelineRunId b9730a13-aa12-4926-a8b3-8e3a974ab0bd
 ```
 
-Perintah ini menghentikan saluran yang dijalankan dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini menghentikan proses pipeline dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -63,12 +66,12 @@ PS C:\> $pipelineRun = Get-AzSynapsePipelineRun -WorkspaceName ContosoWorkspace 
 PS C:\> $pipelineRun | Stop-AzSynapsePipelineRun
 ```
 
-Perintah ini menghentikan saluran yang dijalankan dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace melalui pipeline.
+Perintah ini menghentikan proses pipeline dengan id b9730a13-aa12-4926-a8b3-8e3a974ab0bd di ruang kerja ContosoWorkspace melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Informasi tentang saluran berjalan.
+Informasi tentang alur berjalan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSPipelineRun
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineRunId
-Pengidentifikasi saluran berjalan.
+Pengidentifikasi proses saluran.
 
 ```yaml
 Type: System.String
@@ -143,7 +146,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

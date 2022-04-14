@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAuditing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAuditing.md
-ms.openlocfilehash: f2e1acd254c4b2c83ea8d8e182ed4d218d5d3fb7f78b1cb6b53f2b73f9b07457
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bb26a4c237c056e5a86b47a8e7efa7458ab94487
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855396"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059873"
 ---
 # Get-AzureRmSqlServerAuditing
 
 ## SYNOPSIS
-Mendapatkan pengaturan pengauditan server azure SQL.
+Mendapatkan pengaturan audit server Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,13 +28,13 @@ Get-AzureRmSqlServerAuditing [-ServerName] <String> [-ResourceGroupName] <String
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServerAuditing** mendapatkan kebijakan audit blob dari server SQL Azure.
-Tentukan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi database.
-Cmdlet ini mengembalikan kebijakan yang digunakan oleh database Azure SQL yang ditentukan dalam server azure SQL tertentu.
+Cmdlet **Get-AzureRmSqlServerAuditing** mendapatkan kebijakan audit blob dari server Azure SQL.
+Tentukan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi database.
+Cmdlet ini mengembalikan kebijakan yang digunakan oleh database Azure SQL yang ditentukan dalam server Azure SQL yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pengaturan pengauditan server azure SQL
+### Contoh 1: Mendapatkan pengaturan audit server Azure SQL
 ```
 PS C:\>Get-AzureRmSqlServerAuditing -ResourceGroupName "resourcegroup01" -ServerName "server01"
 AuditActionGroup             : {SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP, FAILED_DATABASE_AUTHENTICATION_GROUP,
@@ -52,7 +52,7 @@ PredicateExpression          : statement <> 'select 1'
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/invoke-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseSparkStatement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Invoke-AzSynapseSparkStatement.md
-ms.openlocfilehash: 1475863eafa670e2e46dbe03f198a651194a5316
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e7acccf61b81d1ef1b8c95a9784e7c93828a3b82
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380177"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786290"
 ---
 # Invoke-AzSynapseSparkStatement
 
 ## SYNOPSIS
-Invokes a Synapse Analytics Spark statement.
+Memanggil pernyataan Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/invoke-azsynapsesparkstatement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Invoke-AzSynapseSparkStatement -Language <String> -SessionObject <PSSynapseSpark
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzSynapseSparkStatement** cmdlet invokes Synapse Analytics Spark statement.
+Cmdlet **Invoke-AzSynapseSparkStatement** memanggil pernyataan Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ PS C:\> $session | Invoke-AzSynapseSparkStatement -Code '
 >> '
 ```
 
-Perintah ini memulai sesi Grafik Apik lalu menjalankan pernyataan Grafik Apik sebaris melalui saluran.
+Perintah ini memulai sesi Spark lalu menjalankan pernyataan Spark sebaris melalui pipeline.
 
 ### Contoh 2
 ```powershell
@@ -70,7 +73,7 @@ PS C:\> Invoke-AzSynapseSparkStatement -SessionId 324 -Language 'Spark' -Code '
 >> '
 ```
 
-Perintah ini memulai sesi Grafik Api, lalu menjalankan pernyataan Grafik Apik sebaris.
+Perintah ini memulai sesi Spark lalu menjalankan pernyataan Spark sebaris.
 
 ### Contoh 3
 ```powershell
@@ -79,12 +82,12 @@ PS C:\> $session.Language = 'Spark'
 PS C:\> $session | Invoke-AzSynapseSparkStatement -FilePath C:\path\to\code.sc
 ```
 
-Perintah ini memulai sesi Grafik Grafik Api, lalu menjalankan pernyataan Grafik Apik dalam file.
+Perintah ini memulai sesi Spark lalu memanggil pernyataan Spark dalam file.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +101,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Code
+### -Kode
 Kode eksekusi.
 
 ```yaml
@@ -143,7 +146,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Language
+### -Bahasa
 Bahasa kode eksekusi.
 
 ```yaml
@@ -172,7 +175,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Response
+### -Respons
 Menunjukkan respons penuh harus dikembalikan.
 
 ```yaml
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionId
-Pengidentifikasi sesi Grafik Apik.
+Pengidentifikasi sesi Spark.
 
 ```yaml
 Type: System.Int32
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -SessionObject
-Objek input sesi grafik grafik, biasanya melewati saluran.
+Objek input sesi percikan api, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkSession
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -244,7 +247,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -260,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

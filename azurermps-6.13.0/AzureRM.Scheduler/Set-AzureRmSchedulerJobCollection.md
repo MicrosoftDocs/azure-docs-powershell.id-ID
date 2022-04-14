@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/Set-AzureRmSchedulerJobCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Scheduler/Commands.Scheduler/help/Set-AzureRmSchedulerJobCollection.md
 ms.openlocfilehash: 535455f73795d85acf05da191694f35dbeee9ba5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419536"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816916"
 ---
 # Set-AzureRmSchedulerJobCollection
 
 ## SYNOPSIS
-Mengubah kumpulan pekerjaan.
+Mengubah koleksi pekerjaan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,14 +29,14 @@ Set-AzureRmSchedulerJobCollection -ResourceGroupName <String> -JobCollectionName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSchedulerJobCollection** mengubah kumpulan pekerjaan di Azure Scheduler.
+Cmdlet **Set-AzureRmSchedulerJobCollection** mengubah koleksi pekerjaan di Azure Scheduler.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -50,8 +50,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Frequency
-Menentukan frekuensi maksimum yang dapat Anda tentukan pada pekerjaan apa pun dalam kumpulan pekerjaan.
+### -Frekuensi
+Menentukan frekuensi maksimum yang dapat Anda tentukan pada pekerjaan apa pun dalam koleksi pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Menit 
 - Jam 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Interval
-Menentukan interval per pengulangan.
+Menentukan interval pengulangan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobCollectionName
-Menentukan nama koleksi pekerjaan.
+Menentukan nama kumpulan pekerjaan.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan Azure tempat kumpulan pekerjaan tersebut ada.
+Menentukan kawasan Azure tempat kumpulan pekerjaan ada.
 
 ```yaml
 Type: System.String
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxJobCount
-Menentukan jumlah maksimum pekerjaan yang dapat Anda buat dalam kumpulan pekerjaan.
-The maximum depends on the plan that the *Plan* parameter specifies.
+Menentukan jumlah maksimum pekerjaan yang dapat Anda buat dalam koleksi pekerjaan.
+Maksimum bergantung pada rencana yang ditentukan parameter *Rencana* .
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menentukan paket kumpulan pekerjaan.
+Menentukan rencana pengumpulan pekerjaan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Gratis 
 - Standar 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -223,6 +223,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSchedulerJobCollection](./New-AzureRmSchedulerJobCollection.md)
 
-[Remove-AzureRmSchedulerJobCollection](./Remove-AzureRmSchedulerJobCollection.md)
+[Hapus-AzureRmSchedulerJobCollection](./Remove-AzureRmSchedulerJobCollection.md)
 
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Get-AzCustomLocation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CustomLocation/help/Get-AzCustomLocation.md
 ms.openlocfilehash: 23cb4f93f78f11250dc55de4106064d428606595
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139941829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141805550"
 ---
 # Get-AzCustomLocation
 
 ## SYNOPSIS
-Mendapatkan detail customLocation dengan grup dan nama sumber daya yang ditentukan.
+Mendapatkan detail lokasi kustom dengan nama dan grup sumber daya tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.customlocation/get-azcustomlocation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.customlocation/get-azcustomlocation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Mendapatkan detail customLocation dengan grup dan nama sumber daya yang ditentuk
 Get-AzCustomLocation [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzCustomLocation -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -45,11 +45,11 @@ Get-AzCustomLocation -ResourceGroupName <String> [-SubscriptionId <String[]>] [-
 ```
 
 ## DESCRIPTION
-Mendapatkan detail customLocation dengan grup dan nama sumber daya yang ditentukan.
+Mendapatkan detail lokasi kustom dengan nama dan grup sumber daya tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: List the details of the customLocation.
+### Contoh 1: Cantumkan detail lokasi kustom.
 ```powershell
 PS C:\> Get-AzCustomLocation
 
@@ -58,9 +58,9 @@ Location Name              Namespace
 eastus   azps_test_cluster arc
 ```
 
-List the details of the customLocation.
+Cantumkan detail lokasi kustom.
 
-### Contoh 2:  List the details of the customLocation with a specified resource group.
+### Contoh 2: Cantumkan detail lokasi kustom dengan grup sumber daya tertentu.
 ```powershell
 PS C:\> Get-AzCustomLocation -ResourceGroupName azps_test_group
 
@@ -69,9 +69,9 @@ Location Name              Namespace
 eastus   azps_test_cluster arc
 ```
 
-List the details of the customLocation with a specified resource group.
+Cantumkan detail lokasi kustom dengan grup sumber daya tertentu.
 
-### Contoh 3: Mendapatkan detail lokasikasi kustom dengan nama dan grup sumber daya yang ditentukan.
+### Contoh 3: Mendapatkan detail lokasi kustom dengan nama dan grup sumber daya tertentu.
 ```powershell
 PS C:\> Get-AzCustomLocation -ResourceGroupName azps_test_group -Name azps_test_cluster
 
@@ -80,9 +80,9 @@ Location Name              Namespace
 eastus   azps_test_cluster arc
 ```
 
-Mendapatkan detail customLocation dengan grup dan nama sumber daya yang ditentukan.
+Mendapatkan detail lokasi kustom dengan nama dan grup sumber daya tertentu.
 
-### Contoh 4: Gets the details of the customLocation.
+### Contoh 4: Mendapatkan detail dari customLocation.
 ```powershell
 PS C:\> New-AzCustomLocation -ResourceGroupName azps_test_group -Name azps_test_cluster -Location eastus -ClusterExtensionId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azps_test_group/providers/Microsoft.Kubernetes/connectedClusters/azps_test_cluster/providers/Microsoft.KubernetesConfiguration/extensions/azps_test_extension" -HostResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azps_test_group/providers/Microsoft.Kubernetes/connectedClusters/azps_test_cluster" -Namespace arc | Get-AzCustomLocation
 
@@ -91,7 +91,7 @@ Location Name              Namespace
 eastus   azps_test_cluster arc
 ```
 
-Mendapatkan detail lokasi kustom.
+Mendapatkan detail dari customLokasi.
 
 ## PARAMETERS
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.CustomLocation.Models.ICustomLocationIdentity
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -193,7 +193,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 INPUTOBJECT <ICustomLocationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[ResourceName <String>]`: Nama Lokasi Kustom.
   - `[SubscriptionId <String>]`: ID langganan target.
 

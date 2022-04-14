@@ -4,16 +4,16 @@ ms.assetid: 93A8B8EC-4ED0-4C87-AF92-9A246ECEF4F0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 730aa69d2e6c6421fa497aac7a67d7816585722a
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414775"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093581"
 ---
 # Remove-AzureVMAccessExtension
 
 ## SYNOPSIS
-Menghapus ekstensi VMAccess yang diterapkan pada komputer virtual.
+Menghapus ekstensi VMAccess yang diterapkan pada mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,30 +25,30 @@ Remove-AzureVMAccessExtension -VM <IPersistentVM> [-Profile <AzureSMProfile>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureVMAccessExtension** menghapus ekstensi VMAccess yang diterapkan pada komputer virtual.
+Cmdlet **Remove-AzureVMAccessExtension** menghapus ekstensi VMAccess yang diterapkan pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus ekstensi VMAccess dari komputer virtual
+### Contoh 1: Menghapus ekstensi VMAccess dari mesin virtual
 ```
 PS C:\> Remove-AzureVMAccessExtension -VM $VM;
 ```
 
-Perintah ini akan menghapus ekstensi VMAccess dari komputer virtual.
+Perintah ini menghapus ekstensi VMAccess dari mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual tetap yang akan dihapus cmdlet ini dari ekstensi VMAccess.
+Menentukan objek mesin virtual persisten tempat cmdlet ini menghapus ekstensi VMAccess.
 
 ```yaml
 Type: IPersistentVM
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/new-azs
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppUserRoleInvitationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebAppUserRoleInvitationLink.md
-ms.openlocfilehash: e41d0a0e001710c21fd7614ba12c5431c2e86e3b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 49838293794c786d6f20ffcbfa1478199c82dd2f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140547762"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782996"
 ---
 # New-AzStaticWebAppUserRoleInvitationLink
 
 ## SYNOPSIS
-Deskripsi untuk Membuat link undangan untuk pengguna dengan peran
+Deskripsi untuk Membuat tautan undangan untuk pengguna dengan peran tersebut
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azstaticwebappuserroleinvitationlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,11 +37,11 @@ New-AzStaticWebAppUserRoleInvitationLink -InputObject <IWebsitesIdentity> [-Doma
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Membuat link undangan untuk pengguna dengan peran
+Deskripsi untuk Membuat tautan undangan untuk pengguna dengan peran tersebut
 
 ## EXAMPLES
 
-### Contoh 1: Buat tautan undangan untuk pengguna yang memiliki peran
+### Contoh 1: Membuat tautan undangan untuk pengguna dengan peran
 ```powershell
 PS C:\> New-AzStaticWebAppUserRoleInvitationLink -ResourceGroupName azure-rg-test -Name staticweb-pwsh02 -Domain 'xxxxxxxxx.azurestaticapps.net' -Provider 'github' -UserDetail 'UserName' -Role 'reader' -NumHoursToExpiration 1
 
@@ -47,16 +50,16 @@ Kind Name                                 Type
      078284a9-ce47-4aa5-b54c-2e55a67dd53c Microsoft.Web/staticSites/invitations
 ```
 
-Perintah ini akan membuat tautan undangan untuk pengguna yang memiliki peran.
+Perintah ini membuat tautan undangan untuk pengguna dengan peran tersebut.
 
-### Contoh 2: Buat tautan undangan untuk pengguna dengan peran menurut saluran
+### Contoh 2: Membuat tautan undangan untuk pengguna dengan peran menurut saluran
 ```powershell
 PS C:\> $web = Get-AzStaticWebApp -ResourceGroupName resourceGroup -Name staticweb00
 PS C:\> New-AzStaticWebAppUserRoleInvitationLink -InputObject $web -Domain 'Hostname' -Provider 'github' -UserDetail 'UserName' -Role 'admin,contributor' -NumHoursToExpiration 1
 
 ```
 
-Perintah ini membuat link undangan untuk pengguna dengan peran menurut saluran.
+Perintah ini membuat tautan undangan untuk pengguna dengan peran menurut saluran.
 
 ## PARAMETERS
 
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Models.IWebsitesIdentity
@@ -105,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis sumber daya.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peran
-Peran untuk pengguna situs statis, dalam format string bebas
+Peran untuk pengguna situs statis, dalam format string bentuk bebas
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -278,15 +281,15 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IWebsitesIdentity>: Parameter Identitas
-  - `[Authprovider <String>]`: Penyedia layanan auth untuk pengguna.
+  - `[Authprovider <String>]`: Penyedia auth untuk pengguna.
   - `[DomainName <String>]`: Nama domain kustom.
   - `[EnvironmentName <String>]`: Pengidentifikasi situs tahapan.
   - `[FunctionAppName <String>]`: Nama aplikasi fungsi yang terdaftar dengan build situs statis.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Lokasi tempat Anda berencana membuat situs statis.
+  - `[Location <String>]`: Lokasi tempat Anda berencana untuk membuat situs statis.
   - `[Name <String>]`: Nama situs statis.
   - `[PrivateEndpointConnectionName <String>]`: Nama koneksi titik akhir privat.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya tersebut berada.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya tempat sumber daya berada.
   - `[SubscriptionId <String>]`: ID langganan Azure Anda. Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000).
   - `[Userid <String>]`: Id pengguna pengguna.
 

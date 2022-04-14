@@ -4,16 +4,16 @@ Module Name: Azs.Storage.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 641017c75243a253a6b9eb0054df7737a674f671
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577682"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814010"
 ---
 # Set-AzsStorageQuota
 
 ## SYNOPSIS
-Buat atau perbarui kuota penyimpanan yang sudah ada.
+Membuat atau memperbarui kuota penyimpanan yang sudah ada.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Set-AzsStorageQuota [-CapacityInGb <Int32>] [-NumberOfStorageAccounts <Int32>] -
 ```
 
 ## DESCRIPTION
-Buat atau perbarui kuota penyimpanan yang sudah ada.
+Membuat atau memperbarui kuota penyimpanan yang sudah ada.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ Buat atau perbarui kuota penyimpanan yang sudah ada.
 Set-AzsStorageQuota -Name 'TestUpdateStorageQuota' -CapacityInGb 123 -NumberOfStorageAccounts 10
 ```
 
-Memperbarui kuota penyimpanan yang sudah ada.
+Perbarui kuota penyimpanan yang sudah ada.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfStorageAccounts
-Total jumlah akun penyimpanan.
+Jumlah total akun penyimpanan.
 
 ```yaml
 Type: Int32
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

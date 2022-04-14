@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 0DF54C9D-7A19-4591-A1FC-33C6A4C9BF33
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 8d0f56a3d20304b80eb83a89b6fa44fd294572f8168eeaf2952f617db1a6529b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 71d1f9ce5c0cd7084fb268cb16baa7e6d3041741
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417669"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815764"
 ---
 # Test-AzureName
 
 ## SYNOPSIS
-Menguji apakah nama Microsoft Azure layanan awan, nama layanan penyimpanan atau nama ruang nama bus layanan ada atau tidak.
+Menguji apakah nama layanan cloud Microsoft Azure, nama layanan penyimpanan, atau nama ruang nama bus layanan ada atau tidak.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -34,14 +34,14 @@ Test-AzureName [-Storage] -Name <String> [-Profile <AzureSMProfile>] [<CommonPar
 Test-AzureName [-ServiceBusNamespace] -Name <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### Situs Web
+### Website
 ```
 Test-AzureName [-Website] -Name <String> [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Jika nama ada, cmdlet akan mengembalikan $True.
-Jika nama tidak ada, hasilnya akan $False.
+Jika nama tidak ada, nama akan mengembalikan $False.
 
 ## EXAMPLES
 
@@ -50,26 +50,26 @@ Jika nama tidak ada, hasilnya akan $False.
 PS C:\> Test-AzureName -Service "MyNameService1"
 ```
 
-Perintah ini menguji untuk melihat apakah "MyNameService1" sudah Microsoft Azure layanan awan.
+Perintah ini menguji untuk melihat apakah "MyNameService1" adalah nama layanan cloud Microsoft Azure yang sudah ada.
 
 ### Contoh 2
 ```
 PS C:\> Test-AzureName -Storage "mystorename1"
 ```
 
-Perintah ini menguji untuk melihat apakah "mystorename1" sudah Microsoft Azure layanan penyimpanan.
+Perintah ini menguji untuk melihat apakah "mystorename1" adalah nama layanan penyimpanan Microsoft Azure yang sudah ada.
 
 ### Contoh 3
 ```
 PS C:\> Test-AzureName -ServiceBusNamespace "mynamespace"
 ```
 
-Uji perintah ini untuk melihat apakah "mynamespace" adalah nama ruang nama Microsoft Azure bus layanan yang sudah ada.
+Perintah ini menguji untuk melihat apakah "mynamespace" adalah nama ruang nama bus layanan Microsoft Azure yang sudah ada.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama layanan atau akun penyimpanan untuk diuji.
+Menentukan nama akun layanan atau penyimpanan untuk diuji.
 
 ```yaml
 Type: String
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -144,7 +144,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Situs web
+### -Situs Web
 Menentukan untuk menguji situs web yang sudah ada.
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

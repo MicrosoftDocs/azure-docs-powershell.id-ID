@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementUserToken.md
-ms.openlocfilehash: 95cc2392d9ec416d01186cbae649d1a4ad09fe44
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c44aca397b88a85b1353fea0877a861a60c1620a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382748"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141792842"
 ---
 # New-AzApiManagementUserToken
 
 ## SYNOPSIS
 Menghasilkan Token Akses Bersama untuk Pengguna.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementusertoken) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzApiManagementUserToken -Context <PsApiManagementContext> -UserId <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementUserToken** menghasilkan Token Akses Bersama untuk Pengguna yang ditentukan
+Cmdlet **New-AzApiManagementUserToken** menghasilkan Token Akses Bersama untuk Pengguna tertentu
 
 ## EXAMPLES
 
-### Contoh 1: Menghasilkan Token Akses Bersama untuk Pengguna Git
+### Contoh 1: Membuat Token Akses Bersama untuk Pengguna Git
 ```powershell
 $context = New-AzApiManagementContext -ResourceGroupName powershelltest -ServiceName
 powershellsdkservice
@@ -44,11 +47,11 @@ UserId      TokenExpiry         KeyType UserToken
 integration 5/3/2019 2:02:34 PM Primary integration&201905031402&zOwopJChWAA6oaqGHMyf7Ol9wUCPcrtdmBmff8c2lcmZk9Y...
 ```
 
-Skrip ini membuat pengguna Git dikonfigurasi di layanan ApiManagement dan menghasilkan Token Akses Bersama menggunakan Kunci Utama yang berlaku selama 8 jam.
+Skrip ini membuat pengguna Git dikonfigurasi dalam layanan ApiManagement dan menghasilkan Token Akses Bersama menggunakan Kunci Utama yang valid selama 8 jam.
 
 ### Contoh 2
 
-Menghasilkan Token Akses Bersama untuk Pengguna. (otomatisgenerated)
+Menghasilkan Token Akses Bersama untuk Pengguna. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Masa Berlaku Token.
+Kedaluwarsa Token.
 Jika tidak ditentukan, token dibuat untuk kedaluwarsa setelah 8 jam.
 Parameter ini bersifat opsional.
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Kunci Pengguna untuk digunakan ketika membuat Token.
+Kunci Pengguna untuk digunakan saat menghasilkan Token.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,7 +152,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementUserKeyType
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

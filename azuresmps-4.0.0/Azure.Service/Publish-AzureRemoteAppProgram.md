@@ -4,11 +4,11 @@ ms.assetid: F101382E-B015-4913-B4A0-8827EC423319
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 13e65145f04b0109aa3af5bacf7d78fa60b160e6
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "132414490"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094015"
 ---
 # Publish-AzureRemoteAppProgram
 
@@ -32,7 +32,7 @@ Publish-AzureRemoteAppProgram [-CollectionName] <String> [-FileVirtualPath] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Publish-AzureRemoteAppProgram** menerbitkan program Azure RemoteApp, yang membuatnya tersedia bagi pengguna kumpulan Azure RemoteApp.
+Cmdlet **Publish-AzureRemoteAppProgram** menerbitkan program Azure RemoteApp, yang membuatnya tersedia untuk pengguna koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Cmdlet **Publish-AzureRemoteAppProgram** menerbitkan program Azure RemoteApp, ya
 PS C:\> Publish-AzureRemoteAppProgram -CollectionName "ContosoApps" -StartMenuAppId "a3732322-89a5-4cbc-9844-9634c74d337f" -DisplayName "Finance App"
 ```
 
-Perintah ini menerbitkan program dalam kumpulan ContosoApps dengan *StartMenuAppId tertentu* untuk menambahkan program ke Menu Mulai.
+Perintah ini menerbitkan program dalam koleksi ContosoApps dengan *StartMenuAppId* yang ditentukan untuk menambahkan program ke Menu Mulai.
 Aplikasi yang diterbitkan akan memiliki nama tampilan "Aplikasi Keuangan".
 
 ## PARAMETERS
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Menentukan nama tampilan program Azure RemoteApp yang ramah pengguna.
+Menentukan nama tampilan program Azure RemoteApp yang mudah digunakan.
 Pengguna melihat ini sebagai nama aplikasi.
 
 ```yaml
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileVirtualPath
-Menentukan jalur program di dalam gambar templat program tersebut.
+Menentukan jalur program dalam gambar templat program.
 
 ```yaml
 Type: String
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -151,6 +151,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRemoteAppProgram](./Get-AzureRemoteAppProgram.md)
 
-[Unpublish-AzureRemoteAppProgram](./Unpublish-AzureRemoteAppProgram.md)
+[Batal terbitkan-AzureRemoteAppProgram](./Unpublish-AzureRemoteAppProgram.md)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseRoleAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseRoleAssignment.md
-ms.openlocfilehash: 8c336d718ea04aedeb834b2024c410930d22d8fb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f8175c48263b84b2ecc4aa61d1582f54fba9e3c6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786434"
 ---
 # Remove-AzSynapseRoleAssignment
 
 ## SYNOPSIS
 Menghapus penetapan peran Analitik Synapse.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapseroleassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -88,9 +91,9 @@ Remove-AzSynapseRoleAssignment -WorkspaceObject <PSSynapseWorkspace> -RoleDefini
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzSynapseRoleAssignment** menghapus penetapan peran Analitik Azure Synapse secara permanen.
+Cmdlet **Remove-AzSynapseRoleAssignment** menghapus penetapan peran analitik Azure Synapse secara permanen.
 
-Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
 
 * GET /users/{id}
 * GET /servicePrincipals/{id}
@@ -102,21 +105,21 @@ Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter inpu
 PS C:\> Remove-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleAssignmentId ContosoRoleAssignmentId
 ```
 
-Perintah ini menghapus penetapan peran Analitik Azure Synapse dengan ID penetapan peran.
+Perintah ini menghapus penetapan peran analitik Azure Synapse dengan ID penetapan peran.
 
 ### Contoh 2
 ```powershell
 PS C:\> Remove-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleAssignmentName ContosoRole -SignInName ContosoName
 ```
 
-Perintah ini menghapus penetapan peran Analitik Azure Synapse di tingkat ruang kerja dengan nama peran dan nama utama pengguna.
+Perintah ini menghapus penetapan peran analitik Azure Synapse di tingkat ruang kerja dengan nama peran dan nama utama pengguna.
 
 ### Contoh 3
 ```powershell
 PS C:\> Remove-AzSynapseRoleAssignment -WorkspaceName ContosoWorkspace -RoleAssignmentName ContosoRole -SignInName ContosoName -ItemType ContosoItemType -Item ContosoItem
 ```
 
-Perintah ini menghapus penetapan peran Analitik Synapse Azure dengan nama peran, nama utama pengguna, tipe item, dan item.
+Perintah ini menghapus penetapan peran analitik Azure Synapse dengan nama peran, nama utama pengguna, tipe item, dan item.
 
 ### Contoh 4
 ```powershell
@@ -124,12 +127,12 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Remove-AzSynapseRoleAssignment -RoleAssignmentId ContosoRoleAssignmentId
 ```
 
-Perintah ini menghapus penetapan peran Analitik Azure Synapse dengan Id penetapan peran melalui pipeline.
+Perintah ini menghapus penetapan peran analitik Azure Synapse dengan Id penetapan peran melalui saluran.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-ObjectId Azure AD dari Prinsipal Pengguna, Grup atau Layanan.
+ObjectId Azure AD Dari Prinsipal Pengguna, Grup, atau Layanan.
 
 ```yaml
 Type: System.String
@@ -206,7 +209,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Id Peran yang ditetapkan kepada pokok.
+Id dari Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -251,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionName
-Nama Peran yang ditetapkan kepada pokok.
+Nama Peran yang ditetapkan untuk pokok.
 
 ```yaml
 Type: System.String
@@ -266,7 +269,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-ServicePrincipalName prinsipal layanan.
+ServicePrincipalName dari prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -295,7 +298,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -326,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

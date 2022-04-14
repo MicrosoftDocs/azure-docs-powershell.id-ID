@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Get-AzureRmBackupItem.md
 ms.openlocfilehash: f0380a518353c3bc462a8a7b58012871359569a0
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428450"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845006"
 ---
 # Get-AzureRmBackupItem
 
 ## SYNOPSIS
-Mendapatkan item di bawah wadah dalam Cadangkan.
+Mendapatkan item di bawah wadah di Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,9 +28,9 @@ Get-AzureRmBackupItem [-ProtectionStatus <String>] [-Status <String>] [-Type <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmBackupItem** mendapatkan item dalam wadah di Azure Backup dan status proteksi item.
-Mengaktifkan item untuk proteksi menggunakan cmdlet Enable-AzureRmBackupProtection.
-Wadah yang terdaftar di vault Cadangan dapat memiliki satu atau beberapa item yang dapat diproteksi.
+Cmdlet **Get-AzureRmBackupItem** mendapatkan item dalam wadah dalam Azure Backup dan status proteksi item.
+Aktifkan item untuk perlindungan dengan menggunakan cmdlet Enable-AzureRmBackupProtection.
+Wadah yang didaftarkan ke kubah Cadangan dapat memiliki satu atau beberapa item yang dapat diproteksi.
 Untuk mesin virtual Azure, hanya ada satu item dalam wadah mesin virtual.
 
 ## EXAMPLES
@@ -45,13 +45,13 @@ Name                    ProtectionStatus       DataSourceStatus       RecoveryPo
 co03-vm                 NotProtected                                  0
 ```
 
-Perintah pertama mendapatkan vault bernama Vault03 menggunakan cmdlet Get-AzureRmBackupVault baru.
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan wadah dengan nama yang ditentukan dalam penyimpanan pada $Vault menggunakan cmdlet **Get-AzureRmBackupContainer.**
-Perintah menyimpan objek tersebut dalam $Container variabel.
-Perintah terakhir mendapatkan item cadangan dalam wadah dalam $Container.
+Perintah pertama mendapatkan kubah bernama Vault03 dengan menggunakan cmdlet Get-AzureRmBackupVault.
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan wadah yang memiliki nama yang ditentukan dalam kubah di $Vault menggunakan cmdlet **Get-AzureRmBackupContainer** .
+Perintah menyimpan objek tersebut dalam variabel $Container.
+Perintah akhir mendapatkan item cadangan dalam wadah dalam $Container.
 
-### Contoh 2: Menampilkan semua properti untuk sebuah item
+### Contoh 2: Menampilkan semua properti untuk item
 ```
 PS C:\>Get-AzureRmBackupItem -Container $Container | Select-Object -Property *
 Name                 : co03-vm
@@ -69,15 +69,15 @@ ResourceName         : vault03
 Location             : southeastasia
 ```
 
-Perintah ini mendapatkan item cadangan dalam wadah $Container, lalu meneruskannya ke cmdlet Select-Object.
+Perintah ini mendapatkan item cadangan dalam wadah dalam $Container, lalu meneruskannya ke cmdlet Select-Object.
 Cmdlet tersebut mengembalikan semua properti item cadangan.
-Untuk informasi selengkapnya, ketik `Get-Help Select-Object` .
+Untuk informasi selengkapnya, ketik .`Get-Help Select-Object`
 
 ## PARAMETERS
 
-### -Container
-Menentukan objek wadah di mana cmdlet ini mendapatkan item cadangan.
-Untuk mendapatkan **AzureRmBackupContainer,** gunakan cmdlet Get-AzureRmBackupContainer cmdlet.
+### -Kontainer
+Menentukan objek kontainer di mana cmdlet ini mendapatkan item cadangan.
+Untuk mendapatkan **AzureRmBackupContainer**, gunakan cmdlet Get-AzureRmBackupContainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ### -ProtectionStatus
 Menentukan status proteksi keseluruhan item dalam wadah.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Diproteksi 
+- Dilindungi 
 - Melindungi  
 - NotProtected
 
@@ -127,9 +127,9 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status cadangan untuk sebuah item.
+Menentukan status cadangan untuk suatu item.
 Nilai yang dapat diterima untuk parameter ini adalah: IRPending, Protected, ProtectionError, dan ProtectionStopped.
-Jika parameter *ProtectionStatus* memiliki nilai Protected, Anda dapat menggunakan nilai parameter *Status* untuk memfilter item.
+Jika parameter *ProtectionStatus* memiliki nilai Terproteksi, Anda dapat menggunakan nilai parameter *Status* untuk memfilter item.
 
 ```yaml
 Type: System.String
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Menentukan tipe item yang akan didaurkan cmdlet ini.
+Menentukan tipe item yang didapat cmdlet ini.
 Saat ini, satu-satunya nilai yang didukung adalah AzureVM.
 
 ```yaml
@@ -162,12 +162,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainer
-Parameter: Container (ByValue)
+Parameter: Kontainer (ByValue)
 
 ## OUTPUTS
 
@@ -179,14 +179,14 @@ Parameter: Container (ByValue)
 
 [Backup-AzureRmBackupItem](./Backup-AzureRmBackupItem.md)
 
-[Disable-AzureRmBackupProtection](./Disable-AzureRmBackupProtection.md)
+[Menonaktifkan-AzureRmBackupProtection](./Disable-AzureRmBackupProtection.md)
 
-[Enable-AzureRmBackupProtection](./Enable-AzureRmBackupProtection.md)
+[Aktifkan-AzureRmBackupProtection](./Enable-AzureRmBackupProtection.md)
 
 [Get-AzureRmBackupContainer](./Get-AzureRmBackupContainer.md)
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[Restore-AzureRmBackupItem](./Restore-AzureRmBackupItem.md)
+[Pulihkan-AzureRmBackupItem](./Restore-AzureRmBackupItem.md)
 
 

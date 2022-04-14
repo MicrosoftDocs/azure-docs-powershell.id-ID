@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/set-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlAuditSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Set-AzSynapseSqlAuditSetting.md
-ms.openlocfilehash: 90ff283337dccf2e27cd3510857293ed4d4b74ff
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: aa521ea180b4b2a5bca44f38b92d4d18c0a38b3e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141783590"
 ---
 # Set-AzSynapseSqlAuditSetting
 
 ## SYNOPSIS
-Mengubah pengaturan audit Ruang Kerja Analitik Azure Synapse.
+Mengubah pengaturan audit ruang kerja analitik Azure Synapse.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/set-azsynapsesqlauditsetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Set-AzSynapseSqlAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-Predica
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WorkspaceObjectParameterSet
+### Ruang KerjaObjectParameterSet
 ```
 Set-AzSynapseSqlAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-PredicateExpression <String>]
  [-StorageKeyType <String>] [-RetentionInDays <UInt32>] [-BlobStorageTargetState <String>]
@@ -39,7 +42,7 @@ Set-AzSynapseSqlAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-Predica
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WorkspaceResourceIdParameterSetName
+### Ruang KerjaResourceIdParameterSetName
 ```
 Set-AzSynapseSqlAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-PredicateExpression <String>]
  [-StorageKeyType <String>] [-RetentionInDays <UInt32>] [-BlobStorageTargetState <String>]
@@ -50,8 +53,8 @@ Set-AzSynapseSqlAuditSetting [-AuditActionGroup <AuditActionGroups[]>] [-Predica
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSynapseSqlAuditSetting** mengubah pengaturan audit Ruang Kerja Analitik Azure Synapse.
-Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan bagi log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga bisa menentukan penyimpanan untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
+Cmdlet **Set-AzSynapseSqlAuditSetting** mengubah pengaturan pengauditan ruang kerja analitik Azure Synapse.
+Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *StorageAccountResourceId* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan. Anda juga bisa menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
 
 ## EXAMPLES
 
@@ -60,82 +63,82 @@ Ketika penyimpanan blob adalah tujuan untuk log audit, tentukan parameter *Stora
 PS C:\> Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary
 ```
 
-Mengaktifkan kebijakan pengauditan penyimpanan blob dari Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Aktifkan kebijakan pengaudungan penyimpanan blob ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 2
 ```powershell
 PS C:\> Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan penyimpanan blob dari Azure Synapse Analytics Workspace bernama ContosoWorkspace.
+Nonaktifkan kebijakan pengaudungan penyimpanan blob ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 3
 ```powershell
 PS C:\> Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -StorageKeyType Primary -PredicateExpression "statement <> 'select 1'"
 ```
 
-Mengaktifkan kebijakan pengauditan penyimpanan blob dari Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace dengan pemfilteran tingkat lanjut menggunakan predikat SQL T.
+Aktifkan kebijakan pengaudatan penyimpanan blob ruang kerja analitik Azure Synapse bernama ContosoWorkspace dengan pemfilteran tingkat lanjut menggunakan predikat T-SQL.
 
 ### Contoh 4
 ```powershell
 PS C:\> Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -PredicateExpression ""
 ```
 
-Hapus pengaturan pemfilteran tingkat lanjut dari kebijakan audit Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Hapus pengaturan pemfilteran tingkat lanjut dari kebijakan pengaudungan ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 5
 ```powershell
 PS C:\>Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId"
 ```
 
-Aktifkan kebijakan pengauditan hub kejadian dari Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Aktifkan kebijakan audit hub kejadian ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 6
 ```powershell
 PS C:\>Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -EventHubTargetState Disabled
 ```
 
-Nonaktifkan kebijakan pengauditan hub kejadian ruang kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Nonaktifkan kebijakan pengauditan hub aktivitas ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 7
 ```powershell
 PS C:\>Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/myworkspace"
 ```
 
-Aktifkan kebijakan pengauditan analitik log dari Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Aktifkan kebijakan pengaudaran analitik log ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 8
 ```powershell
 PS C:\>Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -LogAnalyticsTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan analitik log dari Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace.
+Nonaktifkan kebijakan pengaudungan analitik log ruang kerja analitik Azure Synapse bernama ContosoWorkspace.
 
 ### Contoh 9
 ```powershell
 PS C:\> Get-AzSynapseWorkspace -Name ContosoWorkspace | Set-AzSynapseSqlAuditSetting -BlobStorageTargetState Disabled
 ```
 
-Menonaktifkan kebijakan pengauditan penyimpanan blob dari Ruang Kerja Analitik Azure Synapse yang bernama ContosoWorkspace melalui pipeline.
+Nonaktifkan kebijakan pengaudungan penyimpanan blob ruang kerja Azure Synapse Analytics bernama ContosoWorkspace melalui pipeline.
 
 ### Contoh 10
 ```powershell
 PS C:\>Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -LogAnalyticsTargetState Enabled -WorkspaceResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/myworkspace" -BlobStorageTargetState Disabled
 ```
 
- Nonaktifkan pengiriman catatan audit ruang kerja Analitik Azure Synapse ke penyimpanan blob, dan aktifkan pengirimannya ke analitik log.
+ Nonaktifkan pengiriman catatan audit ruang kerja analitik Azure Synapse ke penyimpanan blob, dan aktifkan mengirimnya ke analitik log.
 
 ### Contoh 11
 ```powershell
 PS C:\>Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -BlobStorageTargetState Enabled -StorageAccountResourceId "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resourcegroup01/providers/Microsoft.Storage/storageAccounts/mystorage" -EventHubTargetState Enabled -EventHubName "EventHubName" -EventHubAuthorizationRuleResourceId "EventHubAuthorizationRuleResourceId" -LogAnalyticsTargetState Enabled  -WorkspaceResourceId "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-Aktifkan pengiriman catatan audit ruang kerja Analitik Azure Synapse ke penyimpanan blob, hub kejadian, dan analitik log.
+Aktifkan pengiriman catatan audit ruang kerja analitik Azure Synapse ke penyimpanan blob, hub kejadian, dan analitik log.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuditActionGroup
-Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut ini, tindakan ini akan mengaudit semua kueri dan prosedur tersimpan yang dijalankan terhadap database, serta berhasil dan gagal masuk:
+Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi berikut ini - ini akan mengaudit semua kueri dan prosedur yang disimpan yang dijalankan terhadap database, serta proses masuk yang berhasil dan gagal:
 
 
 
@@ -160,8 +163,8 @@ Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut 
 
 "FAILED_DATABASE_AUTHENTICATION_GROUP"
 
-Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default.
-Grup ini mencakup SQL pernyataan privasi dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
+Kombinasi di atas ini juga merupakan kumpulan yang dikonfigurasi secara default.
+Grup ini mencakup semua pernyataan SQL dan prosedur yang disimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat.
 
 Untuk informasi selengkapnya, lihat https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubAuthorizationRuleResourceId
-Id sumber daya untuk aturan otorisasi hub acara
+Id sumber daya untuk aturan otorisasi hub kejadian
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -EventHubTargetState
-Menunjukkan apakah hub kejadian adalah tujuan untuk catatan audit.
+Menunjukkan apakah hub kejadian merupakan tujuan untuk catatan audit.
 
 ```yaml
 Type: System.String
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, maka true akan dikembalikan jika berhasil.
+Jika sakelar ini ditentukan, sakelar akan mengembalikan true jika berhasil.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -PredicateExpression
-Predikat T-SQL (klausa WHERE) yang digunakan untuk memfilter log audit.
+Predikat T-SQL (klausul WHERE) digunakan untuk memfilter log audit.
 
 ```yaml
 Type: System.String
@@ -378,7 +381,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -409,7 +412,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceResourceId
-ID ruang kerja (ID sumber daya dari ruang kerja Analitik Log) untuk ruang kerja Analitik Log yang ingin Anda kirimi Log Audit. Contoh: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/vir dropbox2
+ID ruang kerja (ID sumber daya ruang kerja Analitik Log) untuk ruang kerja Analitik Log yang ingin Anda kirimi Log Audit. Contoh: /subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2
 
 ```yaml
 Type: System.String
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -440,7 +443,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -455,7 +458,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

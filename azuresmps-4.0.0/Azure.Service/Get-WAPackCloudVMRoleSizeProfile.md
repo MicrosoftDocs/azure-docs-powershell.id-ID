@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.dll-Help.xml
 ms.assetid: 453AEA42-E29C-4FF2-9210-0DD88B77DC07
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 2f96f2796a219f68087d2e918eeb018d53219580ef090b8ceaa14dbd99d9da26
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a9628a1874e3dfbf9edde37770619a006c319f0b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418200"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094733"
 ---
 # Get-WAPackCloudVMRoleSizeProfile
 
@@ -34,24 +34,24 @@ Cmdlet **Get-WAPackCloudVMRoleSizeProfile** mendapatkan objek profil ukuran Pera
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan profil ukuran Peran VM Cloud menggunakan nama
+### Contoh 1: Dapatkan profil ukuran Peran VM Cloud dengan menggunakan nama
 ```
 PS C:\> Get-WAPackCloudVMRoleSizeProfile -Name "Small"
 ```
 
 Perintah ini mendapatkan profil ukuran bernama Small.
 
-### Contoh 2: Mendapatkan semua profil Ukuran peran VM Cloud
+### Contoh 2: Dapatkan semua profil ukuran Peran VM Cloud
 ```
 PS C:\> Get-WAPackCloudVMRoleSizeProfile
 ```
 
-Perintah ini memiliki semua profil berukuran.
+Perintah ini mendapatkan semua profil ukuran.
 
 ## PARAMETERS
 
 ### -Nama
-Menentukan nama profil ukuran Peran VM Awan.
+Menentukan nama profil ukuran Peran VM Cloud.
 
 ```yaml
 Type: String
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -92,6 +92,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvm](./Get-WAPackVM.md)
+[Get-WAPackVM](./Get-WAPackVM.md)
 
 

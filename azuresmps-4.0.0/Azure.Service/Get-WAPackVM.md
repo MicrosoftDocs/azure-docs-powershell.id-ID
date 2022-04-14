@@ -4,11 +4,11 @@ ms.assetid: 047C5FBD-CB0D-47BF-AE03-4DF32B4FAD87
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c0a8a19e3f2f0e99beaceac7fcd5cbfdb28dbcf3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427516"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094658"
 ---
 # Get-WAPackVM
 
@@ -35,15 +35,15 @@ Get-WAPackVM [-ID <Guid>] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **Get-WAPackvM** mendapatkan objek mesin virtual.
+Cmdlet **Get-WAPackVM** mendapatkan objek mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Get a virtual machine by using a name
+### Contoh 1: Dapatkan mesin virtual dengan menggunakan nama
 ```
 PS C:\> Get-WAPackVM -Name "ContosoV126"
 ```
@@ -55,14 +55,14 @@ Perintah ini mendapatkan mesin virtual bernama ContosoV126.
 PS C:\> Get-WAPackVM -Id 66242D17-189F-480D-87CF-8E1D749998C8
 ```
 
-Perintah ini akan mendapatkan mesin virtual dengan ID yang ditentukan.
+Perintah ini mendapatkan mesin virtual yang memiliki ID yang ditentukan.
 
-### Contoh 3: Get all virtual machines
+### Contoh 3: Dapatkan semua mesin virtual
 ```
 PS C:\> Get-WAPackVM
 ```
 
-Perintah ini memiliki semua mesin virtual.
+Perintah ini mendapatkan semua mesin virtual.
 
 ## PARAMETERS
 
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,22 +123,22 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-WAPackvm](./New-WAPackVM.md)
+[WAPackVM Baru](./New-WAPackVM.md)
 
-[Remove-WAPackvm](./Remove-WAPackVM.md)
+[Hapus-WAPackVM](./Remove-WAPackVM.md)
 
-[Restart-WAPackvm](./Restart-WAPackVM.md)
+[Mulai ulang-WAPackVM](./Restart-WAPackVM.md)
 
-[Resume-WAPackvm](./Resume-WAPackVM.md)
+[Resume-WAPackVM](./Resume-WAPackVM.md)
 
-[Set-WAPackvm](./Set-WAPackVM.md)
+[Set-WAPackVM](./Set-WAPackVM.md)
 
-[Start-WAPackvm](./Start-WAPackVM.md)
+[Start-WAPackVM](./Start-WAPackVM.md)
 
-[Stop-WAPackvm](./Stop-WAPackVM.md)
+[Stop-WAPackVM](./Stop-WAPackVM.md)
 
-[Suspend-WAPackvm](./Suspend-WAPackVM.md)
+[Suspensi-WAPackVM](./Suspend-WAPackVM.md)
 
-[Get-WAPackvMOSDisk](./Get-WAPackVMOSDisk.md)
+[Get-WAPackVMOSDisk](./Get-WAPackVMOSDisk.md)
 
 

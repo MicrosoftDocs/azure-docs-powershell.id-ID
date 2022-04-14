@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.autom
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSoftwareUpdateConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSoftwareUpdateConfiguration.md
-ms.openlocfilehash: f2702318f59cd585e0893fda68a728d60402678c85621b3998176c93e0701f40
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f4d17fa6cdcb64aab2ab373420891f686facfdf8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856062"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845413"
 ---
 # Get-AzureRmAutomationSoftwareUpdateConfiguration
 
@@ -21,7 +21,7 @@ Mendapatkan daftar konfigurasi pembaruan perangkat lunak otomatisasi Azure.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationSoftwareUpdateConfiguration [-ResourceGroupName] <String>
  [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -40,12 +40,12 @@ Get-AzureRmAutomationSoftwareUpdateConfiguration -AzureVMResourceId <String> [-R
 ```
 
 ## DESCRIPTION
-Opsi Get-AzureRmAutomationSoftwareUpdateConfiguration mengembalikan daftar konfigurasi pembaruan perangkat lunak. Untuk mendapatkan konfigurasi pembaruan perangkat lunak tertentu, tentukan parameter nama. Anda juga bisa mencantumkan konfigurasi pembaruan perangkat lunak yang menargetkan komputer virtual Azure tertentu dengan menentukan Id sumber daya azure untuk komputer virtual ini.
+Get-AzureRmAutomationSoftwareUpdateConfiguration mengembalikan daftar konfigurasi pembaruan perangkat lunak. Untuk mendapatkan konfigurasi pembaruan perangkat lunak tertentu, tentukan parameter nama. Anda juga dapat mencantumkan konfigurasi pembaruan perangkat lunak yang menargetkan mesin virtual Azure tertentu dengan menentukan Id sumber daya azure untuk mesin virtual ini.
 
 ## EXAMPLES
 
 ### Contoh 1
-Dapatkan konfigurasi pembaruan perangkat lunak otomatisasi Azure berdasarkan nama.
+Dapatkan konfigurasi pembaruan perangkat lunak otomatisasi azure berdasarkan nama.
 
 ```powershell
 PS C:\> Get-AzureRmAutomationSoftwareUpdateConfiguration -ResourceGroupName "mygroup" -AutomationAccountName "myaccount" -Name "MyWeeklySchedule"
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureVMResourceId
-Id sumber daya Azure komputer virtual.
+Id sumber daya Azure dari mesin virtual.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

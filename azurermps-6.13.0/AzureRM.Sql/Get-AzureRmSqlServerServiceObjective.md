@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerServiceObjective.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerServiceObjective.md
 ms.openlocfilehash: 13ce7a2410f8231d4c5194fbd57d41074d0ca892
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140857901"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059864"
 ---
 # Get-AzureRmSqlServerServiceObjective
 
 ## SYNOPSIS
-Dapatkan tujuan layanan untuk Azure SQL Database server.
+Mendapatkan tujuan layanan untuk server Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,11 +29,11 @@ Get-AzureRmSqlServerServiceObjective [[-ServiceObjectiveName] <String>] [-Server
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServerServiceObjective** mendapatkan tujuan layanan yang tersedia untuk Azure SQL Database server.
+Cmdlet **Get-AzureRmSqlServerServiceObjective** mendapatkan tujuan layanan yang tersedia untuk server Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan tujuan layanan
+### Contoh 1: Mendapatkan tujuan layanan
 ```
 PS C:\>Get-AzureRmSqlServerServiceObjective -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ResourceGroupName ServerName ServiceObjectiveName Description Enabled IsDefault IsSystem
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mendapatkan tujuan layanan untuk server SQL Database ditetapkan ke sumber daya ini.
+Cmdlet ini mendapatkan tujuan layanan untuk server SQL Database yang ditetapkan ke sumber daya ini.
 
 ```yaml
 Type: System.String
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceObjectiveName
-Menentukan nama tujuan layanan untuk suatu Azure SQL Database server.
-Nilai yang dapat diterima untuk parameter ini adalah: Basic, S0, S1, S2, P1, P2, dan P3.
+Menentukan nama tujuan layanan untuk server Azure SQL Database.
+Nilai yang dapat diterima untuk parameter ini adalah: Dasar, S0, S1, S2, P1, P2, dan P3.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -181,6 +181,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

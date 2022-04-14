@@ -5,17 +5,17 @@ online version: https://github.com/Azure/azure-powershell/blob/preview/src/Resou
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmDiscoveredSecuritySolution.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Security/Commands.Security/help/Get-AzureRmDiscoveredSecuritySolution.md
-ms.openlocfilehash: c0fcad121d2532115d56db591078393d42409537a41e0dfcf6ec22303053a523
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ecea7ba6aa34df73de65a4d03e004531e81ff497
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860151"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816836"
 ---
 # Get-AzureRmDiscoveredSecuritySolution
 
 ## SYNOPSIS
-Mendapatkan solusi keamanan yang ditemukan oleh Pusat Keamanan Azure
+Mendapatkan solusi keamanan yang ditemukan oleh Azure Security Center
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,7 +39,7 @@ Get-AzureRmDiscoveredSecuritySolution -ResourceId <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Solusi keamanan secara otomatis ditemukan oleh Pusat Keamanan Azure, gunakan cmdlet ini untuk menampilkan solusi keamanan yang ditemukan
+Solusi keamanan ditemukan secara otomatis oleh Azure Security Center, gunakan cmdlet ini untuk melihat solusi keamanan yang ditemukan
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ SecurityFamily : SaasWaf
 Sku            :
 ```
 
-Mendapatkan semua solusi keamanan yang ditemukan dalam langganan
+Dapatkan semua solusi keamanan yang ditemukan dalam langganan
 
 ### Contoh 2
 ```powershell
@@ -69,7 +69,7 @@ SecurityFamily : SaasWaf
 Sku            :
 ```
 
-Dapatkan solusi keamanan spesifik yang ditemukan
+Dapatkan solusi keamanan tertentu yang ditemukan
 
 ## PARAMETERS
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

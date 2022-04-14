@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 475f8913731e8663cec6c6de4c89254c47d7af5e
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136580339"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814244"
 ---
 # Get-AzsScaleUnit
 
 ## SYNOPSIS
-Mengembalikan daftar semua unit skala di satu lokasi.
+Mengembalikan daftar semua unit skala di suatu lokasi.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-AzsScaleUnit [-Location <String>] [-ResourceGroupName <String>] [-Filter <St
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzsScaleUnit [-Name] <String> [-Location <String>] [-ResourceGroupName <String>] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ Get-AzsScaleUnit -ResourceId <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Mengembalikan daftar semua unit skala di satu lokasi.
+Mengembalikan daftar semua unit skala di suatu lokasi.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ Mengembalikan daftar semua unit skala di satu lokasi.
 Get-AzsScaleUnit
 ```
 
-Mengembalikan daftar informasi tentang unit skala.
+Mengembalikan daftar informasi tentang satuan skala.
 
 ### CONTOH 2
 ```
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Remove-AzureRmServiceBusQueue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Remove-AzureRmServiceBusQueue.md
 ms.openlocfilehash: ba59f19183cf49802240d7631b99b3e69a9bc6f5
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140863532"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060422"
 ---
 # Remove-AzureRmServiceBusQueue
 
 ## SYNOPSIS
-Menghapus antrean dari ruang nama Bus Layanan ditentukan.
+Menghapus antrean dari ruang nama Bus Layanan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmServiceBusQueue [-ResourceId] <String> [-PassThru] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmServiceBusQueue** menghapus antrean dari ruang nama Bus Layanan tertentu.
+Cmdlet **Remove-AzureRmServiceBusQueue** menghapus antrean dari ruang nama Bus Layanan yang ditentukan.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet **Remove-AzureRmServiceBusQueue** menghapus antrean dari ruang nama Bus L
 PS C:\> Remove-AzureRmServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -QueueName SB-Queue_exampl1
 ```
 
-Menghapus Bus Layanan dari `SB-Queue_exampl1` ruang nama `SB-Example1`.
+Menghapus antrean `SB-Queue_exampl1` Bus Layanan dari ruang `SB-Example1`nama .
 
 ### Contoh 2.1 - InputObject - Menggunakan variabel:
 ```
@@ -57,7 +57,7 @@ PS C:\> $inputobject = Get-AzureRmServiceBusQueue <params>
 PS C:\> Remove-AzureRmServiceBusQueue -InputObject $inputobject
 ```
 
-Menghapus antrean Bus Layanan yang disediakan di $inputobject untuk parameter -InputObject
+Menghapus antrean Bus Layanan yang disediakan dalam $inputobject untuk parameter -InputObject
 
 ### Contoh 2.1 - InputObject - Menggunakan Piping:
 ```
@@ -80,7 +80,7 @@ PS C:\> Remove-AzureRmServiceBusQueue -ResourceId "/subscriptions/xxxx-xxxxx-xxx
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Bus Layanan Objek Antrean
+Objek Antrean Bus Layanan
 
 ```yaml
 Type: Microsoft.Azure.Commands.ServiceBus.Models.PSQueueAttributes
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-id sumber daya antrean Bus Layanan baru
+Id Sumber Daya Antrean Bus Layanan
 
 ```yaml
 Type: System.String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

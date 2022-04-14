@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServer.md
 ms.openlocfilehash: a125e3e4580567c403d9541429929f4ba1e638da
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428133"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142096112"
 ---
 # Get-AzureRmSqlServer
 
 ## SYNOPSIS
-Mengembalikan informasi tentang SQL Database server.
+Mengembalikan informasi tentang server SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,8 +28,8 @@ Get-AzureRmSqlServer [[-ResourceGroupName] <String>] [[-ServerName] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServer** mengembalikan informasi tentang satu atau beberapa Azure SQL Database server.
-Tentukan nama server untuk melihat informasi hanya untuk server itu.
+Cmdlet **Get-AzureRmSqlServer** mengembalikan informasi tentang satu atau beberapa server Azure SQL Database.
+Tentukan nama server untuk melihat informasi hanya untuk server tersebut.
 
 ## EXAMPLES
 
@@ -57,9 +57,9 @@ Identity                 :
 FullyQualifiedDomainName : server02.database.windows.net
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database sumber daya yang ditetapkan ke grup sumber daya ResourceGroup01.
+Perintah ini mendapatkan informasi tentang semua server Azure SQL Database yang ditetapkan ke grup sumber daya ResourceGroup01.
 
-### Contoh 2: Mendapatkan informasi tentang Azure SQL Database server
+### Contoh 2: Mendapatkan informasi tentang server Azure SQL Database
 ```
 PS C:\>Get-AzureRmSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ResourceGroupName        : resourcegroup01
@@ -75,7 +75,7 @@ FullyQualifiedDomainName : server01.database.windows.net
 
 Perintah ini mendapatkan informasi tentang server Azure SQL Database bernama Server01.
 
-### Contoh 3: Mendapatkan semua SQL Server dalam langganan
+### Contoh 3: Dapatkan semua contoh SQL Server dalam langganan
 ```
 PS C:\>Get-AzureRmResourceGroup | Get-AzureRmSqlServer
 ResourceGroupName        : resourcegroup01
@@ -109,12 +109,12 @@ Identity                 :
 FullyQualifiedDomainName : server03.database.windows.net
 ```
 
-Perintah ini mendapatkan informasi tentang semua Azure SQL Database pelanggan dalam langganan saat ini.
+Perintah ini mendapatkan informasi tentang semua server Azure SQL Database dalam langganan saat ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk server yang ditetapkan.
+Menentukan nama grup sumber daya tempat server ditetapkan.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang akan dapatkan cmdlet ini.
+Menentukan nama server yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -204,12 +204,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmSqlServer](./New-AzureRmSqlServer.md)
+[AzureRmSqlServer baru](./New-AzureRmSqlServer.md)
 
-[Remove-AzureRmSqlServer](./Remove-AzureRmSqlServer.md)
+[Hapus-AzureRmSqlServer](./Remove-AzureRmSqlServer.md)
 
 [Set-AzureRmSqlServer](./Set-AzureRmSqlServer.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

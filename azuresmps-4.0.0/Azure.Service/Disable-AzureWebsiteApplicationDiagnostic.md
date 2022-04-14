@@ -4,11 +4,11 @@ ms.assetid: 3422EFD0-88DC-4DF0-868C-5C63C9FA95EF
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 072d49cceb4f172c85172aa8d749fe7983b52a0f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421168"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095291"
 ---
 # Disable-AzureWebsiteApplicationDiagnostic
 
@@ -25,15 +25,15 @@ Disable-AzureWebsiteApplicationDiagnostic [-PassThru] [-File] [-TableStorage] [-
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Menonaktifkan diagnostik aplikasi untuk situs web Azure.
-Menonaktifkan pembuatan log yang dikonfigurasi untuk disimpan pada sistem file atau di Azure.
+Menonaktifkan pembuatan log yang dikonfigurasi untuk disimpan di sistem file atau di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Nonaktifkan file pembuatan log aplikasi
+### Contoh 1: Menonaktifkan file pembuatan log aplikasi
 ```
 PS C:\> Disable-AzureWebsiteApplicationDiagnostic -Name MyWebsite -File
 ```
@@ -49,7 +49,7 @@ Contoh berikut ini menonaktifkan pembuatan log aplikasi menggunakan penyimpanan.
 
 ## PARAMETERS
 
-### -BlobStorage
+### -Blobstorage
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Bendera untuk mengembalikan true jika berhasil.
+Tandai untuk mengembalikan true jika berhasil.
 
 ```yaml
 Type: SwitchParameter
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -164,12 +164,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Enable-AzureWebsiteApplicationDiagnostic](./Enable-AzureWebsiteApplicationDiagnostic.md)
 
-[Get-AzureWebsite](./Get-AzureWebsite.md)
+[Dapatkan-AzureWebsite](./Get-AzureWebsite.md)
 
-[New-AzureWebsite](./New-AzureWebsite.md)
+[Baru-AzureSitus Web](./New-AzureWebsite.md)
 
-[Remove-AzureWebsite](./Remove-AzureWebsite.md)
+[Hapus-AzureSitus Web](./Remove-AzureWebsite.md)
 
-[Start-AzureWebsite](./Start-AzureWebsite.md)
+[Mulai AzureSitus Web](./Start-AzureWebsite.md)
 
 

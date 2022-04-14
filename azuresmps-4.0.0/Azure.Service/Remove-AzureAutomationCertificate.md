@@ -4,11 +4,11 @@ ms.assetid: BCF8DAB4-3E14-463B-A18F-E91C740B0D3A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: da5421fbfac6595e15398532879d7f40de428d58
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423211"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093959"
 ---
 # Remove-AzureAutomationCertificate
 
@@ -29,7 +29,7 @@ Remove-AzureAutomationCertificate -Name <String> [-Force] -AutomationAccountName
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Remove-AzureAutomationAccount** menghapus sertifikat dari Microsoft Azure Automation.
+Cmdlet **Remove-AzureAutomationAccount** menghapus sertifikat dari Microsoft Azure Otomatisasi.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Cmdlet **Remove-AzureAutomationAccount** menghapus sertifikat dari Microsoft Azu
 PS C:\> Remove-AzureAutomationCertificate -AutomationAccountName "Contoso17" -Name "Cert01"
 ```
 
-Perintah ini menghapus sertifikat bernama Cert01 dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini menghapus sertifikat bernama Cert01 di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
@@ -57,8 +57,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,7 +116,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAutomationCertificate](./Get-AzureAutomationCertificate.md)
 
-[New-AzureAutomationCertificate](./New-AzureAutomationCertificate.md)
+[AzureAutomation BaruPenerima](./New-AzureAutomationCertificate.md)
 
 [Set-AzureAutomationCertificate](./Set-AzureAutomationCertificate.md)
 

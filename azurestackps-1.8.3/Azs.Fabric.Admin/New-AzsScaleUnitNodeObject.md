@@ -4,16 +4,16 @@ Module Name: Azs.Fabric.Admin
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 8b9af79daecc80b88c0efd342cc6bbbf09176620
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136577192"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141814226"
 ---
 # New-AzsScaleUnitNodeObject
 
 ## SYNOPSIS
-Data input yang memungkinkan untuk menambahkan simpul unit skala.
+Input data yang memungkinkan untuk menambahkan simpul unit skala.
 
 ## SYNTAX
 
@@ -22,7 +22,7 @@ New-AzsScaleUnitNodeObject [[-BMCIPv4Address] <String>] [[-ComputerName] <String
 ```
 
 ## DESCRIPTION
-Data input yang memungkinkan untuk menambahkan simpul unit skala.
+Input data yang memungkinkan untuk menambahkan simpul unit skala.
 
 ## EXAMPLES
 
@@ -31,12 +31,12 @@ Data input yang memungkinkan untuk menambahkan simpul unit skala.
 PS C:\> {{ Add example code here }}
 ```
 
-{{ Tambahkan contoh deskripsi di sini }}
+{{ Tambahkan deskripsi contoh di sini }}
 
 ## PARAMETERS
 
 ### -BMCIPv4Address
-Alamat BMC komputer fisik.
+Alamat BMC mesin fisik.
 
 ```yaml
 Type: String
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerName
-Nama komputer komputer.
+Nama komputer mesin fisik.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

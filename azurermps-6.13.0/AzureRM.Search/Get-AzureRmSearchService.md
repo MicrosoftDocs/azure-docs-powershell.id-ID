@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Search/Commands.Management.Search/help/Get-AzureRmSearchService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Search/Commands.Management.Search/help/Get-AzureRmSearchService.md
 ms.openlocfilehash: 57b09ea3267447f16ceadf4d1eae51f997c53a82
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422502"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816885"
 ---
 # Get-AzureRmSearchService
 
 ## SYNOPSIS
-Mendapatkan layanan Azure Search.
+Mendapatkan layanan Pencarian Azure.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ Get-AzureRmSearchService [-ResourceId] <String> [-DefaultProfile <IAzureContextC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSearchService** mendapatkan layanan Azure Search yang ditentukan.
+Cmdlet **Get-AzureRmSearchService** mendapatkan layanan Pencarian Azure yang ditentukan.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ HostingMode       : Default
 Id                : /subscriptions/f9b96b36-1f5e-4021-8959-51527e26e6d3/resourceGroups/felixwa-01/providers/Microsoft.Search/searchServices/felixwa-basic-search
 ```
 
-Dapatkan layanan Azure Search dengan parameter tertentu.
+Dapatkan layanan Pencarian Azure dengan parameter tertentu.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Cari Nama Layanan.
+Nama Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Search Service Resource Id.
+Id Sumber Daya Layanan Pencarian.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -135,4 +135,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSearchService](./Set-AzureRmSearchService.md)
 
-[Remove-AzureRmSearchService](./Remove-AzureRmSearchService.md)
+[Hapus-AzureRmSearchService](./Remove-AzureRmSearchService.md)

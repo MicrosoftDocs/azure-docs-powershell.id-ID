@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: 99DC239C-EA68-4830-9345-762CD6A3F68C
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 6e5ad1bc490d96ee136cc1742488a0abc1dc795dea63e215ebc65cc0febc27d5
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7b247aa500cfdbcadcbcf7e75ff580bb393eb875
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416473"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095813"
 ---
 # Add-AzureVhd
 
@@ -26,45 +26,45 @@ Add-AzureVhd [-Destination] <Uri> [-LocalFilePath] <FileInfo> [[-NumberOfUploade
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureVhd** mengunggah gambar hard disk virtual (VHD) lokal ke akun penyimpanan blob sebagai gambar .vhd tetap.
-Alat ini memiliki parameter untuk mengonfigurasi proses pengunggahan seperti menentukan jumlah utas pengunggah yang akan digunakan atau menimpa blob yang sudah ada di URI tujuan yang ditentukan.
-Untuk gambar VHD lokal, skenario patching juga didukung sehingga gambar disk diff bisa diunggah tanpa harus mengunggah gambar dasar yang sudah diunggah. URI Akses Bersama (Shared Access Signature) URI juga didukung.
+**Cmdlet Add-AzureVhd** mengunggah gambar hard disk Virtual (VHD) lokal ke akun penyimpanan blob sebagai gambar .vhd tetap.
+Ini memiliki parameter untuk mengonfigurasi proses pengunggahan seperti menentukan jumlah utas pengunggah yang akan digunakan atau menimpa blob yang sudah ada dalam URI tujuan yang ditentukan.
+Untuk gambar VHD lokal, skenario patching juga didukung sehingga gambar disk diff dapat diunggah tanpa harus mengunggah gambar dasar yang sudah diunggah. URI Shared Access Signature (SAS) juga didukung.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan file VHD
+### Contoh 1: Menambahkan file VHD
 ```
 PS C:\> Add-AzureVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd"
 ```
 
 Perintah ini menambahkan file .vhd ke akun penyimpanan.
 
-### Contoh 2: Tambahkan file VHD dan timpa tujuan
+### Contoh 2: Menambahkan file VHD dan menimpa tujuan
 ```
 PS C:\> Add-AzureVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -Overwrite
 ```
 
 Perintah ini menambahkan file .vhd ke akun penyimpanan.
 
-### Contoh 3: Tambahkan file VHD dan tentukan jumlah utas
+### Contoh 3: Menambahkan file VHD dan menentukan jumlah utas
 ```
 PS C:\> Add-AzureVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd" -LocalFilePath "C:\vhd\Win7Image.vhd" -NumberOfThreads 32
 ```
 
-Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan jumlah utas yang digunakan untuk mengunggah file.
+Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan jumlah utas untuk digunakan untuk mengunggah file.
 
-### Contoh 4: Tambahkan file VHD dan tentukan SAS URI
+### Contoh 4: Menambahkan file VHD dan menentukan SAS URI
 ```
 PS C:\> Add-AzureVhd -Destination "http://contosoaccount.blob.core.windows.net/vhdstore/win7baseimage.vhd?st=2013-01-09T22%3A15%3A49Z&amp;se=2013-01-09T23%3A10%3A49Z&amp;sr=b&amp;sp=w&amp;sig=13T9Ow%2FRJAMmhfO%2FaP3HhKKJ6AY093SmveOSIV4%2FR7w%3D" -LocalFilePath "C:\vhd\win7baseimage.vhd"
 ```
 
-Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan URI SAS.
+Perintah ini menambahkan file .vhd ke akun penyimpanan dan menentukan SAS URI.
 
 ## PARAMETERS
 
 ### -BaseImageUriToPatch
-Menentukan URI ke blob gambar dasar di Azure Blob Storage.
-Input SAS in URI juga didukung.
+Menentukan URI ke blob gambar dasar di Penyimpanan Blob Azure.
+SAS dalam input URI juga didukung.
 
 ```yaml
 Type: Uri
@@ -79,9 +79,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan URI ke blob di Microsoft Azure Blob Storage.
-Input SAS in URI didukung.
-Namun, dalam skenario patching, tujuan tidak dapat menjadi URI SAS.
+Menentukan URI ke blob di Penyimpanan Blob Microsoft Azure.
+SAS dalam input URI didukung.
+Namun, dalam skenario patching, tujuan tidak dapat berupa URI SAS.
 
 ```yaml
 Type: Uri
@@ -96,16 +96,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumberOfUploaderThreads
-Menentukan jumlah utas yang akan digunakan untuk unggahan.
+Menentukan jumlah utas yang digunakan untuk diunggah.
 
 ```yaml
 Type: Int32
@@ -164,8 +164,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -OverWrite
-Menentukan bahwa cmdlet ini akan menghapus blob yang sudah ada di URI tujuan yang ditentukan jika ada.
+### -Timpa
+Menentukan bahwa cmdlet ini menghapus blob yang sudah ada dalam URI tujuan yang ditentukan jika ada.
 
 ```yaml
 Type: SwitchParameter
@@ -180,8 +180,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,6 +206,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Save-AzureVhd](./Save-AzureVhd.md)
+[Simpan-AzureVhd](./Save-AzureVhd.md)
 
 

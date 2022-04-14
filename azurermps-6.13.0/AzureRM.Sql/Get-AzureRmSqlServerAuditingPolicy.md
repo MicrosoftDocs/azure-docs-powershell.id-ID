@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAuditingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerAuditingPolicy.md
 ms.openlocfilehash: 1b4f72a5d57884975d6beb0d4676a0cbe5863681
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424166"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059861"
 ---
 # Get-AzureRmSqlServerAuditingPolicy
 
@@ -28,13 +28,13 @@ Get-AzureRmSqlServerAuditingPolicy -ServerName <String> [-ResourceGroupName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServerAuditingPolicy** mendapatkan kebijakan audit server SQL Azure.
-Tentukan parameter *ResourceGroupName,* *ServerName,* *dan DatabaseName* untuk mengidentifikasi database.
-Cmdlet ini mengembalikan kebijakan yang digunakan oleh database Azure SQL yang ditentukan dalam server SQL Azure tertentu dan menggunakan kebijakan auditnya.
+Cmdlet **Get-AzureRmSqlServerAuditingPolicy** mendapatkan kebijakan audit server Azure SQL.
+Tentukan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
+Cmdlet ini mengembalikan kebijakan yang digunakan oleh database Azure SQL yang ditentukan dalam server Azure SQL yang ditentukan dan menggunakan kebijakan pengaudungannya.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kebijakan pengauditan server Azure SQL dengan Pengauditan tabel yang ditetapkan di dalamnya
+### Contoh 1: Dapatkan kebijakan audit server Azure SQL dengan Audit tabel yang ditentukan di dalamnya
 ```
 PS C:\>Get-AzureRmSqlServerAuditingPolicy -ResourceGroupName "resourcegroup01" -ServerName "server01"
 EventType              : {PlainSQL_Success, PlainSQL_Failure, ParameterizedSQL_Success, ParameterizedSQL_Failure...} 
@@ -49,7 +49,7 @@ StorageKeyType         : Primary
 RetentionInDays        : 0
 ```
 
-### Contoh 2: Dapatkan kebijakan pengauditan server Azure SQL dengan pengauditan Blob yang ditetapkan di dalamnya
+### Contoh 2: Dapatkan kebijakan audit server Azure SQL dengan audit Blob yang ditentukan di dalamnya
 ```
 PS C:\>Get-AzureRmSqlServerAuditingPolicy -ResourceGroupName "resourcegroup01" -ServerName "server01"
 AuditActionGroup       : {SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP, FAILED_DATABASE_AUTHENTICATION_GROUP,
@@ -66,7 +66,7 @@ RetentionInDays        : 0
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server Azure SQL yang akan mendapatkan kebijakan pengauditan oleh cmdlet ini.
+Menentukan nama server Azure SQL tempat cmdlet ini mendapatkan kebijakan audit.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Use-AzureRmSqlServerAuditingPolicy](./Use-AzureRmSqlServerAuditingPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

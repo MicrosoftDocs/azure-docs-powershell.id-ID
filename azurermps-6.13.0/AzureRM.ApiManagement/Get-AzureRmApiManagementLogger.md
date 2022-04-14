@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementLogger.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementLogger.md
 ms.openlocfilehash: ee293fcedd6f52f8fee8f14a207862c3b9a11d11
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425930"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846396"
 ---
 # Get-AzureRmApiManagementLogger
 
 ## SYNOPSIS
-Mendapatkan objek Logger Manajemen API.
+Mendapatkan objek API Management Logger.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,17 +35,17 @@ Get-AzureRmApiManagementLogger -Context <PsApiManagementContext> -LoggerId <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagementLogger** mendapatkan **Logger** Manajemen API Azure atau semua loggers.
+Cmdlet **Get-AzureRmApiManagementLogger** mendapatkan Azure API Management **Logger** atau semua logger.
 
 ## EXAMPLES
 
-### Contoh 1: Get all loggers
+### Contoh 1: Dapatkan semua logger
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementLogger -Context $apimContext
 ```
 
-Perintah ini akan mendapatkan semua loggers untuk konteks yang ditentukan.
+Perintah ini mendapatkan semua logger untuk konteks yang ditentukan.
 
 ### Contoh 2: Dapatkan logger tertentu
 ```
@@ -53,12 +53,12 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Get-AzureRmApiManagementLogger -Context $apimContext -LoggerId "Logger123"
 ```
 
-Perintah ini akan menghapus logger yang memiliki ID Logger123.
+Perintah ini menghapus logger yang memiliki ID Logger123.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoggerId
-Menentukan ID logger tertentu untuk mendapatkan.
+Menentukan ID dari logger tertentu untuk didapatkan.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmApiManagementLogger](./New-AzureRmApiManagementLogger.md)
 
-[Remove-AzureRmApiManagementLogger](./Remove-AzureRmApiManagementLogger.md)
+[Hapus-AzureRmApiManagementLogger](./Remove-AzureRmApiManagementLogger.md)
 
 [Set-AzureRmApiManagementLogger](./Set-AzureRmApiManagementLogger.md)
 

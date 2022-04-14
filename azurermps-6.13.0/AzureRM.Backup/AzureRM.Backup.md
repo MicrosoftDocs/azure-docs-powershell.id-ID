@@ -6,53 +6,53 @@ Help Version: 4.0.4.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/AzureRM.Backup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/AzureRM.Backup.md
-ms.openlocfilehash: 7aa7e55a0e282f4164acdf0e9e3aae7d5a6e52f6c2d13fc81ed6ade72677aa89
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5e2765d63a1f93282befe60be261ad520d78510c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132417449"
 ---
-# AzureRM.Backup Module
+# Modul AzureRM.Backup
 ## Deskripsi
 Topik ini menampilkan topik bantuan untuk cmdlet Cadangan Azure Online.
 
 ## Cmdlet AzureRM.Backup
 ### [Backup-AzureRmBackupItem](Backup-AzureRmBackupItem.md)
-Memulai pencadangan untuk item Cadangan.
+Memulai cadangan untuk item Cadangan.
 
-### [Disable-AzureRmBackupProtection](Disable-AzureRmBackupProtection.md)
-Menonaktifkan proteksi untuk item Proteksi cadangan.
+### [Menonaktifkan-AzureRmBackupProtection](Disable-AzureRmBackupProtection.md)
+Menonaktifkan proteksi untuk item terproteksi Cadangan.
 
 ### [Enable-AzureRmBackupContainerReregistration](Enable-AzureRmBackupContainerReregistration.md)
-Daftarkan kembali server untuk menyambungkan ke vault Cadangan.
+Meregister server untuk menyambungkan ke kubah Cadangan.
 
-### [Enable-AzureRmBackupProtection](Enable-AzureRmBackupProtection.md)
-Mengaitkan item dengan kebijakan proteksi Cadangan Azure.
+### [Aktifkan-AzureRmBackupProtection](Enable-AzureRmBackupProtection.md)
+Mengaitkan item dengan kebijakan proteksi Azure Backup.
 
 ### [Get-AzureRmBackupContainer](Get-AzureRmBackupContainer.md)
-Mendapatkan wadah Cadangan.
+Mendapatkan pencadangan kontainer.
 
 ### [Get-AzureRmBackupItem](Get-AzureRmBackupItem.md)
-Mendapatkan item di bawah wadah dalam Cadangkan.
+Mendapatkan item di bawah wadah di Cadangan.
 
 ### [Get-AzureRmBackupJob](Get-AzureRmBackupJob.md)
-Mendapatkan pekerjaan Cadangan.
+Mendapatkan pekerjaan Pencadangan.
 
 ### [Get-AzureRmBackupJobDetails](Get-AzureRmBackupJobDetails.md)
 Mendapatkan detail pekerjaan Pencadangan.
 
 ### [Get-AzureRmBackupProtectionPolicy](Get-AzureRmBackupProtectionPolicy.md)
-Mendapatkan kebijakan pencadangan untuk Vault cadangan.
+Mendapatkan kebijakan cadangan untuk kubah Cadangan.
 
 ### [Get-AzureRmBackupRecoveryPoint](Get-AzureRmBackupRecoveryPoint.md)
-Dapatkan poin pemulihan untuk item yang dicadangkan.
+Mendapatkan titik pemulihan untuk item yang dicadangkan.
 
 ### [Get-AzureRmBackupVault](Get-AzureRmBackupVault.md)
-Mendapatkan vault Cadangan.
+Mendapatkan kubah Cadangan.
 
 ### [Get-AzureRmBackupVaultCredentials](Get-AzureRmBackupVaultCredentials.md)
-Mengunduh file kredensial vault untuk Vault cadangan.
+Mengunduh file kredensial kubah untuk kubah Cadangan.
 
 ### [New-AzureRmBackupProtectionPolicy](New-AzureRmBackupProtectionPolicy.md)
 Membuat kebijakan Pencadangan.
@@ -60,33 +60,33 @@ Membuat kebijakan Pencadangan.
 ### [New-AzureRmBackupRetentionPolicyObject](New-AzureRmBackupRetentionPolicyObject.md)
 Membuat kebijakan penyimpanan Cadangan.
 
-### [New-AzureRmBackupVault](New-AzureRmBackupVault.md)
-Membuat vault Cadangan.
+### [AzureRmBackupVault Baru](New-AzureRmBackupVault.md)
+Membuat kubah Cadangan.
 
-### [Register-AzureRmBackupContainer](Register-AzureRmBackupContainer.md)
-Mendaftarkan wadah dengan Vault cadangan.
+### [Daftarkan-AzureRmBackupContainer](Register-AzureRmBackupContainer.md)
+Mendaftarkan wadah dengan kubah Cadangan.
 
-### [Remove-AzureRmBackupProtectionPolicy](Remove-AzureRmBackupProtectionPolicy.md)
-Menghapus kebijakan dari vault Cadangan.
+### [Hapus-AzureRmBackupProtectionPolicy](Remove-AzureRmBackupProtectionPolicy.md)
+Menghapus kebijakan dari kubah Cadangan.
 
-### [Remove-AzureRmBackupVault](Remove-AzureRmBackupVault.md)
-Menghapus vault Cadangan.
+### [Hapus-AzureRmBackupVault](Remove-AzureRmBackupVault.md)
+Menghapus kubah Cadangan.
 
-### [Restore-AzureRmBackupItem](Restore-AzureRmBackupItem.md)
+### [Pulihkan-AzureRmBackupItem](Restore-AzureRmBackupItem.md)
 Memulihkan data dan konfigurasi untuk item Cadangan ke titik pemulihan.
 
 ### [Set-AzureRmBackupProtectionPolicy](Set-AzureRmBackupProtectionPolicy.md)
-Mengubah kebijakan proteksi yang sudah ada.
+Mengubah kebijakan perlindungan yang sudah ada.
 
 ### [Set-AzureRmBackupVault](Set-AzureRmBackupVault.md)
-Mengubah tipe penyimpanan vault Cadangan.
+Mengubah tipe penyimpanan kubah Cadangan.
 
 ### [Stop-AzureRmBackupJob](Stop-AzureRmBackupJob.md)
-Membatalkan pekerjaan Pencadangan yang sudah ada.
+Membatalkan tugas Pencadangan yang sudah ada.
 
-### [Unregister-AzureRmBackupContainer](Unregister-AzureRmBackupContainer.md)
-Pisahkan wadah dari vault Cadangan.
+### [Batalkan pendaftaran-AzureRmBackupContainer](Unregister-AzureRmBackupContainer.md)
+Membatalkan pendaftaran wadah dari kubah Cadangan.
 
-### [Wait-AzureRmBackupJob](Wait-AzureRmBackupJob.md)
+### [Tunggu-AzureRmBackupJob](Wait-AzureRmBackupJob.md)
 Menunggu pekerjaan Pencadangan selesai.
 

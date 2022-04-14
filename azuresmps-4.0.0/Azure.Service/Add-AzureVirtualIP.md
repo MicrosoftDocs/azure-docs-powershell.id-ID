@@ -4,11 +4,11 @@ ms.assetid: FBED8515-4216-4AB6-B34E-D14A6063A3A7
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2046b466ae9a045d0241fd20f8590fb617afcb67
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421163"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095401"
 ---
 # Add-AzureVirtualIP
 
@@ -25,13 +25,13 @@ Add-AzureVirtualIP [-ServiceName] <String> [-VirtualIPName] <String> [-Profile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureVirtualIP** menambahkan IP virtual baru (VIP) ke layanan Azure Anda.
+Cmdlet **Add-AzureVirtualIP** menambahkan IP virtual (VIP) baru ke layanan Azure Anda.
 IP virtual baru memiliki nama tetapi tidak dialokasikan alamat IP.
 
-Alamat IP tersebut hanya dialokasikan ketika Anda mengaitkan titik akhir ke VIP.
-Lihat Add-AzureEndpoint detail selengkapnya.
+Alamat IP dialokasikan hanya ketika Anda mengaitkan titik akhir ke VIP.
+Lihat Add-AzureEndpoint untuk detail selengkapnya.
 
-Langganan Anda akan dikenakan biaya hanya untuk VIP tambahan setelah terhubung dengan titik akhir.
+Langganan Anda hanya dikenakan biaya untuk VIP tambahan setelah dikaitkan dengan titik akhir.
 
 ## EXAMPLES
 
@@ -48,16 +48,16 @@ Perintah ini menambahkan alamat IP virtual ke layanan.
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -147,6 +147,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureEndpoint](./Add-AzureEndpoint.md)
 
-[Remove-AzureVirtualIP](./Remove-AzureVirtualIP.md)
+[Hapus-AzureVirtualIP](./Remove-AzureVirtualIP.md)
 
 

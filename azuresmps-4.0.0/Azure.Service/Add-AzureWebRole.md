@@ -4,11 +4,11 @@ ms.assetid: FB5CD696-108D-4A3E-8983-1C6562E8795A
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 29e1f806e2ef4d7bff7b7cb9c5de358002e7f44e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421173"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095415"
 ---
 # Add-AzureWebRole
 
@@ -25,46 +25,46 @@ Add-AzureWebRole [-TemplateFolder <String>] [-Name <String>] [-Instances <Int32>
 ```
 
 ## DESCRIPTION
-Topik ini menguraikan cmdlet dalam modul Microsoft Azure PowerShell versi 0.8.10.
-Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini menjelaskan cmdlet dalam versi 0.8.10 modul Microsoft Azure PowerShell.
+Untuk mendapatkan versi modul yang Anda gunakan, di konsol Azure PowerShell, ketik .`(Get-Module -Name Azure).Version`
 
 Cmdlet **Add-AzureWebRole** menambahkan peran pekerja web.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan peran default
+### Contoh 1: Menambahkan peran default
 ```
 PS C:\> Add-AzureWebRole
 ```
 
-Perintah ini menambahkan peran web yang memiliki konfigurasi default Webrole1 sebagai nama dan contoh tunggal.
+Perintah ini menambahkan peran web yang memiliki konfigurasi default Webrole1 sebagai nama dan satu instans.
 
-### Contoh 2: Tambahkan peran dengan nama
+### Contoh 2: Menambahkan peran dengan nama
 ```
 PS C:\> Add-AzureWebRole -Name "MyWebRole"
 ```
 
 Perintah ini menambahkan peran web tunggal bernama MyWebRole ke aplikasi saat ini.
 
-### Contoh 3: Tambahkan peran dengan nama dan jumlah contoh
+### Contoh 3: Menambahkan peran dengan nama dan hitungan instans
 ```
 PS C:\> Add-AzureWebRole -Name "MyWebRole" -Instance 2
 ```
 
 Perintah ini menambahkan peran web bernama MyWebRole ke aplikasi saat ini.
-Cmdlet memiliki jumlah contoh peran 2.
+Cmdlet memiliki hitungan contoh peran 2.
 
-### Contoh 4: Tambahkan peran dengan nama dan templat
+### Contoh 4: Menambahkan peran dengan nama dan templat
 ```
 PS C:\> Add-AzureWebRole -Name "MyWebRole" -TemplateFolder ".\MyWebTemplateFolder"
 ```
 
 Perintah ini menambahkan peran web tunggal bernama MyWebRole ke aplikasi saat ini.
-Perintah menentukan folder bernama MyWebTemplateFolder sebagai templat foldercacah.
+Perintah menentukan folder bernama MyWebTemplateFolder sebagai templat perancah.
 
 ## PARAMETERS
 
-### -Contoh
+### -Instances
 Menentukan jumlah instans.
 
 ```yaml
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -138,6 +138,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureWorkerRole](./Add-AzureWorkerRole.md)
 
-[New-AzureRoleTemplate](./New-AzureRoleTemplate.md)
+[AzureRoleTemplate baru](./New-AzureRoleTemplate.md)
 
 

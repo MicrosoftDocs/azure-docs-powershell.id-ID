@@ -1,0 +1,183 @@
+---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Automation.dll-Help.xml
+Module Name: Az.Automation
+ms.assetid: 89C931AE-DA81-47A7-80E4-159C36497DA0
+online version: https://docs.microsoft.com/powershell/module/az.automation/get-azautomationdscnodeconfiguration
+schema: 2.0.0
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscNodeConfiguration.md
+ms.openlocfilehash: a7fc6d3e8a4cd7a216f58201af93a1f657193d52
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
+ms.translationtype: MT
+ms.contentlocale: id-ID
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141841488"
+---
+# Get-AzAutomationDscNodeConfiguration
+
+## SYNOPSIS
+Mendapatkan metadata untuk konfigurasi simpul DSC dalam Otomatisasi.
+
+## SYNTAX
+
+### ByAll (Default)
+```
+Get-AzAutomationDscNodeConfiguration [-RollupStatus <String>] [-ResourceGroupName] <String>
+ [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByNodeConfigurationName
+```
+Get-AzAutomationDscNodeConfiguration -Name <String> [-ResourceGroupName] <String>
+ [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+```
+
+### ByConfigurationName
+```
+Get-AzAutomationDscNodeConfiguration -ConfigurationName <String> [-RollupStatus <String>]
+ [-ResourceGroupName] <String> [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Cmdlet **Get-AzAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) di Azure Automation.
+Otomatisasi menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
+
+## EXAMPLES
+
+### Contoh 1: Dapatkan semua konfigurasi simpul DSC
+```
+PS C:\>Get-AzAutomationDscNodeConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17"
+```
+
+Perintah ini mendapatkan metadata untuk semua konfigurasi simpul DSC di akun Otomatisasi bernama Contoso17.
+
+### Contoh 2: Dapatkan semua konfigurasi simpul DSC untuk konfigurasi DSC
+```
+PS C:\>Get-AzAutomationDscNodeConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -ConfigurationName "ContosoConfiguration"
+```
+
+Perintah ini mendapatkan metadata untuk semua konfigurasi simpul DSC dalam akun Otomatisasi bernama Contoso17 yang dihasilkan konfigurasi DSC bernama ContosoConfiguration.
+
+### Contoh 3: Dapatkan konfigurasi simpul DSC berdasarkan nama
+```
+PS C:\>Get-AzAutomationDscNodeConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Name "ContosoConfiguration.webserver"
+```
+
+Perintah ini mendapatkan metadata untuk konfigurasi simpul DSC dengan nama ContosoConfiguration.webserver di akun Otomatisasi bernama Contoso17.
+
+## PARAMETERS
+
+### -AutomationAccountName
+Menentukan nama akun Otomatisasi yang berisi konfigurasi simpul DSC di mana cmdlet ini mendapatkan metadata.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ConfigurationName
+Menentukan nama konfigurasi DSC di mana cmdlet ini mendapatkan metadata konfigurasi simpul.
+
+```yaml
+Type: System.String
+Parameter Sets: ByConfigurationName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
+
+```yaml
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nama
+Menentukan nama konfigurasi simpul DSC di mana cmdlet ini mendapatkan metadata.
+
+```yaml
+Type: System.String
+Parameter Sets: ByNodeConfigurationName
+Aliases: NodeConfigurationName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+Menentukan nama grup sumber daya.
+Cmdlet ini mendapatkan metadata untuk konfigurasi simpul DSC dalam grup sumber daya yang ditentukan parameter ini.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RollupStatus
+Menentukan status rollup dari konfigurasi simpul DSC yang didapatkan cmdlet ini.
+Nilai yang valid adalah: 
+- Buruk 
+- Bagus
+
+```yaml
+Type: System.String
+Parameter Sets: ByAll, ByConfigurationName
+Aliases:
+Accepted values: Good, Bad
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### System.String
+
+## OUTPUTS
+
+### Microsoft.Azure.Commands.Automation.Model.CompilationJob
+
+## CATATAN
+
+## RELATED LINKS
+
+[Import-AzAutomationDscNodeConfiguration](./Import-AzAutomationDscNodeConfiguration.md)
+
+

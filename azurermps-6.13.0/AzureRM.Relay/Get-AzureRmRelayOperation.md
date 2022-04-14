@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Relay/Commands.Relay/help/Get-AzureRmRelayOperation.md
 ms.openlocfilehash: e7f45be6a39cdd2b7f2d11736d2a5f62831244c3
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140864081"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061049"
 ---
 # Get-AzureRmRelayOperation
 
 ## SYNOPSIS
-Operasi Relay yang Didukung Daftar
+Operasi Relai yang didukung daftar
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -26,7 +26,7 @@ Get-AzureRmRelayOperation [-DefaultProfile <IAzureContextContainer>] [<CommonPar
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmRmRmOperation** mencantumkan Operasi yang Didukung Relay.
+Cmdlet **Get-AzureRmRelayOperation** Mencantumkan Operasi yang didukung Relay.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Microsoft.Relay/namespaces/WcfRelays/authorizationRules/delete                  
 Microsoft.Relay/namespaces/WcfRelays/authorizationRules/listkeys/action         Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes
 ```
 
-Operasi relay daftar yang didukung
+Operasi yang didukung Relai Daftar
 
 ## PARAMETERS
 
@@ -78,12 +78,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 
 ## OUTPUTS

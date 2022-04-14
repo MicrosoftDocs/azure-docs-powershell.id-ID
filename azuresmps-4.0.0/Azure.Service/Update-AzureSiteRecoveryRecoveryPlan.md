@@ -4,16 +4,16 @@ ms.assetid: 5625ED47-BD85-4BF5-9044-2012E5A67BA4
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: d349e16cdecd840344e02941b5cb9ffcedced4a4
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423568"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141815576"
 ---
 # Update-AzureSiteRecoveryRecoveryPlan
 
 ## SYNOPSIS
-Memperbarui paket pemulihan dalam Pemulihan Situs.
+Memperbarui rencana pemulihan di Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Update-AzureSiteRecoveryRecoveryPlan -File <String> [-WaitForCompletion] [-Profi
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureSiteRecoveryRecoveryPlan** memperbarui paket pemulihan di Pemulihan Situs Azure lalu menerbitkannya.
+Cmdlet **Update-AzureSiteRecoveryRecoveryPlan** memperbarui rencana pemulihan di Azure Site Recovery lalu menerbitkannya.
 
 ## EXAMPLES
 
@@ -34,12 +34,12 @@ Cmdlet **Update-AzureSiteRecoveryRecoveryPlan** memperbarui paket pemulihan di P
 PS C:\> Update-AzureSiteRecoveryRecoveryPlan -File "C:\Users\Contoso\Desktop\RecoveryPlan.xml"
 ```
 
-Perintah ini akan memperbarui paket pemulihan tertentu, lalu menerbitkannya.
+Perintah ini memperbarui rencana pemulihan yang ditentukan, lalu menerbitkannya.
 
 ## PARAMETERS
 
 ### -File
-Menentukan file rencana pemulihan dari paket pemulihan yang diperbarui cmdlet ini.
+Menentukan file rencana pemulihan rencana pemulihan yang diperbarui cmdlet ini.
 
 ```yaml
 Type: String
@@ -54,8 +54,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForCompletion
-Menunjukkan bahwa cmdlet menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -97,8 +97,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSiteRecoveryRecoveryPlan](./Get-AzureSiteRecoveryRecoveryPlan.md)
 
-[New-AzureSiteRecoveryRecoveryPlan](./New-AzureSiteRecoveryRecoveryPlan.md)
+[Baru-AzureSiteRecoveryRecoveryPlan](./New-AzureSiteRecoveryRecoveryPlan.md)
 
-[Remove-AzureSiteRecoveryRecoveryPlan](./Remove-AzureSiteRecoveryRecoveryPlan.md)
+[Hapus-AzureSiteRecoveryRecoveryPlan](./Remove-AzureSiteRecoveryRecoveryPlan.md)
 
 

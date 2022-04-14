@@ -4,11 +4,11 @@ ms.assetid: 36DA2BF9-091E-4A2C-B5E1-07B4D2E482FC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9e056d87d340ace547a15d62e9cca3062a067fdb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425083"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816548"
 ---
 # New-AzureVNetGateway
 
@@ -25,9 +25,9 @@ New-AzureVNetGateway -VNetName <String> [-GatewayType <String>] [-GatewaySKU <St
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureVNetGateway** membuat gateway jaringan privat virtual (VPN) di jaringan virtual.
+Cmdlet **New-AzureVNetGateway** membuat gateway jaringan privat virtual (VPN) dalam jaringan virtual.
 Anda juga bisa menentukan SKU gateway, baik Default, Standar, atau HighPerformance.
-Anda bisa menentukan tipe, baik StaticRouting atau DynamicRouting.
+Anda dapat menentukan tipe, baik StaticRouting atau DynamicRouting.
 
 ## EXAMPLES
 
@@ -41,9 +41,9 @@ Gateway adalah SKU Default dan menggunakan perutean dinamis.
 
 ## PARAMETERS
 
-### -GatewaySKU
+### -GatewaysKU
 Menentukan SKU gateway jaringan virtual yang dibuat cmdlet ini.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - Default 
 - Standar 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ### -GatewayType
 Menentukan tipe gateway yang dibuat cmdlet ini.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
 - StaticRouting 
 - DynamicRouting
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -VNetName
-Menentukan jaringan virtual di mana cmdlet ini menambahkan gateway jaringan virtual.
+Menentukan jaringan virtual tempat cmdlet ini menambahkan gateway jaringan virtual.
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,11 +123,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVNetGateway](./Get-AzureVNetGateway.md)
 
-[Remove-AzureVNetGateway](./Remove-AzureVNetGateway.md)
+[Hapus-AzureVNetGateway](./Remove-AzureVNetGateway.md)
 
-[Reset-AzureVNetGateway](./Reset-AzureVNetGateway.md)
+[Mengatur ulang AzureVNetGateway](./Reset-AzureVNetGateway.md)
 
-[Resize-AzureVNetGateway](./Resize-AzureVNetGateway.md)
+[Mengubah ukuran AzureVNetGateway](./Resize-AzureVNetGateway.md)
 
 [Set-AzureVNetGatewayKey](./Set-AzureVNetGatewayKey.md)
 

@@ -4,16 +4,16 @@ ms.assetid: A2F0ECAD-595C-45E6-98AC-2C7DB8E4BEF0
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 89be2a1fb9483a7514394acc28636abd40c01c2f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419498"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142095219"
 ---
 # Get-AzureApplicationGatewayConfig
 
 ## SYNOPSIS
-Mendapatkan konteks konfigurasi Gateway Aplikasi.
+Mendapatkan konteks konfigurasi Application Gateway.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -31,18 +31,18 @@ Anda bisa menyimpan konfigurasi XML ke file.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan konfigurasi Gateway Aplikasi dan simpan ke file
+### Contoh 1: Dapatkan konfigurasi Application Gateway dan simpan ke file
 ```
 PS C:\> Get-AzureApplicationGatewayConfig -Name "ApplicationGateway06" -ExportToFile "D:\config.xml"
 ```
 
-Perintah ini mendapatkan konfigurasi untuk Gateway Aplikasi bernama ApplicationGateway06.
-Perintah menyimpannya dalam file di jalur yang ditentukan.
+Perintah ini mendapatkan konfigurasi untuk Application Gateway bernama ApplicationGateway06.
+Perintah menyimpannya dalam file dalam jalur yang ditentukan.
 
 ## PARAMETERS
 
 ### -ExportToFile
-Menentukan jalur file di mana cmdlet ini menyimpan konfigurasi dalam format XML.
+Menentukan jalur file tempat cmdlet ini menyimpan konfigurasi dalam format XML.
 
 ```yaml
 Type: String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Gateway Aplikasi di mana cmdlet ini mendapatkan informasi konfigurasi.
+Menentukan nama Application Gateway di mana cmdlet ini mendapatkan informasi konfigurasi.
 
 ```yaml
 Type: String
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ad
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Add-AzApiManagementRegion.md
-ms.openlocfilehash: 7376f2160e0d32f30ae7e7fb79cba857449c8703
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e431bb313ce3343fa169e69ee589dbceab529684
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141793220"
 ---
 # Add-AzApiManagementRegion
 
 ## SYNOPSIS
-Menambahkan kawasan penyebaran baru ke contoh PsApiManagement.
+Menambahkan kawasan penyebaran baru ke instans PsApiManagement.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/add-azapimanagementregion) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,32 +30,32 @@ Add-AzApiManagementRegion -ApiManagement <PsApiManagement> -Location <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzApiManagementRegion** menambahkan instans baru tipe **PsApiManagementRegion** ke kumpulan Wilayah Tambahan dari tipe  tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
-Cmdlet ini tidak menyebarkan apa pun dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement** .
-Untuk memperbarui penyebaran Manajemen API, ubah Instans **PsApiManagement menjadi** Set-AzApiManagement.
+Cmdlet **Add-AzApiManagementRegion** menambahkan **instans baru tipe PsApiManagementRegion** ke kumpulan **AdditionalRegions dari instans** yang disediakan dari tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
+Cmdlet ini tidak menyebarkan apa pun dengan sendirinya tetapi memperbarui contoh **PsApiManagement** dalam memori.
+Untuk memperbarui penyebaran API Management melewati **Instans PsApiManagement** yang dimodifikasi ke Set-AzApiManagement.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan kawasan penyebaran baru ke contoh PsApiManagement
+### Contoh 1: Menambahkan kawasan penyebaran baru ke instans PsApiManagement
 ```powershell
 Add-AzApiManagementRegion -ApiManagement $ApiManagement -Location "East US" -Sku "Premium" -Capacity 2
 ```
 
-Perintah ini menambahkan dua unit SKU premium dan kawasan yang bernama AS Timur ke instans **PsApiManagement** .
+Perintah ini menambahkan dua unit SKU premium dan kawasan bernama East US ke **instans PsApiManagement** .
 
-### Contoh 2: Tambahkan kawasan penyebaran baru ke contoh PsApiManagement lalu perbarui penyebaran
+### Contoh 2: Tambahkan kawasan penyebaran baru ke instans PsApiManagement lalu perbarui penyebaran
 ```powershell
 $service = Get-AzApiManagement -ResourceGroupName "Contoso" -Name "ContosoApi"
 $service = Add-AzApiManagementRegion -ApiManagement $service -Location $secondarylocation -VirtualNetwork $additionalRegionVirtualNetwork
 $service = Set-AzApiManagement -InputObject $service -PassThru
 ```
 
-Perintah ini mendapatkan objek **PsApiManagement** , menambahkan dua unit SKU premium untuk kawasan yang bernama AS Timur, lalu memperbarui penyebaran.
+Perintah ini mendapatkan objek **PsApiManagement** , menambahkan dua unit SKU premium untuk kawasan bernama As timur, lalu memperbarui penyebaran.
 
 ## PARAMETERS
 
 ### -ApiManagement
-Menentukan instans **PsApiManagement** yang ditambahkan cmdlet ini untuk menambahkan kawasan penyebaran tambahan.
+Menentukan **instans PsApiManagement** tempat cmdlet ini menambahkan area penyebaran tambahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
@@ -67,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Menentukan kapasitas SKU wilayah penyebaran.
+Menentukan kapasitas SKU dari wilayah penyebaran.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -97,8 +100,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisableGateway
-Flag only meant to be used for Premium SKU ApiManagement Service and Non Internal VNET deployments. Ini berguna jika kami ingin membuat kawasan gateway tidak rotasi. Ini juga bisa digunakan untuk membuat kawasan baru di mode Pasif, mengujinya lalu membuatnya Langsung kemudian.
-Perilaku default adalah membuat kawasan langsung hidup.
+Bendera hanya dimaksudkan untuk digunakan untuk Premium penyebaran SKU ApiManagement Service dan Non Internal VNET. Ini berguna jika kami ingin mengeluarkan kawasan gateway dari rotasi. Ini juga dapat digunakan untuk berdiri di kawasan baru dalam mode Pasif, mengujinya lalu membuatnya Langsung nanti.
+Perilaku defaultnya adalah membuat kawasan langsung hidup.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -113,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi wilayah penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
-Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Select-Object Lokasi
+Menentukan lokasi kawasan penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
+Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
 Type: System.String
@@ -129,8 +132,8 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan tingkatan wilayah penyebaran.
-Nilai valid adalah: 
+Menentukan tingkat wilayah penyebaran.
+Nilai yang valid adalah: 
 - Pengembang
 - Standar
 - Premium
@@ -163,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan menjelaskan tempat layanan manajemen api digunakan.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan tempat layanan manajemen api disebarkan.
 
 ```yaml
 Type: System.String[]
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -190,7 +193,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
 ## CATATAN
-* Cmdlet menulis contoh **PsApiManagement yang diperbarui** ke saluran.
+* Cmdlet menulis **instans PsApiManagement** yang diperbarui ke pipeline.
 
 ## RELATED LINKS
 

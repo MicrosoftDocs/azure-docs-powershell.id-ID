@@ -4,16 +4,16 @@ ms.assetid: C6D23ECB-C06E-4EB7-8096-33787E39694D
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 99dc72104867db9cfa45fa7585a7dda2733f42f9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423570"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093275"
 ---
 # Set-AzureInternalLoadBalancer
 
 ## SYNOPSIS
-Mengubah konfigurasi penyeimbang muat internal dalam layanan Azure.
+Mengubah konfigurasi penyeimbang muatan internal dalam layanan Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -41,8 +41,8 @@ Set-AzureInternalLoadBalancer [-InternalLoadBalancerName] <String> [-ServiceName
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureInternalLoadBalancer** mengubah konfigurasi penyeimbang muat internal di layanan Azure.
-Untuk jaringan virtual, Anda dapat menentukan subnet atau alamat IP penyeimbang muat internal.
+Cmdlet **Set-AzureInternalLoadBalancer** mengubah konfigurasi penyeimbang muatan internal dalam layanan Azure.
+Untuk jaringan virtual, Anda dapat menentukan subnet atau alamat IP penyeimbang muatan internal.
 
 ## EXAMPLES
 
@@ -54,16 +54,16 @@ Untuk jaringan virtual, Anda dapat menentukan subnet atau alamat IP penyeimbang 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalLoadBalancerName
-Menentukan nama penyeimbang muat internal yang dimodifikasi cmdlet ini.
+Menentukan nama penyeimbang muatan internal yang diubah cmdlet ini.
 
 ```yaml
 Type: String
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Menentukan nama layanan di mana cmdlet ini memodifikasi penyeimbang muat internal.
+Menentukan nama layanan di mana cmdlet ini mengubah penyeimbang muatan internal.
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -StaticVNetIPAddress
-Menentukan alamat IP jaringan virtual untuk penyeimbang muat internal.
+Menentukan alamat IP jaringan virtual untuk penyeimbang muatan internal.
 
 ```yaml
 Type: IPAddress
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Menentukan nama subnet untuk penyeimbang muat internal.
+Menentukan nama subnet untuk load balancer internal.
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -183,8 +183,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureInternalLoadBalancer](./Get-AzureInternalLoadBalancer.md)
 
-[New-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
+[Baru-AzureInternalLoadBalancerConfig](./New-AzureInternalLoadBalancerConfig.md)
 
-[Remove-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
+[Hapus-AzureInternalLoadBalancer](./Remove-AzureInternalLoadBalancer.md)
 
 

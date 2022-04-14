@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseSecureConnectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseSecureConnectionPolicy.md
-ms.openlocfilehash: 008931a381200ad6eb80f3d969626b096548186f407432704da44c9eabc50c45
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 92b75e55adb4e1107767c3c58394c9f344a5bd3b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140861714"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060276"
 ---
 # Get-AzureRmSqlDatabaseSecureConnectionPolicy
 
@@ -29,15 +29,15 @@ Get-AzureRmSqlDatabaseSecureConnectionPolicy [-ServerName] <String> [-DatabaseNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlDatabaseSecureConnectionPolicy** mendapatkan kebijakan saluran terenkripsi dari database SQL Azure.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, *dan DatabaseName* untuk mengidentifikasi database.
-Setelah berhasil dijalankan, cmdlet akan mengembalikan objek yang menguraikan kebijakan saluran terenkripsi saat ini dan juga pengidentifikasi database.
+Cmdlet **Get-AzureRmSqlDatabaseSecureConnectionPolicy** mendapatkan kebijakan saluran terenkripsi dari database Azure SQL.
+Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
+Setelah cmdlet ini berjalan dengan sukses, cmdlet ini mengembalikan objek yang menjelaskan kebijakan saluran terenkripsi saat ini dan juga pengidentifikasi database.
 Pengidentifikasi database menyertakan, tetapi tidak terbatas pada, **ResourceGroupName**, **ServerName**, dan **DatabaseName**.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan saluran terenkripsi database Azure SQL
+### Contoh 1: Dapatkan kebijakan saluran terenkripsi dari database Azure SQL
 ```
 PS C:\>Get-AzureRmSqlDatabaseSecureConnectionPolicy -ResourceGroupName "resourcegroup01" -ServerName "server01" -DatabaseName "database01"
 DatabaseName          : database01
@@ -49,7 +49,7 @@ ProxyPort             : 1433
 SecureConnectionState : Optional
 ```
 
-Perintah ini mendapatkan kebijakan saluran terenkripsi database Azure SQL bernama database01 yang terletak di server01.
+Perintah ini mendapatkan kebijakan saluran terenkripsi dari database Azure SQL bernama database01 yang terletak di server server01.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

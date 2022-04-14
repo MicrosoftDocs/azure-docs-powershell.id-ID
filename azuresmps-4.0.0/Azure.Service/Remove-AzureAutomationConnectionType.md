@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Automation.dll-Help.xml
 ms.assetid: 4370FF88-E34F-499D-AF57-53C15B4EB6E9
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 47f24d14f8e71299a00f3e0204614a35d806da35867cf53ee09931a4e3d444b0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 04691739fafc3fc64b55e9c9cc19aa92408a6d38
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418191"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816512"
 ---
 # Remove-AzureAutomationConnectionType
 
@@ -29,7 +29,7 @@ Remove-AzureAutomationConnectionType -Name <String> [-Force] -AutomationAccountN
 
 [!INCLUDE [aa-deprecation](../include/aa-deprecation.md)]
 
-Cmdlet **Remove-AzureAutomationConnectionType** menghapus tipe koneksi Otomatisasi Azure.
+Cmdlet **Remove-AzureAutomationConnectionType** menghapus tipe koneksi Azure Automation.
 
 ## EXAMPLES
 
@@ -50,8 +50,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

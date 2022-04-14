@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/New-AzureRmBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/New-AzureRmBackupVault.md
 ms.openlocfilehash: ad3619d2d0fcb9b60639a19b0c7d3fea45833857
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420378"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141844921"
 ---
 # New-AzureRmBackupVault
 
 ## SYNOPSIS
-Membuat vault Cadangan.
+Membuat kubah Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ New-AzureRmBackupVault [-ResourceGroupName] <String> [-Name] <String> [-Region] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmBackupVault** membuat vault Azure Backup.
-Cmdlet ini mengembalikan **objek AzureRmBackupVault** yang bertindak sebagai referensi untuk entitas vault.
+Cmdlet **New-AzureRmBackupVault** membuat kubah Azure Backup.
+Cmdlet ini mengembalikan objek **AzureRmBackupVault** yang bertindak sebagai referensi ke entitas kubah.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat vault cadangan
+### Contoh 1: Membuat kubah cadangan
 ```
 PS C:\>New-AzureRmBackupVault -ResourceGroupName "ResourceGroup01" -Name "Vault03" -Region "westus"
 ResourceId        : /subscriptions/4bfbe168-f42a-4a06-8f5a-331cad1f497e/resourceGroups/ResourceGroup01/providers/Microsoft.Backup
@@ -44,11 +44,11 @@ Region            : westus
 Storage           : GeoRedundant
 ```
 
-Perintah ini akan membuat vault Cadangan Azure bernama Vault03.
-Vault berada di grup sumber daya bernama ResourceGroup01 di kawasan Barat AS.
-Vault menggunakan tipe penyimpanan default GeoRedundant.
+Perintah ini membuat kubah Azure Backup bernama Vault03.
+Kubah berada dalam grup sumber daya bernama ResourceGroup01 di kawasan AS Barat.
+Kubah menggunakan tipe penyimpanan GeoRedundant default.
 
-### Contoh 2: Buat vault cadangan yang menggunakan penyimpanan lokal yang berlebihan
+### Contoh 2: Membuat kubah cadangan yang menggunakan penyimpanan lokal yang berlebihan
 ```
 PS C:\>New-AzureRmBackupVault -ResourceGroupName "ResourceGroup02" -Name "Vault03" -Region "westus" -Storage LocallyRedundant
 ResourceId        : /subscriptions/4bfbe168-f42a-4a06-8f5a-331cad1f497e/resourceGroups/ResourceGroup02/providers/Microsoft.Backup
@@ -59,14 +59,14 @@ Region            : westus
 Storage           : LocallyRedundant
 ```
 
-Perintah ini akan membuat vault Cadangan Azure bernama Vault03.
-Vault berada di grup sumber daya bernama ResourceGroup02 di kawasan Barat AS.
-Vault menggunakan tipe penyimpanan LocallyRedundant.
+Perintah ini membuat kubah Azure Backup bernama Vault03.
+Kubah berada dalam grup sumber daya bernama ResourceGroup02 di kawasan AS Barat.
+Kubah menggunakan tipe penyimpanan LocallyRedundant.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk vault Cadangan Azure.
+Menentukan nama untuk kubah Azure Backup.
 Nama harus unik dalam grup sumber daya.
 
 ```yaml
@@ -97,9 +97,9 @@ Accept wildcard characters: False
 ```
 
 ### -Kawasan
-Menentukan kawasan Azure tempat vault cadangan tersebut ada.
-Untuk skenario pencadangan hibrid, kami menyarankan agar Anda membuat vault di kawasan yang dekat dengan server lokal untuk mengurangi latensi.
-Untuk cadangan infrastruktur Azure sebagai mesin virtual layanan (IaaS), vault menjadi titik penemuan untuk mesin virtual lokal.
+Menentukan kawasan Azure tempat kubah cadangan ada.
+Untuk skenario pencadangan hibrid, kami menyarankan agar Anda membuat kubah di kawasan yang dekat dengan server lokal untuk mengurangi latensi.
+Untuk pencadangan mesin virtual Azure infrastructure as a service (IaaS), kubah menjadi titik penemuan untuk mesin virtual lokal.
 
 ```yaml
 Type: System.String
@@ -114,9 +114,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya Azure yang sudah ada di mana cmdlet ini membuat vault Cadangan.
-Untuk membuat grup sumber daya, gunakan New-AzureRMResourceGroup cmdlet.
-Grup sumber daya dan vault Cadangan Azure tidak harus berada di kawasan yang sama.
+Menentukan nama grup sumber daya Azure yang sudah ada di mana cmdlet ini membuat kubah Cadangan.
+Untuk membuat grup sumber daya, gunakan cmdlet New-AzureRMResourceGroup.
+Grup sumber daya dan kubah Azure Backup tidak harus berada di kawasan yang sama.
 
 ```yaml
 Type: System.String
@@ -149,24 +149,24 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
 
 ## CATATAN
-* Tidak ada
+* Tidak
 
 ## RELATED LINKS
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[Remove-AzureRmBackupVault](./Remove-AzureRmBackupVault.md)
+[Hapus-AzureRmBackupVault](./Remove-AzureRmBackupVault.md)
 
 [Set-AzureRmBackupVault](./Set-AzureRmBackupVault.md)
 

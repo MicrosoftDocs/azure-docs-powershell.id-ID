@@ -6,16 +6,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/restart
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Restart-AzWebAppSlot.md
-ms.openlocfilehash: 51f1f444d50bd7a03915c8f9362f8c7ce733edf2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 33386b99e0eb766ca59dbfd17fc58a6161187bf3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140547709"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782978"
 ---
 # Restart-AzWebAppSlot
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/restart-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,8 +34,8 @@ Restart-AzWebAppSlot [-WebApp] <PSSite> [-DefaultProfile <IAzureContextContainer
 ```
 
 ## DESCRIPTION
-Cmdlet **Restart-AzWebAppSlot** berhenti dan memulai Slot Azure Web App.
-Jika Slot Web App berada dalam status berhenti, gunakan cmdlet Start-AzWebAppSlot.
+Cmdlet **Restart-AzWebAppSlot** berhenti lalu memulai Slot Azure Web App.
+Jika Slot Web App dalam status berhenti, gunakan cmdlet Start-AzWebAppSlot.
 
 ## EXAMPLES
 
@@ -46,7 +49,7 @@ Perintah ini memulai ulang slot Slot001 untuk aplikasi web ContosoWebApp yang te
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -121,32 +124,32 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 
 ## RELATED LINKS
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
-[New-AzWebAppslot](./New-AzWebAppSlot.md)
+[New-AzWebAppSlot](./New-AzWebAppSlot.md)
 
-[Remove-AzWebAppslot](./Remove-AzWebAppSlot.md)
+[Hapus-AzWebAppSlot](./Remove-AzWebAppSlot.md)
 
-[Set-AzWebAppslot](./Set-AzWebAppSlot.md)
+[Set-AzWebAppSlot](./Set-AzWebAppSlot.md)
 
-[Start-AzWebAppslot](./Start-AzWebAppSlot.md)
+[Start-AzWebAppSlot](./Start-AzWebAppSlot.md)
 
-[Stop-AzWebAppslot](./Stop-AzWebAppSlot.md)
+[Stop-AzWebAppSlot](./Stop-AzWebAppSlot.md)
 
 [Get-AzWebApp](./Get-AzWebApp.md)

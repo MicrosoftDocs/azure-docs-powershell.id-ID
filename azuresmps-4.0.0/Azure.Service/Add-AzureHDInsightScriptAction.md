@@ -4,11 +4,11 @@ ms.assetid: 600D35F8-1E3C-4724-9F5E-75CF754F424F
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: fb81a0c4fa38cdfa5214aa12e4a01e69ecef8ed7
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415225"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816746"
 ---
 # Add-AzureHDInsightScriptAction
 
@@ -26,19 +26,19 @@ Add-AzureHDInsightScriptAction -Config <AzureHDInsightConfig> -Name <String>
 ```
 
 ## DESCRIPTION
-Versi Azure PowerShell HDInsight ini sudah tidak berlaku.
-Cmdlets ini akan dihapus pada 1 Januari 2017.
-Silakan gunakan versi yang lebih baru Azure PowerShell HDInsight.
+Versi Azure PowerShell HDInsight ini sudah tidak digunakan lagi.
+Cmdlet ini akan dihapus pada 1 Januari 2017.
+Silakan gunakan versi Azure PowerShell HDInsight yang lebih baru.
 
-Untuk informasi tentang cara menggunakan HDInsight yang baru untuk membuat kluster, lihat Membuat kluster berbasis [Linux di HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
-Untuk informasi tentang cara mengirimkan pekerjaan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
-Untuk informasi referensi tentang Azure PowerShell HDInsight, [lihat Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
+Untuk informasi tentang cara menggunakan HDInsight baru untuk membuat klaster, lihat [Membuat kluster berbasis Linux dalam HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
+Untuk informasi tentang cara mengirimkan pekerjaan dengan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
+Untuk informasi referensi tentang Azure PowerShell HDInsight, lihat [Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
 
-Cmdlet **Add-AzureHDInsightScriptAction** menyediakan fungsionalitas Azure HDInsight yang digunakan untuk menginstal perangkat lunak tambahan atau untuk mengubah konfigurasi aplikasi yang berjalan di kluster Hadoop menggunakan skrip Windows PowerShell.
+Cmdlet **Add-AzureHDInsightScriptAction** menyediakan fungsi Azure HDInsight yang digunakan untuk menginstal perangkat lunak tambahan atau untuk mengubah konfigurasi aplikasi yang berjalan di kluster Hadoop dengan menggunakan skrip Windows PowerShell.
 
-Tindakan skrip yang berjalan di node kluster ketika kluster HDInsight disebarkan, dan dijalankan setelah simpul di kluster menyelesaikan konfigurasi HDInsight.
-Tindakan skrip dijalankan di bawah hak istimewa akun administrator sistem dan menyediakan hak akses penuh ke node kluster.
-Anda dapat menyediakan daftar tindakan skrip untuk setiap kluster yang dapat dijalankan dalam urutan yang ditentukan.
+Tindakan skrip berjalan pada simpul kluster saat kluster HDInsight digunakan, dan dijalankan setelah node di kluster selesai konfigurasi HDInsight.
+Tindakan skrip berjalan di bawah hak istimewa akun administrator sistem dan menyediakan hak akses penuh ke node kluster.
+Anda dapat menyediakan daftar tindakan skrip kepada setiap kluster untuk dijalankan dalam urutan yang ditentukan.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ PS C:\> $Config = Add-AzureHDInsightScriptAction -Config $Config -Name "TestScri
 PS C:\> New-AzureHDInsightCluster -Config $Config
 ```
 
-Perintah pertama menggunakan cmdlet **New-AzureHDInsightClusterConfig** untuk membuat konfigurasi kluster HDInsight, lalu menyimpannya di $Config lokal.
+Perintah pertama menggunakan cmdlet **New-AzureHDInsightClusterConfig** untuk membuat konfigurasi kluster HDInsight, lalu menyimpannya dalam variabel $Config.
 
 Perintah kedua menggunakan cmdlet **Add-AzureHDInsightScriptAction** untuk menambahkan tindakan skrip bernama TestScriptAction ke $Config.
 
@@ -62,16 +62,16 @@ PS C:\> $Config = Add-AzureHDInsightScriptAction -Config $Config -Name "TestScri
 PS C:\> New-AzureHDInsightCluster -Config $Config
 ```
 
-Perintah pertama menggunakan cmdlet **New-AzureHDInsightClusterConfig** untuk membuat konfigurasi kluster HDInsight, lalu menyimpannya di $Config lokal.
+Perintah pertama menggunakan cmdlet **New-AzureHDInsightClusterConfig** untuk membuat konfigurasi kluster HDInsight, lalu menyimpannya dalam variabel $Config.
 
-Perintah kedua menggunakan cmdlet **Add-AzureHDInsightScriptAction** untuk menambahkan tindakan skrip tertentu ke $Config, lalu menggunakan operator pipeline untuk menyampaikan $Config ke **Add-AzureHDInsightScriptAction** untuk kedua kalinya untuk menambahkan tindakan skrip kedua $Config.
+Perintah kedua menggunakan cmdlet **Add-AzureHDInsightScriptAction** untuk menambahkan tindakan skrip tertentu ke $Config, lalu menggunakan operator saluran untuk mengirimkan $Config ke **Add-AzureHDInsightScriptAction** untuk kedua kalinya menambahkan tindakan skrip kedua ke $Config.
 
-Perintah terakhir menggunakan cmdlet **New-AzureHDInsightCluster** untuk membuat kluster yang menjalankan tindakan skrip di $Config.
+Perintah terakhir menggunakan cmdlet **New-AzureHDInsightCluster** untuk membuat kluster yang menjalankan tindakan skrip dalam $Config.
 
 ## PARAMETERS
 
 ### -ClusterRoleCollection
-Menentukan node tempat untuk menjalankan skrip.
+Menentukan node untuk menjalankan skrip.
 Nilai yang dapat diterima untuk parameter ini adalah: HeadNode atau DataNode.
 
 Anda bisa menentukan satu nilai atau kedua nilai.
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Parameter
+### -Parameters
 Menentukan parameter yang diperlukan oleh tindakan skrip.
 
 ```yaml
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -176,8 +176,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureHDInsightCluster](./New-AzureHDInsightCluster.md)
+[AzureHDInsightCluster baru](./New-AzureHDInsightCluster.md)
 
-[New-AzureHDInsightClusterConfig](./New-AzureHDInsightClusterConfig.md)
+[Baru-AzureHDInsightClusterConfig](./New-AzureHDInsightClusterConfig.md)
 
 

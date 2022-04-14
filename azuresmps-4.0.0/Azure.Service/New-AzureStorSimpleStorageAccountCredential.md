@@ -4,11 +4,11 @@ ms.assetid: BDCD6FD8-F4D5-4897-BF91-C78773DD3546
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 2f51d8b3ff64a2fe64bcdd3961090ae80a0e07dd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422092"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094204"
 ---
 # New-AzureStorSimpleStorageAccountCredential
 
@@ -25,16 +25,16 @@ New-AzureStorSimpleStorageAccountCredential -StorageAccountName <String> -Storag
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureStorSimpleStorageAccountCredential** menambahkan kredensial akses penyimpanan Azure ke manajer StorSimple untuk digunakan oleh cmdlet OneSDK StorSimple.
-Sebagian besar menangani cmdlet OneSDK StorSimple dengan entitas yang akhirnya terikat ke akun penyimpanan tertentu, seperti volume, wadah volume, cadangan, dan kebijakan pencadangan.
+Cmdlet **New-AzureStorSimpleStorageAccountCredential** menambahkan kredensial akses penyimpanan Azure ke manajer StorSimple untuk digunakan oleh cmdlet StorSimple OneSDK.
+Sebagian besar cmdlet StorSimple OneSDK menangani entitas yang akhirnya terkait dengan akun penyimpanan tertentu, seperti volume, wadah volume, cadangan, dan kebijakan cadangan.
 Untuk beberapa cmdlet, Anda harus menyediakan kredensial akun penyimpanan yang digunakan.
-Kredensial akun penyimpanan adalah objek akses yang dibuat di OneSDK yang menunjuk ke akun penyimpanan Azure yang sudah ada.
-Anda menyediakan nama dan kunci akses dari akun penyimpanan yang sudah ada untuk membuat kredensial akun penyimpanan.
+Kredensial akun penyimpanan adalah objek akses yang dibuat di OneSDK yang mengarah ke akun penyimpanan Azure yang sudah ada.
+Anda menyediakan nama dan kunci akses akun penyimpanan yang sudah ada untuk membuat kredensial akun penyimpanan.
 Anda kemudian dapat menggunakan objek kredensial tersebut dengan cmdlet lain.
 
-Cmdlet ini menggunakan kunci registration yang Anda sediakan saat memilih sumber daya menggunakan cmdlet **Select-AzureStorSimpleResource.**
-Pastikan nilai tersebut benar untuk menghindari kegagalan enkripsi.
-Untuk mengubah kunci registrasi menjadi nilai yang benar, gunakan **Select-AzureStorSimpleResource**.
+Cmdlet ini menggunakan kunci pendaftaran yang Anda sediakan saat Anda memilih sumber daya menggunakan cmdlet **Select-AzureStorSimpleResource** .
+Pastikan bahwa nilai sudah benar untuk menghindari kegagalan enkripsi.
+Untuk mengubah kunci pendaftaran ke nilai yang benar, gunakan **Select-AzureStorSimpleResource**.
 
 ## EXAMPLES
 
@@ -76,10 +76,10 @@ UseSSL                           : False
 VolumeCount                      : 0
 ```
 
-Perintah ini akan membuat kredensial akses penyimpanan untuk akun penyimpanan tertentu.
-Perintah ini menentukan parameter *WaitForComplete,* dan cmdlet menunggu hingga tugas selesai mengembalikan kontrol ke konsol.
+Perintah ini membuat kredensial akses penyimpanan untuk akun penyimpanan tertentu.
+Perintah ini menentukan parameter *WaitForComplete* , dan, jadi, cmdlet menunggu hingga tugas selesai untuk mengembalikan kontrol ke konsol.
 
-### Contoh 2: Membuat kredensial dan kueri status tugas tersebut
+### Contoh 2: Membuat kredensial dan kueri yang berstatus tugas
 ```
 PS C:\>New-AzureStorSimpleStorageAccountCredential -Name "ContosoAccount08" -Key "6BlMpSVrCQVQy3iOpkxiyY8uk/e3PiHIhadxV4qpPlKInr/eRFrGcWKDrfNC1IHj6oh0If/h3rALdZ0zuaf9cQ==" -UseSSL $True
 PS C:\> Get-AzureStorSimpleTask -InstanceId "53816d8d-a8b5-4c1d-a177-e59007608d6d"
@@ -95,12 +95,12 @@ VERBOSE: The create task is submitted successfully. Please use the command Get-A
 ```
 
 Perintah pertama membuat kredensial akses penyimpanan untuk akun penyimpanan tertentu.
-Perintah akan mengembalikan ID tugas.
+Perintah mengembalikan ID tugas.
 
-Perintah kedua akan membuat kueri status tugas menggunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah kedua membuat kueri status tugas menggunakan cmdlet **Get-AzureStorSimpleTask** .
 Perintah menentukan ID tugas dari perintah pertama.
 
-### Contoh 3: Buat kredensial untuk digunakan dengan cmdlet lain
+### Contoh 3: Membuat kredensial untuk digunakan dengan cmdlet lain
 ```
 PS C:\>Get-AzureStorSimpleStorageAccountCredential -Name "ContosoAccount09" | New-AzureStorSimpleDeviceVolumeContainer -Name "VC03" -DeviceName "Contoso63-AppVm" -BandWidthRate 256 -EncryptionEnabled $True -EncryptionKey "<your encryption key>" -WaitForComplete
 VERBOSE: ClientRequestId: b1d1e637-cd72-4a1e-95a8-4db1d0b921a7_PS
@@ -139,8 +139,8 @@ SecretsEncryptionThumbprint     :
 VolumeCount                     : 0
 ```
 
-Perintah ini akan membuat kredensial akun penyimpanan.
-Perintah lalu memasukkan kredensial tersebut ke cmdlet **New-AzureStorSimpleDeviceVolumeContainer** menggunakan operator saluran.
+Perintah ini membuat kredensial akun penyimpanan.
+Perintah kemudian meneruskan kredensial tersebut ke cmdlet **New-AzureStorSimpleDeviceVolumeContainer** menggunakan operator pipeline.
 Cmdlet tersebut membuat wadah volume baru menggunakan kredensial.
 
 ## PARAMETERS
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Menentukan kunci akses dari akun penyimpanan dalam teks biasa.
+Menentukan kunci akses akun penyimpanan dalam teks biasa.
 
 ```yaml
 Type: String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -236,28 +236,28 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
-### IEnumerable \<StorageAccountCredentialResponse\> , TaskResponse
-Cmdlet ini mengembalikan daftar objek **StorageAccountCredentialResponse,** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, cmdlet mengembalikan objek **TaskResponse.**
-**StorageAccountCredentialResponse** berisi properti berikut ini: 
+### IEnumerable\<StorageAccountCredentialResponse\>, TaskResponse
+Cmdlet ini mengembalikan daftar objek **StorageAccountCredentialResponse** , jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, cmdlet mengembalikan objek **TaskResponse** .
+**StorageAccountCredentialResponse** berisi properti berikut: 
 
 - **CloudType** (**CloudType**)
 - **Nama host** (**String**)
 - **InstanceId** (**String**)
 - **IsDefault** (**Boolean**)
 - **Lokasi** (**String**)
-- **Masuk** (**String**)
+- **Login** (**String**)
 - **Nama** (**String**)
 - **OperationInProgress** (**OperationInProgress**)
-- **Kata** Sandi (**String**)
+- **Kata sandi** (**String**)
 - **PasswordEncryptionCertThumbprint** (**String**)
 - **UseSSL** (**Boolean**)
 - **VolumeCount** (**int**)
@@ -274,6 +274,6 @@ Jika Anda tidak menentukan parameter itu, cmdlet mengembalikan objek **TaskRespo
 
 [Get-AzureStorSimpleJob](./Get-AzureStorSimpleJob.md)
 
-[New-AzureStorSimpleDeviceVolumeContainer](./New-AzureStorSimpleDeviceVolumeContainer.md)
+[Baru-AzureStorSimpleDeviceVolumeContainer](./New-AzureStorSimpleDeviceVolumeContainer.md)
 
 

@@ -4,11 +4,11 @@ ms.assetid: CD2274E5-B3D4-489E-B374-8B2BCC1F923E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 7b68a22a6e36efcb9bd62fcf3cde3c878f4f91a6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427493"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094439"
 ---
 # New-AzureAclConfig
 
@@ -24,7 +24,7 @@ New-AzureAclConfig [-InformationAction <ActionPreference>] [-InformationVariable
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureAclConfig** membuat objek konfigurasi daftar kontrol akses (ACL, Access Control List) kosong.
+Cmdlet **New-AzureAclConfig** membuat objek konfigurasi daftar kontrol akses kosong (ACL).
 
 ## EXAMPLES
 
@@ -33,21 +33,21 @@ Cmdlet **New-AzureAclConfig** membuat objek konfigurasi daftar kontrol akses (AC
 PS C:\> $Acl = New-AzureAclConfig
 ```
 
-Perintah ini membuat objek konfigurasi ACL kosong, lalu menyimpannya di $Acl variabel.
+Perintah ini membuat objek konfigurasi ACL kosong, lalu menyimpannya dalam variabel $Acl.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -89,7 +89,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureAclConfig](./Get-AzureAclConfig.md)
 
-[Remove-AzureAclConfig](./Remove-AzureAclConfig.md)
+[Hapus-AzureAclConfig](./Remove-AzureAclConfig.md)
 
 [Set-AzureAclConfig](./Set-AzureAclConfig.md)
 

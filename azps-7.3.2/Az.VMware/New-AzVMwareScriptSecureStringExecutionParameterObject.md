@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.VMware/new-AzVMw
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptSecureStringExecutionParameterObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/New-AzVMwareScriptSecureStringExecutionParameterObject.md
-ms.openlocfilehash: 4091892dd70c147eb48831c7b9f519c85e43f2cb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 01c80032ca58849c8ac76b3f0eefed69dc501ab3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140389931"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141848750"
 ---
 # New-AzVMwareScriptSecureStringExecutionParameterObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ScriptSecureStringExecutionParameter
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/new-azvmwarescriptsecurestringexecutionparameterobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Membuat objek dalam memori untuk ScriptSecureStringExecutionParameter
 
 ## EXAMPLES
 
-### Contoh 1: Membuat objek Eksekusi String Aman Skrip lokal
+### Contoh 1: Membuat objek Skrip Lokal Eksekusi String Aman
 ```powershell
 PS C:\> New-AzVMwareScriptSecureStringExecutionParameterObject -Name azps_test_securevalue -SecureValue "passwordValue"
 
@@ -38,7 +41,7 @@ Name                  Type        SecureValue
 azps_test_securevalue SecureValue passwordValue
 ```
 
-Membuat objek Eksekusi String Aman Skrip lokal
+Membuat objek Skrip Lokal Eksekusi String Aman
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecureValue
-Nilai aman untuk parameter yang lolos, tidak akan disimpan dalam log.
+Nilai aman untuk parameter yang dilewati, tidak disimpan dalam log.
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

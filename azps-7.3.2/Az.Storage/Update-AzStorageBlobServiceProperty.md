@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageBlobServiceProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Update-AzStorageBlobServiceProperty.md
-ms.openlocfilehash: 811211e0cb70729fa59a2221128e15f6200ed18a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d6b99caedebfc59c7027a284eaa356a465f3ee4e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005501"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141786542"
 ---
 # Update-AzStorageBlobServiceProperty
 
 ## SYNOPSIS
-Mengubah properti layanan untuk layanan Azure Storage Blob.
+Mengubah properti layanan untuk layanan blob Azure Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/update-azstorageblobserviceproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Update-AzStorageBlobServiceProperty [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-DefaultServiceVersion <String>] [-EnableChangeFeed <Boolean>] [-ChangeFeedRetentionInDays <Int32>]
@@ -42,7 +45,7 @@ Update-AzStorageBlobServiceProperty [-ResourceId] <String> [-DefaultServiceVersi
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzStorageBlobServiceProperty** mengubah properti layanan untuk layanan Azure Storage Blob.
+Cmdlet **Update-AzStorageBlobServiceProperty** memodifikasi properti layanan untuk layanan Azure Storage Blob.
 
 ## EXAMPLES
 
@@ -62,9 +65,9 @@ ChangeFeed.RetentionInDays    :
 IsVersioningEnabled           :
 ```
 
-Perintah ini mengatur DefaultServiceVersion Layanan Blob ke 2018-03-28.
+Perintah ini mengatur DefaultServiceVersion dari Layanan Blob ke 2018-03-28.
 
-### Contoh 2: Aktifkan Changefeed on Blob service of a Storage with ChangeFeedRetentionInDays as 5 days
+### Contoh 2: Aktifkan Changefeed pada layanan Blob dari akun Storage dengan ChangeFeedRetentionInDays sebagai 5 hari
 ```
 C:\PS> Update-AzStorageBlobServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -EnableChangeFeed $true -ChangeFeedRetentionInDays 5
 
@@ -80,11 +83,11 @@ ChangeFeed.RetentionInDays    : 5
 IsVersioningEnabled           :
 ```
 
-Perintah ini mengaktifkan Changefeed di layanan Blob akun Storage dengan ChangeFeedRetentionInDays sebagai 5 hari.
-Ubah dukungan umpan di Azure Blob Storage berfungsi dengan mendengarkan akun penyimpanan GPv2 atau Blob untuk setiap kejadian penghapusan, modifikasi, atau pembuatan tingkat blob. Kemudian, menghasilkan log kejadian yang diurutkan untuk blob yang disimpan dalam $blobchangefeed dalam akun penyimpanan. The serialized changes are persisted as an Apache Avro file and can be processed asynchronously and incrementally.
-Jika tidak menentukan ChangeFeedRetentionInDays, akan mendapatkan nilai null dalam properti layanan, menunjukkan penyimpanan umpan perubahan yang tidak terbatas.
+Perintah ini memungkinkan Changefeed pada layanan Blob dari akun Storage dengan ChangeFeedRetentionInDays sebagai 5 hari.
+Ubah dukungan umpan dalam Azure Blob Storage berfungsi dengan mendengarkan akun penyimpanan GPv2 atau Blob untuk setiap kejadian pembuatan, modifikasi, atau penghapusan tingkat blob. Kemudian output log kejadian yang diurutkan untuk blob yang disimpan dalam wadah $blobchangefeed dalam akun penyimpanan. Perubahan yang diserialisasikan tetap ada sebagai file Apache Avro dan dapat diproses secara asinkron dan bertahap.
+Jika tidak menentukan ChangeFeedRetentionInDays, akan mendapatkan nilai null dalam properti layanan, menunjukkan retensi umpan perubahan yang tak terbatas.
 
-### Contoh 3: Mengaktifkan Versioning on Blob service of a Storage account
+### Contoh 3: Enable Versioning on Blob service of a Storage account
 ```
 C:\PS> Update-AzStorageBlobServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -IsVersioningEnabled $true
 
@@ -100,12 +103,12 @@ ChangeFeed.RetentionInDays    :
 IsVersioningEnabled           : True
 ```
 
-Perintah ini mengaktifkan Versi pada layanan Blob akun Storage
+Perintah ini mengaktifkan penerapan versi pada layanan Blob dari akun Storage
 
 ## PARAMETERS
 
 ### -ChangeFeedRetentionInDays
-Menunjukkan durasi penyimpanan Umpan Perubahan dalam hari. Nilai minimum adalah 1 hari dan nilai maksimum adalah 146000 hari (400 tahun). Jangan pernah tentukan saat diaktifkan changeFeed akan mendapatkan nilai null dalam properti layanan, menunjukkan penyimpanan umpan perubahan yang tidak terbatas.
+Menunjukkan durasi penyimpanan changeFeed dalam hari. Nilai minimum adalah 1 hari dan nilai maksimum adalah 146000 hari (400 tahun). Jangan pernah tentukan ketika diaktifkan, changeFeed akan mendapatkan nilai null dalam properti layanan, menunjukkan retensi tak terbatas dari umpan perubahan.
 
 ```yaml
 Type: System.Int32
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableChangeFeed
-Aktifkan pembuatan log Ubah Umpan untuk akun penyimpanan dengan diatur ke $true, nonaktifkan Ubah pembuatan log umpan dengan mengatur ke $false.
+Aktifkan Ubah Pembuatan log Umpan untuk akun penyimpanan dengan mengatur ke $true, nonaktifkan Ubah pembuatan log Umpan dengan diatur ke $false.
 
 ```yaml
 Type: System.Boolean
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsVersioningEnabled
-Gets atau sets versioning is enabled if set to true.
+Penerapan versi gets atau set diaktifkan jika diatur ke true.
 
 ```yaml
 Type: System.Boolean
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Masukkan Id sumber Storage akun, atau Id Sumber Daya properti layanan Blob.
+Masukkan Id Sumber Daya akun Storage, atau Id Sumber Daya properti layanan Blob.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

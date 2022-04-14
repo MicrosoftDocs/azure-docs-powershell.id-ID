@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/set-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Set-AzAutomationConnectionFieldValue.md
-ms.openlocfilehash: a403228a594828bc1a6b0c9e9fb39b4d9a025165
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3a3700e3016206a845cfe74a30d25f0b2912f45c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001933"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141791474"
 ---
 # Set-AzAutomationConnectionFieldValue
 
 ## SYNOPSIS
 Mengubah nilai bidang dalam koneksi Otomatisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/set-azautomationconnectionfieldvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,17 +34,17 @@ Cmdlet **Set-AzAutomationConnectionFieldValue** mengubah nilai bidang dalam kone
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah nilai bidang di koneksi
+### Contoh 1: Mengubah nilai bidang dalam koneksi
 ```
 PS C:\>Set-AzAutomationConnectionFieldValue -Name "ContosoConnection" -ConnectionFieldName "SubscriptionID" -Value "b53ec456-3494-4847-8f2b-180901c51050" -ResourceGroupName "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini mengubah ID langganan untuk koneksi Azure yang bernama ContosoConnection dalam akun Otomatisasi yang bernama AutomationAccount01.
+Perintah ini mengubah ID langganan untuk koneksi Azure bernama ContosoConnection di akun Otomatisasi bernama AutomationAccount01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang cmdlet ini memodifikasi bidang dalam koneksi.
+Menentukan nama akun Otomatisasi di mana cmdlet ini mengubah bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionFieldName
-Menentukan nama untuk bidang yang akan dimodifikasi cmdlet ini.
+Menentukan nama untuk bidang yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama untuk koneksi yang digunakan cmdlet untuk memodifikasi bidang.
+Menentukan nama untuk koneksi di mana cmdlet ini mengubah bidang.
 
 ```yaml
 Type: System.String
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini memodifikasi bidang dalam koneksi.
+Menentukan nama grup sumber daya di mana cmdlet ini mengubah bidang dalam koneksi.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Value
-Menentukan nilai untuk diubah di bidang koneksi.
+Menentukan nilai untuk diubah dalam bidang koneksi.
 
 ```yaml
 Type: System.Object
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

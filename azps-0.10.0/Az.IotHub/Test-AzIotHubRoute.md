@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Test-AzIotHubRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/IotHub/IotHub/help/Test-AzIotHubRoute.md
 ms.openlocfilehash: 3d5252f30d8d4393d84f77e1ae1076c9c8054d91
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413634"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141874364"
 ---
 # Test-AzIotHubRoute
 
 ## SYNOPSIS
-Menguji rute dalam Hub IoT
+Menguji rute di IoT Hub
 
 ## SYNTAX
 
@@ -66,7 +66,7 @@ Test-AzIotHubRoute [-ResourceId] <String> [-Source] <PSRoutingSource> [-Body <St
 ```
 
 ## DESCRIPTION
-Menguji rute tertentu.
+Uji rute tertentu.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ PS C:\> Test-AzIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myiothub"
 Result : true
 ```
 
-Menguji rute tertentu.
+Uji rute tertentu.
 
 ### Contoh 3
 ```
@@ -100,7 +100,7 @@ ErrorMessage  Severity LocationStartLine LocationStartColumn LocationEndLine Loc
 Syntax error. error    1                 29                  1               30
 ```
 
-Menguji rute tertentu dan memperlihatkan alasan kegagalan.
+Uji rute tertentu dan tunjukkan alasan kegagalan.
 
 ## PARAMETERS
 
@@ -119,7 +119,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Body
+### -Isi
 Isi pesan rute
 
 ```yaml
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemProperty
-Properti sistem pesan rute
+Properti sistem dari pesan rute
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

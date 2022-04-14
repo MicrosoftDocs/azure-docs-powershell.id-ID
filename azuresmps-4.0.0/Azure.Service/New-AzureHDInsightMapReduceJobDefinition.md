@@ -4,11 +4,11 @@ ms.assetid: A8953045-3836-4C5A-96F8-461CB1DB6BBD
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 83b4ac4674a71c7377091499e485f95745ecfa75
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422093"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094391"
 ---
 # New-AzureHDInsightMapReduceJobDefinition
 
@@ -26,19 +26,19 @@ New-AzureHDInsightMapReduceJobDefinition [-Arguments <String[]>] -ClassName <Str
 ```
 
 ## DESCRIPTION
-Versi Azure PowerShell HDInsight ini sudah tidak berlaku.
-Cmdlets ini akan dihapus pada 1 Januari 2017.
-Silakan gunakan versi yang lebih baru Azure PowerShell HDInsight.
+Versi Azure PowerShell HDInsight ini sudah tidak digunakan lagi.
+Cmdlet ini akan dihapus pada 1 Januari 2017.
+Silakan gunakan versi Azure PowerShell HDInsight yang lebih baru.
 
-Untuk informasi tentang cara menggunakan HDInsight yang baru untuk membuat kluster, lihat Membuat kluster berbasis Linux di [HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) .
-Untuk informasi tentang cara mengirimkan pekerjaan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) ( https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) .
-Untuk informasi referensi tentang Azure PowerShell HDInsight, [lihat Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
+Untuk informasi tentang cara menggunakan HDInsight baru untuk membuat klaster, lihat [Membuat kluster berbasis Linux dalam HDInsight menggunakan Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-create-linux-clusters-azure-powershell/).
+Untuk informasi tentang cara mengirimkan pekerjaan dengan menggunakan Azure PowerShell dan pendekatan lain, lihat [Mengirimkan pekerjaan Hadoop di HDInsight](https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/) (https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/).
+Untuk informasi referensi tentang Azure PowerShell HDInsight, lihat [Cmdlet Azure HDInsight](/powershell/module/servicemanagement/azure.service/?view=azuresmps-4.0.0#hd-insights).
 
-Cmdlet **New-AzureHDInsightMapReduceJobDefinition** menentukan pekerjaan MapReduce baru yang akan dijalankan pada kluster Azure HDInsight.
+Cmdlet **New-AzureHDInsightMapReduceJobDefinition** menentukan pekerjaan MapReduce baru untuk dijalankan di cluster Azure HDInsight.
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan pekerjaan MapReduce, menjalankan pekerjaan, dan mendapatkan output
+### Contoh 1: Tentukan pekerjaan MapReduce, jalankan pekerjaan, dan dapatkan output
 ```
 PS C:\>$SubId = (Get-AzureSubscription -Current).SubscriptionId
 PS C:\> $ClusterName = "MyCluster"
@@ -48,23 +48,23 @@ PS C:\> $WordCountJob | Start-AzureHDInsightJob -Cluster $ClusterName
     | Get-AzureHDInsightJobOutput -Cluster $ClusterName -Subscription $SubId -StandardError
 ```
 
-Perintah pertama mendapatkan ID langganan saat ini, lalu menyimpannya di $SubId variabel.
+Perintah pertama mendapatkan ID langganan saat ini, lalu menyimpannya dalam variabel $SubId.
 
-Perintah kedua menetapkan nama MyCluster ke $Clustername variabel.
+Perintah kedua menetapkan nama MyCluster ke variabel $Clustername.
 
-Perintah ketiga menggunakan cmdlet **New-AzureHDInsightMapReduceJobDefinition** untuk membuat definisi pekerjaan MapReduce, lalu menyimpannya dalam variabel $WordCountJob baru.
+Perintah ketiga menggunakan cmdlet **New-AzureHDInsightMapReduceJobDefinition** untuk membuat definisi pekerjaan MapReduce, lalu menyimpannya dalam variabel $WordCountJob.
 
-Perintah keempat menjalankan urutan operasi dengan menggunakan cmdlet ini:
+Perintah keempat melakukan serangkaian operasi dengan menggunakan cmdlet ini:
 
-- **Start-AzureHDInsightJob** untuk memulai pekerjaan di $ClusterName.
-- **Wait-AzureHDInsightJob** untuk menunggu pekerjaan selesai dan untuk menampilkan kemajuan menuju penyelesaian.
-- **Get-AzureHDInsightJobOutput** untuk mendapatkan output pekerjaan.
+- **Mulai AzureHDInsightJob** untuk memulai pekerjaan di $ClusterName.
+- **Tunggu-AzureHDInsightJob** untuk menunggu pekerjaan selesai dan menampilkan kemajuan menuju penyelesaian.
+- **Dapatkan-AzureHDInsightJobOutput** untuk mendapatkan output pekerjaan.
 
 ## PARAMETERS
 
 ### -Argumen
-Menentukan argumen larik untuk pekerjaan Hadoop.
-Argumen diberikan sebagai argumen baris perintah untuk setiap tugas.
+Menentukan array argumen untuk pekerjaan Hadoop.
+Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
 
 ```yaml
 Type: String[]
@@ -108,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan array file WASB yang diperlukan untuk pekerjaan.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -JarFile
-Menentukan nama file JAR yang sepenuhnya memenuhi syarat yang berisi kode dan dependensi pekerjaan MapReduce.
+Menentukan nama file JAR yang sepenuhnya memenuhi syarat yang berisi kode dan dependensi dari pekerjaan MapReduce.
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ### -JobName
 Menentukan nama pekerjaan MapReduce.
 Parameter ini bersifat opsional.
-Jika Anda tidak menentukan parameter ini, nilai dari parameter *ClassName* digunakan.
+Jika Anda tidak menentukan parameter ini, nilai parameter *ClassName* digunakan.
 
 ```yaml
 Type: String
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan, termasuk kode keluar dan log tugas.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan, termasuk kode keluar dan log tugasnya.
 
 ```yaml
 Type: String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -214,14 +214,14 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureHDInsightJobOutput](./Get-AzureHDInsightJobOutput.md)
 
-[New-AzureHDInsightHiveJobDefinition](./New-AzureHDInsightHiveJobDefinition.md)
+[Baru-AzureHDInsightHiveJobDefinition](./New-AzureHDInsightHiveJobDefinition.md)
 
-[New-AzureHDInsightPigJobDefinition](./New-AzureHDInsightPigJobDefinition.md)
+[Baru-AzureHDInsightPigJobDefinition](./New-AzureHDInsightPigJobDefinition.md)
 
-[New-AzureHDInsightSqoopJobDefinition](./New-AzureHDInsightSqoopJobDefinition.md)
+[Baru-AzureHDInsightSqoopJobDefinition](./New-AzureHDInsightSqoopJobDefinition.md)
 
 [Start-AzureHDInsightJob](./Start-AzureHDInsightJob.md)
 
-[Wait-AzureHDInsightJob](./Wait-AzureHDInsightJob.md)
+[Tunggu-AzureHDInsightJob](./Wait-AzureHDInsightJob.md)
 
 

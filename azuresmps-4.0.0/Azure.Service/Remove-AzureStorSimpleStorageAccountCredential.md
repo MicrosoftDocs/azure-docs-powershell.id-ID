@@ -4,11 +4,11 @@ ms.assetid: 1BD296FB-8BFC-473F-951D-D2BF265E50AC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: bfe41faa373097fda909d367ede6659c3cb961e9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419901"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816444"
 ---
 # Remove-AzureStorSimpleStorageAccountCredential
 
@@ -19,13 +19,13 @@ Menghapus kredensial akun penyimpanan yang sudah ada.
 
 ## SYNTAX
 
-### IdentifyByName
+### IdentifikasiByName
 ```
 Remove-AzureStorSimpleStorageAccountCredential -StorageAccountName <String> [-WaitForComplete] [-Force]
  [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Remove-AzureStorSimpleStorageAccountCredential -SAC <StorageAccountCredentialResponse> [-WaitForComplete]
  [-Force] [-Profile <AzureSMProfile>] [<CommonParameters>]
@@ -33,7 +33,7 @@ Remove-AzureStorSimpleStorageAccountCredential -SAC <StorageAccountCredentialRes
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureStorSimpleStorageAccountCredential** menghapus kredensial akun penyimpanan yang sudah ada.
-Tentukan akun berdasarkan nama atau gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** untuk mendapatkan objek **StorageAccountCredential** yang akan dihapus.
+Tentukan akun berdasarkan nama atau gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** untuk mendapatkan objek **StorageAccountCredential** untuk menghapus.
 
 ## EXAMPLES
 
@@ -49,10 +49,10 @@ VERBOSE: The delete task is submitted successfully. Please use the command Get-A
 ```
 
 Perintah ini menghapus kredensial akun untuk akun penyimpanan bernama ContosoStorage07.
-Perintah ini menentukan parameter *Force.*
-Cmdlet akan menghapus kredensial tanpa meminta konfirmasi Anda.
+Perintah ini menentukan parameter *Paksa* .
+Cmdlet menghapus kredensial tanpa meminta konfirmasi.
 
-### Contoh 2: Hapus kredensial akun penyimpanan dengan menggunakan operator saluran
+### Contoh 2: Menghapus kredensial akun penyimpanan menggunakan operator saluran
 ```
 PS C:\>Get-AzureStorSimpleStorageAccountCredential -StorageAccountName "ContosoStorage07" | Remove-AzureStorSimpleStorageAccountCredential -Force -WaitForComplete
 VERBOSE: ClientRequestId: f1b46216-bf4c-4c19-8e92-1dfe3894e258_PS
@@ -64,15 +64,15 @@ VERBOSE: ClientRequestId: b803b165-bef8-4a8f-9509-4b515ea8bdec_PS
 VERBOSE: Your delete operation completed successfully!
 ```
 
-Perintah ini mendapatkan akun penyimpanan bernama ContosoStorage07 dengan menggunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential,** lalu meneruskan objek tersebut ke cmdlet saat ini.
+Perintah ini mendapatkan akun penyimpanan bernama ContosoStorage07 dengan menggunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** , lalu meneruskan objek tersebut ke cmdlet saat ini.
 Cmdlet saat ini menghapus kredensial untuk akun penyimpanan tersebut.
-Perintah ini menentukan parameter *WaitForComplete.*
-Cmdlet tidak mengembalikan kontrol ke konsol hingga operasi hapus selesai.
+Perintah ini menentukan parameter *WaitForComplete* .
+Cmdlet tidak mengembalikan kontrol ke konsol hingga operasi penghapusan selesai.
 
 ## PARAMETERS
 
-### -Force
-Mengindikasikan bahwa cmdlet ini tidak meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### -SAC
-Menentukan kredensial, sebagai objek **StorageAccountCredential,** untuk menghapus.
-Untuk mendapatkan objek **StorageAccountCredential,** gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential.**
+Menentukan kredensial, sebagai objek **StorageAccountCredential** , untuk dihapus.
+Untuk mendapatkan objek **StorageAccountCredential** , gunakan cmdlet **Get-AzureStorSimpleStorageAccountCredential** .
 
 ```yaml
 Type: StorageAccountCredentialResponse
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell baru.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -148,17 +148,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### StorageAccountCredential
-Cmdlet ini menerima **objek StorageAccountCredential** menggunakan saluran.
+Cmdlet ini menerima objek **StorageAccountCredential** menggunakan pipeline.
 
 ## OUTPUTS
 
 ### TaskStatusInfo
-Cmdlet ini mengembalikan **objek TaskStatusInfo,** jika Anda menentukan parameter *WaitForComplete.*
+Cmdlet ini mengembalikan objek **TaskStatusInfo** , jika Anda menentukan parameter *WaitForComplete* .
 
 ## CATATAN
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerTransparentDataEncryptionProtector.md
 ms.openlocfilehash: 93ab4c51882a4c274fd10727d83f5507c7cfa583
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140854671"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059959"
 ---
 # Get-AzureRmSqlServerTransparentDataEncryptionProtector
 
 ## SYNOPSIS
-Mendapatkan enkripsi data transparan (TDE, Transparent Data Encryption) atau enkripsi
+Mendapatkan pelindung Enkripsi Data Transparan (TDE, Transparent Data Encryption)
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,16 +27,16 @@ Get-AzureRmSqlServerTransparentDataEncryptionProtector [-ServerName] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmSqlServerTransparentDataEncryptionProtector mendapatkan informasi tentang perusahaan TDE.
+Cmdlet Get-AzureRmSqlServerTransparentDataEncryptionProtector mendapatkan informasi tentang pelindung TDE.
 
 ## EXAMPLES
 
-### Contoh 1: Get the Transparent Data Encryption (TDE) aplikasi
+### Contoh 1: Dapatkan pelindung Enkripsi Data Transparan (TDE, Transparent Data Encryption)
 ```
 PS C:\> Get-AzureRmSqlServerTransparentDataEncryptionProtector -ServerName 'ContosoServer' -ResourceGroup 'ContosoResourceGroup'
 ```
 
-Perintah ini membuat server TDE yang bernama ContosoServer dalam grup sumber daya bernama ContosoResourceGroup.
+Perintah ini mendapatkan pelindung TDE untuk server bernama ContosoServer dalam grup sumber daya bernama ContosoResourceGroup.
 ResourceGroupName ServerName Type ServerKeyVaultKeyName
 ----------------- ----------                   ---- ---------------------
 ContosoResourceGroup ContosoServer ServiceManaged ServiceManaged
@@ -44,7 +44,7 @@ ContosoResourceGroup ContosoServer ServiceManaged ServiceManaged
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,4 +134,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/se
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementDiagnostic.md
-ms.openlocfilehash: 6f44f33b3210bbfbba267a913b3f9103231c5a57
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 8aba42be62d32f83de962a6e3be56ae42b2a70d7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558042"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141792536"
 ---
 # Set-AzApiManagementDiagnostic
 
 ## SYNOPSIS
-Mengubah diagnostik Manajemen API di lingkup Global atau Api.
+Mengubah diagnostik API Management di lingkup Global atau Api.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementdiagnostic) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,11 +87,11 @@ fixed                50
 Set-AzApiManagementDiagnostic -InputObject $diagnostic
 ```
 
-Perintah ini mengubah Persentase Sampel diagnostik tertentu dari 100 hingga 50%
+Perintah ini mengubah Persentase Sampling diagnostik yang ditentukan dari 100 hingga 50%
 
 ### Contoh 2
 
-Mengubah diagnostik Manajemen API di lingkup Global atau Api. (otomatisgenerated)
+Mengubah diagnostik API Management di lingkup Global atau Api. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -98,7 +101,7 @@ Set-AzApiManagementDiagnostic -AlwaysLog allErrors -ApiId '0001' -Context <PsApi
 ## PARAMETERS
 
 ### -AlwaysLog
-Menentukan tipe pengaturan sampel pesan apa yang tidak boleh diterapkan.
+Menentukan tipe pengaturan pengambilan sampel pesan yang tidak boleh diterapkan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoggerId
-Pengidentifikasi logger untuk mendorong diagnostik.
+Pengidentifikasi penebang untuk mendorong diagnostik.
 Parameter ini diperlukan.
 
 ```yaml
@@ -239,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Jika instans Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementDiagnostic ditentukan mewakili kumpulan Diagnostik.
+Jika ditentukan, contoh Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementDiagnostic tipe mewakili diagnostik yang ditetapkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm ResourceId diagnostik atau Diagnostik Api. Parameter ini diperlukan.
+Arm ResourceId of Diagnostic atau Api Diagnostic. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -SamplingSetting
-Pengambilan Sampel Pengaturan Diagnostik.
+Pengaturan Pengambilan Sampel Diagnostik.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -315,7 +318,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

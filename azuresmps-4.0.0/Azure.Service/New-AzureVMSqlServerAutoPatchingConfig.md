@@ -4,11 +4,11 @@ ms.assetid: 7317DAC1-B535-4650-86BF-73E96F61EECD
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 3a88889cabf884e4f1f6b5a8272cb8b3bdf0033a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420248"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816534"
 ---
 # New-AzureVMSqlServerAutoPatchingConfig
 
@@ -30,7 +30,7 @@ Cmdlet **New-AzureVMSqlServerAutoPatchingConfig** membuat objek konfigurasi untu
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek konfigurasi untuk mengonfigurasi patching otomatis
+### Contoh 1: Membuat objek konfigurasi untuk mengonfigurasi patching otomatis
 ```
 PS C:\> $APS = New-AzureVMSqlServerAutoPatchingConfig -Enable -DayOfWeek "Thursday" -MaintenanceWindowStartingHour 11 -MaintenanceWindowDuration 120 -PatchCategory "Important"
           Enable                        : True
@@ -40,7 +40,7 @@ PS C:\> $APS = New-AzureVMSqlServerAutoPatchingConfig -Enable -DayOfWeek "Thursd
           PatchCategory                 : Important
 ```
 
-Perintah ini membuat objek konfigurasi yang dapat digunakan untuk mengonfigurasi patch otomatis menggunakan Set-AzureVMSqlServerExtension.
+Perintah ini membuat objek konfigurasi yang dapat digunakan untuk mengonfigurasi patching otomatis menggunakan Set-AzureVMSqlServerExtension.
 
 ## PARAMETERS
 
@@ -56,7 +56,7 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Kamis
 - Jumat
 - Sabtu
-- Sehari-hari
+- Everyday
 
 ```yaml
 Type: String
@@ -71,9 +71,9 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan bahwa patch otomatis untuk mesin virtual telah diaktifkan.
-Jika Anda mengaktifkan patching otomatis, cmdlet akan Windows Update ke dalam mode interaktif.
-Jika Anda menonaktifkan patching otomatis, Windows Pembaruan otomatis tidak akan berubah.
+Menunjukkan bahwa patch otomatis untuk mesin virtual diaktifkan.
+Jika Anda mengaktifkan patch otomatis cmdlet akan menempatkan Windows Update ke mode interaktif.
+Jika Anda menonaktifkan patch otomatis, pengaturan Windows Update tidak akan berubah.
 
 ```yaml
 Type: SwitchParameter
@@ -88,16 +88,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 
 ### -MaintenanceWindowDuration
 Menentukan durasi jendela pemeliharaan.
-Patching otomatis akan menghindari melakukan tindakan yang bisa mempengaruhi ketersediaan mesin virtual di luar jendela itu.
-Hanya penambahan 30 menit yang diperbolehkan.
+Patch otomatis akan menghindari melakukan tindakan yang dapat memengaruhi ketersediaan mesin virtual di luar jendela tersebut.
+Hanya 30 menit kenaikan yang diperbolehkan.
 
 ```yaml
 Type: Int32
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaintenanceWindowStartingHour
-Menentukan jam pada hari ketika jendela pemeliharaan dimulai.
+Menentukan jam hari ketika jendela pemeliharaan dimulai.
 Waktu ini menentukan kapan pembaruan mulai diinstal dan dibulatkan ke jam.
 
 ```yaml
@@ -175,14 +175,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### AutoPatchingSettings
-Cmdlet ini mengembalikan objek berisi pengaturan untuk patching otomatis.
+Cmdlet ini mengembalikan objek berisi pengaturan untuk patch otomatis.
 
 ## CATATAN
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/New-AzureRmRedisCacheLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/RedisCache/Commands.RedisCache/help/New-AzureRmRedisCacheLink.md
 ms.openlocfilehash: f625c9180287166b01607c468c44b5e0623c11cd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428174"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141775739"
 ---
 # New-AzureRmRedisCacheLink
 
 ## SYNOPSIS
-Buat tautan replikasi geo di antara dua Cache Redis.
+Buat tautan replikasi geografis antara dua Singgahan Redis.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ New-AzureRmRedisCacheLink -PrimaryServerName <String> -SecondaryServerName <Stri
 ```
 
 ## DESCRIPTION
-Buat tautan replikasi geo di antara dua Cache Redis.
+Buat tautan replikasi geografis antara dua Singgahan Redis.
 
 ## EXAMPLES
 
-### Contoh 1: Buat tautan di antara dua singgahan
+### Contoh 1: Membuat tautan di antara dua singgahan
 ```
 PS C:\>New-AzureRmRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerName "mycache2"
 
@@ -40,12 +40,12 @@ PS C:\>New-AzureRmRedisCacheLink -PrimaryServerName "mycache1" -SecondaryServerN
         ProvisioningState   : Creating
 ```
 
-Perintah ini membuat tautan replikasi geo antara Redis Cache mycache1 dan mycache2.
+Perintah ini membuat tautan geo-replikasi antara Redis Cache mycache1 dan mycache2.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryServerName
-Nama tautan dalam cache utama akan disimpan.
+Nama cache redis utama dalam tautan.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecondaryServerName
-Nama cache dalam daftar merah sekunder ada di tautan.
+Nama cache redis sekunder dalam tautan.
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -137,12 +137,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmRedisCacheLink](./Get-AzureRmRedisCacheLink.md)
 
-[Remove-AzureRmRedisCacheLink](./Remove-AzureRmRedisCacheLink.md)
+[Hapus-AzureRmRedisCacheLink](./Remove-AzureRmRedisCacheLink.md)
 
 [Get-AzureRmRedisCache](./Get-AzureRmRedisCache.md)
 
-[New-AzureRmRedisCache](./New-AzureRmRedisCache.md)
+[AzureRmRedisCache Baru](./New-AzureRmRedisCache.md)
 
-[Remove-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
+[Hapus-AzureRmRedisCache](./Remove-AzureRmRedisCache.md)
 
 [Set-AzureRmRedisCache](./Set-AzureRmRedisCache.md)

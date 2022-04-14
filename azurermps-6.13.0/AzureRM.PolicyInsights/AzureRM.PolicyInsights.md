@@ -6,29 +6,29 @@ Help Version: 1.1.0.0
 Locale: en-US
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PolicyInsights/Commands.PolicyInsights/help/AzureRM.PolicyInsights.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PolicyInsights/Commands.PolicyInsights/help/AzureRM.PolicyInsights.md
-ms.openlocfilehash: ede0ade37b79b56aadf5c70893549acff6aa017e6a4c996c2de821a35c53015c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7877cf41a22eedc1192c8e1083122a5118e70bcf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "132416127"
 ---
 # AzureRM.PolicyInsights Module
 ## Deskripsi
-Topik ini menampilkan bantuan untuk cmdlet kebijakan Azure Insights baru.
+Topik ini menampilkan bantuan untuk cmdlet Azure Policy Insights.
 
 ## Cmdlet AzureRM.PolicyInsights
 ### [Get-AzureRmPolicyEvent](Get-AzureRmPolicyEvent.md)
-Gets policy evaluation events generated as resources are created or updated.
+Mendapatkan kejadian evaluasi kebijakan yang dihasilkan saat sumber daya dibuat atau diperbarui.
 
 ### [Get-AzureRmPolicyRemediation](Get-AzureRmPolicyRemediation.md)
 Mendapatkan perbaikan kebijakan.
 
 ### [Get-AzureRmPolicyState](Get-AzureRmPolicyState.md)
-Mendapatkan kebijakan tingkat kepatuhan untuk sumber daya.
+Mendapatkan status kepatuhan kebijakan untuk sumber daya.
 
 ### [Get-AzureRmPolicyStateSummary](Get-AzureRmPolicyStateSummary.md)
-Mendapatkan ringkasan kondisi kepatuhan kebijakan terbaru untuk sumber daya.
+Mendapatkan ringkasan status kepatuhan kebijakan terbaru untuk sumber daya.
 
 ### [Remove-AzureRmPolicyRemediation](Remove-AzureRmPolicyRemediation.md)
 Menghapus perbaikan kebijakan.
@@ -37,5 +37,5 @@ Menghapus perbaikan kebijakan.
 Membuat dan memulai perbaikan kebijakan untuk penetapan kebijakan.
 
 ### [Stop-AzureRmPolicyRemediation](Stop-AzureRmPolicyRemediation.md)
-Membatalkan pemulihan kebijakan dalam proses.
+Membatalkan perbaikan kebijakan yang sedang berlangsung.
 

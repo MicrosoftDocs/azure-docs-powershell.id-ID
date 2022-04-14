@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerAuditing.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerAuditing.md
-ms.openlocfilehash: 427d1d4661ae9e935bec716bdfeb95136e8aebbc770800f63fe325c938b252cf
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 80887d1c3cfc91c9eba23f686deac071660cf852
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868023"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059264"
 ---
 # Set-AzureRmSqlServerAuditing
 
 ## SYNOPSIS
-Mengubah pengaturan pengauditan server SQL Azure.
+Mengubah pengaturan pengauditan server Azure SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,23 +40,23 @@ Set-AzureRmSqlServerAuditing -State <String> [-AuditActionGroup <AuditActionGrou
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlServerAuditing** mengubah pengaturan audit server SQL Azure.
-Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi server.
-Tentukan parameter *StorageAccountName* untuk menentukan akun penyimpanan bagi log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan.
+Cmdlet **Set-AzureRmSqlServerAuditing mengubah** pengaturan audit server Azure SQL.
+Untuk menggunakan cmdlet, gunakan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
+Tentukan parameter *StorageAccountName* untuk menentukan akun penyimpanan untuk log audit dan parameter *StorageKeyType* untuk menentukan kunci penyimpanan.
 Gunakan parameter *Status* untuk mengaktifkan/menonaktifkan kebijakan.
-Anda juga bisa menentukan penyimpanan untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
-Setelah berhasil dijalankan, pengauditan database Azure SQL yang ditentukan dalam server azure SQL tertentu diaktifkan.
-Jika cmdlet berhasil dan Anda menggunakan parameter *PassThru* , objek akan mengembalikan objek yang menjelaskan kebijakan audit blob saat ini selain pengidentifikasi server.
+Anda juga bisa menentukan retensi untuk log audit dengan mengatur nilai parameter *RetentionInDays* untuk menentukan periode untuk log audit.
+Setelah cmdlet berjalan dengan sukses, pengauditan database Azure SQL yang ditentukan dalam server Azure SQL yang ditentukan diaktifkan.
+Jika cmdlet berhasil dan Anda menggunakan parameter *PassThru* , cmdlet mengembalikan objek yang menjelaskan kebijakan audit blob saat ini selain pengidentifikasi server.
 Pengidentifikasi server menyertakan, tetapi tidak terbatas pada, **ResourceGroupName** dan **ServerName**.
 
 ## EXAMPLES
 
-### Contoh 1: Mengaktifkan kebijakan pengauditan server azure SQL
+### Contoh 1: Mengaktifkan kebijakan pengauditan server Azure SQL
 ```
 PS C:\>Set-AzureRmSqlServerAuditing -State Enabled -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -StorageAccountName "Storage22"
 ```
 
-### Contoh 2: Menonaktifkan kebijakan audit server Azure SQL
+### Contoh 2: Menonaktifkan kebijakan pengauditan server Azure SQL
 ```
 PS C:\>Set-AzureRmSqlServerAuditing -State Disabled -ResourceGroupName "ResourceGroup01" -ServerName "Server01"
 ```
@@ -66,12 +66,12 @@ PS C:\>Set-AzureRmSqlServerAuditing -State Disabled -ResourceGroupName "Resource
 PS C:\>Set-AzureRmSqlServerAuditing -State Enabled -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -StorageAccountName "Storage22" -StorageAccountSubscriptionId "7fe3301d-31d3-4668-af5e-211a890ba6e3"
 ```
 
-### Contoh 4: Mengaktifkan kebijakan pengauditan yang diperluas database Azure SQL baru
+### Contoh 4: Mengaktifkan kebijakan pengauditan yang diperpanjang dari database Azure SQL
 ```
 PS C:\>Set-AzureRmSqlDatabaseAuditing -State Enabled -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -StorageAccountName "Storage22" -DatabaseName "Database01" -PredicateExpression "statement <> 'select 1'"
 ```
 
-### Contoh 5: Hapus kebijakan pengauditan yang diperluas database Azure SQL, lalu atur kebijakan pengauditan, bukan kebijakan audit.
+### Contoh 5: Hapus kebijakan pengaudaran diperpanjang database Azure SQL, dan tetapkan kebijakan pengauditan, bukan.
 ```
 PS C:\>Set-AzureRmSqlDatabaseAuditing -State Enabled -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -StorageAccountName "Storage22" -DatabaseName "Database01" -PredicateExpression ""
 ```
@@ -79,7 +79,7 @@ PS C:\>Set-AzureRmSqlDatabaseAuditing -State Enabled -ResourceGroupName "Resourc
 ## PARAMETERS
 
 ### -AuditActionGroup
-Kumpulan grup tindakan yang disarankan untuk digunakan adalah kombinasi berikut ini, yang akan mengaudit semua kueri dan prosedur tersimpan yang dijalankan terhadap database, serta berhasil dan gagal masuk: "BATCH_COMPLETED_GROUP", "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP", "FAILED_DATABASE_AUTHENTICATION_GROUP" Kombinasi di atas juga merupakan kumpulan yang dikonfigurasi secara default. Grup ini mencakup SQL pernyataan privasi dan prosedur tersimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat. Untuk informasi selengkapnya, lihat https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
+Kumpulan grup tindakan yang direkomendasikan untuk digunakan adalah kombinasi berikut ini - ini akan mengaudit semua kueri dan prosedur yang disimpan yang dijalankan terhadap database, serta login yang berhasil dan gagal: "BATCH_COMPLETED_GROUP", "SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP", "FAILED_DATABASE_AUTHENTICATION_GROUP" Kombinasi di atas ini juga merupakan kumpulan yang dikonfigurasi secara default. Grup ini mencakup semua pernyataan SQL dan prosedur yang disimpan yang dijalankan terhadap database, dan tidak boleh digunakan dalam kombinasi dengan grup lain karena ini akan menghasilkan log audit duplikat. Untuk informasi selengkapnya, lihat https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/sql-server-audit-action-groups-and-actions#database-level-audit-action-groups.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Auditing.Model.AuditActionGroups[]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PredicateExpression
-Pernyataan Klausul Where digunakan untuk memfilter log audit.
+Pernyataan Klausul Where yang digunakan untuk memfilter log audit.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+Nama server SQL.
 
 ```yaml
 Type: System.String
@@ -203,8 +203,8 @@ Accept wildcard characters: False
 ### -StorageAccountName
 Nama akun penyimpanan. Karakter wildcard tidak diizinkan.
 Parameter ini tidak diperlukan.
-Jika Anda tidak menentukan parameter ini, cmdlet menggunakan akun penyimpanan yang sebelumnya ditetapkan sebagai bagian dari kebijakan audit.
-Jika ini adalah kali pertama kebijakan audit ditetapkan dan Anda tidak menentukan parameter ini, cmdlet akan gagal.
+Jika Anda tidak menentukan parameter ini, cmdlet menggunakan akun penyimpanan yang ditetapkan sebelumnya sebagai bagian dari kebijakan pengauditan.
+Jika ini pertama kalinya kebijakan audit ditetapkan dan Anda tidak menentukan parameter ini, cmdlet gagal.
 
 ```yaml
 Type: System.String
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

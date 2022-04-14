@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/r
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseRestorePoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Remove-AzureRmSqlDatabaseRestorePoint.md
-ms.openlocfilehash: 0e7762b9c34198fb5f144819f5257eafe3f326bc0dc87f5c88330a94c37dcc33
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: be4a4f418268d1e2523e13d5a779f911381c7309
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059508"
 ---
 # Remove-AzureRmSqlDatabaseRestorePoint
 
 ## SYNOPSIS
-Menghapus titik pemulihan tertentu dari SQL Database.
+Menghapus titik pemulihan tertentu dari Database SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -30,7 +30,7 @@ Remove-AzureRmSqlDatabaseRestorePoint -RestorePointCreationDate <DateTime> [-Pas
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRmSqlDatabaseRestorePoint** menghapus titik pemulihan tertentu dari Azure SQL Database.
-Cmdlet ini saat ini didukung oleh layanan SQL Server Datawarehouse di Azure SQL Database.
+Cmdlet ini saat ini didukung oleh layanan Gudang Data SQL Server di Database Azure SQL.
 
 ## EXAMPLES
 
@@ -40,12 +40,12 @@ PS C:\>$RestorePointCreationDate = Get-Date "3/11/2017 1:50:00 AM"
 PS C:\>Remove-AzureRmSqlDatabaseRestorePoint -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -RestorePointCreationDate $RestorePointCreationDate
 ```
 
-Perintah ini menghapus titik pemulihan untuk Azure SQL Database tanggal pembuatan tertentu.
+Perintah ini menghapus titik pemulihan untuk tanggal pembuatan Database Azure SQL yang diberikan.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama SQL Database.
+Menentukan nama Database SQL.
 
 ```yaml
 Type: System.String
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat SQL Database ditetapkan.
+Menentukan nama grup sumber daya tempat Database SQL ditetapkan.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestorePointCreationDate
-Menentukan tanggal pembuatan poin pemulihan.
+Menentukan tanggal pembuatan titik pemulihan.
 
 ```yaml
 Type: System.DateTime
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama AzureSQL Server yang menjadi host database.
+Menentukan nama AzureSQL Server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

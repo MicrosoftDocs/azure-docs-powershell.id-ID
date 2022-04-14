@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Set-AzureRmCurrentStorageAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Set-AzureRmCurrentStorageAccount.md
-ms.openlocfilehash: 2dd6c1e1674a9fdea0b33843eec3e5656f25ab9b6f1ec9d667c771c6b833b064
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5915ce06b6d97dd13f7299f243c2d3df38930f50
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418884"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059050"
 ---
 # Set-AzureRmCurrentStorageAccount
 
 ## SYNOPSIS
-Mengubah akun langganan Storage langganan tertentu saat ini.
+Mengubah akun Penyimpanan saat ini dari langganan yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,30 +28,30 @@ Set-AzureRmCurrentStorageAccount -ResourceGroupName <String> -Name <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### UsingStorageContext
+### MenggunakanStorageContext
 ```
 Set-AzureRmCurrentStorageAccount -Context <IStorageContext> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmCurrentStorageAccount** mengubah akun Azure Storage langganan Azure tertentu dalam Azure PowerShell.
-Akun akun Storage saat ini digunakan sebagai default saat Anda mengakses Storage tanpa menentukan nama Storage pengguna.
+Cmdlet **Set-AzureRmCurrentStorageAccount** mengubah akun Penyimpanan Azure saat ini dari langganan Azure yang ditentukan di Azure PowerShell.
+Akun Penyimpanan saat ini digunakan sebagai default saat Anda mengakses Penyimpanan tanpa menentukan nama akun Penyimpanan.
 
 ## EXAMPLES
 
-### Contoh 1: Atur akun Storage ini
+### Contoh 1: Mengatur akun Penyimpanan saat ini
 ```
 PS C:\>Set-AzureRmCurrentStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
-Perintah ini mengatur akun Storage default untuk langganan yang ditentukan.
+Perintah ini mengatur akun Penyimpanan default untuk langganan tertentu.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan objek **AzureStorageContext** untuk akun Storage saat ini.
-Untuk mendapatkan objek konteks penyimpanan, gunakan cmdlet New-AzureStorageContext tersebut.
+Menentukan objek **AzureStorageContext** untuk akun Penyimpanan saat ini.
+Untuk mendapatkan objek konteks penyimpanan, gunakan cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage yang ditentukan cmdlet ini.
+Menentukan nama akun Penyimpanan yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan grup sumber daya yang berisi Storage sumber daya untuk diubah.
+Menentukan grup sumber daya yang berisi akun Penyimpanan untuk diubah.
 
 ```yaml
 Type: System.String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

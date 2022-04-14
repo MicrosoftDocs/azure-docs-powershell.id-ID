@@ -3,17 +3,17 @@ external help file: ''
 Module Name: Azs.Compute.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.compute.admin/new-azscomputequota
 schema: 2.0.0
-ms.openlocfilehash: 18999a05dc3eb0e8540d5557fc2aa01a349bef3d43caac31acc392baeafe9b78
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: efbd141d5ba41afa51c57f05df96840a81ab4fa1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418717"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141813786"
 ---
 # New-AzsComputeQuota
 
 ## SYNOPSIS
-Membuat atau Memperbarui Kuota Perhitungan dengan parameter kuota yang disediakan.
+Membuat atau Memperbarui Kuota Komputasi dengan parameter kuota yang disediakan.
 
 ## SYNTAX
 
@@ -26,18 +26,18 @@ New-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String
  [<CommonParameters>]
 ```
 
-### Buat
+### Membuat
 ```
 New-AzsComputeQuota -Name <String> -NewQuota <IQuota> [-Location <String>] [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Membuat atau Memperbarui Kuota Perhitungan dengan parameter kuota yang disediakan.
+Membuat atau Memperbarui Kuota Komputasi dengan parameter kuota yang disediakan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Kuota Perhitungan dengan Parameter Default
+### Contoh 1: Membuat Kuota Komputasi dengan Parameter Default
 ```powershell
 PS C:\> New-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
 
@@ -54,9 +54,9 @@ VMScaleSetCount                    : 0
 VirtualMachineCount                : 100
 ```
 
-Parameter yang tidak ditentukan akan diatur ke parameter defaultnya, yang ditunjukkan di atas.
+Parameter apa pun yang tidak ditentukan akan diatur ke parameter defaultnya, diperlihatkan di atas.
 
-### Contoh 2: Membuat Kuota Perhitungan dengan Parameter Kustom
+### Contoh 2: Membuat Kuota Komputasi dengan Parameter Kustom
 ```powershell
 PS C:\>  New-AzsComputeQuota -Name ExampleComputeQuotaWithCustomParameters -Location local -AvailabilitySetCount 9 -CoresCount 99 -PremiumManagedDiskAndSnapshotSize 1024 -StandardManagedDiskAndSnapshotSize 1024 -VirtualMachineCount 99 -VMScaleSetCount 2
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ```
 
-### -Lokasi1
+### -Location1
 Lokasi sumber daya.
 
 ```yaml
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -NewQuota
-Menahan Informasi kuota Perhitungan yang digunakan untuk mengontrol alokasi sumber daya.
+Menyimpan informasi kuota komputasi yang digunakan untuk mengontrol alokasi sumber daya.
 Untuk membangun, lihat bagian CATATAN untuk properti NEWQUOTA dan membuat tabel hash.
 
 ```yaml
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -PremiumManagedDiskAndSnapshotSize
-Jumlah maksimum disk dan jepretan layar tipe premium yang diizinkan.
+Jumlah maksimum disk terkelola dan snapshot tipe premium yang diperbolehkan.
 
 ```yaml
 Type: System.Int32
@@ -223,8 +223,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualMachineCount
-Jumlah maksimum mesin virtual yang diperbolehkan.
+Jumlah maksimal mesin virtual yang diperbolehkan.
 
 ```yaml
 Type: System.Int32
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### -VMScaleSetCount
-Jumlah maksimum kumpulan skala yang diperbolehkan.
+Jumlah maksimal kumpulan skala yang diperbolehkan.
 
 ```yaml
 Type: System.Int32
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -319,16 +319,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## CATATAN
 
-PROPERTI PARAMETER KOMPLEKS Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
+COMPLEX PARAMETER PROPERTIES To create the parameters described below, construct a hash table containing the appropriate properties. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
-NEWQUOTA <IQuota> : Menyimpan Informasi kuota perhitungan yang digunakan untuk mengontrol alokasi sumber daya.
+NEWQUOTA <IQuota>: Menyimpan informasi kuota komputasi yang digunakan untuk mengontrol alokasi sumber daya.
   - `[Location <String>]`: Lokasi sumber daya.
-  - `[AvailabilitySetCount <Int32?>]`: Jumlah maksimum kumpulan ketersediaan yang diperbolehkan.
+  - `[AvailabilitySetCount <Int32?>]`: Jumlah maksimal set ketersediaan yang diperbolehkan.
   - `[CoresLimit <Int32?>]`: Jumlah maksimum inti yang diperbolehkan.
-  - `[PremiumManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimum disk dan jepretan layar tipe premium yang diizinkan.
-  - `[StandardManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimum disk terkelola dan snapshot tipe standar yang diperbolehkan.
-  - `[VMScaleSetCount <Int32?>]`: Jumlah maksimum kumpulan skala yang diperbolehkan.
-  - `[VirtualMachineCount <Int32?>]`: Jumlah maksimum mesin virtual yang diperbolehkan.
+  - `[PremiumManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimal disk terkelola dan snapshot tipe premium yang diperbolehkan.
+  - `[StandardManagedDiskAndSnapshotSize <Int32?>]`: Jumlah maksimal disk terkelola dan snapshot tipe standar yang diperbolehkan.
+  - `[VMScaleSetCount <Int32?>]`: Jumlah maksimal kumpulan skala yang diperbolehkan.
+  - `[VirtualMachineCount <Int32?>]`: Jumlah maksimal mesin virtual yang diperbolehkan.
 
 ## RELATED LINKS
 

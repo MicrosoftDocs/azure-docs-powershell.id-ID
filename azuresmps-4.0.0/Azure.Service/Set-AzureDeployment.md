@@ -4,11 +4,11 @@ ms.assetid: 7F51F534-6C64-4983-A08F-4732A39C2E7C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c3ece42526e65de38a3d29e436c3cfdda2228fb6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427449"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141816066"
 ---
 # Set-AzureDeployment
 
@@ -21,7 +21,7 @@ Mengubah status, pengaturan konfigurasi, atau mode pemutakhiran penyebaran.
 
 ## SYNTAX
 
-### Mutakhirkan
+### Upgrade
 ```
 Set-AzureDeployment [-Upgrade] [-ServiceName] <String> [-Package] <String> [-Configuration] <String>
  [-Slot] <String> [[-Mode] <String>] [[-Label] <String>] [[-RoleName] <String>] [-Force]
@@ -29,7 +29,7 @@ Set-AzureDeployment [-Upgrade] [-ServiceName] <String> [-Package] <String> [-Con
  [-InformationAction <ActionPreference>] [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### Konfigurasi
+### Config
 ```
 Set-AzureDeployment [-Config] [-ServiceName] <String> [-Configuration] <String> [-Slot] <String>
  [[-ExtensionConfiguration] <ExtensionConfigurationInput[]>] [-Profile <AzureSMProfile>]
@@ -45,10 +45,10 @@ Set-AzureDeployment [-Status] [-ServiceName] <String> [-Slot] <String> [-NewStat
 
 ## DESCRIPTION
 Cmdlet **Set-AzureDeployment** mengubah status, pengaturan konfigurasi, atau mode pemutakhiran penyebaran Azure.
-Anda dapat mengubah status penyebaran ke Berjalan atau Ditangguhkan.
+Anda dapat mengubah status penyebaran menjadi Berjalan atau Ditangguhkan.
 Anda dapat mengubah file .cscfg untuk penyebaran.
-Anda bisa mengatur mode pemutakhiran dan memperbarui file konfigurasi.
-Gunakan cmdlet **Set-Azure Azure AzureUpgradeDomain** untuk memulai pemutakhiran.
+Anda dapat mengatur mode pemutakhiran dan memperbarui file konfigurasi.
+Gunakan cmdlet **Set-AzureWalkUpgradeDomain** untuk memulai pemutakhiran.
 
 ## EXAMPLES
 
@@ -57,28 +57,28 @@ Gunakan cmdlet **Set-Azure Azure AzureUpgradeDomain** untuk memulai pemutakhiran
 PS C:\> Set-AzureDeployment -Status -ServiceName "ContosoService" -Slot "Production" -NewStatus "Running"
 ```
 
-Perintah ini mengatur status penggunaan untuk layanan bernama ContosoService dalam lingkungan produksi ke Berjalan.
+Perintah ini mengatur status penyebaran untuk layanan bernama ContosoService di lingkungan produksi ke Berjalan.
 
-### Contoh 2: Menetapkan file konfigurasi berbeda untuk penyebaran
+### Contoh 2: Menetapkan file konfigurasi lain ke penyebaran
 ```
 PS C:\> Set-AzureDeployment -Config -ServiceName "ContosoService" -Slot "Staging" -Configuration "C:\Temp\MyServiceConfig.Cloud.csfg"
 ```
 
-Perintah ini menetapkan file konfigurasi berbeda untuk penggunaan layanan bernama ContosoService dalam lingkungan pengelolaan.
+Perintah ini menetapkan file konfigurasi berbeda untuk penyebaran untuk layanan bernama ContosoService dalam lingkungan pementasan.
 
-### Contoh 3: Atur mode pemutakhiran ke Otomatis
+### Contoh 3: Mengatur mode pemutakhiran ke Otomatis
 ```
 PS C:\> Set-AzureDeployment -Upgrade -ServiceName "ContosoService" -Mode Auto -Package "C:\packages\ContosoApp.cspkg" -Configuration "C:\Config\ContosoServiceConfig.Cloud.csfg"
 ```
 
-Perintah ini mengatur mode pemutakhiran ke Otomatis, serta menentukan paket pemutakhiran dan file konfigurasi baru.
+Perintah ini mengatur mode pemutakhiran ke Otomatis, dan menentukan paket pemutakhiran dan file konfigurasi baru.
 
 ### Contoh 4: Menginstal konfigurasi ekstensi dalam layanan
 ```
 PS C:\> Set-AzureDeployment -Config -ServiceName "ContosoService" -Mode "Automatic" -Package "https://contosostorage.blob.core.windows.net/container06/ContosoPackage.cspkg" -Configuration "C:\packages\ContosoConfiguration.cscfg" -Slot "Production" -ExtensionConfiguration "C:\packages\ContosoExtensionConfig.cscfg"
 ```
 
-Perintah ini menginstal konfigurasi ekstensi di Layanan Awan tertentu dan menerapkannya pada peran.
+Perintah ini menginstal konfigurasi ekstensi di Layanan Awan yang ditentukan dan menerapkannya pada peran.
 
 ## PARAMETERS
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -Configuration
 Menentukan jalur lengkap file konfigurasi .cscfg.
-Anda bisa menentukan file konfigurasi untuk pemutakhiran atau perubahan konfigurasi.
+Anda dapat menentukan file konfigurasi untuk perubahan pemutakhiran atau konfigurasi.
 
 ```yaml
 Type: String
@@ -113,7 +113,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExtensionConfiguration
+### -EkstensiKonfigurasi
 Menentukan array objek konfigurasi ekstensi.
 
 ```yaml
@@ -128,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa cmdlet melakukan pemutakhiran paksa.
+### -Paksa
+Menunjukkan bahwa cmdlet melakukan peningkatan paksa.
 
 ```yaml
 Type: SwitchParameter
@@ -144,16 +144,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -199,11 +199,11 @@ Accept wildcard characters: False
 
 ### -Mode
 Menentukan mode pemutakhiran.
-Nilai valid adalah: 
+Nilai yang valid adalah: 
 
-- Otomatis 
+- Auto 
 - Manual 
-- Bersamaan
+- Simultan
 
 ```yaml
 Type: String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -NewStatus
 Menentukan status target untuk penyebaran.
-Nilai valid adalah: Berjalan dan Ditangguhkan.
+Nilai yang valid adalah: Berjalan dan Ditangguhkan.
 
 ```yaml
 Type: String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Paket
-Menentukan jalur lengkap dari file paket pemutakhiran.
+Menentukan jalur lengkap file paket pemutakhiran.
 
 ```yaml
 Type: String
@@ -249,8 +249,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-Menentukan nama peran untuk pemutakhiran.
+Menentukan nama peran yang akan dimutakhirkan.
 
 ```yaml
 Type: String
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -355,12 +355,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDeploymentEvent](./Get-AzureDeploymentEvent.md)
 
-[Move-AzureDeployment](./Move-AzureDeployment.md)
+[Pindahkan-AzureDeployment](./Move-AzureDeployment.md)
 
-[New-AzureDeployment](./New-AzureDeployment.md)
+[AzureDeployment baru](./New-AzureDeployment.md)
 
-[Remove-AzureDeployment](./Remove-AzureDeployment.md)
+[Hapus-AzureDeployment](./Remove-AzureDeployment.md)
 
-[Set-Azure Azure AzureUpgradeDomain](./Set-AzureWalkUpgradeDomain.md)
+[Set-AzureWalkUpgradeDomain](./Set-AzureWalkUpgradeDomain.md)
 
 

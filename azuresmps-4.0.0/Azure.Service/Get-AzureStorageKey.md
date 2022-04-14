@@ -4,11 +4,11 @@ ms.assetid: 35588231-CBAC-4411-9531-9A06BD298ACA
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5b015e8a2c566ff3de7efa242d77f738cc5c009a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421568"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094931"
 ---
 # Get-AzureStorageKey
 
@@ -29,33 +29,33 @@ Cmdlet **Get-AzureStorageKey** mengembalikan objek dengan nama akun Azure Storag
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan objek yang berisi tombol penyimpanan primer dan sekunder
+### Contoh 1: Dapatkan objek yang berisi kunci penyimpanan primer dan sekunder
 ```
 PS C:\> Get-AzureStorageKey -StorageAccountName "ContosoStore01"
 ```
 
-Perintah ini akan mendapatkan objek dengan kunci penyimpanan utama dan sekunder untuk akun penyimpanan ContosoStore01.
+Perintah ini mendapatkan objek dengan kunci penyimpanan utama dan sekunder untuk akun penyimpanan ContosoStore01.
 
 ### Contoh 2: Dapatkan kunci akun penyimpanan utama dan simpan dalam variabel
 ```
 PS C:\> $ContosoStoreKey = (Get-AzureStorageKey -StorageAccountName "ContosoStore01").Primary
 ```
 
-Perintah ini meletakkan kunci akun penyimpanan utama untuk akun penyimpanan ContosoStore01 dalam $ContosoStoreKey penyimpanan.
+Perintah ini menempatkan kunci akun penyimpanan utama untuk akun penyimpanan ContosoStore01 dalam variabel $ContosoStoreKey.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -116,24 +116,24 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ## CATATAN
-* Untuk mendapatkan bantuan dengan Node.js Anda, gunakan `help node-dev` perintah tersebut. Untuk bantuan dengan ekstensi PHP, gunakan `help php-dev` perintah.
+* Untuk mendapatkan bantuan terkait Node.js, gunakan perintah.`help node-dev` Untuk bantuan dengan ekstensi PHP, gunakan perintah.`help php-dev`
 
 ## RELATED LINKS
 
 [Get-AzureStorageAccount](./Get-AzureStorageAccount.md)
 
-[New-AzureStorageAccount](./New-AzureStorageAccount.md)
+[AzureStorageAccount baru](./New-AzureStorageAccount.md)
 
-[New-AzureStorageKey](./New-AzureStorageKey.md)
+[AzureStorageKey Baru](./New-AzureStorageKey.md)
 
-[Remove-AzureStorageAccount](./Remove-AzureStorageAccount.md)
+[Hapus-AzureStorageAccount](./Remove-AzureStorageAccount.md)
 
 [Set-AzureStorageAccount](./Set-AzureStorageAccount.md)
 

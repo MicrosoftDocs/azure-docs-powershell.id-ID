@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRMSqlDeletedDatabaseBackup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRMSqlDeletedDatabaseBackup.md
 ms.openlocfilehash: 2373a076e6edd97314e08c9170f9584a904ad902
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423283"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060190"
 ---
 # Get-AzureRmSqlDeletedDatabaseBackup
 
 ## SYNOPSIS
-Mendapatkan database terhapus yang bisa Anda pulihkan.
+Mendapatkan database yang dihapus yang bisa Anda pulihkan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Get-AzureRmSqlDeletedDatabaseBackup [-ServerName] <String> [[-DatabaseName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRMSqlDeletedDatabaseBackup** mendapatkan cadangan database SQL terhapus tertentu yang bisa Anda pulihkan, atau semua cadangan terhapus yang bisa Anda pulihkan.
+Cmdlet **Get-AzureRMSqlDeletedDatabaseBackup** mendapatkan cadangan database SQL yang dihapus yang ditentukan yang bisa Anda pulihkan, atau semua cadangan yang dihapus yang bisa Anda pulihkan.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -41,7 +41,7 @@ PS C:\>Get-AzureRMSqlDeletedDatabaseBackup -ResourceGroupName "ContosoResourceGr
 
 Perintah ini mendapatkan semua cadangan database yang dihapus di server.
 
-### Contoh 2: Mendapatkan cadangan database yang dihapus secara spesifik
+### Contoh 2: Dapatkan cadangan database yang dihapus tertentu
 ```
 PS C:\>Get-AzureRMSqlDeletedDatabaseBackup -ResourceGroupName "ContosoResourceGroup" -ServerName "ContosoServer" -DatabaseName "ContosoDatabase"
 ```
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -80,9 +80,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeletionDate
-Menentukan tanggal, sebagai objek **DateTime,** bahwa database telah dihapus.
-Untuk mendapatkan objek **DateTime,** gunakan cmdlet Get-Date.
+### -PenghapusanDate
+Menentukan tanggal, sebagai objek **DateTime** , bahwa database telah dihapus.
+Untuk mendapatkan objek **DateTime** , gunakan cmdlet Get-Date.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -158,13 +158,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -176,4 +176,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlDatabase](./Get-AzureRmSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)

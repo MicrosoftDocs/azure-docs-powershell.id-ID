@@ -4,11 +4,11 @@ ms.assetid: E7766E3D-D8C2-42F1-840A-8EA633E98500
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 42f5ff8bfe5c95572489c358686f61763c5106fc
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415357"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093535"
 ---
 # Remove-WAPackVMSubnet
 
@@ -25,9 +25,9 @@ Remove-WAPackVMSubnet -VMSubnet <VMSubnet> [-PassThru] [-Force] [-Profile <Azure
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
 Cmdlet **Remove-WAPackVMSubnet** menghapus objek subnet mesin virtual.
 
@@ -39,10 +39,10 @@ PS C:\> $VMSubnet = Get-WAPackVMSubnet -Name "ContosoVMSubnet01"
 PS C:\> Remove-WAPackVMSubnet -VMSubnet $VMSubnet
 ```
 
-Perintah pertama mendapatkan subnet mesin virtual bernama ContosoVMSubnet01 dengan menggunakan cmdlet **Get-WAPackVMSubnet** , lalu menyimpan objek tersebut dalam $VMSubnet variabel.
+Perintah pertama mendapatkan subnet mesin virtual bernama ContosoVMSubnet01 dengan menggunakan cmdlet **Get-WAPackVMSubnet** , lalu menyimpan objek tersebut dalam variabel $VMSubnet.
 
 Perintah kedua menghapus subnet mesin virtual yang disimpan di $VMSubnet.
-Perintah akan meminta konfirmasi Anda.
+Perintah meminta konfirmasi kepada Anda.
 
 ### Contoh 2: Hapus mesin virtual tanpa konfirmasi
 ```
@@ -50,16 +50,16 @@ PS C:\> $VMSubnet = Get-WAPackVMSubnet -Name "ContosoVMSubnet02"
 PS C:\> Remove-WAPackVMSubnet -VMSubnet $VMSubnet -Force
 ```
 
-Perintah pertama mendapatkan layanan awan bernama ContosoVMSubnet02 dengan menggunakan cmdlet **Get-WAPackVMSubnet** , lalu menyimpan objek tersebut dalam $VMSubnet variabel.
+Perintah pertama mendapatkan layanan cloud bernama ContosoVMSubnet02 dengan menggunakan cmdlet **Get-WAPackVMSubnet** , lalu menyimpan objek tersebut dalam variabel $VMSubnet.
 
 Perintah kedua menghapus subnet mesin virtual yang disimpan di $VMSubnet.
-Perintah ini menyertakan parameter *Force* .
-Perintah tidak akan meminta konfirmasi Anda.
+Perintah ini menyertakan parameter *Paksa* .
+Perintah tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -132,8 +132,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvMSubnet](./Get-WAPackVMSubnet.md)
+[Get-WAPackVMSubnet](./Get-WAPackVMSubnet.md)
 
-[New-WAPackvMSubnet](./New-WAPackVMSubnet.md)
+[New-WAPackVMSubnet](./New-WAPackVMSubnet.md)
 
 

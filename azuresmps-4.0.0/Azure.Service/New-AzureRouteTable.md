@@ -4,11 +4,11 @@ ms.assetid: F4BADE88-28A2-42FB-9578-93D65148709E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 62b19426fcd0ea3d4b29bf52d139bf5361a632e2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428064"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094337"
 ---
 # New-AzureRouteTable
 
@@ -26,7 +26,7 @@ New-AzureRouteTable -Name <String> -Location <String> [-Label <String>] [-Profil
 
 ## DESCRIPTION
 Cmdlet **New-AzureRouteTable** membuat tabel rute di lokasi tertentu.
-Anda bisa menambahkan rute yang ditentukan pengguna ke tabel rute.
+Anda dapat menambahkan rute yang ditentukan pengguna ke tabel rute.
 Anda dapat mengaitkan tabel rute ke subnet dalam jaringan virtual.
 
 ## EXAMPLES
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi cmdlet ini yang membuat tabel rute.
+Menentukan lokasi di mana cmdlet ini membuat tabel rute.
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -106,6 +106,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRouteTable](./Get-AzureRouteTable.md)
 
-[Remove-AzureRouteTable](./Remove-AzureRouteTable.md)
+[Hapus-AzureRouteTable](./Remove-AzureRouteTable.md)
 
 
