@@ -4,11 +4,11 @@ ms.assetid: 2171943B-D1AC-45FD-99FD-DD0C14AFC60C
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9f135c05e16bc523d03894ffe689b5863e641009
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426543"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966525"
 ---
 # Get-AzureDeployment
 
@@ -32,35 +32,35 @@ Tentukan nama layanan Azure dan slot penyebaran.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan detail untuk penyebaran produksi
+### Contoh 1: Dapatkan detail untuk penggunaan produksi
 ```
 PS C:\> Get-AzureDeployment -ServiceName "ContosoService"
 ```
 
-Perintah ini mengembalikan detail penggunaan untuk layanan bernama ContosoService.
+Perintah ini mengembalikan detail penyebaran untuk layanan bernama ContosoService.
 Perintah ini tidak menentukan slot.
 Oleh karena itu, perintah menggunakan nilai default Produksi.
 
-### Contoh 2: Mendapatkan detail untuk penyebaran
+### Contoh 2: Dapatkan detail untuk penyebaran pementasan
 ```
 PS C:\> Get-AzureDeployment -ServiceName "ContosoService" -Slot "Staging"
 ```
 
-Perintah ini mengembalikan detail penyebaran ContosoService.
+Perintah ini mengembalikan detail penyebaran pementasan ContosoService.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan lingkungan penyebaran.
-Nilai yang valid adalah: Produksi atau Pementasan.
+Nilai yang valid adalah: Staging atau Production.
 Nilai defaultnya adalah Produksi.
 
 ```yaml
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -150,11 +150,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureDeploymentEvent](./Get-AzureDeploymentEvent.md)
 
-[Move-AzureDeployment](./Move-AzureDeployment.md)
+[Pindahkan-AzureDeployment](./Move-AzureDeployment.md)
 
-[New-AzureDeployment](./New-AzureDeployment.md)
+[AzureDeployment baru](./New-AzureDeployment.md)
 
-[Remove-AzureDeployment](./Remove-AzureDeployment.md)
+[Hapus-AzureDeployment](./Remove-AzureDeployment.md)
 
 [Set-AzureDeployment](./Set-AzureDeployment.md)
 

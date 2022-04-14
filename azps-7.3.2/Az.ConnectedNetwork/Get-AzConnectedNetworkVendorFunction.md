@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectednetwork
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkVendorFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedNetwork/help/Get-AzConnectedNetworkVendorFunction.md
-ms.openlocfilehash: adbc7bb3223b635cd9e9e8c2978f600fe2d720f6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ac3105bb8c3a5b0ba413a2e8b25e408a5e36b55d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560249"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072130"
 ---
 # Get-AzConnectedNetworkVendorFunction
 
 ## SYNOPSIS
 Mendapatkan informasi tentang fungsi jaringan vendor tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectednetwork/get-azconnectednetworkvendorfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConnectedNetworkVendorFunction -LocationName <String> -VendorName <String>
  [-Filter <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzConnectedNetworkVendorFunction -LocationName <String> -ServiceKey <String> -VendorName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -65,8 +68,8 @@ VendorProvisioningState            : NotProvisioned
 
 ```
 
-Mendapatkan informasi fungsi jaringan vendor dengan kunci layanan 1234-abcd-4321-dcba, nama vendor myVendor, location centraluseuap dan langganan.
-Kunci layanan bisa diperoleh saat mendapatkan detail keseruan jaringan atau saat membuat fungsi jaringan.
+Mendapatkan informasi fungsi jaringan vendor dengan kunci layanan 1234-abcd-4321-dcba, nama vendor myVendor, lokasi centraluseuap dan langganan.
+Kunci layanan dapat diperoleh ketika mendapatkan detail funcrtion jaringan atau saat membuat fungsi jaringan.
 
 ### Contoh 2: Get-AzConnectedNetworkVendorFunction melalui Identitas
 ```powershell
@@ -113,8 +116,8 @@ Accept wildcard characters: False
 ```
 
 ### -Filter
-Filter yang akan diterapkan pada operasi.
-Properti yang dapat digunakan untuk eq (sama dengan) adalah: skuType, skuName, dan vendorProvisioningState.
+Filter untuk diterapkan pada operasi.
+Properti yang dapat Anda gunakan untuk eq (sama dengan) adalah: skuType, skuName, dan vendorProvisioningState.
 
 ```yaml
 Type: System.String
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ConnectedNetwork.Models.IConnectedNetworkIdentity
@@ -204,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -228,9 +231,9 @@ INPUTOBJECT <IConnectedNetworkIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Kawasan Azure tempat sumber daya fungsi jaringan dibuat oleh pelanggan.
   - `[NetworkFunctionName <String>]`: Nama fungsi jaringan.
-  - `[PreviewSubscription <String>]`: Mempratinjau ID langganan.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[RoleInstanceName <String>]`: Nama contoh peran dari fungsi jaringan vendor.
+  - `[PreviewSubscription <String>]`: PRATINJAU ID langganan.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[RoleInstanceName <String>]`: Nama contoh peran fungsi jaringan vendor.
   - `[ServiceKey <String>]`: GUID untuk fungsi jaringan vendor.
   - `[SkuName <String>]`: Nama sku.
   - `[SubscriptionId <String>]`: ID langganan target.

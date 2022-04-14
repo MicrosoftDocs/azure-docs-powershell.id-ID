@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzNetworkWatcherTroubleshootingResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzNetworkWatcherTroubleshootingResult.md
 ms.openlocfilehash: c3d1e7e3a76a2561c77c8d580b7365f8fd2e6fee
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425788"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142092987"
 ---
 # Get-AzNetworkWatcherTroubleshootingResult
 
 ## SYNOPSIS
-Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang sebelumnya sedang berjalan atau yang sedang berjalan.
+Mendapatkan hasil pemecahan masalah dari operasi pemecahan masalah yang dijalankan sebelumnya atau yang sedang berjalan.
 
 ## SYNTAX
 
@@ -32,11 +32,11 @@ Get-AzNetworkWatcherTroubleshootingResult -NetworkWatcherName <String> -Resource
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzNetworkWatcherTroubleshootingResult mendapatkan hasil pemecahan masalah dari operasi yang dijalankan sebelumnya atau saat Start-AzNetworkWatcherResourceTroubleshooting ini. Jika operasi pemecahan masalah sedang berlangsung, maka operasi ini mungkin membutuhkan waktu beberapa menit hingga selesai. Saat ini Gateway dan Koneksi Jaringan Virtual didukung.
+Cmdlet Get-AzNetworkWatcherTroubleshootingResult mendapatkan hasil pemecahan masalah dari operasi Start-AzNetworkWatcherResourceTroubleshooting yang dijalankan sebelumnya atau saat ini. Jika operasi pemecahan masalah saat ini sedang berlangsung, operasi ini mungkin membutuhkan waktu beberapa menit untuk diselesaikan. Saat ini Gateway dan Koneksi Virtual Network didukung.
 
 ## EXAMPLES
 
-### --- Contoh 1: Mulai Pemecahan Masalah di Gateway Jaringan Virtual dan Ambil ---
+### --- Contoh 1: Mulai Pemecahan Masalah di Gateway Virtual Network dan Ambil Hasil ---
 ```
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -50,13 +50,13 @@ Start-AzNetworkWatcherResourceTroubleshooting -NetworkWatcher $networkWatcher -T
 Get-AzNetworkWatcherTroubleshootingResult -NetworkWatcher $NW -TargetResourceId $target
 ```
 
-Sampel di atas memulai pemecahan masalah di gateway jaringan virtual. Operasi mungkin membutuhkan waktu beberapa menit untuk selesai.
-Setelah pemecahan masalah dimulai, Get-AzNetworkWatcherTroubleshootingResult panggilan dilakukan ke sumber daya untuk mendapatkan hasil panggilan ini. 
+Contoh di atas memulai pemecahan masalah pada gateway jaringan virtual. Operasi mungkin membutuhkan waktu beberapa menit untuk diselesaikan.
+Setelah pemecahan masalah dimulai, panggilan Get-AzNetworkWatcherTroubleshootingResult dilakukan ke sumber daya untuk mengambil hasil panggilan ini. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,7 +143,7 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSViewNsgRules
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, troubleshoot, VPN, connection
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, pemecahan masalah, VPN, koneksi
 
 ## RELATED LINKS
 
@@ -153,7 +153,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md)
 

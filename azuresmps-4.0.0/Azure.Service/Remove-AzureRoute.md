@@ -4,11 +4,11 @@ ms.assetid: 5C8A79D1-32D4-4B30-AAC8-C6EF3B68017E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9d27f38a0aa19995db3f63f866927f4d46a8c851
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422067"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093806"
 ---
 # Remove-AzureRoute
 
@@ -25,7 +25,7 @@ Remove-AzureRoute -RouteName <String> [-Force] -RouteTable <IRouteTable> [-Profi
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRoute** menghapus rute dari tabel rute.
+Cmdlet **Hapus-AzureRoute** menghapus rute dari tabel rute.
 
 ## EXAMPLES
 
@@ -41,14 +41,14 @@ Routes                        Name                          Location            
 {approute}                    AppRT                         Central US                    Appliance Route Table
 ```
 
-Perintah ini mendapatkan tabel rute bernama TabelRoute.
-Perintah melewati tabel rute itu ke cmdlet saat ini.
+Perintah ini mendapatkan tabel rute bernama ApplianceRouteTable.
+Perintah melewati tabel rute ke cmdlet saat ini.
 Cmdlet saat ini menghapus rute bernama InternetRoute.
 
 ## PARAMETERS
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -RouteTable
-Menentukan tabel rute yang akan dihapus cmdlet ini.
+Menentukan tabel rute tempat cmdlet ini menghapus rute.
 
 ```yaml
 Type: IRouteTable
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

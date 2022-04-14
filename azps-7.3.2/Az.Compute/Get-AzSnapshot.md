@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azsn
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSnapshot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzSnapshot.md
-ms.openlocfilehash: 398efb46a74db3afe1f49b149a46ffc5645702ba
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 17da7ed277d1f014576d611503b92176c5ec1b47
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140010424"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072831"
 ---
 # Get-AzSnapshot
 
 ## SYNOPSIS
 Mendapatkan properti snapshot
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azsnapshot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -84,7 +87,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti dari semua snapshot langganan.
+Perintah ini mendapatkan properti semua snapshot langganan.
 
 ### Contoh 2
 ```powershell
@@ -125,7 +128,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti semua snapshot dalam grup sumber daya yang bernama "ResourceGroupName1"
+Perintah ini mendapatkan properti semua snapshot dalam grup sumber daya bernama "ResourceGroupName1"
 
 ### Contoh 3
 ```powershell
@@ -150,7 +153,7 @@ Location           : westus2
 Tags               : {}
 ```
 
-Perintah ini mendapatkan properti snapshot yang bernama "SnapshotName1" dalam grup sumber daya bernama "ResourceGroupName1"
+Perintah ini mendapatkan properti snapshot bernama "SnapshotName1" dalam grup sumber daya bernama "ResourceGroupName1"
 
 ### Contoh 4
 ```powershell
@@ -212,7 +215,7 @@ Perintah ini mendapatkan semua snapshot yang dimulai dengan "SnapshotName"
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -257,7 +260,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

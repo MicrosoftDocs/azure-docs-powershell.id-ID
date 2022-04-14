@@ -4,11 +4,11 @@ ms.assetid: 48211644-1B92-443D-A992-BDF517D89341
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1b8e02b5a7773d0176f4f8766ae72553ae902858
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427514"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094645"
 ---
 # Get-WAPackVMSizeProfile
 
@@ -35,34 +35,34 @@ Get-WAPackVMSizeProfile [-Name <String>] [-Profile <AzureSMProfile>] [<CommonPar
 ```
 
 ## DESCRIPTION
-Topik ini sudah tidak berlaku dan akan dihapus di masa mendatang.
-Topik ini menguraikan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
-Untuk mencari tahu versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version` .
+Topik ini ditolak dan akan dihapus di masa mendatang.
+Topik ini menjelaskan cmdlet dalam versi 0.8.1 modul Microsoft Azure PowerShell.
+Untuk mengetahui versi modul yang Anda gunakan, dari konsol Azure PowerShell, ketik `(Get-Module -Name Azure).Version`.
 
-Cmdlet **Get-WAPackVMSizeProfile** mendapatkan objek profil ukuran untuk mesin virtual.
+Cmdlet **Get-WAPackVMSizeProfile** mendapatkan ukuran objek profil untuk mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan profil ukuran menggunakan nama
+### Contoh 1: Dapatkan profil ukuran menggunakan nama
 ```
 PS C:\> Get-WAPackVMSizeProfile -Name "ContosoSizeProfile07"
 ```
 
 Perintah ini mendapatkan profil ukuran bernama ContosoSizeProfile07.
 
-### Contoh 2: Mendapatkan profil ukuran menggunakan ID
+### Contoh 2: Dapatkan profil ukuran dengan menggunakan ID
 ```
 PS C:\> Get-WAPackVMSizeProfile -ID 66242D17-189F-480D-87CF-8E1D749998C8
 ```
 
 Perintah ini mendapatkan profil ukuran yang memiliki ID yang ditentukan.
 
-### Contoh 3: Mendapatkan profil semua ukuran
+### Contoh 3: Dapatkan profil semua ukuran
 ```
 PS C:\> Get-WAPackVMSizeProfile
 ```
 
-Perintah ini memiliki semua profil berukuran.
+Perintah ini mendapatkan semua profil ukuran.
 
 ## PARAMETERS
 
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -123,6 +123,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-WAPackvm](./Get-WAPackVM.md)
+[Get-WAPackVM](./Get-WAPackVM.md)
 
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.aks/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Start-AzureRmAksDashboard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Start-AzureRmAksDashboard.md
-ms.openlocfilehash: db96becb2f3dd121f843f07cd5c8f28333d65df33f44c3d0d2362b688cd65885
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bf9ad8306a8158d9a8087de1f299ba66a02717fb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868283"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144538"
 ---
 # Start-AzureRmAksDashboard
 
 ## SYNOPSIS
-Buat dashboard KLUSTER Kubectl ke dasbor kluster terkelola.
+Buat terowongan Kubectl SSH ke dasbor kluster yang dikelola.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Start-AzureRmAksDashboard [-Id] <String> [-DisableBrowser] [-PassThru]
 ```
 
 ## DESCRIPTION
-Buat dashboard KLUSTER Kubectl ke dasbor kluster terkelola. The WIZARD is setup in a PowerShell job called Kubectl-Tunnel and can be found by running `Get-Job`. The vpn should be accessable via [http://127.0.0.1:8001](http://127.0.0.1:8001).
+Buat terowongan Kubectl SSH ke dasbor kluster yang dikelola. Terowongan SSH diatur dalam pekerjaan PowerShell yang disebut Kubectl-Tunnel dan dapat ditemukan dengan menjalankan `Get-Job`. Terowongan harus dapat diakses melalui [http://127.0.0.1:8001](http://127.0.0.1:8001).
 
 ## EXAMPLES
 
-### Mulai dasbor DASHBOARD dan buka browser ke dasbor K dashboard
+### Mulai terowongan SSH dan buka browser ke dasbor Kubernetes
 ```
 PS C:\> Start-AzureRmAksDashboard -ResourceGroupName group -Name myCluster
 ```
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableBrowser
-Jangan pop-a browser setelah menyesuaikan kubectl port-forward.
+Jangan buka browser setelah memfungsikan port-forward kubectl.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Grup terkelola Anda
+Nama kluster Kubernetes terkelola Anda
 
 ```yaml
 Type: System.String
@@ -157,11 +157,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 Parameter: InputObject (ByValue)
 
 ### System.String

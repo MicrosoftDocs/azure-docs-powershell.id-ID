@@ -4,11 +4,11 @@ ms.assetid: 636280D6-32C3-48EF-A271-A4E032F8B334
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 4beee13c47ba59e5309fda1a16a4a2c3554fb6eb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425090"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966345"
 ---
 # Get-AzureRemoteAppProgram
 
@@ -32,7 +32,7 @@ Get-AzureRemoteAppProgram [-CollectionName] <String> [[-Alias] <String>] [-Profi
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRemoteAppProgram** mengambil properti dari satu atau beberapa program Azure RemoteApp yang diterbitkan untuk kumpulan.
+Cmdlet **Get-AzureRemoteAppProgram** mengambil properti dari satu atau beberapa program Azure RemoteApp yang diterbitkan untuk koleksi.
 
 ## EXAMPLES
 
@@ -58,12 +58,12 @@ VirtualPath          : %SYSTEMDRIVE%\Program Files (x86)\Contoso Finance\Finance
 ```
 
 Perintah ini menampilkan properti program Azure RemoteApp.
-Program tersebut, bernama Aplikasi Finance, berada dalam koleksi Azure RemoteApp bernama ContosoApps.
+Program ini, bernama Aplikasi Keuangan, berada dalam koleksi Azure RemoteApp bernama ContosoApps.
 
 ## PARAMETERS
 
 ### -Alias
-Menentukan alias program yang akan diambil propertinya.
+Menentukan alias program untuk mengambil properti.
 
 ```yaml
 Type: String
@@ -93,8 +93,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteAppProgram
-Menentukan nama program yang akan diambil propertinya.
+Menentukan nama program untuk mengambil properti.
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -134,8 +134,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Publish-AzureRemoteAppProgram](./Publish-AzureRemoteAppProgram.md)
+[Menerbitkan-AzureRemoteAppProgram](./Publish-AzureRemoteAppProgram.md)
 
-[Unpublish-AzureRemoteAppProgram](./Unpublish-AzureRemoteAppProgram.md)
+[Batal terbitkan-AzureRemoteAppProgram](./Unpublish-AzureRemoteAppProgram.md)
 
 

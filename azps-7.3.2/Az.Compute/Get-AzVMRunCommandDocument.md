@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMRunCommandDocument.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMRunCommandDocument.md
-ms.openlocfilehash: df0036cbf3966dfa947dddf05dab6c97a232f808
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5421f3b1de11269f736c358ec3112902f9d0ab55
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001581"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072579"
 ---
 # Get-AzVMRunCommandDocument
 
 ## SYNOPSIS
 Dapatkan dokumen perintah jalankan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmruncommanddocument) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Dapatkan dokumen perintah jalankan.
 Get-AzVMRunCommandDocument -Location 'westus' -CommandId 'RunPowerShellScript'
 ```
 
-Dapatkan dokumen perintah jalankan tertentu untuk 'RunPowerShellScript' di 'westus'.
+Mendapatkan dokumen perintah jalankan tertentu untuk 'RunPowerShellScript' di 'westus'.
 
 ### Contoh 2
 ```powershell
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi di mana perintah jalankan akan dikutafkan.
+Lokasi di mana perintah jalankan dikueri.
 
 ```yaml
 Type: System.String
@@ -91,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

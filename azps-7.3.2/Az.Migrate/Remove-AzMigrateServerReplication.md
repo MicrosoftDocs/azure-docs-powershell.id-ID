@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.migrate/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Migrate/help/Remove-AzMigrateServerReplication.md
-ms.openlocfilehash: 9fd290a0884a3cb7d3cb85a3e51ed9d315c26d30
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7a56f0746ea827d2d7bfa368dd701fa697124866
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393327"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109759"
 ---
 # Remove-AzMigrateServerReplication
 
 ## SYNOPSIS
 Menghentikan replikasi untuk server yang dimigrasikan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.migrate/remove-azmigrateserverreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,7 +39,7 @@ Cmdlet Remove-AzMigrateServerReplication menghentikan replikasi untuk server yan
 
 ## EXAMPLES
 
-### Contoh 1: Remove by id.
+### Contoh 1: Hapus menurut id.
 ```powershell
 PS C:\> Remove-AzMigrateServerReplication -TargetObjectID "/Subscriptions/xxx-xxx-xxx/resourceGroups/azmigratepwshtestasr13072020/providers/Microsoft.RecoveryServices/vaults/AzMigrateTestProjectPWSH02aarsvault/replicationFabrics/AzMigratePWSHTc8d1replicationfabric/replicationProtectionContainers/AzMigratePWSHTc8d1replicationcontainer/replicationMigrationItems/bcdr-vcenter-fareast-corp-micro-cfcc5a24-a40e-56b9-a6af-e206c9ca4f93_50063baa-9806-d6d6-7e09-c0ae87309b4f"
 
@@ -63,7 +66,7 @@ Type                             : Microsoft.RecoveryServices/vaults/replication
 
 ```
 
-Resync by id.
+Resync menurut id.
 
 ### Contoh 2: Hapus menurut Objek Input
 ```powershell
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceRemove
-Menentukan apakah replikasi perlu dilakukan untuk dihapus.
+Menentukan apakah replikasi perlu dihapus paksa.
 
 ```yaml
 Type: System.String
@@ -128,8 +131,8 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Menentukan objek mesin dari server yang replikasi.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Menentukan objek mesin dari server replikasi.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Migrate.Models.Api20210210.IMigrationItem
@@ -159,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetObjectID
-Menentukan server berulang di mana replika perlu dinonaktifkan.
+Menentukan server replcat yang perlu dinonaktifkan oleh replicatio.
 ID harus diambil menggunakan cmdlet Get-AzMigrateServerReplication.
 
 ```yaml
@@ -175,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -192,7 +195,7 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IMigrationItem>: Menentukan objek mesin dari server yang replikasi.
+INPUTOBJECT <IMigrationItem>: Menentukan objek mesin server replikasi.
   - `[Location <String>]`: Lokasi Sumber Daya
   - `[ProviderSpecificDetail <IMigrationProviderSpecificSettings>]`: Pengaturan kustom penyedia migrasi.
 

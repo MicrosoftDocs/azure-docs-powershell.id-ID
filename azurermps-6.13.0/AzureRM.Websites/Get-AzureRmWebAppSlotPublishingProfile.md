@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppSlotPublishingProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Get-AzureRmWebAppSlotPublishingProfile.md
-ms.openlocfilehash: 1ef8a7807be0c8d2ed51c08189901550b64d34cb6806c341b6052f06dd7fc308
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 29ef83bf3ed0f423686e7ddf84bc82555bd09572
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855324"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141966995"
 ---
 # Get-AzureRmWebAppSlotPublishingProfile
 
@@ -37,7 +37,7 @@ Get-AzureRmWebAppSlotPublishingProfile [[-OutputFile] <String>] [[-Format] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmWebAppSlotPublishingProfile** mendapatkan profil penerbitan Web App untuk slot yang ditentukan.
+Cmdlet **Get-AzureRmWebAppSlotPublishingProfile** mendapatkan profil penerbitan Aplikasi Web untuk slot yang ditentukan.
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Cmdlet **Get-AzureRmWebAppSlotPublishingProfile** mendapatkan profil penerbitan 
 PS C:\> Get-AzureRmWebAppSlotPublishingProfile -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "slot001" -Format "Ftp" -OutputFile "C:\Users\contoso\outputfile"
 ```
 
-Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk slot Slot001 yang terkait dengan Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
+Perintah ini mendapatkan profil penerbitan dalam format Ftp untuk slot Slot001 yang berkaitan dengan Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS dan menyimpannya dalam file output yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-Memformat
+Format
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

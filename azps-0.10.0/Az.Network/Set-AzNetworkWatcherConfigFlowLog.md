@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Set-AzNetworkWatcherConfigFlowLog.md
 ms.openlocfilehash: f250615837f4953f63a4c5ff5f0a0ea965691856
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427383"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142092519"
 ---
 # Set-AzNetworkWatcherConfigFlowLog
 
@@ -35,11 +35,11 @@ Set-AzNetworkWatcherConfigFlowLog -NetworkWatcherName <String> -ResourceGroupNam
 ```
 
 ## DESCRIPTION
-Sumber Set-AzNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk sumber daya target. Properti untuk dikonfigurasikan meliputi: apakah pembuatan log alur diaktifkan atau tidak diaktifkan untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasikan untuk mengirim log, dan kebijakan penyimpanan untuk log tersebut. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
+Set-AzNetworkWatcherConfigFlowLog mengonfigurasi pembuatan log alur untuk sumber daya target. Properti untuk dikonfigurasi meliputi: apakah pembuatan log alur diaktifkan atau tidak untuk sumber daya yang disediakan, akun penyimpanan yang dikonfigurasi untuk mengirim log, dan kebijakan penyimpanan untuk log. Saat ini Grup Keamanan Jaringan didukung untuk pembuatan log alur. 
 
 ## EXAMPLES
 
-### --- Contoh 1: Mengonfigurasi pembuatan Flow untuk NSG tertentu ---
+### --- Contoh 1: Mengonfigurasi Flow Pembuatan Log untuk --- NSG Tertentu
 ```
 PS C:\> $NW = Get-AzNetworkWatcher -ResourceGroupName NetworkWatcherRg -Name NetworkWatcher_westcentralus
 PS C:\> $nsg = Get-AzNetworkSecurityGroup -ResourceGroupName NSGRG -Name appNSG
@@ -57,12 +57,12 @@ RetentionPolicy  : {
                    }
 ```
 
-Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG tertentu memiliki pembuatan log alur yang diaktifkan, dan tidak ada kumpulan kebijakan penyimpanan.
+Dalam contoh ini, kami mengonfigurasi status pembuatan log alur untuk Grup Keamanan Jaringan. Dalam respons, kami melihat NSG yang ditentukan telah mengaktifkan pembuatan log aliran, dan tidak ada kumpulan kebijakan penyimpanan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFlowLog
-Bendera untuk mengaktifkan/menonaktifkan pembuatan log alur.
+Tandai untuk mengaktifkan/menonaktifkan pembuatan log alur.
 
 ```yaml
 Type: Boolean
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableRetention
-Bendera untuk mengaktifkan/menonaktifkan penyimpanan.
+Tandai untuk mengaktifkan/menonaktifkan penyimpanan.
 
 ```yaml
 Type: Boolean
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -254,7 +254,7 @@ System.String System.Boolean System.Int32
 ### Microsoft.Azure.Commands.Network.Models.PSFlowLog
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, watcher, flow, logs, flowlog, logging
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengawas, aliran, log, flowlog, pembuatan log
 
 ## RELATED LINKS
 
@@ -264,7 +264,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md)
 

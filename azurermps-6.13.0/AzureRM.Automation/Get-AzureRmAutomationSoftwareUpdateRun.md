@@ -6,22 +6,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSoftwareUpdateRun.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationSoftwareUpdateRun.md
 ms.openlocfilehash: d49d99f8edd3ffe0c25886447eac0bbd15837fc1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140862944"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141969589"
 ---
 # Get-AzureRmAutomationSoftwareUpdateRun
 
 ## SYNOPSIS
-Mendapatkan daftar pembaruan perangkat lunak otomatisasi Azure yang berjalan.
+Mendapatkan daftar pembaruan perangkat lunak otomatisasi azure yang berjalan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationSoftwareUpdateRun [-OperatingSystem <OperatingSystemType>]
  [-Status <SoftwareUpdateRunStatus>] [-StartTime <DateTimeOffset>] [-ResourceGroupName] <String>
@@ -51,12 +51,12 @@ Get-AzureRmAutomationSoftwareUpdateRun [-SoftwareUpdateConfiguration <SoftwareUp
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmAutomationSoftwareUpdateRun mengembalikan daftar pembaruan perangkat lunak yang berjalan. Karena konfigurasi pembaruan perangkat lunak memiliki jadwal terkait, maka bisa dipicu beberapa kali. Setiap kali jadwal dipicu akan menghasilkan pembaruan yang dijalankan. Jalankan pembaruan adalah agregat hasil dari semua mesin yang berjalan. Anda dapat menjalankan konfigurasi pembaruan perangkat lunak tertentu dengan memberikan parameter SoftwareUpdateConfigurationName. Untuk menjalankan spesifiknya, Anda harus melewati parameter nama. Anda juga dapat menjalankan daftar dengan status khusus, menjalankan sistem operatins tertentu, atau berjalan setelah waktu tertentu dengan memberikan parameter yang sesuai.
+Cmdlet Get-AzureRmAutomationSoftwareUpdateRun mengembalikan daftar pembaruan perangkat lunak yang berjalan. Karena konfigurasi pembaruan perangkat lunak memiliki jadwal terkait, itu bisa dipicu beberapa kali. Setiap kali jadwal dipicu akan menghasilkan pembaruan yang dibuat. Proses pembaruan adalah agregat dari hasil semua mesin yang dijalankan. Anda dapat menjalankan konfigurasi pembaruan perangkat lunak tertentu dengan melewati parameter SoftwareUpdateConfigurationName. Untuk mendapatkan jalan tertentu, Anda perlu memberikan parameter nama. Anda juga bisa mencantumkan berjalan dengan status tertentu, menjalankan penargetan sistem operatin tertentu, atau berjalan dimulai setelah waktu tertentu dengan melewati parameter yang sesuai.
 
 ## EXAMPLES
 
 ### Contoh 1
-Contoh ini mencantumkan semua pembaruan yang dijalankan oleh konfigurasi pembaruan perangkat lunak tertentu.
+Contoh ini mencantumkan semua pembaruan berjalan dipicu oleh konfigurasi pembaruan perangkat lunak tertentu.
 
 ```powershell
 PS C:\> Get-AzureRmAutomationSoftwareUpdateRun -ResourceGroupName "mygroup" `
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id konfigurasi pembaruan perangkat lunak yang dijalankan.
+Id konfigurasi pembaruan perangkat lunak dijalankan.
 
 ```yaml
 Type: System.Guid
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperatingSystem
-Sistem operasi yang dijalankan.
+Sistem operasi jalankan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.OperatingSystemType]
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SoftwareUpdateConfigurationName
-Nama konfigurasi pembaruan perangkat lunak yang memicu berjalannya.
+Nama konfigurasi pembaruan perangkat lunak memicu proses.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu mulai minimum untuk menjalankan.
+Waktu mulai minimum dalam pelarian.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Status proses.
+Status pelarian.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateRunStatus]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -243,9 +243,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateConfiguration
 
-### System.Nullable'1[[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.OperatingSystemType, Microsoft.Azure.Commands.ResourceManager.Automation, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.OperatingSystemType, Microsoft.Azure.Commands.ResourceManager.Automation, Version=5.1.1.0, Culture=netral, PublicKeyToken=null]]
 
-### System.Nullable'1[[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateRunStatus, Microsoft.Azure.Commands.ResourceManager.Automation, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]]
+### System.Nullable'1[[Microsoft.Azure.Commands.Automation.Model.UpdateManagement.SoftwareUpdateRunStatus, Microsoft.Azure.Commands.ResourceManager.Automation, Version=5.1.1.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.DateTimeOffset
 

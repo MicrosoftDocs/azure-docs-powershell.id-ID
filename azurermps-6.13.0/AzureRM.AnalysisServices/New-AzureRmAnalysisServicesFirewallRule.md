@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.analy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/New-AzureRmAnalysisServicesFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/New-AzureRmAnalysisServicesFirewallRule.md
-ms.openlocfilehash: 1a2d458426cdcb443aa7f854db0a138ee55f3c2b9ce8bf9fe13d3ca512fcbc03
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2a47c97ea189d4064edae7a871e21465d866f1f1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132415852"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144457"
 ---
 # New-AzureRmAnalysisServicesFirewallRule
 
@@ -27,7 +27,7 @@ New-AzureRmAnalysisServicesFirewallRule [-FirewallRuleName] <String> [-RangeStar
 ```
 
 ## DESCRIPTION
-Opsi New-AzureRmAnalysisServicesFirewallRule membuat objek aturan firewall baru.
+New-AzureRmAnalysisServicesFirewallRule membuat objek aturan firewall baru.
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Opsi New-AzureRmAnalysisServicesFirewallRule membuat objek aturan firewall baru.
 PS C:\> New-AzureRmAnalysisServicesFirewallRule -FirewallRuleName rule1 -RangeStart 0.0.0.0 -RangeEnd 255.255.255.255
 ```
 
-Membuat aturan firewall bernama rule1 dengan rentang mulai 0.0.0.0 dan rentang akhir 255.255.255.255.255
+Membuat aturan firewall bernama aturan1 dengan rentang mulai 0.0.0.0 dan rentang akhir 255.255.255.255
 
 ## PARAMETERS
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -RangeEnd
-Rentang akhir aturan firewall
+Akhir rentang aturan firewall
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -RangeStart
-Awal rentang aturan firewall
+Rentang awal aturan firewall
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

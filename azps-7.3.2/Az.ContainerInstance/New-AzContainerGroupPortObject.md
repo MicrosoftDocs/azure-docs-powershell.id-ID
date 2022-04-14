@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.ContainerInstanc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupPortObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerInstance/help/New-AzContainerGroupPortObject.md
-ms.openlocfilehash: 2dc9f5d85b1cc624052d01aa37396903e3077ab4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c7fa1d528d4839422d8a6c437541bb221bbd812f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140180049"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142071985"
 ---
 # New-AzContainerGroupPortObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk Port
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerinstance/new-azcontainergroupportobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Membuat objek dalam memori untuk Port
 
 ## EXAMPLES
 
-### Contoh 1: Menentukan port 8000 yang diekspos pada grup wadah dengan protokol TCP
+### Contoh 1: Tentukan port 8000 yang diekspos pada grup kontainer dengan protokol TCP
 ```powershell
 New-AzContainerGroupPortObject -Port 8000 -Protocol TCP
 ```
@@ -39,7 +42,7 @@ Port1 Protocol
 8000  TCP
 ```
 
-Perintah ini menentukan port 8000 yang diekspos pada grup wadah dengan protokol TCP.
+Perintah ini menentukan port 8000 yang diekspos pada grup kontainer dengan protokol TCP.
 
 ## PARAMETERS
 
@@ -58,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Protokol yang berkaitan dengan port.
+### -Protokol
+Protokol yang terkait dengan porta.
 
 ```yaml
 Type: System.String
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

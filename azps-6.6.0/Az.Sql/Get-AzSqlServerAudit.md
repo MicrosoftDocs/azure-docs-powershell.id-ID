@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAudit.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlServerAudit.md
 ms.openlocfilehash: 0dbf4c6e34f3982ccf42a66a44e1157c0c09e170
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140327525"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141858423"
 ---
 # Get-AzSqlServerAudit
 
 ## SYNOPSIS
-Mendapatkan pengaturan pengauditan server azure SQL.
+Mendapatkan pengaturan audit server Azure SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlserveraudit) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlserveraudit) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +37,11 @@ Get-AzSqlServerAudit -ServerObject <AzureSqlServerModel> [-AsJob] [-DefaultProfi
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlServerAudit** mendapatkan pengaturan audit server Azure SQL.
-Tentukan parameter *ResourceGroupName* *dan ServerName* untuk mengidentifikasi server.
+Tentukan parameter *ResourceGroupName* dan *ServerName* untuk mengidentifikasi server.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pengaturan pengauditan server azure SQL
+### Contoh 1: Mendapatkan pengaturan audit server Azure SQL
 ```
 PS C:\>Get-AzSqlServerAudit -ResourceGroupName "resourcegroup01" -ServerName "server01"
 ServerName                          : server01
@@ -60,7 +60,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 2: Dapatkan, melalui pipeline, pengaturan pengauditan server SQL Azure
+### Contoh 2: Dapatkan, melalui pipeline, pengaturan audit server Azure SQL
 ```
 PS C:\> Get-AzSqlServer -ResourceGroupName "ResourceGroup01" -ServerName "Server01" | Get-AzSqlServerAudit
 ServerName                          : server01
@@ -79,7 +79,7 @@ LogAnalyticsTargetState             : Enabled
 WorkspaceResourceId                 : "/subscriptions/4b9e8510-67ab-4e9a-95a9-e2f1e570ea9c/resourceGroups/insights-integration/providers/Microsoft.OperationalInsights/workspaces/viruela2"
 ```
 
-### Contoh 3: Mendapatkan pengaturan pengauditan server Azure SQL
+### Contoh 3: Mendapatkan pengaturan audit server Azure SQL
 ```
 PS C:\>Get-AzSqlServerAudit -ResourceGroupName "resourcegroup01" -ServerName "server01"
 ServerName                          : server01
@@ -101,7 +101,7 @@ WorkspaceResourceId                 :
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

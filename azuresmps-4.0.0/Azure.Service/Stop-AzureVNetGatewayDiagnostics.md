@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.Network.dl
 ms.assetid: 706CBF65-C796-4525-BAEB-AAFAD44C0464
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: a932bd5c8cc61b21518873fe6f3fa4c376a0d67f0611f9d18af8676af5d15683
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ec23bcdfdf16443196679543a2f8be781214b8d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417674"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141965795"
 ---
 # Stop-AzureVNetGatewayDiagnostics
 
 ## SYNOPSIS
-Menghentikan sesi diagnostik gateway VPN yang berjalan.
+Menghentikan sesi diagnostik vpn gateway yang berjalan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,15 +24,15 @@ Stop-AzureVNetGatewayDiagnostics -VNetName <String> [-Profile <AzureSMProfile>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Stop-AzureVNetGatewayDiagnostics** menghentikan sesi diagnostik gateway jaringan privat virtual (VPN, Virtual Private Network) yang sedang berjalan.
-Perintah ini menyimpan hasil sesi diagnostik ke akun penyimpanan yang ditentukan cmdlet **Start-AzureVNetGatewayDiagnostics.**
+Cmdlet **Stop-AzureVNetGatewayDiagnostics** menghentikan sesi diagnostik gateway jaringan privat virtual (VPN) yang berjalan.
+Perintah ini menyimpan hasil sesi diagnostik ke akun penyimpanan yang ditentukan cmdlet **Start-AzureVNetGatewayDiagnostics** .
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

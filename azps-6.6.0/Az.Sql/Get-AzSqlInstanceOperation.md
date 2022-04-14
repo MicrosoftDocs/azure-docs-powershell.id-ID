@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceOperation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceOperation.md
 ms.openlocfilehash: 5ed83a465149769d5dce941e3febd942c532ab4e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140327597"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142040789"
 ---
 # Get-AzSqlInstanceOperation
 
 ## SYNOPSIS
-Mendapatkan SQL operasi instans terkelola.
+Mendapatkan operasi instans terkelola SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstanceoperation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstanceoperation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,11 +41,11 @@ Get-AzSqlInstanceOperation -ManagedInstanceName <String> -ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlInstanceOperation mendapatkan informasi tentang operasi pada SQL terkelola bisnis. Anda dapat menampilkan semua operasi pada instans terkelola atau menampilkan operasi tertentu dengan menyediakan nama operasi.
+Cmdlet Get-AzSqlInstanceOperation mendapatkan informasi tentang operasi pada instans yang dikelola SQL. Anda dapat melihat semua operasi pada instans terkelola atau melihat operasi tertentu dengan memberikan nama operasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua operasi contoh
+### Contoh 1: Dapatkan semua operasi instans
 ```powershell
 PS C:\> Get-AzSqlInstanceOperation -ResourceGroupName ps3753 -ManagedInstanceName ps3698
 
@@ -88,9 +88,9 @@ OperationParameters     : Microsoft.Azure.Management.Sql.Models.ManagedInstanceO
 OperationSteps          : Microsoft.Azure.Management.Sql.Models.ManagedInstanceOperationSteps
 ```
 
-Perintah ini mendapatkan semua operasi yang SQL terkelola.
+Perintah ini mendapatkan semua operasi SQL instans terkelola.
 
-### Contoh 2: Mendapatkan operasi tertentu
+### Contoh 2: Dapatkan operasi tertentu
 ```powershell
 PS C:\> Get-AzSqlInstanceOperation -ResourceGroupName ps3753 -ManagedInstanceName ps3698 -Name 5870c6d8-6703-4b27-8ae4-687b4ca7caea
 
@@ -114,7 +114,7 @@ OperationParameters     : Microsoft.Azure.Management.Sql.Models.ManagedInstanceO
 OperationSteps          : Microsoft.Azure.Management.Sql.Models.ManagedInstanceOperationSteps
 ```
 
-Perintah ini mendapatkan operasi dengan nama '5870c6d8-6703-4b27-8ae4-687b4ca7caea' pada SQL terkelola.
+Perintah ini mendapatkan operasi dengan nama '5870c6d8-6703-4b27-8ae4-687b4ca7caea' pada instans yang dikelola SQL.
 
 ### Contoh 3: Menggunakan id sumber daya operasi
 ```powershell
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya operasi instans yang dikelola.
+Pengidentifikasi sumber daya operasi instans terkelola.
 
 ```yaml
 Type: System.String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

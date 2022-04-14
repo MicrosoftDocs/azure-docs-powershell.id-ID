@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Restore-AzureRmDeletedWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Websites/Commands.Websites/help/Restore-AzureRmDeletedWebApp.md
-ms.openlocfilehash: 34aa2720d34f66a8bec9531c8cb26737c8b5775f2070db30cfdea7dd2cb54374
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: caebbe3c9b84b469e5fc357686b256aca59c2b61
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141967076"
 ---
 # Restore-AzureRmDeletedWebApp
 
@@ -37,7 +37,7 @@ Restore-AzureRmDeletedWebApp [-TargetResourceGroupName <String>] [-TargetName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzureRmDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikasi web yang ditentukan oleh TargetResourceGroupName, TargetName, dan TargetSlot akan ditimpa dengan konten dan pengaturan aplikasi web yang dihapus. Jika parameter target tidak ditentukan, parameter target akan secara otomatis diisi dengan grup sumber daya, nama, dan slot aplikasi web yang dihapus. Jika aplikasi web target tidak ada, aplikasi akan otomatis dibuat di paket layanan aplikasi yang ditentukan oleh TargetAppServicePlanName. Parameter sakelar RestoreContentOnly bisa digunakan untuk memulihkan hanya file aplikasi yang dihapus tanpa pengaturan aplikasi.
+Cmdlet **Restore-AzureRmDeletedWebApp** memulihkan aplikasi web yang dihapus. Aplikasi web yang ditentukan oleh TargetResourceGroupName, TargetName, dan TargetSlot akan ditimpa dengan konten dan pengaturan aplikasi web yang dihapus. Jika parameter target tidak ditentukan, parameter tersebut akan otomatis diisi dengan grup sumber daya, nama, dan slot aplikasi web yang dihapus. Jika aplikasi web target tidak ada, aplikasi akan otomatis dibuat dalam paket layanan aplikasi yang ditentukan oleh TargetAppServicePlanName. Parameter switch RestoreContentOnly dapat digunakan untuk memulihkan file aplikasi yang dihapus saja tanpa pengaturan aplikasi.
 
 ## EXAMPLES
 
@@ -46,19 +46,19 @@ Cmdlet **Restore-AzureRmDeletedWebApp** memulihkan aplikasi web yang dihapus. Ap
 PS C:\> Restore-AzureRmDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -TargetAppServicePlanName ContosoPlan
 ```
 
-Memulihkan aplikasi yang dihapus yang bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi baru dengan nama dan grup sumber daya yang sama akan dibuat dalam Paket Layanan Aplikasi bernama ContosoPlan, dan file serta pengaturan aplikasi yang dihapus akan dipulihkan ke dalamnya.
+Memulihkan aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi baru dengan nama dan grup sumber daya yang sama akan dibuat di Paket App Service bernama ContosoPlan, dan file dan pengaturan aplikasi yang dihapus akan dipulihkan ke dalamnya.
 
 ### Contoh 2
 ```powershell
 PS C:\> Restore-AzureRmDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -Slot Staging -TargetResourceGroupName Default-Web-EastUS -TargetName ContosoRestore -RestoreContentOnly
 ```
 
-Memulihkan slot Pengaturan dari aplikasi yang dihapus yang bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi web yang bernama ContosoRestore milik grup sumber daya Default-Web-EastUS akan ditimpa. Pengaturan aplikasi web yang dihapus tidak akan dipulihkan.
+Memulihkan slot Staging dari aplikasi yang dihapus bernama ContosoApp milik grup sumber daya Default-Web-WestUS. Aplikasi web bernama ContosoRestore milik grup sumber daya Default-Web-EastUS akan ditimpa. Pengaturan aplikasi web yang dihapus tidak akan dipulihkan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -87,7 +87,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 Lakukan pemulihan tanpa meminta konfirmasi.
 
 ```yaml
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestoreContentOnly
-Pulihkan file aplikasi web, tetapi jangan pulihkan pengaturannya.
+Pulihkan file aplikasi web, tetapi jangan pulihkan pengaturan.
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetAppServicePlanName
-Paket Layanan Aplikasi untuk Azure Web App baru.
+Paket App Service untuk Azure Web App yang baru.
 
 ```yaml
 Type: String
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetName
-Nama Azure Web App baru.
+Nama Azure Web App yang baru.
 
 ```yaml
 Type: String
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceGroupName
-Grup sumber daya yang berisi Azure Web App baru.
+Grup sumber daya yang berisi Azure Web App yang baru.
 
 ```yaml
 Type: String
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetSlot
-Nama slot Azure Web App baru.
+Nama slot Azure Web App yang baru.
 
 ```yaml
 Type: String
@@ -238,8 +238,8 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -247,7 +247,7 @@ Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsof
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 

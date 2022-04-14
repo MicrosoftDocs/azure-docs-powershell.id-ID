@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azme
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzMetricDefinition.md
-ms.openlocfilehash: 1c6fdc093de01dec7e0eff08ae99d03e8a5554c1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 203a86c0406c470d51c7d11c2e84636aaad41207
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109492"
 ---
 # Get-AzMetricDefinition
 
 ## SYNOPSIS
 Mendapatkan definisi metrik.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azmetricdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -55,7 +58,7 @@ Unit                   : Count
 
 Perintah ini mendapatkan definisi metrik untuk sumber daya yang ditentukan.
 
-### Contoh 2: Mendapatkan definisi metrik dengan output mendetail
+### Contoh 2: Dapatkan definisi metrik dengan output mendetail
 ```
 PS C:\>Get-AzMetricDefinition -ResourceId "/subscriptions/d33fb0c7-69d3-40be-e35b-4f0deba70fff/resourceGroups/Default-Web-EastUS/providers/microsoft.web/sites/website2" -DetailedOutput
 Dimensions             : 
@@ -137,7 +140,7 @@ Outputnya mendetail.
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -151,9 +154,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
-Menunjukkan bahwa operasi ini menyertakan output detail.
-Jika Anda tidak menentukan parameter ini, output diringkas.
+### -DetailedOutput
+Menunjukkan bahwa operasi ini menyertakan output mendetail.
+Jika Anda tidak menentukan parameter ini, output akan diringkas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -232,6 +235,6 @@ Informasi selengkapnya tentang metrik yang didukung dapat ditemukan di: https://
 ## RELATED LINKS
 
 [Get-AzMetric](./Get-AzMetric.md)
- [New-AzMetricFilter](./New-AzMetricFilter.md)
+ [Filter AzMetric Baru](./New-AzMetricFilter.md)
 
 

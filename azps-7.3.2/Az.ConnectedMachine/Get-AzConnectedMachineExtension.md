@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.connectedmachine
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachineExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ConnectedMachine/help/Get-AzConnectedMachineExtension.md
-ms.openlocfilehash: 2cbea1b2b238e3fb1fddb785e062d62a3b737bc9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 10ef1f8d6c71e955f1bcd0e4e6b38ab7e82a27e3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140545089"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072309"
 ---
 # Get-AzConnectedMachineExtension
 
 ## SYNOPSIS
 Operasi untuk mendapatkan ekstensi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.connectedmachine/get-azconnectedmachineextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzConnectedMachineExtension -MachineName <String> -ResourceGroupName <String
  [-Expand <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzConnectedMachineExtension -MachineName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -49,7 +52,7 @@ custom  westus2   CustomScriptExtension Succeeded
 dsc     westus2   DSC                   Succeeded
 ```
 
-Mencantumkan semua ekstensi untuk komputer tertentu.
+Mencantumkan semua ekstensi untuk mesin tertentu.
 
 ### Contoh 2: Mendapatkan ekstensi tertentu di komputer
 ```powershell
@@ -62,7 +65,7 @@ Name  Location  PropertiesType        ProvisioningState
 dsc   westus2   CustomScriptExtension Succeeded
 ```
 
-Mendapatkan ekstensi tertentu di komputer.
+Mendapatkan ekstensi tertentu di mesin.
 
 ## PARAMETERS
 
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Ekspresi yang diperluas untuk diterapkan pada operasi.
+Ekspresi perluas untuk diterapkan pada operasi.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -MachineName
-Nama komputer yang berisi ekstensi.
+Nama mesin yang berisi ekstensi.
 
 ```yaml
 Type: System.String
@@ -128,7 +131,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

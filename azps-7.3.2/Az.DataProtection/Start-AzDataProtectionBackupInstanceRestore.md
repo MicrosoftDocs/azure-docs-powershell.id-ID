@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Start-AzDataProtectionBackupInstanceRestore.md
-ms.openlocfilehash: 33d4154ffe6eddefbb83468f96a225835703d336
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 60f35dcd16cc4bab88c10fba8c06aa3e50a87473
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394539"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142071085"
 ---
 # Start-AzDataProtectionBackupInstanceRestore
 
 ## SYNOPSIS
-Memicu pemulihan untuk BackupInstance
+Pemulihan pemicu untuk BackupInstance
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/start-azdataprotectionbackupinstancerestore) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ Start-AzDataProtectionBackupInstanceRestore -BackupInstanceName <String> -Resour
 ```
 
 ## DESCRIPTION
-Memicu pemulihan untuk BackupInstance
+Pemulihan pemicu untuk BackupInstance
 
 ## EXAMPLES
 
@@ -50,7 +53,7 @@ PS C:\> Start-AzDataProtectionBackupInstanceRestore -BackupInstanceName $instanc
 
 
 
-### Contoh 2: Picu pemulihan sebagai DB untuk AzureDatabaseForPostgreSQL terproteksi menggunakan penyimpanan rahasia.
+### Contoh 2: Pemulihan pemicu sebagai DB untuk AzureDatabaseForPostgreSQL yang dilindungi menggunakan secret store.
 ```powershell
 PS C:\> $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName"
 PS C:\> $rp = Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName" -BackupInstanceName $instance.Name
@@ -69,13 +72,13 @@ PS C:\> while($jobstatus -ne "Completed")
 
 ```
 
-Perintah pertama, kedua mengambil contoh dan titik pemulihan untuk instans tersebut.
-Perintah ketiga memulai $targetResourceId dengan Id database postgre target (targetDbName harus nama database baru).
-Perintah keempat memulai URI rahasia.
-Perintah kelima dan keenam memulai dan memicu permintaan pemulihan untuk AzureDatabaseForPostgreSQL dengan penyimpanan rahasia.
-Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan hingga selesai.
+Perintah pertama dan kedua mengambil contoh dan titik pemulihan untuk instans.
+Perintah ketiga menginisialisasi $targetResourceId dengan Id database postgre target (targetDbName harus berupa nama database baru).
+Perintah keempat menginisialisasi URI rahasia.
+Perintah kelima keenam menginisialisasi dan memicu permintaan pemulihan AzureDatabaseForPostgreSQL dengan secret store.
+Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan untuk diselesaikan.
 
-### Contoh 3: Picu pemulihan sebagai File untuk AzureDatabaseForPostgreSQL yang dilindungi.
+### Contoh 3: Memicu pemulihan sebagai File untuk AzureDatabaseForPostgreSQL yang dilindungi.
 ```powershell
 PS C:\> $instance = Get-AzDataProtectionBackupInstance -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName"
 PS C:\> $rp = Get-AzDataProtectionRecoveryPoint -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ResourceGroupName "resourceGroupName" -VaultName "vaultName" -BackupInstanceName $instance.Name
@@ -94,11 +97,11 @@ PS C:\> while($jobstatus -ne "Completed")
 
 ```
 
-Perintah pertama, kedua mengambil contoh dan titik pemulihan untuk instans tersebut.
-Perintah ketiga memulai proses $targetContainerURI dengan Id wadah akun penyimpanan target.
-Perintah keempat memulai prefiks nama file untuk pemulihan.
-Perintah kelima dan keenam memulai dan memicu permintaan pemulihan untuk AzureDatabaseForPostgreSQL dengan penyimpanan rahasia.
-Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan hingga selesai.
+Perintah pertama dan kedua mengambil contoh dan titik pemulihan untuk instans.
+Perintah ketiga menginisialisasi $targetContainerURI dengan id kontainer akun penyimpanan target.
+Perintah keempat menginisialisasi prefiks nama file untuk pemulihan.
+Perintah kelima keenam menginisialisasi dan memicu permintaan pemulihan AzureDatabaseForPostgreSQL dengan secret store.
+Perintah ketujuh, delapan, kesembilan melacak pekerjaan pemulihan untuk diselesaikan.
 
 ## PARAMETERS
 
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameter
-Permintaan pemulihan cadangan Azure Untuk dibuat, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
+Permintaan pemulihan cadangan Azure Untuk membangun, lihat bagian CATATAN untuk properti PARAMETER dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IAzureBackupRestoreRequest
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat vault cadangan ada.
+Nama grup sumber daya tempat kubah cadangan ada.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -RestoreTargetInfo
 Mendapatkan atau mengatur informasi target pemulihan.
-Untuk membuat, lihat bagian CATATAN untuk properti RESTORETARGETINFO dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti RESTORETARGETINFO dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IRestoreTargetInfoBase
@@ -254,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama vault cadangan.
+Nama kubah cadangan.
 
 ```yaml
 Type: System.String
@@ -269,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -285,7 +288,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -300,7 +303,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -322,13 +325,13 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 PARAMETER <IAzureBackupRestoreRequest>: Permintaan pemulihan cadangan Azure
   - `ObjectType <String>`: 
   - `RestoreTargetInfo <IRestoreTargetInfoBase>`: Mendapatkan atau mengatur informasi target pemulihan.
-    - `ObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
-    - `[RestoreLocation <String>]`: Kawasan Pemulihan Target
+    - `ObjectType <String>`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
+    - `[RestoreLocation <String>]`: Wilayah Pemulihan Target
   - `SourceDataStoreType <SourceDataStoreType>`: Mendapatkan atau mengatur tipe penyimpanan data sumber.
 
 RESTORETARGETINFO <IRestoreTargetInfoBase>: Mendapatkan atau mengatur informasi target pemulihan.
-  - `ObjectType <String>`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
-  - `[RestoreLocation <String>]`: Kawasan Pemulihan Target
+  - `ObjectType <String>`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
+  - `[RestoreLocation <String>]`: Wilayah Pemulihan Target
 
 ## RELATED LINKS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datashare/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSetMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/New-AzDataShareDataSetMapping.md
-ms.openlocfilehash: 99a970498fa7b7d2d5d75b4ba18abced840cfa8b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2c54312815cca5ff37ed5042bb7072ab65b681d9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179783"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142071031"
 ---
 # New-AzDataShareDataSetMapping
 
 ## SYNOPSIS
-Membuat pemetaan kumpulan data untuk berbagi langganan.
+Membuat pemetaan kumpulan data untuk langganan berbagi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/new-azdatasharedatasetmapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ New-AzDataShareDataSetMapping -ResourceGroupName <String> -AccountName <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDataShareDataSetMapping** membuat pemetaan kumpulan data antara kumpulan data sumber dan akun penyimpanan sink dalam langganan bersama.
+Cmdlet **New-AzDataShareDataSetMapping** membuat pemetaan kumpulan data antara kumpulan data sumber dan akun penyimpanan wastafel dalam langganan bersama.
 
 ## EXAMPLES
 
@@ -61,11 +64,11 @@ Name                 : AdsDataSetMapping
 Type                 : Microsoft.DataShare/DataSetMappings
 ```
 
-Perintah ini membuat pemetaan kumpulan data AdsDataSetMapping ke akun penyimpanan AdsStorage untuk berbagi langganan AdsShareSubscription dalam akun berbagi data WikiAdsAccount.
+Perintah ini membuat kumpulan data pemetaan AdsDataSetMapping ke akun penyimpanan AdsStorage untuk berbagi langganan AdsShareSubscription di akun berbagi data WikiAdsAccount.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -80,8 +83,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
-Nama wadah akun penyimpanan Azure
+### -Kontainer
+Nama kontainer akun penyimpanan Azure
 
 ```yaml
 Type: System.String
@@ -186,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Azure Storage ResourceId Akun
+Id Sumber Daya Akun Azure Storage
 
 ```yaml
 Type: System.String
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +250,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

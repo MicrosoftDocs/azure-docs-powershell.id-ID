@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.dataprotection/n
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/New-AzDataProtectionBackupInstance.md
-ms.openlocfilehash: 8f2ff951e93ebd4541c220cc1292c02e1766273d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 83c06117ab2eeeeaa1fbcfea3f37304f33976676
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001141"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142071247"
 ---
 # New-AzDataProtectionBackupInstance
 
 ## SYNOPSIS
-Mengonfigurasi Pencadangan untuk sumber daya Azure yang didukung
+Mengonfigurasi Pencadangan untuk sumber daya azure yang didukung
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/new-azdataprotectionbackupinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzDataProtectionBackupInstance -BackupInstance <IBackupInstanceResource> -Re
 ```
 
 ## DESCRIPTION
-Mengonfigurasi Pencadangan untuk sumber daya Azure yang didukung
+Mengonfigurasi Pencadangan untuk sumber daya azure yang didukung
 
 ## EXAMPLES
 
-### Contoh 1: Konfigurasi cadangan disk azure di vault cadangan.
+### Contoh 1: Mengonfigurasi cadangan disk azure dalam kubah cadangan.
 ```powershell
 PS C:\> $sub = "xxxx-xxx-xx"
 PS C:\> $DiskId = "/subscriptions/{subscription}/resourceGroups/{resourcegroup}/providers/Microsoft.Compute/disks/{diskname}"
@@ -45,11 +48,11 @@ Name                                                       Type                 
 sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166 Microsoft.DataProtection/backupVaults/backupInstances sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166
 ```
 
-Perintah ketiga mendapatkan kebijakan di mana disk akan dicadangkan.
-Perintah keempat memulai permintaan contoh cadangan.
-Perintah terakhir mengonfigurasi cadangan disk Azure yang diberikan di vault cadangan.
+Perintah ketiga mendapatkan kebijakan dengan disk mana yang akan dicadangkan.
+Perintah keempat menginisialisasi permintaan instans cadangan.
+Perintah terakhir mengonfigurasi cadangan disk azure tertentu dalam kubah cadangan.
 
-### Contoh 2: Konfigurasi proteksi untuk database AzureDatabaseForPostgreSQL di vault cadangan (menggunakan autentikasi penyimpanan rahasia).
+### Contoh 2: Mengonfigurasi proteksi untuk database AzureDatabaseForPostgreSQL dalam kubah cadangan (menggunakan autentikasi secret store).
 ```powershell
 PS C:\> $sub = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 PS C:\> $dataSourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.DBforPostgreSQL/servers/OssServerName/databases/DBName"
@@ -65,11 +68,11 @@ xyz-postgresql-wus-empdb10-xxxxxxxx-xxxx-xxxx-a3ba-be75108d8b21 Microsoft.DataPr
 
 ```
 
-Perintah ketiga memulai rahasiaURI untuk autentikasi penyimpanan rahasia.
+Perintah ketiga menginisialisasi secretURI untuk autentikasi secret store.
 
-Perintah kelima mendapatkan kebijakan untuk database mana yang akan dilindungi.
-Perintah keenam memulai objek permintaan instans cadangan.
-Perintah terakhir mengonfigurasi cadangan perangkat yang $dataSourceId di vault cadangan.
+Perintah kelima mendapatkan kebijakan yang akan dilindungi database.
+Perintah keenam menginisialisasi objek permintaan instans cadangan.
+Perintah terakhir mengonfigurasi cadangan $dataSourceId yang diberikan dalam kubah cadangan.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupInstance
-Objek permintaan instans cadangan yang akan digunakan untuk mengonfigurasi pencadangan Untuk dibuat, lihat bagian CATATAN untuk properti BACKUPINSTANCE dan membuat tabel hash.
+Objek permintaan instans cadangan yang akan digunakan untuk mengonfigurasi cadangan Untuk membangun, lihat bagian CATATAN untuk properti BACKUPINSTANCE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Models.Api20210701.IBackupInstanceResource
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup Sumber Daya vault cadangan
+Grup Sumber Daya dari kubah cadangan
 
 ```yaml
 Type: System.String
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan vault
+Id Langganan kubah
 
 ```yaml
 Type: System.String
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Nama vault cadangan
+Nama kubah cadangan
 
 ```yaml
 Type: System.String
@@ -179,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -210,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -225,34 +228,34 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-BACKUPINSTANCE <IBackupInstanceResource>: Backup instance request object which will be used to configure backup
+BACKUPINSTANCE <IBackupInstanceResource>: Objek permintaan instans cadangan yang akan digunakan untuk mengonfigurasi cadangan
   - `[Property <IBackupInstance>]`: Properti BackupInstanceResource
     - `DataSourceInfo <IDatasource>`: Mendapatkan atau mengatur informasi sumber data.
-      - `ResourceId <String>`: ID ARM penuh dari sumber daya. Untuk sumber daya Azure, ini adalah ID ARM. For non azure resources, this will be the ID created by backup service via Fabric/Vault.
-      - `[ObjectType <String>]`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
+      - `ResourceId <String>`: ARM LENGKAP ID sumber daya. Untuk sumber daya azure, ini adalah ID ARM. Untuk sumber daya non azure, id ini akan dibuat oleh layanan cadangan melalui Fabric/Vault.
+      - `[ObjectType <String>]`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Tipe Sumber Daya Sumber Data.
-      - `[ResourceUri <String>]`: Uri dari sumber daya.
-      - `[Type <String>]`: TipeData sumber daya.
+      - `[ResourceType <String>]`: Tipe Sumber Daya Datasource.
+      - `[ResourceUri <String>]`: Uri sumber daya.
+      - `[Type <String>]`: DatasourceType sumber daya.
     - `ObjectType <String>`: 
     - `PolicyInfo <IPolicyInfo>`: Mendapatkan atau mengatur informasi kebijakan.
       - `PolicyId <String>`: 
       - `[PolicyParameter <IPolicyParameters>]`: Parameter kebijakan untuk instans cadangan
         - `[DataStoreParametersList <IDataStoreParameters[]>]`: Mendapatkan atau mengatur Parameter DataStore
-          - `DataStoreType <DataStoreTypes>`: tipe penyimpanan data; Operasional/Vault/Arsip
-          - `ObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
+          - `DataStoreType <DataStoreTypes>`: jenis datastore; Operasional/Vault/Archive
+          - `ObjectType <String>`: Tipe objek tertentu - digunakan untuk deserialisasi
     - `[DataSourceSetInfo <IDatasourceSet>]`: Mendapatkan atau mengatur informasi kumpulan sumber data.
-      - `ResourceId <String>`: ID ARM penuh dari sumber daya. Untuk sumber daya Azure, ini adalah ID ARM. For non azure resources, this will be the ID created by backup service via Fabric/Vault.
-      - `[DatasourceType <String>]`: TipeData sumber daya.
-      - `[ObjectType <String>]`: Tipe objek Datasource, digunakan untuk memulai tipe yang diwariskan ke kanan
+      - `ResourceId <String>`: ARM LENGKAP ID sumber daya. Untuk sumber daya azure, ini adalah ID ARM. Untuk sumber daya non azure, id ini akan dibuat oleh layanan cadangan melalui Fabric/Vault.
+      - `[DatasourceType <String>]`: DatasourceType sumber daya.
+      - `[ObjectType <String>]`: Tipe objek Datasource, digunakan untuk menginisialisasi tipe yang diwariskan ke kanan
       - `[ResourceLocation <String>]`: Lokasi sumber data.
       - `[ResourceName <String>]`: Pengidentifikasi unik sumber daya dalam konteks induk.
-      - `[ResourceType <String>]`: Tipe Sumber Daya Sumber Data.
-      - `[ResourceUri <String>]`: Uri dari sumber daya.
+      - `[ResourceType <String>]`: Tipe Sumber Daya Datasource.
+      - `[ResourceUri <String>]`: Uri sumber daya.
     - `[DatasourceAuthCredentials <IAuthCredentials>]`: Kredensial yang digunakan untuk mengautentikasi dengan penyedia sumber data.
-      - `ObjectType <String>`: Tipe objek spesifik - digunakan untuk deserialisasi
-    - `[FriendlyName <String>]`: Mendapatkan atau mengatur nama cadangan yang mudah digunakan.
+      - `ObjectType <String>`: Tipe objek tertentu - digunakan untuk deserialisasi
+    - `[FriendlyName <String>]`: Mendapatkan atau mengatur nama yang mudah dikenali Instans Cadangan.
 
 ## RELATED LINKS
 

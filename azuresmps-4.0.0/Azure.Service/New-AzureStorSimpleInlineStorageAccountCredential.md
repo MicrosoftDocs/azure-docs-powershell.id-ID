@@ -3,12 +3,12 @@ external help file: Microsoft.WindowsAzure.Commands.StorSimple.dll-Help.xml
 ms.assetid: BC68C60C-86E3-4857-95AE-1A915A841F7D
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 537930ae5ec42602a6515bd63142f803ec6a877b3359bf84ab83c89b997618fb
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 84d91f95b0465188cc9bd566b45b75e790211801
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132419213"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094199"
 ---
 # New-AzureStorSimpleInlineStorageAccountCredential
 
@@ -27,12 +27,12 @@ New-AzureStorSimpleInlineStorageAccountCredential -StorageAccountName <String> -
 ## DESCRIPTION
 Cmdlet **New-AzureStorSimpleInlineStorageAccountCredential** membuat objek kredensial akun penyimpanan Azure sebaris.
 Cmdlet ini membuat objek kredensial dummy.
-Anda dapat menggunakan cmdlet **New-AzureStorSimpleDeviceVolumeContainer** dan cmdlet saat ini dalam perintah yang sama menggunakan saluran Windows PowerShell saluran.
+Anda dapat menggunakan cmdlet **New-AzureStorSimpleDeviceVolumeContainer** dan cmdlet saat ini dalam perintah yang sama menggunakan saluran Windows PowerShell.
 Objek kredensial akun penyimpanan aktual dibuat sebagai bagian dari pembuatan wadah volume.
 
 ## EXAMPLES
 
-### Contoh 1: Buat kredensial akun penyimpanan sebaris
+### Contoh 1: Membuat kredensial akun penyimpanan sebaris
 ```
 PS C:\>New-AzureStorSimpleInlineStorageAccountCredential -Name "contoso76" -Key x6o/tpZh8Coo8Tteo0NHLksTOKr/P9Vufo0LZNGdPGVTSUu00/p6ta1w9gRbVBNjzN8aa504kH2zkEsfUme+kw== | New-AzureStorSimpleDeviceVolumeContainer -Name "VolumeContainer_06" -DeviceName Contoso_App3 -BandWidthRate 256 -EncryptionEnabled $True -EncryptionKey "Key22" -WaitForComplete
 VERBOSE: ClientRequestId: 535d24d5-1ed8-4759-92b2-dd492f94e23e_PS
@@ -74,8 +74,8 @@ SecretsEncryptionThumbprint     :
 VolumeCount                     : 0
 ```
 
-Perintah ini membuat kredensial akun penyimpanan sebaris, lalu meneruskannya ke cmdlet **New-AzureStorSimpleDeviceVolumeContainer** menggunakan operator pipeline.
-Wadah itu menggunakan kredensial dummy untuk membuat wadah volume.
+Perintah ini membuat kredensial akun penyimpanan sebaris, lalu mengirimkannya ke cmdlet **New-AzureStorSimpleDeviceVolumeContainer** dengan menggunakan operator pipeline.
+Wadah tersebut menggunakan kredensial dummy untuk membuat wadah volume.
 
 ## PARAMETERS
 
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountKey
-Menentukan kunci akun dari akun penyimpanan dalam teks biasa.
+Menentukan kunci akun akun penyimpanan dalam teks biasa.
 Kunci ditransfer dalam format terenkripsi.
 
 ```yaml
@@ -142,18 +142,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### StorageAccountCredentialResponse
-Cmdlet ini mengembalikan objek **CloudType,** yang berisi bidang berikut ini: 
+Cmdlet ini mengembalikan objek **CloudType** , yang berisi bidang berikut: 
 
-- **Nama host.**
+- **Nama host**.
 **String**. 
 - **InstanceId**.
 **String**. 
@@ -167,11 +167,11 @@ Cmdlet ini mengembalikan objek **CloudType,** yang berisi bidang berikut ini:
 **String**. 
 - **OperationInProgress**.
 **OperationInProgress**. 
-- **Kata Sandi**.
+- **Kata sandi**.
 **String**. 
 - **PasswordEncryptionCertThumbprint**.
 **String**. 
-- **UseSSL**.
+- **GunakanSSL**.
 **Boolean**. 
 - **VolumeCount**.
 **Bilangan bulat**.
@@ -182,6 +182,6 @@ Cmdlet ini mengembalikan objek **CloudType,** yang berisi bidang berikut ini:
 
 [New-AzureStorSimpleStorageAccountCredential](./New-AzureStorSimpleStorageAccountCredential.md)
 
-[New-AzureStorSimpleDeviceVolumeContainer](./New-AzureStorSimpleDeviceVolumeContainer.md)
+[Baru-AzureStorSimpleDeviceVolumeContainer](./New-AzureStorSimpleDeviceVolumeContainer.md)
 
 

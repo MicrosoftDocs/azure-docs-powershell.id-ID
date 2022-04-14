@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/new-azau
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleWebhook.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/New-AzAutoscaleWebhook.md
-ms.openlocfilehash: 6f84cc96f99442b1ab0a7e3aa8bf702804d156f0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 936700b715343e283ae76826c48b610b1b753633
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008194"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141892034"
 ---
 # New-AzAutoscaleWebhook
 
 ## SYNOPSIS
-Membuat webhook SkalaOtomatis.
+Membuat webhook Skala Otomatis.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/new-azautoscalewebhook) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,13 +29,13 @@ New-AzAutoscaleWebhook [-ServiceUri] <String> [[-Property] <Hashtable>]
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzAutoscaleWebhook** membuat web skala otomatis.
+Cmdlet **New-AzAutoscaleWebhook** membuat webhook Skala Otomatis.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Membuat webhook SkalaOtomatis. (otomatisgenerated)
+Membuat webhook Skala Otomatis. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzAutoscaleWebhook -ServiceUri 'https://contoso.com'
@@ -41,7 +44,7 @@ New-AzAutoscaleWebhook -ServiceUri 'https://contoso.com'
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Properti
-Menentukan daftar properti dalam format @(properti1 = 'nilai1',....).
+Menentukan daftar properti dalam format @(property1 = 'value1',....).
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

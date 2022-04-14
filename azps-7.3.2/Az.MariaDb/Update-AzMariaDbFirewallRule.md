@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mariadb/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MariaDb/help/Update-AzMariaDbFirewallRule.md
-ms.openlocfilehash: 0bdab793a35b7f1b720a26ff3c228f55f9a37e92
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ad2b048d1df4db5da6b3cbd1ef44f022d78124b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372582"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109807"
 ---
 # Update-AzMariaDbFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mariadb/update-azmariadbfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Membuat aturan firewall baru atau memperbarui aturan firewall yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui aturan firewall MariaDB
+### Contoh 1: Perbarui aturan firewall MariaDB
 ```powershell
 PS C:\> Update-AzMariaDbFirewallRule -Name fr-cfgl3y -ServerName mariadb-test-4rmtig -ResourceGroupName mariadb-test-qu5ov0 -StartIPAddress 0.0.3.1 -EndIPAddress 0.0.3.255
 
@@ -61,7 +64,7 @@ fr-cfgl3y 0.0.3.1        0.0.3.255
 
 Perintah ini memperbarui aturan firewall MariaDB.
 
-### Contoh 2: Perbarui MariaDB Firewall Rule menurut identitas.
+### Contoh 2: Perbarui Aturan Firewall MariaDB menurut identitas.
 ```powershell
 PS C:\> $ID = "/subscriptions/<SubscriptionId>/resourceGroups/mariadb-test-qu5ov0/providers/Microsoft.DBforMariaDB/servers/mariadb-test-4rmtig/firewallRules/fr-cfgl3y"
 PS C:\> Update-AzMariaDbFirewallRule -InputObject $ID -EndIPAddress 0.0.0.3 -StartIPAddress 0.0.0.2
@@ -71,9 +74,9 @@ Name      StartIPAddress EndIPAddress
 fr-cfgl3y 0.0.0.2        0.0.0.3
 ```
 
-Cmdlet memperbarui MariaDB Firewall Rule menurut identitas.
+Cmdlet memperbarui Aturan Firewall MariaDB menurut identitas.
 
-### Contoh 3: Perbarui MariaDB Firewall Rule by -ClientIPAddress.
+### Contoh 3: Update MariaDB Firewall Rule by -ClientIPAddress.
 ```powershell
 PS C:\> $ID = "/subscriptions/<SubscriptionId>/resourceGroups/mariadb-test-qu5ov0/providers/Microsoft.DBforMariaDB/servers/mariadb-test-4rmtig/firewallRules/fr-cfgl3y"
 PS C:\> Update-AzMariaDbFirewallRule -InputObject $ID --ClientIPAddress 0.0.0.2
@@ -83,7 +86,7 @@ Name      StartIPAddress EndIPAddress
 fr-cfgl3y 0.0.0.2        0.0.0.2
 ```
 
-Cmdlet memperbarui MariaDB Firewall Rule by -ClientIPAddress.
+Cmdlet memperbarui Aturan Firewall MariaDB oleh -ClientIPAddress.
 
 ## PARAMETERS
 
@@ -103,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIPAddress
-Klien ip tunggal aturan firewall server yang ditentukan.
-Harus menggunakan format IPv4.
+Klien menentukan IP tunggal aturan firewall server.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -EndIPAddress
 Alamat IP akhir aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
@@ -180,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,8 +198,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: False
 
 ### -StartIPAddress
 Alamat IP mulai aturan firewall server.
-Harus menggunakan format IPv4.
+Harus berupa format IPv4.
 
 ```yaml
 Type: System.String
@@ -257,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -288,11 +291,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.I CmdletDbIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.MariaDb.Models.IMariaDbIdentity
 
 ## OUTPUTS
 
@@ -313,7 +316,7 @@ INPUTOBJECT <IMariaDbIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.

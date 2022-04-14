@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/remo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Remove-AzDataFactoryHub.md
-ms.openlocfilehash: 19f145d42eb79ab7c17cac24956e62b2b6305551
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ad9d2a43f9d870ccb1d7766e44fe2d647bca619f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142071805"
 ---
 # Remove-AzDataFactoryHub
 
 ## SYNOPSIS
 Menghapus hub dari Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/remove-azdatafactoryhub) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,8 +36,8 @@ Remove-AzDataFactoryHub [-Name] <String> [-Force] [-DataFactory] <PSDataFactory>
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzDataFactoryHub** menghapus hub dari Azure Data Factory di grup sumber daya Azure yang ditentukan dan di pabrik data yang ditentukan.
-Jika Anda menghapus hub, semua layanan dan saluran tertaut dalam hub juga dihapus.
+Cmdlet **Remove-AzDataFactoryHub** menghapus hub dari Azure Data Factory dalam grup sumber daya Azure yang ditentukan dan di pabrik data yang ditentukan.
+Jika Anda menghapus hub, semua layanan dan saluran yang ditautkan di hub juga dihapus.
 
 ## EXAMPLES
 
@@ -43,7 +46,7 @@ Jika Anda menghapus hub, semua layanan dan saluran tertaut dalam hub juga dihapu
 PS C:\>Remove-AzDataFactoryHub -ResourceGroupName "ADFResourceGroup" -DataFactoryName "ADFDataFactory" -Name "ContosoDataHub"
 ```
 
-Perintah ini menghapus hub yang bernama ContosoDataHub dari grup sumber daya Azure yang bernama ADFResourceGroup dan pabrik data yang bernama ADFDataFactory.
+Perintah ini menghapus hub bernama ContosoDataHub dari grup sumber daya Azure bernama ADFResourceGroup dan pabrik data bernama ADFDataFactory.
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -94,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini menghapus hub tanpa meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menghapus hub tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -185,7 +188,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### System.Boolean
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

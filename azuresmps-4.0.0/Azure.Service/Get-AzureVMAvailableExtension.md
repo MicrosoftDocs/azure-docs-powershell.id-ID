@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.ServiceManagement.dll-Help.x
 ms.assetid: FAC3DABB-8230-4E86-9936-0F1848980EA2
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: ef7da42f9a506383e3c62dc8d26506a9f85d1c0a99ea23109bca2a6e2c62eee6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 19b0954479839ca708cdd3add6e297c9d0eeda6e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418203"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094877"
 ---
 # Get-AzureVMAvailableExtension
 
 ## SYNOPSIS
-Mendapatkan informasi ekstensi terbaru yang tersedia untuk mesin virtual.
+Mendapatkan informasi untuk ekstensi terbaru yang tersedia untuk mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -44,7 +44,7 @@ Cmdlet **Get-AzureVMAvailableExtension** mendapatkan informasi untuk ekstensi te
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi untuk ekstensi terbaru yang tersedia
+### Contoh 1: Dapatkan informasi untuk ekstensi terbaru yang tersedia
 ```
 PS C:\> Get-AzureVMAvailableExtension
           Publisher                  : Microsoft.Compute
@@ -78,7 +78,7 @@ PS C:\> Get-AzureVMAvailableExtension
           OperationStatus            : Succeeded
 ```
 
-Perintah ini mendapatkan informasi ekstensi terbaru yang tersedia untuk semua mesin virtual.
+Perintah ini mendapatkan informasi untuk ekstensi terbaru yang tersedia untuk semua mesin virtual.
 
 ### Contoh 2: Mendapatkan informasi dari nama ekstensi tertentu
 ```
@@ -150,7 +150,7 @@ PS C:\> Get-AzureVMAvailableExtension -Publisher Microsoft.Compute -ExtensionNam
 
 Perintah ini mendapatkan informasi dari semua versi ekstensi bernama VMAccessAgent dan penerbit bernama Microsoft.Computer.
 
-### Contoh 3: Mendapatkan informasi dari ekstensi mesin virtual tertentu menurut nomor versi
+### Contoh 3: Dapatkan informasi dari ekstensi mesin virtual tertentu menurut nomor versi
 ```
 PS C:\> Get-AzureVMAvailableExtension -Publisher Microsoft.Compute -ExtensionName VMAccessAgent -Version 1.0.3
           Publisher                  : Microsoft.Compute
@@ -184,12 +184,12 @@ PS C:\> Get-AzureVMAvailableExtension -Publisher Microsoft.Compute -ExtensionNam
           OperationStatus            : Succeeded
 ```
 
-Perintah ini mendapatkan informasi untuk ekstensi yang bernama VMAccessAgent dan penerbit yang bernama Microsoft.Compute untuk ekstensi versi 1.0.3.
+Perintah ini mendapatkan informasi untuk ekstensi bernama VMAccessAgent dan penerbit bernama Microsoft.Compute untuk ekstensi versi 1.0.3.
 
 ## PARAMETERS
 
 ### -AllVersions
-Mengindikasikan bahwa cmdlet ini mencantumkan semua versi ekstensi.
+Menunjukkan bahwa cmdlet ini mencantumkan semua versi ekstensi.
 
 ```yaml
 Type: SwitchParameter
@@ -231,16 +231,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -270,8 +270,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

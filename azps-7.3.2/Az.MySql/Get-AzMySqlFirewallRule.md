@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.mysql/get-azmysq
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/MySql/help/Get-AzMySqlFirewallRule.md
-ms.openlocfilehash: 91dd0298cd19c42a4f44aacd504f6f60837c1cc2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a4efe599181fdb2243577faae1d1a17f76e823e2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198470"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141891897"
 ---
 # Get-AzMySqlFirewallRule
 
 ## SYNOPSIS
 Mendapatkan informasi tentang aturan firewall server.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.mysql/get-azmysqlfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMySqlFirewallRule -ResourceGroupName <String> -ServerName <String> [-Subsc
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzMySqlFirewallRule -Name <String> -ResourceGroupName <String> -ServerName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -41,7 +44,7 @@ Mendapatkan informasi tentang aturan firewall server.
 
 ## EXAMPLES
 
-### Contoh 1: Mencantumkan semua Aturan Firewall di server MySql yang ditentukan
+### Contoh 1: Mencantumkan semua Aturan Firewall di server MySql tertentu
 ```powershell
 PS C:\> Get-AzMySqlFirewallRule -ResourceGroupName PowershellMySqlTest -ServerName mysql-test
 
@@ -50,7 +53,7 @@ Name Type
 rule Microsoft.DBforMySQL/servers/firewallRules
 ```
 
-Cmdlet ini mencantumkan semua Aturan Firewall di server MySql yang ditentukan.
+Cmdlet ini mencantumkan semua Aturan Firewall di server MySql tertentu.
 
 ### Contoh 2: Dapatkan Aturan Firewall menurut nama
 ```powershell
@@ -61,7 +64,7 @@ Name Type
 rule Microsoft.DBforMySQL/servers/firewallRules
 ```
 
-Cmdlet ini mendapatkan Aturan Firewall menurut nama.
+Cmdlet ini mendapatkan Aturan Firewall berdasarkan nama.
 
 ### Contoh 3: Dapatkan Aturan Firewall menurut identitas
 ```powershell
@@ -73,7 +76,7 @@ Name Type
 rule Microsoft.DBforMySQL/servers/firewallRules
 ```
 
-Cmdlet ini mendapatkan Firewall Rule menurut identitas.
+Cmdlet ini mendapatkan Aturan Firewall berdasarkan identitas.
 
 ## PARAMETERS
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.MySql.Models.IMySqlIdentity
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,7 +198,7 @@ INPUTOBJECT <IMySqlIdentity>: Parameter Identitas
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

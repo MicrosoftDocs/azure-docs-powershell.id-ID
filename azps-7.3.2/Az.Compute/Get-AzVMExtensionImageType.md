@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtensionImageType.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzVMExtensionImageType.md
-ms.openlocfilehash: 6d1d4860a2d284fbf9b30b7fdea13e2e6d7b3130
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 08f9524e12c47ffabcaa8d44f489afec3509ffcc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395463"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072597"
 ---
 # Get-AzVMExtensionImageType
 
 ## SYNOPSIS
-Mendapatkan jenis ekstensi Azure.
+Mendapatkan tipe ekstensi Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azvmextensionimagetype) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +38,12 @@ Cmdlet **Get-AzVMExtensionImageType** mendapatkan tipe ekstensi Azure.
 Get-AzVMExtensionImageType -Location "Central US" -PublisherName "Fabrikam"
 ```
 
-Perintah ini akan mendapatkan tipe gambar ekstensi untuk penerbit dan lokasi yang ditentukan.
+Perintah ini mendapatkan tipe gambar ekstensi untuk penerbit dan lokasi yang ditentukan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -56,7 +59,7 @@ Accept wildcard characters: False
 
 ### -Lokasi
 Menentukan lokasi ekstensi.
-Cmdlet ini mendapatkan tipe ekstensi pada lokasi yang ditentukan parameter ini.
+Cmdlet ini mendapatkan tipe ekstensi di lokasi yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

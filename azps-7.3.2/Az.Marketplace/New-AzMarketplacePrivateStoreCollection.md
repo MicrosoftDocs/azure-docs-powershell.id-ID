@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/new-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/New-AzMarketplacePrivateStoreCollection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/New-AzMarketplacePrivateStoreCollection.md
-ms.openlocfilehash: d479fae6317c2e3e1c14dbe895291a43fdafe2be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 59712d8ad55f53d398a1d832427ce78e96a3fe4b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141892358"
 ---
 # New-AzMarketplacePrivateStoreCollection
 
 ## SYNOPSIS
 Membuat atau memperbarui koleksi bursa pribadi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/new-azmarketplaceprivatestorecollection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +47,7 @@ Perintah ini membuat atau memperbarui koleksi bursa pribadi
 ## PARAMETERS
 
 ### -AllSubscription
-Menunjukkan apakah semua langganan dipilih (=true) atau tidak (=false).
+Mengindikasikan apakah semua langganan dipilih (=true) atau tidak (=false).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -58,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Claim
-Mendapatkan atau mengatur keterkaitan dengan Akun Tagihan Komersial.
+### -Klaim
+Mendapatkan atau mengatur asosiasi dengan Akun Tagihan Komersial.
 
 ```yaml
 Type: System.String
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Menunjukkan apakah kumpulan diaktifkan atau dinonaktifkan.
+### -Difungsikan
+Mengindikasikan apakah kumpulan diaktifkan atau dinonaktifkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionsList
 Mendapatkan atau mengatur daftar id langganan.
-Daftar kosong menunjukkan semua langganan dipilih, null menunjukkan bahwa tidak ada pembaruan yang dilakukan, daftar eksplisit menunjukkan langganan eksplisit yang dipilih.
+Daftar kosong menunjukkan semua langganan dipilih, null menunjukkan tidak ada pembaruan yang dilakukan, daftar eksplisit menunjukkan langganan yang dipilih secara eksplisit.
 Saat disisipkan, null dianggap sebagai permintaan yang buruk
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

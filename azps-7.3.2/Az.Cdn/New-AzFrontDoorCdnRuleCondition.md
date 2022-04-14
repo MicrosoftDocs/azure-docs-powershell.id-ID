@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/new-azfrontd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzFrontDoorCdnRuleCondition.md
-ms.openlocfilehash: 013c220f39c3493ea68bf0c488d7e6954cb62def
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0b67bb61c37de4d4197e4229ca200faeda396b2e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142073335"
 ---
 # New-AzFrontDoorCdnRuleCondition
 
 ## SYNOPSIS
 Membuat kondisi aturan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azfrontdoorcdnrulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,9 +59,9 @@ Accept wildcard characters: False
 ```
 
 ### -MatchValue
-Mencocokkan nilai untuk dicocokkan.
+Mencocokkan nilai untuk dicocokkan dengan.
 Operator akan berlaku untuk setiap nilai di sini dengan semantik OR.
-Jika cocok dengan variabel dengan operator tertentu, kondisi cocok ini dianggap cocok.
+Jika salah satunya cocok dengan variabel dengan operator tertentu, kondisi kecocokan ini dianggap cocok.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -MatchVariable
-Daftar kondisi yang harus cocok dengan tindakan untuk dijalankan.
+Daftar kondisi yang harus dicocokkan agar tindakan dijalankan.
 
 ```yaml
 Type: String
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan jika hasil kondisi ini harus negatif.
+Menjelaskan jika hasil dari kondisi ini harus dinegasikan.
 
 ```yaml
 Type: SwitchParameter
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Menjelaskan operator yang akan cocok.
+Menjelaskan operator yang akan dicocokkan.
 
 ```yaml
 Type: String
@@ -117,7 +120,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pemilih
+### -Selector
 Nama Pemilih yang akan dicocokkan.
 
 ```yaml
@@ -132,9 +135,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Transform
-Ubah untuk diterapkan sebelum mencocokkan.
-Nilai yang mungkin adalah Huruf kecil dan Huruf besar.
+### -Transformasi
+Transformasi untuk diterapkan sebelum mencocokkan.
+Nilai yang memungkinkan adalah Huruf Kecil dan Huruf Besar.
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -149,11 +152,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

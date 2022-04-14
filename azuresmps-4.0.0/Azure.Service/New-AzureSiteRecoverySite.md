@@ -4,16 +4,16 @@ ms.assetid: 43E5EC54-5DF4-4D32-8657-D7039DD04513
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1463d13b26cbd5737e30e318b2006381de1f8a68
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422910"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094295"
 ---
 # New-AzureSiteRecoverySite
 
 ## SYNOPSIS
-Membuat situs Pemulihan Situs.
+Membuat situs Site Recovery.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,11 +24,11 @@ New-AzureSiteRecoverySite -Name <String> [-Vault <ASRVault>] [-Profile <AzureSMP
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureSiteRecoverySite** membuat situs Pemulihan Situs Azure di vault saat ini.
+Cmdlet **AzureSiteRecoverySite Baru** membuat situs Site Recovery Azure di kubah saat ini.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat situs Pemulihan Situs
+### Contoh 1: Membuat situs Site Recovery
 ```
 PS C:\> New-AzureSiteRecoverySite -Name "RecoverySite07"
 ```
@@ -53,8 +53,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -69,8 +69,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan vault untuk membuat situs.
-Untuk mendapatkan objek **ASRVault,** gunakan cmdlet **Get-AzureSiteRecoveryVault.**
+Menentukan kubah untuk membuat situs.
+Untuk mendapatkan objek **ASRVault** , gunakan cmdlet **Get-AzureSiteRecoveryVault** .
 
 ```yaml
 Type: ASRVault
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

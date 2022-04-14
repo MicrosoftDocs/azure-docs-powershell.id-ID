@@ -6,27 +6,30 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azre
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzRemoteDesktopFile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzRemoteDesktopFile.md
-ms.openlocfilehash: 4154bf7d6a508636f52d38472db1657626f0af94
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f6c22da119de2536f2144d8606902d59854ef0e7
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001597"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142072867"
 ---
 # Get-AzRemoteDesktopFile
 
 ## SYNOPSIS
 Mendapatkan file .rdp.
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azremotedesktopfile) untuk informasi terbaru.
+
 ## SYNTAX
 
-### Unduh
+### Download
 ```
 Get-AzRemoteDesktopFile [-ResourceGroupName] <String> [-Name] <String> [-LocalPath] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Luncurkan
+### Peluncuran
 ```
 Get-AzRemoteDesktopFile [-ResourceGroupName] <String> [-Name] <String> [[-LocalPath] <String>] [-Launch]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -42,13 +45,13 @@ Cmdlet **Get-AzRemoteDesktopFile** mendapatkan file Remote Desktop Protocol (.rd
 Get-AzRemoteDesktopFile -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -LocalPath "D:\RemoteDesktopFile07.rdp"
 ```
 
-Perintah ini mendapatkan file Desktop Jarak Jauh untuk mesin virtual bernama VirtualMachine07.
-Perintah menyimpan hasil di file bernama D:\RemoteDesktopFile07.rdp.
+Perintah ini mendapatkan file Desktop Jauh untuk mesin virtual bernama VirtualMachine07.
+Perintah menyimpan hasil dalam file bernama D:\RemoteDesktopFile07.rdp.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,8 +65,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Launch
-Mengindikasikan bahwa cmdlet ini meluncurkan Desktop Jarak Jauh setelah mendapatkan file .rdp.
+### -Luncurkan
+Menunjukkan bahwa cmdlet ini meluncurkan Desktop Jauh setelah mendapatkan file .rdp.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama kumpulan ketersediaan yang akan dapatkan cmdlet ini.
+Menentukan nama kumpulan ketersediaan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

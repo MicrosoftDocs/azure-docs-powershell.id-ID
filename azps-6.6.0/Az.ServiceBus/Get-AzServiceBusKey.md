@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/Get-AzServiceBusKey.md
 ms.openlocfilehash: 847d4da480c0d7defe9de36162219f64ad1a1a88
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140246541"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142041113"
 ---
 # Get-AzServiceBusKey
 
 ## SYNOPSIS
-Mendapatkan string koneksi utama dan sekunder untuk Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) yang diberikan.
+Mendapatkan string koneksi utama dan sekunder untuk Ruang Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.servicebus/get-azservicebuskey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/get-azservicebuskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,13 +28,13 @@ Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Name] 
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### QueueAuthorizationRuleSet
+### AntreanAuthorizationRuleSet
 ```
 Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### TopicAuthorizationRuleSet
+### TopikAuthorizationRuleSet
 ```
 Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -47,7 +47,7 @@ Get-AzServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-AliasN
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzServiceBusKey** mengembalikan string koneksi utama dan sekunder untuk Kumpulan Nama atau Antrean atau Topik atau Alias (Konfigurasi GeoDR) yang diberikan.
+Cmdlet **Get-AzServiceBusKey** mengembalikan string koneksi utama dan sekunder untuk Ruang Nama atau Antrean atau Alias (Konfigurasi GeoDR) tertentu.
 
 ## EXAMPLES
 
@@ -56,28 +56,28 @@ Cmdlet **Get-AzServiceBusKey** mengembalikan string koneksi utama dan sekunder u
 PS C:\> Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1
 ```
 
-String koneksi utama dan sekunder ke ruang nama yang ditentukan.
+String koneksi primer dan sekunder ke ruang nama yang ditentukan.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1
 ```
 
-String koneksi utama dan sekunder ke antrean yang ditentukan.
+String koneksi primer dan sekunder ke antrean yang ditentukan.
 
 ### Contoh 3
 ```
 PS C:\> Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1
 ```
 
-String koneksi utama dan sekunder untuk topik yang ditentukan.
+String koneksi primer dan sekunder ke topik yang ditentukan.
 
 ### Contoh 4
 ```
 PS C:\> Get-AzServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -AliasName SBAlias -Name AuthoRule1
 ```
 
-String koneksi utama dan sekunder ke ruang nama dan alias yang ditentukan.
+String koneksi primer dan sekunder ke ruang nama dan alias yang ditentukan.
 
 ## PARAMETERS
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -171,7 +171,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

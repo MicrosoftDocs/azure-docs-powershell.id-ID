@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/re
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlServiceNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/Remove-AzDataMigrationSqlServiceNode.md
-ms.openlocfilehash: 28a049e443ecb36d0273e6ce2fac958f1613252f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 50ec1676c6c149bccd8a5d793876544d618fbf57
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140386655"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142071409"
 ---
 # Remove-AzDataMigrationSqlServiceNode
 
 ## SYNOPSIS
-Hapus node runtime integrasi.
+Hapus simpul runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/remove-azdatamigrationsqlservicenode) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,11 +36,11 @@ Remove-AzDataMigrationSqlServiceNode -InputObject <IDataMigrationIdentity> [-Int
 ```
 
 ## DESCRIPTION
-Hapus node runtime integrasi.
+Hapus simpul runtime integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Intergration Runtime Node tertentu untuk Layanan Migrasi Sql
+### Contoh 1: Hapus Node Runtime Intergration yang ditentukan untuk Layanan Migrasi Sql
 ```powershell
 PS C:\> Remove-AzDataMigrationSqlServiceNode -ResourceGroupName "MyResourceGroup" -SqlMigrationServiceName "MySqlMigrationService" -NodeName "WIN-AKLAB" | Select *
 
@@ -46,7 +49,7 @@ Name       Node
 default-ir {}
 ```
 
-Perintah ini akan menghapus Intergration Runtime Node tertentu untuk Layanan Migrasi Sql tertentu.
+Perintah ini menghapus Simpul Runtime Intergrasi yang ditentukan untuk Layanan Migrasi Sql yang diberikan.
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataMigration.Models.IDataMigrationIdentity
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,8 +129,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlMigrationServiceName
-Nama layanan SQL migrasi.
+Nama Layanan Migrasi SQL.
 
 ```yaml
 Type: System.String
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -225,10 +228,10 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <IDataMigrationIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[ManagedInstanceName <String>]`: 
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya tersebut. Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
-  - `[SqlMigrationServiceName <String>]`: Nama SQL Migrasi.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya yang berisi sumber daya. Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
+  - `[SqlMigrationServiceName <String>]`: Nama Layanan Migrasi SQL.
   - `[SqlVirtualMachineName <String>]`: 
-  - `[SubscriptionId <String>]`: ID langganan yang mengidentifikasi langganan Azure.
+  - `[SubscriptionId <String>]`: ID Langganan yang mengidentifikasi langganan Azure.
   - `[TargetDbName <String>]`: Nama database target.
 
 ## RELATED LINKS

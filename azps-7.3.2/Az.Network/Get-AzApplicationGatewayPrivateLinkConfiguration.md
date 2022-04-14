@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayPrivateLinkConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationGatewayPrivateLinkConfiguration.md
-ms.openlocfilehash: 46abb4b9e10e47694445afd0139b36ee357ee3cc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 7b1f434dc178d685665eadae613d8c2b6e035ebf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140198167"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109267"
 ---
 # Get-AzApplicationGatewayPrivateLinkConfiguration
 
 ## SYNOPSIS
-Mendapatkan konfigurasi tautan privat dari gateway aplikasi.
+Mendapatkan konfigurasi tautan privat gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationgatewayprivatelinkconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,27 +28,27 @@ Get-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway <PSApplicat
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApplicationGatewayPrivateLinkConfiguration** mendapatkan konfigurasi tautan privat dari gateway aplikasi.
+Cmdlet **Get-AzApplicationGatewayPrivateLinkConfiguration** mendapatkan konfigurasi tautan pribadi gateway aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1 : Mendapatkan konfigurasi tautan privat tertentu
+### Contoh 1 : Dapatkan konfigurasi tautan privat tertentu
 ```powershell
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $PrivateLinkConfiguration = Get-AzApplicationGatewayPrivateLinkConfiguration -Name "privateLinkConfig01" -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan konfigurasi tautan pribadi bernama privateLinkConfig01 dari $AppGw dan menyimpannya dalam $PrivateLinkConfiguration jaringan.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mendapatkan konfigurasi tautan pribadi bernama privateLinkConfig01 dari $AppGw dan menyimpannya dalam variabel $PrivateLinkConfiguration.
 
-### Contoh 2 : Mendapatkan daftar konfigurasi tautan pribadi
+### Contoh 2 : Dapatkan daftar konfigurasi tautan pribadi
 ```powershell
 PS C:\>$AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $PrivateLinkConfigurations = Get-AzApplicationGatewayPrivateLinkConfiguration -ApplicationGateway $AppGw
 ```
 
-Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya yang bernama ResourceGroup01, dan menyimpannya dalam $AppGw sumber daya.
-Perintah kedua mendapatkan semua konfigurasi tautan pribadi dari $AppGw menyimpannya dalam $PrivateLinkConfigurations variabel.
+Perintah pertama mendapatkan gateway aplikasi bernama ApplicationGateway01 dari grup sumber daya bernama ResourceGroup01, dan menyimpannya dalam variabel $AppGw.
+Perintah kedua mendapatkan semua konfigurasi tautan pribadi dari $AppGw dan menyimpannya dalam variabel $PrivateLinkConfigurations.
 
 ## PARAMETERS
 
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

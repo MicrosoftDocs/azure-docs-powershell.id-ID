@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/New-AzureRmAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/New-AzureRmAnalysisServicesServer.md
 ms.openlocfilehash: d8a795cc27a09fe7b23ac2156115d7a52212e3ff
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425935"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144386"
 ---
 # New-AzureRmAnalysisServicesServer
 
@@ -39,12 +39,12 @@ Cmdlet New-AzureRmAnalysisServicesServer membuat server Analysis Services baru
 PS C:\> New-AzureRmAnalysisServicesServer -ResourceGroupName "testresourcegroup" -Name "testserver" -Location "West-US" -Sku "S1"
 ```
 
-Membuat server bernama testserver di kawasan Azure Barat-AS dan dalam grup uji grup sumber daya. Tingkat sku untuk server akan menjadi S1.
+Membuat server bernama testserver di wilayah Azure Barat-AS dan dalam grup sumber daya testresrourcegroup. Tingkat sku untuk server akan menjadi S1.
 
 ## PARAMETERS
 
 ### -Administrator
-String yang mewakili daftar pengguna atau grup yang dipisahkan koma yang akan diatur sebagai administrator di server. Pengguna atau grup harus ditentukan format UPN misalnya user@contoso.com atau groups@contoso.com
+String yang mewakili daftar pengguna atau grup yang dipisahkan koma untuk diatur sebagai administrator di server. Pengguna atau grup perlu ditentukan format UPN misalnya user@contoso.com atau groups@contoso.com
 
 ```yaml
 Type: System.String
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupBlobContainerUri
-Uri wadah blob untuk mencadangkan server Analysis Services
+Wadah blob Uri untuk mencadangkan server Analysis Services
 
 ```yaml
 Type: System.String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultConnectionMode
-Mode koneksi default dari server layanan Analisis
+Mode koneksi default server layanan Analisis
 
 ```yaml
 Type: System.String
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallConfig
-Konfigurasi firewall dari server Analisis
+Konfigurasi firewall server Analisis
 
 ```yaml
 Type: Microsoft.Azure.Commands.AnalysisServices.Models.PsAzureAnalysisServicesFirewallConfig
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayResourceId
-Id sumber daya gateway untuk mengalokasikan ke server Analisis
+Id sumber daya gateway untuk assocaite ke server Analisis
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReadonlyReplicaCount
-Baca hanya replika jumlah server layanan Analisis
+Hanya membaca hitungan replika server layanan Analisis
 
 ```yaml
 Type: System.Int32
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat server dimiliki
+Nama grup sumber daya Azure tempat server berada
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 
 ### -Sku
 Nama Sku untuk server.
-Nilai yang didukung adalah 'S0', 'S1', 'S2', 'S4' untuk tingkatan Standar; 'B1', 'B2' untuk Tingkat dasar dan 'D1' untuk Tingkat pengembangan.
+Nilai yang didukung adalah 'S0', 'S1', 'S2', 'S4' untuk tingkat Standar; 'B1', 'B2' untuk tingkat Dasar dan 'D1' untuk tingkat Pengembangan.
 
 ```yaml
 Type: System.String
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Menjelaskan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
+Menguraikan tindakan yang akan dilakukan operasi saat ini tanpa benar-benar menjalankannya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -279,4 +279,4 @@ Alias: New-AzureAs
 
 [Get-AzureRmAnalysisServicesServer](./Get-AzureRmAnalysisServicesServer.md)
 
-[Remove-AzureRmAnalysisServicesServer](./Remove-AzureRmAnalysisServicesServer.md)
+[Hapus-AzureRmAnalysisServicesServer](./Remove-AzureRmAnalysisServicesServer.md)

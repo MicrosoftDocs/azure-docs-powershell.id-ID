@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLedgerDigestUpload.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseLedgerDigestUpload.md
 ms.openlocfilehash: ab3efb7be1117ebef672431af40abe79e7e9a1ba
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066087"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141859064"
 ---
 # Get-AzSqlDatabaseLedgerDigestUpload
 
 ## SYNOPSIS
-Dapatkan pengaturan unggahan Ledger Digest dari database Azure SQL.
+Mendapatkan pengaturan pengunggahan ledger digest database Azure SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabaseledgerdigestupload) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabaseledgerdigestupload) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzSqlDatabaseLedgerDigestUpload [-ResourceId] <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlDatabaseLedgerDigestUpload mendapatkan pengaturan unggahan ledger digest dari database Azure SQL tertentu.
+Cmdlet Get-AzSqlDatabaseLedgerDigestUpload mendapatkan pengaturan unggahan pencernaan buku besar dari database Azure SQL yang ditentukan.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Cmdlet Get-AzSqlDatabaseLedgerDigestUpload mendapatkan pengaturan unggahan ledge
 PS C:\> Get-AzSqlDatabaseLedgerDigestUpload -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" 
 ```
 
-Titik akhir Status ServerName ServerName ResourceGroupName
+Titik Akhir Status NamaData Database ResourceGroupName ServerName
 ----------------- ---------- ------------ -----   --------
 ResourceGroup01 Server01 Database01 Diaktifkan https://mystorage.blob.core.windows.net 
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database untuk menonaktifkan unggahan ringkasan untuk.
+Objek database untuk menonaktifkan unggahan digest.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya database untuk menonaktifkan unggahan ringkasan.
+Id sumber daya database untuk menonaktifkan unggahan digest.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-SQL server baru.
+SQL nama server.
 
 ```yaml
 Type: System.String
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

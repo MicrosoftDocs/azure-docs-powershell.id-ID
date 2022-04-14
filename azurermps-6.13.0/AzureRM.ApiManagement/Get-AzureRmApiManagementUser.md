@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagementUser.md
 ms.openlocfilehash: 8f02b88115ec6dc415ecf6cf5464503d61778cca
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424237"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144222"
 ---
 # Get-AzureRmApiManagementUser
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa pengguna.
+Mendapatkan pengguna atau pengguna.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,15 +46,15 @@ Cmdlet **Get-AzureRmApiManagementUser** mendapatkan pengguna tertentu, atau semu
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua pengguna
+### Contoh 1: Dapatkan semua pengguna
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementUser -Context $apimContext
 ```
 
-Perintah ini akan memberikan semua pengguna.
+Perintah ini akan mendapatkan semua pengguna.
 
-### Contoh 2: Dapatkan pengguna dengan ID
+### Contoh 2: Mendapatkan pengguna menurut ID
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementUser -Context $apimContext -UserId "0123456789"
@@ -62,13 +62,13 @@ PS C:\>Get-AzureRmApiManagementUser -Context $apimContext -UserId "0123456789"
 
 Perintah ini mendapatkan pengguna menurut ID.
 
-### Contoh: Get users by last name
+### Contoh: Dapatkan pengguna menurut nama belakang
 ```
 PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzureRmApiManagementUser -Context $apimContext -LastName "Fuller"
 ```
 
-Perintah ini akan memberikan pengguna dengan nama belakang yang ditentukan, Lebih Lengkap.
+Perintah ini memberi pengguna yang memiliki nama belakang tertentu, Fuller.
 
 ### Contoh 4: Mendapatkan pengguna berdasarkan alamat email
 ```
@@ -76,7 +76,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Get-AzureRmApiManagementUser -Context $apimContext -Email "user@contoso.com"
 ```
 
-Perintah ini akan mendapatkan pengguna dengan alamat email yang ditentukan.
+Perintah ini mendapatkan pengguna yang memiliki alamat email tertentu.
 
 ### Contoh 5: Mendapatkan semua pengguna dalam grup
 ```
@@ -84,7 +84,7 @@ PS C:\>$apimContext = New-AzureRmApiManagementContext -ResourceGroupName "Api-De
 PS C:\>Get-AzureRmApiManagementUser -Context $apimContext -GroupId "0001"
 ```
 
-Perintah ini membuat semua pengguna berada dalam grup yang ditentukan.
+Perintah ini akan membuat semua pengguna berada dalam grup yang ditentukan.
 
 ## PARAMETERS
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ### -Email
 Menentukan alamat email pengguna.
-Jika parameter ini ditentukan, cmdlet ini menemukan pengguna melalui email.
+Jika parameter ini ditentukan, cmdlet ini akan menemukan pengguna melalui email.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 
 ### -FirstName
 Menentukan nama depan pengguna.
-Jika parameter ini ditentukan, cmdlet ini menemukan pengguna dengan nama depan.
+Jika parameter ini ditentukan, cmdlet ini akan menemukan pengguna berdasarkan nama depan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -GroupId
 Menentukan pengidentifikasi grup.
-Jika ditentukan, cmdlet ini menemukan semua pengguna di dalam grup yang ditentukan.
+Jika ditentukan, cmdlet ini akan menemukan semua pengguna dalam grup yang ditentukan.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 
 ### -LastName
 Menentukan nama belakang pengguna.
-Jika ditentukan, cmdlet ini menemukan pengguna menurut nama belakang.
+Jika ditentukan, cmdlet ini akan menemukan pengguna menurut nama belakang.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 
 ### -Negara Bagian
 Menentukan status pengguna.
-Jika ditentukan, cmdlet ini menemukan pengguna dalam status ini.
+Jika ditentukan, cmdlet ini akan menemukan pengguna dalam status ini.
 Parameter ini bersifat opsional.
 
 ```yaml
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -240,7 +240,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmApiManagementUser](./New-AzureRmApiManagementUser.md)
+[AzureRmApiManagementUser baru](./New-AzureRmApiManagementUser.md)
 
 [Remove-AzureRmApiManagementUser](./Remove-AzureRmApiManagementUser.md)
 

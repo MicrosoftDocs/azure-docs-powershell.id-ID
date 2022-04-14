@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageServiceMetricsProperty.md
 ms.openlocfilehash: c277b28e3955e2f27342766e30bd8c4c7169904d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140500017"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142039805"
 ---
 # Get-AzStorageServiceMetricsProperty
 
 ## SYNOPSIS
-Mendapatkan properti metrik untuk layanan Azure Storage ini.
+Mendapatkan properti metrik untuk layanan Azure Storage.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstorageservicemetricsproperty) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstorageservicemetricsproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzStorageServiceMetricsProperty [-ServiceType] <StorageServiceType> [-Metric
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageServiceMetricsProperty** mendapatkan properti metrik untuk Azure Storage ini.
+Cmdlet **Get-AzStorageServiceMetricsProperty** mendapatkan properti metrik untuk layanan Azure Storage.
 
 ## EXAMPLES
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 
 ### -MetricsType
 Menentukan tipe metrik.
-Cmdlet ini mendapatkan Azure Storage metrik layanan untuk tipe metrik yang ditentukan parameter ini.
+Cmdlet ini mendapatkan properti metrik layanan Azure Storage untuk tipe metrik yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Jam dan Menit.
 
 ```yaml
@@ -95,9 +95,9 @@ Accept wildcard characters: False
 Menentukan tipe layanan penyimpanan.
 Cmdlet ini mendapatkan properti metrik untuk tipe yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

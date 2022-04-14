@@ -4,11 +4,11 @@ ms.assetid: 5AB916CB-A141-4662-8220-6C1FBB58FC69
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 1c29a3f8da13fc27916347aad621400d1ac00d8f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421121"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093635"
 ---
 # Remove-AzureStorSimpleDeviceBackupPolicy
 
@@ -19,22 +19,22 @@ Menghapus kebijakan cadangan yang sudah ada.
 
 ## SYNTAX
 
-### IdentifyById (Default)
+### IdentifiById (Default)
 ```
 Remove-AzureStorSimpleDeviceBackupPolicy -DeviceName <String> -BackupPolicyId <String> [-Force]
  [-WaitForComplete] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
-### IdentifyByObject
+### IdentifikasiByObject
 ```
 Remove-AzureStorSimpleDeviceBackupPolicy -DeviceName <String> -BackupPolicy <BackupPolicyDetails> [-Force]
  [-WaitForComplete] [-Profile <AzureSMProfile>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureStorSimpleDeviceBackupPolicy** menghapus objek **BackupPolicy yang sudah** ada.
-Setelah Anda menghapus kebijakan pencadangan, tidak ada pencadangan lebih lanjut yang terjadi berdasarkan kebijakan itu.
-Cmdlet ini juga menghapus semua jadwal terkait dengan kebijakan yang dihapus.
+Cmdlet **Remove-AzureStorSimpleDeviceBackupPolicy** menghapus objek **BackupPolicy** yang sudah ada.
+Setelah Anda menghapus kebijakan cadangan, tidak ada pencadangan lebih lanjut yang dilakukan berdasarkan kebijakan tersebut.
+Cmdlet ini juga menghapus semua jadwal yang terkait dengan kebijakan yang dihapus.
 
 ## EXAMPLES
 
@@ -50,12 +50,12 @@ VERBOSE: The remove task is submitted successfully. Please use the command Get-A
 695be190-ac81-4cf2-b1c5-03ef6b08d005 for tracking the task's status
 ```
 
-Perintah ini menghapus **BackupPolicy** yang mempunyai instans ID 03710b4c-82c1-40ca-be5c-40289dc49642, sehingga tidak ada lagi pencadangan yang dibuat berdasarkan kebijakan ini.
-Perintah tersebut juga menghapus semua jadwal yang terkait dengan kebijakan ini.
-Perintah ini memulai operasi yang menghapus objek **BackupPolicy,** lalu mengembalikan objek **TaskResponse.**
-Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask.**
+Perintah ini menghapus **BackupPolicy** yang memiliki ID instans 03710b4c-82c1-40ca-be5c-40289dc49642, sehingga tidak ada lagi cadangan yang dibuat berdasarkan kebijakan ini.
+Perintah ini juga menghapus semua jadwal yang terkait dengan kebijakan ini.
+Perintah memulai operasi yang menghapus objek **BackupPolicy** , lalu mengembalikan objek **TaskResponse** .
+Untuk melihat status tugas, gunakan cmdlet **Get-AzureStorSimpleTask** .
 
-### Contoh 2: Menghapus kebijakan pencadangan pertama untuk perangkat
+### Contoh 2: Menghapus kebijakan cadangan pertama untuk perangkat
 ```
 PS C:\>$Policies = Get-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm"
 PS C:\> Remove-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm" -BackupPolicyId $Policies[0].InstanceId -Force -WaitForComplete
@@ -76,13 +76,13 @@ JobSteps     : {Microsoft.WindowsAzure.Management.StorSimple.Models.TaskStep,
 VERBOSE: The job created for your remove operation has completed successfully.
 ```
 
-Perintah pertama mendapatkan kebijakan pencadangan untuk perangkat bernama Contoso63-AppVm, lalu menyimpannya dalam $Policies baru.
+Perintah pertama mendapatkan kebijakan cadangan untuk perangkat bernama Contoso63-AppVm, lalu menyimpannya dalam variabel $Policies.
 
 Perintah kedua menghapus kebijakan cadangan pertama dari Contoso63-AppVm.
-Perintah menggunakan sintaks titik standar untuk mengidentifikasi **properti InstanceId** dari item pertama dalam $Policies.
-Perintah ini menentukan parameter *WaitForComplete,* sehingga perintah menyelesaikan tugas, lalu mengembalikan objek **TaskStatusInfo** untuk tugas tersebut.
+Perintah menggunakan sintaks titik standar untuk mengidentifikasi properti **InstanceId** item pertama dalam $Policies.
+Perintah ini menentukan parameter *WaitForComplete* , sehingga perintah menyelesaikan tugas, lalu mengembalikan objek **TaskStatusInfo** untuk tugas tersebut.
 
-### Contoh 3: Hapus kebijakan pencadangan dengan menggunakan saluran
+### Contoh 3: Menghapus kebijakan cadangan dengan menggunakan pipeline
 ```
 PS C:\>Get-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm" -BackupPolicyName "TSQAVolume01_Default" | Remove-AzureStorSimpleDeviceBackupPolicy -DeviceName "Contoso63-AppVm" -Force -WaitForComplete
 VERBOSE: ClientRequestId: 60080fb1-2f88-4c17-bfd7-21aa73440a9c_PS
@@ -98,14 +98,14 @@ VERBOSE: The remove task is submitted successfully. Please use the command Get-A
 VERBOSE: BackupPolicy with id bfe0bf8a-2d09-4690-93da-38a4f24e9f4f found!
 ```
 
-Perintah ini mendapatkan objek **BackupPolicyDetails** menggunakan **Get-AzureStorSimpleDeviceBackupPolicy**, lalu meneruskannya ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menghapus kebijakan pencadangan yang bernama TSQAVolume01_Default.
+Perintah ini mendapatkan objek **BackupPolicyDetails** menggunakan **Get-AzureStorSimpleDeviceBackupPolicy**, lalu mengirimkannya ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini menghapus kebijakan cadangan bernama TSQAVolume01_Default.
 
 ## PARAMETERS
 
 ### -BackupPolicy
-Menentukan objek **BackupPolicyDetails** yang akan dihapus.
-Untuk mendapatkan objek **BackupPolicyDetails,** gunakan cmdlet **Get-AzureStorSimpleDeviceBackupPolicy.**
+Menentukan objek **BackupPolicyDetails** untuk dihapus.
+Untuk mendapatkan objek **BackupPolicyDetails** , gunakan cmdlet **Get-AzureStorSimpleDeviceBackupPolicy** .
 
 ```yaml
 Type: BackupPolicyDetails
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackupPolicyId
-Menentukan ID contoh objek **BackupPolicy** yang akan dihapus.
+Menentukan ID instans objek **BackupPolicy** untuk dihapus.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-Tentukan nama perangkat StorSimple yang akan dihapus kebijakan pencadangannya.
+Menentukan nama perangkat StorSimple untuk menghapus kebijakan cadangan.
 
 ```yaml
 Type: String
@@ -149,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Mengindikasikan bahwa cmdlet ini tidak meminta konfirmasi Anda.
+### -Paksa
+Menunjukkan bahwa cmdlet ini tidak meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -WaitForComplete
-Menunjukkan bahwa cmdlet ini menunggu hingga operasi selesai sebelum mengembalikan kontrol ke Windows PowerShell konsol.
+Menunjukkan bahwa cmdlet ini menunggu operasi selesai sebelum mengembalikan kontrol ke konsol Windows PowerShell.
 
 ```yaml
 Type: SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -205,8 +205,8 @@ Cmdlet ini menerima objek **BackupPolicyDetails** untuk dihapus.
 ## OUTPUTS
 
 ### TaskStatusInfo, TaskResponse
-Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete.*
-Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek TaskResponse.**
+Cmdlet ini mengembalikan objek **TaskStatusInfo** jika Anda menentukan parameter *WaitForComplete* .
+Jika Anda tidak menentukan parameter tersebut, maka akan mengembalikan objek **TaskResponse** .
 
 ## CATATAN
 
@@ -214,7 +214,7 @@ Jika Anda tidak menentukan parameter itu, parameter itu mengembalikan **objek Ta
 
 [Get-AzureStorSimpleDeviceBackupPolicy](./Get-AzureStorSimpleDeviceBackupPolicy.md)
 
-[New-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
+[Baru-AzureStorSimpleDeviceBackupPolicy](./New-AzureStorSimpleDeviceBackupPolicy.md)
 
 [Set-AzureStorSimpleDeviceBackupPolicy](./Set-AzureStorSimpleDeviceBackupPolicy.md)
 

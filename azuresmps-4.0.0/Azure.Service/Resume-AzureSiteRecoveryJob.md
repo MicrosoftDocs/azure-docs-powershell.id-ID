@@ -4,16 +4,16 @@ ms.assetid: E214AFEB-90A6-4553-94D4-FBEA6ADE572E
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9f63fc340de3cfec3adc5ac52d7e7bc775d17dea
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422459"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142093430"
 ---
 # Resume-AzureSiteRecoveryJob
 
 ## SYNOPSIS
-Melanjutkan pekerjaan Pemulihan Situs yang ditangguhkan.
+Melanjutkan pekerjaan Site Recovery yang ditangguhkan.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -30,11 +30,11 @@ Resume-AzureSiteRecoveryJob -Id <String> [-Comments <String>] [-Profile <AzureSM
 ```
 
 ## DESCRIPTION
-Cmdlet **Resume-AzureSiteRecoveryJob** menghentikan pekerjaan Pemulihan Situs Azure.
+Cmdlet **Resume-AzureSiteRecoveryJob** melanjutkan pekerjaan Azure Site Recovery yang ditangguhkan.
 
 ## EXAMPLES
 
-### Contoh 1: Melanjutkan semua pekerjaan
+### Contoh 1: Lanjutkan semua pekerjaan
 ```
 PS C:\> $Jobs = Get-AzureSiteRecoveryJob  
 PS C:\> Resume-AzureSiteRecoveryJob -Job $Jobs
@@ -51,7 +51,7 @@ Tasks            : {Recovery plan preflight checks, Create test environment, All
 Errors           : {}
 ```
 
-Perintah pertama mendapatkan semua pekerjaan Pemulihan Situs Azure untuk vault Pemulihan Situs saat ini menggunakan cmdlet **Get-AzureSiteRecoveryJob,** lalu menyimpan hasilnya dalam $Jobs baru.
+Perintah pertama mendapatkan semua pekerjaan Azure Site Recovery untuk kubah Site Recovery saat ini menggunakan cmdlet **Get-AzureSiteRecoveryJob**, lalu menyimpan hasilnya dalam variabel $Jobs.
 
 Perintah kedua melanjutkan pekerjaan yang ditentukan oleh $Jobs.
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID pekerjaan untuk dilanjutkan.
+Menentukan ID pekerjaan yang akan dilanjutkan.
 
 ```yaml
 Type: String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan untuk dilanjutkan.
+Menentukan tugas yang akan dilanjutkan.
 
 ```yaml
 Type: ASRJob
@@ -103,8 +103,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,7 +131,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureSiteRecoveryJob](./Get-AzureSiteRecoveryJob.md)
 
-[Mulai Ulang-AzureSiteRecoveryJob](./Restart-AzureSiteRecoveryJob.md)
+[Mulai ulang-AzureSiteRecoveryJob](./Restart-AzureSiteRecoveryJob.md)
 
 [Stop-AzureSiteRecoveryJob](./Stop-AzureSiteRecoveryJob.md)
 

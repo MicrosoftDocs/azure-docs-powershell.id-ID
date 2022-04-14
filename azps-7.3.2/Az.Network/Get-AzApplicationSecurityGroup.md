@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationSecurityGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzApplicationSecurityGroup.md
-ms.openlocfilehash: 662771be59ac90b85683de4f68b6c3b5097dfc17
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b2cbc6286c43d65385644b603d0f3d74310c5c24
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007944"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109285"
 ---
 # Get-AzApplicationSecurityGroup
 
 ## SYNOPSIS
 Mendapatkan grup keamanan aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azapplicationsecuritygroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +32,7 @@ Cmdlet **Get-AzApplicationSecurityGroup** mendapatkan grup keamanan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Ambil semua grup keamanan aplikasi.
+### Contoh 1: Mengambil semua grup keamanan aplikasi.
 ```
 PS C:\> Get-AzApplicationSecurityGroup
 
@@ -60,7 +63,7 @@ Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resource
 
 Perintah di atas mengembalikan semua grup keamanan aplikasi dalam langganan.
 
-### Contoh 2: Ambil grup keamanan aplikasi dalam grup sumber daya.
+### Contoh 2: Mengambil grup keamanan aplikasi dalam grup sumber daya.
 ```
 PS C:\> Get-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup
 
@@ -91,7 +94,7 @@ Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resource
 
 Perintah di atas mengembalikan semua grup keamanan aplikasi yang termasuk dalam grup sumber daya MyResourceGroup.
 
-### Contoh 3: Ambil grup keamanan aplikasi tertentu.
+### Contoh 3: Mengambil grup keamanan aplikasi tertentu.
 ```
 PS C:\> Get-AzApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name MyApplicationSecurityGroup1
 
@@ -110,7 +113,7 @@ Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resource
 
 Perintah di atas mengembalikan grup keamanan aplikasi MyApplicationSecurityGroup di bawah grup sumber daya MyResourceGroup.
 
-### Contoh 4: Ambil grup keamanan aplikasi menggunakan pemfilteran.
+### Contoh 4: Mengambil grup keamanan aplikasi menggunakan pemfilteran.
 ```
 PS C:\> Get-AzApplicationSecurityGroup -Name MyApplicationSecurityGroup*
 
@@ -144,7 +147,7 @@ Perintah di atas mengembalikan semua grup keamanan aplikasi yang dimulai dengan 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -189,7 +192,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

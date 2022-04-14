@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.marketplace/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreOffer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Marketplace/Marketplace/help/Get-AzMarketplacePrivateStoreOffer.md
-ms.openlocfilehash: 2dcabdc1ddb3f8b9f750070a06e28b5f85956892
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 07774d0a82869097bab65654b25f34900474347a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393411"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141892376"
 ---
 # Get-AzMarketplacePrivateStoreOffer
 
 ## SYNOPSIS
 Dapatkan satu atau beberapa penawaran bursa pribadi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.marketplace/get-azmarketplaceprivatestoreoffer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzMarketplacePrivateStoreOffer -PrivateStoreId <String> [-OfferId <String>]
 ```
 
 ## DESCRIPTION
-Dapatkan satu atau beberapa penawaran bursa pribadi dengan paket publik + privat yang ditambahkan di bawah lingkup penyewa. Jika id langganan ada, dapatkan satu atau beberapa penawaran bursa pribadi dengan paket pribadi saja di bawah lingkup langganan
+Dapatkan satu atau beberapa penawaran bursa pribadi dengan paket publik + pribadi yang ditambahkan di bawah lingkup penyewa. Jika id langganan ada, dapatkan satu atau beberapa penawaran bursa pribadi dengan paket pribadi hanya dalam lingkup langganan
 ## EXAMPLES
 
 ### Contoh 1
@@ -59,7 +62,7 @@ Name                      : publisherid1.offerid1
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi + publik yang ditambahkan di bawah cakupan penyewa.
+Dapatkan penawaran bursa pribadi dengan paket pribadi + publik yang ditambahkan di bawah lingkup penyewa.
 
 ### Contoh 2
 ```powershell
@@ -92,7 +95,7 @@ Name                      : publisherid1.offerid1
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi saja yang ditambahkan di bawah cakupan langganan.
+Dapatkan penawaran bursa pribadi dengan paket pribadi saja yang ditambahkan dalam lingkup langganan.
 
 ### Contoh 3
 ```powershell
@@ -113,7 +116,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket privat + publik yang telah ditambahkan di bawah cakupan penyewa.
+Dapatkan penawaran bursa pribadi dengan paket pribadi + publik yang telah ditambahkan di bawah lingkup penyewa.
 
 ### Contoh 4
 ```powershell
@@ -134,7 +137,7 @@ Name                      : publisherid.offerid
 Type                      : Microsoft.Marketplace/privateStores/offers
 ```
 
-Dapatkan penawaran bursa pribadi dengan paket pribadi saja yang telah ditambahkan di bawah cakupan penyewa.
+Dapatkan penawaran bursa pribadi dengan paket pribadi saja yang telah ditambahkan di bawah lingkup penyewa.
 
 
 ## PARAMETERS
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfferId
-Penawaran Azure Marketplace privateStore diperlukan
+Penawaran privateStore Marketplace Azure yang diperlukan
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateStoreId
-Penawaran Azure Marketplace privateStore yang diperlukan
+Penawaran privateStore Marketplace Azure yang diperlukan
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id langganan Azure Marketplace
+id langganan Marketplace Azure
 
 ```yaml
 Type: System.String
@@ -200,11 +203,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
