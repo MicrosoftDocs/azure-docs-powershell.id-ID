@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Set-AzureRmTrafficManagerEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/TrafficManager/Commands.TrafficManager2/help/Set-AzureRmTrafficManagerEndpoint.md
 ms.openlocfilehash: a6a5b9ed5dbf1faa4a2be345039e53bb3daae291
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427546"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142246863"
 ---
 # Set-AzureRmTrafficManagerEndpoint
 
 ## SYNOPSIS
-Memperbarui titik Traffic Manager akhir.
+Memperbarui titik akhir Traffic Manager.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Set-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoin
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmTrafficManagerEndpoint** memperbarui titik akhir di Azure Traffic Manager.
+Cmdlet **Set-AzureRmTrafficManagerEndpoint** memperbarui titik akhir dalam Azure Traffic Manager.
 Cmdlet ini memperbarui pengaturan dari objek titik akhir lokal.
-Anda bisa menentukan objek titik akhir baik dengan menggunakan parameter *TrafficManagerEndpoint* atau dengan menggunakan saluran.
+Anda bisa menentukan objek titik akhir baik dengan menggunakan parameter *TrafficManagerEndpoint* atau dengan menggunakan pipeline.
 
-Anda dapat memperoleh objek lokal yang mewakili titik akhir menggunakan cmdlet Get-AzureRmTrafficManagerEndpoint.
+Anda bisa mendapatkan objek lokal yang mewakili titik akhir dengan menggunakan cmdlet Get-AzureRmTrafficManagerEndpoint.
 Ubah objek secara lokal lalu gunakan **Set-AzureRmTrafficManagerEndpoint** untuk melakukan perubahan Anda.
 
 ## EXAMPLES
@@ -44,18 +44,18 @@ PS C:\> $TrafficManagerEndpoint.Weight = 20
 PS C:\> Set-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint $TrafficManagerEndpoint
 ```
 
-Perintah pertama mendapatkan titik akhir Azure Traffic Manager dengan menggunakan cmdlet **Get-AzureRmTrafficManagerEndpoint.**
-Perintah menyimpan titik akhir secara lokal dalam $TrafficManagerEndpoint baru.
+Perintah pertama mendapatkan titik akhir Azure Traffic Manager menggunakan cmdlet **Get-AzureRmTrafficManagerEndpoint**.
+Perintah menyimpan titik akhir secara lokal dalam variabel $TrafficManagerEndpoint.
 
-Perintah kedua akan mengubah titik akhir secara lokal.
-Perintah ini mengubah bobot titik akhir menjadi 20.
+Perintah kedua mengubah titik akhir secara lokal.
+Perintah ini mengubah berat titik akhir menjadi 20.
 
-Perintah ketiga memperbarui titik akhir pada Traffic Manager sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
+Perintah ketiga memperbarui titik akhir di Traffic Manager agar sesuai dengan nilai lokal dalam $TrafficManagerEndpoint.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,17 +86,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
-Cmdlet ini menerima objek **TrafficManagerEndpoint.**
+Cmdlet ini menerima objek **TrafficManagerEndpoint** .
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.TrafficManagerEndpoint
-Cmdlet ini mengembalikan objek **TrafficManagerEndpoint.**
+Cmdlet ini mengembalikan objek **TrafficManagerEndpoint** .
 
 ## CATATAN
 

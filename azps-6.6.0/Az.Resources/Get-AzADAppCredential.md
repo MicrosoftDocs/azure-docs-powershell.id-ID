@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADAppCredential.md
 ms.openlocfilehash: 720085c9765da2b550bdd4d5236c4efacaa6d63d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140182330"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042913"
 ---
 # Get-AzADAppCredential
 
@@ -21,7 +21,7 @@ Mengambil daftar kredensial yang terkait dengan aplikasi.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azadappcredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadappcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,12 +47,12 @@ Get-AzADAppCredential -ApplicationObject <PSADApplication> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzADAppCredential baru dapat digunakan untuk mengambil daftar kredensial yang terkait dengan aplikasi.
+Cmdlet Get-AzADAppCredential dapat digunakan untuk mengambil daftar kredensial yang terkait dengan aplikasi.
 Perintah ini akan mengambil semua properti kredensial (tetapi bukan nilai kredensial) yang terkait dengan aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kredensial aplikasi dengan id objek
+### Contoh 1: Dapatkan kredensial aplikasi menurut id objek
 
 ```powershell
 PS C:\> Get-AzADAppCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476
@@ -60,13 +60,13 @@ PS C:\> Get-AzADAppCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476
 
 Mengembalikan daftar kredensial yang terkait dengan aplikasi yang memiliki id objek '1f99cf81-0146-4f4e-beae-2007d0668476'.
 
-### Contoh 2: Dapatkan kredensial aplikasi dengan pemipaan
+### Contoh 2: Dapatkan kredensial aplikasi dengan piping
 
 ```powershell
 PS C:\> Get-AzADApplication -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476 | Get-AzADAppCredential
 ```
 
-Dapatkan aplikasi dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan  pipes ke cmdlet Get-AzADAppCredential untuk mencantumkan semua kredensial untuk aplikasi tersebut.
+Mendapatkan aplikasi dengan id objek '1f99cf81-0146-4f4e-beae-2007d0668476' dan menyalurkannya ke cmdlet Get-AzADAppCredential untuk mencantumkan semua kredensial untuk aplikasi itu.
 
 ## PARAMETERS
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek aplikasi untuk mengambil kredensial.
+Id objek aplikasi untuk mengambil kredensial dari.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -154,11 +154,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDCredential
+### Microsoft.Azure.Commands.ActiveDirectory.PSADCredential
 
 ## CATATAN
 
@@ -168,5 +168,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzADAppCredential](./Remove-AzADAppCredential.md)
 
-[Get-AzADApplication](./Get-AzADApplication.md)
+[Get-AzADAplikasi](./Get-AzADApplication.md)
 

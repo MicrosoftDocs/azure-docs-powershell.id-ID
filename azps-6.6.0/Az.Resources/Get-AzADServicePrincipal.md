@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADServicePrincipal.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzADServicePrincipal.md
 ms.openlocfilehash: 927c1aa99e8873a3c545678b3cf8922f5b257c98
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140380135"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042931"
 ---
 # Get-AzADServicePrincipal
 
@@ -21,7 +21,7 @@ Memfilter prinsipal layanan direktori aktif.
 [!INCLUDE [msgraph-migration-banner](../../includes/msgraph-migration-banner.md)]
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azadserviceprincipal) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azadserviceprincipal) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -80,7 +80,7 @@ PS C:\> Get-AzADServicePrincipal
 
 Mencantumkan semua prinsipal layanan AD dalam penyewa.
 
-### Contoh 2:  List AD service principals using paging
+### Contoh 2: Daftar prinsipal layanan AD menggunakan paging
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -First 100
@@ -88,7 +88,7 @@ PS C:\> Get-AzADServicePrincipal -First 100
 
 Mencantumkan 100 prinsipal layanan AD pertama dalam penyewa.
 
-### Contoh 3: List service principals by SPN
+### Contoh 3: Daftar prinsipal layanan menurut SPN
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -ServicePrincipalName 36f81fc3-b00f-48cd-8218-3879f51ff39f
@@ -96,7 +96,7 @@ PS C:\> Get-AzADServicePrincipal -ServicePrincipalName 36f81fc3-b00f-48cd-8218-3
 
 Mencantumkan prinsipal layanan dengan SPN '36f81fc3-b00f-48cd-8218-3879f51ff39f'.
 
-### Contoh 4: List service principals by search string
+### Contoh 4: Daftar prinsipal layanan menurut string pencarian
 
 ```powershell
 PS C:\> Get-AzADServicePrincipal -SearchString "Web"
@@ -104,13 +104,13 @@ PS C:\> Get-AzADServicePrincipal -SearchString "Web"
 
 Mencantumkan semua prinsipal layanan AD yang nama tampilannya dimulai dengan "Web".
 
-### Contoh 5:  List service principals by piping
+### Contoh 5: Daftar prinsipal layanan menurut piping
 
 ```powershell
 PS C:\> Get-AzADApplication -ObjectId 39e64ec6-569b-4030-8e1c-c3c519a05d69 | Get-AzADServicePrincipal
 ```
 
-Dapatkan aplikasi AD dengan object id '39e64ec6-569b-4030-8e1c-c3c519a05d69' dan  pipes ke cmdlet Get-AzADServicePrincipal untuk mencantumkan semua prinsipal layanan untuk aplikasi tersebut.
+Mendapatkan aplikasi AD dengan id objek '39e64ec6-569b-4030-8e1c-c3c519a05d69' dan menyalurkannya ke cmdlet Get-AzADServicePrincipal untuk mencantumkan semua prinsipal layanan untuk aplikasi tersebut.
 
 ## PARAMETERS
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan prinsipal layanan.
+Nama tampilan utama layanan.
 
 ```yaml
 Type: System.String
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Id objek prinsipal layanan.
+Id objek dari prinsipal layanan.
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data. Saat ini, parameter ini tidak melakukan apa-apa.
+Melaporkan jumlah objek dalam kumpulan data. Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek N pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek N pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -249,8 +249,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
-Jumlah maksimum objek untuk dikembalikan.
+### -Pertama
+Jumlah maksimum objek yang akan dikembalikan.
 
 ```yaml
 Type: System.UInt64
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -273,11 +273,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### Microsoft.Azure.Commands.ActiveDirectory.FOLDApplication
+### Microsoft.Azure.Commands.ActiveDirectory.PSADAplikasi
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.ActiveDirectory.LINUXDServicePrincipal
+### Microsoft.Azure.Commands.ActiveDirectory.PSADServicePrincipal
 
 ## CATATAN
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzADServicePrincipal](./Remove-AzADServicePrincipal.md)
 
-[Get-AzADApplication](./Get-AzADApplication.md)
+[Get-AzADAplikasi](./Get-AzADApplication.md)
 
 [Get-AzADSpCredential](./Get-AzADSpCredential.md)
 
