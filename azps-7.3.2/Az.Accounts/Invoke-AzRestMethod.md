@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.accounts/invoke-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Accounts/Accounts/help/Invoke-AzRestMethod.md
-ms.openlocfilehash: ed649d76bb9d3157503af6f584c07cdc4fdaf8b6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e9bdf7724022072f922c586a44b1385d00dd4610
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140002254"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142219663"
 ---
 # Invoke-AzRestMethod
 
 ## SYNOPSIS
-Membangun dan menjalankan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
+Membuat dan melakukan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.accounts/invoke-azrestmethod) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Invoke-AzRestMethod -Path <String> [-Method <String>] [-Payload <String>] [-AsJo
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ByParameters
+### OlehParameters
 ```
 Invoke-AzRestMethod [-SubscriptionId <String>] [-ResourceGroupName <String>] [-ResourceProviderName <String>]
  [-ResourceType <String[]>] [-Name <String[]>] -ApiVersion <String> [-Method <String>] [-Payload <String>]
@@ -39,7 +42,7 @@ Invoke-AzRestMethod [-Uri] <Uri> [-ResourceId <Uri>] [-Method <String>] [-Payloa
 ```
 
 ## DESCRIPTION
-Membangun dan menjalankan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
+Membuat dan melakukan permintaan HTTP hanya ke titik akhir manajemen sumber daya Azure
 
 ## EXAMPLES
 
@@ -88,7 +91,7 @@ Content    : {
              }
 ```
 
-Dapatkan ruang kerja analitik log menurut jalur. Fungsi ini hanya mendukung API bidang manajemen dan Nama Host Manajer Sumber Daya Azure ditambahkan menurut pengaturan lingkungan Azure.  
+Dapatkan ruang kerja analitik log menurut jalur. Ini hanya mendukung API bidang manajemen dan Hostname Azure Resource Manager ditambahkan sesuai dengan pengaturan lingkungan Azure.  
 
 ### Contoh 2
 ```powershell
@@ -103,7 +106,7 @@ Method     : GET
 Content    : {"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users/$entity","businessPhones":["......}
 ```
 
-Dapatkan pengguna yang masuk saat ini melalui API MicrosoftGraph. Contoh ini sama dengan `Get-AzADUser -SignedIn`.
+Dapatkan pengguna masuk saat ini melalui API MicrosoftGraph. Contoh ini setara `Get-AzADUser -SignedIn`dengan .
 
 ## PARAMETERS
 
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,8 +186,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur URL sumber daya target. Nama host Manajer Sumber Daya tidak boleh ditambahkan.
+### -Jalur
+Jalur URL sumber daya target. Nama host Resource Manager tidak boleh ditambahkan.
 
 ```yaml
 Type: System.String
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Payload
-Payload format JSON
+Muatan format JSON
 
 ```yaml
 Type: System.String
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi URI yang ditentukan oleh API REST yang Anda panggil. Id sumber daya tidak boleh digunakan dari Azure Resource Manager.
+URI Pengidentifikasi ditentukan oleh REST API yang Anda panggil. Ini seharusnya bukan id sumber daya Azure Resource Manager.
 
 ```yaml
 Type: System.Uri
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-ID Langganan Target
+Id Langganan Target
 
 ```yaml
 Type: System.String
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-Uniform Resource Identifier of the Azure resources. Sumber daya target perlu mendukung autentikasi Azure AD dan token akses berasal berdasarkan id sumber daya. Jika id sumber daya tidak ditetapkan, nilainya didapat menurut akhiran layanan bawaan di Azure Environment saat ini.
+Pengidentifikasi Sumber Daya Seragam sumber daya Azure. Sumber daya target perlu mendukung autentikasi Azure AD dan token akses berasal sesuai dengan id sumber daya. Jika id sumber daya tidak diatur, nilainya berasal menurut akhiran layanan bawaan di Lingkungan Azure saat ini.
 
 ```yaml
 Type: System.Uri
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -320,7 +323,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

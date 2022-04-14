@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cdn/test-azcdncu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Test-AzCdnCustomDomain.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/Test-AzCdnCustomDomain.md
-ms.openlocfilehash: ac3b64a8d179325eb2328aa2fa2a6107f5b09f70
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 63b8d858f1182a13550176aabd4598a2049528bb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140202343"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142218619"
 ---
 # Test-AzCdnCustomDomain
 
 ## SYNOPSIS
-Memeriksa apakah domain kustom dapat ditambahkan ke titik akhir.
+Memeriksa apakah domain kustom bisa ditambahkan ke titik akhir.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/test-azcdncustomdomain) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ Test-AzCdnCustomDomain -CdnEndpoint <PSEndpoint> -CustomDomainHostName <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzCdnCustomDomain** memeriksa apakah domain kustom dapat ditambahkan ke titik akhir dengan memvalidasi pemetaan CName.
+**Cmdlet Test-AzCdnCustomDomain** memeriksa apakah domain kustom dapat ditambahkan ke titik akhir dengan memvalidasi pemetaan CName.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ CustomDomainValidated Reason Message
 ## PARAMETERS
 
 ### -CdnEndpoint
-Menentukan titik akhir yang ingin Anda tambahi domain kustom.
+Menentukan titik akhir tempat Anda ingin menambahkan domain kustom.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSEndpoint
@@ -81,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndpointName
-Menentukan nama titik akhir yang ingin Anda tambahi domain kustom.
+Menentukan nama titik akhir tempat Anda ingin menambahkan domain kustom.
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

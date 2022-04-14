@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.applicationinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApplicationInsights/ApplicationInsights/help/Update-AzApplicationInsightsWebTestTag.md
-ms.openlocfilehash: dd4a7f49b9a97a52901c844f8e36202b91b9c189
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ef24aaf2c989c6a2ba05dbccbaf0e00a291a9dbd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142219519"
 ---
 # Update-AzApplicationInsightsWebTestTag
 
 ## SYNOPSIS
-Membuat atau memperbarui definisi Insights uji web Application.
+Membuat atau memperbarui definisi uji web Insights Aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.applicationinsights/update-azapplicationinsightswebtesttag) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Update-AzApplicationInsightsWebTestTag -InputObject <IApplicationInsightsIdentit
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui definisi Insights uji web Application.
+Membuat atau memperbarui definisi uji web Insights Aplikasi.
 
 ## EXAMPLES
 
-### Contoh 1: Memperbarui Insights tautan pengujian Web
+### Contoh 1: Tautan Insights Aplikasi Pembaruan dari uji Web
 ```powershell
 Update-AzApplicationInsightsWebTestTag -ResourceGroupName azpwsh-rg-test -Name webtest01-lucasappinsights -Tag @{"hidden-link:/subscriptions/xxxxxxxxxx-xxxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azpwsh-rg-test/providers/microsoft.insights/components/lucasappinsights" = "Resource"}
 ```
@@ -46,9 +49,9 @@ Location Name                       WebTestKind   ResourceGroupName   Enabled
 westus2  webtest01-lucasappinsights standard      azpwsh-rg-test      True
 ```
 
-Perintah ini memperbarui Insights aplikasi dari uji Web.
+Perintah ini memperbarui tautan Aplikasi Insights uji Web.
 
-### Contoh 2: Memperbarui Insights tautan pengujian Web menurut saluran
+### Contoh 2: Update Application Insights link dari uji Web menurut pipeline
 ```powershell
 Get-AzApplicationInsightsWebTest -ResourceGroupName azpwsh-rg-test -WebTestName webtest01-lucasappinsights | Update-AzApplicationInsightsWebTestTag -Tag @{"hidden-link:/subscriptions/xxxxxxxxxx-xxxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azpwsh-rg-test/providers/microsoft.insights/components/appinsightsportal01" = "Resource"}
 ```
@@ -58,7 +61,7 @@ Location Name                       WebTestKind   ResourceGroupName     Enabled
 westus2  webtest01-lucasappinsights standard      azpwsh-rg-test        True
 ```
 
-Perintah ini memperbarui tautan Insights Aplikasi dari uji Web menurut saluran.
+Perintah ini memperbarui aplikasi Insights tautan uji web menurut saluran.
 
 ## PARAMETERS
 
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ApplicationInsights.Models.IApplicationInsightsIdentity
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya Application Insights WebTest.
+Nama sumber daya Aplikasi Insights WebTest.
 
 ```yaml
 Type: System.String
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -205,11 +208,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 INPUTOBJECT <IApplicationInsightsIdentity>: Parameter Identitas
-  - `[ComponentName <String>]`: Nama Application Insights component resource.
+  - `[ComponentName <String>]`: Nama sumber daya komponen Insights Aplikasi.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[WebTestName <String>]`: Nama sumber daya Application Insights WebTest.
+  - `[WebTestName <String>]`: Nama sumber daya Aplikasi Insights WebTest.
 
 ## RELATED LINKS
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzWebApp.md
 ms.openlocfilehash: 774279cac01af0b212d4b6b222f9d105ef97ca3f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140457253"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142220077"
 ---
 # New-AzWebApp
 
 ## SYNOPSIS
-Membuat Aplikasi Azure Web.
+Membuat Azure Web App.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azwebapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -49,22 +49,22 @@ New-AzWebApp [-ResourceGroupName] <String> [-Name] <String> [-Location] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzWebApp** membuat Azure Web App dalam grup sumber daya tertentu yang menggunakan paket Layanan Aplikasi dan pusat data tertentu.
+Cmdlet **New-AzWebApp** membuat Azure Web App dalam grup sumber daya tertentu yang menggunakan paket dan pusat data App Service yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Web App
+### Contoh 1: Membuat Aplikasi Web
 ```
 PS C:\>New-AzWebApp -ResourceGroupName Default-Web-WestUS -Name "ContosoSite" -Location "West US" -AppServicePlan "ContosoServicePlan"
 ```
 
-Perintah ini membuat Azure Web App bernama ContosoSite dalam grup sumber daya yang ada bernama Default-Web-WestUS di pusat data As Barat.
-Perintah tersebut menggunakan paket Layanan Aplikasi yang sudah ada bernama ContosoServicePlan.
+Perintah ini membuat Azure Web App bernama ContosoSite dalam grup sumber daya yang sudah ada bernama Default-Web-WestUS di pusat data AS Barat.
+Perintah menggunakan rencana App Service yang sudah ada bernama ContosoServicePlan.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Nama Paket Layanan Aplikasi atau ID Paket Layanan Aplikasi. Jika WebApp dan Paket Layanan Aplikasi berada dalam Grup Sumber Daya yang berbeda, gunakan ID, bukan namanya. Id Paket Layanan Aplikasi dapat diambil menggunakan: $asp = Get-AzAppServicePlan -ResourceGroup myRG -Name MyWebapp $asp.id mengembalikan Id Paket Layanan Aplikasi.
+App Service Nama Rencana atau Id Paket App Service. Jika WebApp dan Paket App Service berada dalam Grup Sumber Daya yang berbeda, gunakan ID, bukan nama. Id Paket App Service dapat diambil menggunakan: $asp = Get-AzAppServicePlan -ResourceGroup myRG -Name MyWebapp $asp.id mengembalikan Id Paket App Service.
 
 
 ```yaml
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppSettingsOverrides
-Opsi Pengaturan Mengganti HashTable
+Aplikasi Pengaturan Menimpa HashTable
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan Layanan Aplikasi
+Nama Lingkungan App Service
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
+Nama Grup Sumber Daya Lingkungan App Service
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerImageName
-Container Image Name dan tag opsional, misalnya (image:tag)
+Nama Gambar Kontainer dan tag opsional, misalnya (image:tag)
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryPassword
-Kata Sandi Registri Wadah Privat
+Kata Sandi Registri Kontainer Privat
 
 ```yaml
 Type: System.Security.SecureString
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUrl
-Url Server Registri Wadah Privat
+Url Server Registri Kontainer Pribadi
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerRegistryUser
-Nama Pengguna Registri Wadah Privat
+Nama Pengguna Private Container Registry
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableContainerContinuousDeployment
-Mengaktifkan/Menonaktifkan webhook penyebaran berkelanjutan wadah
+Webhook penyebaran berkelanjutan kontainer Enables/Disables
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -GitRepositoryPath
-Jalur ke GitHub penyimpanan yang berisi aplikasi web untuk disebarkan.
+Path to the GitHub repository containing the web application to deploy.
 
 ```yaml
 Type: System.String
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeSourceWebAppSlots
-Sertakan Opsi Slot Aplikasi Web Sumber
+Sertakan Opsi Slot WebApp Sumber
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -371,7 +371,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceWebApp
-Objek Source WebApp
+Objek WebApp Sumber
 
 ```yaml
 Type: Microsoft.Azure.Commands.WebApps.Models.PSSite
@@ -386,7 +386,7 @@ Accept wildcard characters: False
 ```
 
 ### -TrafficManagerProfile
-Id Sumber Daya profil manajer lalu lintas yang sudah ada
+Id Sumber Daya dari profil manajer lalu lintas yang sudah ada
 
 ```yaml
 Type: System.String
@@ -401,7 +401,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -431,15 +431,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## CATATAN
 
@@ -447,9 +447,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzWebApp](./Get-AzWebApp.md)
 
-[Remove-AzWebApp](./Remove-AzWebApp.md)
+[Hapus-AzWebApp](./Remove-AzWebApp.md)
 
-[Restart-AzWebApp](./Restart-AzWebApp.md)
+[Mulai ulang-AzWebApp](./Restart-AzWebApp.md)
 
 [Start-AzWebApp](./Start-AzWebApp.md)
 

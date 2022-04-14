@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzVirtualApplianceSite.md
-ms.openlocfilehash: f1812aeed8da0165402c0fe379ba3bcb68de4af5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a0d175780030aa9ef990cb7a617cb95797097d05
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392523"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142212859"
 ---
 # New-AzVirtualApplianceSite
 
 ## SYNOPSIS
-Membuat situs yang tersambung ke Alat Virtual Jaringan.
+Membuat situs yang tersambung ke Network Virtual Appliance.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azvirtualappliancesite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkVirtualApplianceId
-Alat virtual jaringan yang terhubung dengan situs ini.
+Alat virtual Jaringan tempat situs ini dilampirkan.
 
 ```yaml
 Type: System.String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -O365Policy
-Kebijakan Office 365 terobosan baru.
+Kebijakan breakout Office 365.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSOffice365PolicyProperties
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -231,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -243,7 +246,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
+### Situs Microsoft.Azure.Commands.Network.Models.PSVirtualApplianceSite
 
 ## CATATAN
 

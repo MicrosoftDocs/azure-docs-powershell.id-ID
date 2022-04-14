@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/New-AzStaticWebApp.md
 ms.openlocfilehash: c873d3f8a8989a4ea4da8077328a16dfa74b6883
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140128437"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142220131"
 ---
 # New-AzStaticWebApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "140128437"
 Deskripsi untuk Membuat situs statis baru dalam grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/new-azstaticwebapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/new-azstaticwebapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Deskripsi untuk Membuat situs statis baru dalam grup sumber daya yang sudah ada,
 
 ## EXAMPLES
 
-### Contoh 1: Membuat situs statis baru dalam grup sumber daya yang ada, atau memperbarui situs statis yang sudah ada
+### Contoh 1: Membuat situs statis baru dalam grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada
 ```powershell
 PS C:\> New-AzStaticWebApp -ResourceGroupName 'azure-rg-test' -Name 'staticweb-45asde' -Location 'Central US' -RepositoryUrl 'https://github.com/LucasYao93/blazor-starter' -RepositoryToken 'githubAccessToken' -Branch 'branch02' -AppLocation 'Client' -ApiLocation 'Api' -OutputLocation 'wwwroot' -SkuName 'Standard'
 
@@ -49,9 +49,9 @@ Kind Location   Name             Type
      Central US staticweb-45asde Microsoft.Web/staticSites
 ```
 
-Perintah ini akan membuat situs statis baru dalam grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada.
+Perintah ini membuat situs statis baru dalam grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada.
 
-### Contoh 2: Membuat situs statis baru dalam grup sumber daya yang ada melalui penyimpanan templat tertentu
+### Contoh 2: Membuat situs statis baru dalam grup sumber daya yang sudah ada melalui penyimpanan templat tertentu
 ```powershell
 PS C:\> New-AzStaticWebApp -ResourceGroupName 'azure-rg-test' -Name staticweb-pwsh01 -Location "Central US" -RepositoryToken  'xxxxxxxxxxxxxxxxx' -TemplateRepositoryUrl 'https://github.com/staticwebdev/blazor-starter' -ForkRepositoryDescription "Test template repository function of the azure static web." -ForkRepositoryName "test-blazor-starter" -ForkRepositoryOwner 'LucasYao93' -Branch 'main' -AppLocation 'Client' -ApiLocation 'Api' -OutputLocation 'wwwroot' -SkuName 'Standard'
 
@@ -60,7 +60,7 @@ Kind Location   Name             Type
      Central US staticweb-pwsh01 Microsoft.Web/staticSites
 ```
 
-Perintah ini akan membuat situs statis baru dalam grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada melalui penyimpanan templat tertentu.
+Perintah ini membuat situs statis baru dalam grup sumber daya yang sudah ada, atau memperbarui situs statis yang sudah ada melalui penyimpanan templat tertentu.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiBuildCommand
-Perintah kustom untuk dijalankan selama penggunaan aplikasi API Fungsi Azure.
+Perintah kustom untuk dijalankan selama penyebaran aplikasi API Azure Functions.
 
 ```yaml
 Type: System.String
@@ -94,8 +94,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ApiLocation
-Jalur ke kode api di dalam tempat penyimpanan.
+### -ApiLokasi
+Jalur ke kode api dalam repository.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppArtifactLocation
-Ditolak: Jalur artifak aplikasi setelah membangun (disusingkat agar dapat digunakan untuk OutputLocation)
+Tidak digunakan lagi: Jalur artefak aplikasi setelah pembangun (tidak digunakan lagi untuk OutputLocation)
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppBuildCommand
-Perintah kustom untuk dijalankan selama penggunaan aplikasi konten statis.
+Perintah kustom untuk dijalankan selama penyebaran aplikasi konten statis.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppLocation
-Jalur ke kode aplikasi di dalam tempat penyimpanan.
+Jalur ke kode aplikasi dalam repository.
 
 ```yaml
 Type: System.String
@@ -169,8 +169,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cabang
-Cabang target di repositori.
+### -Branch
+Cabang target di repository.
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Jumlah contoh saat ini yang ditetapkan ke sumber daya.
+Jumlah instans saat ini yang ditetapkan ke sumber daya.
 
 ```yaml
 Type: System.Int32
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForkRepositoryDescription
-Deskripsi penyimpanan yang baru dihasilkan.
+Deskripsi repositori yang baru dibuat.
 
 ```yaml
 Type: System.String
@@ -230,8 +230,8 @@ Accept wildcard characters: False
 ```
 
 ### -ForkRepositoryIsPrivate
-Apakah penyimpanan yang baru dihasilkan adalah penyimpanan pribadi.
-Default untuk false (mis. publik).
+Apakah repositori yang baru dibuat atau tidak adalah repositori privat.
+Default ke false (misalnya publik).
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForkRepositoryName
-Nama penyimpanan yang baru dihasilkan.
+Nama repositori yang baru dibuat.
 
 ```yaml
 Type: System.String
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForkRepositoryOwner
-Pemilik tempat penyimpanan yang baru dihasilkan.
+Pemilik repositori yang baru dibuat.
 
 ```yaml
 Type: System.String
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -GithubActionSecretNameOverride
-Github Action secret name override.
+Github Action nama rahasia menimpa.
 
 ```yaml
 Type: System.String
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas layanan terkelola.
+Jenis identitas layanan terkelola.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Support.ManagedServiceIdentityType
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 
 ### -IdentityUserAssignedIdentity
 Daftar identitas yang ditetapkan pengguna yang terkait dengan sumber daya.
-Referensi kunci kamus identitas pengguna akan menjadi ID sumber daya ARM di formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
+Referensi kunci kamus identitas pengguna akan berupa id sumber daya ARM dalam formulir: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -321,7 +321,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis sumber daya.
 
 ```yaml
@@ -352,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama situs statis untuk membuat atau memperbarui.
+Nama situs statis untuk dibuat atau diperbarui.
 
 ```yaml
 Type: System.String
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -OutputLocation
-Jalur output aplikasi setelah membuat.
+Jalur output aplikasi setelah pembuatan.
 
 ```yaml
 Type: System.String
@@ -397,8 +397,8 @@ Accept wildcard characters: False
 ```
 
 ### -RepositoryToken
-Token repositori github pengguna.
-This is used to setup the Github Actions workflow file and API secret.
+Token penyimpanan github pengguna.
+Ini digunakan untuk menyetel file alur kerja Tindakan Github dan rahasia API.
 
 ```yaml
 Type: System.String
@@ -428,7 +428,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -443,7 +443,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkipGithubActionWorkflowGeneration
-Skip Github Action workflow generation.
+Lewati pembuatan alur kerja Tindakan Github.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -StagingEnvironmentPolicy
-Status mengindikasikan apakah pengaturan lingkungan diperbolehkan atau tidak diperbolehkan untuk aplikasi web statis.
+Negara mengindikasikan apakah lingkungan pementasan diizinkan atau tidak diperbolehkan untuk aplikasi web statis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Websites.Support.StagingEnvironmentPolicy
@@ -519,8 +519,8 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateRepositoryUrl
-URL tempat penyimpanan templat.
-Penyimpanan yang baru dihasilkan akan didasarkan pada penyimpanan ini.
+URL penyimpanan templat.
+Repositori yang baru dibuat akan didasarkan pada repositori ini.
 
 ```yaml
 Type: System.String
@@ -535,7 +535,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -551,7 +551,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -566,7 +566,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

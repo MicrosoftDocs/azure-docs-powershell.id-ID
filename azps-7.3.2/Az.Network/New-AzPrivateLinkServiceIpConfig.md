@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azpr
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkServiceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzPrivateLinkServiceIpConfig.md
-ms.openlocfilehash: 1dc177fecb850b4d9e882530c4b179ff781c6782
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 605dfdf7915166c7386ca119bc98eb0189dcf776
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140385911"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142212931"
 ---
 # New-AzPrivateLinkServiceIpConfig
 
 ## SYNOPSIS
-Buat konfigurasi ip layanan tautan pribadi.
+Membuat konfigurasi ip layanan tautan privat.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azprivatelinkserviceipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzPrivateLinkServiceIpConfig -Name <String> [-PrivateIpAddressVersion <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzPrivateLinkServiceIpConfig** membuat konfigurasi ip private link service. Konfigurasi ini digunakan untuk pengalihan sumber lalu lintas masuk dari titik akhir privat. 
+Cmdlet **New-AzPrivateLinkServiceIpConfig** membuat konfigurasi ip layanan tautan pribadi. Konfigurasi ini digunakan untuk sumber NAT-ing lalu lintas masuk dari titik akhir pribadi. 
 
 ## EXAMPLES
 
@@ -36,11 +39,11 @@ Cmdlet **New-AzPrivateLinkServiceIpConfig** membuat konfigurasi ip private link 
 New-AzPrivateLinkServiceIpConfig -Name $IpConfigurationName -PrivateIpAddress "10.0.0.5" -Primary
 ```
 
-Contoh ini membuat konfigurasi ip layanan tautan pribadi dalam memori.
+Contoh ini membuat konfigurasi ip layanan tautan privat dalam memori.
 
 ### Contoh 2
 
-Buat konfigurasi ip layanan tautan pribadi. (otomatisgenerated)
+Membuat konfigurasi ip layanan tautan privat. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddress
-Alamat ip privat ipConfiguration jika alokasi statis ditentukan.
+Alamat ip privat dari ipConfiguration jika alokasi statis ditentukan.
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateIpAddressVersion
-Versi ip konfigurasi ip
+Versi ip dari konfigurasi ip
 
 ```yaml
 Type: System.String
@@ -110,8 +113,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Utama
-Menunjukkan bahwa konfigurasi ip saat ini primer atau tidak.
+### -Primer
+Menunjukkan konfigurasi ip saat ini adalah utama atau tidak.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,11 +144,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

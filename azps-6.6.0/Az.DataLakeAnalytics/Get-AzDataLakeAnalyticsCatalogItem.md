@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeAnalytics/DataLakeAnalytics/help/Get-AzDataLakeAnalyticsCatalogItem.md
 ms.openlocfilehash: 43203abd20670ccfd17542d33f23b0038b5146c6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140108135"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142086355"
 ---
 # Get-AzDataLakeAnalyticsCatalogItem
 
 ## SYNOPSIS
-Mendapatkan item katalog Analitik Danau Data atau tipe item.
+Mendapatkan Data Lake Analytics item katalog atau tipe item.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscatalogitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakeanalytics/get-azdatalakeanalyticscatalogitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzDataLakeAnalyticsCatalogItem [-Account] <String> [-ItemType] <CatalogItemT
 ```
 
 ## DESCRIPTION
-**Get-AzDataLakeAnalyticsCatalogItem** mendapatkan item katalog Analitik Danau Azure Data yang ditentukan, atau mendapatkan item katalog dari tipe yang ditentukan.
+**Get-AzDataLakeAnalyticsCatalogItem** mendapatkan item katalog Azure Data Lake Analytics tertentu, atau mendapatkan item katalog dari tipe tertentu.
 
 ## EXAMPLES
 
@@ -38,19 +38,19 @@ Get-AzDataLakeAnalyticsCatalogItem [-Account] <String> [-ItemType] <CatalogItemT
 PS C:\>Get-AzDataLakeAnalyticsCatalogItem -Account "contosoadla" -ItemType Database -Path "databaseName"
 ```
 
-Perintah ini mendapatkan database tertentu.
+Perintah ini mendapatkan database yang ditentukan.
 
-### Contoh 2: Dapatkan tabel dalam database dan skema yang ditentukan
+### Contoh 2: Mendapatkan tabel dalam database dan skema tertentu
 ```
 PS C:\>Get-AzDataLakeAnalyticsDataSource -AccountName "contosoadla" -ItemType Table -Path "databaseName.schemaName"
 ```
 
-Perintah ini berisi daftar tabel dalam database tertentu.
+Perintah ini mendapatkan daftar tabel dalam database tertentu.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -80,19 +80,19 @@ Accept wildcard characters: False
 ```
 
 ### -ItemType
-Menentukan tipe item katalog dari item yang diambil atau dicantumkan.
+Menentukan tipe item katalog item yang sedang disambungkan atau dicantumkan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Database
 - Skema
-- Perakitan
-- Tabel
-- TableValuedFunction
+- Majelis
+- Meja
+- TableValuedFungction
 - TableStatistics
 - ExternalDataSource
-- Tampilan
+- Lihat
 - Prosedur
 - Rahasia
-- Kredensial
+- Credential
 - Jenis
 - TablePartition
 
@@ -109,9 +109,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur multi-bagian ke item untuk diambil, atau ke item induk item ke daftar.
-Bagian jalur harus dipisahkan oleh titik (.).
+### -Jalur
+Menentukan jalur multi-bagian ke item yang akan diambil, atau ke item induk item yang akan dicantumkan.
+Bagian jalur harus dipisahkan oleh tanda titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

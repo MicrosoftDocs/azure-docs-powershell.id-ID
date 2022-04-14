@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionBackupInstanceInAzGraph.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataProtection/help/Search-AzDataProtectionBackupInstanceInAzGraph.md
 ms.openlocfilehash: 4513cba1e095e79bd62cf675337001d216259d6a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483889"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085576"
 ---
 # Search-AzDataProtectionBackupInstanceInAzGraph
 
 ## SYNOPSIS
-Mencari instans Cadangan di sumber daya Azure Graph dan mengambil entri yang diharapkan
+Mencari contoh Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionbackupinstanceinazgraph) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dataprotection/search-azdataprotectionbackupinstanceinazgraph) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Search-AzDataProtectionBackupInstanceInAzGraph -DatasourceType <DatasourceTypes>
 ```
 
 ## DESCRIPTION
-Mencari instans Cadangan di sumber daya Azure Graph dan mengambil entri yang diharapkan
+Mencari contoh Cadangan di Azure Resource Graph dan mengambil entri yang diharapkan
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua instans cadangan disk Azure yang dilindungi dalam langganan tertentu
+### Contoh 1: Dapatkan semua instans cadangan disk azure yang dilindungi dalam langganan tertentu
 ```powershell
 PS C:\> Search-AzDataProtectionBackupInstanceInAzGraph -Subscription "xxxx-xxx-xxx" -DatasourceType AzureDisk
 
@@ -48,9 +48,9 @@ test1-test1-59f95871-de81-4051-95e7-ee6c4e5b30e0                                
 anubhwus-test-anubhwus-test-5fe6ce14-fbd2-4641-80d0-f8f8b254601d                                                       microsoft.dataprotection/backupvaults/backupinstance
 ```
 
-Perintah ini mendapatkan semua instans cadangan disk Azure yang dilindungi dalam langganan tertentu
+Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam langganan tertentu
 
-### Contoh 2: Mendapatkan semua instans cadangan disk Azure yang dilindungi dalam daftar grup sumber daya
+### Contoh 2: Dapatkan semua instans cadangan disk azure yang dilindungi dalam daftar grup sumber daya tertentu
 ```powershell
 PS C:\> Search-AzDataProtectionBackupInstanceInAzGraph -Subscription "xxxx-xxx-xxx" -DatasourceType AzureDisk -ResourceGroup @("sarath-rg", "sarath-rg2")
 
@@ -61,9 +61,9 @@ sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166     microsoft.datapro
 sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6bad4305a   microsoft.dataprotection/backupvaults/backupinstances sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6b
 ```
 
-Perintah ini mendapatkan semua instans cadangan disk Azure yang dilindungi dalam kumpulan grup sumber daya tertentu
+Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam kumpulan grup sumber daya tertentu
 
-### Contoh 3: Dapatkan semua instans cadangan disk Azure yang diproteksi dalam daftar grup sumber daya dengan status proteksi 'ProtectionConfigured'
+### Contoh 3: Dapatkan semua instans cadangan disk azure yang dilindungi dalam daftar grup sumber daya tertentu dengan status perlindungan 'ProteksiKonfigurasi'
 ```powershell
 PS C:\> Search-AzDataProtectionBackupInstanceInAzGraph -Subscription "xxxx-xxx-xxx" -DatasourceType AzureDisk -ResourceGroup @("sarath-rg", "sarath-rg2") -ProtectionStatus  ProtectionConfigured
 
@@ -74,12 +74,12 @@ sarathdisk-sarathdisk-3df6ac08-9496-4839-8fb5-8b78e594f166     microsoft.datapro
 sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6bad4305a   microsoft.dataprotection/backupvaults/backupinstances sarathdisk2-sarathdisk2-b0bf31ab-c9c5-407f-98a2-3ad6b
 ```
 
-Perintah ini mendapatkan semua instans cadangan disk Azure yang dilindungi dalam kumpulan grup sumber daya tertentu dengan status proteksi sebagai ProteksiConfigured
+Perintah ini mendapatkan semua instans cadangan disk azure yang dilindungi dalam sekumpulan grup sumber daya tertentu dengan status perlindungan sebagai ProteksiKonfigurasi
 
 ## PARAMETERS
 
 ### -DatasourceType
-Tipe SumberData
+Tipe Sumber Data
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataProtection.Support.DatasourceTypes
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Nama vault
+Nama kubah
 
 ```yaml
 Type: System.String[]
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

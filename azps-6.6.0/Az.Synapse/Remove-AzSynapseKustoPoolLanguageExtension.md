@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolLanguageExtension.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Remove-AzSynapseKustoPoolLanguageExtension.md
 ms.openlocfilehash: 1a5d507d67535cd9ebe3a141536b795e46b2f190
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140275331"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142220532"
 ---
 # Remove-AzSynapseKustoPoolLanguageExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "140275331"
 Hapus daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopoollanguageextension) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/remove-azsynapsekustopoollanguageextension) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,12 +40,12 @@ Hapus daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus daftar ekstensi bahasa dari kusto pool
+### Contoh 1: Menghapus daftar ekstensi bahasa dari kumpulan kusto
 ```powershell
 PS C:\> Remove-AzSynapseKustoPoolLanguageExtension -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -Value (@{Name="R"})
 ```
 
-Perintah di atas menghapus daftar ekstensi bahasa yang dapat dijalankan dalam kueri KQL.
+Perintah di atas menghapus daftar ekstensi bahasa yang dapat berjalan dalam kueri KQL.
 
 ## PARAMETERS
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.ISynapseIdentity
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -KustoPoolName
-Nama pool Kusto.
+Nama kumpulan Kusto.
 
 ```yaml
 Type: System.String
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -Value
 Daftar ekstensi bahasa.
-Untuk membuat, lihat bagian CATATAN untuk properti VALUE dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti VALUE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.Synapse.Models.Api20210601Preview.ILanguageExtension[]
@@ -186,7 +186,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja
 
 ```yaml
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -255,16 +255,16 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 INPUTOBJECT <ISynapseIdentity>: Parameter Identitas
   - `[AttachedDatabaseConfigurationName <String>]`: Nama konfigurasi database yang dilampirkan.
   - `[DataConnectionName <String>]`: Nama koneksi data.
-  - `[DatabaseName <String>]`: Nama database di kolam Kusto.
+  - `[DatabaseName <String>]`: Nama database dalam kumpulan Kusto.
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[KustoPoolName <String>]`: Nama kolam Kusto.
+  - `[KustoPoolName <String>]`: Nama kumpulan Kusto.
   - `[Location <String>]`: Nama kawasan Azure.
-  - `[PrincipalAssignmentName <String>]`: Nama principalAssignment Kusto.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[PrincipalAssignmentName <String>]`: Nama Kusto principalAssignment.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
   - `[WorkspaceName <String>]`: Nama ruang kerja
 
-NILAI <untuk ILanguageExtension[]>: Daftar ekstensi bahasa.
+VALUE <ILanguageExtension[]>: Daftar ekstensi bahasa.
   - `[Name <LanguageExtensionName?>]`: Nama ekstensi bahasa.
 
 ## RELATED LINKS

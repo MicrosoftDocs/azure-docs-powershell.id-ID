@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azlo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzLoadBalancerBackendAddressConfig.md
-ms.openlocfilehash: b878b6a97338417636ed66e1d05dfc2ca35ff2ee
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 829403d4492eacfd9f5d62c66f1d1fc95d862828
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140371994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142213219"
 ---
 # New-AzLoadBalancerBackendAddressConfig
 
 ## SYNOPSIS
-Mengembalikan konfigurasi alamat backend penyeimbang muat. 
+Mengembalikan konfigurasi alamat backend load balancer. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azloadbalancerbackendaddressconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzLoadBalancerBackendAddressConfig -IpAddress <String> -Name <String> -Subne
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetByIpAndvnet
+### SetByIpAndVnet
 ```
 New-AzLoadBalancerBackendAddressConfig -IpAddress <String> -Name <String> -VirtualNetworkId <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,23 +41,23 @@ New-AzLoadBalancerBackendAddressConfig -Name <String> -LoadBalancerFrontendIPCon
 ```
 
 ## DESCRIPTION
-Mengembalikan konfigurasi alamat backend penyeimbang muat. 
+Mengembalikan konfigurasi alamat backend load balancer. 
 
 ## EXAMPLES
 
-### Contoh 1: Alamat loadbalancer baru config with virtual network reference
+### Contoh 1: Konfigurasi alamat loadbalancer baru dengan referensi jaringan virtual
 ```powershell
 PS C:\> $virtualNetwork = Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $resourceGroup
 New-AzLoadBalancerBackendAddressConfig -IpAddress "10.0.0.5" -Name "TestVNetRef" -VirtualNetworkId $virtualNetwork.Id
 ```
-### Contoh 2: Alamat loadbalancer baru config dengan referensi subnet
+### Contoh 2: Konfigurasi alamat loadbalancer baru dengan referensi subnet
 ```powershell
 PS C:\> $virtualNetwork = Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $resourceGroup
 $subnet = Get-AzVirtualNetworkSubnetConfig -Name $subnetName -VirtualNetwork $virtualNetwork
 New-AzLoadBalancerBackendAddressConfig -IpAddress "10.0.0.5" -Name "TestVNetRef" -SubnetId $subnet.Id
 ```
 
-### Contoh 3: New loadbalancer address config with loadbalancer frontend ip configuration reference
+### Contoh 3: Konfigurasi alamat loadbalancer baru dengan referensi konfigurasi ip frontend loadbalancer
 ```powershell
 PS C:\> $frontend = New-AzLoadBalancerFrontendIpConfig -Name $frontendName -PublicIpAddress $publicip
 New-AzLoadBalancerBackendAddressConfig -LoadBalancerFrontendIPConfigurationId $frontend.Id -Name "TestLBFERef"
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-IPAddress untuk ditambahkan ke pool backend
+IPAddress untuk ditambahkan ke kumpulan backend
 
 ```yaml
 Type: System.String
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancerFrontendIPConfigurationId
-Konfigurasi ip frontend load balancer terkait dengan konfigurasi Alamat Backend
+Konfigurasi ip frontend load balancer yang terkait dengan konfigurasi Alamat Backend
 
 ```yaml
 Type: System.String
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

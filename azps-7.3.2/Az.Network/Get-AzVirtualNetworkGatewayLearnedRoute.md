@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayLearnedRoute.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVirtualNetworkGatewayLearnedRoute.md
-ms.openlocfilehash: 309429cd870ad271e15d692b98045e2b9a1b60ce
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: e65217e52e8faf1f9ef80d5237f3c14e138ca647
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007751"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142108907"
 ---
 # Get-AzVirtualNetworkGatewayLearnedRoute
 
 ## SYNOPSIS
 Mencantumkan rute yang dipelajari oleh gateway jaringan virtual Azure
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvirtualnetworkgatewaylearnedroute) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -58,12 +61,12 @@ SourcePeer   : 10.0.0.254
 Weight       : 32768
 ```
 
-Untuk gateway jaringan virtual Azure yang bernama nama gateway dalam grup sumber daya Grup Sumber Daya, mengambil rute yang diketahui gateway Azure. Gateway jaringan virtual Azure dalam kasus ini memiliki dua rute statis (10.1.0.0/16 dan 10.0.0.254/32), serta satu rute yang dipelajari melalui BGP (10.0.0.0/16).
+Untuk gateway jaringan virtual Azure bernama gatewayname dalam sumber daya grup sumber dayaGroup, mengambil rute yang diketahui gateway Azure. Gateway jaringan virtual Azure dalam hal ini memiliki dua rute statis (10.1.0.0/16 dan 10.0.0.254/32), serta satu rute yang dipelajari melalui BGP (10.0.0.0/16).
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -123,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

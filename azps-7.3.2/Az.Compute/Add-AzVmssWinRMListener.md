@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/add-azvm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssWinRMListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVmssWinRMListener.md
-ms.openlocfilehash: 010e34dcab316fcbd525d3a8d65b30102ab6c169
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 296c1fa0bdb00960c4ef76a957b280112b1e2d0f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395487"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142218241"
 ---
 # Add-AzVmssWinRMListener
 
 ## SYNOPSIS
-Menambahkan pendengar WinRM pada VMSS.
+Menambahkan pendengar WinRM ke VMSS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmsswinrmlistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,24 +30,24 @@ Add-AzVmssWinRMListener [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [[-
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVmssWinRMListener** menambahkan pendengar Windows Remote Management (WinRM) pada Virtual Machine Scale Set (VMSS).
+Cmdlet **Add-AzVmssWinRMListener** menambahkan pendengar Windows Remote Management (WinRM) di Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan pendengar WinRM ke VMSS
+### Contoh 1: Menambahkan pendengar WinRM ke VMSS
 ```powershell
 $VMSS = New-AzVmssConfig
 Add-AzVmssWinRMListener -VirtualMachineScaleSet $VMSS -Protocol Https -CertificateUrl "http://keyVaultName.vault.contoso.net/secrets/secretName/secretVersion"
 ```
 
-Contoh ini menambahkan pendengar WinRM pada VMSS.
-Perintah pertama menggunakan cmdlet **New-AzVmssConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel yang bernama $VMSS.
-Perintah kedua menambahkan pendengar WinRM protokol HTTP dengan sertifikat pada URL yang ditentukan ke VMSS.
+Contoh ini menambahkan pendengar WinRM ke VMSS.
+Perintah pertama menggunakan cmdlet **New-AzVmsConfig** untuk membuat objek konfigurasi VMSS dan menyimpan hasilnya dalam variabel bernama $VMSS.
+Perintah kedua menambahkan protokol HTTP Pendengar WinRM dengan sertifikat di URL tertentu ke VMSS.
 
 ## PARAMETERS
 
 ### -CertificateUrl
-Menentukan link, sebagai URL, sertifikat yang menyediakan mesin virtual baru.
+Menentukan tautan, sebagai URL, sertifikat tempat mesin virtual baru ditetapkan.
 
 ```yaml
 Type: System.String
@@ -59,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -73,7 +76,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol pendengar WinRM.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Http
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Menentukan objek VMSS.
 Anda dapat menggunakan cmdlet New-AzVmssConfig untuk membuat objek.
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,13 +142,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.ProtocolTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.ProtocolTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.String
 

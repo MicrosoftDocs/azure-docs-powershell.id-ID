@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzP2sVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzP2sVpnGateway.md
 ms.openlocfilehash: c3d19c1d27a1fefa1f963197abeeed5f4ee291c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139934071"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142078987"
 ---
 # Update-AzP2sVpnGateway
 
@@ -18,7 +18,7 @@ ms.locfileid: "139934071"
 Perbarui P2SVpnGateway yang sudah ada di bawah VirtualHub untuk mengarahkan ke konektivitas situs.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/update-azp2svpngateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azp2svpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -101,7 +101,7 @@ Update-AzP2sVpnGateway -ResourceId <String> [-VpnClientAddressPool <String[]>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang sudah ada di bawah VirtualHub dengan VpnClientAddressPool baru atau VpnServerConfiguration baru atau mengubah VpnGatewayScaleUnit.
+Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang sudah ada di bawah VirtualHub dengan VpnClientAddressPool baru atau VpnServerConfiguration atau perubahan VpnGatewayScaleUnit baru.
 
 ## EXAMPLES
 
@@ -158,11 +158,11 @@ P2SConnectionConfigurations    : [
                                  ]
 ```
 
-Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang sudah ada di bawah VirtualHub dengan VpnClientAddressPool baru. Ketika Arahkan ke klien situs yang tersambung dengan P2SVpnGateway ini, salah satu alamat ip dari VpnClientAddressPool ini dialokasikan ke klien tersebut.
+Cmdlet **Update-AzP2sVpnGateway** memungkinkan Anda memperbarui P2SVpnGateway yang sudah ada di bawah VirtualHub dengan VpnClientAddressPool baru. Ketika klien Point to site terhubung dengan P2SVpnGateway ini, salah satu alamat ip dari VpnClientAddressPool ini dialokasikan untuk klien tersebut.
 
 ### Contoh 2
 
-Perbarui P2SVpnGateway yang sudah ada di bawah VirtualHub untuk mengarahkan ke konektivitas situs. (otomatisgenerated)
+Perbarui P2SVpnGateway yang sudah ada di bawah VirtualHub untuk mengarahkan ke konektivitas situs. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 
@@ -174,7 +174,7 @@ Update-AzP2sVpnGateway -AsJob -Name 00000000-0000-0000-0000-00000000000000000-we
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableInternetSecurityFlag
-Mengaktifkan bendera keamanan internet untuk koneksi P2SVpnGateway ini
+Aktifkan bendera keamanan internet untuk koneksi P2SVpnGateway ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek gateway p2s vpn yang akan dimodifikasi
+Objek gateway vpn p2s yang akan diubah
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSP2SVpnGateway
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama gateway P2S vpn.
+Nama gateway vpn P2S.
 
 ```yaml
 Type: System.String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure dari P2SVpnGateway akan dimodifikasi.
+ID sumber daya Azure dari P2SVpnGateway untuk diubah.
 
 ```yaml
 Type: System.String
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfiguration
-VpnServerConfiguration yang akan dilampirkan ke P2SVpnGateway ini.
+VpnServerConfiguration untuk dilampirkan ke P2SVpnGateway ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnServerConfigurationId
-Id objek konfigurasi server Vpn yang terhubung dengan P2SVpnGateway ini.
+Id objek konfigurasi server Vpn tempat P2SVpnGateway ini akan dilampirkan.
 
 ```yaml
 Type: System.String
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -430,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -445,4 +445,4 @@ System.String Microsoft.Azure.Commands.Network.Models.PSVpnServerConfiguration
 
 ## RELATED LINKS
 
-[New-AzRoutingConfiguration](./New-AzRoutingConfiguration.md)
+[Konfigurasi AzRouting Baru](./New-AzRoutingConfiguration.md)

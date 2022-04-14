@@ -5,16 +5,16 @@ ms.assetid: E2A45461-6B41-42FF-A874-A4CEFC867A33
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/set-azurekeyvaultsecretattribute
 schema: 2.0.0
 ms.openlocfilehash: f8463533f8a153b74df1863ba251950f16f9e19a
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415060"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142104055"
 ---
 # Set-AzureKeyVaultSecretAttribute
 
 ## SYNOPSIS
-Memperbarui atribut rahasia di kunci vault.
+Memperbarui atribut rahasia dalam kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,11 +27,11 @@ Set-AzureKeyVaultSecretAttribute [-VaultName] <String> [-Name] <String> [[-Versi
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureKeyVaultSecretAttribute** memperbarui atribut rahasia yang dapat diedit di kunci vault.
+**Cmdlet Set-AzureKeyVaultSecretAttribute** memperbarui atribut rahasia yang dapat diedit dalam kubah kunci.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah atribut dari sebuah rahasia
+### Contoh 1: Memodifikasi atribut rahasia
 ```
 PS C:\> $Expires = (Get-Date).AddYears(2).ToUniversalTime()
 PS C:\> $Nbf = (Get-Date).ToUniversalTime()
@@ -42,29 +42,29 @@ PS C:\> Set-AzureKeyVaultSecretAttribute -VaultName 'ContosoVault' -Name 'HR' -E
 
 Empat perintah pertama menentukan atribut untuk tanggal kedaluwarsa, tanggal NotBefore, tag, dan tipe konteks, dan menyimpan atribut dalam variabel.
 
-Perintah terakhir mengubah atribut untuk rahasia yang bernama HR dalam kunci vault yang bernama ContosoVault, menggunakan variabel yang disimpan.
+Perintah akhir mengubah atribut untuk rahasia bernama HR dalam kubah kunci bernama ContosoVault, menggunakan variabel yang disimpan.
 
 ### Contoh 2: Menghapus tag dan tipe konten untuk rahasia
 ```
 PS C:\>Set-AzureKeyVaultSecretAttribute -VaultName 'ContosoVault' -Name 'HR' -Version '9EEA45C6EE50490B9C3176A80AC1A0DF' -ContentType '' -Tag -@{}
 ```
 
-Perintah ini menghapus tag dan tipe konten untuk versi rahasia tertentu bernama HR di key vault bernama Contoso.
+Perintah ini menghapus tag dan tipe konten untuk versi rahasia tertentu yang bernama HR dalam kubah kunci bernama Contoso.
 
-### Contoh 3: Menonaktifkan versi rahasia saat ini yang namanya dimulai dengan IT
+### Contoh 3: Menonaktifkan versi rahasia saat ini yang namanya dimulai dengan TI
 ```
 PS C:\> $Vault = 'ContosoVault'
 PS C:\> $Prefix = 'IT'
 PS C:\> Get-AzureKeyVaultSecret $Vault | Where-Object {$_.Name -like $Prefix + '*'} | Set-AzureKeyVaultSecretAttribute -Enable $False
 ```
 
-Perintah pertama menyimpan nilai string Contoso dalam $Vault string.
+Perintah pertama menyimpan nilai string Contoso dalam variabel $Vault.
 
-Perintah kedua menyimpan nilai string IT dalam $Prefix nilai.
+Perintah kedua menyimpan nilai string TI dalam variabel $Prefix.
 
-Perintah ketiga menggunakan cmdlet Get-AzureKeyVaultSecret rahasia untuk mendapatkan rahasia dalam penyimpanan kunci tertentu, lalu melewati rahasia tersebut ke cmdlet **Where-Object** . Cmdlet **Where-Object** memfilter rahasia untuk nama yang dimulai dengan karakter IT. Perintah akan pipa rahasia yang cocok dengan filter ke cmdlet Set-AzureKeyVaultSecretAttribute, yang akan menonaktifkannya.
+Perintah ketiga menggunakan cmdlet Get-AzureKeyVaultSecret untuk mendapatkan rahasia dalam kubah kunci yang ditentukan, lalu meneruskan rahasia tersebut ke cmdlet **Where-Object** . Cmdlet **Where-Object** memfilter rahasia untuk nama yang dimulai dengan karakter TI. Perintah menyalurkan rahasia yang cocok dengan filter ke cmdlet Set-AzureKeyVaultSecretAttribute, yang menonaktifkannya.
 
-### Contoh 4: Setel ContentType untuk semua versi rahasia
+### Contoh 4: Mengatur ContentType untuk semua versi rahasia
 ```
 PS C:\>$VaultName = 'ContosoVault'
 PS C:\> $Name = 'HR'
@@ -72,7 +72,7 @@ PS C:\> $ContentType = 'xml'
 PS C:\> Get-AzureKeyVaultKey -VaultName $VaultName -Name $Name -IncludeVersions | Set-AzureKeyVaultSecretAttribute -ContentType $ContentType
 ```
 
-Tiga perintah pertama menentukan variabel string yang akan digunakan untuk *parameter VaultName*, *Name*, *dan ContentType* . Perintah keempat menggunakan cmdlet Get-AzureKeyVaultKey cmdlet untuk mendapatkan kunci yang ditentukan, dan pipakan tombol ke cmdlet Set-AzureKeyVaultSecretAttribute untuk mengatur tipe kontennya ke XML.
+Tiga perintah pertama menentukan variabel string yang akan digunakan untuk parameter *VaultName*, *Name*, dan *ContentType* . Perintah keempat menggunakan cmdlet Get-AzureKeyVaultKey untuk mendapatkan tombol yang ditentukan, dan menyalurkan kunci ke cmdlet Set-AzureKeyVaultSecretAttribute untuk mengatur tipe kontennya ke XML.
 
 ## PARAMETERS
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Menunjukkan apakah ingin mengaktifkan rahasia. Tentukan $False untuk menonaktifkan rahasia, $True untuk mengaktifkan rahasia. Jika Anda tidak menentukan parameter ini, tidak ada perubahan untuk status rahasia aktif atau nonaktif saat ini.
+Menunjukkan apakah akan mengaktifkan rahasia. Tentukan $False untuk menonaktifkan rahasia, atau $True untuk mengaktifkan rahasia. Jika Anda tidak menentukan parameter ini, tidak ada perubahan pada status rahasia saat ini yang diaktifkan atau dinonaktifkan.
 
 ```yaml
 Type: Boolean
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kedaluwarsa
-Menentukan tanggal dan waktu rahasia kedaluwarsa.
+Menentukan tanggal dan waktu kedaluwarsa rahasia.
 
 ```yaml
 Type: DateTime
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama rahasia. Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN, Fully Qualified Domain Name) dari rahasia berdasarkan nama yang ditentukan parameter ini, nama kunci vault, dan lingkungan Anda saat ini.
+Menentukan nama rahasia. Cmdlet ini menyusun nama domain yang sepenuhnya memenuhi syarat (FQDN) rahasia berdasarkan nama yang ditentukan parameter ini, nama kubah kunci, dan lingkungan Anda saat ini.
 
 ```yaml
 Type: String
@@ -151,8 +151,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -NotBefore
-Menentukan Waktu Universal Terkoordinasi (UTC) sebelum rahasianya tidak dapat digunakan.
+### -TidakBefore
+Menentukan Waktu Universal Terkoordinasi (UTC) sebelum rahasia tidak dapat digunakan.
 Jika Anda tidak menentukan parameter ini, tidak ada perubahan pada atribut NotBefore rahasia saat ini.
 
 ```yaml
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -201,8 +201,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault untuk diubah.
-Cmdlet ini menyusun FQDN dari kunci vault berdasarkan nama yang ditentukan parameter ini, dan lingkungan yang saat ini dipilih.
+Menentukan nama kubah kunci untuk diubah.
+Cmdlet ini menyusun FQDN kubah kunci berdasarkan nama yang ditentukan parameter ini, dan lingkungan yang dipilih saat ini.
 
 ```yaml
 Type: String
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi rahasia.
-Cmdlet ini menyusun FQDN dari rahasia berdasarkan nama key vault, lingkungan yang Anda pilih saat ini, nama rahasia, dan versi rahasia.
+Cmdlet ini menyusun FQDN rahasia berdasarkan nama kubah kunci, lingkungan yang dipilih saat ini, nama rahasia, dan versi rahasia.
 
 ```yaml
 Type: String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -264,14 +264,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.KeyVault.Models.Secret
-Mengembalikan objek Microsoft.Azure.Commands.KeyVault.Models.Secret jika PassThru ditentukan. Jika tidak, kembalikan apa pun.
+Mengembalikan objek Microsoft.Azure.Commands.KeyVault.Models.Secret jika PassThru ditentukan. Jika tidak, tidak mengembalikan apa pun.
 
 ## CATATAN
 
@@ -281,4 +281,4 @@ Mengembalikan objek Microsoft.Azure.Commands.KeyVault.Models.Secret jika PassThr
 
 [Get-AzureKeyVaultSecret](./Get-AzureKeyVaultSecret.md)
 
-[Remove-AzureKeyVaultSecret](./Remove-AzureKeyVaultSecret.md)
+[Hapus-AzureKeyVaultSecret](./Remove-AzureKeyVaultSecret.md)

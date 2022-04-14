@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualWan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Update-AzVirtualWan.md
-ms.openlocfilehash: 5cebd269125b7512bab7b4493166bf323aa2893e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4a7dd35883578b4818ffeb22fe86d992b9af563c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140570690"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142212067"
 ---
 # Update-AzVirtualWan
 
 ## SYNOPSIS
-Memperbarui Azure Virtual WAN.
+Memperbarui Virtual WAN Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/update-azvirtualwan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Update-AzVirtualWan -ResourceId <String> [-AllowVnetToVnetTraffic <Boolean>]
 ```
 
 ## DESCRIPTION
-Memperbarui Azure Virtual WAN.
+Memperbarui Virtual WAN Azure.
 
 ## EXAMPLES
 
@@ -62,12 +65,12 @@ Type                       : Microsoft.Network/virtualWans
 ProvisioningState          : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG" di kawasan "West US" dan Azure Virtual WAN dalam grup sumber daya tersebut di Azure. VirtualWan diperbarui dengan properti baru.
+Hal di atas akan membuat grup sumber daya "testRG" di kawasan "AS Barat" dan Azure Virtual WAN dalam grup sumber daya tersebut di Azure. VirtualWan diperbarui dengan properti baru.
 
 ## PARAMETERS
 
 ### -AllowBranchToBranchTraffic
-Perbolehkan lalu lintas cabang untuk VirtualWan.
+Izinkan cabang untuk cabang lalu lintas untuk VirtualWan.
 
 ```yaml
 Type: Boolean
@@ -82,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowVnetToVnetTraffic
-Memperbolehkan lalu lintas vnet untuk VirtualWan.
+Izinkan vnet untuk vnet lalu lintas untuk VirtualWan.
 
 ```yaml
 Type: Boolean
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -126,8 +129,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: Hashtable
@@ -217,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualWANType
-Tipe Virtual Wan.
+Tipe Wan Virtual.
 
 ```yaml
 Type: String
@@ -232,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -248,7 +251,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -263,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -283,4 +286,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVirtualWan](./New-AzVirtualWan.md)
 
-[Remove-AzVirtualWan](./Remove-AzVirtualWan.md)
+[Hapus-AzVirtualWan](./Remove-AzVirtualWan.md)
