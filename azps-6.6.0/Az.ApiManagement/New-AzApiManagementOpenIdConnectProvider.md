@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementOpenIdConnectProvider.md
 ms.openlocfilehash: 874ae38d6467612e6a78028dc4a9e860bbc7d796
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140313829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142275177"
 ---
 # New-AzApiManagementOpenIdConnectProvider
 
@@ -19,7 +19,7 @@ ms.locfileid: "140313829"
 Membuat penyedia Koneksi OpenID.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementopenidconnectprovider) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementopenidconnectprovider) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,21 +30,21 @@ New-AzApiManagementOpenIdConnectProvider -Context <PsApiManagementContext> [-Ope
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementOpenIdConnectProvider** membuat penyedia Koneksi OpenID di Manajemen API Azure.
+Cmdlet **New-AzApiManagementOpenIdConnectProvider** membuat penyedia Koneksi OpenID di Azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Buat penyedia
+### Contoh 1: Membuat penyedia
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>New-AzApiManagementOpenIdConnectProvider -Context $apimContext -OpenIdConnectProviderId "OICProvider01" -Name "Contoso OpenID Connect Provider" -MetadataEndpointUri "https://openid.provider/configuration" -ClientId "12432143" -Description "OpenID Connect provider description"
 ```
 
-Perintah ini membuat Penyedia Koneksi OpenID **bernama** Contoso OpenID Koneksi Provider
+Perintah ini membuat **Penyedia** Koneksi OpenID bernama Penyedia Koneksi Contoso OpenID
 
 ### Contoh 2
 
-Membuat penyedia Koneksi OpenID. (otomatisgenerated)
+Membuat penyedia Koneksi OpenID. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetadataEndpointUri
-Menentukan URI titik akhir metadata dari penyedia.
+Menentukan URI titik akhir metadata penyedia.
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang mudah digunakan untuk penyedia.
+Menentukan nama yang mudah dikenali untuk penyedia.
 
 ```yaml
 Type: System.String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -OpenIdConnectProviderId
 Menentukan ID untuk penyedia.
-Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkan ID.
+Jika Anda tidak menentukan ID, cmdlet ini akan menghasilkannya.
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

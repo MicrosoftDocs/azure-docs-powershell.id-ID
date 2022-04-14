@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.keyvault/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Remove-AzKeyVaultAccessPolicy.md
-ms.openlocfilehash: b4238e13ce14414ee335492c7bc391aa412a4c48
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4d45c042032aa490d7e7da6fdcf913d6b6f5120a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393838"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142256516"
 ---
 # Remove-AzKeyVaultAccessPolicy
 
 ## SYNOPSIS
-Menghapus semua izin untuk pengguna atau aplikasi dari kunci vault.
+Menghapus semua izin untuk pengguna atau aplikasi dari kubah kunci.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/remove-azkeyvaultaccesspolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -128,11 +131,11 @@ Remove-AzKeyVaultAccessPolicy [-ResourceId] <String> [-EnabledForDeployment] [-E
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzKeyVaultAccessPolicy** menghapus semua izin untuk pengguna atau aplikasi atau untuk semua pengguna dan aplikasi dari kunci vault.
-Bahkan jika Anda menghapus semua izin, pemilik langganan Azure yang berisi kunci vault dapat menambahkan izin ke key vault.
+Cmdlet **Remove-AzKeyVaultAccessPolicy** menghapus semua izin untuk pengguna atau aplikasi atau untuk semua pengguna dan aplikasi dari kubah kunci.
+Bahkan jika Anda menghapus semua izin, pemilik langganan Azure yang berisi kubah kunci dapat menambahkan izin ke kubah kunci.
 Perhatikan bahwa meskipun menentukan grup sumber daya bersifat opsional untuk cmdlet ini, Anda harus melakukannya untuk kinerja yang lebih baik.
 
-Cmdlet dapat memanggil di bawah API Graph Microsoft sesuai dengan parameter input:
+Cmdlet dapat memanggil di bawah Api Graph Microsoft sesuai dengan parameter input:
 
 - GET /directoryObjects/{id}
 - GET /users/{id}
@@ -179,30 +182,30 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini akan menghapus semua izin yang ada pada PattiFuller@contoso.com penyimpanan kunci bernama Contoso03Vault.  Jika -PassThru ditentukan, objek KeyVault dikembalikan.
+Perintah ini menghapus semua izin yang dimiliki pengguna PattiFuller@contoso.com pada kubah kunci bernama Contoso03Vault.  Jika -PassThru ditentukan, objek KeyVault dikembalikan.
 
-### Contoh 2: Hapus izin untuk aplikasi
+### Contoh 2: Menghapus izin untuk aplikasi
 ```powershell
 PS C:\> Remove-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ServicePrincipalName 'http://payroll.contoso.com'
 ```
 
-Perintah ini akan menghapus semua izin yang ada pada kunci vault bernama Contoso03Vault.
-Contoh ini mengidentifikasi aplikasi dengan menggunakan nama prinsipal layanan yang terdaftar dalam Azure Active Directory, `http://payroll.contoso.com`.
+Perintah ini menghapus semua izin yang dimiliki aplikasi pada kubah kunci bernama Contoso03Vault.
+Contoh ini mengidentifikasi aplikasi dengan menggunakan nama prinsipal layanan yang terdaftar di Azure Active Directory, `http://payroll.contoso.com`.
 
-### Contoh 3: Hapus izin untuk aplikasi menggunakan ID objeknya
+### Contoh 3: Menghapus izin untuk aplikasi menggunakan ID objeknya
 ```powershell
 PS C:\> Remove-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ObjectID 34595082-9346-41b6-8d6b-295a2808b8db
 ```
 
-Perintah ini akan menghapus semua izin yang ada pada kunci vault bernama Contoso03Vault.
-Contoh ini mengidentifikasi aplikasi dengan ID objek prinsipal layanan.
+Perintah ini menghapus semua izin yang dimiliki aplikasi pada kubah kunci bernama Contoso03Vault.
+Contoh ini mengidentifikasi aplikasi dengan ID objek dari prinsipal layanan.
 
-### Contoh 4: Hapus izin untuk penyedia sumber daya Microsoft.Compute
+### Contoh 4: Menghapus izin untuk penyedia sumber daya Microsoft.Compute
 ```powershell
 PS C:\> Remove-AzKeyVaultAccessPolicy -VaultName 'Contoso03Vault' -ResourceGroupName 'Group14' -EnabledForDeployment
 ```
 
-Perintah ini menghapus izin untuk penyedia sumber daya Microsoft.Compute untuk mendapatkan rahasia dari Contoso03Vault.
+Perintah ini menghapus izin bagi penyedia sumber daya Microsoft.Compute untuk mendapatkan rahasia dari Contoso03Vault.
 
 ## PARAMETERS
 
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Menentukan alamat email pengguna yang aksesnya ingin Anda hapus.
+Menentukan alamat email pengguna pengguna yang aksesnya ingin Anda hapus.
 
 ```yaml
 Type: System.String
@@ -252,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDeployment
-Jika ditentukan, menonaktifkan rahasia rahasia dari key vault ini oleh penyedia sumber daya Microsoft.Compute saat direferensikan dalam pembuatan sumber daya.
+Jika ditentukan, menonaktifkan pengambilan rahasia dari kubah kunci ini oleh penyedia sumber daya Microsoft.Compute ketika dirujuk dalam pembuatan sumber daya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForDiskEncryption
-Jika ditentukan, menonaktifkan rahasia rahasia dari penyimpanan kunci ini dengan Enkripsi Disk Azure.
+Jika ditentukan, menonaktifkan pengambilan rahasia dari kubah kunci ini menurut Azure Disk Encryption.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -282,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledForTemplateDeployment
-Jika ditentukan, menonaktifkan rahasia rahasia dari key vault ini oleh Azure Resource Manager saat direferensikan dalam templat.
+Jika ditentukan, menonaktifkan pengambilan rahasia dari kubah kunci ini oleh Azure Resource Manager ketika direferensikan dalam templat.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Key Vault.
+Key Vault objek.
 
 ```yaml
 Type: Microsoft.Azure.Commands.KeyVault.Models.PSKeyVault
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek pengguna atau prinsipal layanan dalam Azure Active Directory tujuan untuk menghapus izin.
+Menentukan ID objek dari pengguna atau prinsipal layanan dalam Azure Active Directory untuk menghapus izin.
 
 ```yaml
 Type: System.String
@@ -327,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -343,8 +346,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan kunci vault yang kebijakan aksesnya sedang diubah.
-Jika tidak ditentukan, cmdlet ini akan mencari kunci vault dalam langganan saat ini.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang kebijakan aksesnya sedang diubah.
+Jika tidak ditentukan, cmdlet ini mencari kubah kunci dalam langganan saat ini.
 
 ```yaml
 Type: System.String
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-KeyVault Resource Id.
+Id Sumber Daya KeyVault.
 
 ```yaml
 Type: System.String
@@ -374,8 +377,8 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-Menentukan nama prinsipal layanan aplikasi yang izinnya ingin Anda hapus.
-Tentukan ID aplikasi, yang juga dikenal sebagai ID klien, yang terdaftar untuk aplikasi di Azure Active Directory.
+Menentukan nama utama layanan aplikasi yang izinnya ingin Anda hapus.
+Tentukan ID aplikasi, juga dikenal sebagai ID klien, terdaftar untuk aplikasi di Azure Active Directory.
 
 ```yaml
 Type: System.String
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ### -SubscriptionId
 ID langganan.
 Secara default, cmdlet dijalankan dalam langganan yang diatur dalam konteks saat ini. Jika pengguna menentukan langganan lain, cmdlet saat ini dijalankan dalam langganan yang ditentukan oleh pengguna.
-Mengganti langganan hanya berlaku selama siklus hidup cmdlet saat ini. Langganan tidak mengubah langganan dalam konteks, dan tidak memengaruhi cmdlet berikutnya.
+Mengesampingkan langganan hanya berlaku selama siklus hidup cmdlet saat ini. Ini tidak mengubah langganan dalam konteks, dan tidak mempengaruhi cmdlet berikutnya.
 
 ```yaml
 Type: System.String
@@ -407,7 +410,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Menentukan nama utama pengguna yang aksesnya ingin Anda hapus.
+Menentukan nama utama pengguna pengguna yang aksesnya ingin Anda hapus.
 
 ```yaml
 Type: System.String
@@ -422,8 +425,8 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
-Cmdlet ini akan menghapus izin untuk key vault yang ditentukan parameter ini.
+Menentukan nama kubah kunci.
+Cmdlet ini menghapus izin untuk kubah kunci yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -438,7 +441,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -454,7 +457,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -469,7 +472,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

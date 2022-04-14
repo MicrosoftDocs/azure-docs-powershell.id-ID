@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/New-AzApiManagementAuthorizationServer.md
-ms.openlocfilehash: 9686bacd794a3298b879f45fcb1f987b026a71dc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d69e068f92a15cf8abfb4cbb298a71832e4891be
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140558179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261519"
 ---
 # New-AzApiManagementAuthorizationServer
 
 ## SYNOPSIS
 Membuat server otorisasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/new-azapimanagementauthorizationserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +36,7 @@ New-AzApiManagementAuthorizationServer -Context <PsApiManagementContext> [-Serve
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzApiManagementAuthorizationServer** membuat server otorisasi Manajemen API Azure.
+Cmdlet **New-AzApiManagementAuthorizationServer** membuat server otorisasi Azure API Management.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Perintah ini membuat server otorisasi.
 
 ### Contoh 2
 
-Membuat server otorisasi. (otomatisgenerated)
+Membuat server otorisasi. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -58,7 +61,7 @@ New-AzApiManagementAuthorizationServer -AccessTokenSendingMethods AuthorizationH
 
 ### -AccessTokenSendingMethods
 Menentukan array metode untuk mengirim token akses.
-psdx_paramvalues KepalaOtor dan Kueri.
+psdx_paramvalues AuthorizationHeader dan Query.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessTokenSendingMethod[]
@@ -74,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthorizationEndpointUrl
-Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan izin.
+Menentukan titik akhir otorisasi untuk mengautentikasi pemilik sumber daya dan mendapatkan hibah otorisasi.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 
 ### -AuthorizationRequestMethods
 Menentukan array metode permintaan otorisasi.
-Nilai valid adalah: GET, POST.
+Nilai yang valid adalah: GET, POST.
 Nilai defaultnya adalah GET.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ClientAuthenticationMethods
 Menentukan array metode autentikasi klien.
-psdx_paramvalues Dasar dan Badan.
+psdx_paramvalues Dasar dan Tubuh.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementClientAuthenticationMethod[]
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -229,9 +232,9 @@ Accept wildcard characters: False
 ```
 
 ### -GrantTypes
-Menentukan array tipe pemberian.
+Menentukan array tipe hibah.
 psdx_paramvalues
-- KodeOtorisasi
+- Kode Otorisasi
 - ClientCredentials 
 - Implisit 
 - ResourceOwnerPassword
@@ -312,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportState
-Menunjukkan apakah akan mendukung parameter *State* .
+Menunjukkan apakah akan mendukung parameter *Negara Bagian* .
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -326,8 +329,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -TokenParameters
-Menentukan parameter tubuh tambahan menggunakan format **application/x-www-form-urlencoded** .
+### -TokenBodyParameters
+Menentukan parameter isi tambahan menggunakan format **aplikasi/x-www-form-urlencoded** .
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -342,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -TokenEndpointUrl
-Menentukan URL titik akhir token yang digunakan oleh klien untuk mendapatkan token akses sebagai ganti untuk menyajikan izin otorisasi atau token refresh.
+Menentukan URL titik akhir token yang digunakan oleh klien untuk mendapatkan token akses dengan imbalan menyajikan hibah otorisasi atau token refresh.
 
 ```yaml
 Type: System.String
@@ -357,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -373,7 +376,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementAccessTokenSendingMethod[]
 

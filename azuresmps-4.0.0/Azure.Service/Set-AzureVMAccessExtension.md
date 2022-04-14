@@ -4,11 +4,11 @@ ms.assetid: 8F881112-3603-4EE7-88A4-ED45040A60AC
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: a8f71ef7e9b2e681490a293d4067519d05414043
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142381535"
 ---
 # Set-AzureVMAccessExtension
 
@@ -33,7 +33,7 @@ Set-AzureVMAccessExtension [-Disable] [[-ReferenceName] <String>] [[-Version] <S
  [-InformationVariable <String>] [<CommonParameters>]
 ```
 
-### UninstallAccessExtension
+### Menghapus instalanAccessExtension
 ```
 Set-AzureVMAccessExtension [-Uninstall] [[-ReferenceName] <String>] [[-Version] <String>] [-ForceUpdate]
  -VM <IPersistentVM> [-Profile <AzureSMProfile>] [-InformationAction <ActionPreference>]
@@ -41,21 +41,21 @@ Set-AzureVMAccessExtension [-Uninstall] [[-ReferenceName] <String>] [[-Version] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureVMAccessExtension** menambahkan Ekstensi VMAccess Mesin Virtual ke komputer virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan kata sandi ini harus segera diubah setelah masuk ke komputer.
+Cmdlet **Set-AzureVMAccessExtension** menambahkan Virtual Machine VMAccess Extension ke mesin virtual. Ekstensi VMAccess dapat digunakan untuk mengatur kata sandi sementara dan ini harus segera diubah setelah masuk ke komputer.
 
 ## EXAMPLES
 
-### Contoh 1: Mengatur ekstensi VMAccess yang diterapkan ke komputer virtual yang ditentukan
+### Contoh 1: Atur ekstensi VMAccess yang diterapkan ke mesin virtual tertentu
 ```
 PS C:\> Set-AzureVMAccessExtension -VM $VM -UserName $User -Password $PWD;
 ```
 
-Perintah ini mengatur ekstensi VMAccess yang diterapkan ke komputer virtual yang ditentukan seperti yang disimpan dalam $VM.
+Perintah ini mengatur ekstensi VMAccess yang diterapkan ke mesin virtual tertentu seperti yang disimpan dalam variabel $VM.
 
 ## PARAMETERS
 
-### -Disable
-Mengindikasikan bahwa cmdlet ini mengatur Status Ekstensi menjadi Nonaktif.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet ini mengatur Status Ekstensi ke Nonaktif.
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceUpdate
-Mengindikasikan bahwa cmdlet ini akan menggunakan kembali konfigurasi untuk ekstensi saat konfigurasi belum diperbarui.
+Menunjukkan bahwa cmdlet ini menerapkan kembali konfigurasi ke ekstensi ketika konfigurasi belum diperbarui.
 
 ```yaml
 Type: SwitchParameter
@@ -85,16 +85,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Menentukan kata sandi untuk mengatur ulang kredensial komputer virtual.
+Menentukan kata sandi untuk mengatur ulang kredensial mesin virtual.
 
 ```yaml
 Type: String
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -157,10 +157,10 @@ Accept wildcard characters: False
 ### -ReferenceName
 Menentukan nama referensi ekstensi akses.
 
-Ini adalah string yang ditetapkan pengguna yang digunakan untuk merujuk ke ekstensi.
-Ekstensi ditentukan saat ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
-Untuk pembaruan berikutnya, Anda harus menentukan nama referensi yang digunakan sebelumnya saat memperbarui ekstensi.
-*NamaReferensi* yang ditetapkan untuk ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM.**
+Ini adalah string yang ditentukan pengguna yang digunakan untuk merujuk ke ekstensi.
+Ini ditentukan ketika ekstensi ditambahkan ke mesin virtual untuk pertama kalinya.
+Untuk pembaruan berikutnya, Anda harus menentukan nama referensi yang sebelumnya digunakan saat memperbarui ekstensi.
+*ReferenceName* yang ditetapkan ke ekstensi dikembalikan menggunakan cmdlet **Get-AzureVM**.
 
 ```yaml
 Type: String
@@ -174,8 +174,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Uninstall
-Menunjukkan apakah cmdlet ini menghapus instalasi ekstensi akses.
+### -Hapus instalan
+Menunjukkan apakah cmdlet ini menghapus instalan ekstensi akses.
 
 ```yaml
 Type: SwitchParameter
@@ -189,8 +189,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -UserName
-Menentukan nama pengguna yang digunakan cmdlet ini untuk mereset kredensial komputer virtual.
+### -NamaPengguna
+Menentukan nama pengguna yang digunakan cmdlet ini untuk mereset kredensial mesin virtual.
 
 ```yaml
 Type: String
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -247,6 +247,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVMAccessExtension](./Get-AzureVMAccessExtension.md)
 
-[Remove-AzureVMAccessExtension](./Remove-AzureVMAccessExtension.md)
+[Hapus-AzureVMAccessExtension](./Remove-AzureVMAccessExtension.md)
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxContactDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/New-AzDataBoxContactDetailsObject.md
 ms.openlocfilehash: d0482c9234dc242e0260609f4c8d788d46d9d840
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140333681"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142306861"
 ---
 # New-AzDataBoxContactDetailsObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140333681"
 Membuat objek dalam memori untuk ContactDetails
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.databox/new-azdataboxcontactdetailsobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databox/new-azdataboxcontactdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Membuat objek dalam memori untuk ContactDetails
 
 ## EXAMPLES
 
-### Contoh 1: {{ Membuat objek dalam memori untuk ContactDetails }}
+### Contoh 1: {{ Buat objek dalam memori untuk ContactDetails }}
 ```powershell
 PS C:\> $contactDetail = New-AzDataBoxContactDetailsObject -ContactName "random" -EmailList @("emailId") -Phone "1234567891"
 PS C:\>  $contactDetail
@@ -43,7 +43,7 @@ ContactName EmailList            Mobile Phone      PhoneExtension
 random      {emailId}        1234567891
 ```
 
-{{ Membuat objek dalam memori untuk ContactDetails }}
+{{ Buat objek dalam memori untuk ContactDetails }}
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailList
-Daftar Id-email untuk diberi tahu tentang kemajuan pekerjaan.
+Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
 
 ```yaml
 Type: System.String[]
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Seluler
-Nomor ponsel orang kontak.
+### -Mobile
+Nomor ponsel orang yang dihubungi.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -NotificationPreference
 Preferensi pemberitahuan untuk tahap pekerjaan.
-Untuk membuat, lihat bagian CATATAN untuk properti NOTIFICATIONPREFERENCE dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti NOTIFICATIONPREFERENCE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBox.Models.Api20210301.INotificationPreference[]
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Telepon
-Telepon nomor kontak tersebut.
+Telepon nomor kontak.
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneExtension
-Telepon nomor ekstensi orang kontak.
+Telepon nomor ekstensi kontak.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -156,9 +156,9 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-NOTIFICATIONPREFERENCE <INotificationPreference[]>: Notification preference for a job stage.
+NOTIFICATIONPREFERENCE <INotificationPreference[]>: Preferensi pemberitahuan untuk tahap pekerjaan.
   - `SendNotification <Boolean>`: Pemberitahuan diperlukan atau tidak.
-  - `StageName <NotificationStageName>`: Nama tahapan.
+  - `StageName <NotificationStageName>`: Nama panggung.
 
 ## RELATED LINKS
 

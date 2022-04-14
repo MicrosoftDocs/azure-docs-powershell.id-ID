@@ -5,19 +5,22 @@ online version: https://docs.microsoft.com/powershell/module/az.postgresql/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/Update-AzPostgreSqlServer.md
-ms.openlocfilehash: ec6868e2bd76cf1c290ec6340b771b03b1ccc772
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4271745d240f3a4379c976747024b2710b4b99b9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139999277"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142369817"
 ---
 # Update-AzPostgreSqlServer
 
 ## SYNOPSIS
 Memperbarui server yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzPostSqlConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzPostSqlConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/update-azpostgresqlserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,11 +46,11 @@ Update-AzPostgreSqlServer -InputObject <IPostgreSqlIdentity> [-AdministratorLogi
 ## DESCRIPTION
 Memperbarui server yang sudah ada.
 Isi permintaan dapat berisi satu hingga banyak properti yang ada dalam definisi server normal.
-Gunakan Update-AzPostSqlConfiguration ini jika Anda ingin memperbarui parameter server seperti wait_timeout atau net_retry_count.
+Gunakan Update-AzPostSqlConfiguration jika Anda menginginkan parameter server pembaruan seperti wait_timeout atau net_retry_count.
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui server PostgreSql menurut grup sumber daya dan nama server
+### Contoh 1: Memperbarui server PostgreSql menurut grup sumber daya dan nama server
 ```powershell
 PS C:\> Update-AzPostgreSqlServer -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer -SslEnforcement Disabled
 
@@ -58,7 +61,7 @@ postgresqltestserver eastus   pwsh               9.6     5120                   
 
 Cmdlet ini memperbarui server PostgreSql menurut grup sumber daya dan nama server.
 
-### Contoh 2: Perbarui server PostgreSql menurut identitas.
+### Contoh 2: Update PostgreSql server by identity.
 ```powershell
 PS C:\> Get-AzPostgreSqlServer -ResourceGroupName PostgreSqlTestRG -ServerName PostgreSqlTestServer | Update-AzPostgreSqlServer -BackupRetentionDay 23
 
@@ -67,12 +70,12 @@ Name                 Location AdministratorLogin Version StorageProfileStorageMb
 postgresqltestserver eastus   pwsh               9.6     5120                    GP_Gen5_4 GeneralPurpose Disabled
 ```
 
-Cmdlet ini memperbarui server PostgreSql berdasarkan identitas.
+Cmdlet ini memperbarui server PostgreSql menurut identitas.
 
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
-Kata sandi administrator masuk.
+Kata sandi log masuk administrator.
 
 ```yaml
 Type: System.Security.SecureString
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan.
+Jalankan perintah sebagai pekerjaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,8 +105,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Pencadangan hari penyimpanan untuk server.
-Hitungan hari antara 7 dan 35.
+Mencadangkan hari penyimpanan untuk server.
+Hitungan hari adalah antara 7 dan 35.
 
 ```yaml
 Type: System.Int32
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Parameter Identitas.
-Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Models.IPostgreSqlIdentity
@@ -150,7 +153,7 @@ Accept wildcard characters: False
 
 ### -MinimalTlsVersion
 Atur versi TLS minimal untuk koneksi ke server saat SSL diaktifkan.
-Defaultnya adalah TLSEnforcementDisabled.accepted values: TLS1_0, TLS1_1, TLS1_2, TLSEnforcementDisabled.
+Defaultnya adalah nilai TLSEnforcementDisabled.accepted: TLS1_0, TLS1_1, TLS1_2, TLSEnforcementDisabled.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Support.MinimalTlsVersionEnum
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationRole
-Replikasi peran server.
+Peran replikasi server.
 
 ```yaml
 Type: System.String
@@ -210,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya B_Gen4_1, GP_Gen5_8.
+Nama sku, biasanya, tingkat + family + core, misalnya B_Gen4_1, GP_Gen5_8.
 
 ```yaml
 Type: System.String
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-The scale up/out capacity, representing server's compute units.
+Kapasitas peningkatan/keluar skala, mewakili unit komputasi server.
 
 ```yaml
 Type: System.Int32
@@ -271,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Tingkatan SKU tertentu, misalnya Dasar.
+Tingkat SKU tertentu, misalnya Basic.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Support.SkuTier
@@ -286,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslEnforcement
-Aktifkan penerapan ssl atau jangan saat tersambung ke server.
+Aktifkan penerapan ssl atau tidak saat tersambung ke server.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Support.SslEnforcementEnum
@@ -301,7 +304,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAutogrow
-Aktifkan Storage Auto Grow.
+Aktifkan Storage Pertumbuhan Otomatis.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.PostgreSql.Support.StorageAutogrow
@@ -316,7 +319,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks diperbolehkan untuk server.
+Penyimpanan maks yang diperbolehkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -361,7 +364,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +380,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -392,7 +395,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -417,7 +420,7 @@ INPUTOBJECT <IPostgreSqlIdentity>: Parameter Identitas.
   - `[FirewallRuleName <String>]`: Nama aturan firewall server.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[LocationName <String>]`: Nama lokasi.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SecurityAlertPolicyName <SecurityAlertPolicyName?>]`: Nama kebijakan pemberitahuan keamanan.
   - `[ServerName <String>]`: Nama server.
   - `[SubscriptionId <String>]`: ID langganan target.

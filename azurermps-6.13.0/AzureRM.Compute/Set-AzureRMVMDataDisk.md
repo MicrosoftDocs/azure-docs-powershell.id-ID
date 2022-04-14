@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRMVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Set-AzureRMVMDataDisk.md
 ms.openlocfilehash: 4ed0abb355bf7a755e5acaa36f8bb11e88d80c5c
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132414991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141843825"
 ---
 # Set-AzureRmVMDataDisk
 
@@ -22,7 +22,7 @@ Mengubah properti disk data mesin virtual.
 
 ## SYNTAX
 
-### ChangeWithName
+### UbahWithName
 ```
 Set-AzureRmVMDataDisk [-VM] <PSVirtualMachine> [-Name] <String> [[-Caching] <CachingTypes>]
  [[-DiskSizeInGB] <Int32>] [-StorageAccountType <String>] [-WriteAccelerator]
@@ -47,20 +47,20 @@ PS C:\> $VM = Get-AzureRMVM -ResourceGroupName "ResourceGroup11" -VMName "Contos
 PS C:\> Set-AzureRmVMDataDisk -VM $VM -Name "DataDisk01" -Caching ReadWrite | Update-AzureRmVM
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzureRmVM**.
-Perintah menyimpannya di $VM variabel.
-Perintah kedua memodifikasi mode cache untuk disk data yang bernama DataDisk01 di komputer virtual dalam $VM.
+Perintah pertama mendapatkan mesin virtual bernama ContosoVM07 menggunakan **Get-AzureRmVM**.
+Perintah menyimpannya dalam variabel $VM.
+Perintah kedua mengubah mode cache untuk disk data bernama DataDisk01 pada mesin virtual di $VM.
 Perintah melewati hasil ke cmdlet Update-AzureRmVM, yang mengimplementasikan perubahan Anda.
-Perubahan pada mode kas menyebabkan mesin virtual memulai ulang.
+Perubahan pada mode kas menyebabkan mesin virtual dimulai ulang.
 
 ## PARAMETERS
 
 ### -Caching
-Menentukan mode cache disk.
+Menentukan mode cache diska.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - ReadOnly
 - ReadWrite Nilai defaultnya adalah ReadWrite.
-Mengubah nilai ini menyebabkan mesin virtual memulai ulang.
+Mengubah nilai ini menyebabkan mesin virtual dimulai ulang.
 Pengaturan ini mempengaruhi konsistensi dan kinerja disk.
 
 ```yaml
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika (LUN) disk data yang dimodifikasi cmdlet ini.
+Menentukan nomor unit logika (LUN) disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama disk data yang dimodifikasi cmdlet ini.
+Menentukan nama disk data yang diubah cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe akun disk terkelola mesin virtual.
+Tipe akun disk yang dikelola mesin virtual.
 
 ```yaml
 Type: System.String
@@ -152,8 +152,8 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual yang digunakan cmdlet ini untuk memodifikasi disk data.
-Untuk mendapatkan objek mesin virtual, gunakan Get-AzureRmVM cmdlet.
+Menentukan mesin virtual di mana cmdlet ini mengubah disk data.
+Untuk mendapatkan objek mesin virtual, gunakan cmdlet Get-AzureRmVM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Models.PSVirtualMachine
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -191,9 +191,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 
@@ -205,6 +205,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[Update-AzureRmVM](./Update-AzureRmVM.md)
+[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
 
 

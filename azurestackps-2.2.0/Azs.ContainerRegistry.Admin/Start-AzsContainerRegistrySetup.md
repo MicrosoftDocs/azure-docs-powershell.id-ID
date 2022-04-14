@@ -4,16 +4,16 @@ Module Name: Azs.ContainerRegistry.Admin
 online version: https://docs.microsoft.com/powershell/module/azs.containerregistry.admin/start-azscontainerregistrysetup
 schema: 2.0.0
 ms.openlocfilehash: 8a06a707409c4c158aa22c4de288d42f72854246
-ms.sourcegitcommit: 1cf30f43dda849e046415dd10e55625f12ef21c4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "136578869"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142352123"
 ---
 # Start-AzsContainerRegistrySetup
 
 ## SYNOPSIS
-Invokes container registry certificate uploading and service deployment.
+Mencabut pengunggahan sertifikat registri kontainer dan penyebaran layanan.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Start-AzsContainerRegistrySetup -INPUTOBJECT \<IContainerRegistryAdminIdentity> 
 ```
 
 ## DESCRIPTION
-Invokes container registry certificate uploading and service deployment.
+Mencabut pengunggahan sertifikat registri kontainer dan penyebaran layanan.
 
 ## EXAMPLES
 
@@ -59,9 +59,9 @@ PS C:\> Start-AzsContainerRegistrySetup -Password $password -SslCertInputFile $p
 }
 ```
 
-Invokes container registry certificate uploading and service deployment.
+Mencabut pengunggahan sertifikat registri kontainer dan penyebaran layanan.
 
-### Contoh 2: Mulai Azs ContainerRegistry Setup when another instance of Setup is already started
+### Contoh 2: Mulai Penyiapan Azs ContainerRegistry saat contoh penyiapan lain sudah dimulai
 ```powershell
 PS C:\> Start-AzsContainerRegistrySetup -Password $password -SslCertInputFile $pfx_cert_path | ConvertTo-Json
 
@@ -73,7 +73,7 @@ At line:1 char:1
     + FullyQualifiedErrorId : AcrDeploymentStillRunning,Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistryAdmin.Cmdlets.StartAzsContainerRegistrySetup_StartExpanded
 ```
 
-Mengembalikan kesalahan jika contoh Penyetelan lain sudah dimulai.
+Mengembalikan kesalahan jika contoh Penyiapan lain sudah dimulai.
 
 ## PARAMETERS
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistryAdmin.Models.IContainerRegistryAdminIdentity
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Kata sandi sertifikat ssl.
+Kata sandi sertifikat Ssl.
 
 ```yaml
 Type: System.Security.SecureString
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -SslCertInputFile
-File Input untuk SslCert (Sertifikat Ssl dalam format base64.)
+File Input untuk SslCert (sertifikat Ssl dalam format base64.)
 
 ```yaml
 Type: System.String
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartSetupRequest
-Container registry setup properties.
-Untuk membuat, lihat bagian CATATAN untuk properti STARTSETUPREQUEST dan membuat tabel hash.
+Properti penyetelan registri kontainer.
+Untuk membangun, lihat bagian CATATAN untuk properti STARTSETUPREQUEST dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistryAdmin.Models.Api20191101Preview.IContainerRegistrySetupProperty
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, [lihat about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -236,17 +236,17 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT \<IContainerRegistryAdminIdentity> : Parameter Identitas
+INPUTOBJECT \<IContainerRegistryAdminIdentity>: Parameter Identitas
   - `[CapacityName <String>]`: Nama parameter kapasitas.
   - `[ConfigurationName <String>]`: Nama konfigurasi.
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[Location <String>]`: Nama kawasan Azure.
-  - `[QuotaName <String>]`: Nama kuota registri wadah.
+  - `[QuotaName <String>]`: Nama kuota registri kontainer.
   - `[SubscriptionId <String>]`: ID langganan target.
 
-STARTSETUPREQUEST \<IContainerRegistrySetupProperty> : Properti penyiapan registri wadah.
-  - `[Password <SecureString>]`: Kata sandi sertifikat ssl.
-  - `[SslCertBase64 <Byte[]>]`: Sertifikat ssl dalam format base64.
+STARTSETUPREQUEST \<IContainerRegistrySetupProperty>: Properti penyiapan registri kontainer.
+  - `[Password <SecureString>]`: Kata sandi sertifikat Ssl.
+  - `[SslCertBase64 <Byte[]>]`: Sertifikat SSL dalam format base64.
 
 ## RELATED LINKS
 

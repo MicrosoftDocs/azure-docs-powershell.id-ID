@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Register-AzStaticWebAppUserProvidedFunctionApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Register-AzStaticWebAppUserProvidedFunctionApp.md
 ms.openlocfilehash: fa185df9c071048f2bc2eac99ce24c21db7869e8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140064179"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142220023"
 ---
 # Register-AzStaticWebAppUserProvidedFunctionApp
 
 ## SYNOPSIS
-Deskripsi untuk Mendaftarkan pengguna aplikasi fungsi yang disediakan dengan build situs statis
+Deskripsi untuk Mendaftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.websites/register-azstaticwebappuserprovidedfunctionapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/register-azstaticwebappuserprovidedfunctionapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,11 +39,11 @@ Register-AzStaticWebAppUserProvidedFunctionApp -EnvironmentName <String> -Functi
 ```
 
 ## DESCRIPTION
-Deskripsi untuk Mendaftarkan pengguna aplikasi fungsi yang disediakan dengan build situs statis
+Deskripsi untuk Mendaftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
 
 ## EXAMPLES
 
-### Contoh 1: Mendaftarkan pengguna aplikasi fungsi yang disediakan dengan situs statis
+### Contoh 1: Mendaftarkan aplikasi fungsi yang disediakan pengguna dengan situs statis
 ```powershell
 PS C:\> Register-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName azure-rg-test -Name staticweb-pwsh02 -FunctionAppName funcapp-portal01-test -FunctionAppResourceId '/subscriptions/xxxxxxxxxxxxx/resourcegroups/azure-rg-test/providers/Microsoft.Web/sites/funcapp-portal01-test' -FunctionAppRegion 'Central US'
 
@@ -52,10 +52,10 @@ Kind Name                  Type
      funcapp-portal01-test Microsoft.Web/staticSites/userProvidedFunctionApps
 ```
 
-Perintah ini mendaftarkan aplikasi fungsi yang disediakan pengguna ke situs statis.
+Perintah ini mendaftarkan aplikasi fungsi yang disediakan pengguna dengan situs statis.
 -FunctionAppRegion adalah kawasan aplikasi fungsi.
 
-### Contoh 2: Mendaftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
+### Contoh 2: Daftarkan aplikasi fungsi yang disediakan pengguna dengan build situs statis
 ```powershell
 PS C:\> Register-AzStaticWebAppUserProvidedFunctionApp -ResourceGroupName azure-rg-test -Name staticweb-pwsh02 -FunctionAppName functionapp-portal02 -FunctionAppResourceId '/subscriptions/xxxxxxxxx/resourcegroups/azure-rg-test/providers/Microsoft.Web/sites/functionapp-portal02' -FunctionAppRegion 'Central US' -EnvironmentName 5
 
@@ -114,8 +114,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Forced
-Tentukan \<code\>true\</code\> untuk memaksa pembaruan konfigurasi auth pada aplikasi fungsi meskipun penyedia AzureStaticWebApps sudah dikonfigurasi di aplikasi fungsi.
+### -Dipaksa
+Tentukan \<code\>true\</code\> untuk memaksa pembaruan konfigurasi auth pada aplikasi fungsi meskipun penyedia AzureStaticWebApps sudah dikonfigurasi pada aplikasi fungsi.
 Defaultnya adalah \<code\>false\</code\>.
 
 ```yaml
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionAppName
-Nama aplikasi fungsi untuk mendaftar pada build situs statis.
+Nama aplikasi fungsi untuk mendaftar dengan build situs statis.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionAppRegion
-Kawasan aplikasi fungsi yang terdaftar dengan situs statis
+Wilayah aplikasi fungsi yang terdaftar di situs statis
 
 ```yaml
 Type: System.String
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -FunctionAppResourceId
-Id sumber daya dari aplikasi fungsi yang didaftarkan dengan situs statis
+Id sumber daya aplikasi fungsi yang terdaftar di situs statis
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
+### -Jenis
 Jenis sumber daya.
 
 ```yaml
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya tersebut berada.
+Nama grup sumber daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

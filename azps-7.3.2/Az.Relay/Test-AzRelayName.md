@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.relay/test-azrel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Test-AzRelayName.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Relay/Relay/help/Test-AzRelayName.md
-ms.openlocfilehash: fa576f6c684ae1e5e2bae1a51c6c1a5641279dd9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: bae751080046a470a1ff405471886cc0db08801c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196135"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142342277"
 ---
 # Test-AzRelayName
 
 ## SYNOPSIS
 Memeriksa Ketersediaan Nama NameSpace yang diberikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.relay/test-azrelayname) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Test-AzRelayName [-Namespace] <String> [-DefaultProfile <IAzureContextContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-Az Cmdlet** Check Availability of the NameSpace Name
+Cmdlet **Test-AzRelayName** Memeriksa Ketersediaan Nama NameSpace
 
 ## EXAMPLES
 
@@ -55,7 +58,7 @@ NameAvailable    Reason Message
         False NameInUse The specified service namespace is not available.
 ```
 
-Mengembalikan status pada ketersediaan nama ruang nama
+Mengembalikan status ketersediaan nama ruang nama
 
 ## PARAMETERS
 
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Relay Namespace Name.
+Relai Nama Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

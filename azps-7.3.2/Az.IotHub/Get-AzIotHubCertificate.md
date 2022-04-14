@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubCertificate.md
-ms.openlocfilehash: 3008fb886138300b47c1c08e707b0398a54c8cd3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9d1de947d1ddd1202a17b3af5d6264015411fb09
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381530"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142256857"
 ---
 # Get-AzIotHubCertificate
 
 ## SYNOPSIS
-Mencantumkan semua sertifikat atau sertifikat tertentu yang dimuat dalam Azure IoT Hub. 
+Mencantumkan semua sertifikat atau sertifikat tertentu yang terdapat dalam Azure IoT Hub. 
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubcertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubCertificate [-ResourceId] <String> [-CertificateName <String>]
 ```
 
 ## DESCRIPTION
-Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub, lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
+Untuk penjelasan mendetail tentang sertifikat CA dalam Azure IoT Hub, lihathttps://docs.microsoft.com/azure/iot-hub/iot-hub-x509ca-overview
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ myresourcegroup     myiothub3   mycert1         Unverified 12/04/2027 13:12
 myresourcegroup     myiothub    mycert2         Unverified 12/04/2027 13:12
 ```
 
-Daftar semua sertifikat di MyIotHub
+Mencantumkan semua sertifikat di MyIotHub
 
 ### Contoh 2
 ```
@@ -70,7 +73,7 @@ Created             : 1/01/2017 16:01
 Etag                : AAAAAAFpObE=
 ```
 
-Memperlihatkan detail tentang MyCertificate
+Tampilkan detail tentang MyCertificate
 
 ## PARAMETERS
 
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -165,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

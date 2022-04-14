@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSshPublicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Add-AzVMSshPublicKey.md
 ms.openlocfilehash: 06bee28e2fa1543d3b96d645894c5a3bc5d3a355
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140468081"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272877"
 ---
 # Add-AzVMSshPublicKey
 
 ## SYNOPSIS
-Menambahkan kunci publik untuk KEYS untuk mesin virtual, ketika hanya membuat VM.
+Menambahkan kunci publik untuk SSH untuk mesin virtual, ketika hanya membuat VM.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/add-azvmsshpublickey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/add-azvmsshpublickey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Add-AzVMSshPublicKey [-VM] <PSVirtualMachine> [[-KeyData] <String>] [[-Path] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzVMSshPublicKey** menambahkan kunci publik yang dapat Anda gunakan untuk menyambungkan ke mesin virtual Linux melalui Secure Shell (SHELL). Hal ini tidak dapat digunakan setelah pembuatan VM, jika Anda mencoba menggunakan ini setelah pembuatan VM tanpa Update-AzVM, tidak akan ada kesalahan, jika Anda menggunakan perintah dengan Update-AzVM, perintah akan muncul kesalahan.
+Cmdlet **Add-AzVMSshPublicKey** menambahkan kunci publik yang dapat Anda gunakan untuk menyambungkan ke mesin virtual Linux melalui Secure Shell (SSH). Ini tidak dapat digunakan setelah pembuatan VM, jika Anda mencoba menggunakannya setelah pembuatan VM tanpa Update-AzVM, tidak akan ada kesalahan, jika Anda menggunakan perintah dengan Update-AzVM, perintah akan mengalami kesalahan.
 
 ## EXAMPLES
 
@@ -39,14 +39,14 @@ PS C:\> $VirtualMachine = Get-AzVM -ResourceGroupName "ResourceGroup11" -Name "V
 PS C:\> $VirtualMachine = Add-AzVMSshPublicKey -VM $VirtualMachine -KeyData "MIIDszCCApugAwIBAgIJALBV9YJCF/tAMA0GCSq12Ib3DQEB21QUAMEUxCzAJBgNV" -Path "/home/admin/.ssh/authorized_keys"
 ```
 
-Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 menggunakan cmdlet **Get-AzVM** .
-Perintah menyimpan mesin virtual di $VirtualMachine baru.
+Perintah pertama mendapatkan mesin virtual bernama VirtualMachine07 dengan menggunakan cmdlet **Get-AzVM** .
+Perintah menyimpan mesin virtual dalam variabel $VirtualMachine.
 Perintah kedua menambahkan kunci publik ke lokasi di VirtualMachine07 yang ditentukan parameter Jalur.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -61,8 +61,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyData
-Menentukan pengodean basis 64 dari kunci publik.
-Anda dapat menyambungkan ke mesin virtual Linux menggunakan LINUX atau menggunakan kunci yang ditentukan parameter ini.
+Menentukan pengodean basis 64 kunci publik.
+Anda dapat menyambungkan ke mesin virtual Linux dengan menggunakan SSH atau menggunakan kunci yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -76,9 +76,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur lengkap file, di komputer virtual, tempat cmdlet ini menyimpan kunci publik JPG.
-Jika file sudah ada, cmdlet ini akan menambahkan kunci ke file.
+### -Jalur
+Menentukan jalur lengkap file, di mesin virtual, di mana cmdlet ini menyimpan kunci publik SSH.
+Jika file sudah ada, cmdlet ini menambahkan kunci ke file.
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan objek mesin virtual yang telah dimodifikasi cmdlet ini.
+Menentukan objek mesin virtual yang diubah cmdlet ini.
 Untuk mendapatkan objek mesin virtual, gunakan cmdlet [Get-AzVM](./Get-AzVM.md) .
 Anda dapat menggunakan cmdlet [New-AzVMConfig](./New-AzVMConfig.md) untuk membuat objek mesin virtual.
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -126,6 +126,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-azvm](./Get-AzVM.md)
+[Get-AzVM](./Get-AzVM.md)
 
-[New-azvmConfig](./New-AzVMConfig.md)
+[New-AzVMConfig](./New-AzVMConfig.md)

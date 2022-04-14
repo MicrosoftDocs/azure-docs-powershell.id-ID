@@ -6,18 +6,21 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryPoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Get-AzRecoveryServicesBackupRecoveryPoint.md
-ms.openlocfilehash: aa0d9c000064b894a6065a30a191fd5a517facfb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 658dc09d58b74fab4988047f9f154963f85ad396
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184542"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142318019"
 ---
 # Get-AzRecoveryServicesBackupRecoveryPoint
 
 ## SYNOPSIS
 
-Dapatkan poin pemulihan untuk item yang dicadangkan.
+Mendapatkan titik pemulihan untuk item yang dicadangkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/get-azrecoveryservicesbackuprecoverypoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,13 +48,13 @@ Get-AzRecoveryServicesBackupRecoveryPoint [-Item] <ItemBase> [-RecoveryPointId] 
 
 ## DESCRIPTION
 
-Cmdlet **Get-AzRecoveryServicesBackupRecoveryPoint** mendapatkan titik pemulihan untuk item Azure Backup yang dicadangkan.
+Cmdlet **Get-AzRecoveryServicesBackupRecoveryPoint** mendapatkan poin pemulihan untuk item Azure Backup yang dicadangkan.
 Setelah item dicadangkan, objek **AzureRmRecoveryServicesBackupRecoveryPoint** memiliki satu atau beberapa titik pemulihan.
-Mengatur konteks vault menggunakan parameter -VaultId.
+Mengatur konteks kubah menggunakan parameter -VaultId.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan poin pemulihan dari minggu lalu untuk sebuah item
+### Contoh 1: Dapatkan poin pemulihan dari minggu lalu untuk item
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -62,12 +65,12 @@ PS C:\> $backupItem = Get-AzRecoveryServicesBackupItem -ContainerType AzureVM -W
 PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -Item $backupItem -StartDate $startdate.ToUniversalTime() -EndDate $enddate.ToUniversalTime() -VaultId $vault.ID
 ```
 
-Perintah pertama mendapatkan objek vault berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $startDate variabel.
+Perintah pertama mendapatkan objek kubah berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam variabel $startDate.
 Perintah ketiga mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $endDate.
-Perintah keempat mendapatkan wadah cadangan AzureVM, dan menyimpannya dalam $Container baru. Perintah kelima mendapatkan item cadangan berdasarkan beban kerjaType, VaultId lalu menyimpannya dalam $backupItem baru.
-Perintah terakhir mendapatkan array poin pemulihan untuk item di $BackupItem, lalu menyimpannya dalam variabel $rp pemulihan.
+Perintah keempat mendapatkan wadah cadangan AzureVM, dan menyimpannya dalam variabel $Container. Perintah kelima mendapatkan item cadangan berdasarkan workloadType, vaultId lalu menyimpannya dalam variabel $backupItem.
+Perintah terakhir mendapatkan array titik pemulihan untuk item dalam $BackupItem, lalu menyimpannya dalam variabel $rp.
 
-### Contoh 2: Dapatkan poin pemulihan yang siap dipindahkan ke VaultArchive
+### Contoh 2: Dapatkan titik pemulihan yang siap dipindahkan ke VaultArchive
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -78,12 +81,12 @@ PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate $startDate -E
 -IsReadyForMove $true -TargetTier VaultArchive
 ```
 
-Perintah pertama mendapatkan objek vault berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $startDate variabel.
+Perintah pertama mendapatkan objek kubah berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam variabel $startDate.
 Perintah ketiga mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $endDate.
-Perintah keempat mendapatkan item cadangan berdasarkan backupManagementType dan workloadType, vaultId lalu menyimpannya di $item baru.
-Perintah terakhir mendapatkan array poin pemulihan untuk item dalam $backupItem yang siap untuk dipindahkan ke tingkatan VaultArchive lalu menyimpannya dalam $rp baru.
+Perintah keempat mendapatkan item cadangan berdasarkan backupManagementType dan workloadType, vaultId lalu menyimpannya dalam variabel $item.
+Perintah terakhir mendapatkan array titik pemulihan untuk item dalam $backupItem yang siap dipindahkan ke tingkat VaultArchive lalu menyimpannya dalam variabel $rp.
 
-### Contoh 3: Dapatkan poin pemulihan di tier tertentu
+### Contoh 3: Dapatkan poin pemulihan di tingkat tertentu
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"
@@ -94,16 +97,16 @@ PS C:\> $rp = Get-AzRecoveryServicesBackupRecoveryPoint -StartDate $startDate -E
 -Tier VaultStandard
 ```
 
-Perintah pertama mendapatkan objek vault berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam $startDate variabel.
+Perintah pertama mendapatkan objek kubah berdasarkan vaultName. Perintah kedua mendapatkan tanggal dari tujuh hari yang lalu, lalu menyimpannya dalam variabel $startDate.
 Perintah ketiga mendapatkan tanggal hari ini, lalu menyimpannya dalam variabel $endDate.
-Perintah keempat mendapatkan item cadangan berdasarkan backupManagementType dan workloadType, vaultId lalu menyimpannya di $item baru.
-Perintah terakhir mendapatkan array poin pemulihan untuk item dalam $backupItem yang siap untuk dipindahkan ke tingkatan VaultArchive lalu menyimpannya dalam $rp baru. 
+Perintah keempat mendapatkan item cadangan berdasarkan backupManagementType dan workloadType, vaultId lalu menyimpannya dalam variabel $item.
+Perintah terakhir mendapatkan array titik pemulihan untuk item dalam $backupItem yang siap dipindahkan ke tingkat VaultArchive lalu menyimpannya dalam variabel $rp. 
 
 ## PARAMETERS
 
 ### -DefaultProfile
 
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 
 ### -EndDate
 
-Menentukan akhir dari rentang tanggal.
+Menentukan akhir rentang tanggal.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -135,7 +138,7 @@ Accept wildcard characters: False
 
 ### -IsReadyForMove
 
-Memfilter Titik Pemulihan berdasarkan tingkat apakah RP Siap untuk dipindahkan ke tingkat target. Gunakan ini bersama dengan parameter tier target.
+Memfilter Titik Pemulihan berdasarkan apakah RP Siap untuk berpindah ke tingkat target. Gunakan ini bersama dengan parameter tingkat target.
 
 ```yaml
 Type: System.Boolean
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 
 ### -Item
 
-Menentukan item di mana cmdlet ini mendapatkan poin pemulihan.
+Menentukan item di mana cmdlet ini mendapatkan titik pemulihan.
 Untuk mendapatkan objek **AzureRmRecoveryServicesBackupItem** , gunakan cmdlet **Get-AzRecoveryServicesBackupItem** .
 
 ```yaml
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 
 ### -TargetTier
 
-Tingkat target untuk memeriksa tingkat kesiapan pemindahan titik pemulihan. Saat ini hanya nilai yang valid adalah 'VaultArchive'.
+Tingkat target untuk memeriksa kesiapan pemindahan titik pemulihan. Saat ini hanya nilai yang valid adalah 'VaultArchive'.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointTier
@@ -231,9 +234,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
+### -Tingkat
 
-Filter titik pemulihan berdasarkan nilai tingkatan.
+Memfilter titik pemulihan berdasarkan nilai tingkat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.RecoveryPointTier
@@ -248,8 +251,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UseSecirisanryRegion
-Filter dari Wilayah Sekunder untuk Pemulihan Lintas Wilayah
+### -UseSecondaryRegion
+Filter dari Kawasan Sekunder untuk Pemulihan Lintas Kawasan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 
 ### -VaultId
 
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -280,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

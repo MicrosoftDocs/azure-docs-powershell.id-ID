@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.recoveryservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrSwitchProcessServerJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Start-AzRecoveryServicesAsrSwitchProcessServerJob.md
-ms.openlocfilehash: 09181a150bb02bf6d547f223e9b5f74966223512
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 00cd0ab40601ae18981fbbea689d060e50154466
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140196246"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142342781"
 ---
 # Start-AzRecoveryServicesAsrSwitchProcessServerJob
 
 ## SYNOPSIS
-Alihkan replikasi dari satu server Proses ke server proses lain untuk menyeimbangkan pemuatan.
+Beralih replikasi dari satu server Proses ke server lain untuk penyeimbangan beban.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/start-azrecoveryservicesasrswitchprocessserverjob) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Start-AzRecoveryServicesAsrSwitchProcessServerJob -Fabric <ASRFabric> -SourcePro
 ```
 
 ## DESCRIPTION
-**Start-AzRecoveryServicesAsrSwitchProcessServerJob** mengalihkan pergerakan data replikasi untuk mesin virtual yang ditentukan atau server Proses yang ditentukan ke server Proses target yang ditentukan. Digunakan untuk menyeimbangkan pemuatan atau beralih replikasi antar server Proses.
+**Start-AzRecoveryServicesAsrSwitchProcessServerJob** mengalihkan pergerakan data replikasi untuk mesin virtual tertentu atau server Proses tertentu ke server Proses target yang ditentukan. Digunakan untuk penyeimbangan beban atau beralih replikasi antar server Proses.
 
 ## EXAMPLES
 
@@ -35,19 +38,19 @@ Start-AzRecoveryServicesAsrSwitchProcessServerJob -Fabric <ASRFabric> -SourcePro
 PS C:\> Start-AzRecoveryServicesAsrSwitchProcessServerJob -Fabric $fabric -SourceProcessServer $sourceProcessServer  -TargetProcessServer $TargetProcessServer
 ```
 
-Pekerjaan untuk melacak server proses pengalihan untuk semua replikasi item yang dilindungi dari sumber ke server proses target.
+Tugas untuk melacak server proses peralihan untuk semua item yang dilindungi replikasi dari server proses sumber ke target.
 
 ### Contoh 2
 ```
 PS C:\> Start-AzRecoveryServicesAsrSwitchProcessServerJob -Fabric $fabric -SourceProcessServer $sourceProcessServer  -TargetProcessServer $TargetProcessServer -ReplicatedItem $rpList
 ```
 
-Pekerjaan untuk melacak server proses pengalihan untuk menyampaikan replikasi item yang dilindungi dari sumber ke server proses target.
+Tugas untuk melacak pengalihan server proses untuk item yang dilindungi replikasi yang lolos dari server proses sumber ke target.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -Fabric
-Kain pemulihan situs terkait dengan Configuration Server.
+Kain pemulihan situs yang terkait dengan Server Konfigurasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRFabric
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReplicationProtectedItem
-Daftar replikasi item dilindungi yang server prosesnya akan dialihkan.
+Daftar item terproteksi replikasi yang server prosesnya akan dialihkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRReplicationProtectedItem[]
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceProcessServer
-Server Proses untuk beralih replikasi.
+Server Proses untuk mengalihkan replikasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProcessServer
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

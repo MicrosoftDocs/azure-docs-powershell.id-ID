@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzActionRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AlertsManagement/AlertsManagement/help/Set-AzActionRule.md
 ms.openlocfilehash: de736d79fc11337f52a42f833ef2271574bfe785
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140080469"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142308157"
 ---
 # Set-AzActionRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "140080469"
 Membuat atau memperbarui aturan tindakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.alertsmanagement/set-azactionrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.alertsmanagement/set-azactionrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -68,7 +68,7 @@ Set-AzActionRule -ResourceGroupName <String> -Name <String> [-Description <Strin
 PS C:\> Set-AzActionRule -ResourceGroupName "test-rg" -Name "Test-AR" -Scope "/subscriptions/dd91de05-d791-4ceb-b6dc-988682dc7d72" -SeverityCondition "Equals:Sev0,Sev1" -MonitorCondition "NotEquals:Resolved" -Description "Test description" -Status "Enabled" -ActionRuleType "Suppression" -ReccurenceType "Weekly" -SuppressionStartTime "06/26/2018 06:00:00" -SuppressionEndTime "07/27/2018 06:00:00" -ReccurentValue 1,4,6
 ```
 
-Cmdlet ini membuat aturan tindakan untuk supression, dengan lingkup langganan.
+Cmdlet ini membuat aturan tindakan untuk supresi, dengan lingkup langganan.
 
 ### Contoh 2
 ```powershell
@@ -87,7 +87,7 @@ Cmdlet ini membuat aturan tindakan untuk pengaturan diagnostik, dengan lingkup s
 ## PARAMETERS
 
 ### -ActionGroupId
-Id Grup Tindakan yang akan diberitahukan.
+Id Grup Tindakan yang akan diberi tahu.
 
 ```yaml
 Type: System.String
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 ```
 
 ### -AlertContextCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
-Contains:smartgroups
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
+Berisi:smartgroups
 
 ```yaml
 Type: System.String
@@ -133,8 +133,8 @@ Accept wildcard characters: False
 ```
 
 ### -AlertRuleIdCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
-Sama dengan:/langganan/ad825170-845c-47db-8f00-11978947b089/resourceGroups/abvarma/providers/microsoft.insights/metricAlerts/test-mrmc-vm-abvarma
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
+Sama dengan:/subscriptions/ad825170-845c-47db-8f00-11978947b089/resourceGroups/abvarma/providers/microsoft.insights/metricAlerts/test-mrmc-vm-abvarma
 
 ```yaml
 Type: System.String
@@ -179,8 +179,8 @@ Accept wildcard characters: False
 ```
 
 ### -DescriptionCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
-Contains:Test Alert
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
+Berisi:Peringatan Uji
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
 NotEquals:Resolved
 
 ```yaml
@@ -226,8 +226,8 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorServiceCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
-Sama dengan:Platform,Analitik Log
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
+Sama dengan:Platform,Log Analytics
 
 ```yaml
 Type: System.String
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReccurenceType
-Menentukan durasi ketika penekanan harus diterapkan.
+Menentukan durasi ketika peredaman harus diterapkan.
 
 ```yaml
 Type: System.String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReccurentValue
-Nilai reccurent, jika ada. Dalam hal Mingguan - \[1,2\] Dalam hal Bulanan - \[1,3,5,30\]
+Nilai yang disatukan ulang, jika ada. Dalam kasus Mingguan - \[1,2\] Dalam kasus Bulanan - \[1,3,5,30\]
 
 ```yaml
 Type: System.Int32[]
@@ -316,9 +316,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SeverityCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
-Equals:Sev0,Sev1
+### -KeparahanKondisi
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
+Sama dengan:Sev0,Sev1
 
 ```yaml
 Type: System.String
@@ -348,8 +348,8 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionEndTime
-Waktu Selesai Penekanan.
-Format 09/12/2018 06:00:00 +Seharusnya disebutkan dalam kasus Supression Reccurent Schedule - Satu Kali, Harian, Mingguan, atau Bulanan.
+Waktu Akhir Penindasan.
+Format 12/09/2018 06:00:00 +Harus disebutkan dalam kasus Jadwal Reccurent Supression - Once, Daily, Weekly atau Monthly.
 
 ```yaml
 Type: System.String
@@ -364,8 +364,8 @@ Accept wildcard characters: False
 ```
 
 ### -SuppressionStartTime
-Waktu Mulai Penekanan.
-Format 09/12/2018 06:00:00 +Seharusnya disebutkan dalam kasus Supression Reccurent Schedule - Satu Kali, Harian, Mingguan, atau Bulanan.
+Waktu Mulai Peredaman.
+Format 12/09/2018 06:00:00 +Harus disebutkan dalam kasus Jadwal Reccurent Supression - Once, Daily, Weekly atau Monthly.
 
 ```yaml
 Type: System.String
@@ -380,8 +380,8 @@ Accept wildcard characters: False
 ```
 
 ### -TargetResourceTypeCondition
-Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk contohnya
-Berisi:Mesin Virtual,Storage Saya
+Format yang diharapkan - {\<operation\>:\<comma separated list of values\>} Untuk misalnya.
+Berisi:Mesin Virtual,Akun Penyimpanan
 
 ```yaml
 Type: System.String
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,7 +411,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -426,7 +426,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

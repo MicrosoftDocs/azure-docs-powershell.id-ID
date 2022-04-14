@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.edgeorder/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/Get-AzEdgeOrderConfiguration.md
-ms.openlocfilehash: 76f5771745e6ae563646946592843ac62effe60c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cb62aa3a85028710a981c7c75ce582b032d4b794
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179572"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142258099"
 ---
 # Get-AzEdgeOrderConfiguration
 
 ## SYNOPSIS
-Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu di bawah langganan.
+Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu dalam langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/get-azedgeorderconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzEdgeOrderConfiguration -ConfigurationFilter <IConfigurationFilters[]> [-Su
 ```
 
 ## DESCRIPTION
-Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu di bawah langganan.
+Metode ini menyediakan daftar konfigurasi untuk keluarga produk, lini produk, dan produk tertentu dalam langganan.
 
 ## EXAMPLES
 
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -165,19 +168,19 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 CONFIGURATIONFILTER <IConfigurationFilters[]>: Berisi detail tentang informasi hierarki produk dan properti yang dapat difilter.
   - `HierarchyInformation <IHierarchyInformation>`: Informasi hierarki produk
     - `[ConfigurationName <String>]`: Mewakili nama konfigurasi yang mengidentifikasi konfigurasi secara unik
-    - `[ProductFamilyName <String>]`: Mewakili nama produk keluarga yang mengidentifikasi keluarga produk secara unik
-    - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi lini produk secara unik
+    - `[ProductFamilyName <String>]`: Mewakili nama keluarga produk yang mengidentifikasi keluarga produk secara unik
+    - `[ProductLineName <String>]`: Mewakili nama baris produk yang mengidentifikasi baris produk secara unik
     - `[ProductName <String>]`: Mewakili nama produk yang mengidentifikasi produk secara unik
-  - `[FilterableProperty <IFilterableProperty[]>]`: Memfilter khusus produk
+  - `[FilterableProperty <IFilterableProperty[]>]`: Filter khusus untuk produk
     - `SupportedValue <String[]>`: Nilai yang akan difilter.
-    - `Type <SupportedFilterTypes>`: Tipe filter produk.
+    - `Type <SupportedFilterTypes>`: Jenis filter produk.
 
-CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan memberikan detail langganan secara eksplisit
+CUSTOMERSUBSCRIPTIONDETAIL <ICustomerSubscriptionDetails>: Properti langganan pelanggan. Klien dapat menampilkan produk yang tersedia untuk pelanggan yang tidak terdaftar dengan menyampaikan detail langganan secara eksplisit
   - `QuotaId <String>`: ID kuota langganan
   - `[LocationPlacementId <String>]`: Id penempatan lokasi langganan
   - `[RegisteredFeature <ICustomerSubscriptionRegisteredFeatures[]>]`: Daftar bendera fitur terdaftar untuk langganan
-    - `[Name <String>]`: Nama fitur langganan terdaftar
-    - `[State <String>]`: Status fitur langganan terdaftar
+    - `[Name <String>]`: Nama fitur terdaftar langganan
+    - `[State <String>]`: Status fitur terdaftar langganan
 
 ## RELATED LINKS
 

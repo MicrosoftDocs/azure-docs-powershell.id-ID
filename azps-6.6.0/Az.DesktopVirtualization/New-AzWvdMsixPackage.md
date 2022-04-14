@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/New-AzWvdMsixPackage.md
 ms.openlocfilehash: e707fe317a6eddda879335a33ad542fb36bbd69f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286637"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142305763"
 ---
 # New-AzWvdMsixPackage
 
 ## SYNOPSIS
-Buat atau perbarui paket MSIX.
+Membuat atau memperbarui paket MSIX.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdmsixpackage) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/new-azwvdmsixpackage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ New-AzWvdMsixPackage -HostPoolName <String> -PackageAlias <String> -ResourceGrou
 ```
 
 ## DESCRIPTION
-Buat atau perbarui paket MSIX.
+Membuat atau memperbarui paket MSIX.
 
 ## EXAMPLES
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama yang mudah untuk ditampilkan di portal.
+Nama yang mudah dikenali untuk ditampilkan di portal.
 
 ```yaml
 Type: System.String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullName
-Nama lengkap paket versi tertentu dari paket MSIX di dalam hostpool tertentu
+Versi paket tertentu nama lengkap paket MSIX dalam hostpool tertentu
 
 ```yaml
 Type: System.String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImagePath
-Jalur gambar VHD/CIM di Berbagi Jaringan.
+Jalur gambar VHD/CIM di Jaringan Berbagi.
 
 ```yaml
 Type: System.String
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsActive
-Buat versi paket ini sebagai paket yang aktif di seluruh hostpool.
+Jadikan versi paket ini sebagai yang aktif di seluruh hostpool.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRegularRegistration
-Menentukan cara mendaftarkan Paket di umpan.
+Tentukan cara mendaftarkan Paket di umpan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageAlias
-Alias Paket dari mengekstrak Gambar MSIX
+Alias Paket dari ekstrak MSIX Image
 
 ```yaml
 Type: System.String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ### -PackageApplication
 Daftar aplikasi paket.
 
-Untuk membuat, lihat bagian CATATAN untuk properti PACKAGEAPPLICATION dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PACKAGEAPPLICATION dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IMsixPackageApplications[]
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ### -PackageDependency
 Daftar dependensi paket.
 
-Untuk membuat, lihat bagian CATATAN untuk properti PACKAGEDEPENDENCY dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti PACKAGEDEPENDENCY dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DesktopVirtualization.Models.Api20210712.IMsixPackageDependencies[]
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 
 ### -PackageFamilyName
 Nama Keluarga Paket dari appxmanifest.xml.
-Berisi Nama Paket Publisher nama paket.
+Berisi Nama Paket dan nama Publisher.
 
 ```yaml
 Type: System.String
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Versi Paket yang ditemukan di appxmanifest.xml.
+Versi Paket ditemukan di appxmanifest.xml.
 
 ```yaml
 Type: System.String
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -394,11 +394,11 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 PACKAGEAPPLICATION <IMsixPackageApplications[]>: Daftar aplikasi paket. 
-  - `[AppId <String>]`: ID Aplikasi Paket, ditemukan di appxmanifest.xml.
+  - `[AppId <String>]`: Id Aplikasi Paket, ditemukan di appxmanifest.xml.
   - `[AppUserModelId <String>]`: Digunakan untuk mengaktifkan Aplikasi Paket. Terdiri dari Nama Paket dan APPLICATIONID. Ditemukan di appxmanifest.xml.
   - `[Description <String>]`: Deskripsi Aplikasi Paket.
-  - `[FriendlyName <String>]`: Nama yang mudah digunakan.
-  - `[IconImageName <String>]`: Nama yang mudah digunakan.
+  - `[FriendlyName <String>]`: Nama yang mudah dikenali.
+  - `[IconImageName <String>]`: Nama yang mudah dikenali.
   - `[RawIcon <Byte[]>]`: ikon string 64 bit sebagai array byte.
   - `[RawPng <Byte[]>]`: ikon string 64 bit sebagai array byte.
 

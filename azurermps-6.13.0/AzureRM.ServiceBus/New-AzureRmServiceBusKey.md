@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.servi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/New-AzureRmServiceBusKey.md
-ms.openlocfilehash: 8280d32885efee458062521dd6c5889344aa5f97153cf899a7b2eec00de5e46f
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6efd58497adc1e59f1bf6d2c2151386ee773f66a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862563"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142382619"
 ---
 # New-AzureRmServiceBusKey
 
 ## SYNOPSIS
-Meregenerasi string koneksi utama atau sekunder untuk ruang Bus Layanan nama atau antrean atau topik.
+Meregenerasi string koneksi utama atau sekunder untuk ruang nama atau antrean atau topik Bus Layanan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,14 +28,14 @@ New-AzureRmServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-N
  [<CommonParameters>]
 ```
 
-### QueueAuthorizationRuleSet
+### AntreanAuthorizationRuleSet
 ```
 New-AzureRmServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Queue] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### TopicAuthorizationRuleSet
+### TopikAuthorizationRuleSet
 ```
 New-AzureRmServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-Topic] <String> [-Name] <String>
  -RegenerateKey <String> [-KeyValue <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -43,7 +43,7 @@ New-AzureRmServiceBusKey [-ResourceGroupName] <String> [-Namespace] <String> [-T
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmServiceBusKey** menghasilkan string koneksi utama atau sekunder baru untuk kumpulan nama atau antrean atau topik dan aturan otorisasi yang ditentukan.
+Cmdlet **New-AzureRmServiceBusKey** menghasilkan string koneksi utama atau sekunder baru untuk ruang nama atau antrean atau topik dan aturan otorisasi yang ditentukan.
 
 ## EXAMPLES
 
@@ -80,14 +80,14 @@ Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediak
 PS C:\> New-AzureRmServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -RegenerateKey PrimaryKey
 ```
 
-Meregenerasi string koneksi utama atau sekunder untuk topik ini.
+Meregenerasi string koneksi utama atau sekunder untuk topik tersebut.
 
 ### Contoh 3.1
 ```
 PS C:\> New-AzureRmServiceBusKey -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -RegenerateKey PrimaryKey -KeyValue {base64-encoded 256-bit key}
 ```
 
-Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk topik ini.
+Meregenerasi string koneksi utama atau sekunder dengan nilai Kunci yang disediakan untuk topik tersebut.
 
 ## PARAMETERS
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyValue
-Kunci 256-bit berkode basis64 untuk menandatangani dan memvalidasi token SAS.
+Kunci 256-bit berkode base64 untuk menandatangani dan memvalidasi token SAS.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -RegenerateKey
-Tombol regenerasi - 'PrimaryKey'/'SecondaryKey'.
+Regenerasi Tombol - 'PrimaryKey'/'SecondaryKey'.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Topic
+### -Topik
 Nama Topik
 
 ```yaml
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

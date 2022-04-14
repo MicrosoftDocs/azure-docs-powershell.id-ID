@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compu
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmVmssVMDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/Remove-AzureRmVmssVMDataDisk.md
-ms.openlocfilehash: 266143a7ef5d68c90e3099726826a8cec72470ded26f6b7d99154fd81d2c02d6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5c82c2dfb852cd6c3d397b34e90d9a611ff0efaf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140855136"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141843915"
 ---
 # Remove-AzureRmVmssVMDataDisk
 
@@ -27,19 +27,19 @@ Remove-AzureRmVmssVMDataDisk [-VirtualMachineScaleSetVM] <PSVirtualMachineScaleS
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmVmssVMDataDisk** menghapus disk data dari kumpulan skala VM
+Cmdlet **Remove-AzureRmVmssVMDataDisk** menghapus disk data dari kumpulan skala VM VM
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus disk data dari kumpulan skala VM
+### Contoh 1: Menghapus disk data dari VM kumpulan skala VM
 ```powershell
 PS C:\> $VmssVM = Get-AzureRmVmssVM -ResourceGroupName "myrg" -VMScaleSetName "myvmss" -InstanceId 0 
 PS C:\> Remove-AzureRmVmssVMDataDisk -VM $VirtualMachine -Lun 0
 PS C:\> Update-AzureRmVmssVM -VirtualMachineScaleSetVM $VmssVM
 ```
 
-Perintah pertama mendapatkan Vmss VM yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
-Perintah kedua menghapus data disk lun 0 dari VM scale set VM yang disimpan dalam $VmssVM Perintah terakhir memperbarui Vmss VM dengan disk data yang dihapus.
+Perintah pertama getsan Vmss VM yang sudah ada yang diberikan oleh nama grup sumber daya, nama vmss dan ID instans.
+Perintah kedua menghapus disk data lun 0 dari kumpulan skala VM yang disimpan di $VmssVM Perintah akhir memperbarui VM VM dengan disk data yang dihapus.
 
 ## PARAMETERS
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika disk.
+Menentukan nomor unit logika diska.
 
 ```yaml
 Type: System.Int32
@@ -73,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -virtualMachinescaleSetvm
-Profil VM yang mengatur skala mesin virtual.
+### -VirtualMachineScaleSetVM
+Skala mesin virtual mengatur profil VM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
@@ -89,15 +89,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachinescaleSetVM
+### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachinescaleSetVM
+### Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSetVM
 
 ## CATATAN
 

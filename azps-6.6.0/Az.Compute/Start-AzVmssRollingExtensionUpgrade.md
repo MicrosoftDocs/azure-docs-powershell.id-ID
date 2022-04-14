@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingExtensionUpgrade.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Start-AzVmssRollingExtensionUpgrade.md
 ms.openlocfilehash: f51057f837df63da8cf40912cbe8ec28eff81ba1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311657"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142307455"
 ---
 # Start-AzVmssRollingExtensionUpgrade
 
 ## SYNOPSIS
-Cmdlet ini memulai pemutakhiran tambahan untuk semua ekstensi pada Kumpulan Skala Mesin Virtual tertentu ke versi terbaru yang tersedia. 
+Cmdlet ini memulai pemutakhiran bergulir untuk semua ekstensi pada Kumpulan Skala Mesin Virtual tertentu ke versi terbaru yang tersedia. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/start-azvmssrollingextensionupgrade) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/start-azvmssrollingextensionupgrade) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Start-AzVmssRollingExtensionUpgrade -ResourceId <String> [-AsJob] [-DefaultProfi
 ```
 
 ## DESCRIPTION
-Memulai pemutakhiran berguling untuk memindahkan semua ekstensi pada skala mesin virtual ini ke versi terbaru yang tersedia.
+Memulai pemutakhiran bergulir untuk memindahkan semua ekstensi pada skala mesin virtual ini diatur ke versi terbaru yang tersedia.
 Ekstensi yang sudah menjalankan versi terbaru yang tersedia tidak terpengaruh.
 
 ## EXAMPLES
@@ -53,12 +53,12 @@ PS C:\> Add-AzVmssExtension -VirtualMachineScaleSet $vmss -Name "testExtension" 
 PS C:\> Start-AzVmssRollingExtensionUpgrade -ResourceGroupName "MyResourceGroupName" -VMScaleSetName "MyVmssName";
 ```
 
-Contoh ini akan menetapkan "MyVmssName" skala VM yang ada, dan menambahkan ekstensi ke dalamnya. Perintah terakhir menjalankan proses peningkatan ekstensi yang bergulir. 
+Contoh ini mendapatkan kumpulan skala VM yang sudah ada "MyVmssName", dan menambahkan ekstensi ke dalamnya. Perintah akhir menjalankan proses pemutakhiran bergulir ekstensi. 
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya objek kumpulan skala VM. 
+Id sumber daya dari objek kumpulan skala VM. 
 
 ```yaml
 Type: System.String
@@ -117,8 +117,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
-Objek vm scale set.
+### -VirtualMachineScaleSet
+Objek kumpulan skala VM.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Compute.Automation.Models.PSVirtualMachineScaleSet
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

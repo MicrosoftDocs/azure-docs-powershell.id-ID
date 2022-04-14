@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resourcegraph/ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/New-AzResourceGraphQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ResourceGraph/ResourceGraph/help/New-AzResourceGraphQuery.md
-ms.openlocfilehash: 1497585b964fd8de4c5fc8badd35835e5851d907
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2f6342b8eb6487ae483e4b9a6368a0c355ce6902
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140554742"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142369061"
 ---
 # New-AzResourceGraphQuery
 
 ## SYNOPSIS
-Buat kueri grafik baru.
+Membuat kueri grafik baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resourcegraph/new-azresourcegraphquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzResourceGraphQuery -Name <String> -ResourceGroupName <String> [-Subscripti
 ```
 
 ## DESCRIPTION
-Buat kueri grafik baru.
+Membuat kueri grafik baru.
 
 ## EXAMPLES
 
-### Contoh 1: Buat kueri grafik sumber daya dengan parameter kueri
+### Contoh 1: Membuat kueri grafik sumber daya menurut parameter kueri
 ```powershell
 PS C:\> New-AzResourceGraphQuery -Name query-t03 -ResourceGroupName azure-rg-test -Location "global" -Description "requesting a subset of resource fields." -Query "project id, name, type, location, tags" 
 
@@ -40,9 +43,9 @@ Location Name      Type
      global   query-t03 microsoft.resourcegraph/queries
 ```
 
-Perintah ini membuat kueri grafik sumber daya oleh parameter kueri.
+Perintah ini membuat kueri grafik sumber daya menurut parameter kueri.
 
-### Contoh 2: Buat kueri grafik sumber daya dengan parameter file
+### Contoh 2: Membuat kueri grafik sumber daya menurut parameter file
 ```powershell
 PS C:\> New-AzResourceGraphQuery -Name query-t04 -ResourceGroupName azure-rg-test -Location "global" -Description "requesting a subset of resource fields." -File 'D:\azure-service\ResourceGraph.Autorest\azure-powershell\src\ResourceGraph\ResourceGraph.Autorest\test\Query.kql'
 
@@ -51,7 +54,7 @@ Location Name      Type
      global   query-t04 microsoft.resourcegraph/queries
 ```
 
-Perintah ini akan membuat kueri grafik sumber daya oleh parameter file.
+Perintah ini membuat kueri grafik sumber daya berdasarkan parameter file.
 
 ## PARAMETERS
 
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Konten file akan diteruskan ke parameter kueri.
+Konten file akan dikirimkan ke parameter kueri.
 
 ```yaml
 Type: System.String
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama sumber daya Graph Kueri.
+Nama sumber daya kueri Graph.
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Query
-Kueri KQL yang akan menjadi grafik.
+KQL kueri yang akan berupa grafik.
 
 ```yaml
 Type: System.String
@@ -191,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

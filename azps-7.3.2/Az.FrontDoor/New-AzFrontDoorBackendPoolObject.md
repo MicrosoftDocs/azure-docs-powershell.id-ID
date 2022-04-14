@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendPoolObject.md
-ms.openlocfilehash: 685893df7caa27d5ca7a037e2741cdd11ec9c137
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1bbc3c419d42d24cafda55b6a3c91a379d144d7a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372819"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257451"
 ---
 # New-AzFrontDoorBackendPoolObject
 
 ## SYNOPSIS
 Membuat objek PSBackendPool untuk pembuatan Pintu Depan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendpoolobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -53,7 +56,7 @@ Membuat objek PSBackendPool untuk pembuatan Pintu Depan
 ## PARAMETERS
 
 ### -Backend
-Kumpulan backend untuk kumpulan ini.
+Kumpulan backend untuk kolam ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSBackend[]
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -HealthProbeSettingsName
-Nama pengaturan layanan kesehatan untuk pool backend ini
+Nama pengaturan pemeriksaan kesehatan untuk kumpulan backend ini
 
 ```yaml
 Type: System.String
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancingSettingsName
-Nama pengaturan keseimbangan muat untuk pool backend ini
+Nama pengaturan penyeimbangan muatan untuk kumpulan backend ini
 
 ```yaml
 Type: System.String
@@ -158,11 +161,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

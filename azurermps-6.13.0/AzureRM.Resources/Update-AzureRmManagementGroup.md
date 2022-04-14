@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Update-AzureRmManagementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Resources/Commands.Resources/help/Update-AzureRmManagementGroup.md
 ms.openlocfilehash: 2542740db9cb8f5b0809bf071e2b960ba8979de8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424485"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142382932"
 ---
 # Update-AzureRmManagementGroup
 
@@ -68,7 +68,7 @@ ParentName        : 6b2064b9-34bd-46e6-9092-52f2dd5f7fc0
 ParentDisplayName : 6b2064b9-34bd-46e6-9092-52f2dd5f7fc0
 ```
 
-### Contoh 2: Perbarui Induk Grup Manajemen
+### Contoh 2: Memperbarui Induk Grup Manajemen
 ```
 PS C:\> Update-AzureRMManagementGroup -Group "TestGroup" -ParentId "/providers/Microsoft.Management/managementGroups/TestGroupParent"
 
@@ -84,7 +84,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 3: Perbarui Grup Manajemen dengan pemipaan Objek PSManagementGroup
+### Contoh 3: Memperbarui Grup Manajemen dengan piping PSManagementGroup Object
 ```
 PS C:\> Get-AzureRmManagementGroup -GroupName "TestGroup" | Update-AzureRMManagementGroup -DisplayName "TestDisplayName" -ParentId "/providers/Microsoft.Management/managementGroups/TestGroupParent"
 
@@ -100,7 +100,7 @@ ParentName        : TestGroupParent
 ParentDisplayName : TestGroupParent
 ```
 
-### Contoh 4: Perbarui induk Grup Manajemen menggunakan ParentObject
+### Contoh 4: Memperbarui induk Grup Manajemen menggunakan ParentObject
 ```
 PS C:\> $parentObject = Get-AzureRmManagementGroup -GroupName "TestGroupParent"
 PS C:\> Update-AzureRmManagementGroup -GroupName "TestGroup" -ParentObject $parentObject
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Tampilkan Nama grup manajemen
+Nama Tampilan grup manajemen
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

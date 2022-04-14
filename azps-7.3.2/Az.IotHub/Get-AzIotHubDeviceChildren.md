@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/get-aziot
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Get-AzIotHubDeviceChildren.md
-ms.openlocfilehash: 126e89eeaf798917715dbab6d207e3775e39821b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5b612c5c7193a4495e486cbcc49dab61b2b42efb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381446"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142293343"
 ---
 # Get-AzIotHubDeviceChildren
 
 ## SYNOPSIS
-Cetak daftar perangkat anak yang ditetapkan yang dipisahkan koma.
+Cetak daftar yang dipisahkan koma dari perangkat turunan yang ditetapkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/get-aziothubdevicechildren) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Get-AzIotHubDeviceChildren [-ResourceId] <String> [-DeviceId <String>]
 ```
 
 ## DESCRIPTION
-Tampilkan semua perangkat non-tepi yang ditetapkan sebagai daftar semua perangkat tepi yang dipisahkan tanda koma atau perangkat tertentu.
+Tampilkan semua perangkat non-edge yang ditetapkan sebagai daftar yang dipisahkan koma dari semua perangkat edge atau perangkat tertentu.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ DeviceId  ChildrenDeviceId
 myDevice1 {device1, device2}
 ```
 
-Memperlihatkan semua perangkat non-tepi yang ditetapkan sebagai daftar yang dipisahkan koma.
+Memperlihatkan semua perangkat non-edge yang ditetapkan sebagai daftar yang dipisahkan koma.
 
 ### Contoh 2
 ```powershell
@@ -63,7 +66,7 @@ myDevice1 {device1, device2}
 myDevice2 {device3, device4, device5}
 ```
 
-Tampilkan semua perangkat non-tepi yang ditetapkan sebagai daftar semua perangkat tepi yang dipisahkan tanda koma.
+Tampilkan semua perangkat non-edge yang ditetapkan sebagai daftar yang dipisahkan koma dari semua perangkat edge.
 
 ## PARAMETERS
 
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Reset-AzPowerBIWorkspaceCollectionAccessKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PowerBIEmbedded/PowerBIEmbedded/help/Reset-AzPowerBIWorkspaceCollectionAccessKey.md
 ms.openlocfilehash: f350bcc73d99b5ed9ffb28be89ac6081dc1f8b6b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140068733"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142225747"
 ---
 # Reset-AzPowerBIWorkspaceCollectionAccessKey
 
 ## SYNOPSIS
-Mereset kunci akses tertentu.
+Mengatur ulang kunci akses yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.powerbiembedded/reset-azpowerbiworkspacecollectionaccesskey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.powerbiembedded/reset-azpowerbiworkspacecollectionaccesskey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Reset-AzPowerBIWorkspaceCollectionAccessKey [-ResourceGroupName] <String> [-Work
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzPowerBIWorkspaceCollectionAccessKey** mereset kunci akses tertentu dalam kumpulan ruang Power BI kerja Anda.
+Cmdlet **Reset-AzPowerBIWorkspaceCollectionAccessKey** mengatur ulang kunci akses yang ditentukan dalam kumpulan ruang kerja Power BI Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Reset kunci akses utama
+### Contoh 1: Mereset kunci akses utama
 ```
 PS C:\>Reset-AzPowerBIWorkspaceCollectionAccessKey -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11" -Key1
 ```
@@ -43,7 +43,7 @@ Perintah ini mereset kunci akses utama untuk kumpulan ruang kerja bernama WCN11 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Key1
-Mengindikasikan bahwa cmdlet ini mengatur ulang kunci akses utama.
+Menunjukkan bahwa cmdlet ini mengatur ulang kunci akses utama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Key2
-Mengindikasikan bahwa cmdlet ini mengatur ulang tombol akses sekunder.
+Menunjukkan bahwa cmdlet ini mengatur ulang kunci akses sekunder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang Power BI tempat cmdlet ini beroperasi.
+Menentukan nama kumpulan ruang kerja Power BI tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

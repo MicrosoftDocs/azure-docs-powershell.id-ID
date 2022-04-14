@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientRevokedCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Get-AzVpnClientRevokedCertificate.md
 ms.openlocfilehash: 3151ffb45064d1cb85b69d11a1ccbd49d4c045e8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419866"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142057017"
 ---
 # Get-AzVpnClientRevokedCertificate
 
@@ -28,30 +28,30 @@ Get-AzVpnClientRevokedCertificate [-VpnClientRevokedCertificateName <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzVpnClientRevokedCertificate** mengembalikan informasi tentang sertifikat pembatalan klien yang ditetapkan ke gateway jaringan virtual.
-Sertifikat pencabutan klien mencegah komputer klien menggunakan sertifikat yang ditentukan untuk autentikasi.
-**Get-AzVpnClientRevokedCertificate** memungkinkan Anda untuk mengembalikan informasi tentang semua sertifikat pencabutan klien di gateway atau, dengan menggunakan parameter *VpnClientRevokedCertificateName,* untuk mendapatkan informasi tentang sertifikat tunggal.
+Sertifikat pembatalan klien mencegah komputer klien menggunakan sertifikat tertentu untuk autentikasi.
+**Get-AzVpnClientRevokedCertificate** memungkinkan Anda mengembalikan informasi tentang semua sertifikat pencabutan klien di gateway atau, dengan menggunakan parameter *VpnClientRevokedCertificateName* , untuk mendapatkan informasi tentang satu sertifikat.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi tentang semua sertifikat pembatalan klien
+### Contoh 1: Dapatkan informasi tentang semua sertifikat pembatalan klien
 ```
 PS C:\>Get-AzVpnClientRevokedCertificate -VirtualNetworkGatewayName "ContosoVirtualNetworkGateway" -ResourceGroupName "ContosoResourceGroup"
 ```
 
 Perintah ini mendapatkan informasi tentang semua sertifikat pembatalan klien yang terkait dengan gateway jaringan virtual bernama ContosoVirtualNetworkGateway.
 
-### Contoh 2: Mendapatkan informasi tentang sertifikat pencabutan klien tertentu
+### Contoh 2: Dapatkan informasi tentang sertifikat pembatalan klien tertentu
 ```
 PS C:\>Get-AzVpnClientRevokedCertificate -VirtualNetworkGatewayName "ContosoVirtualNetwork" -ResourceGroupName "ContosoResourceGroup" -VpnClientRevokedCertificateName "ContosoRevokedClientCertificate"
 ```
 
 Perintah ini adalah variasi perintah yang diperlihatkan dalam Contoh 1.
-Namun, dalam kasus ini, parameter *VpnClientRevokedCertificateName* digunakan untuk membatasi data yang dikembalikan ke sertifikat yang dicabut klien tertentu: sertifikat dengan nama ContosoRevokedClientCertificate.
+Namun, dalam hal ini, parameter *VpnClientRevokedCertificateName* digunakan untuk membatasi data yang dikembalikan ke sertifikat klien tertentu yang dicabut: sertifikat dengan nama ContosoRevokedClientCertificate.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -66,9 +66,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang ditetapkan untuk gateway jaringan virtual.
+Menentukan nama grup sumber daya tempat gateway jaringan maya ditetapkan.
 
-Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi umum Azure.
+Grup sumber daya mengkategorikan item untuk membantu menyederhanakan manajemen inventaris dan administrasi Umum Azure.
 
 ```yaml
 Type: String
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -VpnClientRevokedCertificateName
-Menentukan nama sertifikat klien VPN yang akan didaurkan cmdlet ini.
+Menentukan nama sertifikat klien VPN yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -113,14 +113,14 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
 ###  
-**Get-AzVpnClientRevokedCertificate** mengembalikan instans objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate.**
+**Get-AzVpnClientRevokedCertificate** mengembalikan instans objek **Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate** .
 
 ## CATATAN
 

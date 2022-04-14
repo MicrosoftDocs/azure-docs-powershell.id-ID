@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blueprint/Blueprint/help/Get-AzBlueprintAssignment.md
 ms.openlocfilehash: aa4d4b0c94aed550c51f09fa7adf73776b9eabf6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979421"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142325033"
 ---
 # Get-AzBlueprintAssignment
 
 ## SYNOPSIS
-Dapatkan satu atau beberapa penetapan cetak biru.
+Dapatkan satu atau beberapa tugas cetak biru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blueprint/get-azblueprintassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blueprint/get-azblueprintassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Get-AzBlueprintAssignment -ManagementGroupId <String> [-DefaultProfile <IAzureCo
 ```
 
 ## DESCRIPTION
-Dapatkan satu atau beberapa penetapan cetak biru. Penetapan cetak biru berada pada lingkup langganan.
+Dapatkan satu atau beberapa tugas cetak biru. Tugas cetak biru ada di lingkup langganan.
 
 ## EXAMPLES
 
@@ -65,28 +65,28 @@ Parameters        : {applytaganditsdefaultvalue_tagName, applytaganditsdefaultva
 ResourceGroups    : ResourceGroup
 ```
 
-Dapatkan penetapan cetak biru dalam langganan yang ditentukan.
+Dapatkan tugas cetak biru dalam langganan yang ditentukan.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzBlueprintAssignment -SubscriptionId "00000000-1111-0000-1111-000000000000" -Name "myAssignmentName"
 ```
 
-Dapatkan penetapan cetak biru dengan nama tertentu dalam langganan yang ditentukan.
+Dapatkan tugas cetak biru dengan nama tertentu dalam langganan yang ditentukan.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzBlueprintAssignment -ManagementGroupId "myManagementGroup"
 ```
 
-Dapatkan penetapan cetak biru dalam grup manajemen yang ditentukan.
+Dapatkan tugas cetak biru dalam grup manajemen yang ditentukan.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzBlueprintAssignment -ManagementGroupId "myManagementGroup" -Name "myAssignmentName"
 ```
 
-Dapatkan penetapan cetak biru dengan nama yang diberikan di dalam grup manajemen yang ditentukan.
+Dapatkan tugas cetak biru dengan nama tertentu dalam grup manajemen yang ditentukan.
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementGroupId
-ID grup manajemen tempat penetapan Cetak Biru disimpan.
+ID grup manajemen tempat penetapan Blueprint disimpan.
 
 ```yaml
 Type: System.String
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id Langganan penetapan cetak biru digunakan.
+Subscription Id tempat penetapan cetak biru disebarkan.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

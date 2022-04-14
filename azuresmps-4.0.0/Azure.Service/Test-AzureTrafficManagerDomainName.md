@@ -3,17 +3,17 @@ external help file: Microsoft.WindowsAzure.Commands.TrafficManager.dll-Help.xml
 ms.assetid: 92E2409B-14BC-428F-8BAF-60D8DAFA5F57
 online version: ''
 schema: 2.0.0
-ms.openlocfilehash: 78c2a280e77ce4c9d85263e6213149904223dd4b139cf912f345a1aeb4ca0a23
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 2992152675187be779f2cac3d2349f3ec718b9c2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417668"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142334452"
 ---
 # Test-AzureTrafficManagerDomainName
 
 ## SYNOPSIS
-Memeriksa apakah nama domain tersedia sebagai Traffic Manager profil.
+Memeriksa apakah nama domain tersedia sebagai profil Traffic Manager.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -24,24 +24,24 @@ Test-AzureTrafficManagerDomainName -DomainName <String> [-Profile <AzureSMProfil
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzureTrafficManagerDomainName** memeriksa apakah nama domain tersedia sebagai profil Microsoft Azure Traffic Manager Anda.
-Jika nama domain tersedia, cmdlet ini akan mengembalikan nilai $True.
+Cmdlet **Test-AzureTrafficManagerDomainName** memeriksa apakah nama domain tersedia sebagai profil Microsoft Azure Traffic Manager.
+Jika nama domain tersedia, cmdlet ini mengembalikan nilai $True.
 
 ## EXAMPLES
 
-### Contoh 1: Periksa apakah nama domain tersedia
+### Contoh 1: Memeriksa apakah nama domain tersedia
 ```
 PS C:\>Test-AzureTrafficManagerDomainName -DomainName "ContosoApp.trafficmanager.net"
 $True
 ```
 
-Perintah ini akan memeriksa apakah nama domain ContosoApp.trafficmanager.net tersedia sebagai Traffic Manager profil.
+Perintah ini memeriksa apakah nama domain ContosoApp.trafficmanager.net tersedia sebagai profil Traffic Manager.
 
 ## PARAMETERS
 
 ### -DomainName
-Menentukan nama domain untuk diuji.
-Anda harus menyertakan string berikut ini: 
+Menentukan nama domain yang akan diuji.
+Anda harus menyertakan string berikut: 
 
 .trafficmanager.net
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -81,7 +81,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Boolean
 Cmdlet ini menghasilkan $True atau $False.
-Jika nama domain tersedia, cmdlet ini akan mengembalikan nilai $True.
+Jika nama domain tersedia, cmdlet ini mengembalikan nilai $True.
 
 ## CATATAN
 

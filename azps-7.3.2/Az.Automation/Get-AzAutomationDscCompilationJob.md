@@ -6,21 +6,24 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/get-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Get-AzAutomationDscCompilationJob.md
-ms.openlocfilehash: b30e4abf47811ac0597670be24ec01130b3c9bb3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3a784201bf49ea1583099d32fc2fe68bf3431a35
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140387142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142260943"
 ---
 # Get-AzAutomationDscCompilationJob
 
 ## SYNOPSIS
-Mendapatkan pekerjaan kompilasi DSC dalam Otomatisasi.
+Mendapatkan pekerjaan kompilasi DSC di Automation.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/get-azautomationdsccompilationjob) untuk informasi terbaru.
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzAutomationDscCompilationJob [-Status <String>] [-StartTime <DateTimeOffset>] [-EndTime <DateTimeOffset>]
  [-ResourceGroupName] <String> [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>]
@@ -50,26 +53,26 @@ Cmdlet **Get-AzAutomationDscCompilationJob** mendapatkan pekerjaan kompilasi APS
 PS C:\>Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan semua pekerjaan kompilasi dalam akun Otomatisasi bernama Contoso17.
+Perintah ini mendapatkan semua pekerjaan kompilasi di akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan pekerjaan kompilasi DSC untuk konfigurasi
+### Contoh 2: Dapatkan pekerjaan kompilasi DSC untuk konfigurasi
 ```
 PS C:\>Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -ConfigurationName "ContosoConfiguration"
 ```
 
-Perintah ini mendapatkan semua pekerjaan kompilasi untuk konfigurasi DSC yang bernama ContosoConfiguration dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan semua pekerjaan kompilasi untuk konfigurasi DSC bernama ContosoConfiguration di akun Automation bernama Contoso17.
 
 ### Contoh 3: Dapatkan pekerjaan kompilasi DSC tertentu
 ```
 PS C:\>Get-AzAutomationDscCompilationJob -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Id c0a1718e-d8be-4fa3-91b6-82e1d3a36298
 ```
 
-Perintah ini mendapatkan kompilasi pekerjaan dengan ID yang ditentukan dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan pekerjaan kompilasi dengan ID yang ditentukan di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi pekerjaan kompilasi DSC yang cmdlet ini dapatkan.
+Menentukan nama akun Otomatisasi yang berisi pekerjaan kompilasi DSC yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama konfigurasi DSC di mana cmdlet ini mendapatkan pekerjaan kompilasi.
+Menentukan nama konfigurasi DSC tempat cmdlet ini mendapatkan pekerjaan kompilasi.
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -115,7 +118,7 @@ Accept wildcard characters: False
 
 ### -EndTime
 Menentukan waktu akhir.
-Cmdlet ini mendapatkan kompilasi pekerjaan yang dimulai hingga waktu yang ditentukan parameter ini.
+Cmdlet ini mendapatkan pekerjaan kompilasi yang dimulai hingga waktu yang ditentukan parameter ini.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -130,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID unik pekerjaan kompilasi DSC yang akan dapatkan cmdlet ini.
+Menentukan ID unik pekerjaan kompilasi DSC yang didapat cmdlet ini.
 
 ```yaml
 Type: System.Guid
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 
 ### -StartTime
 Menentukan waktu mulai.
-Cmdlet ini mendapatkan pekerjaan yang dimulai dari atau setelah waktu yang ditentukan parameter ini.
+Cmdlet ini mendapatkan pekerjaan yang dimulai pada atau setelah waktu yang ditentukan parameter ini.
 
 ```yaml
 Type: System.Nullable`1[System.DateTimeOffset]
@@ -176,15 +179,15 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menentukan status pekerjaan yang cmdlet ini dapatkan.
-Nilai valid adalah: 
+Menentukan status pekerjaan yang didapat cmdlet ini.
+Nilai yang valid adalah: 
 - Selesai 
 - Gagal 
-- Diantrekan 
-- Memulai 
+- Antri 
+- Mulai 
 - Melanjutkan 
-- Berjalan 
-- Dihentikan 
+- Menjalankan 
+- Berhenti 
 - Menghentikan 
 - Ditangguhkan 
 - Menangguhkan 
@@ -205,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

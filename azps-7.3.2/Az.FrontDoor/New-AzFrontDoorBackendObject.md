@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.frontdoor/new-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorBackendObject.md
-ms.openlocfilehash: 447080388f680ac63aa8fc060e06ffa66a338279
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3a1b874156f5069a9e95c13be285b7e3591e5685
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142257523"
 ---
 # New-AzFrontDoorBackendObject
 
 ## SYNOPSIS
 Membuat objek PSBackend
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorbackendobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendHostHeader
-Nilai yang akan digunakan sebagai header host yang dikirimkan ke ujung belakang. Nilai default adalah alamat backend.
+Nilai untuk digunakan sebagai header host yang dikirim ke backend. Nilai default adalah alamat backend.
 
 ```yaml
 Type: System.String
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnabledState
-Apakah akan mengaktifkan penggunaan backend ini. Nilai default Diaktifkan
+Apakah mengaktifkan penggunaan backend ini. Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -110,10 +113,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpPort
+### -HttpPort
 Nomor port TCP HTTP.
-Harus berada antara 1 sampai 65535.
-Nilai default adalah 80.
+Harus antara 1 dan 65535.
+Nilai defaultnya adalah 80.
 
 ```yaml
 Type: System.Int32
@@ -129,8 +132,8 @@ Accept wildcard characters: False
 
 ### -HttpsPort
 Nomor port TCP HTTPS.
-Harus berada antara 1 sampai 65535.
-Nilai default adalah 443
+Harus antara 1 dan 65535.
+Nilai defaultnya adalah 443
 
 ```yaml
 Type: System.Int32
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Prioritas
-Prioritas untuk digunakan untuk memuat keseimbangan.
+Prioritas untuk digunakan untuk penyeimbangan beban.
 Harus antara 1 dan 5.
 Nilai default adalah 1
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkAlias
-Alias sumber daya Tautan Privat. Mengisi bidang opsional ini mengindikasikan bahwa backend ini adalah 'Privat'
+Alias sumber daya Private Link. Mengisi bidang opsional ini menunjukkan bahwa backend ini adalah 'Privat'
 
 ```yaml
 Type: System.String
@@ -177,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkApprovalMessage
-Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk menyambungkan ke Tautan Pribadi
+Pesan kustom yang akan disertakan dalam permintaan persetujuan untuk tersambung ke Private Link
 
 ```yaml
 Type: System.String
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkLocation
-Sumber daya Lokasi Tautan Privat. Lokasi diperlukan saat PrivateLinkResourceId diatur
+Lokasi sumber daya Private Link. Lokasi diperlukan saat PrivateLinkResourceId diatur
 
 ```yaml
 Type: System.String
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkResourceId
-ID Sumber Daya Tautan Pribadi. Mengisi bidang opsional ini mengindikasikan bahwa backend ini adalah 'Privat'
+ID Sumber Daya Private Link. Mengisi bidang opsional ini menunjukkan bahwa backend ini adalah 'Privat'
 
 ```yaml
 Type: System.String
@@ -221,10 +224,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Bobot
-Bobot titik akhir ini untuk tujuan keseimbangan muat.
-Harus berada antara 1 sampai 1000.
-Nilai default adalah 50
+### -Berat
+Berat titik akhir ini untuk tujuan penyeimbangan beban.
+Harus antara 1 dan 1000.
+Nilai defaultnya adalah 50
 
 ```yaml
 Type: System.Int32
@@ -239,11 +242,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

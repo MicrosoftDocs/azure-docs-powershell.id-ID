@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Get-AzOperationalInsightsSavedSearch.md
-ms.openlocfilehash: 4c87d165fe217bed378bed41b5a5ea1bb9a83090
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ecc02e830a6cd5237d94a5ffad398953026f0c16
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178887"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142343735"
 ---
 # Get-AzOperationalInsightsSavedSearch
 
 ## SYNOPSIS
 Mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/get-azoperationalinsightssavedsearch) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,29 +29,29 @@ Get-AzOperationalInsightsSavedSearch [-ResourceGroupName] <String> [-WorkspaceNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzOperationalInsightsSavedSearch** mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian yang tersimpan.
-Jika Anda menentukan ID pencarian yang disimpan, pencarian yang tersimpan yang terkait dengan ID tersebut akan dikembalikan.
+Cmdlet **Get-AzOperationalInsightsSavedSearch** mengembalikan semua pencarian yang disimpan untuk ruang kerja tertentu dalam grup sumber daya yang ditentukan jika Anda tidak menentukan ID pencarian yang disimpan.
+Jika Anda menentukan ID pencarian yang disimpan, maka pencarian tersimpan yang terkait dengan ID tersebut akan dikembalikan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua pencarian yang disimpan untuk ruang kerja
+### Contoh 1: Mendapatkan semua pencarian tersimpan untuk ruang kerja
 ```
 PS C:\>Get-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
-Perintah ini akan mendapatkan semua sumber daya yang disimpan yang terkait dengan ruang kerja.
+Perintah ini mendapatkan semua sumber daya yang disimpan yang terkait dengan ruang kerja.
 
-### Contoh 2: Mendapatkan pencarian tertentu yang disimpan berdasarkan ID
+### Contoh 2: Mendapatkan pencarian tertentu yang disimpan menurut ID
 ```
 PS C:\>Get-AzOperationalInsightsSavedSearch -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace" -SavedSearchId "ContosoSavedSearchId"
 ```
 
-Perintah ini mendapatkan pencarian tersimpan tertentu berdasarkan ID-nya.
+Perintah ini mendapatkan pencarian tertentu yang disimpan dengan ID-nya.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +95,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

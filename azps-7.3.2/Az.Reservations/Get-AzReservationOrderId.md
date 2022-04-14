@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.reservations/get
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrderId.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Get-AzReservationOrderId.md
-ms.openlocfilehash: 5c2173e7ce2f82f0801b23c6d56f00e75b7f2bd1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: fdb8dfb850175ade7b6741ba630ad1366650b312
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140401494"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142210195"
 ---
 # Get-AzReservationOrderId
 
 ## SYNOPSIS
-Dapatkan daftar ID yang `ReservationOrder` berlaku.
+Dapatkan daftar Id yang berlaku `ReservationOrder` .
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.reservations/get-azreservationorderid) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzReservationOrderId [-SubscriptionId <Guid>] [-DefaultProfile <IAzureContex
 ```
 
 ## DESCRIPTION
-Dapatkan ID yang berlaku `ReservationOrder`yang dapat diterapkan ke langganan ini.
+Dapatkan Id dari s yang dapat `ReservationOrder`diterapkan ke langganan ini.
 
 ## EXAMPLES
 
@@ -34,14 +37,14 @@ Dapatkan ID yang berlaku `ReservationOrder`yang dapat diterapkan ke langganan in
 PS C:\> Get-AzReservationOrderId
 ```
 
-Mulai menerapkan `ReservationOrder` langganan default
+Dapatkan aplikasi `ReservationOrder` untuk langganan default
 
 ### Contoh 2
 ```
 PS C:\> Get-AzReservationOrderId -SubscriptionId "1111aaaa-b1b2-c0c2-d0d2-00000fffff"
 ```
 
-Dapatkan pendaftaran `ReservationOrder` untuk langganan tertentu
+Dapatkan aplikasi `ReservationOrder` untuk langganan tertentu
 
 ## PARAMETERS
 
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Id langganan agar diterapkan `ReservationOrder`
+Id langganan untuk mendapatkan s yang diterapkan `ReservationOrder`
 
 ```yaml
 Type: System.Guid
@@ -76,11 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

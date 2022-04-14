@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/get-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Get-AzSynapseSparkSession.md
-ms.openlocfilehash: 8b2413ef7e8eb94d4b38f72e0c331976fb033766
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a17b2a3e05e0c8280433f5db34def7a9dce53c56
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140178271"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142337165"
 ---
 # Get-AzSynapseSparkSession
 
 ## SYNOPSIS
-Mendapatkan sesi Grafik Api Analitik Synapse.
+Mendapatkan sesi Synapse Analytics Spark.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/get-azsynapsesparksession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-AzSynapseSparkSession -SparkPoolObject <PSSynapseSparkPool> [-LivyId <Int32>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSynapseSparkSession** mendapatkan informasi tentang sesi Grafik Web Analitik Azure Synapse.
+Cmdlet **Get-AzSynapseSparkSession** mendapatkan informasi tentang sesi Azure Synapse Analytics Spark.
 
 ## EXAMPLES
 
@@ -41,14 +44,14 @@ Cmdlet **Get-AzSynapseSparkSession** mendapatkan informasi tentang sesi Grafik W
 PS C:\> Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool
 ```
 
-Perintah ini mendapatkan semua sesi Grafik Apik di bawah pool Grafik Api yang ditentukan.
+Perintah ini mendapatkan semua sesi Spark di bawah kumpulan Spark yang ditentukan.
 
 ### Contoh 2
 ```powershell
 PS C:\> Get-AzSynapseSparkSession -WorkspaceName ContosoWorkspace -SparkPoolName ContosoSparkPool -LivyId 1
 ```
 
-Perintah ini mendapatkan sesi Grafik Apik dengan ID kalender yang ditentukan.
+Perintah ini mendapatkan sesi Spark dengan ID livy yang ditentukan.
 
 ### Contoh 3
 ```powershell
@@ -56,7 +59,7 @@ PS C:\> $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name Con
 PS C:\> $pool | Get-AzSynapseSparkSession
 ```
 
-Perintah ini membuat semua sesi Grafik Kecil berada di bawah saluran Grafik Kecil yang ditentukan melalui saluran.
+Perintah ini mendapatkan semua sesi Spark di bawah kumpulan Spark yang ditentukan melalui pipeline.
 
 ## PARAMETERS
 
@@ -90,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tifid
-Pengidentifikasi sesi Grafik Apik.
+### -LivyId
+Pengidentifikasi sesi Spark.
 
 ```yaml
 Type: System.Int32
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolName
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkPoolObject
-Objek input spark pool, biasanya melewati saluran.
+Objek input spark pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

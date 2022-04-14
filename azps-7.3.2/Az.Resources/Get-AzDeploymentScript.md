@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.resources/get-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzDeploymentScript.md
-ms.openlocfilehash: c70596346aaa31df8c9f7b13d7f9d250ea55d092
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: cc973726f6af875712996f88132d3e318624694c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140006661"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142317731"
 ---
 # Get-AzDeploymentScript
 
 ## SYNOPSIS
 Mendapatkan atau mencantumkan skrip penyebaran.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azdeploymentscript) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +40,7 @@ Get-AzDeploymentScript [-Id] <String> [-DefaultProfile <IAzureContextContainer>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDeploymentScript** mendapatkan skrip penyebaran tunggal atau daftar skrip penyebaran.
+Cmdlet **Get-AzDeploymentScript** mendapatkan satu skrip penyebaran atau daftar skrip penyebaran.
 
 ## EXAMPLES
 
@@ -53,21 +56,21 @@ Mencantumkan skrip penyebaran dalam langganan dalam konteks pengguna saat ini.
 PS C:\> Get-AzDeploymentScript -ResourceGroupName DS-TestRg
 ```
 
-Mencantumkan skrip penyebaran di grup sumber daya DS-TestRg.
+Mencantumkan skrip penyebaran dalam grup sumber daya DS-TestRg.
 
 ### Contoh 3
 ```powershell
 PS C:\> Get-AzDeploymentScript -Name MyDeploymentScript -ResourceGroupName DS-TestRg
 ```
 
-Dapatkan skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber daya DS-TestRG.
+Mendapatkan skrip penyebaran dengan nama MyDeploymentScript dalam grup sumber daya DS-TestRG.
 
 ### Contoh 4
 ```powershell
 PS C:\> Get-AzDeploymentScript -Id "/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.Resources/deploymentScripts/{deploymentScriptName}"
 ```
 
-Dapatkan skrip penyebaran dengan Id sumber daya yang diberikan. 
+Mendapatkan skrip penyebaran dengan Id sumber daya tertentu. 
 
 ## PARAMETERS
 
@@ -145,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

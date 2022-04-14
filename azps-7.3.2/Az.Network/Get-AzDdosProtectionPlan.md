@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azdd
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzDdosProtectionPlan.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzDdosProtectionPlan.md
-ms.openlocfilehash: 69b854472da2c00273f3a63ba799672ad5c45e9e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c06e44b58d79a28da884917516ffe4f5bf3dd6a9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392890"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142255939"
 ---
 # Get-AzDdosProtectionPlan
 
 ## SYNOPSIS
-Mendapatkan paket proteksi DDoS.
+Mendapatkan paket perlindungan DDoS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azddosprotectionplan) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzDdosProtectionPlan [-ResourceGroupName <String>] [-Name <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzDdosProtectionPlan mendapatkan paket proteksi DDoS.
+Cmdlet Get-AzDdosProtectionPlan mendapatkan paket perlindungan DDoS.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan paket proteksi DDoS tertentu
+### Contoh 1: Dapatkan paket proteksi DDoS tertentu
 ```
 D:\> Get-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName -Name DdosProtectionPlanName
 
@@ -45,9 +48,9 @@ VirtualNetworks   : [
                     ]
 ```
 
-Dalam hal ini, kita perlu menentukan atribut **ResourceGroupName** dan **Name** yang terkait dengan grup sumber daya dan nama rencana proteksi DDoS.
+Dalam hal ini, kita perlu menentukan atribut **ResourceGroupName** dan **Name** , yang terkait dengan grup sumber daya dan nama paket proteksi DDoS.
 
-### Contoh 2: Dapatkan semua rencana proteksi DDoS dalam grup sumber daya
+### Contoh 2: Dapatkan semua paket proteksi DDoS dalam grup sumber daya
 ```
 D:\> Get-AzDdosProtectionPlan -ResourceGroupName ResourceGroupName
 
@@ -159,7 +162,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,9 +176,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-azddosProtectionPlan](./New-AzDdosProtectionPlan.md)
+[New-AzDdosProtectionPlan](./New-AzDdosProtectionPlan.md)
 
-[Remove-azddosProtectionPlan](./Remove-AzDdosProtectionPlan.md)
+[Remove-AzDdosProtectionPlan](./Remove-AzDdosProtectionPlan.md)
 
 [New-AzVirtualNetwork](./New-AzVirtualNetwork.md)
 

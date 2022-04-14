@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/Add-AzSqlSer
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Add-AzSqlServerTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: cc0a24c4cd14a838db16edb65757321fde84dc29
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9ccf7283a9d55f2db66d56bf1e5f862a770704c3
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139998702"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142208485"
 ---
 # Add-AzSqlServerTransparentDataEncryptionCertificate
 
 ## SYNOPSIS
-Menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server enkripsi
+Menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server yang diberikan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/add-azsqlservertransparentdataencryptioncertificate) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +44,7 @@ Add-AzSqlServerTransparentDataEncryptionCertificate [-PassThru] [-SqlServerResou
 ```
 
 ## DESCRIPTION
-Contoh Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server enkripsi
+Add-AzSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk contoh SQL Server yang diberikan
 
 ## EXAMPLES
 
@@ -54,7 +57,7 @@ PS C:\>     $securePassword = $password | ConvertTo-SecureString -AsPlainText -F
 PS C:\>     Add-AzSqlServerTransparentDataEncryptionCertificate -ResourceGroupName "YourResourceGroupName" -ServerName "YourServerName" -PrivateBlob $securePrivateBlob -Password $securePassword
 ```
 
-Menambahkan sertifikat TDE ke server sql menggunakan nama grup sumber daya SQL Server nama
+Menambahkan sertifikat TDE ke server sql menggunakan nama grup sumber daya dan nama SQL Server
 
 ### Contoh 2
 ```powershell
@@ -66,7 +69,7 @@ PS C:\>     $server = Get-AzSqlServer -ServerName "YourServerName" -ResourceGrou
 PS C:\>     Add-AzSqlServerTransparentDataEncryptionCertificate -SqlServerResourceId $server.ResourceId -PrivateBlob $securePrivateBlob -Password $securePassword
 ```
 
-Menambahkan sertifikat TDE ke server menggunakan resourceId server
+Menambahkan sertifikat TDE ke server menggunakan server resourceId
 
 ### Contoh 3
 ```powershell
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada Eksekusi yang berhasil, mengembalikan objek sertifikat yang ditambahkan.
+Pada eksekusi Berhasil, mengembalikan objek sertifikat yang ditambahkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Kata Sandi untuk Sertifikat Enkripsi Data Transparan
+Kata sandi untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateBlob
-Blob Privat untuk Sertifikat Enkripsi Data Transparan
+Blob privat untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -218,7 +221,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

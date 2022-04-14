@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azap
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleCondition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzApplicationGatewayRewriteRuleCondition.md
-ms.openlocfilehash: 773c63ad1078b9988fd8ee36da475b51e022aef1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 26f5dcbdf5c76a1099406e6110b3c1cc35ff3ede
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555572"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142371779"
 ---
 # New-AzApplicationGatewayRewriteRuleCondition
 
 ## SYNOPSIS
 Menambahkan kondisi ke RewriteRule untuk gateway aplikasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azapplicationgatewayrewriterulecondition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzApplicationGatewayRewriteRuleCondition -Variable <String> [-Pattern <Strin
 ```
 
 ## DESCRIPTION
-**Cmdlet AzApplicationGatewayRewriteRuleCondition** membuat kondisi aturan penulisan ulang untuk gateway aplikasi Azure.
+Cmdlet **AzApplicationGatewayRewriteRuleCondition** membuat kondisi aturan penulisan ulang untuk gateway aplikasi Azure.
 
 ## EXAMPLES
 
@@ -45,7 +48,7 @@ Variable        Pattern IgnoreCase Negate
 --------        ------- ---------- ------
 var_request_uri http          True  False
 ```
-Perintah ini membuat kondisi dalam aturan tulis ulang dan menyimpan hasilnya dalam variabel yang bernama $condition.
+Perintah ini membuat kondisi dalam aturan penulisan ulang dan menyimpan hasil dalam variabel bernama $condition.
 
 ## PARAMETERS
 
@@ -65,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreCase
-Atur bendera ini agar mengabaikan huruf besar/huruf pada pola
+Atur bendera ini untuk mengabaikan huruf besar/kecil pada pola
 
 ```yaml
 Type: SwitchParameter
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Negate
-Set this flag to negate the condition validation
+Atur bendera ini untuk meniadakan validasi kondisi
 
 ```yaml
 Type: SwitchParameter
@@ -95,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pola
-Pola untuk mencarinya di Header Variabel
+Pola yang dicari di Header Variabel
 
 ```yaml
 Type: String
@@ -109,8 +112,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Variable
-Nama Header untuk menetapkan kondisi di dalamnya
+### -Variabel
+Nama Header untuk mengatur kondisi di dalamnya
 
 ```yaml
 Type: String
@@ -125,12 +128,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

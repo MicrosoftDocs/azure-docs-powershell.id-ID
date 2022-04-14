@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.servicebus/new-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ServiceBus/ServiceBus/help/New-AzServiceBusNamespace.md
-ms.openlocfilehash: ed93f8789c252227ed78dc53990f8258c2db2c81
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 4b4dbd9595e7792bed4a89cf5e1666aaedd77738
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195623"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142209061"
 ---
 # New-AzServiceBusNamespace
 
 ## SYNOPSIS
 Membuat ruang nama Bus Layanan baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.servicebus/new-azservicebusnamespace) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ New-AzServiceBusNamespace [-ResourceGroupName] <String> [-Location] <String> [-N
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzServiceBusNamespace** membuat kumpulan Bus Layanan nama baru. Setelah dibuat, kumpulan nama manifes sumber daya akan tetap ada. Operasi ini idempok.
+Cmdlet **New-AzServiceBusNamespace** membuat ruang nama Bus Layanan baru. Setelah dibuat, manifes sumber daya ruang nama tidak dapat berubah. Operasi ini idempotent.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ UpdatedAt          : 1/20/2017 2:07:56 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
 
-Membuat ruang nama Bus Layanan di dalam grup sumber daya yang ditentukan.
+Membuat ruang nama Bus Layanan baru dalam grup sumber daya yang ditentukan.
 
 ### Contoh 2 - ZoneRedundant dan DisableLocalAuth
 ```
@@ -65,9 +68,9 @@ UpdatedAt          : 9/27/2021 2:07:56 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
 
-Membuat ruang nama Bus Layanan di dalam grup sumber daya yang ditentukan.
+Membuat ruang nama Bus Layanan baru dalam grup sumber daya yang ditentukan.
 
-### Contoh 3 - Buat ruang nama dengan enkripsi identitas ditetapkan pengguna diaktifkan
+### Contoh 3 - Membuat ruang nama dengan enkripsi identitas yang ditetapkan pengguna diaktifkan
 ```
 PS C:\> $config1 = New-AzServiceBusEncryptionConfig -KeyName key1 -KeyVaultUri https://myvaultname.vault.azure.net -UserAssignedIdentity /subscriptions/{subscriptionId}/resourceGroups/{resourcegroup}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/MSIName
 
@@ -108,9 +111,9 @@ EncryptionConfigs  : {{ KeyName: key1,
                      }}
 ```
 
-Membuat ruang nama Bus Layanan dengan UserAssigned Encryption Enabled. IdentityType bisa mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
+Membuat ruang nama Bus Layanan baru dengan UserAssigned Encryption Enabled. IdentityType dapat mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
 
-### Contoh 4 - Buat ruang nama dengan identitas ditetapkan sistem diaktifkan.
+### Contoh 4 - Buat ruang nama dengan identitas sistem yang ditetapkan diaktifkan.
 ```
 PS C:\> New-AzServiceBusNamespace -ResourceGroupName Default-ServiceBus-WestUS -Name SB-Example1 -Location WestUS2 -SkuName "Premium" -IdentityType SystemAssigned
 
@@ -132,7 +135,7 @@ IdentityId         :
 EncryptionConfigs  :
 ```
 
-Membuat ruang nama Bus Layanan dengan SystemAssigned identity diaktifkan. IdentityType bisa mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
+Membuat ruang nama Bus Layanan baru dengan identitas SystemAssigned diaktifkan. IdentityType dapat mengambil nilai "SystemAssigned", "UserAssigned", "SystemAssigned, UserAssigned", "None"
 
 ## PARAMETERS
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableLocalAuth
-mengaktifkan atau menonaktifkan autentikasi SAS untuk Bus Layanan nama
+mengaktifkan atau menonaktifkan autentikasi SAS untuk ruang nama Bus Layanan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityId
-Daftar ID Identitas yang ditetapkan pengguna
+Daftar Id Identitas yang ditetapkan pengguna
 
 ```yaml
 Type: System.String[]
@@ -258,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuCapacity
-Kumpulan Bus Layanan premium unit throughput, yang diperbolehkan nilai 1 atau 2 atau 4
+Bus Layanan unit throughput ruang nama premium, nilai yang diperbolehkan 1 atau 2 atau 4
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -273,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Kumpulan Nama Sku
+Nama Sku Ruang Nama
 
 ```yaml
 Type: System.String
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-mengaktifkan atau menonaktifkan Kelebihan Zona untuk ruang nama
+mengaktifkan atau menonaktifkan Zona Berlebihan untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -335,7 +338,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -350,13 +353,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### System.Collections.Hashtable
 

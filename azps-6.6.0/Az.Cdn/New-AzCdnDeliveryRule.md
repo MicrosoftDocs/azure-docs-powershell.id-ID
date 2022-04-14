@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Cdn/Cdn/help/New-AzCdnDeliveryRule.md
 ms.openlocfilehash: 563f11351a4a742694e48e00ccd350428d7bb59f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139979187"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142324691"
 ---
 # New-AzCdnDeliveryRule
 
@@ -18,7 +18,7 @@ ms.locfileid: "139979187"
 Membuat aturan pengiriman.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cdn/new-azcdndeliveryrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzCdnDeliveryRule [-Name <String>] -Order <Int32> [-Condition <PSDeliveryRul
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzCdnDeliveryRule** membuat aturan pengiriman untuk CDN titik akhir.
+**Cmdlet New-AzCdnDeliveryRule** membuat aturan pengiriman untuk pembuatan titik akhir CDN.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ Name  Order Actions           Conditions
 rule1     1 {Accept-Encoding} {Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSDeliveryRuleCondition}
 ```
 
-Membuat aturan sederhana.
+Buat aturan sederhana.
 
 ## PARAMETERS
 
 ### -Tindakan
-Daftar tindakan yang dijalankan saat semua kondisi aturan dipenuhi.
+Daftar tindakan yang dijalankan ketika semua kondisi aturan puas.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSDeliveryRuleAction[]
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kondisi
-Daftar kondisi yang harus cocok dengan tindakan untuk dijalankan.
+Daftar kondisi yang harus dicocokkan agar tindakan dijalankan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Cdn.Models.Endpoint.PSDeliveryRuleCondition[]
@@ -121,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

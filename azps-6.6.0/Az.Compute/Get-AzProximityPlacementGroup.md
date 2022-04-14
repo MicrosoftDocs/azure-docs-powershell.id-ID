@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzProximityPlacementGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzProximityPlacementGroup.md
 ms.openlocfilehash: 81e908ade86d604fc5fff45213d3599e7a432668
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139943017"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142272733"
 ---
 # Get-AzProximityPlacementGroup
 
 ## SYNOPSIS
-Dapatkan atau  list Sumber daya Grup Penempatan Kedekatan.
+Dapatkan atau cantumkan sumber daya Grup Penempatan Kedekatan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/get-azproximityplacementgroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azproximityplacementgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,7 +67,7 @@ rg0                          ppg0 westcentralus Standard
 rg0                          ppg1 westcentralus Standard
 ```
 
-Perintah ini mencantumkan semua grup penempatan kedekatan di bawah grup sumber daya yang diberikan.
+Perintah ini mencantumkan semua grup penempatan kedekatan di bawah grup sumber daya tertentu.
 
 ### Contoh 3
 ```
@@ -85,7 +85,7 @@ Perintah ini mencantumkan semua grup penempatan kedekatan di bawah langganan.
 ## PARAMETERS
 
 ### -ColocationStatus
-Memperlihatkan status lokasi bersama sumber daya dalam grup penempatan kedekatan.
+Memperlihatkan status kolokasi sumber daya dalam grup penempatan kedekatan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

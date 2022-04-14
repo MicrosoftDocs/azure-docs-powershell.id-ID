@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/add-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Add-AzSynapseTriggerSubscription.md
-ms.openlocfilehash: 61fc7a7c4de623ddad4eb942ab3417010dc71d20
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 926a9e4057debbc053d401ecfca4a994896694e1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140195270"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142364651"
 ---
 # Add-AzSynapseTriggerSubscription
 
 ## SYNOPSIS
-Berlangganan pemicu kejadian pada kejadian layanan eksternal.
+Berlangganan pemicu kejadian ke acara layanan eksternal.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/add-azsynapsetriggersubscription) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Add-AzSynapseTriggerSubscription -InputObject <PSTriggerResource> [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzSynapseTriggerSubscription** berlangganan pemicu kejadian kejadian ke kejadian layanan eksternal yang ditentukan dari definsi pemicu.
+Cmdlet **Add-AzSynapseTriggerSubscription** berlangganan pemicu kejadian ke kejadian layanan eksternal tertentu dari pendefinisian pemicu.
 
 ## EXAMPLES
 
@@ -47,7 +50,7 @@ Cmdlet **Add-AzSynapseTriggerSubscription** berlangganan pemicu kejadian kejadia
 PS C:\> Add-AzSynapseTriggerSubscription -WorkspaceName ContosoWorkspace -Name ContosoTrigger
 ```
 
-Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian yang ditentukan dari definsi pemicu.
+Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian tertentu dari pendefinisian pemicu.
 
 ### Contoh 2
 ```powershell
@@ -55,7 +58,7 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Add-AzSynapseTriggerSubscription -Name ContosoTrigger
 ```
 
-Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian yang ditentukan dari pemicu definsi melalui pipeline.
+Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian tertentu dari pendefinisian pemicu melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -63,12 +66,12 @@ PS C:\> $trigger = Get-AzSynapseTrigger -WorkspaceName ContosoWorkspace -Name Co
 PS C:\> $trigger | Add-AzSynapseTriggerSubscription
 ```
 
-Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian yang ditentukan dari pemicu definsi melalui pipeline.
+Perintah ini akan berlangganan pemicu yang disebut ContosoTrigger ke kejadian tertentu dari pendefinisian pemicu melalui pipeline.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +130,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -158,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -174,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

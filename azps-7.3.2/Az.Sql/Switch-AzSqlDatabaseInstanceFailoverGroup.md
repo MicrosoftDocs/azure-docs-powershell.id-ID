@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/Az.sql/switch-Azsql
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseInstanceFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Switch-AzSqlDatabaseInstanceFailoverGroup.md
-ms.openlocfilehash: fa2e5eb78ddd2f81f317a9be787f2c8a93f2ad62
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: c16696bf4737090eb7368b80cd4d0245caa70917
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548529"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142251613"
 ---
 # Switch-AzSqlDatabaseInstanceFailoverGroup
 
 ## SYNOPSIS
-Menjalankan failover Grup Failover Contoh.
+Menjalankan failover Grup Failover Instans.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/switch-azsqldatabaseinstancefailovergroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Switch-AzSqlDatabaseInstanceFailoverGroup [-InputObject] <AzureSqlInstanceFailov
 ```
 
 ## DESCRIPTION
-Perintah ini menukar peran instans terkelola dalam Grup Failover Instans dengan gagal masuk ke kawasan sekunder yang ditentukan, membuatnya menjadi kawasan utama baru. Semua sesi TDS baru yang tersambung ke titik akhir utama secara otomatis dirutekan kembali ke kawasan utama baru. 
+Perintah ini menukar peran instans terkelola dalam Grup Failover Instans dengan gagal ke kawasan sekunder yang ditentukan, menjadikannya kawasan utama baru. Semua sesi TDS baru yang tersambung ke titik akhir utama secara otomatis dirutekan ulang ke kawasan utama baru. 
 
 ## EXAMPLES
 
@@ -61,7 +64,7 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Terjadi operasi failover yang memungkinkan hilangnya data dengan pemipaan dalam Grup Failover Instans.
+Keluarkan operasi failover yang memungkinkan hilangnya data dengan piping dalam Grup Failover Instans.
 
 ### Contoh 2
 ```
@@ -82,13 +85,13 @@ ReadOnlyFailoverPolicy                : Disabled
 Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg/providers/Microsoft.Sql/locations/eastus/instanceFailoverGroups/fg
 ```
 
-Usahakan operasi failover terbaik yang akan berhasil tanpa kehilangan data atau gagal dan kembalikan.
+Keluarkan operasi failover upaya terbaik yang akan berhasil tanpa kehilangan data atau gagal dan kembali.
 
 ## PARAMETERS
 
 ### -AllowDataLoss
-Selesaikan failover meskipun melakukannya mungkin akan mengakibatkan hilangnya data.
-Hal ini akan mengizinkan failover untuk melanjutkan meskipun database utama tidak tersedia.
+Selesaikan failover meskipun melakukannya dapat mengakibatkan hilangnya data.
+Ini akan memungkinkan failover untuk melanjutkan bahkan jika database utama tidak tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -118,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Grup Failover Instance untuk beralih
+Objek Grup Failover Instans untuk dialihkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
@@ -133,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Nama Kawasan Lokal untuk mengambil Contoh Grup Failover.
+Nama Kawasan Lokal tempat untuk mengambil Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -148,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Grup Failover Instance.
+Nama Grup Failover Instans.
 
 ```yaml
 Type: System.String
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya dari Grup Failover Contoh untuk dialihkan.
+ID Sumber Daya Grup Failover Instans untuk beralih.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -224,16 +227,16 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
+### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
+### Microsoft.Azure.Commands.Sql.InstanceFailoverGroup.Model.AzureSqlInstanceFailoverGroupModel
 
 ## CATATAN
 

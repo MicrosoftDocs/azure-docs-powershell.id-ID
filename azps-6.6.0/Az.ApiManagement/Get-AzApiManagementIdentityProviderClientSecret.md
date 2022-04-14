@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProviderClientSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementIdentityProviderClientSecret.md
 ms.openlocfilehash: 6dad966cf72a9d801b81ffae961b7468ae7ebe3b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140080451"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142307977"
 ---
 # Get-AzApiManagementIdentityProviderClientSecret
 
@@ -18,7 +18,7 @@ ms.locfileid: "140080451"
 Dapatkan rahasia klien penyedia identitas.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementidentityproviderclientsecret) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementidentityproviderclientsecret) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,13 +32,13 @@ Dapatkan rahasia klien penyedia identitas.
 
 ## EXAMPLES
 
-### Contoh 1: Get the client secret of AAD Type Identity Provider
+### Contoh 1: Dapatkan rahasia klien dari Penyedia Identitas Tipe AAD
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\> Get-AzApiManagementIdentityProviderClientSecret -Context $apimContext -Type Aad
 ```
 
-Mendapatkan rahasia klien Konfigurasi Penyedia Identitas dari Azure Active Directory.
+Mendapatkan rahasia klien dari Konfigurasi Penyedia Identitas Azure Active Directory.
 
 ## PARAMETERS
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

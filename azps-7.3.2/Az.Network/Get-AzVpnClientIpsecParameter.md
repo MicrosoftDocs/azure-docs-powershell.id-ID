@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientIpsecParameter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnClientIpsecParameter.md
-ms.openlocfilehash: dd8445667ea11ef80ccc058d4db8cf1a896c70a9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 238c827d2d9dc4584280404c106e21917c3bfaac
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007721"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142372139"
 ---
 # Get-AzVpnClientIpsecParameter
 
 ## SYNOPSIS
-Menyetel parameter Ipsec vpn di Gateway Jaringan Virtual untuk Koneksi situs Arahkan ke.
+Mendapatkan parameter vpn Ipsec yang diatur di Virtual Network Gateway untuk Koneksi titik ke situs.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpnclientipsecparameter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,17 +28,17 @@ Get-AzVpnClientIpsecParameter [-Name <String>] -ResourceGroupName <String>
 ```
 
 ## DESCRIPTION
-Gateway Jaringan Virtual adalah objek yang mewakili gateway Anda di Azure.
-Cmdlet **Get-AzVpnClientIpsecParameter** mengembalikan objek parameter ipsec vpn Anda yang diatur di gateway di Azure berdasarkan Nama Gateway dan Nama Grup Sumber Daya.
+Gateway Virtual Network adalah objek yang mewakili gateway Anda di Azure.
+Cmdlet **Get-AzVpnClientIpsecParameter** mengembalikan objek parameter ipsec vpn yang diatur di gateway di Azure berdasarkan Nama Gateway dan Nama Grup Sumber Daya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan parameter ipsec vpn yang diatur di Gateway Jaringan Virtual untuk Koneksi titik ke situs.
+### Contoh 1: Mendapatkan parameter vpn Ipsec yang diatur di Virtual Network Gateway untuk Koneksi situs Point to.
 ```powershell
 PS C:\> $VpnClientIPsecParameters = Get-AzVpnClientIpsecParameter -Name myGateway -ResourceGroupName myRG
 ```
 
-Mengembalikan objek parameter ipsec vpn yang diatur di Gateway Jaringan Virtual dengan nama "myGateway" dalam grup sumber daya "myRG"
+Mengembalikan objek parameter ipsec vpn yang diatur di gateway Virtual Network dengan nama "myGateway" dalam grup sumber daya "myRG"
 
 ## PARAMETERS
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

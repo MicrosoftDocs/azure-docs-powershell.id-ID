@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsFunction.md
-ms.openlocfilehash: daee27f5c646ef475f47dbad39d93896ff2fffb2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1726856f7f70ba52ba966d520d071eedecb770dc
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140370590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142250207"
 ---
 # Get-AzStreamAnalyticsFunction
 
 ## SYNOPSIS
-Mendapatkan detail tentang fungsi tertentu.
+Mendapatkan detail tentang fungsi yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticsfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-AzStreamAnalyticsFunction -JobName <String> -ResourceGroupName <String> [-Su
  [-Select <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzStreamAnalyticsFunction -JobName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -38,11 +41,11 @@ Get-AzStreamAnalyticsFunction -InputObject <IStreamAnalyticsIdentity> [-DefaultP
 ```
 
 ## DESCRIPTION
-Mendapatkan detail tentang fungsi tertentu.
+Mendapatkan detail tentang fungsi yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua fungsi Analitik Streaming
+### Contoh 1: Dapatkan semua fungsi Stream Analytics
 ```powershell
 PS C:\> Get-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh
 
@@ -51,9 +54,9 @@ Name        Type                                              ETag
 function-01 Microsoft.StreamAnalytics/streamingjobs/functions
 ```
 
-Perintah ini menetapkan fungsi yang ada pada pekerjaan.
+Perintah ini mendapatkan fungsi yang ditentukan pada pekerjaan.
 
-### Contoh 2: Mendapatkan fungsi Analitik Streaming tertentu
+### Contoh 2: Dapatkan fungsi Stream Analytics tertentu
 ```powershell
 PS C:\> Get-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-pwsh -Name function-01
 
@@ -64,7 +67,7 @@ function-01 Microsoft.StreamAnalytics/streamingjobs/functions e35beaf1-8c6c-4b26
 
 Perintah ini mendapatkan informasi tentang fungsi yang ditentukan pada pekerjaan.
 
-### Contoh 3: Mendapatkan fungsi Analitik Streaming tertentu menurut saluran
+### Contoh 3: Mendapatkan fungsi Stream Analytics tertentu menurut pipeline
 ```powershell
 PS C:\> New-AzStreamAnalyticsFunction -ResourceGroupName azure-rg-test -JobName sajob-01-portal -Name function-05 -File .\test\template-json\Function_JavascriptUdf.json | Get-AzStreamAnalyticsFunction
 
@@ -93,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -154,8 +157,8 @@ Accept wildcard characters: False
 ```
 
 ### -Pilih
-Parameter $select OData.
-Daftar ini merupakan daftar properti struktural yang dipisahkan tanda koma untuk disertakan dalam respons, atau "*" untuk menyertakan semua properti. Secara default, semua properti akan dikembalikan kecuali diagnostik. Saat ini hanya menerima '*' sebagai nilai yang valid.
+Parameter kueri OData $select.
+Ini adalah daftar properti struktural yang dipisahkan koma untuk disertakan dalam respons, atau "*" untuk menyertakan semua properti. Secara default, semua properti dikembalikan kecuali diagnostik. Saat ini hanya menerima '*' sebagai nilai yang valid.
 
 ```yaml
 Type: System.String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -210,11 +213,11 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
   - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan untuk mengambil informasi kuota langganan. Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[TransformationName <String>]`: Nama transformasi tersebut.
+  - `[TransformationName <String>]`: Nama transformasi.
 
 ## RELATED LINKS
 
