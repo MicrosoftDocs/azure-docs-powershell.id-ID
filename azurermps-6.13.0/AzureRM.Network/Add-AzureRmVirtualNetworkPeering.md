@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmVirtualNetworkPeering.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Add-AzureRmVirtualNetworkPeering.md
 ms.openlocfilehash: 60331e70ac29d81cc8ba2ea6cd1e8688a5484349
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422527"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063109"
 ---
 # Add-AzureRmVirtualNetworkPeering
 
@@ -29,7 +29,7 @@ Add-AzureRmVirtualNetworkPeering -Name <String> -VirtualNetwork <PSVirtualNetwor
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmVirtualNetworkPeering** membuat peering antara dua jaringan virtual.
+Cmdlet **Add-AzureRmVirtualNetworkPeering** membuat peering di antara dua jaringan virtual.
 
 ## EXAMPLES
 
@@ -55,9 +55,9 @@ Add-AzureRmVirtualNetworkPeering -Name myVnet1ToMyVnet2' -VirtualNetwork $vnet1 
 Add-AzureRmVirtualNetworkPeering -Name 'myVnet2ToMyVnet1' -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-Perhatikan bahwa link peering harus dibuat dari vnet1 ke vnet2 dan sebaliknya agar peering berfungsi.
+Perhatikan bahwa tautan peering harus dibuat dari vnet1 ke vnet2 dan sebaliknya agar peering dapat berfungsi.
 
-### Contoh 2: Buat peering antara dua jaringan virtual di wilayah yang berbeda
+### Contoh 2: Membuat peering di antara dua jaringan virtual di wilayah yang berbeda
 ```
 # Variables for common values used throughout the script.
 $rgName='myResourceGroup'
@@ -78,7 +78,7 @@ Add-AzureRmVirtualNetworkPeering -Name myVnet1ToMyVnet2' -VirtualNetwork $vnet1 
 Add-AzureRmVirtualNetworkPeering -Name 'myVnet2ToMyVnet1' -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-Berikut 'myVnet1' di Pusat Barat AS peered dengan 'myVnet2' di Pusat Kanada.
+Di sini 'myVnet1' di AS West Central diintip dengan 'myVnet2' di Kanada Central.
 
 ## PARAMETERS
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowGatewayTransit
-Bendera untuk memperbolehkan gatewayLink digunakan dalam link jaringan virtual jarak jauh ke jaringan virtual ini
+Tandai untuk memperbolehkan gatewayTautkan digunakan dalam tautan jaringan virtual jarak jauh ke jaringan virtual ini
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -BlockVirtualNetworkAccess
-Menunjukkan bahwa cmdlet ini memblokir mesin virtual dalam ruang jaringan virtual yang ditautkan untuk mengakses semua mesin virtual di ruang jaringan virtual lokal.
+Menunjukkan bahwa cmdlet ini memblokir mesin virtual di ruang jaringan virtual tertaut untuk mengakses semua mesin virtual di ruang jaringan virtual lokal.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -RemoteVirtualNetworkId
-Menentukan ID jaringan virtual jarak jauh.
+Menentukan ID jaringan maya jarak jauh.
 
 ```yaml
 Type: System.String
@@ -187,8 +187,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -UseRemoteGateway
-Mengindikasikan bahwa cmdlet ini memungkinkan gateway jarak jauh pada jaringan virtual ini.
+### -UseRemoteGateways
+Menunjukkan bahwa cmdlet ini memperbolehkan gateway jarak jauh di jaringan virtual ini.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetwork
-Menentukan jaringan virtual induk.
+Menentukan jaringan maya induk.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -240,7 +240,7 @@ Parameter: RemoteVirtualNetworkId (ByValue)
 
 [Get-AzureRmVirtualNetworkPeering](./Get-AzureRmVirtualNetworkPeering.md)
 
-[Remove-AzureRmVirtualNetworkPeering](./Remove-AzureRmVirtualNetworkPeering.md)
+[Hapus-AzureRmVirtualNetworkPeering](./Remove-AzureRmVirtualNetworkPeering.md)
 
 [Set-AzureRmVirtualNetworkPeering](./Set-AzureRmVirtualNetworkPeering.md)
 

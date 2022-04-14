@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/New-AzureRmMapsAccountKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Maps/Commands.Maps/help/New-AzureRmMapsAccountKey.md
 ms.openlocfilehash: 13364cde6799a6d99bcdba1d5cd2078c3392a2cc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140866332"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063220"
 ---
 # New-AzureRmMapsAccountKey
 
@@ -40,7 +40,7 @@ New-AzureRmMapsAccountKey [-KeyName] <String> [-ResourceId] <String> [-DefaultPr
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzureRmMapsAccountKey meregenerasi kunci API untuk akun Peta Azure.
+Cmdlet New-AzureRmMapsAccountKey meregenerasi kunci API untuk akun Azure Maps.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ Id                                                                              
 /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a0/resourceGroups/MyResourceGroup/providers/Microsoft.Maps/accounts/MyAccount ******************************************* *******************************************
 ```
 
-Meregenerasi Kunci API Utama untuk akun MyAccount di grup sumber daya MyResourceGroup.
+Meregenerasi Kunci API Utama untuk akun MyAccount dalam grup sumber daya MyResourceGroup.
 
 ### Contoh 2
 ```powershell
@@ -74,7 +74,7 @@ Id                                                                              
 /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a0/resourceGroups/MyResourceGroup/providers/Microsoft.Maps/accounts/MyAccount ******************************************* *******************************************
 ```
 
-Meregenerasi Kunci API Sekunder untuk Akun Peta Azure yang ditentukan.
+Meregenerasi Kunci API Sekunder untuk Akun Azure Maps yang ditentukan.
 
 ## PARAMETERS
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Peta disambungkan dari Get-AzureRmMapsAccount.
+Peta Akun yang disalurkan dari Get-AzureRmMapsAccount.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Maps.Models.PSMapsAccount
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Peta Akun.
+Peta Kunci Akun.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Peta Akun.
+Peta Nama Akun.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Peta ResourceId Akun.
+Peta Account ResourceId.
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

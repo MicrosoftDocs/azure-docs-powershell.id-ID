@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmLoadBalancer.md
 ms.openlocfilehash: 90cafc66857ee2ec94806628b41960eaafaf6e15
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420689"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062886"
 ---
 # Get-AzureRmLoadBalancer
 
 ## SYNOPSIS
-Mendapatkan penyeimbang muat.
+Mendapatkan penyeimbang beban.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,29 +28,29 @@ Get-AzureRmLoadBalancer [-ResourceGroupName <String>] [-Name <String>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Perluas
+### Memperluas
 ```
 Get-AzureRmLoadBalancer -ResourceGroupName <String> -Name <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmLoadBalancer** mendapatkan satu atau beberapa penyeimbang muat Azure yang terdapat di grup sumber daya.
+Cmdlet **Get-AzureRmLoadBalancer** mendapatkan satu atau beberapa penyeimbang muat Azure yang terdapat dalam grup sumber daya.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan penyeimbang muat
+### Contoh 1: Dapatkan load balancer
 ```
 PS C:\>Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 ```
 
-Perintah ini mendapatkan penyeimbang muat bernama MyLoadBalancer.
-Penyeimbang muat harus ada sebelum Anda dapat menjalankan cmdlet ini.
+Perintah ini mendapatkan load balancer bernama MyLoadBalancer.
+Penyeimbang beban harus ada sebelum Anda dapat menjalankan cmdlet ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -144,7 +144,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmLoadBalancer](./New-AzureRmLoadBalancer.md)
 
-[Remove-AzureRmLoadBalancer](./Remove-AzureRmLoadBalancer.md)
+[Hapus-AzureRmLoadBalancer](./Remove-AzureRmLoadBalancer.md)
 
 [Set-AzureRmLoadBalancer](./Set-AzureRmLoadBalancer.md)
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkInterfaceIpConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkInterfaceIpConfig.md
 ms.openlocfilehash: c912d32c39380ee3d653fa228632a4d01f0e3049
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421630"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062119"
 ---
 # Remove-AzureRmNetworkInterfaceIpConfig
 
@@ -44,7 +44,7 @@ Perintah pertama mendapatkan antarmuka jaringan yang disebut mynic dan menyimpan
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi IP antarmuka jaringan yang akan dihapus.
+Menentukan nama konfigurasi IP antarmuka jaringan untuk dihapus.
 
 ```yaml
 Type: System.String
@@ -74,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan objek **NetworkInterface.**
-Objek ini berisi konfigurasi IP antarmuka jaringan yang akan dihapus.
+Menentukan objek **NetworkInterface** .
+Objek ini berisi konfigurasi IP antarmuka jaringan untuk dihapus.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -102,7 +102,7 @@ Parameter: NetworkInterface (ByValue)
 ### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan
 
 ## RELATED LINKS
 

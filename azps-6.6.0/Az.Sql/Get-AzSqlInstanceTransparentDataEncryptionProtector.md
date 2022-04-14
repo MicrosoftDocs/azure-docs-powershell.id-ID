@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceTransparentDataEncryptionProtector.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlInstanceTransparentDataEncryptionProtector.md
 ms.openlocfilehash: 7ba0635ccef202cf99556626ee36a6792219a730
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140097587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076449"
 ---
 # Get-AzSqlInstanceTransparentDataEncryptionProtector
 
 ## SYNOPSIS
-Mendapatkan enkripsi data transparan (TDE, Transparent Data Encryption) untuk SQL yang dikelola.
+Mendapatkan pelindung Enkripsi Data Transparan (TDE, Transparent Data Encryption) untuk instans yang dikelola SQL.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqlinstancetransparentdataencryptionprotector) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqlinstancetransparentdataencryptionprotector) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-AzSqlInstanceTransparentDataEncryptionProtector [-InstanceResourceId] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzSqlInstanceTransparentDataEncryptionProtector cmdlet mendapatkan instans TDE dengan instans terkelola SQL tertentu.
+Cmdlet Get-AzSqlInstanceTransparentDataEncryptionProtector mendapatkan pelindung TDE untuk instans yang dikelola SQL yang ditentukan.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini mendapatkan delegasi TDE untuk instans terkelola bernama ContosoManagedInstanceName di grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mendapatkan pelindung TDE untuk instans terkelola bernama ContosoManagedInstanceName dalam grup sumber daya bernama ContosoResourceGroup.
 
 ### Contoh 2: Menggunakan objek instans terkelola
 ```powershell
@@ -70,7 +70,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini mendapatkan delegasi TDE untuk instans terkelola bernama ContosoManagedInstanceName di grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mendapatkan pelindung TDE untuk instans terkelola bernama ContosoManagedInstanceName dalam grup sumber daya bernama ContosoResourceGroup.
 
 ### Contoh 3: Menggunakan id sumber daya instans terkelola
 ```powershell
@@ -84,7 +84,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini mendapatkan delegasi TDE untuk instans terkelola bernama ContosoManagedInstanceName di grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mendapatkan pelindung TDE untuk instans terkelola bernama ContosoManagedInstanceName dalam grup sumber daya bernama ContosoResourceGroup.
 
 ### Contoh 4: Menggunakan piping
 ```powershell
@@ -98,7 +98,7 @@ ManagedInstanceKeyVaultKeyName : contoso_contosokey_0123456789012345678901234567
 KeyId                          : https://contoso.vault.azure.net/keys/contosokey/01234567890123456789012345678901
 ```
 
-Perintah ini mendapatkan delegasi TDE untuk instans terkelola bernama ContosoManagedInstanceName di grup sumber daya yang bernama ContosoResourceGroup.
+Perintah ini mendapatkan pelindung TDE untuk instans terkelola bernama ContosoManagedInstanceName dalam grup sumber daya bernama ContosoResourceGroup.
 
 ## PARAMETERS
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Instance
-Objek input contoh
+Objek input instans
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedInstance.Model.AzureSqlManagedInstanceModel
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama contoh
+Nama instans
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceResourceId
-Id sumber daya contoh
+Id sumber daya instans
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

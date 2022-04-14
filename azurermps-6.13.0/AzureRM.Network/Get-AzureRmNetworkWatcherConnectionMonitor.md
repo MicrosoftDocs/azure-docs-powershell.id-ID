@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmNetworkWatcherConnectionMonitor.md
 ms.openlocfilehash: 3f380135cc6edde875c927dd9d640a10cdf14957
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428387"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062894"
 ---
 # Get-AzureRmNetworkWatcherConnectionMonitor
 
 ## SYNOPSIS
-Mengembalikan monitor koneksi dengan nama atau daftar monitor koneksi yang ditentukan
+Mengembalikan monitor koneksi dengan nama tertentu atau daftar monitor koneksi
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -50,7 +50,7 @@ Cmdlet Get-AzureRmNetworkWatcherConnectionMonitor mengembalikan monitor koneksi 
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan monitor koneksi menurut nama di lokasi yang ditentukan
+### Contoh 1: Dapatkan monitor koneksi berdasarkan nama di lokasi yang ditentukan
 ```
 PS C:\> Get-AzureRmNetworkWatcherConnectionMonitor -Location centraluseuap -Name cm
 
@@ -82,7 +82,7 @@ Tags                        : {
                               }
 ```
 
-Dalam contoh ini, kita mendapatkan monitor koneksi menurut nama di lokasi yang ditentukan.
+Dalam contoh ini, kami mendapatkan monitor koneksi berdasarkan nama di lokasi yang ditentukan.
 
 ## PARAMETERS
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID Sumber Daya monitor koneksi.
+ID sumber daya monitor koneksi.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -206,15 +206,15 @@ Parameter: NetworkWatcher (ByValue)
 ### Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher, connection monitor
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS
 
-[New-AzureRmNetworkWatcher]()
+[AzureRmNetworkWatcher baru]()
 
 [Get-AzureRmNetworkWatcher]()
 
-[Remove-AzureRmNetworkWatcher]()
+[Hapus-AzureRmNetworkWatcher]()
 
 [Get-AzureRmNetworkWatcherNextHop]()
 
@@ -224,13 +224,13 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [Get-AzureRmNetworkWatcherTroubleshootingResult]()
 
-[New-AzureRmNetworkWatcherPacketCapture]()
+[Baru-AzureRmNetworkWatcherPacketCapture]()
 
 [New-AzureRmPacketCaptureFilterConfig]()
 
 [Get-AzureRmNetworkWatcherPacketCapture]()
 
-[Remove-AzureRmNetworkWatcherPacketCapture]()
+[Hapus-AzureRmNetworkWatcherPacketCapture]()
 
 [Stop-AzureRmNetworkWatcherPacketCapture]()
 
@@ -238,7 +238,7 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [Get-AzureRmNetworkWatcherConnectionMonitorReport]()
 
-[Remove-AzureRmNetworkWatcherConnectionMonitor]()
+[Hapus-AzureRmNetworkWatcherConnectionMonitor]()
 
 [Set-AzureRmNetworkWatcherConnectionMonitor]()
 
@@ -248,9 +248,9 @@ Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, ne
 
 [New-AzureRmNetworkWatcherProtocolConfiguration]()
 
-[Test-AzureRmNetworkWatcherIPFlow]()
+[Uji-AzureRmNetworkWatcherIPFlow]()
 
-[Test-AzureRmNetworkWatcherConnectivity]()
+[Uji-AzureRmNetworkWatcherConnectivity]()
 
 [Start-AzureRmNetworkWatcherResourceTroubleshooting]()
 

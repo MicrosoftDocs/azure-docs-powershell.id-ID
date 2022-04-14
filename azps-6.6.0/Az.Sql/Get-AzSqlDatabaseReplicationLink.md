@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseReplicationLink.md
 ms.openlocfilehash: 2f4b1dcede0ff450fe5dcee6005c5879e62dfb5a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139932091"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076611"
 ---
 # Get-AzSqlDatabaseReplicationLink
 
 ## SYNOPSIS
-Mendapatkan link replikasi geo antara grup sumber Azure SQL Database dan grup sumber daya SQL Server.
+Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/get-azsqldatabasereplicationlink) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasereplicationlink) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,13 +31,13 @@ Get-AzSqlDatabaseReplicationLink [-DatabaseName] <String> -PartnerResourceGroupN
 
 ## DESCRIPTION
 Cmdlet **Get-AzSqlDatabaseReplicationLink** menggantikan cmdlet **Get-AzSqlDatabaseCopy** .
-Program ini mendapatkan semua link replikasi geo antara sumber daya Azure SQL Database dan grup sumber daya atau AzureSQL Server.
+Ini mendapatkan semua tautan geo-replikasi antara Azure SQL Database yang ditentukan dan grup sumber daya atau AzureSQL Server.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan link replikasi geo antara grup sumber Azure SQL Database dan grup sumber daya SQL Server. (otomatisgenerated)
+Mendapatkan tautan replikasi geografis antara Azure SQL Database dan grup sumber daya atau SQL Server. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -47,7 +47,7 @@ Get-AzSqlDatabaseReplicationLink -DatabaseName db1 -PartnerResourceGroupName rg2
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama pengguna SQL Database untuk mengambil link.
+Menentukan nama SQL Database untuk mengambil tautan.
 
 ```yaml
 Type: System.String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerServerName
-Menentukan nama Azure SQL Server untuk mitra.
+Menentukan nama Server Azure SQL untuk mitra.
 
 ```yaml
 Type: System.String
@@ -107,7 +107,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya Azure untuk database yang akan mendapatkan tautan.
+Menentukan nama grup sumber daya Azure untuk database yang akan diambil tautannya.
 
 ```yaml
 Type: System.String
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama file SQL Server untuk mengambil link.
+Menentukan nama SQL Server database untuk mengambil tautan.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -181,4 +181,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/new-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/New-AzIntegrationAccountAgreement.md
-ms.openlocfilehash: f518862b0c1e58c3a5ab3ce09cc355ec9f821c87
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 010d039765e71a2d6b4cdea642d38f58afea21e5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140549482"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142068133"
 ---
 # New-AzIntegrationAccountAgreement
 
 ## SYNOPSIS
 Membuat perjanjian akun integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/new-azintegrationaccountagreement) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,16 +34,16 @@ New-AzIntegrationAccountAgreement -ResourceGroupName <String> -Name <String> -Ag
 ## DESCRIPTION
 Cmdlet **New-AzIntegrationAccountAgreement** membuat perjanjian akun integrasi.
 Cmdlet ini mengembalikan objek yang mewakili perjanjian akun integrasi.
-Tentukan nama akun integrasi, nama grup sumber daya, nama perjanjian, tipe, nama mitra, pengkualifikasi mitra, dan konten perjanjian.
-Nilai file parameter templat yang Anda tentukan di baris perintah diutamakan lebih dari nilai parameter templat dalam objek parameter templat.
+Tentukan nama akun integrasi, nama grup sumber daya, nama perjanjian, tipe, nama mitra, pengualifikasi mitra, dan konten perjanjian.
+Nilai file parameter templat yang Anda tentukan di baris perintah lebih diutamakan daripada nilai parameter templat dalam objek parameter templat.
 Modul ini mendukung parameter dinamis.
 Untuk menggunakan parameter dinamis, ketikkan dalam perintah.
 Untuk menemukan nama parameter dinamis, ketik tanda hubung (-) setelah nama cmdlet, lalu tekan tombol Tab berulang kali untuk menelusuri parameter yang tersedia.
-Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilai tersebut.
+Jika Anda menghilangkan parameter templat yang diperlukan, cmdlet akan meminta nilainya.
 
 ## EXAMPLES
 
-### Contoh 1: Buat perjanjian akun integrasi
+### Contoh 1: Membuat perjanjian akun integrasi
 ```powershell
 PS C:\>New-AzIntegrationAccountAgreement -Name "IntegrationAccount31"-ResourceGroupName "ResourceGroup11" -AgreementName "IntegrationAccountAgreement06" -AgreementType "X12" -GuestPartner "GuestPartner" -HostPartner "HostPartner" -GuestIdentityQualifier "BB" -HostIdentityQualifier "AA" -AgreementContentFilePath "C:\temp\AgreementContent.json"
 Id                     : /subscriptions/<SubscriptionId>/resourceGroups/ResourceGroup11/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount31/agreements/IntegrationAccountAgreement06
@@ -65,7 +68,7 @@ Perintah ini membuat perjanjian akun integrasi dalam grup sumber daya Azure yang
 
 ### Contoh 2
 
-Membuat perjanjian akun integrasi. (otomatisgenerated)
+Membuat perjanjian akun integrasi. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 New-AzIntegrationAccountAgreement -AgreementContent <String> -AgreementName 'IntegrationAccountAgreement06' -AgreementType X12 -GuestIdentityQualifier 'BB' -GuestIdentityQualifierValue <String> -GuestPartner 'GuestPartner' -HostIdentityQualifier 'AA' -HostIdentityQualifierValue <String> -HostPartner 'HostPartner' -Name 'IntegrationAccount31' -ResourceGroupName 'ResourceGroup11'
@@ -74,8 +77,8 @@ New-AzIntegrationAccountAgreement -AgreementContent <String> -AgreementName 'Int
 ## PARAMETERS
 
 ### -AgreementContent
-Menentukan konten perjanjian, dalam format JavaScript Object Notation (JSON), untuk perjanjian tersebut.
-Tentukan parameter ini atau *parameter AgreementContentFilePath* .
+Menentukan konten perjanjian, dalam format JavaScript Object Notation (JSON), untuk perjanjian.
+Tentukan parameter ini atau parameter *AgreementContentFilePath* .
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementContentFilePath
-Menentukan jalur file konten perjanjian untuk perjanjian itu.
+Menentukan jalur file konten perjanjian untuk perjanjian.
 Tentukan parameter ini atau parameter *AgreementContent* .
 
 ```yaml
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestIdentityQualifier
-Menentukan penkualifikasi identitas bisnis nama untuk mitra tamu.
+Menentukan nama pengualifikasi identitas bisnis untuk mitra tamu.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestIdentityQualifierValue
-Nilai penkualifikasi identitas tamu perjanjian akun integrasi.
+Nilai kualifikasi identitas tamu persetujuan akun integrasi.
 
 ```yaml
 Type: System.String
@@ -200,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostIdentityQualifier
-Menentukan penkualifikasi identitas bisnis nama untuk mitra tuan rumah.
+Menentukan pengualifikasi identitas bisnis nama untuk mitra host.
 
 ```yaml
 Type: System.String
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostIdentityQualifierValue
-Nilai penkualifikasi identitas perjanjian akun integrasi.
+Nilai kualifikasi identitas host perjanjian akun integrasi.
 
 ```yaml
 Type: System.String
@@ -245,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Metadata
-Menentukan objek metadata untuk perjanjian itu.
+Menentukan objek metadata untuk perjanjian.
 
 ```yaml
 Type: System.Object
@@ -290,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +309,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

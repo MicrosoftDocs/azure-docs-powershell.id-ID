@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.datafactory/get-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryGateway.md
-ms.openlocfilehash: 445181fac2be479228f0e272e06c88549b01b382
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: d0d7bf4db29cd9f4e8024084e7b8e3ceb448d17c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140381908"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113299"
 ---
 # Get-AzDataFactoryGateway
 
 ## SYNOPSIS
 Mendapatkan informasi tentang gateway logika di Azure Data Factory.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactorygateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,9 +37,9 @@ Get-AzDataFactoryGateway [-DataFactory] <PSDataFactory> [[-Name] <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzDataFactoryGateway** mendapatkan informasi tentang gateway logika di Azure Data Factory.
-Jika Anda menentukan nama gateway, cmdlet ini mendapatkan informasi tentang gateway itu.
+Jika Anda menentukan nama gateway, cmdlet ini akan mendapatkan informasi tentang gateway tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua gateway untuk pabrik data.
-Jika Anda ingin menambahkan pusat data Microsoft SQL Server sebagai layanan tertaut ke pabrik data, Anda harus menginstal gateway di komputer lokal Anda.
+Jika Ingin menambahkan Microsoft SQL Server lokal sebagai layanan tertaut ke pabrik data, Anda harus menginstal gateway di komputer lokal.
 
 ## EXAMPLES
 
@@ -63,9 +66,9 @@ LastConnectTime : 8/29/2014 1:56:56 AM
 ExpiryTime      :
 ```
 
-Perintah ini mendapatkan informasi tentang semua gateway logika untuk pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF.
+Perintah ini mendapatkan informasi tentang semua gateway logika untuk pabrik data bernama WikiADF dalam grup sumber daya bernama ADF.
 
-### Contoh 2: Mendapatkan gateway logika tertentu di pabrik data
+### Contoh 2: Mendapatkan gateway logika tertentu dalam pabrik data
 ```
 PS C:\>Get-AzDataFactoryGateway -ResourceGroupName "ADF" -Name "Gateway01" -DataFactoryName "WikiADF"
 Name            : Gateway01
@@ -79,7 +82,7 @@ LastConnectTime : 8/22/2014 1:44:56 AM
 ExpiryTime      :
 ```
 
-Perintah ini mendapatkan informasi tentang gateway logika yang bernama Gateway01 di pabrik data yang bernama WikiADF di grup sumber daya yang bernama ADF.
+Perintah ini mendapatkan informasi tentang gateway logika bernama Gateway01 di pabrik data bernama WikiADF dalam grup sumber daya bernama ADF.
 
 ## PARAMETERS
 
@@ -116,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama gateway logika tentang mana yang mendapatkan informasi.
+Menentukan nama gateway logika tentang mana yang akan mendapatkan informasi.
 
 ```yaml
 Type: System.String
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -175,13 +178,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGateway
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [New-AzDataFactoryGateway](./New-AzDataFactoryGateway.md)
 
-[Remove-AzDataFactoryGateway](./Remove-AzDataFactoryGateway.md)
+[Hapus-AzDataFactoryGateway](./Remove-AzDataFactoryGateway.md)
 
 [Set-AzDataFactoryGateway](./Set-AzDataFactoryGateway.md)
 

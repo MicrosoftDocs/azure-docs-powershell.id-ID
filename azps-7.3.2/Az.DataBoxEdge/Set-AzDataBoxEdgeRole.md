@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/set-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeRole.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Set-AzDataBoxEdgeRole.md
-ms.openlocfilehash: ce925d5c5c035e4096dfac31a962e79ef58138f2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9b308af57ec016e11b11be8db61d8c1a8f06f54e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113371"
 ---
 # Set-AzDataBoxEdgeRole
 
 ## SYNOPSIS
 Memperbarui Peran untuk perangkat
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/set-azdataboxedgerole) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Set-AzDataBoxEdgeRole -ShareName <String[]> [-DefaultProfile <IAzureContextConta
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataBoxEdgeRole** memperbarui peran IoT untuk perangkat Data Box Edge. Berbagi lama yang terpasang akan diganti dengan yang baru tersedia dalam parameter ShareName.
+Cmdlet **Set-AzDataBoxEdgeRole** memperbarui peran IoT untuk perangkat Box Edge Data. Berbagi lama yang terpasang akan diganti dengan yang baru disediakan dalam parameter ShareName.
 
 ## EXAMPLES
 
@@ -51,7 +54,7 @@ Name    IoTHostHub             Platform Status  IotEdgeDeviceId   IotDeviceId  R
 IotRole ehub.azure-devices.net Linux    Enabled iotEdgeDeviceUd   iotDevice    resourceGroupName
 ```
 
-Berbagi Nama akan menggantikan berbagi lama yang terpasang dengan yang baru tersedia
+Bagikan Nama akan menggantikan berbagi lama yang terpasang dengan yang baru disediakan
 
 ### Contoh 2
 ```powershell
@@ -62,7 +65,7 @@ Name    IoTHostHub             Platform Status  IotEdgeDeviceId   IotDeviceId  R
 IotRole ehub.azure-devices.net Linux    Enabled iotEdgeDeviceUd   iotDevice    resourceGroupName
 ```
 
-Untuk membatalkan semua berbagi
+Untuk melepas semua berbagi
 
 ## PARAMETERS
 
@@ -157,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Berbagi dalam satu peran
+Berbagi dalam peran
 
 ```yaml
 Type: System.String[]
@@ -172,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

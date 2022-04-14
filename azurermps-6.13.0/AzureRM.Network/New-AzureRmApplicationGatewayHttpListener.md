@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayHttpListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/New-AzureRmApplicationGatewayHttpListener.md
 ms.openlocfilehash: 29df7c4ac7cb941e8826c3e1fb929d92cc626512
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062461"
 ---
 # New-AzureRmApplicationGatewayHttpListener
 
@@ -44,25 +44,25 @@ Cmdlet **New-AzureRmApplicationGatewayHttpListener** membuat pendengar HTTP untu
 
 ## EXAMPLES
 
-### Contoh 1: Buat pendengar HTTP
+### Contoh 1: Membuat pendengar HTTP
 ```
 PS C:\>$Listener = New-AzureRmApplicationGatewayHttpListener -Name "Listener01" -Protocol "Http" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01
 ```
 
-Perintah ini membuat pendengar HTTP bernama Listener01 dan menyimpan hasilnya pada variabel yang bernama $Listener.
+Perintah ini membuat pendengar HTTP bernama Listener01 dan menyimpan hasilnya dalam variabel bernama $Listener.
 
-### Contoh 2: Buat pendengar HTTP dengan SSL
+### Contoh 2: Membuat pendengar HTTP dengan SSL
 ```
 PS C:\>$Listener = New-AzureRmApplicationGatewayHttpListener -Name "Listener01" -Protocol "Https" -FrontendIpConfiguration $FIp01 -FrontendPort $FP01 -SslCertificate $SSLCert01
 ```
 
-Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL di variabel $SSLCert 01.
-Perintah menyimpan hasil di variabel bernama $Listener.
+Perintah ini membuat pendengar HTTP yang menggunakan offload SSL dan menyediakan sertifikat SSL dalam variabel $SSLCert 01.
+Perintah menyimpan hasil dalam variabel bernama $Listener.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIPConfiguration
-Menentukan objek konfigurasi IP front-end untuk pendengar HTTP.
+Menentukan objek konfigurasi IP ujung-depan untuk pendengar HTTP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayFrontendIPConfiguration
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPortId
-Menentukan ID objek port ujung-depan untuk pendengar HTTP.
+Menentukan ID objek port ujung depan untuk pendengar HTTP.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostName
-Menentukan nama host dari pendengar HTTP gateway aplikasi.
+Menentukan nama host pendengar HTTP gateway aplikasi.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Menentukan protokol yang digunakan pendengar HTTP.
 
 ```yaml
@@ -227,11 +227,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmVirtualHub.md
-ms.openlocfilehash: 1a5bead0c3ec826d941845b6b87556691f7a706130fdd02d9465eb3e23069a8c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f758197a0d2b3f6a62071a139e8a5fc67acc50c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140861606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062982"
 ---
 # Get-AzureRmVirtualHub
 
 ## SYNOPSIS
-Mendapatkan Azure VirtualHub dengan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual oleh ResourceGroupName/Subscription.
+Mendapatkan Azure VirtualHub menurut Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual menurut ResourceGroupName/Subscription.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,7 +33,7 @@ Get-AzureRmVirtualHub -ResourceGroupName <String> [-Name <String>] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Mendapatkan Azure VirtualHub dengan Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual oleh ResourceGroupName/Subscription.
+Mendapatkan Azure VirtualHub menurut Nama dan ResourceGroupName atau mencantumkan semua Hub Virtual menurut ResourceGroupName/Subscription.
 
 ## EXAMPLES
 
@@ -57,9 +57,9 @@ Type                      : Microsoft.Network/virtualHubs
 ProvisioningState         : Succeeded
 ```
 
-Langkah di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Virtual Hub di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
+Hal di atas akan membuat grup sumber daya "testRG", Virtual WAN, dan Hub Virtual di AS Barat dalam grup sumber daya tersebut di Azure. Hub virtual akan memiliki ruang alamat "10.0.1.0/24".
 
-Lalu akan mendapatkan hub virtual menggunakan ResourceGroupName dan ResourceName.
+Kemudian, hub virtual akan menggunakan ResourceGroupName dan ResourceName.
 
 ## PARAMETERS
 
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

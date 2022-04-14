@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkProfile.md
-ms.openlocfilehash: ddcf4ec07a457b70da9ad80d234c8f4994205717c90392069c853c9560badc52
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ebf2a58530f1dabe0e320dd78a38c63c86565c73
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860436"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142061994"
 ---
 # Remove-AzureRmNetworkProfile
 
@@ -21,7 +21,7 @@ Menghapus profil jaringan.
 
 ## SYNTAX
 
-### RemoveByName
+### HapusByName
 ```
 Remove-AzureRmNetworkProfile -ResourceGroupName <String> [-Force] [-AsJob] [-PassThru]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -46,7 +46,7 @@ Remove-AzureRmNetworkProfile -InputObject <PSNetworkProfile> [-Force] [-AsJob] [
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmNetworkProfile** menghapus profil jaringan jika tidak ada antarmuka jaringan wadah (seperti yang di kontras dengan konfigurasi antarmuka jaringan **wadah) telah** dibuat.
+Cmdlet **Remove-AzureRmNetworkProfile** menghapus profil jaringan jika tidak ada antarmuka jaringan kontainer (kontras dengan **konfigurasi** antarmuka jaringan kontainer) yang telah dibuat.
 
 ## EXAMPLES
 
@@ -55,12 +55,12 @@ Cmdlet **Remove-AzureRmNetworkProfile** menghapus profil jaringan jika tidak ada
 Remove-AzureRmNetworkProfile -Name np1 -ResourceGroupName rg1
 ```
 
-Ini akan menghapus profil jaringan dengan nama np1 dari grup sumber daya rg1.
+Tindakan ini akan menghapus profil jaringan dengan nama np1 dari grup sumber daya rg1.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -89,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menghapus sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menghapus sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya Azure resource manager profil jaringan.
+ID sumber daya manajer sumber daya Azure dari profil jaringan.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

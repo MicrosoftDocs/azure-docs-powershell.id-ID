@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Get-AzureRmDelegation.md
 ms.openlocfilehash: f3e8ef97ab618df37ba7d5adae107d65676ed29f
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421655"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062906"
 ---
 # Get-AzureRmDelegation
 
@@ -27,7 +27,7 @@ Get-AzureRmDelegation [-Name <String>] -Subnet <PSSubnet> [-DefaultProfile <IAzu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDelegation** mendapatkan delegasi bernama dari subnet. Jika tidak ada delegasi yang dinamai, maka akan mengembalikan semua delegasi pada subnet yang disediakan.
+Cmdlet **Get-AzureRmDelegation** mendapatkan delegasi bernama dari subnet. Jika tidak ada delegasi yang dinamai, delegasi mengembalikan semua delegasi pada subnet yang disediakan.
 
 ## EXAMPLES
 
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
-Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
+Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -116,8 +116,8 @@ Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsof
 ## CATATAN
 
 ## RELATED LINKS
-[Add-AzureRmDelegation](./Add-AzureRmDelegation.md) 
- [New-AzureRmDelegation](./New-AzureRmDelegation.md) 
- [Remove-AzureRmDelegation](./Remove-AzureRmDelegation.md) 
- [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md) 
+[Add-AzureRmDelegation](./Add-AzureRmDelegation.md)
+ [New-AzureRmDelegation](./New-AzureRmDelegation.md)
+ [Hapus-AzureRmDelegation](./Remove-AzureRmDelegation.md)
+ [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md)
  [Get-AzureRmVirtualNetworkSubnetConfig](./Get-AzureRmVirtualNetworkSubnetConfig.md)

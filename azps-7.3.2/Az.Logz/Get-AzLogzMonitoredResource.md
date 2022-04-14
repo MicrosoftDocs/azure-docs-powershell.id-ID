@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logz/get-azlogzm
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Logz/help/Get-AzLogzMonitoredResource.md
-ms.openlocfilehash: 8d4b6b6035a443f52fc1c21e4993132c7d91e67c
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 06350833b40490c6f1c616e4473cb58eaee1fb8e
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140000413"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142067935"
 ---
 # Get-AzLogzMonitoredResource
 
 ## SYNOPSIS
-List the resources currently being monitored by the Logz monitor resource.
+Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logz/get-azlogzmonitoredresource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,11 +35,11 @@ Get-AzLogzMonitoredResource -MonitorName <String> -ResourceGroupName <String> -S
 ```
 
 ## DESCRIPTION
-List the resources currently being monitored by the Logz monitor resource.
+Cantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz.
 
 ## EXAMPLES
 
-### Contoh 1:  List the resources currently being monitored by the Logz monitor resource
+### Contoh 1: Cantumkan sumber daya yang sedang dipantau oleh sumber daya monitor Logz
 ```powershell
 PS C:\> Get-AzLogzMonitoredResource -ResourceGroupName LPTrials -MonitorName lpatlogz
 
@@ -51,7 +54,7 @@ CapturedByRules                                       True
 
 Perintah ini mencantumkan sumber daya yang saat ini sedang dipantau oleh sumber daya monitor Logz.
 
-### Contoh 2:  List the resources currently being monitored by the Logz sub account
+### Contoh 2: Daftar sumber daya yang sedang dipantau oleh sub akun Logz
 ```powershell
 PS C:\> Get-AzLogzMonitoredResource -ResourceGroupName LPTrials -MonitorName lpatlogz -SubAccountName lpslogzsubaccount
 
@@ -60,7 +63,7 @@ ReasonForLogsStatus ReasonForMetricsStatus SendingLog SendingMetric
 Other                                      False
 ```
 
-Perintah ini mencantumkan sumber daya yang saat ini sedang dipantau oleh sub akun Logz
+Perintah ini mencantumkan sumber daya yang sedang dipantau oleh sub akun Logz
 
 ## PARAMETERS
 
@@ -80,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonitorName
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -96,7 +99,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -111,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubAccountName
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -141,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

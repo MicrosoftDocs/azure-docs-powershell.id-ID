@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databoxedge/invo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeStorageContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBoxEdge/DataBoxEdge/help/Invoke-AzDataBoxEdgeStorageContainer.md
-ms.openlocfilehash: a218f24ad04c5c38db90bf3e46c9a3801bfb3e5b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b06fb20090072dd4e5cd8bbaa19ba59dfa082320
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140544769"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113587"
 ---
 # Invoke-AzDataBoxEdgeStorageContainer
 
 ## SYNOPSIS
-Menjalankan tindakan tertentu pada wadah penyimpanan
+Memanggil tindakan tertentu pada wadah penyimpanan
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databoxedge/invoke-azdataboxedgestoragecontainer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,7 +42,7 @@ Invoke-AzDataBoxEdgeStorageContainer [-RefreshData] [-AsJob] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Invoke-AzDataBoxEdgeStorageContainer** menjalankan tindakan untuk melakukan refresh data pada wadah penyimpanan pada perangkat Edge Kotak Data. 
+Cmdlet **Invoke-AzDataBoxEdgeStorageContainer** meminta tindakan untuk merefresh data di wadah penyimpanan di perangkat Box Edge Data. 
 
 ## EXAMPLES
 
@@ -57,7 +60,7 @@ PS C:\> Get-AzDataBoxEdgeStorageContainer -ResourceGroupName resourceGroupName -
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Sediakan Objek EdgeStorageAccount yang sudah ada
+Menyediakan EdgeStorageAccount Object yang sudah ada
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DataBoxEdge.Models.PSDataBoxEdgeStorageContainer
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -RefreshData
-Refresh Metadata Wadah dengan data dari awan
+Refresh Metadata Kontainer dengan data dari awan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -222,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -237,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

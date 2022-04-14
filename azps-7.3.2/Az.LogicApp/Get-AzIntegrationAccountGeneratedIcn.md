@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.logicapp/get-azi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountGeneratedIcn.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LogicApp/LogicApp/help/Get-AzIntegrationAccountGeneratedIcn.md
-ms.openlocfilehash: 84cb30f1a185023b954e18087678d87e61578ad1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6c7f0be5c0df93d5bb32861669cba654ec82b30d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140008564"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142068223"
 ---
 # Get-AzIntegrationAccountGeneratedIcn
 
 ## SYNOPSIS
-Cmdlet ini mengambil nilai saat ini dari nomor kontrol pertukaran yang dihasilkan per perjanjian.
+Cmdlet ini mengambil nilai saat ini dari nomor kontrol interchange yang dihasilkan per perjanjian.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.logicapp/get-azintegrationaccountgeneratedicn) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,9 +28,9 @@ Get-AzIntegrationAccountGeneratedIcn -ResourceGroupName <String> -Name <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk mengambil nilai angka kontrol pertukaran yang dihasilkan saat ini, jadi untuk menulis kembali nilai yang ditingkatkan dengan Set-AzIntegrationAccountGeneratedIcn.
-Nomor kontrol pertukaran harus ditingkatkan untuk menghindari nomor kontrol pertukaran duplikat untuk angka yang belum bisa direplikasi ke kawasan pasif saat bencana terjadi di kawasan aktif.
-Harap sediakan parameter "-AgreementType" untuk menentukan apakah angka kontrol X12 atau Edifact akan dikembalikan
+Cmdlet ini dimaksudkan untuk digunakan dalam skenario pemulihan bencana untuk mengambil nilai saat ini dari nomor kontrol pertukaran yang dihasilkan sehingga untuk menulis kembali nilai yang ditingkatkan dengan Set-AzIntegrationAccountGeneratedIcn.
+Nomor kontrol pertukaran harus ditingkatkan untuk menghindari nomor kontrol pertukaran duplikat untuk angka yang belum bisa direplikasi ke wilayah pasif saat bencana terjadi di kawasan aktif.
+Harap sediakan parameter "-AgreementType" untuk menentukan apakah nomor kontrol X12 atau Edifact akan dikembalikan
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan akun integrasi yang dihasilkan nomor kontrol pertukaran X12 berdasarkan nama perjanjian. Harap pastikan perjanjian yang ditentukan berjenis "X12"
+Perintah ini mendapatkan akun integrasi yang dihasilkan X12 pertukaran nomor kontrol menurut nama perjanjian. Pastikan perjanjian yang ditentukan adalah tipe "X12"
 
 ### Contoh 2
 ```
@@ -49,7 +52,7 @@ ControlNumberChangedTime : 2/15/2017 12:36:00 AM
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan akun integrasi yang dihasilkan nomor kontrol pertukaran Edifact menurut nama perjanjian. Pastikan perjanjian yang ditentukan berjenis "Edifact"
+Perintah ini mendapatkan akun integrasi yang dihasilkan Edifact nomor kontrol per pertukaran nama perjanjian. Pastikan perjanjian yang ditentukan adalah tipe "Edifact"
 
 ### Contoh 3
 ```
@@ -70,7 +73,7 @@ AgreementName            : X12IntegrationAccountAgreement3
 IsMessageProcessingFailed:
 ```
 
-Perintah ini mendapatkan semua nomor kontrol pertukaran X12 yang dihasilkan berdasarkan nama akun integrasi.
+Perintah ini mendapatkan semua nomor kontrol pertukaran X12 yang dihasilkan dengan nama akun integrasi.
 
 ## PARAMETERS
 
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

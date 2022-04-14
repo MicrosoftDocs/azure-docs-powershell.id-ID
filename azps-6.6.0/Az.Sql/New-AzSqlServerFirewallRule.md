@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/New-AzSqlServerFirewallRule.md
 ms.openlocfilehash: df2d5dcd32ebc4ded27d4a0d1d44c9c455198e6f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139931731"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142076233"
 ---
 # New-AzSqlServerFirewallRule
 
@@ -19,7 +19,7 @@ ms.locfileid: "139931731"
 Membuat aturan firewall untuk server SQL Database.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sql/new-azsqlserverfirewallrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/new-azsqlserverfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-AzSqlServerFirewallRule [-AllowAllAzureIPs] [-ServerName] <String> [-Resourc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSqlServerFirewallRule** membuat aturan firewall untuk server Azure SQL Database tertentu.
+Cmdlet **New-AzSqlServerFirewallRule** membuat aturan firewall untuk server Azure SQL Database yang ditentukan.
 
 ## EXAMPLES
 
@@ -51,23 +51,23 @@ EndIpAddress      : 192.168.0.199
 FirewallRuleName  : Rule01
 ```
 
-Perintah ini membuat aturan firewall yang bernama Rule01 di server yang bernama Server01.
-Aturan menyertakan alamat IP mulai dan akhir yang ditentukan.
+Perintah ini membuat aturan firewall bernama Rule01 di server bernama Server01.
+Aturan ini menyertakan alamat IP mulai dan akhir yang ditentukan.
 
-### Contoh 2: Buat aturan firewall yang mengizinkan semua alamat IP Azure mengakses server
+### Contoh 2: Membuat aturan firewall yang memungkinkan semua alamat IP Azure mengakses server
 ```
 PS C:\>New-AzSqlServerFirewallRule -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -AllowAllAzureIPs
 ```
 
-Perintah ini membuat aturan firewall pada server bernama Server01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01.
-Karena parameter *AllowAllAzureIPs* digunakan, aturan firewall mengizinkan semua alamat IP Azure untuk mengakses server.
+Perintah ini membuat aturan firewall di server bernama Server01 yang termasuk dalam grup sumber daya bernama ResourceGroup01.
+Karena parameter *AllowAllAzureIP* digunakan, aturan firewall memungkinkan semua alamat IP Azure untuk mengakses server.
 
 ## PARAMETERS
 
 ### -AllowAllAzureIPs
-Menunjukkan bahwa aturan firewall ini mengizinkan semua alamat IP Azure untuk mengakses server.
-Anda tidak dapat menggunakan parameter ini jika ingin menggunakan *parameter FirewallRuleName*, *StartIpAddress*, *dan EndIpAddress* .
-Jika Anda ingin memperbolehkan IP Azure mengakses server, parameter ini harus digunakan dalam panggilan cmdlet terpisah yang tidak menggunakan parameter *FirewallRuleName*, *StartIpAddress*, *dan EndIpAddress* .
+Menunjukkan bahwa aturan firewall ini memungkinkan semua alamat IP Azure mengakses server.
+Anda tidak dapat menggunakan parameter ini jika ingin menggunakan parameter *FirewallRuleName*, *StartIpAddress*, dan *EndIpAddress* .
+Jika Anda ingin mengizinkan IP Azure mengakses server, parameter ini harus digunakan dalam panggilan cmdlet terpisah yang tidak menggunakan parameter *FirewallRuleName*, *StartIpAddress*, dan *EndIpAddress* .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallRuleName
-Menentukan nama aturan firewall yang baru.
+Menentukan nama aturan firewall baru.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartIpAddress
-Menentukan nilai awal rentang alamat IP untuk aturan firewall.
+Menentukan nilai mulai rentang alamat IP untuk aturan firewall.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -224,6 +224,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlServerFirewallRule](./Set-AzSqlServerFirewallRule.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

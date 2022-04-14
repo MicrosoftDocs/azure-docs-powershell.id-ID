@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.netwo
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkInterfaceTapConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Network/Commands.Network/help/Remove-AzureRmNetworkInterfaceTapConfig.md
-ms.openlocfilehash: 8af9bd11eba7075b74aa91b3568819350b9927df0335346df77985c0016dc9db
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9833a2e66eb6471efb9aed021af7ae07e8e520c5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140859500"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142062020"
 ---
 # Remove-AzureRmNetworkInterfaceTapConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi ketuk dari antarmuka jaringan tertentu
+Menghapus konfigurasi ketukan dari antarmuka jaringan tertentu
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -45,21 +45,21 @@ Cmdlet **Remove-AzureRmNetworkInterfaceTapConfig** menghapus konfigurasi ketuk A
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus konfigurasi ketuk
+### Contoh 1: Menghapus konfigurasi ketukan
 ```
 PS C:\>Remove-AzureRmNetworkInterfaceTapConfig -Name "TapConfiguration" -NetworkInterfaceName "NetworkInterface1" -ResourceGroup "ResourceGroup1"
 ```
 
 Perintah ini menghapus TapConfiguration dari NetworkInterface1 dalam grup sumber daya ResourceGroup1.
-Karena *parameter Paksa* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
+Karena parameter *Paksa* tidak digunakan, pengguna akan diminta untuk mengonfirmasi tindakan ini.
 
-### Contoh 2: Hapus antarmuka jaringan
+### Contoh 2: Menghapus antarmuka jaringan
 ```
 PS C:\>Get-AzureRmNetworkInterfaceTapConfig -Name "TapConfiguration" -NetworkInterfaceName "NetworkInterface1" -ResourceGroup "ResourceGroup1" | Remove-AzureRmNetworkInterfaceTapConfig -Force
 ```
 
 Perintah ini menghapus TapConfiguration dari NetworkInterface1 dalam grup sumber daya ResourceGroup1.
-Karena *parameter* Paksa digunakan, pengguna tidak diminta konfirmasi.
+Karena parameter *Paksa* digunakan, pengguna tidak diminta untuk konfirmasi.
 
 ## PARAMETERS
 
@@ -78,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Reference to NetworkInterfaceTapConfig.
+Referensi ke NetworkInterfaceTapConfig.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceTapConfiguration
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
