@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewall.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzFirewall.md
 ms.openlocfilehash: 8dc91f6c224921cea71283a7052eb1c395b5acd7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139973535"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081543"
 ---
 # Get-AzFirewall
 
 ## SYNOPSIS
-Mendapatkan Azure Firewall.
+Dapatkan Azure Firewall.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azfirewall) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azfirewall) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Cmdlet **Get-AzFirewall** mendapatkan satu atau beberapa Firewall dalam grup sum
 
 ## EXAMPLES
 
-### Contoh 1: Ambil semua Firewall dalam grup sumber daya
+### Contoh 1: Mengambil semua Firewall dalam grup sumber daya
 ```powershell
 Get-AzFirewall -ResourceGroupName rgName
 
@@ -104,7 +104,7 @@ Zones                      : {}
 
 Contoh ini mengambil semua Firewall dalam grup sumber daya "rgName".
 
-### Contoh 2: Mengambil Firewall berdasarkan nama
+### Contoh 2: Mengambil Firewall menurut nama
 ```powershell
 Get-AzFirewall -ResourceGroupName rgName -Name azFw
 
@@ -141,9 +141,9 @@ NetworkRuleCollections     : []
 Zones                      : {}
 ```
 
-Contoh ini mengambil Firewall yang bernama "azFw" di grup sumber daya "rgName".
+Contoh ini mengambil Firewall bernama "azFw" dalam grup sumber daya "rgName".
 
-### Contoh 3: Ambil semua Firewall dengan pemfilteran
+### Contoh 3: Mengambil semua Firewall dengan pemfilteran
 ```powershell
 Get-AzFirewall -Name azFw*
 
@@ -214,7 +214,7 @@ Zones                      : {}
 
 Contoh ini mengambil semua Firewall yang dimulai dengan "azFw"
 
-### Contoh 4: Ambil firewall lalu tambahkan kumpulan aturan aplikasi ke Firewall
+### Contoh 4: Mengambil firewall lalu menambahkan kumpulan aturan aplikasi ke Firewall
 ```powershell
 $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $appRule = New-AzFirewallApplicationRule -Name R1 -Protocol "http:80","https:443" -TargetFqdn "*google.com", "*microsoft.com" -SourceAddress "10.0.0.0"
@@ -222,9 +222,9 @@ $appRuleCollection = New-AzFirewallApplicationRuleCollection -Name "MyAppRuleCol
 $azFw.AddApplicationRuleCollection($appRuleCollection)
 ```
 
-Contoh ini mengambil firewall, lalu menambahkan kumpulan aturan aplikasi ke firewall dengan metode panggilan AddApplicationRuleCollection.
+Contoh ini mengambil firewall, lalu menambahkan kumpulan aturan aplikasi ke firewall dengan memanggil metode AddApplicationRuleCollection.
 
-### Contoh 5: Ambil firewall lalu tambahkan kumpulan aturan jaringan ke Firewall
+### Contoh 5: Mengambil firewall lalu menambahkan kumpulan aturan jaringan ke Firewall
 ```powershell
 $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $netRule = New-AzFirewallNetworkRule -Name "all-udp-traffic" -Description "Rule for all UDP traffic" -Protocol "UDP" -SourceAddress "*" -DestinationAddress "*" -DestinationPort "*"
@@ -234,39 +234,39 @@ $azFw.AddNetworkRuleCollection($netRuleCollection)
 
 Contoh ini mengambil firewall, lalu menambahkan kumpulan aturan jaringan ke firewall dengan metode panggilan AddNetworkRuleCollection.
 
-### Contoh 6: Ambil firewall lalu ambil kumpulan aturan aplikasi menurut nama dari Firewall
+### Contoh 6: Mengambil firewall lalu mengambil kumpulan aturan aplikasi berdasarkan nama dari Firewall
 ```powershell
 $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $getAppRc=$azFw.GetApplicationRuleCollectionByName("MyAppRuleCollection")
 ```
 
-Contoh ini mengambil firewall lalu mendapatkan kumpulan aturan menurut nama, metode panggilan GetApplicationRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode GetApplicationRuleCollectionByName adalah case-insensitive.
+Contoh ini mengambil firewall lalu mendapatkan kumpulan aturan berdasarkan nama, metode panggilan GetApplicationRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode GetApplicationRuleCollectionByName tidak peka huruf besar kecil.
 
-### Contoh 7: Ambil firewall lalu ambil kumpulan aturan jaringan menurut nama dari Firewall
+### Contoh 7: Mengambil firewall lalu mengambil kumpulan aturan jaringan berdasarkan nama dari Firewall
 ```powershell
 $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $getNetRc=$azFw.GetNetworkRuleCollectionByName("MyNetworkRuleCollection")
 ```
 
-Contoh ini mengambil firewall lalu mendapatkan kumpulan aturan menurut nama, metode panggilan GetNetworkRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode GetNetworkRuleCollectionByName adalah case-insensitive.
+Contoh ini mengambil firewall lalu mendapatkan kumpulan aturan berdasarkan nama, metode panggilan GetNetworkRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode GetNetworkRuleCollectionByName tidak peka huruf besar kecil.
 
-### Contoh 8: Ambil firewall lalu hapus kumpulan aturan aplikasi menurut nama dari Firewall
+### Contoh 8: Mengambil firewall lalu menghapus kumpulan aturan aplikasi berdasarkan nama dari Firewall
 ```powershell
 $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $azFw.RemoveApplicationRuleCollectionByName("MyAppRuleCollection")
 ```
 
-Contoh ini mengambil firewall lalu menghapus kumpulan aturan menurut nama, metode panggilan RemoveApplicationRuleCollectionByName di objek firewall. Nama kumpulan aturan untuk metode RemoveApplicationRuleCollectionByName adalah case-insensitive.
+Contoh ini mengambil firewall lalu menghapus kumpulan aturan berdasarkan nama, metode panggilan RemoveApplicationRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode RemoveApplicationRuleCollectionByName tidak peka huruf besar kecil.
 
-### Contoh 9: Ambil firewall lalu hapus kumpulan aturan jaringan menurut nama dari Firewall
+### Contoh 9: Mengambil firewall lalu menghapus kumpulan aturan jaringan menurut nama dari Firewall
 ```powershell
 $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $azFw.RemoveNetworkRuleCollectionByName("MyNetworkRuleCollection")
 ```
 
-Contoh ini mengambil firewall lalu menghapus kumpulan aturan menurut nama, metode panggilan RemoveNetworkRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode RemoveNetworkRuleCollectionByName adalah case-insensitive.
+Contoh ini mengambil firewall lalu menghapus kumpulan aturan berdasarkan nama, metode panggilan RemoveNetworkRuleCollectionByName pada objek firewall. Nama kumpulan aturan untuk metode RemoveNetworkRuleCollectionByName tidak peka huruf besar kecil.
 
-### Contoh 10: Ambil firewall lalu alokasikan firewall
+### Contoh 10: Mengambil firewall lalu mengalokasikan firewall
 ```powershell
 $vnet=Get-AzVirtualNetwork -Name "vnet" -ResourceGroupName "rgName"
 $publicIp=Get-AzPublicIpAddress -Name "firewallpip" -ResourceGroupName "rgName"
@@ -274,12 +274,12 @@ $azFw=Get-AzFirewall -Name "azFw" -ResourceGroupName "rgName"
 $azFw.Allocate($vnet, $publicIp)
 ```
 
-Contoh ini mengambil firewall dan panggilan Mengalokasikan di firewall untuk memulai layanan firewall menggunakan konfigurasi (aplikasi dan kumpulan aturan jaringan) yang terkait dengan firewall.
+Contoh ini mengambil firewall dan panggilan Alokasikan di firewall untuk memulai layanan firewall menggunakan konfigurasi (kumpulan aturan aplikasi dan jaringan) yang terkait dengan firewall.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama Firewall yang akan dapatkan cmdlet ini.
+Menentukan nama Firewall yang didapatkan cmdlet ini.
 
 ```yaml
 Type: String
@@ -309,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang dimiliki Firewall.
+Menentukan nama grup sumber daya tempat Firewall berada.
 
 ```yaml
 Type: String
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -334,7 +334,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Commands.Network.Models.PSAzureFirewall
 
-### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSAzureFirewall, Microsoft.Azure.PowerShell.Cmdlets.Network, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IEnumerable'1[[Microsoft.Azure.Commands.Network.Models.PSAzureFirewall, Microsoft.Azure.PowerShell.Cmdlets.Network, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ## CATATAN
 
@@ -342,6 +342,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzFirewall](./New-AzFirewall.md)
 
-[Remove-AzFirewall](./Remove-AzFirewall.md)
+[Hapus-AzFirewall](./Remove-AzFirewall.md)
 
 [Set-AzFirewall](./Set-AzFirewall.md)

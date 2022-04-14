@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Set-AzureRmDataLakeStoreItemAclEntry.md
 ms.openlocfilehash: acf0b53ba6ad03de117e9171ec64d30ee627a927
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421687"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064758"
 ---
 # Set-AzureRmDataLakeStoreItemAclEntry
 
@@ -38,7 +38,7 @@ Set-AzureRmDataLakeStoreItemAclEntry [-Account] <String> [-Path] <DataLakeStoreP
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDataLakeStoreItemAclEntry** mengubah entri (ACE) dalam daftar kontrol akses (ACL, Access Control List) file atau folder di Data Lake Store.
+Cmdlet **Set-AzureRmDataLakeStoreItemAclEntry** mengubah entri (ACE) dalam daftar kontrol akses (ACL) file atau folder di Penyimpanan Data Lake.
 
 ## EXAMPLES
 
@@ -47,26 +47,26 @@ Cmdlet **Set-AzureRmDataLakeStoreItemAclEntry** mengubah entri (ACE) dalam dafta
 PS C:\>Set-AzureRmDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -AceType User -Id (Get-AzureRmADUser -Mail "PattiFuller@contoso.com").ObjectId -Permissions All
 ```
 
-Perintah ini mengubah ACE untuk Patti Fuller agar memiliki semua izin.
+Perintah ini mengubah ACE agar Patti Fuller memiliki semua izin.
 
-### Contoh 2: Ubah izin untuk ACE secara rekursif
+### Contoh 2: Memodifikasi izin untuk ACE secara rekurtif
 ```
 PS C:\>Set-AzureRmDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -AceType User -Id (Get-AzureRmADUser -Mail "PattiFuller@contoso.com").ObjectId -Permissions All -Recurse -Concurrency 128
 ```
 
-### Contoh 3: Ubah izin untuk ACE secara rekursif menggunakan objek Acl
+### Contoh 3: Mengubah izin untuk ACE secara rekurensi menggunakan objek Acl
 ```
 PS C:\>$fullAcl="user:userid1:--x,default:user:userid1:--x"
 PS C:\>$newFullAcl = $fullAcl.Split("{,}")
 PS C:\>Set-AzureRmDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path / -Acl $newFullAcl -Recurse -Concurrency 128
 ```
 
-Perintah ini secara berulang memodifikasi ACE untuk Patti Fuller agar memiliki semua izin untuk akar dan semua subarah dan filenya.
+Perintah ini secara rekursif mengubah ACE untuk Patti Fuller agar memiliki semua izin untuk melakukan root dan semua subdirektori dan filenya.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -81,12 +81,12 @@ Accept wildcard characters: False
 ```
 
 ### -AceType
-Menentukan tipe ACE untuk diubah.
+Menentukan tipe ACE yang akan diubah.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Pengguna 
-- Grup 
+- Kelompok 
 - Masker 
-- Lainnya
+- Lain
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStoreEnums+AceType
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Default
-Menunjukkan bahwa operasi ini memodifikasi ACE default dari ACL yang ditentukan.
+Menunjukkan bahwa operasi ini mengubah ACE default dari ACL yang ditentukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID objek pengguna, grup, atau prinsipal layanan AzureActive Directory yang akan digunakan untuk memodifikasi ACE.
+Menentukan ID objek pengguna, grup, atau prinsipal layanan AzureActive Directory untuk mengubah ACE.
 
 ```yaml
 Type: System.Guid
@@ -191,8 +191,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store dari item untuk memodifikasi ACE, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake item untuk mengubah ACE, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -206,14 +206,14 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Permissions
+### -Izin
 Menentukan izin untuk ACE.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Menjalankan
 - Menulis
 - WriteExecute
-- Baca
+- Membaca
 - ReadExecute
 - ReadWrite
 - Semua
@@ -230,8 +230,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
-Menunjukkan bahwa ACL diubah secara berulang untuk subarah dan file anak
+### -Berulang
+Menunjukkan bahwa ACL akan diubah secara rekursif ke subdirektori dan file anak
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowProgress
-Jika lolos, status kemajuan akan ditampilkan. Hanya berlaku ketika modifikasi Acl rekursif selesai.
+Jika lolos, status kemajuan akan ditampilkan. Hanya berlaku ketika perubahan Acl rekurtif dilakukan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -321,6 +321,6 @@ Jika PassThru ditentukan, akan mengembalikan daftar entri ACL yang dihasilkan.
 
 ## RELATED LINKS
 
-[Remove-AzureRmDataLakeStoreItemAclEntry](./Remove-AzureRmDataLakeStoreItemAclEntry.md)
+[Hapus-AzureRmDataLakeStoreItemAclEntry](./Remove-AzureRmDataLakeStoreItemAclEntry.md)
 
 

@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancer.md
 ms.openlocfilehash: 029901b8b2e43ecc299df740e926cf357f3b0546
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140249407"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123847"
 ---
 # Set-AzLoadBalancer
 
 ## SYNOPSIS
-Memperbarui penyeimbang muat.
+Memperbarui penyeimbang beban.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azloadbalancer) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancer) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,25 +29,25 @@ Set-AzLoadBalancer -LoadBalancer <PSLoadBalancer> [-AsJob] [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancer** memperbarui penyeimbang muat.
+Cmdlet **Set-AzLoadBalancer** memperbarui penyeimbang beban.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah penyeimbang muat
+### Contoh 1: Memodifikasi load balancer
 ```
 PS C:\>$slb = Get-AzLoadBalancer -Name "NRPLB"
 PS C:\> $slb | Add-AzLoadBalancerInboundNatRuleConfig -Name "NewRule" -FrontendIpConfiguration $slb.FrontendIpConfigurations[0] -FrontendPort 81 -BackendPort 8181 -Protocol "TCP"
 PS C:\> $slb | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat yang bernama NRPLB, lalu menyimpannya dalam $slb baru.
-Perintah kedua menggunakan operator pipeline untuk melewati penyeimbang muat di $slb ke Add-AzLoadBalancerInboundNatRuleConfig, yang menambahkan aturan NAT masuk yang bernama NewRule.
-Perintah ketiga melewati penyeimbang muat ke **Set-AzLoadBalancer**, yang memperbarui konfigurasi penyeimbang muat dan menyimpannya.
+Perintah pertama mendapatkan load balancer bernama NRPLB, lalu menyimpannya dalam variabel $slb.
+Perintah kedua menggunakan operator pipeline untuk mengirimkan load balancer dalam $slb ke Add-AzLoadBalancerInboundNatRuleConfig, yang menambahkan aturan NAT masuk bernama NewRule.
+Perintah ketiga melewati load balancer ke **Set-AzLoadBalancer**, yang memperbarui konfigurasi load balancer dan menyimpannya.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan objek penyeimbang muat yang mewakili keadaan ketika penyeimbang muat harus diatur.
+Menentukan objek load balancer yang mewakili status penyeimbang muatan yang harus diatur.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

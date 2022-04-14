@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBMongoDBIndex.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBMongoDBIndex.md
-ms.openlocfilehash: 2890efa9a8b5fe12e019ff0b3b90a636ab445123
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 527c9ab5956b992467389ef6fedb956d71ef14d0
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140201591"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113983"
 ---
 # New-AzCosmosDBMongoDBIndex
 
 ## SYNOPSIS
-Membuat Index CosmosDBDb baru.
+Membuat Indeks CosmosDB MongoDB baru.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbmongodbindex) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBMongoDBIndex [-TtlInSeconds <Int32>] [-Unique <Boolean>] [-Key <St
 ```
 
 ## DESCRIPTION
-The **New-AzCosmosDBMongoDBIndex** creates a new CosmosDBDb Index.
+**New-AzCosmosDBMongoDBIndex** menciptakan Indeks MongoDB CosmosDB baru.
 
 ## EXAMPLES
 
@@ -85,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -Unik
-Bool untuk menunjukkan apakah indeks unik atau tidak.
+Bool untuk menunjukkan apakah indeksnya unik atau tidak.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -100,11 +103,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

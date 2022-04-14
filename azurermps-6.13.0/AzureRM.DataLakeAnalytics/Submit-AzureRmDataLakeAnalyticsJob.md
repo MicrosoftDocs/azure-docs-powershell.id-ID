@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Submit-AzureRmDataLakeAnalyticsJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Submit-AzureRmDataLakeAnalyticsJob.md
 ms.openlocfilehash: acd61ac9da39a56cf03499d0a2a4fcd25d321525
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427065"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064766"
 ---
 # Submit-AzureRmDataLakeAnalyticsJob
 
@@ -22,7 +22,7 @@ Mengirimkan pekerjaan.
 
 ## SYNTAX
 
-### SubmituSqlJobWithScriptPath
+### SubmitUSqlJobWithScriptPath
 ```
 Submit-AzureRmDataLakeAnalyticsJob [-Account] <String> [-Name] <String> [-ScriptPath] <String>
  [[-Runtime] <String>] [[-CompileMode] <String>] [-CompileOnly] [[-AnalyticsUnits] <Int32>]
@@ -54,7 +54,7 @@ Submit-AzureRmDataLakeAnalyticsJob [-Account] <String> [-Name] <String> [-Script
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### SubmituSqlJobWithScriptPathAndPipeline
+### SubmitUSqlJobWithScriptPathAndPipeline
 ```
 Submit-AzureRmDataLakeAnalyticsJob [-Account] <String> [-Name] <String> [-ScriptPath] <String>
  [[-Runtime] <String>] [[-CompileMode] <String>] [-CompileOnly] [[-AnalyticsUnits] <Int32>]
@@ -73,18 +73,18 @@ Submit-AzureRmDataLakeAnalyticsJob [-Account] <String> [-Name] <String> [-Script
 ```
 
 ## DESCRIPTION
-Cmdlet **Submit-AzureRmDataLakeAnalyticsJob** mengirimkan pekerjaan Analitik Danau Azure Data.
+Cmdlet **Kirim-AzureRmDataLakeAnalyticsJob** mengirimkan pekerjaan Data Lake Analytics Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mengirim pekerjaan
+### Contoh 1: Kirim pekerjaan
 ```
 PS C:\>Submit-AzureRmDataLakeAnalyticsJob -Account "ContosoAdlAccount" -Name "New Job" -ScriptPath $LocalScriptPath -AnalyticsUnits 32
 ```
 
 Perintah ini mengirimkan pekerjaan Data Lake Analytics.
 
-### Contoh 2: Mengirimkan pekerjaan dengan parameter skrip
+### Contoh 2: Kirim pekerjaan dengan parameter skrip
 ```
 PS C:\>$parameters = [ordered]@{}
 $parameters["Department"] = "Sales"
@@ -93,12 +93,12 @@ $parameters["StartDateTime"] = (Get-Date).AddDays(-14)
 Submit-AzureRmDataLakeAnalyticsJob -Account "ContosoAdlAccount" -Name "New Job" -ScriptPath $LocalScriptPath -AnalyticsUnits 32 -ScriptParameter $parameters
 ```
 
-Parameter skrip SQL U-SQL tambahan di atas konten skrip utama, misalnya: string DECLARE @Department = "Penjualan"; DECLARE @NumRecords int = 1000; DECLARE @StartDateTime DateTime = new DateTime(2017, 12, 6, 0, 0, 0, 0);
+Parameter skrip U-SQL telah didahului di atas konten skrip utama, misalnya: string DECLARE @Department = "Sales"; DECLARE @NumRecords int = 1000; DECLARE @StartDateTime DateTime = datetime baru(2017, 12, 6, 0, 0, 0, 0);
 
 ## PARAMETERS
 
 ### -Akun
-Nama akun Analitik Danau Data tempat pekerjaan akan dikirimkan.
+Nama akun Data Lake Analytics di mana pekerjaan akan dikirimkan.
 
 ```yaml
 Type: System.String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -AnalyticsUnits
-Unit analitik yang akan digunakan untuk pekerjaan ini. Biasanya, lebih banyak unit analitik yang didedikasikan untuk hasil skrip dalam waktu eksekusi skrip yang lebih cepat.
+Unit analitik untuk digunakan untuk pekerjaan ini. Biasanya, lebih banyak unit analitik yang didedikasikan untuk skrip menghasilkan waktu eksekusi skrip yang lebih cepat.
 
 ```yaml
 Type: System.Int32
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -CompileMode
-Tipe kompilasi yang akan dilakukan pada pekerjaan ini. Nilai valid: 
-- Semantik (Hanya melakukan pemeriksaan semantik dan pemeriksaan sanity yang diperlukan)
+Jenis kompilasi yang akan dilakukan pada pekerjaan ini. Nilai yang valid: 
+- Semantik (Hanya melakukan pemeriksaan semantik dan pemeriksaan kewarasan yang diperlukan)
 - Penuh (Kompilasi penuh)
 - SingleBox (Kompilasi penuh dilakukan secara lokal)
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompileOnly
-Menunjukkan bahwa pengiriman tersebut hanya boleh menyusun pekerjaan dan tidak menjalankan jika diatur ke true.
+Menunjukkan bahwa pengiriman hanya harus menyusun pekerjaan dan tidak dijalankan jika diatur ke true.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pekerjaan yang mudah dikirim.
+Nama pekerjaan yang ramah untuk dikirim.
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineId
-ID yang menunjukkan pengiriman pekerjaan ini adalah bagian dari serangkaian pekerjaan berulang dan juga terkait dengan pipeline pekerjaan.
+ID yang menunjukkan penyerahan pekerjaan ini adalah bagian dari serangkaian pekerjaan berulang dan juga terkait dengan alur kerja.
 
 ```yaml
 Type: System.Guid
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -PipelineName
-Nama alternatif yang mudah untuk saluran yang terkait dengan pekerjaan ini.
+Nama yang mudah dikenali untuk pipeline yang terkait dengan pekerjaan ini.
 
 ```yaml
 Type: System.String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecurrenceName
-Nama yang mudah digunakan untuk korelasi pengulangan antara pekerjaan.
+Nama yang ramah opsional untuk korrelasi pengulangan antar pekerjaan.
 
 ```yaml
 Type: System.String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -RunId
-ID yang mengidentifikasi jalannya saluran tertentu ini.
+ID yang mengidentifikasi proses perulangan pipa tertentu ini.
 
 ```yaml
 Type: System.Nullable`1[System.Guid]
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -Runtime
-Secara opsional, atur versi runtime yang akan digunakan untuk pekerjaan. Jika left unset, runtime default digunakan.
+Secara opsional, atur versi runtime yang akan digunakan untuk pekerjaan tersebut. Jika dibiarkan tidak diatur, runtime default digunakan.
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptParameter
-Parameter skrip untuk pekerjaan ini, sebagai kamus nama parameter (string) ke nilai (kombinasi apa pun dari byte, sbyte, int, uint (atau uint32), long, ulong (atau uint64), float, double, decimal, short (atau int16), ushort (atau uint16), char, string, DateTime, bool, Guid, atau byte[]).
+Parameter skrip untuk pekerjaan ini, sebagai kamus nama parameter (string) ke nilai (kombinasi byte, sbyte, int, uint (atau uint32), long, ulong (atau uint64), float, double, decimal, short (atau int16), ushort (atau uint16), char, string, DateTime, bool, Guid, atau byte[]).
 
 ```yaml
 Type: System.Collections.IDictionary
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptPath
-Jalur ke file skrip untuk mengirimkan.
+Jalur ke file skrip untuk dikirim.
 
 ```yaml
 Type: System.String
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -371,7 +371,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Guid
 
-### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Guid, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -385,6 +385,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmDataLakeAnalyticsJob](./Stop-AzureRmDataLakeAnalyticsJob.md)
 
-[Wait-AzureRmDataLakeAnalyticsJob](./Wait-AzureRmDataLakeAnalyticsJob.md)
+[Tunggu-AzureRmDataLakeAnalyticsJob](./Wait-AzureRmDataLakeAnalyticsJob.md)
 
 

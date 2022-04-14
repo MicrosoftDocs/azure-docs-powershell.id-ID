@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlVMsPerLabPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Get-AzureRmDtlVMsPerLabPolicy.md
 ms.openlocfilehash: 3f38c8ace41a1f125a37053f136cd61c597787ab
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425145"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064893"
 ---
 # Get-AzureRmDtlVMsPerLabPolicy
 
 ## SYNOPSIS
-Dapatkan mesin virtual per kebijakan lab sebuah lab di DevTest Labs.
+Mendapatkan mesin virtual per kebijakan lab di DevTest Labs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,15 +28,15 @@ Get-AzureRmDtlVMsPerLabPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDtlVMsPerLabPolicy** mendapatkan kebijakan mesin virtual per lab dari sebuah lab, yang memungkinkan Anda mengatur jumlah total mesin virtual yang diperbolehkan di lab.
-Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan, dan jumlah total mesin virtual yang diperbolehkan di lab yang telah Anda tetapkan dalam kebijakan.
+Cmdlet **Get-AzureRmDtlVMsPerLabPolicy** mendapatkan mesin virtual per kebijakan lab lab, yang memungkinkan Anda mengatur jumlah total mesin virtual yang diperbolehkan di laboratorium.
+Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan, dan jumlah total mesin virtual yang diperbolehkan di laboratorium yang telah Anda tetapkan dalam kebijakan.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

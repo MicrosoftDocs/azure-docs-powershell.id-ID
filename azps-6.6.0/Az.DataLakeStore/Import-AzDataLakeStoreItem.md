@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataLakeStore/DataLakeStore/help/Import-AzDataLakeStoreItem.md
 ms.openlocfilehash: 05b6566ef67c71e90dd8d2656bddcd4b4409348e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140465651"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142233775"
 ---
 # Import-AzDataLakeStoreItem
 
 ## SYNOPSIS
-Mengunggah file atau direktori lokal ke Data Lake Store.
+Mengunggah file atau direktori lokal ke Penyimpanan Data Lake.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datalakestore/import-azdatalakestoreitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datalakestore/import-azdatalakestoreitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Import-AzDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SertakanDiagnosticLogging
+### IncludeDiagnosticLogging
 ```
 Import-AzDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <DataLakeStorePathInstance>
  [-Recurse] [-Resume] [-ForceBinary] [-Force] [-Concurrency <Int32>] [-DiagnosticLogLevel <LogLevel>]
@@ -39,21 +39,21 @@ Import-AzDataLakeStoreItem [-Account] <String> [-Path] <String> [-Destination] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Data Lake Store.
+Cmdlet **Import-AzDataLakeStoreItem** mengunggah file atau direktori lokal ke Penyimpanan Data Lake.
 
 ## EXAMPLES
 
-### Contoh 1: Upload file
+### Contoh 1: Mengunggah file
 ```
 PS C:\>Import-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "C:\SrcFile.csv" -Destination "/MyFiles/File.csv" -Concurrency 4
 ```
 
-Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Data Lake Store File.csv dengan konkurensi 4.
+Perintah ini mengunggah file SrcFile.csv dan menambahkannya ke folder MyFiles di Penyimpanan Data Lake sebagai File.csv dengan konkurensi 4.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konkurensi
-Menunjukkan jumlah file atau bagian yang akan diunggah secara paralel. Default akan dihitung sebagai usaha terbaik berdasarkan spesifikasi sistem.
+Menunjukkan jumlah file atau potongan untuk diunggah secara paralel. Default akan dihitung sebagai upaya terbaik berdasarkan spesifikasi sistem.
 
 ```yaml
 Type: System.Int32
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Menentukan jalur Data Lake Store untuk mengunggah file atau folder, dimulai dengan direktori akar (/).
+Menentukan jalur Penyimpanan Data Lake tempat mengunggah file atau folder, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiagnosticLogLevel
-Secara opsional menunjukkan tingkat log diagnostik yang digunakan untuk merekam kejadian selama impor file atau folder. Defaultnya adalah Kesalahan.
+Secara opsional menunjukkan tingkat log diagnostik untuk digunakan untuk merekam kejadian selama impor file atau folder. Defaultnya adalah Kesalahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.LogLevel
@@ -143,8 +143,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika file sudah ada.
+### -Paksa
+Menunjukkan bahwa operasi ini dapat menimpa file tujuan jika sudah ada.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceBinary
-Menunjukkan bahwa file yang sedang disalin harus disalin tanpa adanya masalah untuk mempertahankan baris baru pada penambahan.
+Menunjukkan bahwa file yang sedang disalin harus disalin tanpa perlu khawatir dengan pelestarian baris baru di seluruh penamaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -173,8 +173,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur lokal file atau folder untuk diunggah.
+### -Jalur
+Menentukan jalur lokal file atau folder yang akan diunggah.
 
 ```yaml
 Type: System.String
@@ -188,8 +188,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Recurse
-Menunjukkan bahwa operasi ini harus mengunggah semua item dalam semua subfolder.
+### -Berulang
+Menunjukkan bahwa operasi ini harus mengunggah semua item di semua subfolder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -203,8 +203,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Resume
-Menunjukkan bahwa file yang sedang disalin merupakan lanjutan dari unggahan sebelumnya. Hal ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang belum sepenuhnya diunggah.
+### -Lanjutkan
+Menunjukkan bahwa file yang sedang disalin adalah kelanjutan dari unggahan sebelumnya. Ini akan menyebabkan sistem mencoba melanjutkan dari file terakhir yang tidak sepenuhnya diunggah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

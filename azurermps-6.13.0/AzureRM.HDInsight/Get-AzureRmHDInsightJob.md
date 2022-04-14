@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightJob.md
 ms.openlocfilehash: 1fb2ee80a6dafb005509265e6012380eebf5abd2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428228"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063933"
 ---
 # Get-AzureRmHDInsightJob
 
@@ -30,11 +30,11 @@ Get-AzureRmHDInsightJob [-ClusterName] <String> [-HttpCredential] <PSCredential>
 
 ## DESCRIPTION
 Cmdlet **Get-AzureRmHDInsightJob** mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight tertentu dalam urutan kronologis terbalik, dengan pekerjaan terbaru di bagian atas daftar.
-Dapatkan pekerjaan khusus dengan menyediakan parameter *JobId.*
+Dapatkan pekerjaan tertentu dengan menyediakan parameter *JobId* .
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pekerjaan terbaru untuk kluster Azure HDInsight yang ditentukan
+### Contoh 1: Dapatkan pekerjaan terbaru untuk kluster Azure HDInsight yang ditentukan
 ```
 PS C:\># Cluster info
 PS C:\> $clusterName = "your-hadoop-001"
@@ -52,7 +52,7 @@ PS C:\> New-AzureRmHDInsightHiveJobDefinition -StatusFolder $statusFolder `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini mendapatkan semua pekerjaan terbaru untuk kluster bernama up-hadoop-001.
+Perintah ini mendapatkan semua pekerjaan terbaru untuk kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -86,8 +86,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobId
-Menentukan ID pekerjaan pekerjaan untuk mendapatkan.
+Menentukan ID pekerjaan dari pekerjaan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumOfJobs
-Menentukan jumlah pekerjaan untuk diambil.
+Menentukan jumlah pekerjaan yang akan diambil.
 
 ```yaml
 Type: System.Int32
@@ -147,11 +147,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -161,12 +161,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightHiveJobDefinition](./New-AzureRmHDInsightHiveJobDefinition.md)
+[Baru-AzureRmHDInsightHiveJobDefinition](./New-AzureRmHDInsightHiveJobDefinition.md)
 
 [Start-AzureRmHDInsightJob](./Start-AzureRmHDInsightJob.md)
 
 [Stop-AzureRmHDInsightJob](./Stop-AzureRmHDInsightJob.md)
 
-[Wait-AzureRmHDInsightJob](./Wait-AzureRmHDInsightJob.md)
+[Tunggu-AzureRmHDInsightJob](./Wait-AzureRmHDInsightJob.md)
 
 

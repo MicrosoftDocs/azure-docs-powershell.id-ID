@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Get-AzureRmAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/Get-AzureRmAutoscaleSetting.md
 ms.openlocfilehash: 6bf59522b09d9a8a5c301860ab175eef8f7537b8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419948"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063942"
 ---
 # Get-AzureRmAutoscaleSetting
 
@@ -28,11 +28,11 @@ Get-AzureRmAutoscaleSetting -ResourceGroupName <String> [-Name <String>] [-Detai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutoscaleSetting** akan mendapatkan semua pengaturan Skala otomatis yang terkait dengan grup sumber daya atau pengaturan Skala Otomatis yang ditentukan.
+Cmdlet **Get-AzureRmAutoscaleSetting** mendapatkan semua pengaturan Skala Otomatis yang terkait dengan grup sumber daya atau pengaturan Skala Otomatis tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pengaturan Skala Otomatis
+### Contoh 1: Dapatkan pengaturan Skala Otomatis
 ```
 PS C:\>Get-AzureRmAutoscaleSetting -ResourceGroup "Default-Web-EastUS" -DetailedOutput
 resourceId : /subscriptions/b93fb07a-6f93-30be-bf3e-4f0deca15f4f/resourceGroups/Default-Web-EastUS/providers/microsoft. 
@@ -119,7 +119,7 @@ Tags       : {[$type, Microsoft.WindowsAzure.Management.Common.Storage.CasePrese
              Resource]}
 ```
 
-Perintah ini menetapkan pengaturan Skala Otomatis ke grup sumber daya Default-Web-EastUS.
+Perintah ini mendapatkan pengaturan Skala Otomatis yang ditetapkan ke grup sumber daya Default-Web-EastUS.
 
 ### Contoh 2: Dapatkan pengaturan Skala Otomatis menurut nama
 ```
@@ -212,7 +212,7 @@ Perintah ini mendapatkan pengaturan Skala Otomatis bernama DefaultServerFarm-Def
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -226,7 +226,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
+### -DetailedOutput
 Menunjukkan bahwa operasi ini menampilkan detail lengkap dalam output.
 
 ```yaml
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pengaturan untuk mendapatkan.
+Menentukan nama pengaturan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -290,6 +290,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzureRmAutoscaleSetting](./Add-AzureRmAutoscaleSetting.md)
 
-[Remove-AzureRmAutoscaleSetting](./Remove-AzureRmAutoscaleSetting.md)
+[Hapus-AzureRmAutoscaleSetting](./Remove-AzureRmAutoscaleSetting.md)
 
 

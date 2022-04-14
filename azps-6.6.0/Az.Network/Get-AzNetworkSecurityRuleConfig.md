@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzNetworkSecurityRuleConfig.md
 ms.openlocfilehash: cccd8e9abb1b03f62351b1dfc08ee2fe0f094010
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140331251"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081435"
 ---
 # Get-AzNetworkSecurityRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+Dapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-aznetworksecurityruleconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-aznetworksecurityruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,20 +39,20 @@ Get-AzNetworkSecurityGroup -Name nsg1 -ResourceGroupName rg1
     | Get-AzNetworkSecurityRuleConfig -Name AllowInternetOutBound -DefaultRules
 ```
 
-Perintah ini mengambil aturan default bernama "AllowInternetOutBound" dari grup keamanan jaringan Azure yang bernama "nsg1" dalam grup sumber daya "rg1"
+Perintah ini mengambil aturan default bernama "AllowInternetOutBound" dari grup keamanan jaringan Azure bernama "nsg1" dalam grup sumber daya "rg1"
 
-### 2: Mengambil konfigurasi aturan keamanan jaringan menggunakan nama saja
+### 2: Mengambil konfigurasi aturan keamanan jaringan hanya menggunakan nama
 ```
 Get-AzNetworkSecurityGroup -Name nsg1 -ResourceGroupName rg1 
     | Get-AzNetworkSecurityRuleConfig -Name "rdp-rule"
 ```
 
-Perintah ini mengambil aturan yang ditentukan pengguna bernama "rdp-rule" dari grup keamanan jaringan Azure yang bernama "nsg1" dalam grup sumber daya "rg1"
+Perintah ini mengambil aturan yang ditentukan pengguna bernama "rdp-rule" dari grup keamanan jaringan Azure bernama "nsg1" dalam grup sumber daya "rg1"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRules
-Mengindikasikan apakah cmdlet ini mendapatkan konfigurasi aturan yang dibuat oleh pengguna atau konfigurasi aturan default.
+Menunjukkan apakah cmdlet ini mendapatkan konfigurasi aturan yang dibuat pengguna atau konfigurasi aturan default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi aturan keamanan jaringan untuk mendapatkan.
+Menentukan nama konfigurasi aturan keamanan jaringan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup** yang berisi konfigurasi aturan keamanan jaringan untuk mendapatkan.
+Menentukan objek **NetworkSecurityGroup** yang berisi konfigurasi aturan keamanan jaringan untuk didapatkan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

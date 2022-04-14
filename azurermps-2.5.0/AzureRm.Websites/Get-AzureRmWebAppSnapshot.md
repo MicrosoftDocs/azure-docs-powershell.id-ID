@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Websites.dll-Help.xml
 Module Name: AzureRM.WebSites
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/get-azurermwebappsnapshot
 schema: 2.0.0
-ms.openlocfilehash: 55898425c52fbdfbca7643c2993102c1290030244db82a6a4030f789620c4f89
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 754ff798ca001e2c6b5a067f6e6244704fc2f617
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852706"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847193"
 ---
 # Get-AzureRmWebAppSnapshot
 
 ## SYNOPSIS
-Dapatkan snapshot yang tersedia untuk aplikasi web.
+Mendapatkan snapshot yang tersedia untuk aplikasi web.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -31,7 +31,7 @@ Get-AzureRmWebAppSnapshot [-WebApp] <Site> [-DefaultProfile <IAzureContextContai
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzureRmWebAppSnap cmdlet** .
+Cmdlet **Get-AzureRmWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi web. Snapshot adalah cadangan otomatis file dan pengaturan aplikasi web. Snapshot dapat dipulihkan dengan cmdlet **Restore-AzureRmWebAppSnapshot** .
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ Cmdlet **Get-AzureRmWebAppSnapshot** mengembalikan semua snapshot untuk aplikasi
 PS C:\> Get-AzureRmWebAppSnapshot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoApp" -Slot "Staging"
 ```
 
-Dapatkan snapshot untuk aplikasi web bernama "ConstosoApp" dengan slot bernama "Pengembangan" di grup sumber daya "Default-Web-WestUS"
+Dapatkan snapshot untuk aplikasi web bernama "ConstosoApp" dengan slot bernama "Staging" dalam grup sumber daya "Default-Web-WestUS"
 
 ## PARAMETERS
 

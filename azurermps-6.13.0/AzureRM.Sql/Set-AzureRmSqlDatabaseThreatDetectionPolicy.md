@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseThreatDetectionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlDatabaseThreatDetectionPolicy.md
-ms.openlocfilehash: 15b18f193c458b3158e62f4d9017915d52d586ea43e13a7b902162c3ed523264
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: fe8a76ed0851393462ba94937d2ab92914b503b1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418906"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247347"
 ---
 # Set-AzureRmSqlDatabaseThreatDetectionPolicy
 
@@ -30,9 +30,9 @@ Set-AzureRmSqlDatabaseThreatDetectionPolicy [-PassThru] [-NotificationRecipients
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmSqlDatabaseThreatDetectionPolicy** menetapkan kebijakan deteksi ancaman di database SQL Azure.
-Untuk mengaktifkan deteksi ancaman pada database, kebijakan pengauditan harus diaktifkan pada database tersebut.
-Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName,* *ServerName,* *dan DatabaseName* untuk mengidentifikasi database.
+Cmdlet **Set-AzureRmSqlDatabaseThreatDetectionPolicy** menetapkan kebijakan deteksi ancaman pada database Azure SQL.
+Untuk mengaktifkan deteksi ancaman pada database, kebijakan audit harus diaktifkan pada database tersebut.
+Untuk menggunakan cmdlet ini, tentukan parameter *ResourceGroupName*, *ServerName* , dan *DatabaseName* untuk mengidentifikasi database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
@@ -42,12 +42,12 @@ Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 PS C:\>Set-AzureRmSqlDatabaseThreatDetectionPolicy -ResourceGroupName "ResourceGroup11" -ServerName "Server01" -DatabaseName "Database01" -NotificationRecipientsEmails "admin01@contoso.com;secadmin@contoso.com" -EmailAdmins $False -ExcludedDetectionType "Sql_Injection_Vulnerability", "SQL_Injection" -StorageAccountName "mystorageAccount"
 ```
 
-Perintah ini mengatur kebijakan deteksi ancaman untuk database yang bernama Database01 di server yang bernama Server01.
+Perintah ini mengatur kebijakan deteksi ancaman untuk database bernama Database01 di server bernama Server01.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana kebijakan ditetapkan.
+Menentukan nama database tempat kebijakan diatur.
 
 ```yaml
 Type: System.String
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,12 +92,12 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludedDetectionType
-Menentukan array tipe deteksi untuk dikecualikan dari kebijakan tersebut.
+Menentukan array tipe deteksi untuk dikecualikan dari kebijakan.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Sql_Injection 
 - Sql_Injection_Vulnerability 
 - Access_Anomaly 
-- Tidak ada
+- Tidak
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ThreatDetection.Model.DetectionType[]
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationRecipientsEmails
-Menentukan daftar alamat email yang dipisahkan titik koma tempat kebijakan mengirimkan pemberitahuan.
+Menentukan daftar alamat email yang dipisahkan titik koma tempat kebijakan mengirim pemberitahuan.
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Menentukan nama akun penyimpanan yang akan digunakan. Wildcard tidak diizinkan. Parameter ini tidak diperlukan. Saat parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang sebelumnya ditetapkan sebagai bagian dari kebijakan deteksi ancaman database. Jika ini adalah pertama kalinya kebijakan deteksi ancaman database ditetapkan dan parameter ini tidak disediakan, cmdlet akan gagal.
+Menentukan nama akun penyimpanan yang akan digunakan. Wildcard tidak diizinkan. Parameter ini tidak diperlukan. Ketika parameter ini tidak disediakan, cmdlet akan menggunakan akun penyimpanan yang ditetapkan sebelumnya sebagai bagian dari kebijakan deteksi ancaman database. Jika ini pertama kalinya kebijakan deteksi ancaman database ditentukan dan parameter ini tidak disediakan, cmdlet akan gagal.
 
 ```yaml
 Type: System.String
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,17 +235,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### Microsoft.Azure.Commands.sql.ThreatDetection.Model.DetectionType[]
+### Microsoft.Azure.Commands.Sql.ThreatDetection.Model.DetectionType[]
 
-### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 
@@ -259,6 +259,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzureRmSqlDatabaseThreatDetectionPolicy](./Remove-AzureRmSqlDatabaseThreatDetectionPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

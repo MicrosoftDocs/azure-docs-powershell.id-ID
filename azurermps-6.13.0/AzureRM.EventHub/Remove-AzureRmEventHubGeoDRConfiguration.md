@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.event
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Remove-AzureRmEventHubGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Remove-AzureRmEventHubGeoDRConfiguration.md
-ms.openlocfilehash: f1cc7ed29e6071cf930f04f81b54f22da13605aca71f1f28a68ac9d6848c3eb8
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 85f6373cad3c6c42bbefa0aba9aac14d3699b6a5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140857223"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064279"
 ---
 # Remove-AzureRmEventHubGeoDRConfiguration
 
 ## SYNOPSIS
-Menghapus Alias(Konfigurasi Pemulihan Bencana)
+Menghapus Alias(konfigurasi Pemulihan Bencana)
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -33,14 +33,14 @@ Remove-AzureRmEventHubGeoDRConfiguration [-InputObject] <PSEventHubDRConfigurati
  [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GeoDRConfigResourceIdParameterSet
+### GeodrConfigResourceIdParameterSet
 ```
 Remove-AzureRmEventHubGeoDRConfiguration [-ResourceId] <String> [-PassThru] [-AsJob]
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmEventHubGeoDRConfiguration** menghapus Alias(Konfigurasi Pemulihan Bencana)
+Cmdlet **Remove-AzureRmEventHubGeoDRConfiguration** menghapus Alias(konfigurasi Pemulihan Bencana)
 
 ## EXAMPLES
 
@@ -49,12 +49,12 @@ Cmdlet **Remove-AzureRmEventHubGeoDRConfiguration** menghapus Alias(Konfigurasi 
 PS C:\>Remove-AzureRmEventHubGeoDRConfiguration -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Secondary" -Name "SampleDRCongifName"
 ```
 
-Menghapus Alias (Konfigurasi Pemulihan Bencana)
+Menghapus Alias (konfigurasi Pemulihan Bencana)
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Konfigurasi Eventhub GeoDR
+Objek Konfigurasi Geodr Eventhub
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya GeoDRConfiguration
+Id Sumber Daya Konfigurasi Geodr
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

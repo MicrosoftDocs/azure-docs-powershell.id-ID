@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Suspend-AzureRmSqlDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Suspend-AzureRmSqlDatabase.md
 ms.openlocfilehash: 5ceee1509ed5c47611f68645a6cf1665b9df8408
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419521"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247114"
 ---
 # Suspend-AzureRmSqlDatabase
 
 ## SYNOPSIS
-Menangguhkan sebuah SQL database Gudang Data.
+Menangguhkan database SQL Data Warehouse.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Suspend-AzureRmSqlDatabase [-ServerName] <String> -DatabaseName <String> [-AsJob
 ```
 
 ## DESCRIPTION
-Cmdlet **Suspend-AzureRmSqlDatabase** menangguhkan database Azure SQL Gudang Data.
+**Cmdlet Suspend-AzureRmSqlDatabase** menangguhkan database Gudang Data Azure SQL.
 
 ## EXAMPLES
 
-### Contoh 1: Menangguhkan database Gudang Data SQL Azure
+### Contoh 1: Menangguhkan database Azure SQL Data Warehouse
 ```
 PS C:\>Suspend-AzureRmSqlDatabase -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```
@@ -42,7 +42,7 @@ Perintah ini menangguhkan database Gudang Data Azure SQL aktif.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel
 
 ## CATATAN
-* Cmdlet **Suspend-AzureRmSqlDatabase** hanya berfungsi di azure SQL database Gudang Data. Operasi ini tidak didukung di Azure SQL Database edisi Azure SQL Database Basic, Standard Premium baru.
+* **Cmdlet Suspend-AzureRmSqlDatabase** hanya berfungsi pada database Data Warehouse Azure SQL. Operasi ini tidak didukung pada edisi Azure SQL Database Basic, Standard, dan Premium.
 
 ## RELATED LINKS
 
@@ -167,12 +167,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabase](./New-AzureRmSqlDatabase.md)
 
-[Remove-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
+[Hapus-AzureRmSqlDatabase](./Remove-AzureRmSqlDatabase.md)
 
 [Resume-AzureRmSqlDatabase](./Resume-AzureRmSqlDatabase.md)
 
 [Set-AzureRmSqlDatabase](./Set-AzureRmSqlDatabase.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

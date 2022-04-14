@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShare.md
 ms.openlocfilehash: 57dac34f8d940b56ec74aaec6a4092b8b68454ce
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140139165"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142233577"
 ---
 # Get-AzDataShare
 
@@ -18,7 +18,7 @@ ms.locfileid: "140139165"
 Dapatkan informasi tentang Berbagi Data.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/get-azdatashare) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatashare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-AzDataShare -ResourceId <String> [-DefaultProfile <IAzureContextContainer>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShare** mendapatkan informasi tentang berbagi data dalam akun berbagi data Azure.
+Cmdlet **Get-AzDataShare** mendapatkan informasi tentang berbagi data di akun berbagi data Azure.
 Jika Anda menentukan nama berbagi data, cmdlet ini mendapatkan informasi tentang berbagi data tersebut.
 Jika Anda tidak menentukan nama, cmdlet ini mendapatkan informasi tentang semua data yang dibagikan dalam akun berbagi data Azure.
 
@@ -58,7 +58,7 @@ Perintah ini menampilkan informasi tentang berbagi data AdsShare di akun berbagi
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya berbagi data Azure
+Id sumber daya dari berbagi data azure
 
 ```yaml
 Type: System.String
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

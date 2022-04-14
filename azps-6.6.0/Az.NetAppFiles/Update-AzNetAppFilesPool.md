@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesPool.md
 ms.openlocfilehash: 721c871483ab3c7de20ddc578b4c81a169a4a1a1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140307427"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142082291"
 ---
 # Update-AzNetAppFilesPool
 
 ## SYNOPSIS
-Memperbarui pool Azure NetApp Files (ANF) sesuai dengan pengubah opsional yang disediakan.
+Memperbarui kumpulan Azure NetApp Files (ANF) sesuai dengan pengubah opsional yang disediakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilespool) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilespool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,11 +50,11 @@ Update-AzNetAppFilesPool [-PoolSize <Int64>] [-QosType <String>] [-Tag <Hashtabl
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzNetAppFilesPool** mengubah sebuah pool ANF.
+Cmdlet **Update-AzNetAppFilesPool** memodifikasi kolam ANF.
 
 ## EXAMPLES
 
-### Contoh 1: Modifikasi sebuah pool ANF
+### Contoh 1: Memodifikasi kumpulan ANF
 ```
 PS C:\>Update-AzNetAppFilesPool -ResourceGroupName "MyRG" -l "westus2" -AccountName "MyAnfAccount" -PoolName "MyAnfPool" -PoolSize 4398046511104 -QosType "Auto"
 
@@ -72,11 +72,11 @@ QosType           : Auto
 ProvisioningState : Succeeded
 ```
 
-Perintah ini mengubah "MyAnfPool" pool ANF untuk memiliki ukuran tertentu dan QosType.
+Perintah ini mengubah kumpulan ANF "MyAnfPool" agar memiliki ukuran dan QosType.
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountObject
-Objek akun berisi pool untuk diperbarui
+Objek akun yang berisi kumpulan untuk diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek pool untuk diperbarui
+Objek kumpulan untuk diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesPool
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool ANF
+Nama kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolSize
-Ukuran kolam ANF
+Ukuran kumpulan ANF
 
 ```yaml
 Type: System.Nullable`1[System.Int64]
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -QosType
-Tipe qos dari pool. Nilai yang memungkinkan meliputi: 'Otomatis', 'Manual'
+Jenis qos kolam renang. Nilai yang memungkinkan termasuk: 'Otomatis', 'Manual'
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya dari pool ANF
+Id sumber daya kumpulan ANF
 
 ```yaml
 Type: System.String
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya
+Sebuah hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Remove-AzureRmKeyVaultNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Remove-AzureRmKeyVaultNetworkRule.md
-ms.openlocfilehash: 39934f163af8c72d9e11699a79a512a8988fd22ce271988842ced9d824eddb01
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f1ff73a753c794ce7528c9af2b480f75d1460815
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850673"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063696"
 ---
 # Remove-AzureRmKeyVaultNetworkRule
 
 ## SYNOPSIS
-Menghapus aturan jaringan dari kunci vault.
+Menghapus aturan jaringan dari kubah kunci.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Remove-AzureRmKeyVaultNetworkRule [-ResourceId] <String> [-IpAddressRange <Strin
 ```
 
 ## DESCRIPTION
-Menghapus aturan jaringan dari kunci vault.
+Menghapus aturan jaringan dari kubah kunci.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Network Rule Set                 :
 Tags                             :
 ```
 
-Perintah ini menghapus aturan jaringan dari vault yang ditentukan, asalkan aturan ditemukan sesuai dengan alamat IP dan pengidentifikasi sumber daya jaringan virtual yang ditentukan.
+Perintah ini menghapus aturan jaringan dari kubah yang ditentukan, asalkan aturan ditemukan cocok dengan alamat IP tertentu dan pengidentifikasi sumber daya jaringan virtual.
 
 ## PARAMETERS
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddressRange
-Menentukan rentang alamat IP jaringan yang diizinkan dari aturan jaringan.
+Menentukan rentang alamat IP jaringan yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: String[]
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -PassThru
 Cmdlet ini tidak mengembalikan objek secara default.
-Jika sakelar ini ditentukan, tombol tersebut akan mengembalikan objek vault kunci yang diperbarui.
+Jika sakelar ini ditentukan, maka akan mengembalikan objek kubah kunci yang diperbarui.
 
 ```yaml
 Type: SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang terkait dengan penyimpanan kunci yang aturan jaringannya sedang diubah.
+Menentukan nama grup sumber daya yang terkait dengan kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault yang aturan jaringannya sedang dimodifikasi.
+Menentukan nama kubah kunci yang aturan jaringannya sedang diubah.
 
 ```yaml
 Type: String
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkResourceId
-Menentukan pengidentifikasi sumber daya jaringan virtual yang diperbolehkan dari aturan jaringan.
+Menentukan pengidentifikasi sumber daya jaringan maya yang diperbolehkan dari aturan jaringan.
 
 ```yaml
 Type: String[]
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

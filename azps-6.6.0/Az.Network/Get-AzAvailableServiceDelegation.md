@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailableServiceDelegation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzAvailableServiceDelegation.md
 ms.openlocfilehash: 4073dcbe6636575e6d93e8f5cd1e4498bad0cbb3
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140252035"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142081795"
 ---
 # Get-AzAvailableServiceDelegation
 
 ## SYNOPSIS
-Dapatkan delegasi layanan yang tersedia di kawasan ini.
+Dapatkan delegasi layanan yang tersedia di kawasan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/get-azavailableservicedelegation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azavailableservicedelegation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzAvailableServiceDelegation -Location <String> [-DefaultProfile <IAzureCont
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAvailableServiceDelegation** memungkinkan Anda mendapatkan semua delegasi layanan yang tersedia untuk subnet dalam lokasi yang disediakan. Cmdlet ini *tidak* menjelaskan delegasi mana yang dapat bekerja bersama pada satu subnet.
+Cmdlet **Get-AzAvailableServiceDelegation** memungkinkan Anda mengambil semua delegasi layanan yang tersedia untuk subnet di lokasi yang disediakan. Cmdlet ini *tidak* menjelaskan delegasi mana yang mungkin ada bersama pada subnet tunggal.
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi.
+Lokasinya.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -98,5 +98,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Add-AzDelegation](./Add-AzDelegation.md)
  [New-AzDelegation](./New-AzDelegation.md)
- [Remove-AzDelegation](./Remove-AzDelegation.md)
+ [Hapus-AzDelegation](./Remove-AzDelegation.md)
  [Get-AzDelegation](./Get-AzDelegation.md)

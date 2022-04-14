@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.apima
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Add-AzureRmApiManagementRegion.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Add-AzureRmApiManagementRegion.md
-ms.openlocfilehash: 6cbb892161c6e5c3364136996ca868e580ab7f5de49a58a2b6567270a408fd51
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9ea4b734eba1ed1a37a72e756c32acc3d6ad2a32
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416575"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144393"
 ---
 # Add-AzureRmApiManagementRegion
 
 ## SYNOPSIS
-Menambahkan kawasan penyebaran baru ke contoh PsApiManagement.
+Menambahkan kawasan penyebaran baru ke instans PsApiManagement.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,30 +29,30 @@ Add-AzureRmApiManagementRegion -ApiManagement <PsApiManagement> -Location <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmApiManagementRegion** menambahkan contoh baru tipe **PsApiManagementRegion** ke kumpulan Wilayah Tambahan dari tipe **tipe Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**. 
-Cmdlet ini tidak menyebarkan apa pun dengan sendirinya, namun memperbarui contoh **in-memory PsApiManagement.**
-Untuk memperbarui penyebaran Manajemen API, proses modifikasi **PsApiManagement** instance menjadi Update-AzureRmApiManagementDeployment.
+Cmdlet **Add-AzureRmApiManagementRegion** menambahkan **instans baru tipe PsApiManagementRegion** ke kumpulan **AdditionalRegions dari instans** yang disediakan dari tipe **Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement**.
+Cmdlet ini tidak menyebarkan apa pun dengan sendirinya tetapi memperbarui contoh **PsApiManagement** dalam memori.
+Untuk memperbarui penyebaran API Management melewati **Instans PsApiManagement** yang dimodifikasi ke Update-AzureRmApiManagementDeployment.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan kawasan penyebaran baru ke contoh PsApiManagement
+### Contoh 1: Menambahkan kawasan penyebaran baru ke instans PsApiManagement
 ```
 PS C:\>Add-AzureRmApiManagementRegion -ApiManagement $ApiManagement -Location "East US" -Sku "Premium" -Capacity 2
 ```
 
-Perintah ini menambahkan dua unit SKU premium dan kawasan yang bernama AS Timur ke instans **PsApiManagement.**
+Perintah ini menambahkan dua unit SKU premium dan kawasan bernama East US ke **instans PsApiManagement** .
 
-### Contoh 2: Tambahkan kawasan penyebaran baru ke contoh PsApiManagement lalu perbarui penyebaran
+### Contoh 2: Tambahkan kawasan penyebaran baru ke instans PsApiManagement lalu perbarui penyebaran
 ```
 PS C:\>Get-AzureRmApiManagement -ResourceGroupName "Contoso" -Name "ContosoApi" | Add-AzureRmApiManagementRegion -Location "East US" -Sku "Premium" -Capacity 2 | Update-AzureRmApiManagementDeployment
 ```
 
-Perintah ini mendapatkan objek **PsApiManagement,** menambahkan dua unit SKU premium untuk kawasan yang bernama AS Timur, lalu memperbarui penyebaran.
+Perintah ini mendapatkan objek **PsApiManagement** , menambahkan dua unit SKU premium untuk kawasan bernama As timur, lalu memperbarui penyebaran.
 
 ## PARAMETERS
 
 ### -ApiManagement
-Menentukan instans **PsApiManagement** yang ditambahkan cmdlet ini untuk menambahkan kawasan penyebaran tambahan.
+Menentukan **instans PsApiManagement** tempat cmdlet ini menambahkan area penyebaran tambahan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kapasitas
-Menentukan kapasitas SKU wilayah penyebaran.
+Menentukan kapasitas SKU dari wilayah penyebaran.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi wilayah penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
-Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Select-Object Lokasi
+Menentukan lokasi kawasan penyebaran baru di antara kawasan yang didukung untuk layanan Manajemen Api.
+Untuk mendapatkan lokasi yang valid, gunakan cmdlet Get-AzureRmResourceProvider -ProviderNamespace "Microsoft.ApiManagement" | di mana {$_. ResourceTypes[0]. ResourceTypeName -eq "service"} | Lokasi Select-Object
 
 ```yaml
 Type: System.String
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Menentukan tingkatan wilayah penyebaran.
-Nilai valid adalah: 
+Menentukan tingkat wilayah penyebaran.
+Nilai yang valid adalah: 
 - Pengembang
 - Standar
 - Premium
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,7 +160,7 @@ Parameter: ApiManagement (ByValue)
 ### Microsoft.Azure.Commands.ApiManagement.Models.PsApiManagement
 
 ## CATATAN
-* Cmdlet menulis contoh **PsApiManagement yang diperbarui** ke saluran.
+* Cmdlet menulis **instans PsApiManagement** yang diperbarui ke pipeline.
 
 ## RELATED LINKS
 

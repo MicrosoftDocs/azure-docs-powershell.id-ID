@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.event
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/New-AzureRmEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/New-AzureRmEventHubNamespace.md
-ms.openlocfilehash: bf68b5304b16be3b1d7b8464c5de7b3ed160405de466b109d395c54e1a46559b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 0fb90529f4157bf627e43477e3db41764040e5c6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140850834"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064399"
 ---
 # New-AzureRmEventHubNamespace
 
 ## SYNOPSIS
-Membuat ruang nama Hub Acara.
+Membuat ruang nama Hub Kejadian.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Lo
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AutoInparameterSet
+### AutoInflateParameterSet
 ```
 New-AzureRmEventHubNamespace [-ResourceGroupName] <String> [-Name] <String> [-Location] <String>
  [[-SkuName] <String>] [[-SkuCapacity] <Int32>] [[-Tag] <Hashtable>] [-EnableAutoInflate]
@@ -46,21 +46,21 @@ Cmdlet New-AzureRmEventHubNamespace membuat ruang nama baru tipe Hub Kejadian.
 PS C:\> New-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName di\` lokasi geografis \`tertentu MyLocation\`, di grup sumber daya \`MyResourceGroupName\`.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> New-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -MaximumThroughputUnits 10
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` dan AutoInsourcee diaktifkan dengan MaximumThroughputUnits 10.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis myLocation\` tertentu, dalam grup \`sumber daya MyResourceGroupName\` dan AutoInflate diaktifkan dengan MaximumThroughputUnits 10.
 
-### Contoh 3 - Ruang nama yang diaktifkan Junii
+### Contoh 3 - Ruang nama aktif Kafka
 ```
 PS C:\> New-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -EnableKafka
 ```
 
-Membuat ruang nama Hub Kejadian \`MyNamespaceName \`\` di lokasi geografis tertentu MyLocation\`, \`di grup sumber daya MyResourceGroupName\` denganIguka dan AutoInsourcee diaktifkan.
+Membuat ruang \`nama Hub Kejadian MyNamespaceName\` di lokasi \`geografis yang ditentukan MyLocation\`, dalam grup \`sumber daya MyResourceGroupName\` dengan Kafka dan AutoInflate diaktifkan.
 
 ## PARAMETERS
 
@@ -79,8 +79,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EnableAutoInotomatise
-Menunjukkan apakah PengaturanOtomatis diaktifkan
+### -EnableAutoInflate
+Menunjukkan apakah AutoInflate diaktifkan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableKafka
-mengaktifkan atau menonaktifkan NamespaceKa untuk
+mengaktifkan atau menonaktifkan Kafka untuk ruang nama
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaximumThroughputUnits
-Batas atas satuan throughput ketika FileOtomatis diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
+Batas atas unit throughput saat AutoInflate diaktifkan, nilai harus berada dalam 0 hingga 20 unit throughput.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Nama Ruang Nama Sku.
+Nama Sku Ruang Nama.
 
 ```yaml
 Type: System.String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

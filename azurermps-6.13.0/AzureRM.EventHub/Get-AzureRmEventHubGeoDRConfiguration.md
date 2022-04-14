@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHubGeoDRConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHubGeoDRConfiguration.md
 ms.openlocfilehash: 40a80a975de56a867f0dcbc34aea0e46d42a155d
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140866496"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064392"
 ---
 # Get-AzureRmEventHubGeoDRConfiguration
 
 ## SYNOPSIS
-Ambil Alias(Konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
+Mengambil Alias(konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Get-AzureRmEventHubGeoDRConfiguration [-ResourceId] <String> [-Name <String>]
 ```
 
 ## DESCRIPTION
-**Get-AzureRmEventHubGeoDRConfiguration** Retrieves Alias(Disaster Recovery configuration) untuk ruang nama utama atau sekunder
+**Get-AzureRmEventHubGeoDRConfiguration** Mengambil Alias(konfigurasi Pemulihan Bencana) untuk ruang nama utama atau sekunder
 
 ## EXAMPLES
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Namespace Resource Id
+Id Sumber Daya Ruang Nama
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

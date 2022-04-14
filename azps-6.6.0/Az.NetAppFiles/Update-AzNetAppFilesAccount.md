@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Update-AzNetAppFilesAccount.md
 ms.openlocfilehash: 096001872529baf0baeb87316befff475d2e0054
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140307535"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142082288"
 ---
 # Update-AzNetAppFilesAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "140307535"
 Memperbarui akun Azure NetApp Files (ANF) sesuai dengan pengubah opsional yang disediakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesaccount) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/update-aznetappfilesaccount) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-AzNetAppFilesAccount -ResourceGroupName <String> [-Location <String>] -Na
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzNetAppFilesAccount** mengubah akun ANF.
+Cmdlet **Update-AzNetAppFilesAccount** memodifikasi akun ANF.
 
 ## EXAMPLES
 
@@ -64,12 +64,12 @@ ActiveDirectories :
 ProvisioningState : Succeeded
 ```
 
-Perintah ini menjalankan pembaruan pada akun tertentu yang mengubah tag ke akun yang disediakan.
+Perintah ini melakukan pembaruan pada akun tertentu yang mengubah tag ke tag yang disediakan.
 
 ## PARAMETERS
 
 ### -ActiveDirectory
-Larik hashtable yang mewakili direktori aktif
+Array hashtable yang mewakili direktori aktif
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesActiveDirectory[]
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek akun yang diperbarui
+Objek akun untuk diperbarui
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesAccount
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya
+Sebuah hashtable yang mewakili tag sumber daya
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/New-AzureRmManagementPartner.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ManagementPartner/Commands.Partner/help/New-AzureRmManagementPartner.md
 ms.openlocfilehash: f49ff33dbe3b7fbfd41e91140671bf61d378f1ca
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427039"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063358"
 ---
 # New-AzureRmManagementPartner
 
 ## SYNOPSIS
-Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke prinsipal layanan atau pengguna yang diautentikasi saat ini.
+Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke pengguna atau prinsipal layanan yang diautentikasi saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmManagementPartner [-PartnerId] <String> [-DefaultProfile <IAzureConte
 ```
 
 ## DESCRIPTION
-Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke prinsipal layanan atau pengguna yang diautentikasi saat ini.
+Mengaitkan ID Jaringan Mitra Microsoft (MPN) ke pengguna atau prinsipal layanan yang diautentikasi saat ini.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ ObjectId    : aa67f786-0552-423e-8849-244ed12bf581
 State       : Active
 ```
 
-Tambahkan mitra manajemen 
+Menambahkan mitra manajemen 
 
 ## PARAMETERS
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerId
-Id mitra manajemen, merupakan angka 6 digit
+Id mitra manajemen, itu adalah angka 6 digit
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -107,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzureRmManagementPartner](./Remove-AzureRmManagementPartner.md)
+[Hapus-AzureRmManagementPartner](./Remove-AzureRmManagementPartner.md)
 
 [Get-AzureRmManagementPartner](./Get-AzureRmManagementPartner.md)
 

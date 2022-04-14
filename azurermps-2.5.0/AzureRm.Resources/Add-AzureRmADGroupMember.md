@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Resources.dll-Help.xml
 Module Name: AzureRM.Resources
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/add-azurermadgroupmember
 schema: 2.0.0
-ms.openlocfilehash: 6abfdcf202a382e0862c38895eb2f0a5e4c505adac58ce83f9b7030dac647754
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 4f1949a80d16ddbbd22584c314a01785ed9a393d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868391"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145435"
 ---
 # Add-AzureRmADGroupMember
 
@@ -60,7 +60,7 @@ Menambahkan pengguna ke grup AD yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1 - Menambahkan pengguna ke grup berdasarkan id objek
+### Contoh 1 - Menambahkan pengguna ke grup menurut id objek
 
 ```
 PS C:\> Add-AzureRmADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405 -TargetGroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
@@ -68,13 +68,13 @@ PS C:\> Add-AzureRmADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4
 
 Menambahkan pengguna dengan id objek 'D9076BBC-D62C-4105-9C78-A7F5BC4A3405' ke grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE'.
 
-### Contoh 2 - Menambahkan pengguna ke grup dengan pemipaan
+### Contoh 2 - Menambahkan pengguna ke grup dengan pipa
 
 ```
 PS C:\> Get-AzureRmADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Add-AzureRmADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405
 ```
 
-Dapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan  pipes ke cmdlet Add-AzureRmADGroupMember untuk menambahkan pengguna ke grup itu.
+Mendapatkan grup dengan id objek '85F89C90-780E-4AA6-9F4F-6F268D322EEE' dan menyalurkannya ke cmdlet Add-AzureRmADGroupMember untuk menambahkan pengguna ke grup itu.
 
 ## PARAMETERS
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetGroupObject
-Representasi objek grup yang akan ditambahkan anggota.
+Representasi objek grup untuk ditambahkan anggota.
 
 ```yaml
 Type: Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADGroup
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetGroupObjectId
-Id objek grup yang akan ditambahkan anggota.
+Id objek grup untuk ditambahkan anggota.
 
 ```yaml
 Type: System.Guid
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,11 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.DIRECTDGroup
+### Microsoft.Azure. Graph. RBAC. Version1_6.ActiveDirectory.PSADGroup
 Parameter: TargetGroupObject (ByValue)
 
 ## OUTPUTS

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Switch-AzureRmSqlDatabaseFailoverGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Switch-AzureRmSqlDatabaseFailoverGroup.md
-ms.openlocfilehash: c345a1ac00a01433219a8fa4db08438fc828c265b78093f3e60e89c0c981d215
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 708b010a8ff7b2a289d538a07e7b679fcec6efab
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418506"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247115"
 ---
 # Switch-AzureRmSqlDatabaseFailoverGroup
 
 ## SYNOPSIS
-Menjalankan failover dari Azure SQL Database Failover Group.
+Menjalankan failover grup failover Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,8 +28,8 @@ Switch-AzureRmSqlDatabaseFailoverGroup [-ServerName] <String> [[-FailoverGroupNa
 ```
 
 ## DESCRIPTION
-Perintah ini menukar peran server di Grup Failover dan mengalihkan semua database sekunder ke peran utama. Semua sesi TDS baru secara otomatis dirutekan kembali ke server sekunder setelah singgahan klien DNS di-refresh. Ketika server utama asli kembali online, semua database yang sebelumnya adalah database utama di dalamnya akan beralih ke peran sekunder.
-Server sekunder Failover Group harus digunakan untuk menjalankan perintah ini.
+Perintah ini menukar peran server dalam Grup Failover dan mengalihkan semua database sekunder ke peran utama. Semua sesi TDS baru secara otomatis dirutekan kembali ke server sekunder setelah cache klien DNS direfresh. Ketika server utama asli kembali online, semua database utama sebelumnya di dalamnya akan beralih ke peran sekunder.
+Server sekunder Grup Failover harus digunakan untuk menjalankan perintah ini.
 
 ## EXAMPLES
 
@@ -38,19 +38,19 @@ Server sekunder Failover Group harus digunakan untuk menjalankan perintah ini.
 C:\> Get-AzureRmSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName secondaryserver -FailoverGroupName fg | Switch-AzureRmSqlDatabaseFailoverGroup -AllowDataLoss
 ```
 
-Terjadi operasi failover yang memungkinkan hilangnya data dengan pemipaan dalam Grup Failover.
+Keluarkan operasi failover yang memungkinkan hilangnya data dengan piping dalam Grup Failover.
 
 ### Contoh 2
 ```
 C:\> Switch-AzureRmSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName secondaryserver -FailoverGroupName fg
 ```
 
-Usahakan operasi failover terbaik yang akan berhasil tanpa kehilangan data atau gagal dan kembalikan.
+Keluarkan operasi failover upaya terbaik yang akan berhasil tanpa kehilangan data atau gagal dan kembali.
 
 ## PARAMETERS
 
 ### -AllowDataLoss
-Selesaikan failover meskipun melakukannya mungkin akan mengakibatkan hilangnya data. Hal ini akan mengizinkan failover untuk melanjutkan meskipun database utama tidak tersedia.
+Selesaikan failover meskipun melakukannya dapat mengakibatkan hilangnya data. Ini akan memungkinkan failover untuk melanjutkan bahkan jika database utama tidak tersedia.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -FailoverGroupName
-Nama grup Azure SQL Database Failover.
+Nama Grup failover Azure SQL Database.
 
 ```yaml
 Type: System.String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Nama server Azure SQL Database dari Grup Failover.
+Nama server Azure SQL Database sekunder grup Failover.
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,6 +195,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Remove-AzureRmSqlDatabaseFromFailoverGroup](./Remove-AzureRmSqlDatabaseFromFailoverGroup.md)
 
-[Remove-AzureRmSqlDatabaseFailoverGroup](./Remove-AzureRmSqlDatabaseFailoverGroup.md)
+[Hapus-AzureRmSqlDatabaseFailoverGroup](./Remove-AzureRmSqlDatabaseFailoverGroup.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

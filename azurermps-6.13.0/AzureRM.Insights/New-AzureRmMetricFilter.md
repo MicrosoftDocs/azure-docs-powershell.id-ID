@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmMetricFilter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Insights/Commands.Insights/help/New-AzureRmMetricFilter.md
-ms.openlocfilehash: 5f455c0a6e29296828d156ad6168eeef6fd34d4a2d4378d02058a385c0970c9b
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 783f5c780b0202ddb78666c2c7446ba07b5434e9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132417322"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063834"
 ---
 # New-AzureRmMetricFilter
 
 ## SYNOPSIS
-Membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
+Membuat filter dimensi metrik yang bisa digunakan untuk metrik kueri.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmMetricFilter [-Dimension] <String> [-Operator] <String> [-Value] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmMetricFilter** membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
+Cmdlet **AzureRmMetricFilter Baru** membuat filter dimensi metrik yang dapat digunakan untuk metrik kueri.
 
 ## EXAMPLES
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -118,6 +118,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzureRmMetric](./Get-AzureRmMetric.md) 
+[Get-AzureRmMetric](./Get-AzureRmMetric.md)
  [Get-AzureRmMetricDefinition](./Get-AzureRmMetricDefinition.md)
 

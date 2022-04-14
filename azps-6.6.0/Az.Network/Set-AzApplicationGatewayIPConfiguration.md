@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayIPConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzApplicationGatewayIPConfiguration.md
 ms.openlocfilehash: 0d8497394d5758769cfdbb22c56dd84067947285
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140249659"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142123899"
 ---
 # Set-AzApplicationGatewayIPConfiguration
 
@@ -19,7 +19,7 @@ ms.locfileid: "140249659"
 Mengubah konfigurasi IP untuk gateway aplikasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azapplicationgatewayipconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azapplicationgatewayipconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -36,8 +36,8 @@ Set-AzApplicationGatewayIPConfiguration -ApplicationGateway <PSApplicationGatewa
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApplicationGatewayIPConfiguration** memodifikasi konfigurasi IP.
-Konfigurasi IP berisi subnet di mana gateway aplikasi digunakan.
+Cmdlet **Set-AzApplicationGatewayIPConfiguration** mengubah konfigurasi IP.
+Konfigurasi IP berisi subnet tempat gateway aplikasi digunakan.
 
 ## EXAMPLES
 
@@ -49,15 +49,15 @@ PS C:\> $AppGw = Get-AzApplicationGateway -Name "ApplicationGateway01" -Resource
 PS C:\> $AppGw = Set-AzApplicationGatewayIPConfiguration -ApplicationGateway $AppGw -Name "AppgwSubnet01" -Subnet $Subnet
 ```
 
-Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya dalam $VNet sumber daya.
-Perintah kedua mendapatkan konfigurasi subnet yang bernama Subnet01 menggunakan $VNet dan menyimpannya dalam $Subnet tertentu.
-Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 yang dimiliki oleh grup sumber daya yang bernama ResourceGroup01 dan menyimpannya di $AppGw lokal.
-Perintah forth mengatur konfigurasi IP gateway aplikasi yang disimpan di $AppGw ke konfigurasi subnet yang disimpan di $Subnet.
+Perintah pertama mendapatkan jaringan virtual bernama VNet01 yang termasuk dalam grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $VNet.
+Perintah kedua mendapatkan konfigurasi subnet bernama Subnet01 menggunakan $VNet dan menyimpannya dalam variabel $Subnet.
+Perintah ketiga mendapatkan gateway aplikasi bernama ApplicationGateway01 milik grup sumber daya bernama ResourceGroup01 dan menyimpannya dalam variabel $AppGw.
+Perintah keempat mengatur konfigurasi IP gateway aplikasi yang disimpan di $AppGw ke konfigurasi subnet yang disimpan di $Subnet.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan objek gateway aplikasi di mana cmdlet ini mengaitkan konfigurasi IP.
+Menentukan objek gateway aplikasi tempat cmdlet ini mengaitkan konfigurasi IP.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSApplicationGateway
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

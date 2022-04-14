@@ -5,17 +5,17 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Update-AzureRmIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Update-AzureRmIoTDeviceProvisioningService.md
-ms.openlocfilehash: e685610ef77352cbeae954625b46dcad86a4fd643085d2ec107247946d8b3c40
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 80032ab2a677683ff876aca499f7e0ee682e6fd6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854914"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064559"
 ---
 # Update-AzureRmIoTDeviceProvisioningService
 
 ## SYNOPSIS
-Memperbarui layanan penyediaan perangkat Azure IoT Hub.
+Perbarui layanan penyediaan perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -60,7 +60,7 @@ Update-AzureRmIoTDeviceProvisioningService [-ResourceGroupName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -81,7 +81,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAT52k=
 ```
 
-Perbarui Kebijakan Alokasi untuk "GeoLatency" layanan penyediaan perangkat Azure IoT Hub "myiotdps".
+Perbarui Kebijakan Alokasi ke "GeoLatency" layanan penyediaan perangkat Azure IoT Hub "myiotdps".
 
 ### Contoh 2
 ```
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Reset
-Mengatur ulang tag layanan penyediaan perangkat Iot
+Mengatur ulang Tag Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

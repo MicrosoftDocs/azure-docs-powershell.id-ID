@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/New-AzManagedServicesDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ManagedServices/ManagedServices/help/New-AzManagedServicesDefinition.md
 ms.openlocfilehash: b8eb86ab631426bab3f9205d2e16c1d640496ede
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140136303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142083631"
 ---
 # New-AzManagedServicesDefinition
 
 ## SYNOPSIS
-Membuat atau memperbarui definisi registrasi.
+Membuat atau memperbarui definisi pendaftaran.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesdefinition) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.managedservices/new-azmanagedservicesdefinition) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-AzManagedServicesDefinition [-Name <String>] -DisplayName <String> -ManagedB
  [<CommonParameters>]
 ```
 
-### Menurut Penulisan
+### ByAuthorization
 ```
 New-AzManagedServicesDefinition [-Name <String>] -DisplayName <String> -ManagedByTenantId <String>
  [-Description <String>] -Authorization <Authorization[]> [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -45,7 +45,7 @@ New-AzManagedServicesDefinition [-Name <String>] -DisplayName <String> -ManagedB
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui definisi registrasi.
+Membuat atau memperbarui definisi pendaftaran.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ b732e39c-c034-44cd-b5a1-094669ccc8c5 /subscriptions/24ab6047-da91-48c0-66e5-20a8
 PS C:\>
 ```
 
-Membuat definisi registrasi oleh nilai roleDefinitionId dan principalId yang diberikan secara langsung.
+Membuat definisi pendaftaran menurut roleDefinitionId dan nilai principalId yang diberikan secara langsung.
 
 ### Contoh 2
 ```
@@ -79,7 +79,7 @@ Name                                 Id                                         
 PS C:\>
 ```
 
-Membuat atau memperbarui definisi registrasi dengan detail otorisasi.
+Membuat atau memperbarui definisi pendaftaran dengan detail otorisasi.
 
 ### Contoh 3
 ```
@@ -108,12 +108,12 @@ PrincipalId                          RoleDefinitionId
 PS C:\>
 ```
 
-Memperbarui definisi registrasi dengan detail otorisasi dan nama definisi registrasi.
+Memperbarui definisi pendaftaran dengan detail otorisasi dan nama definisi pendaftaran.
 
 ## PARAMETERS
 
-### -Authorization
-Daftar pemetaan otorisasi dengan pokokId - roleDefinitionId.
+### -Otorisasi
+Daftar pemetaan otorisasi dengan principalId - roleDefinitionId.
 
 ```yaml
 Type: Microsoft.Azure.Management.ManagedServices.Models.Authorization[]
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi Definisi Registrasi.
+Penjabaran dari Definisi Pendaftaran.
 
 ```yaml
 Type: System.String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Nama tampilan Definisi Registrasi.
+Nama tampilan Definisi Pendaftaran.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedByTenantId
-Pengidentifikasi penyewa ManagedBy.
+Pengidentifikasi Penyewa ManagedBy.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama unik Definisi Registrasi.
+Nama unik Definisi Pendaftaran.
 
 ```yaml
 Type: System.String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanPublisher
-Nama nama Publisher.
+Nama Publisher.
 
 ```yaml
 Type: System.String
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlanVersion
-Nomor versi rencana.
+Nomor versi paket.
 
 ```yaml
 Type: System.String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrincipalId
-Pengidentifikasi utama ManagedBy.
+Pengidentifikasi Utama ManagedBy.
 
 ```yaml
 Type: System.String
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleDefinitionId
-Pengidentifikasi definisi peran untuk memberikan izin ke pengidentifikasi utama.
+Pengidentifikasi definisi peran untuk memberikan izin kepada pengidentifikasi utama.
 
 ```yaml
 Type: System.String
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -339,11 +339,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ManagedServices.Models.PSRegistrationDefinition

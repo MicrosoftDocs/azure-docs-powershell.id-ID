@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/New-AzureRmIoTDeviceProvisioningService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/New-AzureRmIoTDeviceProvisioningService.md
 ms.openlocfilehash: 9665b0ae486c12aec350db572aee6fc4f718ed43
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140864669"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064570"
 ---
 # New-AzureRmIoTDeviceProvisioningService
 
 ## SYNOPSIS
-Membuat layanan penyediaan perangkat Azure IoT Hub.
+Buat layanan penyediaan perangkat Azure IoT Hub.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmIoTDeviceProvisioningService [-ResourceGroupName] <String> [-Name] <S
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAT52k=
 ```
 
-Membuat layanan penyediaan perangkat Azure IoT Hub dengan harga standar tingkat S1, di wilayah grup sumber daya.
+Buat layanan penyediaan perangkat Azure IoT Hub dengan tingkat harga standar S1, di kawasan grup sumber daya.
 
 ### Contoh 2
 ```
@@ -70,7 +70,7 @@ SkuTier                     : Standard
 Etag                        : AAAAAAAPoOk=
 ```
 
-Membuat layanan penyediaan perangkat Azure IoT Hub dengan harga standar tingkat S1, di kawasan 'eastus'.
+Buat layanan penyediaan perangkat Azure IoT Hub dengan tingkat harga standar S1, di wilayah 'eastus'.
 
 ## PARAMETERS
 
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,11 +198,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

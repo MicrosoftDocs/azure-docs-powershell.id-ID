@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActionGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Set-AzActionGroup.md
 ms.openlocfilehash: c45c64be3da61d99cdc5d6558af3d1496a7cb2c9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076005"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142083037"
 ---
 # Set-AzActionGroup
 
 ## SYNOPSIS
-Membuat grup tindakan baru atau memperbarui grup tindakan yang sudah ada.
+Membuat grup tindakan baru atau memperbarui yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/set-azactiongroup) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/set-azactiongroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Set-AzActionGroup [-ShortName <String>] [-DisableGroup]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzActionGroup** membuat grup tindakan baru atau memperbarui grup tindakan yang sudah ada
+Cmdlet **Set-AzActionGroup** membuat grup tindakan baru atau pembaruan yang sudah ada
 
 ## EXAMPLES
 
@@ -60,12 +60,12 @@ PS C:\>Set-AzActionGroup -Name $actionGroupName -ResourceGroup $resourceGroupNam
 ```
 
 Dua perintah pertama membuat dua penerima.
-Perintah akhir membuat Grup Tindakan termasuk dua penerima.
+Perintah terakhir membuat Grup Tindakan termasuk dua penerima.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -136,7 +136,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Penerima
+### -Receiver
 Daftar penerima grup tindakan.
 
 ```yaml
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShortName
-Nama singkat grup tindakan.
+Nama pendek grup tindakan.
 
 ```yaml
 Type: System.String
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -266,17 +266,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.generic.List'1[[Microsoft.Azure.Commands.Insights. OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Insights. OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.PowerShell.Cmdlets.Monitor, Version=1.0.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.IDictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Collections.Generic.IDictionary'2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupResource
 

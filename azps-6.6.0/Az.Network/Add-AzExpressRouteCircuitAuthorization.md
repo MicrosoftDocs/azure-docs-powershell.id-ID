@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCircuitAuthorization.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzExpressRouteCircuitAuthorization.md
 ms.openlocfilehash: 828283013510e19c785bf30200f27744dc033398
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140252251"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142082155"
 ---
 # Add-AzExpressRouteCircuitAuthorization
 
@@ -19,7 +19,7 @@ ms.locfileid: "140252251"
 Menambahkan otorisasi sirkuit ExpressRoute.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azexpressroutecircuitauthorization) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azexpressroutecircuitauthorization) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,25 +29,25 @@ Add-AzExpressRouteCircuitAuthorization -Name <String> -ExpressRouteCircuit <PSEx
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzExpressRouteCircuitAuthorization** menambahkan otorisasi ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; ini otorisasi menghasilkan kunci otorisasi yang bisa digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). **Add-AzExpressRouteCircuitAuthorization** menambahkan otorisasi baru ke sirkuit dan, pada saat yang sama, menghasilkan kunci otorisasi terkait. Tombol ini dapat ditampilkan kapan saja dengan menjalankan cmdlet Get-AzExpressRouteCircuitAuthorization, dan, sebagaimana diperlukan, dapat disalin dan diteruskan ke pemilik jaringan yang sesuai.
-Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCircuitAuthorization**, Anda harus memanggil cmdlet Set-AzExpressRouteCircuit untuk mengaktifkan kunci. If you do not call **Set-AzExpressRouteCircuit** the authorization will be added to the circuit but will not be enabled for use.
+Cmdlet **Add-AzExpressRouteCircuitAuthorization menambahkan otorisasi** ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menyambungkan jaringannya ke sirkuit (satu otorisasi per jaringan virtual). **Add-AzExpressRouteCircuitAuthorization menambahkan otorisasi** baru ke sirkuit dan, pada saat yang sama, menghasilkan kunci otorisasi terkait. Kunci ini dapat dilihat kapan saja dengan menjalankan cmdlet Get-AzExpressRouteCircuitAuthorization dan, sesuai kebutuhan, kemudian dapat disalin dan diteruskan ke pemilik jaringan yang sesuai.
+Perhatikan bahwa, setelah menjalankan **Add-AzExpressRouteCircuitAuthorization**, Anda harus memanggil cmdlet Set-AzExpressRouteCircuit untuk mengaktifkan kunci. Jika Anda tidak memanggil **Set-AzExpressRouteCircuit** , otorisasi akan ditambahkan ke sirkuit tetapi tidak akan diaktifkan untuk digunakan.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan otorisasi ke sirkuit ExpressRoute yang ditentukan
+### Contoh 1: Menambahkan otorisasi ke sirkuit ExpressRoute yang ditentukan
 ```
 $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
 Add-AzExpressRouteCircuitAuthorization -Name "ContosoCircuitAuthorization" -Circuit $Circuit
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $Circuit
 ```
 
-Perintah dalam contoh ini menambahkan otorisasi baru ke sirkuit ExpressRoute yang ada. Perintah pertama menggunakan **Get-AzExpressRouteCircuit** untuk membuat referensi objek ke sirkuit bernama ContosoCircuit. Referensi objek tersebut disimpan dalam variabel yang bernama $Circuit.
-Di perintah kedua, cmdlet **Add-AzExpressRouteCircuitAuthorization** digunakan untuk menambahkan otorisasi baru (ContosoCircuitAuthorization) ke sirkuit ExpressRoute. Perintah ini menambahkan otorisasi tapi tidak mengaktifkan otorisasi itu. Mengaktifkan otorisasi memerlukan **Set-AzExpressRouteCircuit** diperlihatkan di perintah final dalam contoh.
+Perintah dalam contoh ini menambahkan otorisasi baru ke sirkuit ExpressRoute yang sudah ada. Perintah pertama menggunakan **Get-AzExpressRouteCircuit** untuk membuat referensi objek ke sirkuit bernama ContosoCircuit. Referensi objek tersebut disimpan dalam variabel bernama $Circuit.
+Dalam perintah kedua, cmdlet **Add-AzExpressRouteCircuitAuthorization** digunakan untuk menambahkan otorisasi baru (ContosoCircuitAuthorization) ke sirkuit ExpressRoute. Perintah ini menambahkan otorisasi tetapi tidak mengaktifkan otorisasi tersebut. Mengaktifkan otorisasi memerlukan **Set-AzExpressRouteCircuit** yang diperlihatkan dalam perintah akhir dalam contoh.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExpressRouteCircuit
-Menentukan sirkuit ExpressRoute yang menambahkan otorisasi kepada cmdlet ini.
+Menentukan sirkuit ExpressRoute tempat cmdlet ini menambahkan otorisasi.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightCluster.md
 ms.openlocfilehash: b10fe80fb0a58267212912f554d044b2715fd1d3
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415712"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063892"
 ---
 # New-AzureRmHDInsightCluster
 
@@ -86,7 +86,7 @@ New-AzureRmHDInsightCluster [-Location] <String> [-ResourceGroupName] <String> [
 ```
 
 ## DESCRIPTION
-Contoh New-AzureHDInsightCluster membuat kluster Azure HDInsight menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet New-AzureRmHDInsightClusterConfig.
+New-AzureHDInsightCluster membuat kluster Azure HDInsight menggunakan parameter yang ditentukan atau menggunakan objek konfigurasi yang dibuat menggunakan cmdlet New-AzureRmHDInsightClusterConfig.
 
 ## EXAMPLES
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdditionalStorageAccounts
-Menentukan opsi tambahan Azure Storage tambahan untuk kluster tersebut.
+Menentukan akun Azure Storage tambahan untuk kluster.
 Anda juga dapat menggunakan cmdlet Add-AzureRmHDInsightStorage.
 
 ```yaml
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateFileContents
-Menentukan konten file dari sertifikat yang akan digunakan saat mengakses Azure Data Lake Store.
+Menentukan konten file sertifikat yang akan digunakan saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Byte[]
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -CertificateFilePath
 Menentukan jalur file ke sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 
 ### -CertificatePassword
 Menentukan kata sandi untuk sertifikat yang akan digunakan untuk mengautentikasi sebagai Prinsipal Layanan.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.String
@@ -236,9 +236,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterTier
-Menentukan tingkatan kluster HDInsight.
-Secara default, ini standar.
-Tingkatan Premium hanya dapat digunakan dengan kluster Linux, dan memungkinkan penggunaan beberapa fitur baru.
+Menentukan tingkat kluster HDInsight.
+Secara default, ini adalah Standar.
+Tingkat Premium hanya dapat digunakan dengan kluster Linux, dan memungkinkan penggunaan beberapa fitur baru.
 
 ```yaml
 Type: Microsoft.Azure.Management.HDInsight.Models.Tier
@@ -298,7 +298,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Configurations
+### -Konfigurasi
 Menentukan konfigurasi kluster HDInsight ini.
 Anda juga dapat menggunakan cmdlet Add-AzureRmHDInsightConfigValues.
 
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -346,7 +346,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageAccountName
-Menentukan nama akun default Azure Storage yang akan digunakan kluster HDInsight.
+Menentukan nama akun Azure Storage default yang akan digunakan kluster HDInsight.
 Anda juga dapat menggunakan cmdlet Set-AzureRmHDInsightDefaultStorage.
 
 ```yaml
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageAccountType
-Menentukan tipe akun penyimpanan default yang akan digunakan kluster HDInsight. Nilai yang mungkin adalah AzureStorage dan AzureDataLakeStore. Default untuk AzureStorage jika tidak ditentukan.
+Menentukan tipe akun penyimpanan default yang akan digunakan kluster HDInsight. Nilai yang memungkinkan adalah AzureStorage dan AzureDataLakeStore. Default ke AzureStorage jika tidak ditentukan.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Commands.HDInsight.Models.Management.StorageType]
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageContainer
-Menentukan nama wadah default di akun penyimpanan Azure default yang akan digunakan kluster HDInsight.
+Menentukan nama kontainer default dalam akun penyimpanan Azure default yang akan digunakan kluster HDInsight.
 Anda juga dapat menggunakan cmdlet Set-AzureRmHDInsightDefaultStorage.
 
 ```yaml
@@ -394,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultStorageRootPath
-Menentukan prefiks jalur dalam Akun Data Lake Store yang akan digunakan kluster HDInsight sebagai filesystem default.
+Menentukan prefiks jalur di Akun Penyimpanan Data Lake yang akan digunakan kluster HDInsight sebagai filesystem default.
 
 ```yaml
 Type: System.String
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisksPerWorkerNode
-Menentukan jumlah disk untuk peran node pekerja dalam kluster.
+Menentukan jumlah disk untuk peran simpul pekerja dalam kluster.
 
 ```yaml
 Type: System.Int32
@@ -439,7 +439,7 @@ Accept wildcard characters: False
 ```
 
 ### -HeadNodeSize
-Menentukan ukuran mesin virtual untuk Simpul kepala.
+Menentukan ukuran mesin virtual untuk simpul Kepala.
 Gunakan Get-AzureRmVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
@@ -455,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -HiveMetastore
-Menentukan SQL Database untuk menyimpan metadata Hive.
+Menentukan SQL Database untuk menyimpan metadata Sarang.
 Anda juga dapat menggunakan cmdlet Add-AzureRmHDInsightMetastore.
 
 ```yaml
@@ -470,8 +470,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -501,8 +501,8 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Menentukan ID objek Azure AD (GUID) Prinsipal Layanan Azure AD yang mewakili kluster.
-Kluster ini akan digunakan saat mengakses Azure Data Lake Store.
+Menentukan ID objek Azure AD (GUID) dari Azure AD Service Principal yang mewakili kluster.
+Kluster akan menggunakannya saat mengakses Azure Data Lake Store.
 
 ```yaml
 Type: System.Guid
@@ -517,7 +517,7 @@ Accept wildcard characters: False
 ```
 
 ### -OozieMetastore
-Menentukan metode SQL Database menyimpan metadata Oozie.
+Menentukan SQL Database untuk menyimpan metadata Oozie.
 Anda juga dapat menggunakan cmdlet Add-AzureRmHDInsightMetastore.
 
 ```yaml
@@ -565,8 +565,8 @@ Accept wildcard characters: False
 ```
 
 ### -RdpCredential
-Menentukan kredensial Desktop Jarak Jauh (RDP) untuk kluster.
-Ini hanya untuk Windows kluster.
+Menentukan kredensial Desktop Jauh (RDP) untuk kluster.
+Ini hanya untuk kluster Windows.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -596,8 +596,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScriptActions
-Menentukan tindakan skrip yang akan dijalankan pada kluster pada akhir pembuatan kluster.
-Anda juga dapat menggunakan Add-AzureRmHDInsightScriptAction.
+Menentukan tindakan skrip untuk dijalankan pada kluster di akhir pembuatan kluster.
+Anda dapat menggunakan Add-AzureRmHDInsightScriptAction secara alternatif.
 
 ```yaml
 Type: System.Collections.Generic.Dictionary`2[Microsoft.Azure.Management.HDInsight.Models.ClusterNodeType,System.Collections.Generic.List`1[Microsoft.Azure.Commands.HDInsight.Models.Management.AzureHDInsightScriptAction]]
@@ -628,8 +628,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
-Menentukan kredensial TCP yang akan digunakan untuk koneksi TCP.
+### -SshCredential
+Menentukan kredensial SSH yang akan digunakan untuk koneksi SSH.
 Ini hanya untuk kluster Linux.
 
 ```yaml
@@ -644,8 +644,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KlikPublicKey
-Menentukan kunci publik yang akan digunakan untuk koneksi TCP.
+### -SshPublicKey
+Menentukan kunci publik yang akan digunakan untuk koneksi SSH.
 Ini hanya untuk kluster Linux.
 
 ```yaml
@@ -661,7 +661,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Menentukan nama subnet di dalam jaringan virtual yang dipilih untuk kluster.
+Menentukan nama subnet dalam jaringan virtual yang dipilih untuk kluster.
 
 ```yaml
 Type: System.String
@@ -676,7 +676,7 @@ Accept wildcard characters: False
 ```
 
 ### -Versi
-Menentukan versi HDI kluster HDInsight.
+Menentukan versi HDI dari kluster HDInsight.
 
 ```yaml
 Type: System.String
@@ -691,7 +691,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkId
-Menentukan ID jaringan virtual untuk penyediaan kluster.
+Menentukan ID jaringan virtual tempat untuk menyediakan kluster.
 
 ```yaml
 Type: System.String
@@ -706,7 +706,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkerNodeSize
-Menentukan ukuran mesin virtual untuk node Pekerja.
+Menentukan ukuran mesin virtual untuk simpul Pekerja.
 Gunakan Get-AzureRmVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
 
 ```yaml
@@ -721,10 +721,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Penjaga Kebun BinatangNodeSize
-Menentukan ukuran mesin virtual untuk simpul Penjaga Binatang.
+### -ZookeeperNodeSize
+Menentukan ukuran mesin virtual untuk simpul Zookeeper.
 Gunakan Get-AzureRmVMSize untuk ukuran VM yang dapat diterima, dan lihat halaman harga HDInsight.
-Parameter ini hanya valid untuk kluster HBase atau Storm.
+Parameter ini hanya berlaku untuk kluster HBase atau Storm.
 
 ```yaml
 Type: System.String
@@ -739,7 +739,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -751,9 +751,9 @@ Parameter: Config (ByValue)
 ### Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightCluster
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, hadoop, hdinsight, hd, insight
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, hadoop, hdinsight, hd, wawasan
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
+[Baru-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
 

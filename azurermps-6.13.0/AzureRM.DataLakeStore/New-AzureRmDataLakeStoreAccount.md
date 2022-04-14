@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/New-AzureRmDataLakeStoreAccount.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/New-AzureRmDataLakeStoreAccount.md
 ms.openlocfilehash: 3a3e2ea1fdac71759de7278ed34666e3a756ccca
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424537"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064767"
 ---
 # New-AzureRmDataLakeStoreAccount
 
 ## SYNOPSIS
-Membuat akun Data Lake Store baru.
+Membuat akun Baru Penyimpanan Data Lake.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -38,11 +38,11 @@ New-AzureRmDataLakeStoreAccount [-ResourceGroupName] <String> [-Name] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmDataLakeStoreAccount** membuat akun Data Lake Store baru.
+Cmdlet **New-AzureRmDataLakeStoreAccount** membuat akun Baru Penyimpanan Data Lake.
 
 ## EXAMPLES
 
-### Contoh 1: Buat akun
+### Contoh 1: Membuat akun
 ```
 PS C:\>New-AzureRmDataLakeStoreAccount -Name "ContosoADL" -ResourceGroupName "ContosoOrg" -Location "East US 2"
 ```
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableEncryption
-Menunjukkan bahwa akun tidak akan menerapkan enkripsi pada akun.
+Menunjukkan bahwa akun tidak akan memiliki bentuk enkripsi apa pun yang diterapkan padanya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Encryption
+### -Enkripsi
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType]
 Parameter Sets: UserOrSystemAssignedEncryption
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang berisi akun tersebut.
+Menentukan nama grup sumber daya yang berisi akun.
 
 ```yaml
 Type: System.String
@@ -212,8 +212,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tier
-Tingkat komitmen yang diinginkan untuk akun ini digunakan.
+### -Tingkat
+Tingkat komitmen yang diinginkan untuk digunakan akun ini.
 
 ```yaml
 Type: System.Nullable`1[Microsoft.Azure.Management.DataLake.Store.Models.TierType]
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -237,11 +237,11 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.EncryptionConfigType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.DataLake.Store.Models.TierType, Microsoft.Azure.Management.DataLake.Store, Version=2.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ## OUTPUTS
 
@@ -253,10 +253,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmDataLakeStoreAccount](./Get-AzureRmDataLakeStoreAccount.md)
 
-[Remove-AzureRmDataLakeStoreAccount](./Remove-AzureRmDataLakeStoreAccount.md)
+[Hapus-AzureRmDataLakeStoreAccount](./Remove-AzureRmDataLakeStoreAccount.md)
 
 [Set-AzureRmDataLakeStoreAccount](./Set-AzureRmDataLakeStoreAccount.md)
 
-[Test-AzureRmDataLakeStoreAccount](./Test-AzureRmDataLakeStoreAccount.md)
+[Uji-AzureRmDataLakeStoreAccount](./Test-AzureRmDataLakeStoreAccount.md)
 
 

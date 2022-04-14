@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/New-AzureRmIoTDeviceProvisioningServiceCertificateVerificationCode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/New-AzureRmIoTDeviceProvisioningServiceCertificateVerificationCode.md
 ms.openlocfilehash: 59445c2e162a7cbfce5cff26bac91d133c8928a1
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140854956"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064593"
 ---
 # New-AzureRmIoTDeviceProvisioningServiceCertificateVerificationCode
 
@@ -41,8 +41,8 @@ New-AzureRmIoTDeviceProvisioningServiceCertificateVerificationCode [-ResourceId]
 ```
 
 ## DESCRIPTION
-Kode verifikasi ini digunakan untuk menyelesaikan langkah kepemilikan sebuah sertifikat. Gunakan kode verifikasi ini sebagai CN dari sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
-Untuk penjelasan mendetail tentang sertifikat CA di Layanan Penyediaan Perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/how-to-verify-certificates.
+Kode verifikasi ini digunakan untuk menyelesaikan langkah bukti kepemilikan untuk sertifikat. Gunakan kode verifikasi ini sebagai CN sertifikat baru yang ditandatangani dengan kunci privat sertifikat akar.
+Untuk penjelasan mendetail tentang sertifikat CA di Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/how-to-verify-certificates.
 
 ## EXAMPLES
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Sertifikat Layanan Pengadaan Perangkat Iot
+Id Sumber Daya Sertifikat Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

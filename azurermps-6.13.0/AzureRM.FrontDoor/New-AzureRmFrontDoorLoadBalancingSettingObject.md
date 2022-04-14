@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorLoadBalancingSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorLoadBalancingSettingObject.md
 ms.openlocfilehash: de13a33aeaf60dbd83fcacebb8380bee27c18c46
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420358"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064013"
 ---
 # New-AzureRmFrontDoorLoadBalancingSettingObject
 
 ## SYNOPSIS
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmFrontDoorLoadBalancingSettingObject -Name <String> [-SampleSize <Int3
 ```
 
 ## DESCRIPTION
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
 
 ## EXAMPLES
 
@@ -46,12 +46,12 @@ Name                          : loadbalancingsetting1
 Type                          :
 ```
 
-Membuat objek PSLoadBalancingSetting untuk pembuatan Pintu Depan
+Membuat PSLoadBalancingMenyiapkan objek untuk pembuatan Pintu Depan
 
 ## PARAMETERS
 
 ### -AdditionalLatencyInMilliseconds
-Latensi tambahan dalam milidetik agar belanda masuk ke dalam wadah latensi terendah. Nilai default adalah 0
+Latensi tambahan dalam milidetik untuk probe jatuh ke dalam ember latensi terendah. Nilai defaultnya adalah 0
 
 ```yaml
 Type: System.Int32
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-health health setting name.
+nama pengaturan pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -SampleSize
-Jumlah sampel yang dipertimbangkan untuk memuat keputusan keseimbangan.
-Nilai default adalah 4
+Jumlah sampel yang perlu dipertimbangkan untuk keputusan penyeimbangan beban.
+Nilai defaultnya adalah 4
 
 ```yaml
 Type: System.Int32
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -SuccessfulSamplesRequired
-Jumlah sampel dalam periode sampel yang harus berhasil nilai Default adalah 2
+Jumlah sampel dalam periode sampel yang harus berhasil Nilai default adalah 2
 
 ```yaml
 Type: System.Int32
@@ -127,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -141,5 +141,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md) 
- [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)

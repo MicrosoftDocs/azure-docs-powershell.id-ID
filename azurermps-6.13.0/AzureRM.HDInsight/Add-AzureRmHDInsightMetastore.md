@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightMetastore.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightMetastore.md
 ms.openlocfilehash: d34ba28cb7b305c602b0e39dbce42f209e17c5fc
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "132415254"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063832"
 ---
 # Add-AzureRmHDInsightMetastore
 
 ## SYNOPSIS
-Menambahkan SQL Database berfungsi sebagai metastore Hive atau Oozie ke objek konfigurasi kluster.
+Menambahkan SQL Database untuk berfungsi sebagai metastore Hive atau Oozie ke objek konfigurasi kluster.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,8 +29,8 @@ Add-AzureRmHDInsightMetastore [-Config] <AzureHDInsightConfig> [-MetastoreType] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmHDInsightMetastore** menambahkan metaStore Hive atau Oozie ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig cmdlet.
-Metastore adalah sebuah SQL Database yang dapat digunakan untuk menyimpan metadata untuk Hive, Oozie, atau keduanya.
+Cmdlet **Add-AzureRmHDInsightMetastore** menambahkan metastore Hive atau Oozie ke objek konfigurasi HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
+Metastore adalah SQL Database yang dapat digunakan untuk menyimpan metadata untuk Sarang, Oozie, atau keduanya.
 
 ## EXAMPLES
 
@@ -88,12 +88,12 @@ PS C:\> New-AzureRmHDInsightClusterConfig  `
                 -DefaultStorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan metastore database SQL ke kluster yang bernama your-hadoop-001.
+Perintah ini menambahkan metastore database SQL ke kluster bernama your-hadoop-001.
 
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
 Objek ini dibuat oleh cmdlet **New-AzureRmHDInsightClusterConfig** .
 
 ```yaml
@@ -108,7 +108,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Menentukan kredensial yang akan digunakan untuk database AzureSQL Server.
 
 ```yaml
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Menentukan database pada instans AzureSQL Server yang akan digunakan untuk metastore ini.
+Menentukan database pada instans AzureSQL Server untuk digunakan untuk metastore ini.
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ### -MetastoreType
 Menentukan tipe metastore.
-Kemungkinan nilai adalah HiveMetastore atau OozieMetastore.
+Nilai yang memungkinkan adalah HiveMetastore atau OozieMetastore.
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightMetastoreType
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlAzureServerName
-Menentukan instans AzureSQL Server yang akan digunakan untuk metastore ini.
+Menentukan instans AzureSQL Server untuk digunakan untuk metastore ini.
 
 ```yaml
 Type: System.String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -201,6 +201,6 @@ Parameter: Config (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
+[Baru-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
 
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorHealthProbeSettingObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/FrontDoor/Commands.FrontDoor/help/New-AzureRmFrontDoorHealthProbeSettingObject.md
 ms.openlocfilehash: dcaf61b9001093d25f351d03e8e50da4c4ca22ca
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420707"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064022"
 ---
 # New-AzureRmFrontDoorHealthProbeSettingObject
 
@@ -65,8 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSeconds
-Jumlah detik antara health transit.
-Nilai default adalah 30
+Jumlah detik antara pemeriksaan kesehatan.
+Nilai defaultnya adalah 30
 
 ```yaml
 Type: System.Int32
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-health health setting name.
+nama pengaturan pemeriksaan kesehatan.
 
 ```yaml
 Type: System.String
@@ -95,8 +95,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur untuk digunakan bagi kesehatan.
+### -Jalur
+Jalur yang akan digunakan untuk pemeriksaan kesehatan.
 Defaultnya adalah /
 
 ```yaml
@@ -111,8 +111,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Skema protokol yang digunakan untuk default nilai default ini adalah HTTP
+### -Protokol
+Skema protokol yang digunakan untuk probe ini Nilai default adalah HTTP
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSProtocol
@@ -128,11 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -142,5 +142,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[New-AzureRmFrontDoor](./New-AzureRmFrontDoor.md) 
- [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)
+[AzureRmFrontDoor](./New-AzureRmFrontDoor.md)
+ Baru [Set-AzureRmFrontDoor](./Set-AzureRmFrontDoor.md)

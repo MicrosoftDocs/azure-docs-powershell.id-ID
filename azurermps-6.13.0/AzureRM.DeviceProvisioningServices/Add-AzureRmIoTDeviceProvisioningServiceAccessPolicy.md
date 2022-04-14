@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy.md
 ms.openlocfilehash: 23d9e40fe6d25fbd2a6bb3e23959d1a4bf087af2
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140864704"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064756"
 ---
 # Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy
 
@@ -42,7 +42,7 @@ Add-AzureRmIoTDeviceProvisioningServiceAccessPolicy [-ResourceId] <String> [-Key
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ SecondaryKey        : vbIwGCBQCIbS5BKFKdddM6uZHLhNTuz9r8CZYgmTmpY=
 Rights              : ServiceConfig, EnrollmentWrite
 ```
 
-Tambahkan kebijakan akses bersama baru dalam layanan penyediaan perangkat Azure IoT Hub dengan hak EnrollmentWrite dan ServiceConfig.
+Tambahkan kebijakan akses bersama baru dalam layanan penyediaan perangkat Azure IoT Hub dengan hak PendaftaranWrite dan ServiceConfig.
 
 ### Contoh 2
 ```
@@ -70,7 +70,7 @@ mypolicy1   ServiceConfig, EnrollmentWrite
 mypolicy2   EnrollmentRead
 ```
 
-Tambahkan kebijakan akses bersama baru dalam layanan penyediaan perangkat Azure IoT Hub dengan hak PendaftaranBaca.
+Tambahkan kebijakan akses bersama baru di layanan penyediaan perangkat Azure IoT Hub dengan DaftarBayar langsung.
 
 ## PARAMETERS
 
@@ -89,7 +89,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Object
+### -DpsObject
 Objek Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -134,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Permissions
+### -Izin
 Izin kebijakan akses Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,12 +212,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
-Parameter:ObjectObject (ByValue)
+Parameter: DpsObject (ByValue)
 
 ### System.String
 

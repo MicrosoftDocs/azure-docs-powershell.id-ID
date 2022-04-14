@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Add-AzVirtualNetworkSubnetConfig.md
 ms.openlocfilehash: fa0a6d696422e0a0bdbab9a0cfdc388952b08752
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104625"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142082011"
 ---
 # Add-AzVirtualNetworkSubnetConfig
 
@@ -19,7 +19,7 @@ ms.locfileid: "140104625"
 Menambahkan konfigurasi subnet ke jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/add-azvirtualnetworksubnetconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/add-azvirtualnetworksubnetconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ New-AzResourceGroup -Name TestResourceGroup -Location centralus
     $virtualNetwork | Set-AzVirtualNetwork
 ```
 
-  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Fungsi Add-AzVirtualNetworkSubnetConfig digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
+  Contoh ini terlebih dahulu membuat grup sumber daya sebagai wadah sumber daya yang akan dibuat. Lalu membuat konfigurasi subnet dan menggunakannya untuk membuat jaringan virtual. Add-AzVirtualNetworkSubnetConfig kemudian digunakan untuk menambahkan subnet ke representasi dalam memori jaringan virtual. Perintah Set-AzVirtualNetwork memperbarui jaringan virtual yang sudah ada dengan subnet baru.
 
 ### Contoh 2: Menambahkan delegasi ke subnet yang ditambahkan ke jaringan virtual yang sudah ada
 ```powershell
@@ -66,9 +66,9 @@ PS C:\> $delegation = New-AzDelegation -Name "myDelegation" -ServiceName "Micros
 PS C:\> Add-AzVirtualNetworkSubnetConfig -Name "mySubnet" -VirtualNetwork $vnet -AddressPrefix "10.0.2.0/24" -Delegation $delegation | Set-AzVirtualNetwork
 ```
 
-Contoh ini pertama mendapatkan vnet yang sudah ada.
-Lalu, fungsi ini akan membuat objek delegasi dalam memori.
-Akhirnya, subnet baru dengan delegasi yang ditambahkan ke vnet akan dibuat. Konfigurasi yang dimodifikasi lalu dikirim ke server.
+Contoh ini akan mendapatkan vnet yang sudah ada terlebih dahulu.
+Lalu, membuat objek delegasi dalam memori.
+Terakhir, aplikasi ini membuat subnet baru dengan delegasi yang ditambahkan ke vnet. Konfigurasi yang diubah kemudian dikirim ke server.
 
 ## PARAMETERS
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -102,7 +102,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Delegation
+### -Delegasi
 Daftar layanan yang memiliki izin untuk melakukan operasi pada subnet ini.
 
 ```yaml
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAllocation
-Menentukan lokasi IpAllocations untuk subnet.
+Menentukan IpAllocations untuk subnet.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSIpAllocation[]
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateEndpointNetworkPoliciesFlag
-Konfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat dalam subnet.
+Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada titik akhir privat dalam subnet.
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateLinkServiceNetworkPoliciesFlag
-Konfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan link privat dalam subnet.
+Mengonfigurasi untuk mengaktifkan atau menonaktifkan penerapan kebijakan jaringan pada layanan tautan privat dalam subnet.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Menentukan Id sumber daya Gateway NAT yang terkait dengan konfigurasi subnet.
+Menentukan Id sumber daya GATEWAY NAT yang terkait dengan konfigurasi subnet.
 
 ```yaml
 Type: System.String
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -340,6 +340,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVirtualNetworkSubnetConfig](./New-AzVirtualNetworkSubnetConfig.md)
 
-[Remove-AzVirtualNetworksubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
+[Remove-AzVirtualNetworkSubnetConfig](./Remove-AzVirtualNetworkSubnetConfig.md)
 
-[Set-azVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)
+[Set-AzVirtualNetworkSubnetConfig](./Set-AzVirtualNetworkSubnetConfig.md)

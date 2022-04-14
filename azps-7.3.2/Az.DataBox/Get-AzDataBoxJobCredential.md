@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.databox/get-azda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJobCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataBox/help/Get-AzDataBoxJobCredential.md
-ms.openlocfilehash: d8217f8989e59ff1334ffbe29c2c697bf8c6bd27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 106aa751b84aed5454fd147ea66a524f14788c7d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556989"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142113677"
 ---
 # Get-AzDataBoxJobCredential
 
 ## SYNOPSIS
-Metode ini rahasia yang belum dienkripsi terkait dengan pekerjaan.
+Metode ini mendapatkan rahasia yang tidak terenkripsi terkait dengan pekerjaan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.databox/get-azdataboxjobcredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzDataBoxJobCredential -Name <String> -ResourceGroupName <String> [-Subscrip
 ```
 
 ## DESCRIPTION
-Metode ini rahasia yang belum dienkripsi terkait dengan pekerjaan.
+Metode ini mendapatkan rahasia yang tidak terenkripsi terkait dengan pekerjaan.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kotak dataHeavy kredensial pekerjaan
+### Contoh 1: Dapatkan kotak dataPenyerima pekerjaanHeavy
 ```powershell
 Get-AzDataBoxJobCredential -Name "DtbxPowershell" -ResourceGroupName "resourceGroupName"
 
@@ -65,7 +68,7 @@ Type                                    : DataBoxHeavy
 $cabinetJobSecret = $obj.JobSecret.CabinetPodSecret | Format-List
 ```
 
-Mendapatkan kotak dataHeavy kredensial pekerjaan
+Dapatkan kotak dataKedensial pekerjaanHeavy
 
 ## PARAMETERS
 
@@ -85,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Sumber Daya pekerjaan di dalam grup sumber daya yang ditentukan.
-nama kerja harus panjang antara 3 dan 24 karakter dan gunakan alfanumerik dan garis bawah saja
+Nama sumber daya pekerjaan dalam grup sumber daya yang ditentukan.
+nama pekerjaan harus panjangnya antara 3 dan 24 karakter dan hanya menggunakan alfanumerik dan garis bawah
 
 ```yaml
 Type: System.String
@@ -131,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

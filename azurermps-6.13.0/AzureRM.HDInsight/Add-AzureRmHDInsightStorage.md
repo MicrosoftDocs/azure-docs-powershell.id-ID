@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightStorage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Add-AzureRmHDInsightStorage.md
 ms.openlocfilehash: 1d81b5c528739fb012f90e6e112422c4e828c1f1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428236"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063932"
 ---
 # Add-AzureRmHDInsightStorage
 
@@ -28,11 +28,11 @@ Add-AzureRmHDInsightStorage [-Config] <AzureHDInsightConfig> [-StorageAccountNam
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureRmHDInsightStorage** menambahkan entri akun Azure Storage entri ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig cmdlet.
+Cmdlet **Add-AzureRmHDInstorage** menambahkan entri akun Azure Storage ke objek konfigurasi Azure HDInsight yang dibuat oleh cmdlet New-AzureRmHDInsightClusterConfig.
 
 ## EXAMPLES
 
-### Contoh 1: Tambahkan kunci penyimpanan Azure ke objek konfigurasi kluster
+### Contoh 1: Menambahkan kunci penyimpanan Azure ke objek konfigurasi kluster
 ```
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
@@ -76,13 +76,13 @@ PS C:\> New-AzureRmHDInsightClusterConfig `
                 -DefaultStorageContainer $storageContainer
 ```
 
-Perintah ini menambahkan entri akun penyimpanan blob ke konfigurasi HDInsight yang bernama your-hadoop-001.
+Perintah ini menambahkan entri akun penyimpanan blob ke konfigurasi HDInsight bernama your-hadoop-001.
 
 ## PARAMETERS
 
 ### -Config
-Menentukan objek konfigurasi kluster HDInsight yang dimodifikasi cmdlet ini.
-Objek ini dibuat oleh cmdlet **New-AzureRmHDInsightClusterConfig.**
+Menentukan objek konfigurasi kluster HDInsight yang diubah cmdlet ini.
+Objek ini dibuat oleh cmdlet **New-AzureRmHDInsightClusterConfig** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.HDInsight.Models.AzureHDInsightConfig
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -157,6 +157,6 @@ Parameter: Config (ByValue)
 
 ## RELATED LINKS
 
-[New-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
+[Baru-AzureRmHDInsightClusterConfig](./New-AzureRmHDInsightClusterConfig.md)
 
 

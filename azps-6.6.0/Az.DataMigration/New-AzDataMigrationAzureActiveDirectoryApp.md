@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationAzureActiveDirectoryApp.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationAzureActiveDirectoryApp.md
 ms.openlocfilehash: 847305aa1707ae4bb8fb74aa24a890142a1bb006
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140107865"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142233685"
 ---
 # New-AzDataMigrationAzureActiveDirectoryApp
 
 ## SYNOPSIS
-Buat contoh baru DataMigration Azure ActiveDirectory Application detail.
+Buat instans baru DataMigration Azure ActiveDirectory Application details.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationazureactivedirectoryapp) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationazureactivedirectoryapp) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzDataMigrationAzureActiveDirectoryApp -ApplicationId <String> -AppKey <Secu
 ```
 
 ## DESCRIPTION
-Buat contoh baru DataMigration Azure ActiveDirectory Application detail.
+Buat instans baru DataMigration Azure ActiveDirectory Application details.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Buat contoh baru DataMigration Azure ActiveDirectory Application detail.
 PS C:\> $secpasswd = ConvertTo-SecureString "Your Secret Key Here" -AsPlainText -Force
 C:\> New-AzDmsAadApp -ApplicationId "Your AppId/Service Principal ID here" -AppKey $secpasswd
 ```
-ApplicationId : "Id Prinsipal AppId/Layanan Anda di sini" AppKey : System.Security.SecureString TenantId : "Tenant Id"
+ApplicationId : "Your AppId/Service Principal Id here" AppKey        : System.Security.SecureString TenantId      : "Tenant Id"
 
 ## PARAMETERS
 
 ### -AppKey
-Azure Active Directory Bawah
+Kunci Azure Active Directory
 
 ```yaml
 Type: System.Security.SecureString
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationId
-id Azure Active Directory Aplikasi
+Id Aplikasi Azure Active Directory
 
 ```yaml
 Type: System.String
@@ -87,12 +87,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

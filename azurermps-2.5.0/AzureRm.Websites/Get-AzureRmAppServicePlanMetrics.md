@@ -5,11 +5,11 @@ ms.assetid: 0AC0C4F9-4138-49EA-88CB-DC220DE7E9F4
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/get-azurermappserviceplanmetrics
 schema: 2.0.0
 ms.openlocfilehash: 097b4c5ff6a4a9be32889f104c8e2c8fe0058b13
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419807"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847313"
 ---
 # Get-AzureRmAppServicePlanMetrics
 
@@ -34,7 +34,7 @@ Get-AzureRmAppServicePlanMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [
 ```
 
 ## DESCRIPTION
-**Get-AzureRmAppServicePlanMetrics** mendapatkan metrik Paket Layanan Aplikasi.
+**Get-AzureRmAppServicePlanMetrics** mendapatkan metrik Rencana App Service.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Get-AzureRmAppServicePlanMetrics [-Metrics] <String[]> [-StartTime] <DateTime> [
 PS C:\>Get-AzureRmAppServicePlanMetrics -ResourceGroupName "Default-Web-WestUS" -Name "ContosoAppServPlan" -StartTime 2016-11-30T22:00:00Z -EndTime 2016-11-30T22:30:00Z -Granularity PT1M -Metrics ["CPU Percentage"]
 ```
 
-Perintah ini mendapatkan persentase CPU dari Paket Layanan Aplikasi per menit (PT1M - Waktu Polling 1 menit) antara StartTime dan EndTime
+Perintah ini mendapatkan persentase CPU dari App Service Paket per menit(PT1M - Poll Time 1 menit) antara StartTime dan EndTime
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Objek Paket Layanan Aplikasi
+Objek Rencana App Service
 
 ```yaml
 Type: AppServicePlan
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTime
-Waktu Berakhir dalam UTC
+Waktu Selesai di UTC
 
 ```yaml
 Type: DateTime
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceDetails
-Detail Contoh
+Detail Instans
 
 ```yaml
 Type: SwitchParameter
@@ -123,7 +123,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Metrics
+### -Metrik
 Metrik
 
 ```yaml
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTime
-Waktu Mulai dalam UTC
+Waktu Mulai di UTC
 
 ```yaml
 Type: DateTime
@@ -184,12 +184,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### ServerFarmWithRichSku
-Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari saluran
+### ServerFarmWithRichsku
+Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipeline
 
 ## OUTPUTS
 

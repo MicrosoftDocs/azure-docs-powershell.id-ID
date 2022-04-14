@@ -4,12 +4,12 @@ Module Name: AzureRM.WebSites
 ms.assetid: 258A4EA9-B82C-4664-8DCE-30D47A623868
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/switch-azurermwebappslot
 schema: 2.0.0
-ms.openlocfilehash: c4d60dbab3d19b991561f51ca8346757c62295a68d5b0c2623313b95f9c4f039
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 9671c2041f767df5066353988eb633318289de47
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851518"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846844"
 ---
 # Switch-AzureRmWebAppSlot
 
@@ -35,7 +35,7 @@ Switch-AzureRmWebAppSlot [-SourceSlotName] <String> [[-DestinationSlotName] <Str
 ```
 
 ## DESCRIPTION
-**Switch-AzureRmWebAppSlot** menukar dua slot yang terkait dengan Azure Web App.
+**Switch-AzureRmWebAppSlot** mengalihkan dua slot yang terkait dengan Azure Web App.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ Switch-AzureRmWebAppSlot [-SourceSlotName] <String> [[-DestinationSlotName] <Str
 PS C:\> Switch-AzureRmWebAppSlot -SourceSlotName "sourceslot" -DestinationSlotName "destinationslot" -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 
-Perintah ini akan mengalihkan slot "sourceslot" slot dengan "destinationslot" untuk Web App ContosoWebApp terkait dengan grup sumber daya Default-Web-WestUS
+Perintah ini akan beralih slot "sourceslot" slot dengan "destinationslot" untuk Web App ContosoWebApp yang terkait dengan grup sumber daya Default-Web-WestUS
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreserveVnet
-Pertahankan Boolean Vnet
+Pertahankan Vnet Boolean
 
 ```yaml
 Type: Boolean
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -SwapWithPreviewAction
-Menukar dengan tindakan pratinjau
+Menukar Dengan Tindakan Pratinjau
 
 ```yaml
 Type: SwapWithPreviewAction
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

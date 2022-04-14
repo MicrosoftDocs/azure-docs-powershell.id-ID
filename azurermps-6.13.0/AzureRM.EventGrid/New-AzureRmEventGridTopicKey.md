@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/New-AzureRmEventGridTopicKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventGrid/Commands.EventGrid/help/New-AzureRmEventGridTopicKey.md
 ms.openlocfilehash: badbb8c392e053b1f8d994164183bd593843629e
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140863184"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064389"
 ---
 # New-AzureRmEventGridTopicKey
 
 ## SYNOPSIS
-Meregenerasi kunci akses bersama untuk Topik Kisi Acara Azure.
+Meregenerasi kunci akses bersama untuk Topik Azure Event Grid.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ New-AzureRmEventGridTopicKey [-ResourceGroupName] <String> [-TopicName] <String>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TopicInputObjectParameterSet
+### TopikInputObjectParameterSet
 ```
 New-AzureRmEventGridTopicKey [-KeyName] <String> [-InputObject] <PSTopic>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -40,7 +40,7 @@ New-AzureRmEventGridTopicKey [-KeyName] <String> [-ResourceId] <String>
 ```
 
 ## DESCRIPTION
-Meregenerasi kunci akses bersama untuk Topik Kisi Acara Azure.
+Meregenerasi kunci akses bersama untuk Topik Azure Event Grid.
 
 ## EXAMPLES
 
@@ -49,19 +49,19 @@ Meregenerasi kunci akses bersama untuk Topik Kisi Acara Azure.
 PS C:\> New-AzureRmEventGridTopicKey -ResourceGroup MyResourceGroupName -TopicName Topic1 -KeyName key1
 ```
 
-Meregenerasi kunci yang terkait dengan kunci1 \''\ topik Kisi Acara \`Topic1\` dalam grup sumber daya \`MyResourceGroupName\`.
+Regenerasi kunci yang terkait dengan key \'key1'\ topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ### Contoh 2
 ```
 PS C:\> Get-AzureRmEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 | New-AzureRmEventGridTopicKey -KeyName "key1"
 ```
 
-Meregenerasi kunci yang terkait dengan kunci1 \''\ topik Kisi Acara \`Topic1\` dalam grup sumber daya \`MyResourceGroupName\`.
+Regenerasi kunci yang terkait dengan key \'key1'\ topik \`Kisi Kejadian Topik1\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek EventGrid Topic.
+Objek Topik EventGrid.
 
 ```yaml
 Type: Microsoft.Azure.Commands.EventGrid.Models.PSTopic
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyName
-Nama kunci yang perlu digenerasi
+Nama kunci yang perlu diregenerasi
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Acara.
+Pengidentifikasi Sumber Daya yang mewakili Topik Kisi Kejadian.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

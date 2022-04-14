@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzAutoscaleSetting.md
 ms.openlocfilehash: 6d57d4f39e74d29c0a395a09de5e400aba2d1288
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140076221"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142083271"
 ---
 # Get-AzAutoscaleSetting
 
@@ -19,7 +19,7 @@ ms.locfileid: "140076221"
 Mendapatkan pengaturan Skala Otomatis.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.monitor/get-azautoscalesetting) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azautoscalesetting) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Get-AzAutoscaleSetting -ResourceGroupName <String> [-Name <String>] [-DetailedOu
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzAutoscaleSetting** mendapatkan semua pengaturan Skala otomatis yang terkait dengan grup sumber daya atau pengaturan SkalaOtomatis yang ditentukan.
+Cmdlet **Get-AzAutoscaleSetting** mendapatkan semua pengaturan Skala Otomatis yang terkait dengan grup sumber daya atau pengaturan Skala Otomatis tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan pengaturan Skala Otomatis
+### Contoh 1: Dapatkan pengaturan Skala Otomatis
 ```
 PS C:\>Get-AzAutoscaleSetting -ResourceGroup "Default-Web-EastUS" -DetailedOutput
 resourceId : /subscriptions/b93fb07a-6f93-30be-bf3e-4f0deca15f4f/resourceGroups/Default-Web-EastUS/providers/microsoft. 
@@ -120,7 +120,7 @@ Tags       : {[$type, Microsoft.WindowsAzure.Management.Common.Storage.CasePrese
              Resource]}
 ```
 
-Perintah ini menetapkan pengaturan Skala Otomatis ke grup sumber daya Default-Web-EastUS.
+Perintah ini mendapatkan pengaturan Skala Otomatis yang ditetapkan ke grup sumber daya Default-Web-EastUS.
 
 ### Contoh 2: Dapatkan pengaturan Skala Otomatis menurut nama
 ```
@@ -213,7 +213,7 @@ Perintah ini mendapatkan pengaturan Skala Otomatis bernama DefaultServerFarm-Def
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -227,7 +227,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DetailOutput
+### -DetailedOutput
 Menunjukkan bahwa operasi ini menampilkan detail lengkap dalam output.
 
 ```yaml
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama pengaturan untuk mendapatkan.
+Menentukan nama pengaturan yang akan didapatkan.
 
 ```yaml
 Type: System.String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -4,12 +4,12 @@ Module Name: AzureRM.WebSites
 ms.assetid: 22ACB910-0C41-4649-8D22-537E38CB4570
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/new-azurermwebappdatabasebackupsetting
 schema: 2.0.0
-ms.openlocfilehash: a895bb4cbd5aa0eb3fc7515938a16bec10b07c52bcedc275130dd9e4de7f09be
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: f44b6f370b1431a5baf1a0686b4e893653327227
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140852677"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846950"
 ---
 # New-AzureRmWebAppDatabaseBackupSetting
 
@@ -34,7 +34,7 @@ Cmdlet **New-AzureRmWebAppDatabaseBackupSetting** membuat pengaturan Cadangan Az
 PS C:\> New-AzureRmWebAppDatabaseBackupSetting -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -ConnectionString "MyConnectionString" -DatabaseType "SqlAzure"
 ```
 
-Membuat pengaturan cadangan database (string koneksi) tipe SqlAzure untuk aplikasi tertentu ContosoWebApp yang berada di dalam grup sumber daya Default-Web-WestUS.
+Membuat pengaturan pencadangan database (string koneksi) tipe SqlAzure untuk aplikasi tertentu ContosoWebApp yang berada dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -114,11 +114,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS

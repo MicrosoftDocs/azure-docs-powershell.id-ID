@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyva
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Restore-AzureKeyVaultSecret.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/KeyVault/Commands.KeyVault/help/Restore-AzureKeyVaultSecret.md
-ms.openlocfilehash: c51123a78100172991a8cc946c90b40499a82ef68fdbe480bc82f51b11d06381
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ea2478225c3e5b3c0a3746a44aca13745e1af963
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416383"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063690"
 ---
 # Restore-AzureKeyVaultSecret
 
 ## SYNOPSIS
-Membuat rahasia di kunci vault dari rahasia cadangan.
+Membuat rahasia dalam kubah kunci dari rahasia yang dicadangkan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,13 +41,13 @@ Restore-AzureKeyVaultSecret [-ResourceId] <String> [-InputFile] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzureKeyVaultSecret** membuat rahasia di penyimpanan kunci tertentu.
-Rahasia ini adalah replika rahasia yang sudah dicadangkan di file input dan memiliki nama yang sama seperti rahasia aslinya.
-Jika kunci vault sudah rahasia dengan nama yang sama, cmdlet ini gagal dan bukan menimpa rahasia asli.
+Cmdlet **Restore-AzureKeyVaultSecret** membuat rahasia dalam kubah kunci yang ditentukan.
+Rahasia ini adalah replika rahasia yang dicadangkan dalam file input dan memiliki nama yang sama dengan rahasia aslinya.
+Jika kubah kunci sudah memiliki rahasia dengan nama yang sama, cmdlet ini gagal daripada menimpa rahasia asli.
 Jika cadangan berisi beberapa versi rahasia, semua versi akan dipulihkan.
-Kunci vault yang Anda pulihkan rahasianya mungkin berbeda dari key vault yang Anda cadangkan rahasianya.
-Namun, kunci vault harus menggunakan langganan yang sama dan berada di kawasan Azure di geografi yang sama (misalnya, Amerika Utara).
-Lihat Microsoft Azure Kepercayaan Lokal ( https://azure.microsoft.com/support/trust-center/) untuk pemetaan wilayah Azure ke geografi.
+Kubah kunci yang Anda pulihkan rahasianya bisa berbeda dari kubah kunci tempat Anda mencadangkan rahasia.
+Namun, kubah kunci harus menggunakan langganan yang sama dan berada di kawasan Azure dalam geografi yang sama (misalnya, Amerika Utara).
+Lihat Pusat Kepercayaan Microsoft Azure (https://azure.microsoft.com/support/trust-center/) untuk pemetaan kawasan Azure ke geografis.
 
 ## EXAMPLES
 
@@ -68,12 +68,12 @@ Content Type :
 Tags         :
 ```
 
-Perintah ini memulihkan rahasia, termasuk semua versinya, dari file cadangan bernama Backup.blob ke kunci vault bernama contoso.
+Perintah ini memulihkan rahasia, termasuk semua versinya, dari file cadangan bernama Backup.blob ke dalam kubah kunci bernama contoso.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputFile
-Menentukan file input yang berisi cadangan rahasia untuk dipulihkan.
+Menentukan berkas input yang berisi cadangan rahasia untuk dipulihkan.
 
 ```yaml
 Type: System.String
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault untuk memulihkan rahasia tersebut.
+Menentukan nama kubah kunci untuk memulihkan rahasia.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -202,5 +202,5 @@ Parameter: InputObject (ByValue)
 
 [Get-AzureKeyVaultSecret](./Get-AzureKeyVaultSecret.md)
 
-[Remove-AzureKeyVaultSecret](./Remove-AzureKeyVaultSecret.md)
+[Hapus-AzureKeyVaultSecret](./Remove-AzureKeyVaultSecret.md)
 

@@ -5,11 +5,11 @@ ms.assetid: 100A5980-31E2-41F9-84D4-2F5F0CB78B8A
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/get-azurermwebappslot
 schema: 2.0.0
 ms.openlocfilehash: 9ac20046317fa7d070e69284696293e1f66ed486
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425700"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847192"
 ---
 # Get-AzureRmWebAppSlot
 
@@ -42,12 +42,12 @@ Cmdlet **Get-AzureRmWebAppSlot** mendapatkan informasi tentang Slot Azure Web Ap
 PS C:\> Get-AzureRmWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "WebAppStandard" -Slot "Slot001"
 ```
 
-Perintah ini mendapatkan slot bernama Slot001 dari Web App bernama WebAppStandard yang dimiliki grup sumber daya Default-Web-WestUS.
+Perintah ini mendapatkan slot bernama Slot001 dari Web App bernama WebAppStandard yang termasuk dalam grup sumber daya Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -135,9 +135,9 @@ Parameter 'WebApp' menerima nilai tipe 'Situs' dari saluran
 
 ## RELATED LINKS
 
-[New-AzureRMWebAppSlot](./New-AzureRMWebAppSlot.md)
+[AzureRM BaruWebAppSlot](./New-AzureRMWebAppSlot.md)
 
-[Remove-AzureRMWebAppSlot](./Remove-AzureRMWebAppSlot.md)
+[Hapus-AzureRMWebAppSlot](./Remove-AzureRMWebAppSlot.md)
 
 [Mulai ulang-AzureRMWebAppSlot](./Restart-AzureRMWebAppSlot.md)
 

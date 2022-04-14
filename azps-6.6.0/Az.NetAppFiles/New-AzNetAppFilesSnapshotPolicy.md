@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshotPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/New-AzNetAppFilesSnapshotPolicy.md
 ms.openlocfilehash: 1e46aef2e6ca3ffa15f1e7bc58ba69510c2a3c1a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140307697"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142082389"
 ---
 # New-AzNetAppFilesSnapshotPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "140307697"
 Membuat kebijakan snapshot Azure NetApp Files (ANF) baru untuk akun ANF.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilessnapshotpolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/new-aznetappfilessnapshotpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -70,11 +70,11 @@ $hourlySchedule = @{
 PS C:\> New-AzNetAppFilesSnapshotPolicy -ResourceGroupName "MyRG" -l "westus2" -AccountName "MyAccount" -Name "MySnapshotPolicy" -Enabled -HourlySchedule $hourlySchedule -DailySchedule $dailySchedule -WeeklySchedule $weeklySchedule -MonthlySchedule $monthlySchedule
 ```
 
-Perintah ini akan membuat kebijakan snapshot ANF baru untuk akun ANF bernama akun "MyAccount".
+Perintah ini membuat kebijakan snapshot ANF baru untuk akun ANF bernama "MyAccount".
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF
 
 ```yaml
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -DailySchedule
-Larik hashtable yang menyatakan Jadwal harian
+Array hashtable yang mewakili Jadwal harian
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesDailySchedule
@@ -134,7 +134,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
+### -Difungsikan
 Properti untuk memutuskan kebijakan diaktifkan atau tidak
 
 ```yaml
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -HourlySchedule
-Array hashtable yang menyatakan Jadwal per jam
+Array hashtable yang mewakili Jadwal per jam
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesHourlySchedule
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlySchedule
-Larik hashtable mewakili Jadwal montly
+Array hashtable yang mewakili Jadwal montly
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesMonthlySchedule
@@ -240,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklySchedule
-Larik hashtable mewakili Jadwal montly
+Array hashtable yang mewakili Jadwal montly
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesWeeklySchedule
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

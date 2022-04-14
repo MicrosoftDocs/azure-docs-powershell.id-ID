@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNatGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzNatGateway.md
 ms.openlocfilehash: 4c4a323af5b3d3e326ce7e8a2e508d465df44cc9
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140281741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142124279"
 ---
 # New-AzNatGateway
 
 ## SYNOPSIS
-Buat sumber daya Gateway Nat baru dengan properti Alamat Ip Publik/Prefiks Ip Publik, IdleTimeoutInMinutes dan Sku.
+Buat sumber daya Nat Gateway baru dengan properti Alamat Ip Publik/Prefiks Ip Publik, IdleTimeoutInMinutes dan Sku.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/new-aznatgateway) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-aznatgateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,41 +30,41 @@ New-AzNatGateway -ResourceGroupName <String> -Name <String> [-IdleTimeoutInMinut
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzNatGateway** membuat Sumber Daya Gateway Nat. Diperlukan natgateway sebagai berikut: 
-- Alamat Ip Publik dan/atau Prefiks Ip Publik
+Cmdlet **New-AzNatGateway** membuat Sumber Daya Gateway Nat. Natgateway memerlukan hal berikut: 
+- Alamat IP Publik dan/atau Prefiks Ip Publik
 - IdleTimeoutInMinutes 
 - Sku
 - ResourceGroupName
-- ResourceName
+- NamaPengguna Sumber Daya
 - Lokasi
 
 ## EXAMPLES
 
-### Contoh 1: Membuat Gateway Nat dengan Alamat Ip Publik
+### Contoh 1: Buat Nat Gateway dengan Alamat IP Publik
 ```powershell
 PS C:> $pip = New-AzPublicIpAddress -Name "pip" -ResourceGroupName "natgateway_test" -Location "eastus2" -Sku "Standard" -IdleTimeoutInMinutes 4 -AllocationMethod "static"
 PS C:> $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name "nat_gateway" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus2" -PublicIpAddress $pip
 ```
 
-### Contoh 2: Membuat Gateway Nat dengan Prefiks Ip Publik
+### Contoh 2: Buat Nat Gateway dengan Prefiks Ip Publik
 ```powershell
 PS C:> $publicipprefix = New-AzPublicIpPrefix -Name "prefix2" -ResourceGroupName "natgateway_test" -Location "eastus2" -Sku "Standard" -PrefixLength "31"
 PS C:> $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name "nat_gateway" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus2" -PublicIpPrefix $publicipprefix
 ```
 
-### Contoh 3: Membuat Gateway Nat dengan Alamat IP Publik dalam Zona Ketersediaan 1
+### Contoh 3: Membuat Nat Gateway dengan Alamat IP Publik di Availability Zone 1
 ```powershell
 PS C:> $pip = New-AzPublicIpAddress -Name "pip" -ResourceGroupName "natgateway_test" -Location "eastus2" -Sku "Standard" -IdleTimeoutInMinutes 4 -AllocationMethod "static"
 PS C:> $natgateway = New-AzNatGateway -ResourceGroupName "natgateway_test" -Name "nat_gateway" -IdleTimeoutInMinutes 4 -Sku "Standard" -Location "eastus2" -PublicIpAddress $pip -Zone "1"
 ```
 
 Perintah pertama membuat Alamat IP Publik standar.
-Perintah kedua membuat Gateway NAT dengan Alamat IP Publik dalam Zona Ketersediaan 1.
+Perintah kedua membuat NAT Gateway dengan Alamat IP Publik di Availability Zone 1.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -93,8 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Waktu diam habis dari gateway nat.
+Waktu habis menganggur gateway nat.
 
 ```yaml
 Type: System.Int32
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi.
+Lokasinya.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpPrefix
-Array prefiks ip publik terkait dengan sumber daya gateway nat.
+Array prefiks ip publik yang terkait dengan sumber daya gateway nat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -228,8 +228,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Daftar zona ketersediaan menunjukkan zona di mana Gateway Nat akan digunakan.
+### -Zona
+Daftar zona ketersediaan yang mencantumkan zona tempat Nat Gateway harus digunakan.
 
 ```yaml
 Type: System.String[]
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

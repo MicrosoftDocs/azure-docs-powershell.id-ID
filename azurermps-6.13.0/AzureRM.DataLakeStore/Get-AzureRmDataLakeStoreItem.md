@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeStore/Commands.DataLakeStore/help/Get-AzureRmDataLakeStoreItem.md
 ms.openlocfilehash: a1e70286364fea53062a75b7ac886834803c3674
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428414"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142064894"
 ---
 # Get-AzureRmDataLakeStoreItem
 
 ## SYNOPSIS
-Dapatkan detail file atau folder di Data Lake Store.
+Mendapatkan detail file atau folder di Data Lake Store.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -37,12 +37,12 @@ Cmdlet **Get-AzureRmDataLakeStoreItem** mendapatkan detail file atau folder di D
 PS C:\>Get-AzureRmDataLakeStoreItem -AccountName "ContosoADL" -Path "/MyFiles/Test.csv"
 ```
 
-Perintah ini mendapatkan detail file dari Test.csv Data Lake Store.
+Perintah ini mendapatkan detail file Test.csv dari Data Lake Store.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Data Lake Store.
+Menentukan nama akun Penyimpanan Data Lake.
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -71,8 +71,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Data Lake Store untuk mendapatkan detail item, dimulai dengan direktori akar (/).
+### -Jalur
+Menentukan jalur Penyimpanan Data Lake untuk mendapatkan detail item, dimulai dengan direktori akar (/).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeStore.Models.DataLakeStorePathInstance
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
+[Ekspor-AzureRmDataLakeStoreItem](./Export-AzureRmDataLakeStoreItem.md)
 
 [Get-AzureRmDataLakeStoreChildItem](./Get-AzureRmDataLakeStoreChildItem.md)
 
@@ -115,8 +115,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmDataLakeStoreItem](./New-AzureRmDataLakeStoreItem.md)
 
-[Remove-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
+[Hapus-AzureRmDataLakeStoreItem](./Remove-AzureRmDataLakeStoreItem.md)
 
-[Test-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
+[Uji-AzureRmDataLakeStoreItem](./Test-AzureRmDataLakeStoreItem.md)
 
 

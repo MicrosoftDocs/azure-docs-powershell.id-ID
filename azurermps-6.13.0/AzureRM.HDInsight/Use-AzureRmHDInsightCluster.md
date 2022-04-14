@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Use-AzureRmHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Use-AzureRmHDInsightCluster.md
 ms.openlocfilehash: a129f882779d3c855efbc0ae83c3d1da9a7e002d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421684"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142063914"
 ---
 # Use-AzureRmHDInsightCluster
 
 ## SYNOPSIS
-Memilih kluster yang akan digunakan dengan cmdlet Invoke-RmAzureHDInsightHiveJob baru.
+Memilih kluster yang akan digunakan dengan cmdlet Invoke-RmAzureHDInsightHiveJob.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,11 +28,11 @@ Use-AzureRmHDInsightCluster [-ClusterName] <String> [-HttpCredential] <PSCredent
 ```
 
 ## DESCRIPTION
-Cmdlet **Use-AzureRmHDInsightCluster** memilih kluster Azure HDInsight agar cmdlet Invoke-AzureRmHDInsightHiveJob digunakan untuk mengirimkan pekerjaan Hive.
+Cmdlet **Use-AzureRmHDInsightCluster** memilih cluster Azure HDInsight untuk cmdlet Invoke-AzureRmHDInsightHiveJob yang akan digunakan untuk mengirimkan pekerjaan Hive.
 
 ## EXAMPLES
 
-### Contoh 1: Pilih kluster untuk pengiriman kueri Hive
+### Contoh 1: Pilih kluster untuk pengiriman kueri Sarang
 ```
 PS C:\># Cluster info
 PS C:\>$clusterName = "your-hadoop-001"
@@ -43,7 +43,7 @@ PS C:\>Use-AzureRmHDInsightCluster `
             -ClusterCredential $clusterCreds
 ```
 
-Perintah ini memilih kluster untuk pengiriman kueri Hive.
+Perintah ini memilih kluster untuk pengiriman kueri Sarang.
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -httpCredential
-Menentukan kredensial masuk kluster (HTTP) untuk kluster tersebut.
+### -HttpCredential
+Menentukan kredensial masuk kluster (HTTP) untuk kluster.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -108,11 +108,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -124,6 +124,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmHDInsightCluster](./Get-AzureRmHDInsightCluster.md)
 
-[Remove-AzureRmHDInsightCluster](./Remove-AzureRmHDInsightCluster.md)
+[Hapus-AzureRmHDInsightCluster](./Remove-AzureRmHDInsightCluster.md)
 
 
