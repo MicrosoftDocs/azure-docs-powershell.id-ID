@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/get-azsqldat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Get-AzSqlDatabaseGeoBackupPolicy.md
-ms.openlocfilehash: 869e5d9208a148d732671788047ccd6e5ecf61c4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 24e17d4b1de2e2450e6f1318ceb8b2eccf512272
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390939"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142026803"
 ---
 # Get-AzSqlDatabaseGeoBackupPolicy
 
 ## SYNOPSIS
 Mendapatkan kebijakan pencadangan geo database.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/get-azsqldatabasegeobackuppolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,14 +29,14 @@ Get-AzSqlDatabaseGeoBackupPolicy [-ServerName] <String> [-DatabaseName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzSqlDatabaseGeoBackupPolicy** mendapatkan kebijakan geo cadangan yang didaftarkan ke database ini.
-Ini adalah sumber daya Cadangan Azure yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
+Cmdlet **Get-AzSqlDatabaseGeoBackupPolicy** mendapatkan kebijakan cadangan geo yang terdaftar pada database ini.
+Ini adalah sumber daya Azure Backup yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-Mendapatkan kebijakan pencadangan geo database. (otomatisgenerated)
+Mendapatkan kebijakan pencadangan geo database. (autogenerasi)
 
 ```powershell
 <!-- Aladdin Generated Example --> 
@@ -43,7 +46,7 @@ Get-AzSqlDatabaseGeoBackupPolicy -DatabaseName db1 -ResourceGroupName MyResource
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mendapatkan kebijakan geo cadangan.
+Menentukan nama database tempat cmdlet ini mendapatkan kebijakan cadangan geo.
 
 ```yaml
 Type: System.String
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -88,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -103,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -119,4 +122,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzSqlDatabaseGeoBackupPolicy](./Set-AzSqlDatabaseGeoBackupPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

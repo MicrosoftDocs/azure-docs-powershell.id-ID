@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzIotSecuritySolutionRecommendationConfigurationObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/New-AzIotSecuritySolutionRecommendationConfigurationObject.md
 ms.openlocfilehash: 69a21d73ea947ef4937eb13cc9cda510b527d095
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140098901"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142041581"
 ---
 # New-AzIotSecuritySolutionRecommendationConfigurationObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140098901"
 Membuat konfigurasi rekomendasi baru untuk solusi keamanan iot
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/new-aziotsecuritysolutionrecommendationconfigurationobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/new-aziotsecuritysolutionrecommendationconfigurationobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Name: "Service prinicpal not used with ACR repository"
 Status: "Disabled"
 ```
 
-Membuat konfigurasi rekomendasi baru untuk tipe rekomendasi "IoT_ACRAuthentication" dengan status diatur ke dinonaktifkan
+Membuat konfigurasi rekomendasi baru untuk tipe rekomendasi "IoT_ACRAuthentication" dengan kumpulan status untuk menonaktifkan
 
 ## PARAMETERS
 
@@ -61,8 +61,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Enabled
-Status .
+### -Difungsikan
+Status.
 
 ```yaml
 Type: System.Boolean
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendationType
-Jenis rekomendasi.
+Tipe rekomendasi.
 
 ```yaml
 Type: System.String
@@ -92,11 +92,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

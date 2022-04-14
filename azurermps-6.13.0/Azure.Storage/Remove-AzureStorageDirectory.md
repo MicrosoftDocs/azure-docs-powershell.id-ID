@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Remove-AzureStorageDirectory.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Remove-AzureStorageDirectory.md
 ms.openlocfilehash: 6df60027ff2c25a8f2c1c948d04213cfc6d6158e
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421303"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144833"
 ---
 # Remove-AzureStorageDirectory
 
@@ -30,7 +30,7 @@ Remove-AzureStorageDirectory [-ShareName] <String> [-Path] <String> [-PassThru] 
  [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Remove-AzureStorageDirectory [-Share] <CloudFileShare> [-Path] <String> [-PassThru]
  [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -61,9 +61,9 @@ Perintah ini menghapus folder bernama ContosoWorkingFolder dari berbagi file ber
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Menentukan interval waktu yang habis di sisi klien, dalam hitungan detik, untuk satu permintaan layanan.
-Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini mencoba permintaan.
-Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini akan mengembalikan kesalahan.
+Menentukan interval waktu habis pihak klien, dalam hitungan detik, untuk satu permintaan layanan.
+Jika panggilan sebelumnya gagal dalam interval yang ditentukan, cmdlet ini akan mencoba kembali permintaan.
+Jika cmdlet ini tidak menerima respons yang berhasil sebelum interval berlalu, cmdlet ini mengembalikan kesalahan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -78,11 +78,11 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Menentukan jumlah maksimum panggilan jaringan bersama.
-Anda dapat menggunakan parameter ini untuk membatasi konkurensi guna membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
+Menentukan maksimum panggilan jaringan serentak.
+Anda bisa menggunakan parameter ini untuk membatasi konkurensi untuk membatasi penggunaan CPU lokal dan bandwidth dengan menentukan jumlah maksimum panggilan jaringan bersamaan.
 Nilai yang ditentukan adalah hitungan absolut dan tidak dikalikan dengan hitungan inti.
-Parameter ini bisa membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth yang rendah, seperti 100 kilobit per detik.
-Nilai default adalah 10.
+Parameter ini dapat membantu mengurangi masalah koneksi jaringan di lingkungan bandwidth rendah, seperti 100 kilobit per detik.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -Konteks
 Menentukan konteks penyimpanan Azure.
-Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzureStorageContext.](./New-AzureStorageContext.md)
+Untuk mendapatkan konteks penyimpanan, gunakan cmdlet [New-AzureStorageContext](./New-AzureStorageContext.md) .
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -Direktori
-Menentukan folder sebagai objek **CloudFileDirectory.**
-Cmdlet ini akan menghapus folder yang ditentukan oleh parameter ini.
+Menentukan folder sebagai objek **CloudFileDirectory** .
+Cmdlet ini menghapus folder yang ditentukan parameter ini.
 Untuk mendapatkan direktori, gunakan cmdlet New-AzureStorageDirectory.
 Anda juga dapat menggunakan cmdlet **Get-AzureStorageFile** untuk mendapatkan direktori.
 
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengindikasikan bahwa, jika cmdlet ini berhasil, cmdlet ini akan mengembalikan nilai $True.
-Jika Anda menentukan parameter ini, dan jika cmdlet tidak berhasil karena nilai yang tidak pantas untuk parameter _Jalur,_ cmdlet akan mengembalikan kesalahan.
+Menunjukkan bahwa, jika cmdlet ini berhasil, cmdlet ini mengembalikan nilai $True.
+Jika Anda menentukan parameter ini, dan jika cmdlet tidak berhasil karena nilai yang tidak pantas untuk parameter _Jalur_ , cmdlet mengembalikan kesalahan.
 Jika Anda tidak menentukan parameter ini, cmdlet ini tidak mengembalikan nilai.
 
 ```yaml
@@ -162,9 +162,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur folder.
-Jika folder yang ditetapkan parameter ini kosong, cmdlet ini akan menghapus folder tersebut.
+Jika folder yang ditentukan parameter ini kosong, cmdlet ini akan menghapus folder tersebut.
 Jika folder tidak kosong, cmdlet ini tidak membuat perubahan, dan mengembalikan kesalahan.
 
 ```yaml
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Menentukan lamanya periode waktu habis untuk bagian server dari permintaan.
+Menentukan lamanya periode batas waktu untuk bagian server dari permintaan.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -207,11 +207,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bagikan
-Menentukan objek **CloudFileShare.**
+Menentukan objek **CloudFileShare** .
 Cmdlet ini menghapus folder di bawah berbagi file yang ditentukan parameter ini.
-Untuk mendapatkan objek **CloudFileShare,** gunakan cmdlet Get-AzureStorageShare.
+Untuk mendapatkan objek **CloudFileShare** , gunakan cmdlet Get-AzureStorageShare.
 Objek ini berisi konteks penyimpanan.
-Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks.*
+Jika Anda menentukan parameter ini, jangan tentukan parameter *Konteks* .
 
 ```yaml
 Type: Microsoft.WindowsAzure.Storage.File.CloudFileShare
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Menentukan nama berbagi file.
+Menentukan nama file yang dibagikan.
 Cmdlet ini menghapus folder di bawah berbagi file yang ditentukan parameter ini.
 
 ```yaml
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -273,12 +273,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileShare
-Parameter: Berbagi (ByValue)
+Parameter: Bagikan (ByValue)
 
 ### Microsoft.WindowsAzure. Storage. File.CloudFileDirectory
 Parameter: Direktori (ByValue)
@@ -297,6 +297,6 @@ Parameter: Direktori (ByValue)
 
 [Get-AzureStorageShare](./Get-AzureStorageShare.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
-[New-AzureStorageDirectory](./New-AzureStorageDirectory.md)
+[AzureStorageDirectory baru](./New-AzureStorageDirectory.md)

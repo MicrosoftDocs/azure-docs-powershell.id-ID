@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesBackupProtectableItem.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Initialize-AzRecoveryServicesBackupProtectableItem.md
 ms.openlocfilehash: 599f21fe03371584e610305cef395876132dd8f1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139933045"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142044083"
 ---
 # Initialize-AzRecoveryServicesBackupProtectableItem
 
 ## SYNOPSIS
-Perintah ini memicu penemuan item tidak terproteksi dari tipe beban kerja tertentu dalam wadah tertentu. Jika aplikasi DB tidak diproteksi otomatis, gunakan perintah ini untuk menemukan DB baru setiap kali mereka ditambahkan dan lanjutkan untuk melindunginya.
+Perintah ini memicu penemuan item tanpa proteksi tipe beban kerja tertentu dalam wadah tertentu. Jika aplikasi DB tidak dilindungi secara otomatis, gunakan perintah ini untuk menemukan DB baru setiap kali ditambahkan dan lanjutkan untuk melindunginya.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/initialize-azrecoveryservicesbackupprotectableitem) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/initialize-azrecoveryservicesbackupprotectableitem) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Initialize-AzRecoveryServicesBackupProtectableItem [-Container] <ContainerBase> 
 ```
 
 ## DESCRIPTION
-cmdlet menanyakan beban kerja tertentu dalam wadah. Hal ini memicu operasi untuk membuat item yang dapat diproteksi.
+cmdlet meminta beban kerja tertentu dalam wadah. Ini memicu operasi yang membuat item yang dapat dilindungi.
 
 ## EXAMPLES
 
@@ -38,11 +38,11 @@ cmdlet menanyakan beban kerja tertentu dalam wadah. Hal ini memicu operasi untuk
 PS C:\> Initialize-AzRecoveryServicesProtectableItem -Container $Container -WorkloadType "MSSQL"
 ```
 
-Cmdlet menjalankan operasi penemuan untuk item baru yang dapat diproteksi.
+Cmdlet menjalankan operasi penemuan untuk item baru yang dapat dilindungi.
 
 ### Contoh 2
 
-Perintah ini memicu penemuan item tidak terproteksi dari tipe beban kerja tertentu dalam wadah tertentu. (otomatisgenerated)
+Perintah ini memicu penemuan item tanpa proteksi tipe beban kerja tertentu dalam wadah tertentu. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Initialize-AzRecoveryServicesBackupProtectableItem -Container $Cont[0] -VaultId $vault.ID -WorkloadType AzureVM
@@ -50,7 +50,7 @@ Initialize-AzRecoveryServicesBackupProtectableItem -Container $Cont[0] -VaultId 
 
 ## PARAMETERS
 
-### -Container
+### -Kontainer
 Wadah tempat item berada
 
 ```yaml
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan wadah tempat penemuan dipicu.
+Mengembalikan wadah tempat penemuan sedang dipicu.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

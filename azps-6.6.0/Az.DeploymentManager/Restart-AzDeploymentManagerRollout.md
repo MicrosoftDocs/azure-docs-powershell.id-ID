@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Restart-AzDeploymentManagerRollout.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/Restart-AzDeploymentManagerRollout.md
 ms.openlocfilehash: 31dc036b53cf65418a39669997d3ed66993267cf
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483097"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142084802"
 ---
 # Restart-AzDeploymentManagerRollout
 
@@ -18,7 +18,7 @@ ms.locfileid: "140483097"
 Memulai ulang peluncuran yang gagal.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.deploymentmanager/restart-azdeploymentmanagerrollout) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/restart-azdeploymentmanagerrollout) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,8 +42,8 @@ Restart-AzDeploymentManagerRollout [-InputObject] <PSRollout> [-SkipSucceeded]
 
 ## DESCRIPTION
 Cmdlet **Restart-AzDeploymentManagerRollout** memulai ulang peluncuran yang gagal, dan mengembalikan objek yang mewakili peluncuran tersebut dengan semua informasi mendetail tentang kemajuan peluncuran.
-Tentukan peluncuran berdasarkan namanya dan nama grup sumber daya. Alternatifnya, Anda bisa menyediakan objek Rollout atau ResourceId.
-Parameter opsional SkipSucceed memungkinkan Anda untuk melewati semua langkah yang berhasil dalam proses peluncuran sebelumnya.
+Tentukan peluncuran menurut nama dan nama grup sumber dayanya. Alternatifnya, Anda dapat menyediakan objek Rollout atau ResourceId.
+Parameter opsional SkipSucceed memungkinkan Anda melewati semua langkah yang berhasil dalam peluncuran sebelumnya.
 
 ## EXAMPLES
 
@@ -52,21 +52,21 @@ Parameter opsional SkipSucceed memungkinkan Anda untuk melewati semua langkah ya
 PS C:\> Restart-AzDeploymentManagerRollout -ResourceGroupName ContosoResourceGroup -Name ContosoRollout -SkipSucceeded
 ```
 
-Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceGroup. Bendera SkipSucceed menunjukkan bahwa semua langkah yang sudah berhasil dilewatkan dan peluncuran akan melanjutkan eksekusi dari langkah terakhir gagal.
+Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceGroup. Bendera Dilewati menunjukkan bahwa semua langkah yang sudah berjalan berhasil harus dilewati dan peluncuran harus dilanjutkan eksekusi dari tempat terakhir gagal.
 
-### Contoh 2: Mulai ulang peluncuran menggunakan pengidentifikasi sumber daya
+### Contoh 2: Memulai ulang peluncuran menggunakan pengidentifikasi sumber daya
 ```powershell
 PS C:\> Restart-AzDeploymentManagerRollout -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/rollouts/ContosoRollout"
 ```
 
 Perintah ini memulai ulang peluncuran bernama ContosoRollout di ContosoResourceGroup.
 
-### Contoh 3: Mulai ulang peluncuran menggunakan objek rollout.
+### Contoh 3: Mulai ulang peluncuran menggunakan objek peluncuran.
 ```powershell
 PS C:\> Get-AzDeploymentManagerRollout -InputObject $rolloutObject
 ```
 
-Perintah ini memulai ulang peluncuran dengan nama dan Grup Sumber Daya yang sesuai dengan properti Nama dan ResourceGroupName $rolloutObject grup.
+Perintah ini memulai ulang peluncuran yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $rolloutObject.
 
 ## PARAMETERS
 
@@ -145,8 +145,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -SkipSucceeded
-Lewati langkah-langkah yang berhasil dalam proses peluncuran sebelumnya.
+### -SkipSucceed
+Lewati langkah-langkah yang berhasil dalam peluncuran sebelumnya.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,11 +5,11 @@ ms.assetid: A27EE9C0-C7F5-4BF6-AE52-58087BD1B1C3
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermvirtualnetworkgatewaydefaultsite
 schema: 2.0.0
 ms.openlocfilehash: 463951ca6b6679671f330a3ddb0f9460a878a3d3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429113"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142145578"
 ---
 # Set-AzureRmVirtualNetworkGatewayDefaultSite
 
@@ -26,9 +26,9 @@ Set-AzureRmVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway <PSVirtualNet
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmVirtualNetworkGatewayDefaultSite** menetapkan situs default bawaan paksa ke gateway jaringan virtual.
-Paksa membantu menyediakan cara Anda mengalihkan lalu lintas terikat Internet dari mesin virtual Azure ke jaringan lokal; ini memungkinkan Anda untuk memeriksa dan mengaudit lalu lintas sebelum merilisnya.
-Upaya paksa dilakukan menggunakan vpn jaringan privat virtual (VPN, Virtual Private Network) vpn; dasbor ini memerlukan situs default, gateway lokal tempat semua lalu lintas terikat Internet Azure dialihkan.
+Cmdlet **Set-AzureRmVirtualNetworkGatewayDefaultSite** menetapkan situs default tunneling paksa ke gateway jaringan virtual.
+Terowongan paksa menyediakan cara bagi Anda untuk mengalihkan lalu lintas terikat internet dari mesin virtual Azure ke jaringan lokal Anda; hal ini memungkinkan Anda memeriksa dan mengaudit lalu lintas sebelum merilisnya.
+Terowongan paksa dilakukan dengan menggunakan terowongan jaringan privat virtual (VPN); terowongan ini memerlukan situs default, gateway lokal di mana semua lalu lintas Azure yang terikat internet diarahkan ulang.
 **Set-AzureRmVirtualNetworkGatewayDefaultSite** menyediakan cara untuk mengubah situs default yang ditetapkan ke gateway.
 
 ## EXAMPLES
@@ -43,17 +43,17 @@ PS C:\> Set-AzureRmVirtualNetworkGatewayDefaultSite -GatewayDefaultSite $LocalGa
 Contoh ini menetapkan situs default ke gateway jaringan virtual bernama ContosoVirtualGateway.
 
 Perintah pertama membuat referensi objek ke gateway lokal bernama ContosoLocalGateway.
-Referensi objek ini yang disimpan di variabel yang $LocalGateway mewakili gateway yang akan dikonfigurasi sebagai situs default
+Referensi objek yang disimpan dalam variabel bernama $LocalGateway mewakili gateway untuk dikonfigurasi sebagai situs default
 
 .
-Perintah kedua lalu membuat referensi objek ke gateway jaringan virtual dan menyimpan hasilnya dalam variabel yang bernama $VirtualGateway.
+Perintah kedua kemudian membuat referensi objek ke gateway jaringan virtual dan menyimpan hasilnya dalam variabel bernama $VirtualGateway.
 
 Perintah ketiga menggunakan cmdlet **Set-AzureRmVirtualNetworkGatewayDefaultSite** untuk menetapkan situs default ke ContosoVirtualGateway.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -68,8 +68,8 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayDefaultSite
-Menentukan referensi objek ke gateway jaringan lokal untuk ditetapkan sebagai situs default untuk jaringan virtual yang ditentukan.
-Anda bisa menggunakan cmdlet Get-AzureRmLocalNetworkGateway cmdlet untuk membuat referensi objek ke gateway lokal.
+Menentukan referensi objek ke gateway jaringan lokal untuk ditetapkan sebagai situs default untuk jaringan maya yang ditentukan.
+Anda bisa menggunakan cmdlet Get-AzureRmLocalNetworkGateway untuk membuat referensi objek ke gateway lokal.
 
 ```yaml
 Type: PSLocalNetworkGateway
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 Menentukan referensi objek ke gateway jaringan virtual tempat situs default akan ditetapkan.
 Anda bisa membuat referensi objek ke gateway jaringan virtual dengan menggunakan **Get-AzureRmVirtualNetworkGateway** dan menentukan nama gateway.
 
-Waktu $VirtualGateway bisa digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway:*
+Variabel $VirtualGateway kemudian dapat digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway* :
 
 ```yaml
 Type: PSVirtualNetworkGateway
@@ -102,17 +102,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ###  
-Cmdlet ini menerima contoh pipelined dari objek **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway.**
+Cmdlet ini menerima instans pipelin objek **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway** .
 
 ## OUTPUTS
 
 ###  
-Cmdlet ini memodifikasi contoh contoh **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway yang** sudah ada.
+Cmdlet ini mengubah instans objek **Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway** yang sudah ada.
 
 ## CATATAN
 
@@ -122,6 +122,6 @@ Cmdlet ini memodifikasi contoh contoh **Microsoft.Azure.Commands.Network.Models.
 
 [Get-AzureRmVirtualNetworkGateway](./Get-AzureRmVirtualNetworkGateway.md)
 
-[Remove-AzureRmVirtualNetworkGatewayDefaultSite](./Remove-AzureRmVirtualNetworkGatewayDefaultSite.md)
+[Hapus-AzureRmVirtualNetworkGatewayDefaultSite](./Remove-AzureRmVirtualNetworkGatewayDefaultSite.md)
 
 

@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.monitor/get-azac
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Monitor/Monitor/help/Get-AzActivityLogAlert.md
-ms.openlocfilehash: d7a1e544d9dbf0ad3f879b4ff31f15308de99c0f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0da5c85c16195065283aa7c44f3b8716b29b6bd4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140571120"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109537"
 ---
 # Get-AzActivityLogAlert
 
 ## SYNOPSIS
-Mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+Mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.monitor/get-azactivitylogalert) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -33,35 +36,35 @@ Get-AzActivityLogAlert [[-ResourceGroupName] <String>] [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzActivityLogAlert** mendapatkan satu atau beberapa sumber daya pemberitahuan log aktivitas.
+Cmdlet **Get-AzActivityLogAlert** mendapatkan satu atau beberapa sumber daya peringatan log aktivitas.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pemberitahuan log aktivitas berdasarkan ID langganan
+### Contoh 1: Dapatkan pemberitahuan log aktivitas menurut ID langganan
 ```
 PS C:\>Get-AzActivityLogAlert
 ```
 
 Perintah ini mencantumkan semua pemberitahuan log aktivitas untuk langganan saat ini.
 
-### Contoh 2: Dapatkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan
+### Contoh 2: Dapatkan pemberitahuan log aktivitas untuk grup sumber daya tertentu
 ```
 PS C:\>Get-AzActivityLogAlert -ResourceGroupName "Default-activityLogAlerts"
 ```
 
-Perintah ini mencantumkan pemberitahuan log aktivitas untuk grup sumber daya yang diberikan.
+Perintah ini mencantumkan pemberitahuan log aktivitas untuk grup sumber daya tertentu.
 
 ### Contoh 3: Dapatkan pemberitahuan log aktivitas.
 ```
 PS C:\>Get-AzActivityLogAlert -ResourceGroupName "Default-activityLogAlerts" -Name "alert1"
 ```
 
-Perintah ini mencantumkan satu (daftar dengan elemen tunggal) pemberitahuan log aktivitas.
+Perintah ini mencantumkan satu (daftar dengan satu elemen) pemberitahuan log aktivitas.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -91,8 +94,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana sumber daya pemberitahuan ada.
-Jika Nama bukan nol atau kosong, parameter ini harus berisi dan string bukan kosong.
+Nama grup sumber daya tempat sumber daya peringatan ada.
+Jika Nama bukan nol atau kosong, parameter ini harus berisi dan string yang tidak kosong.
 
 ```yaml
 Type: System.String
@@ -119,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -135,8 +138,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzActivityLogAlert](./Set-AzActivityLogAlert.md)
 
-[Remove-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
+[Hapus-AzActivityLogAlert](./Remove-AzActivityLogAlert.md)
 
-[New-AzActionGroup](./New-AzActionGroup.md)
+[Grup Baru-AzAction](./New-AzActionGroup.md)
 
 [New-AzActivityLogAlertCondition](./New-AzActivityLogAlertCondition.md)

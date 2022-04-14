@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzAvailabilityGroupListener.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SqlVirtualMachine/SqlVirtualMachine/help/Update-AzAvailabilityGroupListener.md
 ms.openlocfilehash: e4f232425f75b79169ac3b800e17916afda310c0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140244583"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903231"
 ---
 # Update-AzAvailabilityGroupListener
 
@@ -18,7 +18,7 @@ ms.locfileid: "140244583"
 Memperbarui Pendengar Grup Ketersediaan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azavailabilitygrouplistener) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sqlvirtualmachine/update-azavailabilitygrouplistener) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Update-AzAvailabilityGroupListener [-SqlVirtualMachineId <String[]>] [-AsJob]
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzAvailabilityGroupListener pembaruan Pendengar Grup Ketersediaan.
+Cmdlet Update-AzAvailabilityGroupListener memperbarui Pendengar Grup Ketersediaan.
 
 ## EXAMPLES
 
@@ -59,11 +59,11 @@ Cmdlet Update-AzAvailabilityGroupListener pembaruan Pendengar Grup Ketersediaan.
 PS C:\> Update-AzAvailabilityGroupListener -ResourceGroupName ResourceGroup01 -SqlVMGroupName SqlVmGroup01 -Name AgListener01 -SqlVirtualMachineId $VmResourceId01,$VmResourceId02
 ```
 
-Name ResourceGroupName GroupName AvailabilityGroupName
+Nama ResourceGroupName GroupName AvailabilityGroupName
 ----         ----------------- ---------    ---------------------
 AgListener01 ResourceGroup01 SqlVmGroup01 AvailabilityGroup01
 
-Memperbarui daftar SQL Mesin Virtual untuk Pendengar Grup Ketersediaan.
+Memperbarui daftar SQL Virtual Machines untuk Pendengar Grup Ketersediaan.
 
 ## PARAMETERS
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVirtualMachineId
-List of Sql VM Resource IDs
+Daftar ID Sumber Daya VM Sql
 
 ```yaml
 Type: System.String[]
@@ -172,8 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SqlvMGroupName
-SQL grup mesin virtual.
+### -SqlVMGroupName
+SQL nama grup mesin virtual.
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -SqlVMGroupObject
-SQL grup mesin virtual.
+SQL objek Grup mesin virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.SqlVirtualMachine.SqlVirtualMachine.Model.AzureSqlVMGroupModel
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

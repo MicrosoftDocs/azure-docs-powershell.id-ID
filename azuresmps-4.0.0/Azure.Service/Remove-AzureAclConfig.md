@@ -4,16 +4,16 @@ ms.assetid: 915CBA29-5A58-4A5D-9F02-976CB76D4800
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 5f505496c7abaff57c2c15d7c8a702e9c74c39df
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423203"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142094032"
 ---
 # Remove-AzureAclConfig
 
 ## SYNOPSIS
-Menghapus objek konfigurasi ACL dari konfigurasi komputer virtual Azure.
+Menghapus objek konfigurasi ACL dari konfigurasi mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Remove-AzureAclConfig [-EndpointName] <String> -VM <IPersistentVM> [-Profile <Az
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureAclConfig** menghapus objek konfigurasi daftar kontrol akses (ACL, Access Control List) dari konfigurasi komputer virtual Azure.
+Cmdlet **Remove-AzureAclConfig** menghapus objek konfigurasi daftar kontrol akses (ACL) dari konfigurasi mesin virtual Azure.
 
 ## EXAMPLES
 
@@ -34,15 +34,15 @@ Cmdlet **Remove-AzureAclConfig** menghapus objek konfigurasi daftar kontrol akse
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "VirtualMachine07" | Remove-AzureAclConfig -EndpointName "Web" | Update-AzureVM
 ```
 
-Perintah ini mendapatkan mesin virtual bernama VirtualMachine07 dalam layanan yang bernama ContosoService menggunakan cmdlet **Get-AzureVM.**
-Perintah melewati objek itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet tersebut menghapus konfigurasi ACL untuk titik akhir yang bernama Web.
-Perintah itu menyampaikan hasilnya ke cmdlet **Update-AzureVM,** yang memperbarui komputer virtual.
+Perintah ini mendapatkan mesin virtual bernama VirtualMachine07 dalam layanan bernama ContosoService dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati objek tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet tersebut menghapus konfigurasi ACL untuk titik akhir bernama Web.
+Perintah meneruskan hasil ke cmdlet **Update-AzureVM** , yang memperbarui mesin virtual.
 
 ## PARAMETERS
 
 ### -EndpointName
-Menentukan nama titik akhir yang cmdlet ini hapus konfigurasi ACL.
+Menentukan nama titik akhir dari mana cmdlet ini menghapus konfigurasi ACL.
 
 ```yaml
 Type: String
@@ -57,16 +57,16 @@ Accept wildcard characters: False
 ```
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan mesin virtual tempat cmdlet menghapus konfigurasi ACL.
+Menentukan mesin virtual tempat cmdlet ini menghapus konfigurasi ACL.
 
 ```yaml
 Type: IPersistentVM
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -141,10 +141,10 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureVM](./Get-AzureVM.md)
 
-[New-AzureAclConfig](./New-AzureAclConfig.md)
+[AzureAclConfig Baru](./New-AzureAclConfig.md)
 
 [Set-AzureAclConfig](./Set-AzureAclConfig.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

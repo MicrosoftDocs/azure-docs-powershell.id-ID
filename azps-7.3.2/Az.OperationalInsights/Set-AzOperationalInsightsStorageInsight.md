@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsStorageInsight.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/Set-AzOperationalInsightsStorageInsight.md
-ms.openlocfilehash: 0604d1a97c6b56adf1b379c33adb0babe79ab841
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1069ea9469cc4b90d3ca83757a259ddbbebcb6d8
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140184907"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142211671"
 ---
 # Set-AzOperationalInsightsStorageInsight
 
 ## SYNOPSIS
-Memperbarui Storage Insight.
+Memperbarui wawasan Storage.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/set-azoperationalinsightsstorageinsight) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,30 +40,30 @@ Set-AzOperationalInsightsStorageInsight [-Workspace] <PSWorkspace> [-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzOperationalInsightsStorageInsight** mengubah konfigurasi layanan Storage Insight.
+Cmdlet **Set-AzOperationalInsightsStorageInsight** mengubah konfigurasi wawasan Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Modify a Storage Insight by name
+### Contoh 1: Memodifikasi Storage Insight menurut nama
 ```
 PS C:\>Set-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "MyWorkspace" -Name "MyStorageInsight" -Tables @("WADWindowsEventLogsTable")
 ```
 
-Perintah ini mengubah tabel yang dibaca oleh Storage bernama MyStorageInsight.
+Perintah ini mengubah tabel yang dibaca oleh Storage Insight bernama MyStorageInsight.
 
-### Contoh 2: Mengubah Storage Insight dengan menggunakan objek ruang kerja
+### Contoh 2: Memodifikasi Storage Insight menggunakan objek ruang kerja
 ```
 PS C:\>$Workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosoResourceGroup" -Name "MyWorkspace"
 
 PS C:\>Set-AzOperationalInsightsStorageInsight -Workspace $Workspace -Name "MyStorageInsight" -Containers @("wad-iis-logfiles")
 ```
 
-Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam $Workspace variabel.
-Perintah kedua mengubah wadah yang darinya wawasan Storage bernama MyStorageInsight dibaca.
+Perintah pertama menggunakan cmdlet Get-AzOperationalInsightsWorkspace untuk mendapatkan ruang kerja bernama MyWorkspace, lalu menyimpannya dalam variabel $Workspace.
+Perintah kedua mengubah wadah tempat Storage Insight bernama MyStorageInsight dibaca.
 
 ## PARAMETERS
 
-### -Wadah
+### -Kontainer
 Menentukan daftar wadah yang menyediakan data.
 
 ```yaml
@@ -76,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -106,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama suatu Storage Insight.
+Menentukan nama Storage Insight.
 
 ```yaml
 Type: System.String
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-ID Azure Resource Manager lengkap dari akun penyimpanan.
+ID lengkap Azure Resource Manager akun penyimpanan.
 
 ```yaml
 Type: System.String
@@ -210,7 +213,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Menentukan nama ruang kerja.
 
 ```yaml
@@ -226,7 +229,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -241,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -256,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

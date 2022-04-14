@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.aks/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Set-AzureRmAks.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Set-AzureRmAks.md
-ms.openlocfilehash: 232de7568c326895bb6d460d9726b7d80e0e0bd5ff15cf531289e8166a11e8d6
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b5d3248c81507abf6092aa4354691975c4b4bc13
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851485"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144537"
 ---
 # Set-AzureRmAks
 
 ## SYNOPSIS
-Memperbarui atau membuat kluster Grup Terkelola.
+Memperbarui atau membuat kluster Kubernetes terkelola.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -46,7 +46,7 @@ Set-AzureRmAks [-Id] <String> [-Location <String>] [-AdminUserName <String>] [-D
 ```
 
 ## DESCRIPTION
-Memperbarui atau membuat kluster Grup Terkelola.
+Memperbarui atau membuat kluster Kubernetes terkelola.
 
 ## EXAMPLES
 
@@ -55,12 +55,12 @@ Memperbarui atau membuat kluster Grup Terkelola.
 PS C:\> Get-AzureRmAks -ResourceGroupName group -Name myCluster | Set-AzureRmAks -NodeCount 5
 ```
 
-Atur jumlah node dalam kluster Kjadwal ke 5.
+Atur jumlah node dalam kluster Kubernetes menjadi 5.
 
 ## PARAMETERS
 
 ### -AdminUserName
-Nama pengguna untuk Komputer Virtual Linux.
+Nama pengguna untuk Virtual Machines Linux.
 
 ```yaml
 Type: System.String
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClientIdAndSecret
-Id klien dan rahasia klien terkait dengan AAD / prinsipal layanan.
+Id klien dan rahasia klien yang terkait dengan aplikasi AAD / prinsipal layanan.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -164,8 +164,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Kversion
-Versi File yang digunakan untuk membuat kluster.
+### -KubernetesVersion
+Versi Kubernetes yang digunakan untuk membuat kluster.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Azure untuk kluster tersebut.
+Lokasi Azure untuk kluster.
 Default ke lokasi grup sumber daya.
 
 ```yaml
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-K nodes managed cluster Name.
+Nama kluster terkelola Kubernetes.
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeOsDiskSize
-Jumlah simpul default untuk kolam renang simpul.
+Jumlah node default untuk kumpulan simpul.
 
 ```yaml
 Type: System.Int32
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeVmSize
-Ukuran Komputer Virtual.
+Ukuran Mesin Virtual.
 
 ```yaml
 Type: System.String
@@ -270,9 +270,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ValueKeyValue
-Nilai file kunci DEFAULT atau jalur file kunci.
-Default untuk {HOME}/.comments/id_rsa.pub.
+### -SshKeyValue
+Nilai file kunci SSH atau jalur file kunci.
+Default ke {HOME}/.ssh/id_rsa.pub.
 
 ```yaml
 Type: System.String
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,18 +333,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 Parameter: InputObject (ByValue)
 
 ### System.String
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 
 ## CATATAN
 

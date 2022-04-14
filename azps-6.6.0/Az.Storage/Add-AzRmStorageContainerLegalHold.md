@@ -6,23 +6,23 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Add-AzRmStorageContainerLegalHold.md
 ms.openlocfilehash: dd96a2db2b576d790e1203944113fd3c02bf3eae
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140066015"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903029"
 ---
 # Add-AzRmStorageContainerLegalHold
 
 ## SYNOPSIS
-Menambahkan tag penyimpanan hukum ke Storage wadah blob
+Menambahkan tag penahanan legal ke wadah blob Storage
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/add-azrmstoragecontainerlegalhold) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/add-azrmstoragecontainerlegalhold) untuk informasi terbaru.
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Add-AzRmStorageContainerLegalHold [-ResourceGroupName] <String> [-StorageAccountName] <String> -Name <String>
  -Tag <String[]> [-AllowProtectedAppendWriteAll <Boolean>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
@@ -44,36 +44,36 @@ Add-AzRmStorageContainerLegalHold -Container <PSContainer> -Tag <String[]>
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzRmStorageContainerLegalHold** menambahkan tag penyimpanan hukum ke Storage blob
+Cmdlet **Add-AzRmStorageContainerLegalHold** menambahkan tag penahanan legal ke wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan tag perlindungan hukum ke wadah Storage blob dengan nama Storage dan nama wadah akun
+### Contoh 1: Menambahkan tag penahanan legal ke wadah blob Storage dengan nama akun dan nama kontainer Storage
 ```
 PS C:\>Add-AzRmStorageContainerLegalHold -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -Tag  tag1,tag2 -AllowProtectedAppendWriteAll $true
 ```
 
-Perintah ini menambahkan tag perlindungan hukum ke wadah blob Storage dengan nama akun Storage dan nama wadah, lalu mengatur AllowProtectedAppendWriteSemua untuk mengizinkan penambahan blok baru ke penambahan atau blok blob.
+Perintah ini menambahkan tag penahanan legal ke wadah blob Storage dengan nama akun Storage dan nama kontainer, dan atur AllowProtectedAppendWriteAll sebagai true untuk memungkinkan penambahan blok baru untuk menambahkan atau memblokir blob.
 
-### Contoh 2: Menambahkan tag perlindungan hukum ke wadah Storage blob dengan Storage objek akun dan nama wadah
+### Contoh 2: Menambahkan tag penahanan legal ke wadah blob Storage dengan objek akun Storage dan nama kontainer
 ```
 PS C:\>$accountObject = Get-AzStorageAccount -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount"
 PS C:\>Add-AzRmStorageContainerLegalHold -StorageAccount $accountObject -ContainerName "myContainer"  -Tag  tag1
 ```
 
-Perintah ini menambahkan tag perlindungan hukum ke wadah Storage blob dengan Storage objek akun dan nama wadah.
+Perintah ini menambahkan tag penahanan legal ke wadah blob Storage dengan objek akun Storage dan nama kontainer.
 
-### Contoh 3: Add legal hold tags to all Storage blob containers in a Storage account with pipeline
+### Contoh 3: Menambahkan tag penahanan legal ke semua wadah blob Storage dalam akun Storage dengan pipeline
 ```
 PS C:\>Get-AzStorageContainer -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" | Add-AzRmStorageContainerLegalHold -Tag  tag1,tag2,tag3
 ```
 
-Perintah ini menambahkan tag perlindungan hukum ke Storage blob dalam akun Storage dengan saluran.
+Perintah ini menambahkan tag penahanan legal ke semua wadah blob Storage dalam akun Storage dengan pipeline.
 
 ## PARAMETERS
 
-### -AllowProtectedAppendWriteAll
-Ketika diaktifkan, blok baru dapat ditulis ke 'Appened dan Block Blob' dengan tetap mempertahankan perlindungan dan kepatuhan pada kemampuan. Hanya blok baru yang bisa ditambahkan dan setiap blok yang sudah ada tidak bisa diubah atau dihapus.
+### -AllowProtectedAppendWriteSemua
+Saat diaktifkan, blok baru dapat ditulis ke 'Blob Disetujui dan Blokir' sambil mempertahankan perlindungan dan kepatuhan kekebalan tubuh. Hanya blok baru yang dapat ditambahkan dan blok yang sudah ada tidak dapat diubah atau dihapus.
 
 ```yaml
 Type: System.Boolean
@@ -87,8 +87,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Container
-Storage wadah objek
+### -Kontainer
+objek kontainer Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSContainer
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSStorageAccount
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: System.String
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Container LegalHold Tag
+Container LegalHold Tags
 
 ```yaml
 Type: System.String[]
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

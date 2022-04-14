@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrVMNicIPConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrVMNicIPConfig.md
 ms.openlocfilehash: 352aed3439d6f37e8dcf1fabbf73cd368f4fd3ea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139932829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142043921"
 ---
 # New-AzRecoveryServicesAsrVMNicIPConfig
 
 ## SYNOPSIS
-Membuat konfigurasi IP ASR NIC yang berisi detail konfigurasi failover dan test failover untuk setiap IP Config (Primary dan Secondary) dari NIC.
+Membuat konfigurasi IP ASR NIC yang berisi failover dan menguji detail konfigurasi failover untuk setiap IP Config (Primer dan Sekunder) NIC.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvmnicipconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrvmnicipconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-AzRecoveryServicesAsrVMNicIPConfig -IpConfigName <String> [-IsSelectedForFai
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrVMNicIPConfig** membuat objek IP Config yang berisi detail failover dan test failover untuk setiap IP Config (Primary dan Secondary) dari NIC. This further should be passed as a parameter to ** New-AzRecoveryServicesAsrVMNicConfig** for setting these values in the ASR NIC Config Object.
+Cmdlet **New-AzRecoveryServicesAsrVMNicIPConfig** membuat objek IP Config yang berisi failover dan menguji detail failover untuk setiap IP Config (Primer dan Sekunder) NIC. Ini lebih lanjut harus dilewatkan sebagai parameter ke ** New-AzRecoveryServicesAsrVMNicConfig** untuk mengatur nilai ini di Objek NIC Config ASR.
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ PS C:\> $ipConfig = New-AzRecoveryServicesAsrVMNicIPConfig -IpConfigName "ipconf
 -TfoSubnetName "default" -RecoveryStaticIPAddress "10.1.40.10" -TfoStaticIPAddress "10.3.4.33"
 ```
 
-Membuat objek PSIPConfigInputDetails dengan pengaturan jaringan failover dan test failover yang dikonfigurasi untuk ip config of a NIC.
+Membuat objek PSIPConfigInputDetails dengan failover dan menguji pengaturan jaringan failover yang dikonfigurasi untuk konfigurasi IP NIC .
 
 ## PARAMETERS
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpConfigName
-Specify the IP config name.
+Tentukan nama konfigurasi IP.
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSelectedForFailover
-Menentukan apakah konfigurasi IP yang sudah ada dipilih untuk menguji failover/failover.
+Menentukan apakah konfigurasi IP yang sudah ada dipilih untuk uji failover/failover.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryLBBackendAddressPoolId
-Menentukan NOMOR kolam renang alamat backend untuk konfigurasi IP pemulihan.
+Menentukan ID kumpulan alamat backend untuk konfigurasi IP pemulihan.
 
 ```yaml
 Type: System.String[]
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoLBBackendAddressPoolId
-Menentukan NOMOR kolam renang alamat backend untuk konfigurasi IP failover uji.
+Menentukan ID kumpulan alamat backend untuk konfigurasi IP failover uji.
 
 ```yaml
 Type: System.String[]
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoPublicIPAddressId
-Menentukan ID alamat IP publik yang terkait dengan konfigurasi IP failover uji.
+Menentukan ID alamat IP publik yang terkait dengan konfigurasi IP failover uji coba.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -TfoStaticIPAddress
-Menentukan alamat IP uji konfigurasi IP failover.
+Menentukan alamat IP dari konfigurasi IP failover uji coba.
 
 ```yaml
 Type: System.String
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -242,11 +242,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

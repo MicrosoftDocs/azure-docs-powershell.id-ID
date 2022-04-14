@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.deploymentmanage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerStep.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DeploymentManager/DeploymentManager/help/New-AzDeploymentManagerStep.md
-ms.openlocfilehash: a20ca19b800be70a63fc59e26d3def68ffc46654
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ebac049e1eca901a6ee092e7e5dd5a0ab5d6a760
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001086"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142070869"
 ---
 # New-AzDeploymentManagerStep
 
 ## SYNOPSIS
 Membuat langkah.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.deploymentmanager/new-azdeploymentmanagerstep) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,10 +43,10 @@ New-AzDeploymentManagerStep -ResourceGroupName <String> -Name <String> -Location
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzDeploymentManagerStep** membuat langkah penyebaran yang bisa dirujuk dalam peluncuran.
-Tentukan Nama *,* *ResourceGroupName, dan* properti yang diperlukan.
+Cmdlet **New-AzDeploymentManagerStep** membuat langkah penyebaran yang dapat dirujuk dalam peluncuran.
+Tentukan *Nama*, *ResourceGroupName* dan properti yang diperlukan.
 
-Anda dapat mengubah objek yang dikembalikan secara lokal, lalu menerapkan perubahan ke langkah menggunakan cmdlet Set-AzDeploymentManagerStep cmdlet.
+Anda bisa mengubah objek yang dikembalikan secara lokal lalu menerapkan perubahan ke langkah dengan menggunakan cmdlet Set-AzDeploymentManagerStep.
 
 ## EXAMPLES
 
@@ -52,7 +55,7 @@ Anda dapat mengubah objek yang dikembalikan secara lokal, lalu menerapkan peruba
 PS C:\> New-AzDeploymentManagerStep -ResourceGroupName ContosoResourceGroup -Name ContosoService1WaitStep -Location "Central US" -Duration PT20M
 ```
 
-Membuat langkah di ContosoResourceGroup dengan nama ContosoService1WaitStep dengan AS Tengah sebagai lokasi sumber daya. Properti Duration menyediakan durasi peluncuran akan menunggu sebelum menjalankan langkah berikutnya.
+Membuat langkah di ContosoResourceGroup dengan nama ContosoService1WaitStep dengan AS Tengah sebagai lokasi sumber daya. Properti Durasi menyediakan durasi peluncuran akan menunggu sebelum menjalankan langkah berikutnya.
 
 ## PARAMETERS
 
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -194,7 +197,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

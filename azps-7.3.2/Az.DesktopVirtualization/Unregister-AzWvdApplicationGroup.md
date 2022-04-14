@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.desktopvirtualiz
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Unregister-AzWvdApplicationGroup.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DesktopVirtualization/help/Unregister-AzWvdApplicationGroup.md
-ms.openlocfilehash: 3fead6d08c735276657b81e3c647ca8612ab63f5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 9fbe166f059fc62b1f74a6e1353cd7deb5378ddf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394431"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142070743"
 ---
 # Unregister-AzWvdApplicationGroup
 
 ## SYNOPSIS
-Pisahkan pendaftaran Windows aplikasi desktop virtual Anda.
+Batalkan pendaftaran grup aplikasi desktop virtual Windows.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.desktopvirtualization/unregister-azwvdapplicationgroup) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Unregister-AzWvdApplicationGroup -ApplicationGroupPath <String> -ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Pisahkan pendaftaran Windows aplikasi desktop virtual Anda.
+Batalkan pendaftaran grup aplikasi desktop virtual Windows.
 
 ## EXAMPLES
 
-### Contoh 1: Pisahkan pendaftaran Windows Grup Aplikasi Desktop Virtual
+### Contoh 1: Membatalkan pendaftaran Windows Grup Aplikasi Desktop Virtual
 ```powershell
 PS C:\> Unregister-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName `
                                     -WorkspaceName WorkspaceName `
@@ -41,7 +44,7 @@ Location   Name                 Type
 eastus     WorkspaceName Microsoft.DesktopVirtualization/workspaces
 ```
 
-Perintah ini membatalkan pendaftaran Windows Grup Aplikasi Desktop Virtual ke Ruang Kerja.
+Perintah ini membatalkan pendaftaran Grup Aplikasi Desktop Virtual Windows ke Ruang Kerja.
 
 ## PARAMETERS
 
@@ -105,7 +108,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

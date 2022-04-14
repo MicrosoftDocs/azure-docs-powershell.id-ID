@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/new-azof
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzOffice365PolicyProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/New-AzOffice365PolicyProperty.md
-ms.openlocfilehash: 4c95ed6e5d1b16dfceca44ee051bb6ad24258cfa
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2aed72b32c62e21320d2172b686af3e287e2b14c
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140392590"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142108259"
 ---
 # New-AzOffice365PolicyProperty
 
 ## SYNOPSIS
-Tentukan kebijakan Office 365 terobosan lalu lintas baru untuk digunakan dengan situs Perlengkapan Virtual.
+Tentukan kebijakan terpisah lalu lintas Office 365 baru untuk digunakan dengan situs Peralatan Virtual.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/new-azoffice365policyproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzOffice365PolicyProperty [-Allow] [-Optimize] [-Default] [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Perintah New-AzOffice365PolicyProperties menetapkan kebijakan Office 365 terobosan yang akan digunakan dengan situs Alat Virtual. 
+Perintah New-AzOffice365PolicyProperties menentukan kebijakan diskusi terpisah Office 365 yang akan digunakan dengan situs Peralatan Virtual. 
 
 ## EXAMPLES
 
@@ -34,12 +37,12 @@ Perintah New-AzOffice365PolicyProperties menetapkan kebijakan Office 365 terobos
 PS C:\> $o365Policy = New-AzOffice365PolicyProperty -Allow -Optimize 
 ```
 
-Membuat Office 365 kebijakan terobosan lalu lintas untuk digunakan dengan perintah situs Perlengkapan Virtual.
+Buat Office 365 objek kebijakan terpisah lalu lintas untuk digunakan dengan perintah situs Peralatan Virtual.
 
 ## PARAMETERS
 
-### -Allow
-Terobosan lalu lintas kategori yang diizinkan.
+### -Izinkan
+Memisahkan lalu lintas kategori yang diperbolehkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -Default
-Terobosan lalu lintas kategori default.
+Memisahkan lalu lintas kategori default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Optimize
-Terobosan mengoptimalkan lalu lintas kategori.
+Breakout mengoptimalkan lalu lintas kategori.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -99,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

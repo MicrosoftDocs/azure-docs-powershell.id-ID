@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.elastic/get-azel
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDeploymentInfo.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Elastic/help/Get-AzElasticDeploymentInfo.md
-ms.openlocfilehash: 8ace258421e4304602b4bde5fcf705565fec9cf2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 806ed76a61006463e6d93648786ca1400f2bf38d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140009104"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142070401"
 ---
 # Get-AzElasticDeploymentInfo
 
 ## SYNOPSIS
-Ambil informasi terkait penyebaran awan Elastis yang terkait dengan sumber daya monitor Elastis.
+Ambil informasi terkait penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastic.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.elastic/get-azelasticdeploymentinfo) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,11 +28,11 @@ Get-AzElasticDeploymentInfo -Name <String> -ResourceGroupName <String> [-Subscri
 ```
 
 ## DESCRIPTION
-Ambil informasi terkait penyebaran awan Elastis yang terkait dengan sumber daya monitor Elastis.
+Ambil informasi terkait penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastic.
 
 ## EXAMPLES
 
-### Contoh 1: Mengambil informasi terkait penyebaran awan Elastis yang terkait dengan sumber daya monitor Elastis
+### Contoh 1: Mengambil informasi mengenai penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastic
 ```powershell
 PS C:\> Get-AzElasticDeploymentInfo -ResourceGroupName elastic-rg-3eytki -Name elastic-rhqz1v
 
@@ -38,7 +41,7 @@ DiskCapacity MemoryCapacity Status  Version
 491520       16384          Healthy 7.14.1
 ```
 
-Perintah ini mengambil informasi terkait penyebaran awan Elastis yang terkait dengan sumber daya monitor Elastis.
+Perintah ini mengambil informasi terkait penyebaran cloud Elastis yang terkait dengan sumber daya monitor Elastis.
 
 ## PARAMETERS
 
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Memantau nama sumber daya
+Pantau nama sumber daya
 
 ```yaml
 Type: System.String
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya tempat sumber daya Elastis dimiliki.
+Nama grup sumber daya tempat sumber daya Elastis berada.
 
 ```yaml
 Type: System.String
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 ID langganan Azure.
-Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-00000000000)
+Ini adalah string yang diformat GUID (misalnya 00000000-0000-0000-0000-000000000000)
 
 ```yaml
 Type: System.String[]
@@ -104,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,13 +138,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Elastis.Models.Api20200701.IDeploymentInfoResponse
+### Microsoft.Azure.PowerShell.Cmdlets.Elastic.Models.Api20200701.IDeploymentInfoResponse
 
 ## CATATAN
 

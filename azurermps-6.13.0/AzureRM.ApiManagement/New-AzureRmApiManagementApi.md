@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementApi.md
 ms.openlocfilehash: 2601635bb3fc9ac1f6886adcb2cbb971a3cf0d63
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428489"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144201"
 ---
 # New-AzureRmApiManagementApi
 
@@ -31,7 +31,7 @@ New-AzureRmApiManagementApi -Context <PsApiManagementContext> [-ApiId <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmApiManagementApi** membuat API Manajemen API Azure.
+Cmdlet **AzureRmApiManagementApi baru** membuat API azure API Management.
 
 ## EXAMPLES
 
@@ -46,8 +46,8 @@ Perintah ini membuat API bernama EchoApi dengan URL yang ditentukan.
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID API untuk dibuat.
-Jika Anda tidak menentukan parameter ini, cmdlet ini akan menghasilkan ID untuk Anda.
+Menentukan ID API yang akan dibuat.
+Jika Anda tidak menentukan parameter ini, cmdlet ini menghasilkan ID untuk Anda.
 
 ```yaml
 Type: System.String
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 
 ```yaml
 Type: Microsoft.Azure.Commands.ApiManagement.ServiceManagement.Models.PsApiManagementContext
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -140,8 +140,8 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama web API.
-Ini adalah nama publik API seperti yang muncul pada portal pengembang dan admin.
+Menentukan nama API web.
+Ini adalah nama publik API seperti yang muncul di portal admin dan pengembang.
 
 ```yaml
 Type: System.String
@@ -155,9 +155,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur API web, yang merupakan bagian terakhir DARI URL publik API dan terkait dengan bidang akhiran URL API Web di portal admin.
-URL ini digunakan oleh konsumen API untuk mengirimkan permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
+### -Jalur
+Menentukan jalur API web, yang merupakan bagian terakhir dari URL publik API dan terkait dengan bidang akhiran URL API Web di portal admin.
+URL ini digunakan oleh konsumen API untuk mengirim permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductIds
-Menentukan array IM produk yang akan ditambahkan API baru.
+Menentukan array ID produk untuk menambahkan API baru.
 
 ```yaml
 Type: System.String[]
@@ -187,10 +187,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocols
-Menentukan array protokol WEB API.
-Nilai valid adalah http, https.
-Berikut adalah protokol web yang menjadi tempat API tersedia.
+### -Protokol
+Menentukan array protokol API web.
+Nilai yang valid adalah http, https.
+Ini adalah protokol web di mana API disediakan.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -207,9 +207,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-Menentukan URL layanan web yang memperlihatkan API.
-URL ini hanya digunakan oleh Manajemen API Azure, dan tidak dibuat publik.
-URL harus berisi satu hingga 2000 karakter.
+Menentukan URL layanan web yang mengekspos API.
+URL ini hanya digunakan oleh Azure API Management, dan tidak diumumkan ke publik.
+URL harus panjangnya satu hingga 2000 karakter.
 
 ```yaml
 Type: System.String
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -276,13 +276,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Export-AzureRmApiManagementApi](./Export-AzureRmApiManagementApi.md)
+[Ekspor-AzureRmApiManagementApi](./Export-AzureRmApiManagementApi.md)
 
 [Get-AzureRmApiManagementApi](./Get-AzureRmApiManagementApi.md)
 
-[Import-AzureRmApiManagementApi](./Import-AzureRmApiManagementApi.md)
+[Impor-AzureRmApiManagementApi](./Import-AzureRmApiManagementApi.md)
 
-[Remove-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
+[Hapus-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
 
 [Set-AzureRmApiManagementApi](./Set-AzureRmApiManagementApi.md)
 

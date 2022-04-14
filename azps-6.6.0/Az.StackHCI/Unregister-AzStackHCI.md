@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StackHCI/help/Unregister-AzStackHCI.md
 ms.openlocfilehash: 2209526ea37aae88fd4b5529bccbefc1966b6582
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140131083"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141903087"
 ---
 # Unregister-AzStackHCI
 
 ## SYNOPSIS
-Unregister-AzStackHCI menghapus sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
-Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
+Unregister-AzStackHCI menghapus sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
+Informasi terdaftar yang tersedia di kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.stackhci/unregister-azstackhci) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.stackhci/unregister-azstackhci) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +32,8 @@ Unregister-AzStackHCI [[-SubscriptionId] <String>] [[-ResourceName] <String>] [[
 ```
 
 ## DESCRIPTION
-Unregister-AzStackHCI menghapus sumber daya awan Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
-Informasi terdaftar yang tersedia pada kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
+Unregister-AzStackHCI menghapus sumber daya cloud Microsoft.AzureStackHCI yang mewakili kluster lokal dan membatalkan pendaftaran kluster lokal dengan Azure.
+Informasi terdaftar yang tersedia di kluster digunakan untuk membatalkan pendaftaran kluster jika tidak ada parameter yang lolos.
 
 ## EXAMPLES
 
@@ -43,7 +43,7 @@ C:\PS\>Unregister-AzStackHCI
 Result: Success
 ```
 
-Melakukan faktur pada salah satu node kluster
+Memanggil di salah satu simpul kluster
 
 ### CONTOH 2
 ```powershell
@@ -51,7 +51,7 @@ C:\PS\>Unregister-AzStackHCI -ComputerName ClusterNode1
 Result: Success
 ```
 
-Melakukan faktur dari simpul manajemen
+Memanggil dari simpul manajemen
 
 ### CONTOH 3
 ```powershell
@@ -59,7 +59,7 @@ C:\PS\>Unregister-AzStackHCI -SubscriptionId "12a0f531-56cb-4340-9501-257726d741
 Result: Success
 ```
 
-Melakukan invoking dari WAC
+Memanggil dari WAC
 
 ### CONTOH 4
 ```powershell
@@ -67,13 +67,13 @@ C:\PS\>Unregister-AzStackHCI -SubscriptionId "12a0f531-56cb-4340-9501-257726d741
 Result: Success
 ```
 
-Melakukan permintaan dengan semua parameter
+Invoking dengan semua parameter
 
 ## PARAMETERS
 
 ### -AccountId
 Menentukan token akses ARM.
-Menentukan hal ini bersama dengan ArmAccessToken dan GraphAccessToken akan menghindari masuk interaktif Azure.
+Menentukan ini bersama dengan ArmAccessToken dan GraphAccessToken akan menghindari masuk interaktif Azure.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 
 ### -ArmAccessToken
 Menentukan token akses ARM.
-Menentukan hal ini bersama dengan GraphAccessToken dan AccountId akan menghindari masuk interaktif Azure.
+Menentukan ini bersama dengan GraphAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputerName
-Menentukan salah satu node kluster dalam kluster lokal yang sedang didaftarkan ke Azure.
+Menentukan salah satu simpul kluster di kluster lokal yang sedang didaftarkan ke Azure.
 
 ```yaml
 Type: System.String
@@ -118,9 +118,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Menentukan kredensial untuk ComputerName.
-Default adalah pengguna saat ini yang menjalankan Cmdlet.
+Defaultnya adalah pengguna saat ini menjalankan Cmdlet.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOnlyAzureArcServer
-Menentukan parameter ini $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan pendaftaran Azure Stack HCI tidak akan diubah.
+Menentukan parameter ini ke $true hanya akan membatalkan pendaftaran node kluster dengan Arc untuk server dan registrasi Azure Stack HCI tidak akan diubah.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnvironmentName
-Menentukan Azure Environment.
+Menentukan Lingkungan Azure.
 Defaultnya adalah AzureCloud.
 Nilai yang valid adalah AzureCloud, AzureChinaCloud, AzureUSGovernment, AzureGermanCloud, AzurePPE
 
@@ -166,8 +166,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menentukan bahwa pembatalan pendaftaran akan terus bahkan jika kami tidak dapat menghapus ekstensi Arc di simpul.
+### -Paksa
+Menentukan bahwa unregistration harus dilanjutkan meskipun kami tidak dapat menghapus ekstensi Arc pada simpul.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -GraphAccessToken
-Menentukan token Graph akses.
+Menentukan token akses Graph.
 Menentukan hal ini bersama dengan ArmAccessToken dan AccountId akan menghindari masuk interaktif Azure.
 
 ```yaml
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kawasan
-Menentukan Kawasan sumber daya yang dibuat di Azure.
+Menentukan Kawasan tempat sumber daya dibuat di Azure.
 
 ```yaml
 Type: System.String
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama Grup Sumber Daya Azure.
-Jika tidak ditentukan \<LocalClusterName\>,rg akan digunakan sebagai nama grup sumber daya.
+Menentukan nama Azure Resource Group.
+Jika tidak ditentukan \<LocalClusterName\>-rg akan digunakan sebagai nama grup sumber daya.
 
 ```yaml
 Type: System.String
@@ -229,8 +229,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceName
-Menentukan nama sumber daya dari sumber daya yang dibuat di Azure.
-Jika tidak ditentukan, nama kluster lokal akan digunakan.
+Menentukan nama sumber daya sumber daya yang dibuat di Azure.
+Jika tidak ditentukan, nama kluster lokal digunakan.
 
 ```yaml
 Type: System.String
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

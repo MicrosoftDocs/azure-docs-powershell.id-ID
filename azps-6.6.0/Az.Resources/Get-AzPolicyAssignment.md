@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzPolicyAssignment.md
 ms.openlocfilehash: 9cbfa326650fc899482182354fb239d78d95abad
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140247157"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042751"
 ---
 # Get-AzPolicyAssignment
 
@@ -19,7 +19,7 @@ ms.locfileid: "140247157"
 Mendapatkan penetapan kebijakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azpolicyassignment) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azpolicyassignment) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-AzPolicyAssignment [-Name <String>] [-Scope <String>] [-PolicyDefinitionId <
  [-Pre] [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### IncludeDescendentParameterSet
+### SertakanDescendentParameterSet
 ```
 Get-AzPolicyAssignment [-Scope <String>] [-IncludeDescendent] [-ApiVersion <String>] [-Pre]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -48,17 +48,17 @@ Get-AzPolicyAssignment -Id <String> [-PolicyDefinitionId <String>] [-ApiVersion 
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzPolicyAssignment** mendapatkan semua penetapan kebijakan atau penugasan tertentu.
-Identifikasi penetapan kebijakan untuk mendapatkan menurut nama dan lingkup atau menurut ID.
+Cmdlet **Get-AzPolicyAssignment** mendapatkan semua penetapan kebijakan atau tugas tertentu.
+Identifikasi penetapan kebijakan untuk mendapatkan berdasarkan nama dan lingkup atau menurut ID.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua penetapan kebijakan
+### Contoh 1: Dapatkan semua penetapan kebijakan
 ```
 PS C:\> Get-AzPolicyAssignment
 ```
 
-Perintah ini akan memberi semua penetapan kebijakan.
+Perintah ini mendapatkan semua penetapan kebijakan.
 
 ### Contoh 2: Mendapatkan penetapan kebijakan tertentu
 ```
@@ -66,16 +66,16 @@ PS C:\> $ResourceGroup = Get-AzResourceGroup -Name 'ResourceGroup11'
 PS C:\> Get-AzPolicyAssignment -Name 'PolicyAssignment07' -Scope $ResourceGroup.ResourceId
 ```
 
-Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya di $ResourceGroup sumber daya.
-Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment07 untuk lingkup yang diidentifikasi oleh properti **ResourceId** $ResourceGroup identifikasi.
+Perintah pertama mendapatkan grup sumber daya bernama ResourceGroup11 dengan menggunakan cmdlet Get-AzResourceGroup dan menyimpannya dalam variabel $ResourceGroup.
+Perintah kedua mendapatkan penetapan kebijakan bernama PolicyAssignment07 untuk lingkup yang diidentifikasi properti **ResourceId** $ResourceGroup.
 
-### Contoh 3: Menetapkan semua penetapan kebijakan ke grup manajemen
+### Contoh 3: Mendapatkan semua penetapan kebijakan yang ditetapkan ke grup manajemen
 ```
 PS C:\> $mgId = 'myManagementGroup'
 PS C:\> Get-AzPolicyAssignment -Scope '/providers/Microsoft.Management/managementgroups/$mgId'
 ```
 
-Perintah pertama menentukan ID grup manajemen untuk kueri.
+Perintah pertama menentukan ID grup manajemen ke kueri.
 Perintah kedua mendapatkan semua penetapan kebijakan yang ditetapkan ke grup manajemen dengan ID 'myManagementGroup'.
 
 ## PARAMETERS
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk penetapan kebijakan yang akan dapatkan cmdlet ini.
+Menentukan ID sumber daya yang sepenuhnya memenuhi syarat untuk penetapan kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeDescendent
-Menyebabkan daftar penetapan kebijakan yang dikembalikan menyertakan semua penetapan yang terkait dengan lingkup tertentu, termasuk yang dari lingkup dan yang dari lingkup turun.
+Menyebabkan daftar penetapan kebijakan yang dikembalikan menyertakan semua tugas yang terkait dengan lingkup tertentu, termasuk yang berasal dari lingkup leluhur dan yang berasal dari lingkup turunan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penetapan kebijakan yang akan cmdlet dapatkan.
+Menentukan nama penetapan kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyDefinitionId
-Menentukan ID definisi kebijakan penetapan kebijakan yang akan dapatkan cmdlet ini.
+Menentukan ID definisi kebijakan dari penetapan kebijakan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Cmdlet ini mempertimbangkan versi API prari release ketika cmdlet menentukan versi mana yang akan digunakan secara otomatis.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup penerapan kebijakan untuk penetapan yang akan dapatkan cmdlet ini.
+Menentukan lingkup di mana kebijakan diterapkan untuk penetapan yang didapat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

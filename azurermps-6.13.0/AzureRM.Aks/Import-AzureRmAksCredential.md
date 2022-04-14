@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.aks/i
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Import-AzureRmAksCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Aks/Commands.Aks/help/Import-AzureRmAksCredential.md
-ms.openlocfilehash: 72637c13c277e7048fa0eceeee3f4b2200c34f38d7dd636ee28efa878d28dd3a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: b65ac736be5ee5f2f0592bcb2fdc84c873361f9f
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140865251"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144590"
 ---
 # Import-AzureRmAksCredential
 
 ## SYNOPSIS
-Import and merge Kubectl config for a managed K nodes Cluster.
+Mengimpor dan menggabungkan konfigurasi Kubectl untuk Kluster Kubernetes yang dikelola.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,11 +40,11 @@ Import-AzureRmAksCredential [-Id] <String> [-Admin] [-ConfigPath <String>] [-For
 ```
 
 ## DESCRIPTION
-Import and merge Kubectl config for a managed K nodes Cluster.
+Mengimpor dan menggabungkan konfigurasi Kubectl untuk Kluster Kubernetes yang dikelola.
 
 ## EXAMPLES
 
-### Mengimpor dan menggabungkan Kubectl config
+### Mengimpor dan menggabungkan konfigurasi Kubectl
 ```
 PS C:\> Import-AzureRmAksCredential -ResourceGroupName group -Name myCluster
 ```
@@ -52,7 +52,7 @@ PS C:\> Import-AzureRmAksCredential -ResourceGroupName group -Name myCluster
 ## PARAMETERS
 
 ### -Admin
-Dapatkan kubectl config 'clusterAdmin' dan bukan 'clusterUser' default.
+Dapatkan 'clusterAdmin' kubectl config dan bukan default 'clusterUser'.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigPath
-File kubectl config untuk membuat atau memperbarui.
-Gunakan '-' untuk mencetak YAML sebagai gantinya. Default: %Home%/.kube/config.
+Berkas konfigurasi kubectl untuk dibuat atau diperbarui.
+Gunakan '-' untuk mencetak YAML ke stdout. Default: %Home%/.kube/config.
 
 ```yaml
 Type: System.String
@@ -97,8 +97,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Impor K config meskipun default
+### -Paksa
+Impor konfigurasi Kubernetes meskipun merupakan default
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Id kluster Grup terkelola
+Id dari kluster Kubernetes yang dikelola
 
 ```yaml
 Type: System.String
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek PSK terverifikasi, biasanya melewati saluran.
+Sebuah objek PSKubernetesCluster, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama kluster Grup terkelola Anda
+Nama kluster Kubernetes terkelola Anda
 
 ```yaml
 Type: System.String
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,11 +219,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Aks.Models.PSK azuresCluster
+### Microsoft.Azure.Commands.Aks.Models.PSKubernetesCluster
 Parameter: InputObject (ByValue)
 
 ### System.String

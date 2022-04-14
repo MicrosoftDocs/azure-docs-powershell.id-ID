@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncident.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/SecurityInsights/SecurityInsights/help/New-AzSentinelIncident.md
 ms.openlocfilehash: b79cb455ce96e592e165aead8d6e7e400fb85694
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140329037"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142041257"
 ---
 # New-AzSentinelIncident
 
@@ -18,7 +18,7 @@ ms.locfileid: "140329037"
 Membuat Insiden.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincident) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.securityinsights/new-azsentinelincident) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,8 +32,8 @@ New-AzSentinelIncident -ResourceGroupName <String> -WorkspaceName <String> [-Inc
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSentinelIncident membuat** Insiden di ruang kerja yang ditentukan.
-Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Windows PowerShell variabel untuk mengontrol apakah cmdlet meminta konfirmasi Anda.
+Cmdlet **New-AzSentinelIncident** membuat Insiden di ruang kerja yang ditentukan.
+Anda dapat menggunakan variabel *Konfirmasi* parameter dan $ConfirmPreference Windows PowerShell untuk mengontrol apakah cmdlet meminta konfirmasi.
 
 ## EXAMPLES
 
@@ -42,14 +42,14 @@ Anda dapat menggunakan *perintah* Konfirmasi parameter $ConfirmPreference Window
 PS C:\> $Incident = New-AzSentinelIncident -ResourceGroupName "MyResourceGroup" -WorkspaceName "MyWorkspaceName" -Title "NewIncident" -Description "My Description" -Severity Low -Status New
 ```
 
-Contoh ini membuat **Insiden di** ruang kerja tertentu, lalu menyimpannya di $Incident otomatis.<br/><br/>
+Contoh ini membuat **Insiden** di ruang kerja tertentu, lalu menyimpannya dalam variabel $Incident.<br/><br/>
 
-*Harap diingat bahwa saat ini Anda tidak dapat menambahkan entitas ke insiden baru yang dibuat melalui otomatisasi. Artinya, Anda tidak dapat menggunakan fitur investigasi untuk insiden baru yang dibuat melalui otomatisasi. <br/> Fitur untuk menambahkan entitas ke insiden telah direncanakan dan akan ditambahkan di masa mendatang.*
+*Harap diperhatikan bahwa saat ini Anda tidak dapat menambahkan entitas ke insiden baru yang dibuat melalui otomatisasi, yang berarti Bahwa Anda tidak dapat menggunakan fitur penyelidikan untuk insiden baru yang dibuat melalui otomatisasi. <br/> Fitur untuk menambahkan entitas ke insiden direncanakan dan akan ditambahkan di masa mendatang.*
 
 ## PARAMETERS
 
 ### -ClassificationComment
-Komentar Kelas Insiden.
+Komentar Classificaiton Insiden.
 
 ```yaml
 Type: System.String
@@ -63,8 +63,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ClassificationReason
-Incident Classificaiton Reason.
+### -KlasifikasiReason
+Insiden Alasan Classificaiton.
 
 ```yaml
 Type: System.String
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Classificaton
-Incident Classificaiton.
+Insiden Classificaiton.
 
 ```yaml
 Type: System.String
@@ -232,7 +232,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama Ruang Kerja.
 
 ```yaml
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -278,11 +278,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### System.Collections.Generic.IList'1[[Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentLabel, Microsoft.Azure.PowerShell.Cmdlets.SecurityInsights, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.IList'1[[Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentLabel, Microsoft.Azure.PowerShell.Cmdlets.SecurityInsights, Version=0.1.0.0, Culture=netral, PublicKeyToken=null]]
 ### Microsoft.Azure.Commands.SecurityInsights.Models.Incidents.PSSentinelIncidentOwner
 ## OUTPUTS
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileHandle.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/Get-AzStorageFileHandle.md
 ms.openlocfilehash: 9c84a273363a3dea2eff74dbc715fdd2f7c781a7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140130759"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142039907"
 ---
 # Get-AzStorageFileHandle
 
 ## SYNOPSIS
-Mencantumkan gagang file dari file bersama, direktori file atau file.
+Mencantumkan gagang file yang dibagikan, direktori file, atau file.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/get-azstoragefilehandle) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/get-azstoragefilehandle) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Get-AzStorageFileHandle [-ShareName] <String> [[-Path] <String>] [-Recursive] [-
  [-Skip <UInt64>] [-First <UInt64>] [<CommonParameters>]
 ```
 
-### Bagikan
+### Berbagi
 ```
 Get-AzStorageFileHandle [-Share] <CloudFileShare> [[-Path] <String>] [-Recursive]
  [-ServerTimeoutPerRequest <Int32>] [-ClientTimeoutPerRequest <Int32>]
@@ -54,11 +54,11 @@ Get-AzStorageFileHandle [-File] <CloudFile> [-Recursive] [-ServerTimeoutPerReque
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageFileHandle** mencantumkan gagang file berbagi file, atau direktori file atau file.
+Cmdlet **Get-AzStorageFileHandle** mencantumkan gagang file yang dibagikan, direktori file atau file.
 
 ## EXAMPLES
 
-### Contoh 1: Urutkan semua gagang file pada berbagi file secara berulang, lalu urutkan menurut ClientIp dan OpenTime
+### Contoh 1: Cantumkan semua gagang file pada file yang dibagikan secara rekursif, dan urutkan menurut ClientIp dan OpenTime
 ```
 PS C:\>Get-AzStorageFileHandle -ShareName "mysharename" -Recursive | Sort-Object ClientIP,OpenTime 
 
@@ -74,7 +74,7 @@ HandleId    Path                  ClientIp       ClientPort OpenTime            
 
 Perintah ini mencantumkan gagang file pada berbagi file, dan mengurutkan output menurut ClientIp, lalu menurut OpenTime.
 
-### Contoh 2: 2 gagang file pertama di direktori file berulang
+### Contoh 2: Mencantumkan 2 gagang file pertama pada direktori file secara rekursif
 ```
 PS C:\>Get-AzStorageFileHandle -ShareName "mysharename" -Path 'dir1/dir2'  -Recursive -First 2
 
@@ -84,9 +84,9 @@ HandleId    Path      ClientIp       ClientPort OpenTime             LastReconne
 24057151780 dir1/dir2 104.46.105.229 50861      2019-06-18 07:39:23Z                   16140971433240035328 11529285414812647424 9549812641162070049
 ```
 
-Perintah ini mencantumkan 2 gagang file pertama pada direktori file secara berulang.
+Perintah ini mencantumkan 2 gagang file pertama pada direktori file secara rekursif .
 
-### Contoh 3: Daftar gagang file ke-3 hingga ke-6 pada file
+### Contoh 3: Mencantumkan gagang file ke-3 ke-6 pada file
 ```
 PS C:\>Get-AzStorageFileHandle -ShareName "mysharename" -Path 'dir1/dir2/test.txt' -skip 2 -First 4 
 
@@ -103,7 +103,7 @@ Perintah ini mencantumkan gagang file ke-3 ke-6 pada file.
 ## PARAMETERS
 
 ### -ClientTimeoutPerRequest
-Waktu eksekusi maksimal sisi klien untuk setiap permintaan dalam detik.
+Waktu eksekusi maksimum sisi klien untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 ```
 
 ### -ConcurrentTaskCount
-Jumlah total tugas bersama.
-Nilai default adalah 10.
+Jumlah total tugas asinkron serentak.
+Nilai defaultnya adalah 10.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konteks
-Azure Storage Konteks
+Objek Konteks Azure Storage
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Objek CloudFile menunjukkan file ke daftar Gagang File.
+Objek CloudFile menunjukkan file ke Daftar Gagang File.
 
 ```yaml
 Type: Microsoft.Azure.Storage.File.CloudFile
@@ -193,7 +193,7 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Jalur ke file/direktori yang sudah ada.
 
 ```yaml
@@ -208,8 +208,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Rekursif
-Daftar menangani secara rekursif.
+### -Rekursi
+Daftar menangani Berulang.
 Hanya berfungsi di Direktori File.
 
 ```yaml
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerTimeoutPerRequest
-Waktu server habis untuk setiap permintaan dalam hitungan detik.
+Waktu server habis untuk setiap permintaan dalam hitung detik.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareName
-Nama berbagi file di mana file/direktori akan dicantumkan.
+Nama file yang dibagikan di mana file/direktori akan dicantumkan.
 
 ```yaml
 Type: System.String
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeTotalCount
-Melaporkan jumlah objek dalam set data (bilangan bulat) diikuti oleh objek. Jika cmdlet tidak dapat menentukan hitungan total, cmdlet akan mengembalikan 'Hitungan total tidak diketahui'.
+Melaporkan jumlah objek dalam kumpulan data (bilangan bulat) diikuti dengan objek. Jika cmdlet tidak dapat menentukan jumlah total, cmdlet akan mengembalikan 'Jumlah total tidak diketahui'.
 Saat ini, parameter ini tidak melakukan apa-apa.
 
 ```yaml
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lewati
-Mengabaikan objek 'n' pertama, lalu mendapatkan objek yang tersisa.
+Mengabaikan objek 'n' pertama lalu mendapatkan objek yang tersisa.
 
 ```yaml
 Type: System.UInt64
@@ -300,7 +300,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -First
+### -Pertama
 Hanya mendapatkan objek 'n' pertama.
 
 ```yaml
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -328,7 +328,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure. Storage. File.FileHandleResultsegment
+### Microsoft.Azure. Storage. File.FileHandleResultSegment
 
 ## CATATAN
 

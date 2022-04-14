@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2DataFlowDebugSession.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Start-AzDataFactoryV2DataFlowDebugSession.md
 ms.openlocfilehash: ed145de473d8d9b2c80ce657029aa24c52e49d14
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140140083"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142086621"
 ---
 # Start-AzDataFactoryV2DataFlowDebugSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "140140083"
 Memulai sesi debug aliran data di Azure Data Factory
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2dataflowdebugsession) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/start-azdatafactoryv2dataflowdebugsession) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -43,8 +43,8 @@ Start-AzDataFactoryV2DataFlowDebugSession [[-IntegrationRuntimeFile] <String>] [
 ```
 
 ## DESCRIPTION
-Perintah yang berjalan lama ini memulai sesi debug aliran data untuk perintah debug yang akan datang. Perintah ini dapat melampirkan definisi runtime integrasi untuk mengonfigurasi ukuran/tipe kluster sesi debug.
-Urutan perintah PowerShell untuk alur kerja debug aliran data harus:
+Perintah yang berjalan panjang ini memulai sesi debug alur data untuk perintah debug yang akan datang. Perintah ini dapat dilampirkan dengan definisi runtime integrasi untuk mengonfigurasi ukuran/tipe kluster sesi debug.
+Urutan perintah PowerShell untuk alur kerja debug alur data harus:
 1. Start-AzDataFactoryV2DataFlowDebugSession
 1. Add-AzDataFactoryV2DataFlowDebugSessionPackage
 1. Invoke-AzDataFactoryV2DataFlowDebugSessionCommand (ulangi langkah ini untuk perintah/target yang berbeda, atau ulangi langkah 2-3 untuk mengubah file paket)
@@ -83,7 +83,7 @@ Memulai sesi debug dengan bendera AsJob.
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -229,17 +229,17 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDemicrosoftSession
+### Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFlowDebugSession
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
-[Get-AzDataFactoryV2DataFlowDeflowSession](./Get-AzDataFactoryV2DataFlowDebugSession.md)
+[Get-AzDataFactoryV2DataFlowDebugSession](./Get-AzDataFactoryV2DataFlowDebugSession.md)
 
-[Add-AzDataFactoryV2DataFlowDeflowSessionPackage](./Add-AzDataFactoryV2DataFlowDebugSessionPackage.md)
+[Add-AzDataFactoryV2DataFlowDebugSessionPackage](./Add-AzDataFactoryV2DataFlowDebugSessionPackage.md)
 
-[Invoke-AzDataFactoryV2DataFlowDeflowSessionCommand](./Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md)
+[Invoke-AzDataFactoryV2DataFlowDebugSessionCommand](./Invoke-AzDataFactoryV2DataFlowDebugSessionCommand.md)
 
-[Stop-AzDataFactoryV2DataFlowDeflowSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)
+[Stop-AzDataFactoryV2DataFlowDebugSession](./Stop-AzDataFactoryV2DataFlowDebugSession.md)

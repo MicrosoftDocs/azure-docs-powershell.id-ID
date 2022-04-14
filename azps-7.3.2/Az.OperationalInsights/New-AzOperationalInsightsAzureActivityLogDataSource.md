@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.operationalinsig
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsAzureActivityLogDataSource.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/OperationalInsights/OperationalInsights/help/New-AzOperationalInsightsAzureActivityLogDataSource.md
-ms.openlocfilehash: 53f0611ec84744b6b7be8dd5388edf631dd84c97
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 93e636b23bc08fb51d646ff242c4fc5216e4a977
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555132"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142211851"
 ---
 # New-AzOperationalInsightsAzureActivityLogDataSource
 
 ## SYNOPSIS
 Kumpulkan log Aktivitas Azure dari langganan tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.operationalinsights/new-azoperationalinsightsazureactivitylogdatasource) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,7 +38,7 @@ New-AzOperationalInsightsAzureActivityLogDataSource [-Workspace] <PSWorkspace> [
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzOperationalInsightsAzureActivityLogDataSource memungkinkan Analitik Log untuk mengumpulkan log aktivitas Azure dari langganan tertentu.
+Cmdlet New-AzOperationalInsightsAzureActivityLogDataSource memungkinkan Analitik Log mengumpulkan log aktivitas Azure dari langganan tertentu.
 
 ## EXAMPLES
 
@@ -51,12 +54,12 @@ Kind              : AzureActivityLog
 Properties        : {"linkedResourceId":"/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/providers/microsoft.insights/eventtypes/management","backfillStartTime":"0001-01-01T00:00:00+00:00"}
 ```
 
-Perintah ini memungkinkan Analitik Log untuk mengumpulkan log aktivitas Azure dari langganan tertentu.
+Perintah ini memungkinkan Analitik Log mengumpulkan log aktivitas Azure dari langganan tertentu.
 
 ## PARAMETERS
 
 ### -BackfillStartTime
-Anda bisa memilih untuk mengisi log dari seminggu yang lalu.
+Anda bisa memilih untuk mengisi ulang log dari seminggu yang lalu.
 
 ```yaml
 Type: System.DateTimeOffset
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -85,7 +88,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
+### -Paksa
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
@@ -150,7 +153,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 ```yaml
 Type: System.String
 Parameter Sets: ByWorkspaceName
@@ -164,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

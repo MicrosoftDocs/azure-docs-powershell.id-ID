@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Security/Security/help/Get-AzRegulatoryComplianceStandard.md
 ms.openlocfilehash: 2f4ce70a9e543c581c8c8bfccd51272999ddcf62
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140305159"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142041797"
 ---
 # Get-AzRegulatoryComplianceStandard
 
 ## SYNOPSIS
-Mendapatkan standar kepatuhan peraturan
+Mendapatkan standar kepatuhan terhadap peraturan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.security/get-azregulatorycompliancestandard) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.security/get-azregulatorycompliancestandard) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Get-AzRegulatoryComplianceStandard -ResourceId <String> [-DefaultProfile <IAzure
 ```
 
 ## DESCRIPTION
-Dapatkan detail standar kepatuhan peraturan tertentu atau daftar semua standar kepatuhan peraturan di bawah langganan tertentu.
+Dapatkan detail standar kepatuhan peraturan tertentu atau cantumkan semua standar kepatuhan peraturan dalam langganan tertentu.
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ SkippedControls     : 0
 UnsupportedControls : 24
 ```
 
-Dapatkan semua standar kepatuhan peraturan dalam langganan.
+Dapatkan semua standar kepatuhan terhadap peraturan di bawah langganan.
 
 ### Contoh 2
 ```powershell
@@ -106,7 +106,7 @@ SkippedControls     : 0
 UnsupportedControls : 24
 ```
 
-Dapatkan detail tentang standar kepatuhan peraturan tertentu sesuai nama standar.
+Dapatkan detail standar kepatuhan peraturan tertentu sesuai dengan nama standar.
 
 ### Contoh 3
 ```powershell
@@ -123,7 +123,7 @@ SkippedControls     : 0
 UnsupportedControls : 24
 ```
 
-Dapatkan detail tentang standar kepatuhan peraturan tertentu sesuai id sumber daya.
+Dapatkan detail standar kepatuhan peraturan tertentu sesuai id sumber daya.
 
 ## PARAMETERS
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-ID sumber daya keamanan yang ingin Anda perintahkan.
+ID sumber daya keamanan yang ingin Anda gunakan untuk meminta perintah.
 
 ```yaml
 Type: System.String
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

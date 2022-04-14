@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/update-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraDataCenter.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzManagedCassandraDataCenter.md
-ms.openlocfilehash: c0b348589c040cfbe808702f3a4afdd08b4d7bcd
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 405bdfbd3f8fe01504ceee9a7efd533196f10f83
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141896337"
 ---
 # Update-AzManagedCassandraDataCenter
 
 ## SYNOPSIS
-Perbarui Azure Managed Instances yang sudah ada untuk Apache Apache Apache data center.
+Perbarui Instans Terkelola Azure yang sudah ada untuk pusat data Apache Cassandra.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azmanagedcassandradatacenter) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -63,7 +66,7 @@ Update-AzManagedCassandraDataCenter
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzManagedCass cmdletDataCenter** memperbarui pusat data Cmdlet Cmdlet Terkelola Yang sudah ada.
+**Cmdlet Update-AzManagedCassandraDataCenter** memperbarui pusat data Cassandra yang dikelola yang sudah ada.
 
 ## EXAMPLES
 
@@ -78,8 +81,8 @@ PS C:\> Update-AzManagedCassandraDataCenter `
 
 ## PARAMETERS
 
-### -Base64EncodedCassyamlFragment
-Konfigurasi fragmen untuk disertakan di simpul dari `cassandra.yaml` pusat data ini, Base64 dikodekan.
+### -Base64EncodedCassandraYamlFragment
+Fragmen konfigurasi untuk disertakan dalam `cassandra.yaml` simpul pusat data ini, base64 dikodekan.
 
 ```yaml
 Type: System.String
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Properti terkelola.
+Nama kluster Cassandra yang dikelola.
 
 ```yaml
 Type: System.String
@@ -124,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah node yang dibuat di pusat data ini.
+Jumlah node yang akan dibuat di pusat data ini.
 
 ```yaml
 Type: System.Int32
@@ -139,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek kluster Tujuan untuk membuat pusat data.
+Objek kluster Cassandra untuk membuat pusat data di dalamnya.
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSClusterResource
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtaf tag yang diatur pada sumber daya pusat data.
+Hashtable tag untuk diatur pada sumber daya pusat data.
 
 ```yaml
 Type: System.Hashtable
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

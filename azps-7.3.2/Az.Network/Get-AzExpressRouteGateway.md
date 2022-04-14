@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azex
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzExpressRouteGateway.md
-ms.openlocfilehash: 8ce8cdd709c186e615ac6f8e71f137956132cdbe
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 653b8d9e4343546f9a901390daba767f257b35e5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140007874"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142109051"
 ---
 # Get-AzExpressRouteGateway
 
 ## SYNOPSIS
 Mendapatkan sumber daya ExpressRouteGateway menggunakan ResourceGroupName dan GatewayName OR mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azexpressroutegateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,9 +63,9 @@ Type                : Microsoft.Network/ExpressRouteGateways
 ProvisioningState   : Succeeded
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Pusat Barat dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di West Central US dalam grup sumber daya "testRG" di Azure. Gateway ExpressRoute akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-Kemudian, dapatkan ExpressRouteGateway menggunakan resourceGroupName dan nama gatewaynya.
+Lalu mendapatkan ExpressRouteGateway menggunakan resourceGroupName dan nama gateway.
 
 ### Contoh 2
 
@@ -140,7 +143,7 @@ Accept wildcard characters: True
 ```
 
 ### -ResourceId
-ID sumber daya Azure untuk expressRouteGateway akan dihapus.
+ID sumber daya Azure untuk expressRouteGateway dihapus.
 
 ```yaml
 Type: System.String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

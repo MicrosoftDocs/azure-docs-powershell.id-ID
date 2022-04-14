@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentWhatIfResult.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Resources/Resources/help/Get-AzResourceGroupDeploymentWhatIfResult.md
 ms.openlocfilehash: f82fc7ec845b84fc0cec8174a45598341f32e76d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140132001"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142042661"
 ---
 # Get-AzResourceGroupDeploymentWhatIfResult
 
 ## SYNOPSIS
-Mendapatkan templat dan What-If untuk penggunaan di lingkup grup sumber daya. 
+Mendapatkan templat What-If hasil untuk penyebaran di lingkup grup sumber daya. 
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeploymentwhatifresult) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.resources/get-azresourcegroupdeploymentwhatifresult) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -147,11 +147,11 @@ Get-AzResourceGroupDeploymentWhatIfResult [-Name <String>] -ResourceGroupName <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzResourceGroupDeploymentWhatIfResult** cmdlet gets the ARM template What-If result for a template deployment at the specified resource group scope. Panduan akan mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan pada sumber daya yang sebenarnya. Untuk menentukan format bagi hasil yang dikembalikan, gunakan parameter *ResultFormat* .
+Cmdlet **Get-AzResourceGroupDeploymentWhatIfResult** mendapatkan templat ARM What-If hasil untuk penggunaan templat di lingkup grup sumber daya tertentu. Ini mengembalikan daftar perubahan yang mengindikasikan sumber daya apa yang akan diperbarui jika penyebaran diterapkan tanpa membuat perubahan apa pun pada sumber daya riil. Untuk menentukan format untuk hasil yang dikembalikan, gunakan parameter *ResultFormat* .
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan hasil What-If di lingkup grup sumber daya
+### Contoh 1: Mendapatkan hasil What-If di lingkup grup sumber daya
 ```powershell
 PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -DeploymentName "deploy-01" `
@@ -161,11 +161,11 @@ PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -ResultFormat "FullResourcePayloads"
 ```
 
-Perintah ini mendapatkan What-If grup sumber daya yang ditentukan dengan menggunakan file templat kustom dan file parameter di disk.
-Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan disebarkan.
-Perintah tersebut menggunakan parameter *TemplateFile* untuk menentukan file templat.
-Perintah ini menggunakan *parameter TemplateParameterFile* untuk menentukan file parameter templat.
-Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If menyertakan payload sumber daya penuh.
+Perintah ini mendapatkan hasil What-If pada lingkup grup sumber daya tertentu menggunakan file templat kustom dan file parameter di disk.
+Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan digunakan.
+Perintah menggunakan parameter *TemplateFile* untuk menentukan file templat.
+Perintah menggunakan parameter *TemplateParameterFile* untuk menentukan file parameter templat.
+Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If agar menyertakan muatan sumber daya penuh.
 
 ### Contoh 2: Mendapatkan hasil What-If di lingkup grup sumber daya dengan ResourceIdOnly
 ```powershell
@@ -177,11 +177,11 @@ PS C:\> Get-AzResourceGroupDeploymentWhatIfResult `
     -ResultFormat "ResourceIdOnly"
 ```
 
-Perintah ini mendapatkan What-If grup sumber daya yang ditentukan dengan menggunakan file templat kustom dan file parameter di disk.
-Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan disebarkan.
-Perintah tersebut menggunakan parameter *TemplateFile* untuk menentukan file templat.
-Perintah ini menggunakan *parameter TemplateParameterFile* untuk menentukan file parameter templat.
-Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If ke hanya berisi ID sumber daya.
+Perintah ini mendapatkan hasil What-If pada lingkup grup sumber daya tertentu menggunakan file templat kustom dan file parameter di disk.
+Perintah menggunakan parameter *ResourceGroupName* untuk menentukan grup sumber daya tempat templat akan digunakan.
+Perintah menggunakan parameter *TemplateFile* untuk menentukan file templat.
+Perintah menggunakan parameter *TemplateParameterFile* untuk menentukan file parameter templat.
+Perintah menggunakan parameter *ResultFormat* untuk mengatur hasil What-If agar hanya berisi ID sumber daya.
 
 ## PARAMETERS
 
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeChangeType
-Tipe perubahan sumber daya yang dipisahkan koma akan dikecualikan dari What-If perubahan.
+Tipe perubahan sumber daya yang dipisahkan koma untuk dikecualikan dari hasil What-If.
 
 ```yaml
 Type: System.String[]
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mode
-Mode penggunaan.
+Mode penyebaran.
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.DeploymentMode
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama penyebaran yang akan dibuat. Jika tidak ditentukan, defaultnya adalah nama file templat ketika file templat disediakan; default untuk saat ini ketika objek templat disediakan, misalnya "20131223140835".
+Nama penyebaran yang akan dibuatnya. Jika tidak ditentukan, default ke nama file templat saat file templat disediakan; default ke waktu saat ini ketika objek templat disediakan, misalnya "20131223140835".
 
 ```yaml
 Type: System.String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Saat diatur, cmdlet harus menggunakan versi API prari tamu ketika menentukan versi mana yang akan digunakan secara otomatis.
+Ketika diatur, menunjukkan bahwa cmdlet harus menggunakan versi API prarilis saat menentukan versi mana yang akan digunakan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResultFormat
-Hasil What-If format.
+Format hasil What-If.
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.WhatIfResultFormat
@@ -293,9 +293,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkipTemplateParameterPrompt
-Skips the PowerShell dynamic parameter processing that checks if the provided template parameter contains all necessary parameters used by the template.
-Pemeriksaan ini akan meminta pengguna untuk menyediakan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan mengabaikan perintah ini dan kesalahan langsung keluar jika parameter tidak terikat dalam templat.
-Untuk skrip non-interaktif, -SkipTemplateParameterPrompt bisa disediakan untuk menyediakan pesan kesalahan yang lebih baik dalam kasus di mana tidak semua parameter yang diperlukan puas.
+Lewati pemrosesan parameter dinamis PowerShell yang memeriksa apakah parameter templat yang disediakan berisi semua parameter yang diperlukan yang digunakan oleh templat.
+Pemeriksaan ini akan meminta pengguna untuk memberikan nilai untuk parameter yang hilang, tetapi menyediakan -SkipTemplateParameterPrompt akan segera mengabaikan perintah ini dan kesalahan jika parameter ditemukan tidak terikat dalam templat.
+Untuk skrip non-interaktif, -SkipTemplateParameterPrompt dapat disediakan untuk memberikan pesan kesalahan yang lebih baik jika tidak semua parameter yang diperlukan puas.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -355,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterObject
-Tabel hash yang menyatakan parameter.
+Tabel hash yang mewakili parameter.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSpecId
-ID Sumber Daya dari templatSpeced yang akan digunakan.
+ID sumber daya templatSpec yang akan digunakan.
 
 ```yaml
 Type: System.String
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

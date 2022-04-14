@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/get-azvp
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGateway.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Get-AzVpnGateway.md
-ms.openlocfilehash: 1991612b162ee41c6b731425b0d3100dfaede02b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f953638716d78a38f7d856a3198612b2e96e8394
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140185789"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142108745"
 ---
 # Get-AzVpnGateway
 
 ## SYNOPSIS
 Mendapatkan sumber daya VpnGateway menggunakan ResourceGroupName dan GatewayName OR mencantumkan semua gateway menurut ResourceGroupName atau SubscriptionId.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/get-azvpngateway) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -56,9 +59,9 @@ Type                : Microsoft.Network/vpnGateways
 ProvisioningState   : Succeeded
 ```
 
-Opsi di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Virtual Hub di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Virtual Hub dengan 2 unit skala.
+Hal di atas akan membuat grup sumber daya, Virtual WAN, Virtual Network, Hub Virtual di AS Barat dalam grup sumber daya "testRG" di Azure. Gateway VPN akan dibuat setelahnya di Hub Virtual dengan 2 unit skala.
 
-VpnGateway kemudian akan mendapatkan VpnGateway menggunakan resourceGroupName dan nama gatewaynya.
+Kemudian VpnGateway menggunakan resourceGroupName dan nama gateway.
 
 ### Contoh 2
 
@@ -88,7 +91,7 @@ Type                : Microsoft.Network/vpnGateways
 ProvisioningState   : Succeeded
 ```
 
-Cmdlet ini mendapatkan semua Gateway yang dimulai dengan "test".
+Cmdlet ini mendapatkan semua Gateway yang dimulai dengan "uji".
 
 ## PARAMETERS
 
@@ -138,11 +141,11 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -154,6 +157,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzVpnGateway](./New-AzVpnGateway.md)
 
-[Remove-AzVpnGateway](./Remove-AzVpnGateway.md)
+[Hapus-AzVpnGateway](./Remove-AzVpnGateway.md)
 
 [Update-AzVpnGateway](./Update-AzVpnGateway.md)

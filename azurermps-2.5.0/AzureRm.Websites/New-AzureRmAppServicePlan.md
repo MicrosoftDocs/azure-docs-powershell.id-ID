@@ -5,16 +5,16 @@ ms.assetid: 8F36244D-A4D7-40BB-AC4C-E9AD445549F8
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.websites/new-azurermappserviceplan
 schema: 2.0.0
 ms.openlocfilehash: 015a16ec40e7b5159e6082acd47f2583edff1f09
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426449"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142144835"
 ---
 # New-AzureRmAppServicePlan
 
 ## SYNOPSIS
-Membuat paket Layanan Aplikasi Azure di lokasi Geo tertentu.
+Membuat rencana Azure App Service di lokasi Geo tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,22 +36,22 @@ New-AzureRmAppServicePlan [-Location] <String> [[-Tier] <String>] [[-NumberofWor
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmAppServicePlan** membuat rencana Layanan Aplikasi Azure di lokasi Geo tertentu dengan Tingkatan, ukuran pekerja, dan jumlah pekerja yang ditentukan.
+Cmdlet **New-AzureRmAppServicePlan** membuat rencana Azure App Service di lokasi Geo tertentu dengan Tingkat, ukuran pekerja, dan jumlah pekerja yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat paket Layanan Aplikasi
+### Contoh 1: Membuat paket App Service
 ```
 PS C:\>New-AzureRmAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -Location "West US" -Tier "Basic" -NumberofWorkers 2 -WorkerSize "Small"
 ```
 
-Perintah ini membuat paket Layanan Aplikasi bernama ContosoASP dalam grup sumber daya yang bernama Default-Web-WestUS di lokasi Geo Barat AS.
+Perintah ini membuat rencana App Service bernama ContosoASP dalam grup sumber daya bernama Default-Web-WestUS di Geo location West US.
 Perintah menentukan Tingkat Dasar dan mengalokasikan dua pekerja kecil.
 
 ## PARAMETERS
 
 ### -AppServicePlan
-Objek Paket Layanan Aplikasi
+Objek Rencana App Service
 
 ```yaml
 Type: ServerFarmWithRichSku
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseName
-Nama Lingkungan Layanan Aplikasi
+Nama Lingkungan App Service
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -AseResourceGroupName
-Nama Grup Sumber Daya Lingkungan Layanan Aplikasi
+Nama Grup Sumber Daya Lingkungan App Service
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Paket Layanan Aplikasi
+Nama Rencana App Service
 
 ```yaml
 Type: String
@@ -155,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PerSiteScaling
-Mengaktifkan atau tidak mengaktifkan Penskalaan Per Situs
+### -Persitescaling
+Apakah mengaktifkan atau tidak mengaktifkan Penskalakan Per Situs
 
 ```yaml
 Type: Boolean
@@ -185,7 +185,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tier
+### -Tingkat
 Tier
 
 ```yaml
@@ -217,7 +217,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -232,12 +232,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### ServerFarmWithRichSku
-Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari saluran
+### ServerFarmWithRichsku
+Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari pipeline
 
 ## OUTPUTS
 
@@ -249,7 +249,7 @@ Parameter 'AppServicePlan' menerima nilai tipe 'ServerFarmWithRichSku' dari salu
 
 [Get-AzureRmAppServicePlan](./Get-AzureRmAppServicePlan.md)
 
-[Remove-AzureRmAppServicePlan](./Remove-AzureRmAppServicePlan.md)
+[Hapus-AzureRmAppServicePlan](./Remove-AzureRmAppServicePlan.md)
 
 [Set-AzureRmAppServicePlan](./Set-AzureRmAppServicePlan.md)
 

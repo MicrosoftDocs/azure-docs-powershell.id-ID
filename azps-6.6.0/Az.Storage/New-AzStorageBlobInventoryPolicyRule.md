@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobInventoryPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageBlobInventoryPolicyRule.md
 ms.openlocfilehash: d3e1818206c9df5fff230bf71c96e6c6e41191ec
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140095994"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142039709"
 ---
 # New-AzStorageBlobInventoryPolicyRule
 
 ## SYNOPSIS
-Membuat objek aturan kebijakan inventaris blob, yang dapat digunakan di Set-AzStorageBlobInventoryPolicy.
+Membuat objek aturan kebijakan inventaris blob, yang dapat digunakan dalam Set-AzStorageBlobInventoryPolicy.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storage/new-azstorageblobinventorypolicyrule) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageblobinventorypolicyrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,11 +37,11 @@ New-AzStorageBlobInventoryPolicyRule [-Name] <String> [-Disabled] -Destination <
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzStorageBlobInventoryPolicyRule** membuat objek aturan kebijakan inventaris blob, yang dapat digunakan di Set-AzStorageBlobInventoryPolicy.
+Cmdlet **New-AzStorageBlobInventoryPolicyRule** membuat objek aturan kebijakan inventaris blob, yang dapat digunakan dalam Set-AzStorageBlobInventoryPolicy.
 
 ## EXAMPLES
 
-### Contoh 1: Buat objek aturan kebijakan inventaris blob, lalu tetapkan kebijakan inventaris blob dengan objek aturan.
+### Contoh 1: Buat objek aturan kebijakan inventaris blob, lalu atur kebijakan inventaris blob dengan objek aturan.
 ```
 PS C:\> $rule1 = New-AzStorageBlobInventoryPolicyRule -Name Test1 -Destination $containerName -Disabled -Format Csv -Schedule Daily -ContainerSchemaField Name,Metadata,PublicAccess,Last-mOdified,LeaseStatus,LeaseState,LeaseDuration,HasImmutabilityPolicy,HasLegalHold -PrefixMatch con1,con2
 
@@ -70,13 +70,13 @@ Test2 True    containername Blob       Parquet Weekly   True             True   
 ```
 
 2 perintah pertama ini membuat 2 objek aturan BlobInventoryPolicy: aturan "Test1" untuk inventaris contaienr; aturan "Test2" untuk inventaris blob.
-Perintah berikut mengatur kebijakan inventaris blob ke akun Storage dengan 2 objek aturan, lalu memperlihatkan kebijakan dan properti aturan yang diperbarui.
+Perintah berikut ini mengatur kebijakan inventaris blob ke akun Storage dengan 2 objek aturan, lalu memperlihatkan properti kebijakan dan aturan yang diperbarui.
 
 ## PARAMETERS
 
 ### -BlobSchemaField
-Menentukan bidang dan properti objek Blob yang akan disertakan dalam inventaris. Nilai yang valid meliputi: Nama, Pembuatan-Waktu, Terakhir Diubah, Panjang Konten, Content-MD5, BlobType, AccessTier, AccessTierChangeTime, Expiry-Time, hdi_isfolder, Owner, Group, Permissions, Acl, Metadata, LastAccessTime, AccessTierInferred, Tags. 'Name' adalah skemafield yang diperlukan. Nilai bidang skema 'Kedaluwarsa-Waktu, hdi_isfolder, Pemilik, Grup, Izin, Acl' hanya valid untuk akun yang diaktifkan HierarchicalNamespace.'Tag' hanya berlaku untuk akun non HierarchicalNamespace.
-Jika menentukan '-IncludeSnapshot', akan menyertakan 'Snapshot' di inventaris.  Jika menentukan '-IncludeBlobVersion', akan menyertakan 'VersionId, 'IsCurrentVersion' di inventaris.
+Menentukan bidang dan properti objek Blob yang akan disertakan dalam inventori. Nilai yang valid meliputi: Nama, Waktu Pembuatan, Terakhir Diubah, Panjang Konten, Konten-MD5, BlobType, AccessTier, AccessTierChangeTime, Expiry-Time, hdi_isfolder, Pemilik, Grup, Izin, Acl, Metadata, LastAccessTime, AccessTierInferred, Tags. 'Name' adalah ladang skema yang diperlukan. Nilai bidang skema 'Expiry-Time, hdi_isfolder, Owner, Group, Permissions, Acl' hanya valid untuk bidang HierarchicalNamespace enabled accounts.'Tags' hanya valid untuk akun non HierarchicalNamespace.
+Jika menentukan '-IncludeSnapshot', akan menyertakan 'Snapshot' dalam inventori.  Jika menentukan '-IncludeBlobVersion', akan menyertakan 'VersionId, 'IsCurrentVersion' dalam inventori.
 
 ```yaml
 Type: System.String[]
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ### -BlobType
 Mengatur tipe blob untuk aturan kebijakan inventaris blob.
 Nilai yang valid menyertakan blockBlob, appendBlob, pageBlob.
-AkunHNS tidak mendukung pageBlobs.
+Akun Hns tidak mendukung pageBlobs.
 
 ```yaml
 Type: System.String[]
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContainerSchemaField
-Menentukan bidang dan properti objek wadah untuk disertakan dalam inventaris. Nilai yang valid meliputi: Name, Last-Modified, Metadata, LeaseStatus, LeaseState, LeaseDuration, PublicAccess, HasImmutabilityPolicy, HasLegalHold. 'Name' adalah skemafield yang diperlukan.
+Menentukan bidang dan properti objek kontainer yang akan disertakan dalam inventori. Nilai yang valid meliputi: Nama, Last-Modified, Metadata, LeaseStatus, LeaseState, LeaseDuration, PublicAccess, HasImmutabilityPolicy, HasLegalHold. 'Name' adalah ladang skema yang diperlukan.
 
 ```yaml
 Type: System.String[]
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tujuan
-Nama wadah tempat file inventaris blob disimpan. Harus sudah dibuat sebelumnya.
+Nama kontainer tempat file inventori blob disimpan. Harus dibuat sebelumnya.
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dinonaktifkan
+### -Nonaktif
 Aturan dinonaktifkan jika diatur.
 
 ```yaml
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Format
-Menentukan format untuk file inventaris. Kemungkinan nilai termasuk: 'Csv', 'Nilai kolom'
+Menentukan format untuk file inventori. Nilai yang memungkinkan termasuk: 'Csv', 'Parquet'
 
 ```yaml
 Type: System.String
@@ -217,9 +217,9 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama aturan dapat berisi kombinasi karakter alfa numerik apa pun.
-Nama aturan peka huruf besar-kecil.
-Kebijakan harus unik di dalam kebijakan.
+Nama aturan bisa berisi kombinasi karakter alfa numerik apa pun.
+Nama aturan peka huruf besar/kecil.
+Ini harus unik dalam kebijakan.
 
 ```yaml
 Type: System.String
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrefixMatch
-Mengatur array string untuk prefiks blob agar sesuai..
+Mengatur array string untuk prefiks blob agar cocok..
 
 ```yaml
 Type: System.String[]
@@ -248,8 +248,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Schedule
-Bidang ini digunakan untuk menjadwalkan formasi inventaris. Kemungkinan nilai termasuk: 'Harian', 'Mingguan'
+### -Jadwal
+Bidang ini digunakan untuk menjadwalkan formasi inventori. Nilai yang memungkinkan termasuk: 'Harian', 'Mingguan'
 
 ```yaml
 Type: System.String
@@ -265,11 +265,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

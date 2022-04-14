@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/New-AzDedicatedHsm.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DedicatedHsm/help/New-AzDedicatedHsm.md
 ms.openlocfilehash: 7eff949330cb873655ffa40376eceabb0334279f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140286709"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142084921"
 ---
 # New-AzDedicatedHsm
 
 ## SYNOPSIS
-Buat atau Perbarui HSM khusus dalam langganan yang ditentukan.
+Membuat atau Memperbarui HSM khusus dalam langganan tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.dedicatedhsm/new-azdedicatedhsm) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.dedicatedhsm/new-azdedicatedhsm) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-AzDedicatedHsm -Name <String> -ResourceGroupName <String> -Location <String>
 ```
 
 ## DESCRIPTION
-Buat atau Perbarui HSM khusus dalam langganan yang ditentukan.
+Membuat atau Memperbarui HSM khusus dalam langganan tertentu.
 
 ## EXAMPLES
 
@@ -43,10 +43,10 @@ Name       Provisioning State SKU                           Location
 hsm-n7wfxi Succeeded          SafeNet Luna Network HSM A790 eastus
 ```
 
-Perintah ini membuat HSM Khusus ke dalam jaringan virtual yang ada.
+Perintah ini membuat HSM Khusus ke dalam jaringan virtual yang sudah ada.
 
-**CATATAN:** Saat `New-AzDedicatedHsm` ini memiliki batasan yang dikembalikan sebelum HSM sepenuhnya disediakan di Azure.
-Oleh karena itu setelah membuat HSM baru, silakan buat kueri statusnya `Get-AzDedicatedHsm` dan pastikan `Provisioning State` sebelum `Succeeded` menggunakannya.
+**CATATAN:** Saat ini `New-AzDedicatedHsm` memiliki batasan yang dikembalikan sebelum HSM sepenuhnya disediakan di Azure.
+Oleh karena itu setelah membuat HSM baru, silakan kuerikan statusnya dan `Get-AzDedicatedHsm` pastikan sebelum menggunakannya `Provisioning State` `Succeeded` .
 
 ## PARAMETERS
 
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInterface
-Menentukan daftar ID sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
-Untuk membuat, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan membuat tabel hash.
+Menentukan daftar Id sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
+Untuk membangun, lihat bagian CATATAN untuk properti NETWORKINTERFACE dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DedicatedHsm.Models.Api20181031.INetworkInterface[]
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama Grup Sumber Daya tempat sumber daya tersebut berada.
+Nama Grup Sumber Daya tempat sumber daya berada.
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-SKU dari HSM khusus
+SKU HSM khusus
 
 ```yaml
 Type: System.String
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -StampId
-Bidang ini akan digunakan ketika RP tidak mendukung zona Ketersediaan.
+Bidang ini akan digunakan ketika RP tidak mendukung Zona ketersediaan.
 
 ```yaml
 Type: System.String
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetId
-Id sumber daya ARM dalam bentuk /subscriptions/{SubscriptionId}/resourceGroups/{ResourceGroupName}/...
+ID sumber daya ARM dalam bentuk /subscriptions/{SubscriptionId}/resourceGroups/{ResourceGroupName}/...
 
 ```yaml
 Type: System.String
@@ -202,8 +202,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Kredensial langganan yang secara unik mengidentifikasi Microsoft Azure langganan tersebut.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -232,7 +232,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
+### -Zona
 Zona Hsm Khusus.
 
 ```yaml
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -297,7 +297,7 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 NETWORKINTERFACE <INetworkInterface[]>: Menentukan daftar Id sumber daya untuk antarmuka jaringan yang terkait dengan HSM khusus.
-  - `[PrivateIPAddress <String>]`: Alamat Ip privat antarmuka
+  - `[PrivateIPAddress <String>]`: Alamat Ip Pribadi antarmuka
 
 ## RELATED LINKS
 

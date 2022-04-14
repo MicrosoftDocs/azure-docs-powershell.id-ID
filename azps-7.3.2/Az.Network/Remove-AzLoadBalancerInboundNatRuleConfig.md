@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.network/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerInboundNatRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Remove-AzLoadBalancerInboundNatRuleConfig.md
-ms.openlocfilehash: 0538c4442196325f4dadd0dd3d31a59835f7dbfb
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: eb5a8edba24dee60dba354094cbbc17c80791298
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140555309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142212535"
 ---
 # Remove-AzLoadBalancerInboundNatRuleConfig
 
 ## SYNOPSIS
-Menghapus konfigurasi aturan NAT masuk dari penyeimbang muat.
+Menghapus konfigurasi aturan NAT masuk dari penyeimbang muatan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/remove-azloadbalancerinboundnatruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Remove-AzLoadBalancerInboundNatRuleConfig -LoadBalancer <PSLoadBalancer> [-Name 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzLoadBalancerInboundNatRuleConfig** menghapus konfigurasi aturan penerjemahan alamat jaringan masuk (NAT, InBound Network Address Translation) dari penyeimbang muat Azure.
+Cmdlet **Remove-AzLoadBalancerInboundNatRuleConfig** menghapus konfigurasi aturan terjemahan alamat jaringan masuk (NAT) dari load balancer Azure.
 
 ## EXAMPLES
 
@@ -37,12 +40,12 @@ $loadbalancer = Get-AzLoadBalancer -Name mylb -ResourceGroupName myrg
  Remove-AzLoadBalancerInboundNatRuleConfig -Name "myinboundnatrule" -LoadBalancer $loadbalancer
 ```
 
-Perintah pertama memuat penyeimbang muat yang sudah ada yang disebut "mylb" dan menyimpannya di $load penyeimbang. Perintah kedua menghapus aturan NAT masuk yang terkait dengan penyeimbang muat ini.
+Perintah pertama memuat load balancer yang sudah ada yang disebut "mylb" dan menyimpannya dalam variabel $load balancer. Perintah kedua menghapus aturan NAT masuk yang terkait dengan penyeimbang muatan ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

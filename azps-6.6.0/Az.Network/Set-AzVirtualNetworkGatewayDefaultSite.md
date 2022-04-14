@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayDefaultSite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayDefaultSite.md
 ms.openlocfilehash: eaea5eacc5b9d61aa8391fdcab2618f6001f6e71
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140280301"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142079221"
 ---
 # Set-AzVirtualNetworkGatewayDefaultSite
 
@@ -19,7 +19,7 @@ ms.locfileid: "140280301"
 Mengatur situs default untuk gateway jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewaydefaultsite) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewaydefaultsite) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,9 +29,9 @@ Set-AzVirtualNetworkGatewayDefaultSite -VirtualNetworkGateway <PSVirtualNetworkG
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzVirtualNetworkGatewayDefaultSite** menetapkan situs default bawaan paksa ke gateway jaringan virtual.
-Paksa membantu menyediakan cara Anda mengalihkan lalu lintas terikat Internet dari mesin virtual Azure ke jaringan lokal; ini memungkinkan Anda untuk memeriksa dan mengaudit lalu lintas sebelum merilisnya.
-Upaya paksa dilakukan menggunakan vpn jaringan privat virtual (VPN, Virtual Private Network) vpn; dasbor ini memerlukan situs default, gateway lokal tempat semua lalu lintas terikat Internet Azure dialihkan.
+Cmdlet **Set-AzVirtualNetworkGatewayDefaultSite** menetapkan situs default tunneling paksa ke gateway jaringan virtual.
+Terowongan paksa menyediakan cara bagi Anda untuk mengalihkan lalu lintas terikat internet dari mesin virtual Azure ke jaringan lokal Anda; hal ini memungkinkan Anda memeriksa dan mengaudit lalu lintas sebelum merilisnya.
+Terowongan paksa dilakukan dengan menggunakan terowongan jaringan privat virtual (VPN); terowongan ini memerlukan situs default, gateway lokal di mana semua lalu lintas Azure yang terikat internet diarahkan ulang.
 **Set-AzVirtualNetworkGatewayDefaultSite** menyediakan cara untuk mengubah situs default yang ditetapkan ke gateway.
 
 ## EXAMPLES
@@ -45,14 +45,14 @@ PS C:\> Set-AzVirtualNetworkGatewayDefaultSite -GatewayDefaultSite $LocalGateway
 
 Contoh ini menetapkan situs default ke gateway jaringan virtual bernama ContosoVirtualGateway.
 Perintah pertama membuat referensi objek ke gateway lokal bernama ContosoLocalGateway.
-Referensi objek ini yang disimpan dalam variabel yang $LocalGateway mewakili gateway yang akan dikonfigurasi sebagai situs default.
-Perintah kedua lalu membuat referensi objek ke gateway jaringan virtual dan menyimpan hasilnya dalam variabel yang bernama $VirtualGateway.
+Referensi objek yang disimpan dalam variabel bernama $LocalGateway mewakili gateway untuk dikonfigurasi sebagai situs default.
+Perintah kedua kemudian membuat referensi objek ke gateway jaringan virtual dan menyimpan hasilnya dalam variabel bernama $VirtualGateway.
 Perintah ketiga menggunakan cmdlet **Set-AzVirtualNetworkGatewayDefaultSite** untuk menetapkan situs default ke ContosoVirtualGateway.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 ```
 
 ### -GatewayDefaultSite
-Menentukan referensi objek ke gateway jaringan lokal untuk ditetapkan sebagai situs default untuk jaringan virtual yang ditentukan.
-Anda bisa menggunakan cmdlet Get-AzLocalNetworkGateway cmdlet untuk membuat referensi objek ke gateway lokal.
+Menentukan referensi objek ke gateway jaringan lokal untuk ditetapkan sebagai situs default untuk jaringan maya yang ditentukan.
+Anda bisa menggunakan cmdlet Get-AzLocalNetworkGateway untuk membuat referensi objek ke gateway lokal.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLocalNetworkGateway
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ### -VirtualNetworkGateway
 Menentukan referensi objek ke gateway jaringan virtual tempat situs default akan ditetapkan.
 Anda bisa membuat referensi objek ke gateway jaringan virtual dengan menggunakan **Get-AzVirtualNetworkGateway** dan menentukan nama gateway.
-Variabel yang $VirtualGateway lalu bisa digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway* :
+Variabel $VirtualGateway kemudian dapat digunakan sebagai nilai parameter untuk parameter *VirtualNetworkGateway* :
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Set-AzDataShare.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Set-AzDataShare.md
 ms.openlocfilehash: 782ff0747557d5be43404b4776065fcbd327d4b2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483403"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142085179"
 ---
 # Set-AzDataShare
 
@@ -18,7 +18,7 @@ ms.locfileid: "140483403"
 Memperbarui berbagi data yang sudah ada
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/set-azdatashare) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/set-azdatashare) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Set-AzDataShare -InputObject <PSDataShare> [-Description <String>] [-TermsOfUse 
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzDataShare** memperbarui berbagi data yang ada di dalam akun berbagi data Azure yang ditentukan.
+Cmdlet **Set-AzDataShare** memperbarui berbagi data yang ada dalam akun berbagi data azure tertentu.
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ Perintah ini memperbarui berbagi data yang sudah ada bernama AdsShare
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun berbagi data Azure
 
 ```yaml
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Deskripsi Berbagi Data
+Deskripsi Data Share
 
 ```yaml
 Type: System.String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya akun berbagi data Azure
+Nama grup sumber daya dari akun berbagi data azure
 
 ```yaml
 Type: System.String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id sumber daya berbagi data Azure
+Id sumber daya dari berbagi data azure
 
 ```yaml
 Type: System.String
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -TermsOfUse
-Ketentuan Penggunaan untuk Berbagi Data
+Ketentuan Penggunaan untuk Data Share
 
 ```yaml
 Type: System.String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
