@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationgatewayavailablewafrulesets
 schema: 2.0.0
 ms.openlocfilehash: 83ee8e673271079690c24691f22badfe5193ba50
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140858564"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847958"
 ---
 # Get-AzureRmApplicationGatewayAvailableWafRuleSets
 
@@ -39,7 +39,7 @@ Perintah ini mengembalikan semua kumpulan aturan firewall aplikasi web yang ters
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -54,18 +54,18 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayAvailableWafRuleSetsResult
 
 ## CATATAN
-**List-AzureRmApplicationGatewayAvailableWafRuleSets** merupakan alias untuk cmdlet **Get-AzureRmApplicationGatewayAvailableWafRuleSets** .
+**List-AzureRmApplicationGatewayAvailableWafRuleSets** adalah alias untuk cmdlet **Get-AzureRmApplicationGatewayAvailableWafRuleSets** .
 
 ## RELATED LINKS
 

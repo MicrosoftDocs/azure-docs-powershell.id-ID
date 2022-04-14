@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cognitiveservice
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountApiProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CognitiveServices/CognitiveServices/help/New-AzCognitiveServicesAccountApiProperty.md
-ms.openlocfilehash: ca0bff6d19f8b2c7c1776c652637c2c13d13d965
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 6f6c6e4aafc6cb2240712cf3998410ee3f3e2de4
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001685"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142218331"
 ---
 # New-AzCognitiveServicesAccountApiProperty
 
 ## SYNOPSIS
-Menghasilkan contoh baru DariProperti Akun Layanan Kognitif
+Menghasilkan contoh baru ApiProperties Akun Layanan Kognitif
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cognitiveservices/new-azcognitiveservicesaccountapiproperty) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,8 +28,8 @@ New-AzCognitiveServicesAccountApiProperty [-DefaultProfile <IAzureContextContain
 ```
 
 ## DESCRIPTION
-Buat contoh baru Dari ApiProperti Akun Layanan Kognitif.
-ApiProperties bisa digunakan saat membuat akun baru atau memperbarui akun yang sudah ada.
+Hasilkan contoh baru ApiProperties Akun Layanan Kognitif.
+ApiProperties dapat digunakan saat membuat akun baru atau memperbarui akun yang sudah ada.
 ApiProperties diperlukan oleh tipe akun tertentu.
 
 ## EXAMPLES
@@ -58,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -88,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

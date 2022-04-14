@@ -4,11 +4,11 @@ Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermapplicationsecuritygroup
 schema: 2.0.0
 ms.openlocfilehash: 52050426c34b30bcab867643fbb3e5b9c373f3f2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428882"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847884"
 ---
 # Get-AzureRmApplicationSecurityGroup
 
@@ -29,21 +29,21 @@ Cmdlet **Get-AzureRmApplicationSecurityGroup** mendapatkan grup keamanan aplikas
 
 ## EXAMPLES
 
-### Contoh 1: Ambil semua grup keamanan aplikasi.
+### Contoh 1: Mengambil semua grup keamanan aplikasi.
 ```
 PS C:\> Get-AzureRmApplicationSecurityGroup
 ```
 
 Perintah di atas mengembalikan semua grup keamanan aplikasi dalam langganan.
 
-### Contoh 2: Ambil grup keamanan aplikasi dalam grup sumber daya.
+### Contoh 2: Mengambil grup keamanan aplikasi dalam grup sumber daya.
 ```
 PS C:\> Get-AzureRmApplicationSecurityGroup -ResourceGroupName MyResourceGroup
 ```
 
 Perintah di atas mengembalikan semua grup keamanan aplikasi yang termasuk dalam grup sumber daya MyResourceGroup.
 
-### Contoh 3: Ambil grup keamanan aplikasi tertentu.
+### Contoh 3: Mengambil grup keamanan aplikasi tertentu.
 ```
 PS C:\> Get-AzureRmApplicationSecurityGroup -ResourceGroupName MyResourceGroup -Name MyApplicationSecurityGroup
 ```
@@ -53,7 +53,7 @@ Perintah di atas mengembalikan grup keamanan aplikasi MyApplicationSecurityGroup
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/remove-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Remove-AzVmssDataDisk.md
-ms.openlocfilehash: 0c4527c449e33deae24357d7b5479f0eba9bd899
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 3afaa3603abd51c95db95f67a9bf3c9133d66812
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395343"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142217611"
 ---
 # Remove-AzVmssDataDisk
 
 ## SYNOPSIS
 Menghapus disk data dari VMSS.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/remove-azvmssdatadisk) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Remove-AzVmssDataDisk [-VirtualMachineScaleSet] <PSVirtualMachineScaleSet> [-Lun
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzVmssDataDisk** menghapus disk data dari instans Virtual Machine Scale Set (VMSS).
+Cmdlet **Remove-AzVmssDataDisk** menghapus disk data dari instans Kumpulan Skala Mesin Virtual (VMSS).
 
 ## EXAMPLES
 
@@ -41,19 +44,19 @@ Cmdlet **Remove-AzVmssDataDisk** menghapus disk data dari instans Virtual Machin
 Remove-AzVmssDataDisk -VirtualMachineScaleSet $vmss -Name 'DataDisk1'
 ```
 
-Perintah ini menghapus disk data yang bernama 'DataDisk1' dari objek VMSS.
+Perintah ini menghapus disk data bernama 'DataDisk1' dari objek VMSS.
 
 ### Contoh 2
 ```powershell
 Remove-AzVmssDataDisk -VirtualMachineScaleSet $vmss -Lun 0
 ```
 
-Perintah ini akan menghapus disk data LUN 0 dari objek VMSS.
+Perintah ini menghapus disk data LUN 0 dari objek VMSS.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -68,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lun
-Menentukan nomor unit logika disk.
+Menentukan nomor unit logika diska.
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -83,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama disk.
+Menentukan nama diska.
 
 ```yaml
 Type: System.String
@@ -97,7 +100,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Tentukan objek VMSS.
 
 ```yaml
@@ -113,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -129,7 +132,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -152,7 +155,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### System.String
 
-### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ## OUTPUTS
 

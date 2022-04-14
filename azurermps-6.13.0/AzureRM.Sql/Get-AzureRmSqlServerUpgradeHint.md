@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerUpgradeHint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlServerUpgradeHint.md
 ms.openlocfilehash: 597156e101a9d16eff36d05fae71b32e0033ad6f
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415367"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142247985"
 ---
 # Get-AzureRmSqlServerUpgradeHint
 
 ## SYNOPSIS
-Mendapatkan petunjuk tingkatan harga untuk pemutakhiran server Azure SQL Database.
+Mendapatkan petunjuk tingkat harga untuk memutakhirkan server Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,10 +29,10 @@ Get-AzureRmSqlServerUpgradeHint [-ServerName] <String> [-ExcludeElasticPools <Bo
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlServerUpgradeHint** mendapatkan petunjuk tingkatan harga untuk pemutakhiran server Azure SQL Database.
-Petunjuk mungkin berisi elastis database pool dan petunjuk database mandiri.
-Database yang masih berada di tingkatan harga Web dan Bisnis mendapatkan petunjuk untuk memutakhirkan ke tingkatan harga Dasar, Standar, atau Premium yang baru, atau masuk ke dalam ruang database elastis.
-Cmdlet ini mengembalikan petunjuk untuk semua database yang dihosting di server yang ditentukan.
+Cmdlet **Get-AzureRmSqlServerUpgradeHint** mendapatkan petunjuk tingkat harga untuk memutakhirkan server Azure SQL Database.
+Petunjuk mungkin berisi kumpulan database elastis dan petunjuk database mandiri.
+Database yang masih berada di tingkat harga Web dan Bisnis mendapatkan petunjuk untuk memutakhirkan ke tingkat harga Dasar, Standar, atau Premium yang baru, atau untuk masuk ke kumpulan database elastis.
+Cmdlet ini mengembalikan petunjuk untuk semua database yang dihosting di server tertentu.
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ ElasticPools Databases
 {}           {database01, database02}
 ```
 
-Perintah ini mendapatkan rekomendasi yang digabungkan untuk semua database di server bernama Server01.
+Perintah ini mendapatkan rekomendasi gabungan untuk semua database di server bernama Server01.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExcludeElasticPools
-Menunjukkan apakah database yang disertakan dalam kolaml database elastis harus dikembalikan.
+Menunjukkan apakah database yang disertakan dalam kumpulan database elastis harus dikembalikan.
 
 ```yaml
 Type: System.Boolean
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -160,6 +160,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlElasticPoolRecommendation](./Get-AzureRmSqlElasticPoolRecommendation.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.sql/set-azsqlins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Sql/Sql/help/Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy.md
-ms.openlocfilehash: ff06b340bae39396c8f65995dbebc1b263544d24
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 2d6f74bec226888aebc98663f43330684879f584
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548589"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142207369"
 ---
 # Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy
 
 ## SYNOPSIS
 Mengatur kebijakan penyimpanan jangka pendek cadangan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.sql/set-azsqlinstancedatabasebackupshorttermretentionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -39,8 +42,8 @@ Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy [-ResourceId] <String> [
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy** mengatur kebijakan penyimpanan jangka pendek untuk database ini.
-Kebijakannya adalah periode penyimpanan, dalam hari, untuk pencadangan pemulihan titik waktu.
+**Cmdlet Set-AzSqlInstanceDatabaseBackupShortTermRetentionPolicy** mengatur kebijakan penyimpanan jangka pendek untuk database ini.
+Kebijakan ini adalah periode penyimpanan, dalam hari, untuk cadangan pemulihan point-in-time.
 
 ## EXAMPLES
 
@@ -66,7 +69,7 @@ DeletionDate      :
 RetentionDays     : 35
 ```
 
-Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 35 hari melalui pemipaan dalam objek database.
+Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk database01 hingga 35 hari melalui perpipaan dalam objek database.
 
 ### Contoh 3
 ```powershell
@@ -84,12 +87,12 @@ DeletionDate      : 2019-03-02 11:00:16 PM
 RetentionDays     : 8
 ```
 
-Perintah ini menetapkan kebijakan penyimpanan jangka pendek untuk semua database yang dihapus yang bernama DB1 melalui pemipaan dalam objek database yang dihapus. Catatan, Anda hanya dapat mengurangi periode penyimpanan pada database yang dihapus.
+Perintah ini mengatur kebijakan penyimpanan jangka pendek untuk semua database yang dihapus bernama DB1 melalui pipa dalam objek database yang dihapus. Catatan Anda hanya bisa mengurangi periode penyimpanan pada database yang dihapus.
 
 ## PARAMETERS
 
 ### -DatabaseName
-Nama Database Azure SQL Instance yang akan diambil cadangannya.
+Nama Database Instans Azure SQL untuk mengambil cadangan.
 
 ```yaml
 Type: System.String
@@ -118,8 +121,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeletionDate
-Tanggal penghapusan Database Contoh SQL Azure untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
+### -PenghapusanDate
+Tanggal penghapusan Database Instans Azure SQL untuk mengambil cadangan, dengan presisi milidetik (misalnya 2016-02-23T00:21:22.847Z)
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek database langsung atau yang dihapus untuk mendapatkan/menetapkan kebijakan.
+Objek database langsung atau dihapus untuk mendapatkan/mengatur kebijakan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Sql.ManagedDatabase.Model.AzureSqlManagedDatabaseBaseModel
@@ -149,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -InstanceName
-Nama Instans SQL Terkelola Azure tempat database berada.
+Nama Azure SQL Managed Instance database berada.
 
 ```yaml
 Type: System.String
@@ -209,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +228,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

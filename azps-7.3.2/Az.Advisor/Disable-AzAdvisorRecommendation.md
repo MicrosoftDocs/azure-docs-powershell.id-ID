@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.advisor/disable-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Advisor/Advisor/help/Disable-AzAdvisorRecommendation.md
-ms.openlocfilehash: 689d75b5d43520b50d370a3ddc12c73429c52bb6
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 03b8b0c5e6ec4db295cbe0df0b42ba5154d309dd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140382879"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142262095"
 ---
 # Disable-AzAdvisorRecommendation
 
 ## SYNOPSIS
-Nonaktifkan rekomendasi Penasihat Azure.
+Menonaktifkan rekomendasi Azure Advisor.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.advisor/disable-azadvisorrecommendation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Disable-AzAdvisorRecommendation [[-Days] <Int32>] [-InputObject] <PsAzureAdvisor
 ```
 
 ## DESCRIPTION
-Membuat penekanan untuk rekomendasi, ini memungkinkan rekomendasi tertentu untuk menunda untuk durasi tertentu atau tanpa batas.
+Membuat penindasan untuk rekomendasi, ini memungkinkan rekomendasi tertentu untuk ditunda selama durasi tertentu atau tanpa batas.
 
 ## EXAMPLES
 
@@ -56,7 +59,7 @@ Name          : HardCodedSupressionName
 Type          : Microsoft.Advisor/suppressions
 ```
 
-Buat penekanan untuk nama rekomendasi tertentu dengan Namaekan Default dan hari default sebagai -1.
+Buat penindasan untuk nama rekomendasi tertentu dengan NamaPenyembukan default dan hari default sebagai -1.
 
 ### Contoh 2
 ```powershell
@@ -72,7 +75,7 @@ Name          : HardCodedSupressionName
 Type          : Microsoft.Advisor/suppressions
 ```
 
-Penekanan dibuat untuk bagian yang recommendation_id.
+Penindasan dibuat untuk recommendation_id tertentu.
 
 ### Contoh 3
 ```powershell
@@ -88,12 +91,12 @@ Name          : HardCodedSupressionName
 Type          : Microsoft.Advisor/suppressions
 ```
 
-Membuat denah, pemipaan Get-AzAdvisorRecommendation ke Nonaktifkan-AzAdvisorRecommendation.
+Membuat penindasan, perpipaan dari Get-AzAdvisorRecommendation ke Disable-AzAdvisorRecommendation.
 
 ## PARAMETERS
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -138,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Tipe objek powershell PsAzureAdvisorResourceRecommendationBase dikembalikan oleh Get-AzAdvisorRecommendation panggilan.
+Objek powershell tipe PsAzureAdvisorResourceRecommendationBase dikembalikan oleh panggilan Get-AzAdvisorRecommendation.
 
 ```yaml
 Type: PsAzureAdvisorResourceRecommendationBase
@@ -153,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendationName
-ResourceName rekomendasi
+ResourceName dari rekomendasi
 
 ```yaml
 Type: String
@@ -168,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id rekomendasi untuk disimpan.
+Id dari rekomendasi yang akan ditekan.
 
 ```yaml
 Type: String
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable.
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
 Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

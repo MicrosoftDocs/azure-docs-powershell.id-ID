@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHubNamespace.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Get-AzureRmEventHubNamespace.md
 ms.openlocfilehash: 35f9342fa66b46cfd029d6440d8d82134a6822a8
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "140864648"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098446"
 ---
 # Get-AzureRmEventHubNamespace
 
 ## SYNOPSIS
-Mendapatkan detail ruang nama Hub Acara, atau mendapatkan daftar semua ruang hub acara di langganan Azure saat ini.
+Mendapatkan detail ruang nama Hub Acara, atau mendapatkan daftar semua ruang nama Hub Acara dalam langganan Azure saat ini.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,9 +27,9 @@ Get-AzureRmEventHubNamespace [[-ResourceGroupName] <String>] [[-Name] <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmEventHubNamespace mendapatkan detail dari ruang nama Hub Kejadian yang ditentukan, atau daftar semua ruang nama Hub Acara di langganan Azure saat ini.
-Jika nama ruang nama disediakan, rincian dari sebuah ruang nama Hub Acara dikembalikan.
-Jika nama ruang nama tidak disediakan, daftar nama ruang nama dikembalikan.
+Cmdlet Get-AzureRmEventHubNamespace mendapatkan detail ruang nama Hub Kejadian tertentu, atau daftar semua ruang nama Hub Acara dalam langganan Azure saat ini.
+Jika nama ruang nama disediakan, detail ruang nama Hub Acara tunggal akan dikembalikan.
+Jika nama ruang nama tidak disediakan, daftar ruang nama akan dikembalikan.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Jika nama ruang nama tidak disediakan, daftar nama ruang nama dikembalikan.
 PS C:\> Get-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName
 ```
 
-Mendapatkan detail ruang nama \`MyNamespaceName di\` grup sumber daya \`MyResourceGroupName\`.
+Mendapatkan detail ruang \`nama MyNamespaceName\` dalam grup \`sumber daya MyResourceGroupName\`.
 
 ## PARAMETERS
 
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Kumpulan Nama EventHub
+Nama Ruang Nama EventHub
 
 ```yaml
 Type: System.String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

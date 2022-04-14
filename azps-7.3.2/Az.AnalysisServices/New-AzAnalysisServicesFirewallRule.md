@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.analysisservices
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesFirewallRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/AnalysisServices/AnalysisServices/help/New-AzAnalysisServicesFirewallRule.md
-ms.openlocfilehash: b3b18cde7b18279c1968367cc08cdc5915590b14
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 67f06651e367d20ce9012352aa3f3456bdc97571
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140203254"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142261861"
 ---
 # New-AzAnalysisServicesFirewallRule
 
 ## SYNOPSIS
 Membuat aturan firewall Analysis Services baru
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.analysisservices/new-azanalysisservicesfirewallrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzAnalysisServicesFirewallRule [-FirewallRuleName] <String> [-RangeStart] <S
 ```
 
 ## DESCRIPTION
-Opsi New-AzAnalysisServicesFirewallRule membuat objek aturan firewall baru.
+New-AzAnalysisServicesFirewallRule membuat objek aturan firewall baru.
 
 ## EXAMPLES
 
@@ -34,7 +37,7 @@ Opsi New-AzAnalysisServicesFirewallRule membuat objek aturan firewall baru.
 New-AzAnalysisServicesFirewallRule -FirewallRuleName rule1 -RangeStart 0.0.0.0 -RangeEnd 255.255.255.255
 ```
 
-Membuat aturan firewall bernama rule1 dengan rentang mulai 0.0.0.0 dan rentang akhir 255.255.255.255.255
+Membuat aturan firewall bernama aturan1 dengan rentang mulai 0.0.0.0 dan rentang akhir 255.255.255.255
 
 ## PARAMETERS
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -RangeEnd
-Rentang akhir aturan firewall
+Akhir rentang aturan firewall
 
 ```yaml
 Type: System.String
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -RangeStart
-Awal rentang aturan firewall
+Rentang awal aturan firewall
 
 ```yaml
 Type: System.String
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

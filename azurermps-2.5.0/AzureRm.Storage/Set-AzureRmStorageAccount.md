@@ -5,16 +5,16 @@ ms.assetid: 4D7EEDD7-89D4-4B1E-A9A1-B301E759CE72
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.storage/set-azurermstorageaccount
 schema: 2.0.0
 ms.openlocfilehash: a6f16c4ef9012f7aaf5216e0cfb24edf65ce9f4d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424411"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847390"
 ---
 # Set-AzureRmStorageAccount
 
 ## SYNOPSIS
-Mengubah akun Storage Anda.
+Mengubah akun Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,40 +39,40 @@ Set-AzureRmStorageAccount [-ResourceGroupName] <String> [-Name] <String> [-Force
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmStorageAccount** mengubah Azure Storage Anda.
-Anda dapat menggunakan cmdlet ini untuk mengubah tipe akun, memperbarui domain pelanggan, atau mengatur tag di Storage Anda.
+Cmdlet **Set-AzureRmStorageAccount** mengubah akun Azure Storage.
+Anda dapat menggunakan cmdlet ini untuk mengubah tipe akun, memperbarui domain pelanggan, atau mengatur tag pada akun Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Atur tipe akun Storage Anda
+### Contoh 1: Mengatur tipe akun Storage
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -Type "Standard_RAGRS"
 ```
 
-Perintah ini mengatur tipe Storage ke Standard_RAGRS.
+Perintah ini mengatur tipe akun Storage ke Standard_RAGRS.
 
-### Contoh 2: Mengatur domain kustom untuk akun Storage Anda
+### Contoh 2: Mengatur domain kustom untuk akun Storage
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -CustomDomainName "www.contoso.com" -UseSubDomain $True
 ```
 
-Perintah ini mengatur domain kustom untuk akun Storage tersebut.
+Perintah ini mengatur domain kustom untuk akun Storage.
 
 ### Contoh 3: Mengatur nilai tingkat akses
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -AccessTier Cool
 ```
 
-Perintah mengatur nilai Tingkat Akses menjadi keren.
+Perintah mengatur nilai Tingkat Access agar dingin.
 
-### Contoh 4: Setel domain dan tag kustom
+### Contoh 4: Mengatur domain dan tag kustom
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -CustomDomainName "www.domainname.com" -UseSubDomain $true -Tag @{tag0="value0";tag1="value1";tag2="value2"}
 ```
 
-Perintah mengatur domain dan tag kustom untuk akun Storage anda.
+Perintah mengatur domain dan tag kustom untuk akun Storage.
 
-### Contoh 5: Set Encryption KeySource to Keyvault
+### Contoh 5: Atur Encryption KeySource ke Keyvault
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -AssignIdentity
 PS C:\>$account = Get-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount"
@@ -84,16 +84,16 @@ PS C:\>Set-AzureRmKeyVaultAccessPolicy -VaultName "MyKeyVault" -ObjectId $accoun
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -KeyvaultEncryption -KeyName $key.Name -KeyVersion $key.Version -KeyVaultUri $keyVault.VaultUri
 ```
 
-Perintah ini mengatur Encryption KeySource dengan Keyvault yang dibuat baru.
+Perintah ini mengatur Encryption KeySource dengan Keyvault yang baru dibuat.
 
-### Contoh 6: Set Encryption KeySource to "Microsoft. Storage"
+### Contoh 6: Atur Encryption KeySource ke "Microsoft. Storage"
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -StorageEncryption
 ```
 
 Perintah ini mengatur Encryption KeySource ke "Microsoft. Storage"
 
-### Contoh 7: Mengatur properti NetworkRuleSet dari Storage dengan JSON
+### Contoh 7: Mengatur properti NetworkRuleSet dari akun Storage dengan JSON
 ```
 PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -NetworkRuleSet (@{bypass="Logging,Metrics";
     ipRules=(@{IPAddressOrRange="20.11.0.0/16";Action="allow"},
@@ -103,30 +103,30 @@ PS C:\>Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountNa
     defaultAction="allow"})
 ```
 
-Perintah ini mengatur properti NetworkRuleSet dari Storage lain dengan JSON
+Perintah ini mengatur properti NetworkRuleSet dari akun Storage dengan JSON
 
-### Contoh 8: Dapatkan properti NetworkRuleSet dari Storage, lalu atur ke akun Storage lain
+### Contoh 8: Dapatkan properti NetworkRuleSet dari akun Storage, dan atur ke akun Storage lain
 ```
 PS C:\> $networkRuleSet = (Get-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount").NetworkRuleSet 
 PS C:\> Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount2" -NetworkRuleSet $networkRuleSet
 ```
 
-Perintah pertama ini mendapatkan properti NetworkRuleSet dari Storage, dan perintah kedua mengaturnya ke akun Storage lain 
+Perintah pertama ini mendapatkan properti NetworkRuleSet dari akun Storage, dan perintah kedua mengaturnya ke akun Storage lain 
 
-### Contoh 9: Memutakhirkan akun Storage dengan Jenis "Storage" atau "BlobStorage" ke jenis "StorageV2" Storage lain
+### Contoh 9: Memutakhirkan akun Storage dengan Kind "Storage" atau "BlobStorage" ke akun Storage jenis "StorageV2"
 ```
 PS C:\> Set-AzureRmStorageAccount -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount" -UpgradeToStorageV2
 ```
 
-Perintah memutakhirkan akun Storage dengan Jenis "Storage" atau "BlobStorage" ke akun Storage "StorageV2".
+Perintah memutakhirkan akun Storage dengan kind "Storage" atau "BlobStorage" ke akun Storage jenis "StorageV2".
 
 ## PARAMETERS
 
 ### -AccessTier
-Menentukan tingkatan akses akun Storage yang ditentukan cmdlet ini.
-Nilai yang dapat diterima untuk parameter ini adalah: Hot dan Cool.
-Jika Anda mengubah tingkat akses, hal itu mungkin akan mengakibatkan biaya tambahan. Untuk informasi selengkapnya, [lihat Azure Blob Storage: Hot dan cool storage tiers](https://go.microsoft.com/fwlink/?LinkId=786482).
-Jika akun Storage memiliki Kind as StorageV2 atau BlobStorage, Anda dapat menentukan parameter *AccessTier.* Jika akun Storage memiliki Jenis sebagai Storage, jangan tentukan parameter *AccessTier.*
+Menentukan tingkat akses akun Storage yang diubah cmdlet ini.
+Nilai yang dapat diterima untuk parameter ini adalah: Panas dan Keren.
+Jika Anda mengubah tingkat akses, hal ini dapat mengakibatkan biaya tambahan. Untuk informasi selengkapnya, lihat [Azure Blob Storage: Tingkat penyimpanan yang panas dan keren](https://go.microsoft.com/fwlink/?LinkId=786482).
+Jika akun Storage memiliki Kind as StorageV2 atau BlobStorage, Anda dapat menentukan parameter *AccessTier*. Jika akun Storage memiliki Kind as Storage, jangan tentukan parameter *AccessTier*.
 
 ```yaml
 Type: System.String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignIdentity
-Buat dan tetapkan Identitas akun Storage baru untuk akun Storage ini untuk digunakan dengan layanan manajemen kunci seperti Azure KeyVault.
+Buat dan tetapkan identitas akun Storage baru untuk akun Storage ini untuk digunakan dengan layanan manajemen utama seperti Azure KeyVault.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableHttpsTrafficOnly
-Menunjukkan apakah akun Storage mengaktifkan lalu lintas HTTPS saja.
+Menunjukkan apakah akun Storage hanya mengaktifkan lalu lintas HTTPS atau tidak.
 
 ```yaml
 Type: System.Boolean
@@ -216,8 +216,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksakan perubahan untuk dituliskan ke Storage tersebut.
+### -Paksa
+Memaksa perubahan ditulis ke akun Storage.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyvaultEncryption
-Menunjukkan apakah menggunakan Microsoft KeyVault atau tidak untuk kunci enkripsi ketika menggunakan Storage Service Encryption. Jika KeyName, KeyVersion, dan KeyVaultUri sudah siap, KeySource akan diatur ke Microsoft.Keyvault apakah parameter ini diatur atau tidak. 
+Menunjukkan apakah Menggunakan Microsoft KeyVault untuk kunci enkripsi atau tidak saat menggunakan Enkripsi Layanan Storage. Jika KeyName, KeyVersion, dan KeyVaultUri sudah siap, KeySource akan diatur ke Microsoft.Keyvault apakah parameter ini diatur atau tidak. 
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultUri
-Ketika menggunakan Enkripsi Key Vault dengan menentukan parameter -KeyvaultEncryption, gunakan opsi ini untuk menentukan URI ke Key Vault.
+Ketika menggunakan enkripsi Key Vault dengan menentukan parameter -KeyvaultEncryption, gunakan opsi ini untuk menentukan URI ke Key Vault.
 
 ```yaml
 Type: System.String
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVersion
-Ketika menggunakan Enkripsi Key Vault dengan menentukan parameter -KeyvaultEncryption, gunakan opsi ini untuk menentukan URI ke Versi Kunci.
+Saat menggunakan enkripsi Key Vault dengan menentukan parameter -KeyvaultEncryption, gunakan opsi ini untuk menentukan URI ke Versi Kunci.
 
 ```yaml
 Type: System.String
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage diubah.
+Menentukan nama akun Storage untuk diubah.
 
 ```yaml
 Type: System.String
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkRuleSet
-NetworkRuleSet digunakan untuk menetapkan serangkaian aturan konfigurasi untuk firewall dan jaringan virtual, serta untuk mengatur nilai untuk properti jaringan seperti layanan yang diperbolehkan untuk melewati aturan dan cara menangani permintaan yang tidak cocok dengan aturan yang ditetapkan.
+NetworkRuleSet digunakan untuk menentukan sekumpulan aturan konfigurasi untuk firewall dan jaringan virtual, serta untuk mengatur nilai untuk properti jaringan seperti layanan yang diizinkan untuk melewati aturan dan cara menangani permintaan yang tidak cocok dengan aturan yang ditentukan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSNetworkRuleSet
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk mengubah Storage tersebut.
+Menentukan nama grup sumber daya untuk mengubah akun Storage.
 
 ```yaml
 Type: System.String
@@ -337,15 +337,15 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan nama SKU akun Storage tersebut.
+Menentukan nama SKU akun Storage.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Standard_LRS - Penyimpanan yang berlebihan secara lokal.
-- Standard_ZRS - Penyimpanan berlebihan zona.
-- Standard_GRS - Penyimpanan geo berlebihan.
-- Standard_RAGRS - Membaca akses yang tidak berlebihan.
-- Premium_LRS - Premium yang berlebihan secara lokal.
-Anda tidak bisa Standard_ZRS tipe Premium_LRS ke tipe akun lain.
-Anda tidak dapat mengubah tipe akun lain Standard_ZRS atau Premium_LRS.
+- Standard_LRS - Penyimpanan lokal yang berlebihan.
+- Standard_ZRS - Penyimpanan zona berlebihan.
+- Standard_GRS - Penyimpanan geo-redundan.
+- Standard_RAGRS - Membaca penyimpanan geo-redundan akses.
+- Premium_LRS - Premium penyimpanan lokal yang berlebihan.
+Anda tidak dapat mengubah tipe Standard_ZRS dan Premium_LRS ke tipe akun lain.
+Anda tidak dapat mengubah tipe akun lain ke Standard_ZRS atau Premium_LRS.
 
 ```yaml
 Type: System.String
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageEncryption
-Menunjukkan apakah menyetel atau tidak mengatur Storage enkripsi akun untuk menggunakan kunci yang dikelola Microsoft.
+Menunjukkan apakah enkripsi akun Storage diatur atau tidak untuk menggunakan kunci yang dikelola Microsoft.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -390,8 +390,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -UpgradeToStoragev2
-Mutakhirkan Storage akun Anda Dari Storage atau BlobStorage ke StorageV2.
+### -UpgradeToStorageV2
+Mutakhirkan akun Storage Jenis dari Storage atau BlobStorage ke StorageV2.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -406,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseSubDomain
-Menunjukkan apakah akan mengaktifkan validasi CName tidak langsung.
+Menunjukkan apakah mengaktifkan validasi CName tidak langsung.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -421,7 +421,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -437,7 +437,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -472,6 +472,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmStorageAccount](./Get-AzureRmStorageAccount.md)
 
-[New-AzureRmStorageAccount](./New-AzureRmStorageAccount.md)
+[AzureRmStorageAccount baru](./New-AzureRmStorageAccount.md)
 
-[Remove-AzureRmStorageAccount](./Remove-AzureRmStorageAccount.md)
+[Hapus-AzureRmstorageAccount](./Remove-AzureRmStorageAccount.md)

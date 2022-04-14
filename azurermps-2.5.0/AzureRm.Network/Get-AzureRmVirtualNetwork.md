@@ -5,11 +5,11 @@ ms.assetid: CBDF4BCB-7EB3-4D64-B19C-1314D4AB84E4
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvirtualnetwork
 schema: 2.0.0
 ms.openlocfilehash: 983c23111486a964275a7efb85031b013fb365d2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428824"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847806"
 ---
 # Get-AzureRmVirtualNetwork
 
@@ -26,18 +26,18 @@ Get-AzureRmVirtualNetwork [-Name <String>] [-ResourceGroupName <String>]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### Perluas
+### Memperluas
 ```
 Get-AzureRmVirtualNetwork -Name <String> -ResourceGroupName <String> -ExpandResource <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-**Get-AzureRmVirtualNetwork** cmdlet mendapatkan satu atau lebih jaringan virtual dan grup sumber daya.
+Cmdlet **Get-AzureRmVirtualNetwork** mendapatkan satu atau beberapa jaringan virtual n grup sumber daya.
 
 ## EXAMPLES
 
-### 1: Ambil jaringan virtual
+### 1: Mengambil jaringan virtual
 ```
 Get-AzureRmVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup
 ```
@@ -47,7 +47,7 @@ Perintah ini mendapatkan jaringan virtual bernama MyVirtualNetwork dalam grup su
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama jaringan virtual yang akan didaurkan cmdlet ini.
+Menentukan nama jaringan virtual yang didapat cmdlet ini.
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya yang menjadi bagian dari jaringan virtual.
+Menentukan nama grup sumber daya tempat jaringan maya berada.
 
 ```yaml
 Type: String
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -143,7 +143,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmVirtualNetwork](./New-AzureRmVirtualNetwork.md)
 
-[Remove-AzureRmVirtualNetwork](./Remove-AzureRmVirtualNetwork.md)
+[Hapus-AzureRmVirtualNetwork](./Remove-AzureRmVirtualNetwork.md)
 
 [Set-AzureRmVirtualNetwork](./Set-AzureRmVirtualNetwork.md)
 

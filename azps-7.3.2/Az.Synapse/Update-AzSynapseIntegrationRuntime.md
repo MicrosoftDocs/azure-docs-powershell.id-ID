@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseIntegrationRuntime.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseIntegrationRuntime.md
-ms.openlocfilehash: 15c8dfd6397f35db83191643c48f4f86f0753ce5
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1814d5d920d085c8507dc9d6e666f398da3aed22
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005134"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249309"
 ---
 # Update-AzSynapseIntegrationRuntime
 
 ## SYNOPSIS
 Memperbarui runtime integrasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapseintegrationruntime) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -48,7 +51,7 @@ Update-AzSynapseIntegrationRuntime -InputObject <PSIntegrationRuntime> [-AutoUpd
 ```
 
 ## DESCRIPTION
-Properti runtime **pembaruan-AzSynapseIntegrationRuntime** memperbarui integrasi properti runtime integrasi. Saat ini cmdlet hanya mendukung pembaruan 'AutoUpdate' dan 'AutoUpdateDelayOffset' untuk runtime integrasi yang dihosting sendiri.
+**Update-AzSynapseIntegrationRuntime** cmdlet memperbarui properti runtime integrasi. Saat ini cmdlet hanya mendukung pembaruan 'AutoUpdate' dan 'AutoUpdateDelayOffset' untuk runtime integrasi yang dihosting sendiri.
 
 ## EXAMPLES
 
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoUpdateDelayOffset
-Waktu pembaruan otomatis runtime integrasi yang dihosting sendiri pada hari tersebut.
+Waktu untuk pembaruan otomatis runtime integrasi yang dihosting sendiri.
 
 ```yaml
 Type: System.Nullable`1[System.TimeSpan]
@@ -154,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari runtime integrasi Synapse.
+Pengidentifikasi sumber daya runtime integrasi Synapse.
 
 ```yaml
 Type: System.String
@@ -168,7 +171,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -215,7 +218,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -230,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.automation/updat
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Automation/Automation/help/Update-AzAutomationSourceControl.md
-ms.openlocfilehash: f8a85cd8be6f6ddb2d54bd145f3978fc1a7c41ab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: da20ff37a8097167c3a5224c298c4d3fc5ce4fcb
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140387123"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142219285"
 ---
 # Update-AzAutomationSourceControl
 
 ## SYNOPSIS
 Memperbarui kontrol sumber Otomatisasi Azure.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.automation/update-azautomationsourcecontrol) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,12 +30,12 @@ Update-AzAutomationSourceControl -Name <String> [-AccessToken <SecureString>] [-
 ```
 
 ## DESCRIPTION
-Cmdlet Update-AzAutomationSourceControl cmdlet mengubah nilai bidang dalam kontrol sumber dalam Azure Automation.
+Cmdlet Update-AzAutomationSourceControl mengubah nilai bidang dalam kontrol sumber di Azure Automation.
 
 ## EXAMPLES
 
 ### Contoh 1
-Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Otomatisasi Azure yang bernama VSTSNative dalam akun yang bernama devAccount.
+Perintah ini mengatur bidang PublishRunbook menjadi false untuk kontrol sumber Otomatisasi Azure bernama VSTSNative di akun bernama devAccount.
 
 
 ```powershell
@@ -48,7 +51,7 @@ VSTSNative      VsoTfvc           /MyRunbooks False    False          https://co
 
 ### Contoh 2
 
-Memperbarui kontrol sumber Otomatisasi Azure. (otomatisgenerated)
+Memperbarui kontrol sumber Otomatisasi Azure. (autogenerasi)
 
 <!-- Aladdin Generated Example -->
 ```powershell
@@ -102,7 +105,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Cabang
+### -Branch
 Cabang kontrol sumber.
 
 ```yaml
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
 Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/remove-azurermapplicationgatewayprobeconfig
 schema: 2.0.0
-ms.openlocfilehash: d2c29e6611d765a94b29d828f6ece734b51821a3c459563967fb40ab69dd632a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 39ce61f4a1e973dfdac8104a6364bdd3d8b9151a
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140861642"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847652"
 ---
 # Remove-AzureRmApplicationGatewayProbeConfig
 
 ## SYNOPSIS
-Menghapus properti kesehatan dari gateway aplikasi yang sudah ada.
+Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,21 +25,21 @@ Remove-AzureRmApplicationGatewayProbeConfig -Name <String> -ApplicationGateway <
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmApplicationGatewayProbeConfig menghapus cmdlet heath cloud dari gateway aplikasi yang sudah ada.
+Cmdlet Remove-AzureRmApplicationGatewayProbeConfig menghapus penyelidikan heath dari gateway aplikasi yang sudah ada.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus health gateway dari gateway aplikasi yang sudah ada
+### Contoh 1: Menghapus pemeriksaan kesehatan dari gateway aplikasi yang sudah ada
 ```
 PS C:\>$Gateway = Remove-AzureRmApplicationGatewayProbeConfig -ApplicationGateway Gateway -Name "Probe04"
 ```
 
-Perintah ini menghapus perintah kesehatan yang bernama Default04 dari gateway aplikasi yang bernama Gateway.
+Perintah ini menghapus pemeriksaan kesehatan bernama Probe04 dari gateway aplikasi bernama Gateway.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi tempat cmdlet ini menghapus cmdlet.
+Menentukan gateway aplikasi tempat cmdlet ini menghapus probe.
 
 ```yaml
 Type: PSApplicationGateway
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama cmdlet ini.
+Menentukan nama probe yang akan dihapus cmdlet ini.
 
 ```yaml
 Type: String
@@ -84,12 +84,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### PSApplicationGateway
-Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari saluran
+Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari pipeline
 
 ## OUTPUTS
 
@@ -99,7 +99,7 @@ Parameter 'ApplicationGateway' menerima nilai tipe 'PSApplicationGateway' dari s
 
 ## RELATED LINKS
 
-[Menghapus default dari gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#remove-a-probe-from-an-existing-application-gateway)
+[Menghapus probe dari gateway aplikasi yang sudah ada](https://azure.microsoft.com/en-us/documentation/articles/application-gateway-create-probe-ps/#remove-a-probe-from-an-existing-application-gateway)
 
 [Add-AzureRmApplicationGatewayProbeConfig]()
 

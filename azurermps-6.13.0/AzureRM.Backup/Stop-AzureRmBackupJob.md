@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Stop-AzureRmBackupJob.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Stop-AzureRmBackupJob.md
 ms.openlocfilehash: 800b5c6e04e0842113db7fb3494815bcd97ebfb9
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424576"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142100772"
 ---
 # Stop-AzureRmBackupJob
 
 ## SYNOPSIS
-Membatalkan pekerjaan Pencadangan yang sudah ada.
+Membatalkan tugas Pencadangan yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -35,39 +35,39 @@ Stop-AzureRmBackupJob -Job <AzureRMBackupJob> [-DefaultProfile <IAzureContextCon
 
 ## DESCRIPTION
 Cmdlet **Stop-AzureRmBackupJob** membatalkan pekerjaan Azure Backup yang sudah ada.
-Gunakan parameter ini untuk menghentikan pekerjaan yang membutuhkan waktu terlalu lama dan memblokir aktivitas lain.
-Anda bisa membatalkan hanya tipe pekerjaan berikut ini: 
-- Pencadangan
-- Pulihkan
+Gunakan parameter ini untuk menghentikan pekerjaan yang memakan waktu terlalu lama dan memblokir aktivitas lainnya.
+Anda hanya dapat membatalkan jenis pekerjaan berikut: 
+- Cadangan
+- Mengembalikan
 
 ## EXAMPLES
 
-### Contoh 1: Menghentikan pekerjaan cadangan menggunakan ID pekerjaan
+### Contoh 1: Menghentikan pekerjaan pencadangan dengan menggunakan ID pekerjaan
 ```
 PS C:\>$Vault = Get-AzureRmBackupVault -Name "Vault03" 
 PS C:\> $Job = Get-AzureRmBackupJob -Vault $Vault -Operation Backup
 PS C:\> Stop-AzureRmBackupJob -Vault $Vault -JobID $Job.InstanceId
 ```
 
-Perintah pertama mengambil vault bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan pekerjaan pencadangan dari vault di $Vault menggunakan cmdlet **Get-AzureRmBackupJob.**
-Perintah menyimpan pekerjaan di $Job berbeda.
-Dalam contoh ini, hanya ada satu operasi pencadangan di vault yang ditentukan.
+Perintah pertama mendapatkan kubah bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault** .
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan pekerjaan cadangan dari kubah di $Vault menggunakan cmdlet **Get-AzureRmBackupJob** .
+Perintah menyimpan pekerjaan dalam variabel $Job.
+Dalam contoh ini, hanya ada satu operasi pencadangan dalam kubah yang ditentukan.
 Perintah terakhir menghentikan pekerjaan yang memiliki ID yang ditentukan.
 
-### Contoh 2: Menghentikan semua operasi Pemulihan
+### Contoh 2: Hentikan semua operasi Pemulihan
 ```
 PS C:\>Get-AzureRmBackupJob -Vault $Vault -Operation Restore | Stop-AzureRmBackupJob
 ```
 
-Perintah ini akan mendapatkan semua operasi pemulihan di $Vault vault, lalu meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan semua operasi pemulihan dalam kubah di $Vault, lalu meneruskannya ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet saat ini menghentikan setiap pekerjaan.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 ```
 
 ### -Job
-Menentukan pekerjaan yang dibatalkan cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupJob,** gunakan cmdlet Get-AzureRmBackupJob cmdlet.
+Menentukan pekerjaan yang cmdlet ini batalkan.
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan cmdlet Get-AzureRmBackupJob.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 ```
 
 ### -JobID
-Menentukan pekerjaan yang dibatalkan cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupJob,** gunakan cmdlet Get-AzureRmBackupJob cmdlet.
+Menentukan pekerjaan yang cmdlet ini batalkan.
+Untuk mendapatkan objek **AzureRmBackupJob** , gunakan cmdlet Get-AzureRmBackupJob.
 
 ```yaml
 Type: System.String
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan vault Cadangan di mana cmdlet ini membatalkan pekerjaan.
-Untuk mendapatkan objek **AzureRmBackupVault,** gunakan cmdlet Get-AzureRmBackupVault cmdlet.
+Menentukan kubah Cadangan tempat cmdlet ini membatalkan pekerjaan.
+Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
@@ -130,12 +130,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
-Parameter: Pekerjaan (ByValue)
+Parameter: Job (ByValue)
 
 ## OUTPUTS
 
@@ -149,6 +149,6 @@ Parameter: Pekerjaan (ByValue)
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[Wait-AzureRmBackupJob](./Wait-AzureRmBackupJob.md)
+[Tunggu-AzureRmBackupJob](./Wait-AzureRmBackupJob.md)
 
 

@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.servi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Start-AzureRmServiceBusMigration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ServiceBus/Commands.ServiceBus/help/Start-AzureRmServiceBusMigration.md
-ms.openlocfilehash: 2650f951198dfcc5e00b6f1e80dddb30b9d90fe5168c949c8b0dc20efaaa08ff
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 979db64fb11b4fffc901d96811b24be5c79f6b63
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140860004"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142248170"
 ---
 # Start-AzureRmServiceBusMigration
 
 ## SYNOPSIS
-Membuat konfigurasi Migrasi baru dan memulai migrasi entitas dari Standar ke Premium nama
+Membuat konfigurasi Migrasi baru dan mulai melakukan migrasi entitas dari Standar ke Premium ruang nama
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Start-AzureRmServiceBusMigration [-ResourceGroupName] <String> [-Name] <String> 
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmServiceBusMigration** membuat konfigurasi Migrasi baru dan memulai migrasi entitas dari Standar ke Premium namanya
+Cmdlet **Start-AzureRmServiceBusMigration** membuat konfigurasi Migrasi baru dan mulai melakukan migrasi entitas dari Standar ke Premium ruang nama
 
 ## EXAMPLES
 
@@ -44,12 +44,12 @@ TargetNamespace   : /subscriptions/SubscriptionId/resourceGroups/ResourceGroup/p
 PostMigrationName : TestingNamespaceStandardMirgationPostMigration
 ```
 
-Membuat konfigurasi migrasi baru untuk ruang nama TestingNamespaceStandardMirgation' menjadi 'TestingNamespacePremiumMirgation'
+Membuat konfigurasi migrasi baru untuk ruang nama 'TestingNamespaceStandardMirgation' ke ruang nama 'TestingNamespacePremiumMirgation'
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostMigrationName
-Pasca Migrasi Nama untuk Ruang Nama Mandiri di Migrasi
+Post Migration Name for Standrad Namespace in Migration
 
 ```yaml
 Type: System.String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetNameSpace
-Premium Nama Nama ID ARM
+Premium Id ARM Ruang Nama
 
 ```yaml
 Type: System.String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -170,11 +170,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

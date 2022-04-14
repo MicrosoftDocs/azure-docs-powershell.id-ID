@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightMapReduceJobDefinition.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/New-AzureRmHDInsightMapReduceJobDefinition.md
-ms.openlocfilehash: 1cb2c36942089ae4786521f8221f081d745d1e9c04c9912ef5bb008a5a32a4b1
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 284bd75abb2a2deaeaf13ad6edeb16718cbcdacd
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864588"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142097812"
 ---
 # New-AzureRmHDInsightMapReduceJobDefinition
 
@@ -29,7 +29,7 @@ New-AzureRmHDInsightMapReduceJobDefinition [-Arguments <String[]>] [-Files <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmHDInsightMapReduceJobDefinition** menentukan pekerjaan MapReduce baru untuk digunakan dengan kluster Azure HDInsight.
+Cmdlet **New-AzureRmHDInsightMapReduceJobDefinition** menentukan pekerjaan MapReduce baru untuk digunakan dengan cluster Azure HDInsight.
 
 ## EXAMPLES
 
@@ -52,8 +52,8 @@ Perintah ini membuat definisi pekerjaan MapReduce.
 ## PARAMETERS
 
 ### -Argumen
-Menentukan array argumen untuk pekerjaan itu.
-Argumen diberikan sebagai argumen baris perintah untuk setiap tugas.
+Menentukan array argumen untuk pekerjaan tersebut.
+Argumen dikirim sebagai argumen baris perintah ke setiap tugas.
 
 ```yaml
 Type: System.String[]
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClassName
-Menentukan kelas kerja dalam file JAR.
+Menentukan kelas pekerjaan dalam file JAR.
 
 ```yaml
 Type: System.String
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Defines
-Menentukan nilai konfigurasi Hadoop yang akan diatur ketika pekerjaan berjalan.
+Menentukan nilai konfigurasi Hadoop untuk diatur saat pekerjaan berjalan.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -112,7 +112,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -File
+### -Files
 Menentukan kumpulan file yang terkait dengan pekerjaan Hive.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -LibJars
-Menentukan jarS lib untuk pekerjaan tersebut.
+Menentukan JARS lib untuk pekerjaan tersebut.
 
 ```yaml
 Type: System.String[]
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -StatusFolder
-Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk pekerjaan.
+Menentukan lokasi folder yang berisi output standar dan output kesalahan untuk suatu pekerjaan.
 
 ```yaml
 Type: System.String
@@ -188,11 +188,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

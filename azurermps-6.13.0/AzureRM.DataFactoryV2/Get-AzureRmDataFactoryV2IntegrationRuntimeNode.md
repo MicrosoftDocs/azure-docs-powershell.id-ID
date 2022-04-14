@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2IntegrationRuntimeNode.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactoryV2/Commands.DataFactoryV2/help/Get-AzureRmDataFactoryV2IntegrationRuntimeNode.md
 ms.openlocfilehash: e8f631b485c62dba2e3871d5c2deec69881097af
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140864951"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065037"
 ---
 # Get-AzureRmDataFactoryV2IntegrationRuntimeNode
 
 ## SYNOPSIS
-Mendapatkan informasi node runtime integrasi.
+Mendapatkan informasi simpul runtime integrasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -41,11 +41,11 @@ Get-AzureRmDataFactoryV2IntegrationRuntimeNode -Name <String> [-IpAddress]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmDataFactoryV2IntegrationRuntimeNode** mendapatkan informasi detail node runtime integrasi.
+Cmdlet **Get-AzureRmDataFactoryV2IntegrationRuntimeNode** mendapatkan informasi detail dari simpul runtime integrasi.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan informasi detail node runtime integrasi.
+### Contoh 1: Mendapatkan informasi detail dari simpul runtime integrasi.
 ```
 PS C:\> Get-AzureRmDataFactoryV2IntegrationRuntimeNode -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2'  -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1'
 
@@ -73,9 +73,9 @@ MaxConcurrentJobs      : 48
 IpAddress              :
 ```
 
-Cmdlet mendapatkan informasi node bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2'.
+Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2'.
 
-### Contoh 2: Mendapatkan informasi detail node runtime integrasi bersama dengan alamat IP.
+### Contoh 2: Mendapatkan informasi detail dari simpul runtime integrasi bersama dengan alamat IP.
 ```
 PS C:\> Get-AzureRmDataFactoryV2IntegrationRuntimeNode -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2'  -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -IpAddress
 
@@ -103,7 +103,7 @@ MaxConcurrentJobs      : 48
 IpAddress              : 167.220.1.167
 ```
 
-Cmdlet mendapatkan informasi node yang bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2', termasuk alamat IP.
+Cmdlet mendapatkan informasi simpul bernama 'Node_1' dalam runtime integrasi yang dihosting sendiri 'test-selfhost-ir' di pabrik data 'test-df-eu2', termasuk alamat IP.
 
 ## PARAMETERS
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -IpAddress
-Alamat IP node runtime integrasi.
+Alamat IP simpul runtime integrasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama node runtime integrasi.
+Nama simpul runtime integrasi.
 
 ```yaml
 Type: System.String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -244,7 +244,7 @@ Parameter: InputObject (ByValue)
 ### Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories, copy, activities, integration runtime
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik, salinan, aktivitas, runtime integrasi
 
 ## RELATED LINKS
 

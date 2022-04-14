@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.vmware/update-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/VMware/help/Update-AzVMwarePrivateCloud.md
-ms.openlocfilehash: 6ca6070f96715d74ced570cbbc9160fd934f9c15
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 547e8c812585d7d01b4db16ac2cacd01798d3ab2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140389907"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249057"
 ---
 # Update-AzVMwarePrivateCloud
 
 ## SYNOPSIS
-Memperbarui awan privat
+Memperbarui awan pribadi
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.vmware/update-azvmwareprivatecloud) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +45,11 @@ Update-AzVMwarePrivateCloud -InputObject <IVMwareIdentity> [-AvailabilitySeconda
 ```
 
 ## DESCRIPTION
-Memperbarui awan privat
+Memperbarui awan pribadi
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui ukuran cloud privat menurut nama
+### Contoh 1: Memperbarui ukuran awan privat menurut nama
 ```powershell
 PS C:\> Update-AzVMwarePrivateCloud -Name azps_test_cloud -ResourceGroupName azps_test_group -ManagementClusterSize 4
 
@@ -55,9 +58,9 @@ Location      Name            Type                        ResourceGroupName
 australiaeast azps_test_cloud Microsoft.AVS/privateClouds azps_test_group
 ```
 
-Perbarui ukuran awan privat menurut nama
+Memperbarui ukuran awan privat menurut nama
 
-### Contoh 2: Perbarui ukuran cloud privat
+### Contoh 2: Memperbarui ukuran cloud pribadi
 ```powershell
 PS C:\> Get-AzVMwarePrivateCloud -ResourceGroupName azps_test_group -Name azps_test_cloud | Update-AzVMwarePrivateCloud -ManagementClusterSize 4
 
@@ -85,8 +88,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AvailabilitySecirisanryZone
-Zona ketersediaan sekunder untuk awan privat
+### -AvailabilitySecondaryZone
+Zona ketersediaan sekunder untuk awan pribadi
 
 ```yaml
 Type: System.Int32
@@ -101,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilityStrategy
-Strategi ketersediaan untuk awan privat
+Strategi ketersediaan untuk cloud pribadi
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.AvailabilityStrategy
@@ -115,8 +118,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -KetersediaanZone
-Zona ketersediaan utama untuk awan privat
+### -AvailabilityZone
+Zona ketersediaan utama untuk awan pribadi
 
 ```yaml
 Type: System.Int32
@@ -146,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionStatus
-Status kunci enkripsi yang dikelola oleh pelanggan
+Status kunci enkripsi yang dikelola pelanggan
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.EncryptionState
@@ -161,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdentitySource
-vCenter Masuk Tunggal Pada Sumber Identitas Untuk membuat, lihat bagian CATATAN untuk properti IDENTITYSOURCE dan buat tabel hash.
+vCenter Single Sign On Identity Sources To construct, see NOTES section for IDENTITYSOURCE properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.Api20211201.IIdentitySource[]
@@ -176,9 +179,9 @@ Accept wildcard characters: False
 ```
 
 ### -IdentityType
-Tipe identitas yang digunakan untuk awan privat.
+Tipe identitas yang digunakan untuk awan pribadi.
 Tipe 'SystemAssigned' merujuk pada identitas yang dibuat secara implisit.
-Tipe 'Tidak Ada' akan menghapus identitas apa pun dari Awan Privat.
+Tipe 'Tidak Ada' akan menghapus identitas apa pun dari Awan Pribadi.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Support.ResourceIdentityType
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.VMware.Models.IVMwareIdentity
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyVaultPropertyKeyVaultUrl
-URL vault.
+URL kubah.
 
 ```yaml
 Type: System.String
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama awan privat
+Nama awan pribadi
 
 ```yaml
 Type: System.String
@@ -313,7 +316,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -374,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -390,7 +393,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -405,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -424,43 +427,43 @@ PROPERTI PARAMETER KOMPLEKS
 Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang berisi properti yang sesuai. Untuk informasi tentang tabel hash, jalankan Get-Help about_Hash_Tables.
 
 
-IDENTITYSOURCE <IIdentitySource[]>: vCenter Masuk Tunggal Pada Sumber Identitas
-  - `[Alias <String>]`: Nama Net ADMINISTRATOR domain
-  - `[BaseGroupDn <String>]`: Nama basis khusus untuk grup
-  - `[BaseUserDn <String>]`: Nama basis khusus untuk pengguna
+IDENTITYSOURCE <IIdentitySource[]>: vCenter Single Sign On Identity Sources
+  - `[Alias <String>]`: Nama NetBIOS domain
+  - `[BaseGroupDn <String>]`: Nama dasar yang dibedakan untuk grup
+  - `[BaseUserDn <String>]`: Nama dasar yang dibedakan untuk pengguna
   - `[Domain <String>]`: Nama dns domain
   - `[Name <String>]`: Nama sumber identitas
-  - `[Password <String>]`: Kata sandi pengguna Direktori Aktif dengan minimal akses baca-saja ke Basis DN untuk pengguna dan grup.
+  - `[Password <String>]`: Kata sandi pengguna Direktori Aktif dengan minimal akses baca-saja ke DN Dasar untuk pengguna dan grup.
   - `[PrimaryServer <String>]`: URL server utama
   - `[SecondaryServer <String>]`: URL server sekunder
-  - `[Ssl <SslEnum?>]`: Memproteksi komunikasi LDAP menggunakan sertifikat SSL (LDAPS)
-  - `[Username <String>]`: ID pengguna Direktori Aktif dengan minimal akses baca-saja ke Basis DN untuk pengguna dan grup
+  - `[Ssl <SslEnum?>]`: Melindungi komunikasi LDAP menggunakan sertifikat SSL (LDAPS)
+  - `[Username <String>]`: ID pengguna Direktori Aktif dengan minimal akses baca-saja ke DN Dasar untuk pengguna dan grup
 
 INPUTOBJECT <IVMwareIdentity>: Parameter Identitas
-  - `[AddonName <String>]`: Nama add-on untuk awan privat
+  - `[AddonName <String>]`: Nama add-on untuk awan pribadi
   - `[AuthorizationName <String>]`: Nama Otorisasi Sirkuit ExpressRoute di awan pribadi
   - `[CloudLinkName <String>]`: Nama sumber daya tautan awan
-  - `[ClusterName <String>]`: Nama kluster di awan privat
-  - `[DatastoreName <String>]`: Nama datastore dalam kluster awan privat
-  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Secara umum sama seperti nama tampilan DHCP
-  - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Secara umum sama seperti nama tampilan Layanan DNS
-  - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Secara umum sama seperti nama tampilan Zona DNS
-  - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Secara umum sama seperti nama tampilan Gateway
-  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan privat
-  - `[HcxEnterpriseSiteName <String>]`: Nama Situs ENTERPRISE PORTALX di awan pribadi
+  - `[ClusterName <String>]`: Nama kluster di cloud pribadi
+  - `[DatastoreName <String>]`: Nama datastore di kluster cloud privat
+  - `[DhcpId <String>]`: Pengidentifikasi DHCP NSX. Umumnya sama dengan nama tampilan DHCP
+  - `[DnsServiceId <String>]`: Pengidentifikasi Layanan DNS NSX. Umumnya sama dengan nama tampilan Layanan DNS
+  - `[DnsZoneId <String>]`: Pengidentifikasi Zona DNS NSX. Umumnya sama dengan nama tampilan Zona DNS
+  - `[GatewayId <String>]`: Pengidentifikasi Gateway NSX. Umumnya sama dengan nama tampilan Gateway
+  - `[GlobalReachConnectionName <String>]`: Nama koneksi jangkauan global di awan pribadi
+  - `[HcxEnterpriseSiteName <String>]`: Nama Situs HCX Enterprise di awan pribadi
   - `[Id <String>]`: Jalur identitas sumber daya
-  - `[Location <String>]`: Azure kawasan
-  - `[PlacementPolicyName <String>]`: Nama kebijakan penempatan VMware v Distributed Resource Scheduler (DRS)
-  - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Biasanya sama seperti nama tampilan Pencerminan Port
-  - `[PrivateCloudName <String>]`: Nama awan privat
-  - `[PublicIPId <String>]`: Pengidentifikasi Blokir IP Publik NSX. Secara umum sama seperti nama tampilan Blok IP Publik
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
-  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan privat
-  - `[ScriptExecutionName <String>]`: Nama sumber daya eksekusi skrip yang diminta pengguna
-  - `[ScriptPackageName <String>]`: Nama paket skrip di awan privat
-  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Biasanya sama seperti nama tampilan Segmen
+  - `[Location <String>]`: Kawasan Azure
+  - `[PlacementPolicyName <String>]`: Nama kebijakan penempatan VMware vSphere Distributed Resource Scheduler (DRS)
+  - `[PortMirroringId <String>]`: Pengidentifikasi Pencerminan Port NSX. Umumnya sama dengan nama tampilan Port Mirroring
+  - `[PrivateCloudName <String>]`: Nama awan pribadi
+  - `[PublicIPId <String>]`: Pengidentifikasi Blok IP Publik NSX. Umumnya sama dengan nama tampilan Blok IP Publik
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
+  - `[ScriptCmdletName <String>]`: Nama sumber daya cmdlet skrip dalam paket skrip di awan pribadi
+  - `[ScriptExecutionName <String>]`: Nama sumber eksekusi skrip yang diminta pengguna
+  - `[ScriptPackageName <String>]`: Nama paket skrip di awan pribadi
+  - `[SegmentId <String>]`: Pengidentifikasi Segmen NSX. Umumnya sama dengan nama tampilan Segmen
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[VMGroupId <String>]`: Pengidentifikasi NSX VM Group. Biasanya sama seperti nama tampilan VM Group
+  - `[VMGroupId <String>]`: Pengidentifikasi Grup VM NSX. Umumnya sama dengan nama tampilan Grup VM
   - `[VirtualMachineId <String>]`: Pengidentifikasi Mesin Virtual
 
 ## RELATED LINKS

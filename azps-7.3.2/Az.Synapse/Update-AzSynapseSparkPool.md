@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/update-a
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSparkPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/Update-AzSynapseSparkPool.md
-ms.openlocfilehash: e3efdabb43665470014c7e2ee6e6ca40bf8dc108
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: deb433994769c9ab6ff75e9364bf0c13f9f4de4d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140390034"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249291"
 ---
 # Update-AzSynapseSparkPool
 
 ## SYNOPSIS
-Memperbarui pool Apache Spark dalam Azure Synapse Analytics.
+Memperbarui kumpulan Apache Spark di Azure Synapse Analytics.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/update-azsynapsesparkpool) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -66,7 +69,7 @@ Update-AzSynapseSparkPool -ResourceId <String> [-Tag <Hashtable>] [-EnableAutoSc
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzSynapseSparkPool** memperbarui pool Apache Spark dalam Azure Synapse Analytics.
+Cmdlet **Update-AzSynapseSparkPool** memperbarui kumpulan Apache Spark di analitik Azure Synapse.
 
 ## EXAMPLES
 
@@ -75,7 +78,7 @@ Cmdlet **Update-AzSynapseSparkPool** memperbarui pool Apache Spark dalam Azure S
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -Tag @{"key" = "value"} -NodeCount 5 -NodeSize Medium
 ```
 
-Perintah ini memperbarui kolam Apache Spark dalam Azure Synapse Analytics.
+Perintah ini memperbarui kumpulan Apache Spark di Azure Synapse Analytics.
 
 ### Contoh 2
 ```powershell
@@ -83,7 +86,7 @@ PS C:\> $pool = Get-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name Con
 $pool | Update-AzSynapseSparkPool -Tag @{"key" = "value1"}
 ```
 
-Perintah ini memperbarui kolam Apache Spark dalam Azure Synapse Analytics melalui pipeline.
+Perintah ini memperbarui kumpulan Apache Spark di Azure Synapse Analytics melalui pipeline.
 
 ### Contoh 3
 ```powershell
@@ -91,42 +94,42 @@ PS C:\> $ws = Get-AzSynapseWorkspace -Name ContosoWorkspace
 PS C:\> $ws | Update-AzSynapseSparkPool -Name ContosoSparkPool -Tag @{"key" = "value2"}
 ```
 
-Perintah ini memperbarui kolam Apache Spark dalam Azure Synapse Analytics melalui pipeline.
+Perintah ini memperbarui kumpulan Apache Spark di Azure Synapse Analytics melalui pipeline.
 
 ### Contoh 4
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -ResourceId /subscriptions/21686af7-58ec-4f4d-9c68-f431f4db4edd/resourceGroups/ContosoResourceGroup/providers/Microsoft.Synapse/workspaces/ContosoWorkspace/bigDataPools/ContosoSparkPool -Tag @{"key" = "value3"}
 ```
 
-Perintah ini memperbarui kolam Apache Spark dalam Azure Synapse Analytics dengan ID sumber daya.
+Perintah ini memperbarui kumpulan Apache Spark di Analitik Azure Synapse dengan ID sumber daya.
 
 ### Contoh 5
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -EnableAutoScale $true -AutoScaleMinNodeCount 3 -AutoScaleMaxNodeCount 7
 ```
 
-Perintah ini mengaktifkan skala otomatis untuk pool Apache Spark dalam Azure Synapse Analytics.
+Perintah ini memungkinkan skala otomatis untuk kumpulan Apache Spark di analitik Azure Synapse.
 
 ### Contoh 6
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -EnableAutoScale $false
 ```
 
-Perintah ini menonaktifkan skala otomatis untuk pool Apache Spark dalam Azure Synapse Analytics.
+Perintah ini menonaktifkan skala otomatis untuk kumpulan Apache Spark di Azure Synapse Analytics.
 
 ### Contoh 7
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -EnableAutoPause $true -AutoPauseDelayInMinute 15
 ```
 
-Perintah ini mengaktifkan jeda otomatis untuk kolam renang Apache Spark dalam Azure Synapse Analytics.
+Perintah ini memungkinkan jeda otomatis untuk kumpulan Apache Spark di analitik Azure Synapse.
 
 ### Contoh 8
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -EnableAutoPause $false
 ```
 
-Perintah ini menonaktifkan jeda otomatis untuk kolam renang Apache Spark dalam Azure Synapse Analytics.
+Perintah ini menonaktifkan jeda otomatis untuk kumpulan Apache Spark di Azure Synapse Analytics.
 
 ### Contoh 9
 ```powershell
@@ -134,7 +137,7 @@ PS C:\> $packages = Get-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspac
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -PackageAction Add -Package $packages
 ```
 
-Perintah pertama mengambil paket ruang kerja. Perintah kedua menautkan paket ruang kerja ini ke kolam renang Apache Spark dalam Azure Synapse Analytics.
+Perintah pertama mengambil paket ruang kerja. Perintah kedua menautkan paket ruang kerja ini ke kumpulan Apache Spark di analitik Azure Synapse.
 
 ### Contoh 10
 ```powershell
@@ -142,7 +145,7 @@ PS C:\> $package = Get-AzSynapseWorkspacePackage -WorkspaceName ContosoWorkspace
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -PackageAction Remove -Package $package
 ```
 
-Perintah pertama mengambil paket ruang kerja bernama ContosoPackage. Perintah kedua menghapus paket ruang kerja dari kolam renang Apache Spark dalam Azure Synapse Analytics.
+Perintah pertama mengambil paket ruang kerja bernama ContosoPackage. Perintah kedua menghapus paket ruang kerja dari kumpulan Apache Spark di analitik Azure Synapse.
 
 ### Contoh 11
 ```powershell
@@ -150,21 +153,21 @@ PS C:\> $pool = Get-AzSynapseSparkPool -ResourceGroupName ContosoResourceGroup -
 PS C:\> $pool | Update-AzSynapseSparkPool -PackageAction Remove -Package $pool.WorkspacePackages
 ```
 
-Perintah pertama mengambil sebuah pool Apache Spark di Azure Synapse Analytics. Perintah kedua menghapus semua paket ruang kerja yang ditautkan ke kolam renang Apache Spark.
+Perintah pertama mengambil kumpulan Apache Spark di Azure Synapse Analytics. Perintah kedua menghapus semua paket ruang kerja yang ditautkan ke kumpulan Apache Spark tersebut.
 
 ### Contoh 11
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -Tag @{"key" = "value"} -NodeCount 5 -NodeSize Medium -SparkConfigFilePath "c:\sparkconfig.txt"
 ```
 
-Perintah ini memperbarui pool Apache Spark dalam Azure Synapse Analytics dan mengunggah file konfigurasi grafik untuk pool grafik api.
+Perintah ini memperbarui kumpulan Apache Spark di Azure Synapse Analytics dan mengunggah file konfigurasi percikan api untuk kumpulan percikan api.
 
 ### Contoh 12
 ```powershell
 PS C:\> Update-AzSynapseSparkPool -WorkspaceName ContosoWorkspace -Name ContosoSparkPool -NodeSize small -ForceApplySetting
 ```
 
-Perintah ini memperbarui kumpulan Apache Spark dalam Azure Synapse Analytics, atur NodeSize menjadi kecil untuk kumpulan grafik api dan hentikan pekerjaan yang sedang berjalan dalam kumpulan Spark untuk menerapkan pengaturan ini yang baru.
+Perintah ini memperbarui kumpulan Apache Spark di Azure Synapse Analytics, mengatur NodeSize menjadi kecil untuk kumpulan percikan api dan menghentikan pekerjaan yang sedang berjalan di kumpulan Spark untuk menerapkan pengaturan baru ini.
 
 ### Contoh 13
 ```powershell
@@ -172,12 +175,12 @@ PS C:\> $pool = Get-AzSynapseSparkPool -ResourceGroupName ContosoResourceGroup -
 PS C:\> $pool | Update-AzSynapseSparkPool -PackageAction Remove -Package $pool.WorkspacePackages -ForceApplySetting
 ```
 
-Perintah pertama mengambil sebuah pool Apache Spark di Azure Synapse Analytics. Perintah kedua menghapus semua paket ruang kerja yang ditautkan ke pool Apache Spark itu dan memaksa berhenti pekerjaan yang berjalan di pool Spark untuk menerapkan pengaturan baru ini.
+Perintah pertama mengambil kumpulan Apache Spark di Azure Synapse Analytics. Perintah kedua menghapus semua paket ruang kerja yang ditautkan ke kumpulan Apache Spark tersebut dan menghentikan semua pekerjaan yang berjalan di kumpulan Spark untuk menerapkan pengaturan baru ini.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPauseDelayInMinute
-Jumlah menit yang diam. Parameter ini dapat ditentukan ketika Jeda otomatis diaktifkan. Nilai default akan menjadi [15] jika nilai tidak ditentukan secara manual.
+Jumlah menit diam. Parameter ini dapat ditentukan ketika Jeda otomatis diaktifkan. Nilai default akan menjadi [15] jika tidak ditentukan secara manual.
 
 ```yaml
 Type: System.Int32
@@ -207,8 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -AutoScaleMaxNodeCount
-Jumlah node maksimum yang akan dialokasikan di pool Spark yang ditentukan.
-Parameter ini harus ditentukan ketika Skala-otomatis diaktifkan.
+Jumlah maksimum node yang akan dialokasikan dalam kumpulan Spark yang ditentukan.
+Parameter ini harus ditentukan ketika Skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -223,8 +226,8 @@ Accept wildcard characters: False
 ```
 
 ### -AutoScaleMinNodeCount
-Jumlah minimum node yang akan dialokasikan di pool Spark yang ditentukan.
-Parameter ini harus ditentukan ketika Skala-otomatis diaktifkan.
+Jumlah minimum node yang akan dialokasikan dalam kumpulan Spark yang ditentukan.
+Parameter ini harus ditentukan ketika Skala otomatis diaktifkan.
 
 ```yaml
 Type: System.Int32
@@ -284,7 +287,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForceApplySetting
-Apakah akan menghentikan pekerjaan yang sedang berjalan dalam penyimpanan Big Data.
+Apakah akan menghentikan pekerjaan yang sedang berjalan di kumpulan Big Data.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -299,7 +302,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek input spark pool, biasanya melewati saluran.
+Objek input spark pool, biasanya melewati pipeline.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.PSSynapseSparkPool
@@ -314,7 +317,7 @@ Accept wildcard characters: False
 ```
 
 ### -LibraryRequirementsFilePath
-File konfigurasi lingkungan (output "bekukan PIP").
+File konfigurasi lingkungan (output "BEKUKAN PIP").
 
 ```yaml
 Type: System.String
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama pool Grafik Apik Synapse.
+Nama kolam renang Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -NodeCount
-Jumlah simpul yang akan dialokasikan di pool Spark yang ditentukan.
+Jumlah node yang akan dialokasikan dalam kumpulan Spark yang ditentukan.
 
 ```yaml
 Type: System.Int32
@@ -359,8 +362,8 @@ Accept wildcard characters: False
 ```
 
 ### -NodeSize
-Jumlah inti dan memori yang akan digunakan untuk simpul yang dialokasikan di pool Spark yang ditentukan.
-Parameter ini harus ditentukan ketika Skala-otomatis dinonaktifkan
+Jumlah inti dan memori yang akan digunakan untuk simpul yang dialokasikan dalam kumpulan Spark yang ditentukan.
+Parameter ini harus ditentukan ketika Skala otomatis dinonaktifkan
 
 ```yaml
 Type: System.String
@@ -391,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -PackageAction
-Tindakan paket harus ditentukan saat Anda menambahkan atau menghapus paket ruang kerja dari kolam renang Apache Spark.
+Tindakan paket harus ditentukan ketika Anda menambahkan atau menghapus paket ruang kerja dari kumpulan Apache Spark.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Synapse.Models.SynapseConstants+PackageActionType
@@ -422,7 +425,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Pengidentifikasi sumber daya dari pool Spark Synapse.
+Pengidentifikasi sumber daya kumpulan Synapse Spark.
 
 ```yaml
 Type: System.String
@@ -437,7 +440,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkConfigFilePath
-File konfigurasi properti spark pool.
+File konfigurasi properti kumpulan kilau.
 
 ```yaml
 Type: System.String
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -SparkVersion
-Apache Spark version.
+Versi Apache Spark.
 Nilai yang diperbolehkan: 2,4
 
 ```yaml
@@ -468,7 +471,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Kamus string, kamus string dari tag yang terkait dengan sumber daya tersebut.
+String, kamus string tag yang terkait dengan sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -482,7 +485,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WorkspaceName
+### -Nama Ruang Kerja
 Nama ruang kerja Synapse.
 
 ```yaml
@@ -513,7 +516,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -529,7 +532,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -544,7 +547,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

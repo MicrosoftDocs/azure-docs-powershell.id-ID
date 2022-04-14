@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/new-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinConflictResolutionPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBGremlinConflictResolutionPolicy.md
-ms.openlocfilehash: f86599895c9d349997c294af048aa0dd1975224f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a9f88acf291dcce97f7dec78c7aa60086c9bbd9d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140001333"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142216765"
 ---
 # New-AzCosmosDBGremlinConflictResolutionPolicy
 
 ## SYNOPSIS
-Membuat objek baru dengan tipe PSConflictResolutionPolicy. Data ini dapat disampaikan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+Membuat objek baru dari tipe PSConflictResolutionPolicy. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBGremlinGraph.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbgremlinconflictresolutionpolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzCosmosDBGremlinConflictResolutionPolicy -Type <String> [-Path <String>]
 ```
 
 ## DESCRIPTION
-Objek yang terkait dengan ConflictResolutionPolicy API Object.
+Objek yang terkait dengan ConflictResolutionPolicy Gremlin API.
 
 ## EXAMPLES
 
@@ -41,7 +44,7 @@ LastWriterWins /myPath
 ## PARAMETERS
 
 ### -ConflictResolutionProcedure
-Dapat disediakan ketika tipe berjenis kustom.
+Untuk disediakan saat tipenya adalah kustom.
 
 ```yaml
 Type: System.String
@@ -70,8 +73,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Untuk disediakan saat tipe ini adalah LastWriterWins.
+### -Jalur
+Untuk disediakan ketika tipenya adalah LastWriterWins.
 
 ```yaml
 Type: System.String
@@ -86,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tipe
-Dapat memiliki nilai: LastWriterWins, Custom, Manual.
+Dapat memiliki nilai: LastWriterWins, Kustom, Manual.
 
 ```yaml
 Type: System.String
@@ -101,11 +104,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

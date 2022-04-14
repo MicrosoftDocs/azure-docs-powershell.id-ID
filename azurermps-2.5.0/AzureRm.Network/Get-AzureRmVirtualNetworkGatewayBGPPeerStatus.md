@@ -3,12 +3,12 @@ external help file: Microsoft.Azure.Commands.Network.dll-Help.xml
 Module Name: AzureRM.Network
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermvirtualnetworkgatewaybgppeerstatus
 schema: 2.0.0
-ms.openlocfilehash: 071434882c0f58d9e09e31d4281147d52b4226a6f514de4c972b747af01bb43e
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: a6a199fcac918bcdee76f5dfdecafa3e82fe7f6d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140851089"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142146285"
 ---
 # Get-AzureRmVirtualNetworkGatewayBGPPeerStatus
 
@@ -25,7 +25,7 @@ Get-AzureRmVirtualNetworkGatewayBGPPeerStatus -VirtualNetworkGatewayName <String
 ```
 
 ## DESCRIPTION
-Perintah ini menghitung peer BGP, gateway jaringan virtual Azure yang dikonfigurasi untuk digunakan peer-to-peer. Status setiap rekan juga diberikan.
+Perintah ini memperhitungkan rekan BGP gateway jaringan virtual Azure dikonfigurasi untuk menjadi teman sebaya. Status setiap rekan juga diberikan.
 
 ## EXAMPLES
 
@@ -43,14 +43,14 @@ RoutesReceived    : 1
 State             : Connected
 ```
 
-Mengambil rekan BGP untuk gateway jaringan virtual Azure yang bernama gatewayName dalam sumber daya grup sumber daya Grup.
+Mengambil rekan BGP untuk gateway jaringan virtual Azure bernama gatewayName dalam sumber daya grup sumber dayaKelompokkan.
 
-Output contoh ini memperlihatkan satu peer BGP yang tersambung, dengan IP 10.0.0.254.
+Contoh output ini memperlihatkan satu peer BGP yang tersambung, dengan IP 10.0.0.254.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -Peer
-IP rekan untuk mendapatkan status untuk
+IP dari peer untuk mengambil status untuk
 
 ```yaml
 Type: String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

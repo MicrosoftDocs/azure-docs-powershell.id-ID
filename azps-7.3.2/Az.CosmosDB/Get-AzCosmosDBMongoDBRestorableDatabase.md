@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.cosmosdb/get-azc
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableDatabase.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Get-AzCosmosDBMongoDBRestorableDatabase.md
-ms.openlocfilehash: 732e23019567e6a4d8daa75faa78dfe8edb90969
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 1b81d36bc94714c7f76b6c4b1179012d3a5d67d1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140179937"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142217089"
 ---
 # Get-AzCosmosDBMongoDBRestorableDatabase
 
 ## SYNOPSIS
-Dapatkan daftar semua database Azure Cosmos DBDb yang dapat dikembalikan yang tersedia di bawah akun yang dapat dikembalikan.
+Mendapatkan daftar semua database Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia di bawah akun yang dapat dipulihkan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/get-azcosmosdbmongodbrestorabledatabase) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,9 +35,9 @@ Get-AzCosmosDBMongoDBRestorableDatabase -InputObject <PSRestorableDatabaseAccoun
 ```
 
 ## DESCRIPTION
-Dapatkan daftar semua acara database Azure Cosmos DB Azure Cosmos DB yang dapat dikembalikan yang tersedia di bawah akun yang dapat dikembalikan.
-Daftar akan memiliki entri yang terkait dengan membuat, mengganti dan menghapus acara semua database langsung dan dihapus.
-Daftar ini berguna untuk mengidentifikasi timestamp pemulihan berdasarkan perubahan di database. Misalnya, jika pengguna ingin memulihkan akun database menjadi timestamp saat database bernama foo dihapus, pengguna dapat menemukan kejadian penghapusan database yang terkait dari daftar ini, lalu memilihmp waktu sebelum kejadian penghapusan untuk dipulihkan.
+Mendapatkan daftar semua kejadian database Azure Cosmos DB MongoDB yang dapat dipulihkan yang tersedia di bawah akun yang dapat dipulihkan.
+Daftar akan memiliki entri yang terkait dengan pembuatan, penggantian, dan penghapusan acara dari semua database langsung dan dihapus.
+Daftar ini berguna untuk mengidentifikasi cap waktu pemulihan berdasarkan perubahan dalam database. Misalnya, jika pengguna ingin memulihkan akun database ke stempel waktu ketika database bernama foo dihapus, pengguna bisa menemukan kejadian penghapusan database terkait dari daftar ini, dan memilih cap waktu sebelum acara penghapusan untuk dipulihkan.
 
 ## EXAMPLES
 
@@ -58,7 +61,7 @@ Objek sumber daya berisi properti sumber daya database
 ## PARAMETERS
 
 ### -DatabaseAccountInstanceId
-Contoh Id dari akun database CosmosDB.
+Id instans akun database CosmosDB.
 (Ini dikembalikan sebagai bagian dari properti akun database).
 
 ```yaml
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Akun Database Yang Dapat Dikembalikan CosmosDB
+Objek Akun Database CosmosDB yang Dapat Disempurnakan
 
 ```yaml
 Type: Microsoft.Azure.Management.CosmosDB.Models.PSRestorableDatabaseAccountGetResult
@@ -119,11 +122,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

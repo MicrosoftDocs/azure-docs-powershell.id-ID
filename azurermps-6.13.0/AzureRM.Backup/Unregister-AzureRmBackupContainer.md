@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Unregister-AzureRmBackupContainer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Unregister-AzureRmBackupContainer.md
 ms.openlocfilehash: 8c90137e142086d7ea7c0bcc34321b3f38a12d95
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421289"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065934"
 ---
 # Unregister-AzureRmBackupContainer
 
 ## SYNOPSIS
-Pisahkan wadah dari vault Cadangan.
+Membatalkan pendaftaran wadah dari kubah Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,13 +28,13 @@ Unregister-AzureRmBackupContainer [-Force] [-Container] <AzureRMBackupContainer>
 ```
 
 ## DESCRIPTION
-Cmdlet **Unregister-AzureRmBackupContainer** membatalkan pendaftaran mesin virtual Windows Server atau Azure dari penyimpanan Cadangan Azure.
-Cmdlet ini menghapus referensi ke wadah dari vault Cadangan.
-Sebelum dapat membatalkan pendaftaran wadah, Anda harus menghapus data yang diproteksi yang terkait dengan wadah tersebut.
+Cmdlet **Unregister-AzureRmBackupContainer** membatalkan pendaftaran Windows Server atau mesin virtual Azure dari kubah Azure Backup.
+Cmdlet ini menghapus referensi ke wadah dari kubah Cadangan.
+Sebelum dapat membatalkan pendaftaran wadah, Anda harus menghapus semua data yang diproteksi yang terkait dengan wadah tersebut.
 
 ## EXAMPLES
 
-### Contoh 1: Pisahkan pendaftaran Windows Server
+### Contoh 1: Batalkan pendaftaran server Windows
 ```
 PS C:\>$Vault = Get-AzureRmBackupVault -Name "Vault03"
 PS C:\> $Container = Get-AzureRmBackupContainer -Vault $Vault -Type Windows -Name "server01.contoso.com"
@@ -44,26 +44,26 @@ This operation will delete all data in the backup vault that is associated with 
 [] Yes  [] No  [?] Help (default is "No"): Yes
 ```
 
-Perintah pertama mendapatkan vault bernama Vault03 menggunakan cmdlet Get-AzureRmBackupVault baru.
-Perintah menyimpan objek tersebut dalam $Vault variabel.
-Perintah kedua mendapatkan wadah yang memiliki nama yang ditentukan di penyimpanan $Vault dengan menggunakan cmdlet Get-AzureRmBackupContainer.
-Perintah menyimpan objek tersebut dalam $Container variabel.
-Perintah terakhir membatalkan pendaftaran Server Windows tertentu dari vault Azure Backup.
+Perintah pertama mendapatkan kubah bernama Vault03 dengan menggunakan cmdlet Get-AzureRmBackupVault.
+Perintah menyimpan objek tersebut dalam variabel $Vault.
+Perintah kedua mendapatkan wadah yang memiliki nama yang ditentukan dalam kubah di $Vault menggunakan cmdlet Get-AzureRmBackupContainer.
+Perintah menyimpan objek tersebut dalam variabel $Container.
+Perintah terakhir membatalkan pendaftaran Server Windows yang ditentukan dari kubah Azure Backup.
 
-### Contoh 2: Pisahkan pendaftaran Windows Server tanpa konfirmasi
+### Contoh 2: Batalkan pendaftaran server Windows tanpa konfirmasi
 ```
 PS C:\>Unregister-AzureRmBackupContainer -Container $Container[0] -Force
 ```
 
-Perintah ini membatalkan pendaftaran Server Windows tertentu dari vault Azure Backup, seperti dalam contoh pertama.
-Perintah ini menentukan parameter *Force.*
-Oleh karena itu, perintah tidak akan meminta konfirmasi Anda.
+Perintah ini membatalkan pendaftaran Server Windows yang ditentukan dari kubah Azure Backup, sama seperti dalam contoh pertama.
+Perintah ini menentukan parameter *Paksa* .
+Oleh karena itu, perintah tidak meminta konfirmasi kepada Anda.
 
 ## PARAMETERS
 
-### -Container
-Menentukan Windows virtual Azure atau Server baru yang tidak terdaftar cmdlet ini.
-Untuk mendapatkan **AzureRmBackupContainer,** gunakan cmdlet Get-AzureRmBackupContainer cmdlet.
+### -Kontainer
+Menentukan Windows Server atau mesin virtual Azure yang tidak terdaftar cmdlet ini.
+Untuk mendapatkan **AzureRmBackupContainer**, gunakan cmdlet Get-AzureRmBackupContainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -92,9 +92,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
-Parameter ini hanya relevan untuk **objek AzureBackupContainer** tipe Windows.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
+Parameter ini hanya relevan untuk objek **AzureBackupContainer** tipe Windows.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,19 +140,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupContainer
-Parameter: Container (ByValue)
+Parameter: Kontainer (ByValue)
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupJob
 
 ## CATATAN
-* Tidak ada
+* Tidak
 
 ## RELATED LINKS
 
@@ -160,6 +160,6 @@ Parameter: Container (ByValue)
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[Register-AzureRmBackupContainer](./Register-AzureRmBackupContainer.md)
+[Daftarkan-AzureRmBackupContainer](./Register-AzureRmBackupContainer.md)
 
 

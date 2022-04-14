@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Set-AzureRmBackupVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/Set-AzureRmBackupVault.md
 ms.openlocfilehash: edb119484d397241b786ff9476b688e150ed3c6d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422195"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065914"
 ---
 # Set-AzureRmBackupVault
 
 ## SYNOPSIS
-Mengubah tipe penyimpanan vault Cadangan.
+Mengubah tipe penyimpanan kubah Cadangan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,24 +28,24 @@ Set-AzureRmBackupVault [[-Storage] <AzureBackupVaultStorageType>] [-Vault] <Azur
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmBackupVault** mengubah tipe penyimpanan vault Azure Backup.
-Anda tidak dapat mengubah properti vault yang lain.
+Cmdlet **Set-AzureRmBackupVault** mengubah tipe penyimpanan kubah Azure Backup.
+Anda tidak bisa mengubah properti kubah lain.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah penyimpanan untuk vault yang sudah ada
+### Contoh 1: Mengubah penyimpanan untuk kubah yang sudah ada
 ```
 PS C:\>Get-AzureRmBackupVault -Name "Vault03" | Set-AzureRmBackupVault -Storage LocallyRedundant
 ```
 
-Perintah ini mendapatkan penyimpanan Azure Backup bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault.**
-Perintah itu meneruskan vault itu ke cmdlet saat ini menggunakan operator pipeline.
+Perintah ini mendapatkan Azure Backup kubah bernama Vault03 menggunakan cmdlet **Get-AzureRmBackupVault**.
+Perintah melewati kubah ke cmdlet saat ini menggunakan operator pipeline.
 Cmdlet saat ini mengubah tipe penyimpanan menjadi LocallyRedundant.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -Vault
-Menentukan vault Cadangan yang telah dimodifikasi cmdlet ini.
-Untuk mendapatkan objek **AzureRmBackupVault,** gunakan cmdlet Get-AzureRmBackupVault cmdlet.
+Menentukan kubah Cadangan yang diubah cmdlet ini.
+Untuk mendapatkan objek **AzureRmBackupVault** , gunakan cmdlet Get-AzureRmBackupVault.
 
 ```yaml
 Type: Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -105,14 +105,14 @@ Parameter: Vault (ByValue)
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupVault
 
 ## CATATAN
-* Saat Anda mendaftarkan server atau mesin virtual pertama untuk vault, tipe penyimpanan dikunci. Selanjutnya, Anda tidak dapat mengubah tipe penyimpanan.
+* Saat Anda mendaftarkan server pertama atau mesin virtual untuk kubah, tipe penyimpanan dikunci. Selanjutnya, Anda tidak dapat mengubah tipe penyimpanan.
 
 ## RELATED LINKS
 
 [Get-AzureRmBackupVault](./Get-AzureRmBackupVault.md)
 
-[New-AzureRmBackupVault](./New-AzureRmBackupVault.md)
+[AzureRmBackupVault Baru](./New-AzureRmBackupVault.md)
 
-[Remove-AzureRmBackupVault](./Remove-AzureRmBackupVault.md)
+[Hapus-AzureRmBackupVault](./Remove-AzureRmBackupVault.md)
 
 

@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseImportExportStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseImportExportStatus.md
 ms.openlocfilehash: ad5e5bb73b3611c3c56c7340f740947134f72d39
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421190"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142248092"
 ---
 # Get-AzureRmSqlDatabaseImportExportStatus
 
 ## SYNOPSIS
-Mendapatkan detail impor atau ekspor data Azure SQL Database.
+Mendapatkan detail impor atau ekspor Azure SQL Database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,12 +28,12 @@ Get-AzureRmSqlDatabaseImportExportStatus [-OperationStatusLink] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlDatabaseImportExportStatus** mendapatkan detail tentang impor file bacpac dari akun penyimpanan ke akun Azure SQL Database atau ekspor Azure SQL Database sebagai file bacpac ke akun penyimpanan.
+Cmdlet **Get-AzureRmSqlDatabaseImportExportStatus** mendapatkan detail impor file bacpac dari akun penyimpanan ke Azure SQL Database atau ekspor Azure SQL Database sebagai file bacpac ke akun penyimpanan.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status impor dan ekspor SQL database
+### Contoh 1: Mendapatkan status impor dan ekspor database SQL
 ```
 PS C:\>Get-AzureRmSqlDatabaseImportExportStatus -OperationStatusLink "https://management.contoso.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/resource01/providers/Microsoft.Sql/servers/server01/databases/database01/importExportOperationResults/00000000-000-0000-0000-000000000000?api-version=2014-04-01"
 OperationStatusLink : 
@@ -44,12 +44,12 @@ StatusMessage       : Running, Progress = 5.00 %
 Status              : InProgress
 ```
 
-Perintah ini mendapatkan status permintaan impor atau ekspor untuk database di URL yang ditentukan.
+Perintah ini mendapatkan status permintaan impor atau ekspor untuk database di URL tertentu.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationStatusLink
-Menentukan tautan status yang dikembalikan dari cmdlet New-AzureRmSqlDatabaseExport atau New-AzureRmSqlDatabaseImport status.
+Menentukan tautan status yang dikembalikan dari cmdlet New-AzureRmSqlDatabaseExport atau New-AzureRmSqlDatabaseImport.
 
 ```yaml
 Type: System.String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -121,7 +121,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.Sql.ImportExport.Model.AzureSqlDatabaseImportExportStatusModel
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, sql, database, mssql
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, sql, database, mssql
 
 ## RELATED LINKS
 
@@ -129,4 +129,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabaseImport](./New-AzureRmSqlDatabaseImport.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)

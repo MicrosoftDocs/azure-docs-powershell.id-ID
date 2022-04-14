@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/get-azim
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzImage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Get-AzImage.md
-ms.openlocfilehash: 5652b045746050437dc18310e18454a6fd6a0a27
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 07abbb39d52739683c73941fb524f034011ccc84
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140557452"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142218097"
 ---
 # Get-AzImage
 
 ## SYNOPSIS
 Mendapatkan properti gambar.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/get-azimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -47,7 +50,7 @@ Location             : eastus2
 Tags                 : {}
 ```
 
-Perintah ini mendapatkan properti gambar yang bernama 'Image01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah ini mendapatkan properti gambar bernama 'Image01' dalam grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```powershell
@@ -120,7 +123,7 @@ Location             : eastus2
 Tags                 : {}
 ```
 
-Perintah ini mendapatkan properti semua gambar dalam langganan.
+Perintah ini mendapatkan properti semua gambar di bawah langganan.
 
 ### Contoh 4
 ```powershell
@@ -167,7 +170,7 @@ Perintah ini mendapatkan properti semua gambar di bawah langganan yang dimulai d
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Perluas
-Menentukan kueri ekspresi perluas.
+Menentukan kueri perluas ekspresi.
 
 ```yaml
 Type: System.String
@@ -227,7 +230,7 @@ Accept wildcard characters: True
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.synapse/new-azsy
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedVirtualNetworkConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Synapse/Synapse/help/New-AzSynapseManagedVirtualNetworkConfig.md
-ms.openlocfilehash: 502abb01a3b4595f576bd731ca0b8a3c28e25813
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: b58e89a467b748590f6465e829c33f055ee46c23
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140005309"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142249741"
 ---
 # New-AzSynapseManagedVirtualNetworkConfig
 
 ## SYNOPSIS
-Membuat konfigurasi jaringan virtual yang dikelola.
+Membuat konfigurasi jaringan virtual terkelola.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.synapse/new-azsynapsemanagedvirtualnetworkconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-AzSynapseManagedVirtualNetworkConfig [-PreventDataExfiltration] [-AllowedAad
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzSynapseManagedVirtualNetworkConfig** ini membuat konfigurasi jaringan virtual yang dikelola.
+Cmdlet **New-AzSynapseManagedVirtualNetworkConfig** ini membuat konfigurasi jaringan virtual terkelola.
 
 ## EXAMPLES
 
@@ -37,7 +40,7 @@ PS C:\> $creds = New-Object System.Management.Automation.PSCredential ("ContosoU
 PS C:\> New-AzSynapseWorkspace -ResourceGroupName ContosoResourceGroup -Name ContosoWorkspace -Location northeurope -DefaultDataLakeStorageAccountName ContosoAdlGen2Storage -DefaultDataLakeStorageFilesystem ContosoFileSystem -SqlAdministratorLoginCredential $creds -ManagedVirtualNetwork $config
 ```
 
-Perintah pertama membuat konfigurasi jaringan virtual terkelola. Lalu metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse yang baru.
+Perintah pertama membuat konfigurasi jaringan virtual terkelola. Kemudian metode lainnya menggunakan konfigurasi untuk membuat ruang kerja Synapse baru.
 
 ## PARAMETERS
 
@@ -72,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -PreventDataExfiltration
-Menunjukkan apakah akan mencegah exfiltrasi data.
+Menunjukkan apakah akan mencegah eksfiltrasi data.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -87,11 +90,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

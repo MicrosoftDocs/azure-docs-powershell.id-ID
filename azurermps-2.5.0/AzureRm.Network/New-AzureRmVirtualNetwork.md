@@ -5,11 +5,11 @@ ms.assetid: 81D55C43-C9A3-4DA7-A469-A3A7550FE9A4
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermvirtualnetwork
 schema: 2.0.0
 ms.openlocfilehash: a81f8b260b0631692bb24a571bcb86b8ecf038d3
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423945"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141847720"
 ---
 # New-AzureRmVirtualNetwork
 
@@ -42,9 +42,9 @@ $backendSubnet  = New-AzureRmVirtualNetworkSubnetConfig -Name backendSubnet  -Ad
 New-AzureRmVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat jaringan virtual dengan dua subnet. Pertama, grup sumber daya baru dibuat di kawasan pusat. Lalu, contoh membuat representasi dalam memori dari dua subnet. Cmdlet New-AzureRmVirtualNetworkSubnetConfig tidak akan membuat subnet apa pun di sisi server. Ada satu subnet yang disebut frontendSubnet dan satu subnet yang disebut backendSubnet. Cmdlet New-AzureRmVirtualNetwork lalu membuat jaringan virtual menggunakan CIDR 10.0.0.0/16 sebagai prefiks alamat dan dua subnet.
+Contoh ini membuat jaringan virtual dengan dua subnet. Pertama, grup sumber daya baru dibuat di kawasan pusat. Lalu, contoh membuat representasi dalam memori dari dua subnet. Cmdlet New-AzureRmVirtualNetworkSubnetConfig tidak akan membuat subnet apa pun di sisi server. Ada satu subnet yang disebut frontendSubnet dan satu subnet yang disebut backendSubnet. Cmdlet New-AzureRmVirtualNetwork kemudian membuat jaringan virtual menggunakan CIDR 10.0.0.0/16 sebagai awalan alamat dan dua subnet.
 
-### 2: Buat jaringan virtual dengan pengaturan DNS
+### 2: Membuat jaringan virtual dengan pengaturan DNS
 ```
 New-AzureRmResourceGroup -Name TestResourceGroup -Location centralus
 $frontendSubnet = New-AzureRmVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24"
@@ -52,9 +52,9 @@ $backendSubnet  = New-AzureRmVirtualNetworkSubnetConfig -Name backendSubnet  -Ad
 New-AzureRmVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet -DnsServer 10.0.1.5,10.0.1.6
 ```
 
-Contoh ini membuat jaringan virtual dengan dua subnet dan dua server DNS. Efek menentukan server DNS pada jaringan virtual adalah bahwa NICs/VM yang digunakan ke dalam jaringan virtual ini mewarisi server DNS ini sebagai default. Default ini bisa ditimpa per NIC melalui pengaturan tingkat NIC. Jika tidak ada server DNS yang ditentukan di VNET dan tidak ada server DNS di NICs, maka server Azure DNS default digunakan untuk resolusi DNS.
+Contoh ini membuat jaringan virtual dengan dua subnet dan dua server DNS. Efek menentukan server DNS di jaringan virtual adalah bahwa NIC/VM yang digunakan ke jaringan virtual ini mewarisi server DNS ini sebagai default. Default ini dapat ditimpa per NIC melalui pengaturan tingkat NIC. Jika tidak ada server DNS yang ditentukan di VNET dan tidak ada server DNS di NIC, maka server DNS Azure default digunakan untuk resolusi DNS.
 
-### 3: Membuat jaringan virtual dengan referensi subnet grup keamanan jaringan
+### 3: Membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan
 ```
 New-AzureRmResourceGroup -Name TestResourceGroup -Location centralus
 $rdpRule              = New-AzureRmNetworkSecurityRuleConfig -Name rdp-rule -Description "Allow RDP" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 3389
@@ -64,7 +64,7 @@ $backendSubnet        = New-AzureRmVirtualNetworkSubnetConfig -Name backendSubne
 New-AzureRmVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup -Location centralus -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
 ```
 
-Contoh ini membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan. Pertama, contoh membuat grup sumber daya sebagai wadah untuk sumber daya yang akan dibuat. Lalu, grup keamanan jaringan dibuat yang memungkinkan akses RDP masuk, tapi memberlakukan aturan grup keamanan jaringan default. Cmdlet New-AzureRmVirtualNetworkSubnetConfig membuat representasi dalam memori dari dua subnet yang mereferensikan grup keamanan jaringan yang dibuat. Perintah New-AzureRmVirtualNetwork lalu membuat jaringan virtual.
+Contoh ini membuat jaringan virtual dengan subnet yang mereferensikan grup keamanan jaringan. Pertama, contoh membuat grup sumber daya sebagai wadah untuk sumber daya yang akan dibuat. Lalu, grup keamanan jaringan dibuat yang memungkinkan akses RDP masuk, tetapi sebaliknya memberlakukan aturan grup keamanan jaringan default. Cmdlet New-AzureRmVirtualNetworkSubnetConfig kemudian membuat representasi dalam memori dari dua subnet yang mereferensikan grup keamanan jaringan yang dibuat. Perintah New-AzureRmVirtualNetwork kemudian membuat jaringan virtual.
 
 ## PARAMETERS
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -128,8 +128,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -EnableDDosProtection
-Parameter sakelar yang menyatakan apakah proteksi DDoS diaktifkan atau tidak.
+### -EnabledDosProtection
+Parameter sakelar yang menunjukkan apakah proteksi DDoS diaktifkan atau tidak.
 
 ```yaml
 Type: SwitchParameter
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableVmProtection
-Switch parameter yang mewakili jika Vm protection diaktifkan atau tidak.
+Parameter sakelar yang menunjukkan apakah proteksi Vm diaktifkan atau tidak.
 
 ```yaml
 Type: SwitchParameter
@@ -158,8 +158,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Memaksa perintah untuk dijalankan tanpa meminta konfirmasi pengguna.
+### -Paksa
+Memaksa perintah untuk berjalan tanpa meminta konfirmasi pengguna.
 
 ```yaml
 Type: SwitchParameter
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan kawasan untuk jaringan virtual.
+Menentukan kawasan untuk jaringan maya.
 
 ```yaml
 Type: String
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -296,6 +296,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVirtualNetwork](./Get-AzureRmVirtualNetwork.md)
 
-[Remove-AzureRmVirtualNetwork](./Remove-AzureRmVirtualNetwork.md)
+[Hapus-AzureRmVirtualNetwork](./Remove-AzureRmVirtualNetwork.md)
 
 [Set-AzureRmVirtualNetwork](./Set-AzureRmVirtualNetwork.md)
