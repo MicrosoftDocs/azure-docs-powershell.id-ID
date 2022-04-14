@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncCloudEndpoint.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StorageSync/StorageSync/help/New-AzStorageSyncCloudEndpoint.md
 ms.openlocfilehash: 14e1f92616d23ef8948e1ac086f08da2a5f87fb2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140065673"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142118357"
 ---
 # New-AzStorageSyncCloudEndpoint
 
 ## SYNOPSIS
-Perintah ini akan membuat titik akhir awan Sinkronisasi File Azure dalam grup sinkronisasi.
+Perintah ini membuat titik akhir awan Sinkronisasi File Azure dalam grup sinkronisasi.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.storagesync/new-azstoragesynccloudendpoint) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storagesync/new-azstoragesynccloudendpoint) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-AzStorageSyncCloudEndpoint [-ParentResourceId] <String> -Name <String> -Stor
 ```
 
 ## DESCRIPTION
-Perintah ini akan membuat titik akhir awan Sinkronisasi File Azure. Titik akhir awan adalah referensi ke berbagi file Azure yang sudah ada. File mewakili berbagi file dan menentukan partisipasinya dalam menyinkronkan semua bagian file dari grup sinkronisasi tempat titik akhir awan dibuat.
+Perintah ini membuat titik akhir cloud Sinkronisasi File Azure. Titik akhir awan adalah referensi ke berbagi file Azure yang sudah ada. Ini mewakili berbagi file dan menentukan partisipasinya dalam menyinkronkan semua bagian file dari grup sinkronisasi tempat titik akhir awan telah dibuat.
 
 ## EXAMPLES
 
@@ -54,12 +54,12 @@ Perintah ini akan membuat titik akhir awan Sinkronisasi File Azure. Titik akhir 
 PS C:\> New-AzStorageSyncCloudEndpoint -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -Name "myCloudEndpointName" -StorageAccountResourceId $storageAccountResourceId -AzureFileShareName "myAzureFileShareName" -StorageAccountTenantId "myStorageAccountTenantId"
 ```
 
-Titik akhir awan adalah anggota integral dari grup sinkronisasi, ini adalah contoh pembuatan titik akhir di dalam grup sinkronisasi yang sudah ada yang disebut "mySyncGroupName".
+Titik akhir awan adalah anggota integral dari grup sinkronisasi, ini adalah contoh pembuatan grup sinkronisasi yang sudah ada yang disebut "mySyncGroupName".
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureFileShareName
-Storage Berbagi Akun (nama berbagi file Azure)
+Storage Nama Berbagi Akun (nama berbagi file Azure)
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama titik akhir awan. Saat dibuat melalui portal Azure, Nama diatur menjadi nama file Azure berbagi referensinya.
+Nama titik akhir awan. Saat dibuat melalui portal Azure, Nama diatur ke nama file Azure yang membagikan referensinya.
 
 ```yaml
 Type: System.String
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentObject
-Objek SyncGroup, biasanya melewati parameter.
+SyncGroup Object, biasanya melewati parameter.
 
 ```yaml
 Type: Microsoft.Azure.Commands.StorageSync.Models.PSSyncGroup
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentResourceId
-SyncGroup Parent Resource Id
+Sinkronkan Id Sumber Daya Induk Grup
 
 ```yaml
 Type: System.String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountResourceId
-Id Sumber Daya Akun Storage Baru
+Id Sumber Daya Akun Storage
 
 ```yaml
 Type: System.String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountTenantId
-Storage Id Penyewa Akun (Id Direktori Perusahaan)
+id penyewa akun Storage (Id Direktori Perusahaan)
 
 ```yaml
 Type: System.String
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -SyncGroupName
-Nama GrupSinkronisasi.
+Nama GrupSinkronkan.
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

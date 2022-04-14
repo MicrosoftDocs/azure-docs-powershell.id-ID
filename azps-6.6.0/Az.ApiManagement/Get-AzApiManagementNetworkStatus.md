@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNetworkStatus.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNetworkStatus.md
 ms.openlocfilehash: fafe29976a044724a1e7b28cf5454a2b06410a8a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110727"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141873393"
 ---
 # Get-AzApiManagementNetworkStatus
 
 ## SYNOPSIS
-Mendapatkan Status Konektivitas ke sumber daya eksternal di mana layanan Manajemen Api bergantung dari dalam Layanan Awan. Ini juga mengembalikan Server DNS seperti yang terlihat untuk CloudService.
+Mendapatkan Status Konektivitas ke sumber daya eksternal tempat layanan Manajemen Api bergantung dari dalam Layanan Awan. Ini juga mengembalikan Server DNS seperti yang terlihat oleh CloudService.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnetworkstatus) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnetworkstatus) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -101,7 +101,7 @@ LastUpdated      : 5/2/2019 5:04:27 PM
 LastStatusChange : 4/30/2019 11:16:20 PM
 ```
 
-Mendapatkan status konektivitas dari sumber daya yang berbeda di mana layanan ApiManagement bergantung pada.
+Mendapatkan status konektivitas dari berbagai sumber daya yang bergantung pada layanan ApiManagement.
 
 ## PARAMETERS
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Lokasi Layanan Manajemen API.
+Lokasi Layanan API Management.
 
 ```yaml
 Type: System.String
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama Manajemen API.
+Nama API Management.
 
 ```yaml
 Type: System.String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya di mana Manajemen API ada.
+Nama grup sumber daya di mana API Management ada.
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

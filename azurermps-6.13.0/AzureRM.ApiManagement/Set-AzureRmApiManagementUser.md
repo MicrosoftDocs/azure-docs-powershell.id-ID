@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementUser.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Set-AzureRmApiManagementUser.md
 ms.openlocfilehash: 705deeb8e9b248b480bd2a28662cc7e968f8c228
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425490"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101311"
 ---
 # Set-AzureRmApiManagementUser
 
@@ -40,12 +40,12 @@ PS C:\>$securePassword = ConvertTo-SecureString "qwerty" -AsPlainText -Force
 PS C:\>Set-AzureRmApiManagementUser -Context $apimContext -UserId "0123456789" -Email "patti.fuller@contoso.com" -Password $securePassword -State "Blocked"
 ```
 
-Perintah ini mengatur kata sandi dan alamat email pengguna baru, serta memblokir pengguna.
+Perintah ini mengatur kata sandi pengguna dan alamat email baru dan memblokir pengguna.
 
 ## PARAMETERS
 
 ### -Konteks
-Menentukan objek **PsApiManagementContext.**
+Menentukan objek **PsApiManagementContext** .
 Parameter ini diperlukan.
 
 ```yaml
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -FirstName
 Menentukan nama depan pengguna.
-Parameter ini harus memiliki panjang 1 hingga 100 karakter.
+Parameter ini harus panjangnya 1 hingga 100 karakter.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -LastName
 Menentukan nama belakang pengguna.
-Parameter ini panjangnya harus 1 hingga 100 karakter.
+Parameter ini harus panjangnya 1 hingga 100 karakter.
 
 ```yaml
 Type: System.String
@@ -123,7 +123,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Note
+### -Catatan
 Menentukan catatan tentang pengguna.
 Parameter ini bersifat opsional.
 Nilai default parameter ini adalah $null.
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -230,7 +230,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagementUser](./Get-AzureRmApiManagementUser.md)
 
-[New-AzureRmApiManagementUser](./New-AzureRmApiManagementUser.md)
+[AzureRmApiManagementUser baru](./New-AzureRmApiManagementUser.md)
 
 [Remove-AzureRmApiManagementUser](./Remove-AzureRmApiManagementUser.md)
 

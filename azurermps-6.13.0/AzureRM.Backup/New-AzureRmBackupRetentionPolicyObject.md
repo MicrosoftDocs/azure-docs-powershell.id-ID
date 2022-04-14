@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/New-AzureRmBackupRetentionPolicyObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AzureBackup/Commands.AzureBackup/help/New-AzureRmBackupRetentionPolicyObject.md
 ms.openlocfilehash: 740077def0ba0eccb1d962b88317fadb3c5c897c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132420379"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142065947"
 ---
 # New-AzureRmBackupRetentionPolicyObject
 
@@ -54,7 +54,7 @@ New-AzureRmBackupRetentionPolicyObject [-YearlyRetentionInDailyFormat]
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### YearlyRetentionInWeeklyFormatParamSet
+### TahunanRetentionInWeeklyFormatParamSet
 ```
 New-AzureRmBackupRetentionPolicyObject [-YearlyRetentionInWeeklyFormat] -DaysOfWeek <String[]>
  -WeekNumber <String[]> -MonthsOfYear <String[]> -Retention <Int32> [-DefaultProfile <IAzureContextContainer>]
@@ -63,15 +63,15 @@ New-AzureRmBackupRetentionPolicyObject [-YearlyRetentionInWeeklyFormat] -DaysOfW
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmBackupRetentionPolicyObject** membuat kebijakan penyimpanan Azure Backup.
-Kebijakan penyimpanan menentukan berapa lama Cadangan mempertahankan titik pemulihan.
-Tipe penyimpanan adalah sebagai berikut: 
+Kebijakan penyimpanan menentukan berapa lama Pencadangan menyimpan titik pemulihan.
+Tipe penyimpanannya adalah sebagai berikut: 
 - Harian 
-- Mingguan 
+- Unduhan 
 - Bulanan 
-- Tahunan Buat satu kebijakan penyimpanan untuk setiap tipe penyimpanan yang ingin Anda gunakan.
-Kebijakan pencadangan dikaitkan dengan setidaknya satu kebijakan penyimpanan.
-Untuk membuat kebijakan pencadangan, gunakan cmdlet New-AzureRmBackupProtectionPolicy lanjut.
-Sebagai gantinya, Anda dapat menyediakan kebijakan penyimpanan Enable-AzureRmBackupProtection cmdlet.
+- Tahunan Membuat satu kebijakan penyimpanan untuk setiap tipe penyimpanan yang anda rencanakan untuk digunakan.
+Kebijakan cadangan terkait dengan setidaknya satu kebijakan penyimpanan.
+Untuk membuat kebijakan cadangan, gunakan cmdlet New-AzureRmBackupProtectionPolicy.
+Anda dapat memberikan kebijakan penyimpanan ke cmdlet Enable-AzureRmBackupProtection.
 
 ## EXAMPLES
 
@@ -84,7 +84,7 @@ RetentionType      Retention          RetentionTimes
 Daily              30
 ```
 
-Perintah pertama membuat kebijakan penyimpanan selama 30 hari penyimpanan harian, lalu menyimpannya di $Daily penyimpanan.
+Perintah pertama membuat kebijakan penyimpanan selama 30 hari penyimpanan harian, lalu menyimpannya dalam variabel $Daily.
 Perintah kedua menampilkan konten $Daily.
 
 ### Contoh 2: Membuat kebijakan penyimpanan bulanan
@@ -100,14 +100,14 @@ Retention       : 12
 RetentionTimes  :
 ```
 
-Perintah pertama membuat kebijakan penyimpanan yang menyimpan cadangan pada kesepuluh dan kesepuluh dari setiap bulan selama dua belas bulan.
-Perintah menyimpan kebijakan penyimpanan di $Monthly penyimpanan.
+Perintah pertama membuat kebijakan penyimpanan yang menyimpan cadangan pada urutan kesepuluh dan dua puluh setiap bulan selama dua belas bulan.
+Perintah menyimpan kebijakan penyimpanan dalam variabel $Monthly.
 Perintah kedua menampilkan konten $Monthly.
 
 ## PARAMETERS
 
 ### -DailyRetention
-Mengindikasikan bahwa cmdlet ini membuat kebijakan penyimpanan Harian.
+Menunjukkan bahwa cmdlet ini membuat kebijakan penyimpanan Harian.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -122,9 +122,9 @@ Accept wildcard characters: False
 ```
 
 ### -DaysOfMonth
-Menentukan hari-hari dalam bulan yang mengidentifikasi poin pemulihan mana yang dipertahankan Cadangan dan untuk berapa lama.
+Menentukan hari dalam bulan yang mengidentifikasi titik pemulihan mana yang dipertahankan Cadangan dan berapa lama.
 Nilai yang dapat diterima untuk parameter ini adalah: bilangan bulat dari 1 sampai 28 dan Terakhir.
-Tentukan parameter ini jika Anda menentukan parameter *DailyRetention*, *MonthlyRetentionInDailyFormat*, dan *YearlyRetentionInDailyFormat.*
+Tentukan parameter ini jika Anda menentukan parameter *DailyRetention*, *MonthlyRetentionInDailyFormat*, dan *YearlyRetentionInDailyFormat* .
 
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 
 ### -DaysOfWeek
 Menentukan array hari dalam seminggu.
-Hari-hari yang ditetapkan cmdlet ini untuk mengidentifikasi poin pemulihan mana yang dipertahankan Cadangan dan untuk berapa lama.
+Hari-hari yang ditentukan cmdlet ini mengidentifikasi titik pemulihan mana yang dipertahankan Cadangan dan berapa lama.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Senin 
 - Selasa 
@@ -149,9 +149,9 @@ Nilai yang dapat diterima untuk parameter ini adalah:
 - Kamis 
 - Jumat 
 - Sabtu 
-- Minggu Tentukan parameter ini jika Anda menentukan parameter *WeeklyRetention*, *MonthlyRetentionInWeeklyFormat*, dan *YearlyRetentionInWeeklyFormat.*
-Pastikan bahwa hari dalam seminggu Anda memilih untuk pencadangan dan untuk penyimpanan rata.
-Misalnya, jika cadangan diatur untuk hari Sabtu, kebijakan penyimpanan juga harus menggunakan hari Sabtu.
+- Minggu Tentukan parameter ini jika Anda menentukan parameter *WeeklyRetention*, *MonthlyRetentionInWeeklyFormat*, dan *YearlyRetentionInWeeklyFormat* .
+Pastikan bahwa hari dalam seminggu yang Anda pilih untuk pencadangan dan untuk penyimpanan diratakan.
+Misalnya, jika pencadangan Anda diatur untuk hari Sabtu, kebijakan penyimpanan juga harus menggunakan Hari Sabtu.
 
 ```yaml
 Type: System.String[]
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlyRetentionInDailyFormat
-Mengindikasikan bahwa cmdlet ini membuat kebijakan Bulanan dalam format Harian.
+Menunjukkan bahwa cmdlet ini membuat kebijakan Bulanan dalam format Harian.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -MonthlyRetentionInWeeklyFormat
-Mengindikasikan bahwa cmdlet ini membuat kebijakan Bulanan dalam format Mingguan.
+Menunjukkan bahwa cmdlet ini membuat kebijakan Bulanan dalam format Mingguan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -211,8 +211,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MonthsOfYear
-Menentukan bulan mana dalam setahun memiliki poin pemulihan yang dipertahankan Cadangan setiap tahun.
+### -BulanOfYear
+Menentukan bulan mana dalam setahun yang memiliki titik pemulihan yang dipertahankan cadangan setiap tahun.
 Nilai yang dapat diterima untuk parameter ini adalah: nama bulan, seperti Januari atau Februari.
 
 ```yaml
@@ -228,10 +228,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Penyimpanan
-Menentukan periode penyimpanan, dalam hari, bulan, atau tahun, di mana Cadangan menyimpan titik pencadangan.
-Unit bergantung pada apakah cmdlet ini memilih opsi penyimpanan harian, bulanan, atau tahunan.
-Misalnya, jika menentukan parameter *DailyRetention,* cmdlet akan menafsirkan parameter saat ini sebagai jumlah hari.
+### -Retensi
+Menentukan periode penyimpanan, dalam hari, bulan, atau tahun, di mana Cadangan menyimpan titik cadangan.
+Unit tergantung pada apakah cmdlet ini memilih opsi penyimpanan harian, bulanan, atau tahunan.
+Misalnya, jika menentukan parameter *DailyRetention* , cmdlet menginterpretasikan parameter saat ini sebagai sejumlah hari.
 
 ```yaml
 Type: System.Int32
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeeklyRetention
-Mengindikasikan bahwa cmdlet ini membuat kebijakan penyimpanan Mingguan.
+Menunjukkan bahwa cmdlet ini membuat kebijakan penyimpanan Mingguan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,12 +261,12 @@ Accept wildcard characters: False
 ```
 
 ### -WeekNumber
-Menentukan minggu dalam bulan yang mengidentifikasi poin pemulihan mana yang dipertahankan Cadangan dan untuk berapa lama.
+Menentukan minggu dalam sebulan yang mengidentifikasi titik pemulihan mana yang dipertahankan Cadangan dan berapa lama.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Pertama 
-- Detik 
+- Kedua 
 - Ketiga 
-- Fourth 
+- Keempat 
 - Terakhir
 
 ```yaml
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 ```
 
 ### -YearlyRetentionInDailyFormat
-Mengindikasikan bahwa cmdlet ini membuat kebijakan penyimpanan Tahunan dalam format Harian.
+Menunjukkan bahwa cmdlet ini membuat kebijakan penyimpanan Tahunan dalam format Harian.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -YearlyRetentionInWeeklyFormat
-Mengindikasikan bahwa cmdlet ini membuat kebijakan penyimpanan Tahunan dalam format Mingguan.
+Menunjukkan bahwa cmdlet ini membuat kebijakan penyimpanan Tahunan dalam format Mingguan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -313,22 +313,22 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.AzureBackup.Models.AzureRMBackupRetentionPolicy
 
 ## CATATAN
-* Tidak ada
+* Tidak
 
 ## RELATED LINKS
 
-[Enable-AzureRmBackupProtection](./Enable-AzureRmBackupProtection.md)
+[Aktifkan-AzureRmBackupProtection](./Enable-AzureRmBackupProtection.md)
 
 [New-AzureRmBackupProtectionPolicy](./New-AzureRmBackupProtectionPolicy.md)
 

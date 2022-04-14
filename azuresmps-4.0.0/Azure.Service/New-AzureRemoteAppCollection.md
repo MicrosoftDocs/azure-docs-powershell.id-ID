@@ -4,11 +4,11 @@ ms.assetid: 2021B6BC-7B59-4A88-B1DF-598203F58901
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 9c2c3d833a3735b51dd55fc314e614881f2a7814
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427486"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920706"
 ---
 # New-AzureRemoteAppCollection
 
@@ -36,24 +36,24 @@ New-AzureRemoteAppCollection [-CollectionName] <String> [-ImageName] <String> [-
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRemoteAppCollection** membuat kumpulan Azure RemoteApp.
+Cmdlet **New-AzureRemoteAppCollection** membuat koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
-### Contoh 1: Buat koleksi
+### Contoh 1: Membuat koleksi
 ```
 PS C:\> New-AzureRemoteAppCollection -CollectionName "Contoso" -ImageName "Windows Server 2012 R2" -Plan Standard -Location "West US" -Description CloudOnly
 ```
 
-Perintah ini membuat koleksi Azure RemoteApp.
+Perintah ini membuat kumpulan Azure RemoteApp.
 
-### Contoh 2: Buat kumpulan menggunakan kredensial
+### Contoh 2: Membuat koleksi menggunakan kredensial
 ```
 PS C:\> $cred = Get-Credential corp.contoso.com\admin
 PS C:\> New-AzureRemoteAppCollection -CollectionName "ContosoHybrid" -ImageName "Windows Server 2012 R2" -Plan Standard -VNetName azureVNet -Domain Contoso.com -Credential $cred -Description Hybrid
 ```
 
-Perintah ini membuat kumpulan Azure RemoteApp menggunakan kredensial dari cmdlet **Get-Credential.**
+Perintah ini membuat kumpulan Azure RemoteApp menggunakan kredensial dari cmdlet **Get-Credential** .
 
 ## PARAMETERS
 
@@ -72,9 +72,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Credential
+### -Kredensial
 Menentukan kredensial akun layanan yang memiliki izin untuk bergabung dengan server Azure RemoteApp ke domain Anda.
-Untuk mendapatkan objek **PSCredential,** gunakan cmdlet **Get-Credential.**
+Untuk mendapatkan objek **PSCredential** , gunakan cmdlet **Get-Credential** .
 
 ```yaml
 Type: PSCredential
@@ -89,8 +89,8 @@ Accept wildcard characters: False
 ```
 
 ### -CustomRdpProperty
-Menentukan properti Protocal Desktop Jarak Jauh (RDP) kustom yang bisa digunakan untuk mengonfigurasi pengalihan drive dan pengaturan lain.
-Lihat [RdP Pengaturan untuk Layanan Desktop Jarak Jauh di Windows Server](https://technet.microsoft.com/library/ff393699(v=ws.10).aspx) untuk `(https://technet.microsoft.com/library/ff393699(v=ws.10).aspx)` detailnya.  
+Menentukan properti Protokal Desktop Jauh (RDP) kustom yang dapat digunakan untuk mengonfigurasi pengalihan drive dan pengaturan lainnya.
+Lihat [Pengaturan RDP untuk Layanan Desktop Jarak Jauh di Server](https://technet.microsoft.com/library/ff393699(v=ws.10).aspx)`(https://technet.microsoft.com/library/ff393699(v=ws.10).aspx)` Windows untuk detailnya.  
 
 ```yaml
 Type: String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Deskripsi
-Menentukan deskripsi singkat untuk objek tersebut.
+Menentukan deskripsi singkat untuk objek.
 
 ```yaml
 Type: String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DnsServers
-Menentukan daftar alamat IPv4 yang dipisahkan koma dari server DNS.
+Menentukan daftar alamat IPv4 server DNS yang dipisahkan koma.
 
 ```yaml
 Type: String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Domain
-Menentukan nama domain Layanan Domain Direktori Aktif yang akan bergabung dalam server Tuan Rumah Sesi RD.
+Menentukan nama domain Active Directory Domain Services tempat untuk bergabung dalam server Host Sesi RD.
 
 ```yaml
 Type: String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan wilayah Azure koleksi.
+Menentukan kawasan Azure koleksi.
 
 ```yaml
 Type: String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrganizationalUnit
-Menentukan nama unit organisasi (OU) untuk bergabung dengan server Tuan Rumah Sesi RD, misalnya, OU=MyOu,DC=MyDomain,DC=ParentDomain,DC=DC=com.
+Menentukan nama unit organisasi (OU) tempat untuk bergabung dalam server Host Sesi RD, misalnya, OU=MyOu,DC=MyDomain,DC=ParentDomain,DC=com.
 Atribut seperti OU dan DC harus dalam huruf besar.
 OU tidak dapat diubah setelah koleksi dibuat.
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rencana
-Menentukan paket untuk koleksi Azure RemoteApp, yang dapat menentukan batas penggunaan.
+Menentukan rencana untuk kumpulan Azure RemoteApp, yang dapat menentukan batas penggunaan.
 Gunakan **Get-AzureRemoteAppPlan** untuk melihat paket yang tersedia.
 
 ```yaml
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Menentukan nama subnet dalam jaringan virtual yang digunakan untuk membuat kumpulan Azure RemoteApp.
+Menentukan nama subnet di jaringan virtual untuk digunakan untuk membuat kumpulan Azure RemoteApp.
 
 ```yaml
 Type: String
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -289,7 +289,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRemoteAppPlan](./Get-AzureRemoteAppPlan.md)
 
-[Remove-AzureRemoteAppCollection](./Remove-AzureRemoteAppCollection.md)
+[Hapus-AzureRemoteAppCollection](./Remove-AzureRemoteAppCollection.md)
 
 [Set-AzureRemoteAppCollection](./Set-AzureRemoteAppCollection.md)
 

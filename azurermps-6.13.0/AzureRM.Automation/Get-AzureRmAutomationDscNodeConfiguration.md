@@ -7,22 +7,22 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationDscNodeConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/Get-AzureRmAutomationDscNodeConfiguration.md
 ms.openlocfilehash: ae3a1d02e17aac12a96f74eec6ecfd1213f3d7c8
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428471"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142101213"
 ---
 # Get-AzureRmAutomationDscNodeConfiguration
 
 ## SYNOPSIS
-Mendapatkan metadata untuk konfigurasi node DSC dalam Otomatisasi.
+Mendapatkan metadata untuk konfigurasi simpul DSC dalam Otomatisasi.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### SecaraSemua (Default)
+### ByAll (Default)
 ```
 Get-AzureRmAutomationDscNodeConfiguration [-RollupStatus <String>] [-ResourceGroupName] <String>
  [-AutomationAccountName] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
@@ -42,36 +42,36 @@ Get-AzureRmAutomationDscNodeConfiguration -ConfigurationName <String> [-RollupSt
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) dalam Otomatisasi Azure.
-Otomatisasi menyimpan konfigurasi node DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
+Cmdlet **Get-AzureRmAutomationDscNodeConfiguration** mendapatkan metadata untuk konfigurasi node APS Desired State Configuration (DSC) dalam Azure Automation.
+Otomatisasi menyimpan konfigurasi simpul DSC sebagai dokumen konfigurasi Managed Object Format (MOF).
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua konfigurasi node DSC
+### Contoh 1: Dapatkan semua konfigurasi simpul DSC
 ```
 PS C:\>Get-AzureRmAutomationDscNodeConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17"
 ```
 
-Perintah ini mendapatkan metadata untuk semua konfigurasi node DSC dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan metadata untuk semua konfigurasi simpul DSC di akun Otomatisasi bernama Contoso17.
 
-### Contoh 2: Mendapatkan semua konfigurasi node DSC untuk konfigurasi DSC
+### Contoh 2: Dapatkan semua konfigurasi simpul DSC untuk konfigurasi DSC
 ```
 PS C:\>Get-AzureRmAutomationDscNodeConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -ConfigurationName "ContosoConfiguration"
 ```
 
-Perintah ini mendapatkan metadata untuk semua konfigurasi node DSC dalam akun Otomatisasi bernama Contoso17 bahwa konfigurasi DSC bernama ContosoConfiguration dibuat.
+Perintah ini mendapatkan metadata untuk semua konfigurasi simpul DSC dalam akun Otomatisasi bernama Contoso17 yang dihasilkan konfigurasi DSC bernama ContosoConfiguration.
 
-### Contoh 3: Dapatkan konfigurasi node DSC menurut nama
+### Contoh 3: Dapatkan konfigurasi simpul DSC berdasarkan nama
 ```
 PS C:\>Get-AzureRmAutomationDscNodeConfiguration -ResourceGroupName "ResourceGroup03" -AutomationAccountName "Contoso17" -Name "ContosoConfiguration.webserver"
 ```
 
-Perintah ini mendapatkan metadata untuk konfigurasi node DSC dengan nama ContosoConfiguration.webserver dalam akun Otomatisasi yang bernama Contoso17.
+Perintah ini mendapatkan metadata untuk konfigurasi simpul DSC dengan nama ContosoConfiguration.webserver di akun Otomatisasi bernama Contoso17.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang berisi konfigurasi node DSC di mana cmdlet ini mendapatkan metadata.
+Menentukan nama akun Otomatisasi yang berisi konfigurasi simpul DSC di mana cmdlet ini mendapatkan metadata.
 
 ```yaml
 Type: System.String
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConfigurationName
-Menentukan nama konfigurasi DSC di mana cmdlet ini mendapatkan metadata konfigurasi node.
+Menentukan nama konfigurasi DSC di mana cmdlet ini mendapatkan metadata konfigurasi simpul.
 
 ```yaml
 Type: System.String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi node DSC tempat cmdlet ini mendapatkan metadata.
+Menentukan nama konfigurasi simpul DSC di mana cmdlet ini mendapatkan metadata.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Menentukan nama grup sumber daya.
-Cmdlet ini mendapatkan metadata untuk konfigurasi node DSC dalam grup sumber daya yang ditentukan parameter ini.
+Cmdlet ini mendapatkan metadata untuk konfigurasi simpul DSC dalam grup sumber daya yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -147,8 +147,8 @@ Accept wildcard characters: False
 ```
 
 ### -RollupStatus
-Menentukan status rollup konfigurasi node DSC yang akan dapatkan cmdlet ini.
-Nilai valid adalah: 
+Menentukan status rollup dari konfigurasi simpul DSC yang didapatkan cmdlet ini.
+Nilai yang valid adalah: 
 - Buruk 
 - Bagus
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

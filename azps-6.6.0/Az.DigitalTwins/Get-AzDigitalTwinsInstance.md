@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DigitalTwins/help/Get-AzDigitalTwinsInstance.md
 ms.openlocfilehash: 28afdebaa4390776e3e1ae887806aeb11c0679a4
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140482647"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142051571"
 ---
 # Get-AzDigitalTwinsInstance
 
@@ -18,7 +18,7 @@ ms.locfileid: "140482647"
 Dapatkan sumber daya DigitalTwinsInstances.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsinstance) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.digitaltwins/get-azdigitaltwinsinstance) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Dapatkan sumber daya DigitalTwinsInstances.
 Get-AzDigitalTwinsInstance [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzDigitalTwinsInstance -ResourceGroupName <String> -ResourceName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -71,7 +71,7 @@ Location Name             Type
 eastus   youriDigitalTwin Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Dapatkan AzDigitalTwinsInstance tertentu oleh ResourceName
+Dapatkan AzDigitalTwinsInstance yang ditentukan oleh ResourceName
 
 ### Contoh 3: GetViaIdentity
 ```powershell
@@ -83,9 +83,9 @@ Location Name             Type
 eastus   youriDigitalTwin Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Dapatkan AzDigitalTwinsInstance tertentu berdasarkan Object
+Dapatkan AzDigitalTwinsInstance yang ditentukan oleh Object
 
-### Contoh 4: Daftar1
+### Contoh 4: List1
 ```powershell
 PS C:\> Get-AzDigitalTwinsInstance -ResourceGroupName youritemp
 
@@ -95,7 +95,7 @@ eastus   youriDigitalTwinsTest   Microsoft.DigitalTwins/digitalTwinsInstances
 eastus   youriDigitalTwin        Microsoft.DigitalTwins/digitalTwinsInstances
 ```
 
-Dapatkan semua DigitalTwinsInstance oleh ResourceGroupName
+Dapatkan semua DigitalTwinsInstance dengan ResourceGroupName
 
 ## PARAMETERS
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.DigitalTwins.Models.IDigitalTwinsIdentity
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

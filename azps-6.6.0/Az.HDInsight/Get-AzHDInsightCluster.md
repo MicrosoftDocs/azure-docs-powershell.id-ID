@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HDInsight/HDInsight/help/Get-AzHDInsightCluster.md
 ms.openlocfilehash: 06f3d352b17e29fa61cee52b2bbf22652b26aaf0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140254627"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141912351"
 ---
 # Get-AzHDInsightCluster
 
 ## SYNOPSIS
-Mendapatkan dan mencantumkan semua kluster Azure HDInsight yang terkait dengan langganan saat ini atau grup sumber daya yang ditentukan, atau mengambil kluster tertentu.
+Mendapatkan dan mencantumkan semua kluster Azure HDInsight yang terkait dengan langganan saat ini atau grup sumber daya tertentu, atau mengambil klaster tertentu.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightcluster) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.hdinsight/get-azhdinsightcluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,11 +30,11 @@ Get-AzHDInsightCluster [[-ResourceGroupName] <String>] [[-ClusterName] <String>]
 
 ## DESCRIPTION
 Cmdlet **Get-AzHDInsightCluster** mencantumkan kluster layanan Azure HDInsight untuk langganan saat ini.
-Gunakan parameter *ClusterName* untuk mendapatkan detail bagi kluster tertentu.
+Gunakan parameter *ClusterName* untuk mendapatkan detail kluster tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Daftar semua kluster Azure HDInsight
+### Contoh 1: Mencantumkan semua kluster Azure HDInsight
 ```
 PS C:\>Get-AzHDInsightCluster
 ```
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -89,11 +89,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -103,7 +103,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Remove-AzHDInsightCluster](./Remove-AzHDInsightCluster.md)
+[Hapus-AzHDInsightCluster](./Remove-AzHDInsightCluster.md)
 
 [Use-AzHDInsightCluster](./Use-AzHDInsightCluster.md)
 

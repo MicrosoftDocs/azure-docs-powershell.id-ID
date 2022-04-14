@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzImageDataDisk.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Compute/Compute/help/Add-AzImageDataDisk.md
 ms.openlocfilehash: b6c1a7e8947a079a864aae31d12aedf244ecb81b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132413859"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141918651"
 ---
 # Add-AzImageDataDisk
 
 ## SYNOPSIS
-Menambahkan disk data ke gambar yang tidak disinggtikkan.
+Menambahkan disk data ke obejct gambar.
 
 ## SYNTAX
 
@@ -42,20 +42,20 @@ PS C:\> Add-AzImageDataDisk -Image $imageConfig -Lun 2 -BlobUri $dataDiskVhdUri2
 PS C:\> New-AzImage -Image $imageConfig -ImageName 'ImageName01' -ResourceGroupName 'ResourceGroup01';
 ```
 
-Perintah pertama akan membuat objek gambar, lalu menyimpannya dalam $imageConfig variabel.
+Perintah pertama membuat objek gambar, lalu menyimpannya dalam variabel $imageConfig.
 
-Tiga perintah berikutnya menetapkan jalur disk sistem operasi dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, $dataDiskVhdUri 2.
+Tiga perintah berikutnya menetapkan jalur disk sistem operasi dan dua disk data ke variabel $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
 Pendekatan ini hanya untuk keterbacaan perintah berikut.
 
-Ketiga perintah berikutnya masing-masing menambahkan disk sistem operasi dan dua disk data ke gambar yang disimpan $imageConfig.
-URI setiap disk disimpan di sumber $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
+Tiga perintah berikutnya masing-masing menambahkan disk sistem operasi dan dua disk data ke gambar yang disimpan di $imageConfig.
+URI setiap disk disimpan di $osDiskVhdUri, $dataDiskVhdUri 1, dan $dataDiskVhdUri 2.
 
-Perintah terakhir membuat gambar bernama ImageName01 dalam grup sumber daya ResourceGroup01.
+Perintah akhir membuat gambar bernama ImageName01 dalam grup sumber daya ResourceGroup01.
 
 ## PARAMETERS
 
 ### -BlobUri
-Menentukan tautan, sebagai URI, dari blob.
+Menentukan tautan, sebagai URI, blob.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Caching
-Menentukan mode cache disk.
+Menentukan mode cache diska.
 
 ```yaml
 Type: CachingTypes
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -115,7 +115,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Image
+### -Gambar
 Menentukan objek gambar lokal.
 
 ```yaml
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDiskId
-Menentukan ID dari disk yang dikelola.
+Menentukan ID disk yang dikelola.
 
 ```yaml
 Type: String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountType
-Tipe Storage Akun dari disk gambar data
+Tipe Akun Storage disk gambar data
 
 ```yaml
 Type: StorageAccountTypes
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -222,13 +222,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Management.Compute.Models.Image
 System.Int32 System.String System.Nullable1`1[[Microsoft.Azure.Management.Compute.Models.CachingTypes, Microsoft.Azure.Management.Compute, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
-System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+System.Nullable`[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

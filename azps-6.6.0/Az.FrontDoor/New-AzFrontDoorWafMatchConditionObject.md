@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafMatchConditionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafMatchConditionObject.md
 ms.openlocfilehash: fbb93cf7dcda5ec5032f168633eb65bc4c06d06f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140106227"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050743"
 ---
 # New-AzFrontDoorWafMatchConditionObject
 
 ## SYNOPSIS
-Membuat Objek MatchCondition untuk pembuatan kebijakan WAF
+Buat Objek MatchCondition untuk pembuatan kebijakan WAF
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmatchconditionobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmatchconditionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzFrontDoorWafMatchConditionObject -MatchVariable <String> -OperatorProperty
 ```
 
 ## DESCRIPTION
-Membuat Objek MatchCondition untuk pembuatan kebijakan WAF
+Buat Objek MatchCondition untuk pembuatan kebijakan WAF
 
 ## EXAMPLES
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 
 ### -MatchVariable
 Cocokkan Variabel.
-Nilai yang memungkinkan antara lain: 'RemoteAddr', 'RequestMethod', 'QueryString', 'PostArgs','RequestUri', 'RequestHeader', 'RequestAddr', 'SocketAddr'
+Nilai yang memungkinkan termasuk: 'RemoteAddr', 'RequestMethod', 'QueryString', 'PostArgs','RequestUri', 'RequestHeader', 'RequestBody', 'SocketAddr'
 
 ```yaml
 Type: System.String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan jika ini meniadakan kondisi atau nilai Default tidak salah
+Menjelaskan apakah ini meniadakan kondisi atau tidak Nilai default adalah false
 
 ```yaml
 Type: System.Boolean
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 ```
 
 ### -OperatorProperty
-Menjelaskan operator yang akan cocok.
-Nilai yang memungkinkan antara lain: 'Any', 'IPMatch', 'GeoMatch', 'Equal', 'Contains', 'LessThan', 'GreaterThanOrEqual', 'GreaterThanOrEqual', 'BeginsWith', 'EndsWith', 'RegEx'
+Menjelaskan operator yang akan dicocokkan.
+Nilai yang memungkinkan antara lain: 'Any', 'IPMatch', 'GeoMatch', 'Equal', 'Contains', 'LessThan', 'GreaterThan', 'LessThanOrEqual', 'GreaterThanOrEqual', 'BeginsWith', 'EndsWith', 'RegEx'
 
 ```yaml
 Type: System.String
@@ -134,8 +134,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pemilih
-Nama pemilih dalam RequestHeader atau RequestHeader agar sesuai
+### -Selector
+Nama pemilih di RequestHeader atau RequestBody agar cocok
 
 ```yaml
 Type: System.String
@@ -149,8 +149,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Transform
-Transformasi untuk diterapkan. Kemungkinan nilai meliputi: 'Huruf kecil', 'Huruf besar', 'Trim', 'UrlDecode', 'UrlEncode', 'RemoveNulls'.
+### -Transformasi
+Transformasi untuk diterapkan. Nilai yang memungkinkan meliputi: 'Huruf kecil', 'Huruf Besar', 'Pangkas', 'UrlDecode', 'UrlEncode', 'RemoveNulls'.
 
 ```yaml
 Type: System.String[]
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -4,11 +4,11 @@ ms.assetid: B35979E5-94C4-4DCC-B87D-D6915464CF69
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 0c20cea0284ddd1df55bdcd41000076eb8c89428
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422080"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920179"
 ---
 # Remove-AzureRemoteAppTemplateImage
 
@@ -26,7 +26,7 @@ Remove-AzureRemoteAppTemplateImage [-ImageName] <String> [-Profile <AzureSMProfi
 
 ## DESCRIPTION
 Cmdlet **Remove-AzureRemoteAppTemplateImage** menghapus gambar templat Azure RemoteApp.
-Gambar templat hanya dapat dihapus jika tidak tertaut ke koleksi Azure RemoteApp apa pun.
+Gambar templat hanya dapat dihapus jika tidak ditautkan ke koleksi Azure RemoteApp apa pun.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Gambar templat hanya dapat dihapus jika tidak tertaut ke koleksi Azure RemoteApp
 PS C:\> Remove-AzureRemoteAppTemplateImage -ImageName "ContosoApps"
 ```
 
-Perintah ini akan menghapus gambar templat bernama ContosoApps.
+Perintah ini menghapus gambar templat bernama ContosoApps.
 
 ## PARAMETERS
 
@@ -55,8 +55,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -114,8 +114,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRemoteAppTemplateImage](./Get-AzureRemoteAppTemplateImage.md)
 
-[New-AzureRemoteAppTemplateImage](./New-AzureRemoteAppTemplateImage.md)
+[AzureRemoteAppTemplateImage baru](./New-AzureRemoteAppTemplateImage.md)
 
-[Rename-AzureRemoteAppTemplateImage](./Rename-AzureRemoteAppTemplateImage.md)
+[Ganti nama-AzureRemoteAppTemplateImage](./Rename-AzureRemoteAppTemplateImage.md)
 
 

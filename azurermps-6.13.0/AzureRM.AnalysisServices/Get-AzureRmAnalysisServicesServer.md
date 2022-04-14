@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/Get-AzureRmAnalysisServicesServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/AnalysisServices/Commands.AnalysisServices/help/Get-AzureRmAnalysisServicesServer.md
 ms.openlocfilehash: efd4c4770bb9a2628530f476d44e9774534ceee7
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425938"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142103165"
 ---
 # Get-AzureRmAnalysisServicesServer
 
 ## SYNOPSIS
-Mendapatkan detail dari server Analysis Services.
+Mendapatkan detail server Analysis Services.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmAnalysisServicesServer [[-ResourceGroupName] <String>] [[-Name] <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzureRmAnalysisServicesServer baru mendapatkan detail server Analysis Services.
+Cmdlet Get-AzureRmAnalysisServicesServer mendapatkan detail server Analysis Services.
 
 ## EXAMPLES
 
@@ -43,12 +43,12 @@ Perintah ini mendapatkan semua server Azure Analysis Services dalam grup sumber 
 PS C:\>Get-AzureRmAnalysisServicesServer -ResourceGroupName "ResourceGroup03" -Name "testserver"
 ```
 
-Perintah ini mendapatkan server Azure Analysis Services bernama testserver dalam grup sumber daya yang bernama ResourceGroup03.
+Perintah ini mendapatkan server Azure Analysis Services bernama testserver dalam grup sumber daya bernama ResourceGroup03.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya Azure tempat server dimiliki
+Nama grup sumber daya Azure tempat server berada
 
 ```yaml
 Type: System.String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -110,4 +110,4 @@ Alias: Get-AzureAs
 
 [New-AzureRmAnalysisServicesServer ](./New-AzureRmAnalysisServicesServer .md)
 
-[Remove-AzureRmAnalysisServicesServer ](./Remove-AzureRmAnalysisServicesServer .md)
+[Hapus-AzureRmAnalysisServicesServer ](./Remove-AzureRmAnalysisServicesServer .md)

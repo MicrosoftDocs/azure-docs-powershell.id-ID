@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/New-AzHealthcareApisService.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/HealthcareApis/HealthcareApis/help/New-AzHealthcareApisService.md
 ms.openlocfilehash: 6a1582a2461b82fec6b0818ad100215840ba507e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139938608"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050293"
 ---
 # New-AzHealthcareApisService
 
@@ -18,7 +18,7 @@ ms.locfileid: "139938608"
 Membuat metadata instans layanan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.healthcareapis/new-azhealthcareapisservice) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.healthcareapis/new-azhealthcareapisservice) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Membuat atau memperbarui metadata instans layanan.
 
 ## EXAMPLES
 
-### Contoh 1 : Membuat layanan fapis Azure healthcareapis baru bernama MyService dalam grup sumber daya MyResourceGroup di lokasi westus2 dengan throughput penawaran cosmosdb = 400
+### Contoh 1 : Membuat layanan fhir Azure healthcareapis baru bernama MyService dalam grup sumber daya MyResourceGroup di lokasi westus2 dengan throughput penawaran cosmosdb = 400
 ```powershell
 PS C:\> New-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup -Location MyLocation -Kind fhir-R4 -CosmosOfferThroughput 400
 
@@ -63,7 +63,7 @@ ResourceType            : Microsoft.HealthcareApis/services
 SmartProxyEnabled       : False
 ```
 
-### Contoh 2 : Membuat layanan fapis Azure healthcareapis baru bernama MyService dalam grup sumber daya MyResourceGroup di lokasi westus2 dengan throughput penawaran cosmosdb = 400 dan kunci vault kunci uri "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
+### Contoh 2 : Membuat layanan fhir Azure healthcareapis baru bernama MyService dalam grup sumber daya MyResourceGroup di lokasi westus2 dengan throughput penawaran cosmosdb = 400 dan kunci kunci kubah uri "https://\<my-keyvault>.vault.azure.net/keys/\<my-key>"
 ```powershell
 PS C:\> New-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup -Location MyLocation -Kind fhir-R4 -CosmosOfferThroughput 400 -CosmosKeyVaultKeyUri "https://<my-keyvault>.vault.azure.net/keys/<my-key>"
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AllowCorsCredential
-Layanan HealthcareApis Fapis AllowCorsCredentials.
+HealthcareApis Fhir Service AllowCorsCredentials.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Audiens
-HealthcareApis Fhir Service Audience.
+Pemirsa Layanan HealthcareApis Fhir.
 
 ```yaml
 Type: System.String
@@ -151,8 +151,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Authority
-Otoritas Layanan HealthcareApis Fapis.
+### -Otoritas
+Otoritas Layanan HealthcareApis Fhir.
 
 ```yaml
 Type: System.String
@@ -167,8 +167,8 @@ Accept wildcard characters: False
 ```
 
 ### -CorsHeader
-Daftar Layanan Layanan CorsApis Fapis.
-Tentukan header HTTP yang bisa digunakan selama permintaan.
+HealthcareApis Fhir Daftar Layanan Header Cors.
+Tentukan header HTTP yang dapat digunakan selama permintaan.
 Gunakan " * " untuk header apa pun.
 
 ```yaml
@@ -184,9 +184,9 @@ Accept wildcard characters: False
 ```
 
 ### -CorsMaxAge
-Layanan HealthcareApis Fapis Cors Max Age.
-Tentukan berapa lama hasil dari permintaan dapat disimpan dalam hitungan detik.
-Contoh: 600 means 10 minutes.
+HealthcareApis Fhir Service Cors Max Age.
+Tentukan berapa lama hasil dari permintaan bisa disinggahkan dalam detik.
+Contoh: 600 mean 10 minutes.
 
 ```yaml
 Type: System.Int32
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -CorsMethod
-Daftar Layanan Cors HealthcareApis Fapis.
+HealthcareApis Fhir Daftar Layanan Metode Cors.
 
 ```yaml
 Type: System.String[]
@@ -216,8 +216,8 @@ Accept wildcard characters: False
 ```
 
 ### -CorsOrigin
-Layanan KesehatanApis Daftar Layanan Cors Origin.
-Tentukan URL situs origin yang bisa mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs apa pun.
+HealthcareApis Fhir Daftar Layanan Asal Cors.
+Tentukan URL situs asal yang dapat mengakses API ini, atau gunakan " * " untuk mengizinkan akses dari situs apa pun.
 
 ```yaml
 Type: System.String[]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -CosmosKeyVaultKeyUri
 HealthcareApis Fhir Service CosmosKeyVaultKeyUri.
-URI kunci yang dikelola pelanggan untuk database backing.
+URI kunci yang dikelola pelanggan untuk database cadangan.
 
 ```yaml
 Type: System.String
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableSmartProxy
-Layanan HealthcareApis Fapis EnableSmartProxy.
+Layanan HealthcareApis Fhir EnableSmartProxy.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExportStorageAccountName
-Layanan HealthcareApis Fapis Mengekspor Storage Akun Baru.
+HealthcareApis Fhir Service Export Storage Account Name.
 
 ```yaml
 Type: System.String
@@ -322,9 +322,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Kind
-Jenis Layanan Layanan Layanan Kesehatan.
-Nilai defaultnya adalah F cukup besar
+### -Jenis
+Jenis Layanan HealthcareApis.
+Nilai defaultnya adalah Fhir
 
 ```yaml
 Type: System.String
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedIdentity
-Menggunakan Identitas Terkelola?
+Gunakan Identitas Terkelola?
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag Akun Layanan Layanan Layanan HealthcareApis.
+Tag Akun Layanan HealthcareApis Fhir.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -430,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -446,7 +446,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -461,7 +461,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

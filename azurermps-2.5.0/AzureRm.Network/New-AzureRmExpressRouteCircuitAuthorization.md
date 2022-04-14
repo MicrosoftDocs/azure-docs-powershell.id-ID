@@ -5,11 +5,11 @@ ms.assetid: B6E55944-1B78-463F-9FC9-98097FEEC278
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/new-azurermexpressroutecircuitauthorization
 schema: 2.0.0
 ms.openlocfilehash: f0e66c1e601ab63eec6d2540edd3ba0235727e9a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429158"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781202"
 ---
 # New-AzureRmExpressRouteCircuitAuthorization
 
@@ -26,26 +26,26 @@ New-AzureRmExpressRouteCircuitAuthorization -Name <String> [-DefaultProfile <IAz
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmExpressRouteCircuitAuthorization** membuat otorisasi sirkuit yang bisa ditambahkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang bisa digunakan oleh pemilik jaringan virtual untuk menghubungkan jaringan ke sirkuit. Hanya ada satu otorisasi per jaringan virtual.
+Cmdlet **New-AzureRmExpressRouteCircuitAuthorization** membuat otorisasi sirkuit yang dapat ditambahkan ke sirkuit ExpressRoute. Sirkuit ExpressRoute menyambungkan jaringan lokal Anda ke awan Microsoft dengan menggunakan penyedia konektivitas, bukan Internet publik. Pemilik sirkuit ExpressRoute dapat membuat sebanyak 10 otorisasi untuk setiap sirkuit; otorisasi ini menghasilkan kunci otorisasi yang dapat digunakan oleh pemilik jaringan virtual untuk menyambungkan jaringan ke sirkuit. Hanya ada satu otorisasi per jaringan virtual.
 
 Setelah membuat sirkuit ExpressRoute, Anda dapat menggunakan **Add-AzureRmExpressRouteCircuitAuthorization** untuk menambahkan otorisasi ke sirkuit tersebut.
-Alternatifnya, Anda bisa menggunakan **New-AzureRmExpressRouteCircuitAuthorization** untuk membuat otorisasi yang bisa ditambahkan ke sirkuit baru pada saat yang sama sirkuit dibuat.
+Atau, Anda dapat menggunakan **New-AzureRmExpressRouteCircuitAuthorization** untuk membuat otorisasi yang dapat ditambahkan ke sirkuit baru pada saat yang sama sirkuit dibuat.
 
 ## EXAMPLES
 
-### Contoh 1: Buat otorisasi sirkuit baru
+### Contoh 1: Membuat otorisasi sirkuit baru
 ```
 $Authorization = New-AzureRmExpressRouteCircuitAuthorization -Name "ContosoCircuitAuthorization"
 ```
 
-Perintah ini membuat otorisasi sirkuit baru bernama ContosoCircuitAuthorization lalu menyimpan objek tersebut dalam variabel yang bernama $Authorization. Menyimpan objek ke variabel penting: although **New-AzureRmExpressRouteCircuitAuthorization** can create a circuit authorization it cannot add that authorization to a circuit route. Sebaliknya, variabel $Authorization digunakan New-AzureRmExpressRouteCircuit saat membuat sirkuit ExpressRoute yang benar-benar baru.
+Perintah ini membuat otorisasi sirkuit baru bernama ContosoCircuitAuthorization lalu menyimpan objek tersebut dalam variabel bernama $Authorization. Menyimpan objek ke variabel sangat penting: meskipun **New-AzureRmExpressRouteCircuitAuthorization** dapat membuat otorisasi sirkuit tidak dapat menambahkan otorisasi tersebut ke rute sirkuit. Sebagai gantinya, variabel $Authorization digunakan New-AzureRmExpressRouteCircuit saat membuat sirkuit ExpressRoute baru.
 
-Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzureRmExpressRouteCircuit baru.
+Untuk informasi selengkapnya, lihat dokumentasi untuk cmdlet New-AzureRmExpressRouteCircuit.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama yang unik untuk otorisasi sirkuit ExpressRoute baru.
+Menentukan nama unik untuk otorisasi sirkuit ExpressRoute yang baru.
 
 ```yaml
 Type: String
@@ -75,17 +75,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
-Cmdlet ini tidak menerima input saluran.
+### Tidak
+Cmdlet ini tidak menerima input pipelined.
 
 ## OUTPUTS
 
 ### PSExpressRouteCircuitAuthorization
-Cmdlet ini membuat contoh objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization.**
+Cmdlet ini membuat instans objek **Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization** .
 
 ## CATATAN
 

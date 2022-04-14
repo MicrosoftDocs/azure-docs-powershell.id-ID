@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRoutingRuleObject.md
 ms.openlocfilehash: c1c22f7ed7befe4804f08af331a549dc619499cc
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077463"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050887"
 ---
 # New-AzFrontDoorRoutingRuleObject
 
 ## SYNOPSIS
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorroutingruleobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorroutingruleobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-AzFrontDoorRoutingRuleObject -ResourceGroupName <String> -FrontDoorName <Str
 ```
 
 ## DESCRIPTION
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 ## EXAMPLES
 
@@ -84,13 +84,13 @@ Name                         : {routingRuleName}
 Type                         :
 ```
 
-Membuat kreasi PSRoutingRuleObject untuk Pintu Depan
+Membuat PSRoutingRuleObject untuk pembuatan Pintu Depan
 
 ## PARAMETERS
 
 ### -AcceptedProtocol
-Skema protokol yang sesuai dengan aturan ini.
-Nilai default adalah {Https, Http}
+Skema protokol agar cocok dengan aturan ini.
+Nilai defaultnya adalah {Https, Http}
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSProtocol[]
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPoolName
-Id sumber daya BackendPool yang di rutekan aturan ini
+Id sumber daya BackendPool yang dirutekan aturan ini
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomFragment
-Fragmen untuk ditambahkan ke URL pengalihan. Fragmen adalah bagian dari URL yang muncul setelah #. Jangan sertakan #.
+Fragmen untuk ditambahkan ke URL pengalihan. Fragmen adalah bagian dari URL yang muncul setelah #. Jangan sertakan kesalahan #.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomQueryString
-Kumpulan string kueri yang akan ditempatkan di URL pengalihan. Pengaturan nilai ini akan mengganti setiap string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk. String kueri harus berada di <key>=<value> format. Yang pertama ? dan & akan ditambahkan secara otomatis, jadi jangan sertakan di depan, tapi pisahkan beberapa string kueri dengan &.
+Kumpulan string kueri yang akan ditempatkan di URL pengalihan. Mengatur nilai ini akan menggantikan string kueri yang sudah ada; biarkan kosong untuk mempertahankan string kueri masuk. String kueri harus berada di <key>=<value> Format. Yang pertama? dan & akan ditambahkan secara otomatis, jadi jangan sertakan di bagian depan, tetapi pisahkan beberapa string kueri dengan &.
 
 ```yaml
 Type: System.String
@@ -212,8 +212,8 @@ Accept wildcard characters: False
 ```
 
 ### -DynamicCompression
-Apakah akan mengaktifkan pemadatan dinamis untuk konten singgahan saat caching diaktifkan.
-Nilai default Diaktifkan
+Apakah mengaktifkan pemadatan dinamis untuk konten singgahan saat cache diaktifkan.
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 
 ### -EnabledState
 Apakah akan mengaktifkan penggunaan aturan ini.
-Nilai default Diaktifkan
+Nilai default diaktifkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSEnabledState
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -ForwardingProtocol
-Protokol yang akan digunakan aturan ini ketika meneruskan lalu lintas ke nilai default backends adalah MatchRequest.
+Protokol yang akan digunakan aturan ini saat meneruskan lalu lintas ke backend Nilai default adalah MatchRequest.
 
 ```yaml
 Type: System.String
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 ```
 
 ### -PatternToMatch
-Pola rute aturan, Tidak Boleh memiliki * apa pun kecuali mungkin setelah / akhir / di akhir jalur. Nilai default adalah /*
+Pola rute aturan, Tidak Boleh memiliki * kecuali mungkin setelah akhir / di akhir jalur. Nilai defaultnya adalah /*
 
 ```yaml
 Type: System.String[]
@@ -336,8 +336,8 @@ Accept wildcard characters: False
 ```
 
 ### -QueryParameterStripDirective
-The treatment of URL query terms when forming the cache key.
-Nilai default adalah StripAll
+Perlakuan istilah kueri URL saat membentuk kunci cache.
+Nilai defaultnya adalah StripAll
 
 ```yaml
 Type: System.String
@@ -412,11 +412,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

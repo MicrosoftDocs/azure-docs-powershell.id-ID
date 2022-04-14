@@ -4,16 +4,16 @@ ms.assetid: 9EA98944-1923-4573-991E-3B9CA21004BB
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 655679da8cf8f63f23c010f13e1cc2293d5e5baf
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422079"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920138"
 ---
 # Remove-AzurePublicIP
 
 ## SYNOPSIS
-Menghapus konfigurasi IP publik dari komputer virtual Azure.
+Menghapus konfigurasi IP Publik dari mesin virtual Azure.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,33 +25,33 @@ Remove-AzurePublicIP [[-PublicIPName] <String>] -VM <IPersistentVM> [-Profile <A
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzurePublicIP** menghapus konfigurasi IP publik dari komputer virtual Azure.
+Cmdlet **Remove-AzurePublicIP** menghapus konfigurasi IP Publik dari mesin virtual Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus konfigurasi IP publik
+### Contoh 1: Hapus konfigurasi IP Publik
 ```
 PS C:\> Get-AzureVM -ServiceName "FTPInAzure" -Name "FTPInstance" | Remove-AzurePublicIP | Update-AzureVM
 ```
 
-Perintah ini mendapatkan mesin virtual yang bernama FTPInstance dalam layanan yang bernama FTPInAzure menggunakan cmdlet **Get-AzureVM.**
-Perintah itu melewati mesin virtual itu ke cmdlet saat ini dengan menggunakan operator pipeline.
-Cmdlet saat ini menghapus konfigurasi IP publik dari komputer virtual.
-Perintah tersebut melewati mesin virtual ke cmdlet **Update-AzureVM,** yang menerapkan perubahan Anda.
+Perintah ini mendapatkan mesin virtual bernama FTPInstance dalam layanan bernama FTPInAzure dengan menggunakan cmdlet **Get-AzureVM** .
+Perintah melewati mesin virtual tersebut ke cmdlet saat ini menggunakan operator pipeline.
+Cmdlet saat ini menghapus konfigurasi IP Publik dari mesin virtual.
+Perintah melewati mesin virtual ke cmdlet **Update-AzureVM** , yang mengimplementasikan perubahan Anda.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Menentukan komputer virtual tempat cmdlet ini menghapus konfigurasi IP Publik.
+Menentukan mesin virtual tempat cmdlet ini menghapus konfigurasi IP Publik.
 
 ```yaml
 Type: IPersistentVM
@@ -127,13 +127,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.ServiceManagement.Model.IPersistentVM
+### Microsoft.WindowsAzure.Commands.ServiceManagement.Model.IPersistentVM
 
 ## CATATAN
 
@@ -145,6 +145,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzurePublicIP](./Set-AzurePublicIP.md)
 
-[Update-AzureVM](./Update-AzureVM.md)
+[Perbarui-AzureVM](./Update-AzureVM.md)
 
 

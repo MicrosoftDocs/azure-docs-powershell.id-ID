@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmDiskUpdateConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmDiskUpdateConfig.md
 ms.openlocfilehash: 1aee03af5a326585f9578a2f3eef378c3b783431
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140851950"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780188"
 ---
 # New-AzureRmDiskUpdateConfig
 
@@ -30,7 +30,7 @@ New-AzureRmDiskUpdateConfig [[-SkuName] <String>] [[-OsType] <OperatingSystemTyp
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmDiskUpdateConfig** membuat objek pembaruan disk yang dapat dikonfigurasikan.
+Cmdlet **New-AzureRmDiskUpdateConfig** membuat objek pembaruan disk yang dapat dikonfigurasi.
 
 ## EXAMPLES
 
@@ -46,20 +46,20 @@ PS C:\> $diskupdateconfig = Set-AzureRmDiskUpdateKeyEncryptionKey -DiskUpdate $d
 PS C:\> Update-AzureRmDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -DiskUpdate $diskupdateconfig;
 ```
 
-Perintah pertama membuat objek pembaruan disk kosong lokal berukuran 10GB di Premium_LRS akun penyimpanan. Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek pembaruan disk.
-Perintah terakhir mengambil objek pembaruan disk dan memperbarui disk yang sudah ada dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek pembaruan disk kosong lokal dengan ukuran 10GB dalam tipe akun penyimpanan Premium_LRS. Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek pembaruan disk.
+Perintah terakhir mengambil objek pembaruan disk dan memperbarui disk yang sudah ada dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```
 PS C:\> New-AzureRmDiskUpdateConfig -DiskSizeGB 10 | Update-AzureRmDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01';
 ```
 
-Perintah ini memperbarui disk yang sudah ada dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01' hingga ukuran disk 10 GB.
+Perintah ini memperbarui disk yang sudah ada dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01' menjadi ukuran disk 10 GB.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKey
-Menentukan objek kunci enkripsi disk pada disk.
+Menentukan objek kunci enkripsi diska pada diska.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.KeyVaultAndSecretReference
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskIOPSReadWrite
-Jumlah IOPS yang diperbolehkan untuk disk ini; hanya dapat ditetapkan untuk disk UltraSSD. Satu operasi bisa mentransfer antara 4k dan 256 ribu byte.
+Jumlah IOPS yang diperbolehkan untuk disk ini; hanya dapat diatur untuk disk UltraSSD. Satu operasi dapat ditransfer antara 4k dan 256k byte.
 
 ```yaml
 Type: System.Int32
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskMBpsReadWrite
-Bandwidth yang diperbolehkan untuk disk ini; hanya dapat ditetapkan untuk disk UltraSSD. MBps berarti jutaan byte per detik - MB di sini menggunakan notasi ISO, dengan kemampuan 10.
+Bandwidth yang diperbolehkan untuk disk ini; hanya dapat diatur untuk disk UltraSSD. MBps berarti jutaan byte per detik - MB di sini menggunakan notasi ISO, dari kekuatan 10.
 
 ```yaml
 Type: System.Int32
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionSettingsEnabled
-Mengaktifkan pengaturan enkripsi.
+Aktifkan pengaturan enkripsi.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKey
-Menentukan kunci enkripsi Kunci di disk.
+Menentukan kunci enkripsi Kunci pada diska.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.KeyVaultAndKeyReference
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan nama Sku dari akun penyimpanan.  Nilai yang tersedia Standard_LRS, Premium_LRS, StandardSSD_LRS, dan UltraSSD_LRS.  UltraSSD_LRS hanya dapat digunakan dengan nilai Kosong untuk parameter CreateOption.
+Menentukan nama Sku akun penyimpanan.  Nilai yang tersedia adalah Standard_LRS, Premium_LRS, StandardSSD_LRS, dan UltraSSD_LRS.  UltraSSD_LRS hanya dapat digunakan dengan Nilai kosong untuk parameter CreateOption.
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -240,19 +240,19 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=21.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Int32
 
 ### System.Collections.Hashtable
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Management.Compute.Models.KeyVaultAndSecretReference
 

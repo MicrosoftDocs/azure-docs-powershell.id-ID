@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Remove-AzureRmEventHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/EventHub/Commands.EventHub/help/Remove-AzureRmEventHub.md
 ms.openlocfilehash: 31ed4d8765599fcc99f58870b347a14cdaf00162
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "140853399"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142098453"
 ---
 # Remove-AzureRmEventHub
 
 ## SYNOPSIS
-Menghapus Hub Acara yang ditentukan.
+Menghapus Hub Kejadian tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,7 +40,7 @@ Remove-AzureRmEventHub [-ResourceId] <String> [-PassThru] [-AsJob] [-DefaultProf
 ```
 
 ## DESCRIPTION
-Cmdlet Remove-AzureRmEventHub menghapus Hub Kejadian yang ditentukan dari ruang nama tertentu.
+Cmdlet Remove-AzureRmEventHub menghapus dan menghapus Hub Kejadian tertentu dari ruang nama tertentu.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Cmdlet Remove-AzureRmEventHub menghapus Hub Kejadian yang ditentukan dari ruang 
 PS C:\> Remove-AzureRmEventHub -ResourceGroupName MyResourceGroupName -Namespace MyNamespaceName -Name MyEventHubName
 ```
 
-Menghapus Event Hub \`MyEventHubName\`.
+Menghapus Hub \`Kejadian MyEventHubName\`.
 
 ### Contoh 2.1 - InputObject - Menggunakan Variabel:
 ```
@@ -57,7 +57,7 @@ PS C:\> $inputobject = Get-AzureRmEventHub <params>
 PS C:\> Remove-AzureRmEventHub -InputObject $inputobject
 ```
 
-### Contoh 2.2 - InputObject menggunakan Piping:
+### Contoh 2.2 - InputObject Menggunakan Piping:
 ```
 PS C:\> Get-AzureRmEventHub <params> | Remove-AzureRmEventHub
 ```
@@ -76,7 +76,7 @@ PS C:\> Remove-AzureRmEventHub -ResourceId "/subscriptions/xxxx-xxxxx-xxxxxx-xxx
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 ```
 
 ### -Namespace
-Nama Kumpulan Nama
+Nama Ruang Nama
 
 ```yaml
 Type: System.String
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,16 +5,16 @@ ms.assetid: 5A0D9326-3A8A-4156-8372-EBA93C1BB4E4
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/get-azurermnetworksecurityruleconfig
 schema: 2.0.0
 ms.openlocfilehash: 55f2ad108b6392a2f17c7b1539c5ebe7cccc3c19
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428991"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141781469"
 ---
 # Get-AzureRmNetworkSecurityRuleConfig
 
 ## SYNOPSIS
-Mendapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
+Dapatkan konfigurasi aturan keamanan jaringan untuk grup keamanan jaringan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,20 +36,20 @@ Get-AzureRmNetworkSecurityGroup -Name  nsg1 -ResourceGroupName rg1
     | Get-AzureRmNetworkSecurityRuleConfig -Name AllowInternetOutBound -DefaultRules
 ```
 
-Perintah ini mengambil aturan default bernama "AllowInternetOutBound" dari grup keamanan jaringan Azure yang bernama "nsg1" dalam grup sumber daya "rg1"
+Perintah ini mengambil aturan default bernama "AllowInternetOutBound" dari grup keamanan jaringan Azure bernama "nsg1" dalam grup sumber daya "rg1"
 
-### 2: Mengambil konfigurasi aturan keamanan jaringan menggunakan nama saja
+### 2: Mengambil konfigurasi aturan keamanan jaringan hanya menggunakan nama
 ```
 Get-AzureRmNetworkSecurityGroup -Name  nsg1 -ResourceGroupName rg1 
     | Get-AzureRmNetworkSecurityRuleConfig -Name "rdp-rule"
 ```
 
-Perintah ini mengambil aturan yang ditentukan pengguna bernama "rdp-rule" dari grup keamanan jaringan Azure yang bernama "nsg1" dalam grup sumber daya "rg1"
+Perintah ini mengambil aturan yang ditentukan pengguna bernama "rdp-rule" dari grup keamanan jaringan Azure bernama "nsg1" dalam grup sumber daya "rg1"
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultRules
-Mengindikasikan apakah cmdlet ini mendapatkan konfigurasi aturan yang dibuat oleh pengguna atau konfigurasi aturan default.
+Menunjukkan apakah cmdlet ini mendapatkan konfigurasi aturan yang dibuat pengguna atau konfigurasi aturan default.
 
 ```yaml
 Type: SwitchParameter
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama konfigurasi aturan keamanan jaringan untuk mendapatkan.
+Menentukan nama konfigurasi aturan keamanan jaringan yang akan didapatkan.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkSecurityGroup
-Menentukan objek **NetworkSecurityGroup** yang berisi konfigurasi aturan keamanan jaringan untuk mendapatkan.
+Menentukan objek **NetworkSecurityGroup** yang berisi konfigurasi aturan keamanan jaringan untuk didapatkan.
 
 ```yaml
 Type: PSNetworkSecurityGroup
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -128,7 +128,7 @@ Parameter 'NetworkSecurityGroup' menerima nilai tipe 'PSNetworkSecurityGroup' da
 
 [New-AzureRmNetworkSecurityRuleConfig](./New-AzureRmNetworkSecurityRuleConfig.md)
 
-[Remove-AzureRmNetworkSecurityRuleConfig](./Remove-AzureRmNetworkSecurityRuleConfig.md)
+[Hapus-AzureRmNetworkSecurityRuleConfig](./Remove-AzureRmNetworkSecurityRuleConfig.md)
 
 [Set-AzureRmNetworkSecurityRuleConfig](./Set-AzureRmNetworkSecurityRuleConfig.md)
 

@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Resume-AzNetAppFilesReplication.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/NetAppFiles/NetAppFiles/help/Resume-AzNetAppFilesReplication.md
 ms.openlocfilehash: 7cc2102db7f326dd2182bfceeb2d311ad874229a
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140104787"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142229059"
 ---
 # Resume-AzNetAppFilesReplication
 
 ## SYNOPSIS
-Lanjutkan/Sinkronkan ulang koneksi pada volume tujuan. Jika operasi berjalan pada volume sumber, operasi akan menyinkronkan kembali koneksi dan menyinkronkan dari sumber ke tujuan.
+Lanjutkan/Resync koneksi pada volume tujuan. Jika operasi dijalankan pada volume sumber, maka koneksi akan dibalik dan disinkronkan dari sumber ke tujuan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.netappfiles/resume-aznetappfilesreplication) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.netappfiles/resume-aznetappfilesreplication) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Resume-AzNetAppFilesReplication -InputObject <PSNetAppFilesVolume> [-PassThru]
 ```
 
 ## DESCRIPTION
-Melanjutkan/Menyinkronkan ulang koneksi pada volume tujuan
+Lanjutkan/Resinkronkan koneksi pada volume tujuan
 
 ## EXAMPLES
 
@@ -55,7 +55,7 @@ Perintah ini melanjutkan koneksi Replikasi ANF pada volume "MyDestinationAnfVolu
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun ANF dari volume replikasi
 
 ```yaml
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek volume tujuan replikasi ANF yang disinkronkan ulang
+Objek volume tujuan replikasi ANF untuk disinkronkan
 
 ```yaml
 Type: Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesVolume
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan apakah sinkronisasi ulang dari volume replikasi tertentu dijalankan
+Mengembalikan apakah resync volume replikasi yang ditentukan dijalankan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -PoolName
-Nama pool ANF dari volume replikasi
+Nama kumpulan ANF dari volume replikasi
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Grup sumber daya volume tujuan replikasi ANF
+Grup sumber daya dari volume tujuan replikasi ANF
 
 ```yaml
 Type: System.String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

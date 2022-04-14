@@ -4,12 +4,12 @@ Module Name: AzureRM.Network
 ms.assetid: D7C275E5-BC43-454B-BF1E-48D639C4B4F0
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermapplicationgatewaysslcertificate
 schema: 2.0.0
-ms.openlocfilehash: 8d3f2114a11631ebef125d8b44edea1c26d0b95e9f498c529c5914d73d90c360
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: bb295ba9f1b7c446e8f8fd6e80d8445774bf8852
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132416603"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141780964"
 ---
 # Set-AzureRmApplicationGatewaySslCertificate
 
@@ -31,19 +31,19 @@ Cmdlet **Set-AzureRmApplicationGatewaySslCertificate** menetapkan status tujuan 
 
 ## EXAMPLES
 
-### Contoh 1: Menetapkan status tujuan sertifikat SSL
+### Contoh 1: Mengatur status tujuan sertifikat SSL
 ```
 PS C:\> $appGW = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $password = ConvertTo-SecureString "P@ssw0rd" -AsPlainText -Force
 PS C:\> $cert = Set-AzureRmApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -CertificateFile "D:\cert01.pfx" -Password $password
 ```
 
-Perintah ini mengatur status tujuan untuk sertifikat SSL dari gateway aplikasi yang bernama ApplicationGateway01.
+Perintah ini mengatur status tujuan untuk sertifikat SSL dari gateway aplikasi bernama ApplicationGateway01.
 
 ## PARAMETERS
 
 ### -ApplicationGateway
-Menentukan gateway aplikasi yang terkait dengan sertifikat Secure Socket Layer (SSL).
+Menentukan gateway aplikasi tempat sertifikat Secure Socket Layer (SSL) terkait.
 
 ```yaml
 Type: PSApplicationGateway
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

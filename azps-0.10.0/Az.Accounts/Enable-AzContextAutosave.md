@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Enable-AzContextAutosave.md
 ms.openlocfilehash: 6c0e557078bde5cbec7b1f7dd96f1fa2c71408a7
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414183"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141918993"
 ---
 # Enable-AzContextAutosave
 
 ## SYNOPSIS
-Izinkan kredensial Azure, informasi akun, dan langganan disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell. 
+Perbolehkan informasi kredensial, akun, dan langganan azure disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell. 
 
 ## SYNTAX
 
@@ -25,21 +25,21 @@ Enable-AzContextAutosave [-Scope <ContextModificationScope>] [-DefaultProfile <I
 ```
 
 ## DESCRIPTION
-Izinkan kredensial Azure, informasi akun, dan langganan disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell. 
+Perbolehkan informasi kredensial, akun, dan langganan azure disimpan dan dimuat secara otomatis saat Anda membuka jendela PowerShell. 
 
 ## EXAMPLES
 
-### Mengaktifkan kredensial autosaving untuk pengguna saat ini
+### Mengaktifkan penyimpanan otomatis kredensial untuk pengguna saat ini
 ```
 PS C:\> Enable-AzContextAutosave
 ```
 
-Aktifkan simpan otomatis kredensial untuk pengguna saat ini.  Setiap kali jendela powershell dibuka, konteks Anda saat ini akan diingat tanpa masuk.
+Aktifkan penyimpanan otomatis kredensial untuk pengguna saat ini.  Setiap kali jendela powershell dibuka, konteks Anda saat ini akan diingat tanpa masuk.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau pada semua sesi yang dimulai oleh pengguna ini
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -101,11 +101,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

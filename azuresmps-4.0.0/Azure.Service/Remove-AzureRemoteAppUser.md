@@ -4,16 +4,16 @@ ms.assetid: DE89F1C4-8441-4438-B235-F5E0F726EFF8
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: 384f221dab9bb348e63e2e750f32bc7173666edd
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422076"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141920139"
 ---
 # Remove-AzureRemoteAppUser
 
 ## SYNOPSIS
-Menghapus pengguna dari kumpulan Azure RemoteApp.
+Menghapus pengguna dari koleksi Azure RemoteApp.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,7 +25,7 @@ Remove-AzureRemoteAppUser [-CollectionName] <String> [-Type] <PrincipalProviderT
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRemoteAppUser** menghapus pengguna dari kumpulan Azure RemoteApp.
+Cmdlet **Remove-AzureRemoteAppUser** menghapus pengguna dari koleksi Azure RemoteApp.
 
 ## EXAMPLES
 
@@ -34,13 +34,13 @@ Cmdlet **Remove-AzureRemoteAppUser** menghapus pengguna dari kumpulan Azure Remo
 PS C:\> Remove-AzureRemoteAppUser -CollectionName "Contoso" -Type OrgId -UserUpn "PattiFuller@contoso.com"
 ```
 
-Perintah ini menghapus pengguna Azure ActiveDirectory PattiFuller@contoso.com dari koleksi Contoso.
+Perintah ini menghapus pengguna PattiFuller@contoso.com Azure ActiveDirectory dari koleksi Contoso.
 
 ## PARAMETERS
 
 ### -Alias
 Menentukan alias program yang diterbitkan.
-Anda dapat menggunakan parameter ini hanya dalam mode penerbitan per aplikasi.
+Anda hanya dapat menggunakan parameter ini dalam mode penerbitan per aplikasi.
 
 ```yaml
 Type: String
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserUpn
-Menentukan Nama Prinsipal Pengguna (UPN, User Principal Name) pengguna, misalnya, user@contoso.com .
+Menentukan Nama Pokok Pengguna (UPN) pengguna, misalnya, user@contoso.com.
 
 ```yaml
 Type: String[]
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

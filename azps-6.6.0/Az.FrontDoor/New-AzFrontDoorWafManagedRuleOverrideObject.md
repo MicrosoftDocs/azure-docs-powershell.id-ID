@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleOverrideObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorWafManagedRuleOverrideObject.md
 ms.openlocfilehash: 9ff7e258537fd832a282e1bcc83cd102306fb709
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140077445"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142050761"
 ---
 # New-AzFrontDoorWafManagedRuleOverrideObject
 
@@ -18,7 +18,7 @@ ms.locfileid: "140077445"
 Membuat objek penggantian aturan terkelola
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleoverrideobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorwafmanagedruleoverrideobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,12 +28,12 @@ New-AzFrontDoorWafManagedRuleOverrideObject -RuleId <String> [-Action <String>] 
 ```
 
 ## DESCRIPTION
-Membuat objek PSAzureManagedRuleOverride untuk grup aturan WAF yang dikelola menimpa pembuatan objek.
+Buat Objek PSAzureManagedRuleOverride untuk grup aturan WAF yang dikelola menimpa pembuatan objek.
 
 ## EXAMPLES
 
 ### Contoh 1
-Membuat objek timpaan aturan terkelola untuk aturan 942250 (yang berada dalam grup SQLI).
+Membuat objek pengesampingan aturan terkelola untuk aturan 942250 (yang berada dalam grup SQLI).
 
 ```powershell
 PS C:\> New-AzFrontDoorWafManagedRuleOverrideObject -RuleId "942250" -Action Log
@@ -75,7 +75,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Dinonaktifkan
+### -Nonaktif
 Status nonaktif
 
 ```yaml
@@ -90,7 +90,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Exclusion
+### -Pengecualian
 Pengecualian
 
 ```yaml
@@ -121,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
