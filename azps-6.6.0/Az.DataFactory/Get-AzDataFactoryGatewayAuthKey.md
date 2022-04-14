@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryGatewayAuthKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataFactory/DataFactoryV2/help/Get-AzDataFactoryGatewayAuthKey.md
 ms.openlocfilehash: 509d353d163244be04b1070f0bc619f24e2e96a8
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140466137"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141959001"
 ---
 # Get-AzDataFactoryGatewayAuthKey
 
 ## SYNOPSIS
-Mendapatkan kunci gateway auth untuk Azure Data Factory.
+Mendapatkan kunci auth gateway untuk Azure Data Factory.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datafactory/get-azdatafactorygatewayauthkey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datafactory/get-azdatafactorygatewayauthkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,12 +35,12 @@ Get-AzDataFactoryGatewayAuthKey [-InputObject] <PSDataFactory> [-GatewayName] <S
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataFactoryGatewayAuthKey** mendapatkan kunci gateway auth untuk gateway Azure Data Factory tertentu.
-Anda mendaftarkan gateway dengan layanan awan menggunakan kunci1 atau kunci2 kunci auth ini.
+Cmdlet **Get-AzDataFactoryGatewayAuthKey** mendapatkan kunci auth gateway untuk gateway Azure Data Factory yang ditentukan.
+Anda mendaftarkan gateway dengan layanan awan dengan menggunakan tombol1 atau kunci2 dari tombol auth ini.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kunciauth gateway
+### Contoh 1: Mendapatkan kunci auth gateway
 ```
 PS C:\> Get-AzDataFactoryGatewayAuthKey -ResourceGroup ADFResource -GatewayName 'MyGateway' -DataFactoryName MyADF
 Key1 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd6452aea@wu@ZgBjjX6GfJcrzTQInEV9PoOqsDrqOmC
@@ -49,7 +49,7 @@ Key2 : DMG@632e739e-1053-4070-9102-8591f067526e@41fcbc45-c594-4152-a8f1-fcbcd645
        YmWxtV4WD3JQ=
 ```
 
-Perintah ini mendapatkan kunci gateway auth untuk gateway pabrik data bernama MyGateway.
+Perintah ini mendapatkan kunci auth gateway untuk gateway pabrik data bernama MyGateway.
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -142,7 +142,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataFactoryGatewayAuthKey
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 

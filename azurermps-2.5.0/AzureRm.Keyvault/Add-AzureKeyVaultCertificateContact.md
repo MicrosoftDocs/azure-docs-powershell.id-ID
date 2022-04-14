@@ -5,11 +5,11 @@ ms.assetid: 2D3021B3-12C5-4797-8BF2-800E3CEAC56C
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/add-azurekeyvaultcertificatecontact
 schema: 2.0.0
 ms.openlocfilehash: 9f52889f044ba6bf497b57a53f3e2daaea0dbf3b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429252"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929183"
 ---
 # Add-AzureKeyVaultCertificateContact
 
@@ -26,23 +26,23 @@ Add-AzureKeyVaultCertificateContact [-VaultName] <String> [-EmailAddress] <Strin
 ```
 
 ## DESCRIPTION
-Cmdlet **Add-AzureKeyVaultCertificateContact** menambahkan kontak ke vault kunci untuk pemberitahuan sertifikat di Azure Key Vault.
-Kontak menerima pembaruan tentang kejadian seperti sertifikat yang hampir kedaluwarsa, sertifikat diperpanjang, dan sebagainya.
+Cmdlet **Add-AzureKeyVaultCertificateContact** menambahkan kontak untuk kubah kunci untuk pemberitahuan sertifikat di Azure Key Vault.
+Kontak menerima pembaruan tentang acara seperti sertifikat yang mendekati kedaluwarsa, sertifikat diperpanjang, dan seterusnya.
 Kejadian ini ditentukan oleh kebijakan sertifikat.
 
 ## EXAMPLES
 
-### Contoh 1: Menambahkan kontak sertifikat kunci vault
+### Contoh 1: Menambahkan kontak sertifikat kubah kunci
 ```
 PS C:\>Add-AzureKeyVaultCertificateContact -VaultName "ContosoKV01" -EmailAddress "patti.fuller@contoso.com" -PassThru
 ```
 
-Perintah ini menambahkan Patti Fuller sebagai kontak sertifikat untuk vault kunci Contoso AZURE01 dan mengembalikan **objek KeyVaultCertificateContact.**
+Perintah ini menambahkan Patti Fuller sebagai kontak sertifikat untuk kubah kunci ContosoKV01 dan mengembalikan objek **KeyVaultCertificateContact** .
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultName
-Menentukan nama kunci vault.
+Menentukan nama kubah kunci.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -148,5 +148,5 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureKeyVaultCertificateContact](./Get-AzureKeyVaultCertificateContact.md)
 
-[Remove-AzureKeyVaultCertificateContact](./Remove-AzureKeyVaultCertificateContact.md)
+[Hapus-AzureKeyVaultCertificateContact](./Remove-AzureKeyVaultCertificateContact.md)
 

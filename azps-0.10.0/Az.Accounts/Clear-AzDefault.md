@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Clear-AzDefault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Accounts/Accounts/help/Clear-AzDefault.md
 ms.openlocfilehash: 76271fc9b6ef8546f8f02b64ac32cc65cf4abb3f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "132414193"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141919173"
 ---
 # Clear-AzDefault
 
 ## SYNOPSIS
-Menghapus pengaturan default yang ditetapkan oleh pengguna dalam konteks saat ini.
+Menghapus default yang diatur oleh pengguna dalam konteks saat ini.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Clear-AzDefault [-ResourceGroup] [-PassThru] [-Force] [-Scope <ContextModificati
 ```
 
 ## DESCRIPTION
-Cmdlet Clear-AzDefault menghapus pengaturan default oleh pengguna, tergantung pada parameter sakelar yang ditentukan oleh pengguna.
+Cmdlet Clear-AzDefault menghapus default yang diatur oleh pengguna bergantung pada parameter sakelar yang ditentukan oleh pengguna.
 
 ## EXAMPLES
 
@@ -34,19 +34,19 @@ Cmdlet Clear-AzDefault menghapus pengaturan default oleh pengguna, tergantung pa
 PS C:\> Clear-AzDefault
 ```
 
-Perintah ini menghapus semua pengaturan default oleh pengguna dalam konteks saat ini.
+Perintah ini menghapus semua default yang diatur oleh pengguna dalam konteks saat ini.
 
 ### Contoh 1
 ```
 PS C:\> Clear-AzDefault -ResourceGroup
 ```
 
-Perintah ini menghapus kumpulan grup sumber daya default yang ditetapkan oleh pengguna dalam konteks saat ini.
+Perintah ini menghapus grup sumber daya default yang diatur oleh pengguna dalam konteks saat ini.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -60,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Menghapus semua default jika tidak ada default yang ditentukan
+### -Paksa
+Hapus semua default jika tidak ada default yang ditentukan
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lingkup
-Menentukan lingkup perubahan konteks, misalnya, apakah perubahan diterapkan hanya pada proses saat ini, atau untuk semua sesi yang dimulai oleh pengguna ini.
+Menentukan lingkup perubahan konteks, misalnya, apakah perubahan hanya berlaku untuk proses saat ini, atau ke semua sesi yang dimulai oleh pengguna ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Profile.Common.ContextModificationScope
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

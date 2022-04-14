@@ -5,11 +5,11 @@ ms.assetid: 212281F0-9A3E-4652-919F-400455E3950E
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmaemextension
 schema: 2.0.0
 ms.openlocfilehash: f5936a4be0170279d7416b05dc2b61fd22cfcca5
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428286"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930023"
 ---
 # Get-AzureRmVMAEMExtension
 
@@ -26,7 +26,7 @@ Get-AzureRmVMAEMExtension [-ResourceGroupName] <String> [-VMName] <String> [[-Na
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmVMAEXtension** mendapatkan informasi tentang ekstensi Azure Enhanced Monitoring (AEM).
+Cmdlet **Get-AzureRmVMAEMExtension** mendapatkan informasi tentang ekstensi Azure Enhanced Monitoring (AEM).
 
 ## EXAMPLES
 
@@ -35,12 +35,12 @@ Cmdlet **Get-AzureRmVMAEXtension** mendapatkan informasi tentang ekstensi Azure 
 PS C:\> Get-AzureRmVMAEMExtension -ResourceGroupName "ResourceGroup11" -VMName "contoso-server"
 ```
 
-Perintah ini mendapatkan informasi ekstensi AEM untuk komputer virtual bernama contoso-server.
+Perintah ini mendapatkan informasi untuk ekstensi AEM untuk mesin virtual bernama contoso-server.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 
 ### -Nama
 Menentukan nama mesin virtual.
-Cmdlet ini mendapatkan informasi ekstensi AEM pada komputer virtual yang ditentukan cmdlet ini.
+Cmdlet ini mendapatkan informasi untuk ekstensi AEM pada mesin virtual yang ditentukan cmdlet ini.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -OSType
-Menentukan tipe sistem operasi dari disk sistem operasi.
+Menentukan tipe sistem operasi disk sistem operasi.
 Jika disk sistem operasi tidak memiliki tipe, Anda harus menentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Windows dan Linux.
 
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya komputer virtual.
-Cmdlet ini mendapatkan informasi ekstensi AEM di komputer virtual tersebut.
+Menentukan nama grup sumber daya mesin virtual.
+Cmdlet ini mendapatkan informasi untuk ekstensi AEM pada mesin virtual tersebut.
 
 ```yaml
 Type: String
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan contoh ekstensi AEM.
+Menunjukkan bahwa cmdlet ini hanya mendapatkan tampilan instans ekstensi AEM.
 
 ```yaml
 Type: SwitchParameter
@@ -135,11 +135,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 Cmdlet ini tidak menerima input apa pun.
 
 ## OUTPUTS
@@ -150,10 +150,10 @@ Cmdlet ini tidak menerima input apa pun.
 
 ## RELATED LINKS
 
-[Remove-AzureRmVMAEMExtension](./Remove-AzureRmVMAEMExtension.md)
+[Hapus-AzureRmVMAEMExtension](./Remove-AzureRmVMAEMExtension.md)
 
 [Set-AzureRmVMAEMExtension](./Set-AzureRmVMAEMExtension.md)
 
-[Test-AzureRmVMAEMExtension](./Test-AzureRmVMAEMExtension.md)
+[Uji-AzureRmVMAEMExtension](./Test-AzureRmVMAEMExtension.md)
 
 

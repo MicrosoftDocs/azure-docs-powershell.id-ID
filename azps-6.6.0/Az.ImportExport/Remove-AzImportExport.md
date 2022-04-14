@@ -6,20 +6,20 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Remove-AzImportExport.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ImportExport/help/Remove-AzImportExport.md
 ms.openlocfilehash: 260b0d9715f8a334e961dc1c6bd6fb0c568144d2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140503419"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141912153"
 ---
 # Remove-AzImportExport
 
 ## SYNOPSIS
 Menghapus pekerjaan yang sudah ada.
-Hanya pekerjaan di negara bagian Membuat atau Selesai yang bisa dihapus.
+Hanya pekerjaan dalam status Membuat atau Selesai yang dapat dihapus.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.importexport/remove-azimportexport) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.importexport/remove-azimportexport) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,29 +37,29 @@ Remove-AzImportExport -InputObject <IImportExportIdentity> [-AcceptLanguage <Str
 
 ## DESCRIPTION
 Menghapus pekerjaan yang sudah ada.
-Hanya pekerjaan di negara bagian Membuat atau Selesai yang bisa dihapus.
+Hanya pekerjaan dalam status Membuat atau Selesai yang dapat dihapus.
 
 ## EXAMPLES
 
-### Contoh 1: Menghapus pekerjaan ImportExport berdasarkan resourceGroup dan nama server
+### Contoh 1: Hapus pekerjaan ImportExport menurut resourceGroup dan nama server
 ```powershell
 PS C:\> Remove-AzImportExport -Name test-job -ResourceGroupName ImportTestRG
 ```
 
-Cmdlet ini menghapus pekerjaan ImportExport berdasarkan resourceGroup dan nama server.
+Cmdlet ini menghapus pekerjaan ImportExport menurut resourceGroup dan nama server.
 
-### Contoh 2: Menghapus pekerjaan ImportExport berdasarkan identitas
+### Contoh 2: Hapus pekerjaan ImportExport menurut identitas
 ```powershell
 PS C:\> Get-AzImportExport -Name test-job -ResourceGroupName ImportTestRG | Remove-AzImportExport
  
 ```
 
-Cmdlet ini menghapus pekerjaan ImportExport berdasarkan identitas.
+Cmdlet ini menghapus pekerjaan ImportExport menurut identitas.
 
 ## PARAMETERS
 
 ### -AcceptLanguage
-Menentukan bahasa pilihan untuk respons tersebut.
+Menentukan bahasa pilihan untuk respons.
 
 ```yaml
 Type: System.String
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ImportExport.Models.IImportExportIdentity
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Test-AzNetworkWatcherIPFlow.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Test-AzNetworkWatcherIPFlow.md
 ms.openlocfilehash: 307bb2c954526b744f31763f0d3a09d0163c8057
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132426189"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916023"
 ---
 # Test-AzNetworkWatcherIPFlow
 
 ## SYNOPSIS
-Mengembalikan apakah paket diizinkan atau ditolak untuk atau dari tujuan tertentu.
+Mengembalikan apakah paket diperbolehkan atau ditolak ke atau dari tujuan tertentu.
 
 ## SYNTAX
 
@@ -36,11 +36,11 @@ Test-AzNetworkWatcherIPFlow -NetworkWatcherName <String> -ResourceGroupName <Str
 ```
 
 ## DESCRIPTION
-Cmdlet Test-AzNetworkWatcherIPFlow, untuk sumber daya VM yang ditentukan dan paket dengan arah yang ditentukan menggunakan lokal dan jarak jauh, alamat IP, dan port, mengembalikan apakah paket diperbolehkan atau ditolak.
+Cmdlet Test-AzNetworkWatcherIPFlow, untuk sumber daya VM tertentu dan paket dengan arah tertentu menggunakan lokal dan jarak jauh, alamat IP dan port, mengembalikan apakah paket diperbolehkan atau ditolak.
 
 ## EXAMPLES
 
-### --- Contoh 1: Jalankan Test-AzNetworkWatcherIPFlow ---
+### contoh --- 1: Menjalankan Test-AzNetworkWatcherIPFlow ---
 ```
 $nw = Get-AzResource | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "WestCentralUS" } 
 $networkWatcher = Get-AzNetworkWatcher -Name $nw.Name -ResourceGroupName $nw.ResourceGroupName 
@@ -50,12 +50,12 @@ $Nics = Get-AzNetworkInterface | Where {$_.Id -eq $vm.NetworkInterfaceIDs.ForEac
 Test-AzNetworkWatcherIPFlow -NetworkWatcher $networkWatcher -TargetVirtualMachineId $VM.Id -Direction Outbound -Protocol TCP -LocalIPAddress $nics[0].IpConfigurations[0].PrivateIpAddress -LocalPort 6895 -RemoteIPAddress 204.79.197.200 -RemotePort 80
 ```
 
-Dapatkan Network Watcher di West Central AS untuk langganan ini, lalu dapatkan VM dan Antarmuka Jaringan yang terkait. Lalu untuk Antarmuka Jaringan pertama, Test-AzNetworkWatcherIPFlow menggunakan IP pertama dari Antarmuka Jaringan pertama untuk koneksi keluar ke IP di internet.
+Dapatkan Network Watcher di West Central US untuk langganan ini, lalu dapatkan VM dan Antarmuka Jaringan terkait. Lalu untuk Antarmuka Jaringan pertama, berjalan Test-AzNetworkWatcherIPFlow menggunakan IP pertama dari Antarmuka Jaringan pertama untuk koneksi keluar ke IP di internet.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -LocalPort
-Port Lokal.
+Pelabuhan Lokal.
 
 ```yaml
 Type: String
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -160,7 +160,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Protocol
+### -Protokol
 Protokol.
 
 ```yaml
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( http://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -264,7 +264,7 @@ System.String
 ### Microsoft.Azure.Commands.Network.Models.PSIPFlowVerifyResult
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, management, manager, network, networking, network watcher, flow, ip 
+Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, jaringan, jaringan, pengamat jaringan, aliran, ip 
 
 ## RELATED LINKS
 
@@ -272,7 +272,7 @@ Kata kunci: azure, azurerm, arm, resource, management, manager, network, network
 
 [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
 
-[Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
 [Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
 

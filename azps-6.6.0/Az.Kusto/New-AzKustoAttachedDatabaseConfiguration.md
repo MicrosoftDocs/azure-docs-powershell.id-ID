@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoAttachedDatabaseConfiguration.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Kusto/help/New-AzKustoAttachedDatabaseConfiguration.md
 ms.openlocfilehash: d4186ece7ba2aea2009fb738d123e5351ada542b
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139938193"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142049033"
 ---
 # New-AzKustoAttachedDatabaseConfiguration
 
 ## SYNOPSIS
-Membuat atau memperbarui konfigurasi database terlampir.
+Membuat atau memperbarui konfigurasi database yang dilampirkan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.kusto/new-azkustoattacheddatabaseconfiguration) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.kusto/new-azkustoattacheddatabaseconfiguration) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,11 +35,11 @@ New-AzKustoAttachedDatabaseConfiguration -ClusterName <String> -Name <String> -R
 ```
 
 ## DESCRIPTION
-Membuat atau memperbarui konfigurasi database terlampir.
+Membuat atau memperbarui konfigurasi database yang dilampirkan.
 
 ## EXAMPLES
 
-### Contoh 1: Create a new AttachedDatabaseConfiguration
+### Contoh 1: Membuat AttachedDatabaseConfiguration baru
 ```powershell
 PS C:\> New-AzKustoAttachedDatabaseConfiguration -ResourceGroupName "testrg" -ClusterName "testnewkustoclusterf" -Name "myfollowerconfiguration" -Location "East US" -ClusterResourceId "/subscriptions/$subscriptionId/resourcegroups/testrg/providers/Microsoft.Kusto/Clusters/testnewkustocluster" -DatabaseName "mykustodatabase" -DefaultPrincipalsModificationKind "Union"
 
@@ -48,8 +48,8 @@ Name                                 Type                                       
 testnewkustoclusterf/myfollowerconfiguration Microsoft.Kusto/Clusters/AttachedDatabaseConfigurations East US
 ```
 
-Perintah di atas membuat database ReadOnly "mykustodatabase" dalam kluster "testnewkustoclusterf".
-Database mengikuti database "mykustodatabase" dari kluster "testnewkustocluster"
+Perintah di atas membuat database ReadOnly "mykustodatabase" dalam cluster "testnewkustoclusterf".
+Ini mengikuti database "mykustodatabase" dari cluster "testnewkustocluster"
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Nama kluster Kusto.
+Nama klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterResourceId
-Id sumber daya kluster tempat database yang ingin dilampirkan berada.
+Id sumber daya dari kluster tempat database yang ingin Anda lampirkan berada.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseName
-Nama database yang ingin Anda lampirkan, gunakan * jika Anda ingin mengikuti semua database sekarang dan yang akan datang.
+Nama database yang ingin Anda lampirkan, gunakan * jika Anda ingin mengikuti semua database saat ini dan yang akan datang.
 
 ```yaml
 Type: System.String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi kluster Kusto.
+Nama grup sumber daya yang berisi klaster Kusto.
 
 ```yaml
 Type: System.String
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-Mendapatkan kredensial langganan yang secara unik mengidentifikasi Microsoft Azure anda.
-ID langganan membentuk bagian dari URI untuk setiap panggilan layanan.
+Mendapatkan kredensial langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
+ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyExternalTablesToExclude
-Daftar tabel eksternal kecuali dari database pengikut
+Daftar tabel eksternal dikecualikan dari database pengikut
 
 ```yaml
 Type: System.String[]
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyMaterializedViewsToExclude
-Daftar tampilan yang di materialisasi kecuali dari database pengikut
+Daftar tampilan terwujud dikecualikan dari database pengikut
 
 ```yaml
 Type: System.String[]
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyMaterializedViewsToInclude
-Daftar tampilan yang di materialisasi untuk disertakan dalam database pengikut
+Daftar tampilan terwujud untuk disertakan dalam database pengikut
 
 ```yaml
 Type: System.String[]
@@ -280,7 +280,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyTablesToExclude
-Daftar tabel untuk dikecualikan dari database pengikut
+Daftar tabel yang akan dikecualikan dari database pengikut
 
 ```yaml
 Type: System.String[]
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableLevelSharingPropertyTablesToInclude
-Daftar tabel untuk disertakan dalam database pengikut
+Daftar tabel yang disertakan dalam database pengikut
 
 ```yaml
 Type: System.String[]
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -341,13 +341,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Kusto.Models.Api202101.IAttachedDatabaseConfiguration
+### Microsoft.Azure.PowerShell.Cmdlets. Kusto. Models.Api202101.IAttachedDatabaseConfiguration
 
 ## CATATAN
 

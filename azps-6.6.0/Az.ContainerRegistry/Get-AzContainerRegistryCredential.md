@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryCredential.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ContainerRegistry/ContainerRegistry/help/Get-AzContainerRegistryCredential.md
 ms.openlocfilehash: ef00871ddbdde445a9e5cc7408d7f61ebd7f4429
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140109251"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142053893"
 ---
 # Get-AzContainerRegistryCredential
 
 ## SYNOPSIS
-Mendapatkan kredensial masuk untuk registri wadah.
+Mendapatkan kredensial masuk untuk registri kontainer.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrycredential) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.containerregistry/get-azcontainerregistrycredential) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzContainerRegistryCredential [-ResourceGroupName] <String> [-Name] <String>
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### RegistryObjectParameterSet
+### RegistriObjectParameterSet
 ```
 Get-AzContainerRegistryCredential -Registry <PSContainerRegistry> [-DefaultProfile <IAzureContextContainer>]
  [<CommonParameters>]
@@ -41,11 +41,11 @@ Get-AzContainerRegistryCredential -ResourceId <String> [-DefaultProfile <IAzureC
 ```
 
 ## DESCRIPTION
-Cmdlet Get-AzContainerRegistryCredential cmdlet mendapatkan kredensial masuk untuk registri wadah.
+Cmdlet Get-AzContainerRegistryCredential mendapatkan kredensial masuk untuk registri kontainer.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan kredensial masuk untuk registri wadah
+### Contoh 1: Dapatkan kredensial masuk untuk registri kontainer
 ```powershell
 PS C:\>Get-AzContainerRegistryCredential -ResourceGroupName "MyResourceGroup" -Name "MyRegistry"
 
@@ -54,13 +54,13 @@ Username   Password                         Password2
 MyRegistry +Y+==B==KdT=YV=ZgH=p/zQ/e1sNQq/d //JRPkgxx+r+z/ztU=R//E==vum=pRKL
 ```
 
-Perintah ini mendapatkan kredensial masuk untuk registri wadah yang ditentukan.
-Pengguna admin harus diaktifkan untuk registri wadah \`MyRegistry\` untuk mendapatkan kredensial masuk.
+Perintah ini mendapatkan kredensial masuk untuk registri kontainer yang ditentukan.
+Pengguna admin harus diaktifkan untuk registri \`kontainer MyRegistry\` untuk mendapatkan kredensial masuk.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Container Registry Name.
+Nama Registri Kontainer.
 
 ```yaml
 Type: System.String
@@ -89,8 +89,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Registry
-Container Registry Object.
+### -Registri
+Objek Registri Kontainer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.ContainerRegistry.PSContainerRegistry
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Container registry resource id
+Id sumber daya registri kontainer
 
 ```yaml
 Type: System.String
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

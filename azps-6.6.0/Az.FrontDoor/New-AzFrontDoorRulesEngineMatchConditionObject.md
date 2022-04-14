@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/FrontDoor/FrontDoor/help/New-AzFrontDoorRulesEngineMatchConditionObject.md
 ms.openlocfilehash: 7d89e5b9b822952065f535ca5510c7f4af3ac910
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "139939417"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141912603"
 ---
 # New-AzFrontDoorRulesEngineMatchConditionObject
 
 ## SYNOPSIS
-Membuat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
+Buat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesenginematchconditionobject) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.frontdoor/new-azfrontdoorrulesenginematchconditionobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-AzFrontDoorRulesEngineMatchConditionObject -MatchVariable <PSRulesEngineMatc
 ```
 
 ## DESCRIPTION
-Membuat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
+Buat objek PSRulesEngineMatchCondition untuk membuat aturan mesin aturan.
 
 ## EXAMPLES
 
@@ -45,7 +45,7 @@ NegateCondition          : False
 Transform                : {Lowercase, Uppercase}
 ```
 
-Greate objek PSRulesEngineMatchCondition baru.
+Cocokkan objek PSRulesEngineMatchCondition baru.
 
 ## PARAMETERS
 
@@ -65,9 +65,9 @@ Accept wildcard characters: False
 ```
 
 ### -MatchValue
-Mencocokkan nilai untuk dicocokkan.
+Mencocokkan nilai untuk dicocokkan dengan.
 Operator akan berlaku untuk setiap nilai di sini dengan semantik OR.
-Jika cocok dengan variabel dengan operator tertentu, kondisi cocok ini dianggap cocok.
+Jika salah satunya cocok dengan variabel dengan operator tertentu, kondisi kecocokan ini dianggap cocok.
 
 ```yaml
 Type: System.String[]
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -MatchVariable
 Cocokkan Variabel.
-Nilai yang mungkin adalah IsMobile, RemoteAddr, RequestMethod, QueryString, PostArg, RequestUri, RequestPath, RequestFileName, RequestfilenameExtension, RequestHeader, RequestString, RequestScheme
+Nilai yang mungkin adalah IsMobile, RemoteAddr, RequestMethod, QueryString, PostArg, RequestUri, RequestPath, RequestFileName, RequestfilenameExtension, RequestHeader, RequestBody, RequestScheme
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSRulesEngineMatchVariable
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -NegateCondition
-Menjelaskan jika ini meniadakan kondisi atau tidak
+Menjelaskan apakah ini meniadakan kondisi atau tidak
 
 ```yaml
 Type: System.Boolean
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Operator
-Menjelaskan operator yang akan berlaku untuk kondisi kecocokan.
+Menjelaskan operator untuk diterapkan pada kondisi kecocokan.
 Nilai yang mungkin adalah Any, IPMatch, GeoMatch, Equal, Contains, LessThan, GreaterThan, LessThanOrEqual, GreaterThanOrEqual, BeginsWith, EndsWith.
 
 ```yaml
@@ -130,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Pemilih
-Nama pemilih dalam RequestHeader atau RequestHeader agar sesuai
+### -Selector
+Nama pemilih di RequestHeader atau RequestBody agar cocok
 
 ```yaml
 Type: System.String
@@ -145,8 +145,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Transform
-Daftar transformasi yang diterapkan sebelum mencocokkan. Kemungkinan nilai transformasi individual adalah Huruf kecil, Huruf besar, Trim, UrlDecode, UrlEncode, RemoveNulls.
+### -Transformasi
+Daftar transformasi apa yang diterapkan sebelum pencocokan. Nilai transformasi individual yang mungkin adalah Huruf Kecil, Huruf Besar, Pangkas, UrlDecode, UrlEncode, RemoveNulls.
 
 ```yaml
 Type: Microsoft.Azure.Commands.FrontDoor.Models.PSTransform[]
@@ -162,11 +162,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareReceivedInvitation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataShare/DataShare/help/Get-AzDataShareReceivedInvitation.md
 ms.openlocfilehash: 5610be7f3fd8c2d37bbd646fece0143026e1d603
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140483619"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141957950"
 ---
 # Get-AzDataShareReceivedInvitation
 
@@ -18,7 +18,7 @@ ms.locfileid: "140483619"
 Mendapatkan informasi tentang undangan konsumen.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.datashare/get-azdatasharereceivedinvitation) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datashare/get-azdatasharereceivedinvitation) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-AzDataShareReceivedInvitation [-Location <String>] [-InvitationId <String>]
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDataShareReceivedInvitation** menyediakan informasi tentang semua undangan yang telah diterima konsumen. Jika Anda memberikan id lokasi atau undangan, cmdlet ini menyediakan informasi tentang undangan di lokasi tertentu atau memiliki id undangan. Jika tidak, undangan akan dikirim ke konsumen dalam daftar undangan.
+Cmdlet **Get-AzDataShareReceivedInvitation** menyediakan informasi tentang semua undangan yang telah diterima konsumen. Jika Anda menyediakan lokasi atau id undangan, cmdlet ini menyediakan informasi tentang undangan di lokasi tertentu atau memiliki id undangan. Jika tidak, aplikasi ini menyediakan daftar undangan yang dikirimkan kepada konsumen.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Name              : AdsInvitation
 Type              : Microsoft.DataShare/consumerInvitations
 ```
 
-Ini commant provides information about consumer invitations.
+Commant ini menyediakan informasi tentang undangan konsumen.
 
 ## PARAMETERS
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -InvitationId
-Data AzureBerbagi id undangan.
+Data AzureBaca id undangan.
 
 ```yaml
 Type: System.String
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

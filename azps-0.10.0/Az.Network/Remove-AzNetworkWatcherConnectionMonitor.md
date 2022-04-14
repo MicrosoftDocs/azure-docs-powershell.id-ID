@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzNetworkWatcherConnectionMonitor.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/Azs-tzl/src/Network/Network/help/Remove-AzNetworkWatcherConnectionMonitor.md
 ms.openlocfilehash: 2f2ca6c4b9174248074cb3863c7be7de45c170c6
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132424032"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141916293"
 ---
 # Remove-AzNetworkWatcherConnectionMonitor
 
@@ -54,17 +54,17 @@ Cmdlet remove-AzNetworkWatcherConnectionMonitor menghapus monitor koneksi yang d
 
 ## EXAMPLES
 
-### --------------- Contoh 1: Menghapus monitor koneksi yang ditentukan ---------------
+### --------------- Contoh 1: Menghapus --------------- monitor koneksi tertentu
 ```
 PS C:\> Remove-AzNetworkWatcherConnectionMonitor -Location centraluseuap -Name cm
 ```
 
-Dalam contoh ini, kami menghapus monitor koneksi yang ditentukan berdasarkan lokasi dan nama.
+Dalam contoh ini, kami menghapus monitor koneksi yang ditentukan menurut lokasi dan nama.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: SwitchParameter
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkWatcher
-Sumber daya pengawas jaringan.
+Sumber daya pengamat jaringan.
 
 ```yaml
 Type: PSNetworkWatcher
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: SwitchParameter
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -256,25 +256,25 @@ System.String Microsoft.Azure.Commands.Network.Models.PSConnectionMonitorResult
 
 
 ## CATATAN
-Kata kunci: azure, azurerm, arm, resource, connectivity, management, manager, network, networking, network watcher, connection monitor
+Kata kunci: azure, azurerm, lengan, sumber daya, konektivitas, manajemen, manajer, jaringan, jaringan, pengamat jaringan, monitor koneksi
 
 ## RELATED LINKS
-[New-AzNetworkWatcher](./New-AzNetworkWatcher.md) 
- [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md) 
- [Remove-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
+[New-AzNetworkWatcher](./New-AzNetworkWatcher.md)
+ [Get-AzNetworkWatcher](./Get-AzNetworkWatcher.md)
+ [Hapus-AzNetworkWatcher](./Remove-AzNetworkWatcher.md)
 
-[Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md) 
- [Get-AzNetworkWatcherSecurityGroupView](./Get-AzNetworkWatcherSecurityGroupView.md) 
- [Get-AzNetworkWatcherTopology](./Get-AzNetworkWatcherTopology.md) 
+[Get-AzNetworkWatcherNextHop](./Get-AzNetworkWatcherNextHop.md)
+ [Get-AzNetworkWatcherSecurityGroupView](./Get-AzNetworkWatcherSecurityGroupView.md)
+ [Get-AzNetworkWatcherTopology](./Get-AzNetworkWatcherTopology.md)
  [Get-AzNetworkWatcherTroubleshootingResult](./Get-AzNetworkWatcherTroubleshootingResult.md)
 
-[New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md) 
- [New-AzPacketCaptureFilterConfig](./New-AzPacketCaptureFilterConfig.md) 
- [Get-AzNetworkWatcherPacketCapture](./Get-AzNetworkWatcherPacketCapture.md) 
- [Remove-AzNetworkWatcherPacketCapture](./Remove-AzNetworkWatcherPacketCapture.md) 
+[New-AzNetworkWatcherPacketCapture](./New-AzNetworkWatcherPacketCapture.md)
+ [New-AzPacketCaptureFilterConfig](./New-AzPacketCaptureFilterConfig.md)
+ [Get-AzNetworkWatcherPacketCapture](./Get-AzNetworkWatcherPacketCapture.md)
+ [Remove-AzNetworkWatcherPacketCapture](./Remove-AzNetworkWatcherPacketCapture.md)
  [Stop-AzNetworkWatcherPacketCapture](./Stop-AzNetworkWatcherPacketCapture.md)
 
-[New-AzNetworkWatcherConnectionMonitor](./New-AzNetworkWatcherConnectionMonitor.md) 
- [Get-AzNetworkWatcherConnectionMonitor](./Get-AzNetworkWatcherConnectionMonitor.md) 
+[New-AzNetworkWatcherConnectionMonitor](./New-AzNetworkWatcherConnectionMonitor.md)
+ [Get-AzNetworkWatcherConnectionMonitor](./Get-AzNetworkWatcherConnectionMonitor.md)
  [Get-AzNetworkWatcherConnectionMonitorReport](./Get-AzNetworkWatcherConnectionMonitorReport.md)
 

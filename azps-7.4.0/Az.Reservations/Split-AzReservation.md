@@ -1,36 +1,34 @@
 ---
-external help file: Microsoft.Azure.Commands.Reservations.dll-Help.xml
-Module Name: AzureRM.Reservations
-online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.reservations/split-azurermreservation
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Reservations.dll-Help.xml
+Module Name: Az.Reservations
+online version: https://docs.microsoft.com/powershell/module/az.reservations/split-azreservation
 schema: 2.0.0
-content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Split-AzureRmReservation.md
-original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Reservations/Commands.Reservations/help/Split-AzureRmReservation.md
-ms.openlocfilehash: bc1fba5c7fa7e01a3c2461907a214809e175f3ee
+content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Split-AzReservation.md
+original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Reservations/Reservations/help/Split-AzReservation.md
+ms.openlocfilehash: 63360cfc37a785b0c9598b77f85bb8a0f0907eba
 ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "141924852"
+ms.locfileid: "141994206"
 ---
-# Split-AzureRmReservation
+# Split-AzReservation
 
 ## SYNOPSIS
 Memisahkan .`Reservation`
-
-[!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
 ### CommandLine (Default)
 ```
-Split-AzureRmReservation -ReservationOrderId <Guid> -ReservationId <Guid> -Quantity <Int32[]>
+Split-AzReservation -ReservationOrderId <Guid> -ReservationId <Guid> -Quantity <Int32[]>
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PipeObject
 ```
-Split-AzureRmReservation -Quantity <Int32[]> -Reservation <PSReservation>
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Split-AzReservation -Quantity <Int32[]> -Reservation <PSReservation> [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,8 +37,8 @@ Pisahkan menjadi `Reservation` dua `Reservation`s dengan distribusi kuantitas te
 ## EXAMPLES
 
 ### Contoh 1
-```
-PS C:\> Split-AzureRmReservation -ReservationOrderId "00000000-ffff-ffff-0000-00000fffff" -ReservationId "11111111-1111-1111-1111-1111111111" -Quantities 2,3
+```powershell
+Split-AzReservation -ReservationOrderId "00000000-ffff-ffff-0000-00000fffff" -ReservationId "11111111-1111-1111-1111-1111111111" -Quantity 2,3
 ```
 
 Memisahkan yang ditentukan `Reservation` menjadi dua `Reservation`s dengan jumlah terkait
@@ -51,9 +49,9 @@ Memisahkan yang ditentukan `Reservation` menjadi dua `Reservation`s dengan jumla
 Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
-Aliases: AzureRmContext, AzureCredential
+Aliases: AzContext, AzureRmContext, AzureCredential
 
 Required: False
 Position: Named
@@ -153,12 +151,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Reservations.Models.PSReservation
-Parameter: Reservasi (ByValue)
 
 ## OUTPUTS
 

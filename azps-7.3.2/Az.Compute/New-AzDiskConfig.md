@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.compute/new-azdi
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/New-AzDiskConfig.md
-ms.openlocfilehash: 958108127451bfcb94bec1a3643531d857249c00
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: ace04f02c0ddd7b4213f15600a36a49e2a66c7ee
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140395422"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141943107"
 ---
 # New-AzDiskConfig
 
 ## SYNOPSIS
 Membuat objek disk yang dapat dikonfigurasi.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/new-azdiskconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -52,7 +55,7 @@ $diskconfig = Set-AzDiskKeyEncryptionKey -Disk $diskconfig -KeyUrl $keyUrl -Sour
 New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskconfig;
 ```
 
-Perintah pertama membuat objek disk kosong lokal dengan ukuran 5GB dalam Standard_LRS akun penyimpanan. Sistem juga mengatur Windows OS dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur kunci enkripsi disk dan pengaturan kunci enkripsi kunci untuk objek disk. Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
+Perintah pertama membuat objek disk kosong lokal dengan ukuran 5GB dalam tipe akun penyimpanan Standard_LRS. Ini juga mengatur tipe OS Windows dan mengaktifkan pengaturan enkripsi. Perintah kedua dan ketiga mengatur pengaturan kunci enkripsi disk dan kunci enkripsi kunci untuk objek disk. Perintah terakhir mengambil objek disk dan membuat disk dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
 
 ### Contoh 2
 ```powershell
@@ -68,10 +71,10 @@ Revoke-AzDiskAccess -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01'
 ```
 
 Perintah pertama membuat objek disk lokal untuk Upload.
-Perintah kedua mengambil objek disk dan membuat disk dengan nama 'Disk01' di grup sumber daya 'ResourceGroup01'.
-Perintah ketiga mendapatkan Url SAS untuk disk tersebut.
+Perintah kedua mengambil objek disk dan membuat disk dengan nama 'Disk01' dalam grup sumber daya 'ResourceGroup01'.
+Perintah ketiga mendapatkan URL SAS untuk disk.
 Perintah keempat mendapatkan status disk.
-Jika status disk adalah 'ReadyToUpload', pengguna dapat mengunggah disk dari penyimpanan blob ke URL disk SAS menggunakan AzCopy.
+Jika status disk adalah 'ReadyToUpload', pengguna dapat mengunggah disk dari penyimpanan blob ke URL SAS disk menggunakan AzCopy.
 Selama pengunggahan, status disk diubah menjadi 'ActiveUpload'.
 Perintah terakhir mencabut akses disk untuk Url SAS.
 
@@ -82,12 +85,12 @@ $diskConfig = New-AzDiskConfig -Location 'West US' -CreateOption 'FromImage' -Ga
 New-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $diskConfig
 ```
 
-Buat disk dari Versi Gambar Galeri Bersama.  Id adalah id dari versi gambar galeri bersama. Lun hanya diperlukan jika sumber adalah disk data.
+Membuat disk dari Versi Gambar Galeri Bersama.  Id adalah id dari versi gambar galeri bersama. Lun hanya diperlukan jika sumbernya adalah disk data.
 
 ## PARAMETERS
 
 ### -AcceleratedNetwork
-True jika gambar yang dibuat untuk disk OS mendukung jaringan yang dipercepat.
+True jika gambar tempat disk OS dibuat mendukung jaringan yang dipercepat.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -101,8 +104,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -RentetanEnabled
-Memungkinkan rentetan di luar target kinerja disk yang disediakan. Rentetan dinonaktifkan secara default. Tidak berlaku untuk disk Ultra.
+### -BurstingEnabled
+Memungkinkan ledakan melebihi target kinerja disk yang disediakan. Bursting dinonaktifkan secara default. Tidak berlaku untuk Disk ultra.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreateOption
-Menentukan apakah cmdlet ini membuat disk di komputer virtual dari platform atau gambar pengguna, membuat disk kosong, atau melampirkan disk yang sudah ada.
+Menentukan apakah cmdlet ini membuat disk di mesin virtual dari platform atau gambar pengguna, membuat disk kosong, atau melampirkan disk yang sudah ada.
 
 ```yaml
 Type: System.String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskAccessId
-Mendapatkan atau mengatur ID ARM sumber daya DiskAccess untuk menggunakan titik akhir privat.
+Mendapatkan atau mengatur ID ARM sumber daya DiskAccess untuk menggunakan titik akhir privat aktif.
 
 
 ```yaml
@@ -163,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionKey
-Menentukan objek kunci enkripsi disk pada disk.
+Menentukan objek kunci enkripsi diska pada diska.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.KeyVaultAndSecretReference
@@ -178,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskEncryptionSetId
-Menentukan Id sumber daya dari enkripsi disk yang diatur untuk digunakan untuk mengaktifkan enkripsi ketika data disimpan.
+Menentukan ID sumber daya dari set enkripsi disk yang akan digunakan untuk mengaktifkan enkripsi saat tidak aktif.
 
 ```yaml
 Type: System.String
@@ -193,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskIOPSReadOnly
-Jumlah total IOPS yang akan diperbolehkan di seluruh VM yang terpasang di disk bersama sebagai ReadOnly. Satu operasi bisa mentransfer antara 4k dan 256 ribu byte.
+Jumlah total IOPS yang akan diizinkan di seluruh VM yang memasang disk bersama sebagai ReadOnly. Satu operasi dapat ditransfer antara 4k dan 256k byte.
 
 ```yaml
 Type: System.Int64
@@ -208,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskIOPSReadWrite
-Jumlah IOPS yang diperbolehkan untuk disk ini; hanya dapat ditetapkan untuk disk UltraSSD. Satu operasi bisa mentransfer antara 4k dan 256 ribu byte.
+Jumlah IOPS yang diperbolehkan untuk disk ini; hanya dapat diatur untuk disk UltraSSD. Satu operasi dapat ditransfer antara 4k dan 256k byte.
 
 ```yaml
 Type: System.Int64
@@ -223,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskMBpsReadOnly
-"deskripsi": "Throughput total (MBps) yang akan diperbolehkan di seluruh VM yang terpasang di disk bersama sebagai ReadOnly. MBps berarti jutaan byte per detik - MB di sini menggunakan notasi ISO, dengan kemampuan 10.
+"deskripsi": "Throughput total (MBps) yang akan diizinkan di seluruh VM yang memasang disk bersama sebagai ReadOnly. MBps berarti jutaan byte per detik - MB di sini menggunakan notasi ISO, dari kekuatan 10.
 
 ```yaml
 Type: System.Int64
@@ -238,7 +241,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskMBpsReadWrite
-Bandwidth yang diperbolehkan untuk disk ini; hanya dapat ditetapkan untuk disk UltraSSD. MBps berarti jutaan byte per detik - MB di sini menggunakan notasi ISO, dengan kemampuan 10.
+Bandwidth yang diperbolehkan untuk disk ini; hanya dapat diatur untuk disk UltraSSD. MBps berarti jutaan byte per detik - MB di sini menggunakan notasi ISO, dari kekuatan 10.
 
 ```yaml
 Type: System.Int64
@@ -268,7 +271,7 @@ Accept wildcard characters: False
 ```
 
 ### -EdgeZone
-Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan, bukan di kawasan utama.
+Mengatur nama zona tepi. Jika diatur, kueri akan dirutekan ke zona tepi yang ditentukan, bukan kawasan utama.
 
 ```yaml
 Type: System.String
@@ -283,7 +286,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionSettingsEnabled
-Mengaktifkan pengaturan enkripsi.
+Aktifkan pengaturan enkripsi.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -298,7 +301,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionType
-Tipe kunci yang digunakan untuk mengenkripsi data disk.  Nilai yang tersedia adalah: 'EncryptionAtKeyWithPlatformKey', 'EncryptionAtCustomwithCustomerKey'
+Tipe kunci yang digunakan untuk mengenkripsi data disk.  Nilai yang tersedia adalah: 'EncryptionAtRestWithPlatformKey', 'EncryptionAtRestWithCustomerKey'
 
 ```yaml
 Type: System.String
@@ -313,8 +316,8 @@ Accept wildcard characters: False
 ```
 
 ### -GalleryImageReference
-Objek GalleryImageReference.  Diperlukan jika membuat dari Gambar Galeri. Id akan menjadi id ARM dari versi gambar bersama untuk membuat disk.
-Lun diperlukan jika sumber salinan adalah salah satu disk data dalam gambar galeri; jika null, disk OS gambar akan disalin.
+Objek GalleryImageReference.  Diperlukan jika membuat dari Gambar Galeri. Id akan menjadi id ARM dari versi gambar dapur bersama untuk membuat disk.
+Lun diperlukan jika sumber salinan adalah salah satu disk data dalam gambar galeri; jika null, disk OS dari gambar akan disalin.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.ImageDiskReference
@@ -329,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -HyperVGeneration
-Hypervisor Generation dari Mesin Virtual. Berlaku untuk disk OS saja.  Nilai yang diperbolehkan adalah V1 dan V2.
+Generasi hypervisor dari Mesin Virtual. Hanya berlaku untuk disk OS.  Nilai yang diperbolehkan adalah V1 dan V2.
 
 ```yaml
 Type: System.String
@@ -344,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageReference
-Menentukan referensi gambar pada disk.
+Menentukan referensi citra pada diska.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.ImageDiskReference
@@ -359,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyEncryptionKey
-Menentukan kunci enkripsi Kunci di disk.
+Menentukan kunci enkripsi Kunci pada diska.
 
 ```yaml
 Type: Microsoft.Azure.Management.Compute.Models.KeyVaultAndKeyReference
@@ -389,7 +392,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogicalSectorSize
-Ukuran sektor logis dalam byte untuk disk Ultra. 
+Ukuran sektor logika dalam byte untuk disk Ultra. 
 
 ```yaml
 Type: System.Int32
@@ -404,8 +407,8 @@ Accept wildcard characters: False
 ```
 
 ### -MaxSharesCount
-Jumlah maksimum VM yang bisa dilampirkan ke disk pada saat yang sama.
-Nilai yang lebih besar dari satu menunjukkan disk yang dapat terpasang pada beberapa VM pada saat yang sama.
+Jumlah maksimum VM yang dapat dilampirkan ke disk pada saat yang sama.
+Nilai yang lebih besar dari satu menunjukkan disk yang dapat dipasang pada beberapa VM secara bersamaan.
 
 ```yaml
 Type: System.Int32
@@ -421,7 +424,7 @@ Accept wildcard characters: False
 
 ### -NetworkAccessPolicy
 Kebijakan akses jaringan menentukan kebijakan akses jaringan.
-Kemungkinan nilai termasuk: 'AllowAll', 'AllowPrivate', 'DenyAll'
+Nilai yang memungkinkan termasuk: 'AllowAll', 'AllowPrivate', 'DenyAll'
 
 ```yaml
 Type: System.String
@@ -452,7 +455,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicNetworkAccess
-Kebijakan untuk mengontrol ekspor pada disk.
+Kebijakan untuk mengontrol ekspor pada diska.
 
 ```yaml
 Type: System.String
@@ -482,7 +485,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuName
-Menentukan nama Sku dari akun penyimpanan.  Nilai yang tersedia Standard_LRS, Premium_LRS, StandardSSD_LRS, dan UltraSSD_LRS, Premium_ZRS dan StandardSSD_ZRS.  UltraSSD_LRS hanya dapat digunakan dengan nilai Kosong untuk parameter CreateOption.
+Menentukan nama Sku akun penyimpanan.  Nilai yang tersedia adalah Standard_LRS, Premium_LRS, StandardSSD_LRS, dan UltraSSD_LRS, Premium_ZRS dan StandardSSD_ZRS.  UltraSSD_LRS hanya dapat digunakan dengan Nilai kosong untuk parameter CreateOption.
 
 ```yaml
 Type: System.String
@@ -512,7 +515,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceUri
-Menentukan Uri sumber.
+Menentukan sumber Uri.
 
 ```yaml
 Type: System.String
@@ -542,7 +545,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportsHibernation
-Pelanggan bisa menyetel bendera SupportsHibernation di Disk.
+Pelanggan dapat mengatur bendera SupportsHibernation di Disk.
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -571,7 +574,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Tier
+### -Tingkat
 Tingkat kinerja disk.
 
 ```yaml
@@ -587,7 +590,7 @@ Accept wildcard characters: False
 ```
 
 ### -UploadSizeInBytes
-Menentukan ukuran konten unggahan, termasuk footer VHD ketika CreateOption tidak Upload.  Nilai ini harus antara 20972032 (20 MiB + 512 byte untuk footer VHD) dan 35183298347520 byte (32 TiB + 512 byte untuk footer VHD).
+Menentukan ukuran konten unggahan termasuk footer VHD saat CreateOption Upload.  Nilai ini harus antara 20972032 (20 MiB + 512 byte untuk footer VHD) dan 35183298347520 byte (32 TiB + 512 byte untuk footer VHD).
 
 ```yaml
 Type: System.Int64
@@ -601,7 +604,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Zone
+### -Zona
 Menentukan daftar zona logika untuk Disk.
 
 ```yaml
@@ -617,7 +620,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -632,7 +635,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -647,13 +650,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+### System.Nullable'1[[Microsoft.Azure.Management.Compute.Models.OperatingSystemTypes, Microsoft.Azure.Management.Compute, Version=23.0.0.0, Culture=netral, PublicKeyToken=31bf3856ad364e35]]
 
 ### System.Int32
 
@@ -663,7 +666,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ### Microsoft.Azure.Management.Compute.Models.ImageDiskReference
 
-### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+### System.Nullable'1[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=netral, PublicKeyToken=7cec85d7bea7798e]]
 
 ### Microsoft.Azure.Management.Compute.Models.KeyVaultAndSecretReference
 

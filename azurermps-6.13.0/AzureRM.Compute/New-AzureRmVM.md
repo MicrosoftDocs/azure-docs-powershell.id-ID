@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVM.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Compute/Commands.Compute/help/New-AzureRmVM.md
 ms.openlocfilehash: da307e1bc5bca5c3127e33a32bb4480148fe14a2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425465"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927241"
 ---
 # New-AzureRmVM
 
@@ -52,7 +52,7 @@ New-AzureRmVM [[-ResourceGroupName] <String>] [[-Location] <String>] -Name <Stri
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmVM** membuat komputer virtual di Azure.
+Cmdlet **New-AzureRmVM** membuat mesin virtual di Azure.
 Cmdlet ini mengambil objek mesin virtual sebagai input.
 Gunakan cmdlet New-AzureRmVMConfig untuk membuat objek mesin virtual.
 Cmdlet lain dapat digunakan untuk mengonfigurasi mesin virtual, seperti Set-AzureRmVMOperatingSystem, Set-AzureRmVMSourceImage, Add-AzureRmVMNetworkInterface, dan Set-AzureRmVMOSDisk.
@@ -83,8 +83,8 @@ FullyQualifiedDomainName : myvm-222222.eastus.cloudapp.azure.com
 ```
 
 Contoh skrip ini memperlihatkan cara membuat mesin virtual.
-Skrip akan meminta nama pengguna dan kata sandi VM.
-Skrip ini menggunakan beberapa cmdlet lain.
+Skrip akan meminta nama pengguna dan kata sandi untuk VM.
+Skrip ini menggunakan beberapa cmdlet lainnya.
 
 ### Contoh 2: Membuat mesin virtual dari gambar pengguna kustom
 ```
@@ -135,12 +135,12 @@ $VirtualMachine = Set-AzureRmVMOSDisk -VM $VirtualMachine -Name $OSDiskName -Vhd
 New-AzureRmVM -ResourceGroupName $ResourceGroupName -Location $LocationName -VM $VirtualMachine -Verbose
 ```
 
-Contoh ini menggunakan gambar sistem operasi kustom ter generalisasi yang sudah ada dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menempatkan VHD, dan menjalankannya.
-Skrip ini bisa digunakan untuk penyediaan otomatis karena skrip ini menggunakan kredensial admin mesin virtual lokal sebaris, bukan memanggil **Get-Credential** yang memerlukan interaksi pengguna.
-Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure.
-Anda dapat mengonfirmasi status masuk menggunakan cmdlet **Get-AzureSubscription.**
+Contoh ini mengambil gambar sistem operasi kustom yang sudah disiapkan dan disalurkan yang sudah ada dan melampirkan disk data ke dalamnya, menyediakan jaringan baru, menyebarkan VHD, dan menjalankannya.
+Skrip ini bisa digunakan untuk penyediaan otomatis karena menggunakan kredensial admin mesin virtual lokal sebaris daripada memanggil **Get-Credential** yang memerlukan interaksi pengguna.
+Skrip ini mengasumsikan bahwa Anda sudah masuk ke akun Azure Anda.
+Anda dapat mengonfirmasi status masuk menggunakan cmdlet **Get-AzureSubscription** .
 
-### Contoh 3: Buat VM dari gambar marketplace tanpa IP Publik
+### Contoh 3: Membuat VM dari gambar marketplace tanpa IP Publik
 ```
 $VMLocalAdminUser = "LocalAdminUser"
 $VMLocalAdminSecurePassword = ConvertTo-SecureString <password> -AsPlainText -Force
@@ -170,8 +170,8 @@ $VirtualMachine = Set-AzureRmVMSourceImage -VM $VirtualMachine -PublisherName 'M
 New-AzureRmVM -ResourceGroupName $ResourceGroupName -Location $LocationName -VM $VirtualMachine -Verbose
 ```
 
-Contoh ini menyediakan jaringan baru dan menggunakan VM Windows VM dari Marketplace tanpa membuat alamat IP publik atau Grup Keamanan Jaringan.
-Skrip ini bisa digunakan untuk penyediaan otomatis karena skrip ini menggunakan kredensial admin mesin virtual lokal sebaris, bukan memanggil **Get-Credential** yang memerlukan interaksi pengguna.
+Contoh ini menyediakan jaringan baru dan menyebarkan VM Windows dari Marketplace tanpa membuat alamat IP publik atau Grup Keamanan Jaringan.
+Skrip ini bisa digunakan untuk penyediaan otomatis karena menggunakan kredensial admin mesin virtual lokal sebaris daripada memanggil **Get-Credential** yang memerlukan interaksi pengguna.
 
 ## PARAMETERS
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Jalankan cmdlet di latar belakang dan kembalikan Pekerjaan untuk melacak kemajuan.
+Jalankan cmdlet di latar belakang dan kembalikan Job untuk melacak kemajuan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -236,8 +236,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Credential
-Kredensial administrator VM.
+### -Kredensial
+Kredensial administrator untuk VM.
 
 ```yaml
 Type: System.Management.Automation.PSCredential
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -DataDiskSizeInGb
-Menentukan ukuran disk data di GB.
+Menentukan ukuran disk data dalam GB.
 
 ```yaml
 Type: System.Int32[]
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableBginfoExtension
-Menunjukkan bahwa cmdlet ini tidak menginstal ekstensi **Info BG** pada komputer virtual.
+Menunjukkan bahwa cmdlet ini tidak menginstal ekstensi **Info BG** pada mesin virtual.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiskFile
-Jalur lokal ke file hard disk virtual yang akan diunggah ke awan dan untuk membuat VM, serta harus memiliki '.vhd' sebagai akhirannya.
+Jalur lokal ke file hard disk virtual untuk diunggah ke cloud dan untuk membuat VM, dan harus memiliki '.vhd' sebagai akhirannya.
 
 ```yaml
 Type: System.String
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 ```
 
 ### -DomainNameLabel
-Label subdomain untuk nama domain berkualifikasi penuh (FQDN, Fully-Qualified Domain Name) VM.  Ini akan mengambil formulir `{domainNameLabel}.{location}.cloudapp.azure.com` .
+Label subdomain untuk nama domain yang sepenuhnya memenuhi syarat (FQDN) VM.  Ini akan mengambil formulir `{domainNameLabel}.{location}.cloudapp.azure.com`.
 
 ```yaml
 Type: System.String
@@ -326,8 +326,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Image
-Nama gambar yang mudah digunakan dan VM akan dibuat.  Termasuk: Win2016Datacenter, Win2012R2Datacenter, Win2012Datacenter, Win2008R2SP1, UbuntuLTS, CentOS, CoreOS, Debian, openSUSE-Leap, RHEL, SLES.
+### -Gambar
+Nama gambar yang mudah dikenali di mana VM akan dibuat.  Ini termasuk: Win2016Datacenter, Win2012R2Datacenter, Win2012Datacenter, Win2008R2SP1, UbuntuLTS, CentOS, CoreOS, Debian, openSUSE-Leap, RHEL, SLES.
 
 ```yaml
 Type: System.String
@@ -342,8 +342,8 @@ Accept wildcard characters: False
 ```
 
 ### -LicenseType
-Menentukan tipe lisensi, yang menunjukkan bahwa gambar atau disk untuk komputer virtual tersebut berlisensi secara lokal.
-Nilai ini hanya digunakan untuk gambar yang berisi Windows sistem operasi Server.
+Menentukan tipe lisensi, yang menunjukkan bahwa gambar atau disk untuk mesin virtual telah dilisensikan di tempat.
+Nilai ini hanya digunakan untuk gambar yang berisi sistem operasi Windows Server.
 Nilai yang dapat diterima untuk parameter ini adalah:
 - Windows_Client
 - Windows_Server Nilai ini tidak dapat diperbarui.
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 ```
 
 ### -Linux
-Menunjukkan apakah file disk tersebut adalah untuk Linux VM, jika ditentukan; atau Windows, jika tidak ditentukan secara default.
+Menunjukkan apakah file disk untuk Linux VM, jika ditentukan; atau Windows, jika tidak ditentukan secara default.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -377,7 +377,7 @@ Accept wildcard characters: False
 ```
 
 ### -Lokasi
-Menentukan lokasi untuk mesin virtual.
+Menentukan lokasi untuk mesin maya.
 
 ```yaml
 Type: System.String
@@ -419,7 +419,7 @@ Accept wildcard characters: False
 ```
 
 ### -OpenPorts
-Daftar port yang terbuka pada grup keamanan jaringan (NSG) untuk VM yang dibuat.  Nilai default bergantung pada tipe gambar yang dipilih (misalnya, Windows: 3389, 5985 dan Linux: 22).
+Daftar port yang akan dibuka di grup keamanan jaringan (NSG) untuk VM yang dibuat.  Nilai default tergantung pada tipe gambar yang dipilih (misalnya, Windows: 3389, 5985 dan Linux: 22).
 
 ```yaml
 Type: System.Int32[]
@@ -434,7 +434,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublicIpAddressName
-Nama alamat IP publik baru (atau yang sudah ada) agar VM yang dibuat dapat digunakan.  Jika tidak ditentukan, nama akan dihasilkan.
+Nama alamat IP publik baru (atau yang sudah ada) untuk digunakan VM yang dibuat.  Jika tidak ditentukan, nama akan dibuat.
 
 ```yaml
 Type: System.String
@@ -476,7 +476,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityGroupName
-Nama grup keamanan jaringan (atau yang sudah ada) yang baru (NSG) agar VM yang dibuat dapat digunakan.  Jika tidak ditentukan, nama akan dihasilkan.
+Nama grup keamanan jaringan (atau yang sudah ada) baru (atau yang sudah ada) untuk digunakan VM yang dibuat.  Jika tidak ditentukan, nama akan dibuat.
 
 ```yaml
 Type: System.String
@@ -491,7 +491,7 @@ Accept wildcard characters: False
 ```
 
 ### -Size
-Ukuran Mesin Virtual.  Nilai Defaultnya adalah: Standard_DS1_v2.
+Ukuran Mesin Virtual.  Nilai Default adalah: Standard_DS1_v2.
 
 ```yaml
 Type: System.String
@@ -521,7 +521,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetName
-Nama subnet baru (atau yang sudah ada) agar VM yang dibuat dapat digunakan.  Jika tidak ditentukan, nama akan dihasilkan.
+Nama subnet baru (atau yang sudah ada) untuk digunakan VM yang dibuat.  Jika tidak ditentukan, nama akan dibuat.
 
 ```yaml
 Type: System.String
@@ -536,7 +536,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemAssignedIdentity
-Jika parameter ada, VM akan menetapkan identitas sistem terkelola yang dihasilkan secara otomatis.
+Jika parameter ada, maka VM ditetapkan identitas sistem terkelola yang dihasilkan secara otomatis.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -551,9 +551,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Menentukan bahwa sumber daya dan grup sumber daya dapat ditandai dengan kumpulan pasangan nama nilai.
-Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama-sama di seluruh grup sumber daya dan untuk membuat tampilan Anda sendiri.
-Setiap grup sumber daya atau sumber daya dapat memiliki maksimal 15 tag.
+Menentukan bahwa sumber daya dan grup sumber daya bisa ditandai dengan sekumpulan pasangan nilai nama.
+Menambahkan tag ke sumber daya memungkinkan Anda mengelompokkan sumber daya bersama di seluruh grup sumber daya dan membuat tampilan Anda sendiri.
+Setiap sumber daya atau grup sumber daya dapat memiliki maksimal 15 tag.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -568,7 +568,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAssignedIdentity
-Nama identitas layanan terkelola yang harus ditetapkan pada VM.
+Nama identitas layanan terkelola yang harus ditetapkan ke VM.
 
 ```yaml
 Type: System.String
@@ -583,7 +583,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkName
-Nama jaringan virtual baru (atau yang sudah ada) agar VM yang dibuat dapat digunakan.  Jika tidak ditentukan, nama akan dihasilkan.
+Nama jaringan virtual baru (atau yang sudah ada) untuk digunakan VM yang dibuat.  Jika tidak ditentukan, nama akan dibuat.
 
 ```yaml
 Type: System.String
@@ -614,8 +614,8 @@ Accept pipeline input: True (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
-### -Zone
-Menentukan daftar zona mesin virtual.
+### -Zona
+Menentukan daftar zona mesin maya.
 
 ```yaml
 Type: System.String[]
@@ -642,7 +642,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -658,7 +658,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -673,7 +673,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -697,7 +697,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmVM](./Get-AzureRmVM.md)
 
-[Remove-AzureRmVM](./Remove-AzureRmVM.md)
+[Hapus-AzureRmVM](./Remove-AzureRmVM.md)
 
 [Mulai ulang-AzureRmVM](./Restart-AzureRmVM.md)
 
@@ -705,13 +705,13 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmVM](./Stop-AzureRmVM.md)
 
-[Update-AzureRmVM](./Update-AzureRmVM.md)
+[Perbarui-AzureRmVM](./Update-AzureRmVM.md)
 
 [Add-AzureRmVMDataDisk](./Add-AzureRmVMDataDisk.md)
 
 [Add-AzureRmVMNetworkInterface](./Add-AzureRmVMNetworkInterface.md)
 
-[New-AzureRmVMConfig](./New-AzureRmVMConfig.md)
+[AzureRmVMConfig Baru](./New-AzureRmVMConfig.md)
 
 [Set-AzureRmVMOperatingSystem](./Set-AzureRmVMOperatingSystem.md)
 

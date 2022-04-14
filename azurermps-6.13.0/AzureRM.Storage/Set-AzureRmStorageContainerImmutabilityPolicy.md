@@ -5,23 +5,23 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Set-AzureRmStorageContainerImmutabilityPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Set-AzureRmStorageContainerImmutabilityPolicy.md
-ms.openlocfilehash: 34464b5807c909f092ce763836948da04667d7ad755fde67eb9ce5406df61983
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 7717aaa76efba736015a1cf762c95af440b28218
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140868048"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141923454"
 ---
 # Set-AzureRmStorageContainerImmutabilityPolicy
 
 ## SYNOPSIS
-Membuat atau memperbarui ImmutabilityPolicy wadah Storage blob
+Membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
 ## SYNTAX
 
-### Nama Akun (Default)
+### AccountName (Default)
 ```
 Set-AzureRmStorageContainerImmutabilityPolicy [-ResourceGroupName] <String> [-StorageAccountName] <String>
  [-ContainerName] <String> -ImmutabilityPeriod <Int32> [-Etag <String>]
@@ -75,16 +75,16 @@ Set-AzureRmStorageContainerImmutabilityPolicy -InputObject <PSImmutabilityPolicy
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmStorageContainerImmutabilityPolicy** membuat atau memperbarui ImmutabilityPolicy penampung blob Storage
+Cmdlet **Set-AzureRmStorageContainerImmutabilityPolicy** membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage
 
 ## EXAMPLES
 
-### Contoh 1: Membuat atau memperbarui ImmutabilityPolicy wadah Storage blob dengan Storage nama akun dan nama wadah
+### Contoh 1: Membuat atau memperbarui ImmutabilityPolicy wadah blob Storage dengan nama akun Storage dan nama kontainer
 ```
 PS C:\>Set-AzureRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" -ImmutabilityPeriod 10 
 ```
 
-Perintah ini akan membuat atau memperbarui ImmutabilityPolicy suatu Storage blob dengan Storage penampung dan nama wadah akun.
+Perintah ini membuat atau memperbarui ImmutabilityPolicy dari wadah blob Storage dengan nama akun Storage dan nama kontainer.
 
 ### Contoh 2: Extend ImmutabilityPolicy of a Storage blob container, with Storage account object
 ```
@@ -93,7 +93,7 @@ PS C:\>$policy = Get-AzureRmStorageContainerImmutabilityPolicy -StorageAccount $
 PS C:\>Set-AzureRmStorageContainerImmutabilityPolicy -StorageAccount $accountObject -ContainerName "myContainer" -ImmutabilityPeriod 20 -Etag $policy.Etag -ExtendPolicy
 ```
 
-Perintah ini memperluas ImmutabilityPolicy wadah Storage blob, dengan Storage objek akun. Extend ImmutabilityPolicy can only run after ImmutabilityPolicy is locked.
+Perintah ini memperluas ImmutabilityPolicy wadah blob Storage, dengan objek akun Storage. Extend ImmutabilityPolicy hanya dapat berjalan setelah ImmutabilityPolicy dikunci.
 
 ### Contoh 3: Update ImmutabilityPolicyof a Storage blob container 
 ```
@@ -102,19 +102,19 @@ PS C:\>$policy = Set-AzureRmStorageContainerImmutabilityPolicy -Container $conta
 PS C:\>$policy = Set-AzureRmStorageContainerImmutabilityPolicy -Container $containerObject -ImmutabilityPeriod 9 -Etag $policy.Etag
 ```
 
-Perintah ini memperbarui ImmutabilityPolicy wadah blob Storage dengan objek wadah Storage 2 kali, pertama ke ImmutabilityPeriod 12 hari tanpa etag, lalu ke ImmutabilityPeriod 9 hari dengan etag.
+Perintah ini memperbarui ImmutabilityPolicy wadah blob Storage dengan objek kontainer Storage 2 kali, pertama untuk ImmutabilityPeriod 12 hari tanpa etag, lalu ke ImmutabilityPeriod 9 hari dengan etag.
 
 ### Contoh 4: Extend ImmutabilityPolicy of a Storage blob container, with ImmutabilityPolicy object
 ```
 PS C:\>Get-AzureRmStorageContainerImmutabilityPolicy -ResourceGroupName "myResourceGroup" -AccountName "myStorageAccount" -ContainerName "myContainer" | Set-AzureRmStorageContainerImmutabilityPolicy -ImmutabilityPeriod 15 -ExtendPolicy
 ```
 
-Perintah ini memperluas ImmutabilityPolicy pada wadah Storage blob, dengan objek ImmutabilityPolicy. Extend ImmutabilityPolicy can only run after ImmutabilityPolicy is locked.
+Perintah ini memperluas ImmutabilityPolicy wadah blob Storage, dengan objek ImmutabilityPolicy. Extend ImmutabilityPolicy hanya dapat berjalan setelah ImmutabilityPolicy dikunci.
 
 ## PARAMETERS
 
-### -Container
-Storage wadah objek
+### -Kontainer
+objek kontainer Storage
 
 ```yaml
 Type: PSContainer
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Etag
-Tag kebijakan keterbacaan. Jika -ExtendPolicy tidak ditentukan, Etag bersifat opsional; Etag lain diperlukan.
+Etag kebijakan keabadian. Jika -ExtendPolicy tidak ditentukan, Etag bersifat opsional; Etag lain diperlukan.
 
 ```yaml
 Type: String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExtendPolicy
-Tunjukkan ExtendPolicy untuk Memperpanjang ImmutabilityPolicy yang sudah ada.  Setelah ImmutabilityPolicy dikunci, ini hanya bisa diperpanjang. 
+Menunjukkan ExtendPolicy untuk Memperluas ImmutabilityPolicy yang sudah ada.  Setelah ImmutabilityPolicy dikunci, ImmutabilityPolicy hanya dapat diperpanjang. 
 
 ```yaml
 Type: SwitchParameter
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImmutabilityPeriod
-Periode ketermukaan sejak pembuatan dalam hari.
+Periode kekebalan sejak penciptaan dalam beberapa hari.
 
 ```yaml
 Type: Int32
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccount
-Storage objek akun
+objek akun Storage
 
 ```yaml
 Type: PSStorageAccount
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageAccountName
-Storage Akun.
+Storage Nama Akun.
 
 ```yaml
 Type: String
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: SwitchParameter
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -3,17 +3,17 @@ external help file: Microsoft.Azure.Commands.DeploymentManager.dll-Help.xml
 Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/new-azurermdeploymentmanagerserviceunit
 schema: 2.0.0
-ms.openlocfilehash: 0cb4bf2718b956e869e52856d84cb6624c97f6d8a868af07909d636af04ae1aa
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: e732463984088bbcb507eb55594f7de2114d25d5
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418940"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930831"
 ---
 # New-AzureRmDeploymentManagerServiceUnit
 
 ## SYNOPSIS
-Membuat unit layanan baru di bawah suatu layanan dalam topologi layanan.
+Membuat unit layanan baru di bawah layanan dalam topologi layanan.
 
 ## SYNTAX
 
@@ -66,9 +66,9 @@ New-AzureRmDeploymentManagerServiceUnit [-ResourceGroupName] <String> [-Name] <S
 
 ## DESCRIPTION
 Cmdlet **New-AzureRmDeploymentManagerServiceUnit** membuat layanan di bawah layanan dalam topologi layanan, dan mengembalikan objek yang mewakili unit layanan tersebut.
-Tentukan unit layanan berdasarkan nama, nama layanan, topologi layanan yang ada di dalamnya dan nama grup sumber daya. 
+Tentukan unit layanan berdasarkan nama, nama layanan, topologi layanan di dalamnya dan nama grup sumber daya. 
 
-Cmdlet mengembalikan objek ServiceUnit. Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzureRmDeploymentManagerService cmdlet.
+Cmdlet mengembalikan objek ServiceUnit. Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada layanan menggunakan cmdlet Set-AzureRmDeploymentManagerService.
 
 ## EXAMPLES
 
@@ -77,19 +77,19 @@ Cmdlet mengembalikan objek ServiceUnit. Anda dapat mengubah objek ini secara lok
 PS C:\> New-AzureRmDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology -ServiceName ContosoService2 -Name ContosoService2Storage -Location "Central US" -TargetResourceGroup service2ResourceGroup -DeploymentMode Incremental -TemplateArtifactSourceRelativePath "Templates/Service2.Storage.json" -ParametersArtifactSourceRelativePath "Parameters/Service2Storage.Parameters.json"
 ```
 
-Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 di topologi ContosoServiceTopology, di LOKASI AS Pusat. File Templat dan parameter ditetapkan sebagai jalur relatif ke dalam lokasi sumber artifak yang direferensikan dalam Service Topology ContosoServiceTopology. Sumber daya yang ditentukan dalam templat ini akan digunakan ke layanan grup sumber daya target2ResourceGroup dengan mode penyebaran yang diatur ke Penambahan.
+Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 dalam topologi ContosoServiceTopology, di lokasi AS Tengah. File Templat dan parameter didefinisikan sebagai jalur relatif ke lokasi sumber artefak yang dirujuk dalam Service Topology ContosoServiceTopology. Sumber daya yang ditentukan dalam templat ini akan digunakan ke dalam layanan grup sumber daya target2ResourceGroup dengan mode penyebaran yang diatur ke Penambahan.
 
 ### Contoh 2
 ```powershell
 PS C:\> New-AzureRmDeploymentManagerServiceUnit -ResourceGroupName ContosoResourceGroup -ServiceTopologyName ContosoServiceTopology1 -ServiceName ContosoService2 -Name ContosoService2Storage -Location "Central US" -TargetResourceGroup service2ResourceGroup -DeploymentMode Complete -TemplateUri "https://ContosoStorage.blob.core.windows.net/ContosoArtifacts/Templates/Service2.Storage.json?sasParameters" -ParametersUri "https://ContosoStorage.blob.core.windows.net/ContosoArtifacts/Parameters/Service2Storage.Parameters.json?sasParameters"
 ```
 
-Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 di topologi ContosoServiceTopology, di LOKASI AS Pusat. Referensi Templat dan parameter disediakan sebagai sumber artifak Uri sebagai ResourceId sumber artifak tidak disediakan di Service Topology ContosoServiceTopology1. Sumber daya yang ditentukan dalam templat ini akan digunakan ke layanan grup sumber daya target2ResourceGroup dengan mode penyebaran yang diatur ke Selesai.
+Cmdlet ini membuat unit layanan baru dengan nama ContosoService2Storage di ContosoResourceGroup di bawah layanan ContosoService2 dalam topologi ContosoServiceTopology, di lokasi AS Tengah. Referensi Templat dan parameter disediakan sebagai sumber artefak SAS Uri tidak disediakan dalam Service Topology ContosoServiceTopology1. Sumber daya yang ditentukan dalam templat ini akan digunakan ke dalam layanan grup sumber daya target2ResourceGroup dengan mode penyebaran diatur ke Selesai.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentMode
-Mode penggunaan yang digunakan saat menggunakan sumber daya dalam unit layanan.
+Mode penyebaran yang digunakan saat menyebarkan sumber daya di unit layanan.
 
 ```yaml
 Type: System.String
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParametersArtifactSourceRelativePath
-Mode penggunaan yang digunakan saat menggunakan sumber daya dalam unit layanan.
+Mode penyebaran yang digunakan saat menyebarkan sumber daya di unit layanan.
 
 ```yaml
 Type: System.String
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParametersUri
-Mode penggunaan yang digunakan saat menggunakan sumber daya dalam unit layanan.
+Mode penyebaran yang digunakan saat menyebarkan sumber daya di unit layanan.
 
 ```yaml
 Type: System.String
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -Layanan
-Objek layanan tempat unit layanan akan dibuat.
+Objek layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceResource
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceName
-Nama layanan unit layanan ini merupakan bagian darinya.
+Nama layanan yang menjadi bagian dari unit layanan ini.
 
 ```yaml
 Type: System.String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopology
-Objek topologi layanan tempat unit layanan akan dibuat.
+Objek topologi layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DeploymentManager.Models.PSServiceTopologyResource
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyName
-Nama topologi serivce unit layanan ini adalah bagian darinya.
+Nama topologi serivce unit layanan ini adalah bagian dari.
 
 ```yaml
 Type: System.String
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceTopologyResourceId
-Pengidentifikasi sumber daya topologi layanan tempat unit layanan akan dibuat.
+Pengidentifikasi sumber daya topologi layanan tempat unit layanan harus dibuat.
 
 ```yaml
 Type: System.String
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateArtifactSourceRelativePath
-Mode penggunaan yang digunakan saat menggunakan sumber daya dalam unit layanan.
+Mode penyebaran yang digunakan saat menyebarkan sumber daya di unit layanan.
 
 ```yaml
 Type: System.String
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateUri
-Mode penggunaan yang digunakan saat menggunakan sumber daya dalam unit layanan.
+Mode penyebaran yang digunakan saat menyebarkan sumber daya di unit layanan.
 
 ```yaml
 Type: System.String
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -390,11 +390,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 
@@ -406,6 +406,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmDeploymentManagerServiceUnit](./Get-AzureRmDeploymentManagerServiceUnit.md)
 
-[Remove-AzureRmDeploymentManagerServiceUnit](./Remove-AzureRmDeploymentManagerServiceUnit.md)
+[Hapus-AzureRmDeploymentManagerServiceUnit](./Remove-AzureRmDeploymentManagerServiceUnit.md)
 
 [Set-AzureRmDeploymentManagerServiceUnit](./Set-AzureRmDeploymentManagerServiceUnit.md)

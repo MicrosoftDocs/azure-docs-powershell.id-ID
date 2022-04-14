@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApi.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Set-AzApiManagementApi.md
 ms.openlocfilehash: 1ea4abae19fa780e87c9b25281f94aa019e28ced
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140110421"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915519"
 ---
 # Set-AzApiManagementApi
 
@@ -19,7 +19,7 @@ ms.locfileid: "140110421"
 Mengubah API.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapi) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/set-azapimanagementapi) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,11 +44,11 @@ Set-AzApiManagementApi -InputObject <PsApiManagementApi> [-Name <String>] [-Desc
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzApiManagementApi** mengubah API Manajemen API Azure.
+Cmdlet **Set-AzApiManagementApi** mengubah API azure API Management.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah API
+### Contoh 1: Memodifikasi API
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzApiManagementApi -Context $ApiMgmtContext -Name "EchoApi" -ServiceUrl "https://contoso.com/apis/echo" -Protocols @('https') -Description "Responds with what was sent" -Path "echo"
@@ -65,21 +65,21 @@ PS C:\>$api.ApiVersionSetDescription = $versionSet.Description
 PS C:\>Set-AzApiManagementApi -InputObject $api -PassThru
 ```
 
-Contoh ini menambahkan API ke Kumpulan Versi API yang sudah ada
+Contoh ini menambahkan API ke Set Versi API yang sudah ada
 
-### Contoh 3: Mengubah Backend ServiceUrl yang mengarahkan API
+### Contoh 3: Ubah Backend ServiceUrl tempat API menunjuk ke
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>$updatedApiServiceUrl = "http://newechoapi.cloudapp.net/updateapi"
 PS C:\>$updatedApi = Set-AzApiManagementApi -Context $ApiMgmtContext -ApiId $echoApiId -ServiceUrl $updatedApiServiceUrl
 ```
 
-Contoh ini memperbarui ServiceUrl yang `echo-api` menunjuk.
+Contoh ini memperbarui ServiceUrl yang `echo-api` diarahkan.
 
 ## PARAMETERS
 
 ### -ApiId
-Menentukan ID API untuk diubah.
+Menentukan ID API yang akan diubah.
 
 ```yaml
 Type: System.String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -BearerTokenSendingMethod
-Mekanisme server otorisasi OpenId yang mana token akses diberikan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
+Mekanisme server otorisasi OpenId di mana token akses dikirimkan ke API. https://datatracker.ietf.org/doc/html/rfc6749#section-4Lihat . Parameter ini bersifat opsional. Nilai default adalah $null.
 
 ```yaml
 Type: System.String[]
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama web API.
+Menentukan nama API web.
 
 ```yaml
 Type: System.String
@@ -246,9 +246,9 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Path
+### -Jalur
 Menentukan jalur API web, yang merupakan bagian terakhir dari URL publik API.
-URL ini digunakan oleh konsumen API untuk mengirimkan permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
+URL ini digunakan oleh konsumen API untuk mengirim permintaan ke layanan web, dan panjangnya harus satu hingga 400 karakter.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -263,10 +263,10 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocols
-Menentukan array protokol WEB API.
+### -Protokol
+Menentukan array protokol API web.
 psdx_paramvalues http dan https.
-Berikut adalah protokol web yang menjadi tempat API tersedia.
+Ini adalah protokol web di mana API disediakan.
 Nilai defaultnya adalah $Null.
 
 ```yaml
@@ -283,9 +283,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUrl
-Menentukan URL layanan web yang memperlihatkan API.
-URL ini hanya digunakan oleh Manajemen API Azure, dan tidak dibuat publik.
-URL harus berisi satu hingga 2000 karakter.
+Menentukan URL layanan web yang mengekspos API.
+URL ini hanya digunakan oleh Azure API Management, dan tidak diumumkan ke publik.
+URL harus panjangnya satu hingga 2000 karakter.
 
 ```yaml
 Type: System.String
@@ -332,7 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionRequired
-Benderai untuk memberlakukan LanggananSeser yang diminta untuk permintaan ke Api. Parameter ini bersifat opsional.
+Bendera untuk memberlakukan LanggananPerlukan permintaan ke Api. Parameter ini bersifat opsional.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -373,7 +373,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzApiManagementApi](./Get-AzApiManagementApi.md)
 
-[Import-AzApiManagementApi](./Import-AzApiManagementApi.md)
+[Impor-AzApiManagementApi](./Import-AzApiManagementApi.md)
 
 [New-AzApiManagementApi](./New-AzApiManagementApi.md)
 

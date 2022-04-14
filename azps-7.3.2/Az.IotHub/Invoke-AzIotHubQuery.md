@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.iothub/invoke-az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubQuery.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/IotHub/IotHub/help/Invoke-AzIotHubQuery.md
-ms.openlocfilehash: ade85808928c435d11dd19efd01d55df41f3f57d
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 0ccf7aeda4e340deff1e5f299681f6d3169c44c6
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140372675"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937779"
 ---
 # Invoke-AzIotHubQuery
 
 ## SYNOPSIS
-Query an IoT Hub using a powerful SQL-like language.
+Buat kueri IoT Hub menggunakan bahasa yang canggih seperti SQL.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.iothub/invoke-aziothubquery) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,7 +41,7 @@ Invoke-AzIotHubQuery [-ResourceId] <String> [-Query] <String> [-Top <Int32>]
 ```
 
 ## DESCRIPTION
-Query an IoT Hub using a powerful SQL-like language to retrieve information regarding device and module modules, jobs and message routing.
+Buat kueri IoT Hub menggunakan bahasa yang canggih seperti SQL untuk mengambil informasi mengenai perutean perangkat dan modul, pekerjaan, dan perutean pesan.
 Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language untuk informasi selengkapnya.
 
 ## EXAMPLES
@@ -48,14 +51,14 @@ Lihat https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language u
 PS C:\> Invoke-AzIotHubQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Query "select * from devices"
 ```
 
-Membuat kueri semua data data perangkat di Azure IoT Hub.
+Buat kueri semua data kembar perangkat dalam Azure IoT Hub.
 
 ### Contoh 2
 ```powershell
 PS C:\> Invoke-AzIotHubQuery -ResourceGroupName "myresourcegroup" -IotHubName "myiothub" -Query "select * from devices.modules where devices.deviceId = 'myDevice1'" -Top 2
 ```
 
-Query top 2 module data on a target device.
+Kueri 2 modul data kembar teratas di perangkat target.
 
 ## PARAMETERS
 
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 
 ### -Top
 Jumlah maksimum elemen yang akan dikembalikan.
-Secara default kueri tidak memiliki huruf besar.
+Secara default kueri tidak memiliki huruf kapital.
 
 ```yaml
 Type: System.Int32
@@ -166,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -181,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -196,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

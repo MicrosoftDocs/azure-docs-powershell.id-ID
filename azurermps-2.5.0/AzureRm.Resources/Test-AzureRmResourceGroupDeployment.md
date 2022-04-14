@@ -5,16 +5,16 @@ ms.assetid: 0143CE35-3B1D-4829-B880-A5CA25B83883
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/test-azurermresourcegroupdeployment
 schema: 2.0.0
 ms.openlocfilehash: 97fbda90b27cbfabca8cbfd21c5bf375b86f7adb
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423111"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141927268"
 ---
 # Test-AzureRmResourceGroupDeployment
 
 ## SYNOPSIS
-Memvalidasi penggunaan grup sumber daya.
+Memvalidasi penyebaran grup sumber daya.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -91,7 +91,7 @@ Cmdlet **Test-AzureRmResourceGroupDeployment** menentukan apakah templat penyeba
 
 ### -ApiVersion
 Menentukan versi API yang didukung oleh Penyedia sumber daya.
-Anda bisa menentukan versi yang berbeda dari versi default.
+Anda dapat menentukan versi yang berbeda dari versi default.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -123,8 +123,8 @@ Accept wildcard characters: False
 ### -Mode
 Menentukan mode penyebaran.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Penambahan
-- Selesai
+- Inkremental
+- Lengkap
 
 ```yaml
 Type: Microsoft.Azure.Management.ResourceManager.Models.DeploymentMode
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pra
-Mengindikasikan bahwa cmdlet ini mempertimbangkan versi API prari perilisan bila secara otomatis menentukan versi mana yang akan digunakan.
+Menunjukkan bahwa cmdlet ini mempertimbangkan versi API prarilis ketika secara otomatis menentukan versi mana yang akan digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya untuk diuji.
+Menentukan nama grup sumber daya yang akan diuji.
 
 ```yaml
 Type: System.String
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollBackDeploymentName
-Rollback to the successful deployment with the given name in the resource group, should not be used if -RollbackToLastDeployment is used.
+Pembatalan ke penyebaran yang berhasil dengan nama tertentu dalam grup sumber daya, tidak boleh digunakan jika -RollbackToLastDeployment digunakan.
 
 ```yaml
 Type: System.String
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -RollbackToLastDeployment
-Rollback to the last successful deployment in the resource group, should not be present if -RollBackDeploymentName is used.
+Pembatalan ke penyebaran terakhir yang berhasil dalam grup sumber daya, seharusnya tidak ada jika -RollBackDeploymentName digunakan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateParameterUri
-Menentukan URI dari file parameter templat.
+Menentukan URI file parameter templat.
 
 ```yaml
 Type: System.String
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateUri
-Menentukan URI dari file templat JSON.
+Menentukan URI file templat JSON.
 
 ```yaml
 Type: System.String
@@ -274,11 +274,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

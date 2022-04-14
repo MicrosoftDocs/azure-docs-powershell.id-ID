@@ -5,16 +5,16 @@ ms.assetid: 4A6816DB-0E46-44F0-8AE9-180B1C4AAB22
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.insights/set-azurermactiongroup
 schema: 2.0.0
 ms.openlocfilehash: 25fe8b74c48bd86092ce2ef87b967234eae9a74c
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428714"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141929184"
 ---
 # Set-AzureRmActionGroup
 
 ## SYNOPSIS
-Membuat grup tindakan baru atau memperbarui grup tindakan yang sudah ada.
+Membuat grup tindakan baru atau memperbarui yang sudah ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -45,7 +45,7 @@ Set-AzureRmActionGroup [-ShortName <String>] [-DisableGroup]
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmActionGroup** membuat grup tindakan baru atau memperbarui yang sudah ada
+Cmdlet **Set-AzureRmActionGroup** membuat grup tindakan baru atau pembaruan yang sudah ada
 
 ## EXAMPLES
 
@@ -57,12 +57,12 @@ PS C:\>Set-AzureRmActionGroup -Name $actionGroupName -ResourceGroup $resourceGro
 ```
 
 Dua perintah pertama membuat dua penerima.
-Perintah akhir membuat Grup Tindakan termasuk dua penerima.
+Perintah terakhir membuat Grup Tindakan termasuk dua penerima.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Grup tindakan yang anda ingka
+Resourc grup tindakan
 
 ```yaml
 Type: Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource
@@ -133,7 +133,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Penerima
+### -Receiver
 Daftar penerima grup tindakan.
 
 ```yaml
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShortName
-Nama singkat grup tindakan.
+Nama pendek grup tindakan.
 
 ```yaml
 Type: System.String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Tag grup tindakan yang anda ingka
+Tag resourc grup tindakan
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,17 +263,17 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### System.Collections.generic.List'1[[Microsoft.Azure.Commands.Insights. OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands. Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]]
+### System.Collections.Generic.List'1[[Microsoft.Azure.Commands.Insights. OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands. Insights, Version=5.1.0.0, Culture=netral, PublicKeyToken=null]]
 
 ### System.Management.Automation.SwitchParameter
 
-### System.Collections.Generic.IDictionary'2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Collections.Generic.IDictionary'2[[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Commands. Insights. OutputClasses.PSActionGroupResource
 Parameter: InputObject (ByValue)
@@ -286,6 +286,6 @@ Parameter: InputObject (ByValue)
 
 ## RELATED LINKS
 
-[Get-AzureRmActionGroup](./Get-AzureRmActionGroup.md) 
- [Remove-AzureRmActionGroup](./Remove-AzureRmActionGroup.md) 
- [New-AzureRmActionGroupReceiver](./New-AzureRmActionGroupReceiver.md)
+[Get-AzureRmActionGroup](./Get-AzureRmActionGroup.md)
+ [Hapus-AzureRmActionGroup](./Remove-AzureRmActionGroup.md)
+ [Baru-AzureRmActionGroupReceiver](./New-AzureRmActionGroupReceiver.md)

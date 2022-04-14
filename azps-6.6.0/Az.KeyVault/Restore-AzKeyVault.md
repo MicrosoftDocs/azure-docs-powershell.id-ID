@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/KeyVault/KeyVault/help/Restore-AzKeyVault.md
 ms.openlocfilehash: 7889fd4da5d547fe87407409b7f367dbf41f1c31
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140252917"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142049195"
 ---
 # Restore-AzKeyVault
 
 ## SYNOPSIS
-Sepenuhnya memulihkan HSM yang dikelola dari cadangan.
+Memulihkan sepenuhnya HSM yang dikelola dari cadangan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.keyvault/restore-azkeyvault) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.keyvault/restore-azkeyvault) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Restore-AzKeyVault -BackupFolder <String> [-KeyName <String>] [-PassThru] -Stora
 ```
 
 ## DESCRIPTION
-Sepenuhnya memulihkan HSM terkelola dari cadangan yang disimpan dalam akun penyimpanan.
+Memulihkan HSM terkelola sepenuhnya dari cadangan yang disimpan dalam akun penyimpanan.
 Gunakan `Backup-AzKeyVault` untuk mencadangkan.
 
 ## EXAMPLES
@@ -62,12 +62,12 @@ PS C:\> $sasToken = ConvertTo-SecureString -AsPlainText -Force "?sv=2019-12-12&s
 PS C:\> Restore-AzKeyVault -HsmName myHsm -StorageContainerUri "https://{accountName}.blob.core.windows.net/{containerName}" -BackupFolder "mhsm-myHsm-2020101308504935" -SasToken $sasToken
 ```
 
-Contoh ini memulihkan cadangan yang disimpan dalam folder bernama "mhsm-myHsm-2020101308504935" dari wadah penyimpanan "https://{accountName}.blob.core.windows.net/{containerName}".
+Contoh memulihkan cadangan yang disimpan dalam folder bernama "mhsm-myHsm-2020101308504935" wadah penyimpanan "https://{accountName}.blob.core.windows.net/{containerName}".
 
 ## PARAMETERS
 
 ### -BackupFolder
-Nama folder cadangan, misalnya 'mhsm-*-2020101309020403'. Juga bisa ditumpuk seperti 'backups/mhsm-*-2020101309020403'.
+Nama folder cadangan, misalnya 'mhsm *--2020101309020403'. File juga dapat ditumpuk seperti 'cadangan/mhsm-*-2020101309020403'.
 
 ```yaml
 Type: System.String
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageContainerUri
-URI dari wadah penyimpanan tempat pencadangan akan disimpan.
+URI wadah penyimpanan tempat cadangan akan disimpan.
 
 ```yaml
 Type: System.Uri
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -248,11 +248,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

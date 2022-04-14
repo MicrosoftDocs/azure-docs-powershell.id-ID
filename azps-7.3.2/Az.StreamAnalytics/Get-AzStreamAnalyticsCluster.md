@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.streamanalytics/
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsCluster.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/StreamAnalytics/help/Get-AzStreamAnalyticsCluster.md
-ms.openlocfilehash: a6856e1dbbde7a9f150a6ebcfe958c3f9206a6e2
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 717179261b18a248064df10c99d7865c3f6d5eaf
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140553689"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142024373"
 ---
 # Get-AzStreamAnalyticsCluster
 
 ## SYNOPSIS
-Mendapatkan informasi tentang kluster tertentu.
+Mendapatkan informasi tentang kluster yang ditentukan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.streamanalytics/get-azstreamanalyticscluster) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Mendapatkan informasi tentang kluster tertentu.
 Get-AzStreamAnalyticsCluster [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
-### Dapatkan
+### Mendapatkan
 ```
 Get-AzStreamAnalyticsCluster -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
@@ -43,11 +46,11 @@ Get-AzStreamAnalyticsCluster -ResourceGroupName <String> [-SubscriptionId <Strin
 ```
 
 ## DESCRIPTION
-Mendapatkan informasi tentang kluster tertentu.
+Mendapatkan informasi tentang kluster yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua kluster analitik streaming di bawah langganan
+### Contoh 1: Dapatkan semua kluster analitik stream di bawah langganan
 ```powershell
 PS C:\> Get-AzStreamAnalyticsCluster
 
@@ -56,9 +59,9 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters 77ba5ccb-3005-40b6-b9ac-3ae9d7fb21c9
 ```
 
-Perintah ini akan mendapatkan semua kluster analitik streaming di bawah langganan.
+Perintah ini mendapatkan semua kluster analitik streaming di bawah langganan.
 
-### Contoh 2: Mendapatkan semua kluster analitik streaming di bawah grup sumber daya
+### Contoh 2: Dapatkan semua kluster analitik stream di bawah grup sumber daya
 ```powershell
 PS C:\> Get-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test
 
@@ -67,9 +70,9 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters c2bcffd8-b35d-430b-9759-13af9c18ed72
 ```
 
-Perintah ini akan mendapatkan semua kluster analitik streaming di bawah grup sumber daya.
+Perintah ini mendapatkan semua kluster analitik stream di bawah grup sumber daya.
 
-### Contoh 3: Dapatkan kluster analitik streaming menurut nama
+### Contoh 3: Dapatkan kluster analitik streaming berdasarkan nama
 ```powershell
 PS C:\> Get-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-m-test01
 
@@ -78,9 +81,9 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters c2bcffd8-b35d-430b-9759-13af9c18ed72
 ```
 
-Perintah ini menghasilkan kluster analitik streaming menurut nama.
+Perintah ini mendapatkan kluster analitik streaming berdasarkan nama.
 
-### Contoh 4: Dapatkan streaming analitik kluster menurut pipeline
+### Contoh 4: Dapatkan kluster analitik streaming menurut pipeline
 ```powershell
 PS C:\> Get-AzStreamAnalyticsCluster -ResourceGroupName pwshaz-rg-test -Name sac-m-test01 | Get-AzStreamAnalyticsCluster
 
@@ -89,7 +92,7 @@ Location        Name         Type                               Etag
 West Central US sac-m-test01 Microsoft.StreamAnalytics/clusters c2bcffd8-b35d-430b-9759-13af9c18ed72
 ```
 
-Perintah ini membuat kluster analitik streaming menurut saluran.
+Perintah ini mendapatkan kluster analitik streaming berdasarkan pipeline.
 
 ## PARAMETERS
 
@@ -109,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Parameter Identitas Untuk membuat, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
+Parameter Identitas Untuk membangun, lihat bagian CATATAN untuk properti INPUTOBJECT dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.StreamAnalytics.Models.IStreamAnalyticsIdentity
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -195,11 +198,11 @@ INPUTOBJECT <IStreamAnalyticsIdentity>: Parameter Identitas
   - `[Id <String>]`: Jalur identitas sumber daya
   - `[InputName <String>]`: Nama input.
   - `[JobName <String>]`: Nama pekerjaan streaming.
-  - `[Location <String>]`: Kawasan untuk mengambil informasi kuota langganan. Anda dapat mencari tahu wilayah mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
+  - `[Location <String>]`: Kawasan tempat untuk mengambil informasi kuota langganan. Anda dapat mengetahui kawasan mana Azure Stream Analytics didukung di sini: https://azure.microsoft.com/en-us/regions/
   - `[OutputName <String>]`: Nama output.
-  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Namanya peka huruf besar/huruf.
+  - `[ResourceGroupName <String>]`: Nama grup sumber daya. Nama ini tidak peka huruf besar kecil.
   - `[SubscriptionId <String>]`: ID langganan target.
-  - `[TransformationName <String>]`: Nama transformasi tersebut.
+  - `[TransformationName <String>]`: Nama transformasi.
 
 ## RELATED LINKS
 

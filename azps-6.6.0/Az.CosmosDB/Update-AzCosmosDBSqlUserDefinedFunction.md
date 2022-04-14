@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlUserDefinedFunction.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/Update-AzCosmosDBSqlUserDefinedFunction.md
 ms.openlocfilehash: b9e19219ce7952f4926b3c9ed02fa4b188c2a375
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140333861"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141959397"
 ---
 # Update-AzCosmosDBSqlUserDefinedFunction
 
 ## SYNOPSIS
-Memperbarui Fungsi CosmosDB Sql UserDefined. Menjalankan operasi patch sisi klien dengan membaca UserDefinedFunction yang sudah ada.
+Memperbarui CosmosDB Sql UserDefinedFunction. Melakukan operasi patch sisi klien dengan membaca UserDefinedFunction yang sudah ada.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqluserdefinedfunction) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/update-azcosmosdbsqluserdefinedfunction) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-AzCosmosDBSqlUserDefinedFunction [-Name <String>] [-Body <String>]
 ```
 
 ## DESCRIPTION
-Memperbarui Fungsi CosmosDB Sql UserDefined. Menjalankan operasi patch sisi klien dengan membaca UserDefinedFunction yang sudah ada.
+Memperbarui CosmosDB Sql UserDefinedFunction. Melakukan operasi patch sisi klien dengan membaca UserDefinedFunction yang sudah ada.
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Resource : Microsoft.Azure.Commands.CosmosDB.Models.PSSqlUserDefinedPropertiesGe
 
 ## PARAMETERS
 
-### -Nama Akun
+### -AccountName
 Nama akun database Cosmos DB.
 
 ```yaml
@@ -76,8 +76,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Body
-Badan Fungsi yang Ditentukan Pengguna.
+### -Isi
+Isi Fungsi yang Ditentukan Pengguna.
 
 ```yaml
 Type: System.String
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputObject
-Objek Fungsi Sql User Defined
+Objek Fungsi yang Ditentukan Pengguna Sql
 
 ```yaml
 Type: Microsoft.Azure.Commands.CosmosDB.Models.PSSqlUserDefinedFunctionGetResults
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama fungsi yang Ditentukan Pengguna.
+Nama Fungsi yang Ditentukan Pengguna.
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

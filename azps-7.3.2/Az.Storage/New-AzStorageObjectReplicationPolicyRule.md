@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.storage/New-azst
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageObjectReplicationPolicyRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Storage/Storage.Management/help/New-AzStorageObjectReplicationPolicyRule.md
-ms.openlocfilehash: 5fef0f5f35d40ecb2e80a6636c33ba870a3bb3f0
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 389a562358c8d89d3c64a03845846c6d623f17b1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140548342"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142024751"
 ---
 # New-AzStorageObjectReplicationPolicyRule
 
 ## SYNOPSIS
 Membuat aturan kebijakan replikasi objek.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.storage/new-azstorageobjectreplicationpolicyrule) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ New-AzStorageObjectReplicationPolicyRule -SourceContainer <String> -DestinationC
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzStorageObjectReplicationPolicy** membuat aturan kebijakan replikasi objek, yang akan digunakan Set-AzStorageObjectReplicationPolicy cmdlet.
+Cmdlet **Get-AzStorageObjectReplicationPolicy** membuat aturan kebijakan replikasi objek, yang akan digunakan dalam cmdlet Set-AzStorageObjectReplicationPolicy.
 
 ## EXAMPLES
 
-### Contoh 1: Buat aturan kebijakan replikasi objek hanya dengan akun sumber dan tujuan, dan perlihatkan propertinya
+### Contoh 1: Membuat aturan kebijakan replikasi objek hanya dengan akun sumber dan tujuan, dan memperlihatkan propertinya
 ```
 PS C:\> $rule1 = New-AzStorageObjectReplicationPolicyRule -SourceContainer src1 -DestinationContainer dest1 
 
@@ -41,9 +44,9 @@ RuleId SourceContainer DestinationContainer Filters.PrefixMatch Filters.MinCreat
        src1            dest1                {}
 ```
 
-Perintah ini membuat aturan kebijakan replikasi objek dengan hanya akun sumber dan tujuan, dan memperlihatkan propertinya.
+Perintah ini membuat aturan kebijakan replikasi objek dengan akun sumber dan tujuan saja, dan memperlihatkan propertinya.
 
-### Contoh 2: Buat aturan kebijakan replikasi objek dengan semua properti, dan perlihatkan propertinya
+### Contoh 2: Membuat aturan kebijakan replikasi objek dengan semua properti, dan memperlihatkan propertinya
 ```
 PS C:\> $rule2 = New-AzStorageObjectReplicationPolicyRule -SourceContainer src -DestinationContainer dest -MinCreationTime 2019-01-01T16:00:00Z -PrefixMatch a,abc,dd
 
@@ -54,7 +57,7 @@ RuleId SourceContainer DestinationContainer Filters.PrefixMatch Filters.MinCreat
        src             dest                 {a, abc, dd}        2019-01-01T16:00:00Z
 ```
 
-Perintah ini aturan kebijakan replikasi objek dengan semua properti, dan memperlihatkan propertinya.
+Perintah ini memerintahkan aturan kebijakan replikasi objek dengan semua properti, dan memperlihatkan propertinya.
 
 ## PARAMETERS
 
@@ -134,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceContainer
-Nama Wadah Sumber untuk direplikasi dari.
+Nama Wadah Sumber untuk direplikasi.
 
 ```yaml
 Type: System.String
@@ -149,11 +152,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

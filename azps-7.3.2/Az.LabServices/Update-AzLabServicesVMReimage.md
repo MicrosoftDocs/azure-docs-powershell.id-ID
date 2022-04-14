@@ -5,18 +5,21 @@ online version: https://docs.microsoft.com/powershell/module/az.labservices/upda
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesVMReimage.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/LabServices/help/Update-AzLabServicesVMReimage.md
-ms.openlocfilehash: 5fbf6321c9e12c66a5b49fd04c8bfd2a9c495c05
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f82d2e890c2db17b46dead36453065929abe5cb1
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140393634"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141937221"
 ---
 # Update-AzLabServicesVMReimage
 
 ## SYNOPSIS
-Re-image a lab virtual machine.
-Mesin virtual akan dihapus dan dibuat ulang menggunakan snapshot terbaru yang diterbitkan tentang lingkungan referensi lab.
+Gambar ulang mesin virtual lab.
+Mesin virtual akan dihapus dan dibuat ulang menggunakan snapshot terbaru dari lingkungan referensi lab.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.labservices/update-azlabservicesvmreimage) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,7 +29,7 @@ Update-AzLabServicesVMReimage -ResourceId <String> [-SubscriptionId <String>] [-
  [-AsJob] [-NoWait] [<CommonParameters>]
 ```
 
-### Mengganti
+### Reimage
 ```
 Update-AzLabServicesVMReimage -LabName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
@@ -40,12 +43,12 @@ Update-AzLabServicesVMReimage -VM <VirtualMachine> [-SubscriptionId <String>] [-
 ```
 
 ## DESCRIPTION
-Re-image a lab virtual machine.
-Mesin virtual akan dihapus dan dibuat ulang menggunakan snapshot terbaru yang diterbitkan tentang lingkungan referensi lab.
+Gambar ulang mesin virtual lab.
+Mesin virtual akan dihapus dan dibuat ulang menggunakan snapshot terbaru dari lingkungan referensi lab.
 
 ## EXAMPLES
 
-### Contoh 1: Reimage an existing VM.
+### Contoh 1: Reimage VM yang sudah ada.
 ```powershell
 PS C:\> Update-AzLabServicesVMReimage -ResourceGroupName "Group Name" -LabName "Lab Name" -Name 0
 
@@ -54,7 +57,7 @@ Name
 0
 ```
 
-Contoh ini penggantian VM.
+Contoh ini mereimages VM.
 
 ## PARAMETERS
 
@@ -89,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Nama lab yang secara unik mengidentifikasinya di dalam berisi akun lab.
+Nama lab yang mengidentifikasinya secara unik di dalamnya berisi akun lab.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-ID mesin virtual yang mengidentifikasinya secara unik di dalam lab berisi.
+ID mesin virtual yang mengidentifikasinya secara unik di dalam lab yang berisi.
 Digunakan dalam URI sumber daya.
 
 ```yaml
@@ -121,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoWait
-Menjalankan perintah secara asinkron
+Jalankan perintah secara asinkron
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -136,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan true saat perintah berhasil
+Mengembalikan true ketika perintah berhasil
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Nama grup sumber daya.
-Namanya peka huruf besar/huruf.
+Nama ini tidak peka huruf besar kecil.
 
 ```yaml
 Type: System.String
@@ -197,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -VM
-Untuk membuat, lihat bagian CATATAN untuk properti VM dan membuat tabel hash.
+Untuk membangun, lihat bagian CATATAN untuk properti VM dan membuat tabel hash.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.LabServices.Models.Api20211001Preview.VirtualMachine
@@ -212,7 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +231,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -265,12 +268,12 @@ Untuk membuat parameter yang dijelaskan di bawah ini, buat tabel hash yang beris
 
 
 VM <VirtualMachine>: 
-  - `[SystemDataCreatedAt <DateTime?>]`: Timestamp pembuatan sumber daya (UTC).
+  - `[SystemDataCreatedAt <DateTime?>]`: Stempel waktu pembuatan sumber daya (UTC).
   - `[SystemDataCreatedBy <String>]`: Identitas yang membuat sumber daya.
   - `[SystemDataCreatedByType <CreatedByType?>]`: Tipe identitas yang membuat sumber daya.
-  - `[SystemDataLastModifiedAt <DateTime?>]`: Timestamp sumber daya modifikasi terakhir (UTC)
-  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir diubah sumber daya.
-  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir diubah sumber daya.
+  - `[SystemDataLastModifiedAt <DateTime?>]`: Cap waktu modifikasi terakhir sumber daya (UTC)
+  - `[SystemDataLastModifiedBy <String>]`: Identitas yang terakhir mengubah sumber daya.
+  - `[SystemDataLastModifiedByType <CreatedByType?>]`: Tipe identitas yang terakhir mengubah sumber daya.
 
 ## RELATED LINKS
 

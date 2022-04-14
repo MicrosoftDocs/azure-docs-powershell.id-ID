@@ -5,21 +5,24 @@ online version: https://docs.microsoft.com/powershell/module/az.datamigration/Ne
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSelectedDBObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DataMigration/DataMigration/help/New-AzDataMigrationSelectedDBObject.md
-ms.openlocfilehash: 80037b00a6b159ceab117dd8dbd60285dd7d29f1
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 626592145517709a9c50879c1d0f7245729beb12
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140556829"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141939885"
 ---
 # New-AzDataMigrationSelectedDBObject
 
 ## SYNOPSIS
 Membuat objek input database yang berisi informasi tentang database sumber dan target untuk migrasi.
 
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.datamigration/new-azdatamigrationselecteddbobject) untuk informasi terbaru.
+
 ## SYNTAX
 
-### MigrateSqlServerSqlDb (Default)
+### Melakukan migrasiSqlServerSqlDb (Default)
 ```
 New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabaseName <String>
  [-MigrateSqlServerSqlDb] [-MakeSourceDbReadOnly]
@@ -27,7 +30,7 @@ New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabase
  [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
 ```
 
-### MigrateSqlServerSqlDbMi
+### Melakukan migrasiSqlServerSqlDbMi
 ```
 New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabaseName <String>
  [-MigrateSqlServerSqlDbMi] [-BackupFileShare <FileShare>] [-DefaultProfile <IAzureContextContainer>]
@@ -35,7 +38,7 @@ New-AzDataMigrationSelectedDBObject -SourceDatabaseName <String> -TargetDatabase
 ```
 
 ## DESCRIPTION
-Cmdlet New-AzDataMigrationSelectedDB membuat objek info database yang berisi informasi tentang database sumber dan target, serta pemetaan tabel, untuk migrasi. Cmdlet ini dapat digunakan sebagai parameter dengan cmdlet New-AzDataMigrationTask cmdlet.
+Cmdlet New-AzDataMigrationSelectedDB membuat objek info database yang berisi informasi tentang database sumber dan target, serta pemetaan tabel, untuk migrasi. Cmdlet ini dapat digunakan sebagai parameter dengan cmdlet New-AzDataMigrationTask.
 
 ## EXAMPLES
 
@@ -60,7 +63,7 @@ HR   HRTest              Microsoft.Azure.Management.DataMigration.Models.FileSha
 ## PARAMETERS
 
 ### -BackupFileShare
-Berbagi file di mana file database server sumber untuk database ini harus dicadangkan.
+Berbagi file tempat file database server sumber untuk database ini harus dicadangkan.
 Gunakan pengaturan ini untuk menimpa informasi berbagi file untuk setiap database.
 Gunakan nama domain yang sepenuhnya memenuhi syarat untuk server.
 
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -MakeSourceDbReadOnly
-Mengatur Database ke baca saja sebelum migrasi
+Mengatur Database agar dibacakan sebelum migrasi
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -106,8 +109,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MigrateSqlServerSqlDb
-Setel tipe migrasi SQL Server ke SQL DB Migration.
+### -MigrasiSqlServerSqlDb
+Atur tipe migrasi ke SQL Server ke SQL Migrasi DB.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,8 +124,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MigrateSqlServerSqlDbMi
-Atur tipe migrasi SQL Server ke SQL MIGRASI DB MI.
+### -MigrasiSqlServerSqlDbMi
+Atur tipe migrasi ke SQL Server ke SQL Migrasi DB MI.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -TableMap
-pemetaan sumber ke tabel target
+pemetaan tabel sumber ke target
 
 ```yaml
 Type: System.Collections.Generic.IDictionary`2[System.String,System.String]
@@ -182,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

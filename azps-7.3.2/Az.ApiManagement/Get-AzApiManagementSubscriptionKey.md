@@ -6,17 +6,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscriptionKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementSubscriptionKey.md
-ms.openlocfilehash: d6d55968b834c80cd79a626838c6216e86d93b50
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 5e5105d1feca7c97329ed2d534665e2ae6f08189
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140002189"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899379"
 ---
 # Get-AzApiManagementSubscriptionKey
 
 ## SYNOPSIS
 Mendapatkan kunci langganan.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementsubscriptionkey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -26,11 +29,11 @@ Get-AzApiManagementSubscriptionKey -Context <PsApiManagementContext> -Subscripti
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementSubscriptionKey** mendapatkan kunci langganan yang ditentukan.
+Cmdlet **Get-AzApiManagementSubscriptionKey** mendapatkan kunci langganan tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kunci langganan dengan ID yang ditentukan
+### Contoh 1: Dapatkan kunci langganan dengan ID tertentu
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-East-US" -ServiceName "contoso"
 Get-AzApiManagementSubscriptionKey -Context $apimContext -SubscriptionId "0123456789"
@@ -41,7 +44,7 @@ PrimaryKey        : 5e48532634114fe999a6979ce0d63a64
 SecondaryKey      : 0a8efaf85a664aa0a412241015c7c8f6
 ```
 
-Perintah ini akan mendapatkan langganan menurut ID.
+Perintah ini mendapatkan langganan menurut ID.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Menentukan pengidentifikasi langganan.
-Jika ditentukan, cmdlet ini akan menemukan langganan berdasarkan pengidentifikasi.
+Jika ditentukan, cmdlet ini akan menemukan langganan oleh pengidentifikasi.
 
 ```yaml
 Type: System.String
@@ -92,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

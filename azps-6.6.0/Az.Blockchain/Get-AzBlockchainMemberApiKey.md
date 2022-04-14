@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Get-AzBlockchainMemberApiKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Blockchain/help/Get-AzBlockchainMemberApiKey.md
 ms.openlocfilehash: 0a5724032009d11d1ec717a41552f6ecf52d4629
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140336957"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914601"
 ---
 # Get-AzBlockchainMemberApiKey
 
 ## SYNOPSIS
-Mencantumkan kunci API untuk anggota negara bagian tersebut.
+Mencantumkan kunci API untuk anggota blockchain.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.blockchain/get-azblockchainmemberapikey) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.blockchain/get-azblockchainmemberapikey) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,11 +28,11 @@ Get-AzBlockchainMemberApiKey -BlockchainMemberName <String> -ResourceGroupName <
 ```
 
 ## DESCRIPTION
-Mencantumkan kunci API untuk anggota negara bagian tersebut.
+Mencantumkan kunci API untuk anggota blockchain.
 
 ## EXAMPLES
 
-### Contoh 1: List key Api keys
+### Contoh 1: Daftar kunci Api blockchain
 ```powershell
 PS C:\> Get-AzBlockchainMemberApiKey -BlockchainMemberName dolauli001 -ResourceGroupName testgroup
 
@@ -42,12 +42,12 @@ key1    72_8u5HPZJxtZmtvm4Y4W9o-
 key2    eu9kx94TKH506R0i4JhYBmsx
 ```
 
-Perintah ini mencantumkan tombol Api untuk anggota keyboard keyboard.
+Perintah ini mencantumkan kunci Api untuk anggota blockchain.
 
 ## PARAMETERS
 
-### -TemplatMemberName
-Nama anggota Blokir.
+### -BlockchainMemberName
+Nama anggota Blockchain.
 
 ```yaml
 Type: System.String
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya tersebut.
-Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya.
+Anda dapat memperoleh nilai ini dari API azure Resource Manager atau portal.
 
 ```yaml
 Type: System.String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -SubscriptionId
 Mendapatkan Id langganan yang mengidentifikasi langganan Microsoft Azure secara unik.
-ID langganan merupakan bagian dari URI untuk setiap panggilan layanan.
+ID langganan adalah bagian dari URI untuk setiap panggilan layanan.
 
 ```yaml
 Type: System.String[]
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -140,13 +140,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Cmdlets.Cmdlets.Models.Api20180601Preview.IApiKey
+### Microsoft.Azure.PowerShell.Cmdlets.Blockchain.Models.Api20180601Preview.IApiKey
 
 ## CATATAN
 

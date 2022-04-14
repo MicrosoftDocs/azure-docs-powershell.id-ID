@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PowerBIEmbedded/Commands.Management.PowerBIEmbedded/help/Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/PowerBIEmbedded/Commands.Management.PowerBIEmbedded/help/Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys.md
 ms.openlocfilehash: cb8236acfc0fd1d349091593a2510da271820020
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132425117"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141925547"
 ---
 # Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys
 
 ## SYNOPSIS
-Mereset kunci akses tertentu.
+Mengatur ulang kunci akses yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,11 +29,11 @@ Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys** mereset kunci akses tertentu dalam kumpulan ruang Power BI kerja Anda.
+Cmdlet **Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys** mereset kunci akses yang ditentukan dalam kumpulan ruang kerja Power BI Anda.
 
 ## EXAMPLES
 
-### Contoh 1: Reset kunci akses utama
+### Contoh 1: Mereset kunci akses utama
 ```
 PS C:\>Reset-AzureRmPowerBIWorkspaceCollectionAccessKeys -ResourceGroupName "ResourceGroup17" -WorkspaceCollectionName "WCN11" -Key1
 ```
@@ -43,7 +43,7 @@ Perintah ini mereset kunci akses utama untuk kumpulan ruang kerja bernama WCN11 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -Key1
-Mengindikasikan bahwa cmdlet ini mengatur ulang kunci akses utama.
+Menunjukkan bahwa cmdlet ini mengatur ulang kunci akses utama.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Key2
-Mengindikasikan bahwa cmdlet ini mengatur ulang tombol akses sekunder.
+Menunjukkan bahwa cmdlet ini mengatur ulang kunci akses sekunder.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkspaceCollectionName
-Menentukan nama kumpulan ruang Power BI tempat cmdlet ini beroperasi.
+Menentukan nama kumpulan ruang kerja Power BI tempat cmdlet ini beroperasi.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

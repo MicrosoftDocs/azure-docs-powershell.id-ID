@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzVirtualNetworkGatewayConnection.md
 ms.openlocfilehash: 5a1e558cac169de83d56efa951a50c533a846963
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248957"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141908865"
 ---
 # Set-AzVirtualNetworkGatewayConnection
 
@@ -19,7 +19,7 @@ ms.locfileid: "140248957"
 Mengonfigurasi koneksi gateway jaringan virtual.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewayconnection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azvirtualnetworkgatewayconnection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -82,7 +82,7 @@ IngressBytesTransferred : 100386089
 TunnelConnectionStatus  : []
 ```
 
-### Contoh 2: Tambahkan/Perbarui tag ke VirtualNetworkGatewayConnection yang sudah ada
+### Contoh 2: Menambahkan/Memperbarui tag ke VirtualNetworkGatewayConnection yang sudah ada
 ```
 $conn = Get-AzVirtualNetworkGatewayConnection -Name 1 -ResourceGroupName myRG
 Set-AzVirtualNetworkGatewayConnection -VirtualNetworkGatewayConnection $conn -Tag @{ testtagKey="SomeTagKey"; testtagValue="SomeKeyValue" }
@@ -119,7 +119,7 @@ EgressBytesTransferred  : 91334484
 IngressBytesTransferred : 100386089
 TunnelConnectionStatus  : []
 ```
-### Contoh 3: Add/Remove natRules to an existing VirtualNetworkGatewayConnection
+### Contoh 3: Tambahkan/Hapus natRules ke VirtualNetworkGatewayConnection yang sudah ada
 ```
 $conn = Get-AzVirtualNetworkGatewayConnection -Name 1 -ResourceGroupName myRG
 $egressNatrule = get-azVirtualNetworkGatewayNatRule -ResourceGroupName myRG -Name "natRule1" -ParentResourceName "gw1"
@@ -163,14 +163,14 @@ EgressNatRules          : [
                             }
                           ]
 ```
-Perintah pertama mendapatkan koneksi gateway jaringan virtual bernama 1 yang dimiliki oleh grup sumber daya myRG dan menyimpannya ke variabel yang bernama $conn.
-Perintah kedua mendapatkan gateway jaringan virtual natRule yang bernama natRule1 dan menyimpannya ke variabel yang bernama $egressNatrule.
-Perintah ketiga mengatur koneksi gateway jaringan virtual dengan menghapus semua IngressNatRules dan menambahkan egressNatrule ke EgressNatRules.
+Perintah pertama mendapatkan koneksi gateway jaringan virtual bernama 1 milik grup sumber daya myRG dan menyimpannya ke variabel bernama $conn.
+Perintah kedua mendapatkan natRule gateway jaringan virtual bernama natRule1 dan menyimpannya ke variabel bernama $egressNatrule.
+Perintah ketiga mengatur koneksi gateway jaringan virtual dengan semua IngressNatRules yang dihapus dan menambahkan egressNatrule ke dalam EgressNatRules.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectionMode
-Mode Koneksi Gateway Jaringan Virtual.
+Virtual Network Mode Koneksi Gateway.
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -DpdTimeoutInSeconds
-Waktu Deteksi Rekan Mematikan waktu koneksi dalam detik.
+Dead Peer Detection Timeout of the connection in seconds.
 
 ```yaml
 Type: System.Int32
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -EgressNatRule
-Daftar aturan nat keluar yang terkait dengan Koneksi ini.
+Daftar aturan KELUAR NAT yang terkait dengan Koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -260,7 +260,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableBgp
-Apakah akan menggunakan sesi BGP melalui vpn S2S vpn
+Apakah menggunakan sesi BGP melalui terowongan VPN S2S
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -274,8 +274,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi jika Anda ingin menimpa sumber daya
+### -Paksa
+Jangan meminta konfirmasi jika Anda ingin menimpa sumber daya
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -290,7 +290,7 @@ Accept wildcard characters: False
 ```
 
 ### -IngressNatRule
-Daftar aturan NAT yang terkait dengan Koneksi ini.
+Daftar aturan NAT masuk yang terkait dengan Koneksi ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSResourceId[]
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-Hashtable yang mewakili tag sumber daya.
+Sebuah hashtable yang mewakili tag sumber daya.
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 ```
 
 ### -UseLocalAzureIpAddress
-Apakah akan menggunakan PrivateIP untuk koneksi S2S
+Apakah menggunakan PrivateIP untuk koneksi S2S
 
 ```yaml
 Type: System.Nullable`1[System.Boolean]
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkGatewayConnection
-Menentukan objek PSVirtualNetworkGatewayConnection yang digunakan cmdlet ini untuk memodifikasi koneksi gateway jaringan virtual.
+Menentukan objek PSVirtualNetworkGatewayConnection yang digunakan cmdlet ini untuk mengubah koneksi gateway jaringan virtual.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
@@ -396,7 +396,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -411,15 +411,15 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGatewayConnection
 
-### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
-### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+### System.Nullable'1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=netral, PublicKeyToken=b77a5c561934e089]]
 
 ### Microsoft.Azure.Commands.Network.Models.PSIpsecPolicy[]
 

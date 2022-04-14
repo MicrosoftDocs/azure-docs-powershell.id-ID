@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerRuleConfig.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Network/Network/help/Set-AzLoadBalancerRuleConfig.md
 ms.openlocfilehash: e94bf639432d5aa6c7dd29726a8def38925cc92e
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140249335"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141909003"
 ---
 # Set-AzLoadBalancerRuleConfig
 
 ## SYNOPSIS
-Memperbarui konfigurasi aturan untuk penyeimbang muat.
+Memperbarui konfigurasi aturan untuk penyeimbang beban.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.network/set-azloadbalancerruleconfig) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.network/set-azloadbalancerruleconfig) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -42,11 +42,11 @@ Set-AzLoadBalancerRuleConfig -LoadBalancer <PSLoadBalancer> -Name <String> [-Pro
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzLoadBalancerRuleConfig** memperbarui konfigurasi aturan untuk penyeimbang muat.
+Cmdlet **Set-AzLoadBalancerRuleConfig** memperbarui konfigurasi aturan untuk load balancer.
 
 ## EXAMPLES
 
-### Contoh 1: Mengubah konfigurasi aturan keseimbangan muat
+### Contoh 1: Mengubah konfigurasi aturan penyeimbangan beban
 ```powershell
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> $slb | Add-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfiguration $slb.FrontendIpConfigurations[0] -Protocol "Tcp" -FrontendPort 3350 -BackendPort 3350 -EnableFloatingIP
@@ -54,7 +54,7 @@ PS C:\> $slb | Set-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfigura
 PS C:\> $slb | Set-AzLoadBalancer
 ```
 
-### Contoh 2: Mengubah konfigurasi aturan keseimbangan muat agar memiliki dua kolam renang alamat backend
+### Contoh 2: Modifikasi konfigurasi aturan penyeimbangan beban agar memiliki dua kumpulan alamat backend
 ```powershell
 PS C:\>$slb = Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
 PS C:\> $MyBackendPool1 = Get-AzLoadBalancerBackendAddressPool -ResourceGroupName $resourceGroup -LoadBalancerName $MyLoadBalancer -Name $backendPool1Name
@@ -63,15 +63,15 @@ PS C:\> $slb | Set-AzLoadBalancerRuleConfig -Name "NewRule" -FrontendIPConfigura
 PS C:\>$slb | Set-AzLoadBalancer
 ```
 
-Perintah pertama mendapatkan penyeimbang muat bernama MyLoadBalancer, lalu menyimpannya di $slb variabel.
-Perintah kedua menggunakan operator pipeline untuk menyampaikan penyeimbang muat di $slb ke Add-AzLoadBalancerRuleConfig, yang menambahkan aturan bernama NewRule ke dalamnya.
-Perintah ketiga melewati penyeimbang muat ke **Set-AzLoadBalancerRuleConfig**, yang mengatur konfigurasi aturan baru.
-Perhatikan bahwa konfigurasi tidak mengaktifkan alamat IP terapung, yang telah diaktifkan oleh perintah sebelumnya.
+Perintah pertama mendapatkan load balancer bernama MyLoadBalancer, lalu menyimpannya dalam variabel $slb.
+Perintah kedua menggunakan operator pipeline untuk mengirimkan penyeimbang muatan dalam $slb ke Add-AzLoadBalancerRuleConfig, yang menambahkan aturan bernama NewRule ke dalamnya.
+Perintah ketiga melewati penyeimbang muatan ke **Set-AzLoadBalancerRuleConfig**, yang mengatur konfigurasi aturan baru.
+Perhatikan bahwa konfigurasi tidak mengaktifkan alamat IP mengambang, yang telah diaktifkan oleh perintah sebelumnya.
 
 ## PARAMETERS
 
 ### -BackendAddressPool
-Menentukan objek **BackendAddressPool** untuk dikaitkan dengan aturan penyeimbang muat.
+Menentukan objek **BackendAddressPool** untuk dikaitkan dengan aturan load balancer.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool[]
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendAddressPoolId
-Menentukan ID objek **BackendAddressPool** untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+Menentukan ID objek **BackendAddressPool** untuk dikaitkan dengan konfigurasi aturan load balancer.
 
 ```yaml
 Type: System.String[]
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -BackendPort
-Menentukan port backend untuk lalu lintas yang sesuai dengan konfigurasi aturan ini.
+Menentukan port backend untuk lalu lintas yang cocok dengan konfigurasi aturan ini.
 
 ```yaml
 Type: System.Int32
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisableOutboundSNAT
-Mengonfigurasi SNAT untuk VM dalam backend pool untuk menggunakan alamat publicIP yang ditentukan di frontend aturan keseimbangan muat.
+Mengonfigurasi SNAT untuk VM dalam kumpulan backend untuk menggunakan alamat publicIP yang ditentukan di bagian depan aturan keseimbangan beban.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableFloatingIP
-Mengindikasikan bahwa cmdlet ini mengaktifkan alamat IP mengambang untuk konfigurasi aturan.
+Menunjukkan bahwa cmdlet ini memungkinkan alamat IP mengambang untuk konfigurasi aturan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableTcpReset
-Menerima Reset TCP dua arah pada waktu habis habis arus TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan saat protokol diatur ke TCP.
+Terima Pengaturan Ulang TCP dua arah pada batas waktu diam aliran TCP atau pemutusan koneksi yang tidak diharapkan. Elemen ini hanya digunakan ketika protokol diatur ke TCP.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfiguration
-Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+Menentukan daftar alamat IP ujung-depan untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendIpConfigurationId
-Menentukan ID untuk konfigurasi alamat IP ujung-depan.
+Menentukan ID untuk konfigurasi alamat IP ujung depan.
 
 ```yaml
 Type: System.String
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -FrontendPort
-Menentukan port ujung-depan yang sesuai dengan konfigurasi aturan penyeimbang muat.
+Menentukan port ujung depan yang cocok dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: System.Int32
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -IdleTimeoutInMinutes
-Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang muat.
+Menentukan durasi waktu, dalam menit, di mana status percakapan dipertahankan dalam penyeimbang beban.
 
 ```yaml
 Type: System.Int32
@@ -236,8 +236,8 @@ Accept wildcard characters: False
 ```
 
 ### -LoadBalancer
-Menentukan penyeimbang muat.
-Cmdlet ini memperbarui konfigurasi aturan untuk penyeimbang muat yang ditentukan parameter ini.
+Menentukan penyeimbang beban.
+Cmdlet ini memperbarui konfigurasi aturan untuk penyeimbang muatan yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -LoadDistribution
-Menentukan distribusi muat.
+Menentukan distribusi beban.
 Nilai yang dapat diterima untuk parameter ini adalah: SourceIP dan SourceIPProtocol.
 
 ```yaml
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama penyeimbang muat.
+Menentukan nama penyeimbang muatan.
 
 ```yaml
 Type: System.String
@@ -282,8 +282,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ser
-Menentukan standar untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+### -Probe
+Menentukan probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Network.Models.PSProbe
@@ -297,8 +297,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -siid
-Menentukan ID asosiasi untuk dikaitkan dengan konfigurasi aturan penyeimbang muat.
+### -ProbeId
+Menentukan ID probe untuk dikaitkan dengan konfigurasi aturan penyeimbang muatan.
 
 ```yaml
 Type: System.String
@@ -312,8 +312,8 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -Protocol
-Menentukan protokol yang sesuai dengan aturan penyeimbang muat.
+### -Protokol
+Menentukan protokol yang cocok dengan aturan penyeimbang muatan.
 Nilai yang dapat diterima untuk parameter ini adalah: Tcp atau Udp.
 
 ```yaml
@@ -329,7 +329,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

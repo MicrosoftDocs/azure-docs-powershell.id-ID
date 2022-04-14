@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiVersionSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementApiVersionSet.md
 ms.openlocfilehash: 09be22ba2583ea6214fa610546fdd13c034331ea
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140289265"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141915663"
 ---
 # Get-AzApiManagementApiVersionSet
 
@@ -18,7 +18,7 @@ ms.locfileid: "140289265"
 Dapatkan detail Kumpulan Versi API
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapiversionset) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementapiversionset) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -35,13 +35,13 @@ Get-AzApiManagementApiVersionSet -Context <PsApiManagementContext> [-ApiVersionS
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzApiManagementApiVersionSet** mendapatkan detail Kumpulan Versi API yang dikonfigurasi dalam konteks Manajemen API.
+Cmdlet **Get-AzApiManagementApiVersionSet** mendapatkan detail Kumpulan Versi API yang dikonfigurasi dalam konteks API Management.
 
 ## EXAMPLES
 
 ### Contoh 1
 
-### Contoh 2: Mendapatkan semua kumpulan versi API
+### Contoh 2: Dapatkan semua Set Versi API
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementApiVersionSet -Context $ApiMgmtContext
@@ -80,7 +80,7 @@ ServiceName       : contoso
 
 Perintah ini mendapatkan semua kumpulan Versi API untuk konteks yang ditentukan.
 
-### Contoh 3: Mendapatkan Kumpulan Versi API berdasarkan ID
+### Contoh 3: Dapatkan VERSI API yang Diatur oleh ID
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementApiVersionSet -Context $ApiMgmtContext -ApiVersionSetId $ApiVersionSetId
@@ -96,13 +96,13 @@ ResourceGroupName : Api-Default-WestUS
 ServiceName       : contoso
 ```
 
-Perintah ini akan mendapatkan Kumpulan Versi API dengan ID yang ditentukan.
+Perintah ini mendapatkan SET Versi API dengan ID yang ditentukan.
 
 ## PARAMETERS
 
 ### -ApiVersionSetId
-Pengidentifikasi API untuk mencarinya.
-Jika ditentukan akan mencoba mendapatkan API tersebut dengan Id.
+PENGIDENTIFIKASI API untuk dicari.
+Jika ditentukan akan mencoba mendapatkan API dengan Id.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Arm Resource Identifier of the ApiVersionSet. Jika ditentukan akan mencoba menemukan apiVersionSet dengan pengidentifikasi. Parameter ini diperlukan.
+Arm Resource Identifier dari ApiVersionSet. Jika ditentukan akan mencoba menemukan apiVersionSet oleh pengidentifikasi. Parameter ini diperlukan.
 
 ```yaml
 Type: System.String
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

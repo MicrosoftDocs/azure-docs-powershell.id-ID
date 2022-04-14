@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.EdgeOrder/new-Az
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderContactDetailsObject.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/EdgeOrder/help/New-AzEdgeOrderContactDetailsObject.md
-ms.openlocfilehash: 48b14b12c021ce035de9a115ce659ac7d27cee86
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: f8b200165a325f68a5b143038e7fd3147001fe87
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140394306"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141939111"
 ---
 # New-AzEdgeOrderContactDetailsObject
 
 ## SYNOPSIS
 Membuat objek dalam memori untuk ContactDetails.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.edgeorder/new-azedgeordercontactdetailsobject) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -60,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailList
-Daftar Id-email untuk diberi tahu tentang kemajuan pekerjaan.
+Daftar Email-id yang akan diberi tahu tentang kemajuan pekerjaan.
 
 ```yaml
 Type: System.String[]
@@ -74,8 +77,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Seluler
-Nomor ponsel orang kontak.
+### -Mobile
+Nomor ponsel orang yang dihubungi.
 
 ```yaml
 Type: System.String
@@ -90,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Telepon
-Telepon nomor kontak tersebut.
+Telepon nomor kontak.
 
 ```yaml
 Type: System.String
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -PhoneExtension
-Telepon nomor ekstensi orang kontak.
+Telepon nomor ekstensi kontak.
 
 ```yaml
 Type: System.String
@@ -120,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

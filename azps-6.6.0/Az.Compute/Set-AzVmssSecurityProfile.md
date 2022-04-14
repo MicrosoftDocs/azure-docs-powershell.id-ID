@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssSecurityProfile.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Compute/Compute/help/Set-AzVmssSecurityProfile.md
 ms.openlocfilehash: 930cf28f780445eaacf180ec6556bbf1c9e97203
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140142441"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142053983"
 ---
 # Set-AzVmssSecurityProfile
 
 ## SYNOPSIS
-Cmdlet ini memungkinkan pengguna untuk mengatur enum SecurityType untuk kumpulan skala Komputer Virtual.
+Cmdlet ini memungkinkan pengguna untuk mengatur enum SecurityType untuk kumpulan skala Virtual Machines.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.compute/set-azvmsssecurityprofile) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.compute/set-azvmsssecurityprofile) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -38,8 +38,8 @@ PS C:\> $VMSS = Get-AzVmss -ResourceGroupName "ResourceGroup11" -VMScaleSetName 
 PS C:\> $VMSS = Set-AzVmssSecurityProfile -VirtualMachineScaleSet $VMSS -SecurityType "TrustedLaunch"
 ```
 
-Perintah pertama mendapatkan skala mesin virtual yang diatur bernama ContosoVM07 dengan **menggunakan Get-AzVms.**
-Perintah menyimpannya di $VMSS variabel.
+Perintah pertama mendapatkan kumpulan skala mesin virtual bernama ContosoVM07 dengan menggunakan **Get-AzVmss**.
+Perintah menyimpannya dalam variabel $VMSS.
 Perintah kedua mengatur enum SecurityType menjadi "TrustedLaunch"
 
 ## PARAMETERS
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityType
-Enum yang mewakili tipe keamanan (sebagai: Peluncuran Tepercaya)
+Enum yang mewakili tipe keamanan (misalnya: Peluncuran Tepercaya)
 
 ```yaml
 Type: SecurityTypes
@@ -75,7 +75,7 @@ Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
-### -VirtualMachinescaleSet
+### -VirtualMachineScaleSet
 Profil kumpulan skala mesin virtual.
 
 ```yaml
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

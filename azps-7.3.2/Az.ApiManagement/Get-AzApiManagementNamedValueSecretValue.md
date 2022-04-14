@@ -5,17 +5,20 @@ online version: https://docs.microsoft.com/powershell/module/az.apimanagement/ge
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValueSecretValue.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/ApiManagement/ApiManagement/help/Get-AzApiManagementNamedValueSecretValue.md
-ms.openlocfilehash: de8cd50a914aa48be599fbe173c57d9b067f3304
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: 02e754f97ed0eef5e465176e2ca45c10d2228815
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140189583"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141899343"
 ---
 # Get-AzApiManagementNamedValueSecretValue
 
 ## SYNOPSIS
-Mendapatkan nilai rahasia Dari Nilai Bernama tertentu.
+Mendapatkan nilai rahasia dari Nilai Bernama tertentu.
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.apimanagement/get-azapimanagementnamedvaluesecretvalue) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -32,17 +35,17 @@ Get-AzApiManagementNamedValueSecretValue -Context <PsApiManagementContext> -Name
 ```
 
 ## DESCRIPTION
-Mendapatkan nilai rahasia Dari Nilai Bernama tertentu.
+Mendapatkan nilai rahasia dari Nilai Bernama tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan nilai bernama berdasarkan nama
+### Contoh 1: Dapatkan nilai bernama menurut nama
 ```powershell
 $apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 Get-AzApiManagementNamedValueSecretValue -Context $apimContext -NamedValueId "sql-connectionstring"
 ```
 
-Perintah ini mendapatkan detail nilai bernama dengan nama nilai bernama.
+Perintah ini mendapatkan detail nilai bernama yang diberi nama nilai bernama.
 
 ## PARAMETERS
 
@@ -77,7 +80,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NamedValueId
+### -NameValueId
 Pengidentifikasi nilai bernama.
 Parameter ini diperlukan.
 
@@ -94,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

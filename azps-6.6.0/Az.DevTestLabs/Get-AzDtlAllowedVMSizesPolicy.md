@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAllowedVMSizesPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/DevTestLabs/DevTestLabs/help/Get-AzDtlAllowedVMSizesPolicy.md
 ms.openlocfilehash: 12abb8b8ac533a133e0b223d2329d17a858310be
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140255689"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141957363"
 ---
 # Get-AzDtlAllowedVMSizesPolicy
 
 ## SYNOPSIS
-Dapatkan kebijakan ukuran mesin virtual yang diperbolehkan dari sebuah lab di DevTest Labs.
+Dapatkan kebijakan ukuran mesin virtual yang diperbolehkan dari laboratorium di DevTest Labs.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.devtestlabs/get-azdtlallowedvmsizespolicy) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.devtestlabs/get-azdtlallowedvmsizespolicy) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-AzDtlAllowedVMSizesPolicy [-LabName] <String> [-ResourceGroupName] <String>
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzDtlAllowedVMSizesPolicy** mendapatkan kebijakan ukuran mesin virtual yang diperbolehkan, yang memungkinkan Anda menentukan daftar ukuran mesin virtual yang diperbolehkan di lab.
+Cmdlet **Get-AzDtlAllowedVMSizesPolicy** mendapatkan kebijakan ukuran mesin virtual yang diperbolehkan, yang memungkinkan Anda menentukan daftar ukuran mesin virtual yang diperbolehkan di laboratorium.
 Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan daftar semua ukuran mesin virtual yang diperbolehkan yang telah Anda tetapkan dalam kebijakan yang ditentukan.
 
 ## EXAMPLES
@@ -37,7 +37,7 @@ Cmdlet mengembalikan status kebijakan yang diaktifkan atau dinonaktifkan dan daf
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Menentukan nama lab tempat cmdlet ini mendapatkan kebijakan ukuran mesin virtual.
+Menentukan nama lab di mana cmdlet ini mendapatkan kebijakan ukuran mesin virtual.
 
 ```yaml
 Type: System.String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

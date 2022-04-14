@@ -4,11 +4,11 @@ ms.assetid: BE661AC7-BA39-4D6A-8083-16CE9327DC08
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: c9a4389c78d909be37e2755953f9a2ba2622dabc
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421587"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141922083"
 ---
 # Get-AzureIPForwarding
 
@@ -36,19 +36,19 @@ Cmdlet **Get-AzureIPForwarding** mendapatkan status penerusan IP.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan status penerusan IP untuk mesin virtual
+### Contoh 1: Dapatkan status penerusan IP untuk mesin virtual
 ```
 PS C:\> Get-AzureVM -ServiceName "ContosoService" -Name "ContosoVM06" | Get-AzureIPForwarding
 Disabled
 ```
 
 Perintah ini mendapatkan mesin virtual bernama ContosoVM06 untuk layanan bernama ContosoService, dan meneruskan objek mesin virtual tersebut ke cmdlet saat ini.
-Cmdlet saat ini mendapatkan status penerusan IP untuk komputer virtual tersebut.
+Cmdlet saat ini mendapatkan status penerusan IP untuk mesin virtual tersebut.
 
 ## PARAMETERS
 
 ### -NetworkInterfaceName
-Menentukan nama adaptor jaringan di mana cmdlet ini mendapatkan status penerusan IP.
+Menentukan nama adapter jaringan di mana cmdlet ini mendapatkan status penerusan IP.
 
 ```yaml
 Type: String
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini. Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca. Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleName
-Menentukan nama peran PaaS di mana cmdlet ini mendapatkan status penerusan IP.
+Menentukan nama peran PaaS tempat cmdlet ini mendapatkan status penerusan IP.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -ServiceName
 Menentukan nama layanan awan.
-Peran PaaS dimiliki oleh layanan yang ditentukan parameter ini.
+Peran PaaS termasuk dalam layanan yang ditentukan parameter ini.
 
 ```yaml
 Type: String
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -Slot
 Menentukan slot PaaS.
-Peran PaaS yang akan mendapatkan status penerusan cmdlet ini memiliki slot yang ditentukan parameter ini.
-Nilai valid adalah: 
+Peran PaaS di mana cmdlet ini mendapatkan status penerusan memiliki slot yang ditentukan parameter ini.
+Nilai yang valid adalah: 
 
 - Produksi
-- Perekanan 
+- Pementasan 
 
 Nilai defaultnya adalah Produksi.
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

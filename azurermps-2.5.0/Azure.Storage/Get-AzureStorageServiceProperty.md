@@ -4,16 +4,16 @@ Module Name: Azure.Storage
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/get-azurestorageserviceproperty
 schema: 2.0.0
 ms.openlocfilehash: adb671b81dd26c1fa66ea98f98dddf8fffbb5356
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140866844"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141930651"
 ---
 # Get-AzureStorageServiceProperty
 
 ## SYNOPSIS
-Mendapatkan properti untuk Azure Storage baru.
+Mendapatkan properti untuk layanan Azure Storage.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -25,11 +25,11 @@ Get-AzureStorageServiceProperty [-ServiceType] <StorageServiceType> [-Context <I
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureStorageServiceProperty** mendapatkan properti untuk Azure Storage services.
+Cmdlet **Get-AzureStorageServiceProperty** mendapatkan properti untuk layanan Azure Storage.
 
 ## EXAMPLES
 
-### Contoh 1: Get Azure Storage services property of the Blob service
+### Contoh 1: Dapatkan properti layanan Azure Storage dari layanan Blob
 ```
 C:\PS>Get-AzureStorageServiceProperty -ServiceType Blob
 
@@ -85,11 +85,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mendapatkan properti pembuatan log untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File
 
 ```yaml
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

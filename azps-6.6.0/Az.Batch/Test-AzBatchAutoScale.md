@@ -7,19 +7,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Test-AzBatchAutoScale.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Batch/Batch/help/Test-AzBatchAutoScale.md
 ms.openlocfilehash: 61d7a08156e6514635005f1a64fa4b5a927c3134
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140258641"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141914799"
 ---
 # Test-AzBatchAutoScale
 
 ## SYNOPSIS
-Mendapatkan hasil rumus penskalaan otomatis pada sebuah kolam renang.
+Mendapatkan hasil rumus penskalaan otomatis pada kumpulan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.batch/test-azbatchautoscale) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.batch/test-azbatchautoscale) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -29,11 +29,11 @@ Test-AzBatchAutoScale [-Id] <String> [-AutoScaleFormula] <String> -BatchContext 
 ```
 
 ## DESCRIPTION
-Cmdlet **Test-AzBatchAutoScale** mendapatkan hasil dari rumus penskalaan otomatis pada pool yang ditentukan.
+Cmdlet **Test-AzBatchAutoScale** mendapatkan hasil rumus penskalaan otomatis pada kumpulan yang ditentukan.
 
 ## EXAMPLES
 
-### Contoh 1: Mengevaluasi rumus skala otomatis pada satu kolam
+### Contoh 1: Mengevaluasi rumus skala otomatis pada kumpulan
 ```
 PS C:\>$Formula = 'totalNodes=($CPUPercent.GetSamplePercent(TimeInterval_Minute*0,TimeInterval_Minute*10)<0.7?5:(min($CPUPercent.GetSample(TimeInterval_Minute*0, TimeInterval_Minute*10))>0.8?($CurrentDedicated*1.1):$CurrentDedicated));$TargetDedicated=min(100,totalNodes);';
 PS C:\> $Evaluation = Test-AzBatchAutoScale -Id "ContosoPool" -AutoScaleFormula $Formula -BatchContext $Context
@@ -41,14 +41,14 @@ PS C:\> $Evaluation.AutoScaleRun.Results
 $TargetDedicated=5;$NodeDeallocationOption=requeue;totalNodes=5
 ```
 
-Perintah pertama menyimpan rumus dalam $Formula variabel untuk digunakan dalam contoh.
-Perintah kedua mengevaluasi rumus skala otomatis pada kolam yang memiliki ID ContosoPool.
-Perintah final menampilkan Hasil **dengan** menggunakan sintaks titik standar.
+Perintah pertama menyimpan rumus dalam variabel $Formula untuk digunakan dalam contoh.
+Perintah kedua mengevaluasi rumus skala otomatis pada kumpulan yang memiliki ID ContosoPool.
+Perintah akhir menampilkan **Hasil** dengan menggunakan sintaks titik standar.
 
 ## PARAMETERS
 
 ### -AutoScaleFormula
-Menentukan rumus untuk jumlah node perhitungan yang diinginkan dalam pool.
+Menentukan rumus untuk jumlah node komputasi yang diinginkan dalam kumpulan.
 
 ```yaml
 Type: System.String
@@ -63,8 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -BatchContext
-Menentukan contoh **BatchAccountContext** yang digunakan cmdlet untuk berinteraksi dengan layanan Batch.
-Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol aksesnya diisi. Saat menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
+Menentukan instans **BatchAccountContext** yang digunakan cmdlet ini untuk berinteraksi dengan layanan Batch.
+Jika Anda menggunakan cmdlet Get-AzBatchAccount untuk mendapatkan BatchAccountContext, autentikasi Azure Active Directory akan digunakan saat berinteraksi dengan layanan Batch. Untuk menggunakan autentikasi kunci bersama, gunakan cmdlet Get-AzBatchAccountKey untuk mendapatkan objek BatchAccountContext dengan tombol akses yang diisi. Ketika menggunakan autentikasi kunci bersama, kunci akses utama digunakan secara default. Untuk mengubah kunci yang akan digunakan, atur properti BatchAccountContext.KeyInUse.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Batch.BatchAccountContext
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Menentukan ID objek dari pool yang akan digunakan untuk menguji penskalaan otomatis.
+Menentukan ID objek kumpulan untuk menguji penskalaan otomatis.
 
 ```yaml
 Type: System.String
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -131,4 +131,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzBatchAccountKey](./Get-AzBatchAccountKey.md)
 
-[Cmdlet Kumpulan Azure](/powershell/module/Az.Batch/)
+[Cmdlet Azure Batch](/powershell/module/Az.Batch/)
