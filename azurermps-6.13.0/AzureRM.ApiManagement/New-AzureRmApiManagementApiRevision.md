@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementApiRevision.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/New-AzureRmApiManagementApiRevision.md
 ms.openlocfilehash: 2ee3954569067000d445ecd7dab034db41734829
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427641"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846249"
 ---
 # New-AzureRmApiManagementApiRevision
 
 ## SYNOPSIS
-Membuat Revisi baru API yang Ada.
+Membuat Revisi BARU API yang Sudah Ada.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ New-AzureRmApiManagementApiRevision -Context <PsApiManagementContext> -ApiId <St
 
 ## DESCRIPTION
 
-Cmdlet **New-AzureRmApiManagementApiRevision** membuat Revisi API untuk API yang sudah ada dalam konteks Manajemen API.
+Cmdlet **New-AzureRmApiManagementApiRevision** membuat Revisi API untuk API yang sudah ada dalam konteks API Management.
 
 ## EXAMPLES
 
@@ -58,7 +58,7 @@ ResourceGroupName             : Api-Default-WestUS
 ServiceName                   : contoso
 ```
 
-Perintah ini akan membuat `2` Revisi `echo-api` API API.
+Perintah ini membuat Revisi `2` `echo-api` API API.
 
 ## PARAMETERS
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -173,6 +173,6 @@ Parameter: Konteks (ByValue)
 
 [Get-AzureRmApiManagementApi](./Get-AzureRmApiManagementApi.md)
 
-[Remove-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
+[Hapus-AzureRmApiManagementApi](./Remove-AzureRmApiManagementApi.md)
 
 [Set-AzureRmApiManagementApi](./Set-AzureRmApiManagementApi.md)

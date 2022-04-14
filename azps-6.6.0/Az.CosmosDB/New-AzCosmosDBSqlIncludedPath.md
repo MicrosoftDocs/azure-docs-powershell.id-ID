@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIncludedPath.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/CosmosDB/CosmosDB/help/New-AzCosmosDBSqlIncludedPath.md
 ms.openlocfilehash: fbf542521070377e2e403f14bdd2d621064bc8ed
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140311009"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141913686"
 ---
 # New-AzCosmosDBSqlIncludedPath
 
 ## SYNOPSIS
-Membuat objek baru dengan tipe PSIncludedPath. Data ini bisa disampaikan sebagai nilai parameter untuk Set-AzCosmosDBSqlContainer.
+Membuat objek baru dari tipe PSIncludedPath. Ini dapat dilewatkan sebagai nilai parameter untuk Set-AzCosmosDBSqlContainer.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlincludedpath) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.cosmosdb/new-azcosmosdbsqlincludedpath) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-AzCosmosDBSqlIncludedPath [-Path <String>] [-Index <PSIndexes[]>]
 ```
 
 ## DESCRIPTION
-Objek yang terkait dengan IncludedPath sql API.
+Objek yang terkait dengan IncludedPath Sql API.
 
 ## EXAMPLES
 
@@ -76,9 +76,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Jalur penerapan perilaku pengindeksan.
-Jalur indeks biasanya dimulai dengan akar dan diakhiri dengan wildcard (/jalur/*)
+### -Jalur
+Jalur di mana perilaku pengindeksan diterapkan.
+Jalur indeks biasanya dimulai dengan root dan diakhiri dengan wildcard (/path/*)
 
 ```yaml
 Type: System.String
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

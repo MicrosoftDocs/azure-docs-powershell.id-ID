@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Start-AzureRmSqlDatabaseExecuteIndexRecommendation.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Start-AzureRmSqlDatabaseExecuteIndexRecommendation.md
 ms.openlocfilehash: c61f1bd988410b696eddd12162958333022dd892
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132419523"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059221"
 ---
 # Start-AzureRmSqlDatabaseExecuteIndexRecommendation
 
@@ -29,11 +29,11 @@ Start-AzureRmSqlDatabaseExecuteIndexRecommendation -ServerName <String> -Databas
 ```
 
 ## DESCRIPTION
-Cmdlet **Start-AzureRmSqlDatabaseExecuteIndexRecommendation** memulai alur kerja yang menjalankan operasi indeks yang direkomendasikan untuk suatu Azure SQL Database.
+Cmdlet **Start-AzureRmSqlDatabaseExecuteIndexRecommendation** memulai alur kerja yang menjalankan operasi indeks yang direkomendasikan untuk Azure SQL Database.
 
 ## EXAMPLES
 
-### Contoh 1: Jalankan rekomendasi indeks
+### Contoh 1: Menjalankan rekomendasi indeks
 ```
 PS C:\>Start-AzureRmSqlDatabaseExecuteIndexRecommendation -ResourceGroup "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01" -IndexRecommendationName "INDEX_NAME"
 ```
@@ -43,7 +43,7 @@ Perintah ini menjalankan rekomendasi indeks.
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini memulai alur kerja.
+Menentukan nama database tempat cmdlet ini memulai alur kerja.
 
 ```yaml
 Type: System.String
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -IndexRecommendationName
-Menentukan nama rekomendasi indeks bahwa cmdlet ini dijalankan.
+Menentukan nama rekomendasi indeks yang dijalankan cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan server yang menginangi database di mana cmdlet ini memulai alur kerja.
+Menentukan server yang menghosting database tempat cmdlet ini memulai alur kerja.
 
 ```yaml
 Type: System.String
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -136,6 +136,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Stop-AzureRmSqlDatabaseExecuteIndexRecommendation](./Stop-AzureRmSqlDatabaseExecuteIndexRecommendation.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi SQL Database](https://docs.microsoft.com/azure/sql-database/)
 
 

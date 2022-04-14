@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/remove-azurermdeploymentmanagerservicetopology
 schema: 2.0.0
 ms.openlocfilehash: be95f5fffe4483c74d8b1438819cf084eaa0693b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422023"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782762"
 ---
 # Remove-AzureRmDeploymentManagerServiceTopology
 
@@ -47,21 +47,21 @@ Tentukan topologi layanan menurut namanya dan nama grup sumber daya. Alternatifn
 PS C:\> Remove-AzureRmDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology
 ```
 
-Perintah ini menghapus topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini menghapus topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
 
 ### Contoh 2: Hapus topologi layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Remove-AzureRmDeploymentManagerServiceTopology -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology"
 ```
 
-Perintah ini menghapus topologi layanan yang bernama ContosoServiceTopology di ContosoResourceGroup.
+Perintah ini menghapus topologi layanan bernama ContosoServiceTopology dalam ContosoResourceGroup.
 
 ### Contoh 3: Hapus topologi layanan menggunakan objek topologi layanan.
 ```powershell
 PS C:\> Remove-AzureRmDeploymentManagerService -ServiceTopology $serviceTopologyObject
 ```
 
-Perintah ini akan menghapus topologi layanan yang namanya dan ResourceGroup sesuai dengan properti Nama dan ResourceGroupName $serviceTopologyObject akan dihapus.
+Perintah ini menghapus topologi layanan yang nama dan ResourceGroupnya masing-masing cocok dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
 
 ## PARAMETERS
 
@@ -80,8 +80,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Jangan minta konfirmasi.
+### -Paksa
+Jangan meminta konfirmasi.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-{{fill passThru Description}}
+{{Fill PassThru Description}}
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

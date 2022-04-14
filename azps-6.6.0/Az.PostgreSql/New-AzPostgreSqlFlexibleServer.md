@@ -6,11 +6,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServer.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/PostgreSql/help/New-AzPostgreSqlFlexibleServer.md
 ms.openlocfilehash: e287ad15639d7543ec83203520cfc10485643c9f
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140248219"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141908229"
 ---
 # New-AzPostgreSqlFlexibleServer
 
@@ -18,7 +18,7 @@ ms.locfileid: "140248219"
 Membuat server baru.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlflexibleserver) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.postgresql/new-azpostgresqlflexibleserver) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -67,12 +67,12 @@ Name                Location  SkuName         SkuTier        AdministratorLogin 
 postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 ```
 
-Cmdlet ini membuat server fleksibel PostgreSql dengan nilai parameter default dan menyediakan server dengan akses publik yang diaktifkan.
-Nilai default lokasi adalah US Timur 2, Sku adalah Standard_D2s_v3, Sku tier adalah GeneralPurpose, dan ukuran penyimpanan adalah 128GiB.
+Cmdlet ini membuat server fleksibel PostgreSql dengan nilai parameter default dan menyediakan server dengan akses publik diaktifkan.
+Nilai default lokasi adalah East US 2, Sku Standard_D2s_v3, Sku tier is GeneralPurpose, and storage size is 128GiB.
 
 
-Jika Anda ingin menemukan kata sandi yang dibuat secara otomatis untuk server Anda, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
-(Misalnya $server. SecuredPassword | ConvertFrom-SecureString -AsPlainText)
+Jika Anda ingin menemukan kata sandi yang dihasilkan otomatis untuk server Anda, gunakan ConvertFrom-SecureString untuk mengonversi properti 'SecuredPassword' menjadi teks biasa.
+(Misalnya, $server. SecuredPassword | ConvertFrom-SecureString -AsPlainText)
 
 ### Contoh 3: Membuat server fleksibel PostgreSql baru dengan Subnet yang sudah ada
 ```powershell
@@ -94,10 +94,10 @@ postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           
 
 Cmdlet ini membuat server fleksibel PostgreSql dengan Id Subnet yang sudah ada yang disediakan oleh pengguna.
 Subnet akan didelegasikan ke server fleksibel PostgreSQL jika belum didelegasikan.
-Anda tidak dapat menggunakan subnet yang didelegasikan ke layanan berbeda.
-subnet bisa berada dalam grup sumber daya berbeda.
+Anda tidak dapat menggunakan subnet yang didelegasikan ke layanan yang berbeda.
+subnet bisa berada dalam grup sumber daya yang berbeda.
 
-### Contoh 4: Membuat server fleksibel PostgreSql baru dengan nama jaringan virtual dan subnet
+### Contoh 4: Membuat server fleksibel PostgreSql baru dengan jaringan virtual dan nama subnet
 ```powershell
 PS C:\> New-AzPostgreSqlFlexibleServer -Name postgresql-test -ResourceGroupName PowershellPostgreSqlTest -Vnet postgresql-vnet -Subnet postgresql-subnet -VnetPrefix 10.0.0.0/16 -SubnetPrefix 10.0.0.0/24 -PrivateDnsZone /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/PowershellPostgreSqlTest/providers/Microsoft.Network/privateDnsZones/postgresql-test.private.postgres.database.azure.com
 
@@ -141,7 +141,7 @@ postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           
 ```
 
 Cmdlet ini membuat server fleksibel PostgreSql dengan id vnet atau nama vnet yang disediakan oleh pengguna.
-Jika jaringan virtual tidak ada, cmdlet akan membuat.
+Jika jaringan virtual tidak ada, cmdlet akan membuatnya.
 
 ### Contoh 6: Membuat server fleksibel PostgreSql baru dengan akses publik ke semua IP
 ```powershell
@@ -158,7 +158,7 @@ Name                Location  SkuName         SkuTier        AdministratorLogin 
 postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           128
 ```
 
-Cmdlet ini membuat server fleksibel PostgreSql terbuka ke semua alamat IP.
+Cmdlet ini membuat server fleksibel PostgreSql terbuka untuk semua alamat IP.
 
 ### Contoh 7: Membuat server fleksibel PostgreSql baru dengan firewall
 ```powershell
@@ -176,14 +176,14 @@ postgresql-test     East US   Standard_D2s_v3 GeneralPurpose daeunyim           
 
 ```
 
-Cmdlet ini membuat server fleksibel PostgreSql terbuka ke alamat IP tertentu.
+Cmdlet ini membuat server fleksibel PostgreSql terbuka untuk alamat IP tertentu.
 
 ## PARAMETERS
 
 ### -AdministratorLoginPassword
 Kata sandi administrator.
 Minimal 8 karakter dan maksimal 128 karakter.
-Kata sandi harus berisi karakter dari tiga kategori berikut: huruf besar Bahasa Inggris, huruf kecil Bahasa Inggris, angka, dan karakter non-alfanumerik.
+Kata sandi harus berisi karakter dari tiga kategori berikut: Huruf besar bahasa Inggris, huruf kecil bahasa Inggris, angka, dan karakter non-alfanumerik.
 
 ```yaml
 Type: System.Security.SecureString
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -AdministratorUserName
 Nama pengguna administrator untuk server.
-Setelah ditetapkan, pengaturan tidak dapat diubah.
+Setelah diatur, tidak dapat diubah.
 
 ```yaml
 Type: System.String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -AsJob
-Menjalankan perintah sebagai pekerjaan.
+Jalankan perintah sebagai pekerjaan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -229,8 +229,8 @@ Accept wildcard characters: False
 ```
 
 ### -BackupRetentionDay
-Pencadangan hari penyimpanan untuk server.
-Hitungan hari antara 7 dan 35.
+Mencadangkan hari penyimpanan untuk server.
+Hitungan hari adalah antara 7 dan 35.
 
 ```yaml
 Type: System.Int32
@@ -321,9 +321,9 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateDnsZone
-Id zona dns privat yang sudah ada.
-Anda bisa menggunakan zona dns privat dari grup sumber daya yang sama, grup sumber daya yang berbeda, atau langganan yang berbeda.
-Akhiran zona dns harus sama dengan akhiran domain server yang sepenuhnya memenuhi syarat.
+Id zona dns pribadi yang sudah ada.
+Anda bisa menggunakan zona dns pribadi dari grup sumber daya yang sama, grup sumber daya yang berbeda, atau langganan yang berbeda.
+Akhiran zona dns harus sama dengan domain server yang sepenuhnya memenuhi syarat.
 
 ```yaml
 Type: System.String
@@ -339,8 +339,8 @@ Accept wildcard characters: False
 
 ### -PublicAccess
 Menentukan akses publik.
-Masukkan satu atau beberapa rentang alamat IP untuk disertakan dalam daftar IP yang diperbolehkan.
-Rentang alamat IP harus memiliki garis putus-putus dan tidak berisi spasi.
+Masukkan satu atau beberapa alamat IP yang akan disertakan dalam daftar IP yang diperbolehkan.
+Rentang alamat IP harus dipisahkan garis putus-putus dan tidak berisi spasi apa pun.
 Menentukan 0.0.0.0 memungkinkan akses publik dari sumber daya apa pun yang digunakan dalam Azure untuk mengakses server Anda.
 Menentukan tidak ada alamat IP yang mengatur server dalam mode akses publik tetapi tidak membuat aturan firewall.
 
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Azure Resource Manager atau portal.
+Nama grup sumber daya yang berisi sumber daya, Anda dapat memperoleh nilai ini dari API Resource Manager Azure atau portal.
 
 ```yaml
 Type: System.String
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sku
-Nama sku, biasanya, tier + keluarga + inti, misalnya Standard_B1ms, Standard_D2s_v3.
+Nama sku, biasanya, tingkat + keluarga + inti, misalnya Standard_B1ms, Standard_D2s_v3.
 
 ```yaml
 Type: System.String
@@ -387,9 +387,9 @@ Accept wildcard characters: False
 ```
 
 ### -SkuTier
-Menghitung tingkatan server.
-Nilai yang diterima: Rentetan, GeneralPurpose, Memory Optimized.
-Default: Rentetan.
+Menghitung tingkat server.
+Nilai yang diterima: Burstable, GeneralPurpose, Memory Optimized.
+Default: Burstable.
 
 ```yaml
 Type: System.String
@@ -404,7 +404,7 @@ Accept wildcard characters: False
 ```
 
 ### -StorageInMb
-Penyimpanan maks diperbolehkan untuk server.
+Penyimpanan maks yang diperbolehkan untuk server.
 
 ```yaml
 Type: System.Int32
@@ -419,8 +419,8 @@ Accept wildcard characters: False
 ```
 
 ### -Subnet
-Nama atau Id Subnet atau nama Subnet yang sudah ada untuk dibuat.
-Harap perhatikan bahwa subnet akan didelegasikan ke Microsoft.DBforPostgreSQL/flexibleServers.
+Nama atau Id subnet atau nama baru yang sudah ada untuk dibuat.
+Harap diperhatikan bahwa subnet akan didelegasikan ke Microsoft.DBforPostgreSQL/flexibleServers.
 Setelah delegasi, subnet ini tidak dapat digunakan untuk tipe sumber daya Azure lainnya.
 
 ```yaml
@@ -436,8 +436,8 @@ Accept wildcard characters: False
 ```
 
 ### -SubnetPrefix
-Prefiks alamat IP subnet untuk digunakan ketika membuat vnet baru dalam format CIDR.
-Nilai default adalah 10.0.0.0/24.
+Prefiks alamat IP subnet untuk digunakan saat membuat vnet baru dalam format CIDR.
+Nilai defaultnya adalah 10.0.0.0/24.
 
 ```yaml
 Type: System.String
@@ -497,7 +497,7 @@ Accept wildcard characters: False
 ```
 
 ### -Vnet
-Nama atau Id jaringan virtual yang sudah ada atau nama jaringan virtual yang baru untuk dibuat.
+Nama atau Id jaringan virtual atau nama jaringan virtual yang sudah ada untuk dibuat.
 Nama harus antara 2 hingga 64 karakter.
 Nama harus diawali dengan huruf atau angka, diakhiri dengan huruf, angka atau garis bawah, dan mungkin hanya berisi huruf, angka, garis bawah, titik, atau tanda hubung.
 
@@ -514,8 +514,8 @@ Accept wildcard characters: False
 ```
 
 ### -VnetPrefix
-Prefiks alamat IP yang digunakan ketika membuat vnet baru dalam format CIDR.
-Nilai default adalah 10.0.0.0/16.
+Prefiks alamat IP yang digunakan saat membuat vnet baru dalam format CIDR.
+Nilai defaultnya adalah 10.0.0.0/16.
 
 ```yaml
 Type: System.String
@@ -529,8 +529,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Zone
-Zona ketersediaan untuk menyediakan sumber daya.
+### -Zona
+Zona ketersediaan tempat penyediaan sumber daya.
 
 ```yaml
 Type: System.String
@@ -545,7 +545,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -561,7 +561,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -576,7 +576,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

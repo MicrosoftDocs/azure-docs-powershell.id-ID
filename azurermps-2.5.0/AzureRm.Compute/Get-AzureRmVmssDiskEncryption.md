@@ -4,11 +4,11 @@ Module Name: AzureRM.Compute
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvmssdiskencryption
 schema: 2.0.0
 ms.openlocfilehash: c49fc472c6cc3693145487bdfe7488d0eabfe237
-ms.sourcegitcommit: d28d7d5f6278862d833182868a9dcde2c31e657b
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140866772"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782592"
 ---
 # Get-AzureRmVmssDiskEncryption
 
@@ -34,12 +34,12 @@ Memperlihatkan status enkripsi disk dari kumpulan skala VM.
 PS C:\> Get-AzureRmVmssDiskEncryption -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 
-Memperlihatkan status enkripsi disk dari kumpulan skala VM bernama VMSS001 yang dimiliki oleh grup sumber daya yang bernama Group001.
+Memperlihatkan status enkripsi disk dari kumpulan skala VM bernama VMSS001 yang termasuk dalam grup sumber daya bernama Group001.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: IAzureContextContainer
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 
 ### -ExtensionName
 Nama ekstensi.
-Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk WINDOWS VM dan AzureDiskEncryptionForLinux untuk Linux VM.
+Jika parameter ini tidak ditentukan, nilai default yang digunakan adalah AzureDiskEncryption untuk windows VM dan AzureDiskEncryptionForLinux untuk VM Linux.
 
 ```yaml
 Type: String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Nama grup sumber daya dari kumpulan skala mesin virtual
+Nama grup sumber daya kumpulan skala mesin virtual
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

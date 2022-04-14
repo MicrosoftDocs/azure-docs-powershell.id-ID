@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerDnsAlias.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerDnsAlias.md
-ms.openlocfilehash: 28c28f549a3f3b4df05d2b8b28613dc77e5230be7a463b7ddf036454223f1472
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 6c18639e3c717ced8ed107ce3604e20639d87682
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140856594"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059260"
 ---
 # Set-AzureRmSqlServerDnsAlias
 
 ## SYNOPSIS
-Memodifikasi server tempat Azure SQL Server DNS ditandaandai
+Mengubah server tempat Alias DNS Server Azure SQL menunjuk
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,7 +28,7 @@ Set-AzureRmSqlServerDnsAlias -Name <String> -TargetServerName <String> [-Resourc
 ```
 
 ## DESCRIPTION
-Perintah ini memperbarui server ke alias yang menunjuk. Perintah ini perlu diterbitkan saat masuk ke langganan tempat server baru yang alias akan berada.
+Perintah ini sedang memperbarui server yang ditunjuk aliasnya. Perintah ini perlu dikeluarkan saat masuk ke langganan di mana server baru di mana alias yang akan diarahkan berada.
 
 ## EXAMPLES
 
@@ -37,12 +37,12 @@ Perintah ini memperbarui server ke alias yang menunjuk. Perintah ini perlu diter
 PS C:\> Set-AzureRmSqlServerDnsAlias -ResourceGroupName rg -DnsAliasName aliasName -TargetServerName newServer -SourceServerName oldServer -SourceServerResourceGroupName SourceServerRG -SourceServerSubscriptionId 0000-0000-0000-0000
 ```
 
-Perintah ini memperbarui alias yang sebelumnya mengarah ke oldServer untuk di arahkan ke Server baru
+Perintah ini memperbarui alias yang sebelumnya menunjuk ke oldServer untuk mengarahkan ke server newServer
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Nama alias Dns Azure Sql Server.
+Nama Alias Dns Azure Sql Server.
 
 ```yaml
 Type: System.String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceServerName
-Nama Azure Sql Server yang menjadi alias yang saat ini menunjuk.
+Nama Azure Sql Server tempat alias saat ini menunjuk.
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceServerSubscriptionId
-Id langganan dari server sumber
+Id langganan server sumber
 
 ```yaml
 Type: System.Guid
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetServerName
-Nama Azure Sql Server yang akan menjadi tujuan alias.
+Nama Azure Sql Server yang harus diarahkan alias.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

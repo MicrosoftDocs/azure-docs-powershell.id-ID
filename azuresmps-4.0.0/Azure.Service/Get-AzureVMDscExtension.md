@@ -4,16 +4,16 @@ ms.assetid: 9D6D1890-9442-45F1-A3AA-BB1DB5CB33D6
 online version: ''
 schema: 2.0.0
 ms.openlocfilehash: b9252814c7595bd3d74d312f8aa7910e38ad9f32
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421142"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142058663"
 ---
 # Get-AzureVMDscExtension
 
 ## SYNOPSIS
-Dapatkan pengaturan ekstensi DSC di komputer virtual.
+Mendapatkan pengaturan ekstensi DSC di mesin virtual.
 
 [!INCLUDE [rdfe-banner](../../includes/rdfe-banner.md)]
 
@@ -25,31 +25,31 @@ Get-AzureVMDscExtension -VM <IPersistentVM> [-Profile <AzureSMProfile>] [-Inform
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureVMDscExtension** mendapatkan pengaturan ekstensi DSC pada komputer virtual.
+Cmdlet **Get-AzureVMDscExtension** mendapatkan pengaturan ekstensi DSC pada mesin virtual.
 
 ## EXAMPLES
 
-### Contoh 1: Dapatkan pengaturan Ekstensi DSC di komputer virtual
+### Contoh 1: Mendapatkan pengaturan Ekstensi DSC di mesin virtual
 ```
 PS C:\> Get-AzureVMDscExtension -VM $VMModulesUrl
 https://myaccount.blob.core.contoso.net/windows-powershell-dsc/MyConfiguration.ps1.zipConfigurationFunction : MyConfiguration.ps1\MyConfigurationProperties            : {ServerName}ExtensionName         : DSCPublisher             : Microsoft.PowershellVersion               : 1.*PrivateConfiguration  :PublicConfiguration   : {"ModulesUrl": "https://myaccount.blob.core.contoso.net/windows-powershell-dsc/MyConfiguration.ps1.zip","ConfigurationFunction": "MyConfiguration.ps1\\MyConfiguration","Properties": {"ServerName": "C:\\MyDirectory"}}ReferenceName         : DSCState                 : EnableRoleName              : my-vm
 ```
 
-Perintah ini mendapatkan pengaturan Ekstensi DSC di komputer virtual.
+Perintah ini mendapatkan pengaturan Ekstensi DSC pada mesin virtual.
 
 ## PARAMETERS
 
 ### -InformationAction
-Menentukan bagaimana cmdlet merespons kejadian informasi.
+Menentukan bagaimana cmdlet ini merespons kejadian informasi.
 
 Nilai yang dapat diterima untuk parameter ini adalah:
 
 - Lanjutkan
-- Abaikan
-- Pemeriksaan
-- SilentlyContinue
+- Mengabaikan
+- Menanyakan
+- DiamKontinue
 - Stop
-- Tangguhkan
+- Menangguhkan
 
 ```yaml
 Type: ActionPreference
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 ```
 
 ### -Profil
-Menentukan profil Azure yang akan dibaca cmdlet ini.
-Jika Anda tidak menentukan profil, cmdlet ini akan membaca dari profil default lokal.
+Menentukan profil Azure tempat cmdlet ini dibaca.
+Jika Anda tidak menentukan profil, cmdlet ini akan dibaca dari profil default lokal.
 
 ```yaml
 Type: AzureSMProfile
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

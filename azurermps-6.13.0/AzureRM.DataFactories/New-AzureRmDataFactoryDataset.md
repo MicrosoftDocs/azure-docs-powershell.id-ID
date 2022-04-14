@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/New-AzureRmDataFactoryDataset.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataFactories/Commands.DataFactories/help/New-AzureRmDataFactoryDataset.md
 ms.openlocfilehash: 0353e1a18d881b2546bf8cc35d141ede1e87fd3b
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427611"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824757"
 ---
 # New-AzureRmDataFactoryDataset
 
 ## SYNOPSIS
-Membuat set data di Data Factory.
+Membuat kumpulan data di Pabrik Data.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -36,20 +36,20 @@ New-AzureRmDataFactoryDataset [-DataFactory] <PSDataFactory> [[-Name] <String>] 
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmDataFactoryDataset** membuat set data di Azure Data Factory.
-Jika Anda menentukan nama untuk set data yang sudah ada, cmdlet ini akan meminta konfirmasi Anda sebelum menggantikan set data.
-Jika Anda menentukan parameter *Force,* cmdlet menggantikan set data yang sudah ada tanpa konfirmasi.
-Jalankan operasi ini dalam urutan berikut: 
+Cmdlet **New-AzureRmDataFactoryDataset** membuat kumpulan data dalam Azure Data Factory.
+Jika Anda menentukan nama untuk kumpulan data yang sudah ada, cmdlet ini meminta konfirmasi sebelum menggantikan kumpulan data.
+Jika Anda menentukan parameter *Paksa* , cmdlet menggantikan kumpulan data yang sudah ada tanpa konfirmasi.
+Lakukan operasi ini dalam urutan berikut: 
 - Membuat pabrik data. 
 - Membuat layanan tertaut. 
-- Membuat set data. 
-- Buat saluran.
-Jika telah ada set data dengan nama yang sama di pabrik data, cmdlet ini akan meminta Anda untuk mengonfirmasi apakah akan menimpa set data yang sudah ada dengan set data baru.
-Jika Mengonfirmasi untuk menimpaset data yang sudah ada, definisi set data juga akan diganti.
+- Membuat kumpulan data. 
+- Membuat saluran.
+Jika kumpulan data dengan nama yang sama sudah ada di pabrik data, cmdlet ini meminta Anda untuk mengonfirmasi apakah akan menimpa kumpulan data yang sudah ada dengan kumpulan data baru.
+Jika Anda mengonfirmasi untuk menimpa kumpulan data yang sudah ada, definisi kumpulan data juga diganti.
 
 ## EXAMPLES
 
-### Contoh 1: Membuat set data
+### Contoh 1: Membuat kumpulan data
 ```
 PS C:\>New-AzureRmDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 DatasetName         : DAWikipediaClickEvents
@@ -61,10 +61,10 @@ Policy            : Microsoft.DataFactories.Policy
 Structure         : {}
 ```
 
-Perintah ini membuat sebuah set data yang DA_WikipediaClickEvents di pabrik data bernama WikiADF.
-Perintah mendasarkan set data pada informasi di file DAWikipediaClickEvents.json.
+Perintah ini membuat kumpulan data bernama DA_WikipediaClickEvents di pabrik data bernama WikiADF.
+Perintah mendasarkan kumpulan data pada informasi dalam file DAWikipediaClickEvents.json.
 
-### Contoh 2: Menampilkan ketersediaan untuk set data baru
+### Contoh 2: Menampilkan ketersediaan untuk kumpulan data baru
 ```
 PS C:\>$Dataset = New-AzureRmDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 PS C:\> $Dataset.Availability
@@ -75,10 +75,10 @@ Offset         :
 WaitOnExternal : Microsoft.DataFactories.WaitOnExternal
 ```
 
-Perintah pertama membuat set data yang bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset berbeda.
-Perintah kedua menggunakan notasi titik standar untuk menampilkan detail tentang properti Ketersediaan dari set data.
+Perintah pertama membuat kumpulan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan kumpulan data tersebut ke variabel $Dataset.
+Perintah kedua menggunakan notasi titik standar untuk menampilkan detail tentang properti Ketersediaan kumpulan data.
 
-### Contoh 3: Menampilkan lokasi untuk set data baru
+### Contoh 3: Menampilkan lokasi untuk kumpulan data baru
 ```
 PS C:\>$Dataset = New-AzureRmDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 PS C:\> $Dataset.Location
@@ -89,10 +89,10 @@ LinkedServiceName : LinkedServiceWikipediaClickEvents
 PartitionBy       : {}
 ```
 
-Perintah pertama membuat set data yang bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset berbeda.
-Perintah kedua menampilkan detail tentang properti Lokasi dari set data.
+Perintah pertama membuat kumpulan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan kumpulan data tersebut ke variabel $Dataset.
+Perintah kedua menampilkan detail tentang properti Lokasi kumpulan data.
 
-### Contoh 4: Menampilkan aturan validasi untuk set data baru
+### Contoh 4: Menampilkan aturan validasi untuk kumpulan data baru
 ```
 PS C:\>$Dataset = New-AzureRmDataFactoryDataset -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "DAWikipediaClickEvents" -File "C:\\samples\\WikiSample\\DA_WikipediaClickEvents.json"
 PS C:\> $Dataset.Policy.Validation | Format-List $dataset.Location
@@ -106,16 +106,16 @@ MinimumRows   :
 MinimumSizeMB : 1
 ```
 
-Perintah pertama membuat set data yang bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan set data tersebut ke $Dataset berbeda.
-Perintah kedua mendapatkan detail tentang aturan validasi untuk set data, lalu meneruskannya ke cmdlet Format-List dengan menggunakan operator pipeline.
-Hal Windows PowerShell cmdlet akan memformat hasil.
-Untuk informasi selengkapnya, ketik `Get-Help Format-List` .
+Perintah pertama membuat kumpulan data bernama DA_WikipediaClickEvents, seperti dalam contoh sebelumnya, lalu menetapkan kumpulan data tersebut ke variabel $Dataset.
+Perintah kedua mendapatkan detail tentang aturan validasi untuk kumpulan data, lalu mengirimkannya ke cmdlet Format-List menggunakan operator pipeline.
+Cmdlet Windows PowerShell itu memformat hasil.
+Untuk informasi selengkapnya, ketik .`Get-Help Format-List`
 
 ## PARAMETERS
 
 ### -DataFactory
-Menentukan objek **PSDataFactory.**
-Cmdlet ini membuat sebuah set data dalam pabrik data yang ditentukan parameter ini.
+Menentukan objek **PSDataFactory** .
+Cmdlet ini membuat kumpulan data di pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataFactories.Models.PSDataFactory
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ### -DataFactoryName
 Menentukan nama pabrik data.
-Cmdlet ini membuat sebuah set data dalam pabrik data yang ditentukan parameter ini.
+Cmdlet ini membuat kumpulan data di pabrik data yang ditentukan parameter ini.
 
 ```yaml
 Type: System.String
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -File
-Menentukan jalur lengkap file JavaScript Object Notation (JSON) yang berisi deskripsi set data.
+Menentukan jalur lengkap file JavaScript Object Notation (JSON) yang berisi deskripsi kumpulan data.
 
 ```yaml
 Type: System.String
@@ -175,8 +175,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Cmdlet ini menggantikan set data yang sudah ada tanpa meminta konfirmasi.
+### -Paksa
+Menunjukkan bahwa cmdlet ini menggantikan kumpulan data yang sudah ada tanpa meminta konfirmasi kepada Anda.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama set data untuk dibuat.
+Menentukan nama kumpulan data yang akan dibuat.
 
 ```yaml
 Type: System.String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -266,12 +266,12 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 ### Microsoft.Azure.Commands.DataFactories.Models.PSDataset
 
 ## CATATAN
-* Kata kunci: azure, azurerm, arm, resource, management, manager, data, factories
+* Kata kunci: azure, azurerm, lengan, sumber daya, manajemen, manajer, data, pabrik
 
 ## RELATED LINKS
 
 [Get-AzureRmDataFactoryDataset](./Get-AzureRmDataFactoryDataset.md)
 
-[Remove-AzureRmDataFactoryDataset](./Remove-AzureRmDataFactoryDataset.md)
+[Hapus-AzureRmDataFactoryDataset](./Remove-AzureRmDataFactoryDataset.md)
 
 

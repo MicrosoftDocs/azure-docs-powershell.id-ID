@@ -6,16 +6,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DataLakeAnalytics/Commands.DataLakeAnalytics/help/Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry.md
 ms.openlocfilehash: e97876377e8ea96dc106277991bcc05fec5f3759
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421692"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141824653"
 ---
 # Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry
 
 ## SYNOPSIS
-Menghapus entri dari ACL katalog atau item katalog di Analitik Danau Data.
+Menghapus entri dari ACL item katalog atau katalog di Data Lake Analytics.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -48,7 +48,7 @@ Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry [-Account] <String> [-Group] 
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry** menghapus entri (ACE) dari daftar kontrol akses (ACL, Access Control List) dari katalog atau item katalog di Analitik Danau Data.
+Cmdlet **Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry** menghapus entri (ACE) dari daftar kontrol akses (ACL) dari katalog atau item katalog dalam Data Lake Analytics.
 
 ## EXAMPLES
 
@@ -57,19 +57,19 @@ Cmdlet **Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry** menghapus entri (A
 PS C:\> Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -User -ObjectId (Get-AzureRmADUser -Mail "PattiFuller@contoso.com").Id
 ```
 
-Perintah ini menghapus katalog ACL untuk Patti Fuller akun contosoadla.
+Perintah ini menghapus katalog ACL untuk Patti Fuller dari akun contosoadla.
 
 ### Contoh 2: Menghapus ACL pengguna untuk database
 ```powershell
 PS C:\> Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry -Account "contosoadla" -User -ObjectId (Get-AzureRmADUser -Mail "PattiFuller@contoso.com").Id -ItemType Database -Path "databaseName"
 ```
 
-Perintah ini menghapus database ACL untuk Patti Fuller akun contosoadla.
+Perintah ini menghapus database ACL untuk Patti Fuller dari akun contosoadla.
 
 ## PARAMETERS
 
 ### -Akun
-Menentukan nama akun Analitik Danau Data.
+Menentukan nama akun Data Lake Analytics.
 
 ```yaml
 Type: System.String
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Grup
-Hapus entri katalog ACL untuk grup.
+Hapus entri ACL katalog untuk grup.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -ObjectId
-Identitas pengguna yang akan dihapus.
+Identitas pengguna untuk dihapus.
 
 ```yaml
 Type: System.Guid
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Menunjukkan respons boolean harus dikembalikan, mengindikasikan hasil operasi penghapusan.
+Menunjukkan respons boolean harus dikembalikan yang mengindikasikan hasil operasi penghapusan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -160,9 +160,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Menentukan jalur Analitik Danau Data dari katalog atau item katalog.
-Bagian jalur harus dipisahkan oleh titik (.).
+### -Jalur
+Menentukan jalur Data Lake Analytics item katalog atau katalog.
+Bagian jalur harus dipisahkan oleh tanda titik (.).
 
 ```yaml
 Type: Microsoft.Azure.Commands.DataLakeAnalytics.Models.CatalogPathInstance
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Pengguna
-Hapus entri katalog ACL untuk pengguna.
+Hapus entri ACL katalog untuk pengguna.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -241,7 +241,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[U-SQL menawarkan kontrol akses tingkat database](https://github.com/Azure/AzureDataLake/blob/master/docs/Release_Notes/2016/2016_08_01/USQL_Release_Notes_2016_08_01.md#u-sql-now-offers-database-level-access-control)
+[U-SQL kini menawarkan kontrol akses tingkat database](https://github.com/Azure/AzureDataLake/blob/master/docs/Release_Notes/2016/2016_08_01/USQL_Release_Notes_2016_08_01.md#u-sql-now-offers-database-level-access-control)
 
 [Get-AzureRmDataLakeAnalyticsCatalogItemAclEntry](Get-AzureRmDataLakeAnalyticsCatalogItemAclEntry.md)
 

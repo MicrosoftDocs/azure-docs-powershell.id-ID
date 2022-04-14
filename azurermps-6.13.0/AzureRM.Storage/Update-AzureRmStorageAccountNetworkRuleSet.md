@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.stora
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Update-AzureRmStorageAccountNetworkRuleSet.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Storage/Commands.Management.Storage/help/Update-AzureRmStorageAccountNetworkRuleSet.md
-ms.openlocfilehash: b7d7e303dc451b14c4415c16c364c90f82ce6e4b9494ff83b7915bd2b83e0264
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: d167061692e3d5cccfd54a3f990af8312446ac67
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867990"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059089"
 ---
 # Update-AzureRmStorageAccountNetworkRuleSet
 
 ## SYNOPSIS
-Memperbarui properti NetworkRule dari akun Storage lain
+Memperbarui properti NetworkRule dari akun Storage
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,27 +29,27 @@ Update-AzureRmStorageAccountNetworkRuleSet [-ResourceGroupName] <String> [-Name]
 ```
 
 ## DESCRIPTION
-Cmdlet **Update-AzureRmStorageAccountNetworkRuleSet** memperbarui properti NetworkRule dari Storage lain
+Cmdlet **Update-AzureRmStorageAccountNetworkRuleSet** memperbarui properti NetworkRule akun Storage
 
 ## EXAMPLES
 
-### Contoh 1: Perbarui semua properti NetworkRule, input Aturan dengan JSON
+### Contoh 1: Memperbarui semua properti NetworkRule, aturan input dengan JSON
 ```
 PS C:\> Update-AzureRmStorageAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Bypass Logging,Metrics -DefaultAction Allow -IpRule (@{IPAddressOrRange="10.0.0.0/24";Action="allow"},@{IPAddressOrRange="28.2.0.0/16";Action="allow"})
     -VirtualNetworkRule (@{VirtualNetworkReourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1";Action="allow"},@{VirtualNetworkReourceId="/subscriptions/s1/resourceGroups/g1/providers/Microsoft.Network/virtualN
     etworks/vnet2/subnets/subnet2";Action="allow"})
 ```
 
-Perintah ini memperbarui semua properti NetworkRule, input Aturan dengan JSON.
+Perintah ini memperbarui semua properti NetworkRule, Aturan input dengan JSON.
 
-### Contoh 2: Perbarui properti Bypass NetworkRule
+### Contoh 2: Properti Bypass Pembaruan dari NetworkRule
 ```
 PS C:\> Update-AzureRmStorageAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -Bypass AzureServices,Metrics
 ```
 
-Perintah ini memperbarui properti Bypass NetworkRule (properti lainnya tidak akan berubah).
+Perintah ini memperbarui properti Bypass networkrule (properti lain tidak akan berubah).
 
-### Contoh 3: Clean up rules of NetworkRule of a Storage account
+### Contoh 3: Membersihkan aturan NetworkRule dari akun Storage
 ```
 PS C:\> Update-AzureRmStorageAccountNetworkRuleSet -ResourceGroupName "myResourceGroup" -AccountName "mystorageaccount" -IpRule @() -VirtualNetworkRule @()
 ```
@@ -59,7 +59,7 @@ Perintah ini membersihkan aturan NetworkRule dari akun Storage (properti lain ti
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -74,8 +74,8 @@ Accept wildcard characters: False
 ```
 
 ### -Bypass
-Nilai Lewati untuk memperbarui ke properti NetworkRule dari Storage Anda.
-Nilai yang diperbolehkan tidak ada atau kombinasi apa pun dari: • Pembuatan Log • Metrik • Azureservices
+Nilai Bypass untuk memperbarui ke properti NetworkRule dari akun Storage.
+Nilai yang diperbolehkan tidak ada atau kombinasi dari: • Pembuatan Log • Metrik • Azureservices
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSNetWorkRuleBypassEnum
@@ -91,8 +91,8 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultAction
-Nilai DefaultAction untuk memperbarui ke properti NetworkRule dari akun Storage Anda.
-Opsi yang diperbolehkan: • Izinkan • Tolak
+Nilai DefaultAction untuk diperbarui ke properti NetworkRule dari akun Storage.
+Opsi yang diizinkan: • Izinkan • Tolak
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSNetWorkRuleDefaultActionEnum
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IPRule
-Array objek IpRule diperbarui ke properti NetworkRule dari akun Storage Anda.
+Array objek IpRule untuk diperbarui ke Properti NetworkRule dari akun Storage.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSIpRule[]
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama akun Storage Anda.
+Menentukan nama akun Storage.
 
 ```yaml
 Type: System.String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya berisi akun Storage tersebut.
+Menentukan nama grup sumber daya berisi akun Storage.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkRule
-Array objek VirtualNetworkRule untuk diperbarui ke properti NetworkRule dari akun Storage Anda.
+Array objek VirtualNetworkRule untuk diperbarui ke Properti NetworkRule dari akun Storage.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Management.Storage.Models.PSVirtualNetworkRule[]
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

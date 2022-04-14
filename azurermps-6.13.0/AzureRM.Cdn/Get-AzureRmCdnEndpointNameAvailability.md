@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.cdn/g
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Get-AzureRmCdnEndpointNameAvailability.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Cdn/Commands.Cdn/help/Get-AzureRmCdnEndpointNameAvailability.md
-ms.openlocfilehash: c00751c23c161a39b465cb1c3b400ba60347aab6126e107127e86f94bf5bd38c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c5db5d27edb537602638ff5654a6da3ac35813ca
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140862920"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141887044"
 ---
 # Get-AzureRmCdnEndpointNameAvailability
 
 ## SYNOPSIS
-Mendapatkan status ketersediaan CDN titik akhir.
+Mendapatkan status ketersediaan titik akhir CDN.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -28,14 +28,14 @@ Get-AzureRmCdnEndpointNameAvailability -EndpointName <String> [-DefaultProfile <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmCdnEndpointNameAvailability** mendapatkan status ketersediaan titik akhir Azure Content Delivery Network (CDN).
+**Cmdlet Get-AzureRmCdnEndpointNameAvailability** mendapatkan status ketersediaan titik akhir Azure Content Delivery Network (CDN).
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -65,11 +65,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

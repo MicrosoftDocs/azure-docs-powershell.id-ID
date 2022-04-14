@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.hdins
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightOperationsManagementSuite.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/HDInsight/Commands.HDInsight/help/Get-AzureRmHDInsightOperationsManagementSuite.md
-ms.openlocfilehash: ce1abf2eaab0a44c17a1dcab5780aa2e2e33704d1adf1257a8885c50c5547324
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 5fbc34f3a5a2a7b87c0e7319c5d6243e1207dc61
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140864414"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823766"
 ---
 # Get-AzureRmHDInsightOperationsManagementSuite
 
 ## SYNOPSIS
-Dapatkan status penginstalan Operations Management Suite (OMS) pada kluster.
+Mendapatkan status penginstalan Operations Management Suite (OMS) di kluster.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -27,7 +27,7 @@ Get-AzureRmHDInsightOperationsManagementSuite [-Name] <String> [-ResourceGroupNa
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmHDInsightOperationsManagementSuite** mendapatkan status penginstalan OMS di kluster Azure HDInsight. Jika OMS diaktifkan maka OMS juga akan mengembalikan id ruang kerja OMS.
+Cmdlet **Get-AzureRmHDInsightOperationsManagementSuite** mendapatkan status penginstalan OMS dalam kluster Azure HDInsight. Jika OMS diaktifkan, maka OMS juga akan mengembalikan id ruang kerja OMS.
 
 ## EXAMPLES
 
@@ -40,7 +40,7 @@ ClusterMonitoringEnabled
 {'ClusterMonitoringEnabled':'true', 'workspaceId':'1d364e89-bb71-4503-aa3d-a23535aea7bd'}
 ```
 
-Operations Management Suite (OMS) diaktifkan pada kluster karena properti ClusterMonitoringEnabled adalah benar. Id ruang kerja OMS tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
+Operations Management Suite (OMS) diaktifkan di kluster karena properti ClusterMonitoringEnabled adalah true. Id ruang kerja OMS tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
 
 ### Contoh 2
 ```
@@ -51,7 +51,7 @@ ClusterMonitoringEnabled
 {'ClusterMonitoringEnabled':'true', 'workspaceId':'1d364e89-bb71-4503-aa3d-a23535aea7bd'}
 ```
 
-Operations Management Suite (OMS) diaktifkan pada kluster karena properti ClusterMonitoringEnabled adalah benar. Id ruang kerja OMS tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
+Operations Management Suite (OMS) diaktifkan di kluster karena properti ClusterMonitoringEnabled adalah true. Id ruang kerja OMS tempat log mengalir adalah 1d364e89-bb71-4503-aa3d-a23535aea7bd
 
 ### Contoh 3
 ```
@@ -62,7 +62,7 @@ ClusterMonitoringEnabled
 {'ClusterMonitoringEnabled':'false'}
 ```
 
-Operations Management Suite (OMS) dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled merupakan false.
+Operations Management Suite (OMS) dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled adalah false.
 
 ### Contoh 4
 ```
@@ -73,12 +73,12 @@ ClusterMonitoringEnabled
 {'ClusterMonitoringEnabled':'false'}
 ```
 
-Operations Management Suite (OMS) dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled merupakan false.
+Operations Management Suite (OMS) dinonaktifkan pada kluster karena properti ClusterMonitoringEnabled adalah false.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

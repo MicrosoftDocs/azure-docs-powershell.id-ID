@@ -5,17 +5,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/A
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Add-AzureRmSqlServerTransparentDataEncryptionCertificate.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Add-AzureRmSqlServerTransparentDataEncryptionCertificate.md
-ms.openlocfilehash: 5a0b38b6d9e5284c6fe9e0cbe0d8823ac0a88b2396160928c17e339bb8bc733a
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 333de53ccd3632188100af7f3fcde10e140537c2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140863397"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060253"
 ---
 # Add-AzureRmSqlServerTransparentDataEncryptionCertificate
 
 ## SYNOPSIS
-Menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server enkripsi
+Menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server yang diberikan
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -43,7 +43,7 @@ Add-AzureRmSqlServerTransparentDataEncryptionCertificate [-PassThru] [-SqlServer
 ```
 
 ## DESCRIPTION
-Contoh Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server enkripsi
+Add-AzureRmSqlManagedInstanceTransparentDataEncryptionCertificate menambahkan Sertifikat Enkripsi Data Transparan untuk instans SQL Server yang diberikan
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ PS C:\>     $securePassword = $password | ConvertTo-SecureString -AsPlainText -F
 PS C:\>     Add-AzureRmSqlServerTransparentDataEncryptionCertificate -ResourceGroupName "YourResourceGroupName" -ServerName "YourServerName" -PrivateBlob $securePrivateBlob -Password $securePassword
 ```
 
-Menambahkan sertifikat TDE ke server sql menggunakan nama grup sumber daya SQL Server nama
+Menambahkan sertifikat TDE ke server sql menggunakan nama grup sumber daya dan nama SQL Server
 
 ### Contoh 2
 ```powershell
@@ -68,7 +68,7 @@ PS C:\>     $server = Get-AzureRmSqlServer -ServerName "YourServerName" -Resourc
 PS C:\>     Add-AzureRmSqlServerTransparentDataEncryptionCertificate -SqlServerResourceId $server.ResourceId -PrivateBlob $securePrivateBlob -Password $securePassword
 ```
 
-Menambahkan sertifikat TDE ke server menggunakan resourceId server
+Menambahkan sertifikat TDE ke server menggunakan server resourceId
 
 ### Contoh 3
 ```powershell
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Pada Eksekusi yang berhasil, mengembalikan objek sertifikat yang ditambahkan.
+Pada eksekusi Berhasil, mengembalikan objek sertifikat yang ditambahkan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Kata Sandi untuk Sertifikat Enkripsi Data Transparan
+Kata sandi untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrivateBlob
-Blob Privat untuk Sertifikat Enkripsi Data Transparan
+Blob privat untuk Sertifikat Enkripsi Data Transparan
 
 ```yaml
 Type: System.Security.SecureString
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

@@ -5,11 +5,11 @@ ms.assetid: 3B4F32F3-51ED-4851-B38F-172658186C96
 online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage/new-azurestoragetable
 schema: 2.0.0
 ms.openlocfilehash: 4fe02c9824945593de4b4160e9db10b1573a335a
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428741"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782690"
 ---
 # New-AzureStorageTable
 
@@ -30,12 +30,12 @@ Cmdlet **New-AzureStorageTable** membuat tabel penyimpanan yang terkait dengan a
 
 ## EXAMPLES
 
-### Contoh 1: Membuat tabel penyimpanan Azure
+### Contoh 1: Membuat tabel penyimpanan azure
 ```
 PS C:\>New-AzureStorageTable -Name "tableabc"
 ```
 
-Perintah ini akan membuat tabel penyimpanan dengan nama tableabc.
+Perintah ini membuat tabel penyimpanan dengan nama tableabc.
 
 ### Contoh 2: Membuat beberapa tabel penyimpanan azure
 ```
@@ -43,13 +43,13 @@ PS C:\>"table1 table2 table3".split() | New-AzureStorageTable
 ```
 
 Perintah ini membuat beberapa tabel.
-Alur kerja **menggunakan** metode Terpisah dari kelas .NET **String** lalu melewati nama dalam saluran.
+Ini menggunakan metode **Split** dari kelas .NET **String** lalu meneruskan nama pada pipeline.
 
 ## PARAMETERS
 
 ### -Konteks
 Menentukan konteks penyimpanan.
-Untuk membuatnya, Anda dapat menggunakan cmdlet New-AzureStorageContext cmdlet.
+Untuk membuatnya, Anda bisa menggunakan cmdlet New-AzureStorageContext.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IStorageContext
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -104,7 +104,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.WindowsAzure.commands.common. Storage. ResourceModel.AzureStorageTable
+### Microsoft.WindowsAzure.Commands.Common. Storage. ResourceModel.AzureStorageTable
 
 ## CATATAN
 
@@ -112,6 +112,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageTable](./Get-AzureStorageTable.md)
 
-[Remove-AzureStorageTable](./Remove-AzureStorageTable.md)
+[Hapus-AzureStorageTable](./Remove-AzureStorageTable.md)
 
 

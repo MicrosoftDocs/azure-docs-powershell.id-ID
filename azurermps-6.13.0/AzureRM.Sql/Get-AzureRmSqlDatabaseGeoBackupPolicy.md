@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseGeoBackupPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseGeoBackupPolicy.md
 ms.openlocfilehash: f17619fcdb16574a1fc755843e0084200031085d
-ms.sourcegitcommit: ea4f0db405efec935ac72601b51807dbb45674c9
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "132415372"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060195"
 ---
 # Get-AzureRmSqlDatabaseGeoBackupPolicy
 
@@ -28,7 +28,7 @@ Get-AzureRmSqlDatabaseGeoBackupPolicy [-ServerName] <String> [-DatabaseName] <St
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlDatabaseGeoBackupPolicy** mendaftarkan kebijakan geo cadangan ke database ini.
+Cmdlet **Get-AzureRmSqlDatabaseGeoBackupPolicy** akan mendaftarkan kebijakan cadangan geo ke database ini.
 Ini adalah sumber daya Cadangan Azure yang digunakan untuk menentukan kebijakan penyimpanan cadangan.
 
 ## EXAMPLES
@@ -36,7 +36,7 @@ Ini adalah sumber daya Cadangan Azure yang digunakan untuk menentukan kebijakan 
 ## PARAMETERS
 
 ### -DatabaseName
-Menentukan nama database di mana cmdlet ini mendapatkan kebijakan geo cadangan.
+Menentukan nama database tempat cmdlet ini mendapatkan kebijakan cadangan geo.
 
 ```yaml
 Type: System.String
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host database.
+Menentukan nama server yang menghosting database.
 
 ```yaml
 Type: System.String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -112,4 +112,4 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Set-AzureRmSqlDatabaseGeoBackupPolicy](./Set-AzureRmSqlDatabaseGeoBackupPolicy.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)

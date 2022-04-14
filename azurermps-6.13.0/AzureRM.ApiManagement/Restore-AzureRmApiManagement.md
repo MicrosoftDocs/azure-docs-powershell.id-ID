@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Restore-AzureRmApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Restore-AzureRmApiManagement.md
 ms.openlocfilehash: 1fc22563949f44882d0b6ed1f864d217faacff9d
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132423369"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845923"
 ---
 # Restore-AzureRmApiManagement
 
 ## SYNOPSIS
-Memulihkan Layanan Manajemen API dari blob penyimpanan Azure tertentu.
+Memulihkan Layanan API Management dari blob penyimpanan Azure yang ditentukan.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,11 +29,11 @@ Restore-AzureRmApiManagement -ResourceGroupName <String> -Name <String> [-Storag
 ```
 
 ## DESCRIPTION
-Cmdlet **Restore-AzureRmApiManagement** memulihkan Layanan Manajemen API dari cadangan tertentu yang berada di blob Azurestorage.
+Cmdlet **Restore-AzureRmApiManagement** memulihkan Layanan API Management dari cadangan tertentu yang berada di blob Azurestorage.
 
 ## EXAMPLES
 
-### Contoh 1: Memulihkan layanan Manajemen API
+### Contoh 1: Memulihkan layanan API Management
 ```
 PS C:\>New-AzureRmStorageAccount -StorageAccountName "ContosoStorage" -Location $location -ResourceGroupName "ContosoGroup02" -Type Standard_LRS
 PS C:\>$storageKey = (Get-AzureRmStorageAccountKey -ResourceGroupName "ContosoGroup02" -StorageAccountName "ContosoStorage")[0].Value
@@ -41,12 +41,12 @@ PS C:\>$storageContext = New-AzureStorageContext -StorageAccountName "ContosoSto
 PS C:\>Restore-AzureRmApiManagement -ResourceGroupName "ContosoGroup" -Name "RestoredContosoApi" -StorageContext $StorageContext -SourceContainerName "ContosoBackups" -SourceBlobName "ContosoBackup.apimbackup"
 ```
 
-Perintah ini memulihkan layanan Manajemen API dari blob penyimpanan Azure.
+Perintah ini memulihkan layanan API Management dari blob penyimpanan Azure.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama instans Manajemen API yang akan dipulihkan dengan cadangan.
+Menentukan nama instans API Management yang akan dipulihkan dengan cadangan.
 
 ```yaml
 Type: System.String
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Mengembalikan objek yang mewakili item yang Anda kerjakan.
+Mengembalikan objek yang mewakili item tempat Anda bekerja.
 Secara default, cmdlet ini tidak menghasilkan output apa pun.
 
 ```yaml
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana Manajemen API ada.
+Menentukan nama grup sumber daya di mana API Management ada.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -170,8 +170,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmApiManagement](./Get-AzureRmApiManagement.md)
 
-[New-AzureRmApiManagement](./New-AzureRmApiManagement.md)
+[Baru-AzureRmApiManagement](./New-AzureRmApiManagement.md)
 
-[Remove-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
+[Hapus-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
 
 

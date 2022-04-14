@@ -6,17 +6,17 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.devte
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Set-AzureRmDtlAutoShutdownPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DevTestLabs/Commands.DevTestLabs/help/Set-AzureRmDtlAutoShutdownPolicy.md
-ms.openlocfilehash: 71d764664fdba97fcabc246850c7cc02c72c8905903d2cfe8a777f4a743c83c4
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 65fee8d72217c4f30a8e05477217938240067b7d
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "132418570"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823982"
 ---
 # Set-AzureRmDtlAutoShutdownPolicy
 
 ## SYNOPSIS
-Mengatur kebijakan penutupan otomatis lab DevTest Labs.
+Mengatur kebijakan shutdown otomatis lab DevTest Labs.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,7 +29,7 @@ Set-AzureRmDtlAutoShutdownPolicy [[-Time] <DateTime>] [-Enable] [-LabName] <Stri
  [<CommonParameters>]
 ```
 
-### Disable
+### Menonaktifkan
 ```
 Set-AzureRmDtlAutoShutdownPolicy [[-Time] <DateTime>] [-Disable] [-LabName] <String>
  [-ResourceGroupName] <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
@@ -37,15 +37,15 @@ Set-AzureRmDtlAutoShutdownPolicy [[-Time] <DateTime>] [-Disable] [-LabName] <Str
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureRmDtlAutoShutdownPolicy** mengatur kebijakan penutupan otomatis sebuah lab, yang secara otomatis mematikan semua mesin virtual di lab pada waktu tertentu pada hari yang sama.
-Cmdlet menggunakan grup sumber daya tertentu dan nama lab untuk menetapkan kebijakan tersebut.
+Cmdlet **Set-AzureRmDtlAutoShutdownPolicy** mengatur kebijakan matikan otomatis laboratorium, yang secara otomatis mematikan semua mesin virtual di laboratorium pada waktu yang ditentukan pada hari tersebut.
+Cmdlet menggunakan grup sumber daya dan nama lab yang ditentukan untuk menetapkan kebijakan.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -59,8 +59,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Disable
-Mengindikasikan bahwa cmdlet menonaktifkan kebijakan di lab.
+### -Non-fungsikan
+Menunjukkan bahwa cmdlet menonaktifkan kebijakan di laboratorium.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Aktifkan
-Mengindikasikan bahwa cmdlet mengaktifkan kebijakan di lab.
+Menunjukkan bahwa cmdlet memungkinkan kebijakan di lab.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -LabName
-Tentukan nama lab tempat cmdlet ini menetapkan kebijakan penutupan otomatis.
+Menentukan nama lab tempat cmdlet ini mengatur kebijakan matikan otomatis.
 
 ```yaml
 Type: System.String
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya tempat lab dimiliki.
+Menentukan nama grup sumber daya tempat lab berada.
 
 ```yaml
 Type: System.String
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Waktu
-Menentukan waktu, sebagai objek **DateTime,** untuk saat mesin virtual di lab harus mematikan.
+Menentukan waktu, sebagai objek **DateTime** , ketika mesin virtual di lab harus dimatikan.
 
 ```yaml
 Type: System.Nullable`1[System.DateTime]
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

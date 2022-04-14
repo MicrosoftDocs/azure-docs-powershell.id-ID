@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagement.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/ApiManagement/Commands.ApiManagement/help/Get-AzureRmApiManagement.md
 ms.openlocfilehash: bff36b7bcb37dd099f9aa50a99bed9538111e8d2
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132428491"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846399"
 ---
 # Get-AzureRmApiManagement
 
 ## SYNOPSIS
-Mendapatkan daftar atau deskripsi Layanan Manajemen API tertentu.
+Mendapatkan daftar atau deskripsi Layanan API Management tertentu.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -40,28 +40,28 @@ Get-AzureRmApiManagement -ResourceGroupName <String> -Name <String> [-DefaultPro
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmApiManagement** mendapatkan daftar semua layanan Manajemen API dalam langganan atau grup sumber daya tertentu atau Manajemen API tertentu.
+Cmdlet **Get-AzureRmApiManagement** mendapatkan daftar semua layanan API Management dalam langganan atau grup sumber daya tertentu atau API Management tertentu.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan semua layanan Manajemen API
+### Contoh 1: Dapatkan semua layanan API Management
 ```powershell
 PS C:\>Get-AzureRmApiManagement
 ```
 
-Perintah ini akan mendapatkan semua layanan Manajemen API dalam langganan.
+Perintah ini mendapatkan semua layanan API Management dalam langganan.
 
-### Contoh 2: Dapatkan semua layanan Manajemen API dengan nama khusus
+### Contoh 2: Dapatkan semua layanan API Management dengan nama tertentu
 ```powershell
 PS C:\>Get-AzureRmApiManagement -ResourceGroupName "ContosoGroup" -Name "ContosoApi"
 ```
 
-Perintah ini akan mendapatkan semua layanan Manajemen API berdasarkan nama.
+Perintah ini mendapatkan semua layanan API Management berdasarkan nama.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Nama
-Menentukan nama layanan Manajemen API.
+Menentukan nama layanan API Management.
 
 ```yaml
 Type: System.String
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di bawahnya tempat cmdlet ini mendapatkan layanan Manajemen API.
+Menentukan nama grup sumber daya di mana cmdlet ini mendapatkan layanan API Management.
 
 ```yaml
 Type: System.String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -122,9 +122,9 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Backup-AzureRmApiManagement](./Backup-AzureRmApiManagement.md)
 
-[New-AzureRmApiManagement](./New-AzureRmApiManagement.md)
+[Baru-AzureRmApiManagement](./New-AzureRmApiManagement.md)
 
-[Remove-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
+[Hapus-AzureRmApiManagement](./Remove-AzureRmApiManagement.md)
 
 [Restore-AzureRmApiManagement](./Restore-AzureRmApiManagement.md)
 

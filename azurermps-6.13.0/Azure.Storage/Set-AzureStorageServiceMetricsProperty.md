@@ -6,12 +6,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azure.storage
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Set-AzureStorageServiceMetricsProperty.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/Storage/Commands.Storage/help/Set-AzureStorageServiceMetricsProperty.md
-ms.openlocfilehash: e6c95380dbf8457bb6b4a00a3d43e5c4cdfc0f17b23f36c78a2d81d353fb8e6c
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: 1b32fbf01b22c365384190c6530a649a06664219
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140854560"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141846769"
 ---
 # Set-AzureStorageServiceMetricsProperty
 
@@ -29,7 +29,7 @@ Set-AzureStorageServiceMetricsProperty [-ServiceType] <StorageServiceType> [-Met
 ```
 
 ## DESCRIPTION
-Cmdlet **Set-AzureStorageServiceMetricsProperty** memodifikasi properti metrik untuk layanan Azure Storage.
+Cmdlet **Set-AzureStorageServiceMetricsProperty** mengubah properti metrik untuk layanan Azure Storage.
 
 ## EXAMPLES
 
@@ -38,8 +38,8 @@ Cmdlet **Set-AzureStorageServiceMetricsProperty** memodifikasi properti metrik u
 C:\PS>Set-AzureStorageServiceMetricsProperty -ServiceType Blob -MetricsType Hour -MetricsLevel Service -PassThru -RetentionDays 10 -Version 1.0
 ```
 
-Perintah ini memodifikasi metrik versi 1.0 untuk penyimpanan blob ke tingkat Layanan.
-Azure Storage layanan kami mempertahankan entri selama 10 hari.
+Perintah ini mengubah metrik versi 1.0 untuk penyimpanan blob ke tingkat Layanan.
+Azure Storage metrik layanan mempertahankan entri selama 10 hari.
 Karena perintah ini menentukan parameter *PassThru* , perintah menampilkan properti metrik yang diubah.
 
 ## PARAMETERS
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ### -MetricsLevel
 Menentukan tingkat metrik yang Azure Storage gunakan untuk layanan.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Layanan
 - ServiceAndApi
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -MetricsType
 Menentukan tipe metrik.
-Cmlde ini mengatur Azure Storage metrik layanan ke nilai yang ditentukan oleh parameter ini.
+Cmldet ini mengatur tipe metrik layanan Azure Storage ke nilai yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah: Jam dan Menit.
 
 ```yaml
@@ -146,11 +146,11 @@ Accept wildcard characters: False
 
 ### -ServiceType
 Menentukan tipe layanan penyimpanan.
-Cmdlet ini mengubah properti metrik untuk tipe layanan yang ditentukan oleh parameter ini.
+Cmdlet ini mengubah properti metrik untuk tipe layanan yang ditentukan parameter ini.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Blob 
-- Tabel
-- Antrean
+- Gumpalan 
+- Meja
+- Antrian
 - File Nilai File saat ini tidak didukung.
 
 ```yaml
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -Versi
 Menentukan versi metrik Azure Storage.
-Nilai default adalah 1,0.
+Nilai defaultnya adalah 1,0.
 
 ```yaml
 Type: System.Nullable`1[System.Double]
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -199,6 +199,6 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureStorageServiceMetricsProperty](./Get-AzureStorageServiceMetricsProperty.md)
 
-[New-AzureStorageContext](./New-AzureStorageContext.md)
+[AzureStorageContext baru](./New-AzureStorageContext.md)
 
 

@@ -4,11 +4,11 @@ Module Name: AzureRM.DeploymentManager
 online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.deploymentmanager/get-azurermdeploymentmanagerservicetopology
 schema: 2.0.0
 ms.openlocfilehash: f5e0b1e0b2e85eb3c17a53b0108e853535712db1
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132429291"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141782816"
 ---
 # Get-AzureRmDeploymentManagerServiceTopology
 
@@ -38,7 +38,7 @@ Get-AzureRmDeploymentManagerServiceTopology [-ServiceTopology] <PSServiceTopolog
 ## DESCRIPTION
 Cmdlet **Get-AzureRmDeploymentManagerServiceTopology** mendapatkan topologi layanan.
 
-Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzureRmDeploymentManagerServiceTopology cmdlet.
+Anda dapat mengubah objek ini secara lokal, lalu menerapkan perubahan pada topologi menggunakan cmdlet Set-AzureRmDeploymentManagerServiceTopology.
 Tentukan topologi layanan menurut namanya dan nama grup sumber daya. Alternatifnya, Anda dapat menyediakan objek ServiceTopology atau ResourceId.
 
 ## EXAMPLES
@@ -48,21 +48,21 @@ Tentukan topologi layanan menurut namanya dan nama grup sumber daya. Alternatifn
 PS C:\> Get-AzureRmDeploymentManagerServiceTopology -ResourceGroupName ContosoResourceGroup -Name ContosoServiceTopology
 ```
 
-Perintah ini mendapatkan topologi layanan yang bernama ContosoServiceTopology dalam ContosoResourceGroup.
+Perintah ini mendapatkan topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
 ### Contoh 2: Dapatkan topologi layanan menggunakan pengidentifikasi sumber daya.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerServiceTopology -ResourceId "/subscriptions/subscriptionId/resourcegroups/ContosoResourceGroup/providers/Microsoft.DeploymentManager/serviceTopologies/ContosoServiceTopology"
 ```
 
-Perintah ini mendapatkan topologi layanan yang bernama ContosoServiceTopology dalam ContosoResourceGroup.
+Perintah ini mendapatkan topologi layanan bernama ContosoServiceTopology di ContosoResourceGroup.
 
 ### Contoh 3: Dapatkan topologi layanan menggunakan objek topologi layanan.
 ```powershell
 PS C:\> Get-AzureRmDeploymentManagerService -ServiceTopology $serviceTopologyObject
 ```
 
-Perintah ini masing-masing mendapatkan topologi layanan yang namanya dan ResourceGroup sesuai dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
+Perintah ini mendapatkan topologi layanan yang namanya dan ResourceGroup masing-masing cocok dengan properti Nama dan ResourceGroupName $serviceTopologyObject.
 
 ## PARAMETERS
 
@@ -142,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Tidak ada
+### Tidak
 
 ## OUTPUTS
 

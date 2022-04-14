@@ -5,16 +5,19 @@ online version: https://docs.microsoft.com/powershell/module/az.websites/remove-
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSlot.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/Websites/Websites/help/Remove-AzWebAppSlot.md
-ms.openlocfilehash: 6953ca66acb376ef53381145d73d97d1def2fdab
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.openlocfilehash: a2b0c91f05f1f26cfa3da4d071ac6b675bd2b984
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140560089"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141848606"
 ---
 # Remove-AzWebAppSlot
 
 ## SYNOPSIS
+
+> [!NOTE]
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.websites/remove-azwebappslot) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -31,22 +34,22 @@ Remove-AzWebAppSlot [-Force] [-AsJob] [-WebApp] <PSSite> [-DefaultProfile <IAzur
 ```
 
 ## DESCRIPTION
-Cmdlet **Remove-AzWebAppSlot** menghapus Slot Azure Web App yang disediakan grup sumber daya dan nama Web App.
+Cmdlet **Remove-AzWebAppSlot** menghapus Slot Azure Web App yang menyediakan grup sumber daya dan nama Web App.
 Cmdlet ini, secara default, juga menghapus semua slot dan metrik.
 
 ## EXAMPLES
 
-### Contoh 1: Hapus Slot Web App
+### Contoh 1: Hapus Slot Aplikasi Web
 ```
 PS C:\>Remove-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoSite" -Slot "Slot001"
 ```
 
-Perintah ini menghapus Slot bernama Slot001 yang terkait dengan Web App ContosoSite yang dimiliki oleh grup sumber daya bernama Default-Web-WestUS.
+Perintah ini menghapus Slot bernama Slot001 yang terkait dengan Web App ContosoSite yang termasuk dalam grup sumber daya bernama Default-Web-WestUS.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -61,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure.
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure.
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
@@ -75,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Force
-Opsi Hapus Paksa
+### -Paksa
+Opsi Hapus Secara Paksa
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -151,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -167,7 +170,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -182,13 +185,13 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
 
-### Microsoft.Azure.Commands.WebApps.Models.PSSite
+### Situs Microsoft.Azure.Commands.WebApps.Models.PSSite
 
 ## OUTPUTS
 
@@ -198,16 +201,16 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## RELATED LINKS
 
-[Get-AzWebAppslot](./Get-AzWebAppSlot.md)
+[Get-AzWebAppSlot](./Get-AzWebAppSlot.md)
 
-[New-AzWebAppslot](./New-AzWebAppSlot.md)
+[New-AzWebAppSlot](./New-AzWebAppSlot.md)
 
-[Restart-AzWebAppslot](./Restart-AzWebAppSlot.md)
+[Mulai ulang-AzWebAppSlot](./Restart-AzWebAppSlot.md)
 
-[Set-AzWebAppslot](./Set-AzWebAppSlot.md)
+[Set-AzWebAppSlot](./Set-AzWebAppSlot.md)
 
-[Start-AzWebAppslot](./Start-AzWebAppSlot.md)
+[Start-AzWebAppSlot](./Start-AzWebAppSlot.md)
 
-[Stop-AzWebAppslot](./Stop-AzWebAppSlot.md)
+[Stop-AzWebAppSlot](./Stop-AzWebAppSlot.md)
 
 [Get-AzWebApp](./Get-AzWebApp.md)

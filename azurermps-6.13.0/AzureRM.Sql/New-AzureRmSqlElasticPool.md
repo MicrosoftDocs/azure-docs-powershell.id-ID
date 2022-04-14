@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlElasticPool.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/New-AzureRmSqlElasticPool.md
 ms.openlocfilehash: 5b1901ef5d06d24e6561861dca3c8e1d89185d14
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132427554"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059509"
 ---
 # New-AzureRmSqlElasticPool
 
 ## SYNOPSIS
-Membuat pool database elastis untuk SQL Database.
+Membuat kumpulan database elastis untuk Database SQL.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -39,12 +39,12 @@ New-AzureRmSqlElasticPool [-ElasticPoolName] <String> -Edition <String> [-Storag
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmSqlElasticPool** membuat pool database elastis untuk Azure SQL Database.
-Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang ditetapkan adalah dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
+Cmdlet **New-AzureRmSqlElasticPool** membuat kumpulan database elastis untuk Database Azure SQL.
+Beberapa parameter (*-Dtu, -DatabaseDtuMin, dan -DatabaseDtuMax*) memerlukan nilai yang diatur adalah dari daftar nilai yang valid untuk parameter tersebut. Misalnya, -DatabaseDtuMax untuk kumpulan eDTU Standar 100 hanya dapat diatur ke 10, 20, 50, atau 100.  Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran tertentu dalam [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
 ## EXAMPLES
 
-### Contoh 1: Membuat pool elastis
+### Contoh 1: Membuat kumpulan elastis
 ```
 PS C:\>New-AzureRmSqlElasticPool -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -ElasticPoolName "ElasticPool01" -Edition "Standard" -Dtu 400 -DatabaseDtuMin 10 -DatabaseDtuMax 100
 ResourceId        : /subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/resourcegroup01/providers/Microsoft.Sql/servers/server01/elasticPools/elasticpool01
@@ -62,12 +62,12 @@ StorageMB         : 409600
 Tags              :
 ```
 
-Perintah ini membuat kolam elastis di tingkat layanan Standar bernama ElastisPool01. Server bernama server01, ditetapkan ke grup sumber daya Azure bernama ResourceGroup01, meng host kumpulan elastis di dalam. Perintah menentukan nilai properti DTU untuk pool dan database dalam pool.
+Perintah ini membuat kumpulan elastis di tingkat layanan Standar bernama ElasticPool01. Server bernama server01, ditetapkan ke grup sumber daya Azure bernama ResourceGroup01, menjadi host kumpulan elastis. Perintah menentukan nilai properti DTU untuk kumpulan dan database dalam kumpulan.
 
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComputeGeneration
-Pembuatan perhitungan untuk ditetapkan.
+Generasi komputasi untuk ditetapkan.
 
 ```yaml
 Type: System.String
@@ -97,11 +97,11 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseDtuMax
-Menentukan jumlah maksimum Unit Throughput Database (DTU, Database Throughput Units) yang dapat digunakan oleh setiap database dalam pool.
+Menentukan jumlah maksimum Unit Throughput Database (DTUs) yang dapat digunakan oleh database tunggal dalam kumpulan.
 Nilai default untuk edisi yang berbeda adalah sebagai berikut:
-- Dasar. 5 DKU
+- Dasar. 5 DTU
 - Standar. 100 DKU
-- Premium. 125 DKU Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool)
+- Premium. 125 DPU Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran tertentu dalam [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool)
 
 ```yaml
 Type: System.Int32
@@ -116,9 +116,9 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseDtuMin
-Menentukan jumlah minimum DTU yang dijamin oleh elastis pool untuk semua database di dalam pool.
+Menentukan jumlah minimum DPU yang dijamin oleh kumpulan elastis ke semua database dalam kumpulan.
 Nilai defaultnya adalah nol (0).
-Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
+Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran tertentu dalam [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
 ```yaml
 Type: System.Int32
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseVCoreMax
-Angka maxmium VCore semua Database SqlAzure dapat digunakan dalam kolam renang.
+Nomor maxmium VCore setiap Database SqlAzure dapat digunakan di kolam renang.
 
 ```yaml
 Type: System.Double
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -DatabaseVCoreMin
-Jumlah VCore minimum database SqlAzure dapat digunakan dalam pool.
+Angka VCore minimum setiap Database SqlAzure dapat digunakan di kolam renang.
 
 ```yaml
 Type: System.Double
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -178,14 +178,14 @@ Accept wildcard characters: False
 ```
 
 ### -Dtu
-Menentukan jumlah total DTU bersama untuk pool elastis.
+Menentukan jumlah total DPU bersama untuk kumpulan elastis.
 Nilai default untuk edisi yang berbeda adalah sebagai berikut:
 - Dasar.
 100 DKU
 - Standar.
 100 DKU
 - Premium.
-125 DKU Untuk detail tentang nilai mana yang valid, lihat tabel untuk kolam renang ukuran tertentu dalam kolam renang [elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
+125 DKU Untuk detail tentang nilai mana yang valid, lihat tabel untuk kumpulan ukuran tertentu Dalam [kumpulan elastis](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool).
 
 ```yaml
 Type: System.Int32
@@ -199,16 +199,16 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Edition
-Menentukan edisi produk yang Azure SQL Database digunakan untuk kolam elastis.
+### -Edisi
+Menentukan edisi Database Azure SQL yang digunakan untuk kumpulan elastis.
 Nilai yang dapat diterima untuk parameter ini adalah:
-- Tidak ada
+- Tidak
 - Dasar
 - Standar
 - Premium
-- DataWarehouse
+- Gudang Data
 - Gratis
-- Regang
+- Stretch
 - GeneralPurpose
 - BusinessCritical
 
@@ -236,8 +236,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ElastisPoolName
-Menentukan nama kolam renang elastis yang dibuat cmdlet ini.
+### -ElasticPoolName
+Menentukan nama kumpulan elastis yang dibuat cmdlet ini.
 
 ```yaml
 Type: System.String
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-Menentukan nama grup sumber daya di mana cmdlet ini menetapkan kumpulan elastis.
+Menentukan nama grup sumber daya tempat cmdlet ini menetapkan kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServerName
-Menentukan nama server yang menjadi host kolam elastis.
+Menentukan nama server yang menjadi host kumpulan elastis.
 
 ```yaml
 Type: System.String
@@ -297,8 +297,8 @@ Accept wildcard characters: False
 ```
 
 ### -StorageMB
-Menentukan batas penyimpanan, dalam megabyte, untuk pool elastis. Jika Anda tidak menentukan parameter ini, cmdlet ini menghitung nilai yang bergantung pada nilai parameter *Dtu.*
-Lihat [eDTU dan batas penyimpanan untuk](/azure/sql-database/sql-database-elastic-pool#edtu-and-storage-limits-for-elastic-pools) nilai yang mungkin.
+Menentukan batas penyimpanan, dalam megabyte, untuk kumpulan elastis. Jika Anda tidak menentukan parameter ini, cmdlet ini menghitung nilai yang bergantung pada nilai parameter *Dtu* .
+Lihat [eDTU dan batas penyimpanan](/azure/sql-database/sql-database-elastic-pool#edtu-and-storage-limits-for-elastic-pools) untuk nilai yang memungkinkan.
 
 ```yaml
 Type: System.Int32
@@ -312,8 +312,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tag
-Menentukan kamus pasangan Nilai kunci dalam bentuk tabel hash yang terkait dengan cmdlet ini dengan pool elastis. Misalnya: @{key0="value0";key1=$null;key2="value2"}
+### -Tags
+Menentukan kamus pasangan Nilai kunci dalam bentuk tabel hash yang dikaitkan cmdlet ini dengan kumpulan elastis. Misalnya: @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -VCore
-Total jumlah bersama Vcore untuk Pool Elastis Sql Azure.
+Jumlah Vcore bersama untuk Sql Azure Elastic Pool.
 
 ```yaml
 Type: System.Int32
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 ```
 
 ### -ZoneRedundant
-Kelebihan zona untuk dikaitkan dengan Pool Elastis Azure Sql
+Redundansi zona untuk dikaitkan dengan Azure Sql Elastic Pool
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -374,7 +374,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -397,7 +397,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.elastisPool.Model.AzureSqlElasticPoolModel
+### Microsoft.Azure.Commands.Sql.ElasticPool.Model.AzureSqlElasticPoolModel
 
 ## CATATAN
 
@@ -409,8 +409,8 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [Get-AzureRmSqlElasticPoolDatabase](./Get-AzureRmSqlElasticPoolDatabase.md)
 
-[Remove-AzureRmSqlElasticPool](./Remove-AzureRmSqlElasticPool.md)
+[Hapus-AzureRmSqlElasticPool](./Remove-AzureRmSqlElasticPool.md)
 
 [Set-AzureRmSqlElasticPool](./Set-AzureRmSqlElasticPool.md)
 
-[SQL Database Dokumen](https://docs.microsoft.com/azure/sql-database/)
+[Dokumentasi Database SQL](https://docs.microsoft.com/azure/sql-database/)

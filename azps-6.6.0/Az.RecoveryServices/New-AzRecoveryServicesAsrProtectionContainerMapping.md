@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainerMapping.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/New-AzRecoveryServicesAsrProtectionContainerMapping.md
 ms.openlocfilehash: 4340e3d3daa3aab105f6044b5a5798e682a76051
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140461876"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907509"
 ---
 # New-AzRecoveryServicesAsrProtectionContainerMapping
 
 ## SYNOPSIS
-Membuat pemetaan Wadah Proteksi Pemulihan Situs Azure dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
+Membuat pemetaan Azure Site Recovery Protection Container dengan mengasosiasikan kebijakan replikasi tertentu ke wadah proteksi ASR yang ditentukan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/new-azrecoveryservicesasrprotectioncontainermapping) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-AzRecoveryServicesAsrProtectionContainerMapping -Name <String> -Policy <ASRP
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzRecoveryServicesAsrProtectionContainerMapping** membuat pemetaan Wadah Pemulihan Situs Azure dengan mengaitkan kebijakan replikasi tertentu ke wadah proteksi yang ditentukan.
+Cmdlet **New-AzRecoveryServicesAsrProtectionContainerMapping** membuat pemetaan Azure Site Recovery Protection Container dengan mengaitkan kebijakan replikasi yang ditentukan ke wadah proteksi yang ditentukan.
 
 ## EXAMPLES
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Menentukan objek kebijakan replikasi ASR untuk kebijakan replikasi yang akan digunakan dalam pemetaan.
+Menentukan objek kebijakan replikasi ASR agar kebijakan replikasi digunakan dalam pemetaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRPolicy
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrimaryProtectionContainer
-Menentukan objek wadah proteksi ASR untuk wadah proteksi utama yang akan digunakan dalam pemetaan.
+Menentukan objek kontainer proteksi ASR untuk wadah proteksi utama yang akan digunakan dalam pemetaan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecoveryProtectionContainer
-Menentukan objek wadah proteksi ASR untuk wadah proteksi pemulihan yang akan digunakan dalam pemetaan (digunakan jika replikasi ke lokasi pemulihan yang bukan Azure.)
+Menentukan objek kontainer proteksi ASR agar wadah proteksi pemulihan digunakan dalam pemetaan (digunakan jika mereplikasi ke lokasi pemulihan yang bukan Azure.)
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.SiteRecovery.ASRProtectionContainer
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak berjalan.
+Memperlihatkan apa yang akan terjadi jika cmdlet berjalan. Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

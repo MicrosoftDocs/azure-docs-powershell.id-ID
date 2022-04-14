@@ -5,12 +5,12 @@ online version: ''
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Add-AzureRmIoTDeviceProvisioningServiceLinkedHub.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/DeviceProvisioningServices/Commands.DeviceProvisioningServices/help/Add-AzureRmIoTDeviceProvisioningServiceLinkedHub.md
-ms.openlocfilehash: 1cac583ca570abfa3ebbc0d159c6ef2fbf5bc975a4e4b3405e73862c038e9dc0
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: ca32f2d0436ea16d8897f279239ce4de079d1550
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140867510"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141823983"
 ---
 # Add-AzureRmIoTDeviceProvisioningServiceLinkedHub
 
@@ -43,7 +43,7 @@ Add-AzureRmIoTDeviceProvisioningServiceLinkedHub [-ResourceId] <String> [-IotHub
 ```
 
 ## DESCRIPTION
-Untuk pengenalan layanan penyediaan perangkat Azure IoT Hub, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
+Untuk pengenalan Azure IoT Hub Layanan Penyediaan Perangkat, lihat https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps.
 
 ## EXAMPLES
 
@@ -72,12 +72,12 @@ myiothub1.azure-devices.net     eastus      2                   true
 myiothub2.azure-devices.net     westus2     10                  false
 ```
 
-Hub IoT tertaut ke layanan penyediaan perangkat Azure IoT Hub dengan AllocationWeight dan ApplyAllocationPolicy.
+Menautkan hub IoT ke layanan penyediaan perangkat Azure IoT Hub dengan AllocationWeight dan ApplyAllocationPolicy.
 
 ## PARAMETERS
 
 ### -AllocationWeight
-Bobot alokasi Hub IoT
+Berat alokasi IoT Hub
 
 ```yaml
 Type: System.Nullable`1[System.Int32]
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplyAllocationPolicy
-Boolean yang mengindikasikan apakah akan menerapkan kebijakan alokasi ke Hub IoT
+Boolean yang menunjukkan apakah akan menerapkan kebijakan alokasi ke IoT Hub
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -121,7 +121,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Object
+### -DpsObject
 Objek Layanan Penyediaan Perangkat IoT
 
 ```yaml
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubConnectionString
-String Koneksi sumber daya Hub Iot.
+String Koneksi sumber daya Iot Hub.
 
 ```yaml
 Type: System.String
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 ```
 
 ### -IotHubLocation
-Lokasi Hub Iot
+Lokasi Iot Hub
 
 ```yaml
 Type: System.String
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceId
-Id Sumber Daya Layanan Penyediaan Perangkat Iot
+Id Sumber Daya Layanan Penyediaan Perangkat IoT
 
 ```yaml
 Type: System.String
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -243,12 +243,12 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Azure.Commands.Management.DeviceProvisioningServices.Models.PSProvisioningServiceDescription
-Parameter:ObjectObject (ByValue)
+Parameter: DpsObject (ByValue)
 
 ### System.String
 

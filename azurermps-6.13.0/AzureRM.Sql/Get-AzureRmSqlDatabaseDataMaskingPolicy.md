@@ -7,16 +7,16 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseDataMaskingPolicy.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Get-AzureRmSqlDatabaseDataMaskingPolicy.md
 ms.openlocfilehash: 6b787e3347c20e011193d0b3968e036d53f62226
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132421194"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142060236"
 ---
 # Get-AzureRmSqlDatabaseDataMaskingPolicy
 
 ## SYNOPSIS
-Mendapatkan kebijakan masker data untuk database.
+Mendapatkan kebijakan masking data untuk database.
 
 [!INCLUDE [migrate-to-az-banner](../../includes/migrate-to-az-banner.md)]
 
@@ -29,13 +29,13 @@ Get-AzureRmSqlDatabaseDataMaskingPolicy [-ServerName] <String> [-DatabaseName] <
 ```
 
 ## DESCRIPTION
-Cmdlet **Get-AzureRmSqlDatabaseDataMaskingPolicy** mendapatkan kebijakan masker data dari database SQL Azure.
-Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName,* *ServerName,* *dan DatabaseName* untuk mengidentifikasi database.
+Cmdlet **Get-AzureRmSqlDatabaseDataMaskingPolicy** mendapatkan kebijakan masking data database Azure SQL.
+Untuk menggunakan cmdlet ini, gunakan parameter *ResourceGroupName*, *ServerName*, dan *DatabaseName* untuk mengidentifikasi database.
 Cmdlet ini juga didukung oleh layanan SQL Server Stretch Database di Azure.
 
 ## EXAMPLES
 
-### Contoh 1: Mendapatkan kebijakan masker data untuk database Azure SQL baru
+### Contoh 1: Dapatkan kebijakan masking data untuk database Azure SQL
 ```
 PS C:\>Get-AzureRmSqlDatabaseDataMaskingPolicy -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 DatabaseName      : Database01
@@ -45,7 +45,7 @@ DataMaskingState  : Enabled
 PrivilegedUsers  :
 ```
 
-Perintah ini mendapatkan kebijakan masker data dari database Database01 di grup sumber daya ResourceGroup01 di server Server01.
+Perintah ini mendapatkan kebijakan masking data dari database Database01 dalam grup sumber daya ResourceGroup01 di server Server01.
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
@@ -149,7 +149,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.sql.DataMasking.Model.DatabaseDataMaskingPolicyModel
+### Microsoft.Azure.Commands.Sql.DataMasking.Model.DatabaseDataMaskingPolicyModel
 
 ## CATATAN
 
@@ -159,7 +159,7 @@ Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -Info
 
 [New-AzureRmSqlDatabaseDataMaskingRule](./New-AzureRmSqlDatabaseDataMaskingRule.md)
 
-[Remove-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
+[Hapus-AzureRmSqlDatabaseDataMaskingRule](./Remove-AzureRmSqlDatabaseDataMaskingRule.md)
 
 [Set-AzureRmSqlDatabaseDataMaskingPolicy](./Set-AzureRmSqlDatabaseDataMaskingPolicy.md)
 

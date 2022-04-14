@@ -6,19 +6,19 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/main/src/RecoveryServices/RecoveryServices/help/Enable-AzRecoveryServicesBackupAutoProtection.md
 ms.openlocfilehash: acaebd16ddc395a6f7be94537f107b6b946cafec
-ms.sourcegitcommit: 1927316437817d48f97c62dceced0067c41b95f2
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "140099459"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141907707"
 ---
 # Enable-AzRecoveryServicesBackupAutoProtection
 
 ## SYNOPSIS
-Cmdlet **Enable-AzRecoveryServicesBackupAutoProtection** mengatur proteksi otomatis atas DB saat ini dan masa SQL mendatang dalam instans tertentu dengan kebijakan yang disediakan.
+Cmdlet **Enable-AzRecoveryServicesBackupAutoProtection** menyiapkan perlindungan otomatis dari DB saat ini dan SQL yang akan datang dalam instans tertentu dengan kebijakan yang disediakan.
 
 > [!NOTE]
->Ini adalah versi sebelumnya dari dokumentasi kami. Silakan [lihat versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupautoprotection) untuk informasi terkini.
+>Ini adalah versi dokumentasi kami sebelumnya. Silakan lihat [versi terbaru](/powershell/module/az.recoveryservices/enable-azrecoveryservicesbackupautoprotection) untuk informasi terbaru.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Enable-AzRecoveryServicesBackupAutoProtection [-InputItem] <ProtectableItemBase>
 ```
 
 ## DESCRIPTION
-Perintah ini memungkinkan pengguna untuk secara otomatis memproteksi semua DB SQL tidak terproteksi yang ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan yang diberikan.  Karena instruksi tersebut adalah untuk mencadangkan semua DB yang akan datang, operasi dilakukan pada tingkat SQLInstance, layanan pencadangan Azure akan secara rutin memindai wadah yang diproteksi otomatis untuk semua DB baru dan secara otomatis memproteksinya.
+Perintah ini memungkinkan pengguna untuk secara otomatis melindungi semua DB SQL tanpa proteksi yang sudah ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan tertentu.  Karena instruksinya adalah mencadangkan semua DB di masa mendatang, operasi dilakukan pada tingkat SQLInstance, layanan cadangan Azure kemudian akan memindai kontainer yang dilindungi otomatis secara berkala untuk setiap DB baru dan melindunginya secara otomatis.
 
 ## EXAMPLES
 
@@ -41,12 +41,12 @@ PS C:\> $SQLInstance = Get-AzRecoveryServicesBackupProtectableItem -workloadType
 PS C:\> Enable-AzRecoveryServicesBackupAutoProtection -InputItem $SQLInstance -BackupManagementType AzureWorkload -WorkloadType MSSQL -Policy $Pol -VaultId $targetvault.ID 
 ```
 
-Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya di $Pol variabel.
-Cmdlet kedua mengambil SQLInstance yang relevan, yaitu item yang dapat diproteksi. Perintah ketiga lalu mengatur proteksi otomatis untuk contoh ini menggunakan kebijakan di $Pol.
+Cmdlet pertama mendapatkan objek kebijakan default, lalu menyimpannya dalam variabel $Pol.
+Cmdlet kedua mengambil SQLInstance yang relevan yang merupakan item yang dapat dilindungi. Perintah ke-3 kemudian menyiapkan proteksi otomatis untuk instans ini menggunakan kebijakan dalam $Pol.
 
 ### Contoh 2
 
-Perintah ini memungkinkan pengguna untuk secara otomatis memproteksi semua DB yang tidak diproteksi yang sudah ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan yang diberikan. (otomatisgenerated)
+Perintah ini memungkinkan pengguna untuk secara otomatis melindungi semua DB tanpa proteksi yang sudah ada dan DB apa pun yang akan ditambahkan nanti dengan kebijakan tertentu. (autogenerasi)
 
 ```powershell <!-- Aladdin Generated Example --> 
 Enable-AzRecoveryServicesBackupAutoProtection -BackupManagementType AzureVM -InputItem <ProtectableItemBase> -Policy $Pol -VaultId $vault.ID -WorkloadType AzureVM
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -InputItem
-Menentukan objek item yang dapat diproteksi yang dapat diteruskan sebagai input. Nilai yang didukung saat ini adalah objek protectableItem tipe "SQLInstance". 
+Menentukan objek item terproteksi yang bisa dilewati sebagai input. Nilai yang didukung saat ini adalah objek protectableItem dari tipe "SQLInstance". 
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.ProtectableItemBase
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Kebijakan
-Objek kebijakan proteksi.
+Objek kebijakan perlindungan.
 
 ```yaml
 Type: Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets.Models.PolicyBase
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -VaultId
-ID ARM dari Vault Layanan Pemulihan.
+ARM ID dari Vault Layanan Pemulihan.
 
 ```yaml
 Type: System.String
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

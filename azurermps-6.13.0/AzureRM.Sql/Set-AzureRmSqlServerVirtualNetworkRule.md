@@ -5,12 +5,12 @@ online version: https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/s
 schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerVirtualNetworkRule.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Sql/Commands.Sql/help/Set-AzureRmSqlServerVirtualNetworkRule.md
-ms.openlocfilehash: ea0729413afd165b1aa42e5529aad10e5ae0684ca6f08e2c1c831a4c930c1990
-ms.sourcegitcommit: 49f8ffe5d8e08ba3d22e3b2e76db0e54dd55d4f0
+ms.openlocfilehash: c71f8284cc3b1a2648e3523c77f0e9e2dd2d3876
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "140853606"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "142059227"
 ---
 # Set-AzureRmSqlServerVirtualNetworkRule
 
@@ -43,7 +43,7 @@ Mengubah aturan jaringan virtual yang sudah ada dengan id subnet jaringan virtua
 ## PARAMETERS
 
 ### -AsJob
-Jalankan cmdlet di latar belakang
+Menjalankan cmdlet di latar belakang
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -IgnoreMissingVnetServiceEndpoint
-Buat aturan firewall sebelum jaringan virtual memiliki titik akhir layanan vnet yang diaktifkan.
+Buat aturan firewall sebelum jaringan maya mengaktifkan titik akhir layanan vnet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -VirtualNetworkSubnetId
-Id Subnet Jaringan Virtual untuk aturan.
+Id Subnet Jaringan Virtual untuk aturan tersebut.
 
 ```yaml
 Type: System.String
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -Konfirmasi
-Meminta konfirmasi Anda sebelum menjalankan cmdlet.
+Meminta konfirmasi sebelum menjalankan cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 
 ### -WhatIf
 Memperlihatkan apa yang akan terjadi jika cmdlet berjalan.
-Cmdlet tidak berjalan.
+Cmdlet tidak dijalankan.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

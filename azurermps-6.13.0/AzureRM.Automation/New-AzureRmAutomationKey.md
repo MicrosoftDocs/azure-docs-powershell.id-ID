@@ -7,11 +7,11 @@ schema: 2.0.0
 content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRmAutomationKey.md
 original_content_git_url: https://github.com/Azure/azure-powershell/blob/preview/src/ResourceManager/Automation/Commands.Automation/help/New-AzureRmAutomationKey.md
 ms.openlocfilehash: 8bd043f11294b2290a5f54289232bc826c1f0d88
-ms.sourcegitcommit: 6dce6f7972b2236b87b25b31465bffaad2435711
+ms.sourcegitcommit: dcb33efdfc53ba0b2f271e883021de84878d1f31
 ms.translationtype: MT
 ms.contentlocale: id-ID
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "132422202"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "141845425"
 ---
 # New-AzureRmAutomationKey
 
@@ -28,21 +28,21 @@ New-AzureRmAutomationKey [-KeyType] <String> [-ResourceGroupName] <String> [-Aut
 ```
 
 ## DESCRIPTION
-Cmdlet **New-AzureRmAutomationKey** meregenerasi kunci registrasi untuk akun Azure Automation.
+Cmdlet **New-AzureRmAutomationKey meregenerasi** kunci pendaftaran untuk akun Azure Automation.
 
 ## EXAMPLES
 
-### Contoh 1: Regenerasi kunci untuk akun Otomatisasi
+### Contoh 1: Meregenerasi kunci untuk akun Otomatisasi
 ```
 PS C:\>New-AzureAutomationKey -KeyType Primary -ResourceGroup "ResourceGroup01" -AutomationAccountName "AutomationAccount01"
 ```
 
-Perintah ini meregenerasi kunci utama untuk akun Otomatisasi Azure yang bernama AutomationAccount01 dalam grup sumber daya yang bernama ResourceGroup01.
+Perintah ini meregenerasi kunci utama untuk akun Azure Automation bernama AutomationAccount01 dalam grup sumber daya bernama ResourceGroup01.
 
 ## PARAMETERS
 
 ### -AutomationAccountName
-Menentukan nama akun Otomatisasi yang meregenerasi kunci cmdlet ini.
+Menentukan nama akun Otomatisasi tempat cmdlet ini meregenerasi kunci.
 
 ```yaml
 Type: System.String
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultProfile
-Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan Azure
+Kredensial, akun, penyewa, dan langganan yang digunakan untuk komunikasi dengan azure
 
 ```yaml
 Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
@@ -72,8 +72,8 @@ Accept wildcard characters: False
 ```
 
 ### -KeyType
-Menentukan tipe kunci pendaftaran agen.
-Nilai valid adalah: 
+Menentukan tipe kunci registrasi agen.
+Nilai yang valid adalah: 
 - Utama 
 - Sekunder
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, dan -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters ( https://go.microsoft.com/fwlink/?LinkID=113216) .
+Cmdlet ini mendukung parameter umum: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. Untuk informasi selengkapnya, lihat about_CommonParameters (https://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
